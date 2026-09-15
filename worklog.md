@@ -388,3 +388,142 @@ Stage Summary:
 - 热力图打印时右侧截断（GitHub 同款行为），可加 print 缩放
 - AI 助教多轮上下文记忆增强、错题本按知识点聚类、学习报告增加"能力画像"雷达图可作下一步
 - cron 定时任务（15 分钟 webDevReview）会自行 seed 测试数据用于 QA，推送前需检查数据清洁
+---
+Task ID: 5-a
+Agent: commons-biochemistry-images
+Task: 从 Wikimedia Commons 搜集生物化学通路真实配图
+
+Work Log:
+- 读取 worklog 了解插图体系现状（Task 11/12/15 的 AI 生成示意图 56 张，用户要求替换为真实权威来源图）
+- Commons API（action=query&list=search, srnamespace=6）逐项英文关键词检索 10 类目标图，再用 imageinfo（url|size|mime|extmetadata）获取候选的原图地址、尺寸、许可与作者；自建 /tmp/commons_info.sh 脚本批量查询并 sed 去除 Artist 的 HTML 标签
+- 候选遴选：全部选择 Wikipedia 经典教学图（Glycolysis.svg、Citric acid cycle with aconitate 2.svg、Mitochondrial ETC annotated diagram.svg、Pentose phosphate pathway en.svg、Beta oxidation of fatty acids.png、Urea cycle.svg、Michaelis-Menten saturation curve.svg、Hyperchromicity.svg、Cell membrane detailed diagram en.svg、Calvero 的 Sucrose/Lactose/Maltose.svg 同作者同风格黑白线式系列）
+- 下载：SVG 一律取 1920px PNG 缩略图（小尺寸结构式取 960px），保存为小写 kebab-case PNG 至 public/images/bio/commons/；期间发现 1600px 自拼 thumb URL 返回 HTML 报错页，改用 API 返回的 thumburl 后全部成功；遇 Commons 429 限流，加 User-Agent 与 sleep 退避后恢复
+- VLM 科学性验证（z-ai vision，每图中文核对清单）：糖酵解（10步/酶名/中间产物/ATP·NADH 计量）、TCA（8步酶名/3NADH+1FADH2+1GTP/回补）、ETC（四复合物/CoQ·cyt c/电子流/质子泵向/ATP合酶）、PPP（氧化2NADPH+CO2/非氧化转酮转醛）、β氧化（四步螺旋/FADH2·NADH/活化/C16→C14+C2）、尿素循环（5步酶/线粒体·胞质分区/4个高能磷酸键）、米氏曲线（Vmax/Km/1/2Vmax/双曲线形态）、DNA 熔解（S形/A260/Tm 中点）、流动镶嵌（双层/整合外周蛋白/胆固醇/糖链仅外侧）、三种二糖糖苷键类型与还原性——12 张全部一次通过，无需启用备选候选
+- 校验 10 个 sectionId 与 src/data/subjects/biochemistry.ts 逐一匹配（ch1-s2 二糖、ch2-s3 生物膜、ch5-s3 米氏、ch7-s3 变性复性、ch8-s2 呼吸链、ch9-s1/s2/s3 糖代谢、ch10-s1 β氧化、ch11-s2 尿素循环）
+- 写入 public/images/bio/commons/manifest-5a.json（12 条：topic/sectionId/commonsFile/author/license/sourceUrl/verified），与并行代理目录共存未触碰他人文件；最终完整性脚本校验：12 文件均有效 PNG、<5MB、许可证均在 CC0/PD/CC BY/CC BY-SA 白名单、manifest 键与磁盘文件一一对应
+- 未修改 src/ 任何代码与其他图片目录（structures/、pdb/、covers/、各学科 AI 图目录原样保留）
+
+Stage Summary:
+- 成功搜集并 VLM 审校通过 12 张 Commons 真实图（10 类目标全覆盖，含二糖三张组图）：
+  * glycolysis-pathway.png → ch9-s1（WYassineMrabet, CC BY-SA 3.0）
+  * tca-cycle.png → ch9-s2（Naryanese et al., CC BY-SA 3.0）
+  * electron-transport-chain.png → ch8-s2（Rozzychan, CC BY-SA 2.5）
+  * pentose-phosphate-pathway.png → ch9-s3（Pink Bee, CC BY-SA 4.0）
+  * beta-oxidation.png → ch10-s1（Mplanine, CC BY 4.0）
+  * urea-cycle.png → ch11-s2（Yikrazuul, CC BY-SA 3.0）
+  * michaelis-menten-kinetics.png → ch5-s3（fullofstars, Public domain）
+  * dna-melting-curve.png → ch7-s3（Fdardel, CC BY-SA 3.0）
+  * fluid-mosaic-model.png → ch2-s3（Mariana Ruiz, Public domain）
+  * sucrose/lactose/maltose-structure.png → ch1-s2（Calvero, Public domain，同作者同风格系列）
+- 跳过项：无（DNA 熔解曲线与二糖系列均找到合格图，未触发 3 候选淘汰）
+- 全部署名信息已如实记录于 manifest-5a.json，供图注署名使用
+
+---
+Task ID: 5-c
+Agent: commons-cellbio-images
+Task: 从 Wikimedia Commons 搜集细胞生物学与生物物理学真实配图
+
+Work Log:
+- 读取 worklog 了解插图体系现状（56 张 AI 生成示意图覆盖 52 小节，用户核心诉求：替换为真实、权威来源配图）
+- 通过 Commons API（action=query&list=search，srnamespace=6）检索 12 个主题候选图，关键词含 "animal cell anatomy diagram"、"mitochondrion structure"、"mitosis phases diagram"、"meiosis diagram"、"apoptosis"、"G protein-coupled receptor signaling cAMP"、"MAPK pathway"、"action potential"、"saltatory conduction"、"endomembrane system"、"cytoskeleton"、"cyclin CDK cell cycle" 等
+- 逐候选调用 imageinfo（iiprop=url|size|mime|extmetadata）获取原图/缩略图 URL、尺寸、许可证（LicenseShortName）与作者（Artist，sed/jq 去 HTML 标签），仅保留 CC0/Public domain/CC BY/CC BY-SA
+- 下载 12 个最终文件至 public/images/bio/commons/（SVG 原图优先；Smart-Servier 细胞骨架原图 10240×5760 超 5MB，改用 1920px 允许尺寸缩略图；OpenStax 动作电位为 JPEG 故扩展名用 .jpg）；期间 upload.wikimedia.org 出现 429 限速（retry-after 600s，与并行代理共享出口 IP），通过等待限速窗口与 thumb.wikimedia.org 备用主机完成全部下载；所有文件均经 file/jq 校验非 HTML 错误页
+- VLM 科学审校（z-ai vision，glm-5v-turbo）：每图按定制核对清单中文提问（结构完整性、各期顺序与染色体行为、通路级联顺序、数值与阈值标注、标签语言与乱码检查）；SVG 图使用 Commons 1920px PNG 渲染图送审（与原图内容一致）
+- VLM 审校淘汰/替换记录（每目标 ≤3 候选）：
+  * 线粒体首选 File:Mitochondrion structure labels.svg（CC0）渲染后仅有文字标签列表、无结构图形 → 弃用，改用 File:Animal mitochondrion diagram en.svg（PD, LadyofHats）复审通过（外膜/内膜/嵴/基质/膜间隙/ATP合酶/mtDNA/核糖体全部正确）
+  * 跳跃传导首选 File:Saltatory conduction along a myelinated axonw.svg（CC0）科学内容正确但标注为德语（Myelinscheide/Ranvier'sche Schnürringe）→ 不符英文标注要求，改用 File:Propagation of action potential along myelinated nerve fiber en.svg（CC BY-SA 4.0, Helixitta）复审通过
+  * GPCR 候选 File:XBio illustration – G Protein Coupled Receptor (GPCR).png（CC BY 4.0）仅展示 7 次跨膜结构、无 G 蛋白/cAMP 下游级联 → 弃用；File:Process of cAMP Dependent Pathway.jpg（CC BY 4.0）通过（VLM 指出糖原分解产物为教科书级简化，建议图注补充 G-1-P）
+  * RTK-Ras-MAPK 两候选均通过审校：File:MAPK-pathway-mammalian.png 缺上游 RTK→Grb2/SOS→Ras 环节且不含 JAK-STAT；File:Signal transduction pathways.svg 完整覆盖 RTK→Grb2/SOS→Ras→Raf→MEK→ERK 并含 JAK-STAT/PI3K/Wnt 总览，与 ch8-s4 小节标题"酶联受体：RTK 途径与 JAK-STAT"更契合 → 选后者
+- 写入 manifest-5c.json（12 条：文件名→topic→sectionId→commonsFile→author→license→sourceUrl→VLM 审校说明）；未触碰 manifest-5a.json 与并行代理的任何文件；未修改 src/ 下任何代码；文件名全部为细胞/生物物理主题 kebab-case，与并行代理无冲突
+
+Stage Summary:
+- 成功搜集 12 张 Commons 真实配图（任务清单 10 个主目标全部命中，另完成 2 个加分项），全部经 VLM 科学审校通过、许可证合规（PD/CC0/CC BY/CC BY-SA）、作者如实记录：
+  1. animal-cell-anatomy.svg → cell-biology-ch1-s2（PD, LadyofHats/Mariana Ruiz）
+  2. mitochondrion-ultrastructure.svg → cell-biology-ch5-s1（PD, Mariana Ruiz Villarreal）
+  3. mitosis-phases.svg → cell-biology-ch10-s4（CC BY-SA 3.0, Jpablo cad & juliana osorio 等）
+  4. meiosis-stages.svg → cell-biology-ch10-s5（CC BY-SA 4.0, Ali Zifan）
+  5. apoptosis-morphology.png → cell-biology-ch12-s1（PD, H. Hoffmeister 德语原版的中文翻译版；中文标注）
+  6. gpcr-camp-signaling.jpg → cell-biology-ch8-s2（CC BY 4.0, Evvong168）
+  7. rtk-ras-mapk-pathway.svg → cell-biology-ch8-s4（CC BY-SA 3.0, cybertory）
+  8. action-potential.jpg → biophysics-ch7-s2（CC BY 4.0, OpenStax；阈值-55mV/静息-70mV/超射+30mV 全标注）
+  9. saltatory-conduction.svg → biophysics-ch7-s3（CC BY-SA 4.0, Helixitta）
+  10. secretory-pathway.svg → cell-biology-ch4-s2（PD, Mariana Ruiz；内膜系统 ER→Golgi→囊泡→胞吐）
+  11. cytoskeleton.jpg → cell-biology-ch6-s1（CC BY-SA 3.0, Laboratoires Servier）【加分项】
+  12. cdk-cyclin.png → cell-biology-ch10-s2（CC0, Fatma Abukhater）【加分项】
+- 跳过项：无
+- 后续集成建议：挂载到 illustrations.ts 时——gpcr-camp-signaling.jpg 图注可补充"糖原分解首先生成葡萄糖-1-磷酸"；cytoskeleton.jpg 图内 'Actine' 为法语拼写变体；apoptosis-morphology.png 为中文标注图、含少量繁体写法；7 张 SVG 中 meiosis/mitochondrion 等部分图为文字转路径（无字体依赖，渲染稳定）
+---
+Task ID: 5-b2
+Agent: commons-molbio-images-fix
+Task: 补完分子生物学 Commons 配图（RNA剪接/RNAi/乳糖操纵子）+ manifest 收尾
+
+Work Log:
+- 读取 worklog 与 public/images/bio/commons/ 目录现状：7 张分子生物学图已由超时中断的 5-b 代理下载（dna-replication-fork/central-dogma/prokaryotic-transcription/translation-elongation/pcr-cycles/sanger-sequencing/holliday-junction），但 rna-splicing.png 为 0 字节损坏文件，RNAi 与乳糖操纵子缺失，manifest-5b.json 未创建
+- 校验目标 sectionId 与 src/data/subjects/molecular-biology.ts 匹配：ch5-s2（pre-mRNA 剪接与剪接体）、ch8-s5（转录后调控与 RNA 干扰）、ch7-s1（操纵子模型与乳糖操纵子的负调控），并为 7 张已有图核定归属小节（ch1-s4/ch2-s4/ch3-s3/ch4-s2/ch6-s4/ch9-s2/ch9-s4）
+- 删除 0 字节 rna-splicing.png；Commons API（list=search, srnamespace=6）检索三主题候选，imageinfo（url|size|mime|extmetadata）查许可与作者，全部落在 CC0/PD/CC BY/CC BY-SA 白名单内：
+  * RNA 剪接：File:RNA splicing reaction.svg（BCSteve, CC BY-SA 3.0，两步转酯+lariat 教学图），备选 File:Splicing overview.jpg（Agathman, CC BY-SA 3.0）未启用
+  * RNAi：File:RNAi-simplified.svg（Silvia3 矢量重绘、改编自 Matzke & Matzke 2004 PLoS Biol，CC BY 2.5），备选 File:Mechanism of RNA interference.jpg（综述图，偏密）未启用
+  * 乳糖操纵子：File:Lac operon-2010-21-01.png（G3pro 原作/Tereseik 衍生, CC BY 2.0，经典 Wikipedia lac operon 调控全图）
+- 下载：SVG 取 1920px PNG 缩略图（thumb.wikimedia.org），PNG 原图直取；首次两笔遇 Wikimedia 限速返回 HTML 错误页，删除后等待 45-60s 重试全部成功；file 命令校验均为有效 PNG（1920x1200 / 1920x1439 / 1190x992）
+- VLM 科学审校（z-ai vision，中文核对清单）：3 张新图一次通过——剪接图两步转酯反应/GU-AG-A/套索中间体/外显子连接全对；RNAi 图 siRNA 与 miRNA 双途径走向、Dicer/Argonaute/RISC/RITS 拼写全对；lac 操纵子 lacI-P-O-ZYA 标注、阻遏蛋白负调控、CAP-cAMP 正调控四状态全对，无需启用备选候选
+- 7 张已有图来源反查：通过 /tmp 遗留的 5-b 候选 JSON（ti/ti2/ps/hjs.json 等）+ Commons 检索 + 下载同宽度缩略图做像素级比对（PIL/numpy 逐像素差分，6 张 mean diff=0.0000、1 张 holliday-junction SHA256 完全一致）确认来源与归属：DNA replication en.svg（PD, LadyofHats）、Central dogma of molecular biology.svg（CC BY-SA 3.0, Philippe Hupé）、0325 Transcription.jpg（CC BY 4.0, OpenStax）、Ribosome mRNA translation en.svg（PD, LadyofHats）、Polymerase chain reaction.svg（CC BY-SA 3.0, Enzoklop）、Sanger-sequencing.svg（CC BY-SA 3.0, Estevezj）、Holliday Junction.svg（PD, Mouagip）
+- 7 张已有图 VLM 复审：6 张直接通过；prokaryotic-transcription.png 首轮快速审校误判"碱基配对混乱/模板链归属错误"，经分区裁剪 3 倍放大 + 逐碱基转录 + 像素级定位氢键示意线（y423-430 恰连接 RNA 行与上方模板链行，RNA UACUGCC…与模板 ATGACGG…逐位互补、两 DNA 链 36/36 互补），推翻误判维持通过，并在 verified 字段如实记录"图为延伸阶段特写+OpenStax 染色体定位图标"的使用建议
+- 写入 manifest-5b.json（10 条：3 新图 + 7 张已有图，含 topic/sectionId/commonsFile/author/license/sourceUrl/verified）；完整性脚本校验：10 文件均有效 PNG、非空、许可证全部白名单、manifest 键与磁盘文件一一对应
+- 未修改 src/ 任何代码、未触碰 manifest-5a.json / manifest-5c.json 及非分子生物学图片（git status 与 mtime 核实：illustrations.ts 13:08、manifest-5a 13:20、manifest-5c 13:38 均为本任务开始前状态）
+
+Stage Summary:
+- 分子生物学 Commons 配图 10 张全部到位并完成 manifest-5b.json（本任务 3 张新图 + 5-b 遗留 7 张收尾）：
+  * rna-splicing.png → ch5-s2（BCSteve, CC BY-SA 3.0；两步转酯+套索）
+  * rna-interference.png → ch8-s5（Silvia3 改编自 Matzke & Matzke, CC BY 2.5；Dicer→siRNA/miRNA→RISC）
+  * lac-operon.png → ch7-s1（G3pro/Tereseik, CC BY 2.0；负调控+正调控四状态全图）
+  * dna-replication-fork.png → ch2-s4（LadyofHats, PD）、central-dogma.png → ch1-s4（Philippe Hupé, CC BY-SA 3.0）、prokaryotic-transcription.png → ch4-s2（OpenStax, CC BY 4.0）、translation-elongation.png → ch6-s4（LadyofHats, PD）、pcr-cycles.png → ch9-s2（Enzoklop, CC BY-SA 3.0）、sanger-sequencing.png → ch9-s4（Estevezj, CC BY-SA 3.0）、holliday-junction.png → ch3-s3（Mouagip, PD）
+- 跳过/淘汰项：无（3 新图均一次通过 VLM；7 张已有图复审全通过）
+- 后续集成建议：prokaryotic-transcription.png 图注宜注明"图示转录延伸阶段"（无 σ 因子/终止子结构）；translation-elongation.png 未显式标 E 位可图注补充；central-dogma.png 为灰度图与彩色插图混排时注意视觉一致性
+
+---
+
+Task ID: 16
+Agent: 主控 (Z.ai Code)
+Task: 插图体系全面切换为真实科学数据源（RCSB CCD/PDB 渲染 + Wikimedia Commons），替换 AI 生成图
+
+Work Log:
+- 【用户核心指令】AI 配图不符合科学规范，改为通过网络获取真实科学配图（用户点名 RCSB 小分子库获取糖结构式），并保证图片格式一致性
+- 【数据源勘察与验证】
+  * RCSB CCD 结构图 URL 模式确认：https://cdn.rcsb.org/images/ccd/unlabeled/{首字母}/{代码}.svg（OpenEye 统一渲染矢量 SVG，风格天然一致）
+  * RCSB PDB 条目 3D 渲染图 URL 模式确认：https://cdn.rcsb.org/images/structures/{id}_{view}.jpeg（统一渲染管线）
+  * 逐一经 data.rcsb.org 化学名称 API 核实全部配体代码，避开 CCD 历史命名陷阱（LAC=乳酸而非乳糖、CMP=cAMP、GMP=鸟苷、THY=某硫胺素衍生物、ACA=6-氨基己酸、GSN≠鸟苷、UBI≠泛醌、4UXW=二酰甘油激酶而非驱动蛋白——VLM 曾误判，原始数据核实推翻）
+  * VLM 风格对比评审（RCSB SVG vs PubChem PNG）：结论两者不可混用、RCSB 质量更优 → 小分子统一采用 RCSB CCD
+- 【小分子结构图：77 张 CCD SVG】
+  * scripts/fetch-ccd-structures.ts：77 个配体（单糖 7、脂肪酸 5、脂质 4、20 种氨基酸、维生素与辅酶 16、碱基/核苷/核苷酸 16、辅酶与高能化合物 10）批量下载，内置 data-api 名称校验 + manifest.json
+  * scripts/compose-figure-panels.ts：嵌套 SVG 合成 11 张多联组图（2500×2500 面板 + 中文标签 + 分类配色：氨基酸 5×4 网格、脂肪酸饱和/不饱和组、五碱基组、核苷→核苷酸演进、维生素 B1-B5/B6-C/脂溶性三组、NAD⁺/NADH/FAD 氧化还原组、葡萄糖异头物组）
+  * VLM 科学审校通过：α/β 葡萄糖羟基取向正确、氨基酸 20 种齐全、油酸双键弯折清晰、AMP 磷酸基团清楚
+- 【大分子 3D 结构图：17 张 PDB 渲染图】全部经条目标题/组成/物种 API 核实：1MBO 肌红蛋白(1.6Å)、1HHO/2HHB 血红蛋白 R/T 态、1BNA Dickerson B-DNA 十二聚体、1AOI 核小体(2.8Å)、1BL8 KcsA 钾通道、5F9R Cas9-sgRNA-DNA 三元复合物、2ZXE Na⁺/K⁺-ATP 酶 E2·2K⁺态、4V4R 嗜热栖热菌 70S 核糖体(含 P/E 位 tRNA)、4LJZ E.coli RNAP 全酶、1LBG LacI-操纵基因 DNA、6OQV E.coli ATP 合酶全酶(VLM 对比 6FKF/5DN6 后择优)、1C17 c₁₂环转子(核实为 Na⁺转运型)、5NRL 酵母 B 复合物剪接体、4UXW→3KIN 驱动蛋白二聚体(纠正 VLM 误判)、1OEL GroEL、1BKV 胶原样肽(核实序列含天然 α1 插入段，修正图注)、6FKF→删除
+- 【通路/过程图：34 张 Wikimedia Commons】三个并行子代理（5-a 生化 12 张 / 5-b2 分子生物学 10 张 / 5-c 细胞+生物物理 12 张）：
+  * 全部经 Commons API 搜索 + extmetadata 许可证核验（仅接受 CC0/PD/CC BY/CC BY-SA）+ VLM 逐图科学审校 + manifest-5{a,b,c}.json 记录作者与许可证
+  * 覆盖：糖酵解/TCA/呼吸链/磷酸戊糖/β氧化/尿素循环/米氏曲线/DNA 熔解曲线/流动镶嵌模型/三种二糖结构式（Calvero 同风格系列）、中心法则/复制叉/原核转录(OpenStax)/翻译/Holliday/RNA 剪接/RNAi/乳糖操纵子(含 CAP 正调控)/PCR/Sanger、动物细胞/线粒体/分泌途径/细胞骨架(Smart Servier)/有丝分裂/减数分裂/凋亡(中文标注版)/GPCR/RTK-Ras-MAPK/CDK-cyclin/动作电位(OpenStax)/跳跃传导
+  * 主控亲自复核：6 图拼版 VLM 抽查（有丝分裂曾被误判不通过→全尺寸复审推翻缩略图误报，全部通过）
+- 【集成重写 src/data/illustrations.ts】
+  * 79 张配图覆盖 62 个小节：Commons 34 + PDB 17 + CCD 13 = 64 张真实科学数据图（81%），AI 示意图仅余 15 张（19%，均为无权威替代的机制示意：二级结构/诱导契合/糖原分支/trp 衰减/染色质层级/钠钾泵循环/折叠漏斗/膜相变/光镊/TIRF/静息电位/滤器机制/冷冻电镜流程/驱动蛋白步进）
+  * 6 张 AI 图被真实图直接替换下岗：葡萄糖异头物、氨基酸、血红蛋白、DNA 双螺旋、ATP 合酶、CRISPR
+  * 图注全面重写：含实验方法/分辨率/发表年份/关键结构细节（如 2HHB 盐键具体残基对、1BNA 扭转角波动 26°-45°、E2·2K⁺ 锁闭态等）；credit 行如实署名（CCD/PDB 条目号/Commons 作者+许可证）
+  * 深色模式：SVG 白底板与既有 AI 图行为一致
+- 【清理】删除 112 张不再引用图片（37 张退役 AI 图 + 75 张仅作合成原料的单体 CCD SVG，可经脚本一键重取），图片目录 22MB→14MB
+- 【QA】
+  * tsc src/ 0 错误、eslint 0 错误 0 警告
+  * agent-browser 端到端：生物化学 ch1-s1/ch1-s2（4 图）/ch3-s1/ch4-s4（3 图）、分子生物学 ch5-s2（双图穿插）、细胞生物学 ch10-s4、生物物理学 ch7-s2 逐节验证图片全部加载（lazy 懒加载视口外行为正常）、灯箱放大交互正常、控制台全程零错误
+  * 移动端 390px：插图 290px 自适应、零横向溢出
+  * VLM 视觉终审：图注学术规范、排版无破损、三页风格高度一致
+  * 清理 cron 任务播种的 128 条空 subjectId 假进度数据
+- 【推送】已推送 GitHub（本条 commit）
+
+Stage Summary:
+- 插图体系完成"去 AI 化"改造：64/79（81%）配图来自真实科学数据库（RCSB CCD 化学结构 + RCSB PDB 实验结构渲染 + Wikimedia Commons 权威图源），覆盖 62 个小节
+- 三条数据管道可复用：fetch-ccd-structures.ts（77 配体一键重取）、compose-figure-panels.ts（组图合成）、Commons manifest 体系（许可证合规）
+- 质量门：tsc 0 错、lint 0 警、浏览器 console 零错误、移动端零溢出、VLM 双重审校通过
+
+未解决问题与下一步建议：
+- 剩余 15 张 AI 示意图（二级结构/糖原分支/光镊/TIRF/冷冻电镜等）暂无权威开源替代，图注已如实标注"AI 绘制示意图"，可后续逐张人工绘制 SVG 替换
+- 蔗糖等二糖结构来自 Commons（Calvero 黑白线式，与 CCD 风格接近但非同源渲染引擎）；如追求绝对统一可考虑用 CCD 单体+自绘糖苷键方案
+- prokaryotic-transcription.png（OpenStax）为彩色照片风格插画，与黑白结构式混排时风格差异可见（属正常教材混排）
+- cron 15 分钟任务会自行 seed 测试数据，推送/交付前需再清理（本次已清 128 条）
+- 下一步可做：AI 助教引用插图（VLM 读图讲解）、术语词典挂结构式缩略图、学习报告增加"本学期配图一览"

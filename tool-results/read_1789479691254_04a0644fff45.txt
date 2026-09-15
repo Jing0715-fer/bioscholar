@@ -1,0 +1,455 @@
+     1→# BioScholar 生命科学智能学习平台 - 工作日志
+     2→
+     3→## 项目概述
+     4→基于教育部"101计划"生物学核心课程教材体系（生物化学、分子生物学、细胞生物学、生物物理学）构建的专业生物学学习应用，附带 AI 智能助教。
+     5→
+     6→技术栈：Next.js 16 (App Router) + TypeScript + Tailwind CSS 4 + shadcn/ui + Prisma (SQLite) + Zustand + z-ai-web-dev-sdk (LLM)
+     7→
+     8→## 核心功能规划
+     9→1. 仪表盘：学习概览、进度统计、继续学习
+    10→2. 学科中心：四大基础学科（含章节知识点体系）
+    11→3. 知识点阅读器：Markdown 渲染、要点、术语关联
+    12→4. AI 智能助教：LLM 流式聊天、生物学专家人设、上下文感知
+    13→5. 测验系统：每章自测题、答题记录、成绩统计
+    14→6. 术语词典：跨学科专业术语检索
+    15→7. 学习笔记：知识点笔记、持久化存储
+    16→8. 学习进度追踪：小节完成状态、进度百分比
+    17→9. 全局搜索：⌘K 命令面板式搜索
+    18→
+    19→## 数据规范
+    20→- 学科内容文件：src/data/subjects/{subjectId}.ts，导出符合 Subject 类型的数据
+    21→- 测验题文件：src/data/quiz/{subjectId}.ts，导出 QuizQuestion[]
+    22→- 术语词典：src/data/glossary.ts，导出 GlossaryTerm[]
+    23→- 类型定义：src/lib/types.ts（所有 subagent 必须遵循）
+    24→- 学科 ID 规范：biochemistry / molecular-biology / cell-biology / biophysics
+    25→
+    26→---
+    27→Task ID: 1
+    28→Agent: 主控 (Z.ai Code)
+    29→Task: 搭建基础架构
+    30→
+    31→Work Log:
+    32→- 进行中：类型定义、Prisma schema、状态管理、worklog 初始化
+    33→
+    34→Stage Summary:
+    35→- （待补充）
+    36→
+    37→---
+    38→Task ID: 2-a
+    39→Agent: content-biochemistry
+    40→Task: 编写生物化学学科教材内容与测验题
+    41→
+    42→Work Log:
+    43→- 编写 src/data/subjects/biochemistry.ts（12 章 53 小节，正文约 6 万字 Markdown，含 Unicode 化学式、Markdown 数据表格、经典数值核算）
+    44→- 编写 src/data/quiz/biochemistry.ts（60 题：single 46 / truefalse 11 / multiple 3；难度 1=15、2=34、3=11）
+    45→- 章节结构：ch1 糖类化学(4节) ch2 脂质与生物膜(4节) ch3 氨基酸与蛋白质一级结构(4节) ch4 蛋白质三维结构与功能(5节) ch5 酶学(5节) ch6 维生素与辅酶(3节) ch7 核酸化学(4节) ch8 生物能学与生物氧化(5节) ch9 糖代谢(5节) ch10 脂质代谢(5节) ch11 氨基酸与核苷酸代谢(5节) ch12 物质代谢的整合与调节(4节)
+    46→- 修复内容审校问题：tRNA 稀有碱基表述、糖异生激素调节方向、α-酮酸汇入点计数、心肌代谢表述、能量表格数值
+    47→- 验证：bun 结构化校验（章节 id/小节 id/keyPoints 3-6 条/terms 3-8 个/题目答案越界）全部通过；bunx tsc -p tsconfig.json 中 biochemistry 文件 0 错误
+    48→
+    49→Stage Summary:
+    50→- 章节数：12；小节数：53；测验题数：60（每章 5 题）
+    51→- 关键教材数据已核对：糖酵解净得 2 ATP、葡萄糖彻底氧化 30/32 ATP、棕榈酸 β 氧化净产 106 ATP、尿素循环耗 3 ATP、P/O 比 2.5/1.5、ATP 水解 ΔG°′=−30.5 kJ/mol、TCA 一轮 3NADH+1FADH₂+1GTP、脂肪酸合成 8 乙酰CoA+7ATP+14NADPH
+    52→- 文件：src/data/subjects/biochemistry.ts（导出 biochemistry: Subject）、src/data/quiz/biochemistry.ts（导出 biochemistryQuiz: QuizQuestion[]）
+    53→- 已被 src/data/biology.ts 的汇总导出引用，类型与 types.ts 完全匹配
+    54→
+    55→---
+    56→Task ID: 2-c2
+    57→Agent: quiz-cell-biology
+    58→Task: 补写细胞生物学测验题
+    59→
+    60→Work Log:
+    61→- 编写 src/data/quiz/cell-biology.ts（60 题，覆盖 12 章）
+    62→- 每章 5 题（cell-biology-ch1 至 cell-biology-ch12），id 为 q-cell-biology-01 至 q-cell-biology-60，与 biology.ts 已有的 import { cellBiologyQuiz } 对接
+    63→- 题目依据 cell-biology.ts 各节 keyPoints 出题（如 ch12 考 Caspase、死亡受体/线粒体途径、Bcl-2 家族、自噬、坏死性凋亡/焦亡/铁死亡）
+    64→- 验证：tsc 无 cell-biology 相关错误；脚本校验通过（id 唯一且连续、chapterId 与教材一致、answer 索引均在 options 范围内）
+    65→
+    66→Stage Summary:
+    67→- 总题数 60
+    68→- 题型分布：single 45 题（75%）、truefalse 12 题（20%，options 固定 ['正确','错误']）、multiple 3 题（5%，answer 为数组）
+    69→- 难度分布：难度 1 共 15 题、难度 2 共 35 题、难度 3 共 10 题
+    70→- 每题均含 2-4 句解析，说明正确项依据与错误项错因
+    71→
+    72→---
+    73→Task ID: 4
+    74→Agent: frontend-reader
+    75→Task: 构建知识点阅读器视图
+    76→
+    77→Work Log:
+    78→- 重写 src/components/bio/reader-view.tsx（约 860 行），实现完整三栏式知识点阅读器
+    79→- 布局：lg 以上三栏（260px 章节目录树 + 弹性主栏 + 280px 要点/术语栏），以下单栏；移动端目录收进左侧 Sheet 抽屉（含学科头/进度条/目录树），要点/术语/操作卡移至正文下方
+    80→- 左栏/抽屉共用 ChapterTree 组件：当前章节默认展开（chapterId 变化自动跟随），当前小节高亮（学科色左边框 + bgSoft + 学科文字色），已完成小节显示绿色 CheckCircle2，章节行显示 done/total 进度数字，全部完成时章号替换为对勾；点击小节调用 openReader
+    81→- 主栏：桌面面包屑（学科中心/学科名可点击返回 + 章节路径）、本书阅读进度条卡（doneCount/totalSections + Progress）、学科渐变横幅（bio-dna-bg 装饰 + 小节标题 + 章节摘要 + 已学习/时长/要点/术语徽章）、max-w-3xl Markdown 正文卡（bio-md 排版）、章末测验入口卡（getQuizByChapter>0 时显示，navigate quiz）、上一节/下一节导航卡
+    82→- 上一节/下一节：computeNeighbors 处理跨章边界（章末→下一章第一节，章首→上一章最后节），跨章时显示"下一章/上一章"Badge；第一节无上一节、最后一节无下一节（bun 脚本对四学科真实数据边界校验通过）
+    83→- 右栏 SectionAside（桌面右栏 + 移动端下方共用）：本节要点卡（编号列表 + 学科色）、相关术语卡（术语 chip 点击 navigate glossary）、学习操作卡（标记为已学/取消已学 toggleSectionComplete，pending 时 Loader2 旋转、完成后显示"已完成本节学习"绿色提示；向 AI 助教提问本节按钮 setAssistantContext + navigate assistant，带 Tooltip）
+    84→- 细节：学科配色全部取自 getSubjectTheme（gradient/bg/bgSoft/text/border/badge/hover）；切节自动回页顶；无效 id 兜底"未找到该知识点"页；自定义滚动用 bio-scroll；无障碍（nav/aria-label/aria-current/aria-expanded/focus-visible ring/sr-only 语义）；严格 TypeScript 无 any；未引入新依赖
+    85→- 验证：bunx tsc --noEmit 全项目 0 错误；bun run lint 0 错误 0 警告；dev server 编译通过 GET / 200
+    86→
+    87→Stage Summary:
+    88→- 实现功能：三栏阅读布局（桌面）/单栏+目录抽屉（移动）、章节目录树（当前节高亮/已完成绿勾/跨章点击跳转）、本书进度条、学科渐变横幅、Markdown 正文渲染、本节要点卡、相关术语卡（跳转词典）、标记已学/取消已学（乐观更新+pending 态）、AI 助教上下文跳转、章末测验入口、上一节/下一节跨章导航、无效内容兜底页
+    89→
+    90→---
+    91→Task ID: 5
+    92→Agent: frontend-assistant
+    93→Task: 构建 AI 智能助教聊天视图
+    94→
+    95→Work Log:
+    96→- 重写 src/components/bio/assistant-view.tsx（约 900 行）：SSE 流式聊天 / 历史加载 / 上下文展示 / 快捷提问 / 学科聚焦 / 清空会话
+    97→- 会话管理：localStorage 'bioscholar-chat-session' 持久化 UUID（crypto.randomUUID + 降级）；挂载 GET /api/chat 加载历史；AlertDialog 确认后 DELETE 清空并重置
+    98→- 流式渲染：fetch POST + ReadableStream.getReader() + TextDecoder 逐行解析 `data:` SSE 事件；类型守卫区分 delta/done/error；rAF 批量合并增量渲染（避免高频 setState 抖动）；AbortController 支持"停止生成"（保留已生成部分并标记"已手动停止"）
+    99→- 消息区：用户右侧 primary 气泡 / AI 左侧 card 气泡 + Dna 渐变头像；AI 回复用 <Markdown/> 渲染（支持表格/标题/列表）；流式光标动画；空内容时 bio-dot-1/2/3 三点跳动"思考中"；智能滚动（scrollTop 距底 <80px 才自动跟随，附"回到底部"悬浮按钮）；React.memo 优化非流式气泡
+   100→- 输入区：Textarea JS 自适应高度（1–4 行，clamp 104px）；Enter 发送（含 IME isComposing 判断）/ Shift+Enter 换行；生成中切换为红色停止按钮；safe-area-inset-bottom 适配
+   101→- 上下文展示：store.assistantContext 解析为"学科 · 第 N 章 · 小节"学科色 Badge（可点 × 清除）；无上下文时显示阅读页引导提示
+   102→- 快捷提问：空会话 6 张经典生物学问题卡片（化学渗透假说 / 米氏方程 / 原核真核调控 / Bcl-2 / 膜蛋白 α-螺旋 / 中心法则），点击直接发送
+   103→- 学科聚焦（加分项）：顶栏 Select 下拉，选中后显示聚焦 Badge + 输入区提示语（仅提示不强制）
+   104→- 错误处理：网络失败/HTTP 异常/SSE error 事件均落位到消息内错误横幅 + "重试"按钮（重发最近用户消息）；toast（use-toast destructive）提示
+   105→- 验证：bunx tsc --noEmit 0 错误；eslint 该文件 0 警告；curl 冒烟测试 GET/POST SSE/DELETE 全部符合前端解析协议（data:{"delta"}…data:{"done":true}）
+   106→
+   107→Stage Summary:
+   108→- 会话：UUID localStorage 持久化 + 历史加载 + 确认清空（DELETE）
+   109→- 流式：SSE 解析（类型守卫无 any）+ rAF 批渲染 + 停止/重试 + 流式光标与思考动画
+   110→- UI：emerald→teal 渐变横幅（Bot/GraduationCap）、max-w-4xl、消息区 flex-1 bio-scroll 滚动、移动端 safe-area
+   111→- 上下文：学科色 Badge 展示/清除 + 空态引导 + 学科聚焦下拉
+   112→- 快捷提问：6 个生物学经典问题卡片
+   113→- 质量门：tsc 0 错、eslint 0 警告、API 冒烟通过
+   114→
+   115→---
+   116→Task ID: 6
+   117→Agent: frontend-quiz-glossary-notes
+   118→Task: 构建测验中心、术语词典、学习笔记视图
+   119→
+   120→Work Log:
+   121→- 重写 quiz-view.tsx / glossary-view.tsx / notes-view.tsx
+   122→- layout.tsx 追加挂载 sonner Toaster（top-center, richColors），使 sonner toast 生效
+   123→- agent-browser 端到端实测三个视图全流程，并清理测试数据
+   124→
+   125→Stage Summary:
+   126→- quiz-view：四学科 Tabs（学科色激活态）+ 已答/正确率统计（GET /api/quiz/attempts 过滤）；章节练习（12 章卡片，含每章已答/正确率）与随机挑战（难度分层 3/5/2 抽 10 题）双模式；单选 RadioGroup / 判断双大按钮 / 多选 Checkbox+确认按钮；题号进度条、难度星级（基础/进阶/挑战三色）、实时计时；答后即时判分（绿色/红色高亮+解析+正确答案）；结果页 SVG 得分环、评语、用时、逐题回顾（对错标记+答案+错题解析）、再来一轮/返回选题/返回学科；交卷批量 POST 记录并刷新统计
+   127→- glossary-view：实时搜索（中文/英文/缩写，不区分大小写）；全部+四学科筛选胶囊（学科色激活、带计数）；词条卡片网格（学科色左边框+缩写 Badge+英文名+类别标签+定义，hover 学科色效果）；按类别分组开关（类别计数降序）；匹配计数与空态；移动端单列→桌面 3 列
+   128→- notes-view：GET /api/notes 列表（标题、内容 line-clamp-2、学科色 Badge、date-fns zhCN 相对时间、关联知识点一键跳回阅读页）；Dialog 新建/编辑（POST/PATCH + 校验 + loading）；AlertDialog 确认删除（DELETE）；标题/内容前端搜索过滤；插画式空态（StickyNote）+ 阅读页快捷记笔记提示；加载骨架屏
+   129→- 验证：bunx tsc --noEmit 0 错误；bun run lint 0 错误；agent-browser 实测答题全流程/搜索筛选分组/笔记 CRUD 均通过
+   130→
+   131→---
+   132→Task ID: 7-8
+   133→Agent: 主控 (Z.ai Code)
+   134→Task: 全局搜索、收尾打磨、agent-browser 端到端验证
+   135→
+   136→Work Log:
+   137→- 实现 ⌘K 全局搜索（search-dialog.tsx：章节/知识点/术语三组检索，点击跳转阅读器/词典）
+   138→- 修复移动端 Sheet 缺少 Description 的 aria 警告（page.tsx + reader-view.tsx）
+   139→- agent-browser 端到端验证：
+   140→  * 仪表盘渲染正常（统计卡、学科进度、活动图表、教材依据卡）
+   141→  * 学科中心 → 生物化学 12 章目录 → 展开章节 → 进入阅读器全流程正常
+   142→  * 阅读器三栏布局、目录树高亮、标记已学（乐观更新）、下一节导航、术语关联正常
+   143→  * "向 AI 助教提问本节"成功携带上下文（显示"生物化学·第1章·单糖的结构、构型与构象"）
+   144→  * AI 助教 SSE 流式回复验证：问"什么是异头物"，返回专业完整解析（α/β 比例 36%/64%、变旋现象、易混淆点）
+   145→  * 测验中心：章节练习启动、多选题勾选确认、判分+解析正确（答错后正确显示 A/C/D 及糖胺聚糖解析）
+   146→  * 术语词典：100 词条加载、搜索 ATP 命中三磷酸腺苷
+   147→  * 全局搜索：搜"糖酵解"返回知识点+术语分组，点击跳转阅读器成功
+   148→  * 暗色模式切换正常（html class=dark）
+   149→  * 移动端 390px：桌面侧栏隐藏、顶栏+抽屉菜单正常
+   150→  * 粘性页脚：短页 footerBottom=viewportH（贴底），长页自然下推
+   151→  * console 零警告、零页面错误；TSC 与 ESLint 零错误
+   152→
+   153→Stage Summary:
+   154→- 应用达到"浏览器可交互"完成标准：全部核心流程经 agent-browser 实测通过
+   155→- 产出：全局搜索、aria 修复
+   156→
+   157→---
+   158→Task ID: 9
+   159→Agent: 主控 (Z.ai Code)
+   160→Task: 创建 15 分钟定时 webDevReview 任务
+   161→
+   162→Work Log:
+   163→- cron 服务拒绝 6 字段 cron 表达式（*/15 分钟），改用 fixed_rate=900s 成功创建（job_id: 386790）
+   164→- 任务类型 webDevReview，每 15 分钟自动评估项目状态、agent-browser 测试 QA、修 bug 或推进新需求、更新 worklog
+   165→
+   166→Stage Summary:
+   167→- 项目初始版本全部完成并经浏览器端到端验证
+   168→- 定时持续开发任务已就位
+   169→
+   170→---
+   171→Task ID: 10-e1
+   172→Agent: frontend-styling-expert
+   173→Task: 仪表盘 / 学科中心 / 应用外壳「学术编辑风」改造（去 AI 味）
+   174→
+   175→Work Log:
+   176→- 仅改动三个文件：dashboard.tsx、subjects-view.tsx、page.tsx；未动 globals.css / store / API / 路由逻辑 / 数据口径
+   177→- dashboard.tsx：
+   178→  * hero 重做：emerald→cyan 渐变横幅删除，改为 bio-paper 纹理卡片 + 左文右图（heroImage 占约 4/9，容器 bg-primary/5 兜底、border-t / lg:border-l 细线分隔）；文案区 bio-eyebrow「101计划」眉标 + font-serif「生命科学研习堂」大标题 + bio-rule + 副题 + 章节题数元信息行（·分隔）+ 双 CTA
+   179→  * 统计区：四张彩色图标卡 → 单条 hairline 分隔统计带（gap-px + bg-border，grid-cols-2→4），数字 font-serif tabular-nums 大号优先，sub 元信息行，彩色图标底座全部移除
+   180→  * 学科进度：每学科一行卡片，subjectCovers 缩略图（h-20/24 w-32/40 object-cover + theme.bgSoft 兜底）+ 学科色 border-l-2 细左边框 + serif 学科名 + 英文名小字 +「N 章 · N 小节 · N 节已完成」元信息 + 学科色细进度条（自定义 div，role=progressbar 完整 aria）+ serif 百分比；hover bg-accent/40 细过渡（无大阴影）
+   181→  * 继续学习卡：bg-primary/5 纯色（原渐变）+ eyebrow + bio-rule + serif 标题；空态同构
+   182→  * 活动图表：标题改「小方块 + font-serif」，recharts 数据逻辑不动
+   183→  * 教材依据：四张图标底座卡 → 编辑式条目列表（学科色左边框 + serif 名称 + 英文 eyebrow + 教材名 + 元信息），区块头部加 Textbook Foundation eyebrow + bio-rule
+   184→- subjects-view.tsx：
+   185→  * 列表页头部：eyebrow "Four Core Disciplines" + font-serif「学科中心」+ bio-rule
+   186→  * 学科卡：删除 gradient 顶条与彩色图标底座；封面图 aspect-[21/9] object-cover 置顶（图上无文字，bgSoft 兜底）；下方 eyebrow 英文名 + serif 中文名 + 简介 +「章 · 小节 · 自测题」元信息行 + 学科色细进度条 +「进入学习」+ ArrowRight 页脚；hover 用 theme.hover 细边框（去掉 translate-y / shadow-lg）
+   187→  * 学科详情：gradient 横幅删除 → 封面图（21/9）+ bio-paper 编辑式头部（eyebrow 英文名 + serif 中文名 + bio-rule + 简介 + 元信息 + 教材名 + outline 自测按钮）
+   188→  * 章节目录：章号改 font-serif tabular-nums 两位编号（01/02…，学科色），已完成 CheckCircle2 绿色对勾；关键词 chips →「关键词」eyebrow + 正文式 · 分隔文本；小节行 hover 细边框（border-transparent→border-border），未读 FileText 图标 → 1px 小圆点，降低图标密度
+   189→- page.tsx：
+   190→  * BrandHeader：emerald 渐变 DNA 底座 → border-primary/30 + bg-primary/10 + text-primary 克制样式；品牌名 font-serif
+   191→  * NavList 激活态：bg-primary 白字大块 → 左侧 3px border-primary 竖线 + bg-primary/10 + font-semibold + 图标 text-primary（inactive border-transparent 保持布局稳定）；删除图标 scale 动画
+   192→  * 侧栏「教材体系依据」：保留 bio-dna-bg，改 eyebrow 标题 + bio-rule 分隔的两段纯文字
+   193→  * 桌面顶栏：bio-eyebrow "BioScholar" + 竖 hairline + font-serif 当前栏目名；移动端顶栏品牌图标同步克制化
+   194→  * 去玻璃拟态：侧栏 bg-sidebar/60 backdrop-blur-sm → bg-sidebar 纯色；双顶栏 bg-background/80 backdrop-blur-md → bg-background
+   195→  * 页脚：bg-muted/40 色块 → 仅 border-t 一行居中细字（safe-area 以 pb-[max()] 保留）
+   196→- 验证：bunx tsc --noEmit 过滤 src/ 零错误（仅 examples/、skills/ 脚手架存在与本次无关的预置报错）；bun run lint 0 错误 0 警告；dev.log 末尾连续 ✓ Compiled；期间 quiz-view / assistant-view 的瞬时 tsc 报错系并行代理编辑中的中间状态，非本任务文件
+   197→
+   198→Stage Summary:
+   199→- 三文件学术编辑风改造完成：渐变横幅、彩色徽章、图标底座、玻璃拟态全部清除，统一为 eyebrow + font-serif 标题 + bio-rule + 学科色细节的设计语言
+   200→- heroImage 与 subjectCovers 全部接入（<img loading="lazy"> + 学科色浅底兜底，封面资源由并行代理产出中，未就绪时布局不塌陷）
+   201→- 交互、统计、导航逻辑保持原样；自定义进度条补齐 role / aria-valuenow 等无障碍属性
+   202→
+   203→---
+   204→Task ID: 10-e2（重派）
+   205→Agent: frontend-styling-expert
+   206→Task: AI 助教 / 测验中心 / 术语词典 / 学习笔记「学术编辑风」打磨（去 AI 味）
+   207→
+   208→Work Log:
+   209→- 重派背景：前一次 10-e2 调用中断；本次先核对四文件现状（git diff 逐一审阅），确认前次调用实际已完成四个文件的完整改造（共约 +400/-384 行，无半成品残留），随后进行完整性审计、模式扫描与质量门验证，并补记本条工作日志（前次中断未及追加）
+   210→- 仅涉及四个文件：assistant-view.tsx / quiz-view.tsx / glossary-view.tsx / notes-view.tsx；未触碰 globals.css / markdown.tsx / reader-view / dashboard / subjects-view / page.tsx / illustrations.ts / store / API；SSE 流式解析、localStorage 会话、答题判分、CRUD、搜索过滤等业务逻辑零改动（diff 仅样式层）
+   211→- assistant-view.tsx：
+   212→  * 顶部 emerald→teal 渐变横幅（Bot/GraduationCap + bio-dna-bg）删除 → 编辑式学术头部：bio-eyebrow「AI Teaching Assistant」+ font-serif「AI 智能助教」+ 一行说明 + bio-rule；仅保留 h-1 细线级渐变点缀（规则允许）；原独立工具栏（教材上下文 Badge / 学科聚焦 Select / 清空会话按钮）并入头部卡内，功能不变
+   213→  * 快捷提问卡：删 Zap/FlaskConical/Dna/Microscope/Atom/Lightbulb 彩色图标底座与 LucideIcon 依赖 → font-serif tabular-nums 题号 01/02… + 衬线问题文本 + 细边框 hover（hover:border-foreground/25 + bg-accent/40，去 translate-y/彩色阴影）
+   214→  * 消息气泡：AI 头像 emerald→teal 渐变 → bg-primary 单色；流式光标/思考三点 emerald → primary token；AI 气泡保持 card 质感、用户气泡 primary 保持；「回到底部」按钮去 backdrop-blur 玻璃拟态
+   215→  * 提示图标 Lightbulb 去 amber 着色改 muted；历史消息分隔线改 bio-rule 渐隐规线
+   216→- quiz-view.tsx：
+   217→  * 顶部：ClipboardList 图标 + 统计卡（Separator 分隔框）→ bio-eyebrow「Self-Assessment Center」+ font-serif「测验中心」+ 元信息行化统计（已答 N 题 · 正确率 N%，数字 font-serif tabular-nums + 学科色）+ bio-rule
+   218→  * 学科 Tabs 激活态：全色块白字 + 彩色阴影 → 学科色 bgSoft（-500/10）+ 学科色文字 + shadow-none；模式 Tabs 功能不变
+   219→  * 章节练习卡：「第 N 章」bgSoft 徽章 + 「N 题」Badge + hover 下划线 → font-serif tabular-nums 大号章号（01/02…，muted 色弱化、hover 提亮）+ 学科色 border-l-4 细左边框 + 衬线章名 +「N 题 · 已答 N · 正确率 N%」行化元信息
+   220→  * 随机挑战卡：Shuffle 全色图标底座 + bio-dna-bg 纹理 + 三枚彩色难度 Badge → h-1 学科色细线 + eyebrow「Random Challenge」+ 衬线标题 +「基础 × N · 进阶 × N · 挑战 × N」行化元信息
+   221→  * 答题界面：题干 font-serif；难度 DifficultyStars（★★★ 彩色星）→ DifficultyLabel（1.5px 小圆点色标 + 细文字「基础/进阶/挑战」）；题号/计时 tabular-nums
+   222→  * 结果页：得分环保留，环内得分大数字 font-serif；「答对 N / N 题」数字 font-serif tabular-nums；评语、逐题回顾结构保持
+   223→- glossary-view.tsx：
+   224→  * 头部：BookMarked 图标标题 → bio-eyebrow「Glossary · 术语检索」+ font-serif「术语词典」+ 检索说明一行 + bio-rule；分组按钮保留
+   225→  * 学科筛选：全色块胶囊（FilterPill + theme.classes.bg）→ 下边线式学术 tabs（FilterTab：激活 = 学科色 border-b + 文字色；全部 = primary；计数 tabular-nums 伴随）
+   226→  * 词条卡：保留学科色 border-l-4 左边框；hover 去 translate-y/彩色阴影仅 shadow-sm；缩写 Badge 去学科色改中性 outline；英文名 font-serif italic；学科徽章 → 学科色细文字 + · 分隔行化元信息；类别 Badge secondary → outline muted
+   227→  * 分组视图：类别标题 font-serif +「N 条」细字 + bio-rule 渐隐规线（替代 Badge + 硬分隔线）
+   228→- notes-view.tsx：
+   229→  * 头部：StickyNote 图标标题 → bio-eyebrow「Study Notes · 学习档案」+ font-serif「学习笔记」+ 动态说明行 + bio-rule；新建按钮保留
+   230→  * 笔记卡：标题 font-serif；学科 Badge → 学科色细文字 + · 分隔；「相对时间更新 tabular-nums · 关联小节跳转链接」行化元信息；hover 改细边框过渡（hover:border-foreground/25，去 shadow-md）
+   231→  * 空态：插画保留但去 bg-primary/8 彩色底座 + 双层圆环 → border-dashed 细线圆 + muted 图标；Badge 依赖整体移除（import 清理）
+   232→- 完整性审计（本次重派新增）：rg 扫描四文件确认 0 emoji / 0 backdrop-blur / 0 shadow-lg|xl / 0 theme.classes.bg 全色块；全部渐变仅剩 3 处 h-1/hairline 细线级（assistant 头部 h-1、quiz 随机挑战卡 h-1、历史消息分隔 h-px）；0 处 any；bio-* 自定义类均在 globals.css 中定义；aria 属性抽查齐全
+   233→- 验证：bunx tsc --noEmit src/ 零错误（仅 examples/websocket、skills/image-edit、skills/stock-analysis-skill 存在与本次无关的预置报错）；bun run lint 0 错误 0 警告；dev.log 末尾连续 ✓ Compiled 无新增错误（dev server 此刻已停，未重启以免干扰主控）
+   234→
+   235→Stage Summary:
+   236→- 四文件学术编辑风改造完成并经重派审计确认：AI 助教渐变横幅/彩色图标底座、测验彩色 Tabs/星级难度/彩色徽章、词典全色胶囊、笔记彩色空态全部清除，与 Task 10-e1 的 dashboard/学科中心/外壳设计语言对齐（eyebrow + font-serif + bio-rule + 学科色细节 + 行化元信息 + tabular-nums）
+   237→- 全部业务逻辑（SSE 流式、会话持久化、判分提交、CRUD、搜索过滤、跳转导航）保持原样；严格 TS 无 any；响应式与无障碍属性完整
+   238→- 质量门：tsc（src/）0 错误、eslint 0 错误 0 警告
+   239→
+   240→---
+   241→Task ID: 11 & 12
+   242→Agent: 主控 (Z.ai Code)
+   243→Task: 插图体系完成 + 表格修复 + 复习卡片新功能 + 全量推送 GitHub
+   244→
+   245→Work Log:
+   246→- 【插图体系】第二批 16 张教学关键插图生成并挂载（scripts/gen-images-extra.sh）：
+   247→  * 生物化学 6 张：葡萄糖异头物(ch1-s1)、氨基酸通式(ch3-s1)、血红蛋白四级结构(ch4-s4)、米氏动力学曲线(ch5-s3)、糖原分支结构(ch9-s5)、尿素循环(ch11-s2)
+   248→  * 分子生物学 4 张：中心法则(ch1-s4)、Holliday 交叉(ch3-s3)、剪接体剪接(ch5-s2)、染色质多级包装(ch8-s1)
+   249→  * 细胞生物学 4 张：钠钾泵(ch2-s4)、染色质包装(ch7-s3，复用 mb 图)、GPCR 信号通路(ch8-s2)、减数分裂(ch10-s5)
+   250→  * 生物物理学 3 张：膜脂相变(ch3-s1)、光镊(ch6-s1)、动作电位(ch7-s2)
+   251→  * 全部统一"墨线+淡彩教科书插画"风格；图注为学术严谨中文描述（含数值与机制细节）；共 44 张图、40 个配图小节
+   252→- 【关键 Bug 修复】
+   253→  * markdown.tsx：react-markdown 默认 urlTransform 会清空 biofigure:// 自定义协议 → 自定义 urlTransform 放行标记；defaultUrlTransform 仅接收 1 参数（修正签名）
+   254→  * markdown.tsx：react-markdown 将独立图片包在 <p> 内导致 <figure>/<figcaption> 嵌套 <p> 的 hydration 错误 → 安装 rehype-unwrap-images 插件解除包裹（console 错误清零）
+   255→- 【新功能：复习卡片（间隔重复）】
+   256→  * prisma 新增 FlashcardReview 模型（ease/intervalDays/reps/lapses/dueAt，dueAt 索引）已 db:push
+   257→  * src/lib/srs.ts：SM-2 简化算法（四档评分 0忘记/1困难/2良好/3简单；遗忘重置+10分钟再现；掌握阈值 21 天）
+   258→  * /api/flashcards：GET 返回到期卡+新卡补足队列（每日新卡≤15、会话≤25）与统计；POST 提交评分并 upsert 调度
+   259→  * revision-view.tsx：翻卡流程（正面术语→显示答案→四档自评）、进度条、新卡/轮次标记、下轮复习提示、完成页统计（张数/记忆质量/需巩固）、空态与重试，学术编辑风（学科色顶线+衬线术语大字+eyebrow）
+   260→  * 导航集成：page.tsx 新增"复习卡片"项（Layers 图标），store NavKey/AppView 增加 revision
+   261→- 【侧栏微调】教材体系依据卡行距 1.9、分段（VLM 评审反馈的拥挤问题）
+   262→- 【QA】agent-browser 实测：仪表盘 hero/学科封面缩略图、学科详情、阅读器插图（图 2-3-1、图 1-4-1、动作电位图 7-2-1）、booktabs 三线表（8 行数据+表头）、GFM 表格渲染、四视图新样式、控制台零错误；VLM 设计评审结论：插图风格高度统一、科学准确性优秀、排版专业
+   263→- 【推送】GitHub 仓库 Jing0715-fer/bioscholar 已创建并全量推送
+   264→
+   265→Stage Summary:
+   266→- 应用完成度：44 张统一风格教材插图覆盖 40 个关键小节 + 106 个小节的学术三线表全部正确渲染 + 复习卡片间隔重复系统全流程可用
+   267→- 质量门：bunx tsc src/ 0 错误、bun run lint 0 错误 0 警告、浏览器 console 零错误零警告
+   268→- 已推送：https://github.com/Jing0715-fer/bioscholar
+   269→
+   270→未解决问题与下一步建议：
+   271→- 插图风格为 AI 生成示意（图注已声明"AI 绘制示意图"），后续可逐张人工审校替换为矢量图
+   272→- 复习卡片目前仅基于术语词典 100 条，可扩展为"小节要点卡"（keyPoints 抽卡）
+   273→- 可考虑学习热力图、导出学习报告 PDF、错题本等增强功能
+   274→
+   275→---
+   276→Task ID: 13
+   277→Agent: 主控 (Z.ai Code)
+   278→Task: 复习卡片 QA 修复 + 错题本新功能 + 推送
+   279→
+   280→Work Log:
+   281→- 【QA 发现并修复关键 Bug】复习卡片 /api/flashcards HTTP 500：db:push 时 dev server 占用导致 Prisma Client 未热更新，db.flashcardReview undefined → bun run db:generate 重新生成 + 重启 dev server 修复
+   282→- 【QA 复习卡片全流程】agent-browser 实测：队列加载（15 张新卡）→ 翻卡（ATP→糖酵解）→ 四档评分（"良好"）→ 推进正常；Prisma 验证 SM-2 调度正确（ATP：reps=1、intervalDays=1、ease=2.5、dueAt=次日）；测试数据已清理
+   283→- 【新功能：错题本（wrongbook）】
+   284→  * /api/wrongbook：GET 聚合 QuizAttempt 答错记录（按题聚合错次/最近错答/最后错误时间倒序，关联题目原文与学科统计）；DELETE { questionId } 移除错题（删除该题全部作答）
+   285→  * wrongbook-view.tsx：学术编辑风（eyebrow+衬线标题+学科色顶线）；学科下边线式筛选（带计数）；错题卡（衬线序号+题干展开/收起）；展开区选项正误对照（绿=正确/红=你的选择/灰=未选）+ 解析块（左侧 primary 细线）+ 移除操作（AlertDialog 确认）；空态/加载/错误态；date-fns 相对时间
+   286→  * 导航集成：page.tsx 新增"错题本"（NotebookPen 图标），types AppView + store NavKey 增加 wrongbook
+   287→- 【端到端验证】agent-browser：真实答题（5 题对 1）→ 交卷（得分率 20%）→ 错题本自动归集 4 道 → 学科筛选 → 展开解析 → 移除 1 道（4→3 实时更新）→ console 零错误；VLM 评审排版专业统一
+   288→- 【tsc/lint】src/ 0 错误，eslint 0 警告
+   289→
+   290→Stage Summary:
+   291→- 应用现有 9 大功能视图：仪表盘/学科中心/阅读器/AI 助教/测验中心/复习卡片/错题本/术语词典/学习笔记
+   292→- 错题闭环成型：测验 → 错题归集 → 解析复习 → 移除已掌握；结合 SM-2 复习卡片形成完整学习回路
+   293→
+   294→未解决问题与下一步建议：
+   295→- 复习卡片可扩展"小节要点卡"（keyPoints 抽卡）与错题联动（错题自动生成卡片）
+   296→- 仪表盘可加入错题数/到期卡数统计卡
+   297→- 学习热力图（GitHub 风格活动日历）可作为下一亮点功能
+   298→
+   299→---
+   300→Task ID: 14
+   301→Agent: 主控 (Z.ai Code)
+   302→Task: 全面 QA 回归 + 学习热力图 + 仪表盘统计增强 + 复习卡片要点卡扩展
+   303→
+   304→Work Log:
+   305→- 【QA 回归（本轮起点）】agent-browser 遍历 9 大视图 + 全局搜索 + 阅读器插图/灯箱/三线表 + 复习卡片翻卡评分全流程 + SM-2 数据库验证 + 移动端 390px 布局：全部通过、console 零错误、无需修复
+   306→- 【新功能：学习热力图（GitHub 风格活动日历）】
+   307→  * 新 API /api/activity：LearningProgress/QuizAttempt/Note/FlashcardReview 四类行为按日聚合（126 天 = 18 周）+ streak 连续天数 + maxStreak 区间最长 + activeTotal 活跃天数；lastReviewedAt 可空守卫
+   308→  * 新组件 activity-heatmap.tsx：周列 × 7 行格子矩阵（周一为首行）、5 级色阶（bg-muted → primary/25/45/65/90，评审后加大级差）、月份标尺（left 精确 calc 对齐修正 1.875rem 偏移）、星期标尺（奇数行移动端隐藏）、hover/focus 双通道 + aria-live 当日明细行（避免 tooltip 溢出）、图例（少→多）、格子 aria-label 完整、移动端 overflow-x-auto 内滚 + min-w-0
+   309→  * 仪表盘：移除原 recharts 近 14 天柱状图 → 全宽热力图卡（eyebrow Learning Activity · 近 18 周 + 连续学习 N 天衬线徽标 + bio-rule）
+   310→- 【新功能：仪表盘统计增强】
+   311→  * /api/stats 扩展：dueCards（今日到期复习卡）、wrongCount（错题去重数）、近 14 天 activity 补充 reviews 维度
+   312→  * 统计条 4 → 6 格（grid-cols-2 sm:3 lg:6）：新增"待复习卡片""错题本"两格可点击跳转（role=button + Enter/Space 键盘支持 + 箭头 hover 动效）
+   313→  * 右栏新增"今日速览"卡：复习卡片（到期数）+ 错题本（待攻克数）两行列表入口
+   314→  * VLM 评审优化落地：零值数字调淡（muted/50 避免满屏 0 焦虑感）
+   315→- 【新功能：复习卡片小节要点卡】
+   316→  * /api/flashcards 重构：buildKeypointSources() 从四学科 203 个小节 keyPoints 构建要点卡源（cardId 规范 kp-{sectionId}，要求 keyPoints ≥ 3 条）；队列 = 到期卡（术语+要点按 intervalDays 排序）+ 新卡（术语 12/日 + 要点 6/日，2:1 交织排列）；SESSION_LIMIT 25 不变；POST 校验 cardId ∈ glossary ∪ kp 集合
+   317→  * stats.totalCards 100 → 303（100 术语卡 + 203 要点卡），seen/mastered/dueNow 统一覆盖两类卡
+   318→  * revision-view.tsx：DueCard 扩展 type/chapterTitle/chapterId/sectionId/keyPoints；正面分支（要点卡显示"学科 · 第 N 章 · 章题"eyebrow + 小节衬线大字 + "回忆本节的 N 条要点"提示）；背面分支（01/02 编号要点列表，衬线 primary 序号）；卡片类型徽标（要点卡 violet 细边框 / 术语卡中性）；"回看本节原文"按钮 openReader 跳转阅读器；头部文案更新"303 张学科卡片"
+   319→- 【QA 发现并修复存量 Bug】移动端 390px 仪表盘横向溢出（bodyOverflowX）：学科进度 Card 等作为 grid 子项缺 min-w-0，导致内容链（封面 128px + 文字 min-content）无法收缩，按钮 409px > 358px 可用宽 → 全部 Card/grid 容器补 min-w-0，修复后 308px 正常截断
+   320→- 【验证】tsc src/ 0 错误、eslint 0 错误 0 警告、agent-browser：热力图 126 格渲染/焦点交互 aria-live 更新/月份标尺、要点卡翻卡（编号列表）→评分→SM-2（POST kp- 卡 reps=1 interval=1）、回看原文跳转阅读器、移动端 2 列统计条 + 无横向溢出、8 视图回归零错误；VLM 桌面/移动双评审通过（A+ 风格一致性）；测试数据已清理（122 条 mock 进度 + flashcardReview）
+   321→- 【推送】commit 58fdd1d 已推送 https://github.com/Jing0715-fer/bioscholar
+   322→
+   323→Stage Summary:
+   324→- 应用现有功能：仪表盘（6 格统计 + 热力图 + 今日速览）/ 学科中心 / 阅读器 / AI 助教 / 测验 / 复习卡片（术语 + 要点双卡型）/ 错题本 / 词典 / 笔记
+   325→- 学习行为数据全面打通：四类行为 → 热力图/streak 统计 → 仪表盘聚合，学习闭环可视化成型
+   326→- 质量门：tsc 0 错误、lint 0 警告、浏览器 console 零错误、移动端零溢出
+   327→
+   328→未解决问题与下一步建议：
+   329→- 热力图色阶为单一 primary 绿阶梯，可考虑学科色混合或更大数据量下的分位数分级
+   330→- 错题联动卡片（答错自动生成要点卡）尚未实现，可作为复习系统下一步
+   331→- 可做导出学习报告 PDF、AI 助教多轮上下文记忆增强、错题本按知识点聚类
+   332→- 插图覆盖 40/203 小节，仍可继续扩充第二批学科插图
+   333→
+   334→---
+   335→Task ID: 15-b
+   336→Agent: full-stack-developer (学习报告)
+   337→Task: 学习报告功能（API + 视图 + 打印导出 + 导航）
+   338→
+   339→Work Log:
+   340→- 前置阅读 worklog（10-e1/10-e2 学术编辑风设计语言、Task 14 热力图）与 dashboard / activity-heatmap / api/activity / api/stats / api/wrongbook / store / page / types / biology 源码，确认设计语言（bio-eyebrow + font-serif + bio-rule + hairline 统计带 + 学科色 border-l-2 + tabular-nums）与数据口径
+   341→- 新建 src/app/api/report/route.ts（GET）：Promise.all 拉取 LearningProgress / QuizAttempt / Note / FlashcardReview 四表全量 + 三个最近子集；聚合 generatedAt、overview（已完成/总小节 203/答题/正确率/笔记/已学/已掌握/今日到期/错题去重）、subjects（四学科：进度%、答题/正确率/错题去重/笔记数）、activity（126 天 = 18 周四类行为按日计数 + streak/maxStreak/activeDays，逐行复刻 /api/activity 的 toKey 与连续天数算法保证两处热力图完全一致）、recent（最近 8 完成小节经 SECTION_INDEX 静态映射标题、最近 8 笔记、最近 5 复习含 cardId→可读 label 解析：术语卡取词条名 / kp- 要点卡取小节标题）；错题数按 questionId 去重（对齐 wrongbook）；复习掌握判定复用 srs.isMastered
+   342→- 新建 src/components/bio/report-view.tsx（约 620 行，学术编辑风）：刊头（eyebrow「STUDY REPORT · 学习档案」+ 衬线大标题 + 说明 + 报告生成时间 tabular-nums + bio-rule，右侧导出 PDF 按钮 Printer 图标触发 window.print）；报告本体包 print-root；概览统计带（grid-cols-2 sm:3 lg:6 gap-px hairline，零值数字 text-muted-foreground/50 调淡）；学科进展（学科色 border-l-2 + 衬线学科名 + 英文 eyebrow + 已完成 N/M + 细进度条 role=progressbar 完整 aria + 「答题 N · 正确率 N% · 错题 N · 笔记 N」行化元信息）；复习记忆（已学/已掌握/今日到期/连续学习 四格 hairline 带）；学习活跃度（复用 ActivityHeatmap + 连续/活跃/最长连续 三格统计带）；最近动态三列（最近完成小节→openReader、最近笔记→notes、最近复习→revision，date-fns zhCN 相对时间 + hover 箭头）；空数据引导态（dashed 圆 + muted 图标 + 「开始学习后此处将生成你的学习报告」+ 前往学科中心按钮）；加载骨架 / 错误重试态
+   343→- QA 中发现并修复健壮性缺口：API 返回 200 但负载异常（如 {error}）时视图解构 undefined 崩溃（agent-browser 实测触发 Application error）→ load() 增加形状校验（overview/activity/recent/数组字段缺失抛错落错误态）+ normalizeReport 归一化（数值 num() 兜底、days/subjects 过滤非法项），修复后异常负载显示「报告加载失败 + 重新加载」
+   344→- 导出 PDF 按钮处理深色模式：打印前临时移除 html.dark、打印后恢复，避免「深色浅字 + 白底」不可读
+   345→- globals.css 末尾追加学习报告打印导出 @media print 规则（body 白底 / 仅 .print-root 可见 / .no-print 隐藏），报告刊头操作区加 no-print
+   346→- 导航集成：types.ts AppView 增加 { name: 'report' }、store.ts NavKey 增加 'report'（注：项目无 viewTitle 映射，顶栏标题由 page.tsx NAV_ITEMS 派生）、page.tsx NAV_ITEMS 在「错题本」后新增「学习报告」（FileChartColumn 图标，desc「学习数据汇总与导出」）+ ViewSwitch 渲染 ReportView + 移动端 SheetDescription 文案同步；NavList 桌面/移动共用确认同步
+   347→- 质量门：bunx tsc --noEmit src/ 零错误；bun run lint 0 错误 0 警告；agent-browser 实测：导航切换/五区块渲染/126 格热力图/4 progressbar aria/导出按钮存在且包裹 no-print、window.print 为 function、print-root 计算样式与编译 CSS 均确认 @media print 规则生效、agent-browser pdf 生成 211KB 报告 PDF 且 pdftotext 验证仅含报告内容（无侧栏/顶栏外壳）、最近动态行点击跳转阅读器与笔记视图、错误态重试恢复、空态（mock 全零负载：引导文案 + 前往学科中心 + 导出按钮正确隐藏）、移动端 390px 零横向溢出（print-root 宽 358px）、深色模式渲染正常、console 零错误零警告
+   348→- 测试数据经真实 API 种子（6 小节进度 + 4 答题 + 1 笔记 + 2 复习卡）验证后精确清理（不动并行代理的 test-* 数据），清理后 API 复查归零（122 条并行代理 mock 数据除外）
+   349→
+   350→Stage Summary:
+   351→- 应用现有 10 大功能视图：仪表盘/学科中心/阅读器/AI 助教/测验/复习卡片/错题本/学习报告/词典/笔记
+   352→- /api/report 一次聚合四表 + 静态映射，返回 { generatedAt, overview(10 字段), subjects[4](11 字段), activity{days[126], streak, maxStreak, activeDays}, recent{sections[8], notes[8], reviews[5]} }；日键与 /api/activity 逐字节一致（其实现为 toISOString UTC 键，为保证仪表盘与报告两处热力图完全一致而沿用）
+   353→- 学习报告视图：学术编辑风五区块（总览/学科/复习记忆/活跃度/最近动态）+ 一键导出 PDF（print-root 隔离 + 深色模式临时切浅 + pdftotext 验证导出内容纯净）+ 空态/骨架/错误重试三态齐备，异常负载防崩溃
+   354→- 质量门全过：tsc src/ 0 错误、eslint 0 警告、浏览器 console 零错误、移动端零溢出
+   355→
+   356→---
+   357→Task ID: 15
+   358→Agent: 主控 (Z.ai Code)
+   359→Task: 全面 QA 回归 + 数据清理 + 错题联动复习卡 + 第三批插图（12 张）+ 学习报告统筹 + 推送
+   360→
+   361→Work Log:
+   362→- 【QA 回归（本轮起点）】agent-browser 遍历仪表盘/复习卡片/错题本/学科中心/阅读器：功能全部正常、console 零错误；tsc src/ 0 错误、lint 0 警告、dev.log 无异常
+   363→- 【QA 发现并修复】数据库残留 123 条 test-* 假进度数据（上轮 cron 任务测试残留，subjectId 为空串污染仪表盘"已学 61%"）→ deleteMany 清理，stats 归零复核；本轮结束时再次全量清理（quiz 6 + flashcards 4 + progress 128）
+   364→- 【新功能 A：错题联动复习卡（测验答错 → SM-2 队列）】
+   365→  * /api/quiz/attempts POST：答错记录自动 upsert FlashcardReview（cardId 约定 wq-{questionId}）；首次答错建卡（reps=0、dueAt=now、lapses=1、lastReviewedAt=null）；再次答错拉回立即到期并 lapses+1，已掌握（interval≥21 天）则重置为待巩固；响应新增 wrongCards 计数
+   366→  * /api/flashcards GET：新增 QUIZ_SOURCES 题库源（225 题）；错题卡最高优先入队（含 reps=0 未复习新错题卡），其次到期卡、新卡补足；0.5 步查询 QuizAttempt 最近错误选择附到 userAnswer（背面红绿对比）；stats.totalCards 动态 = 303 + 错题卡数，新增 wrongDue；POST 校验扩展 wq- 前缀
+   367→  * /api/wrongbook DELETE：移除错题时同步删除对应 wq- 复习卡（闭环清理）
+   368→  * revision-view.tsx：DueCard 扩展 type:'wrong' + question/options/answer/explanation/userAnswer；正面（学科·章 eyebrow + 衬线题干 + "回忆这道题的正确答案"）；背面（选项列表红绿对比：绿=正确答案✓ / 红=你的选择✗ / 灰=未选 + 图例 + 解析块）；徽标三态（错题卡 rose / 要点卡 violet / 术语卡中性；isNew 对错题卡显示"待巩固"）；辅助操作"前往错题本"；头部文案动态卡库数 + "错题待巩固 N" 统计
+   369→  * quiz-view.tsx：交卷响应捕获 wrongCards，结果页新增 rose 提示卡"N 道错题已自动加入复习卡片，点击前往巩固"（直跳复习视图）；startQuiz 重置
+   370→- 【新功能 A 端到端验证】API 直测（答错→wq 卡入队首位→评分良好→SM-2 interval=1→wrongbook 删除→卡库回落 303）；agent-browser 真实答题（5 题对 1）→交卷→结果页提示"4 道错题已自动加入"→跳转复习→错题卡翻卡（红绿对比+解析）→评分推进（第 2/22 张仍错题卡连续排队）；VLM 评审采纳 P1 建议增加"你的选择"对比视图
+   371→- 【新功能 C：第三批教学插图（12 张，覆盖 40→52 小节）】
+   372→  * 呼吸链四复合物(ch8-s2)/磷酸戊糖途径(ch9-s3)/脂肪酸β氧化(ch10-s1)/DNA变性复性Tm(ch7-s3)/PCR循环(mb-ch9-s2)/Sanger测序(mb-ch9-s4)/trp操纵子衰减(mb-ch7-s3)/RNA干扰(mb-ch8-s5)/RTK-Ras-MAPK(cb-ch8-s4)/CDK-cyclin周期引擎(cb-ch10-s2)/跳跃式传导(bp-ch7-s3)/冷冻电镜(bp-ch9-s4)
+   373→  * 生成链路：gen-images-batch3.sh（后台 nohup/setsid 均被会话清理终止 → 改前台分段运行）；VLM 审校两轮发现 6 张乱码文字/结构缺陷 → 重画一轮仍残留伪标签 → 新工具 scripts/remove-text-illu.ts（z-ai image-edit SDK 批量擦除文字，保留图形）→ 5 张清洗后 VLM 复检全部可用
+   374→  * 【格式修复】image-edit 返回 JPEG 数据存为 .png 扩展名导致 MIME 不匹配浏览器解码失败（naturalWidth=0）→ PIL 转真 PNG；scripts/remove-text-illu.ts 修正 SDK 类型（image 而非 images）
+   375→  * illustrations.ts：12 条新挂载（学术图注含机制细节/数值/诺奖出处），图编号自动 图{章}-{节}-{序}；呼吸链/PCR/跳跃传导/CDK 四处阅读器实测渲染正常
+   376→- 【新功能 B：学习报告】子代理完成（详见 Task 15-b 条目）：/api/report 四表聚合 + report-view 五区块学术编辑风 + print-root 打印导出 PDF（pdftotext 验证内容纯净）+ 导航集成（错题本之后，FileChartColumn）
+   377→- 【最终回归】10 视图零错误零溢出；移动端 390px 仪表盘/学习报告/复习卡片/错题本零横向溢出；tsc 0 错误、lint 0 警告；测试数据全量清理（进度/答题/复习卡/笔记归零）
+   378→- 【推送】commit 已推送 https://github.com/Jing0715-fer/bioscholar
+   379→
+   380→Stage Summary:
+   381→- 应用现有 10 大功能视图：仪表盘/学科中心/阅读器/AI 助教/测验/复习卡片（术语+要点+错题三卡型）/错题本/学习报告/词典/笔记
+   382→- 学习闭环完全成型：测验答错 → 自动生成错题卡 → SM-2 调度巩固 → 错题本红绿对照复习 → 掌握后移除（同步清卡）
+   383→- 插图体系 56 张 / 52 个小节（覆盖 52/203，约 26%）
+   384→- 质量门：tsc 0 错误、lint 0 警告、console 零错误、移动端零溢出、VLM 插图与 UI 双审校通过
+   385→
+   386→未解决问题与下一步建议：
+   387→- 插图仍可继续扩充（52/203）；图像模型在复杂多步骤流程图上易生成乱码伪标签，流程类插图建议"简洁构图+去文字工具"流水线（scripts/remove-text-illu.ts 可复用）
+   388→- 热力图打印时右侧截断（GitHub 同款行为），可加 print 缩放
+   389→- AI 助教多轮上下文记忆增强、错题本按知识点聚类、学习报告增加"能力画像"雷达图可作下一步
+   390→- cron 定时任务（15 分钟 webDevReview）会自行 seed 测试数据用于 QA，推送前需检查数据清洁
+   391→---
+   392→Task ID: 5-a
+   393→Agent: commons-biochemistry-images
+   394→Task: 从 Wikimedia Commons 搜集生物化学通路真实配图
+   395→
+   396→Work Log:
+   397→- 读取 worklog 了解插图体系现状（Task 11/12/15 的 AI 生成示意图 56 张，用户要求替换为真实权威来源图）
+   398→- Commons API（action=query&list=search, srnamespace=6）逐项英文关键词检索 10 类目标图，再用 imageinfo（url|size|mime|extmetadata）获取候选的原图地址、尺寸、许可与作者；自建 /tmp/commons_info.sh 脚本批量查询并 sed 去除 Artist 的 HTML 标签
+   399→- 候选遴选：全部选择 Wikipedia 经典教学图（Glycolysis.svg、Citric acid cycle with aconitate 2.svg、Mitochondrial ETC annotated diagram.svg、Pentose phosphate pathway en.svg、Beta oxidation of fatty acids.png、Urea cycle.svg、Michaelis-Menten saturation curve.svg、Hyperchromicity.svg、Cell membrane detailed diagram en.svg、Calvero 的 Sucrose/Lactose/Maltose.svg 同作者同风格黑白线式系列）
+   400→- 下载：SVG 一律取 1920px PNG 缩略图（小尺寸结构式取 960px），保存为小写 kebab-case PNG 至 public/images/bio/commons/；期间发现 1600px 自拼 thumb URL 返回 HTML 报错页，改用 API 返回的 thumburl 后全部成功；遇 Commons 429 限流，加 User-Agent 与 sleep 退避后恢复
+   401→- VLM 科学性验证（z-ai vision，每图中文核对清单）：糖酵解（10步/酶名/中间产物/ATP·NADH 计量）、TCA（8步酶名/3NADH+1FADH2+1GTP/回补）、ETC（四复合物/CoQ·cyt c/电子流/质子泵向/ATP合酶）、PPP（氧化2NADPH+CO2/非氧化转酮转醛）、β氧化（四步螺旋/FADH2·NADH/活化/C16→C14+C2）、尿素循环（5步酶/线粒体·胞质分区/4个高能磷酸键）、米氏曲线（Vmax/Km/1/2Vmax/双曲线形态）、DNA 熔解（S形/A260/Tm 中点）、流动镶嵌（双层/整合外周蛋白/胆固醇/糖链仅外侧）、三种二糖糖苷键类型与还原性——12 张全部一次通过，无需启用备选候选
+   402→- 校验 10 个 sectionId 与 src/data/subjects/biochemistry.ts 逐一匹配（ch1-s2 二糖、ch2-s3 生物膜、ch5-s3 米氏、ch7-s3 变性复性、ch8-s2 呼吸链、ch9-s1/s2/s3 糖代谢、ch10-s1 β氧化、ch11-s2 尿素循环）
+   403→- 写入 public/images/bio/commons/manifest-5a.json（12 条：topic/sectionId/commonsFile/author/license/sourceUrl/verified），与并行代理目录共存未触碰他人文件；最终完整性脚本校验：12 文件均有效 PNG、<5MB、许可证均在 CC0/PD/CC BY/CC BY-SA 白名单、manifest 键与磁盘文件一一对应
+   404→- 未修改 src/ 任何代码与其他图片目录（structures/、pdb/、covers/、各学科 AI 图目录原样保留）
+   405→
+   406→Stage Summary:
+   407→- 成功搜集并 VLM 审校通过 12 张 Commons 真实图（10 类目标全覆盖，含二糖三张组图）：
+   408→  * glycolysis-pathway.png → ch9-s1（WYassineMrabet, CC BY-SA 3.0）
+   409→  * tca-cycle.png → ch9-s2（Naryanese et al., CC BY-SA 3.0）
+   410→  * electron-transport-chain.png → ch8-s2（Rozzychan, CC BY-SA 2.5）
+   411→  * pentose-phosphate-pathway.png → ch9-s3（Pink Bee, CC BY-SA 4.0）
+   412→  * beta-oxidation.png → ch10-s1（Mplanine, CC BY 4.0）
+   413→  * urea-cycle.png → ch11-s2（Yikrazuul, CC BY-SA 3.0）
+   414→  * michaelis-menten-kinetics.png → ch5-s3（fullofstars, Public domain）
+   415→  * dna-melting-curve.png → ch7-s3（Fdardel, CC BY-SA 3.0）
+   416→  * fluid-mosaic-model.png → ch2-s3（Mariana Ruiz, Public domain）
+   417→  * sucrose/lactose/maltose-structure.png → ch1-s2（Calvero, Public domain，同作者同风格系列）
+   418→- 跳过项：无（DNA 熔解曲线与二糖系列均找到合格图，未触发 3 候选淘汰）
+   419→- 全部署名信息已如实记录于 manifest-5a.json，供图注署名使用
+   420→
+   421→---
+   422→Task ID: 5-c
+   423→Agent: commons-cellbio-images
+   424→Task: 从 Wikimedia Commons 搜集细胞生物学与生物物理学真实配图
+   425→
+   426→Work Log:
+   427→- 读取 worklog 了解插图体系现状（56 张 AI 生成示意图覆盖 52 小节，用户核心诉求：替换为真实、权威来源配图）
+   428→- 通过 Commons API（action=query&list=search，srnamespace=6）检索 12 个主题候选图，关键词含 "animal cell anatomy diagram"、"mitochondrion structure"、"mitosis phases diagram"、"meiosis diagram"、"apoptosis"、"G protein-coupled receptor signaling cAMP"、"MAPK pathway"、"action potential"、"saltatory conduction"、"endomembrane system"、"cytoskeleton"、"cyclin CDK cell cycle" 等
+   429→- 逐候选调用 imageinfo（iiprop=url|size|mime|extmetadata）获取原图/缩略图 URL、尺寸、许可证（LicenseShortName）与作者（Artist，sed/jq 去 HTML 标签），仅保留 CC0/Public domain/CC BY/CC BY-SA
+   430→- 下载 12 个最终文件至 public/images/bio/commons/（SVG 原图优先；Smart-Servier 细胞骨架原图 10240×5760 超 5MB，改用 1920px 允许尺寸缩略图；OpenStax 动作电位为 JPEG 故扩展名用 .jpg）；期间 upload.wikimedia.org 出现 429 限速（retry-after 600s，与并行代理共享出口 IP），通过等待限速窗口与 thumb.wikimedia.org 备用主机完成全部下载；所有文件均经 file/jq 校验非 HTML 错误页
+   431→- VLM 科学审校（z-ai vision，glm-5v-turbo）：每图按定制核对清单中文提问（结构完整性、各期顺序与染色体行为、通路级联顺序、数值与阈值标注、标签语言与乱码检查）；SVG 图使用 Commons 1920px PNG 渲染图送审（与原图内容一致）
+   432→- VLM 审校淘汰/替换记录（每目标 ≤3 候选）：
+   433→  * 线粒体首选 File:Mitochondrion structure labels.svg（CC0）渲染后仅有文字标签列表、无结构图形 → 弃用，改用 File:Animal mitochondrion diagram en.svg（PD, LadyofHats）复审通过（外膜/内膜/嵴/基质/膜间隙/ATP合酶/mtDNA/核糖体全部正确）
+   434→  * 跳跃传导首选 File:Saltatory conduction along a myelinated axonw.svg（CC0）科学内容正确但标注为德语（Myelinscheide/Ranvier'sche Schnürringe）→ 不符英文标注要求，改用 File:Propagation of action potential along myelinated nerve fiber en.svg（CC BY-SA 4.0, Helixitta）复审通过
+   435→  * GPCR 候选 File:XBio illustration – G Protein Coupled Receptor (GPCR).png（CC BY 4.0）仅展示 7 次跨膜结构、无 G 蛋白/cAMP 下游级联 → 弃用；File:Process of cAMP Dependent Pathway.jpg（CC BY 4.0）通过（VLM 指出糖原分解产物为教科书级简化，建议图注补充 G-1-P）
+   436→  * RTK-Ras-MAPK 两候选均通过审校：File:MAPK-pathway-mammalian.png 缺上游 RTK→Grb2/SOS→Ras 环节且不含 JAK-STAT；File:Signal transduction pathways.svg 完整覆盖 RTK→Grb2/SOS→Ras→Raf→MEK→ERK 并含 JAK-STAT/PI3K/Wnt 总览，与 ch8-s4 小节标题"酶联受体：RTK 途径与 JAK-STAT"更契合 → 选后者
+   437→- 写入 manifest-5c.json（12 条：文件名→topic→sectionId→commonsFile→author→license→sourceUrl→VLM 审校说明）；未触碰 manifest-5a.json 与并行代理的任何文件；未修改 src/ 下任何代码；文件名全部为细胞/生物物理主题 kebab-case，与并行代理无冲突
+   438→
+   439→Stage Summary:
+   440→- 成功搜集 12 张 Commons 真实配图（任务清单 10 个主目标全部命中，另完成 2 个加分项），全部经 VLM 科学审校通过、许可证合规（PD/CC0/CC BY/CC BY-SA）、作者如实记录：
+   441→  1. animal-cell-anatomy.svg → cell-biology-ch1-s2（PD, LadyofHats/Mariana Ruiz）
+   442→  2. mitochondrion-ultrastructure.svg → cell-biology-ch5-s1（PD, Mariana Ruiz Villarreal）
+   443→  3. mitosis-phases.svg → cell-biology-ch10-s4（CC BY-SA 3.0, Jpablo cad & juliana osorio 等）
+   444→  4. meiosis-stages.svg → cell-biology-ch10-s5（CC BY-SA 4.0, Ali Zifan）
+   445→  5. apoptosis-morphology.png → cell-biology-ch12-s1（PD, H. Hoffmeister 德语原版的中文翻译版；中文标注）
+   446→  6. gpcr-camp-signaling.jpg → cell-biology-ch8-s2（CC BY 4.0, Evvong168）
+   447→  7. rtk-ras-mapk-pathway.svg → cell-biology-ch8-s4（CC BY-SA 3.0, cybertory）
+   448→  8. action-potential.jpg → biophysics-ch7-s2（CC BY 4.0, OpenStax；阈值-55mV/静息-70mV/超射+30mV 全标注）
+   449→  9. saltatory-conduction.svg → biophysics-ch7-s3（CC BY-SA 4.0, Helixitta）
+   450→  10. secretory-pathway.svg → cell-biology-ch4-s2（PD, Mariana Ruiz；内膜系统 ER→Golgi→囊泡→胞吐）
+   451→  11. cytoskeleton.jpg → cell-biology-ch6-s1（CC BY-SA 3.0, Laboratoires Servier）【加分项】
+   452→  12. cdk-cyclin.png → cell-biology-ch10-s2（CC0, Fatma Abukhater）【加分项】
+   453→- 跳过项：无
+   454→- 后续集成建议：挂载到 illustrations.ts 时——gpcr-camp-signaling.jpg 图注可补充"糖原分解首先生成葡萄糖-1-磷酸"；cytoskeleton.jpg 图内 'Actine' 为法语拼写变体；apoptosis-morphology.png 为中文标注图、含少量繁体写法；7 张 SVG 中 meiosis/mitochondrion 等部分图为文字转路径（无字体依赖，渲染稳定）
+   455→
