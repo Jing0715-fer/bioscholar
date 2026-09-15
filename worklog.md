@@ -295,3 +295,38 @@ Stage Summary:
 - 复习卡片可扩展"小节要点卡"（keyPoints 抽卡）与错题联动（错题自动生成卡片）
 - 仪表盘可加入错题数/到期卡数统计卡
 - 学习热力图（GitHub 风格活动日历）可作为下一亮点功能
+
+---
+Task ID: 14
+Agent: 主控 (Z.ai Code)
+Task: 全面 QA 回归 + 学习热力图 + 仪表盘统计增强 + 复习卡片要点卡扩展
+
+Work Log:
+- 【QA 回归（本轮起点）】agent-browser 遍历 9 大视图 + 全局搜索 + 阅读器插图/灯箱/三线表 + 复习卡片翻卡评分全流程 + SM-2 数据库验证 + 移动端 390px 布局：全部通过、console 零错误、无需修复
+- 【新功能：学习热力图（GitHub 风格活动日历）】
+  * 新 API /api/activity：LearningProgress/QuizAttempt/Note/FlashcardReview 四类行为按日聚合（126 天 = 18 周）+ streak 连续天数 + maxStreak 区间最长 + activeTotal 活跃天数；lastReviewedAt 可空守卫
+  * 新组件 activity-heatmap.tsx：周列 × 7 行格子矩阵（周一为首行）、5 级色阶（bg-muted → primary/25/45/65/90，评审后加大级差）、月份标尺（left 精确 calc 对齐修正 1.875rem 偏移）、星期标尺（奇数行移动端隐藏）、hover/focus 双通道 + aria-live 当日明细行（避免 tooltip 溢出）、图例（少→多）、格子 aria-label 完整、移动端 overflow-x-auto 内滚 + min-w-0
+  * 仪表盘：移除原 recharts 近 14 天柱状图 → 全宽热力图卡（eyebrow Learning Activity · 近 18 周 + 连续学习 N 天衬线徽标 + bio-rule）
+- 【新功能：仪表盘统计增强】
+  * /api/stats 扩展：dueCards（今日到期复习卡）、wrongCount（错题去重数）、近 14 天 activity 补充 reviews 维度
+  * 统计条 4 → 6 格（grid-cols-2 sm:3 lg:6）：新增"待复习卡片""错题本"两格可点击跳转（role=button + Enter/Space 键盘支持 + 箭头 hover 动效）
+  * 右栏新增"今日速览"卡：复习卡片（到期数）+ 错题本（待攻克数）两行列表入口
+  * VLM 评审优化落地：零值数字调淡（muted/50 避免满屏 0 焦虑感）
+- 【新功能：复习卡片小节要点卡】
+  * /api/flashcards 重构：buildKeypointSources() 从四学科 203 个小节 keyPoints 构建要点卡源（cardId 规范 kp-{sectionId}，要求 keyPoints ≥ 3 条）；队列 = 到期卡（术语+要点按 intervalDays 排序）+ 新卡（术语 12/日 + 要点 6/日，2:1 交织排列）；SESSION_LIMIT 25 不变；POST 校验 cardId ∈ glossary ∪ kp 集合
+  * stats.totalCards 100 → 303（100 术语卡 + 203 要点卡），seen/mastered/dueNow 统一覆盖两类卡
+  * revision-view.tsx：DueCard 扩展 type/chapterTitle/chapterId/sectionId/keyPoints；正面分支（要点卡显示"学科 · 第 N 章 · 章题"eyebrow + 小节衬线大字 + "回忆本节的 N 条要点"提示）；背面分支（01/02 编号要点列表，衬线 primary 序号）；卡片类型徽标（要点卡 violet 细边框 / 术语卡中性）；"回看本节原文"按钮 openReader 跳转阅读器；头部文案更新"303 张学科卡片"
+- 【QA 发现并修复存量 Bug】移动端 390px 仪表盘横向溢出（bodyOverflowX）：学科进度 Card 等作为 grid 子项缺 min-w-0，导致内容链（封面 128px + 文字 min-content）无法收缩，按钮 409px > 358px 可用宽 → 全部 Card/grid 容器补 min-w-0，修复后 308px 正常截断
+- 【验证】tsc src/ 0 错误、eslint 0 错误 0 警告、agent-browser：热力图 126 格渲染/焦点交互 aria-live 更新/月份标尺、要点卡翻卡（编号列表）→评分→SM-2（POST kp- 卡 reps=1 interval=1）、回看原文跳转阅读器、移动端 2 列统计条 + 无横向溢出、8 视图回归零错误；VLM 桌面/移动双评审通过（A+ 风格一致性）；测试数据已清理（122 条 mock 进度 + flashcardReview）
+- 【推送】commit 58fdd1d 已推送 https://github.com/Jing0715-fer/bioscholar
+
+Stage Summary:
+- 应用现有功能：仪表盘（6 格统计 + 热力图 + 今日速览）/ 学科中心 / 阅读器 / AI 助教 / 测验 / 复习卡片（术语 + 要点双卡型）/ 错题本 / 词典 / 笔记
+- 学习行为数据全面打通：四类行为 → 热力图/streak 统计 → 仪表盘聚合，学习闭环可视化成型
+- 质量门：tsc 0 错误、lint 0 警告、浏览器 console 零错误、移动端零溢出
+
+未解决问题与下一步建议：
+- 热力图色阶为单一 primary 绿阶梯，可考虑学科色混合或更大数据量下的分位数分级
+- 错题联动卡片（答错自动生成要点卡）尚未实现，可作为复习系统下一步
+- 可做导出学习报告 PDF、AI 助教多轮上下文记忆增强、错题本按知识点聚类
+- 插图覆盖 40/203 小节，仍可继续扩充第二批学科插图
