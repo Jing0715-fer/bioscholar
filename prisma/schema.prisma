@@ -48,3 +48,18 @@ model ChatMessage {
 
   @@index([sessionId])
 }
+
+// 抽认卡复习记录（SM-2 间隔重复）
+model FlashcardReview {
+  id            String   @id @default(cuid())
+  cardId        String   @unique // 术语词条 id
+  ease          Float    @default(2.5) // SM-2 难易度因子
+  intervalDays  Float    @default(0) // 当前间隔（天）
+  reps          Int      @default(0) // 已复习次数
+  lapses        Int      @default(0) // 遗忘次数
+  dueAt         DateTime @default(now()) // 下次到期时间
+  lastReviewedAt DateTime? @default(now())
+  createdAt     DateTime @default(now())
+
+  @@index([dueAt])
+}

@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react'
 import { useAppStore } from '@/lib/store'
 import { getSubject, getQuizByChapter } from '@/data/biology'
+import { getIllustrations } from '@/data/illustrations'
 import type { Chapter, Section, Subject, SubjectId } from '@/lib/types'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
-import { Markdown } from '@/components/bio/markdown'
+import { Markdown, toFigureItems } from '@/components/bio/markdown'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -124,6 +125,10 @@ export function ReaderView({
   const readMinutes = section
     ? Math.max(1, Math.round(section.content.length / 500))
     : 0
+  // 本节配图（自动编号并穿插进正文）
+  const sectionFigures = section
+    ? toFigureItems(getIllustrations(section.id), chapter?.number ?? 1, section.id)
+    : []
 
   // ---- 上一节 / 下一节（跨章节边界） ----
   const { prev, next } = computeNeighbors(
@@ -366,69 +371,81 @@ export function ReaderView({
             </div>
           </div>
 
-          {/* 学科渐变横幅 */}
-          <header
-            className={cn(
-              'relative mt-4 overflow-hidden rounded-2xl border bg-gradient-to-br p-5 text-white shadow-lg sm:p-6',
-              theme.classes.gradient
-            )}
-          >
-            <div className="bio-dna-bg absolute inset-0 opacity-50" aria-hidden="true" />
-            <div className="relative">
-              <div className="flex flex-wrap items-center gap-2 text-xs text-white/85">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 font-medium backdrop-blur-sm">
-                  <theme.icon className="h-3.5 w-3.5" aria-hidden="true" />
-                  {subject.name}
-                </span>
-                <span className="opacity-80">{subject.englishName}</span>
-              </div>
-              <h1 className="mt-3 text-xl font-bold leading-snug tracking-tight sm:text-2xl">
+          {/* 小节题头（编辑式学术版式） */}
+          <header className="bio-paper relative mt-4 overflow-hidden rounded-2xl border bg-card shadow-sm">
+            <div
+              className={cn('h-1 w-full bg-gradient-to-r', theme.classes.gradient)}
+              aria-hidden="true"
+            />
+            <span
+              className="pointer-events-none absolute -right-2 -top-7 select-none font-serif text-[130px] font-bold leading-none tabular-nums opacity-[0.055] sm:-top-9 sm:text-[160px]"
+              aria-hidden="true"
+            >
+              {String(chapter.number).padStart(2, '0')}
+            </span>
+            <div className="relative p-5 sm:p-7">
+              <p className="bio-eyebrow flex items-center gap-2 text-muted-foreground">
+                <theme.icon
+                  className={cn('h-3.5 w-3.5', theme.classes.text)}
+                  aria-hidden="true"
+                />
+                {subject.englishName}
+                <span className="opacity-50">·</span>
+                Chapter {String(chapter.number).padStart(2, '0')}
+              </p>
+              <h1 className="mt-2.5 font-serif text-[1.55rem] font-bold leading-snug tracking-tight sm:text-[1.8rem]">
                 {section.title}
               </h1>
-              <p className="mt-1.5 text-sm text-white/80">
+              <p className="mt-1.5 text-sm text-muted-foreground">
                 第 {chapter.number} 章 · {chapter.title}
               </p>
-              <p className="mt-3 line-clamp-2 max-w-2xl text-xs leading-relaxed text-white/70">
+              <p className="mt-3 line-clamp-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                 {chapter.summary}
               </p>
-              <div className="mt-4 flex flex-wrap items-center gap-2">
-                <Badge
-                  variant="outline"
+              <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1.5 border-t pt-3.5 text-xs text-muted-foreground">
+                <span
                   className={cn(
-                    'border-white/30 bg-white/15 text-white backdrop-blur-sm',
-                    isCompleted && 'border-emerald-200/50 bg-emerald-400/25'
+                    'inline-flex items-center gap-1.5 font-medium',
+                    isCompleted && 'text-emerald-600 dark:text-emerald-400'
                   )}
                 >
-                  <CheckCircle2 className="h-3 w-3" aria-hidden="true" />
-                  {isCompleted ? '已学习' : '未学习'}
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="border-white/30 bg-white/15 text-white backdrop-blur-sm"
-                >
-                  <BookOpen className="h-3 w-3" aria-hidden="true" />
-                  约 {readMinutes} 分钟
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="border-white/30 bg-white/15 text-white backdrop-blur-sm"
-                >
-                  要点 {section.keyPoints.length} 条
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="border-white/30 bg-white/15 text-white backdrop-blur-sm"
-                >
-                  术语 {section.terms.length} 个
-                </Badge>
+                  {isCompleted ? (
+                    <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" />
+                  ) : (
+                    <BookOpen className="h-3.5 w-3.5" aria-hidden="true" />
+                  )}
+                  {isCompleted ? '已完成学习' : '未学习'}
+                </span>
+                <span className="opacity-30" aria-hidden="true">
+                  ·
+                </span>
+                <span>约 {readMinutes} 分钟</span>
+                <span className="opacity-30" aria-hidden="true">
+                  ·
+                </span>
+                <span>要点 {section.keyPoints.length} 条</span>
+                <span className="opacity-30" aria-hidden="true">
+                  ·
+                </span>
+                <span>术语 {section.terms.length} 个</span>
+                {sectionFigures.length > 0 && (
+                  <>
+                    <span className="opacity-30" aria-hidden="true">
+                      ·
+                    </span>
+                    <span className={cn('font-medium', theme.classes.text)}>
+                      插图 {sectionFigures.length} 幅
+                    </span>
+                  </>
+                )}
               </div>
             </div>
           </header>
 
-          {/* Markdown 正文 */}
-          <Card className="mx-auto mt-6 max-w-3xl">
+          {/* Markdown 正文（含配图穿插） */}
+          <Card className="mx-auto mt-5 max-w-3xl">
             <CardContent className="p-5 sm:p-8">
-              <Markdown content={section.content} />
+              <Markdown content={section.content} figures={sectionFigures} />
             </CardContent>
           </Card>
 

@@ -10,7 +10,6 @@ import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { toast } from 'sonner'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
@@ -219,22 +218,27 @@ export function NotesView() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
-      {/* 顶部标题 */}
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="flex items-center gap-2 text-xl font-bold tracking-tight sm:text-2xl">
-            <StickyNote className="h-5 w-5 text-primary" />
-            学习笔记
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {notes.length > 0 ? `共 ${notes.length} 篇笔记 · 持久化保存` : '随手记录你的理解与思考'}
-          </p>
+      {/* 顶部：编辑式学术头部 */}
+      <header>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div className="min-w-0">
+            <p className="bio-eyebrow text-muted-foreground">Study Notes · 学习档案</p>
+            <h1 className="mt-2 font-serif text-xl font-bold tracking-tight sm:text-2xl">
+              学习笔记
+            </h1>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              {notes.length > 0
+                ? `共 ${notes.length} 篇笔记 · 持久化保存`
+                : '随手记录你的理解与思考'}
+            </p>
+          </div>
+          <Button onClick={openCreate}>
+            <Plus className="mr-1 h-4 w-4" />
+            新建笔记
+          </Button>
         </div>
-        <Button onClick={openCreate}>
-          <Plus className="mr-1 h-4 w-4" />
-          新建笔记
-        </Button>
-      </div>
+        <div className="bio-rule mt-4" aria-hidden />
+      </header>
 
       {/* 搜索框 */}
       <div className="relative mt-4">
@@ -271,11 +275,7 @@ export function NotesView() {
           notes.length === 0 && !hasSearch ? (
             // 全空状态
             <div className="flex flex-col items-center gap-4 rounded-2xl border border-dashed py-14 text-center">
-              <span className="relative flex h-20 w-20 items-center justify-center rounded-full bg-primary/8 text-primary/70">
-                <span
-                  className="absolute inset-0 rounded-full border border-dashed border-primary/30"
-                  aria-hidden
-                />
+              <span className="flex h-20 w-20 items-center justify-center rounded-full border border-dashed text-muted-foreground/60">
                 <StickyNote className="h-9 w-9" />
               </span>
               <div>
@@ -317,27 +317,35 @@ export function NotesView() {
               const sectionInfo =
                 sid && note.sectionId ? resolveSection(sid, note.sectionId) : null
               return (
-                <Card key={note.id} className="group transition-all hover:shadow-md">
+                <Card
+                  key={note.id}
+                  className="group transition-colors hover:border-foreground/25"
+                >
                   <CardContent className="flex items-start justify-between gap-2 p-4">
                     <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-1.5">
-                        <h3 className="text-sm font-semibold leading-snug sm:text-base">
-                          {note.title}
-                        </h3>
-                        {sid && theme && subjectName && (
-                          <Badge
-                            variant="outline"
-                            className={cn('text-[10px]', theme.classes.badge)}
-                          >
-                            <theme.icon className="h-3 w-3" />
-                            {subjectName}
-                          </Badge>
-                        )}
-                      </div>
+                      <h3 className="font-serif text-sm font-semibold leading-snug sm:text-base">
+                        {note.title}
+                      </h3>
                       <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
                         {note.content.trim() || '（暂无内容）'}
                       </p>
-                      <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-muted-foreground">
+                      <div className="mt-2 flex flex-wrap items-center gap-x-1.5 gap-y-1.5 text-xs text-muted-foreground">
+                        {sid && theme && subjectName && (
+                          <span
+                            className={cn(
+                              'inline-flex items-center gap-1 font-medium',
+                              theme.classes.text
+                            )}
+                          >
+                            <theme.icon className="h-3 w-3" aria-hidden />
+                            {subjectName}
+                          </span>
+                        )}
+                        {sid && theme && subjectName && (
+                          <span className="opacity-30" aria-hidden>
+                            ·
+                          </span>
+                        )}
                         <span
                           title={new Date(note.updatedAt).toLocaleString('zh-CN')}
                           className="tabular-nums"
@@ -345,21 +353,26 @@ export function NotesView() {
                           {formatRelative(note.updatedAt)}更新
                         </span>
                         {sectionInfo && sid && (
-                          <button
-                            type="button"
-                            onClick={() =>
-                              openReader(
-                                sid,
-                                sectionInfo.chapterId,
-                                note.sectionId ?? ''
-                              )
-                            }
-                            className="inline-flex items-center gap-0.5 font-medium text-primary underline-offset-2 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
-                            aria-label={`跳转到知识点：${sectionInfo.sectionTitle}`}
-                          >
-                            <ArrowUpRight className="h-3.5 w-3.5" />
-                            {sectionInfo.sectionTitle}
-                          </button>
+                          <>
+                            <span className="opacity-30" aria-hidden>
+                              ·
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                openReader(
+                                  sid,
+                                  sectionInfo.chapterId,
+                                  note.sectionId ?? ''
+                                )
+                              }
+                              className="inline-flex items-center gap-0.5 rounded font-medium text-primary underline-offset-2 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                              aria-label={`跳转到知识点：${sectionInfo.sectionTitle}`}
+                            >
+                              <ArrowUpRight className="h-3.5 w-3.5" />
+                              {sectionInfo.sectionTitle}
+                            </button>
+                          </>
                         )}
                       </div>
                     </div>

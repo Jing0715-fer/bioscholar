@@ -1,0 +1,938 @@
+     1→'use client'
+     2→
+     3→import { useCallback, useEffect, useMemo, useState } from 'react'
+     4→import { useAppStore } from '@/lib/store'
+     5→import { subjects, getSubject, getQuizBySubject, getQuizByChapter } from '@/data/biology'
+     6→import type { QuizQuestion, SubjectId } from '@/lib/types'
+     7→import { getSubjectTheme } from '@/components/bio/subject-theme'
+     8→import { toast } from 'sonner'
+     9→import { Card, CardContent } from '@/components/ui/card'
+    10→import { Button } from '@/components/ui/button'
+    11→import { Progress } from '@/components/ui/progress'
+    12→import { Badge } from '@/components/ui/badge'
+    13→import { Separator } from '@/components/ui/separator'
+    14→import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+    15→import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
+    16→import { Checkbox } from '@/components/ui/checkbox'
+    17→import { cn } from '@/lib/utils'
+    18→import {
+    19→  ArrowLeft,
+    20→  ArrowRight,
+    21→  BookOpen,
+    22→  CheckCheck,
+    23→  CheckCircle2,
+    24→  ListChecks,
+    25→  Play,
+    26→  RotateCcw,
+    27→  Shuffle,
+    28→  Timer,
+    29→  Trophy,
+    30→  XCircle,
+    31→} from 'lucide-react'
+    32→
+    33→// ============================================================
+    34→// 常量与工具
+    35→// ============================================================
+    36→
+    37→/** 随机挑战抽题数 */
+    38→const RANDOM_COUNT = 10
+    39→
+    40→const TYPE_LABEL: Record<QuizQuestion['type'], string> = {
+    41→  single: '单选题',
+    42→  multiple: '多选题',
+    43→  truefalse: '判断题',
+    44→}
+    45→
+    46→const OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'] as const
+    47→
+    48→/** 学科 Tabs 激活配色（克制：学科色浅底 + 文字色，不用全色块） */
+    49→const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
+    50→  biochemistry:
+    51→    'data-[state=active]:bg-amber-500/10 dark:data-[state=active]:bg-amber-500/15 data-[state=active]:text-amber-700 dark:data-[state=active]:text-amber-400 data-[state=active]:shadow-none',
+    52→  'molecular-biology':
+    53→    'data-[state=active]:bg-violet-500/10 dark:data-[state=active]:bg-violet-500/15 data-[state=active]:text-violet-700 dark:data-[state=active]:text-violet-400 data-[state=active]:shadow-none',
+    54→  'cell-biology':
+    55→    'data-[state=active]:bg-rose-500/10 dark:data-[state=active]:bg-rose-500/15 data-[state=active]:text-rose-700 dark:data-[state=active]:text-rose-400 data-[state=active]:shadow-none',
+    56→  biophysics:
+    57→    'data-[state=active]:bg-cyan-500/10 dark:data-[state=active]:bg-cyan-500/15 data-[state=active]:text-cyan-700 dark:data-[state=active]:text-cyan-400 data-[state=active]:shadow-none',
+    58→}
+    59→
+    60→/** 学科主按钮配色（含 hover 深色，避免默认 hover 变主色） */
+    61→const SUBJECT_BUTTON: Record<SubjectId, string> = {
+    62→  biochemistry: 'bg-amber-600 text-white hover:bg-amber-700',
+    63→  'molecular-biology': 'bg-violet-600 text-white hover:bg-violet-700',
+    64→  'cell-biology': 'bg-rose-600 text-white hover:bg-rose-700',
+    65→  biophysics: 'bg-cyan-600 text-white hover:bg-cyan-700',
+    66→}
+    67→
+    68→/** 章节卡学科色左边框 */
+    69→const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
+    70→  biochemistry: 'border-l-amber-500',
+    71→  'molecular-biology': 'border-l-violet-500',
+    72→  'cell-biology': 'border-l-rose-500',
+    73→  biophysics: 'border-l-cyan-500',
+    74→}
+    75→
+    76→interface AttemptApiItem {
+    77→  id: string
+    78→  questionId: string
+    79→  subjectId: string
+    80→  chapterId: string
+    81→  userAnswer: string
+    82→  correct: boolean
+    83→  createdAt: string
+    84→}
+    85→
+    86→/** 待批量提交的答题记录 */
+    87→interface AttemptRecord {
+    88→  questionId: string
+    89→  subjectId: SubjectId
+    90→  chapterId: string
+    91→  userAnswer: number[]
+    92→  correct: boolean
+    93→}
+    94→
+    95→type Phase = 'select' | 'quiz' | 'result'
+    96→type Mode = 'chapter' | 'random'
+    97→
+    98→function shuffle<T>(arr: readonly T[]): T[] {
+    99→  const a = [...arr]
+   100→  for (let i = a.length - 1; i > 0; i--) {
+   101→    const j = Math.floor(Math.random() * (i + 1))
+   102→    const tmp = a[i] as T
+   103→    a[i] = a[j] as T
+   104→    a[j] = tmp
+   105→  }
+   106→  return a
+   107→}
+   108→
+   109→function answerIndexes(q: QuizQuestion): number[] {
+   110→  return Array.isArray(q.answer) ? [...q.answer] : [q.answer]
+   111→}
+   112→
+   113→function judgeAnswer(q: QuizQuestion, user: number[]): boolean {
+   114→  if (Array.isArray(q.answer)) {
+   115→    if (user.length !== q.answer.length) return false
+   116→    const correct = [...q.answer].sort((a, b) => a - b)
+   117→    const mine = [...user].sort((a, b) => a - b)
+   118→    return correct.every((v, i) => v === mine[i])
+   119→  }
+   120→  return user.length === 1 && user[0] === q.answer
+   121→}
+   122→
+   123→function formatAnswerText(q: QuizQuestion, indexes: number[]): string {
+   124→  if (indexes.length === 0) return '未作答'
+   125→  return [...indexes]
+   126→    .sort((a, b) => a - b)
+   127→    .map((i) => {
+   128→      const opt = q.options[i]
+   129→      const letter = OPTION_LETTERS[i] ?? '?'
+   130→      return opt !== undefined ? `${letter}. ${opt}` : letter
+   131→    })
+   132→    .join('、')
+   133→}
+   134→
+   135→function formatDuration(ms: number): string {
+   136→  const total = Math.max(0, Math.floor(ms / 1000))
+   137→  const m = Math.floor(total / 60)
+   138→  const s = total % 60
+   139→  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+   140→}
+   141→
+   142→/** 随机挑战抽题：难度均衡（基础 3 · 进阶 5 · 挑战 2，不足从余量补齐） */
+   143→function pickRandomQuestions(pool: QuizQuestion[]): QuizQuestion[] {
+   144→  if (pool.length <= RANDOM_COUNT) return shuffle(pool)
+   145→  const buckets: QuizQuestion[][] = [[], [], []]
+   146→  for (const q of pool) {
+   147→    buckets[q.difficulty - 1]?.push(q)
+   148→  }
+   149→  const quotas = [3, 5, 2]
+   150→  const picked: QuizQuestion[] = []
+   151→  const used = new Set<string>()
+   152→  buckets.forEach((bucket, d) => {
+   153→    for (const q of shuffle(bucket).slice(0, quotas[d] ?? 0)) {
+   154→      picked.push(q)
+   155→      used.add(q.id)
+   156→    }
+   157→  })
+   158→  if (picked.length < RANDOM_COUNT) {
+   159→    for (const q of shuffle(pool.filter((item) => !used.has(item.id)))) {
+   160→      if (picked.length >= RANDOM_COUNT) break
+   161→      picked.push(q)
+   162→    }
+   163→  }
+   164→  return shuffle(picked)
+   165→}
+   166→
+   167→// ============================================================
+   168→// 子组件
+   169→// ============================================================
+   170→
+   171→/** 难度细文字标签：小圆点色标 + 纯文字 */
+   172→function DifficultyLabel({ level }: { level: 1 | 2 | 3 }) {
+   173→  const config =
+   174→    level === 1
+   175→      ? { label: '基础', dot: 'bg-emerald-500' }
+   176→      : level === 2
+   177→        ? { label: '进阶', dot: 'bg-amber-500' }
+   178→        : { label: '挑战', dot: 'bg-rose-500' }
+   179→  return (
+   180→    <span
+   181→      className="inline-flex items-center gap-1.5 text-xs text-muted-foreground"
+   182→      aria-label={`难度：${config.label}`}
+   183→    >
+   184→      <span className={cn('h-1.5 w-1.5 rounded-full', config.dot)} aria-hidden />
+   185→      {config.label}
+   186→    </span>
+   187→  )
+   188→}
+   189→
+   190→function ScoreRing({ pct }: { pct: number }) {
+   191→  const R = 52
+   192→  const CIRC = 2 * Math.PI * R
+   193→  const stroke =
+   194→    pct >= 80 ? 'stroke-emerald-500' : pct >= 60 ? 'stroke-amber-500' : 'stroke-rose-500'
+   195→  const fill =
+   196→    pct >= 80
+   197→      ? 'fill-emerald-600 dark:fill-emerald-400'
+   198→      : pct >= 60
+   199→        ? 'fill-amber-600 dark:fill-amber-400'
+   200→        : 'fill-rose-600 dark:fill-rose-400'
+   201→  return (
+   202→    <svg
+   203→      viewBox="0 0 128 128"
+   204→      className="h-32 w-32 shrink-0"
+   205→      role="img"
+   206→      aria-label={`得分率 ${pct}%`}
+   207→    >
+   208→      <circle cx="64" cy="64" r={R} fill="none" className="stroke-muted" strokeWidth="10" />
+   209→      <circle
+   210→        cx="64"
+   211→        cy="64"
+   212→        r={R}
+   213→        fill="none"
+   214→        className={cn(stroke, 'transition-[stroke-dashoffset] duration-700 ease-out')}
+   215→        strokeWidth="10"
+   216→        strokeLinecap="round"
+   217→        strokeDasharray={CIRC}
+   218→        strokeDashoffset={CIRC * (1 - Math.min(Math.max(pct, 0), 100) / 100)}
+   219→        transform="rotate(-90 64 64)"
+   220→      />
+   221→      <text
+   222→        x="64"
+   223→        y="64"
+   224→        textAnchor="middle"
+   225→        dominantBaseline="middle"
+   226→        fontSize="26"
+   227→        className={cn(fill, 'font-serif font-bold')}
+   228→      >
+   229→        {pct}
+   230→      </text>
+   231→      <text x="64" y="86" textAnchor="middle" fontSize="11" className="fill-muted-foreground">
+   232→        得分率 %
+   233→      </text>
+   234→    </svg>
+   235→  )
+   236→}
+   237→
+   238→// ============================================================
+   239→// 测验中心主视图
+   240→// ============================================================
+   241→
+   242→export function QuizView({ subjectId }: { subjectId: SubjectId }) {
+   243→  const navigate = useAppStore((s) => s.navigate)
+   244→  const theme = getSubjectTheme(subjectId)
+   245→  const subject = getSubject(subjectId)
+   246→
+   247→  const [phase, setPhase] = useState<Phase>('select')
+   248→  const [mode, setMode] = useState<Mode>('chapter')
+   249→  const [questions, setQuestions] = useState<QuizQuestion[]>([])
+   250→  const [activeChapterId, setActiveChapterId] = useState<string | null>(null)
+   251→  const [index, setIndex] = useState(0)
+   252→  const [answers, setAnswers] = useState<Record<string, number[]>>({})
+   253→  const [pending, setPending] = useState<number[]>([])
+   254→  const [records, setRecords] = useState<AttemptRecord[]>([])
+   255→  const [startedAt, setStartedAt] = useState(0)
+   256→  const [elapsed, setElapsed] = useState(0)
+   257→  const [now, setNow] = useState(0)
+   258→  const [submitting, setSubmitting] = useState(false)
+   259→  const [attempts, setAttempts] = useState<AttemptApiItem[]>([])
+   260→
+   261→  const pool = useMemo(() => getQuizBySubject(subjectId), [subjectId])
+   262→  const diffCounts = useMemo(() => {
+   263→    const counts = [0, 0, 0]
+   264→    for (const q of pool) counts[q.difficulty - 1] += 1
+   265→    return counts
+   266→  }, [pool])
+   267→
+   268→  /** 该学科历史答题统计（从 API 全量记录中过滤） */
+   269→  const subjectStats = useMemo(() => {
+   270→    const mine = attempts.filter((a) => a.subjectId === subjectId)
+   271→    const total = mine.length
+   272→    const correct = mine.filter((a) => a.correct).length
+   273→    return { total, correct, accuracy: total > 0 ? Math.round((correct / total) * 100) : 0 }
+   274→  }, [attempts, subjectId])
+   275→
+   276→  /** 各章节历史答题统计 */
+   277→  const chapterStats = useMemo(() => {
+   278→    const map = new Map<string, { total: number; correct: number }>()
+   279→    for (const a of attempts) {
+   280→      if (a.subjectId !== subjectId) continue
+   281→      const prev = map.get(a.chapterId)
+   282→      if (prev) {
+   283→        prev.total += 1
+   284→        if (a.correct) prev.correct += 1
+   285→      } else {
+   286→        map.set(a.chapterId, { total: 1, correct: a.correct ? 1 : 0 })
+   287→      }
+   288→    }
+   289→    return map
+   290→  }, [attempts, subjectId])
+   291→
+   292→  const loadAttempts = useCallback(async () => {
+   293→    try {
+   294→      const res = await fetch('/api/quiz/attempts')
+   295→      if (!res.ok) return
+   296→      const data = (await res.json()) as { attempts?: AttemptApiItem[] }
+   297→      setAttempts(data.attempts ?? [])
+   298→    } catch {
+   299→      // 网络异常时静默处理，不影响本地练习
+   300→    }
+   301→  }, [])
+   302→
+   303→  useEffect(() => {
+   304→    void loadAttempts()
+   305→  }, [loadAttempts])
+   306→
+   307→  // 答题中每秒刷新计时
+   308→  useEffect(() => {
+   309→    if (phase !== 'quiz') return
+   310→    setNow(Date.now())
+   311→    const t = setInterval(() => setNow(Date.now()), 1000)
+   312→    return () => clearInterval(t)
+   313→  }, [phase])
+   314→
+   315→  const current = questions[index]
+   316→  const currentAnswer = current ? (answers[current.id] ?? []) : []
+   317→  const answered = current ? answers[current.id] !== undefined : false
+   318→  const answeredCount = useMemo(
+   319→    () => questions.filter((q) => answers[q.id] !== undefined).length,
+   320→    [questions, answers]
+   321→  )
+   322→
+   323→  const startQuiz = useCallback((qs: QuizQuestion[], m: Mode, chapterId: string | null) => {
+   324→    setQuestions(qs)
+   325→    setMode(m)
+   326→    setActiveChapterId(chapterId)
+   327→    setIndex(0)
+   328→    setAnswers({})
+   329→    setPending([])
+   330→    setRecords([])
+   331→    setStartedAt(Date.now())
+   332→    setElapsed(0)
+   333→    setPhase('quiz')
+   334→  }, [])
+   335→
+   336→  const startChapter = (chapterId: string) => {
+   337→    const qs = getQuizByChapter(chapterId)
+   338→    if (qs.length === 0) {
+   339→      toast.error('该章节暂无题目')
+   340→      return
+   341→    }
+   342→    startQuiz(shuffle(qs), 'chapter', chapterId)
+   343→  }
+   344→
+   345→  const startRandom = () => {
+   346→    if (pool.length === 0) {
+   347→      toast.error('该学科暂无题目')
+   348→      return
+   349→    }
+   350→    startQuiz(pickRandomQuestions(pool), 'random', null)
+   351→  }
+   352→
+   353→  const commitAnswer = (userAnswer: number[]) => {
+   354→    const q = questions[index]
+   355→    if (!q || answers[q.id] !== undefined || userAnswer.length === 0) return
+   356→    const correct = judgeAnswer(q, userAnswer)
+   357→    setAnswers((prev) => ({ ...prev, [q.id]: userAnswer }))
+   358→    setRecords((prev) => [
+   359→      ...prev,
+   360→      {
+   361→        questionId: q.id,
+   362→        subjectId: q.subjectId,
+   363→        chapterId: q.chapterId,
+   364→        userAnswer,
+   365→        correct,
+   366→      },
+   367→    ])
+   368→  }
+   369→
+   370→  const togglePending = (i: number) => {
+   371→    setPending((prev) => (prev.includes(i) ? prev.filter((x) => x !== i) : [...prev, i]))
+   372→  }
+   373→
+   374→  const finishQuiz = useCallback(async () => {
+   375→    setElapsed(Date.now() - startedAt)
+   376→    setPhase('result')
+   377→    if (records.length === 0) return
+   378→    setSubmitting(true)
+   379→    try {
+   380→      const res = await fetch('/api/quiz/attempts', {
+   381→        method: 'POST',
+   382→        headers: { 'Content-Type': 'application/json' },
+   383→        body: JSON.stringify({ records }),
+   384→      })
+   385→      if (!res.ok) throw new Error('submit failed')
+   386→      const data = (await res.json()) as { count?: number }
+   387→      toast.success(`成绩已记录 · 共提交 ${data.count ?? records.length} 条答题记录`)
+   388→      await loadAttempts()
+   389→    } catch {
+   390→      toast.error('答题记录提交失败，统计可能未更新')
+   391→    } finally {
+   392→      setSubmitting(false)
+   393→    }
+   394→  }, [records, startedAt, loadAttempts])
+   395→
+   396→  const goNext = () => {
+   397→    if (!answered) return
+   398→    if (index >= questions.length - 1) {
+   399→      void finishQuiz()
+   400→    } else {
+   401→      setIndex((i) => i + 1)
+   402→      setPending([])
+   403→    }
+   404→  }
+   405→
+   406→  const exitQuiz = () => {
+   407→    setPhase('select')
+   408→    setQuestions([])
+   409→    setPending([])
+   410→  }
+   411→
+   412→  const restart = () => {
+   413→    if (mode === 'chapter' && activeChapterId) startChapter(activeChapterId)
+   414→    else startRandom()
+   415→  }
+   416→
+   417→  const correctCount = records.filter((r) => r.correct).length
+   418→  const scorePct =
+   419→    records.length > 0 ? Math.round((correctCount / records.length) * 100) : 0
+   420→  const scoreComment =
+   421→    scorePct >= 90
+   422→      ? '出色！知识点掌握非常扎实'
+   423→      : scorePct >= 70
+   424→        ? '不错的成绩，再查漏补缺就更完美'
+   425→        : scorePct >= 50
+   426→          ? '刚过半数，结合解析巩固薄弱环节'
+   427→          : '别灰心，读懂解析后再战一轮'
+   428→  const scoreTextCls =
+   429→    scorePct >= 80
+   430→      ? 'text-emerald-600 dark:text-emerald-400'
+   431→      : scorePct >= 60
+   432→        ? 'text-amber-600 dark:text-amber-400'
+   433→        : 'text-rose-600 dark:text-rose-400'
+   434→
+   435→  const activeChapterTitle =
+   436→    mode === 'chapter' && activeChapterId
+   437→      ? subject?.chapters.find((c) => c.id === activeChapterId)?.title
+   438→      : undefined
+   439→
+   440→  // ============================================================
+   441→  // 渲染
+   442→  // ============================================================
+   443→
+   444→  return (
+   445→    <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
+   446→      {/* 顶部标题 + 学科统计（编辑式头部） */}
+   447→      <header>
+   448→        <div className="flex flex-wrap items-end justify-between gap-3">
+   449→          <div className="min-w-0">
+   450→            <p className="bio-eyebrow text-muted-foreground">Self-Assessment Center</p>
+   451→            <h1 className="mt-2 font-serif text-xl font-bold tracking-tight sm:text-2xl">
+   452→              测验中心
+   453→            </h1>
+   454→          </div>
+   455→          <p
+   456→            className="text-xs text-muted-foreground sm:text-sm"
+   457→            aria-label="该学科答题统计"
+   458→          >
+   459→            <span>已答 </span>
+   460→            <span
+   461→              className={cn(
+   462→                'font-serif text-sm font-bold tabular-nums',
+   463→                subjectStats.total > 0 ? theme.classes.text : 'text-foreground'
+   464→              )}
+   465→            >
+   466→              {subjectStats.total}
+   467→            </span>
+   468→            <span> 题</span>
+   469→            <span className="mx-1.5 opacity-30" aria-hidden>
+   470→              ·
+   471→            </span>
+   472→            <span>正确率 </span>
+   473→            <span
+   474→              className={cn(
+   475→                'font-serif text-sm font-bold tabular-nums',
+   476→                subjectStats.total > 0 ? theme.classes.text : 'text-foreground'
+   477→              )}
+   478→            >
+   479→              {subjectStats.accuracy}%
+   480→            </span>
+   481→          </p>
+   482→        </div>
+   483→        <p className="mt-1.5 text-sm text-muted-foreground">
+   484→          {subject ? `${subject.name} · ` : ''}题库共 {pool.length} 题 · 即时判分与解析
+   485→        </p>
+   486→        <div className="bio-rule mt-4" aria-hidden />
+   487→      </header>
+   488→
+   489→      {/* 学科选择 */}
+   490→      <Tabs
+   491→        value={subjectId}
+   492→        onValueChange={(v) => navigate({ name: 'quiz', subjectId: v as SubjectId })}
+   493→        className="mt-4"
+   494→      >
+   495→        <TabsList className="grid h-auto w-full grid-cols-2 gap-1 sm:grid-cols-4">
+   496→          {subjects.map((s) => {
+   497→            const t = getSubjectTheme(s.id)
+   498→            return (
+   499→              <TabsTrigger
+   500→                key={s.id}
+   501→                value={s.id}
+   502→                className={cn('h-9 gap-1.5 hover:bg-accent', SUBJECT_TAB_ACTIVE[s.id])}
+   503→              >
+   504→                <t.icon className="h-4 w-4" />
+   505→                {s.name}
+   506→              </TabsTrigger>
+   507→            )
+   508→          })}
+   509→        </TabsList>
+   510→      </Tabs>
+   511→
+   512→      {/* ---------- 模式选择 ---------- */}
+   513→      {phase === 'select' && (
+   514→        <Tabs
+   515→          value={mode}
+   516→          onValueChange={(v) => setMode(v as Mode)}
+   517→          className="mt-5 bio-fade-up"
+   518→        >
+   519→          <TabsList>
+   520→            <TabsTrigger value="chapter" className="gap-1.5">
+   521→              <BookOpen className="h-4 w-4" />
+   522→              章节练习
+   523→            </TabsTrigger>
+   524→            <TabsTrigger value="random" className="gap-1.5">
+   525→              <Shuffle className="h-4 w-4" />
+   526→              随机挑战
+   527→            </TabsTrigger>
+   528→          </TabsList>
+   529→
+   530→          <TabsContent value="chapter" className="mt-4">
+   531→            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+   532→              {(subject?.chapters ?? []).map((ch) => {
+   533→                const count = getQuizByChapter(ch.id).length
+   534→                const cs = chapterStats.get(ch.id)
+   535→                return (
+   536→                  <button
+   537→                    key={ch.id}
+   538→                    type="button"
+   539→                    onClick={() => startChapter(ch.id)}
+   540→                    disabled={count === 0}
+   541→                    className={cn(
+   542→                      'group flex items-start gap-3.5 rounded-lg border border-l-4 bg-card p-4 text-left outline-none transition-colors hover:bg-accent/30 focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
+   543→                      SUBJECT_LEFT_BORDER[subjectId]
+   544→                    )}
+   545→                    aria-label={`开始练习：第 ${ch.number} 章 ${ch.title}，共 ${count} 题`}
+   546→                  >
+   547→                    <span
+   548→                      className="font-serif text-[1.7rem] font-bold leading-none tabular-nums text-muted-foreground/50 transition-colors group-hover:text-foreground/80"
+   549→                      aria-hidden
+   550→                    >
+   551→                      {String(ch.number).padStart(2, '0')}
+   552→                    </span>
+   553→                    <span className="flex min-w-0 flex-1 flex-col">
+   554→                      <span className="font-serif text-[15px] font-semibold leading-snug">
+   555→                        {ch.title}
+   556→                      </span>
+   557→                      <span className="mt-1.5 text-xs tabular-nums leading-relaxed text-muted-foreground">
+   558→                        {count} 题
+   559→                        {cs && cs.total > 0
+   560→                          ? ` · 已答 ${cs.total} · 正确率 ${Math.round((cs.correct / cs.total) * 100)}%`
+   561→                          : ' · 尚未练习'}
+   562→                      </span>
+   563→                    </span>
+   564→                  </button>
+   565→                )
+   566→              })}
+   567→            </div>
+   568→          </TabsContent>
+   569→
+   570→          <TabsContent value="random" className="mt-4">
+   571→            <Card className="relative overflow-hidden">
+   572→              <div
+   573→                className={cn('h-1 w-full bg-gradient-to-r', theme.classes.gradient)}
+   574→                aria-hidden
+   575→              />
+   576→              <CardContent className="flex flex-col items-center gap-4 p-6 text-center sm:p-10">
+   577→                <div>
+   578→                  <p className="bio-eyebrow text-muted-foreground">Random Challenge</p>
+   579→                  <h3 className="mt-2 font-serif text-lg font-bold sm:text-xl">
+   580→                    随机挑战{subject ? ` · ${subject.name}` : ''}
+   581→                  </h3>
+   582→                </div>
+   583→                <p className="mx-auto max-w-md text-sm leading-relaxed text-muted-foreground">
+   584→                  跨章节随机抽取 {Math.min(RANDOM_COUNT, pool.length)} 道题，难度均衡搭配，
+   585→                  检验综合掌握程度。答完即刻提交并计入统计。
+   586→                </p>
+   587→                <p className="text-xs tabular-nums text-muted-foreground">
+   588→                  <span>基础 × {diffCounts[0]}</span>
+   589→                  <span className="mx-1.5 opacity-30" aria-hidden>
+   590→                    ·
+   591→                  </span>
+   592→                  <span>进阶 × {diffCounts[1]}</span>
+   593→                  <span className="mx-1.5 opacity-30" aria-hidden>
+   594→                    ·
+   595→                  </span>
+   596→                  <span>挑战 × {diffCounts[2]}</span>
+   597→                </p>
+   598→                <Button
+   599→                  size="lg"
+   600→                  className={cn('mt-1', SUBJECT_BUTTON[subjectId])}
+   601→                  onClick={startRandom}
+   602→                  disabled={pool.length === 0}
+   603→                >
+   604→                  <Play className="mr-1 h-4 w-4" />
+   605→                  开始挑战
+   606→                </Button>
+   607→              </CardContent>
+   608→            </Card>
+   609→          </TabsContent>
+   610→        </Tabs>
+   611→      )}
+   612→
+   613→      {/* ---------- 答题界面 ---------- */}
+   614→      {phase === 'quiz' && current && (
+   615→        <Card key={current.id} className="mt-5 bio-fade-up">
+   616→          <CardContent className="p-5 sm:p-6">
+   617→            {/* 题头：题号 / 题型 / 难度 / 计时 */}
+   618→            <div className="flex flex-wrap items-center justify-between gap-2">
+   619→              <div className="flex flex-wrap items-center gap-2.5 text-sm">
+   620→                <span className="font-serif font-bold tabular-nums">
+   621→                  第 {index + 1} / {questions.length} 题
+   622→                </span>
+   623→                <Badge variant="outline" className="text-[11px]">
+   624→                  {TYPE_LABEL[current.type]}
+   625→                </Badge>
+   626→                <DifficultyLabel level={current.difficulty} />
+   627→              </div>
+   628→              <span
+   629→                className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground"
+   630→                aria-label="已用时"
+   631→              >
+   632→                <Timer className="h-3.5 w-3.5" />
+   633→                {formatDuration(Math.max(0, now - startedAt))}
+   634→              </span>
+   635→            </div>
+   636→            <Progress
+   637→              value={Math.round((answeredCount / questions.length) * 100)}
+   638→              className="mt-3 h-1.5"
+   639→              aria-label={`已答 ${answeredCount} / ${questions.length} 题`}
+   640→            />
+   641→            <p className="mt-2 text-xs text-muted-foreground">
+   642→              {mode === 'random' ? '随机挑战 · 跨章节' : `章节练习${activeChapterTitle ? ` · ${activeChapterTitle}` : ''}`}
+   643→            </p>
+   644→
+   645→            {/* 题干 */}
+   646→            <p className="mt-4 font-serif text-base font-semibold leading-relaxed sm:text-lg">
+   647→              {current.question}
+   648→            </p>
+   649→
+   650→            {/* 选项：单选 */}
+   651→            {current.type === 'single' && (
+   652→              <RadioGroup
+   653→                value={currentAnswer.length > 0 ? String(currentAnswer[0]) : ''}
+   654→                onValueChange={(v) => commitAnswer([Number(v)])}
+   655→                disabled={answered}
+   656→                className="mt-4 gap-3"
+   657→              >
+   658→                {current.options.map((opt, i) => {
+   659→                  const isCorrectOpt = answerIndexes(current).includes(i)
+   660→                  const isUserOpt = currentAnswer.includes(i)
+   661→                  return (
+   662→                    <label
+   663→                      key={i}
+   664→                      htmlFor={`${current.id}-opt-${i}`}
+   665→                      className={cn(
+   666→                        'flex items-center gap-3 rounded-lg border px-4 py-3 text-sm transition-all',
+   667→                        answered
+   668→                          ? isCorrectOpt
+   669→                            ? 'border-emerald-500 bg-emerald-500/10'
+   670→                            : isUserOpt
+   671→                              ? 'border-rose-500 bg-rose-500/10'
+   672→                              : 'border-border opacity-60'
+   673→                          : 'cursor-pointer border-border hover:border-primary/50 hover:bg-accent/50 has-[[data-state=checked]]:border-primary/60 has-[[data-state=checked]]:bg-accent/50'
+   674→                      )}
+   675→                    >
+   676→                      <RadioGroupItem value={String(i)} id={`${current.id}-opt-${i}`} />
+   677→                      <span className="font-semibold text-muted-foreground">
+   678→                        {OPTION_LETTERS[i]}
+   679→                      </span>
+   680→                      <span className="min-w-0 flex-1 leading-relaxed">{opt}</span>
+   681→                      {answered && isCorrectOpt && (
+   682→                        <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
+   683→                      )}
+   684→                      {answered && isUserOpt && !isCorrectOpt && (
+   685→                        <XCircle className="h-4 w-4 shrink-0 text-rose-500" />
+   686→                      )}
+   687→                    </label>
+   688→                  )
+   689→                })}
+   690→              </RadioGroup>
+   691→            )}
+   692→
+   693→            {/* 选项：判断 */}
+   694→            {current.type === 'truefalse' && (
+   695→              <div className="mt-4 grid grid-cols-2 gap-3">
+   696→                {current.options.map((opt, i) => {
+   697→                  const isCorrectOpt = answerIndexes(current).includes(i)
+   698→                  const isUserOpt = currentAnswer.includes(i)
+   699→                  return (
+   700→                    <button
+   701→                      key={i}
+   702→                      type="button"
+   703→                      disabled={answered}
+   704→                      onClick={() => commitAnswer([i])}
+   705→                      className={cn(
+   706→                        'flex h-14 items-center justify-center gap-2 rounded-xl border text-base font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-default',
+   707→                        answered
+   708→                          ? isCorrectOpt
+   709→                            ? 'border-emerald-500 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400'
+   710→                            : isUserOpt
+   711→                              ? 'border-rose-500 bg-rose-500/10 text-rose-700 dark:text-rose-400'
+   712→                              : 'border-border opacity-60'
+   713→                          : 'cursor-pointer border-border hover:border-primary/50 hover:bg-accent/60 active:scale-[0.98]'
+   714→                      )}
+   715→                      aria-label={opt}
+   716→                    >
+   717→                      {i === 0 ? (
+   718→                        <CheckCircle2 className="h-5 w-5" />
+   719→                      ) : (
+   720→                        <XCircle className="h-5 w-5" />
+   721→                      )}
+   722→                      {opt}
+   723→                    </button>
+   724→                  )
+   725→                })}
+   726→              </div>
+   727→            )}
+   728→
+   729→            {/* 选项：多选 */}
+   730→            {current.type === 'multiple' && (
+   731→              <div className="mt-4 space-y-3">
+   732→                {current.options.map((opt, i) => {
+   733→                  const isCorrectOpt = answerIndexes(current).includes(i)
+   734→                  const isUserOpt = currentAnswer.includes(i)
+   735→                  const checked = answered ? isUserOpt : pending.includes(i)
+   736→                  return (
+   737→                    <label
+   738→                      key={i}
+   739→                      className={cn(
+   740→                        'flex items-center gap-3 rounded-lg border px-4 py-3 text-sm transition-all',
+   741→                        answered
+   742→                          ? isCorrectOpt
+   743→                            ? 'border-emerald-500 bg-emerald-500/10'
+   744→                            : isUserOpt
+   745→                              ? 'border-rose-500 bg-rose-500/10'
+   746→                              : 'border-border opacity-60'
+   747→                          : 'cursor-pointer border-border hover:border-primary/50 hover:bg-accent/50 has-[[data-state=checked]]:border-primary/60 has-[[data-state=checked]]:bg-accent/50'
+   748→                      )}
+   749→                    >
+   750→                      <Checkbox
+   751→                        checked={checked}
+   752→                        onCheckedChange={() => togglePending(i)}
+   753→                        disabled={answered}
+   754→                        aria-label={`选项 ${OPTION_LETTERS[i]}：${opt}`}
+   755→                      />
+   756→                      <span className="font-semibold text-muted-foreground">
+   757→                        {OPTION_LETTERS[i]}
+   758→                      </span>
+   759→                      <span className="min-w-0 flex-1 leading-relaxed">{opt}</span>
+   760→                      {answered && isCorrectOpt && (
+   761→                        <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
+   762→                      )}
+   763→                      {answered && isUserOpt && !isCorrectOpt && (
+   764→                        <XCircle className="h-4 w-4 shrink-0 text-rose-500" />
+   765→                      )}
+   766→                    </label>
+   767→                  )
+   768→                })}
+   769→                {!answered && (
+   770→                  <Button
+   771→                    onClick={() => commitAnswer(pending)}
+   772→                    disabled={pending.length === 0}
+   773→                    className="w-full sm:w-auto"
+   774→                  >
+   775→                    <CheckCheck className="mr-1 h-4 w-4" />
+   776→                    确认答案{pending.length > 0 ? `（已选 ${pending.length} 项）` : ''}
+   777→                  </Button>
+   778→                )}
+   779→              </div>
+   780→            )}
+   781→
+   782→            {/* 判分反馈 */}
+   783→            {answered && (
+   784→              <div
+   785→                className={cn(
+   786→                  'mt-4 rounded-lg border p-4 text-sm',
+   787→                  judgeAnswer(current, currentAnswer)
+   788→                    ? 'border-emerald-500/40 bg-emerald-500/5'
+   789→                    : 'border-rose-500/40 bg-rose-500/5'
+   790→                )}
+   791→                role="status"
+   792→              >
+   793→                <div className="flex flex-wrap items-center gap-2 font-semibold">
+   794→                  {judgeAnswer(current, currentAnswer) ? (
+   795→                    <>
+   796→                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+   797→                      <span className="text-emerald-700 dark:text-emerald-400">回答正确</span>
+   798→                    </>
+   799→                  ) : (
+   800→                    <>
+   801→                      <XCircle className="h-4 w-4 text-rose-500" />
+   802→                      <span className="text-rose-700 dark:text-rose-400">回答错误</span>
+   803→                      <span className="font-normal text-muted-foreground">
+   804→                        正确答案：{formatAnswerText(current, answerIndexes(current))}
+   805→                      </span>
+   806→                    </>
+   807→                  )}
+   808→                </div>
+   809→                <p className="mt-2 leading-relaxed text-muted-foreground">
+   810→                  <span className="font-medium text-foreground">解析：</span>
+   811→                  {current.explanation}
+   812→                </p>
+   813→              </div>
+   814→            )}
+   815→
+   816→            {/* 底部操作 */}
+   817→            <div className="mt-5 flex items-center justify-between gap-3">
+   818→              <Button variant="ghost" size="sm" onClick={exitQuiz} className="text-muted-foreground">
+   819→                <ArrowLeft className="mr-1 h-4 w-4" />
+   820→                退出练习
+   821→              </Button>
+   822→              <Button onClick={goNext} disabled={!answered} className={SUBJECT_BUTTON[subjectId]}>
+   823→                {index >= questions.length - 1 ? '查看成绩' : '下一题'}
+   824→                <ArrowRight className="ml-1 h-4 w-4" />
+   825→              </Button>
+   826→            </div>
+   827→          </CardContent>
+   828→        </Card>
+   829→      )}
+   830→
+   831→      {/* ---------- 结果页 ---------- */}
+   832→      {phase === 'result' && (
+   833→        <Card className="mt-5 bio-fade-up">
+   834→          <CardContent className="p-6 sm:p-8">
+   835→            <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-8">
+   836→              <ScoreRing pct={scorePct} />
+   837→              <div className="min-w-0 flex-1 text-center sm:text-left">
+   838→                <h2 className={cn('flex items-center justify-center gap-2 text-xl font-bold sm:justify-start', scoreTextCls)}>
+   839→                  <Trophy className="h-5 w-5 shrink-0" />
+   840→                  {scoreComment}
+   841→                </h2>
+   842→                <div className="mt-3 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm sm:justify-start">
+   843→                  <span>
+   844→                    <span className="text-muted-foreground">答对 </span>
+   845→                    <span className={cn('font-serif text-base font-bold tabular-nums', scoreTextCls)}>
+   846→                      {correctCount}
+   847→                    </span>
+   848→                    <span className="text-muted-foreground"> / {records.length} 题</span>
+   849→                  </span>
+   850→                  <span className="flex items-center gap-1 text-muted-foreground">
+   851→                    <Timer className="h-3.5 w-3.5" />
+   852→                    用时 <span className="tabular-nums text-foreground">{formatDuration(elapsed)}</span>
+   853→                  </span>
+   854→                </div>
+   855→                <p className="mt-2 text-xs text-muted-foreground">
+   856→                  {submitting ? '正在提交答题记录…' : '答题记录已提交，计入学科统计'}
+   857→                </p>
+   858→                <div className="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
+   859→                  <Button onClick={restart} className={SUBJECT_BUTTON[subjectId]}>
+   860→                    <RotateCcw className="mr-1 h-4 w-4" />
+   861→                    再来一轮
+   862→                  </Button>
+   863→                  <Button variant="outline" onClick={() => setPhase('select')}>
+   864→                    <ListChecks className="mr-1 h-4 w-4" />
+   865→                    返回选题
+   866→                  </Button>
+   867→                  <Button variant="ghost" onClick={() => navigate({ name: 'subjects' })}>
+   868→                    返回学科
+   869→                  </Button>
+   870→                </div>
+   871→              </div>
+   872→            </div>
+   873→
+   874→            <Separator className="my-6" />
+   875→
+   876→            <h3 className="text-sm font-semibold text-muted-foreground">答题回顾</h3>
+   877→            <div className="bio-scroll mt-3 max-h-96 space-y-2.5 overflow-y-auto pr-1">
+   878→              {questions.map((q, i) => {
+   879→                const userAns = answers[q.id] ?? []
+   880→                const ok = judgeAnswer(q, userAns)
+   881→                return (
+   882→                  <div key={q.id} className="rounded-lg border p-3 sm:p-4">
+   883→                    <div className="flex items-start gap-2">
+   884→                      {ok ? (
+   885→                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+   886→                      ) : (
+   887→                        <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-rose-500" />
+   888→                      )}
+   889→                      <div className="min-w-0 flex-1">
+   890→                        <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+   891→                          <span className="font-semibold tabular-nums text-foreground">
+   892→                            第 {i + 1} 题
+   893→                          </span>
+   894→                          <Badge variant="outline" className="text-[10px]">
+   895→                            {TYPE_LABEL[q.type]}
+   896→                          </Badge>
+   897→                          <DifficultyLabel level={q.difficulty} />
+   898→                        </div>
+   899→                        <p className="mt-1 text-sm font-medium leading-snug">{q.question}</p>
+   900→                        <p className="mt-1.5 text-xs leading-relaxed">
+   901→                          <span className="text-muted-foreground">你的答案：</span>
+   902→                          <span
+   903→                            className={cn(
+   904→                              'font-medium',
+   905→                              ok
+   906→                                ? 'text-emerald-600 dark:text-emerald-400'
+   907→                                : 'text-rose-600 dark:text-rose-400'
+   908→                            )}
+   909→                          >
+   910→                            {formatAnswerText(q, userAns)}
+   911→                          </span>
+   912→                          {!ok && (
+   913→                            <>
+   914→                              <span className="ml-3 text-muted-foreground">正确答案：</span>
+   915→                              <span className="font-medium text-emerald-600 dark:text-emerald-400">
+   916→                                {formatAnswerText(q, answerIndexes(q))}
+   917→                              </span>
+   918→                            </>
+   919→                          )}
+   920→                        </p>
+   921→                        {!ok && (
+   922→                          <p className="mt-1.5 rounded-md bg-muted/60 p-2 text-xs leading-relaxed text-muted-foreground">
+   923→                            {q.explanation}
+   924→                          </p>
+   925→                        )}
+   926→                      </div>
+   927→                    </div>
+   928→                  </div>
+   929→                )
+   930→              })}
+   931→            </div>
+   932→          </CardContent>
+   933→        </Card>
+   934→      )}
+   935→    </div>
+   936→  )
+   937→}
+   938→

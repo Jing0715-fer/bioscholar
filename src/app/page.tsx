@@ -15,6 +15,7 @@ import {
   Sun,
   Dna,
   Menu,
+  Layers,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
@@ -33,6 +34,7 @@ import { QuizView } from '@/components/bio/quiz-view'
 import { GlossaryView } from '@/components/bio/glossary-view'
 import { NotesView } from '@/components/bio/notes-view'
 import { SearchDialog } from '@/components/bio/search-dialog'
+import { RevisionView } from '@/components/bio/revision-view'
 
 const NAV_ITEMS: Array<{
   key: NavKey
@@ -44,6 +46,7 @@ const NAV_ITEMS: Array<{
   { key: 'subjects', label: '学科中心', icon: BookOpen, desc: '四大基础学科教材' },
   { key: 'assistant', label: 'AI 智能助教', icon: MessageSquareText, desc: '生物学专家问答' },
   { key: 'quiz', label: '测验中心', icon: ClipboardList, desc: '章节自测与成绩' },
+  { key: 'revision', label: '复习卡片', icon: Layers, desc: '间隔重复记忆术语' },
   { key: 'glossary', label: '术语词典', icon: BookMarked, desc: '跨学科专业术语' },
   { key: 'notes', label: '学习笔记', icon: StickyNote, desc: '我的知识笔记' },
 ]
@@ -71,17 +74,17 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
               onNavigate?.()
             }}
             className={cn(
-              'group flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-ring',
+              'group flex items-center gap-3 rounded-lg border-l-[3px] px-3 py-2.5 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring',
               active
-                ? 'bg-primary text-primary-foreground shadow-sm'
-                : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
+                ? 'border-primary bg-primary/10 font-semibold text-foreground'
+                : 'border-transparent font-medium text-muted-foreground hover:bg-accent hover:text-foreground'
             )}
             aria-current={active ? 'page' : undefined}
           >
             <item.icon
               className={cn(
-                'h-[18px] w-[18px] shrink-0 transition-transform duration-200',
-                active ? 'scale-110' : 'group-hover:scale-110'
+                'h-[18px] w-[18px] shrink-0',
+                active ? 'text-primary' : 'text-muted-foreground/80'
               )}
             />
             <span className="flex flex-col items-start leading-tight">
@@ -89,7 +92,7 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
               <span
                 className={cn(
                   'text-[11px] font-normal',
-                  active ? 'text-primary-foreground/70' : 'text-muted-foreground/70'
+                  active ? 'text-muted-foreground' : 'text-muted-foreground/70'
                 )}
               >
                 {item.desc}
@@ -105,11 +108,11 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
 function BrandHeader() {
   return (
     <div className="flex items-center gap-3 px-6 pt-6 pb-4">
-      <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/20">
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/30 bg-primary/10 text-primary">
         <Dna className="h-5 w-5" />
       </div>
       <div className="leading-tight">
-        <div className="text-base font-bold tracking-tight">BioScholar</div>
+        <div className="font-serif text-base font-bold tracking-tight">BioScholar</div>
         <div className="text-[11px] text-muted-foreground">生命科学智能学习平台</div>
       </div>
     </div>
@@ -154,16 +157,19 @@ export default function Home() {
       <div className="min-h-screen flex flex-col bg-background">
         <div className="flex flex-1">
           {/* 桌面侧边栏 */}
-          <aside className="hidden lg:flex lg:w-64 xl:w-72 shrink-0 flex-col border-r bg-sidebar/60 backdrop-blur-sm sticky top-0 h-screen">
+          <aside className="hidden lg:flex lg:w-64 xl:w-72 shrink-0 flex-col border-r bg-sidebar sticky top-0 h-screen">
             <BrandHeader />
             <div className="flex-1 overflow-y-auto bio-scroll pb-4">
               <NavList />
               <div className="mt-6 mx-3 rounded-xl border bg-card p-4 bio-dna-bg">
-                <div className="text-xs font-semibold text-foreground/80">
-                  教材体系依据
-                </div>
-                <p className="mt-1.5 text-[11px] leading-relaxed text-muted-foreground">
-                  教育部「101计划」生物学核心课程：王镜岩《生物化学》、朱玉贤《现代分子生物学》、翟中和《细胞生物学》、生物物理学交叉课程
+                <div className="bio-eyebrow text-muted-foreground">教材体系依据</div>
+                <div className="bio-rule mt-2" aria-hidden />
+                <p className="mt-3 text-[11px] leading-[1.9] text-muted-foreground">
+                  教育部「101计划」生物学核心课程
+                </p>
+                <p className="mt-1 text-[11px] leading-[1.9] text-muted-foreground/80">
+                  王镜岩《生物化学》 · 朱玉贤《现代分子生物学》 · 翟中和《细胞生物学》 ·
+                  生物物理学交叉课程
                 </p>
               </div>
             </div>
@@ -172,7 +178,7 @@ export default function Home() {
           {/* 主内容区 */}
           <div className="flex min-w-0 flex-1 flex-col">
             {/* 移动端顶栏 */}
-            <header className="sticky top-0 z-40 flex h-14 items-center gap-2 border-b bg-background/80 px-4 backdrop-blur-md lg:hidden">
+            <header className="sticky top-0 z-40 flex h-14 items-center gap-2 border-b bg-background px-4 lg:hidden">
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" aria-label="打开菜单" className="h-9 w-9">
@@ -189,10 +195,10 @@ export default function Home() {
                 </SheetContent>
               </Sheet>
               <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
+                <div className="flex h-7 w-7 items-center justify-center rounded-md border border-primary/30 bg-primary/10 text-primary">
                   <Dna className="h-4 w-4" />
                 </div>
-                <span className="font-bold text-sm">BioScholar</span>
+                <span className="font-serif text-sm font-bold">BioScholar</span>
               </div>
               <div className="ml-auto flex items-center gap-1">
                 <Button
@@ -209,10 +215,14 @@ export default function Home() {
             </header>
 
             {/* 桌面顶栏 */}
-            <header className="hidden lg:flex sticky top-0 z-30 h-14 items-center gap-3 border-b bg-background/80 px-6 backdrop-blur-md">
-              <div className="text-sm font-semibold text-muted-foreground">
-                {NAV_ITEMS.find((n) => n.key === (view.name === 'reader' ? 'subjects' : view.name))?.label ??
-                  '学习'}
+            <header className="hidden lg:flex sticky top-0 z-30 h-14 items-center gap-3 border-b bg-background px-6">
+              <div className="flex items-baseline gap-2.5">
+                <span className="bio-eyebrow text-muted-foreground/60">BioScholar</span>
+                <span className="h-3 w-px bg-border" aria-hidden />
+                <span className="font-serif text-sm font-bold">
+                  {NAV_ITEMS.find((n) => n.key === (view.name === 'reader' ? 'subjects' : view.name))?.label ??
+                    '学习'}
+                </span>
               </div>
               <div className="ml-auto flex items-center gap-2">
                 <Button
@@ -249,21 +259,18 @@ export default function Home() {
                   />
                 )}
                 {view.name === 'quiz' && <QuizView subjectId={view.subjectId} />}
+                {view.name === 'revision' && <RevisionView />}
                 {view.name === 'glossary' && <GlossaryView />}
                 {view.name === 'notes' && <NotesView />}
                 {view.name === 'assistant' && <AssistantView />}
               </div>
             </main>
 
-            {/* 粘性页脚 */}
-            <footer className="mt-auto border-t bg-muted/40">
-              <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-                <p>
-                  BioScholar · 生命科学智能学习平台 — 内容体系参照教育部「101计划」生物学核心课程教材
-                </p>
-                <p className="pb-[env(safe-area-inset-bottom)]">
-                  学习资源仅用于教学参考
-                </p>
+            {/* 页脚 */}
+            <footer className="mt-auto border-t">
+              <div className="mx-auto max-w-5xl px-4 py-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] text-center text-[11px] leading-relaxed text-muted-foreground/80">
+                BioScholar · 生命科学智能学习平台 — 内容体系参照教育部「101计划」生物学核心课程教材 ·
+                学习资源仅用于教学参考
               </div>
             </footer>
           </div>

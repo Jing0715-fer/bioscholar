@@ -21,7 +21,6 @@ import {
   BookOpen,
   CheckCheck,
   CheckCircle2,
-  ClipboardList,
   ListChecks,
   Play,
   RotateCcw,
@@ -46,16 +45,16 @@ const TYPE_LABEL: Record<QuizQuestion['type'], string> = {
 
 const OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'] as const
 
-/** 学科 Tabs 激活配色（覆盖默认激活态） */
+/** 学科 Tabs 激活配色（克制：学科色浅底 + 文字色，不用全色块） */
 const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
   biochemistry:
-    'data-[state=active]:bg-amber-600 dark:data-[state=active]:bg-amber-600 data-[state=active]:text-white dark:data-[state=active]:text-white data-[state=active]:shadow-amber-500/30',
+    'data-[state=active]:bg-amber-500/10 dark:data-[state=active]:bg-amber-500/15 data-[state=active]:text-amber-700 dark:data-[state=active]:text-amber-400 data-[state=active]:shadow-none',
   'molecular-biology':
-    'data-[state=active]:bg-violet-600 dark:data-[state=active]:bg-violet-600 data-[state=active]:text-white dark:data-[state=active]:text-white data-[state=active]:shadow-violet-500/30',
+    'data-[state=active]:bg-violet-500/10 dark:data-[state=active]:bg-violet-500/15 data-[state=active]:text-violet-700 dark:data-[state=active]:text-violet-400 data-[state=active]:shadow-none',
   'cell-biology':
-    'data-[state=active]:bg-rose-600 dark:data-[state=active]:bg-rose-600 data-[state=active]:text-white dark:data-[state=active]:text-white data-[state=active]:shadow-rose-500/30',
+    'data-[state=active]:bg-rose-500/10 dark:data-[state=active]:bg-rose-500/15 data-[state=active]:text-rose-700 dark:data-[state=active]:text-rose-400 data-[state=active]:shadow-none',
   biophysics:
-    'data-[state=active]:bg-cyan-600 dark:data-[state=active]:bg-cyan-600 data-[state=active]:text-white dark:data-[state=active]:text-white data-[state=active]:shadow-cyan-500/30',
+    'data-[state=active]:bg-cyan-500/10 dark:data-[state=active]:bg-cyan-500/15 data-[state=active]:text-cyan-700 dark:data-[state=active]:text-cyan-400 data-[state=active]:shadow-none',
 }
 
 /** 学科主按钮配色（含 hover 深色，避免默认 hover 变主色） */
@@ -64,6 +63,14 @@ const SUBJECT_BUTTON: Record<SubjectId, string> = {
   'molecular-biology': 'bg-violet-600 text-white hover:bg-violet-700',
   'cell-biology': 'bg-rose-600 text-white hover:bg-rose-700',
   biophysics: 'bg-cyan-600 text-white hover:bg-cyan-700',
+}
+
+/** 章节卡学科色左边框 */
+const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
+  biochemistry: 'border-l-amber-500',
+  'molecular-biology': 'border-l-violet-500',
+  'cell-biology': 'border-l-rose-500',
+  biophysics: 'border-l-cyan-500',
 }
 
 interface AttemptApiItem {
@@ -161,20 +168,21 @@ function pickRandomQuestions(pool: QuizQuestion[]): QuizQuestion[] {
 // 子组件
 // ============================================================
 
-function DifficultyStars({ level }: { level: 1 | 2 | 3 }) {
+/** 难度细文字标签：小圆点色标 + 纯文字 */
+function DifficultyLabel({ level }: { level: 1 | 2 | 3 }) {
   const config =
     level === 1
-      ? { label: '基础', cls: 'text-emerald-600 dark:text-emerald-400' }
+      ? { label: '基础', dot: 'bg-emerald-500' }
       : level === 2
-        ? { label: '进阶', cls: 'text-amber-600 dark:text-amber-400' }
-        : { label: '挑战', cls: 'text-rose-600 dark:text-rose-400' }
+        ? { label: '进阶', dot: 'bg-amber-500' }
+        : { label: '挑战', dot: 'bg-rose-500' }
   return (
     <span
-      className={cn('inline-flex items-center gap-1 text-xs font-semibold', config.cls)}
+      className="inline-flex items-center gap-1.5 text-xs text-muted-foreground"
       aria-label={`难度：${config.label}`}
     >
-      <span aria-hidden>{'★'.repeat(level)}</span>
-      <span className="text-[11px] font-medium">{config.label}</span>
+      <span className={cn('h-1.5 w-1.5 rounded-full', config.dot)} aria-hidden />
+      {config.label}
     </span>
   )
 }
@@ -216,7 +224,7 @@ function ScoreRing({ pct }: { pct: number }) {
         textAnchor="middle"
         dominantBaseline="middle"
         fontSize="26"
-        className={cn(fill, 'font-bold')}
+        className={cn(fill, 'font-serif font-bold')}
       >
         {pct}
       </text>
@@ -435,41 +443,48 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
-      {/* 顶部标题 + 学科统计 */}
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="flex items-center gap-2 text-xl font-bold tracking-tight sm:text-2xl">
-            <ClipboardList className="h-5 w-5 text-primary" />
-            测验中心
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {subject ? `${subject.name} · ` : ''}题库共 {pool.length} 题 · 即时判分与解析
-          </p>
-        </div>
-        <div
-          className="flex items-center gap-3 rounded-xl border bg-card px-4 py-2.5 text-sm"
-          aria-label="该学科答题统计"
-        >
-          <div>
-            <span className="text-muted-foreground">已答 </span>
-            <span className="font-bold tabular-nums">{subjectStats.total}</span>
-            <span className="text-muted-foreground"> 题
-            </span>
+      {/* 顶部标题 + 学科统计（编辑式头部） */}
+      <header>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div className="min-w-0">
+            <p className="bio-eyebrow text-muted-foreground">Self-Assessment Center</p>
+            <h1 className="mt-2 font-serif text-xl font-bold tracking-tight sm:text-2xl">
+              测验中心
+            </h1>
           </div>
-          <Separator orientation="vertical" className="h-5" />
-          <div>
-            <span className="text-muted-foreground">正确率 </span>
+          <p
+            className="text-xs text-muted-foreground sm:text-sm"
+            aria-label="该学科答题统计"
+          >
+            <span>已答 </span>
             <span
               className={cn(
-                'font-bold tabular-nums',
-                subjectStats.total > 0 ? theme.classes.text : ''
+                'font-serif text-sm font-bold tabular-nums',
+                subjectStats.total > 0 ? theme.classes.text : 'text-foreground'
+              )}
+            >
+              {subjectStats.total}
+            </span>
+            <span> 题</span>
+            <span className="mx-1.5 opacity-30" aria-hidden>
+              ·
+            </span>
+            <span>正确率 </span>
+            <span
+              className={cn(
+                'font-serif text-sm font-bold tabular-nums',
+                subjectStats.total > 0 ? theme.classes.text : 'text-foreground'
               )}
             >
               {subjectStats.accuracy}%
             </span>
-          </div>
+          </p>
         </div>
-      </div>
+        <p className="mt-1.5 text-sm text-muted-foreground">
+          {subject ? `${subject.name} · ` : ''}题库共 {pool.length} 题 · 即时判分与解析
+        </p>
+        <div className="bio-rule mt-4" aria-hidden />
+      </header>
 
       {/* 学科选择 */}
       <Tabs
@@ -524,33 +539,28 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
                     onClick={() => startChapter(ch.id)}
                     disabled={count === 0}
                     className={cn(
-                      'group rounded-xl border bg-card p-4 text-left transition-all hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
-                      theme.classes.hover
+                      'group flex items-start gap-3.5 rounded-lg border border-l-4 bg-card p-4 text-left outline-none transition-colors hover:bg-accent/30 focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
+                      SUBJECT_LEFT_BORDER[subjectId]
                     )}
                     aria-label={`开始练习：第 ${ch.number} 章 ${ch.title}，共 ${count} 题`}
                   >
-                    <div className="flex items-center justify-between gap-2">
-                      <span
-                        className={cn(
-                          'inline-flex items-center rounded-md px-1.5 py-0.5 text-[11px] font-bold',
-                          theme.classes.bgSoft,
-                          theme.classes.text
-                        )}
-                      >
-                        第 {ch.number} 章
+                    <span
+                      className="font-serif text-[1.7rem] font-bold leading-none tabular-nums text-muted-foreground/50 transition-colors group-hover:text-foreground/80"
+                      aria-hidden
+                    >
+                      {String(ch.number).padStart(2, '0')}
+                    </span>
+                    <span className="flex min-w-0 flex-1 flex-col">
+                      <span className="font-serif text-[15px] font-semibold leading-snug">
+                        {ch.title}
                       </span>
-                      <Badge variant="secondary" className="text-[11px] tabular-nums">
+                      <span className="mt-1.5 text-xs tabular-nums leading-relaxed text-muted-foreground">
                         {count} 题
-                      </Badge>
-                    </div>
-                    <p className="mt-2 line-clamp-2 text-sm font-semibold leading-snug group-hover:underline">
-                      {ch.title}
-                    </p>
-                    <p className="mt-1.5 text-xs text-muted-foreground">
-                      {cs && cs.total > 0
-                        ? `已答 ${cs.total} 题 · 正确率 ${Math.round((cs.correct / cs.total) * 100)}%`
-                        : '尚未练习'}
-                    </p>
+                        {cs && cs.total > 0
+                          ? ` · 已答 ${cs.total} · 正确率 ${Math.round((cs.correct / cs.total) * 100)}%`
+                          : ' · 尚未练习'}
+                      </span>
+                    </span>
                   </button>
                 )
               })}
@@ -558,37 +568,33 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
           </TabsContent>
 
           <TabsContent value="random" className="mt-4">
-            <Card className={cn('relative overflow-hidden', theme.classes.border)}>
-              <div className="bio-dna-bg absolute inset-0 opacity-60" aria-hidden />
-              <CardContent className="relative flex flex-col items-center gap-4 p-6 text-center sm:p-10">
-                <span
-                  className={cn(
-                    'flex h-14 w-14 items-center justify-center rounded-2xl shadow-lg',
-                    theme.classes.bg
-                  )}
-                >
-                  <Shuffle className="h-7 w-7" />
-                </span>
+            <Card className="relative overflow-hidden">
+              <div
+                className={cn('h-1 w-full bg-gradient-to-r', theme.classes.gradient)}
+                aria-hidden
+              />
+              <CardContent className="flex flex-col items-center gap-4 p-6 text-center sm:p-10">
                 <div>
-                  <h3 className="text-lg font-bold sm:text-xl">
+                  <p className="bio-eyebrow text-muted-foreground">Random Challenge</p>
+                  <h3 className="mt-2 font-serif text-lg font-bold sm:text-xl">
                     随机挑战{subject ? ` · ${subject.name}` : ''}
                   </h3>
-                  <p className="mx-auto mt-1.5 max-w-md text-sm leading-relaxed text-muted-foreground">
-                    跨章节随机抽取 {Math.min(RANDOM_COUNT, pool.length)} 道题，难度均衡搭配，
-                    检验综合掌握程度。答完即刻提交并计入统计。
-                  </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-2">
-                  <Badge variant="outline" className={cn('text-[11px]', theme.classes.badge)}>
-                    基础 × {diffCounts[0]}
-                  </Badge>
-                  <Badge variant="outline" className={cn('text-[11px]', theme.classes.badge)}>
-                    进阶 × {diffCounts[1]}
-                  </Badge>
-                  <Badge variant="outline" className={cn('text-[11px]', theme.classes.badge)}>
-                    挑战 × {diffCounts[2]}
-                  </Badge>
-                </div>
+                <p className="mx-auto max-w-md text-sm leading-relaxed text-muted-foreground">
+                  跨章节随机抽取 {Math.min(RANDOM_COUNT, pool.length)} 道题，难度均衡搭配，
+                  检验综合掌握程度。答完即刻提交并计入统计。
+                </p>
+                <p className="text-xs tabular-nums text-muted-foreground">
+                  <span>基础 × {diffCounts[0]}</span>
+                  <span className="mx-1.5 opacity-30" aria-hidden>
+                    ·
+                  </span>
+                  <span>进阶 × {diffCounts[1]}</span>
+                  <span className="mx-1.5 opacity-30" aria-hidden>
+                    ·
+                  </span>
+                  <span>挑战 × {diffCounts[2]}</span>
+                </p>
                 <Button
                   size="lg"
                   className={cn('mt-1', SUBJECT_BUTTON[subjectId])}
@@ -610,14 +616,14 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
           <CardContent className="p-5 sm:p-6">
             {/* 题头：题号 / 题型 / 难度 / 计时 */}
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <div className="flex flex-wrap items-center gap-2 text-sm">
-                <span className="font-bold tabular-nums">
+              <div className="flex flex-wrap items-center gap-2.5 text-sm">
+                <span className="font-serif font-bold tabular-nums">
                   第 {index + 1} / {questions.length} 题
                 </span>
                 <Badge variant="outline" className="text-[11px]">
                   {TYPE_LABEL[current.type]}
                 </Badge>
-                <DifficultyStars level={current.difficulty} />
+                <DifficultyLabel level={current.difficulty} />
               </div>
               <span
                 className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground"
@@ -637,7 +643,7 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
             </p>
 
             {/* 题干 */}
-            <p className="mt-4 text-base font-semibold leading-relaxed sm:text-lg">
+            <p className="mt-4 font-serif text-base font-semibold leading-relaxed sm:text-lg">
               {current.question}
             </p>
 
@@ -836,7 +842,7 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
                 <div className="mt-3 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm sm:justify-start">
                   <span>
                     <span className="text-muted-foreground">答对 </span>
-                    <span className={cn('font-bold tabular-nums', scoreTextCls)}>
+                    <span className={cn('font-serif text-base font-bold tabular-nums', scoreTextCls)}>
                       {correctCount}
                     </span>
                     <span className="text-muted-foreground"> / {records.length} 题</span>
@@ -882,11 +888,13 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
                       )}
                       <div className="min-w-0 flex-1">
                         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-                          <span className="font-semibold text-foreground">第 {i + 1} 题</span>
+                          <span className="font-semibold tabular-nums text-foreground">
+                            第 {i + 1} 题
+                          </span>
                           <Badge variant="outline" className="text-[10px]">
                             {TYPE_LABEL[q.type]}
                           </Badge>
-                          <DifficultyStars level={q.difficulty} />
+                          <DifficultyLabel level={q.difficulty} />
                         </div>
                         <p className="mt-1 text-sm font-medium leading-snug">{q.question}</p>
                         <p className="mt-1.5 text-xs leading-relaxed">

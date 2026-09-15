@@ -83,6 +83,16 @@ export interface GlossaryTerm {
   definition: string
 }
 
+/** 教材插图（配图） */
+export interface Illustration {
+  /** 图片路径（/images/bio/...） */
+  src: string
+  /** 学术图注（中文，严谨描述所绘结构/过程） */
+  caption: string
+  /** 来源标注 */
+  credit?: string
+}
+
 /** 应用主视图 */
 export type AppView =
   | { name: 'dashboard' }
@@ -92,6 +102,7 @@ export type AppView =
   | { name: 'glossary' }
   | { name: 'notes' }
   | { name: 'assistant' }
+  | { name: 'revision' }
 
 /** 聊天消息 */
 export interface ChatMessage {

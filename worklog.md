@@ -166,3 +166,73 @@ Work Log:
 Stage Summary:
 - 项目初始版本全部完成并经浏览器端到端验证
 - 定时持续开发任务已就位
+
+---
+Task ID: 10-e1
+Agent: frontend-styling-expert
+Task: 仪表盘 / 学科中心 / 应用外壳「学术编辑风」改造（去 AI 味）
+
+Work Log:
+- 仅改动三个文件：dashboard.tsx、subjects-view.tsx、page.tsx；未动 globals.css / store / API / 路由逻辑 / 数据口径
+- dashboard.tsx：
+  * hero 重做：emerald→cyan 渐变横幅删除，改为 bio-paper 纹理卡片 + 左文右图（heroImage 占约 4/9，容器 bg-primary/5 兜底、border-t / lg:border-l 细线分隔）；文案区 bio-eyebrow「101计划」眉标 + font-serif「生命科学研习堂」大标题 + bio-rule + 副题 + 章节题数元信息行（·分隔）+ 双 CTA
+  * 统计区：四张彩色图标卡 → 单条 hairline 分隔统计带（gap-px + bg-border，grid-cols-2→4），数字 font-serif tabular-nums 大号优先，sub 元信息行，彩色图标底座全部移除
+  * 学科进度：每学科一行卡片，subjectCovers 缩略图（h-20/24 w-32/40 object-cover + theme.bgSoft 兜底）+ 学科色 border-l-2 细左边框 + serif 学科名 + 英文名小字 +「N 章 · N 小节 · N 节已完成」元信息 + 学科色细进度条（自定义 div，role=progressbar 完整 aria）+ serif 百分比；hover bg-accent/40 细过渡（无大阴影）
+  * 继续学习卡：bg-primary/5 纯色（原渐变）+ eyebrow + bio-rule + serif 标题；空态同构
+  * 活动图表：标题改「小方块 + font-serif」，recharts 数据逻辑不动
+  * 教材依据：四张图标底座卡 → 编辑式条目列表（学科色左边框 + serif 名称 + 英文 eyebrow + 教材名 + 元信息），区块头部加 Textbook Foundation eyebrow + bio-rule
+- subjects-view.tsx：
+  * 列表页头部：eyebrow "Four Core Disciplines" + font-serif「学科中心」+ bio-rule
+  * 学科卡：删除 gradient 顶条与彩色图标底座；封面图 aspect-[21/9] object-cover 置顶（图上无文字，bgSoft 兜底）；下方 eyebrow 英文名 + serif 中文名 + 简介 +「章 · 小节 · 自测题」元信息行 + 学科色细进度条 +「进入学习」+ ArrowRight 页脚；hover 用 theme.hover 细边框（去掉 translate-y / shadow-lg）
+  * 学科详情：gradient 横幅删除 → 封面图（21/9）+ bio-paper 编辑式头部（eyebrow 英文名 + serif 中文名 + bio-rule + 简介 + 元信息 + 教材名 + outline 自测按钮）
+  * 章节目录：章号改 font-serif tabular-nums 两位编号（01/02…，学科色），已完成 CheckCircle2 绿色对勾；关键词 chips →「关键词」eyebrow + 正文式 · 分隔文本；小节行 hover 细边框（border-transparent→border-border），未读 FileText 图标 → 1px 小圆点，降低图标密度
+- page.tsx：
+  * BrandHeader：emerald 渐变 DNA 底座 → border-primary/30 + bg-primary/10 + text-primary 克制样式；品牌名 font-serif
+  * NavList 激活态：bg-primary 白字大块 → 左侧 3px border-primary 竖线 + bg-primary/10 + font-semibold + 图标 text-primary（inactive border-transparent 保持布局稳定）；删除图标 scale 动画
+  * 侧栏「教材体系依据」：保留 bio-dna-bg，改 eyebrow 标题 + bio-rule 分隔的两段纯文字
+  * 桌面顶栏：bio-eyebrow "BioScholar" + 竖 hairline + font-serif 当前栏目名；移动端顶栏品牌图标同步克制化
+  * 去玻璃拟态：侧栏 bg-sidebar/60 backdrop-blur-sm → bg-sidebar 纯色；双顶栏 bg-background/80 backdrop-blur-md → bg-background
+  * 页脚：bg-muted/40 色块 → 仅 border-t 一行居中细字（safe-area 以 pb-[max()] 保留）
+- 验证：bunx tsc --noEmit 过滤 src/ 零错误（仅 examples/、skills/ 脚手架存在与本次无关的预置报错）；bun run lint 0 错误 0 警告；dev.log 末尾连续 ✓ Compiled；期间 quiz-view / assistant-view 的瞬时 tsc 报错系并行代理编辑中的中间状态，非本任务文件
+
+Stage Summary:
+- 三文件学术编辑风改造完成：渐变横幅、彩色徽章、图标底座、玻璃拟态全部清除，统一为 eyebrow + font-serif 标题 + bio-rule + 学科色细节的设计语言
+- heroImage 与 subjectCovers 全部接入（<img loading="lazy"> + 学科色浅底兜底，封面资源由并行代理产出中，未就绪时布局不塌陷）
+- 交互、统计、导航逻辑保持原样；自定义进度条补齐 role / aria-valuenow 等无障碍属性
+
+---
+Task ID: 10-e2（重派）
+Agent: frontend-styling-expert
+Task: AI 助教 / 测验中心 / 术语词典 / 学习笔记「学术编辑风」打磨（去 AI 味）
+
+Work Log:
+- 重派背景：前一次 10-e2 调用中断；本次先核对四文件现状（git diff 逐一审阅），确认前次调用实际已完成四个文件的完整改造（共约 +400/-384 行，无半成品残留），随后进行完整性审计、模式扫描与质量门验证，并补记本条工作日志（前次中断未及追加）
+- 仅涉及四个文件：assistant-view.tsx / quiz-view.tsx / glossary-view.tsx / notes-view.tsx；未触碰 globals.css / markdown.tsx / reader-view / dashboard / subjects-view / page.tsx / illustrations.ts / store / API；SSE 流式解析、localStorage 会话、答题判分、CRUD、搜索过滤等业务逻辑零改动（diff 仅样式层）
+- assistant-view.tsx：
+  * 顶部 emerald→teal 渐变横幅（Bot/GraduationCap + bio-dna-bg）删除 → 编辑式学术头部：bio-eyebrow「AI Teaching Assistant」+ font-serif「AI 智能助教」+ 一行说明 + bio-rule；仅保留 h-1 细线级渐变点缀（规则允许）；原独立工具栏（教材上下文 Badge / 学科聚焦 Select / 清空会话按钮）并入头部卡内，功能不变
+  * 快捷提问卡：删 Zap/FlaskConical/Dna/Microscope/Atom/Lightbulb 彩色图标底座与 LucideIcon 依赖 → font-serif tabular-nums 题号 01/02… + 衬线问题文本 + 细边框 hover（hover:border-foreground/25 + bg-accent/40，去 translate-y/彩色阴影）
+  * 消息气泡：AI 头像 emerald→teal 渐变 → bg-primary 单色；流式光标/思考三点 emerald → primary token；AI 气泡保持 card 质感、用户气泡 primary 保持；「回到底部」按钮去 backdrop-blur 玻璃拟态
+  * 提示图标 Lightbulb 去 amber 着色改 muted；历史消息分隔线改 bio-rule 渐隐规线
+- quiz-view.tsx：
+  * 顶部：ClipboardList 图标 + 统计卡（Separator 分隔框）→ bio-eyebrow「Self-Assessment Center」+ font-serif「测验中心」+ 元信息行化统计（已答 N 题 · 正确率 N%，数字 font-serif tabular-nums + 学科色）+ bio-rule
+  * 学科 Tabs 激活态：全色块白字 + 彩色阴影 → 学科色 bgSoft（-500/10）+ 学科色文字 + shadow-none；模式 Tabs 功能不变
+  * 章节练习卡：「第 N 章」bgSoft 徽章 + 「N 题」Badge + hover 下划线 → font-serif tabular-nums 大号章号（01/02…，muted 色弱化、hover 提亮）+ 学科色 border-l-4 细左边框 + 衬线章名 +「N 题 · 已答 N · 正确率 N%」行化元信息
+  * 随机挑战卡：Shuffle 全色图标底座 + bio-dna-bg 纹理 + 三枚彩色难度 Badge → h-1 学科色细线 + eyebrow「Random Challenge」+ 衬线标题 +「基础 × N · 进阶 × N · 挑战 × N」行化元信息
+  * 答题界面：题干 font-serif；难度 DifficultyStars（★★★ 彩色星）→ DifficultyLabel（1.5px 小圆点色标 + 细文字「基础/进阶/挑战」）；题号/计时 tabular-nums
+  * 结果页：得分环保留，环内得分大数字 font-serif；「答对 N / N 题」数字 font-serif tabular-nums；评语、逐题回顾结构保持
+- glossary-view.tsx：
+  * 头部：BookMarked 图标标题 → bio-eyebrow「Glossary · 术语检索」+ font-serif「术语词典」+ 检索说明一行 + bio-rule；分组按钮保留
+  * 学科筛选：全色块胶囊（FilterPill + theme.classes.bg）→ 下边线式学术 tabs（FilterTab：激活 = 学科色 border-b + 文字色；全部 = primary；计数 tabular-nums 伴随）
+  * 词条卡：保留学科色 border-l-4 左边框；hover 去 translate-y/彩色阴影仅 shadow-sm；缩写 Badge 去学科色改中性 outline；英文名 font-serif italic；学科徽章 → 学科色细文字 + · 分隔行化元信息；类别 Badge secondary → outline muted
+  * 分组视图：类别标题 font-serif +「N 条」细字 + bio-rule 渐隐规线（替代 Badge + 硬分隔线）
+- notes-view.tsx：
+  * 头部：StickyNote 图标标题 → bio-eyebrow「Study Notes · 学习档案」+ font-serif「学习笔记」+ 动态说明行 + bio-rule；新建按钮保留
+  * 笔记卡：标题 font-serif；学科 Badge → 学科色细文字 + · 分隔；「相对时间更新 tabular-nums · 关联小节跳转链接」行化元信息；hover 改细边框过渡（hover:border-foreground/25，去 shadow-md）
+  * 空态：插画保留但去 bg-primary/8 彩色底座 + 双层圆环 → border-dashed 细线圆 + muted 图标；Badge 依赖整体移除（import 清理）
+- 完整性审计（本次重派新增）：rg 扫描四文件确认 0 emoji / 0 backdrop-blur / 0 shadow-lg|xl / 0 theme.classes.bg 全色块；全部渐变仅剩 3 处 h-1/hairline 细线级（assistant 头部 h-1、quiz 随机挑战卡 h-1、历史消息分隔 h-px）；0 处 any；bio-* 自定义类均在 globals.css 中定义；aria 属性抽查齐全
+- 验证：bunx tsc --noEmit src/ 零错误（仅 examples/websocket、skills/image-edit、skills/stock-analysis-skill 存在与本次无关的预置报错）；bun run lint 0 错误 0 警告；dev.log 末尾连续 ✓ Compiled 无新增错误（dev server 此刻已停，未重启以免干扰主控）
+
+Stage Summary:
+- 四文件学术编辑风改造完成并经重派审计确认：AI 助教渐变横幅/彩色图标底座、测验彩色 Tabs/星级难度/彩色徽章、词典全色胶囊、笔记彩色空态全部清除，与 Task 10-e1 的 dashboard/学科中心/外壳设计语言对齐（eyebrow + font-serif + bio-rule + 学科色细节 + 行化元信息 + tabular-nums）
+- 全部业务逻辑（SSE 流式、会话持久化、判分提交、CRUD、搜索过滤、跳转导航）保持原样；严格 TS 无 any；响应式与无障碍属性完整
+- 质量门：tsc（src/）0 错误、eslint 0 错误 0 警告

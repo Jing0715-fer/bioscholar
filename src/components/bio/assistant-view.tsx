@@ -3,27 +3,20 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { ChangeEvent, KeyboardEvent } from 'react'
 import {
-  Atom,
   BookOpenText,
-  Bot,
   Check,
   ChevronDown,
   CircleAlert,
   Copy,
   Dna,
-  FlaskConical,
-  GraduationCap,
   Lightbulb,
-  Microscope,
   RotateCcw,
   Send,
   Sparkles,
   Square,
   Trash2,
   X,
-  Zap,
 } from 'lucide-react'
-import type { LucideIcon } from 'lucide-react'
 import { useAppStore } from '@/lib/store'
 import { getChapter, getSubject, subjects } from '@/data/biology'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
@@ -68,34 +61,16 @@ const MAX_INPUT_HEIGHT = 104
 const SUBJECT_IDS: SubjectId[] = subjects.map((s) => s.id)
 
 /** 空会话时的快捷经典问题 */
-const QUICK_QUESTIONS: Array<{ icon: LucideIcon; tag: string; question: string }> = [
+const QUICK_QUESTIONS: Array<{ tag: string; question: string }> = [
+  { tag: '生物化学', question: '用化学渗透假说解释氧化磷酸化中 ATP 的合成过程' },
   {
-    icon: Zap,
-    tag: '生物化学',
-    question: '用化学渗透假说解释氧化磷酸化中 ATP 的合成过程',
-  },
-  {
-    icon: FlaskConical,
     tag: '生物化学',
     question: '米氏常数 Km 与最大速率 Vmax 的物理意义是什么？如何用双倒数作图法求取？',
   },
+  { tag: '分子生物学', question: '比较原核与真核基因表达调控的异同' },
+  { tag: '细胞生物学', question: '为什么说 Bcl-2 家族是细胞凋亡的「开关」？' },
+  { tag: '生物物理学', question: '膜蛋白跨膜区的 α-螺旋为什么在脂双层环境中能保持稳定？' },
   {
-    icon: Dna,
-    tag: '分子生物学',
-    question: '比较原核与真核基因表达调控的异同',
-  },
-  {
-    icon: Microscope,
-    tag: '细胞生物学',
-    question: '为什么说 Bcl-2 家族是细胞凋亡的「开关」？',
-  },
-  {
-    icon: Atom,
-    tag: '生物物理学',
-    question: '膜蛋白跨膜区的 α-螺旋为什么在脂双层环境中能保持稳定？',
-  },
-  {
-    icon: Lightbulb,
     tag: '综合',
     question: '从中心法则出发，梳理遗传信息从 DNA 到蛋白质的传递过程及其调控层次',
   },
@@ -190,38 +165,39 @@ function HistorySkeleton() {
   )
 }
 
-/** 空会话快捷问题 */
+/** 空会话快捷问题（编辑式学术卡：衬线题号 + 衬线问题文本） */
 function QuickQuestions({ onPick }: { onPick: (question: string) => void }) {
   return (
     <div className="flex h-full flex-col items-center justify-center px-1 py-4 text-center">
-      <div
-        className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/25"
-        aria-hidden
-      >
-        <GraduationCap className="h-6 w-6" />
-      </div>
-      <h2 className="mt-3.5 text-sm font-semibold sm:text-base">向 BioScholar 助教提问</h2>
+      <p className="bio-eyebrow text-muted-foreground">Quick Questions · 经典问题</p>
+      <h2 className="mt-2.5 font-serif text-lg font-bold leading-snug sm:text-xl">
+        向 BioScholar 助教提问
+      </h2>
       <p className="mt-1.5 max-w-md text-[11px] leading-relaxed text-muted-foreground sm:text-xs">
         助教精通生物化学、分子生物学、细胞生物学与生物物理学，
         支持表格、公式推导与对比分析。点击经典问题立即开始：
       </p>
-      <div className="mt-4 grid w-full grid-cols-1 gap-2.5 text-left sm:grid-cols-2">
-        {QUICK_QUESTIONS.map((q) => (
+      <div className="mt-5 grid w-full grid-cols-1 gap-2 text-left sm:grid-cols-2">
+        {QUICK_QUESTIONS.map((q, i) => (
           <button
             key={q.question}
             type="button"
             onClick={() => onPick(q.question)}
-            className="group flex items-start gap-2.5 rounded-xl border bg-card p-3 text-left shadow-sm outline-none transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-500/50 hover:shadow-md hover:shadow-emerald-500/10 focus-visible:ring-2 focus-visible:ring-ring sm:p-3.5"
+            className="group flex items-start gap-3 rounded-lg border bg-card p-3 text-left outline-none transition-colors hover:border-foreground/25 hover:bg-accent/40 focus-visible:ring-2 focus-visible:ring-ring sm:p-3.5"
           >
             <span
-              className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-600 transition-transform duration-200 group-hover:scale-110 dark:text-emerald-400"
+              className="mt-0.5 font-serif text-base font-bold leading-none tabular-nums text-muted-foreground/55 transition-colors group-hover:text-foreground"
               aria-hidden
             >
-              <q.icon className="h-4 w-4" />
+              {String(i + 1).padStart(2, '0')}
             </span>
             <span className="flex min-w-0 flex-col gap-0.5">
-              <span className="text-[10px] font-medium text-muted-foreground/80">{q.tag}</span>
-              <span className="text-[13px] leading-relaxed text-foreground/90">{q.question}</span>
+              <span className="text-[10px] font-medium tracking-wide text-muted-foreground/80">
+                {q.tag}
+              </span>
+              <span className="font-serif text-[13px] leading-relaxed text-foreground/90">
+                {q.question}
+              </span>
             </span>
           </button>
         ))}
@@ -271,7 +247,7 @@ const MessageBubble = memo(function MessageBubble({
   return (
     <div className="bio-fade-up flex gap-2.5 sm:gap-3">
       <div
-        className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-sm"
+        className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm"
         aria-hidden
       >
         <Dna className="h-4 w-4" />
@@ -283,16 +259,16 @@ const MessageBubble = memo(function MessageBubble({
               <Markdown content={message.content} />
               {streaming ? (
                 <span
-                  className="mt-1 inline-block h-4 w-[2px] translate-y-0.5 animate-pulse rounded bg-emerald-500"
+                  className="mt-1 inline-block h-4 w-[2px] translate-y-0.5 animate-pulse rounded bg-primary"
                   aria-hidden
                 />
               ) : null}
             </>
           ) : streaming ? (
             <div className="flex items-center gap-1.5 py-1" role="status" aria-label="AI 正在思考">
-              <span className="bio-dot-1 h-2 w-2 rounded-full bg-emerald-500" />
-              <span className="bio-dot-2 h-2 w-2 rounded-full bg-emerald-500" />
-              <span className="bio-dot-3 h-2 w-2 rounded-full bg-emerald-500" />
+              <span className="bio-dot-1 h-2 w-2 rounded-full bg-primary" />
+              <span className="bio-dot-2 h-2 w-2 rounded-full bg-primary" />
+              <span className="bio-dot-3 h-2 w-2 rounded-full bg-primary" />
               <span className="ml-1.5 text-xs text-muted-foreground">助教正在思考…</span>
             </div>
           ) : null}
@@ -726,138 +702,144 @@ export function AssistantView() {
   /* ----- 渲染 ----- */
   return (
     <div className="mx-auto flex h-[calc(100dvh-10rem)] min-h-[460px] w-full max-w-4xl flex-col px-3 pt-4 sm:px-4 lg:h-[calc(100dvh-8.5rem)]">
-      {/* 顶部横幅 */}
-      <header className="relative shrink-0 overflow-hidden rounded-t-2xl border border-b-0 bg-gradient-to-r from-emerald-500 via-teal-600 to-teal-700 px-4 py-3.5 text-white sm:px-5 sm:py-4">
-        <div className="bio-dna-bg absolute inset-0 opacity-60" aria-hidden />
-        <div className="relative flex items-center gap-3">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/15 ring-1 ring-white/30 backdrop-blur-sm">
-            <Bot className="h-5 w-5" aria-hidden />
-          </div>
-          <div className="min-w-0 flex-1">
-            <h1 className="flex items-center gap-2 text-base font-bold leading-tight sm:text-lg">
-              AI 智能助教
-              <GraduationCap className="h-4 w-4 shrink-0 opacity-80" aria-hidden />
-            </h1>
-            <p className="mt-0.5 truncate text-[11px] text-white/80 sm:text-xs">
-              基于「101计划」教材体系的生物学专家
-            </p>
-          </div>
-          <span className="hidden shrink-0 items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 text-[10px] font-medium ring-1 ring-white/25 sm:inline-flex">
+      {/* 顶部：编辑式学术头部（含工具栏） */}
+      <header className="relative shrink-0 overflow-hidden rounded-t-2xl border bg-card">
+        <div
+          className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-600"
+          aria-hidden
+        />
+        <div className="px-4 pt-4 sm:px-5">
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <p className="bio-eyebrow text-muted-foreground">AI Teaching Assistant</p>
+              <h1 className="mt-1.5 font-serif text-lg font-bold leading-snug tracking-tight sm:text-xl">
+                AI 智能助教
+              </h1>
+              <p className="mt-1 text-xs text-muted-foreground">
+                基于「101计划」教材体系的生物学专家助教
+              </p>
+            </div>
             <span
-              className={cn(
-                'h-1.5 w-1.5 rounded-full',
-                generating ? 'animate-pulse bg-amber-300' : 'bg-emerald-300'
-              )}
-              aria-hidden
-            />
-            {generating ? '生成中' : '在线'}
-          </span>
+              className="hidden shrink-0 items-center gap-1.5 pt-1 text-[10px] text-muted-foreground sm:inline-flex"
+              aria-live="polite"
+            >
+              <span
+                className={cn(
+                  'h-1.5 w-1.5 rounded-full',
+                  generating ? 'animate-pulse bg-amber-500' : 'bg-emerald-500'
+                )}
+                aria-hidden
+              />
+              {generating ? '生成中' : '在线'}
+            </span>
+          </div>
+        </div>
+        <div className="bio-rule mt-3.5" aria-hidden />
+
+        {/* 工具栏：教材上下文 / 学科过滤 / 清空 */}
+        <div className="flex items-center gap-2 px-3 py-2 sm:px-4">
+          <div className="flex min-w-0 flex-1 items-center">
+            {contextInfo ? (
+              <Badge
+                variant="outline"
+                className={cn(
+                  'gap-1.5 py-1 pl-2.5 pr-1 text-[11px] font-medium',
+                  contextInfo.theme?.classes.badge ??
+                    'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30'
+                )}
+              >
+                <BookOpenText className="h-3 w-3 shrink-0" aria-hidden />
+                <span className="max-w-[13rem] truncate sm:max-w-[24rem]" title={contextInfo.label}>
+                  {contextInfo.label}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setAssistantContext(null)}
+                  aria-label="清除教材上下文"
+                  className="ml-0.5 rounded-full p-0.5 transition-colors hover:bg-foreground/10"
+                >
+                  <X className="h-3 w-3" aria-hidden />
+                </button>
+              </Badge>
+            ) : filterSubject ? (
+              <Badge
+                variant="outline"
+                className="gap-1.5 border-emerald-500/30 bg-emerald-500/15 py-1 pl-2.5 pr-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400"
+              >
+                <Sparkles className="h-3 w-3 shrink-0" aria-hidden />
+                <span className="truncate">提问聚焦：{filterSubject.name}</span>
+                <button
+                  type="button"
+                  onClick={() => setSubjectFilter('all')}
+                  aria-label="取消学科聚焦"
+                  className="ml-0.5 rounded-full p-0.5 transition-colors hover:bg-foreground/10"
+                >
+                  <X className="h-3 w-3" aria-hidden />
+                </button>
+              </Badge>
+            ) : (
+              <p className="flex min-w-0 items-center gap-1.5 text-[11px] text-muted-foreground">
+                <Lightbulb className="h-3.5 w-3.5 shrink-0 text-muted-foreground/70" aria-hidden />
+                <span className="truncate">
+                  提示：从知识点阅读页点击「向 AI 提问」可携带教材上下文
+                </span>
+              </p>
+            )}
+          </div>
+
+          <div className="flex shrink-0 items-center gap-1.5">
+            <Select value={subjectFilter} onValueChange={handleFilterChange}>
+              <SelectTrigger
+                size="sm"
+                aria-label="选择学科聚焦范围"
+                className="h-8 w-[124px] rounded-lg text-xs text-muted-foreground"
+              >
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">全部学科</SelectItem>
+                {subjects.map((s) => (
+                  <SelectItem key={s.id} value={s.id}>
+                    {s.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  disabled={messages.length === 0}
+                  aria-label="清空对话"
+                  className="h-8 w-8 rounded-lg text-muted-foreground hover:text-destructive"
+                >
+                  <Trash2 className="h-4 w-4" aria-hidden />
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent className="max-w-sm">
+                <AlertDialogHeader>
+                  <AlertDialogTitle>清空当前对话？</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    将删除本会话的全部 {messages.length} 条消息记录，此操作无法恢复。
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>取消</AlertDialogCancel>
+                  <AlertDialogAction
+                    onClick={() => void clearConversation()}
+                    className="bg-destructive text-white hover:bg-destructive/90"
+                  >
+                    确认清空
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          </div>
         </div>
       </header>
-
-      {/* 工具栏：教材上下文 / 学科过滤 / 清空 */}
-      <div className="flex shrink-0 items-center gap-2 border-x bg-card/60 px-3 py-2 sm:px-4">
-        <div className="flex min-w-0 flex-1 items-center">
-          {contextInfo ? (
-            <Badge
-              variant="outline"
-              className={cn(
-                'gap-1.5 py-1 pl-2.5 pr-1 text-[11px] font-medium',
-                contextInfo.theme?.classes.badge ??
-                  'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30'
-              )}
-            >
-              <BookOpenText className="h-3 w-3 shrink-0" aria-hidden />
-              <span className="max-w-[13rem] truncate sm:max-w-[24rem]" title={contextInfo.label}>
-                {contextInfo.label}
-              </span>
-              <button
-                type="button"
-                onClick={() => setAssistantContext(null)}
-                aria-label="清除教材上下文"
-                className="ml-0.5 rounded-full p-0.5 transition-colors hover:bg-foreground/10"
-              >
-                <X className="h-3 w-3" aria-hidden />
-              </button>
-            </Badge>
-          ) : filterSubject ? (
-            <Badge
-              variant="outline"
-              className="gap-1.5 border-emerald-500/30 bg-emerald-500/15 py-1 pl-2.5 pr-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400"
-            >
-              <Sparkles className="h-3 w-3 shrink-0" aria-hidden />
-              <span className="truncate">提问聚焦：{filterSubject.name}</span>
-              <button
-                type="button"
-                onClick={() => setSubjectFilter('all')}
-                aria-label="取消学科聚焦"
-                className="ml-0.5 rounded-full p-0.5 transition-colors hover:bg-foreground/10"
-              >
-                <X className="h-3 w-3" aria-hidden />
-              </button>
-            </Badge>
-          ) : (
-            <p className="flex min-w-0 items-center gap-1.5 text-[11px] text-muted-foreground">
-              <Lightbulb className="h-3.5 w-3.5 shrink-0 text-amber-500" aria-hidden />
-              <span className="truncate">
-                提示：从知识点阅读页点击「向 AI 提问」可携带教材上下文
-              </span>
-            </p>
-          )}
-        </div>
-
-        <div className="flex shrink-0 items-center gap-1.5">
-          <Select value={subjectFilter} onValueChange={handleFilterChange}>
-            <SelectTrigger
-              size="sm"
-              aria-label="选择学科聚焦范围"
-              className="h-8 w-[124px] rounded-lg text-xs text-muted-foreground"
-            >
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">全部学科</SelectItem>
-              {subjects.map((s) => (
-                <SelectItem key={s.id} value={s.id}>
-                  {s.name}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
-              <Button
-                type="button"
-                variant="ghost"
-                size="icon"
-                disabled={messages.length === 0}
-                aria-label="清空对话"
-                className="h-8 w-8 rounded-lg text-muted-foreground hover:text-destructive"
-              >
-                <Trash2 className="h-4 w-4" aria-hidden />
-              </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent className="max-w-sm">
-              <AlertDialogHeader>
-                <AlertDialogTitle>清空当前对话？</AlertDialogTitle>
-                <AlertDialogDescription>
-                  将删除本会话的全部 {messages.length} 条消息记录，此操作无法恢复。
-                </AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>取消</AlertDialogCancel>
-                <AlertDialogAction
-                  onClick={() => void clearConversation()}
-                  className="bg-destructive text-white hover:bg-destructive/90"
-                >
-                  确认清空
-                </AlertDialogAction>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
-        </div>
-      </div>
 
       {/* 消息区 */}
       <div className="relative min-h-0 flex-1 border-x bg-background">
@@ -877,9 +859,9 @@ export function AssistantView() {
             <div className="flex flex-col gap-5">
               {hadHistory ? (
                 <div className="flex items-center gap-3" aria-hidden>
-                  <div className="h-px flex-1 bg-border" />
+                  <div className="bio-rule h-px flex-1" />
                   <span className="text-[10px] text-muted-foreground">历史消息</span>
-                  <div className="h-px flex-1 bg-border" />
+                  <div className="h-px flex-1 bg-gradient-to-l from-border to-transparent" />
                 </div>
               ) : null}
               {messages.map((m) => (
@@ -902,7 +884,7 @@ export function AssistantView() {
             type="button"
             onClick={() => scrollToBottom(true)}
             aria-label="滚动到最新消息"
-            className="absolute bottom-3 right-3 flex h-9 w-9 items-center justify-center rounded-full border bg-background/90 text-muted-foreground shadow-md backdrop-blur-sm transition-colors hover:text-foreground"
+            className="absolute bottom-3 right-3 flex h-9 w-9 items-center justify-center rounded-full border bg-background text-muted-foreground shadow-sm transition-colors hover:text-foreground"
           >
             <ChevronDown className="h-4 w-4" aria-hidden />
           </button>
@@ -911,7 +893,7 @@ export function AssistantView() {
 
       {/* 输入区 */}
       <div className="shrink-0 rounded-b-2xl border border-t bg-card p-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] sm:p-3">
-        <div className="flex items-end gap-2 rounded-xl border bg-background px-2 py-1 transition-shadow focus-within:border-ring/50 focus-within:ring-2 focus-within:ring-ring/40">
+        <div className="flex items-end gap-2 rounded-lg border bg-background px-2 py-1 transition-shadow focus-within:border-ring/50 focus-within:ring-2 focus-within:ring-ring/40">
           <Textarea
             ref={textareaRef}
             value={input}

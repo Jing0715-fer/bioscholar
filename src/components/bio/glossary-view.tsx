@@ -10,7 +10,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
-import { BookMarked, LayoutGrid, Layers, Search, SearchX, X } from 'lucide-react'
+import { LayoutGrid, Layers, Search, SearchX, X } from 'lucide-react'
 
 // ============================================================
 // 常量
@@ -26,11 +26,20 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   biophysics: 'border-l-cyan-500',
 }
 
+/** 学科筛选下边线激活态（学科色文字 + 下边线，不用全色块） */
+const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
+  biochemistry: 'border-b-amber-500 text-amber-700 dark:border-b-amber-400 dark:text-amber-400',
+  'molecular-biology':
+    'border-b-violet-500 text-violet-700 dark:border-b-violet-400 dark:text-violet-400',
+  'cell-biology': 'border-b-rose-500 text-rose-700 dark:border-b-rose-400 dark:text-rose-400',
+  biophysics: 'border-b-cyan-500 text-cyan-700 dark:border-b-cyan-400 dark:text-cyan-400',
+}
+
 // ============================================================
 // 子组件
 // ============================================================
 
-function FilterPill({
+function FilterTab({
   active,
   onClick,
   activeCls,
@@ -39,7 +48,7 @@ function FilterPill({
 }: {
   active: boolean
   onClick: () => void
-  /** 激活态附加样式（学科色 / 主色） */
+  /** 激活态附加样式（学科色下边线 + 文字色 / 主色） */
   activeCls: string
   children: React.ReactNode
   label: string
@@ -51,10 +60,10 @@ function FilterPill({
       aria-pressed={active}
       aria-label={label}
       className={cn(
-        'inline-flex h-8 items-center gap-1.5 rounded-full border px-3 text-sm font-medium transition-all outline-none focus-visible:ring-2 focus-visible:ring-ring',
+        'inline-flex h-9 items-center gap-1.5 border-b-2 px-0.5 text-sm font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring',
         active
-          ? cn('border-transparent shadow-sm', activeCls)
-          : 'border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground'
+          ? activeCls
+          : 'border-b-transparent text-muted-foreground hover:border-border hover:text-foreground'
       )}
     >
       {children}
@@ -68,35 +77,36 @@ function TermCard({ term }: { term: GlossaryTerm }) {
   return (
     <Card
       className={cn(
-        'group border-l-4 transition-all hover:-translate-y-0.5 hover:shadow-md',
-        SUBJECT_LEFT_BORDER[term.subjectId],
-        theme.classes.hover
+        'group border-l-4 transition-shadow hover:shadow-sm',
+        SUBJECT_LEFT_BORDER[term.subjectId]
       )}
     >
       <CardContent className="p-4">
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
           <h3 className="text-sm font-semibold leading-tight sm:text-base">{term.term}</h3>
           {term.abbreviation && (
-            <Badge
-              variant="outline"
-              className={cn('px-1.5 font-mono text-[10px] font-bold', theme.classes.badge)}
-            >
+            <Badge variant="outline" className="px-1.5 font-mono text-[10px] font-bold">
               {term.abbreviation}
             </Badge>
           )}
         </div>
-        <p className="mt-0.5 truncate text-xs italic text-muted-foreground" title={term.english}>
+        <p
+          className="mt-0.5 truncate font-serif text-xs italic text-muted-foreground"
+          title={term.english}
+        >
           {term.english}
         </p>
-        <div className="mt-2 flex flex-wrap items-center gap-1.5">
-          <Badge
-            variant="outline"
-            className={cn('gap-1 text-[10px]', theme.classes.badge)}
+        <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1.5">
+          <span
+            className={cn('inline-flex items-center gap-1 text-[11px] font-medium', theme.classes.text)}
           >
-            <theme.icon className="h-3 w-3" />
+            <theme.icon className="h-3 w-3" aria-hidden />
             {subjectName}
-          </Badge>
-          <Badge variant="secondary" className="text-[10px]">
+          </span>
+          <span className="text-[11px] opacity-30" aria-hidden>
+            ·
+          </span>
+          <Badge variant="outline" className="text-[10px] text-muted-foreground">
             {term.category}
           </Badge>
         </div>
@@ -156,27 +166,30 @@ export function GlossaryView() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
-      {/* 顶部标题 */}
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="flex items-center gap-2 text-xl font-bold tracking-tight sm:text-2xl">
-            <BookMarked className="h-5 w-5 text-primary" />
-            术语词典
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            收录 {glossary.length} 条跨学科专业术语 · 支持中英文与缩写检索
-          </p>
+      {/* 顶部：编辑式学术头部 */}
+      <header>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div className="min-w-0">
+            <p className="bio-eyebrow text-muted-foreground">Glossary · 术语检索</p>
+            <h1 className="mt-2 font-serif text-xl font-bold tracking-tight sm:text-2xl">
+              术语词典
+            </h1>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              收录 {glossary.length} 条跨学科专业术语 · 支持中英文与缩写检索
+            </p>
+          </div>
+          <Button
+            variant={grouped ? 'default' : 'outline'}
+            size="sm"
+            onClick={() => setGrouped((g) => !g)}
+            aria-pressed={grouped}
+          >
+            {grouped ? <Layers className="mr-1 h-4 w-4" /> : <LayoutGrid className="mr-1 h-4 w-4" />}
+            {grouped ? '按类别分组中' : '按类别分组'}
+          </Button>
         </div>
-        <Button
-          variant={grouped ? 'default' : 'outline'}
-          size="sm"
-          onClick={() => setGrouped((g) => !g)}
-          aria-pressed={grouped}
-        >
-          {grouped ? <Layers className="mr-1 h-4 w-4" /> : <LayoutGrid className="mr-1 h-4 w-4" />}
-          {grouped ? '按类别分组中' : '按类别分组'}
-        </Button>
-      </div>
+        <div className="bio-rule mt-4" aria-hidden />
+      </header>
 
       {/* 搜索框 */}
       <div className="relative mt-4">
@@ -204,43 +217,43 @@ export function GlossaryView() {
         )}
       </div>
 
-      {/* 学科筛选 */}
+      {/* 学科筛选（下边线式学术 tabs） */}
       <div
-        className="mt-3 flex flex-wrap items-center gap-2"
+        className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1"
         role="group"
         aria-label="按学科筛选术语"
       >
-        <FilterPill
+        <FilterTab
           active={filter === 'all'}
           onClick={() => setFilter('all')}
-          activeCls="bg-primary text-primary-foreground"
+          activeCls="border-b-primary text-primary"
           label="显示全部学科术语"
         >
           全部
           <span className="text-xs tabular-nums opacity-70">{glossary.length}</span>
-        </FilterPill>
+        </FilterTab>
         {subjects.map((s) => {
           const t = getSubjectTheme(s.id)
           return (
-            <FilterPill
+            <FilterTab
               key={s.id}
               active={filter === s.id}
               onClick={() => setFilter(s.id)}
-              activeCls={t.classes.bg}
+              activeCls={SUBJECT_TAB_ACTIVE[s.id]}
               label={`筛选${s.name}术语`}
             >
-              <t.icon className="h-3.5 w-3.5" />
+              <t.icon className="h-3.5 w-3.5" aria-hidden />
               {s.name}
               <span className="text-xs tabular-nums opacity-70">
                 {subjectCounts.get(s.id) ?? 0}
               </span>
-            </FilterPill>
+            </FilterTab>
           )
         })}
       </div>
 
       {/* 结果计数 */}
-      <p className="mt-4 text-xs text-muted-foreground" aria-live="polite">
+      <p className="mt-4 text-xs tabular-nums text-muted-foreground" aria-live="polite">
         {hasQuery || filter !== 'all'
           ? `匹配 ${filtered.length} / ${glossary.length} 条术语`
           : `共 ${filtered.length} 条术语`}
@@ -273,12 +286,12 @@ export function GlossaryView() {
         <div className="mt-3 space-y-6">
           {groups.map(([category, terms]) => (
             <section key={category} aria-label={`${category} 类术语`}>
-              <div className="flex items-center gap-2">
-                <h2 className="text-sm font-bold">{category}</h2>
-                <Badge variant="secondary" className="text-[10px] tabular-nums">
-                  {terms.length}
-                </Badge>
-                <div className="h-px flex-1 bg-border" aria-hidden />
+              <div className="flex items-center gap-2.5">
+                <h2 className="font-serif text-sm font-bold">{category}</h2>
+                <span className="text-[10px] tabular-nums text-muted-foreground">
+                  {terms.length} 条
+                </span>
+                <div className="bio-rule h-px flex-1" aria-hidden />
               </div>
               <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {terms.map((term) => (
