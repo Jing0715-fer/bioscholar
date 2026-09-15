@@ -10,7 +10,9 @@ import { Progress } from '@/components/ui/progress'
 import { cn } from '@/lib/utils'
 import {
   BookMarked,
+  BrainCircuit,
   CheckCircle2,
+  ChevronDown,
   Eye,
   FileText,
   Layers,
@@ -60,6 +62,17 @@ interface Stats {
   newToday: number
   /** 待巩固错题卡数 */
   wrongDue: number
+  /** 间隔分桶（遗忘曲线阶段） */
+  intervalBuckets: {
+    d0: number
+    d1: number
+    d7: number
+    d21: number
+  }
+  /** 未来 7 天每日到期分布 */
+  upcomingDue: Array<{ date: string; count: number }>
+  /** 平均 ease */
+  avgEase: number
 }
 
 /** 本轮会话的评分记录（用于完成页统计） */
@@ -235,6 +248,11 @@ export function RevisionView() {
               </>
             )}
           </div>
+        )}
+
+        {/* 记忆统计面板（有已学卡时可展开） */}
+        {stats && stats.seen > 0 && (
+          <MemoryStatsPanel stats={stats} />
         )}
       </header>
 
@@ -578,6 +596,122 @@ function GradeButton({
       <span className="text-sm font-semibold">{meta.label}</span>
       <span className="text-[10px] font-normal opacity-70">{meta.hint}</span>
     </Button>
+  )
+}
+
+// ============================================================
+// 记忆统计面板：间隔分桶（遗忘曲线阶段）+ 未来 7 天到期分布
+// ============================================================
+const BUCKET_META = [
+  { key: 'd0' as const, label: '初学', hint: '间隔 < 1 天', bar: 'bg-rose-400' },
+  { key: 'd1' as const, label: '短期巩固', hint: '1–7 天', bar: 'bg-amber-400' },
+  { key: 'd7' as const, label: '中期巩固', hint: '7–21 天', bar: 'bg-teal-400' },
+  { key: 'd21' as const, label: '已掌握', hint: '≥ 21 天', bar: 'bg-emerald-500' },
+]
+
+function MemoryStatsPanel({ stats }: { stats: Stats }) {
+  const [open, setOpen] = useState(false)
+  const buckets = stats.intervalBuckets ?? { d0: 0, d1: 0, d7: 0, d21: 0 }
+  const upcoming = stats.upcomingDue ?? []
+  const maxDue = Math.max(1, ...upcoming.map((d) => d.count))
+  const seen = Math.max(1, stats.seen)
+
+  return (
+    <div className="mt-4">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="inline-flex items-center gap-1.5 rounded-lg border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        <BrainCircuit className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
+        记忆统计
+        <ChevronDown
+          className={cn(
+            'h-3.5 w-3.5 transition-transform duration-200',
+            open && 'rotate-180'
+          )}
+          aria-hidden="true"
+        />
+      </button>
+
+      {open && (
+        <div className="bio-fade-up mt-3 rounded-xl border bg-card p-4 sm:p-5">
+          {/* 间隔分桶：水平堆叠条 */}
+          <p className="bio-eyebrow text-muted-foreground">Retention · 记忆阶段分布</p>
+          <div
+            className="mt-2.5 flex h-3 w-full overflow-hidden rounded-full bg-muted"
+            role="img"
+            aria-label={`记忆阶段分布：初学 ${buckets.d0} 张，短期巩固 ${buckets.d1} 张，中期巩固 ${buckets.d7} 张，已掌握 ${buckets.d21} 张`}
+          >
+            {BUCKET_META.map((b) => {
+              const w = (buckets[b.key] / seen) * 100
+              return w > 0 ? (
+                <span
+                  key={b.key}
+                  className={cn('h-full', b.bar)}
+                  style={{ width: `${w}%` }}
+                  title={`${b.label}（${b.hint}）：${buckets[b.key]} 张`}
+                />
+              ) : null
+            })}
+          </div>
+          <ul className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1.5">
+            {BUCKET_META.map((b) => (
+              <li key={b.key} className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
+                <span className={cn('h-2 w-2 rounded-sm', b.bar)} aria-hidden="true" />
+                {b.label}
+                <span className="font-semibold tabular-nums text-foreground">{buckets[b.key]}</span>
+                <span className="opacity-50">（{b.hint}）</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* 未来 7 天到期柱状图 */}
+          <p className="bio-eyebrow mt-5 text-muted-foreground">Upcoming · 未来 7 天到期</p>
+          <div className="mt-2.5 flex items-end gap-1.5" style={{ height: 64 }}>
+            {upcoming.map((d, i) => (
+              <div key={i} className="flex min-w-0 flex-1 flex-col items-center gap-1">
+                <span
+                  className={cn(
+                    'text-[10px] font-semibold tabular-nums',
+                    i === 0 && d.count > 0 ? 'text-primary' : 'text-muted-foreground'
+                  )}
+                >
+                  {d.count > 0 ? d.count : ''}
+                </span>
+                <div className="flex h-9 w-full items-end">
+                  <span
+                    className={cn(
+                      'w-full rounded-t-[3px] transition-all',
+                      d.count > 0
+                        ? i === 0
+                          ? 'bg-primary'
+                          : 'bg-primary/40'
+                        : 'bg-muted'
+                    )}
+                    style={{ height: `${Math.max(d.count > 0 ? 8 : 3, (d.count / maxDue) * 100)}%` }}
+                    title={`${d.date}：到期 ${d.count} 张`}
+                  />
+                </div>
+                <span className="truncate text-[9px] tabular-nums text-muted-foreground">
+                  {i === 0 ? '今天' : d.date}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* 平均难度系数 */}
+          <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
+            已学 {stats.seen} 张 · 平均难度系数（SM-2 ease）
+            <span className="ml-1 font-semibold tabular-nums text-foreground">
+              {stats.avgEase > 0 ? stats.avgEase.toFixed(2) : '—'}
+            </span>
+            （初始 2.5，评分越「简单」越高）
+          </p>
+        </div>
+      )}
+    </div>
   )
 }
 

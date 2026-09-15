@@ -73,6 +73,41 @@ function FilterTab({
   )
 }
 
+/** 分类筛选 chip：小号圆角胶囊，激活态主色描边 */
+function CategoryChip({
+  active,
+  onClick,
+  children,
+  label,
+  dimmed,
+}: {
+  active: boolean
+  onClick: () => void
+  children: React.ReactNode
+  label: string
+  /** 当前学科范围内无词条的分类（置灰仍可点击查看空态） */
+  dimmed?: boolean
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      aria-label={label}
+      className={cn(
+        'inline-flex h-6.5 items-center gap-1 rounded-full border px-2.5 text-[11px] font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring',
+        active
+          ? 'border-primary/60 bg-primary/10 text-primary'
+          : dimmed
+            ? 'border-border/60 text-muted-foreground/40 hover:text-muted-foreground'
+            : 'border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground'
+      )}
+    >
+      {children}
+    </button>
+  )
+}
+
 function TermCard({ term }: { term: GlossaryTerm }) {
   const theme = getSubjectTheme(term.subjectId)
   const subjectName = getSubject(term.subjectId)?.name ?? ''
@@ -198,6 +233,8 @@ export function GlossaryView() {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState<SubjectFilter>('all')
   const [grouped, setGrouped] = useState(false)
+  /** 分类筛选（与学科筛选叠加，'all' 为不筛） */
+  const [category, setCategory] = useState<string>('all')
 
   /** 各学科词条数 */
   const subjectCounts = useMemo(() => {
@@ -208,11 +245,31 @@ export function GlossaryView() {
     return map
   }, [])
 
-  /** 搜索 + 学科过滤 */
+  /** 全部分类及计数（按词条数降序，仅在需要时计算） */
+  const categories = useMemo(() => {
+    const map = new Map<string, number>()
+    for (const t of glossary) {
+      map.set(t.category, (map.get(t.category) ?? 0) + 1)
+    }
+    return Array.from(map.entries()).sort((a, b) => b[1] - a[1])
+  }, [])
+
+  /** 当前学科筛选下各分类的实际词条数（chip 上的计数随学科联动） */
+  const categoryCountsInScope = useMemo(() => {
+    const map = new Map<string, number>()
+    for (const t of glossary) {
+      if (filter !== 'all' && t.subjectId !== filter) continue
+      map.set(t.category, (map.get(t.category) ?? 0) + 1)
+    }
+    return map
+  }, [filter])
+
+  /** 搜索 + 学科 + 分类过滤 */
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
     return glossary.filter((t) => {
       if (filter !== 'all' && t.subjectId !== filter) return false
+      if (category !== 'all' && t.category !== category) return false
       if (!q) return true
       return (
         t.term.toLowerCase().includes(q) ||
@@ -220,7 +277,7 @@ export function GlossaryView() {
         (t.abbreviation?.toLowerCase().includes(q) ?? false)
       )
     })
-  }, [query, filter])
+  }, [query, filter, category])
 
   /** 按类别分组（仅在开启分组时计算） */
   const groups = useMemo(() => {
@@ -325,9 +382,51 @@ export function GlossaryView() {
         })}
       </div>
 
+      {/* 分类筛选 chips（随学科筛选联动计数） */}
+      <div
+        className="bio-scroll mt-3 flex flex-wrap items-center gap-1.5"
+        role="group"
+        aria-label="按分类筛选术语"
+      >
+        <CategoryChip
+          active={category === 'all'}
+          onClick={() => setCategory('all')}
+          label="全部分类"
+        >
+          全部分类
+          <span className="tabular-nums opacity-70">{categoryCountsInScope.size ? Array.from(categoryCountsInScope.values()).reduce((a, b) => a + b, 0) : glossary.length}</span>
+        </CategoryChip>
+        {categories.map(([cat, total]) => {
+          const scoped = categoryCountsInScope.get(cat) ?? 0
+          return (
+            <CategoryChip
+              key={cat}
+              active={category === cat}
+              onClick={() => setCategory(category === cat ? 'all' : cat)}
+              label={`筛选${cat}类术语（${scoped} 条）`}
+              dimmed={scoped === 0 && category !== cat}
+            >
+              {cat}
+              <span className="tabular-nums opacity-70">{scoped}</span>
+            </CategoryChip>
+          )
+        })}
+        {category !== 'all' && (
+          <button
+            type="button"
+            onClick={() => setCategory('all')}
+            className="inline-flex h-6.5 items-center gap-1 rounded-full border border-dashed px-2 text-[11px] text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            aria-label="清除分类筛选"
+          >
+            <X className="h-3 w-3" aria-hidden />
+            清除
+          </button>
+        )}
+      </div>
+
       {/* 结果计数 */}
       <p className="mt-4 text-xs tabular-nums text-muted-foreground" aria-live="polite">
-        {hasQuery || filter !== 'all'
+        {hasQuery || filter !== 'all' || category !== 'all'
           ? `匹配 ${filtered.length} / ${glossary.length} 条术语`
           : `共 ${filtered.length} 条术语`}
       </p>
@@ -350,6 +449,7 @@ export function GlossaryView() {
             onClick={() => {
               setQuery('')
               setFilter('all')
+              setCategory('all')
             }}
           >
             清除搜索与筛选
@@ -357,10 +457,10 @@ export function GlossaryView() {
         </div>
       ) : grouped ? (
         <div className="mt-3 space-y-6">
-          {groups.map(([category, terms]) => (
-            <section key={category} aria-label={`${category} 类术语`}>
+          {groups.map(([groupCat, terms]) => (
+            <section key={groupCat} aria-label={`${groupCat} 类术语`}>
               <div className="flex items-center gap-2.5">
-                <h2 className="font-serif text-sm font-bold">{category}</h2>
+                <h2 className="font-serif text-sm font-bold">{groupCat}</h2>
                 <span className="text-[10px] tabular-nums text-muted-foreground">
                   {terms.length} 条
                 </span>

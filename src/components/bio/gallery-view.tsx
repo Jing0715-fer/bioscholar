@@ -53,31 +53,35 @@ function sourceTypeOf(src: string): SourceType {
 
 const SOURCE_META: Record<
   SourceType,
-  { label: string; full: string; icon: typeof FlaskConical; badge: string }
+  { label: string; full: string; icon: typeof FlaskConical; badge: string; accent: string }
 > = {
   ccd: {
     label: '化学结构式',
     full: 'RCSB 化学组分字典（CCD）',
     icon: FlaskConical,
     badge: 'border-emerald-300/60 bg-emerald-50 text-emerald-700 dark:border-emerald-500/40 dark:bg-emerald-500/10 dark:text-emerald-400',
+    accent: 'bg-emerald-500',
   },
   pdb: {
     label: '实验结构',
     full: 'RCSB Protein Data Bank',
     icon: Microscope,
     badge: 'border-teal-300/60 bg-teal-50 text-teal-700 dark:border-teal-500/40 dark:bg-teal-500/10 dark:text-teal-400',
+    accent: 'bg-teal-500',
   },
   commons: {
     label: '通路过程图',
     full: 'Wikimedia Commons',
     icon: Route,
     badge: 'border-amber-300/60 bg-amber-50 text-amber-700 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-400',
+    accent: 'bg-amber-500',
   },
   ai: {
     label: '机制示意',
     full: 'AI 绘制示意图',
     icon: Wand2,
     badge: 'border-border bg-muted text-muted-foreground',
+    accent: 'bg-muted-foreground/30',
   },
 }
 
@@ -158,7 +162,15 @@ function FigureCard({
   const theme = getSubjectTheme(item.subjectId)
   const meta = SOURCE_META[item.source]
   return (
-    <figure className="group flex flex-col overflow-hidden rounded-xl border bg-card transition-shadow duration-300 hover:shadow-md">
+    <figure className="group relative flex flex-col overflow-hidden rounded-xl border bg-card transition-shadow duration-300 hover:shadow-md">
+      {/* 来源色顶边条（悬停时增亮拉宽） */}
+      <span
+        className={cn(
+          'absolute inset-x-0 top-0 z-10 h-[3px] opacity-60 transition-all duration-300 group-hover:h-1 group-hover:opacity-100',
+          meta.accent
+        )}
+        aria-hidden="true"
+      />
       <button
         type="button"
         onClick={() => onZoom(item)}

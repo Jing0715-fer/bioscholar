@@ -620,3 +620,50 @@ Stage Summary:
 - AI 看图讲解为非流式（VLM 10-20s 一次性返回），可改为流式提升体感
 - 剩余 15 张 AI 机制示意图仍待权威开源替代（同 Task 16/17 遗留）
 - 可做的新功能方向：阅读器内「本节相关插图」侧栏快速导航、复习卡片统计图表（遗忘曲线）、学习报告 PDF 版式美化、术语词典分类筛选
+
+---
+Task ID: 19
+Agent: 主控 (Z.ai Code)
+Task: 本轮 QA 回归 + 三大新功能：术语词典分类筛选 / 阅读器插图快速导航 / 复习记忆统计面板 + 修复 CSS 编译缓存不生效问题
+
+Work Log:
+- 【开工准备】读取 worklog.md 了解 Task 18 状态；数据库检查发现 cron 又 seed 128 条脏数据（已清理）
+- 【agent-browser QA 回归】搜索插图（"呼吸链"18 条命中含图库条目）、四核心视图遍历、console 零错误——Task 18 功能在新会话下稳定，无需修 bug，进入新功能开发
+- 【新功能 A：术语词典分类筛选】glossary-view.tsx：
+  * 新增 category state 与 CategoryChip 组件（13 类圆角胶囊 chip：分子结构 24/结构 17/遗传 15/调控 11/能量 11/技术 11/代谢 11/酶学 9/理论 5/电生理 3/力学 3/信号 3/基础 1）
+  * 三级筛选叠加：搜索词 × 学科 × 分类；chip 计数随学科筛选联动（如筛生物化学时"遗传"类显示 0 并置灰 dimmed）
+  * 选中分类出「清除」虚线胶囊；空态文案与「清除搜索与筛选」按钮同步清空三级条件；分组 map 变量重命名避免与 category state 遮蔽
+  * 验证：分子结构 24 条全命中（D-葡萄糖/棕榈酸等）、生化学科叠加仍 24 条（分子词条全属生化，逻辑正确）、遗传类在生化下 0 条空态、一键清除恢复 124 条
+- 【新功能 B：阅读器「本节插图」快速导航】：
+  * markdown.tsx：BioFigure 的 figure 元素加 id={`figure-${fig.num}`} 锚点（如 figure-1-2-3）
+  * reader-view.tsx 新增 FigureNav 组件（Images 图标+数量徽标+每图 12×40px 缩略图+图号学科色徽章+图注截断），接入桌面右栏（sticky aside 内）与移动端正文下方双位置
+  * 点击 jumpTo：scrollIntoView smooth 居中 + WAAPI 闪烁高亮（outline 从 --primary 到透明 1.6s）
+  * 【修复两个深层问题】
+    ① Turbopack CSS 编译缓存不生效：globals.css 修改（figure-flash 动画 + Task 18 的 @page 打印样式）从未注入页面（styleSheets 检查 279 条规则缺失、animationName none）——通过追加 cache-bust 注释改变内容 hash 触发重编译解决；**这意味着 Task 18 的打印样式修复在浏览器里此前从未生效过，本轮才真正落地**
+    ② React 重渲染清除手动 DOM class：阅读进度条 scrollPct 更新 → reader-view 重渲染 → figures/sectionCtx 为 inline 引用 → react-markdown 重建正文 DOM → 滚动中断 + class 被清——修复：sectionFigures/figureCtx 均 useMemo 稳定引用 + Markdown 组件 React.memo 包装 + jumpTo 改用 Web Animations API（动画挂元素上不受重渲染影响）+ oklch 颜色拼接修正（--primary 为 oklch() 格式，中段透明度用 color-mix）
+  * 验证：点击"图 1-2-2"→ figure 滚至视口 top 100 居中 ✓；点击后 getAnimations() 确认动画播放（firstFrame outline lab() 已解析）✓；2s 后动画自然结束（WAAPI 不留 class）
+- 【新功能 C：复习页「记忆统计」面板】：
+  * flashcards API GET 扩展 SessionStats：intervalBuckets（<1天/1-7天/7-21天/≥21天四桶）、upcomingDue（未来 7 天每日到期分布，含今天）、avgEase（平均 SM-2 难度系数）
+  * revision-view.tsx 新增 MemoryStatsPanel（BrainCircuit 图标+折叠按钮，默认收起）：
+    * 记忆阶段分布：四段水平堆叠条（rose/amber/teal/emerald 渐进色）+ 图例（初学/短期巩固/中期巩固/已掌握+区间说明）
+    * 未来 7 天到期柱状图：7 根柱（今天主色高亮+其余 40% 透明度，数值标签，日期 mm/dd）
+    * 平均难度系数行（初始 2.5 说明）
+  * 验证：造 4 条不同间隔记录（0.5/1/10/25 天）→ 面板四桶各 1 张、7 柱图、avgEase 2.55=(2.5+2.6+2.8+2.3)/4 完全正确；VLM 审查"通过"（颜色区分度/柱高比例/学术排版三项全过）
+- 【样式细节】画廊卡片来源色顶边条：SOURCE_META 新增 accent 色（ccd=emerald/pdb=teal/commons=amber/ai=muted），卡片顶部 3px 色条悬停时增亮拉宽至 4px（与来源徽章呼应，强化四源视觉体系）
+- 【QA 汇总】
+  * tsc src/ 0 错误、eslint 0 警告（期间发现并修复 figureCtx useMemo 位于 early return 之后的 rules-of-hooks 错误）
+  * agent-browser：九视图遍历 console 零错误；插图导航滚动/动画/锚点全链路；词典三级筛选+空态+清除；记忆统计四桶+柱图+ease；移动端 390px 阅读器 12 图零溢出零破图
+  * VLM 审查：记忆统计面板"通过"（三项全过）
+  * 测试数据清理：4 条复习记录 + cron 再次 seed 的 128 条脏数据
+
+Stage Summary:
+- 三大新功能全部完成并验证：术语词典分类筛选（13 类 chips 三级联动）、阅读器本节插图导航（锚点滚动+WAAPI 高亮，桌面/移动双端）、复习记忆统计面板（间隔分桶+7 天到期预测+平均难度）
+- 修复两个隐蔽基建问题：Turbopack CSS 缓存不生效（Task 18 打印样式由此才真正落地；globals.css 变更需 cache-bust 触发）、React 重渲染清除手动 DOM 修改（正文渲染 memo 化，阅读器滚动稳定性提升）
+- 画廊来源色顶边、词典 chips 等视觉细节增强
+- 质量门：tsc 0 错、lint 0 警、9 视图 console 零错误、移动端零溢出、VLM 通过
+
+未解决问题与下一步建议：
+- markdown.tsx 同时导出组件与工具函数（figureNumber/toFigureItems 被 search-dialog/gallery-view 引用），Turbopack 有架构提示——后续可拆 figure-utils.ts
+- cron 15 分钟任务持续 seed 假数据（本轮又清 128 条），交付前必查
+- Turbopack CSS 缓存问题：以后每次修改 globals.css 建议追加 cache-bust 注释验证注入
+- 新功能方向：AI 看图讲解流式输出、学习报告对比快照（阶段对比）、术语词典拼音首字母索引、复习卡片快捷键（1-4 评分）

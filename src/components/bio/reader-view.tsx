@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useAppStore } from '@/lib/store'
 import { getSubject, getQuizByChapter } from '@/data/biology'
 import { getIllustrations } from '@/data/illustrations'
@@ -35,6 +35,7 @@ import {
   CheckCircle2,
   ChevronRight,
   ClipboardList,
+  Images,
   Lightbulb,
   ListTree,
   Loader2,
@@ -145,10 +146,24 @@ export function ReaderView({
   const readMinutes = section
     ? Math.max(1, Math.round(section.content.length / 500))
     : 0
-  // 本节配图（自动编号并穿插进正文）
-  const sectionFigures = section
-    ? toFigureItems(getIllustrations(section.id), chapter?.number ?? 1, section.id)
-    : []
+  // 本节配图（自动编号并穿插进正文；useMemo 稳定引用，避免阅读进度条等
+  // 无关 state 更新引发 react-markdown 重建正文 DOM、中断滚动/高亮）
+  const sectionFigures = useMemo(
+    () =>
+      section
+        ? toFigureItems(getIllustrations(section.id), chapter?.number ?? 1, section.id)
+        : [],
+    [section, chapter]
+  )
+
+  /** 插图 AI 讲解上下文（useMemo 稳定引用，保障 Markdown memo 生效） */
+  const figureCtx = useMemo(
+    () =>
+      section
+        ? { sectionId: section.id, sectionTitle: section.title }
+        : undefined,
+    [section]
+  )
 
   // ---- 上一节 / 下一节（跨章节边界） ----
   const { prev, next } = computeNeighbors(
@@ -211,6 +226,11 @@ export function ReaderView({
     onAskAssistant: handleAskAssistant,
     onOpenGlossary: () => navigate({ name: 'glossary' }),
   }
+
+  /** 插图导航卡（桌面右栏 + 移动端正文下方） */
+  const figureNav = (
+    <FigureNav figures={sectionFigures} accentClass={cn(theme.classes.bgSoft, theme.classes.text)} />
+  )
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-6 sm:px-6 lg:px-8">
@@ -479,7 +499,7 @@ export function ReaderView({
               <Markdown
                 content={section.content}
                 figures={sectionFigures}
-                sectionCtx={{ sectionId: section.id, sectionTitle: section.title }}
+                sectionCtx={figureCtx}
               />
             </CardContent>
           </Card>
@@ -551,19 +571,21 @@ export function ReaderView({
             </nav>
           )}
 
-          {/* 移动端：要点 / 术语 / 操作区（正文下方） */}
+          {/* 移动端：要点 / 术语 / 插图导航 / 操作区（正文下方） */}
           <div className="mt-6 space-y-4 lg:hidden">
             <SectionAside {...asideProps} />
+            {figureNav}
           </div>
         </div>
 
-        {/* ---- 右栏：要点 / 术语 / 学习操作（桌面端） ---- */}
+        {/* ---- 右栏：要点 / 术语 / 插图导航 / 学习操作（桌面端） ---- */}
         <aside
           className="hidden lg:block"
           aria-label="本节要点与相关术语"
         >
           <div className="sticky top-20 max-h-[calc(100vh-6rem)] space-y-4 overflow-y-auto bio-scroll pb-2">
             <SectionAside {...asideProps} />
+            {figureNav}
           </div>
         </aside>
       </div>
@@ -692,6 +714,92 @@ function ChapterTree({
         )
       })}
     </nav>
+  )
+}
+
+// ============================================================
+// 本节插图导航（右栏 / 移动端 aside：点击缩略图滚动到正文插图）
+// ============================================================
+function FigureNav({
+  figures,
+  accentClass,
+}: {
+  figures: ReturnType<typeof toFigureItems>
+  /** 学科主题色（图号角标背景） */
+  accentClass: string
+}) {
+  if (figures.length === 0) return null
+
+  /** 滚动到正文插图并闪烁高亮（WAAPI：动画直接挂在元素上，
+   *  不受 React 后续重渲染清除 class 影响） */
+  const jumpTo = (num: string) => {
+    const el = document.getElementById(`figure-${num}`)
+    if (!el) return
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    // --primary 为 oklch(...) 形式，直接作颜色值使用
+    const primary = getComputedStyle(document.documentElement)
+      .getPropertyValue('--primary')
+      .trim()
+    const color = primary || 'hsl(160, 84%, 30%)'
+    el.animate(
+      [
+        { outline: `2px solid ${color}`, outlineOffset: '6px' },
+        { outline: `2px solid color-mix(in oklab, ${color} 55%, transparent)`, outlineOffset: '3px' },
+        { outline: '2px solid transparent', outlineOffset: '0px' },
+      ],
+      { duration: 1600, easing: 'ease-out' }
+    )
+  }
+
+  return (
+    <Card className="gap-3 py-4">
+      <CardHeader className="px-4 pb-0">
+        <CardTitle className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Images className="h-4 w-4 shrink-0" aria-hidden="true" />
+          本节插图
+          <span className="ml-auto text-[10px] font-normal tabular-nums opacity-70">
+            {figures.length} 幅
+          </span>
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="px-4">
+        <ul className="space-y-1">
+          {figures.map((fig) => (
+            <li key={fig.num}>
+              <button
+                type="button"
+                onClick={() => jumpTo(fig.num)}
+                aria-label={`跳转到正文：图 ${fig.num}，${fig.caption.slice(0, 30)}…`}
+                className="group flex w-full items-center gap-2.5 rounded-lg px-1.5 py-1.5 text-left outline-none transition-colors hover:bg-accent/60 focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <span className="h-10 w-12 shrink-0 overflow-hidden rounded-md border bg-[#faf9f4] dark:bg-[#111a16]">
+                  <img
+                    src={fig.src}
+                    alt=""
+                    loading="lazy"
+                    aria-hidden="true"
+                    className="h-full w-full object-contain p-0.5"
+                  />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span
+                    className={cn(
+                      'inline-flex items-center rounded px-1 py-px font-mono text-[10px] font-bold',
+                      accentClass
+                    )}
+                  >
+                    图 {fig.num}
+                  </span>
+                  <span className="mt-0.5 block truncate text-[11px] leading-snug text-muted-foreground">
+                    {fig.caption}
+                  </span>
+                </span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
   )
 }
 

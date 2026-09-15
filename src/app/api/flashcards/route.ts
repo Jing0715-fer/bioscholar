@@ -54,6 +54,21 @@ interface SessionStats {
   newToday: number
   /** 待巩固错题卡数 */
   wrongDue: number
+  /** 记忆统计扩展：按当前间隔分桶的已学卡数（遗忘曲线阶段分布） */
+  intervalBuckets: {
+    /** 间隔 < 1 天（初学阶段） */
+    d0: number
+    /** 1 ≤ 间隔 < 7 天（短期巩固） */
+    d1: number
+    /** 7 ≤ 间隔 < 21 天（中期巩固） */
+    d7: number
+    /** 间隔 ≥ 21 天（已掌握） */
+    d21: number
+  }
+  /** 未来 7 天每日到期卡数（[日期, 数量]） */
+  upcomingDue: Array<{ date: string; count: number }>
+  /** 已学卡的平均 ease（SM-2 难度系数，初始 2.5） */
+  avgEase: number
 }
 
 /** 全部小节要点卡源数据（构建一次复用） */
@@ -217,8 +232,41 @@ export async function GET() {
       r.cardId.startsWith(WRONG_CARD_PREFIX)
     ).length
     const totalCards = glossary.length + KEYPOINT_SOURCES.length + wqCount
-    const seen = reviews.filter((r) => r.reps > 0).length
-    const mastered = reviews.filter((r) => r.reps > 0 && isMastered(r)).length
+    const seenReviews = reviews.filter((r) => r.reps > 0)
+    const seen = seenReviews.length
+    const mastered = seenReviews.filter((r) => isMastered(r)).length
+
+    // 记忆统计：间隔分桶（遗忘曲线阶段）
+    const intervalBuckets = { d0: 0, d1: 0, d7: 0, d21: 0 }
+    for (const r of seenReviews) {
+      if (r.intervalDays < 1) intervalBuckets.d0++
+      else if (r.intervalDays < 7) intervalBuckets.d1++
+      else if (r.intervalDays < 21) intervalBuckets.d7++
+      else intervalBuckets.d21++
+    }
+
+    // 记忆统计：未来 7 天每日到期分布（含今天）
+    const upcomingDue: Array<{ date: string; count: number }> = []
+    for (let d = 0; d < 7; d++) {
+      const dayStart = new Date(now)
+      dayStart.setHours(0, 0, 0, 0)
+      dayStart.setDate(dayStart.getDate() + d)
+      const dayEnd = new Date(dayStart)
+      dayEnd.setDate(dayEnd.getDate() + 1)
+      const count = seenReviews.filter(
+        (r) => r.dueAt >= dayStart && r.dueAt < dayEnd
+      ).length
+      upcomingDue.push({
+        date: `${dayStart.getMonth() + 1}/${dayStart.getDate()}`,
+        count,
+      })
+    }
+
+    // 记忆统计：平均 ease
+    const avgEase = seenReviews.length
+      ? seenReviews.reduce((s, r) => s + r.ease, 0) / seenReviews.length
+      : 0
+
     const stats: SessionStats = {
       totalCards,
       seen,
@@ -226,6 +274,9 @@ export async function GET() {
       dueNow: dueCards.length,
       newToday: termCount + kpCount,
       wrongDue: wrongCards.length,
+      intervalBuckets,
+      upcomingDue,
+      avgEase: Math.round(avgEase * 100) / 100,
     }
 
     return NextResponse.json({ queue, stats })

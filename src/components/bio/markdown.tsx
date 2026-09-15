@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
+import { memo } from 'react'
 import remarkGfm from 'remark-gfm'
 import rehypeUnwrapImages from 'rehype-unwrap-images'
 import { Maximize2, RotateCcw, Sparkles } from 'lucide-react'
@@ -118,7 +119,7 @@ function BioFigure({
   }
 
   return (
-    <figure className="bio-figure my-7">
+    <figure className="bio-figure my-7" id={`figure-${fig.num}`}>
       <button
         type="button"
         className="bio-figure-frame group relative block w-full cursor-zoom-in overflow-hidden rounded-lg border bg-[#faf9f4] outline-none focus-visible:ring-2 focus-visible:ring-ring dark:bg-[#111a16]"
@@ -218,8 +219,11 @@ function BioFigure({
   )
 }
 
-/** 教材正文 Markdown 渲染器（GFM 表格 + 配图穿插） */
-export function Markdown({
+/** 教材正文 Markdown 渲染器（GFM 表格 + 配图穿插）。
+ *  memo 化：figures/sectionCtx 引用稳定时（reader-view 已 useMemo），
+ *  阅读进度条等无关 state 更新不再触发正文重渲染，
+ *  保障插图跳转高亮不被 DOM 重建打断 */
+export const Markdown = memo(function Markdown({
   content,
   className,
   figures,
@@ -282,7 +286,7 @@ export function Markdown({
       </ReactMarkdown>
     </div>
   )
-}
+})
 
 /** 由小节 id 与章号计算教材式图编号（图 {章}-{节}-{序}） */
 export function figureNumber(chapterNumber: number, sectionId: string, index: number): string {
