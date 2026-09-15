@@ -26,6 +26,8 @@ import {
   ClipboardList,
   Eye,
   EyeOff,
+  History,
+  Layers,
   Loader2,
   NotebookPen,
   Trash2,
@@ -76,6 +78,10 @@ export function WrongbookView() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [filter, setFilter] = useState<SubjectId | 'all'>('all')
+  /** 排列模式：按章节聚类 / 按时间平铺 */
+  const [mode, setMode] = useState<'chapter' | 'recent'>('chapter')
+  /** 折叠的章节分组（chapterId 集合） */
+  const [collapsedChapters, setCollapsedChapters] = useState<Set<string>>(new Set())
   const [expanded, setExpanded] = useState<Set<string>>(new Set())
   const [confirmId, setConfirmId] = useState<string | null>(null)
   const [removing, setRemoving] = useState(false)
@@ -107,6 +113,55 @@ export function WrongbookView() {
     () => (filter === 'all' ? items : items.filter((i) => i.question.subjectId === filter)),
     [items, filter]
   )
+
+  /** 章节聚类：按学科顺序 + 章号分组（mode === 'chapter' 时使用） */
+  const chapterGroups = useMemo(() => {
+    const groups = new Map<
+      string,
+      {
+        subjectId: SubjectId
+        chapterId: string
+        chapterNumber: number
+        chapterTitle: string
+        items: WrongItem[]
+        lastWrongAt: string
+      }
+    >()
+    for (const item of filtered) {
+      const q = item.question
+      const chapter = getChapter(q.subjectId, q.chapterId)
+      const key = q.chapterId
+      const g = groups.get(key)
+      if (g) {
+        g.items.push(item)
+        if (item.lastWrongAt > g.lastWrongAt) g.lastWrongAt = item.lastWrongAt
+      } else {
+        groups.set(key, {
+          subjectId: q.subjectId,
+          chapterId: q.chapterId,
+          chapterNumber: chapter?.number ?? 0,
+          chapterTitle: chapter?.title ?? '未分章',
+          items: [item],
+          lastWrongAt: item.lastWrongAt,
+        })
+      }
+    }
+    // 学科顺序 → 章号 排序
+    return Array.from(groups.values()).sort(
+      (a, b) =>
+        SUBJECT_ORDER.indexOf(a.subjectId) - SUBJECT_ORDER.indexOf(b.subjectId) ||
+        a.chapterNumber - b.chapterNumber
+    )
+  }, [filtered])
+
+  const toggleChapter = (chapterId: string) => {
+    setCollapsedChapters((prev) => {
+      const next = new Set(prev)
+      if (next.has(chapterId)) next.delete(chapterId)
+      else next.add(chapterId)
+      return next
+    })
+  }
 
   const toggleExpand = (id: string) => {
     setExpanded((prev) => {
@@ -177,7 +232,7 @@ export function WrongbookView() {
         </div>
       </header>
 
-      {/* ===== 学科筛选（下边线式） ===== */}
+      {/* ===== 学科筛选（下边线式） + 排列模式 ===== */}
       {!loading && items.length > 0 && (
         <div
           className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 border-b pb-2"
@@ -204,6 +259,27 @@ export function WrongbookView() {
               />
             )
           })}
+          {/* 排列模式切换（右侧） */}
+          <div
+            className="ml-auto flex items-center gap-1 rounded-lg border bg-card p-0.5"
+            role="group"
+            aria-label="错题排列模式"
+          >
+            <ModeChip
+              active={mode === 'chapter'}
+              onClick={() => setMode('chapter')}
+              label="按章节聚类"
+            >
+              <Layers className="h-3.5 w-3.5" aria-hidden="true" />
+            </ModeChip>
+            <ModeChip
+              active={mode === 'recent'}
+              onClick={() => setMode('recent')}
+              label="按时间平铺"
+            >
+              <History className="h-3.5 w-3.5" aria-hidden="true" />
+            </ModeChip>
+          </div>
         </div>
       )}
 
@@ -246,7 +322,110 @@ export function WrongbookView() {
               </Button>
             )}
           </div>
+        ) : mode === 'chapter' ? (
+          /* 按章节聚类列表 */
+          <div className="space-y-6">
+            {chapterGroups.map((g) => {
+              const theme = getSubjectTheme(g.subjectId)
+              const collapsed = collapsedChapters.has(g.chapterId)
+              const subject = getSubject(g.subjectId)
+              return (
+                <section
+                  key={g.chapterId}
+                  aria-label={`${subject?.name ?? ''}第 ${g.chapterNumber} 章错题分组`}
+                >
+                  {/* 章节分组头 */}
+                  <div className={`border-l-2 pl-3.5 ${theme.classes.border}`}>
+                    <button
+                      type="button"
+                      onClick={() => toggleChapter(g.chapterId)}
+                      aria-expanded={!collapsed}
+                      className="group flex w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded py-1 text-left outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    >
+                      <ChevronDown
+                        className={cn(
+                          'h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200',
+                          collapsed && '-rotate-90'
+                        )}
+                        aria-hidden="true"
+                      />
+                      <span className="font-serif text-base font-bold">
+                        第 {g.chapterNumber} 章 {g.chapterTitle}
+                      </span>
+                      <span
+                        className={cn(
+                          'rounded-full px-2 py-0.5 text-[11px] font-medium tabular-nums',
+                          g.items.length >= 3
+                            ? 'bg-destructive/10 text-destructive'
+                            : 'bg-muted text-muted-foreground'
+                        )}
+                      >
+                        {g.items.length} 道错题
+                      </span>
+                      <span className="text-[11px] tabular-nums text-muted-foreground/70">
+                        最近答错{' '}
+                        {formatDistanceToNow(new Date(g.lastWrongAt), {
+                          addSuffix: true,
+                          locale: zhCN,
+                        })}
+                      </span>
+                    </button>
+                    {/* 章内快捷操作 */}
+                    {!collapsed && (
+                      <div className="mt-1.5 flex items-center gap-3 pl-6 text-xs">
+                        <button
+                          className="inline-flex items-center gap-1 rounded outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                          onClick={() =>
+                            navigate({ name: 'quiz', subjectId: g.subjectId })
+                          }
+                        >
+                          <ClipboardList className="h-3.5 w-3.5" aria-hidden="true" />
+                          重练本章测验
+                        </button>
+                        <span className="opacity-30">·</span>
+                        <button
+                          className="inline-flex items-center gap-1 rounded outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                          onClick={() =>
+                            setExpanded((prev) => {
+                              const next = new Set(prev)
+                              const allOpen = g.items.every((i) =>
+                                next.has(i.question.id)
+                              )
+                              for (const i of g.items) {
+                                if (allOpen) next.delete(i.question.id)
+                                else next.add(i.question.id)
+                              }
+                              return next
+                            })
+                          }
+                        >
+                          <Eye className="h-3.5 w-3.5" aria-hidden="true" />
+                          展开本章全部解析
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                  {/* 组内错题卡 */}
+                  {!collapsed && (
+                    <ul className="mt-3 space-y-4 pl-1.5">
+                      {g.items.map((item, idx) => (
+                        <WrongCard
+                          key={item.question.id}
+                          item={item}
+                          order={idx + 1}
+                          expanded={expanded.has(item.question.id)}
+                          onToggle={() => toggleExpand(item.question.id)}
+                          onRemove={() => setConfirmId(item.question.id)}
+                        />
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              )
+            })}
+          </div>
         ) : (
+          /* 按时间平铺（原视图） */
           <ul className="space-y-4">
             {filtered.map((item, idx) => (
               <WrongCard
@@ -332,6 +511,40 @@ function FilterTab({
     >
       {label}
       <span className="text-[11px] tabular-nums opacity-70">{count}</span>
+    </button>
+  )
+}
+
+// ============================================================
+// 排列模式切换 chip
+// ============================================================
+function ModeChip({
+  active,
+  onClick,
+  label,
+  children,
+}: {
+  active: boolean
+  onClick: () => void
+  label: string
+  children: React.ReactNode
+}) {
+  return (
+    <button
+      type="button"
+      role="tab"
+      aria-selected={active}
+      aria-label={label}
+      onClick={onClick}
+      className={cn(
+        'inline-flex h-7 items-center gap-1.5 rounded-md px-2.5 text-xs outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring',
+        active
+          ? 'bg-primary/10 font-semibold text-primary'
+          : 'text-muted-foreground hover:text-foreground'
+      )}
+    >
+      {children}
+      <span className="hidden sm:inline">{label}</span>
     </button>
   )
 }

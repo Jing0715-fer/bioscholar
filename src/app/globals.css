@@ -374,10 +374,20 @@
 }
 
 /* ===== 学习报告打印导出 ===== */
+@page {
+  margin: 12mm;
+}
+
 @media print {
   body { background: #fff !important; }
   body * { visibility: hidden; }
   .print-root, .print-root * { visibility: visible; }
-  .print-root { position: absolute; left: 0; top: 0; width: 100%; padding: 24px; }
+  .print-root { position: absolute; inset: 0 auto auto 0; width: 100%; max-width: none; padding: 8mm; }
   .no-print { display: none !important; }
+  /* 热力图打印适配：解除横向滚动容器裁剪，避免右侧周格被截断 */
+  .print-root .overflow-x-auto { overflow: visible !important; max-width: none !important; }
+  /* 打印时去掉卡片阴影与圆角优化墨迹 */
+  .print-root .rounded-xl, .print-root .rounded-2xl { box-shadow: none !important; }
+  /* 打印分页控制：区块尽量不跨页断裂 */
+  .print-root section { break-inside: avoid-page; }
 }

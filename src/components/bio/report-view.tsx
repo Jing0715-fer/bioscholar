@@ -8,6 +8,7 @@ import {
   type ActivityDay,
   type ActivitySummary,
 } from '@/components/bio/activity-heatmap'
+import { AbilityRadar, buildAbilityDims } from '@/components/bio/ability-radar'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { cn } from '@/lib/utils'
@@ -251,6 +252,21 @@ export function ReportView() {
       }
     : null
 
+  const abilityDims = buildAbilityDims({
+    completedSections: overview.completedSections,
+    totalSections: overview.totalSections,
+    quizTotal: overview.quizTotal,
+    quizCorrect: overview.quizCorrect,
+    accuracy: overview.accuracy,
+    noteCount: overview.noteCount,
+    cardsSeen: overview.cardsSeen,
+    cardsMastered: overview.cardsMastered,
+    activeDays: activity.activeDays,
+  })
+  const abilityAvg = Math.round(
+    abilityDims.reduce((s, d) => s + d.score, 0) / abilityDims.length
+  )
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
       {/* 报告本体：打印时仅此容器可见 */}
@@ -350,6 +366,23 @@ export function ReportView() {
                   value={`${overview.wrongCount}`}
                   sub={overview.wrongCount ? '按题目去重' : '暂无错题记录'}
                 />
+              </div>
+            </section>
+
+            {/* 能力画像 */}
+            <section className="mt-10" aria-label="能力画像">
+              <SectionHead
+                eyebrow="Ability Profile"
+                title="能力画像"
+                meta={`六维综合 ${abilityAvg} 分`}
+              />
+              <div className="bio-rule mt-2.5" aria-hidden />
+              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                六维得分由学习数据自动归一化（每维满分 100）：悬停雷达轴或明细行可联动高亮，
+                综合分取六维算术平均，用于阶段自评与前后对比。
+              </p>
+              <div className="mt-5">
+                <AbilityRadar dims={abilityDims} />
               </div>
             </section>
 
