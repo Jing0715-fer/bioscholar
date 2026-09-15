@@ -45,24 +45,24 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.99 0.005 160);
+  --foreground: oklch(0.18 0.02 170);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.18 0.02 170);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.18 0.02 170);
+  --primary: oklch(0.508 0.118 165);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.962 0.014 160);
+  --secondary-foreground: oklch(0.26 0.03 170);
+  --muted: oklch(0.962 0.008 160);
+  --muted-foreground: oklch(0.52 0.02 170);
+  --accent: oklch(0.94 0.03 160);
+  --accent-foreground: oklch(0.26 0.04 170);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.91 0.015 160);
+  --input: oklch(0.91 0.015 160);
+  --ring: oklch(0.508 0.118 165);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -79,37 +79,37 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.16 0.015 170);
+  --foreground: oklch(0.96 0.005 160);
+  --card: oklch(0.21 0.02 170);
+  --card-foreground: oklch(0.96 0.005 160);
+  --popover: oklch(0.21 0.02 170);
+  --popover-foreground: oklch(0.96 0.005 160);
+  --primary: oklch(0.723 0.14 165);
+  --primary-foreground: oklch(0.16 0.02 170);
+  --secondary: oklch(0.28 0.025 168);
+  --secondary-foreground: oklch(0.96 0.005 160);
+  --muted: oklch(0.27 0.02 168);
+  --muted-foreground: oklch(0.72 0.015 165);
+  --accent: oklch(0.32 0.035 165);
+  --accent-foreground: oklch(0.96 0.005 160);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --ring: oklch(0.723 0.14 165);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: oklch(0.19 0.02 170);
+  --sidebar-foreground: oklch(0.96 0.005 160);
+  --sidebar-primary: oklch(0.723 0.14 165);
+  --sidebar-primary-foreground: oklch(0.16 0.02 170);
+  --sidebar-accent: oklch(0.28 0.025 168);
+  --sidebar-accent-foreground: oklch(0.96 0.005 160);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.723 0.14 165);
 }
 
 @layer base {
@@ -119,4 +119,153 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* ============================================================
+   BioScholar 生物学学习平台 - 自定义样式
+   ============================================================ */
+
+::selection {
+  background: oklch(0.723 0.14 165 / 30%);
+}
+
+/* 自定义滚动条 */
+.bio-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.bio-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.bio-scroll::-webkit-scrollbar-thumb {
+  background: oklch(0.7 0.03 165 / 40%);
+  border-radius: 9999px;
+}
+.bio-scroll::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.6 0.08 165 / 60%);
+}
+
+/* ------------------------------------------------------------
+   Markdown 教材正文排版
+   ------------------------------------------------------------ */
+.bio-md {
+  line-height: 1.85;
+  font-size: 0.95rem;
+  color: var(--foreground);
+  word-break: break-word;
+}
+.bio-md > *:first-child { margin-top: 0; }
+.bio-md > *:last-child { margin-bottom: 0; }
+
+.bio-md h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1.8em 0 0.7em;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--primary);
+  line-height: 1.4;
+  color: var(--foreground);
+}
+.bio-md h3 {
+  font-size: 1.08rem;
+  font-weight: 650;
+  margin: 1.4em 0 0.5em;
+  color: var(--foreground);
+}
+.bio-md h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.1em 0 0.4em;
+}
+
+.bio-md p { margin: 0.6em 0; }
+
+.bio-md ul, .bio-md ol {
+  margin: 0.6em 0;
+  padding-left: 1.5em;
+}
+.bio-md ul { list-style: disc; }
+.bio-md ol { list-style: decimal; }
+.bio-md li { margin: 0.3em 0; }
+.bio-md li::marker { color: var(--primary); font-weight: 600; }
+
+.bio-md strong { font-weight: 650; color: var(--foreground); }
+
+.bio-md blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid var(--primary);
+  background: var(--secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--muted-foreground);
+}
+
+.bio-md code {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.85em;
+  background: var(--secondary);
+  padding: 0.15em 0.4em;
+  border-radius: 0.35em;
+  color: var(--foreground);
+}
+
+.bio-md hr {
+  margin: 1.5em 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* 表格 */
+.bio-md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.88rem;
+  display: block;
+  overflow-x: auto;
+}
+.bio-md th {
+  background: var(--secondary);
+  font-weight: 650;
+  text-align: left;
+  padding: 0.55em 0.75em;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.bio-md td {
+  padding: 0.5em 0.75em;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+.bio-md tbody tr:nth-child(even) {
+  background: var(--muted);
+}
+.bio-md tbody tr:hover {
+  background: var(--accent);
+}
+
+/* 动效 */
+@keyframes bio-fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bio-fade-up { animation: bio-fade-up 0.35s ease-out both; }
+
+@keyframes bio-pulse-dot {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1); }
+}
+.bio-dot-1 { animation: bio-pulse-dot 1.2s ease-in-out infinite; }
+.bio-dot-2 { animation: bio-pulse-dot 1.2s ease-in-out 0.2s infinite; }
+.bio-dot-3 { animation: bio-pulse-dot 1.2s ease-in-out 0.4s infinite; }
+
+/* DNA 装饰条纹 */
+.bio-dna-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 14px,
+    oklch(0.723 0.14 165 / 6%) 14px,
+    oklch(0.723 0.14 165 / 6%) 16px
+  );
 }

@@ -1,0 +1,864 @@
+     1→'use client'
+     2→
+     3→import { useEffect, useState } from 'react'
+     4→import { useAppStore } from '@/lib/store'
+     5→import { getSubject, getQuizByChapter } from '@/data/biology'
+     6→import type { Chapter, Section, Subject, SubjectId } from '@/lib/types'
+     7→import { getSubjectTheme } from '@/components/bio/subject-theme'
+     8→import { Markdown } from '@/components/bio/markdown'
+     9→import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+    10→import { Button } from '@/components/ui/button'
+    11→import { Badge } from '@/components/ui/badge'
+    12→import { Progress } from '@/components/ui/progress'
+    13→import { Separator } from '@/components/ui/separator'
+    14→import {
+    15→  Sheet,
+    16→  SheetContent,
+    17→  SheetHeader,
+    18→  SheetTitle,
+    19→  SheetTrigger,
+    20→} from '@/components/ui/sheet'
+    21→import {
+    22→  Tooltip,
+    23→  TooltipContent,
+    24→  TooltipTrigger,
+    25→} from '@/components/ui/tooltip'
+    26→import {
+    27→  ArrowLeft,
+    28→  ArrowRight,
+    29→  BookMarked,
+    30→  BookOpen,
+    31→  BookOpenCheck,
+    32→  BookX,
+    33→  CheckCircle2,
+    34→  ChevronRight,
+    35→  ClipboardList,
+    36→  Lightbulb,
+    37→  ListTree,
+    38→  Loader2,
+    39→  MessageSquareText,
+    40→  Undo2,
+    41→} from 'lucide-react'
+    42→import { cn } from '@/lib/utils'
+    43→
+    44→/** 相邻小节引用（用于上一节/下一节跨章导航） */
+    45→interface SectionRef {
+    46→  chapter: Chapter
+    47→  section: Section
+    48→}
+    49→
+    50→/** 计算上一节/下一节（跨章节边界时自动跳到上一章最后/下一章第一节） */
+    51→function computeNeighbors(
+    52→  subject: Subject | undefined,
+    53→  chapter: Chapter | undefined,
+    54→  chapterIndex: number,
+    55→  sectionIndex: number
+    56→): { prev: SectionRef | null; next: SectionRef | null } {
+    57→  if (!subject || !chapter || sectionIndex < 0) {
+    58→    return { prev: null, next: null }
+    59→  }
+    60→  let prev: SectionRef | null = null
+    61→  let next: SectionRef | null = null
+    62→  if (sectionIndex > 0) {
+    63→    prev = { chapter, section: chapter.sections[sectionIndex - 1] }
+    64→  } else if (chapterIndex > 0) {
+    65→    const pc = subject.chapters[chapterIndex - 1]
+    66→    if (pc.sections.length > 0) {
+    67→      prev = { chapter: pc, section: pc.sections[pc.sections.length - 1] }
+    68→    }
+    69→  }
+    70→  if (sectionIndex < chapter.sections.length - 1) {
+    71→    next = { chapter, section: chapter.sections[sectionIndex + 1] }
+    72→  } else if (chapterIndex < subject.chapters.length - 1) {
+    73→    const nc = subject.chapters[chapterIndex + 1]
+    74→    if (nc.sections.length > 0) {
+    75→      next = { chapter: nc, section: nc.sections[0] }
+    76→    }
+    77→  }
+    78→  return { prev, next }
+    79→}
+    80→
+    81→export function ReaderView({
+    82→  subjectId,
+    83→  chapterId,
+    84→  sectionId,
+    85→}: {
+    86→  subjectId: SubjectId
+    87→  chapterId: string
+    88→  sectionId: string
+    89→}) {
+    90→  // ---- Hooks（须无条件调用） ----
+    91→  const navigate = useAppStore((s) => s.navigate)
+    92→  const openReader = useAppStore((s) => s.openReader)
+    93→  const toggleSectionComplete = useAppStore((s) => s.toggleSectionComplete)
+    94→  const completedSections = useAppStore((s) => s.completedSections)
+    95→  const setAssistantContext = useAppStore((s) => s.setAssistantContext)
+    96→  const [tocOpen, setTocOpen] = useState(false)
+    97→  const [pending, setPending] = useState(false)
+    98→
+    99→  // 切换小节后回到页面顶部
+   100→  useEffect(() => {
+   101→    window.scrollTo(0, 0)
+   102→  }, [sectionId])
+   103→
+   104→  // ---- 数据解析 ----
+   105→  const subject = getSubject(subjectId)
+   106→  const chapterIndex = subject?.chapters.findIndex((c) => c.id === chapterId) ?? -1
+   107→  const chapter = chapterIndex >= 0 ? subject?.chapters[chapterIndex] : undefined
+   108→  const sectionIndex = chapter?.sections.findIndex((s) => s.id === sectionId) ?? -1
+   109→  const section = sectionIndex >= 0 ? chapter?.sections[sectionIndex] : undefined
+   110→  const theme = getSubjectTheme(subjectId)
+   111→
+   112→  const isCompleted = completedSections.includes(sectionId)
+   113→  const totalSections =
+   114→    subject?.chapters.reduce((a, c) => a + c.sections.length, 0) ?? 0
+   115→  const doneCount =
+   116→    subject?.chapters.reduce(
+   117→      (a, c) =>
+   118→        a + c.sections.filter((s) => completedSections.includes(s.id)).length,
+   119→      0
+   120→    ) ?? 0
+   121→  const percent = totalSections ? Math.round((doneCount / totalSections) * 100) : 0
+   122→  const quizCount = getQuizByChapter(chapterId).length
+   123→  const readMinutes = section
+   124→    ? Math.max(1, Math.round(section.content.length / 500))
+   125→    : 0
+   126→
+   127→  // ---- 上一节 / 下一节（跨章节边界） ----
+   128→  const { prev, next } = computeNeighbors(
+   129→    subject,
+   130→    chapter,
+   131→    chapterIndex,
+   132→    sectionIndex
+   133→  )
+   134→
+   135→  // ---- 操作 ----
+   136→  const handleToggleComplete = async () => {
+   137→    setPending(true)
+   138→    try {
+   139→      await toggleSectionComplete(sectionId)
+   140→    } finally {
+   141→      setPending(false)
+   142→    }
+   143→  }
+   144→
+   145→  const handleAskAssistant = () => {
+   146→    setAssistantContext({
+   147→      subjectId,
+   148→      chapterId,
+   149→      sectionId,
+   150→      sectionTitle: section?.title,
+   151→    })
+   152→    navigate({ name: 'assistant' })
+   153→  }
+   154→
+   155→  const goTo = (ref: SectionRef) => {
+   156→    openReader(subjectId, ref.chapter.id, ref.section.id)
+   157→    setTocOpen(false)
+   158→  }
+   159→
+   160→  // ---- 兜底：内容缺失 ----
+   161→  if (!subject || !chapter || !section) {
+   162→    return (
+   163→      <div className="mx-auto flex max-w-md flex-col items-center px-4 py-20 text-center">
+   164→        <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-muted">
+   165→          <BookX className="h-7 w-7 text-muted-foreground" aria-hidden="true" />
+   166→        </span>
+   167→        <h1 className="mt-4 text-lg font-bold tracking-tight">未找到该知识点</h1>
+   168→        <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+   169→          内容可能已被移动或链接无效，请返回学科中心重新选择章节。
+   170→        </p>
+   171→        <Button className="mt-6" onClick={() => navigate({ name: 'subjects' })}>
+   172→          <BookOpenCheck className="mr-2 h-4 w-4" />
+   173→          返回学科中心
+   174→        </Button>
+   175→      </div>
+   176→    )
+   177→  }
+   178→
+   179→  const asideProps = {
+   180→    subjectId,
+   181→    section,
+   182→    isCompleted,
+   183→    pending,
+   184→    onToggleComplete: handleToggleComplete,
+   185→    onAskAssistant: handleAskAssistant,
+   186→    onOpenGlossary: () => navigate({ name: 'glossary' }),
+   187→  }
+   188→
+   189→  return (
+   190→    <div className="mx-auto max-w-[1400px] px-4 py-6 sm:px-6 lg:px-8">
+   191→      {/* ============ 移动端：目录抽屉触发 + 紧凑面包屑 ============ */}
+   192→      <div className="mb-4 flex items-center gap-3 lg:hidden">
+   193→        <Sheet open={tocOpen} onOpenChange={setTocOpen}>
+   194→          <SheetTrigger asChild>
+   195→            <Button
+   196→              variant="outline"
+   197→              size="sm"
+   198→              className={cn('shrink-0 gap-1.5', theme.classes.hover)}
+   199→              aria-label="打开本书目录"
+   200→            >
+   201→              <ListTree className="h-4 w-4" />
+   202→              目录
+   203→            </Button>
+   204→          </SheetTrigger>
+   205→          <SheetContent side="left" className="w-80 gap-0 p-0">
+   206→            <SheetHeader className="border-b pb-3 pr-12">
+   207→              <SheetTitle className="flex items-center gap-2.5 text-base">
+   208→                <span
+   209→                  className={cn(
+   210→                    'flex h-8 w-8 shrink-0 items-center justify-center rounded-lg',
+   211→                    theme.classes.bg
+   212→                  )}
+   213→                >
+   214→                  <theme.icon className="h-4 w-4" />
+   215→                </span>
+   216→                <span className="min-w-0 truncate">{subject.name}</span>
+   217→              </SheetTitle>
+   218→              <p className="text-xs text-muted-foreground">
+   219→                {subject.chapters.length} 章 · {totalSections} 节 · 已学{' '}
+   220→                {doneCount} 节（{percent}%）
+   221→              </p>
+   222→              <Progress
+   223→                value={percent}
+   224→                className="mt-1 h-1.5"
+   225→                aria-label={`${subject.name}学习进度`}
+   226→              />
+   227→            </SheetHeader>
+   228→            <div className="min-h-0 flex-1 overflow-y-auto bio-scroll px-2 py-2">
+   229→              <ChapterTree
+   230→                subject={subject}
+   231→                currentChapterId={chapterId}
+   232→                currentSectionId={sectionId}
+   233→                completedSections={completedSections}
+   234→                onSelect={(cid, sid) => {
+   235→                  openReader(subjectId, cid, sid)
+   236→                  setTocOpen(false)
+   237→                }}
+   238→              />
+   239→            </div>
+   240→          </SheetContent>
+   241→        </Sheet>
+   242→        <nav
+   243→          aria-label="章节路径"
+   244→          className="flex min-w-0 flex-1 items-center gap-1 text-xs text-muted-foreground"
+   245→        >
+   246→          <span className="shrink-0 truncate">{subject.name}</span>
+   247→          <ChevronRight
+   248→            className="h-3 w-3 shrink-0 opacity-50"
+   249→            aria-hidden="true"
+   250→          />
+   251→          <span className="truncate">
+   252→            第 {chapter.number} 章 · {chapter.title}
+   253→          </span>
+   254→        </nav>
+   255→      </div>
+   256→
+   257→      {/* ============ 三栏布局 ============ */}
+   258→      <div className="grid gap-6 lg:grid-cols-[260px_minmax(0,1fr)_280px]">
+   259→        {/* ---- 左栏：本书章节目录树（桌面端） ---- */}
+   260→        <aside className="hidden lg:block" aria-label="本书目录">
+   261→          <div className="sticky top-20 flex max-h-[calc(100vh-6rem)] flex-col overflow-hidden rounded-xl border bg-card shadow-sm">
+   262→            <div className="flex items-center gap-2.5 border-b px-4 py-3">
+   263→              <span
+   264→                className={cn(
+   265→                  'flex h-8 w-8 shrink-0 items-center justify-center rounded-lg',
+   266→                  theme.classes.bg
+   267→                )}
+   268→              >
+   269→                <theme.icon className="h-4 w-4" />
+   270→              </span>
+   271→              <div className="min-w-0">
+   272→                <p className="truncate text-sm font-semibold">{subject.name}</p>
+   273→                <p className="text-[11px] text-muted-foreground">
+   274→                  {subject.chapters.length} 章 · {totalSections} 节
+   275→                </p>
+   276→              </div>
+   277→            </div>
+   278→            <div className="min-h-0 flex-1 overflow-y-auto bio-scroll p-2">
+   279→              <ChapterTree
+   280→                subject={subject}
+   281→                currentChapterId={chapterId}
+   282→                currentSectionId={sectionId}
+   283→                completedSections={completedSections}
+   284→                onSelect={(cid, sid) => openReader(subjectId, cid, sid)}
+   285→              />
+   286→            </div>
+   287→            <div className="border-t px-4 py-3">
+   288→              <div className="flex items-baseline justify-between gap-2 text-[11px]">
+   289→                <span className="text-muted-foreground">本书学习进度</span>
+   290→                <span className="font-semibold tabular-nums">
+   291→                  {doneCount}/{totalSections}
+   292→                </span>
+   293→              </div>
+   294→              <Progress
+   295→                value={percent}
+   296→                className="mt-1.5 h-1.5"
+   297→                aria-label={`${subject.name}学习进度`}
+   298→              />
+   299→            </div>
+   300→          </div>
+   301→        </aside>
+   302→
+   303→        {/* ---- 中栏：正文阅读区 ---- */}
+   304→        <div className="min-w-0">
+   305→          {/* 桌面端面包屑 */}
+   306→          <nav
+   307→            aria-label="章节路径"
+   308→            className="mb-3 hidden items-center gap-1.5 text-xs text-muted-foreground lg:flex"
+   309→          >
+   310→            <button
+   311→              onClick={() => navigate({ name: 'subjects' })}
+   312→              className="rounded outline-none transition-colors hover:text-foreground hover:underline focus-visible:ring-2 focus-visible:ring-ring"
+   313→            >
+   314→              学科中心
+   315→            </button>
+   316→            <ChevronRight
+   317→              className="h-3 w-3 shrink-0 opacity-50"
+   318→              aria-hidden="true"
+   319→            />
+   320→            <button
+   321→              onClick={() => navigate({ name: 'subjects' })}
+   322→              className="rounded outline-none transition-colors hover:text-foreground hover:underline focus-visible:ring-2 focus-visible:ring-ring"
+   323→            >
+   324→              {subject.name}
+   325→            </button>
+   326→            <ChevronRight
+   327→              className="h-3 w-3 shrink-0 opacity-50"
+   328→              aria-hidden="true"
+   329→            />
+   330→            <span className="truncate">第 {chapter.number} 章 · {chapter.title}</span>
+   331→            <ChevronRight
+   332→              className="h-3 w-3 shrink-0 opacity-50"
+   333→              aria-hidden="true"
+   334→            />
+   335→            <span className="truncate font-medium text-foreground">
+   336→              {section.title}
+   337→            </span>
+   338→          </nav>
+   339→
+   340→          {/* 本书阅读进度 */}
+   341→          <div className="flex items-center gap-3 rounded-xl border bg-card px-4 py-3 shadow-sm">
+   342→            <BookOpenCheck
+   343→              className="h-4 w-4 shrink-0 text-primary"
+   344→              aria-hidden="true"
+   345→            />
+   346→            <div className="min-w-0 flex-1">
+   347→              <div className="flex items-baseline justify-between gap-2 text-xs">
+   348→                <span className="truncate text-muted-foreground">
+   349→                  本书学习进度 · {subject.name}
+   350→                </span>
+   351→                <span className="shrink-0 font-medium tabular-nums">
+   352→                  {doneCount}/{totalSections} 节 ·{' '}
+   353→                  <span className={cn('font-bold', theme.classes.text)}>
+   354→                    {percent}%
+   355→                  </span>
+   356→                </span>
+   357→              </div>
+   358→              <Progress
+   359→                value={percent}
+   360→                className="mt-1.5 h-1.5"
+   361→                aria-label={`${subject.name}学习进度`}
+   362→              />
+   363→            </div>
+   364→          </div>
+   365→
+   366→          {/* 学科渐变横幅 */}
+   367→          <header
+   368→            className={cn(
+   369→              'relative mt-4 overflow-hidden rounded-2xl border bg-gradient-to-br p-5 text-white shadow-lg sm:p-6',
+   370→              theme.classes.gradient
+   371→            )}
+   372→          >
+   373→            <div className="bio-dna-bg absolute inset-0 opacity-50" aria-hidden="true" />
+   374→            <div className="relative">
+   375→              <div className="flex flex-wrap items-center gap-2 text-xs text-white/85">
+   376→                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 font-medium backdrop-blur-sm">
+   377→                  <theme.icon className="h-3.5 w-3.5" aria-hidden="true" />
+   378→                  {subject.name}
+   379→                </span>
+   380→                <span className="opacity-80">{subject.englishName}</span>
+   381→              </div>
+   382→              <h1 className="mt-3 text-xl font-bold leading-snug tracking-tight sm:text-2xl">
+   383→                {section.title}
+   384→              </h1>
+   385→              <p className="mt-1.5 text-sm text-white/80">
+   386→                第 {chapter.number} 章 · {chapter.title}
+   387→              </p>
+   388→              <p className="mt-3 line-clamp-2 max-w-2xl text-xs leading-relaxed text-white/70">
+   389→                {chapter.summary}
+   390→              </p>
+   391→              <div className="mt-4 flex flex-wrap items-center gap-2">
+   392→                <Badge
+   393→                  variant="outline"
+   394→                  className={cn(
+   395→                    'border-white/30 bg-white/15 text-white backdrop-blur-sm',
+   396→                    isCompleted && 'border-emerald-200/50 bg-emerald-400/25'
+   397→                  )}
+   398→                >
+   399→                  <CheckCircle2 className="h-3 w-3" aria-hidden="true" />
+   400→                  {isCompleted ? '已学习' : '未学习'}
+   401→                </Badge>
+   402→                <Badge
+   403→                  variant="outline"
+   404→                  className="border-white/30 bg-white/15 text-white backdrop-blur-sm"
+   405→                >
+   406→                  <BookOpen className="h-3 w-3" aria-hidden="true" />
+   407→                  约 {readMinutes} 分钟
+   408→                </Badge>
+   409→                <Badge
+   410→                  variant="outline"
+   411→                  className="border-white/30 bg-white/15 text-white backdrop-blur-sm"
+   412→                >
+   413→                  要点 {section.keyPoints.length} 条
+   414→                </Badge>
+   415→                <Badge
+   416→                  variant="outline"
+   417→                  className="border-white/30 bg-white/15 text-white backdrop-blur-sm"
+   418→                >
+   419→                  术语 {section.terms.length} 个
+   420→                </Badge>
+   421→              </div>
+   422→            </div>
+   423→          </header>
+   424→
+   425→          {/* Markdown 正文 */}
+   426→          <Card className="mx-auto mt-6 max-w-3xl">
+   427→            <CardContent className="p-5 sm:p-8">
+   428→              <Markdown content={section.content} />
+   429→            </CardContent>
+   430→          </Card>
+   431→
+   432→          {/* 章末测验入口 */}
+   433→          {quizCount > 0 && (
+   434→            <Card
+   435→              className={cn(
+   436→                'mx-auto mt-4 max-w-3xl transition-shadow hover:shadow-md',
+   437→                theme.classes.hover
+   438→              )}
+   439→            >
+   440→              <CardContent className="flex flex-wrap items-center gap-4 p-5">
+   441→                <span
+   442→                  className={cn(
+   443→                    'flex h-11 w-11 shrink-0 items-center justify-center rounded-xl',
+   444→                    theme.classes.bg
+   445→                  )}
+   446→                >
+   447→                  <ClipboardList className="h-5 w-5" aria-hidden="true" />
+   448→                </span>
+   449→                <div className="min-w-0 flex-1">
+   450→                  <p className="text-sm font-semibold">
+   451→                    本章自测 · 第 {chapter.number} 章
+   452→                  </p>
+   453→                  <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">
+   454→                    共 {quizCount} 道题，覆盖本章 {chapter.sections.length}{' '}
+   455→                    个小节的知识点，学完检验掌握程度
+   456→                  </p>
+   457→                </div>
+   458→                <Button
+   459→                  size="sm"
+   460→                  className={cn('shrink-0', theme.classes.bg)}
+   461→                  onClick={() => navigate({ name: 'quiz', subjectId })}
+   462→                >
+   463→                  开始自测
+   464→                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+   465→                </Button>
+   466→              </CardContent>
+   467→            </Card>
+   468→          )}
+   469→
+   470→          {/* 上一节 / 下一节 */}
+   471→          {(prev || next) && (
+   472→            <nav
+   473→              className="mx-auto mt-6 flex max-w-3xl flex-col gap-3 sm:flex-row"
+   474→              aria-label="小节导航"
+   475→            >
+   476→              {prev ? (
+   477→                <SectionNavCard
+   478→                  direction="prev"
+   479→                  target={prev}
+   480→                  currentChapterId={chapterId}
+   481→                  hover={theme.classes.hover}
+   482→                  onClick={() => goTo(prev)}
+   483→                />
+   484→              ) : (
+   485→                <div className="hidden sm:block sm:flex-1" aria-hidden="true" />
+   486→              )}
+   487→              {next && (
+   488→                <SectionNavCard
+   489→                  direction="next"
+   490→                  target={next}
+   491→                  currentChapterId={chapterId}
+   492→                  hover={theme.classes.hover}
+   493→                  onClick={() => goTo(next)}
+   494→                />
+   495→              )}
+   496→            </nav>
+   497→          )}
+   498→
+   499→          {/* 移动端：要点 / 术语 / 操作区（正文下方） */}
+   500→          <div className="mt-6 space-y-4 lg:hidden">
+   501→            <SectionAside {...asideProps} />
+   502→          </div>
+   503→        </div>
+   504→
+   505→        {/* ---- 右栏：要点 / 术语 / 学习操作（桌面端） ---- */}
+   506→        <aside
+   507→          className="hidden lg:block"
+   508→          aria-label="本节要点与相关术语"
+   509→        >
+   510→          <div className="sticky top-20 max-h-[calc(100vh-6rem)] space-y-4 overflow-y-auto bio-scroll pb-2">
+   511→            <SectionAside {...asideProps} />
+   512→          </div>
+   513→        </aside>
+   514→      </div>
+   515→    </div>
+   516→  )
+   517→}
+   518→
+   519→// ============================================================
+   520→// 章节目录树（左栏 / 移动端抽屉共用）
+   521→// ============================================================
+   522→function ChapterTree({
+   523→  subject,
+   524→  currentChapterId,
+   525→  currentSectionId,
+   526→  completedSections,
+   527→  onSelect,
+   528→}: {
+   529→  subject: Subject
+   530→  currentChapterId: string
+   531→  currentSectionId: string
+   532→  completedSections: string[]
+   533→  onSelect: (chapterId: string, sectionId: string) => void
+   534→}) {
+   535→  const theme = getSubjectTheme(subject.id)
+   536→  const [expandedId, setExpandedId] = useState<string | null>(currentChapterId)
+   537→
+   538→  // 当前章节变化时自动跟随展开
+   539→  useEffect(() => {
+   540→    setExpandedId(currentChapterId)
+   541→  }, [currentChapterId])
+   542→
+   543→  return (
+   544→    <nav aria-label={`${subject.name}章节目录`} className="space-y-1">
+   545→      {subject.chapters.map((ch) => {
+   546→        const expanded = expandedId === ch.id
+   547→        const done = ch.sections.filter((s) => completedSections.includes(s.id)).length
+   548→        const allDone = done === ch.sections.length && done > 0
+   549→        return (
+   550→          <div
+   551→            key={ch.id}
+   552→            className={cn(
+   553→              'rounded-lg transition-colors',
+   554→              expanded && theme.classes.bgSoft
+   555→            )}
+   556→          >
+   557→            <button
+   558→              onClick={() => setExpandedId(expanded ? null : ch.id)}
+   559→              aria-expanded={expanded}
+   560→              className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-sm outline-none transition-colors hover:bg-accent focus-visible:ring-2 focus-visible:ring-ring"
+   561→            >
+   562→              <span
+   563→                className={cn(
+   564→                  'flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[11px] font-bold tabular-nums',
+   565→                  allDone
+   566→                    ? 'bg-primary text-primary-foreground'
+   567→                    : cn(theme.classes.bgSoft, theme.classes.text)
+   568→                )}
+   569→                aria-hidden="true"
+   570→              >
+   571→                {allDone ? <CheckCircle2 className="h-3.5 w-3.5" /> : ch.number}
+   572→              </span>
+   573→              <span
+   574→                className={cn(
+   575→                  'min-w-0 flex-1 truncate',
+   576→                  ch.id === currentChapterId ? 'font-semibold' : 'font-medium'
+   577→                )}
+   578→              >
+   579→                {ch.title}
+   580→              </span>
+   581→              <span className="shrink-0 text-[10px] tabular-nums text-muted-foreground">
+   582→                {done}/{ch.sections.length}
+   583→              </span>
+   584→              <ChevronRight
+   585→                className={cn(
+   586→                  'h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform duration-200',
+   587→                  expanded && 'rotate-90'
+   588→                )}
+   589→                aria-hidden="true"
+   590→              />
+   591→            </button>
+   592→            {expanded && (
+   593→              <ul className="mt-0.5 space-y-0.5 pb-1.5 pl-3 pr-1.5">
+   594→                {ch.sections.map((sec, i) => {
+   595→                  const isCurrentSec = sec.id === currentSectionId
+   596→                  const secDone = completedSections.includes(sec.id)
+   597→                  return (
+   598→                    <li key={sec.id}>
+   599→                      <button
+   600→                        onClick={() => onSelect(ch.id, sec.id)}
+   601→                        aria-current={isCurrentSec ? 'page' : undefined}
+   602→                        className={cn(
+   603→                          'flex w-full items-center gap-2 rounded-md border-l-2 px-2 py-1.5 text-left text-xs transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring',
+   604→                          isCurrentSec
+   605→                            ? cn(
+   606→                                'font-semibold',
+   607→                                theme.classes.border,
+   608→                                theme.classes.bgSoft,
+   609→                                theme.classes.text
+   610→                              )
+   611→                            : 'border-transparent text-muted-foreground hover:bg-accent hover:text-foreground'
+   612→                        )}
+   613→                      >
+   614→                        {secDone ? (
+   615→                          <CheckCircle2
+   616→                            className="h-3.5 w-3.5 shrink-0 text-emerald-500"
+   617→                            aria-label="已完成"
+   618→                          />
+   619→                        ) : (
+   620→                          <span
+   621→                            className="flex h-3.5 w-3.5 shrink-0 items-center justify-center text-[10px] font-medium tabular-nums text-muted-foreground/60"
+   622→                            aria-hidden="true"
+   623→                          >
+   624→                            {i + 1}
+   625→                          </span>
+   626→                        )}
+   627→                        <span className="min-w-0 flex-1 truncate">
+   628→                          {sec.title}
+   629→                        </span>
+   630→                      </button>
+   631→                    </li>
+   632→                  )
+   633→                })}
+   634→              </ul>
+   635→            )}
+   636→          </div>
+   637→        )
+   638→      })}
+   639→    </nav>
+   640→  )
+   641→}
+   642→
+   643→// ============================================================
+   644→// 右栏：本节要点 / 相关术语 / 学习操作（桌面右栏 + 移动端下方共用）
+   645→// ============================================================
+   646→function SectionAside({
+   647→  subjectId,
+   648→  section,
+   649→  isCompleted,
+   650→  pending,
+   651→  onToggleComplete,
+   652→  onAskAssistant,
+   653→  onOpenGlossary,
+   654→}: {
+   655→  subjectId: SubjectId
+   656→  section: Section
+   657→  isCompleted: boolean
+   658→  pending: boolean
+   659→  onToggleComplete: () => void
+   660→  onAskAssistant: () => void
+   661→  onOpenGlossary: () => void
+   662→}) {
+   663→  const theme = getSubjectTheme(subjectId)
+   664→
+   665→  return (
+   666→    <>
+   667→      {/* 本节要点 */}
+   668→      {section.keyPoints.length > 0 && (
+   669→        <Card className={cn('gap-3 py-4', theme.classes.border)}>
+   670→          <CardHeader className="px-4 pb-0">
+   671→            <CardTitle
+   672→              className={cn('flex items-center gap-2 text-sm', theme.classes.text)}
+   673→            >
+   674→              <Lightbulb className="h-4 w-4 shrink-0" aria-hidden="true" />
+   675→              本节要点
+   676→            </CardTitle>
+   677→          </CardHeader>
+   678→          <CardContent className="px-4">
+   679→            <ul className="space-y-2.5">
+   680→              {section.keyPoints.map((kp, i) => (
+   681→                <li key={i} className="flex gap-2.5 text-xs leading-relaxed">
+   682→                  <span
+   683→                    className={cn(
+   684→                      'mt-px flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold tabular-nums',
+   685→                      theme.classes.bgSoft,
+   686→                      theme.classes.text
+   687→                    )}
+   688→                    aria-hidden="true"
+   689→                  >
+   690→                    {i + 1}
+   691→                  </span>
+   692→                  <span className="min-w-0 flex-1">{kp}</span>
+   693→                </li>
+   694→              ))}
+   695→            </ul>
+   696→          </CardContent>
+   697→        </Card>
+   698→      )}
+   699→
+   700→      {/* 相关术语 */}
+   701→      {section.terms.length > 0 && (
+   702→        <Card className="gap-3 py-4">
+   703→          <CardHeader className="px-4 pb-0">
+   704→            <CardTitle className="flex items-center gap-2 text-sm">
+   705→              <BookMarked
+   706→                className="h-4 w-4 shrink-0 text-primary"
+   707→                aria-hidden="true"
+   708→              />
+   709→              相关术语
+   710→            </CardTitle>
+   711→          </CardHeader>
+   712→          <CardContent className="px-4">
+   713→            <div className="flex flex-wrap gap-1.5">
+   714→              {section.terms.map((term) => (
+   715→                <button
+   716→                  key={term}
+   717→                  onClick={onOpenGlossary}
+   718→                  className={cn(
+   719→                    'inline-flex items-center gap-1 rounded-md border px-2 py-1 text-xs transition-all outline-none hover:-translate-y-px focus-visible:ring-2 focus-visible:ring-ring',
+   720→                    theme.classes.badge
+   721→                  )}
+   722→                  aria-label={`在术语词典中查看「${term}」`}
+   723→                >
+   724→                  <BookMarked className="h-3 w-3 opacity-60" aria-hidden="true" />
+   725→                  {term}
+   726→                </button>
+   727→              ))}
+   728→            </div>
+   729→            <p className="mt-2.5 text-[10px] text-muted-foreground">
+   730→              点击术语可跳转术语词典查看详细释义
+   731→            </p>
+   732→          </CardContent>
+   733→        </Card>
+   734→      )}
+   735→
+   736→      {/* 学习操作 */}
+   737→      <Card className="gap-3 py-4">
+   738→        <CardContent className="space-y-3 px-4">
+   739→          {isCompleted && (
+   740→            <p className="flex items-center justify-center gap-1.5 text-xs font-medium text-emerald-600 dark:text-emerald-400">
+   741→              <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+   742→              已完成本节学习
+   743→            </p>
+   744→          )}
+   745→          {isCompleted ? (
+   746→            <Button
+   747→              variant="outline"
+   748→              className="w-full gap-2"
+   749→              onClick={onToggleComplete}
+   750→              disabled={pending}
+   751→            >
+   752→              {pending ? (
+   753→                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+   754→              ) : (
+   755→                <Undo2 className="h-4 w-4" aria-hidden="true" />
+   756→              )}
+   757→              取消已学
+   758→            </Button>
+   759→          ) : (
+   760→            <Button
+   761→              className="w-full gap-2 bg-emerald-600 text-white hover:bg-emerald-700"
+   762→              onClick={onToggleComplete}
+   763→              disabled={pending}
+   764→            >
+   765→              {pending ? (
+   766→                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+   767→              ) : (
+   768→                <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+   769→              )}
+   770→              标记为已学
+   771→            </Button>
+   772→          )}
+   773→          <Separator />
+   774→          <Tooltip>
+   775→            <TooltipTrigger asChild>
+   776→              <Button
+   777→                variant="outline"
+   778→                className={cn('w-full gap-2', theme.classes.hover)}
+   779→                onClick={onAskAssistant}
+   780→              >
+   781→                <MessageSquareText
+   782→                  className="h-4 w-4"
+   783→                  aria-hidden="true"
+   784→                />
+   785→                向 AI 助教提问本节
+   786→              </Button>
+   787→            </TooltipTrigger>
+   788→            <TooltipContent>将携带本节学习上下文进入对话</TooltipContent>
+   789→          </Tooltip>
+   790→        </CardContent>
+   791→      </Card>
+   792→    </>
+   793→  )
+   794→}
+   795→
+   796→// ============================================================
+   797→// 上一节 / 下一节导航卡片
+   798→// ============================================================
+   799→function SectionNavCard({
+   800→  direction,
+   801→  target,
+   802→  currentChapterId,
+   803→  hover,
+   804→  onClick,
+   805→}: {
+   806→  direction: 'prev' | 'next'
+   807→  target: SectionRef
+   808→  currentChapterId: string
+   809→  hover: string
+   810→  onClick: () => void
+   811→}) {
+   812→  const isNext = direction === 'next'
+   813→  const crossChapter = target.chapter.id !== currentChapterId
+   814→
+   815→  return (
+   816→    <button
+   817→      onClick={onClick}
+   818→      className={cn(
+   819→        'group flex flex-1 items-center gap-3 rounded-xl border bg-card p-4 text-left outline-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md focus-visible:ring-2 focus-visible:ring-ring',
+   820→        hover
+   821→      )}
+   822→      aria-label={`${isNext ? '下一节' : '上一节'}：第 ${target.chapter.number} 章 ${target.section.title}`}
+   823→    >
+   824→      {!isNext && (
+   825→        <span
+   826→          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-muted transition-colors group-hover:bg-accent"
+   827→          aria-hidden="true"
+   828→        >
+   829→          <ArrowLeft className="h-4 w-4" />
+   830→        </span>
+   831→      )}
+   832→      <span className={cn('min-w-0 flex-1', isNext && 'sm:text-right')}>
+   833→        <span
+   834→          className={cn(
+   835→            'flex items-center gap-1.5 text-[11px] text-muted-foreground',
+   836→            isNext && 'sm:justify-end'
+   837→          )}
+   838→        >
+   839→          {crossChapter && (
+   840→            <Badge variant="outline" className="h-4 px-1.5 text-[10px]">
+   841→              {isNext ? '下一章' : '上一章'}
+   842→            </Badge>
+   843→          )}
+   844→          {isNext ? '下一节' : '上一节'}
+   845→        </span>
+   846→        <span className="mt-1 block truncate text-sm font-medium group-hover:underline">
+   847→          {target.section.title}
+   848→        </span>
+   849→        <span className="mt-0.5 block truncate text-[11px] text-muted-foreground">
+   850→          第 {target.chapter.number} 章 · {target.chapter.title}
+   851→        </span>
+   852→      </span>
+   853→      {isNext && (
+   854→        <span
+   855→          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-muted transition-colors group-hover:bg-accent"
+   856→          aria-hidden="true"
+   857→        >
+   858→          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+   859→        </span>
+   860→      )}
+   861→    </button>
+   862→  )
+   863→}
+   864→
