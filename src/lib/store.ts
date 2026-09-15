@@ -11,6 +11,7 @@ export type NavKey =
   | 'assistant'
   | 'quiz'
   | 'revision'
+  | 'wrongbook'
   | 'glossary'
   | 'notes'
 

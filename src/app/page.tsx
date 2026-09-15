@@ -16,6 +16,7 @@ import {
   Dna,
   Menu,
   Layers,
+  NotebookPen,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
@@ -35,6 +36,7 @@ import { GlossaryView } from '@/components/bio/glossary-view'
 import { NotesView } from '@/components/bio/notes-view'
 import { SearchDialog } from '@/components/bio/search-dialog'
 import { RevisionView } from '@/components/bio/revision-view'
+import { WrongbookView } from '@/components/bio/wrongbook-view'
 
 const NAV_ITEMS: Array<{
   key: NavKey
@@ -47,6 +49,7 @@ const NAV_ITEMS: Array<{
   { key: 'assistant', label: 'AI 智能助教', icon: MessageSquareText, desc: '生物学专家问答' },
   { key: 'quiz', label: '测验中心', icon: ClipboardList, desc: '章节自测与成绩' },
   { key: 'revision', label: '复习卡片', icon: Layers, desc: '间隔重复记忆术语' },
+  { key: 'wrongbook', label: '错题本', icon: NotebookPen, desc: '测验错题归集复习' },
   { key: 'glossary', label: '术语词典', icon: BookMarked, desc: '跨学科专业术语' },
   { key: 'notes', label: '学习笔记', icon: StickyNote, desc: '我的知识笔记' },
 ]
@@ -260,6 +263,7 @@ export default function Home() {
                 )}
                 {view.name === 'quiz' && <QuizView subjectId={view.subjectId} />}
                 {view.name === 'revision' && <RevisionView />}
+                {view.name === 'wrongbook' && <WrongbookView />}
                 {view.name === 'glossary' && <GlossaryView />}
                 {view.name === 'notes' && <NotesView />}
                 {view.name === 'assistant' && <AssistantView />}

@@ -103,6 +103,7 @@ export type AppView =
   | { name: 'notes' }
   | { name: 'assistant' }
   | { name: 'revision' }
+  | { name: 'wrongbook' }
 
 /** 聊天消息 */
 export interface ChatMessage {

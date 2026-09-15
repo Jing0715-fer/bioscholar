@@ -271,3 +271,27 @@ Stage Summary:
 - 插图风格为 AI 生成示意（图注已声明"AI 绘制示意图"），后续可逐张人工审校替换为矢量图
 - 复习卡片目前仅基于术语词典 100 条，可扩展为"小节要点卡"（keyPoints 抽卡）
 - 可考虑学习热力图、导出学习报告 PDF、错题本等增强功能
+
+---
+Task ID: 13
+Agent: 主控 (Z.ai Code)
+Task: 复习卡片 QA 修复 + 错题本新功能 + 推送
+
+Work Log:
+- 【QA 发现并修复关键 Bug】复习卡片 /api/flashcards HTTP 500：db:push 时 dev server 占用导致 Prisma Client 未热更新，db.flashcardReview undefined → bun run db:generate 重新生成 + 重启 dev server 修复
+- 【QA 复习卡片全流程】agent-browser 实测：队列加载（15 张新卡）→ 翻卡（ATP→糖酵解）→ 四档评分（"良好"）→ 推进正常；Prisma 验证 SM-2 调度正确（ATP：reps=1、intervalDays=1、ease=2.5、dueAt=次日）；测试数据已清理
+- 【新功能：错题本（wrongbook）】
+  * /api/wrongbook：GET 聚合 QuizAttempt 答错记录（按题聚合错次/最近错答/最后错误时间倒序，关联题目原文与学科统计）；DELETE { questionId } 移除错题（删除该题全部作答）
+  * wrongbook-view.tsx：学术编辑风（eyebrow+衬线标题+学科色顶线）；学科下边线式筛选（带计数）；错题卡（衬线序号+题干展开/收起）；展开区选项正误对照（绿=正确/红=你的选择/灰=未选）+ 解析块（左侧 primary 细线）+ 移除操作（AlertDialog 确认）；空态/加载/错误态；date-fns 相对时间
+  * 导航集成：page.tsx 新增"错题本"（NotebookPen 图标），types AppView + store NavKey 增加 wrongbook
+- 【端到端验证】agent-browser：真实答题（5 题对 1）→ 交卷（得分率 20%）→ 错题本自动归集 4 道 → 学科筛选 → 展开解析 → 移除 1 道（4→3 实时更新）→ console 零错误；VLM 评审排版专业统一
+- 【tsc/lint】src/ 0 错误，eslint 0 警告
+
+Stage Summary:
+- 应用现有 9 大功能视图：仪表盘/学科中心/阅读器/AI 助教/测验中心/复习卡片/错题本/术语词典/学习笔记
+- 错题闭环成型：测验 → 错题归集 → 解析复习 → 移除已掌握；结合 SM-2 复习卡片形成完整学习回路
+
+未解决问题与下一步建议：
+- 复习卡片可扩展"小节要点卡"（keyPoints 抽卡）与错题联动（错题自动生成卡片）
+- 仪表盘可加入错题数/到期卡数统计卡
+- 学习热力图（GitHub 风格活动日历）可作为下一亮点功能
