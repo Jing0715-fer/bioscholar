@@ -4,10 +4,11 @@ import { db } from '@/lib/db'
 /** 仪表盘聚合统计 */
 export async function GET() {
   try {
-    const [progress, attempts, notes] = await Promise.all([
+    const [progress, attempts, notes, reviews] = await Promise.all([
       db.learningProgress.findMany(),
       db.quizAttempt.findMany({ orderBy: { createdAt: 'desc' }, take: 500 }),
       db.note.findMany(),
+      db.flashcardReview.findMany(),
     ])
 
     const total = attempts.length
@@ -25,13 +26,16 @@ export async function GET() {
       if (a.correct) bySubject[a.subjectId].quizCorrect += 1
     }
 
-    // 最近 14 天学习活动（按天统计完成小节数与答题数）
-    const dayMap = new Map<string, { completed: number; quiz: number }>()
+    // 最近 14 天学习活动（按天统计完成小节、答题与复习）
+    const dayMap = new Map<
+      string,
+      { completed: number; quiz: number; reviews: number }
+    >()
     const now = new Date()
     for (let i = 13; i >= 0; i--) {
       const d = new Date(now)
       d.setDate(d.getDate() - i)
-      dayMap.set(d.toISOString().slice(0, 10), { completed: 0, quiz: 0 })
+      dayMap.set(d.toISOString().slice(0, 10), { completed: 0, quiz: 0, reviews: 0 })
     }
     for (const p of progress) {
       const key = p.completedAt.toISOString().slice(0, 10)
@@ -42,12 +46,26 @@ export async function GET() {
       if (dayMap.has(key)) dayMap.get(key)!.quiz += 1
     }
 
+    for (const r of reviews) {
+      if (!r.lastReviewedAt) continue
+      const key = r.lastReviewedAt.toISOString().slice(0, 10)
+      if (dayMap.has(key)) dayMap.get(key)!.reviews += 1
+    }
+
+    // 今日待复习卡数 + 错题数
+    const dueCards = reviews.filter((r) => r.reps > 0 && r.dueAt <= now).length
+    const wrongQuestions = new Set(
+      attempts.filter((a) => !a.correct).map((a) => a.questionId)
+    ).size
+
     return NextResponse.json({
       completedCount: progress.length,
       quizTotal: total,
       quizCorrect: correct,
       quizAccuracy: total ? Math.round((correct / total) * 100) : 0,
       noteCount: notes.length,
+      dueCards,
+      wrongCount: wrongQuestions,
       bySubject,
       activity: Array.from(dayMap.entries()).map(([date, v]) => ({ date, ...v })),
     })
@@ -59,6 +77,8 @@ export async function GET() {
       quizCorrect: 0,
       quizAccuracy: 0,
       noteCount: 0,
+      dueCards: 0,
+      wrongCount: 0,
       bySubject: {},
       activity: [],
     })

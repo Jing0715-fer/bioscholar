@@ -5,18 +5,15 @@ import { useAppStore } from '@/lib/store'
 import { subjects, allQuizQuestions } from '@/data/biology'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { subjectCovers, heroImage } from '@/data/illustrations'
+import {
+  ActivityHeatmap,
+  type ActivityDay,
+  type ActivitySummary,
+} from '@/components/bio/activity-heatmap'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  ResponsiveContainer,
-  Tooltip as ChartTooltip,
-  XAxis,
-  YAxis,
-} from 'recharts'
+import { cn } from '@/lib/utils'
+import { ArrowRight, Layers, NotebookPen } from 'lucide-react'
 
 interface StatsResponse {
   completedCount: number
@@ -24,7 +21,9 @@ interface StatsResponse {
   quizCorrect: number
   quizAccuracy: number
   noteCount: number
-  activity: Array<{ date: string; completed: number; quiz: number }>
+  dueCards: number
+  wrongCount: number
+  activity: Array<{ date: string; completed: number; quiz: number; reviews?: number }>
 }
 
 const TOTAL_SECTIONS = subjects.reduce(
@@ -41,12 +40,26 @@ export function Dashboard() {
   const hydrateCompleted = useAppStore((s) => s.hydrateCompleted)
   const setAssistantContext = useAppStore((s) => s.setAssistantContext)
   const [stats, setStats] = useState<StatsResponse | null>(null)
+  const [heatmapDays, setHeatmapDays] = useState<ActivityDay[]>([])
+  const [heatmapSummary, setHeatmapSummary] = useState<ActivitySummary | null>(null)
 
   useEffect(() => {
     hydrateCompleted()
     fetch('/api/stats')
       .then((r) => r.json())
       .then(setStats)
+      .catch(() => {})
+    fetch('/api/activity')
+      .then((r) => r.json())
+      .then((d: { days: ActivityDay[] } & ActivitySummary) => {
+        setHeatmapDays(d.days ?? [])
+        setHeatmapSummary({
+          streak: d.streak,
+          maxStreak: d.maxStreak,
+          activeTotal: d.activeTotal,
+          todayTotal: d.todayTotal,
+        })
+      })
       .catch(() => {})
   }, [hydrateCompleted])
 
@@ -100,9 +113,9 @@ export function Dashboard() {
         </div>
       </section>
 
-      {/* 统计条：数字优先，细线分隔 */}
+      {/* 统计条：六格，数字优先，细线分隔 */}
       <section
-        className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border lg:grid-cols-4"
+        className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border sm:grid-cols-3 lg:grid-cols-6"
         aria-label="学习统计"
       >
         <StatTile
@@ -121,15 +134,31 @@ export function Dashboard() {
           sub={stats?.quizTotal ? `基于 ${stats.quizTotal} 次作答` : '尚未开始测验'}
         />
         <StatTile
+          label="待复习卡片"
+          value={`${stats?.dueCards ?? 0}`}
+          sub={
+            stats?.dueCards
+              ? '今日到期 · 按 SM-2 调度'
+              : '303 张卡 · 无今日到期'
+          }
+          onClick={() => navigate({ name: 'revision' })}
+        />
+        <StatTile
+          label="错题本"
+          value={`${stats?.wrongCount ?? 0}`}
+          sub={stats?.wrongCount ? '待攻克错题' : '暂无待复习错题'}
+          onClick={() => navigate({ name: 'wrongbook' })}
+        />
+        <StatTile
           label="学习笔记"
           value={`${stats?.noteCount ?? 0}`}
           sub="随时记录灵感"
         />
       </section>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-3">
+      <div className="mt-6 grid min-w-0 gap-6 lg:grid-cols-3">
         {/* 学科进度：封面缩略图 + 学科色左边框 */}
-        <Card className="shadow-none lg:col-span-2">
+        <Card className="min-w-0 shadow-none lg:col-span-2">
           <CardContent className="px-6">
             <div className="flex items-center gap-2.5 border-b pb-3">
               <span className="h-2.5 w-2.5 rounded-[2px] bg-primary/70" aria-hidden />
@@ -207,10 +236,10 @@ export function Dashboard() {
           </CardContent>
         </Card>
 
-        {/* 继续学习 + 活跃度 */}
-        <div className="flex flex-col gap-6">
+        {/* 右栏：继续阅读 + 今日速览 */}
+        <div className="flex min-w-0 flex-col gap-6">
           {lastRead ? (
-            <Card className="border-primary/25 bg-primary/5 shadow-none">
+            <Card className="min-w-0 border-primary/25 bg-primary/5 shadow-none">
               <CardContent className="px-6">
                 <p className="bio-eyebrow text-primary">继续阅读</p>
                 <div className="bio-rule mt-2.5" aria-hidden />
@@ -236,7 +265,7 @@ export function Dashboard() {
               </CardContent>
             </Card>
           ) : (
-            <Card className="shadow-none">
+            <Card className="min-w-0 shadow-none">
               <CardContent className="px-6">
                 <p className="bio-eyebrow text-muted-foreground">开始学习</p>
                 <div className="bio-rule mt-2.5" aria-hidden />
@@ -255,57 +284,97 @@ export function Dashboard() {
             </Card>
           )}
 
-          <Card className="shadow-none">
+          {/* 今日速览：到期卡 + 错题 */}
+          <Card className="min-w-0 shadow-none">
             <CardContent className="px-6">
               <div className="flex items-center gap-2.5 border-b pb-3">
                 <span className="h-2.5 w-2.5 rounded-[2px] bg-primary/70" aria-hidden />
-                <h2 className="font-serif text-lg font-bold">近 14 天学习活动</h2>
+                <h2 className="font-serif text-lg font-bold">今日速览</h2>
+                <span className="ml-auto text-[11px] tabular-nums text-muted-foreground">
+                  {heatmapSummary?.todayTotal ?? 0} 项活动
+                </span>
               </div>
-              <div className="mt-4">
-                {stats && stats.activity.some((a) => a.completed + a.quiz > 0) ? (
-                  <div className="h-36">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <BarChart data={stats.activity} barGap={1}>
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" />
-                        <XAxis
-                          dataKey="date"
-                          tickFormatter={(v: string) => v.slice(5)}
-                          tick={{ fontSize: 10 }}
-                          interval={2}
-                          axisLine={false}
-                          tickLine={false}
-                        />
-                        <YAxis
-                          allowDecimals={false}
-                          tick={{ fontSize: 10 }}
-                          width={20}
-                          axisLine={false}
-                          tickLine={false}
-                        />
-                        <ChartTooltip
-                          contentStyle={{
-                            borderRadius: 8,
-                            border: '1px solid var(--border)',
-                            background: 'var(--popover)',
-                            fontSize: 12,
-                          }}
-                          labelFormatter={(v: string) => v.slice(5).replace('-', '/')}
-                        />
-                        <Bar dataKey="completed" name="完成小节" fill="var(--primary)" radius={[3, 3, 0, 0]} maxBarSize={12} />
-                        <Bar dataKey="quiz" name="答题" fill="#a78bfa" radius={[3, 3, 0, 0]} maxBarSize={12} />
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </div>
-                ) : (
-                  <p className="flex h-36 items-center justify-center text-center text-xs text-muted-foreground">
-                    完成小节或答题后，这里会展示你的学习热力
-                  </p>
-                )}
+              <div className="mt-2 divide-y">
+                <button
+                  className="group flex w-full items-center gap-3 py-3 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring hover:bg-accent/40"
+                  onClick={() => navigate({ name: 'revision' })}
+                >
+                  <Layers
+                    className="h-4 w-4 shrink-0 text-primary"
+                    aria-hidden="true"
+                  />
+                  <span className="min-w-0 flex-1 text-sm">
+                    复习卡片
+                    <span className="ml-2 text-xs text-muted-foreground">
+                      {stats?.dueCards
+                        ? `${stats.dueCards} 张今日到期`
+                        : '新卡待解锁'}
+                    </span>
+                  </span>
+                  <ArrowRight
+                    className="h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-transform group-hover:translate-x-0.5 group-hover:text-foreground"
+                    aria-hidden="true"
+                  />
+                </button>
+                <button
+                  className="group flex w-full items-center gap-3 py-3 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring hover:bg-accent/40"
+                  onClick={() => navigate({ name: 'wrongbook' })}
+                >
+                  <NotebookPen
+                    className="h-4 w-4 shrink-0 text-amber-700 dark:text-amber-400"
+                    aria-hidden="true"
+                  />
+                  <span className="min-w-0 flex-1 text-sm">
+                    错题本
+                    <span className="ml-2 text-xs text-muted-foreground">
+                      {stats?.wrongCount ? `${stats.wrongCount} 道待攻克` : '暂无错题'}
+                    </span>
+                  </span>
+                  <ArrowRight
+                    className="h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-transform group-hover:translate-x-0.5 group-hover:text-foreground"
+                    aria-hidden="true"
+                  />
+                </button>
               </div>
             </CardContent>
           </Card>
         </div>
       </div>
+
+      {/* 学习热力图：GitHub 风格活动日历 */}
+      <section className="mt-8" aria-label="学习热力图">
+        <Card className="min-w-0 shadow-none">
+          <CardContent className="px-6">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <div className="flex items-center gap-2.5">
+                  <span className="h-2.5 w-2.5 rounded-[2px] bg-primary/70" aria-hidden />
+                  <h2 className="font-serif text-lg font-bold">学习热力图</h2>
+                </div>
+                {heatmapSummary && heatmapSummary.streak > 0 && (
+                  <span className="text-xs tabular-nums text-muted-foreground">
+                    连续学习{' '}
+                    <span className="font-serif text-base font-bold text-primary">
+                      {heatmapSummary.streak}
+                    </span>{' '}
+                    天
+                  </span>
+                )}
+              </div>
+              <p className="bio-eyebrow text-muted-foreground">
+                Learning Activity · 近 18 周
+              </p>
+            </div>
+            <p className="mt-1.5 text-xs text-muted-foreground">
+              完成小节、答题、笔记与卡片复习四类学习行为按日汇总
+            </p>
+            <div className="bio-rule mt-3" aria-hidden />
+            <div className="mt-4">
+              <ActivityHeatmap days={heatmapDays} summary={heatmapSummary} />
+            </div>
+          </CardContent>
+        </Card>
+      </section>
 
       {/* 教材体系依据：编辑式条目 */}
       <section className="mt-8" aria-label="教材体系依据">
@@ -348,15 +417,54 @@ function StatTile({
   label,
   value,
   sub,
+  onClick,
 }: {
   label: string
   value: string
   sub: string
+  /** 可点击统计格（跳转对应视图） */
+  onClick?: () => void
 }) {
+  const interactive = typeof onClick === 'function'
+  // 零值调淡：避免满屏 0 带来"未初始化"的焦虑感
+  const isZero = /^0(%?)$/.test(value.trim())
   return (
-    <div className="bg-card p-4 sm:p-5">
-      <div className="text-xs text-muted-foreground">{label}</div>
-      <div className="mt-2 font-serif text-2xl font-bold tabular-nums leading-none sm:text-3xl">
+    <div
+      className={
+        interactive
+          ? 'group relative cursor-pointer bg-card p-4 outline-none transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring hover:bg-accent/40 sm:p-5'
+          : 'bg-card p-4 sm:p-5'
+      }
+      onClick={onClick}
+      role={interactive ? 'button' : undefined}
+      tabIndex={interactive ? 0 : undefined}
+      onKeyDown={
+        interactive
+          ? (e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                onClick?.()
+              }
+            }
+          : undefined
+      }
+      aria-label={interactive ? `${label}：${sub}，点击查看` : undefined}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <span className="text-xs text-muted-foreground">{label}</span>
+        {interactive && (
+          <ArrowRight
+            className="h-3 w-3 shrink-0 text-muted-foreground/40 transition-transform group-hover:translate-x-0.5 group-hover:text-foreground"
+            aria-hidden="true"
+          />
+        )}
+      </div>
+      <div
+        className={cn(
+          'mt-2 font-serif text-2xl font-bold tabular-nums leading-none sm:text-3xl',
+          isZero && 'text-muted-foreground/50'
+        )}
+      >
         {value}
       </div>
       <div className="mt-2.5 truncate text-[11px] text-muted-foreground/80">{sub}</div>

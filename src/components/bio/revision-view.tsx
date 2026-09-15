@@ -12,21 +12,30 @@ import {
   BookMarked,
   CheckCircle2,
   Eye,
+  FileText,
   Layers,
   RefreshCw,
   RotateCcw,
   Sparkles,
 } from 'lucide-react'
 
-/** 队列卡片（与 API 返回结构一致） */
+/** 队列卡片（与 API 返回结构一致；术语卡 / 要点卡统一） */
 interface DueCard {
   cardId: string
+  /** 卡片类型：term 术语卡 / keypoint 小节要点卡 */
+  type: 'term' | 'keypoint'
+  /** 术语卡：术语名；要点卡：小节标题 */
   term: string
   english: string
   abbreviation?: string
   subjectId: SubjectId
   category: string
   definition: string
+  /** 要点卡：章节路径 */
+  chapterTitle?: string
+  chapterId?: string
+  sectionId?: string
+  keyPoints?: string[]
   isNew: boolean
   reps: number
   intervalDays: number
@@ -48,6 +57,7 @@ interface GradeLog {
 
 export function RevisionView() {
   const navigate = useAppStore((s) => s.navigate)
+  const openReader = useAppStore((s) => s.openReader)
   const [queue, setQueue] = useState<DueCard[]>([])
   const [stats, setStats] = useState<Stats | null>(null)
   const [loading, setLoading] = useState(true)
@@ -174,14 +184,15 @@ export function RevisionView() {
           复习卡片
         </h1>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          基于 SM-2 间隔重复算法调度 100 条学科术语——看正面回忆释义，翻卡自评，
+          基于 SM-2 间隔重复算法调度 303 张学科卡片——100 条核心术语与 203
+          个小节要点。看正面回忆，翻卡自评，
           算法将按遗忘曲线安排每张卡的下次复习时间。
         </p>
         <div className="bio-rule mt-5" aria-hidden="true" />
         {stats && (
           <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-muted-foreground">
             <span className="tabular-nums">
-              词库 <span className="font-semibold text-foreground">{stats.totalCards}</span> 条
+              卡库 <span className="font-semibold text-foreground">{stats.totalCards}</span> 张
             </span>
             <span className="opacity-30">·</span>
             <span className="tabular-nums">
@@ -236,6 +247,16 @@ export function RevisionView() {
                     第 {current.reps + 1} 轮
                   </span>
                 )}
+                <span
+                  className={cn(
+                    'shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-medium',
+                    current.type === 'keypoint'
+                      ? 'border-violet-500/40 bg-violet-500/10 text-violet-700 dark:text-violet-400'
+                      : 'border-border bg-muted/60 text-muted-foreground'
+                  )}
+                >
+                  {current.type === 'keypoint' ? '要点卡' : '术语卡'}
+                </span>
               </div>
 
               {/* 卡片 */}
@@ -251,35 +272,71 @@ export function RevisionView() {
                   aria-hidden="true"
                 />
                 <div className="px-6 py-10 sm:px-10 sm:py-14">
-                  {/* 正面：术语 */}
+                  {/* 正面：术语卡 / 要点卡分别渲染 */}
                   <div className="text-center">
-                    <p className="bio-eyebrow text-muted-foreground">
-                      {subjectName(current.subjectId)} · {current.category}
-                    </p>
-                    <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight sm:text-4xl">
-                      {current.term}
-                    </h2>
-                    {current.abbreviation && (
-                      <p className="mt-2 font-mono text-sm text-muted-foreground">
-                        {current.abbreviation}
-                      </p>
+                    {current.type === 'keypoint' ? (
+                      <>
+                        <p className="bio-eyebrow text-muted-foreground">
+                          {subjectName(current.subjectId)} · {current.chapterTitle}
+                        </p>
+                        <h2 className="mt-3 font-serif text-2xl font-bold leading-snug tracking-tight sm:text-3xl">
+                          {current.term}
+                        </h2>
+                        {!revealed && (
+                          <p className="mt-8 text-xs text-muted-foreground">
+                            回忆本节的 {current.keyPoints?.length ?? '3-6'}{' '}条要点，然后翻开核对
+                          </p>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        <p className="bio-eyebrow text-muted-foreground">
+                          {subjectName(current.subjectId)} · {current.category}
+                        </p>
+                        <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight sm:text-4xl">
+                          {current.term}
+                        </h2>
+                        {current.abbreviation && (
+                          <p className="mt-2 font-mono text-sm text-muted-foreground">
+                            {current.abbreviation}
+                          </p>
+                        )}
+                        {!revealed && (
+                          <p className="mt-8 text-xs text-muted-foreground">
+                            回忆这个词的定义，然后翻开核对
+                          </p>
+                        )}
+                      </>
                     )}
 
-                    {/* 背面：定义 */}
-                    {revealed ? (
-                      <div className="bio-fade-up mx-auto mt-7 max-w-lg border-t pt-6">
-                        <p className="font-serif text-sm italic text-muted-foreground">
-                          {current.english}
-                        </p>
-                        <p className="mt-3 text-left text-[0.95rem] leading-relaxed text-foreground">
-                          {current.definition}
-                        </p>
-                      </div>
-                    ) : (
-                      <p className="mt-8 text-xs text-muted-foreground">
-                        回忆这个词的定义，然后翻开核对
-                      </p>
-                    )}
+                    {/* 背面 */}
+                    {revealed &&
+                      (current.type === 'keypoint' ? (
+                        <div className="bio-fade-up mx-auto mt-7 max-w-lg border-t pt-6 text-left">
+                          <p className="text-center font-serif text-sm italic text-muted-foreground">
+                            {current.chapterTitle}
+                          </p>
+                          <ol className="mt-4 space-y-2.5">
+                            {(current.keyPoints ?? []).map((p, i) => (
+                              <li key={i} className="flex gap-3 text-[0.95rem] leading-relaxed">
+                                <span className="shrink-0 font-serif text-sm font-bold tabular-nums text-primary">
+                                  {String(i + 1).padStart(2, '0')}
+                                </span>
+                                <span className="flex-1">{p}</span>
+                              </li>
+                            ))}
+                          </ol>
+                        </div>
+                      ) : (
+                        <div className="bio-fade-up mx-auto mt-7 max-w-lg border-t pt-6">
+                          <p className="font-serif text-sm italic text-muted-foreground">
+                            {current.english}
+                          </p>
+                          <p className="mt-3 text-left text-[0.95rem] leading-relaxed text-foreground">
+                            {current.definition}
+                          </p>
+                        </div>
+                      ))}
                   </div>
                 </div>
               </article>
@@ -321,15 +378,31 @@ export function RevisionView() {
 
               {/* 辅助操作 */}
               <div className="mt-6 flex items-center justify-center gap-4 text-xs">
-                <button
-                  className="inline-flex items-center gap-1.5 rounded text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
-                  onClick={() =>
-                    navigate({ name: 'glossary' })
-                  }
-                >
-                  <BookMarked className="h-3.5 w-3.5" aria-hidden="true" />
-                  在词典中查看全部术语
-                </button>
+                {current.type === 'keypoint' && current.sectionId && current.chapterId ? (
+                  <button
+                    className="inline-flex items-center gap-1.5 rounded text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                    onClick={() =>
+                      openReader(
+                        current.subjectId,
+                        current.chapterId!,
+                        current.sectionId!
+                      )
+                    }
+                  >
+                    <FileText className="h-3.5 w-3.5" aria-hidden="true" />
+                    回看本节原文
+                  </button>
+                ) : (
+                  <button
+                    className="inline-flex items-center gap-1.5 rounded text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                    onClick={() =>
+                      navigate({ name: 'glossary' })
+                    }
+                  >
+                    <BookMarked className="h-3.5 w-3.5" aria-hidden="true" />
+                    在词典中查看全部术语
+                  </button>
+                )}
               </div>
             </div>
           )
@@ -394,7 +467,7 @@ function EmptyState({
       </p>
       {stats && (
         <p className="mt-3 text-xs tabular-nums text-muted-foreground">
-          已学 {stats.seen} / {stats.totalCards} 条 · 已掌握 {stats.mastered} 条
+          已学 {stats.seen} / {stats.totalCards} 张 · 已掌握 {stats.mastered} 张
         </p>
       )}
       <div className="mt-6 flex items-center justify-center gap-3">
