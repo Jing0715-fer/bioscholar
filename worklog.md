@@ -236,3 +236,38 @@ Stage Summary:
 - 四文件学术编辑风改造完成并经重派审计确认：AI 助教渐变横幅/彩色图标底座、测验彩色 Tabs/星级难度/彩色徽章、词典全色胶囊、笔记彩色空态全部清除，与 Task 10-e1 的 dashboard/学科中心/外壳设计语言对齐（eyebrow + font-serif + bio-rule + 学科色细节 + 行化元信息 + tabular-nums）
 - 全部业务逻辑（SSE 流式、会话持久化、判分提交、CRUD、搜索过滤、跳转导航）保持原样；严格 TS 无 any；响应式与无障碍属性完整
 - 质量门：tsc（src/）0 错误、eslint 0 错误 0 警告
+
+---
+Task ID: 11 & 12
+Agent: 主控 (Z.ai Code)
+Task: 插图体系完成 + 表格修复 + 复习卡片新功能 + 全量推送 GitHub
+
+Work Log:
+- 【插图体系】第二批 16 张教学关键插图生成并挂载（scripts/gen-images-extra.sh）：
+  * 生物化学 6 张：葡萄糖异头物(ch1-s1)、氨基酸通式(ch3-s1)、血红蛋白四级结构(ch4-s4)、米氏动力学曲线(ch5-s3)、糖原分支结构(ch9-s5)、尿素循环(ch11-s2)
+  * 分子生物学 4 张：中心法则(ch1-s4)、Holliday 交叉(ch3-s3)、剪接体剪接(ch5-s2)、染色质多级包装(ch8-s1)
+  * 细胞生物学 4 张：钠钾泵(ch2-s4)、染色质包装(ch7-s3，复用 mb 图)、GPCR 信号通路(ch8-s2)、减数分裂(ch10-s5)
+  * 生物物理学 3 张：膜脂相变(ch3-s1)、光镊(ch6-s1)、动作电位(ch7-s2)
+  * 全部统一"墨线+淡彩教科书插画"风格；图注为学术严谨中文描述（含数值与机制细节）；共 44 张图、40 个配图小节
+- 【关键 Bug 修复】
+  * markdown.tsx：react-markdown 默认 urlTransform 会清空 biofigure:// 自定义协议 → 自定义 urlTransform 放行标记；defaultUrlTransform 仅接收 1 参数（修正签名）
+  * markdown.tsx：react-markdown 将独立图片包在 <p> 内导致 <figure>/<figcaption> 嵌套 <p> 的 hydration 错误 → 安装 rehype-unwrap-images 插件解除包裹（console 错误清零）
+- 【新功能：复习卡片（间隔重复）】
+  * prisma 新增 FlashcardReview 模型（ease/intervalDays/reps/lapses/dueAt，dueAt 索引）已 db:push
+  * src/lib/srs.ts：SM-2 简化算法（四档评分 0忘记/1困难/2良好/3简单；遗忘重置+10分钟再现；掌握阈值 21 天）
+  * /api/flashcards：GET 返回到期卡+新卡补足队列（每日新卡≤15、会话≤25）与统计；POST 提交评分并 upsert 调度
+  * revision-view.tsx：翻卡流程（正面术语→显示答案→四档自评）、进度条、新卡/轮次标记、下轮复习提示、完成页统计（张数/记忆质量/需巩固）、空态与重试，学术编辑风（学科色顶线+衬线术语大字+eyebrow）
+  * 导航集成：page.tsx 新增"复习卡片"项（Layers 图标），store NavKey/AppView 增加 revision
+- 【侧栏微调】教材体系依据卡行距 1.9、分段（VLM 评审反馈的拥挤问题）
+- 【QA】agent-browser 实测：仪表盘 hero/学科封面缩略图、学科详情、阅读器插图（图 2-3-1、图 1-4-1、动作电位图 7-2-1）、booktabs 三线表（8 行数据+表头）、GFM 表格渲染、四视图新样式、控制台零错误；VLM 设计评审结论：插图风格高度统一、科学准确性优秀、排版专业
+- 【推送】GitHub 仓库 Jing0715-fer/bioscholar 已创建并全量推送
+
+Stage Summary:
+- 应用完成度：44 张统一风格教材插图覆盖 40 个关键小节 + 106 个小节的学术三线表全部正确渲染 + 复习卡片间隔重复系统全流程可用
+- 质量门：bunx tsc src/ 0 错误、bun run lint 0 错误 0 警告、浏览器 console 零错误零警告
+- 已推送：https://github.com/Jing0715-fer/bioscholar
+
+未解决问题与下一步建议：
+- 插图风格为 AI 生成示意（图注已声明"AI 绘制示意图"），后续可逐张人工审校替换为矢量图
+- 复习卡片目前仅基于术语词典 100 条，可扩展为"小节要点卡"（keyPoints 抽卡）
+- 可考虑学习热力图、导出学习报告 PDF、错题本等增强功能

@@ -21,6 +21,22 @@ const AI_CREDIT = 'AI 绘制示意图'
 
 export const illustrations: Record<string, Illustration[]> = {
   // ==================== 生物化学 ====================
+  'biochemistry-ch1-s1': [
+    {
+      src: '/images/bio/biochemistry/glucose-anomer.png',
+      caption:
+        'D-葡萄糖的环状结构与异头物：并环平面两侧的取向不同，形成 α-与 β-两种异头物（端基差向异构体）；两者在溶液中经开链式互变，即变旋现象。图中 Haworth 投影式旁给出更接近真实构象的椅式，可见 C1 位取代基的直立（axial）与平伏（equatorial）取向差异——β-D-吡喃葡萄糖因所有大基团均处于平伏位，是自然界最丰富的葡萄糖形式。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biochemistry-ch3-s1': [
+    {
+      src: '/images/bio/biochemistry/amino-acids.png',
+      caption:
+        '氨基酸的通用结构：α-碳原子分别连接氨基、羧基、氢原子与侧链 R 基。除甘氨酸（R = H）外其余 19 种均为 L-构型；侧链的化学性质决定分类：非极性（疏水）、不带电荷极性、酸性（含羧基，如 Asp/Glu）与碱性（含碱性基，如 Lys/Arg/His）——侧链的物理化学性质是决定蛋白质折叠、活性中心催化与功能的化学基础。',
+      credit: AI_CREDIT,
+    },
+  ],
   'biochemistry-ch2-s3': [
     {
       src: '/images/bio/biochemistry/lipid-bilayer.png',
@@ -37,6 +53,14 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: AI_CREDIT,
     },
   ],
+  'biochemistry-ch4-s4': [
+    {
+      src: '/images/bio/biochemistry/hemoglobin.png',
+      caption:
+        '血红蛋白（Hb）与肌红蛋白（Mb）的结构对比：Hb 为 α₂β₂ 四聚体（约 64 kDa），每个亚基的三级结构与单链的 Mb 高度相似，各含一个血红素辅基；Fe²⁺ 位于卟啉环平面中心，与 O₂ 可逆结合。Hb 四聚体呈四面体排列，亚基间盐键等非共价作用使其呈紧张（T）态——这是协同性氧结合（Hill 系数 ≈ 2.8）与别构调节的结构基础。',
+      credit: AI_CREDIT,
+    },
+  ],
   'biochemistry-ch5-s2': [
     {
       src: '/images/bio/biochemistry/enzyme-substrate.png',
@@ -50,6 +74,14 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/molecular-biology/dna-helix.png',
       caption:
         'B 型 DNA 双螺旋结构模型：两条反向平行（antiparallel）的多核苷酸链围绕同一假想轴右手缠绕，脱氧核糖—磷酸骨架位于外侧，碱基对 A=T（2 个氢键）与 G≡C（3 个氢键）堆叠于内侧，螺距约 3.4 nm，每圈 10 bp，交替出现大沟与小沟。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biochemistry-ch5-s3': [
+    {
+      src: '/images/bio/biochemistry/michaelis-menten.png',
+      caption:
+        '米氏方程曲线：酶促反应初速度 v 随底物浓度 [S] 呈双曲线升高，逐渐逼近最大速度 Vmax；当 v = Vmax/2 时的底物浓度即米氏常数 Km。Km 反映酶与底物的亲和力（Km 越小亲和越强，近似等于 k₋₁+k₂/k₁），Vmax = k₂[E]t 定义转换数。该曲线体现“低 [S] 近似一级、高 [S] 达零级”的经典动力学行为。',
       credit: AI_CREDIT,
     },
   ],
@@ -77,8 +109,32 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: AI_CREDIT,
     },
   ],
+  'biochemistry-ch9-s5': [
+    {
+      src: '/images/bio/biochemistry/glycogen.png',
+      caption:
+        '糖原的多级分支结构：以位于核心的糖原蛋白（glycogenin）为引物，葡萄糖单位以 α(1→4) 糖苷键延伸，每隔 8–12 个残基由分支酶催化形成 α(1→6) 分支。分支带来两大优势：极大增加非还原端数量，使磷酸化酶与合成酶可同时在多个末端快速动员/合成；提高水溶性。一个外层分支链约含 13 个残基。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biochemistry-ch11-s2': [
+    {
+      src: '/images/bio/biochemistry/urea-cycle.png',
+      caption:
+        '尿素循环（鸟氨酸循环）：在线粒体基质中，NH₃（以氨基甲酰磷酸形式）与鸟氨酸缩合生成瓜氨酸，后者转运至胞质，与天冬氨酸结合为精氨酸代琥珀酸，裂解生成精氨酸并释放延胡索酸；精氨酸酶水解精氨酸重新生成鸟氨酸并释放尿素。每轮循环消耗 3 ATP（4 个高能磷酸键），将 2 个氮（氨基甲酰磷酸与天冬氨酸）转化为无毒的尿素排出。',
+      credit: AI_CREDIT,
+    },
+  ],
 
   // ==================== 分子生物学 ====================
+  'molecular-biology-ch1-s4': [
+    {
+      src: '/images/bio/molecular-biology/central-dogma.png',
+      caption:
+        '中心法则（Crick, 1958）及其发展：DNA 经复制（replication）自我拷贝；遗传信息经转录（transcription）从 DNA 流向 RNA，再经翻译（translation）从 RNA 流向蛋白质。三条信息流的通用性与例外：RNA 复制（RNA 病毒）、逆转录（逆转录病毒，Temin/Baltimore 发现）与 RNA 复制等补充路径的发现丰富了这一框架，但“信息一旦进入蛋白质便不可逆出”的核心论断至今未被推翻。',
+      credit: AI_CREDIT,
+    },
+  ],
   'molecular-biology-ch2-s4': [
     {
       src: '/images/bio/molecular-biology/replication-fork.png',
@@ -103,6 +159,30 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: AI_CREDIT,
     },
   ],
+  'molecular-biology-ch3-s3': [
+    {
+      src: '/images/bio/molecular-biology/holliday.png',
+      caption:
+        '同源重组的 Holliday 模型：两条同源 DNA 双链交叉连接形成 Holliday 交叉，交换的异源双链（heteroduplex）两侧为亲本链；交叉点沿 DNA 移动（分支迁移）扩大交换区；随后由内切酶在两种不同平面切开（解离），分别产生非交换型（贴片段）与交换型（重组）产物。RecA 蛋白（原核）催化链侵入与三分叉中间体形成。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'molecular-biology-ch5-s2': [
+    {
+      src: '/images/bio/molecular-biology/rna-splicing.png',
+      caption:
+        '剪接体（spliceosome）介导的 pre-mRNA 剪接：U1 识别 5′ 剪接位点，U2 结合分支点并使该腺苷外凸；随后 U4/U6·U5 三聚体加入组装成催化活性中心，发生两步转酯反应——先是分支点 A 的 2′-OH 攻击 5′ 剪接位点形成套索（lariat）中间体，再由 5′ 外显子的 3′-OH 攻击 3′ 剪接位点，两个外显子连接而内含子以套索形式被切除降解。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'molecular-biology-ch8-s1': [
+    {
+      src: '/images/bio/molecular-biology/chromatin.png',
+      caption:
+        '染色质的多级包装层级：裸露 DNA 双链（直径 2 nm）→ 核小体“串珠链”（10 nm，146 bp 绕组蛋白八聚体约 1.65 圈）→ 30 nm 螺线管纤维 → 环化襻结结构（间期染色质）→ 经浓缩最终形成中期 X 形染色体（直径约 1400 nm）。压缩比高达约 10⁴ 倍；乙酰化等组蛋白修饰可降低浓缩程度、暴露启动子，是染色质水平调控的基础。',
+      credit: AI_CREDIT,
+    },
+  ],
   'molecular-biology-ch7-s1': [
     {
       src: '/images/bio/molecular-biology/operon.png',
@@ -121,11 +201,43 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
 
   // ==================== 细胞生物学 ====================
+  'cell-biology-ch2-s4': [
+    {
+      src: '/images/bio/cell-biology/sodium-potassium-pump.png',
+      caption:
+        'Na⁺/K⁺-ATP 酶（钠钾泵）的循环工作模型：胞内侧 3 个 Na⁺ 结合位点被占据后，ATP 磷酸化泵蛋白→构象向外开放、释放 Na⁺ 至胞外；随后胞外侧 2 个 K⁺ 结合→去磷酸化→构象向内复位、释放 K⁺ 入胞。每循环消耗 1 ATP，泵出 3 Na⁺、泵入 2 K⁺，维持胞内高 K⁺/低 Na⁺ 的离子梯度——既是静息电位的基础，也为葡萄糖等物质的继发性主动转运储备能量。',
+      credit: AI_CREDIT,
+    },
+  ],
   'cell-biology-ch1-s2': [
     {
       src: '/images/bio/cell-biology/cell-anatomy.png',
       caption:
         '典型的动物细胞（真核细胞）结构总览：以双层核被膜包裹、含核仁的细胞核为中心；细胞质中分布线粒体（产能）、粗面与滑面内质网、高尔基体（加工分选）、溶酶体（消化）等膜性细胞器，以及核糖体、中心体与细胞骨架等非膜性结构。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'cell-biology-ch7-s3': [
+    {
+      src: '/images/bio/molecular-biology/chromatin.png',
+      caption:
+        '染色体的多级包装模型：DNA 双螺旋（2 nm）经组蛋白八聚体包装为核小体串珠（10 nm 纤维）→螺线管（30 nm 纤维）→襻环结构域→浓缩形成中期染色体。全部基因组被压缩约 10⁴ 倍而仍保持可转录/可复制；包装层级间的转换由组蛋白修饰、凝聚素（condensin）等调控。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'cell-biology-ch8-s2': [
+    {
+      src: '/images/bio/cell-biology/gpcr-signaling.png',
+      caption:
+        'GPCR-cAMP-PKA 信号通路：配体结合七次跨膜受体胞外结构域→胞内侧的异三聚体 G 蛋白中 Gα 亚基交换 GDP 为 GTP 而活化，与 Gβγ 解离→活化的 Gα 激活腺苷酸环化酶（AC）→ ATP 环化为第二信使 cAMP→ cAMP 结合 PKA 调节亚基释放催化亚基→磷酸化下游靶蛋白（如 CREB）。Gα 固有的 GTP 酶活性（可被 RGS 加速）使信号及时关闭。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'cell-biology-ch10-s5': [
+    {
+      src: '/images/bio/cell-biology/meiosis.png',
+      caption:
+        '减数分裂的核心事件：减数第一次分裂（MI）中同源染色体配对联会（同源重组交换，可见交叉/chiasmata），随后同源染色体（而非姐妹染色单体）分离，遗传重组与自由组合造就配子多样性；减数第二次分裂（MII）类似有丝分裂，姐妹染色单体分离。最终一个二倍体细胞产生 4 个遗传上各异的单倍体配子。',
       credit: AI_CREDIT,
     },
   ],
@@ -171,11 +283,35 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
 
   // ==================== 生物物理学 ====================
+  'biophysics-ch3-s1': [
+    {
+      src: '/images/bio/biophysics/membrane-phases.png',
+      caption:
+        '膜脂的相变：凝胶相（gel / Lβ）中磷脂尾部充分伸展、排列有序，膜刚性强；温度升至相变温度 Tm 以上转入液晶相（liquid-crystalline / Lα），尾部活动加剧、膜流动性增大。胆固醇插入两层尾部之间，在 Tm 以上限制流动、在 Tm 以下阻止紧密排列，起“流动缓冲”作用。不饱和双键（弯折）降低 Tm。',
+      credit: AI_CREDIT,
+    },
+  ],
   'biophysics-ch2-s2': [
     {
       src: '/images/bio/biophysics/folding-funnel.png',
       caption:
         '蛋白质折叠的能量景观（折叠漏斗）：漏斗口代表构象熵极大的变性态系综，随自由能下降可用构象数递减；粗糙表面上遍布局部极小值（动力学陷阱，对应熔球态等中间体），需要越过过渡态能垒；漏斗底部唯一的深井即天然态——全局自由能极小点。漏斗的拓扑决定了不同蛋白折叠速率可相差数个数量级。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biophysics-ch6-s1': [
+    {
+      src: '/images/bio/biophysics/optical-tweezers.png',
+      caption:
+        '光镊（optical tweezers）：强会聚激光在焦点处形成三维梯度光势阱，将折射率高于介质的介电微珠稳定俘获于焦点附近——梯度力（拉向焦点）与散射力平衡。微珠偶联单个生物分子（如肌球蛋白/驱动蛋白/RNA 聚合酶）后，分子产生的 pN 级力使微珠偏离焦点，偏移量与力成正比，实现单分子力的实时测量（位移分辨率 nm、力分辨率 pN）。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biophysics-ch7-s2': [
+    {
+      src: '/images/bio/biophysics/action-potential.png',
+      caption:
+        '动作电位的波形与相位：静息电位（约 −70 mV）→去极化达到阈电位（约 −55 mV）触发再生性 Na⁺ 内流，迅速去极化至峰值（约 +30 mV，超射）→Na⁺ 通道失活、K⁺ 外流主导复极化→K⁺ 通道延迟关闭造成超极化后电位（undershoot）→恢复静息。全或无、再生性、不应期与幅度不变沿轴突传播，是 Hodgkin–Huxley 模型描述的对象。',
       credit: AI_CREDIT,
     },
   ],

@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react'
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import rehypeUnwrapImages from 'rehype-unwrap-images'
 import { Maximize2 } from 'lucide-react'
 import {
   Dialog,
@@ -24,10 +25,9 @@ export interface FigureItem {
 const FIGURE_MARKER = /^biofigure:\/\/(\d+)$/
 
 /** 保留 biofigure:// 自定义插图标记，其余 URL 走 react-markdown 默认安全转换 */
-function urlTransform(url: string, key: string) {
-  return url.startsWith('biofigure://') ? url : defaultUrlTransform(url, key)
+function urlTransform(url: string) {
+  return url.startsWith('biofigure://') ? url : defaultUrlTransform(url)
 }
-void urlTransform
 
 /**
  * 在正文 H2 标题边界处均匀穿插插图标记（![](biofigure://i)），
@@ -137,6 +137,7 @@ export function Markdown({
     <div className={cn('bio-md', className)}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeUnwrapImages]}
         urlTransform={urlTransform}
         components={{
           a: ({ children, href }) => (
