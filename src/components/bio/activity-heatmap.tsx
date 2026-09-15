@@ -11,6 +11,8 @@ export interface ActivityDay {
   notes: number
   reviews: number
   total: number
+  /** 当日答对题数（/api/report 聚合，热力图渲染不使用） */
+  correct?: number
 }
 
 export interface ActivitySummary {

@@ -20,6 +20,15 @@ import { ExternalLink, FlaskConical, LayoutGrid, Layers, Maximize2, Search, Sear
 
 type SubjectFilter = 'all' | SubjectId
 
+/** A–Z 字母表（首字母索引条） */
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+
+/** 取英文术语首字母（大写；非拉丁开头返回 null） */
+function firstLetter(english: string): string | null {
+  const c = english.trim().charAt(0).toUpperCase()
+  return /^[A-Z]$/.test(c) ? c : null
+}
+
 /** 学科左边框色（卡片左侧 4px 色条） */
 const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   biochemistry: 'border-l-amber-500',
@@ -40,6 +49,43 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
 // ============================================================
 // 子组件
 // ============================================================
+
+/** A-Z 首字母索引格 */
+function LetterCell({
+  letter,
+  count,
+  active,
+  disabled,
+  onClick,
+}: {
+  letter: string
+  count: number
+  active: boolean
+  /** 当前范围内无词条（置灰不可点） */
+  disabled: boolean
+  onClick: () => void
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      aria-pressed={active}
+      aria-label={`${letter} 开头的术语（${count} 条）`}
+      className={cn(
+        'inline-flex h-7 min-w-7 items-center justify-center gap-0.5 rounded-md border px-1 font-mono text-xs font-semibold tabular-nums transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring',
+        active
+          ? 'border-primary/60 bg-primary/10 text-primary'
+          : disabled
+            ? 'cursor-default border-transparent text-muted-foreground/30'
+            : 'border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground'
+      )}
+    >
+      {letter}
+      {count > 0 && <span className="text-[9px] font-normal opacity-60">{count}</span>}
+    </button>
+  )
+}
 
 function FilterTab({
   active,
@@ -124,7 +170,7 @@ function TermCard({ term }: { term: GlossaryTerm }) {
         <div className="flex gap-3">
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-              <h3 className="text-sm font-semibold leading-tight sm:text-base">{term.term}</h3>
+              <h3 className="text-sm font-semibold leading-tight transition-colors group-hover:text-primary sm:text-base">{term.term}</h3>
               {term.abbreviation && (
                 <Badge variant="outline" className="px-1.5 font-mono text-[10px] font-bold">
                   {term.abbreviation}
@@ -235,6 +281,8 @@ export function GlossaryView() {
   const [grouped, setGrouped] = useState(false)
   /** 分类筛选（与学科筛选叠加，'all' 为不筛） */
   const [category, setCategory] = useState<string>('all')
+  /** 英文首字母筛选（A–Z，null 为不筛） */
+  const [letter, setLetter] = useState<string | null>(null)
 
   /** 各学科词条数 */
   const subjectCounts = useMemo(() => {
@@ -264,12 +312,25 @@ export function GlossaryView() {
     return map
   }, [filter])
 
-  /** 搜索 + 学科 + 分类过滤 */
+  /** 当前学科 + 分类范围内各英文字母的词条数（首字母索引条计数） */
+  const letterCountsInScope = useMemo(() => {
+    const map = new Map<string, number>()
+    for (const t of glossary) {
+      if (filter !== 'all' && t.subjectId !== filter) continue
+      if (category !== 'all' && t.category !== category) continue
+      const c = firstLetter(t.english)
+      if (c) map.set(c, (map.get(c) ?? 0) + 1)
+    }
+    return map
+  }, [filter, category])
+
+  /** 搜索 + 学科 + 分类 + 首字母过滤 */
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
     return glossary.filter((t) => {
       if (filter !== 'all' && t.subjectId !== filter) return false
       if (category !== 'all' && t.category !== category) return false
+      if (letter && firstLetter(t.english) !== letter) return false
       if (!q) return true
       return (
         t.term.toLowerCase().includes(q) ||
@@ -277,7 +338,7 @@ export function GlossaryView() {
         (t.abbreviation?.toLowerCase().includes(q) ?? false)
       )
     })
-  }, [query, filter, category])
+  }, [query, filter, category, letter])
 
   /** 按类别分组（仅在开启分组时计算） */
   const groups = useMemo(() => {
@@ -424,9 +485,47 @@ export function GlossaryView() {
         )}
       </div>
 
+      {/* 首字母索引条（A–Z，随学科/分类联动计数） */}
+      <div
+        className="bio-scroll mt-3 flex flex-wrap items-center gap-1"
+        role="group"
+        aria-label="按英文首字母筛选术语"
+      >
+        <span className="mr-1 inline-flex items-center gap-1 text-[11px] font-medium text-muted-foreground">
+          <span className="font-mono font-semibold text-primary" aria-hidden>
+            A–Z
+          </span>
+          首字母
+        </span>
+        {LETTERS.map((c) => {
+          const n = letterCountsInScope.get(c) ?? 0
+          return (
+            <LetterCell
+              key={c}
+              letter={c}
+              count={n}
+              active={letter === c}
+              disabled={n === 0 && letter !== c}
+              onClick={() => setLetter(letter === c ? null : c)}
+            />
+          )
+        })}
+        {letter && (
+          <button
+            type="button"
+            onClick={() => setLetter(null)}
+            className="ml-1 inline-flex h-6.5 items-center gap-1 rounded-full border border-dashed px-2 text-[11px] text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            aria-label="清除首字母筛选"
+          >
+            <X className="h-3 w-3" aria-hidden />
+            清除
+          </button>
+        )}
+      </div>
+
       {/* 结果计数 */}
       <p className="mt-4 text-xs tabular-nums text-muted-foreground" aria-live="polite">
-        {hasQuery || filter !== 'all' || category !== 'all'
+        {hasQuery || filter !== 'all' || category !== 'all' || letter !== null
           ? `匹配 ${filtered.length} / ${glossary.length} 条术语`
           : `共 ${filtered.length} 条术语`}
       </p>
@@ -450,6 +549,7 @@ export function GlossaryView() {
               setQuery('')
               setFilter('all')
               setCategory('all')
+              setLetter(null)
             }}
           >
             清除搜索与筛选

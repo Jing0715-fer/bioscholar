@@ -16,11 +16,14 @@ import { format, formatDistanceToNow } from 'date-fns'
 import { zhCN } from 'date-fns/locale'
 import type { SubjectId } from '@/lib/types'
 import {
+  Activity as ActivityIcon,
   AlertCircle,
   ArrowRight,
   FileChartColumn,
   Printer,
   RefreshCw,
+  TrendingDown,
+  TrendingUp,
 } from 'lucide-react'
 
 /* ---------- API 响应类型（与 /api/report 一致） ---------- */
@@ -62,6 +65,7 @@ interface ReportResponse {
     maxStreak: number
     activeDays: number
   }
+  weeklyCompare?: WeeklyCompare
   recent: {
     sections: Array<{
       sectionId: string
@@ -74,6 +78,22 @@ interface ReportResponse {
     notes: Array<{ id: string; title: string; updatedAt: string }>
     reviews: Array<{ cardId: string; label: string; lastReviewedAt: string }>
   }
+}
+
+/** 周对比快照（本周 vs 上周） */
+interface WeeklyCompare {
+  thisWeek: WeekBucket
+  lastWeek: WeekBucket
+}
+
+interface WeekBucket {
+  completed: number
+  quiz: number
+  correct: number
+  notes: number
+  reviews: number
+  accuracy: number
+  total: number
 }
 
 /* ---------- 工具 ---------- */
@@ -118,11 +138,44 @@ function normalizeReport(p: ReportResponse): ReportResponse {
       maxStreak: num(p.activity.maxStreak),
       activeDays: num(p.activity.activeDays),
     },
+    weeklyCompare: normalizeWeekly(p.weeklyCompare),
     recent: {
       sections: p.recent.sections,
       notes: p.recent.notes,
       reviews: p.recent.reviews,
     },
+  }
+}
+
+const EMPTY_WEEK: WeekBucket = {
+  completed: 0,
+  quiz: 0,
+  correct: 0,
+  notes: 0,
+  reviews: 0,
+  accuracy: 0,
+  total: 0,
+}
+
+/** weeklyCompare 字段兜底（老响应缺失时全零） */
+function normalizeWeekly(w: unknown): WeeklyCompare {
+  const bucket = (b: unknown): WeekBucket => {
+    if (!b || typeof b !== 'object') return { ...EMPTY_WEEK }
+    const o = b as Record<string, unknown>
+    return {
+      completed: num(o.completed),
+      quiz: num(o.quiz),
+      correct: num(o.correct),
+      notes: num(o.notes),
+      reviews: num(o.reviews),
+      accuracy: num(o.accuracy),
+      total: num(o.total),
+    }
+  }
+  const obj = (w && typeof w === 'object' ? w : {}) as Record<string, unknown>
+  return {
+    thisWeek: bucket(obj.thisWeek),
+    lastWeek: bucket(obj.lastWeek),
   }
 }
 
@@ -368,6 +421,51 @@ export function ReportView() {
                 />
               </div>
             </section>
+
+            {/* 本周快照：周环比 */}
+            {data.weeklyCompare && (
+              <section className="mt-10" aria-label="本周快照">
+                <SectionHead
+                  eyebrow="Weekly Snapshot"
+                  title="本周快照"
+                  meta={`周环比 · 本周 ${data.weeklyCompare.thisWeek.total} 项 / 上周 ${data.weeklyCompare.lastWeek.total} 项`}
+                />
+                <div className="bio-rule mt-2.5" aria-hidden />
+                <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                  以最近 7 个自然日为「本周」、之前 7 日为「上周」，
+                  对比五项核心学习产出：箭头指示环比变化，正确率按百分点（pp）计。
+                </p>
+                <div className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border sm:grid-cols-3 lg:grid-cols-5">
+                  <WeekTile
+                    label="完成小节"
+                    thisVal={data.weeklyCompare.thisWeek.completed}
+                    lastVal={data.weeklyCompare.lastWeek.completed}
+                  />
+                  <WeekTile
+                    label="答题次数"
+                    thisVal={data.weeklyCompare.thisWeek.quiz}
+                    lastVal={data.weeklyCompare.lastWeek.quiz}
+                  />
+                  <WeekTile
+                    label="答题正确率"
+                    thisVal={data.weeklyCompare.thisWeek.accuracy}
+                    lastVal={data.weeklyCompare.lastWeek.accuracy}
+                    unit="%"
+                    deltaUnit="pp"
+                  />
+                  <WeekTile
+                    label="学习笔记"
+                    thisVal={data.weeklyCompare.thisWeek.notes}
+                    lastVal={data.weeklyCompare.lastWeek.notes}
+                  />
+                  <WeekTile
+                    label="复习次数"
+                    thisVal={data.weeklyCompare.thisWeek.reviews}
+                    lastVal={data.weeklyCompare.lastWeek.reviews}
+                  />
+                </div>
+              </section>
+            )}
 
             {/* 能力画像 */}
             <section className="mt-10" aria-label="能力画像">
@@ -619,7 +717,7 @@ function StatTile({
 }) {
   const isZero = isZeroValue(value)
   return (
-    <div className="min-w-0 bg-card p-4 sm:p-5">
+    <div className="min-w-0 bg-card p-4 transition-colors hover:bg-muted/30 sm:p-5">
       <span className="text-xs text-muted-foreground">{label}</span>
       <div
         className={cn(
@@ -631,6 +729,75 @@ function StatTile({
       </div>
       <div className="mt-2.5 truncate text-[11px] text-muted-foreground/80">
         {sub}
+      </div>
+    </div>
+  )
+}
+
+/** 周对比格：本周值 + 环比徽章 + 上周参考值 */
+function WeekTile({
+  label,
+  thisVal,
+  lastVal,
+  unit,
+  deltaUnit,
+}: {
+  label: string
+  thisVal: number
+  lastVal: number
+  /** 数值后缀（如 %） */
+  unit?: string
+  /** 环比增量单位（默认空，正确率用 pp） */
+  deltaUnit?: string
+}) {
+  const delta = thisVal - lastVal
+  const up = delta > 0
+  const flat = delta === 0
+  return (
+    <div className="min-w-0 bg-card p-4 transition-colors hover:bg-muted/30 sm:p-5">
+      <span className="text-xs text-muted-foreground">{label}</span>
+      <div className="mt-2 flex items-baseline gap-2">
+        <span
+          className={cn(
+            'font-serif text-2xl font-bold leading-none tabular-nums sm:text-3xl',
+            thisVal === 0 && 'text-muted-foreground/50'
+          )}
+        >
+          {thisVal}
+          {unit && (
+            <span className="ml-0.5 font-sans text-sm font-normal text-muted-foreground">
+              {unit}
+            </span>
+          )}
+        </span>
+        {/* 环比徽章 */}
+        <span
+          className={cn(
+            'inline-flex shrink-0 items-center gap-0.5 rounded-full border px-1.5 py-0.5 font-mono text-[10px] font-semibold tabular-nums',
+            flat
+              ? 'border-border bg-muted/50 text-muted-foreground/70'
+              : up
+                ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400'
+                : 'border-rose-500/40 bg-rose-500/10 text-rose-700 dark:text-rose-400'
+          )}
+          title={flat ? '与上周持平' : `上周 ${lastVal}${unit ?? ''}，${up ? '增加' : '减少'} ${Math.abs(delta)}${deltaUnit ?? ''}`}
+        >
+          {flat ? (
+            '—'
+          ) : up ? (
+            <TrendingUp className="h-3 w-3" aria-hidden="true" />
+          ) : (
+            <TrendingDown className="h-3 w-3" aria-hidden="true" />
+          )}
+          {flat ? '' : `${Math.abs(delta)}${deltaUnit ?? ''}`}
+          <span className="sr-only">
+            {flat ? '与上周持平' : `较上周${up ? '增加' : '减少'} ${Math.abs(delta)}${deltaUnit ?? ''}`}
+          </span>
+        </span>
+      </div>
+      <div className="mt-2.5 truncate text-[11px] tabular-nums text-muted-foreground/80">
+        上周 {lastVal}
+        {unit ?? ''}
       </div>
     </div>
   )

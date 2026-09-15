@@ -5,7 +5,7 @@ import { useAppStore } from '@/lib/store'
 import { subjects } from '@/data/biology'
 import { glossary } from '@/data/glossary'
 import { illustrations } from '@/data/illustrations'
-import { figureNumber } from '@/components/bio/markdown'
+import { figureNumber } from '@/lib/figure-utils'
 import {
   CommandDialog,
   CommandEmpty,

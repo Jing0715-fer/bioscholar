@@ -17,9 +17,33 @@ interface ActivityDay {
   date: string // YYYY-MM-DD
   completed: number
   quiz: number
+  /** 当日答对题数（周对比正确率用） */
+  correct: number
   notes: number
   reviews: number
   total: number
+}
+
+/** 周对比快照（本周 vs 上周，均按自然日窗口聚合） */
+interface WeeklyCompare {
+  thisWeek: {
+    completed: number
+    quiz: number
+    correct: number
+    notes: number
+    reviews: number
+    accuracy: number
+    total: number
+  }
+  lastWeek: {
+    completed: number
+    quiz: number
+    correct: number
+    notes: number
+    reviews: number
+    accuracy: number
+    total: number
+  }
 }
 
 interface ReportSubject {
@@ -180,12 +204,12 @@ export async function GET() {
     // ---------- 学习活跃度（近 18 周按日聚合，口径与 /api/activity 一致） ----------
     const dayMap = new Map<
       string,
-      { completed: number; quiz: number; notes: number; reviews: number }
+      { completed: number; quiz: number; correct: number; notes: number; reviews: number }
     >()
     for (let i = 0; i < DAYS; i++) {
       const d = new Date(start)
       d.setDate(d.getDate() + i)
-      dayMap.set(toKey(d), { completed: 0, quiz: 0, notes: 0, reviews: 0 })
+      dayMap.set(toKey(d), { completed: 0, quiz: 0, correct: 0, notes: 0, reviews: 0 })
     }
     for (const p of progress) {
       if (p.completedAt < start) continue
@@ -195,7 +219,10 @@ export async function GET() {
     for (const a of attempts) {
       if (a.createdAt < start) continue
       const k = toKey(a.createdAt)
-      if (dayMap.has(k)) dayMap.get(k)!.quiz += 1
+      if (dayMap.has(k)) {
+        dayMap.get(k)!.quiz += 1
+        if (a.correct) dayMap.get(k)!.correct += 1
+      }
     }
     for (const n of notes) {
       if (n.createdAt < start) continue
@@ -211,10 +238,36 @@ export async function GET() {
     const days: ActivityDay[] = Array.from(dayMap.entries()).map(
       ([date, v]) => ({
         date,
-        ...v,
+        completed: v.completed,
+        quiz: v.quiz,
+        correct: v.correct,
+        notes: v.notes,
+        reviews: v.reviews,
         total: v.completed + v.quiz + v.notes + v.reviews,
       })
     )
+
+    // ---------- 周对比快照（本周 vs 上周，各 7 天自然日窗口） ----------
+    const weekAgg = (slice: ActivityDay[]) => {
+      const completed = slice.reduce((a, d) => a + d.completed, 0)
+      const quiz = slice.reduce((a, d) => a + d.quiz, 0)
+      const correct = slice.reduce((a, d) => a + (d.correct ?? 0), 0)
+      const notes = slice.reduce((a, d) => a + d.notes, 0)
+      const reviews = slice.reduce((a, d) => a + d.reviews, 0)
+      return {
+        completed,
+        quiz,
+        correct,
+        notes,
+        reviews,
+        accuracy: quiz ? Math.round((correct / quiz) * 100) : 0,
+        total: completed + quiz + notes + reviews,
+      }
+    }
+    const weeklyCompare: WeeklyCompare = {
+      thisWeek: weekAgg(days.slice(-7)),
+      lastWeek: weekAgg(days.slice(-14, -7)),
+    }
 
     // 连续学习天数：从今天（或昨天）往回数
     const activeDaySet = new Set(
@@ -284,6 +337,7 @@ export async function GET() {
         maxStreak,
         activeDays: activeDaySet.size,
       },
+      weeklyCompare,
       recent: {
         sections: recentSectionList,
         notes: recentNoteList,

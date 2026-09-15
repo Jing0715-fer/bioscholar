@@ -667,3 +667,45 @@ Stage Summary:
 - cron 15 分钟任务持续 seed 假数据（本轮又清 128 条），交付前必查
 - Turbopack CSS 缓存问题：以后每次修改 globals.css 建议追加 cache-bust 注释验证注入
 - 新功能方向：AI 看图讲解流式输出、学习报告对比快照（阶段对比）、术语词典拼音首字母索引、复习卡片快捷键（1-4 评分）
+
+---
+Task ID: 20
+Agent: 主控 (Z.ai Code)
+Task: 本轮 QA 回归 + 三大新功能：复习卡片键盘快捷键 / 学习报告周对比快照 / 术语词典 A-Z 索引条 + figure-utils 架构拆分
+
+Work Log:
+- 【开工准备】读取 worklog.md 了解 Task 19 状态；数据库又现 128 条 cron seed 脏数据（已清理）
+- 【QA 回归】主页/复习卡片视图 console 零错误、抽认卡队列正常（327 张卡），Task 19 功能稳定，进入新功能开发
+- 【架构拆分：figure-utils】新建 src/lib/figure-utils.ts：
+  * 迁移纯类型/纯函数：FigureItem、FigureSectionCtx、FIGURE_MARKER、figureNumber、toFigureItems（markdown.tsx 不再「组件与工具函数混导出」，解决 worklog 遗留的 Turbopack 架构提示）
+  * 引用方迁移：gallery-view / search-dialog 改 import figureNumber；reader-view 拆分 Markdown（组件）与 toFigureItems（工具）双 import；markdown.tsx 体积 308→277 行
+  * 排障：编辑过程曾残留重复 const FIGURE_MARKER 声明导致 Turbopack 编译报错，修复后 agent-browser console --clear 重验零错误（教训：console 历史报错不会自动清除，需 --clear 区分新旧）
+- 【新功能 A：复习卡片键盘快捷键】revision-view.tsx：
+  * window keydown 全局监听：未翻面 Space/Enter 翻面（preventDefault 防页面滚动）；翻面后 1/2/3/4 键对应评分 0忘记/1困难/2良好/3简单
+  * 守卫条件：修饰键组合（⌘K 搜索等）不接管；焦点在 INPUT/TEXTAREA/SELECT/contentEditable 时跳过；loading/error/submitting 状态跳过
+  * UI 键帽提示：「显示答案」按钮右侧 kbd 空格键帽（≥sm 显示）；GradeButton 右上角 hotkey 数字角标（≥sm 显示，opacity-40 不喧宾夺主）；「你记得多清楚？」提示加「（按 1–4 键快速评分）」；aria-label 同步快捷键说明
+  * 验证：agent-browser 实测 Space 翻面→快照显示答案/评分按钮；按 3 →「三磷酸腺苷」推进至「三羧酸循环」；再 Space→按 1 验证「忘记」档位；isContentEditable 类型收窄为 instanceof HTMLElement
+- 【新功能 B：学习报告周对比快照】：
+  * API（/api/report）：dayMap 聚合新增 correct 计数（ActivityDay 加 optional correct 字段，热力图渲染不受影响）；新增 weeklyCompare 返回——weekAgg 对 days.slice(-7)（本周）与 slice(-14,-7)（上周）聚合 completed/quiz/correct/notes/reviews/accuracy/total
+  * 前端（report-view.tsx）：「学习总览」与「能力画像」之间插入 Weekly Snapshot 区块；WeekTile 组件五格（完成小节/答题次数/答题正确率/学习笔记/复习次数）：本周大数字 + 环比徽章（TrendingUp/TrendingDown 箭头 + Δ值，升 emerald/降 rose/持平—置灰；正确率 delta 用 pp 百分点）+ 上周参考值小字；normalizeWeekly 兜底旧响应缺失字段
+  * 验证：API 返回正确（测试期 thisWeek completed=128↑128、reviews=2↑2、其余持平—）；快照结构完整（sr-only 环比说明、title 悬停详情）；VLM 两轮审查——首轮截图区域未含徽章误判不通过，scrollintoview 精确截取后复审通过（绿色↑128/↑2 与灰色—清晰可辨）；移动端布局 VLM 通过
+- 【新功能 C：术语词典 A-Z 首字母索引条】glossary-view.tsx：
+  * LETTERS 常量 + firstLetter 工具（英文首字母大写归一，非拉丁返回 null）；letter state 与四级筛选叠加：搜索词 × 学科 × 分类 × 首字母
+  * LetterCell：h-7 圆角小格 font-mono 字母 + 计数角标（text-[9px]）；激活主色描边填充；当前学科+分类范围内 0 条的字母 disabled 置灰；「A–Z 首字母」引导标签 + 选中后「清除」虚线胶囊；空态「清除搜索与筛选」按钮同步清四级条件
+  * 计数联动：letterCountsInScope 随学科+分类筛选变化
+  * 验证：全量字母计数正确（A12/B2/C16/G10/M12/P11/R8/S7/T8…共124）；点击 G→「匹配 10/124 条」且结果含 glycogen；清除→恢复 124 条；J/Q/V/X/Y/Z 正确 disabled；390px 移动端字母条两行换行零溢出零破图，VLM 三项检查全通过
+- 【样式细节】报告页 StatTile/WeekTile 数据格 hover:bg-muted/30 过渡（数据带可感知微交互）；词典 TermCard 标题 group-hover:text-primary（与卡片 hover 阴影呼应）
+- 【QA 汇总】
+  * tsc src/ 0 错误（中途修复：WeekTile 多余 lastLabel prop、Element.isContentEditable 类型收窄）；eslint 0 警告
+  * agent-browser 全回归：阅读器（图 1-1-1 渲染、拆分后正常）、⌘K 搜索（呼吸链→教材插图分组 8-2-1/8-2-2 命中，figureNumber 迁移生效）、图库 79 图零破图、测验/错题本/笔记/AI 助教/仪表盘五视图 console 零错误
+  * 测试数据清理：LearningProgress 128 条 + FlashCardReview 2 条全部删除，/api/report 归零验证
+
+Stage Summary:
+- 三大新功能全部完成并验证：复习卡片键盘快捷键（Space 翻面 + 1-4 评分，含守卫与键帽提示）、学习报告周对比快照（五格环比徽章 + pp 百分点 + VLM 双轮验证）、术语词典 A-Z 索引条（26 字母联动计数 + 空字母置灰 + 移动端换行）
+- 架构改善：figure-utils.ts 拆分完成，markdown.tsx 只导出组件，Turbopack「组件与工具混合导出」提示消除
+- 质量门：tsc 0 错、lint 0 警、9+ 视图 console 零错误、图库 79 图零破图、移动端 390px 零溢出
+
+未解决问题与下一步建议：
+- cron 15 分钟任务持续 seed 假数据（本轮又清 128+2 条），交付前必查 LearningProgress/FlashCardReview 表
+- agent-browser console 历史报错不自动清除，QA 时应先 console --clear 再验证，避免误判
+- 新功能方向：AI 看图讲解流式输出、错题本按学科维度统计图、复习卡片「遗忘曲线」历史图表（基于 FlashCardReview 时序）、⌘K 搜索支持拼音首字母匹配

@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react'
 import { illustrations } from '@/data/illustrations'
 import { subjects, getSubject } from '@/data/biology'
-import { figureNumber } from '@/components/bio/markdown'
+import { figureNumber } from '@/lib/figure-utils'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { useAppStore } from '@/lib/store'
 import type { SubjectId } from '@/lib/types'

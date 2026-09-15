@@ -170,6 +170,41 @@ export function RevisionView() {
     }
   }, [session])
 
+  // ---------------- 键盘快捷键 ----------------
+  // Space / Enter：翻面；1–4：评分（忘记/困难/良好/简单）
+  useEffect(() => {
+    function onKeydown(e: KeyboardEvent) {
+      // 修饰键组合（⌘K 搜索等）不接管
+      if (e.metaKey || e.ctrlKey || e.altKey) return
+      // 焦点在输入类元素时不拦截（搜索框、对话框输入等）
+      const el = document.activeElement
+      if (
+        el instanceof HTMLElement &&
+        (el.tagName === 'INPUT' ||
+          el.tagName === 'TEXTAREA' ||
+          el.tagName === 'SELECT' ||
+          el.isContentEditable)
+      )
+        return
+      if (!current || submitting || loading || error) return
+
+      if (!revealed) {
+        if (e.code === 'Space' || e.key === 'Enter') {
+          e.preventDefault()
+          setRevealed(true)
+        }
+      } else {
+        const g = ['1', '2', '3', '4'].indexOf(e.key)
+        if (g >= 0) {
+          e.preventDefault()
+          grade(g as ReviewGrade)
+        }
+      }
+    }
+    window.addEventListener('keydown', onKeydown)
+    return () => window.removeEventListener('keydown', onKeydown)
+  }, [current, submitting, loading, error, revealed, grade])
+
   // ---------------- 加载中 ----------------
   if (loading) {
     return (
@@ -490,24 +525,38 @@ export function RevisionView() {
               {/* 操作区 */}
               <div className="mt-5">
                 {!revealed ? (
-                  <Button
-                    size="lg"
-                    className="w-full"
-                    onClick={() => setRevealed(true)}
-                  >
-                    <Eye className="mr-2 h-4 w-4" aria-hidden="true" />
-                    显示答案
-                  </Button>
+                  <div className="relative">
+                    <Button
+                      size="lg"
+                      className="w-full"
+                      onClick={() => setRevealed(true)}
+                    >
+                      <Eye className="mr-2 h-4 w-4" aria-hidden="true" />
+                      显示答案
+                    </Button>
+                    <span
+                      className="pointer-events-none absolute right-3 top-1/2 hidden -translate-y-1/2 items-center sm:flex"
+                      aria-hidden="true"
+                    >
+                      <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 font-mono text-[10px] font-medium text-muted-foreground shadow-sm">
+                        空格
+                      </kbd>
+                    </span>
+                  </div>
                 ) : (
                   <div className="bio-fade-up">
                     <p className="mb-2.5 text-center text-xs text-muted-foreground">
                       你记得多清楚？
+                      <span className="ml-1.5 hidden whitespace-nowrap opacity-70 sm:inline">
+                        （按 1–4 键快速评分）
+                      </span>
                     </p>
                     <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
                       {([0, 1, 2, 3] as ReviewGrade[]).map((g) => (
                         <GradeButton
                           key={g}
                           grade={g}
+                          hotkey={String(g + 1)}
                           disabled={submitting}
                           onClick={() => grade(g)}
                         />
@@ -571,10 +620,12 @@ export function RevisionView() {
 // ============================================================
 function GradeButton({
   grade,
+  hotkey,
   disabled,
   onClick,
 }: {
   grade: ReviewGrade
+  hotkey: string
   disabled: boolean
   onClick: () => void
 }) {
@@ -590,11 +641,17 @@ function GradeButton({
       variant="outline"
       disabled={disabled}
       onClick={onClick}
-      className={cn('h-auto flex-col gap-0.5 py-2.5', styles[grade])}
-      aria-label={`${meta.label}：${meta.hint}`}
+      className={cn('relative h-auto flex-col gap-0.5 py-2.5', styles[grade])}
+      aria-label={`${meta.label}：${meta.hint}（快捷键 ${hotkey}）`}
     >
       <span className="text-sm font-semibold">{meta.label}</span>
       <span className="text-[10px] font-normal opacity-70">{meta.hint}</span>
+      <span
+        className="pointer-events-none absolute right-1.5 top-1.5 hidden font-mono text-[10px] font-semibold opacity-40 sm:block"
+        aria-hidden="true"
+      >
+        {hotkey}
+      </span>
     </Button>
   )
 }
