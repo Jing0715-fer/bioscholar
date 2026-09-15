@@ -12,6 +12,7 @@ export type NavKey =
   | 'quiz'
   | 'revision'
   | 'wrongbook'
+  | 'report'
   | 'glossary'
   | 'notes'
 

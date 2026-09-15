@@ -14,28 +14,38 @@ import {
   Eye,
   FileText,
   Layers,
+  NotebookPen,
   RefreshCw,
   RotateCcw,
   Sparkles,
+  XCircle,
 } from 'lucide-react'
 
-/** 队列卡片（与 API 返回结构一致；术语卡 / 要点卡统一） */
+/** 队列卡片（与 API 返回结构一致；术语卡 / 要点卡 / 错题卡统一） */
 interface DueCard {
   cardId: string
-  /** 卡片类型：term 术语卡 / keypoint 小节要点卡 */
-  type: 'term' | 'keypoint'
-  /** 术语卡：术语名；要点卡：小节标题 */
+  /** 卡片类型：term 术语卡 / keypoint 小节要点卡 / wrong 错题卡 */
+  type: 'term' | 'keypoint' | 'wrong'
+  /** 术语卡：术语名；要点卡：小节标题；错题卡：题干 */
   term: string
   english: string
   abbreviation?: string
   subjectId: SubjectId
   category: string
   definition: string
-  /** 要点卡：章节路径 */
+  /** 要点卡 / 错题卡：章节路径 */
   chapterTitle?: string
   chapterId?: string
   sectionId?: string
+  /** 要点卡：本节要点（3-6 条） */
   keyPoints?: string[]
+  /** 错题卡：题目详情 */
+  question?: string
+  options?: string[]
+  answer?: number | number[]
+  explanation?: string
+  /** 错题卡：用户最近一次的错误选择（用于红绿对比） */
+  userAnswer?: number[]
   isNew: boolean
   reps: number
   intervalDays: number
@@ -48,6 +58,8 @@ interface Stats {
   mastered: number
   dueNow: number
   newToday: number
+  /** 待巩固错题卡数 */
+  wrongDue: number
 }
 
 /** 本轮会话的评分记录（用于完成页统计） */
@@ -184,9 +196,13 @@ export function RevisionView() {
           复习卡片
         </h1>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          基于 SM-2 间隔重复算法调度 303 张学科卡片——100 条核心术语与 203
-          个小节要点。看正面回忆，翻卡自评，
-          算法将按遗忘曲线安排每张卡的下次复习时间。
+          基于 SM-2 间隔重复算法调度{' '}
+          <span className="tabular-nums font-semibold text-foreground">
+            {stats?.totalCards ?? 303}
+          </span>{' '}
+          张学科卡片——核心术语、小节要点与测验错题。看正面回忆，翻卡自评，
+          算法将按遗忘曲线安排每张卡的下次复习时间；
+          测验中答错的题目会自动生成错题卡，优先安排巩固。
         </p>
         <div className="bio-rule mt-5" aria-hidden="true" />
         {stats && (
@@ -207,6 +223,14 @@ export function RevisionView() {
                 <span className="opacity-30">·</span>
                 <span className="font-medium text-primary tabular-nums">
                   今日到期 {stats.dueNow}
+                </span>
+              </>
+            )}
+            {stats.wrongDue > 0 && (
+              <>
+                <span className="opacity-30">·</span>
+                <span className="font-medium tabular-nums text-rose-700 dark:text-rose-400">
+                  错题待巩固 {stats.wrongDue}
                 </span>
               </>
             )}
@@ -239,8 +263,15 @@ export function RevisionView() {
                   aria-label="本次复习进度"
                 />
                 {current.isNew ? (
-                  <span className="shrink-0 rounded border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[10px] font-medium text-primary">
-                    新卡
+                  <span
+                    className={cn(
+                      'shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-medium',
+                      current.type === 'wrong'
+                        ? 'border-rose-500/40 bg-rose-500/10 text-rose-700 dark:text-rose-400'
+                        : 'border-primary/40 bg-primary/10 text-primary'
+                    )}
+                  >
+                    {current.type === 'wrong' ? '待巩固' : '新卡'}
                   </span>
                 ) : (
                   <span className="shrink-0 text-[10px] tabular-nums text-muted-foreground">
@@ -252,10 +283,16 @@ export function RevisionView() {
                     'shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-medium',
                     current.type === 'keypoint'
                       ? 'border-violet-500/40 bg-violet-500/10 text-violet-700 dark:text-violet-400'
-                      : 'border-border bg-muted/60 text-muted-foreground'
+                      : current.type === 'wrong'
+                        ? 'border-rose-500/40 bg-rose-500/10 text-rose-700 dark:text-rose-400'
+                        : 'border-border bg-muted/60 text-muted-foreground'
                   )}
                 >
-                  {current.type === 'keypoint' ? '要点卡' : '术语卡'}
+                  {current.type === 'keypoint'
+                    ? '要点卡'
+                    : current.type === 'wrong'
+                      ? '错题卡'
+                      : '术语卡'}
                 </span>
               </div>
 
@@ -272,7 +309,7 @@ export function RevisionView() {
                   aria-hidden="true"
                 />
                 <div className="px-6 py-10 sm:px-10 sm:py-14">
-                  {/* 正面：术语卡 / 要点卡分别渲染 */}
+                  {/* 正面：术语卡 / 要点卡 / 错题卡分别渲染 */}
                   <div className="text-center">
                     {current.type === 'keypoint' ? (
                       <>
@@ -288,6 +325,20 @@ export function RevisionView() {
                           </p>
                         )}
                       </>
+                    ) : current.type === 'wrong' ? (
+                      <div className="mx-auto max-w-xl text-left">
+                        <p className="bio-eyebrow text-center text-muted-foreground">
+                          {subjectName(current.subjectId)} · {current.chapterTitle}
+                        </p>
+                        <h2 className="mt-4 font-serif text-lg font-bold leading-relaxed tracking-tight sm:text-xl">
+                          {current.question}
+                        </h2>
+                        {!revealed && (
+                          <p className="mt-8 text-center text-xs text-muted-foreground">
+                            回忆这道题的正确答案，然后翻开核对
+                          </p>
+                        )}
+                      </div>
                     ) : (
                       <>
                         <p className="bio-eyebrow text-muted-foreground">
@@ -326,6 +377,83 @@ export function RevisionView() {
                               </li>
                             ))}
                           </ol>
+                        </div>
+                      ) : current.type === 'wrong' ? (
+                        <div className="bio-fade-up mx-auto mt-7 max-w-xl border-t pt-6 text-left">
+                          <div className="flex items-baseline justify-between">
+                            <p className="font-serif text-sm italic text-muted-foreground">
+                              正确答案
+                            </p>
+                            <p className="text-[10px] tabular-nums text-muted-foreground">
+                              <span className="text-primary">■</span> 正确
+                              {current.userAnswer && current.userAnswer.length > 0 && (
+                                <>
+                                  {'　'}
+                                  <span className="text-rose-600 dark:text-rose-400">■</span> 你的选择
+                                </>
+                              )}
+                            </p>
+                          </div>
+                          <ul className="mt-3 space-y-2">
+                            {(current.options ?? []).map((opt, i) => {
+                              const answers = Array.isArray(current.answer)
+                                ? current.answer
+                                : current.answer !== undefined
+                                  ? [current.answer]
+                                  : []
+                              const isCorrect = answers.includes(i)
+                              const isUserPick = (current.userAnswer ?? []).includes(i)
+                              return (
+                                <li
+                                  key={i}
+                                  className={cn(
+                                    'flex items-start gap-3 rounded-lg border px-3.5 py-2.5 text-sm leading-relaxed',
+                                    isCorrect
+                                      ? 'border-primary/50 bg-primary/10 font-medium'
+                                      : isUserPick
+                                        ? 'border-rose-500/50 bg-rose-500/10'
+                                        : 'border-border bg-muted/40 text-muted-foreground'
+                                  )}
+                                >
+                                  <span
+                                    className={cn(
+                                      'mt-0.5 shrink-0 font-serif text-xs font-bold tabular-nums',
+                                      isCorrect
+                                        ? 'text-primary'
+                                        : isUserPick
+                                          ? 'text-rose-600 dark:text-rose-400'
+                                          : 'text-muted-foreground/60'
+                                    )}
+                                  >
+                                    {String.fromCharCode(65 + i)}
+                                  </span>
+                                  <span className="flex-1">{opt}</span>
+                                  {isCorrect && (
+                                    <CheckCircle2
+                                      className="mt-0.5 h-4 w-4 shrink-0 text-primary"
+                                      aria-label="正确答案"
+                                    />
+                                  )}
+                                  {isUserPick && !isCorrect && (
+                                    <XCircle
+                                      className="mt-0.5 h-4 w-4 shrink-0 text-rose-600 dark:text-rose-400"
+                                      aria-label="你的错误选择"
+                                    />
+                                  )}
+                                </li>
+                              )
+                            })}
+                          </ul>
+                          {current.explanation && (
+                            <div className="mt-4 border-l-2 border-primary/50 pl-4">
+                              <p className="font-serif text-xs italic text-muted-foreground">
+                                解析
+                              </p>
+                              <p className="mt-1.5 text-sm leading-relaxed text-foreground">
+                                {current.explanation}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       ) : (
                         <div className="bio-fade-up mx-auto mt-7 max-w-lg border-t pt-6">
@@ -391,6 +519,14 @@ export function RevisionView() {
                   >
                     <FileText className="h-3.5 w-3.5" aria-hidden="true" />
                     回看本节原文
+                  </button>
+                ) : current.type === 'wrong' ? (
+                  <button
+                    className="inline-flex items-center gap-1.5 rounded text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                    onClick={() => navigate({ name: 'wrongbook' })}
+                  >
+                    <NotebookPen className="h-3.5 w-3.5" aria-hidden="true" />
+                    前往错题本查看同类错题
                   </button>
                 ) : (
                   <button
@@ -468,6 +604,7 @@ function EmptyState({
       {stats && (
         <p className="mt-3 text-xs tabular-nums text-muted-foreground">
           已学 {stats.seen} / {stats.totalCards} 张 · 已掌握 {stats.mastered} 张
+          {stats.wrongDue > 0 && ` · 错题待巩固 ${stats.wrongDue} 张`}
         </p>
       )}
       <div className="mt-6 flex items-center justify-center gap-3">

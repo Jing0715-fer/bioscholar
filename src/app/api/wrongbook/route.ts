@@ -91,7 +91,7 @@ export async function GET() {
 
 /**
  * DELETE /api/wrongbook  { questionId }
- * 移除一道错题（删除该题的全部作答记录）
+ * 移除一道错题（删除该题的全部作答记录，并同步移除联动生成的错题复习卡）
  */
 export async function DELETE(req: Request) {
   try {
@@ -100,6 +100,10 @@ export async function DELETE(req: Request) {
       return NextResponse.json({ error: 'questionId required' }, { status: 400 })
     }
     await db.quizAttempt.deleteMany({ where: { questionId } })
+    // 错题联动清理：该题的错题复习卡一并移除（cardId 约定：wq-{questionId}）
+    await db.flashcardReview.deleteMany({
+      where: { cardId: `wq-${questionId}` },
+    })
     return NextResponse.json({ ok: true })
   } catch (e) {
     console.error('DELETE /api/wrongbook error:', e)

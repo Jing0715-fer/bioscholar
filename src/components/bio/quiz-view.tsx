@@ -21,6 +21,7 @@ import {
   BookOpen,
   CheckCheck,
   CheckCircle2,
+  Layers,
   ListChecks,
   Play,
   RotateCcw,
@@ -257,6 +258,8 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
   const [now, setNow] = useState(0)
   const [submitting, setSubmitting] = useState(false)
   const [attempts, setAttempts] = useState<AttemptApiItem[]>([])
+  /** 本次交卷联动生成的错题卡数（用于结果页提示） */
+  const [linkedWrongCards, setLinkedWrongCards] = useState(0)
 
   const pool = useMemo(() => getQuizBySubject(subjectId), [subjectId])
   const diffCounts = useMemo(() => {
@@ -328,6 +331,7 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
     setAnswers({})
     setPending([])
     setRecords([])
+    setLinkedWrongCards(0)
     setStartedAt(Date.now())
     setElapsed(0)
     setPhase('quiz')
@@ -383,7 +387,8 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
         body: JSON.stringify({ records }),
       })
       if (!res.ok) throw new Error('submit failed')
-      const data = (await res.json()) as { count?: number }
+      const data = (await res.json()) as { count?: number; wrongCards?: number }
+      setLinkedWrongCards(data.wrongCards ?? 0)
       toast.success(`成绩已记录 · 共提交 ${data.count ?? records.length} 条答题记录`)
       await loadAttempts()
     } catch {
@@ -855,6 +860,19 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
                 <p className="mt-2 text-xs text-muted-foreground">
                   {submitting ? '正在提交答题记录…' : '答题记录已提交，计入学科统计'}
                 </p>
+                {linkedWrongCards > 0 && (
+                  <button
+                    className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-rose-500/30 bg-rose-500/5 px-3 py-2 text-xs text-rose-700 outline-none transition-colors hover:border-rose-500/50 hover:bg-rose-500/10 focus-visible:ring-2 focus-visible:ring-ring dark:text-rose-400"
+                    onClick={() => navigate({ name: 'revision' })}
+                  >
+                    <Layers className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+                    <span>
+                      <span className="font-semibold tabular-nums">{linkedWrongCards}</span>{' '}
+                      道错题已自动加入复习卡片，点击前往巩固
+                    </span>
+                    <ArrowRight className="h-3 w-3 shrink-0" aria-hidden="true" />
+                  </button>
+                )}
                 <div className="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
                   <Button onClick={restart} className={SUBJECT_BUTTON[subjectId]}>
                     <RotateCcw className="mr-1 h-4 w-4" />

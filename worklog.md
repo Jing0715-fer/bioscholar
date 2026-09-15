@@ -330,3 +330,61 @@ Stage Summary:
 - 错题联动卡片（答错自动生成要点卡）尚未实现，可作为复习系统下一步
 - 可做导出学习报告 PDF、AI 助教多轮上下文记忆增强、错题本按知识点聚类
 - 插图覆盖 40/203 小节，仍可继续扩充第二批学科插图
+
+---
+Task ID: 15-b
+Agent: full-stack-developer (学习报告)
+Task: 学习报告功能（API + 视图 + 打印导出 + 导航）
+
+Work Log:
+- 前置阅读 worklog（10-e1/10-e2 学术编辑风设计语言、Task 14 热力图）与 dashboard / activity-heatmap / api/activity / api/stats / api/wrongbook / store / page / types / biology 源码，确认设计语言（bio-eyebrow + font-serif + bio-rule + hairline 统计带 + 学科色 border-l-2 + tabular-nums）与数据口径
+- 新建 src/app/api/report/route.ts（GET）：Promise.all 拉取 LearningProgress / QuizAttempt / Note / FlashcardReview 四表全量 + 三个最近子集；聚合 generatedAt、overview（已完成/总小节 203/答题/正确率/笔记/已学/已掌握/今日到期/错题去重）、subjects（四学科：进度%、答题/正确率/错题去重/笔记数）、activity（126 天 = 18 周四类行为按日计数 + streak/maxStreak/activeDays，逐行复刻 /api/activity 的 toKey 与连续天数算法保证两处热力图完全一致）、recent（最近 8 完成小节经 SECTION_INDEX 静态映射标题、最近 8 笔记、最近 5 复习含 cardId→可读 label 解析：术语卡取词条名 / kp- 要点卡取小节标题）；错题数按 questionId 去重（对齐 wrongbook）；复习掌握判定复用 srs.isMastered
+- 新建 src/components/bio/report-view.tsx（约 620 行，学术编辑风）：刊头（eyebrow「STUDY REPORT · 学习档案」+ 衬线大标题 + 说明 + 报告生成时间 tabular-nums + bio-rule，右侧导出 PDF 按钮 Printer 图标触发 window.print）；报告本体包 print-root；概览统计带（grid-cols-2 sm:3 lg:6 gap-px hairline，零值数字 text-muted-foreground/50 调淡）；学科进展（学科色 border-l-2 + 衬线学科名 + 英文 eyebrow + 已完成 N/M + 细进度条 role=progressbar 完整 aria + 「答题 N · 正确率 N% · 错题 N · 笔记 N」行化元信息）；复习记忆（已学/已掌握/今日到期/连续学习 四格 hairline 带）；学习活跃度（复用 ActivityHeatmap + 连续/活跃/最长连续 三格统计带）；最近动态三列（最近完成小节→openReader、最近笔记→notes、最近复习→revision，date-fns zhCN 相对时间 + hover 箭头）；空数据引导态（dashed 圆 + muted 图标 + 「开始学习后此处将生成你的学习报告」+ 前往学科中心按钮）；加载骨架 / 错误重试态
+- QA 中发现并修复健壮性缺口：API 返回 200 但负载异常（如 {error}）时视图解构 undefined 崩溃（agent-browser 实测触发 Application error）→ load() 增加形状校验（overview/activity/recent/数组字段缺失抛错落错误态）+ normalizeReport 归一化（数值 num() 兜底、days/subjects 过滤非法项），修复后异常负载显示「报告加载失败 + 重新加载」
+- 导出 PDF 按钮处理深色模式：打印前临时移除 html.dark、打印后恢复，避免「深色浅字 + 白底」不可读
+- globals.css 末尾追加学习报告打印导出 @media print 规则（body 白底 / 仅 .print-root 可见 / .no-print 隐藏），报告刊头操作区加 no-print
+- 导航集成：types.ts AppView 增加 { name: 'report' }、store.ts NavKey 增加 'report'（注：项目无 viewTitle 映射，顶栏标题由 page.tsx NAV_ITEMS 派生）、page.tsx NAV_ITEMS 在「错题本」后新增「学习报告」（FileChartColumn 图标，desc「学习数据汇总与导出」）+ ViewSwitch 渲染 ReportView + 移动端 SheetDescription 文案同步；NavList 桌面/移动共用确认同步
+- 质量门：bunx tsc --noEmit src/ 零错误；bun run lint 0 错误 0 警告；agent-browser 实测：导航切换/五区块渲染/126 格热力图/4 progressbar aria/导出按钮存在且包裹 no-print、window.print 为 function、print-root 计算样式与编译 CSS 均确认 @media print 规则生效、agent-browser pdf 生成 211KB 报告 PDF 且 pdftotext 验证仅含报告内容（无侧栏/顶栏外壳）、最近动态行点击跳转阅读器与笔记视图、错误态重试恢复、空态（mock 全零负载：引导文案 + 前往学科中心 + 导出按钮正确隐藏）、移动端 390px 零横向溢出（print-root 宽 358px）、深色模式渲染正常、console 零错误零警告
+- 测试数据经真实 API 种子（6 小节进度 + 4 答题 + 1 笔记 + 2 复习卡）验证后精确清理（不动并行代理的 test-* 数据），清理后 API 复查归零（122 条并行代理 mock 数据除外）
+
+Stage Summary:
+- 应用现有 10 大功能视图：仪表盘/学科中心/阅读器/AI 助教/测验/复习卡片/错题本/学习报告/词典/笔记
+- /api/report 一次聚合四表 + 静态映射，返回 { generatedAt, overview(10 字段), subjects[4](11 字段), activity{days[126], streak, maxStreak, activeDays}, recent{sections[8], notes[8], reviews[5]} }；日键与 /api/activity 逐字节一致（其实现为 toISOString UTC 键，为保证仪表盘与报告两处热力图完全一致而沿用）
+- 学习报告视图：学术编辑风五区块（总览/学科/复习记忆/活跃度/最近动态）+ 一键导出 PDF（print-root 隔离 + 深色模式临时切浅 + pdftotext 验证导出内容纯净）+ 空态/骨架/错误重试三态齐备，异常负载防崩溃
+- 质量门全过：tsc src/ 0 错误、eslint 0 警告、浏览器 console 零错误、移动端零溢出
+
+---
+Task ID: 15
+Agent: 主控 (Z.ai Code)
+Task: 全面 QA 回归 + 数据清理 + 错题联动复习卡 + 第三批插图（12 张）+ 学习报告统筹 + 推送
+
+Work Log:
+- 【QA 回归（本轮起点）】agent-browser 遍历仪表盘/复习卡片/错题本/学科中心/阅读器：功能全部正常、console 零错误；tsc src/ 0 错误、lint 0 警告、dev.log 无异常
+- 【QA 发现并修复】数据库残留 123 条 test-* 假进度数据（上轮 cron 任务测试残留，subjectId 为空串污染仪表盘"已学 61%"）→ deleteMany 清理，stats 归零复核；本轮结束时再次全量清理（quiz 6 + flashcards 4 + progress 128）
+- 【新功能 A：错题联动复习卡（测验答错 → SM-2 队列）】
+  * /api/quiz/attempts POST：答错记录自动 upsert FlashcardReview（cardId 约定 wq-{questionId}）；首次答错建卡（reps=0、dueAt=now、lapses=1、lastReviewedAt=null）；再次答错拉回立即到期并 lapses+1，已掌握（interval≥21 天）则重置为待巩固；响应新增 wrongCards 计数
+  * /api/flashcards GET：新增 QUIZ_SOURCES 题库源（225 题）；错题卡最高优先入队（含 reps=0 未复习新错题卡），其次到期卡、新卡补足；0.5 步查询 QuizAttempt 最近错误选择附到 userAnswer（背面红绿对比）；stats.totalCards 动态 = 303 + 错题卡数，新增 wrongDue；POST 校验扩展 wq- 前缀
+  * /api/wrongbook DELETE：移除错题时同步删除对应 wq- 复习卡（闭环清理）
+  * revision-view.tsx：DueCard 扩展 type:'wrong' + question/options/answer/explanation/userAnswer；正面（学科·章 eyebrow + 衬线题干 + "回忆这道题的正确答案"）；背面（选项列表红绿对比：绿=正确答案✓ / 红=你的选择✗ / 灰=未选 + 图例 + 解析块）；徽标三态（错题卡 rose / 要点卡 violet / 术语卡中性；isNew 对错题卡显示"待巩固"）；辅助操作"前往错题本"；头部文案动态卡库数 + "错题待巩固 N" 统计
+  * quiz-view.tsx：交卷响应捕获 wrongCards，结果页新增 rose 提示卡"N 道错题已自动加入复习卡片，点击前往巩固"（直跳复习视图）；startQuiz 重置
+- 【新功能 A 端到端验证】API 直测（答错→wq 卡入队首位→评分良好→SM-2 interval=1→wrongbook 删除→卡库回落 303）；agent-browser 真实答题（5 题对 1）→交卷→结果页提示"4 道错题已自动加入"→跳转复习→错题卡翻卡（红绿对比+解析）→评分推进（第 2/22 张仍错题卡连续排队）；VLM 评审采纳 P1 建议增加"你的选择"对比视图
+- 【新功能 C：第三批教学插图（12 张，覆盖 40→52 小节）】
+  * 呼吸链四复合物(ch8-s2)/磷酸戊糖途径(ch9-s3)/脂肪酸β氧化(ch10-s1)/DNA变性复性Tm(ch7-s3)/PCR循环(mb-ch9-s2)/Sanger测序(mb-ch9-s4)/trp操纵子衰减(mb-ch7-s3)/RNA干扰(mb-ch8-s5)/RTK-Ras-MAPK(cb-ch8-s4)/CDK-cyclin周期引擎(cb-ch10-s2)/跳跃式传导(bp-ch7-s3)/冷冻电镜(bp-ch9-s4)
+  * 生成链路：gen-images-batch3.sh（后台 nohup/setsid 均被会话清理终止 → 改前台分段运行）；VLM 审校两轮发现 6 张乱码文字/结构缺陷 → 重画一轮仍残留伪标签 → 新工具 scripts/remove-text-illu.ts（z-ai image-edit SDK 批量擦除文字，保留图形）→ 5 张清洗后 VLM 复检全部可用
+  * 【格式修复】image-edit 返回 JPEG 数据存为 .png 扩展名导致 MIME 不匹配浏览器解码失败（naturalWidth=0）→ PIL 转真 PNG；scripts/remove-text-illu.ts 修正 SDK 类型（image 而非 images）
+  * illustrations.ts：12 条新挂载（学术图注含机制细节/数值/诺奖出处），图编号自动 图{章}-{节}-{序}；呼吸链/PCR/跳跃传导/CDK 四处阅读器实测渲染正常
+- 【新功能 B：学习报告】子代理完成（详见 Task 15-b 条目）：/api/report 四表聚合 + report-view 五区块学术编辑风 + print-root 打印导出 PDF（pdftotext 验证内容纯净）+ 导航集成（错题本之后，FileChartColumn）
+- 【最终回归】10 视图零错误零溢出；移动端 390px 仪表盘/学习报告/复习卡片/错题本零横向溢出；tsc 0 错误、lint 0 警告；测试数据全量清理（进度/答题/复习卡/笔记归零）
+- 【推送】commit 已推送 https://github.com/Jing0715-fer/bioscholar
+
+Stage Summary:
+- 应用现有 10 大功能视图：仪表盘/学科中心/阅读器/AI 助教/测验/复习卡片（术语+要点+错题三卡型）/错题本/学习报告/词典/笔记
+- 学习闭环完全成型：测验答错 → 自动生成错题卡 → SM-2 调度巩固 → 错题本红绿对照复习 → 掌握后移除（同步清卡）
+- 插图体系 56 张 / 52 个小节（覆盖 52/203，约 26%）
+- 质量门：tsc 0 错误、lint 0 警告、console 零错误、移动端零溢出、VLM 插图与 UI 双审校通过
+
+未解决问题与下一步建议：
+- 插图仍可继续扩充（52/203）；图像模型在复杂多步骤流程图上易生成乱码伪标签，流程类插图建议"简洁构图+去文字工具"流水线（scripts/remove-text-illu.ts 可复用）
+- 热力图打印时右侧截断（GitHub 同款行为），可加 print 缩放
+- AI 助教多轮上下文记忆增强、错题本按知识点聚类、学习报告增加"能力画像"雷达图可作下一步
+- cron 定时任务（15 分钟 webDevReview）会自行 seed 测试数据用于 QA，推送前需检查数据清洁

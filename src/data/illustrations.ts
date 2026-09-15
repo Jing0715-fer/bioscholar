@@ -125,6 +125,38 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: AI_CREDIT,
     },
   ],
+  'biochemistry-ch8-s2': [
+    {
+      src: '/images/bio/biochemistry/etc-complexes.png',
+      caption:
+        '呼吸链（电子传递链）的四个复合物：复合体Ⅰ（NADH 脱氢酶，L 形）、复合体Ⅱ（琥珀酸脱氢酶）、复合体Ⅲ（细胞色素 bc₁）与复合体Ⅳ（细胞色素 c 氧化酶）嵌于线粒体内膜。NADH 与 FADH₂ 提供的高能电子经黄素辅基、铁硫中心与细胞色素等载体逐级传递，其中Ⅰ、Ⅲ、Ⅳ为质子泵，每传递一对电子分别向膜间隙泵出约 4、4、2 个 H⁺；脂溶性的泛醌（Q）与水溶性的细胞色素 c 作为移动载体在复合物间穿梭；电子最终传给 O₂ 生成水，同时在内膜两侧建立质子电化学梯度（质子驱动力）驱动 ATP 合酶。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biochemistry-ch9-s3': [
+    {
+      src: '/images/bio/biochemistry/pentose-phosphate.png',
+      caption:
+        '磷酸戊糖途径（PPP）：氧化阶段从 6-磷酸葡萄糖开始，经两次脱氢（6-磷酸葡萄糖脱氢酶与 6-磷酸葡萄糖酸脱氢酶）产生 2 NADPH 并释放 1 分子 CO₂，生成 5-磷酸核糖；非氧化阶段经转酮醇酶（转移二碳单位）与转醛醇酶（转移三碳单位）将磷酸糖重新排列，可与糖酵解中间产物（6-磷酸果糖、3-磷酸甘油醛）互通。该途径的核心意义在于提供 NADPH（还原性生物合成与抗氧化）与核糖-5-磷酸（核苷酸合成原料），而非产能。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biochemistry-ch10-s1': [
+    {
+      src: '/images/bio/biochemistry/beta-oxidation.png',
+      caption:
+        '脂肪酸的 β-氧化螺旋：活化后的脂酰 CoA 进入线粒体基质（经肉碱穿梭系统），每轮循环四步反应——FAD 介导的脱氢（生成 FADH₂）、水化、NAD⁺ 介导的再脱氢（生成 NADH）、硫解酶催化的硫解（thiolysis）——从羧基端切下一个乙酰 CoA，缩短两个碳原子的脂酰 CoA 重新进入循环。以棕榈酸（C16）为例：7 轮螺旋共产生 8 乙酰 CoA、7 FADH₂、7 NADH，彻底氧化净得 106 ATP。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biochemistry-ch7-s3': [
+    {
+      src: '/images/bio/biochemistry/dna-renaturation.png',
+      caption:
+        'DNA 的热变性、复性与 Tm：加热破坏碱基对间氢键与堆积力，双链解链为单链（变性），增色效应（hyperchromic effect）使 260 nm 紫外吸收上升；以吸光度对温度作图得到 S 形熔解曲线，其中点对应的温度即熔解温度 Tm。G≡C 含量越高（三个氢键）、离子强度越高，Tm 越高。缓慢降温时互补单链可重新按碱基配对“拉链式”复性（退火），特异性互补序列间的复性即分子杂交的基础。',
+      credit: AI_CREDIT,
+    },
+  ],
 
   // ==================== 分子生物学 ====================
   'molecular-biology-ch1-s4': [
@@ -196,6 +228,38 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/molecular-biology/crispr.png',
       caption:
         'CRISPR-Cas9 系统的靶向切割机制：向导 RNA（sgRNA，由 crRNA 与 tracrRNA 融合而来）与 Cas9 核酸酶形成复合物，扫描 dsDNA 中与 PAM（5′-NGG-3′）相邻的序列，解开双链后 sgRNA 的间隔序列与靶标链互补配对形成 R 环，Cas9 的 HNH 与 RuvC 样结构域分别在两条链上产生切割，形成平末端双链断裂（DSB）。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'molecular-biology-ch9-s2': [
+    {
+      src: '/images/bio/molecular-biology/pcr-cycles.png',
+      caption:
+        '聚合酶链式反应（PCR）的三步温度循环：①变性（约 94–95 ℃）——双链模板氢键断裂解为单链；②退火（约 50–65 ℃，低于 Tm 5 ℃左右）——引物与互补序列特异性结合；③延伸（约 72 ℃）——Taq DNA 聚合酶从 3′-OH 起沿模板合成新链。每循环产物呈指数扩增（2ⁿ），30 轮即可将目的片段扩增约 10⁹ 倍；耐热聚合酶的发现使自动化循环成为可能（Mullis，1993 年诺贝尔奖）。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'molecular-biology-ch9-s4': [
+    {
+      src: '/images/bio/molecular-biology/sanger-sequencing.png',
+      caption:
+        'Sanger 双脱氧链终止法测序：以单链模板+引物进行体外复制反应，反应体系中掺入少量双脱氧核苷酸（ddNTP，3′ 缺少羟基），一旦掺入即终止延伸，四个反应管（分别含 ddATP/ddGTP/ddCTP/ddTTP）产生一套长度相差一个核苷酸、末端固定的片段群；变性后经高分辨变性聚丙烯酰胺凝胶电泳按长度分离，自下而上读出的条带序列即模板的互补序列。读长可达约 800–1000 bp，是人类基因组计划的主力方法（Sanger 因此第二次获诺贝尔奖）。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'molecular-biology-ch7-s3': [
+    {
+      src: '/images/bio/molecular-biology/trp-attenuation.png',
+      caption:
+        '色氨酸操纵子的衰减（attenuation）机制：前导序列 trpL 含 4 个可两两配对的区段。色氨酸充足时，核糖体快速翻译前导肽并覆盖区段 2，使 3–4 区段配对形成终止子发夹+寡聚 U，RNA 聚合酶提前脱落（转录终止）；色氨酸匮乏时，核糖体在连续 Trp 密码子处停顿于区段 1，2–3 区段配对形成反终止子发夹，3–4 无法配对，转录得以通读进入结构基因。衰减将翻译速度（胞内 aa-tRNA 供应）与转录偶联，实现细粒度调控。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'molecular-biology-ch8-s5': [
+    {
+      src: '/images/bio/molecular-biology/rna-interference.png',
+      caption:
+        'RNA 干扰（RNAi）通路：外源或内源长双链 RNA 被 Dicer（RNase III 家族核酸内切酶）切割为约 21–23 nt 的 siRNA 双链；随后与 Argonaute 蛋白组装成 RISC 复合体，乘客链被降解，保留向导链；向导链按碱基配对识别靶 mRNA，Argonaute 的 PIWI 结构域在配对区中部切割 mRNA，使其被快速降解——序列特异性的基因沉默（Fire 与 Mello，2006 年诺贝尔奖）。',
       credit: AI_CREDIT,
     },
   ],
@@ -281,6 +345,22 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: AI_CREDIT,
     },
   ],
+  'cell-biology-ch8-s4': [
+    {
+      src: '/images/bio/cell-biology/rtk-signaling.png',
+      caption:
+        '受体酪氨酸激酶（RTK）—Ras—MAPK 通路：信号分子（如表皮生长因子 EGF）诱导受体二聚化，胞内酪氨酸激酶结构域相互磷酸化（自磷酸化）；磷酸化的酪氨酸作为停泊位点招募接头蛋白 Grb2–SOS，将质膜内侧的 Ras 从 GDP 态转换为 GTP 活化态；活化的 Ras 依次激活 RAF→MEK→ERK 三级激酶级联（逐级放大信号），ERK 进入细胞核磷酸化转录因子（如 Elk-1），调控增殖与分化相关基因表达。通路中 GAP 蛋白加速 Ras 水解 GTP 而关闭信号。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'cell-biology-ch10-s2': [
+    {
+      src: '/images/bio/cell-biology/cdk-cyclin.png',
+      caption:
+        '细胞周期的 CDK–cyclin 引擎：cyclin 周期性合成与降解（经泛素—蛋白酶体途径）驱动 CDK 活性振荡，不同 cyclin–CDK 组合序贯主导各时相转换——G1 期 cyclin D–CDK4/6 磷酸化 Rb 释放 E2F，启动 G1/S 基因表达；cyclin E–CDK2 触发 S 期起始、启动复制起点；cyclin A–CDK2 维持 S 期进程；cyclin B–CDK1（MPF）驱动 G2/M 转换与有丝分裂事件；末期 APC/C 降解 cyclin B 使细胞退出分裂。CKI（p21、p27 等）与磷酸化修饰（Wee1/Cdc25）对引擎进行精密校准。',
+      credit: AI_CREDIT,
+    },
+  ],
 
   // ==================== 生物物理学 ====================
   'biophysics-ch3-s1': [
@@ -344,6 +424,22 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/biophysics/ion-channel.png',
       caption:
         '钾通道的选择性过滤（selectivity filter）机制（KcsA 结构启示）：主链羰基氧沿滤器排列成 4 个串联的氧原子笼，恰好剥离 K⁺ 的水化层并以等价配位补偿其结合能，K⁺ 可"裸奔"通过；而 Na⁺ 半径过小，无法与氧笼形成稳定配位（静电补偿不足），去水化代价无法弥补——故通道对 K⁺ 的选择性较 Na⁺ 高约 10⁴ 倍。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biophysics-ch7-s3': [
+    {
+      src: '/images/bio/biophysics/saltatory-conduction.png',
+      caption:
+        '有髓纤维的跳跃式传导（saltatory conduction）：髓鞘由胶质细胞质膜反复包绕轴突形成，膜电阻高、电容低，电压门控 Na⁺ 通道几乎只集中于裸露的郎飞结；动作电位在结区去极化产生的局部电流几乎无衰减地流过结间体，在下一个郎飞结重新触发再生性放电——信号如同"从结跳到结"。相比无髓纤维的连续传导，跳跃式传导使传导速度提高可达数十倍（人大腿神经纤维可达 100 m/s 以上），且每单位长度仅需重建小部分离子梯度，显著节能；多发性硬化等脱髓鞘疾病即因结间泄漏导致传导减慢甚至阻滞。',
+      credit: AI_CREDIT,
+    },
+  ],
+  'biophysics-ch9-s4': [
+    {
+      src: '/images/bio/biophysics/cryo-em.png',
+      caption:
+        '冷冻电子显微镜（cryo-EM）单颗粒重构流程：样品溶液速冻（玻璃化，vitreous ice）于电镜载网上，蛋白质分子以随机取向保持近生理状态；电子束穿透冰层投影成像，直接电子检测器采集数千至数百万张粒子图像；经二维分类平均、颗粒取向判定（angular reconstitution）与迭代精修，将不同方向的投影反投影叠加，重构出三维密度图，最终可在近原子分辨率解析膜蛋白等大分子机器——无需结晶，是结构生物学近年革命（2017 年诺贝尔化学奖）的核心技术。',
       credit: AI_CREDIT,
     },
   ],
