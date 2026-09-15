@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// 学习进度（小节完成记录）
+model LearningProgress {
+  id          String   @id @default(cuid())
+  sectionId   String   @unique
+  subjectId   String
+  completedAt DateTime @default(now())
+}
+
+// 测验答题记录
+model QuizAttempt {
+  id         String   @id @default(cuid())
+  questionId String
+  subjectId  String
+  chapterId  String
+  userAnswer String // JSON 序列化的答案索引
+  correct    Boolean
+  createdAt  DateTime @default(now())
+}
+
+// 学习笔记
+model Note {
+  id        String   @id @default(cuid())
+  subjectId String?
+  sectionId String?
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// AI 助教聊天记录
+model ChatMessage {
+  id        String   @id @default(cuid())
+  sessionId String
+  role      String // 'user' | 'assistant'
+  content   String
+  context   String? // JSON: 学科/章节上下文
+  createdAt DateTime @default(now())
+
+  @@index([sessionId])
+}
