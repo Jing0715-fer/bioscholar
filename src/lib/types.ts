@@ -100,6 +100,7 @@ export type AppView =
   | { name: 'reader'; subjectId: SubjectId; chapterId: string; sectionId: string }
   | { name: 'quiz'; subjectId: SubjectId }
   | { name: 'glossary' }
+  | { name: 'gallery' }
   | { name: 'notes' }
   | { name: 'assistant' }
   | { name: 'revision' }

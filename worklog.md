@@ -527,3 +527,52 @@ Stage Summary:
 - prokaryotic-transcription.png（OpenStax）为彩色照片风格插画，与黑白结构式混排时风格差异可见（属正常教材混排）
 - cron 15 分钟任务会自行 seed 测试数据，推送/交付前需再清理（本次已清 128 条）
 - 下一步可做：AI 助教引用插图（VLM 读图讲解）、术语词典挂结构式缩略图、学习报告增加"本学期配图一览"
+
+---
+Task ID: 17
+Agent: 主控 (Z.ai Code)
+Task: 本轮 QA 回归 + 三大新功能：教材图库画廊页 / 术语词典 CCD 结构式 / AI 助教看图讲解
+
+Work Log:
+- 【开工准备】读取 worklog.md 了解 Task 16 状态（插图体系已 81% 去 AI 化）；确认 dev server 正常、数据库干净（无 cron 假数据）
+- 【agent-browser 全面 QA】主页→学科中心→阅读器插图→测验判分（选项即时反馈+解析）→复习卡片（四档评分流）→AI 助教（流式回复）→错题本/笔记/报告/词典，全部正常：0 破图、console 零错误 → 无需修 bug，进入新功能开发
+- 【新功能 A：教材图库画廊页】新建 src/components/bio/gallery-view.tsx：
+  * 从 illustrations.ts 聚合全部 79 张插图，反查 subjects 得到学科/章节/小节元信息与图号（复用 figureNumber）
+  * 四类来源徽章（CCD 化学结构式 13 / PDB 实验结构 17 / Commons 通路图 34 / AI 示意 15）+ 可点击来源统计卡筛选 + 学科筛选 tabs（沿用词典下边线样式与学科色）
+  * 卡片：4:3 白底缩略 + 悬停 scale + 图号角标 + line-clamp-3 图注（带 title 悬停全文）+ 来源徽章
+  * 灯箱：大图 + 完整图注 + credit + 来源体系全称 + 「阅读本节」跳转按钮（openReader）
+  * 头部统计："79 张教材插图 · 64 张（81%）来自真实科学数据库"
+  * 接线：types.ts AppView + store.ts NavKey 增加 'gallery'，page.tsx 导航项（Images 图标）+ 视图挂载
+- 【新功能 B：术语词典挂 RCSB CCD 真实结构式】
+  * 新建 scripts/fetch-term-structures.ts：27 个配体批量下载（data-api 名称校验 + manifest），输出 public/images/bio/terms/
+  * 下载结果 26 成功 1 跳过（SUC 蔗糖 404，CCD 无此 unlabeled 图）
+  * VLM 科学审校：CYT 确认胞嘧啶（IUPAC 名 6-AMINOPYRIMIDIN-2(1H)-ONE）；THY 确认为 C2-羟甲基-硫胺素二磷酸（SAM 类，陷阱！）→ 删除；TDR 图面实为胸腺嘧啶碱基（VLM 确认无糖环）→ 用作「胸腺嘧啶」词条图并在 manifest 如实标注 THYMINE
+  * glossary.ts 新增 24 条「分子结构」类词条（g-101~g-124：三种单糖、两种脂肪酸、甘油、鞘氨醇、五种碱基、腺苷、NAD⁺、FAD、CoA、血红素、TPP、PLP、生物素、叶酸、抗坏血酸、视黄醇、β-胡萝卜素），定义含分子式/结构要点/教材考点 → 词典 100→124 条
+  * 新建 src/data/term-structures.ts：26 个 termId→CCD 映射（含分子式、RCSB 英文名）；既有词条挂图：g-001 三磷酸腺苷 ATP、g-021 胆固醇 CLR
+  * TermCard 改造：右侧 92px 结构式缩略（白底圆角框+悬停放大）+ 灯箱（大图+CCD 代码+英文名+分子式+「在 RCSB 查看该分子」外链）；头部统计更新
+- 【新功能 C：AI 助教看图讲解（VLM）】
+  * 后端 src/app/api/assistant/figure-explain/route.ts：路径安全校验（仅 public/images/bio/、防 ..）→ SVG 经 sharp 栅格化（density 110）转 PNG → z-ai-web-dev-sdk createVision（glm-5v-turbo）→ 教授人设 prompt（看图说话/科学准确/教学导向/350 字内，含图号图注 credit 与小节教学位置上下文）
+  * 前端 markdown.tsx BioFigure 灯箱增加「AI 看图讲解」按钮：loading spinner / 错误重试 / 讲解结果以 ReactMarkdown 渲染于主题色左边框卡片（含"视觉模型生成，请注意核对"提示）；灯箱关闭重置状态
+  * Markdown 组件新增 sectionCtx prop，reader-view 传入 { sectionId, sectionTitle }
+  * 端到端验证：生物化学 ch1-s1 CCD 组图（SVG→PNG→VLM）讲解正确覆盖 α/β 异头物、平伏位、呋喃果糖 C2 酮糖中心，格式符合「图面导览+核心要点」
+- 【样式细节】
+  * 阅读器顶部新增 3px 滚动阅读进度条（fixed、学科主题渐变色、rAF 节流、切节重置）
+  * 画廊卡片图注 title 悬停全文（VLM UI 评审建议）
+- 【QA 汇总】tsc src/ 0 错误、eslint 0 警告；agent-browser：10 个视图全遍历 0 破图、console 零错误；画廊筛选（PDB 17 张）→灯箱→跳转阅读器全链路通；词典灯箱 ATP 分子式与 RCSB 外链正常；VLM 截图评审（画廊桌面版：整齐专业；深色模式阅读器：对比度好、无白底眩光 bug）
+
+Stage Summary:
+- 新增三大功能全部完成并验证：
+  1. 教材图库画廊页（79 图按学科分组、来源筛选、灯箱、跳转阅读）
+  2. 术语词典 +24 分子词条（共 124 条），26 张 RCSB CCD 真实结构式缩略图 + 灯箱分子式/RCSB 外链
+  3. AI 助教看图讲解：插图灯箱一键 VLM 读图，SVG 自动栅格化，讲解含教学上下文
+- 阅读体验细节：滚动阅读进度条（学科主题色）
+- 数据管道新增第 4 条：fetch-term-structures.ts（26 配体，含名称校验与陷阱规避记录）
+- 质量门：tsc 0 错、lint 0 警、10 视图 0 破图、console 零错误、VLM 双场景 UI 评审通过
+
+未解决问题与下一步建议：
+- 画廊页移动端 390px 未实机验证（agent-browser 设备模拟仅 macOS 可用）；组件均使用与现有视图一致的响应式前缀模式，风险低
+- AI 看图讲解为非流式（一次性返回，VLM 耗时 10-20s，已有 loading 态）；后续可改为流式输出提升体感
+- 术语结构式暂只覆盖生物化学分子（26 个）；分子生物学/细胞生物学词条无对应 CCD 小分子，属正常
+- 剩余 15 张 AI 机制示意图仍待权威开源替代（同 Task 16 遗留）
+- 搜索对话框（⌘K）尚未收录图库结果——可把画廊条目加入全局搜索
+- cron 15 分钟任务可能再次 seed 测试数据，交付前需复查（本轮开工时为 0 条）

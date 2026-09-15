@@ -103,6 +103,26 @@ export function ReaderView({
     window.scrollTo(0, 0)
   }, [sectionId])
 
+  // 阅读滚动进度（顶部细进度条）
+  const [scrollPct, setScrollPct] = useState(0)
+  useEffect(() => {
+    let raf = 0
+    const onScroll = () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const doc = document.documentElement
+        const scrollable = doc.scrollHeight - doc.clientHeight
+        setScrollPct(scrollable > 0 ? Math.min(100, (doc.scrollTop / scrollable) * 100) : 0)
+      })
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [sectionId])
+
   // ---- 数据解析 ----
   const subject = getSubject(subjectId)
   const chapterIndex = subject?.chapters.findIndex((c) => c.id === chapterId) ?? -1
@@ -194,6 +214,17 @@ export function ReaderView({
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-6 sm:px-6 lg:px-8">
+      {/* 阅读进度条（跟随滚动，学科主题色） */}
+      <div
+        className="fixed left-0 top-0 z-[60] h-[3px] pointer-events-none"
+        style={{ width: `${scrollPct}%` }}
+        aria-hidden="true"
+      >
+        <div
+          className={cn('h-full w-full bg-gradient-to-r opacity-90', theme.classes.gradient)}
+          role="presentation"
+        />
+      </div>
       {/* ============ 移动端：目录抽屉触发 + 紧凑面包屑 ============ */}
       <div className="mb-4 flex items-center gap-3 lg:hidden">
         <Sheet open={tocOpen} onOpenChange={setTocOpen}>
@@ -445,7 +476,11 @@ export function ReaderView({
           {/* Markdown 正文（含配图穿插） */}
           <Card className="mx-auto mt-5 max-w-3xl">
             <CardContent className="p-5 sm:p-8">
-              <Markdown content={section.content} figures={sectionFigures} />
+              <Markdown
+                content={section.content}
+                figures={sectionFigures}
+                sectionCtx={{ sectionId: section.id, sectionTitle: section.title }}
+              />
             </CardContent>
           </Card>
 

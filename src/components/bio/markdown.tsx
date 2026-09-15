@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeUnwrapImages from 'rehype-unwrap-images'
-import { Maximize2 } from 'lucide-react'
+import { Maximize2, RotateCcw, Sparkles } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -20,6 +20,12 @@ export interface FigureItem {
   num: string
   caption: string
   credit?: string
+}
+
+/** 阅读上下文（供 AI 看图讲解携带教学位置） */
+export interface FigureSectionCtx {
+  sectionId: string
+  sectionTitle?: string
 }
 
 const FIGURE_MARKER = /^biofigure:\/\/(\d+)$/
@@ -61,9 +67,56 @@ function interleaveFigures(content: string, count: number): string {
     .join('\n')
 }
 
-/** 教材插图（figure）：纸面画框 + 学术图注 + 点击灯箱放大 */
-function BioFigure({ fig }: { fig: FigureItem }) {
+/** 教材插图（figure）：纸面画框 + 学术图注 + 点击灯箱放大（含 AI 看图讲解） */
+function BioFigure({
+  fig,
+  sectionCtx,
+}: {
+  fig: FigureItem
+  sectionCtx?: FigureSectionCtx
+}) {
   const [zoom, setZoom] = useState(false)
+  const [explanation, setExplanation] = useState<string | null>(null)
+  const [explaining, setExplaining] = useState(false)
+  const [explainErr, setExplainErr] = useState(false)
+
+  /** 调用后端 VLM 看图讲解 */
+  async function explainFigure() {
+    setExplaining(true)
+    setExplainErr(false)
+    try {
+      const res = await fetch('/api/assistant/figure-explain', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          src: fig.src,
+          num: fig.num,
+          caption: fig.caption,
+          credit: fig.credit,
+          sectionId: sectionCtx?.sectionId,
+        }),
+      })
+      if (!res.ok) throw new Error('failed')
+      const data = (await res.json()) as { content?: string }
+      if (!data.content) throw new Error('empty')
+      setExplanation(data.content)
+    } catch {
+      setExplainErr(true)
+    } finally {
+      setExplaining(false)
+    }
+  }
+
+  // 灯箱关闭时重置讲解状态
+  function handleOpenChange(open: boolean) {
+    setZoom(open)
+    if (!open) {
+      setExplanation(null)
+      setExplainErr(false)
+      setExplaining(false)
+    }
+  }
+
   return (
     <figure className="bio-figure my-7">
       <button
@@ -88,18 +141,18 @@ function BioFigure({ fig }: { fig: FigureItem }) {
         {fig.credit && <span className="bio-fig-credit">{fig.credit}</span>}
       </figcaption>
 
-      {/* 灯箱放大 */}
-      <Dialog open={zoom} onOpenChange={setZoom}>
-        <DialogContent className="max-w-4xl overflow-hidden p-0 sm:rounded-xl">
+      {/* 灯箱放大（含 AI 看图讲解） */}
+      <Dialog open={zoom} onOpenChange={handleOpenChange}>
+        <DialogContent className="max-h-[92vh] max-w-4xl overflow-y-auto p-0 sm:rounded-xl">
           <div className="sr-only">
             <DialogTitle>{`图 ${fig.num}`}</DialogTitle>
             <DialogDescription>{fig.caption}</DialogDescription>
           </div>
-          <div className="max-h-[75vh] overflow-y-auto bg-[#faf9f4] dark:bg-[#111a16]">
+          <div className="bg-[#faf9f4] dark:bg-[#111a16]">
             <img
               src={fig.src}
               alt={fig.caption}
-              className="mx-auto block w-full object-contain"
+              className="mx-auto block max-h-[62vh] w-auto max-w-full object-contain"
             />
           </div>
           <div className="border-t bg-background px-5 py-4">
@@ -110,6 +163,54 @@ function BioFigure({ fig }: { fig: FigureItem }) {
             {fig.credit && (
               <p className="mt-1 text-xs text-muted-foreground">{fig.credit}</p>
             )}
+
+            {/* AI 看图讲解 */}
+            <div className="mt-3 border-t pt-3">
+              {!explanation && !explaining && !explainErr && (
+                <button
+                  type="button"
+                  onClick={explainFigure}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-primary/30 bg-primary/5 px-3 py-1.5 text-xs font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <Sparkles className="h-3.5 w-3.5" aria-hidden />
+                  AI 看图讲解
+                  <span className="font-normal text-muted-foreground">（视觉模型读图）</span>
+                </button>
+              )}
+              {explaining && (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground" aria-live="polite">
+                  <span className="inline-block h-3.5 w-3.5 animate-spin rounded-full border-2 border-primary/30 border-t-primary" aria-hidden />
+                  正在看图，整理讲解要点…
+                </div>
+              )}
+              {explainErr && (
+                <div className="flex items-center gap-3 text-xs">
+                  <span className="text-destructive">讲解生成失败，请重试</span>
+                  <button
+                    type="button"
+                    onClick={explainFigure}
+                    className="inline-flex items-center gap-1 rounded-md border px-2 py-1 font-semibold transition-colors hover:bg-accent"
+                  >
+                    <RotateCcw className="h-3 w-3" aria-hidden />
+                    重试
+                  </button>
+                </div>
+              )}
+              {explanation && (
+                <div className="rounded-lg border-l-2 border-primary/40 bg-primary/[0.04] px-4 py-3">
+                  <div className="mb-1.5 flex items-center gap-1.5 text-[11px] font-semibold text-primary">
+                    <Sparkles className="h-3 w-3" aria-hidden />
+                    AI 助教 · 看图讲解
+                    <span className="font-normal text-muted-foreground">
+                      （视觉模型生成，请注意核对）
+                    </span>
+                  </div>
+                  <div className="bio-md text-sm leading-relaxed">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{explanation}</ReactMarkdown>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </DialogContent>
       </Dialog>
@@ -122,11 +223,14 @@ export function Markdown({
   content,
   className,
   figures,
+  sectionCtx,
 }: {
   content: string
   className?: string
   /** 小节配图（可选，自动按编号穿插进正文） */
   figures?: FigureItem[]
+  /** 阅读上下文（供插图 AI 讲解携带教学位置） */
+  sectionCtx?: FigureSectionCtx
 }) {
   const marked = useMemo(
     () => interleaveFigures(content, figures?.length ?? 0),
@@ -161,7 +265,7 @@ export function Markdown({
             const m = FIGURE_MARKER.exec(s)
             if (m && figures) {
               const fig = figures[Number(m[1])]
-              if (fig) return <BioFigure fig={fig} />
+              if (fig) return <BioFigure fig={fig} sectionCtx={sectionCtx} />
             }
             return (
               <img

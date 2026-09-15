@@ -927,4 +927,236 @@ export const glossary: GlossaryTerm[] = [
     definition:
       '把神经突起当作泄漏电缆处理的理论：膜时间常数 τ = r_m·c_m 决定时间整合窗，空间常数 λ = √(r_m/r_i) 决定被动电位指数衰减（V(x) = V₀e^(−x/λ)）的范围，是神经元时空信息整合（泄漏积分–发放）的物理框架。',
   },
+
+  // ---------- 分子结构词条（g-101 ~ g-124，配 RCSB CCD 真实结构式） ----------
+  {
+    id: 'g-101',
+    term: 'D-葡萄糖',
+    english: 'D-glucose',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '最重要的六碳醛糖（己醛糖），溶液中 ≥ 99% 以环状半缩醛形式存在，其中 β-D-吡喃葡萄糖因所有大取代基均处平伏位而占优势（约 64%）。是血液中的运输糖形式与细胞呼吸的通用起点底物。',
+  },
+  {
+    id: 'g-102',
+    term: 'D-果糖',
+    english: 'D-fructose',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '最重要的六碳酮糖（己酮糖），半缩醛中心位于 C2，溶液中主要以 β-D-呋喃糖（五元环）形式存在。比蔗糖更甜，是蜂蜜与许多水果甜味的来源；进入糖酵解前经果糖激酶磷酸化为 1-磷酸果糖（肝）或经己糖激酶转化为 6-磷酸果糖。',
+  },
+  {
+    id: 'g-103',
+    term: 'D-半乳糖',
+    english: 'D-galactose',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '葡萄糖的 C4 差向异构体（己醛糖），与葡萄糖结合构成乳糖，也是糖脂与糖蛋白 N-连接寡糖的组成成分。经 Leloir 途径（半乳糖激酶 → 1-磷酸半乳糖尿苷酰转移酶 → UDP-半乳糖 4-差向异构酶）转变为葡萄糖-1-磷酸后进入糖代谢。',
+  },
+  {
+    id: 'g-104',
+    term: '棕榈酸',
+    english: 'palmitic acid',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '十六碳饱和脂肪酸（16:0），脂肪酸从头合成途径的终产物——乙酰辅酶 A 经丙二酰辅酶 A 循环延伸的每一次二碳单位加成均由该途径产生。软脂酰-CoA 可经延长酶系或去饱和酶进一步加工为其他脂肪酸；棕榈酸也是棕榈油与动物脂肪的主要成分。',
+  },
+  {
+    id: 'g-105',
+    term: '油酸',
+    english: 'oleic acid',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '十八碳单不饱和脂肪酸（18:1 Δ9 顺式），顺式双键使烃链产生约 30° 固定弯折、熔点（13.4 ℃）远低于对应的饱和硬脂酸（69.6 ℃）。是橄榄油的主要脂肪酸，也是膜磷脂维持流动性的重要组分；由硬脂酰辅酶 A 去饱和酶在 Δ9 位引入双键生成。',
+  },
+  {
+    id: 'g-106',
+    term: '甘油',
+    english: 'glycerol',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '三元醇（丙三醇），甘油磷脂与甘油三酯的骨架：sn-1、sn-2 位酯化脂肪酸、sn-3 位连接磷酸或糖基头部即构成膜脂。甘油三酯脂解释放的甘油经甘油激酶（肝）磷酸化为 3-磷酸甘油后进入糖代谢（糖异生或糖酵解）。',
+  },
+  {
+    id: 'g-107',
+    term: '鞘氨醇',
+    english: 'sphingosine',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '十八碳长链氨基二醇（2S,3S,4E-2-氨基-十八-4-烯-1,3-二醇），鞘磷脂类（鞘磷脂、糖鞘脂）的共同骨架：其 C2 氨基以酰胺键连接脂肪酸即为神经酰胺，C1 羟基再连接磷酸胆碱或糖基分别生成鞘磷脂与糖鞘脂。',
+  },
+  {
+    id: 'g-108',
+    term: '腺嘌呤',
+    english: 'adenine',
+    abbreviation: 'A',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '嘌呤碱基（6-氨基嘌呤），DNA 与 RNA 的四种碱基之一，与胸腺嘧啶/尿嘧啶配对（A-T，两条氢键）。也是 ATP、NAD⁺、FAD、辅酶 A 与 cAMP 等辅酶与信号分子的腺苷组分——"腺嘌呤是能量与信息分子的共同接头"。',
+  },
+  {
+    id: 'g-109',
+    term: '鸟嘌呤',
+    english: 'guanine',
+    abbreviation: 'G',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '嘌呤碱基（2-氨基-6-氧嘌呤），DNA 与 RNA 的四种碱基之一，与胞嘧啶配对（G-C，三条氢键，故 GC 含量高的 DNA 更稳定、解链温度更高）。其酮式-烯醇式互变是 5-溴尿嘧啶等类似物诱发突变打击的靶点之一。',
+  },
+  {
+    id: 'g-110',
+    term: '胞嘧啶',
+    english: 'cytosine',
+    abbreviation: 'C',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '嘧啶碱基（4-氨基-2-氧嘧啶），DNA 与 RNA 共有的碱基，与鸟嘌呤配对（三条氢键）。其氨基可自发水解脱氨变为尿嘧啶（每昼夜每基因组数千次），是 DNA 需要尿嘧啶-DNA 糖苷酶修复系统持续巡查的原因；亚硫酸氢盐 sequencing 即利用该脱氨反应区分甲基化胞嘧啶。',
+  },
+  {
+    id: 'g-111',
+    term: '尿嘧啶',
+    english: 'uracil',
+    abbreviation: 'U',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '嘧啶碱基（2,4-二氧嘧啶），RNA 特有的碱基，与腺嘌呤配对（两条氢键）。DNA 用胸腺嘧啶（5-甲基尿嘧啶）替代尿嘧啶，使 DNA 修复系统能把脱氨产生的尿嘧啶与正常碱基区分开——这是 DNA 遗传稳定性的化学设计之一。',
+  },
+  {
+    id: 'g-112',
+    term: '胸腺嘧啶',
+    english: 'thymine',
+    abbreviation: 'T',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '嘧啶碱基（5-甲基尿嘧啶），DNA 特有碱基，与腺嘌呤配对（两条氢键）。其 5 位甲基正是区分 DNA 与 RNA 化学身份的标记：DNA 中胞嘧啶脱氨产生尿嘧啶而非胸腺嘧啶，修复系统得以识别切除。dTMP 由 dUMP 经胸苷酸合酶甲基化生成（dUMP + N⁵,N¹⁰-CH₂-THF → dTMP + DHF），是氟尿嘧啶类抗癌药的靶点。',
+  },
+  {
+    id: 'g-113',
+    term: '腺苷',
+    english: 'adenosine',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '腺嘌呤与核糖以 β-N9 糖苷键连接而成的核苷。腺苷三磷酸（ATP）为其三磷酸酯；游离腺苷是中枢神经系统抑制性调质（睡眠压力信号），经腺苷受体发挥作用——咖啡因正是通过阻断腺苷受体提神。',
+  },
+  {
+    id: 'g-114',
+    term: '烟酰胺腺嘌呤二核苷酸',
+    english: 'nicotinamide adenine dinucleotide',
+    abbreviation: 'NAD⁺',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '维生素 B3（烟酸/烟酰胺）来源的递氢辅酶：烟酰胺环 C4 接受一个负氢离子（H⁻）转变为 NADH，同时释放一个质子入介质——"NAD⁺ 捕获氢负离子"。是糖酵解、三羧酸循环与 β-氧化中主要的电子收集者，NADH 经呼吸链氧化偶联合成约 2.5 个 ATP。细胞内 NAD⁺/NADH 比值高（约 700），利于氧化分解；NADPH（磷酸型）则主要提供还原力用于生物合成。',
+  },
+  {
+    id: 'g-115',
+    term: '黄素腺嘌呤二核苷酸',
+    english: 'flavin adenine dinucleotide',
+    abbreviation: 'FAD',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '维生素 B2（核黄素）来源的递氢辅酶：异咯嗪环可接受两个氢原子（2H⁺ + 2e⁻）形成 FADH₂，也能进行单电子步骤（半醌中间体），故既可参与双电子转移也可参与单电子转移（如呼吸链复合物 II 与 β-氧化中的脂酰辅酶 A 脱氢酶）。FADH₂ 经呼吸链氧化偶联合成约 1.5 个 ATP。',
+  },
+  {
+    id: 'g-116',
+    term: '辅酶A',
+    english: 'coenzyme A',
+    abbreviation: 'CoA',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '泛酸（维生素 B5）来源的辅酶，由 ADP-焦磷酸-泛酰胺-巯基乙胺四部分组成。末端巯基（-SH）与羧酸形成高能硫酯键（如乙酰辅酶 A），携带酰基参与 α-酮酸氧化脱羧、β-氧化、柠檬酸循环与胆固醇/脂肪酸合成等几乎所有酰基转移反应。',
+  },
+  {
+    id: 'g-117',
+    term: '血红素',
+    english: 'heme',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '原卟啉 IX 与 Fe²⁺（亚铁）的络合物：四个吡咯环经次甲基桥连成平面大环，中心铁离子有六个配位键——四个与卟啉氮配位，第五、第六配位位分别连接组氨酸（近端）与可逆结合 O₂（血红蛋白/肌红蛋白）。铁的第六配位位被占据的方式决定功能：与 O₂ 可逆结合（输氧）、与 H₂O/Cu 协同（细胞色素氧化酶）或催化过氧化物分解（过氧化氢酶、过氧化物酶）。',
+  },
+  {
+    id: 'g-118',
+    term: '焦磷酸硫胺素',
+    english: 'thiamine pyrophosphate',
+    abbreviation: 'TPP',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '维生素 B1（硫胺素）的辅酶形式：噻唑环 C2 失去质子形成的碳负离子（ylide）是强亲核体，攻击 α-酮酸的羰基碳后使 C-C 键断裂，稳定"活性醛"中间体。丙酮酸脱氢酶、α-酮戊二酸脱氢酶与转酮酶的辅酶；缺乏时丙酮酸堆积导致脚气病（周围神经炎与心功能衰竭）。',
+  },
+  {
+    id: 'g-119',
+    term: '磷酸吡哆醛',
+    english: 'pyridoxal phosphate',
+    abbreviation: 'PLP',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '维生素 B6 的辅酶形式：吡啶环 4 位醛基与氨基酸底物的 α-氨基形成席夫碱（外部醛亚胺），随后吡啶环作为电子阱稳定共轭电子流，使 α-碳的 C-H 键断裂——因此同一辅酶可催化转氨、脱羧、消旋、β-消除等家族反应，是辅酶"多功能性"的经典范例。',
+  },
+  {
+    id: 'g-120',
+    term: '生物素',
+    english: 'biotin',
+    abbreviation: 'B7',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      'B 族维生素之一：咪唑酮环与四氢噻吩环并合、侧链戊酸羧基共价连接到羧化酶赖氨酸侧链 ε-氨基上。作为 CO₂ 的载体参与丙酮酸羧化酶、乙酰辅酶 A 羧化酶等羧化反应——N¹ 位氮与 CO₂ 结合形成 N-羧基生物素。蛋清中的抗生物素蛋白可与其紧密结合导致缺乏（生鸡蛋清毒性）。',
+  },
+  {
+    id: 'g-121',
+    term: '叶酸',
+    english: 'folic acid',
+    abbreviation: 'B9',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '蝶啶-对氨基苯甲酸-谷氨酸三部分构成的维生素，体内经二氢叶酸还原酶转变为四氢叶酸（THF）。THF 携带一碳单位（甲基、亚甲基、甲酰基等）参与核苷酸合成与氨基酸代谢；DNA 前体合成受阻是磺胺类与甲氨蝶呤的作用基础，孕妇缺乏导致神经管畸形。',
+  },
+  {
+    id: 'g-122',
+    term: '抗坏血酸',
+    english: 'ascorbic acid',
+    abbreviation: '维生素C',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '六碳内酯化合物（烯二醇结构使其易被氧化为脱氢抗坏血酸，形成可逆的氧化还原对）：是脯氨酰/赖氨酰羟化酶（胶原合成）与多巴胺 β-羟化酶的辅因子，维持铁在 Fe²⁺ 状态并促进铁吸收。人类因 L-古洛糖酸内酯氧化酶基因突变丧失自合成能力，必须从食物获取；缺乏导致胶原缺陷性疾病——坏血病。',
+  },
+  {
+    id: 'g-123',
+    term: '视黄醇',
+    english: 'retinol',
+    abbreviation: 'A',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '脂溶性维生素 A 的醇形式：β-紫罗酮环 + 11,12-位全反式共轭四烯侧链。在视网膜内氧化为视黄醛，与视蛋白的赖氨酸残基形成席夫碱构成视紫红质的发色团——光诱导顺反异构化触发视觉级联；也是视黄酸（RA）信号分子的前体，调控发育与分化。',
+  },
+  {
+    id: 'g-124',
+    term: 'β-胡萝卜素',
+    english: 'β-carotene',
+    subjectId: 'biochemistry',
+    category: '分子结构',
+    definition:
+      '两个 β-紫罗酮环由九个共轭双键连接而成的对称分子（C₄₀），是维生素 A 原：在肠黏膜 β-胡萝卜素双加氧酶作用下从中央对称裂解为两分子视黄醛。共轭多烯链使其成为高效单线态氧淬灭剂（抗氧化）；全长共轭结构还使其在光系统Ⅱ的集光复合体中担任天线色素。',
+  },
 ]

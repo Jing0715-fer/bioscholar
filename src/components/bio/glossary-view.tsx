@@ -3,14 +3,16 @@
 import { useMemo, useState } from 'react'
 import { glossary } from '@/data/glossary'
 import { subjects, getSubject } from '@/data/biology'
+import { termStructures, termStructureSrc } from '@/data/term-structures'
 import type { GlossaryTerm, SubjectId } from '@/lib/types'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
-import { LayoutGrid, Layers, Search, SearchX, X } from 'lucide-react'
+import { ExternalLink, FlaskConical, LayoutGrid, Layers, Maximize2, Search, SearchX, X } from 'lucide-react'
 
 // ============================================================
 // 常量
@@ -74,6 +76,8 @@ function FilterTab({
 function TermCard({ term }: { term: GlossaryTerm }) {
   const theme = getSubjectTheme(term.subjectId)
   const subjectName = getSubject(term.subjectId)?.name ?? ''
+  const struct = termStructures[term.id]
+  const [zoom, setZoom] = useState(false)
   return (
     <Card
       className={cn(
@@ -82,38 +86,106 @@ function TermCard({ term }: { term: GlossaryTerm }) {
       )}
     >
       <CardContent className="p-4">
-        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <h3 className="text-sm font-semibold leading-tight sm:text-base">{term.term}</h3>
-          {term.abbreviation && (
-            <Badge variant="outline" className="px-1.5 font-mono text-[10px] font-bold">
-              {term.abbreviation}
-            </Badge>
+        <div className="flex gap-3">
+          <div className="min-w-0 flex-1">
+            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+              <h3 className="text-sm font-semibold leading-tight sm:text-base">{term.term}</h3>
+              {term.abbreviation && (
+                <Badge variant="outline" className="px-1.5 font-mono text-[10px] font-bold">
+                  {term.abbreviation}
+                </Badge>
+              )}
+            </div>
+            <p
+              className="mt-0.5 truncate font-serif text-xs italic text-muted-foreground"
+              title={term.english}
+            >
+              {term.english}
+            </p>
+            <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1.5">
+              <span
+                className={cn('inline-flex items-center gap-1 text-[11px] font-medium', theme.classes.text)}
+              >
+                <theme.icon className="h-3 w-3" aria-hidden />
+                {subjectName}
+              </span>
+              <span className="text-[11px] opacity-30" aria-hidden>
+                ·
+              </span>
+              <Badge variant="outline" className="text-[10px] text-muted-foreground">
+                {term.category}
+              </Badge>
+            </div>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">
+              {term.definition}
+            </p>
+          </div>
+          {/* RCSB CCD 真实结构式缩略图 */}
+          {struct && (
+            <button
+              type="button"
+              onClick={() => setZoom(true)}
+              aria-label={`查看「${term.term}」的分子结构式`}
+              title="RCSB CCD 真实结构式，点击放大"
+              className="group/struct relative h-[92px] w-[92px] shrink-0 cursor-zoom-in self-start overflow-hidden rounded-lg border bg-[#faf9f4] outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring dark:bg-[#111a16]"
+            >
+              <img
+                src={termStructureSrc(term.id) ?? undefined}
+                alt={`${term.term}的分子结构式（RCSB CCD ${struct.code}）`}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-contain p-1.5 transition-transform duration-300 group-hover/struct:scale-105"
+              />
+              <span className="absolute bottom-1 right-1 flex h-4.5 w-4.5 items-center justify-center rounded-full bg-background/85 p-0.5 text-foreground/70 opacity-0 shadow-sm transition-opacity group-hover/struct:opacity-100">
+                <Maximize2 className="h-2.5 w-2.5" aria-hidden />
+              </span>
+            </button>
           )}
         </div>
-        <p
-          className="mt-0.5 truncate font-serif text-xs italic text-muted-foreground"
-          title={term.english}
-        >
-          {term.english}
-        </p>
-        <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1.5">
-          <span
-            className={cn('inline-flex items-center gap-1 text-[11px] font-medium', theme.classes.text)}
-          >
-            <theme.icon className="h-3 w-3" aria-hidden />
-            {subjectName}
-          </span>
-          <span className="text-[11px] opacity-30" aria-hidden>
-            ·
-          </span>
-          <Badge variant="outline" className="text-[10px] text-muted-foreground">
-            {term.category}
-          </Badge>
-        </div>
-        <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">
-          {term.definition}
-        </p>
       </CardContent>
+
+      {/* 结构式灯箱 */}
+      <Dialog open={zoom} onOpenChange={setZoom}>
+        <DialogContent className="max-w-lg overflow-hidden p-0 sm:rounded-xl">
+          <div className="sr-only">
+            <DialogTitle>{`${term.term} · 分子结构式`}</DialogTitle>
+            <DialogDescription>{`RCSB CCD ${struct?.code}：${struct?.en}`}</DialogDescription>
+          </div>
+          <div className="flex items-center justify-center bg-[#faf9f4] px-6 py-6 dark:bg-[#111a16]">
+            <img
+              src={termStructureSrc(term.id) ?? undefined}
+              alt={`${term.term}的分子结构式`}
+              className="max-h-[46vh] w-auto max-w-full object-contain"
+            />
+          </div>
+          <div className="border-t bg-background px-5 py-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <h4 className="font-serif text-sm font-bold">{term.term}</h4>
+              <span className="font-mono text-[10px] text-muted-foreground">CCD {struct?.code}</span>
+            </div>
+            <dl className="mt-2 space-y-1 text-xs text-muted-foreground">
+              <div className="flex gap-2">
+                <dt className="shrink-0 font-medium">英文名</dt>
+                <dd className="truncate" title={struct?.en}>
+                  {struct?.en}
+                </dd>
+              </div>
+              <div className="flex gap-2">
+                <dt className="shrink-0 font-medium">分子式</dt>
+                <dd className="font-mono">{struct?.formula}</dd>
+              </div>
+            </dl>
+            <a
+              href={`https://www.rcsb.org/ligand/${struct?.code}`}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border bg-card px-3 py-1.5 text-xs font-semibold transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+              在 RCSB 查看该分子
+            </a>
+          </div>
+        </DialogContent>
+      </Dialog>
     </Card>
   )
 }
@@ -175,7 +247,8 @@ export function GlossaryView() {
               术语词典
             </h1>
             <p className="mt-1.5 text-sm text-muted-foreground">
-              收录 {glossary.length} 条跨学科专业术语 · 支持中英文与缩写检索
+              收录 {glossary.length} 条跨学科专业术语 · {Object.keys(termStructures).length} 个分子配有
+              RCSB CCD 真实结构式 · 支持中英文与缩写检索
             </p>
           </div>
           <Button

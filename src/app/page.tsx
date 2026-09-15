@@ -18,6 +18,7 @@ import {
   Layers,
   NotebookPen,
   FileChartColumn,
+  Images,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
@@ -39,6 +40,7 @@ import { SearchDialog } from '@/components/bio/search-dialog'
 import { RevisionView } from '@/components/bio/revision-view'
 import { WrongbookView } from '@/components/bio/wrongbook-view'
 import { ReportView } from '@/components/bio/report-view'
+import { GalleryView } from '@/components/bio/gallery-view'
 
 const NAV_ITEMS: Array<{
   key: NavKey
@@ -54,6 +56,7 @@ const NAV_ITEMS: Array<{
   { key: 'wrongbook', label: '错题本', icon: NotebookPen, desc: '测验错题归集复习' },
   { key: 'report', label: '学习报告', icon: FileChartColumn, desc: '学习数据汇总与导出' },
   { key: 'glossary', label: '术语词典', icon: BookMarked, desc: '跨学科专业术语' },
+  { key: 'gallery', label: '教材图库', icon: Images, desc: '真实科学数据配图' },
   { key: 'notes', label: '学习笔记', icon: StickyNote, desc: '我的知识笔记' },
 ]
 
@@ -269,6 +272,7 @@ export default function Home() {
                 {view.name === 'wrongbook' && <WrongbookView />}
                 {view.name === 'report' && <ReportView />}
                 {view.name === 'glossary' && <GlossaryView />}
+                {view.name === 'gallery' && <GalleryView />}
                 {view.name === 'notes' && <NotesView />}
                 {view.name === 'assistant' && <AssistantView />}
               </div>

@@ -14,6 +14,7 @@ export type NavKey =
   | 'wrongbook'
   | 'report'
   | 'glossary'
+  | 'gallery'
   | 'notes'
 
 interface AppState {
