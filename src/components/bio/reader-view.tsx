@@ -2,8 +2,14 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { useAppStore } from '@/lib/store'
-import { getSubject, getQuizByChapter } from '@/data/biology'
+import {
+  getSubject,
+  getQuizByChapter,
+  getSectionWordCount,
+  getSubjectWordCount,
+} from '@/data/biology'
 import { getIllustrations } from '@/data/illustrations'
+import { formatWordCount, readingMinutes } from '@/lib/word-count'
 import type { Chapter, Section, Subject, SubjectId } from '@/lib/types'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { Markdown } from '@/components/bio/markdown'
@@ -144,9 +150,9 @@ export function ReaderView({
     ) ?? 0
   const percent = totalSections ? Math.round((doneCount / totalSections) * 100) : 0
   const quizCount = getQuizByChapter(chapterId).length
-  const readMinutes = section
-    ? Math.max(1, Math.round(section.content.length / 500))
-    : 0
+  // 本节字数（含中文逐字与英文按词的学术计数口径）与预计阅读时长
+  const sectionWords = section ? getSectionWordCount(section.id) : 0
+  const readMinutes = readingMinutes(sectionWords)
   // 本节配图（自动编号并穿插进正文；useMemo 稳定引用，避免阅读进度条等
   // 无关 state 更新引发 react-markdown 重建正文 DOM、中断滚动/高亮）
   const sectionFigures = useMemo(
@@ -275,7 +281,8 @@ export function ReaderView({
               </SheetTitle>
               <SheetDescription asChild>
                 <p className="text-xs text-muted-foreground">
-                  {subject.chapters.length} 章 · {totalSections} 节 · 已学{' '}
+                  {subject.chapters.length} 章 · {totalSections} 节 · 约{' '}
+                  {formatWordCount(getSubjectWordCount(subjectId))} · 已学{' '}
                   {doneCount} 节（{percent}%）
                 </p>
               </SheetDescription>
@@ -471,7 +478,13 @@ export function ReaderView({
                 <span className="opacity-30" aria-hidden="true">
                   ·
                 </span>
-                <span>约 {readMinutes} 分钟</span>
+                <span className="tabular-nums">
+                  全文 {sectionWords.toLocaleString('zh-CN')} 字
+                </span>
+                <span className="opacity-30" aria-hidden="true">
+                  ·
+                </span>
+                <span className="tabular-nums">约 {readMinutes} 分钟</span>
                 <span className="opacity-30" aria-hidden="true">
                   ·
                 </span>

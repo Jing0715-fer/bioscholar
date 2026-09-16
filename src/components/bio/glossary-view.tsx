@@ -35,6 +35,7 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   'molecular-biology': 'border-l-violet-500',
   'cell-biology': 'border-l-rose-500',
   biophysics: 'border-l-cyan-500',
+  microbiology: 'border-l-emerald-500',
 }
 
 /** 学科筛选下边线激活态（学科色文字 + 下边线，不用全色块） */
@@ -44,6 +45,8 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'border-b-violet-500 text-violet-700 dark:border-b-violet-400 dark:text-violet-400',
   'cell-biology': 'border-b-rose-500 text-rose-700 dark:border-b-rose-400 dark:text-rose-400',
   biophysics: 'border-b-cyan-500 text-cyan-700 dark:border-b-cyan-400 dark:text-cyan-400',
+  microbiology:
+    'border-b-emerald-500 text-emerald-700 dark:border-b-emerald-400 dark:text-emerald-400',
 }
 
 // ============================================================

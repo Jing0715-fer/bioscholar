@@ -2,7 +2,15 @@
 
 import { useEffect, useState } from 'react'
 import { useAppStore } from '@/lib/store'
-import { subjects, allQuizQuestions } from '@/data/biology'
+import {
+  subjects,
+  allQuizQuestions,
+  totalWordCount,
+  getSubjectWordCount,
+  sectionWordCounts,
+} from '@/data/biology'
+import { glossary } from '@/data/glossary'
+import { formatWordCount } from '@/lib/word-count'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { subjectCovers, heroImage } from '@/data/illustrations'
 import {
@@ -65,6 +73,11 @@ export function Dashboard() {
 
   const totalCompleted = completedSections.length
   const overallPercent = Math.round((totalCompleted / TOTAL_SECTIONS) * 100)
+  // 累计已读字数（已完成小节的正文字数合计）
+  const readWords = completedSections.reduce(
+    (a, sid) => a + (sectionWordCounts[sid] ?? 0),
+    0
+  )
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
@@ -80,12 +93,13 @@ export function Dashboard() {
             </h1>
             <div className="bio-rule mt-5" aria-hidden />
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              覆盖生物化学、分子生物学、细胞生物学与生物物理学四大基础学科，
-              系统梳理生命的分子逻辑。
+              覆盖生物化学、分子生物学、细胞生物学、生物物理学与微生物学五大基础学科，
+              系统梳理生命的分子逻辑与细胞世界。
             </p>
             <p className="mt-2 text-xs tabular-nums text-muted-foreground/80">
-              {TOTAL_CHAPTERS} 章 · {TOTAL_SECTIONS} 小节 ·{' '}
-              {allQuizQuestions.length} 道自测题 · AI 智能助教
+              {TOTAL_CHAPTERS} 章 · {TOTAL_SECTIONS} 小节 · 教材全文约{' '}
+              {formatWordCount(totalWordCount)} · {allQuizQuestions.length} 道自测题 ·
+              AI 智能助教
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button onClick={() => navigate({ name: 'subjects' })}>
@@ -121,7 +135,7 @@ export function Dashboard() {
         <StatTile
           label="已学小节"
           value={`${totalCompleted}`}
-          sub={`全书 ${TOTAL_SECTIONS} 节 · ${overallPercent}%`}
+          sub={`全书 ${TOTAL_SECTIONS} 节 ${overallPercent}% · 已读 ${formatWordCount(readWords)}`}
         />
         <StatTile
           label="答题总数"
@@ -139,7 +153,7 @@ export function Dashboard() {
           sub={
             stats?.dueCards
               ? '今日到期 · 按 SM-2 调度'
-              : '303 张卡 · 无今日到期'
+              : `${glossary.length} 术语卡在库 · 无今日到期`
           }
           onClick={() => navigate({ name: 'revision' })}
         />
@@ -164,7 +178,7 @@ export function Dashboard() {
               <span className="h-2.5 w-2.5 rounded-[2px] bg-primary/70" aria-hidden />
               <h2 className="font-serif text-lg font-bold">学科学习进度</h2>
               <span className="ml-auto text-xs tabular-nums text-muted-foreground">
-                四学科 · {TOTAL_SECTIONS} 小节
+                五学科 · {TOTAL_SECTIONS} 小节 · 约 {formatWordCount(totalWordCount)}
               </span>
             </div>
             <div className="mt-4 space-y-2">
@@ -212,7 +226,8 @@ export function Dashboard() {
                         </span>
                       </span>
                       <span className="mt-1 block truncate text-xs tabular-nums text-muted-foreground">
-                        {subject.chapters.length} 章 · {total} 小节 · {done} 节已完成
+                        {subject.chapters.length} 章 · {total} 小节 · 约{' '}
+                        {formatWordCount(getSubjectWordCount(subject.id))} · {done} 节已完成
                       </span>
                       <span
                         className="mt-2 block h-1 w-full overflow-hidden rounded-full bg-muted"

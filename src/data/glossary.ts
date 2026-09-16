@@ -5,6 +5,8 @@
 
 import type { GlossaryTerm } from '@/lib/types'
 
+import { microGlossary } from './glossary-micro'
+
 export const glossary: GlossaryTerm[] = [
   // ---------- 生物化学（g-001 ~ g-026） ----------
   {
@@ -1159,4 +1161,5 @@ export const glossary: GlossaryTerm[] = [
     definition:
       '两个 β-紫罗酮环由九个共轭双键连接而成的对称分子（C₄₀），是维生素 A 原：在肠黏膜 β-胡萝卜素双加氧酶作用下从中央对称裂解为两分子视黄醛。共轭多烯链使其成为高效单线态氧淬灭剂（抗氧化）；全长共轭结构还使其在光系统Ⅱ的集光复合体中担任天线色素。',
   },
+  ...microGlossary,
 ]

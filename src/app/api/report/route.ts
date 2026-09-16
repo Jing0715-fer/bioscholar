@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
-import { subjects } from '@/data/biology'
+import { subjects, sectionWordCounts, totalWordCount } from '@/data/biology'
 import { glossary } from '@/data/glossary'
 import { isMastered } from '@/lib/srs'
 import type { SubjectId } from '@/lib/types'
@@ -167,6 +167,12 @@ export async function GET() {
     const overview = {
       completedSections: progress.length,
       totalSections: TOTAL_SECTIONS,
+      // 累计已读字数（按已完成小节的正文字数合计，含扩充层）
+      readWords: progress.reduce(
+        (a, p) => a + (sectionWordCounts[p.sectionId] ?? 0),
+        0
+      ),
+      totalWords: totalWordCount,
       quizTotal,
       quizCorrect,
       accuracy: quizTotal ? Math.round((quizCorrect / quizTotal) * 100) : 0,

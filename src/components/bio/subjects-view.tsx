@@ -2,7 +2,15 @@
 
 import { useState } from 'react'
 import { useAppStore } from '@/lib/store'
-import { subjects, getQuizBySubject } from '@/data/biology'
+import {
+  subjects,
+  getQuizBySubject,
+  getSubjectWordCount,
+  getChapterWordCount,
+  getSectionWordCount,
+  totalWordCount,
+} from '@/data/biology'
+import { formatWordCount, readingMinutes } from '@/lib/word-count'
 import type { SubjectId } from '@/lib/types'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { subjectCovers } from '@/data/illustrations'
@@ -32,11 +40,12 @@ function SubjectGrid({ onSelect }: { onSelect: (id: SubjectId) => void }) {
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
       <header className="mb-8">
-        <p className="bio-eyebrow text-primary">Four Core Disciplines</p>
+        <p className="bio-eyebrow text-primary">Core Disciplines</p>
         <h1 className="mt-2 font-serif text-3xl font-bold tracking-tight">学科中心</h1>
         <div className="bio-rule mt-3" aria-hidden />
         <p className="mt-3 text-sm text-muted-foreground">
-          四大基础学科 · 忠实还原「101计划」核心课程教材知识体系
+          基础学科教材知识体系 · 全文约 {formatWordCount(totalWordCount)} ·
+          系统梳理生命的分子与细胞逻辑
         </p>
       </header>
 
@@ -84,7 +93,8 @@ function SubjectGrid({ onSelect }: { onSelect: (id: SubjectId) => void }) {
                   {subject.description}
                 </p>
                 <p className="mt-3 text-xs tabular-nums text-muted-foreground">
-                  {subject.chapters.length} 章 · {totalSections} 小节 · {quizCount}{' '}
+                  {subject.chapters.length} 章 · {totalSections} 小节 · 约{' '}
+                  {formatWordCount(getSubjectWordCount(subject.id))} · {quizCount}{' '}
                   道自测题
                 </p>
                 <div className="mt-4">
@@ -241,8 +251,11 @@ function SubjectDetail({
                         {chapter.summary}
                       </div>
                     </div>
-                    <span className="shrink-0 text-[11px] tabular-nums text-muted-foreground">
-                      {done}/{chapter.sections.length}
+                    <span className="shrink-0 text-right text-[11px] tabular-nums text-muted-foreground">
+                      <span className="block">{done}/{chapter.sections.length}</span>
+                      <span className="mt-0.5 block text-[10px] text-muted-foreground/70">
+                        约 {formatWordCount(getChapterWordCount(chapter.id))}
+                      </span>
                     </span>
                   </div>
                 </AccordionTrigger>
@@ -274,8 +287,9 @@ function SubjectDetail({
                               {section.title}
                             </span>
                             <span className="shrink-0 text-[10px] tabular-nums text-muted-foreground/70">
-                              约 {Math.max(1, Math.round(section.content.length / 500))}{' '}
-                              分钟
+                              {getSectionWordCount(section.id).toLocaleString('zh-CN')}{' '}
+                              字 · 约{' '}
+                              {readingMinutes(getSectionWordCount(section.id))} 分钟
                             </span>
                           </button>
                         </li>

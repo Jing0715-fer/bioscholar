@@ -64,6 +64,7 @@ const SUBJECT_IDS: ReadonlyArray<SubjectId> = [
   'molecular-biology',
   'cell-biology',
   'biophysics',
+  'microbiology',
 ]
 
 function isSubjectId(v: string | null): v is SubjectId {

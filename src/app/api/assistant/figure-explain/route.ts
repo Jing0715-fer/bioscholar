@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import ZAI from 'z-ai-web-dev-sdk'
-import { getSubject } from '@/data/biology'
+import { subjects } from '@/data/biology'
 import type { SubjectId } from '@/lib/types'
 
 export const runtime = 'nodejs'
@@ -96,12 +96,12 @@ export async function POST(req: NextRequest) {
     // ---- 组装教学上下文 ----
     let ctx: { subjectName?: string; chapterTitle?: string; sectionTitle?: string } = {}
     if (body.sectionId) {
-      for (const subject of ['biochemistry', 'molecular-biology', 'cell-biology', 'biophysics'] as SubjectId[]) {
-        for (const chapter of getSubject(subject)?.chapters ?? []) {
+      for (const subject of subjects) {
+        for (const chapter of subject.chapters) {
           const section = chapter.sections.find((s) => s.id === body.sectionId)
           if (section) {
             ctx = {
-              subjectName: getSubject(subject)?.name,
+              subjectName: subject.name,
               chapterTitle: `第 ${chapter.number} 章 ${chapter.title}`,
               sectionTitle: section.title,
             }

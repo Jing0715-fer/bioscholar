@@ -15,17 +15,19 @@
 // 图注采用学术严谨的中文描述，并标注数据来源
 // ============================================================
 import type { Illustration, SubjectId } from '@/lib/types'
+import { microIllustrations } from './micro-illustrations'
 
-/** 学科封面图（学科中心卡片 / 阅读器用） */
+/** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
-  biochemistry: '/images/bio/covers/cover-biochemistry.png',
-  'molecular-biology': '/images/bio/covers/cover-molecular-biology.png',
-  'cell-biology': '/images/bio/covers/cover-cell-biology.png',
-  biophysics: '/images/bio/covers/cover-biophysics.png',
+  biochemistry: '/images/bio/covers/cover-biochemistry.svg',
+  'molecular-biology': '/images/bio/covers/cover-molecular-biology.svg',
+  'cell-biology': '/images/bio/covers/cover-cell-biology.svg',
+  biophysics: '/images/bio/covers/cover-biophysics.svg',
+  microbiology: '/images/bio/covers/cover-microbiology.svg',
 }
 
-/** 仪表盘主视觉横幅 */
-export const heroImage = '/images/bio/covers/hero-bioscience.png'
+/** 仪表盘主视觉横幅（自绘矢量） */
+export const heroImage = '/images/bio/covers/hero-bioscience.svg'
 
 const DRAWN_CREDIT = '依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）'
 const CCD_CREDIT = '结构式来源：RCSB PDB 化学组分字典（CCD）'
@@ -658,5 +660,5 @@ export const illustrations: Record<string, Illustration[]> = {
 
 /** 获取某小节的配图（无配图返回空数组） */
 export function getIllustrations(sectionId: string): Illustration[] {
-  return illustrations[sectionId] ?? []
+  return [...(illustrations[sectionId] ?? []), ...(microIllustrations[sectionId] ?? [])]
 }

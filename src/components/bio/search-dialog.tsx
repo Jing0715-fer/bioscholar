@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 import { useAppStore } from '@/lib/store'
 import { subjects } from '@/data/biology'
 import { glossary } from '@/data/glossary'
-import { illustrations } from '@/data/illustrations'
+import { getIllustrations } from '@/data/illustrations'
 import { figureNumber } from '@/lib/figure-utils'
 import {
   CommandDialog,
@@ -106,7 +106,7 @@ export function SearchDialog({
     for (const subject of subjects) {
       for (const chapter of subject.chapters) {
         for (const section of chapter.sections) {
-          const figs = illustrations[section.id]
+          const figs = getIllustrations(section.id)
           if (!figs?.length) continue
           figs.forEach((fig, i) => {
             const src = fig.src

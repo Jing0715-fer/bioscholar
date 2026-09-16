@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：细胞生物学 · 绯红 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#e11d48" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#e11d48" stroke-opacity="0.6" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#e11d48"/>
+
+  <!-- eyebrow -->
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#be123c">CELL BIOLOGY · 101 CORE CURRICULUM</text>
+
+  <!-- 书名 -->
+  <text x="404" y="224" text-anchor="middle" font-size="68" font-weight="700" letter-spacing="8" fill="#1c1917">细胞生物学</text>
+
+  <!-- bio-rule 双分隔线 -->
+  <line x1="335" y1="262" x2="465" y2="262" stroke="#e11d48" stroke-width="2.5"/>
+  <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+
+  <!-- 副题 -->
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">翟中和体系 · 12 章 53 节</text>
+
+  <!-- ===== 科学元素线稿带 ===== -->
+  <!-- 细胞剖面（双层膜、核与核仁、小型细胞器） -->
+  <circle cx="170" cy="392" r="55" fill="#e11d48" fill-opacity="0.04" stroke="#e11d48" stroke-width="2.2"/>
+  <circle cx="170" cy="392" r="50.5" fill="none" stroke="#e11d48" stroke-width="0.9" stroke-opacity="0.5"/>
+  <circle cx="158" cy="381" r="18" fill="#e11d48" fill-opacity="0.10" stroke="#e11d48" stroke-width="1.6"/>
+  <circle cx="162" cy="378" r="6.5" fill="#e11d48" fill-opacity="0.4"/>
+  <g transform="rotate(-22 196 408)">
+    <ellipse cx="196" cy="408" rx="13" ry="6.5" fill="none" stroke="#be123c" stroke-width="1.3"/>
+  </g>
+  <path d="M136,424 q8,-8 16,0 t16,0" fill="none" stroke="#be123c" stroke-width="1.2"/>
+  <circle cx="145" cy="362" r="1.7" fill="#be123c"/>
+  <circle cx="188" cy="362" r="1.7" fill="#be123c"/>
+  <circle cx="203" cy="392" r="1.7" fill="#be123c"/>
+
+  <!-- 线粒体（外膜 + 内膜 + 嵴） -->
+  <ellipse cx="340" cy="392" rx="48" ry="21" fill="#e11d48" fill-opacity="0.05" stroke="#e11d48" stroke-width="2.2"/>
+  <ellipse cx="340" cy="392" rx="43" ry="16.5" fill="none" stroke="#be123c" stroke-width="1" stroke-opacity="0.75"/>
+  <g fill="none" stroke="#be123c" stroke-width="1.3" stroke-opacity="0.85">
+    <path d="M312,380 Q318,392 312,404"/>
+    <path d="M326,377 Q320,392 326,407"/>
+    <path d="M340,376 Q347,392 340,408"/>
+    <path d="M354,377 Q348,392 354,407"/>
+    <path d="M368,380 Q374,392 368,404"/>
+  </g>
+
+  <!-- 内质网（波浪膜带 + 核糖体颗粒） -->
+  <path d="M415,384 q10,-12 20,0 t20,0 t20,0 t20,0 t20,0" fill="none" stroke="#e11d48" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M415,393 q10,-12 20,0 t20,0 t20,0 t20,0 t20,0" fill="none" stroke="#e11d48" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="435" cy="379" r="1.8" fill="#be123c"/>
+  <circle cx="455" cy="379" r="1.8" fill="#be123c"/>
+  <circle cx="475" cy="379" r="1.8" fill="#be123c"/>
+  <circle cx="495" cy="379" r="1.8" fill="#be123c"/>
+
+  <!-- 高尔基体（堆叠囊 + 分泌泡） -->
+  <g fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round">
+    <path d="M612,372 Q652,388 692,372"/>
+    <path d="M616,384 Q652,398 688,384"/>
+    <path d="M622,396 Q652,408 682,396"/>
+    <path d="M630,408 Q652,417 674,408"/>
+  </g>
+  <circle cx="694" cy="412" r="2.5" fill="#e11d48" fill-opacity="0.6"/>
+  <circle cx="700" cy="402" r="2.2" fill="#e11d48" fill-opacity="0.6"/>
+  <circle cx="702" cy="391" r="2" fill="#e11d48" fill-opacity="0.6"/>
+
+  <!-- 元素小注 -->
+  <text x="170" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">细胞剖面</text>
+  <text x="340" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">线粒体</text>
+  <text x="465" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">内质网</text>
+  <text x="655" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">高尔基体</text>
+</svg>

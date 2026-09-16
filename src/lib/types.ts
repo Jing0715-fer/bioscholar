@@ -9,6 +9,7 @@ export type SubjectId =
   | 'molecular-biology'
   | 'cell-biology'
   | 'biophysics'
+  | 'microbiology'
 
 /** 学科 */
 export interface Subject {

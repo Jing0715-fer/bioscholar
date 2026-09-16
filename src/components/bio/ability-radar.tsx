@@ -273,7 +273,7 @@ export function buildAbilityDims(input: {
       label: '知识覆盖',
       score: coverage,
       raw: `${completedSections}/${totalSections} 小节`,
-      hint: '已完成小节占四学科全部小节的比例，反映教材推进广度',
+      hint: '已完成小节占五学科全部小节的比例，反映教材推进广度',
     },
     {
       key: 'accuracy',

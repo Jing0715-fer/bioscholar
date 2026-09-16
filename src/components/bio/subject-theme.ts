@@ -5,6 +5,7 @@ import {
   Dna,
   Microscope,
   Atom,
+  Biohazard,
 } from 'lucide-react'
 
 /** 学科主题色映射（Tailwind 类名） */
@@ -82,6 +83,20 @@ export const subjectThemes: Record<
       hover: 'hover:border-cyan-500/60 hover:shadow-cyan-500/10',
     },
     colorName: '青碧',
+  },
+  microbiology: {
+    icon: Biohazard,
+    classes: {
+      bg: 'bg-emerald-600 text-white',
+      bgSoft: 'bg-emerald-500/10',
+      text: 'text-emerald-700 dark:text-emerald-400',
+      border: 'border-emerald-500/40',
+      ring: 'ring-emerald-500/30',
+      gradient: 'from-emerald-500/90 to-green-600/90',
+      badge: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30',
+      hover: 'hover:border-emerald-500/60 hover:shadow-emerald-500/10',
+    },
+    colorName: '翠微',
   },
 }
 

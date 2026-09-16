@@ -56,6 +56,8 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-rose-500/10 dark:data-[state=active]:bg-rose-500/15 data-[state=active]:text-rose-700 dark:data-[state=active]:text-rose-400 data-[state=active]:shadow-none',
   biophysics:
     'data-[state=active]:bg-cyan-500/10 dark:data-[state=active]:bg-cyan-500/15 data-[state=active]:text-cyan-700 dark:data-[state=active]:text-cyan-400 data-[state=active]:shadow-none',
+  microbiology:
+    'data-[state=active]:bg-emerald-500/10 dark:data-[state=active]:bg-emerald-500/15 data-[state=active]:text-emerald-700 dark:data-[state=active]:text-emerald-400 data-[state=active]:shadow-none',
 }
 
 /** 学科主按钮配色（含 hover 深色，避免默认 hover 变主色） */
@@ -64,6 +66,7 @@ const SUBJECT_BUTTON: Record<SubjectId, string> = {
   'molecular-biology': 'bg-violet-600 text-white hover:bg-violet-700',
   'cell-biology': 'bg-rose-600 text-white hover:bg-rose-700',
   biophysics: 'bg-cyan-600 text-white hover:bg-cyan-700',
+  microbiology: 'bg-emerald-600 text-white hover:bg-emerald-700',
 }
 
 /** 章节卡学科色左边框 */
@@ -72,6 +75,7 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   'molecular-biology': 'border-l-violet-500',
   'cell-biology': 'border-l-rose-500',
   biophysics: 'border-l-cyan-500',
+  microbiology: 'border-l-emerald-500',
 }
 
 interface AttemptApiItem {

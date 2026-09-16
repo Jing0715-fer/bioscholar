@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：生物化学 · 琥珀 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#d97706" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#d97706" stroke-opacity="0.6" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#d97706"/>
+
+  <!-- eyebrow -->
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#b45309">BIOCHEMISTRY · 101 CORE CURRICULUM</text>
+
+  <!-- 书名 -->
+  <text x="407" y="224" text-anchor="middle" font-size="80" font-weight="700" letter-spacing="14" fill="#1c1917">生物化学</text>
+
+  <!-- bio-rule 双分隔线 -->
+  <line x1="335" y1="262" x2="465" y2="262" stroke="#d97706" stroke-width="2.5"/>
+  <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+
+  <!-- 副题 -->
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">王镜岩体系 · 12 章 53 节</text>
+
+  <!-- ===== 科学元素线稿带 ===== -->
+  <!-- 苯环（六元环 + 芳香大π键内圈） -->
+  <polygon points="150,360 124,375 124,405 150,420 176,405 176,375" fill="#d97706" fill-opacity="0.06" stroke="#d97706" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="150" cy="390" r="17" fill="none" stroke="#d97706" stroke-width="1.3"/>
+
+  <!-- 吡喃糖环（Haworth 投影：环氧 + 取代基） -->
+  <path d="M340,390 L329,371 M317,364 L295,364 L280,390 L295,416 L325,416 L340,390" fill="none" stroke="#d97706" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="325" y="368.5" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309">O</text>
+  <line x1="340" y1="390" x2="340" y2="402" stroke="#b45309" stroke-width="1.5"/>
+  <text x="340" y="414" text-anchor="middle" font-size="9.5" fill="#b45309">OH</text>
+  <line x1="295" y1="364" x2="295" y2="352" stroke="#b45309" stroke-width="1.5"/>
+  <text x="295" y="349" text-anchor="middle" font-size="9.5" fill="#b45309">OH</text>
+  <line x1="295" y1="416" x2="295" y2="427" stroke="#b45309" stroke-width="1.5"/>
+
+  <!-- 锯齿肽链骨架（球棍式） -->
+  <polyline points="415,390 427,377 439,403 451,377 463,403 475,377 487,403 499,377 511,403 523,390" fill="none" stroke="#d97706" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="415" cy="390" r="2.8" fill="#d97706"/>
+  <circle cx="427" cy="377" r="2.8" fill="#d97706"/>
+  <circle cx="439" cy="403" r="2.8" fill="#d97706"/>
+  <circle cx="451" cy="377" r="2.8" fill="#d97706"/>
+  <circle cx="463" cy="403" r="2.8" fill="#d97706"/>
+  <circle cx="475" cy="377" r="2.8" fill="#d97706"/>
+  <circle cx="487" cy="403" r="2.8" fill="#d97706"/>
+  <circle cx="499" cy="377" r="2.8" fill="#d97706"/>
+  <circle cx="511" cy="403" r="2.8" fill="#d97706"/>
+  <circle cx="523" cy="390" r="2.8" fill="#d97706"/>
+
+  <!-- 三角烧瓶 -->
+  <path d="M632,346 L632,366 L610,428 Q607,438 619,438 L661,438 Q673,438 670,428 L648,366 L648,346" fill="none" stroke="#d97706" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="626" y1="346" x2="654" y2="346" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+  <path d="M616,410 L664,410 L669,425 L611,425 Z" fill="#d97706" fill-opacity="0.12"/>
+  <line x1="616" y1="410" x2="664" y2="410" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="634" cy="398" r="2.2" fill="#d97706" fill-opacity="0.5"/>
+  <circle cx="645" cy="392" r="1.7" fill="#d97706" fill-opacity="0.5"/>
+
+  <!-- 元素小注 -->
+  <text x="150" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">苯环</text>
+  <text x="310" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">吡喃糖环</text>
+  <text x="469" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">肽链骨架</text>
+  <text x="640" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">三角烧瓶</text>
+</svg>

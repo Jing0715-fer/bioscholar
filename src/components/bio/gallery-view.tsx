@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { illustrations } from '@/data/illustrations'
+import { getIllustrations } from '@/data/illustrations'
 import { subjects, getSubject } from '@/data/biology'
 import { figureNumber } from '@/lib/figure-utils'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
@@ -104,7 +104,7 @@ function buildGallery(): GalleryItem[] {
   for (const subject of subjects) {
     for (const chapter of subject.chapters) {
       for (const section of chapter.sections) {
-        const figs = illustrations[section.id]
+        const figs = getIllustrations(section.id)
         if (!figs?.length) continue
         figs.forEach((fig, i) => {
           items.push({

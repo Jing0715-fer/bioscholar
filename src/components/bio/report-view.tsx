@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import { useAppStore } from '@/lib/store'
+import { formatWordCount } from '@/lib/word-count'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import {
   ActivityHeatmap,
@@ -31,6 +32,10 @@ import {
 interface ReportOverview {
   completedSections: number
   totalSections: number
+  /** 累计已读字数（旧响应可能缺失） */
+  readWords?: number
+  /** 教材字库总字数（旧响应可能缺失） */
+  totalWords?: number
   quizTotal: number
   quizCorrect: number
   accuracy: number
@@ -118,6 +123,8 @@ function normalizeReport(p: ReportResponse): ReportResponse {
     overview: {
       completedSections: num(p.overview.completedSections),
       totalSections: num(p.overview.totalSections),
+      readWords: num(p.overview.readWords),
+      totalWords: num(p.overview.totalWords),
       quizTotal: num(p.overview.quizTotal),
       quizCorrect: num(p.overview.quizCorrect),
       accuracy: num(p.overview.accuracy),
@@ -381,14 +388,18 @@ export function ReportView() {
               <SectionHead
                 eyebrow="Overview"
                 title="学习总览"
-                meta={`四学科 · ${overview.totalSections} 小节`}
+                meta={`${overview.totalSections} 小节 · 教材约 ${formatWordCount(
+                  overview.totalWords ?? 0
+                )}`}
               />
               <div className="bio-rule mt-2.5" aria-hidden />
               <div className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border sm:grid-cols-3 lg:grid-cols-6">
                 <StatTile
                   label="已完成小节"
                   value={`${overview.completedSections}`}
-                  sub={`全书 ${overview.totalSections} 节`}
+                  sub={`全书 ${overview.totalSections} 节 · 已读约 ${formatWordCount(
+                    overview.readWords ?? 0
+                  )}`}
                 />
                 <StatTile
                   label="答题总数"
@@ -489,7 +500,7 @@ export function ReportView() {
               <SectionHead
                 eyebrow="Subject Progress"
                 title="学科进展"
-                meta="四学科"
+                meta="五学科"
               />
               <div className="bio-rule mt-2.5" aria-hidden />
               <div className="mt-5 space-y-6">
