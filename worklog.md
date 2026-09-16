@@ -709,3 +709,120 @@ Stage Summary:
 - cron 15 分钟任务持续 seed 假数据（本轮又清 128+2 条），交付前必查 LearningProgress/FlashCardReview 表
 - agent-browser console 历史报错不自动清除，QA 时应先 console --clear 再验证，避免误判
 - 新功能方向：AI 看图讲解流式输出、错题本按学科维度统计图、复习卡片「遗忘曲线」历史图表（基于 FlashCardReview 时序）、⌘K 搜索支持拼音首字母匹配
+
+---
+Task ID: 21-b
+Agent: commons-molcell-images
+Task: 搜集分子生物学/细胞生物学 4 张真实配图替换 AI 图
+
+Work Log:
+- 读取 worklog.md（Task 5-a/5-b2/5-c 的 Commons 搜图管线与 Task 16 插图体系：79 张配图中 AI 示意图仅余 15 张，含 trp 衰减/染色质层级/钠钾泵循环三处无权威替代的机制图）；只读核对 src/data/subjects/molecular-biology.ts（ch7-s3 色氨酸操纵子与衰减机制、ch8-s1 染色质水平的调控）与 cell-biology.ts（ch2-s4 主动运输 ATP 驱动泵、ch7-s3 染色质与染色体的多级包装）正文，明确各挂载位必须表达的科学要点
+- Commons API（action=query&list=search, srnamespace=6）分主题检索：chromatin packaging/structure levels/30nm fiber/condensation、trp operon attenuation/tryptophan operon、sodium potassium pump 等关键词；期间持续遭遇 429 限流（与并行代理共享出口 IP），按规范每次等待 60s 重试并自制 cfetch.sh 重试脚本，全部检索完成
+- 候选遴选（imageinfo iiprop=url|size|mime|extmetadata 核许可与作者，Artist 用 sed/regex 去 HTML 标签）：
+  * 染色质：File:Chromatin Structures.png（Richard Wheeler, CC BY-SA 3.0，Wikipedia Chromatin 词条经典六级层级图）为主候选；备选 File:Basic units of chromatin structure.svg（David O Morgan, CC BY 4.0，经 wikitext 反查许可模板 {{CC-notice|cc=by4}} 确认，但仅覆盖核小体→30nm 无更高层级）、File:Chromatin chromosome.png（Magnus Manske, 577×274 过小）均弃用
+  * trp 衰减：File:Trp operon attenuation.svg（Histidine, CC BY-SA 3.0，前导区 1-4 区段衰减机制经典图）；备选 File:Trp operon.svg（CC0，仅阻遏调控无衰减）、File:Trpoperon.svg（CC BY-SA 3.0，仅结构+阻遏）均不契合
+  * 钠钾泵：任务点名的 File:Scheme sodium-potassium pump.svg 经 API 核实已不存在（Commons 拆分为各语言变体），锁定同作者英文原版 File:Scheme sodium-potassium pump-en.svg（LadyofHats Mariana Ruiz Villarreal, Public domain）；备选 File:0308 Sodium Potassium Pump labeled.jpg（OpenStax, CC BY 3.0）复审通过但膜内外方向需依赖 ATP 位置推断，弃用
+- 下载：SVG 一律取 1920px PNG 缩略图（thumb.wikimedia.org）、PNG/JPEG 原图直取；全部经 file 命令校验为有效图片（非 HTML 错误页）且 <5MB；文件名小写 kebab-case，与目录内既有 37 个文件无冲突（现 40 个）
+- VLM 科学审校（z-ai vision，glm-5v-turbo，每图中文定制核对清单）：
+  * 染色质图：六级层级完整无缺失、Add core histones/Add histone H1/Add further scaffold proteins 等标注无误、无乱码；仅缺直径数值标注（图注补充 2/11/30nm 与约 10⁴ 倍压缩即可）→ 通过
+  * trp 衰减图：高/低 Trp 两态、3:4 终止子+poly(U) vs 2:3 抗终止子、核糖体越过/停滞于 UGG、通读 trp regulated genes 全部正确、无乱码 → 通过（未画 1-2 暂停发夹属可接受简化，图注可说明）
+  * 钠钾泵图：首轮全图审校 K⁺ 计数存疑（误报 1 个），追加竖条切片 + 2.5 倍放大裁剪三轮精确计数（步骤②释放 3 Na⁺、步骤③入口 2 K⁺ 待结合、步骤④释放 2 K⁺、磷酸化 P 结合与 Pi 释放明确）推翻误报 → 通过
+- 写入 public/images/bio/commons/manifest-21b.json（3 条：chromatin 条目按任务要求写两个 sectionId 数组）；完整性校验：3 文件均有效 PNG、非空、<5MB、许可证均在 CC0/PD/CC BY/CC BY-SA 白名单、manifest 键与磁盘文件一一对应；git status 核实仅新增 4 个文件（3 图+manifest），未修改 src/ 任何代码、未删除/触碰任何既有图片
+
+Stage Summary:
+- 成功搜集 3 张 Commons 真实图覆盖 4 个挂载位（任务全部完成，未触发 3 候选淘汰兜底）：
+  * chromatin-packaging.png → molecular-biology-ch8-s1 + cell-biology-ch7-s3（File:Chromatin Structures.png, Richard Wheeler, CC BY-SA 3.0；DNA→核小体→10nm 串珠→30nm 纤维→间期环→中期染色体六级，VLM 通过，图注需补尺寸数值）
+  * trp-attenuation.png → molecular-biology-ch7-s3（File:Trp operon attenuation.svg, Histidine, CC BY-SA 3.0；1-4 区段配对/终止 vs 通读两态全对，VLM 通过）
+  * sodium-potassium-pump-cycle.png → cell-biology-ch2-s4（File:Scheme sodium-potassium pump-en.svg, Mariana Ruiz Villarreal (LadyofHats), Public domain；四步 E1/E2 循环 3Na⁺出/2K⁺入/ATP 磷酸化-去磷酸化全对，VLM 通过）
+- 未找到合格图的主题：无
+- 后续集成建议（供主控挂载 illustrations.ts 参考）：chromatin-packaging.png 图注应补充各层级直径（2 nm DNA 双螺旋/11 nm 核小体串珠/30 nm 纤维）与 147 bp、1.65 圈、总压缩约 10⁴ 倍等正文数值；trp-attenuation.png 图注可注明"1-2 暂停发夹未在图中显示"；钠钾泵图无 E1/E2 字样术语（以构象示意表达），图注可对应正文 E1/E2 术语
+
+---
+Task ID: 21-a
+Agent: commons-biochem-images
+Task: 搜集生物化学 5 张真实配图替换 AI 图
+
+Work Log:
+- 读取 worklog.md（Task 5-a/5-b2/5-c Commons 搜图管线、Task 16 插图体系说明、Task 21-b 做法）：79 张配图中 AI 示意图仅余 15 张，本任务负责其中生化 5 处（α螺旋/β折叠/拉氏图/诱导契合/糖原分支）；只读核对 src/data/subjects/biochemistry.ts ch4-s1（稳定构象的作用力与二级结构）、ch5-s2（酶的活性中心与催化机理）、ch9-s5（糖原的合成与分解）正文，明确各图必须表达的科学要点（3.6 残基/圈、n+4 氢键沿轴、反平行 0.70 nm、φ/ψ 允许区、Koshland 诱导契合、α1→4/α1→6 键型等）
+- Commons API（action=query&list=search, srnamespace=6）检索 alpha helix hydrogen bonds / beta pleated sheet / Ramachandran plot / induced fit enzyme / lock and key model / glycogen structure 等关键词；自建 info.py（curl 重试 + 429 等待 60s + UA 署名）批量 imageinfo（iiprop=url|size|mime|extmetadata）获取候选许可与作者，Artist 去 HTML 标签
+- 候选遴选：α螺旋选 Dardel 经典 Alphahelix.png（球棍模型+绿色虚线氢键）；β折叠选 Beta sheets.svg（同图并列平行/反平行两种排列）；拉氏图优先中文标注版 Ramachandran zh.png；诱导契合选 TimVickers 经典 Induced fit diagram.svg；糖原选 GKFX 的 Glycogen.svg（放大框标注两种糖苷键）；全部许可均在 CC0/PD/CC BY/CC BY-SA 白名单
+- 下载：SVG 一律取 1920px PNG 缩略图（thumb.wikimedia.org）、PNG/JPEG 直取原图；多次遭遇 upload.wikimedia.org 429 限速（返回 HTML 错误页），按规范等待 60s 重试/换 thumb 备用主机全部成功；另发现 Wikimedia 新缩略图尺寸白名单机制（非标准宽度返回 400 "Use thumbnail sizes listed on w.wiki/GHai"，960/1280/1920 可用），Ramachandran zh.png 取 1280px 缩略图；5 文件均经 file 校验为有效 PNG 且 <5MB
+- VLM 科学审校（z-ai vision glm-5v-turbo，每图中文定制核对清单）逐图执行，淘汰与替换记录（每主题 ≤3 候选）：
+  * 拉氏图首选 Ramachandran plot original outlines.jpg（CC BY 3.0）图缘多处乱码字符且无 Gly 区域 → 弃用；次选 Ramachandran.png 科学性全对但为法语标注（Hélice α/Feuillet β）不适合中文教材 → 弃用；第三候选中文版 Ramachandran zh.png 通过
+  * 糖原首选 Häggström Glycogen structure.svg（PD）经 VLM 中性描述+清单两轮核实为无标注全原子渲染图（无法区分 α1→4/α1→6 键、教学可读性差）→ 弃用；次选 GKFX Glycogen.svg（α1,4/α1,6 标注+非还原端红色标记+放大框）通过
+  * α螺旋、β折叠、诱导契合首选候选均一次通过
+- 写入 public/images/bio/commons/manifest-21a.json（5 条：topic/sectionId/commonsFile/author/license/sourceUrl/verified）；完整性脚本校验：5 文件均有效 PNG、非空、<5MB、许可证白名单、manifest 键与磁盘一一对应、与既有 41 个文件无重名冲突（现 42 张图）；git status 核实仅新增 6 个文件（5 图+manifest），未修改 src/ 任何代码、未删除任何既有图片
+
+Stage Summary:
+- 成功搜集 5 张 Commons 真实图（任务全部完成，未触发 3 候选全败兜底）：
+  * alpha-helix.png → biochemistry-ch4-s1（File:Alphahelix.png, Frédéric Dardel, CC BY-SA 3.0；右手螺旋/n+4 氢键沿轴/侧链外伸全对，VLM 通过，图注需补 3.6 残基、0.54 nm 螺距等数值）
+  * beta-sheet.png → biochemistry-ch4-s1（File:Beta sheets.svg, Mysterioso, CC BY-SA 3.0；平行+反平行并列、链间氢键垂直链向、侧链上下交替全对，VLM 通过，图注需补 0.65/0.70 nm 重复周期）
+  * ramachandran-plot.png → biochemistry-ch4-s1（File:Ramachandran zh.png, Frédéric Dardel 修订 Webridge, CC BY-SA 3.0；中文标注 φ/ψ 平面、α/β 允许区位置正确无错别字，VLM 通过，图注建议补甘氨酸可及区更广）
+  * induced-fit.png → biochemistry-ch5-s2（File:Induced fit diagram.svg, TimVickers/Fvasconcellos, Public domain；"Enzyme changes shape slightly as substrate binds" 完整催化循环，VLM 通过，图注可补 Koshland 对锁钥学说的修正）
+  * glycogen-structure.png → biochemistry-ch9-s5（File:Glycogen.svg, GKFX, Public domain；α1,4 直链/α1,6 分支点标注正确+非还原端红色标记，VLM 通过，图注需补 A/B/C 层级与糖原素核心）
+- 未找到合格图的主题：无
+- 供主控挂载参考：5 张图均在 biochemistry 学科，beta-sheet 与 alpha-helix 同挂 ch4-s1（与拉氏图三图同节，注意插图排序）；ramachandran-plot.png 为中文标注图与正文语言一致； Wikimedia 缩略图尺寸白名单机制（960/1280/1920px）后续代理取图时需注意
+
+---
+Task ID: 21-c
+Agent: 主控 (Z.ai Code)（子代理启动连续故障，改为主控直接执行）
+Task: 搜集生物物理 8 张真实配图替换 AI 图
+
+Work Log:
+- Task 工具连续 4 次启动失败（check existing record: context deadline exceeded），21-a/21-b 两次启动成功但 21-c 均未实际执行（worklog/manifest/文件三重确认无痕迹），改为主控亲自执行搜图管线
+- Commons API 检索 12 组关键词，14 个候选经 imageinfo 许可证核验（白名单 CC0/PD/CC BY/CC BY-SA）
+- 下载 7 张 Commons 图（期间遇 429 限流，65 秒退避 + thumb.wikimedia.org 备用主机 + 6 秒间隔恢复；一次手工拼 URL 哈希错误改用 API thumburl）
+- VLM 逐图中文审校：折叠漏斗/驱动蛋白步进（含 8nm 微管二聚体标注）/TIRF（隐失场渐变区+光路分离）/冷冻电镜中文版流程图 4 张一次通过
+- 两候选淘汰：Optical tweezers rays4.PNG（希伯来语标注全部乱码+缺折射光线）、Membrane Potential Diagram (Resting State).svg（"Chlorine Atoms"应为 Chloride Ions）；Basis of Membrane Potential2-en.svg 备选也淘汰（缺钠钾泵）；KcsA.png 淘汰（实为 Kv 通道张冠李戴）
+- 4 个主题自绘精确 SVG（代码绘制非 AI 生成，保存 public/images/bio/drawn/）：膜相变（凝胶 Lβ vs 液晶 Lα + Tm 温度计 + 胆固醇甾环双重缓冲 + DPPC 41℃ 数据）、光镊（完整光路 + 梯度力/散射力矢量 + 光线折射动量传递插图 + 分子偶联 Δx∝F）、静息膜电位（离子分布 + K⁺ 漏通道 + 3Na⁺出/2K⁺入生电泵 + −70mV 电位计）、KcsA 选择性滤器（S1-S4 氧原子笼 + TVGYG + K⁺/Na⁻ 半径机制 + knock-on 交替队列）
+- 排障关键：sharp/librsvg 栅格化 SVG 时 "Noto Sans SC" 字体族不可用导致全部文字丢失 → font-family 改为系统已安装的 "Noto Serif SC, LXGW WenKai, sans-serif" 后文字正常渲染（浏览器端不受影响，且与学术编辑风 serif 设计语言一致）
+- 全部 8 张经 VLM 审校通过（光镊首审文字重叠已修复：F散射标签与平衡注释间距 26px→44px）
+- 写入 manifest-21c.json（8 条含 VLM 结论）
+
+Stage Summary:
+- 生物物理 8 张全部到位：4 张 Commons 真实图（folding-funnel.png / kinesin-walking.png / tirf-microscopy.png / cryo-em-workflow.png 中文版）+ 4 张自绘矢量图（../drawn/membrane-phase-transition.svg / optical-tweezers.svg / resting-membrane-potential.svg / kcsa-selectivity-filter.svg）
+- 21 系列三组共 17 张图（21-a 生化 5 张 + 21-b 分子细胞 3 张 + 21-c 生物物理 8 张 + 1 张 chromatin 双挂载位）全部完成，15 张 AI 图全部可退役
+- 工程经验：librsvg 字体族白名单（须用系统已装字体）、Wikimedia 缩略图宽度白名单（960/1280/1920）
+
+---
+Task ID: 21
+Agent: 主控 (Z.ai Code)
+Task: 彻底去除 AI 插图（15→0）+ 第四章第一节正文深度扩写 + 集成 QA 与推送
+
+Work Log:
+- 【用户指令】第四章第一节仍有 AI 图，需彻底避免 AI 图；该节文字内容太少需扩充细节
+- 【插图去 AI 化收官】三组搜集 + 主控集成，15 张 AI 图全部退役：
+  * 21-a（生化 5 张）：alpha-helix（Alphahelix.png, Dardel）/ beta-sheet（Beta sheets.svg, Mysterioso）/ ramachandran-plot（中文版 Ramachandran zh.png）/ induced-fit（PD, TimVickers）/ glycogen-structure（PD, GKFX）
+  * 21-b（分子+细胞 3 张）：chromatin-packaging（Richard Wheeler, 双挂载 mb-ch8-s1 + cb-ch7-s3）/ trp-attenuation（Histidine）/ sodium-potassium-pump-cycle（LadyofHats, PD）
+  * 21-c（生物物理 8 张）：folding-funnel（Splettstoesser）/ kinesin-walking（PD）/ tirf-microscopy（PD, Kulik）/ cryo-em-workflow（中文版, Hira Khan）+ 4 张主控自绘 SVG（membrane-phase-transition / optical-tweezers / resting-membrane-potential / kcsa-selectivity-filter，代码绘制非 AI，manifest 如实标注 self-drawn）
+  * 集成 illustrations.ts：15 处条目替换（ch4-s1 由 1 张扩为 3 张）、图注全部重写（含数值细节与教学线索）、AI_CREDIT 常量替换为 DRAWN_CREDIT、头注释更新为「全部真实科学数据源」
+  * gallery-view：SourceType 新增 drawn（自绘矢量图，PenTool 图标 + violet 配色 + 来源统计卡 grid-cols-4→5）；realCount 口径改为「总数 − AI 数」（=100%）；search-dialog：SRC_KEYWORDS/figureSource/副标题/图标四处分支新增 drawn
+  * 删除 15 张退役 AI 图与 4 个空目录（biochemistry/molecular-biology/cell-biology/biophysics）
+- 【第四章第一节正文深度扩写】（用户点名）biochemistry.ts ch4-s1：约 730 字 → 约 3000 字
+  * 新增两节：「肽键几何与拉氏图」（C–N 0.132 nm 部分双键、反式 >99.9%、X-Pro 顺式 5-6%、φ/ψ 定义、αR/β/αL 允许区坐标）与「稳定构象的作用力」（五力分条定量：氢键 8-40 kJ/mol 方向性/水中竞争、疏水熵驱动 ΔS、盐桥介电屏蔽 ε≈80、范德华 0.4-4 kJ/mol 与堆积密度 0.74、二硫键 210-250 kJ/mol 与 PDI/内质网氧化环境）
+  * 层次节补 Anfinsen RNase A 实验（8M 尿素+β-巯基乙醇、热力学假说、1972 诺奖）与四级结构括号笔误修复
+  * α 螺旋节扩：两亲螺旋（3-4 位周期）、卷曲螺旋 heptad a/d 位、螺旋宏观偶极（N 端 δ+/C 端 δ-、帽化）、13 元环、Pro/Gly/多聚 Glu 破坏机制、肌红蛋白 75%
+  * β 折叠节扩：平行/反平行 φψ 双组数据、链右手扭转、β 凸起、丝心蛋白 Gly-Ala 层堆叠
+  * β 转角节扩：Ⅱ型第 3 位 Gly、Ω 环（6-16 残基）功能位点
+  * keyPoints 5→6 条（新增肽键几何/拉氏图条目、各条充实），测验题参数（3.6/圈、0.54 nm、0.15 nm、100°、n+4）与 Anfinsen 题目保持一致
+- 【工程排障】sharp/librsvg 栅格化 SVG 文字丢失：font-family 用「Noto Sans SC」不可用（未安装）→ 改为系统已装「Noto Serif SC, LXGW WenKai, sans-serif」后文字正常；该修复同时使 AI 看图讲解（VLM 读图）对自绘 SVG 输出正确（实测光镊图讲解含梯度力/散射力/F=-kΔx）
+- 【QA】
+  * tsc src/ 0 错误、eslint 0 警告
+  * 16 个新图文件 HTTP 200；插图完整性脚本：81 张图 0 缺失 0 AI
+  * agent-browser 端到端：阅读器 ch4-s1 渲染 6 个 H2 + 3 张新图（VLM 三图截图审校：α 螺旋球棍/β 折叠对比/中文拉氏图全部完整清晰版式正常）；「光镊」⌘K 搜索命中自绘图条目并跳转阅读器；trp 衰减小节（VLM 审校通过）；KcsA 自绘+PDB 双图并存；钠钾泵 Commons+PDB 双图并存；图库 81 张 100% 真实来源（AI 卡 0 张）+ 自绘 4 张筛选卡；深色模式 VLM 通过；console 全程零错误
+  * AI 看图讲解实测自绘 SVG 正常（25s 内返回专业解读）
+  * 移动端设备模拟 Linux 不可用（与 Task 17 一致）；图片响应式约束（w-full max-w-[560px]）与既有布局组件未改动，风险低
+  * 清理 cron 播种的 128 条 LearningProgress 假数据（stats 归零复核）
+- 【推送】GitHub Jing0715-fer/bioscholar
+
+Stage Summary:
+- 插图体系完成 100% 去 AI 化：81 张插图 = CCD 13 + PDB 17 + Commons 47 + 自绘矢量 4；AI 生成图 0 张
+- 第四章第一节由概览式扩写为深度教材节（约 3000 字 + 3 张权威配图），新增肽键几何/拉氏图与五力定量分析两大知识块
+- 图库/搜索双入口新增「自绘矢量图」来源体系（violet 视觉标识）
+- 质量门：tsc 0 错、lint 0 警、console 零错误、81 图 0 缺失、VLM 多轮审校通过
+
+未解决问题与下一步建议：
+- cron 15 分钟任务持续 seed 假数据（本轮又清 128 条），交付前必查 LearningProgress
+- 自绘图仅覆盖生物物理 4 个机制主题；若其他小节需要补充配图，可复用 drawn/ 管线（注意 librsvg 字体族白名单）
+- 4 张 Commons 候选因科学性瑕疵被淘汰（光镊希伯来语乱码、静息电位 Chlorine Atoms 错标、KcsA 实为 Kv 通道），已在 manifest-21c.json 记录，如后续找到更好候选可替换自绘图
+- 新功能方向：AI 看图讲解流式输出、复习卡片遗忘曲线历史图、⌘K 拼音首字母匹配

@@ -2,7 +2,7 @@
 // BioScholar 教材插图库
 // 按小节挂载配图：key 为 sectionId，正文渲染时自动插入 H2 边界
 //
-// 图片来源体系（真实科学数据源优先）：
+// 图片来源体系（全部为真实科学数据源，无 AI 生成图）：
 //  1. 小分子结构式：RCSB PDB 化学组分字典（CCD）——OpenEye 统一渲染的
 //     矢量 SVG；糖类、脂肪酸、氨基酸、维生素、核苷酸、辅酶等均取自
 //     真实化学数据库（每个配体代码均经 RCSB data-api 名称核实）
@@ -10,7 +10,8 @@
 //     血红蛋白、核糖体、KcsA、核小体等均为实验测定结构
 //  3. 通路/过程图：Wikimedia Commons（各图均经 VLM 科学性审校，
 //     图注署名作者与许可证，遵循 CC BY / CC BY-SA / PD 条款）
-//  4. 少量机制示意图仍为 AI 绘制（图注明确标注），后续持续替换
+//  4. 少量机制示意图为代码自绘矢量图（drawn/，依据教材参数绘制，
+//     数值精确可控，非 AI 生成；来源在 manifest-21c.json 中如实标注）
 // 图注采用学术严谨的中文描述，并标注数据来源
 // ============================================================
 import type { Illustration, SubjectId } from '@/lib/types'
@@ -26,7 +27,7 @@ export const subjectCovers: Record<SubjectId, string> = {
 /** 仪表盘主视觉横幅 */
 export const heroImage = '/images/bio/covers/hero-bioscience.png'
 
-const AI_CREDIT = 'AI 绘制示意图'
+const DRAWN_CREDIT = '依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）'
 const CCD_CREDIT = '结构式来源：RCSB PDB 化学组分字典（CCD）'
 const pdbCredit = (id: string) => `结构来源：RCSB Protein Data Bank（${id}）`
 const commonsCredit = (author: string, license: string) =>
@@ -102,10 +103,22 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biochemistry-ch4-s1': [
     {
-      src: '/images/bio/biochemistry/protein-structure.png',
+      src: '/images/bio/commons/alpha-helix.png',
       caption:
-        '蛋白质的两种基本二级结构：α-螺旋为右手螺旋，螺距 0.54 nm，每圈 3.6 个氨基酸残基，由主链 CO 与第 n+4 位残基的 NH 之间形成的氢键（沿螺旋轴取向）维系；β-折叠由相邻肽段之间的氢键维系，肽链呈锯齿状（pleated）延展，分平行式与反平行式两类。',
-      credit: AI_CREDIT,
+        '右手 α 螺旋的球棍模型：主链羰基 C=O 与第 n+4 位残基的酰胺 N–H 之间形成氢键（绿色虚线），取向与螺旋轴平行——每圈 3.6 个残基、螺距 0.54 nm、每残基上升 0.15 nm、转角 100°，构成 13 元环的氢键网络。R 侧链伸向螺旋外侧、不参与螺旋内氢键；脯氨酸因无 N–H 供体且环状侧链锁定 φ 角而成为螺旋强破坏者。α 螺旋由 Pauling 与 Corey 于 1951 年提出，是蛋白质中第一个被阐明的二级结构。',
+      credit: commonsCredit('Frédéric Dardel', 'CC BY-SA 3.0'),
+    },
+    {
+      src: '/images/bio/commons/beta-sheet.png',
+      caption:
+        'β 折叠的两种排列（左：反平行；右：平行）：肽链充分伸展呈锯齿状，相邻链之间形成垂直于链伸展方向的链间氢键（虚线），R 侧链上下交替伸向片层两侧。反平行排列氢键近于直线、重复周期 0.70 nm，比氢键弯折的平行排列（0.65 nm）更稳定——丝心蛋白即反平行 β 片层。与 α 螺旋的主链内氢键对照可见：二级结构的差异本质上就是氢键取向的不同组织方式。',
+      credit: commonsCredit('Mysterioso', 'CC BY-SA 3.0'),
+    },
+    {
+      src: '/images/bio/commons/ramachandran-plot.png',
+      caption:
+        'Ramachandran 图（拉氏图，中文标注版）：以主链二面角 φ（横轴）与 ψ（纵轴）为坐标，全平面中仅局部区域因位阻允许——「α 螺旋」区位于 φ≈−60°、ψ≈−45°，「β 折叠」区位于 φ≈−120°、ψ≈+120°，两者正是两处主要允许区。甘氨酸无侧链位阻、几乎布满全图；脯氨酸被环锁定在狭窄区域。拉氏图由 Ramachandran 等人于 1963 年提出，至今仍是检验蛋白结构模型几何合理性的标准质检工具。',
+      credit: commonsCredit('Frédéric Dardel 修订，Webridge', 'CC BY-SA 3.0'),
     },
   ],
   'biochemistry-ch4-s3': [
@@ -138,10 +151,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biochemistry-ch5-s2': [
     {
-      src: '/images/bio/biochemistry/enzyme-substrate.png',
+      src: '/images/bio/commons/induced-fit.png',
       caption:
-        '酶—底物结合的诱导契合（induced fit）模型：底物（分子较小者）接近酶时，酶活性中心的构象发生诱导性改变，催化基团与结合基团随之调整到与底物精确互补的位置；催化完成后产物释出，酶恢复游离构象，可再次结合底物。',
-      credit: AI_CREDIT,
+        '酶与底物结合的诱导契合模型（Koshland，1958）：底物进入时酶活性中心构象发生诱导性改变，结合位点收紧包裹底物形成 ES 复合物；催化完成、产物释放后酶复原并可重复循环。构象调整使结合基团与催化基团精确围拢底物——既解释专一性（弹性识别而非刚性锁孔）又解释催化效率，修正了早期锁钥学说的刚性结合观念。图中完整展示 底物→ES→EP→产物释放 的催化循环。',
+      credit: commonsCredit('TimVickers 绘，Fvasconcellos 矢量化', 'Public domain'),
     },
   ],
   'biochemistry-ch5-s3': [
@@ -271,10 +284,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biochemistry-ch9-s5': [
     {
-      src: '/images/bio/biochemistry/glycogen.png',
+      src: '/images/bio/commons/glycogen-structure.png',
       caption:
-        '糖原的多级分支结构：以位于核心的糖原蛋白（glycogenin）为引物，葡萄糖单位以 α(1→4) 糖苷键延伸，每隔 8–12 个残基由分支酶催化形成 α(1→6) 分支。分支带来两大优势：极大增加非还原端数量，使磷酸化酶与合成酶可同时在多个末端快速动员/合成；提高水溶性。一个外层分支链约含 13 个残基。',
-      credit: AI_CREDIT,
+        '糖原的分支结构：葡萄糖以 α(1→4) 糖苷键连成直链（放大框），链延伸至约 11 个残基即以 α(1→6) 键引出分支（图中标注分支点与两种键型）；红色标记为数众多的非还原端。分支层级 A 链（外层）→B 链→C 链逐级汇入中心的糖原素蛋白（glycogenin，全分子唯一的还原端所在）。高度分支带来大量非还原端，使磷酸化酶与合酶可多点位平行加/减葡萄糖——这正是糖原作为血糖「快速蓄水池」的结构基础。',
+      credit: commonsCredit('GKFX', 'Public domain'),
     },
   ],
   'biochemistry-ch10-s1': [
@@ -363,10 +376,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'molecular-biology-ch8-s1': [
     {
-      src: '/images/bio/molecular-biology/chromatin.png',
+      src: '/images/bio/commons/chromatin-packaging.png',
       caption:
-        '染色质的多级包装层级：裸露 DNA 双链（直径 2 nm）→ 核小体“串珠链”（10 nm，146 bp 绕组蛋白八聚体约 1.65 圈）→ 30 nm 螺线管纤维 → 环化襻结结构（间期染色质）→ 经浓缩最终形成中期 X 形染色体（直径约 1400 nm）。压缩比高达约 10⁴ 倍；乙酰化等组蛋白修饰可降低浓缩程度、暴露启动子，是染色质水平调控的基础。',
-      credit: AI_CREDIT,
+        '染色质的多级包装层级：DNA 双螺旋（直径 2 nm）→ 组蛋白八聚体缠绕 147 bp DNA 约 1.65 圈构成核小体，串成 10 nm「串珠」纤维 → 借组蛋白 H1 螺旋成 30 nm 纤维 → 环状结构域锚定于蛋白质支架 → 最终浓缩为中期染色体（合计压缩约 10⁴ 倍而仍保持可转录、可复制）。图中「Add core histones / Add histone H1 / Add further scaffold proteins」标注每级包装的添加成分；包装层级间的转换由组蛋白修饰、凝聚素（condensin）等调控——基因表达调控的第一步就是打开包装。',
+      credit: commonsCredit('Richard Wheeler (Panther)', 'CC BY-SA 3.0'),
     },
     {
       src: '/images/bio/pdb/1AOI.jpeg',
@@ -391,10 +404,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'molecular-biology-ch7-s3': [
     {
-      src: '/images/bio/molecular-biology/trp-attenuation.png',
+      src: '/images/bio/commons/trp-attenuation.png',
       caption:
-        '色氨酸操纵子的衰减（attenuation）机制：前导序列 trpL 含 4 个可两两配对的区段。色氨酸充足时，核糖体快速翻译前导肽并覆盖区段 2，使 3–4 区段配对形成终止子发夹+寡聚 U，RNA 聚合酶提前脱落（转录终止）；色氨酸匮乏时，核糖体在连续 Trp 密码子处停顿于区段 1，2–3 区段配对形成反终止子发夹，3–4 无法配对，转录得以通读进入结构基因。衰减将翻译速度（胞内 aa-tRNA 供应）与转录偶联，实现细粒度调控。',
-      credit: AI_CREDIT,
+        'trp 操纵子的转录衰减机制（上：高色氨酸；下：低色氨酸）：前导区 1–4 区段可互斥配对——高 Trp 时核糖体顺利翻译前导肽越过 Trp 密码子并遮蔽区段 2，3:4 终止子发夹（后随 poly-U）形成，转录提前终止；低 Trp 时核糖体停滞在区段 1 的连续 Trp 密码子处，2:3 抗终止发夹形成，RNA 聚合酶通读进入结构基因（trp regulated genes）。衰减与阻遏双系统叠加，使 trp 操纵子对色氨酸浓度的应答呈两档精细调控；图未绘出转录起始时的 1:2 暂停发夹（属常见简化）。',
+      credit: commonsCredit('Histidine', 'CC BY-SA 3.0'),
     },
   ],
   'molecular-biology-ch8-s5': [
@@ -441,10 +454,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'cell-biology-ch2-s4': [
     {
-      src: '/images/bio/cell-biology/sodium-potassium-pump.png',
+      src: '/images/bio/commons/sodium-potassium-pump-cycle.png',
       caption:
-        'Na⁺/K⁺-ATP 酶（钠钾泵）的循环工作模型：胞内侧 3 个 Na⁺ 结合位点被占据后，ATP 磷酸化泵蛋白→构象向外开放、释放 Na⁺ 至胞外；随后胞外侧 2 个 K⁺ 结合→去磷酸化→构象向内复位、释放 K⁺ 入胞。每循环消耗 1 ATP，泵出 3 Na⁺、泵入 2 K⁺，维持胞内高 K⁺/低 Na⁺ 的离子梯度——既是静息电位的基础，也为葡萄糖等物质的继发性主动转运储备能量。',
-      credit: AI_CREDIT,
+        'Na⁺/K⁺-ATP 酶（钠钾泵）的 E1/E2 构象循环（四步）：①泵开口胞内侧、结合 3 Na⁺（ATP 在场）→ ②ATP 水解、磷酸基转移至泵蛋白，构象翻转为开口胞外、释放 3 Na⁺ → ③胞外结合 2 K⁺ → ④去磷酸化、构象复原、2 K⁺ 释入胞质。每循环消耗 1 ATP、泵出 3 Na⁺ 泵入 2 K⁺（净外移 1 个正电荷，生电性泵），维持胞内高 K⁺/低 Na⁺ 的离子梯度——既是静息电位的基础，也为葡萄糖等物质的继发性主动转运储备能量。',
+      credit: commonsCredit('Mariana Ruiz Villarreal (LadyofHats)', 'Public domain'),
     },
     {
       src: '/images/bio/pdb/2ZXE.jpeg',
@@ -479,10 +492,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'cell-biology-ch7-s3': [
     {
-      src: '/images/bio/molecular-biology/chromatin.png',
+      src: '/images/bio/commons/chromatin-packaging.png',
       caption:
-        '染色体的多级包装模型：DNA 双螺旋（2 nm）经组蛋白八聚体包装为核小体串珠（10 nm 纤维）→螺线管（30 nm 纤维）→襻环结构域→浓缩形成中期染色体。全部基因组被压缩约 10⁴ 倍而仍保持可转录/可复制；包装层级间的转换由组蛋白修饰、凝聚素（condensin）等调控。',
-      credit: AI_CREDIT,
+        '染色体多级包装模型（核型视角）：2 nm DNA 双螺旋 → 10 nm 核小体串珠 → 30 nm 螺线管纤维 → 襻环结构域 → 浓缩为中期染色体。间期染色质以环状结构域状态存在、保持转录活性（图中标注每级包装依次添加 core histones、histone H1 与 scaffold proteins）；仅在分裂期才完全浓缩为棒状染色体。全套基因组压缩约 10⁴ 倍而复制与转录机器仍可定位操作——包装与解包装本身就是基因调控的组成环节。',
+      credit: commonsCredit('Richard Wheeler (Panther)', 'CC BY-SA 3.0'),
     },
   ],
   'cell-biology-ch8-s2': [
@@ -543,10 +556,10 @@ export const illustrations: Record<string, Illustration[]> = {
   // ==================== 生物物理学 ====================
   'biophysics-ch2-s2': [
     {
-      src: '/images/bio/biophysics/folding-funnel.png',
+      src: '/images/bio/commons/folding-funnel.png',
       caption:
-        '蛋白质折叠的能量景观（折叠漏斗）：漏斗口代表构象熵极大的变性态系综，随自由能下降可用构象数递减；粗糙表面上遍布局部极小值（动力学陷阱，对应熔球态等中间体），需要越过过渡态能垒；漏斗底部唯一的深井即天然态——全局自由能极小点。漏斗的拓扑决定了不同蛋白折叠速率可相差数个数量级。',
-      credit: AI_CREDIT,
+        '蛋白质折叠的能量景观（折叠漏斗）：纵轴为自由能（向下降低），漏斗口代表构象熵极大的变性态系综（Unfolded）；表面粗糙、遍布局部极小值（动力学陷阱，对应 Molten globule 熔球态等中间体），需越过过渡态能垒；漏斗底唯一的深井即天然态（Native state）——全局自由能极小点。漏斗拓扑决定不同蛋白折叠速率可相差数个数量级；伴侣蛋白 GroEL 的作用即降低有效势垒（见本学科折叠机器的实验结构图）。',
+      credit: commonsCredit('Thomas Splettstoesser (scistyle.com)', 'CC BY-SA 3.0'),
     },
   ],
   'biophysics-ch2-s4': [
@@ -559,18 +572,18 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biophysics-ch3-s1': [
     {
-      src: '/images/bio/biophysics/membrane-phases.png',
+      src: '/images/bio/drawn/membrane-phase-transition.svg',
       caption:
-        '膜脂的相变：凝胶相（gel / Lβ）中磷脂尾部充分伸展、排列有序，膜刚性强；温度升至相变温度 Tm 以上转入液晶相（liquid-crystalline / Lα），尾部活动加剧、膜流动性增大。胆固醇插入两层尾部之间，在 Tm 以上限制流动、在 Tm 以下阻止紧密排列，起“流动缓冲”作用。不饱和双键（弯折）降低 Tm。',
-      credit: AI_CREDIT,
+        '膜脂相变：凝胶相（Lβ）中磷脂尾部全反式伸展、排列紧密有序（左，T < Tm）；温度升至相变温度 Tm 以上转入液晶相（Lα），尾部出现 gauche 歪扭构象、活动加剧（右，T > Tm），膜流动性与侧向扩散增大。胆固醇（灰色刚性甾环）插入两层尾部之间起双向缓冲——Tm 以上限制流动、Tm 以下阻止紧密排列，把动物细胞膜的相变「抹平」为宽温区中间态。不饱和双键的顺式弯折使链间无法紧密堆积，故 Tm 显著低于同链长饱和磷脂（DPPC 的 Tm ≈ 41 ℃）。',
+      credit: DRAWN_CREDIT,
     },
   ],
   'biophysics-ch4-s1': [
     {
-      src: '/images/bio/biophysics/kinesin.png',
+      src: '/images/bio/commons/kinesin-walking.png',
       caption:
-        '驱动蛋白-1（kinesin-1）沿微管的定向行走：马达同源二聚体的两个球状头部交替与微管结合位点（间距 8 nm）结合，经 ATP 水解驱动的构象变化实现“手拉手”（hand-over-hand）步进，每次跨步移动 8 nm；茎部呈卷曲螺旋摆动，末端扇形轻链域结合货物囊泡。',
-      credit: AI_CREDIT,
+        '驱动蛋白-1 沿微管的「手拉手」（hand-over-hand）步进循环（四阶段）：两个球状马达域交替与微管结合——微管由 α/β 微管蛋白异二聚体头尾相接组装，原聚体间距即步长 8 nm（图中 Dimers of tubulin (8nm) 标注）；ATP 结合使前导头颈链对接、把后随头甩向微管正端的下一个结合位点，ATP→ADP+Pi 的水解循环驱动构象交替。本图为马达域机制特写，茎部与货物的完整结构见下方实验结构图。',
+      credit: commonsCredit('Slagt 原作，Bcjordan 衍生', 'Public domain'),
     },
     {
       src: '/images/bio/pdb/3KIN.jpeg',
@@ -581,26 +594,26 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biophysics-ch6-s1': [
     {
-      src: '/images/bio/biophysics/optical-tweezers.png',
+      src: '/images/bio/drawn/optical-tweezers.svg',
       caption:
-        '光镊（optical tweezers）：强会聚激光在焦点处形成三维梯度光势阱，将折射率高于介质的介电微珠稳定俘获于焦点附近——梯度力（拉向焦点）与散射力平衡。微珠偶联单个生物分子（如肌球蛋白/驱动蛋白/RNA 聚合酶）后，分子产生的 pN 级力使微珠偏离焦点，偏移量与力成正比，实现单分子力的实时测量（位移分辨率 nm、力分辨率 pN）。',
-      credit: AI_CREDIT,
+        '光镊原理：近红外激光（~1064 nm，对活样品光损伤小）经高 NA 油浸物镜强会聚，在焦点处形成三维梯度光势阱；折射率高于介质的介电微珠（n ≈ 1.5 > 1.33）被俘获于焦点附近——梯度力（指向焦点）与散射力（沿光传播方向）平衡。右侧插图以光线追迹解释力的来源：光线穿珠折射后动量改变，反作用力把珠推向光强更大处（焦点）。微珠偶联单个生物分子（马达蛋白/RNA 聚合酶/DNA）后，pN 级牵引力使珠偏离焦点、位移与力成正比（F = −kΔx，小位移近似下阱刚度 k 约 0.1 pN/nm）——力分辨率 ~0.1 pN、位移分辨率 nm 级的单分子力谱。',
+      credit: DRAWN_CREDIT,
     },
   ],
   'biophysics-ch6-s3': [
     {
-      src: '/images/bio/biophysics/single-molecule.png',
+      src: '/images/bio/commons/tirf-microscopy.png',
       caption:
-        '全内反射荧光显微术（TIRF）原理：激光以大于临界角的入射角射向玻片—溶液界面发生全内反射，在样品侧产生约 100–200 nm 深度的隐失场（evanescent field），只激发贴近玻片的荧光分子，大幅消除背景噪声，使单个荧光标记分子呈现为衍射受限的荧光斑点（艾里斑），实现单分子动态示踪。',
-      credit: AI_CREDIT,
+        '全内反射荧光显微术（TIRF）原理：激发激光（红）以大于临界角（玻璃 n≈1.5 → 水 n≈1.33 时约 61°）射向玻片—溶液界面发生全内反射，在样品侧产生深度仅约 100–200 nm 的隐失场（evanescent field）——场强随距离指数衰减，只激发贴近玻片的荧光分子（绿），大幅消除背景噪声，使单个荧光标记分子呈现为可示踪的衍射受限荧光斑点。图中编号：①高 NA 物镜（收集荧光）②发射荧光 ③样品溶液 ④贴壁样品层 ⑤近表面荧光分子 ⑥隐失场 ⑦激发激光 ⑧玻璃棱镜/载玻片。',
+      credit: commonsCredit('Dawid Kulik', 'Public domain'),
     },
   ],
   'biophysics-ch7-s1': [
     {
-      src: '/images/bio/biophysics/membrane-potential.png',
+      src: '/images/bio/drawn/resting-membrane-potential.svg',
       caption:
-        '静息膜电位的离子基础：Na⁺/K⁺-ATP 酶每水解 1 分子 ATP 泵出 3 个 Na⁺、泵入 2 个 K⁺（生电性泵）；同时膜对 K⁺ 具有较高的本底通透性，K⁺ 经漏通道外流，形成膜内侧负电荷积累——两者叠加建立约 −70 mV 的“外正内负”静息电位，接近 K⁺ 的 Nernst 平衡电位。',
-      credit: AI_CREDIT,
+        '静息膜电位的离子基础：膜两侧离子分布不均——胞外高 Na⁺/Cl⁻，胞内高 K⁺ 与不可通透的阴离子 A⁻（蛋白质、磷酸化中间物等）。膜对 K⁺ 的本底通透性最高，K⁺ 经漏通道顺浓度梯度外流，膜内侧净负电荷积累；生电性 Na⁺/K⁺-ATP 酶（每水解 1 ATP 泵出 3 Na⁺、泵入 2 K⁺，净外移 1 个正电荷）维持离子梯度。两者叠加建立约 −70 mV 的外正内负静息电位——数值接近但不等于 K⁺ 的 Nernst 平衡电位 E_K（约 −90 mV），差值来自 Na⁺ 少量内漏与泵的生电贡献。',
+      credit: DRAWN_CREDIT,
     },
   ],
   'biophysics-ch7-s2': [
@@ -621,10 +634,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biophysics-ch8-s1': [
     {
-      src: '/images/bio/biophysics/ion-channel.png',
+      src: '/images/bio/drawn/kcsa-selectivity-filter.svg',
       caption:
-        '钾通道的选择性过滤（selective filter）机制（KcsA 结构启示）：主链羰基氧沿滤器排列成 4 个串联的氧原子笼，恰好剥离 K⁺ 的水化层并以等价配位补偿其结合能，K⁺ 可“裸奔”通过；而 Na⁺ 半径过小，无法与氧笼形成稳定配位（静电补偿不足），去水化代价无法弥补——故通道对 K⁺ 的选择性较 Na⁺ 高约 10⁴ 倍。',
-      credit: AI_CREDIT,
+        '钾通道选择性滤器的识别机制（依据 PDB 1BL8 结构特征绘制）：主链羰基氧（红）沿滤器排列成 4 个串联的氧原子笼位点（S₁–S₄，共 16 个氧，来自 TVGYG 保守基序）。K⁺（紫，半径 1.33 Å）恰与氧笼形成等长配位（~2.8 Å，与水化配位几何一致）——去水化能量损失被完全补偿；Na⁺（0.95 Å）半径过小、无法同时贴近同层 4 个氧，静电补偿不足——故通道对 K⁺ 的选择性较 Na⁺ 高约 10⁴ 倍。滤器内 K⁺ 与水分子交替排列（knock-on 队列），新离子从外庭撞入把整列「顶」过去实现高通量；下方中央水腔由螺旋偶极静电稳定水合 K⁺。',
+      credit: DRAWN_CREDIT,
     },
     {
       src: '/images/bio/pdb/1BL8.jpeg',
@@ -635,10 +648,10 @@ export const illustrations: Record<string, Illustration[]> = {
   ],
   'biophysics-ch9-s4': [
     {
-      src: '/images/bio/biophysics/cryo-em.png',
+      src: '/images/bio/commons/cryo-em-workflow.png',
       caption:
-        '冷冻电子显微镜（cryo-EM）单颗粒重构流程：样品溶液速冻（玻璃化，vitreous ice）于电镜载网上，蛋白质分子以随机取向保持近生理状态；电子束穿透冰层投影成像，直接电子检测器采集数千至数百万张粒子图像；经二维分类平均、颗粒取向判定（angular reconstitution）与迭代精修，将不同方向的投影反投影叠加，重构出三维密度图，最终可在近原子分辨率解析膜蛋白等大分子机器——无需结晶，是结构生物学近年革命（2017 年诺贝尔化学奖）的核心技术。',
-      credit: AI_CREDIT,
+        '冷冻电镜单颗粒重构（SPA）流程（中文标注版）：蛋白样品速冻玻璃化（vitrification，非晶冰防止冰晶损伤）于载网 → 电子束穿透冰层投影成像，直接电子检测器采集数千至数百万张粒子图像 → 颗粒挑选（particle picking）→ 二维对齐与平均（去噪）→ 三维分类（取向判定与构象异质性剔除）→ 三维密度图谱（3D map）→ 原子模型搭建与迭代精修。无需结晶即可在近原子分辨率解析膜蛋白等大分子机器——2017 年诺贝尔化学奖表彰的冷冻电镜与单颗粒重构方法学革命。',
+      credit: commonsCredit('Hira Khan', 'CC BY 4.0'),
     },
   ],
 }

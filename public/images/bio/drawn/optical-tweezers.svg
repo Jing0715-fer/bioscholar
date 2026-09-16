@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950" font-family="Noto Serif SC, LXGW WenKai, sans-serif">
+  <defs>
+    <marker id="arrS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#059669"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
+    </marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e11d48"/>
+    </marker>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb7185" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0.30"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="950" fill="#ffffff"/>
+  <text x="750" y="56" text-anchor="middle" font-size="34" font-weight="700" fill="#1e293b">光镊：强会聚激光的梯度势阱与单分子力测量</text>
+
+  <!-- ==================== 左：光镊装置主图 ==================== -->
+  <rect x="60" y="100" width="830" height="640" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- 激光器 -->
+  <g transform="translate(120,150)">
+    <rect x="0" y="0" width="150" height="64" rx="8" fill="#fecdd3" fill-opacity="0.5" stroke="#e11d48" stroke-width="2"/>
+    <text x="75" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#be123c">激光器</text>
+    <text x="75" y="52" text-anchor="middle" font-size="15" fill="#be123c">近红外 ~1064 nm</text>
+  </g>
+  <!-- 激光束（从激光器向右再折向下经二向色镜） -->
+  <polygon points="270,178 560,178 560,186 270,186" fill="url(#beam)"/>
+  <line x1="270" y1="182" x2="560" y2="182" stroke="#e11d48" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrR)"/>
+
+  <!-- 二向色镜 -->
+  <g transform="translate(560,182)">
+    <line x1="-8" y1="26" x2="26" y2="-8" stroke="#0d9488" stroke-width="5"/>
+    <text x="40" y="-14" font-size="17" fill="#0f766e">二向色镜</text>
+  </g>
+  <!-- 向下光束（经物镜强会聚） -->
+  <polygon points="548,196 588,196 612,330 524,330" fill="url(#beam)"/>
+  <line x1="556" y1="200" x2="578" y2="328" stroke="#e11d48" stroke-width="2" stroke-dasharray="7 5"/>
+  <line x1="580" y1="200" x2="602" y2="328" stroke="#e11d48" stroke-width="2" stroke-dasharray="7 5"/>
+
+  <!-- 高 NA 物镜 -->
+  <g transform="translate(566,332)">
+    <path d="M-44,0 L44,0 L26,58 L-26,58 Z" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+    <path d="M-26,58 L26,58 L16,84 L-16,84 Z" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
+    <text x="0" y="112" text-anchor="middle" font-size="19" font-weight="700" fill="#334155">高 NA 油浸物镜</text>
+    <text x="0" y="134" text-anchor="middle" font-size="15" fill="#64748b">NA ≥ 1.2，会聚角大</text>
+  </g>
+
+  <!-- 样品池 -->
+  <rect x="360" y="470" width="420" height="240" rx="10" fill="#ccfbf1" fill-opacity="0.35" stroke="#0f766e" stroke-width="2"/>
+  <text x="380" y="498" font-size="17" fill="#0f766e">样品池（水溶液介质）</text>
+
+  <!-- 会聚光锥（进入样品池至焦点） -->
+  <polygon points="550,470 582,470 566,556 566,556" fill="url(#beam)"/>
+  <polygon points="524,470 550,470 566,556" fill="url(#beam)"/>
+  <polygon points="582,470 608,470 566,556" fill="url(#beam)"/>
+  <!-- 焦点下方发散弱光 -->
+  <polygon points="556,556 576,556 596,700 536,700" fill="url(#beam)" fill-opacity="0.6"/>
+  <line x1="566" y1="470" x2="566" y2="556" stroke="#e11d48" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- 被俘获微珠（焦点处） -->
+  <circle cx="566" cy="556" r="26" fill="#fda4af" fill-opacity="0.55" stroke="#e11d48" stroke-width="2.5"/>
+  <circle cx="566" cy="556" r="7" fill="#e11d48" fill-opacity="0.7"/>
+  <text x="620" y="540" font-size="18" font-weight="700" fill="#be123c">介电微珠</text>
+  <text x="620" y="564" font-size="16" fill="#64748b">折射率 n₁ ≈ 1.5 &gt; 介质 n₀ ≈ 1.33</text>
+  <text x="620" y="588" font-size="16" fill="#64748b">直径 ~1 μm（聚苯乙烯/石英）</text>
+
+  <!-- 力矢量 -->
+  <line x1="566" y1="556" x2="566" y2="486" stroke="#059669" stroke-width="5" marker-end="url(#arrG)"/>
+  <text x="492" y="470" text-anchor="end" font-size="18" font-weight="700" fill="#059669">F梯度：指向焦点</text>
+  <line x1="566" y1="556" x2="616" y2="604" stroke="#b45309" stroke-width="5" marker-end="url(#arrA)"/>
+  <text x="630" y="622" font-size="18" font-weight="700" fill="#b45309">F散射：沿光传播方向</text>
+  <text x="630" y="666" font-size="16" fill="#64748b">两力平衡 → 微珠稳定于焦点附近</text>
+
+  <!-- 分子偶联（右侧） -->
+  <g>
+    <rect x="716" y="536" width="18" height="40" rx="4" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/>
+    <text x="725" y="530" text-anchor="middle" font-size="15" fill="#475569">固定</text>
+    <!-- 被拉直的分子（波浪线示意） -->
+    <path d="M716,556 C700,548 690,562 674,556 C664,552 660,560 648,556 C640,553 634,559 626,556" fill="none" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+    <text x="676" y="600" text-anchor="middle" font-size="16" fill="#6d28d9">单个生物分子</text>
+    <text x="676" y="622" text-anchor="middle" font-size="15" fill="#64748b">（肌球蛋白/驱动蛋白/RNA 聚合酶…）</text>
+    <line x1="648" y1="660" x2="566" y2="660" stroke="#334155" stroke-width="1.5" marker-start="url(#arrS)" marker-end="url(#arrS)"/>
+    <text x="606" y="688" text-anchor="middle" font-size="17" font-weight="700" fill="#334155">位移 Δx ∝ F</text>
+    <text x="606" y="710" text-anchor="middle" font-size="15" fill="#64748b">力分辨率 ~0.1 pN · 位移分辨率 ~nm</text>
+  </g>
+
+  <!-- ==================== 右：光线折射原理插图 ==================== -->
+  <rect x="940" y="100" width="500" height="640" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1190" y="140" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">光线光学：折射与动量传递</text>
+
+  <!-- 微珠大圆 -->
+  <circle cx="1190" cy="420" r="120" fill="#fda4af" fill-opacity="0.30" stroke="#e11d48" stroke-width="2.5"/>
+  <!-- 光轴虚线 -->
+  <line x1="1190" y1="180" x2="1190" y2="640" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 6"/>
+  <!-- 会聚光锥 -->
+  <polygon points="1050,170 1330,170 1190,420" fill="url(#beam)" fill-opacity="0.75"/>
+
+  <!-- 两条折射光线：偏左入射（更强会聚侧示意） -->
+  <!-- 光线 A：入射 (1080,170)->珠面(1128,318)，折射穿珠 -> 出射(1268,522) -->
+  <line x1="1080" y1="172" x2="1128" y2="318" stroke="#e11d48" stroke-width="3"/>
+  <line x1="1128" y1="318" x2="1268" y2="522" stroke="#e11d48" stroke-width="3" marker-end="url(#arrR)"/>
+  <!-- 光线 B：入射 (1300,172)->珠面(1252,318)，折射穿珠 -> 出射(1112,522) -->
+  <line x1="1300" y1="172" x2="1252" y2="318" stroke="#e11d48" stroke-width="3"/>
+  <line x1="1252" y1="318" x2="1112" y2="522" stroke="#e11d48" stroke-width="3" marker-end="url(#arrR)"/>
+  <!-- 界面法线（光线 A 入射点） -->
+  <line x1="1128" y1="318" x2="1128" y2="252" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="1136" y="262" font-size="14" fill="#64748b">法线</text>
+
+  <!-- 动量变化示意 -->
+  <text x="1082" y="580" text-anchor="middle" font-size="16" fill="#475569">出射光动量方向改变</text>
+  <text x="1082" y="604" text-anchor="middle" font-size="16" fill="#475569">→ 光子动量变化 Δp</text>
+  <text x="1082" y="628" text-anchor="middle" font-size="16" fill="#475569">→ 珠获得反作用力</text>
+  <text x="1300" y="580" text-anchor="middle" font-size="16" font-weight="700" fill="#059669">净合力指向光强</text>
+  <text x="1300" y="604" text-anchor="middle" font-size="16" font-weight="700" fill="#059669">更大处（焦点）</text>
+  <text x="1300" y="632" text-anchor="middle" font-size="15" fill="#64748b">= 梯度力来源</text>
+
+  <text x="1190" y="220" text-anchor="middle" font-size="16" fill="#64748b">会聚激光束</text>
+  <text x="1190" y="690" text-anchor="middle" font-size="16" fill="#475569">微珠折射率高于介质 → 光线向法线偏折 → 动量向下传递 → 反推微珠</text>
+
+  <!-- ==================== 底部注释 ==================== -->
+  <line x1="60" y1="770" x2="1440" y2="770" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="750" y="812" text-anchor="middle" font-size="19" fill="#475569">小位移近似下势阱呈简谐形式：F = −k·Δx（k 为阱刚度，典型 ~0.1 pN/nm）；珠偏离焦点量与分子牵引力成正比，经标定即可实时输出 pN 级力曲线</text>
+  <text x="750" y="848" text-anchor="middle" font-size="19" fill="#475569">典型应用：单分子马达步进（8 nm 台阶）、RNA 聚合酶转录停顿、DNA/蛋白质去折叠力学谱（1997–2018 多届诺贝尔奖相关技术）</text>
+  <text x="750" y="906" text-anchor="middle" font-size="15" fill="#94a3b8">依据教材光镊原理绘制（矢量示意图，非 AI 生成）</text>
+</svg>
