@@ -1,5 +1,7 @@
 // ============================================================
-// 微生物学 —— 学科聚合
+// 微生物学 —— 第五大学科
+// 体系参照周德庆《微生物学教程》（第4版）与沈萍《微生物学》（第8版）
+// 12 章 46 节，各章由内容代理并行编写（见 src/data/subjects/micro/）
 // ============================================================
 import type { Subject } from '@/lib/types'
 import { microCh1 } from './micro/ch1'
@@ -21,11 +23,22 @@ export const microbiology: Subject = {
   englishName: 'Microbiology',
   description:
     '从细菌、真菌到病毒与亚病毒因子，系统讲授微生物的形态结构、营养代谢、生长控制、遗传变异、生态互作与感染免疫，直至 CRISPR 与合成生物学的现代应用。',
-  textbook: '周德庆《微生物学教程》（第4版）· 沈萍《微生物学》（第8版）· Madigan《Brock Biology of Microorganisms》',
+  textbook:
+    '周德庆《微生物学教程》（第4版）· 沈萍《微生物学》（第8版）· Madigan《Brock Biology of Microorganisms》',
   color: 'emerald',
   icon: 'Biohazard',
   chapters: [
-    microCh1, microCh2, microCh3, microCh4, microCh5, microCh6,
-    microCh7, microCh8, microCh9, microCh10, microCh11, microCh12,
+    microCh1,
+    microCh2,
+    microCh3,
+    microCh4,
+    microCh5,
+    microCh6,
+    microCh7,
+    microCh8,
+    microCh9,
+    microCh10,
+    microCh11,
+    microCh12,
   ],
 }

@@ -16,6 +16,7 @@ export const subjectThemes: Record<
   SubjectId,
   {
     icon: LucideIcon
+    /** 主题色 token 组 */
     classes: {
       bg: string
       bgSoft: string
@@ -26,6 +27,7 @@ export const subjectThemes: Record<
       badge: string
       hover: string
     }
+    /** 中文色名 */
     colorName: string
   }
 > = {
@@ -142,6 +144,7 @@ export const subjectThemes: Record<
     colorName: '青柠',
   },
 }
+
 
 export function getSubjectTheme(id: SubjectId) {
   return subjectThemes[id]

@@ -4,51 +4,62 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:/home/z/my-project/db/custom.db"
+  url      = env("DATABASE_URL")
 }
 
+// 学习进度（小节完成记录）
 model LearningProgress {
-  id        String   @id @default(cuid())
-  subjectId String
-  chapterId String
-  sectionId String
-  completed Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@unique([sectionId])
+  id          String   @id @default(cuid())
+  sectionId   String   @unique
+  subjectId   String
+  completedAt DateTime @default(now())
 }
 
+// 测验答题记录
+model QuizAttempt {
+  id         String   @id @default(cuid())
+  questionId String
+  subjectId  String
+  chapterId  String
+  userAnswer String // JSON 序列化的答案索引
+  correct    Boolean
+  createdAt  DateTime @default(now())
+}
+
+// 学习笔记
 model Note {
   id        String   @id @default(cuid())
-  subjectId String
-  sectionId String
+  subjectId String?
+  sectionId String?
   title     String
   content   String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
-model QuizAttempt {
-  id         String   @id @default(cuid())
-  questionId String
-  subjectId  String
-  chapterId  String
-  userAnswer String
-  correct    Boolean
-  createdAt  DateTime @default(now())
+// AI 助教聊天记录
+model ChatMessage {
+  id        String   @id @default(cuid())
+  sessionId String
+  role      String // 'user' | 'assistant'
+  content   String
+  context   String? // JSON: 学科/章节上下文
+  createdAt DateTime @default(now())
+
+  @@index([sessionId])
 }
 
+// 抽认卡复习记录（SM-2 间隔重复）
 model FlashcardReview {
   id            String   @id @default(cuid())
-  cardId        String
-  ease          Float    @default(2.5)
-  intervalDays  Float    @default(0)
-  reps          Int      @default(0)
-  lapses        Int      @default(0)
-  dueAt         DateTime @default(now())
-  lastReviewedAt DateTime @default(now())
+  cardId        String   @unique // 术语词条 id
+  ease          Float    @default(2.5) // SM-2 难易度因子
+  intervalDays  Float    @default(0) // 当前间隔（天）
+  reps          Int      @default(0) // 已复习次数
+  lapses        Int      @default(0) // 遗忘次数
+  dueAt         DateTime @default(now()) // 下次到期时间
+  lastReviewedAt DateTime? @default(now())
   createdAt     DateTime @default(now())
 
-  @@unique([cardId])
+  @@index([dueAt])
 }

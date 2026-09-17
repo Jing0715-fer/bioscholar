@@ -1,34 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 自绘矢量刊头（代码绘制，非 AI 生成）：生命科学 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="Noto Serif SC, Georgia, serif">
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：仪表盘主视觉 · 五学科淡彩拼贴 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
   <defs>
-    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="1" fill="#1c1917" fill-opacity="0.05"/>
+    <pattern id="pgh" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.1" fill="#1c1917" fill-opacity="0.04"/>
     </pattern>
   </defs>
-  <rect width="560" height="320" fill="#f2f7f3"/>
-  <rect width="560" height="320" fill="url(#dots)"/>
-  <rect x="18" y="18" width="524" height="284" fill="none" stroke="#047857" stroke-opacity="0.3"/>
-  <path d="M18,46 V18 H46 M514,18 H542 V46 M542,274 V302 H514 M46,302 H18 V274" fill="none" stroke="#047857" stroke-opacity="0.6" stroke-width="1.6"/>
-  <text x="280" y="60" text-anchor="middle" font-size="12" letter-spacing="4" fill="#047857">BIOSCIENCE · 101 CORE CURRICULUM</text>
-  <text x="280" y="150" text-anchor="middle" font-size="52" font-weight="700" letter-spacing="8" fill="#1c1917">生命科学</text>
-  <line x1="210" y1="180" x2="350" y2="180" stroke="#047857" stroke-width="2.5"/>
-  <text x="280" y="208" text-anchor="middle" font-size="14" fill="#57534e">八大基础学科 · 教材级体系</text>
-  <!-- DNA 双螺旋简笔 -->
-  <g stroke="#047857" stroke-width="2" fill="none" opacity="0.75">
-    <path d="M200,236 C220,252 260,252 280,236 C300,220 340,220 360,236"/>
-    <path d="M200,258 C220,274 260,274 280,258 C300,242 340,242 360,258"/>
+
+  <rect width="1200" height="1000" fill="#f5f2ec"/>
+  <rect width="1200" height="1000" fill="url(#pgh)"/>
+
+  <!-- ===== 多学科元素淡彩拼贴（细线稿，opacity 0.5–0.8） ===== -->
+  <!-- DNA 双螺旋（右侧 · 紫晶） -->
+  <g stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.6">
+    <line x1="926.7" y1="161.25" x2="983.3" y2="161.25"/>
+    <line x1="926.7" y1="203.75" x2="983.3" y2="203.75"/>
+    <line x1="926.7" y1="246.25" x2="983.3" y2="246.25"/>
+    <line x1="926.7" y1="288.75" x2="983.3" y2="288.75"/>
+    <line x1="926.7" y1="331.25" x2="983.3" y2="331.25"/>
+    <line x1="926.7" y1="373.75" x2="983.3" y2="373.75"/>
+    <line x1="926.7" y1="416.25" x2="983.3" y2="416.25"/>
+    <line x1="926.7" y1="458.75" x2="983.3" y2="458.75"/>
+    <line x1="926.7" y1="501.25" x2="983.3" y2="501.25"/>
+    <line x1="926.7" y1="543.75" x2="983.3" y2="543.75"/>
+    <line x1="926.7" y1="586.25" x2="983.3" y2="586.25"/>
+    <line x1="926.7" y1="628.75" x2="983.3" y2="628.75"/>
   </g>
-  <g stroke="#047857" stroke-width="1.4" opacity="0.5">
-    <line x1="216" y1="242" x2="216" y2="264"/>
-    <line x1="248" y1="247" x2="248" y2="269"/>
-    <line x1="280" y1="247" x2="280" y2="269"/>
-    <line x1="312" y1="241" x2="312" y2="263"/>
-    <line x1="344" y1="242" x2="344" y2="264"/>
+  <polyline points="955.0,140 983.3,161.25 995.0,182.5 983.3,203.75 955.0,225 926.7,246.25 915.0,267.5 926.7,288.75 955.0,310 983.3,331.25 995.0,352.5 983.3,373.75 955.0,395 926.7,416.25 915.0,437.5 926.7,458.75 955.0,480 983.3,501.25 995.0,522.5 983.3,543.75 955.0,565 926.7,586.25 915.0,607.5 926.7,628.75 955.0,650" fill="none" stroke="#6d28d9" stroke-opacity="0.6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="955.0,140 926.7,161.25 915.0,182.5 926.7,203.75 955.0,225 983.3,246.25 995.0,267.5 983.3,288.75 955.0,310 926.7,331.25 915.0,352.5 926.7,373.75 955.0,395 983.3,416.25 995.0,437.5 983.3,458.75 955.0,480 926.7,501.25 915.0,522.5 926.7,543.75 955.0,565 983.3,586.25 995.0,607.5 983.3,628.75 955.0,650" fill="none" stroke="#7c3aed" stroke-opacity="0.6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- 细胞剖面圆（左上 · 绯红） -->
+  <circle cx="255" cy="320" r="115" fill="#e11d48" fill-opacity="0.025" stroke="#e11d48" stroke-opacity="0.5" stroke-width="2.2"/>
+  <circle cx="255" cy="320" r="106" fill="none" stroke="#e11d48" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="235" cy="295" r="40" fill="#e11d48" fill-opacity="0.06" stroke="#e11d48" stroke-opacity="0.55" stroke-width="1.8"/>
+  <circle cx="243" cy="288" r="13" fill="#e11d48" fill-opacity="0.22"/>
+  <g transform="rotate(-18 300 372)" stroke="#e11d48" stroke-opacity="0.5" fill="none">
+    <ellipse cx="300" cy="372" rx="30" ry="13" stroke-width="1.6"/>
+    <line x1="288" y1="362" x2="288" y2="382" stroke-width="1.2" stroke-opacity="0.8"/>
+    <line x1="300" y1="359.5" x2="300" y2="384.5" stroke-width="1.2" stroke-opacity="0.8"/>
+    <line x1="312" y1="362" x2="312" y2="382" stroke-width="1.2" stroke-opacity="0.8"/>
   </g>
-  <!-- 细胞与分子元素 -->
-  <circle cx="120" cy="252" r="26" fill="none" stroke="#047857" stroke-width="1.6" opacity="0.7"/>
-  <circle cx="120" cy="252" r="10" fill="#047857" fill-opacity="0.25" stroke="#047857" stroke-width="1.2"/>
-  <circle cx="440" cy="252" r="26" fill="none" stroke="#047857" stroke-width="1.6" opacity="0.7"/>
-  <path d="M432,252 h6 l4,-9 5,18 5,-9 h6" fill="none" stroke="#047857" stroke-width="1.6" opacity="0.8"/>
+  <path d="M160,352 q14,-16 28,0 t28,0" fill="none" stroke="#e11d48" stroke-opacity="0.4" stroke-width="1.5"/>
+  <circle cx="185" cy="268" r="2.4" fill="#e11d48" fill-opacity="0.35"/>
+  <circle cx="215" cy="252" r="2.4" fill="#e11d48" fill-opacity="0.35"/>
+  <circle cx="282" cy="262" r="2.4" fill="#e11d48" fill-opacity="0.35"/>
+  <circle cx="205" cy="405" r="2.4" fill="#e11d48" fill-opacity="0.35"/>
+  <circle cx="172" cy="372" r="2.4" fill="#e11d48" fill-opacity="0.35"/>
+
+  <!-- 分子六元环（顶中 · 琥珀） -->
+  <polygon points="600,127 549.8,156 549.8,214 600,243 650.2,214 650.2,156" fill="#d97706" fill-opacity="0.03" stroke="#d97706" stroke-opacity="0.5" stroke-width="2.4" stroke-linejoin="round"/>
+  <circle cx="600" cy="185" r="33" fill="none" stroke="#d97706" stroke-opacity="0.45" stroke-width="1.5"/>
+
+  <!-- 杆菌轮廓（左下 · 翠微） -->
+  <rect x="170" y="792" width="112" height="26" rx="13" fill="#059669" fill-opacity="0.03" stroke="#059669" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M282,798 q13,-13 26,0 q13,13 26,0" fill="none" stroke="#047857" stroke-opacity="0.5" stroke-width="1.4"/>
+  <rect x="225" y="848" width="92" height="22" rx="11" fill="#059669" fill-opacity="0.03" stroke="#059669" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M225,859 q-12,-12 -24,0 q-12,12 -24,0" fill="none" stroke="#047857" stroke-opacity="0.45" stroke-width="1.3"/>
+
+  <!-- 波动曲线（右下 · 青碧） -->
+  <path d="M760,790 q35,-30 70,0 t70,0 t70,0 t70,0" fill="none" stroke="#0891b2" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- ===== 中央文字区 ===== -->
+  <text x="603" y="460" text-anchor="middle" font-size="15" letter-spacing="6" fill="#57534e">BIOSCIENCE · 101 CORE CURRICULUM</text>
+  <text x="605" y="550" text-anchor="middle" font-size="72" font-weight="700" letter-spacing="10" fill="#1c1917">生命科学研习堂</text>
+  <line x1="470" y1="590" x2="730" y2="590" stroke="#1c1917" stroke-opacity="0.7" stroke-width="2.5"/>
+  <line x1="420" y1="597" x2="780" y2="597" stroke="#1c1917" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="601" y="640" text-anchor="middle" font-size="19" letter-spacing="2" fill="#57534e">教育部 101 计划核心课程 · 五大基础学科</text>
+
+  <!-- 五学科色标 -->
+  <circle cx="552" cy="685" r="4.5" fill="#d97706" fill-opacity="0.75"/>
+  <circle cx="576" cy="685" r="4.5" fill="#7c3aed" fill-opacity="0.75"/>
+  <circle cx="600" cy="685" r="4.5" fill="#e11d48" fill-opacity="0.75"/>
+  <circle cx="624" cy="685" r="4.5" fill="#0891b2" fill-opacity="0.75"/>
+  <circle cx="648" cy="685" r="4.5" fill="#059669" fill-opacity="0.75"/>
 </svg>

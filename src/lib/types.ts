@@ -1,6 +1,6 @@
 // ============================================================
 // BioScholar 生命科学学习平台 - 核心数据类型定义
-// 基于"101计划"生物学核心课程教材体系 · 八大基础学科
+// 基于"101计划"生物学核心课程教材体系
 // ============================================================
 
 /** 学科 ID */
@@ -23,7 +23,7 @@ export interface Subject {
   description: string
   /** 教材依据（编写所参照的经典教材） */
   textbook: string
-  /** Tailwind 色彩 token（emerald/amber/violet/rose/cyan/teal/fuchsia/lime 等） */
+  /** Tailwind 色彩 token（emerald/amber/violet/rose/cyan/teal 等） */
   color: string
   /** lucide 图标名（组件中映射） */
   icon: string
@@ -46,7 +46,7 @@ export interface Chapter {
 export interface Section {
   id: string // 格式: {subjectId}-ch{n}-s{m}
   title: string
-  /** Markdown 格式正文（教材级，含标题层级、表格、化学式、要点） */
+  /** Markdown 格式正文（要求教材级还原，含标题层级、表格、化学式、要点） */
   content: string
   /** 本节要点（3-6 条） */
   keyPoints: string[]
@@ -122,27 +122,6 @@ export interface ChatMessage {
     subjectId?: SubjectId
     chapterId?: string
     sectionId?: string
+    sectionTitle?: string
   }
-}
-
-/** 学习笔记 */
-export interface NoteItem {
-  id: string
-  subjectId: SubjectId
-  sectionId: string
-  title: string
-  content: string
-  createdAt: string
-  updatedAt: string
-}
-
-/** 复习卡片（基于 keyPoints 的间隔重复卡片） */
-export interface Flashcard {
-  id: string
-  subjectId: SubjectId
-  chapterId: string
-  sectionId: string
-  sectionTitle: string
-  front: string
-  back: string
 }

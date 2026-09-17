@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, sans-serif">
+  <defs>
+    <marker id="arrS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrV" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="34" font-weight="700" fill="#1e293b">钾通道选择性滤器：以配位几何识别离子（KcsA）</text>
+  <text x="700" y="92" text-anchor="middle" font-size="19" fill="#64748b">主链羰基氧串成氧原子笼——用“化学键几何”而非“孔径筛分”区分 K⁺ 与 Na⁺</text>
+
+  <!-- ==================== 中央：通道纵剖面 ==================== -->
+  <!-- 外庭（漏斗） -->
+  <path d="M520,130 C560,210 600,250 600,300 L800,300 C800,250 840,210 880,130 Z" fill="#f1f5f9" fill-opacity="0.8" stroke="#475569" stroke-width="2.5"/>
+  <text x="700" y="180" text-anchor="middle" font-size="18" font-weight="600" fill="#475569">细胞外外庭</text>
+
+  <!-- 选择性滤器（直窄段，S1-S4） -->
+  <rect x="596" y="300" width="208" height="230" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+  <line x1="600" y1="300" x2="600" y2="530" stroke="#334155" stroke-width="4"/>
+  <line x1="800" y1="300" x2="800" y2="530" stroke="#334155" stroke-width="4"/>
+  <text x="700" y="286" text-anchor="middle" font-size="19" font-weight="700" fill="#334155">选择性滤器（约 12 Å）</text>
+
+  <!-- 四个位点：S1-S4，每层 4 个羰基氧（画 2 个可见 + 标注） -->
+  <!-- S1 (y=345) -->
+  <g>
+    <circle cx="622" cy="345" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <circle cx="778" cy="345" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <text x="836" y="352" font-size="17" font-weight="700" fill="#b91c1c">S₁</text>
+    <text x="580" y="352" text-anchor="end" font-size="14" fill="#64748b">C=O</text>
+  </g>
+  <!-- S2 (y=408) -->
+  <g>
+    <circle cx="622" cy="408" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <circle cx="778" cy="408" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <text x="836" y="415" font-size="17" font-weight="700" fill="#b91c1c">S₂</text>
+  </g>
+  <!-- S3 (y=470) -->
+  <g>
+    <circle cx="622" cy="470" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <circle cx="778" cy="470" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <text x="836" y="477" font-size="17" font-weight="700" fill="#b91c1c">S₃</text>
+  </g>
+  <!-- S4 (y=522) -->
+  <g>
+    <circle cx="622" cy="522" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <circle cx="778" cy="522" r="11" fill="#f87171" stroke="#b91c1c" stroke-width="1.8"/>
+    <text x="836" y="529" font-size="17" font-weight="700" fill="#b91c1c">S₄</text>
+  </g>
+
+  <!-- K+（紫）与水（青）交替排列（knock-on） -->
+  <!-- S1: 水合 K 或水 -->
+  <g transform="translate(700,345)">
+    <circle r="17" fill="#a78bfa" fill-opacity="0.85" stroke="#6d28d9" stroke-width="2"/>
+    <text y="6" text-anchor="middle" font-size="16" font-weight="700" fill="#3b0764">K⁺</text>
+  </g>
+  <!-- S2: 水 -->
+  <g transform="translate(700,408)">
+    <circle r="13" fill="#a5f3fc" fill-opacity="0.9" stroke="#0e7490" stroke-width="1.8"/>
+    <text y="5" text-anchor="middle" font-size="13" font-weight="700" fill="#155e75">H₂O</text>
+  </g>
+  <!-- S3: K+ -->
+  <g transform="translate(700,470)">
+    <circle r="17" fill="#a78bfa" fill-opacity="0.85" stroke="#6d28d9" stroke-width="2"/>
+    <text y="6" text-anchor="middle" font-size="16" font-weight="700" fill="#3b0764">K⁺</text>
+  </g>
+  <!-- S4: 水 -->
+  <g transform="translate(700,522)">
+    <circle r="13" fill="#a5f3fc" fill-opacity="0.9" stroke="#0e7490" stroke-width="1.8"/>
+    <text y="5" text-anchor="middle" font-size="13" font-weight="700" fill="#155e75">H₂O</text>
+  </g>
+
+  <!-- 中央水腔 -->
+  <path d="M600,530 C560,600 560,660 620,700 L780,700 C840,660 840,600 800,530 Z" fill="#ecfeff" fill-opacity="0.75" stroke="#475569" stroke-width="2.5"/>
+  <text x="700" y="600" text-anchor="middle" font-size="18" font-weight="600" fill="#0e7490">中央水腔（宽约 10 Å）</text>
+  <text x="700" y="628" text-anchor="middle" font-size="15" fill="#64748b">水合 K⁺ 驻留 · 螺旋偶极静电稳定阳离子</text>
+
+  <!-- 胞内侧 -->
+  <text x="700" y="744" text-anchor="middle" font-size="18" fill="#475569">细胞内侧（pH 门控开合的的内螺旋门）</text>
+
+  <!-- 离子流动方向 -->
+  <line x1="700" y1="820" x2="700" y2="150" stroke="#6d28d9" stroke-width="3" stroke-dasharray="10 7" marker-end="url(#arrV)"/>
+  <text x="722" y="790" font-size="16" fill="#6d28d9">K⁺ 通过方向（外→内）</text>
+
+  <!-- ==================== 左侧注解 ==================== -->
+  <g>
+    <rect x="70" y="300" width="470" height="240" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="94" y="336" font-size="20" font-weight="700" fill="#b91c1c">氧原子笼：主链羰基氧</text>
+    <text x="94" y="370" font-size="16" fill="#475569">每层来自 4 个亚基的主链 C=O（红色），</text>
+    <text x="94" y="396" font-size="16" fill="#475569">沿滤器串联成 4 个配位位点（S₁–S₄，</text>
+    <text x="94" y="422" font-size="16" fill="#475569">共 16 个氧，间距约 3 Å）；</text>
+    <text x="94" y="456" font-size="16" fill="#475569">基序 Thr-Val-Gly-Tyr-Gly（TVGYG）在</text>
+    <text x="94" y="482" font-size="16" fill="#475569">全部钾通道中近乎完全保守。</text>
+    <text x="94" y="516" font-size="16" font-weight="600" fill="#334155">滤器几何 = 水化壳几何的“复刻”</text>
+  </g>
+
+  <g>
+    <rect x="70" y="560" width="470" height="180" rx="12" fill="#faf5ff" fill-opacity="0.6" stroke="#ddd6fe" stroke-width="1.5"/>
+    <text x="94" y="596" font-size="20" font-weight="700" fill="#6d28d9">K⁺（半径 1.33 Å）：刚好</text>
+    <text x="94" y="630" font-size="16" fill="#475569">与 8 个氧形成等长配位（距中心约 2.8 Å），</text>
+    <text x="94" y="656" font-size="16" fill="#475569">恰与水化时 O 配位距离一致——</text>
+    <text x="94" y="682" font-size="16" fill="#475569">去水化能量损失被配位能完全补偿，</text>
+    <text x="94" y="708" font-size="16" fill="#475569">K⁺ 几乎“无障碍”通过。</text>
+  </g>
+
+  <!-- ==================== 右侧注解 ==================== -->
+  <g>
+    <rect x="880" y="300" width="450" height="240" rx="12" fill="#fff7ed" fill-opacity="0.7" stroke="#fed7aa" stroke-width="1.5"/>
+    <text x="904" y="336" font-size="20" font-weight="700" fill="#b45309">Na⁺（半径 0.95 Å）：太小</text>
+    <text x="904" y="370" font-size="16" fill="#475569">无法同时贴近同一层位的 4 个氧，</text>
+    <text x="904" y="396" font-size="16" fill="#475569">只能“偏靠”1–2 个（间距 &gt;2.4 Å 才舒适），</text>
+    <text x="904" y="422" font-size="16" fill="#475569">静电补偿远不足去水化代价。</text>
+    <text x="904" y="456" font-size="16" font-weight="600" fill="#334155">结果：K⁺/Na⁺ 选择性 ≈ 10⁴ : 1</text>
+    <text x="904" y="490" font-size="15" fill="#64748b">（0.3 Å 的半径差被几何放大万倍）</text>
+    <text x="904" y="522" font-size="15" fill="#64748b">通道识别的是“配位几何”，不是孔径筛分</text>
+  </g>
+
+  <g>
+    <rect x="880" y="560" width="450" height="180" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="904" y="596" font-size="20" font-weight="700" fill="#0e7490">“水–离子–水”交替队列</text>
+    <text x="904" y="630" font-size="16" fill="#475569">滤器内 K⁺ 与水分子近于等间距交替排列</text>
+    <text x="904" y="656" font-size="16" fill="#475569">（图中 S₁K⁺–S₂水–S₃K⁺–S₄水），</text>
+    <text x="904" y="682" font-size="16" fill="#475569">新离子从外庭撞入即把整列“顶”过去</text>
+    <text x="904" y="708" font-size="16" fill="#475569">（knock-on / 直接互斥机制）→ 高通量。</text>
+  </g>
+
+  <!-- ==================== 底部注释 ==================== -->
+  <line x1="70" y1="880" x2="1330" y2="880" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="700" y="916" text-anchor="middle" font-size="18" fill="#475569">KcsA 结构（PDB 1BL8，1998 年 Roderick MacKinnon 发表）确立了这一范式——2003 年诺贝尔化学奖；图中纵剖面前后两亚基省略，每层位点实际由 4 个对称分布的羰基氧构成</text>
+  <text x="700" y="948" text-anchor="middle" font-size="15" fill="#94a3b8">依据 PDB 1BL8 结构特征与教材机制绘制（矢量示意图，非 AI 生成）</text>
+</svg>

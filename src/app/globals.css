@@ -1,134 +1,397 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-:root {
-  --background: hsl(48 33% 97%);
-  --foreground: hsl(24 10% 10%);
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(24 10% 10%);
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(24 10% 10%);
-  --primary: hsl(160 84% 24%);
-  --primary-foreground: hsl(0 0% 98%);
-  --secondary: hsl(48 30% 92%);
-  --secondary-foreground: hsl(24 10% 10%);
-  --muted: hsl(48 30% 92%);
-  --muted-foreground: hsl(24 8% 42%);
-  --accent: hsl(48 30% 90%);
-  --accent-foreground: hsl(24 10% 10%);
-  --destructive: hsl(0 72% 46%);
-  --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(40 20% 86%);
-  --input: hsl(40 20% 86%);
-  --ring: hsl(160 84% 24%);
-  --radius: 0.6rem;
-}
-
-.dark {
-  --background: hsl(200 12% 8%);
-  --foreground: hsl(40 20% 94%);
-  --card: hsl(200 12% 11%);
-  --card-foreground: hsl(40 20% 94%);
-  --popover: hsl(200 12% 11%);
-  --popover-foreground: hsl(40 20% 94%);
-  --primary: hsl(160 70% 42%);
-  --primary-foreground: hsl(200 12% 8%);
-  --secondary: hsl(200 10% 16%);
-  --secondary-foreground: hsl(40 20% 94%);
-  --muted: hsl(200 10% 16%);
-  --muted-foreground: hsl(200 8% 60%);
-  --accent: hsl(200 10% 18%);
-  --accent-foreground: hsl(40 20% 94%);
-  --destructive: hsl(0 62% 50%);
-  --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(200 10% 20%);
-  --input: hsl(200 10% 20%);
-  --ring: hsl(160 70% 42%);
-}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* 学术衬线字体：标题/图注/引文用，中文回退宋体系 */
+  --font-serif: Georgia, "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
   --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-body {
-  @apply bg-background text-foreground antialiased;
-  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+:root {
+  --radius: 0.625rem;
+  /* 温暖纸面底色（教材纸张感） */
+  --background: oklch(0.982 0.008 95);
+  --foreground: oklch(0.21 0.015 170);
+  --card: oklch(1 0.002 95);
+  --card-foreground: oklch(0.21 0.015 170);
+  --popover: oklch(1 0.002 95);
+  --popover-foreground: oklch(0.21 0.015 170);
+  --primary: oklch(0.508 0.118 165);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.955 0.012 100);
+  --secondary-foreground: oklch(0.26 0.03 170);
+  --muted: oklch(0.955 0.008 100);
+  --muted-foreground: oklch(0.5 0.018 170);
+  --accent: oklch(0.935 0.025 160);
+  --accent-foreground: oklch(0.26 0.04 170);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0.012 100);
+  --input: oklch(0.9 0.012 100);
+  --ring: oklch(0.508 0.118 165);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
-/* Markdown 教材排版 */
-.markdown-body {
-  @apply text-[15px] leading-7 text-foreground;
-}
-.markdown-body h2 {
-  @apply mt-8 mb-3 text-lg font-semibold tracking-tight border-b pb-1.5;
-}
-.markdown-body p {
-  @apply my-2.5;
-}
-.markdown-body strong {
-  @apply font-semibold text-foreground;
-}
-.markdown-body ul {
-  @apply my-2.5 list-disc space-y-1 pl-5;
-}
-.markdown-body ol {
-  @apply my-2.5 list-decimal space-y-1 pl-5;
-}
-.markdown-body blockquote {
-  @apply my-3 border-l-2 border-primary/40 bg-muted/50 px-3 py-1.5 text-sm text-muted-foreground;
-}
-.markdown-body table {
-  @apply my-4 w-full border-collapse overflow-hidden rounded-md text-sm;
-}
-.markdown-body thead {
-  @apply bg-muted;
-}
-.markdown-body th {
-  @apply border px-3 py-2 text-left font-semibold;
-}
-.markdown-body td {
-  @apply border px-3 py-1.5 align-top;
-}
-.markdown-body tbody tr:nth-child(even) {
-  @apply bg-muted/30;
+.dark {
+  --background: oklch(0.155 0.012 170);
+  --foreground: oklch(0.955 0.004 160);
+  --card: oklch(0.205 0.015 170);
+  --card-foreground: oklch(0.955 0.004 160);
+  --popover: oklch(0.205 0.015 170);
+  --popover-foreground: oklch(0.955 0.004 160);
+  --primary: oklch(0.723 0.14 165);
+  --primary-foreground: oklch(0.16 0.02 170);
+  --secondary: oklch(0.28 0.025 168);
+  --secondary-foreground: oklch(0.96 0.005 160);
+  --muted: oklch(0.27 0.02 168);
+  --muted-foreground: oklch(0.72 0.015 165);
+  --accent: oklch(0.32 0.035 165);
+  --accent-foreground: oklch(0.96 0.005 160);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.723 0.14 165);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.19 0.02 170);
+  --sidebar-foreground: oklch(0.96 0.005 160);
+  --sidebar-primary: oklch(0.723 0.14 165);
+  --sidebar-primary-foreground: oklch(0.16 0.02 170);
+  --sidebar-accent: oklch(0.28 0.025 168);
+  --sidebar-accent-foreground: oklch(0.96 0.005 160);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.723 0.14 165);
 }
 
-/* 细滚动条 */
-::-webkit-scrollbar {
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ============================================================
+   BioScholar 生物学学习平台 - 自定义样式
+   ============================================================ */
+
+::selection {
+  background: oklch(0.723 0.14 165 / 30%);
+}
+
+/* 自定义滚动条 */
+.bio-scroll::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar-track {
+.bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
-::-webkit-scrollbar-thumb {
-  background: hsl(160 20% 60% / 0.35);
-  border-radius: 3px;
+.bio-scroll::-webkit-scrollbar-thumb {
+  background: oklch(0.7 0.03 165 / 40%);
+  border-radius: 9999px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(160 20% 45% / 0.5);
+.bio-scroll::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.6 0.08 165 / 60%);
 }
+
+/* ------------------------------------------------------------
+   Markdown 教材正文排版（学术风）
+   ------------------------------------------------------------ */
+.bio-md {
+  line-height: 1.9;
+  font-size: 0.95rem;
+  color: var(--foreground);
+  word-break: break-word;
+}
+.bio-md > *:first-child { margin-top: 0; }
+.bio-md > *:last-child { margin-bottom: 0; }
+
+.bio-md h2 {
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
+  font-weight: 700;
+  margin: 1.9em 0 0.75em;
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--primary);
+  line-height: 1.45;
+  color: var(--foreground);
+  letter-spacing: 0.01em;
+}
+.bio-md h3 {
+  font-size: 1.06rem;
+  font-weight: 650;
+  margin: 1.5em 0 0.5em;
+  color: var(--foreground);
+}
+.bio-md h3::before {
+  content: '§';
+  margin-right: 0.45em;
+  color: var(--primary);
+  opacity: 0.65;
+  font-family: var(--font-serif);
+}
+.bio-md h4 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin: 1.2em 0 0.4em;
+}
+
+.bio-md p { margin: 0.6em 0; }
+
+.bio-md ul, .bio-md ol {
+  margin: 0.6em 0;
+  padding-left: 1.5em;
+}
+.bio-md ul { list-style: disc; }
+.bio-md ol { list-style: decimal; }
+.bio-md li { margin: 0.3em 0; }
+.bio-md li::marker { color: var(--primary); font-weight: 600; }
+
+.bio-md strong { font-weight: 650; color: var(--foreground); }
+
+.bio-md blockquote {
+  margin: 1.1em 0;
+  padding: 0.7em 1.1em;
+  border-left: 3px solid var(--primary);
+  background: color-mix(in oklch, var(--secondary) 65%, transparent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--muted-foreground);
+  font-size: 0.92em;
+}
+.bio-md blockquote p { margin: 0.3em 0; }
+
+.bio-md code {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.85em;
+  background: var(--secondary);
+  padding: 0.15em 0.4em;
+  border-radius: 0.35em;
+  color: var(--foreground);
+}
+
+.bio-md hr {
+  margin: 1.5em 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* 表格：学术 booktabs 三线表风格（顶/底粗线，表头细线，无竖线） */
+.bio-md .bio-table-wrap {
+  margin: 1.4em 0;
+  overflow-x: auto;
+  border-top: 2px solid var(--foreground);
+  border-bottom: 2px solid var(--foreground);
+}
+.bio-md table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+.bio-md thead th {
+  font-weight: 650;
+  text-align: left;
+  padding: 0.6em 0.85em;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--foreground);
+  color: var(--foreground);
+}
+.bio-md tbody td {
+  padding: 0.55em 0.85em;
+  vertical-align: top;
+}
+.bio-md tbody tr + tr td {
+  border-top: 1px solid color-mix(in oklch, var(--border) 75%, transparent);
+}
+.bio-md tbody tr:hover td {
+  background: color-mix(in oklch, var(--accent) 45%, transparent);
+}
+
+/* ------------------------------------------------------------
+   教材插图（figure）
+   ------------------------------------------------------------ */
+.bio-figure {
+  margin: 2em 0;
+}
+.bio-figure-frame {
+  padding: 0.75rem;
+  box-shadow: 0 1px 3px oklch(0.3 0.02 100 / 8%), 0 4px 14px oklch(0.3 0.02 100 / 6%);
+  transition: box-shadow 0.25s ease;
+}
+.bio-figure-frame:hover {
+  box-shadow: 0 2px 6px oklch(0.3 0.02 100 / 12%), 0 8px 22px oklch(0.3 0.02 100 / 10%);
+}
+.dark .bio-figure-frame {
+  box-shadow: 0 1px 3px oklch(0 0 0 / 30%), 0 4px 14px oklch(0 0 0 / 20%);
+}
+.dark .bio-figure-frame:hover {
+  box-shadow: 0 2px 6px oklch(0 0 0 / 40%), 0 8px 22px oklch(0 0 0 / 30%);
+}
+.bio-fig-caption {
+  margin-top: 0.7em;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+  text-align: justify;
+}
+.bio-fig-num {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-right: 0.4em;
+  font-variant-numeric: tabular-nums;
+}
+.bio-fig-credit {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.68rem;
+  opacity: 0.65;
+  font-style: italic;
+}
+
+/* 动效 */
+@keyframes bio-fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bio-fade-up { animation: bio-fade-up 0.35s ease-out both; }
+
+@keyframes bio-pulse-dot {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1); }
+}
+.bio-dot-1 { animation: bio-pulse-dot 1.2s ease-in-out infinite; }
+.bio-dot-2 { animation: bio-pulse-dot 1.2s ease-in-out 0.2s infinite; }
+.bio-dot-3 { animation: bio-pulse-dot 1.2s ease-in-out 0.4s infinite; }
+
+/* DNA 装饰条纹 */
+.bio-dna-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 14px,
+    oklch(0.723 0.14 165 / 6%) 14px,
+    oklch(0.723 0.14 165 / 6%) 16px
+  );
+}
+
+/* ------------------------------------------------------------
+   通用学术设计细节
+   ------------------------------------------------------------ */
+
+/* 小型大写字母标签（期刊眉标风） */
+.bio-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+
+/* 细分隔线（编辑式水平规线） */
+.bio-rule {
+  height: 1px;
+  background: linear-gradient(to right, var(--border), transparent);
+}
+
+/* 首字下沉（教材正文开篇段落） */
+.bio-dropcap::first-letter {
+  float: left;
+  font-family: var(--font-serif);
+  font-size: 3.1em;
+  line-height: 0.82;
+  padding: 0.08em 0.12em 0 0;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* 纸张纹理噪点（极轻，避免空旷感） */
+.bio-paper {
+  position: relative;
+}
+.bio-paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ===== 学习报告打印导出 ===== */
+@page {
+  margin: 12mm;
+}
+
+@media print {
+  body { background: #fff !important; }
+  body * { visibility: hidden; }
+  .print-root, .print-root * { visibility: visible; }
+  .print-root { position: absolute; inset: 0 auto auto 0; width: 100%; max-width: none; padding: 8mm; }
+  .no-print { display: none !important; }
+  /* 热力图打印适配：解除横向滚动容器裁剪，避免右侧周格被截断 */
+  .print-root .overflow-x-auto { overflow: visible !important; max-width: none !important; }
+  /* 打印时去掉卡片阴影与圆角优化墨迹 */
+  .print-root .rounded-xl, .print-root .rounded-2xl { box-shadow: none !important; }
+  /* 打印分页控制：区块尽量不跨页断裂 */
+  .print-root section { break-inside: avoid-page; }
+}
+
+/* cache-bust: 1789490099 */
+
+/* cache-bust: 1789490463 */

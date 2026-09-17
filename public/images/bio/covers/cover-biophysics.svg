@@ -1,32 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：生物物理学 -->
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：生物物理学 · 青碧 -->
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
   <defs>
     <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
       <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
     </pattern>
   </defs>
+
   <rect width="800" height="500" fill="#faf8f4"/>
   <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
   <rect x="22" y="22" width="756" height="456" fill="none" stroke="#0891b2" stroke-opacity="0.30" stroke-width="1"/>
   <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#0891b2" stroke-opacity="0.6" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
   <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#0891b2"/>
+
+  <!-- eyebrow -->
   <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#0e7490">BIOPHYSICS · 101 CORE CURRICULUM</text>
-  <text x="405" y="224" text-anchor="middle" font-size="76" font-weight="700" letter-spacing="12" fill="#1c1917">生物物理学</text>
+
+  <!-- 书名 -->
+  <text x="404" y="224" text-anchor="middle" font-size="68" font-weight="700" letter-spacing="8" fill="#1c1917">生物物理学</text>
+
+  <!-- bio-rule 双分隔线 -->
   <line x1="335" y1="262" x2="465" y2="262" stroke="#0891b2" stroke-width="2.5"/>
   <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
-  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">赵南明体系</text>
-  <!-- 学科科学元素带 -->
-  <g stroke="#0891b2" stroke-width="2" fill="none">
-    <circle cx="150" cy="392" r="50" fill="#0891b2" fill-opacity="0.04"/>
-    <circle cx="150" cy="392" r="38" fill="none" stroke-opacity="0.5" stroke-width="1"/>
-    <circle cx="150" cy="392" r="16" fill="#0891b2" fill-opacity="0.10"/>
-  </g>
-  <g stroke="#0891b2" stroke-width="2" fill="none">
-    <path d="M250,380 v24 M244,380 h12 M250,380 q18,-14 36,0 q-18,14 -36,0" />
-    <path d="M320,392 q10,-24 22,0 q10,24 22,0" stroke-width="2.4"/>
-    <path d="M410,378 h56 l-10,10 M410,406 h56 l-10,-10 M414,392 h48" stroke-width="1.8"/>
-    <path d="M520,366 l30,26 -30,26 -30,-26 z" stroke-width="2.2"/>
-    <path d="M600,392 q16,-30 32,0 q16,30 32,0" stroke-width="2.4"/>
-  </g>
+
+  <!-- 副题 -->
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">赵南明体系 · 10 章 40 节</text>
+
+  <!-- ===== 科学元素线稿带 ===== -->
+  <!-- 正弦波（含基准轴） -->
+  <line x1="95" y1="392" x2="245" y2="392" stroke="#0891b2" stroke-opacity="0.35" stroke-width="1"/>
+  <path d="M100,392 q14,-22 28,0 t28,0 t28,0 t28,0 t28,0" fill="none" stroke="#0891b2" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 蛋白质卡通：螺旋（锯齿）–线圈（大环）–螺旋 -->
+  <polyline points="290,392 298,376 306,408 314,376 322,408 330,376 338,408 346,376 354,392" fill="none" stroke="#0891b2" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M354,392 c10,-36 34,-36 44,0" fill="none" stroke="#0891b2" stroke-width="2.2" stroke-linecap="round"/>
+  <polyline points="398,392 406,376 414,408 422,376 430,408 438,376 446,408 454,376 462,392" fill="none" stroke="#0891b2" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- 力矢量 F -->
+  <circle cx="513" cy="418" r="4.5" fill="#0891b2" fill-opacity="0.25" stroke="#0891b2" stroke-width="1.8"/>
+  <line x1="516" y1="415" x2="568" y2="365" stroke="#0e7490" stroke-width="2" stroke-linecap="round"/>
+  <path d="M576,358 L571.1,368.9 L564.9,362.3 Z" fill="#0e7490"/>
+  <text x="582" y="356" text-anchor="start" font-size="17" font-style="italic" font-weight="700" fill="#0e7490">F</text>
+
+  <!-- 光镊焦点（会聚光束 + 捕获小球 + 势阱虚线） -->
+  <path d="M622,366 Q612,392 622,418" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <line x1="624" y1="368" x2="705" y2="390.2" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.8"/>
+  <line x1="624" y1="416" x2="705" y2="393.8" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.8"/>
+  <line x1="719" y1="390.2" x2="734" y2="382" stroke="#0891b2" stroke-width="1.2" stroke-opacity="0.45"/>
+  <line x1="719" y1="393.8" x2="734" y2="402" stroke="#0891b2" stroke-width="1.2" stroke-opacity="0.45"/>
+  <ellipse cx="712" cy="392" rx="13" ry="10.5" fill="none" stroke="#0e7490" stroke-width="1" stroke-dasharray="3,3" stroke-opacity="0.65"/>
+  <circle cx="712" cy="392" r="7" fill="#0891b2" fill-opacity="0.18" stroke="#0891b2" stroke-width="1.8"/>
+  <circle cx="712" cy="392" r="1.6" fill="#0e7490"/>
+
+  <!-- 元素小注 -->
+  <text x="170" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">正弦波</text>
+  <text x="376" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">螺旋–线圈–螺旋</text>
+  <text x="545" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">力矢量</text>
+  <text x="674" y="449" text-anchor="middle" font-size="11.5" letter-spacing="1" fill="#78716c">光镊焦点</text>
 </svg>
