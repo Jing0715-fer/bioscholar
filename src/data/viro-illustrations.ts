@@ -123,22 +123,10 @@ export const viroIllustrations: Record<string, Illustration[]> = {
   // ---- 第 11 章 病毒的传播与致病机理 ----
   'virology-ch11-s3': [
     {
-      src: '/images/bio/commons/rabies-virus-tem.jpg',
-      caption:
-        '狂犬病毒的伪彩透射电镜照片（NIAID）：弹状病毒科毒粒呈典型的子弹状外形（约 75 nm×180 nm），一端平截、一端圆钝，表面密布 G 糖蛋白刺突。狂犬病毒经伤口进入后沿外周神经逆行轴浆运输至中枢神经系统增殖，前驱期后进展为恐水、狂躁或麻痹型脑炎，一旦发病病死率近乎百分之百——但其潜伏期可长达数周至数月，暴露后疫苗免疫的「在病毒抵达中枢前抢先建立免疫」正是人类医学最精妙的 raced-by-vaccine 实践。',
-      credit: commonsCredit('NIAID', 'CC BY 2.0'),
-    },
-    {
-      src: '/images/bio/commons/poliovirus-em.jpg',
-      caption:
-        '脊髓灰质炎病毒的电镜照片（CDC）：小 RNA 病毒科毒粒直径约 27–30 nm，是已知最小、结构最简单的病毒之一——裸露的正二十面体衣壳（T=1，60 个原体）无包膜，基因组仅约 7.5 kb 的正链 RNA，进入细胞即可直接充当 mRNA。病毒经粪-口途径传播，多数感染呈隐性或轻症；约百分之一感染者病毒侵入中枢致弛缓性麻痹。脊髓灰质炎是继天花之后有望被疫苗消灭的第二个病原，全球已多年未见 2 型与 3 型野毒株病例。',
-      credit: commonsCredit('CDC/Fred Murphy', 'Public domain'),
-    },
-    {
       src: '/images/bio/commons/measles-virus-em.jpg',
       caption:
         '麻疹病毒的透射电镜照片（CDC Cynthia Goldsmith 制作）：副粘病毒科毒粒呈多形性的球形至丝状颗粒（直径约 100–250 nm），表面 H 与 F 糖蛋白刺突使感染细胞相互融合形成合胞体——「多核巨细胞」正是麻疹病理的特征。麻疹是人类传染性最强的病毒之一（R0 约 12–18，经空气传播），病毒还可罕见地于中枢神经系统持续多年引发亚急性硬化性全脑炎（SSPE）；感染还会造成数周至数年的「免疫失忆」，削弱对既往病原的记忆应答。',
-      credit: commonsCredit('CDC/Cynthia S. Goldsmith', 'Public domain'),
+      credit: '图片来源：美国 CDC/Cynthia S. Goldsmith 伪彩电镜照片（公有领域）',
     },
   ],
 

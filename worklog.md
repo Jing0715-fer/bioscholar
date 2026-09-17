@@ -390,3 +390,19 @@ Stage Summary:
 - mrna-vaccine 机制图两轮均为疫苗瓶产品照（不合格），病毒学 ch12-s2 疫苗节暂无配图，建议下轮搜 "mRNA vaccine mechanism" 替代图
 - 免疫学 3 张未确证源页的图片（antibody-igg-structure/immunoglobulin-classes/mhc-class1-structure）建议下轮人工核对 Commons 文件页补全作者署名
 - 可选打磨：cron 播种假数据清理、复习卡片遗忘曲线历史图、⌘K 拼音首字母匹配
+
+---
+Task ID: 37-final
+Agent: 主控 (Z.ai Code)
+Task: 病毒学 TEM 配图的限流兜底方案与交付收尾
+
+Work Log:
+- Commons upload CDN 对本沙箱 IP 的 429 限流持续超过 1 小时未解除（含 25 分钟静默等待后复测、en.wikipedia 与 Special:FilePath 重定向、MD5 直链构造、Wayback Machine 均不可行；后台守护进程两次被沙箱回收）。
+- 兜底：改用 z-ai image-search 技能（OSS 转存真实网络图片）。对狂犬/脊灰/麻疹三轮搜索共 9 张候选，VLM 逐张验证真实性（真实电镜照片、病毒形态正确、无水印文字）：仅麻疹候选合格（底层为 CDC Cynthia Goldsmith 伪彩 TEM，公有领域），已落盘 public/images/bio/commons/measles-virus-em.jpg 并以 HTTP 200 与阅读器 loaded:true 双重验证。
+- 重要剔除：狂犬首张候选经 VLM 判定为 SARS-CoV-2 的 SEM 照片（张冠李戴），已删除文件；脊灰候选分别为分类信息图/细菌照片/文献拼版图，全部不合格。狂犬与脊灰两个挂载条目已从 viro-illustrations.ts 移除，避免 404。
+- 终态：病毒学插图 14 张/10 小节（ch1-s4 蚀斑、ch2-s3 流感+HIV、ch2-s4 冠状+埃博拉、ch3-s1 巴尔的摩、ch4-s1 复制周期中英文双图、ch7-s3 HIV 出芽、ch9-s1 T4、ch9-s3 溶原+λ、ch10-s2 抗原转变、ch11-s3 麻疹 TEM）。
+- 复检：check-ill.ts 全绿（46 图 0 缺失 0 无效节）；tsc 应用源码零错误；dev.log 无新 404；agent-browser 终验 ch11-s3 麻疹图渲染成功。
+
+Stage Summary:
+- 平台终态：九学科 106 章 441 节约 83 万字 · 525 题 · 274 术语 · 154 张挂载插图（全部真实来源）· 10 张自绘 SVG 封面
+- 狂犬/脊灰 TEM 图与 tmv-structure-zh/coronavirus-replication-cycle/vsv-em（已审校未下载）共 5 张留待下轮：Commons 限流解除后用 agent-ctx/tmp37/dl10.py 或 dl8.py 直接补齐（MD5 直链已验证正确，仅限流问题）
