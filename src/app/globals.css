@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: hsl(48 33% 97%);
+  --foreground: hsl(24 10% 10%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(24 10% 10%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(24 10% 10%);
+  --primary: hsl(160 84% 24%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(48 30% 92%);
+  --secondary-foreground: hsl(24 10% 10%);
+  --muted: hsl(48 30% 92%);
+  --muted-foreground: hsl(24 8% 42%);
+  --accent: hsl(48 30% 90%);
+  --accent-foreground: hsl(24 10% 10%);
+  --destructive: hsl(0 72% 46%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(40 20% 86%);
+  --input: hsl(40 20% 86%);
+  --ring: hsl(160 84% 24%);
+  --radius: 0.6rem;
+}
+
+.dark {
+  --background: hsl(200 12% 8%);
+  --foreground: hsl(40 20% 94%);
+  --card: hsl(200 12% 11%);
+  --card-foreground: hsl(40 20% 94%);
+  --popover: hsl(200 12% 11%);
+  --popover-foreground: hsl(40 20% 94%);
+  --primary: hsl(160 70% 42%);
+  --primary-foreground: hsl(200 12% 8%);
+  --secondary: hsl(200 10% 16%);
+  --secondary-foreground: hsl(40 20% 94%);
+  --muted: hsl(200 10% 16%);
+  --muted-foreground: hsl(200 8% 60%);
+  --accent: hsl(200 10% 18%);
+  --accent-foreground: hsl(40 20% 94%);
+  --destructive: hsl(0 62% 50%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(200 10% 20%);
+  --input: hsl(200 10% 20%);
+  --ring: hsl(160 70% 42%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* Markdown 教材排版 */
+.markdown-body {
+  @apply text-[15px] leading-7 text-foreground;
+}
+.markdown-body h2 {
+  @apply mt-8 mb-3 text-lg font-semibold tracking-tight border-b pb-1.5;
+}
+.markdown-body p {
+  @apply my-2.5;
+}
+.markdown-body strong {
+  @apply font-semibold text-foreground;
+}
+.markdown-body ul {
+  @apply my-2.5 list-disc space-y-1 pl-5;
+}
+.markdown-body ol {
+  @apply my-2.5 list-decimal space-y-1 pl-5;
+}
+.markdown-body blockquote {
+  @apply my-3 border-l-2 border-primary/40 bg-muted/50 px-3 py-1.5 text-sm text-muted-foreground;
+}
+.markdown-body table {
+  @apply my-4 w-full border-collapse overflow-hidden rounded-md text-sm;
+}
+.markdown-body thead {
+  @apply bg-muted;
+}
+.markdown-body th {
+  @apply border px-3 py-2 text-left font-semibold;
+}
+.markdown-body td {
+  @apply border px-3 py-1.5 align-top;
+}
+.markdown-body tbody tr:nth-child(even) {
+  @apply bg-muted/30;
+}
+
+/* 细滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(160 20% 60% / 0.35);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(160 20% 45% / 0.5);
+}

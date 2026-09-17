@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：神经生物学 · 黛青 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#0f766e" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#0f766e" stroke-opacity="0.6" stroke-width="1.6"/>
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#0f766e"/>
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#0d9488">NEUROBIOLOGY · 101 CORE CURRICULUM</text>
+  <text x="391" y="224" text-anchor="middle" font-size="80" font-weight="700" letter-spacing="10" fill="#1c1917">神经生物学</text>
+  <line x1="335" y1="262" x2="465" y2="262" stroke="#0f766e" stroke-width="2.5"/>
+  <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">寿天德体系 · 12 章 48 节</text>
+  <!-- 神经元线稿 -->
+  <g stroke="#0f766e" stroke-width="2.2" fill="none">
+    <circle cx="140" cy="380" r="26" fill="#0f766e" fill-opacity="0.05"/>
+    <path d="M166,380 h56 l30,-34 M222,380 l30,20 M222,380 h40 l24,-28"/>
+    <path d="M252,346 q10,-14 22,-6 M252,400 q12,10 22,2 M286,352 q10,-12 20,-4"/>
+  </g>
+  <circle cx="146" cy="372" r="3.2" fill="#0f766e" fill-opacity="0.6"/>
+  <circle cx="136" cy="386" r="3.2" fill="#0f766e" fill-opacity="0.6"/>
+  <text x="140" y="428" text-anchor="middle" font-size="11" fill="#0d9488">神经元</text>
+  <!-- 动作电位波形 -->
+  <g transform="translate(330,340)">
+    <path d="M0,60 h150 M10,70 v-64" stroke="#0f766e" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+    <path d="M10,60 h14 q4,0 4,-6 v-8 q0,-38 8,-38 q8,0 8,38 v14 q0,10 10,10 h60" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+    <text x="70" y="18" font-size="10" fill="#0d9488">+30 mV</text>
+    <text x="4" y="52" font-size="10" fill="#0d9488">-70</text>
+    <text x="84" y="90" font-size="11" fill="#0d9488">动作电位</text>
+  </g>
+  <!-- 突触 -->
+  <g transform="translate(540,360)">
+    <path d="M0,10 q-12,4 -12,18 q0,10 12,12" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+    <path d="M8,14 v24" stroke="#0f766e" stroke-width="2.4"/>
+    <circle cx="4" cy="26" r="6" fill="#0f766e" fill-opacity="0.15" stroke="#0f766e" stroke-width="1.6"/>
+    <circle cx="30" cy="14" r="5" fill="#0f766e" fill-opacity="0.2" stroke="#0f766e" stroke-width="1.4"/>
+    <circle cx="30" cy="38" r="5" fill="#0f766e" fill-opacity="0.2" stroke="#0f766e" stroke-width="1.4"/>
+    <path d="M46,8 q10,18 0,36" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+    <text x="24" y="60" font-size="11" fill="#0d9488">突触</text>
+  </g>
+  <!-- 脑轮廓 -->
+  <g transform="translate(660,340)">
+    <path d="M0,40 q-6,-28 22,-34 q26,-6 44,6 q20,-10 34,2 q18,12 8,34 q6,20 -14,26 q-18,8 -34,-2 q-22,12 -42,0 q-20,-8 -18,-32 z" fill="#0f766e" fill-opacity="0.05" stroke="#0f766e" stroke-width="2.2"/>
+    <path d="M18,38 q10,-14 24,-6 M40,50 q14,-6 26,4 M56,28 q8,-10 18,-2" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-opacity="0.7"/>
+    <text x="44" y="96" font-size="11" fill="#0d9488" text-anchor="middle">大脑皮层</text>
+  </g>
+</svg>

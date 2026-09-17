@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:/home/z/my-project/db/custom.db"
+}
+
+model LearningProgress {
+  id        String   @id @default(cuid())
+  subjectId String
+  chapterId String
+  sectionId String
+  completed Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([sectionId])
+}
+
+model Note {
+  id        String   @id @default(cuid())
+  subjectId String
+  sectionId String
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model QuizAttempt {
+  id         String   @id @default(cuid())
+  questionId String
+  subjectId  String
+  chapterId  String
+  userAnswer String
+  correct    Boolean
+  createdAt  DateTime @default(now())
+}
+
+model FlashcardReview {
+  id            String   @id @default(cuid())
+  cardId        String
+  ease          Float    @default(2.5)
+  intervalDays  Float    @default(0)
+  reps          Int      @default(0)
+  lapses        Int      @default(0)
+  dueAt         DateTime @default(now())
+  lastReviewedAt DateTime @default(now())
+  createdAt     DateTime @default(now())
+
+  @@unique([cardId])
+}
