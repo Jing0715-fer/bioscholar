@@ -57,6 +57,10 @@ const SUBJECT_ORDER: SubjectId[] = [
   'cell-biology',
   'biophysics',
   'microbiology',
+  'immunology',
+  'neurobiology',
+  'bioinformatics',
+  'virology',
 ]
 
 const SUBJECT_NAMES: Record<SubjectId, string> = {
@@ -68,6 +72,7 @@ const SUBJECT_NAMES: Record<SubjectId, string> = {
   immunology: '免疫学',
   neurobiology: '神经生物学',
   bioinformatics: '生物信息学',
+  virology: '病毒学',
 }
 
 const TYPE_NAMES: Record<string, string> = {

@@ -13,6 +13,7 @@ export type SubjectId =
   | 'immunology'
   | 'neurobiology'
   | 'bioinformatics'
+  | 'virology'
 
 /** 学科 */
 export interface Subject {

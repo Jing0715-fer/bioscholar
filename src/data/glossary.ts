@@ -21,6 +21,7 @@ import { bioinfoGlossaryB3 } from './glossary-bioinfo-b3'
 import { bioinfoGlossaryB4 } from './glossary-bioinfo-b4'
 import { bioinfoGlossaryB5 } from './glossary-bioinfo-b5'
 import { bioinfoGlossaryB6 } from './glossary-bioinfo-b6'
+import { viroGlossary } from './glossary-virology'
 
 export const glossary: GlossaryTerm[] = [
   // ---------- 生物化学（g-001 ~ g-026） ----------
@@ -1192,4 +1193,5 @@ export const glossary: GlossaryTerm[] = [
   ...bioinfoGlossaryB4,
   ...bioinfoGlossaryB5,
   ...bioinfoGlossaryB6,
+  ...viroGlossary,
 ]

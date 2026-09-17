@@ -49,7 +49,7 @@ const NAV_ITEMS: Array<{
   desc: string
 }> = [
   { key: 'dashboard', label: '学习仪表盘', icon: LayoutDashboard, desc: '进度总览与学习统计' },
-  { key: 'subjects', label: '学科中心', icon: BookOpen, desc: '八大基础学科教材' },
+  { key: 'subjects', label: '学科中心', icon: BookOpen, desc: '九大基础学科教材' },
   { key: 'assistant', label: 'AI 智能助教', icon: MessageSquareText, desc: '生物学专家问答' },
   { key: 'quiz', label: '测验中心', icon: ClipboardList, desc: '章节自测与成绩' },
   { key: 'revision', label: '复习卡片', icon: Layers, desc: '间隔重复记忆术语' },

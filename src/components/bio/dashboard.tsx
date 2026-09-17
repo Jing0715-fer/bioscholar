@@ -93,7 +93,7 @@ export function Dashboard() {
             </h1>
             <div className="bio-rule mt-5" aria-hidden />
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              覆盖生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学与生物信息学八大基础学科，
+              覆盖生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学、生物信息学与病毒学九大基础学科，
               系统梳理生命的分子逻辑与细胞世界。
             </p>
             <p className="mt-2 text-xs tabular-nums text-muted-foreground/80">

@@ -9,6 +9,7 @@ import {
   Shield,
   Brain,
   Network,
+  Bug,
 } from 'lucide-react'
 
 /** 学科主题色映射（Tailwind 类名） */
@@ -142,6 +143,20 @@ export const subjectThemes: Record<
       hover: 'hover:border-lime-500/60 hover:shadow-lime-500/10',
     },
     colorName: '青柠',
+  },
+  virology: {
+    icon: Bug,
+    classes: {
+      bg: 'bg-orange-600 text-white',
+      bgSoft: 'bg-orange-500/10',
+      text: 'text-orange-700 dark:text-orange-400',
+      border: 'border-orange-500/40',
+      ring: 'ring-orange-500/30',
+      gradient: 'from-orange-500/90 to-red-600/90',
+      badge: 'bg-orange-500/15 text-orange-700 dark:text-orange-400 border-orange-500/30',
+      hover: 'hover:border-orange-500/60 hover:shadow-orange-500/10',
+    },
+    colorName: '朱橙',
   },
 }
 

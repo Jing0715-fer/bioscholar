@@ -11,6 +11,7 @@ import { microbiology } from './subjects/microbiology'
 import { immunology } from './subjects/immunology'
 import { neurobiology } from './subjects/neurobiology'
 import { bioinformatics } from './subjects/bioinformatics'
+import { virology } from './subjects/virology'
 import { sectionExpansions } from './expansions'
 
 /**
@@ -35,7 +36,7 @@ function withExpansions(subject: Subject): Subject {
   }
 }
 
-/** 五大基础学科 */
+/** 九大学科 */
 export const subjects: Subject[] = [
   biochemistry,
   molecularBiology,
@@ -45,6 +46,7 @@ export const subjects: Subject[] = [
   immunology,
   neurobiology,
   bioinformatics,
+  virology,
 ].map(withExpansions)
 
 export function getSubject(id: SubjectId): Subject | undefined {
@@ -134,6 +136,7 @@ import { microbiologyQuiz } from './quiz/microbiology'
 import { immunologyQuiz } from './quiz/immunology'
 import { neurobiologyQuiz } from './quiz/neurobiology'
 import { bioinformaticsQuiz } from './quiz/bioinformatics'
+import { virologyQuiz } from './quiz/virology'
 
 export const allQuizQuestions: QuizQuestion[] = [
   ...biochemistryQuiz,
@@ -144,6 +147,7 @@ export const allQuizQuestions: QuizQuestion[] = [
   ...immunologyQuiz,
   ...neurobiologyQuiz,
   ...bioinformaticsQuiz,
+  ...virologyQuiz,
 ]
 
 export function getQuizBySubject(subjectId: SubjectId): QuizQuestion[] {

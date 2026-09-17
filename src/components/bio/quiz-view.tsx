@@ -64,6 +64,8 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-teal-500/10 dark:data-[state=active]:bg-teal-500/15 data-[state=active]:text-teal-700 dark:data-[state=active]:text-teal-400 data-[state=active]:shadow-none',
   immunology:
     'data-[state=active]:bg-fuchsia-500/10 dark:data-[state=active]:bg-fuchsia-500/15 data-[state=active]:text-fuchsia-700 dark:data-[state=active]:text-fuchsia-400 data-[state=active]:shadow-none',
+  virology:
+    'data-[state=active]:bg-orange-500/10 dark:data-[state=active]:bg-orange-500/15 data-[state=active]:text-orange-700 dark:data-[state=active]:text-orange-400 data-[state=active]:shadow-none',
 }
 
 /** 学科主按钮配色（含 hover 深色，避免默认 hover 变主色） */
@@ -76,6 +78,7 @@ const SUBJECT_BUTTON: Record<SubjectId, string> = {
   bioinformatics: 'bg-lime-600 text-white hover:bg-lime-700',
   neurobiology: 'bg-teal-600 text-white hover:bg-teal-700',
   immunology: 'bg-fuchsia-600 text-white hover:bg-fuchsia-700',
+  virology: 'bg-orange-600 text-white hover:bg-orange-700',
 }
 
 /** 章节卡学科色左边框 */
@@ -88,6 +91,7 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   bioinformatics: 'border-l-lime-500',
   neurobiology: 'border-l-teal-500',
   immunology: 'border-l-fuchsia-500',
+  virology: 'border-l-orange-500',
 }
 
 interface AttemptApiItem {

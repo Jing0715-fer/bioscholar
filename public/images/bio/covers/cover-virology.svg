@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：病毒学 · 朱橙 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#ea580c" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#ea580c" stroke-opacity="0.6" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#ea580c"/>
+
+  <!-- eyebrow -->
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#c2410c">VIROLOGY · 101 CORE CURRICULUM</text>
+
+  <!-- 书名 -->
+  <text x="407" y="224" text-anchor="middle" font-size="80" font-weight="700" letter-spacing="14" fill="#1c1917">病毒学</text>
+
+  <!-- bio-rule 双分隔线 -->
+  <line x1="335" y1="262" x2="465" y2="262" stroke="#ea580c" stroke-width="2.5"/>
+  <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+
+  <!-- 副题 -->
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">谢天恩 / Flint 体系 · 12 章 48 节</text>
+
+  <!-- ===== 科学元素线稿带 ===== -->
+  <!-- 包膜毒粒（圆核衣壳 + 蘑菇状刺突） -->
+  <g stroke="#ea580c" fill="none">
+    <circle cx="150" cy="390" r="38" fill="#ea580c" fill-opacity="0.04" stroke-width="2"/>
+    <circle cx="150" cy="390" r="22" fill="#ea580c" fill-opacity="0.07" stroke-width="1.4"/>
+    <!-- 刺突 12 枚：茎 + 球头 -->
+    <g stroke-width="1.6">
+      <line x1="150" y1="352" x2="150" y2="340"/><circle cx="150" cy="336" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="177" y1="363" x2="186" y2="354"/><circle cx="189" cy="351" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="188" y1="390" x2="200" y2="390"/><circle cx="205" cy="390" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="177" y1="417" x2="186" y2="426"/><circle cx="189" cy="429" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="150" y1="428" x2="150" y2="440"/><circle cx="150" cy="444" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="123" y1="417" x2="114" y2="426"/><circle cx="111" cy="429" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="112" y1="390" x2="100" y2="390"/><circle cx="95" cy="390" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+      <line x1="123" y1="363" x2="114" y2="354"/><circle cx="111" cy="351" r="4.2" fill="#ea580c" fill-opacity="0.5"/>
+    </g>
+    <!-- 基因组分节段弧线 -->
+    <path d="M138,382 Q150,376 162,382 M138,391 Q150,385 162,391 M138,400 Q150,394 162,400" stroke-width="1.1" stroke-opacity="0.75"/>
+  </g>
+
+  <!-- 二十面体毒粒（六边形轮廓 + 三角剖分） -->
+  <g stroke="#ea580c" fill="none" transform="translate(258,390)">
+    <circle r="0"/>
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="#ea580c" fill-opacity="0.05" stroke-width="2"/>
+    <polygon points="0,-40 35,-20 0,0" stroke-width="1" stroke-opacity="0.7"/>
+    <polygon points="0,-40 -35,-20 0,0" stroke-width="1" stroke-opacity="0.7"/>
+    <polygon points="35,-20 35,20 0,0" stroke-width="1" stroke-opacity="0.7"/>
+    <polygon points="35,20 0,40 0,0" stroke-width="1" stroke-opacity="0.7"/>
+    <polygon points="0,40 -35,20 0,0" stroke-width="1" stroke-opacity="0.7"/>
+    <polygon points="-35,20 -35,-20 0,0" stroke-width="1" stroke-opacity="0.7"/>
+    <!-- 顶点五邻体纤维 -->
+    <line x1="0" y1="-40" x2="0" y2="-54" stroke-width="1.2"/>
+    <circle cx="0" cy="-57" r="3" fill="#ea580c" fill-opacity="0.55" stroke="none"/>
+  </g>
+
+  <!-- 噬菌体（二十面体头 + 颈 + 尾鞘横纹 + 基板 + 尾丝） -->
+  <g stroke="#ea580c" fill="none" transform="translate(390,384)">
+    <polygon points="0,-52 24,-38 24,-12 0,2 -24,-12 -24,-38" fill="#ea580c" fill-opacity="0.06" stroke-width="2"/>
+    <line x1="0" y1="2" x2="0" y2="10" stroke-width="1.6"/>
+    <rect x="-11" y="10" width="22" height="46" fill="#ea580c" fill-opacity="0.05" stroke-width="1.8"/>
+    <g stroke-width="0.9" stroke-opacity="0.65">
+      <line x1="-11" y1="19" x2="11" y2="19"/><line x1="-11" y1="27" x2="11" y2="27"/>
+      <line x1="-11" y1="35" x2="11" y2="35"/><line x1="-11" y1="43" x2="11" y2="43"/>
+    </g>
+    <!-- 基板 -->
+    <polygon points="-22,56 22,56 14,64 -14,64" fill="#ea580c" fill-opacity="0.06" stroke-width="1.8"/>
+    <!-- 尾丝 -->
+    <path d="M-20,60 Q-38,70 -46,84 M20,60 Q38,70 46,84 M-12,64 Q-20,76 -18,88 M12,64 Q20,76 18,88" stroke-width="1.3"/>
+    <!-- 头部核酸 -->
+    <path d="M-12,-34 Q0,-40 12,-34 M-12,-26 Q0,-32 12,-26 M-12,-18 Q0,-24 12,-18" stroke-width="1" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- 螺旋毒粒（TMV 杆状 + 螺旋条纹） -->
+  <g stroke="#ea580c" fill="none" transform="translate(500,390) rotate(-18)">
+    <rect x="-58" y="-11" width="116" height="22" rx="11" fill="#ea580c" fill-opacity="0.05" stroke-width="2"/>
+    <g stroke-width="0.9" stroke-opacity="0.6">
+      <line x1="-46" y1="-11" x2="-46" y2="11"/><line x1="-38" y1="-11" x2="-38" y2="11"/>
+      <line x1="-30" y1="-11" x2="-30" y2="11"/><line x1="-22" y1="-11" x2="-22" y2="11"/>
+      <line x1="-14" y1="-11" x2="-14" y2="11"/><line x1="-6" y1="-11" x2="-6" y2="11"/>
+      <line x1="2" y1="-11" x2="2" y2="11"/><line x1="10" y1="-11" x2="10" y2="11"/>
+      <line x1="18" y1="-11" x2="18" y2="11"/><line x1="26" y1="-11" x2="26" y2="11"/>
+      <line x1="34" y1="-11" x2="34" y2="11"/><line x1="42" y1="-11" x2="42" y2="11"/>
+    </g>
+    <!-- 内嵌 RNA 螺线 -->
+    <path d="M-50,0 Q-44,-8 -38,0 T-26,0 T-14,0 T-2,0 T10,0 T22,0 T34,0 T46,0" stroke-width="1.2" stroke-opacity="0.8"/>
+  </g>
+
+  <!-- 棒状丝状病毒（埃博拉样：弯月丝体） -->
+  <g stroke="#ea580c" fill="none">
+    <path d="M560,420 Q600,392 640,408 T720,396" fill="none" stroke-width="2"/>
+    <path d="M560,428 Q600,400 640,416 T720,404" fill="none" stroke-width="1" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- 电镜网格小元素（右上角落点缀：点阵滤过隐喻） -->
+  <g fill="#ea580c" fill-opacity="0.28">
+    <circle cx="640" cy="120" r="2"/><circle cx="652" cy="112" r="1.5"/><circle cx="664" cy="120" r="2"/>
+    <circle cx="676" cy="112" r="1.5"/><circle cx="688" cy="120" r="2"/>
+  </g>
+
+  <!-- 底部注记 -->
+  <text x="400" y="470" text-anchor="middle" font-size="10.5" letter-spacing="2.2" fill="#78716c">VIRION · CAPSID · ENVELOPE · GENOME</text>
+</svg>

@@ -39,6 +39,7 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   bioinformatics: 'border-l-lime-500',
   neurobiology: 'border-l-teal-500',
   immunology: 'border-l-fuchsia-500',
+  virology: 'border-l-orange-500',
 }
 
 /** 学科筛选下边线激活态（学科色文字 + 下边线，不用全色块） */
@@ -56,6 +57,8 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-teal-500/10 dark:data-[state=active]:bg-teal-500/15 data-[state=active]:text-teal-700 dark:data-[state=active]:text-teal-400 data-[state=active]:shadow-none',
   immunology:
     'data-[state=active]:bg-fuchsia-500/10 dark:data-[state=active]:bg-fuchsia-500/15 data-[state=active]:text-fuchsia-700 dark:data-[state=active]:text-fuchsia-400 data-[state=active]:shadow-none',
+  virology:
+    'data-[state=active]:bg-orange-500/10 dark:data-[state=active]:bg-orange-500/15 data-[state=active]:text-orange-700 dark:data-[state=active]:text-orange-400 data-[state=active]:shadow-none',
 }
 
 // ============================================================

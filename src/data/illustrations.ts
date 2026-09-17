@@ -19,6 +19,7 @@ import { microIllustrations } from './micro-illustrations'
 import { immunoIllustrations } from './immuno-illustrations'
 import { neuroIllustrations } from './neuro-illustrations'
 import { bioinfoIllustrations } from './bioinfo-illustrations'
+import { viroIllustrations } from './viro-illustrations'
 
 /** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
@@ -30,6 +31,7 @@ export const subjectCovers: Record<SubjectId, string> = {
   immunology: '/images/bio/covers/cover-immunology.svg',
   neurobiology: '/images/bio/covers/cover-neurobiology.svg',
   bioinformatics: '/images/bio/covers/cover-bioinformatics.svg',
+  virology: '/images/bio/covers/cover-virology.svg',
 }
 
 /** 仪表盘主视觉横幅（自绘矢量） */
@@ -672,5 +674,6 @@ export function getIllustrations(sectionId: string): Illustration[] {
     ...(immunoIllustrations[sectionId] ?? []),
     ...(neuroIllustrations[sectionId] ?? []),
     ...(bioinfoIllustrations[sectionId] ?? []),
+    ...(viroIllustrations[sectionId] ?? []),
   ]
 }
