@@ -151,7 +151,7 @@ export const neurobiologyQuizC4: QuizQuestion[] = [
     ],
     answer: 0,
     explanation:
-      '经典计算：E_K = 61.5 × log₁₀(5/140) ≈ −89 mV；E_Na = 61.5 × log₁₀(145/15) ≈ +61 mV；E_Ca = 30.75 × log₁₀(2/0.0001) ≈ +132 mV。E_Cl 的陷阱在于 z = −1：符号翻转后 E_Cl = −61.5 × log₁₀(110/10) ≈ −64 mV，恰与静息电位相当——故氯被称为「抑制的锚」，多数成熟神经元中 Cl⁻ 近被动分布，开放氯通道产生分流抑制。C 项正是把 E_Cl 的负号漏掉的最常见失分点；B、D 两组则全面偏离教材口径。静息时 K⁺ 驱动力约 −20 mV、Na⁺ 约 +130 mV、Ca²⁺ 逾 +200 mV。',
+      '经典计算：E_K = 61.5 × log₁₀(5/140) ≈ −89 mV；E_Na = 61.5 × log₁₀(145/15) ≈ +61 mV；E_Ca = 30.75 × log₁₀(2/0.0001) ≈ +132 mV。E_Cl 的陷阱在于 z = −1：符号翻转后 E_Cl = −61.5 × log₁₀(110/10) ≈ −64 mV，恰与静息电位相当——故氯被称为「抑制的锚」，多数成熟神经元中 Cl⁻ 近被动分布，开放氯通道产生分流抑制。C 项正是把 E_Cl 的负号漏掉的最常见失分点；B、D 两组则全面偏离教材口径。静息时 K⁺ 驱动力约 +20 mV、Na⁺ 约 −130 mV、Ca²⁺ 逾 −200 mV（驱动力按膜电位减平衡电位计，正号对应外向电流）。',
     difficulty: 3,
   },
   {
@@ -243,7 +243,7 @@ export const neurobiologyQuizC4: QuizQuestion[] = [
     chapterId: 'neurobiology-ch3',
     type: 'truefalse',
     question:
-      'Hodgkin 与 Huxley 在枪乌贼巨轴突上以电压钳分离钠、钾电流，把钠电导写成 ḡ_Na·m³h、钾电导写成 ḡ_K·n⁴；Huxley 用手摇计算机数值积分重建出动作电位，模型预测传导速度约 18.7 m/s，与实验值约 21 m/s 相差不足一成。二人于 1963 年与 Eccles 共获诺贝尔生理学或医学奖。',
+      'Hodgkin 与 Huxley 在枪乌贼巨轴突上以电压钳分离钠、钾电流，把钠电导写成 ḡ_Na·m³h、钾电导写成 ḡ_K·n⁴；Huxley 用手摇计算机数值积分重建出动作电位，模型预测传导速度约 18.7 m/s，与实验值约 21 m/s 相差约一成。二人于 1963 年与 Eccles 共获诺贝尔生理学或医学奖。',
     options: ['正确', '错误'],
     answer: 0,
     explanation:

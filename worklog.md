@@ -170,3 +170,101 @@
 - 校验：bun -e 结构自检脚本全部通过——三份 quiz 均 15 题、题号连续（1~15 / 31~45 / 46~60，与既有 A2 批 q-microbiology-16~30 无 id 冲突）、每章 5 题、题型 single 9/tf 3/mult 3、难度 1:3:1、判断题 options 恒为 [正确, 错误]、多选 answer 为数组且 ≥2 项、选项无重复、解析全部 ≥80 字（实测最短 200 字）；三份 glossary 均 5 条、id 连续（g-81~85 / g-91~95 / g-96~100，与既有 A2 批 g-86~90 无冲突、术语名无重复）、definition 全部 ≥80 字（实测最短 273 字）、subjectId 均为 'microbiology' 字面量；bun 以 `import type` 免运行时解析直接导入成功，tsc -p 全项目校验中本批 6 个文件零类型错误（项目既有 5 处错误均位于 api/report、wrongbook-view 等无关文件）。
 - 出题口径（全部取自正文原文数值/结论）：ch1（三型八大类群的原核六类清单、Woese 1977/1990 三域与古菌醚键膜脂无肽聚糖、大肠杆菌 20 min 一代 24 h 理论 72 代约 4.7×10²¹、弗莱明-弗洛里-钱恩三人共享 1945 诺奖、列文虎克 1674/1683 与尼达姆-斯巴兰扎尼之争、Avery 材料为肺炎链球菌而非支原体）；ch2（肽聚糖 NAG/NAM β-1,4 骨架与 D-Ala–D-Ala 靶点、革兰染色乙醇抽提 G⁻ 脂质机制、G⁺ 壁 20–80 nm 占干重 50%–80% 对 G⁻ 2–7 nm 约 10%、周质空间宽约 15 nm 属 G⁻、鞭毛质子马达每转约 1000 质子非 ATP、荚膜抗吞噬与 Ca-DPA 占干重 5%–15%、芽孢休眠体一菌一孢）；ch3（芽痕富几丁质出芽 20–30 次复制性衰老、乙醇发酵 0.511 g/g 与 Crabtree 高糖有氧优先发酵、霉菌孢子 60–70℃ 可杀灭与芽孢对照、地衣约九成子囊菌学名取真菌名、白腐真菌木质素过氧化物酶与黄曲霉毒素 B1 耐热、抗真菌药靶稀缺源于真核同源）；ch7（高压蒸汽 121.3℃ 15–30 min 表压 0.1 MPa、10⁴ CFU/mL 起始代时 30 min 两小时 16 倍至 1.6×10⁵、五类氧关系与 SOD/CAT 装备对应、巴氏消毒属消毒非灭菌、30–300 适计区间与比浊 0.4 稀释线）；ch8（彷徨试验突变先于选择、Avery 1944 仅 DNA 酶摧毁转化活性与大肠杆菌自然无感受态、F 因子约 100 kb 与 Hfr 100 min 及中断杂交分钟图、Ames 试验 his⁻ 加 S9 符合率 83%–90%、pUC19 蓝白筛选与 λ 20 kb/柯斯 35–45 kb/BAC 以 F 因子低拷贝严紧复制）；ch9（耕层土每克细菌 10⁸–10⁹、厌氧氨氧化产氮气非甲烷与 N₂O 265 倍增温潜势、青霉-根瘤-噬菌体-酵母四例对应拮抗共生寄生竞争、厌氧消化三阶段约七成甲烷来自乙酸、种间氢转移与 nisin 及定植抗力、空气只是传播走廊）；ch10（内毒素 LPS 脂质 A 经 TLR4 耐热不能类毒素化、FMT 2013 年 81% 对 31%、正常菌群四重功能、结核分枝杆菌不完全吞噬、R₀ 与群体免疫阈值 1−1/R₀、脊髓灰质炎隐性感染与医院感染 48 h 界限）；ch11（Baltimore 按核酸类型与 mRNA 路线分七类、16S 垂直遗传横向转移罕见、ANI 95%–96% 对应 DDH 70% 与 98.7% 同种候选、古菌醚键 L 型甘油恰与细菌相反、数值分类等权与 GC 排除性指标、CPR 超小基因组 0.7–1 Mb）；ch12（青霉素 1–2 U/mL 至数万 U/mL 整四个数量级、MRSA 的 SCCmec-mecA-PBP2a 靶位改变、CRISPR 独具免疫记忆而限制修饰系统无记忆、syn3.0 473 基因 531 kb 约 149 基因未知、伍德-扬达尔钢厂尾气 2018 投产、PHA 胞内储藏可彻底降解、生物防护三保险、BSL-4 正压防护服与 BSL-3 定向负压之别）。
 - 备注：严格只新增上述 6 个文件，未改动任何其他文件；沿用 A2 批次同样的独立导出与落盘约定（不在聚合层注册）；题目错误项设计为「数值张冠李戴、方向颠倒、机制主体互换、时序错置」等可由正文直接判伪的类型，全部数值与结论均与正文逐条核对通过。
+
+## Task ID: 28-ILL-B2 —— 生物信息学 11 张 Commons 插图 VLM 审校与挂载
+
+- 日期：2026-09-17（沙箱会话）
+- 背景：11 张 Wikimedia Commons 生物信息学插图（Task 28 下载批次 A，清单 agent-ctx/tmp28/dl/jobsA.json）需逐张 VLM 科学审校后挂载到生物信息学教材 8 个小节；guide 文件 agent-ctx/28-ILL-guide.md 实际不存在，格式参照既有 micro-illustrations.ts / manifest-5a.json / lib/types.ts（Illustration{src,caption,credit?}）与 credit 约定「图片来源：Wikimedia Commons（作者，许可证）」。
+- 审校流程：/tmp/vlm-review-b.ts（z-ai-web-dev-sdk createVision，model glm-4.5v，thinking disabled，base64 本图直读，逐张中文三项清单：科学正确性/乱码错别字/教学适用性，结果增量落盘 agent-ctx/tmp28/vlm-b-results.json）；首轮 6 PASS、5 FAIL；对 5 张 FAIL 以 /tmp/vlm-recheck-b.ts 做二轮聚焦复核（先逐字转录后判断），4 张翻转为 PASS（blast-sample-output 坐标清点自洽、profile-hmm-states 首轮理由自相矛盾且形状-标签对应实为标准、rooted-vs-unrooted 两树分裂结构一致、blast-word-extension 的含错配种子恰为邻域字词机制）；blosum62 两轮 VLM 均误读为「-206/-1100 异常数」，经 tesseract OCR（1280px 与 2560px 两次独立渲染）交叉验证裁定为相邻单元格数字视觉粘连——每个「怪数」可 100% 分解为连续的标准 BLOSUM62 值序列（N 行 -2,0,6→-206；Y 行 -2,2,7→-227；对角线 W-W=11/C-C=9/A-A=4 与 I-V=3 等均与标准一致），判 PASS 挂载并在图注中提示排版紧凑宜对位细读。全部 11 张通过，无剔除。
+- 产出：
+  - src/data/bioinfo-illustrations.ts（重写占位：bioinfoIllustrations，8 小节 11 图；ch1-s1 中心法则、ch3-s2 点阵图、ch3-s3 NW×2、ch4-s1 BLOSUM62、ch4-s2 BLAST×2、ch5-s2 profile HMM×2、ch5-s3 基因结构、ch6-s2 有根/无根树）
+  - agent-ctx/tmp28/manifest-b.json（11 条：topic/sectionId/commonsFile/author/license/sourceUrl/verified 审校结论）
+  - agent-ctx/tmp28/ 下 vlm-b-results.json（首轮）、vlm-b-recheck.json（二轮）、bl62-transcript.json（BLOSUM62 四分块转录）及 meta_*.json（Commons imageinfo 元数据查询缓存）
+- 许可证（Commons API imageinfo extmetadata 逐张查询，全部成功无泛标注）：central-dogma-crick-1958（Ragesoss，Public domain）、dot-plot-phage-clusters（Julianne H Grose，CC BY-SA 4.0）、needleman-wunsch-matrix（Slowkow，CC0）、needleman-wunsch-alignment（JockBanan，CC0）、blosum62-matrix（Nothingserious，Public domain）、blast-word-extension 与 blast-sample-output（Fdardel，CC BY-SA 3.0×2）、profile-hmm-msa（EMBL-EBI Train Online，CC BY-SA 4.0）、profile-hmm-states（Accelrys，CC BY 4.0）、gene-structure-exon-intron（Basu Mallick 等，CC BY 2.5）、rooted-vs-unrooted-tree（OUStudent2023，CC BY-SA 4.0）。
+- 校验：bun 结构自检（/tmp/check-ill-b.ts）通过——8 小节 11 图与 jobsA.json 一一对应无遗漏；每图 caption 200–217 字（全部落在 120–220 区间）；src 路径与 public/images/bio/commons 实际文件全部存在；credit 均为「图片来源：Wikimedia Commons（作者，许可证）」格式；8 个 sectionId 与 subjects/bioinfo 章节文件 id 全部匹配；bunx tsc -p 全项目编译本文件零错误。
+- 备注：严格只写 bioinfo-illustrations.ts、manifest-b.json 与 /tmp 脚本（vlm-review-b.ts、vlm-recheck-b.ts、vlm-blosum-check.ts、check-ill-b.ts、check-secids.ts），未改动任何其他文件；全部使用真实 Commons 图片，无 AI 生成图；法语原版 BLASTextend 图以中文图注给出 Séquence d'intérêt/Séquence de la banque/extension bidirectionnelle 的对应翻译。
+
+## Task ID: 29-REV-A —— 免疫学教材科学性审查与修复（ch1–ch12 + quiz A1–A5）
+
+- 日期：2026-09-17（沙箱会话）
+- 背景：对 src/data/subjects/immuno/ch1.ts ~ ch12.ts（12 章 48 节）逐节通读，按专业免疫学口径审校数值口径（IgG 半衰期、C3 浓度、HLA 等位基因数量级、初次/再次应答潜伏期、各类细胞占比与直径）、机制描述（补体三条途径与转化酶、V(D)J 重排、胸腺阴阳性选择、生发中心暗区/亮区分工、交叉提呈、AICD）、概念表述（表位/MHC 限制性/耐受）与人名年代与诺奖年份；并抽查 src/data/quiz/immunology-a1~a5.ts 共 60 题的答案索引与解析科学性。
+- 发现并修复的错误（3 处科学性错误 + 2 处格式/语言修复）：
+  1. ch3-s1（单核/巨噬细胞节）：单核细胞直径原文作「15–30 μm」，超出血涂片单核细胞 12–20 μm（教材口径 14–20 μm）的实际范围，30 μm 已达组织巨噬细胞量级 → 改为「14–20 μm」。
+  2. ch10-s4（母传抗体节）：婴儿免疫球蛋白发育时序原文作「IgG ……青春期方达成人水平、IgA ……至学龄期方近成人水平」，两项时点错置且相互矛盾（IgG 应于学龄前后约 6–7 岁达成人水平，IgA 最迟、约至青春期方近成人水平；IgM 约 1 岁前后最早达标）→ 改为「IgG 继之（三至六个月龄的低谷期约为成人的三分之一至一半，约六至七岁达成人水平）、IgA 最迟（与黏膜菌群定植同步，至青春期方近成人水平）」，低谷期时点一并精确到 3–6 个月龄。
+  3. ch6-s2（IgG 节）：正文夹入英文「encapsulated 细菌感染」，与全中文行文不符 → 改为「荚膜细菌感染」（语言一致性修复，非科学性改动）。
+  4. ch10-s1（B 细胞发育节）：正文含「→」箭头字符（U+2192），触发 validate-chapters 的 emoji 禁用规则导致该节校验失败（属预先存在的格式缺陷，非本次审查引入）→ 将「pro-B → pre-B → 未成熟 B 细胞 → 成熟 B 细胞」改为顿号并列「pro-B（祖 B 细胞）、pre-B（前 B 细胞）、未成熟 B 细胞、成熟 B 细胞」，由「逐级推进」保留时序含义。
+- 审校结论（零错误项抽检记录）：数值口径全部核对无误——IgG 半衰期约 23 天（IgG3 约 1 周）、血清 IgG 占 75–80%/IgA 10–15%/IgM 5–10%、IgE 约 0.1–0.9 mg/L、IgM 五聚体约 970 kDa/19S、C3 约 1.2–1.6 g/L、补体占血清球蛋白约 1/10、56 °C 30 min 灭活、MAC 含 12–18 个 C9、HLA-B 等位基因逾八千、HLA 区 6p21.3 约 3600 kb、MHC I 8–10 肽/MHC II 13–17 肽、初次应答潜伏 1–2 周（5–10 天）与再次 1–3 天、外周血白细胞分类五项区间、IGH V65×D27×J6/κ 40×5/λ 30×4、TCR-CD3 十枚 ITAM、NK 与 γδ 占比等；机制与人名年代逐条核对无误——Behring 1901 首届诺奖、梅奇尼科夫/埃尔利希 1908、伯内特/梅达沃 1960、波特/埃德尔曼 1972、Köhler/Milstein/耶内 1984、利根川进 1976 实验 1987 诺奖、Steinman 2011（逝于公布前三日）、Zinkernagel/Doherty 1974 发现 1996 诺奖、Allison/本庶佑 2018、Smith/Winter 2018 化学奖、琴纳 1796/1980 天花根除、OKT3 1986、伊匹木单抗 2011、纳武利尤单抗 2014、依库珠单抗机制等。
+- 题库抽查结论：immunology-a1（15 题）~ a5（10 题）共 60 题逐题核对 answer 索引与解析——全部与正文口径一致、无事实错误、无题号变动，零修复。
+- 校验：bun run scripts/validate-chapters.ts immunology ch1~ch12 → 「✓ immunology：12 章共 48 节全部通过」，48 节字数 2610–3419 均在 2600–3600 区间，H2 ≥4、含表格、无反引号/模板插值/H3/HTML/emoji/制表符/链接。
+- 备注：仅修改 src/data/subjects/immuno/ch3.ts、ch6.ts、ch10.ts 三个文件与 worklog.md 追加，未改动任何其他文件；quiz 五个文件零改动。
+
+## Task ID: 29-REV-B —— 生物信息学教材科学性审查与修复（ch1–ch12 + quiz B2–B6）
+
+- 日期：2026-09-17（沙箱会话）
+- 背景：对 src/data/subjects/bioinfo/ch1.ts ~ ch12.ts（12 章 48 节）逐节通读，按专业生物信息学口径审校数值口径（BLOSUM62 来源阈值 62%、CASP14 AlphaFold2 中位 GDT-TS 约 92.4、N50 示例、E 值公式语义与 bit 分换算、GT-AG 剪接位点占比、CpG 岛三判据、JC 校正数值表、k-mer 覆盖算例、负二项方差 μ+αμ² 算例）、算法描述（Needleman-Wunsch/S-W 递推与微型算例、BLAST 邻域字词/两步命中/X-drop、de Bruijn 图与 OLC、DESeq2 估计-压缩、Gotoh 三矩阵、Fitch/修剪算法、NJ 的 Q 准则、BH 程序）、人物年代（Dayhoff 1978、N-W 1970、S-W 1981、BLAST 1990、Karlin-Altschul 1990、Gotoh 1982、Fitch 1970、Barabási-Albert 1999、Watts-Strogatz 1998、Jeong 2001、Tettelin 2005、Nei-Gojobori 1986、Fields-Song 1989、Elowitz-Leibler 2000、Browne 1969、Sali-Blundell 1993、Tang 2009、Bowie-Lüthy-Eisenberg 1991）与数据库事实（INSDC 三库每日交换、UniProt 两层级差、RefSeq 前缀体系、SRA 四层前缀、GI 号退役、FAIR 2016）；并抽查 src/data/quiz/bioinformatics-b2~b6.ts 共 60 题的答案索引与解析是否与正文一致。
+- 发现并修复的科学性错误（4 处）：
+  1. ch4-s4（BLAST 家族表）：程序名「tBLASTp」不存在——核酸查询翻译后查蛋白库的正确程序名为 BLASTx（t 前缀专指库侧翻译）→ 表行与选择口诀两处均改为「BLASTx」，口诀「t 贴在蛋白不在的那一端」改为「翻译标记贴在蛋白不在的那一端」以兼容 x 后缀的命名约定。
+  2. ch4-s3（bit 分换算）：库长增长十倍所需抬高分数换算成 bit 分原文作「约 2.4 比特」——2.4 为 λΔS 的自然对数值，bit 分增量应为 λΔS/ln2 = log2(10) ≈ 3.32 → 改为「约 3.3 比特」（λ 取 0.3 时原始分约抬高 8 分不变）。
+  3. ch3-s3（复杂度量级）：「两条各百万碱基的基因组是十万亿格」量级错误——10^6×10^6=10^12 即一万亿格 → 改为「万亿格」。
+  4. ch7-s3（CASP 年表）：CASP3–CASP12 行年份作「1996–2016」，1996 实为 CASP2 届，CASP3 于 1998 年举行 → 改为「1998–2016」。
+- 另修复 2 处（史实口径与富集算例倍数）：
+  5. ch8-s2（de Bruijn 图引入史）：原文称 Idury 与 Waterman 1995「在杂交测序语境中率先使用」——杂交测序语境的欧拉图出自 Pevzner 1989，I&W 1995 是把该思路引入读段片段组装 → 改为「率先把它从杂交测序的欧拉思路引入读段组装」。
+  6. ch9-s4（超几何算例）：N=12000、K=120、n=300、k=12 时观测占比 4% 对期望占比 1% 为四倍而非十倍 → 「十倍于期望占比」改为「四倍于期望占比」。
+- 格式合规修复（4 处，预先存在的「→」U+2192 触发 emoji 禁用规则，非本次审查引入）：ch1-s1 标题「序列→结构→功能」改用长破折号「序列—结构—功能」；ch12-s1 流程链五处「→」改「继而/最后」文字衔接；ch12-s3 闭环「机器生成序列 → 湿实验表达筛选 → 数据回流再生成」改连字符链（与同句「设计-检验-再设计」体例一致）；ch7-s4 注释链路三处「→」改「从…到…再到…最后落到…」。
+- 题库抽查修复（1 处解析与正文不一致）：b6 第 13 题解析中「两条各百万碱基是十万亿格」随 ch3 修正为「万亿格」（answer 索引与其余 59 题核对全部正确，题号零变动）。
+- 审校结论（零错误章节记录）：ch1、ch2、ch5、ch6、ch10、ch11 全章零错误——BLOSUM62 聚类阈值 62%/BLASTp 默认、GT-AG 约 98% 以上、CpG 岛 200 bp·GC>50%·Obs/Exp>0.6、JC 校正七档数值逐项验算无误（p=0.05→0.052、0.10→0.107、0.25→0.304、0.40→0.572、0.50→0.824、0.70→2.03）、无根树 (2n−5)!! 与 n=10 约 202 万棵、负二项 μ=100/α=0.1 方差 1100 标准差约 33、k-mer 覆盖 30×150bp/k=51≈20×、N50 示例 150 kb 与 L50=2、人类基因组重复约半数/Alu 逾百万拷贝、σ70 间隔 15–19 bp、Q30=0.1%、CASP13 FM 约 58 分、GDT-TS 四阈值定义、同源建模 40%/30% 误差分层、ESM/AFDB/Top7/RFdiffusion/ProteinMPNN、Excel 基因名事故约五分之一、ELSI 与再识别等均与文献口径一致。
+- 校验：bun run scripts/validate-chapters.ts bioinformatics ch1~ch12 → 「✓ bioinformatics：12 章共 48 节全部通过」，48 节字数 2600–3564 均在 2600–3600 区间，H2 ≥4、含表格、无反引号/模板插值/H3/HTML/emoji/制表符/链接；bunx tsc 全项目检查 bioinfo 与 bioinformatics-b 相关文件零类型错误。
+- 备注：仅修改 src/data/subjects/bioinfo/ch1.ts、ch3.ts、ch4.ts、ch7.ts、ch8.ts、ch9.ts、ch12.ts 七个文件、src/data/quiz/bioinformatics-b6.ts 一个文件与 worklog.md 追加；ch2/ch5/ch6/ch10/ch11 与 quiz b2~b5 零改动。
+
+## Task ID: 29-REV-N —— 神经生物学教材科学性审查与修复（ch1–ch12 + quiz C1–C4）
+
+- 日期：2026-09-17（沙箱会话）
+- 背景：对 src/data/subjects/neuro/ch1.ts ~ ch12.ts（12 章 48 节，约 14 万字）逐节通读，按专业神经生物学口径审校数值口径（E_K −90 mV/E_Na +60 mV/E_Cl −64/E_Ca +130 mV、HH 经典参数与传导速度、听频 20–20000 Hz、外耳道共鸣 3400 Hz、中耳增压 22 倍约 27 dB、内毛细胞约 3500 个、SCN 每侧约 1 万神经元、NREM-REM 周期约 90 分钟每夜 4–6 个、亨廷顿 CAG >36 次、人脑 860 亿神经元/690 亿小脑等）、机制描述（Hodgkin-Huxley 门控变量、SNARE-synaptotagmin 释放、NMDA 三重门控、LTP/LTD 与直接/间接通路、行波学说、耳蜗放大器、VOR 三神经元弧、时钟基因环路）、人名年代与诺奖年份（Golgi/Cajal 1906、Sherrington/Adrian 1932、Loewi/Dale 1936、HH/Eccles 1963、Békésy 1961、Katz 1970、Neher/Sakmann 1991、Hubel-Wiesel/Sperry 1981、Buck-Axel 2004、O'Keefe/Moser 2014、Levi-Montalcini 1986、Skou 1997 等）；并抽查 src/data/quiz/neurobiology-c1~c4.ts 共 60 题的答案索引与解析是否与正文一致。
+- 发现并修复的科学性错误（14 处）：
+  1. ch2-s1（驱动力符号自相矛盾）：正文自定义「驱动力＝膜电位−平衡电位」，却给出「静息时 K⁺ 约 −20 mV、Na⁺ 约 +130 mV、Ca²⁺ 逾 +200 mV」——符号恰为相反口径且与同章 I_ion = g·(V−E) 及 ΔG = zF(E_m−E_ion) 矛盾 → 正文与 keyPoint 均改为「K⁺ 约 +20 mV（外向）、Na⁺ 约 −130 mV（内向）、Ca²⁺ 逾 −200 mV」。
+  2. ch3-s2（Kv 滤器表述倒置）：原文「（Kv）孔径大于 Nav 的滤器以容纳水化路径较短的 K⁺」与结构生物学事实相反（K 通道 TVGYG 滤器约 3 Å 紧箍去水化 K⁺，Nav 的 DEKA 环更宽松）→ 改为「其 TVGYG 滤器以羰基笼精确箍住去水化 K⁺，半径更小的 Na⁺ 反因配位距离不足而难以通行」。
+  3. ch3-s2（毒素来源错误）：「树蛙箭毒」迫使钠通道长开——该化合物为 batrachotoxin，产于南美箭毒蛙（Phyllobates 属），并非树蛙 → 改为「箭毒蛙毒素」。
+  4. ch3-s3（误差量级）：HH 模型预测传导速度约 18.7 m/s 对实测约 21.2 m/s，偏差约 12%，原文「相差不足一成」低估 → 改为「相差约一成」。
+  5. ch4-s2（年代错误）：Fatt 与 Katz 记录微小终板电位（MEPP）的经典论文发表于 1952 年（J Physiol 117:109），原文作「1950 年」→ 改为「1952 年」（del Castillo-Katz 1954 量子分析年代不变）。
+  6. ch4-s4（药理名词）：缝隙连接去耦联剂「辛醇、肝素样肽类」——肝素并非经典去耦联剂 → 改为「辛醇、庚醇等脂肪醇与连接蛋白模拟肽」。
+  7. ch4-s4（数量级）：囊泡内谷氨酸数十毫摩尔对胞外微摩尔级以下为三到五个数量级的落差，原文「三个数量级的梯度」低估 → 改为「跨三到四个数量级的搬运」。
+  8. ch5-s4（中文药名张冠李戴）：士的宁括注「马钱子碱」——马钱子碱通常指 brucine（毒性远低），strychnine 的标准中文别名为番木鳖碱 → 改为「士的宁（strychnine，番木鳖碱）」。
+  9. ch5-s1（时程低估）：神经肽经轴浆运输补给，长投射神经元耗竭后的恢复以天计，原文「以小时计」→ 改为「以小时到天计」。
+  10. ch7-s2（纤维归属错误）：传入纤维分类表中 Aβ（6–12 μm、30–70 m/s）行标注其联系「肌梭与腱器官」——肌梭初级末梢 Ia 与腱器官 Ib 属 Aα（70–120 m/s），Aβ 仅对应肌梭次级末梢（II 类）→ 表行改为「皮肤机械感受器、肌梭次级末梢」，功能改为「精细触觉、振动觉、静态位置觉」。
+  11. ch7-s4（错觉方向自相矛盾）：肱二头肌腱 100 Hz 振动优先驱动 Ia 末梢，前文已正确写「感到手臂在伸直」，随后却写「遂产生胳膊弯曲的错觉」（Goodwin 1972 实为伸直错觉）→ 改为「遂产生手臂持续伸直的错觉」。
+  12. ch8-s2（小节整体重复）：「## 明适应与暗适应」小节连同约 400 字段落出现两遍（第二遍仅多出色觉遗传尾巴），属成稿事故 → 第二处改题为「## 色觉缺陷：X 染色体上的红绿」并重写，保留 L/M 基因 X 连锁（男约 8%、女约 0.4–0.5%）、绿色盲最常见红色盲次之、S 基因常染色体、假同色图混淆线等科学内容，字数维持区间。
+  13. ch9-s1（解剖方向颠倒）：外毛细胞「排成三列（蜗底偶见四五列）」——基底膜蜗顶更宽，附加的第四五列出现于蜗顶而非蜗底 → 改为「（蜗顶偶见四五列）」。
+  14. ch10-s2（易化/抑制区归属颠倒）：原文称「延髓上部网状结构与前庭外侧核对伸肌张力起易化作用，脑桥水平的网状结构则含抑制性成分」——经典口径为脑桥网状脊髓束易化伸肌、延髓网状脊髓束抑制，且同段去大脑强直机制（抑制通路失去上游驱动）只有在正确归属下才成立 → 改为「脑桥网状脊髓束与前庭外侧核对伸肌张力起易化（增强）作用，延髓网状脊髓束则主要起抑制作用」。
+  15. ch10-s3（数量级与跨章矛盾）：「人类小脑神经元总数逾千亿」与现代无偏计数（约 690 亿，ch1 已采用同口径）矛盾 → 改为「约 690 亿（颗粒细胞为主），超过大脑皮层」。
+  16. ch12-s1（结构名误写）：间脑衍生物表中「上皮层」不存在，应为上丘脑（epithalamus，含松果体）→ 改为「丘脑、下丘脑、上丘脑与视网膜」。
+- 审校结论（零错误章节记录）：ch1、ch6、ch11 全章零科学性错误——ch1 的 Golgi/Cajal 1906、人脑 860 亿/小脑 690 亿/皮层 160 亿、线虫 302 神经元 7000 连接、Berger 1929、Ling-Gerard 1949、Neher-Sakmann 1976/1991、Ogawa BOLD 1990、Boyden-Deisseroth 2005、White 1986 与果蝇 2024 整脑图谱等全部核对无误；ch6 的 Hebb 1949、Bliss-Lømo 1973、Ito LTD 1982、Dudek-Bear 1992、Frey-Morris 1997、Bi-Poo 1998、Turrigiano 1998、Morris 1982、O'Keefe 1971、Hafting 2005、Corkin 1997、CREB Ser133 与 HM 病例细节等无误；ch11 的 SCN 每侧约 1 万神经元、ipRGC-视交叉上核通路、per/cry 负反馈 24 小时环路、NREM-REM 每周期约 90 分钟每夜 4–6 个、N1/N2/N3/REM 占比、腺苷-咖啡因、Selye 1936、皮质醇半衰期 60–90 分钟、肾上腺素约八成等无误。
+- 题库抽查修复（2 处，均在 c4，题号零变动）：第 8 题解析中「静息时 K⁺ 驱动力约 −20 mV、Na⁺ 约 +130 mV、Ca²⁺ 逾 +200 mV」随 ch2 修正为「+20/−130/−200 mV（驱动力按膜电位减平衡电位计，正号对应外向电流）」；第 14 题题干「相差不足一成」随 ch3 修正为「相差约一成」（答案仍为「正确」）。c1（15 题）、c2（10 题）、c3（10 题）逐题核对 answer 索引与解析，全部与正文口径一致、零修复。
+- 格式合规修复（预先存在的缺陷，非本次审查引入，经 git HEAD 版本复验确认改动前即失败）：4 处正文「→」（U+2192，触发 emoji 禁用规则）分别改写为文字衔接（ch2-s2「145 减至 72.5」、ch3-s1「分级电位—放电」、ch5-s3 通路表五处「至」、ch6-s1 连续谱两处「，到/再到」）；为缺表格的 5 节补入内容自洽的对照表（ch2-s4 泵与转运体速查、ch3-s3 HH 门控变量 m/h/n、ch8-s2 视杆与视锥对照、ch11-s3 GAS 三分期、ch12-s4 中枢与周围再生对照）；ch7-s4「轻触间」错别字改「轻触阈」，ch2-s1「敃科书」改「教科书」。
+- 校验：bun run scripts/validate-chapters.ts neurobiology ch1~ch12 → 「✓ neurobiology：12 章共 48 节全部通过」，48 节字数 2614–3356 均在 2600–3600 区间，H2 ≥4、含表格、无反引号/模板插值/H3/HTML/emoji/制表符/链接；c1~c4 四个题库文件 bun 导入自检通过（15+10+10+25=60 题，题号与答案索引无变动）。
+- 备注：仅修改 src/data/subjects/neuro/ch2.ts、ch3.ts、ch4.ts、ch5.ts、ch7.ts、ch8.ts、ch9.ts、ch10.ts、ch12.ts 九个文件、src/data/quiz/neurobiology-c4.ts 一个文件与 worklog.md 追加；ch1/ch6/ch11 科学性零改动（仅 ch6/ch11 格式合规微调），quiz c1/c2/c3 零改动，未触碰上述清单之外的任何文件。
+
+---
+Task ID: 30
+Agent: 主控 (Z.ai Code)
+Task: 沙箱灾难恢复 + 新增免疫学/神经生物学/生物信息学三学科 + 八学科平台完整交付
+
+Work Log:
+- 【灾难与恢复】沙箱于 06:15 被平台重置（boot-timeline.log 证实），项目全损（应用代码/五学科内容/97 张插图/worklog 全部丢失，仅 3 个 git 初始文件存活）。恢复路径：①通过 Task resume 机制调用 14 个本会话子代理转录重写免疫学/神经生物学/生物信息学全部 36 章文件+测验+术语（144 节 180 题 90 术语全部逐字节恢复）；②发现用户 GitHub 上有上一版完整推送（Jing0715-fer/bioscholar），git clone 恢复五学科基线应用+内容+81 张插图+全部 UI；③新写 neurobiology quiz c1（q16-30）与 glossary-neuro-c1（g-185~192）等死代理未落盘文件、immuno ch7 补写。
+- 【新三学科】免疫学（曹雪涛体系 12 章 48 节 + 60 题 + 30 术语）、神经生物学（寿天德/Kandel 体系 12 章 48 节 + 60 题 + 30 术语）、生物信息学（Pevzner/Durbin 体系 12 章 48 节 + 60 题 + 30 术语）；全部小节 2600–3600 字符、≥4 H2、含表格；validate-chapters 全绿。
+- 【集成】SubjectId 扩展至八学科；subject-theme 新增胭紫(Shield)/黛青(Brain)/青柠(Network)三主题；quiz/glossary/wrongbook/revision/search 组件映射补齐；chat 系统提示词与教材体系扩至八学科；自绘 3 张新学科 SVG 封面（免疫学 Y 形抗体+补体级联+淋巴结线稿、神经生物学神经元+动作电位波形+突触+脑轮廓、生物信息学序列比对+系统树+无标度网络+结构域）。
+- 【插图】新三学科 22 张 Wikimedia Commons 真实图（VLM 逐张审校，淘汰 12 张不合格候选包括已挂载的 antibody-igg-structure），图库 97→121 张全部真实来源； Commons 元数据 API 补全作者与许可证署名；含 Cajal 浦肯野细胞原版手绘图（PD）等经典素材。
+- 【科学性审查】三个审查代理通读新三学科 144 节+180 题：免疫学修复 3 处（单核细胞直径、婴儿 Ig 发育时序、行文混杂）；神经生物学修复 16 处（驱动力符号、Kv/Nav 选择性机制表述、树蛙→箭毒蛙、MEPP 年代、网状结构易化/抑制区颠倒、小脑神经元数、上皮层→上丘脑等）+2 题库；生物信息学修复 6 处（tBLASTp→BLASTx、bit 增量 2.4→3.3、十万亿→万亿格、CASP 年表、de Bruijn 引入史、超几何四倍）+1 题库。全部修复后 validate-chapters 复跑通过。
+- 【QA】tsc 0 错误（排除 examples/skills 既有文件）；agent-browser 全流程回归：仪表盘八学科卡（94 章 393 节 73 万字 465 题）、学科中心（八卡+封面+字数）、免疫学章节展开+小节阅读、测验中心免疫学 tab 60 题+答题判分+解析、图库 121 张真实来源+学科筛选（神经生物学 9 张新图全部带图注）、词典 244 条+新学科筛选、阅读器插图渲染（神经生物学图 4-1-1 化学突触 VLM 审校图+图注）、深色模式。
+- 【版本控制】中途两次 git commit + push 到 GitHub（Jing0715-fer/bioscholar，merge -s ours 保留远程历史）防止再次灾难丢失。
+
+Stage Summary:
+- 平台规模：八学科 94 章 393 小节 约 73 万字 · 465 道测验题 · 244 条术语 · 121 张插图（100% 真实来源）· 9 张自绘 SVG 封面
+- 新增三学科各 12 章 48 节教材级内容，全部经结构校验与科学性双重审查
+- 沙箱灾难完整恢复：三学科内容经子代理转录逐字节找回，旧五学科从 GitHub 历史推送恢复
+- 已推送 GitHub：Jing0715-fer/bioscholar main 分支
+
+未解决问题与下一步建议：
+- 免疫学插图目前 4 个挂载条目（淋巴结×2/巨噬/CAR-T），抗体结构图被 VLM 否决后未补替代品；建议下轮补 antibody structure 备选（LadyofHats PD 版）与 MHC/生发中心主题图
+- 神经生物学插图 9 条目；神经元结构图（complete neuron diagram）下载失败未补
+- cron 15 分钟任务会持续 seed 假数据，交付前需检查 LearningProgress
+- 后续方向：AI 看图讲解对新图库回归测试、复习卡片遗忘曲线历史图、⌘K 拼音首字母匹配、字数统计「今日已读」粒度
