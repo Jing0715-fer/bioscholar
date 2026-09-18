@@ -20,6 +20,15 @@ import { immunoIllustrations } from './immuno-illustrations'
 import { neuroIllustrations } from './neuro-illustrations'
 import { bioinfoIllustrations } from './bioinfo-illustrations'
 import { viroIllustrations } from './viro-illustrations'
+import { drawBcR4 } from './draw-bc-r4'
+import { drawMbR4 } from './draw-mb-r4'
+import { drawCbR4 } from './draw-cb-r4'
+import { drawBpR4 } from './draw-bp-r4'
+import { drawMiR4 } from './draw-mi-r4'
+import { drawImR4 } from './draw-im-r4'
+import { drawNeR4 } from './draw-ne-r4'
+import { drawBiR4 } from './draw-bi-r4'
+import { drawViR4 } from './draw-vi-r4'
 
 /** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
@@ -737,5 +746,14 @@ export function getIllustrations(sectionId: string): Illustration[] {
     ...(neuroIllustrations[sectionId] ?? []),
     ...(bioinfoIllustrations[sectionId] ?? []),
     ...(viroIllustrations[sectionId] ?? []),
+    ...(drawBcR4[sectionId] ?? []),
+    ...(drawMbR4[sectionId] ?? []),
+    ...(drawCbR4[sectionId] ?? []),
+    ...(drawBpR4[sectionId] ?? []),
+    ...(drawMiR4[sectionId] ?? []),
+    ...(drawImR4[sectionId] ?? []),
+    ...(drawNeR4[sectionId] ?? []),
+    ...(drawBiR4[sectionId] ?? []),
+    ...(drawViR4[sectionId] ?? []),
   ]
 }
