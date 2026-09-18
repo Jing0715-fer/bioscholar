@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞周期时相与周期时间：时相划分、CDK 波动与许可机制</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">人培养细胞 24 h：G1 约 11 h→S 8 h→G2 4 h→M 1 h；四组 CDK-cyclin 依次成峰；周期差异主要在 G1（早期卵裂仅 30 min）；pre-RC 保证复制一次</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、周期时相：G1（含 R 点）→ S → G2 → M（典型 24 h）</text>
+  <rect x="70" y="260" width="256.66666666666663" height="46" fill="#e0f2fe" stroke="约 11 h" stroke-width="2"/>
+  <text x="198.33333333333331" y="287" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">G1</text>
+  <text x="198.33333333333331" y="326" font-size="9.5" fill="#64748b" text-anchor="middle">约 11 h</text>
+  <rect x="326.66666666666663" y="260" width="186.66666666666666" height="46" fill="#ccfbf1" stroke="约 8 h" stroke-width="2"/>
+  <text x="419.99999999999994" y="287" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">S</text>
+  <text x="419.99999999999994" y="326" font-size="9.5" fill="#64748b" text-anchor="middle">约 8 h</text>
+  <rect x="513.3333333333333" y="260" width="93.33333333333333" height="46" fill="#fef3c7" stroke="约 4 h" stroke-width="2"/>
+  <text x="559.9999999999999" y="287" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">G2</text>
+  <text x="559.9999999999999" y="326" font-size="9.5" fill="#64748b" text-anchor="middle">约 4 h</text>
+  <rect x="606.6666666666666" y="260" width="23.333333333333332" height="46" fill="#ede9fe" stroke="约 1 h" stroke-width="2"/>
+  <text x="618.3333333333333" y="287" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">M</text>
+  <text x="618.3333333333333" y="326" font-size="9.5" fill="#64748b" text-anchor="middle">约 1 h</text>
+  <line x1="596.6666666666666" y1="210" x2="596.6666666666666" y2="252" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="602.6666666666666" y="200" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">R 点（限制点）</text>
+  <text x="70" y="230" font-size="9.5" fill="#64748b" text-anchor="middle">出生</text>
+  <text x="630" y="230" font-size="9.5" fill="#64748b" text-anchor="middle">分裂完成</text>
+  <text x="130" y="356" font-size="9.5" fill="#475569">G1：生长、RNA 与蛋白质合成、中心体开始复制</text>
+  <text x="232.66666666666666" y="382" font-size="9.5" fill="#475569">S：基因组精确复制（一次且仅一次）·组蛋白同步组装核小体</text>
+  <text x="230" y="408" font-size="9.5" fill="#475569">G2：合成 cyclin B／MPF 组分，校验复制错误</text>
+  <text x="320" y="434" font-size="9.5" fill="#475569">M：有丝分裂＋胞质分裂</text>
+  <rect x="70" y="470" width="250" height="64" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="195" y="492" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">G0 期（离开周期的静息态）</text>
+  <text x="195" y="512" font-size="9" fill="#64748b" text-anchor="middle">永久性：神经元·肌细胞</text>
+  <text x="195" y="526" font-size="8.5" fill="#64748b" text-anchor="middle">可逆：肝细胞损伤后重返、淋巴细胞受抗原刺激</text>
+  <line x1="200" y1="466" x2="200" y2="306" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <text x="360" y="480" font-size="9.5" fill="#64748b">中心体复制始于 G1；S 期&quot;一次且仅一次&quot;由复制许可机制保证</text>
+  <text x="360" y="493" font-size="9.5" fill="#64748b">（见下）。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、CDK-cyclin 复合体活性随周期时相波动</text>
+  <rect x="760" y="210" width="560" height="270" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="412.5" x2="1320" y2="412.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="900" y1="480" x2="900" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="345" x2="1320" y2="345" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1040" y1="480" x2="1040" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="277.5" x2="1320" y2="277.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1180" y1="480" x2="1180" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="793.6" y1="480" x2="793.6" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="793.6" y="502" font-size="13" fill="#64748b" text-anchor="middle">G1 早</text>
+  <line x1="995.2" y1="480" x2="995.2" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="995.2" y="502" font-size="13" fill="#64748b" text-anchor="middle">G1/S</text>
+  <line x1="1107.2" y1="480" x2="1107.2" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1107.2" y="502" font-size="13" fill="#64748b" text-anchor="middle">S</text>
+  <line x1="1208" y1="480" x2="1208" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1208" y="502" font-size="13" fill="#64748b" text-anchor="middle">G2</text>
+  <line x1="1286.4" y1="480" x2="1286.4" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1286.4" y="502" font-size="13" fill="#64748b" text-anchor="middle">M</text>
+  <line x1="1314.4" y1="480" x2="1314.4" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <line x1="754" y1="463.8" x2="760" y2="463.8" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="467.8" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="754" y1="331.5" x2="760" y2="331.5" stroke="#475569" stroke-width="1.8"/>
+  <line x1="754" y1="223.5" x2="760" y2="223.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="227.5" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="1040" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">周期进程</text>
+  <text x="714" y="345" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">激酶活性</text>
+  <text x="1040" y="198" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">四组核心复合体的时相峰</text>
+  <path d="M760,399 C769.3,393.6 797.3,374.7 816,366.6 C834.7,358.5 851.5,354.0 872,350.4 C892.5,346.8 918.7,341.4 939.2,345 C959.7,348.6 973.7,363.0 995.2,372 C1016.7,381.0 1037.2,392.3 1068,399 C1098.8,405.8 1138.0,408.9 1180,412.5 C1222.0,416.1 1296.7,419.3 1320,420.6" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="857.6" y="312.6" font-size="14" fill="#0369a1" font-weight="700">cyclin D-CDK4/6</text>
+  <path d="M760,466.5 C778.7,465.1 842.1,465.1 872,458.4 C901.9,451.6 918.7,457.5 939.2,426 C959.7,394.5 978.4,288.3 995.2,269.4 C1012.0,250.5 1023.2,291.0 1040,312.6 C1056.8,334.2 1077.3,376.5 1096,399 C1114.7,421.5 1114.7,436.4 1152,447.6 C1189.3,458.9 1292.0,463.4 1320,466.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="958.4" y="247.8" font-size="14" fill="#0f766e" font-weight="700">cyclin E-CDK2</text>
+  <path d="M760,471.9 C792.7,471.0 909.3,480.9 956,466.5 C1002.7,452.1 1014.8,420.1 1040,385.5 C1065.2,350.9 1083.9,272.6 1107.2,258.6 C1130.5,244.7 1158.5,278.4 1180,301.79999999999995 C1201.5,325.2 1212.7,371.6 1236,399 C1259.3,426.4 1306.0,455.3 1320,466.5" fill="none" stroke="#b45309" stroke-width="2.6"/>
+  <text x="1104" y="223.5" font-size="14" fill="#b45309" font-weight="700">cyclin A-CDK2</text>
+  <path d="M760,474.6 C806.7,473.7 974.7,474.6 1040,469.2 C1105.3,463.8 1122.1,456.1 1152,442.2 C1181.9,428.3 1200.5,403.9 1219.2,385.5 C1237.9,367.1 1252.8,358.1 1264,331.5 C1275.2,304.9 1279.9,215.0 1286.4,226.20000000000002 C1292.9,237.5 1297.6,357.6 1303.1999999999998,399 C1308.8,440.4 1317.2,462.0 1320,474.6" fill="none" stroke="#6d28d9" stroke-width="2.8"/>
+  <text x="1272" y="210" font-size="14" fill="#6d28d9" font-weight="700">cyclin B-CDK1</text>
+  <text x="740" y="540" font-size="9.5" fill="#64748b">cyclin D 受丝裂原持续诱导（半衰期短）＝&quot;传感器&quot;；E/A/B 由转录与定时降解塑造峰值。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、周期时间差异（主要在 G1）· S 期许可机制 · 流式 DNA 分析</text>
+  <rect x="60" y="630" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">细胞类型</text>
+  <rect x="300" y="630" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">周期时长</text>
+  <rect x="60" y="674" width="240" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="694.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">早期胚胎卵裂（爪蟾、海胆）</text>
+  <rect x="300" y="674" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="694.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">约 30 min（只有 S＋M）</text>
+  <rect x="60" y="704" width="400" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="704" width="240" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="724.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">小肠隐窝干细胞</text>
+  <rect x="300" y="704" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="724.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">约 12 h</text>
+  <rect x="60" y="734" width="240" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="754.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">典型人培养细胞</text>
+  <rect x="300" y="734" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="754.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">约 24 h</text>
+  <rect x="60" y="764" width="400" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="764" width="240" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="784.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">肝细胞</text>
+  <rect x="300" y="764" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="784.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数月乃至不分裂</text>
+  <text x="60" y="800" font-size="9.5" fill="#64748b">周期长短差异主要体现在 G1 期；早期卵裂由母源产物储备驱动、G1/G2 缺如。</text>
+  <text x="60" y="838" font-size="9.5" fill="#475569">酵母经典：芽殖酵母 START 点对应 R 点；裂殖酵母 wee1 突变揭示 CDK 磷酸化调控（Nurse）</text>
+  <text x="60" y="851" font-size="9.5" fill="#475569">。</text>
+  <text x="500" y="630" font-size="11.5" fill="#1e293b" font-weight="700">复制许可（licensing）：一次且仅一次</text>
+  <rect x="529.85255" y="651.925" width="60.2949" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="663.42" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">M 期末 / G1</text>
+  <text x="500" y="680" font-size="9.5" fill="#475569">ORC 识别复制起点 → 装载 Cdc6 与 Cdt1 → 加载 MCM2-7 解旋酶＝前复制复合体</text>
+  <text x="500" y="693" font-size="9.5" fill="#475569">（pre-RC）</text>
+  <rect x="545.50855" y="705.925" width="28.9829" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="560" y="717.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">S 期</text>
+  <text x="500" y="734" font-size="9.5" fill="#475569">CDK 活性升高：既启动复制，又抑制 pre-RC 再装配（磷酸化降解 Cdt1、</text>
+  <text x="500" y="747" font-size="9.5" fill="#475569">出核 Cdc6）</text>
+  <rect x="540.3225" y="759.925" width="39.355000000000004" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="560" y="771.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">保险栓</text>
+  <text x="500" y="788" font-size="9.5" fill="#475569">Geminin 结合 Cdt1 阻止重复装载</text>
+  <text x="500" y="838" font-size="9.5" fill="#134e4a" font-weight="700">结果：每个 DNA 在单个周期内只复制一次。</text>
+  <rect x="960" y="620" width="380" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="979" y1="800" x2="979" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="979" y="822" font-size="13" fill="#64748b" text-anchor="middle">2C</text>
+  <line x1="1150" y1="800" x2="1150" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1321" y1="800" x2="1321" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="1321" y="822" font-size="13" fill="#64748b" text-anchor="middle">4C</text>
+  <line x1="954" y1="785.6" x2="960" y2="785.6" stroke="#475569" stroke-width="1.8"/>
+  <line x1="954" y1="638" x2="960" y2="638" stroke="#475569" stroke-width="1.8"/>
+  <text x="1150" y="844" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">DNA 含量</text>
+  <text x="914" y="710" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">细胞数</text>
+  <text x="1150" y="608" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">流式细胞术（BrdU / ³H-TdR 标记 S 期）</text>
+  <path d="M967.6,792.8 C971.4,779.0 982.8,736.4 990.4,710 C998.0,683.6 1005.6,634.4 1013.2,634.4 C1020.8,634.4 1028.4,689.0 1036,710 C1043.6,731.0 1046.1,749.3 1058.8,760.4 C1071.5,771.5 1093.6,773.0 1112,776.6 C1130.4,780.2 1148.7,781.7 1169,782 C1189.3,782.3 1215.2,781.4 1233.6,778.4 C1252.0,775.4 1267.8,771.8 1279.2,764 C1290.6,756.2 1295.0,742.4 1302,731.6 C1309.0,720.8 1315.9,699.8 1321,699.2 C1326.1,698.6 1329.2,714.2 1332.4,728 C1335.6,741.8 1338.7,773.0 1340,782" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="1078" y="770" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">G1 峰（2C）</text>
+  <text x="1210" y="760" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">G2/M 峰（4C）</text>
+  <text x="1140" y="752" font-size="9" fill="#64748b" text-anchor="middle">S 期（2C—4C）</text>
+  <text x="960" y="862" font-size="9.5" fill="#64748b">脉冲标记有丝分裂曲线法（PLM）测定各时相时长。</text>
+</svg>

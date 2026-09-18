@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">信号假说与蛋白质分选信号</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Blobel（1999 诺贝尔奖）：多肽链自带「地址信息」——信号肽（线性可切除）与信号斑（折叠后三维斑块）；NLS 入核、KDEL 滞留 ER、PTS1 入过氧化物酶体；分选经门控／跨膜／囊泡三种方式执行</text>
+  <rect x="30" y="132" width="1340" height="220" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Blobel 信号假说：蛋白质自带「地址信息」（1999 年诺贝尔生理学或医学奖）</text>
+  <text x="56" y="196" font-size="11.5" fill="#475569">多肽链自身携带的分选信号决定其在细胞内的最终去向，由细胞中相应的受体与转运机器识别执行。</text>
+  <text x="56" y="212.5" font-size="11.5" fill="#475569">信号假说首先在分泌蛋白进入内质网的过程得到证明，并推广为细胞内蛋白质定向分选的普遍原则。</text>
+  <text x="56" y="288" font-size="11" fill="#64748b">两个基本特征——充分性：把信号融合到无关蛋白足以引导其到达相应部位；必要性：</text>
+  <text x="56" y="303.5" font-size="11" fill="#64748b">突变或删除信号使蛋白失去正确定位（可用移植实验验证）。</text>
+  <rect x="660" y="200" width="40" height="16" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="700" y="204" width="290" height="8" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="680" y="240" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">信号肽</text>
+  <text x="660" y="264" font-size="10.5" fill="#475569">N 端 15–30 aa 的线性序列，含疏水核心，转运后常被切除。</text>
+  <circle cx="1160" cy="218" r="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="1140,206 1156,200 1168,210 1152,218" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1160" y="282" font-size="11" fill="#be185d" text-anchor="middle" font-weight="700">信号斑</text>
+  <text x="990" y="264" font-size="10.5" fill="#475569">折叠后由不连续肽段构成的三维表面斑块（如溶酶体酶被识别的位点）</text>
+  <text x="990" y="278.5" font-size="10.5" fill="#475569">。</text>
+  <rect x="30" y="364" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="386.84" font-size="19" fill="#475569" font-weight="700">二、经典分选信号总表</text>
+  <rect x="56" y="410" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="437.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">信号类型</text>
+  <rect x="226" y="410" width="400" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="437.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">结构特征</text>
+  <rect x="626" y="410" width="368" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="437.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型例子</text>
+  <rect x="994" y="410" width="350" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="437.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">指导去向</text>
+  <rect x="56" y="454" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="476.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">信号肽</text>
+  <rect x="226" y="454" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="476.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N 端 15–30 aa，含疏水核心，常被切除</text>
+  <rect x="626" y="454" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="476.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">分泌蛋白 ER 信号肽</text>
+  <rect x="994" y="454" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="476.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">进入内质网</text>
+  <rect x="56" y="488" width="1288" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="488" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="510.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">导肽</text>
+  <rect x="226" y="488" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="510.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N 端，带正电的两性螺旋</text>
+  <rect x="626" y="488" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="510.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">线粒体、叶绿体前体蛋白</text>
+  <rect x="994" y="488" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="510.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">进入线粒体/叶绿体</text>
+  <rect x="56" y="522" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="544.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">信号斑</text>
+  <rect x="226" y="522" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="544.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">折叠后由不连续肽段构成的表面斑块</text>
+  <rect x="626" y="522" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="544.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">溶酶体酶被 GlcNAc 磷酸转移酶识别的位点</text>
+  <rect x="994" y="522" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="544.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">M6P 标记</text>
+  <rect x="56" y="556" width="1288" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="556" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="578.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">核定位信号（NLS）</text>
+  <rect x="226" y="556" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="578.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">内部短肽，富含碱性氨基酸（SV40 大 T 抗原的 PKKKRKV）</text>
+  <rect x="626" y="556" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="578.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">转录因子、输入蛋白货物</text>
+  <rect x="994" y="556" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="578.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">入核</text>
+  <rect x="56" y="590" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="612.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">核输出信号（NES）</text>
+  <rect x="226" y="590" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="612.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">富含亮氨酸的短肽</text>
+  <rect x="626" y="590" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="612.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">含 NES 的蛋白出核</text>
+  <rect x="994" y="590" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="612.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">出核（CRM1 途径）</text>
+  <rect x="56" y="624" width="1288" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="624" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="646.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">ER 滞留信号</text>
+  <rect x="226" y="624" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="646.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C 端 KDEL（可溶性蛋白）/ KKXX（膜蛋白）</text>
+  <rect x="626" y="624" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="646.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">BiP、calreticulin</text>
+  <rect x="994" y="624" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="646.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">内质网滞留与回收</text>
+  <rect x="56" y="658" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="141" y="680.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">过氧化物酶体信号</text>
+  <rect x="226" y="658" width="400" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="426" y="680.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">PTS1（C 端 SKL）/ PTS2（N 端）</text>
+  <rect x="626" y="658" width="368" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="680.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">过氧化氢酶</text>
+  <rect x="994" y="658" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1169" y="680.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">进入过氧化物酶体</text>
+  <rect x="30" y="710" width="1340" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="732.84" font-size="19" fill="#475569" font-weight="700">三、蛋白质分选的三种基本方式</text>
+  <line x1="455" y1="775" x2="455" y2="960" stroke="#cbd5e1" stroke-width="1.2"/>
+  <line x1="885" y1="775" x2="885" y2="960" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="56" y="780" font-size="12.5" fill="#1e293b" font-weight="700">① 门控运输</text>
+  <circle cx="210" cy="858" r="52" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="228.2" cy="845" r="11.44" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 179.9577836172877,874.148774739098 q 15.6,-13 31.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 239.1616276059084,875.1163033213732 q 15.6,-13 31.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 221.1869164672145,830.7841806867599 q 15.6,-13 31.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="152" y="846" width="12" height="24" rx="3" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="122" cy="858" r="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="134" y1="858" x2="148" y2="858" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <circle cx="186" cy="858" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="158" y="894" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="600">核孔</text>
+  <text x="56" y="924" font-size="10.5" fill="#475569">经核孔复合体在细胞核与细胞质间运输；蛋白质保持折叠状态，</text>
+  <text x="56" y="938.5" font-size="10.5" fill="#475569">甚至以核糖核蛋白复合体形式通过。</text>
+  <text x="480" y="780" font-size="12.5" fill="#1e293b" font-weight="700">② 跨膜运输</text>
+  <g><circle cx="500" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="500" y1="864" x2="500" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="500" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="524" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="524" y1="864" x2="524" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="524" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="548" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="548" y1="864" x2="548" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="548" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="572" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="572" y1="864" x2="572" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="572" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="596" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="596" y1="864" x2="596" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="596" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="620" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="620" y1="864" x2="620" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="620" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="644" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="644" y1="864" x2="644" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="644" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="668" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="668" y1="864" x2="668" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="668" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="692" cy="860" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="692" y1="864" x2="692" y2="869" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="692" cy="873" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="591" y="820" width="14" height="60" rx="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <path d="M 587.5,808.8 a 10.5 7 0 0 1 21,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 591,809.5 a 7 5.25 0 0 0 14,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 598,818 q 6,10 0,20 q -6,10 0,20 q 6,10 0,20 q -6,9 0,17" fill="none" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="598" y="908" font-size="10" fill="#831843" text-anchor="middle" font-weight="600">易位子</text>
+  <text x="480" y="924" font-size="10.5" fill="#475569">经易位子穿过细胞器膜（ER 共翻译转运；线粒体、</text>
+  <text x="480" y="938.5" font-size="10.5" fill="#475569">叶绿体与过氧化物酶体为翻译后转运）；</text>
+  <text x="480" y="953" font-size="10.5" fill="#475569">多肽链须处于伸展或至少部分解折叠状态。</text>
+  <text x="910" y="780" font-size="12.5" fill="#1e293b" font-weight="700">③ 囊泡运输</text>
+  <path d="M 959,820 q 10.5,-14 21,0 q 10.5,14 21,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 951.75,833 q 14.124999999999998,14 28.249999999999996,0 q 14.124999999999998,-14 28.249999999999996,0" fill="#ffffff" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 944.5,846 q 17.75,-14 35.5,0 q 17.75,14 35.5,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 937.25,859 q 21.375,14 42.75,0 q 21.375,-14 42.75,0" fill="#ffffff" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 930,872 q 25,-14 50,0 q 25,14 50,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1090" cy="856" r="20" fill="#ffffff" stroke="#0f766e" stroke-width="2.4"/>
+  <circle cx="1090" cy="856" r="27" fill="none" stroke="#dc2626" stroke-width="1.9" stroke-dasharray="5 4"/>
+  <line x1="1035" y1="856" x2="1062" y2="856" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <circle cx="1190" cy="856" r="27" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1190" y="860" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">内体</text>
+  <line x1="1115" y1="856" x2="1157" y2="856" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="980" y="908" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">高尔基体</text>
+  <text x="910" y="924" font-size="10.5" fill="#475569">以运输小泡形式在细胞器之间转移，</text>
+  <text x="910" y="938.5" font-size="10.5" fill="#475569">蛋白质所在的膜与腔环境保持完整——分泌途径与内吞途径的主干。</text>
+</svg>

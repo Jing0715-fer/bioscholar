@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">信号的整合与终止：多路输入的网络决策与刹车装置</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三路输入经转录与蛋白互作网络整合为存活/增殖/分化/死亡；TGF-β/Smad、Notch、Wnt 与核受体各成一路；终止靠受体下调、GTP 酶、磷酸酶与 PTEN</text>
+  <rect x="30" y="132" width="1340" height="384" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、信号整合：G 蛋白 / RTK / JAK 三路输入的汇合决策</text>
+  <rect x="70" y="184" width="210" height="66" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="175" y="204" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">GPCR 路径</text>
+  <text x="175" y="222" font-size="9.5" fill="#475569" text-anchor="middle">cAMP→PKA</text>
+  <text x="175" y="240" font-size="8.5" fill="#64748b" text-anchor="middle">肾上腺素·胰高血糖素</text>
+  <line x1="284" y1="216" x2="400" y2="216" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <rect x="70" y="272" width="210" height="66" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="175" y="292" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">RTK 路径</text>
+  <text x="175" y="310" font-size="9.5" fill="#475569" text-anchor="middle">Ras-MAPK／PI3K-AKT</text>
+  <text x="175" y="328" font-size="8.5" fill="#64748b" text-anchor="middle">EGF·PDGF·胰岛素</text>
+  <line x1="284" y1="304" x2="400" y2="304" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <rect x="70" y="360" width="210" height="66" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="175" y="380" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">JAK 路径</text>
+  <text x="175" y="398" font-size="9.5" fill="#475569" text-anchor="middle">JAK→STAT 二聚入核</text>
+  <text x="175" y="416" font-size="8.5" fill="#64748b" text-anchor="middle">细胞因子·生长激素</text>
+  <line x1="284" y1="392" x2="400" y2="392" stroke="#b45309" stroke-width="2.4" marker-end="url(#arr-rna)"/>
+  <rect x="400" y="240" width="240" height="130" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="520" y="272" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">转录网络＋</text>
+  <text x="520" y="294" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">蛋白互作网络</text>
+  <text x="520" y="318" font-size="10" fill="#64748b" text-anchor="middle">（网络整合）</text>
+  <line x1="524" y1="306" x2="524" y2="306" stroke="#0369a1" stroke-width="0.1" marker-end="url(#arr-ink)"/>
+  <line x1="644" y1="305" x2="760" y2="305" stroke="#0369a1" stroke-width="2.6" marker-end="url(#arr-acc)"/>
+  <rect x="810.64" y="199.8" width="38.72" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="830" y="214.32" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">存活</text>
+  <line x1="766" y1="305" x2="788" y2="210" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="810.64" y="267.8" width="38.72" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="830" y="282.32" font-size="12" fill="#d97706" text-anchor="middle" font-weight="700">增殖</text>
+  <line x1="766" y1="305" x2="788" y2="278" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="810.64" y="335.8" width="38.72" height="20.4" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="830" y="350.32" font-size="12" fill="#6d28d9" text-anchor="middle" font-weight="700">分化</text>
+  <line x1="766" y1="305" x2="788" y2="346" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="810.64" y="403.8" width="38.72" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="830" y="418.32" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">死亡</text>
+  <line x1="766" y1="305" x2="788" y2="414" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="830" y="456" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">综合命运决定</text>
+  <rect x="964.7995" y="191.075" width="70.40100000000001" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1000" y="203.78" font-size="10.5" fill="#be185d" text-anchor="middle" font-weight="700">TGF-β/Smad</text>
+  <text x="1000" y="218" font-size="9" fill="#475569">I/II 型受体→R-Smad＋Smad4 入核；抑癌（G1 阻滞）与晚期促 EMT 双重性</text>
+  <rect x="979.39975" y="267.075" width="41.200500000000005" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1000" y="279.78" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">Notch</text>
+  <text x="1000" y="294" font-size="9" fill="#475569">相邻细胞 DSL 配体→两次切割释放 NICD 入核，介导侧向抑制（接触依赖）</text>
+  <rect x="957.98605" y="343.075" width="84.0279" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1000" y="355.78" font-size="10.5" fill="#d97706" text-anchor="middle" font-weight="700">Wnt-β-catenin</text>
+  <text x="1000" y="370" font-size="9" fill="#475569">Frizzled＋LRP5/6→破坏复合体（APC-Axin-GSK3β-CK1）解体→β-catenin 入核；</text>
+  <text x="1000" y="382.5" font-size="9" fill="#475569">APC 缺失为结直肠癌限速事件</text>
+  <text x="70" y="452" font-size="9.5" fill="#64748b">核受体：类固醇、甲状腺素、视黄酸等亲脂信号直接入核——受体（约 48 成员超家族）变构释放 Hsp90、二聚化识别 HRE 调控转录，是内分泌治疗（他莫昔芬）的药理基础。</text>
+  <rect x="30" y="536" width="700" height="444" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="558.84" font-size="19" fill="#475569" font-weight="700">二、信号终止：五类刹车装置</text>
+  <circle cx="80" cy="590" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="80" y="594" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">1</text>
+  <text x="106" y="584" font-size="11.5" fill="#1e293b" font-weight="700">受体下调</text>
+  <text x="106" y="600" font-size="9.5" fill="#475569">GRK 磷酸化＋β-arrestin 结合 → 脱敏并促内吞（至溶酶体降解或再循环）</text>
+  <circle cx="80" cy="666" r="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="80" y="670" font-size="11" fill="#d97706" text-anchor="middle" font-weight="700">2</text>
+  <text x="106" y="660" font-size="11.5" fill="#1e293b" font-weight="700">GTP 酶内定时器</text>
+  <text x="106" y="676" font-size="9.5" fill="#475569">Gα 与小 G 蛋白（Ras、Rab、Rho）水解 GTP 自我关断；GAP 加速、RGS 协助</text>
+  <circle cx="80" cy="742" r="14" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="80" y="746" font-size="11" fill="#0f766e" text-anchor="middle" font-weight="700">3</text>
+  <text x="106" y="736" font-size="11.5" fill="#1e293b" font-weight="700">磷酸酶</text>
+  <text x="106" y="752" font-size="9.5" fill="#475569">酪氨酸磷酸酶（PTP1B、SHP2）与丝/苏氨酸磷酸酶（PP2A）镜像逆转磷酸化</text>
+  <circle cx="80" cy="818" r="14" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="80" y="822" font-size="11" fill="#6d28d9" text-anchor="middle" font-weight="700">4</text>
+  <text x="106" y="812" font-size="11.5" fill="#1e293b" font-weight="700">脂磷酸酶</text>
+  <text x="106" y="828" font-size="9.5" fill="#475569">PTEN（PIP₃→PIP₂）与 SHIP 拆除脂质第二信使</text>
+  <circle cx="80" cy="894" r="14" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="80" y="898" font-size="11" fill="#b45309" text-anchor="middle" font-weight="700">5</text>
+  <text x="106" y="888" font-size="11.5" fill="#1e293b" font-weight="700">第二信使清除</text>
+  <text x="106" y="904" font-size="9.5" fill="#475569">PDE 降解 cAMP/cGMP；Ca²⁺ 泵（PMCA/SERCA）与缓冲系统收钙</text>
+  <rect x="760" y="536" width="610" height="444" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="776" y="558.84" font-size="19" fill="#475569" font-weight="700">三、第二信使总表：生成—靶点—清除</text>
+  <rect x="780" y="590" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="617.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">第二信使</text>
+  <rect x="900" y="590" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="975" y="617.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">生成酶</text>
+  <rect x="1050" y="590" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1140" y="617.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要靶</text>
+  <rect x="1230" y="590" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1290" y="617.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">清除</text>
+  <rect x="780" y="634" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="665.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">cAMP</text>
+  <rect x="900" y="634" width="150" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="975" y="665.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">腺苷酸环化酶</text>
+  <rect x="1050" y="634" width="180" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1140" y="665.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PKA、EPAC、HCN</text>
+  <rect x="1230" y="634" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1290" y="665.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PDE</text>
+  <rect x="780" y="686" width="570" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="780" y="686" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="717.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">cGMP</text>
+  <rect x="900" y="686" width="150" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="975" y="717.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">鸟苷酸环化酶</text>
+  <rect x="1050" y="686" width="180" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1140" y="717.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PKG、cGMP 门控通道</text>
+  <rect x="1230" y="686" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1290" y="717.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PDE5 等</text>
+  <rect x="780" y="738" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="769.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">IP₃</text>
+  <rect x="900" y="738" width="150" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="975" y="769.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PLC</text>
+  <rect x="1050" y="738" width="180" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1140" y="769.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">IP₃ 受体（ER）</text>
+  <rect x="1230" y="738" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1290" y="769.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">磷酸酶逐级去磷酸</text>
+  <rect x="780" y="790" width="570" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="780" y="790" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="821.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">DAG</text>
+  <rect x="900" y="790" width="150" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="975" y="821.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PLC</text>
+  <rect x="1050" y="790" width="180" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1140" y="821.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PKC</text>
+  <rect x="1230" y="790" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1290" y="821.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">代谢回收</text>
+  <rect x="780" y="842" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="873.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Ca²⁺</text>
+  <rect x="900" y="842" width="150" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="975" y="873.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">通道 / 钙库</text>
+  <rect x="1050" y="842" width="180" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1140" y="873.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">CaM、PKC、钙蛋白</text>
+  <rect x="1230" y="842" width="120" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1290" y="873.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">PMCA/SERCA/缓冲</text>
+  <text x="780" y="946" font-size="10" fill="#64748b">受体一旦激活即同步启动终止程序——&quot;可终止性&quot;是信号转导的基本特征之一。</text>
+</svg>

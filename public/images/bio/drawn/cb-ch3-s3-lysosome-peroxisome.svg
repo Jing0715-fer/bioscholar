@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">溶酶体与过氧化物酶体</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">溶酶体含 60 余种酸性水解酶、V 型质子泵维持 pH≈4.6，分异噬性与自噬性两类；酶缺陷致贮积病（Tay-Sachs、Gaucher）。过氧化物酶体以氧化酶＋过氧化氢酶「边产边清」，PTS1 输入折叠蛋白</text>
+  <rect x="30" y="132" width="660" height="460" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、溶酶体：酸性消化囊泡（de Duve，1955 命名）</text>
+  <circle cx="185" cy="330" r="78" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="227.9" cy="330" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="211.74771249973966" cy="363.5405705978785" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="175.4538519332741" cy="371.82440743260025" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="146.3484355669862" cy="348.61361240814324" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="146.3484355669862" cy="311.38638759185676" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="175.4538519332741" cy="288.17559256739975" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="211.74771249973966" cy="296.4594294021215" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <rect x="171" y="240" width="28" height="20" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="185" y1="224" x2="185" y2="238" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <circle cx="185" cy="210" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="185" y="213.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">H⁺</text>
+  <line x1="203" y1="246" x2="234" y2="216" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="238" y="214" font-size="10.5" fill="#475569">V 型 H⁺-ATPase 消耗 ATP 泵入 H⁺</text>
+  <rect x="252" y="314" width="14" height="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <line x1="268" y1="318" x2="274" y2="318" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="278" y="322" font-size="10.5" fill="#475569">与 Cl⁻ 通道协同维持腔内酸性</text>
+  <rect x="149.02687500000002" y="311.375" width="71.94624999999999" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="185" y="326.5" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">pH ≈ 4.6</text>
+  <text x="185" y="282" font-size="10.5" fill="#64748b" text-anchor="middle">直径 0.2–0.5 μm</text>
+  <line x1="130" y1="424" x2="150" y2="398" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="56" y="430" font-size="10.5" fill="#475569">LAMP 膜蛋白高度糖基化（多糖被），</text>
+  <text x="56" y="444" font-size="10.5" fill="#475569">抵抗自身酶消化</text>
+  <line x1="185" y1="452" x2="185" y2="412" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="96" y="470" font-size="10.5" fill="#475569">60 余种酸性水解酶：蛋白酶、核酸酶、糖苷酶、脂酶、磷脂酶、</text>
+  <text x="96" y="484" font-size="10.5" fill="#475569">硫酸酯酶（最适 pH 约 4.6）</text>
+  <text x="430" y="232" font-size="11.5" fill="#475569">单层膜包裹的酸性囊泡；</text>
+  <text x="430" y="248.5" font-size="11.5" fill="#475569">由 C. de Duve 在差速离心追踪酸性磷酸酶活性时发现</text>
+  <text x="430" y="265" font-size="11.5" fill="#475569">（1974 年诺贝尔奖）。</text>
+  <rect x="504.5" y="302.225" width="87" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="548" y="316.14" font-size="11.5" fill="#075985" text-anchor="middle">异噬性溶酶体</text>
+  <text x="430" y="338" font-size="11" fill="#475569">吞噬体／胞饮体与溶酶体融合，</text>
+  <text x="430" y="353.5" font-size="11" fill="#475569">消化外源物质——防御与营养获取。</text>
+  <rect x="504.5" y="392.225" width="87" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="548" y="406.14" font-size="11.5" fill="#134e4a" text-anchor="middle">自噬性溶酶体</text>
+  <text x="430" y="428" font-size="11" fill="#475569">自噬体与溶酶体融合，</text>
+  <text x="430" y="443.5" font-size="11" fill="#475569">消化自身衰老损伤的细胞器，实现周转更新</text>
+  <text x="430" y="459" font-size="11" fill="#475569">（第 12 章）。</text>
+  <text x="430" y="492" font-size="10.5" fill="#64748b">生理特化：精子顶体（特化溶酶体）</text>
+  <text x="430" y="506.5" font-size="10.5" fill="#64748b">释放水解酶溶解卵外被；蝌蚪变态尾部自溶；</text>
+  <text x="430" y="521" font-size="10.5" fill="#64748b">破骨细胞降解骨基质。</text>
+  <text x="56" y="548" font-size="10.5" fill="#64748b">发生：溶酶体酶经 ER → 高尔基体 M6P 分选 → 晚期内体（前溶酶体）接受底物并酸化成熟为溶酶体；</text>
+  <text x="56" y="562.5" font-size="10.5" fill="#64748b">膜组分由 TGN 直接以囊泡形式补充（「内体成熟」途径）。</text>
+  <rect x="710" y="132" width="660" height="460" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、溶酶体贮积病：单一酶缺陷 → 底物累积</text>
+  <rect x="736" y="190" width="128" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="217.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">疾病</text>
+  <rect x="864" y="190" width="168" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="948" y="217.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">缺陷酶</text>
+  <rect x="1032" y="190" width="314" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1189" y="217.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">累积底物与表现</text>
+  <rect x="736" y="234" width="128" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="267.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Tay-Sachs 病</text>
+  <rect x="864" y="234" width="168" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="948" y="267.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">氨基己糖苷酶 A</text>
+  <rect x="1032" y="234" width="314" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1189" y="267.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">GM2 神经节苷脂累积于神经元——致盲与神经退行性变</text>
+  <rect x="736" y="290" width="610" height="56" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="736" y="290" width="128" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="323.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Gaucher 病</text>
+  <rect x="864" y="290" width="168" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="948" y="323.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖脑苷脂酶</text>
+  <rect x="1032" y="290" width="314" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1189" y="323.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">肝脾肿大</text>
+  <rect x="736" y="346" width="128" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="379.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">黏多糖贮积病</text>
+  <rect x="864" y="346" width="168" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="948" y="379.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">糖胺聚糖降解酶系</text>
+  <rect x="1032" y="346" width="314" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1189" y="379.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">糖胺聚糖降解障碍</text>
+  <rect x="860.1" y="413.8" width="79.80000000000001" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="900" y="428.32" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">酶替代疗法</text>
+  <text x="736" y="456" font-size="11.5" fill="#475569">静脉输入重组酶，借助甘露糖受体被巨噬细胞摄取——已用于 Gaucher 病治疗。</text>
+  <text x="736" y="500" font-size="11" fill="#64748b">任何一种溶酶体酶的遗传缺陷，都使其底物在溶酶体内累积——这是「囊泡内消化」体系疾病的共同逻辑。</text>
+  <rect x="30" y="612" width="660" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="634.84" font-size="19" fill="#475569" font-weight="700">三、过氧化物酶体（微体）：氧化解毒囊泡</text>
+  <circle cx="190" cy="730" r="70" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="226.8424397601154" cy="745.576733692346" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="194.93137279450107" cy="769.6948556158308" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="158.08893303438566" cy="754.1181219234848" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="153.1575602398846" cy="714.423266307654" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="185.06862720549893" cy="690.3051443841692" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="221.91106696561434" cy="705.8818780765152" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <rect x="176" y="718" width="28" height="24" fill="#0369a1" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="206" y1="726" x2="268" y2="700" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="272" y="698" font-size="10.5" fill="#475569">尿酸氧化酶核心（类晶体结构）</text>
+  <line x1="232" y1="752" x2="268" y2="768" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="272" y="772" font-size="10.5" fill="#475569">多种氧化酶 + 过氧化氢酶（标志酶）</text>
+  <text x="190" y="826" font-size="10.5" fill="#64748b" text-anchor="middle">单层膜小泡（微体）</text>
+  <text x="56" y="862" font-size="12" fill="#1e293b" font-weight="700">边产边清，防止氧化损伤：</text>
+  <text x="56" y="890" font-size="11.5" fill="#475569">R-H₂ + O₂ —氧化酶→ R-O + H₂O₂</text>
+  <text x="56" y="916" font-size="11.5" fill="#475569">2 H₂O₂ —过氧化氢酶→ 2 H₂O + O₂</text>
+  <text x="420" y="862" font-size="11" fill="#475569">主要功能：极长链脂肪酸（VLCFA）β 氧化、</text>
+  <text x="420" y="877" font-size="11" fill="#475569">缩醛磷脂合成、嘌呤与胆汁酸中间代谢、</text>
+  <text x="420" y="892" font-size="11" fill="#475569">甲醇与甲酸等毒物解毒；</text>
+  <text x="420" y="907" font-size="11" fill="#475569">植物中特化为乙醛酸循环体参与光呼吸。</text>
+  <rect x="710" y="612" width="660" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="634.84" font-size="19" fill="#475569" font-weight="700">四、过氧化物酶体的发生：PTS1 信号输入折叠蛋白</text>
+  <path d="M 740,700 q 18.75,-13.2 37.5,0 q 18.75,13.2 37.5,0 q 18.75,-13.2 37.5,0 q 18.75,13.2 37.5,0" fill="none" opacity="0.75" stroke="#0f766e" stroke-width="4.4"/>
+  <text x="815" y="748" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="600">ER 出芽提供膜</text>
+  <line x1="900" y1="690" x2="950" y2="680" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <circle cx="1010" cy="690" r="34" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1010" y="694" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">Pex5</text>
+  <line x1="1048" y1="690" x2="1092" y2="690" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <circle cx="1140" cy="660" r="14" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1164" y="656" font-size="10.5" fill="#475569">折叠状态输入（与线粒体不同）</text>
+  <rect x="1150" y="700" width="16" height="40" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1136" y="766" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">PTS1（C 端 Ser-Lys-Leu）</text>
+  <text x="736" y="800" font-size="11" fill="#475569">基质蛋白翻译后经 PTS1（C 端 SKL）／PTS2（N 端）信号被 Pex5 受体识别输入；膜可由 ER 出芽生成。</text>
+  <rect x="781.155675" y="838.225" width="197.68865000000005" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="880" y="852.14" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">Pex 基因突变 → Zellweger 综合征</text>
+  <text x="736" y="880" font-size="11" fill="#475569">过氧化物酶体装配缺陷：脑、肝、肾异常，VLCFA 累积。</text>
+</svg>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">显微成像技术：从可见光到电子</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">分辨率是首要指标——光镜约 0.2 μm、电镜可达 0.1–0.2 nm；相差看活细胞、共聚焦做光学切片与三维重建、冷冻电镜解析近原子结构（GFP 2008 / cryo-EM 2017 诺贝尔化学奖）</text>
+  <rect x="30" y="132" width="660" height="440" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、分辨率阶梯：可见光 vs 电子束（对数尺度）</text>
+  <text x="90" y="224" font-size="12" fill="#1e293b" font-weight="700">电子显微镜（电子束照明）</text>
+  <rect x="90" y="232" width="24" height="26" rx="5" fill="#be185d" fill-opacity="0.75" stroke="#be185d" stroke-width="1.5"/>
+  <text x="124" y="250" font-size="12.5" fill="#be185d" font-weight="700">0.1–0.2 nm</text>
+  <text x="90" y="304" font-size="12" fill="#1e293b" font-weight="700">光学显微镜（可见光照明）</text>
+  <rect x="90" y="312" width="264" height="26" rx="5" fill="#0369a1" fill-opacity="0.75" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="364" y="330" font-size="12.5" fill="#0369a1" font-weight="700">≈ 0.2 μm（200 nm）</text>
+  <text x="90" y="384" font-size="12" fill="#1e293b" font-weight="700">人眼分辨率极限</text>
+  <rect x="90" y="392" width="504" height="26" rx="5" fill="#64748b" fill-opacity="0.75" stroke="#64748b" stroke-width="1.5"/>
+  <text x="604" y="410" font-size="12.5" fill="#475569" font-weight="700">≈ 0.2 mm</text>
+  <text x="56" y="448" font-size="11" fill="#475569">光镜受照明光波长限制，仅能分辨细胞轮廓与较大的细胞器；电镜以电子束照明，波长仅为可见光的十万分之一量级，</text>
+  <text x="56" y="463.5" font-size="11" fill="#475569">可直达超微结构与生物大分子。</text>
+  <line x1="90" y1="490" x2="650" y2="490" stroke="#475569" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="90" y1="490" x2="90" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">0.1 nm</text>
+  <line x1="170" y1="490" x2="170" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="170" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">1 nm</text>
+  <line x1="250" y1="490" x2="250" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="250" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">10 nm</text>
+  <line x1="330" y1="490" x2="330" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="330" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">100 nm</text>
+  <line x1="410" y1="490" x2="410" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">1 μm</text>
+  <line x1="490" y1="490" x2="490" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="490" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">10 μm</text>
+  <line x1="570" y1="490" x2="570" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="570" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">100 μm</text>
+  <line x1="650" y1="490" x2="650" y2="496" stroke="#475569" stroke-width="1.8"/>
+  <text x="650" y="514" font-size="10.5" fill="#64748b" text-anchor="middle">1 mm</text>
+  <line x1="170" y1="548" x2="250" y2="548" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="170" y1="548" x2="170" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="250" y1="548" x2="250" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <text x="210" y="568" font-size="10" fill="#64748b" text-anchor="middle">蛋白质 ~nm 级</text>
+  <line x1="250" y1="548" x2="330" y2="548" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="250" y1="548" x2="250" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="330" y1="548" x2="330" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <text x="290" y="568" font-size="10" fill="#64748b" text-anchor="middle">病毒 ~0.1 μm</text>
+  <line x1="410" y1="548" x2="490" y2="548" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="410" y1="548" x2="410" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="490" y1="548" x2="490" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <text x="450" y="568" font-size="10" fill="#64748b" text-anchor="middle">细菌 1–10 μm</text>
+  <line x1="490" y1="548" x2="650" y2="548" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="490" y1="548" x2="490" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="650" y1="548" x2="650" y2="543" stroke="#64748b" stroke-width="1.4"/>
+  <text x="570" y="568" font-size="10" fill="#64748b" text-anchor="middle">细胞 10–100 μm</text>
+  <rect x="710" y="132" width="660" height="440" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、光学显微镜家族：活细胞观察与分子定位</text>
+  <rect x="736" y="186" width="300" height="168" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="752" y="212" font-size="13.5" fill="#075985" font-weight="700">相差显微镜</text>
+  <text x="752" y="236" font-size="11" fill="#475569">Zernike 发明（1953 年诺贝尔物理学奖）：</text>
+  <text x="752" y="251.5" font-size="11" fill="#475569">相位差转换为振幅差（明暗对比），不染色、</text>
+  <text x="752" y="267" font-size="11" fill="#475569">不固定即可观察活细胞内部结构与分裂动态。</text>
+  <rect x="1046" y="186" width="300" height="168" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1062" y="212" font-size="13.5" fill="#075985" font-weight="700">微分干涉差（DIC）</text>
+  <text x="1062" y="236" font-size="11" fill="#475569">利用偏振光干涉原理，呈现具有浮雕感的三维影像。</text>
+  <rect x="736" y="370" width="300" height="168" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="752" y="396" font-size="13.5" fill="#075985" font-weight="700">荧光显微镜</text>
+  <text x="752" y="420" font-size="11" fill="#475569">荧光染料／荧光蛋白标记目的分子，</text>
+  <text x="752" y="435.5" font-size="11" fill="#475569">免疫荧光精确定位抗原；</text>
+  <text x="752" y="451" font-size="11" fill="#475569">GFP 作为活体报告分子实现动态观察</text>
+  <text x="752" y="466.5" font-size="11" fill="#475569">（2008 年诺贝尔化学奖）。</text>
+  <rect x="1046" y="370" width="300" height="168" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1062" y="396" font-size="13.5" fill="#075985" font-weight="700">激光共聚焦显微镜</text>
+  <text x="1062" y="420" font-size="11" fill="#475569">激光逐点扫描＋共聚焦针孔排除焦平面外杂散光，</text>
+  <text x="1062" y="435.5" font-size="11" fill="#475569">逐层「光学切片」并三维重建——亚细胞定位与共定位分析主力。</text>
+  <text x="736" y="556" font-size="11.5" fill="#64748b">相差／DIC 用于活细胞动态观察，荧光／共聚焦用于特定分子的定位与共定位。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、电子显微镜家族：超微结构到近原子分辨率</text>
+  <rect x="56" y="632" width="608" height="104" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="72" y="656" font-size="13" fill="#831843" font-weight="700">透射电子显微镜（TEM）</text>
+  <text x="72" y="678" font-size="10.5" fill="#475569">电子束穿透 50–100 nm 超薄切片成像，观察细胞内部超微结构；戊二醛–锇酸双重固定、环氧树脂包埋、</text>
+  <text x="72" y="693" font-size="10.5" fill="#475569">醋酸铀–柠檬酸铅双染色；负染色观察病毒与蛋白复合体。</text>
+  <rect x="56" y="748" width="608" height="104" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="72" y="772" font-size="13" fill="#831843" font-weight="700">扫描电子显微镜（SEM）</text>
+  <text x="72" y="794" font-size="10.5" fill="#475569">收集电子束扫描样品激发的二次电子成像，呈现细胞表面三维形貌（纤毛、微绒毛）；样品经临界点干燥与金属镀膜。</text>
+  <rect x="56" y="864" width="608" height="104" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="72" y="888" font-size="13" fill="#831843" font-weight="700">冷冻电镜（cryo-EM）</text>
+  <text x="72" y="910" font-size="10.5" fill="#475569">快速冷冻玻璃化，避免冰晶损伤与化学固定假象；冷冻断裂–蚀刻剖开生物膜；单颗粒分析（SPA）</text>
+  <text x="72" y="925" font-size="10.5" fill="#475569">与 cryo-ET 解析分子机器近原子结构——2017 年诺贝尔化学奖（「生物分子的冷冻革命」）。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、研究目的 → 首选成像技术</text>
+  <rect x="736" y="648" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="901" y="675.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">研究目的</text>
+  <rect x="1066" y="648" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1206" y="675.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">首选技术</text>
+  <rect x="736" y="692" width="330" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="901" y="721.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">活细胞动态观察</text>
+  <rect x="1066" y="692" width="280" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1206" y="721.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">相差 / DIC</text>
+  <rect x="736" y="740" width="610" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="736" y="740" width="330" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="901" y="769.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">特定分子的定位与共定位</text>
+  <rect x="1066" y="740" width="280" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1206" y="769.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">荧光 / 共聚焦显微镜</text>
+  <rect x="736" y="788" width="330" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="901" y="817.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">细胞器超微结构</text>
+  <rect x="1066" y="788" width="280" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1206" y="817.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">透射电镜 TEM</text>
+  <rect x="736" y="836" width="610" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="736" y="836" width="330" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="901" y="865.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">细胞表面形貌</text>
+  <rect x="1066" y="836" width="280" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1206" y="865.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">扫描电镜 SEM</text>
+  <rect x="736" y="884" width="330" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="901" y="913.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">大分子机器三维结构</text>
+  <rect x="1066" y="884" width="280" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1206" y="913.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">冷冻电镜 cryo-EM</text>
+  <text x="736" y="952" font-size="11.5" fill="#64748b">分辨率与研究目的共同决定成像技术的选择。</text>
+</svg>

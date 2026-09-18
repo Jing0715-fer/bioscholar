@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞培养、分离与组分分析技术</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">原代培养传代即为细胞系（HeLa 1951 为首个人源连续细胞系）；流式细胞术逐个分析单细胞；差速离心按沉降速度分离细胞器（600 g 核 → 100 000 g 微粒体）；³H-亮氨酸放射自显影揭示分泌路线</text>
+  <rect x="30" y="132" width="660" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、细胞培养：原代培养 → 细胞系 → 细胞株</text>
+  <text x="664" y="170" font-size="10.5" fill="#64748b" text-anchor="end">37 ℃、5% CO₂、饱和湿度无菌培养（如 DMEM 培养基）</text>
+  <rect x="56" y="180" width="126" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="119" y="211" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">组织酶解制备</text>
+  <line x1="184" y1="206" x2="204" y2="206" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="206" y="180" width="126" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="269" y="211" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">原代培养</text>
+  <line x1="334" y1="206" x2="354" y2="206" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="356" y="180" width="126" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="419" y="211" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">传代＝细胞系</text>
+  <line x1="484" y1="206" x2="504" y2="206" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="506" y="180" width="126" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="569" y="211" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">克隆化＝细胞株</text>
+  <text x="56" y="260" font-size="11.5" fill="#475569">1951 年自宫颈癌患者 Henrietta Lacks 肿瘤组织建立的 HeLa 是第一个人源连续细胞系，</text>
+  <text x="56" y="276" font-size="11.5" fill="#475569">至今仍是使用最广的细胞模型。</text>
+  <text x="56" y="300" font-size="12.5" fill="#1e293b" font-weight="700">接触抑制对比</text>
+  <rect x="56" y="310" width="280" height="128" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="196" y="334" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">正常贴壁细胞</text>
+  <circle cx="95" cy="372" r="15" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="135" cy="372" r="15" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="175" cy="372" r="15" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="215" cy="372" r="15" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="255" cy="372" r="15" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <line x1="70" y1="392" x2="322" y2="392" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="196" y="418" font-size="10.5" fill="#475569" text-anchor="middle">相互接触即停止分裂（接触抑制）</text>
+  <rect x="356" y="310" width="280" height="128" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="496" y="334" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">肿瘤／转化细胞</text>
+  <circle cx="400" cy="362" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="440" cy="362" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="480" cy="362" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="520" cy="362" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="560" cy="362" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="420" cy="394" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="460" cy="394" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="500" cy="394" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="540" cy="394" r="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="496" y="428" font-size="10.5" fill="#475569" text-anchor="middle">失去接触抑制与贴壁依赖——多层堆积（恶性转化标志）</text>
+  <rect x="710" y="132" width="660" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、流式细胞术与 FACS：单细胞悬液逐个分析</text>
+  <text x="736" y="196" font-size="12.5" fill="#1e293b" font-weight="700">① 分析：细胞排队逐个通过激光检测点</text>
+  <circle cx="770" cy="238" r="8" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="808" cy="238" r="8" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="846" cy="238" r="8" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="884" cy="238" r="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <line x1="756" y1="210" x2="950" y2="230" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="756" y1="266" x2="950" y2="246" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="985" y1="186" x2="985" y2="290" stroke="#dc2626" stroke-width="3.5"/>
+  <text x="985" y="178" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="600">激光</text>
+  <line x1="995" y1="238" x2="1072" y2="238" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1080" y="186" width="175" height="25" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1088" y="203" font-size="10.5" fill="#475569">FSC 前向散射→细胞大小</text>
+  <line x1="1074" y1="238" x2="1080" y2="198" stroke="#94a3b8" stroke-width="1.3"/>
+  <rect x="1080" y="225" width="175" height="25" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1088" y="242" font-size="10.5" fill="#475569">SSC 侧向散射→内部颗粒度</text>
+  <line x1="1074" y1="238" x2="1080" y2="237" stroke="#94a3b8" stroke-width="1.3"/>
+  <rect x="1080" y="264" width="175" height="25" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1088" y="281" font-size="10.5" fill="#475569">FL 多色荧光→表型分子</text>
+  <line x1="1074" y1="238" x2="1080" y2="276" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="736" y="328" font-size="12.5" fill="#1e293b" font-weight="700">② FACS 分选：液滴充电后经静电场偏转</text>
+  <line x1="760" y1="360" x2="960" y2="360" stroke="#475569" stroke-width="2"/>
+  <circle cx="800" cy="360" r="7" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="840" cy="360" r="7" fill="#fce7f3" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="880" cy="360" r="7" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="920" cy="360" r="7" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="978" cy="360" r="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="998" cy="356" r="7" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <text x="988" y="336" font-size="10.5" fill="#64748b" text-anchor="middle">充电液滴</text>
+  <rect x="1040" y="322" width="8" height="76" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/>
+  <rect x="1080" y="322" width="8" height="76" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/>
+  <text x="1044" y="312" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">＋</text>
+  <text x="1084" y="312" font-size="12" fill="#0369a1" text-anchor="middle" font-weight="700">－</text>
+  <line x1="1092" y1="360" x2="1156" y2="328" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1092" y1="360" x2="1156" y2="360" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1092" y1="360" x2="1156" y2="392" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1160" y="306" width="42" height="40" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="1210" y="331" font-size="11" fill="#475569">分选亚群 1</text>
+  <rect x="1160" y="346" width="42" height="40" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="1210" y="371" font-size="11" fill="#475569">分选亚群 2</text>
+  <rect x="1160" y="386" width="42" height="40" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="1210" y="411" font-size="11" fill="#475569">分选亚群 3</text>
+  <text x="736" y="444" font-size="11" fill="#64748b">PI 染色测 DNA 含量（周期时相）；Annexin V／PI 双染测凋亡；多通道荧光分析表面分子表型。</text>
+  <rect x="30" y="470" width="660" height="510" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="492.84" font-size="19" fill="#475569" font-weight="700">三、细胞组分分离：差速离心（按沉降速度递增）</text>
+  <text x="66" y="560" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">1</text>
+  <rect x="80" y="524" width="60" height="62" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="84" y="530" width="52" height="50" fill="#e0f2fe" fill-opacity="0.35"/>
+  <rect x="84" y="570" width="52" height="10" rx="3" fill="#6d28d9" fill-opacity="0.8"/>
+  <rect x="199.00925" y="545.225" width="51.9815" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="225" y="559.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">600 g</text>
+  <line x1="300" y1="555" x2="336" y2="555" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="348" y="560" font-size="12.5" fill="#1e293b" font-weight="600">细胞核</text>
+  <line x1="110" y1="590" x2="110" y2="618" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="126" y="610" font-size="10" fill="#64748b">上清继续离心</text>
+  <text x="66" y="658" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">2</text>
+  <rect x="80" y="622" width="60" height="62" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="84" y="628" width="52" height="50" fill="#e0f2fe" fill-opacity="0.35"/>
+  <rect x="84" y="668" width="52" height="10" rx="3" fill="#d97706" fill-opacity="0.8"/>
+  <rect x="166.4355" y="643.225" width="117.12900000000002" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="225" y="657.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">10 000–20 000 g</text>
+  <line x1="300" y1="653" x2="336" y2="653" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="348" y="658" font-size="12.5" fill="#1e293b" font-weight="600">线粒体 / 溶酶体 / 过氧化物酶体</text>
+  <line x1="110" y1="688" x2="110" y2="716" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="126" y="708" font-size="10" fill="#64748b">上清继续离心</text>
+  <text x="66" y="756" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">3</text>
+  <rect x="80" y="720" width="60" height="62" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="84" y="726" width="52" height="50" fill="#e0f2fe" fill-opacity="0.35"/>
+  <rect x="84" y="766" width="52" height="10" rx="3" fill="#0f766e" fill-opacity="0.8"/>
+  <rect x="186.0982" y="741.225" width="77.8036" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="225" y="755.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">100 000 g</text>
+  <line x1="300" y1="751" x2="336" y2="751" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="348" y="756" font-size="12.5" fill="#1e293b" font-weight="600">微粒体（内质网碎片）</text>
+  <line x1="110" y1="786" x2="110" y2="814" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="126" y="806" font-size="10" fill="#64748b">上清继续离心</text>
+  <text x="66" y="854" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">4</text>
+  <rect x="80" y="818" width="60" height="62" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="84" y="824" width="52" height="50" fill="#e0f2fe" fill-opacity="0.35"/>
+  <rect x="203.155" y="839.225" width="43.69" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="225" y="853.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">上清</text>
+  <line x1="300" y1="849" x2="336" y2="849" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="348" y="854" font-size="12.5" fill="#1e293b" font-weight="600">可溶性酶类</text>
+  <circle cx="400" cy="552" r="28" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="409.8" cy="545" r="6.16" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 383.8234219477703,560.6954940902835 q 8.4,-7 16.8,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 415.7024148647199,561.216471019201 q 8.4,-7 16.8,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 406.02372425157705,537.3453280621014 q 8.4,-7 16.8,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <ellipse cx="390" cy="648" rx="38" ry="18" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 359,638.1 L 366,648 L 373,638.1 M 383,638.1 L 390,648 L 397,638.1 M 407,638.1 L 414,648 L 421,638.1 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <circle cx="500" cy="646" r="24" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="513.2" cy="646" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="508.2300653845353" cy="656.320175568578" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="497.06272367177667" cy="658.8690484408" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="488.1072109436881" cy="651.7272653563517" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="488.1072109436881" cy="640.2727346436483" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="497.06272367177667" cy="633.1309515592" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="508.2300653845353" cy="635.679824431422" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="582" cy="646" r="22" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="390" y="608" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="600">细胞核</text>
+  <text x="390" y="692" font-size="11" fill="#d97706" text-anchor="middle" font-weight="600">线粒体</text>
+  <text x="500" y="692" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="600">溶酶体</text>
+  <text x="582" y="692" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="600">过氧化物酶体</text>
+  <path d="M 360,756 q 18.75,-13.2 37.5,0 q 18.75,13.2 37.5,0 q 18.75,-13.2 37.5,0 q 18.75,13.2 37.5,0" fill="none" opacity="0.75" stroke="#0f766e" stroke-width="4.4"/>
+  <circle cx="360" cy="743.74" r="3.1" fill="#dc2626"/>
+  <circle cx="378.75" cy="760.64" r="3.1" fill="#dc2626"/>
+  <circle cx="397.5" cy="743.74" r="3.1" fill="#dc2626"/>
+  <circle cx="416.25" cy="760.64" r="3.1" fill="#dc2626"/>
+  <circle cx="435" cy="743.74" r="3.1" fill="#dc2626"/>
+  <circle cx="453.75" cy="760.64" r="3.1" fill="#dc2626"/>
+  <circle cx="472.5" cy="743.74" r="3.1" fill="#dc2626"/>
+  <circle cx="491.25" cy="760.64" r="3.1" fill="#dc2626"/>
+  <circle cx="510" cy="743.74" r="3.1" fill="#dc2626"/>
+  <text x="435" y="800" font-size="11" fill="#0f766e" text-anchor="middle" font-weight="600">微粒体（内质网碎片）</text>
+  <circle cx="384" cy="850" r="5.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="416" cy="850" r="5.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="448" cy="850" r="5.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="480" cy="850" r="5.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="512" cy="850" r="5.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="544" cy="850" r="5.5" fill="#be185d" fill-opacity="0.7"/>
+  <text x="600" y="855" font-size="11" fill="#be185d" text-anchor="middle" font-weight="600">可溶性酶（留在上清）</text>
+  <text x="56" y="916" font-size="11" fill="#475569">de Duve 以差速离心结合酶标志物分析发现溶酶体与过氧化物酶体（1974 年诺贝尔奖）。</text>
+  <text x="56" y="931.5" font-size="11" fill="#475569">密度梯度离心在蔗糖／CsCl 梯度中按浮力密度精细分离——Meselson 与 Stahl（1957）以此证明 DNA 半保留复制。</text>
+  <rect x="710" y="470" width="660" height="510" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="492.84" font-size="19" fill="#475569" font-weight="700">四、放射自显影：Jamieson 与 Palade 的分泌途径实验</text>
+  <text x="736" y="520" font-size="11.5" fill="#475569">以 ³H、¹⁴C、³⁵S 标记前体分子掺入细胞，贴敷感光乳胶显影——显示标记物的分布与动态去向。</text>
+  <rect x="971.1046" y="534.8" width="137.7908" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1040" y="549.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">³H-亮氨酸 脉冲—追踪</text>
+  <ellipse cx="1040" cy="730" rx="280" ry="172" fill="#f8fafc" stroke="#475569" stroke-width="2.2"/>
+  <path d="M 790,640 q 22.5,-14.399999999999999 45,0 q 22.5,14.399999999999999 45,0 q 22.5,-14.399999999999999 45,0 q 22.5,14.399999999999999 45,0" fill="none" opacity="0.75" stroke="#0f766e" stroke-width="4.4"/>
+  <circle cx="790" cy="627.08" r="3.1" fill="#dc2626"/>
+  <circle cx="812.5" cy="644.88" r="3.1" fill="#dc2626"/>
+  <circle cx="835" cy="627.08" r="3.1" fill="#dc2626"/>
+  <circle cx="857.5" cy="644.88" r="3.1" fill="#dc2626"/>
+  <circle cx="880" cy="627.08" r="3.1" fill="#dc2626"/>
+  <circle cx="902.5" cy="644.88" r="3.1" fill="#dc2626"/>
+  <circle cx="925" cy="627.08" r="3.1" fill="#dc2626"/>
+  <circle cx="947.5" cy="644.88" r="3.1" fill="#dc2626"/>
+  <circle cx="970" cy="627.08" r="3.1" fill="#dc2626"/>
+  <text x="880" y="688" font-size="12" fill="#0f766e" text-anchor="middle" font-weight="700">① 糙面内质网</text>
+  <line x1="975" y1="660" x2="1050" y2="695" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <path d="M 1064.8,700 q 12.6,-14 25.2,0 q 12.6,14 25.2,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 1056.1,713 q 16.95,14 33.9,0 q 16.95,-14 33.9,0" fill="#ffffff" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 1047.4,726 q 21.299999999999997,-14 42.599999999999994,0 q 21.299999999999997,14 42.599999999999994,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 1038.7,739 q 25.65,14 51.3,0 q 25.65,-14 51.3,0" fill="#ffffff" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 1030,752 q 30,-14 60,0 q 30,14 60,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <text x="1090" y="790" font-size="12" fill="#0369a1" text-anchor="middle" font-weight="700">② 高尔基体</text>
+  <line x1="1155" y1="740" x2="1185" y2="748" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <circle cx="1215" cy="750" r="26" fill="#ffffff" stroke="#0f766e" stroke-width="2.4"/>
+  <circle cx="1215" cy="750" r="20" fill="none" stroke="#0f766e" stroke-width="1.2" opacity="0.65"/>
+  <text x="1215" y="802" font-size="12" fill="#0f766e" text-anchor="middle" font-weight="700">③ 分泌颗粒</text>
+  <line x1="1245" y1="762" x2="1315" y2="815" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <text x="1352" y="830" font-size="12" fill="#dc2626" text-anchor="end" font-weight="700">④ 胞外（分泌）</text>
+  <circle cx="800" cy="655" r="2.3" fill="#1e293b"/>
+  <circle cx="830" cy="645" r="2.3" fill="#1e293b"/>
+  <circle cx="860" cy="662" r="2.3" fill="#1e293b"/>
+  <circle cx="900" cy="652" r="2.3" fill="#1e293b"/>
+  <circle cx="940" cy="662" r="2.3" fill="#1e293b"/>
+  <circle cx="1000" cy="690" r="2.3" fill="#1e293b"/>
+  <circle cx="1030" cy="706" r="2.3" fill="#1e293b"/>
+  <circle cx="1060" cy="722" r="2.3" fill="#1e293b"/>
+  <circle cx="1090" cy="730" r="2.3" fill="#1e293b"/>
+  <circle cx="1120" cy="742" r="2.3" fill="#1e293b"/>
+  <circle cx="1185" cy="756" r="2.3" fill="#1e293b"/>
+  <circle cx="1215" cy="764" r="2.3" fill="#1e293b"/>
+  <circle cx="1240" cy="780" r="2.3" fill="#1e293b"/>
+  <circle cx="1268" cy="796" r="2.3" fill="#1e293b"/>
+  <circle cx="1290" cy="812" r="2.3" fill="#1e293b"/>
+  <text x="860" y="890" font-size="11.5" fill="#475569" font-weight="600">胰腺腺泡细胞</text>
+  <text x="736" y="934" font-size="11" fill="#475569">Jamieson 与 Palade 在胰腺腺泡细胞中以 ³H-亮氨酸脉冲—追踪实验，</text>
+  <text x="736" y="949" font-size="11" fill="#475569">描绘出分泌蛋白「糙面内质网→高尔基体→浓缩分泌颗粒→胞外」的完整路线，奠定分泌途径研究的经典模型。</text>
+</svg>

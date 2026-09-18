@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">凋亡的两条信号途径与 Bcl-2 家族</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">外在：FasL-Fas→FADD→DISC→caspase-8→caspase-3；内在：BH3-only→Bax/Bak 成孔→Cyt c+Apaf-1 凋亡体；Bcl-2（t(14;18)）封锁 Bax/Bak，Venetoclax 拮抗</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、外在（死亡受体）途径：FasL-Fas → FADD → DISC</text>
+  <text x="64" y="184" font-size="9.5" fill="#475569">死亡受体属 TNF 受体超家族：Fas（CD95）、TNFR1、DR4/DR5（TRAIL 受体），胞内段含死亡结构域（DD）。以 Fas 途径为例</text>
+  <text x="64" y="197" font-size="9.5" fill="#475569">（细胞毒性 T 细胞杀伤靶细胞）：</text>
+  <g><circle cx="60" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="272" x2="60" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="272" x2="84" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="272" x2="108" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="272" x2="132" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="272" x2="156" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="272" x2="180" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="272" x2="204" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="272" x2="228" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="272" x2="252" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="272" x2="276" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="272" x2="300" y2="277" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="281" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <ellipse cx="140" cy="232" rx="44" ry="22" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="140" y="208" font-size="9" fill="#64748b" text-anchor="middle">细胞毒性 T 细胞</text>
+  <rect x="110.044" y="244.35" width="59.912" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="140" y="255.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">FasL 三聚体</text>
+  <rect x="316" y="226" width="84" height="84" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="358" y="250" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">Fas</text>
+  <text x="358" y="268" font-size="8" fill="#4c1d95" text-anchor="middle">（受体三聚化）</text>
+  <text x="358" y="288" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">DD</text>
+  <line x1="190" y1="252" x2="312" y2="252" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="358" y="326" font-size="9.5" fill="#64748b" text-anchor="middle">靶细胞</text>
+  <line x1="358" y1="336" x2="358" y2="356" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <rect x="311.02235" y="369.925" width="93.95530000000001" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="358" y="381.42" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">FADD（DD＋DED）</text>
+  <line x1="358" y1="396" x2="358" y2="416" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="291.45235" y="429.925" width="133.0953" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="358" y="441.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">procaspase-8（DED-DED）</text>
+  <line x1="358" y1="456" x2="358" y2="476" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="280" y="486" width="156" height="36" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2.2"/>
+  <text x="358" y="508" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">DISC</text>
+  <text x="470" y="244" font-size="9.5" fill="#475569">DISC＝死亡诱导信号复合物；</text>
+  <text x="470" y="257" font-size="9.5" fill="#475569">多个 procaspase-8 彼此靠近自切割</text>
+  <text x="470" y="270" font-size="9.5" fill="#475569">（诱导邻近模式）→ 活性 caspase-8。</text>
+  <line x1="444" y1="504" x2="470" y2="504" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="479.802275" y="495.925" width="160.39544999999998" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="560" y="507.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">caspase-8 → 切割激活 caspase-3</text>
+  <text x="470" y="356" font-size="9.5" fill="#dc2626">caspase-8 同时切割 Bid 为 tBid——桥接线粒体途径</text>
+  <text x="470" y="369" font-size="9.5" fill="#dc2626">（右图）。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、内在（线粒体）途径：MOMP → Cyt c → 凋亡体</text>
+  <text x="740" y="184" font-size="9.5" fill="#475569">应答 DNA 损伤、生长因子剥夺、ER 应激等细胞内在应激：</text>
+  <rect x="752.80735" y="217.925" width="74.3853" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="790" y="229.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">BH3-only 感应</text>
+  <text x="790" y="250" font-size="9" fill="#64748b" text-anchor="middle">Bid·Bim·Puma·Noxa·Bad</text>
+  <line x1="790" y1="262" x2="790" y2="286" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <rect x="740.71" y="301.5" width="98.58" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="790" y="313.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">Bax / Bak 寡聚成孔</text>
+  <line x1="790" y1="328" x2="790" y2="352" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <ellipse cx="790" cy="392" rx="75" ry="37" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 722,371.65 L 729,392 L 736,371.65 M 762.6666666666666,371.65 L 769.6666666666666,392 L 776.6666666666666,371.65 M 803.3333333333334,371.65 L 810.3333333333334,392 L 817.3333333333334,371.65 M 844,371.65 L 851,392 L 858,371.65 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <text x="790" y="378" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">外膜通透化（MOMP）</text>
+  <line x1="872" y1="392" x2="990" y2="392" stroke="#d97706" stroke-width="2.4" marker-end="url(#arr-warn)"/>
+  <circle cx="1020" cy="392" r="22" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1020" y="395.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">Cyt c</text>
+  <rect x="993.5" y="420.35" width="53" height="15.299999999999999" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1020" y="431.24" font-size="9" fill="#64748b" text-anchor="middle">释放入胞质</text>
+  <circle cx="1210" cy="350" r="52" fill="#ffffff" stroke="#be185d" stroke-width="2.4"/>
+  <circle cx="1210" cy="310" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="1241.273259298721" cy="325.0604079256507" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="1248.997116487273" cy="358.9008373582526" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="1227.3553495647022" cy="386.0387547160968" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="1192.6446504352978" cy="386.0387547160968" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="1171.002883512727" cy="358.9008373582526" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="1178.726740701279" cy="325.0604079256507" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1210" y="348" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">凋亡体</text>
+  <text x="1210" y="364" font-size="8.5" fill="#831843" text-anchor="middle">（七聚体轮状）</text>
+  <line x1="1044" y1="392" x2="1140" y2="372" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="1130" y="428" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">Cyt c＋Apaf-1＋dATP</text>
+  <line x1="1210" y1="404" x2="1210" y2="444" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="1210" y="464" font-size="9.5" fill="#475569" text-anchor="middle">CARD 募集 procaspase-9 → 自切割激活</text>
+  <line x1="1210" y1="476" x2="1210" y2="496" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="1148.0925" y="511.5" width="123.81500000000003" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1210" y="523.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">caspase-9 → caspase-3</text>
+  <rect x="887.1471" y="478.35" width="105.70579999999998" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="940" y="489.24" font-size="9" fill="#059669" text-anchor="middle" font-weight="700">Smac/DIABLO 同时释放</text>
+  <line x1="985" y1="500" x2="985" y2="516" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <text x="860" y="538" font-size="9" fill="#475569">结合并抑制 IAP（如 XIAP），</text>
+  <text x="860" y="550.5" font-size="9" fill="#475569">解除对 caspase-3/9 的抑制。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、Bcl-2 家族三方阵：抗凋亡 vs 效应 vs 感应</text>
+  <rect x="60" y="630" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">亚家族</text>
+  <rect x="210" y="630" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">代表成员</text>
+  <rect x="450" y="630" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">结构域</text>
+  <rect x="590" y="630" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="715" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="60" y="674" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="696.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">抗凋亡</text>
+  <rect x="210" y="674" width="240" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="696.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Bcl-2、Bcl-xL、Mcl-1</text>
+  <rect x="450" y="674" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="696.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">BH1–BH4</text>
+  <rect x="590" y="674" width="250" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="715" y="696.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">封锁 Bax/Bak，抑制凋亡</text>
+  <rect x="60" y="708" width="780" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="708" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="730.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">促凋亡效应</text>
+  <rect x="210" y="708" width="240" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="730.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Bax、Bak</text>
+  <rect x="450" y="708" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="730.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">BH1–BH3</text>
+  <rect x="590" y="708" width="250" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="715" y="730.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">寡聚成孔，执行 MOMP</text>
+  <rect x="60" y="742" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="764.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">BH3-only</text>
+  <rect x="210" y="742" width="240" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Bid、Bim、Puma、Noxa、Bad</text>
+  <rect x="450" y="742" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">仅 BH3</text>
+  <rect x="590" y="742" width="250" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="715" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">感应损伤，激活 Bax/Bak 或封锁抗凋亡成员</text>
+  <text x="880" y="630" font-size="11.5" fill="#1e293b" font-weight="700">调节检验</text>
+  <text x="880" y="652" font-size="9.5" fill="#475569">p53 上调 Puma/Noxa/Bax（DNA 损伤 → 凋亡）；生存因子激活 AKT 磷酸化 Bad（与 14-3-3 结合而失活）</text>
+  <text x="880" y="665.5" font-size="9.5" fill="#475569">从而抑制凋亡。</text>
+  <text x="60" y="786" font-size="11.5" fill="#1e293b" font-weight="700">临床意义</text>
+  <text x="60" y="808" font-size="10" fill="#475569">Bcl-2 是人类发现的第一个凋亡调节癌基因——滤泡性淋巴瘤 t(14;18) 易位使 BCL2 置于 IgH 增强子下高表达；肿瘤细胞因&quot;该死不死&quot;而存活，是化疗抵抗的重要原因。</text>
+  <rect x="124.914" y="857.5" width="210.172" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="230" y="869.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">小分子 BH3 类似物 Venetoclax 已临床应用</text>
+  <rect x="545.05" y="857.5" width="149.9" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="620" y="869.6" font-size="10" fill="#78350f" text-anchor="middle">tBid 桥接外在 → 内在两条途径</text>
+  <text x="880" y="730" font-size="9.5" fill="#64748b">三方阵的平衡决定细胞命运：感应层上传损伤信号、效应层执行成孔、</text>
+  <text x="880" y="743.5" font-size="9.5" fill="#64748b">抗凋亡层兜底刹车——Bcl-2 过表达相当于拆掉刹车。</text>
+</svg>

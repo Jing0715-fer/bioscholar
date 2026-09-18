@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞周期检验点与 p53：R 点、DNA 损伤应答与纺锤体检查</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">R 点＝Rb-E2F 正反馈承诺（Pardee 1974）；损伤经 ATM/ATR-Chk 降解 Cdc25，p53 四路应答（50% 肿瘤突变）；SAC 抑制 APC/C，放行后启动后期</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、G1/S 检验点：R 点＝Rb-E2F 正反馈的承诺点</text>
+  <text x="64" y="186" font-size="10" fill="#475569">Pardee（1974）提出限制点：此前细胞依赖丝裂原（生长因子经 Ras-MAPK 与 PI3K 通路诱导 cyclin D）持续刺激；一旦通过，</text>
+  <text x="64" y="200" font-size="10" fill="#475569">即使撤除丝裂原也完成整轮周期。</text>
+  <rect x="152.02749999999997" y="253.5" width="95.94500000000004" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="200" y="265.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">丝裂原 → cyclin D</text>
+  <line x1="200" y1="284" x2="200" y2="312" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="120" y="316" width="160" height="42" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="200" y="341" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">cyclin D-CDK4/6</text>
+  <line x1="288" y1="337" x2="356" y2="337" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="358" y="312" width="84" height="50" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="400" y="332" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">Rb</text>
+  <text x="400" y="350" font-size="9" fill="#4c1d95" text-anchor="middle">磷酸化</text>
+  <line x1="446" y1="337" x2="500" y2="337" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <rect x="502" y="312" width="84" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="544" y="332" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">E2F</text>
+  <text x="544" y="350" font-size="9" fill="#134e4a" text-anchor="middle">释放</text>
+  <path d="M 544,366 C 544,412 240,412 200,362" fill="none" stroke="#0f766e" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arr-dna)"/>
+  <text x="300" y="404" font-size="9.5" fill="#134e4a" font-weight="700">转录 cyclin E → cyclin E-CDK2 进一步磷酸化 Rb（正反馈）</text>
+  <text x="64" y="436" font-size="9.5" fill="#475569">低磷酸化 Rb 结合并抑制 E2F；正反馈使 Rb 彻底失活后 S 期基因全面表达。</text>
+  <rect x="42.335000000000065" y="461.925" width="315.32999999999987" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="200" y="473.42" font-size="9.5" fill="#78350f" text-anchor="middle">接触抑制：E-钙粘蛋白接触上调 p27、下调 cyclin D/E（肿瘤细胞失去）</text>
+  <rect x="161.72830000000002" y="509.925" width="276.54339999999996" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="300" y="521.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">p16-cyclin D-CDK4/6-Rb-E2F 轴：肿瘤最常扰动的通路之一</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、DNA 损伤检验点：ATM/ATR-Chk-p53 网络（基因组卫士）</text>
+  <rect x="722.13045" y="181.075" width="175.7391" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="810" y="193.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">DNA 损伤（复制胁迫 / 外源损伤）</text>
+  <line x1="810" y1="212" x2="810" y2="240" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <rect x="746" y="242" width="128" height="44" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="810" y="268" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">ATM / ATR</text>
+  <line x1="810" y1="286" x2="810" y2="312" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="746" y="314" width="128" height="44" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="810" y="340" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">Chk2 / Chk1</text>
+  <line x1="874" y1="336" x2="990" y2="336" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="1015.205" y="327.925" width="97.58999999999999" height="16.15" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1064" y="339.42" font-size="9.5" fill="#64748b" text-anchor="middle">磷酸化并降解 Cdc25</text>
+  <text x="960" y="366" font-size="9.5" fill="#475569">阻止 CDK 激活 / 诱导 CKI → 周期停滞于 G1/S 或 G2/M，为修复争取时间</text>
+  <line x1="810" y1="358" x2="810" y2="386" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="746" y="388" width="128" height="46" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="810" y="408" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">p53 磷酸化</text>
+  <text x="810" y="426" font-size="8.5" fill="#dc2626" text-anchor="middle">（不再被 Mdm2 降解）</text>
+  <rect x="1030.94" y="388.35" width="178.11999999999998" height="15.299999999999999" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1120" y="399.24" font-size="9" fill="#64748b" text-anchor="middle">Mdm2（正常时结合 p53 促其泛素化降解）</text>
+  <line x1="1024" y1="396" x2="878" y2="400" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <line x1="810" y1="436" x2="786" y2="462" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="773.8424" y="470.35" width="24.3152" height="15.299999999999999" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="786" y="481.24" font-size="9" fill="#be185d" text-anchor="middle" font-weight="700">p21</text>
+  <text x="726" y="500" font-size="8.5" fill="#475569">抑制多种 CDK → G1/S 阻滞</text>
+  <line x1="810" y1="436" x2="944" y2="462" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="902.7346" y="470.35" width="82.5308" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="944" y="481.24" font-size="9" fill="#059669" text-anchor="middle" font-weight="700">GADD45·修复基因</text>
+  <text x="884" y="500" font-size="8.5" fill="#475569">DNA 修复</text>
+  <line x1="810" y1="436" x2="1102" y2="462" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="1079.2746" y="470.35" width="45.4508" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1102" y="481.24" font-size="9" fill="#d97706" text-anchor="middle" font-weight="700">14-3-3σ</text>
+  <text x="1042" y="500" font-size="8.5" fill="#475569">阻滞 G2/M</text>
+  <line x1="810" y1="436" x2="1260" y2="462" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="1235.3279" y="470.35" width="49.3442" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1260" y="481.24" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">PUMA·Bax</text>
+  <text x="1200" y="500" font-size="8.5" fill="#475569">损伤不可修复 → 凋亡</text>
+  <rect x="837.2685" y="537.925" width="125.46300000000002" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="900" y="549.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">约 50% 人类肿瘤 p53 突变</text>
+  <text x="1060" y="538" font-size="9" fill="#64748b">Li-Fraumeni 综合征（胚系 p53 突变）多发早年肿瘤；</text>
+  <text x="1060" y="550.5" font-size="9" fill="#64748b">MDM2 扩增与 HPV E6（降解 p53，宫颈癌）为旁路失活机制；</text>
+  <text x="1060" y="563" font-size="9" fill="#64748b">MDM2 抑制剂与 p53 重激活是治疗热点。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、纺锤体组装检验点（SAC）与后期启动：双向定向的放行条件</text>
+  <text x="64" y="618" font-size="11.5" fill="#1e293b" font-weight="700">SAC 感受器：未附着 / 缺乏张力的动粒</text>
+  <line x1="150" y1="636" x2="150" y2="690" stroke="#0f766e" stroke-width="8"/>
+  <rect x="130" y="692" width="40" height="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="150" y="706" font-size="1" text-anchor="middle"></text>
+  <text x="150" y="728" font-size="9" fill="#dc2626" text-anchor="middle">动粒（未附着）</text>
+  <rect x="89.47500000000001" y="744.775" width="121.04999999999998" height="14.45" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="755.06" font-size="8.5" fill="#dc2626" text-anchor="middle">Mad2 构象激活＋BubR1-Bub3</text>
+  <text x="80" y="782" font-size="9" fill="#475569">组成 MCC（有丝分裂检查点复合体）</text>
+  <line x1="390" y1="640" x2="360" y2="692" stroke="#0369a1" stroke-width="6"/>
+  <line x1="390" y1="640" x2="420" y2="692" stroke="#0369a1" stroke-width="6"/>
+  <rect x="372" y="692" width="36" height="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="390" y="728" font-size="9" fill="#059669" text-anchor="middle">双向定向（张力）</text>
+  <rect x="357.3557" y="744.35" width="65.2886" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="390" y="755.24" font-size="9" fill="#059669" text-anchor="middle" font-weight="700">SAC 信号解除</text>
+  <line x1="430" y1="752" x2="470" y2="752" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="480" y="640" width="120" height="46" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2.2"/>
+  <text x="540" y="660" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">APC/C</text>
+  <text x="540" y="678" font-size="9" fill="#831843" text-anchor="middle">＋Cdc20 放行</text>
+  <line x1="540" y1="686" x2="540" y2="712" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="492.1417" y="729.925" width="95.7166" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="540" y="741.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">泛素化降解 securin</text>
+  <line x1="540" y1="756" x2="540" y2="782" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="488.6191" y="799.925" width="102.7618" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="540" y="811.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">释放分离酶 separase</text>
+  <line x1="540" y1="826" x2="540" y2="848" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="487.6406" y="865.925" width="104.7188" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="540" y="877.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">切割 cohesin 的 Scc1</text>
+  <line x1="540" y1="892" x2="540" y2="912" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <rect x="462.9" y="929.5" width="154.20000000000002" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="540" y="941.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">姐妹染色单体分离（后期启动）</text>
+  <line x1="300" y1="666" x2="470" y2="666" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="385" y="650" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">MCC 抑制 Cdc20</text>
+  <text x="700" y="618" font-size="11.5" fill="#1e293b" font-weight="700">退出与临床</text>
+  <text x="700" y="640" font-size="9.5" fill="#475569">同时 APC/C 降解 cyclin B → 细胞退出 M 期；</text>
+  <text x="700" y="653.5" font-size="9.5" fill="#475569">SAC 失败导致染色体错误分配与非整倍体。</text>
+  <rect x="747.19" y="691.925" width="85.62" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="790" y="703.42" font-size="9.5" fill="#dc2626" text-anchor="middle">长春碱 / 秋水仙类</text>
+  <rect x="940.75" y="691.925" width="38.5" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="960" y="703.42" font-size="9.5" fill="#dc2626" text-anchor="middle">紫杉醇</text>
+  <text x="700" y="730" font-size="9.5" fill="#475569">激活 SAC 将细胞阻滞于 M 期并走向凋亡——抗癌机制的重要一环。</text>
+  <text x="700" y="782" font-size="9.5" fill="#64748b">中期向后期的转换由 APC/C 驱动，</text>
+  <text x="700" y="795.5" font-size="9.5" fill="#64748b">但必须获得 SAC 的放行——&quot;全或无&quot;的质量控制。</text>
+  <text x="1100" y="640" font-size="9.5" fill="#64748b">经典实验：Nicklas 显微操作证明张力稳定正确连接。</text>
+  <rect x="1142.75" y="751.925" width="114.5" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1200" y="763.42" font-size="9.5" fill="#059669" text-anchor="middle">所有染色体实现双向定向</text>
+  <text x="1200" y="800" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">＝SAC 放行条件</text>
+</svg>

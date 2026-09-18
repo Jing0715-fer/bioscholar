@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">线粒体与细胞凋亡及线粒体疾病</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">mPTP（ANT·VDAC·亲环蛋白 D）开放致 Δψ 崩解与基质肿胀、环孢素 A 抑制；Bax/Bak 成孔释放 Cyt c 组装凋亡复合体启动 caspase 级联；LHON/MELAS/MERRF/KSS 呈母系遗传、多系统受累、异质性阈值效应与破碎红纤维</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、线粒体：内在（线粒体）凋亡途径的枢纽</text>
+  <ellipse cx="350" cy="245" rx="125" ry="60" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 232,212 L 239,245 L 246,212 M 269,212 L 276,245 L 283,212 M 306,212 L 313,245 L 320,212 M 343,212 L 350,245 L 357,212 M 380,212 L 387,245 L 394,212 M 417,212 L 424,245 L 431,212 M 454,212 L 461,245 L 468,212 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <text x="350" y="250" font-size="13" fill="#d97706" text-anchor="middle" font-weight="700">线粒体</text>
+  <circle cx="300" cy="230" r="4" fill="#0369a1"/>
+  <circle cx="330" cy="215" r="4" fill="#0369a1"/>
+  <circle cx="360" cy="225" r="4" fill="#0369a1"/>
+  <circle cx="395" cy="218" r="4" fill="#0369a1"/>
+  <rect x="213" y="233" width="14" height="30" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="103.006" y="199.5" width="93.988" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="211.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">Bax/Bak 寡聚成孔</text>
+  <line x1="280" y1="262" x2="185" y2="300" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="258" y="302" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">Cyt c 释放</text>
+  <circle cx="196" cy="306" r="4.5" fill="#0369a1"/>
+  <circle cx="176" cy="318" r="4.5" fill="#0369a1"/>
+  <line x1="185" y1="327" x2="160" y2="345" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <circle cx="150" cy="380" r="36" fill="#fce7f3" stroke="#be185d" stroke-width="2.2"/>
+  <circle cx="150" cy="356" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="168.76395557923271" cy="365.0362447553904" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="173.39826989236377" cy="385.3405024149516" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="160.4132097388214" cy="401.62325282965804" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="139.5867902611786" cy="401.62325282965804" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="126.60173010763623" cy="385.3405024149516" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="131.23604442076729" cy="365.0362447553904" r="5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="150" cy="380" r="10" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="150" y="438" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">凋亡复合体（apoptosome）</text>
+  <text x="150" y="456" font-size="9.5" fill="#475569" text-anchor="middle">Cyt c＋Apaf-1＋procaspase-9</text>
+  <line x1="150" y1="470" x2="150" y2="490" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="88.46575000000001" y="505.65" width="123.06849999999999" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="518.96" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">caspase 级联 → 凋亡</text>
+  <rect x="526.2" y="186.5" width="57.599999999999994" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="555" y="198.6" font-size="10" fill="#78350f" text-anchor="middle">Ca²⁺ 超载</text>
+  <rect x="602" y="186.5" width="52" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="628" y="198.6" font-size="10" fill="#78350f" text-anchor="middle">氧化应激</text>
+  <line x1="540" y1="206" x2="488" y2="222" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="468" y="225" width="16" height="44" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="476" y="214" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">mPTP</text>
+  <text x="494" y="252" font-size="9" fill="#475569">ANT·VDAC·亲环蛋白 D</text>
+  <text x="505" y="285" font-size="9.5" fill="#475569">开放 → 内膜失去选择性、Δψ 崩解、</text>
+  <text x="505" y="298" font-size="9.5" fill="#475569">基质肿胀、外膜破裂</text>
+  <line x1="560" y1="315" x2="486" y2="272" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <text x="528" y="302" font-size="9" fill="#059669" text-anchor="middle" font-weight="700">抑制</text>
+  <rect x="573.709" y="321.5" width="52.58200000000001" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="600" y="333.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">环孢素 A</text>
+  <text x="505" y="360" font-size="9.5" fill="#64748b">环孢素 A 结合亲环蛋白 D 抑制其开放——缺血再灌注损伤</text>
+  <text x="505" y="373" font-size="9.5" fill="#64748b">（心肌梗死、脑卒中）</text>
+  <text x="505" y="386" font-size="9.5" fill="#64748b">保护研究的焦点。</text>
+  <text x="255" y="522" font-size="10" fill="#64748b">嵴重构（OPA1 断裂）与动力学：分裂促进 Cyt c 释放、融合延缓凋亡。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、母系遗传与异质性阈值效应</text>
+  <circle cx="790" cy="215" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="790" y="258" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="600">母（卵传递 mtDNA）</text>
+  <rect x="862" y="199" width="32" height="32" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <text x="878" y="258" font-size="9.5" fill="#475569" text-anchor="middle">父（不传递）</text>
+  <line x1="807" y1="215" x2="862" y2="215" stroke="#475569" stroke-width="1.8"/>
+  <line x1="835" y1="215" x2="835" y2="285" stroke="#475569" stroke-width="1.8"/>
+  <line x1="755" y1="285" x2="945" y2="285" stroke="#475569" stroke-width="1.8"/>
+  <line x1="775" y1="285" x2="775" y2="303" stroke="#475569" stroke-width="1.8"/>
+  <line x1="836" y1="285" x2="836" y2="303" stroke="#475569" stroke-width="1.8"/>
+  <line x1="885" y1="285" x2="885" y2="303" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="775" cy="318" r="15" fill="#dc2626" fill-opacity="0.85"/>
+  <rect x="823" y="303" width="26" height="26" fill="#dc2626" fill-opacity="0.45"/>
+  <circle cx="885" cy="318" r="15" fill="#dc2626" fill-opacity="0.15"/>
+  <text x="775" y="350" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">重</text>
+  <text x="836" y="350" font-size="9.5" fill="#d97706" text-anchor="middle" font-weight="700">轻</text>
+  <text x="885" y="350" font-size="9.5" fill="#64748b" text-anchor="middle">正常</text>
+  <text x="850" y="380" font-size="10" fill="#64748b" text-anchor="middle">子代异质性（突变比例）不同 → 轻重悬殊</text>
+  <rect x="1070" y="220" width="250" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1070" y1="370" x2="1320" y2="370" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1132.5" y1="420" x2="1132.5" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1070" y1="320" x2="1320" y2="320" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1195" y1="420" x2="1195" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1070" y1="270" x2="1320" y2="270" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1257.5" y1="420" x2="1257.5" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1070" y1="420" x2="1070" y2="426" stroke="#475569" stroke-width="1.8"/>
+  <text x="1070" y="442" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1195" y1="420" x2="1195" y2="426" stroke="#475569" stroke-width="1.8"/>
+  <text x="1195" y="442" font-size="13" fill="#64748b" text-anchor="middle">50%</text>
+  <line x1="1320" y1="420" x2="1320" y2="426" stroke="#475569" stroke-width="1.8"/>
+  <text x="1320" y="442" font-size="13" fill="#64748b" text-anchor="middle">100%</text>
+  <line x1="1064" y1="420" x2="1070" y2="420" stroke="#475569" stroke-width="1.8"/>
+  <text x="1060" y="424" font-size="13" fill="#64748b" text-anchor="end">轻</text>
+  <line x1="1064" y1="220" x2="1070" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="1060" y="224" font-size="13" fill="#64748b" text-anchor="end">重</text>
+  <text x="1195" y="464" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">突变型 mtDNA 比例</text>
+  <text x="1024" y="320" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">表型严重度</text>
+  <text x="1195" y="208" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">阈值效应</text>
+  <path d="M1070,412 C1080.4,410.7 1111.7,407.3 1132.5,404 C1153.3,400.7 1177.1,397.7 1195,392 C1212.9,386.3 1228.3,383.7 1240,370 C1251.7,356.3 1256.7,330.0 1265,310 C1273.3,290.0 1280.8,264.0 1290,250 C1299.2,236.0 1315.0,230.0 1320,226" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <line x1="1245" y1="420" x2="1245" y2="222" stroke="#d97706" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="1245" y="212" font-size="10" fill="#d97706" text-anchor="middle" font-weight="700">阈值</text>
+  <text x="740" y="478" font-size="10.5" fill="#475569">多系统受累：能量需求高的脑、肌肉、眼、耳症状突出；</text>
+  <text x="740" y="492.5" font-size="10.5" fill="#475569">mtDNA 与核基因突变均致呼吸链缺陷。</text>
+  <text x="740" y="522" font-size="10" fill="#64748b">受累母亲可将突变传给所有子代、比例各异；父方完全不传递——严格的母系遗传。</text>
+  <rect x="30" y="566" width="1340" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、代表性线粒体病与诊断</text>
+  <rect x="60" y="620" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="155" y="647.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">疾病</text>
+  <rect x="250" y="620" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="365" y="647.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">主要突变</text>
+  <rect x="480" y="620" width="480" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="647.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">特征表型</text>
+  <rect x="60" y="664" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="155" y="695.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">LHON</text>
+  <rect x="250" y="664" width="230" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="365" y="695.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">复合体Ⅰ亚基（G11778A 等）</text>
+  <rect x="480" y="664" width="480" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="695.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">青年男性急性双侧中央视力丧失</text>
+  <rect x="60" y="716" width="900" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="716" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="155" y="747.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">MELAS</text>
+  <rect x="250" y="716" width="230" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="365" y="747.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">tRNA(Leu) A3243G</text>
+  <rect x="480" y="716" width="480" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="747.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">线粒体脑肌病、乳酸酸中毒、卒中样发作</text>
+  <rect x="60" y="768" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="155" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">MERRF</text>
+  <rect x="250" y="768" width="230" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="365" y="799.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">tRNA(Lys) A8344G</text>
+  <rect x="480" y="768" width="480" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="799.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">肌阵挛性癫痫、破碎红纤维</text>
+  <rect x="60" y="820" width="900" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="820" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="155" y="851.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">Kearns-Sayre</text>
+  <rect x="250" y="820" width="230" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="365" y="851.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">mtDNA 大片段缺失</text>
+  <rect x="480" y="820" width="480" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="851.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">进行性眼外肌麻痹、视网膜色素变性、心脏传导阻滞</text>
+  <circle cx="1170" cy="720" r="55" fill="#ffedd5" stroke="#475569" stroke-width="2"/>
+  <circle cx="1216" cy="720" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1212.0230910515597" cy="738.7098855814868" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1200.7800078925075" cy="754.1846619719602" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1184.2147817412476" cy="763.748599749577" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1165.191690689688" cy="765.7480071869405" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1147" cy="759.8371685740842" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1132.7852182587524" cy="747.0381216054537" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1125.005210366245" cy="729.563937777617" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1125.005210366245" cy="710.436062222383" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1132.7852182587524" cy="692.9618783945463" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1147" cy="680.1628314259158" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1165.191690689688" cy="674.2519928130595" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1184.2147817412476" cy="676.2514002504229" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1200.7800078925075" cy="685.8153380280398" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="1212.0230910515597" cy="701.2901144185132" r="4.5" fill="#dc2626" fill-opacity="0.7"/>
+  <text x="1170" y="720" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">肌纤维</text>
+  <text x="1170" y="800" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">破碎红纤维（Gomori 三色染色）</text>
+  <text x="1170" y="818" font-size="9" fill="#64748b" text-anchor="middle">肌膜下异常线粒体堆积</text>
+  <text x="60" y="905" font-size="11.5" fill="#475569" font-weight="700">诊断依据：</text>
+  <rect x="102.4" y="926.5" width="95.2" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="150" y="938.6" font-size="10" fill="#075985" text-anchor="middle">血乳酸/丙酮酸比值</text>
+  <rect x="242.4" y="926.5" width="105.2" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="295" y="938.6" font-size="10" fill="#dc2626" text-anchor="middle">肌肉活检·破碎红纤维</text>
+  <rect x="418.1" y="926.5" width="73.8" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="455" y="938.6" font-size="10" fill="#831843" text-anchor="middle">COX 缺失纤维</text>
+  <rect x="524" y="926.5" width="92" height="17" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="570" y="938.6" font-size="10" fill="#134e4a" text-anchor="middle">呼吸链酶活性测定</text>
+  <rect x="682.9" y="926.5" width="64.2" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="715" y="938.6" font-size="10" fill="#4c1d95" text-anchor="middle">mtDNA 测序</text>
+  <text x="60" y="972" font-size="10" fill="#64748b">线粒体功能下降还参与 2 型糖尿病、老化与神经退行性疾病（帕金森病：PINK1-Parkin 介导的线粒体自噬缺陷）。</text>
+</svg>

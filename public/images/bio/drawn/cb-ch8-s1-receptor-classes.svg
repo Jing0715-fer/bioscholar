@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞通讯与受体分类总论：五种方式、溶解性匹配与七类受体</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">内分泌/旁分泌/自分泌/突触/接触依赖五种通讯；亲水受体在膜、亲脂受体在胞内；七类受体总表；信号具特异性、级联放大、整合与可终止性（1971 诺奖）</text>
+  <rect x="30" y="132" width="660" height="470" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、细胞通讯的五种方式</text>
+  <text x="64" y="222" font-size="11.5" fill="#1e293b" font-weight="700">内分泌</text>
+  <text x="64" y="240" font-size="9" fill="#64748b">激素经血液远距离</text>
+  <ellipse cx="250" cy="218" rx="52" ry="24" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="250" y="260" font-size="9" fill="#64748b" text-anchor="middle">内分泌细胞</text>
+  <line x1="316" y1="218" x2="560" y2="218" stroke="#0369a1" stroke-width="2.6" marker-end="url(#arr-acc)"/>
+  <text x="438" y="204" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">血液（远距离）</text>
+  <ellipse cx="600" cy="218" rx="40" ry="22" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="600" y="260" font-size="9" fill="#64748b" text-anchor="middle">靶细胞</text>
+  <text x="438" y="236" font-size="9" fill="#64748b" text-anchor="middle">胰岛素 · 甲状腺素</text>
+  <text x="64" y="300" font-size="11.5" fill="#1e293b" font-weight="700">旁分泌</text>
+  <text x="64" y="318" font-size="9" fill="#64748b">组织液扩散至邻近</text>
+  <ellipse cx="260" cy="296" rx="44" ry="22" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <line x1="316" y1="296" x2="420" y2="296" stroke="#059669" stroke-width="2.4" marker-end="url(#arr-ok)"/>
+  <ellipse cx="464" cy="296" rx="44" ry="22" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="390" y="282" font-size="9" fill="#64748b" text-anchor="middle">邻近细胞</text>
+  <text x="390" y="316" font-size="9" fill="#64748b" text-anchor="middle">生长因子 · 神经递质（中枢）</text>
+  <text x="64" y="378" font-size="11.5" fill="#1e293b" font-weight="700">自分泌</text>
+  <text x="64" y="396" font-size="9" fill="#64748b">对自身分泌信号起反应</text>
+  <ellipse cx="300" cy="374" rx="46" ry="24" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <path d="M 342,360 C 400,330 460,380 366,392" fill="none" stroke="#d97706" stroke-width="2.4" marker-end="url(#arr-warn)"/>
+  <text x="428" y="352" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">自身受体</text>
+  <text x="428" y="396" font-size="9" fill="#64748b" text-anchor="middle">肿瘤生长因子自给回路</text>
+  <text x="64" y="456" font-size="11.5" fill="#1e293b" font-weight="700">突触信号</text>
+  <text x="64" y="474" font-size="9" fill="#64748b">定向、毫秒级传递</text>
+  <rect x="250" y="444" width="96" height="34" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="298" y="465" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">突触前末梢</text>
+  <line x1="356" y1="462" x2="420" y2="462" stroke="#b45309" stroke-width="2.4" marker-end="url(#arr-rna)"/>
+  <text x="388" y="448" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">神经递质</text>
+  <ellipse cx="470" cy="462" rx="44" ry="24" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="470" y="500" font-size="9" fill="#64748b" text-anchor="middle">突触间隙 20—40 nm</text>
+  <text x="64" y="534" font-size="11.5" fill="#1e293b" font-weight="700">接触依赖</text>
+  <text x="64" y="552" font-size="9" fill="#64748b">膜结合信号直接接触</text>
+  <ellipse cx="280" cy="538" rx="46" ry="26" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="392" cy="538" rx="46" ry="26" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <line x1="320" y1="532" x2="352" y2="532" stroke="#6d28d9" stroke-width="3"/>
+  <line x1="320" y1="544" x2="352" y2="544" stroke="#6d28d9" stroke-width="3"/>
+  <text x="336" y="516" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">膜结合配体×受体</text>
+  <text x="336" y="580" font-size="9" fill="#64748b" text-anchor="middle">Notch 途径：一个细胞的决定影响邻居</text>
+  <rect x="710" y="132" width="660" height="470" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、按溶解性匹配：亲水受体在膜上，亲脂受体在胞内</text>
+  <ellipse cx="1030" cy="376" rx="290" ry="210" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <circle cx="1060" cy="400" r="62" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="1081.7" cy="384.5" r="13.64" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 1024.18043431292,419.2543083427707 q 18.599999999999998,-15.5 37.199999999999996,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1094.769632914737,420.40790011394495 q 18.599999999999998,-15.5 37.199999999999996,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1073.3382465570635,367.55036928036753 q 18.599999999999998,-15.5 37.199999999999996,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1060" y="404" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">核</text>
+  <g><circle cx="752" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="752" y1="266" x2="752" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="752" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="776" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="776" y1="266" x2="776" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="776" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="800" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="800" y1="266" x2="800" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="800" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="824" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="824" y1="266" x2="824" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="824" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="848" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="848" y1="266" x2="848" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="848" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="872" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="872" y1="266" x2="872" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="872" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="896" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="896" y1="266" x2="896" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="896" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="920" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="920" y1="266" x2="920" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="920" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="944" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="944" y1="266" x2="944" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="944" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="968" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="968" y1="266" x2="968" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="968" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="992" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="992" y1="266" x2="992" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="992" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1016" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1016" y1="266" x2="1016" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1016" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1040" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1040" y1="266" x2="1040" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1040" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1064" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1064" y1="266" x2="1064" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1064" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1088" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1088" y1="266" x2="1088" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1088" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1112" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1112" y1="266" x2="1112" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1112" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1136" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1136" y1="266" x2="1136" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1136" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1160" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1160" y1="266" x2="1160" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1160" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1184" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1184" y1="266" x2="1184" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1184" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1208" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1208" y1="266" x2="1208" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1208" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1232" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1232" y1="266" x2="1232" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1232" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1256" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1256" y1="266" x2="1256" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1256" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1280" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1280" y1="266" x2="1280" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1280" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1304" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1304" y1="266" x2="1304" y2="271" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1304" cy="275" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="1030" y="244" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">质膜（磷脂双层）</text>
+  <circle cx="790" cy="216" r="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="790" y="219.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">亲水</text>
+  <line x1="790" y1="236" x2="790" y2="252" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="770" y="268" width="40" height="34" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="838" y1="300" x2="960" y2="330" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="742" y="352" font-size="9.5" fill="#475569">蛋白质 / 肽类激素、儿茶酚胺、生长因子：</text>
+  <text x="742" y="365.5" font-size="9.5" fill="#475569">不能穿膜，受体位于细胞表面</text>
+  <circle cx="1250" cy="216" r="17" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1250" y="219.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">亲脂</text>
+  <line x1="1250" y1="236" x2="1250" y2="252" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <path d="M1250,262 C1246.7,268.3 1246.7,287.0 1230,300 C1213.3,313.0 1172.3,328.0 1150,340 C1127.7,352.0 1105.0,366.7 1096,372" fill="none" stroke="#b45309" stroke-width="2.4" marker-end="url(#arr-rna)"/>
+  <text x="1150" y="320" font-size="9.5" fill="#475569">类固醇激素、甲状腺素、视黄酸：</text>
+  <text x="1150" y="333.5" font-size="9.5" fill="#475569">自由扩散穿膜，受体位于胞内（核受体）</text>
+  <rect x="997.25" y="477.925" width="133.5" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1064" y="489.42" font-size="9.5" fill="#4c1d95" text-anchor="middle">核受体＝配体依赖的转录因子</text>
+  <circle cx="890" cy="216" r="13" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="890" y="219.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">NO</text>
+  <circle cx="930" cy="216" r="13" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="930" y="219.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">CO</text>
+  <text x="910" y="244" font-size="9" fill="#059669" text-anchor="middle">气体信使：高速扩散、作用范围极短</text>
+  <text x="742" y="548" font-size="10" fill="#64748b">匹配原则：信号分子按溶解性与受体位置匹配——水溶性走膜受体级联，脂溶性直接进核调控转录。</text>
+  <rect x="30" y="628" width="1340" height="352" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="650.84" font-size="19" fill="#475569" font-weight="700">三、受体分类总表（七类）与信号转导的基本特征</text>
+  <rect x="60" y="682" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="709.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">受体类别</text>
+  <rect x="320" y="682" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="709.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">结构特征</text>
+  <rect x="620" y="682" width="420" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="709.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">代表与配体</text>
+  <rect x="1040" y="682" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="709.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">主要通路</text>
+  <rect x="60" y="726" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="746" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">离子通道偶联受体</text>
+  <rect x="320" y="726" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="746" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">配体门控离子通道</text>
+  <rect x="620" y="726" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="746" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">nAChR（乙酰胆碱）、GABA_A</text>
+  <rect x="1040" y="726" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="746" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">膜电位改变</text>
+  <rect x="60" y="755" width="1280" height="29" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="755" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="775" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">G 蛋白偶联受体（GPCR）</text>
+  <rect x="320" y="755" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="775" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">七次跨膜 α 螺旋</text>
+  <rect x="620" y="755" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="775" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">肾上腺素、胰高血糖素、光（视紫红质）</text>
+  <rect x="1040" y="755" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="775" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">cAMP、IP₃/DAG</text>
+  <rect x="60" y="784" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="804" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">受体酪氨酸激酶（RTK）</text>
+  <rect x="320" y="784" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="804" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">单次跨膜＋胞内 Tyr 激酶域</text>
+  <rect x="620" y="784" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="804" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">胰岛素、EGF、PDGF</text>
+  <rect x="1040" y="784" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="804" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Ras-MAPK、PI3K-AKT</text>
+  <rect x="60" y="813" width="1280" height="29" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="813" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="833" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">酪氨酸激酶相关受体</text>
+  <rect x="320" y="813" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="833" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">自身无激酶、募集 JAK</text>
+  <rect x="620" y="813" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="833" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">细胞因子、生长激素、瘦素</text>
+  <rect x="1040" y="813" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="833" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">JAK-STAT</text>
+  <rect x="60" y="842" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">受体丝/苏氨酸激酶</text>
+  <rect x="320" y="842" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="862" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">胞内 Ser/Thr 激酶域</text>
+  <rect x="620" y="842" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="862" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">TGF-β 超家族</text>
+  <rect x="1040" y="842" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="862" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Smad</text>
+  <rect x="60" y="871" width="1280" height="29" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="871" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="891" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">受体鸟苷酸环化酶</text>
+  <rect x="320" y="871" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="891" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">胞内 GC 域</text>
+  <rect x="620" y="871" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="891" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">心钠肽（ANP）</text>
+  <rect x="1040" y="871" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="891" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">cGMP</text>
+  <rect x="60" y="900" width="260" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="190" y="920" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">核受体</text>
+  <rect x="320" y="900" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="470" y="920" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">配体依赖的转录因子</text>
+  <rect x="620" y="900" width="420" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="920" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">糖皮质激素、雌激素、甲状腺素</text>
+  <rect x="1040" y="900" width="300" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="920" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">直接调控转录</text>
+  <text x="60" y="920" font-size="10.5" fill="#475569" font-weight="700">基本特征：</text>
+  <rect x="120.75" y="931.925" width="38.5" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="140" y="943.42" font-size="9.5" fill="#134e4a" text-anchor="middle">特异性</text>
+  <rect x="216" y="931.925" width="48" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="240" y="943.42" font-size="9.5" fill="#78350f" text-anchor="middle">级联放大</text>
+  <rect x="326" y="931.925" width="48" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="350" y="943.42" font-size="9.5" fill="#4c1d95" text-anchor="middle">网络整合</text>
+  <rect x="436" y="931.925" width="48" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="460" y="943.42" font-size="9.5" fill="#831843" text-anchor="middle">可终止性</text>
+  <rect x="518.45" y="931.925" width="103.10000000000001" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="570" y="943.42" font-size="9.5" fill="#075985" text-anchor="middle">时空性（AKAP 锚定）</text>
+  <text x="740" y="950" font-size="10" fill="#64748b">E. Sutherland 发现 cAMP（1971 年诺贝尔奖）开创第二信使研究；</text>
+  <text x="740" y="964" font-size="10" fill="#64748b">Gilman 与 Rodbell 因 G 蛋白获 1994 年诺贝尔奖——信号转导是细胞生物学的核心领域。</text>
+</svg>

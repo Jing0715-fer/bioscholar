@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">被动运输：简单扩散与协助扩散</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">简单扩散不需蛋白、不耗能、无饱和性；载体经构象变化转运（GLUT4 受胰岛素调控）；通道以门控控制离子每秒 10⁶–10⁸ 个高速流过——K⁺ 滤器与 AQP 拒 H₃O⁺ 均获 2003 年诺贝尔化学奖</text>
+  <rect x="30" y="132" width="1340" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、通透性规律：谁能自发穿过脂双层？</text>
+  <rect x="56" y="168" width="610" height="132" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.6"/>
+  <text x="76" y="198" font-size="13" fill="#059669" font-weight="700">易通过（可自发穿膜）</text>
+  <text x="76" y="226" font-size="11.5" fill="#475569">脂溶性小分子：O₂、CO₂、N₂、类固醇激素；小而不带电的极性分子（较慢）：水、尿素、甘油。</text>
+  <rect x="700" y="168" width="644" height="132" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="720" y="198" font-size="13" fill="#dc2626" font-weight="700">不能自发穿膜（离子水化层使跨膜自由能极高）</text>
+  <text x="720" y="226" font-size="11.5" fill="#475569">大的极性分子：葡萄糖、蔗糖；一切离子：Na⁺、K⁺、Ca²⁺、Cl⁻——必须依赖通道或载体蛋白协助。</text>
+  <rect x="30" y="338" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="360.84" font-size="19" fill="#475569" font-weight="700">二、简单扩散与载体介导的协助扩散</text>
+  <text x="56" y="372" font-size="12.5" fill="#1e293b" font-weight="700">① 简单扩散（直接穿脂双层）</text>
+  <text x="56" y="396" font-size="10.5" fill="#64748b">胞外（高）</text>
+  <g><circle cx="80" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="80" y1="434" x2="80" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="80" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="104" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="104" y1="434" x2="104" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="104" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="128" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="128" y1="434" x2="128" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="128" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="152" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="152" y1="434" x2="152" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="152" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="176" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="176" y1="434" x2="176" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="176" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="200" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="200" y1="434" x2="200" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="200" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="224" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="224" y1="434" x2="224" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="224" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="248" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="248" y1="434" x2="248" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="248" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="272" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="272" y1="434" x2="272" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="272" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="296" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="296" y1="434" x2="296" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="296" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <circle cx="150" cy="398" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="210" cy="392" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="270" cy="402" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="210" y="384" font-size="10" fill="#075985" text-anchor="middle">O₂ / CO₂</text>
+  <line x1="160" y1="412" x2="160" y2="468" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="220" y1="412" x2="220" y2="468" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="56" y="478" font-size="10.5" fill="#64748b">胞质（低）</text>
+  <text x="350" y="382" font-size="11" fill="#475569">顺浓度梯度直接穿过脂双层：不需膜蛋白、不消耗代谢能、</text>
+  <text x="350" y="398" font-size="11" fill="#475569">无饱和性；净流量与浓度梯度成正比（O₂、CO₂、乙醇、尿素）</text>
+  <text x="350" y="414" font-size="11" fill="#475569">。</text>
+  <text x="56" y="508" font-size="12.5" fill="#1e293b" font-weight="700">② 载体蛋白（GLUT 家族）：构象变化转运</text>
+  <g><circle cx="80" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="80" y1="589" x2="80" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="80" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="104" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="104" y1="589" x2="104" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="104" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="128" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="128" y1="589" x2="128" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="128" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="152" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="152" y1="589" x2="152" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="152" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="176" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="176" y1="589" x2="176" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="176" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="200" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="200" y1="589" x2="200" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="200" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="224" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="224" y1="589" x2="224" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="224" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="248" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="248" y1="589" x2="248" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="248" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <path d="M 115,598 L 115,570 Q 150,552 185,570 L 185,598" fill="none" stroke="#6d28d9" stroke-width="5"/>
+  <polygon points="150,532 159,537 159,548 150,553 141,548 141,537" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="150" y="524" font-size="10.5" fill="#831843" text-anchor="middle">葡萄糖</text>
+  <text x="165" y="632" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">A 向外开口（结合）</text>
+  <line x1="270" y1="585" x2="340" y2="585" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="305" y="570" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">构象变化</text>
+  <g><circle cx="360" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="360" y1="589" x2="360" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="360" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="384" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="384" y1="589" x2="384" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="384" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="408" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="408" y1="589" x2="408" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="408" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="432" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="432" y1="589" x2="432" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="432" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="456" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="456" y1="589" x2="456" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="456" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="480" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="480" y1="589" x2="480" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="480" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="504" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="504" y1="589" x2="504" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="504" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="528" cy="585" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="528" y1="589" x2="528" y2="594" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="528" cy="598" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <path d="M 395,572 L 395,598 Q 430,615 465,598 L 465,572" fill="none" stroke="#6d28d9" stroke-width="5"/>
+  <polygon points="430,630 439,635 439,646 430,651 421,646 421,635" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="430" y1="612" x2="430" y2="624" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="445" y="560" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">B 向内开口（释放）</text>
+  <text x="56" y="690" font-size="11" fill="#475569">GLUT1 泛在表达、执行基础摄取；GLUT4 储存于胞内囊泡，</text>
+  <text x="56" y="705.5" font-size="11" fill="#475569">受胰岛素信号转位至质膜——实现餐后骨骼肌与脂肪组织的快速摄取。</text>
+  <rect x="710" y="338" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="360.84" font-size="19" fill="#475569" font-weight="700">三、通道蛋白：离子通道与水通道</text>
+  <text x="736" y="372" font-size="12.5" fill="#1e293b" font-weight="700">① 离子通道：门控高速（10⁶–10⁸ 个/秒）</text>
+  <g><circle cx="740" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="474" x2="740" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="474" x2="764" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="474" x2="788" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="474" x2="812" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="474" x2="836" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="474" x2="860" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="474" x2="884" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="474" x2="908" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="474" x2="932" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="474" x2="956" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="474" x2="980" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1004" cy="470" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1004" y1="474" x2="1004" y2="479" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1004" cy="483" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="830" y="438" width="18" height="66" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="900" y="438" width="18" height="66" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="848" y="438" width="52" height="14" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="822" y="448" font-size="10.5" fill="#78350f" text-anchor="end" font-weight="600">选择性滤器（TVGYG）</text>
+  <circle cx="874" cy="398" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="874" y="401.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="874" cy="460" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="874" cy="478" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="874" cy="496" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <line x1="848" y1="512" x2="900" y2="512" stroke="#6d28d9" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <text x="824" y="516" font-size="10.5" fill="#4c1d95" text-anchor="end">门控</text>
+  <line x1="874" y1="525" x2="874" y2="558" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="736" y="585" font-size="10.5" fill="#475569">选择性滤器：</text>
+  <text x="736" y="600" font-size="10.5" fill="#475569">保守 TVGYG 基序的主链羰基氧排布成 4 个 K⁺ 结合位点，</text>
+  <text x="736" y="615" font-size="10.5" fill="#475569">以「尺寸匹配」区分 K⁺ 与 Na⁺（MacKinnon，</text>
+  <text x="736" y="630" font-size="10.5" fill="#475569">2003 年诺贝尔化学奖）。</text>
+  <rect x="765" y="646.65" width="60" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="795" y="659.96" font-size="11" fill="#1e293b" text-anchor="middle">电压门控</text>
+  <rect x="875" y="646.65" width="60" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="905" y="659.96" font-size="11" fill="#1e293b" text-anchor="middle">配体门控</text>
+  <rect x="985" y="646.65" width="60" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1015" y="659.96" font-size="11" fill="#1e293b" text-anchor="middle">机械门控</text>
+  <text x="1070" y="372" font-size="12.5" fill="#1e293b" font-weight="700">② 水通道蛋白（AQP）</text>
+  <g><circle cx="1052" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1052" y1="470" x2="1052" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1052" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1076" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1076" y1="470" x2="1076" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1076" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1100" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1100" y1="470" x2="1100" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1100" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1124" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1124" y1="470" x2="1124" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1124" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1148" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1148" y1="470" x2="1148" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1148" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1172" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1172" y1="470" x2="1172" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1172" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1196" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1196" y1="470" x2="1196" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1196" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1220" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1220" y1="470" x2="1220" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1220" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1244" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1244" y1="470" x2="1244" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1244" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1268" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1268" y1="470" x2="1268" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1268" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1292" cy="466" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1292" y1="470" x2="1292" y2="475" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1292" cy="479" r="5.5" fill="#0f766e" fill-opacity="0.4"/></g>
+  <g><circle cx="1052" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1052" y1="498" x2="1052" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1052" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1076" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1076" y1="498" x2="1076" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1076" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1100" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1100" y1="498" x2="1100" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1100" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1124" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1124" y1="498" x2="1124" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1124" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1148" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1148" y1="498" x2="1148" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1148" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1172" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1172" y1="498" x2="1172" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1172" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1196" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1196" y1="498" x2="1196" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1196" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1220" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1220" y1="498" x2="1220" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1220" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1244" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1244" y1="498" x2="1244" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1244" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1268" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1268" y1="498" x2="1268" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1268" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/><circle cx="1292" cy="494" r="5.5" fill="#0f766e" fill-opacity="0.4"/><line x1="1292" y1="498" x2="1292" y2="503" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1292" cy="507" r="5.5" fill="#0f766e" fill-opacity="0.4"/></g>
+  <rect x="1078" y="415" width="60" height="60" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="1146" y="415" width="60" height="60" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="1078" y="483" width="60" height="60" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="1146" y="483" width="60" height="60" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <circle cx="1142" cy="479" r="8" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="1142" cy="430" r="4.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1142" cy="455" r="4.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1142" cy="479" r="4.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1142" cy="503" r="4.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1142" cy="528" r="4.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="1142" y1="408" x2="1142" y2="388" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <text x="1168" y="396" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="600">H₂O 单列通过</text>
+  <text x="1142" y="565" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">每亚基 6 个跨膜 α 螺旋</text>
+  <text x="1060" y="612" font-size="10.5" fill="#475569">孔道中央带正电的精氨酸与组氨酸排斥 H₃O⁺，</text>
+  <text x="1060" y="627" font-size="10.5" fill="#475569">只允许水分子单列、快速、选择性通过。</text>
+  <text x="1060" y="676" font-size="10.5" fill="#475569">AQP1 由 Agre 从红细胞膜纯化鉴定（2003 年诺贝尔化学奖）；</text>
+  <text x="1060" y="691" font-size="10.5" fill="#475569">AQP2 受 ADH 调控插入肾集合管顶膜——突变致肾性尿崩症；</text>
+  <text x="1060" y="706" font-size="10.5" fill="#475569">AQP0 突变致先天性白内障。</text>
+  <rect x="30" y="774" width="1340" height="206" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="796.84" font-size="19" fill="#475569" font-weight="700">四、被动运输三种方式比较</text>
+  <rect x="56" y="812" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="161" y="839.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">方式</text>
+  <rect x="266" y="812" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="361" y="839.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">驱动力</text>
+  <rect x="456" y="812" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="556" y="839.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">膜蛋白</text>
+  <rect x="656" y="812" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="741" y="839.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">饱和性</text>
+  <rect x="826" y="812" width="518" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="839.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型例子</text>
+  <rect x="56" y="856" width="210" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="161" y="881.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">简单扩散</text>
+  <rect x="266" y="856" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="361" y="881.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">浓度梯度</text>
+  <rect x="456" y="856" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="556" y="881.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="656" y="856" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="741" y="881.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="826" y="856" width="518" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="881.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">O₂、CO₂、尿素</text>
+  <rect x="56" y="896" width="1288" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="896" width="210" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="161" y="921.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">载体介导协助扩散</text>
+  <rect x="266" y="896" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="361" y="921.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">电化学梯度</text>
+  <rect x="456" y="896" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="556" y="921.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">载体蛋白</text>
+  <rect x="656" y="896" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="741" y="921.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">有</text>
+  <rect x="826" y="896" width="518" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="921.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖（GLUT1 / GLUT4）</text>
+  <rect x="56" y="936" width="210" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="161" y="961.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">通道介导协助扩散</text>
+  <rect x="266" y="936" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="361" y="961.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">电化学梯度</text>
+  <rect x="456" y="936" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="556" y="961.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">通道蛋白</text>
+  <rect x="656" y="936" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="741" y="961.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">受门控控制</text>
+  <rect x="826" y="936" width="518" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="961.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">K⁺ 通道、水通道（AQP）</text>
+</svg>

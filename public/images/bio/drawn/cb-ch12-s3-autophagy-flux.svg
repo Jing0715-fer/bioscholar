@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞自噬：溶酶体介导的自我降解与回收</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">巨自噬/微自噬/CMA 三类型；mTORC1 抑制 ULK1、饥饿/AMPK 启动；LC3-Ⅱ 定位自噬体膜为标志，p62 介导线粒体自噬与异体自噬，自噬溶酶体降解回收</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、自噬的三种类型（溶酶体介导的自我降解）</text>
+  <rect x="60" y="186" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="213.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">类型</text>
+  <rect x="230" y="186" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="213.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
+  <rect x="490" y="186" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="213.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="60" y="230" width="170" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="263.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">巨自噬</text>
+  <rect x="230" y="230" width="260" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="263.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">双层膜自噬体包裹底物 → 与溶酶体融合</text>
+  <rect x="490" y="230" width="170" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="263.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">通常说的&quot;自噬&quot;；本节主题</text>
+  <rect x="60" y="286" width="600" height="56" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="286" width="170" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="319.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">微自噬</text>
+  <rect x="230" y="286" width="260" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="319.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">溶酶体膜直接内陷包裹底物</text>
+  <rect x="490" y="286" width="170" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="319.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">直接吞入</text>
+  <rect x="60" y="342" width="170" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="375.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">分子伴侣介导（CMA）</text>
+  <rect x="230" y="342" width="260" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="375.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">Hsc70 识别 KFERQ 基序 → LAMP-2A 转运</text>
+  <rect x="490" y="342" width="170" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="375.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">选择性、不形成自噬体</text>
+  <text x="60" y="408" font-size="10" fill="#64748b">功能：营养匮乏时应急供能（饥饿时肝脏自噬流上调提供游离氨基酸）＋长寿蛋白与受损细胞器的质量控制（recycling）。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、诱导开关：mTORC1 抑制 ULK1（营养感受）</text>
+  <rect x="802.37" y="187.075" width="55.26" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="830" y="199.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">营养充足</text>
+  <rect x="770" y="226" width="120" height="40" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="830" y="250" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">mTORC1</text>
+  <line x1="830" y1="268" x2="830" y2="292" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="830" y="312" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">磷酸化抑制</text>
+  <rect x="770" y="326" width="120" height="40" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="830" y="344" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">ULK1 复合体</text>
+  <text x="830" y="360" font-size="8.5" fill="#64748b" text-anchor="middle">（静息）</text>
+  <rect x="1092.0378" y="187.075" width="95.92439999999999" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1140" y="199.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">饥饿 / AMPK 激活</text>
+  <rect x="1080" y="226" width="120" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="1140" y="250" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">AMPK</text>
+  <line x1="1140" y1="268" x2="1140" y2="292" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <text x="1140" y="312" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">活化</text>
+  <rect x="1080" y="326" width="120" height="40" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="1140" y="344" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">ULK1 复合体</text>
+  <text x="1140" y="360" font-size="8.5" fill="#059669" text-anchor="middle">（启动自噬）</text>
+  <text x="740" y="400" font-size="10" fill="#64748b">ULK1 复合体＝ULK1＋ATG13＋FIP200＋ATG101；mTORC1 是自噬的主闸门（亦见第 8、11 章）。</text>
+  <rect x="30" y="452" width="1340" height="528" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、巨自噬流程：吞噬泡 → 自噬体 → 自噬溶酶体（LC3 脂化标记）</text>
+  <rect x="66" y="512" width="230" height="120" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="181" y="536" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">① 成核</text>
+  <text x="78" y="556" font-size="8.5" fill="#475569">ULK1 激活 Beclin-1–VPS34（class Ⅲ PI3K）</text>
+  <text x="78" y="596" font-size="8.5" fill="#64748b">产生 PI3P 募集效应蛋白</text>
+  <line x1="300" y1="572" x2="320" y2="572" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="324" y="512" width="230" height="120" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="439" y="536" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">② 延伸·脂化</text>
+  <text x="336" y="556" font-size="8.5" fill="#475569">LC3-I 经 ATG7（E1 样）/ATG3（E2 样）连接 PE</text>
+  <text x="336" y="596" font-size="8.5" fill="#64748b">LC3-Ⅱ 定位自噬体膜（经典标志物）</text>
+  <line x1="558" y1="572" x2="578" y2="572" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="582" y="512" width="230" height="120" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="697" y="536" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">③ 选择识别</text>
+  <text x="594" y="556" font-size="8.5" fill="#475569">p62/SQSTM1 结合泛素化底物×LC3</text>
+  <text x="594" y="596" font-size="8.5" fill="#64748b">打包受损线粒体／入侵细菌</text>
+  <line x1="816" y1="572" x2="836" y2="572" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="840" y="512" width="230" height="120" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="955" y="536" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">④ 融合</text>
+  <text x="852" y="556" font-size="8.5" fill="#475569">自噬体与溶酶体融合为自噬溶酶体</text>
+  <text x="852" y="596" font-size="8.5" fill="#64748b">内容物被酸性水解酶降解</text>
+  <line x1="1074" y1="572" x2="1094" y2="572" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="1098" y="512" width="230" height="120" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1213" y="536" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">⑤ 回收</text>
+  <text x="1110" y="556" font-size="8.5" fill="#475569">氨基酸等被回收利用</text>
+  <text x="1110" y="596" font-size="8.5" fill="#64748b">应急供能与质量控制</text>
+  <text x="80" y="676" font-size="10.5" fill="#475569" font-weight="700">形态演变：</text>
+  <ellipse cx="200" cy="740" rx="46" ry="40" fill="#ffffff" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="200" y="736" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">吞噬泡</text>
+  <text x="200" y="752" font-size="8" fill="#64748b" text-anchor="middle">（双层膜）</text>
+  <ellipse cx="200" cy="740" rx="15" ry="11" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 192,733.95 L 199,740 L 206,733.95 M 193,733.95 L 200,740 L 207,733.95 M 194,733.95 L 201,740 L 208,733.95 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="258" y1="740" x2="320" y2="740" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <circle cx="370" cy="740" r="46" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.4"/>
+  <ellipse cx="370" cy="740" rx="15" ry="11" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 362,733.95 L 369,740 L 376,733.95 M 363,733.95 L 370,740 L 377,733.95 M 364,733.95 L 371,740 L 378,733.95 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <text x="370" y="796" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">自噬体</text>
+  <line x1="428" y1="740" x2="490" y2="740" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <circle cx="545" cy="740" r="42" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="568.1" cy="740" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="559.4026144229367" cy="758.0603072450115" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="539.8597664256091" cy="762.5208347714001" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="524.1876191514541" cy="750.0227143736156" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="524.1876191514541" cy="729.9772856263844" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="539.8597664256091" cy="717.4791652285999" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <circle cx="559.4026144229367" cy="721.9396927549885" r="3.3" fill="#dc2626" fill-opacity="0.7"/>
+  <ellipse cx="545" cy="740" rx="13" ry="9" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 539,735.05 L 546,740 L 553,735.05 M 538,735.05 L 545,740 L 552,735.05 M 537,735.05 L 544,740 L 551,735.05 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <text x="545" y="796" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">自噬溶酶体</text>
+  <line x1="598" y1="740" x2="660" y2="740" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <circle cx="690" cy="740" r="11" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="690" y="742.88" font-size="8" fill="#059669" text-anchor="middle" font-weight="700">aa</text>
+  <circle cx="724" cy="740" r="11" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="724" y="742.88" font-size="8" fill="#059669" text-anchor="middle" font-weight="700">aa</text>
+  <circle cx="758" cy="740" r="11" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="758" y="742.88" font-size="8" fill="#059669" text-anchor="middle" font-weight="700">aa</text>
+  <circle cx="792" cy="740" r="11" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="792" y="742.88" font-size="8" fill="#059669" text-anchor="middle" font-weight="700">aa</text>
+  <text x="745" y="784" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">氨基酸回收</text>
+  <text x="840" y="676" font-size="10.5" fill="#475569" font-weight="700">两条泛素样系统：</text>
+  <text x="840" y="696" font-size="9" fill="#475569">· LC3 脂化系统：前体被 ATG4 切割暴露甘氨酸 → LC3-I → 连接 PE → LC3-Ⅱ（LC3-Ⅱ/LC3-I 比值反映自噬流）；</text>
+  <text x="840" y="724" font-size="9" fill="#475569">· ATG12 结合系统：ATG12 与 ATG5、ATG16L1 结合，促进 LC3 脂化。</text>
+  <text x="840" y="752" font-size="9" fill="#64748b">选择性自噬：线粒体自噬（mitophagy，受体 PINK1-Parkin 途径，帕金森相关基因）；异体自噬（xenophagy）</text>
+  <text x="840" y="764.5" font-size="9" fill="#64748b">清除入侵细菌。</text>
+  <text x="80" y="846" font-size="10.5" fill="#475569" font-weight="700">与疾病：</text>
+  <rect x="49.18000000000001" y="864.35" width="261.64" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="180" y="875.24" font-size="9" fill="#dc2626" text-anchor="middle">神经退行（帕金森 / 阿尔茨海默）：自噬流受阻或清除能力下降</text>
+  <rect x="532.6899999999999" y="864.35" width="254.62000000000003" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="660" y="875.24" font-size="9" fill="#78350f" text-anchor="middle">肿瘤双重：早期抑癌（清除受损线粒体降 ROS）／晚期助存活</text>
+  <rect x="1023" y="864.35" width="154" height="15.299999999999999" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1100" y="875.24" font-size="9" fill="#075985" text-anchor="middle">感染免疫：异体自噬＋抗原交叉呈递</text>
+  <text x="80" y="916" font-size="10" fill="#64748b">抗衰老：自噬活性随年龄下降，热量限制延寿部分依赖自噬（mTOR 抑制剂雷帕霉素延长小鼠寿命）。</text>
+  <text x="840" y="846" font-size="9" fill="#64748b">LC3-Ⅱ 是自噬体的经典标志物；GFP-LC3 点状聚集为常用实验读数。</text>
+</svg>

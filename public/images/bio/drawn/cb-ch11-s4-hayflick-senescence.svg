@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞衰老：Hayflick 界限、端粒学说与 SASP</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Hayflick 界限：约 50 次传代停滞（1961）；端粒每代缩 50—200 bp 触发 DDR；hTERT 越过界限（1998）；ROS 与 SIPS/OIS 促早衰；SASP 重塑微环境</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Hayflick 界限（1961）：约 50 次群体倍增后的停滞</text>
+  <text x="64" y="186" font-size="10" fill="#475569">L. Hayflick 与 P. Moorhead 证明人胚肺成纤维细胞体外培养只能传代约 50 次（40—60 群体倍增）</text>
+  <text x="64" y="200" font-size="10" fill="#475569">后进入增殖停滞——推翻 Carrel&quot;细胞永生&quot;旧教条；停滞细胞仍存活数月至数年（复制性衰老）。</text>
+  <rect x="80" y="260" width="560" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="410" x2="640" y2="410" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="220" y1="460" x2="220" y2="260" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="360" x2="640" y2="360" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="360" y1="460" x2="360" y2="260" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="310" x2="640" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="460" x2="500" y2="260" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="108" y1="460" x2="108" y2="466" stroke="#475569" stroke-width="1.8"/>
+  <text x="108" y="482" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="360" y1="460" x2="360" y2="466" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="482" font-size="13" fill="#64748b" text-anchor="middle">25</text>
+  <line x1="612" y1="460" x2="612" y2="466" stroke="#475569" stroke-width="1.8"/>
+  <text x="612" y="482" font-size="13" fill="#64748b" text-anchor="middle">50（界限）</text>
+  <line x1="74" y1="450" x2="80" y2="450" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="454" font-size="13" fill="#64748b" text-anchor="end">临界</text>
+  <line x1="74" y1="280" x2="80" y2="280" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="284" font-size="13" fill="#64748b" text-anchor="end">初始</text>
+  <text x="360" y="504" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">群体倍增数</text>
+  <text x="34" y="360" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">端粒长度</text>
+  <text x="360" y="248" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">端粒进行性缩短（Olovnikov 端粒学说）</text>
+  <path d="M80,276 C103.3,282.7 173.3,302.7 220,316 C266.7,329.3 313.3,342.0 360,356 C406.7,370.0 464.5,388.0 500,400 C535.5,412.0 554.1,421.3 572.8,428 C591.5,434.7 600.8,437.7 612,440 C623.2,442.3 635.3,441.7 640,442" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <text x="424" y="310" font-size="14" fill="#dc2626" font-weight="700">体细胞（端粒酶抑制）</text>
+  <path d="M80,276 C108.0,278.3 192.0,286.7 248,290 C304.0,293.3 355.3,294.3 416,296 C476.7,297.7 574.7,299.3 612,300 C649.3,300.7 635.3,300.0 640,300" fill="none" stroke="#059669" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="396" y="350" font-size="14" fill="#059669" font-weight="700">导入 hTERT（Bodnar，1998）</text>
+  <text x="660" y="270" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">越过界限持续分裂</text>
+  <text x="452" y="428" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">每次复制丢失 50—200 bp</text>
+  <text x="64" y="526" font-size="9.5" fill="#64748b">转入端粒酶的成纤维细胞可越过 Hayflick 界限持续分裂——端粒学说的直接证明；端粒缩短同样见于体内实际测量（造血干细胞、血管内皮）。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、衰老的诱因与分子机制：DDR、ROS 与应激</text>
+  <text x="740" y="186" font-size="11" fill="#1e293b" font-weight="700">端粒临界缩短触发的损伤应答（DDR）</text>
+  <rect x="763.62875" y="207.925" width="112.7425" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="820" y="219.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">端粒被识别为 DNA 损伤</text>
+  <line x1="920" y1="234" x2="920" y2="258" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="863.43305" y="273.925" width="113.1339" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="920" y="285.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">ATM/ATR → p53 → p21</text>
+  <text x="1140" y="282" font-size="9" fill="#64748b" text-anchor="middle">（同时 p16^INK4a-Rb 通路独立参与）</text>
+  <line x1="920" y1="300" x2="920" y2="322" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="857.35" y="337.5" width="125.3" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="920" y="349.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">持久的增殖阻滞（衰老）</text>
+  <text x="740" y="396" font-size="11" fill="#1e293b" font-weight="700">其他诱因</text>
+  <rect x="792.5005" y="414.35" width="134.99900000000002" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="860" y="425.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">自由基学说（Harman，1956）</text>
+  <rect x="815.212" y="454.35" width="89.57600000000001" height="15.299999999999999" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="860" y="465.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">SIPS 应激诱导早衰</text>
+  <rect x="813.4507" y="494.35" width="93.0986" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="860" y="505.24" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">OIS 癌基因诱导衰老</text>
+  <text x="740" y="546" font-size="9.5" fill="#64748b">化疗损伤亦可快速诱导 SIPS。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、SASP 衰老相关分泌表型与干预前沿</text>
+  <circle cx="180" cy="680" r="40" fill="#fef3c7" stroke="#d97706" stroke-width="2.4"/>
+  <text x="180" y="676" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">衰老细胞</text>
+  <text x="180" y="692" font-size="8" fill="#64748b" text-anchor="middle">（p16⁺/p21⁺）</text>
+  <text x="100" y="744" font-size="9.5" fill="#475569">经 NF-κB 与 C/EBPβ 上调分泌</text>
+  <rect x="357.0149" y="641.925" width="65.9702" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="390" y="653.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">IL-6 / IL-8</text>
+  <text x="500" y="654" font-size="9" fill="#64748b" text-anchor="middle">促炎因子</text>
+  <rect x="375.89995" y="685.925" width="28.2001" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="390" y="697.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">MMP</text>
+  <text x="500" y="698" font-size="9" fill="#64748b" text-anchor="middle">基质重塑</text>
+  <rect x="365.43" y="729.925" width="49.14" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="390" y="741.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">生长因子</text>
+  <text x="500" y="742" font-size="9" fill="#64748b" text-anchor="middle">促增殖</text>
+  <line x1="232" y1="680" x2="330" y2="680" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <rect x="506.075" y="631.925" width="107.85000000000001" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="560" y="643.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">旁分泌促邻近肿瘤发生</text>
+  <rect x="519" y="763.925" width="162" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="600" y="775.42" font-size="9.5" fill="#059669" text-anchor="middle">也参与伤口修复与纤维化（两面性）</text>
+  <text x="560" y="730" font-size="9.5" fill="#475569">SASP 重塑微环境：既推动衰老蔓延与肿瘤促进，</text>
+  <text x="560" y="743.5" font-size="9.5" fill="#475569">又在损伤修复中招募免疫与基质细胞。</text>
+  <text x="950" y="626" font-size="11" fill="#1e293b" font-weight="700">衰老标志（López-Otín 等，2013/2023）</text>
+  <rect x="1010.5" y="648.775" width="59" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1040" y="659.06" font-size="8.5" fill="#475569" text-anchor="middle">基因组不稳定</text>
+  <rect x="1179" y="648.775" width="42" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1200" y="659.06" font-size="8.5" fill="#475569" text-anchor="middle">端粒损耗</text>
+  <rect x="1010.5" y="684.775" width="59" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1040" y="695.06" font-size="8.5" fill="#475569" text-anchor="middle">表观遗传改变</text>
+  <rect x="1166.25" y="684.775" width="67.5" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1200" y="695.06" font-size="8.5" fill="#475569" text-anchor="middle">蛋白质稳态丧失</text>
+  <rect x="1006.25" y="720.775" width="67.5" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1040" y="731.06" font-size="8.5" fill="#475569" text-anchor="middle">线粒体功能障碍</text>
+  <rect x="1179" y="720.775" width="42" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1200" y="731.06" font-size="8.5" fill="#475569" text-anchor="middle">细胞衰老</text>
+  <rect x="1014.75" y="756.775" width="50.5" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1040" y="767.06" font-size="8.5" fill="#475569" text-anchor="middle">干细胞耗竭</text>
+  <rect x="1166.25" y="756.775" width="67.5" height="14.45" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1200" y="767.06" font-size="8.5" fill="#475569" text-anchor="middle">细胞间通讯改变</text>
+  <text x="100" y="800" font-size="11" fill="#1e293b" font-weight="700">干预前沿：</text>
+  <rect x="-7.494999999999948" y="817.925" width="414.9899999999999" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="200" y="829.42" font-size="9.5" fill="#059669" text-anchor="middle">senolytics：达沙替尼＋槲皮素清除 p16⁺/p21⁺ 衰老细胞——改善小鼠健康寿命，已进入人体试验</text>
+  <rect x="726.175" y="817.925" width="227.65" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="840" y="829.42" font-size="9.5" fill="#075985" text-anchor="middle">mTOR 抑制（雷帕霉素）与热量限制＝经典延寿通路</text>
+  <text x="100" y="878" font-size="10" fill="#64748b">清除衰老细胞与抑制 mTOR 分别从&quot;去存量&quot;与&quot;降速率&quot;两端延缓衰老。</text>
+  <text x="950" y="780" font-size="9.5" fill="#64748b">自噬活性随年龄下降；热量限制延寿部分依赖自噬（详见第 12 章）。</text>
+</svg>

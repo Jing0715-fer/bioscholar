@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞外基质与基膜：胶原层级、弹性网络与三分子基膜</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">胶原占人体蛋白约 30%，Gly-X-Y 三股螺旋经维生素 C 羟化与 LO 交联逐级组装；纤连蛋白 RGD 被整联蛋白识别；基膜 40—120 nm 三分子网，MMP/TIMP 调控</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、胶原（占人体蛋白约 30%，已知 28 型）：层级组装</text>
+  <rect x="64" y="176" width="140" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="134" y="201" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">α 链</text>
+  <text x="220" y="184" font-size="9.5" fill="#475569">重复 Gly-X-Y 三肽（X 常 Pro、Y 常羟脯氨酸 / 羟赖氨酸）</text>
+  <line x1="134" y1="218" x2="134" y2="238" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="64" y="242" width="140" height="40" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="134" y="267" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">三股超螺旋</text>
+  <text x="220" y="250" font-size="9.5" fill="#475569">三条左手 α 链拧成右手超螺旋；甘氨酸（最小侧链）位于轴心</text>
+  <line x1="134" y1="284" x2="134" y2="304" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="64" y="308" width="140" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="134" y="333" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">前胶原</text>
+  <text x="220" y="316" font-size="9.5" fill="#475569">ER 内羟化（需维生素 C）＋加糖链；两端保留 C-/N-前肽阻止胞内聚合，分泌</text>
+  <line x1="134" y1="350" x2="134" y2="370" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="64" y="374" width="140" height="40" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="134" y="399" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">原胶原</text>
+  <text x="220" y="382" font-size="9.5" fill="#475569">胞外蛋白酶切除前肽 → 原胶原（tropocollagen）</text>
+  <line x1="134" y1="416" x2="134" y2="436" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="64" y="440" width="140" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="134" y="465" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">胶原原纤维</text>
+  <text x="220" y="448" font-size="9.5" fill="#475569">自组装成原纤维，赖氨酸氧化酶（LO，Cu²⁺ 依赖）催化交联增强抗张强度</text>
+  <rect x="43.1875" y="531.925" width="273.625" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="180" y="543.42" font-size="9.5" fill="#dc2626" text-anchor="middle">维生素 C 缺乏 → 坏血病（胶原不稳定、牙龈出血、伤口不愈）</text>
+  <text x="64" y="478" font-size="9.5" fill="#64748b">类型分布：I 型（皮肤、骨、肌腱）、II 型（软骨）、III 型（血管壁）、IV 型（基膜，网状）。</text>
+  <rect x="62.52000000000004" y="507.925" width="234.95999999999992" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="180" y="519.42" font-size="9.5" fill="#78350f" text-anchor="middle">成骨不全（I 型突变）／Ehlers-Danlos（III 型等）</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、弹性回弹与粘附糖蛋白、蛋白聚糖凝胶</text>
+  <text x="740" y="186" font-size="11" fill="#1e293b" font-weight="700">弹性蛋白（高度疏水·无规卷曲）</text>
+  <circle cx="850" cy="240" r="44" fill="#fef3c7" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="890" cy="240" r="7" fill="#d97706" fill-opacity="0.5"/>
+  <circle cx="862.360679774998" cy="278.04226065180615" r="7" fill="#d97706" fill-opacity="0.5"/>
+  <circle cx="817.6393202250022" cy="263.5114100916989" r="7" fill="#d97706" fill-opacity="0.5"/>
+  <circle cx="817.639320225002" cy="216.4885899083011" r="7" fill="#d97706" fill-opacity="0.5"/>
+  <circle cx="862.3606797749978" cy="201.95773934819385" r="7" fill="#d97706" fill-opacity="0.5"/>
+  <text x="850" y="244" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">交联网络</text>
+  <text x="850" y="300" font-size="9" fill="#64748b" text-anchor="middle">锁链素（desmosine）交联</text>
+  <text x="850" y="316" font-size="9" fill="#64748b" text-anchor="middle">大动脉·肺·皮肤弹性</text>
+  <circle cx="968" cy="240" r="58" fill="none" stroke="#b45309" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <text x="968" y="178" font-size="9" fill="#78350f" font-weight="700">fibrillin-1 微纤维包裹导向</text>
+  <rect x="750.780775" y="351.925" width="158.43845000000002" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="830" y="363.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">fibrillin-1 突变 → Marfan 综合征</text>
+  <text x="1060" y="360" font-size="9" fill="#dc2626" text-anchor="middle">瘦高体型·晶体脱位·蜘蛛样指</text>
+  <text x="1010" y="380" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">致命并发症：主动脉根部扩张夹层</text>
+  <text x="740" y="424" font-size="11" fill="#1e293b" font-weight="700">纤连蛋白：二聚体糖蛋白</text>
+  <ellipse cx="846" cy="456" rx="32" ry="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <rect x="870" y="452" width="20" height="8" fill="#0369a1" fill-opacity="0.4"/>
+  <ellipse cx="914" cy="456" rx="32" ry="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <rect x="938" y="452" width="20" height="8" fill="#0369a1" fill-opacity="0.4"/>
+  <line x1="884" y1="456" x2="876" y2="456" stroke="#0369a1" stroke-width="2"/>
+  <rect x="812.395" y="477.925" width="135.20999999999998" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="880" y="489.42" font-size="9.5" fill="#075985" text-anchor="middle">RGD 基序（被整联蛋白识别）</text>
+  <text x="960" y="432" font-size="9.5" fill="#475569">血浆型促进血凝与伤口愈合；</text>
+  <text x="960" y="445" font-size="9.5" fill="#475569">基质型指导胚胎细胞迁移</text>
+  <text x="960" y="458" font-size="9.5" fill="#475569">（敲除小鼠死于原肠运动缺陷）。</text>
+  <text x="1240" y="424" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">层粘连蛋白：十字形三聚体（αβγ）</text>
+  <line x1="1240" y1="440" x2="1240" y2="486" stroke="#6d28d9" stroke-width="3.5"/>
+  <line x1="1218" y1="470" x2="1262" y2="470" stroke="#6d28d9" stroke-width="3.5"/>
+  <line x1="1240" y1="440" x2="1218" y2="470" stroke="#6d28d9" stroke-width="3"/>
+  <line x1="1240" y1="440" x2="1262" y2="470" stroke="#6d28d9" stroke-width="3"/>
+  <text x="1240" y="500" font-size="9" fill="#4c1d95" text-anchor="middle">基膜核心组分</text>
+  <text x="740" y="520" font-size="9.5" fill="#64748b">蛋白聚糖：GAG（重复二糖长链，除透明质酸外均硫酸化）共价连核心蛋白——聚集 / 多能蛋白聚糖吸水成抗压凝胶（软骨）；透明质酸（HA）</text>
+  <text x="740" y="533.5" font-size="9.5" fill="#64748b">游离巨大分子，经 CD44 影响迁移增殖；syndecan / perlecan 结合 FGF 形成浓度梯度与储库。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、基膜（40—120 nm 特化薄片）与 ECM 的动态重塑</text>
+  <rect x="80" y="640" width="420" height="90" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="290" y="668" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">上皮细胞层</text>
+  <text x="290" y="690" font-size="9" fill="#64748b" text-anchor="middle">（基底面朝下）</text>
+  <rect x="80" y="744" width="420" height="46" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="2"/>
+  <line x1="96" y1="752" x2="118" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="118" y1="752" x2="96" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="142" y1="752" x2="164" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="164" y1="752" x2="142" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="188" y1="752" x2="210" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="210" y1="752" x2="188" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="234" y1="752" x2="256" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="256" y1="752" x2="234" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="280" y1="752" x2="302" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="302" y1="752" x2="280" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="326" y1="752" x2="348" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="348" y1="752" x2="326" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="372" y1="752" x2="394" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="394" y1="752" x2="372" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="418" y1="752" x2="440" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="440" y1="752" x2="418" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <line x1="464" y1="752" x2="486" y2="782" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="486" y1="752" x2="464" y2="782" stroke="#0f766e" stroke-width="1.8" opacity="0.6"/>
+  <text x="290" y="800" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IV 型胶原网 × 层粘连蛋白 × nidogen × perlecan 交联组装</text>
+  <text x="290" y="822" font-size="9.5" fill="#64748b" text-anchor="middle">位于上皮 / 内皮下、肌细胞与脂肪细胞周围及 Schwann 细胞外被</text>
+  <rect x="80" y="846" width="420" height="96" rx="8" fill="#f1f5f9" fill-opacity="0.6" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="290" y="878" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">结缔组织（胶原纤维·蛋白聚糖）</text>
+  <rect x="166.44" y="907.925" width="247.12" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="290" y="919.42" font-size="9.5" fill="#075985" text-anchor="middle">功能：滤过屏障（肾小球）·极性支架·修复模板·信号平台</text>
+  <text x="560" y="640" font-size="11.5" fill="#1e293b" font-weight="700">基膜病</text>
+  <text x="560" y="662" font-size="9.5" fill="#475569">Alport 综合征：IV 型胶原 α3/4/5 突变——血尿与进行性肾衰；</text>
+  <text x="560" y="675.5" font-size="9.5" fill="#475569">半桥粒与肌营养不良蛋白复合体锚定缺陷 → 大疱性表皮松解症。</text>
+  <text x="560" y="726" font-size="11.5" fill="#1e293b" font-weight="700">ECM 动态重塑</text>
+  <rect x="573.915" y="747.925" width="132.17000000000002" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="640" y="759.42" font-size="9.5" fill="#831843" text-anchor="middle">MMP（基质金属蛋白酶）降解</text>
+  <line x1="790" y1="756" x2="830" y2="756" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="850.47" y="747.925" width="119.06" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="910" y="759.42" font-size="9.5" fill="#059669" text-anchor="middle">TIMP（抑制物）反向平衡</text>
+  <text x="560" y="790" font-size="9.5" fill="#475569">肿瘤侵袭时 MMP 降解基膜为转移开路；ECM 降解片段具生物活性</text>
+  <text x="560" y="803.5" font-size="9.5" fill="#475569">（内皮抑素 endostatin 抑制血管新生）；纤维化疾病（肝、肺、肾）</text>
+  <text x="560" y="817" font-size="9.5" fill="#475569">本质是 ECM 过度沉积。</text>
+  <text x="940" y="660" font-size="10" fill="#64748b">ECM 组成总览：结构纤维（胶原、弹性蛋白）＋粘附性糖蛋白（纤连蛋白、层粘连蛋白）</text>
+  <text x="940" y="674" font-size="10" fill="#64748b">＋水化蛋白聚糖凝胶——赋予组织抗张、回弹与抗压性能，并储存生长因子、传递信号。</text>
+</svg>

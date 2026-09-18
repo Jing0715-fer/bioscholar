@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">坏死性凋亡与焦亡：受调控的炎症性死亡</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">坏死性凋亡＝RIPK1-RIPK3-MLKL 轴（caspase-8 抑制时）→DAMPs 强炎；焦亡＝NLRP3→caspase-1→GSDMD 成孔＋IL-1β；铁死亡＝GPX4 失活脂质过氧化</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、坏死性凋亡（necroptosis）：caspase-8 被抑制时的备用通路</text>
+  <text x="64" y="184" font-size="9.5" fill="#475569">由死亡受体（TNFR1）在 caspase-8 被抑制时启动的&quot;备用&quot;死亡方式——兼具坏死形态（膜破裂、炎症）与程序性（信号依赖）特征。</text>
+  <rect x="80" y="216" width="120" height="44" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="140" y="240" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">TNFR1</text>
+  <line x1="140" y1="262" x2="140" y2="286" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <rect x="55.10380000000002" y="302.775" width="169.79239999999996" height="14.45" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="140" y="313.06" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">复合体 Ⅰ（TRADD·TRAF2·RIPK1·cIAP）</text>
+  <line x1="140" y1="330" x2="140" y2="354" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="23.71712499999998" y="370.775" width="232.56575000000004" height="14.45" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="140" y="381.06" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">caspase-8 失活（病毒抑制子 / 药物）→ RIPK1 去泛素化</text>
+  <line x1="140" y1="398" x2="140" y2="420" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="80" y="424" width="120" height="44" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2.2"/>
+  <text x="140" y="442" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">坏死小体</text>
+  <text x="140" y="458" font-size="8.5" fill="#831843" text-anchor="middle">RIPK1×RIPK3</text>
+  <line x1="204" y1="446" x2="280" y2="446" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="292" y="428" font-size="9" fill="#475569">RIPK1 磷酸化并募集 RIPK3（相互磷酸化）</text>
+  <text x="292" y="448" font-size="9" fill="#475569">RIPK3 磷酸化 MLKL（混合谱系激酶结构域样蛋白）</text>
+  <text x="292" y="468" font-size="9" fill="#475569">p-MLKL 寡聚插入细胞膜 → 成孔、膜破裂</text>
+  <g><circle cx="430" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="430" y1="534" x2="430" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="430" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="454" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="454" y1="534" x2="454" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="454" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="478" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="478" y1="534" x2="478" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="478" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="502" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="502" y1="534" x2="502" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="502" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="526" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="526" y1="534" x2="526" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="526" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="550" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="550" y1="534" x2="550" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="550" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="574" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="574" y1="534" x2="574" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="574" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="598" cy="530" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="598" y1="534" x2="598" y2="539" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="598" cy="543" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="508" y="522" width="24" height="16" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="470" cy="496" r="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="470" y="498.34" font-size="6.5" fill="#dc2626" text-anchor="middle" font-weight="700">DAMP</text>
+  <circle cx="510" cy="496" r="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="510" y="498.34" font-size="6.5" fill="#dc2626" text-anchor="middle" font-weight="700">DAMP</text>
+  <circle cx="550" cy="496" r="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="550" y="498.34" font-size="6.5" fill="#dc2626" text-anchor="middle" font-weight="700">DAMP</text>
+  <line x1="504" y1="514" x2="504" y2="496" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="520" y="566" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">DAMPs 释放 → 强烈炎症反应</text>
+  <text x="64" y="544" font-size="9" fill="#64748b">生理意义：对抗能抑制 caspase 的病毒（痘病毒、HSV）的防御机制；</text>
+  <text x="64" y="556.5" font-size="9" fill="#64748b">参与炎症性疾病（克罗恩病、脊髓损伤）。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、焦亡（pyroptosis）：炎性小体 → caspase-1 → GSDMD 成孔</text>
+  <text x="740" y="184" font-size="9.5" fill="#475569">炎症性死亡，由炎性小体（inflammasome）引发：</text>
+  <rect x="698.4993" y="210.35" width="203.00140000000002" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="800" y="221.24" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">危险信号 DAMP / PAMP（nigericin·胞内 LPS）</text>
+  <line x1="800" y1="238" x2="800" y2="260" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <rect x="740" y="264" width="120" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2.2"/>
+  <text x="800" y="282" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">NLRP3 等</text>
+  <text x="800" y="300" font-size="8.5" fill="#78350f" text-anchor="middle">感受器寡聚</text>
+  <line x1="864" y1="288" x2="920" y2="288" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <rect x="964.54935" y="267.925" width="50.9013" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="990" y="279.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">募集 ASC</text>
+  <rect x="949.08905" y="299.925" width="81.82189999999999" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="990" y="311.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">＋procaspase-1</text>
+  <line x1="1064" y1="292" x2="1120" y2="292" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="1124" y="264" width="100" height="56" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2.2"/>
+  <text x="1174" y="286" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">caspase-1</text>
+  <text x="1174" y="306" font-size="9" fill="#831843" text-anchor="middle">活化</text>
+  <line x1="1174" y1="322" x2="1174" y2="352" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="740" y="376" font-size="9" fill="#64748b">活化 caspase-1 切割两底物：人 caspase-4/5（鼠 11）可直接识别胞内 LPS。</text>
+  <rect x="748.804475" y="397.925" width="142.39105" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="820" y="409.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">GSDMD → N 端片段寡聚成膜孔</text>
+  <g><circle cx="940" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="940" y1="434" x2="940" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="940" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="964" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="964" y1="434" x2="964" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="964" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="988" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="988" y1="434" x2="988" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="988" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1012" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1012" y1="434" x2="1012" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1012" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1036" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1036" y1="434" x2="1036" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1036" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1060" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1060" y1="434" x2="1060" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1060" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1084" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1084" y1="434" x2="1084" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1084" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1108" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1108" y1="434" x2="1108" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1108" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1132" cy="430" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1132" y1="434" x2="1132" y2="439" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1132" cy="443" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1028" y="422" width="22" height="16" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1040" y="468" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">渗透裂解</text>
+  <rect x="744.009825" y="477.925" width="151.98035000000004" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="820" y="489.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">pro-IL-1β / pro-IL-18 → 成熟</text>
+  <line x1="985" y1="494" x2="1040" y2="494" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <circle cx="1072" cy="494" r="17" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1072" y="497.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">IL-1β</text>
+  <line x1="1092" y1="494" x2="1128" y2="494" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="1150" y="494" font-size="8.5" fill="#64748b" text-anchor="middle">经 GSDMD 孔分泌</text>
+  <text x="740" y="530" font-size="9.5" fill="#475569">焦亡是感染与炎症（脓毒症、痛风、动脉粥样硬化）的重要病理环节。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、细胞死亡方式的转换与整合：一张表看清四种方式</text>
+  <rect x="60" y="630" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">方式</text>
+  <rect x="280" y="630" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">触发</text>
+  <rect x="580" y="630" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="730" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">执行者</text>
+  <rect x="880" y="630" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1010" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">膜完整性</text>
+  <rect x="1140" y="630" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">炎症</text>
+  <rect x="60" y="674" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="697.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">凋亡</text>
+  <rect x="280" y="674" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">生理信号 / 应激</text>
+  <rect x="580" y="674" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="730" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">caspase-3/-8/-9</text>
+  <rect x="880" y="674" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1010" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">完整（凋亡小体）</text>
+  <rect x="1140" y="674" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">无 / 免疫沉默</text>
+  <rect x="60" y="710" width="1280" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="710" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="733.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">自噬性细胞死亡</text>
+  <rect x="280" y="710" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">长期饥饿（过度自噬）</text>
+  <rect x="580" y="710" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="730" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">溶酶体酶</text>
+  <rect x="880" y="710" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1010" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">破坏（晚期）</text>
+  <rect x="1140" y="710" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">可有可无</text>
+  <rect x="60" y="746" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="769.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">坏死性凋亡</text>
+  <rect x="280" y="746" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">caspase-8 抑制＋TNF</text>
+  <rect x="580" y="746" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="730" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">RIPK1/3-MLKL</text>
+  <rect x="880" y="746" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1010" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">破裂</text>
+  <rect x="1140" y="746" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">强</text>
+  <rect x="60" y="782" width="1280" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="782" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="805.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">焦亡</text>
+  <rect x="280" y="782" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">炎性小体激活</text>
+  <rect x="580" y="782" width="300" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="730" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">caspase-1/11＋GSDMD</text>
+  <rect x="880" y="782" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1010" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">成孔破裂</text>
+  <rect x="1140" y="782" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">极强（IL-1β）</text>
+  <rect x="32.20000000000002" y="837.5" width="435.59999999999997" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="250" y="849.6" font-size="10" fill="#4c1d95" text-anchor="middle">铁死亡（ferroptosis）：铁依赖脂质过氧化（GPX4 失活）——线粒体缩小变密，肿瘤治疗新方向</text>
+  <text x="60" y="890" font-size="10" fill="#475569">医学意义：促凋亡与抑制异常存活是肿瘤治疗核心（化疗、放疗多经 p53-线粒体途径诱导凋亡）；神经退行病（AD、PD）与缺血再灌注损伤则以过度凋亡 / 坏死为靶点——RIPK1 抑制剂阻断 necroptosis 成为治疗策略。</text>
+  <text x="60" y="940" font-size="10" fill="#64748b">受调控坏死（regulated necrosis）兼具坏死形态与程序性信号——&quot;坏死并非总是被动无序&quot;是当代细胞死亡研究的核心更新。</text>
+</svg>

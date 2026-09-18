@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞重编程：克隆羊 Dolly、iPS 与转分化</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Dolly（1996）277 次核移植 1 例成功：成体核可重编程但有表观屏障；OSKM 四因子诱导 iPS（2006/2007，2012 诺奖）；C/EBPα、GMT、BAM 直接重编程</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、克隆羊 Dolly（1996）：成体细胞核被卵质重编程</text>
+  <rect x="70" y="216" width="136" height="66" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <text x="138" y="240" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">乳腺上皮细胞</text>
+  <text x="138" y="260" font-size="8.5" fill="#64748b" text-anchor="middle">成年绵羊（终末分化）</text>
+  <line x1="208" y1="249" x2="226" y2="249" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="230" y="216" width="136" height="66" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <text x="298" y="240" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">去核卵母细胞</text>
+  <text x="298" y="260" font-size="8.5" fill="#64748b" text-anchor="middle">电融合注入细胞核</text>
+  <line x1="368" y1="249" x2="386" y2="249" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="390" y="216" width="136" height="66" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <text x="458" y="240" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">胚胎移植</text>
+  <text x="458" y="260" font-size="8.5" fill="#64748b" text-anchor="middle">代孕母羊</text>
+  <line x1="528" y1="249" x2="546" y2="249" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="550" y="216" width="136" height="66" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="618" y="240" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">Dolly（1996）</text>
+  <text x="618" y="260" font-size="8.5" fill="#64748b" text-anchor="middle">Roslin 研究所</text>
+  <text x="70" y="316" font-size="10" fill="#475569">Wilmut 与 Campbell 等将成年绵羊乳腺上皮细胞的核移植入去核卵母细胞——首次证明哺乳动物终末分化细胞的细胞核可被卵母细胞质重编程恢复全能性。</text>
+  <rect x="132.13819999999998" y="363.075" width="135.7236" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="200" y="375.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">277 次核移植仅 1 例成功</text>
+  <text x="70" y="408" font-size="10" fill="#475569">卵母细胞质中的因子（如今知道包括 Oct4、Klf4 等）足以抹去体细胞的分化记忆；随后克隆牛、鼠、犬等相继成功。</text>
+  <text x="70" y="456" font-size="9.5" fill="#64748b">但克隆动物普遍存在胎盘异常、巨大后代综合征（LOS）等表观缺陷；Dolly 端粒偏短、早逝（2003 年安乐死）</text>
+  <text x="70" y="469.5" font-size="9.5" fill="#64748b">——揭示重编程的不完全性与表观屏障。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、iPS 诱导多能干细胞：OSKM 四因子（2006/2007）</text>
+  <text x="740" y="186" font-size="10" fill="#475569">Takahashi 与 Yamanaka 从 24 个候选因子中筛选出四个转录因子，将小鼠成纤维细胞直接重编程为 iPS；2007 年实现人 iPS。</text>
+  <rect x="770" y="216" width="120" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="830" y="238" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Oct4</text>
+  <text x="830" y="258" font-size="8" fill="#64748b" text-anchor="middle">八聚体结合 TF</text>
+  <line x1="830" y1="278" x2="830" y2="302" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="910" y="216" width="120" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="970" y="238" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Sox2</text>
+  <text x="970" y="258" font-size="8" fill="#64748b" text-anchor="middle">干性维持</text>
+  <line x1="970" y1="278" x2="970" y2="302" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="1050" y="216" width="120" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1110" y="238" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Klf4</text>
+  <text x="1110" y="258" font-size="8" fill="#64748b" text-anchor="middle">上皮基因激活</text>
+  <line x1="1110" y1="278" x2="1110" y2="302" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="1190" y="216" width="120" height="58" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1250" y="238" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">c-Myc</text>
+  <text x="1250" y="258" font-size="8" fill="#64748b" text-anchor="middle">增殖驱动（致瘤性）</text>
+  <line x1="1250" y1="278" x2="1250" y2="302" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="800" y="304" width="440" height="48" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2.2"/>
+  <text x="1020" y="324" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">诱导多能干细胞（iPS）</text>
+  <text x="1020" y="342" font-size="9" fill="#059669" text-anchor="middle">标志基因·畸胎瘤·嵌合体贡献等指标上类似 ESC</text>
+  <text x="740" y="388" font-size="9.5" fill="#475569">重编程是渐进、多阶段的过程（间充质-上皮转化 MET 为关键步骤），存在表观记忆与遗传 / 表观残留障碍；</text>
+  <text x="740" y="401.5" font-size="9.5" fill="#475569">c-Myc 的致瘤性促使其被替换为 L-Myc、Lin28 或小分子组合。</text>
+  <rect x="747.516" y="439.5" width="264.968" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="880" y="451.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">Yamanaka 与 Gurdon 获 2012 年诺贝尔生理学或医学奖</text>
+  <text x="740" y="492" font-size="9.5" fill="#64748b">应用：患者特异性疾病模型（帕金森病神经元）、药物筛选（毒性预测）与自体细胞治疗（iPS-RPE 治黄斑变性、</text>
+  <text x="740" y="505.5" font-size="9.5" fill="#64748b">多巴胺能神经元治帕金森的临床探索）。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、转分化（直接重编程）：绕过多能性中间态</text>
+  <rect x="80" y="612" width="170" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="165" y="634" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">B 淋巴细胞</text>
+  <line x1="258" y1="636" x2="360" y2="636" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <rect x="288.7569" y="601.925" width="42.486200000000004" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="310" y="613.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">C/EBPα</text>
+  <rect x="364" y="612" width="170" height="48" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="449" y="634" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">巨噬细胞</text>
+  <rect x="80" y="684" width="170" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="165" y="706" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">成纤维细胞</text>
+  <line x1="258" y1="708" x2="360" y2="708" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <rect x="263.3159" y="673.925" width="93.36819999999999" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="310" y="685.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Gata4·Mef2c·Tbx5</text>
+  <rect x="364" y="684" width="170" height="48" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="449" y="706" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">心肌样细胞</text>
+  <text x="560" y="706" font-size="9" fill="#64748b" text-anchor="middle">GMT 三因子</text>
+  <rect x="80" y="756" width="170" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="165" y="778" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">成纤维细胞</text>
+  <line x1="258" y1="780" x2="360" y2="780" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <rect x="265.2729" y="745.925" width="89.4542" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="310" y="757.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Brn2·Ascl1·Myt1l</text>
+  <rect x="364" y="756" width="170" height="48" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="449" y="778" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">神经元</text>
+  <text x="560" y="778" font-size="9" fill="#64748b" text-anchor="middle">BAM 三因子</text>
+  <rect x="80" y="828" width="170" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="165" y="850" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">胃窦上皮</text>
+  <line x1="258" y1="852" x2="360" y2="852" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <rect x="280.5375" y="817.925" width="58.925000000000004" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="310" y="829.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">体内重编程</text>
+  <rect x="364" y="828" width="170" height="48" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="449" y="850" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">胰岛素分泌细胞</text>
+  <text x="560" y="850" font-size="9" fill="#64748b" text-anchor="middle">（绕开体外培养）</text>
+  <text x="700" y="636" font-size="10.5" fill="#1e293b" font-weight="700">直接重编程避免了 iPS 的致瘤风险，</text>
+  <text x="700" y="651.75" font-size="10.5" fill="#1e293b" font-weight="700">是再生医学的新策略：</text>
+  <text x="700" y="662" font-size="10" fill="#475569">· 心肌梗死后的补心肌（GMT 因子）；</text>
+  <text x="700" y="688" font-size="10" fill="#475569">· 神经退行性疾病的神经补充（BAM 因子）；</text>
+  <text x="700" y="714" font-size="10" fill="#475569">· 损伤修复的局部原位转分化。</text>
+  <rect x="722.5" y="771.5" width="115" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="780" y="783.6" font-size="10" fill="#059669" text-anchor="middle">Dolly：核移植的重编程</text>
+  <rect x="936.6" y="771.5" width="146.8" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1010" y="783.6" font-size="10" fill="#4c1d95" text-anchor="middle">iPS：因子 cocktails 的重编程</text>
+  <rect x="1239" y="771.5" width="122" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1300" y="783.6" font-size="10" fill="#075985" text-anchor="middle">转分化：跨谱系直接转换</text>
+  <text x="700" y="830" font-size="10.5" fill="#64748b">三条路线殊途同归：均证明分化状态可被改写——细胞命运是表观遗传程序而非不可逆的终局。</text>
+</svg>

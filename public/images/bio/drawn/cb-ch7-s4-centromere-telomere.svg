@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">着丝粒、动粒与端粒：遗传忠实性的两大守护结构</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">着丝粒由 CENP-A 表观遗传决定，动粒 CCAN/KMN 捕捉微管兼 SAC 平台；端粒 TTAGGG 折成 T 环藏起末端，每代缩 50—200 bp，端粒酶（2009 诺奖）回补</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、着丝粒与动粒：CENP-A 表观遗传标志＋三层动粒</text>
+  <rect x="108" y="196" width="26" height="84" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <rect x="108" y="320" width="26" height="84" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <rect x="111" y="280" width="20" height="40" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="164" y="196" width="26" height="84" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <rect x="164" y="320" width="26" height="84" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <rect x="167" y="280" width="20" height="40" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="149" y="428" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">中期染色体</text>
+  <text x="149" y="446" font-size="9" fill="#64748b" text-anchor="middle">（主缢痕）</text>
+  <text x="64" y="180" font-size="9.5" fill="#64748b">姐妹染色单体</text>
+  <line x1="192" y1="300" x2="262" y2="300" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <rect x="266" y="196" width="400" height="300" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="466" y="216" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">动粒放大（主缢痕横断面）</text>
+  <line x1="396" y1="226" x2="396" y2="306" stroke="#0369a1" stroke-width="3.5"/>
+  <line x1="391" y1="262" x2="418" y2="262" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="466" y1="226" x2="466" y2="306" stroke="#0369a1" stroke-width="3.5"/>
+  <line x1="461" y1="262" x2="488" y2="262" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="536" y1="226" x2="536" y2="306" stroke="#0369a1" stroke-width="3.5"/>
+  <line x1="531" y1="262" x2="558" y2="262" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="466" y="240" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">纺锤体微管（＋端）</text>
+  <rect x="300" y="308" width="332" height="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="466" y="330" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">外层 KMN 网络</text>
+  <text x="306" y="358" font-size="9.5" fill="#4c1d95">KNL1 · Mis12 复合体 · Ndc80 复合体</text>
+  <rect x="300" y="384" width="332" height="30" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="466" y="404" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">内层 CCAN 网络（CENP-C · CENP-T）</text>
+  <rect x="300" y="430" width="332" height="44" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="466" y="448" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">着丝粒染色质：兆碱基级 α 卫星 DNA</text>
+  <circle cx="322" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="358" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="394" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="430" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="466" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="502" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="538" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="574" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="610" cy="462" r="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="461.04605" y="453.925" width="77.90790000000001" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="500" y="465.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">CENP-A 核小体</text>
+  <line x1="488" y1="462" x2="452" y2="462" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <text x="64" y="478" font-size="10" fill="#475569">CENP-A（H3 变体）替换着丝粒核小体——身份由表观遗传决定，新着丝粒可出现在缺乏卫星 DNA 的位点；每个动粒可附着 1 至数十条微管</text>
+  <text x="64" y="492" font-size="10" fill="#475569">（哺乳动物）。</text>
+  <text x="64" y="526" font-size="10" fill="#64748b">SAC 传感平台：未附着 / 缺乏张力的动粒募集 Mad2·BubR1 抑制 APC/C；CPC（Aurora B）纠错（见第 10 章）。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、端粒：TTAGGG 重复、T 环与 shelterin 保护帽</text>
+  <path d="M740,250L740.0,250.0L742.0,246.6L744.0,243.5L746.0,241.1L748.0,239.5L750.0,239.0L752.0,239.5L754.0,241.1L756.0,243.5L758.0,246.6L760.0,250.0L762.0,253.4L764.0,256.5L766.0,258.9L768.0,260.5L770.0,261.0L772.0,260.5L774.0,258.9L776.0,256.5L778.0,253.4L780.0,250.0L782.0,246.6L784.0,243.5L786.0,241.1L788.0,239.5L790.0,239.0L792.0,239.5L794.0,241.1L796.0,243.5L798.0,246.6L800.0,250.0L802.0,253.4L804.0,256.5L806.0,258.9L808.0,260.5L810.0,261.0L812.0,260.5L814.0,258.9L816.0,256.5L818.0,253.4L820.0,250.0L822.0,246.6L824.0,243.5L826.0,241.1L828.0,239.5L830.0,239.0L832.0,239.5L834.0,241.1L836.0,243.5L838.0,246.6L840.0,250.0L842.0,253.4L844.0,256.5L846.0,258.9L848.0,260.5L850.0,261.0L852.0,260.5L854.0,258.9L856.0,256.5L858.0,253.4L860.0,250.0L862.0,246.6L864.0,243.5L866.0,241.1L868.0,239.5L870.0,239.0L872.0,239.5L874.0,241.1L876.0,243.5L878.0,246.6L880.0,250.0L882.0,253.4L884.0,256.5L886.0,258.9L888.0,260.5L890.0,261.0L892.0,260.5L894.0,258.9L896.0,256.5L898.0,253.4L900.0,250.0L902.0,246.6L904.0,243.5L906.0,241.1L908.0,239.5L910.0,239.0L912.0,239.5L914.0,241.1L916.0,243.5L918.0,246.6L920.0,250.0L922.0,253.4L924.0,256.5L926.0,258.9L928.0,260.5L930.0,261.0L932.0,260.5L934.0,258.9L936.0,256.5L938.0,253.4L940.0,250.0L942.0,246.6L944.0,243.5L946.0,241.1L948.0,239.5L950.0,239.0L952.0,239.5L954.0,241.1L956.0,243.5L958.0,246.6L960.0,250.0L962.0,253.4L964.0,256.5L966.0,258.9L968.0,260.5L970.0,261.0L972.0,260.5L974.0,258.9L976.0,256.5L978.0,253.4L980.0,250.0L982.0,246.6L984.0,243.5L986.0,241.1L988.0,239.5L990.0,239.0L992.0,239.5L994.0,241.1L996.0,243.5L998.0,246.6L1000.0,250.0L1002.0,253.4L1004.0,256.5L1006.0,258.9L1008.0,260.5L1010.0,261.0L1012.0,260.5L1014.0,258.9L1016.0,256.5L1018.0,253.4L1020.0,250.0L1022.0,246.6L1024.0,243.5L1026.0,241.1L1028.0,239.5L1030.0,239.0L1032.0,239.5L1034.0,241.1L1036.0,243.5L1038.0,246.6L1040.0,250.0L1042.0,253.4L1044.0,256.5L1046.0,258.9L1048.0,260.5L1050.0,261.0L1052.0,260.5L1054.0,258.9L1056.0,256.5L1058.0,253.4L1060.0,250.0L1062.0,246.6L1064.0,243.5L1066.0,241.1L1068.0,239.5L1070.0,239.0L1072.0,239.5L1074.0,241.1L1076.0,243.5L1078.0,246.6L1080.0,250.0L1082.0,253.4L1084.0,256.5L1086.0,258.9L1088.0,260.5L1090.0,261.0L1092.0,260.5L1094.0,258.9L1096.0,256.5L1098.0,253.4L1100.0,250.0L1102.0,246.6L1104.0,243.5L1106.0,241.1L1108.0,239.5L1110.0,239.0L1112.0,239.5L1114.0,241.1L1116.0,243.5L1118.0,246.6L1120.0,250.0" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <path d="M740,250L740.0,250.0L742.0,253.4L744.0,256.5L746.0,258.9L748.0,260.5L750.0,261.0L752.0,260.5L754.0,258.9L756.0,256.5L758.0,253.4L760.0,250.0L762.0,246.6L764.0,243.5L766.0,241.1L768.0,239.5L770.0,239.0L772.0,239.5L774.0,241.1L776.0,243.5L778.0,246.6L780.0,250.0L782.0,253.4L784.0,256.5L786.0,258.9L788.0,260.5L790.0,261.0L792.0,260.5L794.0,258.9L796.0,256.5L798.0,253.4L800.0,250.0L802.0,246.6L804.0,243.5L806.0,241.1L808.0,239.5L810.0,239.0L812.0,239.5L814.0,241.1L816.0,243.5L818.0,246.6L820.0,250.0L822.0,253.4L824.0,256.5L826.0,258.9L828.0,260.5L830.0,261.0L832.0,260.5L834.0,258.9L836.0,256.5L838.0,253.4L840.0,250.0L842.0,246.6L844.0,243.5L846.0,241.1L848.0,239.5L850.0,239.0L852.0,239.5L854.0,241.1L856.0,243.5L858.0,246.6L860.0,250.0L862.0,253.4L864.0,256.5L866.0,258.9L868.0,260.5L870.0,261.0L872.0,260.5L874.0,258.9L876.0,256.5L878.0,253.4L880.0,250.0L882.0,246.6L884.0,243.5L886.0,241.1L888.0,239.5L890.0,239.0L892.0,239.5L894.0,241.1L896.0,243.5L898.0,246.6L900.0,250.0L902.0,253.4L904.0,256.5L906.0,258.9L908.0,260.5L910.0,261.0L912.0,260.5L914.0,258.9L916.0,256.5L918.0,253.4L920.0,250.0L922.0,246.6L924.0,243.5L926.0,241.1L928.0,239.5L930.0,239.0L932.0,239.5L934.0,241.1L936.0,243.5L938.0,246.6L940.0,250.0L942.0,253.4L944.0,256.5L946.0,258.9L948.0,260.5L950.0,261.0L952.0,260.5L954.0,258.9L956.0,256.5L958.0,253.4L960.0,250.0L962.0,246.6L964.0,243.5L966.0,241.1L968.0,239.5L970.0,239.0L972.0,239.5L974.0,241.1L976.0,243.5L978.0,246.6L980.0,250.0L982.0,253.4L984.0,256.5L986.0,258.9L988.0,260.5L990.0,261.0L992.0,260.5L994.0,258.9L996.0,256.5L998.0,253.4L1000.0,250.0L1002.0,246.6L1004.0,243.5L1006.0,241.1L1008.0,239.5L1010.0,239.0L1012.0,239.5L1014.0,241.1L1016.0,243.5L1018.0,246.6L1020.0,250.0L1022.0,253.4L1024.0,256.5L1026.0,258.9L1028.0,260.5L1030.0,261.0L1032.0,260.5L1034.0,258.9L1036.0,256.5L1038.0,253.4L1040.0,250.0L1042.0,246.6L1044.0,243.5L1046.0,241.1L1048.0,239.5L1050.0,239.0L1052.0,239.5L1054.0,241.1L1056.0,243.5L1058.0,246.6L1060.0,250.0L1062.0,253.4L1064.0,256.5L1066.0,258.9L1068.0,260.5L1070.0,261.0L1072.0,260.5L1074.0,258.9L1076.0,256.5L1078.0,253.4L1080.0,250.0L1082.0,246.6L1084.0,243.5L1086.0,241.1L1088.0,239.5L1090.0,239.0L1092.0,239.5L1094.0,241.1L1096.0,243.5L1098.0,246.6L1100.0,250.0L1102.0,253.4L1104.0,256.5L1106.0,258.9L1108.0,260.5L1110.0,261.0L1112.0,260.5L1114.0,258.9L1116.0,256.5L1118.0,253.4L1120.0,250.0" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <line x1="750" y1="239" x2="750" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="770" y1="261" x2="770" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="790" y1="239" x2="790" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="810" y1="261" x2="810" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="830" y1="239" x2="830" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="850" y1="261" x2="850" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="870" y1="239" x2="870" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="890" y1="261" x2="890" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="910" y1="239" x2="910" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="930" y1="261" x2="930" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="950" y1="239" x2="950" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="970" y1="261" x2="970" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="990" y1="239" x2="990" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1010" y1="261" x2="1010" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1030" y1="239" x2="1030" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1050" y1="261" x2="1050" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1070" y1="239" x2="1070" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1090" y1="261" x2="1090" y2="239" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1110" y1="239" x2="1110" y2="261" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <text x="930" y="218" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">TTAGGG 串联重复（约 5—15 kb）</text>
+  <path d="M 1120,250 C 1180,250 1200,300 1150,330 C 1100,360 1000,360 980,320" fill="none" stroke="#059669" stroke-width="3" marker-end="url(#arr-ok)"/>
+  <text x="1150" y="236" font-size="10" fill="#059669" font-weight="700">3′ G 链突出</text>
+  <ellipse cx="1070" cy="330" rx="86" ry="26" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="2"/>
+  <text x="1070" y="334" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">T 环</text>
+  <text x="1070" y="372" font-size="9.5" fill="#64748b">3′ 突出入侵自身双链区（D 环）</text>
+  <text x="1070" y="388" font-size="9.5" fill="#64748b" text-anchor="middle">把天然末端&quot;藏&quot;起来</text>
+  <rect x="772.8666" y="283.925" width="34.2668" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="790" y="295.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">TRF1</text>
+  <rect x="829.13205" y="283.925" width="85.7359" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="872" y="295.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">TRF2（促 T 环）</text>
+  <rect x="945.5116" y="283.925" width="92.97680000000001" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="992" y="295.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">POT1（结合单链）</text>
+  <text x="930" y="320" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">shelterin 复合体</text>
+  <text x="740" y="424" font-size="10.5" fill="#475569">保护机制：T 环＋shelterin 使染色体天然末端免被 DNA 损伤应答系统识别为双链断裂。</text>
+  <text x="740" y="462" font-size="10" fill="#64748b">人类由 TTAGGG 串联重复（约 5—15 kb）与 3′ 端 G 链突出构成。</text>
+  <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、末端复制问题与端粒酶：缩短 50—200 bp / 代及其回补</text>
+  <text x="64" y="616" font-size="11.5" fill="#1e293b" font-weight="700">末端复制问题：后随链最末端 RNA 引物被切除后无法补齐</text>
+  <line x1="90" y1="660" x2="330" y2="660" stroke="#0f766e" stroke-width="3.5"/>
+  <line x1="90" y1="690" x2="330" y2="690" stroke="#0f766e" stroke-width="3.5"/>
+  <text x="210" y="640" font-size="9.5" fill="#64748b" text-anchor="middle">亲代双链</text>
+  <line x1="350" y1="675" x2="420" y2="675" stroke="#64748b" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <text x="385" y="660" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">复制</text>
+  <line x1="440" y1="660" x2="700" y2="660" stroke="#0f766e" stroke-width="3.5"/>
+  <line x1="440" y1="690" x2="700" y2="690" stroke="#059669" stroke-width="3.5"/>
+  <text x="570" y="640" font-size="9.5" fill="#059669" text-anchor="middle">子代 ①：先导链连续合成 → 全长</text>
+  <line x1="440" y1="736" x2="700" y2="736" stroke="#0f766e" stroke-width="3.5"/>
+  <line x1="440" y1="766" x2="640" y2="766" stroke="#b45309" stroke-width="3.5"/>
+  <line x1="640" y1="766" x2="700" y2="766" stroke="#b45309" stroke-width="3.5" stroke-dasharray="5 5"/>
+  <rect x="642" y="756" width="56" height="20" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="570" y="716" font-size="9.5" fill="#78350f" text-anchor="middle">子代 ②：后随链（冈崎片段）末端 RNA 引物切除</text>
+  <line x1="616" y1="788" x2="690" y2="788" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="570" y="808" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">末端空缺无法补齐 → 每次复制缩短 50—200 bp</text>
+  <text x="90" y="836" font-size="10" fill="#475569">端粒酶在多数体细胞中被抑制——端粒逐次缩短最终触发复制性衰老（Hayflick 界限，第 11 章）。</text>
+  <text x="760" y="616" font-size="11.5" fill="#1e293b" font-weight="700">端粒酶：以自身 RNA 为模板的逆转录核糖核蛋白</text>
+  <line x1="780" y1="660" x2="1080" y2="660" stroke="#059669" stroke-width="3.5"/>
+  <text x="786" y="646" font-size="9.5" fill="#059669" font-weight="700">3′ G 链突出（延伸中）</text>
+  <path d="M 790,688 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="930" y="672" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">TERC（RNA 模板）</text>
+  <line x1="820" y1="660" x2="820" y2="688" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="868" y1="660" x2="868" y2="688" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="916" y1="660" x2="916" y2="688" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="964" y1="660" x2="964" y2="688" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="1012" y1="660" x2="1012" y2="688" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="1060" y1="660" x2="1060" y2="688" stroke="#94a3b8" stroke-width="1.4"/>
+  <rect x="1060" y="640" width="96" height="56" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="1108" y="662" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">TERT</text>
+  <text x="1108" y="680" font-size="8.5" fill="#831843" text-anchor="middle">逆转录酶核心</text>
+  <line x1="1056" y1="668" x2="1000" y2="668" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="1080" y1="648" x2="1080" y2="632" stroke="#059669" stroke-width="2.4" marker-end="url(#arr-ok)"/>
+  <text x="1080" y="620" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">回补 TTAGGG 重复</text>
+  <text x="760" y="726" font-size="10.5" fill="#475569">Blackburn、Greider 与 Szostak 因发现端粒酶获 2009 年诺贝尔生理学或医学奖。端粒酶在生殖细胞、</text>
+  <text x="760" y="741" font-size="10.5" fill="#475569">干细胞与约 85%—90% 的肿瘤中活跃——肿瘤细胞经其重激活实现永生化，端粒酶因此成为抗癌药靶。</text>
+  <rect x="759.2" y="819.5" width="121.60000000000001" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="820" y="831.6" font-size="10" fill="#059669" text-anchor="middle">生殖细胞 · 干细胞：活跃</text>
+  <rect x="984" y="819.5" width="92" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1030" y="831.6" font-size="10" fill="#dc2626" text-anchor="middle">多数体细胞：抑制</text>
+  <text x="760" y="866" font-size="10" fill="#64748b">先天性角化不良等端粒病源于端粒维护缺陷。</text>
+</svg>
