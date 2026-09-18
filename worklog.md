@@ -430,3 +430,17 @@ Stage Summary:
 - 免疫学 3 张未确证源页图片（antibody-igg-structure/immunoglobulin-classes/mhc-class1-structure）作者署名仍待 Commons API 恢复后核对（本轮 API 持续 403 限流）
 - 既有 43 条超长图注（235+ 字符）为历史遗留，可在未来轮次统一精简
 - 可选打磨：cron 播种假数据清理、复习卡片遗忘曲线历史图、⌘K 拼音首字母匹配
+
+---
+Task ID: 38-addendum
+Agent: 主控 (Z.ai Code)
+Task: 狂犬缺口兜底——病毒性脑炎组织病理切片挂载
+
+Work Log:
+- image-search 两轮补搜狂犬 TEM：直搜候选多为 Alamy 水印或研究拼版图不合格；改搜 Negri body 组织病理学，JPC（美国武装部队病理联合中心）教学切片通过 VLM 审校（H&E 染色、血管周围淋巴细胞套清晰、无水印、60μm 标尺）。
+- VLM 明确指出该切片无 Negri 小体、不能作狂犬确诊图——按诚实原则以「病毒性脑炎共同病理特征」角度挂载 virology-ch11-s3（病毒学首次引入组织病理维度），图注明确说明 Negri 小体检出率有限、阴性不能排除诊断。
+- 终态校验：check-ill total=160 missing=0 badSec=0；tsc/lint 全绿；agent-browser 图库 176 张；histology 图 200 服务正常。
+
+Stage Summary:
+- 平台终态：176 张挂载插图（125 Commons + 18 web 教材图源 + 13 CCD + 17 PDB + 4 自绘 + 16 词条结构图计入图库统计口径的另算）· GitHub 推送至 5311025
+- 狂犬 TEM 仍未获得合格图（Commons 源文件标注存疑 + 图源渠道无子弹形清晰图），以血管套病理切片补位 ch11-s3；下轮可再试 "rhabdovirus TEM" 或等待 Commons API 恢复后换源文件
