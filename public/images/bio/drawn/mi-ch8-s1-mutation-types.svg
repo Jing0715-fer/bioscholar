@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因突变的类型与规律：分子类型、三大经典实验与突变率</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">突变分碱基置换、移码与结构变异，表型效应同义/错义/无义；影印培养证明突变先于选择随机发生；每基因每世代约 10⁻⁸–10⁻⁹；UV 260 nm 经 SOS 易错修复；Ames 筛致癌物</text>
+  <rect x="30" y="132" width="1340" height="232" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、基因突变的三类分子类型与表型效应三档</text>
+  <rect x="219.22" y="186.95" width="71.56" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="255" y="202.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">碱基置换</text>
+  <text x="80" y="232" font-size="10" fill="#64748b">野生型</text>
+  <rect x="80" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="88.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="99" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="107.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="118" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="126.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">G</text>
+  <rect x="137" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="145.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="156" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="164.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="175" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="183.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="194" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="202.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="213" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="221.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="232" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="240.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <text x="80" y="272" font-size="10" fill="#64748b">转换后</text>
+  <rect x="80" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="88.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="99" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="107.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="118" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="126.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">G</text>
+  <rect x="137" y="276" width="17" height="20" rx="3" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+  <text x="145.5" y="289.5" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">T</text>
+  <rect x="156" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="164.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="175" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="183.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="194" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="202.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="213" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="221.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="232" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="240.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <line x1="131" y1="258" x2="131" y2="272" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="175" y="266" font-size="9.5" fill="#475569" text-anchor="middle">C→T 转换（Met→Ser 错义）</text>
+  <text x="80" y="312" font-size="10" fill="#475569">转换：嘌呤↔嘌呤或嘧啶↔嘧啶；颠换：嘌呤↔嘧啶。</text>
+  <rect x="664.22" y="186.95" width="71.56" height="22.099999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="700" y="202.68" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">移码突变</text>
+  <text x="560" y="232" font-size="10" fill="#64748b">野生型</text>
+  <rect x="560" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="568.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="579" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="587.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="598" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="606.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">G</text>
+  <rect x="617" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="625.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="636" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="644.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="655" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="663.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="674" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="682.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="693" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="701.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="712" y="236" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="720.5" y="249.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <text x="560" y="272" font-size="10" fill="#64748b">插入后</text>
+  <rect x="560" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="568.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="579" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="587.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="598" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="606.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">G</text>
+  <rect x="617" y="276" width="17" height="20" rx="3" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+  <text x="625.5" y="289.5" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">C</text>
+  <rect x="636" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="644.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="655" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="663.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="674" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="682.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="693" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="701.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="712" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="720.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T</text>
+  <rect x="731" y="276" width="17" height="20" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="739.5" y="289.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <text x="645" y="266" font-size="9.5" fill="#475569" text-anchor="middle">读码框整体错位</text>
+  <text x="560" y="312" font-size="10" fill="#475569">增添/缺失非 3 倍数碱基——突变点后全部密码子改变，多肽面目全非</text>
+  <text x="560" y="326" font-size="10" fill="#475569">（吖啶类嵌入剂诱导）。</text>
+  <rect x="1089.135" y="186.95" width="111.73" height="22.099999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1145" y="202.68" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">大片段结构变异</text>
+  <line x1="950" y1="232" x2="1320" y2="232" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="951" y="217" width="90.5" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="996.25" y="265" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">A</text>
+  <rect x="1043.5" y="217" width="90.5" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1088.75" y="265" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">B</text>
+  <rect x="1136" y="217" width="90.5" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1181.25" y="265" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">C</text>
+  <rect x="1228.5" y="217" width="90.5" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1273.75" y="265" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">D</text>
+  <line x1="950" y1="262" x2="1320" y2="262" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="951" y="247" width="109" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1005.5" y="295" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">A</text>
+  <rect x="1062" y="247" width="109" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1116.5" y="295" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">C</text>
+  <rect x="1173" y="247" width="146" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1246" y="295" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">D</text>
+  <text x="1135" y="270" font-size="9" fill="#64748b" text-anchor="middle">缺失</text>
+  <line x1="950" y1="292" x2="1320" y2="292" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="951" y="277" width="79.4" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="990.7" y="325" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">A</text>
+  <rect x="1032.4" y="277" width="68.3" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1066.5500000000002" y="325" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">B</text>
+  <rect x="1102.7" y="277" width="68.3" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1136.8500000000001" y="325" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">B</text>
+  <rect x="1173" y="277" width="72" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1209" y="325" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">C</text>
+  <rect x="1247" y="277" width="72" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1283" y="325" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">D</text>
+  <text x="1135" y="300" font-size="9" fill="#64748b" text-anchor="middle">重复</text>
+  <text x="950" y="328" font-size="10" fill="#475569">另有倒位与易位等染色体内/间重排。</text>
+  <rect x="124.3325" y="345.075" width="111.33500000000001" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="180" y="357.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">同义（氨基酸不变）</text>
+  <rect x="374.3325" y="345.075" width="111.33500000000001" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="430" y="357.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">错义（氨基酸改变）</text>
+  <rect x="623.5175" y="345.075" width="132.965" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="690" y="357.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">无义（提前终止密码子）</text>
+  <text x="1050" y="354" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">表型效应分三档</text>
+  <rect x="30" y="376" width="660" height="248" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="398.84" font-size="19" fill="#475569" font-weight="700">二、自发突变先于选择随机发生：影印培养实验</text>
+  <circle cx="150" cy="480" r="62" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="125" cy="455" r="5" fill="#0f766e"/>
+  <circle cx="160" cy="448" r="5" fill="#0f766e"/>
+  <circle cx="185" cy="470" r="5" fill="#0f766e"/>
+  <circle cx="130" cy="495" r="5" fill="#0f766e"/>
+  <circle cx="168" cy="502" r="5" fill="#0f766e"/>
+  <circle cx="192" cy="495" r="5" fill="#0f766e"/>
+  <circle cx="148" cy="515" r="5" fill="#0f766e"/>
+  <circle cx="110" cy="472" r="5" fill="#0f766e"/>
+  <circle cx="160" cy="448" r="8" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="168" cy="502" r="8" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="150" y="558" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">主平板（无链霉素）</text>
+  <rect x="300" y="450" width="84" height="60" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <line x1="310" y1="456" x2="310" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="321" y1="456" x2="321" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="332" y1="456" x2="332" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="343" y1="456" x2="343" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="354" y1="456" x2="354" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="365" y1="456" x2="365" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="376" y1="456" x2="376" y2="504" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="342" y="528" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">灭菌绒布</text>
+  <line x1="216" y1="480" x2="294" y2="480" stroke="#475569" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="390" y1="480" x2="468" y2="480" stroke="#475569" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <circle cx="540" cy="480" r="62" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="550" cy="448" r="8" fill="#0f766e"/>
+  <circle cx="558" cy="502" r="8" fill="#0f766e"/>
+  <text x="540" y="558" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">含链霉素平板</text>
+  <text x="540" y="418" font-size="9.5" fill="#64748b" text-anchor="middle">仅相同位置长出耐药菌落</text>
+  <line x1="160" y1="448" x2="550" y2="448" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+  <line x1="168" y1="502" x2="558" y2="502" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+  <text x="60" y="588" font-size="10.5" fill="#475569">绒布轻压主平板沾取菌落印 → 影印至含药平板：相同位置的菌落照常生长；再自主平板同位置挑取原菌落接种含药培养基，</text>
+  <text x="60" y="603" font-size="10.5" fill="#475569">同样生长——耐药性在接触链霉素之前已随机存在。</text>
+  <text x="60" y="612" font-size="10.5" fill="#1e293b" font-weight="700">与彷徨试验（1943）、涂布重涂布试验共同证明：</text>
+  <text x="60" y="627.75" font-size="10.5" fill="#1e293b" font-weight="700">突变自发随机发生，环境只充当选择者。</text>
+  <rect x="710" y="376" width="660" height="248" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="398.84" font-size="19" fill="#475569" font-weight="700">三、诱变剂及其分子机制：只提高频率，不指定方向</text>
+  <rect x="730" y="424" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="451.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">诱变剂类别</text>
+  <rect x="840" y="424" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="905" y="451.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表</text>
+  <rect x="970" y="424" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="451.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">分子机制</text>
+  <rect x="1200" y="424" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="451.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要突变类型</text>
+  <rect x="730" y="468" width="110" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="490.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">碱基类似物</text>
+  <rect x="840" y="468" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="905" y="490.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">5-溴尿嘧啶</text>
+  <rect x="970" y="468" width="230" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="490.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">复制中替代正常碱基，配对行为改变</text>
+  <rect x="1200" y="468" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="490.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">转换</text>
+  <rect x="730" y="502" width="620" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="502" width="110" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="524.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">嵌入剂</text>
+  <rect x="840" y="502" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="905" y="524.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">吖啶类</text>
+  <rect x="970" y="502" width="230" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="524.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">嵌入碱基对之间使复制滑移</text>
+  <rect x="1200" y="502" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="524.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">移码</text>
+  <rect x="730" y="536" width="110" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="558.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">物理诱变</text>
+  <rect x="840" y="536" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="905" y="558.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">紫外线 260 nm</text>
+  <rect x="970" y="536" width="230" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1085" y="558.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">相邻嘧啶形成二聚体（以 TT 为主）</text>
+  <rect x="1200" y="536" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="558.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">经 SOS 易错修复产生多种突变</text>
+  <text x="730" y="576" font-size="10.5" fill="#475569">紫外线是实验室最常用物理诱变剂：260 nm 附近恰为核酸吸收峰；SOS 修复为保命而牺牲保真度。</text>
+  <text x="730" y="606" font-size="10.5" fill="#1e293b" font-weight="700">诱变剂只提高突变频率，</text>
+  <text x="730" y="621.75" font-size="10.5" fill="#1e293b" font-weight="700">不能按意愿指定突变方向——「选择」仍须人工筛选。</text>
+  <rect x="30" y="636" width="1340" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="658.84" font-size="19" fill="#475569" font-weight="700">四、三类最重要的育种与遗传标记突变表型</text>
+  <rect x="50" y="664" width="400" height="106" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="92.375" y="679.375" width="95.25" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="140" y="694.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">温度敏感突变</text>
+  <text x="66" y="724" font-size="10.5" fill="#475569">ts 条件致死：限定温度下蛋白失活——遗传学分析与条件表达的工具</text>
+  <rect x="495" y="664" width="400" height="106" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.5"/>
+  <rect x="543.8125" y="679.375" width="82.375" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="585" y="694.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">营养缺陷型</text>
+  <text x="511" y="724" font-size="10.5" fill="#475569">丧失合成某营养物质的能力，需补充方能生长——经典遗传标记与选择载体</text>
+  <rect x="940" y="664" width="400" height="106" rx="9" fill="#ede9fe" fill-opacity="0.4" stroke="#6d28d9" stroke-width="1.5"/>
+  <rect x="988.8125" y="679.375" width="82.375" height="21.25" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1030" y="694.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">抗药性突变</text>
+  <text x="956" y="724" font-size="10.5" fill="#475569">在致死药物浓度下仍能增殖——最常用的选择标记</text>
+  <rect x="30" y="818" width="1340" height="162" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="840.84" font-size="19" fill="#475569" font-weight="700">五、突变率数字 · 回复突变与 Ames 试验</text>
+  <rect x="50" y="848" width="400" height="100" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="70" y="874" font-size="13" fill="#1e293b" font-weight="700">自发突变率</text>
+  <text x="70" y="898" font-size="11" fill="#475569">细菌每个基因每世代突变率约 10⁻⁸–10⁻⁹——彷徨试验正是据此涨落统计推算。</text>
+  <rect x="495" y="848" width="400" height="100" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="515" y="874" font-size="13" fill="#1e293b" font-weight="700">回复突变</text>
+  <text x="515" y="898" font-size="11" fill="#475569">表型复原可经原位回复（碱基改回）或抑制突变</text>
+  <text x="515" y="914" font-size="11" fill="#475569">（第二次突变掩盖首次效应）实现。</text>
+  <rect x="940" y="848" width="400" height="100" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="960" y="874" font-size="13" fill="#075985" font-weight="700">Ames 试验</text>
+  <text x="960" y="898" font-size="11" fill="#475569">利用鼠伤寒沙门菌组氨酸营养缺陷型的回复突变率上升，</text>
+  <text x="960" y="914" font-size="11" fill="#475569">快速筛选致癌物——回复率的放大即诱变性的信号。</text>
+</svg>

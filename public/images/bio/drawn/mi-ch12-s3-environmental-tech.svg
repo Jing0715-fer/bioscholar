@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">环境微生物技术：活性污泥法、A²/O 与厌氧消化、生物修复</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">活性污泥法以菌胶团吸附氧化，SVI&gt;150 mL/g 提示膨胀；A²/O 三区接力脱氮除磷；厌氧消化三阶段互营，沼气 CH₄ 约 55%–70%；湿法冶金供全球约 15%–25% 的铜</text>
+  <rect x="30" y="132" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、活性污泥法：菌胶团吸附氧化 + 原生动物指示 + 污泥回流</text>
+  <rect x="70.54249999999999" y="190.225" width="98.915" height="19.55" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="120" y="204.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">原水（有机物）</text>
+  <line x1="190" y1="200" x2="250" y2="200" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <rect x="250" y="165" width="340" height="110" rx="8" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="2"/>
+  <text x="420" y="188" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">曝气池</text>
+  <circle cx="300" cy="220" r="13" fill="#0f766e" fill-opacity="0.45" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="296" cy="217" r="3" fill="#134e4a"/>
+  <circle cx="304" cy="222" r="3" fill="#134e4a"/>
+  <circle cx="301" cy="215" r="2.5" fill="#134e4a"/>
+  <circle cx="350" cy="245" r="16" fill="#0f766e" fill-opacity="0.45" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="346" cy="242" r="3" fill="#134e4a"/>
+  <circle cx="354" cy="247" r="3" fill="#134e4a"/>
+  <circle cx="351" cy="240" r="2.5" fill="#134e4a"/>
+  <circle cx="400" cy="225" r="14" fill="#0f766e" fill-opacity="0.45" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="396" cy="222" r="3" fill="#134e4a"/>
+  <circle cx="404" cy="227" r="3" fill="#134e4a"/>
+  <circle cx="401" cy="220" r="2.5" fill="#134e4a"/>
+  <circle cx="450" cy="248" r="18" fill="#0f766e" fill-opacity="0.45" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="446" cy="245" r="3" fill="#134e4a"/>
+  <circle cx="454" cy="250" r="3" fill="#134e4a"/>
+  <circle cx="451" cy="243" r="2.5" fill="#134e4a"/>
+  <circle cx="510" cy="228" r="15" fill="#0f766e" fill-opacity="0.45" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="506" cy="225" r="3" fill="#134e4a"/>
+  <circle cx="514" cy="230" r="3" fill="#134e4a"/>
+  <circle cx="511" cy="223" r="2.5" fill="#134e4a"/>
+  <circle cx="545" cy="250" r="12" fill="#0f766e" fill-opacity="0.45" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="541" cy="247" r="3" fill="#134e4a"/>
+  <circle cx="549" cy="252" r="3" fill="#134e4a"/>
+  <circle cx="546" cy="245" r="2.5" fill="#134e4a"/>
+  <ellipse cx="320" cy="200" rx="9" ry="5" fill="#6d28d9" stroke="#4c1d95" stroke-width="1"/>
+  <ellipse cx="470" cy="205" rx="8" ry="4.5" fill="#6d28d9" stroke="#4c1d95" stroke-width="1"/>
+  <circle cx="270" cy="165" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="302" cy="171" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="334" cy="177" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="366" cy="165" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="398" cy="171" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="430" cy="177" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="462" cy="165" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="494" cy="171" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="526" cy="177" r="3" fill="#059669" fill-opacity="0.6"/>
+  <circle cx="558" cy="165" r="3" fill="#059669" fill-opacity="0.6"/>
+  <text x="420" y="288" font-size="10" fill="#64748b" text-anchor="middle">菌胶团絮体吸附氧化有机物；原生动物指示水质</text>
+  <rect x="674.2325" y="190.225" width="51.535000000000004" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="700" y="204.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">二沉池</text>
+  <path d="M 748 165 L 812 250 L 684 250 Z" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="684" y="165" width="128" height="22" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.4"/>
+  <line x1="660" y1="200" x2="682" y2="200" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <line x1="812" y1="200" x2="860" y2="200" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <rect x="920.155" y="190.225" width="39.69" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="940" y="204.14" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">出水</text>
+  <path d="M 748 250 C 748 320, 420 320, 420 278" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="420" y1="286" x2="420" y2="278" stroke="#0f766e" stroke-width="2.6" marker-end="url(#arr-dna)"/>
+  <text x="584" y="330" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">回流污泥（维持污泥浓度）</text>
+  <line x1="748" y1="252" x2="748" y2="300" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="763.4" y="303.5" width="53.2" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="790" y="315.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">剩余污泥</text>
+  <rect x="1030" y="160" width="320" height="132" rx="9" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="1050" y="184" font-size="12.5" fill="#dc2626" font-weight="700">污泥膨胀预警</text>
+  <text x="1050" y="208" font-size="10.5" fill="#475569">SVI 持续超过 150 mL/g 提示丝状菌过度繁殖引发的污泥膨胀——絮体松散、</text>
+  <text x="1050" y="223" font-size="10.5" fill="#475569">沉降恶化。</text>
+  <text x="1050" y="262" font-size="10" fill="#64748b">生物膜法以载体挂膜分层、耐冲击，与活性污泥法并列互补。</text>
+  <rect x="30" y="394" width="660" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="416.84" font-size="19" fill="#475569" font-weight="700">二、A²/O 工艺：厌氧-缺氧-好氧三区接力同步脱氮除磷</text>
+  <rect x="60" y="438" width="180" height="96" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="150" y="460" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">厌氧区</text>
+  <text x="150" y="480" font-size="10.5" fill="#6d28d9" text-anchor="middle" font-weight="700">释磷储 PHA</text>
+  <text x="70" y="498" font-size="9.5" fill="#475569">聚磷菌释放磷、储存 PHA</text>
+  <line x1="240" y1="486" x2="260" y2="486" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <rect x="260" y="438" width="180" height="96" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="350" y="460" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">缺氧区</text>
+  <text x="350" y="480" font-size="10.5" fill="#0369a1" text-anchor="middle" font-weight="700">反硝化脱氮</text>
+  <text x="270" y="498" font-size="9.5" fill="#475569">以有机物为供氢体把 NO₃⁻ 还原为 N₂</text>
+  <line x1="440" y1="486" x2="460" y2="486" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <rect x="460" y="438" width="180" height="96" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.8"/>
+  <text x="550" y="460" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">好氧区</text>
+  <text x="550" y="480" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">硝化 + 超量吸磷</text>
+  <text x="470" y="498" font-size="9.5" fill="#475569">硝化细菌氧化氨；聚磷菌超量吸磷</text>
+  <text x="60" y="566" font-size="11" fill="#1e293b" font-weight="700">磷随剩余污泥排出实现闭环——「一泥两除」的工程智慧。</text>
+  <text x="60" y="596" font-size="10.5" fill="#475569">回流与分区把菌群各自安排在最适电子受体条件下，功能专一而互不干扰。</text>
+  <rect x="710" y="394" width="660" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="416.84" font-size="19" fill="#475569" font-weight="700">三、厌氧消化：三阶段互营接力与种间氢转移</text>
+  <rect x="767.4126" y="432.225" width="85.1748" height="19.55" rx="7" fill="#f1f5f9" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="810" y="446.14" font-size="11.5" fill="#0f766e" text-anchor="middle" font-weight="700">① 水解发酵菌</text>
+  <text x="750" y="480" font-size="10" fill="#475569">有机物 → 单糖 · 氨基酸 · 脂肪酸</text>
+  <rect x="961.4901" y="432.225" width="97.0198" height="19.55" rx="7" fill="#f1f5f9" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1010" y="446.14" font-size="11.5" fill="#d97706" text-anchor="middle" font-weight="700">② 产氢产乙酸菌</text>
+  <text x="950" y="480" font-size="10" fill="#475569">脂肪酸 → 乙酸 + H₂ + CO₂</text>
+  <rect x="1167.4126" y="432.225" width="85.1748" height="19.55" rx="7" fill="#f1f5f9" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1210" y="446.14" font-size="11.5" fill="#6d28d9" text-anchor="middle" font-weight="700">③ 产甲烷古菌</text>
+  <text x="1150" y="480" font-size="10" fill="#475569">乙酸 / H₂+CO₂ → CH₄ + CO₂</text>
+  <line x1="880" y1="442" x2="936" y2="442" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <line x1="1080" y1="442" x2="1136" y2="442" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <path d="M 1010 462 C 960 500, 1100 500, 1050 462" fill="none" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="1030" y="512" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">H₂ 种间氢转移</text>
+  <text x="730" y="544" font-size="10.5" fill="#475569">种间氢转移维持低氢分压，使氧化脂肪酸这类热力学「上坡」反应得以进行——三菌群互营缺一不可。</text>
+  <rect x="742.97705" y="581.075" width="274.0459" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="880" y="593.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">沼气：CH₄ 约 55%–70%（约 60%）+ CO₂ 约 30%–45%</text>
+  <text x="1150" y="616" font-size="10" fill="#64748b" text-anchor="middle">中温约 35 ℃ 或高温约 55 ℃ 运行</text>
+  <rect x="30" y="656" width="1340" height="324" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="678.84" font-size="19" fill="#475569" font-weight="700">四、生物修复、湿法冶金与微生物燃料电池</text>
+  <rect x="50" y="700" width="420" height="200" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="70" y="724" font-size="13" fill="#059669" font-weight="700">生物修复（bioremediation）</text>
+  <text x="70" y="750" font-size="10.5" fill="#475569">1989 年埃克森·瓦尔迪兹号在阿拉斯加威廉王子湾泄漏数万吨原油：</text>
+  <text x="70" y="765" font-size="10.5" fill="#475569">投加缓释氮磷营养盐（生物刺激，激发本土石油降解菌），</text>
+  <text x="70" y="780" font-size="10.5" fill="#475569">增效经对照海滩科学评估确认——「以肥促菌、以菌吃油」确立循证地位。</text>
+  <text x="70" y="838" font-size="10.5" fill="#475569">共代谢降解多环芳烃与农药——微生物以另一种底物为碳源时顺手把污染物改头换面。</text>
+  <rect x="490" y="700" width="420" height="200" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.5"/>
+  <text x="510" y="724" font-size="13" fill="#78350f" font-weight="700">微生物湿法冶金</text>
+  <text x="510" y="750" font-size="10.5" fill="#475569">嗜酸的氧化亚铁硫杆菌把 Fe²⁺ 氧化为 Fe³⁺ 并氧化还原性硫化物；</text>
+  <text x="510" y="765" font-size="10.5" fill="#475569">Fe³⁺ 进而「间接」浸出黄铁矿、辉铜矿等硫化矿——浸出 · 萃取 · 电积三步收铜。</text>
+  <text x="700" y="870" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">贡献全球约 15%–25% 的铜</text>
+  <rect x="930" y="700" width="420" height="200" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="950" y="724" font-size="13" fill="#075985" font-weight="700">微生物燃料电池（MFC）</text>
+  <text x="950" y="750" font-size="10.5" fill="#475569">Geobacter 等以胞外电子传递把电子直接送至电极——耦合产电与废水处理；</text>
+  <text x="950" y="765" font-size="10.5" fill="#475569">功率密度仍是产业化瓶颈。</text>
+  <rect x="980" y="830" width="60" height="44" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="1190" y="830" width="60" height="44" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.4"/>
+  <line x1="1040" y1="852" x2="1190" y2="852" stroke="#1e293b" stroke-width="1.6"/>
+  <line x1="1115" y1="852" x2="1115" y2="826" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="1010" y="890" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">阳极（菌）</text>
+  <text x="1220" y="890" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">阴极</text>
+  <text x="1115" y="812" font-size="9.5" fill="#64748b" text-anchor="middle">外电路</text>
+  <text x="50" y="940" font-size="11.5" fill="#1e293b" font-weight="700">环境微生物技术的共同语法：</text>
+  <text x="50" y="957.25" font-size="11.5" fill="#1e293b" font-weight="700">把自然界亿万年打磨的代谢能力，</text>
+  <text x="50" y="974.5" font-size="11.5" fill="#1e293b" font-weight="700">装进工程师设计的反应器与工艺分区里。</text>
+</svg>

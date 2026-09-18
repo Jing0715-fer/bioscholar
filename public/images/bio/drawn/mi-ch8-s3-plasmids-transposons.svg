@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">质粒与转座因子：F/R/Col/Ti 类群与 IS-Tn 三级结构</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">质粒共性：自主复制（严紧 1–2 拷贝如 F/Ti、松弛如 ColE1）、不相容、非必需、可转移；R100 约 90 kb 经 IS 拼接携五种抗性；Ti 经 T-DNA（约 20 kb）跨界转移；McClintock 1983 年诺奖</text>
+  <rect x="30" y="132" width="1340" height="258" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、质粒的四大共性；F / R / Col / Ti 主要类群</text>
+  <rect x="85.25" y="179.375" width="69.5" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="120" y="194.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">自主复制</text>
+  <text x="-20" y="214" font-size="10" fill="#475569">各有复制起点；严紧型 1–2 拷贝（F、Ti），松弛型数十至上百</text>
+  <text x="-20" y="228" font-size="10" fill="#475569">（ColE1）</text>
+  <rect x="415.25" y="179.375" width="69.5" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="450" y="194.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">不相容性</text>
+  <text x="310" y="214" font-size="10" fill="#475569">同群质粒不能在同一细胞长期共存——据此分群</text>
+  <rect x="735.25" y="179.375" width="69.5" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="770" y="194.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">非必需性</text>
+  <text x="630" y="214" font-size="10" fill="#475569">非生长必需，决定附加性状</text>
+  <rect x="1045.25" y="179.375" width="69.5" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1080" y="194.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">可转移性</text>
+  <text x="940" y="214" font-size="10" fill="#475569">部分可经接合自主转移</text>
+  <rect x="50" y="262" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="289.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">质粒</text>
+  <rect x="190" y="262" width="380" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="289.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="570" y="262" width="380" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="289.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">拷贝与转移</text>
+  <rect x="950" y="262" width="400" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1150" y="289.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">代表</text>
+  <rect x="50" y="306" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="324.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">F 质粒</text>
+  <rect x="190" y="306" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="324.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">致育因子——介导接合转移染色体与质粒</text>
+  <rect x="570" y="306" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="324.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">严紧型，每细胞 1–2 个拷贝</text>
+  <rect x="950" y="306" width="400" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1150" y="324.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">大肠杆菌 F 因子</text>
+  <rect x="50" y="332" width="1300" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="332" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="350.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R 质粒</text>
+  <rect x="190" y="332" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="350.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">抗药性——携带多重耐药基因并传播</text>
+  <rect x="570" y="332" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="350.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">可接合转移（传染性耐药）</text>
+  <rect x="950" y="332" width="400" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1150" y="350.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">R100 约 90 kb</text>
+  <rect x="50" y="358" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="376.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">Col 质粒</text>
+  <rect x="190" y="358" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="376.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">编码细菌素——抑制近缘菌</text>
+  <rect x="570" y="358" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="376.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">松弛型（ColE1 数十至上百拷贝）</text>
+  <rect x="950" y="358" width="400" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1150" y="376.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">大肠杆菌素 ColE1</text>
+  <rect x="50" y="384" width="1300" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="384" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="402.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">Ti 质粒</text>
+  <rect x="190" y="384" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="380" y="402.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">致瘤——细菌到植物的天然跨界转移</text>
+  <rect x="570" y="384" width="380" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="402.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">严紧型；约 200 kb</text>
+  <rect x="950" y="384" width="400" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1150" y="402.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">根癌农杆菌</text>
+  <rect x="30" y="402" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="424.84" font-size="19" fill="#475569" font-weight="700">二、R 质粒：传染性耐药的遗传核心</text>
+  <text x="50" y="442" font-size="12.5" fill="#1e293b" font-weight="700">R100（约 90 kb）结构</text>
+  <line x1="50" y1="478" x2="650" y2="478" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="51" y="463" width="178" height="30" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="140" y="511" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">RTF（转移基因）</text>
+  <rect x="231" y="463" width="34" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="248" y="511" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">IS</text>
+  <rect x="267" y="463" width="64" height="30" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="299" y="511" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">tet</text>
+  <rect x="333" y="463" width="64" height="30" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="365" y="511" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">cm</text>
+  <rect x="399" y="463" width="64" height="30" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="431" y="511" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">sm</text>
+  <rect x="465" y="463" width="64" height="30" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="497" y="511" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">sul</text>
+  <rect x="531" y="463" width="82.00000000000001" height="30" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="572" y="511" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">mer</text>
+  <rect x="615" y="463" width="34" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="632" y="511" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">IS</text>
+  <path d="M 50,525 Q 50,516 59,516 M 641,516 Q 650,516 650,525" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="59" y1="516" x2="641" y2="516" stroke="#64748b" stroke-width="1.7"/>
+  <text x="140" y="538" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">RTF 区</text>
+  <text x="430" y="538" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">r 决定子（抗性串列）</text>
+  <text x="350" y="560" font-size="10" fill="#64748b" text-anchor="middle">四环素 · 氯霉素 · 链霉素 · 磺胺 · 汞离子抗性</text>
+  <rect x="50" y="582" width="610" height="106" rx="9" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="70" y="606" font-size="11.5" fill="#dc2626" font-weight="700">传染性耐药（Mitsuhashi，1950 年代日本痢疾暴发）</text>
+  <text x="70" y="628" font-size="10.5" fill="#475569">志贺菌同时对多种抗生素耐药，且耐药性能在大肠杆菌与志贺菌间经质粒接合高速传播。</text>
+  <text x="70" y="643" font-size="10.5" fill="#475569">R 质粒由 RTF 与 r 决定子经 IS 拼接而成，转座子串列使多重耐药在菌种间播散——AMR 公共卫生问题的遗传核心。</text>
+  <rect x="710" y="402" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="424.84" font-size="19" fill="#475569" font-weight="700">三、Ti 质粒：细菌到植物核基因组的天然跨界转移</text>
+  <rect x="730" y="451" width="120" height="38" rx="19" fill="#ccfbf1" stroke="#134e4a" stroke-width="2.2"/>
+  <text x="790" y="448" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">根癌农杆菌</text>
+  <line x1="726" y1="528" x2="856" y2="528" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="727" y="513" width="56.5" height="30" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="755.25" y="561" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">vir 基因群</text>
+  <rect x="785.5" y="513" width="69.5" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="820.25" y="561" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">T-DNA</text>
+  <text x="726" y="508" font-size="10" fill="#64748b" text-anchor="middle">Ti 质粒（约 200 kb）</text>
+  <ellipse cx="1130" cy="470" rx="130" ry="78" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="1130" cy="470" rx="123" ry="71" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="1130" y="470" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">植物细胞（伤口处）</text>
+  <circle cx="1108" cy="462" r="22" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="1115.7" cy="456.5" r="4.84" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 1095.289831530391,468.83217392807995 q 6.6,-5.5 13.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1120.3376116794227,469.2415129436579 q 6.6,-5.5 13.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1112.7329261976677,450.48561490593687 q 6.6,-5.5 13.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="862" y1="470" x2="992" y2="470" stroke="#b45309" stroke-width="3" marker-end="url(#arr-rna)"/>
+  <text x="927" y="452" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">T-DNA 单链转移</text>
+  <rect x="888.3696" y="484.35" width="77.2608" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="927" y="495.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">LB/RB 各 25 bp</text>
+  <path d="M1062,540L1062.0,540.0L1064.0,537.0L1066.0,534.8L1068.0,534.0L1070.0,534.8L1072.0,537.0L1074.0,540.0L1076.0,543.0L1078.0,545.2L1080.0,546.0L1082.0,545.2L1084.0,543.0L1086.0,540.0L1088.0,537.0L1090.0,534.8L1092.0,534.0L1094.0,534.8L1096.0,537.0L1098.0,540.0L1100.0,543.0L1102.0,545.2L1104.0,546.0L1106.0,545.2L1108.0,543.0L1110.0,540.0L1112.0,537.0L1114.0,534.8L1116.0,534.0L1118.0,534.8L1120.0,537.0L1122.0,540.0L1124.0,543.0L1126.0,545.2L1128.0,546.0L1130.0,545.2L1132.0,543.0L1134.0,540.0L1136.0,537.0L1138.0,534.8L1140.0,534.0L1142.0,534.8L1144.0,537.0L1146.0,540.0L1148.0,543.0L1150.0,545.2L1152.0,546.0L1154.0,545.2L1156.0,543.0L1158.0,540.0L1160.0,537.0L1162.0,534.8L1164.0,534.0L1166.0,534.8L1168.0,537.0L1170.0,540.0L1172.0,543.0L1174.0,545.2L1176.0,546.0L1178.0,545.2L1180.0,543.0L1182.0,540.0" fill="none" stroke="#0f766e" stroke-width="1.6"/>
+  <path d="M1062,540L1062.0,540.0L1064.0,543.0L1066.0,545.2L1068.0,546.0L1070.0,545.2L1072.0,543.0L1074.0,540.0L1076.0,537.0L1078.0,534.8L1080.0,534.0L1082.0,534.8L1084.0,537.0L1086.0,540.0L1088.0,543.0L1090.0,545.2L1092.0,546.0L1094.0,545.2L1096.0,543.0L1098.0,540.0L1100.0,537.0L1102.0,534.8L1104.0,534.0L1106.0,534.8L1108.0,537.0L1110.0,540.0L1112.0,543.0L1114.0,545.2L1116.0,546.0L1118.0,545.2L1120.0,543.0L1122.0,540.0L1124.0,537.0L1126.0,534.8L1128.0,534.0L1130.0,534.8L1132.0,537.0L1134.0,540.0L1136.0,543.0L1138.0,545.2L1140.0,546.0L1142.0,545.2L1144.0,543.0L1146.0,540.0L1148.0,537.0L1150.0,534.8L1152.0,534.0L1154.0,534.8L1156.0,537.0L1158.0,540.0L1160.0,543.0L1162.0,545.2L1164.0,546.0L1166.0,545.2L1168.0,543.0L1170.0,540.0L1172.0,537.0L1174.0,534.8L1176.0,534.0L1178.0,534.8L1180.0,537.0L1182.0,540.0" fill="none" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="1068" y1="534" x2="1068" y2="546" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1080" y1="546" x2="1080" y2="534" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1092" y1="534" x2="1092" y2="546" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1104" y1="546" x2="1104" y2="534" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1116" y1="534" x2="1116" y2="546" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1128" y1="546" x2="1128" y2="534" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1140" y1="534" x2="1140" y2="546" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1152" y1="546" x2="1152" y2="534" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1164" y1="534" x2="1164" y2="546" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1176" y1="546" x2="1176" y2="534" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <text x="1122" y="524" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">整合进核基因组</text>
+  <line x1="1108" y1="486" x2="1118" y2="522" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="1107.55" y="561.5" width="44.900000000000006" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1130" y="573.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">冠瘿瘤</text>
+  <text x="730" y="606" font-size="10.5" fill="#475569">植物伤口分泌酚类（如乙酰丁香酮）激活 vir 操纵子；T-DNA（约 20 kb，两端各一段 25 bp 重复边界序列 LB 与 RB）</text>
+  <text x="730" y="621" font-size="10.5" fill="#475569">被切下转移并整合，诱发冠瘿瘤。</text>
+  <text x="730" y="654" font-size="10.5" fill="#1e293b" font-weight="700">改造后的 T-DNA（卸甲：去瘤基因、装目的基因）</text>
+  <text x="730" y="669.75" font-size="10.5" fill="#1e293b" font-weight="700">成为植物转基因主力载体。</text>
+  <rect x="30" y="714" width="1340" height="266" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="736.84" font-size="19" fill="#475569" font-weight="700">四、转座因子三级：IS · 复合转座子 · Tn3 家族；两种转座机制</text>
+  <line x1="60" y1="760" x2="440" y2="760" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="61" y="745" width="47.4" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="84.7" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">IR</text>
+  <rect x="110.4" y="745" width="279.2" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="250" y="793" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">转座酶 tnp</text>
+  <rect x="391.6" y="745" width="47.4" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="415.3" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">IR</text>
+  <text x="250" y="808" font-size="10" fill="#64748b" text-anchor="middle">插入序列 IS：0.7–1.5 kb（IS1 为 768 bp）</text>
+  <text x="250" y="824" font-size="10" fill="#64748b" text-anchor="middle">IR 约 10–40 bp 反向重复</text>
+  <line x1="480" y1="760" x2="860" y2="760" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="481" y="745" width="55" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="508.5" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">IS</text>
+  <rect x="538" y="745" width="264" height="30" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="670" y="793" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">中央基因（抗性等）</text>
+  <rect x="804" y="745" width="55" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="831.5" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">IS</text>
+  <text x="670" y="808" font-size="10" fill="#64748b" text-anchor="middle">复合转座子 Tn5 / Tn10</text>
+  <text x="670" y="824" font-size="10" fill="#64748b" text-anchor="middle">两个 IS 夹住中央基因</text>
+  <line x1="900" y1="760" x2="1300" y2="760" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="901" y="745" width="34" height="30" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.6"/>
+  <text x="918" y="793" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">IR</text>
+  <rect x="937" y="745" width="130" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1002" y="793" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">tnpA 转座酶</text>
+  <rect x="1069" y="745" width="86" height="30" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1112" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">res</text>
+  <rect x="1157" y="745" width="142" height="30" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1228" y="793" font-size="9" fill="#475569" text-anchor="middle" font-weight="600">tnpR 解离酶</text>
+  <text x="1100" y="808" font-size="10" fill="#64748b" text-anchor="middle">Tn3 家族：含 res 位点</text>
+  <text x="1100" y="824" font-size="10" fill="#64748b" text-anchor="middle">复制型转座经共整合体在 res 解离</text>
+  <rect x="60" y="848" width="620" height="58" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="80" y="870" font-size="12" fill="#1e293b" font-weight="700">复制型转座</text>
+  <text x="155.8" y="870" font-size="10.5" fill="#475569">转座子复制一份插入新位点，经共整合体在 res 解离——拷贝数 +1</text>
+  <rect x="60" y="916" width="620" height="46" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="80" y="938" font-size="12" fill="#1e293b" font-weight="700">非复制型转座</text>
+  <text x="168.16" y="938" font-size="10.5" fill="#475569">剪切-粘贴：整体从原位搬至新位点</text>
+  <rect x="700" y="848" width="640" height="114" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="720" y="872" font-size="12.5" fill="#075985" font-weight="700">基因组进化意义</text>
+  <text x="720" y="896" font-size="11" fill="#475569">驱动基因快递、插入失活、基因组重排与水平转移；McClintock 因玉米「控制因子」的发现获 1983 年诺贝尔奖。</text>
+</svg>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">环境因子对微生物生长的影响：温度钟形曲线与 pH、渗透压、氧的响应</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三基点温度决定钟形曲线，Pyrolobus fumarii 保持 113 ℃ 纪录；一般菌 aw&gt;0.90、金葡菌低至 0.86、嗜干真菌约 0.61；专性厌氧菌缺 SOD 被超氧阴离子杀死；UV 260 nm 成嘧啶二聚体</text>
+  <rect x="30" y="132" width="1340" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、温度：最低、最适、最高三基点决定钟形生长曲线</text>
+  <rect x="70" y="177" width="560" height="175" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="308.25" x2="630" y2="308.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="210" y1="352" x2="210" y2="177" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="264.5" x2="630" y2="264.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="350" y1="352" x2="350" y2="177" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="220.75" x2="630" y2="220.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="490" y1="352" x2="490" y2="177" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="98" y1="352" x2="98" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="374" font-size="13" fill="#64748b" text-anchor="middle">最低温度</text>
+  <line x1="350" y1="352" x2="350" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="350" y="374" font-size="13" fill="#64748b" text-anchor="middle">最适温度</text>
+  <line x1="602" y1="352" x2="602" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="602" y="374" font-size="13" fill="#64748b" text-anchor="middle">最高温度</text>
+  <line x1="64" y1="343.25" x2="70" y2="343.25" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="347.25" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="64" y1="264.5" x2="70" y2="264.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="268.5" font-size="13" fill="#64748b" text-anchor="end">中</text>
+  <line x1="64" y1="185.75" x2="70" y2="185.75" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="189.75" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="350" y="396" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">温度</text>
+  <text x="24" y="264.5" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">相对生长速率</text>
+  <line x1="98" y1="352" x2="98" y2="177" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+  <line x1="350" y1="352" x2="350" y2="177" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+  <line x1="602" y1="352" x2="602" y2="177" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+  <path d="M86.8,348.5 L126.0,334.5 L170.8,303.0 L238.0,243.5 L305.2,191.0 L350.0,177.0 L394.8,189.3 L462.0,243.5 L529.2,303.0 L574.0,334.5 L613.2,348.5" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <text x="350" y="161" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">钟形曲线：峰即最适温度</text>
+  <text x="70" y="384" font-size="10.5" fill="#64748b">低于最低温度不生长（代谢停滞）；高于最高温度蛋白质变性加速、死亡超过增殖。</text>
+  <rect x="670" y="190" width="650" height="88" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="690" y="216" font-size="13" fill="#1e293b" font-weight="700">五类温度型（按最适温度划分）</text>
+  <text x="690" y="240" font-size="11" fill="#475569">专性嗜冷 → 兼性嗜冷 → 嗜温 → 嗜热 → 超嗜热；代表生境从极地深海、冷藏食品、温带环境、温泉堆肥到海底热泉。</text>
+  <rect x="670" y="292" width="650" height="66" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="690" y="316" font-size="12.5" fill="#dc2626" font-weight="700">增殖温度纪录</text>
+  <text x="786" y="316" font-size="11.5" fill="#475569">超嗜热古菌 Pyrolobus fumarii 保持 113 ℃ 增殖纪录</text>
+  <rect x="30" y="414" width="660" height="232" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="436.84" font-size="19" fill="#475569" font-weight="700">二、pH 与水分活度：胞外可以极端，胞内必须中性；「可用之水」</text>
+  <rect x="60" y="464" width="300" height="128" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="60" y1="560" x2="360" y2="560" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="135" y1="592" x2="135" y2="464" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="60" y1="528" x2="360" y2="528" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="210" y1="592" x2="210" y2="464" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="60" y1="496" x2="360" y2="496" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="285" y1="592" x2="285" y2="464" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="84" y1="592" x2="84" y2="598" stroke="#475569" stroke-width="1.8"/>
+  <text x="84" y="614" font-size="13" fill="#64748b" text-anchor="middle">pH 1</text>
+  <line x1="210" y1="592" x2="210" y2="598" stroke="#475569" stroke-width="1.8"/>
+  <text x="210" y="614" font-size="13" fill="#64748b" text-anchor="middle">pH 7</text>
+  <line x1="336" y1="592" x2="336" y2="598" stroke="#475569" stroke-width="1.8"/>
+  <text x="336" y="614" font-size="13" fill="#64748b" text-anchor="middle">pH 13</text>
+  <line x1="54" y1="585.6" x2="60" y2="585.6" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="589.6" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="54" y1="528" x2="60" y2="528" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="532" font-size="13" fill="#64748b" text-anchor="end">中</text>
+  <line x1="54" y1="470.4" x2="60" y2="470.4" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="474.4" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="210" y="636" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">pH</text>
+  <text x="14" y="528" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">相对生长速率</text>
+  <path d="M66.0,589.4 L105.0,572.8 L144.0,528.0 L174.0,483.2 L204.0,464.0 L234.0,483.2 L264.0,528.0 L300.0,572.8 L345.0,589.4" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="204" y="450" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">多数菌最适近中性</text>
+  <text x="50" y="618" font-size="10" fill="#64748b">嗜酸菌胞内仍近中性：质子泵与 K⁺/H⁺ 反向转运构成反向离子梯度；</text>
+  <text x="50" y="632" font-size="10" fill="#64748b">生理酸性盐会使培养过程 pH 漂移。</text>
+  <text x="370" y="462" font-size="12.5" fill="#1e293b" font-weight="700">水分活度 aw 阈值</text>
+  <line x1="375" y1="516" x2="645" y2="516" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <line x1="539.7" y1="508" x2="539.7" y2="524" stroke="#1e293b" stroke-width="2"/>
+  <text x="539.7" y="494" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">0.61</text>
+  <text x="539.7" y="478" font-size="9.5" fill="#64748b" text-anchor="middle">嗜干真菌极限</text>
+  <line x1="607.2" y1="508" x2="607.2" y2="524" stroke="#1e293b" stroke-width="2"/>
+  <text x="607.2" y="546" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">0.86</text>
+  <text x="607.2" y="562" font-size="9.5" fill="#64748b" text-anchor="middle">金黄色葡萄球菌</text>
+  <line x1="618" y1="508" x2="618" y2="524" stroke="#1e293b" stroke-width="2"/>
+  <text x="618" y="494" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">0.90</text>
+  <text x="618" y="478" font-size="9.5" fill="#64748b" text-anchor="middle">一般细菌要求</text>
+  <text x="375" y="534" font-size="10" fill="#64748b" text-anchor="middle">0</text>
+  <text x="645" y="534" font-size="10" fill="#64748b" text-anchor="middle">1.0</text>
+  <text x="370" y="592" font-size="11" fill="#1e293b" font-weight="700">耐渗靠积累相容溶质——</text>
+  <rect x="542.185" y="579.075" width="35.629999999999995" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="591.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">甘油</text>
+  <rect x="604.7775" y="579.075" width="46.445" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="628" y="591.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">甜菜碱</text>
+  <text x="370" y="618" font-size="10" fill="#64748b">——不干扰胞内代谢而维持渗透平衡。</text>
+  <rect x="536.7775" y="609.075" width="46.445" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="621.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">海藻糖</text>
+  <rect x="710" y="414" width="660" height="232" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="436.84" font-size="19" fill="#475569" font-weight="700">三、对氧的五类反应型：SOD 与过氧化氢酶决定生死</text>
+  <circle cx="736" cy="466" r="3.5" fill="#0369a1"/>
+  <text x="748" y="470" font-size="11.5" fill="#1e293b" font-weight="700">专性需氧</text>
+  <text x="836" y="470" font-size="10.5" fill="#475569">必须 O₂</text>
+  <text x="836" y="484" font-size="9.5" fill="#64748b">结核分枝杆菌等</text>
+  <circle cx="736" cy="496" r="3.5" fill="#0369a1"/>
+  <text x="748" y="500" font-size="11.5" fill="#1e293b" font-weight="700">微需氧</text>
+  <text x="836" y="500" font-size="10.5" fill="#475569">需低浓度 O₂（约 1%–10%）</text>
+  <text x="836" y="514" font-size="9.5" fill="#64748b">空肠弯曲菌、幽门螺杆菌</text>
+  <circle cx="736" cy="526" r="3.5" fill="#0369a1"/>
+  <text x="748" y="530" font-size="11.5" fill="#1e293b" font-weight="700">兼性厌氧</text>
+  <text x="836" y="530" font-size="10.5" fill="#475569">有氧无氧皆可</text>
+  <text x="836" y="544" font-size="9.5" fill="#64748b">大肠杆菌等</text>
+  <circle cx="736" cy="556" r="3.5" fill="#0369a1"/>
+  <text x="748" y="560" font-size="11.5" fill="#1e293b" font-weight="700">耐氧厌氧</text>
+  <text x="836" y="560" font-size="10.5" fill="#475569">不需 O₂ 但可耐受</text>
+  <text x="836" y="574" font-size="9.5" fill="#64748b">乳酸菌等</text>
+  <circle cx="736" cy="586" r="3.5" fill="#0369a1"/>
+  <text x="748" y="590" font-size="11.5" fill="#1e293b" font-weight="700">专性厌氧</text>
+  <text x="836" y="590" font-size="10.5" fill="#475569">O₂ 有害，缺乏 SOD 被超氧阴离子杀死</text>
+  <text x="836" y="604" font-size="9.5" fill="#64748b">产气荚膜梭菌等</text>
+  <rect x="751.6639250000001" y="625.075" width="76.67214999999999" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="790" y="637.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">2 O₂⁻ + 2H⁺</text>
+  <line x1="856" y1="634" x2="906" y2="634" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="881" y="618" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">SOD</text>
+  <rect x="918.746975" y="625.075" width="66.50604999999999" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="952" y="637.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">H₂O₂ + O₂</text>
+  <line x1="1016" y1="634" x2="1066" y2="634" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="1041" y="618" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">过氧化氢酶</text>
+  <rect x="1094.63805" y="625.075" width="70.72389999999999" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1130" y="637.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">2 H₂O + O₂</text>
+  <rect x="30" y="658" width="660" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="680.84" font-size="19" fill="#475569" font-weight="700">四、辐射：紫外线成嘧啶二聚体，γ 射线穿透力强</text>
+  <path d="M 60 700 q 10 -14 20 0 q 10 14 20 0 q 10 -14 20 0 q 10 14 20 0 q 10 -14 20 0 q 10 14 20 0" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M 60 722 q 10 -14 20 0 q 10 14 20 0 q 10 -14 20 0 q 10 14 20 0 q 10 -14 20 0 q 10 14 20 0" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="70" y1="700" x2="70" y2="722" stroke="#0f766e" stroke-width="1.2" opacity="0.5"/>
+  <line x1="90" y1="700" x2="90" y2="722" stroke="#0f766e" stroke-width="1.2" opacity="0.5"/>
+  <line x1="110" y1="700" x2="110" y2="722" stroke="#0f766e" stroke-width="1.2" opacity="0.5"/>
+  <line x1="130" y1="700" x2="130" y2="722" stroke="#0f766e" stroke-width="1.2" opacity="0.5"/>
+  <line x1="150" y1="700" x2="150" y2="722" stroke="#0f766e" stroke-width="1.2" opacity="0.5"/>
+  <line x1="170" y1="700" x2="170" y2="722" stroke="#0f766e" stroke-width="1.2" opacity="0.5"/>
+  <line x1="130" y1="700" x2="150" y2="700" stroke="#dc2626" stroke-width="4"/>
+  <line x1="130" y1="722" x2="150" y2="722" stroke="#dc2626" stroke-width="4"/>
+  <line x1="133" y1="706" x2="147" y2="706" stroke="#dc2626" stroke-width="2"/>
+  <line x1="133" y1="716" x2="147" y2="716" stroke="#dc2626" stroke-width="2"/>
+  <text x="140" y="748" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">胸腺嘧啶二聚体</text>
+  <path d="M 300 690 q 8 -12 16 0 q 8 12 16 0" fill="none" stroke="#d97706" stroke-width="2"/>
+  <line x1="330" y1="692" x2="245" y2="706" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-mute)"/>
+  <text x="380" y="700" font-size="10.5" fill="#475569">紫外线杀菌作用集中于 260 nm 附近（核酸吸收峰，</text>
+  <text x="380" y="715" font-size="10.5" fill="#475569">低压汞灯主发射 254 nm）：相邻嘧啶形成二聚体，</text>
+  <text x="380" y="730" font-size="10.5" fill="#475569">阻断复制与转录——穿透力弱，只适表面消毒。</text>
+  <text x="380" y="772" font-size="10.5" fill="#475569">γ 射线等电离辐射穿透力强，适合热敏医疗器械与食品。</text>
+  <rect x="710" y="658" width="660" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="680.84" font-size="19" fill="#475569" font-weight="700">五、厌氧培养：除氧手段与氧化还原电位指示剂</text>
+  <rect x="783.2325" y="706.225" width="53.535000000000004" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="810" y="720.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">厌氧罐</text>
+  <text x="810" y="744" font-size="10" fill="#64748b" text-anchor="middle">密闭罐内以产气袋耗氧</text>
+  <rect x="953.62" y="706.225" width="112.76" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1010" y="720.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">焦性没食子酸吸氧</text>
+  <text x="1010" y="744" font-size="10" fill="#64748b" text-anchor="middle">化学吸氧法</text>
+  <rect x="1159.5425" y="706.225" width="100.915" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1210" y="720.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">亨盖特滚管技术</text>
+  <text x="1210" y="744" font-size="10" fill="#64748b" text-anchor="middle">培养基内还原厌氧</text>
+  <text x="730" y="786" font-size="10.5" fill="#475569">以美蓝、刃天青监控培养体系 Eh（氧化还原电位）；专性厌氧菌必须在低 Eh 下分离培养。</text>
+  <rect x="30" y="820" width="1340" height="160" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="842.84" font-size="19" fill="#475569" font-weight="700">六、五类温度型的生长范围与代表</text>
+  <rect x="60" y="852" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="879.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">温度型</text>
+  <rect x="220" y="852" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="879.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">生长范围</text>
+  <rect x="420" y="852" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="879.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">最适温度</text>
+  <rect x="620" y="852" width="720" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="879.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">代表与生境</text>
+  <rect x="60" y="896" width="160" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="913.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">专性嗜冷</text>
+  <rect x="220" y="896" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="913.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">低温</text>
+  <rect x="420" y="896" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="913.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 15 ℃ 以下</text>
+  <rect x="620" y="896" width="720" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="913.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">极地、深海与冷藏食品中的细菌</text>
+  <rect x="60" y="920" width="1280" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="920" width="160" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="937.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">兼性嗜冷</text>
+  <rect x="220" y="920" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="937.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">低温至中温</text>
+  <rect x="420" y="920" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="937.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 20–30 ℃</text>
+  <rect x="620" y="920" width="720" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="937.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">冷藏食品的腐败菌</text>
+  <rect x="60" y="944" width="160" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="961.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">嗜温</text>
+  <rect x="220" y="944" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="961.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中温</text>
+  <rect x="420" y="944" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="961.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 25–37 ℃</text>
+  <rect x="620" y="944" width="720" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="961.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">绝大多数环境菌与人体寄生菌</text>
+  <rect x="60" y="968" width="1280" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="968" width="160" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="985.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">嗜热</text>
+  <rect x="220" y="968" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="985.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高温</text>
+  <rect x="420" y="968" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="985.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 50–60 ℃</text>
+  <rect x="620" y="968" width="720" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="985.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">温泉、堆肥、热管道中的细菌</text>
+  <rect x="60" y="992" width="160" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="1009.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">超嗜热</text>
+  <rect x="220" y="992" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="1009.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">更高温</text>
+  <rect x="420" y="992" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="1009.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">80 ℃ 以上</text>
+  <rect x="620" y="992" width="720" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="1009.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">海底热泉古菌——Pyrolobus fumarii 保持 113 ℃ 增殖纪录</text>
+</svg>

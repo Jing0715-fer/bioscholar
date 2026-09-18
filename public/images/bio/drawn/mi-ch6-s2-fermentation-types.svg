@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">发酵类型与经典工业产物：从 NAD⁺ 再生闭环到 IMViC 鉴定</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">乙醇发酵 1 葡萄糖 → 2 乙醇 + 2 CO₂（净得 2 ATP）；同型乳酸净得 2 ATP、异型仅 1；大肠杆菌 IMViC ++−−，产气肠杆菌 −−++；ABE 发酵 pH≈4.3 转溶剂（3:6:1）</text>
+  <rect x="30" y="132" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、乙醇发酵的 NAD⁺ 再生闭环；同型与异型乳酸发酵</text>
+  <rect x="300.6875" y="179.375" width="58.625" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="330" y="194.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">葡萄糖</text>
+  <line x1="330" y1="206" x2="330" y2="246" stroke="#475569" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="392" y="228" font-size="10.5" fill="#64748b" text-anchor="middle">EMP（净得 2 ATP）</text>
+  <rect x="300.6875" y="257.375" width="58.625" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="330" y="272.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">丙酮酸</text>
+  <line x1="330" y1="284" x2="330" y2="324" stroke="#475569" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="445" y="306" font-size="10.5" fill="#64748b" text-anchor="middle">丙酮酸脱羧酶（放出 CO₂）</text>
+  <rect x="307.125" y="335.375" width="45.75" height="21.25" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="330" y="350.5" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">乙醛</text>
+  <line x1="330" y1="362" x2="330" y2="402" stroke="#475569" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="452" y="384" font-size="10.5" fill="#64748b" text-anchor="middle">乙醇脱氢酶 · NADH → NAD⁺</text>
+  <rect x="307.125" y="413.375" width="45.75" height="21.25" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="330" y="428.5" font-size="12.5" fill="#059669" text-anchor="middle" font-weight="700">乙醇</text>
+  <path d="M 262 232 C 200 232, 200 380, 260 384" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="268" y1="384" x2="278" y2="384" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="186" y="308" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">NAD⁺</text>
+  <path d="M 398 384 C 452 380, 452 232, 396 232" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="470" y="308" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">NADH</text>
+  <text x="330" y="452" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">总反应：1 葡萄糖 → 2 乙醇 + 2 CO₂（净得 2 ATP）</text>
+  <rect x="118.9675" y="337.925" width="102.065" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="170" y="349.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">亚硫酸氢盐固定乙醛</text>
+  <line x1="240" y1="346" x2="296" y2="346" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <text x="170" y="380" font-size="10.5" fill="#dc2626" text-anchor="middle">产物改道 → 甘油</text>
+  <rect x="690" y="168" width="650" height="128" rx="9" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="710" y="194" font-size="13" fill="#059669" font-weight="700">同型乳酸发酵（德氏乳杆菌等）</text>
+  <text x="710" y="220" font-size="11.5" fill="#475569">走 EMP 途径——丙酮酸直接被乳酸脱氢酶还原：</text>
+  <text x="710" y="248" font-size="12" fill="#059669" font-weight="700">1 葡萄糖 → 2 乳酸，净得 2 ATP（终产物「纯粹」）</text>
+  <rect x="690" y="308" width="650" height="128" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="710" y="334" font-size="13" fill="#78350f" font-weight="700">异型乳酸发酵（肠膜明串珠菌）</text>
+  <text x="710" y="360" font-size="11.5" fill="#475569">缺醛缩酶，改走 6-磷酸葡糖酸途径 · 磷酸酮解酶：</text>
+  <text x="710" y="388" font-size="12" fill="#78350f" font-weight="700">1 葡萄糖 → 乳酸 + 乙醇 + CO₂ 各 1，仅净得 1 ATP</text>
+  <text x="690" y="452" font-size="11" fill="#64748b">双歧杆菌的「双歧途径」为 PK 途径变体：每分子葡萄糖净得约 2.5 ATP，产物为乳酸与乙酸——产能反而较高。</text>
+  <rect x="30" y="482" width="1340" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">二、发酵类型速查：产物、途径与检测应用</text>
+  <rect x="50" y="520" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">发酵类型</text>
+  <rect x="168" y="520" width="148" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表菌</text>
+  <rect x="316" y="520" width="228" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">关键途径或酶</text>
+  <rect x="544" y="520" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要产物</text>
+  <rect x="874" y="520" width="106" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">ATP/葡萄糖</text>
+  <rect x="980" y="520" width="370" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">检测应用</text>
+  <rect x="50" y="564" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="587.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">乙醇发酵</text>
+  <rect x="168" y="564" width="148" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="587.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">酿酒酵母</text>
+  <rect x="316" y="564" width="228" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="587.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">丙酮酸脱羧酶 + 乙醇脱氢酶</text>
+  <rect x="544" y="564" width="330" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="587.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">2 乙醇 + 2 CO₂</text>
+  <rect x="874" y="564" width="106" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="587.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">2</text>
+  <rect x="980" y="564" width="370" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="587.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">酿酒、面包工业</text>
+  <rect x="50" y="600" width="1300" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="600" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="623.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">同型乳酸发酵</text>
+  <rect x="168" y="600" width="148" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="623.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">德氏乳杆菌</text>
+  <rect x="316" y="600" width="228" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="623.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">EMP 途径</text>
+  <rect x="544" y="600" width="330" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="623.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">2 乳酸</text>
+  <rect x="874" y="600" width="106" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="623.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">2</text>
+  <rect x="980" y="600" width="370" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="623.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">乳制品、酸奶</text>
+  <rect x="50" y="636" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="659.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">异型乳酸发酵</text>
+  <rect x="168" y="636" width="148" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="659.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">肠膜明串珠菌</text>
+  <rect x="316" y="636" width="228" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="659.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">磷酸酮解酶（PK）途径</text>
+  <rect x="544" y="636" width="330" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="659.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">乳酸 + 乙醇 + CO₂</text>
+  <rect x="874" y="636" width="106" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="659.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">1</text>
+  <rect x="980" y="636" width="370" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="659.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">泡菜风味</text>
+  <rect x="50" y="672" width="1300" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="672" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="695.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">混合酸发酵</text>
+  <rect x="168" y="672" width="148" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="695.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">大肠杆菌</text>
+  <rect x="316" y="672" width="228" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="695.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">多分支还原</text>
+  <rect x="544" y="672" width="330" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="695.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">乳酸、乙酸、甲酸、琥珀酸</text>
+  <rect x="874" y="672" width="106" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="695.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="980" y="672" width="370" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="695.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">MR 阳性 · IMViC ++−−</text>
+  <rect x="50" y="708" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="731.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">丁二醇发酵</text>
+  <rect x="168" y="708" width="148" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="731.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">产气肠杆菌</text>
+  <rect x="316" y="708" width="228" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="731.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">乙偶姻途径</text>
+  <rect x="544" y="708" width="330" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="731.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">2,3-丁二醇</text>
+  <rect x="874" y="708" width="106" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="731.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="980" y="708" width="370" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="731.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V-P 阳性 · IMViC −−++</text>
+  <rect x="50" y="744" width="1300" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="744" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="767.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">丙酮丁醇发酵</text>
+  <rect x="168" y="744" width="148" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="242" y="767.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">丙酮丁醇梭菌</text>
+  <rect x="316" y="744" width="228" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="767.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">ABE 发酵</text>
+  <rect x="544" y="744" width="330" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="709" y="767.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">丙酮 : 丁醇 : 乙醇 ≈ 3 : 6 : 1</text>
+  <rect x="874" y="744" width="106" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="927" y="767.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="980" y="744" width="370" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="767.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">工业溶剂（pH≈4.3 转溶剂）</text>
+  <rect x="30" y="822" width="1340" height="158" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="844.84" font-size="19" fill="#475569" font-weight="700">三、肠杆菌鉴定的 IMViC 对照与 ABE 发酵转折</text>
+  <rect x="50" y="852" width="620" height="100" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="70" y="880" font-size="13" fill="#1e293b" font-weight="700">IMViC 四联试验</text>
+  <text x="70" y="904" font-size="11.5" fill="#475569">吲哚 I · 甲基红 M · V-P Vi · 柠檬酸 C：大肠杆菌 ++−−（混合酸型）；产气肠杆菌 −−++（丁二醇型）。</text>
+  <text x="70" y="940" font-size="11" fill="#64748b">——发酵产物特征是肠杆菌科鉴定的经典基石。</text>
+  <rect x="690" y="852" width="650" height="100" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#d97706" stroke-width="1.4"/>
+  <text x="710" y="880" font-size="13" fill="#92400e" font-weight="700">ABE 发酵的酸衰转溶剂</text>
+  <text x="710" y="904" font-size="11.5" fill="#475569">丙酮丁醇梭菌先产酸，pH 约降至 4.3 时代谢改道转向溶剂合成——丙酮 : 丁醇 : 乙醇 ≈ 3 : 6 : 1。</text>
+</svg>

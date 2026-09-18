@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">自养代谢：光能自养三方案与化能自养产能</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">蓝细菌双系统光解水放氧，紫细菌单系统以 H₂S 为供体不放氧，菌视紫质直接光泵质子；Calvin 循环每 3 CO₂ 耗 9 ATP + 6 NADPH；1977 年热泉见化学合成生态</text>
+  <rect x="30" y="132" width="1340" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、光能自养的三种方案：蓝细菌双系统放氧 · 紫色细菌单系统不放氧 · 菌视紫质直接泵质子</text>
+  <rect x="182.4275" y="196.525" width="145.145" height="22.95" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="255" y="212.86" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">蓝细菌（产氧光合）</text>
+  <rect x="120" y="296" width="74" height="34" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="157" y="317" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">PSII</text>
+  <rect x="330" y="296" width="74" height="34" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="367" y="317" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">PSI</text>
+  <circle cx="255" cy="240" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="243" y1="250" x2="172" y2="290" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-mute)"/>
+  <line x1="267" y1="250" x2="352" y2="290" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-mute)"/>
+  <text x="255" y="222" font-size="11" fill="#d97706" text-anchor="middle" font-weight="700">光</text>
+  <rect x="65.398725" y="346.225" width="37.20255" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="84" y="360.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">H₂O</text>
+  <line x1="102" y1="344" x2="138" y2="334" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="69.070675" y="282.225" width="29.85865" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="84" y="296.14" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">O₂</text>
+  <line x1="124" y1="296" x2="104" y2="294" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <line x1="194" y1="313" x2="330" y2="313" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <text x="262" y="300" font-size="10" fill="#64748b" text-anchor="middle">电子传递链</text>
+  <line x1="404" y1="313" x2="448" y2="313" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <rect x="424.23675000000003" y="304.075" width="47.5265" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="448" y="316.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">NADPH</text>
+  <text x="70" y="396" font-size="11" fill="#475569">PSII 与 PSI 串联光解水放氧，电子终传给 NADP⁺；</text>
+  <text x="70" y="412" font-size="11" fill="#475569">捕光天线含叶绿素 a 与藻胆蛋白。</text>
+  <rect x="598.5225" y="196.525" width="172.955" height="22.95" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="685" y="212.86" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">紫色细菌（不产氧光合）</text>
+  <rect x="643" y="296" width="84" height="36" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="685" y="318" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">单一反应中心</text>
+  <path d="M 727 300 C 770 262, 600 262, 648 296" fill="none" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <path d="M 643 332 C 600 368, 770 368, 722 334" fill="none" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="685" y="268" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">环式电子流</text>
+  <rect x="541.398725" y="342.225" width="37.20255" height="19.55" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="560" y="356.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">H₂S</text>
+  <line x1="590" y1="348" x2="645" y2="336" stroke="#d97706" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="775.5617" y="342.65" width="72.8766" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="812" y="355.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">S⁰ / SO₄²⁻</text>
+  <line x1="727" y1="336" x2="782" y2="348" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="685" y="246" font-size="10" fill="#64748b" text-anchor="middle">细菌叶绿素集光</text>
+  <text x="500" y="396" font-size="11" fill="#475569">仅具单一光合系统，以 H₂S 等为电子供体、细菌叶绿素集光，从不放氧</text>
+  <text x="500" y="412" font-size="11" fill="#475569">（绿细菌同属此列）。</text>
+  <rect x="1020.475" y="196.525" width="159.05" height="22.95" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1100" y="212.86" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">嗜盐古菌（菌视紫质）</text>
+  <g><circle cx="930" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="930" y1="310" x2="930" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="930" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="954" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="954" y1="310" x2="954" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="954" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="978" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="978" y1="310" x2="978" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="978" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1002" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1002" y1="310" x2="1002" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1002" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1026" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1026" y1="310" x2="1026" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1026" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1050" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1050" y1="310" x2="1050" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1050" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1074" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1074" y1="310" x2="1074" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1074" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1098" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1098" y1="310" x2="1098" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1098" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1122" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1122" y1="310" x2="1122" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1122" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1146" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1146" y1="310" x2="1146" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1146" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1170" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1170" y1="310" x2="1170" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1170" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1194" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1194" y1="310" x2="1194" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1194" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1218" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1218" y1="310" x2="1218" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1218" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1242" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1242" y1="310" x2="1242" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1242" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1266" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1266" y1="310" x2="1266" y2="348" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1266" cy="352" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1012" y="282" width="26" height="94" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="950" y="268" font-size="11.5" fill="#78350f" font-weight="700">菌视紫质</text>
+  <path d="M 1082 236 q 8 -12 16 0 q 8 12 16 0" fill="none" stroke="#d97706" stroke-width="2"/>
+  <line x1="1114" y1="236" x2="1044" y2="276" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-mute)"/>
+  <line x1="1004" y1="356" x2="1004" y2="300" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <rect x="936.0264999999999" y="361.5" width="47.947" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="960" y="373.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">H⁺ 泵出</text>
+  <rect x="1210" y="282" width="24" height="94" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="1196" y="268" font-size="11" fill="#134e4a" font-weight="700">ATP 合酶</text>
+  <line x1="1234" y1="322" x2="1272" y2="322" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <rect x="1270.94205" y="313.075" width="34.1159" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1288" y="325.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">ATP</text>
+  <text x="920" y="396" font-size="11" fill="#475569">菌视紫质吸收光后直接把 H⁺ 泵出膜外建立质子梯度——不经电子传递即产 ATP。</text>
+  <rect x="30" y="512" width="660" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="534.84" font-size="19" fill="#475569" font-weight="700">二、化能自养：氧化无机物获能（硝化 · 硫氧化 · 氢氧化）</text>
+  <rect x="84.9378" y="575.8" width="40.1244" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="105" y="590.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">NH₃</text>
+  <line x1="140" y1="586" x2="258" y2="586" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <text x="200" y="570" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">氨氧化</text>
+  <rect x="272.5388" y="575.8" width="46.9224" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="296" y="590.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">NO₂⁻</text>
+  <line x1="332" y1="586" x2="450" y2="586" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <text x="392" y="570" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">亚硝酸氧化</text>
+  <rect x="464.5388" y="575.8" width="46.9224" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="488" y="590.32" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">NO₃⁻</text>
+  <text x="200" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">亚硝化单胞菌属 · ΔG°′≈−275 kJ/mol</text>
+  <text x="392" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">硝化杆菌属 · 产能更少</text>
+  <rect x="73.7838" y="652.225" width="62.43240000000001" height="19.55" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="105" y="666.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">H₂S / S⁰</text>
+  <line x1="152" y1="662" x2="300" y2="662" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <text x="226" y="646" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">硫杆菌氧化</text>
+  <rect x="319.883975" y="652.225" width="50.23205" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="345" y="666.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">SO₄²⁻</text>
+  <rect x="74.2267" y="702.65" width="61.5466" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="105" y="715.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">H₂ + ½O₂</text>
+  <line x1="160" y1="712" x2="330" y2="712" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <text x="245" y="696" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">氢细菌（真养产碱菌）</text>
+  <text x="245" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">ΔG°′≈−237 kJ/mol · 多为兼性自养</text>
+  <rect x="353.398725" y="702.225" width="37.20255" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="372" y="716.14" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">H₂O</text>
+  <text x="430" y="646" font-size="10.5" fill="#475569">两级硝化各自产能很少，</text>
+  <text x="430" y="661" font-size="10.5" fill="#475569">故硝化细菌生长缓慢——世代以小时计。</text>
+  <rect x="710" y="512" width="660" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="534.84" font-size="19" fill="#475569" font-weight="700">三、碳同化途径多元：Calvin 循环为先固定、再还原、后再生</text>
+  <rect x="776.90445" y="568.225" width="46.1911" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="800" y="582.14" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">RuBP</text>
+  <line x1="842" y1="578" x2="952" y2="578" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <text x="897" y="562" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">RuBisCO 固定 CO₂</text>
+  <rect x="958.67745" y="568.65" width="66.64510000000001" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="992" y="581.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">2×3-PGA</text>
+  <line x1="992" y1="598" x2="992" y2="650" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <text x="1004" y="622" font-size="10" fill="#134e4a" font-weight="700">ATP + NADPH（还原）</text>
+  <rect x="965.2325" y="662.225" width="53.535000000000004" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="992" y="676.14" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">三碳糖</text>
+  <line x1="950" y1="672" x2="842" y2="672" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="897" y="656" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">再生（耗 ATP）</text>
+  <line x1="800" y1="598" x2="800" y2="650" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-ink)"/>
+  <rect x="1090" y="548" width="260" height="140" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1110" y="576" font-size="12.5" fill="#1e293b" font-weight="700">化学计量</text>
+  <text x="1110" y="600" font-size="11" fill="#475569">每固定 3 个 CO₂ 合成 1 个三碳糖，</text>
+  <text x="1110" y="616" font-size="11" fill="#475569">净耗 9 个 ATP 与 6 个 NADPH。</text>
+  <text x="1110" y="650" font-size="10.5" fill="#64748b">Calvin 与 Benson 以 ¹⁴C 标记配合二维纸层析拼出循环</text>
+  <text x="1110" y="665" font-size="10.5" fill="#64748b">（1961 年诺贝尔奖）。</text>
+  <text x="730" y="716" font-size="11" fill="#475569">其他固碳路线：逆向 TCA 循环 · 3-HP 途径 · 乙酰辅酶 A 途径</text>
+  <text x="730" y="732" font-size="11" fill="#475569">（严格厌氧菌）。</text>
+  <text x="730" y="742" font-size="10" fill="#64748b" text-anchor="middle">「先固定、再还原、后再生」三阶段框架适用于理解一切自养固碳</text>
+  <rect x="30" y="774" width="1340" height="206" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="796.84" font-size="19" fill="#475569" font-weight="700">四、深海热泉（1977 年「阿尔文号」· 加拉帕戈斯裂谷）：完全脱离阳光的化学合成生态</text>
+  <line x1="60" y1="946" x2="400" y2="946" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="180,946 196,862 244,862 260,946" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <polygon points="196,862 206,838 234,838 244,862" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 220 836 C 190 812, 250 800, 218 780" fill="none" opacity="0.75" stroke="#d97706" stroke-width="3"/>
+  <path d="M 220 836 C 250 814, 186 796, 226 778" fill="none" opacity="0.75" stroke="#d97706" stroke-width="3"/>
+  <text x="150" y="800" font-size="10.5" fill="#d97706" text-anchor="middle" font-weight="700">富 H₂S 热液</text>
+  <text x="220" y="968" font-size="10" fill="#64748b" text-anchor="middle">海底热泉喷口</text>
+  <rect x="434.5384" y="867.8" width="70.9232" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="470" y="882.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">H₂S + O₂</text>
+  <text x="470" y="906" font-size="10" fill="#64748b" text-anchor="middle">氧化获能</text>
+  <line x1="570" y1="878" x2="580" y2="878" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="636.74" y="867.8" width="106.52" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="690" y="882.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">硫化物氧化细菌</text>
+  <text x="690" y="906" font-size="10" fill="#64748b" text-anchor="middle">获能并固定 CO₂</text>
+  <line x1="790" y1="878" x2="820" y2="878" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="889.1" y="867.8" width="81.80000000000001" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="930" y="882.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">初级生产者</text>
+  <text x="930" y="906" font-size="10" fill="#64748b" text-anchor="middle">黑暗深海取代植物</text>
+  <line x1="1030" y1="878" x2="1050" y2="878" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="1106.74" y="867.8" width="106.52" height="20.4" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1160" y="882.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">管虫等深海群落</text>
+  <text x="1160" y="906" font-size="10" fill="#64748b" text-anchor="middle">消费者</text>
+  <text x="470" y="938" font-size="11.5" fill="#475569">生态系可以完全脱离阳光运转——热液硫化物供养细菌初级生产，颠覆「一切生态系终须依靠阳光」的成见。</text>
+</svg>
