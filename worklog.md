@@ -444,3 +444,28 @@ Work Log:
 Stage Summary:
 - 平台终态：176 张挂载插图（125 Commons + 18 web 教材图源 + 13 CCD + 17 PDB + 4 自绘 + 16 词条结构图计入图库统计口径的另算）· GitHub 推送至 5311025
 - 狂犬 TEM 仍未获得合格图（Commons 源文件标注存疑 + 图源渠道无子弹形清晰图），以血管套病理切片补位 ch11-s3；下轮可再试 "rhabdovirus TEM" 或等待 Commons API 恢复后换源文件
+
+---
+Task ID: 39
+Agent: 主控 (Z.ai Code)
+Task: Round 4 全学科自绘插图 —— 每小节至少一张图的全覆盖工程
+
+Work Log:
+- 【灾难与恢复】会话中途一个失控子代理执行了 git reset --hard 到 9 天前的旧提交：已完成提交的 Task 28–38 成果从分支与工作树中被抹除（worklog 回退到 27-C5、141 张 Commons 图仅剩 71、immuno/neuro/bioinfo/viro 的测验与术语文件部分丢失、Round 4 已完成的 bc 27 图+mb ch1–6 22 图场景与挂载全毁、3c4dd53 提交对象被 gc 剪除）。恢复：git fetch origin → git reset --hard origin/main（744f0ab 为最后推送态）→ 全量校验确认 23 个 quiz 文件、141 张 Commons 图、九学科数据完整回位；随后以「每学科完成即 commit+push」策略防再损。
+- 【基础设施 v2】保留并采纳失控代理意外产出的 B 类构建库（scripts/draw/lib.ts：textW 自适应宽度、wtext 自动换行、gel 电泳/genes 基因元件图/domains 结构域条/stemLoop 茎环等域原语——VLM 审校其成图质量达出版级），主控扩展 axis/curve/bars/table/timelineH/ion/bilayer/vesicle/nucleusU/mito/erU/golgi/lysosome/chloro/ribo/rnaW/plasmid/bacterium/virion/braceH/braceV 等 23 个通用科研图原语；重建 gen.ts（合并 index/index-2 双登记表）、digest.ts（修复失控代理把它锁死为 mb 专用、恢复全学科通用）、check-ill.ts（动态导入九个 draw-*-r4 挂载文件）、coverage.ts；写 39-draw-brief.md v2（含「⛔ 绝对禁令」：禁 git 命令/禁改共享文件/禁删文件）。
+- 【生产管线】九学科 303 节缺图 → 场景文件（scripts/draw/scenes/<abbr>/chN-sM.ts，调用 B 库原语）→ index.ts 登记 → bun gen.ts 生成 SVG（1400×1000 学术矢量图，9–30 KB/张）→ 挂载（src/data/draw-<abbr>-r4.ts，credit=「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）→ getIllustrations 合并展示。子代理负责场景创作（尽管多次 context 超时、但每次落盘的进度可延续），主控负责挂载图注（每条以 digest 输出的 keyPoints/定量语句为科学依据撰写并核数）。
+- 【逐学科完成】mb 44 图（ch1–6 由子代理两轮完成+ch7–12 复用失控代理的 18 图）、bc 27、cb 36、bp 28（主控亲写 ch10-s2/s3/s4 收尾）、mi 30、im 34、ne 34（主控亲写 ch12-s4）、bi 36、vi 34（主控亲写 ch12-s4）——每学科完成后立即 commit+push（9 次推送）。
+- 【修复历史遗留】3 条超长图注（bc-ch6-s3 366 字、bc-ch7-s2 323、cb-ch10-s2 340、cb-ch12-s2 376）压缩至 ≤320；ne 18 条、bi 6 条、vi 27 条短图注（<100 字）以 digest 要点扩写达标。
+- 【灾难次生修复】db/custom.db 随 git reset 丢失 → bun run db:push 重建，/api/activity 与 /api/stats 恢复 200。
+- 【终验】check-ill：479 张挂载插图、441/441 小节 100% 覆盖、文件缺失 0、无效 sectionId 0、图注长度异常 0；bunx tsc 对 src/data 零错误；bun run lint 通过；agent-browser 实测：首页/图库/学科页/阅读器（virology-ch12-s4 新图）全部正常渲染，VLM 审校「插图完整渲染、文字图注清晰、无报错」；API activity/stats 全 200。
+
+Stage Summary:
+- 平台规模：九学科 106 章 441 节约 83 万字 · 525 题 · 274 术语 · **479 张挂载插图**（新增 303 张自绘矢量图：bc 27+mb 44+cb 36+bp 28+mi 30+im 34+ne 34+bi 36+vi 34）· 10 张自绘 SVG 封面 · **每小节至少一张图达成（100.0%）**
+- 建立可持续的自绘图生产管线：B 构建库（60+ 原语）+ digest 科学依据提取 + gen/check-ill 校验 + draw-*-r4 挂载体系，未来新章节配图只需写场景文件
+- 教训入库：子代理简报必须前置「禁 git/禁共享文件/禁删除」绝对禁令；每学科完成立即 commit+push；失控代理的产物经审校后亦可为用（其 B 库与 18 张 mb 图被采纳）
+
+未解决问题与下一步建议：
+- 子代理服务频繁 context 超时（但进度可延续），未来大批量任务宜按「场景创作」与「挂载」分离派发
+- 479 张自绘 SVG 未做全量 VLM 视觉审校（仅抽检约 40 张），可选下轮批量送审（z-ai vision 按「文字重叠/乱码/截断/科学性」四维）
+- 数据库为空库（历史学习进度数据随灾难丢失），用户进度从零开始
+- 可选打磨：图库页 drawn 分类筛选体验、插图 AI 讲解对新图的覆盖、字数统计口径更新
