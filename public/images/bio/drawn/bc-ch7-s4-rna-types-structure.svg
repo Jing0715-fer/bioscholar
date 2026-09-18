@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">RNA 的种类与结构：三大类 RNA 与非编码 RNA 家族</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">mRNA 帽-尾结构（5′ m⁷Gppp + 3′ poly(A) 20~250）、tRNA 三叶草/倒 L 形「适配器」（稀有碱基最多）、rRNA 催化核心（23S rRNA 核酶）与 miRNA/lncRNA 等 ncRNA</text>
+  <rect x="30" y="132" width="660" height="415" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、RNA 的一般特征与 mRNA 的帽-尾结构</text>
+  <path d="M 66,214 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <path d="M294,217 L294,181 A12,12 0 0 1 306,181 L306,217" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <text x="360" y="200" font-size="11" fill="#78350f" font-weight="600">茎环（发夹）</text>
+  <text x="66" y="252" font-size="11" fill="#475569">单链回折 → 局部双螺旋（A 型）与茎环；</text>
+  <text x="66" y="268" font-size="11" fill="#475569">2′-OH 亲核进攻磷酸二酯键 → 对碱不稳定，</text>
+  <text x="66" y="284" font-size="11" fill="#475569">比 DNA 更易降解（不能形成长 B 型双螺旋）。</text>
+  <text x="360" y="226" font-size="11" fill="#64748b">碱基组成无 Chargaff 当量关系；</text>
+  <text x="360" y="242" font-size="11" fill="#64748b">某些病毒以 RNA 为遗传物质。</text>
+  <text x="66" y="306" font-size="13" fill="#1e293b" font-weight="700">真核 mRNA（占总 RNA 约 3%~5%）</text>
+  <rect x="108.84004999999999" y="338.65" width="82.31990000000002" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="150" y="351.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">5′ m⁷Gppp 帽</text>
+  <line x1="206" y1="348" x2="236" y2="348" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="238" y="330" width="232" height="36" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="354" y="352" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">编码区 ORF（单顺反子）</text>
+  <text x="262" y="372" font-size="9.5" fill="#64748b">起始</text>
+  <text x="430" y="372" font-size="9.5" fill="#64748b">终止</text>
+  <line x1="472" y1="348" x2="502" y2="348" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="519.4632" y="338.65" width="81.07360000000001" height="18.7" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="560" y="351.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">3′ poly(A) 尾</text>
+  <text x="560" y="378" font-size="9.5" fill="#64748b" text-anchor="middle">20~250 个 A</text>
+  <text x="66" y="402" font-size="10.5" fill="#475569">帽：保护 mRNA、参与翻译起始识别；poly(A) 尾：维持稳定性、提高翻译效率；内含子剪接后形成成熟 mRNA。</text>
+  <text x="66" y="417" font-size="10.5" fill="#475569">原核 mRNA 为多顺反子、半衰期短，无帽与尾。</text>
+  <rect x="46" y="448" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="92" y="475.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">特征</text>
+  <rect x="138" y="448" width="236" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="256" y="475.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">DNA</text>
+  <rect x="374" y="448" width="284" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="516" y="475.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">RNA</text>
+  <rect x="46" y="492" width="92" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="92" y="511" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">链</text>
+  <rect x="138" y="492" width="236" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="256" y="511" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">双链（主要）</text>
+  <rect x="374" y="492" width="284" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="516" y="511" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">单链（局部双链）</text>
+  <rect x="46" y="519" width="612" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="519" width="92" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="92" y="538" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">碱基</text>
+  <rect x="138" y="519" width="236" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="256" y="538" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">A · T · G · C</text>
+  <rect x="374" y="519" width="284" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="516" y="538" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">A · U · G · C（+稀有碱基）</text>
+  <rect x="46" y="546" width="92" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="92" y="565" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">戊糖</text>
+  <rect x="138" y="546" width="236" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="256" y="565" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">2′-脱氧核糖</text>
+  <rect x="374" y="546" width="284" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="516" y="565" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">核糖（含 2′-OH）</text>
+  <rect x="710" y="132" width="660" height="415" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、tRNA（73~94 nt）：三叶草二级结构 × 倒 L 三级结构</text>
+  <polyline points="948.5,322 948.5,260" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <polyline points="961.5,322 961.5,260" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="948.5" y1="313" x2="961.5" y2="313" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="948.5" y1="300" x2="961.5" y2="300" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="948.5" y1="287" x2="961.5" y2="287" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="948.5" y1="274" x2="961.5" y2="274" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <path d="M921.2,363.7 L867.3,365.6 A19,19 0 0 1 866.8,352.6 L920.8,350.7" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="912.2530411667451" y1="363.9967187338317" x2="911.7993477096127" y2="351.0046379825834" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="899.2609604154968" y1="364.4504121909642" x2="898.8072669583644" y2="351.4583314397159" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="886.2688796642486" y1="364.9041056480967" x2="885.8151862071162" y2="351.9120248968484" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="873.2767989130003" y1="365.3577991052292" x2="872.8231054558679" y2="352.3657183539809" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <path d="M987.8,344.8 L1041.2,337.3 A19,19 0 0 1 1043.0,350.2 L989.6,357.7" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="996.6769017996471" y1="343.57881421189694" x2="998.4861521121279" y2="356.4522991055374" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="1009.5503866932876" y1="341.7695638994161" x2="1011.3596370057684" y2="354.64304879305655" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="1022.4238715869279" y1="339.96031358693523" x2="1024.2331218994088" y2="352.8337984805757" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="1035.2973564805684" y1="338.15106327445443" x2="1037.1066067930492" y2="351.0245481680949" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <path d="M961.5,390.0 L961.5,448.0 A21,21 0 0 1 948.5,448.0 L948.5,390.0" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="961.5" y1="399" x2="948.5" y2="399" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="961.5" y1="412" x2="948.5" y2="412" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="961.5" y1="425" x2="948.5" y2="425" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <line x1="961.5" y1="438" x2="948.5" y2="438" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <path d="M982.6,369.3 L1003.1,385.4 A13,13 0 0 1 995.1,395.6 L974.6,379.6" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="989.7342189802789" y1="374.888727639257" x2="981.7306198010453" y2="385.13286743614435" stroke="#b45309" stroke-width="1.2" opacity="0.5"/>
+  <rect x="933.9656" y="229.075" width="48.068799999999996" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="958" y="241.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">3′-CCA</text>
+  <text x="889" y="264" font-size="9.5" fill="#64748b" text-anchor="middle">5′</text>
+  <text x="955" y="218" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">氨基酸臂（接受氨基酸）</text>
+  <text x="827" y="346" font-size="10.5" fill="#1e293b" text-anchor="end" font-weight="700">DHU 环</text>
+  <text x="827" y="364" font-size="9" fill="#64748b" text-anchor="end">（二氢尿嘧啶）</text>
+  <text x="1083" y="346" font-size="10.5" fill="#1e293b" font-weight="700">TψC 环</text>
+  <text x="1083" y="364" font-size="9" fill="#64748b">（含稀有碱基 T·ψ）</text>
+  <text x="955" y="504" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">反密码子环</text>
+  <text x="955" y="522" font-size="9" fill="#64748b" text-anchor="middle">（中部含反密码子）</text>
+  <text x="1051" y="430" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">可变环</text>
+  <circle cx="943" cy="466" r="3.4" fill="#be185d"/>
+  <circle cx="955" cy="472" r="3.4" fill="#be185d"/>
+  <circle cx="967" cy="466" r="3.4" fill="#be185d"/>
+  <text x="1226" y="214" font-size="12" fill="#1e293b" font-weight="700">三级结构：倒 L 形</text>
+  <path d="M1236,398 L1236,262 L1330,262" fill="none" opacity="0.32" stroke="#b45309" stroke-width="11"/>
+  <path d="M1236,398 L1236,262 L1330,262" fill="none" stroke="#b45309" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <rect x="1214.7784" y="231.925" width="42.4432" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1236" y="243.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">3′-CCA</text>
+  <rect x="1312.43" y="275.925" width="47.14" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1336" y="287.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">反密码子</text>
+  <text x="1283" y="430" font-size="9.5" fill="#64748b" text-anchor="middle">氨基酸臂与反密码子臂</text>
+  <text x="1283" y="444" font-size="9.5" fill="#64748b" text-anchor="middle">分居 L 两端</text>
+  <text x="726" y="500" font-size="10.5" fill="#475569">tRNA 是「适配器」分子：一端连密码（反密码子识别 mRNA 密码子）、一端连氨基酸（3′-CCA）；含稀有碱基最多</text>
+  <text x="726" y="515" font-size="10.5" fill="#475569">（假尿苷 ψ · DHU · T · 甲基化碱基）。</text>
+  <rect x="30" y="566" width="660" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、rRNA（约 80%）：核糖体的结构与催化核心</text>
+  <rect x="56" y="624" width="96" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="104" y="651.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700"></text>
+  <rect x="152" y="624" width="244" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="651.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">原核 70S 核糖体</text>
+  <rect x="396" y="624" width="272" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532" y="651.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">真核 80S 核糖体</text>
+  <rect x="56" y="668" width="96" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="104" y="694.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">大亚基</text>
+  <rect x="152" y="668" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">50S = 23S + 5S</text>
+  <rect x="396" y="668" width="272" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">60S = 28S + 5.8S + 5S</text>
+  <rect x="56" y="710" width="612" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="710" width="96" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="104" y="736.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">小亚基</text>
+  <rect x="152" y="710" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="736.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">30S = 16S</text>
+  <rect x="396" y="710" width="272" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532" y="736.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">40S = 18S</text>
+  <rect x="56" y="756" width="612" height="66" rx="8" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.6"/>
+  <text x="72" y="780" font-size="12.5" fill="#831843" font-weight="700">肽酰转移酶活性由 23S rRNA 本身承担——是核酶</text>
+  <text x="72" y="802" font-size="10.5" fill="#475569">RNA 既携带信息又具催化功能，为「RNA 世界假说」的重要证据。</text>
+  <rect x="103" y="947.2" width="96" height="4.8" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="151" y="938.2" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">3~5%</text>
+  <text x="151" y="972" font-size="12.5" fill="#64748b" text-anchor="middle">mRNA</text>
+  <rect x="253" y="856" width="96" height="96" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="301" y="847" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">~80%</text>
+  <text x="301" y="972" font-size="12.5" fill="#64748b" text-anchor="middle">rRNA</text>
+  <text x="400" y="880" font-size="11.5" fill="#1e293b" font-weight="700">rRNA 含量最多（约 80%），</text>
+  <text x="400" y="916" font-size="10.5" fill="#475569">是核糖体的结构骨架与催化核心；mRNA 仅约 3%~5%，</text>
+  <text x="400" y="931" font-size="10.5" fill="#475569">寿命短而更新快。</text>
+  <rect x="710" y="566" width="660" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="588.84" font-size="19" fill="#475569" font-weight="700">四、非编码 RNA（ncRNA）：不编码蛋白质的功能 RNA</text>
+  <rect x="736" y="614" width="296" height="100" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.5"/>
+  <text x="752" y="642" font-size="13" fill="#b45309" font-weight="700">miRNA · siRNA</text>
+  <text x="752" y="664" font-size="10.5" fill="#475569">~22 nt，介导 RNA 干扰（转录后基因沉默）；</text>
+  <text x="752" y="679" font-size="10.5" fill="#475569">Fire 与 Mello 获 2006 年诺贝尔奖</text>
+  <rect x="1052" y="614" width="296" height="100" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1068" y="642" font-size="13" fill="#6d28d9" font-weight="700">lncRNA</text>
+  <text x="1068" y="664" font-size="10.5" fill="#475569">长链非编码 RNA，参与表观遗传调控（如 Xist）</text>
+  <rect x="736" y="726" width="296" height="100" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="752" y="754" font-size="13" fill="#0f766e" font-weight="700">snRNA</text>
+  <text x="752" y="776" font-size="10.5" fill="#475569">与蛋白质构成剪接体，执行内含子剪接</text>
+  <rect x="1052" y="726" width="296" height="100" rx="9" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1068" y="754" font-size="13" fill="#0369a1" font-weight="700">snoRNA</text>
+  <text x="1068" y="776" font-size="10.5" fill="#475569">指导 rRNA 核苷酸的修饰</text>
+  <rect x="736" y="838" width="296" height="100" rx="9" fill="#fce7f3" fill-opacity="0.45" stroke="#be185d" stroke-width="1.5"/>
+  <text x="752" y="866" font-size="13" fill="#be185d" font-weight="700">核酶（催化 RNA）</text>
+  <text x="752" y="888" font-size="10.5" fill="#475569">RNase P 的 M1 RNA 与锤头状核酶可催化生化反应</text>
+  <rect x="1052" y="838" width="296" height="100" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1068" y="866" font-size="13" fill="#475569" font-weight="700">要义</text>
+  <text x="1068" y="888" font-size="10.5" fill="#475569">RNA 兼具「信息分子」与「工具分子」双重身份：</text>
+  <text x="1068" y="903" font-size="10.5" fill="#475569">从核酶到 RNA 干扰，催化与调控皆由 RNA 直接执行。</text>
+</svg>

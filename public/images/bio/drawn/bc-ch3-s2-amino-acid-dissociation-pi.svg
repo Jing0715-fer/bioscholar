@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">氨基酸的解离、等电点与特征反应</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">兼性离子净电荷随 pH 由 +1 → 0 → −1，pI 取两端（或侧链）pKa 均值；茚三酮紫 / Pro 黄、DNFB 与 PITC 定 N 端，A₂₈₀ 来自 Trp·Tyr</text>
+  <rect x="30" y="132" width="700" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、两性解离：净电荷随 pH 变化</text>
+  <rect x="60" y="178" width="330" height="70" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="74" y="200" font-size="12.5" fill="#0369a1" font-weight="700">低 pH（&lt; pKa₁）</text>
+  <text x="74" y="222" font-size="12.5" fill="#1e293b">⁺H₃N–CH(R)–COOH</text>
+  <text x="74" y="238" font-size="10.5" fill="#475569">净电荷 +1 · 阳离子</text>
+  <rect x="60" y="262" width="330" height="70" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.5"/>
+  <text x="74" y="284" font-size="12.5" fill="#065f46" font-weight="700">pH = pI（等电点）</text>
+  <text x="74" y="306" font-size="12.5" fill="#1e293b">⁺H₃N–CH(R)–COO⁻</text>
+  <text x="74" y="322" font-size="10.5" fill="#475569">净电荷 0 · 兼性离子：电泳不迁移 · 溶解度最低</text>
+  <rect x="60" y="346" width="330" height="70" rx="8" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.5"/>
+  <text x="74" y="368" font-size="12.5" fill="#be185d" font-weight="700">高 pH（&gt; pKa₂）</text>
+  <text x="74" y="390" font-size="12.5" fill="#1e293b">H₂N–CH(R)–COO⁻</text>
+  <text x="74" y="406" font-size="10.5" fill="#475569">净电荷 −1 · 阴离子</text>
+  <line x1="150" y1="252" x2="150" y2="268" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="300" y1="268" x2="300" y2="252" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="150" y="246" font-size="9.5" fill="#64748b" text-anchor="middle">加 OH⁻</text>
+  <text x="300" y="246" font-size="9.5" fill="#64748b" text-anchor="middle">加 H⁺</text>
+  <line x1="150" y1="336" x2="150" y2="352" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="300" y1="352" x2="300" y2="336" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="150" y="330" font-size="9.5" fill="#64748b" text-anchor="middle">加 OH⁻</text>
+  <text x="300" y="330" font-size="9.5" fill="#64748b" text-anchor="middle">加 H⁺</text>
+  <rect x="470" y="202" width="220" height="284" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="470" y1="415" x2="690" y2="415" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="525" y1="486" x2="525" y2="202" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="470" y1="344" x2="690" y2="344" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="580" y1="486" x2="580" y2="202" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="470" y1="273" x2="690" y2="273" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="635" y1="486" x2="635" y2="202" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="470" y1="486" x2="470" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="470" y="508" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="506.08" y1="486" x2="506.08" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="506.08" y="508" font-size="13" fill="#64748b" text-anchor="middle">2.3</text>
+  <line x1="564.6" y1="486" x2="564.6" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="564.6" y="508" font-size="13" fill="#64748b" text-anchor="middle">6.0</text>
+  <line x1="620.9200000000001" y1="486" x2="620.9200000000001" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="620.9200000000001" y="508" font-size="13" fill="#64748b" text-anchor="middle">9.6</text>
+  <line x1="690" y1="486" x2="690" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="690" y="508" font-size="13" fill="#64748b" text-anchor="middle">14</text>
+  <line x1="464" y1="486" x2="470" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="460" y="490" font-size="13" fill="#64748b" text-anchor="end">+1</text>
+  <line x1="464" y1="344" x2="470" y2="344" stroke="#475569" stroke-width="1.8"/>
+  <text x="460" y="348" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="464" y1="202" x2="470" y2="202" stroke="#475569" stroke-width="1.8"/>
+  <text x="460" y="206" font-size="13" fill="#64748b" text-anchor="end">−1</text>
+  <text x="580" y="530" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">pH</text>
+  <text x="424" y="344" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">平均净电荷</text>
+  <line x1="506.08" y1="486" x2="506.08" y2="202" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="564.6" y1="486" x2="564.6" y2="344" stroke="#059669" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="620.9200000000001" y1="486" x2="620.9200000000001" y2="202" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="506.08" y="214" font-size="10.5" fill="#64748b" text-anchor="middle">pKa₁</text>
+  <text x="564.6" y="214" font-size="11" fill="#059669" text-anchor="middle" font-weight="700">pI</text>
+  <text x="620.9200000000001" y="214" font-size="10.5" fill="#64748b" text-anchor="middle">pKa₂</text>
+  <path d="M470.0,202.0 L487.6,210.5 L498.6,230.4 L514.0,292.9 L536.0,400.8 L564.6,486.0 L597.6,557.0 L620.9,662.1 L641.6,735.9 L668.0,761.5 L690.0,770.0" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <text x="60" y="448" font-size="11" fill="#475569">α-COOH pKa₁≈2.0~2.3 · α-NH₃⁺ pKa₂≈9.0~10.0；</text>
+  <text x="60" y="464" font-size="11" fill="#475569">pI 时兼性离子占主导。</text>
+  <rect x="750" y="132" width="620" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、pI 的计算：取决于侧链可解离基团</text>
+  <rect x="766" y="188" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="215.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">类别</text>
+  <rect x="916" y="188" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1036" y="215.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pI 公式</text>
+  <rect x="1156" y="188" width="198" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="215.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">示例</text>
+  <rect x="766" y="232" width="150" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="261.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">中性（侧链不解离）</text>
+  <rect x="916" y="232" width="240" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1036" y="261.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">(pKa₁ + pKa₂) / 2</text>
+  <rect x="1156" y="232" width="198" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="261.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">≈ 6.0</text>
+  <rect x="766" y="280" width="588" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="766" y="280" width="150" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="309.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">酸性（Asp）</text>
+  <rect x="916" y="280" width="240" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1036" y="309.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">(pKa₁ + pKaR) / 2</text>
+  <rect x="1156" y="280" width="198" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="309.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">(2.1 + 3.9)/2 ≈ 2.98</text>
+  <rect x="766" y="328" width="150" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="357.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">碱性（Lys）</text>
+  <rect x="916" y="328" width="240" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1036" y="357.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">(pKa₂ + pKaR) / 2</text>
+  <rect x="1156" y="328" width="198" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="357.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">(8.95 + 10.5)/2 ≈ 9.74</text>
+  <text x="766" y="404" font-size="12.5" fill="#1e293b" font-weight="700">侧链可解离基团 pKaR：</text>
+  <text x="766" y="432" font-size="11.5" fill="#475569">Asp 3.9 · Glu 4.3 · His 6.0 · Cys 8.3 · Tyr 10.1 · Lys 10.5 · Arg 12.5</text>
+  <text x="766" y="468" font-size="11.5" fill="#475569">pI 时净电荷为零、溶解度最低；pI 差异是电泳与离子交换层析分离氨基酸混合物的基础，</text>
+  <text x="766" y="485" font-size="11.5" fill="#475569">也是蛋白质双向电泳第一向（等电聚焦）的理论基础。</text>
+  <text x="766" y="524" font-size="11" fill="#64748b">氨基酸分析仪即利用不同 pH 下各氨基酸解离态与交换柱亲和力的差异实现逐一分离。</text>
+  <rect x="30" y="564" width="700" height="416" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="586.84" font-size="19" fill="#475569" font-weight="700">三、氨基酸的特征化学反应</text>
+  <rect x="113.43549999999999" y="602.225" width="113.129" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="170" y="616.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">茚三酮 + α-氨基酸</text>
+  <line x1="300" y1="612" x2="346" y2="612" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="356" y="596" width="148" height="32" rx="16" fill="#5b21b6" stroke="#3b0764" stroke-width="1.6"/>
+  <text x="430" y="616" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">Ruhemann 紫</text>
+  <text x="522" y="616" font-size="10.5" fill="#475569">共热显色，570 nm 定量 · 纸层析显色</text>
+  <rect x="103.84105" y="658.225" width="132.3179" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="170" y="672.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">茚三酮 + Pro（仲胺）</text>
+  <line x1="300" y1="668" x2="346" y2="668" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="356" y="652" width="148" height="32" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="430" y="672" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">黄色产物</text>
+  <text x="522" y="672" font-size="10.5" fill="#475569">440 nm——脯氨酸特有反应</text>
+  <rect x="102.65654999999998" y="714.225" width="134.68690000000004" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="170" y="728.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">DNFB（Sanger 试剂）</text>
+  <line x1="300" y1="724" x2="346" y2="724" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="356" y="708" width="148" height="32" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="430" y="728" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">DNP-氨基酸</text>
+  <text x="522" y="728" font-size="10.5" fill="#475569">黄色 · N 端测定；Sanger 完成胰岛素测序</text>
+  <rect x="105.73624999999998" y="770.225" width="128.52750000000003" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="170" y="784.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">PITC（Edman 试剂）</text>
+  <line x1="300" y1="780" x2="346" y2="780" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="356" y="764" width="148" height="32" rx="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="430" y="784" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">PTH-氨基酸</text>
+  <text x="522" y="784" font-size="10.5" fill="#475569">弱碱偶联 → 酸解切下 → HPLC 鉴定</text>
+  <rect x="127.53105" y="826.225" width="84.93790000000001" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="170" y="840.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">荧光胺 / OPA</text>
+  <line x1="300" y1="836" x2="346" y2="836" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="356" y="820" width="148" height="32" rx="16" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="430" y="840" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">荧光产物</text>
+  <text x="522" y="840" font-size="10.5" fill="#475569">灵敏度高 · HPLC 衍生检测</text>
+  <text x="50" y="890" font-size="11.5" fill="#64748b">茚三酮反应用于氨基酸定量；Sanger 与 Edman 反应用于 N 端与序列测定（详见一级结构测定一节）；</text>
+  <text x="50" y="907" font-size="11.5" fill="#64748b">荧光衍生法将检测灵敏度提高数个量级。</text>
+  <rect x="750" y="564" width="620" height="416" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="586.84" font-size="19" fill="#475569" font-weight="700">四、紫外吸收与电泳分离</text>
+  <rect x="800" y="602" width="450" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="800" y1="707" x2="1250" y2="707" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="912.5" y1="742" x2="912.5" y2="602" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="672" x2="1250" y2="672" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1025" y1="742" x2="1025" y2="602" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="637" x2="1250" y2="637" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1137.5" y1="742" x2="1137.5" y2="602" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="818" y1="742" x2="818" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="818" y="764" font-size="13" fill="#64748b" text-anchor="middle">205</text>
+  <line x1="948.5" y1="742" x2="948.5" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="948.5" y="764" font-size="13" fill="#64748b" text-anchor="middle">240</text>
+  <line x1="1025" y1="742" x2="1025" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="1025" y="764" font-size="13" fill="#64748b" text-anchor="middle">260</text>
+  <line x1="1101.5" y1="742" x2="1101.5" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="1101.5" y="764" font-size="13" fill="#64748b" text-anchor="middle">280</text>
+  <line x1="1214" y1="742" x2="1214" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="1214" y="764" font-size="13" fill="#64748b" text-anchor="middle">310</text>
+  <line x1="794" y1="742" x2="800" y2="742" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="746" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="794" y1="602" x2="800" y2="602" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="606" font-size="13" fill="#64748b" text-anchor="end">A</text>
+  <text x="1025" y="786" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">波长 (nm)</text>
+  <text x="754" y="672" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">吸光度</text>
+  <path d="M800.0,716.8 L818.0,609.0 L845.0,641.2 L881.0,679.0 L926.0,705.6 L1025.0,722.4 L1137.5,732.2 L1250.0,736.4" fill="none" stroke="#64748b" stroke-width="2.4"/>
+  <path d="M935.0,735.0 L989.0,702.8 L1025.0,602.0 L1061.0,695.8 L1124.0,723.8 L1250.0,735.0" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M935.0,737.8 L1025.0,728.0 L1061.0,694.4 L1101.5,660.8 L1142.0,691.6 L1205.0,725.2 L1250.0,733.6" fill="none" stroke="#6d28d9" stroke-width="2.6"/>
+  <text x="1025" y="592" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">核酸 260 nm</text>
+  <text x="1151" y="664" font-size="10.5" fill="#6d28d9" font-weight="700">蛋白质 280 nm</text>
+  <text x="840.5" y="617" font-size="10" fill="#64748b">肽键 190~220 nm</text>
+  <text x="766" y="786" font-size="11" fill="#475569">A₂₈₀ 估算蛋白质浓度（Trp 与 Tyr 的贡献）；A₂₆₀/A₂₈₀ 评估纯度。</text>
+  <text x="766" y="826" font-size="12.5" fill="#1e293b" font-weight="700">电泳迁移方向取决于 pH 与 pI：</text>
+  <line x1="790" y1="846" x2="1180" y2="846" stroke="#64748b" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="780" y="842" font-size="13" fill="#475569" font-weight="700">−</text>
+  <text x="1190" y="842" font-size="13" fill="#475569" text-anchor="end" font-weight="700">+</text>
+  <rect x="804" y="854" width="52" height="92" rx="4" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <rect x="810" y="858" width="40" height="6" rx="2" fill="#1e293b"/>
+  <rect x="811" y="878.28" width="38" height="7" rx="3" fill="#be185d" opacity="0.85"/>
+  <text x="830" y="962" font-size="10" fill="#475569" text-anchor="middle">pH &lt; pI：+1 → 向负极</text>
+  <rect x="964" y="854" width="52" height="92" rx="4" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <rect x="970" y="858" width="40" height="6" rx="2" fill="#1e293b"/>
+  <rect x="971" y="899" width="38" height="7" rx="3" fill="#be185d" opacity="0.85"/>
+  <text x="990" y="962" font-size="10" fill="#475569" text-anchor="middle">pH = pI：0 → 不动</text>
+  <rect x="1124" y="854" width="52" height="92" rx="4" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <rect x="1130" y="858" width="40" height="6" rx="2" fill="#1e293b"/>
+  <rect x="1131" y="921.2" width="38" height="7" rx="3" fill="#be185d" opacity="0.85"/>
+  <text x="1150" y="962" font-size="10" fill="#475569" text-anchor="middle">pH &gt; pI：−1 → 向正极</text>
+</svg>

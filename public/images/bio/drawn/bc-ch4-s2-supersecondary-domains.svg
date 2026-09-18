@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">超二级结构与结构域：从模体到功能模块</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">βαβ、β 发夹、HTH 与希腊钥匙四种模体；Src 的 SH2/SH3/激酶域分域调节；TIM 桶（8β+8α）与 EF 手（螺旋-环-螺旋配位 Ca²⁺）两大经典</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、超二级结构（模体）：二级结构元件的保守组合</text>
+  <rect x="56" y="178" width="300" height="160" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="70" y="202" font-size="12.5" fill="#1e293b" font-weight="700">① βαβ 单元</text>
+  <text x="70" y="326" font-size="10" fill="#64748b">两段 β 链由一段 α 螺旋连接（螺旋越过折叠片上方）</text>
+  <polygon points="76,300 158,300 172,308 158,316 76,316" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <polygon points="236,300 250,300 236,308 250,316 236,316" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <polyline points="168,252 172,244.72294403716384 176,245.95400340516593 180,254.25386045473144 184,259.9185715350475 188,256.32512653964477 192,247.67487346035523 196,244.08142846495252 200,249.74613954526856 204,258.0459965948341 208,259.27705596283613 212,252 216,244.72294403716387 220,245.95400340516593 224,254.25386045473144 228,259.9185715350475 232,256.32512653964477 236,247.67487346035523 240,244.08142846495255 244,249.74613954526856" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <line x1="172" y1="292" x2="172" y2="262" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="240" y1="262" x2="240" y2="292" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="76" y="336" font-size="10.5" fill="#075985" font-weight="700">β₁</text>
+  <text x="300" y="336" font-size="10.5" fill="#075985" font-weight="700">β₂</text>
+  <text x="200" y="230" font-size="12" fill="#4c1d95" font-weight="700" font-style="italic">α</text>
+  <rect x="360" y="178" width="300" height="160" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="374" y="202" font-size="12.5" fill="#1e293b" font-weight="700">② β 发夹（β-meander）</text>
+  <text x="374" y="326" font-size="10" fill="#64748b">反平行 β 链由紧凑转角串联</text>
+  <polygon points="430,226 430,302 439,314 448,302 448,226" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <polygon points="470,226 470,238 479,226 488,238 488,226" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <path d="M439,226 Q449,204 479,226" fill="none" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="500" y="260" font-size="10" fill="#64748b">转角</text>
+  <rect x="56" y="350" width="300" height="160" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="70" y="374" font-size="12.5" fill="#1e293b" font-weight="700">③ αα 模体（helix-turn-helix）</text>
+  <text x="70" y="498" font-size="10" fill="#64748b">两段 α 螺旋由转角连接——λ 阻遏蛋白识别螺旋插入 DNA 大沟</text>
+  <polyline points="76,408 80,401.6325760325184 84,402.7097529795202 88,409.97212789789 92,414.9287500931665 96,411.7844857221892 100,404.2155142778108 104,401.0712499068335 108,406.02787210211 112,413.2902470204798 116,414.3674239674816 120,408 124,401.6325760325184 128,402.7097529795202 132,409.97212789789 136,414.9287500931665 140,411.7844857221892 144,404.2155142778108 148,401.0712499068335 152,406.02787210211 156,413.2902470204798 160,414.3674239674816 164,408 168,401.6325760325184 172,402.7097529795202 176,409.97212789789" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <path d="M176,412 q18,-24 36,0" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <polyline points="212,430 216,423.6325760325184 220,424.7097529795202 224,431.97212789789 228,436.9287500931665 232,433.7844857221892 236,426.2155142778108 240,423.0712499068335 244,428.02787210211 248,435.2902470204798 252,436.3674239674816 256,430 260,423.6325760325184 264,424.7097529795202 268,431.97212789789 272,436.9287500931665 276,433.7844857221892 280,426.2155142778108 284,423.0712499068335 288,428.02787210211 292,435.2902470204798 296,436.3674239674816 300,430 304,423.6325760325184 308,424.7097529795202 312,431.97212789789" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <text x="250" y="388" font-size="10" fill="#4c1d95" font-weight="700">识别螺旋</text>
+  <text x="180" y="400" font-size="10" fill="#64748b">转角</text>
+  <rect x="360" y="350" width="300" height="160" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="374" y="374" font-size="12.5" fill="#1e293b" font-weight="700">④ 希腊钥匙（Greek key）</text>
+  <text x="374" y="498" font-size="10" fill="#64748b">四段反平行 β 链的特殊连接方式</text>
+  <polygon points="424,398 424,470 432,482 440,470 440,398" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <polygon points="460,398 460,410 468,398 476,410 476,398" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <polygon points="496,398 496,470 504,482 512,470 512,398" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <polygon points="532,398 532,410 540,398 548,410 548,398" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <path d="M432,394 Q500,368 566,394" fill="none" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="486" y="376" font-size="10" fill="#64748b">跨接</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、结构域：独立折叠的功能单元（以 Src 激酶为例）</text>
+  <circle cx="790" cy="268" r="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="790" y="264" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="700">SH3</text>
+  <text x="790" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">调节</text>
+  <circle cx="950" cy="268" r="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="950" y="264" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="700">SH2</text>
+  <text x="950" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">调节</text>
+  <ellipse cx="1180" cy="268" rx="108" ry="52" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="1180" y="264" font-size="14" fill="#831843" text-anchor="middle" font-weight="700">激酶域</text>
+  <text x="1180" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">（催化）</text>
+  <path d="M834,268 q28,-34 72,0" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M994,268 q34,-34 76,0" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="872" y="314" font-size="10.5" fill="#64748b" text-anchor="middle">柔性铰链</text>
+  <text x="1038" y="314" font-size="10.5" fill="#64748b" text-anchor="middle">柔性铰链（可被蛋白酶切开）</text>
+  <text x="726" y="196" font-size="13" fill="#475569" font-weight="700">N</text>
+  <text x="1314" y="196" font-size="13" fill="#475569" text-anchor="end" font-weight="700">C</text>
+  <text x="726" y="366" font-size="11.5" fill="#475569">结构域由 100~200 个残基构成，可独立折叠、功能相对独立；酶的底物结合域与调节域分开，</text>
+  <text x="726" y="383" font-size="11.5" fill="#475569">有利于别构调节与模块化进化。</text>
+  <text x="726" y="432" font-size="11.5" fill="#64748b">域间运动（铰链弯曲）是别构酶与肌动球蛋白工作的基础；结构域的模块化是蛋白进化与别构调节的结构基础。</text>
+  <text x="726" y="490" font-size="11.5" fill="#475569">大蛋白常由数个结构域组装——每个结构域常对应一个功能。</text>
+  <rect x="30" y="556" width="1340" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="578.84" font-size="19" fill="#475569" font-weight="700">三、常见结构域类型与两个经典模体</text>
+  <rect x="56" y="620" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="151" y="647.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">结构域</text>
+  <rect x="246" y="620" width="290" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="391" y="647.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">特征</text>
+  <rect x="536" y="620" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="656" y="647.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表蛋白</text>
+  <rect x="56" y="664" width="190" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="151" y="688.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">平行 β 桶（TIM 桶）</text>
+  <rect x="246" y="664" width="290" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="391" y="688.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">8 段平行 β 链围成内桶，外绕 8 段 α 螺旋</text>
+  <rect x="536" y="664" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="656" y="688.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">磷酸丙糖异构酶及众多代谢酶</text>
+  <rect x="56" y="702" width="720" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="702" width="190" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="151" y="726.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">开放式 β 片（Rossmann）</text>
+  <rect x="246" y="702" width="290" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="391" y="726.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">β 折叠片一侧被 α 螺旋覆盖</text>
+  <rect x="536" y="702" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="656" y="726.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">乳酸脱氢酶核苷酸结合域</text>
+  <rect x="56" y="740" width="190" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="151" y="764.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">全 α 螺旋束（4 螺旋束）</text>
+  <rect x="246" y="740" width="290" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="391" y="764.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">四段 α 螺旋装配成束</text>
+  <rect x="536" y="740" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="656" y="764.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">细胞色素 b₅₆₂、载脂蛋白</text>
+  <rect x="56" y="778" width="720" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="778" width="190" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="151" y="802.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">免疫球蛋白折叠</text>
+  <rect x="246" y="778" width="290" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="391" y="802.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">两层反平行 β 片由二硫键锁定（β 三明治）</text>
+  <rect x="536" y="778" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="656" y="802.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗体、细胞表面受体</text>
+  <rect x="56" y="816" width="190" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="151" y="840.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">β 螺旋</text>
+  <rect x="246" y="816" width="290" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="391" y="840.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">平行 β 片卷成螺旋</text>
+  <rect x="536" y="816" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="656" y="840.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">果胶酸裂解酶</text>
+  <text x="56" y="892" font-size="11.5" fill="#475569">模体与结构域的重复利用体现「进化是修补匠」；Rossmann 折叠结合 NAD⁺/FAD，在 β-α-β 连接处的环有保守 Gly-Gly-xx-Gly 序列，</text>
+  <text x="56" y="909" font-size="11.5" fill="#475569">广泛见于脱氢酶。</text>
+  <ellipse cx="960" cy="716" rx="58" ry="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <ellipse cx="960" cy="782" rx="58" ry="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="1018" y1="716" x2="1018" y2="782" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="996.1624085078065" y1="726.1638092720843" x2="996.1624085078065" y2="792.1638092720843" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="947.0937858305338" y1="728.6740628583638" x2="947.0937858305338" y2="794.6740628583638" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="907.7438056616597" y1="721.6404886085282" x2="907.7438056616597" y2="787.6404886085282" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="907.7438056616597" y1="710.3595113914718" x2="907.7438056616597" y2="776.3595113914718" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="947.0937858305338" y1="703.3259371416362" x2="947.0937858305338" y2="769.3259371416362" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="996.1624085078065" y1="705.8361907279157" x2="996.1624085078065" y2="771.8361907279157" stroke="#0369a1" stroke-width="1.6"/>
+  <path d="M1015.4095163692851,719.8417626865975 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M987.0605129247313,727.4983602744861 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M942.8598280136423,728.4193743586329 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M908.6996233907543,722.0652873796812 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M904.5904836307149,712.1582373134025 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M932.9394870752686,704.5016397255139 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M977.1401719863577,703.5806256413671 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M1011.3003766092457,709.9347126203188 q26,14 52,26" fill="none" opacity="0.75" stroke="#6d28d9" stroke-width="2.6"/>
+  <text x="960" y="676" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">TIM 桶（α/β 桶）</text>
+  <text x="960" y="816" font-size="10.5" fill="#64748b" text-anchor="middle">内桶 8β · 外绕 8α</text>
+  <text x="960" y="834" font-size="10.5" fill="#64748b" text-anchor="middle">最常见的酶催化结构域</text>
+  <path d="M1160,680 q-8,26 0,52" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <path d="M1160,680 l0,-8" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M1196,680 q8,26 0,52" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <path d="M1160,732 q18,14 36,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <circle cx="1178" cy="740" r="15" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1178" y="743.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">Ca²⁺</text>
+  <text x="1128" y="706" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">螺旋 E</text>
+  <text x="1232" y="706" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">螺旋 F</text>
+  <text x="1178" y="672" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">EF 手模体</text>
+  <text x="1178" y="782" font-size="10.5" fill="#64748b" text-anchor="middle">螺旋-环-螺旋：环中 Asp/Glu 氧原子配位 Ca²⁺</text>
+  <text x="1178" y="800" font-size="10.5" fill="#64748b" text-anchor="middle">见于钙调素</text>
+</svg>

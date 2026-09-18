@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">激素调节与 cAMP 级联：分解放大 10⁶~10⁸ 倍 vs 胰岛素合成信号</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">胰高血糖素 / 肾上腺素经 Gs-AC-cAMP-PKA 促分解并放大 10⁶~10⁸ 倍；胰岛素经 RTK-IRS-PI3K-Akt 促合成（GLUT4 转位）——两套信号互为镜像</text>
+  <rect x="30" y="132" width="700" height="478" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、分解级联：Gs → AC → cAMP → PKA，放大 10⁶~10⁸ 倍</text>
+  <rect x="80" y="196" width="240" height="34" rx="7" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.6"/>
+  <text x="200" y="218" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="600">激素（胰高血糖素 / 肾上腺素）</text>
+  <rect x="80" y="248" width="240" height="34" rx="7" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="200" y="270" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="600">受体 → Gs 蛋白（GTP 开关）</text>
+  <rect x="80" y="300" width="240" height="34" rx="7" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="200" y="322" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="600">腺苷酸环化酶（AC）</text>
+  <rect x="80" y="352" width="240" height="34" rx="7" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.6"/>
+  <text x="200" y="374" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="600">cAMP ↑（第二信使）</text>
+  <rect x="80" y="404" width="240" height="34" rx="7" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.6"/>
+  <text x="200" y="426" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="600">PKA（蛋白激酶 A）</text>
+  <rect x="80" y="456" width="240" height="34" rx="7" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="200" y="478" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="600">磷酸化大量靶酶</text>
+  <line x1="200" y1="232" x2="200" y2="244" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="200" y1="284" x2="200" y2="296" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="200" y1="336" x2="200" y2="348" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="200" y1="388" x2="200" y2="400" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="200" y1="440" x2="200" y2="452" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="510" y="208" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">逐级放大</text>
+  <text x="510" y="224" font-size="9.5" fill="#64748b" text-anchor="middle">（信号灵敏性的分子基础）</text>
+  <rect x="350" y="240" width="80" height="24" rx="4" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="256" font-size="9.5" fill="#075985" font-weight="600">1 个激素分子</text>
+  <rect x="350" y="292" width="140" height="24" rx="4" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="308" font-size="9.5" fill="#075985" font-weight="600">多个 Gs · AC 被激活</text>
+  <rect x="350" y="344" width="200" height="24" rx="4" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="360" font-size="9.5" fill="#075985" font-weight="600">催化生成大量 cAMP</text>
+  <rect x="350" y="396" width="260" height="24" rx="4" fill="#e0f2fe" fill-opacity="0.8" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="412" font-size="9.5" fill="#075985" font-weight="600">大量 PKA 被活化</text>
+  <rect x="350" y="448" width="320" height="24" rx="4" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="464" font-size="9.5" fill="#075985" font-weight="600">磷酸化大量靶酶</text>
+  <line x1="360" y1="266" x2="360" y2="288" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-acc)"/>
+  <line x1="360" y1="318" x2="360" y2="340" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-acc)"/>
+  <line x1="360" y1="370" x2="360" y2="392" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-acc)"/>
+  <line x1="360" y1="422" x2="360" y2="444" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-acc)"/>
+  <rect x="437.29875" y="497.375" width="145.4025" height="21.25" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="510" y="512.5" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">级联放大 10⁶~10⁸ 倍</text>
+  <text x="56" y="534" font-size="10.5" fill="#475569">靶器官差异：胰高血糖素主要作用于肝；肾上腺素作用于肝与肌肉（「战或逃」快速供能），并经 IP₃ / DAG-PKC 与 Ca²⁺ 协同；</text>
+  <text x="56" y="549" font-size="10.5" fill="#475569">糖皮质激素为慢调节（诱导糖异生关键酶转录）。</text>
+  <rect x="750" y="132" width="620" height="478" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、合成信号：胰岛素 RTK → IRS → PI3K → Akt</text>
+  <text x="770" y="186" font-size="9.5" fill="#64748b">血糖 ↑ → β 细胞分泌（唯一降糖激素）</text>
+  <rect x="770" y="196" width="80" height="36" rx="7" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.6"/>
+  <text x="810" y="219" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">胰岛素</text>
+  <line x1="850" y1="214" x2="884" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="886" y="196" width="150" height="36" rx="7" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.6"/>
+  <text x="961" y="219" font-size="11" fill="#065f46" text-anchor="middle" font-weight="600">RTK（酪氨酸激酶）</text>
+  <line x1="1036" y1="214" x2="1068" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1070" y="196" width="50" height="36" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1095" y="219" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">IRS</text>
+  <line x1="1120" y1="214" x2="1154" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1156" y="196" width="60" height="36" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1186" y="219" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">PI3K</text>
+  <line x1="1216" y1="214" x2="1250" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1252" y="196" width="60" height="36" rx="7" fill="#ede9fe" fill-opacity="0.6" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1282" y="219" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Akt</text>
+  <line x1="1282" y1="234" x2="1282" y2="258" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <line x1="905" y1="258" x2="1282" y2="258" stroke="#6d28d9" stroke-width="1.5"/>
+  <line x1="905" y1="258" x2="905" y2="284" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <line x1="1205" y1="258" x2="1205" y2="284" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="1055" y="278" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Akt 下游效应（合成代谢全开）</text>
+  <rect x="770" y="288" width="270" height="52" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="905" y="311" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">GLUT4 转位</text>
+  <text x="905" y="331" font-size="10" fill="#475569" text-anchor="middle">肌 / 脂肪摄糖 ↑</text>
+  <rect x="770" y="352" width="270" height="52" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.5"/>
+  <text x="905" y="375" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">糖原合酶激活</text>
+  <text x="905" y="395" font-size="10" fill="#475569" text-anchor="middle">去磷酸化 · 糖原合成 ↑</text>
+  <rect x="770" y="416" width="270" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="905" y="439" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">PFK-2 去磷酸化</text>
+  <text x="905" y="459" font-size="10" fill="#475569" text-anchor="middle">F-2,6-BP ↑ → 糖酵解 ↑</text>
+  <rect x="1070" y="288" width="270" height="52" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1205" y="311" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">ACC 活性 ↑</text>
+  <text x="1205" y="331" font-size="10" fill="#475569" text-anchor="middle">脂肪酸合成 ↑</text>
+  <rect x="1070" y="352" width="270" height="52" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1205" y="375" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">HSL 去磷酸化失活</text>
+  <text x="1205" y="395" font-size="10" fill="#475569" text-anchor="middle">脂解 ↓</text>
+  <rect x="1070" y="416" width="270" height="52" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1205" y="439" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白合成 ↑ / 降解 ↓</text>
+  <text x="1205" y="459" font-size="10" fill="#475569" text-anchor="middle">基因表达调控</text>
+  <text x="770" y="492" font-size="10.5" fill="#475569">胰岛素（唯一降糖激素）受体为酪氨酸激酶型（RTK）：IRS-PI3K-Akt 促 GLUT4 转位与合成代谢；</text>
+  <text x="770" y="507" font-size="10.5" fill="#475569">PKA 级联促分解——两套信号互为镜像，随血糖涨落切换。</text>
+  <rect x="30" y="644" width="1340" height="336" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="666.84" font-size="19" fill="#475569" font-weight="700">三、PKA 磷酸化靶点与激素-代谢整合总表</text>
+  <text x="60" y="688" font-size="12.5" fill="#1e293b" font-weight="700">PKA 磷酸化的关键靶点（分解代谢 ↑）</text>
+  <rect x="60" y="706" width="8" height="8" fill="#be185d"/>
+  <text x="76" y="716" font-size="11" fill="#475569">磷酸化酶 b 激酶活化 → 糖原分解 ↑</text>
+  <rect x="60" y="734" width="8" height="8" fill="#be185d"/>
+  <text x="76" y="744" font-size="11" fill="#475569">糖原合酶磷酸化失活 → 糖原合成 ↓</text>
+  <rect x="60" y="762" width="8" height="8" fill="#be185d"/>
+  <text x="76" y="772" font-size="11" fill="#475569">PFK-2 / FBPase-2 磷酸化 → F-2,6-BP ↓ → 糖异生 ↑↑</text>
+  <rect x="60" y="790" width="8" height="8" fill="#be185d"/>
+  <text x="76" y="800" font-size="11" fill="#475569">ACC 磷酸化失活 → 丙二酰CoA ↓ → CPT-I 解抑 → β氧化 · 生酮 ↑</text>
+  <rect x="56" y="830" width="590" height="118" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="72" y="854" font-size="12" fill="#075985" font-weight="700">第二信使与 G 蛋白开关</text>
+  <text x="72" y="878" font-size="10.5" fill="#475569">第二信使：cAMP · cGMP · IP₃ / DAG · Ca²⁺（PLC 水解 PIP₂ → IP₃ → 内质网 Ca²⁺ 释放）。</text>
+  <text x="72" y="893" font-size="10.5" fill="#475569">G 蛋白为 GDP / GTP 开关；霍乱毒素使其 ADP 核糖基化 → Gs 持续激活 → 分泌性腹泻。</text>
+  <rect x="700" y="690" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="717.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">状态</text>
+  <rect x="830" y="690" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="717.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">胰岛素 / 胰高血糖素</text>
+  <rect x="1030" y="690" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1180" y="717.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">代谢趋势</text>
+  <rect x="700" y="734" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="760.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">饱食</text>
+  <rect x="830" y="734" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="760.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">↑</text>
+  <rect x="1030" y="734" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1180" y="760.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">糖原 / 脂 / 蛋白合成</text>
+  <rect x="700" y="776" width="630" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="776" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="802.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">空腹</text>
+  <rect x="830" y="776" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="802.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">↓</text>
+  <rect x="1030" y="776" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1180" y="802.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">糖原分解 · 糖异生 · 脂解</text>
+  <rect x="700" y="818" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="844.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">饥饿</text>
+  <rect x="830" y="818" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="844.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">↓↓</text>
+  <rect x="1030" y="818" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1180" y="844.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">糖异生 + 酮体</text>
+  <rect x="700" y="860" width="630" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="860" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="886.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">应激 / 运动</text>
+  <rect x="830" y="860" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="886.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">↓ + 肾上腺素 ↑</text>
+  <rect x="1030" y="860" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1180" y="886.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">快速升糖 · 脂解</text>
+  <text x="700" y="924" font-size="10.5" fill="#475569">调节三层次：细胞水平（秒级——别构 + 共价修饰）→ 激素水平（分钟~小时）→ 整体水平（神经-体液：</text>
+  <text x="700" y="939" font-size="10.5" fill="#475569">低血糖 → 交感兴奋 + 升糖激素）。</text>
+</svg>

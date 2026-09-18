@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">糖蛋白与蛋白聚糖：糖链的连接、识别与「分子海绵」</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">N-连接（Asn-X-Ser/Thr 序列子）与 O-连接（Ser/Thr）两条加工路径、血型抗原的末端糖基差异、核心蛋白 + GAG 瓶刷聚集体与五种糖胺聚糖对照</text>
+  <rect x="30" y="132" width="660" height="432" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、糖蛋白：N-连接与 O-连接两种糖苷</text>
+  <rect x="80" y="288" width="530" height="24" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="84" y="336" font-size="11" fill="#4c1d95" font-weight="700">N 端</text>
+  <text x="608" y="336" font-size="11" fill="#4c1d95" text-anchor="end" font-weight="700">C 端</text>
+  <text x="345" y="336" font-size="11.5" fill="#64748b" text-anchor="middle">多肽链</text>
+  <rect x="192" y="282" width="16" height="36" rx="3" fill="#6d28d9"/>
+  <text x="200" y="360" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Asn</text>
+  <circle cx="200" cy="252" r="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <line x1="200" y1="260" x2="200" y2="282" stroke="#b45309" stroke-width="2"/>
+  <line x1="200" y1="244" x2="182" y2="224" stroke="#b45309" stroke-width="2"/>
+  <line x1="200" y1="244" x2="218" y2="224" stroke="#b45309" stroke-width="2"/>
+  <circle cx="182" cy="224" r="7.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="218" cy="224" r="7.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="168" cy="198" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <circle cx="196" cy="198" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <circle cx="224" cy="198" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <circle cx="248" cy="206" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="182" y1="217" x2="170" y2="204" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="182" y1="217" x2="194" y2="205" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="218" y1="217" x2="222" y2="205" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="218" y1="217" x2="242" y2="204" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="158.91125" y="159.375" width="82.1775" height="21.25" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="200" y="174.5" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">N-连接糖苷</text>
+  <rect x="462" y="282" width="16" height="36" rx="3" fill="#6d28d9"/>
+  <text x="470" y="360" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Ser / Thr</text>
+  <circle cx="470" cy="250" r="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <line x1="470" y1="258" x2="470" y2="282" stroke="#b45309" stroke-width="2"/>
+  <circle cx="494" cy="226" r="7.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <line x1="476" y1="243" x2="488" y2="233" stroke="#b45309" stroke-width="2"/>
+  <circle cx="518" cy="204" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="500" y1="219" x2="512" y2="210" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="428.91125" y="159.375" width="82.1775" height="21.25" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="470" y="174.5" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">O-连接糖苷</text>
+  <text x="90" y="392" font-size="11.5" fill="#475569">N-连接：GlcNAc 的 β-异头碳连于 Asn 侧链酰胺氮，</text>
+  <text x="90" y="409" font-size="11.5" fill="#475569">要求序列子 Asn-X-Ser/Thr（X≠Pro）；</text>
+  <text x="90" y="426" font-size="11.5" fill="#475569">寡糖前体在 ER 脂醇连接，于内质网与高尔基体加工。</text>
+  <text x="392" y="392" font-size="11.5" fill="#475569">O-连接：GalNAc 连于 Ser/Thr 的羟基氧，</text>
+  <text x="392" y="409" font-size="11.5" fill="#475569">在高尔基体逐步合成，常见于黏蛋白。</text>
+  <text x="70" y="486" font-size="12" fill="#1e293b" font-weight="600">寡糖链一般少于 15 个残基；糖含量 &lt;1% 至 &gt;80% 不等。</text>
+  <text x="70" y="516" font-size="11.5" fill="#64748b">糖链非模板化合成 → 分子表面巨大的结构多样性 → 分子识别的基础。</text>
+  <text x="70" y="546" font-size="11.5" fill="#64748b">TGF-β、红细胞生成素、IgG（Fc 段糖基化影响效应功能）等重要蛋白均为糖蛋白。</text>
+  <rect x="710" y="132" width="660" height="432" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、糖链的功能：折叠 · 稳定 · 分子识别</text>
+  <text x="730" y="200" font-size="12.5" fill="#1e293b" font-weight="700">① 折叠与质量控制</text>
+  <text x="910" y="200" font-size="11.5" fill="#475569">葡萄糖三步修剪</text>
+  <text x="730" y="234" font-size="12.5" fill="#1e293b" font-weight="700">② 稳定性与半衰期</text>
+  <text x="910" y="234" font-size="11.5" fill="#475569">唾液酸帽防止蛋白酶攻击</text>
+  <text x="730" y="268" font-size="12.5" fill="#1e293b" font-weight="700">③ 分子识别与靶向</text>
+  <text x="910" y="268" font-size="11.5" fill="#475569">受体识别 · 定向运输</text>
+  <text x="730" y="302" font-size="12.5" fill="#1e293b" font-weight="700">④ 效应功能</text>
+  <text x="910" y="302" font-size="11.5" fill="#475569">IgG Fc 段糖基化</text>
+  <text x="1040" y="342" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">红细胞血型抗原：差别仅在糖链末端糖基</text>
+  <rect x="750.0108" y="377.8" width="39.9784" height="20.4" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="770" y="392.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">O 型</text>
+  <circle cx="880" cy="388" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="920" cy="388" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="960" cy="388" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="888" y1="388" x2="912" y2="388" stroke="#64748b" stroke-width="1.6"/>
+  <line x1="928" y1="388" x2="952" y2="388" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="1000" cy="388" r="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="952" y1="388" x2="991" y2="388" stroke="#64748b" stroke-width="1.6"/>
+  <text x="1018" y="392" font-size="11.5" fill="#475569">末端为岩藻糖（Fuc）</text>
+  <rect x="750.0108" y="433.8" width="39.9784" height="20.4" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="770" y="448.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">A 型</text>
+  <circle cx="880" cy="444" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="920" cy="444" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="960" cy="444" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="888" y1="444" x2="912" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <line x1="928" y1="444" x2="952" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="1000" cy="444" r="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="952" y1="444" x2="991" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="1044" cy="444" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="1009" y1="444" x2="1035" y2="444" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1062" y="448" font-size="11.5" fill="#475569">再加 GalNAc</text>
+  <rect x="750.0108" y="489.8" width="39.9784" height="20.4" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="770" y="504.32" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">B 型</text>
+  <circle cx="880" cy="500" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="920" cy="500" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="960" cy="500" r="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="888" y1="500" x2="912" y2="500" stroke="#64748b" stroke-width="1.6"/>
+  <line x1="928" y1="500" x2="952" y2="500" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="1000" cy="500" r="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="952" y1="500" x2="991" y2="500" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="1044" cy="500" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <line x1="1009" y1="500" x2="1035" y2="500" stroke="#059669" stroke-width="1.6"/>
+  <text x="1062" y="504" font-size="11.5" fill="#475569">再加半乳糖（Gal）</text>
+  <text x="880" y="364" font-size="10.5" fill="#64748b" text-anchor="middle">共同寡糖核心 →</text>
+  <text x="1000" y="364" font-size="10.5" fill="#64748b" text-anchor="middle">末端糖基</text>
+  <text x="730" y="528" font-size="11.5" fill="#64748b">糖链虽由基因间接编码，但非模板化合成赋予其巨大多样性——血型抗原的分子本质即糖链末端差异。</text>
+  <rect x="30" y="584" width="660" height="388" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="606.84" font-size="19" fill="#475569" font-weight="700">三、蛋白聚糖 = 核心蛋白 + 糖胺聚糖（GAG）</text>
+  <rect x="162.22" y="625.375" width="275.56" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="300" y="640.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">软骨聚集蛋白聚糖（aggrecan）「瓶刷」结构</text>
+  <line x1="60" y1="852" x2="640" y2="852" stroke="#0369a1" stroke-width="5"/>
+  <text x="64" y="884" font-size="11.5" fill="#075985" font-weight="700">透明质酸主轴（HA）</text>
+  <line x1="160" y1="848" x2="160" y2="668" stroke="#6d28d9" stroke-width="5"/>
+  <circle cx="160" cy="852" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="116" y1="684" x2="204" y2="684" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="703" x2="204" y2="703" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="722" x2="204" y2="722" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="741" x2="204" y2="741" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="760" x2="204" y2="760" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="779" x2="204" y2="779" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="798" x2="204" y2="798" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="817" x2="204" y2="817" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="116" y1="836" x2="204" y2="836" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="126" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="143" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="160" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="177" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="194" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="320" y1="848" x2="320" y2="668" stroke="#6d28d9" stroke-width="5"/>
+  <circle cx="320" cy="852" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="276" y1="684" x2="364" y2="684" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="703" x2="364" y2="703" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="722" x2="364" y2="722" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="741" x2="364" y2="741" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="760" x2="364" y2="760" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="779" x2="364" y2="779" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="798" x2="364" y2="798" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="817" x2="364" y2="817" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="276" y1="836" x2="364" y2="836" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="286" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="303" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="320" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="337" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="354" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="480" y1="848" x2="480" y2="668" stroke="#6d28d9" stroke-width="5"/>
+  <circle cx="480" cy="852" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="436" y1="684" x2="524" y2="684" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="684" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="703" x2="524" y2="703" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="703" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="722" x2="524" y2="722" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="722" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="741" x2="524" y2="741" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="741" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="760" x2="524" y2="760" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="760" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="779" x2="524" y2="779" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="779" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="798" x2="524" y2="798" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="798" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="817" x2="524" y2="817" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="817" r="3" fill="#b45309" opacity="0.55"/>
+  <line x1="436" y1="836" x2="524" y2="836" stroke="#b45309" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="446" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="463" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="480" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="497" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <circle cx="514" cy="836" r="3" fill="#b45309" opacity="0.55"/>
+  <text x="96" y="690" font-size="12" fill="#4c1d95" font-weight="700">核心蛋白</text>
+  <line x1="120" y1="686" x2="150" y2="690" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="440.52665" y="658.225" width="118.94669999999999" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="500" y="672.14" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">糖胺聚糖（GAG）链</text>
+  <line x1="486" y1="674" x2="520" y2="700" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="430" y="884" font-size="11.5" fill="#d97706" font-weight="600">连接蛋白（非共价聚合）</text>
+  <text x="50" y="918" font-size="11.5" fill="#475569">GAG 带大量硫酸基与羧基负电荷，吸引阳离子与水形成「分子海绵」：软骨抗压 · 关节液润滑 · 角膜透明。</text>
+  <rect x="710" y="584" width="660" height="388" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="606.84" font-size="19" fill="#475569" font-weight="700">四、五种糖胺聚糖（GAG）对照</text>
+  <rect x="726" y="636" width="148" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="663.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">糖胺聚糖</text>
+  <rect x="874" y="636" width="252" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="663.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">重复二糖单位</text>
+  <rect x="1126" y="636" width="228" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="663.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">分布 / 特点</text>
+  <rect x="726" y="680" width="148" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="705.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">透明质酸</text>
+  <rect x="874" y="680" width="252" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="705.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">葡糖醛酸 + GlcNAc</text>
+  <rect x="1126" y="680" width="228" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="705.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">唯一不硫酸化 · 游离存在</text>
+  <rect x="726" y="720" width="628" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="720" width="148" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="745.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">硫酸软骨素</text>
+  <rect x="874" y="720" width="252" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="745.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">葡糖醛酸 + GalNAc(4S/6S)</text>
+  <rect x="1126" y="720" width="228" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="745.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">软骨 · 角膜</text>
+  <rect x="726" y="760" width="148" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="785.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">硫酸皮肤素</text>
+  <rect x="874" y="760" width="252" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="785.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">艾杜糖醛酸 + GalNAc</text>
+  <rect x="1126" y="760" width="228" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="785.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">皮肤 · 血管</text>
+  <rect x="726" y="800" width="628" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="800" width="148" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="825.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">硫酸角质素</text>
+  <rect x="874" y="800" width="252" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="825.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">半乳糖 + GlcNAc</text>
+  <rect x="1126" y="800" width="228" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="825.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">角膜 · 软骨</text>
+  <rect x="726" y="840" width="148" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="865.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">肝素 / 硫酸乙酰肝素</text>
+  <rect x="874" y="840" width="252" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="865.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">艾杜糖醛酸(2S) + GlcNS</text>
+  <rect x="1126" y="840" width="228" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="865.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗凝 · 受体共因子</text>
+  <text x="726" y="906" font-size="11.5" fill="#475569">肝素是最常见的天然抗凝剂：增强抗凝血酶 III 对凝血酶与因子 Xa 的抑制，临床用于血栓防治；黏多糖贮积症</text>
+  <text x="726" y="923" font-size="11.5" fill="#475569">（Hurler / Hunter 综合征）由 GAG 降解酶缺陷引起。</text>
+</svg>

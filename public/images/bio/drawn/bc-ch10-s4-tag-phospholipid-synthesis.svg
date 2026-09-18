@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">甘油三酯与磷脂的合成：磷脂酸枢纽与两条 CDP 策略</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">HSL 为脂肪动员限速酶；3-磷酸甘油 + 2 脂酰CoA → 磷脂酸 → DAG → TAG；磷脂经 CDP-甘油二酯（PI/心磷脂）与 CDP-胆碱（PC/PE，肝限速酶为磷酸胆碱胞苷转移酶）两途径；DPPC 缺乏致 NRDS</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、脂肪动员（HSL）与甘油二酯途径（肝 · 脂肪组织）</text>
+  <rect x="56" y="176" width="128" height="40" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="120" y="200" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">甘油三酯 TAG</text>
+  <line x1="186" y1="196" x2="258" y2="196" stroke="#be185d" stroke-width="2.8" marker-end="url(#arr-enz)"/>
+  <rect x="196.473" y="165.5" width="51.053999999999995" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="222" y="177.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">HSL 限速</text>
+  <rect x="260" y="176" width="130" height="40" rx="7" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.5"/>
+  <text x="325" y="192" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">FFA</text>
+  <text x="325" y="208" font-size="9" fill="#64748b" text-anchor="middle">＋ 血清清蛋白</text>
+  <rect x="410" y="176" width="90" height="40" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="455" y="192" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">甘油</text>
+  <text x="455" y="208" font-size="9" fill="#64748b" text-anchor="middle">→ 肝糖异生</text>
+  <text x="520" y="190" font-size="9.5" fill="#475569">肾上腺素 / 胰高血糖素经 cAMP-PKA 磷酸化激活 HSL；</text>
+  <text x="520" y="203" font-size="9.5" fill="#475569">胰岛素去磷酸化使其失活。</text>
+  <text x="520" y="240" font-size="9.5" fill="#64748b">脂肪组织缺甘油激酶，</text>
+  <text x="520" y="253" font-size="9.5" fill="#64748b">甘油只能运至肝。</text>
+  <text x="56" y="268" font-size="12.5" fill="#1e293b" font-weight="700">甘油二酯途径（主要）：</text>
+  <rect x="56" y="288" width="128" height="40" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="120" y="308" font-size="10.5" fill="#1e293b" text-anchor="middle">磷酸二羟丙酮</text>
+  <text x="120" y="322" font-size="8.5" fill="#64748b" text-anchor="middle">（糖酵解中间物）</text>
+  <line x1="184" y1="308" x2="226" y2="308" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="228" y="288" width="104" height="40" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="280" y="308" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">3-磷酸甘油</text>
+  <line x1="332" y1="308" x2="374" y2="308" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="353" y="294" font-size="8.5" fill="#64748b" text-anchor="middle">＋2 脂酰CoA</text>
+  <rect x="376" y="288" width="120" height="40" rx="7" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="436" y="302" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">磷脂酸</text>
+  <text x="436" y="318" font-size="9" fill="#64748b" text-anchor="middle">（共同中间物）</text>
+  <line x1="496" y1="308" x2="538" y2="308" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="517" y="294" font-size="8.5" fill="#64748b" text-anchor="middle">磷酸酶</text>
+  <rect x="540" y="288" width="110" height="40" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="595" y="302" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">甘油二酯</text>
+  <text x="595" y="318" font-size="9" fill="#64748b" text-anchor="middle">DAG</text>
+  <line x1="595" y1="328" x2="595" y2="366" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="648" y="350" font-size="9" fill="#64748b" text-anchor="middle">DGAT</text>
+  <text x="560" y="350" font-size="9" fill="#64748b" text-anchor="middle">＋ 脂酰CoA</text>
+  <rect x="500" y="368" width="190" height="40" rx="8" fill="#fef3c7" fill-opacity="0.6" stroke="#b45309" stroke-width="1.8"/>
+  <text x="595" y="392" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">甘油三酯（TAG）</text>
+  <text x="56" y="368" font-size="10.5" fill="#475569">磷脂酸同时是磷脂合成的共同中间物——TAG 与磷脂在此「分岔」。</text>
+  <text x="56" y="412" font-size="10.5" fill="#64748b">小肠黏膜另走「单酰甘油途径」：消化吸收的 2-单酰甘油直接酰化再合成 TAG，</text>
+  <text x="56" y="427" font-size="10.5" fill="#64748b">组装为乳糜微粒。</text>
+  <text x="56" y="448" font-size="10.5" fill="#64748b">脂肪动员限速酶为激素敏感性脂肪酶（HSL）；合成以肝与脂肪组织为主。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、甘油磷脂合成：以磷脂酸为枢纽的两条策略</text>
+  <rect x="900" y="168" width="130" height="34" rx="7" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="965" y="188" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">磷脂酸</text>
+  <text x="726" y="232" font-size="12" fill="#1e293b" font-weight="700">策略一：CDP-甘油二酯途径（PI · 心磷脂 · 磷脂酰甘油）</text>
+  <line x1="930" y1="204" x2="830" y2="244" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="730" y="246" width="120" height="32" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="790" y="266" font-size="10.5" fill="#1e293b" text-anchor="middle">＋ CTP</text>
+  <line x1="850" y1="262" x2="900" y2="262" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="902" y="246" width="170" height="32" rx="7" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="987" y="266" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">CDP-甘油二酯</text>
+  <line x1="1072" y1="262" x2="1122" y2="262" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1124" y="246" width="210" height="32" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1229" y="266" font-size="11" fill="#1e293b" text-anchor="middle">＋ 肌醇 / 磷脂酰甘油</text>
+  <line x1="1229" y1="278" x2="1229" y2="306" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1124" y="308" width="210" height="34" rx="7" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1229" y="330" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">PI · 心磷脂 · 磷脂酰甘油</text>
+  <text x="726" y="386" font-size="12" fill="#1e293b" font-weight="700">策略二：CDP-胆碱 / CDP-乙醇胺途径（PC · PE）</text>
+  <line x1="1000" y1="204" x2="1040" y2="396" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="730" y="398" width="150" height="32" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="805" y="418" font-size="11" fill="#1e293b" text-anchor="middle">胆碱 / 乙醇胺</text>
+  <line x1="880" y1="414" x2="920" y2="414" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="900" y="400" font-size="8.5" fill="#64748b" text-anchor="middle">激酶</text>
+  <rect x="922" y="398" width="120" height="32" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="982" y="418" font-size="11" fill="#1e293b" text-anchor="middle">磷酸胆碱</text>
+  <line x1="1042" y1="414" x2="1082" y2="414" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <rect x="1084" y="398" width="110" height="32" rx="7" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1139" y="418" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">CDP-胆碱</text>
+  <line x1="1194" y1="414" x2="1234" y2="414" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="1214" y="400" font-size="8.5" fill="#64748b" text-anchor="middle">＋DAG</text>
+  <rect x="1236" y="398" width="100" height="32" rx="7" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1286" y="418" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">PC / PE</text>
+  <rect x="1041.094" y="447.5" width="195.812" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1139" y="459.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">磷酸胆碱胞苷转移酶 = 肝 PC 合成限速酶</text>
+  <text x="726" y="500" font-size="10.5" fill="#475569">两条策略的差别：「头部」是先接在 CDP 上交给 DAG（策略二），还是先把 DAG 活化为 CDP-甘油二酯再接头部（策略一）。</text>
+  <text x="726" y="536" font-size="10.5" fill="#64748b">各组织内质网合成；乙醇胺途径同理生成 PE。</text>
+  <rect x="30" y="566" width="660" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、磷脂酶 A₁ / A₂ / C / D 的分工水解</text>
+  <text x="210" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">甘油骨架</text>
+  <circle cx="210" cy="700" r="22" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="210" y="704" font-size="10" fill="#475569" text-anchor="middle">甘油</text>
+  <line x1="188" y1="688" x2="130" y2="656" stroke="#64748b" stroke-width="2"/>
+  <text x="130" y="638" font-size="9.5" fill="#475569" text-anchor="middle">脂肪酸₁（sn-1）</text>
+  <line x1="188" y1="712" x2="130" y2="744" stroke="#64748b" stroke-width="2"/>
+  <text x="130" y="762" font-size="9.5" fill="#475569" text-anchor="middle">脂肪酸₂（sn-2）</text>
+  <line x1="232" y1="700" x2="290" y2="700" stroke="#64748b" stroke-width="2"/>
+  <rect x="290" y="682" width="60" height="36" rx="6" fill="#ede9fe" fill-opacity="0.6" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="320" y="704" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">X 头基</text>
+  <text x="320" y="740" font-size="9" fill="#64748b" text-anchor="middle">（胆碱 / 乙醇胺 / 肌醇…）</text>
+  <line x1="155" y1="670" x2="180" y2="684" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="111.64949999999999" y="601.5" width="76.70100000000002" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="613.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">A₁：sn-1 酯键</text>
+  <line x1="155" y1="730" x2="180" y2="716" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="97.8578" y="797.925" width="104.28439999999999" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="809.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">A₂：sn-2 → 溶血磷脂</text>
+  <line x1="270" y1="694" x2="240" y2="698" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="314.621" y="613.5" width="150.758" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="390" y="625.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">C：3 位磷酸酯键 → IP₃ + DAG</text>
+  <line x1="270" y1="710" x2="240" y2="704" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="315.7025" y="773.5" width="148.595" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="390" y="785.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">D：磷脂酰键 → 磷脂酸 + X-OH</text>
+  <text x="390" y="660" font-size="10.5" fill="#475569">A₁ / A₂ 产物为溶血磷脂，</text>
+  <text x="390" y="675" font-size="10.5" fill="#475569">再经 A₁ / A₂ 完全水解为甘油磷酸与脂肪酸。</text>
+  <rect x="390" y="700" width="280" height="60" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.6"/>
+  <text x="406" y="722" font-size="11.5" fill="#831843" font-weight="700">PLC 水解 PIP₂ 产生 IP₃ 与 DAG</text>
+  <text x="406" y="744" font-size="11" fill="#475569">——一对经典的第二信使</text>
+  <text x="56" y="860" font-size="10.5" fill="#475569">磷脂酶 A₂ 产物溶血卵磷脂是蜂毒、蛇毒的主要成分；其从膜磷脂释放的花生四烯酸启动类二十烷酸合成。</text>
+  <text x="56" y="900" font-size="10.5" fill="#64748b">缩醛磷脂、血小板活化因子（PAF）等特殊磷脂亦由甘油磷脂衍生。</text>
+  <rect x="710" y="566" width="660" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="588.84" font-size="19" fill="#475569" font-weight="700">四、二软脂酰卵磷脂（DPPC）：肺表面活性物质</text>
+  <rect x="746" y="624" width="150" height="60" rx="8" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.8"/>
+  <text x="821" y="648" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">DPPC</text>
+  <text x="821" y="668" font-size="10" fill="#475569" text-anchor="middle">二软脂酰卵磷脂</text>
+  <line x1="900" y1="654" x2="950" y2="654" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="952" y="624" width="190" height="60" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1047" y="648" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">Ⅱ型肺泡上皮分泌</text>
+  <text x="1047" y="668" font-size="10" fill="#475569" text-anchor="middle">肺表面活性物质主成分</text>
+  <line x1="1146" y1="654" x2="1196" y2="654" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1198" y="624" width="140" height="60" rx="8" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="1268" y="648" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">降低肺泡</text>
+  <text x="1268" y="668" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">表面张力</text>
+  <rect x="746" y="716" width="592" height="96" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="766" y="744" font-size="12.5" fill="#dc2626" font-weight="700">早产儿 DPPC 缺乏 → 新生儿呼吸窘迫综合征（NRDS）</text>
+  <text x="766" y="770" font-size="10.5" fill="#475569">肺泡表面张力增高、肺不张——是早产儿呼吸困难的重要原因；</text>
+  <text x="766" y="785" font-size="10.5" fill="#475569">产前糖皮质激素与出生后外源性表面活性物质替代为防治策略。</text>
+  <text x="726" y="848" font-size="10.5" fill="#475569">磷脂酰肌醇（PI）磷酸化为 PIP₂ 后经 PLC 水解产生 IP₃ 与 DAG——磷脂既是膜结构分子，又是信号分子。</text>
+  <text x="726" y="902" font-size="11.5" fill="#1e293b" font-weight="700">「磷脂酸 → DAG → 磷脂 / TAG」是脂质合成的中枢分岔。</text>
+</svg>

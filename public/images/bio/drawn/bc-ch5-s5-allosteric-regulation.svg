@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">别构酶与酶活性的调节：S 形曲线与级联放大</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">正协同产生 S 形动力学，MWC 齐变（T⇌R 对称转换）与 KNF 序变两模型；ATCase 受 CTP 反馈抑制、ATP 激活；共价修饰与酶原激活构成级联放大</text>
+  <rect x="30" y="132" width="700" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、S 形动力学：别构酶 vs 米氏酶</text>
+  <rect x="80" y="216" width="560" height="270" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="418.5" x2="640" y2="418.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="220" y1="486" x2="220" y2="216" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="351" x2="640" y2="351" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="360" y1="486" x2="360" y2="216" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="283.5" x2="640" y2="283.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="486" x2="500" y2="216" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="486" x2="80" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="508" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="332" y1="486" x2="332" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="332" y="508" font-size="13" fill="#64748b" text-anchor="middle">K₀.₅</text>
+  <line x1="528" y1="486" x2="528" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <line x1="640" y1="486" x2="640" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="640" y="508" font-size="13" fill="#64748b" text-anchor="middle">[S]→</text>
+  <line x1="74" y1="216" x2="80" y2="216" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="220" font-size="13" fill="#64748b" text-anchor="end">Vmax</text>
+  <line x1="74" y1="351" x2="80" y2="351" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="355" font-size="13" fill="#64748b" text-anchor="end">0.5 Vmax</text>
+  <text x="360" y="530" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">[S]</text>
+  <text x="34" y="351" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">v₀</text>
+  <line x1="80" y1="216" x2="640" y2="216" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <path d="M80.0,486.0 L108.0,402.3 L136.0,357.8 L192.0,313.2 L248.0,294.3 L304.0,280.8 L416.0,264.6 L640.0,253.8" fill="none" stroke="#64748b" stroke-width="2.4"/>
+  <path d="M80.0,486.0 L124.8,477.9 L164.0,467.1 L192.0,453.6 L236.8,429.3 L276.0,396.9 L332.0,351.0 L388.0,313.2 L472.0,275.4 L556.0,256.5 L640.0,243.0" fill="none" stroke="#be185d" stroke-width="3"/>
+  <path d="M80.0,486.0 L102.4,472.5 L124.8,450.9 L147.2,421.2 L169.6,388.8 L203.2,351.0 L248.0,313.2 L332.0,275.4 L472.0,251.1 L640.0,237.6" fill="none" stroke="#059669" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <path d="M80.0,486.0 L147.2,480.6 L203.2,469.8 L270.4,445.5 L332.0,415.8 L393.6,378.0 L427.2,351.0 L483.2,318.6 L556.0,286.2 L640.0,267.3" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <rect x="100" y="216" width="14" height="14" rx="3" fill="#64748b"/>
+  <text x="122" y="228" font-size="11" fill="#475569">米氏酶（双曲线）</text>
+  <rect x="100" y="242" width="14" height="14" rx="3" fill="#be185d"/>
+  <text x="122" y="254" font-size="11" fill="#475569">别构酶（S 形 · 正协同）</text>
+  <rect x="100" y="268" width="14" height="14" rx="3" fill="#059669"/>
+  <text x="122" y="280" font-size="11" fill="#475569">激活剂（左移）</text>
+  <rect x="100" y="294" width="14" height="14" rx="3" fill="#dc2626"/>
+  <text x="122" y="306" font-size="11" fill="#475569">抑制剂（右移）</text>
+  <text x="80" y="530" font-size="11" fill="#475569">底物自身作为正效应剂产生正协同，曲线呈 S 形；负协同则低于双曲线。效应剂使 S 形曲线左移（激活）或右移（抑制）。</text>
+  <rect x="750" y="132" width="620" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、两种协同模型：MWC 齐变 vs KNF 序变</text>
+  <text x="766" y="196" font-size="12" fill="#1e293b" font-weight="700">MWC（Monod-Wyman-Changeux，齐变/对称）模型：</text>
+  <rect x="836" y="220" width="34" height="34" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="836" y="260" width="34" height="34" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="876" y="220" width="34" height="34" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="876" y="260" width="34" height="34" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="876" y="312" font-size="10.5" fill="#475569" text-anchor="middle">T 态（紧张 · 低活性）</text>
+  <line x1="940" y1="270" x2="1000" y2="270" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)" marker-start="url(#arr-enz)"/>
+  <rect x="1010" y="220" width="34" height="34" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1010" y="260" width="34" height="34" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1050" y="220" width="34" height="34" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1050" y="260" width="34" height="34" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1050" y="312" font-size="10.5" fill="#831843" text-anchor="middle">R 态（松弛 · 高活性）</text>
+  <text x="766" y="340" font-size="11" fill="#475569">所有亚基同时处于 T 或 R 两种状态之一，配体只与其中一种结合，别构转换保持对称。</text>
+  <text x="766" y="392" font-size="12" fill="#1e293b" font-weight="700">KNF（Koshland-Némethy-Filmer，序变）模型：</text>
+  <rect x="780" y="412" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="818" y="412" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="780" y="450" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="818" y="450" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <line x1="864" y1="448" x2="908" y2="448" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="920" y="412" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="958" y="412" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="920" y="450" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="958" y="450" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1004" y1="448" x2="1048" y2="448" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1060" y="412" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1098" y="412" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1060" y="450" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="1098" y="450" width="32" height="32" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1144" y1="448" x2="1188" y2="448" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1200" y="412" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1238" y="412" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1200" y="450" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="1238" y="450" width="32" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="820" y="500" font-size="10.5" fill="#475569" text-anchor="middle">配体逐个诱导亚基构象变化，亚基间可不对称</text>
+  <text x="766" y="528" font-size="11.5" fill="#1e293b" font-weight="700">血红蛋白结合 O₂ 符合 MWC 模型。</text>
+  <rect x="30" y="564" width="700" height="416" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="586.84" font-size="19" fill="#475569" font-weight="700">三、ATCase：终产物反馈抑制的经典范例</text>
+  <rect x="56" y="620" width="130" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="121" y="640" font-size="10.5" fill="#1e293b" text-anchor="middle">氨甲酰磷酸 + 天冬氨酸</text>
+  <line x1="190" y1="642" x2="250" y2="642" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="279.98375" y="631.375" width="60.0325" height="21.25" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="310" y="646.5" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">ATCase</text>
+  <line x1="372" y1="642" x2="432" y2="642" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="432" y="620" width="130" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="497" y="638" font-size="11.5" fill="#1e293b" text-anchor="middle">嘧啶合成</text>
+  <text x="497" y="656" font-size="10.5" fill="#64748b" text-anchor="middle">第一步</text>
+  <rect x="610" y="620" width="100" height="44" rx="8" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="660" y="638" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">CTP</text>
+  <text x="660" y="656" font-size="10" fill="#64748b" text-anchor="middle">（终产物）</text>
+  <line x1="562" y1="642" x2="606" y2="642" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <path d="M660,614 L660,596 Q660,584 640,584 L340,584 Q318,584 318,620" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arr-bad)"/>
+  <text x="490" y="576" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">反馈抑制（终产物抑制）</text>
+  <circle cx="240" cy="596" r="17" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="240" y="599.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">ATP</text>
+  <line x1="258" y1="596" x2="296" y2="618" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <text x="240" y="632" font-size="9.5" fill="#059669" text-anchor="middle">激活</text>
+  <text x="190" y="700" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">结构：6 调节亚基 + 6 催化亚基</text>
+  <circle cx="156" cy="732" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="190" cy="718" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="224" cy="732" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="156" cy="800" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="190" cy="814" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="224" cy="800" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="243.69357503463522" cy="781" r="8.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="190" cy="796" r="8.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="136.3064249653648" cy="781" r="8.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="136.30642496536478" cy="751" r="8.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="190" cy="736" r="8.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="243.69357503463522" cy="751" r="8.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="190" y="850" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">催化亚基 c ×6（玫红）</text>
+  <text x="310" y="772" font-size="10.5" fill="#075985" font-weight="700">调节亚基 r ×6（蓝）</text>
+  <text x="56" y="890" font-size="11.5" fill="#475569">大肠杆菌嘧啶合成第一步酶：底物氨甲酰磷酸/天冬氨酸产生正协同（S 形），终产物 CTP 为别构抑制剂、ATP 为别构激活剂。</text>
+  <text x="56" y="940" font-size="11.5" fill="#64748b">别构调节微秒-毫秒级响应、不耗能。</text>
+  <rect x="750" y="564" width="620" height="416" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="586.84" font-size="19" fill="#475569" font-weight="700">四、酶活性调节的四种方式</text>
+  <text x="766" y="604" font-size="12.5" fill="#1e293b" font-weight="700">① 别构调节</text>
+  <text x="766" y="624" font-size="10.5" fill="#475569">微秒-毫秒级响应，不耗能（如 ATCase）</text>
+  <text x="766" y="674" font-size="12.5" fill="#1e293b" font-weight="700">② 共价修饰</text>
+  <text x="766" y="694" font-size="10.5" fill="#475569">磷酸化/脱磷酸化最普遍：蛋白激酶/磷酸酶催化，靶 Ser/Thr/Tyr，耗 ATP，级联放大显著；另有腺苷酰化（谷氨酰胺合成酶）</text>
+  <text x="766" y="709" font-size="10.5" fill="#475569">等</text>
+  <text x="766" y="744" font-size="12.5" fill="#1e293b" font-weight="700">③ 酶原激活</text>
+  <text x="766" y="764" font-size="10.5" fill="#475569">水解切除一段肽暴露活性中心——不可逆的「放大装置」：胰蛋白酶原切 N 端六肽（Val-Asp-Asp-Asp-Asp-Lys）后级联激活；</text>
+  <text x="766" y="779" font-size="10.5" fill="#475569">凝血级联放大近千倍；急性胰腺炎即酶原提前激活</text>
+  <text x="766" y="862" font-size="12.5" fill="#1e293b" font-weight="700">④ 酶含量调节</text>
+  <text x="766" y="882" font-size="10.5" fill="#475569">诱导与阻遏（基因表达水平），小时级慢调节</text>
+  <text x="766" y="924" font-size="11.5" fill="#1e293b" font-weight="700">总原则：快调活性（别构/共价修饰，秒-分级），慢调数量（合成降解，小时级）；</text>
+  <text x="766" y="941" font-size="11.5" fill="#1e293b" font-weight="700">关键酶处于代谢途径的「入口」与不可逆步骤。</text>
+</svg>

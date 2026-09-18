@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">酶的化学本质、催化特性与分类</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">结合酶 = 酶蛋白（定专一性）+ 辅因子（定反应类型），辅酶松散辅基紧密；催化高效 10⁶~10¹² 倍、立体异构专一；EC 六大类与 1 IU / 比活力纯度指标</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、酶的化学本质：绝大多数是蛋白质</text>
+  <ellipse cx="200" cy="250" rx="96" ry="58" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="200" y="244" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">酶蛋白</text>
+  <text x="200" y="266" font-size="11" fill="#64748b" text-anchor="middle">决定专一性</text>
+  <circle cx="316" cy="250" r="30" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="316" y="254.68" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">辅因子</text>
+  <text x="316" y="296" font-size="11" fill="#64748b" text-anchor="middle">决定反应类型</text>
+  <line x1="296" y1="250" x2="284" y2="250" stroke="#475569" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="258" y="228" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">结合酶</text>
+  <text x="56" y="196" font-size="11.5" fill="#1e293b" font-weight="700">单纯酶：仅由氨基酸组成</text>
+  <rect x="56" y="340" width="296" height="66" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.5"/>
+  <text x="70" y="364" font-size="12.5" fill="#78350f" font-weight="700">辅酶（松散结合）</text>
+  <text x="70" y="386" font-size="10.5" fill="#475569">可用透析除去 · 如 NAD⁺</text>
+  <rect x="368" y="340" width="296" height="66" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.5"/>
+  <text x="382" y="364" font-size="12.5" fill="#831843" font-weight="700">辅基（共价紧密结合）</text>
+  <text x="382" y="386" font-size="10.5" fill="#475569">不易透析除去 · FAD、血红素、生物素、磷酸吡哆醛</text>
+  <text x="56" y="436" font-size="11.5" fill="#475569">少数具催化功能的 RNA 称核酶（RNase P、核糖体大亚基肽酰转移酶）；抗体酶说明「专一性结合过渡态」即可催化。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、酶的四大催化特性</text>
+  <text x="730" y="190" font-size="12.5" fill="#1e293b" font-weight="700">① 高效性</text>
+  <text x="730" y="210" font-size="11" fill="#475569">比非催化反应快 10⁶~10¹² 倍；碳酸酐酶转换数达 10⁶ s⁻¹（接近扩散控制极限）</text>
+  <text x="730" y="252" font-size="12.5" fill="#1e293b" font-weight="700">② 高度专一性</text>
+  <text x="730" y="272" font-size="11" fill="#475569">绝对专一性：脲酶只作用尿素；相对专一性：胰蛋白酶切 Lys/Arg 后肽键；立体异构专一性：只作用 L-型底物、</text>
+  <text x="730" y="287" font-size="11" fill="#475569">NAD⁺ 的 A/B 面专一</text>
+  <text x="730" y="314" font-size="12.5" fill="#1e293b" font-weight="700">③ 可调节性</text>
+  <text x="730" y="334" font-size="11" fill="#475569">酶量与酶活性受底物、产物、激素等调控</text>
+  <text x="730" y="376" font-size="12.5" fill="#1e293b" font-weight="700">④ 温和条件</text>
+  <text x="730" y="396" font-size="11" fill="#475569">常温常压、近中性 pH</text>
+  <text x="730" y="462" font-size="11.5" fill="#64748b">酶是活细胞产生的、具有极高催化效率与专一性的生物催化剂。</text>
+  <rect x="30" y="556" width="760" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="578.84" font-size="19" fill="#475569" font-weight="700">三、国际酶学委员会（EC）六大类</text>
+  <rect x="56" y="612" width="54" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="639.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">EC</text>
+  <rect x="110" y="612" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="639.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">类别</text>
+  <rect x="240" y="612" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="639.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">催化反应</text>
+  <rect x="480" y="612" width="284" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="639.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">举例</text>
+  <rect x="56" y="656" width="54" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="679.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">1</text>
+  <rect x="110" y="656" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="679.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">氧化还原酶</text>
+  <rect x="240" y="656" width="240" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="679.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">电子转移</text>
+  <rect x="480" y="656" width="284" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="679.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">乳酸脱氢酶、细胞色素氧化酶</text>
+  <rect x="56" y="692" width="708" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="692" width="54" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="715.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">2</text>
+  <rect x="110" y="692" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="715.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">转移酶</text>
+  <rect x="240" y="692" width="240" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="715.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">基团转移</text>
+  <rect x="480" y="692" width="284" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="715.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">氨基转移酶、己糖激酶</text>
+  <rect x="56" y="728" width="54" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="751.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">3</text>
+  <rect x="110" y="728" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="751.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">水解酶</text>
+  <rect x="240" y="728" width="240" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="751.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">水解</text>
+  <rect x="480" y="728" width="284" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="751.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">蛋白酶、脂肪酶、磷酸酶</text>
+  <rect x="56" y="764" width="708" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="764" width="54" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="787.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">4</text>
+  <rect x="110" y="764" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="787.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">裂解酶（裂合酶）</text>
+  <rect x="240" y="764" width="240" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="787.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">非水解/氧化去除基团形成双键</text>
+  <rect x="480" y="764" width="284" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="787.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">醛缩酶、碳酸酐酶</text>
+  <rect x="56" y="800" width="54" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="823.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">5</text>
+  <rect x="110" y="800" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="823.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">异构酶</text>
+  <rect x="240" y="800" width="240" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="823.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">分子内重排</text>
+  <rect x="480" y="800" width="284" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="823.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">磷酸丙糖异构酶、消旋酶</text>
+  <rect x="56" y="836" width="708" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="836" width="54" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="83" y="859.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">6</text>
+  <rect x="110" y="836" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="175" y="859.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">连接酶（合成酶）</text>
+  <rect x="240" y="836" width="240" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="360" y="859.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">伴随 ATP 水解的合成</text>
+  <rect x="480" y="836" width="284" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="622" y="859.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">丙酮酸羧化酶、DNA 连接酶</text>
+  <text x="56" y="880" font-size="11.5" fill="#475569">系统命名含底物与反应类型（如乳酸 : NAD⁺ 氧化还原酶）；按结构分单体酶、寡聚酶与多酶复合体（丙酮酸脱氢酶复合体、脂肪酸合酶）</text>
+  <text x="56" y="897" font-size="11.5" fill="#475569">。</text>
+  <rect x="800" y="556" width="600" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="816" y="578.84" font-size="19" fill="#475569" font-weight="700">四、酶活力单位、比活力与初速度</text>
+  <rect x="816" y="612" width="568" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="636" font-size="12.5" fill="#075985" font-weight="700">1 IU = 1 分钟内转化 1 μmol 底物的酶量（最适条件）</text>
+  <text x="830" y="658" font-size="12.5" fill="#075985" font-weight="700">比活力 = 活力单位数 / 毫克蛋白——表示酶纯度</text>
+  <rect x="846" y="700" width="240" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="846" y1="812.5" x2="1086" y2="812.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="906" y1="850" x2="906" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="846" y1="775" x2="1086" y2="775" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="966" y1="850" x2="966" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="846" y1="737.5" x2="1086" y2="737.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1026" y1="850" x2="1026" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="906" y1="850" x2="906" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="906" y="872" font-size="13" fill="#64748b" text-anchor="middle">粗提液</text>
+  <line x1="990" y1="850" x2="990" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="990" y="872" font-size="13" fill="#64748b" text-anchor="middle">部分纯化</text>
+  <line x1="1074" y1="850" x2="1074" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1074" y="872" font-size="13" fill="#64748b" text-anchor="middle">纯酶</text>
+  <line x1="840" y1="850" x2="846" y2="850" stroke="#475569" stroke-width="1.8"/>
+  <text x="836" y="854" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="840" y1="700" x2="846" y2="700" stroke="#475569" stroke-width="1.8"/>
+  <text x="836" y="704" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="966" y="894" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">纯化步骤 →</text>
+  <text x="800" y="775" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">比活力</text>
+  <path d="M860.4,841.0 L918.0,808.0 L978.0,767.5 L1038.0,722.5 L1074.0,700.0" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <rect x="1126" y="700" width="220" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1126" y1="812.5" x2="1346" y2="812.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1181" y1="850" x2="1181" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1126" y1="775" x2="1346" y2="775" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1236" y1="850" x2="1236" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1126" y1="737.5" x2="1346" y2="737.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1291" y1="850" x2="1291" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1181" y1="850" x2="1181" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1181" y="872" font-size="13" fill="#64748b" text-anchor="middle">粗提液</text>
+  <line x1="1258" y1="850" x2="1258" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1258" y="872" font-size="13" fill="#64748b" text-anchor="middle">部分纯化</text>
+  <line x1="1335" y1="850" x2="1335" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1335" y="872" font-size="13" fill="#64748b" text-anchor="middle">纯酶</text>
+  <line x1="1120" y1="850" x2="1126" y2="850" stroke="#475569" stroke-width="1.8"/>
+  <text x="1116" y="854" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="1120" y1="700" x2="1126" y2="700" stroke="#475569" stroke-width="1.8"/>
+  <text x="1116" y="704" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="1236" y="894" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">纯化步骤 →</text>
+  <text x="1080" y="775" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">总活力</text>
+  <path d="M1139.2,718.0 L1192.0,737.5 L1247.0,767.5 L1302.0,797.5 L1335.0,820.0" fill="none" stroke="#be185d" stroke-width="2.8"/>
+  <text x="966" y="616" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">纯化过程中：比活力升高（左）· 总活力下降（右）</text>
+  <text x="816" y="900" font-size="11.5" fill="#475569">酶促反应速度以初速度 v₀ 表示，以避免产物抑制与酶失活的干扰。</text>
+</svg>

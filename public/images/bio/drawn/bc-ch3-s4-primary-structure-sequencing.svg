@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质一级结构的测定：从碎片重叠到质谱</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Sanger 1955 胰岛素（51 残基 · 3 个二硫键）奠基；胰蛋白酶 / CNBr 等分子剪刀制造重叠片段，Edman 循环每次切一个 N 端残基（一次 50~60 个），MALDI-TOF 与 MS/MS 时代灵敏度达 fmol</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、碎片重叠法：一级结构测定的经典策略</text>
+  <rect x="56" y="186" width="296" height="82" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="70" y="210" font-size="12.5" fill="#075985" font-weight="700">① 纯化与分子量测定</text>
+  <text x="70" y="232" font-size="10.5" fill="#475569">确定亚基数目</text>
+  <rect x="368" y="186" width="296" height="82" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="382" y="210" font-size="12.5" fill="#075985" font-weight="700">② 拆分肽链</text>
+  <text x="382" y="232" font-size="10.5" fill="#475569">巯基保护（碘乙酸酰胺化）后拆链间二硫键</text>
+  <rect x="56" y="284" width="296" height="82" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="70" y="308" font-size="12.5" fill="#075985" font-weight="700">③ 末端分析</text>
+  <text x="70" y="330" font-size="10.5" fill="#475569">N 端：DNFB / Edman；C 端：羧肽酶 / 肼解法</text>
+  <rect x="368" y="284" width="296" height="82" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="382" y="308" font-size="12.5" fill="#075985" font-weight="700">④ 专一性裂解</text>
+  <text x="382" y="330" font-size="10.5" fill="#475569">切成互相重叠的片段（右栏「分子剪刀」）</text>
+  <rect x="56" y="382" width="296" height="82" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="70" y="406" font-size="12.5" fill="#075985" font-weight="700">⑤ 分离测序 · 拼接</text>
+  <text x="70" y="428" font-size="10.5" fill="#475569">重叠片段拼出全序列</text>
+  <rect x="368" y="382" width="296" height="82" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="382" y="406" font-size="12.5" fill="#075985" font-weight="700">⑥ 二硫键定位</text>
+  <text x="382" y="428" font-size="10.5" fill="#475569">水解完整蛋白后比对</text>
+  <text x="56" y="508" font-size="11.5" fill="#1e293b">1955 年 Sanger 首次完成牛胰岛素全序列：51 个残基（A 链 21 · B 链 30）</text>
+  <text x="56" y="525" font-size="11.5" fill="#1e293b">· 3 个二硫键——证明蛋白质具有确定的氨基酸序列。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、专一性裂解的「分子剪刀」</text>
+  <rect x="730" y="186" width="600" height="24" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="810" y="202" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">K</text>
+  <line x1="810" y1="186" x2="810" y2="180" stroke="#be185d" stroke-width="2.6"/>
+  <line x1="810" y1="210" x2="810" y2="216" stroke="#be185d" stroke-width="2.6"/>
+  <text x="880" y="202" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">R</text>
+  <line x1="880" y1="186" x2="880" y2="180" stroke="#be185d" stroke-width="2.6"/>
+  <line x1="880" y1="210" x2="880" y2="216" stroke="#be185d" stroke-width="2.6"/>
+  <text x="960" y="202" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">F</text>
+  <line x1="960" y1="186" x2="960" y2="180" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="960" y1="210" x2="960" y2="216" stroke="#b45309" stroke-width="2.6"/>
+  <text x="1030" y="202" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">Y</text>
+  <line x1="1030" y1="186" x2="1030" y2="180" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="1030" y1="210" x2="1030" y2="216" stroke="#b45309" stroke-width="2.6"/>
+  <text x="1100" y="202" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">W</text>
+  <line x1="1100" y1="186" x2="1100" y2="180" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="1100" y1="210" x2="1100" y2="216" stroke="#b45309" stroke-width="2.6"/>
+  <text x="1190" y="202" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">M</text>
+  <line x1="1190" y1="186" x2="1190" y2="180" stroke="#0369a1" stroke-width="2.6"/>
+  <line x1="1190" y1="210" x2="1190" y2="216" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="730" y="240" font-size="10.5" fill="#be185d" font-weight="700">K / R</text>
+  <line x1="756" y1="236" x2="830" y2="220" stroke="#be185d" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <text x="930" y="240" font-size="10.5" fill="#b45309" font-weight="700">F / Y / W</text>
+  <line x1="966" y1="236" x2="1000" y2="220" stroke="#b45309" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <text x="1150" y="240" font-size="10.5" fill="#0369a1" font-weight="700">M</text>
+  <line x1="1166" y1="236" x2="1186" y2="220" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <rect x="730" y="276" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="303.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">试剂</text>
+  <rect x="900" y="276" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="303.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">切点位置</text>
+  <rect x="1180" y="276" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="303.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">类型</text>
+  <rect x="730" y="320" width="170" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="343.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">胰蛋白酶</text>
+  <rect x="900" y="320" width="280" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="343.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Lys / Arg 的 C 端侧</text>
+  <rect x="1180" y="320" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="343.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">内切酶</text>
+  <rect x="730" y="356" width="600" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="356" width="170" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="379.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">胰凝乳蛋白酶</text>
+  <rect x="900" y="356" width="280" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="379.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Phe / Tyr / Trp 的 C 端侧</text>
+  <rect x="1180" y="356" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="379.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">内切酶</text>
+  <rect x="730" y="392" width="170" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="415.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">溴化氰（CNBr）</text>
+  <rect x="900" y="392" width="280" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="415.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Met 的 C 端侧</text>
+  <rect x="1180" y="392" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="415.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">化学法</text>
+  <rect x="730" y="428" width="600" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="428" width="170" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="451.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">嗜热菌蛋白酶 · 胃蛋白酶</text>
+  <rect x="900" y="428" width="280" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="451.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">补充酶切</text>
+  <rect x="1180" y="428" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="451.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">内切酶</text>
+  <rect x="730" y="464" width="170" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="487.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">羧肽酶</text>
+  <rect x="900" y="464" width="280" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="487.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C 端逐个水解</text>
+  <rect x="1180" y="464" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="487.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C 端测定</text>
+  <text x="730" y="520" font-size="11.5" fill="#475569" font-weight="600">两套（或多套）片段经重叠拼接 → 唯一全序列。</text>
+  <rect x="30" y="556" width="660" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="578.84" font-size="19" fill="#475569" font-weight="700">三、Edman 降解：逐个切下 N 端残基</text>
+  <rect x="186" y="616" width="168" height="78" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.5"/>
+  <text x="270" y="640" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">① 偶联</text>
+  <text x="200" y="660" font-size="10.5" fill="#475569" text-anchor="middle">弱碱下 PITC 与 N 端 α-氨基反应 → PTC-肽</text>
+  <rect x="446" y="716" width="168" height="78" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.5"/>
+  <text x="530" y="740" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">② 裂解</text>
+  <text x="460" y="760" font-size="10.5" fill="#475569" text-anchor="middle">无水三氟乙酸切下噻唑啉酮衍生物</text>
+  <rect x="186" y="816" width="168" height="78" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.5"/>
+  <text x="270" y="840" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">③ 转化 · 鉴定</text>
+  <text x="200" y="860" font-size="10.5" fill="#475569" text-anchor="middle">转化为稳定的 PTH-氨基酸，</text>
+  <text x="200" y="874" font-size="10.5" fill="#475569" text-anchor="middle">HPLC 鉴定</text>
+  <line x1="360" y1="655" x2="440" y2="700" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="440" y1="790" x2="360" y2="835" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="240" y1="816" x2="240" y2="700" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="280" y="758" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">循环</text>
+  <text x="402" y="626" font-size="11" fill="#475569">每次从 N 端切下一个残基；</text>
+  <text x="402" y="642" font-size="11" fill="#475569">一次可连续测定 50~60 个残基。</text>
+  <text x="56" y="930" font-size="11.5" fill="#64748b">由 P. Edman 建立，是自动化 sequenator（序列仪）的原理。</text>
+  <rect x="710" y="556" width="660" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="578.84" font-size="19" fill="#475569" font-weight="700">四、质谱时代与序列的功能意义</text>
+  <rect x="730" y="624" width="190" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="825" y="648" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">MALDI-TOF</text>
+  <text x="825" y="668" font-size="10.5" fill="#475569" text-anchor="middle">肽段指纹图谱（PMF）</text>
+  <line x1="922" y1="657" x2="944" y2="657" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="946" y="624" width="190" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1041" y="648" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">ESI-MS/MS</text>
+  <text x="1041" y="668" font-size="10.5" fill="#475569" text-anchor="middle">串联质谱碎片离子推序列</text>
+  <line x1="1138" y1="657" x2="1160" y2="657" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="1162" y="624" width="190" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1257" y="648" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">Mascot 检索</text>
+  <text x="1257" y="668" font-size="10.5" fill="#475569" text-anchor="middle">数据库比对鉴定</text>
+  <text x="730" y="722" font-size="11.5" fill="#475569">灵敏度达 fmol，已成为高通量蛋白质鉴定的主流——多数测序任务由「演绎」变为「验证」。</text>
+  <rect x="730" y="762" width="620" height="116" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="748" y="792" font-size="12.5" fill="#1e293b" font-weight="700">一级结构是空间结构与功能的基础：</text>
+  <text x="748" y="822" font-size="11.5" fill="#475569">· 分子病：镰状细胞贫血 β6 Glu→Val</text>
+  <text x="748" y="850" font-size="11.5" fill="#475569">· 1965 年我国科学家完成胰岛素人工合成</text>
+  <text x="748" y="878" font-size="11.5" fill="#475569">· 一级结构 = 氨基酸序列 + 二硫键位置，由基因编码决定</text>
+</svg>

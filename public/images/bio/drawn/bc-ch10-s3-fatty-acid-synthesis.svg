@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">脂肪酸的从头合成：ACC 限速与 FAS 七轮循环</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">胞质进行：乙酰CoA 经柠檬酸-丙酮酸穿梭出线粒体，ACC（生物素）产丙二酰CoA 为二碳供体，FAS 四步循环 7 轮耗 14 NADPH 产棕榈酸；人体缺 Δ12/Δ15 去饱和酶故亚油酸、α-亚麻酸为必需脂肪酸</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、原料准备与限速反应：乙酰CoA 羧化酶（ACC）</text>
+  <rect x="46" y="172" width="618" height="150" rx="10" fill="#f1f5f9" fill-opacity="0.5"/>
+  <text x="62" y="198" font-size="18" fill="#475569" font-weight="700">柠檬酸-丙酮酸穿梭：乙酰CoA 出线粒体</text>
+  <rect x="70" y="246" width="108" height="34" rx="7" fill="#ffedd5" stroke="#d97706" stroke-width="1.5"/>
+  <text x="124" y="267" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">线粒体</text>
+  <rect x="190" y="246" width="110" height="34" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="245" y="267" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">乙酰CoA</text>
+  <line x1="300" y1="263" x2="360" y2="263" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="362" y="246" width="90" height="34" rx="7" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.5"/>
+  <text x="407" y="267" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">柠檬酸</text>
+  <text x="407" y="236" font-size="9" fill="#64748b" text-anchor="middle">＋OAA 缩合跨膜</text>
+  <line x1="452" y1="263" x2="512" y2="263" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="482" y="250" font-size="8.5" fill="#64748b" text-anchor="middle">柠檬酸裂解酶</text>
+  <rect x="514" y="246" width="90" height="34" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="559" y="267" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">乙酰CoA</text>
+  <text x="559" y="236" font-size="9" fill="#64748b" text-anchor="middle">（胞质）</text>
+  <text x="70" y="310" font-size="10.5" fill="#475569">胞质 OAA 经苹果酸酶氧化脱羧 → 丙酮酸 + NADPH；NADPH 另来自磷酸戊糖途径。</text>
+  <rect x="46" y="352" width="618" height="118" rx="10" fill="#fce7f3" fill-opacity="0.4" stroke="#be185d" stroke-width="1.8"/>
+  <rect x="63.24669999999999" y="374.65" width="193.50660000000002" height="18.7" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="160" y="387.96" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">ACC（限速酶 · 生物素辅基 · Mn²⁺）</text>
+  <text x="70" y="420" font-size="12" fill="#1e293b" font-weight="700">乙酰CoA + HCO₃⁻ + ATP → 丙二酰CoA + ADP + Pi</text>
+  <text x="70" y="444" font-size="10" fill="#475569">柠檬酸别构激活（聚合为活性丝状体）；长链脂酰CoA 反馈抑制；AMPK 磷酸化使其失活（能量不足停合成）。</text>
+  <text x="70" y="458" font-size="10" fill="#475569">胰岛素去磷酸化激活、胰高血糖素 cAMP-PKA 抑制。</text>
+  <text x="560" y="384" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">二碳供体由此备好</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、脂肪酸合酶（FAS）：缩合四步循环 × 7 轮 → 棕榈酸</text>
+  <text x="726" y="174" font-size="10.5" fill="#475569">哺乳动物 FAS 为同二聚体多功能酶（含 7 种活性），ACP（4′-磷酸泛酰巯基乙胺臂）是转位「机械手」；</text>
+  <text x="726" y="189" font-size="10.5" fill="#475569">大肠杆菌为可解离多酶体系。</text>
+  <rect x="782" y="214" width="216" height="62" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="890" y="232" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">① 缩合</text>
+  <text x="890" y="246" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">β-酮脂酰-ACP 合酶</text>
+  <text x="890" y="260" font-size="9.5" fill="#475569" text-anchor="middle">脂酰 + 丙二酰 → β-酮脂酰</text>
+  <text x="890" y="272" font-size="9.5" fill="#475569" text-anchor="middle">（释 CO₂ 推动缩合）</text>
+  <rect x="1042" y="214" width="216" height="62" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1150" y="232" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">② 还原（NADPH）</text>
+  <text x="1150" y="252" font-size="9.5" fill="#475569" text-anchor="middle">β-酮脂酰 → β-羟脂酰</text>
+  <rect x="1042" y="354" width="216" height="62" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1150" y="372" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">③ 脱水</text>
+  <text x="1150" y="392" font-size="9.5" fill="#475569" text-anchor="middle">β-羟脂酰 → 烯脂酰</text>
+  <rect x="782" y="354" width="216" height="62" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="890" y="372" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">④ 再还原（NADPH）</text>
+  <text x="890" y="392" font-size="9.5" fill="#475569" text-anchor="middle">烯脂酰 → 饱和脂酰-ACP（延长 2C）</text>
+  <line x1="1002" y1="258" x2="1036" y2="258" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <line x1="1150" y1="306" x2="1150" y2="342" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <line x1="1036" y1="400" x2="1002" y2="400" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <line x1="890" y1="342" x2="890" y2="306" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <text x="1020" y="320" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">× 7 轮</text>
+  <line x1="998" y1="232" x2="1212" y2="196" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="1057.1475" y="227.075" width="85.705" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1100" y="239.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="600">硫酯酶水解释放</text>
+  <rect x="1216" y="168" width="132" height="40" rx="8" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.8"/>
+  <text x="1282" y="186" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">棕榈酸</text>
+  <text x="1282" y="200" font-size="10" fill="#64748b" text-anchor="middle">（16:0）</text>
+  <rect x="726" y="452" width="620" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="742" y="474" font-size="11" fill="#1e293b" font-weight="700">总反应：8 乙酰CoA + 7 ATP + 14 NADPH + 14 H⁺ → 棕榈酸 + 8 CoA + 7 ADP + 7 Pi + 14 NADP⁺ + 6 H₂O</text>
+  <text x="726" y="532" font-size="10.5" fill="#64748b">部位：胞质。与 β 氧化互为开关：丙二酰CoA 抑制 CPT-I，关掉「氧化门」。</text>
+  <rect x="30" y="566" width="660" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、从头合成与 β 氧化：镜像对照</text>
+  <rect x="56" y="624" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="651.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="186" y="624" width="244" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="651.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">从头合成</text>
+  <rect x="430" y="624" width="234" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="651.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">β 氧化</text>
+  <rect x="56" y="668" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="694.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">部位</text>
+  <rect x="186" y="668" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">胞质</text>
+  <rect x="430" y="668" width="234" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">线粒体基质</text>
+  <rect x="56" y="710" width="608" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="710" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="736.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">酰基载体</text>
+  <rect x="186" y="710" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="736.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">ACP（泛酰巯基乙胺）</text>
+  <rect x="430" y="710" width="234" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="736.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CoA</text>
+  <rect x="56" y="752" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="778.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">二碳单位</text>
+  <rect x="186" y="752" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="778.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">丙二酰CoA（缩合供体）</text>
+  <rect x="430" y="752" width="234" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="778.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">切下乙酰CoA</text>
+  <rect x="56" y="794" width="608" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="794" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="820.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">氢载体</text>
+  <rect x="186" y="794" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="820.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">NADPH</text>
+  <rect x="430" y="794" width="234" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="820.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">FAD · NAD⁺</text>
+  <rect x="56" y="836" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="862.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">限速酶</text>
+  <rect x="186" y="836" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="862.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">乙酰CoA 羧化酶（ACC）</text>
+  <rect x="430" y="836" width="234" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="862.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CPT-I（肉碱穿梭）</text>
+  <rect x="56" y="878" width="608" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="878" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="904.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">方向</text>
+  <rect x="186" y="878" width="244" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="308" y="904.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">还原（耗能）</text>
+  <rect x="430" y="878" width="234" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="547" y="904.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">氧化（产能）</text>
+  <text x="56" y="954" font-size="11" fill="#64748b">同一脂肪酸「合成时还原、分解时氧化」，两条途径分区、分酶、分载体，避免无效循环。</text>
+  <rect x="710" y="566" width="660" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="588.84" font-size="19" fill="#475569" font-weight="700">四、延长与去饱和：必需脂肪酸的由来</text>
+  <rect x="746" y="624" width="150" height="44" rx="8" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.6"/>
+  <text x="821" y="644" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">棕榈酸 16:0</text>
+  <text x="821" y="660" font-size="9.5" fill="#64748b" text-anchor="middle">（FAS 产物）</text>
+  <line x1="896" y1="646" x2="946" y2="646" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="984.9188" y="637.075" width="150.1624" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1060" y="649.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">延长酶系（内质网 / 线粒体）</text>
+  <text x="1060" y="672" font-size="9.5" fill="#64748b" text-anchor="middle">丙二酰CoA 或乙酰CoA 供二碳 · NADPH 供氢</text>
+  <line x1="1174" y1="668" x2="1174" y2="700" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1094" y="702" width="160" height="40" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1174" y="718" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">18C 以上</text>
+  <text x="1174" y="732" font-size="9.5" fill="#64748b" text-anchor="middle">硬脂酸等长链</text>
+  <line x1="821" y1="668" x2="821" y2="704" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="746" y="706" width="180" height="40" rx="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="836" y="730" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">去饱和酶（Δ⁹ 等）</text>
+  <text x="746" y="776" font-size="10.5" fill="#475569">可引入顺式双键，</text>
+  <text x="746" y="791" font-size="10.5" fill="#475569">但人体缺乏 Δ12 与 Δ15 去饱和酶——不能在 C-9 与甲基端之间引入双键。</text>
+  <rect x="1094" y="776" width="240" height="84" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1110" y="800" font-size="11.5" fill="#dc2626" font-weight="700">必需脂肪酸（必须由膳食供给）</text>
+  <text x="1110" y="824" font-size="11" fill="#475569">· 亚油酸（18:2 Δ9,12）</text>
+  <text x="1110" y="846" font-size="11" fill="#475569">· α-亚麻酸（18:3 Δ9,12,15）</text>
+  <text x="726" y="890" font-size="10.5" fill="#64748b">因此，含 Δ12 / Δ15 双键的多不饱和脂肪酸人体无法自造，必须由膳食供给。</text>
+  <text x="726" y="930" font-size="11" fill="#1e293b" font-weight="700">合成原料四要素：乙酰CoA（碳源）· ATP · HCO₃⁻（CO₂）· NADPH（供氢）。</text>
+</svg>

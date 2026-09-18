@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">碳骨架去路、生糖生酮氨基酸与一碳单位</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">碳架汇入丙酮酸 / 乙酰CoA / TCA 中间物；纯生酮仅 Leu 与 Lys，生糖兼生酮为 Ile·Phe·Tyr·Trp；一碳单位由 THF 携带（Ser·Gly·His·Trp 供给），SAM 为通用甲基供体</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、碳骨架（α-酮酸）的去路：汇入代谢主流</text>
+  <text x="46" y="176" font-size="11" fill="#475569">氨基酸脱氨后的碳骨架经各自途径进入代谢主流——汇入点为丙酮酸、乙酰CoA / 乙酰乙酰CoA 及多种 TCA 中间物：</text>
+  <rect x="46" y="222" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="249.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">汇入点</text>
+  <rect x="266" y="222" width="434" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="249.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">代表氨基酸</text>
+  <rect x="46" y="266" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="288" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">丙酮酸</text>
+  <rect x="266" y="266" width="434" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="288" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Ala · Gly · Ser · Cys · Thr</text>
+  <rect x="46" y="299" width="654" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="299" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="321" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">乙酰CoA / 乙酰乙酰CoA</text>
+  <rect x="266" y="299" width="434" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="321" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Ile · Leu · Lys ·（Phe · Tyr · Trp）</text>
+  <rect x="46" y="332" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="354" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">α-酮戊二酸</text>
+  <rect x="266" y="332" width="434" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="354" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Glu · Gln · Pro · Arg · His</text>
+  <rect x="46" y="365" width="654" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="365" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="387" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">草酰乙酸</text>
+  <rect x="266" y="365" width="434" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="387" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Asp · Asn</text>
+  <rect x="46" y="398" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="420" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">琥珀酰CoA</text>
+  <rect x="266" y="398" width="434" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="420" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Met · Val ·（Ile）</text>
+  <rect x="46" y="431" width="654" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="431" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="156" y="453" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">延胡索酸</text>
+  <rect x="266" y="431" width="434" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="453" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Phe · Tyr（部分）</text>
+  <rect x="46" y="478" width="654" height="42" rx="8" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="62" y="504" font-size="11.5" fill="#075985" font-weight="700">碳架三个去向：氧化供能（入 TCA）· 糖异生（生糖氨基酸）· 生酮或合成脂类</text>
+  <rect x="750" y="132" width="620" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、生糖与生酮氨基酸：仅 2 种纯生酮</text>
+  <rect x="766" y="186" width="190" height="130" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="861" y="212" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">纯生酮（仅 2 种）</text>
+  <rect x="796.7883" y="250.65" width="66.4234" height="18.7" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="830" y="263.96" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">Leu 亮氨酸</text>
+  <rect x="866.7883" y="250.65" width="66.4234" height="18.7" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="900" y="263.96" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">Lys 赖氨酸</text>
+  <text x="782" y="296" font-size="10" fill="#475569">只生成乙酰CoA / 乙酰乙酰CoA</text>
+  <rect x="976" y="186" width="190" height="130" rx="9" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.8"/>
+  <text x="1071" y="212" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">生糖兼生酮（4 种）</text>
+  <rect x="992.7291" y="250.65" width="26.541800000000002" height="18.7" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1006" y="263.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Ile</text>
+  <rect x="1041.5961" y="250.65" width="28.807800000000004" height="18.7" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1056" y="263.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Phe</text>
+  <rect x="1091.5961" y="250.65" width="28.807800000000004" height="18.7" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1106" y="263.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Tyr</text>
+  <rect x="1141.5961" y="250.65" width="28.807800000000004" height="18.7" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1156" y="263.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Trp</text>
+  <text x="992" y="296" font-size="10" fill="#475569">既产酮体又产糖</text>
+  <rect x="766" y="332" width="400" height="62" rx="9" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="966" y="356" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">其余全部为生糖氨基酸</text>
+  <text x="966" y="378" font-size="10.5" fill="#475569" text-anchor="middle">（碳架可经糖异生生成葡萄糖）</text>
+  <text x="766" y="424" font-size="12" fill="#1e293b" font-weight="700">芳香族氨基酸的遗传病：</text>
+  <rect x="766" y="440" width="400" height="78" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="780" y="462" font-size="10" fill="#475569">苯丙氨酸 →（苯丙氨酸羟化酶 · BH₄ 辅因子）→ 酪氨酸：酶缺陷 → 苯丙酮尿症 PKU</text>
+  <text x="780" y="476" font-size="10" fill="#475569">（血苯丙氨酸↑，经转氨生成苯丙酮酸随尿排出，智力发育障碍；</text>
+  <text x="780" y="490" font-size="10" fill="#475569">新生儿筛查 + 低苯丙氨酸饮食治疗）。</text>
+  <rect x="1182" y="440" width="174" height="78" rx="8" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="1194" y="462" font-size="10.5" fill="#dc2626" font-weight="700">酪氨酸代谢缺陷</text>
+  <text x="1194" y="482" font-size="9.5" fill="#475569">尿黑酸症（尿黑酸氧化酶）</text>
+  <text x="1194" y="502" font-size="9.5" fill="#475569">白化病（酪氨酸酶）</text>
+  <text x="766" y="536" font-size="10.5" fill="#64748b">「糖或酮」取决于碳骨架断裂后落在产能网络的哪一侧。</text>
+  <rect x="30" y="566" width="700" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、一碳单位：由四氢叶酸（THF）N⁵ / N¹⁰ 携带</text>
+  <rect x="46" y="620" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="647.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">一碳单位</text>
+  <rect x="186" y="620" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="647.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">THF 结合形式</text>
+  <rect x="446" y="620" width="254" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="573" y="647.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">来源氨基酸</text>
+  <rect x="46" y="664" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="684.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">甲基 −CH₃</text>
+  <rect x="186" y="664" width="260" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="684.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N⁵-CH₃-THF</text>
+  <rect x="446" y="664" width="254" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="573" y="684.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">不可逆「甲炔→甲基」</text>
+  <rect x="46" y="694" width="654" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="694" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="714.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">甲烯基 −CH₂−</text>
+  <rect x="186" y="694" width="260" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="714.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N⁵,N¹⁰-CH₂-THF</text>
+  <rect x="446" y="694" width="254" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="573" y="714.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Ser · Gly</text>
+  <rect x="46" y="724" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="744.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">甲炔基 =CH−</text>
+  <rect x="186" y="724" width="260" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="744.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N⁵,N¹⁰=CH-THF</text>
+  <rect x="446" y="724" width="254" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="573" y="744.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Ser / Gly（氧化）</text>
+  <rect x="46" y="754" width="654" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="754" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="774.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">甲酰基 −CHO</text>
+  <rect x="186" y="754" width="260" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="774.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N¹⁰-CHO-THF</text>
+  <rect x="446" y="754" width="254" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="573" y="774.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Trp · His · Gly</text>
+  <rect x="46" y="784" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="804.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">亚氨甲基 −CH=NH</text>
+  <rect x="186" y="784" width="260" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="804.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">N⁵-CH=NH-THF</text>
+  <rect x="446" y="784" width="254" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="573" y="804.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">His</text>
+  <rect x="46" y="824" width="654" height="84" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.6"/>
+  <text x="62" y="848" font-size="10.5" fill="#78350f" font-weight="700">生理意义：嘌呤 C2 与 C8、dTMP（胸苷酸）的 C5 均来自一碳单位——dTMP 合成由 N⁵,N¹⁰-甲烯 THF 供甲基；</text>
+  <text x="62" y="863" font-size="10.5" fill="#78350f" font-weight="700">叶酸 / B₁₂ 缺乏 → dTMP 合成受阻 → 巨幼红细胞贫血（DNA 复制延迟）。</text>
+  <text x="46" y="930" font-size="10.5" fill="#475569">除 N⁵-甲基外各形式可氧化还原互变；N⁵-CH₃-THF 的甲基只能经 B₁₂ 依赖的蛋氨酸合酶转移（「甲基陷阱」）。</text>
+  <rect x="750" y="566" width="620" height="414" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="588.84" font-size="19" fill="#475569" font-weight="700">四、S-腺苷甲硫氨酸（SAM）：通用甲基供体</text>
+  <rect x="770" y="624" width="120" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="830" y="642" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">蛋氨酸</text>
+  <text x="830" y="658" font-size="9.5" fill="#64748b" text-anchor="middle">Met</text>
+  <line x1="892" y1="646" x2="952" y2="646" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <text x="922" y="632" font-size="10" fill="#64748b" text-anchor="middle">＋ ATP</text>
+  <rect x="954" y="624" width="150" height="44" rx="8" fill="#fef3c7" fill-opacity="0.6" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1029" y="642" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">SAM</text>
+  <text x="1029" y="658" font-size="9.5" fill="#64748b" text-anchor="middle">（活性蛋氨酸）</text>
+  <line x1="1106" y1="646" x2="1166" y2="646" stroke="#b45309" stroke-width="2.4" marker-end="url(#arr-rna)"/>
+  <rect x="1168" y="624" width="190" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1263" y="642" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">甲基化产物</text>
+  <text x="1263" y="658" font-size="9.5" fill="#64748b" text-anchor="middle">＋ SAH</text>
+  <text x="922" y="676" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">ATP 水解驱动</text>
+  <text x="766" y="706" font-size="10.5" fill="#475569">SAM → SAH 后经甲硫氨酸循环再生 Met，持续供甲基。</text>
+  <text x="766" y="748" font-size="12" fill="#1e293b" font-weight="700">接受甲基的受体：</text>
+  <rect x="803.37" y="773.075" width="53.26" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="830" y="785.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">肾上腺素</text>
+  <rect x="962.185" y="773.075" width="31.63" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="978" y="785.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">肌酸</text>
+  <rect x="1110.185" y="773.075" width="31.63" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1126" y="785.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">胆碱</text>
+  <rect x="1204.11" y="773.075" width="139.78" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1274" y="785.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">核酸（DNA / RNA 甲基化）</text>
+  <text x="766" y="830" font-size="10.5" fill="#475569">SAM 是体内甲基化反应的通用甲基供体——「一碳单位的另一条豪华通道」，与 THF 系统分工互补。</text>
+  <text x="766" y="878" font-size="10.5" fill="#64748b">甲基化修饰调控基因表达、神经递质与膜脂组成，SAM 供给状况直接影响之。</text>
+  <text x="1060" y="946" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">THF 一碳单位 → 核苷酸合成 · SAM 甲基 → 甲基化修饰</text>
+</svg>
