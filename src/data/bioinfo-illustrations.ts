@@ -9,6 +9,9 @@ import type { Illustration } from '@/lib/types'
 const commonsCredit = (author: string, license: string) =>
   `图片来源：Wikimedia Commons（${author}，${license}）`
 
+const webCredit = (author: string) =>
+  `图片来源：${author}（网络教材图源，经 VLM 科学审校）`
+
 export const bioinfoIllustrations: Record<string, Illustration[]> = {
   // ---- 第 1 章 生物信息学绪论 ----
   'bioinformatics-ch1-s1': [
@@ -99,6 +102,56 @@ export const bioinfoIllustrations: Record<string, Illustration[]> = {
       caption:
         '有根树与无根树的对照（同一组类元 A–F）：左图含明确标注的根（Root）节点，叶到根的方向给出演化时间轴，任意两叶的最近共同祖先皆可定位——UPGMA 等与分子钟捆绑的方法输出此类有根树；右图只表达类元间的亲缘拓扑、不含祖先方向，邻接法（NJ）默认输出的正是这种无根树，须借助外群或分子钟假设另行定根。两棵树的分裂结构完全一致，差别仅在根的有无——读树先问「根在哪里、从何而来」，是系统发生分析的第一课。',
       credit: commonsCredit('OUStudent2023', 'CC BY-SA 4.0'),
+    },
+  ],
+
+  // ---- 第 6 章 分子系统发生 ----
+  'bioinformatics-ch6-s1': [
+    {
+      src: '/images/bio/web/phylogenetic-tree-basics.png',
+      caption:
+        '系统发育树的基本要素：根（root）代表全体类元的共同祖先；任意两枚类元沿树回溯相遇的节点即其最近共同祖先（MRCA）；枝长或时间轴自根向梢伸展——演化时间自古而今的方向。读树时只需盯住节点的嵌套关系而非枝的左右位置：A 与 B 的亲缘，取决于它们的 MRCA 是否比别人离得更近。',
+      credit: webCredit('Khan Academy 教育图库'),
+    },
+    {
+      src: '/images/bio/web/phylogenetic-tree-clades.png',
+      caption:
+        '系统发育树的拓扑要素：类元（A–H）居于枝梢，内部分支节点（1–7）各代表一次物种形成事件；由节点及其全部后代构成的组群即「演化支」（clade，图中色块）——单系群判定与节点支持度评估均以此为单元。树上任何一刀剪下所得到的整段子树都对应一个合法的单系演化支，这是建树与读树的基本操作。',
+      credit: webCredit('Digital Atlas of Ancient Life 教育图库'),
+    },
+  ],
+
+  // ---- 第 8 章 基因组学 ----
+  'bioinformatics-ch8-s1': [
+    {
+      src: '/images/bio/web/illumina-library-prep.png',
+      caption:
+        '二代测序（NGS）的文库构建与上机：基因组 DNA 先随机打断（超声或酶切），末端修复加 A 后连接双端各异 Indexed 接头，变性成单链后加载至流动槽表面密集的引物草坪上锚定待扩增。Index 条码让多样本混合上机（pooling）后再按码拆分归位——通量与成本效率的关键一环。',
+      credit: webCredit('Bioinformatics Algorithms 教材插图'),
+    },
+    {
+      src: '/images/bio/web/illumina-cluster-amplification.png',
+      caption:
+        'Illumina 测序的簇扩增过程：文库单链片段两端接头与流动槽表面固定的引物互补锚定，经「弯桥-延伸-变性」循环的桥式 PCR 反复扩增，每一原始分子原地长出数千份相同拷贝的克隆簇——把单分子水平微弱的光学信号放大到可检测的强度。簇密度与读取质量此消彼长，是测序运行参数权衡的核心。',
+      credit: webCredit('二代测序教学讲义插图'),
+    },
+  ],
+
+  // ---- 第 9 章 转录组学 ----
+  'bioinformatics-ch9-s1': [
+    {
+      src: '/images/bio/web/rnaseq-workflow.png',
+      caption:
+        'RNA-seq 分析的主流流程：原始测序数据（FASTQ）先经质控（FastQC）与修剪（Trimmomatic）清洗，再由比对器（STAR/HISAT2）定位于参考基因组或转录组，定量工具（featureCounts/Salmon）汇总为基因表达计数矩阵，最终导入 DESeq2 等差异分析框架。每一步都产出可追溯的中间文件——可重复性正是转录组分析的生命线。',
+      credit: webCredit('Bioinformatics Workbook（爱荷华州立大学）'),
+    },
+  ],
+  'bioinformatics-ch9-s2': [
+    {
+      src: '/images/bio/web/rnaseq-pipeline.png',
+      caption:
+        'RNA-seq 从原始数据到差异基因的管线概览：预处理（质控、去接头、过滤）→ 比对或伪比对定量 → 差异表达分析 → 下游功能注释。比对路线（读段逐段锚定到基因组）与伪比对路线（Salmon/kallisto 直接对转录组定量）是当代两大主流，后者以「以精度换速度」的取舍把大样本定量压缩到分钟级。',
+      credit: webCredit('rnaseq 官方文档教程插图'),
     },
   ],
 }

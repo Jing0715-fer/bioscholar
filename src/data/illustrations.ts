@@ -42,6 +42,8 @@ const CCD_CREDIT = '结构式来源：RCSB PDB 化学组分字典（CCD）'
 const pdbCredit = (id: string) => `结构来源：RCSB Protein Data Bank（${id}）`
 const commonsCredit = (author: string, license: string) =>
   `图片来源：Wikimedia Commons（${author}，${license}）`
+const webCredit = (author: string) =>
+  `图片来源：${author}（网络教材图源，经 VLM 科学审校）`
 
 export const illustrations: Record<string, Illustration[]> = {
   // ==================== 生物化学 ====================
@@ -476,6 +478,22 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: pdbCredit('PDB 2ZXE'),
     },
   ],
+  'cell-biology-ch3-s1': [
+    {
+      src: '/images/bio/web/chief-cell-rer-em.jpg',
+      caption:
+        '胃腺主细胞的透射电镜照片：细胞基部密布平行排列的粗面内质网（RER）——扁囊外表面缀满核糖体颗粒，是分泌蛋白合成的车间；核上区可见高尔基体将酶原蛋白加工浓缩为顶部的分泌颗粒（酶原颗粒）。「核糖体-内质网-高尔基-分泌颗粒」的极性排布是经典分泌细胞的结构签名，也是内膜系统「区室分工、流水作业」的最佳实例。',
+      credit: webCredit('大学组织学实验教程电镜图库'),
+    },
+  ],
+  'cell-biology-ch3-s2': [
+    {
+      src: '/images/bio/web/endomembrane-transport.png',
+      caption:
+        '内膜系统的膜泡运输总览：内质网合成的蛋白与脂质经运输囊泡送往高尔基体，在高尔基体内自顺面到反面依次加工、分选，或经分泌囊泡抵达质膜外排（分泌途径），或进入溶酶体；质膜则通过内吞回收受体与膜组分（内吞途径）。分泌与内吞两条干线在「向外送」与「向内收」之间维持膜的动态平衡——细胞每小时的膜翻转量可达其表面积的数倍。',
+      credit: webCredit('开放教育资源（OER）生物学教材'),
+    },
+  ],
   'cell-biology-ch4-s2': [
     {
       src: '/images/bio/commons/secretory-pathway.svg',
@@ -490,6 +508,14 @@ export const illustrations: Record<string, Illustration[]> = {
       caption:
         '线粒体的超微结构：外膜平滑、含孔蛋白（VDAC）通透性较高；内膜向基质内折叠形成嵴（cristae），其上分布电子传递链复合体与 ATP 合酶（嵴的折叠极大增加产能膜面积）；嵴间基质含三羧酸循环酶系、mtDNA、核糖体等。内膜两侧的质子梯度（外正内负的膜电位）是化学渗透的能量形式——线粒体是细胞氧化磷酸化与能量转换的核心场所，也是凋亡信号（细胞色素 c 释放）的策源地。',
       credit: commonsCredit('Mariana Ruiz Villarreal (LadyofHats)', 'Public domain'),
+    },
+  ],
+  'cell-biology-ch5-s2': [
+    {
+      src: '/images/bio/web/mito-chloroplast-diagram.png',
+      caption:
+        '线粒体与叶绿体的结构对照：两者均具双层被膜（外膜与内膜之间为膜间隙）、基质内含自身环状 DNA 与核糖体——半自主性的形态学证据；线粒体内膜内折成嵴并嵌有 ATP 合酶，叶绿体内膜则演化为类囊体垛叠的基粒。内共生学说据此认为二者分别起源于被真核细胞吞噬的α-变形菌与蓝细菌：双层被膜即「吞噬膜＋细菌原生膜」的历史遗存。',
+      credit: webCredit('开放教育资源（OER）生物学教材'),
     },
   ],
   'cell-biology-ch6-s1': [
@@ -528,6 +554,28 @@ export const illustrations: Record<string, Illustration[]> = {
       caption:
         '受体酪氨酸激酶（RTK）–Ras–MAPK 通路：信号分子（如表皮生长因子 EGF）诱导受体二聚化，胞内酪氨酸激酶结构域相互磷酸化（自磷酸化）；磷酸化的酪氨酸作为停泊位点招募接头蛋白 Grb2–SOS，将质膜内侧的 Ras 从 GDP 态转换为 GTP 活化态；活化的 Ras 依次激活 RAF→MEK→ERK 三级激酶级联（逐级放大信号），ERK 进入细胞核磷酸化转录因子（如 Elk-1），调控增殖与分化相关基因表达。通路中 GAP 蛋白加速 Ras 水解 GTP 而关闭信号——Ras 突变失活 GTP 酶活性即“卡在开位”，是人类肿瘤中最常见的癌基因激活方式之一。',
       credit: commonsCredit('cybertory', 'CC BY-SA 3.0'),
+    },
+  ],
+  'cell-biology-ch9-s1': [
+    {
+      src: '/images/bio/web/cell-junctions-overview.png',
+      caption:
+        '上皮细胞侧面连接装置的全景示意（自顶向基）：紧密连接构成最顶端的封闭索；其下黏附连接（肌动蛋白锚定）与桥粒（中间纤维锚定）负责机械铆合；缝隙连接允许小分子与离子直接胞间互通；基底的半桥粒把细胞锚在基膜上。四类连接各司封闭、连接与通讯之职，沿侧膜排布成典型的「连接复合体」。',
+      credit: webCredit('GeeksforGeeks 教育图库'),
+    },
+    {
+      src: '/images/bio/web/tight-junction-diagram.jpg',
+      caption:
+        '紧密连接的分子模型：相邻两枚细胞的质膜由跨膜蛋白链（密封蛋白 claudin 与闭合蛋白 occludin）直接并合，封闭细胞间隙——像拉链一样把上皮层的细胞侧隙焊死，既阻断分子自顶部向基底侧的旁细胞渗漏，又锁定膜蛋白的顶-基极性分布。紧密连接的密封性并非恒定，可由信号瞬时调节以允许离子与免疫细胞选择性穿越。',
+      credit: webCredit('UEN Pressbooks 开放教材'),
+    },
+  ],
+  'cell-biology-ch9-s2': [
+    {
+      src: '/images/bio/web/desmosome-diagram.jpg',
+      caption:
+        '桥粒的结构模型：两侧细胞的跨膜钙黏蛋白（桥粒芯蛋白与桥粒胶蛋白）在胞间隙中互锁，胞内端锚定于致密斑块（plaque），斑块再捕系角蛋白中间纤维——形成从一枚细胞骨架直通邻枚细胞骨架的「铆钉」。桥粒赋予上皮与心肌强大的抗剪切强度：抗桥粒自身抗体所致的天疱疮与致密斑蛋白突变所致的心肌病，从反面印证了这一机械连接的生理分量。',
+      credit: webCredit('UEN Pressbooks 开放教材'),
     },
   ],
   'cell-biology-ch10-s2': [
@@ -572,12 +620,26 @@ export const illustrations: Record<string, Illustration[]> = {
       credit: commonsCredit('Thomas Splettstoesser (scistyle.com)', 'CC BY-SA 3.0'),
     },
   ],
+  'biophysics-ch2-s3': [
+    {
+      src: '/images/bio/web/protein-folding-concepts.jpg',
+      caption:
+        '蛋白质折叠的三个核心概念：Levinthal 悖论——20 种氨基酸的全构象搜索空间（20^N）大到天文数字，天然折叠却毫秒即成；能量漏斗——自由能面整体向下收窄、构象熵随折叠递减，粗粒度的漏斗形景观引导多肽快速滑向天然态；动力学机制——「局部优先、全局在后」的框架模型，二级结构先在局部成形，再拼装为三级折叠。三者共同回答「折叠为何既快又准」。',
+      credit: webCredit('PMC/NIH 开放获取文献插图'),
+    },
+  ],
   'biophysics-ch2-s4': [
     {
       src: '/images/bio/pdb/1OEL.jpeg',
       caption:
         'GroEL 伴侣蛋白的实验测定结构（X 射线晶体学，2.8 Å，大肠杆菌）：14 个相同的亚基堆叠为背靠背的两个七元环，每环围出可容纳约 60 kDa 未折叠多肽的笼状腔室，环口边缘由柔性末端形成“手指”状入口。GroEL 与帽状的 GroES（未示）及 ATP 循环配合，将陷入动力学陷阱的底物解聚后封闭于亲水腔内重新折叠——以 ATP 水解为代价购买“重来一次”的机会，是能量景观理论中降低有效势垒高度的实验典范。',
       credit: pdbCredit('PDB 1OEL'),
+    },
+    {
+      src: '/images/bio/web/folding-landscape-chaperones.jpg',
+      caption:
+        '体外复折与胞内折叠的能量景观对照：稀溶液中自变性剂复折的多肽可自行滑向天然态（N），也易陷入错误折叠（M*）与聚集（Agg）的能阱；而细菌胞内新生链一出生即被触发因子（TF）护持、由 Hsp70 反复结合释放，把聚集通道从能量上「垫高」，使漏斗更陡更光滑——伴侣蛋白并不改变折叠的热力学终点，只优化动力学的路径选择。',
+      credit: webCredit('PMC/NIH 开放获取文献插图'),
     },
   ],
   'biophysics-ch3-s1': [

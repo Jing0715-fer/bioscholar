@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils'
 import {
   BookOpenText,
   FlaskConical,
+  Globe,
   Images,
   Maximize2,
   Microscope,
@@ -26,7 +27,7 @@ import {
 // ============================================================
 
 /** 配图来源分类 */
-type SourceType = 'ccd' | 'pdb' | 'commons' | 'drawn' | 'ai'
+type SourceType = 'ccd' | 'pdb' | 'commons' | 'web' | 'drawn' | 'ai'
 
 /** 画廊条目（插图 + 归属信息） */
 interface GalleryItem {
@@ -49,6 +50,7 @@ function sourceTypeOf(src: string): SourceType {
   if (src.includes('/structures/')) return 'ccd'
   if (src.includes('/pdb/')) return 'pdb'
   if (src.includes('/commons/')) return 'commons'
+  if (src.includes('/web/')) return 'web'
   if (src.includes('/drawn/')) return 'drawn'
   return 'ai'
 }
@@ -77,6 +79,13 @@ const SOURCE_META: Record<
     icon: Route,
     badge: 'border-amber-300/60 bg-amber-50 text-amber-700 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-400',
     accent: 'bg-amber-500',
+  },
+  web: {
+    label: '教材图源',
+    full: '开放教育/期刊文献插图（经 VLM 审校）',
+    icon: Globe,
+    badge: 'border-rose-300/60 bg-rose-50 text-rose-700 dark:border-rose-500/40 dark:bg-rose-500/10 dark:text-rose-400',
+    accent: 'bg-rose-500',
   },
   drawn: {
     label: '自绘矢量图',
@@ -308,8 +317,8 @@ export function GalleryView() {
             </p>
           </div>
           {/* 来源统计卡 */}
-          <div className="grid grid-cols-5 gap-2" role="group" aria-label="配图来源统计">
-            {(['ccd', 'pdb', 'commons', 'drawn', 'ai'] as const).map((k) => {
+          <div className="grid grid-cols-3 gap-2 sm:grid-cols-6" role="group" aria-label="配图来源统计">
+            {(['ccd', 'pdb', 'commons', 'web', 'drawn', 'ai'] as const).map((k) => {
               const meta = SOURCE_META[k]
               return (
                 <button

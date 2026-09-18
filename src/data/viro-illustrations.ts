@@ -9,6 +9,9 @@ import type { Illustration } from '@/lib/types'
 const commonsCredit = (author: string, license: string) =>
   `图片来源：Wikimedia Commons（${author}，${license}）`
 
+const webCredit = (author: string) =>
+  `图片来源：${author}（网络教材图源，经 VLM 科学审校）`
+
 export const viroIllustrations: Record<string, Illustration[]> = {
   // ---- 第 1 章 病毒学绪论 ----
   'virology-ch1-s4': [
@@ -21,6 +24,14 @@ export const viroIllustrations: Record<string, Illustration[]> = {
   ],
 
   // ---- 第 2 章 毒粒的结构与组成 ----
+  'virology-ch2-s1': [
+    {
+      src: '/images/bio/commons/tmv-structure-zh.png',
+      caption:
+        '烟草花叶病毒（TMV）的结构剖面（中文标注）：衣壳由 2130 个相同亚基以每圈约 16⅓ 个的排布绕成直径约 18 nm 的螺旋杆，螺距 2.3 nm；每个亚基结合 3 个核苷酸，单链 RNA 基因组（约 6.4 kb）即藏于亚基内壁的螺旋沟中。螺旋对称是「亚基等价结合」的另一种解——不必像二十面体那样闭合曲面，只需沿轴重复延伸，杆长便由基因组长度决定，装配亦从环化基因组两端双向推进。',
+      credit: commonsCredit('TMV 结构教学图中文版', 'CC BY-SA 3.0'),
+    },
+  ],
   'virology-ch2-s3': [
     {
       src: '/images/bio/commons/influenza-virus-structure.png',
@@ -47,6 +58,12 @@ export const viroIllustrations: Record<string, Illustration[]> = {
       caption:
         '埃博拉病毒的伪彩透射电镜照片（CDC Cynthia Goldsmith 制作）：丝状病毒科毒粒呈典型长丝状（直径约 80 nm、长度可达微米级），常兼见弯曲、U 形与环形等构型——丝状病毒的多形性是「毒粒整体构型」一节的最佳实例。表面 GP 糖蛋白刺突介导受体结合与融合；基因组为非节段负链 RNA（约 19 kb），依赖毒粒携带的 L 聚合酶启动转录。2014–2016 年西非疫情病死率约四成，使其成为最高生物安全等级（BSL-4）操作的代表性病原。',
       credit: commonsCredit('CDC/Cynthia Goldsmith', 'Public domain'),
+    },
+    {
+      src: '/images/bio/commons/vsv-em.jpg',
+      caption:
+        '水泡性口炎病毒（VSV）的负染电镜照片：弹状病毒科毒粒呈典型的子弹状外形（约 75 nm×180 nm），一端平截、一端圆钝，表面密布 G 糖蛋白刺突，内部为负链 RNA 与 N 蛋白构成的螺旋核衣壳。VSV 是负链 RNA 病毒研究的经典模式毒粒——其出芽释放只需 G 蛋白一者驱动，基因组仅约 11 kb、操作简便，常作假病毒载体与疫苗平台骨架，与同为弹状科的狂犬病毒互为形态参照。',
+      credit: commonsCredit('VSV 电镜图', 'Public domain'),
     },
   ],
 
@@ -76,6 +93,16 @@ export const viroIllustrations: Record<string, Illustration[]> = {
     },
   ],
 
+  // ---- 第 5 章 病毒基因组的复制与转录 ----
+  'virology-ch5-s3': [
+    {
+      src: '/images/bio/commons/coronavirus-replication-cycle.jpg',
+      caption:
+        '冠状病毒的复制周期全景：S 蛋白结合受体后经膜融合或内吞侵入并脱壳，正链基因组先翻译出复制酶聚蛋白，经蛋白酶切割组装为复制-转录复合体；随后以全长远负链为模板复制新基因组，并经不连续转录生成一族嵌套亚基因组 mRNA（TRS 信号调控各结构蛋白的表达量梯度），S、M、N 等在内质网-高尔基体区间装配出芽释放。复制酶自带的 ExoN 校读使冠状病毒得以维持 RNA 病毒中最大的基因组（约 30 kb）。',
+      credit: commonsCredit('冠状病毒复制周期教学图', 'CC BY 4.0'),
+    },
+  ],
+
   // ---- 第 7 章 毒粒的装配、成熟与释放 ----
   'virology-ch7-s3': [
     {
@@ -83,6 +110,16 @@ export const viroIllustrations: Record<string, Illustration[]> = {
       caption:
         'HIV 出芽释放的彩色透射电镜照片（CDC）：可见电子致密的新生毒粒正从宿主细胞表面（以芽生方式）隆起——Gag 多聚蛋白在胞膜内侧聚合驱动的出芽过程，借助宿主 ESCRT 机器在膜侧完成掐断。此刻毒粒尚未成熟：出芽后 HIV 蛋白酶将自切割激活，把 Gag 切裂为基质（MA）、衣壳（CA）与核衣壳（NC）等组分，衣壳重新组装为锥形核心——蛋白酶抑制剂正是阻断这最后一步，使毒粒「发育不全」而丧失感染性。',
       credit: commonsCredit('CDC/C. Goldsmith 与 P. Feorino', 'Public domain'),
+    },
+  ],
+
+  // ---- 第 8 章 病毒与宿主细胞的相互作用 ----
+  'virology-ch8-s2': [
+    {
+      src: '/images/bio/web/lnp-mrna-innate-sensing.jpg',
+      caption:
+        '宿主对胞内 RNA 的固有免疫识别网络：内体中的 TLR3/7/8 与胞质 RIG-I/MDA5 分别经 MyD88/TRIF 与 MAVS 接头启动 IRF3/7 与 NF-κB，诱导 I 型干扰素与促炎因子；过强识别则走向炎症小体与细胞焦亡。这一网络正是 mRNA 疫苗设计必须权衡的「双刃剑」：假尿苷修饰使 mRNA 逃逸传感，而适度的佐剂效应又可被利用——脂质纳米颗粒（LNP）本身即有佐剂活性。',
+      credit: webCredit('BOC Sciences 教育图库'),
     },
   ],
 
@@ -123,6 +160,12 @@ export const viroIllustrations: Record<string, Illustration[]> = {
   // ---- 第 11 章 病毒的传播与致病机理 ----
   'virology-ch11-s3': [
     {
+      src: '/images/bio/commons/poliovirus-em.jpg',
+      caption:
+        '脊髓灰质炎病毒的电镜照片（CDC）：小 RNA 病毒科毒粒直径约 27–30 nm，是已知最小、结构最简单的病毒之一——裸露的正二十面体衣壳（T=1，60 个原体）无包膜，基因组仅约 7.5 kb 的正链 RNA，进入细胞即可直接充当 mRNA。病毒经粪-口途径传播，多数感染呈隐性或轻症；约百分之一感染者病毒侵入中枢致弛缓性麻痹。脊髓灰质炎是继天花之后有望被疫苗消灭的第二个病原，全球已多年未见 2 型与 3 型野毒株病例。',
+      credit: commonsCredit('CDC/Fred Murphy', 'Public domain'),
+    },
+    {
       src: '/images/bio/commons/measles-virus-em.jpg',
       caption:
         '麻疹病毒的透射电镜照片（CDC Cynthia Goldsmith 制作）：副粘病毒科毒粒呈多形性的球形至丝状颗粒（直径约 100–250 nm），表面 H 与 F 糖蛋白刺突使感染细胞相互融合形成合胞体——「多核巨细胞」正是麻疹病理的特征。麻疹是人类传染性最强的病毒之一（R0 约 12–18，经空气传播），病毒还可罕见地于中枢神经系统持续多年引发亚急性硬化性全脑炎（SSPE）；感染还会造成数周至数年的「免疫失忆」，削弱对既往病原的记忆应答。',
@@ -131,4 +174,18 @@ export const viroIllustrations: Record<string, Illustration[]> = {
   ],
 
   // ---- 第 12 章 病毒病的诊断、预防与治疗 ----
+  'virology-ch12-s2': [
+    {
+      src: '/images/bio/web/mrna-vaccine-mechanism.jpg',
+      caption:
+        'mRNA 疫苗的作用机制全景：经核苷修饰的 mRNA 由脂质纳米颗粒（LNP）护送进入树突状细胞等抗原提呈细胞，逃逸固有免疫传感后在核糖体翻译出刺突蛋白抗原，经蛋白酶体加工由 MHC I 提呈给 CD8+ T 细胞、经外源途径由 MHC II 提呈给 CD4+ T 细胞，可溶性抗原同时激活 B 细胞产生中和抗体——体液与细胞免疫两路并进。LNP 电离脂质在酸性内体带正电与带负电 mRNA 复合，是递送效率的化学核心。',
+      credit: webCredit('PMC/NIH 开放获取文献插图'),
+    },
+    {
+      src: '/images/bio/web/lnp-mrna-immune-process.jpg',
+      caption:
+        '脂质纳米颗粒-mRNA 疫苗的免疫过程流程：肌肉注射后 LNP 进入细胞内释放 mRNA，翻译产生的抗原经提呈激活 T 细胞与 B 细胞应答，中和抗体阻断病毒侵入。图示串联了注射-表达-提呈-抗体中和的完整链条——与卡里科与韦斯曼的假尿苷修饰（2023 年诺贝尔生理学或医学奖）共同构成第三代疫苗平台的两大支柱：前者解决「如何递送」，后者解决「如何不被当作损伤信号识别」。',
+      credit: webCredit('Biotechnologia 期刊开放插图'),
+    },
+  ],
 }
