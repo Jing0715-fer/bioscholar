@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">转录组学与蛋白质组学</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RNA-seq（TPM 定量 · 负二项差异检验）与 2D 电泳 / LC-MS/MS（b / y 离子 · SILAC / iTRAQ）——相关性 0.4–0.6 的互补拼接</text>
+  <rect x="30" y="132" width="700" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、转录组学：RNA-seq 定量全转录本</text>
+  <rect x="46" y="176" width="120" height="100" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="106" y="198" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">总 RNA 提取</text>
+  <text x="106" y="218" font-size="10.5" fill="#475569" text-anchor="middle">样品总 RNA</text>
+  <line x1="168" y1="226" x2="176" y2="226" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="180" y="176" width="120" height="100" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="240" y="198" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">富集 / 去除</text>
+  <text x="240" y="218" font-size="10.5" fill="#475569" text-anchor="middle">poly(A) 富集或 rRNA 去除</text>
+  <line x1="302" y1="226" x2="310" y2="226" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="314" y="176" width="120" height="100" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="374" y="198" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">片段化 + RT</text>
+  <text x="374" y="218" font-size="10.5" fill="#475569" text-anchor="middle">片段化 → 反转录 cDNA 文库</text>
+  <line x1="436" y1="226" x2="444" y2="226" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="448" y="176" width="120" height="100" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="508" y="198" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">NGS 测序</text>
+  <text x="508" y="218" font-size="10.5" fill="#475569" text-anchor="middle">高通量读段产出</text>
+  <line x1="570" y1="226" x2="578" y2="226" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="582" y="176" width="120" height="100" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="642" y="198" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">回贴 / 定量</text>
+  <text x="642" y="218" font-size="10.5" fill="#475569" text-anchor="middle">读段回贴基因组或转录本 → 定量</text>
+  <rect x="46" y="296" width="330" height="96" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="60" y="318" font-size="13" fill="#1e293b" font-weight="700">定量指标</text>
+  <text x="60" y="342" font-size="11" fill="#475569">RPKM / FPKM：每百万读段中每 kb 外显子的片段数</text>
+  <text x="60" y="362" font-size="11" fill="#475569">TPM：转模标准化——先按基因长度归一（r/长度），</text>
+  <text x="60" y="378" font-size="11" fill="#475569">再按总量归一；跨样本比较更适合</text>
+  <rect x="390" y="296" width="324" height="96" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="404" y="318" font-size="13" fill="#1e293b" font-weight="700">差异表达分析</text>
+  <text x="404" y="342" font-size="11" fill="#475569">DESeq2 / edgeR：负二项分布模型</text>
+  <text x="404" y="362" font-size="11" fill="#475569">报告 log2FC 与 FDR 校正 P 值</text>
+  <rect x="46" y="404" width="668" height="88" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.3"/>
+  <text x="60" y="428" font-size="12.5" fill="#78350f" font-weight="700">RNA-seq 还能发现：</text>
+  <text x="60" y="452" font-size="11.5" fill="#475569">新转录本与 lncRNA · 选择性剪接事件（rMATS 等）· 融合基因（肿瘤诊断）· 等位特异性表达 · RNA 编辑位点</text>
+  <rect x="730" y="132" width="640" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="154.84" font-size="19" fill="#475569" font-weight="700">二、蛋白质组学：翻译后现实</text>
+  <text x="746" y="180" font-size="12.5" fill="#1e293b" font-weight="700">二维电泳（2D-PAGE）</text>
+  <line x1="770" y1="300" x2="1010" y2="300" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="770" y1="300" x2="770" y2="194" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <circle cx="790" cy="280" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="810" cy="265" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="830" cy="275" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="850" cy="250" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="870" cy="260" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="890" cy="240" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="910" cy="255" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="930" cy="230" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="950" cy="245" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="970" cy="225" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="800" cy="235" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="825" cy="215" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="855" cy="225" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="880" cy="205" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="915" cy="215" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="945" cy="200" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="965" cy="210" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="840" cy="290" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="880" cy="282" r="4.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="925" cy="272" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <circle cx="960" cy="285" r="3.5" fill="#6d28d9" opacity="0.55"/>
+  <text x="746" y="194" font-size="10.5" fill="#64748b">第一向：pI ↑</text>
+  <text x="890" y="318" font-size="10.5" fill="#64748b" text-anchor="middle">第二向：SDS-PAGE（分子量）→</text>
+  <text x="890" y="336" font-size="10.5" fill="#64748b" text-anchor="middle">复杂蛋白混合物铺展为千余点阵</text>
+  <text x="1030" y="180" font-size="12.5" fill="#1e293b" font-weight="700">LC-MS/MS 鉴定</text>
+  <rect x="1030" y="192" width="324" height="24" rx="6" fill="#ffffff" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="1192" y="208" font-size="10.5" fill="#475569" text-anchor="middle">胰蛋白酶酶解 → 肽段</text>
+  <line x1="1192" y1="217" x2="1192" y2="219" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <rect x="1030" y="220" width="324" height="24" rx="6" fill="#ffffff" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="1192" y="236" font-size="10.5" fill="#475569" text-anchor="middle">一级 MS：测定肽段质量</text>
+  <line x1="1192" y1="245" x2="1192" y2="247" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <rect x="1030" y="248" width="324" height="24" rx="6" fill="#ffffff" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="1192" y="264" font-size="10.5" fill="#475569" text-anchor="middle">二级 MS/MS：CID / HCD 碎裂 → b / y 离子</text>
+  <line x1="1192" y1="273" x2="1192" y2="275" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <rect x="1030" y="276" width="324" height="24" rx="6" fill="#ffffff" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="1192" y="292" font-size="10.5" fill="#475569" text-anchor="middle">数据库检索匹配蛋白</text>
+  <text x="1192" y="316" font-size="10.5" fill="#64748b" text-anchor="middle">ESI 电喷雾 · MALDI 离子化（2002 诺贝尔化学奖）</text>
+  <rect x="746" y="348" width="608" height="144" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="760" y="370" font-size="13" fill="#1e293b" font-weight="700">定量与修饰蛋白质组</text>
+  <text x="760" y="394" font-size="11.5" fill="#475569">标记定量：SILAC（代谢掺入重标氨基酸）· iTRAQ / TMT（同重标签报告离子）</text>
+  <text x="760" y="416" font-size="11.5" fill="#475569">无标记定量（label-free）：谱计数 / 峰面积</text>
+  <text x="760" y="438" font-size="11.5" fill="#475569">修饰组学：TiO₂ / IMAC 富集磷酸肽 → 磷酸化网络；乙酰化 · 泛素化同理</text>
+  <text x="760" y="460" font-size="11.5" fill="#475569">互作组：亲和纯化-质谱（AP-MS）绘制蛋白复合物图谱</text>
+  <rect x="30" y="532" width="1340" height="428" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="554.84" font-size="19" fill="#475569" font-weight="700">三、转录组 vs 蛋白质组：相关性有限，必须互补</text>
+  <text x="56" y="574" font-size="13.5" fill="#1e293b" font-weight="700">mRNA-蛋白相关性有限</text>
+  <line x1="80" y1="792" x2="80" y2="596" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="80" y1="792" x2="400" y2="792" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="56" y="592" font-size="10.5" fill="#475569">蛋白丰度 ↑</text>
+  <text x="240" y="814" font-size="10.5" fill="#475569" text-anchor="middle">mRNA 丰度 →</text>
+  <line x1="100" y1="762" x2="372" y2="588" stroke="#0f766e" stroke-width="2" stroke-dasharray="7 5"/>
+  <circle cx="110" cy="750" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="140" cy="720" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="160" cy="740" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="180" cy="690" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="200" cy="710" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="220" cy="660" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="240" cy="690" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="260" cy="640" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="280" cy="670" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="300" cy="620" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="320" cy="660" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="340" cy="600" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="200" cy="762" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="260" cy="722" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="320" cy="700" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <circle cx="360" cy="640" r="5" fill="#0369a1" stroke="#075985" stroke-width="1" opacity="0.6"/>
+  <text x="334" y="662" font-size="13.5" fill="#134e4a" font-weight="700">r ≈ 0.4–0.6</text>
+  <rect x="440" y="590" width="500" height="42" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510" y="616" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">项目</text>
+  <text x="665" y="616" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">RNA-seq</text>
+  <text x="845" y="616" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白质组</text>
+  <rect x="440" y="636" width="500" height="42" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510" y="662" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">测量对象</text>
+  <text x="665" y="662" font-size="11.5" fill="#78350f" text-anchor="middle">mRNA 丰度</text>
+  <text x="845" y="662" font-size="11.5" fill="#4c1d95" text-anchor="middle">蛋白丰度 / 修饰 / 互作</text>
+  <rect x="440" y="682" width="500" height="42" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510" y="708" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">动态范围</text>
+  <text x="665" y="708" font-size="11.5" fill="#78350f" text-anchor="middle">极宽</text>
+  <text x="845" y="708" font-size="11.5" fill="#4c1d95" text-anchor="middle">受检测限约束</text>
+  <rect x="440" y="728" width="500" height="42" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510" y="754" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">定量模型</text>
+  <text x="665" y="754" font-size="11.5" fill="#78350f" text-anchor="middle">读段计数统计</text>
+  <text x="845" y="754" font-size="11.5" fill="#4c1d95" text-anchor="middle">峰面积 / 同位素比</text>
+  <rect x="440" y="774" width="500" height="42" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510" y="800" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">与表型的距离</text>
+  <text x="665" y="800" font-size="11.5" fill="#78350f" text-anchor="middle">间接（受翻译调控）</text>
+  <text x="845" y="800" font-size="11.5" fill="#4c1d95" text-anchor="middle">直接</text>
+  <rect x="970" y="570" width="380" height="232" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="986" y="598" font-size="14" fill="#1e293b" font-weight="700">为什么必须互补？</text>
+  <text x="986" y="624" font-size="11.5" fill="#475569">翻译效率 · 降解 · 修饰的解释力必须由蛋白质组补齐——mRNA 丰度无法替代「翻译后现实」。</text>
+  <rect x="1000" y="690" width="150" height="70" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1075" y="730" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700">RNA-seq</text>
+  <circle cx="1150" cy="725" r="13" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <rect x="1162" y="690" width="150" height="70" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1237" y="730" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白质组</text>
+  <text x="1160" y="780" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">互补拼接 → 逼近「细胞状态」</text>
+  <rect x="46" y="830" width="1292" height="104" rx="10" fill="#e0f2fe" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.3"/>
+  <text x="692" y="862" font-size="13" fill="#075985" text-anchor="middle">mRNA 与蛋白相关性通常仅 0.4–0.6——翻译效率、降解与修饰的解释力必须由蛋白质组补齐；</text>
+  <text x="692" y="892" font-size="13" fill="#075985" text-anchor="middle" font-weight="600">两套组学互补拼接，才能逼近「细胞状态」的完整描述。</text>
+</svg>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">核糖开关、反义 RNA 与严紧反应</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RNA 层面的三级调控——适配体感代谢物、sRNA 配对靶 mRNA、ppGpp 重编程转录组</text>
+  <rect x="30" y="132" width="420" height="636" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="240" y="158" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">① 核糖开关：RNA 直接感受代谢物</text>
+  <polygon points="135,188 152,178 169,188 169,208 152,218 135,208" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="152" y="206" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">TPP</text>
+  <line x1="152" y1="218" x2="152" y2="230" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <line x1="60" y1="252" x2="430" y2="252" stroke="#b45309" stroke-width="2.6"/>
+  <text x="56" y="257" font-size="13" fill="#78350f" text-anchor="end">5′</text>
+  <text x="432" y="257" font-size="13" fill="#78350f">3′</text>
+  <rect x="70" y="232" width="130" height="40" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="135" y="257" font-size="13" fill="#78350f" text-anchor="middle" font-weight="600">适配体 aptamer</text>
+  <rect x="210" y="232" width="90" height="40" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="255" y="257" font-size="12.5" fill="#78350f" text-anchor="middle">表达平台</text>
+  <text x="312" y="257" font-size="12.5" fill="#64748b">RBS · ORF</text>
+  <text x="60" y="296" font-size="11.5" fill="#64748b">小分子代谢物：TPP、SAM、FMN、赖氨酸、腺苷钴胺素</text>
+  <text x="240" y="318" font-size="12" fill="#64748b" text-anchor="middle">经变构切换表达平台构型——无需蛋白传感器</text>
+  <rect x="46" y="336" width="194" height="224" rx="8" fill="#d1fae5" fill-opacity="0.45" stroke="#059669" stroke-width="1.4"/>
+  <text x="120" y="362" font-size="14" fill="#059669" text-anchor="middle" font-weight="700">未结合代谢物</text>
+  <rect x="194.0175" y="351.375" width="31.965" height="21.25" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="210" y="366.5" font-size="12.5" fill="#059669" text-anchor="middle" font-weight="700">ON</text>
+  <text x="143" y="392" font-size="12.5" fill="#78350f" text-anchor="middle">抗终止子（2:3 配对）</text>
+  <path d="M84,500 L84,444 A14,14 0 0 1 96,444 L96,500" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <path d="M190,500 L190,444 A14,14 0 0 1 202,444 L202,500" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="102" y1="452" x2="184" y2="452" stroke="#b45309" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="102" y1="472" x2="184" y2="472" stroke="#b45309" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="102" y1="492" x2="184" y2="492" stroke="#b45309" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="56" y1="536" x2="230" y2="536" stroke="#059669" stroke-width="2.6" marker-end="url(#arr-ok)"/>
+  <text x="143" y="556" font-size="12.5" fill="#059669" text-anchor="middle">转录通读 → 表达</text>
+  <rect x="250" y="336" width="190" height="224" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="322" y="362" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">结合代谢物后</text>
+  <rect x="388.02625" y="351.375" width="39.947500000000005" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="408" y="366.5" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">OFF</text>
+  <text x="345" y="392" font-size="12.5" fill="#dc2626" text-anchor="middle">终止子（3:4）+ poly-U</text>
+  <path d="M339,500 L339,440 A16,16 0 0 1 351,440 L351,500" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <line x1="262" y1="536" x2="312" y2="536" stroke="#dc2626" stroke-width="2.6" marker-end="url(#arr-bad)"/>
+  <polygon points="320,526 336,536 320,546" fill="#dc2626"/>
+  <text x="372" y="556" font-size="12.5" fill="#dc2626" text-anchor="middle">提前终止转录</text>
+  <rect x="46" y="576" width="194" height="176" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="143" y="600" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">翻译型：遮蔽 RBS</text>
+  <line x1="64" y1="660" x2="222" y2="660" stroke="#b45309" stroke-width="2.2"/>
+  <rect x="88" y="644" width="52" height="32" rx="4" fill="#fef3c7" stroke="#dc2626" stroke-width="2"/>
+  <text x="114" y="665" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">RBS</text>
+  <path d="M108,640 L108,606 A11,11 0 0 1 120,606 L120,640" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <ellipse cx="168" cy="660" rx="24" ry="20" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="168" y="665" font-size="11" fill="#075985" text-anchor="middle">30S</text>
+  <line x1="200" y1="652" x2="214" y2="668" stroke="#dc2626" stroke-width="2.6"/>
+  <line x1="214" y1="652" x2="200" y2="668" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="58" y="704" font-size="11.5" fill="#475569">发夹覆盖核糖体结合位点，</text>
+  <text x="58" y="721.25" font-size="11.5" fill="#475569">翻译起始受阻</text>
+  <rect x="250" y="576" width="190" height="176" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="345" y="600" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">glmS：自切核酶</text>
+  <rect x="286.02" y="614.65" width="63.96" height="18.7" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="318" y="627.96" font-size="11" fill="#78350f" text-anchor="middle">GlcN-6-P</text>
+  <line x1="318" y1="636" x2="318" y2="646" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="264" y1="664" x2="352" y2="664" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="366" y1="664" x2="426" y2="664" stroke="#b45309" stroke-width="2.2"/>
+  <rect x="286" y="648" width="64" height="32" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="318" y="669" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">核酶</text>
+  <line x1="354" y1="654" x2="364" y2="674" stroke="#be185d" stroke-width="2.4"/>
+  <line x1="364" y1="654" x2="354" y2="674" stroke="#be185d" stroke-width="2.4"/>
+  <text x="262" y="704" font-size="11.5" fill="#475569">结合葡萄糖胺-6-磷酸后自身切割</text>
+  <text x="262" y="721.25" font-size="11.5" fill="#475569">（以催化方式执行调控）</text>
+  <text x="240" y="760" font-size="12.5" fill="#64748b" text-anchor="middle">RNA 世界遗留的「分子化石」</text>
+  <rect x="470" y="132" width="420" height="636" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="680" y="158" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">② 反义 RNA 与小 RNA（sRNA）</text>
+  <text x="500" y="216" font-size="13.5" fill="#0f766e" font-weight="600">靶 mRNA（sodB，编码含铁酶）</text>
+  <line x1="504" y1="248" x2="856" y2="248" stroke="#0f766e" stroke-width="2.8"/>
+  <text x="498" y="253" font-size="12" fill="#134e4a" text-anchor="end">5′</text>
+  <text x="858" y="253" font-size="12" fill="#134e4a">3′</text>
+  <rect x="560" y="232" width="56" height="32" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="588" y="253" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">RBS</text>
+  <rect x="624" y="232" width="46" height="32" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="647" y="253" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">AUG</text>
+  <rect x="680" y="236" width="160" height="24" rx="4" fill="#ffffff" stroke="#0f766e" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="760" y="253" font-size="12" fill="#134e4a" text-anchor="middle">编码区</text>
+  <line x1="566" y1="266" x2="566" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="584" y1="266" x2="584" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="602" y1="266" x2="602" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="620" y1="266" x2="620" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="638" y1="266" x2="638" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="656" y1="266" x2="656" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="674" y1="266" x2="674" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="692" y1="266" x2="692" y2="288" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="560" y1="292" x2="700" y2="292" stroke="#b45309" stroke-width="2.8"/>
+  <text x="552" y="297" font-size="12" fill="#78350f" text-anchor="end">5′</text>
+  <text x="702" y="297" font-size="12" fill="#78350f">3′</text>
+  <text x="566" y="318" font-size="11.5" fill="#64748b">与 RBS / AUG 区互补配对</text>
+  <text x="500" y="346" font-size="13.5" fill="#b45309" font-weight="600">反义 sRNA（RyhB）</text>
+  <text x="500" y="366" font-size="11.5" fill="#64748b">铁饥饿时大量表达</text>
+  <circle cx="790" cy="268" r="32" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <text x="790" y="273" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="700">Hfq</text>
+  <text x="790" y="318" font-size="11.5" fill="#64748b" text-anchor="middle">伴侣蛋白</text>
+  <text x="790" y="336" font-size="11.5" fill="#64748b" text-anchor="middle">协助配对</text>
+  <line x1="758" y1="276" x2="708" y2="282" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="494" y="386" width="178" height="118" rx="8" fill="#fce7f3" fill-opacity="0.4" stroke="#be185d" stroke-width="1.4"/>
+  <text x="583" y="410" font-size="14.5" fill="#831843" text-anchor="middle" font-weight="700">翻译阻遏</text>
+  <text x="510" y="436" font-size="12" fill="#475569">micF 与 ompF mRNA 5′ 区配对，</text>
+  <text x="510" y="454" font-size="12" fill="#475569">遮蔽 RBS 抑制外膜蛋白合成</text>
+  <text x="510" y="472" font-size="12" fill="#475569">（渗透压响应）</text>
+  <rect x="688" y="386" width="178" height="118" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="777" y="410" font-size="14.5" fill="#dc2626" text-anchor="middle" font-weight="700">促降解</text>
+  <text x="704" y="436" font-size="12" fill="#475569">双链区被 RNase E 切割，</text>
+  <text x="704" y="454" font-size="12" fill="#475569">sodB / sdh 等含铁酶 mRNA 被清除</text>
+  <rect x="494" y="520" width="372" height="120" rx="8" fill="#d1fae5" fill-opacity="0.35" stroke="#059669" stroke-width="1.4"/>
+  <text x="680" y="546" font-size="14.5" fill="#059669" text-anchor="middle" font-weight="700">铁平衡的经济学</text>
+  <text x="510" y="572" font-size="12.5" fill="#475569">铁饥饿 → RyhB 大量表达 → 降解含铁酶 mRNA → 把有限的铁留给必需酶</text>
+  <text x="510" y="610" font-size="12" fill="#64748b">同理：Spot 42 参与半乳糖操纵子选择性调控；</text>
+  <text x="510" y="628" font-size="12" fill="#64748b">ColE1 质粒拷贝数控制（RNA I/II）</text>
+  <text x="510" y="646" font-size="12" fill="#64748b">与转座子免疫同为反义逻辑</text>
+  <rect x="494" y="656" width="372" height="96" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="680" y="682" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">全局 mRNA 调节网络</text>
+  <text x="510" y="708" font-size="12.5" fill="#475569">一个 sRNA 可同时调节数十个 mRNA——原核系统生物学的前沿</text>
+  <rect x="910" y="132" width="460" height="636" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1140" y="158" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">③ 严紧反应：应对氨基酸饥饿</text>
+  <ellipse cx="1010" cy="250" rx="84" ry="46" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <text x="1010" y="246" font-size="14.5" fill="#075985" text-anchor="middle" font-weight="700">核糖体</text>
+  <text x="1010" y="268" font-size="12" fill="#075985" text-anchor="middle">A 位</text>
+  <line x1="946" y1="216" x2="966" y2="190" stroke="#b45309" stroke-width="4"/>
+  <line x1="966" y1="190" x2="996" y2="202" stroke="#b45309" stroke-width="4"/>
+  <text x="930" y="180" font-size="12.5" fill="#78350f" font-weight="700">空载 tRNA</text>
+  <text x="930" y="198" font-size="11.5" fill="#64748b">（无氨基酸）</text>
+  <line x1="996" y1="202" x2="1002" y2="226" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="1010" y="316" font-size="12.5" fill="#64748b" text-anchor="middle">氨基酸饥饿信号</text>
+  <rect x="1117.932" y="237.25" width="64.136" height="25.5" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1150" y="255.4" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">RelA</text>
+  <line x1="1096" y1="250" x2="1108" y2="250" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="940" y="330" width="400" height="74" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1140" y="358" font-size="16.5" fill="#78350f" text-anchor="middle" font-weight="700">GTP + ATP ─RelA→ ppGpp</text>
+  <text x="1140" y="386" font-size="12.5" fill="#78350f" text-anchor="middle">鸟苷五磷酸（「魔斑」）</text>
+  <rect x="1030.7026" y="434.1" width="218.59480000000002" height="23.8" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1140" y="451.04" font-size="14" fill="#78350f" text-anchor="middle" font-weight="600">ppGpp + RNAP（辅以 DksA）</text>
+  <line x1="1140" y1="396" x2="1140" y2="424" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="1140" y="478" font-size="12.5" fill="#64748b" text-anchor="middle">改变 RNA 聚合酶的启动子选择</text>
+  <line x1="1070" y1="486" x2="986" y2="516" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="970.61" y="516.95" width="58.78" height="22.099999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1000" y="532.68" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">下调</text>
+  <text x="1046" y="533" font-size="12.5" fill="#475569">rRNA / tRNA 等稳定 RNA 操纵子</text>
+  <text x="1046" y="552" font-size="11" fill="#64748b">直接作用于开放复合物形成阶段</text>
+  <line x1="1070" y1="486" x2="986" y2="580" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="970.61" y="580.95" width="58.78" height="22.099999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1000" y="596.68" font-size="13" fill="#059669" text-anchor="middle" font-weight="700">上调</text>
+  <text x="1046" y="597" font-size="12.5" fill="#475569">氨基酸合成酶与应激基因</text>
+  <line x1="1070" y1="486" x2="986" y2="644" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="970.61" y="644.95" width="58.78" height="22.099999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1000" y="660.68" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">抑制</text>
+  <text x="1046" y="661" font-size="12.5" fill="#475569">DNA 复制起始</text>
+  <rect x="940" y="668" width="400" height="84" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1140" y="696" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="600">SpoT：水解 + 弱合成双重活性，维持稳态</text>
+  <text x="1140" y="722" font-size="13.5" fill="#475569" text-anchor="middle">细胞进入「持家模式」——抑制生长、保存资源</text>
+  <rect x="30" y="790" width="1340" height="176" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="812.84" font-size="19" fill="#475569" font-weight="700">原核基因表达的四个调控层次（由左至右逐步「下游化」）</text>
+  <rect x="60" y="838" width="290" height="100" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="205" y="866" font-size="16" fill="#134e4a" text-anchor="middle" font-weight="700">层次 1：转录起始</text>
+  <text x="205" y="894" font-size="12.5" fill="#475569" text-anchor="middle">阻遏 / 激活蛋白、CAP</text>
+  <text x="205" y="920" font-size="12" fill="#64748b" text-anchor="middle">代表：lac、trp 阻遏</text>
+  <line x1="354" y1="888" x2="386" y2="888" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="390" y="838" width="290" height="100" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="535" y="866" font-size="16" fill="#075985" text-anchor="middle" font-weight="700">层次 2：转录提前终止</text>
+  <text x="535" y="894" font-size="12.5" fill="#475569" text-anchor="middle">衰减子、转录型核糖开关</text>
+  <text x="535" y="920" font-size="12" fill="#64748b" text-anchor="middle">代表：trpL、TPP 开关</text>
+  <line x1="684" y1="888" x2="716" y2="888" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="720" y="838" width="290" height="100" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="865" y="866" font-size="16" fill="#134e4a" text-anchor="middle" font-weight="700">层次 3：翻译起始</text>
+  <text x="865" y="894" font-size="12.5" fill="#475569" text-anchor="middle">翻译型核糖开关遮蔽 RBS、反义 RNA</text>
+  <text x="865" y="920" font-size="12" fill="#64748b" text-anchor="middle">代表：glmS、micF</text>
+  <line x1="1014" y1="888" x2="1046" y2="888" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="1050" y="838" width="290" height="100" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1195" y="866" font-size="16" fill="#075985" text-anchor="middle" font-weight="700">层次 4：RNA 稳定性</text>
+  <text x="1195" y="894" font-size="12.5" fill="#475569" text-anchor="middle">sRNA 引导降解</text>
+  <text x="1195" y="920" font-size="12" fill="#64748b" text-anchor="middle">代表：RyhB</text>
+</svg>

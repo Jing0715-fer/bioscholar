@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">中介复合物与信号诱导的转录调控</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Mediator 通用接头 + 共激活/共抑制因子——类固醇、JAK-STAT、NF-κB 与 MAPK 四路信号的汇聚</text>
+  <rect x="30" y="132" width="1340" height="428" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Mediator（约 30 亚基）：激活域与 pol II 基础机器之间的「总线」</text>
+  <line x1="70" y1="270" x2="1330" y2="270" stroke="#0f766e" stroke-width="3"/>
+  <rect x="100" y="255" width="130" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="165" y="275" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">增强子</text>
+  <ellipse cx="165" cy="218" rx="46" ry="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="165" y="224" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">激活因子</text>
+  <rect x="300" y="170" width="92" height="80" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="346" y="202" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">尾模块</text>
+  <text x="346" y="224" font-size="10.5" fill="#64748b" text-anchor="middle">结合激活域</text>
+  <rect x="398" y="170" width="92" height="80" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="444" y="202" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">中部</text>
+  <rect x="496" y="170" width="92" height="80" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="542" y="202" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">头部</text>
+  <text x="542" y="224" font-size="10.5" fill="#64748b" text-anchor="middle">接触 pol II</text>
+  <ellipse cx="398" cy="140" rx="40" ry="18" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="398" y="145" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">CDK8</text>
+  <text x="444" y="262" font-size="12.5" fill="#475569" text-anchor="middle">Mediator（头-中-尾 + CDK8 模块）</text>
+  <line x1="211" y1="218" x2="296" y2="205" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="254" y="198" font-size="11.5" fill="#4c1d95" text-anchor="middle">激活域</text>
+  <ellipse cx="680" cy="212" rx="54" ry="26" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+  <text x="680" y="218" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">pol II</text>
+  <line x1="590" y1="210" x2="624" y2="211" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="590" y="257" width="60" height="26" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="620" y="274" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">TATA</text>
+  <rect x="700" y="256" width="80" height="28" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="820" y="256" width="80" height="28" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="940" y="256" width="90" height="28" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="620" y="306" font-size="11.5" fill="#64748b" text-anchor="middle">启动子</text>
+  <text x="865" y="306" font-size="11.5" fill="#64748b" text-anchor="middle">基因</text>
+  <text x="680" y="330" font-size="12" fill="#475569" text-anchor="middle">稳定 PIC、促进 CTD 磷酸化</text>
+  <path d="M165,288 C 300,362 500,362 620,288" fill="none" stroke="#6d28d9" stroke-width="2.4" stroke-dasharray="8 6"/>
+  <text x="392" y="332" font-size="12" fill="#4c1d95" text-anchor="middle">DNA 成环：增强子-启动子沟通</text>
+  <line x1="710" y1="322" x2="1310" y2="322" stroke="#b45309" stroke-width="2.6" marker-end="url(#arr-rna)"/>
+  <text x="1010" y="308" font-size="12" fill="#78350f" text-anchor="middle">转录（启动频率由 Mediator 决定）</text>
+  <text x="56" y="400" font-size="15" fill="#1e293b" font-weight="700">共调节因子在染色质层面执行正 / 负调节：</text>
+  <line x1="180" y1="486" x2="900" y2="486" stroke="#0f766e" stroke-width="2.6"/>
+  <circle cx="340" cy="486" r="24" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="316" y1="486" x2="364" y2="486" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="340" y1="462" x2="340" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="500" cy="486" r="24" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="476" y1="486" x2="524" y2="486" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="500" y1="462" x2="500" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="660" cy="486" r="24" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="636" y1="486" x2="684" y2="486" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="660" y1="462" x2="660" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="820" cy="486" r="24" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="796" y1="486" x2="844" y2="486" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="820" y1="462" x2="820" y2="444" stroke="#64748b" stroke-width="1.6"/>
+  <rect x="95.67625" y="417.375" width="148.6475" height="21.25" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="170" y="432.5" font-size="12.5" fill="#059669" text-anchor="middle" font-weight="600">CBP / p300（HAT）</text>
+  <rect x="77.78" y="451.375" width="184.44" height="21.25" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="170" y="466.5" font-size="12.5" fill="#059669" text-anchor="middle" font-weight="600">SWI/SNF 重塑子（BRG1）</text>
+  <line x1="268" y1="434" x2="316" y2="452" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <line x1="268" y1="466" x2="470" y2="462" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="340.47" y="418.65" width="63.06" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="372" y="431.96" font-size="11" fill="#059669" text-anchor="middle">乙酰化 Ac</text>
+  <line x1="360" y1="436" x2="340" y2="448" stroke="#059669" stroke-width="1.4"/>
+  <rect x="519.73" y="418.65" width="24.54" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="532" y="431.96" font-size="11" fill="#059669" text-anchor="middle">Ac</text>
+  <rect x="1066.985625" y="417.375" width="166.02875" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1150" y="432.5" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="600">NCoR / SMRT → HDAC3</text>
+  <rect x="1026.80275" y="452.225" width="246.39449999999997" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1150" y="466.14" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="600">PRC1：H2AK119ub；PRC2：H3K27me3</text>
+  <line x1="1030" y1="434" x2="850" y2="452" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="1030" y1="466" x2="690" y2="452" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="700" y="524" font-size="12" fill="#475569" text-anchor="middle">共激活：滑动/排出核小体 + 乙酰化 ｜ 共抑制：去乙酰化 + 沉默标记</text>
+  <text x="700" y="508" font-size="11.5" fill="#64748b" text-anchor="middle">核小体</text>
+  <rect x="30" y="574" width="1340" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="596.84" font-size="19" fill="#475569" font-weight="700">二、四条经典信号诱导通路：殊途同归于 Mediator 总线</text>
+  <rect x="55.2375" y="634.525" width="89.525" height="22.95" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="100" y="650.86" font-size="13.5" fill="#b45309" text-anchor="middle" font-weight="700">类固醇受体</text>
+  <rect x="180" y="620" width="278" height="56" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.6"/>
+  <text x="194" y="642" font-size="12" fill="#475569">脂溶性激素经胞内受体直接调控</text>
+  <line x1="462" y1="648" x2="478" y2="648" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="482" y="620" width="278" height="56" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.6"/>
+  <text x="496" y="642" font-size="12" fill="#475569">激素结合 → 与 Hsp90 解离、暴露 NLS 入核</text>
+  <line x1="764" y1="648" x2="780" y2="648" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="784" y="620" width="278" height="56" rx="8" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="798" y="642" font-size="12" fill="#475569">同源二聚体结合 GRE（AGAACAnnnTGTTCT）</text>
+  <line x1="1066" y1="648" x2="1082" y2="648" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <rect x="1086" y="620" width="278" height="56" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1100" y="642" font-size="12" fill="#475569">招募 SRC → CBP/p300 → Mediator</text>
+  <rect x="56.21085" y="716.525" width="87.5783" height="22.95" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="100" y="732.86" font-size="13.5" fill="#0369a1" text-anchor="middle" font-weight="700">JAK-STAT</text>
+  <rect x="180" y="702" width="278" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="194" y="724" font-size="12" fill="#475569">细胞因子（干扰素、白介素）结合膜受体</text>
+  <line x1="462" y1="730" x2="478" y2="730" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="482" y="702" width="278" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="496" y="724" font-size="12" fill="#475569">JAK 磷酸化受体 → STAT 经 SH2 募集并磷酸化</text>
+  <line x1="764" y1="730" x2="780" y2="730" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="784" y="702" width="278" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="798" y="724" font-size="12" fill="#475569">pSTAT 二聚体入核结合 GAS / ISRE</text>
+  <text x="798" y="743" font-size="12" fill="#475569">（ISGF3）</text>
+  <line x1="1066" y1="730" x2="1082" y2="730" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="1086" y="702" width="278" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1100" y="724" font-size="12" fill="#475569">SOCS 蛋白负反馈关闭通路</text>
+  <rect x="69.83775" y="798.525" width="60.3245" height="22.95" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="100" y="814.86" font-size="13.5" fill="#dc2626" text-anchor="middle" font-weight="700">NF-κB</text>
+  <rect x="180" y="784" width="278" height="56" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="194" y="806" font-size="12" fill="#475569">炎症信号（TNFα、LPS-TLR4）</text>
+  <line x1="462" y1="812" x2="478" y2="812" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <rect x="482" y="784" width="278" height="56" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="496" y="806" font-size="12" fill="#475569">IKK 复合体磷酸化 IκB → 泛素-蛋白酶体降解</text>
+  <line x1="764" y1="812" x2="780" y2="812" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <rect x="784" y="784" width="278" height="56" rx="8" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="798" y="806" font-size="12" fill="#475569">p65/p50 入核结合 κB 位点（GGGRNNYYCC）</text>
+  <line x1="1066" y1="812" x2="1082" y2="812" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <rect x="1086" y="784" width="278" height="56" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1100" y="806" font-size="12" fill="#475569">启动炎症 / 存活基因</text>
+  <rect x="72.7578" y="880.525" width="54.4844" height="22.95" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="100" y="896.86" font-size="13.5" fill="#059669" text-anchor="middle" font-weight="700">MAPK</text>
+  <rect x="180" y="866" width="278" height="56" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
+  <text x="194" y="888" font-size="12" fill="#475569">生长因子经 RTK / GPCR 入胞</text>
+  <line x1="462" y1="894" x2="478" y2="894" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="482" y="866" width="278" height="56" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
+  <text x="496" y="888" font-size="12" fill="#475569">Ras → Raf → MEK → ERK 三级级联</text>
+  <line x1="764" y1="894" x2="780" y2="894" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="784" y="866" width="278" height="56" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
+  <text x="798" y="888" font-size="12" fill="#475569">ERK 磷酸化 Elk-1 等既存转录因子</text>
+  <line x1="1066" y1="894" x2="1082" y2="894" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="1086" y="866" width="278" height="56" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
+  <text x="1100" y="888" font-size="12" fill="#475569">改变其 DNA 结合与激活活性</text>
+  <rect x="46" y="930" width="1308" height="26" fill="none"/>
+  <text x="700" y="948" font-size="12.5" fill="#475569" text-anchor="middle">四条通路殊途同归：把信号转化为特定转录因子在特定位点、特定时间的活性，再经 Mediator 桥接为 pol II 的启动频率——信号转导的终点即转录调控的起点</text>
+</svg>

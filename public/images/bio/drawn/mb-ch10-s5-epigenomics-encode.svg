@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">表观基因组学、ENCODE 与生物信息学</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">ChIP-seq · BS-seq · ATAC-seq · Hi-C 绘制调控状态——ENCODE 的 80% 活性结论与数据库 / BLAST 干实验底座</text>
+  <rect x="30" y="132" width="1340" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、表观基因组学：在全基因组尺度绘制「非序列调控状态」</text>
+  <rect x="46" y="178" width="312" height="368" rx="10" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="202" y="204" font-size="16" fill="#4c1d95" text-anchor="middle" font-weight="700">ChIP-seq</text>
+  <text x="62" y="226" font-size="11.5" fill="#475569">转录因子结合位点与组蛋白修饰图谱（详见第 9 章）</text>
+  <circle cx="112" cy="316" r="26" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="86" y1="316" x2="138" y2="316" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="112" y1="290" x2="112" y2="272" stroke="#475569" stroke-width="1.8"/>
+  <rect x="84.679" y="255.5" width="54.64200000000001" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="112" y="267.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">H3K4me3</text>
+  <circle cx="202" cy="316" r="26" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="176" y1="316" x2="228" y2="316" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="202" y1="290" x2="202" y2="272" stroke="#475569" stroke-width="1.8"/>
+  <rect x="174.679" y="255.5" width="54.64200000000001" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="202" y="267.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">H3K27ac</text>
+  <circle cx="292" cy="316" r="26" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <line x1="266" y1="316" x2="318" y2="316" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="292" y1="290" x2="292" y2="272" stroke="#475569" stroke-width="1.8"/>
+  <rect x="261.486" y="255.5" width="61.02800000000001" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="292" y="267.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">H3K27me3</text>
+  <text x="202" y="364" font-size="10.5" fill="#64748b" text-anchor="middle">组蛋白八聚体 + 尾部修饰</text>
+  <text x="62" y="396" font-size="11.5" fill="#475569">H3K4me3 / H3K27ac 标活跃启动子 / 增强子；</text>
+  <text x="62" y="414" font-size="11.5" fill="#475569">H3K27me3 标被抑制区——组合标记定义染色质状态</text>
+  <text x="62" y="432" font-size="11.5" fill="#475569">（chromatin states）</text>
+  <text x="202" y="514" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="600">一份参考基因组 · 多份表观参考</text>
+  <rect x="374" y="178" width="312" height="368" rx="10" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="530" y="204" font-size="16" fill="#134e4a" text-anchor="middle" font-weight="700">重亚硫酸盐测序 BS-seq</text>
+  <text x="390" y="228" font-size="11.5" fill="#475569" font-weight="600">甲基化链：</text>
+  <text x="452" y="228" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="492" y="228" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">5mC</text>
+  <text x="532" y="228" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <text x="572" y="228" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="612" y="228" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">5mC</text>
+  <text x="640" y="252" font-size="10.5" fill="#059669" text-anchor="middle">→ 读作 C（保持）</text>
+  <text x="390" y="284" font-size="11.5" fill="#475569" font-weight="600">未甲基化链：</text>
+  <text x="452" y="284" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="492" y="284" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="532" y="284" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <text x="572" y="284" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="612" y="284" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="640" y="308" font-size="10.5" fill="#dc2626" text-anchor="middle">→ U → 读作 T</text>
+  <rect x="487.234925" y="326.225" width="85.53014999999999" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="530" y="340.14" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">NaHSO₃ 处理</text>
+  <line x1="530" y1="350" x2="530" y2="366" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="390" y="388" font-size="11.5" fill="#475569">未甲基化 C → U（扩增后读作 T）</text>
+  <text x="390" y="406" font-size="11.5" fill="#475569">而 5mC 保持 C——测序比对即得单碱基分辨率甲基化图谱</text>
+  <text x="390" y="452" font-size="11" fill="#64748b">WGBS 全基因组 · RRBS 酶切富集降成本</text>
+  <text x="390" y="476" font-size="11" fill="#64748b">环境（饮食 · 压力 · 毒素）经表观基因组刻画细胞记忆</text>
+  <rect x="702" y="178" width="312" height="368" rx="10" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="858" y="204" font-size="16" fill="#831843" text-anchor="middle" font-weight="700">ATAC-seq</text>
+  <text x="718" y="226" font-size="11.5" fill="#475569">Tn5 转座酶插入开放染色质——快速绘制可及性图谱</text>
+  <rect x="718" y="296" width="84" height="26" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="730" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <circle cx="750" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <circle cx="770" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <circle cx="790" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <rect x="810" y="296" width="96" height="26" rx="4" fill="#ffffff" stroke="#be185d" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="858" y="313" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">开放</text>
+  <rect x="914" y="296" width="84" height="26" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="926" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <circle cx="946" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <circle cx="966" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <circle cx="986" cy="309" r="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <polygon points="836,352 856,344 876,352 876,372 856,380 836,372" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="856" y="369" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">Tn5</text>
+  <line x1="844" y1="346" x2="834" y2="326" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="868" y1="346" x2="878" y2="326" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="858" y="408" font-size="11" fill="#64748b" text-anchor="middle">插入位点 = 可及性读出</text>
+  <text x="718" y="442" font-size="11.5" fill="#475569">已成为替代 DNase-seq 的标准：</text>
+  <text x="718" y="460" font-size="11.5" fill="#475569">微量细胞即可获得开放染色质全景</text>
+  <rect x="1030" y="178" width="312" height="368" rx="10" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1186" y="204" font-size="16" fill="#075985" text-anchor="middle" font-weight="700">Hi-C 与 TAD</text>
+  <text x="1046" y="226" font-size="11.5" fill="#475569">近端连接捕获全基因组三维接触</text>
+  <rect x="1046" y="268" width="128" height="96" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="2"/>
+  <text x="1110" y="288" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">TAD A</text>
+  <rect x="1196" y="268" width="128" height="96" rx="8" fill="#ede9fe" fill-opacity="0.4" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1260" y="288" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">TAD B</text>
+  <circle cx="1078" cy="340" r="8" fill="#be185d"/>
+  <circle cx="1150" cy="340" r="8" fill="#059669"/>
+  <path d="M1078,332 C1090,300 1140,300 1150,332" fill="none" stroke="#059669" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <text x="1062" y="368" font-size="10" fill="#831843">增强子</text>
+  <text x="1136" y="368" font-size="10" fill="#059669">启动子</text>
+  <circle cx="1232" cy="340" r="8" fill="#6d28d9" opacity="0.5"/>
+  <line x1="1188" y1="328" x2="1216" y2="352" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="1216" y1="328" x2="1188" y2="352" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="1046" y="404" font-size="11.5" fill="#475569">发现拓扑关联结构域（TAD）与区室（compartment）</text>
+  <text x="1046" y="422" font-size="11.5" fill="#475569">——增强子-启动子互作被约束于同一 TAD 内</text>
+  <rect x="30" y="578" width="700" height="382" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">二、ENCODE：DNA 元件百科全书（2003–2007 试点 → 2007–2012 生产 → 三期）</text>
+  <line x1="70" y1="646" x2="690" y2="646" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <circle cx="130" cy="646" r="6" fill="#1e293b"/>
+  <text x="130" y="628" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">2003–2007</text>
+  <text x="130" y="672" font-size="11" fill="#64748b" text-anchor="middle">试点阶段</text>
+  <circle cx="340" cy="646" r="6" fill="#1e293b"/>
+  <text x="340" y="628" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">2007–2012</text>
+  <text x="340" y="672" font-size="11" fill="#64748b" text-anchor="middle">生产阶段</text>
+  <circle cx="560" cy="646" r="6" fill="#1e293b"/>
+  <text x="560" y="628" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">三期</text>
+  <text x="560" y="672" font-size="11" fill="#64748b" text-anchor="middle">约 150 种细胞 / 组织类型</text>
+  <rect x="-22.105000000000018" y="702.225" width="344.21000000000004" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="150" y="716.14" font-size="11.5" fill="#075985" text-anchor="middle">动用 8+ 技术：RNA-seq · ChIP-seq · DNase · BS-seq · Hi-C 等</text>
+  <rect x="56" y="742" width="648" height="100" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.4"/>
+  <text x="72" y="768" font-size="14" fill="#78350f" font-weight="700">2012 年主论文：约 80% 的基因组具生化活性</text>
+  <text x="72" y="792" font-size="11.5" fill="#475569">「活性 ≠ 功能」引发争论，但其数据资产（开放下载 · 统一 pipeline）重塑了调控生物学研究范式</text>
+  <text x="72" y="824" font-size="12" fill="#78350f" font-weight="600">从「垃圾 DNA」到「调控暗物质」——ENCODE 完成了概念转变</text>
+  <rect x="56" y="856" width="648" height="86" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="72" y="882" font-size="13.5" fill="#134e4a" font-weight="700">结合 GWAS：约 90% 以上疾病相关 SNP 位于非编码区</text>
+  <text x="72" y="908" font-size="11.5" fill="#475569">ENCODE 图谱正是解读这些非编码变异的关键——先测绘全景、再精查节点</text>
+  <rect x="740" y="578" width="630" height="382" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="600.84" font-size="19" fill="#475569" font-weight="700">三、生物信息学基础：数据库 · BLAST · 流程化</text>
+  <text x="756" y="626" font-size="12.5" fill="#1e293b" font-weight="700">国际核酸数据库联盟（INSDC）——每日交换数据：</text>
+  <rect x="756" y="640" width="180" height="44" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="846" y="658" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">GenBank</text>
+  <text x="846" y="676" font-size="10.5" fill="#64748b" text-anchor="middle">NCBI</text>
+  <rect x="966" y="640" width="180" height="44" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1056" y="658" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">EMBL-EBI</text>
+  <text x="1056" y="676" font-size="10.5" fill="#64748b" text-anchor="middle">欧洲</text>
+  <rect x="1176" y="640" width="172" height="44" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1262" y="658" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700">DDBJ</text>
+  <text x="1262" y="676" font-size="10.5" fill="#64748b" text-anchor="middle">日本</text>
+  <line x1="940" y1="654" x2="962" y2="654" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="962" y1="672" x2="940" y2="672" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1150" y1="654" x2="1172" y2="654" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1172" y1="672" x2="1150" y2="672" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="756" y="704" font-size="11.5" fill="#64748b">UniProt（蛋白）· PDB（结构）各司其职</text>
+  <text x="756" y="738" font-size="12.5" fill="#1e293b" font-weight="700">BLAST：局部比对搜索（seed-延伸）</text>
+  <rect x="756" y="752" width="592" height="16" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="900" y="752" width="120" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="960" y="764" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">seed 命中</text>
+  <line x1="960" y1="778" x2="860" y2="778" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="960" y1="778" x2="1060" y2="778" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="960" y="796" font-size="10.5" fill="#64748b" text-anchor="middle">查询序列切段命中 → 向两侧延伸并评分</text>
+  <text x="756" y="822" font-size="11.5" fill="#475569">报告比对得分 · 一致性 · 覆盖度与 E 值（随机命中的期望次数）；BLASTn（核酸）· BLASTp（蛋白）· BLASTx</text>
+  <text x="756" y="840" font-size="11.5" fill="#475569">（翻译比对）</text>
+  <text x="756" y="872" font-size="11.5" fill="#475569">多序列比对（Clustal / MUSCLE）→ 距离法 / 最大似然法建树；</text>
+  <text x="756" y="890" font-size="11.5" fill="#475569">Galaxy · Snakemake / Nextflow · 容器化环境与 notebook 使「湿-干实验」接口标准化</text>
+  <rect x="756" y="912" width="592" height="34" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1052" y="934" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">知识生产：「假设驱动」单轨 → 「假设 + 数据」双轨</text>
+</svg>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">核酸分子杂交：印迹技术与荧光原位杂交</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">碱基互补配对成就的底层检测技术——Tm 物理化学、Southern/Northern 印迹范式与 FISH 原位显示</text>
+  <rect x="30" y="132" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Southern 印迹（1975）：「电泳分离—转移—杂交」的技术范式</text>
+  <rect x="52" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="152" y="200" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">① 基因组 DNA</text>
+  <text x="152" y="284" font-size="11" fill="#64748b" text-anchor="middle">高分子量双链</text>
+  <line x1="255" y1="236" x2="274" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="277" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="377" y="200" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">② 限制酶消化</text>
+  <text x="377" y="284" font-size="11" fill="#64748b" text-anchor="middle">切为长短不一的片段</text>
+  <line x1="480" y1="236" x2="499" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="502" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="602" y="200" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">③ 琼脂糖电泳</text>
+  <text x="602" y="284" font-size="11" fill="#64748b" text-anchor="middle">片段按大小分开</text>
+  <line x1="705" y1="236" x2="724" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="727" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="827" y="200" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">④ 碱变性 + 转移</text>
+  <text x="827" y="284" font-size="11" fill="#64748b" text-anchor="middle">高盐缓冲液「吸印」</text>
+  <line x1="930" y1="236" x2="949" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="952" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1052" y="200" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">⑤ 紫外交联固定</text>
+  <text x="1052" y="284" font-size="11" fill="#64748b" text-anchor="middle">DNA 永久固定于尼龙膜</text>
+  <line x1="1155" y1="236" x2="1174" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1177" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1277" y="200" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">⑥ 探针杂交 · 显影</text>
+  <text x="1277" y="284" font-size="11" fill="#64748b" text-anchor="middle">洗膜后仅靶带显影</text>
+  <path d="M74,238L74.0,238.0L76.0,235.7L78.0,233.7L80.0,232.0L82.0,230.7L84.0,230.1L86.0,230.1L88.0,230.7L90.0,232.0L92.0,233.7L94.0,235.7L96.0,238.0L98.0,240.3L100.0,242.3L102.0,244.0L104.0,245.3L106.0,245.9L108.0,245.9L110.0,245.3L112.0,244.0L114.0,242.3L116.0,240.3L118.0,238.0L120.0,235.7L122.0,233.7L124.0,232.0L126.0,230.7L128.0,230.1L130.0,230.1L132.0,230.7L134.0,232.0L136.0,233.7L138.0,235.7L140.0,238.0L142.0,240.3L144.0,242.3L146.0,244.0L148.0,245.3L150.0,245.9L152.0,245.9L154.0,245.3L156.0,244.0L158.0,242.3L160.0,240.3L162.0,238.0L164.0,235.7L166.0,233.7L168.0,232.0L170.0,230.7L172.0,230.1L174.0,230.1L176.0,230.7L178.0,232.0L180.0,233.7L182.0,235.7L184.0,238.0L186.0,240.3L188.0,242.3L190.0,244.0L192.0,245.3L194.0,245.9L196.0,245.9L198.0,245.3L200.0,244.0L202.0,242.3L204.0,240.3L206.0,238.0L208.0,235.7L210.0,233.7L212.0,232.0L214.0,230.7L216.0,230.1L218.0,230.1L220.0,230.7L222.0,232.0L224.0,233.7L226.0,235.7L228.0,238.0L230.0,240.3" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M74,238L74.0,238.0L76.0,240.3L78.0,242.3L80.0,244.0L82.0,245.3L84.0,245.9L86.0,245.9L88.0,245.3L90.0,244.0L92.0,242.3L94.0,240.3L96.0,238.0L98.0,235.7L100.0,233.7L102.0,232.0L104.0,230.7L106.0,230.1L108.0,230.1L110.0,230.7L112.0,232.0L114.0,233.7L116.0,235.7L118.0,238.0L120.0,240.3L122.0,242.3L124.0,244.0L126.0,245.3L128.0,245.9L130.0,245.9L132.0,245.3L134.0,244.0L136.0,242.3L138.0,240.3L140.0,238.0L142.0,235.7L144.0,233.7L146.0,232.0L148.0,230.7L150.0,230.1L152.0,230.1L154.0,230.7L156.0,232.0L158.0,233.7L160.0,235.7L162.0,238.0L164.0,240.3L166.0,242.3L168.0,244.0L170.0,245.3L172.0,245.9L174.0,245.9L176.0,245.3L178.0,244.0L180.0,242.3L182.0,240.3L184.0,238.0L186.0,235.7L188.0,233.7L190.0,232.0L192.0,230.7L194.0,230.1L196.0,230.1L198.0,230.7L200.0,232.0L202.0,233.7L204.0,235.7L206.0,238.0L208.0,240.3L210.0,242.3L212.0,244.0L214.0,245.3L216.0,245.9L218.0,245.9L220.0,245.3L222.0,244.0L224.0,242.3L226.0,240.3L228.0,238.0L230.0,235.7" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="85" y1="230" x2="85" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="107" y1="246" x2="107" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="129" y1="230" x2="129" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="151" y1="246" x2="151" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="173" y1="230" x2="173" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="195" y1="246" x2="195" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="217" y1="230" x2="217" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <path d="M299,238L299.0,238.0L301.0,235.7L303.0,233.7L305.0,232.0L307.0,230.7L309.0,230.1L311.0,230.1L313.0,230.7L315.0,232.0L317.0,233.7L319.0,235.7L321.0,238.0L323.0,240.3L325.0,242.3L327.0,244.0L329.0,245.3L331.0,245.9L333.0,245.9L335.0,245.3L337.0,244.0L339.0,242.3L341.0,240.3L343.0,238.0L345.0,235.7L347.0,233.7L349.0,232.0L351.0,230.7L353.0,230.1L355.0,230.1L357.0,230.7L359.0,232.0L361.0,233.7L363.0,235.7L365.0,238.0L367.0,240.3L369.0,242.3L371.0,244.0L373.0,245.3L375.0,245.9L377.0,245.9L379.0,245.3L381.0,244.0L383.0,242.3L385.0,240.3L387.0,238.0L389.0,235.7L391.0,233.7L393.0,232.0L395.0,230.7L397.0,230.1L399.0,230.1L401.0,230.7L403.0,232.0L405.0,233.7L407.0,235.7L409.0,238.0L411.0,240.3L413.0,242.3L415.0,244.0L417.0,245.3L419.0,245.9L421.0,245.9L423.0,245.3L425.0,244.0L427.0,242.3L429.0,240.3L431.0,238.0L433.0,235.7L435.0,233.7L437.0,232.0L439.0,230.7L441.0,230.1L443.0,230.1L445.0,230.7L447.0,232.0L449.0,233.7L451.0,235.7L453.0,238.0L455.0,240.3" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M299,238L299.0,238.0L301.0,240.3L303.0,242.3L305.0,244.0L307.0,245.3L309.0,245.9L311.0,245.9L313.0,245.3L315.0,244.0L317.0,242.3L319.0,240.3L321.0,238.0L323.0,235.7L325.0,233.7L327.0,232.0L329.0,230.7L331.0,230.1L333.0,230.1L335.0,230.7L337.0,232.0L339.0,233.7L341.0,235.7L343.0,238.0L345.0,240.3L347.0,242.3L349.0,244.0L351.0,245.3L353.0,245.9L355.0,245.9L357.0,245.3L359.0,244.0L361.0,242.3L363.0,240.3L365.0,238.0L367.0,235.7L369.0,233.7L371.0,232.0L373.0,230.7L375.0,230.1L377.0,230.1L379.0,230.7L381.0,232.0L383.0,233.7L385.0,235.7L387.0,238.0L389.0,240.3L391.0,242.3L393.0,244.0L395.0,245.3L397.0,245.9L399.0,245.9L401.0,245.3L403.0,244.0L405.0,242.3L407.0,240.3L409.0,238.0L411.0,235.7L413.0,233.7L415.0,232.0L417.0,230.7L419.0,230.1L421.0,230.1L423.0,230.7L425.0,232.0L427.0,233.7L429.0,235.7L431.0,238.0L433.0,240.3L435.0,242.3L437.0,244.0L439.0,245.3L441.0,245.9L443.0,245.9L445.0,245.3L447.0,244.0L449.0,242.3L451.0,240.3L453.0,238.0L455.0,235.7" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="310" y1="230" x2="310" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="332" y1="246" x2="332" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="354" y1="230" x2="354" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="376" y1="246" x2="376" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="398" y1="230" x2="398" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="420" y1="246" x2="420" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="442" y1="230" x2="442" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="355" y1="216" x2="355" y2="260" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <line x1="399" y1="216" x2="399" y2="260" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <text x="377" y="212" font-size="10.5" fill="#831843" text-anchor="middle">EcoRI 等</text>
+  <rect x="532" y="214" width="140" height="62" rx="3" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="544" y="219" width="26" height="6" rx="2" fill="#1e293b"/>
+  <rect x="588" y="219" width="26" height="6" rx="2" fill="#1e293b"/>
+  <rect x="632" y="219" width="26" height="6" rx="2" fill="#1e293b"/>
+  <rect x="542" y="231" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="542" y="241" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="542" y="254" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="586" y="234" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="586" y="248" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="586" y="263" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="630" y="228" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="630" y="238" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="630" y="250" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="630" y="266" width="30" height="5" rx="2" fill="#0f766e" opacity="0.65"/>
+  <rect x="767" y="254" width="120" height="13" fill="#e2e8f0" stroke="#475569" stroke-width="1.4"/>
+  <rect x="767" y="240" width="120" height="11" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="767" y="226" width="120" height="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <line x1="827" y1="264" x2="827" y2="232" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="987" y="238" width="130" height="26" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="1011" y="244" width="20" height="6" fill="#94a3b8"/>
+  <rect x="1047" y="244" width="20" height="6" fill="#94a3b8"/>
+  <rect x="1083" y="244" width="20" height="6" fill="#94a3b8"/>
+  <path d="M1044,210 l-7,12 h6 l-6,11 l13,-14 h-7 l7,-9 z" fill="#b45309"/>
+  <text x="1088" y="218" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">UV</text>
+  <rect x="1212" y="238" width="130" height="26" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="1224" y="244" width="20" height="6" fill="#94a3b8"/>
+  <rect x="1260" y="244" width="20" height="6" fill="#be185d"/>
+  <rect x="1296" y="244" width="20" height="6" fill="#94a3b8"/>
+  <polygon points="1270,210 1273,216 1279,219 1273,222 1270,228 1267,222 1261,219 1267,216" fill="#b45309"/>
+  <text x="1295" y="219" font-size="10.5" fill="#831843" text-anchor="middle">标记探针</text>
+  <text x="196" y="336" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">毛细转移「吸印塔」：缓冲液携 DNA 上行</text>
+  <polygon points="180,348 246,348 238,366 188,366" fill="#94a3b8" stroke="#475569" stroke-width="1.4"/>
+  <text x="213" y="360" font-size="10" fill="#475569" text-anchor="middle">重物</text>
+  <rect x="150" y="370" width="130" height="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <rect x="150" y="386" width="130" height="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="150" y="394" width="130" height="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="150" y="402" width="130" height="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="150" y="410" width="130" height="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="150" y="418" width="130" height="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="150" y="428" width="130" height="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="148" y="440" width="134" height="12" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <rect x="150" y="454" width="130" height="26" fill="#e2e8f0" stroke="#475569" stroke-width="1.6"/>
+  <rect x="96" y="482" width="208" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="96" y="496" width="16" height="32" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="288" y="496" width="16" height="32" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="80" y="496" width="244" height="32" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="202" y="516" font-size="11" fill="#075985" text-anchor="middle">高盐缓冲液</text>
+  <line x1="180" y1="478" x2="180" y2="450" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="250" y1="478" x2="250" y2="450" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="104" y1="524" x2="104" y2="492" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="296" y1="524" x2="296" y2="492" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="286" y="378" font-size="10" fill="#64748b">玻璃板</text>
+  <text x="286" y="412" font-size="10" fill="#64748b">吸水纸叠</text>
+  <text x="286" y="433" font-size="10" fill="#64748b">滤纸</text>
+  <text x="286" y="451" font-size="10" fill="#0f766e" font-weight="700">尼龙膜</text>
+  <text x="286" y="470" font-size="10" fill="#64748b">凝胶</text>
+  <text x="200" y="490" font-size="10" fill="#64748b" text-anchor="middle">滤纸桥</text>
+  <text x="548" y="336" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">杂交与显影：探针只认靶片段</text>
+  <rect x="372" y="356" width="96" height="132" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="384" y="372" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="384" y="392" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="384" y="412" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="384" y="432" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="384" y="452" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="384" y="472" width="72" height="9" fill="#cbd5e1"/>
+  <text x="420" y="505" font-size="10.5" fill="#64748b" text-anchor="middle">膜上固定全部片段</text>
+  <rect x="504" y="356" width="96" height="132" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="516" y="372" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="516" y="392" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="516" y="412" width="72" height="9" fill="#be185d"/>
+  <rect x="516" y="432" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="516" y="452" width="72" height="9" fill="#cbd5e1"/>
+  <rect x="516" y="472" width="72" height="9" fill="#cbd5e1"/>
+  <text x="552" y="505" font-size="10.5" fill="#64748b" text-anchor="middle">探针仅与靶配对</text>
+  <rect x="636" y="356" width="96" height="132" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <rect x="648" y="372" width="72" height="9" fill="#ffffff"/>
+  <rect x="648" y="392" width="72" height="9" fill="#ffffff"/>
+  <rect x="648" y="412" width="72" height="9" fill="#be185d"/>
+  <rect x="648" y="432" width="72" height="9" fill="#ffffff"/>
+  <rect x="648" y="452" width="72" height="9" fill="#ffffff"/>
+  <rect x="648" y="472" width="72" height="9" fill="#ffffff"/>
+  <text x="684" y="505" font-size="10.5" fill="#64748b" text-anchor="middle">显影只现靶带</text>
+  <line x1="470" y1="412" x2="500" y2="412" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="602" y1="412" x2="632" y2="412" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <polygon points="552,336 555,342 561,345 555,348 552,354 549,348 543,345 549,342" fill="#b45309"/>
+  <text x="566" y="349" font-size="10.5" fill="#831843">标记探针（³²P / DIG）</text>
+  <text x="548" y="528" font-size="10.5" fill="#64748b" text-anchor="middle">非特异结合经严格洗膜去除；检测：³²P 自显影 / DIG-抗体化学发光</text>
+  <text x="770" y="336" font-size="14" fill="#475569" font-weight="700">印迹家族一览</text>
+  <text x="813" y="362" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">印迹</text>
+  <text x="898" y="362" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">靶分子</text>
+  <text x="1018" y="362" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">前处理</text>
+  <text x="1218" y="362" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">主要用途</text>
+  <rect x="770" y="374" width="570" height="44" rx="5" fill="#ccfbf1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="813" y="394" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">Southern</text>
+  <text x="898" y="394" font-size="11.5" fill="#475569" text-anchor="middle">DNA</text>
+  <text x="1018" y="394" font-size="11.5" fill="#475569" text-anchor="middle">限制酶消化</text>
+  <text x="1218" y="394" font-size="11.5" fill="#475569" text-anchor="middle">基因结构 / 拷贝数 / RFLP</text>
+  <rect x="770" y="420" width="570" height="44" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="813" y="440" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">Northern</text>
+  <text x="898" y="440" font-size="11.5" fill="#475569" text-anchor="middle">RNA</text>
+  <text x="1018" y="440" font-size="11.5" fill="#475569" text-anchor="middle">变性胶电泳（甲醛 / 乙二醛）</text>
+  <text x="1218" y="440" font-size="11.5" fill="#475569" text-anchor="middle">转录本大小与丰度 / 可变剪接</text>
+  <rect x="770" y="466" width="570" height="44" rx="5" fill="#ede9fe" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="813" y="486" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">Western</text>
+  <text x="898" y="486" font-size="11.5" fill="#475569" text-anchor="middle">蛋白质</text>
+  <text x="1018" y="486" font-size="11.5" fill="#475569" text-anchor="middle">SDS-PAGE</text>
+  <text x="1218" y="486" font-size="11.5" fill="#475569" text-anchor="middle">蛋白表达（抗体为「探针」）</text>
+  <text x="770" y="522" font-size="11" fill="#64748b">Northern 须用变性胶（甲醛 / 乙二醛）保持 RNA 线性；Western 以抗体替代核酸探针。</text>
+  <rect x="30" y="548" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="570.84" font-size="19" fill="#475569" font-weight="700">二、杂交的物理化学基础：Tm 与探针</text>
+  <text x="200" y="586" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">变性-复性与解链温度</text>
+  <line x1="70" y1="770" x2="70" y2="588" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="770" x2="336" y2="770" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="46" y="584" font-size="11" fill="#475569">A260 ↑</text>
+  <text x="306" y="790" font-size="12" fill="#475569" text-anchor="middle">温度 →</text>
+  <path d="M82,756 C90.0,755.3 116.2,754.7 130,752 C143.8,749.3 154.2,746.0 165,740 C175.8,734.0 187.2,725.3 195,716 C202.8,706.7 207.5,694.7 212,684 C216.5,673.3 219.0,661.3 222,652 C225.0,642.7 227.0,634.7 230,628 C233.0,621.3 236.3,616.3 240,612 C243.7,607.7 250.0,603.7 252,602" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <path d="M82,756 C95.0,755.3 139.5,754.7 160,752 C180.5,749.3 192.0,746.0 205,740 C218.0,734.0 229.2,725.3 238,716 C246.8,706.7 252.7,694.7 258,684 C263.3,673.3 266.7,661.3 270,652 C273.3,642.7 275.0,634.7 278,628 C281.0,621.3 284.3,616.3 288,612 C291.7,607.7 298.0,603.7 300,602" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <line x1="70" y1="690" x2="336" y2="690" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <line x1="212" y1="690" x2="212" y2="770" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <line x1="258" y1="690" x2="258" y2="770" stroke="#0f766e" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="212" y="786" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Tm</text>
+  <text x="258" y="786" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">Tm</text>
+  <text x="76" y="682" font-size="10.5" fill="#64748b">Tm＝50% 增色点</text>
+  <text x="236" y="648" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">GC 低</text>
+  <text x="298" y="630" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">GC 高</text>
+  <rect x="352" y="572" width="320" height="104" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="368" y="596" font-size="13.5" fill="#1e293b" font-weight="700">Tm 的影响因素</text>
+  <text x="368" y="622" font-size="12" fill="#134e4a">GC 含量 ↑ → Tm ↑</text>
+  <text x="526" y="622" font-size="12" fill="#134e4a">盐浓度 ↑ → Tm ↑</text>
+  <text x="368" y="648" font-size="12" fill="#134e4a">片段长度 ↑ → Tm ↑</text>
+  <text x="526" y="648" font-size="12" fill="#dc2626">甲酰胺 ↑ → Tm ↓</text>
+  <rect x="440" y="692" width="232" height="84" rx="8" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.4"/>
+  <text x="456" y="714" font-size="12.5" fill="#78350f" font-weight="700">探针＝已知序列 + 标记</text>
+  <path d="M456,736 q10,-10 20,0 t20,0 t20,0 t20,0 t20,0" fill="none" stroke="#475569" stroke-width="2"/>
+  <path d="M456,756 q10,10 20,0 t20,0 t20,0 t20,0 t20,0" fill="none" stroke="#be185d" stroke-width="2"/>
+  <line x1="466" y1="741" x2="466" y2="752" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="486" y1="741" x2="486" y2="752" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="506" y1="741" x2="506" y2="752" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="526" y1="741" x2="526" y2="752" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="546" y1="741" x2="546" y2="752" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="566" y1="741" x2="566" y2="752" stroke="#94a3b8" stroke-width="1.2"/>
+  <polygon points="568,746 571,752 577,755 571,758 568,764 565,758 559,755 565,752" fill="#b45309"/>
+  <text x="456" y="776" font-size="10.5" fill="#64748b">从复杂混合物中检出特定分子</text>
+  <path d="M56,822L56.0,822.0L58.0,819.8L60.0,817.9L62.0,816.3L64.0,815.3L66.0,815.0L68.0,815.3L70.0,816.3L72.0,817.9L74.0,819.8L76.0,822.0L78.0,824.2L80.0,826.1L82.0,827.7L84.0,828.7L86.0,829.0L88.0,828.7L90.0,827.7L92.0,826.1L94.0,824.2L96.0,822.0L98.0,819.8L100.0,817.9L102.0,816.3L104.0,815.3L106.0,815.0L108.0,815.3L110.0,816.3L112.0,817.9L114.0,819.8L116.0,822.0L118.0,824.2L120.0,826.1L122.0,827.7L124.0,828.7L126.0,829.0L128.0,828.7L130.0,827.7L132.0,826.1L134.0,824.2L136.0,822.0" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M56,822L56.0,822.0L58.0,824.2L60.0,826.1L62.0,827.7L64.0,828.7L66.0,829.0L68.0,828.7L70.0,827.7L72.0,826.1L74.0,824.2L76.0,822.0L78.0,819.8L80.0,817.9L82.0,816.3L84.0,815.3L86.0,815.0L88.0,815.3L90.0,816.3L92.0,817.9L94.0,819.8L96.0,822.0L98.0,824.2L100.0,826.1L102.0,827.7L104.0,828.7L106.0,829.0L108.0,828.7L110.0,827.7L112.0,826.1L114.0,824.2L116.0,822.0L118.0,819.8L120.0,817.9L122.0,816.3L124.0,815.3L126.0,815.0L128.0,815.3L130.0,816.3L132.0,817.9L134.0,819.8L136.0,822.0" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="66" y1="815" x2="66" y2="829" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="86" y1="829" x2="86" y2="815" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="106" y1="815" x2="106" y2="829" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="126" y1="829" x2="126" y2="815" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="142" y1="822" x2="172" y2="822" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="157" y="806" font-size="10.5" fill="#dc2626" text-anchor="middle">加热 / 碱</text>
+  <path d="M184,810 q9,-11 18,0 t18,0 t18,0" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <path d="M184,834 q9,11 18,0 t18,0 t18,0" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <text x="211" y="850" font-size="10.5" fill="#64748b" text-anchor="middle">变性（解链）</text>
+  <line x1="284" y1="822" x2="314" y2="822" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="299" y="806" font-size="10.5" fill="#059669" text-anchor="middle">缓慢降温</text>
+  <path d="M322,822L322.0,822.0L324.0,819.8L326.0,817.9L328.0,816.3L330.0,815.3L332.0,815.0L334.0,815.3L336.0,816.3L338.0,817.9L340.0,819.8L342.0,822.0L344.0,824.2L346.0,826.1L348.0,827.7L350.0,828.7L352.0,829.0L354.0,828.7L356.0,827.7L358.0,826.1L360.0,824.2L362.0,822.0L364.0,819.8L366.0,817.9L368.0,816.3L370.0,815.3L372.0,815.0L374.0,815.3L376.0,816.3L378.0,817.9L380.0,819.8L382.0,822.0L384.0,824.2L386.0,826.1L388.0,827.7L390.0,828.7L392.0,829.0L394.0,828.7L396.0,827.7L398.0,826.1L400.0,824.2L402.0,822.0" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M322,822L322.0,822.0L324.0,824.2L326.0,826.1L328.0,827.7L330.0,828.7L332.0,829.0L334.0,828.7L336.0,827.7L338.0,826.1L340.0,824.2L342.0,822.0L344.0,819.8L346.0,817.9L348.0,816.3L350.0,815.3L352.0,815.0L354.0,815.3L356.0,816.3L358.0,817.9L360.0,819.8L362.0,822.0L364.0,824.2L366.0,826.1L368.0,827.7L370.0,828.7L372.0,829.0L374.0,828.7L376.0,827.7L378.0,826.1L380.0,824.2L382.0,822.0L384.0,819.8L386.0,817.9L388.0,816.3L390.0,815.3L392.0,815.0L394.0,815.3L396.0,816.3L398.0,817.9L400.0,819.8L402.0,822.0" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="332" y1="815" x2="332" y2="829" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="352" y1="829" x2="352" y2="815" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="372" y1="815" x2="372" y2="829" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="392" y1="829" x2="392" y2="815" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="412" y="826" font-size="11" fill="#64748b">复性（退火）：互补链重新配对</text>
+  <rect x="46" y="856" width="300" height="92" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.5"/>
+  <text x="62" y="880" font-size="14" fill="#78350f" font-weight="700">放射性标记：³²P</text>
+  <text x="62" y="904" font-size="12" fill="#475569">· 随机引物法</text>
+  <text x="62" y="924" font-size="12" fill="#475569">· 切口平移法</text>
+  <text x="62" y="944" font-size="12" fill="#475569">· 灵敏度高（自显影检测）</text>
+  <polygon points="322,884 325,890 331,893 325,896 322,902 319,896 313,893 319,890" fill="#b45309"/>
+  <line x1="322" y1="893" x2="344" y2="893" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="300" y2="893" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="322" y2="915" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="322" y2="871" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="337.4" y2="908.4" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="306.6" y2="877.6" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="337.4" y2="877.6" stroke="#b45309" stroke-width="1.2"/>
+  <line x1="322" y1="893" x2="306.6" y2="908.4" stroke="#b45309" stroke-width="1.2"/>
+  <rect x="356" y="856" width="316" height="92" rx="8" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="372" y="880" font-size="14" fill="#059669" font-weight="700">非放射性标记</text>
+  <text x="372" y="904" font-size="12" fill="#475569">· 地高辛 DIG（抗 DIG 抗体检测）</text>
+  <text x="372" y="924" font-size="12" fill="#475569">· 生物素 - 链霉亲和素</text>
+  <text x="372" y="944" font-size="12" fill="#475569">· 安全稳定（化学发光 / 显色）</text>
+  <rect x="710" y="548" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="570.84" font-size="19" fill="#475569" font-weight="700">三、荧光原位杂交（FISH）：在细胞原位显示位置与拷贝数</text>
+  <rect x="748" y="600" width="22" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="778" y="600" width="22" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="748" y="662" width="22" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="778" y="662" width="22" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="748" y="654" width="52" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="774" y="738" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">染色体涂染（painting）</text>
+  <text x="774" y="756" font-size="10.5" fill="#64748b" text-anchor="middle">整条染色体特异性探针</text>
+  <rect x="852" y="600" width="22" height="58" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="882" y="600" width="22" height="58" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="852" y="662" width="22" height="58" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="882" y="662" width="22" height="58" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="852" y="654" width="52" height="12" rx="5" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="854" y="614" width="18" height="24" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="878" y="738" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">单拷贝探针：定位基因</text>
+  <text x="878" y="756" font-size="10.5" fill="#64748b" text-anchor="middle">检测微缺失 / 扩增</text>
+  <circle cx="1075" cy="656" r="56" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <circle cx="1058" cy="638" r="7" fill="#be185d"/>
+  <circle cx="1094" cy="676" r="7" fill="#be185d"/>
+  <text x="1075" y="738" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">正常：2 个信号</text>
+  <circle cx="1225" cy="656" r="56" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <circle cx="1203" cy="638" r="6.5" fill="#be185d"/>
+  <circle cx="1215" cy="630" r="6.5" fill="#be185d"/>
+  <circle cx="1229" cy="640" r="6.5" fill="#be185d"/>
+  <circle cx="1241" cy="652" r="6.5" fill="#be185d"/>
+  <circle cx="1229" cy="664" r="6.5" fill="#be185d"/>
+  <circle cx="1213" cy="660" r="6.5" fill="#be185d"/>
+  <circle cx="1247" cy="666" r="6.5" fill="#be185d"/>
+  <circle cx="1221" cy="652" r="6.5" fill="#be185d"/>
+  <text x="1225" y="738" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">扩增：多点成簇</text>
+  <text x="1225" y="756" font-size="10.5" fill="#64748b" text-anchor="middle">（如 HER2）</text>
+  <text x="1150" y="584" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">间期核 FISH：直接读出拷贝数</text>
+  <text x="740" y="782" font-size="14" fill="#1e293b" font-weight="700">FISH 家族与应用</text>
+  <text x="740" y="810" font-size="11.5" fill="#475569">· 染色体涂染：核型分析与易位检测</text>
+  <text x="740" y="834" font-size="11.5" fill="#475569">· 单拷贝探针：微缺失（DiGeorge 综合征）</text>
+  <text x="740" y="858" font-size="11.5" fill="#475569">· 多色 FISH / 光谱核型（SKY）：复杂重排一览</text>
+  <text x="1052" y="810" font-size="11.5" fill="#475569">· 纤维-FISH：高分辨率定位</text>
+  <text x="1052" y="834" font-size="11.5" fill="#475569">· RNA-FISH：单细胞转录本计数</text>
+  <text x="1052" y="858" font-size="11.5" fill="#475569">· 组织切片 ISH：反义 RNA 探针空间表达谱</text>
+  <rect x="740" y="886" width="600" height="58" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.3"/>
+  <text x="756" y="910" font-size="12" fill="#075985">分子杂交是贯穿基因组时代的「底层技术」：芯片（microarray）、捕获测序乃至 CRISPR 的特异性识别，</text>
+  <text x="756" y="930" font-size="12" fill="#075985">本质上都是互补配对思想的延伸。</text>
+</svg>

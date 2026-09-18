@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">乳糖操纵子的正调控与二度生长</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">CAP-cAMP 结合 -61 位点弯折 DNA 并招募 RNAP——「有乳糖 + 无葡萄糖」的与门条件与碳源时序编程</text>
+  <rect x="30" y="132" width="880" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、CAP-cAMP 正调控：-61 位点与 RNAP 招募</text>
+  <line x1="64" y1="330" x2="164" y2="330" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="65" y="315" width="98" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="114" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">lacI</text>
+  <text x="114" y="384" font-size="12.5" fill="#64748b" text-anchor="middle">阻遏蛋白基因</text>
+  <line x1="210" y1="330" x2="850" y2="330" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="211" y="315" width="81.2" height="30" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="251.6" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">CAP 位点</text>
+  <rect x="294.2" y="315" width="55.599999999999994" height="30" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="322" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">lacP</text>
+  <rect x="351.79999999999995" y="315" width="55.599999999999994" height="30" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="379.59999999999997" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">lacO</text>
+  <rect x="409.4" y="315" width="183.6" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="501.2" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">lacZ（β-半乳糖苷酶）</text>
+  <rect x="595" y="315" width="132.4" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="661.2" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">lacY（透性酶）</text>
+  <rect x="729.4" y="315" width="119.6" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="789.1999999999999" y="363" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">lacA</text>
+  <text x="251.6" y="234" font-size="11" fill="#78350f" text-anchor="middle">cAMP</text>
+  <circle cx="217.6" cy="252" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <circle cx="285.6" cy="252" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <ellipse cx="251.6" cy="278" rx="60" ry="32" fill="#d1fae5" stroke="#059669" stroke-width="2.4"/>
+  <text x="251.6" y="272" font-size="15" fill="#059669" text-anchor="middle" font-weight="700">CAP 二聚体</text>
+  <text x="251.6" y="292" font-size="11.5" fill="#64748b" text-anchor="middle">HTH 结合 DNA</text>
+  <path d="M215.6,316 q12,24 36,28" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arr-ok)"/>
+  <text x="251.6" y="318" font-size="11.5" fill="#059669" text-anchor="middle">弯折≈90°</text>
+  <ellipse cx="379.6" cy="284" rx="64" ry="38" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="379.6" y="278" font-size="16.5" fill="#0369a1" text-anchor="middle" font-weight="700">RNAP</text>
+  <text x="379.6" y="298" font-size="11.5" fill="#64748b" text-anchor="middle">α-CTD 接触 CAP</text>
+  <line x1="309.6" y1="270" x2="325.6" y2="284" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <text x="355.6" y="248" font-size="12.5" fill="#059669" text-anchor="middle">招募（正调控）</text>
+  <line x1="427.6" y1="408" x2="830" y2="408" stroke="#b45309" stroke-width="3" marker-end="url(#arr-rna)"/>
+  <text x="435.6" y="394" font-size="14" fill="#78350f">多顺反子 mRNA（Z·Y·A）</text>
+  <text x="530" y="428" font-size="13" fill="#64748b" text-anchor="middle">lacP 为弱启动子：无 CAP-cAMP 时开放复合物形成率低，转录寥寥</text>
+  <rect x="930" y="132" width="440" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="946" y="154.84" font-size="19" fill="#475569" font-weight="700">二、「与门」：两个信号积分后输出</text>
+  <rect x="972.75" y="184.525" width="114.5" height="22.95" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1030" y="200.86" font-size="13.5" fill="#831843" text-anchor="middle">乳糖（异乳糖）</text>
+  <text x="1030" y="224" font-size="11.5" fill="#64748b" text-anchor="middle">LacI 阻遏解除</text>
+  <line x1="1090" y1="196" x2="1106" y2="214" stroke="#be185d" stroke-width="2"/>
+  <rect x="993" y="254.525" width="74" height="22.95" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1030" y="270.86" font-size="13.5" fill="#059669" text-anchor="middle">无葡萄糖</text>
+  <text x="1030" y="294" font-size="11.5" fill="#64748b" text-anchor="middle">cAMP 升高 → CAP 结合</text>
+  <line x1="1090" y1="266" x2="1106" y2="248" stroke="#059669" stroke-width="2"/>
+  <path d="M1106,200 L1106,262 A32,31 0 0 1 1106,200 Z" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="1128" y="235" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">AND</text>
+  <line x1="1146" y1="231" x2="1190" y2="231" stroke="#dc2626" stroke-width="2.6" marker-end="url(#arr-bad)"/>
+  <rect x="1205.95" y="219.1" width="104.10000000000001" height="23.8" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1258" y="236.04" font-size="14" fill="#991b1b" text-anchor="middle" font-weight="700">高水平转录</text>
+  <rect x="946" y="292" width="408" height="136" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="979" y="312" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">葡萄糖</text>
+  <text x="1045" y="312" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">乳糖</text>
+  <text x="1118" y="312" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">表达</text>
+  <text x="1256" y="312" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">控制状态</text>
+  <line x1="952" y1="322" x2="1348" y2="322" stroke="#cbd5e1" stroke-width="0.8"/>
+  <text x="979" y="343" font-size="13" fill="#1e293b" text-anchor="middle">−</text>
+  <text x="1045" y="343" font-size="13" fill="#1e293b" text-anchor="middle">−</text>
+  <text x="1118" y="343" font-size="13" fill="#64748b" text-anchor="middle">极低</text>
+  <text x="1256" y="343" font-size="13" fill="#1e293b" text-anchor="middle">LacI 结合（负调控）</text>
+  <line x1="952" y1="349" x2="1348" y2="349" stroke="#cbd5e1" stroke-width="0.8"/>
+  <text x="979" y="365" font-size="13" fill="#1e293b" text-anchor="middle">+</text>
+  <text x="1045" y="365" font-size="13" fill="#1e293b" text-anchor="middle">−</text>
+  <text x="1118" y="365" font-size="13" fill="#64748b" text-anchor="middle">极低</text>
+  <text x="1256" y="365" font-size="13" fill="#1e293b" text-anchor="middle">LacI + 无 CAP（双关）</text>
+  <line x1="952" y1="371" x2="1348" y2="371" stroke="#cbd5e1" stroke-width="0.8"/>
+  <text x="979" y="387" font-size="13" fill="#1e293b" text-anchor="middle">+</text>
+  <text x="1045" y="387" font-size="13" fill="#1e293b" text-anchor="middle">+</text>
+  <text x="1118" y="387" font-size="13" fill="#64748b" text-anchor="middle">低</text>
+  <text x="1256" y="387" font-size="13" fill="#1e293b" text-anchor="middle">LacI 解除但 CAP 缺位</text>
+  <line x1="952" y1="393" x2="1348" y2="393" stroke="#cbd5e1" stroke-width="0.8"/>
+  <text x="979" y="409" font-size="13" fill="#1e293b" text-anchor="middle">−</text>
+  <text x="1045" y="409" font-size="13" fill="#1e293b" text-anchor="middle">+</text>
+  <text x="1118" y="409" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">高</text>
+  <text x="1256" y="409" font-size="13" fill="#1e293b" text-anchor="middle">双重开启（正+负解除）</text>
+  <rect x="30" y="452" width="1340" height="510" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、二度生长（diauxie）：葡萄糖 + 乳糖混合培养基中的时序编程</text>
+  <line x1="90" y1="920" x2="900" y2="920" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="920" x2="90" y2="550" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="480" y="956" font-size="15" fill="#475569" text-anchor="middle">培养时间 →</text>
+  <text x="100" y="568" font-size="14" fill="#475569">细菌密度（OD）↑</text>
+  <path d="M98,896 C111.7,890.0 153.0,877.7 180,860 C207.0,842.3 236.7,814.7 260,790 C283.3,765.3 304.7,733.3 320,712 C335.3,690.7 344.7,672.7 352,662 C359.3,651.3 362.0,650.3 364,648" fill="none" stroke="#0f766e" stroke-width="3.4"/>
+  <path d="M364,648 C368.3,647.3 382.0,644.5 390,644 C398.0,643.5 404.0,644.3 412,645 C420.0,645.7 433.7,647.5 438,648" fill="none" stroke="#0f766e" stroke-width="3.4"/>
+  <path d="M438,648 C450.0,653.3 489.7,667.3 510,680 C530.3,692.7 543.3,707.3 560,724 C576.7,740.7 591.7,761.7 610,780 C628.3,798.3 650.0,819.3 670,834 C690.0,848.7 720.0,862.3 730,868" fill="none" stroke="#0f766e" stroke-width="3.4"/>
+  <path d="M98,824 C116.7,824.7 176.3,826.0 210,828 C243.7,830.0 278.3,832.3 300,836 C321.7,839.7 329.3,842.7 340,850 C350.7,857.3 358.7,870.7 364,880 C369.3,889.3 370.7,901.7 372,906" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <path d="M98,824 C126.7,824.3 221.3,825.0 270,826 C318.7,827.0 356.7,827.0 390,830 C423.3,833.0 441.7,837.7 470,844 C498.3,850.3 530.0,859.3 560,868 C590.0,876.7 625.0,889.0 650,896 C675.0,903.0 700.0,907.7 710,910" fill="none" stroke="#b45309" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <path d="M98,894 C121.7,893.3 199.7,891.0 240,890 C280.3,889.0 317.3,902.7 340,888 C362.7,873.3 361.0,818.0 376,802 C391.0,786.0 399.3,792.7 430,792 C460.7,791.3 513.3,796.3 560,798 C606.7,799.7 685.0,801.3 710,802" fill="none" stroke="#059669" stroke-width="2.2" stroke-dasharray="2 6"/>
+  <line x1="372" y1="620" x2="372" y2="920" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="6 6"/>
+  <line x1="438" y1="620" x2="438" y2="920" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="6 6"/>
+  <rect x="118.75" y="586.525" width="172.5" height="22.95" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="205" y="602.86" font-size="13.5" fill="#991b1b" text-anchor="middle">第一相：优先利用葡萄糖</text>
+  <rect x="375.5" y="586.95" width="59" height="22.099999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="405" y="602.68" font-size="13" fill="#78350f" text-anchor="middle">停顿期</text>
+  <rect x="480.5" y="586.525" width="159" height="22.95" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="560" y="602.86" font-size="13.5" fill="#78350f" text-anchor="middle">第二相：切换利用乳糖</text>
+  <text x="405" y="940" font-size="12.5" fill="#64748b" text-anchor="middle">葡萄糖耗尽</text>
+  <rect x="950" y="480.12" width="15.400000000000002" height="11.76" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="973.4" y="491.04" font-size="14" fill="#475569">细菌密度</text>
+  <rect x="1051.4" y="480.12" width="15.400000000000002" height="11.76" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1074.8000000000002" y="491.04" font-size="14" fill="#475569">葡萄糖</text>
+  <rect x="1138.8000000000002" y="480.12" width="15.400000000000002" height="11.76" rx="3" fill="#b45309" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1162.2000000000003" y="491.04" font-size="14" fill="#475569">乳糖</text>
+  <rect x="1212.2000000000003" y="480.12" width="15.400000000000002" height="11.76" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1235.6000000000004" y="491.04" font-size="14" fill="#475569">cAMP</text>
+  <rect x="930" y="508" width="410" height="424" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="948" y="542" font-size="17" fill="#1e293b" font-weight="700">停顿期＝诱导期</text>
+  <text x="948" y="574" font-size="13.5" fill="#475569">① 葡萄糖耗尽 → PTS 解除对腺苷酸环化酶的抑制</text>
+  <text x="948" y="604" font-size="13.5" fill="#475569">② cAMP 升高 → CAP-cAMP 结合 -61 位点</text>
+  <text x="948" y="634" font-size="13.5" fill="#475569">③ 残留乳糖 → 异乳糖使 LacI 解离</text>
+  <text x="948" y="664" font-size="13.5" fill="#475569">④ lacZ/Y/A 诱导合成 → 第二次指数生长</text>
+  <line x1="948" y1="708" x2="1322" y2="708" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="948" y="738" font-size="14.5" fill="#1e293b" font-weight="700">Monod 最早描述：</text>
+  <text x="948" y="764" font-size="13.5" fill="#475569">碳源利用的优先级编程——优先使用最经济的碳源，</text>
+  <text x="948" y="784.25" font-size="13.5" fill="#475569">保证细胞的能源逻辑。</text>
+  <text x="948" y="826" font-size="13.5" fill="#475569">CAP 为全局调节因子：结合位点见于 100+ 个基因的调控区，</text>
+  <text x="948" y="846.25" font-size="13.5" fill="#475569">与不同局部调节因子组合成分层网络；</text>
+  <text x="948" y="866.5" font-size="13.5" fill="#475569">乳糖操纵子因此成为「组合逻辑调控」的教科书范式。</text>
+</svg>

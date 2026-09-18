@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">分子克隆与基因文库</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">酶切—连接—转化—筛选的克隆范式：EcoRI 黏性末端、载体容量阶梯、蓝白斑筛选与两类文库</text>
+  <rect x="30" y="132" width="1340" height="338" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、分子克隆基本流程：酶切 → 连接 → 转化 → 筛选 → 鉴定</text>
+  <rect x="56" y="174" width="240" height="138" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="176" y="200" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">① 酶切</text>
+  <text x="176" y="300" font-size="10.5" fill="#64748b" text-anchor="middle">同一限制酶分别切割目的 DNA 与载体</text>
+  <line x1="299" y1="244" x2="315" y2="244" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="318" y="174" width="240" height="138" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="438" y="200" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">② 连接</text>
+  <text x="438" y="300" font-size="10.5" fill="#64748b" text-anchor="middle">T4 DNA 连接酶缝合（ATP 供能）</text>
+  <line x1="561" y1="244" x2="577" y2="244" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="580" y="174" width="240" height="138" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="700" y="200" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">③ 转化</text>
+  <text x="700" y="300" font-size="10.5" fill="#64748b" text-anchor="middle">CaCl₂ 热激 / 电穿孔导入大肠杆菌</text>
+  <line x1="823" y1="244" x2="839" y2="244" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="842" y="174" width="240" height="138" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="962" y="200" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">④ 筛选</text>
+  <text x="962" y="300" font-size="10.5" fill="#64748b" text-anchor="middle">抗生素平板 + 蓝白斑筛选</text>
+  <line x1="1085" y1="244" x2="1101" y2="244" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="1104" y="174" width="240" height="138" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1224" y="200" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">⑤ 鉴定</text>
+  <text x="1224" y="300" font-size="10.5" fill="#64748b" text-anchor="middle">酶切图谱 / 测序验证重组子</text>
+  <path d="M92,236L92.0,236.0L94.0,233.8L96.0,231.9L98.0,230.3L100.0,229.3L102.0,229.0L104.0,229.3L106.0,230.3L108.0,231.9L110.0,233.8L112.0,236.0L114.0,238.2L116.0,240.1L118.0,241.7L120.0,242.7L122.0,243.0L124.0,242.7L126.0,241.7L128.0,240.1L130.0,238.2L132.0,236.0L134.0,233.8L136.0,231.9L138.0,230.3L140.0,229.3L142.0,229.0L144.0,229.3L146.0,230.3L148.0,231.9L150.0,233.8L152.0,236.0L154.0,238.2L156.0,240.1L158.0,241.7L160.0,242.7L162.0,243.0L164.0,242.7L166.0,241.7L168.0,240.1L170.0,238.2L172.0,236.0L174.0,233.8" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M92,236L92.0,236.0L94.0,238.2L96.0,240.1L98.0,241.7L100.0,242.7L102.0,243.0L104.0,242.7L106.0,241.7L108.0,240.1L110.0,238.2L112.0,236.0L114.0,233.8L116.0,231.9L118.0,230.3L120.0,229.3L122.0,229.0L124.0,229.3L126.0,230.3L128.0,231.9L130.0,233.8L132.0,236.0L134.0,238.2L136.0,240.1L138.0,241.7L140.0,242.7L142.0,243.0L144.0,242.7L146.0,241.7L148.0,240.1L150.0,238.2L152.0,236.0L154.0,233.8L156.0,231.9L158.0,230.3L160.0,229.3L162.0,229.0L164.0,229.3L166.0,230.3L168.0,231.9L170.0,233.8L172.0,236.0L174.0,238.2" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="102" y1="229" x2="102" y2="243" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="122" y1="243" x2="122" y2="229" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="142" y1="229" x2="142" y2="243" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="162" y1="243" x2="162" y2="229" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="133" y="266" font-size="10" fill="#475569" text-anchor="middle">目的 DNA</text>
+  <ellipse cx="236" cy="234" rx="26" ry="17" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="236" y="266" font-size="10" fill="#475569" text-anchor="middle">载体（质粒）</text>
+  <line x1="142" y1="218" x2="142" y2="256" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <line x1="226" y1="218" x2="226" y2="252" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <ellipse cx="426" cy="236" rx="44" ry="30" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <rect x="406" y="228" width="40" height="16" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="426" y="239" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">插入</text>
+  <circle cx="496" cy="236" r="17" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="496" y="241" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">T4</text>
+  <text x="496" y="266" font-size="10" fill="#475569" text-anchor="middle">连接酶 · ATP</text>
+  <ellipse cx="696" cy="236" rx="48" ry="28" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <ellipse cx="676" cy="236" rx="13" ry="8" fill="none" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="776" cy="214" rx="12" ry="8" fill="none" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="766" y1="220" x2="740" y2="230" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <text x="696" y="266" font-size="10" fill="#475569" text-anchor="middle">大肠杆菌</text>
+  <circle cx="962" cy="236" r="34" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <circle cx="946" cy="226" r="4.6" fill="#0369a1" stroke="#475569" stroke-width="1"/>
+  <circle cx="958" cy="218" r="4.6" fill="#0369a1" stroke="#475569" stroke-width="1"/>
+  <circle cx="972" cy="228" r="4.6" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+  <circle cx="980" cy="246" r="4.6" fill="#0369a1" stroke="#475569" stroke-width="1"/>
+  <circle cx="964" cy="248" r="4.6" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+  <circle cx="950" cy="250" r="4.6" fill="#0369a1" stroke="#475569" stroke-width="1"/>
+  <circle cx="984" cy="220" r="4.6" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+  <circle cx="940" cy="242" r="4.6" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+  <rect x="1160" y="212" width="130" height="56" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="1188" y="220" width="30" height="6" fill="#1e293b"/>
+  <rect x="1236" y="220" width="30" height="6" fill="#1e293b"/>
+  <rect x="1190" y="232" width="26" height="6" fill="#0f766e"/>
+  <rect x="1238" y="248" width="26" height="6" fill="#0f766e"/>
+  <text x="1204" y="282" font-size="9.5" fill="#64748b" text-anchor="middle">空载体</text>
+  <text x="1252" y="282" font-size="9.5" fill="#64748b" text-anchor="middle">重组子</text>
+  <text x="56" y="344" font-size="15" fill="#1e293b" font-weight="700">蓝白斑筛选（lacZα 互补）：重组子的经典正筛</text>
+  <rect x="56" y="360" width="400" height="92" rx="9" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="70" y="384" font-size="12.5" fill="#075985" font-weight="700">空载体：MCS 未插入，α 肽完好</text>
+  <text x="70" y="412" font-size="11.5" fill="#475569">载体 lacZα + 宿主 ω 肽（Δ(lacZ)M15）→ α 互补</text>
+  <text x="70" y="436" font-size="11.5" fill="#475569">β-半乳糖苷酶活性 → IPTG + X-gal 平板</text>
+  <rect x="375.22" y="386.95" width="73.56" height="22.099999999999998" rx="7" fill="#0369a1" stroke="#075985" stroke-width="1.5"/>
+  <text x="412" y="402.68" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">蓝色菌落</text>
+  <rect x="472" y="360" width="400" height="92" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="486" y="384" font-size="12.5" fill="#dc2626" font-weight="700">重组载体：插入片段破坏 α 肽读码</text>
+  <text x="486" y="412" font-size="11.5" fill="#475569">α 肽失活 → 无法与 ω 肽互补</text>
+  <text x="486" y="436" font-size="11.5" fill="#475569">X-gal 不显色 → 平板上呈白色</text>
+  <rect x="736.44" y="386.95" width="127.12" height="22.099999999999998" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="800" y="402.68" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">白色菌落＝重组子</text>
+  <rect x="888" y="360" width="458" height="92" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="902" y="384" font-size="12.5" fill="#475569" font-weight="700">原理要点</text>
+  <text x="902" y="408" font-size="11.5" fill="#475569">MCS（多克隆位点）位于 lacZα（α 肽）编码区内；宿主为 Δ(lacZ)M15 基因型，</text>
+  <text x="902" y="427" font-size="11.5" fill="#475569">仅能提供 ω 肽；IPTG 诱导转录、X-gal 为生色底物。</text>
+  <rect x="30" y="484" width="660" height="258" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="506.84" font-size="19" fill="#475569" font-weight="700">二、II 型限制酶与 T4 DNA 连接酶：克隆的「手术刀」与「缝线」</text>
+  <text x="56" y="526" font-size="13" fill="#1e293b" font-weight="700">EcoRI 识别 6 bp 回文序列，交错切割：</text>
+  <line x1="60" y1="545" x2="94" y2="545" stroke="#475569" stroke-width="2"/>
+  <line x1="240" y1="545" x2="274" y2="545" stroke="#475569" stroke-width="2"/>
+  <line x1="60" y1="577" x2="94" y2="577" stroke="#475569" stroke-width="2"/>
+  <line x1="240" y1="577" x2="274" y2="577" stroke="#475569" stroke-width="2"/>
+  <text x="100" y="550" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <text x="126" y="550" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="152" y="550" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="178" y="550" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="204" y="550" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="230" y="550" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="100" y="582" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="126" y="582" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="152" y="582" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="178" y="582" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="204" y="582" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="230" y="582" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <text x="48" y="550" font-size="11" fill="#64748b">5′</text>
+  <text x="278" y="550" font-size="11" fill="#64748b">3′</text>
+  <text x="48" y="582" font-size="11" fill="#64748b">3′</text>
+  <text x="278" y="582" font-size="11" fill="#64748b">5′</text>
+  <line x1="113" y1="532" x2="113" y2="560" stroke="#be185d" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="113,562 108,554 118,554" fill="#be185d"/>
+  <line x1="217" y1="562" x2="217" y2="590" stroke="#be185d" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="217,560 212,568 222,568" fill="#be185d"/>
+  <text x="56" y="612" font-size="11.5" fill="#831843" font-weight="700">切口错开 4 nt → 5′ 黏性末端（AATT）</text>
+  <text x="56" y="634" font-size="11" fill="#64748b">II 型限制酶识别 4～8 bp 回文序列并于固定位置切割；</text>
+  <text x="56" y="651" font-size="11" fill="#64748b">来源自细菌的限制修饰系统（见第 11 章）。</text>
+  <text x="400" y="526" font-size="13" fill="#1e293b" font-weight="700">同酶切产物末端互补：</text>
+  <line x1="400" y1="545" x2="436" y2="545" stroke="#475569" stroke-width="2"/>
+  <text x="448" y="550" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <line x1="400" y1="577" x2="436" y2="577" stroke="#475569" stroke-width="2"/>
+  <text x="448" y="582" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="468" y="582" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="488" y="582" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="508" y="582" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="528" y="582" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="392" y="550" font-size="10.5" fill="#64748b" text-anchor="end">5′</text>
+  <text x="392" y="582" font-size="10.5" fill="#64748b" text-anchor="end">3′</text>
+  <text x="500" y="550" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="520" y="550" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="540" y="550" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="560" y="550" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="580" y="550" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <line x1="588" y1="545" x2="622" y2="545" stroke="#475569" stroke-width="2"/>
+  <text x="552" y="582" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <line x1="562" y1="577" x2="622" y2="577" stroke="#475569" stroke-width="2"/>
+  <text x="630" y="550" font-size="10.5" fill="#64748b">3′</text>
+  <text x="630" y="582" font-size="10.5" fill="#64748b">5′</text>
+  <path d="M500,594 Q540,612 570,590" fill="none" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="536" y="622" font-size="10.5" fill="#64748b" text-anchor="middle">AATT 突出端彼此互补</text>
+  <text x="56" y="690" font-size="11.5" fill="#475569">T4 DNA 连接酶缝合相邻 5′-磷酸与 3′-OH 成磷酸二酯键（ATP 供能）</text>
+  <rect x="473.805" y="654.65" width="164.39" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="556" y="667.96" font-size="11" fill="#059669" text-anchor="middle">同尾酶：不同序列 → 相同末端</text>
+  <rect x="482" y="688.65" width="148" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="556" y="701.96" font-size="11" fill="#059669" text-anchor="middle">平末端：直接连接或加接头</text>
+  <rect x="710" y="484" width="660" height="258" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="506.84" font-size="19" fill="#475569" font-weight="700">三、载体按插入容量分级：克隆大片段的阶梯</text>
+  <rect x="756" y="532" width="70" height="21" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="791" y="547" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">质粒</text>
+  <text x="836" y="541" font-size="11.5" fill="#1e293b" font-weight="700">＜10 kb</text>
+  <text x="836" y="558" font-size="9.5" fill="#64748b">pUC / pBluescript：ori · 抗性标记 · MCS；常规克隆与表达</text>
+  <rect x="756" y="568" width="96" height="21" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="804" y="583" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">λ 噬菌体</text>
+  <text x="862" y="577" font-size="11.5" fill="#1e293b" font-weight="700">5–23 kb（置换型）</text>
+  <text x="862" y="594" font-size="9.5" fill="#64748b">体外包装感染；基因组文库</text>
+  <rect x="756" y="604" width="130" height="21" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="821" y="619" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">粘粒 cosmid</text>
+  <text x="896" y="613" font-size="11.5" fill="#1e293b" font-weight="700">35–45 kb</text>
+  <text x="896" y="630" font-size="9.5" fill="#64748b">λ cos 位点 + 质粒骨架；大片段文库</text>
+  <rect x="756" y="640" width="185" height="21" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="848.5" y="655" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">BAC</text>
+  <text x="951" y="649" font-size="11.5" fill="#1e293b" font-weight="700">100–300 kb</text>
+  <text x="951" y="666" font-size="9.5" fill="#64748b">F 因子单拷贝、极稳定；HGP 主力载体</text>
+  <rect x="756" y="676" width="250" height="21" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="881" y="691" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">YAC</text>
+  <text x="1016" y="685" font-size="11.5" fill="#1e293b" font-weight="700">100 kb–1 Mb</text>
+  <text x="1016" y="702" font-size="9.5" fill="#64748b">酵母着丝粒 + 端粒 + ARS；早期大基因组作图</text>
+  <rect x="756" y="712" width="590" height="26" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="766" y="729" font-size="10.5" fill="#475569">表达载体：强启动子（T7 / lac / CMV）· 核糖体结合位 / Kozak 序 · 纯化标签（His₆ / GST）· 终止子</text>
+  <rect x="30" y="756" width="660" height="204" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="778.84" font-size="19" fill="#475569" font-weight="700">四、基因组文库 vs cDNA 文库：全基因组 vs 表达谱</text>
+  <rect x="63.525" y="784.95" width="84.95" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="106" y="800.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">基因组文库</text>
+  <rect x="46" y="810" width="286" height="26" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.3"/>
+  <text x="189" y="827" font-size="11.5" fill="#475569" text-anchor="middle">基因组 DNA</text>
+  <line x1="189" y1="837" x2="189" y2="841" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
+  <rect x="46" y="842" width="286" height="26" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.3"/>
+  <text x="189" y="859" font-size="11.5" fill="#475569" text-anchor="middle">机械剪切 / 部分酶切</text>
+  <line x1="189" y1="869" x2="189" y2="873" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
+  <rect x="46" y="874" width="286" height="26" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.3"/>
+  <text x="189" y="891" font-size="11.5" fill="#475569" text-anchor="middle">克隆入 λ / BAC 载体</text>
+  <line x1="189" y1="901" x2="189" y2="905" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
+  <rect x="46" y="906" width="286" height="26" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.3"/>
+  <text x="189" y="923" font-size="11.5" fill="#475569" text-anchor="middle">覆盖全基因组（含内含子·调控区）</text>
+  <text x="46" y="946" font-size="10.5" fill="#64748b">N = ln(1−P) / ln(1−f)（随机覆盖概率）</text>
+  <rect x="381.5335" y="784.95" width="80.933" height="22.099999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="422" y="800.68" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700">cDNA 文库</text>
+  <rect x="362" y="810" width="286" height="26" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.3"/>
+  <text x="505" y="827" font-size="11.5" fill="#475569" text-anchor="middle">组织 / 时期特异 mRNA</text>
+  <line x1="505" y1="837" x2="505" y2="841" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <rect x="362" y="842" width="286" height="26" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.3"/>
+  <text x="505" y="859" font-size="11.5" fill="#475569" text-anchor="middle">反转录 → 双链 cDNA</text>
+  <line x1="505" y1="869" x2="505" y2="873" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <rect x="362" y="874" width="286" height="26" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.3"/>
+  <text x="505" y="891" font-size="11.5" fill="#475569" text-anchor="middle">加接头克隆</text>
+  <line x1="505" y1="901" x2="505" y2="905" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <rect x="362" y="906" width="286" height="26" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.3"/>
+  <text x="505" y="923" font-size="11.5" fill="#475569" text-anchor="middle">反映表达谱（无内含子 / 调控区）</text>
+  <text x="362" y="946" font-size="10.5" fill="#64748b">发现基因 · 克隆表达序列 · 差异筛选（消减杂交）</text>
+  <rect x="710" y="756" width="660" height="204" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="778.84" font-size="19" fill="#475569" font-weight="700">五、表达系统：按翻译后修饰需求在原核至哺乳动物间选择</text>
+  <rect x="740" y="882" width="138" height="52" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="809" y="902" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">E. coli</text>
+  <text x="809" y="920" font-size="9.5" fill="#475569" text-anchor="middle">快 · 廉价；无翻译后修饰</text>
+  <rect x="888" y="856" width="138" height="78" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="957" y="876" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">酵母</text>
+  <text x="957" y="894" font-size="9.5" fill="#475569" text-anchor="middle">部分糖基化</text>
+  <rect x="1036" y="830" width="138" height="104" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1105" y="850" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">昆虫杆状病毒</text>
+  <text x="1105" y="868" font-size="9.5" fill="#475569" text-anchor="middle">高表达量</text>
+  <rect x="1184" y="804" width="138" height="130" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1253" y="824" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">哺乳动物细胞</text>
+  <text x="1253" y="842" font-size="9.5" fill="#475569" text-anchor="middle">正确折叠与修饰</text>
+  <text x="740" y="950" font-size="10.5" fill="#64748b">翻译后修饰需求递增 →　重组人胰岛素（1982）· 生长激素等经「分子克隆 → 生物制药」路线产业化</text>
+</svg>

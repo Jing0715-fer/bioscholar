@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">顺式作用元件：启动子、增强子与 LCR</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">增强子经 DNA 成环远距沟通启动子——β-珠蛋白 LCR 的阶段开关与绝缘子的边界语法</text>
+  <rect x="30" y="132" width="1340" height="340" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、增强子：经 DNA 成环沟通远端启动子（距离/方向/位置均不敏感）</text>
+  <line x1="60" y1="348" x2="1330" y2="348" stroke="#0f766e" stroke-width="3"/>
+  <rect x="100" y="333" width="140" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="170" y="353" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">增强子</text>
+  <ellipse cx="135" cy="285" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="135" y="290" font-size="10.5" fill="#4c1d95" text-anchor="middle">激活</text>
+  <ellipse cx="205" cy="285" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="205" y="290" font-size="10.5" fill="#4c1d95" text-anchor="middle">因子</text>
+  <path d="M170,330 C 240,180 630,180 700,330" fill="none" stroke="#6d28d9" stroke-width="2.6" stroke-dasharray="8 6"/>
+  <text x="435" y="196" font-size="13" fill="#4c1d95" text-anchor="middle">DNA 成环（cohesin 稳定；3C / Hi-C 已直接观测）</text>
+  <ellipse cx="700" cy="296" rx="68" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="700" y="302" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="600">Pol II + Mediator</text>
+  <rect x="440" y="335" width="60" height="26" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="470" y="352" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">GC盒</text>
+  <rect x="515" y="335" width="70" height="26" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="550" y="352" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">CAAT盒</text>
+  <rect x="640" y="335" width="60" height="26" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="670" y="352" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">TATA</text>
+  <text x="437" y="388" font-size="11" fill="#64748b">GC盒·Sp1</text>
+  <text x="505" y="388" font-size="11" fill="#64748b">CAAT盒·NF-1</text>
+  <text x="649" y="388" font-size="11" fill="#64748b">核心启动子</text>
+  <text x="510" y="413" font-size="12" fill="#475569" text-anchor="middle">近端元件位于启动子上游 50–200 bp，其数量与组合决定基础表达强度</text>
+  <rect x="760" y="334" width="70" height="28" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="900" y="334" width="70" height="28" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="1030" y="334" width="80" height="28" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="830" y1="348" x2="900" y2="348" stroke="#0f766e" stroke-width="3"/>
+  <line x1="970" y1="348" x2="1030" y2="348" stroke="#0f766e" stroke-width="3"/>
+  <text x="960" y="388" font-size="12" fill="#64748b" text-anchor="middle">基因（外显子-内含子交替）</text>
+  <line x1="790" y1="322" x2="1250" y2="322" stroke="#b45309" stroke-width="2.6" marker-end="url(#arr-rna)"/>
+  <text x="1030" y="308" font-size="12.5" fill="#78350f" text-anchor="middle">转录 →</text>
+  <rect x="101.32000000000001" y="433.95" width="197.35999999999999" height="22.099999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="200" y="449.68" font-size="13" fill="#4c1d95" text-anchor="middle">距离不敏感：数 kb～数百 kb</text>
+  <rect x="370.92" y="433.95" width="218.16" height="22.099999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="480" y="449.68" font-size="13" fill="#4c1d95" text-anchor="middle">方向不敏感：正/反向插入均有效</text>
+  <rect x="648.84" y="433.95" width="222.32" height="22.099999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="760" y="449.68" font-size="13" fill="#4c1d95" text-anchor="middle">位置灵活：上游/下游/内含子均可</text>
+  <text x="700" y="478" font-size="12" fill="#64748b" text-anchor="middle">增强子具组织/细胞特异性（如免疫球蛋白基因增强子仅在 B 细胞活化），常转录 eRNA；沉默子结合抑制性因子反向操作</text>
+  <rect x="30" y="492" width="660" height="458" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="514.84" font-size="19" fill="#475569" font-weight="700">二、β-珠蛋白基因簇 LCR：发育阶段的顺序开关</text>
+  <rect x="70" y="630" width="120" height="60" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="2.2"/>
+  <text x="130" y="654" font-size="16" fill="#059669" text-anchor="middle" font-weight="700">LCR</text>
+  <text x="130" y="674" font-size="11" fill="#059669" text-anchor="middle">HS1–HS5</text>
+  <line x1="70" y1="660" x2="660" y2="660" stroke="#94a3b8" stroke-width="1.4"/>
+  <rect x="230" y="638" width="60" height="44" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="260" y="666" font-size="15" fill="#b45309" text-anchor="middle" font-weight="700">ε</text>
+  <rect x="320" y="638" width="60" height="44" rx="4" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.8"/>
+  <text x="350" y="666" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">Gγ</text>
+  <rect x="410" y="638" width="60" height="44" rx="4" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.8"/>
+  <text x="440" y="666" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">Aγ</text>
+  <rect x="500" y="638" width="60" height="44" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="530" y="666" font-size="15" fill="#475569" text-anchor="middle" font-weight="700">δ</text>
+  <rect x="580" y="638" width="70" height="44" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.8"/>
+  <text x="615" y="666" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">β</text>
+  <path d="M160,628 C 200,560 240,560 258,634" fill="none" stroke="#d97706" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <path d="M160,628 C 250,535 370,535 375,634" fill="none" stroke="#6d28d9" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <path d="M160,628 C 280,505 560,505 612,634" fill="none" stroke="#0f766e" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <rect x="229" y="541.375" width="62" height="21.25" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="260" y="556.5" font-size="12.5" fill="#78350f" text-anchor="middle">胚胎：ε</text>
+  <rect x="322" y="511.375" width="96" height="21.25" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="370" y="526.5" font-size="12.5" fill="#4c1d95" text-anchor="middle">胎儿：Gγ / Aγ</text>
+  <rect x="529" y="511.375" width="62" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="560" y="526.5" font-size="12.5" fill="#134e4a" text-anchor="middle">成人：β</text>
+  <text x="365" y="710" font-size="12.5" fill="#475569" text-anchor="middle">LCR「翻转」与不同基因的成环连接，切换表达程序</text>
+  <text x="56" y="726" font-size="12.5" fill="#475569">· LCR 以一簇 DNase I 高敏位点（HS1–HS5）为标志，位于 ε 基因上游 6–20 kb</text>
+  <text x="56" y="753" font-size="12.5" fill="#475569">· 功能超越单个增强子：「染色质开放 + 增强 + 隔离」三位一体</text>
+  <text x="56" y="780" font-size="12.5" fill="#475569">· LCR 病损 → β-地中海贫血表型（即使珠蛋白基因本身完好）</text>
+  <text x="56" y="807" font-size="12.5" fill="#475569">· T 细胞受体等多个基因簇同样受 LCR 控制</text>
+  <text x="360" y="860" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">胚胎 ε → 胎儿 γ → 成人 β：发育阶段顺序开关</text>
+  <rect x="710" y="492" width="660" height="458" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="514.84" font-size="19" fill="#475569" font-weight="700">三、绝缘子、MAR 与真核基因的「调控语法」</text>
+  <line x1="740" y1="570" x2="1330" y2="570" stroke="#0f766e" stroke-width="2.6"/>
+  <rect x="760" y="557" width="100" height="26" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="810" y="575" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">增强子</text>
+  <polygon points="960,550 978,570 960,590 942,570" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="960" y="610" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="600">CTCF 绝缘子</text>
+  <rect x="1080" y="557" width="70" height="26" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1115" y="575" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">启动子</text>
+  <line x1="905" y1="562" x2="935" y2="578" stroke="#dc2626" stroke-width="2.6"/>
+  <line x1="935" y1="562" x2="905" y2="578" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="1040" y="538" font-size="12.5" fill="#dc2626" text-anchor="middle">增强子阻断：越界信号被截停</text>
+  <rect x="760" y="652" width="180" height="32" rx="3" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="850" y="673" font-size="12" fill="#64748b" text-anchor="middle">异染色质蔓延 →</text>
+  <line x1="776" y1="656" x2="790" y2="680" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="810" y1="656" x2="824" y2="680" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="844" y1="656" x2="858" y2="680" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="878" y1="656" x2="892" y2="680" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="912" y1="656" x2="926" y2="680" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="970" y="648" width="44" height="40" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="992" y="673" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">屏障</text>
+  <line x1="946" y1="660" x2="966" y2="676" stroke="#dc2626" stroke-width="2.6"/>
+  <line x1="966" y1="660" x2="946" y2="676" stroke="#dc2626" stroke-width="2.6"/>
+  <rect x="1040" y="652" width="220" height="32" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1150" y="673" font-size="12" fill="#059669" text-anchor="middle" font-weight="600">常染色质基因区（受保护）</text>
+  <text x="1040" y="708" font-size="12" fill="#475569" text-anchor="middle">屏障型绝缘子（BEAF 等屏障蛋白）阻挡异染色质蔓延</text>
+  <rect x="760" y="778" width="560" height="26" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1040" y="796" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">核基质</text>
+  <line x1="820" y1="748" x2="800" y2="778" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1040" y1="748" x2="1040" y2="778" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1250" y1="748" x2="1270" y2="778" stroke="#0f766e" stroke-width="2"/>
+  <text x="930" y="740" font-size="12.5" fill="#475569" text-anchor="middle">MAR/SAR：染色质环锚定核基质，划定自主调控区</text>
+  <rect x="740" y="812" width="600" height="108" rx="10" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.6"/>
+  <text x="1040" y="842" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">真核基因的「调控语法」</text>
+  <rect x="755.3199" y="874.95" width="89.3602" height="22.099999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="800" y="890.68" font-size="13" fill="#059669" text-anchor="middle" font-weight="600">LCR·主开关</text>
+  <rect x="887.6876" y="874.95" width="104.6248" height="22.099999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="940" y="890.68" font-size="13" fill="#059669" text-anchor="middle" font-weight="600">增强子·定强度</text>
+  <rect x="1027.6876" y="874.95" width="104.6248" height="22.099999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="1080" y="890.68" font-size="13" fill="#059669" text-anchor="middle" font-weight="600">绝缘子·画边界</text>
+  <rect x="1167.6876" y="874.95" width="104.6248" height="22.099999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="1220" y="890.68" font-size="13" fill="#059669" text-anchor="middle" font-weight="600">启动子·定起点</text>
+</svg>

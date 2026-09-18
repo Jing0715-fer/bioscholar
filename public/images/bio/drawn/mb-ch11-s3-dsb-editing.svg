@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DSB 修复路线与精准编辑策略</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">NHEJ / HDR 竞争修复——CBE 与 ABE 免断裂碱基转化、先导编辑 pegRNA 自携模板与脱靶控制的完整技术栈</text>
+  <rect x="30" y="132" width="700" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Cas9 造成的 DSB：两条细胞通路的竞争修复</text>
+  <path d="M150,190L150.0,190.0L152.0,187.9L154.0,186.1L156.0,184.5L158.0,183.5L160.0,183.0L162.0,183.2L164.0,183.9L166.0,185.2L168.0,187.0L170.0,189.0L172.0,191.0L174.0,193.0L176.0,194.8L178.0,196.1L180.0,196.8L182.0,197.0L184.0,196.5L186.0,195.5L188.0,193.9L190.0,192.1L192.0,190.0L194.0,187.9L196.0,186.1L198.0,184.5L200.0,183.5L202.0,183.0L204.0,183.2L206.0,183.9L208.0,185.2L210.0,187.0L212.0,189.0L214.0,191.0L216.0,193.0L218.0,194.8L220.0,196.1L222.0,196.8L224.0,197.0L226.0,196.5L228.0,195.5L230.0,193.9L232.0,192.1L234.0,190.0L236.0,187.9L238.0,186.1L240.0,184.5L242.0,183.5L244.0,183.0L246.0,183.2L248.0,183.9L250.0,185.2L252.0,187.0L254.0,189.0L256.0,191.0L258.0,193.0L260.0,194.8L262.0,196.1L264.0,196.8L266.0,197.0L268.0,196.5L270.0,195.5L272.0,193.9L274.0,192.1L276.0,190.0L278.0,187.9L280.0,186.1" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M150,190L150.0,190.0L152.0,192.1L154.0,193.9L156.0,195.5L158.0,196.5L160.0,197.0L162.0,196.8L164.0,196.1L166.0,194.8L168.0,193.0L170.0,191.0L172.0,189.0L174.0,187.0L176.0,185.2L178.0,183.9L180.0,183.2L182.0,183.0L184.0,183.5L186.0,184.5L188.0,186.1L190.0,187.9L192.0,190.0L194.0,192.1L196.0,193.9L198.0,195.5L200.0,196.5L202.0,197.0L204.0,196.8L206.0,196.1L208.0,194.8L210.0,193.0L212.0,191.0L214.0,189.0L216.0,187.0L218.0,185.2L220.0,183.9L222.0,183.2L224.0,183.0L226.0,183.5L228.0,184.5L230.0,186.1L232.0,187.9L234.0,190.0L236.0,192.1L238.0,193.9L240.0,195.5L242.0,196.5L244.0,197.0L246.0,196.8L248.0,196.1L250.0,194.8L252.0,193.0L254.0,191.0L256.0,189.0L258.0,187.0L260.0,185.2L262.0,183.9L264.0,183.2L266.0,183.0L268.0,183.5L270.0,184.5L272.0,186.1L274.0,187.9L276.0,190.0L278.0,192.1L280.0,193.9" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="160.5" y1="183" x2="160.5" y2="197" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="181.5" y1="197" x2="181.5" y2="183" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="202.5" y1="183" x2="202.5" y2="197" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="223.5" y1="197" x2="223.5" y2="183" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="244.5" y1="183" x2="244.5" y2="197" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="265.5" y1="197" x2="265.5" y2="183" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="300" y1="172" x2="300" y2="208" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="6 4"/>
+  <path d="M330,190L330.0,190.0L332.0,187.9L334.0,186.1L336.0,184.5L338.0,183.5L340.0,183.0L342.0,183.2L344.0,183.9L346.0,185.2L348.0,187.0L350.0,189.0L352.0,191.0L354.0,193.0L356.0,194.8L358.0,196.1L360.0,196.8L362.0,197.0L364.0,196.5L366.0,195.5L368.0,193.9L370.0,192.1L372.0,190.0L374.0,187.9L376.0,186.1L378.0,184.5L380.0,183.5L382.0,183.0L384.0,183.2L386.0,183.9L388.0,185.2L390.0,187.0L392.0,189.0L394.0,191.0L396.0,193.0L398.0,194.8L400.0,196.1L402.0,196.8L404.0,197.0L406.0,196.5L408.0,195.5L410.0,193.9L412.0,192.1L414.0,190.0L416.0,187.9L418.0,186.1L420.0,184.5L422.0,183.5L424.0,183.0L426.0,183.2L428.0,183.9L430.0,185.2L432.0,187.0L434.0,189.0L436.0,191.0L438.0,193.0L440.0,194.8L442.0,196.1L444.0,196.8L446.0,197.0L448.0,196.5L450.0,195.5L452.0,193.9L454.0,192.1L456.0,190.0L458.0,187.9L460.0,186.1" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M330,190L330.0,190.0L332.0,192.1L334.0,193.9L336.0,195.5L338.0,196.5L340.0,197.0L342.0,196.8L344.0,196.1L346.0,194.8L348.0,193.0L350.0,191.0L352.0,189.0L354.0,187.0L356.0,185.2L358.0,183.9L360.0,183.2L362.0,183.0L364.0,183.5L366.0,184.5L368.0,186.1L370.0,187.9L372.0,190.0L374.0,192.1L376.0,193.9L378.0,195.5L380.0,196.5L382.0,197.0L384.0,196.8L386.0,196.1L388.0,194.8L390.0,193.0L392.0,191.0L394.0,189.0L396.0,187.0L398.0,185.2L400.0,183.9L402.0,183.2L404.0,183.0L406.0,183.5L408.0,184.5L410.0,186.1L412.0,187.9L414.0,190.0L416.0,192.1L418.0,193.9L420.0,195.5L422.0,196.5L424.0,197.0L426.0,196.8L428.0,196.1L430.0,194.8L432.0,193.0L434.0,191.0L436.0,189.0L438.0,187.0L440.0,185.2L442.0,183.9L444.0,183.2L446.0,183.0L448.0,183.5L450.0,184.5L452.0,186.1L454.0,187.9L456.0,190.0L458.0,192.1L460.0,193.9" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="340.5" y1="183" x2="340.5" y2="197" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="361.5" y1="197" x2="361.5" y2="183" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="382.5" y1="183" x2="382.5" y2="197" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="403.5" y1="197" x2="403.5" y2="183" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="424.5" y1="183" x2="424.5" y2="197" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="445.5" y1="197" x2="445.5" y2="183" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="305" y="166" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">DSB</text>
+  <line x1="305" y1="212" x2="200" y2="248" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <line x1="305" y1="212" x2="490" y2="248" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="56" y="252" width="300" height="122" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="206" y="276" font-size="13.5" fill="#dc2626" text-anchor="middle" font-weight="700">NHEJ（非同源末端连接）</text>
+  <text x="70" y="298" font-size="11" fill="#475569">Ku70/80 识别末端 → DNA-PKcs / Artemis 加工 → XRCC4-LigIV 连接</text>
+  <text x="70" y="350" font-size="11" fill="#dc2626" font-weight="600">快速 · 易错：indel → 移码基因敲除（全周期，G1 为主）</text>
+  <rect x="372" y="252" width="300" height="122" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="522" y="276" font-size="13.5" fill="#059669" text-anchor="middle" font-weight="700">HDR（同源定向修复）</text>
+  <text x="386" y="298" font-size="11" fill="#475569">切除成 3′ 突出 → 侵入带同源臂供体模板</text>
+  <text x="386" y="314" font-size="11" fill="#475569">（ssODN / 质粒）→ 合成替换</text>
+  <text x="386" y="350" font-size="11" fill="#059669" font-weight="600">精确：定点突变 · 插入 · 报告基因敲入（限 S/G2 期，效率常 &lt;30%）</text>
+  <rect x="56" y="386" width="616" height="52" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="72" y="408" font-size="11.5" fill="#475569">基因敲除（KO）依赖 NHEJ 的 indel；</text>
+  <text x="72" y="425" font-size="11.5" fill="#475569">敲入与点突变校正依赖 HDR + 供体模板——RS-1 / scr7 抑制 NHEJ 与细胞周期同步是常用增效策略</text>
+  <rect x="740" y="132" width="630" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、碱基编辑（David Liu 实验室）：绕开 DSB 的化学转化</text>
+  <rect x="756" y="172" width="298" height="178" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="905" y="196" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">CBE 胞嘧啶碱基编辑器</text>
+  <text x="772" y="220" font-size="11" fill="#475569">d/nCas9（D10A 切口酶）融合大鼠 APOBEC1 + UGI</text>
+  <text x="772" y="236" font-size="11" fill="#475569">（尿嘧啶 DNA 糖苷酶抑制剂）</text>
+  <text x="772" y="274" font-size="11" fill="#64748b">编辑窗口（约第 4–8 位）内：</text>
+  <text x="905" y="298" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">C → U → U·G 错配</text>
+  <text x="905" y="322" font-size="11" fill="#475569" text-anchor="middle">经复制 / 缺口修复固定为 T·A</text>
+  <rect x="867.323125" y="325.375" width="75.35374999999999" height="21.25" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="905" y="340.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">C·G → T·A</text>
+  <rect x="1066" y="172" width="288" height="178" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1210" y="196" font-size="13.5" fill="#78350f" text-anchor="middle" font-weight="700">ABE 腺嘌呤碱基编辑器</text>
+  <text x="1082" y="220" font-size="11" fill="#475569">由大肠杆菌 tRNA 腺苷脱氨酶（TadA）</text>
+  <text x="1082" y="236" font-size="11" fill="#475569">经工程进化而来</text>
+  <text x="1082" y="274" font-size="11" fill="#64748b">腺嘌呤脱氨为肌苷（I）：</text>
+  <text x="1210" y="298" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">A → I → 复制读作 G</text>
+  <text x="1210" y="322" font-size="11" fill="#475569" text-anchor="middle">肌苷被聚合酶当作 G 配对</text>
+  <rect x="1172.323125" y="325.375" width="75.35374999999999" height="21.25" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1210" y="340.5" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">A·T → G·C</text>
+  <rect x="756" y="362" width="598" height="76" rx="8" fill="#fef3c7" fill-opacity="0.35" stroke="#b45309" stroke-width="1.3"/>
+  <text x="772" y="384" font-size="11.5" fill="#475569">C→T 与 A→G 经反义链设计合起来可覆盖约 60% 的人类致病点突变，且无 DSB——大幅降低 indel 与易位风险</text>
+  <text x="772" y="420" font-size="11" fill="#78350f">局限：编辑窗口内的旁观者效应 · 不能插入 / 缺失 · 序列上下文偏好</text>
+  <rect x="30" y="466" width="1340" height="244" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="488.84" font-size="19" fill="#475569" font-weight="700">三、先导编辑（Prime Editing，2019）：Cas9-逆转录酶融合 + 自带模板的 pegRNA</text>
+  <rect x="56" y="512" width="250" height="46" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="181" y="530" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">Cas9（H840A 切口酶）</text>
+  <text x="181" y="548" font-size="10" fill="#64748b" text-anchor="middle">融合</text>
+  <rect x="316" y="512" width="170" height="46" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="401" y="530" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">M-MLV</text>
+  <text x="401" y="548" font-size="10.5" fill="#64748b" text-anchor="middle">逆转录酶</text>
+  <rect x="56" y="576" width="130" height="34" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="121" y="598" font-size="11" fill="#78350f" text-anchor="middle" font-weight="600">间隔序列</text>
+  <rect x="194" y="576" width="100" height="34" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="244" y="598" font-size="11" fill="#475569" text-anchor="middle">sgRNA 骨架</text>
+  <rect x="302" y="576" width="110" height="34" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="357" y="598" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">PBS</text>
+  <rect x="420" y="576" width="130" height="34" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="485" y="598" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">RTT（模板）</text>
+  <text x="56" y="630" font-size="11" fill="#64748b">pegRNA＝向导 RNA 3′ 延伸出引物结合位点（PBS）与逆转录模板（RTT）</text>
+  <rect x="560" y="506" width="316" height="74" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="718" y="536" font-size="11.5" fill="#475569" text-anchor="middle">① pegRNA 引导切口靶标链</text>
+  <line x1="718" y1="582" x2="718" y2="592" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="890" y="506" width="316" height="74" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="1048" y="536" font-size="11.5" fill="#475569" text-anchor="middle">② 游离 3′-OH 与 PBS 配对</text>
+  <line x1="1048" y1="582" x2="1048" y2="592" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="560" y="596" width="316" height="74" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="718" y="626" font-size="11.5" fill="#475569" text-anchor="middle">③ 逆转录酶按 RTT 合成含目标突变的「编辑翼」</text>
+  <rect x="890" y="596" width="316" height="74" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="1048" y="626" font-size="11.5" fill="#475569" text-anchor="middle">④ 编辑翼与原序列竞争置换（3′ flap vs 5′ flap）</text>
+  <text x="1048" y="643" font-size="11.5" fill="#475569" text-anchor="middle">→ 错配修复固定</text>
+  <text x="70" y="678" font-size="11" fill="#78350f">代价：pegRNA 设计复杂 · 效率因位点而异 · 编辑产物嵌合</text>
+  <text x="560" y="688" font-size="10.5" fill="#059669">PE2 + 第二条引导链（PE3）可提高效率；无需外源供体即可实现全部 12 种碱基转换 + 小片段插入 / 删除，</text>
+  <text x="560" y="703" font-size="10.5" fill="#059669">理论上覆盖约 89% 已知致病突变。</text>
+  <rect x="30" y="726" width="1340" height="234" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="748.84" font-size="19" fill="#475569" font-weight="700">四、脱靶效应与优化：精准度与安全性步步推进</text>
+  <text x="56" y="754" font-size="11.5" fill="#475569">脱靶根源：sgRNA 与非靶位点的部分互补（尤其种子区错配耐受）+ Cas9 停留时间决定脱靶概率</text>
+  <rect x="56" y="774" width="640" height="52" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="72" y="796" font-size="12.5" fill="#1e293b" font-weight="700">高保真变体</text>
+  <text x="72" y="814" font-size="11" fill="#475569">eSpCas9(1.0) · SpCas9-HF1（消除非特异性 DNA 接触）· HiFi Cas9</text>
+  <rect x="716" y="774" width="640" height="52" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="732" y="796" font-size="12.5" fill="#1e293b" font-weight="700">二聚与截短</text>
+  <text x="732" y="814" font-size="11" fill="#475569">dCas9-FokI（需二聚体提高特异性）· 截短引导链 tru-gRNA（17–18 nt）</text>
+  <rect x="56" y="836" width="640" height="52" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="72" y="858" font-size="12.5" fill="#1e293b" font-weight="700">递送时程控制</text>
+  <text x="72" y="876" font-size="11" fill="#475569">RNP（核糖核蛋白）直接递送——瞬时活性、快速降解</text>
+  <rect x="716" y="836" width="640" height="52" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="732" y="858" font-size="12.5" fill="#1e293b" font-weight="700">全基因组脱靶检测</text>
+  <text x="732" y="876" font-size="11" fill="#475569">GUIDE-seq · CIRCLE-seq · Digenome-seq（体内 / 体外系统评估）</text>
+  <rect x="56" y="906" width="1288" height="40" rx="10" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="700" y="931" font-size="13" fill="#075985" text-anchor="middle" font-weight="600">技术栈演化主线：核酸酶 → 碱基编辑 → 先导编辑——「从制造断裂到不制造断裂、从依赖修复到自携修复模板」</text>
+</svg>

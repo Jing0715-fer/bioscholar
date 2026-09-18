@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">高通量测序与基因组注释</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">NGS 共性框架（文库 → 簇扩增 → 边合成边测序）——de Bruijn 图装配 · N50 / BUSCO 评估 · 五步注释流水线</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、NGS 共性框架：文库 → 簇扩增 → 边合成边测序 → 数据分析</text>
+  <rect x="52" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="152" y="200" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">① DNA 打断</text>
+  <text x="152" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">样品基因组 DNA 片段化</text>
+  <line x1="255" y1="236" x2="274" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="277" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="377" y="200" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">② 末端修复 + 加 A</text>
+  <text x="377" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">平端化并加 A 突出</text>
+  <line x1="480" y1="236" x2="499" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="502" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="602" y="200" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ 连接接头</text>
+  <text x="602" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">P5 / P7 · 索引 · 结合序列</text>
+  <line x1="705" y1="236" x2="724" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="727" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="827" y="200" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">④ 桥式 PCR 簇扩增</text>
+  <text x="827" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">玻片表面克隆化成簇</text>
+  <line x1="930" y1="236" x2="949" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="952" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1052" y="200" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">⑤ 边合成边测序</text>
+  <text x="1052" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">双端测序 2×150 bp</text>
+  <line x1="1155" y1="236" x2="1174" y2="236" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1177" y="176" width="200" height="118" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1277" y="200" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">⑥ 数据分析</text>
+  <text x="1277" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">回贴 · 定量 / 装配</text>
+  <path d="M74,238L74.0,238.0L76.0,235.7L78.0,233.7L80.0,232.0L82.0,230.7L84.0,230.1L86.0,230.1L88.0,230.7L90.0,232.0L92.0,233.7L94.0,235.7L96.0,238.0L98.0,240.3L100.0,242.3L102.0,244.0L104.0,245.3L106.0,245.9L108.0,245.9L110.0,245.3L112.0,244.0L114.0,242.3L116.0,240.3L118.0,238.0L120.0,235.7L122.0,233.7L124.0,232.0L126.0,230.7L128.0,230.1L130.0,230.1L132.0,230.7L134.0,232.0L136.0,233.7L138.0,235.7L140.0,238.0L142.0,240.3L144.0,242.3L146.0,244.0L148.0,245.3L150.0,245.9L152.0,245.9L154.0,245.3L156.0,244.0L158.0,242.3L160.0,240.3L162.0,238.0L164.0,235.7L166.0,233.7L168.0,232.0L170.0,230.7L172.0,230.1L174.0,230.1L176.0,230.7L178.0,232.0L180.0,233.7L182.0,235.7L184.0,238.0L186.0,240.3L188.0,242.3L190.0,244.0L192.0,245.3L194.0,245.9L196.0,245.9L198.0,245.3L200.0,244.0L202.0,242.3L204.0,240.3L206.0,238.0L208.0,235.7L210.0,233.7L212.0,232.0L214.0,230.7L216.0,230.1L218.0,230.1L220.0,230.7L222.0,232.0L224.0,233.7L226.0,235.7L228.0,238.0L230.0,240.3" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M74,238L74.0,238.0L76.0,240.3L78.0,242.3L80.0,244.0L82.0,245.3L84.0,245.9L86.0,245.9L88.0,245.3L90.0,244.0L92.0,242.3L94.0,240.3L96.0,238.0L98.0,235.7L100.0,233.7L102.0,232.0L104.0,230.7L106.0,230.1L108.0,230.1L110.0,230.7L112.0,232.0L114.0,233.7L116.0,235.7L118.0,238.0L120.0,240.3L122.0,242.3L124.0,244.0L126.0,245.3L128.0,245.9L130.0,245.9L132.0,245.3L134.0,244.0L136.0,242.3L138.0,240.3L140.0,238.0L142.0,235.7L144.0,233.7L146.0,232.0L148.0,230.7L150.0,230.1L152.0,230.1L154.0,230.7L156.0,232.0L158.0,233.7L160.0,235.7L162.0,238.0L164.0,240.3L166.0,242.3L168.0,244.0L170.0,245.3L172.0,245.9L174.0,245.9L176.0,245.3L178.0,244.0L180.0,242.3L182.0,240.3L184.0,238.0L186.0,235.7L188.0,233.7L190.0,232.0L192.0,230.7L194.0,230.1L196.0,230.1L198.0,230.7L200.0,232.0L202.0,233.7L204.0,235.7L206.0,238.0L208.0,240.3L210.0,242.3L212.0,244.0L214.0,245.3L216.0,245.9L218.0,245.9L220.0,245.3L222.0,244.0L224.0,242.3L226.0,240.3L228.0,238.0L230.0,235.7" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="85" y1="230" x2="85" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="107" y1="246" x2="107" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="129" y1="230" x2="129" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="151" y1="246" x2="151" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="173" y1="230" x2="173" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="195" y1="246" x2="195" y2="230" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="217" y1="230" x2="217" y2="246" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="132" y1="218" x2="132" y2="260" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <line x1="178" y1="218" x2="178" y2="260" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <rect x="317" y="234" width="120" height="14" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="309" y="226" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <text x="445" y="226" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <text x="377" y="220" font-size="10" fill="#64748b" text-anchor="middle">加 A 突出端</text>
+  <rect x="566" y="236" width="72" height="14" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="546" y="236" width="18" height="14" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <rect x="640" y="236" width="18" height="14" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="555" y="220" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">P5</text>
+  <text x="649" y="220" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">P7</text>
+  <text x="602" y="220" font-size="9.5" fill="#64748b" text-anchor="middle">索引条码</text>
+  <rect x="594" y="238" width="6" height="10" fill="#d97706"/>
+  <rect x="604" y="238" width="6" height="10" fill="#059669"/>
+  <rect x="757" y="212" width="140" height="66" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="757" y1="245" x2="897" y2="245" stroke="#0369a1" stroke-width="1" opacity="0.5"/>
+  <circle cx="769" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="782" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="795" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="808" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="821" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="834" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="847" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="860" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="873" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="886" cy="223" r="3.4" fill="#075985"/>
+  <circle cx="775" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="788" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="801" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="814" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="827" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="840" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="853" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="866" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="879" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="892" cy="245" r="3.4" fill="#075985"/>
+  <circle cx="769" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="782" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="795" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="808" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="821" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="834" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="847" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="860" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="873" cy="267" r="3.4" fill="#075985"/>
+  <circle cx="886" cy="267" r="3.4" fill="#075985"/>
+  <rect x="998" y="232" width="12" height="12" rx="2" fill="#0f766e"/>
+  <rect x="1012" y="232" width="12" height="12" rx="2" fill="#b45309"/>
+  <rect x="1026" y="232" width="12" height="12" rx="2" fill="#6d28d9"/>
+  <rect x="1040" y="232" width="12" height="12" rx="2" fill="#be185d"/>
+  <rect x="1054" y="232" width="12" height="12" rx="2" fill="#059669"/>
+  <rect x="1068" y="232" width="12" height="12" rx="2" fill="#0369a1"/>
+  <rect x="1082" y="232" width="12" height="12" rx="2" fill="#0f766e"/>
+  <rect x="1096" y="232" width="12" height="12" rx="2" fill="#b45309"/>
+  <path d="M1044,206 a16,16 0 1 1 -16,-16" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="1076" y="218" font-size="9.5" fill="#64748b" text-anchor="middle">循环</text>
+  <text x="1052" y="262" font-size="9.5" fill="#64748b" text-anchor="middle">模板 · 荧光 dNTP</text>
+  <rect x="1211" y="212" width="132" height="66" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="1223" y="220" width="96" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <rect x="1223" y="228" width="72" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <rect x="1223" y="236" width="110" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <rect x="1223" y="244" width="60" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <rect x="1223" y="252" width="88" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <rect x="1223" y="260" width="100" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <rect x="1223" y="268" width="54" height="5" rx="2" fill="#0369a1" opacity="0.75"/>
+  <text x="52" y="326" font-size="12" fill="#475569">应用形态：WGS 重测序 · WES（探针捕获约 45 Mb 外显子，性价比高，临床遗传病筛查主力）· 靶向 panel · 转录组 · 甲基化组 · 宏基因组</text>
+  <text x="52" y="356" font-size="12" fill="#64748b">索引条码（multiplexing）：数十至数百样品同槽混合测序</text>
+  <text x="52" y="386" font-size="12" fill="#64748b">第二代测序共享「文库 → 扩增 → 边合成边测序 → 数据分析」流程，实现细节各异（详见第 9 章）</text>
+  <rect x="30" y="452" width="660" height="508" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">二、基因组装配：de Bruijn 图与质量评估</text>
+  <text x="56" y="500" font-size="13.5" fill="#1e293b" font-weight="700">de Bruijn 图：读段 → k-mer → 图路径</text>
+  <rect x="56" y="516" width="110" height="11" rx="3" fill="#0f766e" opacity="0.75"/>
+  <rect x="214" y="516" width="30" height="11" rx="3" fill="#0f766e" opacity="0.45"/>
+  <rect x="248" y="516" width="30" height="11" rx="3" fill="#0f766e" opacity="0.45"/>
+  <rect x="282" y="516" width="30" height="11" rx="3" fill="#0f766e" opacity="0.45"/>
+  <rect x="56" y="540" width="110" height="11" rx="3" fill="#0369a1" opacity="0.75"/>
+  <rect x="214" y="540" width="30" height="11" rx="3" fill="#0369a1" opacity="0.45"/>
+  <rect x="248" y="540" width="30" height="11" rx="3" fill="#0369a1" opacity="0.45"/>
+  <rect x="282" y="540" width="30" height="11" rx="3" fill="#0369a1" opacity="0.45"/>
+  <rect x="56" y="564" width="110" height="11" rx="3" fill="#b45309" opacity="0.75"/>
+  <rect x="214" y="564" width="30" height="11" rx="3" fill="#b45309" opacity="0.45"/>
+  <rect x="248" y="564" width="30" height="11" rx="3" fill="#b45309" opacity="0.45"/>
+  <rect x="282" y="564" width="30" height="11" rx="3" fill="#b45309" opacity="0.45"/>
+  <rect x="56" y="588" width="110" height="11" rx="3" fill="#6d28d9" opacity="0.75"/>
+  <rect x="214" y="588" width="30" height="11" rx="3" fill="#6d28d9" opacity="0.45"/>
+  <rect x="248" y="588" width="30" height="11" rx="3" fill="#6d28d9" opacity="0.45"/>
+  <rect x="282" y="588" width="30" height="11" rx="3" fill="#6d28d9" opacity="0.45"/>
+  <text x="111" y="626" font-size="10.5" fill="#64748b" text-anchor="middle">读段</text>
+  <text x="263" y="626" font-size="10.5" fill="#64748b" text-anchor="middle">k-mer 打碎</text>
+  <line x1="172" y1="560" x2="200" y2="560" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="336" y1="560" x2="364" y2="560" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="406" y1="546" x2="444" y2="569" stroke="#0f766e" stroke-width="4"/>
+  <line x1="466" y1="569" x2="504" y2="534" stroke="#0f766e" stroke-width="4"/>
+  <line x1="466" y1="581" x2="564" y2="567" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="496" y1="567" x2="564" y2="563" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="524" y1="534" x2="624" y2="541" stroke="#0f766e" stroke-width="4"/>
+  <line x1="526" y1="540" x2="563" y2="563" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="586" y1="563" x2="624" y2="544" stroke="#94a3b8" stroke-width="1.6"/>
+  <circle cx="395" cy="540" r="11" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="455" cy="575" r="11" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="515" cy="528" r="11" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="575" cy="570" r="11" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="635" cy="535" r="11" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="515" y="618" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">加粗路径＝contig（拼接序列）</text>
+  <text x="515" y="636" font-size="10" fill="#64748b" text-anchor="middle">节点＝k-1 重叠；分叉＝重复 / 杂合</text>
+  <text x="56" y="700" font-size="13.5" fill="#1e293b" font-weight="700">N50：装配质量尺</text>
+  <rect x="463.45" y="694.65" width="193.1" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="707.96" font-size="11" fill="#059669" text-anchor="middle">BUSCO：单拷贝直系同源基因完整度</text>
+  <rect x="56" y="724" width="176" height="20" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="236" y="724" width="116" height="20" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <text x="294" y="738" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">N50</text>
+  <rect x="356" y="724" width="86" height="20" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="446" y="724" width="66" height="20" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="516" y="724" width="46" height="20" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="566" y="724" width="32" height="20" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="602" y="724" width="20" height="20" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="341" y1="716" x2="341" y2="772" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="341" y="790" font-size="10.5" fill="#475569" text-anchor="middle">总长的 50%</text>
+  <text x="56" y="778" font-size="11" fill="#64748b">将 contig 按长度累加至基因组一半时的 contig 长度</text>
+  <text x="56" y="826" font-size="13.5" fill="#1e293b" font-weight="700">长读长 + Hi-C 辅助：跨越重复</text>
+  <rect x="320" y="850" width="20" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <rect x="344" y="850" width="20" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <rect x="368" y="850" width="20" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <rect x="392" y="850" width="20" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <rect x="416" y="850" width="20" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <rect x="440" y="850" width="20" height="10" fill="#fef3c7" stroke="#b45309" stroke-width="1"/>
+  <text x="388" y="842" font-size="10.5" fill="#78350f" text-anchor="middle">重复区</text>
+  <rect x="70" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="104" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="138" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="172" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="206" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="240" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="274" y="852" width="24" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="470" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="500" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="530" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="560" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="590" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="620" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <rect x="650" y="852" width="22" height="9" rx="2" fill="#0369a1" opacity="0.7"/>
+  <text x="70" y="884" font-size="10.5" fill="#64748b">短读长：重复区内无法比对</text>
+  <rect x="70" y="908" width="590" height="10" rx="3" fill="#0f766e" opacity="0.85"/>
+  <rect x="320" y="906" width="20" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <rect x="344" y="906" width="20" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <rect x="368" y="906" width="20" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <rect x="392" y="906" width="20" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <rect x="416" y="906" width="20" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <rect x="440" y="906" width="20" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <text x="70" y="936" font-size="11.5" fill="#134e4a" font-weight="700">长读长（PacBio HiFi · ONT）+ Hi-C → 染色体级乃至端到端装配</text>
+  <rect x="710" y="452" width="660" height="508" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">三、基因组注释：赋予序列生物学意义的五步流水线</text>
+  <rect x="726" y="500" width="628" height="46" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="742" y="526" font-size="13" fill="#1e293b" font-weight="700">① 重复序列屏蔽</text>
+  <text x="742" y="548" font-size="11" fill="#475569">RepeatMasker 屏蔽重复，避免假基因预测</text>
+  <rect x="726" y="556" width="628" height="96" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="742" y="582" font-size="13" fill="#1e293b" font-weight="700">② 基因预测</text>
+  <text x="742" y="604" font-size="11" fill="#475569">原核：扫描 ORF（起止密码子 + RBS）+ 同源比对</text>
+  <text x="742" y="621" font-size="11" fill="#475569">真核：ab initio 隐马尔可夫模型（GENSCAN / AUGUSTUS 捕捉剪接位点与编码区统计特征）+ RNA-seq / 同源证据融合</text>
+  <text x="742" y="638" font-size="11" fill="#475569">（MAKER）</text>
+  <rect x="726" y="662" width="628" height="46" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="742" y="688" font-size="13" fill="#1e293b" font-weight="700">③ 非编码 RNA 注释</text>
+  <text x="742" y="710" font-size="11" fill="#475569">tRNAscan-SE 等注释 tRNA / rRNA / 其他 ncRNA</text>
+  <rect x="726" y="718" width="628" height="64" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="742" y="744" font-size="13" fill="#1e293b" font-weight="700">④ 功能注释</text>
+  <text x="742" y="766" font-size="11" fill="#475569">GO 三轴（分子功能 · 生物过程 · 细胞组分）· Pfam / InterPro 结构域 · KEGG 通路 · COG 直系同源簇传递功能</text>
+  <rect x="726" y="792" width="628" height="46" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="742" y="818" font-size="13" fill="#1e293b" font-weight="700">⑤ 人工策展与证据分级</text>
+  <text x="742" y="840" font-size="11" fill="#475569">RefSeq · UniProt 数据库</text>
+  <line x1="1040" y1="546" x2="1040" y2="556" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1040" y1="652" x2="1040" y2="662" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1040" y1="708" x2="1040" y2="718" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1040" y1="782" x2="1040" y2="792" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="726" y="852" width="306" height="92" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.4"/>
+  <text x="742" y="876" font-size="12.5" fill="#78350f" font-weight="700">警示一：基因数 ≪ 蛋白数</text>
+  <text x="742" y="900" font-size="11" fill="#475569">选择性剪接 · RNA 编辑与翻译后修饰大幅扩展蛋白多样性</text>
+  <rect x="1046" y="852" width="308" height="92" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1062" y="876" font-size="12.5" fill="#78350f" font-weight="700">警示二：序列 ≠ 功能</text>
+  <text x="1062" y="900" font-size="11" fill="#475569">大量基因的功能仍为推测——注释是持续更新的假设</text>
+</svg>
