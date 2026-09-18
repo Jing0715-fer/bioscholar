@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质语言模型与蛋白质设计：掩码预训练、结构搜索与设计闭环</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">掩码补全预训练于数亿序列；ESM 百亿参数、注意力浮现接触；foldseek 结构转字母；AF3 扩散预测复合物；闭环获 2024 诺奖</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、蛋白质语言模型：掩码残基补全的自监督预训练</text>
+  <rect x="60" y="198" width="40" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="80" y="225" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">M</text>
+  <rect x="102" y="198" width="40" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="122" y="225" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">K</text>
+  <rect x="144" y="198" width="40" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="164" y="225" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">T</text>
+  <rect x="186" y="198" width="40" height="44" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="206" y="225" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">?</text>
+  <rect x="228" y="198" width="40" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="248" y="225" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">L</text>
+  <rect x="270" y="198" width="40" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="290" y="225" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">A</text>
+  <rect x="312" y="198" width="40" height="44" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="332" y="225" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">?</text>
+  <text x="160" y="272" font-size="10.5" fill="#64748b" text-anchor="middle">输入：部分残基被掩码</text>
+  <text x="108" y="304" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">注意力图</text>
+  <rect x="60" y="320" width="16" height="16" fill="#6d28d9" fill-opacity="0.26285714285714284"/>
+  <rect x="60" y="336" width="16" height="16" fill="#6d28d9" fill-opacity="0.47714285714285715"/>
+  <rect x="60" y="352" width="16" height="16" fill="#6d28d9" fill-opacity="0.6914285714285714"/>
+  <rect x="60" y="368" width="16" height="16" fill="#6d28d9" fill-opacity="0.26285714285714284"/>
+  <rect x="60" y="384" width="16" height="16" fill="#6d28d9" fill-opacity="0.47714285714285715"/>
+  <rect x="60" y="400" width="16" height="16" fill="#6d28d9" fill-opacity="0.6914285714285714"/>
+  <rect x="76" y="320" width="16" height="16" fill="#6d28d9" fill-opacity="0.62"/>
+  <rect x="76" y="336" width="16" height="16" fill="#6d28d9" fill-opacity="0.19142857142857142"/>
+  <rect x="76" y="352" width="16" height="16" fill="#6d28d9" fill-opacity="0.4057142857142857"/>
+  <rect x="76" y="368" width="16" height="16" fill="#6d28d9" fill-opacity="0.62"/>
+  <rect x="76" y="384" width="16" height="16" fill="#6d28d9" fill-opacity="0.19142857142857142"/>
+  <rect x="76" y="400" width="16" height="16" fill="#6d28d9" fill-opacity="0.4057142857142857"/>
+  <rect x="92" y="320" width="16" height="16" fill="#6d28d9" fill-opacity="0.3342857142857143"/>
+  <rect x="92" y="336" width="16" height="16" fill="#6d28d9" fill-opacity="0.5485714285714285"/>
+  <rect x="92" y="352" width="16" height="16" fill="#6d28d9" fill-opacity="0.12"/>
+  <rect x="92" y="368" width="16" height="16" fill="#6d28d9" fill-opacity="0.3342857142857143"/>
+  <rect x="92" y="384" width="16" height="16" fill="#6d28d9" fill-opacity="0.5485714285714285"/>
+  <rect x="92" y="400" width="16" height="16" fill="#6d28d9" fill-opacity="0.12"/>
+  <rect x="108" y="320" width="16" height="16" fill="#6d28d9" fill-opacity="0.6914285714285714"/>
+  <rect x="108" y="336" width="16" height="16" fill="#6d28d9" fill-opacity="0.26285714285714284"/>
+  <rect x="108" y="352" width="16" height="16" fill="#6d28d9" fill-opacity="0.47714285714285715"/>
+  <rect x="108" y="368" width="16" height="16" fill="#6d28d9" fill-opacity="0.6914285714285714"/>
+  <rect x="108" y="384" width="16" height="16" fill="#6d28d9" fill-opacity="0.26285714285714284"/>
+  <rect x="108" y="400" width="16" height="16" fill="#6d28d9" fill-opacity="0.47714285714285715"/>
+  <rect x="124" y="320" width="16" height="16" fill="#6d28d9" fill-opacity="0.4057142857142857"/>
+  <rect x="124" y="336" width="16" height="16" fill="#6d28d9" fill-opacity="0.62"/>
+  <rect x="124" y="352" width="16" height="16" fill="#6d28d9" fill-opacity="0.19142857142857142"/>
+  <rect x="124" y="368" width="16" height="16" fill="#6d28d9" fill-opacity="0.4057142857142857"/>
+  <rect x="124" y="384" width="16" height="16" fill="#6d28d9" fill-opacity="0.62"/>
+  <rect x="124" y="400" width="16" height="16" fill="#6d28d9" fill-opacity="0.19142857142857142"/>
+  <rect x="140" y="320" width="16" height="16" fill="#6d28d9" fill-opacity="0.12"/>
+  <rect x="140" y="336" width="16" height="16" fill="#6d28d9" fill-opacity="0.3342857142857143"/>
+  <rect x="140" y="352" width="16" height="16" fill="#6d28d9" fill-opacity="0.5485714285714285"/>
+  <rect x="140" y="368" width="16" height="16" fill="#6d28d9" fill-opacity="0.12"/>
+  <rect x="140" y="384" width="16" height="16" fill="#6d28d9" fill-opacity="0.3342857142857143"/>
+  <rect x="140" y="400" width="16" height="16" fill="#6d28d9" fill-opacity="0.5485714285714285"/>
+  <line x1="162" y1="368" x2="214" y2="368" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="268" y="304" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">接触图</text>
+  <rect x="220" y="320" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="220" y="336" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="220" y="352" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="220" y="368" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="220" y="384" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="220" y="400" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="236" y="320" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="236" y="336" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="236" y="352" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="236" y="368" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="236" y="384" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="236" y="400" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="252" y="320" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="252" y="336" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="252" y="352" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="252" y="368" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="252" y="384" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="252" y="400" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="268" y="320" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="268" y="336" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="268" y="352" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="268" y="368" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="268" y="384" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="268" y="400" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="284" y="320" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="284" y="336" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="284" y="352" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="284" y="368" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="284" y="384" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="284" y="400" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="300" y="320" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="300" y="336" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="300" y="352" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="300" y="368" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="300" y="384" width="16" height="16" fill="#ffffff" fill-opacity="1" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="300" y="400" width="16" height="16" fill="#be185d" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="400" y="200" font-size="11" fill="#475569">在数亿条自然序列上预训练：</text>
+  <text x="400" y="215" font-size="11" fill="#475569">掩码残基补全的自监督目标，</text>
+  <text x="400" y="230" font-size="11" fill="#475569">让结构与功能约束以语言规律的形式被隐式编码。</text>
+  <text x="400" y="268" font-size="11" fill="#475569">ESM 家族参数量至百亿量级；</text>
+  <text x="400" y="283" font-size="11" fill="#475569">注意力图自发浮现残基接触。</text>
+  <text x="400" y="324" font-size="11" fill="#475569">ESMFold 以单序列直出结构；</text>
+  <text x="400" y="339" font-size="11" fill="#475569">ProtTrans 嵌入加轻量分类头，成注释标配。</text>
+  <text x="400" y="380" font-size="11" fill="#475569">序列即语言：残基 = 字符，进化约束 = 语法。</text>
+  <text x="60" y="448" font-size="11" fill="#475569">注意力头无需结构监督，</text>
+  <text x="60" y="463" font-size="11" fill="#475569">就学会「哪些残基在空间上靠近」——接触图可从注意力图直接读出。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、结构搜索与复合物预测：foldseek 与 AlphaFold3</text>
+  <text x="740" y="196" font-size="12.5" fill="#1e293b" font-weight="700">结构 → 字母序列</text>
+  <path d="M760,250 C766.7,246.3 786.7,225.0 800,228 C813.3,231.0 826.7,266.7 840,268 C853.3,269.3 868.3,233.7 880,236 C891.7,238.3 898.3,279.3 910,282 C921.7,284.7 938.3,249.7 950,252 C961.7,254.3 975.0,288.7 980,296" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <line x1="860" y1="306" x2="860" y2="318" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <text x="745" y="336" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <text x="783" y="336" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">B</text>
+  <text x="821" y="336" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">C</text>
+  <text x="859" y="336" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <text x="897" y="336" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">D</text>
+  <text x="935" y="336" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">B</text>
+  <text x="740" y="366" font-size="11" fill="#475569">foldseek：把结构线性化为字母序列，</text>
+  <text x="740" y="381" font-size="11" fill="#475569">即可用文本搜索引擎做全库结构搜索——远缘功能注释的第二通道。</text>
+  <text x="1120" y="196" font-size="12.5" fill="#1e293b" font-weight="700">AlphaFold3：扩散模型</text>
+  <ellipse cx="1195" cy="285" rx="58" ry="45" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1195" y="290" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白</text>
+  <circle cx="1285" cy="252" r="18" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1285" y="256" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">配体</text>
+  <path d="M1130,355L1130.0,355.0L1132.0,352.2L1134.0,349.6L1136.0,347.4L1138.0,345.9L1140.0,345.1L1142.0,345.1L1144.0,345.9L1146.0,347.4L1148.0,349.6L1150.0,352.2L1152.0,355.0L1154.0,357.8L1156.0,360.4L1158.0,362.6L1160.0,364.1L1162.0,364.9L1164.0,364.9L1166.0,364.1L1168.0,362.6L1170.0,360.4L1172.0,357.8L1174.0,355.0L1176.0,352.2L1178.0,349.6L1180.0,347.4L1182.0,345.9L1184.0,345.1L1186.0,345.1L1188.0,345.9L1190.0,347.4L1192.0,349.6L1194.0,352.2L1196.0,355.0L1198.0,357.8L1200.0,360.4L1202.0,362.6L1204.0,364.1L1206.0,364.9L1208.0,364.9L1210.0,364.1L1212.0,362.6L1214.0,360.4L1216.0,357.8L1218.0,355.0L1220.0,352.2L1222.0,349.6L1224.0,347.4L1226.0,345.9L1228.0,345.1L1230.0,345.1L1232.0,345.9L1234.0,347.4L1236.0,349.6L1238.0,352.2L1240.0,355.0L1242.0,357.8L1244.0,360.4L1246.0,362.6L1248.0,364.1L1250.0,364.9L1252.0,364.9L1254.0,364.1L1256.0,362.6L1258.0,360.4L1260.0,357.8" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <path d="M1130,355L1130.0,355.0L1132.0,357.8L1134.0,360.4L1136.0,362.6L1138.0,364.1L1140.0,364.9L1142.0,364.9L1144.0,364.1L1146.0,362.6L1148.0,360.4L1150.0,357.8L1152.0,355.0L1154.0,352.2L1156.0,349.6L1158.0,347.4L1160.0,345.9L1162.0,345.1L1164.0,345.1L1166.0,345.9L1168.0,347.4L1170.0,349.6L1172.0,352.2L1174.0,355.0L1176.0,357.8L1178.0,360.4L1180.0,362.6L1182.0,364.1L1184.0,364.9L1186.0,364.9L1188.0,364.1L1190.0,362.6L1192.0,360.4L1194.0,357.8L1196.0,355.0L1198.0,352.2L1200.0,349.6L1202.0,347.4L1204.0,345.9L1206.0,345.1L1208.0,345.1L1210.0,345.9L1212.0,347.4L1214.0,349.6L1216.0,352.2L1218.0,355.0L1220.0,357.8L1222.0,360.4L1224.0,362.6L1226.0,364.1L1228.0,364.9L1230.0,364.9L1232.0,364.1L1234.0,362.6L1236.0,360.4L1238.0,357.8L1240.0,355.0L1242.0,352.2L1244.0,349.6L1246.0,347.4L1248.0,345.9L1250.0,345.1L1252.0,345.1L1254.0,345.9L1256.0,347.4L1258.0,349.6L1260.0,352.2" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1141" y1="345" x2="1141" y2="365" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1163" y1="365" x2="1163" y2="345" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1185" y1="345" x2="1185" y2="365" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1207" y1="365" x2="1207" y2="345" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1229" y1="345" x2="1229" y2="365" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1251" y1="365" x2="1251" y2="345" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="1195" y="392" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">核酸</text>
+  <text x="1120" y="425" font-size="11" fill="#475569">扩散模型把预测对象扩展到蛋白–配体、</text>
+  <text x="1120" y="440" font-size="11" fill="#475569">核酸等复合物：结构预测与互作预测合流。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、从头设计与定向进化：闭环的两半</text>
+  <rect x="80" y="630" width="200" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="180" y="652" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">机器生成</text>
+  <text x="180" y="674" font-size="10.5" fill="#475569" text-anchor="middle">AI 设计 / 逆折叠</text>
+  <rect x="80" y="790" width="200" height="56" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="180" y="812" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">湿实验筛选</text>
+  <text x="180" y="834" font-size="10.5" fill="#475569" text-anchor="middle">表达 · 结构 · 功能</text>
+  <rect x="400" y="710" width="200" height="56" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="500" y="732" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">数据回流</text>
+  <text x="500" y="754" font-size="10.5" fill="#475569" text-anchor="middle">成败都进训练集</text>
+  <line x1="180" y1="688" x2="180" y2="786" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="284" y1="812" x2="396" y2="748" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="396" y1="726" x2="284" y2="672" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <rect x="437.5224" y="636.65" width="124.9552" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="500" y="649.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">2024 · 诺贝尔化学奖</text>
+  <text x="60" y="880" font-size="11" fill="#475569">定向进化与从头设计缝合成「机器生成、湿实验筛选、数据回流」的闭环；2024 年诺贝尔化学奖把 Baker（设计）</text>
+  <text x="60" y="895" font-size="11" fill="#475569">与 Hassabis、Jumper（预测）并列授奖——正是这一闭环的文化加冕。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、生成序列的四关：验证义务随能力水涨船高</text>
+  <text x="740" y="660" font-size="11.5" fill="#1e293b" font-weight="700">AI 生成的候选序列 →</text>
+  <rect x="740" y="680" width="132" height="64" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="806" y="706" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">① 表达关</text>
+  <text x="806" y="728" font-size="10.5" fill="#475569" text-anchor="middle">可表达 / 可纯化</text>
+  <rect x="896" y="680" width="132" height="64" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="962" y="706" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">② 结构关</text>
+  <text x="962" y="728" font-size="10.5" fill="#475569" text-anchor="middle">折叠符合设计</text>
+  <rect x="1052" y="680" width="132" height="64" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1118" y="706" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ 功能关</text>
+  <text x="1118" y="728" font-size="10.5" fill="#475569" text-anchor="middle">活性符合设计</text>
+  <rect x="1208" y="680" width="132" height="64" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="1274" y="706" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">④ 体内关</text>
+  <text x="1274" y="728" font-size="10.5" fill="#475569" text-anchor="middle">安全 · 药代</text>
+  <line x1="874" y1="712" x2="892" y2="712" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="1030" y1="712" x2="1048" y2="712" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="1186" y1="712" x2="1204" y2="712" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="740" y="778" font-size="11.5" fill="#1e293b" font-weight="700">漏斗：候选序列逐关淘汰</text>
+  <polygon points="770,800 1310,800 1266,824 814,824" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <polygon points="818,828 1262,828 1218,852 862,852" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <polygon points="866,856 1214,856 1170,880 910,880" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <polygon points="914,884 1162,884 1118,908 958,908" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1040" y="934" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">逐关淘汰 · AI 提速、实验把关</text>
+</svg>

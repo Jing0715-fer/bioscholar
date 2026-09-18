@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单细胞转录组：均值遮罩的解耦、UMI 去重与伪 bulk 检验</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">bulk 均值无法区分「细胞比例 20%→35%」与「该类型自身表达上调」，单细胞测序使二者解耦并照亮稀有细胞群；10x 液滴以细胞条形码凝胶珠封装细胞，UMI 给每条原始分子发身份证、同 UMI 去重只计一次，掉落使计数零膨胀；双联体与漏液是两类技术噪声；标准流水线为质控-归一化-高变基因-PCA-UMAP-图聚类-注释；拟时序度量轨迹拓扑次序，RNA 速度以未剪接比例补充方向；伪 bulk 把检验单位收回样本级——每组仍需三个以上供体</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、bulk 的平均遮罩：同一读数的两种真相</text>
+  <rect x="60" y="186" width="300" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="210" y="212" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">情形 A：细胞比例变化</text>
+  <text x="80" y="238" font-size="10.5" fill="#475569">类型 X 占 20%</text>
+  <circle cx="82" cy="254" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="95.4" cy="254" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="108.8" cy="254" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="122.2" cy="254" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="135.6" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="149" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="162.4" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="175.8" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="189.2" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="202.60000000000002" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="216" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="229.4" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="242.8" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="256.20000000000005" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="269.6" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="283" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="296.4" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="309.8" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="323.20000000000005" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="336.6" cy="254" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="80" y="292" font-size="10.5" fill="#475569">类型 X 占 35%</text>
+  <circle cx="82" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="95.4" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="108.8" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="122.2" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="135.6" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="149" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="162.4" cy="308" r="5.2" fill="#0f766e" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="175.8" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="189.2" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="202.60000000000002" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="216" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="229.4" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="242.8" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="256.20000000000005" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="269.6" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="283" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="296.4" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="309.8" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="323.20000000000005" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="336.6" cy="308" r="5.2" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="210" y="384" font-size="11" fill="#64748b" text-anchor="middle">比例涨了，细胞没变</text>
+  <rect x="360" y="186" width="300" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="510" y="212" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">情形 B：自身表达上调</text>
+  <circle cx="450" cy="292" r="34" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="570" cy="292" r="34" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="438" cy="280" r="3" fill="#0f766e"/>
+  <circle cx="462" cy="278" r="3" fill="#0f766e"/>
+  <circle cx="444" cy="300" r="3" fill="#0f766e"/>
+  <circle cx="458" cy="296" r="3" fill="#0f766e"/>
+  <circle cx="450" cy="312" r="3" fill="#0f766e"/>
+  <circle cx="552" cy="270" r="3" fill="#be185d"/>
+  <circle cx="578" cy="266" r="3" fill="#be185d"/>
+  <circle cx="548" cy="284" r="3" fill="#be185d"/>
+  <circle cx="586" cy="282" r="3" fill="#be185d"/>
+  <circle cx="560" cy="292" r="3" fill="#be185d"/>
+  <circle cx="576" cy="296" r="3" fill="#be185d"/>
+  <circle cx="552" cy="304" r="3" fill="#be185d"/>
+  <circle cx="568" cy="308" r="3" fill="#be185d"/>
+  <circle cx="584" cy="300" r="3" fill="#be185d"/>
+  <circle cx="562" cy="278" r="3" fill="#be185d"/>
+  <circle cx="578" cy="290" r="3" fill="#be185d"/>
+  <circle cx="590" cy="274" r="3" fill="#be185d"/>
+  <text x="450" y="346" font-size="11" fill="#475569" text-anchor="middle">状态 1</text>
+  <text x="570" y="346" font-size="11" fill="#475569" text-anchor="middle">状态 2</text>
+  <text x="510" y="384" font-size="11" fill="#64748b" text-anchor="middle">比例没变，每个细胞表达更多</text>
+  <rect x="190.96159999999998" y="427.8" width="278.07680000000005" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="330" y="442.32" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">bulk 读数：均值同样升高 —— 两种机制不可分辨</text>
+  <text x="60" y="484" font-size="11.5" fill="#475569">单细胞测序把「比例变化」与「自身表达变化」解耦，</text>
+  <text x="60" y="500" font-size="11.5" fill="#475569">并照亮稀有细胞群——稀有群刻画须预留数倍于其占比的细胞总量。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、液滴微流控与 UMI：给每条分子发身份证</text>
+  <text x="860" y="196" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">油包水液滴</text>
+  <circle cx="860" cy="285" r="78" fill="#e0f2fe" fill-opacity="0.3" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="828" cy="285" r="24" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="828" y="290" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">细胞</text>
+  <rect x="874" y="252" width="38" height="38" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="881" y1="262" x2="905" y2="262" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="881" y1="270" x2="905" y2="270" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="881" y1="278" x2="905" y2="278" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="893" y="306" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">凝胶珠</text>
+  <text x="860" y="378" font-size="10.5" fill="#475569" text-anchor="middle">细胞条形码在珠上</text>
+  <text x="1000" y="212" font-size="13" fill="#1e293b" font-weight="700">UMI：分子身份证</text>
+  <rect x="1000" y="234" width="48" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <rect x="1048" y="236" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1000" y="260" width="48" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <rect x="1048" y="262" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1000" y="286" width="48" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <rect x="1048" y="288" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1000" y="312" width="48" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <rect x="1048" y="314" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1176" y="250" font-size="10.5" fill="#831843" font-weight="700">← 同一 UMI</text>
+  <line x1="1070" y1="344" x2="1070" y2="366" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="1090" y="360" font-size="10.5" fill="#64748b" font-weight="700">PCR 后去重</text>
+  <rect x="1000" y="372" width="48" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <rect x="1048" y="374" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1000" y="398" width="48" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <rect x="1048" y="400" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1000" y="424" width="48" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <rect x="1048" y="426" width="116" height="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1176" y="404" font-size="10.5" fill="#475569" font-weight="700">← 各计一次</text>
+  <text x="1000" y="466" font-size="11" fill="#475569">同 UMI 的扩增副本只计一次；掉落（dropout）</text>
+  <text x="1000" y="481" font-size="11" fill="#475569">使计数呈零膨胀形态。</text>
+  <text x="1020" y="436" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">从技艺到日用品</text>
+  <line x1="740" y1="470" x2="1300" y2="470" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="768" cy="470" r="6.5" fill="#475569"/>
+  <line x1="768" y1="461" x2="768" y2="440" stroke="#475569" stroke-width="1.7"/>
+  <text x="768" y="420" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2009 · Tang 等</text>
+  <text x="768" y="400" font-size="12" fill="#64748b" text-anchor="middle">首例单细胞转录组</text>
+  <circle cx="1143.2" cy="470" r="6.5" fill="#dc2626"/>
+  <line x1="1143.2" y1="479" x2="1143.2" y2="500" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1143.2" y="520" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2015 · Drop-seq 与 10x</text>
+  <text x="1143.2" y="540" font-size="12" fill="#64748b" text-anchor="middle">一次实验数万细胞</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、两类技术噪声与标准分析流水线</text>
+  <rect x="60" y="624" width="200" height="64" rx="8" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="160" y="646" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">双联体</text>
+  <text x="74" y="666" font-size="10" fill="#475569">两细胞共滴成混合幻影；</text>
+  <text x="74" y="679" font-size="10" fill="#475569">人工双联体打分识别</text>
+  <rect x="280" y="624" width="200" height="64" rx="8" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="380" y="646" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">漏液</text>
+  <text x="294" y="666" font-size="10" fill="#475569">环境 RNA 污染；空液滴估计并扣除</text>
+  <rect x="500" y="624" width="200" height="64" rx="8" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="600" y="646" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">解离应激</text>
+  <text x="514" y="666" font-size="10" fill="#475569">应激基因须检查，防「应激群」假象</text>
+  <rect x="60" y="716" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="125" y="741" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">质控</text>
+  <rect x="200" y="716" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="265" y="741" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">归一化</text>
+  <rect x="340" y="716" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="405" y="741" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">高变基因</text>
+  <rect x="480" y="716" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="545" y="741" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">PCA</text>
+  <line x1="190" y1="736" x2="200" y2="736" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="330" y1="736" x2="340" y2="736" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="470" y1="736" x2="480" y2="736" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="545" y1="756" x2="545" y2="772" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="480" y="772" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="545" y="797" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">UMAP</text>
+  <rect x="340" y="772" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="405" y="797" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">图聚类</text>
+  <rect x="200" y="772" width="130" height="40" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="265" y="797" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">注释</text>
+  <line x1="480" y1="792" x2="470" y2="792" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="340" y1="792" x2="330" y2="792" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="60" y="846" font-size="11.5" fill="#475569">注释三路交叉：标志基因 · 参考映射 · 差异反查；聚类数依赖参数选择而非天然常数。</text>
+  <text x="60" y="890" font-size="11.5" fill="#475569">批次整合在欠校正与过校正之间权衡——过度校正会抹掉真实生物学差异。</text>
+  <text x="60" y="930" font-size="11.5" fill="#64748b">噪声先于生物学被处理：双联体打分、漏液扣除、应激检查是每张图谱的地基。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、拟时序、RNA 速度与伪 bulk 检验</text>
+  <circle cx="800" cy="845" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="860" cy="810" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="920" cy="780" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="980" cy="745" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="1040" cy="725" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="840" cy="795" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="900" cy="760" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="760" cy="862" r="5" fill="#0369a1" fill-opacity="0.5"/>
+  <circle cx="770" cy="850" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="790" cy="835" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="810" cy="822" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="830" cy="810" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="850" cy="800" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="870" cy="790" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="890" cy="778" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="910" cy="768" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="930" cy="758" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="950" cy="748" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="970" cy="738" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="990" cy="728" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="1010" cy="718" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <circle cx="1030" cy="710" r="5" fill="#0369a1" fill-opacity="0.75"/>
+  <path d="M770,850 C773.3,847.5 783.3,839.7 790,835 C796.7,830.3 803.3,826.2 810,822 C816.7,817.8 823.3,813.7 830,810 C836.7,806.3 843.3,803.3 850,800 C856.7,796.7 863.3,793.7 870,790 C876.7,786.3 883.3,781.7 890,778 C896.7,774.3 903.3,771.3 910,768 C916.7,764.7 923.3,761.3 930,758 C936.7,754.7 943.3,751.3 950,748 C956.7,744.7 963.3,741.3 970,738 C976.7,734.7 983.3,731.3 990,728 C996.7,724.7 1003.3,721.0 1010,718 C1016.7,715.0 1026.7,711.3 1030,710" fill="none" stroke="#be185d" stroke-width="3" marker-end="url(#arr-enz)"/>
+  <line x1="830" y1="810" x2="852" y2="797" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <line x1="900" y1="770" x2="922" y2="758" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <line x1="970" y1="740" x2="992" y2="728" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="770" y="892" font-size="11.5" fill="#831843" font-weight="700">拟时序：轨迹的拓扑次序（非钟表时间）</text>
+  <text x="770" y="916" font-size="11.5" fill="#78350f" font-weight="700">RNA 速度：以未剪接 / 剪接比例补充方向</text>
+  <text x="1140" y="626" font-size="13" fill="#1e293b" font-weight="700">伪 bulk：回到样本级检验</text>
+  <text x="1140" y="652" font-size="11" fill="#475569">细胞不是独立重复——按样本聚合回伪 bulk 再做检验，</text>
+  <text x="1140" y="667" font-size="11" fill="#475569">每组仍需 3 个以上供体。</text>
+  <text x="1140" y="736" font-size="11" fill="#475569">批次整合的权衡：欠校正留批次假象，</text>
+  <text x="1140" y="751" font-size="11" fill="#475569">过校正抹掉真实差异。</text>
+  <text x="740" y="952" font-size="11.5" fill="#64748b" font-weight="600">一图两读：点的次序是拟时序，</text>
+  <text x="740" y="969.25" font-size="11.5" fill="#64748b" font-weight="600">箭头的方向是 RNA 速度。</text>
+</svg>

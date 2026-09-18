@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">功能富集分析：超几何检验、GSEA 排序检验与解读陷阱</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">ORA 以超几何检验问「名单中某功能类别的占比是否显著超出背景期望」，背景集须与名单出自同一检测空间（第一守门规则）；GO 三分支以真路径规则相连，顶层必然富集、信息量在中层；GSEA 不设阈值，对全基因排序以富集分加标签置换检验，领先集揭示核心贡献成员；KEGG、Reactome 与 MSigDB 各有侧重——富集结果是假设发生器而非结论本身</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、ORA 与超几何检验：背景集是第一守门规则</text>
+  <rect x="70" y="190" width="400" height="232" rx="14" fill="#e0f2fe" fill-opacity="0.28" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="90" y="218" font-size="12.5" fill="#075985" font-weight="700">背景集：实际检测到的基因（共 N）</text>
+  <ellipse cx="190" cy="322" rx="100" ry="82" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="158" y="316" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">目标名单</text>
+  <text x="158" y="336" font-size="11" fill="#134e4a" text-anchor="middle">(n 个基因)</text>
+  <ellipse cx="340" cy="322" rx="100" ry="82" fill="#fef3c7" fill-opacity="0.6" stroke="#b45309" stroke-width="1.8"/>
+  <text x="372" y="316" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">通路基因集</text>
+  <text x="372" y="336" font-size="11" fill="#78350f" text-anchor="middle">(M 个)</text>
+  <text x="265" y="322" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">交叠 k</text>
+  <rect x="500" y="190" width="170" height="196" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="585" y="214" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">超几何检验</text>
+  <text x="512" y="238" font-size="10.5" fill="#475569">P(X ≥ k) ＝ Σ C(M, i)·C(N−M, n−i) ÷ C(N, n)</text>
+  <text x="512" y="253" font-size="10.5" fill="#475569">（i = k…n）</text>
+  <text x="512" y="302" font-size="10.5" fill="#64748b">问：名单中该类别的占比，</text>
+  <text x="512" y="317" font-size="10.5" fill="#64748b">是否显著超出背景期望？</text>
+  <text x="60" y="452" font-size="11.5" fill="#475569">背景集必须与名单出自同一检测空间——用「实际检测到的基因」而非「全基因组」作背景，是富集的第一守门规则。</text>
+  <text x="60" y="500" font-size="11.5" fill="#64748b">常见输入：一份带阈值的差异基因名单（如 padj &lt; 0.05 且 |log₂FC| &gt; 1）。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、GSEA：不设阈值的全基因排序检验</text>
+  <text x="1040" y="178" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">全基因排序（按与表型的关联程度）</text>
+  <rect x="740" y="190" width="600" height="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="740" y="190" width="60" height="26" fill="#dc2626" fill-opacity="0.85"/>
+  <rect x="800" y="190" width="60" height="26" fill="#dc2626" fill-opacity="0.6"/>
+  <rect x="860" y="190" width="60" height="26" fill="#dc2626" fill-opacity="0.35"/>
+  <rect x="920" y="190" width="55" height="26" fill="#f1f5f9"/>
+  <rect x="975" y="190" width="55" height="26" fill="#f1f5f9"/>
+  <rect x="1030" y="190" width="55" height="26" fill="#f1f5f9"/>
+  <rect x="1085" y="190" width="55" height="26" fill="#f1f5f9"/>
+  <rect x="1140" y="190" width="60" height="26" fill="#0369a1" fill-opacity="0.35"/>
+  <rect x="1200" y="190" width="60" height="26" fill="#0369a1" fill-opacity="0.6"/>
+  <rect x="1260" y="190" width="60" height="26" fill="#0369a1" fill-opacity="0.85"/>
+  <text x="740" y="246" font-size="10.5" fill="#dc2626" font-weight="700">上调端</text>
+  <text x="1340" y="246" font-size="10.5" fill="#0369a1" text-anchor="end" font-weight="700">下调端</text>
+  <line x1="760" y1="222" x2="760" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="785" y1="222" x2="785" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="800" y1="222" x2="800" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="822" y1="222" x2="822" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="848" y1="222" x2="848" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="873" y1="222" x2="873" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="905" y1="222" x2="905" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="940" y1="222" x2="940" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="990" y1="222" x2="990" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="1050" y1="222" x2="1050" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="1120" y1="222" x2="1120" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="1200" y1="222" x2="1200" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="1270" y1="222" x2="1270" y2="236" stroke="#be185d" stroke-width="2"/>
+  <line x1="1310" y1="222" x2="1310" y2="236" stroke="#be185d" stroke-width="2"/>
+  <text x="740" y="288" font-size="10.5" fill="#475569">基因集成员命中</text>
+  <rect x="740" y="320" width="600" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="432.5" x2="1340" y2="432.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="890" y1="470" x2="890" y2="320" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="395" x2="1340" y2="395" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1040" y1="470" x2="1040" y2="320" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="357.5" x2="1340" y2="357.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1190" y1="470" x2="1190" y2="320" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="470" x2="740" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="492" font-size="13" fill="#64748b" text-anchor="middle">排序前端</text>
+  <line x1="1340" y1="470" x2="1340" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="1340" y="492" font-size="13" fill="#64748b" text-anchor="middle">末端</text>
+  <line x1="734" y1="470" x2="740" y2="470" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="474" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="734" y1="320" x2="740" y2="320" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="324" font-size="13" fill="#64748b" text-anchor="end">ES</text>
+  <text x="694" y="395" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">运行和 ES</text>
+  <text x="1040" y="308" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">富集分曲线（示意）</text>
+  <path d="M740,467 C745.0,465.0 760.0,459.5 770,455 C780.0,450.5 791.0,446.3 800,440 C809.0,433.8 816.0,426.3 824,417.5 C832.0,408.8 840.0,396.8 848,387.5 C856.0,378.3 862.0,369.5 872,362 C882.0,354.5 895.0,347.5 908,342.5 C921.0,337.5 933.0,332.8 950,332 C967.0,331.3 985.0,332.5 1010,338 C1035.0,343.5 1070.0,354.3 1100,365 C1130.0,375.8 1160.0,390.0 1190,402.5 C1220.0,415.0 1255.0,430.0 1280,440 C1305.0,450.0 1330.0,458.8 1340,462.5" fill="none" stroke="#be185d" stroke-width="3"/>
+  <text x="950" y="294" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">领先集</text>
+  <line x1="950" y1="320" x2="950" y2="470" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="1090" y="336" font-size="10.5" fill="#831843" font-weight="600">ES ＝ 曲线偏离零线的最大值</text>
+  <text x="740" y="500" font-size="11.5" fill="#475569">GSEA 不设阈值：对全基因排序检验基因集成员的系统性偏移，以富集分（ES）加标签置换检验打分，</text>
+  <text x="740" y="516" font-size="11.5" fill="#475569">领先集揭示核心贡献成员。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、GO 本体：三分支与真路径规则</text>
+  <rect x="105.6392" y="625.8" width="88.7216" height="20.4" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="150" y="640.32" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">分子功能 MF</text>
+  <rect x="315.6392" y="625.8" width="88.7216" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="360" y="640.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">生物过程 BP</text>
+  <rect x="525.6392" y="625.8" width="88.7216" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="570" y="640.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">细胞组分 CC</text>
+  <rect x="260" y="680" width="200" height="36" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="360" y="703" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">顶层术语（宽泛）</text>
+  <rect x="260" y="740" width="200" height="36" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="360" y="763" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">中层术语（信息量高）</text>
+  <rect x="260" y="800" width="200" height="36" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="360" y="823" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">末端术语（特异 · 稀疏）</text>
+  <line x1="360" y1="740" x2="360" y2="718" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <line x1="360" y1="800" x2="360" y2="778" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <line x1="360" y1="650" x2="360" y2="680" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="470" y="700" font-size="11" fill="#64748b">← 顶层：必然富集（汇总使然）</text>
+  <text x="470" y="760" font-size="11" fill="#64748b">← 中层：信息量高，富集首选</text>
+  <text x="470" y="820" font-size="11" fill="#64748b">← 末端：特异但覆盖稀疏</text>
+  <text x="60" y="862" font-size="11.5" fill="#475569">GO 为有向无环图：真路径规则下，任一节点的注释沿边向上传播到其所有祖先——顶层术语必然富集，信息量在中层；</text>
+  <text x="60" y="878" font-size="11.5" fill="#475569">GO slim 是精简版本体，供全景报告。</text>
+  <text x="60" y="918" font-size="11.5" fill="#64748b">示例：注释到「过氧化物酶体」的基因，在其祖先「细胞器」与根术语「细胞组分」处同时可见——这正是真路径规则。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、通路数据库与解读陷阱</text>
+  <rect x="740" y="630" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="657.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">维度</text>
+  <rect x="860" y="630" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="657.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">ORA（超几何）</text>
+  <rect x="1100" y="630" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="657.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">GSEA</text>
+  <rect x="740" y="674" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="699.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输入</text>
+  <rect x="860" y="674" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="699.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">阈值基因名单</text>
+  <rect x="1100" y="674" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="699.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">全基因排序列表</text>
+  <rect x="740" y="714" width="600" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="714" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="739.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">统计核心</text>
+  <rect x="860" y="714" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="739.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">超几何检验</text>
+  <rect x="1100" y="714" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="739.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">富集分 ＋ 标签置换</text>
+  <rect x="740" y="754" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="779.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方向性</text>
+  <rect x="860" y="754" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="779.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">分上下调检验</text>
+  <rect x="1100" y="754" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="779.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">可做带方向的检验</text>
+  <rect x="809.8045" y="826.225" width="110.391" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="865" y="840.14" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="600">KEGG 手工通路图</text>
+  <rect x="1010.18495" y="826.225" width="119.63010000000001" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1070" y="840.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="600">Reactome 开放友好</text>
+  <rect x="1213.7521" y="826.225" width="108.4958" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1268" y="840.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="600">MSigDB 标准总库</text>
+  <text x="740" y="872" font-size="11.5" fill="#475569">KEGG 以手工通路图见长但须核对许可版本；Reactome 反应层级开放友好；</text>
+  <text x="740" y="888" font-size="11.5" fill="#475569">MSigDB 是 GSEA 的标准基因集总库——标识符转换丢基因是高频实操事故。</text>
+  <text x="740" y="920" font-size="11.5" fill="#dc2626">解读陷阱：</text>
+  <text x="740" y="936" font-size="11.5" fill="#dc2626">背景集不当 · 集合冗余 · 方向失明 · 把富集当因果 · 输入泄漏——分上下调检验或带方向的 GSEA 可治方向失明；</text>
+  <text x="740" y="952" font-size="11.5" fill="#dc2626">富集结果是假设发生器，而非结论本身。</text>
+</svg>

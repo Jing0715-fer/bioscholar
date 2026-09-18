@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因组组装：de Bruijn 图的欧拉路径、重复困境与 N50 标尺</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">de Bruijn 图把读段切为 k-mer 建图，组装化为多项式可解的欧拉路径；k-mer 覆盖 ≈ 读覆盖 ×（读长 − k + 1）/ 读长，30×·150 bp·k=51 时约 20×；人类基因组约半数为重复衍生物（LINE 约两成、Alu 约 300 bp 拷贝逾百万）；OLC 以重叠–布局–共识三步复兴于长读；N50 为降序累加达总长一半时所在重叠群长度，与 L50、NG50 及 QUAST 评估合看</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、de Bruijn 图：把组装化为多项式可解的欧拉路径</text>
+  <rect x="96.28" y="169.8" width="67.44" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="130" y="184.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">测序读段</text>
+  <line x1="176" y1="180" x2="292" y2="180" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="310.5944" y="169.8" width="78.81120000000001" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="350" y="184.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">切分 k-mer</text>
+  <line x1="404" y1="180" x2="480" y2="180" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="508.8524" y="169.8" width="102.29520000000001" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="560" y="184.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">建 de Bruijn 图</text>
+  <text x="60" y="236" font-size="12" fill="#475569" font-weight="600">节点 =（k−1）-mer · 有向边 = k-mer</text>
+  <text x="155" y="274" font-size="10" fill="#64748b" text-anchor="middle">ATG</text>
+  <text x="245" y="274" font-size="10" fill="#64748b" text-anchor="middle">TGG</text>
+  <text x="335" y="274" font-size="10" fill="#64748b" text-anchor="middle">GGC</text>
+  <text x="425" y="274" font-size="10" fill="#64748b" text-anchor="middle">GCA</text>
+  <circle cx="110" cy="300" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="110" y="304" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">AT</text>
+  <circle cx="200" cy="300" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="200" y="304" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">TG</text>
+  <circle cx="290" cy="300" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="290" y="304" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">GG</text>
+  <circle cx="380" cy="300" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="380" y="304" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">GC</text>
+  <circle cx="470" cy="300" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="470" y="304" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">CA</text>
+  <line x1="142" y1="300" x2="168" y2="300" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="232" y1="300" x2="258" y2="300" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="322" y1="300" x2="348" y2="300" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="412" y1="300" x2="438" y2="300" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="60" y="356" font-size="11.5" fill="#475569">遍历每条边恰一次的欧拉路径即重构目标序列——把指数级的拼图问题化为多项式可解（de Bruijn 1946；</text>
+  <text x="60" y="372" font-size="11.5" fill="#475569">Idury–Waterman 1995 引入测序；Pevzner 等 2001 用于片段组装）。</text>
+  <rect x="60" y="396" width="600" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="360" y="420" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">k-mer 覆盖度 ≈ 读覆盖度 ×（读长 − k + 1）÷ 读长</text>
+  <text x="360" y="446" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">读覆盖 30× · 读长 150 bp · k = 51 → k-mer 覆盖约 20×</text>
+  <text x="60" y="484" font-size="11.5" fill="#475569">错误 k-mer 覆盖度极低，可按阈值剪除；k 的选取在「分辨重复」与「覆盖密度」之间权衡。</text>
+  <rect x="60" y="508" width="190" height="38" rx="7" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="155" y="532" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">测序错误 → 假节点</text>
+  <rect x="270" y="508" width="190" height="38" rx="7" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="365" y="532" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">杂合变异 → 气泡</text>
+  <rect x="480" y="508" width="190" height="38" rx="7" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="575" y="532" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">重复 &gt; k → 分叉·碎片</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、重复序列的困境：人类基因组约半数为重复衍生物</text>
+  <rect x="740" y="196" width="600" height="46" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="740" y="196" width="120" height="46" fill="#0f766e"/>
+  <rect x="860" y="196" width="60" height="46" fill="#b45309"/>
+  <rect x="920" y="196" width="120" height="46" fill="#be185d"/>
+  <rect x="1040" y="196" width="300" height="46" fill="#f1f5f9"/>
+  <text x="800" y="224" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">LINE</text>
+  <text x="890" y="224" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">SINE</text>
+  <text x="980" y="224" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">LTR＋DNA</text>
+  <text x="1190" y="224" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">非重复（约半数）</text>
+  <line x1="800" y1="242" x2="800" y2="258" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="890" y1="242" x2="890" y2="300" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="990" y1="242" x2="990" y2="258" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="1190" y1="242" x2="1190" y2="258" stroke="#94a3b8" stroke-width="1"/>
+  <text x="800" y="276" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">LINE ≈ 两成</text>
+  <text x="800" y="292" font-size="10.5" fill="#64748b" text-anchor="middle">LINE-1 全长可达 6 kb</text>
+  <text x="990" y="276" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">LTR 反转座子＋DNA 转座子</text>
+  <text x="890" y="318" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">SINE ≈ 一成余</text>
+  <text x="890" y="334" font-size="10.5" fill="#64748b" text-anchor="middle">以 Alu 为代表</text>
+  <text x="740" y="380" font-size="12.5" fill="#1e293b" font-weight="700">短读为什么栽在 Alu 上：</text>
+  <rect x="740" y="392" width="150" height="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="900" y="406" font-size="11.5" fill="#075985" font-weight="600">读段 150 bp</text>
+  <rect x="740" y="424" width="300" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1060" y="438" font-size="11.5" fill="#134e4a" font-weight="600">Alu 元件 ≈ 300 bp</text>
+  <text x="740" y="470" font-size="11.5" fill="#475569">Alu 长约 300 bp 而拷贝逾百万，恰在短读分辨力之外——图上最常见的「交通堵塞点」；</text>
+  <text x="740" y="486" font-size="11.5" fill="#475569">长于 k 的重复造成分叉与碎片化，杂合变异制造气泡。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、OLC：重叠–布局–共识（长读时代的另一条路）</text>
+  <rect x="60" y="632" width="590" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="80" y="660" font-size="13.5" fill="#075985" font-weight="700">① 重叠 Overlap</text>
+  <text x="80" y="684" font-size="11.5" fill="#475569">读段两两比较，找出所有可信重叠</text>
+  <rect x="60" y="716" width="590" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="80" y="744" font-size="13.5" fill="#075985" font-weight="700">② 布局 Layout</text>
+  <text x="80" y="768" font-size="11.5" fill="#475569">按重叠关系排列读段，构成重叠群骨架</text>
+  <rect x="60" y="800" width="590" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="80" y="828" font-size="13.5" fill="#075985" font-weight="700">③ 共识 Consensus</text>
+  <text x="80" y="852" font-size="11.5" fill="#475569">逐位置推出一致碱基序列</text>
+  <line x1="355" y1="698" x2="355" y2="716" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="355" y1="782" x2="355" y2="800" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="60" y="892" font-size="11.5" fill="#475569">OLC 在 Sanger 时代即成熟、长读时代复兴：Canu / Flye / Shasta 以 minimizer 索引（Roberts 等 2004）</text>
+  <text x="60" y="908" font-size="11.5" fill="#475569">预筛候选重叠——只保留每个窗口内字典序最小的 k-mer 作锚点，把两两比较压缩到可行规模。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、N50：连续性统计量与组装层级</text>
+  <rect x="740" y="632" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="659.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">重叠群</text>
+  <rect x="870" y="632" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="940" y="659.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">长度 kb</text>
+  <rect x="1010" y="632" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="659.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">累计 kb</text>
+  <rect x="1150" y="632" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="659.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">触达 250 kb？</text>
+  <rect x="740" y="676" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="700.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="870" y="676" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="940" y="700.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">150</text>
+  <rect x="1010" y="676" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="700.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">150</text>
+  <rect x="1150" y="676" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="700.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">否</text>
+  <rect x="740" y="714" width="580" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="714" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="738.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">B</text>
+  <rect x="870" y="714" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="940" y="738.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">120</text>
+  <rect x="1010" y="714" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="738.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">270</text>
+  <rect x="1150" y="714" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="738.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">✓ N50 = 120</text>
+  <rect x="740" y="752" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="776.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="870" y="752" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="940" y="776.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">80</text>
+  <rect x="1010" y="752" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="776.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">350</text>
+  <rect x="1150" y="752" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="776.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="740" y="790" width="580" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="790" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="814.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">其余</text>
+  <rect x="870" y="790" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="940" y="814.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">…</text>
+  <rect x="1010" y="790" width="140" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="814.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">500（总长）</text>
+  <rect x="1150" y="790" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="814.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <text x="740" y="862" font-size="12" fill="#1e293b" font-weight="700">组装分层</text>
+  <rect x="826.0436" y="846.225" width="91.91280000000002" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="872" y="860.14" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="600">重叠群 contig</text>
+  <line x1="950" y1="856" x2="1000" y2="856" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="1008.6270499999999" y="846.225" width="162.74590000000003" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1090" y="860.14" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="600">支架 scaffold（N 表间隙）</text>
+  <line x1="1200" y1="856" x2="1240" y2="856" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="1272.31" y="846.225" width="65.38" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1305" y="860.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="600">染色体级</text>
+  <text x="740" y="894" font-size="11.5" fill="#475569">N50：重叠群按长度降序累加，达到组装总长一半（此处 250 kb）时所在重叠群的长度（120 kb）；L50 记所需条数</text>
+  <text x="740" y="910" font-size="11.5" fill="#475569">（2 条）；NG50 改以参考基因组总长为门槛。须与最长重叠群、</text>
+  <text x="740" y="926" font-size="11.5" fill="#475569">总数与错误断点合看——QUAST 汇总有参考与无参考两类评估。</text>
+</svg>

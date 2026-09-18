@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">深度学习与序列、结构与图像：表示、卷积、注意力与 AlphaFold 谱系</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">卷积核与 PWM 同构；RNN 串行梯度衰减 vs 自注意力并行但显存∝长度²；CASP13 中位约 58 分 → CASP14 约 92.4 分</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、表示先行：序列如何变成张量</text>
+  <text x="82" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="108" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">C</text>
+  <text x="134" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <text x="160" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="186" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
+  <text x="212" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <text x="64" y="234" font-size="10.5" fill="#64748b" text-anchor="end">A</text>
+  <text x="64" y="254" font-size="10.5" fill="#64748b" text-anchor="end">C</text>
+  <text x="64" y="274" font-size="10.5" fill="#64748b" text-anchor="end">G</text>
+  <text x="64" y="294" font-size="10.5" fill="#64748b" text-anchor="end">T</text>
+  <rect x="70" y="220" width="24" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="70" y="240" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="70" y="260" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="70" y="280" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="96" y="220" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="96" y="240" width="24" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="96" y="260" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="96" y="280" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="122" y="220" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="122" y="240" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="122" y="260" width="24" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="122" y="280" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="148" y="220" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="148" y="240" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="148" y="260" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="148" y="280" width="24" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="174" y="220" width="24" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="174" y="240" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="174" y="260" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="174" y="280" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="200" y="220" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="200" y="240" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="200" y="260" width="24" height="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="200" y="280" width="24" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="70" y="326" font-size="11" fill="#475569">one-hot：无损、无假设，但稀疏、无先验</text>
+  <text x="300" y="196" font-size="12.5" fill="#1e293b" font-weight="700">预训练嵌入（上下文向量）</text>
+  <rect x="300" y="214" width="16" height="12" fill="#0369a1" fill-opacity="0.18"/>
+  <rect x="300" y="227" width="16" height="12" fill="#0369a1" fill-opacity="0.43"/>
+  <rect x="300" y="240" width="16" height="12" fill="#0369a1" fill-opacity="0.6799999999999999"/>
+  <rect x="300" y="253" width="16" height="12" fill="#0369a1" fill-opacity="0.2633333333333333"/>
+  <rect x="300" y="266" width="16" height="12" fill="#0369a1" fill-opacity="0.5133333333333333"/>
+  <rect x="300" y="279" width="16" height="12" fill="#0369a1" fill-opacity="0.7633333333333334"/>
+  <rect x="300" y="292" width="16" height="12" fill="#0369a1" fill-opacity="0.3466666666666667"/>
+  <rect x="300" y="305" width="16" height="12" fill="#0369a1" fill-opacity="0.5966666666666667"/>
+  <rect x="318" y="214" width="16" height="12" fill="#0369a1" fill-opacity="0.7633333333333334"/>
+  <rect x="318" y="227" width="16" height="12" fill="#0369a1" fill-opacity="0.3466666666666667"/>
+  <rect x="318" y="240" width="16" height="12" fill="#0369a1" fill-opacity="0.5966666666666667"/>
+  <rect x="318" y="253" width="16" height="12" fill="#0369a1" fill-opacity="0.18"/>
+  <rect x="318" y="266" width="16" height="12" fill="#0369a1" fill-opacity="0.43"/>
+  <rect x="318" y="279" width="16" height="12" fill="#0369a1" fill-opacity="0.6799999999999999"/>
+  <rect x="318" y="292" width="16" height="12" fill="#0369a1" fill-opacity="0.2633333333333333"/>
+  <rect x="318" y="305" width="16" height="12" fill="#0369a1" fill-opacity="0.5133333333333333"/>
+  <rect x="336" y="214" width="16" height="12" fill="#0369a1" fill-opacity="0.6799999999999999"/>
+  <rect x="336" y="227" width="16" height="12" fill="#0369a1" fill-opacity="0.2633333333333333"/>
+  <rect x="336" y="240" width="16" height="12" fill="#0369a1" fill-opacity="0.5133333333333333"/>
+  <rect x="336" y="253" width="16" height="12" fill="#0369a1" fill-opacity="0.7633333333333334"/>
+  <rect x="336" y="266" width="16" height="12" fill="#0369a1" fill-opacity="0.3466666666666667"/>
+  <rect x="336" y="279" width="16" height="12" fill="#0369a1" fill-opacity="0.5966666666666667"/>
+  <rect x="336" y="292" width="16" height="12" fill="#0369a1" fill-opacity="0.18"/>
+  <rect x="336" y="305" width="16" height="12" fill="#0369a1" fill-opacity="0.43"/>
+  <rect x="354" y="214" width="16" height="12" fill="#0369a1" fill-opacity="0.5966666666666667"/>
+  <rect x="354" y="227" width="16" height="12" fill="#0369a1" fill-opacity="0.18"/>
+  <rect x="354" y="240" width="16" height="12" fill="#0369a1" fill-opacity="0.43"/>
+  <rect x="354" y="253" width="16" height="12" fill="#0369a1" fill-opacity="0.6799999999999999"/>
+  <rect x="354" y="266" width="16" height="12" fill="#0369a1" fill-opacity="0.2633333333333333"/>
+  <rect x="354" y="279" width="16" height="12" fill="#0369a1" fill-opacity="0.5133333333333333"/>
+  <rect x="354" y="292" width="16" height="12" fill="#0369a1" fill-opacity="0.7633333333333334"/>
+  <rect x="354" y="305" width="16" height="12" fill="#0369a1" fill-opacity="0.3466666666666667"/>
+  <rect x="372" y="214" width="16" height="12" fill="#0369a1" fill-opacity="0.5133333333333333"/>
+  <rect x="372" y="227" width="16" height="12" fill="#0369a1" fill-opacity="0.7633333333333334"/>
+  <rect x="372" y="240" width="16" height="12" fill="#0369a1" fill-opacity="0.3466666666666667"/>
+  <rect x="372" y="253" width="16" height="12" fill="#0369a1" fill-opacity="0.5966666666666667"/>
+  <rect x="372" y="266" width="16" height="12" fill="#0369a1" fill-opacity="0.18"/>
+  <rect x="372" y="279" width="16" height="12" fill="#0369a1" fill-opacity="0.43"/>
+  <rect x="372" y="292" width="16" height="12" fill="#0369a1" fill-opacity="0.6799999999999999"/>
+  <rect x="372" y="305" width="16" height="12" fill="#0369a1" fill-opacity="0.2633333333333333"/>
+  <rect x="390" y="214" width="16" height="12" fill="#0369a1" fill-opacity="0.43"/>
+  <rect x="390" y="227" width="16" height="12" fill="#0369a1" fill-opacity="0.6799999999999999"/>
+  <rect x="390" y="240" width="16" height="12" fill="#0369a1" fill-opacity="0.2633333333333333"/>
+  <rect x="390" y="253" width="16" height="12" fill="#0369a1" fill-opacity="0.5133333333333333"/>
+  <rect x="390" y="266" width="16" height="12" fill="#0369a1" fill-opacity="0.7633333333333334"/>
+  <rect x="390" y="279" width="16" height="12" fill="#0369a1" fill-opacity="0.3466666666666667"/>
+  <rect x="390" y="292" width="16" height="12" fill="#0369a1" fill-opacity="0.5966666666666667"/>
+  <rect x="390" y="305" width="16" height="12" fill="#0369a1" fill-opacity="0.18"/>
+  <text x="300" y="344" font-size="11" fill="#475569">化学相似性被学进向量空间</text>
+  <text x="470" y="196" font-size="12.5" fill="#1e293b" font-weight="700">多通道表示</text>
+  <rect x="470" y="220" width="175" height="26" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="557" y="237" font-size="10.5" fill="#134e4a" text-anchor="middle">序列 one-hot 通道</text>
+  <rect x="470" y="252" width="175" height="26" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="557" y="269" font-size="10.5" fill="#065f46" text-anchor="middle">保守性轨道</text>
+  <rect x="470" y="284" width="175" height="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="557" y="301" font-size="10.5" fill="#075985" text-anchor="middle">嵌入通道</text>
+  <text x="557" y="338" font-size="11" fill="#475569" text-anchor="middle">叠加 → 卷积输入</text>
+  <text x="60" y="396" font-size="11" fill="#475569">one-hot 无损无假设但稀疏无先验；预训练嵌入把化学相似性学进向量空间；多通道可叠加保守性等语境轨道。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、卷积核 = 滑动的位置权重矩阵（PWM）</text>
+  <rect x="740" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="757" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">A</text>
+  <rect x="776" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="793" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">C</text>
+  <rect x="812" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="829" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">C</text>
+  <rect x="848" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="865" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">G</text>
+  <rect x="884" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="901" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">G</text>
+  <rect x="920" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="937" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">T</text>
+  <rect x="956" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="973" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">A</text>
+  <rect x="992" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1009" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">A</text>
+  <rect x="1028" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1045" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">T</text>
+  <rect x="1064" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1081" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">G</text>
+  <rect x="1100" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1117" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">C</text>
+  <rect x="1136" y="230" width="34" height="34" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1153" y="253" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">T</text>
+  <rect x="848" y="224" width="178" height="46" fill="none" stroke="#be185d" stroke-width="2.5"/>
+  <text x="740" y="182" font-size="11" fill="#64748b">卷积核学到的 PWM（示意）</text>
+  <rect x="864" y="190" width="5.5" height="28" fill="#6d28d9" stroke="#6d28d9" stroke-width="0.8"/>
+  <rect x="900" y="190" width="5.5" height="28" fill="#6d28d9" stroke="#6d28d9" stroke-width="0.8"/>
+  <rect x="942.5" y="194" width="5.5" height="24" fill="#b45309" stroke="#b45309" stroke-width="0.8"/>
+  <rect x="959" y="192" width="5.5" height="26" fill="#0369a1" stroke="#0369a1" stroke-width="0.8"/>
+  <rect x="995" y="192" width="5.5" height="26" fill="#0369a1" stroke="#0369a1" stroke-width="0.8"/>
+  <line x1="937" y1="274" x2="937" y2="326" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
+  <rect x="740" y="330" width="430" height="110" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="412.5" x2="1170" y2="412.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="847.5" y1="440" x2="847.5" y2="330" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="385" x2="1170" y2="385" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="955" y1="440" x2="955" y2="330" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="357.5" x2="1170" y2="357.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1062.5" y1="440" x2="1062.5" y2="330" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <text x="955" y="484" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">窗口位置 →</text>
+  <path d="M740.0,433.4 L800.2,429.0 L860.4,424.6 L924.9,335.5 L985.1,423.5 L1045.3,431.2 L1105.5,429.0 L1170.0,433.4" fill="none" stroke="#be185d" stroke-width="2.4"/>
+  <text x="1006" y="352" font-size="14" fill="#be185d" font-weight="700">命中基序 → 高激活</text>
+  <text x="1200" y="210" font-size="11" fill="#475569">卷积核与 PWM 同构：</text>
+  <text x="1200" y="225" font-size="11" fill="#475569">滑动窗口 × 权重矩阵，</text>
+  <text x="1200" y="240" font-size="11" fill="#475569">命中处高激活；</text>
+  <text x="1200" y="255" font-size="11" fill="#475569">深层组合捕捉远程语法</text>
+  <text x="1200" y="270" font-size="11" fill="#475569">（增强子）。</text>
+  <text x="1200" y="300" font-size="11" fill="#475569">表格数据上，</text>
+  <text x="1200" y="315" font-size="11" fill="#475569">梯度提升树常胜深度网络。</text>
+  <text x="740" y="508" font-size="11" fill="#475569">同一卷积核沿全序列滑动、参数共享：基序出现在何处都能检出（平移不变）。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、RNN 与自注意力：上下文的两种解法</text>
+  <text x="60" y="616" font-size="12.5" fill="#075985" font-weight="700">RNN（循环网络）</text>
+  <circle cx="110" cy="700" r="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="110" y="704" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">h1</text>
+  <line x1="130" y1="700" x2="170" y2="700" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="88" y="740" width="44" height="26" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="110" y="757" font-size="11.5" fill="#475569" text-anchor="middle">A</text>
+  <line x1="110" y1="738" x2="110" y2="721" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <circle cx="190" cy="700" r="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="190" y="704" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">h2</text>
+  <line x1="210" y1="700" x2="250" y2="700" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="168" y="740" width="44" height="26" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="190" y="757" font-size="11.5" fill="#475569" text-anchor="middle">C</text>
+  <line x1="190" y1="738" x2="190" y2="721" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <circle cx="270" cy="700" r="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="270" y="704" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">h3</text>
+  <line x1="290" y1="700" x2="330" y2="700" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="248" y="740" width="44" height="26" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="270" y="757" font-size="11.5" fill="#475569" text-anchor="middle">G</text>
+  <line x1="270" y1="738" x2="270" y2="721" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <circle cx="350" cy="700" r="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="350" y="704" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">h4</text>
+  <rect x="328" y="740" width="44" height="26" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="350" y="757" font-size="11.5" fill="#475569" text-anchor="middle">T</text>
+  <line x1="350" y1="738" x2="350" y2="721" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <path d="M 350,678 C 320,636 140,636 110,678" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <text x="230" y="668" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">梯度衰减 · 串行</text>
+  <text x="60" y="800" font-size="11" fill="#475569">隐藏状态逐步携带上下文：串行计算、梯度随步数衰减。</text>
+  <text x="420" y="616" font-size="12.5" fill="#831843" font-weight="700">自注意力（Transformer）</text>
+  <text x="540" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">全位置两两加权</text>
+  <line x1="470" y1="680" x2="610" y2="680" stroke="#be185d" stroke-width="2.2" opacity="0.9"/>
+  <line x1="470" y1="680" x2="470" y2="780" stroke="#94a3b8" stroke-width="1.2" opacity="0.8"/>
+  <line x1="610" y1="680" x2="610" y2="780" stroke="#94a3b8" stroke-width="1.2" opacity="0.8"/>
+  <line x1="470" y1="780" x2="610" y2="780" stroke="#be185d" stroke-width="2.2" opacity="0.9"/>
+  <line x1="470" y1="680" x2="610" y2="780" stroke="#94a3b8" stroke-width="1.2" opacity="0.8"/>
+  <line x1="610" y1="680" x2="470" y2="780" stroke="#94a3b8" stroke-width="1.2" opacity="0.8"/>
+  <circle cx="470" cy="680" r="17" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="470" y="684" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">x1</text>
+  <circle cx="610" cy="680" r="17" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="610" y="684" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">x2</text>
+  <circle cx="470" cy="780" r="17" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="470" y="784" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">x3</text>
+  <circle cx="610" cy="780" r="17" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="610" y="784" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">x4</text>
+  <text x="420" y="830" font-size="11" fill="#475569">每个位置直接「看到」所有位置：可并行、</text>
+  <text x="420" y="845" font-size="11" fill="#475569">梯度直达；代价是显存随长度平方增长。</text>
+  <text x="60" y="890" font-size="11" fill="#475569">取舍：注意力全位置两两加权，显存与计算随长度平方增长；RNN 线性于长度，但串行且梯度衰减。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、蛋白质预测史：CASP13 到 CASP14 与三启示</text>
+  <text x="740" y="640" font-size="12.5" fill="#1e293b" font-weight="700">CASP 得分（中位数）</text>
+  <rect x="781.6" y="738.1904761904761" width="76.8" height="71.8095238095238" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="820" y="729.1904761904761" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">中位约 58</text>
+  <text x="820" y="830" font-size="12.5" fill="#64748b" text-anchor="middle">CASP13</text>
+  <rect x="901.6" y="695.6" width="76.8" height="114.4" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="940" y="686.6" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 92.4</text>
+  <text x="940" y="830" font-size="12.5" fill="#64748b" text-anchor="middle">CASP14</text>
+  <text x="740" y="866" font-size="11" fill="#475569">CASP13（2018）深度距离分布，中位约 58 分；</text>
+  <text x="740" y="881" font-size="11" fill="#475569">CASP14（2020）注意力＋结构模块，达约 92.4 分。</text>
+  <text x="1050" y="636" font-size="12.5" fill="#1e293b" font-weight="700">方法论三启示</text>
+  <text x="1050" y="660" font-size="11" fill="#475569">① 领域知识配通用架构；② 双盲基准驱动研发；</text>
+  <text x="1050" y="675" font-size="11" fill="#475569">③ 方法有半衰期，而表示–评价–验证三把抓手不变。</text>
+  <text x="1190" y="766" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">蛋白预测主线</text>
+  <line x1="1050" y1="800" x2="1330" y2="800" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="1078" cy="800" r="6.5" fill="#475569"/>
+  <line x1="1078" y1="791" x2="1078" y2="770" stroke="#475569" stroke-width="1.7"/>
+  <text x="1078" y="750" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2018</text>
+  <text x="1078" y="730" font-size="12" fill="#64748b" text-anchor="middle">距离分布</text>
+  <circle cx="1190" cy="800" r="6.5" fill="#0369a1"/>
+  <line x1="1190" y1="809" x2="1190" y2="830" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="1190" y="850" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2020</text>
+  <text x="1190" y="870" font-size="12" fill="#64748b" text-anchor="middle">注意力＋结构</text>
+  <circle cx="1302" cy="800" r="6.5" fill="#6d28d9"/>
+  <line x1="1302" y1="791" x2="1302" y2="770" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="1302" y="750" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">同届</text>
+  <text x="1302" y="730" font-size="12" fill="#64748b" text-anchor="middle">RoseTTAFold</text>
+</svg>

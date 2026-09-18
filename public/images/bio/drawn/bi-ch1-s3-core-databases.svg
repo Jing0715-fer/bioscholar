@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">核心数据库概览：档案库、策展库与知识库的三层格局</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">GenBank / EMBL / DDBJ 组成 INSDC，每日交换、一次提交全球可得；UniProtKB 手工审阅层约 50 余万条与自动注释层数亿条相差约三个数量级；PDB（1971 年，&gt;20 万条）、KEGG（1995 年起）与 GO 三本体提供功能语境</text>
+  <rect x="30" y="132" width="1340" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、数据库的分层分类：档案库 → 策展库 → 知识库</text>
+  <rect x="60" y="190" width="360" height="410" rx="10" fill="#ccfbf1" fill-opacity="0.45"/>
+  <text x="76" y="216" font-size="18" fill="#134e4a" font-weight="700">一级 · 档案库（INSDC）</text>
+  <text x="76" y="238" font-size="13.5" fill="#64748b">忠实保存原始提交，不裁决对错</text>
+  <rect x="84" y="268" width="312" height="64" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="100" y="294" font-size="14.5" fill="#134e4a" font-weight="700">GenBank</text>
+  <text x="100" y="316" font-size="11" fill="#475569">1982 年建立 · 1992 年起由 NCBI 维护（美）</text>
+  <rect x="84" y="344" width="312" height="64" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="100" y="370" font-size="14.5" fill="#134e4a" font-weight="700">EMBL-Bank</text>
+  <text x="100" y="392" font-size="11" fill="#475569">欧洲生物信息学研究所 EBI（欧）</text>
+  <rect x="84" y="420" width="312" height="64" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="100" y="446" font-size="14.5" fill="#134e4a" font-weight="700">DDBJ</text>
+  <text x="100" y="468" font-size="11" fill="#475569">日本 DNA 数据库（日）</text>
+  <rect x="84" y="502" width="312" height="82" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="98" y="524" font-size="11" fill="#475569">三库每日交换 · 登录号互认 · 一次提交全球可得——1990 年代国际协作的典范，</text>
+  <text x="98" y="539" font-size="11" fill="#475569">避免重复与分叉。</text>
+  <rect x="470" y="190" width="360" height="410" rx="10" fill="#e0f2fe" fill-opacity="0.45"/>
+  <text x="486" y="216" font-size="18" fill="#075985" font-weight="700">二级 · 策展与衍生库</text>
+  <text x="486" y="238" font-size="13.5" fill="#64748b">质量控制的责任所在</text>
+  <rect x="494" y="268" width="312" height="64" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="510" y="294" font-size="14.5" fill="#075985" font-weight="700">RefSeq</text>
+  <text x="510" y="316" font-size="11" fill="#475569">以策展为每个基因提供唯一代表序列</text>
+  <rect x="494" y="344" width="312" height="88" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="510" y="370" font-size="14.5" fill="#075985" font-weight="700">UniProtKB</text>
+  <text x="510" y="392" font-size="11" fill="#475569">Swiss-Prot 手工审阅 ≈ 50 余万条；</text>
+  <text x="510" y="407" font-size="11" fill="#475569">TrEMBL 自动注释 数亿条量级</text>
+  <rect x="494" y="444" width="312" height="64" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="510" y="470" font-size="14.5" fill="#075985" font-weight="700">nr · UniRef</text>
+  <text x="510" y="492" font-size="11" fill="#475569">按特定定义去冗余的衍生资源</text>
+  <rect x="494" y="520" width="312" height="64" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="508" y="542" font-size="11" fill="#475569">档案库不裁决对错——质量控制的责任在二级库与使用者。</text>
+  <rect x="880" y="190" width="460" height="410" rx="10" fill="#ede9fe" fill-opacity="0.45"/>
+  <text x="896" y="216" font-size="18" fill="#4c1d95" font-weight="700">专题 · 知识库</text>
+  <text x="896" y="238" font-size="13.5" fill="#64748b">结构、通路与功能语境</text>
+  <rect x="904" y="268" width="412" height="72" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="920" y="295" font-size="14.5" fill="#4c1d95" font-weight="700">PDB</text>
+  <text x="920" y="317" font-size="11" fill="#475569">1971 年建立 · 收录 &gt;20 万条三维结构 · 近年增量主要来自冷冻电镜</text>
+  <rect x="904" y="356" width="412" height="72" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="920" y="383" font-size="14.5" fill="#4c1d95" font-weight="700">KEGG</text>
+  <text x="920" y="405" font-size="11" fill="#475569">1995 年起 · 人工通路图 + KO 编号组织功能语境</text>
+  <rect x="904" y="430" width="412" height="72" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="920" y="457" font-size="14.5" fill="#4c1d95" font-weight="700">GO 基因本体</text>
+  <text x="920" y="479" font-size="11" fill="#475569">三本体受控词表：生物过程 / 细胞组分 / 分子功能</text>
+  <rect x="904" y="518" width="412" height="66" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="918" y="540" font-size="11" fill="#475569">注释须区分实验证据与电子证据——「怎么知道的」与结论本身同样重要。</text>
+  <line x1="424" y1="396" x2="464" y2="396" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <text x="444" y="376" font-size="11" fill="#64748b" text-anchor="middle" font-weight="700">策展</text>
+  <line x1="834" y1="396" x2="874" y2="396" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <text x="854" y="376" font-size="11" fill="#64748b" text-anchor="middle" font-weight="700">知识萃取</text>
+  <rect x="30" y="652" width="640" height="308" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="674.84" font-size="19" fill="#475569" font-weight="700">二、UniProtKB：审阅层与自动层差三个数量级</text>
+  <polygon points="300,726 424,726 456,806 268,806" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="362" y="760" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Swiss-Prot 手工审阅</text>
+  <text x="362" y="786" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">≈ 50 余万条</text>
+  <polygon points="268,806 456,806 492,890 232,890" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.8"/>
+  <text x="362" y="838" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">TrEMBL 自动注释</text>
+  <text x="362" y="864" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">数亿条量级</text>
+  <line x1="520" y1="726" x2="520" y2="890" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <text x="536" y="796" font-size="11.5" fill="#dc2626" font-weight="700">相差约三个数量级</text>
+  <text x="250" y="760" font-size="11.5" fill="#4c1d95" text-anchor="end" font-weight="700">准确优先</text>
+  <text x="220" y="852" font-size="11.5" fill="#64748b" text-anchor="end" font-weight="700">覆盖优先</text>
+  <text x="60" y="930" font-size="11.5" fill="#475569">一次提交进入自动层容易、进入审阅层难：选层级本质是在覆盖面与可信度之间取舍。</text>
+  <rect x="690" y="652" width="680" height="308" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="706" y="674.84" font-size="19" fill="#475569" font-weight="700">三、核心资源速查（截至撰稿口径）</text>
+  <rect x="716" y="712" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="771" y="739.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">资源</text>
+  <rect x="826" y="712" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="739.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">定位</text>
+  <rect x="1006" y="712" width="338" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="739.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">规模与口径</text>
+  <rect x="716" y="756" width="110" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="771" y="780.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">INSDC</text>
+  <rect x="826" y="756" width="180" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="780.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">核酸一级档案</text>
+  <rect x="1006" y="756" width="338" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="780.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">三库每日交换 · 登录号互认</text>
+  <rect x="716" y="794" width="628" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="716" y="794" width="110" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="771" y="818.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">UniProtKB</text>
+  <rect x="826" y="794" width="180" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="818.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">蛋白注释中枢</text>
+  <rect x="1006" y="794" width="338" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="818.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">Swiss-Prot ≈50 余万 · TrEMBL 数亿（差 3 个量级）</text>
+  <rect x="716" y="832" width="110" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="771" y="856.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">PDB</text>
+  <rect x="826" y="832" width="180" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="856.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">三维结构档案</text>
+  <rect x="1006" y="832" width="338" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="856.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1971 年建立 · &gt;20 万条 · 冷冻电镜增量</text>
+  <rect x="716" y="870" width="628" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="716" y="870" width="110" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="771" y="894.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">KEGG</text>
+  <rect x="826" y="870" width="180" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="894.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">通路与功能语境</text>
+  <rect x="1006" y="870" width="338" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="894.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1995 年起 · 人工通路图 + KO 编号</text>
+  <rect x="716" y="908" width="110" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="771" y="932.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">GO</text>
+  <rect x="826" y="908" width="180" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="932.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">属性受控词表</text>
+  <rect x="1006" y="908" width="338" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="932.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">三本体：BP / CC / MF</text>
+</svg>

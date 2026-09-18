@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">生物学数据的规模与挑战：成本俯冲、口径陷阱与 4V</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">高通量测序使全基因组测序成本自 2001 年约 1 亿美元降至数百美元区间（降幅超过四个数量级）；数据倍增周期约 1–1.5 年快于摩尔定律；单倍体基因组 3.1 Gbp 与 30× 约 90 Gbp 原始数据须分开表述</text>
+  <rect x="30" y="132" width="1340" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、全基因组测序成本：四个数量级的俯冲</text>
+  <rect x="190" y="205" width="840" height="300" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="190" y1="430" x2="1030" y2="430" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="505" x2="400" y2="205" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="190" y1="355" x2="1030" y2="355" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="610" y1="505" x2="610" y2="205" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="190" y1="280" x2="1030" y2="280" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="820" y1="505" x2="820" y2="205" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="190" y1="505" x2="190" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="190" y="527" font-size="13" fill="#64748b" text-anchor="middle">2001</text>
+  <line x1="408.4" y1="505" x2="408.4" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="408.4" y="527" font-size="13" fill="#64748b" text-anchor="middle">2007</text>
+  <line x1="626.8" y1="505" x2="626.8" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="626.8" y="527" font-size="13" fill="#64748b" text-anchor="middle">2013</text>
+  <line x1="845.2" y1="505" x2="845.2" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="845.2" y="527" font-size="13" fill="#64748b" text-anchor="middle">2019</text>
+  <line x1="1030" y1="505" x2="1030" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="1030" y="527" font-size="13" fill="#64748b" text-anchor="middle">2024</text>
+  <line x1="184" y1="505" x2="190" y2="505" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="509" font-size="13" fill="#64748b" text-anchor="end">$10²</text>
+  <line x1="184" y1="405.1" x2="190" y2="405.1" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="409.1" font-size="13" fill="#64748b" text-anchor="end">$10⁴</text>
+  <line x1="184" y1="304.9" x2="190" y2="304.9" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="308.9" font-size="13" fill="#64748b" text-anchor="end">$10⁶</text>
+  <line x1="184" y1="205" x2="190" y2="205" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="209" font-size="13" fill="#64748b" text-anchor="end">$10⁸</text>
+  <text x="610" y="549" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">年份</text>
+  <text x="610" y="193" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">NHGRI 统计口径：单基因组成本（美元 · 对数轴）</text>
+  <path d="M190.0,205.0 L1030.0,397.0" fill="none" stroke="#94a3b8" stroke-width="2.2" stroke-dasharray="7 6"/>
+  <text x="560" y="262" font-size="11.5" fill="#64748b">摩尔定律口径外推（每 18–24 个月翻一番）</text>
+  <path d="M190,205 C202.6,208.0 241.8,216.5 265.6,223 C289.4,229.5 309.0,236.5 332.8,244 C356.6,251.5 386.0,254.5 408.4,268 C430.8,281.5 447.6,307.5 467.2,325 C486.8,342.5 505.0,359.0 526,373 C547.0,387.0 572.2,399.0 593.2,409 C614.2,419.0 633.8,425.4 652,433 C670.2,440.6 681.4,450.1 702.4,454.9 C723.4,459.6 754.2,459.4 778,461.5 C801.8,463.6 817.2,465.3 845.2,467.5 C873.2,469.8 915.2,472.8 946,475 C976.8,477.3 1016.0,480.0 1030,481" fill="none" stroke="#0f766e" stroke-width="3.4"/>
+  <circle cx="190" cy="205" r="5.5" fill="#dc2626"/>
+  <text x="216" y="210" font-size="12.5" fill="#dc2626" font-weight="700">2001：约 1 亿美元</text>
+  <circle cx="702" cy="455" r="5.5" fill="#dc2626"/>
+  <text x="688" y="487" font-size="12.5" fill="#dc2626" text-anchor="end" font-weight="700">2015 前后 ≈ $1000</text>
+  <circle cx="1030" cy="481" r="5.5" fill="#dc2626"/>
+  <text x="950" y="450" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">2020s：数百美元</text>
+  <rect x="381.116" y="214.8" width="437.76800000000003" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="600" y="229.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="600">2005 年前后：高通量测序把「一次读一条」改为「一次读百万至数十亿条」</text>
+  <line x1="560" y1="246" x2="460" y2="290" stroke="#b45309" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#arr-rna)"/>
+  <text x="920" y="330" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">累计降幅超过四个数量级</text>
+  <text x="1070" y="230" font-size="12" fill="#475569">· 测序数据总量倍增周期约 1–1.5 年，</text>
+  <text x="1070" y="247" font-size="12" fill="#475569">快于或持平摩尔定律口径（18–24 个月）</text>
+  <text x="1070" y="320" font-size="12" fill="#475569">· 存储带宽、</text>
+  <text x="1070" y="337" font-size="12" fill="#475569">检索与传输相对滞后——存储与检索成为结构性瓶颈</text>
+  <text x="1070" y="396" font-size="12" fill="#475569">· 1977 年 Sanger 双脱氧链终止法确立第一代测序；</text>
+  <text x="1070" y="413" font-size="12" fill="#475569">HGP 动员六国十余家中心，历时约 13 年、</text>
+  <text x="1070" y="430" font-size="12" fill="#475569">公共投入约 27 亿美元</text>
+  <rect x="30" y="576" width="660" height="384" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">二、单个样本的体量：常见口径与易错点</text>
+  <text x="60" y="642" font-size="13.5" fill="#134e4a" font-weight="700">人类单倍体基因组</text>
+  <rect x="60" y="654" width="20" height="24" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="94" y="671" font-size="12" fill="#475569">3.1 Gbp ≈ 31 亿碱基对（「3 亿碱基」是常见量级口误）</text>
+  <line x1="70" y1="690" x2="70" y2="742" stroke="#64748b" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <text x="84" y="720" font-size="12.5" fill="#64748b" font-weight="700">× 30 覆盖</text>
+  <rect x="60" y="750" width="558" height="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="74" y="767" font-size="12" fill="#075985" font-weight="700">30× WGS 原始读段（FASTQ）：约 90 Gbp</text>
+  <text x="60" y="800" font-size="11.5" fill="#64748b">须与「基因组大小」分开表述——数据量 = 覆盖倍数 × 基因组大小</text>
+  <rect x="60" y="828" width="620" height="24" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="74" y="845" font-size="12" fill="#dc2626" font-weight="700">比对与索引后的存储占用：常达百吉字节量级（BAM + 索引）</text>
+  <text x="60" y="890" font-size="11.5" fill="#475569">口径提醒：Gbp 数的是碱基、GB 数的是字节，两个「G」不要混。</text>
+  <text x="60" y="907" font-size="11.5" fill="#475569">三十倍覆盖的单样本从 FASTQ 到 BAM 的全流程存储常达百 GB 量级，大队列使存储与检索成为结构性瓶颈。</text>
+  <rect x="710" y="576" width="660" height="384" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">三、大数据 4V 在生物学中的体现</text>
+  <rect x="740" y="648" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="675.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">4V</text>
+  <rect x="890" y="648" width="450" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1115" y="675.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">生物学体现</text>
+  <rect x="740" y="692" width="150" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="724.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">体量 Volume</text>
+  <rect x="890" y="692" width="450" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1115" y="724.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">序列档案与大队列的规模（单个 30× 全基因组原始数据约 90 Gbp）</text>
+  <rect x="740" y="746" width="600" height="54" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="746" width="150" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="778.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">速度 Velocity</text>
+  <rect x="890" y="746" width="450" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1115" y="778.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">INSDC 三库每日交换；高通量产出持续涌入</text>
+  <rect x="740" y="800" width="150" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="832.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">异质 Variety</text>
+  <rect x="890" y="800" width="450" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1115" y="832.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">序列、结构、表达谱、表型等多模态数据的异质性</text>
+  <rect x="740" y="854" width="600" height="54" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="854" width="150" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="886.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">真实 Veracity</text>
+  <rect x="890" y="854" width="450" height="54" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1115" y="886.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">测序错误与批次效应带来的真实性问题</text>
+  <text x="740" y="934" font-size="11.5" fill="#475569">人类基因组数据具可识别性：以 dbGaP / EGA 等受控访问仓库管理「隐私 vs 共享」的张力。</text>
+</svg>

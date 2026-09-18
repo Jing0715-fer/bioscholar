@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">结构域家族与功能注释：两大分类层级、签名库整合与 GO 受控词表</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">SCOP（1995）与 CATH（1997）以四层级编目结构域，常见折叠集中于约千余种；Pfam 概型 HMM 检出远缘成员，InterPro 整合十余个签名库、InterProScan 一次运行全家桶注释；GO 三分支以真路径规则相连，IEA 电子注释可靠性较低，注释链路每一步都有置信度衰减——同源不等于同功能，转移宁窄勿宽</text>
+  <rect x="30" y="132" width="1340" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、SCOP 与 CATH：结构域分类的两大层级体系</text>
+  <text x="250" y="184" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">SCOP（1995 · Murzin、Brenner、Hubbard、Chothia · 半人工）</text>
+  <text x="600" y="184" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">CATH（1997 · Orengo 等 · 自动化流程，名字即层级）</text>
+  <rect x="100" y="198" width="300" height="40" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="250" y="223" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">类 Class</text>
+  <line x1="250" y1="238" x2="250" y2="250" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <rect x="100" y="250" width="300" height="40" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="250" y="275" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">折叠 Fold</text>
+  <line x1="250" y1="290" x2="250" y2="302" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <rect x="100" y="302" width="300" height="40" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="250" y="327" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">超家族 Superfamily</text>
+  <line x1="250" y1="342" x2="250" y2="354" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <rect x="100" y="354" width="300" height="40" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="250" y="379" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">家族 Family</text>
+  <rect x="450" y="198" width="300" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="600" y="223" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">类 Class</text>
+  <line x1="600" y1="238" x2="600" y2="250" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="450" y="250" width="300" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="600" y="275" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">架构 Architecture</text>
+  <line x1="600" y1="290" x2="600" y2="302" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="450" y="302" width="300" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="600" y="327" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">拓扑 Topology</text>
+  <line x1="600" y1="342" x2="600" y2="354" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="450" y="354" width="300" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="600" y="379" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">同源超家族 Homologous superfamily</text>
+  <rect x="994.1875" y="189.375" width="161.625" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1075" y="204.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">常见折叠集中于约千余种</text>
+  <text x="830" y="248" font-size="13" fill="#1e293b" font-weight="700">超级折叠：横跨大量无关家族</text>
+  <rect x="899.62" y="268.225" width="114.76" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="957" y="282.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="600">免疫球蛋白样折叠</text>
+  <rect x="1099.02995" y="268.225" width="97.94010000000002" height="19.55" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1148" y="282.14" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="600">Rossmann 折叠</text>
+  <rect x="1265.16645" y="268.225" width="57.6671" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1294" y="282.14" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="600">TIM 桶</text>
+  <text x="830" y="320" font-size="11.5" fill="#475569">结构域洗牌：多结构域蛋白通过结构域的重组与重排获得新组合——是演化的重要机制。</text>
+  <text x="830" y="356" font-size="11.5" fill="#475569">两大体系互补：SCOP 半人工精细，CATH 全自动化、可规模化扩展。</text>
+  <rect x="30" y="424" width="660" height="556" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="446.84" font-size="19" fill="#475569" font-weight="700">二、Pfam 与 InterPro：家族的序列视角；EC 编号</text>
+  <rect x="60" y="474" width="380" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="250" y="499" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">查询序列（蛋白序列或经翻译的 CDS）</text>
+  <line x1="250" y1="514" x2="250" y2="540" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="60" y="540" width="380" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="250" y="565" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">Pfam：概型隐马尔可夫模型（profile HMM）</text>
+  <line x1="250" y1="580" x2="250" y2="606" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="60" y="606" width="380" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="250" y="631" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">InterPro：整合十余个成员签名库</text>
+  <line x1="250" y1="646" x2="250" y2="672" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="60" y="672" width="380" height="40" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="250" y="697" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">InterProScan：一次运行，全家桶注释</text>
+  <text x="460" y="542" font-size="11" fill="#475569">概型比两两比对更灵敏——可检出仅共享少量保守残基的远缘家族成员。</text>
+  <text x="460" y="620" font-size="11.5" fill="#1e293b" font-weight="700">签名库（部分）</text>
+  <rect x="484.6503" y="642.65" width="40.699400000000004" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="505" y="655.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">Pfam</text>
+  <rect x="589.4681" y="642.65" width="71.0638" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="625" y="655.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">TIGRFAMs</text>
+  <rect x="479.4385" y="672.65" width="51.123000000000005" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="505" y="685.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">SMART</text>
+  <rect x="578.3647" y="672.65" width="93.27060000000002" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="625" y="685.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">SUPERFAMILY</text>
+  <rect x="472.4139" y="702.65" width="65.1722" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="505" y="715.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">PROSITE</text>
+  <rect x="606.4630999999999" y="702.65" width="37.073800000000006" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="625" y="715.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">CDD</text>
+  <text x="60" y="762" font-size="13.5" fill="#1e293b" font-weight="700">EC 编号：按酶促反应的层次分类（六大类）</text>
+  <rect x="103.29079999999999" y="789.8" width="93.4184" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="150" y="804.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">1 氧化还原酶</text>
+  <rect x="315.6508" y="789.8" width="68.69839999999999" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="350" y="804.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">2 转移酶</text>
+  <rect x="515.6508" y="789.8" width="68.69839999999999" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="550" y="804.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">3 水解酶</text>
+  <rect x="115.6508" y="827.8" width="68.69839999999999" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="150" y="842.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">4 裂合酶</text>
+  <rect x="315.6508" y="827.8" width="68.69839999999999" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="350" y="842.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">5 异构酶</text>
+  <rect x="515.6508" y="827.8" width="68.69839999999999" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="550" y="842.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">6 连接酶</text>
+  <text x="60" y="878" font-size="11.5" fill="#475569">EC 刻画反应而非同源——同一 EC 编号可对应不同家族的酶；BRENDA、KEGG 与 Rhea 各有侧重。</text>
+  <text x="60" y="918" font-size="11.5" fill="#475569">家族注释是功能推断的第一步：先定家族，再谈功能。</text>
+  <rect x="710" y="424" width="660" height="556" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="446.84" font-size="19" fill="#475569" font-weight="700">三、GO 三分支、真路径规则与注释转移的置信度衰减</text>
+  <text x="740" y="470" font-size="13.5" fill="#1e293b" font-weight="700">Gene Ontology：受控词表 · 有向无环图</text>
+  <rect x="720" y="490" width="170" height="32" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="805" y="511" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">分子功能 MF</text>
+  <rect x="955" y="490" width="170" height="32" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1040" y="511" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">生物过程 BP</text>
+  <rect x="1190" y="490" width="170" height="32" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1275" y="511" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">细胞组分 CC</text>
+  <rect x="730" y="566" width="150" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="805" y="586" font-size="11.5" fill="#475569" text-anchor="middle">子术语</text>
+  <rect x="875" y="566" width="150" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="950" y="586" font-size="11.5" fill="#475569" text-anchor="middle">子术语</text>
+  <rect x="1055" y="566" width="150" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1130" y="586" font-size="11.5" fill="#475569" text-anchor="middle">子术语</text>
+  <rect x="1200" y="566" width="150" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1275" y="586" font-size="11.5" fill="#475569" text-anchor="middle">子术语</text>
+  <rect x="965" y="634" width="150" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1040" y="654" font-size="11.5" fill="#475569" text-anchor="middle">孙术语</text>
+  <line x1="805" y1="566" x2="805" y2="524" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <line x1="950" y1="566" x2="1005" y2="524" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="1130" y1="566" x2="1075" y2="524" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="1275" y1="566" x2="1275" y2="524" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="1065" y1="634" x2="1120" y2="598" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <path d="M 962,649 C 900,650 892,570 958,526" fill="none" stroke="#64748b" stroke-width="1.6" stroke-dasharray="6 5" marker-end="url(#arr-mute)"/>
+  <text x="740" y="672" font-size="11.5" fill="#64748b" font-weight="700">真路径规则：注释沿边向上传播到所有祖先</text>
+  <text x="740" y="696" font-size="11.5" fill="#475569">三分支各答一问：干什么（MF）、参与何过程（BP）、位于何处（CC）。</text>
+  <text x="740" y="720" font-size="11.5" fill="#475569">顶层术语必然富集、信息量在中层；GO slim 供全景报告。</text>
+  <text x="740" y="762" font-size="13.5" fill="#1e293b" font-weight="700">注释链路：每一步都有置信度衰减</text>
+  <rect x="740" y="780" width="400" height="44" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="940" y="807" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">① 域家族命中（SCOP / CATH / Pfam）— 高置信</text>
+  <rect x="820" y="836" width="400" height="44" rx="8" fill="#ede9fe" fill-opacity="0.6" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1020" y="863" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="600">② 功能沿家族转移 — 置信衰减</text>
+  <rect x="900" y="892" width="400" height="44" rx="8" fill="#ede9fe" fill-opacity="0.32" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="1100" y="919" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="500">③ 具体基因的功能注释 — 宁窄勿宽</text>
+  <line x1="1030" y1="824" x2="1030" y2="836" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <line x1="1030" y1="880" x2="1030" y2="892" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <text x="740" y="958" font-size="11.5" fill="#475569">同源 ≠ 同功能——注释转移宁窄勿宽；证据代码 IEA（电子注释）可靠性较低。</text>
+</svg>

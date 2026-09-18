@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">多序列比对：渐进法三步、命门与迭代补救</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">MSA 的列揭示家族保守性、是 profile / HMM / 系统树的共同入口，而最优 MSA 为 NP 完全问题；Clustal W 按「两两距离建引导树 → 加权 → 渐进 profile 比对」三步走，「once a gap, always a gap」不可撤销；T-Coffee 以一致性库、MUSCLE 以迭代细化补救；SP 分数逐对求和、冗余重复计票</text>
+  <rect x="30" y="132" width="660" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、多序列比对：列揭示家族保守性</text>
+  <text x="81" y="214" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="98" y="196" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="111" y="214" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">V</text>
+  <text x="141" y="214" font-size="13" fill="#475569" text-anchor="middle">L</text>
+  <text x="171" y="214" font-size="13" fill="#475569" text-anchor="middle">S</text>
+  <rect x="188" y="196" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="201" y="214" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="231" y="214" font-size="13" fill="#475569" text-anchor="middle">K</text>
+  <text x="261" y="214" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="278" y="196" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="291" y="214" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">V</text>
+  <text x="321" y="214" font-size="13" fill="#475569" text-anchor="middle">L</text>
+  <text x="351" y="214" font-size="13" fill="#475569" text-anchor="middle">S</text>
+  <rect x="368" y="196" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="381" y="214" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="411" y="214" font-size="13" fill="#475569" text-anchor="middle">K</text>
+  <text x="81" y="246" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="98" y="228" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="111" y="246" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">I</text>
+  <text x="141" y="246" font-size="13" fill="#475569" text-anchor="middle">V</text>
+  <text x="171" y="246" font-size="13" fill="#475569" text-anchor="middle">N</text>
+  <rect x="188" y="228" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="201" y="246" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="231" y="246" font-size="13" fill="#475569" text-anchor="middle">R</text>
+  <text x="261" y="246" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="278" y="228" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="291" y="246" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">I</text>
+  <text x="321" y="246" font-size="13" fill="#475569" text-anchor="middle">V</text>
+  <text x="351" y="246" font-size="13" fill="#475569" text-anchor="middle">N</text>
+  <rect x="368" y="228" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="381" y="246" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="411" y="246" font-size="13" fill="#475569" text-anchor="middle">R</text>
+  <text x="81" y="278" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="98" y="260" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="111" y="278" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">V</text>
+  <text x="141" y="278" font-size="13" fill="#475569" text-anchor="middle">I</text>
+  <text x="171" y="278" font-size="13" fill="#475569" text-anchor="middle">T</text>
+  <rect x="188" y="260" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="201" y="278" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="231" y="278" font-size="13" fill="#475569" text-anchor="middle">Q</text>
+  <text x="261" y="278" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="278" y="260" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="291" y="278" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">V</text>
+  <text x="321" y="278" font-size="13" fill="#475569" text-anchor="middle">I</text>
+  <text x="351" y="278" font-size="13" fill="#475569" text-anchor="middle">T</text>
+  <rect x="368" y="260" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="381" y="278" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="411" y="278" font-size="13" fill="#475569" text-anchor="middle">Q</text>
+  <text x="81" y="310" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="98" y="292" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="111" y="310" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">L</text>
+  <text x="141" y="310" font-size="13" fill="#475569" text-anchor="middle">V</text>
+  <text x="171" y="310" font-size="13" fill="#475569" text-anchor="middle">S</text>
+  <rect x="188" y="292" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="201" y="310" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="231" y="310" font-size="13" fill="#475569" text-anchor="middle">K</text>
+  <text x="261" y="310" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="278" y="292" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="291" y="310" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">L</text>
+  <text x="321" y="310" font-size="13" fill="#475569" text-anchor="middle">V</text>
+  <text x="351" y="310" font-size="13" fill="#475569" text-anchor="middle">S</text>
+  <rect x="368" y="292" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="381" y="310" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="411" y="310" font-size="13" fill="#475569" text-anchor="middle">K</text>
+  <text x="81" y="342" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="98" y="324" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="111" y="342" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">I</text>
+  <text x="141" y="342" font-size="13" fill="#475569" text-anchor="middle">L</text>
+  <text x="171" y="342" font-size="13" fill="#475569" text-anchor="middle">N</text>
+  <rect x="188" y="324" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="201" y="342" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="231" y="342" font-size="13" fill="#475569" text-anchor="middle">H</text>
+  <text x="261" y="342" font-size="13" fill="#475569" text-anchor="middle">A</text>
+  <rect x="278" y="324" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="291" y="342" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">I</text>
+  <text x="321" y="342" font-size="13" fill="#475569" text-anchor="middle">L</text>
+  <text x="351" y="342" font-size="13" fill="#475569" text-anchor="middle">N</text>
+  <rect x="368" y="324" width="26" height="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="381" y="342" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">D</text>
+  <text x="411" y="342" font-size="13" fill="#475569" text-anchor="middle">H</text>
+  <text x="111" y="386" font-size="13" fill="#6d28d9" text-anchor="middle">★</text>
+  <text x="201" y="386" font-size="13" fill="#6d28d9" text-anchor="middle">★</text>
+  <text x="291" y="386" font-size="13" fill="#6d28d9" text-anchor="middle">★</text>
+  <text x="381" y="386" font-size="13" fill="#6d28d9" text-anchor="middle">★</text>
+  <text x="70" y="412" font-size="11" fill="#6d28d9" font-weight="700">★ 保守列（全家族一致）</text>
+  <text x="70" y="448" font-size="12" fill="#475569">一列 = 家族的一个演化位置：保守列指向功能约束；列的统计是 profile、HMM 与系统树的共同入口。</text>
+  <text x="70" y="496" font-size="12" fill="#64748b">最优 MSA 是 NP 完全问题——精确求解不可行，实用工具皆为启发式。</text>
+  <rect x="710" y="132" width="660" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Clustal W 三步与渐进法的命门</text>
+  <rect x="740" y="200" width="184" height="108" rx="10" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="832" y="228" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">① 两两比对 → 距离</text>
+  <text x="832" y="262" font-size="11" fill="#475569" text-anchor="middle">算出所有序列两两距离，</text>
+  <text x="832" y="277" font-size="11" fill="#475569" text-anchor="middle">构建引导树</text>
+  <line x1="928" y1="254" x2="936" y2="254" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="940" y="200" width="184" height="108" rx="10" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1032" y="228" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">② 按树为序列加权</text>
+  <text x="1032" y="262" font-size="11" fill="#475569" text-anchor="middle">压制近缘冗余，降低重复计票</text>
+  <line x1="1128" y1="254" x2="1136" y2="254" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1140" y="200" width="184" height="108" rx="10" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1232" y="228" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">③ 沿树渐进比对</text>
+  <text x="1232" y="262" font-size="11" fill="#475569" text-anchor="middle">从最相似开始，</text>
+  <text x="1232" y="277" font-size="11" fill="#475569" text-anchor="middle">profile 对 profile 逐层合并</text>
+  <rect x="740" y="340" width="580" height="66" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="758" y="362" font-size="12" fill="#dc2626">「once a gap, always a gap」：渐进法的失误不可撤销——分歧大的序列集，准确率系统性下降。</text>
+  <rect x="740" y="424" width="580" height="96" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="758" y="450" font-size="13" fill="#1e293b" font-weight="700">两条补救路线</text>
+  <text x="758" y="476" font-size="11.5" fill="#475569">· T-Coffee：先把所有两两比对并入一致性库，再驱动渐进——慢而准。</text>
+  <text x="758" y="500" font-size="11.5" fill="#475569">· MUSCLE：迭代细化 + 对数期望分数，用速度换轮次。</text>
+  <rect x="30" y="656" width="1340" height="304" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="678.84" font-size="19" fill="#475569" font-weight="700">三、工具格局、SP 分数与质量评价</text>
+  <rect x="60" y="716" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="743.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">工具</text>
+  <rect x="190" y="716" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="743.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">核心思想</text>
+  <rect x="510" y="716" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="585" y="743.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">定位</text>
+  <rect x="60" y="760" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="788.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Clustal W</text>
+  <rect x="190" y="760" width="320" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="788.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">引导树 + 渐进比对</text>
+  <rect x="510" y="760" width="150" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="585" y="788.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">经典基线</text>
+  <rect x="60" y="806" width="600" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="806" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="834.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">T-Coffee</text>
+  <rect x="190" y="806" width="320" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="834.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">两两比对库一致性驱动</text>
+  <rect x="510" y="806" width="150" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="585" y="834.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">慢而准</text>
+  <rect x="60" y="852" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="880.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">MUSCLE</text>
+  <rect x="190" y="852" width="320" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="880.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">迭代细化 + 对数期望分数</text>
+  <rect x="510" y="852" width="150" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="585" y="880.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">快</text>
+  <rect x="700" y="712" width="640" height="92" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="720" y="740" font-size="13" fill="#1e293b" font-weight="700">SP 分数的偏倚：冗余不设防</text>
+  <text x="720" y="766" font-size="11.5" fill="#475569">一列 N 条序列有 N(N−1)/2 个残基对——近缘序列间的对会重复计票同一次演化事件，</text>
+  <text x="720" y="782" font-size="11.5" fill="#475569">与「序列加权」要压制的问题互为镜像。</text>
+  <rect x="700" y="820" width="640" height="84" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="720" y="848" font-size="13" fill="#1e293b" font-weight="700">质量评价</text>
+  <text x="720" y="874" font-size="11.5" fill="#475569">依赖 BAliBASE 类基准集与口径声明——「准确率」离开了基准集与统计口径就没有意义。</text>
+</svg>

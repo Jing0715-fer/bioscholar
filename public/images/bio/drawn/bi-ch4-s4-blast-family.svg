@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">BLAST 家族与参数调优：翻译方向、迭代与旋钮</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">tBLASTn 以蛋白查六读框翻译的核酸库、tBLASTx 两端皆译最慢；PSI-BLAST 由显著命中构建 PSSM 逐轮迭代、凭家族模式召回远缘同源，漂移源于非同源序列混入 profile 并自我强化；字长与 T 是速度—灵敏度主旋钮，SEG/DUST 屏蔽低复杂度</text>
+  <rect x="30" y="132" width="700" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、BLAST 家族：五个程序的翻译方向</text>
+  <rect x="60" y="210" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="112.5" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">程序</text>
+  <rect x="165" y="210" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">查询</text>
+  <rect x="305" y="210" width="185" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="397.5" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">数据库</text>
+  <rect x="490" y="210" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型用途</text>
+  <rect x="60" y="254" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="112.5" y="285.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">BLASTn</text>
+  <rect x="165" y="254" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="285.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸</text>
+  <rect x="305" y="254" width="185" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="397.5" y="285.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸库</text>
+  <rect x="490" y="254" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="285.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸序列搜索</text>
+  <rect x="60" y="306" width="640" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="306" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="112.5" y="337.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">BLASTp</text>
+  <rect x="165" y="306" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">蛋白</text>
+  <rect x="305" y="306" width="185" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="397.5" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">蛋白库</text>
+  <rect x="490" y="306" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">蛋白序列搜索</text>
+  <rect x="60" y="358" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="112.5" y="389.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">BLASTx</text>
+  <rect x="165" y="358" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="389.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸→翻译</text>
+  <rect x="305" y="358" width="185" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="397.5" y="389.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">蛋白库</text>
+  <rect x="490" y="358" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="389.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">新读段的六读框扫描</text>
+  <rect x="60" y="410" width="640" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="410" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="112.5" y="441.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">tBLASTn</text>
+  <rect x="165" y="410" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="441.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">蛋白</text>
+  <rect x="305" y="410" width="185" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="397.5" y="441.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸→六读框翻译</text>
+  <rect x="490" y="410" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="441.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">在基因组 / 转录组中找蛋白同源</text>
+  <rect x="60" y="462" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="112.5" y="493.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">tBLASTx</text>
+  <rect x="165" y="462" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="493.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸→翻译</text>
+  <rect x="305" y="462" width="185" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="397.5" y="493.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">核酸→六读框翻译</text>
+  <rect x="490" y="462" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="493.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">两端皆译 · 最慢</text>
+  <text x="60" y="540" font-size="11.5" fill="#475569">翻译方向决定语言：查询与库语言不一致的程序都要先翻译——tBLASTx 两端皆译，故最慢。</text>
+  <rect x="750" y="132" width="620" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、PSI-BLAST：迭代搜索与漂移风险</text>
+  <rect x="870" y="210" width="180" height="64" rx="10" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="960" y="247" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">① BLASTp 初始搜索</text>
+  <rect x="1130" y="210" width="180" height="64" rx="10" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1220" y="247" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">② 显著命中 → PSSM</text>
+  <rect x="1130" y="340" width="180" height="64" rx="10" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1220" y="377" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">③ profile 再搜索</text>
+  <rect x="870" y="340" width="180" height="64" rx="10" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="960" y="377" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">④ 召回远缘同源</text>
+  <line x1="1052" y1="242" x2="1128" y2="242" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1220" y1="276" x2="1220" y2="338" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1128" y1="372" x2="1052" y2="372" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="960" y1="338" x2="960" y2="276" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="1090" y="312" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">逐轮迭代</text>
+  <rect x="780" y="430" width="560" height="68" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="798" y="452" font-size="11.5" fill="#dc2626">漂移（profile 污染）：</text>
+  <text x="798" y="468" font-size="11.5" fill="#dc2626">非同源序列混入 PSSM 并在后续轮次自我强化——凭家族模式召回远缘同源的代价。</text>
+  <rect x="780" y="512" width="560" height="62" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.4"/>
+  <text x="798" y="534" font-size="11.5" fill="#065f46">防控三件套：收紧阈值 · 逐轮审查新命中 · 限制迭代轮数。</text>
+  <rect x="30" y="656" width="1340" height="304" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="678.84" font-size="19" fill="#475569" font-weight="700">三、参数调优：速度与灵敏度的旋钮</text>
+  <rect x="60" y="716" width="300" height="116" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="210" y="746" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">字长 word size</text>
+  <text x="210" y="776" font-size="11" fill="#475569" text-anchor="middle">速度—灵敏度的主旋钮：字长越长越快、越漏远缘</text>
+  <rect x="388" y="716" width="300" height="116" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="538" y="746" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">邻近字阈值 T</text>
+  <text x="538" y="776" font-size="11" fill="#475569" text-anchor="middle">只保留得分不低于 T 的种子字，同样换速度</text>
+  <rect x="716" y="716" width="300" height="116" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="866" y="746" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">SEG / DUST</text>
+  <text x="866" y="776" font-size="11" fill="#475569" text-anchor="middle">屏蔽低复杂度区段，避免「垃圾种子」制造假命中</text>
+  <rect x="1044" y="716" width="300" height="116" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1194" y="746" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">组成调整</text>
+  <text x="1194" y="776" font-size="11" fill="#475569" text-anchor="middle">抑制查询或库序列的组成偏性造成的假象</text>
+  <rect x="60" y="856" width="1280" height="58" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.4"/>
+  <text x="80" y="878" font-size="12.5" fill="#92400e" font-weight="600">报告负结果须交代程序、矩阵、字长与阈值口径——否则「未命中」不可解读。</text>
+</svg>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">同源性与比对基础：三词辨析、三种同源与三种模式</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">同源性是全或无的演化断言、不能量化为百分比，相似性与一致性才是可观测量；直系（物种形成，功能常保守）、旁系（复制，常已分化）、异同源（水平转移）；一致性 20–35% 为暮区；全局/局部/半全局分别对应整条同源、共享片段与嵌套关系</text>
+  <rect x="30" y="132" width="780" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、同源性、相似性、一致性：三词辨析</text>
+  <rect x="60" y="186" width="210" height="118" rx="10" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="165" y="214" font-size="16" fill="#4c1d95" text-anchor="middle" font-weight="700">同源性</text>
+  <text x="165" y="242" font-size="11" fill="#475569" text-anchor="middle">演化断言：源自共同祖先</text>
+  <text x="165" y="280" font-size="11" fill="#64748b" text-anchor="middle">全或无，不可量化为百分比</text>
+  <rect x="315" y="186" width="210" height="118" rx="10" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="420" y="214" font-size="16" fill="#075985" text-anchor="middle" font-weight="700">相似性</text>
+  <text x="420" y="242" font-size="11" fill="#475569" text-anchor="middle">打分方案下的可观测量</text>
+  <text x="420" y="280" font-size="11" fill="#64748b" text-anchor="middle">随打分矩阵与空位罚分而变</text>
+  <rect x="570" y="186" width="210" height="118" rx="10" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="675" y="214" font-size="16" fill="#134e4a" text-anchor="middle" font-weight="700">一致性</text>
+  <text x="675" y="242" font-size="11" fill="#475569" text-anchor="middle">比对中相同残基的比例</text>
+  <text x="675" y="280" font-size="11" fill="#64748b" text-anchor="middle">「57% 一致」是合法表述</text>
+  <rect x="60" y="322" width="720" height="54" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="76" y="344" font-size="11.5" fill="#dc2626">常见误用：「60% 同源」不存在——两条序列要么同源要么不同源；应写「在某某打分方案下比对，一致性为 57%」。</text>
+  <text x="60" y="412" font-size="13" fill="#1e293b" font-weight="700">一致性刻度与「暮区」</text>
+  <rect x="60" y="424" width="170" height="22" fill="#fee2e2" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="230" y="424" width="170" height="22" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <rect x="400" y="424" width="380" height="22" fill="#d1fae5" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="60" y="462" font-size="10.5" fill="#64748b">0%</text>
+  <text x="230" y="462" font-size="10.5" fill="#64748b" text-anchor="middle">20%</text>
+  <text x="400" y="462" font-size="10.5" fill="#64748b" text-anchor="middle">35%</text>
+  <text x="780" y="462" font-size="10.5" fill="#64748b" text-anchor="end">100%</text>
+  <text x="60" y="488" font-size="10.5" fill="#dc2626">≤20%：</text>
+  <text x="60" y="502" font-size="10.5" fill="#dc2626">远缘同源裸比对已难与随机区分</text>
+  <text x="232" y="488" font-size="10.5" fill="#92400e">暮区 20–35%：</text>
+  <text x="232" y="502" font-size="10.5" fill="#92400e">既可能远缘同源也可能是噪声——看保守残基位置、</text>
+  <text x="232" y="516" font-size="10.5" fill="#92400e">比对长度与多序列联合证据</text>
+  <text x="402" y="488" font-size="10.5" fill="#065f46">&gt;35%：通常可稳定判定同源关系</text>
+  <rect x="830" y="132" width="540" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="846" y="154.84" font-size="19" fill="#475569" font-weight="700">二、直系、旁系与异同源：溯源的三把尺</text>
+  <rect x="860" y="210" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="900" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">类型</text>
+  <rect x="940" y="210" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="992.5" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">起源事件</text>
+  <rect x="1045" y="210" width="165" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1127.5" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型情境</text>
+  <rect x="1210" y="210" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="237.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">功能保守预期</text>
+  <rect x="860" y="254" width="80" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="900" y="285.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">直系</text>
+  <rect x="940" y="254" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="992.5" y="285.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">物种形成</text>
+  <rect x="1045" y="254" width="165" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1127.5" y="285.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">不同物种同一基因</text>
+  <rect x="1210" y="254" width="130" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="285.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">功能常保守</text>
+  <rect x="860" y="306" width="480" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="860" y="306" width="80" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="900" y="337.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">旁系</text>
+  <rect x="940" y="306" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="992.5" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">复制</text>
+  <rect x="1045" y="306" width="165" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1127.5" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">同物种基因家族</text>
+  <rect x="1210" y="306" width="130" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">常已分化</text>
+  <rect x="860" y="358" width="80" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="900" y="389.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">异同源</text>
+  <rect x="940" y="358" width="105" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="992.5" y="389.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">水平转移</text>
+  <rect x="1045" y="358" width="165" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1127.5" y="389.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">跨物种获得</text>
+  <rect x="1210" y="358" width="130" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="389.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">视转移源而定</text>
+  <text x="1100" y="436" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">祖先基因</text>
+  <line x1="1100" y1="444" x2="1100" y2="452" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="1100" cy="458" r="7" fill="#be185d"/>
+  <text x="1120" y="462" font-size="10.5" fill="#831843">复制</text>
+  <line x1="1100" y1="465" x2="1000" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1100" y1="465" x2="1200" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <rect x="993" y="476" width="14" height="14" rx="2" fill="#0369a1"/>
+  <rect x="1193" y="476" width="14" height="14" rx="2" fill="#0369a1"/>
+  <text x="1000" y="470" font-size="10" fill="#075985" text-anchor="middle">物种形成</text>
+  <text x="1200" y="470" font-size="10" fill="#075985" text-anchor="middle">物种形成</text>
+  <line x1="1000" y1="490" x2="940" y2="510" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1000" y1="490" x2="1060" y2="510" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1200" y1="490" x2="1140" y2="510" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1200" y1="490" x2="1260" y2="510" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="940" cy="514" r="4.5" fill="#1e293b"/>
+  <text x="940" y="534" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">A1</text>
+  <circle cx="1060" cy="514" r="4.5" fill="#1e293b"/>
+  <text x="1060" y="534" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">A2</text>
+  <circle cx="1140" cy="514" r="4.5" fill="#1e293b"/>
+  <text x="1140" y="534" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">B1</text>
+  <circle cx="1260" cy="514" r="4.5" fill="#1e293b"/>
+  <text x="1260" y="534" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">B2</text>
+  <rect x="30" y="576" width="1340" height="384" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、全局、局部与半全局比对：三种生物学故事</text>
+  <rect x="60" y="636" width="400" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="260" y="664" font-size="14.5" fill="#134e4a" text-anchor="middle" font-weight="700">全局比对</text>
+  <rect x="100" y="690" width="180" height="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="100" y="726" width="180" height="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <line x1="100" y1="710" x2="100" y2="726" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="145" y1="710" x2="145" y2="726" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="190" y1="710" x2="190" y2="726" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="235" y1="710" x2="235" y2="726" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="280" y1="710" x2="280" y2="726" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="260" y="776" font-size="11.5" fill="#475569" text-anchor="middle">整条同源：端到端比较</text>
+  <rect x="500" y="636" width="400" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="700" y="664" font-size="14.5" fill="#075985" text-anchor="middle" font-weight="700">局部比对</text>
+  <rect x="540" y="690" width="240" height="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="610" y="690" width="70" height="20" fill="#0369a1" stroke="#075985" stroke-width="1.5"/>
+  <rect x="570" y="726" width="180" height="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="610" y="726" width="70" height="20" fill="#0369a1" stroke="#075985" stroke-width="1.5"/>
+  <text x="700" y="776" font-size="11.5" fill="#475569" text-anchor="middle">共享片段：各取内部最相似片段对</text>
+  <rect x="940" y="636" width="400" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1140" y="664" font-size="14.5" fill="#78350f" text-anchor="middle" font-weight="700">半全局比对</text>
+  <rect x="980" y="698" width="240" height="20" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="1040" y="734" width="120" height="20" fill="#b45309" stroke="#78350f" stroke-width="1.5"/>
+  <text x="1140" y="776" font-size="11.5" fill="#475569" text-anchor="middle">嵌套关系：末端自由（如读段对基因组）</text>
+  <text x="60" y="880" font-size="13.5" fill="#1e293b" font-weight="700">比对的五大用途</text>
+  <rect x="204.25" y="869.375" width="71.5" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="240" y="884.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">功能推断</text>
+  <rect x="411.375" y="869.375" width="97.25" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="460" y="884.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">保守残基定位</text>
+  <rect x="644.25" y="869.375" width="71.5" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="680" y="884.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">演化重建</text>
+  <rect x="864.25" y="869.375" width="71.5" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="900" y="884.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">实验设计</text>
+  <rect x="1084.25" y="869.375" width="71.5" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1120" y="884.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">数据质检</text>
+  <text x="60" y="928" font-size="11.5" fill="#64748b">选错模式会稀释或扭曲信号——先想清楚两条序列讲的是哪种生物学故事。</text>
+</svg>

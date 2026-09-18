@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">可重复性、伦理与数据治理：三重链条、三件套与三大考场</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三重链条＋FAIR；git / 容器 / 工作流三件套；Excel 转日期污染约 1/5 已发表基因列表；三大考场免疫自建自评；AI 不署名、须披露</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、可重复性三重链条与 FAIR 原则</text>
+  <rect x="60" y="200" width="175" height="64" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="147" y="228" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">数据</text>
+  <text x="147" y="250" font-size="10.5" fill="#475569" text-anchor="middle">原始 + 处理后</text>
+  <rect x="280" y="200" width="175" height="64" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="367" y="228" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">代码</text>
+  <text x="367" y="250" font-size="10.5" fill="#475569" text-anchor="middle">脚本 + 版本</text>
+  <rect x="500" y="200" width="175" height="64" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="587" y="228" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">环境</text>
+  <text x="587" y="250" font-size="10.5" fill="#475569" text-anchor="middle">依赖 + 容器</text>
+  <circle cx="250" cy="232" r="8" fill="none" stroke="#64748b" stroke-width="2"/>
+  <circle cx="264" cy="232" r="8" fill="none" stroke="#64748b" stroke-width="2"/>
+  <circle cx="470" cy="232" r="8" fill="none" stroke="#64748b" stroke-width="2"/>
+  <circle cx="484" cy="232" r="8" fill="none" stroke="#64748b" stroke-width="2"/>
+  <text x="60" y="310" font-size="12.5" fill="#1e293b" font-weight="700">FAIR 原则（操作纲领）：</text>
+  <rect x="80.0543" y="336.65" width="69.8914" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="115" y="349.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">F · 可发现</text>
+  <rect x="220.0543" y="336.65" width="69.8914" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="255" y="349.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">A · 可访问</text>
+  <rect x="354.3893" y="336.65" width="81.22139999999999" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="395" y="349.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">I · 可互操作</text>
+  <rect x="495.0543" y="336.65" width="69.8914" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="530" y="349.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">R · 可重用</text>
+  <text x="115" y="374" font-size="10" fill="#64748b" text-anchor="middle">持久标识（DOI）</text>
+  <text x="255" y="374" font-size="10" fill="#64748b" text-anchor="middle">受控开放访问</text>
+  <text x="395" y="374" font-size="10" fill="#64748b" text-anchor="middle">共用格式与本体</text>
+  <text x="530" y="374" font-size="10" fill="#64748b" text-anchor="middle">元数据 + 许可</text>
+  <text x="60" y="428" font-size="11" fill="#475569">可重复性依赖数据、代码、环境三重链条齐备——缺一环，他人便无法从你的论文走到你的数字。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、可重复三件套与细节失守的代价</text>
+  <rect x="730" y="196" width="190" height="70" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.7"/>
+  <text x="825" y="224" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">git</text>
+  <text x="825" y="248" font-size="10.5" fill="#475569" text-anchor="middle">版本控制</text>
+  <rect x="940" y="196" width="190" height="70" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.7"/>
+  <text x="1035" y="224" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">容器</text>
+  <text x="1035" y="248" font-size="10.5" fill="#475569" text-anchor="middle">锁死软件环境</text>
+  <rect x="1150" y="196" width="190" height="70" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.7"/>
+  <text x="1245" y="224" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">工作流管理器</text>
+  <text x="1245" y="248" font-size="10.5" fill="#475569" text-anchor="middle">Nextflow / Snakemake</text>
+  <text x="730" y="294" font-size="11" fill="#475569">工作流管理器声明依赖、支持断点续跑，并记录 provenance（数据血缘）。</text>
+  <text x="730" y="344" font-size="12.5" fill="#dc2626" font-weight="700">细节失守：Excel 基因名转日期</text>
+  <rect x="730" y="364" width="170" height="44" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="815" y="391" font-size="11.5" fill="#475569" text-anchor="middle">SEPT2 · 基因名</text>
+  <line x1="904" y1="386" x2="944" y2="386" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="948" y="364" width="170" height="44" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1033" y="391" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">2-Sep · 日期</text>
+  <text x="924" y="432" font-size="10" fill="#dc2626" text-anchor="middle">Excel 自动转成日期</text>
+  <text x="1250" y="386" font-size="24" fill="#dc2626" text-anchor="middle" font-weight="700">≈ 1/5</text>
+  <text x="1150" y="412" font-size="10.5" fill="#475569">已发表基因列表被此类事故污染</text>
+  <text x="730" y="462" font-size="11" fill="#475569">细节失守可瓦解文献地基——这正是「数据、代码、环境」要机器可执行的原因。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、基准社区：方法的考场</text>
+  <rect x="60" y="640" width="180" height="70" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="150" y="670" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">CASP</text>
+  <text x="150" y="694" font-size="10.5" fill="#475569" text-anchor="middle">结构预测（双盲）</text>
+  <rect x="260" y="640" width="180" height="70" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="350" y="670" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">CAFA</text>
+  <text x="350" y="694" font-size="10.5" fill="#475569" text-anchor="middle">功能注释</text>
+  <rect x="460" y="640" width="180" height="70" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="550" y="670" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">CAMDA</text>
+  <text x="550" y="694" font-size="10.5" fill="#475569" text-anchor="middle">数据挑战</text>
+  <text x="60" y="762" font-size="12" fill="#1e293b" font-weight="700">免疫自建自评的三条规矩：</text>
+  <circle cx="78" cy="794" r="11" fill="#0369a1" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="78" y="798" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">1</text>
+  <text x="100" y="798" font-size="11.5" fill="#475569">预测先于答案揭晓</text>
+  <circle cx="78" cy="828" r="11" fill="#0369a1" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="78" y="832" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">2</text>
+  <text x="100" y="832" font-size="11.5" fill="#475569">统一指标、统一口径</text>
+  <circle cx="78" cy="862" r="11" fill="#0369a1" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="78" y="866" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">3</text>
+  <text x="100" y="866" font-size="11.5" fill="#475569">公共题目、公共数据</text>
+  <text x="330" y="788" font-size="11" fill="#475569">组织者先收预测、后公布答案——任何人无法对着答案调方法；</text>
+  <text x="330" y="803" font-size="11" fill="#475569">双盲基准由此驱动研发（CASP14 即一例）。</text>
+  <text x="60" y="908" font-size="11" fill="#475569">「自建自评」无法自证公平；基准社区把评价权交给中立的考场。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、基因组隐私、ELSI 与 AI 时代的作者责任</text>
+  <text x="730" y="648" font-size="12.5" fill="#dc2626" font-weight="700">基因组匿名近乎幻觉</text>
+  <rect x="730" y="672" width="150" height="48" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="805" y="700" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">去标识队列</text>
+  <rect x="730" y="752" width="150" height="48" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="805" y="780" font-size="11" fill="#475569" text-anchor="middle">系谱 / 公开数据库</text>
+  <line x1="884" y1="696" x2="908" y2="714" stroke="#64748b" stroke-width="1.6"/>
+  <line x1="884" y1="776" x2="908" y2="758" stroke="#64748b" stroke-width="1.6"/>
+  <circle cx="940" cy="736" r="36" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="940" y="741" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">再识别</text>
+  <text x="730" y="830" font-size="11" fill="#475569">对策：受控访问、分层同意与 ELSI 治理框架；</text>
+  <text x="730" y="845" font-size="11" fill="#475569">代表性偏差是统计与公平的双重问题。</text>
+  <text x="1100" y="648" font-size="12.5" fill="#1e293b" font-weight="700">生成式 AI 的四条边界</text>
+  <text x="1100" y="680" font-size="11.5" fill="#475569">· 不得署名作者</text>
+  <text x="1100" y="706" font-size="11.5" fill="#475569">· 使用须披露</text>
+  <text x="1100" y="732" font-size="11.5" fill="#475569">· 引用须核实</text>
+  <text x="1100" y="758" font-size="11.5" fill="#475569">· 机密数据不得投喂</text>
+  <text x="1100" y="796" font-size="12" fill="#64748b" font-weight="700">工具半衰期以年计，</text>
+  <text x="1100" y="818" font-size="12" fill="#64748b" font-weight="700">原则半衰期以世纪计。</text>
+  <text x="730" y="884" font-size="11" fill="#475569">预印本加速交流，但不代表已完成同行评议。</text>
+</svg>

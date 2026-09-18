@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">质谱原理与蛋白质鉴定：软电离、质量阶梯与靶-诱饵 FDR</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">ESI 与 MALDI 两项软电离分享 2002 年诺贝尔化学奖；四类分析器分工——四极杆滤门、离子阱多级碎裂、Orbitrap 十万级分辨率加 ppm 精度、TOF 质量范围宽；MS1 选母离子、MS2 读 b/y 离子质量阶梯推序列，可鉴肽段多在 7–25 残基、漏切允许 0–2 个；靶-诱饵策略以假目标标定假阳性，谱/肽/蛋白三级各控 FDR 约 1%；动态范围约七个数量级是根本瓶颈</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、软电离（2002 年诺贝尔化学奖）与肽段质量阶梯</text>
+  <rect x="60" y="186" width="300" height="84" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="210" y="214" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">ESI 电喷雾电离</text>
+  <text x="210" y="240" font-size="11" fill="#475569" text-anchor="middle">多电荷离子雾化 · 与液相色谱在线耦合</text>
+  <rect x="360" y="186" width="300" height="84" rx="9" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="510" y="214" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">MALDI 基质辅助激光解吸</text>
+  <text x="510" y="240" font-size="11" fill="#475569" text-anchor="middle">单电荷离子 · 常配 TOF 分析器</text>
+  <text x="60" y="296" font-size="11.5" fill="#475569">两项「软电离」让大分子带电进入气相而不被打碎——分享 2002 年诺贝尔化学奖。</text>
+  <text x="60" y="336" font-size="13" fill="#1e293b" font-weight="700">MS1 选母离子 → 碎裂 → MS2 读 b / y 离子质量阶梯</text>
+  <line x1="80" y1="464" x2="640" y2="464" stroke="#475569" stroke-width="1.8"/>
+  <line x1="110" y1="464" x2="110" y2="409" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="110" cy="409" r="3.6" fill="#be185d"/>
+  <text x="110" y="484" font-size="10" fill="#64748b" text-anchor="middle">y1</text>
+  <line x1="175" y1="464" x2="175" y2="384" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="175" cy="384" r="3.6" fill="#be185d"/>
+  <text x="175" y="484" font-size="10" fill="#64748b" text-anchor="middle">y2</text>
+  <line x1="240" y1="464" x2="240" y2="396" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="240" cy="396" r="3.6" fill="#be185d"/>
+  <text x="240" y="484" font-size="10" fill="#64748b" text-anchor="middle">y3</text>
+  <line x1="305" y1="464" x2="305" y2="369" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="305" cy="369" r="3.6" fill="#be185d"/>
+  <text x="305" y="484" font-size="10" fill="#64748b" text-anchor="middle">y4</text>
+  <line x1="370" y1="464" x2="370" y2="389" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="370" cy="389" r="3.6" fill="#be185d"/>
+  <text x="370" y="484" font-size="10" fill="#64748b" text-anchor="middle">y5</text>
+  <line x1="435" y1="464" x2="435" y2="354" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="435" cy="354" r="3.6" fill="#be185d"/>
+  <text x="435" y="484" font-size="10" fill="#64748b" text-anchor="middle">y6</text>
+  <line x1="500" y1="464" x2="500" y2="376" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="500" cy="376" r="3.6" fill="#be185d"/>
+  <text x="500" y="484" font-size="10" fill="#64748b" text-anchor="middle">y7</text>
+  <text x="545" y="386" font-size="10.5" fill="#831843" font-weight="600">相邻峰质量差 ＝ 残基质量 → 推出序列</text>
+  <text x="60" y="512" font-size="11.5" fill="#475569">可被可靠鉴定的肽段多在 7–25 个残基（太短特异性不足、太长碎片谱难解读）；胰酶特异性高，</text>
+  <text x="60" y="528" font-size="11.5" fill="#475569">搜索允许 0–2 个漏切。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、分析器谱系与 DDA 采集</text>
+  <rect x="740" y="188" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="215.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">分析器</text>
+  <rect x="870" y="188" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="215.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">工作原理 / 强项</text>
+  <rect x="1170" y="188" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="215.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型角色</text>
+  <rect x="740" y="232" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="257.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">四极杆</text>
+  <rect x="870" y="232" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="257.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">射频电场作滤门</text>
+  <rect x="1170" y="232" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="257.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">母离子筛选</text>
+  <rect x="740" y="272" width="600" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="272" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="297.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">离子阱</text>
+  <rect x="870" y="272" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="297.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">可多级碎裂（MSⁿ）</text>
+  <rect x="1170" y="272" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="297.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">深度碎裂</text>
+  <rect x="740" y="312" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="337.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">Orbitrap</text>
+  <rect x="870" y="312" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">十万级分辨率 · ppm 精度</text>
+  <rect x="1170" y="312" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="337.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">精测质量</text>
+  <rect x="740" y="352" width="600" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="352" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="377.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">TOF</text>
+  <rect x="870" y="352" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="377.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">质量范围宽</text>
+  <rect x="1170" y="352" width="170" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="377.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">快速检测</text>
+  <text x="740" y="420" font-size="11.5" fill="#475569">混合仪器「筛选 ＋ 精测」：四极杆选离子，Orbitrap / TOF 精测质量。</text>
+  <text x="740" y="452" font-size="11.5" fill="#475569">DDA：每张一级谱后挑最强若干母离子碎裂——高效但随机偏向高丰度，低丰度肽被遗漏；PSM（肽段–谱图匹配）</text>
+  <text x="740" y="468" font-size="11.5" fill="#475569">是搜索的基本单元，开放搜索可捕获意外修饰。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、数据库搜索与靶-诱饵策略</text>
+  <rect x="60" y="630" width="160" height="44" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="140" y="657" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">实测谱图</text>
+  <line x1="220" y1="652" x2="254" y2="652" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="256" y="630" width="230" height="44" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="371" y="657" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">理论谱比对（PSM）</text>
+  <line x1="486" y1="652" x2="520" y2="652" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="522" y="630" width="150" height="44" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="597" y="657" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">打分排序</text>
+  <rect x="60" y="700" width="280" height="120" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="200" y="724" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">靶库（真实蛋白序列）</text>
+  <line x1="84" y1="744" x2="316" y2="744" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="84" y1="758" x2="316" y2="758" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="84" y1="772" x2="316" y2="772" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="84" y1="786" x2="316" y2="786" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="84" y1="800" x2="316" y2="800" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="120" cy="751" r="4.5" fill="#be185d"/>
+  <circle cx="262" cy="793" r="4.5" fill="#be185d"/>
+  <rect x="360" y="700" width="280" height="120" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="500" y="724" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">诱饵库（打乱 / 反转的假序列）</text>
+  <line x1="384" y1="744" x2="616" y2="744" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="384" y1="758" x2="616" y2="758" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="384" y1="772" x2="616" y2="772" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="384" y1="786" x2="616" y2="786" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="384" y1="800" x2="616" y2="800" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="470" cy="765" r="4.5" fill="#dc2626"/>
+  <text x="340" y="852" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">FDR ≈ 诱饵命中数 ÷ 靶命中数（或经公式修正的估计）</text>
+  <rect x="189.52859999999998" y="877.8" width="300.94280000000003" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="340" y="892.32" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">谱级 · 肽级 · 蛋白级 FDR 各 ≤ 1% —— 行业默认门槛</text>
+  <text x="60" y="930" font-size="11.5" fill="#475569">搜索的两大暗礁：可变修饰扩张搜索空间；共享肽段无法唯一归属同源蛋白。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、动态范围：七个数量级的根本瓶颈</text>
+  <rect x="760" y="640" width="300" height="240" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="820" x2="1060" y2="820" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="835" y1="880" x2="835" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="760" x2="1060" y2="760" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="910" y1="880" x2="910" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="700" x2="1060" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="985" y1="880" x2="985" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="880" x2="760" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="760" y="902" font-size="13" fill="#64748b" text-anchor="middle">低</text>
+  <line x1="1060" y1="880" x2="1060" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="1060" y="902" font-size="13" fill="#64748b" text-anchor="middle">高</text>
+  <line x1="754" y1="880" x2="760" y2="880" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="884" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="754" y1="640" x2="760" y2="640" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="644" font-size="13" fill="#64748b" text-anchor="end">↑</text>
+  <text x="714" y="760" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">蛋白种类数</text>
+  <text x="910" y="628" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">丰度谱（示意）</text>
+  <path d="M760,664 C767.5,671.2 790.0,693.2 805,707.2 C820.0,721.2 835.0,734.4 850,748 C865.0,761.6 880.0,776.4 895,788.8 C910.0,801.2 925.0,812.4 940,822.4 C955.0,832.4 970.0,841.6 985,848.8 C1000.0,856.0 1017.5,861.2 1030,865.6 C1042.5,870.0 1055.0,873.6 1060,875.2" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="800" y="652" font-size="10.5" fill="#134e4a" font-weight="600">低丰度：种类多</text>
+  <text x="1040" y="780" font-size="10.5" fill="#134e4a" text-anchor="end" font-weight="600">高丰度：种类少</text>
+  <path d="M 760,911 Q 760,902 769,902 M 1051,902 Q 1060,902 1060,911" fill="none" stroke="#dc2626" stroke-width="1.7"/>
+  <line x1="769" y1="902" x2="1051" y2="902" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="910" y="926" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="600">动态范围横跨约七个数量级</text>
+  <text x="1090" y="660" font-size="11" fill="#475569">高丰度蛋白掩盖低丰度信号——动态范围是质谱的根本瓶颈。</text>
+  <text x="1090" y="732" font-size="11" fill="#475569">由此而生「发现（DDA 扫描）＋ 验证（靶向）</text>
+  <text x="1090" y="747" font-size="11" fill="#475569">」的两段式工作流。</text>
+  <text x="1090" y="800" font-size="11" fill="#64748b">肽指纹（PMF）只比母离子质量集——早期方案，</text>
+  <text x="1090" y="815" font-size="11" fill="#64748b">已被串联质谱取代。</text>
+</svg>

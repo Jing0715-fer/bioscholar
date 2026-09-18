@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">标识符与数据互操作：版本号、次级登录号与 FAIR</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">「登录号.版本号」标识内容级序列，实质修改版本加一、旧版仍可引用；GI 号 2016 年起退役；合并与拆分经次级登录号保留旧门牌；dbXref 质量取决于同步频率；FAIR（2016）要求可发现、可访问、可互操作、可重用</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、登录号.版本号：小数点的分量</text>
+  <text x="60" y="196" font-size="12.5" fill="#475569">INSDC 与 UniProt 均以「登录号.版本号」标识内容级序列：</text>
+  <rect x="80" y="216" width="200" height="56" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="180" y="250" font-size="16" fill="#134e4a" text-anchor="middle" font-weight="700">AB000001.1</text>
+  <line x1="288" y1="244" x2="368" y2="244" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="388" y="216" width="200" height="56" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="488" y="250" font-size="16" fill="#134e4a" text-anchor="middle" font-weight="700">AB000001.2</text>
+  <text x="328" y="224" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">序列实质修改</text>
+  <text x="328" y="288" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">版本 +1</text>
+  <text x="60" y="318" font-size="12" fill="#475569">旧版本号仍可引用——小数点后的数字锁定序列内容。</text>
+  <rect x="60" y="340" width="570" height="100" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="80" y="368" font-size="13.5" fill="#1e293b" font-weight="700">GI 号：已退役的历史包袱</text>
+  <text x="80" y="392" font-size="11.5" fill="#475569">NCBI 曾并行发放的无含义整数，随序列内容变化而更换；</text>
+  <text x="80" y="409" font-size="11.5" fill="#475569">2016 年起逐步退役——老文献里的 GI 号都要翻译回「登录号.版本」。</text>
+  <text x="60" y="478" font-size="13" fill="#075985" font-weight="700">记录主键的三元组：</text>
+  <rect x="272.46" y="481.8" width="55.08" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="300" y="496.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">数据库</text>
+  <rect x="372.46" y="481.8" width="55.08" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="400" y="496.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">登录号</text>
+  <rect x="472.46" y="481.8" width="55.08" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="500" y="496.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">版本号</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、合并、拆分与改名：旧门牌的去向</text>
+  <text x="740" y="194" font-size="12.5" fill="#1e293b" font-weight="700">合并（merge）</text>
+  <rect x="740" y="206" width="140" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="810" y="232" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">A000001</text>
+  <rect x="740" y="266" width="140" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="810" y="292" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">A000002</text>
+  <line x1="886" y1="230" x2="956" y2="244" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="886" y1="288" x2="956" y2="272" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="960" y="216" width="190" height="84" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1055" y="250" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">A000003</text>
+  <text x="1055" y="278" font-size="11" fill="#075985" text-anchor="middle">主登录号</text>
+  <text x="1180" y="240" font-size="11" fill="#475569">旧号转为次级登录号，</text>
+  <text x="1180" y="255" font-size="11" fill="#475569">保留旧门牌</text>
+  <text x="740" y="312" font-size="12.5" fill="#1e293b" font-weight="700">拆分（split）</text>
+  <rect x="740" y="326" width="190" height="44" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="835" y="352" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">A000004</text>
+  <line x1="936" y1="344" x2="956" y2="320" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="936" y1="344" x2="956" y2="372" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="960" y="300" width="140" height="44" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1030" y="326" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">A000005</text>
+  <rect x="960" y="366" width="140" height="44" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1030" y="392" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">A000006</text>
+  <text x="1180" y="330" font-size="11" fill="#475569">拆分同样以次级登录号保留旧门牌</text>
+  <rect x="740" y="440" width="580" height="72" rx="8" fill="#fef3c7" fill-opacity="0.6" stroke="#d97706" stroke-width="1.4"/>
+  <text x="758" y="464" font-size="11.5" fill="#92400e">基因改名：查命名变更史（改名记录、次级登录号），而非怀疑数据缺失。</text>
+  <rect x="30" y="576" width="1340" height="384" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、交叉引用、映射困境与 FAIR 原则</text>
+  <rect x="80" y="652" width="220" height="60" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="190" y="686" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">UniProt 命名空间</text>
+  <rect x="420" y="652" width="220" height="60" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="530" y="686" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">RefSeq 命名空间</text>
+  <line x1="306" y1="682" x2="414" y2="682" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)" marker-start="url(#arr-ink)"/>
+  <text x="360" y="660" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">dbXref</text>
+  <text x="80" y="744" font-size="11.5" fill="#475569">交叉引用：同一实体在多命名空间的双向登记——质量取决于同步频率，跳转可能隐含版本漂移。</text>
+  <rect x="60" y="788" width="600" height="110" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="80" y="814" font-size="13" fill="#dc2626" font-weight="700">标识符映射的三重困境</text>
+  <text x="80" y="838" font-size="11.5" fill="#475569">一对多 · 版本错位 · 语义漂移（坐标转换 liftOver 同理）——解药是解析服务 + 主键三元组</text>
+  <text x="80" y="854" font-size="11.5" fill="#475569">（库 / 登录号 / 版本）。</text>
+  <rect x="700" y="660" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="687.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">原则</text>
+  <rect x="810" y="660" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="687.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">含义</text>
+  <rect x="1010" y="660" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="687.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">典型落实</text>
+  <rect x="700" y="704" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="730.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">F 可发现</text>
+  <rect x="810" y="704" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="730.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">数据与元数据可被找到</text>
+  <rect x="1010" y="704" width="330" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="730.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">持久标识 + 富元数据登记</text>
+  <rect x="700" y="746" width="640" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="746" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="772.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">A 可访问</text>
+  <rect x="810" y="746" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="772.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">能以标准协议获取</text>
+  <rect x="1010" y="746" width="330" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="772.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">开放仓库 / 受控访问审批</text>
+  <rect x="700" y="788" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="814.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">I 可互操作</text>
+  <rect x="810" y="788" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="814.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">跨系统交换与整合</text>
+  <rect x="1010" y="788" width="330" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="814.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">共用词表 · dbXref · 格式标准</text>
+  <rect x="700" y="830" width="640" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="830" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="856.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">R 可重用</text>
+  <rect x="810" y="830" width="200" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="856.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">可复用于新问题</text>
+  <rect x="1010" y="830" width="330" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1175" y="856.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">机器可读元数据 + 许可规范</text>
+  <text x="700" y="910" font-size="11.5" fill="#475569">FAIR 原则（2016 年提出）：核心是机器可读的元数据与许可规范——可视为本章内容的总结陈词。</text>
+</svg>

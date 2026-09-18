@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质相互作用网络：Y2H 与 AP-MS 的互补、置信分层与合成致死</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Y2H（Fields 与 Song 1989）把互作翻译为报告基因读出、测直接配对，但受自激活等假阳性（高通量被估在数成量级）与膜/分泌蛋白难入核的假阴性双重困扰；AP-MS 以标签 pull-down 加质谱回答「同复合物」，空标签对照与 SAINT/CompPASS 打分去噪；数据须分层置信，多源独立证据才升高置信；复合物展开分团块全连与 spokes 两口径；Jeong 等 2001 发现高度数 hub 更可能必需但相关受混杂；网络拓扑与合成致死等遗传筛选交叉是靶点发现的高产策略</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、酵母双杂交（Y2H）：核内的直接配对读出</text>
+  <rect x="110" y="230" width="120" height="40" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="170" y="255" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">BD · 结合域</text>
+  <line x1="230" y1="250" x2="244" y2="250" stroke="#6d28d9" stroke-width="2"/>
+  <rect x="244" y="230" width="130" height="40" rx="7" fill="#ede9fe" fill-opacity="0.6" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="309" y="255" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">诱饵蛋白</text>
+  <rect x="110" y="310" width="120" height="40" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="170" y="335" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">AD · 激活域</text>
+  <line x1="230" y1="330" x2="244" y2="330" stroke="#be185d" stroke-width="2"/>
+  <rect x="244" y="310" width="130" height="40" rx="7" fill="#fce7f3" fill-opacity="0.6" stroke="#be185d" stroke-width="1.8"/>
+  <text x="309" y="335" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">猎物蛋白</text>
+  <line x1="309" y1="270" x2="309" y2="310" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="330" y="296" font-size="11.5" fill="#dc2626" font-weight="700">互作？</text>
+  <line x1="160" y1="272" x2="200" y2="396" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <line x1="160" y1="352" x2="216" y2="396" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="196" y="398" width="44" height="38" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="218" y="422" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">UAS</text>
+  <rect x="240" y="398" width="210" height="38" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="345" y="422" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">报告基因</text>
+  <rect x="410" y="230" width="250" height="120" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="535" y="256" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">读出逻辑</text>
+  <text x="425" y="280" font-size="11" fill="#475569">互作 ⇒ BD 与 AD 相邻 ⇒ 报告基因表达；</text>
+  <text x="425" y="295" font-size="11" fill="#475569">不互作 ⇒ 无读出。测的是直接配对</text>
+  <text x="425" y="310" font-size="11" fill="#475569">（Fields 与 Song，1989 创建）。</text>
+  <text x="60" y="466" font-size="11.5" fill="#475569">假阳性：自激活、过表达强迫互作；假阴性：膜蛋白 / 分泌蛋白难入核——高通量屏幕的假阳性比例被估在数成量级。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、亲和纯化质谱（AP-MS）与置信度分层</text>
+  <rect x="740" y="190" width="190" height="60" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="835" y="214" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">标签蛋白 pull-down</text>
+  <text x="835" y="236" font-size="10.5" fill="#475569" text-anchor="middle">亲和纯化＋空标签对照</text>
+  <line x1="930" y1="220" x2="960" y2="220" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="962" y="190" width="190" height="60" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="1057" y="214" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">质谱鉴定共存蛋白</text>
+  <text x="1057" y="236" font-size="10.5" fill="#475569" text-anchor="middle">SAINT / CompPASS 打分</text>
+  <line x1="1152" y1="220" x2="1182" y2="220" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="1184" y="190" width="156" height="60" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="1262" y="214" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">复合物成员名单</text>
+  <text x="1262" y="236" font-size="10.5" fill="#475569" text-anchor="middle">「同复合物」</text>
+  <text x="740" y="278" font-size="11.5" fill="#475569">AP-MS 回答「同复合物」而非「直接接触」；空标签对照与 SAINT / CompPASS 打分是去噪关键。</text>
+  <text x="740" y="326" font-size="13" fill="#1e293b" font-weight="700">互作数据的置信度分层</text>
+  <rect x="740" y="342" width="600" height="32" rx="6" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1040" y="364" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">低通量文献验证（金标准）</text>
+  <rect x="790" y="382" width="500" height="32" rx="6" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1040" y="404" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">高通量屏幕（Y2H / AP-MS）</text>
+  <rect x="840" y="422" width="400" height="32" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1040" y="444" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">计算预测（转移 / 共演化）</text>
+  <text x="740" y="486" font-size="11.5" fill="#475569">多源独立证据才升高置信；黏性蛋白是常见污染源，互作具细胞类型与条件特异性——跨条件平移须核对实验注释。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、复合物展开两口径与 hub-必需基因相关</text>
+  <text x="170" y="640" font-size="12.5" fill="#1e293b" font-weight="700">团块全连（clique）</text>
+  <line x1="130" y1="690" x2="200" y2="664" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="130" y1="690" x2="225" y2="724" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="130" y1="690" x2="160" y2="744" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="130" y1="690" x2="105" y2="720" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="200" y1="664" x2="225" y2="724" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="200" y1="664" x2="160" y2="744" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="200" y1="664" x2="105" y2="720" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="225" y1="724" x2="160" y2="744" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="225" y1="724" x2="105" y2="720" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="160" y1="744" x2="105" y2="720" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="130" cy="690" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="200" cy="664" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="225" cy="724" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="160" cy="744" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="105" cy="720" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="450" y="640" font-size="12.5" fill="#1e293b" font-weight="700">spokes（辐条）</text>
+  <line x1="450" y1="704" x2="390" y2="680" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="450" y1="704" x2="390" y2="740" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="450" y1="704" x2="450" y2="660" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="450" y1="704" x2="450" y2="748" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="450" y1="704" x2="510" y2="704" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="390" cy="680" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="390" cy="740" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="450" cy="660" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="450" cy="748" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="510" cy="704" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="450" cy="704" r="11" fill="#be185d" fill-opacity="0.8"/>
+  <text x="60" y="780" font-size="11.5" fill="#475569">同一复合物两种展开口径：全连团块或以诱饵为辐条——同一数据长出不同的「度」。</text>
+  <text x="60" y="830" font-size="13" fill="#1e293b" font-weight="700">hub 与必需基因（Jeong 等 2001）</text>
+  <rect x="108" y="899.12" width="64" height="28.88" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="140" y="948" font-size="12.5" fill="#64748b" text-anchor="middle">低度数档</text>
+  <rect x="208" y="868.72" width="64" height="59.28" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="240" y="948" font-size="12.5" fill="#64748b" text-anchor="middle">高度数档</text>
+  <text x="190" y="868" font-size="10.5" fill="#64748b" text-anchor="middle">必需基因比例（相对示意）</text>
+  <text x="320" y="856" font-size="11" fill="#475569">酵母互作网络：按度分层后，</text>
+  <text x="320" y="871" font-size="11" fill="#475569">最高度数档的必需基因比例显著高于低度档。</text>
+  <text x="320" y="906" font-size="11" fill="#dc2626">但该相关受表达量与研究偏差混杂——「富裕联系」不等于「因果命脉」。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、里程碑时间线与网络的价值</text>
+  <line x1="760" y1="668" x2="1320" y2="668" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="788" cy="668" r="6.5" fill="#475569"/>
+  <line x1="788" y1="659" x2="788" y2="638" stroke="#475569" stroke-width="1.7"/>
+  <text x="788" y="618" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1989</text>
+  <text x="788" y="598" font-size="12" fill="#64748b" text-anchor="middle">Fields–Song 创建 Y2H</text>
+  <circle cx="984" cy="668" r="6.5" fill="#0369a1"/>
+  <line x1="984" y1="677" x2="984" y2="698" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="984" y="718" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2000 前后</text>
+  <text x="984" y="738" font-size="12" fill="#64748b" text-anchor="middle">基因组规模 Y2H 互作图谱</text>
+  <circle cx="1140.8" cy="668" r="6.5" fill="#6d28d9"/>
+  <line x1="1140.8" y1="659" x2="1140.8" y2="638" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="1140.8" y="618" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2006</text>
+  <text x="1140.8" y="598" font-size="12" fill="#64748b" text-anchor="middle">两大 AP-MS 计划同期发表</text>
+  <circle cx="1292" cy="668" r="6.5" fill="#d97706"/>
+  <line x1="1292" y1="677" x2="1292" y2="698" stroke="#d97706" stroke-width="1.7"/>
+  <text x="1292" y="718" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">启示</text>
+  <text x="1292" y="738" font-size="12" fill="#64748b" text-anchor="middle">复合物边界不一致 → 条件依赖</text>
+  <text x="760" y="742" font-size="13" fill="#1e293b" font-weight="700">合成致死：冗余通路的交叉点</text>
+  <rect x="760" y="762" width="190" height="40" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="855" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">通路 A（基因 a）</text>
+  <rect x="760" y="838" width="190" height="40" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="855" y="863" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">通路 B（基因 b）</text>
+  <rect x="1160" y="800" width="170" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1245" y="825" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">核心功能</text>
+  <line x1="950" y1="782" x2="1160" y2="810" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="950" y1="858" x2="1160" y2="830" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="760" y="906" font-size="11" fill="#475569">单独失活任一条 → 另一条代偿，细胞存活；两条同时失活 → 合成致死。</text>
+  <text x="760" y="944" font-size="11.5" fill="#64748b" font-weight="600">网络拓扑 × 合成致死等遗传筛选是靶点发现的高产策略——网络的价值在提出可检验的因果假设。</text>
+</svg>

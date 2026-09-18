@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">数据检索系统：Entrez 枢纽、SRA 四层与 FASTQ</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Entrez 自 1991 年起统一索引 NCBI 数十库并提供记录间链接网，E-utilities 支持程序化批量取用；SRA/ENA 按 Study→Sample→Experiment→Run 四层组织读段，FASTQ 质量行以 Phred 值编码碱基可信度；取数应记录检索式、日期与数据库版本三元组</text>
+  <rect x="30" y="132" width="780" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Entrez：一次查询，横跨数十库</text>
+  <text x="390" y="178" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">记录间链接网——1991 年起的统一检索体验</text>
+  <line x1="390" y1="372" x2="198" y2="239" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="390" y1="372" x2="448" y2="225" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="390" y1="372" x2="698" y2="287" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="390" y1="372" x2="698" y2="477" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="390" y1="372" x2="448" y2="553" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="390" y1="372" x2="198" y2="537" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="120" y="214" width="156" height="50" rx="8" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="198" y="244" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">PubMed 文献</text>
+  <rect x="370" y="200" width="156" height="50" rx="8" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="448" y="230" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">GenBank 核酸</text>
+  <rect x="620" y="262" width="156" height="50" rx="8" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="698" y="292" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">蛋白</text>
+  <rect x="620" y="452" width="156" height="50" rx="8" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="698" y="482" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">结构</text>
+  <rect x="370" y="528" width="156" height="50" rx="8" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="448" y="558" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">基因 · Taxonomy</text>
+  <rect x="120" y="512" width="156" height="50" rx="8" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="198" y="542" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">PMC 全文</text>
+  <circle cx="390" cy="372" r="66" fill="#ffffff" stroke="#0369a1" stroke-width="3"/>
+  <text x="390" y="364" font-size="19" fill="#075985" text-anchor="middle" font-weight="700">Entrez</text>
+  <text x="390" y="392" font-size="11.5" fill="#64748b" text-anchor="middle">NCBI</text>
+  <rect x="560" y="530" width="212" height="68" rx="8" fill="#fce7f3" fill-opacity="0.6" stroke="#be185d" stroke-width="1.5"/>
+  <text x="666" y="554" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">E-utilities</text>
+  <text x="666" y="578" font-size="11" fill="#475569" text-anchor="middle">程序化批量取用</text>
+  <text x="70" y="580" font-size="11" fill="#475569">EBI Search 是 EBI 生态的对应门户；</text>
+  <text x="70" y="595" font-size="11" fill="#475569">布尔算符与字段限定是控制检索噪声的第一道闸门。</text>
+  <rect x="830" y="132" width="540" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="846" y="154.84" font-size="19" fill="#475569" font-weight="700">二、读段档案 SRA / ENA 与 FASTQ</text>
+  <rect x="862" y="397.5" width="114" height="62.5" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="876" y="421.5" font-size="11.5" fill="#1e293b">Study（研究）</text>
+  <rect x="982" y="335" width="114" height="62.5" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="996" y="359" font-size="11.5" fill="#1e293b">Sample（样本）</text>
+  <rect x="1102" y="272.5" width="114" height="62.5" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1116" y="296.5" font-size="11.5" fill="#1e293b">Experiment</text>
+  <text x="1116" y="317.5" font-size="11.5" fill="#1e293b">（实验）</text>
+  <rect x="1222" y="210" width="114" height="62.5" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1236" y="234" font-size="11.5" fill="#1e293b">Run（测序运行）</text>
+  <text x="1102" y="500" font-size="11.5" fill="#475569" text-anchor="middle">四层组织：一个 Study 含多个 Sample，</text>
+  <text x="1102" y="520" font-size="11.5" fill="#475569" text-anchor="middle">每个 Experiment 对应一个 Run 的读段产出</text>
+  <rect x="862" y="545" width="480" height="66" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="874" y="566" font-size="11" fill="#134e4a" font-weight="700">@SRR000001.1（读段标识）</text>
+  <text x="874" y="584" font-size="10.5" fill="#475569">ATCGATCGAT…（碱基序列）　+　!**+%%!!…（质量行：Phred 值编码碱基可信度）</text>
+  <rect x="30" y="656" width="1340" height="304" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="678.84" font-size="19" fill="#475569" font-weight="700">三、检索质量的三项工程细节</text>
+  <rect x="60" y="714" width="400" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="189.745" y="736.95" width="140.51" height="22.099999999999998" rx="7" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="260" y="752.68" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">布尔语法与字段限定</text>
+  <text x="82" y="792" font-size="11.5" fill="#475569">AND / OR / NOT 组合 + 字段限定，</text>
+  <text x="82" y="816" font-size="11.5" fill="#475569">先收窄再迭代，避免百万条噪声。</text>
+  <text x="82" y="840" font-size="11.5" fill="#475569">示例：homo[organism] AND</text>
+  <text x="82" y="864" font-size="11.5" fill="#475569">brca1[Gene Name]</text>
+  <rect x="500" y="714" width="400" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="625.1924" y="736.95" width="149.6152" height="22.099999999999998" rx="7" fill="#f1f5f9" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="700" y="752.68" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">开放档案 vs 受控访问</text>
+  <text x="522" y="792" font-size="11.5" fill="#475569">人类隐私数据存放于 dbGaP / EGA</text>
+  <text x="522" y="816" font-size="11.5" fill="#475569">等受控访问仓库，而非开放档案——</text>
+  <text x="522" y="840" font-size="11.5" fill="#475569">权限审批与使用承诺先行。</text>
+  <rect x="940" y="714" width="400" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="1083.135" y="736.95" width="113.73" height="22.099999999999998" rx="7" fill="#f1f5f9" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1140" y="752.68" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">取数自检三元组</text>
+  <text x="962" y="792" font-size="11.5" fill="#475569">记录「检索式 + 日期 + 数据库版本」</text>
+  <text x="962" y="816" font-size="11.5" fill="#475569">三元组，结果才可复现；</text>
+  <text x="962" y="840" font-size="11.5" fill="#475569">优先结构化格式导出。</text>
+</svg>

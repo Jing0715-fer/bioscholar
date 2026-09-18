@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">定量蛋白质组学：报告离子、DIA 窗口循环与三级工作流</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">iTRAQ/TMT 以报告基团-平衡基团的同量异位设计在 MS1 不可区分、碎裂后以报告离子强度比定量，共洗脱干扰造成比值压缩由 SPS-MS3 缓解；DIA 把质量范围划成固定窗口（如每 25 Da 一档）循环全碎，无随机遗漏可回溯重搜；发现（DDA）、全景定量（DIA）、靶向验证（MRM/PRM）构成三级工作流；AQUA 重标肽段实现绝对定量；mRNA 与蛋白相关性约 0.4–0.6，翻译后缓冲层是两层互补整合的理由</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、iTRAQ / TMT：报告离子的同量异位设计</text>
+  <text x="125" y="192" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">报告基团</text>
+  <text x="240" y="192" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">平衡基团</text>
+  <text x="392" y="192" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">肽段</text>
+  <rect x="80" y="202" width="90" height="26" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="125" y="220" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R126</text>
+  <rect x="170" y="202" width="140" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="240" y="220" font-size="9.5" fill="#64748b" text-anchor="middle">补齐质量</text>
+  <rect x="310" y="202" width="170" height="26" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="80" y="234" width="90" height="26" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="125" y="252" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R127</text>
+  <rect x="170" y="234" width="140" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="240" y="252" font-size="9.5" fill="#64748b" text-anchor="middle">补齐质量</text>
+  <rect x="310" y="234" width="170" height="26" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="80" y="266" width="90" height="26" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="125" y="284" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R128</text>
+  <rect x="170" y="266" width="140" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="240" y="284" font-size="9.5" fill="#64748b" text-anchor="middle">补齐质量</text>
+  <rect x="310" y="266" width="170" height="26" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="80" y="298" width="90" height="26" rx="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="125" y="316" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R129</text>
+  <rect x="170" y="298" width="140" height="26" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="240" y="316" font-size="9.5" fill="#64748b" text-anchor="middle">补齐质量</text>
+  <rect x="310" y="298" width="170" height="26" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="240" y1="334" x2="165" y2="356" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <line x1="255" y1="356" x2="480" y2="356" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="368" y="344" font-size="10.5" fill="#831843" font-weight="700">碎裂</text>
+  <line x1="80" y1="372" x2="250" y2="372" stroke="#475569" stroke-width="1.6"/>
+  <line x1="150" y1="372" x2="150" y2="302" stroke="#6d28d9" stroke-width="2.6"/>
+  <circle cx="150" cy="302" r="3.5" fill="#6d28d9"/>
+  <text x="165" y="392" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">MS1：同一质量，不可区分</text>
+  <line x1="400" y1="372" x2="640" y2="372" stroke="#475569" stroke-width="1.6"/>
+  <line x1="430" y1="372" x2="430" y2="326" stroke="#6d28d9" stroke-width="2.6"/>
+  <circle cx="430" cy="326" r="3.5" fill="#6d28d9"/>
+  <text x="430" y="392" font-size="10" fill="#64748b" text-anchor="middle">126</text>
+  <line x1="480" y1="372" x2="480" y2="306" stroke="#0369a1" stroke-width="2.6"/>
+  <circle cx="480" cy="306" r="3.5" fill="#0369a1"/>
+  <text x="480" y="392" font-size="10" fill="#64748b" text-anchor="middle">127</text>
+  <line x1="530" y1="372" x2="530" y2="332" stroke="#b45309" stroke-width="2.6"/>
+  <circle cx="530" cy="332" r="3.5" fill="#b45309"/>
+  <text x="530" y="392" font-size="10" fill="#64748b" text-anchor="middle">128</text>
+  <line x1="580" y1="372" x2="580" y2="288" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="580" cy="288" r="3.5" fill="#be185d"/>
+  <text x="580" y="392" font-size="10" fill="#64748b" text-anchor="middle">129</text>
+  <text x="540" y="412" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">MS2：报告离子强度比 → 定量</text>
+  <text x="60" y="446" font-size="11.5" fill="#475569">多通道合并进样、互相校准提灵敏度；参照通道缝合多批次。主要代价：</text>
+  <text x="60" y="462" font-size="11.5" fill="#475569">共洗脱干扰造成比值压缩——SPS-MS3 再碎裂是主流缓解方案。</text>
+  <text x="60" y="496" font-size="11.5" fill="#64748b">同量异位的化学魔术：MS1 不可区分，碎裂后才以报告离子现形。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、label-free 与 DIA：不受通道数约束的两条路</text>
+  <text x="740" y="190" font-size="13" fill="#1e293b" font-weight="700">label-free 定量</text>
+  <rect x="740" y="202" width="290" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="885" y="226" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">强度法</text>
+  <text x="885" y="246" font-size="10.5" fill="#475569" text-anchor="middle">提取离子色谱（XIC）峰面积</text>
+  <rect x="1050" y="202" width="290" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1195" y="226" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">谱计数法</text>
+  <text x="1195" y="246" font-size="10.5" fill="#475569" text-anchor="middle">计数匹配到各蛋白的谱图数</text>
+  <text x="740" y="284" font-size="11.5" fill="#475569">不受通道数限制，但对重现性要求苛刻；缺失值插补与中位数归一是统计上的两大功课。</text>
+  <line x1="730" y1="330" x2="1360" y2="330" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <text x="740" y="356" font-size="13" fill="#1e293b" font-weight="700">DIA / SWATH：数据非依赖采集</text>
+  <rect x="740" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="790" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="840" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="890" y="372" width="50" height="22" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="940" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="990" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1040" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1090" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1140" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1190" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1240" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1290" y="372" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="740" y="416" font-size="11.5" fill="#475569">把整个质量范围划成固定宽度窗口（如每 25 Da 一档），逐窗口依次碎裂、</text>
+  <text x="740" y="432" font-size="11.5" fill="#475569">循环往复——每张二级谱都完整覆盖该窗口内全部母离子。</text>
+  <text x="740" y="468" font-size="11.5" fill="#475569">无随机遗漏、数据可回溯重搜；代价是嵌合谱解卷积与谱图库——预测谱库使无库 DIA 渐成现实。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、三级工作流、载体通道与 AQUA 绝对定量</text>
+  <rect x="60" y="618" width="180" height="58" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="150" y="641" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">发现 · DDA</text>
+  <text x="150" y="661" font-size="10.5" fill="#475569" text-anchor="middle">挑母离子碎裂</text>
+  <rect x="260" y="618" width="180" height="58" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="350" y="641" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">全景定量 · DIA</text>
+  <text x="350" y="661" font-size="10.5" fill="#475569" text-anchor="middle">窗口循环全碎</text>
+  <rect x="460" y="618" width="180" height="58" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="550" y="641" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">靶向验证 · MRM/PRM</text>
+  <text x="550" y="661" font-size="10.5" fill="#475569" text-anchor="middle">预设母离子对</text>
+  <line x1="240" y1="647" x2="260" y2="647" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="440" y1="647" x2="460" y2="647" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="60" y="700" font-size="11.5" fill="#475569">发现（DDA）、全景定量（DIA）、靶向验证（MRM / PRM）构成蛋白质组学的三级工作流；</text>
+  <text x="60" y="716" font-size="11.5" fill="#475569">载体通道以大剂量同量异位载体放大信号，支撑单细胞蛋白质组。</text>
+  <text x="60" y="782" font-size="13" fill="#1e293b" font-weight="700">AQUA 重标肽段：绝对定量的口径</text>
+  <line x1="80" y1="930" x2="350" y2="930" stroke="#475569" stroke-width="1.6"/>
+  <line x1="150" y1="930" x2="150" y2="878" stroke="#0f766e" stroke-width="2.6"/>
+  <circle cx="150" cy="878" r="3.5" fill="#0f766e"/>
+  <line x1="225" y1="930" x2="225" y2="864" stroke="#be185d" stroke-width="2.6"/>
+  <circle cx="225" cy="864" r="3.5" fill="#be185d"/>
+  <text x="150" y="948" font-size="10" fill="#134e4a" text-anchor="middle">内源轻肽</text>
+  <text x="225" y="948" font-size="10" fill="#831843" text-anchor="middle">重标内标</text>
+  <text x="380" y="812" font-size="11" fill="#475569">合成同位素重标肽段作内标：与内源肽共洗脱、</text>
+  <text x="380" y="827" font-size="11" fill="#475569">同步离子化——峰面积比 × 已知内标量，</text>
+  <text x="380" y="842" font-size="11" fill="#475569">把靶向定量推向绝对口径。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、层间观照：mRNA 与蛋白的缓冲层</text>
+  <rect x="760" y="640" width="340" height="240" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="820" x2="1100" y2="820" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="845" y1="880" x2="845" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="760" x2="1100" y2="760" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="930" y1="880" x2="930" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="700" x2="1100" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1015" y1="880" x2="1015" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="880" x2="760" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="760" y="902" font-size="13" fill="#64748b" text-anchor="middle">低</text>
+  <line x1="1100" y1="880" x2="1100" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="1100" y="902" font-size="13" fill="#64748b" text-anchor="middle">高</text>
+  <line x1="754" y1="880" x2="760" y2="880" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="884" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="754" y1="640" x2="760" y2="640" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="644" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="930" y="924" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">mRNA 丰度（log）</text>
+  <text x="714" y="760" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">蛋白丰度（log）</text>
+  <text x="930" y="628" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">两层数据散点（示意）</text>
+  <path d="M760.0,880.0 L1100.0,640.0" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <circle cx="787.2" cy="851.2" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="811" cy="868" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="828" cy="820" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="845" cy="836.8" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="862" cy="796" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="879" cy="812.8" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="896" cy="760" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="913" cy="784" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="930" cy="736" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="947" cy="764.8" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="964" cy="716.8" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="981" cy="748" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="998" cy="692.8" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="1015" cy="724" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="1032" cy="676" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="1049" cy="707.2" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="1066" cy="664" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="1076.2" cy="683.2" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="930" cy="796" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <circle cx="1015" cy="748" r="4" fill="#0369a1" fill-opacity="0.6"/>
+  <rect x="823.797675" y="658.225" width="112.40465" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="880" y="672.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">相关 r ≈ 0.4–0.6</text>
+  <text x="1130" y="656" font-size="11" fill="#475569">mRNA 与蛋白的相关系数量级约 0.4–0.6——翻译与翻译后过程构成缓冲层。</text>
+  <text x="1130" y="736" font-size="11" fill="#475569">这层缓冲正是两层互补整合的理由：</text>
+  <text x="1130" y="751" font-size="11" fill="#475569">各答一问，合起来才见全貌。</text>
+  <text x="930" y="948" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="600">读定量先读偏差：标签法的比值压缩、无标记法的缺失值、DIA 的嵌合谱。</text>
+</svg>

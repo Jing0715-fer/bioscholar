@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Smith-Waterman 局部比对：负分截断与仿射空位</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">在递推中加入零选项实现负分截断，回溯改从全矩阵最大值出发、遇零即停；仿射空位把「新开 go」与「延长 ge」分账，Gotoh（1982）用 M、Ix、Iy 三矩阵递推、复杂度仍 O(mn)；带状 DP、X-drop、线性空间与向量化把精确算法推回实用区间</text>
+  <rect x="30" y="132" width="900" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、从 NW 到 SW：两处「微小而深刻」的修改（1981）</text>
+  <text x="215" y="196" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">Needleman-Wunsch（全局）</text>
+  <rect x="95" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.1" stroke="none"/>
+  <rect x="133" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.155" stroke="none"/>
+  <rect x="171" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.21000000000000002" stroke="none"/>
+  <rect x="209" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.265" stroke="none"/>
+  <rect x="247" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.32" stroke="none"/>
+  <rect x="285" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.375" stroke="none"/>
+  <rect x="95" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.155" stroke="none"/>
+  <rect x="133" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.21000000000000002" stroke="none"/>
+  <rect x="171" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.265" stroke="none"/>
+  <rect x="209" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.32" stroke="none"/>
+  <rect x="247" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.375" stroke="none"/>
+  <rect x="285" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.43000000000000005" stroke="none"/>
+  <rect x="95" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.21000000000000002" stroke="none"/>
+  <rect x="133" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.265" stroke="none"/>
+  <rect x="171" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.32" stroke="none"/>
+  <rect x="209" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.375" stroke="none"/>
+  <rect x="247" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.43000000000000005" stroke="none"/>
+  <rect x="285" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.485" stroke="none"/>
+  <rect x="95" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.265" stroke="none"/>
+  <rect x="133" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.32" stroke="none"/>
+  <rect x="171" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.375" stroke="none"/>
+  <rect x="209" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.43000000000000005" stroke="none"/>
+  <rect x="247" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.485" stroke="none"/>
+  <rect x="285" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.54" stroke="none"/>
+  <rect x="95" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.32" stroke="none"/>
+  <rect x="133" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.375" stroke="none"/>
+  <rect x="171" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.43000000000000005" stroke="none"/>
+  <rect x="209" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.485" stroke="none"/>
+  <rect x="247" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.54" stroke="none"/>
+  <rect x="285" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.595" stroke="none"/>
+  <rect x="95" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.375" stroke="none"/>
+  <rect x="133" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.43000000000000005" stroke="none"/>
+  <rect x="171" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.485" stroke="none"/>
+  <rect x="209" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.54" stroke="none"/>
+  <rect x="247" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.595" stroke="none"/>
+  <rect x="285" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.65" stroke="none"/>
+  <line x1="95" y1="214" x2="323" y2="214" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="214" x2="95" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="252" x2="323" y2="252" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="133" y1="214" x2="133" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="290" x2="323" y2="290" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="171" y1="214" x2="171" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="328" x2="323" y2="328" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="209" y1="214" x2="209" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="366" x2="323" y2="366" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="247" y1="214" x2="247" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="404" x2="323" y2="404" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="285" y1="214" x2="285" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="95" y1="442" x2="323" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="323" y1="214" x2="323" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="286" y="405" width="35" height="35" rx="3" fill="none" stroke="#1e293b" stroke-width="2.6"/>
+  <polyline points="303,422 265,384 227,346 189,308 151,270 117,236" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="6 4"/>
+  <line x1="117" y1="236" x2="110" y2="229" stroke="#dc2626" stroke-width="2.6" marker-end="url(#arr-bad)"/>
+  <text x="95" y="480" font-size="12" fill="#475569" font-weight="700">H(i,j) = max{ H(i−1,j−1)+s, H(i−1,j)−d, H(i,j−1)−d }</text>
+  <text x="95" y="504" font-size="11.5" fill="#64748b">回溯：右下角 → 左上角，强制整条路径</text>
+  <text x="95" y="540" font-size="11" fill="#64748b">负分一路累积：整条序列必须全部参与比对。</text>
+  <text x="665" y="196" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">Smith-Waterman（局部）</text>
+  <rect x="545" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <rect x="583" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="621" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="659" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="697" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="735" y="214" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="545" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="583" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <rect x="621" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="659" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="697" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="735" y="252" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="545" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="583" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="621" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <rect x="659" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="697" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="735" y="290" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="545" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="583" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="621" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="659" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <rect x="697" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="735" y="328" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="545" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="583" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="621" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="659" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="697" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <rect x="735" y="366" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="545" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="583" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="621" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.04" stroke="none"/>
+  <rect x="659" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <rect x="697" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.34" stroke="none"/>
+  <rect x="735" y="404" width="36" height="36" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <line x1="545" y1="214" x2="773" y2="214" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="214" x2="545" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="252" x2="773" y2="252" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="583" y1="214" x2="583" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="290" x2="773" y2="290" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="621" y1="214" x2="621" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="328" x2="773" y2="328" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="659" y1="214" x2="659" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="366" x2="773" y2="366" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="697" y1="214" x2="697" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="404" x2="773" y2="404" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="735" y1="214" x2="735" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="545" y1="442" x2="773" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="773" y1="214" x2="773" y2="442" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="698" y="329" width="35" height="35" rx="3" fill="none" stroke="#dc2626" stroke-width="2.8"/>
+  <text x="782" y="340" font-size="11.5" fill="#dc2626" font-weight="700">全矩阵最大值</text>
+  <polyline points="716,347 678,309 640,271" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="6 4"/>
+  <line x1="640" y1="271" x2="633" y2="264" stroke="#dc2626" stroke-width="2.6" marker-end="url(#arr-bad)"/>
+  <rect x="622" y="253" width="35" height="35" rx="3" fill="none" stroke="#059669" stroke-width="2.2"/>
+  <text x="782" y="372" font-size="11.5" fill="#059669" font-weight="700">遇零即停</text>
+  <text x="545" y="480" font-size="12" fill="#134e4a" font-weight="700">H(i,j) = max{ 0, H(i−1,j−1)+s, H(i−1,j)−d, H(i,j−1)−d }</text>
+  <text x="545" y="504" font-size="11.5" fill="#64748b">回溯：从最大值出发 → 遇零即停；负分被截断，零是新的起跑线</text>
+  <text x="545" y="540" font-size="11" fill="#64748b">两处修改让比对可以只取各自内部最相似的片段对——适配域重组与嵌合情形。</text>
+  <rect x="960" y="132" width="410" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="976" y="154.84" font-size="19" fill="#475569" font-weight="700">二、仿射空位：开与延的分账</text>
+  <rect x="990" y="196" width="300" height="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="990" y="262" width="110" height="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="1180" y="262" width="110" height="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="1100" y1="272" x2="1180" y2="272" stroke="#d97706" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <text x="984" y="186" font-size="11" fill="#64748b">序列 x</text>
+  <text x="984" y="252" font-size="11" fill="#64748b">序列 y</text>
+  <line x1="1006" y1="216" x2="1006" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1030" y1="216" x2="1030" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1054" y1="216" x2="1054" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1078" y1="216" x2="1078" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1196" y1="216" x2="1196" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1220" y1="216" x2="1220" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1244" y1="216" x2="1244" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1268" y1="216" x2="1268" y2="262" stroke="#94a3b8" stroke-width="1.2"/>
+  <path d="M 1100,309 Q 1100,300 1109,300 M 1171,300 Q 1180,300 1180,309" fill="none" stroke="#92400e" stroke-width="1.7"/>
+  <line x1="1109" y1="300" x2="1171" y2="300" stroke="#92400e" stroke-width="1.7"/>
+  <text x="1140" y="324" font-size="11" fill="#92400e" text-anchor="middle" font-weight="600">一个长空位（长度 L）</text>
+  <text x="990" y="352" font-size="11.5" fill="#475569">空位罚分 = go + (L−1)·ge：新开（go）与延长（ge）</text>
+  <text x="990" y="368" font-size="11.5" fill="#475569">分账——长空位不再按长度线性重罚。</text>
+  <text x="990" y="400" font-size="13" fill="#1e293b" font-weight="700">Gotoh（1982）三矩阵递推</text>
+  <rect x="990" y="416" width="100" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1040" y="448" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">M</text>
+  <text x="1040" y="488" font-size="10.5" fill="#64748b" text-anchor="middle">残基对残基</text>
+  <rect x="1123" y="416" width="100" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1173" y="448" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">Ix</text>
+  <text x="1173" y="488" font-size="10.5" fill="#64748b" text-anchor="middle">x 对空位</text>
+  <rect x="1256" y="416" width="100" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1306" y="448" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">Iy</text>
+  <text x="1306" y="488" font-size="10.5" fill="#64748b" text-anchor="middle">空位对 y</text>
+  <line x1="1092" y1="444" x2="1119" y2="444" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1225" y1="444" x2="1252" y2="444" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <path d="M 1306,476 L 1306,502 L 1040,502 L 1040,478" fill="none" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="990" y="530" font-size="11" fill="#475569">三矩阵互相递推，复杂度仍为 O(mn)——精确解与实用性的折中。</text>
+  <rect x="30" y="656" width="1340" height="304" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="678.84" font-size="19" fill="#475569" font-weight="700">三、把精确算法推回实用区间</text>
+  <rect x="60" y="716" width="300" height="110" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="210" y="748" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">带状 DP</text>
+  <text x="210" y="780" font-size="11" fill="#475569" text-anchor="middle">只算对角带内的单元——牺牲远处换速度</text>
+  <rect x="388" y="716" width="300" height="110" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="538" y="748" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">X-drop 截断</text>
+  <text x="538" y="780" font-size="11" fill="#475569" text-anchor="middle">延伸中分数跌到阈值以下即丢弃</text>
+  <rect x="716" y="716" width="300" height="110" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="866" y="748" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">线性空间</text>
+  <text x="866" y="780" font-size="11" fill="#475569" text-anchor="middle">分治复用内存，行列只留当前与上一行</text>
+  <rect x="1044" y="716" width="300" height="110" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1194" y="748" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">向量化</text>
+  <text x="1194" y="780" font-size="11" fill="#475569" text-anchor="middle">同一指令处理一排单元（SIMD 并行）</text>
+  <rect x="60" y="852" width="1280" height="62" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="80" y="874" font-size="12.5" fill="#134e4a" font-weight="600">Smith-Waterman 是数据库搜索的理论金标准——其打分行为的统计理论（Karlin-Altschul）正是 BLAST 的基石。</text>
+</svg>

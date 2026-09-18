@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">GenBank 平面文件：三段结构与位置表达式</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">flat file 分描述区、FEATURES 特征表与序列区三段——ACCESSION 与 VERSION 是稳定标识而自由文本不是；join 刻画外显子拼接、complement 表示互补链、/codon_start 给出读框相位；INSDC 三库每日交换、登录号互认</text>
+  <rect x="30" y="132" width="760" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、flat file：一条记录的三段解剖</text>
+  <rect x="60" y="186" width="700" height="420" rx="6" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <rect x="60" y="186" width="700" height="124" rx="6" fill="#e0f2fe" fill-opacity="0.35" stroke="none"/>
+  <rect x="72.2688" y="203.8" width="63.4624" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="104" y="218.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">① 描述区</text>
+  <text x="196" y="218" font-size="11.5" fill="#64748b">LOCUS / DEFINITION / SOURCE / ORGANISM …</text>
+  <text x="76" y="250" font-size="12.5" fill="#831843" font-weight="700">ACCESSION   登录号</text>
+  <text x="300" y="250" font-size="11" fill="#475569">——稳定标识，跨库互认</text>
+  <text x="76" y="274" font-size="12.5" fill="#831843" font-weight="700">VERSION     登录号.版本号</text>
+  <text x="300" y="274" font-size="11" fill="#475569">——内容级标识：序列实质修改则版本加一</text>
+  <text x="76" y="298" font-size="11" fill="#dc2626" font-weight="600">自由文本（DEFINITION 等）不是稳定标识</text>
+  <rect x="60" y="310" width="700" height="178" fill="#ccfbf1" fill-opacity="0.3" stroke="none"/>
+  <rect x="39.63839999999999" y="327.8" width="128.72320000000002" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="104" y="342.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">② FEATURES 特征表</text>
+  <text x="196" y="342" font-size="11.5" fill="#64748b">注释的真正载体</text>
+  <text x="76" y="376" font-size="12.5" fill="#134e4a" font-weight="700">CDS    join(100..300, 501..700)</text>
+  <text x="370" y="376" font-size="11" fill="#475569">join：外显子拼接</text>
+  <text x="76" y="402" font-size="12.5" fill="#134e4a" font-weight="700">CDS    complement(900..1200)</text>
+  <text x="370" y="402" font-size="11" fill="#475569">complement：位于互补链</text>
+  <text x="76" y="428" font-size="12.5" fill="#134e4a" font-weight="700">/codon_start=1</text>
+  <text x="370" y="428" font-size="11" fill="#475569">读框相位</text>
+  <text x="76" y="454" font-size="12.5" fill="#134e4a" font-weight="700">/product=&quot;…&quot; /evidence=…</text>
+  <text x="370" y="454" font-size="11" fill="#dc2626">提交者声明而非权威裁决——须结合证据标签与文献交叉验证</text>
+  <text x="76" y="478" font-size="11" fill="#64748b">FEATURES   Location/Qualifiers</text>
+  <rect x="60" y="488" width="700" height="118" rx="6" fill="#f1f5f9" fill-opacity="0.5" stroke="none"/>
+  <rect x="72.2688" y="503.8" width="63.4624" height="20.4" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="104" y="518.32" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">③ 序列区</text>
+  <text x="196" y="518" font-size="11.5" fill="#64748b">ORIGIN … //</text>
+  <text x="76" y="548" font-size="12.5" fill="#475569" font-weight="700">ORIGIN</text>
+  <text x="76" y="574" font-size="12" fill="#475569">1 atgcatgcgg cattaacgta …</text>
+  <text x="76" y="598" font-size="12.5" fill="#475569" font-weight="700">//</text>
+  <rect x="820" y="132" width="550" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="836" y="154.84" font-size="19" fill="#475569" font-weight="700">二、CDS 位置表达式：join 与 complement</text>
+  <text x="850" y="200" font-size="13" fill="#134e4a" font-weight="700">基因组正链</text>
+  <line x1="850" y1="262" x2="1330" y2="262" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="900" y="240" width="96" height="44" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="948" y="266" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">E1</text>
+  <text x="948" y="226" font-size="11" fill="#64748b" text-anchor="middle">外显子1</text>
+  <rect x="1052" y="240" width="92" height="44" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1098" y="266" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">E2</text>
+  <text x="1098" y="226" font-size="11" fill="#64748b" text-anchor="middle">外显子2</text>
+  <rect x="1206" y="240" width="70" height="44" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1241" y="266" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">E3</text>
+  <text x="1241" y="226" font-size="11" fill="#64748b" text-anchor="middle">外显子3</text>
+  <text x="878" y="230" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">5′</text>
+  <text x="1348" y="230" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">3′</text>
+  <path d="M 898,309 Q 898,300 907,300 M 1267,300 Q 1276,300 1276,309" fill="none" stroke="#134e4a" stroke-width="1.7"/>
+  <line x1="907" y1="300" x2="1267" y2="300" stroke="#134e4a" stroke-width="1.7"/>
+  <text x="1087" y="324" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="600">join(100..300, 501..700, 901..1000)</text>
+  <line x1="1268" y1="336" x2="1268" y2="398" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="1268" y="372" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">剪接</text>
+  <text x="850" y="384" font-size="13" fill="#78350f" font-weight="700">成熟 mRNA</text>
+  <line x1="850" y1="428" x2="1330" y2="428" stroke="#b45309" stroke-width="2.2"/>
+  <rect x="940" y="406" width="96" height="44" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <rect x="1044" y="406" width="92" height="44" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <rect x="1144" y="406" width="70" height="44" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <path d="M 938,471 Q 938,462 947,462 M 1197,462 Q 1206,462 1206,471" fill="none" stroke="#78350f" stroke-width="1.7"/>
+  <line x1="947" y1="462" x2="1197" y2="462" stroke="#78350f" stroke-width="1.7"/>
+  <text x="1072" y="486" font-size="11" fill="#78350f" text-anchor="middle" font-weight="600">拼接后外显子首尾相连</text>
+  <text x="850" y="512" font-size="13" fill="#dc2626" font-weight="700">互补链基因</text>
+  <line x1="1330" y1="560" x2="850" y2="560" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <rect x="1030" y="538" width="130" height="44" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1095" y="564" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">CDS</text>
+  <text x="1348" y="536" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">5′</text>
+  <text x="878" y="536" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700">3′</text>
+  <text x="850" y="596" font-size="11.5" fill="#475569">complement(900..1200)：位置写在正链坐标上，基因实际位于互补链，转录方向相反。</text>
+  <rect x="30" y="656" width="1340" height="304" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="678.84" font-size="19" fill="#475569" font-weight="700">三、INSDC：三库一体的每日交换</text>
+  <text x="700" y="712" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">一次提交、全球可得——三库两两每日交换，登录号互认</text>
+  <circle cx="260" cy="800" r="68" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="260" y="794" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">GenBank</text>
+  <text x="260" y="818" font-size="10.5" fill="#134e4a" text-anchor="middle">NCBI（美）· 1982 年建立</text>
+  <circle cx="700" cy="800" r="68" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="700" y="794" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">EMBL-Bank</text>
+  <text x="700" y="818" font-size="10.5" fill="#134e4a" text-anchor="middle">EBI（欧）</text>
+  <circle cx="1140" cy="800" r="68" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="1140" y="794" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">DDBJ</text>
+  <text x="1140" y="818" font-size="10.5" fill="#134e4a" text-anchor="middle">日本（日）</text>
+  <line x1="332" y1="800" x2="624" y2="800" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)" marker-start="url(#arr-ink)"/>
+  <text x="478" y="830" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">每日交换</text>
+  <line x1="772" y1="800" x2="1064" y2="800" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)" marker-start="url(#arr-ink)"/>
+  <text x="918" y="830" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">每日交换</text>
+  <rect x="70" y="878" width="400" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="86" y="900" font-size="11.5" fill="#475569">三库内容等价而格式各异——去中心的冗余基础设施</text>
+  <rect x="500" y="878" width="400" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="516" y="900" font-size="11.5" fill="#475569">冗余是档案库的天性：nr / UniRef 只是按特定定义去冗余的衍生资源</text>
+  <rect x="930" y="878" width="400" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="946" y="900" font-size="11.5" fill="#475569">特征表注释是提交者声明——须结合证据标签与文献交叉验证</text>
+</svg>

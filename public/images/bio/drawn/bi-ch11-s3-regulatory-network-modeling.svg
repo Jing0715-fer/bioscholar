@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因调控网络建模：布尔吸引子、ODE 动力学与阻遏振荡器</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三类证据交集成边；布尔吸引子对应细胞类型（Kauffman 1969）；ODE 再现振荡与双稳态；阻遏振荡器（2000）干预测、湿验证</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、调控边从哪里来：三类证据交集验证</text>
+  <rect x="60" y="190" width="200" height="58" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="160" y="214" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">ChIP-seq</text>
+  <text x="160" y="236" font-size="10.5" fill="#475569" text-anchor="middle">物理结合位点</text>
+  <rect x="60" y="268" width="200" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="160" y="292" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">表达扰动</text>
+  <text x="160" y="314" font-size="10.5" fill="#475569" text-anchor="middle">敲除 / 过表达 → 表型</text>
+  <rect x="60" y="346" width="200" height="58" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="160" y="370" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">基序富集</text>
+  <text x="160" y="392" font-size="10.5" fill="#475569" text-anchor="middle">启动子序列线索</text>
+  <line x1="262" y1="219" x2="346" y2="272" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <line x1="262" y1="297" x2="342" y2="297" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <line x1="262" y1="375" x2="346" y2="322" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <circle cx="390" cy="297" r="42" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+  <text x="390" y="292" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">三类证据</text>
+  <text x="390" y="310" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">交集</text>
+  <line x1="436" y1="297" x2="478" y2="297" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="482" y="265" width="176" height="64" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="570" y="289" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">高置信调控边</text>
+  <text x="570" y="311" font-size="10.5" fill="#475569" text-anchor="middle">TF → 靶基因 · 方向明确</text>
+  <text x="60" y="442" font-size="11.5" fill="#475569">结合 ≠ 调控：ChIP-seq 只证物理结合、基序只给序列线索，须与扰动表型交集互证，</text>
+  <text x="60" y="458" font-size="11.5" fill="#475569">才能为调控边赋予方向与置信度。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、布尔网络：吸引子即细胞类型（Kauffman，1969）</text>
+  <text x="945" y="192" font-size="11.5" fill="#64748b" text-anchor="middle">状态空间地形：整张网络的状态转移最终落入某个吸引子</text>
+  <path d="M740,345 C744.1,341.6 755.7,313.8 764.6,324.6 C773.5,335.4 782.4,400.5 793.3,409.6 C804.2,418.7 818.6,394.3 830.2,379 C841.8,363.7 843.9,329.7 863,317.8 C882.1,305.9 917.7,307.6 945,307.6 C972.3,307.6 1007.9,305.9 1027,317.8 C1046.1,329.7 1048.2,363.7 1059.8,379 C1071.4,394.3 1085.8,418.7 1096.7,409.6 C1107.6,400.5 1116.5,335.4 1125.4,324.6 C1134.3,313.8 1145.9,341.6 1150,345" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="850" y1="318" x2="824" y2="372" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <line x1="1040" y1="318" x2="1066" y2="372" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <circle cx="793" cy="402" r="7" fill="#059669" stroke="#059669" stroke-width="1.5"/>
+  <circle cx="1097" cy="402" r="7" fill="#0369a1" stroke="#0369a1" stroke-width="1.5"/>
+  <path d="M 812,388 Q 945,180 1082,388" fill="none" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="945" y="258" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">分化 = 吸引子间跃迁</text>
+  <text x="793" y="452" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">吸引子 1</text>
+  <text x="793" y="468" font-size="10.5" fill="#64748b" text-anchor="middle">细胞类型 A</text>
+  <text x="1097" y="452" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">吸引子 2</text>
+  <text x="1097" y="468" font-size="10.5" fill="#64748b" text-anchor="middle">细胞类型 B</text>
+  <text x="1180" y="200" font-size="11" fill="#475569">Kauffman（1969）：</text>
+  <text x="1180" y="215" font-size="11" fill="#475569">细胞类型即吸引子，</text>
+  <text x="1180" y="230" font-size="11" fill="#475569">分化即吸引子间的跃迁。</text>
+  <text x="1180" y="288" font-size="11" fill="#475569">平均连接数 K=2–3：</text>
+  <text x="1180" y="303" font-size="11" fill="#475569">网络处于「有序边缘」，</text>
+  <text x="1180" y="318" font-size="11" fill="#475569">可承载多吸引子而不失稳。</text>
+  <text x="1180" y="376" font-size="11" fill="#475569">更新规则 = 邻居状态的逻辑函数，</text>
+  <text x="1180" y="391" font-size="11" fill="#475569">用 AND / OR / NOT 组合。</text>
+  <text x="740" y="506" font-size="11.5" fill="#475569">布尔网络把每个基因当作开关（0 / 1）：吸引子对应稳定表达态，是离散逻辑的动力学。</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、布尔网络 vs ODE：两种建模范式</text>
+  <rect x="60" y="626" width="100" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="653.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">维度</text>
+  <rect x="160" y="626" width="235" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="277.5" y="653.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">布尔网络</text>
+  <rect x="395" y="626" width="275" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532.5" y="653.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">ODE 模型</text>
+  <rect x="60" y="670" width="100" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="692.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">状态取值</text>
+  <rect x="160" y="670" width="235" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="277.5" y="692.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">离散 0 / 1 开关</text>
+  <rect x="395" y="670" width="275" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532.5" y="692.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">连续浓度（速率方程）</text>
+  <rect x="60" y="704" width="610" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="704" width="100" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="726.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">能回答</text>
+  <rect x="160" y="704" width="235" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="277.5" y="726.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">吸引子、稳定态、定性趋势</text>
+  <rect x="395" y="704" width="275" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532.5" y="726.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">振荡、双稳态、切换的定量轨迹</text>
+  <rect x="60" y="738" width="100" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="760.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要瓶颈</text>
+  <rect x="160" y="738" width="235" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="277.5" y="760.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">无时间刻度、过于定性</text>
+  <rect x="395" y="738" width="275" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="532.5" y="760.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">参数饥渴、可辨识性差</text>
+  <rect x="70" y="812" width="190" height="118" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="900.5" x2="260" y2="900.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="117.5" y1="930" x2="117.5" y2="812" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="871" x2="260" y2="871" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="165" y1="930" x2="165" y2="812" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="841.5" x2="260" y2="841.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="212.5" y1="930" x2="212.5" y2="812" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="930" x2="70" y2="936" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="952" font-size="13" fill="#64748b" text-anchor="middle">低</text>
+  <line x1="260" y1="930" x2="260" y2="936" stroke="#475569" stroke-width="1.8"/>
+  <text x="260" y="952" font-size="13" fill="#64748b" text-anchor="middle">高</text>
+  <text x="165" y="974" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">诱导信号 →</text>
+  <text x="165" y="800" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">双稳态：S 形切换</text>
+  <path d="M70.0,924.1 L104.2,919.4 L134.6,894.6 L165.0,871.0 L195.4,845.0 L225.8,820.3 L260.0,815.5" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="300" y="812" font-size="11" fill="#475569">ODE 以速率方程刻画连续浓度动力学，可定量再现双稳态（左图）、</text>
+  <text x="300" y="827" font-size="11" fill="#475569">振荡与切换；但参数多而数据少（参数饥渴）、</text>
+  <text x="300" y="842" font-size="11" fill="#475569">可辨识性差——敏感性分析用来定位最值得干预的「把手」参数。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、阻遏振荡器：干预测、湿验证（Elowitz 与 Leibler，2000）</text>
+  <line x1="875.8456924801815" y1="699.8836859261604" x2="826.5697382718004" y2="764.9279454812236" stroke="#dc2626" stroke-width="2"/>
+  <line x1="832.9464754570324" y1="769.7588069851872" x2="820.1930010865683" y2="760.0970839772599" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="840" y1="800" x2="956" y2="800" stroke="#dc2626" stroke-width="2"/>
+  <line x1="956" y1="792" x2="956" y2="808" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="975.8456924801815" y1="768.1163140738396" x2="926.5697382718004" y2="703.0720545187764" stroke="#dc2626" stroke-width="2"/>
+  <line x1="920.1930010865683" y1="707.9029160227401" x2="932.9464754570324" y2="698.2411930148128" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="900" cy="668" r="34" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="900" y="672" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">TetR</text>
+  <circle cx="800" cy="800" r="34" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="800" y="804" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">lacI</text>
+  <circle cx="1000" cy="800" r="34" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="1000" y="804" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">cI</text>
+  <text x="838" y="716" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">抑制</text>
+  <text x="900" y="782" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">抑制</text>
+  <text x="975" y="724" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">抑制</text>
+  <rect x="1080" y="730" width="250" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1080" y1="842.5" x2="1330" y2="842.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1142.5" y1="880" x2="1142.5" y2="730" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1080" y1="805" x2="1330" y2="805" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1205" y1="880" x2="1205" y2="730" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1080" y1="767.5" x2="1330" y2="767.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1267.5" y1="880" x2="1267.5" y2="730" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1080" y1="880" x2="1080" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="1080" y="902" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <text x="1205" y="718" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">报告荧光随时间振荡</text>
+  <path d="M1080,805 C1083.8,793.8 1095.0,726.3 1102.5,737.5 C1110.0,748.8 1117.5,872.5 1125,872.5 C1132.5,872.5 1140.0,737.5 1147.5,737.5 C1155.0,737.5 1162.5,872.5 1170,872.5 C1177.5,872.5 1185.0,737.5 1192.5,737.5 C1200.0,737.5 1207.5,872.5 1215,872.5 C1222.5,872.5 1230.0,737.5 1237.5,737.5 C1245.0,737.5 1252.5,872.5 1260,872.5 C1267.5,872.5 1275.0,737.5 1282.5,737.5 C1290.0,737.5 1297.1,861.3 1305,872.5 C1312.9,883.8 1325.8,816.3 1330,805" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <text x="1080" y="946" font-size="10.5" fill="#64748b">周期与幅度受表达噪声扰动</text>
+  <text x="724" y="880" font-size="11" fill="#475569">TetR 抑制 lacI、lacI 抑制 cI、</text>
+  <text x="724" y="895" font-size="11" fill="#475569">cI 抑制 TetR——环形互抑驱动周期振荡，并暴露表达噪声。</text>
+  <text x="724" y="938" font-size="11" fill="#475569">「干预测、湿验证」：</text>
+  <text x="724" y="953" font-size="11" fill="#475569">模型预测干预效果 → 湿实验回验 → 数据回流修正模型。</text>
+</svg>
