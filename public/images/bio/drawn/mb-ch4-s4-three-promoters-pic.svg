@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">真核三类启动子与通用转录因子</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">pol I（UCE + 核心元件，UBF/SL1）、pol II（TATA 盒 / Inr / BRE / DPE 模块化）、pol III（基因内部 A/B/C 盒或外部 TATA-PSE-OCT）——PIC 按 TBP→TFIIA→TFIIB→pol II/TFIIF→TFIIE→TFIIH 组装</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、pol I 启动子：核心元件 + UCE（均富 GC）</text>
+  <rect x="130.5052" y="204.8" width="38.989599999999996" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="150" y="219.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">UBF</text>
+  <rect x="337.784" y="204.8" width="154.432" height="20.4" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="415" y="219.32" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">SL1（含 TBP + TAF_I）</text>
+  <line x1="150" y1="231" x2="150" y2="247" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="415" y1="231" x2="415" y2="247" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="60" y1="255" x2="560" y2="255" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="90" y="240" width="120" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="150" y="260" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">UCE</text>
+  <rect x="340" y="240" width="140" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="410" y="260" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">核心元件</text>
+  <text x="155" y="291" font-size="10.5" fill="#64748b" text-anchor="middle">约 -180～-107</text>
+  <text x="410" y="291" font-size="10.5" fill="#64748b" text-anchor="middle">约 -45～+20</text>
+  <circle cx="500" cy="255" r="4" fill="#1e293b"/>
+  <text x="500" y="291" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">+1</text>
+  <text x="60" y="328" font-size="11.5" fill="#475569">· UBF 的 DNA 弯折使 UCE 与核心元件靠近，二者协同募集 pol I。</text>
+  <text x="60" y="356" font-size="11.5" fill="#475569">· pol I 专职 rRNA 基因簇转录，活性最高（见本章第 3 节）。</text>
+  <text x="60" y="384" font-size="11.5" fill="#475569">· 选择性因子 SL1 含 TBP 与多个 TAF_I。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、pol II 核心启动子：模块化元件组合</text>
+  <line x1="730" y1="240" x2="1350" y2="240" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="745" y="225" width="90" height="30" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="790" y="245" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">BRE</text>
+  <text x="790" y="214" font-size="10" fill="#64748b" text-anchor="middle">TFIIB 识别</text>
+  <rect x="845" y="225" width="130" height="30" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="910" y="245" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">TATA 盒</text>
+  <text x="910" y="214" font-size="10" fill="#64748b" text-anchor="middle">约 -25～-30</text>
+  <rect x="985" y="225" width="110" height="30" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1040" y="245" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Inr</text>
+  <text x="1040" y="214" font-size="10" fill="#64748b" text-anchor="middle">覆盖 -2～+5</text>
+  <rect x="1105" y="225" width="150" height="30" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1180" y="245" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">DPE</text>
+  <text x="1180" y="214" font-size="10" fill="#64748b" text-anchor="middle">+28～+32</text>
+  <circle cx="1085" cy="240" r="4" fill="#1e293b"/>
+  <text x="1085" y="262" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">+1</text>
+  <text x="990" y="286" font-size="10.5" fill="#64748b" text-anchor="middle">TATA 共有序列 TATA(A/T)A(A/T)（Hogness 盒）</text>
+  <text x="730" y="318" font-size="11.5" fill="#475569">· TATA 与 Inr 二者具其一即可起始；DPE 见于 TATA 缺失基因。</text>
+  <text x="730" y="346" font-size="11.5" fill="#475569">· 上游更远处为启动子近端元件（GC 盒 / Sp1、CAAT 盒）及增强子 / 沉默子等远端元件（第 8 章）。</text>
+  <rect x="30" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、pol III 启动子：多位于基因内部</text>
+  <rect x="60" y="500" width="620" height="52" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="76" y="521" font-size="12.5" fill="#1e293b" font-weight="700">1 型（5S rRNA）</text>
+  <text x="76" y="540" font-size="10.5" fill="#475569">A 盒(+50～+60) + 中间元件 + C 盒(+80～+90)</text>
+  <text x="446" y="532" font-size="10.5" fill="#831843" font-weight="600">TFIIIA → TFIIIC → TFIIIB</text>
+  <rect x="60" y="562" width="620" height="52" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="76" y="583" font-size="12.5" fill="#1e293b" font-weight="700">2 型（tRNA）</text>
+  <text x="76" y="602" font-size="10.5" fill="#475569">A 盒(+10～+20) + B 盒(+50～+60)</text>
+  <text x="446" y="594" font-size="10.5" fill="#831843" font-weight="600">TFIIIC → TFIIIB</text>
+  <rect x="60" y="624" width="620" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="76" y="645" font-size="12.5" fill="#1e293b" font-weight="700">3 型（U6 snRNA）</text>
+  <text x="76" y="664" font-size="10.5" fill="#475569">基因外部：TATA + PSE + OCT</text>
+  <text x="446" y="656" font-size="10.5" fill="#831843" font-weight="600">SNAPc/Oct + TFIIIB</text>
+  <text x="60" y="700" font-size="11.5" fill="#64748b">三种情况最终均由 TFIIIB（含 TBP、BRF、Bdp1）定位 pol III 于起始点上游。</text>
+  <rect x="710" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、pol II 前起始复合物（PIC）按序组装</text>
+  <rect x="726" y="512" width="92" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="772" y="536" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">TBP</text>
+  <text x="772" y="556" font-size="10" fill="#64748b" text-anchor="middle">TFIID</text>
+  <line x1="820" y1="540" x2="829" y2="540" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="831" y="512" width="92" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="877" y="536" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIA</text>
+  <line x1="925" y1="540" x2="934" y2="540" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="936" y="512" width="92" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="982" y="536" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIB</text>
+  <line x1="1030" y1="540" x2="1039" y2="540" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1041" y="512" width="92" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1087" y="536" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pol II</text>
+  <text x="1087" y="556" font-size="10" fill="#64748b" text-anchor="middle">+ TFIIF</text>
+  <line x1="1135" y1="540" x2="1144" y2="540" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1146" y="512" width="92" height="56" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1192" y="536" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIE</text>
+  <line x1="1240" y1="540" x2="1249" y2="540" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1251" y="512" width="92" height="56" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1297" y="536" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIH</text>
+  <text x="1297" y="556" font-size="10" fill="#64748b" text-anchor="middle">9 亚基</text>
+  <text x="726" y="596" font-size="12.5" fill="#831843" font-weight="700">TFIIH：</text>
+  <text x="796" y="596" font-size="11" fill="#475569">XPB（3′→5′ 解旋酶）在 Inr 周围解开约 13 bp 形成转录泡；CDK7/MO15 磷酸化 CTD Ser5 后启动子清除。</text>
+  <text x="726" y="648" font-size="11" fill="#64748b">真核开放复合物形成需 ATP（由 TFIIH 解旋酶驱动）——与原核不同；TFIIH 兼具 NER 修复功能。</text>
+  <text x="726" y="678" font-size="11" fill="#64748b">演化对照：真核把 σ 因子的识别、解链、起始位点选择功能分装到多个 GTF，便于分别调控。</text>
+  <rect x="30" y="752" width="1340" height="218" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="774.84" font-size="19" fill="#475569" font-weight="700">五、通用转录因子（GTF）速查</text>
+  <rect x="60" y="796" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="823.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">因子</text>
+  <rect x="230" y="796" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="823.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">亚基</text>
+  <rect x="450" y="796" width="890" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="823.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="60" y="840" width="170" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="858.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TFIID</text>
+  <rect x="230" y="840" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="858.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">TBP + ~14 TAF</text>
+  <rect x="450" y="840" width="890" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="858.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">TBP 结合 TATA 盒，扭曲 DNA 形成装配平台</text>
+  <rect x="60" y="866" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="866" width="170" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="884.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIA</text>
+  <rect x="230" y="866" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="884.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">3</text>
+  <rect x="450" y="866" width="890" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="884.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">稳定 TBP-DNA 结合，解除 TAF 抑制</text>
+  <rect x="60" y="892" width="170" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="910.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIB</text>
+  <rect x="230" y="892" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="910.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">1</text>
+  <rect x="450" y="892" width="890" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="910.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">单体，桥接 pol II 与 TBP，决定转录起始位点</text>
+  <rect x="60" y="918" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="918" width="170" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="936.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIF</text>
+  <rect x="230" y="918" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="936.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">2</text>
+  <rect x="450" y="918" width="890" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="936.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">随 pol II 结合，抑制非特异结合，协助延伸</text>
+  <rect x="60" y="944" width="170" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="962.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIE</text>
+  <rect x="230" y="944" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="962.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">2</text>
+  <rect x="450" y="944" width="890" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="962.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">募集并调节 TFIIH</text>
+  <rect x="60" y="970" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="970" width="170" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="988.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TFIIH</text>
+  <rect x="230" y="970" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="988.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">9</text>
+  <rect x="450" y="970" width="890" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="895" y="988.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">XPB 解链；CDK7/MO15 磷酸化 CTD Ser5；兼具 NER 修复功能</text>
+</svg>

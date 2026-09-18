@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">核酶与 RNA 编辑</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">I 型内含子用外源 G、II 型用内部 A 成套索（与剪接体同源）——RNase P 的 M1 RNA 与锤头状核酶证明 RNA 兼具信息与催化；锥虫 gRNA 指导 U 插入与 ADAR 的 A→I 编辑改写 mRNA 序列</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、两型自剪接内含子：亲核基团的差异</text>
+  <text x="60" y="186" font-size="12.5" fill="#1e293b" font-weight="700">I 型内含子（四膜虫 26S rRNA 前体，Cech 1982）</text>
+  <line x1="60" y1="216" x2="380" y2="216" stroke="#b45309" stroke-width="2.4"/>
+  <rect x="150" y="208" width="120" height="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="210" y="220" font-size="9.5" fill="#64748b" text-anchor="middle">内含子</text>
+  <rect x="286.229" y="177.075" width="87.54199999999999" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="330" y="189.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">外源 G（GTP）</text>
+  <line x1="316" y1="196" x2="286" y2="210" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="230" y="240" font-size="10.5" fill="#475569" text-anchor="middle">3′-OH 攻击 5′ 剪接位点 → 线形内含子释放</text>
+  <text x="60" y="262" font-size="10.5" fill="#64748b">无蛋白质条件即可自剪接；释放的内含子还可环化并具核酸酶活性；广泛分布于真菌线粒体、噬菌体与细菌。</text>
+  <line x1="60" y1="304" x2="640" y2="304" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 5"/>
+  <text x="60" y="330" font-size="12.5" fill="#1e293b" font-weight="700">II 型内含子：内部 A 作亲核基团</text>
+  <line x1="60" y1="360" x2="380" y2="360" stroke="#b45309" stroke-width="2.4"/>
+  <rect x="150" y="352" width="120" height="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <circle cx="240" cy="348" r="6" fill="#dc2626"/>
+  <text x="240" y="336" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">内部 A</text>
+  <path d="M160,352 C 150,394 230,394 220,352" fill="none" stroke="#b45309" stroke-width="2"/>
+  <text x="190" y="410" font-size="10.5" fill="#78350f" text-anchor="middle">套索（lariat）</text>
+  <text x="230" y="384" font-size="10.5" fill="#475569" text-anchor="middle">两步转酯</text>
+  <text x="410" y="336" font-size="10.5" fill="#475569">机制与剪接体完全平行——催化核心二级结构与 U2/U6 snRNA 同源，</text>
+  <text x="410" y="351" font-size="10.5" fill="#475569">提示剪接体由 II 型内含子演化而来</text>
+  <text x="410" y="366" font-size="10.5" fill="#475569">（snRNP 劫持假说）。常编码逆转录酶（maturase）</text>
+  <text x="410" y="381" font-size="10.5" fill="#475569">协助折叠并促转座。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、核酶家族：RNA 兼具信息与催化（1989 诺奖）</text>
+  <rect x="730" y="184" width="620" height="46" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="746" y="203" font-size="12.5" fill="#1e293b" font-weight="700">RNase P</text>
+  <text x="746" y="220" font-size="10" fill="#475569">M1 RNA 为催化亚基、C5 蛋白仅稳定——首个天然反式作用 RNA 催化剂（Altman）；负责 tRNA 前体 5′ 端成熟</text>
+  <rect x="730" y="240" width="620" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="746" y="259" font-size="12.5" fill="#1e293b" font-weight="700">锤头状核酶</text>
+  <text x="746" y="276" font-size="10" fill="#475569">植物类病毒中最小核酶，约 30 nt 即可自切——人工核酶设计模板</text>
+  <rect x="730" y="296" width="620" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="746" y="315" font-size="12.5" fill="#1e293b" font-weight="700">核糖体大亚基</text>
+  <text x="746" y="332" font-size="10" fill="#475569">肽酰转移酶中心完全由 23S rRNA 构成——核糖体本质上是核酶</text>
+  <rect x="730" y="352" width="620" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="746" y="371" font-size="12.5" fill="#1e293b" font-weight="700">端粒酶 RNA</text>
+  <text x="746" y="388" font-size="10" fill="#475569">作为模板而非催化剂（严格说端粒酶不是核酶，但其 RNA 为功能必需组分）</text>
+  <text x="730" y="414" font-size="11.5" fill="#64748b">Cech 与 Altman 因核酶研究获 1989 年诺贝尔化学奖——支撑「RNA 世界」假说。</text>
+  <rect x="30" y="452" width="700" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、RNA 编辑：超出基因模板的信息</text>
+  <rect x="60" y="496" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="523.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">类型</text>
+  <rect x="200" y="496" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="310" y="523.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
+  <rect x="420" y="496" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="523.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型例子</text>
+  <rect x="60" y="540" width="140" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="573.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">U 插入 / 删除</text>
+  <rect x="200" y="540" width="220" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="310" y="573.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">gRNA 指导，编辑体执行</text>
+  <rect x="420" y="540" width="280" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="573.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">锥虫线粒体 mRNA（可编辑掉一半以上序列）</text>
+  <rect x="60" y="596" width="640" height="56" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="596" width="140" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="629.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C→U / U→C</text>
+  <rect x="200" y="596" width="220" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="310" y="629.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">脱氨 / 氨基化</text>
+  <rect x="420" y="596" width="280" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="629.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">载脂蛋白 B 肠型 CAA→UAA 提前终止；植物线粒体</text>
+  <rect x="60" y="652" width="140" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="685.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">A→I</text>
+  <rect x="200" y="652" width="220" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="310" y="685.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">ADAR 作用于双链 RNA 脱氨</text>
+  <rect x="420" y="652" width="280" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="685.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">脑 GluR-B mRNA 的 Q/R 位点（决定 Ca²⁺ 通透性）</text>
+  <text x="60" y="676" font-size="11.5" fill="#64748b">「基因→蛋白质」的信息链并非严格一对一：编辑与剪接、修饰一道构成 RNA 层的「再编程」。</text>
+  <rect x="750" y="452" width="620" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="474.84" font-size="19" fill="#475569" font-weight="700">四、锥虫线粒体：gRNA 指导的 U 插入</text>
+  <text x="770" y="500" font-size="11" fill="#475569" font-weight="700">pre-mRNA（编辑前）</text>
+  <text x="780" y="516" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">A</text>
+  <text x="800" y="516" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">G</text>
+  <text x="820" y="516" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">C</text>
+  <line x1="770" y1="522" x2="850" y2="522" stroke="#b45309" stroke-width="2"/>
+  <line x1="890" y1="522" x2="960" y2="522" stroke="#b45309" stroke-width="2"/>
+  <text x="990" y="500" font-size="11" fill="#4c1d95" font-weight="700">gRNA（微环编码）</text>
+  <line x1="790" y1="560" x2="950" y2="560" stroke="#6d28d9" stroke-width="2"/>
+  <text x="786" y="560" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">U</text>
+  <text x="806" y="560" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">C</text>
+  <text x="826" y="560" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">G</text>
+  <text x="925" y="544" font-size="9.5" fill="#64748b" text-anchor="middle">5′ 锚定区配对</text>
+  <text x="770" y="592" font-size="10.5" fill="#475569">编辑体（U 添加酶 / U 切除酶 + 连接酶）在错配区插入或删除 U，逐步向 3′ 推进。</text>
+  <text x="770" y="636" font-size="11" font-weight="700">编辑后 mRNA：</text>
+  <line x1="880" y1="642" x2="1290" y2="642" stroke="#b45309" stroke-width="2"/>
+  <text x="895" y="638" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">A</text>
+  <text x="935" y="638" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">U</text>
+  <text x="975" y="638" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">U</text>
+  <text x="1015" y="638" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">G</text>
+  <text x="1055" y="638" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">U</text>
+  <text x="1095" y="638" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">C</text>
+  <text x="1135" y="638" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">C</text>
+  <text x="1175" y="638" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">A</text>
+  <text x="1215" y="638" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">U</text>
+  <text x="1255" y="638" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">G</text>
+  <rect x="968.259" y="659.5" width="83.48200000000001" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1010" y="671.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">插入的 U（红）</text>
+  <text x="770" y="700" font-size="10.5" fill="#64748b">动基体基因组高度「缩水」，mRNA 依赖大规模编辑方能读通——编辑体系最极端的演化产物。</text>
+  <rect x="30" y="752" width="1340" height="218" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="774.84" font-size="19" fill="#475569" font-weight="700">五、哺乳动物 ADAR 编辑：Alu 双链区的再编程</text>
+  <rect x="60" y="800" width="620" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="76" y="826" font-size="13" fill="#1e293b" font-weight="700">发生场所</text>
+  <text x="76" y="846" font-size="11.5" fill="#475569">ADAR 主要作用于 Alu 反向重复形成的双链区</text>
+  <rect x="710" y="800" width="620" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="726" y="826" font-size="13" fill="#1e293b" font-weight="700">读作变化</text>
+  <text x="726" y="846" font-size="11.5" fill="#475569">A→I 等于「A 读作 G」——影响剪接、稳定性与序列信息</text>
+  <rect x="60" y="876" width="620" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="76" y="902" font-size="13" fill="#1e293b" font-weight="700">蛋白多样性</text>
+  <text x="76" y="922" font-size="11.5" fill="#475569">显著扩展蛋白酶解多样性（如 5-HT₂C 受体亚型）</text>
+  <rect x="710" y="876" width="620" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="726" y="902" font-size="13" fill="#1e293b" font-weight="700">受控设计</text>
+  <text x="726" y="922" font-size="11.5" fill="#475569">RNA 层的「再编程」是普遍且受控的生物学设计</text>
+</svg>

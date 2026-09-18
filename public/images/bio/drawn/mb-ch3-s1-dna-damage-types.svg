@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 损伤的类型与后果</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">自发损伤（脱嘌呤、脱氨、8-oxoG、O⁶-meG）与环境因素（UV 二聚体、电离断裂、嵌入移码、交联）——损伤是结构异常，经复制拷贝才固定为突变</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、自发性损伤：脱嘌呤 / 脱氨 / 氧化 / 烷基化</text>
+  <rect x="91.6875" y="175.375" width="56.625" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="120" y="190.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">脱嘌呤</text>
+  <rect x="80" y="206" width="34" height="30" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="97" y="226" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">G</text>
+  <line x1="122" y1="221" x2="158" y2="221" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="162" y="206" width="44" height="30" rx="5" fill="#ffffff" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="184" y="226" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">AP</text>
+  <text x="216" y="226" font-size="10.5" fill="#64748b">＝无碱基位点</text>
+  <text x="60" y="258" font-size="11" fill="#475569">嘌呤糖苷键自发水解；</text>
+  <text x="60" y="273.5" font-size="11" fill="#475569">一个哺乳动物细胞每天可丢失数千个嘌呤碱基。</text>
+  <rect x="408.125" y="175.375" width="43.75" height="21.25" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="430" y="190.5" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">脱氨</text>
+  <rect x="370" y="206" width="34" height="30" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="387" y="226" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">C</text>
+  <rect x="408" y="206" width="34" height="30" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="425" y="226" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">G</text>
+  <line x1="452" y1="221" x2="488" y2="221" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="492" y="206" width="34" height="30" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="509" y="226" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">U</text>
+  <rect x="530" y="206" width="34" height="30" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="547" y="226" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">G</text>
+  <text x="360" y="258" font-size="11" fill="#475569">C→U：未修复则复制后 C:G→T:A 转换；</text>
+  <text x="360" y="273.5" font-size="11" fill="#475569">5mC→T 为 CpG 突变热点；A→次黄嘌呤。</text>
+  <line x1="60" y1="288" x2="650" y2="288" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 5"/>
+  <rect x="108.125" y="297.375" width="43.75" height="21.25" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="130" y="312.5" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">氧化</text>
+  <rect x="80" y="328" width="34" height="30" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="97" y="348" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">G</text>
+  <line x1="122" y1="343" x2="158" y2="343" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="162" y="328" width="68" height="30" rx="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="196" y="348" font-size="13" fill="#be185d" text-anchor="middle" font-weight="700">8-oxoG</text>
+  <text x="60" y="380" font-size="11" fill="#475569">活性氧物种（ROS）攻击碱基；</text>
+  <text x="60" y="395.5" font-size="11" fill="#475569">8-oxoG 与 A 错配 → G:C→T:A 颠换。</text>
+  <rect x="421.6875" y="297.375" width="56.625" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="450" y="312.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">烷基化</text>
+  <rect x="370" y="328" width="34" height="30" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="387" y="348" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">G</text>
+  <line x1="412" y1="343" x2="448" y2="343" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="452" y="328" width="68" height="30" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="486" y="348" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">O⁶-meG</text>
+  <text x="360" y="380" font-size="11" fill="#475569">内源或外源烷化剂（亚硝胺、EMS、MMS）；</text>
+  <text x="360" y="395.5" font-size="11" fill="#475569">O⁶-meG 与 T 错配，强致癌与细胞毒性。</text>
+  <rect x="690" y="132" width="680" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="706" y="154.84" font-size="19" fill="#475569" font-weight="700">二、环境因素诱导的损伤</text>
+  <rect x="710" y="176" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="203.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">损伤因素</text>
+  <rect x="880" y="176" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="203.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型损伤</text>
+  <rect x="1130" y="176" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="203.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="710" y="220" width="170" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="249.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">紫外线（260 nm）</text>
+  <rect x="880" y="220" width="250" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="249.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">环丁烷嘧啶二聚体（CPD）、6-4 光产物</text>
+  <rect x="1130" y="220" width="220" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="249.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">相邻嘧啶共价联结</text>
+  <rect x="710" y="268" width="640" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="268" width="170" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="297.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">电离辐射（X / γ）</text>
+  <rect x="880" y="268" width="250" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="297.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">单 / 双链断裂（SSB / DSB）、碱基破坏</text>
+  <rect x="1130" y="268" width="220" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="297.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">DSB 最致命</text>
+  <rect x="710" y="316" width="170" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="345.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">嵌入剂（吖啶类）</text>
+  <rect x="880" y="316" width="250" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="345.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">插入引起移码突变</text>
+  <rect x="1130" y="316" width="220" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="345.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">复制滑移</text>
+  <rect x="710" y="364" width="640" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="364" width="170" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="393.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">交联剂（顺铂等）</text>
+  <rect x="880" y="364" width="250" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="393.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">链间 / 链内交联</text>
+  <rect x="1130" y="364" width="220" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="393.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">完全阻断复制与转录</text>
+  <text x="710" y="430" font-size="12" fill="#64748b">损伤是化学结构异常（可被酶直接识别逆转）；突变是序列信息的稳定改变。</text>
+  <rect x="30" y="452" width="700" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、损伤 ≠ 突变：损伤经复制才固定为突变</text>
+  <line x1="70" y1="520" x2="210" y2="520" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="70" y1="552" x2="210" y2="552" stroke="#0f766e" stroke-width="2.4"/>
+  <circle cx="140" cy="536" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <line x1="135" y1="531" x2="145" y2="541" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="135" y1="541" x2="145" y2="531" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="140" y="496" font-size="11.5" fill="#dc2626" text-anchor="middle">损伤（结构异常）</text>
+  <line x1="216" y1="536" x2="272" y2="536" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="290" y1="506" x2="450" y2="506" stroke="#0f766e" stroke-width="2"/>
+  <line x1="290" y1="534" x2="450" y2="534" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="370" cy="520" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <rect x="362" y="528" width="16" height="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="392" y="548" font-size="10.5" fill="#075985" text-anchor="middle">错配掺入</text>
+  <line x1="290" y1="570" x2="450" y2="570" stroke="#0f766e" stroke-width="2"/>
+  <line x1="290" y1="598" x2="450" y2="598" stroke="#0f766e" stroke-width="2"/>
+  <line x1="456" y1="536" x2="512" y2="536" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="530" y1="520" x2="670" y2="520" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="530" y1="552" x2="670" y2="552" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="588" y="526" width="24" height="20" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="588" y="548" width="24" height="4" fill="#dc2626" opacity="0.7"/>
+  <text x="600" y="594" font-size="10.5" fill="#dc2626" text-anchor="middle">突变碱基对</text>
+  <text x="140" y="632" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">① 含损伤的亲代 DNA</text>
+  <text x="370" y="632" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">② 复制：损伤被「拷贝」</text>
+  <text x="600" y="632" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">③ 突变固定（可遗传）</text>
+  <text x="60" y="668" font-size="12" fill="#475569">只有当损伤被拷贝进子链后才真正固定为突变——修复系统必须在复制前与复制时协同运作；后果包括转换、颠换、移码，</text>
+  <text x="60" y="685.5" font-size="12" fill="#475569">及复制阻断与转录停滞。</text>
+  <rect x="740" y="452" width="630" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="474.84" font-size="19" fill="#475569" font-weight="700">四、修复系统缺陷的遗传病</text>
+  <rect x="760" y="496" width="590" height="56" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="780" y="520" font-size="13.5" fill="#dc2626" font-weight="700">着色性干皮病（XP）</text>
+  <text x="780" y="540" font-size="12" fill="#475569">NER 缺陷——对 UV 极度敏感，皮肤癌高发</text>
+  <rect x="760" y="564" width="590" height="56" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.8"/>
+  <text x="780" y="588" font-size="13.5" fill="#d97706" font-weight="700">共济失调毛细血管扩张症（AT）</text>
+  <text x="780" y="608" font-size="12" fill="#475569">DSB 感知缺陷</text>
+  <rect x="760" y="632" width="590" height="56" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="780" y="656" font-size="13.5" fill="#6d28d9" font-weight="700">BRCA1/2 突变</text>
+  <text x="780" y="676" font-size="12" fill="#475569">同源重组修复缺陷（乳腺癌 / 卵巢癌）</text>
+  <text x="760" y="706" font-size="12" fill="#64748b">修复能力缺陷直接证明修复系统的生理重要性。</text>
+  <rect x="30" y="732" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">五、两类典型损伤的结构示意</text>
+  <text x="60" y="782" font-size="13.5" fill="#1e293b" font-weight="700">UV 诱导的嘧啶二聚体</text>
+  <rect x="80" y="800" width="44" height="40" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="102" y="826" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <rect x="140" y="800" width="44" height="40" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="162" y="826" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <rect x="124" y="806" width="16" height="28" fill="#fef3c7" stroke="#b45309" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <text x="220" y="812" font-size="12" fill="#475569">相邻嘧啶经环丁烷环共价联结（CPD），阻断复制与转录；</text>
+  <text x="220" y="829.5" font-size="12" fill="#475569">另有 6-4 光产物。</text>
+  <text x="700" y="782" font-size="13.5" fill="#1e293b" font-weight="700">移码突变（嵌入剂 / 复制滑移）</text>
+  <rect x="700" y="796" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="736" y="817" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">ATG</text>
+  <rect x="776" y="796" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="812" y="817" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">CCA</text>
+  <rect x="852" y="796" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="888" y="817" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">TGG</text>
+  <text x="950" y="816" font-size="11.5" fill="#64748b">← 正常读框</text>
+  <rect x="700" y="856" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="736" y="877" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">ATG</text>
+  <rect x="776" y="856" width="26" height="32" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="789" y="877" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">T</text>
+  <rect x="806" y="856" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="842" y="877" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">CCA</text>
+  <rect x="882" y="856" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="918" y="877" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">TGG</text>
+  <text x="950" y="876" font-size="11.5" fill="#dc2626">← 插入 1 个碱基，读框整体移位</text>
+  <text x="700" y="936" font-size="12" fill="#64748b">插入 / 缺失非 3 倍数核苷酸引起移码；Brenner 等用 T4 rII 移码突变证明三联体阅读方式（见第 6 章）。</text>
+</svg>

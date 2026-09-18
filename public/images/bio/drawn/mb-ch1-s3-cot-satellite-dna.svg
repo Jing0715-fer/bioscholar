@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 序列的复杂性与卫星 DNA</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Cot 曲线把人基因组分为单一（约 45%～50%）、中度重复（25%～30%）与高度重复（10%～15%）三类——卫星 DNA 按重复单位分大卫星 171 bp、小卫星 6～25 bp 与微卫星 1～6 bp</text>
+  <rect x="30" y="132" width="700" height="322" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、复性动力学与 Cot 曲线：三类动力学组分</text>
+  <rect x="108" y="195" width="575" height="205" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="108" y1="348.75" x2="683" y2="348.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="251.75" y1="400" x2="251.75" y2="195" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="108" y1="297.5" x2="683" y2="297.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="395.5" y1="400" x2="395.5" y2="195" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="108" y1="246.25" x2="683" y2="246.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="539.25" y1="400" x2="539.25" y2="195" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="108" y1="400" x2="108" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="108" y="422" font-size="13" fill="#64748b" text-anchor="middle">10⁻²</text>
+  <line x1="203.83333333333331" y1="400" x2="203.83333333333331" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="203.83333333333331" y="422" font-size="13" fill="#64748b" text-anchor="middle">10⁻¹</text>
+  <line x1="299.66666666666663" y1="400" x2="299.66666666666663" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="299.66666666666663" y="422" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="395.5" y1="400" x2="395.5" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="395.5" y="422" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="491.3333333333333" y1="400" x2="491.3333333333333" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="491.3333333333333" y="422" font-size="13" fill="#64748b" text-anchor="middle">10²</text>
+  <line x1="587.1666666666667" y1="400" x2="587.1666666666667" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="587.1666666666667" y="422" font-size="13" fill="#64748b" text-anchor="middle">10³</text>
+  <line x1="683" y1="400" x2="683" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="683" y="422" font-size="13" fill="#64748b" text-anchor="middle">10⁴</text>
+  <line x1="102" y1="400" x2="108" y2="400" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="404" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="102" y1="348.75" x2="108" y2="348.75" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="352.75" font-size="13" fill="#64748b" text-anchor="end">25</text>
+  <line x1="102" y1="297.5" x2="108" y2="297.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="301.5" font-size="13" fill="#64748b" text-anchor="end">50</text>
+  <line x1="102" y1="246.25" x2="108" y2="246.25" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="250.25" font-size="13" fill="#64748b" text-anchor="end">75</text>
+  <line x1="102" y1="195" x2="108" y2="195" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="199" font-size="13" fill="#64748b" text-anchor="end">100%</text>
+  <text x="395.5" y="444" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">Cot 值（对数刻度）→</text>
+  <text x="120" y="190" font-size="11.5" fill="#64748b">复性分数（%）</text>
+  <text x="420" y="214" font-size="11.5" fill="#64748b">约 400 bp 片段 · 热变性后降温复性</text>
+  <path d="M108,400 C111.8,397.6 123.3,390.3 131,385.65 C138.7,381.0 146.3,375.0 154,372.325 C161.7,369.7 165.5,370.2 177,369.66 C188.5,369.1 138.7,369.3 223,369.25 C307.3,369.2 606.3,369.3 683,369.25" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4"/>
+  <path d="M251.75,397.95 C259.4,396.2 281.5,392.5 297.75,387.7 C314.0,382.9 333.2,375.4 349.5,369.25 C365.8,363.1 380.2,355.4 395.5,350.8 C410.8,346.2 426.2,343.6 441.5,341.575 C456.8,339.5 447.3,339.0 487.5,338.5 C527.8,338.0 650.4,338.5 683,338.5" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="6 4"/>
+  <path d="M453,395.9 C462.6,393.8 493.3,389.8 510.5,383.6 C527.8,377.5 542.1,367.5 556.5,359 C570.9,350.5 583.3,341.2 596.75,332.35 C610.2,323.5 622.6,312.5 637,305.7 C651.4,298.9 675.3,293.7 683,291.35" fill="none" stroke="#0369a1" stroke-width="2" stroke-dasharray="6 4"/>
+  <path d="M108,400 C111.8,397.6 123.3,390.3 131,385.65 C138.7,381.0 146.3,375.0 154,372.325 C161.7,369.7 160.7,370.5 177,369.66 C193.3,368.8 231.6,369.3 251.75,367.2 C271.9,365.1 281.5,361.7 297.75,356.95 C314.0,352.2 333.2,344.6 349.5,338.5 C365.8,332.4 380.2,324.7 395.5,320.05 C410.8,315.4 426.2,314.2 441.5,310.825 C456.8,307.4 476.0,302.8 487.5,299.55 C499.0,296.3 499.0,296.8 510.5,291.35 C522.0,285.9 542.1,275.3 556.5,266.75 C570.9,258.2 583.3,249.0 596.75,240.1 C610.2,231.2 622.6,220.3 637,213.45 C651.4,206.6 675.3,201.5 683,199.1" fill="none" stroke="#0f766e" stroke-width="3.2"/>
+  <line x1="108" y1="369.25" x2="683" y2="369.25" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 5"/>
+  <line x1="108" y1="307.75" x2="683" y2="307.75" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 5"/>
+  <text x="679" y="364.25" font-size="11" fill="#64748b" text-anchor="end">≈15%</text>
+  <text x="679" y="302.75" font-size="11" fill="#64748b" text-anchor="end">≈45%</text>
+  <text x="234" y="365.15" font-size="11.5" fill="#831843" font-weight="700">高度重复 10～15%</text>
+  <text x="679" y="330.5" font-size="11.5" fill="#78350f" text-anchor="end" font-weight="700">中度重复 25～30%</text>
+  <text x="679" y="283.35" font-size="11.5" fill="#075985" text-anchor="end" font-weight="700">单一序列 45～50%</text>
+  <rect x="750" y="132" width="620" height="322" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、卫星 DNA：离心命名与三级分类</text>
+  <text x="880" y="180" font-size="11.5" fill="#64748b">因碱基组成偏差，离心后形成独立于主带的「卫星」条带而得名</text>
+  <rect x="800" y="196" width="54" height="186" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="802" y="238" width="50" height="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="792" y="248" font-size="11" fill="#475569" text-anchor="end">主带</text>
+  <rect x="802" y="300" width="50" height="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.2"/>
+  <text x="792" y="310" font-size="11" fill="#831843" text-anchor="end">卫星带</text>
+  <text x="827" y="398" font-size="11" fill="#64748b" text-anchor="middle">CsCl 梯度</text>
+  <text x="880" y="206" font-size="13" fill="#134e4a" font-weight="700">大卫星 DNA（α 卫星）</text>
+  <rect x="880" y="214" width="92" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="926" y="231" font-size="10.5" fill="#134e4a" text-anchor="middle">171 bp</text>
+  <rect x="981" y="214" width="92" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1027" y="231" font-size="10.5" fill="#134e4a" text-anchor="middle">171 bp</text>
+  <rect x="1082" y="214" width="92" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1128" y="231" font-size="10.5" fill="#134e4a" text-anchor="middle">171 bp</text>
+  <rect x="1183" y="214" width="92" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1229" y="231" font-size="10.5" fill="#134e4a" text-anchor="middle">171 bp</text>
+  <text x="1286" y="231" font-size="11.5" fill="#64748b">×10⁵ 以上</text>
+  <text x="880" y="258" font-size="11.5" fill="#64748b">重复单位 171 bp · 着丝粒功能核心 · CENP-B 结合位点</text>
+  <text x="880" y="292" font-size="13" fill="#78350f" font-weight="700">小卫星 DNA（VNTR）</text>
+  <rect x="880" y="300" width="62" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="911" y="317" font-size="9.5" fill="#78350f" text-anchor="middle">TTAGGG</text>
+  <rect x="950" y="300" width="62" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="981" y="317" font-size="9.5" fill="#78350f" text-anchor="middle">TTAGGG</text>
+  <rect x="1020" y="300" width="62" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1051" y="317" font-size="9.5" fill="#78350f" text-anchor="middle">TTAGGG</text>
+  <rect x="1090" y="300" width="62" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1121" y="317" font-size="9.5" fill="#78350f" text-anchor="middle">TTAGGG</text>
+  <rect x="1160" y="300" width="62" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1191" y="317" font-size="9.5" fill="#78350f" text-anchor="middle">TTAGGG</text>
+  <text x="1236" y="317" font-size="11.5" fill="#64748b">等位间重复数可变</text>
+  <text x="880" y="344" font-size="11.5" fill="#64748b">6～25 bp · 端粒 TTAGGG 重复 · DNA 指纹的基础</text>
+  <text x="880" y="378" font-size="13" fill="#075985" font-weight="700">微卫星 DNA（SSR）</text>
+  <rect x="880" y="386" width="34" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="897" y="403" font-size="10.5" fill="#075985" text-anchor="middle">CA</text>
+  <rect x="920" y="386" width="34" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="937" y="403" font-size="10.5" fill="#075985" text-anchor="middle">CA</text>
+  <rect x="960" y="386" width="34" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="977" y="403" font-size="10.5" fill="#075985" text-anchor="middle">CA</text>
+  <rect x="1000" y="386" width="34" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1017" y="403" font-size="10.5" fill="#075985" text-anchor="middle">CA</text>
+  <rect x="1040" y="386" width="34" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1057" y="403" font-size="10.5" fill="#075985" text-anchor="middle">CA</text>
+  <rect x="1080" y="386" width="34" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1097" y="403" font-size="10.5" fill="#075985" text-anchor="middle">CA</text>
+  <text x="1128" y="403" font-size="11.5" fill="#64748b">(CA)ₙ 分布广 · 多态性高</text>
+  <text x="880" y="430" font-size="11.5" fill="#64748b">1～6 bp · 分子遗传学标记与连锁分析的重要工具</text>
+  <rect x="30" y="466" width="1340" height="256" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="488.84" font-size="19" fill="#475569" font-weight="700">三、复性动力学划分的三类序列组分</text>
+  <rect x="60" y="522" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="549.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">序列类型</text>
+  <rect x="280" y="522" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="549.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">拷贝数</text>
+  <rect x="460" y="522" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="580" y="549.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">占人基因组比例</text>
+  <rect x="700" y="522" width="640" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="549.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">典型代表</text>
+  <rect x="60" y="566" width="220" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="592.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">单一序列</text>
+  <rect x="280" y="566" width="180" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="592.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">1～数拷贝</text>
+  <rect x="460" y="566" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="580" y="592.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 45%～50%</text>
+  <rect x="700" y="566" width="640" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="592.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">多数结构基因（并非全部编码：多数细胞仅约 10% 得到表达）</text>
+  <rect x="60" y="608" width="1280" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="608" width="220" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="634.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">中度重复序列</text>
+  <rect x="280" y="608" width="180" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="634.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">10²～10⁵</text>
+  <rect x="460" y="608" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="580" y="634.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 25%～30%</text>
+  <rect x="700" y="608" width="640" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="634.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">Alu 序列、LINE-1、rRNA / 组蛋白等串联重复基因簇</text>
+  <rect x="60" y="650" width="220" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="676.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">高度重复序列</text>
+  <rect x="280" y="650" width="180" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="676.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">&gt;10⁵</text>
+  <rect x="460" y="650" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="580" y="676.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 10%～15%</text>
+  <rect x="700" y="650" width="640" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="676.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">卫星 DNA、微卫星</text>
+  <text x="60" y="706" font-size="11.5" fill="#64748b">人 5S rRNA 基因簇位于 1 号染色体，45S 基因簇位于近端着丝粒染色体短臂；Alu 约 280 bp、约 100 万拷贝（7SL RNA 衍生的 SINE）。</text>
+  <rect x="30" y="734" width="1340" height="236" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="756.84" font-size="19" fill="#475569" font-weight="700">四、散在重复元件（复制-粘贴扩散）与微卫星不稳定疾病</text>
+  <text x="60" y="786" font-size="13.5" fill="#78350f" font-weight="700">LINE-1：约 6 kb，自主逆转座子</text>
+  <line x1="60" y1="824" x2="580" y2="824" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="61" y="809" width="206" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="164" y="857" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">ORF1（RNA 结合蛋白）</text>
+  <rect x="269" y="809" width="310" height="30" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="424" y="857" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">ORF2（内切酶 + 逆转录酶）</text>
+  <text x="60" y="884" font-size="11.5" fill="#64748b">TPRT：ORF2 在基因组靶点切口 → 以 LINE-1 mRNA 为模板反转录插入新拷贝</text>
+  <line x1="584" y1="824" x2="606" y2="824" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="610" y="786" font-size="13.5" fill="#78350f" font-weight="700">Alu 序列：约 280 bp</text>
+  <rect x="610" y="796" width="240" height="36" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="730" y="818" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700">Alu（SINE）</text>
+  <text x="610" y="852" font-size="11.5" fill="#64748b">7SL RNA 衍生 · 约 100 万拷贝；非自主元件，</text>
+  <text x="610" y="869" font-size="11.5" fill="#64748b">借用 LINE-1 的 ORF2 酶系转座</text>
+  <text x="940" y="786" font-size="13.5" fill="#1e293b" font-weight="700">重复序列与疾病 / 功能</text>
+  <text x="940" y="812" font-size="12.5" fill="#475569">· 微卫星不稳定扩张：脆性 X 综合征、亨廷顿病（三核苷酸重复病）</text>
+  <text x="940" y="831" font-size="12.5" fill="#475569">· 高度重复序列不编码产物：参与染色质结构维持、</text>
+  <text x="940" y="850" font-size="12.5" fill="#475569">着丝粒形成与减数分裂配对 · 重复序列的扩增与重排是基因组进化的重要驱动力</text>
+</svg>

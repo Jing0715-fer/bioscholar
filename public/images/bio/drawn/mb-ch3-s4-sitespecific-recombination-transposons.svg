@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">位点特异性重组与转座子</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">λ 噬菌体 attP×attB 保守性重组（Int/IHF/Xis）——细菌 IS / Tn10 / Tn3 与真核 DNA 转座子、LINE-1 / Alu 逆转座子：切下-粘贴与复制-粘贴两条路线</text>
+  <rect x="30" y="132" width="660" height="296" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、位点特异性重组：λ 噬菌体 attP × attB</text>
+  <text x="60" y="192" font-size="13" fill="#1e293b" font-weight="700">整合（需 Int + IHF）</text>
+  <line x1="60" y1="226" x2="340" y2="226" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="60" y="214" font-size="11" fill="#64748b">gal</text>
+  <text x="316" y="214" font-size="11" fill="#64748b" text-anchor="end">bio</text>
+  <rect x="196" y="218" width="44" height="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="218" y="230" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">attB</text>
+  <text x="218" y="250" font-size="10.5" fill="#64748b" text-anchor="middle">约 25 bp（gal-bio 间）</text>
+  <text x="218" y="196" font-size="11" fill="#475569" text-anchor="middle">大肠杆菌染色体</text>
+  <circle cx="560" cy="226" r="44" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <rect x="576" y="218" width="44" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="598" y="230" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">attP</text>
+  <text x="598" y="282" font-size="10.5" fill="#64748b" text-anchor="middle">λ 环状基因组 · attP 约 240 bp</text>
+  <rect x="522.50595" y="160.225" width="74.9881" height="19.55" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="560" y="174.14" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">整合酶 Int</text>
+  <line x1="400" y1="210" x2="400" y2="268" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <text x="412" y="236" font-size="11" fill="#831843" font-weight="700">attP × attB</text>
+  <line x1="470" y1="268" x2="470" y2="210" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="470" y="290" font-size="11" fill="#075985" text-anchor="middle">切离（还需 Xis）</text>
+  <text x="60" y="330" font-size="13" fill="#1e293b" font-weight="700">整合产物：attL 与 attR 夹持原噬菌体</text>
+  <line x1="60" y1="364" x2="640" y2="364" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="150" y="356" width="36" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="168" y="368" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">attL</text>
+  <rect x="190" y="348" width="240" height="32" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="310" y="368" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">原噬菌体（prophage）</text>
+  <rect x="434" y="356" width="36" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="452" y="368" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">attR</text>
+  <text x="60" y="352" font-size="11" fill="#64748b">gal</text>
+  <text x="640" y="352" font-size="11" fill="#64748b" text-anchor="end">bio</text>
+  <text x="60" y="398" font-size="11.5" fill="#475569">保守性重组：不依赖 RecA 与大范围同源、不伴随 DNA 净合成；能量来自磷酸二酯键的断裂-再连接转移，不需 ATP。</text>
+  <text x="466" y="192" font-size="10.5" fill="#64748b">Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，用于条件性基因敲除（第 11 章）</text>
+  <rect x="710" y="132" width="660" height="296" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、细菌转座子的三种组织</text>
+  <text x="730" y="190" font-size="13" fill="#1e293b" font-weight="700">插入序列 IS（0.7～1.5 kb）</text>
+  <rect x="730" y="202" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="751" y="219" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
+  <rect x="774" y="202" width="180" height="26" rx="4" fill="#fce7f3" stroke="#831843" stroke-width="1.6"/>
+  <text x="864" y="219" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">转座酶 tnp</text>
+  <rect x="958" y="202" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="979" y="219" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
+  <text x="1030" y="206" font-size="10.5" fill="#64748b">两端反向重复（IR）夹一个转座酶基因；复制型或非复制型转座。</text>
+  <text x="730" y="252" font-size="13" fill="#1e293b" font-weight="700">复合转座子（如 Tn10）</text>
+  <rect x="730" y="264" width="90" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="775" y="281" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IS10-L</text>
+  <rect x="822" y="264" width="150" height="26" rx="4" fill="#fee2e2" stroke="#991b1b" stroke-width="1.6"/>
+  <text x="897" y="281" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">tet 抗性基因</text>
+  <rect x="974" y="264" width="90" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="1019" y="281" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IS10-R</text>
+  <text x="1080" y="268" font-size="10.5" fill="#64748b">两翼 IS 元件夹带抗性等基因，借 IS 的转座酶整体移动。</text>
+  <text x="730" y="314" font-size="13" fill="#1e293b" font-weight="700">Tn3 家族（复制型）</text>
+  <rect x="730" y="326" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="751" y="343" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
+  <rect x="774" y="326" width="120" height="26" rx="4" fill="#fce7f3" stroke="#831843" stroke-width="1.6"/>
+  <text x="834" y="343" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">tnpA 转座酶</text>
+  <rect x="896" y="326" width="150" height="26" rx="4" fill="#fef3c7" stroke="#78350f" stroke-width="1.6"/>
+  <text x="971" y="343" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">res + tnpR 解离酶</text>
+  <rect x="1048" y="326" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="1069" y="343" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
+  <text x="1100" y="330" font-size="10.5" fill="#64748b">复制型转座形成共整合体，由解离酶在 res 位点拆分。</text>
+  <text x="730" y="380" font-size="12" fill="#475569" font-weight="700">靶位点重复：插入后两侧各复制出一段短重复（5～9 bp）</text>
+  <line x1="760" y1="402" x2="900" y2="402" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="820" y="394" width="30" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="806" y1="392" x2="816" y2="412" stroke="#0369a1" stroke-width="2"/>
+  <line x1="846" y1="392" x2="856" y2="412" stroke="#0369a1" stroke-width="2"/>
+  <text x="920" y="406" font-size="10.5" fill="#64748b" text-anchor="end">斜线＝5～9 bp 靶点重复</text>
+  <rect x="30" y="448" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="470.84" font-size="19" fill="#475569" font-weight="700">三、非复制型与复制型转座</text>
+  <text x="60" y="504" font-size="13.5" fill="#1e293b" font-weight="700">非复制型（切下-粘贴）</text>
+  <line x1="60" y1="536" x2="300" y2="536" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="150" y="528" width="60" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="180" y="540" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">Tn</text>
+  <text x="180" y="560" font-size="10.5" fill="#64748b" text-anchor="middle">供体（迁离后留下缺口）</text>
+  <line x1="310" y1="536" x2="370" y2="536" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="370" y1="536" x2="640" y2="536" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="430" y="528" width="60" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="460" y="540" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">Tn</text>
+  <text x="460" y="560" font-size="10.5" fill="#64748b" text-anchor="middle">靶 DNA（原位序列迁离，拷贝数不变）</text>
+  <line x1="60" y1="596" x2="640" y2="596" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 5"/>
+  <text x="60" y="622" font-size="13.5" fill="#1e293b" font-weight="700">复制型（replicative）</text>
+  <line x1="60" y1="654" x2="250" y2="654" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="120" y="646" width="50" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="145" y="658" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">Tn</text>
+  <text x="155" y="676" font-size="10.5" fill="#64748b" text-anchor="middle">供体</text>
+  <line x1="255" y1="654" x2="315" y2="654" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <ellipse cx="380" cy="654" rx="78" ry="24" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="380" y="658" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">共整合体</text>
+  <line x1="445" y1="654" x2="505" y2="654" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <text x="475" y="638" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">tnpR</text>
+  <line x1="505" y1="646" x2="640" y2="646" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="545" y="638" width="50" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="570" y="650" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">Tn</text>
+  <line x1="505" y1="678" x2="640" y2="678" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="545" y="670" width="50" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="570" y="682" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">Tn</text>
+  <text x="575" y="700" font-size="10.5" fill="#64748b" text-anchor="middle">转座伴随复制，拷贝数增加</text>
+  <rect x="710" y="448" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="470.84" font-size="19" fill="#475569" font-weight="700">四、真核转座元件：DNA 转座子与逆转座子</text>
+  <text x="730" y="502" font-size="13" fill="#1e293b" font-weight="700">DNA 转座子（切下-粘贴）</text>
+  <rect x="730" y="514" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="751" y="531" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
+  <rect x="774" y="514" width="120" height="26" rx="4" fill="#fce7f3" stroke="#831843" stroke-width="1.6"/>
+  <text x="834" y="531" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">转座酶</text>
+  <rect x="898" y="514" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
+  <text x="919" y="531" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
+  <text x="960" y="512" font-size="10.5" fill="#64748b">玉米 Ac（自主）/ Ds（非自主）、果蝇 P 元件；P × Q 杂交引发杂种不育。</text>
+  <line x1="730" y1="562" x2="1360" y2="562" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 5"/>
+  <text x="730" y="586" font-size="13" fill="#1e293b" font-weight="700">逆转座子（经 RNA 中间体，复制-粘贴）</text>
+  <text x="730" y="608" font-size="11.5" fill="#475569">LTR 逆转座子：酵母 Ty、果蝇 copia</text>
+  <rect x="730" y="620" width="40" height="26" rx="4" fill="#fef3c7" stroke="#78350f" stroke-width="1.6"/>
+  <text x="750" y="637" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">LTR</text>
+  <rect x="774" y="620" width="150" height="26" rx="4" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.6"/>
+  <text x="849" y="637" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">gag-pol</text>
+  <rect x="928" y="620" width="40" height="26" rx="4" fill="#fef3c7" stroke="#78350f" stroke-width="1.6"/>
+  <text x="948" y="637" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">LTR</text>
+  <text x="990" y="634" font-size="11.5" fill="#78350f" font-weight="700">LINE-1（自主）：</text>
+  <rect x="1100" y="620" width="100" height="26" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="1150" y="637" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">ORF1</text>
+  <rect x="1204" y="620" width="140" height="26" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="1274" y="637" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">ORF2</text>
+  <text x="1100" y="660" font-size="10.5" fill="#64748b">ORF1 编码 RNA 结合蛋白；ORF2 具内切酶与逆转录酶活性，经 TPRT 插入新拷贝。</text>
+  <text x="1100" y="675" font-size="10.5" fill="#64748b">Alu 等非自主 SINE 借用 LINE-1 酶系转座。</text>
+  <rect x="30" y="732" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">五、McClintock 的发现与转座的基因组意义</text>
+  <line x1="70" y1="800" x2="660" y2="800" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <circle cx="130" cy="800" r="6" fill="#1e293b"/>
+  <text x="130" y="782" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1950</text>
+  <text x="130" y="818" font-size="10.5" fill="#475569" text-anchor="middle">McClintock 在玉米中发现 Ds / Ac 控制元件</text>
+  <circle cx="350" cy="800" r="6" fill="#1e293b"/>
+  <text x="350" y="782" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1983</text>
+  <text x="350" y="818" font-size="10.5" fill="#475569" text-anchor="middle">获诺贝尔奖——「移动的遗传元件」获公认</text>
+  <circle cx="560" cy="800" r="6" fill="#1e293b"/>
+  <text x="560" y="782" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">现代</text>
+  <text x="560" y="818" font-size="10.5" fill="#475569" text-anchor="middle">转座元件占人基因组近半</text>
+  <rect x="700" y="780" width="300" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="714" y="806" font-size="13" fill="#1e293b" font-weight="700">插入突变</text>
+  <text x="714" y="824" font-size="11" fill="#475569">如血友病 LINE-1 插入凝血因子基因</text>
+  <rect x="1020" y="780" width="300" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1034" y="806" font-size="13" fill="#1e293b" font-weight="700">非等位同源重组</text>
+  <text x="1034" y="824" font-size="11" fill="#475569">重复元件间错误配对致基因组重排</text>
+  <rect x="700" y="864" width="300" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="714" y="890" font-size="13" fill="#1e293b" font-weight="700">外显子化</text>
+  <text x="714" y="908" font-size="11" fill="#475569">转座序列经剪接进入编码区</text>
+  <rect x="1020" y="864" width="300" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="1034" y="890" font-size="13" fill="#1e293b" font-weight="700">程序化重排同源</text>
+  <text x="1034" y="908" font-size="11" fill="#475569">CRISPR 间隔序列、V(D)J 重排与转座逻辑一脉相承</text>
+  <text x="70" y="920" font-size="11.5" fill="#64748b">转座不依赖序列同源性与 RecA；转座元件是基因组进化与疾病的双重来源。</text>
+</svg>

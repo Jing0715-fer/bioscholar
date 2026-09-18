@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">原癌基因的分类、功能与激活机制</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">生长因子（SIS）→ 受体（HER2/EGFR）→ 信号转导（src/abl/Ras）→ 转录因子（myc）→ 周期（cyclin D1/CDK4）——点突变（Ras G12V，约 30% 肿瘤）、扩增（MYCN/HER2）、易位（费城染色体 BCR-ABL）、LTR 插入四路线；伊马替尼使 CML 五年生存率超 90%</text>
+  <rect x="30" y="132" width="1340" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、原癌基因按产物定位分类：增殖–存活信号网络的放大器节点</text>
+  <text x="46" y="180" font-size="11" fill="#475569">原癌基因编码增殖、分化、存活信号的正调控组分——激活突变几乎都是功能获得（gain-of-function）且显性：一个等位基因激活即可生效。</text>
+  <rect x="46" y="196" width="195" height="100" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="46" y="196" width="195" height="30" rx="8" fill="#fef3c7" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="143" y="216" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">分泌生长因子</text>
+  <text x="143" y="252" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">SIS（PDGF-B 链）</text>
+  <text x="143" y="278" font-size="9.5" fill="#64748b" text-anchor="middle">自分泌促增殖</text>
+  <line x1="243" y1="246" x2="267" y2="246" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="269" y="196" width="195" height="100" rx="8" fill="#ede9fe" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="269" y="196" width="195" height="30" rx="8" fill="#ede9fe" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="366" y="216" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">受体酪氨酸激酶</text>
+  <text x="366" y="252" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">erbB（EGFR）· HER2 · fms</text>
+  <text x="366" y="278" font-size="9.5" fill="#64748b" text-anchor="middle">接收促增殖信号</text>
+  <line x1="466" y1="246" x2="490" y2="246" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="492" y="196" width="195" height="100" rx="8" fill="#fce7f3" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="492" y="196" width="195" height="30" rx="8" fill="#fce7f3" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="589" y="216" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">信号转导分子</text>
+  <text x="589" y="252" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">src · abl ｜ Ras（H/K/N）</text>
+  <text x="589" y="278" font-size="9.5" fill="#64748b" text-anchor="middle">激酶中继·GTP 开关</text>
+  <line x1="689" y1="246" x2="713" y2="246" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="715" y="196" width="195" height="100" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="715" y="196" width="195" height="30" rx="8" fill="#e0f2fe" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="812" y="216" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">丝/苏氨酸激酶</text>
+  <text x="812" y="252" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">raf（MAPKKK）</text>
+  <text x="812" y="278" font-size="9.5" fill="#64748b" text-anchor="middle">级联中继</text>
+  <line x1="912" y1="246" x2="936" y2="246" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="938" y="196" width="195" height="100" rx="8" fill="#ccfbf1" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="938" y="196" width="195" height="30" rx="8" fill="#ccfbf1" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1035" y="216" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">转录因子</text>
+  <text x="1035" y="252" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">myc · jun · fos · rel</text>
+  <text x="1035" y="278" font-size="9.5" fill="#64748b" text-anchor="middle">基因表达程序</text>
+  <line x1="1135" y1="246" x2="1159" y2="246" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1161" y="196" width="195" height="100" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="1161" y="196" width="195" height="30" rx="8" fill="#fee2e2" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1258" y="216" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">凋亡与周期调控</text>
+  <text x="1258" y="252" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">bcl-2 · cyclin D1 · CDK4</text>
+  <text x="1258" y="278" font-size="9.5" fill="#64748b" text-anchor="middle">G1/S 推进·抗凋亡</text>
+  <text x="46" y="320" font-size="11" fill="#475569">网络成员相互连接——一个成员的激活常足以拉动整条通路，肿瘤因此高度依赖某个「驱动」癌基因（oncogene addiction，癌基因依赖）。</text>
+  <rect x="30" y="392" width="1340" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="414.84" font-size="19" fill="#475569" font-weight="700">二、原癌基因激活的四条路线（各附示意）</text>
+  <rect x="166.28" y="437.375" width="69.44" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="201" y="452.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">① 点突变</text>
+  <rect x="492.8425" y="437.375" width="82.315" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="534" y="452.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">② 基因扩增</text>
+  <rect x="819.405" y="437.375" width="95.19" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="867" y="452.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">③ 染色体易位</text>
+  <rect x="1158.8425" y="437.375" width="82.315" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1200" y="452.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">④ 插入激活</text>
+  <rect x="60" y="486" width="86" height="36" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="103" y="508" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">Ras·GDP</text>
+  <rect x="222" y="486" width="96" height="36" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="270" y="508" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">Ras·GTP</text>
+  <line x1="146" y1="494" x2="222" y2="494" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="184" y="486" font-size="8.5" fill="#64748b" text-anchor="middle">GEF 置换</text>
+  <line x1="222" y1="522" x2="146" y2="522" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <text x="184" y="540" font-size="8.5" fill="#059669" text-anchor="middle">GAP 水解</text>
+  <line x1="174" y1="514" x2="194" y2="530" stroke="#dc2626" stroke-width="3"/>
+  <line x1="194" y1="514" x2="174" y2="530" stroke="#dc2626" stroke-width="3"/>
+  <text x="184" y="560" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">G12V：GTP 水解失灵</text>
+  <line x1="318" y1="504" x2="350" y2="504" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="60" y="590" font-size="10.5" fill="#475569">Gly12 / Gly13 / Gln61 突变（如 G12V）</text>
+  <text x="60" y="605" font-size="10.5" fill="#475569">使 GTP 水解失灵——Ras 锁定 GTP 态，</text>
+  <text x="60" y="620" font-size="10.5" fill="#475569">持续向 RAF–MEK–ERK 发送增殖信号。</text>
+  <text x="60" y="655" font-size="10.5" fill="#475569">Ras 是人类肿瘤中突变最广的癌基因（约 30%）；</text>
+  <text x="60" y="670" font-size="10.5" fill="#475569">KRAS G12D 见于约 90% 胰腺导管腺癌。</text>
+  <line x1="400" y1="512" x2="640" y2="512" stroke="#0f766e" stroke-width="5"/>
+  <text x="400" y="540" font-size="9" fill="#64748b" text-anchor="middle">chr</text>
+  <rect x="430" y="498" width="80" height="28" rx="3" fill="#0f766e" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="470" y="516" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">MYCN×N</text>
+  <text x="470" y="490" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="600">HSR 均染区</text>
+  <circle cx="560" cy="545" r="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <circle cx="590" cy="535" r="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <circle cx="575" cy="562" r="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="575" y="590" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="600">DM 双微体</text>
+  <text x="394" y="620" font-size="10.5" fill="#475569">基因拷贝数局部增加——双微体（DM）或均染区（HSR）</text>
+  <text x="394" y="635" font-size="10.5" fill="#475569">使产物过量表达。</text>
+  <text x="394" y="675" font-size="10.5" fill="#475569">MYCN 扩增于神经母细胞瘤（预后指标）；</text>
+  <text x="394" y="690" font-size="10.5" fill="#475569">HER2 / ERBB2 扩增于 20%～30% 乳腺癌（赫赛汀的靶点）；</text>
+  <text x="394" y="705" font-size="10.5" fill="#475569">MYC 扩增见于多种肿瘤。</text>
+  <rect x="740" y="500" width="74" height="32" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="777" y="520" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">BCR</text>
+  <text x="777" y="490" font-size="9" fill="#64748b" text-anchor="middle">chr22</text>
+  <rect x="856" y="500" width="74" height="32" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="893" y="520" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">ABL</text>
+  <text x="893" y="490" font-size="9" fill="#64748b" text-anchor="middle">chr9</text>
+  <line x1="777" y1="532" x2="830" y2="560" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <line x1="893" y1="532" x2="890" y2="560" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="778" y="562" width="168" height="34" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="862" y="584" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">BCR-ABL（p210）</text>
+  <text x="862" y="616" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="600">费城染色体 t(9;22)</text>
+  <text x="726" y="645" font-size="10" fill="#475569">t(9;22) BCR-ABL → CML；</text>
+  <text x="726" y="659.5" font-size="10" fill="#475569">t(8;14) c-MYC × IgH 增强子 → 伯基特淋巴瘤；</text>
+  <text x="726" y="674" font-size="10" fill="#475569">t(14;18) BCL-2 × IgH → 滤泡性淋巴瘤；</text>
+  <text x="726" y="688.5" font-size="10" fill="#475569">t(15;17) PML-RARα → 急性早幼粒白血病 APL。</text>
+  <line x1="1060" y1="512" x2="1330" y2="512" stroke="#0f766e" stroke-width="3"/>
+  <rect x="1150" y="498" width="76" height="28" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1188" y="516" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">ALV LTR</text>
+  <rect x="1262" y="498" width="60" height="28" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1292" y="516" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">c-myc</text>
+  <line x1="1226" y1="512" x2="1260" y2="512" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="1243" y="538" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">激活</text>
+  <text x="1059" y="570" font-size="10.5" fill="#475569">不含 onc 的逆转录病毒（ALV）随机整合，</text>
+  <text x="1059" y="585" font-size="10.5" fill="#475569">前病毒 LTR 充当启动子 / 增强子激活旁侧原癌基因——插入诱变是发现新癌基因的遗传学工具。</text>
+  <text x="1059" y="645" font-size="10.5" fill="#475569">与转导（RSV 捕获 c-src 成 v-src）</text>
+  <text x="1059" y="660" font-size="10.5" fill="#475569">同为逆转录病毒的激活路线——两条路线殊途同归。</text>
+  <rect x="30" y="842" width="1340" height="138" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="864.84" font-size="19" fill="#475569" font-weight="700">三、靶向治疗的逻辑起点：从驱动基因到药物</text>
+  <rect x="46" y="880" width="420" height="66" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="62" y="902" font-size="11.5" fill="#1e293b" font-weight="700">伊马替尼（Gleevec，2001）</text>
+  <text x="62" y="922" font-size="10" fill="#475569">ATP 竞争性抑制 BCR-ABL → CML 五年生存率超 90%——开启分子靶向治疗时代</text>
+  <rect x="486" y="880" width="420" height="66" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="502" y="902" font-size="11.5" fill="#1e293b" font-weight="700">赫赛汀（trastuzumab）</text>
+  <text x="502" y="922" font-size="10" fill="#475569">抗 HER2 抗体治疗 HER2 扩增乳腺癌（20%～30% 患者群）</text>
+  <rect x="926" y="880" width="420" height="66" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="942" y="902" font-size="11.5" fill="#1e293b" font-weight="700">ATRA + 砼剂（APL）</text>
+  <text x="942" y="922" font-size="10" fill="#475569">降解 PML-RARα、诱导分化治愈——「分化治疗」典范</text>
+  <text x="700" y="968" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="600">四条激活路线本质相同：使生长信号的强度、时序或位置脱离正常调控。</text>
+</svg>

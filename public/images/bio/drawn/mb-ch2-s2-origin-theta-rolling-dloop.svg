@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">复制起点、方向与三种复制方式</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">oriC（245 bp：5×DnaA 盒 + 3×AT 富集 DUE）起始双向复制——θ 型（大肠杆菌）、滚动环（λ/M13/F 质粒）与 D 环（线粒体）三种方式</text>
+  <rect x="30" y="132" width="640" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、复制起点与复制子：大肠杆菌 oriC（约 245 bp）</text>
+  <text x="155" y="212" font-size="12" fill="#831843" font-weight="700">DnaA 蛋白（起始因子）</text>
+  <circle cx="93" cy="240" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="123" cy="240" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="153" cy="240" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="183" cy="240" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="213" cy="240" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="315" y="212" font-size="11.5" fill="#075985" text-anchor="middle">AT 富集 → 熔解能耗低</text>
+  <line x1="300" y1="246" x2="258" y2="220" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="330" y1="246" x2="372" y2="220" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="70" y1="272" x2="610" y2="272" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="80" y="259" width="26" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="93" y="276" font-size="10" fill="#134e4a" text-anchor="middle">9</text>
+  <rect x="110" y="259" width="26" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="123" y="276" font-size="10" fill="#134e4a" text-anchor="middle">9</text>
+  <rect x="140" y="259" width="26" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="153" y="276" font-size="10" fill="#134e4a" text-anchor="middle">9</text>
+  <rect x="170" y="259" width="26" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="183" y="276" font-size="10" fill="#134e4a" text-anchor="middle">9</text>
+  <rect x="200" y="259" width="26" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="213" y="276" font-size="10" fill="#134e4a" text-anchor="middle">9</text>
+  <rect x="250" y="259" width="40" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="270" y="276" font-size="9.5" fill="#075985" text-anchor="middle">13 bp</text>
+  <rect x="294" y="259" width="40" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="314" y="276" font-size="9.5" fill="#075985" text-anchor="middle">13 bp</text>
+  <rect x="338" y="259" width="40" height="26" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="358" y="276" font-size="9.5" fill="#075985" text-anchor="middle">13 bp</text>
+  <text x="155" y="306" font-size="12" fill="#475569" text-anchor="middle">DnaA 盒 ×5（9 bp）</text>
+  <text x="315" y="306" font-size="12" fill="#475569" text-anchor="middle">解旋元件 DUE ×3（13 bp）</text>
+  <path d="M 80,337 Q 80,328 89,328 M 511,328 Q 520,328 520,337" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="89" y1="328" x2="511" y2="328" stroke="#64748b" stroke-width="1.7"/>
+  <text x="300" y="352" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">复制子（replicon）：起点与终止点之间的 DNA 单位</text>
+  <text x="70" y="378" font-size="12" fill="#64748b">复制子模型（Jacob 与 Brenner，1963）：起点携带可被起始因子识别的信息。</text>
+  <rect x="690" y="132" width="680" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="706" y="154.84" font-size="19" fill="#475569" font-weight="700">二、θ 型复制（Cairns 型）：大肠杆菌环状染色体</text>
+  <circle cx="870" cy="295" r="80" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <path d="M830,226 C 820,170 920,170 910,226" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M830,226 C 840,205 900,205 910,226" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="826" y1="244" x2="798" y2="262" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <line x1="914" y1="244" x2="942" y2="262" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="870" y="165" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">双向复制叉</text>
+  <circle cx="870" cy="375" r="5" fill="#1e293b"/>
+  <text x="870" y="400" font-size="11.5" fill="#475569" text-anchor="middle">oriC</text>
+  <text x="870" y="295" font-size="12" fill="#475569" text-anchor="middle">环状染色体</text>
+  <text x="990" y="185" font-size="11.5" fill="#64748b">复制泡</text>
+  <text x="1000" y="216" font-size="13" fill="#1e293b" font-weight="700">放射性自显影（Cairns）：</text>
+  <text x="1000" y="240" font-size="12" fill="#475569">大肠杆菌环状染色体形成 θ 形中间体，</text>
+  <text x="1000" y="258" font-size="12" fill="#475569">两个复制叉自起点反向移动，子代分子保持环状。</text>
+  <text x="1000" y="276" font-size="12" fill="#475569">多数原核与真核复制叉为双向复制；个别体系单向</text>
+  <text x="1000" y="294" font-size="12" fill="#475569">（如质粒 ColE1）。</text>
+  <rect x="30" y="452" width="640" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、滚动环复制：λ 后期、M13、φX174、F 质粒接合</text>
+  <text x="60" y="505" font-size="12" fill="#475569">一条链切口产生 3′-OH，以另一条环状链为模板持续滚环合成，连续产生多基因组串联单链，切割后环化。</text>
+  <circle cx="130" cy="600" r="50" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <line x1="122" y1="542" x2="138" y2="558" stroke="#dc2626" stroke-width="2.2"/>
+  <line x1="122" y1="558" x2="138" y2="542" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="130" y="526" font-size="11" fill="#dc2626" text-anchor="middle">切口（3′-OH）</text>
+  <line x1="140" y1="548" x2="420" y2="548" stroke="#b45309" stroke-width="2.4" marker-end="url(#arr-rna)"/>
+  <text x="290" y="532" font-size="11.5" fill="#78350f" text-anchor="middle">5′ 链滚出（被置换）</text>
+  <path d="M180,600 A50,50 0 0 1 130,650" fill="none" stroke="#0369a1" stroke-width="2.6" marker-end="url(#arr-acc)"/>
+  <text x="130" y="678" font-size="11.5" fill="#075985" text-anchor="middle">以环状模板链持续合成</text>
+  <circle cx="455" cy="548" r="20" fill="none" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="515" cy="548" r="20" fill="none" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="575" cy="548" r="20" fill="none" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="515" y="588" font-size="11.5" fill="#475569" text-anchor="middle">切割 → 环化</text>
+  <text x="515" y="608" font-size="11.5" fill="#475569" text-anchor="middle">串联子代基因组拷贝</text>
+  <rect x="690" y="452" width="680" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="706" y="474.84" font-size="19" fill="#475569" font-weight="700">四、D 环复制（置换环）：线粒体 DNA 与叶绿体</text>
+  <text x="1010" y="508" font-size="12" fill="#475569">两条链起点错开：先合成重链（H）置换出亲代链形成 D 环；</text>
+  <text x="1010" y="526" font-size="12" fill="#475569">轻链起点暴露后再启动轻链合成。</text>
+  <circle cx="860" cy="610" r="62" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="860" y="614" font-size="12" fill="#475569" text-anchor="middle">mtDNA</text>
+  <text x="860" y="530" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">H 链起点先启动</text>
+  <path d="M892,572 A50,50 0 0 1 909,619" fill="none" stroke="#0369a1" stroke-width="2.8" marker-end="url(#arr-acc)"/>
+  <path d="M900,562 C 962,578 952,630 921,621" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <text x="985" y="590" font-size="11.5" fill="#78350f">被置换链形成 D 环</text>
+  <rect x="721.61295" y="550.225" width="60.7741" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="752" y="564.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">① H 链先</text>
+  <rect x="721.61295" y="650.225" width="60.7741" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="752" y="664.14" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">② L 链后</text>
+  <text x="860" y="700" font-size="11.5" fill="#78350f" text-anchor="middle">L 链起点暴露后启动</text>
+  <rect x="30" y="732" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">五、真核多起点复制：复制泡形成与融合</text>
+  <line x1="70" y1="840" x2="1330" y2="840" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M170,840 C 200,790 320,790 350,840" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M170,840 C 200,812 320,812 350,840" fill="none" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="260" cy="840" r="5" fill="#1e293b"/>
+  <text x="260" y="874" font-size="11" fill="#475569" text-anchor="middle">起点</text>
+  <line x1="166" y1="840" x2="126" y2="840" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="354" y1="840" x2="394" y2="840" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <path d="M530,840 C 560,790 680,790 710,840" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M530,840 C 560,812 680,812 710,840" fill="none" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="620" cy="840" r="5" fill="#1e293b"/>
+  <text x="620" y="874" font-size="11" fill="#475569" text-anchor="middle">起点</text>
+  <line x1="526" y1="840" x2="486" y2="840" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="714" y1="840" x2="754" y2="840" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <path d="M890,840 C 920,790 1040,790 1070,840" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M890,840 C 920,812 1040,812 1070,840" fill="none" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="980" cy="840" r="5" fill="#1e293b"/>
+  <text x="980" y="874" font-size="11" fill="#475569" text-anchor="middle">起点</text>
+  <line x1="886" y1="840" x2="846" y2="840" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="1074" y1="840" x2="1114" y2="840" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="440" y="800" font-size="11.5" fill="#64748b" text-anchor="middle">相向延伸 → 融合</text>
+  <text x="800" y="800" font-size="11.5" fill="#64748b" text-anchor="middle">复制眼</text>
+  <text x="70" y="906" font-size="12" fill="#475569">酿酒酵母：每个复制子约 36 kb，含自主复制序列 ARS（核心为 11 bp A/T 富集元件）；哺乳动物复制子平均约 100～150 kb。</text>
+  <text x="70" y="930" font-size="12" fill="#475569">一条染色体上数十至数百个复制起点同时活化；起点数目与活化时序受细胞周期与发育程序调控。</text>
+  <text x="70" y="954" font-size="12" fill="#64748b">电镜下呈「复制眼」结构；DNA 纤维自显影可显示相邻起点双向延伸的轨迹。</text>
+</svg>

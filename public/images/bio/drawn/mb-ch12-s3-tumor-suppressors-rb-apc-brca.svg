@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">抑癌基因：Rb、APC 与 BRCA</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">两次打击（Knudson 1971，RB1 1986 证实）——Rb 低磷酸化扣押 E2F、cyclin D-CDK4/6 级联释放；APC 失活使 β-catenin 破坏复合体失效（结直肠癌起始）；BRCA1/2 守护 HR，PARP 抑制剂经合成致死选择性杀伤（风险 40%～80%）</text>
+  <rect x="30" y="132" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、两次打击假说（Knudson，1971）：视网膜母细胞瘤</text>
+  <rect x="491.35605" y="161.075" width="129.2879" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="556" y="173.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">RB1 克隆（1986）证实</text>
+  <text x="46" y="210" font-size="12" fill="#1e293b" font-weight="700">家族性（生殖系第一击）</text>
+  <rect x="46" y="220" width="62" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="77" y="237" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">Rb</text>
+  <rect x="112" y="220" width="62" height="26" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="143" y="237" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">rb×</text>
+  <text x="110" y="262" font-size="9.5" fill="#64748b" text-anchor="middle">出生时每个细胞已带一个失活拷贝</text>
+  <line x1="184" y1="233" x2="232" y2="233" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="208" y="216" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">体细胞第二击</text>
+  <rect x="236" y="220" width="62" height="26" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="267" y="237" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">rb×</text>
+  <rect x="302" y="220" width="62" height="26" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="333" y="237" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">rb×</text>
+  <rect x="450.1726" y="224.075" width="99.6548" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="500" y="236.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">早发 · 多发 · 双侧</text>
+  <text x="46" y="288" font-size="10.5" fill="#475569">第一次打击经生殖系遗传（亲代传来）；视网膜任一细胞再发生一次体细胞打击即发病——统计学曲线完美拟合二次打击模型。</text>
+  <text x="46" y="330" font-size="12" fill="#1e293b" font-weight="700">散发（两次体细胞打击）</text>
+  <rect x="46" y="340" width="62" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="77" y="357" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">Rb</text>
+  <rect x="112" y="340" width="62" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="143" y="357" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">Rb</text>
+  <text x="110" y="382" font-size="9.5" fill="#64748b" text-anchor="middle">出生时两拷贝均正常</text>
+  <line x1="184" y1="353" x2="232" y2="353" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="208" y="336" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">两次独立打击</text>
+  <rect x="236" y="340" width="62" height="26" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="267" y="357" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">rb×</text>
+  <rect x="302" y="340" width="62" height="26" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="333" y="357" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">rb×</text>
+  <rect x="466.1788" y="344.075" width="67.64240000000001" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="500" y="356.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">晚发 · 单发</text>
+  <text x="46" y="408" font-size="10.5" fill="#475569">同一细胞内连续两次独立的失活事件概率低——故散发病例晚发、单发。</text>
+  <rect x="710" y="132" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Rb–E2F：G1/S 的守门开关（低磷酸化 Rb 扣押 E2F）</text>
+  <rect x="726" y="186" width="230" height="44" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="841" y="212" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">Rb（低磷酸化）═ E2F</text>
+  <line x1="966" y1="208" x2="1010" y2="208" stroke="#dc2626" stroke-width="2"/>
+  <line x1="1010" y1="194" x2="1010" y2="222" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="1048" y="200" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="600">扣押：抑制转录</text>
+  <rect x="1014" y="186" width="172" height="44" rx="7" fill="#ffffff" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="212" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">S 期基因沉默</text>
+  <rect x="1233.5268" y="199.075" width="84.9464" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1276" y="211.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">G1 期（静息）</text>
+  <rect x="753.9625" y="271.075" width="68.075" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="788" y="283.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">有丝分裂原</text>
+  <line x1="846" y1="280" x2="876" y2="280" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="880" y="262" width="150" height="36" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="955" y="284" font-size="10" fill="#831843" text-anchor="middle" font-weight="600">cyclin D–CDK4/6</text>
+  <line x1="1030" y1="280" x2="1060" y2="280" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1064" y="262" width="140" height="36" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1134" y="284" font-size="10" fill="#831843" text-anchor="middle" font-weight="600">cyclin E–CDK2</text>
+  <line x1="1204" y1="280" x2="1234" y2="280" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1238" y="262" width="108" height="36" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1292" y="284" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">Rb–P</text>
+  <text x="1058" y="252" font-size="9.5" fill="#64748b" text-anchor="middle">逐步磷酸化</text>
+  <line x1="1292" y1="298" x2="1292" y2="326" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="1310" y="314" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="600">释放</text>
+  <rect x="1238" y="330" width="108" height="36" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1292" y="352" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">E2F</text>
+  <line x1="1236" y1="348" x2="1196" y2="348" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <rect x="1016" y="330" width="176" height="36" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1104" y="352" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="600">S 期基因激活（DNA pol · TK）</text>
+  <line x1="1014" y1="348" x2="974" y2="348" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <rect x="877.69445" y="339.075" width="56.6111" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="906" y="351.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">S 期推进</text>
+  <polyline points="1292,366 1292,390 1134,390 1134,300" fill="none" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="1213" y="404" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="600">正反馈：E2F → cyclin E → 更多磷酸化</text>
+  <text x="726" y="388" font-size="9.5" fill="#475569">Rb 通路任一成员失控（cyclin D 扩增 · CDK4 突变 · p16^INK4a 缺失）</text>
+  <text x="726" y="402" font-size="9.5" fill="#475569">均等效于 Rb 失活——多数人类肿瘤存在 Rb 通路某处失活；RB1 缺失见于视网膜母细胞瘤、</text>
+  <text x="726" y="416" font-size="9.5" fill="#475569">骨肉瘤、小细胞肺癌。</text>
+  <rect x="30" y="432" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="454.84" font-size="19" fill="#475569" font-weight="700">三、APC：Wnt 信号的刹车（β-连环蛋白降解机器）</text>
+  <rect x="46" y="478" width="300" height="186" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="196" y="502" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">静息（Wnt 关）</text>
+  <rect x="66" y="514" width="260" height="34" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="196" y="536" font-size="9" fill="#831843" text-anchor="middle" font-weight="600">破坏复合体：APC·Axin·GSK3β·CK1</text>
+  <line x1="196" y1="548" x2="196" y2="572" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="206" y="565" font-size="8.5" fill="#831843">磷酸化 → 泛素化</text>
+  <rect x="136" y="574" width="120" height="26" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="196" y="591" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">β-catenin</text>
+  <line x1="166" y1="578" x2="226" y2="596" stroke="#dc2626" stroke-width="2.2"/>
+  <line x1="226" y1="578" x2="166" y2="596" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="196" y="622" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">蛋白酶体持续降解</text>
+  <text x="196" y="646" font-size="9" fill="#64748b" text-anchor="middle">胞质 β-catenin 维持低水平</text>
+  <rect x="370" y="478" width="300" height="186" rx="9" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="520" y="502" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">Wnt 开（或 APC 失活）</text>
+  <rect x="399.451" y="522.5" width="29.098000000000003" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="414" y="534.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">Wnt</text>
+  <rect x="446" y="514" width="200" height="34" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="546" y="536" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="600">Frizzled / LRP 受体</text>
+  <line x1="440" y1="531" x2="444" y2="531" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <line x1="546" y1="548" x2="546" y2="572" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="466" y="574" width="160" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="546" y="594" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="600">Dvl ⊣ 破坏复合体</text>
+  <line x1="546" y1="604" x2="546" y2="622" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="466" y="624" width="160" height="30" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="546" y="644" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">β-catenin 积累</text>
+  <text x="46" y="688" font-size="10.5" fill="#475569">β-catenin 入核与 TCF/LEF 合作激活 c-MYC、cyclin D1——肠上皮持续接收「Wnt 开」的增殖信号。</text>
+  <text x="46" y="714" font-size="10.5" fill="#475569">APC 失活：家族性腺瘤性息肉病（FAP）与几乎全部散发性结直肠癌的起始事件；APC 突变 Min 小鼠为经典模型。</text>
+  <rect x="710" y="432" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="454.84" font-size="19" fill="#475569" font-weight="700">四、BRCA1/2：同源重组守护者与合成致死</text>
+  <text x="726" y="486" font-size="12.5" fill="#1e293b" font-weight="700">HR 修复机器</text>
+  <path d="M726,500 Q780,460 834,500" fill="none" stroke="#6d28d9" stroke-width="3.5"/>
+  <text x="780" y="468" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="600">RAD51 丝状体（同源搜索）</text>
+  <line x1="726" y1="505" x2="766" y2="505" stroke="#0f766e" stroke-width="3"/>
+  <line x1="794" y1="505" x2="834" y2="505" stroke="#0f766e" stroke-width="3"/>
+  <line x1="770" y1="497" x2="790" y2="513" stroke="#dc2626" stroke-width="2"/>
+  <line x1="770" y1="513" x2="790" y2="497" stroke="#dc2626" stroke-width="2"/>
+  <text x="780" y="528" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">DSB</text>
+  <rect x="726" y="540" width="190" height="34" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="821" y="562" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="600">BRCA2（BRC 重复装载 RAD51）</text>
+  <text x="726" y="600" font-size="10.5" fill="#475569">BRCA1/2 共同维持同源重组修复（HR）</text>
+  <text x="726" y="615" font-size="10.5" fill="#475569">——基因组稳定性的「看护者」。</text>
+  <text x="726" y="640" font-size="10.5" fill="#dc2626" font-weight="600">生殖系 BRCA1/2 突变：</text>
+  <text x="726" y="655" font-size="10.5" fill="#dc2626" font-weight="600">乳腺癌 / 卵巢癌终生风险升至 40%～80%。</text>
+  <text x="726" y="684" font-size="10.5" fill="#475569">PARP 负责 SSR / 碱基修复；</text>
+  <text x="726" y="699" font-size="10.5" fill="#475569">其抑制 + HR 缺陷 = 双路皆断——只杀伤肿瘤细胞。</text>
+  <text x="1040" y="486" font-size="12.5" fill="#1e293b" font-weight="700">合成致死（奥拉帕尼）</text>
+  <rect x="1040" y="516" width="190" height="36" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1135" y="538" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="600">PARP：SSR / 碱基修复</text>
+  <text x="1135" y="508" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">奥拉帕尼 ⊣</text>
+  <line x1="1090" y1="518" x2="1180" y2="550" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="1180" y1="518" x2="1090" y2="550" stroke="#dc2626" stroke-width="2.5"/>
+  <rect x="1040" y="606" width="190" height="36" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1135" y="628" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="600">BRCA1/2：HR 修复</text>
+  <text x="1135" y="598" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">BRCA 突变 → HR 缺陷</text>
+  <line x1="1090" y1="608" x2="1180" y2="640" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="1180" y1="608" x2="1090" y2="640" stroke="#dc2626" stroke-width="2.5"/>
+  <rect x="1040" y="668" width="190" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1135" y="686" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">合成致死</text>
+  <text x="1135" y="702" font-size="9" fill="#475569" text-anchor="middle">肿瘤特异性杀伤</text>
+  <line x1="1092" y1="552" x2="1096" y2="664" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="1178" y1="642" x2="1174" y2="664" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="30" y="742" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="764.84" font-size="19" fill="#475569" font-weight="700">五、看门基因与看护基因：常见抑癌基因一览</text>
+  <rect x="46" y="792" width="480" height="62" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="62" y="812" font-size="11.5" fill="#1e293b" font-weight="700">看门基因（gatekeeper）</text>
+  <text x="62" y="832" font-size="10" fill="#475569">Rb · APC——直接控制增殖（限速把关），失活即启动过度增殖</text>
+  <rect x="46" y="866" width="480" height="62" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="62" y="886" font-size="11.5" fill="#1e293b" font-weight="700">看护基因（caretaker）</text>
+  <text x="62" y="906" font-size="10" fill="#475569">BRCA1/2 · MMR 基因——维护基因组完整性，缺陷表现为「高突变谱 + 特定肿瘤」</text>
+  <text x="46" y="952" font-size="10.5" fill="#475569" font-weight="600">抑癌基因为隐性（两次打击）——与癌基因的显性功能获得互为同一枚硬币的正反两面。</text>
+  <rect x="560" y="786" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="813.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">基因</text>
+  <rect x="700" y="786" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="813.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="1020" y="786" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="813.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">相关肿瘤</text>
+  <rect x="560" y="830" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="847.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">RB1</text>
+  <rect x="700" y="830" width="320" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="847.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">G1/S 检查点（扣押 E2F）</text>
+  <rect x="1020" y="830" width="330" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="847.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">视网膜母细胞瘤 · 骨肉瘤 · 小细胞肺癌</text>
+  <rect x="560" y="854" width="790" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="560" y="854" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="871.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">TP53</text>
+  <rect x="700" y="854" width="320" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="871.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">基因组守卫（损伤响应总线）</text>
+  <rect x="1020" y="854" width="330" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="871.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">过半人类肿瘤</text>
+  <rect x="560" y="878" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="895.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">APC</text>
+  <rect x="700" y="878" width="320" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="895.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Wnt 负调控（β-cat 降解）</text>
+  <rect x="1020" y="878" width="330" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="895.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">结直肠癌（含 FAP）</text>
+  <rect x="560" y="902" width="790" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="560" y="902" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="919.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">BRCA1/2</text>
+  <rect x="700" y="902" width="320" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="919.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">同源重组修复 HR</text>
+  <rect x="1020" y="902" width="330" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="919.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">乳腺癌 · 卵巢癌</text>
+  <rect x="560" y="926" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="943.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">PTEN</text>
+  <rect x="700" y="926" width="320" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="943.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">PIP₃ 磷酸酶（PI3K 拮抗）</text>
+  <rect x="1020" y="926" width="330" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="943.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">多种上皮癌</text>
+  <rect x="560" y="950" width="790" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="560" y="950" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="630" y="967.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">VHL</text>
+  <rect x="700" y="950" width="320" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="967.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">HIF 泛素化降解</text>
+  <rect x="1020" y="950" width="330" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="967.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">肾透明细胞癌</text>
+</svg>

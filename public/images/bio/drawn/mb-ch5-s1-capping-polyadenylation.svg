@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">mRNA 5′ 加帽与 3′ 多聚腺苷酸化</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三磷酸酶→鸟苷酰转移酶→甲基转移酶依次建成 5′→5′ 三磷酸桥的 m⁷G 帽（cap 0/1/2）；AAUAAA + GU-rich 指导 CPSF/CstF 在 CA 切割，PAP 经 PABPN1 刺激延伸至约 200 nt</text>
+  <rect x="30" y="132" width="700" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、5′ 加帽：新生 RNA 约 20～25 nt 时即启动</text>
+  <path d="M 70,196 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0 q 18.666666666666668,18 37.333333333333336,0 q 18.666666666666668,-18 37.333333333333336,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="70" y="172" font-size="11" fill="#78350f">5′ 端（新生链）</text>
+  <text x="648" y="172" font-size="11" fill="#78350f" text-anchor="end">3′</text>
+  <rect x="60" y="224" width="200" height="60" rx="8" fill="#ede9fe" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="72" y="246" font-size="11" fill="#4c1d95" font-weight="700">① RNA 三磷酸酶（RTPase）</text>
+  <text x="72" y="264" font-size="10" fill="#475569">去除新生链 5′-端 γ-磷酸基团</text>
+  <line x1="262" y1="254" x2="272" y2="254" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="274" y="224" width="200" height="60" rx="8" fill="#e0f2fe" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="286" y="246" font-size="11" fill="#075985" font-weight="700">② 鸟苷酰转移酶</text>
+  <text x="286" y="264" font-size="10" fill="#475569">GMP 以 5′→5′ 三磷酸桥异常连接加入</text>
+  <line x1="476" y1="254" x2="486" y2="254" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="488" y="224" width="200" height="60" rx="8" fill="#fce7f3" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="500" y="246" font-size="11" fill="#831843" font-weight="700">③ 甲基转移酶</text>
+  <text x="500" y="264" font-size="10" fill="#475569">修饰鸟嘌呤 N⁷ 位生成 m⁷G 帽（cap 0）</text>
+  <text x="70" y="320" font-size="12.5" fill="#1e293b" font-weight="700">帽结构：</text>
+  <rect x="150" y="306" width="44" height="24" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="172" y="322" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">m⁷G</text>
+  <text x="198" y="322" font-size="13" fill="#475569">—</text>
+  <text x="212" y="322" font-size="11" fill="#475569">ppp</text>
+  <text x="248" y="322" font-size="13" fill="#475569">—</text>
+  <rect x="262" y="306" width="36" height="24" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="280" y="322" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">RNA</text>
+  <text x="316" y="314" font-size="10.5" fill="#475569">5′→5′ 三磷酸桥连接；</text>
+  <text x="316" y="329" font-size="10.5" fill="#475569">cap 1 / cap 2 再由 2′-O-甲基转移酶甲基化首 1～2 个核苷酸核糖 2′-OH。</text>
+  <text x="70" y="366" font-size="11.5" fill="#64748b">加帽酶由 CTD Ser5-P 招募，实现「合成与加工」零时差偶联；原核 mRNA 无帽结构。</text>
+  <rect x="750" y="132" width="620" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、5′ 帽的四大功能</text>
+  <rect x="770" y="186" width="280" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="784" y="212" font-size="13.5" fill="#1e293b" font-weight="700">保护</text>
+  <text x="784" y="232" font-size="11" fill="#475569">免遭 5′→3′ 外切酶降解</text>
+  <rect x="1070" y="186" width="280" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1084" y="212" font-size="13.5" fill="#1e293b" font-weight="700">翻译起始</text>
+  <text x="1084" y="232" font-size="11" fill="#475569">帽结合复合物 eIF4E 的识别标志（第 6 章）</text>
+  <rect x="770" y="270" width="280" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="784" y="296" font-size="13.5" fill="#1e293b" font-weight="700">剪接促进</text>
+  <text x="784" y="316" font-size="11" fill="#475569">促进第一个内含子的剪接与 mRNA 出核</text>
+  <rect x="1070" y="270" width="280" height="68" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1084" y="296" font-size="13.5" fill="#1e293b" font-weight="700">质量监控</text>
+  <text x="1084" y="316" font-size="11" fill="#475569">参与 mRNA 前体的正确加工与监视</text>
+  <text x="770" y="366" font-size="11.5" fill="#64748b">加帽与加尾共同构成 mRNA 的「护照」，将其与转录副产品区别开来。</text>
+  <rect x="30" y="452" width="700" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、3′ 加尾：位点特异性切割 + poly(A) 聚合</text>
+  <line x1="70" y1="520" x2="640" y2="520" stroke="#b45309" stroke-width="2.4"/>
+  <rect x="90" y="512" width="90" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="135" y="524" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">AAUAAA</text>
+  <rect x="360" y="512" width="20" height="16" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="370" y="524" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">CA</text>
+  <rect x="430" y="512" width="130" height="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="495" y="524" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">GU-rich（DSE）</text>
+  <text x="135" y="546" font-size="10" fill="#64748b" text-anchor="middle">多聚腺苷酸化信号</text>
+  <text x="370" y="546" font-size="10" fill="#dc2626" text-anchor="middle">切割位点</text>
+  <text x="495" y="546" font-size="10" fill="#64748b" text-anchor="middle">下游元件</text>
+  <text x="135" y="486" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">上游 10～30 nt</text>
+  <line x1="100" y1="494" x2="170" y2="494" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <ellipse cx="160" cy="576" rx="46" ry="18" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="160" y="581" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">CPSF</text>
+  <line x1="160" y1="558" x2="135" y2="530" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <ellipse cx="300" cy="576" rx="46" ry="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="300" y="581" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">CstF</text>
+  <line x1="300" y1="558" x2="440" y2="530" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <text x="396" y="570" font-size="10.5" fill="#475569">CPSF160/WDR33/CPSF30/Fip1 识别 AAUAAA；</text>
+  <text x="396" y="585" font-size="10.5" fill="#475569">CstF64 结合 GU-rich 协助选择切割位点；</text>
+  <text x="396" y="600" font-size="10.5" fill="#475569">CF I / CF II 参与组装与切割。</text>
+  <text x="70" y="644" font-size="11.5" fill="#64748b">组蛋白 mRNA 例外：不以 poly(A) 结尾，而以茎环结构结尾。</text>
+  <rect x="750" y="452" width="620" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="474.84" font-size="19" fill="#475569" font-weight="700">四、PAP 加尾动力学与 poly(A) 功能</text>
+  <rect x="770" y="496" width="400" height="42" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="784" y="522" font-size="11.5" fill="#475569" font-weight="600">切割后 PAP 缓慢加入约 10 个 A</text>
+  <line x1="970" y1="540" x2="970" y2="548" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="770" y="550" width="400" height="42" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="784" y="576" font-size="11.5" fill="#475569" font-weight="600">PABPN1 结合并刺激快速延伸</text>
+  <text x="1014" y="576" font-size="11" fill="#78350f" font-weight="700">至约 200 nt（200～250）</text>
+  <line x1="970" y1="594" x2="970" y2="602" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="770" y="604" width="400" height="42" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="784" y="630" font-size="11.5" fill="#475569" font-weight="600">胞质中 PABP 结合 poly(A)</text>
+  <text x="1014" y="630" font-size="11" fill="#78350f" font-weight="700">介导保护与翻译</text>
+  <text x="1190" y="500" font-size="10.5" fill="#475569">poly(A) 尾功能：稳定 mRNA；</text>
+  <text x="1190" y="516" font-size="10.5" fill="#475569">促进翻译起始</text>
+  <text x="1190" y="532" font-size="10.5" fill="#475569">（与 eIF4G 成环协同）；</text>
+  <text x="1190" y="548" font-size="10.5" fill="#475569">脱腺苷化是胞质 mRNA 降解的限速第一步。</text>
+  <text x="770" y="668" font-size="11" fill="#64748b">末端借助 eIF4E-PABP 相互作用使 mRNA 环化，为高效翻译与质量监控奠定结构基础。</text>
+  <rect x="30" y="752" width="1340" height="218" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="774.84" font-size="19" fill="#475569" font-weight="700">五、多聚腺苷酸化机器速查</text>
+  <rect x="60" y="796" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="823.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">因子</text>
+  <rect x="280" y="796" width="420" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="490" y="823.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">亚基 / 组成</text>
+  <rect x="700" y="796" width="640" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="823.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="60" y="840" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="858.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">CPSF</text>
+  <rect x="280" y="840" width="420" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="490" y="858.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CPSF160 / WDR33 / CPSF30 / Fip1</text>
+  <rect x="700" y="840" width="640" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="858.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">识别 AAUAAA</text>
+  <rect x="60" y="866" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="866" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="884.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">CstF</text>
+  <rect x="280" y="866" width="420" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="490" y="884.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CstF64 等</text>
+  <rect x="700" y="866" width="640" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="884.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">结合下游 GU-rich，协助选择切割位点</text>
+  <rect x="60" y="892" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="910.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">CF I / CF II</text>
+  <rect x="280" y="892" width="420" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="490" y="910.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="700" y="892" width="640" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="910.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">切割因子，参与组装与切割</text>
+  <rect x="60" y="918" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="918" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="936.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">PAP</text>
+  <rect x="280" y="918" width="420" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="490" y="936.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">单体聚合酶</text>
+  <rect x="700" y="918" width="640" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="936.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">切割后加 poly(A)</text>
+  <rect x="60" y="944" width="220" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="962.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">PABPN1 / PABP</text>
+  <rect x="280" y="944" width="420" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="490" y="962.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="700" y="944" width="640" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="962.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">核内 / 胞质 poly(A) 结合蛋白，介导延伸至 200～250 nt 并保护尾巴</text>
+</svg>

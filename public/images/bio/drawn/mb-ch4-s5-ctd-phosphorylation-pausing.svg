@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Pol II CTD 磷酸化与转录延伸调控</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Ser5-P（CDK7）标志起始与加帽、Ser2-P（P-TEFb/CDK9）标志延伸与 3′ 加工——NELF/DSIF 造成 20～60 nt 启动子近端暂停，P-TEFb 解除（HIV Tat 经 TAR 劫持）</text>
+  <rect x="30" y="132" width="1340" height="264" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、CTD 磷酸化密码：标注转录循环阶段（YSPTSPS 重复）</text>
+  <rect x="1160" y="161.17" width="12.65" height="9.66" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1180.65" y="170.14" font-size="11.5" fill="#475569">Ser5-P</text>
+  <rect x="1241.98" y="161.17" width="12.65" height="9.66" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1262.63" y="170.14" font-size="11.5" fill="#475569">Ser2-P</text>
+  <line x1="70" y1="252" x2="1330" y2="252" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="80" y="244" width="56" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="108" y="284" font-size="10" fill="#134e4a" text-anchor="middle">TATA</text>
+  <circle cx="160" cy="252" r="4" fill="#1e293b"/>
+  <text x="160" y="284" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">+1</text>
+  <text x="720" y="284" font-size="10.5" fill="#64748b" text-anchor="middle">基因区（延伸）</text>
+  <rect x="1130" y="244" width="60" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1160" y="284" font-size="10" fill="#78350f" text-anchor="middle">poly(A)</text>
+  <ellipse cx="220" cy="252" rx="34" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="220" y="256" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">II</text>
+  <polyline points="252,244 268,238 284,244 300,238 316,244" fill="none" stroke="#94a3b8" stroke-width="2.4"/>
+  <text x="220" y="216" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">① 起始</text>
+  <text x="220" y="306" font-size="10" fill="#475569" text-anchor="middle">CTD 非磷酸化参与 PIC 组装；CDK7（TFIIH）</text>
+  <text x="220" y="320" font-size="10" fill="#475569" text-anchor="middle">磷酸化 Ser5</text>
+  <ellipse cx="500" cy="252" rx="34" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="500" y="256" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">II</text>
+  <polyline points="532,244 548,238 564,244 580,238 596,244" fill="none" stroke="#94a3b8" stroke-width="2.4"/>
+  <circle cx="544" cy="236" r="4.5" fill="#be185d"/>
+  <circle cx="562" cy="236" r="4.5" fill="#be185d"/>
+  <circle cx="580" cy="236" r="4.5" fill="#be185d"/>
+  <text x="500" y="216" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">② 启动子清除</text>
+  <text x="500" y="306" font-size="10" fill="#475569" text-anchor="middle">Ser5-P 募集加帽酶：</text>
+  <text x="500" y="320" font-size="10" fill="#475569" text-anchor="middle">新生 RNA 仅 ~25 nt 即完成 5′ 加帽</text>
+  <ellipse cx="780" cy="252" rx="34" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="780" y="256" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">II</text>
+  <polyline points="812,244 828,238 844,244 860,238 876,244" fill="none" stroke="#94a3b8" stroke-width="2.4"/>
+  <circle cx="824" cy="236" r="4.5" fill="#be185d"/>
+  <circle cx="824" cy="248" r="4.5" fill="#0369a1"/>
+  <circle cx="842" cy="248" r="4.5" fill="#0369a1"/>
+  <circle cx="860" cy="248" r="4.5" fill="#0369a1"/>
+  <text x="780" y="216" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ 延伸</text>
+  <text x="780" y="306" font-size="10" fill="#475569" text-anchor="middle">Ser5-P 渐降、Ser2-P 升高（P-TEFb/CDK9）；</text>
+  <text x="780" y="320" font-size="10" fill="#475569" text-anchor="middle">剪接体登船</text>
+  <ellipse cx="1040" cy="252" rx="34" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1040" y="256" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">II</text>
+  <polyline points="1072,244 1088,238 1104,244 1120,238 1136,244" fill="none" stroke="#94a3b8" stroke-width="2.4"/>
+  <circle cx="1084" cy="248" r="4.5" fill="#0369a1"/>
+  <circle cx="1102" cy="248" r="4.5" fill="#0369a1"/>
+  <circle cx="1120" cy="248" r="4.5" fill="#0369a1"/>
+  <circle cx="1138" cy="248" r="4.5" fill="#0369a1"/>
+  <text x="1040" y="216" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">④ 3′ 端加工</text>
+  <text x="1040" y="306" font-size="10" fill="#475569" text-anchor="middle">Ser2-P 募集 CPSF/CstF，切割与多聚腺苷酸化</text>
+  <ellipse cx="1270" cy="252" rx="34" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1270" y="256" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">II</text>
+  <polyline points="1302,244 1318,238 1334,244 1350,238 1366,244" fill="none" stroke="#94a3b8" stroke-width="2.4"/>
+  <circle cx="1314" cy="248" r="4.5" fill="#0369a1"/>
+  <circle cx="1332" cy="248" r="4.5" fill="#0369a1"/>
+  <text x="1270" y="216" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">⑤ 终止</text>
+  <text x="1270" y="306" font-size="10" fill="#475569" text-anchor="middle">Rat1/Xrn2 追逐 Ser2-P 标记的聚合酶（torpedo）</text>
+  <text x="1270" y="320" font-size="10" fill="#475569" text-anchor="middle">；Fcp1 重置</text>
+  <text x="60" y="216" font-size="9.5" fill="#64748b" text-anchor="middle">（CTD 简示于酶体右侧）</text>
+  <rect x="30" y="420" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="442.84" font-size="19" fill="#475569" font-weight="700">二、启动子近端暂停与 P-TEFb 释放</text>
+  <line x1="60" y1="510" x2="640" y2="510" stroke="#0f766e" stroke-width="2.4"/>
+  <circle cx="90" cy="510" r="4" fill="#1e293b"/>
+  <text x="90" y="536" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">+1</text>
+  <ellipse cx="160" cy="510" rx="36" ry="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="160" y="515" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">pol II</text>
+  <polyline points="170,524 220,532 270,524 320,532" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <text x="245" y="552" font-size="10" fill="#78350f" text-anchor="middle">新生 RNA</text>
+  <line x1="96" y1="470" x2="200" y2="470" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="148" y="462" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">20～60 nt</text>
+  <rect x="196" y="480" width="64" height="24" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="228" y="496" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">NELF</text>
+  <rect x="270" y="480" width="64" height="24" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="302" y="496" font-size="11" fill="#b45309" text-anchor="middle" font-weight="700">DSIF</text>
+  <text x="265" y="576" font-size="10.5" fill="#64748b" text-anchor="middle">负延伸因子联合钳制聚合酶</text>
+  <rect x="420" y="460" width="170" height="40" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="505" y="478" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">P-TEFb</text>
+  <text x="505" y="494" font-size="10" fill="#64748b" text-anchor="middle">CDK9-Cyclin T</text>
+  <line x1="416" y1="480" x2="340" y2="480" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="370" y="540" font-size="11" fill="#475569" font-weight="600">· 磷酸化 NELF</text>
+  <text x="500" y="540" font-size="11" fill="#64748b">促其解离</text>
+  <text x="370" y="564" font-size="11" fill="#475569" font-weight="600">· 磷酸化 DSIF</text>
+  <text x="500" y="564" font-size="11" fill="#64748b">转为正延伸因子</text>
+  <text x="370" y="588" font-size="11" fill="#475569" font-weight="600">· 磷酸化 CTD Ser2</text>
+  <text x="500" y="588" font-size="11" fill="#64748b">进入高效延伸</text>
+  <text x="60" y="636" font-size="11.5" fill="#475569">HIV 的 Tat 蛋白经 TAR RNA 结构募集宿主 P-TEFb，解除病毒基因暂停——抗 HIV 药物靶点。</text>
+  <rect x="710" y="420" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="442.84" font-size="19" fill="#475569" font-weight="700">三、CTD 修饰状态与主要效应</text>
+  <rect x="730" y="464" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="491.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">修饰</text>
+  <rect x="850" y="464" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="491.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">激酶 / 酶</text>
+  <rect x="1000" y="464" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="491.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">出现阶段</text>
+  <rect x="1120" y="464" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="491.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要效应</text>
+  <rect x="730" y="508" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="533.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Ser5-P</text>
+  <rect x="850" y="508" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="533.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">TFIIH（CDK7）</text>
+  <rect x="1000" y="508" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="533.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">起始、清除</text>
+  <rect x="1120" y="508" width="230" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="533.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">募集加帽酶；促进早期剪接因子</text>
+  <rect x="730" y="548" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="548" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="573.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Ser2-P</text>
+  <rect x="850" y="548" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="573.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">P-TEFb（CDK9/ Cyclin T）</text>
+  <rect x="1000" y="548" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="573.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">延伸</text>
+  <rect x="1120" y="548" width="230" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="573.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">募集剪接体与 3′ 加尾因子（CPSF 等）</text>
+  <rect x="730" y="588" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="613.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">去磷酸化</text>
+  <rect x="850" y="588" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="613.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Fcp1 等</text>
+  <rect x="1000" y="588" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="613.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">终止后</text>
+  <rect x="1120" y="588" width="230" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="613.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">CTD 重置，pol II 再循环</text>
+  <text x="730" y="648" font-size="12.5" fill="#1e293b" font-weight="700">暂停-释放的意义：</text>
+  <text x="730" y="674" font-size="11" fill="#475569">① 启动子处预置「待命」聚合酶，快速诱导表达（如热激基因）</text>
+  <text x="730" y="696" font-size="11" fill="#475569">② 提供检查点，协调启动子选择与延伸效率</text>
+  <text x="730" y="718" font-size="11" fill="#475569">③ 与增强子-中介体协同，使远端调控施加于延伸阶段（第 8 章）</text>
+  <rect x="30" y="744" width="1340" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="766.84" font-size="19" fill="#475569" font-weight="700">四、转录-加工的全面偶联：「转录工厂」流水线</text>
+  <rect x="60" y="800" width="300" height="108" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="210" y="826" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">加帽</text>
+  <text x="210" y="852" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">起始早期（~25 nt）</text>
+  <text x="210" y="884" font-size="10.5" fill="#64748b" text-anchor="middle">Ser5-P 招募加帽酶</text>
+  <line x1="362" y1="854" x2="388" y2="854" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="390" y="800" width="300" height="108" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="540" y="826" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">剪接</text>
+  <text x="540" y="852" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">延伸全程</text>
+  <text x="540" y="884" font-size="10.5" fill="#64748b" text-anchor="middle">外显子定义与 CTD 直接相关</text>
+  <line x1="692" y1="854" x2="718" y2="854" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="720" y="800" width="300" height="108" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="870" y="826" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">3′ 加尾 + 终止</text>
+  <text x="870" y="852" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">Ser2-P 募集 CPSF/CstF</text>
+  <text x="870" y="884" font-size="10.5" fill="#64748b" text-anchor="middle">切割后 Rat1/Xrn2 降解下游 RNA 产生「鱼雷」</text>
+  <line x1="1022" y1="854" x2="1048" y2="854" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1050" y="800" width="300" height="108" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1200" y="826" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">染色质修饰定位</text>
+  <text x="1200" y="852" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">Set2 识别 Ser2-P/Ser5-P 组合</text>
+  <text x="1200" y="884" font-size="10.5" fill="#64748b" text-anchor="middle">CTD 充当修饰酶的坐标系</text>
+  <text x="60" y="944" font-size="11" fill="#64748b">「合成与加工」零时差偶联，使真核基因表达在时间与空间上高度协同。</text>
+</svg>

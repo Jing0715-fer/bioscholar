@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 聚合酶体系：pol I、pol II 与 pol III</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">所有 DNA pol 需模板与引物、5′→3′ 合成并具 3′→5′ 校对——pol I（928 aa，Klenow 片段 + 切口平移）主修复，pol III 全酶（10 亚基、β 滑动夹、τ 双核心）主复制</text>
+  <rect x="30" y="132" width="660" height="316" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、共同催化特性与 pol I（Kornberg，1956 发现）</text>
+  <rect x="81.375" y="171.375" width="97.25" height="21.25" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="130" y="186.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">需模板与引物</text>
+  <rect x="244.915625" y="171.375" width="90.16875" height="21.25" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="290" y="186.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">5′→3′ 聚合</text>
+  <rect x="404.915625" y="171.375" width="90.16875" height="21.25" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="450" y="186.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">3′→5′ 校对</text>
+  <rect x="561.375" y="171.375" width="97.25" height="21.25" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="610" y="186.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">不能从头合成</text>
+  <text x="60" y="226" font-size="13.5" fill="#1e293b" font-weight="700">pol I：单链多肽，928 aa（约 109 kDa）</text>
+  <rect x="60" y="244" width="170" height="44" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="145" y="271" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="600">5′→3′ 外切</text>
+  <rect x="230" y="244" width="390" height="44" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="425" y="262" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="600">Klenow 片段（68 kDa）</text>
+  <text x="425" y="280" font-size="11.5" fill="#64748b" text-anchor="middle">聚合 + 3′→5′ 校对</text>
+  <line x1="230" y1="236" x2="230" y2="292" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="230" y="312" font-size="10.5" fill="#dc2626" text-anchor="middle">枯草杆菌蛋白酶切点</text>
+  <text x="60" y="336" font-size="13" fill="#831843" font-weight="700">切口平移（nick translation）</text>
+  <line x1="60" y1="378" x2="610" y2="378" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="294" y1="372" x2="306" y2="384" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="294" y1="384" x2="306" y2="372" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="288" y1="358" x2="228" y2="358" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="258" y="342" font-size="11" fill="#831843" text-anchor="middle">5′→3′ 外切</text>
+  <line x1="312" y1="398" x2="372" y2="398" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="342" y="414" font-size="11" fill="#075985" text-anchor="middle">5′→3′ 聚合填补</text>
+  <text x="60" y="424" font-size="11.5" fill="#64748b">切口平移是体外标记探针的技术基础；polA⁻ 突变株仍可存活——pol I 主要承担修复；pol II 受 SOS 诱导，</text>
+  <text x="60" y="440" font-size="11.5" fill="#64748b">参与修复与复制重启。</text>
+  <rect x="690" y="132" width="680" height="316" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="706" y="154.84" font-size="19" fill="#475569" font-weight="700">二、pol III 全酶（10 种亚基）：复制主导酶（约 1000 nt/s）</text>
+  <rect x="710" y="180" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="207.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">亚基</text>
+  <rect x="940" y="180" width="410" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="207.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="710" y="224" width="230" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="245.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">α（DnaE）</text>
+  <rect x="940" y="224" width="410" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="245.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">聚合酶催化亚基，合成 DNA</text>
+  <rect x="710" y="256" width="640" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="256" width="230" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="277.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">ε（DnaQ）</text>
+  <rect x="940" y="256" width="410" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="277.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">3′→5′ 外切酶，校对功能</text>
+  <rect x="710" y="288" width="230" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="309.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">θ</text>
+  <rect x="940" y="288" width="410" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="309.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">稳定 ε 亚基</text>
+  <rect x="710" y="320" width="640" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="320" width="230" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="341.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">β（滑动夹）</text>
+  <rect x="940" y="320" width="410" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="341.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">二聚体环状夹，套住 DNA 赋予高续进性</text>
+  <rect x="710" y="352" width="230" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="373.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">γ 复合体</text>
+  <rect x="940" y="352" width="410" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="373.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">γ₃δδ′χψ，ATP 依赖装载 β 夹（钳载蛋白）</text>
+  <rect x="710" y="384" width="640" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="384" width="230" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="405.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">τ</text>
+  <rect x="940" y="384" width="410" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1145" y="405.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">连接两个核心酶并结合解旋酶 DnaB</text>
+  <text x="710" y="434" font-size="12" fill="#475569">组装成不对称二聚体，在复制叉处同时合成前导链与后随链。</text>
+  <rect x="30" y="462" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="484.84" font-size="19" fill="#475569" font-weight="700">三、真核 DNA 聚合酶分工（至少 15 种）</text>
+  <rect x="60" y="506" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="533.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">聚合酶</text>
+  <rect x="310" y="506" width="430" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="533.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">功能</text>
+  <rect x="740" y="506" width="600" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="533.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="60" y="550" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="568.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pol α / 引发酶</text>
+  <rect x="310" y="550" width="430" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="568.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">起始每条链的合成</text>
+  <rect x="740" y="550" width="600" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="568.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">无校对活性</text>
+  <rect x="60" y="576" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="576" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="594.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pol δ</text>
+  <rect x="310" y="576" width="430" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="594.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">主导后随链延伸</text>
+  <rect x="740" y="576" width="600" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="594.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">与 FEN1 协同完成冈崎片段置换</text>
+  <rect x="60" y="602" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="620.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pol ε</text>
+  <rect x="310" y="602" width="430" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="620.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">主导前导链延伸</text>
+  <rect x="740" y="602" width="600" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="620.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">连续合成</text>
+  <rect x="60" y="628" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="628" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="646.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pol γ</text>
+  <rect x="310" y="628" width="430" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="646.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">负责线粒体 DNA 复制</text>
+  <rect x="740" y="628" width="600" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="646.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">线粒体基因组</text>
+  <rect x="60" y="654" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="672.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">pol β</text>
+  <rect x="310" y="654" width="430" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="672.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">碱基切除修复（BER）</text>
+  <rect x="740" y="654" width="600" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="672.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">短修补填补</text>
+  <rect x="60" y="680" width="1280" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="680" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="185" y="698.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">跨损伤 pol（ζ、η、ι、κ）</text>
+  <rect x="310" y="680" width="430" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="525" y="698.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">损伤位点旁路合成</text>
+  <rect x="740" y="680" width="600" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1040" y="698.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">易错 / 损伤容忍</text>
+  <rect x="30" y="724" width="1340" height="246" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="746.84" font-size="19" fill="#475569" font-weight="700">四、β 滑动夹与 τ 双核心：双链协同复制</text>
+  <line x1="90" y1="830" x2="700" y2="830" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <rect x="240" y="800" width="120" height="60" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="300" y="834" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">核心酶</text>
+  <circle cx="420" cy="830" r="22" fill="none" stroke="#6d28d9" stroke-width="5"/>
+  <text x="420" y="796" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">β 滑动夹</text>
+  <line x1="90" y1="920" x2="700" y2="920" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <rect x="360" y="890" width="120" height="60" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="420" y="924" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">核心酶</text>
+  <circle cx="540" cy="920" r="22" fill="none" stroke="#6d28d9" stroke-width="5"/>
+  <text x="540" y="886" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">β 滑动夹</text>
+  <rect x="300" y="862" width="150" height="24" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="375" y="878" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">τ 亚基</text>
+  <circle cx="140" cy="875" r="26" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="140" y="880" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">DnaB</text>
+  <line x1="166" y1="875" x2="300" y2="874" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="140" y="944" font-size="11" fill="#475569" text-anchor="middle">解旋酶</text>
+  <text x="712" y="824" font-size="12" fill="#475569">前导链模板（连续合成）</text>
+  <text x="712" y="914" font-size="12" fill="#475569">后随链模板（不连续合成）</text>
+  <text x="760" y="860" font-size="12" fill="#475569">γ 复合体（钳载蛋白）以 ATP 水解将 β 夹装载至引物-模板连接处；β 二聚体环套住 DNA，</text>
+  <text x="760" y="878" font-size="12" fill="#475569">使 pol III 获得高续进性。</text>
+  <text x="760" y="908" font-size="12" fill="#475569">τ 亚基连接两个核心并结合 DnaB，实现前导链与后随链的协同合成。</text>
+</svg>

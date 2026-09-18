@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">选择性剪接与反式剪接</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">外显子跳跃、可变位点、互斥外显子、内含子保留与可变 poly(A) 五种模式（人约 95% 多外显子基因）——SR/hnRNP 经 ESE/ESS 调控；锥虫 39 nt SL 与线虫 SL2 的反式剪接</text>
+  <rect x="30" y="132" width="1340" height="348" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、选择性剪接的五种模式（青框＝保留外显子，白框＝被跳过）</text>
+  <text x="56" y="210" font-size="12" fill="#1e293b" font-weight="700">外显子跳跃</text>
+  <rect x="200" y="196" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="240" y="213" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 1</text>
+  <rect x="300" y="196" width="80" height="24" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="340" y="213" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">外显子 2</text>
+  <rect x="400" y="196" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="440" y="213" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 3</text>
+  <rect x="500" y="196" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="540" y="213" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 4</text>
+  <path d="M280,208 C 320,178 380,178 400,208" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="580" y1="208" x2="640" y2="208" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="700" y="210" font-size="10.5" fill="#64748b">果蝇 Dscam、α-原肌球蛋白</text>
+  <text x="56" y="272" font-size="12" fill="#1e293b" font-weight="700">可变 3′ 位点</text>
+  <rect x="200" y="252" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="240" y="269" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 1</text>
+  <rect x="300" y="246" width="90" height="20" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="345" y="261" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 2a</text>
+  <rect x="330" y="272" width="60" height="20" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="360" y="287" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">2b</text>
+  <rect x="400" y="252" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="440" y="269" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 3</text>
+  <line x1="280" y1="256" x2="300" y2="256" stroke="#b45309" stroke-width="2"/>
+  <line x1="390" y1="256" x2="400" y2="256" stroke="#b45309" stroke-width="2"/>
+  <line x1="280" y1="282" x2="330" y2="282" stroke="#b45309" stroke-width="2"/>
+  <path d="M390,282 L 396,282 L 396,264 L 400,264" fill="none" stroke="#b45309" stroke-width="2"/>
+  <line x1="480" y1="256" x2="500" y2="256" stroke="#b45309" stroke-width="2"/>
+  <text x="700" y="272" font-size="10.5" fill="#64748b">Bcl-x（长 / 短型调控凋亡）</text>
+  <text x="56" y="336" font-size="12" fill="#1e293b" font-weight="700">互斥外显子</text>
+  <rect x="200" y="320" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="240" y="337" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 1</text>
+  <rect x="300" y="312" width="80" height="20" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="340" y="327" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">外显子 2a</text>
+  <rect x="300" y="336" width="80" height="20" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="340" y="351" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">外显子 2b</text>
+  <rect x="400" y="320" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="440" y="337" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 3</text>
+  <line x1="280" y1="322" x2="300" y2="322" stroke="#b45309" stroke-width="2"/>
+  <line x1="380" y1="322" x2="400" y2="322" stroke="#b45309" stroke-width="2"/>
+  <path d="M280,346 L 300,346 L 380,346 L 400,322" fill="none" stroke="#b45309" stroke-width="2"/>
+  <text x="700" y="336" font-size="10.5" fill="#64748b">肌钙蛋白 T</text>
+  <text x="56" y="394" font-size="12" fill="#1e293b" font-weight="700">内含子保留</text>
+  <rect x="200" y="380" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="240" y="397" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 1</text>
+  <rect x="300" y="380" width="80" height="24" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="340" y="397" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">内含子</text>
+  <rect x="400" y="380" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="440" y="397" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 2</text>
+  <path d="M280,392 C 320,364 380,364 400,392" fill="none" stroke="#b45309" stroke-width="2"/>
+  <line x1="280" y1="392" x2="300" y2="392" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="380" y1="392" x2="400" y2="392" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="480" y1="392" x2="500" y2="392" stroke="#b45309" stroke-width="2"/>
+  <text x="700" y="394" font-size="10.5" fill="#64748b">多在特定发育阶段出现</text>
+  <text x="56" y="444" font-size="12" fill="#1e293b" font-weight="700">可变末端 / poly(A)</text>
+  <rect x="200" y="428" width="80" height="24" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="240" y="445" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外显子 1</text>
+  <rect x="300" y="420" width="110" height="20" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="355" y="435" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">末端 A（polyA）</text>
+  <rect x="300" y="446" width="110" height="20" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="355" y="461" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">末端 B（polyA）</text>
+  <line x1="280" y1="430" x2="300" y2="430" stroke="#b45309" stroke-width="2"/>
+  <line x1="410" y1="430" x2="470" y2="430" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <path d="M280,456 L 300,456 L 410,456" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="700" y="444" font-size="10.5" fill="#64748b">免疫球蛋白 M 膜型 / 分泌型</text>
+  <text x="950" y="200" font-size="11.5" fill="#475569">人约 95% 多外显子基因经历选择性剪接——蛋白质组多样性超过基因数目的主要原因。</text>
+  <text x="950" y="217" font-size="11.5" fill="#475569">Dscam 经互斥外显子组合理论上可产生 38 000 余种异构体，</text>
+  <text x="950" y="234" font-size="11.5" fill="#475569">是单一基因扩展信息容量的极致案例。</text>
+  <rect x="30" y="500" width="700" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="522.84" font-size="19" fill="#475569" font-weight="700">二、剪接调控：顺式元件 × 反式因子</text>
+  <ellipse cx="150" cy="566" rx="50" ry="19" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="150" y="571" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">SR 蛋白</text>
+  <line x1="204" y1="566" x2="240" y2="566" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="244" y="554" width="52" height="24" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="270" y="570" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">ESE</text>
+  <ellipse cx="460" cy="566" rx="52" ry="19" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="460" y="571" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">hnRNP</text>
+  <line x1="516" y1="566" x2="552" y2="566" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="556" y="554" width="52" height="24" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="582" y="570" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">ESS</text>
+  <line x1="60" y1="606" x2="660" y2="606" stroke="#b45309" stroke-width="2"/>
+  <line x1="120" y1="598" x2="120" y2="614" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="120" y="630" font-size="9.5" fill="#dc2626" text-anchor="middle">5′ 剪接位点</text>
+  <line x1="340" y1="598" x2="340" y2="614" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="340" y="630" font-size="9.5" fill="#dc2626" text-anchor="middle">3′ 剪接位点</text>
+  <text x="230" y="630" font-size="10" fill="#64748b" text-anchor="middle">外显子</text>
+  <line x1="270" y1="580" x2="270" y2="602" stroke="#059669" stroke-width="1.6" marker-end="url(#arr-ok)"/>
+  <line x1="582" y1="580" x2="582" y2="602" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <text x="60" y="656" font-size="11" fill="#475569">增强子元件（ESE / ISE）招募 SR 蛋白促进附近位点使用；沉默子元件（ESS / ISS）招募 hnRNP 蛋白抑制之。</text>
+  <text x="60" y="672" font-size="11" fill="#475569">剪接因子常呈组织特异性（神经元 nSR100、肌细胞 PTB 重编程），同一基因在不同细胞产出不同 isoform。</text>
+  <rect x="750" y="500" width="620" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="522.84" font-size="19" fill="#475569" font-weight="700">三、剪接失调致病与反义疗法</text>
+  <text x="770" y="548" font-size="13" fill="#dc2626" font-weight="700">SMN2 外显子 7 跳跃</text>
+  <line x1="770" y1="584" x2="1270" y2="584" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="771" y="569" width="108" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="825" y="617" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">外显子 6</text>
+  <rect x="881" y="569" width="178" height="30" rx="4" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="970" y="617" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">外显子 7（被跳过）</text>
+  <rect x="1061" y="569" width="98" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1110" y="617" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">外显子 8</text>
+  <text x="770" y="632" font-size="11" fill="#475569">外显子 7 被跳过导致脊髓性肌萎缩（SMA）；约 15%～50% 的致病点突变落于剪接信号，tau、</text>
+  <text x="770" y="647" font-size="11" fill="#475569">TDP-43 等剪接异常参与神经退行性疾病。</text>
+  <rect x="770" y="672" width="580" height="50" rx="8" fill="#d1fae5" fill-opacity="0.75" stroke="#059669" stroke-width="1.8"/>
+  <text x="786" y="692" font-size="12" fill="#065f46" font-weight="700">Spinraza（nusinersen）：反义寡核苷酸药物</text>
+  <text x="786" y="712" font-size="10.5" fill="#475569">掩盖 SMN2 的内含子沉默子、促进外显子 7 包含——理解剪接机制直接转化为疗法。</text>
+  <rect x="30" y="756" width="1340" height="224" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="778.84" font-size="19" fill="#475569" font-weight="700">四、反式剪接：两个独立 RNA 分子的拼接</text>
+  <rect x="60" y="800" width="414" height="96" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="267" y="826" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">锥虫</text>
+  <text x="267" y="850" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">所有成熟 mRNA 的 5′ 端均带相同的 39 nt 剪接前导序列（SL）</text>
+  <text x="267" y="882" font-size="10.5" fill="#64748b" text-anchor="middle">SL RNA 提供；分支机制类似，SL 内含子含 GU</text>
+  <rect x="494" y="800" width="414" height="96" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="701" y="826" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">线虫</text>
+  <text x="701" y="850" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">约 70% mRNA 经 SL1（操纵子下游基因经 SL2）反式剪接</text>
+  <text x="701" y="882" font-size="10.5" fill="#64748b" text-anchor="middle">与多顺反子转录本的「解体」偶联</text>
+  <rect x="928" y="800" width="414" height="96" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1135" y="826" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">叶绿体</text>
+  <text x="1135" y="850" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">rps12 等基因两段外显子位于相反链</text>
+  <text x="1135" y="882" font-size="10.5" fill="#64748b" text-anchor="middle">必须靠反式剪接拼成完整 mRNA</text>
+  <text x="60" y="940" font-size="11" fill="#64748b">剪接化学本质上是 RNA 之间的连接反应，与分子内 / 分子间无关——「以 RNA 为媒介的模块重组」。</text>
+</svg>

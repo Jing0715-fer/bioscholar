@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">rRNA、tRNA 加工与 mRNA 出核转运</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">原核 30S 前 rRNA 经 RNase III/E/G 切分；真核 45S 前体在核仁由 C/D box（2′-O-甲基化）与 H/ACA（假尿苷化）snoRNP 指导修饰——tRNA 经 RNase P、CCA 添加酶与修饰成熟为 L 形；mRNP 经 TREX/NXF1 过核孔输出</text>
+  <rect x="30" y="132" width="700" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、原核 rRNA 加工：30S 前 rRNA 的切分</text>
+  <line x1="60" y1="200" x2="660" y2="200" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="61" y="185" width="130" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="126" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">16S</text>
+  <rect x="193" y="185" width="70" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="228" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">tRNA</text>
+  <rect x="265" y="185" width="178" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="354" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">23S</text>
+  <rect x="445" y="185" width="70" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="480" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">5S</text>
+  <text x="360" y="260" font-size="11" fill="#475569" text-anchor="middle">rrn 操纵子（大肠杆菌 7 个）→ 30S 前 rRNA</text>
+  <text x="60" y="288" font-size="12.5" fill="#1e293b" font-weight="700">加工酶分工：</text>
+  <text x="80" y="314" font-size="11.5" fill="#475569" font-weight="600">· RNase III</text>
+  <text x="180" y="314" font-size="11.5" fill="#64748b">识别茎环结构，在 16S / 23S 两端初步切分</text>
+  <text x="80" y="340" font-size="11.5" fill="#475569" font-weight="600">· RNase E / G</text>
+  <text x="180" y="340" font-size="11.5" fill="#64748b">16S 5′ 端成熟</text>
+  <text x="80" y="366" font-size="11.5" fill="#475569" font-weight="600">· RNase P</text>
+  <text x="180" y="366" font-size="11.5" fill="#64748b">参与 tRNA 部分 5′ 端成熟</text>
+  <text x="60" y="396" font-size="11" fill="#64748b">成熟中间体还需碱基修饰（甲基化为主）方成功能 rRNA。</text>
+  <rect x="750" y="132" width="620" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、真核 45S 前体：核仁中的 snoRNP 修饰</text>
+  <line x1="770" y1="200" x2="1350" y2="200" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="771" y="185" width="56" height="30" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="799" y="233" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">5′ ETS</text>
+  <rect x="829" y="185" width="90.8" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="874.4" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">18S</text>
+  <rect x="921.8" y="185" width="44.4" height="30" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="944" y="233" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">ITS1</text>
+  <rect x="968.1999999999999" y="185" width="50.199999999999996" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="993.3" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">5.8S</text>
+  <rect x="1020.4" y="185" width="44.4" height="30" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="1042.6" y="233" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">ITS2</text>
+  <rect x="1066.8" y="185" width="125.6" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1129.6" y="233" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">28S</text>
+  <rect x="1194.3999999999999" y="185" width="56" height="30" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="1222.3999999999999" y="233" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">3′ ETS</text>
+  <text x="1060" y="262" font-size="11" fill="#475569" text-anchor="middle">pol I 转录 45S 前体（核仁）</text>
+  <text x="770" y="296" font-size="11.5" fill="#475569" font-weight="600">· C/D box snoRNP（U3 等）</text>
+  <text x="770" y="312" font-size="10.5" fill="#64748b">指导特定位点 2′-O-甲基化（snoRNA 与靶位互补，D 盒附近提供甲基供体结合位点）</text>
+  <text x="770" y="340" font-size="11.5" fill="#475569" font-weight="600">· H/ACA snoRNP</text>
+  <text x="770" y="356" font-size="10.5" fill="#64748b">指导假尿苷化（Ψ）</text>
+  <text x="770" y="384" font-size="11.5" fill="#475569" font-weight="600">· Rnt1 / 外切酶体</text>
+  <text x="770" y="400" font-size="10.5" fill="#64748b">分段切割，ITS 逐步降解（中间经 32S 等阶段）</text>
+  <text x="770" y="424" font-size="11" fill="#64748b">5S rRNA 由 pol III 在核仁外转录并单独成熟；rRNA 加工与核糖体组装在核仁偶联进行。</text>
+  <rect x="30" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、tRNA 前体的四步成熟</text>
+  <text x="60" y="500" font-size="12" fill="#1e293b" font-weight="700">① 5′ 端：RNase P</text>
+  <text x="60" y="516" font-size="10.5" fill="#475569">切除前导序列（必需的第一加工事件）</text>
+  <text x="60" y="554" font-size="12" fill="#1e293b" font-weight="700">② 3′ 端：tRNase Z</text>
+  <text x="60" y="570" font-size="10.5" fill="#475569">切除尾部；无 CCA 基因者由 CCA 添加酶（CTP/ATP 为底物，不依赖模板）加上 3′-CCA</text>
+  <text x="60" y="608" font-size="12" fill="#1e293b" font-weight="700">③ 内含子去除</text>
+  <text x="60" y="624" font-size="10.5" fill="#475569">约 1/5 真核 tRNA 基因（均位于反密码子环）由剪接内切酶切出、连接酶封口（酵母经 2′-磷酸中间体）</text>
+  <text x="60" y="662" font-size="12" fill="#1e293b" font-weight="700">④ 碱基修饰</text>
+  <text x="60" y="678" font-size="10.5" fill="#475569">修饰碱基占 10%～20%：摆动位肌苷 I（A 脱氨）、D、ψ、T 等</text>
+  <rect x="710" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、tRNA：三叶草二级结构与 L 形三级结构</text>
+  <text x="730" y="500" font-size="12" fill="#1e293b" font-weight="700">三叶草形（二级结构，约 76～90 nt）</text>
+  <rect x="760" y="516" width="44" height="64" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="782" y="545.5" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">氨基酸</text>
+  <text x="782" y="558.5" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">接受臂</text>
+  <text x="782" y="596" font-size="9" fill="#78350f">3′-CCA</text>
+  <rect x="822" y="548" width="36" height="32" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="840" y="569" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">D 臂</text>
+  <rect x="870" y="548" width="52" height="32" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="896" y="569" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">AC 臂</text>
+  <rect x="934" y="548" width="40" height="32" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="954" y="569" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">TψC 臂</text>
+  <circle cx="880" cy="590" r="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="896" cy="590" r="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="912" cy="590" r="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="896" y="610" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">反密码子</text>
+  <text x="954" y="610" font-size="9" fill="#64748b" text-anchor="middle">可变环</text>
+  <text x="1000" y="500" font-size="12" fill="#1e293b" font-weight="700">倒 L 形（三级结构）</text>
+  <polyline points="1030,540 1030,600 1150,600" fill="none" stroke="#b45309" stroke-width="5"/>
+  <line x1="1030" y1="540" x2="1022" y2="532" stroke="#b45309" stroke-width="5"/>
+  <text x="1016" y="524" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">3′-CCA</text>
+  <text x="1160" y="596" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">反密码子</text>
+  <line x1="1030" y1="540" x2="1150" y2="600" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 5"/>
+  <text x="1096" y="560" font-size="10" fill="#64748b" text-anchor="middle">约 7 nm</text>
+  <text x="730" y="640" font-size="11" fill="#475569">氨基酸接受端 3′-CCA 与反密码子恰位于 L 的两端——距离约 7 nm，分别对接合成酶与核糖体。</text>
+  <text x="730" y="684" font-size="11" fill="#64748b">修饰是密码子准确识别与框架维持的关键（见第 6 章摆动假说）。</text>
+  <rect x="30" y="752" width="1340" height="218" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="774.84" font-size="19" fill="#475569" font-weight="700">五、mRNP 出核转运：加工完成度是「通行证」</text>
+  <rect x="60" y="792" width="560" height="120" rx="10" fill="#ccfbf1" fill-opacity="0.45"/>
+  <text x="76" y="818" font-size="18" fill="#475569" font-weight="700">细胞核</text>
+  <rect x="770" y="792" width="540" height="120" rx="10" fill="#e0f2fe" fill-opacity="0.45"/>
+  <text x="786" y="818" font-size="18" fill="#475569" font-weight="700">细胞质</text>
+  <rect x="100" y="852" width="200" height="24" rx="5" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <text x="200" y="868" font-size="9.5" fill="#78350f" text-anchor="middle">mRNA（已加帽 / 剪接 / 加尾）</text>
+  <rect x="330" y="844" width="130" height="40" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="395" y="860" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">TREX 复合体</text>
+  <text x="395" y="876" font-size="8.5" fill="#64748b" text-anchor="middle">THO+UAP56+Aly</text>
+  <line x1="302" y1="864" x2="328" y2="864" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="632" y="820" width="20" height="64" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="642" y="808" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">NPC（FG 重复通道）</text>
+  <ellipse cx="700" cy="864" rx="34" ry="17" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="700" y="869" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">NXF1</text>
+  <line x1="460" y1="864" x2="666" y2="864" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="810" y="852" width="150" height="24" rx="5" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <text x="885" y="868" font-size="9.5" fill="#475569" text-anchor="middle">翻译中的核糖体</text>
+  <ellipse cx="1000" cy="864" rx="30" ry="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1000" y="869" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">Dbp5</text>
+  <line x1="960" y1="864" x2="968" y2="864" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="1060" y="850" font-size="10" fill="#475569">Dbp5 在胞质面 remodel mRNP 并单向化运输</text>
+  <text x="1060" y="864" font-size="10" fill="#475569">（防回流）；</text>
+  <text x="1060" y="878" font-size="10" fill="#475569">未完成剪接 / 加工的 RNA 被滞留或降解于核内</text>
+  <text x="1060" y="892" font-size="10" fill="#475569">（NMD 检查）。</text>
+  <text x="642" y="906" font-size="10.5" fill="#64748b" text-anchor="middle">加工-转运-翻译构成连续的 RNA 生命周期</text>
+</svg>

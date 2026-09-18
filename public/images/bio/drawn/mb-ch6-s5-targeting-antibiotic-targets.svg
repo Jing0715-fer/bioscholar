@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质靶向转运与抗生素的作用靶点</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">信号肽（15～30 aa）—SRP—SRP 受体（各水解 1 GTP）—Sec61 构成 ER 共翻译转运轴心（1999 年诺奖）；线粒体 TOM/TIM、过氧化物酶体 PTS1（SKL）、细胞核 NLS 三条翻译后路线；链霉素错读、四环素阻进位、氯霉素抑 PTC、红霉素堵通道、嘌呤霉素提前释放</text>
+  <rect x="30" y="132" width="1340" height="316" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、信号假说（Blobel，1999 年诺贝尔奖）：ER 共翻译转运</text>
+  <path d="M 129,257.6 a 21 14 0 0 1 42,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 136,259 a 14 10.5 0 0 0 28,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <line x1="60" y1="296" x2="250" y2="296" stroke="#b45309" stroke-width="2.5"/>
+  <text x="155" y="312" font-size="9.5" fill="#78350f" text-anchor="middle">mRNA</text>
+  <line x1="174" y1="254" x2="330" y2="254" stroke="#64748b" stroke-width="4"/>
+  <rect x="178" y="242" width="56" height="24" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="206" y="258" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">信号肽</text>
+  <rect x="262" y="192" width="196" height="40" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="360" y="216" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">SRP（7SL RNA + 6 蛋白）</text>
+  <line x1="320" y1="232" x2="240" y2="246" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="281.37" y="281.075" width="57.26" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="310" y="293.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">翻译暂停</text>
+  <circle cx="84" cy="232" r="11" fill="#1e293b"/>
+  <text x="84" y="236" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">1</text>
+  <circle cx="276" cy="176" r="11" fill="#1e293b"/>
+  <text x="276" y="180" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">2</text>
+  <line x1="462" y1="212" x2="836" y2="212" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="470" y="200" font-size="10.5" fill="#475569" font-weight="600">③ 对接：双方各水解 1 分子 GTP</text>
+  <rect x="838" y="192" width="96" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="886" y="206" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">SRP 受体</text>
+  <text x="886" y="222" font-size="9.5" fill="#475569" text-anchor="middle">（SRα / SRβ）</text>
+  <rect x="978" y="180" width="372" height="216" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1164" y="202" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">ER 腔（内质网腔）</text>
+  <line x1="952" y1="190" x2="952" y2="386" stroke="#0f766e" stroke-width="1.5" opacity="0.7"/>
+  <line x1="976" y1="190" x2="976" y2="386" stroke="#0f766e" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="952" cy="190" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="190" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="214" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="214" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="238" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="238" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="262" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="286" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="286" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="310" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="310" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="952" cy="382" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="976" cy="382" r="5.5" fill="#0f766e" fill-opacity="0.85"/>
+  <text x="964" y="408" font-size="10" fill="#64748b" text-anchor="middle">ER 膜</text>
+  <rect x="942" y="256" width="40" height="100" rx="5" fill="#ffffff" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="962" y="248" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Sec61</text>
+  <text x="962" y="372" font-size="9.5" fill="#4c1d95" text-anchor="middle">易位子</text>
+  <path d="M 944.75,232.6 a 17.25 11.5 0 0 1 34.5,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 950.5,233.75 a 11.5 8.625 0 0 0 23,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <line x1="886" y1="234" x2="938" y2="250" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <circle cx="906" cy="252" r="11" fill="#1e293b"/>
+  <text x="906" y="256" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">4</text>
+  <polyline points="948,238 962,258 962,352 1016,366 1104,366" fill="none" stroke="#be185d" stroke-width="3.5"/>
+  <rect x="950" y="300" width="24" height="20" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="962" y="314" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">S</text>
+  <circle cx="1010" cy="330" r="11" fill="#1e293b"/>
+  <text x="1010" y="334" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">5</text>
+  <rect x="1011.35" y="235.5" width="127.3" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1075" y="247.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">信号肽酶（切除信号肽）</text>
+  <line x1="1075" y1="258" x2="980" y2="300" stroke="#be185d" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <circle cx="1180" cy="244" r="11" fill="#1e293b"/>
+  <text x="1180" y="248" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">6</text>
+  <ellipse cx="1200" cy="340" rx="62" ry="36" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="1200" y="336" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">可溶性蛋白</text>
+  <text x="1200" y="354" font-size="9.5" fill="#64748b" text-anchor="middle">（折叠·后续分泌）</text>
+  <line x1="1104" y1="362" x2="1140" y2="354" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="996" y="392" font-size="9.5" fill="#475569">跨膜蛋白：终止转移序列 + 易位子侧口 → 多次穿膜</text>
+  <text x="56" y="396" font-size="10.5" fill="#475569">① 新生肽 N 端信号肽（15～30 aa：碱性 N 段·疏水核心·小氨基酸切割位）自核糖体露出</text>
+  <text x="56" y="412" font-size="10.5" fill="#475569">② SRP（7SL RNA + 6 蛋白）识别信号肽，翻译暂停</text>
+  <text x="56" y="428" font-size="10.5" fill="#475569">③ SRP 对接 ER 膜上的 SRP 受体（SRα / SRβ）——双方各水解 1 分子 GTP</text>
+  <text x="716" y="396" font-size="10.5" fill="#475569">④ 核糖体-新生肽转交 Sec61 易位子</text>
+  <text x="716" y="412" font-size="10.5" fill="#475569">⑤ 翻译在 ER 腔面继续——肽链边合成边穿膜（共翻译转运）</text>
+  <text x="716" y="428" font-size="10.5" fill="#475569">⑥ 信号肽酶切除信号肽：可溶性蛋白入腔；跨膜蛋白多次穿膜</text>
+  <rect x="30" y="468" width="1340" height="214" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="490.84" font-size="19" fill="#475569" font-weight="700">二、翻译后转运：线粒体 · 过氧化物酶体 · 细胞核</text>
+  <text x="46" y="516" font-size="12.5" fill="#1e293b" font-weight="700">① 线粒体输入</text>
+  <rect x="46" y="528" width="186" height="34" rx="6" fill="#fef3c7" stroke="#9a3412" stroke-width="1.6"/>
+  <text x="139" y="549" font-size="10.5" fill="#9a3412" text-anchor="middle" font-weight="600">前导肽（N 端·富 Arg/Ser）</text>
+  <line x1="232" y1="545" x2="254" y2="545" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="254" y="528" width="120" height="34" rx="6" fill="#fef3c7" stroke="#9a3412" stroke-width="1.6"/>
+  <text x="314" y="549" font-size="10.5" fill="#9a3412" text-anchor="middle" font-weight="600">TOM 复合体</text>
+  <line x1="314" y1="562" x2="151" y2="578" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="46" y="578" width="210" height="34" rx="6" fill="#fef3c7" stroke="#9a3412" stroke-width="1.6"/>
+  <text x="151" y="599" font-size="9.5" fill="#9a3412" text-anchor="middle" font-weight="600">TIM23 + PAM（mtHsp70 电机）</text>
+  <line x1="256" y1="595" x2="280" y2="595" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="280" y="578" width="196" height="34" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.6"/>
+  <text x="378" y="599" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="600">基质：MPP 切除前导肽</text>
+  <text x="480" y="516" font-size="12.5" fill="#1e293b" font-weight="700">② 过氧化物酶体输入</text>
+  <rect x="480" y="528" width="170" height="34" rx="6" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="565" y="549" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="600">C 端 PTS1（Ser-Lys-Leu）</text>
+  <line x1="650" y1="545" x2="676" y2="545" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="676" y="528" width="160" height="34" rx="6" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="756" y="549" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">Pex5 / Pex7 受体</text>
+  <line x1="756" y1="562" x2="575" y2="578" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="480" y="578" width="190" height="34" rx="6" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="575" y="599" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="600">peroxin 复合体（受体可循环）</text>
+  <line x1="670" y1="595" x2="696" y2="595" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="696" y="578" width="140" height="34" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.6"/>
+  <text x="766" y="599" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">催化酶等整体进入</text>
+  <text x="900" y="516" font-size="12.5" fill="#1e293b" font-weight="700">③ 细胞核输入</text>
+  <rect x="900" y="528" width="210" height="34" rx="6" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.6"/>
+  <text x="1005" y="549" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="600">NLS 碱性簇（SV40 大 T：PKKRRKV）</text>
+  <line x1="1110" y1="545" x2="1134" y2="545" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="1134" y="528" width="160" height="34" rx="6" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.6"/>
+  <text x="1214" y="549" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">importin α / β</text>
+  <line x1="1214" y1="562" x2="1005" y2="578" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="900" y="578" width="210" height="34" rx="6" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.6"/>
+  <text x="1005" y="599" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">经核孔复合体（NPC）入核</text>
+  <line x1="1110" y1="595" x2="1134" y2="595" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="1134" y="578" width="160" height="34" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.6"/>
+  <text x="1214" y="599" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">Ran-GTP 供方向性</text>
+  <text x="46" y="652" font-size="11" fill="#475569">细菌输出：Sec（SRP–SecA 推动）与 Tat（已折叠蛋白跨膜）途径输出周质蛋白——与真核 ER 途径同源，显示分泌机器的演化保守性。</text>
+  <rect x="30" y="702" width="1340" height="278" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="724.84" font-size="19" fill="#475569" font-weight="700">三、抗生素与毒素：翻译机器各环节的选择性抑制剂</text>
+  <rect x="56" y="750" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="777.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">药物 / 毒素</text>
+  <rect x="196" y="750" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="777.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">靶点</text>
+  <rect x="396" y="750" width="580" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="777.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
+  <rect x="976" y="750" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="777.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">谱</text>
+  <rect x="56" y="794" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="811.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">链霉素</text>
+  <rect x="196" y="794" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="811.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">30S S12 / 16S</text>
+  <rect x="396" y="794" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="811.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高浓度诱导错读（初始校正失效）；低浓度抑制起始</text>
+  <rect x="976" y="794" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="811.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">原核</text>
+  <rect x="56" y="818" width="1000" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="818" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="835.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">四环素</text>
+  <rect x="196" y="818" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="835.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">30S A 位</text>
+  <rect x="396" y="818" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="835.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">阻断氨酰-tRNA 进位</text>
+  <rect x="976" y="818" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="835.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">原核</text>
+  <rect x="56" y="842" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="859.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">氯霉素</text>
+  <rect x="196" y="842" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="859.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">50S PTC</text>
+  <rect x="396" y="842" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="859.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抑制肽酰转移酶中心（肽键形成）</text>
+  <rect x="976" y="842" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="859.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">原核</text>
+  <rect x="56" y="866" width="1000" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="866" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="883.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">红霉素</text>
+  <rect x="196" y="866" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="883.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">50S 出口通道</text>
+  <rect x="396" y="866" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="883.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">堵塞新生肽离开通道</text>
+  <rect x="976" y="866" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="883.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">原核</text>
+  <rect x="56" y="890" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="907.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">嘌呤霉素</text>
+  <rect x="196" y="890" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="907.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">A 位（氨酰-腺苷类似物）</text>
+  <rect x="396" y="890" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="907.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">接受肽酰基后脱落——肽链提前释放</text>
+  <rect x="976" y="890" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="907.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">原核 + 真核</text>
+  <rect x="56" y="914" width="1000" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="914" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="931.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">环己酰亚胺</text>
+  <rect x="196" y="914" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="931.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">60S</text>
+  <rect x="396" y="914" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="931.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抑制真核转位步骤</text>
+  <rect x="976" y="914" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="931.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">真核</text>
+  <rect x="56" y="938" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="126" y="955.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">白喉毒素</text>
+  <rect x="196" y="938" width="200" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="955.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">eEF2（白喉酰胺残基）</text>
+  <rect x="396" y="938" width="580" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="686" y="955.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">ADP 核糖基化使延伸瘫痪</text>
+  <rect x="976" y="938" width="80" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="955.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">真核</text>
+  <text x="1080" y="768" font-size="12" fill="#1e293b" font-weight="700">机制旁注</text>
+  <text x="1080" y="788" font-size="10.5" fill="#475569">嘌呤霉素是 3′ 端「分子仿冒品」：</text>
+  <text x="1080" y="803" font-size="10.5" fill="#475569">氨酰-腺苷类似物接受肽酰基后脱落，</text>
+  <text x="1080" y="818" font-size="10.5" fill="#475569">证明肽键转移的化学本质——酯酰基向游离氨基转移。</text>
+  <text x="1080" y="852" font-size="10.5" fill="#475569">链霉素的耳毒性（结合线粒体核糖体）</text>
+  <text x="1080" y="867" font-size="10.5" fill="#475569">提示翻译机器同源性的另一面；</text>
+  <text x="1080" y="882" font-size="10.5" fill="#475569">白喉毒素把 NAD⁺ 的 ADP 核糖基转移到 eEF2——单分子毒素使延伸瘫痪，</text>
+  <text x="1080" y="897" font-size="10.5" fill="#475569">反证延伸因子的必需性。</text>
+</svg>

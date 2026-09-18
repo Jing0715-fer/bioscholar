@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">密码子的特性：简并性、摆动与例外</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">同义密码子多在第三位不同（Leu 6 个 / Gly 4 个）——反密码子 5′ 位与密码子第 3 位摆动配对（I 读 U/C/A，一读三）；线粒体 UGA→Trp 等系统例外与 UGA→Sec 的功能性再定义</text>
+  <rect x="30" y="132" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、简并性：同义密码子多在第三位不同</text>
+  <text x="60" y="186" font-size="12.5" fill="#1e293b" font-weight="700">Leu 的 6 个密码子</text>
+  <rect x="60" y="198" width="76" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="98" y="215" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">UUA</text>
+  <rect x="144" y="198" width="76" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="182" y="215" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">UUG</text>
+  <rect x="228" y="198" width="76" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="266" y="215" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">CUU</text>
+  <rect x="312" y="198" width="76" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="350" y="215" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">CUC</text>
+  <rect x="396" y="198" width="76" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="434" y="215" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">CUA</text>
+  <rect x="480" y="198" width="76" height="26" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="518" y="215" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">CUG</text>
+  <text x="310" y="244" font-size="11" fill="#64748b" text-anchor="middle">第 1、2 位固定，第 3 位「摆动」</text>
+  <text x="60" y="272" font-size="12.5" fill="#1e293b" font-weight="700">Gly 的 4 个密码子（GGX）</text>
+  <rect x="270" y="284" width="76" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="308" y="301" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">GGU</text>
+  <rect x="354" y="284" width="76" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="392" y="301" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">GGC</text>
+  <rect x="438" y="284" width="76" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="476" y="301" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">GGA</text>
+  <rect x="522" y="284" width="76" height="26" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="560" y="301" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">GGG</text>
+  <text x="60" y="336" font-size="11" fill="#475569">· 点突变第三位多不改变氨基酸（同义突变），显著降低突变的表型效应；AUG（Met）与 UGG（Trp）为无简并例外。</text>
+  <text x="60" y="366" font-size="11" fill="#475569">· 简并并非均匀：第 1、2 位决定氨基酸化学性质（如 UXU / UxC 编码疏水氨基酸），使错误掺入代价最小化。</text>
+  <rect x="710" y="132" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、摆动配对几何：密码子第 3 位 × 反密码子 5′ 位</text>
+  <text x="730" y="190" font-size="12.5" fill="#1e293b" font-weight="700">反平行配对</text>
+  <rect x="770" y="200" width="52" height="30" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="796" y="220" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">U</text>
+  <rect x="830" y="200" width="52" height="30" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="856" y="220" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">U</text>
+  <rect x="890" y="200" width="52" height="30" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="916" y="220" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">G</text>
+  <text x="950" y="214" font-size="10.5" fill="#475569">密码子（mRNA 5′→3′）</text>
+  <rect x="770" y="262" width="52" height="30" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="796" y="282" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">A</text>
+  <rect x="830" y="262" width="52" height="30" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="856" y="282" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">A</text>
+  <rect x="890" y="262" width="52" height="30" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="916" y="282" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">C</text>
+  <text x="950" y="284" font-size="10.5" fill="#475569">反密码子（3′→5′）</text>
+  <line x1="796" y1="232" x2="796" y2="260" stroke="#059669" stroke-width="2"/>
+  <line x1="856" y1="232" x2="856" y2="260" stroke="#059669" stroke-width="2"/>
+  <text x="756" y="250" font-size="9.5" fill="#059669" text-anchor="middle">严格配对</text>
+  <line x1="916" y1="232" x2="916" y2="260" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <text x="756" y="290" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">摆动位</text>
+  <text x="730" y="320" font-size="10.5" fill="#475569">密码子第 3 位与反密码子 5′ 位（第 1 位）的配对允许非经典几何构型；其余两位仍严格沃森-克里克配对。</text>
+  <text x="730" y="356" font-size="11.5" fill="#1e293b" font-weight="700">含肌苷（I）的反密码子一个可读三个密码子：</text>
+  <rect x="1010" y="344" width="60" height="22" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1040" y="359" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">UUU</text>
+  <line x1="1040" y1="368" x2="1108" y2="388" stroke="#94a3b8" stroke-width="1.4"/>
+  <rect x="1076" y="344" width="60" height="22" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1106" y="359" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">UUC</text>
+  <line x1="1106" y1="368" x2="1108" y2="388" stroke="#94a3b8" stroke-width="1.4"/>
+  <rect x="1142" y="344" width="60" height="22" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1172" y="359" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">UUA</text>
+  <line x1="1172" y1="368" x2="1108" y2="388" stroke="#94a3b8" stroke-width="1.4"/>
+  <ellipse cx="1108" cy="394" rx="16" ry="13" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1108" y="398" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">I</text>
+  <text x="1140" y="356" font-size="10.5" fill="#dc2626" font-weight="700">I 读 U / C / A</text>
+  <rect x="30" y="432" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="454.84" font-size="19" fill="#475569" font-weight="700">三、Crick 摆动规则（1966）与 tRNA 数目</text>
+  <rect x="60" y="476" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="503.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">反密码子 5′ 位</text>
+  <rect x="340" y="476" width="340" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="510" y="503.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">可配对的密码子第 3 位</text>
+  <rect x="60" y="520" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="540.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="340" y="520" width="340" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="510" y="540.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">G</text>
+  <rect x="60" y="550" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="550" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="570.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="340" y="550" width="340" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="510" y="570.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">U</text>
+  <rect x="60" y="580" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="600.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">U</text>
+  <rect x="340" y="580" width="340" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="510" y="600.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">A 或 G</text>
+  <rect x="60" y="610" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="610" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="630.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">G</text>
+  <rect x="340" y="610" width="340" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="510" y="630.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">U 或 C</text>
+  <rect x="60" y="640" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="660.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">I（肌苷）</text>
+  <rect x="340" y="640" width="340" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="510" y="660.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">U、C 或 A</text>
+  <text x="60" y="656" font-size="11.5" fill="#475569">tRNA 数量可少于 61 种：大肠杆菌约 40～50 种有效 tRNA，人线粒体仅 22 种。</text>
+  <rect x="710" y="432" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="454.84" font-size="19" fill="#475569" font-weight="700">四、通用性的系统例外与功能性再定义</text>
+  <rect x="730" y="476" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="503.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">体系</text>
+  <rect x="980" y="476" width="370" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="503.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">改变</text>
+  <rect x="730" y="520" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="540.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">人 / 脊椎动物线粒体</text>
+  <rect x="980" y="520" width="370" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="540.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">UGA→Trp；AGA/AGG→终止；AUA→Met</text>
+  <rect x="730" y="550" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="550" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="570.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">酵母线粒体</text>
+  <rect x="980" y="550" width="370" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="570.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CUN→Thr</text>
+  <rect x="730" y="580" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="600.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">某些纤毛虫</text>
+  <rect x="980" y="580" width="370" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="600.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">UAA/UAG→Gln</text>
+  <rect x="730" y="610" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="610" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="630.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">支原体等</text>
+  <rect x="980" y="610" width="370" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="630.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CGG→无（不含 Arg）</text>
+  <rect x="730" y="640" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="660.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">赭球菌 / 甲烷菌</text>
+  <rect x="980" y="640" width="370" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="660.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">UAG→吡咯赖氨酸（Pyl）</text>
+  <text x="730" y="656" font-size="11" fill="#475569">功能性再定义：UGA 在 SECIS 元件配合下插入硒代半胱氨酸（第 21 种氨基酸，SELB / eEFSec 系统）。</text>
+  <rect x="30" y="732" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">五、读码框：三联体连续、无重叠、无逗号</text>
+  <text x="60" y="780" font-size="12" fill="#1e293b" font-weight="700">正常读框（自起始 AUG 起连续读取）</text>
+  <rect x="60" y="792" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="96" y="809" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">AUG</text>
+  <rect x="138" y="792" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="174" y="809" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">UUU</text>
+  <rect x="216" y="792" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="252" y="809" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">CCA</text>
+  <rect x="294" y="792" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="330" y="809" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">GGG</text>
+  <rect x="372" y="792" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="408" y="809" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">UCA</text>
+  <rect x="450" y="792" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="486" y="809" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">AAU</text>
+  <text x="60" y="846" font-size="12" fill="#dc2626" font-weight="700">插入 1 个碱基 C：</text>
+  <rect x="60" y="858" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="96" y="875" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">AUG</text>
+  <rect x="138" y="858" width="20" height="26" rx="4" fill="#fee2e2" stroke="#991b1b" stroke-width="1.5"/>
+  <text x="148" y="875" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">C</text>
+  <rect x="166" y="858" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="202" y="875" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">UUU</text>
+  <rect x="244" y="858" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="280" y="875" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">CCA</text>
+  <rect x="322" y="858" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="358" y="875" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">GGG</text>
+  <rect x="400" y="858" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="436" y="875" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">UCA</text>
+  <rect x="478" y="858" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="514" y="875" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">AAU</text>
+  <text x="60" y="910" font-size="12" fill="#475569" font-weight="700">新读框（整体移位，肽链序列彻底改变）：</text>
+  <rect x="320" y="922" width="72" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.5"/>
+  <text x="356" y="939" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">AUG</text>
+  <rect x="398" y="922" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="434" y="939" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">CUU</text>
+  <rect x="476" y="922" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="512" y="939" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">UCC</text>
+  <rect x="554" y="922" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="590" y="939" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">AGG</text>
+  <rect x="632" y="922" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="668" y="939" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">GUC</text>
+  <rect x="710" y="922" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="746" y="939" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">AAA</text>
+  <rect x="788" y="922" width="72" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="824" y="939" font-size="11.5" fill="#94a3b8" text-anchor="middle" font-weight="700">U…</text>
+  <text x="660" y="788" font-size="11" fill="#475569">插入 / 缺失非 3 倍数核苷酸引起移码突变——Brenner 等用 T4 rII 移码突变首次证明三联体阅读方式。</text>
+  <text x="660" y="838" font-size="11" fill="#475569">部分病毒基因用程序性核糖体移码（-1 frameshift）以一个基因产出两种蛋白（如逆转录病毒的 gag-pol 融合）</text>
+  <text x="660" y="853" font-size="11" fill="#475569">——「框架」也可被 RNA 结构主动调控。</text>
+  <text x="660" y="900" font-size="11" fill="#64748b">密码子在绝大多数生物中通用，是生命同源性的有力证据，使异源表达与进化比较成为可能。</text>
+</svg>

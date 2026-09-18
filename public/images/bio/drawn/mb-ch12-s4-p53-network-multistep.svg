@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">p53 网络与多步癌变</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">MDM2 负反馈环维持 p53 低稳态——ATM/ATR-Chk 与 p14^ARF 两路输入稳定 p53，输出 p21 阻滞 / Bax-PUMA 凋亡 / GADD45 修复三分支；结直肠癌 APC→KRAS→18q→TP53 多步克隆演化（3～8 个驱动突变），CIN / MSI 作变异放大器</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、p53 的稳定性调控：MDM2 负反馈环</text>
+  <rect x="280" y="240" width="120" height="52" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="340" y="262" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">p53</text>
+  <text x="340" y="280" font-size="8.5" fill="#475569" text-anchor="middle">（四聚体转录因子）</text>
+  <rect x="280" y="348" width="120" height="52" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="340" y="370" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">MDM2</text>
+  <text x="340" y="388" font-size="8.5" fill="#475569" text-anchor="middle">（E3 泛素连接酶）</text>
+  <path d="M400,265 C408.0,270.8 448.0,281.7 448,300 C448.0,318.3 408.0,362.5 400,375" fill="none" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="456" y="300" font-size="9.5" fill="#4c1d95" font-weight="600">转录激活</text>
+  <path d="M280,372 C271.0,360.0 226.0,317.3 226,300 C226.0,282.7 271.0,273.3 280,268" fill="none" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="212" y1="290" x2="232" y2="310" stroke="#dc2626" stroke-width="3"/>
+  <line x1="232" y1="290" x2="212" y2="310" stroke="#dc2626" stroke-width="3"/>
+  <text x="206" y="296" font-size="9.5" fill="#831843" text-anchor="end" font-weight="600">泛素化 → 降解</text>
+  <text x="340" y="312" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">负反馈环：正常细胞 p53 极低</text>
+  <text x="46" y="180" font-size="10.5" fill="#dc2626" font-weight="700">DNA 损伤（DSB · UV · 复制压力）</text>
+  <rect x="56" y="196" width="100" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="106" y="216" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">ATM / ATR</text>
+  <line x1="158" y1="211" x2="186" y2="211" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="190" y="196" width="100" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="240" y="216" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">Chk1 / Chk2</text>
+  <line x1="290" y1="214" x2="316" y2="238" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="56" y="248" font-size="9.5" fill="#075985">磷酸化 p53：阻断 MDM2 结合</text>
+  <text x="466" y="180" font-size="10.5" fill="#d97706" font-weight="700">致癌信号异常</text>
+  <rect x="466" y="196" width="110" height="30" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="521" y="216" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">p14^ARF</text>
+  <line x1="521" y1="226" x2="412" y2="348" stroke="#d97706" stroke-width="2"/>
+  <line x1="402" y1="342" x2="418" y2="358" stroke="#d97706" stroke-width="2.5"/>
+  <text x="500" y="292" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="600">抑制 MDM2</text>
+  <text x="46" y="420" font-size="10.5" fill="#475569">损伤或致癌信号经 ATM/ATR–Chk 或 ARF 打断反馈环，p53 快速积累入核——「感知–决策–执行」总线的稳态基础。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、三条执行通路：依损伤程度「刹车或自杀」</text>
+  <rect x="740" y="270" width="90" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="785" y="294" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">p53</text>
+  <text x="785" y="312" font-size="8.5" fill="#475569" text-anchor="middle">积累 · 入核</text>
+  <line x1="830" y1="280" x2="888" y2="198" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <line x1="830" y1="298" x2="888" y2="298" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <line x1="830" y1="316" x2="888" y2="390" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="894" y="170" font-size="10" fill="#075985" font-weight="700">① 细胞周期阻滞</text>
+  <rect x="894" y="178" width="130" height="36" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="959" y="200" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="600">p21^CIP1（CDK 抑制）</text>
+  <line x1="1024" y1="196" x2="1060" y2="196" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="1064" y="178" width="130" height="36" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1129" y="200" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="600">Rb 保持低磷酸化</text>
+  <line x1="1194" y1="196" x2="1230" y2="196" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="1256.825" y="187.5" width="60.35" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1287" y="199.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">G1/S 阻滞</text>
+  <text x="959" y="232" font-size="8.5" fill="#64748b" text-anchor="middle">（14-3-3σ 另介导 G2 阻滞）</text>
+  <text x="894" y="272" font-size="10" fill="#dc2626" font-weight="700">② 凋亡</text>
+  <rect x="894" y="280" width="130" height="36" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="959" y="302" font-size="8.5" fill="#991b1b" text-anchor="middle" font-weight="600">Bax · PUMA · NOXA</text>
+  <line x1="1024" y1="298" x2="1060" y2="298" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="1064" y="280" width="130" height="36" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1129" y="302" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="600">线粒体外膜通透化</text>
+  <line x1="1194" y1="298" x2="1230" y2="298" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="1239.006" y="289.5" width="95.988" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1287" y="301.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">caspase 级联凋亡</text>
+  <text x="894" y="366" font-size="10" fill="#831843" font-weight="700">③ 修复 · 衰老与代谢</text>
+  <rect x="894" y="374" width="130" height="36" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="959" y="396" font-size="9" fill="#831843" text-anchor="middle" font-weight="600">GADD45（修复）</text>
+  <line x1="1024" y1="392" x2="1060" y2="392" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="1064" y="374" width="130" height="36" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1129" y="396" font-size="9" fill="#831843" text-anchor="middle" font-weight="600">TIGAR（抑糖酵解）</text>
+  <line x1="1194" y1="392" x2="1230" y2="392" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="1239.006" y="383.5" width="95.988" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1287" y="395.6" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">衰老 · 代谢重编程</text>
+  <text x="726" y="425" font-size="10.5" fill="#475569">三类靶基因依损伤程度选择「轻损修复、重损凋亡」——p53 因而被称作基因组守卫（guardian of the genome）。</text>
+  <rect x="30" y="452" width="660" height="508" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、TP53 突变与临床：热点错义 · 显性负 · Li-Fraumeni</text>
+  <text x="56" y="500" font-size="11" fill="#1e293b" font-weight="600">TP53 是人类肿瘤中突变率最高的基因——过半肿瘤失活其功能。</text>
+  <rect x="56" y="540" width="143" height="30" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="128" y="560" font-size="9" fill="#78350f" text-anchor="middle" font-weight="600">TAD 激活域</text>
+  <rect x="199" y="540" width="286" height="30" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="342" y="560" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">DNA 结合域（DBD）</text>
+  <rect x="485" y="540" width="131" height="30" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <text x="550" y="560" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="600">OD 寡聚域 · CTD</text>
+  <line x1="306" y1="540" x2="306" y2="532" stroke="#dc2626" stroke-width="2"/>
+  <text x="306" y="528" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">R175</text>
+  <line x1="409" y1="540" x2="409" y2="532" stroke="#dc2626" stroke-width="2"/>
+  <text x="409" y="528" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">R248</text>
+  <line x1="443" y1="540" x2="443" y2="532" stroke="#dc2626" stroke-width="2"/>
+  <text x="443" y="508" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">R273</text>
+  <line x1="459" y1="540" x2="459" y2="532" stroke="#dc2626" stroke-width="2"/>
+  <text x="459" y="528" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">R282</text>
+  <text x="616" y="560" font-size="8.5" fill="#64748b" text-anchor="end">393 aa</text>
+  <text x="56" y="596" font-size="10.5" fill="#475569">致癌突变多为错义热点（集中于 DBD）：R175 · R248 · R273 · R282——不仅失去转录活性，还显性负抑制残余野生型。</text>
+  <text x="56" y="648" font-size="11.5" fill="#1e293b" font-weight="700">显性负效应（dominant negative）：四聚体中混杂突变亚基</text>
+  <rect x="76" y="668" width="40" height="34" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="96" y="689" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">wt</text>
+  <rect x="120" y="668" width="40" height="34" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="140" y="689" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">wt</text>
+  <rect x="164" y="668" width="40" height="34" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="184" y="689" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">wt</text>
+  <rect x="208" y="668" width="40" height="34" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="228" y="689" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">wt</text>
+  <text x="162" y="724" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">野生型四聚体：有活性 ✓</text>
+  <rect x="330" y="668" width="40" height="34" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="350" y="689" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">wt</text>
+  <rect x="374" y="668" width="40" height="34" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="394" y="689" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">mut</text>
+  <rect x="418" y="668" width="40" height="34" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="438" y="689" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">wt</text>
+  <rect x="462" y="668" width="40" height="34" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="482" y="689" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">mut</text>
+  <text x="416" y="724" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="600">杂合四聚体：活性被压制 ✕</text>
+  <text x="56" y="762" font-size="10.5" fill="#475569" font-weight="600">生殖系 TP53 突变 → Li-Fraumeni 综合征：多发、早发的多种肿瘤（肉瘤·乳腺·肾上腺皮质癌等）。</text>
+  <text x="56" y="800" font-size="11" fill="#1e293b" font-weight="700">另两条失活路线：</text>
+  <rect x="56" y="812" width="300" height="56" rx="8" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="72" y="834" font-size="11" fill="#831843" font-weight="700">MDM2 扩增</text>
+  <text x="72" y="854" font-size="10" fill="#475569">p53 被过度泛素化降解</text>
+  <rect x="366" y="812" width="300" height="56" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="382" y="834" font-size="11" fill="#dc2626" font-weight="700">HPV E6（+ E6AP）</text>
+  <text x="382" y="854" font-size="10" fill="#475569">招募 E6AP 泛素化 p53 促降解</text>
+  <text x="56" y="900" font-size="10.5" fill="#64748b">p53 失活的肿瘤更易滑入基因组不稳定——为多步癌变按下快进键（右图）。</text>
+  <rect x="710" y="452" width="660" height="508" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、多步癌变：结直肠癌模型（Vogelstein 与 Kinzler，1990）</text>
+  <text x="726" y="498" font-size="10.5" fill="#475569">癌变需多个驱动事件的组合与顺序：通常 3～8 个驱动突变 + 数百乘客突变；每步赋予克隆选择优势，</text>
+  <text x="726" y="513" font-size="10.5" fill="#475569">经克隆演化逐级扩增。</text>
+  <text x="726" y="536" font-size="10.5" fill="#475569">基因组不稳定是「加速器」：CIN（APC / BubR1）与 MSI（MLH1 / MSH2 沉默）使打击概率提高一个量级。</text>
+  <rect x="730" y="838" width="118" height="62" rx="7" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="789" y="856" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">APC 失活</text>
+  <text x="789" y="874" font-size="8.5" fill="#64748b" text-anchor="middle">（两次打击）</text>
+  <text x="789" y="890" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">正常上皮→异常隐窝灶</text>
+  <line x1="848" y1="818" x2="858" y2="776" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="854" y="772" width="118" height="62" rx="7" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="913" y="790" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">KRAS 激活</text>
+  <text x="913" y="808" font-size="8.5" fill="#64748b" text-anchor="middle">早于其他突变</text>
+  <text x="913" y="824" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">早期腺瘤</text>
+  <line x1="972" y1="752" x2="982" y2="710" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="978" y="706" width="118" height="62" rx="7" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1037" y="724" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">18q 缺失</text>
+  <text x="1037" y="742" font-size="8.5" fill="#64748b" text-anchor="middle">（SMAD4 / DCC）</text>
+  <text x="1037" y="758" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">晚期腺瘤</text>
+  <line x1="1096" y1="686" x2="1106" y2="644" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1102" y="640" width="118" height="62" rx="7" fill="#e0f2fe" fill-opacity="0.7" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1161" y="658" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">TP53 失活</text>
+  <text x="1161" y="676" font-size="8.5" fill="#64748b" text-anchor="middle">—</text>
+  <text x="1161" y="692" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">腺癌（癌变）</text>
+  <line x1="1220" y1="620" x2="1230" y2="578" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1226" y="574" width="118" height="62" rx="7" fill="#fee2e2" fill-opacity="0.7" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1285" y="592" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">更多突变</text>
+  <text x="1285" y="610" font-size="8.5" fill="#64748b" text-anchor="middle">+ 基因组不稳定</text>
+  <text x="1285" y="626" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">侵袭与转移</text>
+  <line x1="730" y1="922" x2="1344" y2="922" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="1037" y="944" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">时间 · 克隆演化：每步赋予选择优势，逐级扩增</text>
+  <text x="789" y="944" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">启动</text>
+  <text x="1285" y="944" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">进展</text>
+</svg>

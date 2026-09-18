@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因组结构特点与 C 值悖论</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">肺鱼基因组约 10¹¹ bp 为人类（3.1×10⁹ bp）的 30 余倍——C 值与复杂度不成比例；原核紧凑成操纵子，真核庞大含断裂基因与大量重复序列</text>
+  <rect x="30" y="132" width="720" height="306" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、C 值悖论：基因组大小与复杂度不成比例</text>
+  <rect x="115" y="180" width="590" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="115" y1="330" x2="705" y2="330" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="262.5" y1="380" x2="262.5" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="115" y1="280" x2="705" y2="280" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="410" y1="380" x2="410" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="115" y1="230" x2="705" y2="230" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="557.5" y1="380" x2="557.5" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="185.8" y1="380" x2="185.8" y2="386" stroke="#475569" stroke-width="1.8"/>
+  <text x="185.8" y="402" font-size="13" fill="#64748b" text-anchor="middle">大肠杆菌</text>
+  <line x1="410" y1="380" x2="410" y2="386" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="402" font-size="13" fill="#64748b" text-anchor="middle">人类</text>
+  <line x1="634.2" y1="380" x2="634.2" y2="386" stroke="#475569" stroke-width="1.8"/>
+  <text x="634.2" y="402" font-size="13" fill="#64748b" text-anchor="middle">肺鱼 / 两栖类</text>
+  <line x1="109" y1="380" x2="115" y2="380" stroke="#475569" stroke-width="1.8"/>
+  <text x="105" y="384" font-size="13" fill="#64748b" text-anchor="end">10⁴</text>
+  <line x1="109" y1="330" x2="115" y2="330" stroke="#475569" stroke-width="1.8"/>
+  <text x="105" y="334" font-size="13" fill="#64748b" text-anchor="end">10⁶</text>
+  <line x1="109" y1="280" x2="115" y2="280" stroke="#475569" stroke-width="1.8"/>
+  <text x="105" y="284" font-size="13" fill="#64748b" text-anchor="end">10⁸</text>
+  <line x1="109" y1="230" x2="115" y2="230" stroke="#475569" stroke-width="1.8"/>
+  <text x="105" y="234" font-size="13" fill="#64748b" text-anchor="end">10¹⁰</text>
+  <line x1="109" y1="180" x2="115" y2="180" stroke="#475569" stroke-width="1.8"/>
+  <text x="105" y="184" font-size="13" fill="#64748b" text-anchor="end">10¹²</text>
+  <text x="410" y="424" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">物种（按复杂度大致排序）→</text>
+  <text x="122" y="196" font-size="11.5" fill="#64748b">C 值（bp，对数刻度）</text>
+  <circle cx="185.8" cy="313.43105420796064" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="185.8" y="296.43105420796064" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">大肠杆菌 4.6×10⁶</text>
+  <circle cx="410" cy="242.71595765414318" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="410" y="225.71595765414318" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">人类 3.1×10⁹</text>
+  <circle cx="634.2" cy="205" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="634.2" y="188" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">肺鱼 约10¹¹</text>
+  <line x1="625" y1="212" x2="425" y2="238" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="6 5" marker-end="url(#arr-bad)"/>
+  <text x="505" y="272" font-size="12" fill="#dc2626" text-anchor="middle">同为脊椎动物，C 值相差 30 余倍</text>
+  <text x="62" y="424" font-size="12" fill="#64748b">C 值＝单倍体基因组 DNA 总量（pg 或 bp）</text>
+  <rect x="770" y="132" width="600" height="306" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="786" y="154.84" font-size="19" fill="#475569" font-weight="700">二、原核基因组：环状、紧凑、操纵子成簇</text>
+  <circle cx="950" cy="292" r="80" fill="none" stroke="#6d28d9" stroke-width="6" opacity="0.85"/>
+  <text x="950" y="194" font-size="12.5" fill="#6d28d9" text-anchor="middle" font-weight="700">oriC</text>
+  <line x1="950" y1="212" x2="950" y2="201" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1038.3345911860129" y="347" font-size="12.5" fill="#6d28d9" text-anchor="middle" font-weight="700">rrn ×7</text>
+  <line x1="1019.282032302755" y1="332" x2="1028.808311744384" y2="337.5" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="861.6654088139873" y="347.00000000000006" font-size="12.5" fill="#6d28d9" text-anchor="middle" font-weight="700">操纵子</text>
+  <line x1="880.717967697245" y1="332" x2="871.1916882556161" y2="337.5" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="950" y="282" font-size="14.5" fill="#134e4a" text-anchor="middle" font-weight="700">大肠杆菌</text>
+  <text x="950" y="304" font-size="13" fill="#475569" text-anchor="middle">4.6×10⁶ bp</text>
+  <text x="950" y="324" font-size="11.5" fill="#64748b" text-anchor="middle">单条环状双链</text>
+  <text x="1080" y="200" font-size="12.5" fill="#475569">· 结构紧凑：</text>
+  <text x="1080" y="219" font-size="12.5" fill="#475569">非编码区仅约 11%· 功能相关基因成簇排列成操纵子· 基因多为单拷贝；</text>
+  <text x="1080" y="238" font-size="12.5" fill="#475569">重复序列主要为 rRNA、</text>
+  <text x="1080" y="257" font-size="12.5" fill="#475569">tRNA 等多拷贝基因· 质粒（F 因子、R 质粒）</text>
+  <text x="1080" y="276" font-size="12.5" fill="#475569">携带附加遗传信息</text>
+  <circle cx="1105" cy="352" r="15" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <text x="1105" y="382" font-size="11" fill="#4c1d95" text-anchor="middle">质粒（F / R）</text>
+  <text x="950" y="410" font-size="12" fill="#64748b" text-anchor="middle">操纵子＝功能相关结构基因与调控序列的成簇组织（详见第 7 章）</text>
+  <rect x="30" y="452" width="1340" height="312" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、原核与真核基因组比较</text>
+  <rect x="60" y="512" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="539.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">比较项</text>
+  <rect x="280" y="512" width="470" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="539.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">原核基因组</text>
+  <rect x="750" y="512" width="590" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="539.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">真核基因组</text>
+  <rect x="60" y="556" width="220" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="580.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">存在形式</text>
+  <rect x="280" y="556" width="470" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="580.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">环状（少数线状），裸露</text>
+  <rect x="750" y="556" width="590" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="580.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">线状，与组蛋白结合形成染色质，位于细胞核内</text>
+  <rect x="60" y="594" width="1280" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="594" width="220" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="618.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">基因密度</text>
+  <rect x="280" y="594" width="470" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="618.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">高（非编码区约 11%）</text>
+  <rect x="750" y="594" width="590" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="618.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">低，间隔序列与重复序列多</text>
+  <rect x="60" y="632" width="220" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="656.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">内含子</text>
+  <rect x="280" y="632" width="470" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="656.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">极少（见于古菌与噬菌体）</text>
+  <rect x="750" y="632" width="590" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="656.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">普遍存在，转录后需剪接加工</text>
+  <rect x="60" y="670" width="1280" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="670" width="220" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="694.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">基因排列</text>
+  <rect x="280" y="670" width="470" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="694.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">多操纵子成簇</text>
+  <rect x="750" y="670" width="590" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="694.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">多为单基因转录单元；基因家族与串联重复基因簇</text>
+  <rect x="60" y="708" width="220" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="732.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">重复序列</text>
+  <rect x="280" y="708" width="470" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="732.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">少（rRNA、tRNA 等多拷贝）</text>
+  <rect x="750" y="708" width="590" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="732.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">大量，可占基因组一半以上</text>
+  <rect x="30" y="774" width="1340" height="206" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="796.84" font-size="19" fill="#475569" font-weight="700">四、真核基因组要点与细胞器基因组</text>
+  <text x="60" y="822" font-size="12.5" fill="#475569">· 基因组庞大、基因密度低；蛋白质编码序列仅约 1.5%· 一半以上为重复序列；多数基因为断裂基因，</text>
+  <text x="60" y="841" font-size="12.5" fill="#475569">转录后需剪接· 基因家族与串联重复基因簇（rRNA、组蛋白基因）· 染色体末端具端粒结构，</text>
+  <text x="60" y="860" font-size="12.5" fill="#475569">保证复制完整性</text>
+  <text x="60" y="916" font-size="12" fill="#64748b">C 值悖论的解答：非编码序列的调控功能与重复序列的动态变化本身即是重要属性。</text>
+  <circle cx="1050" cy="880" r="52" fill="none" stroke="#0369a1" stroke-width="5" opacity="0.85"/>
+  <text x="1050" y="812" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">人线粒体 DNA</text>
+  <text x="1050" y="874" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">16 569 bp</text>
+  <text x="1050" y="892" font-size="11" fill="#64748b" text-anchor="middle">环状</text>
+  <text x="1140" y="850" font-size="12" fill="#475569">· 紧凑，</text>
+  <text x="1140" y="868" font-size="12" fill="#475569">几乎不含内含子· 遗传密码与通用密码存在偏差：</text>
+  <text x="1140" y="886" font-size="12" fill="#475569">UGA 编码色氨酸· 叶绿体另有自身基因组</text>
+</svg>

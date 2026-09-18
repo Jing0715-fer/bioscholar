@@ -18,6 +18,10 @@ import ch11s3 from './ch11-s3'
 import ch11s4 from './ch11-s4'
 import ch11s5 from './ch11-s5'
 import ch12s1 from './ch12-s1'
+import ch12s2 from './ch12-s2'
+import ch12s3 from './ch12-s3'
+import ch12s4 from './ch12-s4'
+import ch12s5 from './ch12-s5'
 
 export default {
   'mb-ch7-s2-camp-cap-and-gate': ch7s2,
@@ -38,4 +42,8 @@ export default {
   'mb-ch11-s4-transgenic-ips-gt': ch11s4,
   'mb-ch11-s5-synbio': ch11s5,
   'mb-ch12-s1-oncogene-discovery': ch12s1,
+  'mb-ch12-s2-oncogene-activation-modes': ch12s2,
+  'mb-ch12-s3-tumor-suppressors-rb-apc-brca': ch12s3,
+  'mb-ch12-s4-p53-network-multistep': ch12s4,
+  'mb-ch12-s5-telomere-tme-frontier': ch12s5,
 } as Record<string, string>
