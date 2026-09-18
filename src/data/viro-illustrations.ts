@@ -166,6 +166,12 @@ export const viroIllustrations: Record<string, Illustration[]> = {
       credit: commonsCredit('CDC/Fred Murphy', 'Public domain'),
     },
     {
+      src: '/images/bio/web/viral-encephalitis-histology.jpg',
+      caption:
+        '病毒性脑炎脑实质的组织病理切片（H&E 染色）：小血管周围大量淋巴细胞呈袖套状浸润——「血管套」是病毒侵入中枢神经系统后炎症应答的共同病理签名，狂犬病等嗜神经病毒感染均可见。狂犬病最具确诊意义的 Negri 小体为神经元胞质内嗜酸性包涵体，检出率有限、阴性不能排除诊断——病理、病毒学与暴露史须互为佐证。',
+      credit: webCredit('美国武装部队病理联合中心（JPC）教学切片'),
+    },
+    {
       src: '/images/bio/commons/measles-virus-em.jpg',
       caption:
         '麻疹病毒的透射电镜照片（CDC Cynthia Goldsmith 制作）：副粘病毒科毒粒呈多形性的球形至丝状颗粒（直径约 100–250 nm），表面 H 与 F 糖蛋白刺突使感染细胞相互融合形成合胞体——「多核巨细胞」正是麻疹病理的特征。麻疹是人类传染性最强的病毒之一（R0 约 12–18，经空气传播），病毒还可罕见地于中枢神经系统持续多年引发亚急性硬化性全脑炎（SSPE）；感染还会造成数周至数年的「免疫失忆」，削弱对既往病原的记忆应答。',
