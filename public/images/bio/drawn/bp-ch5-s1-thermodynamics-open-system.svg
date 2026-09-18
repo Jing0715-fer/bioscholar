@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">热力学定律在生物系统中的应用：开放系统与熵账本</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">ΔU = Q − W（静息人体 ~100 W 全部变为热）；等温等压判据 ΔG &lt; 0 自发 / = 0 平衡 / &gt; 0 需输入功；熵产生率 ≈ 0.3 W/K，一生 ~10⁹ J/K 由食物自由能支付</text>
+  <rect x="30" y="132" width="1340" height="292" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、生命是远离平衡的开放系统：进口负熵，出口更大的熵</text>
+  <rect x="470" y="190" width="460" height="200" rx="14" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="2.2"/>
+  <text x="700" y="232" font-size="15" fill="#059669" text-anchor="middle" font-weight="700">生物体（低熵结构）</text>
+  <text x="700" y="258" font-size="11" fill="#475569" text-anchor="middle">远离平衡的开放系统</text>
+  <circle cx="610" cy="300" r="20" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="610" cy="300" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <circle cx="780" cy="298" r="26" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="780" cy="298" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <ellipse cx="695" cy="322" rx="40" ry="16" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <line x1="160" y1="250" x2="452" y2="250" stroke="#0f766e" stroke-width="3" marker-end="url(#arr-dna)"/>
+  <text x="300" y="232" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">输入：自由能（光、食物）</text>
+  <text x="110" y="288" font-size="10.5" fill="#475569">低熵「燃料」：光子、葡萄糖、还原当量</text>
+  <line x1="948" y1="250" x2="1250" y2="250" stroke="#dc2626" stroke-width="3" marker-end="url(#arr-bad)"/>
+  <text x="1090" y="232" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">输出：熵（热 + 低能产物）</text>
+  <text x="980" y="288" font-size="10.5" fill="#475569">向环境排出更大的熵：CO₂、H₂O、废热</text>
+  <text x="110" y="408" font-size="10.5" fill="#64748b">薛定谔「生命以负熵为生」的准确含义：生物体从环境「进口」负熵，向环境「出口」更大的熵——不违反任何热力学定律。</text>
+  <rect x="30" y="452" width="1340" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">二、第一定律：能量收支闭合；第二定律：ΔG 判据</text>
+  <rect x="50" y="486" width="630" height="130" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.2"/>
+  <text x="70" y="512" font-size="13" fill="#78350f" font-weight="700">第一定律（能量守恒）：ΔU = Q − W</text>
+  <text x="70" y="538" font-size="10.5" fill="#475569">化学键能（ATP）按能量守恒转化为机械功（马达、肌肉）、渗透功与热。量热实验（发芽种子、完整细胞的代谢产热）</text>
+  <text x="70" y="552" font-size="10.5" fill="#475569">证实能量收支闭合。</text>
+  <rect x="170.39215000000002" y="580.65" width="259.21569999999997" height="18.7" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="300" y="593.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">人静息功率 ≈ 100 W，全部最终变为热流散环境</text>
+  <rect x="700" y="486" width="640" height="130" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="720" y="512" font-size="13" fill="#075985" font-weight="700">第二定律（等温等压判据）：吉布斯自由能</text>
+  <rect x="720" y="532" width="190" height="30" rx="6" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="782" y="552" font-size="12.5" fill="#059669" text-anchor="middle" font-weight="700">ΔG &lt; 0</text>
+  <text x="836" y="552" font-size="9.5" fill="#475569">过程自发</text>
+  <rect x="926" y="532" width="190" height="30" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+  <text x="988" y="552" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">ΔG = 0</text>
+  <text x="1042" y="552" font-size="9.5" fill="#475569">系统处于平衡</text>
+  <rect x="1132" y="532" width="190" height="30" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1194" y="552" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">ΔG &gt; 0</text>
+  <text x="1248" y="552" font-size="9.5" fill="#475569">需外部输入功</text>
+  <text x="720" y="588" font-size="10.5" fill="#475569">ΔG 是态函数之差，只看始末态而不管路径，且随反应商 Q 改变——给细胞留出「用浓度梯度驱动吸能反应」的操作空间。</text>
+  <rect x="30" y="742" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="764.84" font-size="19" fill="#475569" font-weight="700">三、远离平衡的稳态与生命的「熵账本」</text>
+  <text x="60" y="792" font-size="10.5" fill="#475569">活细胞稳态下净通量不为零：物质不断流入流出、反应远离平衡。若切断能量供给，细胞滑向平衡——即死亡；</text>
+  <text x="60" y="807" font-size="10.5" fill="#475569">生命稳定存在，正因为它被代谢通量持续「顶」在远离平衡的稳态上。</text>
+  <rect x="134.0075" y="842.225" width="171.985" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="220" y="856.14" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">代谢通量（持续输入自由能）</text>
+  <line x1="220" y1="862" x2="220" y2="874" stroke="#059669" stroke-width="2.6" marker-end="url(#arr-ok)"/>
+  <ellipse cx="220" cy="906" rx="110" ry="30" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="2"/>
+  <text x="220" y="910" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">远离平衡的稳态</text>
+  <line x1="60" y1="906" x2="110" y2="906" stroke="#64748b" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="85" y="936" font-size="10" fill="#64748b" text-anchor="middle">平衡 = 死亡</text>
+  <rect x="680" y="778" width="660" height="186" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="700" y="806" font-size="13.5" fill="#1e293b" font-weight="700">量纲估算：给「生命」算总账</text>
+  <circle cx="708" cy="832" r="4" fill="#0369a1"/>
+  <text x="720" y="836" font-size="11.5" fill="#1e293b" font-weight="600">人静息代谢率 ≈ 100 W，体温 310 K 向 293 K 环境散热</text>
+  <circle cx="708" cy="872" r="4" fill="#0369a1"/>
+  <text x="720" y="876" font-size="11.5" fill="#1e293b" font-weight="600">熵产生率 ≈ 100 / 310 ≈ 0.3 W/K</text>
+  <circle cx="708" cy="912" r="4" fill="#0369a1"/>
+  <text x="720" y="916" font-size="11.5" fill="#1e293b" font-weight="600">一个成年人一生约输出 10⁹ J/K 的熵</text>
+  <text x="720" y="934" font-size="10" fill="#64748b">全部由食物的自由能「支付」</text>
+  <text x="700" y="946" font-size="10.5" fill="#64748b">生命是大自然中最出色的能量经理，但从不做无本生意——生理学（代谢率）与物理学（熵流）记在同一张账本上。</text>
+</svg>

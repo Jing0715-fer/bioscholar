@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞的力学感受与力学传导：Piezo、黏着斑与 YAP/TAZ</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三条时程通路：牵张激活通道（μs–ms，Piezo 2021 诺奖、力来自脂双层）、整联蛋白–talin 黏着斑（分钟）、YAP/TAZ 刚度传感器（小时级）指挥干细胞命运</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、力学传导（mechanotransduction）按速度分三条通路</text>
+  <rect x="92.572" y="171.8" width="74.85600000000001" height="20.4" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="130" y="186.32" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">快：μs–ms</text>
+  <text x="50" y="226" font-size="14.5" fill="#1e293b" font-weight="700">牵张激活离子通道（SAC）</text>
+  <text x="50" y="252" font-size="10.5" fill="#475569">膜张力直接开门、Ca²⁺ 内流：Piezo1/Piezo2 介导血管发育、触觉、</text>
+  <text x="50" y="266.5" font-size="10.5" fill="#475569">本体感觉与血压感受；细菌 MscL/MscS 为演化先例（渗透冲击「应急阀」防胀破）。</text>
+  <rect x="522.1" y="171.8" width="79.80000000000001" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="562" y="186.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">中速：分钟</text>
+  <text x="482" y="226" font-size="14.5" fill="#1e293b" font-weight="700">整联蛋白与黏着斑</text>
+  <text x="482" y="252" font-size="10.5" fill="#475569">跨膜异源二聚体：胞外结合纤连蛋白、胶原，胞内经 talin、</text>
+  <text x="482" y="266.5" font-size="10.5" fill="#475569">vinculin 连接肌动蛋白应力纤维；牵拉使「分子扳机」展开、</text>
+  <text x="482" y="281" font-size="10.5" fill="#475569">暴露隐蔽位点并活化 FAK；细胞以牵引–反牵引循环主动试探基质刚度</text>
+  <text x="482" y="295.5" font-size="10.5" fill="#475569">（响应近似对数线性）。</text>
+  <rect x="935.56" y="171.8" width="116.88" height="20.4" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="994" y="186.32" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">慢而全局：小时级</text>
+  <text x="914" y="226" font-size="14.5" fill="#1e293b" font-weight="700">YAP/TAZ 通路</text>
+  <text x="914" y="252" font-size="10.5" fill="#475569">转录共激活子充当「细胞刚度传感器」：</text>
+  <text x="914" y="266.5" font-size="10.5" fill="#475569">软基质或圆缩细胞中 YAP 被滞留胞质并磷酸化降解；</text>
+  <text x="914" y="281" font-size="10.5" fill="#475569">硬基质或充分铺展时经 LINC 核–骨架偶联入核，</text>
+  <text x="914" y="295.5" font-size="10.5" fill="#475569">激活增殖与分化基因——指挥干细胞命运（成骨 vs 成脂）。</text>
+  <g><circle cx="66" cy="380" r="5.5" fill="#be185d" fill-opacity="0.85"/><line x1="66" y1="384" x2="66" y2="388" stroke="#be185d" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="66" cy="392" r="5.5" fill="#be185d" fill-opacity="0.85"/><circle cx="90" cy="380" r="5.5" fill="#be185d" fill-opacity="0.85"/><line x1="90" y1="384" x2="90" y2="388" stroke="#be185d" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="90" cy="392" r="5.5" fill="#be185d" fill-opacity="0.85"/><circle cx="114" cy="380" r="5.5" fill="#be185d" fill-opacity="0.85"/><line x1="114" y1="384" x2="114" y2="388" stroke="#be185d" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="114" cy="392" r="5.5" fill="#be185d" fill-opacity="0.85"/><circle cx="138" cy="380" r="5.5" fill="#be185d" fill-opacity="0.85"/><line x1="138" y1="384" x2="138" y2="388" stroke="#be185d" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="138" cy="392" r="5.5" fill="#be185d" fill-opacity="0.85"/><circle cx="162" cy="380" r="5.5" fill="#be185d" fill-opacity="0.85"/><line x1="162" y1="384" x2="162" y2="388" stroke="#be185d" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="162" cy="392" r="5.5" fill="#be185d" fill-opacity="0.85"/></g>
+  <rect x="104" y="376" width="16" height="22" fill="#ffffff" stroke="#be185d" stroke-width="2"/>
+  <line x1="112" y1="366" x2="112" y2="394" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="142" cy="388" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="142" y="391.06" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">Ca²⁺</text>
+  <line x1="496" y1="368" x2="620" y2="368" stroke="#6d28d9" stroke-width="3.5"/>
+  <line x1="496" y1="406" x2="620" y2="406" stroke="#0369a1" stroke-width="3"/>
+  <rect x="544" y="368" width="12" height="40" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="560" y="368" width="12" height="40" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="558" y="424" font-size="9" fill="#075985" text-anchor="middle">整联蛋白 α/β</text>
+  <circle cx="1000" cy="388" r="24" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1000" cy="388" r="9" fill="#6d28d9" fill-opacity="0.35" stroke="#6d28d9" stroke-width="1.2"/>
+  <circle cx="1030" cy="400" r="4" fill="#dc2626"/>
+  <line x1="1030" y1="394" x2="1008" y2="386" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="1036" y="378" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">YAP</text>
+  <text x="1096" y="390" font-size="9.5" fill="#64748b" text-anchor="middle">硬基质 → 入核</text>
+  <rect x="30" y="458" width="1340" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="480.84" font-size="19" fill="#475569" font-weight="700">二、Piezo 通道：力来自脂双层（force-from-lipid，2021 年诺贝尔生理学或医学奖）</text>
+  <polygon points="230,611 223,695 257,695 250,611" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <polygon points="231.14359353944897,578.3397459621556 161.89745962155612,530.2775681356645 144.89745962155612,559.7224318643355 221.14359353944897,595.6602540378444" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <polygon points="258.856406460551,595.6602540378444 335.10254037844385,559.7224318643355 318.10254037844385,530.2775681356645 248.856406460551,578.3397459621556" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="240" cy="595" r="13" fill="#ffffff" stroke="#075985" stroke-width="2.5"/>
+  <text x="240" y="599" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">孔</text>
+  <text x="240" y="700" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">顶面观：三叶螺旋桨状三聚体</text>
+  <text x="240" y="718" font-size="9.5" fill="#64748b" text-anchor="middle">每亚基 30 余个跨膜螺旋（2010 年发现）</text>
+  <g><circle cx="470" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="470" y1="604" x2="470" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="470" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="494" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="494" y1="604" x2="494" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="494" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="518" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="518" y1="604" x2="518" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="518" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="542" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="542" y1="604" x2="542" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="542" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="566" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="566" y1="604" x2="566" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="566" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="590" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="590" y1="604" x2="590" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="590" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="614" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="614" y1="604" x2="614" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="614" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="638" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="638" y1="604" x2="638" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="638" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="662" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="662" y1="604" x2="662" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="662" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="686" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="686" y1="604" x2="686" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="686" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="710" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="710" y1="604" x2="710" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="710" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="734" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="734" y1="604" x2="734" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="734" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="758" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="758" y1="604" x2="758" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="758" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="782" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="782" y1="604" x2="782" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="782" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="806" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="806" y1="604" x2="806" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="806" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="830" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="830" y1="604" x2="830" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="830" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="854" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="854" y1="604" x2="854" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="854" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="878" cy="600" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="878" y1="604" x2="878" y2="610" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="878" cy="614" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <path d="M 620,600 Q 690,558 760,600" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <path d="M 620,614 Q 690,572 760,614" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <line x1="620" y1="607" x2="760" y2="607" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="600" y1="607" x2="520" y2="607" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <line x1="780" y1="607" x2="860" y2="607" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="690" y="544" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">膜张力 σ 展平桨叶 → 拉开孔道</text>
+  <line x1="690" y1="622" x2="690" y2="652" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <circle cx="690" cy="672" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="690" y="675.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">Ca²⁺</text>
+  <text x="742" y="676" font-size="9.5" fill="#475569">内流</text>
+  <text x="690" y="700" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">侧面观：弯曲桨叶 =「膜张力计」</text>
+  <text x="690" y="718" font-size="9.5" fill="#64748b" text-anchor="middle">力来自脂双层，无需胞外栓系</text>
+  <rect x="930" y="478" width="420" height="230" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="950" y="504" font-size="12.5" fill="#075985" font-weight="700">Piezo1 / Piezo2（Ardem Patapoutian）</text>
+  <circle cx="958" cy="536" r="4" fill="#0369a1"/>
+  <text x="970" y="540" font-size="11.5" fill="#1e293b" font-weight="700">2021 年诺贝尔生理学或医学奖</text>
+  <text x="970" y="560" font-size="10.5" fill="#475569">发现温度与触觉感受器</text>
+  <circle cx="958" cy="594" r="4" fill="#0369a1"/>
+  <text x="970" y="598" font-size="11.5" fill="#1e293b" font-weight="700">开放引起 Ca²⁺ 内流</text>
+  <text x="970" y="618" font-size="10.5" fill="#475569">介导血管发育、触觉、本体感觉与血压感受</text>
+  <circle cx="958" cy="652" r="4" fill="#0369a1"/>
+  <text x="970" y="656" font-size="11.5" fill="#1e293b" font-weight="700">细菌 MscL / MscS</text>
+  <text x="970" y="676" font-size="10.5" fill="#475569">渗透冲击时作为「应急阀」开放防胀破——演化先例</text>
+  <rect x="30" y="754" width="1340" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="776.84" font-size="19" fill="#475569" font-weight="700">三、黏着斑「分子扳机」与 YAP/TAZ 刚度传感器</text>
+  <line x1="70" y1="812" x2="620" y2="812" stroke="#6d28d9" stroke-width="4"/>
+  <text x="345" y="800" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">肌动蛋白应力纤维</text>
+  <g><circle cx="70" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="70" y1="884" x2="70" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="70" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="94" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="94" y1="884" x2="94" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="94" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="118" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="118" y1="884" x2="118" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="118" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="142" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="142" y1="884" x2="142" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="142" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="166" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="166" y1="884" x2="166" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="166" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="190" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="190" y1="884" x2="190" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="190" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="214" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="214" y1="884" x2="214" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="214" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="238" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="238" y1="884" x2="238" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="238" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="262" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="262" y1="884" x2="262" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="262" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="286" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="286" y1="884" x2="286" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="286" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="310" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="310" y1="884" x2="310" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="310" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="334" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="334" y1="884" x2="334" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="334" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="358" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="358" y1="884" x2="358" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="358" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="382" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="382" y1="884" x2="382" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="382" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="406" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="406" y1="884" x2="406" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="406" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="430" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="430" y1="884" x2="430" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="430" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="454" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="454" y1="884" x2="454" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="454" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="478" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="478" y1="884" x2="478" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="478" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="502" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="502" y1="884" x2="502" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="502" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="526" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="526" y1="884" x2="526" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="526" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="550" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="550" y1="884" x2="550" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="550" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="574" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="574" y1="884" x2="574" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="574" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="598" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="598" y1="884" x2="598" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="598" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="622" cy="880" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="622" y1="884" x2="622" y2="888" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="622" cy="892" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="300" y="868" width="12" height="36" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="316" y="868" width="12" height="36" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="368" y="862" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">整联蛋白</text>
+  <path d="M 306,868 L 318,859 L 332,851 L 318,843 L 332,835 L 318,827 L 332,819 " fill="none" stroke="#be185d" stroke-width="2.4"/>
+  <text x="400" y="838" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">talin 展开 → 暴露隐蔽结合位点（vinculin、FAK 活化）</text>
+  <rect x="70" y="928" width="560" height="26" rx="4" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.4"/>
+  <line x1="90" y1="932" x2="78" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="130" y1="932" x2="118" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="170" y1="932" x2="158" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="210" y1="932" x2="198" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="250" y1="932" x2="238" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="290" y1="932" x2="278" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="330" y1="932" x2="318" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="370" y1="932" x2="358" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="410" y1="932" x2="398" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="450" y1="932" x2="438" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="490" y1="932" x2="478" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="530" y1="932" x2="518" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="570" y1="932" x2="558" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="610" y1="932" x2="598" y2="950" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="272.106" y="932.5" width="155.78800000000004" height="17" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="350" y="944.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">纤连蛋白 / 胶原（细胞外基质）</text>
+  <line x1="200" y1="816" x2="200" y2="922" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="150" y="870" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">牵引–反牵引循环</text>
+  <text x="150" y="888" font-size="9" fill="#64748b" text-anchor="middle">（主动试探基质刚度）</text>
+  <rect x="690" y="778" width="660" height="90" rx="8" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="760" cy="822" r="26" fill="#f8fafc" stroke="#64748b" stroke-width="1.8"/>
+  <circle cx="760" cy="822" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <circle cx="745" cy="808" r="4" fill="#dc2626"/>
+  <circle cx="778" cy="838" r="4" fill="#dc2626"/>
+  <circle cx="738" cy="834" r="4" fill="#dc2626"/>
+  <line x1="738" y1="800" x2="706" y2="798" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <text x="688" y="792" font-size="9.5" fill="#64748b" text-anchor="end">磷酸化 → 降解</text>
+  <text x="810" y="806" font-size="11.5" fill="#dc2626" font-weight="700">软基质 / 圆缩细胞</text>
+  <text x="810" y="826" font-size="10" fill="#475569">YAP 滞留胞质并被磷酸化降解 → 转录沉默</text>
+  <rect x="690" y="882" width="660" height="90" rx="8" fill="#d1fae5" fill-opacity="0.45" stroke="#059669" stroke-width="1.2"/>
+  <ellipse cx="770" cy="926" rx="48" ry="26" fill="#f8fafc" stroke="#64748b" stroke-width="1.8"/>
+  <circle cx="770" cy="926" r="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="765" cy="922" r="4" fill="#dc2626"/>
+  <circle cx="776" cy="930" r="4" fill="#dc2626"/>
+  <line x1="840" y1="906" x2="870" y2="896" stroke="#059669" stroke-width="1.6" marker-end="url(#arr-ok)"/>
+  <text x="890" y="910" font-size="11.5" fill="#059669" font-weight="700">硬基质 / 充分铺展</text>
+  <text x="890" y="930" font-size="10" fill="#475569">应力纤维经 LINC 核–骨架偶联把 YAP 送入核 → 激活增殖与分化基因（成骨 vs 成脂分化）</text>
+</svg>

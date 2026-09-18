@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">合成生物学展望：最小基因组、基因线路与噪声工程</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">JCVI-syn3.0 仅 473 基因的定量基线 · 拨动开关与压缩振荡子（2000）· 表达噪声的 bet-hedging 价值 · 可控性与生物安全边界</text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、JCVI-syn3.0：最小自复制基因组的定量基线</text>
+  <rect x="98" y="229.904" width="64" height="210.096" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="130" y="220.904" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">4377</text>
+  <text x="130" y="460" font-size="12.5" fill="#64748b" text-anchor="middle">大肠杆菌</text>
+  <rect x="198" y="396.704" width="64" height="43.296" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="230" y="387.704" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">902</text>
+  <text x="230" y="460" font-size="12.5" fill="#64748b" text-anchor="middle">JCVI-syn1.0</text>
+  <rect x="298" y="417.296" width="64" height="22.704" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="330" y="408.296" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">473</text>
+  <text x="330" y="460" font-size="12.5" fill="#64748b" text-anchor="middle">JCVI-syn3.0</text>
+  <text x="230" y="470" font-size="12.5" fill="#64748b" text-anchor="middle">基因组基因数（编码序列）</text>
+  <text x="420" y="250" font-size="13.5" fill="#1e293b" font-weight="600">syn3.0 的 473 基因 = 维持独立生命的最简基因集：</text>
+  <text x="420" y="300" font-size="13" fill="#475569">· DNA 复制/转录/翻译全套
+· 代谢与 ATP 合成
+· 膜与转运
+· 149 个功能未知</text>
+  <text x="420" y="324" font-size="13" fill="#475569">（约 1/3）</text>
+  <text x="420" y="430" font-size="12.5" fill="#64748b">TDT（移植-拼装-移植）</text>
+  <text x="420" y="449" font-size="12.5" fill="#64748b">设计-合成-测试循环：</text>
+  <text x="420" y="468" font-size="12.5" fill="#64748b">非必需基因逐轮敲除。</text>
+  <rect x="720" y="132" width="650" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="736" y="154.84" font-size="19" fill="#475569" font-weight="700">二、2000 年双里程碑：拨动开关与振荡子</text>
+  <rect x="806.7354" y="218.95" width="46.5292" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="830" y="234.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">LacI</text>
+  <line x1="880" y1="230" x2="960" y2="260" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <text x="920" y="215" font-size="12" fill="#dc2626" text-anchor="middle">抑制</text>
+  <rect x="985.628125" y="279.375" width="88.74375" height="21.25" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1030" y="294.5" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="600">Ptet → λ cI</text>
+  <line x1="1080" y1="290" x2="1160" y2="260" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <text x="1120" y="245" font-size="12" fill="#dc2626" text-anchor="middle">抑制</text>
+  <rect x="1208.7439" y="218.95" width="42.51220000000001" height="22.099999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1230" y="234.68" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700">λ cI</text>
+  <line x1="1230" y1="205" x2="830" y2="205" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 5" marker-end="url(#arr-mute)"/>
+  <text x="1030" y="190" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">互锁双稳态：两个记忆状态</text>
+  <text x="1030" y="340" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">拨动开关（toggle switch）：双阻遏互锁 → 双稳态记忆</text>
+  <rect x="824.696" y="403.1" width="50.608000000000004" height="23.8" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="850" y="420.04" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">A ⊣ B</text>
+  <rect x="974.696" y="403.1" width="50.608000000000004" height="23.8" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1000" y="420.04" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="700">B ⊣ C</text>
+  <rect x="1124.696" y="403.1" width="50.608000000000004" height="23.8" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1150" y="420.04" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">C ⊣ A</text>
+  <text x="1030" y="460" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">压缩振荡子（repressilator）：三阻遏环 → 周期性 GFP 波动</text>
+  <rect x="30" y="550" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="572.84" font-size="19" fill="#475569" font-weight="700">三、表达噪声：设计的挑战与资源</text>
+  <rect x="80" y="660" width="300" height="220" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="230" y="924" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时间</text>
+  <text x="34" y="770" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">表达量</text>
+  <path d="M80,770 C85.0,765.6 100.0,741.8 110,743.6 C120.0,745.4 130.0,779.5 140,781 C150.0,782.5 160.0,754.2 170,752.4 C180.0,750.6 190.0,763.4 200,770 C210.0,776.6 220.0,793.8 230,792 C240.0,790.2 250.0,761.9 260,759 C270.0,756.1 280.0,773.3 290,774.4 C300.0,775.5 310.0,764.1 320,765.6 C330.0,767.1 340.0,782.5 350,783.2 C360.0,783.9 375.0,772.2 380,770" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="80" y1="770" x2="380" y2="770" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="230" y="610" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">内在噪声（随机出生-死亡涨落）</text>
+  <text x="420" y="640" font-size="13" fill="#475569">挑战：</text>
+  <text x="420" y="660" font-size="13" fill="#475569">低拷贝分子使噪声显著 → 稳健线路需负反馈、</text>
+  <text x="420" y="680" font-size="13" fill="#475569">冗余与滤波。</text>
+  <text x="420" y="730" font-size="13" fill="#134e4a" font-weight="600">资源（bet-hedging）：</text>
+  <text x="420" y="750" font-size="13" fill="#134e4a" font-weight="600">基因切换噪声产生表型多样性——群体以「次优个体」对冲环境剧变</text>
+  <text x="420" y="770" font-size="13" fill="#134e4a" font-weight="600">（持留菌抗药、营养应激预适应）。</text>
+  <text x="420" y="860" font-size="12.5" fill="#d97706" font-weight="600">噪声既是bug也是feature——合成生物学的「热力学-信息」视角。</text>
+  <rect x="720" y="550" width="650" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="736" y="572.84" font-size="19" fill="#475569" font-weight="700">四、从解释生命到重编生命：可控性与安全边界</text>
+  <rect x="802.078" y="627.25" width="55.844" height="25.5" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="645.4" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">感 应</text>
+  <text x="790" y="680" font-size="12.5" fill="#475569">生物/化学传感器输入</text>
+  <rect x="1102.078" y="627.25" width="55.844" height="25.5" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1130" y="645.4" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">线 路</text>
+  <text x="1090" y="680" font-size="12.5" fill="#475569">逻辑门·反馈·放大</text>
+  <rect x="802.078" y="717.25" width="55.844" height="25.5" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="735.4" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">底 盘</text>
+  <text x="790" y="770" font-size="12.5" fill="#475569">最小基因组宿主</text>
+  <rect x="1102.078" y="717.25" width="55.844" height="25.5" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1130" y="735.4" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">应 用</text>
+  <text x="1090" y="770" font-size="12.5" fill="#475569">生物制造·治疗·环境</text>
+  <text x="760" y="880" font-size="13" fill="#134e4a" font-weight="600">生物物理的边界条件：可预测性（量化建模）、可控性（诱导开关/营养缺陷型自杀开关）</text>
+  <text x="760" y="900" font-size="13" fill="#134e4a" font-weight="600">与生物安全（合成基因组的水印、伦理审查）——重编生命的权限由物理定律与治理框架共同设定。</text>
+</svg>

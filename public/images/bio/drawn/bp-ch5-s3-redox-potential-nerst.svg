@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">氧化还原电位与电子传递：E°′ 阶梯与 Nernst 方程</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">E°′：NAD⁺/NADH −0.320 → Q +0.045 → cyt c +0.254 → ½O₂/H₂O +0.816 V；ΔE°′ = 1.136 V、n = 2 → ΔG°′ = −2×96485×1.136 ≈ −219 kJ/mol（ATP 价格 ≈ 50 kJ/mol）；37 °C 时 RT/F ≈ 26.7 mV</text>
+  <rect x="30" y="132" width="1340" height="322" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、E°′「能级阶梯」：电子沿呼吸链从 NADH 逐级下落至 O₂</text>
+  <text x="140" y="176" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">E°′ (V)</text>
+  <line x1="175" y1="186" x2="175" y2="408" stroke="#475569" stroke-width="1.8"/>
+  <line x1="169" y1="186" x2="175" y2="186" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="190" font-size="10.5" fill="#64748b" text-anchor="end">-0.4</text>
+  <line x1="169" y1="220.15384615384616" x2="175" y2="220.15384615384616" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="224.15384615384616" font-size="10.5" fill="#64748b" text-anchor="end">-0.2</text>
+  <line x1="169" y1="254.30769230769232" x2="175" y2="254.30769230769232" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="258.3076923076923" font-size="10.5" fill="#64748b" text-anchor="end">0.0</text>
+  <line x1="169" y1="288.46153846153845" x2="175" y2="288.46153846153845" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="292.46153846153845" font-size="10.5" fill="#64748b" text-anchor="end">0.2</text>
+  <line x1="169" y1="322.61538461538464" x2="175" y2="322.61538461538464" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="326.61538461538464" font-size="10.5" fill="#64748b" text-anchor="end">0.4</text>
+  <line x1="169" y1="356.7692307692307" x2="175" y2="356.7692307692307" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="360.7692307692307" font-size="10.5" fill="#64748b" text-anchor="end">0.6</text>
+  <line x1="169" y1="390.9230769230769" x2="175" y2="390.9230769230769" stroke="#475569" stroke-width="1.8"/>
+  <text x="163" y="394.9230769230769" font-size="10.5" fill="#64748b" text-anchor="end">0.8</text>
+  <rect x="205" y="191.66153846153847" width="200" height="16" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="305" y="203.16153846153847" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">NAD⁺/NADH   −0.320 V</text>
+  <rect x="205" y="208.90923076923076" width="200" height="16" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="305" y="220.40923076923076" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">FAD/FADH₂（游离） −0.219 V</text>
+  <rect x="455" y="253.9923076923077" width="200" height="16" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="555" y="265.4923076923077" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">Q / QH₂   +0.045 V</text>
+  <rect x="705" y="289.6830769230769" width="200" height="16" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="805" y="301.1830769230769" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">cyt c（Fe³⁺/Fe²⁺）   +0.254 V</text>
+  <rect x="955" y="385.6553846153846" width="200" height="16" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1055" y="397.1553846153846" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">½O₂ / H₂O   +0.816 V</text>
+  <line x1="407" y1="203.66153846153847" x2="453" y2="255.9923076923077" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <text x="432" y="218" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">2e⁻</text>
+  <line x1="407" y1="220.90923076923076" x2="453" y2="258.9923076923077" stroke="#b45309" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-rna)"/>
+  <rect x="402.709" y="279.5" width="54.58200000000001" height="17" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="430" y="291.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">复合物 I</text>
+  <line x1="655" y1="265.9923076923077" x2="703" y2="291.6830769230769" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <rect x="646.323" y="231.5" width="67.35400000000001" height="17" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="680" y="243.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">复合物 III</text>
+  <line x1="905" y1="301.6830769230769" x2="953" y2="387.6553846153846" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <rect x="904.516" y="309.5" width="60.96800000000001" height="17" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="935" y="321.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">复合物 IV</text>
+  <text x="912" y="352" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">2e⁻</text>
+  <line x1="1185" y1="199.66153846153847" x2="1185" y2="393.6553846153846" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <text x="1198" y="282" font-size="13.5" fill="#dc2626" font-weight="700">ΔE°′ = 1.136 V</text>
+  <text x="1198" y="306" font-size="10.5" fill="#475569">（n = 2 个电子）</text>
+  <text x="690" y="436" font-size="10.5" fill="#64748b" text-anchor="middle">电子自发地从电位更负的还原剂（供体）流向电位更正的氧化剂（受体）——把各电对按 E°′ 排成一列，流动方向与能量收益一目了然</text>
+  <rect x="30" y="470" width="1340" height="232" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="492.84" font-size="19" fill="#475569" font-weight="700">二、Nernst 方程：实际电位随浓度比移动；ΔG°′ = −nF·ΔE°′</text>
+  <rect x="50" y="494" width="450" height="190" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="275" y="522" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">E = E°′ − (RT/nF)·ln([还原型]/[氧化型])</text>
+  <line x1="70" y1="540" x2="480" y2="540" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="82" cy="562" r="4" fill="#0369a1"/>
+  <text x="94" y="566" font-size="11" fill="#475569" font-weight="600">F = 96 485 C/mol；n 为转移电子数</text>
+  <circle cx="82" cy="588" r="4" fill="#0369a1"/>
+  <text x="94" y="592" font-size="11" fill="#475569" font-weight="600">标准态：pH 7、25 °C（相对标准氢电极）</text>
+  <circle cx="82" cy="614" r="4" fill="#0369a1"/>
+  <text x="94" y="618" font-size="11" fill="#475569" font-weight="600">ΔG°′ = −nF·ΔE°′，ΔE°′ = E°′(受体) − E°′(供体)</text>
+  <circle cx="82" cy="640" r="4" fill="#0369a1"/>
+  <text x="94" y="644" font-size="11" fill="#475569" font-weight="600">ΔE°′ &gt; 0 ⇔ ΔG°′ &lt; 0：电子自发流动</text>
+  <rect x="520" y="494" width="400" height="190" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="720" y="522" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">NADH → O₂ 的能量结算</text>
+  <text x="720" y="554" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">ΔE°′ = 0.816 − (−0.320) = 1.136 V</text>
+  <text x="720" y="580" font-size="12" fill="#475569" text-anchor="middle">ΔG°′ = −2 × 96 485 × 1.136 / 1000</text>
+  <text x="720" y="610" font-size="18" fill="#831843" text-anchor="middle" font-weight="700">≈ −219 kJ/mol</text>
+  <text x="720" y="638" font-size="10.5" fill="#475569" text-anchor="middle">细胞内 ATP「价格」≈ 50 kJ/mol</text>
+  <text x="720" y="660" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">→ 足以合成数个 ATP</text>
+  <rect x="940" y="494" width="400" height="190" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="960" y="522" font-size="13.5" fill="#1e293b" font-weight="700">换算速查与电位移动</text>
+  <text x="960" y="550" font-size="11.5" fill="#475569" font-weight="600">37 °C 时 RT/F ≈ 26.7 mV</text>
+  <text x="960" y="574" font-size="11.5" fill="#475569" font-weight="600">每 0.1 V 电位差 ≈ 每电子 9.6 kJ/mol</text>
+  <line x1="960" y1="634" x2="1320" y2="634" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="964" y="620" font-size="9.5" fill="#64748b">更负</text>
+  <text x="1316" y="620" font-size="9.5" fill="#64748b" text-anchor="end">更正</text>
+  <circle cx="1180" cy="634" r="5" fill="#475569"/>
+  <circle cx="1060" cy="634" r="5" fill="#be185d"/>
+  <line x1="1174" y1="616" x2="1068" y2="616" stroke="#be185d" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <text x="1120" y="600" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">[还原型]/[氧化型] ↑ ⇒ E 变负</text>
+  <text x="1180" y="658" font-size="9.5" fill="#64748b" text-anchor="middle">E°′</text>
+  <text x="1060" y="658" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">E</text>
+  <rect x="30" y="718" width="1340" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="740.84" font-size="19" fill="#475569" font-weight="700">三、电位轴 = 生物能量学的「海拔图」：呼吸下落，光合并上坡</text>
+  <line x1="60" y1="796" x2="1340" y2="796" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="8 6"/>
+  <line x1="60" y1="926" x2="1340" y2="926" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="8 6"/>
+  <text x="1340" y="788" font-size="10" fill="#475569" text-anchor="end" font-weight="700">高处：负电位 · 电子能量高</text>
+  <text x="60" y="950" font-size="10" fill="#475569" font-weight="700">低处：正电位 · 电子能量低</text>
+  <rect x="66.7" y="911.5" width="36.6" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="85" y="923.6" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">食物</text>
+  <line x1="115" y1="912" x2="196" y2="812" stroke="#0f766e" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arr-dna)"/>
+  <text x="140" y="862" font-size="9.5" fill="#134e4a" font-weight="700">脱氢</text>
+  <polyline points="210,796 272,840 334,840 396,884 458,884 520,926" fill="none" stroke="#be185d" stroke-width="3"/>
+  <circle cx="210" cy="796" r="9" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+  <text x="210" y="776" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">NADH</text>
+  <circle cx="520" cy="926" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="520" y="950" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">O₂</text>
+  <text x="370" y="812" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">呼吸：沿台阶逐级下落（总落差 1.136 V）</text>
+  <rect x="505.6725" y="857.5" width="158.655" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="585" y="869.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">ATP 合酶：势能 → ATP 的银行</text>
+  <line x1="452" y1="882" x2="500" y2="870" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-mute)"/>
+  <polyline points="760,926 830,900 900,900 970,872 1040,872 1110,844 1180,844 1250,796" fill="none" stroke="#059669" stroke-width="3"/>
+  <circle cx="760" cy="926" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <text x="760" y="950" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">H₂O</text>
+  <circle cx="1250" cy="796" r="9" fill="#d1fae5" stroke="#059669" stroke-width="2.2"/>
+  <text x="1250" y="776" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">NADP⁺</text>
+  <circle cx="990" cy="778" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <line x1="1005" y1="778" x2="1011" y2="778" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="1000.6066017177982" y1="788.6066017177982" x2="1004.8492424049175" y2="792.8492424049175" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="990" y1="793" x2="990" y2="799" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="979.3933982822018" y1="788.6066017177982" x2="975.1507575950825" y2="792.8492424049175" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="975" y1="778" x2="969" y2="778" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="979.3933982822018" y1="767.3933982822018" x2="975.1507575950825" y2="763.1507575950825" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="990" y1="763" x2="990" y2="757" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="1000.6066017177982" y1="767.3933982822018" x2="1004.8492424049175" y2="763.1507575950825" stroke="#d97706" stroke-width="1.8"/>
+  <line x1="990" y1="794" x2="990" y2="860" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="1012" y="830" font-size="10" fill="#d97706" font-weight="700">光子 hv</text>
+  <text x="1000" y="904" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">光合：光把电子从 H₂O「泵」上 NADP⁺ 高能级</text>
+  <text x="700" y="970" font-size="10.5" fill="#64748b" text-anchor="middle">电位轴就是生物能量学的「海拔图」——食物经脱氢把电子抬上高处，呼吸下落、光合并上坡；ATP 合酶把势能兑换为化学能</text>
+</svg>

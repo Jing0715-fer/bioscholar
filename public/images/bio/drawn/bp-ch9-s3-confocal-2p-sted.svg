@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">共聚焦、双光子与超分辨显微镜：三联光路与选型</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">共聚焦＝针孔排除焦外（轴向 0.5–0.8 μm）；双光子＝激发 ∝ 强度²、仅焦点发光（穿透 ~1 mm，活体脑皮层主力）；STED＝环形损耗光熄灭外围（20–50 nm）；PALM/STORM ~20 nm、SIM ~100 nm——2014 年诺贝尔化学奖</text>
+  <rect x="30" y="132" width="1340" height="450" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三联光路：针孔切片 · 平方定位 · 环形损耗</text>
+  <rect x="50" y="175" width="420" height="350" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="66" y="203" font-size="12.5" fill="#1e293b" font-weight="700">① 激光扫描共聚焦：针孔排除焦外</text>
+  <rect x="88.215" y="231.925" width="33.57" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="105" y="243.42" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">激光</text>
+  <line x1="142" y1="244" x2="192" y2="264" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <line x1="184" y1="250" x2="216" y2="278" stroke="#0369a1" stroke-width="3.5"/>
+  <ellipse cx="200" cy="296" rx="26" ry="8" fill="none" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="200" cy="309" rx="26" ry="8" fill="none" stroke="#475569" stroke-width="2"/>
+  <line x1="200" y1="268" x2="200" y2="328" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="120" y1="322" x2="280" y2="322" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="120" y1="342" x2="280" y2="342" stroke="#475569" stroke-width="2"/>
+  <line x1="120" y1="362" x2="280" y2="362" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="200" cy="342" r="7" fill="#059669"/>
+  <circle cx="150" cy="322" r="5" fill="#94a3b8"/>
+  <circle cx="250" cy="362" r="5" fill="#94a3b8"/>
+  <text x="240" y="306" font-size="9" fill="#64748b">物镜</text>
+  <text x="290" y="346" font-size="9.5" fill="#475569" font-weight="700">焦平面</text>
+  <line x1="200" y1="330" x2="200" y2="288" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <line x1="192" y1="264" x2="136" y2="264" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <rect x="96" y="256" width="9" height="16" fill="#1e293b"/>
+  <rect x="124" y="256" width="9" height="16" fill="#1e293b"/>
+  <circle cx="112" cy="226" r="13" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="112" y="230" font-size="7.5" text-anchor="middle" font-weight="700">探测</text>
+  <text x="114" y="286" font-size="9" fill="#64748b" text-anchor="middle">针孔</text>
+  <line x1="150" y1="318" x2="126" y2="276" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="138" y1="296" x2="130" y2="288" stroke="#dc2626" stroke-width="2.6"/>
+  <line x1="130" y1="296" x2="138" y2="288" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="140" y="302" font-size="9" font-weight="700">焦外光被排除</text>
+  <text x="66" y="428" font-size="10" fill="#475569">探测端针孔只放行焦平面上的发射光——光学切片；逐点扫描重构三维图像。</text>
+  <rect x="172.702" y="486.5" width="134.59600000000003" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="240" y="498.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">轴向分辨率约 0.5–0.8 μm</text>
+  <rect x="490" y="175" width="420" height="350" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="506" y="203" font-size="12.5" fill="#1e293b" font-weight="700">② 双光子：平方依赖 → 天然三维定位</text>
+  <text x="506" y="232" font-size="9.5" font-weight="700">近红外飞秒脉冲（激发约 700–1000 nm）</text>
+  <rect x="739.308175" y="231.075" width="101.38365000000002" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="790" y="243.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">激发概率 ∝ 强度²</text>
+  <ellipse cx="610" cy="262" rx="28" ry="8" fill="none" stroke="#475569" stroke-width="2"/>
+  <line x1="586" y1="258" x2="610" y2="400" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="634" y1="258" x2="610" y2="400" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="520" y1="300" x2="700" y2="300" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="520" y1="360" x2="700" y2="360" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="520" y1="400" x2="700" y2="400" stroke="#475569" stroke-width="2"/>
+  <circle cx="610" cy="400" r="16" fill="#d1fae5" fill-opacity="0.5"/>
+  <circle cx="610" cy="400" r="8" fill="#059669"/>
+  <text x="506" y="318" font-size="9" fill="#64748b">焦点外：无荧光</text>
+  <text x="506" y="378" font-size="9" font-weight="700">焦点体素：唯一发光</text>
+  <text x="506" y="428" font-size="10" fill="#475569">两个长波光子同时吸收（等效一个半波长光子）；因激发概率 ∝ 强度²，</text>
+  <text x="506" y="441.5" font-size="10" fill="#475569">荧光只产生于焦点体素内——天然三维定位；红外散射少、光损伤集中于焦点。</text>
+  <rect x="635.577" y="486.5" width="108.84600000000002" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="690" y="498.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">穿透深度可达 ~1 mm</text>
+  <rect x="930" y="175" width="420" height="350" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="946" y="203" font-size="12.5" fill="#1e293b" font-weight="700">③ STED：环形损耗光「强行熄灭」外围</text>
+  <rect x="1088.994925" y="231.925" width="102.01015" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1140" y="243.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">损耗光 MW/cm² 量级</text>
+  <circle cx="1030" cy="310" r="30" fill="#059669" fill-opacity="0.28"/>
+  <circle cx="1030" cy="310" r="20" fill="#059669" fill-opacity="0.32"/>
+  <circle cx="1030" cy="310" r="10" fill="#059669" fill-opacity="0.5"/>
+  <text x="1030" y="362" font-size="9.5" text-anchor="middle" font-weight="700">激发斑（衍射极限）</text>
+  <circle cx="1170" cy="310" r="34" fill="none" stroke="#dc2626" stroke-width="9"/>
+  <text x="1170" y="362" font-size="9.5" text-anchor="middle" font-weight="700">环形损耗光</text>
+  <circle cx="1290" cy="310" r="10" fill="#059669" fill-opacity="0.5"/>
+  <circle cx="1290" cy="310" r="6" fill="#059669" fill-opacity="0.6"/>
+  <text x="1290" y="362" font-size="9.5" text-anchor="middle" font-weight="700">发光核</text>
+  <line x1="1068" y1="310" x2="1124" y2="310" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1216" y1="310" x2="1262" y2="310" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="1096" y="292" font-size="9" fill="#64748b" text-anchor="middle">叠加</text>
+  <text x="1239" y="292" font-size="9" fill="#64748b" text-anchor="middle">熄灭外围</text>
+  <text x="946" y="428" font-size="10" fill="#475569">环形损耗激光把焦斑外围荧光「强行熄灭」，只剩远小于衍射斑的发光核——线性扫描、</text>
+  <text x="946" y="441.5" font-size="10" fill="#475569">快、可活细胞；代价：光漂白与光毒性明显。</text>
+  <rect x="1091.448" y="486.5" width="97.10400000000003" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1140" y="498.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率 20–50 nm</text>
+  <rect x="30" y="612" width="1340" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="634.84" font-size="19" fill="#475569" font-weight="700">二、超分辨三杰（2014 年诺贝尔化学奖）与选型的物理逻辑</text>
+  <rect x="50" y="660" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="687.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">技术</text>
+  <rect x="160" y="660" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="687.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">物理原理</text>
+  <rect x="410" y="660" width="100" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="687.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率</text>
+  <rect x="510" y="660" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="600" y="687.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="50" y="704" width="110" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="740.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">STED</text>
+  <rect x="160" y="704" width="250" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="740.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">环形损耗光熄灭焦斑外围，仅剩发光核</text>
+  <rect x="410" y="704" width="100" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="740.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">20–50 nm</text>
+  <rect x="510" y="704" width="180" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="600" y="740.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">线性扫描、快、可活细胞</text>
+  <rect x="50" y="766" width="640" height="62" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="766" width="110" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="802.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">PALM / STORM</text>
+  <rect x="160" y="766" width="250" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="802.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">稀疏点亮 + 逐帧定位，数万帧叠加</text>
+  <rect x="410" y="766" width="100" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="802.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">~20 nm</text>
+  <rect x="510" y="766" width="180" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="600" y="802.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">精度最高、采集慢</text>
+  <rect x="50" y="828" width="110" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="864.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">SIM</text>
+  <rect x="160" y="828" width="250" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="864.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">结构光条纹折叠高频信息后解调</text>
+  <rect x="410" y="828" width="100" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="864.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">~100 nm</text>
+  <rect x="510" y="828" width="180" height="62" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="600" y="864.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">宽场快速、活细胞友好</text>
+  <rect x="720" y="655" width="640" height="235" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="736" y="683" font-size="13" fill="#1e293b" font-weight="700">选型的物理逻辑</text>
+  <circle cx="752" cy="710" r="4" fill="#0369a1"/>
+  <text x="764" y="714" font-size="10.5" fill="#475569" font-weight="600">看分子排列（突触后致密区、核孔）→ STORM / PALM</text>
+  <circle cx="752" cy="738" r="4" fill="#0369a1"/>
+  <text x="764" y="742" font-size="10.5" fill="#475569" font-weight="600">看活细胞动态（囊泡运输、线粒体裂分）→ SIM 或低功率 STED</text>
+  <circle cx="752" cy="766" r="4" fill="#0369a1"/>
+  <text x="764" y="770" font-size="10.5" fill="#475569" font-weight="600">看厚组织深部 → 双光子 + 自适应光学补偿像差</text>
+  <text x="736" y="800" font-size="10" fill="#64748b">PALM / STORM 依赖可控开关的荧光团（PA-FP 或染料对）与长时间采集，时间分辨率秒—分钟；SIM 无需特殊荧光团、</text>
+  <text x="736" y="814" font-size="10" fill="#64748b">最易与活细胞联用，但只能线性提升约 2 倍。</text>
+  <text x="700" y="925" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">超分辨并非「废除」衍射，而是用非线性的分子响应或时间维度的稀疏化绕过同时性的限制——理解这一点，比记住分辨率数字更重要。</text>
+</svg>

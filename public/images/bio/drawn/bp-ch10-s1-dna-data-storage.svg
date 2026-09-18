@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 数据存储：密度、编码与信息视角</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">4 种碱基＝每碱基 2 bit，1 g 单链 DNA 理论可存约 2×10¹⁷ 字节（约 215 PB），比最好的硬盘高 6–7 个数量级；~150–200 nt 寡核苷酸＝索引+载荷+Reed–Solomon 纠错；2012 Church 5.27 Mb → 2017 Erlich「DNA fountain」</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、存储密度：比最好的硬盘高 6–7 个数量级</text>
+  <rect x="80" y="190" width="560" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="377.5" x2="640" y2="377.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="220" y1="440" x2="220" y2="190" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="315" x2="640" y2="315" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="360" y1="440" x2="360" y2="190" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="252.5" x2="640" y2="252.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="440" x2="500" y2="190" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="180.8" y1="440" x2="180.8" y2="446" stroke="#475569" stroke-width="1.8"/>
+  <text x="180.8" y="462" font-size="13" fill="#64748b" text-anchor="middle">DNA</text>
+  <line x1="360" y1="440" x2="360" y2="446" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="462" font-size="13" fill="#64748b" text-anchor="middle">硬盘</text>
+  <line x1="539.2" y1="440" x2="539.2" y2="446" stroke="#475569" stroke-width="1.8"/>
+  <text x="539.2" y="462" font-size="13" fill="#64748b" text-anchor="middle">磁带</text>
+  <line x1="74" y1="440" x2="80" y2="440" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="444" font-size="13" fill="#64748b" text-anchor="end">10⁹</text>
+  <line x1="74" y1="377.5" x2="80" y2="377.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="381.5" font-size="13" fill="#64748b" text-anchor="end">10¹¹</text>
+  <line x1="74" y1="315" x2="80" y2="315" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="319" font-size="13" fill="#64748b" text-anchor="end">10¹³</text>
+  <line x1="74" y1="252.5" x2="80" y2="252.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="256.5" font-size="13" fill="#64748b" text-anchor="end">10¹⁵</text>
+  <line x1="74" y1="190" x2="80" y2="190" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="194" font-size="13" fill="#64748b" text-anchor="end">10¹⁷ B/g</text>
+  <text x="360" y="484" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">存储介质</text>
+  <rect x="135" y="190" width="90" height="250" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="180" y="180" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">2×10¹⁷ B/g</text>
+  <rect x="315" y="393" width="90" height="47" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="360" y="381" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">≈10¹⁰–10¹¹ B/g</text>
+  <rect x="494" y="390" width="90" height="50" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="539" y="378" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">与硬盘同量级</text>
+  <line x1="400" y1="350" x2="240" y2="215" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arr-bad)"/>
+  <text x="330" y="225" font-size="11" text-anchor="middle" font-weight="700">高 6–7 个数量级</text>
+  <rect x="385.7395" y="231.5" width="78.52100000000002" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="425" y="243.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">≈ 215 PB / g</text>
+  <text x="60" y="500" font-size="10" fill="#475569">4 种碱基＝每碱基 2 bit；双螺旋直径 2 nm、每碱基对升高 0.34 nm（每圈 10.5 bp）</text>
+  <text x="60" y="526" font-size="10" fill="#64748b">低温干燥条件下半衰期可达百年以上——猛犸象与尼安德特人基因组测序证明了它的持久性。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、编码流程：分子级的分页与校验</text>
+  <rect x="979.015" y="182.65" width="121.97" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1040" y="195.96" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">数字文件（比特流）</text>
+  <line x1="1040" y1="206" x2="1040" y2="228" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <rect x="740" y="232" width="600" height="84" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="760" y="262" font-size="11.5" fill="#1e293b" font-weight="700">碱基→比特映射：00 / 01 / 10 / 11 ↔ A / C / G / T</text>
+  <text x="760" y="288" font-size="10" fill="#475569">旋转码、霍夫曼码约束编码——避免长同聚物串与 GC 失衡（测序 / 合成困难）</text>
+  <line x1="1040" y1="320" x2="1040" y2="344" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <line x1="760" y1="380" x2="1320" y2="380" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="761" y="365" width="132.4" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="827.2" y="413" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">索引（地址）</text>
+  <rect x="895.4" y="365" width="289.2" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1040" y="413" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">载荷</text>
+  <rect x="1186.6" y="365" width="132.4" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1252.8" y="413" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">纠错码 RS</text>
+  <text x="1040" y="446" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">每条 ~150–200 nt 寡核苷酸：索引 + 载荷 + Reed–Solomon 纠错</text>
+  <line x1="900" y1="462" x2="900" y2="482" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <line x1="1180" y1="462" x2="1180" y2="482" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="844.65" y="489.5" width="110.7" height="17" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="900" y="501.6" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">写入＝寡核苷酸合成</text>
+  <rect x="1129.8" y="489.5" width="100.4" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1180" y="501.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">读出＝高通量测序</text>
+  <rect x="973.423" y="531.5" width="133.154" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1040" y="543.6" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">随机读取＝PCR 引物寻址</text>
+  <rect x="30" y="592" width="1340" height="388" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、里程碑、瓶颈与信息视角</text>
+  <line x1="60" y1="710" x2="660" y2="710" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="108" cy="710" r="6.5" fill="#dc2626"/>
+  <line x1="108" y1="701" x2="108" y2="680" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="108" y="660" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2012 Church</text>
+  <text x="108" y="640" font-size="12" fill="#64748b" text-anchor="middle">一本 5.27 Mb 的书</text>
+  <circle cx="360" cy="710" r="6.5" fill="#dc2626"/>
+  <line x1="360" y1="719" x2="360" y2="740" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="360" y="760" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2013 Goldman</text>
+  <text x="360" y="780" font-size="12" fill="#64748b" text-anchor="middle">739 kB</text>
+  <circle cx="612" cy="710" r="6.5" fill="#dc2626"/>
+  <line x1="612" y1="701" x2="612" y2="680" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="612" y="660" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2017 Erlich</text>
+  <text x="612" y="640" font-size="12" fill="#64748b" text-anchor="middle">「DNA fountain」逼近理论极限</text>
+  <text x="700" y="800" font-size="10" fill="#64748b">此后已演示可随机读取的数据库、DNA 逻辑检索与原位分子计算。</text>
+  <rect x="50" y="810" width="620" height="150" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="66" y="838" font-size="13" fill="#1e293b" font-weight="700">物理瓶颈与定位</text>
+  <text x="66" y="868" font-size="10" fill="#475569" font-weight="600">合成与测序是「批量并行」而非「随机寻址」工艺——读写速度与成本是瓶颈；</text>
+  <text x="66" y="890" font-size="10" fill="#475569" font-weight="600">多次读取需 PCR 放大，会引入差错。</text>
+  <rect x="66.26700000000005" y="917.5" width="267.4659999999999" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="200" y="929.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">归档冷存储：写一次、读少次、放千年——DNA 无可替代</text>
+  <rect x="700" y="810" width="640" height="150" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="716" y="838" font-size="13" fill="#1e293b" font-weight="700">中心法则的信息论重述</text>
+  <text x="716" y="868" font-size="10" fill="#475569" font-weight="600">复制＝信道传输（校对纠错）；翻译＝有噪解码（密码子冗余即信道编码）；</text>
+  <text x="716" y="890" font-size="10" fill="#475569" font-weight="600">表观遗传＝标注层。</text>
+  <rect x="797.7" y="917.5" width="244.6" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="920" y="929.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">「生命以负熵为生」在信息时代有了精确的度量衡</text>
+</svg>

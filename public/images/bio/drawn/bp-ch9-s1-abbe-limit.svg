@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">光学成像的分辨率极限：艾里斑、Abbe 判据与 200 nm 以下的世界</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">d = λ/(2NA)：可见光 λ≈550 nm + 油浸 NA=1.4 → d≈200 nm；两点距离小于艾里斑半径（第一暗环）不可分辨；突破思路＝时间上分开或非线性压缩 → 2014 年诺贝尔化学奖「看见不可见」</text>
+  <rect x="30" y="132" width="1340" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、点扩散函数（艾里斑）：成像分辨的基本单元</text>
+  <text x="70" y="195" font-size="11" fill="#1e293b" font-weight="700">点源经有限孔径透镜成像为艾里斑——其强度分布即 PSF</text>
+  <rect x="100" y="210" width="540" height="260" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="100" y1="405" x2="640" y2="405" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="235" y1="470" x2="235" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="340" x2="640" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="370" y1="470" x2="370" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="275" x2="640" y2="275" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="505" y1="470" x2="505" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="294.4" y1="470" x2="294.4" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="294.4" y="492" font-size="13" fill="#64748b" text-anchor="middle">−r</text>
+  <line x1="370" y1="470" x2="370" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="370" y="492" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="445.6" y1="470" x2="445.6" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="445.6" y="492" font-size="13" fill="#64748b" text-anchor="middle">+r</text>
+  <line x1="94" y1="470" x2="100" y2="470" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="474" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="94" y1="210" x2="100" y2="210" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="214" font-size="13" fill="#64748b" text-anchor="end">Imax</text>
+  <text x="370" y="514" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">径向位置（以艾里斑半径 r 为单位）</text>
+  <text x="54" y="340" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">强度</text>
+  <path d="M100,469.74 C105.4,469.7 122.5,469.6 132.4,469.48 C142.3,469.4 152.2,469.4 159.4,469.22 C166.6,469.1 170.7,468.6 175.60000000000002,468.7 C180.6,468.8 185.5,470.3 189.10000000000002,470 C192.7,469.7 194.0,467.7 197.2,466.88 C200.3,466.1 204.4,465.3 208,465.32 C211.6,465.3 215.2,466.1 218.8,466.88 C222.4,467.7 225.1,470.4 229.6,470 C234.1,469.6 239.5,466.4 245.8,464.28 C252.1,462.1 260.6,456.9 267.4,457 C274.1,457.1 281.8,462.6 286.29999999999995,464.8 C290.8,467.0 290.8,474.3 294.4,470 C298.0,465.7 304.3,454.0 307.9,438.8 C311.5,423.6 313.3,402.0 316,379 C318.7,356.0 321.4,324.0 324.1,301 C326.8,278.0 328.1,255.9 332.2,241.2 C336.3,226.5 343.4,217.8 348.4,212.60000000000002 C353.3,207.4 358.3,210.4 361.9,210 C365.5,209.6 367.3,210.0 370,210 C372.7,210.0 374.5,209.6 378.1,210 C381.7,210.4 386.7,207.4 391.6,212.60000000000002 C396.6,217.8 403.7,226.5 407.79999999999995,241.2 C411.8,255.9 413.2,278.0 415.9,301 C418.6,324.0 421.3,356.0 424,379 C426.7,402.0 428.5,423.6 432.1,438.8 C435.7,454.0 442.0,465.7 445.6,470 C449.2,474.3 449.2,467.0 453.7,464.8 C458.2,462.6 465.8,457.1 472.59999999999997,457 C479.3,456.9 487.9,462.1 494.2,464.28 C500.5,466.4 505.9,469.6 510.4,470 C514.9,470.4 517.6,467.7 521.2,466.88 C524.8,466.1 528.4,465.3 532,465.32 C535.6,465.3 539.6,466.1 542.8,466.88 C545.9,467.7 547.3,469.7 550.9,470 C554.5,470.3 559.4,468.8 564.4,468.7 C569.4,468.6 573.4,469.1 580.6,469.22 C587.8,469.4 597.7,469.4 607.5999999999999,469.48 C617.5,469.6 634.6,469.7 640,469.74" fill="none" stroke="#0369a1" stroke-width="2.8"/>
+  <line x1="294.4" y1="210" x2="294.4" y2="470" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="445.6" y1="210" x2="445.6" y2="470" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="294.4" y="224" font-size="9" fill="#64748b" text-anchor="middle">第一暗环</text>
+  <text x="445.6" y="224" font-size="9" fill="#64748b" text-anchor="middle">第一暗环</text>
+  <line x1="372" y1="340" x2="441" y2="340" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-mute)"/>
+  <text x="406" y="326" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">半径 r</text>
+  <text x="140" y="440" font-size="9" fill="#64748b">旁瓣（强度约 2%）</text>
+  <line x1="185" y1="448" x2="225" y2="458" stroke="#64748b" stroke-width="1.2"/>
+  <rect x="710" y="185" width="640" height="355" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="726" y="213" font-size="13" fill="#1e293b" font-weight="700">两点像的分辨：Rayleigh 判据</text>
+  <rect x="726" y="235" width="300" height="165" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="820" cy="320" r="30" fill="#0369a1" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="930" cy="320" r="30" fill="#0369a1" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="876" y="258" font-size="10.5" text-anchor="middle" font-weight="700">间距 &gt; r</text>
+  <rect x="847.224" y="383.5" width="57.552" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="876" y="395.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">✓ 可分辨</text>
+  <rect x="1050" y="235" width="285" height="165" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="1120" cy="320" r="34" fill="#0369a1" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="1176" cy="320" r="34" fill="#0369a1" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="1148" cy="320" r="28" fill="#0369a1" fill-opacity="0.4"/>
+  <text x="1148" y="258" font-size="10.5" text-anchor="middle" font-weight="700">间距 &lt; r：合而为一</text>
+  <rect x="1114.074" y="383.5" width="67.852" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1148" y="395.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">✗ 不可分辨</text>
+  <text x="726" y="428" font-size="10" fill="#475569">两点距离小于艾里斑半径（第一暗环）时不可分辨；OTF 给出空间频率通带——超过截止频率 2NA/λ 的信息完全丢失。</text>
+  <rect x="30" y="592" width="660" height="388" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">二、Abbe 判据（1873）：d = λ/(2NA)</text>
+  <rect x="256.09954999999997" y="624.525" width="187.80090000000004" height="22.95" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="350" y="640.86" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">d = λ / (2NA)，NA = n·sinθ</text>
+  <text x="90" y="668" font-size="10" fill="#475569">n：介质折射率；θ：孔径半角</text>
+  <rect x="150" y="684.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#6d28d9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="168.45" y="691.42" font-size="9.5" fill="#475569">λ=400 nm（紫）</text>
+  <rect x="253.42000000000002" y="684.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="271.87" y="691.42" font-size="9.5" fill="#475569">λ=550 nm（绿）</text>
+  <rect x="356.84000000000003" y="684.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="375.29" y="691.42" font-size="9.5" fill="#475569">λ=700 nm（红）</text>
+  <rect x="110" y="695" width="520" height="230" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="110" y1="867.5" x2="630" y2="867.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="240" y1="925" x2="240" y2="695" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="810" x2="630" y2="810" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="370" y1="925" x2="370" y2="695" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="752.5" x2="630" y2="752.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="925" x2="500" y2="695" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="165.64" y1="925" x2="165.64" y2="931" stroke="#475569" stroke-width="1.8"/>
+  <text x="165.64" y="947" font-size="13" fill="#64748b" text-anchor="middle">0.25</text>
+  <line x1="295.64" y1="925" x2="295.64" y2="931" stroke="#475569" stroke-width="1.8"/>
+  <text x="295.64" y="947" font-size="13" fill="#64748b" text-anchor="middle">0.6</text>
+  <line x1="444.36" y1="925" x2="444.36" y2="931" stroke="#475569" stroke-width="1.8"/>
+  <text x="444.36" y="947" font-size="13" fill="#64748b" text-anchor="middle">1.0</text>
+  <line x1="593.08" y1="925" x2="593.08" y2="931" stroke="#475569" stroke-width="1.8"/>
+  <text x="593.08" y="947" font-size="13" fill="#64748b" text-anchor="middle">1.4</text>
+  <line x1="104" y1="925" x2="110" y2="925" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="929" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="104" y1="848.41" x2="110" y2="848.41" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="852.41" font-size="13" fill="#64748b" text-anchor="end">500</text>
+  <line x1="104" y1="771.59" x2="110" y2="771.59" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="775.59" font-size="13" fill="#64748b" text-anchor="end">1000</text>
+  <line x1="104" y1="695" x2="110" y2="695" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="699" font-size="13" fill="#64748b" text-anchor="end">1500</text>
+  <text x="370" y="969" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">数值孔径 NA = n·sinθ</text>
+  <text x="64" y="810" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">d (nm)</text>
+  <path d="M165.7,802.3 L176.4,815.0 L187.1,825.3 L197.8,833.8 L208.4,841.0 L219.1,847.1 L229.8,852.4 L240.5,857.0 L251.1,861.1 L261.8,864.7 L272.5,867.9 L283.2,870.8 L293.9,873.5 L304.5,875.8 L315.2,878.0 L325.9,880.0 L336.6,881.8 L347.3,883.5 L357.9,885.0 L368.6,886.5 L379.3,887.8 L390.0,889.1 L400.6,890.3 L411.3,891.3 L422.0,892.4 L432.7,893.3 L443.4,894.3 L454.0,895.1 L464.7,895.9 L475.4,896.7 L486.1,897.4 L496.7,898.1 L507.4,898.8 L518.1,899.4 L528.8,900.0 L539.5,900.6 L550.1,901.1 L560.8,901.7 L571.5,902.2 L582.2,902.6 L592.9,903.1" fill="none" stroke="#6d28d9" stroke-width="2.6"/>
+  <path d="M165.7,756.3 L176.4,773.7 L187.1,787.9 L197.8,799.6 L208.4,809.5 L219.1,817.9 L229.8,825.2 L240.5,831.6 L251.1,837.2 L261.8,842.1 L272.5,846.6 L283.2,850.5 L293.9,854.1 L304.5,857.4 L315.2,860.4 L325.9,863.1 L336.6,865.6 L347.3,867.9 L357.9,870.1 L368.6,872.0 L379.3,873.9 L390.0,875.6 L400.6,877.2 L411.3,878.7 L422.0,880.1 L432.7,881.5 L443.4,882.7 L454.0,883.9 L464.7,885.0 L475.4,886.1 L486.1,887.1 L496.7,888.1 L507.4,889.0 L518.1,889.8 L528.8,890.6 L539.5,891.4 L550.1,892.2 L560.8,892.9 L571.5,893.6 L582.2,894.2 L592.9,894.9" fill="none" stroke="#059669" stroke-width="2.8"/>
+  <path d="M165.7,710.3 L176.4,732.5 L187.1,750.5 L197.8,765.4 L208.4,778.0 L219.1,788.7 L229.8,798.0 L240.5,806.1 L251.1,813.2 L261.8,819.5 L272.5,825.2 L283.2,830.2 L293.9,834.8 L304.5,839.0 L315.2,842.8 L325.9,846.2 L336.6,849.4 L347.3,852.4 L357.9,855.1 L368.6,857.6 L379.3,859.9 L390.0,862.1 L400.6,864.2 L411.3,866.1 L422.0,867.9 L432.7,869.6 L443.4,871.2 L454.0,872.7 L464.7,874.1 L475.4,875.5 L486.1,876.8 L496.7,878.0 L507.4,879.1 L518.1,880.2 L528.8,881.3 L539.5,882.3 L550.1,883.2 L560.8,884.2 L571.5,885.0 L582.2,885.9 L592.9,886.7" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <line x1="593" y1="895" x2="593" y2="695" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="110" y1="895" x2="593" y2="895" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <circle cx="593" cy="895" r="5" fill="none"/>
+  <rect x="298.5575" y="907.5" width="202.88499999999993" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="400" y="919.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">油浸 NA=1.4、λ≈550 nm → d ≈ 200 nm</text>
+  <rect x="710" y="592" width="660" height="388" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="614.84" font-size="19" fill="#475569" font-weight="700">三、200 nm 以下的世界与两条突破思路</text>
+  <text x="730" y="622" font-size="10.5" fill="#1e293b" font-weight="700">200 nm 以内拥挤着最精彩的分子世界——衍射极限把它们挡在光学显微镜之外；</text>
+  <text x="730" y="646" font-size="10" fill="#475569">电镜分辨率虽达 Å 级，但要求真空、固定与重金属染色，难以观察活细胞。</text>
+  <text x="730" y="670" font-size="10" fill="#475569">分辨率 ≠ 放大率：放大率只是把艾里斑投得更大——「空放大」不增加任何信息。</text>
+  <rect x="760" y="770" width="540" height="135" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="871.25" x2="1300" y2="871.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="895" y1="905" x2="895" y2="770" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="837.5" x2="1300" y2="837.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1030" y1="905" x2="1030" y2="770" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="803.75" x2="1300" y2="803.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1165" y1="905" x2="1165" y2="770" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="905" x2="760" y2="911" stroke="#475569" stroke-width="1.8"/>
+  <text x="760" y="927" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="939.82" y1="905" x2="939.82" y2="911" stroke="#475569" stroke-width="1.8"/>
+  <text x="939.82" y="927" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="1120.18" y1="905" x2="1120.18" y2="911" stroke="#475569" stroke-width="1.8"/>
+  <text x="1120.18" y="927" font-size="13" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="1300" y1="905" x2="1300" y2="911" stroke="#475569" stroke-width="1.8"/>
+  <text x="1300" y="927" font-size="13" fill="#64748b" text-anchor="middle">1000</text>
+  <text x="1030" y="949" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">尺度（nm，对数刻度）</text>
+  <rect x="886" y="790" width="180" height="105" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.2"/>
+  <line x1="976" y1="758" x2="976" y2="788" stroke="#64748b" stroke-width="1.2"/>
+  <text x="976" y="752" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">蛋白复合物 5–50 nm</text>
+  <line x1="1011" y1="770" x2="1011" y2="905" stroke="#0369a1" stroke-width="2"/>
+  <text x="1011" y="728" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">核糖体 ~25 nm</text>
+  <text x="1011" y="704" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">微管直径 25 nm</text>
+  <line x1="1011" y1="734" x2="1011" y2="768" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1120" y1="770" x2="1120" y2="905" stroke="#d97706" stroke-width="2"/>
+  <text x="1130" y="704" font-size="9.5" fill="#d97706" text-anchor="middle" font-weight="700">病毒 ~100 nm</text>
+  <line x1="1120" y1="710" x2="1120" y2="768" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1174" y1="770" x2="1174" y2="905" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="1174" y="752" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">衍射极限 200 nm</text>
+  <line x1="1174" y1="758" x2="1174" y2="768" stroke="#64748b" stroke-width="1.2"/>
+  <rect x="784.5028" y="959.925" width="170.9944" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="870" y="971.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">① 时间上分开：相邻分子不同时发光</text>
+  <rect x="1089.1803" y="959.925" width="141.63940000000002" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1160" y="971.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">② 非线性压缩：只让中心发光</text>
+</svg>

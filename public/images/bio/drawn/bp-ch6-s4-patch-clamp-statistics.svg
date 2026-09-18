@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单通道记录与单分子统计：从 pA 方波到 P_o 与 1/√N</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">GΩ 封接隔离几 μm² 膜片（1 pA ≈ 6×10⁶ 离子/s）；电导指纹：K⁺ 4–20 pS、nAChR ≈ 40 pS、BK ≈ 250 pS；P_o = T_open/(T_open+T_closed)，I = N·P_o·g·(V−E_rev)；泊松误差 ~ 1/√N</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、膜片钳：GΩ 封接把几 μm² 膜片上的单个通道与全细胞背景隔离</text>
+  <polygon points="235,178 305,178 290,310 250,310" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="320" y="200" font-size="10" fill="#475569" font-weight="600">抛光玻璃微吸管</text>
+  <polyline points="270,178 270,190 420,218" fill="none" stroke="#475569" stroke-width="2"/>
+  <rect x="430" y="196" width="140" height="44" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="500" y="222" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">pA 级电流放大</text>
+  <text x="500" y="262" font-size="9.5" fill="#64748b" text-anchor="middle">配合电压钳命令</text>
+  <g><circle cx="120" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="120" y1="334" x2="120" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="120" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="144" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="144" y1="334" x2="144" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="144" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="168" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="168" y1="334" x2="168" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="168" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="192" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="192" y1="334" x2="192" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="192" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="216" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="216" y1="334" x2="216" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="216" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="240" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="240" y1="334" x2="240" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="240" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="264" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="264" y1="334" x2="264" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="264" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="288" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="288" y1="334" x2="288" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="288" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="312" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="312" y1="334" x2="312" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="312" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="336" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="336" y1="334" x2="336" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="336" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="360" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="360" y1="334" x2="360" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="360" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="384" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="384" y1="334" x2="384" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="384" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="408" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="408" y1="334" x2="408" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="408" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="432" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="432" y1="334" x2="432" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="432" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="456" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="456" y1="334" x2="456" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="456" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="480" cy="330" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="480" y1="334" x2="480" y2="340" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="480" cy="344" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <line x1="250" y1="312" x2="290" y2="312" stroke="#d97706" stroke-width="5"/>
+  <rect x="344.731" y="309.5" width="82.538" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="386" y="321.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">GΩ 级高阻封接</text>
+  <rect x="262" y="322" width="16" height="30" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="270" y="378" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">单个离子通道</text>
+  <rect x="90.756575" y="393.075" width="158.48685" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="170" y="405.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">1 pA ≈ 6×10⁶ 个单价离子/s</text>
+  <rect x="342.317" y="393.075" width="195.36599999999999" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="440" y="405.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Neher &amp; Sakmann（1991 诺贝尔奖）</text>
+  <text x="970" y="208" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">单通道电流记录：开–关随机跳变（示意）</text>
+  <rect x="620" y="220" width="700" height="120" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="620" y1="310" x2="1320" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="795" y1="340" x2="795" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="620" y1="280" x2="1320" y2="280" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="970" y1="340" x2="970" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="620" y1="250" x2="1320" y2="250" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1145" y1="340" x2="1145" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1299" y1="340" x2="1299" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="1299" y="362" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="614" y1="340" x2="620" y2="340" stroke="#475569" stroke-width="1.8"/>
+  <text x="610" y="344" font-size="13" fill="#64748b" text-anchor="end">关 C</text>
+  <line x1="614" y1="220" x2="620" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="610" y="224" font-size="13" fill="#64748b" text-anchor="end">开 O</text>
+  <path d="M620.0,340.0 L648.0,340.0 L648.0,220.0 L690.0,220.0 L690.0,340.0 L732.0,340.0 L732.0,220.0 L788.0,220.0 L788.0,340.0 L830.0,340.0 L830.0,220.0 L858.0,220.0 L858.0,340.0 L914.0,340.0 L914.0,220.0 L984.0,220.0 L984.0,340.0 L1012.0,340.0 L1012.0,220.0 L1040.0,220.0 L1040.0,340.0 L1096.0,340.0 L1096.0,220.0 L1152.0,220.0 L1152.0,340.0 L1208.0,340.0 L1208.0,220.0 L1250.0,220.0 L1250.0,340.0 L1320.0,340.0" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <text x="620" y="386" font-size="10.5" fill="#475569">驻留时间（dwell time）服从指数或指数和分布——与马尔可夫状态模型直接对应；各状态平均寿命 = 离开速率之和的倒数。</text>
+  <rect x="30" y="448" width="1340" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="470.84" font-size="19" fill="#475569" font-weight="700">二、单通道电导是「指纹」；P_o 与马尔可夫模型连接单分子与宏观电流</text>
+  <text x="250" y="486" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">单通道电导 g（pS）——通道的「指纹」</text>
+  <line x1="80" y1="660" x2="420" y2="660" stroke="#475569" stroke-width="1.8"/>
+  <rect x="110" y="648.1739130434783" width="50" height="11.826086956521749" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="135" y1="657.6347826086957" x2="135" y2="648.1739130434783" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="126" y1="657.6347826086957" x2="144" y2="657.6347826086957" stroke="#0369a1" stroke-width="2"/>
+  <line x1="126" y1="648.1739130434783" x2="144" y2="648.1739130434783" stroke="#0369a1" stroke-width="2"/>
+  <text x="135" y="638.1739130434783" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">4–20</text>
+  <text x="135" y="678" font-size="11" fill="#64748b" text-anchor="middle">K⁺ 通道</text>
+  <rect x="210" y="636.3478260869565" width="50" height="23.652173913043498" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="235" y="626.3478260869565" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">≈ 40</text>
+  <text x="235" y="678" font-size="11" fill="#64748b" text-anchor="middle">nAChR</text>
+  <rect x="310" y="512.1739130434783" width="50" height="147.82608695652175" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="335" y="502.17391304347825" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">≈ 250</text>
+  <text x="335" y="678" font-size="11" fill="#64748b" text-anchor="middle">BK 通道</text>
+  <text x="80" y="700" font-size="10.5" fill="#475569">从 I–V 关系得单通道电导：I = g·(V − E_rev)</text>
+  <rect x="460" y="486" width="420" height="220" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="480" y="512" font-size="13" fill="#1e293b" font-weight="700">开放概率 P_o：核心读出</text>
+  <text x="670" y="544" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">P_o = T_open / (T_open + T_closed)</text>
+  <rect x="480" y="570" width="120" height="20" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <rect x="600" y="570" width="80" height="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="680" y="570" width="60" height="20" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <rect x="740" y="570" width="120" height="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="540" y="562" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">开放</text>
+  <text x="640" y="562" font-size="9.5" fill="#64748b" text-anchor="middle">关闭</text>
+  <text x="860" y="562" font-size="9.5" fill="#64748b" text-anchor="middle">时间 →</text>
+  <text x="480" y="626" font-size="10.5" fill="#475569">从成千上万个事件提取的开放概率，是通道药理与生理调节的核心读出。</text>
+  <text x="670" y="692" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">全细胞电流 I = N·P_o·g·(V − E_rev)</text>
+  <rect x="900" y="486" width="440" height="220" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="920" y="512" font-size="13" fill="#1e293b" font-weight="700">马尔可夫状态模型</text>
+  <circle cx="990" cy="574" r="26" fill="#f8fafc" stroke="#475569" stroke-width="2.2"/>
+  <text x="990" y="578" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">C₁</text>
+  <circle cx="1130" cy="574" r="26" fill="#f8fafc" stroke="#475569" stroke-width="2.2"/>
+  <text x="1130" y="578" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">C₂</text>
+  <circle cx="1268" cy="574" r="24" fill="#fce7f3" stroke="#be185d" stroke-width="2.4"/>
+  <text x="1268" y="578" font-size="13.5" fill="#831843" text-anchor="middle" font-weight="700">O</text>
+  <line x1="1018" y1="564" x2="1102" y2="564" stroke="#be185d" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1102" y1="586" x2="1018" y2="586" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <line x1="1158" y1="564" x2="1242" y2="564" stroke="#be185d" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1242" y1="586" x2="1158" y2="586" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <text x="920" y="640" font-size="10.5" fill="#475569">门控本质是分子构象的随机跃迁；驻留时间分布与模型预测直接对应。</text>
+  <text x="1120" y="690" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">各状态平均寿命 = 1 / Σ(离开速率)</text>
+  <rect x="30" y="744" width="1340" height="236" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="766.84" font-size="19" fill="#475569" font-weight="700">三、单分子实验的统计学：泊松极限 1/√N、遍历性与测量扰动</text>
+  <rect x="100" y="778" width="540" height="158" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="100" y1="896.5" x2="640" y2="896.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="235" y1="936" x2="235" y2="778" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="857" x2="640" y2="857" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="370" y1="936" x2="370" y2="778" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="817.5" x2="640" y2="817.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="505" y1="936" x2="505" y2="778" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="936" x2="100" y2="942" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="958" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="235" y1="936" x2="235" y2="942" stroke="#475569" stroke-width="1.8"/>
+  <text x="235" y="958" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="370" y1="936" x2="370" y2="942" stroke="#475569" stroke-width="1.8"/>
+  <text x="370" y="958" font-size="13" fill="#64748b" text-anchor="middle">10²</text>
+  <line x1="505" y1="936" x2="505" y2="942" stroke="#475569" stroke-width="1.8"/>
+  <text x="505" y="958" font-size="13" fill="#64748b" text-anchor="middle">10³</text>
+  <line x1="640" y1="936" x2="640" y2="942" stroke="#475569" stroke-width="1.8"/>
+  <text x="640" y="958" font-size="13" fill="#64748b" text-anchor="middle">10⁴</text>
+  <line x1="94" y1="936" x2="100" y2="936" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="940" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="94" y1="857" x2="100" y2="857" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="861" font-size="13" fill="#64748b" text-anchor="end">50%</text>
+  <line x1="94" y1="778" x2="100" y2="778" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="782" font-size="13" fill="#64748b" text-anchor="end">100%</text>
+  <text x="54" y="857" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">相对误差</text>
+  <path d="M100.0,778.0 L113.5,795.2 L127.0,810.5 L140.5,824.1 L154.0,836.3 L167.5,847.2 L181.0,856.8 L194.5,865.4 L208.0,873.1 L221.5,879.9 L235.0,886.0 L248.5,891.5 L262.0,896.3 L275.5,900.6 L289.0,904.5 L302.5,907.9 L316.0,911.0 L329.5,913.7 L343.0,916.1 L356.5,918.3 L370.0,920.2 L383.5,921.9 L397.0,923.4 L410.5,924.8 L424.0,926.0 L437.5,927.1 L451.0,928.1 L464.5,928.9 L478.0,929.7 L491.5,930.4 L505.0,931.0 L518.5,931.5 L532.0,932.0 L545.5,932.5 L559.0,932.8 L572.5,933.2 L586.0,933.5 L599.5,933.8 L613.0,934.0 L626.5,934.2 L640.0,934.4" fill="none" stroke="#be185d" stroke-width="3"/>
+  <text x="390" y="800" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">泊松计数极限：相对统计误差 ~ 1/√N</text>
+  <circle cx="370" cy="920.2" r="4.5" fill="#be185d"/>
+  <text x="370" y="902" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">N = 100 → 10%</text>
+  <circle cx="640" cy="934.42" r="4.5" fill="#be185d"/>
+  <text x="628" y="916" font-size="9.5" fill="#475569" text-anchor="end" font-weight="700">N = 10⁴ → 1%</text>
+  <text x="370" y="974" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">事件数 N（对数刻度）——罕见事件需长时间采样</text>
+  <rect x="660" y="770" width="680" height="196" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="680" y="796" font-size="13" fill="#1e293b" font-weight="700">单分子实验的五条统计戒律</text>
+  <circle cx="694" cy="822" r="4" fill="#0369a1"/>
+  <text x="706" y="826" font-size="10.5" fill="#475569" font-weight="600">单事件随机、系综可预测——须用速率常数与分布函数描述</text>
+  <circle cx="694" cy="854" r="4" fill="#0369a1"/>
+  <text x="706" y="858" font-size="10.5" fill="#475569" font-weight="600">泊松计数极限 ~ 1/√N：罕见事件（错误折叠、背步）需长时间采样</text>
+  <circle cx="694" cy="886" r="4" fill="#0369a1"/>
+  <text x="706" y="890" font-size="10.5" fill="#475569" font-weight="600">最大似然 / 贝叶斯拟合：马尔可夫模型与力谱分析的标准工具</text>
+  <circle cx="694" cy="918" r="4" fill="#0369a1"/>
+  <text x="706" y="922" font-size="10.5" fill="#475569" font-weight="600">遍历性在活细胞常被打破（时间平均 ≠ 系综平均）——非平衡标志</text>
+  <circle cx="694" cy="950" r="4" fill="#0369a1"/>
+  <text x="706" y="954" font-size="10.5" fill="#475569" font-weight="600">测量反作用（光损伤、探针力）：「无损单分子观测」是工程折中</text>
+</svg>

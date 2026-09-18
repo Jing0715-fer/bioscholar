@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电缆理论与神经元信息整合：λ–τ 划定时空窗口</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">V(x) = V₀e^(−x/λ)（x = λ 处衰减至 37%）；τ = r_m·c_m 典型 5–20 ms、λ = √(r_m/r_i) 典型 0.1–1 mm（髓鞘 → cm 级）；神经元 ≈ 泄漏积分–发放器</text>
+  <rect x="30" y="132" width="1340" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、被动电缆方程：V(x) = V₀·e^(−x/λ)，电位沿突起指数衰减</text>
+  <rect x="90" y="200" width="620" height="210" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="357.5" x2="710" y2="357.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="245" y1="410" x2="245" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="305" x2="710" y2="305" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="410" x2="400" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="252.5" x2="710" y2="252.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="555" y1="410" x2="555" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="410" x2="90" y2="416" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="432" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="214" y1="410" x2="214" y2="416" stroke="#475569" stroke-width="1.8"/>
+  <text x="214" y="432" font-size="13" fill="#64748b" text-anchor="middle">λ</text>
+  <line x1="338" y1="410" x2="338" y2="416" stroke="#475569" stroke-width="1.8"/>
+  <text x="338" y="432" font-size="13" fill="#64748b" text-anchor="middle">2λ</text>
+  <line x1="462" y1="410" x2="462" y2="416" stroke="#475569" stroke-width="1.8"/>
+  <text x="462" y="432" font-size="13" fill="#64748b" text-anchor="middle">3λ</text>
+  <line x1="586" y1="410" x2="586" y2="416" stroke="#475569" stroke-width="1.8"/>
+  <text x="586" y="432" font-size="13" fill="#64748b" text-anchor="middle">4λ</text>
+  <line x1="710" y1="410" x2="710" y2="416" stroke="#475569" stroke-width="1.8"/>
+  <text x="710" y="432" font-size="13" fill="#64748b" text-anchor="middle">5λ</text>
+  <line x1="84" y1="410" x2="90" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="414" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="84" y1="332.3" x2="90" y2="332.3" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="336.3" font-size="13" fill="#64748b" text-anchor="end">0.37</text>
+  <line x1="84" y1="200" x2="90" y2="200" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="204" font-size="13" fill="#64748b" text-anchor="end">V₀</text>
+  <text x="44" y="305" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">V(x)</text>
+  <path d="M90.0,200.0 L102.4,220.0 L114.8,238.1 L127.2,254.4 L139.6,269.2 L152.0,282.6 L164.4,294.7 L176.8,305.7 L189.2,315.6 L201.6,324.6 L214.0,332.7 L226.4,340.1 L238.8,346.7 L251.2,352.8 L263.6,358.2 L276.0,363.1 L288.4,367.6 L300.8,371.6 L313.2,375.3 L325.6,378.6 L338.0,381.6 L350.4,384.3 L362.8,386.7 L375.2,388.9 L387.6,390.9 L400.0,392.8 L412.4,394.4 L424.8,395.9 L437.2,397.2 L449.6,398.4 L462.0,399.5 L474.4,400.5 L486.8,401.4 L499.2,402.3 L511.6,403.0 L524.0,403.7 L536.4,404.3 L548.8,404.8 L561.2,405.3 L573.6,405.7 L586.0,406.2 L598.4,406.5 L610.8,406.9 L623.2,407.2 L635.6,407.4 L648.0,407.7 L660.4,407.9 L672.8,408.1 L685.2,408.3 L697.6,408.4 L710.0,408.6" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <line x1="214" y1="410" x2="214" y2="332.72" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="90" y1="332.72" x2="214" y2="332.72" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <circle cx="214" cy="332.72" r="5" fill="#075985"/>
+  <text x="350" y="245" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">x = λ 处 V = 0.37·V₀（衰减至 37%）</text>
+  <text x="400" y="448" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">沿被动突起的距离 x</text>
+  <text x="760" y="222" font-size="13" fill="#1e293b" font-weight="700">被动电缆的集总电路（每单位长度）</text>
+  <rect x="833.9312" y="234.65" width="92.1376" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="880" y="247.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">λ = √(r_m / r_i)</text>
+  <rect x="1089.3696" y="234.65" width="81.2608" height="18.7" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1130" y="247.96" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">τ = r_m · c_m</text>
+  <circle cx="760" cy="300" r="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="760" y="305" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">V₀</text>
+  <text x="760" y="276" font-size="9.5" fill="#64748b" text-anchor="middle">注入</text>
+  <line x1="774" y1="300" x2="820" y2="300" stroke="#475569" stroke-width="2"/>
+  <text x="890" y="278" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">r_i（轴向电阻）</text>
+  <path d="M 824,300 l 12,-12 l 18,24 l 18,-24 l 18,24 l 18,-24 l 18,24 l 12,-12" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 964,300 l 12,-12 l 18,24 l 18,-24 l 18,24 l 18,-24 l 18,24 l 12,-12" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 1104,300 l 12,-12 l 18,24 l 18,-24 l 18,24 l 18,-24 l 18,24 l 12,-12" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="820" cy="300" r="5" fill="#1e293b"/>
+  <circle cx="960" cy="300" r="5" fill="#1e293b"/>
+  <circle cx="1100" cy="300" r="5" fill="#1e293b"/>
+  <circle cx="1240" cy="300" r="5" fill="#1e293b"/>
+  <path d="M 820,306 l 10,11 l -10,11 l 10,11 l -10,11 l 10,11 l -10,11 L 820,372" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <line x1="820" y1="372" x2="820" y2="400" stroke="#475569" stroke-width="2"/>
+  <text x="804" y="346" font-size="10" fill="#134e4a" text-anchor="end" font-weight="700">r_m</text>
+  <path d="M 1100,306 l 10,11 l -10,11 l 10,11 l -10,11 l 10,11 l -10,11 L 1100,372" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1100" y1="372" x2="1100" y2="400" stroke="#475569" stroke-width="2"/>
+  <text x="1084" y="346" font-size="10" fill="#134e4a" text-anchor="end" font-weight="700">r_m</text>
+  <line x1="960" y1="306" x2="960" y2="345" stroke="#475569" stroke-width="2"/>
+  <line x1="944" y1="345" x2="976" y2="345" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="944" y1="357" x2="976" y2="357" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="960" y1="357" x2="960" y2="400" stroke="#475569" stroke-width="2"/>
+  <text x="984" y="354" font-size="10" fill="#78350f" font-weight="700">c_m</text>
+  <line x1="1240" y1="306" x2="1240" y2="345" stroke="#475569" stroke-width="2"/>
+  <line x1="1224" y1="345" x2="1256" y2="345" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="1224" y1="357" x2="1256" y2="357" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="1240" y1="357" x2="1240" y2="400" stroke="#475569" stroke-width="2"/>
+  <text x="1264" y="354" font-size="10" fill="#78350f" font-weight="700">c_m</text>
+  <line x1="780" y1="400" x2="1300" y2="400" stroke="#64748b" stroke-width="2"/>
+  <line x1="792" y1="400" x2="784" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="820" y1="400" x2="812" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="848" y1="400" x2="840" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="876" y1="400" x2="868" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="904" y1="400" x2="896" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="932" y1="400" x2="924" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="960" y1="400" x2="952" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="988" y1="400" x2="980" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1016" y1="400" x2="1008" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1044" y1="400" x2="1036" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1072" y1="400" x2="1064" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1100" y1="400" x2="1092" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1128" y1="400" x2="1120" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1156" y1="400" x2="1148" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1184" y1="400" x2="1176" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1212" y1="400" x2="1204" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1240" y1="400" x2="1232" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1268" y1="400" x2="1260" y2="410" stroke="#64748b" stroke-width="1.2"/>
+  <text x="1300" y="418" font-size="9.5" fill="#64748b" text-anchor="end">胞外（0 电位）</text>
+  <text x="760" y="432" font-size="10.5" fill="#475569" font-weight="600">τ = r_m·c_m：典型 5–20 ms——时间积分窗口</text>
+  <text x="760" y="450" font-size="10.5" fill="#475569" font-weight="600">λ = √(r_m/r_i)：典型 0.1–1 mm——空间整合范围</text>
+  <rect x="30" y="468" width="1340" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="490.84" font-size="19" fill="#475569" font-weight="700">二、λ 与 τ 划定时空整合窗：空间叠加 + 时间积分 → 泄漏积分–发放</text>
+  <rect x="50" y="494" width="640" height="240" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="70" y="522" font-size="13.5" fill="#1e293b" font-weight="700">空间整合：突触电流加权汇于轴丘</text>
+  <text x="70" y="548" font-size="10" fill="#64748b">线性电缆上简单叠加；门控通道引入非线性（局部尖峰、树突 Na/Ca 放大）</text>
+  <line x1="90" y1="620" x2="250" y2="620" stroke="#6d28d9" stroke-width="5" opacity="1"/>
+  <line x1="250" y1="620" x2="410" y2="620" stroke="#6d28d9" stroke-width="5" opacity="0.6"/>
+  <line x1="410" y1="620" x2="486" y2="620" stroke="#6d28d9" stroke-width="5" opacity="0.3"/>
+  <polyline points="200,620 260,585 320,565" fill="none" stroke="#6d28d9" stroke-width="3.5"/>
+  <polyline points="300,620 360,655 420,675" fill="none" stroke="#6d28d9" stroke-width="3.5"/>
+  <polyline points="390,620 450,590 510,575" fill="none" stroke="#6d28d9" stroke-width="3.5"/>
+  <circle cx="90" cy="620" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="320" cy="565" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="420" cy="675" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="510" cy="575" r="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="520" cy="620" r="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.5"/>
+  <circle cx="520" cy="620" r="9" fill="#6d28d9" fill-opacity="0.4"/>
+  <polygon points="554,606 590,613 554,634" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="590" y1="620" x2="640" y2="620" stroke="#be185d" stroke-width="4"/>
+  <polyline points="600,620 610,596 618,640 626,620" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="600" y="588" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">轴丘</text>
+  <line x1="140" y1="690" x2="440" y2="690" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arr-acc)" marker-start="url(#arr-acc)"/>
+  <text x="290" y="710" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">远处输入按 e^(−x/λ) 衰减；λ 典型 0.1–1 mm</text>
+  <rect x="680" y="494" width="640" height="240" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="700" y="522" font-size="13.5" fill="#1e293b" font-weight="700">时间整合：泄漏积分–发放器（LIF）</text>
+  <text x="700" y="548" font-size="10" fill="#64748b">膜时间常数 τ = r_m·c_m（典型 5–20 ms）：时间整合窗口</text>
+  <rect x="710" y="556" width="300" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="710" y1="668.5" x2="1010" y2="668.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="785" y1="706" x2="785" y2="556" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="710" y1="631" x2="1010" y2="631" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="860" y1="706" x2="860" y2="556" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="710" y1="593.5" x2="1010" y2="593.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="935" y1="706" x2="935" y2="556" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1001" y1="706" x2="1001" y2="712" stroke="#475569" stroke-width="1.8"/>
+  <text x="1001" y="728" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="704" y1="706" x2="710" y2="706" stroke="#475569" stroke-width="1.8"/>
+  <text x="700" y="710" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="704" y1="586" x2="710" y2="586" stroke="#475569" stroke-width="1.8"/>
+  <text x="700" y="590" font-size="13" fill="#64748b" text-anchor="end">阈值</text>
+  <line x1="710" y1="586" x2="1010" y2="586" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <path d="M710.0,706.0 L734.0,706.0 L740.0,661.0 L764.0,673.0 L785.0,673.0 L791.0,631.0 L815.0,643.0 L830.0,643.0 L836.0,607.0 L860.0,619.0 L875.0,587.5 L879.5,559.0 L884.0,703.0 L890.0,706.0 L920.0,706.0 L935.0,676.0 L965.0,688.0 L1010.0,698.5" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <text x="1030" y="580" font-size="10.5" fill="#475569">短于 τ 的连续突触输入在膜电容上积分叠加</text>
+  <text x="1030" y="624" font-size="10.5" fill="#475569">超过阈值 → 发放并复位：泄漏积分–发放</text>
+  <text x="1030" y="668" font-size="10" fill="#64748b">τ ~ 10 ms 的记忆保持 + λ ~ 0.5 mm 的可达范围，</text>
+  <text x="1030" y="681" font-size="10" fill="#64748b">划定单个神经元「同时看到什么、记得多久」</text>
+  <rect x="30" y="764" width="1340" height="216" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="786.84" font-size="19" fill="#475569" font-weight="700">三、几何与髓鞘决定 λ；主动电导使树突成为「非线性电缆」</text>
+  <rect x="50" y="790" width="630" height="170" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="70" y="816" font-size="13" fill="#1e293b" font-weight="700">λ 与 τ 的参数学</text>
+  <circle cx="88" cy="844" r="4" fill="#0369a1"/>
+  <text x="100" y="848" font-size="10.5" fill="#475569" font-weight="600">λ = √(r_m/r_i)：大直径（r_i 小）、高膜阻（r_m 大）→ λ 大 → 信号传得远</text>
+  <circle cx="88" cy="876" r="4" fill="#0369a1"/>
+  <text x="100" y="880" font-size="10.5" fill="#475569" font-weight="600">髓鞘：r_m 增大几个数量级、c_m 减小数倍 → λ 延长到 cm 级（跳跃传导）</text>
+  <circle cx="88" cy="908" r="4" fill="#0369a1"/>
+  <text x="100" y="912" font-size="10.5" fill="#475569" font-weight="600">起源：Kelvin 为海底电报电缆发展的方程，被 Hodgkin 等移植到神经突起</text>
+  <rect x="700" y="790" width="640" height="170" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="720" y="816" font-size="13" fill="#1e293b" font-weight="700">从被动到主动</text>
+  <text x="720" y="846" font-size="10.5" fill="#475569">真实树突布满电压门控通道，被动电缆只是零阶近似；带主动电导的「非线性电缆」可支持树突局部放电、</text>
+  <text x="720" y="860.5" font-size="10.5" fill="#475569">反向传播的 AP 与平台电位。</text>
+  <text x="720" y="894" font-size="10.5" fill="#64748b">但线性 λ–τ 框架仍是理解神经元几何—功能关系（树突长度、分叉自相似、髓鞘周期）的第一语言，</text>
+  <text x="720" y="908.5" font-size="10.5" fill="#64748b">也是计算神经科学所有精细模型的底座。</text>
+</svg>

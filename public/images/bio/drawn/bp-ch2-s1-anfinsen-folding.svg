@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Anfinsen 实验与折叠自组织：从序列到唯一天然态</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RNase A（124 aa、4 个二硫键）经 8 mol/L 尿素+β-巯基乙醇变性后透析复性、活性几乎全恢复（1972 诺奖）；Levinthal 悖论 3¹⁰⁰≈10⁴⁸ 构象 vs 毫秒级折叠 → 能量漏斗下坡通道</text>
+  <rect x="30" y="132" width="1340" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Anfinsen 实验：RNase A 的变性—复性（获 1972 年诺贝尔化学奖）</text>
+  <rect x="60" y="185" width="340" height="230" rx="10" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.4"/>
+  <rect x="460" y="185" width="340" height="230" rx="10" fill="#fee2e2" fill-opacity="0.38" stroke="#dc2626" stroke-width="1.4"/>
+  <rect x="860" y="185" width="470" height="230" rx="10" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.4"/>
+  <text x="230" y="212" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">① 天然态（有活性）</text>
+  <text x="630" y="212" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">② 完全去折叠、失活</text>
+  <text x="1095" y="212" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">③ 复性：自发重新氧化</text>
+  <ellipse cx="230" cy="290" rx="55" ry="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.4"/>
+  <text x="230" y="287" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">RNase A</text>
+  <text x="230" y="305" font-size="9.5" fill="#475569" text-anchor="middle">124 个氨基酸</text>
+  <circle cx="191" cy="272" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="201" cy="272" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="194.8" y1="272" x2="197.2" y2="272" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="260" cy="265" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="270" cy="265" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="263.8" y1="265" x2="266.2" y2="265" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="192" cy="315" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="202" cy="315" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="195.8" y1="315" x2="198.2" y2="315" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="258" cy="312" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="268" cy="312" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="261.8" y1="312" x2="264.2" y2="312" stroke="#b45309" stroke-width="2.2"/>
+  <text x="230" y="350" font-size="9.5" fill="#78350f" text-anchor="middle">S–S × 4（链内二硫键）</text>
+  <polyline points="630,295 640.9999996675066,295.0027045990314 634.9716674340686,285.8016606102607 636.898731884884,274.971774987485 633.9461177650425,285.5680983998442 628.2775770293465,276.1411346294801 637.3833835977368,282.3123814029499 638.4032242022595,293.2650032416407 629.7402511860204,300.0438599682511 620.986143408522,306.7046104529897 615.8979214659596,296.9521749898233 625.453223808554,291.5027532643911 616.4369904942115,285.2013616068807 622.6298087076894,294.2925112907664 627.7550003810223,304.02556889419196 626.5611017439146,314.9605863173291 620.0119331866385,306.12269113757134 613.2292394779023,314.7826603091949 623.9091131247989,317.4171050108967 633.449584125043,311.94175907721353 627.8971237555726,321.43755729776666 637.2786971404597,327.1809083077588 627.2148473205445,331.6215081323537 637.5617988192571,327.88779755394916 631.2187986583931,318.90078754175494 632.5402270915819,329.82112759579906 625.2473525398731,321.58620314119486 614.5959615732017,324.33354193994404 613.2450842362108,335.2502781930741 622.8845647875366,340.54937384239105 611.8922585629573,340.13802986823794 601.465428738372,336.63357273351085 605.5783517088871,326.43142273272133 601.3838462430749,336.60030290200604 602.259121136213,347.56542460043886 609.3231895052919,339.13340597635016 615.029790180228,348.5373790057043 617.2301505323584,337.7596977003041 627.7969782174865,334.70320417457737 632.8948691083934,324.9558194758796 633.9166815248234,335.90825753256945 643.3047914318033,330.1755973843952 634.9764311054796,322.9896100287901 636.1339773278972,312.0506847276937 635.6093946105202,323.03816910641433 628.41674232209,331.36077405064543 634.4170281407959,340.5801324932832 624.6623185487787,345.6639933072126 617.4633713088302,353.9811537984162 624.6180732868753,345.62590158167507 616.2018140969458,352.70873867198895 616.7130809995689,341.72062663423276 619.8698101723869,331.18330909467466 625.3220167884207,321.62959552266096 615.2941102170378,326.15077786753665 604.3239142643176,326.95997546943875" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="636.898731884884" cy="274.971774987485" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="615.8979214659596" cy="296.9521749898233" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="613.2292394779023" cy="314.7826603091949" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="631.2187986583931" cy="318.90078754175494" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="601.465428738372" cy="336.63357273351085" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="627.7969782174865" cy="334.70320417457737" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="628.41674232209" cy="331.36077405064543" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="619.8698101723869" cy="331.18330909467466" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <ellipse cx="1095" cy="290" rx="55" ry="42" fill="#d1fae5" stroke="#059669" stroke-width="2.4"/>
+  <text x="1095" y="287" font-size="12" fill="#059669" text-anchor="middle" font-weight="700">天然构象</text>
+  <text x="1095" y="305" font-size="9.5" fill="#475569" text-anchor="middle">自发重氧化</text>
+  <circle cx="1056" cy="272" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="1066" cy="272" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="1059.8" y1="272" x2="1062.2" y2="272" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="1125" cy="265" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="1135" cy="265" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="1128.8" y1="265" x2="1131.2" y2="265" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="1057" cy="315" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="1067" cy="315" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="1060.8" y1="315" x2="1063.2" y2="315" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="1123" cy="312" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <circle cx="1133" cy="312" r="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <line x1="1126.8" y1="312" x2="1129.2" y2="312" stroke="#b45309" stroke-width="2.2"/>
+  <rect x="1036.5" y="341.5" width="117" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1095" y="353.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">几乎全部催化活性恢复</text>
+  <line x1="406" y1="290" x2="452" y2="290" stroke="#1e293b" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <text x="428" y="268" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">8 mol/L 尿素</text>
+  <text x="428" y="318" font-size="9.5" fill="#dc2626" text-anchor="middle">＋β-巯基乙醇</text>
+  <line x1="806" y1="290" x2="852" y2="290" stroke="#1e293b" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <text x="830" y="268" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">透析去除</text>
+  <text x="830" y="318" font-size="9.5" fill="#059669" text-anchor="middle">变性剂</text>
+  <text x="230" y="388" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">牛胰核糖核酸酶</text>
+  <text x="230" y="406" font-size="10" fill="#64748b" text-anchor="middle">含 4 个链内二硫键</text>
+  <text x="630" y="388" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">二硫键还原为游离 –SH</text>
+  <text x="630" y="406" font-size="10" fill="#64748b" text-anchor="middle">非共价相互作用被破坏</text>
+  <text x="1095" y="388" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">无需模板或外部指令</text>
+  <text x="1095" y="406" font-size="10" fill="#64748b" text-anchor="middle">自由能极小的自组织结果</text>
+  <rect x="60" y="438" width="640" height="76" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="76" y="462" font-size="12" fill="#134e4a" font-weight="700">热力学假说（Anfinsen）</text>
+  <text x="76" y="484" font-size="10.5" fill="#475569">天然三维结构由氨基酸一级序列唯一决定，是体系自由能的极小状态；</text>
+  <text x="76" y="502" font-size="10.5" fill="#475569">折叠是自组织（self-organization）过程，不需要额外模板或外部指令。</text>
+  <rect x="720" y="438" width="620" height="76" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.4"/>
+  <text x="736" y="462" font-size="12" fill="#78350f" font-weight="700">体内折叠需要酶学辅助</text>
+  <text x="736" y="484" font-size="10.5" fill="#475569">随机氧化会产生二硫键错配的 scrambled 中间体；</text>
+  <text x="736" y="502" font-size="10.5" fill="#475569">需蛋白质二硫键异构酶（PDI）等催化校正，以避免错配与聚集。</text>
+  <rect x="30" y="552" width="660" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="574.84" font-size="19" fill="#475569" font-weight="700">二、Levinthal 悖论（1969）：折叠不可能是随机搜索</text>
+  <text x="60" y="608" font-size="11" fill="#475569">Cyrus Levinthal 算了一笔账：设每个氨基酸仅有 3 种构象状态，一条 100 肽的构象总数即为——</text>
+  <text x="60" y="672" font-size="18" fill="#1e293b" font-weight="700">3¹⁰⁰ ≈ 10⁴⁸ 种构象</text>
+  <text x="60" y="700" font-size="11" fill="#475569">即使每尝试一个构象仅需 10⁻¹³ s，遍历全部构象也需要约 10³⁵ s：</text>
+  <rect x="60" y="725" width="190" height="60" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="155" y="750" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">≈ 10³⁵ s</text>
+  <text x="155" y="772" font-size="9" fill="#64748b" text-anchor="middle">10⁴⁸ 构象 × 10⁻¹³ s</text>
+  <text x="277" y="756" font-size="22" fill="#1e293b" text-anchor="middle" font-weight="700">≫</text>
+  <rect x="300" y="725" width="170" height="60" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="385" y="750" font-size="14" fill="#b45309" text-anchor="middle" font-weight="700">≈ 10¹⁷ s</text>
+  <text x="385" y="772" font-size="9.5" fill="#64748b" text-anchor="middle">宇宙年龄</text>
+  <text x="497" y="756" font-size="22" fill="#1e293b" text-anchor="middle" font-weight="700">≫</text>
+  <rect x="520" y="725" width="170" height="60" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="605" y="750" font-size="14" fill="#059669" text-anchor="middle" font-weight="700">10⁻³ – 1 s</text>
+  <text x="605" y="772" font-size="9" fill="#64748b" text-anchor="middle">实际折叠（毫秒—秒级）</text>
+  <rect x="60" y="820" width="630" height="120" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="76" y="848" font-size="13" fill="#1e293b" font-weight="700">结论：折叠必须沿「下坡」通道进行</text>
+  <text x="76" y="874" font-size="11" fill="#475569">折叠不可能是盲目随机搜索，而必须沿能量面上大幅收窄的「下坡」通道进行——这一悖论直接催生了能量景观理论</text>
+  <text x="76" y="890" font-size="11" fill="#475569">（右图漏斗）。</text>
+  <text x="76" y="918" font-size="10.5" fill="#64748b">随机搜索远超宇宙年龄，真实折叠仅需毫秒—秒级，两者相差数十个数量级。</text>
+  <rect x="710" y="552" width="660" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="574.84" font-size="19" fill="#475569" font-weight="700">三、折叠能量漏斗：从 10⁴⁸ 构象到唯一天然态</text>
+  <text x="1040" y="622" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">去折叠态集合：~10⁴⁸ 个构象（高构象熵、高自由能）</text>
+  <path d="M 770,655 C 830,770 950,855 1035,890 L 1045,890 C 1130,855 1250,770 1310,655 Z" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2.4"/>
+  <ellipse cx="1040" cy="655" rx="270" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <ellipse cx="1040" cy="708" rx="235" ry="12" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
+  <ellipse cx="1040" cy="758" rx="185" ry="10" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
+  <ellipse cx="1040" cy="808" rx="128" ry="8" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
+  <ellipse cx="1040" cy="852" rx="62" ry="6" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
+  <polyline points="1040,675 975,710 1085,750 995,790 1055,832 1040,878" fill="none" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <text x="860" y="780" font-size="10.5" fill="#831843" text-anchor="end" font-weight="700">下坡通道</text>
+  <line x1="864" y1="776" x2="992" y2="788" stroke="#be185d" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <rect x="854.43" y="663.925" width="51.14" height="16.15" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="880" y="675.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">构象熵大</text>
+  <line x1="733" y1="640" x2="733" y2="895" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="722" y="768" font-size="11" fill="#475569" text-anchor="end" font-weight="700">自由能 G</text>
+  <circle cx="1040" cy="893" r="8" fill="#059669" stroke="#059669" stroke-width="1.5"/>
+  <text x="1040" y="925" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">天然态：唯一自由能极小</text>
+  <text x="730" y="950" font-size="10" fill="#64748b">Anfinsen 原理是结构生物学的理论基石：由序列预测结构、由结构解释功能；朊病毒为序列相同而构象可遗传的例外。</text>
+</svg>

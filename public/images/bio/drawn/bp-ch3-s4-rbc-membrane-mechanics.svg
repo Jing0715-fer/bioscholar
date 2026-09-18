@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">红细胞膜力学：剪切模量、面积过剩与形变模式</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">μ ≈ 5–10 μN/m（血影蛋白网架）；κ ≈ 2×10⁻¹⁹ J；KA ≈ 0.5 N/m；面积过剩 ~40% → 双凹形与挤过 3–4 μm 毛细血管（tank-treading，~0.1 s）</text>
+  <rect x="30" y="132" width="1340" height="322" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、红细胞膜 = 脂双层（面积刚度）+ 血影蛋白网架（剪切刚度）</text>
+  <path d="M 82,258 Q 116,212 148,238 Q 180,212 214,258 Q 180,304 148,278 Q 116,304 82,258" fill="#fee2e2" fill-opacity="0.75" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="148" y="260" font-size="10" fill="#64748b" text-anchor="middle">侧面</text>
+  <text x="148" y="330" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">双凹圆盘形（静息）</text>
+  <path d="M 82,355 Q 82,346 91,346 M 205,346 Q 214,346 214,355" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="91" y1="346" x2="205" y2="346" stroke="#64748b" stroke-width="1.7"/>
+  <text x="148" y="370" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">直径约 8 μm</text>
+  <circle cx="370" cy="258" r="58" fill="#fee2e2" fill-opacity="0.75" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="370" cy="258" r="17" fill="#f8fafc" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="370" y="262" font-size="10" fill="#64748b" text-anchor="middle">正面</text>
+  <text x="370" y="342" font-size="10.5" fill="#64748b" text-anchor="middle">中央凹陷</text>
+  <line x1="370" y1="324" x2="370" y2="300" stroke="#64748b" stroke-width="1.2"/>
+  <g><circle cx="500" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="500" y1="200" x2="500" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="500" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="524" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="524" y1="200" x2="524" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="524" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="548" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="548" y1="200" x2="548" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="548" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="572" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="572" y1="200" x2="572" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="572" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="596" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="596" y1="200" x2="596" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="596" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="620" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="620" y1="200" x2="620" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="620" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="644" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="644" y1="200" x2="644" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="644" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="668" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="668" y1="200" x2="668" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="668" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="692" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="692" y1="200" x2="692" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="692" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="716" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="716" y1="200" x2="716" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="716" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="740" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="200" x2="740" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="200" x2="764" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="200" x2="788" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="200" x2="812" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="200" x2="836" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="200" x2="860" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="200" x2="884" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="200" x2="908" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="200" x2="932" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="200" x2="956" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="200" x2="980" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1004" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1004" y1="200" x2="1004" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1004" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1028" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1028" y1="200" x2="1028" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1028" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1052" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1052" y1="200" x2="1052" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1052" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1076" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1076" y1="200" x2="1076" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1076" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1100" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1100" y1="200" x2="1100" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1100" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1124" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1124" y1="200" x2="1124" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1124" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1148" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1148" y1="200" x2="1148" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1148" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1172" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1172" y1="200" x2="1172" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1172" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1196" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1196" y1="200" x2="1196" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1196" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1220" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1220" y1="200" x2="1220" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1220" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1244" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1244" y1="200" x2="1244" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1244" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1268" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1268" y1="200" x2="1268" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1268" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1292" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1292" y1="200" x2="1292" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1292" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1316" cy="196" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1316" y1="200" x2="1316" y2="208" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1316" cy="212" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="1180" y="184" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">脂双层：面积压缩模量 KA ≈ 0.5 N/m（几乎不可压）</text>
+  <rect x="626" y="190" width="26" height="34" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="639" y="186" font-size="9.5" fill="#4c1d95" text-anchor="middle">带 3 蛋白</text>
+  <rect x="920" y="190" width="20" height="34" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="930" y="186" font-size="9.5" fill="#4c1d95" text-anchor="middle">血型糖蛋白</text>
+  <line x1="639" y1="224" x2="639" y2="300" stroke="#d97706" stroke-width="2.4"/>
+  <text x="600" y="268" font-size="10" fill="#d97706" text-anchor="middle" font-weight="700">锚蛋白</text>
+  <line x1="540" y1="300" x2="690" y2="300" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="690" y1="300" x2="840" y2="300" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="840" y1="300" x2="990" y2="300" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="990" y1="300" x2="1140" y2="300" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="1140" y1="300" x2="1290" y2="300" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="615" y1="362" x2="765" y2="362" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="765" y1="362" x2="915" y2="362" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="915" y1="362" x2="1065" y2="362" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="1065" y1="362" x2="1215" y2="362" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="540" y1="300" x2="615" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="690" y1="300" x2="765" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="690" y1="300" x2="615" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="840" y1="300" x2="915" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="840" y1="300" x2="765" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="990" y1="300" x2="1065" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="990" y1="300" x2="915" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="1140" y1="300" x2="1215" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="1140" y1="300" x2="1065" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <line x1="1290" y1="300" x2="1215" y2="362" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="540" cy="300" r="4" fill="#0369a1"/>
+  <circle cx="690" cy="300" r="4" fill="#0369a1"/>
+  <circle cx="840" cy="300" r="4" fill="#0369a1"/>
+  <circle cx="990" cy="300" r="4" fill="#0369a1"/>
+  <circle cx="1140" cy="300" r="4" fill="#0369a1"/>
+  <circle cx="1290" cy="300" r="4" fill="#0369a1"/>
+  <circle cx="615" cy="362" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="611" y1="362" x2="619" y2="362" stroke="#6d28d9" stroke-width="1.4"/>
+  <circle cx="765" cy="362" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="761" y1="362" x2="769" y2="362" stroke="#6d28d9" stroke-width="1.4"/>
+  <circle cx="915" cy="362" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="911" y1="362" x2="919" y2="362" stroke="#6d28d9" stroke-width="1.4"/>
+  <circle cx="1065" cy="362" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="1061" y1="362" x2="1069" y2="362" stroke="#6d28d9" stroke-width="1.4"/>
+  <circle cx="1215" cy="362" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="1211" y1="362" x2="1219" y2="362" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="1150" y="288" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">血影蛋白（spectrin）四聚体</text>
+  <text x="762" y="396" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">结点：短肌动蛋白丝 + 蛋白 4.1</text>
+  <line x1="830" y1="388" x2="830" y2="366" stroke="#64748b" stroke-width="1.2"/>
+  <text x="615" y="396" font-size="10.5" fill="#64748b" text-anchor="middle">网架提供剪切刚度 μ</text>
+  <text x="915" y="438" font-size="10.5" fill="#64748b" text-anchor="middle">成熟红细胞无细胞核与细胞器——最便于力学表征的真核细胞</text>
+  <rect x="30" y="478" width="1340" height="252" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="500.84" font-size="19" fill="#475569" font-weight="700">二、经典力学参数（Evans–Skalak 量级）与双凹形的物理</text>
+  <rect x="60" y="522" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="549.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="210" y="522" width="205" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312.5" y="549.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">数值</text>
+  <rect x="415" y="522" width="345" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="587.5" y="549.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">含义</text>
+  <rect x="60" y="566" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="590.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">剪切模量 μ</text>
+  <rect x="210" y="566" width="205" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312.5" y="590.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">≈ 5–10 μN/m</text>
+  <rect x="415" y="566" width="345" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="587.5" y="590.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">网架抗剪切（比软橡皮低 5 个数量级）</text>
+  <rect x="60" y="604" width="700" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="604" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="628.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">弯曲刚度 κ</text>
+  <rect x="210" y="604" width="205" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312.5" y="628.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">≈ 2×10⁻¹⁹ J（~50 k_BT）</text>
+  <rect x="415" y="604" width="345" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="587.5" y="628.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">抗弯</text>
+  <rect x="60" y="642" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="666.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">面积压缩模量 KA</text>
+  <rect x="210" y="642" width="205" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312.5" y="666.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">≈ 0.5 N/m</text>
+  <rect x="415" y="642" width="345" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="587.5" y="666.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">膜面积几乎不可压</text>
+  <rect x="60" y="680" width="700" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="680" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="704.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">表面积/体积比</text>
+  <rect x="210" y="680" width="205" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312.5" y="704.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">≈ 0.6（等体积球为 1）</text>
+  <rect x="415" y="680" width="345" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="587.5" y="704.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">「面积过剩」约 40%</text>
+  <rect x="800" y="512" width="556" height="200" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="820" y="538" font-size="13.5" fill="#dc2626" font-weight="700">双凹形的物理：面积过剩</text>
+  <circle cx="856" cy="590" r="26" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="856" y="636" font-size="9.5" fill="#64748b" text-anchor="middle">等体积球</text>
+  <path d="M 920,590 Q 942,552 966,578 Q 990,552 1012,590 Q 990,628 966,602 Q 942,628 920,590" fill="#fee2e2" fill-opacity="0.75" stroke="#dc2626" stroke-width="2"/>
+  <text x="966" y="636" font-size="9.5" fill="#dc2626" text-anchor="middle">双凹碟形（+40% 表面积）</text>
+  <line x1="886" y1="590" x2="912" y2="590" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="1044" y="566" font-size="10.5" fill="#475569">与同体积球相比多出约 40% 的表面积——细胞无需拉伸膜</text>
+  <text x="1044" y="580" font-size="10.5" fill="#475569">（KA 很大）即可大幅改变形状。</text>
+  <text x="1044" y="632" font-size="10.5" fill="#475569">双凹碟形是给定面积与体积下弯曲能极小的形状之一，</text>
+  <text x="1044" y="646" font-size="10.5" fill="#475569">兼顾气体交换效率（表面积/扩散距离）与微血管流体力学</text>
+  <text x="1044" y="660" font-size="10.5" fill="#475569">（阻力小）。</text>
+  <rect x="30" y="756" width="1340" height="224" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="778.84" font-size="19" fill="#475569" font-weight="700">三、挤过毛细血管：变形性是红细胞的「通行证」</text>
+  <line x1="60" y1="806" x2="560" y2="806" stroke="#0369a1" stroke-width="4"/>
+  <line x1="60" y1="886" x2="560" y2="886" stroke="#0369a1" stroke-width="4"/>
+  <path d="M 585,806 Q 576,806 576,815 M 576,877 Q 576,886 585,886" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="576" y1="815" x2="576" y2="877" stroke="#64748b" stroke-width="1.7"/>
+  <text x="594" y="846" font-size="14" fill="#64748b" text-anchor="start" font-weight="600">3–4 μm</text>
+  <text x="340" y="796" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">毛细血管（脾窦缝隙窄至 ~2 μm）</text>
+  <path d="M 82,846 Q 100,818 122,838 Q 144,818 162,846 Q 144,874 122,854 Q 100,874 82,846" fill="#fee2e2" fill-opacity="0.75" stroke="#dc2626" stroke-width="2"/>
+  <line x1="178" y1="846" x2="216" y2="846" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <path d="M 250,858 C 250,824 282,812 316,812 C 360,812 380,830 380,848 C 352,862 288,868 250,858 Z" fill="#fee2e2" fill-opacity="0.85" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="315" y="912" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">子弹形 / 降落伞形</text>
+  <text x="315" y="930" font-size="10" fill="#64748b" text-anchor="middle">形变时间 ~0.1 s</text>
+  <circle cx="480" cy="846" r="26" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <path d="M 454,846 A 26 26 0 0 1 506,846" fill="none" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <path d="M 506,846 A 26 26 0 0 1 454,846" fill="none" stroke="#0f766e" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="480" y="912" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">tank-treading 翻滚</text>
+  <text x="480" y="930" font-size="10" fill="#64748b" text-anchor="middle">膜绕不变表面积重排，网架受剪</text>
+  <rect x="680" y="800" width="340" height="82" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#b45309" stroke-width="1.2"/>
+  <text x="700" y="826" font-size="12.5" fill="#78350f" font-weight="700">内部黏性耗散</text>
+  <text x="700" y="850" font-size="10.5" fill="#475569">血红蛋白溶液黏度高：</text>
+  <text x="700" y="864" font-size="10.5" fill="#475569">细胞质黏度约 6–10 mPa·s——黏性耗散成为主要阻力。</text>
+  <rect x="1040" y="800" width="316" height="82" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="1060" y="826" font-size="12.5" fill="#dc2626" font-weight="700">病理：膜变硬 → 脾脏滞留</text>
+  <text x="1060" y="850" font-size="10.5" fill="#475569">疟原虫感染、镰刀型贫血、遗传性球形红细胞增多症。</text>
+  <text x="680" y="916" font-size="10.5" fill="#64748b">红细胞的力学（μ、κ、黏度、面积过剩）直接就是它的生理学与病理学——「结构—力学—功能」统一的教科书案例，</text>
+  <text x="680" y="930" font-size="10.5" fill="#64748b">也是血液流变学定量建模的基石。</text>
+</svg>

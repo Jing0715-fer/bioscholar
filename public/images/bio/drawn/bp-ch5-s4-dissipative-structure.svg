@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">非平衡态热力学与耗散结构：从最小熵产生到时空自组织</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">线性区：最小熵产生（Onsager 1931，1968 诺奖）；跨过 λc：涨落放大、分岔出耗散结构（Prigogine 1977 诺奖）——贝纳尔六角涡胞、糖酵解 NADH 振荡、黏菌/心电螺旋波；MEPP 为强驱动区猜想；涨落定理推广到单分子</text>
+  <rect x="30" y="132" width="1340" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、从平衡走向远离平衡：驱动强度跨过 λc 后涨落放大、分岔出有序</text>
+  <rect x="110" y="181" width="560" height="215" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="110" y1="342.25" x2="670" y2="342.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="250" y1="396" x2="250" y2="181" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="288.5" x2="670" y2="288.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="390" y1="396" x2="390" y2="181" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="234.75" x2="670" y2="234.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="530" y1="396" x2="530" y2="181" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="132.4" y1="396" x2="132.4" y2="402" stroke="#475569" stroke-width="1.8"/>
+  <text x="132.4" y="418" font-size="13" fill="#64748b" text-anchor="middle">平衡</text>
+  <line x1="306" y1="396" x2="306" y2="402" stroke="#475569" stroke-width="1.8"/>
+  <text x="306" y="418" font-size="13" fill="#64748b" text-anchor="middle">线性区</text>
+  <line x1="457.2" y1="396" x2="457.2" y2="402" stroke="#475569" stroke-width="1.8"/>
+  <text x="457.2" y="418" font-size="13" fill="#64748b" text-anchor="middle">λc（分岔点）</text>
+  <line x1="647.6" y1="396" x2="647.6" y2="402" stroke="#475569" stroke-width="1.8"/>
+  <text x="647.6" y="418" font-size="13" fill="#64748b" text-anchor="middle">强驱动</text>
+  <line x1="104" y1="288.5" x2="110" y2="288.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="292.5" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <text x="64" y="288.5" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">状态变量 X</text>
+  <text x="390" y="440" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">驱动强度（离平衡的距离）→</text>
+  <line x1="457.2" y1="181" x2="457.2" y2="396" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <path d="M110.0,288.5 L222.0,286.4 L334.0,282.1 L457.2,276.7" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <path d="M457.2,276.7 L558.0,271.3 L653.2,267.0" fill="none" stroke="#0369a1" stroke-width="2.4" stroke-dasharray="6 5"/>
+  <path d="M457.2,276.7 L530.0,249.8 L586.0,224.0 L653.2,202.5" fill="none" stroke="#be185d" stroke-width="3.2"/>
+  <text x="130" y="205" font-size="10.5" fill="#059669" font-weight="700">线性区</text>
+  <text x="130" y="222" font-size="9.5" fill="#64748b">（最小熵产生，稳定）</text>
+  <text x="480" y="188" font-size="10.5" fill="#475569" font-weight="700">非线性区（远离平衡）</text>
+  <text x="250" y="262" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">热力学分支（稳定 → 失稳）</text>
+  <text x="500" y="244" font-size="10" fill="#dc2626" font-weight="700">涨落被放大 → 分岔</text>
+  <text x="648" y="192" font-size="11" fill="#831843" text-anchor="end" font-weight="700">耗散结构分支</text>
+  <rect x="720" y="176" width="620" height="250" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="740" y="202" font-size="13.5" fill="#1e293b" font-weight="700">两条原理的分工：近平衡 vs 远平衡</text>
+  <rect x="740" y="216" width="580" height="96" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.4"/>
+  <text x="756" y="240" font-size="12" fill="#065f46" font-weight="700">最小熵产生原理（线性区）</text>
+  <text x="756" y="262" font-size="10.5" fill="#475569">Onsager 倒易关系（1931；1968 年诺贝尔化学奖）。靠近平衡的定态熵产生率最小，扰动后自动回归——稳定、</text>
+  <text x="756" y="276" font-size="10.5" fill="#475569">可预测。</text>
+  <rect x="740" y="324" width="580" height="96" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="756" y="348" font-size="12" fill="#831843" font-weight="700">耗散结构（Prigogine，1977 年诺贝尔化学奖）</text>
+  <text x="756" y="370" font-size="10.5" fill="#475569">持续强驱动、超出线性区：涨落不再被衰减而被放大，系统自发「结晶」出新的时空有序结构。</text>
+  <text x="1030" y="440" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">有序以足够的熵产生为代价，且只在开放、远离平衡的条件下出现</text>
+  <rect x="30" y="468" width="1340" height="292" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="490.84" font-size="19" fill="#475569" font-weight="700">二、三个层次的耗散结构例证：对流、振荡、时空波</text>
+  <rect x="50" y="506" width="420" height="238" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="66" y="532" font-size="12.5" fill="#1e293b" font-weight="700">① 物理：贝纳尔对流</text>
+  <rect x="80" y="560" width="180" height="8" fill="#0369a1" stroke="#0369a1" stroke-width="1"/>
+  <text x="170" y="554" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="600">冷却面（冷）</text>
+  <rect x="80" y="668" width="180" height="8" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+  <text x="170" y="692" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="600">加热面（热）</text>
+  <circle cx="125" cy="618" r="40" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <line x1="105" y1="660" x2="105" y2="578" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="145" y1="578" x2="145" y2="660" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <circle cx="215" cy="618" r="40" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <line x1="195" y1="578" x2="195" y2="660" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="235" y1="660" x2="235" y2="578" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <polygon points="342.5166604983954,603 320,616 297.4833395016046,603 297.4833395016046,577 320,564 342.5166604983954,577" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.8"/>
+  <polygon points="394.5166604983954,629 372,642 349.4833395016046,629 349.4833395016046,603 372,590 394.5166604983954,603" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.8"/>
+  <polygon points="342.5166604983954,655 320,668 297.4833395016046,655 297.4833395016046,629 320,616 342.5166604983954,629" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="1.8"/>
+  <text x="360" y="690" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">顶面观：六角涡胞</text>
+  <text x="66" y="724" font-size="10" fill="#64748b">温度梯度持续驱动 → 流体自组织出规则对流胞</text>
+  <rect x="490" y="506" width="420" height="238" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="506" y="532" font-size="12.5" fill="#1e293b" font-weight="700">② 化学：糖酵解振荡与 BZ 反应</text>
+  <rect x="520" y="585" width="190" height="105" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="520" y1="663.75" x2="710" y2="663.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="567.5" y1="690" x2="567.5" y2="585" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="520" y1="637.5" x2="710" y2="637.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="615" y1="690" x2="615" y2="585" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="520" y1="611.25" x2="710" y2="611.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="662.5" y1="690" x2="662.5" y2="585" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="514" y1="690" x2="520" y2="690" stroke="#475569" stroke-width="1.8"/>
+  <text x="510" y="694" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="514" y1="585" x2="520" y2="585" stroke="#475569" stroke-width="1.8"/>
+  <text x="510" y="589" font-size="13" fill="#64748b" text-anchor="end">—</text>
+  <text x="615" y="573" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">NADH 荧光强度</text>
+  <path d="M520.0,637.5 L523.2,627.1 L526.3,617.8 L529.5,610.3 L532.7,605.5 L535.8,603.9 L539.0,605.5 L542.2,610.3 L545.3,617.8 L548.5,627.1 L551.7,637.5 L554.8,647.9 L558.0,657.2 L561.2,664.7 L564.3,669.5 L567.5,671.1 L570.7,669.5 L573.8,664.7 L577.0,657.2 L580.2,647.9 L583.3,637.5 L586.5,627.1 L589.7,617.8 L592.8,610.3 L596.0,605.5 L599.2,603.9 L602.3,605.5 L605.5,610.3 L608.7,617.8 L611.8,627.1 L615.0,637.5 L618.2,647.9 L621.3,657.2 L624.5,664.7 L627.7,669.5 L630.8,671.1 L634.0,669.5 L637.2,664.7 L640.3,657.2 L643.5,647.9 L646.7,637.5 L649.8,627.1 L653.0,617.8 L656.2,610.3 L659.3,605.5 L662.5,603.9 L665.7,605.5 L668.8,610.3 L672.0,617.8 L675.2,627.1 L678.3,637.5 L681.5,647.9 L684.7,657.2 L687.8,664.7 L691.0,669.5 L694.2,671.1 L697.3,669.5 L700.5,664.7 L703.7,657.2 L706.8,647.9 L710.0,637.5" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <text x="615" y="716" font-size="10" fill="#64748b" text-anchor="middle">时间 →</text>
+  <text x="725" y="606" font-size="10" fill="#475569">酵母糖酵解：NADH 周期性荧光振荡</text>
+  <text x="725" y="660" font-size="10" fill="#475569">BZ 反应：颜色周期切换</text>
+  <text x="506" y="728" font-size="10" fill="#64748b">代谢振荡 = 分子水平的耗散结构</text>
+  <rect x="930" y="506" width="420" height="238" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="946" y="532" font-size="12.5" fill="#1e293b" font-weight="700">③ 生物：螺旋波与同步</text>
+  <path d="M1017.0,644.8L1017.2,645.7L1017.2,646.6L1017.2,647.5L1017.1,648.5L1016.9,649.5L1016.5,650.5L1016.1,651.4L1015.5,652.4L1014.9,653.4L1014.1,654.3L1013.3,655.1L1012.3,656.0L1011.3,656.7L1010.1,657.4L1008.9,658.0L1007.6,658.5L1006.2,658.9L1004.7,659.2L1003.2,659.4L1001.6,659.5L1000.0,659.4L998.4,659.2L996.7,658.9L995.0,658.4L993.4,657.8L991.7,657.0L990.1,656.1L988.5,655.1L987.0,653.9L985.5,652.6L984.1,651.1L982.8,649.5L981.6,647.8L980.5,646.0L979.6,644.0L978.7,641.9L978.0,639.8L977.5,637.5L977.1,635.2L976.9,632.8L976.9,630.4L977.0,627.9L977.3,625.4L977.9,622.9L978.6,620.4L979.5,617.9L980.6,615.4L981.9,613.0L983.4,610.7L985.1,608.4L987.0,606.3L989.0,604.2L991.3,602.3L993.7,600.5L996.2,598.9L998.9,597.4L1001.8,596.1L1004.7,595.0L1007.8,594.1L1011.0,593.5L1014.2,593.0L1017.6,592.8L1020.9,592.8L1024.3,593.1L1027.8,593.6L1031.2,594.3L1034.6,595.3L1037.9,596.6L1041.2,598.1L1044.5,599.9L1047.6,601.9L1050.6,604.2L1053.5,606.7L1056.2,609.4L1058.7,612.3L1061.1,615.5L1063.3,618.8L1065.2,622.3L1066.9,626.0L1068.3,629.9L1069.5,633.8L1070.5,637.9L1071.1,642.1L1071.4,646.4L1071.5,650.7L1071.2,655.1L1070.6,659.4L1069.7,663.8L1068.5,668.1L1067.0,672.4" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <circle cx="1010" cy="640" r="66" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="1010" y="726" font-size="9.5" fill="#64748b" text-anchor="middle">螺旋波（示意）</text>
+  <circle cx="1108" cy="588.5" r="3.5" fill="#dc2626"/>
+  <text x="1118" y="592" font-size="10.5" fill="#475569" font-weight="600">黏菌聚集的螺旋波</text>
+  <circle cx="1108" cy="622.5" r="3.5" fill="#dc2626"/>
+  <text x="1118" y="626" font-size="10.5" fill="#475569" font-weight="600">心肌电螺旋波</text>
+  <circle cx="1108" cy="656.5" r="3.5" fill="#dc2626"/>
+  <text x="1118" y="660" font-size="10.5" fill="#475569" font-weight="600">心脏起搏与纤毛同步摆动</text>
+  <text x="946" y="728" font-size="10" fill="#64748b">反应–扩散方程描述的时空自组织</text>
+  <rect x="30" y="784" width="1340" height="196" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="806.84" font-size="19" fill="#475569" font-weight="700">三、最小 vs 最大熵产生并不矛盾；随机热力学把第二定律推广到单分子</text>
+  <text x="370" y="844" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">近平衡 vs 远平衡：两条原理的分工</text>
+  <rect x="50" y="856" width="90" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="883.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700"></text>
+  <rect x="140" y="856" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="270" y="883.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">最小熵产生</text>
+  <rect x="400" y="856" width="290" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="545" y="883.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">最大熵产生（MEPP）</text>
+  <rect x="50" y="900" width="90" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="922.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">适用区</text>
+  <rect x="140" y="900" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="270" y="922.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">线性区（近平衡）</text>
+  <rect x="400" y="900" width="290" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="545" y="922.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">强驱动区（远离平衡）</text>
+  <rect x="50" y="934" width="640" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="934" width="90" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="956.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">地位</text>
+  <rect x="140" y="934" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="270" y="956.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">定理（Onsager 倒易关系）</text>
+  <rect x="400" y="934" width="290" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="545" y="956.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">猜想性假说（Kleidon、Dewar）</text>
+  <rect x="50" y="968" width="90" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="990.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">预言</text>
+  <rect x="140" y="968" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="270" y="990.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">熵产生率取极小</text>
+  <rect x="400" y="968" width="290" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="545" y="990.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">熵产生率取极大（有条件）</text>
+  <rect x="710" y="826" width="620" height="150" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="730" y="852" font-size="13" fill="#1e293b" font-weight="700">单分子尺度的非平衡：随机热力学</text>
+  <text x="730" y="878" font-size="10.5" fill="#475569">涨落定理与 Jarzynski/Crooks 关系把第二定律推广到小系统、短时间的涨落尺度，其修正项可在光镊拉伸、</text>
+  <text x="730" y="892.5" font-size="10.5" fill="#475569">分子马达做功等单分子实验中直接验证。</text>
+  <text x="730" y="934" font-size="10.5" fill="#64748b">生命恰恰运行在这个尺度上——非平衡物理与生物学在此合流，为「什么是活的」提供越来越定量的回答。</text>
+</svg>

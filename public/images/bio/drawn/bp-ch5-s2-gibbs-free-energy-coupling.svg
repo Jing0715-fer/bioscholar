@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">吉布斯自由能与耦合反应：ΔG 加和与共享中间体</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">ΔG = ΔG°′ + RT lnQ（平衡时 ΔG°′ = −RT lnKeq）；ATP 水解 ΔG°′ = −30.5 kJ/mol 居能量阶梯中部；谷氨酰胺合成 +14.2 与 ATP 水解 −30.5 耦合 → 净 −16.3 kJ/mol</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、ΔG = ΔG°′ + RT·lnQ：反应的「方向感」来自反应商</text>
+  <rect x="110" y="220" width="560" height="155" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="110" y1="336.25" x2="670" y2="336.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="250" y1="375" x2="250" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="297.5" x2="670" y2="297.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="390" y1="375" x2="390" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="258.75" x2="670" y2="258.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="530" y1="375" x2="530" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="121.2" y1="375" x2="121.2" y2="381" stroke="#475569" stroke-width="1.8"/>
+  <text x="121.2" y="397" font-size="13" fill="#64748b" text-anchor="middle">Q 小</text>
+  <line x1="390" y1="375" x2="390" y2="381" stroke="#475569" stroke-width="1.8"/>
+  <text x="390" y="397" font-size="13" fill="#64748b" text-anchor="middle">Q = Keq</text>
+  <line x1="658.8" y1="375" x2="658.8" y2="381" stroke="#475569" stroke-width="1.8"/>
+  <text x="658.8" y="397" font-size="13" fill="#64748b" text-anchor="middle">Q 大</text>
+  <line x1="104" y1="362.6" x2="110" y2="362.6" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="366.6" font-size="13" fill="#64748b" text-anchor="end">−</text>
+  <line x1="104" y1="297.5" x2="110" y2="297.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="301.5" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="104" y1="232.4" x2="110" y2="232.4" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="236.4" font-size="13" fill="#64748b" text-anchor="end">+</text>
+  <text x="64" y="297.5" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">ΔG</text>
+  <line x1="110" y1="297.5" x2="670" y2="297.5" stroke="#475569" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="390" y1="220" x2="390" y2="375" stroke="#475569" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <path d="M110.0,344.0 L390.0,297.5 L670.0,251.0" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <circle cx="390" cy="297.5" r="6" fill="#075985"/>
+  <text x="390" y="208" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">平衡：ΔG = 0</text>
+  <text x="240" y="350" font-size="11.5" fill="#059669" text-anchor="middle" font-weight="700">ΔG &lt; 0：正向自发</text>
+  <text x="668" y="245" font-size="11.5" fill="#dc2626" text-anchor="end" font-weight="700">ΔG &gt; 0：逆向</text>
+  <text x="110" y="420" font-size="10.5" fill="#64748b">抽走产物 / 补充底物 → Q 偏离平衡 → 反应持续正向（通量控制原理）</text>
+  <rect x="740" y="170" width="600" height="230" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1040" y="210" font-size="22" fill="#1e293b" text-anchor="middle" font-weight="700">ΔG = ΔG°′ + RT·ln Q</text>
+  <text x="1040" y="244" font-size="14" fill="#475569" text-anchor="middle" font-weight="600">Q = [C]^c·[D]^d / ([A]^a·[B]^b)</text>
+  <line x1="780" y1="264" x2="1300" y2="264" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="798" cy="292" r="4" fill="#0369a1"/>
+  <text x="812" y="296" font-size="11.5" fill="#1e293b" font-weight="700">标准态：1 mol/L、pH 7、25 °C</text>
+  <text x="1120" y="296" font-size="11" fill="#475569">R = 8.315 J·mol⁻¹·K⁻¹</text>
+  <circle cx="798" cy="326" r="4" fill="#0369a1"/>
+  <text x="812" y="330" font-size="11.5" fill="#1e293b" font-weight="700">平衡时 Q = Keq、ΔG = 0</text>
+  <text x="1120" y="330" font-size="11" fill="#475569">→ ΔG°′ = −RT·ln Keq</text>
+  <circle cx="798" cy="360" r="4" fill="#0369a1"/>
+  <text x="812" y="364" font-size="11.5" fill="#1e293b" font-weight="700">判据</text>
+  <text x="1120" y="364" font-size="11" fill="#475569">Q &lt; Keq 时 ΔG &lt; 0，正向自发</text>
+  <rect x="30" y="458" width="1340" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="480.84" font-size="19" fill="#475569" font-weight="700">二、磷酸化合物「能量阶梯」：ATP 居中，扮演能量通用货币</text>
+  <text x="430" y="492" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">水解 ΔG°′（kJ/mol）</text>
+  <text x="330" y="528" font-size="11.5" fill="#475569" text-anchor="end" font-weight="600">磷酸烯醇式丙酮酸（PEP）</text>
+  <rect x="350" y="512" width="346.64" height="24" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="706.64" y="529" font-size="11.5" fill="#075985" text-anchor="end" font-weight="700">−61.9</text>
+  <text x="330" y="564" font-size="11.5" fill="#475569" text-anchor="end" font-weight="600">1,3-二磷酸甘油酸</text>
+  <rect x="350" y="548" width="276.64" height="24" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="636.64" y="565" font-size="11.5" fill="#075985" text-anchor="end" font-weight="700">−49.4</text>
+  <text x="330" y="600" font-size="11.5" fill="#475569" text-anchor="end" font-weight="600">磷酸肌酸</text>
+  <rect x="350" y="584" width="241.35999999999999" height="24" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="601.36" y="601" font-size="11.5" fill="#075985" text-anchor="end" font-weight="700">−43.1</text>
+  <text x="330" y="636" font-size="11.5" fill="#831843" text-anchor="end" font-weight="700">ATP → ADP + Pi</text>
+  <rect x="350" y="620" width="170.79999999999998" height="24" rx="4" fill="#be185d" stroke="#831843" stroke-width="1.6"/>
+  <text x="530.8" y="637" font-size="11.5" fill="#831843" text-anchor="end" font-weight="700">−30.5</text>
+  <text x="330" y="672" font-size="11.5" fill="#475569" text-anchor="end" font-weight="600">葡萄糖-6-磷酸</text>
+  <rect x="350" y="656" width="77.28" height="24" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="437.28" y="673" font-size="11.5" fill="#075985" text-anchor="end" font-weight="700">−13.8</text>
+  <text x="480" y="706" font-size="10.5" fill="#64748b" text-anchor="middle">负值越大，磷酰基转移势越高（越「富」）</text>
+  <rect x="820" y="480" width="520" height="220" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="840" y="508" font-size="13" fill="#831843" font-weight="700">ATP 的「中部」位置并非偶然</text>
+  <circle cx="848" cy="536" r="4" fill="#be185d"/>
+  <text x="862" y="540" font-size="11.5" fill="#1e293b" font-weight="700">向低能化合物转移磷酰基</text>
+  <text x="862" y="560" font-size="10.5" fill="#475569">G-6-P（−13.8）等</text>
+  <circle cx="848" cy="588" r="4" fill="#be185d"/>
+  <text x="862" y="592" font-size="11.5" fill="#1e293b" font-weight="700">被高能化合物「充电」</text>
+  <text x="862" y="612" font-size="10.5" fill="#475569">PEP（−61.9）、磷酸肌酸（−43.1）</text>
+  <circle cx="848" cy="640" r="4" fill="#be185d"/>
+  <text x="862" y="644" font-size="11.5" fill="#1e293b" font-weight="700">细胞内 [ATP]/[ADP] ~10³</text>
+  <text x="862" y="664" font-size="10.5" fill="#475569">实际水解 ΔG 达 −50 ~ −60 kJ/mol，比标准态更负</text>
+  <rect x="30" y="754" width="1340" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="776.84" font-size="19" fill="#475569" font-weight="700">三、耦合反应范例：谷氨酰胺合成（共享中间体结算）</text>
+  <rect x="60" y="792" width="620" height="52" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="80" y="812" font-size="12" fill="#1e293b" font-weight="700">谷氨酸 + NH₄⁺ → 谷氨酰胺</text>
+  <text x="660" y="812" font-size="11.5" fill="#dc2626" text-anchor="end" font-weight="700">ΔG°′ ≈ +14.2 kJ/mol（不可自发）</text>
+  <text x="80" y="832" font-size="9.5" fill="#64748b">酰胺键生物合成（吸能）</text>
+  <text x="370" y="870" font-size="20" fill="#475569" text-anchor="middle" font-weight="700">+</text>
+  <rect x="60" y="888" width="620" height="52" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.4"/>
+  <text x="80" y="908" font-size="12" fill="#1e293b" font-weight="700">ATP → ADP + Pi</text>
+  <text x="660" y="908" font-size="11.5" fill="#059669" text-anchor="end" font-weight="700">ΔG°′ = −30.5 kJ/mol</text>
+  <text x="80" y="928" font-size="9.5" fill="#64748b">放能反应「买单」</text>
+  <line x1="700" y1="866" x2="730" y2="866" stroke="#1e293b" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <rect x="744" y="838" width="200" height="56" rx="8" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="844" y="860" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">总反应 ΔG°′ ≈ −16.3</text>
+  <text x="844" y="880" font-size="10" fill="#475569" text-anchor="middle">kJ/mol（净放能，可行）</text>
+  <rect x="980" y="792" width="360" height="168" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1000" y="818" font-size="13" fill="#1e293b" font-weight="700">机制：共享中间体</text>
+  <text x="1000" y="844" font-size="10.5" fill="#475569">① ATP 先磷酸化谷氨酸 γ-羧基，生成 γ-谷氨酰磷酸</text>
+  <text x="1000" y="858" font-size="10.5" fill="#475569">（高能混合酸酐）；② NH₃ 亲核进攻、释放 Pi。</text>
+  <text x="1000" y="902" font-size="10.5" fill="#64748b">「花钱」与「购物」在分子内先后结算——生物合成与主动转运</text>
+  <text x="1000" y="916" font-size="10.5" fill="#64748b">（离子泵）皆用此设计，ATP 是化学功的通用中介。</text>
+</svg>

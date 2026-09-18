@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">荧光蛋白与标记技术：GFP β 桶、FRET 分子尺与工具折中</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">GFP 238 aa、11 条 β 折叠成桶，S65–Y66–G67 自催化（环化→氧化→脱水）成 HBI；激发 395/475 nm、发射 509 nm；FRET 效率 E=1/(1+(r/R₀)⁶)，r=R₀ 时 E=50%；染料 ~1 nm / 荧光蛋白 ~4 nm / 量子点 5–10 nm</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、GFP：β 桶包埋自催化成熟的发色团</text>
+  <text x="190" y="192" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">GFP（绿色荧光蛋白，238 个氨基酸）</text>
+  <path d="M 100,220 L 100,420 A 90,20 0 0 0 280,420 L 280,220 Z" fill="#f1f5f9" stroke="#0f766e" stroke-width="2.2"/>
+  <ellipse cx="190" cy="220" rx="90" ry="20" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="108" y1="228" x2="113" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="128.5" y1="228" x2="123.5" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="149" y1="228" x2="154" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="169.5" y1="228" x2="164.5" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="190" y1="228" x2="195" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="210.5" y1="228" x2="205.5" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="231" y1="228" x2="236" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="251.5" y1="228" x2="246.5" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <line x1="272" y1="228" x2="277" y2="414" stroke="#0f766e" stroke-width="1.5" opacity="0.65"/>
+  <circle cx="190" cy="320" r="26" fill="#d1fae5" fill-opacity="0.5"/>
+  <circle cx="178" cy="320" r="6" fill="#059669" stroke-width="1"/>
+  <circle cx="190" cy="311" r="6" fill="#059669" stroke-width="1"/>
+  <circle cx="202" cy="320" r="6" fill="#059669" stroke-width="1"/>
+  <line x1="184" y1="314" x2="178" y2="317" stroke="#334155" stroke-width="1.4"/>
+  <line x1="196" y1="314" x2="202" y2="317" stroke="#334155" stroke-width="1.4"/>
+  <text x="190" y="460" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">11 条 β 折叠围成桶状结构</text>
+  <text x="190" y="482" font-size="10" fill="#475569" text-anchor="middle">生色团包埋于桶心：Ser65–Tyr66–Gly67</text>
+  <text x="190" y="504" font-size="10" fill="#475569" text-anchor="middle">桶壁保护发色团免遭淬灭、锁定刚性 → 量子产额高</text>
+  <rect x="78.20599999999999" y="526.5" width="223.58800000000002" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="190" y="538.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">来自维多利亚多管水母 · 无需任何外源辅因子</text>
+  <text x="305" y="200" font-size="12" fill="#1e293b" font-weight="700">生色团自催化成熟：环化 → 氧化 → 脱水</text>
+  <rect x="450.6427" y="231.075" width="48.714600000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="475" y="243.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">① 环化</text>
+  <line x1="475" y1="258" x2="475" y2="280" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="450.6427" y="291.075" width="48.714600000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="475" y="303.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">② 氧化</text>
+  <line x1="475" y1="318" x2="475" y2="340" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="450.6427" y="351.075" width="48.714600000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="475" y="363.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">③ 脱水</text>
+  <line x1="216" y1="340" x2="382" y2="406" stroke="#059669" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-ok)"/>
+  <rect x="383.91415" y="403.075" width="182.1717" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="475" y="415.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">HBI 发色团（对羟苄基咪唑啉酮）</text>
+  <text x="330" y="438" font-size="10.5" fill="#1e293b" font-weight="700">天然 GFP 光谱：激发 395 / 475 nm、发射 509 nm</text>
+  <rect x="330" y="445" width="300" height="85" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="330" y1="508.75" x2="630" y2="508.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="405" y1="530" x2="405" y2="445" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="330" y1="487.5" x2="630" y2="487.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="480" y1="530" x2="480" y2="445" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="330" y1="466.25" x2="630" y2="466.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="555" y1="530" x2="555" y2="445" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="425.1" y1="530" x2="425.1" y2="536" stroke="#475569" stroke-width="1.8"/>
+  <text x="425.1" y="552" font-size="13" fill="#64748b" text-anchor="middle">395</text>
+  <line x1="504.9" y1="530" x2="504.9" y2="536" stroke="#475569" stroke-width="1.8"/>
+  <text x="504.9" y="552" font-size="13" fill="#64748b" text-anchor="middle">475</text>
+  <line x1="539.1" y1="530" x2="539.1" y2="536" stroke="#475569" stroke-width="1.8"/>
+  <text x="539.1" y="552" font-size="13" fill="#64748b" text-anchor="middle">509</text>
+  <path d="M345.0,525.8 L390.0,511.3 L425.1,457.8 L444.0,487.5 L465.0,504.5 L504.9,483.3 L525.0,500.3 L546.0,517.3 L585.0,523.2 L630.0,525.8" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <path d="M465.0,528.3 L495.0,521.5 L519.0,491.8 L539.1,445.0 L558.0,479.0 L585.0,508.8 L630.0,523.2" fill="none" stroke="#059669" stroke-width="2.4"/>
+  <text x="360" y="470" font-size="9.5" fill="#075985" font-weight="700">激发</text>
+  <text x="580" y="470" font-size="9.5" font-weight="700">发射</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、FRET：E = 1/(1+(r/R₀)⁶)——纳米级「分子尺」</text>
+  <circle cx="800" cy="225" r="24" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="800" y="229" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">供体 D</text>
+  <circle cx="1060" cy="225" r="24" fill="#fce7f3" stroke="#be185d" stroke-width="2.5"/>
+  <text x="1060" y="229" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">受体 A</text>
+  <line x1="828" y1="225" x2="1032" y2="225" stroke="#64748b" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="944" y="208" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700" font-style="italic">r</text>
+  <path d="M 832,198 C 890,180 970,180 1028,198" fill="none" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <text x="944" y="174" font-size="9.5" text-anchor="middle" font-weight="700">能量转移（偶极–偶极）</text>
+  <rect x="967.8789" y="280.95" width="144.2422" height="22.099999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1040" y="296.68" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">E = 1 / (1 + (r/R₀)⁶)</text>
+  <rect x="740" y="310" width="580" height="210" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="467.5" x2="1320" y2="467.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="885" y1="520" x2="885" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="415" x2="1320" y2="415" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1030" y1="520" x2="1030" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="362.5" x2="1320" y2="362.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1175" y1="520" x2="1175" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="933.14" y1="520" x2="933.14" y2="526" stroke="#475569" stroke-width="1.8"/>
+  <text x="933.14" y="542" font-size="13" fill="#64748b" text-anchor="middle">R₀</text>
+  <line x1="1126.8600000000001" y1="520" x2="1126.8600000000001" y2="526" stroke="#475569" stroke-width="1.8"/>
+  <text x="1126.8600000000001" y="542" font-size="13" fill="#64748b" text-anchor="middle">2R₀</text>
+  <line x1="1320" y1="520" x2="1320" y2="526" stroke="#475569" stroke-width="1.8"/>
+  <text x="1320" y="542" font-size="13" fill="#64748b" text-anchor="middle">3R₀</text>
+  <line x1="734" y1="520" x2="740" y2="520" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="524" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="734" y1="415" x2="740" y2="415" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="419" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="734" y1="310" x2="740" y2="310" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="314" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
+  <text x="1030" y="564" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">供体–受体间距 r（以 Förster 半径 R₀ 为单位）</text>
+  <text x="694" y="415" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">FRET 效率 E</text>
+  <path d="M740.0,310.0 L754.5,310.0 L769.0,310.0 L783.5,310.0 L798.0,310.2 L812.5,310.6 L827.0,311.7 L841.5,314.3 L856.0,319.4 L870.5,328.1 L885.0,341.7 L899.5,360.3 L914.0,382.9 L928.5,407.0 L943.0,430.3 L957.5,450.6 L972.0,467.3 L986.5,480.3 L1001.0,490.2 L1015.5,497.6 L1030.0,503.1 L1044.5,507.1 L1059.0,510.1 L1073.5,512.3 L1088.0,514.0 L1102.5,515.3 L1117.0,516.2 L1131.5,517.0 L1146.0,517.6 L1160.5,518.0 L1175.0,518.4 L1189.5,518.7 L1204.0,518.9 L1218.5,519.1 L1233.0,519.2 L1247.5,519.4 L1262.0,519.5 L1276.5,519.5 L1291.0,519.6 L1305.5,519.7 L1320.0,519.7" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <line x1="933" y1="310" x2="933" y2="520" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="740" y1="415" x2="933" y2="415" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="933" cy="415" r="5" fill="#134e4a"/>
+  <rect x="1011.577775" y="389.075" width="104.84445" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1064" y="401.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">r = R₀ 时 E = 50%</text>
+  <line x1="996" y1="402" x2="940" y2="412" stroke="#64748b" stroke-width="1.2"/>
+  <text x="730" y="552" font-size="10" fill="#475569" font-weight="600">E ∝ r⁻⁶：距离稍增、效率陡降——环化 FRET 传感器可读出活细胞内的构象与活性。</text>
+  <rect x="30" y="592" width="1340" height="388" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、荧光蛋白调色板与标记工具的物理折中</text>
+  <text x="50" y="628" font-size="12.5" fill="#1e293b" font-weight="700">蛋白质工程改造出整套调色板：</text>
+  <rect x="60" y="648" width="88" height="40" rx="6" fill="#4a6fd0" fill-opacity="0.85" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="104" y="706" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">EBFP</text>
+  <rect x="156" y="648" width="88" height="40" rx="6" fill="#6ec6e0" fill-opacity="0.85" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="200" y="706" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">CFP</text>
+  <rect x="252" y="648" width="88" height="40" rx="6" fill="#22a55e" fill-opacity="0.85" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="296" y="706" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">GFP</text>
+  <rect x="348" y="648" width="88" height="40" rx="6" fill="#e6c94c" fill-opacity="0.85" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="392" y="706" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">YFP</text>
+  <rect x="444" y="648" width="88" height="40" rx="6" fill="#d0453e" fill-opacity="0.85" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="488" y="706" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">mCherry</text>
+  <rect x="108.04605000000001" y="739.925" width="83.9079" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="150" y="751.42" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">光激活 PA-GFP</text>
+  <rect x="256.000175" y="739.925" width="147.99964999999997" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="330" y="751.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">光转换 Kaede / Eos（绿→红）</text>
+  <text x="50" y="784" font-size="10" fill="#475569">天然 GFP：395 / 475 nm 激发、509 nm 发射；YFP＝T203Y</text>
+  <text x="50" y="806" font-size="10" fill="#475569">mCherry / mPlum 源自珊瑚 Discosoma 的 DsRed 经单体化改造</text>
+  <rect x="108.3" y="829.5" width="203.4" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="210" y="841.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">光激活 / 光转换变体——超分辨显微的原料</text>
+  <rect x="60.71054999999993" y="863.075" width="258.57890000000015" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="190" y="875.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">2008 年诺贝尔化学奖：下村脩 · Chalfie · 钱永健</text>
+  <text x="50" y="908" font-size="10" fill="#64748b">GFP 与目标蛋白基因融合，使「在活细胞中看指定分子」成为常规操作；量子点（2–10 nm）发射峰随晶粒尺寸可调（量子限制效应：</text>
+  <text x="50" y="922" font-size="10" fill="#64748b">晶粒越小、带隙越宽、发射越蓝），光稳定性远超有机染料——但体积大、间歇闪烁、潜在重金属毒性。</text>
+  <text x="1005" y="630" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">标记技术的物理化学折中</text>
+  <rect x="680" y="650" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="735" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">标签</text>
+  <rect x="790" y="650" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">典型尺寸</text>
+  <rect x="910" y="650" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">亮度与稳定性</text>
+  <rect x="1070" y="650" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1110" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">可编码</text>
+  <rect x="1150" y="650" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">主要应用</text>
+  <rect x="680" y="694" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="735" y="722.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">有机荧光染料</text>
+  <rect x="790" y="694" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">~1 nm</text>
+  <rect x="910" y="694" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">极亮、易漂白</text>
+  <rect x="1070" y="694" width="80" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1110" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">否</text>
+  <rect x="1150" y="694" width="180" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">免疫染色、单分子 FRET</text>
+  <rect x="680" y="740" width="650" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="680" y="740" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="735" y="768.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">荧光蛋白</text>
+  <rect x="790" y="740" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">~4 nm×2.5 nm</text>
+  <rect x="910" y="740" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中等</text>
+  <rect x="1070" y="740" width="80" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1110" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">是</text>
+  <rect x="1150" y="740" width="180" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">活细胞融合表达</text>
+  <rect x="680" y="786" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="735" y="814.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">量子点</text>
+  <rect x="790" y="786" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">5–10 nm</text>
+  <rect x="910" y="786" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">极稳定、宽吸收</text>
+  <rect x="1070" y="786" width="80" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1110" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">否</text>
+  <rect x="1150" y="786" width="180" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">长时程追踪、多重标记</text>
+  <text x="680" y="872" font-size="10" fill="#475569">标记选择＝亮度—光稳定性—尺寸—特异性—功能干扰的多目标折中；免疫荧光以一抗识别抗原、荧光二抗放大信号，可定位内源蛋白</text>
+  <text x="680" y="886" font-size="10" fill="#475569">（多重染色 3–4 种目标），但需固定、无法活体观察。</text>
+</svg>

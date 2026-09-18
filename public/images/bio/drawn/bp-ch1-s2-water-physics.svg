@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">水的物理性质：氢键网络、介电屏蔽与疏水效应</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">氢键 ≈20 kJ/mol（O–H 共价键的 1/20）皮秒级断裂重组；ε ≈ 80 削弱静电 80 倍；0.1 mol/L 下德拜长度 ≈ 1 nm；疏水效应由水熵增驱动（60–80 °C 极大），是折叠与膜自组装的主要驱动力</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、氢键网络：动态四面体与温度缓冲</text>
+  <text x="60" y="182" font-size="11" fill="#1e293b" font-weight="700">每个水分子最多与 4 个近邻连接</text>
+  <text x="60" y="199" font-size="10" fill="#64748b">氢键在皮秒尺度不断断裂重组</text>
+  <line x1="195" y1="330" x2="135" y2="268" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="195" y1="330" x2="255" y2="268" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="195" y1="330" x2="135" y2="392" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="195" y1="330" x2="255" y2="392" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <circle cx="195" cy="330" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="195" y="333.5" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">O</text>
+  <line x1="187.35036429732338" y1="322.0953764405675" x2="184.56867858725917" y2="319.22096787350114" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="184.56867858725917" cy="319.22096787350114" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="184.56867858725917" y="321.72096787350114" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="202.64963570267662" y1="322.0953764405675" x2="205.43132141274083" y2="319.22096787350114" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="205.43132141274083" cy="319.22096787350114" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="205.43132141274083" y="321.72096787350114" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="187.35036429732338" y1="337.9046235594325" x2="184.56867858725917" y2="340.77903212649886" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="184.56867858725917" cy="340.77903212649886" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="184.56867858725917" y="343.27903212649886" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="202.64963570267662" y1="337.9046235594325" x2="205.43132141274083" y2="340.77903212649886" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="205.43132141274083" cy="340.77903212649886" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="205.43132141274083" y="343.27903212649886" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <circle cx="135" cy="268" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="135" y="271.5" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">O</text>
+  <line x1="124.05693758929314" y1="266.88224104773235" x2="120.07764216721792" y2="266.4757832469077" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="120.07764216721792" cy="266.4757832469077" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="120.07764216721792" y="268.9757832469077" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="134.24153420517746" y1="257.02617980655396" x2="133.96572846160564" y2="253.03569973620995" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="133.96572846160564" cy="253.03569973620995" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="133.96572846160564" y="255.53569973620995" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <circle cx="255" cy="268" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="255" y="271.5" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">O</text>
+  <line x1="255.7584657948225" y1="257.02617980655396" x2="256.03427153839436" y2="253.03569973620995" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="256.03427153839436" cy="253.03569973620995" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="256.03427153839436" y="255.53569973620995" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="265.9430624107069" y1="266.88224104773235" x2="269.9223578327821" y2="266.4757832469077" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="269.9223578327821" cy="266.4757832469077" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="269.9223578327821" y="268.9757832469077" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <circle cx="135" cy="392" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="135" y="395.5" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">O</text>
+  <line x1="134.24153420517746" y1="402.97382019344604" x2="133.96572846160564" y2="406.96430026379005" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="133.96572846160564" cy="406.96430026379005" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="133.96572846160564" y="409.46430026379005" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="124.05693758929314" y1="393.11775895226765" x2="120.07764216721792" y2="393.5242167530923" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="120.07764216721792" cy="393.5242167530923" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="120.07764216721792" y="396.0242167530923" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <circle cx="255" cy="392" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="255" y="395.5" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">O</text>
+  <line x1="265.9430624107069" y1="393.11775895226765" x2="269.9223578327821" y2="393.5242167530923" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="269.9223578327821" cy="393.5242167530923" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="269.9223578327821" y="396.0242167530923" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <line x1="255.7584657948225" y1="402.97382019344604" x2="256.03427153839436" y2="406.96430026379005" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="256.03427153839436" cy="406.96430026379005" r="5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <text x="256.03427153839436" y="409.46430026379005" font-size="6.5" fill="#475569" text-anchor="middle" font-weight="700">H</text>
+  <rect x="47.46949999999999" y="296.5" width="95.06100000000002" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="95" y="308.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">氢键 ≈ 20 kJ/mol</text>
+  <rect x="420.7" y="215.84615384615387" width="73.60000000000001" height="106.15384615384615" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="457.5" y="206.84615384615387" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">≈460 kJ/mol</text>
+  <text x="457.5" y="342" font-size="12.5" fill="#64748b" text-anchor="middle">O–H 共价键</text>
+  <rect x="535.7" y="317.38461538461536" width="73.60000000000001" height="4.615384615384616" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="572.5" y="308.38461538461536" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">≈20 kJ/mol</text>
+  <text x="572.5" y="342" font-size="12.5" fill="#64748b" text-anchor="middle">氢键（1/20）</text>
+  <rect x="455.65385" y="369.075" width="128.69230000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="520" y="381.78" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">比热容 4.18 J·g⁻¹·K⁻¹</text>
+  <text x="520" y="406" font-size="10.5" fill="#475569" text-anchor="middle">高比热容与汽化热 → 温度缓冲</text>
+  <text x="520" y="424" font-size="10.5" fill="#475569" text-anchor="middle">水的液态范围恰好覆盖</text>
+  <text x="520" y="442" font-size="10.5" fill="#475569" text-anchor="middle">生命活动的温度区间</text>
+  <line x1="50" y1="456" x2="670" y2="456" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="60" y="476" font-size="11.5" fill="#1e293b" font-weight="700">氢键决定生物结构基元</text>
+  <rect x="110" y="488" width="26" height="44" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="152" y="488" width="26" height="44" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="123" y="514" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">A</text>
+  <text x="165" y="514" font-size="13" fill="#6d28d9" text-anchor="middle" font-weight="700">T</text>
+  <line x1="137" y1="495" x2="151" y2="495" stroke="#64748b" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <line x1="137" y1="531" x2="151" y2="531" stroke="#64748b" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="144" y="548" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">A = T（2 条氢键）</text>
+  <rect x="300" y="488" width="26" height="44" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="342" y="488" width="26" height="44" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="313" y="514" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">G</text>
+  <text x="355" y="514" font-size="13" fill="#be185d" text-anchor="middle" font-weight="700">C</text>
+  <line x1="327" y1="495" x2="341" y2="495" stroke="#64748b" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <line x1="327" y1="513" x2="341" y2="513" stroke="#64748b" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <line x1="327" y1="531" x2="341" y2="531" stroke="#64748b" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="334" y="548" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">G ≡ C（3 条氢键）</text>
+  <text x="450" y="497" font-size="10.5" fill="#475569">碱基配对、α 螺旋与 β 折叠的骨架氢键、</text>
+  <text x="450" y="512" font-size="10.5" fill="#475569">水化壳对离子通道选择性的贡献——本质上都是氢键物理。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、高介电常数与静电屏蔽：ε ≈ 80 与德拜长度</text>
+  <text x="730" y="192" font-size="11.5" fill="#1e293b" font-weight="700">库仑定律 F = q₁q₂/(4πεr²) ∝ 1/ε —— 水将离子间静电作用削弱约 80 倍</text>
+  <circle cx="795" cy="258" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="795" y="261.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="875" cy="258" r="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="875" y="261.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <line x1="812" y1="252" x2="858" y2="252" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <line x1="858" y1="266" x2="812" y2="266" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <text x="835" y="306" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">真空中（ε ≈ 1）</text>
+  <text x="835" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">静电吸引强</text>
+  <circle cx="975" cy="258" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="975" y="261.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="1055" cy="258" r="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1055" y="261.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="997.5111775588169" cy="268.87413835278073" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1077.5111775588168" cy="268.87413835278073" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="976.1036228674338" cy="282.97562845188236" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1056.1036228674338" cy="282.97562845188236" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="953.5357006920772" cy="270.81732636784693" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1033.5357006920772" cy="270.81732636784693" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="953.5357006920772" cy="245.18267363215307" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1033.5357006920772" cy="245.18267363215307" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="976.1036228674338" cy="233.0243715481176" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1056.1036228674338" cy="233.0243715481176" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="997.5111775588169" cy="247.12586164721924" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1077.5111775588168" cy="247.12586164721924" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1003" cy="252" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <circle cx="1015" cy="264" r="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.1"/>
+  <line x1="996" y1="228" x2="1014" y2="228" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <line x1="1034" y1="228" x2="1016" y2="228" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <text x="1015" y="210" font-size="9" fill="#64748b" text-anchor="middle">削弱后</text>
+  <text x="1015" y="306" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">水中（ε ≈ 80）</text>
+  <text x="1015" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">作用削弱约 80 倍</text>
+  <rect x="1125.92875" y="222.65" width="98.1425" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1175" y="235.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">ε ≈ 80（室温）</text>
+  <rect x="1148.6454" y="254.65" width="52.7092" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1175" y="267.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">F ∝ 1/ε</text>
+  <text x="1105" y="295" font-size="10.5" fill="#475569">Na⁺、Cl⁻、</text>
+  <text x="1105" y="310" font-size="10.5" fill="#475569">ATP⁴⁻ 等带电物种得以在水溶液中自由存在。</text>
+  <rect x="800" y="365" width="480" height="115" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="800" y1="451.25" x2="1280" y2="451.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="920" y1="480" x2="920" y2="365" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="422.5" x2="1280" y2="422.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1040" y1="480" x2="1040" y2="365" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="393.75" x2="1280" y2="393.75" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1160" y1="480" x2="1160" y2="365" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="480" x2="800" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="800" y="502" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="860" y1="480" x2="860" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="860" y="502" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="920" y1="480" x2="920" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="920" y="502" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="980" y1="480" x2="980" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="980" y="502" font-size="13" fill="#64748b" text-anchor="middle">3</text>
+  <line x1="1040" y1="480" x2="1040" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1040" y="502" font-size="13" fill="#64748b" text-anchor="middle">4</text>
+  <line x1="1100" y1="480" x2="1100" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1100" y="502" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="1160" y1="480" x2="1160" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1160" y="502" font-size="13" fill="#64748b" text-anchor="middle">6</text>
+  <line x1="1220" y1="480" x2="1220" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1220" y="502" font-size="13" fill="#64748b" text-anchor="middle">7</text>
+  <line x1="1280" y1="480" x2="1280" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1280" y="502" font-size="13" fill="#64748b" text-anchor="middle">8</text>
+  <line x1="794" y1="480" x2="800" y2="480" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="484" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="794" y1="365" x2="800" y2="365" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="369" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="1040" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">距电荷距离 r（nm）</text>
+  <text x="754" y="422.5" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">电位 φ(r)</text>
+  <text x="1040" y="353" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">电位的指数屏蔽：φ(r) ∝ e^(−r/λD)/r</text>
+  <path d="M814.4,365.0 L828.8,431.7 L843.2,454.7 L860.0,465.1 L891.2,474.3 L920.0,477.2 L982.4,479.3 L1064.0,479.8" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <line x1="860" y1="365" x2="860" y2="480" stroke="#d97706" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <rect x="912.0105" y="371.5" width="105.97900000000003" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="965" y="383.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">德拜长度 λD ≈ 1 nm</text>
+  <text x="740" y="543" font-size="10" fill="#475569">0.1 mol/L 单价电解质中 λD ≈ 1 nm（生理盐水约 0.15 mol/L）→ 细胞内静电相互作用本质上是短程的。</text>
+  <rect x="30" y="592" width="1340" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、疏水效应：水的熵增驱动折叠与自组装（非「疏水键」）</text>
+  <text x="60" y="648" font-size="11.5" fill="#1e293b" font-weight="700">分散的非极性分子</text>
+  <text x="60" y="665" font-size="10" fill="#64748b">周围水被迫形成有序「笼状」结构 → 水熵 ↓</text>
+  <polygon points="225.98076211353316,760 200,775 174.01923788646684,760 174.01923788646684,730 200,715 225.98076211353316,730" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="254" cy="745" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="249" y1="745" x2="259" y2="745" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="238.18376618407356" cy="783.1837661840735" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="234.64823227814082" y1="779.6482322781408" x2="241.7193000900063" y2="786.7193000900063" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="200" cy="799" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="200" y1="794" x2="200" y2="804" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="161.81623381592644" cy="783.1837661840735" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="165.35176772185918" y1="779.6482322781408" x2="158.2806999099937" y2="786.7193000900063" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="146" cy="745" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="151" y1="745" x2="141" y2="745" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="161.8162338159264" cy="706.8162338159265" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="165.35176772185915" y1="710.3517677218592" x2="158.28069990999367" y2="703.2806999099937" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="200" cy="691" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="200" y1="696" x2="200" y2="686" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="238.18376618407356" cy="706.8162338159265" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="234.64823227814082" y1="710.3517677218592" x2="241.7193000900063" y2="703.2806999099937" stroke="#0369a1" stroke-width="1.2"/>
+  <polygon points="445.98076211353316,760 420,775 394.01923788646684,760 394.01923788646684,730 420,715 445.98076211353316,730" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="474" cy="745" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="469" y1="745" x2="479" y2="745" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="458.1837661840736" cy="783.1837661840735" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="454.6482322781409" y1="779.6482322781408" x2="461.7193000900063" y2="786.7193000900063" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="420" cy="799" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="420" y1="794" x2="420" y2="804" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="381.81623381592647" cy="783.1837661840735" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="385.3517677218592" y1="779.6482322781408" x2="378.28069990999376" y2="786.7193000900063" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="366" cy="745" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="371" y1="745" x2="361" y2="745" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="381.8162338159264" cy="706.8162338159265" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="385.3517677218592" y1="710.3517677218592" x2="378.28069990999364" y2="703.2806999099937" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="420" cy="691" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="420" y1="696" x2="420" y2="686" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="458.18376618407353" cy="706.8162338159265" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="454.6482322781408" y1="710.3517677218592" x2="461.71930009000624" y2="703.2806999099937" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="310" y="848" font-size="9.5" fill="#78350f" text-anchor="middle">非极性分子（烃链、苯环）</text>
+  <line x1="545" y1="745" x2="665" y2="745" stroke="#1e293b" stroke-width="3.2" marker-end="url(#arr-ink)"/>
+  <text x="605" y="722" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">疏水效应</text>
+  <text x="605" y="782" font-size="11" fill="#6d28d9" text-anchor="middle" font-weight="700">ΔG = ΔH − TΔS</text>
+  <text x="605" y="800" font-size="9.5" fill="#64748b" text-anchor="middle">熵项主导</text>
+  <text x="720" y="648" font-size="11.5" fill="#1e293b" font-weight="700">非极性基团聚拢</text>
+  <text x="720" y="665" font-size="10" fill="#64748b">暴露的水界面减少，水被释放恢复自由 → 水熵 ↑</text>
+  <polygon points="902.5166604983954,743 880,756 857.4833395016046,743 857.4833395016046,717 880,704 902.5166604983954,717" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <polygon points="977.5166604983954,725 955,738 932.4833395016046,725 932.4833395016046,699 955,686 977.5166604983954,699" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <polygon points="942.5166604983954,795 920,808 897.4833395016046,795 897.4833395016046,769 920,756 942.5166604983954,769" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <polygon points="1007.5166604983954,778 985,791 962.4833395016046,778 962.4833395016046,752 985,739 1007.5166604983954,752" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="1120" cy="690" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="1129" y1="690" x2="1159" y2="678" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <circle cx="1175" cy="745" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="1184" y1="745" x2="1218" y2="751" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <circle cx="1120" cy="800" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="1129" y1="800" x2="1159" y2="814" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <circle cx="1235" cy="700" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="1244" y1="700" x2="1270" y2="682" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <circle cx="1240" cy="790" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <line x1="1249" y1="790" x2="1273" y2="806" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="1160" y="852" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">水熵 ↑（主要驱动力）</text>
+  <text x="60" y="895" font-size="11" fill="#475569">疏水效应主要是熵驱动：蛋白质折叠时埋藏疏水残基、磷脂自组装成双分子层，自由能收益主要来自水的熵增，而非存在「疏水键」这种特殊吸引力；疏水相互作用强度随温度升高而增大，约在 60–80 °C 达到极大。</text>
+</svg>

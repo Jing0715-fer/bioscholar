@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">生物物理学的研究对象：跨 10 个数量级的尺度层级</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">空间 0.1 nm 原子 → 2 nm DNA → 25 nm 核糖体 → 8 μm 红细胞 → 米级组织；时间从飞秒键振动到小时级细胞分裂；五大分支与「相互作用—结构形态—能量信息」三问</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、空间尺度谱：从原子（0.1 nm）到组织器官（米级）——跨 10 个数量级</text>
+  <line x1="84" y1="352" x2="1324" y2="352" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="1320" y="344" font-size="1" text-anchor="middle"></text>
+  <line x1="90" y1="352" x2="90" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="374" font-size="11" fill="#64748b" text-anchor="middle">0.1 nm</text>
+  <line x1="212" y1="352" x2="212" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="212" y="374" font-size="11" fill="#64748b" text-anchor="middle">1 nm</text>
+  <line x1="334" y1="352" x2="334" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="334" y="374" font-size="11" fill="#64748b" text-anchor="middle">10 nm</text>
+  <line x1="456" y1="352" x2="456" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="456" y="374" font-size="11" fill="#64748b" text-anchor="middle">100 nm</text>
+  <line x1="578" y1="352" x2="578" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="578" y="374" font-size="11" fill="#64748b" text-anchor="middle">1 μm</text>
+  <line x1="700" y1="352" x2="700" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="700" y="374" font-size="11" fill="#64748b" text-anchor="middle">10 μm</text>
+  <line x1="822" y1="352" x2="822" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="822" y="374" font-size="11" fill="#64748b" text-anchor="middle">100 μm</text>
+  <line x1="944" y1="352" x2="944" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="944" y="374" font-size="11" fill="#64748b" text-anchor="middle">1 mm</text>
+  <line x1="1066" y1="352" x2="1066" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="1066" y="374" font-size="11" fill="#64748b" text-anchor="middle">1 cm</text>
+  <line x1="1188" y1="352" x2="1188" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="1188" y="374" font-size="11" fill="#64748b" text-anchor="middle">0.1 m</text>
+  <line x1="1310" y1="352" x2="1310" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="1310" y="374" font-size="11" fill="#64748b" text-anchor="middle">1 m</text>
+  <rect x="92" y="390" width="118" height="28" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="151" y="408" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">原子与化学键</text>
+  <rect x="214" y="390" width="118" height="28" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="273" y="408" font-size="11" fill="#0f766e" text-anchor="middle" font-weight="700">生物大分子</text>
+  <rect x="336" y="390" width="118" height="28" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="395" y="408" font-size="11" fill="#6d28d9" text-anchor="middle" font-weight="700">大分子复合物</text>
+  <rect x="458" y="390" width="240" height="28" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="578" y="408" font-size="11" fill="#0369a1" text-anchor="middle" font-weight="700">细胞器与细胞（0.1–10 μm）</text>
+  <rect x="946" y="390" width="362" height="28" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
+  <text x="1127" y="408" font-size="11" fill="#b45309" text-anchor="middle" font-weight="700">组织与器官（mm–m）</text>
+  <circle cx="90" cy="205" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="78" cy="196" r="3" fill="#dc2626"/>
+  <circle cx="103" cy="214" r="3" fill="#dc2626"/>
+  <text x="90" y="233" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">原子·化学键</text>
+  <text x="90" y="248" font-size="9.5" fill="#64748b" text-anchor="middle">0.1 nm（1 Å）</text>
+  <line x1="90" y1="254" x2="90" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <path d="M228,205L228.0,205.0L230.0,201.5L232.0,199.3L234.0,199.3L236.0,201.5L238.0,205.0L240.0,208.5L242.0,210.7L244.0,210.7L246.0,208.5L248.0,205.0L250.0,201.5L252.0,199.3L254.0,199.3L256.0,201.5L258.0,205.0L260.0,208.5L262.0,210.7L264.0,210.7L266.0,208.5L268.0,205.0L270.0,201.5L272.0,199.3" fill="none" stroke="#0f766e" stroke-width="1.6"/>
+  <path d="M228,205L228.0,205.0L230.0,208.5L232.0,210.7L234.0,210.7L236.0,208.5L238.0,205.0L240.0,201.5L242.0,199.3L244.0,199.3L246.0,201.5L248.0,205.0L250.0,208.5L252.0,210.7L254.0,210.7L256.0,208.5L258.0,205.0L260.0,201.5L262.0,199.3L264.0,199.3L266.0,201.5L268.0,205.0L270.0,208.5L272.0,210.7" fill="none" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="233" y1="199" x2="233" y2="211" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="243" y1="211" x2="243" y2="199" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="253" y1="199" x2="253" y2="211" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <line x1="263" y1="211" x2="263" y2="199" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
+  <text x="250" y="233" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">DNA 双螺旋</text>
+  <text x="250" y="248" font-size="9.5" fill="#64748b" text-anchor="middle">直径 2 nm</text>
+  <line x1="250" y1="254" x2="250" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <ellipse cx="390" cy="213" rx="21" ry="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <ellipse cx="390" cy="194" rx="15" ry="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="390" y="233" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">核糖体</text>
+  <text x="390" y="248" font-size="9.5" fill="#64748b" text-anchor="middle">约 25 nm</text>
+  <line x1="390" y1="254" x2="390" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <ellipse cx="690" cy="205" rx="24" ry="14" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="690" y="233" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">红细胞</text>
+  <text x="690" y="248" font-size="9.5" fill="#64748b" text-anchor="middle">直径约 8 μm</text>
+  <line x1="690" y1="254" x2="690" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="1096" y1="190" x2="1112" y2="222" stroke="#b45309" stroke-width="3.2"/>
+  <line x1="1110" y1="190" x2="1126" y2="222" stroke="#b45309" stroke-width="3.2"/>
+  <line x1="1124" y1="190" x2="1140" y2="222" stroke="#b45309" stroke-width="3.2"/>
+  <line x1="1138" y1="190" x2="1154" y2="222" stroke="#b45309" stroke-width="3.2"/>
+  <ellipse cx="1124" cy="206" rx="14" ry="24" fill="none" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1124" y="233" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">肌肉·神经束</text>
+  <text x="1124" y="248" font-size="9.5" fill="#64748b" text-anchor="middle">mm–m</text>
+  <line x1="1124" y1="254" x2="1124" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <ellipse cx="308" cy="285" rx="18" ry="13" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="308" y="313" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白质结构域</text>
+  <text x="308" y="328" font-size="9.5" fill="#64748b" text-anchor="middle">1–10 nm</text>
+  <line x1="308" y1="332" x2="308" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="462" cy="285" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <line x1="475" y1="285" x2="481" y2="285" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="471.19238815542514" y1="294.19238815542514" x2="475.4350288425444" y2="298.4350288425444" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="462" y1="298" x2="462" y2="304" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="452.80761184457486" y1="294.19238815542514" x2="448.5649711574556" y2="298.4350288425444" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="449" y1="285" x2="443" y2="285" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="452.80761184457486" y1="275.80761184457486" x2="448.5649711574556" y2="271.5649711574556" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="462" y1="272" x2="462" y2="266" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="471.19238815542514" y1="275.80761184457486" x2="475.4350288425444" y2="271.5649711574556" stroke="#be185d" stroke-width="1.6"/>
+  <text x="462" y="313" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">病毒衣壳</text>
+  <text x="462" y="328" font-size="9.5" fill="#64748b" text-anchor="middle">10–100 nm</text>
+  <line x1="462" y1="332" x2="462" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <ellipse cx="575" cy="285" rx="23" ry="13" fill="#ffedd5" stroke="#d97706" stroke-width="2.4"/>
+  <path d="M 559,277.85 L 566,285 L 573,277.85 M 568,277.85 L 575,285 L 582,277.85 M 577,277.85 L 584,285 L 591,277.85 " fill="none" opacity="0.8" stroke="#d97706" stroke-width="1.8"/>
+  <text x="575" y="313" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">线粒体</text>
+  <text x="575" y="328" font-size="9.5" fill="#64748b" text-anchor="middle">0.1–10 μm</text>
+  <line x1="575" y1="332" x2="575" y2="349" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="30" y="452" width="1340" height="196" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">二、时间尺度谱：飞秒键振动 → 毫秒酶催化 → 小时级细胞分裂（跨十余个数量级）</text>
+  <line x1="84" y1="560" x2="1324" y2="560" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="560" x2="90" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="582" font-size="11" fill="#64748b" text-anchor="middle">10⁻¹⁵ s</text>
+  <line x1="293.33333333333337" y1="560" x2="293.33333333333337" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="293.33333333333337" y="582" font-size="11" fill="#64748b" text-anchor="middle">10⁻¹² s</text>
+  <line x1="496.6666666666667" y1="560" x2="496.6666666666667" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="496.6666666666667" y="582" font-size="11" fill="#64748b" text-anchor="middle">10⁻⁹ s</text>
+  <line x1="700" y1="560" x2="700" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="700" y="582" font-size="11" fill="#64748b" text-anchor="middle">10⁻⁶ s</text>
+  <line x1="903.3333333333334" y1="560" x2="903.3333333333334" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="903.3333333333334" y="582" font-size="11" fill="#64748b" text-anchor="middle">10⁻³ s</text>
+  <line x1="1106.6666666666665" y1="560" x2="1106.6666666666665" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="1106.6666666666665" y="582" font-size="11" fill="#64748b" text-anchor="middle">1 s</text>
+  <line x1="1310" y1="560" x2="1310" y2="566" stroke="#475569" stroke-width="1.8"/>
+  <text x="1310" y="582" font-size="11" fill="#64748b" text-anchor="middle">10³ s</text>
+  <circle cx="90" cy="560" r="5.5" fill="#dc2626"/>
+  <line x1="90" y1="552" x2="90" y2="534" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="90" y="504" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">化学键振动</text>
+  <text x="90" y="520" font-size="9.5" fill="#64748b" text-anchor="middle">飞秒级（10⁻¹⁵ s）</text>
+  <circle cx="790" cy="560" r="5.5" fill="#6d28d9"/>
+  <line x1="790" y1="552" x2="790" y2="534" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="790" y="504" font-size="11.5" fill="#6d28d9" text-anchor="middle" font-weight="700">蛋白质折叠</text>
+  <text x="790" y="520" font-size="9.5" fill="#64748b" text-anchor="middle">微秒—毫秒（10⁻⁶–10⁻³ s）</text>
+  <circle cx="903" cy="560" r="5.5" fill="#be185d"/>
+  <line x1="903" y1="552" x2="903" y2="534" stroke="#be185d" stroke-width="1.6"/>
+  <text x="903" y="504" font-size="11.5" fill="#be185d" text-anchor="middle" font-weight="700">酶催化</text>
+  <text x="903" y="520" font-size="9.5" fill="#64748b" text-anchor="middle">毫秒级（10⁻³ s）</text>
+  <circle cx="1242" cy="560" r="5.5" fill="#0369a1"/>
+  <line x1="1242" y1="552" x2="1242" y2="534" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1242" y="504" font-size="11.5" fill="#0369a1" text-anchor="middle" font-weight="700">细胞分裂与发育</text>
+  <text x="1242" y="520" font-size="9.5" fill="#64748b" text-anchor="middle">分钟—小时级</text>
+  <line x1="700" y1="622" x2="903" y2="622" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="800" y="637" font-size="9" fill="#64748b" text-anchor="middle">蛋白折叠时间窗</text>
+  <text x="80" y="606" font-size="10.5" fill="#475569">纳米尺度的分子事件如何逐级放大为微米尺度的细胞行为——跨尺度是生物物理研究的基本特征。</text>
+  <rect x="30" y="666" width="1340" height="304" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="688.84" font-size="19" fill="#475569" font-weight="700">三、核心问题与五大分支体系</text>
+  <text x="50" y="712" font-size="12.5" fill="#1e293b" font-weight="700">生物物理学的三个核心问题</text>
+  <rect x="50" y="726" width="400" height="48" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="71.31" y="740.225" width="61.38" height="19.55" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="102" y="754.14" font-size="11.5" fill="#0f766e" text-anchor="middle" font-weight="700">相互作用</text>
+  <text x="168" y="755" font-size="11" fill="#475569">生命系统由什么物理相互作用维系？</text>
+  <rect x="50" y="784" width="400" height="48" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="71.31" y="798.225" width="61.38" height="19.55" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="102" y="812.14" font-size="11.5" fill="#6d28d9" text-anchor="middle" font-weight="700">结构形态</text>
+  <text x="168" y="813" font-size="11" fill="#475569">结构为何呈现特定的物理形态？</text>
+  <rect x="50" y="842" width="400" height="48" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="69.4148" y="856.225" width="65.1704" height="19.55" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="102" y="870.14" font-size="11.5" fill="#be185d" text-anchor="middle" font-weight="700">能量/信息</text>
+  <text x="168" y="871" font-size="11" fill="#475569">能量与信息如何流动与转换？</text>
+  <text x="500" y="712" font-size="12.5" fill="#1e293b" font-weight="700">五大分支</text>
+  <rect x="500" y="724" width="560" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="508" y="730" width="5" height="22" rx="2" fill="#0f766e"/>
+  <text x="522" y="746" font-size="11.5" fill="#0f766e" font-weight="700">分子生物物理</text>
+  <text x="700" y="746" font-size="10.5" fill="#475569">蛋白质、核酸等大分子的结构、折叠与相互作用</text>
+  <rect x="500" y="764" width="560" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="508" y="770" width="5" height="22" rx="2" fill="#0369a1"/>
+  <text x="522" y="786" font-size="11.5" fill="#0369a1" font-weight="700">膜与细胞生物物理</text>
+  <text x="700" y="786" font-size="10.5" fill="#475569">生物膜的相行为、弹性与细胞力学性质</text>
+  <rect x="500" y="804" width="560" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="508" y="810" width="5" height="22" rx="2" fill="#6d28d9"/>
+  <text x="522" y="826" font-size="11.5" fill="#6d28d9" font-weight="700">神经与电生理生物物理</text>
+  <text x="700" y="826" font-size="10.5" fill="#475569">生物电现象与离子通道物理</text>
+  <rect x="500" y="844" width="560" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="508" y="850" width="5" height="22" rx="2" fill="#b45309"/>
+  <text x="522" y="866" font-size="11.5" fill="#b45309" font-weight="700">理论生物物理</text>
+  <text x="700" y="866" font-size="10.5" fill="#475569">统计物理、非线性动力学与信息论为生命过程建模</text>
+  <rect x="500" y="884" width="560" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="508" y="890" width="5" height="22" rx="2" fill="#be185d"/>
+  <text x="522" y="906" font-size="11.5" fill="#be185d" font-weight="700">生物物理技术</text>
+  <text x="700" y="906" font-size="10.5" fill="#475569">单分子操控、成像、光谱与计算方法学</text>
+  <text x="1090" y="712" font-size="12.5" fill="#1e293b" font-weight="700">里程碑（物理学×生物学）</text>
+  <circle cx="1100" cy="738" r="4" fill="#d97706"/>
+  <text x="1114" y="742" font-size="11" fill="#1e293b" font-weight="700">DNA 双螺旋</text>
+  <text x="1114" y="758" font-size="10" fill="#64748b">X 射线衍射解析</text>
+  <circle cx="1100" cy="782" r="4" fill="#d97706"/>
+  <text x="1114" y="786" font-size="11" fill="#1e293b" font-weight="700">肌红蛋白/血红蛋白</text>
+  <text x="1114" y="802" font-size="10" fill="#64748b">晶体结构解析</text>
+  <circle cx="1100" cy="826" r="4" fill="#d97706"/>
+  <text x="1114" y="830" font-size="11" fill="#1e293b" font-weight="700">肌肉收缩</text>
+  <text x="1114" y="846" font-size="10" fill="#64748b">滑动丝学说</text>
+  <circle cx="1100" cy="870" r="4" fill="#d97706"/>
+  <text x="1114" y="874" font-size="11" fill="#1e293b" font-weight="700">动作电位</text>
+  <text x="1114" y="890" font-size="10" fill="#64748b">离子学说</text>
+  <text x="50" y="944" font-size="10.5" fill="#475569">方法论内核——简化与定量：把复杂系统还原为可测量的物理量（力、电流、荧光强度），用最少参数建立可检验模型，再回到活体环境检验；单分子操控与成像技术是当代生物物理方法学的两大支柱。</text>
+</svg>

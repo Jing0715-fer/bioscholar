@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电压门控与配体门控：S4 螺旋旋出与 nAChR 别构转换</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">S4 每 3 残基一个 Arg（4–7 个正电荷），去极化外移旋转、门控电荷 ≈13 e₀/通道，门控电流先于离子电流；nAChR（α₂βγδ）经别构转换张开疏水闸门（~3 Å → ~7–8 Å，~40 pS）并具脱敏态</text>
+  <rect x="30" y="132" width="1340" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、电压门控：S4 荷电桨叶的外移旋转与门控电流（Armstrong–Bezanilla，1973）</text>
+  <text x="60" y="188" font-size="13" fill="#1e293b" font-weight="700">S4 电压传感器：螺旋旋出（helical screw）</text>
+  <text x="60" y="210" font-size="10" fill="#475569">每隔 3 个残基一个精氨酸（Arg），4–7 个正电荷沿螺旋成列——浸在跨膜电场中的「分子电压计」</text>
+  <g><circle cx="70" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="70" y1="304" x2="70" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="70" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="94" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="94" y1="304" x2="94" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="94" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="118" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="118" y1="304" x2="118" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="118" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="142" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="142" y1="304" x2="142" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="142" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="166" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="166" y1="304" x2="166" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="166" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="190" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="190" y1="304" x2="190" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="190" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="214" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="214" y1="304" x2="214" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="214" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="238" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="238" y1="304" x2="238" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="238" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="262" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="262" y1="304" x2="262" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="262" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="286" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="286" y1="304" x2="286" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="286" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="310" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="310" y1="304" x2="310" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="310" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="334" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="334" y1="304" x2="334" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="334" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="358" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="358" y1="304" x2="358" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="358" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="382" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="382" y1="304" x2="382" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="382" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="406" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="406" y1="304" x2="406" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="406" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="430" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="430" y1="304" x2="430" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="430" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="454" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="454" y1="304" x2="454" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="454" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="478" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="478" y1="304" x2="478" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="478" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="502" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="502" y1="304" x2="502" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="502" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="526" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="526" y1="304" x2="526" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="526" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="550" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="550" y1="304" x2="550" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="550" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="574" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="574" y1="304" x2="574" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="574" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="598" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="598" y1="304" x2="598" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="598" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="622" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="622" y1="304" x2="622" y2="330" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="622" cy="334" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="96" y="288" font-size="10" fill="#64748b" font-weight="700">胞外</text>
+  <text x="96" y="364" font-size="10" fill="#64748b" font-weight="700">胞内</text>
+  <rect x="172" y="262" width="18" height="104" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="181" cy="272" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="181" y="275" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="181" cy="299" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="181" y="302" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="181" cy="326" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="181" y="329" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="181" cy="353" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="181" y="356" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <text x="181" y="388" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">静息</text>
+  <rect x="322" y="230" width="18" height="104" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="331" cy="240" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="331" y="243" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="331" cy="267" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="331" y="270" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="331" cy="294" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="331" y="297" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="331" cy="321" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="331" y="324" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <text x="331" y="360" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">去极化</text>
+  <path d="M 350,244 A 30,30 0 1 1 350,286" fill="none" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="392" y="268" font-size="10" fill="#831843" font-weight="700">外移 + 旋转</text>
+  <line x1="214" y1="332" x2="306" y2="298" stroke="#0369a1" stroke-width="2.6" marker-end="url(#arr-acc)"/>
+  <text x="260" y="302" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">去极化</text>
+  <rect x="172.68807499999997" y="391.075" width="374.62385000000006" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="403.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">净效应：每通道约 12–16 个元电荷跨膜移动（Shaker K⁺ 实测 ≈ 13 e₀）</text>
+  <text x="60" y="434" font-size="12" fill="#1e293b" font-weight="700">失活的分子机制</text>
+  <line x1="110" y1="450" x2="200" y2="450" stroke="#64748b" stroke-width="3"/>
+  <line x1="110" y1="514" x2="200" y2="514" stroke="#64748b" stroke-width="3"/>
+  <line x1="128" y1="450" x2="128" y2="514" stroke="#475569" stroke-width="3"/>
+  <line x1="182" y1="450" x2="182" y2="514" stroke="#475569" stroke-width="3"/>
+  <circle cx="155" cy="494" r="14" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="155" y="498" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">+</text>
+  <path d="M 155,548 q 9,-11 0,-22 q -9,-11 0,-22" fill="none" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <text x="214" y="466" font-size="9.5" fill="#831843" font-weight="700">N 型（球–链）：带正电的球</text>
+  <text x="214" y="486" font-size="9.5" fill="#475569">经柔性链摆入胞内口塞孔（Armstrong 蛋白酶实验推论）</text>
+  <text x="470" y="462" font-size="10.5" fill="#1e293b" font-weight="700">Na⁺ 通道更快：</text>
+  <rect x="532.473" y="453.5" width="59.053999999999995" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="562" y="465.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">IFM 基序</text>
+  <text x="470" y="492" font-size="9.5" fill="#475569">III–IV 连接环的异亮氨酸–苯丙氨酸–蛋氨酸塞入失活受体</text>
+  <text x="700" y="188" font-size="13" fill="#1e293b" font-weight="700">门控电流：门控电荷移动产生的瞬态电容电流</text>
+  <text x="700" y="214" font-size="10.5" fill="#475569">在 TTX 阻断离子流、仔细扣除线性电容后，分离出微小的非线性电流——直接证实「带电粒子在电场中位移」。</text>
+  <rect x="740" y="340" width="570" height="160" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="460" x2="1310" y2="460" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="882.5" y1="500" x2="882.5" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="420" x2="1310" y2="420" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1025" y1="500" x2="1025" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="380" x2="1310" y2="380" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1167.5" y1="500" x2="1167.5" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="500" x2="740" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="522" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="882.5" y1="500" x2="882.5" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="882.5" y="522" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="1025" y1="500" x2="1025" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="1025" y="522" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="1167.5" y1="500" x2="1167.5" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="1167.5" y="522" font-size="13" fill="#64748b" text-anchor="middle">3</text>
+  <line x1="1310" y1="500" x2="1310" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="1310" y="522" font-size="13" fill="#64748b" text-anchor="middle">4</text>
+  <line x1="734" y1="500" x2="740" y2="500" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="504" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="734" y1="340" x2="740" y2="340" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="344" font-size="13" fill="#64748b" text-anchor="end">归一化</text>
+  <text x="1025" y="544" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">去极化后时间（ms）</text>
+  <text x="1025" y="328" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">门控电流先于离子电流——先动传感器、后开孔</text>
+  <path d="M751.4,496.8 L765.6,452.0 L779.9,445.6 L797.0,452.0 L825.5,464.8 L865.4,479.2 L911.0,487.2 L996.5,492.0 L1139.0,493.6 L1310.0,493.6" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <path d="M751.4,496.8 L825.5,495.2 L865.4,488.8 L911.0,474.4 L956.6,448.8 L1002.2,420.0 L1053.5,396.0 L1110.5,378.4 L1196.0,365.6 L1310.0,357.6" fill="none" stroke="#0369a1" stroke-width="2.8"/>
+  <rect x="770" y="356.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="788.45" y="363.42" font-size="9.5" fill="#475569">门控电流 I_g（先）</text>
+  <rect x="887.76" y="356.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="906.21" y="363.42" font-size="9.5" fill="#475569">离子电流 I_ion（后）</text>
+  <rect x="30" y="582" width="1340" height="378" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="604.84" font-size="19" fill="#475569" font-weight="700">二、配体门控：nAChR 五聚体的别构转换（关闭 ~3 Å → 开放 ~7–8 Å，电导 ~40 pS）</text>
+  <rect x="50" y="610" width="400" height="330" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="66" y="638" font-size="12.5" fill="#1e293b" font-weight="700">① 五聚体俯视（肌肉型 α₂βγδ）</text>
+  <circle cx="240" cy="723" r="32" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="240" y="728" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">α</text>
+  <circle cx="308.47606917325106" cy="772.7507764050038" r="32" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="308.47606917325106" y="777.7507764050038" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">γ</text>
+  <circle cx="282.32053816505805" cy="853.2492235949962" r="32" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="282.32053816505805" y="858.2492235949962" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">δ</text>
+  <circle cx="197.67946183494192" cy="853.2492235949962" r="32" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="197.67946183494192" y="858.2492235949962" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">α</text>
+  <circle cx="171.52393082674894" cy="772.7507764050038" r="32" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="171.52393082674894" y="777.7507764050038" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">β</text>
+  <circle cx="240" cy="795" r="19" fill="#ffffff" stroke="#64748b" stroke-width="1.8"/>
+  <text x="240" y="799" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">孔</text>
+  <circle cx="282.32053816505805" cy="736.7507764050038" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="304.32053816505805" y="722.7507764050038" font-size="8.5" text-anchor="middle" font-weight="700">ACh</text>
+  <circle cx="171.52393082674894" cy="817.2492235949962" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="149.52393082674894" y="831.2492235949962" font-size="8.5" text-anchor="middle" font-weight="700">ACh</text>
+  <text x="322" y="690" font-size="9.5" font-weight="700">ACh 位点：</text>
+  <text x="322" y="706" font-size="9.5" font-weight="700">胞外 α/非 α</text>
+  <text x="322" y="722" font-size="9.5" font-weight="700">界面 ×2</text>
+  <text x="240" y="918" font-size="10" fill="#475569" text-anchor="middle">每亚基 4 个跨膜螺旋（M1–M4），M2 围成孔内衬</text>
+  <rect x="470" y="610" width="420" height="330" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="486" y="638" font-size="12.5" fill="#1e293b" font-weight="700">② 孔道三态剖面</text>
+  <text x="540" y="654" font-size="9" fill="#64748b" text-anchor="middle">上：胞外 / 下：胞内</text>
+  <rect x="510" y="665" width="60" height="190" rx="28" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <rect x="630" y="665" width="60" height="190" rx="28" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <rect x="750" y="665" width="60" height="190" rx="28" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <line x1="500" y1="665" x2="580" y2="665" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="750" y1="665" x2="830" y2="665" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="500" y1="855" x2="580" y2="855" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="750" y1="855" x2="830" y2="855" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <circle cx="522" cy="762" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="558" cy="762" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="660" cy="700" r="6.5" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+  <circle cx="660" cy="740" r="6.5" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+  <circle cx="660" cy="780" r="6.5" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+  <circle cx="660" cy="820" r="6.5" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+  <circle cx="762" cy="762" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="798" cy="762" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <circle cx="768" cy="692" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <circle cx="792" cy="692" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <line x1="578" y1="760" x2="622" y2="760" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="600" y="748" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">别构扭转</text>
+  <line x1="698" y1="760" x2="742" y2="760" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="720" y="748" font-size="9" text-anchor="middle" font-weight="700">持续暴露</text>
+  <text x="540" y="888" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">关闭态</text>
+  <text x="660" y="888" font-size="10.5" text-anchor="middle" font-weight="700">开放态</text>
+  <text x="780" y="888" font-size="10.5" text-anchor="middle" font-weight="700">脱敏态</text>
+  <text x="540" y="912" font-size="9" fill="#64748b" text-anchor="middle">疏水闸门 ≈3 Å</text>
+  <text x="660" y="912" font-size="9" fill="#64748b" text-anchor="middle">≈7–8 Å · ~40 pS</text>
+  <text x="780" y="912" font-size="9" fill="#64748b" text-anchor="middle">配体仍结合、孔关闭</text>
+  <rect x="910" y="610" width="440" height="330" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="926" y="638" font-size="12.5" fill="#1e293b" font-weight="700">③ 别构的物理本质</text>
+  <circle cx="934" cy="668" r="4" fill="#6d28d9"/>
+  <text x="946" y="672" font-size="10" fill="#475569" font-weight="600">配体结合 → 胞外域「扭转」经 M2 传递到跨膜区 → 疏水闸门张开</text>
+  <circle cx="934" cy="700" r="4" fill="#6d28d9"/>
+  <text x="946" y="704" font-size="10" fill="#475569" font-weight="600">持续暴露配体则进入脱敏态：配体仍结合、孔道关闭</text>
+  <rect x="1020.830325" y="741.075" width="198.33935" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1120" y="753.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">化学结合能 → 偿付孔道开启的构象能</text>
+  <text x="926" y="790" font-size="10" fill="#475569">「用分子结合做功的机械」——配体门控把分子结合能经亚基界面传递、</text>
+  <text x="926" y="804" font-size="10" fill="#475569">转化为孔道开启的机械功。</text>
+  <rect x="1063.32" y="851.5" width="133.36000000000004" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1130" y="863.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">脱敏（desensitization）</text>
+</svg>
