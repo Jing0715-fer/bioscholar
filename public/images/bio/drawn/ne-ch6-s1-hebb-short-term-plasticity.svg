@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Hebb 规则与短时程可塑性：海兔的习惯化与敏化</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">习惯化＝同突触的钙内流与释放下降；敏化＝异突触的 5-HT–cAMP–PKA 关闭 S 通道、增宽动作电位</text>
+  <rect x="30" y="132" width="700" height="460" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Hebb 规则与海兔缩鳃反射：可拆解的学习电路</text>
+  <rect x="236.31889999999999" y="188.95" width="247.3622" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="360" y="204.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">Hebb 1949：一起放电的细胞连在一起</text>
+  <text x="70" y="244" font-size="11.5" fill="#475569">「若细胞 A 的轴突足以兴奋细胞 B，且反复持续地参与引发 B 的放电，则 A 到 B 之间将发生生长或代谢变化。</text>
+  <text x="70" y="261" font-size="11.5" fill="#475569">」——因果与时序兼备，是 LTP 与 STDP 的理论源头。</text>
+  <ellipse cx="148" cy="460" rx="82" ry="46" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="2"/>
+  <text x="148" y="446" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">海兔（Aplysia）</text>
+  <text x="148" y="464" font-size="10" fill="#64748b" text-anchor="middle">中枢神经节约 2 万个神经元</text>
+  <text x="148" y="479" font-size="10" fill="#64748b" text-anchor="middle">可对号入座、反复穿刺记录</text>
+  <text x="240" y="306" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">尾部电击</text>
+  <line x1="262" y1="312" x2="316" y2="322" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <ellipse cx="390" cy="330" rx="52" ry="26" fill="#ede9fe" fill-opacity="0.6" stroke="#6d28d9" stroke-width="2"/>
+  <ellipse cx="390" cy="330" rx="44" ry="19" fill="none" stroke="#6d28d9" stroke-width="1.1" opacity="0.6"/>
+  <text x="390" y="335" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">5-HT 中间神经元</text>
+  <line x1="360" y1="350" x2="330" y2="380" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="312" y="375" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">释放 5-HT</text>
+  <text x="148" y="330" font-size="11" fill="#d97706" text-anchor="middle" font-weight="700">轻触喷水管</text>
+  <circle cx="148" cy="340" r="5" fill="#d97706"/>
+  <line x1="148" y1="348" x2="262" y2="386" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <ellipse cx="308" cy="396" rx="46" ry="28" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="308" y="392" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">感觉</text>
+  <text x="308" y="406" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">神经元</text>
+  <ellipse cx="468" cy="396" rx="46" ry="28" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="468" y="392" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">鳃运动</text>
+  <text x="468" y="406" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">神经元</text>
+  <line x1="354" y1="396" x2="422" y2="396" stroke="#0f766e" stroke-width="2.6" marker-end="url(#arr-dna)"/>
+  <text x="388" y="372" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">谷氨酸</text>
+  <text x="388" y="418" font-size="10" fill="#64748b" text-anchor="middle">感觉-运动突触</text>
+  <line x1="514" y1="396" x2="586" y2="396" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <text x="556" y="374" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">缩鳃反射</text>
+  <rect x="252" y="448" width="226" height="66" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="266" y="470" font-size="12" fill="#1e293b" font-weight="700">习惯化：同突触变化</text>
+  <text x="266" y="488" font-size="10.5" fill="#475569">重复无害刺激 → 末梢钙内流↓ → 释放↓，</text>
+  <text x="266" y="502" font-size="10.5" fill="#475569">学会「忽略」。</text>
+  <rect x="492" y="448" width="226" height="66" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="506" y="470" font-size="12" fill="#1e293b" font-weight="700">敏化：异突触调制</text>
+  <text x="506" y="488" font-size="10.5" fill="#475569">伤害刺激经 5-HT 介入 → 释放↑，</text>
+  <text x="506" y="502" font-size="10.5" fill="#475569">学会「警惕」。</text>
+  <rect x="750" y="132" width="620" height="460" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、5-HT–cAMP–PKA 级联：突触前易化一环不落</text>
+  <rect x="790" y="208" width="330" height="34" rx="7" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="806" y="230" font-size="12" fill="#1e293b" font-weight="600">5-HT 受体（偶联 Gs）</text>
+  <line x1="955" y1="242" x2="955" y2="254" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="790" y="254" width="330" height="34" rx="7" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="806" y="276" font-size="12" fill="#1e293b" font-weight="600">腺苷酸环化酶激活 → cAMP 升高</text>
+  <line x1="955" y1="288" x2="955" y2="300" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="790" y="300" width="330" height="34" rx="7" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.6"/>
+  <text x="806" y="322" font-size="12" fill="#1e293b" font-weight="600">PKA 磷酸化末梢钾通道（S 通道）</text>
+  <line x1="955" y1="334" x2="955" y2="346" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="790" y="346" width="330" height="34" rx="7" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.6"/>
+  <text x="806" y="368" font-size="12" fill="#1e293b" font-weight="600">K⁺ 外流减少 → 动作电位增宽</text>
+  <line x1="955" y1="380" x2="955" y2="392" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="790" y="392" width="330" height="34" rx="7" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="806" y="414" font-size="12" fill="#1e293b" font-weight="600">Ca²⁺ 内流增多 → 谷氨酸量子释放↑</text>
+  <line x1="955" y1="426" x2="955" y2="438" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="790" y="438" width="330" height="34" rx="7" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="806" y="460" font-size="12" fill="#1e293b" font-weight="600">运动神经元 EPSP 增大 → 缩鳃增强</text>
+  <rect x="1150" y="208" width="196" height="214" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1166" y="232" font-size="12.5" fill="#dc2626" font-weight="700">长时敏化（数天）</text>
+  <text x="1166" y="254" font-size="10.5" fill="#475569">多次间隔 5-HT 脉冲 → PKA 催化亚基入核 → 磷酸化 CREB → 启动转录</text>
+  <text x="1166" y="269" font-size="10.5" fill="#475569">（C/EBP 等即刻早基因）</text>
+  <text x="1166" y="284" font-size="10.5" fill="#475569">→ 新突触生长，突触数近乎倍增。</text>
+  <text x="1150" y="452" font-size="10.5" fill="#64748b">蛋白合成抑制剂或 CREB 阻断：</text>
+  <text x="1150" y="467" font-size="10.5" fill="#64748b">取消长时成分而保留短时成分。</text>
+  <text x="790" y="540" font-size="11" fill="#475569">同一级联还实现联合性：感觉末梢的腺苷酸环化酶为钙-钙调蛋白敏感——「刚活动过、</text>
+  <text x="790" y="556" font-size="11" fill="#475569">钙尚存」的末梢才被 5-HT 重点放大。</text>
+  <rect x="30" y="612" width="1340" height="362" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="634.84" font-size="19" fill="#475569" font-weight="700">三、从毫秒到数天的连续谱与果蝇遗传学佐证</text>
+  <text x="360" y="668" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">学习记忆的分子时程连续谱（跨物种保守）</text>
+  <line x1="70" y1="700" x2="640" y2="700" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="106" cy="700" r="6.5" fill="#64748b"/>
+  <text x="106" y="726" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">释放涨落（毫秒级）</text>
+  <text x="106" y="744" font-size="10.5" fill="#64748b" text-anchor="middle">短时程可塑性</text>
+  <circle cx="340" cy="700" r="6.5" fill="#b45309"/>
+  <text x="340" y="726" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">磷酸化开关（分钟级）</text>
+  <text x="340" y="744" font-size="10.5" fill="#64748b" text-anchor="middle">PKA / CaMKII</text>
+  <circle cx="574" cy="700" r="6.5" fill="#dc2626"/>
+  <text x="574" y="726" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">基因表达 · 结构改建</text>
+  <text x="574" y="744" font-size="10.5" fill="#64748b" text-anchor="middle">数小时至数天</text>
+  <text x="648" y="688" font-size="11" fill="#64748b" text-anchor="middle">时间 →</text>
+  <rect x="60" y="782" width="290" height="92" rx="9" fill="#fce7f3" fill-opacity="0.4" stroke="#be185d" stroke-width="1.5"/>
+  <text x="76" y="808" font-size="13" fill="#831843" font-weight="700">dunce 突变体</text>
+  <text x="76" y="828" font-size="10.5" fill="#475569">cAMP 磷酸二酯酶缺陷 → 降解失灵、</text>
+  <text x="76" y="843" font-size="10.5" fill="#475569">浓度长期偏高 → 可塑性反而丧失、学不会任务。</text>
+  <rect x="370" y="782" width="290" height="92" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="386" y="808" font-size="13" fill="#075985" font-weight="700">rutabaga 突变体</text>
+  <text x="386" y="828" font-size="10.5" fill="#475569">腺苷酸环化酶缺陷 → cAMP 生成不足 → 学习不良；</text>
+  <text x="386" y="843" font-size="10.5" fill="#475569">该酶受钙-钙调蛋白激活。</text>
+  <text x="60" y="918" font-size="11" fill="#64748b">一升一降两个方向把学习的分子通路锁死在 cAMP 上——「不同结构的脑、同一套分子语法」。</text>
+  <rect x="700" y="682" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="709.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="810" y="682" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="709.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">习惯化</text>
+  <rect x="1060" y="682" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="709.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">敏化</text>
+  <rect x="700" y="726" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="752.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">刺激性质</text>
+  <rect x="810" y="726" width="250" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="752.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">重复无害刺激（轻触喷水管）</text>
+  <rect x="1060" y="726" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="752.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">伤害性刺激（尾部电击）</text>
+  <rect x="700" y="768" width="640" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="768" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="794.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">突触范畴</text>
+  <rect x="810" y="768" width="250" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="794.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">同突触性（突触自身）</text>
+  <rect x="1060" y="768" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="794.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">异突触性（5-HT 中间神经元介入）</text>
+  <rect x="700" y="810" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="836.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">突触变化</text>
+  <rect x="810" y="810" width="250" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="836.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">递质释放减少</text>
+  <rect x="1060" y="810" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="836.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">递质释放增多</text>
+  <rect x="700" y="852" width="640" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="852" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="878.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">分子起点</text>
+  <rect x="810" y="852" width="250" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="878.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">末梢钙内流进行性下降</text>
+  <rect x="1060" y="852" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="878.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">5-HT–Gs–cAMP–PKA 级联</text>
+  <rect x="700" y="894" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="920.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">时程</text>
+  <rect x="810" y="894" width="250" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="920.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">数分钟至数小时</text>
+  <rect x="1060" y="894" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="920.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">数分钟（短时）；数天（长时）</text>
+  <rect x="700" y="936" width="640" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="936" width="110" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="755" y="962.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">行为含义</text>
+  <rect x="810" y="936" width="250" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="962.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">学会忽略噪音</text>
+  <rect x="1060" y="936" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="962.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">学会记住威胁</text>
+</svg>

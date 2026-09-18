@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">下丘脑与垂体：神经内分泌的总开关</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">大细胞直达神经垂体释 ADH/催产素；小细胞经垂体门脉以六类激素调度腺垂体七种激素</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、下丘脑：采样三路输入，执行四路输出</text>
+  <rect x="240" y="260" width="240" height="130" rx="10" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="360" y="300" font-size="17" fill="#4c1d95" text-anchor="middle" font-weight="700">下丘脑</text>
+  <text x="360" y="322" font-size="11" fill="#64748b" text-anchor="middle">（约 4 g · 稳态的总枢纽）</text>
+  <text x="360" y="348" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">「采样—比较—设定点」</text>
+  <text x="60" y="226" font-size="12" fill="#1e293b" font-weight="700">输入三路</text>
+  <rect x="95.14750000000001" y="249" width="89.705" height="26" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="140" y="265.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">孤束核内脏传入</text>
+  <rect x="68.11" y="289" width="143.78" height="26" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="140" y="305.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">边缘系统（杏仁核等）调制</text>
+  <rect x="60.9721" y="329" width="158.0558" height="26" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="140" y="345.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">血液直接采样（温度/渗透压）</text>
+  <line x1="200" y1="300" x2="240" y2="300" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="540" y="226" font-size="12" fill="#1e293b" font-weight="700">输出四路</text>
+  <rect x="491.7871" y="249" width="136.4258" height="26" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="560" y="265.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">自主神经（交感/副交感）</text>
+  <rect x="507.090325" y="289" width="105.81935" height="26" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="560" y="305.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">大细胞 → 神经垂体</text>
+  <rect x="507.090325" y="329" width="105.81935" height="26" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="560" y="345.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">小细胞 → 垂体门脉</text>
+  <rect x="498.925" y="369" width="122.15" height="26" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="560" y="385.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">边缘联系（行为输出）</text>
+  <line x1="480" y1="262" x2="520" y2="262" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="480" y1="302" x2="520" y2="302" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="480" y1="342" x2="520" y2="342" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="480" y1="382" x2="520" y2="382" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="60" y="440" font-size="11" fill="#475569">体温、渗透压、血糖、体重与生殖内分泌的设定点均在此维护——四路输出并行执行同一稳态决策。</text>
+  <text x="60" y="500" font-size="11" fill="#64748b" font-weight="700">「神经内分泌的总开关」：神经元既是神经元的指挥官，又是腺体的分泌细胞。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、大细胞直达血循环，小细胞经门脉近距离调控</text>
+  <rect x="740" y="196" width="290" height="160" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.8"/>
+  <text x="756" y="222" font-size="12.5" fill="#78350f" font-weight="700">大细胞系统 → 神经垂体</text>
+  <text x="756" y="246" font-size="11" fill="#475569">视上核与室旁核大细胞神经元合成 ADH 与催产素，</text>
+  <text x="756" y="262" font-size="11" fill="#475569">经轴突运送至神经垂体储存，</text>
+  <text x="756" y="278" font-size="11" fill="#475569">由动作电位触发释放入血。</text>
+  <text x="756" y="330" font-size="11" fill="#78350f" font-weight="700">神经垂体是下丘脑的延伸而非腺体。</text>
+  <rect x="1050" y="196" width="290" height="160" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1066" y="222" font-size="12.5" fill="#134e4a" font-weight="700">小细胞系统 → 垂体门脉</text>
+  <text x="1066" y="246" font-size="11" fill="#475569">经正中隆起释入垂体门脉，以 TRH、CRH、GnRH、</text>
+  <text x="1066" y="262" font-size="11" fill="#475569">GHRH、SST、</text>
+  <text x="1066" y="278" font-size="11" fill="#475569">DA 六类调节激素控制腺垂体七种激素。</text>
+  <text x="1066" y="330" font-size="11" fill="#134e4a" font-weight="700">门脉使微量激素近距离高效送达。</text>
+  <text x="740" y="396" font-size="12" fill="#1e293b" font-weight="700">GnRH 脉冲频率决定格局：</text>
+  <line x1="760" y1="444" x2="760" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="800" y1="444" x2="800" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="840" y1="444" x2="840" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="880" y1="444" x2="880" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="920" y1="444" x2="920" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="960" y1="444" x2="960" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="1000" y1="444" x2="1000" y2="420" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="748" y1="444" x2="1010" y2="444" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="740" y="470" font-size="11" fill="#475569">慢脉冲（约 90 分钟一次）偏向 FSH、快脉冲偏向 LH——脉冲信号本身携带信息，持续给药反致受体下调。</text>
+  <text x="740" y="522" font-size="11" fill="#64748b" font-weight="700">腺垂体七种激素：GH、PRL、ACTH、TSH、LH、FSH、MSH。</text>
+  <rect x="30" y="578" width="1340" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、反馈层级：长环负反馈为主，两个著名例外</text>
+  <rect x="90" y="650" width="330" height="56" rx="9" fill="#f1f5f9" stroke="#6d28d9" stroke-width="2"/>
+  <text x="255" y="684" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">下丘脑（CRH / GnRH / TRH …）</text>
+  <line x1="420" y1="678" x2="510" y2="678" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <rect x="510" y="650" width="330" height="56" rx="9" fill="#f1f5f9" stroke="#0369a1" stroke-width="2"/>
+  <text x="675" y="684" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">垂体（ACTH / LH / TSH …）</text>
+  <line x1="840" y1="678" x2="930" y2="678" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <rect x="930" y="650" width="330" height="56" rx="9" fill="#f1f5f9" stroke="#0f766e" stroke-width="2"/>
+  <text x="1095" y="684" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">靶腺（皮质醇 / 性激素 / T3 T4）</text>
+  <path d="M1150,714 C1150,760 600,760 240,714" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="8 5" marker-end="url(#arr-bad)"/>
+  <text x="700" y="768" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">长环负反馈：靶腺激素抑制下丘脑与垂体（主导机制）</text>
+  <rect x="90" y="800" width="590" height="110" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="106" y="826" font-size="12.5" fill="#78350f" font-weight="700">例外一：排卵前雌激素正反馈翻转</text>
+  <text x="106" y="850" font-size="11" fill="#475569">雌激素持续高水平不再抑制、反而触发 LH 峰与排卵——同一激素因浓度与时程而作用翻转。</text>
+  <rect x="700" y="800" width="630" height="110" rx="9" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="716" y="826" font-size="12.5" fill="#dc2626" font-weight="700">例外二：应激时 CRH 越权</text>
+  <text x="716" y="850" font-size="11" fill="#475569">应激令 CRH 同时抑制 GnRH 与 TSH 轴（「应激性闭经」「应激性甲减」）——生存优先于生殖与代谢。</text>
+  <text x="90" y="940" font-size="11" fill="#64748b">定位诊断按「靶腺—促激素—兴奋试验」层级展开：先测靶腺激素，再测促激素，最后用兴奋试验区分病变在垂体还是下丘脑。</text>
+</svg>

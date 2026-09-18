@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">神经元学说：从网与元之争到突触间隙的电镜裁决</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">1873 高尔基染色显示单个神经元全貌；Golgi 网状学说与 Cajal 神经元学说对峙三十余年，1906 年同获诺奖而立场对立；1950s 电镜揭示 20–40 nm 突触间隙终裁；人脑约 860 亿神经元（小脑 690 亿、皮层 160 亿），突触 10¹⁴–10¹⁵ 量级</text>
+  <rect x="30" y="132" width="1340" height="210" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、从「网」到「元」：一场跨越三十余年的论战</text>
+  <line x1="90" y1="262" x2="1340" y2="262" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="152.5" cy="262" r="6.5" fill="#0369a1"/>
+  <line x1="152.5" y1="253" x2="152.5" y2="232" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="152.5" y="212" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1873 高尔基染色</text>
+  <text x="152.5" y="192" font-size="12" fill="#64748b" text-anchor="middle">银淀随机浸染极少数神经元</text>
+  <circle cx="427.5" cy="262" r="6.5" fill="#0f766e"/>
+  <line x1="427.5" y1="271" x2="427.5" y2="292" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="427.5" y="312" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1889 卡哈尔</text>
+  <text x="427.5" y="332" font-size="12" fill="#64748b" text-anchor="middle">神经元是独立单位</text>
+  <circle cx="677.5" cy="262" r="6.5" fill="#6d28d9"/>
+  <line x1="677.5" y1="253" x2="677.5" y2="232" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="677.5" y="212" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1897 突触定名</text>
+  <text x="677.5" y="192" font-size="12" fill="#64748b" text-anchor="middle">谢林顿命名 synapse</text>
+  <circle cx="915" cy="262" r="6.5" fill="#d97706"/>
+  <line x1="915" y1="271" x2="915" y2="292" stroke="#d97706" stroke-width="1.7"/>
+  <text x="915" y="312" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1906 诺贝尔奖</text>
+  <text x="915" y="332" font-size="12" fill="#64748b" text-anchor="middle">Golgi 与 Cajal 同台领奖 · 立场对立</text>
+  <circle cx="1190" cy="262" r="6.5" fill="#dc2626"/>
+  <line x1="1190" y1="253" x2="1190" y2="232" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1190" y="212" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1950s 电镜裁决</text>
+  <text x="1190" y="192" font-size="12" fill="#64748b" text-anchor="middle">突触间隙 20–40 nm</text>
+  <rect x="30" y="358" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="380.84" font-size="19" fill="#475569" font-weight="700">二、网状学说 vs 神经元学说：连续成网，还是接触相连？</text>
+  <rect x="60" y="420" width="590" height="220" rx="10" fill="#fee2e2" fill-opacity="0.4"/>
+  <text x="76" y="446" font-size="18" fill="#dc2626" font-weight="700">网状学说（Golgi）</text>
+  <text x="76" y="468" font-size="13.5" fill="#64748b">突起彼此融合连通，细胞质连续成网</text>
+  <circle cx="170" cy="500" r="24" fill="#ffffff" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="170" cy="500" r="9.600000000000001" fill="#dc2626" fill-opacity="0.35" stroke="none"/>
+  <circle cx="400" cy="470" r="21" fill="#ffffff" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="400" cy="470" r="8.4" fill="#dc2626" fill-opacity="0.35" stroke="none"/>
+  <circle cx="330" cy="600" r="19" fill="#ffffff" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="330" cy="600" r="7.6000000000000005" fill="#dc2626" fill-opacity="0.35" stroke="none"/>
+  <path d="M146,510 q-40,40 -10,80 q30,40 90,30 q60,-10 60,-70" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <path d="M194,492 q90,-20 180,-14" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <path d="M190,512 q60,50 120,80" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <path d="M420,490 q30,60 0,110" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <path d="M240,560 q100,-20 170,-60" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="96" y="636" font-size="12.5" fill="#dc2626" font-weight="700">胞质直接流通 · 无边界</text>
+  <rect x="690" y="420" width="590" height="220" rx="10" fill="#ccfbf1" fill-opacity="0.4"/>
+  <text x="706" y="446" font-size="18" fill="#0f766e" font-weight="700">神经元学说（Cajal）</text>
+  <text x="706" y="468" font-size="13.5" fill="#64748b">独立细胞，仅在接触点（突触）处传递信息</text>
+  <circle cx="780" cy="470" r="24" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
+  <circle cx="780" cy="470" r="9.600000000000001" fill="#0f766e" fill-opacity="0.35" stroke="none"/>
+  <line x1="760" y1="452" x2="726" y2="420" stroke="#0f766e" stroke-width="2"/>
+  <line x1="762" y1="480" x2="720" y2="470" stroke="#0f766e" stroke-width="2"/>
+  <line x1="760" y1="490" x2="730" y2="512" stroke="#0f766e" stroke-width="2"/>
+  <line x1="804" y1="470" x2="1000" y2="470" stroke="#0f766e" stroke-width="2.6"/>
+  <rect x="830" y="458" width="34" height="24" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="880" y="458" width="34" height="24" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="930" y="458" width="34" height="24" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <ellipse cx="1024" cy="470" rx="15" ry="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1046" y1="452" x2="1046" y2="488" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="1064" y1="452" x2="1064" y2="488" stroke="#0f766e" stroke-width="2.6"/>
+  <circle cx="1051" cy="462" r="2.6" fill="#b45309"/>
+  <circle cx="1055" cy="462" r="2.6" fill="#b45309"/>
+  <circle cx="1059" cy="462" r="2.6" fill="#b45309"/>
+  <circle cx="1051" cy="478" r="2.6" fill="#b45309"/>
+  <circle cx="1055" cy="478" r="2.6" fill="#b45309"/>
+  <circle cx="1059" cy="478" r="2.6" fill="#b45309"/>
+  <line x1="1064" y1="470" x2="1140" y2="470" stroke="#0f766e" stroke-width="2.4"/>
+  <circle cx="1165" cy="470" r="24" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
+  <circle cx="1165" cy="470" r="9.600000000000001" fill="#0f766e" fill-opacity="0.35" stroke="none"/>
+  <line x1="1178" y1="450" x2="1210" y2="418" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1184" y1="474" x2="1230" y2="462" stroke="#0f766e" stroke-width="2"/>
+  <line x1="1178" y1="492" x2="1208" y2="522" stroke="#0f766e" stroke-width="2"/>
+  <text x="1055" y="436" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">突触间隙</text>
+  <text x="1055" y="508" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">20–40 nm</text>
+  <text x="716" y="636" font-size="12.5" fill="#134e4a" font-weight="700">接触而非连续 · 信息跨细胞单向传递</text>
+  <rect x="647.7824" y="516.4" width="44.4352" height="27.2" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="670" y="535.76" font-size="16" fill="#475569" text-anchor="middle" font-weight="700">VS</text>
+  <rect x="690" y="652" width="590" height="26" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="985" y="669" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">1950s 电镜（De Robertis · Bennett · Palay）：间隙确证 → 神经元学说胜出</text>
+  <rect x="30" y="704" width="1340" height="274" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="726.84" font-size="19" fill="#475569" font-weight="700">三、神经元的基本结构与数量级：从 302 到 860 亿</text>
+  <circle cx="210" cy="810" r="30" fill="#ffffff" stroke="#1e293b" stroke-width="2.4"/>
+  <circle cx="210" cy="810" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="184" y1="784" x2="144" y2="744" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="176.2" y1="804.8" x2="124.2" y2="796.8" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="184" y1="828.2" x2="144" y2="856.2" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="197" y1="776.2" x2="177" y2="724.2" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="240" y1="810" x2="520" y2="810" stroke="#1e293b" stroke-width="2.8"/>
+  <rect x="280" y="798" width="36" height="24" rx="9" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="330" y="798" width="36" height="24" rx="9" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="380" y="798" width="36" height="24" rx="9" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="430" y="798" width="36" height="24" rx="9" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+  <path d="M520,810 q30,-14 60,-16" fill="none" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <path d="M520,810 q30,14 60,16" fill="none" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="120" y="760" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">树突（输入）</text>
+  <text x="210" y="866" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">胞体（整合）</text>
+  <text x="380" y="776" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">轴突 + 髓鞘（传导）</text>
+  <text x="578" y="848" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">突触末梢（输出）</text>
+  <line x1="120" y1="890" x2="590" y2="890" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="355" y="916" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">动态极化：信息自树突经胞体流向轴突末梢</text>
+  <rect x="700" y="756" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="783.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">生物 / 部位</text>
+  <rect x="890" y="756" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="783.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">神经元数量</text>
+  <rect x="1110" y="756" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="783.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">突触规模</text>
+  <rect x="700" y="800" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="821.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">秀丽隐杆线虫</text>
+  <rect x="890" y="800" width="220" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="821.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">恰好 302 个</text>
+  <rect x="1110" y="800" width="240" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="821.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 7000 个连接（完整连接组）</text>
+  <rect x="700" y="832" width="650" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="832" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="853.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">人脑（无偏计数）</text>
+  <rect x="890" y="832" width="220" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="853.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 860 亿 + 大致等量胶质</text>
+  <rect x="1110" y="832" width="240" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="853.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 10¹⁴–10¹⁵</text>
+  <rect x="700" y="864" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="885.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">人小脑</text>
+  <rect x="890" y="864" width="220" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="885.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 690 亿</text>
+  <rect x="1110" y="864" width="240" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="885.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="700" y="896" width="650" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="700" y="896" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="917.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">人大脑皮层</text>
+  <rect x="890" y="896" width="220" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="917.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 160 亿</text>
+  <rect x="1110" y="896" width="240" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="917.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="700" y="916" width="650" height="42" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="716" y="940" font-size="11" fill="#475569">后世修正：缝隙连接允许 &lt;1 kDa 小分子直接交换——亚细胞层面的连续，不改化学与遗传层面的独立边界。</text>
+</svg>

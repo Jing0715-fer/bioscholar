@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">前庭系统：半规管测角加速度、耳石器测重力与直线加速度</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">半规管是加速度计而非转速表；VOR 为三神经元弧（潜伏期约 10 ms、增益接近 1）</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三条半规管互相垂直：加速度计而非转速表</text>
+  <circle cx="150" cy="300" r="52" fill="none" stroke="#0369a1" stroke-width="3.4"/>
+  <ellipse cx="150" cy="248" rx="16" ry="11" fill="#fef3c7" fill-opacity="0.8" stroke="#b45309" stroke-width="1.8"/>
+  <text x="150" y="386" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">水平（外）半规管</text>
+  <text x="150" y="403" font-size="9.5" fill="#64748b" text-anchor="middle">（绕垂直轴）</text>
+  <circle cx="360" cy="300" r="52" fill="none" stroke="#0369a1" stroke-width="3.4"/>
+  <ellipse cx="360" cy="248" rx="16" ry="11" fill="#fef3c7" fill-opacity="0.8" stroke="#b45309" stroke-width="1.8"/>
+  <text x="360" y="386" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">前（上）半规管</text>
+  <text x="360" y="403" font-size="9.5" fill="#64748b" text-anchor="middle">（绕内外轴）</text>
+  <circle cx="560" cy="300" r="52" fill="none" stroke="#0369a1" stroke-width="3.4"/>
+  <ellipse cx="560" cy="248" rx="16" ry="11" fill="#fef3c7" fill-opacity="0.8" stroke="#b45309" stroke-width="1.8"/>
+  <text x="560" y="386" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">后（下）半规管</text>
+  <text x="560" y="403" font-size="9.5" fill="#64748b" text-anchor="middle">（绕前后轴）</text>
+  <text x="360" y="218" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">壶腹嵴：毛细胞 + 终帽</text>
+  <text x="360" y="236" font-size="10.5" fill="#64748b" text-anchor="middle">内淋巴流动 → 终帽偏转 → 毛细胞换能</text>
+  <text x="60" y="428" font-size="11" fill="#475569">恒速旋转时终帽回位、传入回落——半规管只报告角加速度的变化率；Ewald 定律：水平管内淋巴流向壶腹为兴奋，</text>
+  <text x="60" y="444" font-size="11" fill="#475569">垂直管流离壶腹为兴奋，决定眼震方向判读。</text>
+  <text x="60" y="508" font-size="10.5" fill="#64748b">三条管大致互相垂直，任意头旋转都可被至少一条管的最适平面捕捉。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、椭圆囊与球囊：静止时也持续报告倾角</text>
+  <rect x="760" y="220" width="300" height="130" rx="10" fill="#e0f2fe" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="910" y="246" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">囊斑（椭圆囊 / 球囊）</text>
+  <line x1="830" y1="330" x2="830" y2="300" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="830" cy="342" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="880" y1="330" x2="880" y2="300" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="880" cy="342" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="930" y1="330" x2="930" y2="300" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="930" cy="342" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="980" y1="330" x2="980" y2="300" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="980" cy="342" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="910" y="366" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">毛细胞</text>
+  <rect x="810" y="282" width="190" height="16" rx="4" fill="#fef3c7" fill-opacity="0.85" stroke="#d97706" stroke-width="1.6"/>
+  <polygon points="825,282 835,282 830,270" fill="#d97706"/>
+  <polygon points="855,282 865,282 860,270" fill="#d97706"/>
+  <polygon points="885,282 895,282 890,270" fill="#d97706"/>
+  <polygon points="915,282 925,282 920,270" fill="#d97706"/>
+  <polygon points="945,282 955,282 950,270" fill="#d97706"/>
+  <polygon points="975,282 985,282 980,270" fill="#d97706"/>
+  <text x="910" y="262" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">耳石膜 + 耳石（碳酸钙结晶）</text>
+  <text x="1090" y="230" font-size="11" fill="#475569">耳石密度约为周围组织的 3 倍：</text>
+  <text x="1090" y="246" font-size="11" fill="#475569">直线加速度与重力使耳石膜相对毛细胞偏移——静止时即持续报告头相对重力的倾角。</text>
+  <text x="760" y="396" font-size="11" fill="#475569">椭圆囊囊斑多呈水平面（直立时），球囊呈垂直面——两者正交布置覆盖三维直线加速度与静态重力。</text>
+  <rect x="760" y="442" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="469.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">前庭结构</text>
+  <rect x="940" y="442" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1030" y="469.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">感受器</text>
+  <rect x="1120" y="442" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="469.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">适宜刺激</text>
+  <rect x="760" y="486" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="509.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">半规管 ×3</text>
+  <rect x="940" y="486" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1030" y="509.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">壶腹嵴毛细胞 + 终帽</text>
+  <rect x="1120" y="486" width="230" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="509.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">角加速度（旋转）</text>
+  <rect x="760" y="522" width="590" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="760" y="522" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="850" y="545.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">椭圆囊 / 球囊</text>
+  <rect x="940" y="522" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1030" y="545.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">囊斑毛细胞 + 耳石膜</text>
+  <rect x="1120" y="522" width="230" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="545.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">直线加速度与重力</text>
+  <rect x="30" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、前庭眼反射（VOR）：三神经元弧</text>
+  <rect x="60" y="660" width="260" height="76" rx="9" fill="#f1f5f9" stroke="#b45309" stroke-width="2"/>
+  <text x="190" y="694" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">毛细胞（半规管）</text>
+  <text x="190" y="714" font-size="10" fill="#64748b" text-anchor="middle">第 1 级</text>
+  <rect x="60" y="770" width="260" height="76" rx="9" fill="#f1f5f9" stroke="#0369a1" stroke-width="2"/>
+  <text x="190" y="804" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">前庭核</text>
+  <text x="190" y="824" font-size="10" fill="#64748b" text-anchor="middle">第 2 级</text>
+  <rect x="360" y="770" width="260" height="76" rx="9" fill="#f1f5f9" stroke="#6d28d9" stroke-width="2"/>
+  <text x="490" y="804" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">眼运动核（Ⅲ/Ⅳ/Ⅵ）</text>
+  <text x="490" y="824" font-size="10" fill="#64748b" text-anchor="middle">第 3 级</text>
+  <rect x="360" y="660" width="260" height="76" rx="9" fill="#f1f5f9" stroke="#059669" stroke-width="2"/>
+  <text x="490" y="694" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">眼外肌 → 反向补偿眼动</text>
+  <text x="490" y="714" font-size="10" fill="#64748b" text-anchor="middle">第 4 级</text>
+  <line x1="190" y1="736" x2="190" y2="770" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="320" y1="808" x2="360" y2="808" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="490" y1="770" x2="490" y2="736" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <text x="60" y="880" font-size="11" fill="#475569">潜伏期约 10 ms、增益接近 1——头向左转时眼球向右补偿，视像稳定在中央凹；可被小脑绒球长期适应修正</text>
+  <text x="60" y="896" font-size="11" fill="#475569">（戴棱镜数日后增益重新校准）。</text>
+  <rect x="710" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="600.84" font-size="19" fill="#475569" font-weight="700">四、眼震判读与晕动症：感觉冲突假说</text>
+  <rect x="740" y="648" width="300" height="150" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="756" y="674" font-size="13" fill="#134e4a" font-weight="700">眼震以快相方向命名</text>
+  <text x="756" y="698" font-size="10.5" fill="#475569">旋转开始：慢相与旋转相反、</text>
+  <text x="756" y="713" font-size="10.5" fill="#475569">快相与旋转同向——按快相判读方向。冷热水试验：</text>
+  <text x="756" y="728" font-size="10.5" fill="#475569">「冷对侧、温同侧」（COWS）</text>
+  <text x="756" y="743" font-size="10.5" fill="#475569">——冷水灌耳引发向对侧的快相眼震。</text>
+  <rect x="1070" y="648" width="270" height="150" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1086" y="674" font-size="13" fill="#78350f" font-weight="700">晕动症</text>
+  <text x="1086" y="698" font-size="10.5" fill="#475569">主流解释为感觉冲突假说：</text>
+  <text x="1086" y="713" font-size="10.5" fill="#475569">前庭输入与视觉/本体预期不匹配。</text>
+  <text x="1086" y="728" font-size="10.5" fill="#475569">凡减少预期与输入误差的措施——看远处地平线、</text>
+  <text x="1086" y="743" font-size="10.5" fill="#475569">闭眼、当司机——皆可缓解。</text>
+  <text x="740" y="830" font-size="10.5" fill="#475569">前庭系统解剖与功能小结：半规管测角加速度、耳石器测直线加速度与重力、VOR 稳定视像、</text>
+  <text x="740" y="845" font-size="10.5" fill="#475569">前庭脊髓反射与姿势调整联动——本体感觉与身体图式的「内感受底座」。</text>
+</svg>

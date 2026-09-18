@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单胺类递质：儿茶酚胺装配线、多巴胺通路与 5-HT 家族</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">酪氨酸 →（TH 限速，需 BH4，受产物反馈抑制）→ L-DOPA → 多巴胺 → NE → 肾上腺素；L-DOPA 绕过瓶颈治帕金森、配卡比多巴减少外周消耗；多巴胺四通路：黑质-纹状体（运动，退变即帕金森）、中脑-边缘（奖赏）、中脑-皮层（认知）、结节-漏斗（抑制催乳素）；D1 类 Gs / D2 类 Gi，抗精神病药皆为 D2 拮抗剂；NE 司令部在蓝斑，α1/α2/β1/β2/β3 各司血管、心脏、支气管与代谢；5-HT 约 14 种受体（仅 5-HT3 离子型），SSRI 阻断 SERT、疗效滞后数周源于受体适应</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、儿茶酚胺装配线：限速在酪氨酸羟化酶</text>
+  <rect x="66" y="250" width="80" height="44" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="106" y="277" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">酪氨酸</text>
+  <rect x="186" y="250" width="80" height="44" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="226" y="277" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">L-DOPA</text>
+  <rect x="306" y="250" width="80" height="44" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="346" y="277" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">多巴胺</text>
+  <rect x="426" y="250" width="80" height="44" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="466" y="277" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">去甲肾上腺素</text>
+  <rect x="546" y="250" width="80" height="44" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="586" y="277" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">肾上腺素</text>
+  <line x1="148" y1="272" x2="184" y2="272" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <line x1="268" y1="272" x2="304" y2="272" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <line x1="388" y1="272" x2="424" y2="272" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <line x1="508" y1="272" x2="544" y2="272" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="131.66469999999998" y="217.075" width="68.67060000000001" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="166" y="229.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">TH（限速）</text>
+  <rect x="266.5894" y="217.075" width="38.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="286" y="229.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">AADC</text>
+  <rect x="389.94205" y="217.075" width="32.1159" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="406" y="229.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">DBH</text>
+  <rect x="506.5894" y="217.075" width="38.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="526" y="229.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">PNMT</text>
+  <path d="M346,240 C300,196 220,196 174,244" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <text x="270" y="206" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">产物反馈抑制</text>
+  <text x="66" y="326" font-size="11" fill="#475569">TH（酪氨酸羟化酶）为限速酶：需四氢生物蝶呤（BH4）为辅因子，受儿茶酚胺产物反馈抑制；</text>
+  <text x="66" y="341" font-size="11" fill="#475569">儿茶酚胺 = 多巴胺 · 去甲肾上腺素 · 肾上腺素（共同前体：酪氨酸）。</text>
+  <rect x="66" y="376" width="620" height="74" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="86" y="402" font-size="13.5" fill="#065f46" font-weight="700">L-DOPA 与帕金森病</text>
+  <text x="86" y="424" font-size="11.5" fill="#475569">L-DOPA 直接绕过 TH 瓶颈补充多巴胺；配卡比多巴抑制外周 AADC，减少外周消耗、提高入脑比例。</text>
+  <text x="66" y="484" font-size="11" fill="#475569">装配线四步：酪氨酸 → L-DOPA → 多巴胺 → 去甲肾上腺素 → 肾上腺素；NE 在囊泡内由 DBH 就地合成。</text>
+  <rect x="720" y="132" width="650" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="736" y="154.84" font-size="19" fill="#475569" font-weight="700">二、多巴胺四条通路与两族受体</text>
+  <rect x="750" y="190" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">通路</text>
+  <rect x="860" y="190" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">起点至终点</text>
+  <rect x="990" y="190" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1042.5" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">主要职能</text>
+  <rect x="1095" y="190" width="245" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1217.5" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">损毁后典型表现</text>
+  <rect x="750" y="234" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="262.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">黑质-纹状体</text>
+  <rect x="860" y="234" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="262.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">黑质 → 纹状体</text>
+  <rect x="990" y="234" width="105" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1042.5" y="262.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">运动</text>
+  <rect x="1095" y="234" width="245" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1217.5" y="262.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">帕金森病（通路退变）</text>
+  <rect x="750" y="280" width="590" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="750" y="280" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="308.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">中脑-边缘</text>
+  <rect x="860" y="280" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="308.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">VTA → 伏隔核</text>
+  <rect x="990" y="280" width="105" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1042.5" y="308.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">奖赏</text>
+  <rect x="1095" y="280" width="245" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1217.5" y="308.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">奖赏与成瘾障碍</text>
+  <rect x="750" y="326" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="354.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">中脑-皮层</text>
+  <rect x="860" y="326" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="354.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">VTA → 前额叶</text>
+  <rect x="990" y="326" width="105" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1042.5" y="354.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">认知</text>
+  <rect x="1095" y="326" width="245" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1217.5" y="354.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">精神分裂症认知症状</text>
+  <rect x="750" y="372" width="590" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="750" y="372" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="400.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">结节-漏斗</text>
+  <rect x="860" y="372" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="400.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">下丘脑 → 垂体</text>
+  <rect x="990" y="372" width="105" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1042.5" y="400.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">抑制催乳素</text>
+  <rect x="1095" y="372" width="245" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1217.5" y="400.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">高催乳素血症</text>
+  <rect x="750" y="436" width="590" height="106" rx="9" fill="#ede9fe" fill-opacity="0.35" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="770" y="462" font-size="13.5" fill="#4c1d95" font-weight="700">两族受体与药物</text>
+  <text x="770" y="484" font-size="11.5" fill="#475569">D1 类偶联 Gs、D2 类偶联 Gi；</text>
+  <text x="770" y="500" font-size="11.5" fill="#475569">精神分裂症阳性症状与中脑-边缘 D2 过度活动相关——抗精神病药皆为 D2 拮抗剂；氯丙嗪 1950 年代登场，</text>
+  <text x="770" y="516" font-size="11.5" fill="#475569">药物先于理论。</text>
+  <rect x="30" y="576" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、去甲肾上腺素与 5-羟色胺：蓝斑与庞大的受体家族</text>
+  <text x="330" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">NE：蓝斑的信使</text>
+  <rect x="60" y="656" width="200" height="100" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.6"/>
+  <text x="80" y="682" font-size="14" fill="#92400e" font-weight="700">蓝斑（脑桥）</text>
+  <text x="80" y="706" font-size="11.5" fill="#475569">NE 司令部；</text>
+  <text x="80" y="722" font-size="11.5" fill="#475569">广幅投射至全脑与脊髓——主司唤醒、</text>
+  <text x="80" y="738" font-size="11.5" fill="#475569">注意与应激。</text>
+  <rect x="290" y="656" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="683.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">受体</text>
+  <rect x="370" y="656" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="683.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">主要职能</text>
+  <rect x="290" y="700" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="722.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">α1</text>
+  <rect x="370" y="700" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="722.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">血管平滑肌收缩（Gq）</text>
+  <rect x="290" y="734" width="380" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="290" y="734" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="756.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">α2</text>
+  <rect x="370" y="734" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="756.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">突触前自身受体，抑制释放（Gi）</text>
+  <rect x="290" y="768" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="790.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">β1</text>
+  <rect x="370" y="768" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="790.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">心脏：心率与收缩力（Gs）</text>
+  <rect x="290" y="802" width="380" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="290" y="802" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="824.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">β2</text>
+  <rect x="370" y="802" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="824.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">支气管舒张（Gs）</text>
+  <rect x="290" y="836" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="330" y="858.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">β3</text>
+  <rect x="370" y="836" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="520" y="858.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">代谢与产热</text>
+  <text x="60" y="890" font-size="11.5" fill="#475569">α1 / α2 / β1 / β2 / β3 分型各司血管、心脏、支气管与代谢——同一递质，多种受体，多种药理。</text>
+  <text x="1030" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">5-羟色胺：约 14 种受体</text>
+  <rect x="760" y="656" width="580" height="100" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="780" y="682" font-size="13.5" fill="#134e4a" font-weight="700">受体家族</text>
+  <text x="780" y="706" font-size="11.5" fill="#475569">约 14 种受体亚型已获鉴定；除 5-HT3 为离子型阳离子通道（快速去极化）外，其余皆为 GPCR。</text>
+  <rect x="760" y="776" width="580" height="110" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="780" y="802" font-size="13.5" fill="#075985" font-weight="700">SSRI：把再摄取的阀门关上</text>
+  <text x="780" y="826" font-size="11.5" fill="#475569">SSRI 阻断 SERT，突触间隙 5-HT 升高；疗效滞后数周，源于受体适应而非浓度本身。</text>
+</svg>

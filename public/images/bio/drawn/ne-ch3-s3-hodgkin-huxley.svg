@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Hodgkin-Huxley 模型：电压钳、门控变量与手摇计算机上的奇迹</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">枪乌贼巨轴突直径 0.5–1 mm；1939 年测得超射 +40 mV 否定 Bernstein 膜学说，1949 年钠假说登场；胆碱置换（后用 TTX/TEA）分离出快失活的 I_Na 与持续延迟的 I_K；g_Na = ḡ_Na·m³h、g_K = ḡ_K·n⁴（E_Na = +50、E_K = −77、E_l = −54.4 mV）；数值积分重现波形与传导速度（计算约 18.7 m/s 对实测约 21 m/s），1963 年三人共获诺奖</text>
+  <rect x="30" y="132" width="700" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、枪乌贼巨轴突：大自然送来的实验台</text>
+  <rect x="60" y="176" width="640" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="78" y="196" font-size="11.5" fill="#075985">直径 0.5–1 mm、肉眼可见、可插入电极的神经纤维——本是枪乌贼喷水推进的高速信号线。</text>
+  <rect x="75.5894" y="255.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="267.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1902</text>
+  <text x="146" y="268" font-size="11" fill="#475569">Bernstein 膜学说：兴奋时膜「崩塌」，电位向零坍塌——无法容纳超射</text>
+  <rect x="75.5894" y="295.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="307.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1939</text>
+  <text x="146" y="308" font-size="11" fill="#475569">Hodgkin &amp; Huxley 微电极刺入巨轴突：测得超射 +40 mV，旧说当场失效</text>
+  <rect x="75.5894" y="335.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="347.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1949</text>
+  <text x="146" y="348" font-size="11" fill="#475569">钠假说登场：兴奋时膜转为对 Na⁺ 通透，电位冲向 E_Na</text>
+  <rect x="66.07220000000001" y="375.075" width="59.855599999999995" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="387.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1947–52</text>
+  <text x="146" y="388" font-size="11" fill="#475569">电压钳系列实验：把放电问题化为各钳位电压下的电流测量</text>
+  <rect x="90" y="310" width="260" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="437.5" x2="350" y2="437.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="155" y1="480" x2="155" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="395" x2="350" y2="395" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="220" y1="480" x2="220" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="352.5" x2="350" y2="352.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="285" y1="480" x2="285" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110.8" y1="480" x2="110.8" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="110.8" y="502" font-size="13" fill="#64748b" text-anchor="middle">去极化钳位</text>
+  <line x1="324" y1="480" x2="324" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="324" y="502" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="84" y1="463" x2="90" y2="463" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="467" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="84" y1="327" x2="90" y2="327" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="331" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <text x="220" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">钳位时间</text>
+  <path d="M110.8,471.5 C112.5,449.7 116.0,364.7 121.2,340.6 C126.4,316.5 132.0,317.9 142,327 C152.0,336.1 168.0,376.6 181,395 C194.0,413.4 204.8,426.2 220,437.5 C235.2,448.8 254.7,457.1 272,463 C289.3,468.9 315.3,471.5 324,473.2" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="220" y="310" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">I_Na：快起 · 自我失活</text>
+  <rect x="400" y="310" width="250" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="400" y1="437.5" x2="650" y2="437.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="462.5" y1="480" x2="462.5" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="395" x2="650" y2="395" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="525" y1="480" x2="525" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="352.5" x2="650" y2="352.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="587.5" y1="480" x2="587.5" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="420" y1="480" x2="420" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="420" y="502" font-size="13" fill="#64748b" text-anchor="middle">去极化钳位</text>
+  <line x1="625" y1="480" x2="625" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="625" y="502" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="394" y1="463" x2="400" y2="463" stroke="#475569" stroke-width="1.8"/>
+  <text x="390" y="467" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="394" y1="327" x2="400" y2="327" stroke="#475569" stroke-width="1.8"/>
+  <text x="390" y="331" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <text x="525" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">钳位时间</text>
+  <path d="M420,476.6 C425.0,474.3 438.8,470.9 450,463 C461.3,455.1 475.0,441.8 487.5,429 C500.0,416.3 510.4,398.4 525,386.5 C539.6,374.6 558.3,364.1 575,357.6 C591.7,351.1 612.5,349.7 625,347.4 C637.5,345.1 645.8,344.6 650,344" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="525" y="310" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">I_K：慢起 · 持续</text>
+  <text x="385" y="546" font-size="11" fill="#475569" text-anchor="middle">胆碱置换（后用 TTX / TEA）分离两种电流——两张时间表暗含动作电位剧本</text>
+  <rect x="740" y="132" width="630" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、m、h、n：三个门控变量写成的方程</text>
+  <rect x="770" y="178" width="570" height="62" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1055" y="204" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">g_Na = ḡ_Na · m³h　　g_K = ḡ_K · n⁴</text>
+  <text x="1055" y="230" font-size="10.5" fill="#475569" text-anchor="middle">m 快激活 · h 慢失活 · n 慢（四次方对应四聚体）</text>
+  <rect x="770" y="258" width="76" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="808" y="285.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">门控变量</text>
+  <rect x="846" y="258" width="86" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="889" y="285.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">所属电导</text>
+  <rect x="932" y="258" width="108" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="986" y="285.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">动力学</text>
+  <rect x="1040" y="258" width="128" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1104" y="285.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">去极化稳态走向</text>
+  <rect x="1168" y="258" width="172" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1254" y="285.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">分子对应</text>
+  <rect x="770" y="302" width="76" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="808" y="328.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">m</text>
+  <rect x="846" y="302" width="86" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="889" y="328.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">g_Na</text>
+  <rect x="932" y="302" width="108" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="986" y="328.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">快激活</text>
+  <rect x="1040" y="302" width="128" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1104" y="328.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">→ 1（开放）</text>
+  <rect x="1168" y="302" width="172" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1254" y="328.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">激活门：S4 外携</text>
+  <rect x="770" y="344" width="570" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="344" width="76" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="808" y="370.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">h</text>
+  <rect x="846" y="344" width="86" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="889" y="370.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">g_Na</text>
+  <rect x="932" y="344" width="108" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="986" y="370.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">慢失活</text>
+  <rect x="1040" y="344" width="128" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1104" y="370.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">→ 0（关闭）</text>
+  <rect x="1168" y="344" width="172" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1254" y="370.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">IFM 球塞孔</text>
+  <rect x="770" y="386" width="76" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="808" y="412.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">n</text>
+  <rect x="846" y="386" width="86" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="889" y="412.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">g_K</text>
+  <rect x="932" y="386" width="108" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="986" y="412.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">慢 · 四次方</text>
+  <rect x="1040" y="386" width="128" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1104" y="412.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">→ 1（开放）</text>
+  <rect x="1168" y="386" width="172" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1254" y="412.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">四聚体的四个 S4</text>
+  <rect x="770" y="452" width="570" height="46" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="790" y="476" font-size="11.5" fill="#475569">电压钳参数（枪乌贼巨轴突）：E_Na = +50 mV、E_K = −77 mV、E_l = −54.4 mV。</text>
+  <rect x="30" y="566" width="1340" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、数值重建：手摇计算机上的奇迹与模型遗产</text>
+  <text x="220" y="626" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">传导速度：模型 vs 实测</text>
+  <rect x="130.7" y="672.84" width="73.60000000000001" height="127.16" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="167.5" y="663.84" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">18.7 m/s</text>
+  <text x="167.5" y="820" font-size="12.5" fill="#64748b" text-anchor="middle">模型计算</text>
+  <rect x="245.7" y="657.2" width="73.60000000000001" height="142.79999999999998" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="282.5" y="648.2" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">21 m/s</text>
+  <text x="282.5" y="820" font-size="12.5" fill="#64748b" text-anchor="middle">实测</text>
+  <text x="225" y="856" font-size="11" fill="#475569" text-anchor="middle">偏差约一成——波形、阈值、不应期一并重现</text>
+  <rect x="470" y="620" width="350" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="470" y1="770" x2="820" y2="770" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="557.5" y1="820" x2="557.5" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="470" y1="720" x2="820" y2="720" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="645" y1="820" x2="645" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="470" y1="670" x2="820" y2="670" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="732.5" y1="820" x2="732.5" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="487.5" y1="820" x2="487.5" y2="826" stroke="#475569" stroke-width="1.8"/>
+  <line x1="645" y1="820" x2="645" y2="826" stroke="#475569" stroke-width="1.8"/>
+  <line x1="802.5" y1="820" x2="802.5" y2="826" stroke="#475569" stroke-width="1.8"/>
+  <line x1="464" y1="800" x2="470" y2="800" stroke="#475569" stroke-width="1.8"/>
+  <text x="460" y="804" font-size="13" fill="#64748b" text-anchor="end">静息</text>
+  <line x1="464" y1="640" x2="470" y2="640" stroke="#475569" stroke-width="1.8"/>
+  <text x="460" y="644" font-size="13" fill="#64748b" text-anchor="end">峰值</text>
+  <text x="645" y="864" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时间（任意单位）</text>
+  <text x="424" y="720" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位</text>
+  <path d="M470,800 C478.8,799.3 509.7,799.3 522.5,796 C535.3,792.7 538.3,800.0 547,780 C555.8,760.0 566.8,701.0 575,676 C583.2,651.0 587.3,630.0 596,630 C604.8,630.0 616.4,655.0 627.5,676 C638.6,697.0 650.8,736.0 662.5,756 C674.2,776.0 685.8,787.0 697.5,796 C709.2,805.0 717.9,808.7 732.5,810 C747.1,811.3 770.4,805.7 785,804 C799.6,802.3 814.2,800.7 820,800" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <circle cx="547" cy="780" r="4.5" fill="#dc2626"/>
+  <circle cx="596" cy="630" r="4.5" fill="#dc2626"/>
+  <circle cx="662.5" cy="756" r="4.5" fill="#dc2626"/>
+  <circle cx="732.5" cy="810" r="4.5" fill="#dc2626"/>
+  <rect x="490" y="643.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510.1" y="651.96" font-size="11" fill="#475569">模型（数值积分）</text>
+  <rect x="612.1" y="643.38" width="12.100000000000001" height="9.24" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="632.2" y="651.96" font-size="11" fill="#475569">实测散点</text>
+  <text x="645" y="872" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">重现：波形 · 阈值 · 不应期 · 传导速度</text>
+  <rect x="900" y="636" width="440" height="120" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.6"/>
+  <text x="920" y="666" font-size="14.5" fill="#065f46" font-weight="700">1963 年诺贝尔生理学或医学奖</text>
+  <text x="920" y="690" font-size="11.5" fill="#475569">Hodgkin、</text>
+  <text x="920" y="706" font-size="11.5" fill="#475569">Huxley 与 Eccles 共享——表彰对神经细胞兴奋与抑制之离子机制的研究。</text>
+  <rect x="900" y="776" width="440" height="120" rx="9" fill="#ede9fe" fill-opacity="0.4" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="920" y="806" font-size="14.5" fill="#4c1d95" font-weight="700">模型的边界与遗产</text>
+  <text x="920" y="830" font-size="11.5" fill="#475569">HH 是集中参数的唯象模型；</text>
+  <text x="920" y="846" font-size="11.5" fill="#475569">遗产在于方法——现代多舱室模型与计算神经科学均以其为底座。</text>
+</svg>

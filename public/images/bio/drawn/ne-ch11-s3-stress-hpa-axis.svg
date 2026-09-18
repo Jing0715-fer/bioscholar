@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">应激与下丘脑-垂体-肾上腺轴：级联放大、多闸刹车与时间双面性</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">CRH→ACTH→皮质醇三级级联；MR 高亲和力掌基线、GR 低亲和力任刹车；急性增强免疫、慢性抑制免疫</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Selye 通用适应综合征（1936）：不问应激原</text>
+  <text x="60" y="200" font-size="11" fill="#475569">Selye 发现大鼠受到寒冷、束缚、毒剂等迥异刺激后出现同一套三联征——肾上腺皮质肥大、胸腺与淋巴结萎缩、胃溃疡：</text>
+  <text x="60" y="216" font-size="11" fill="#475569">存在不依赖应激原种类的共同反应通路。</text>
+  <rect x="60" y="252" width="190" height="130" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.8"/>
+  <text x="155" y="280" font-size="14" fill="#92400e" text-anchor="middle" font-weight="700">警觉期</text>
+  <text x="76" y="306" font-size="11" fill="#475569">秒级动员：交感—肾上腺髓质，</text>
+  <text x="76" y="321" font-size="11" fill="#475569">为身体「加油门」。</text>
+  <rect x="260" y="252" width="190" height="130" rx="9" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="355" y="280" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">抵抗期</text>
+  <text x="276" y="306" font-size="11" fill="#475569">分钟至小时：</text>
+  <text x="276" y="321" font-size="11" fill="#475569">HPA 轴与皮质醇的适应性重组。</text>
+  <rect x="460" y="252" width="200" height="130" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="560" y="280" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">衰竭期</text>
+  <text x="476" y="306" font-size="11" fill="#475569">资源耗竭：储备耗尽、代偿失效、</text>
+  <text x="476" y="321" font-size="11" fill="#475569">疾病显现。</text>
+  <line x1="250" y1="317" x2="260" y2="317" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="450" y1="317" x2="460" y2="317" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="60" y="412" font-size="11" fill="#475569">三期的时程递进：警觉（秒）→ 抵抗（分钟-小时-天）→ 衰竭（周-月）——同一应激原持续存在时，</text>
+  <text x="60" y="428" font-size="11" fill="#475569">机体的「分期付款」最终透支。</text>
+  <text x="60" y="472" font-size="11" fill="#64748b" font-weight="700">应激是「非特异性的」：冷、热、毒、情绪冲突走同一通路——这一定义开启了整个应激生理学。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、HPA 轴：三级级联，逐级放大，多闸关闭</text>
+  <rect x="760" y="208" width="420" height="60" rx="9" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2"/>
+  <text x="970" y="243" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">下丘脑 CRH（促肾上腺皮质激素释放激素）</text>
+  <line x1="970" y1="268" x2="970" y2="292" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <rect x="760" y="292" width="420" height="60" rx="9" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="2"/>
+  <text x="970" y="327" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">垂体 ACTH（促肾上腺皮质激素）</text>
+  <line x1="970" y1="352" x2="970" y2="376" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <rect x="760" y="376" width="420" height="60" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="2"/>
+  <text x="970" y="411" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">肾上腺皮质 皮质醇（糖皮质激素）</text>
+  <text x="1060" y="286" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">级联放大</text>
+  <text x="1060" y="370" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">级联放大</text>
+  <path d="M1180,436 C1200,510 860,510 740,238" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="8 5" marker-end="url(#arr-bad)"/>
+  <text x="800" y="524" font-size="11" fill="#475569">三重关闭闸门：① 长环负反馈（皮质醇抑制 CRH 与 ACTH）；② 海马 GR（刹车踏板，</text>
+  <text x="800" y="540" font-size="11" fill="#475569">慢性高皮质醇反致海马损伤）；③ 快速非基因组反馈。</text>
+  <rect x="30" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、MR 与 GR：一只油门、一只刹车</text>
+  <rect x="60" y="648" width="290" height="150" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="76" y="674" font-size="12.5" fill="#134e4a" font-weight="700">MR（盐皮质激素受体）</text>
+  <text x="76" y="698" font-size="11" fill="#475569">高亲和力：</text>
+  <text x="76" y="713" font-size="11" fill="#475569">基础节律的维持者——低浓度皮质醇即可占领，</text>
+  <text x="76" y="728" font-size="11" fill="#475569">掌管昼夜基线与海马日常功能。</text>
+  <rect x="370" y="648" width="290" height="150" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="386" y="674" font-size="12.5" fill="#dc2626" font-weight="700">GR（糖皮质激素受体）</text>
+  <text x="386" y="698" font-size="11" fill="#475569">低亲和力：</text>
+  <text x="386" y="713" font-size="11" fill="#475569">应激峰值的刹车——只有高浓度皮质醇才结合，</text>
+  <text x="386" y="728" font-size="11" fill="#475569">启动负反馈关闭 HPA 轴。</text>
+  <text x="60" y="830" font-size="11" fill="#475569">两型受体分工使皮质醇兼顾稳态（基础节律）与应激（峰值刹车）：MR 常开、GR 应急——同一激素的两副面孔。</text>
+  <text x="60" y="886" font-size="11" fill="#64748b">皮质醇昼夜节律：清晨峰值、深夜谷值——库欣综合征患者失去此节律，午夜皮质醇不降。</text>
+  <rect x="710" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="600.84" font-size="19" fill="#475569" font-weight="700">四、应激与免疫、脑：时间的双面性</text>
+  <rect x="740" y="648" width="290" height="130" rx="9" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.8"/>
+  <text x="756" y="674" font-size="12.5" fill="#065f46" font-weight="700">急性应激：一过性增强</text>
+  <text x="756" y="698" font-size="11" fill="#475569">固有免疫与 NK 细胞活性短暂上调——「战或逃」的免疫后备动员。</text>
+  <rect x="1050" y="648" width="290" height="130" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1066" y="674" font-size="12.5" fill="#dc2626" font-weight="700">慢性应激：全面抑制</text>
+  <text x="1066" y="698" font-size="11" fill="#475569">持续皮质醇抑制细胞免疫：胸腺萎缩、</text>
+  <text x="1066" y="713" font-size="11" fill="#475569">Th1 向 Th2 偏移、感染易感性增加。</text>
+  <rect x="740" y="806" width="600" height="96" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="756" y="830" font-size="12.5" fill="#78350f" font-weight="700">慢性应激的脑代价</text>
+  <text x="756" y="852" font-size="11" fill="#475569">海马树突萎缩与神经发生受抑 → 与抑郁的 HPA 失调、</text>
+  <text x="756" y="868" font-size="11" fill="#475569">代谢综合征及内脏脂肪蓄积互相构成恶性循环——「应激致病」的神经生物学链条。</text>
+</svg>

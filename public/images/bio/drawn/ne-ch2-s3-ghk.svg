@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">GHK 方程与离子通透性：静息电位是靠近 E_K 的加权折中</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">1943 年恒定电场近似、1949 年 Hodgkin &amp; Katz 用于神经与肌膜；P_K:P_Na:P_Cl ≈ 1:0.04:0.45，代入经典浓度得 V_rest ≈ −67 mV，与实测 −65 ～ −70 mV 吻合；电导式 V_m ≈ Σg·E/Σg 与之互为表里；Cl⁻ 近被动分布（E_Cl ≈ V_rest），开放氯通道产生分流抑制，KCC2/NKCC1 决定 E_Cl 相对静息的位置</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、GHK 方程：按通透性加权的折中值</text>
+  <rect x="60" y="176" width="640" height="66" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="380" y="200" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">V_m = 61.5·log₁₀[ (P_K·Kₒ + P_Na·Naₒ + P_Cl·Clᵢ) / (P_K·Kᵢ + P_Na·Naᵢ + P_Cl·Clₒ) ]</text>
+  <text x="380" y="228" font-size="11" fill="#475569" text-anchor="middle">Cl⁻ 为阴离子：分子取胞内、分母取胞外——内外对调是 GHK 最常见的失分点</text>
+  <rect x="60" y="268" width="640" height="42" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="76" y="294" font-size="12.5" fill="#1e293b" font-weight="600">① 相对通透性：P_K : P_Na : P_Cl ≈ 1 : 0.04 : 0.45</text>
+  <rect x="60" y="318" width="640" height="42" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="76" y="344" font-size="12.5" fill="#1e293b" font-weight="600">② 分子 = 1×5 + 0.04×145 + 0.45×10 ≈ 15.3；分子 / 分母 ≈ 0.080</text>
+  <rect x="60" y="368" width="640" height="42" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="76" y="394" font-size="12.5" fill="#1e293b" font-weight="600">③ V_rest = 61.5 × log₁₀(0.080) ≈ −67 mV（实测 −65 ～ −70 mV ✓）</text>
+  <text x="300" y="432" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">按通透性加权：并联的三枚电池</text>
+  <text x="185" y="448" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">E_K ≈ −90</text>
+  <rect x="150" y="454" width="70" height="76" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="295" y="448" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">E_Cl ≈ −64</text>
+  <rect x="260" y="496" width="70" height="34" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="405" y="448" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">E_Na ≈ +60</text>
+  <rect x="370" y="524" width="70" height="6" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="130" y1="532" x2="460" y2="532" stroke="#94a3b8" stroke-width="1.6"/>
+  <text x="185" y="550" font-size="11" fill="#475569" text-anchor="middle">P_K = 1</text>
+  <text x="295" y="550" font-size="11" fill="#475569" text-anchor="middle">P_Cl = 0.45</text>
+  <text x="405" y="550" font-size="11" fill="#475569" text-anchor="middle">P_Na = 0.04</text>
+  <line x1="452" y1="492" x2="492" y2="492" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="501.90864999999997" y="480.95" width="128.1827" height="22.099999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="566" y="496.68" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">V_rest ≈ −67 mV</text>
+  <text x="476" y="518" font-size="10.5" fill="#475569">加权折中、靠近 E_K：与实测相当吻合。</text>
+  <rect x="740" y="132" width="630" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Nernst 方程 vs GHK 方程：一表看清两式</text>
+  <rect x="770" y="200" width="100" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="870" y="200" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">Nernst 方程</text>
+  <rect x="1090" y="200" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">GHK 方程</text>
+  <rect x="770" y="244" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="272.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">提出背景</text>
+  <rect x="870" y="244" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="272.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">单离子膜的平衡条件</text>
+  <rect x="1090" y="244" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="272.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1943 恒定电场近似；1949 年 Hodgkin &amp; Katz 用于神经与肌膜</text>
+  <rect x="770" y="290" width="570" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="290" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="318.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">适用情形</text>
+  <rect x="870" y="290" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="318.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">净流为零 / 单离子通透</text>
+  <rect x="1090" y="290" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="318.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">多离子稳态膜电位</text>
+  <rect x="770" y="336" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="364.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">输入量</text>
+  <rect x="870" y="336" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="364.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">单一离子的浓度比</text>
+  <rect x="1090" y="336" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="364.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">各离子浓度 + 相对通透性 P</text>
+  <rect x="770" y="382" width="570" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="382" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="410.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">输出</text>
+  <rect x="870" y="382" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">该离子的平衡电位 E</text>
+  <rect x="1090" y="382" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">静息膜电位 V_rest</text>
+  <rect x="770" y="428" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="456.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Cl⁻ 项</text>
+  <rect x="870" y="428" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="456.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">按定义直接代入</text>
+  <rect x="1090" y="428" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="456.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">内外浓度对调（阴离子价态）</text>
+  <rect x="770" y="494" width="570" height="56" rx="8" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="790" y="514" font-size="11.5" fill="#475569">电导表述互为表里：V_m ≈ Σg·E / Σg。静息 g_K 最大 → 电位负；</text>
+  <text x="790" y="530" font-size="11.5" fill="#475569">动作电位上升相 g_Na 骤增 → 电位滑向 E_Na（约 +60 mV）——「兴奋性的种子」。</text>
+  <rect x="30" y="576" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、Cl⁻ 的角色：锚与舵——分流抑制与 E_Cl 的位置</text>
+  <text x="220" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">分流抑制（shunting inhibition）</text>
+  <rect x="84" y="671.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="104.1" y="679.96" font-size="11" fill="#475569">Cl⁻ 通道关闭</text>
+  <rect x="180.01" y="671.38" width="12.100000000000001" height="9.24" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="200.10999999999999" y="679.96" font-size="11" fill="#475569">开放（分流）</text>
+  <rect x="80" y="690" width="280" height="190" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="113.6" y1="880" x2="113.6" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <line x1="220" y1="880" x2="220" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="220" y="902" font-size="13" fill="#64748b" text-anchor="middle">刺激</text>
+  <line x1="332" y1="880" x2="332" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <line x1="74" y1="861" x2="80" y2="861" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="865" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="74" y1="709" x2="80" y2="709" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="713" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <text x="220" y="924" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时间</text>
+  <text x="34" y="785" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">EPSP</text>
+  <path d="M102.4,870.5 C108.0,855.6 123.4,802.4 136,781.2 C148.6,760.0 164.0,744.2 178,743.2 C192.0,742.3 203.7,762.2 220,775.5 C236.3,788.8 257.3,809.4 276,823 C294.7,836.6 318.0,849.3 332,857.2 C346.0,865.1 355.3,868.3 360,870.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M102.4,872.4 C108.0,865.1 123.4,839.2 136,828.7 C148.6,818.3 164.0,810.3 178,809.7 C192.0,809.1 203.7,818.6 220,824.9 C236.3,831.2 257.3,840.7 276,847.7 C294.7,854.7 318.0,862.6 332,866.7 C346.0,870.8 355.3,871.5 360,872.4" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <text x="80" y="944" font-size="11" fill="#475569">E_Cl ≈ V_rest：开放 Cl⁻ 通道几乎不改 V_m，却增大总电导——突触电流被「短路」，</text>
+  <text x="80" y="959" font-size="11" fill="#475569">EPSP 被压小。</text>
+  <text x="1000" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">KCC2 与 NKCC1：把 E_Cl 写到静息的哪一侧</text>
+  <rect x="660" y="656" width="330" height="156" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="680" y="684" font-size="14" fill="#134e4a" font-weight="700">KCC2：排出 Cl⁻</text>
+  <text x="680" y="710" font-size="11.5" fill="#475569">胞内 Cl⁻ ↓ → E_Cl 比 V_rest 更负；</text>
+  <text x="680" y="727" font-size="11.5" fill="#475569">Cl⁻ 内流 → 超极化，抑制更稳。</text>
+  <rect x="1020" y="656" width="330" height="156" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1040" y="684" font-size="14" fill="#92400e" font-weight="700">NKCC1：摄入 Cl⁻</text>
+  <text x="1040" y="710" font-size="11.5" fill="#475569">胞内 Cl⁻ ↑ → E_Cl 抬到 V_rest 之上；</text>
+  <text x="1040" y="727" font-size="11.5" fill="#475569">Cl⁻ 外流 → 去极化（发育期常见）。</text>
+  <line x1="700" y1="872" x2="1300" y2="872" stroke="#475569" stroke-width="2"/>
+  <line x1="830" y1="866" x2="830" y2="878" stroke="#475569" stroke-width="1.8"/>
+  <text x="830" y="896" font-size="11" fill="#64748b" text-anchor="middle">E_Cl 更负</text>
+  <line x1="1000" y1="866" x2="1000" y2="878" stroke="#475569" stroke-width="1.8"/>
+  <text x="1000" y="896" font-size="11" fill="#64748b" text-anchor="middle">V_rest ≈ −70 mV</text>
+  <line x1="1170" y1="866" x2="1170" y2="878" stroke="#475569" stroke-width="1.8"/>
+  <text x="1170" y="896" font-size="11" fill="#64748b" text-anchor="middle">E_Cl 变正</text>
+  <line x1="992" y1="848" x2="842" y2="848" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <text x="915" y="840" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">KCC2</text>
+  <line x1="1008" y1="848" x2="1158" y2="848" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="1083" y="840" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">NKCC1</text>
+  <text x="660" y="930" font-size="11.5" fill="#475569">逆转电位是通透性的实验探针：改变膜对某离子的通透并测逆转电位，</text>
+  <text x="660" y="946" font-size="11.5" fill="#475569">即可反推该离子的胞内浓度——E_Cl 的位置由 KCC2 / NKCC1 写定。</text>
+</svg>

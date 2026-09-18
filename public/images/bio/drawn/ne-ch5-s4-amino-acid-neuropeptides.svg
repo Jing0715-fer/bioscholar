@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">氨基酸类递质与神经肽：谷氨酸穿梭、NMDA 门控与阿片</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">谷氨酸经「EAAT 摄取入星形胶质细胞—GS 合成谷氨酰胺—末梢谷氨酰胺酶转回」的穿梭回收原料并控毒；受体三系：AMPA/KA 快电流、NMDA 钙信号与可塑性、mGluR1–8 慢速调音；NMDA 须谷氨酸 + 甘氨酸/D-丝氨酸共激动 + 去极化逐出 Mg²⁺ 三关齐过；GABA_A 为带苯二氮卓位点的氯通道、甘氨酸受体被士的宁封锁致强直痉挛；兴奋性毒性是卒中半暗带与神经变性共有的轴；μ/δ/κ 皆 Gi 偶联，纳洛酮竞争性逆转阿片过量</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、谷氨酸-谷氨酰胺穿梭：回收原料并控毒</text>
+  <rect x="60" y="186" width="260" height="84" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="80" y="212" font-size="13.5" fill="#4c1d95" font-weight="700">突触前末梢</text>
+  <text x="80" y="232" font-size="10.5" fill="#475569">囊泡谷氨酸；谷氨酰胺酶把谷氨酰胺转回 Glu</text>
+  <rect x="380" y="186" width="280" height="84" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="400" y="212" font-size="13.5" fill="#075985" font-weight="700">星形胶质细胞</text>
+  <text x="400" y="232" font-size="10.5" fill="#475569">EAAT 摄取谷氨酸；谷氨酰胺合成酶（GS）</text>
+  <text x="400" y="246" font-size="10.5" fill="#475569">→ 谷氨酰胺</text>
+  <rect x="200" y="360" width="380" height="84" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="220" y="388" font-size="13.5" fill="#134e4a" font-weight="700">突触间隙</text>
+  <text x="220" y="408" font-size="11" fill="#475569">Glu 激活突触后 AMPA / NMDA / mGluR</text>
+  <line x1="140" y1="272" x2="240" y2="356" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <text x="150" y="306" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">释放 Glu</text>
+  <line x1="470" y1="356" x2="540" y2="272" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <text x="540" y="318" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">EAAT 摄取</text>
+  <line x1="378" y1="226" x2="322" y2="226" stroke="#059669" stroke-width="2.4" marker-end="url(#arr-ok)"/>
+  <text x="350" y="210" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">谷氨酰胺回流</text>
+  <text x="60" y="470" font-size="11.5" fill="#475569">穿梭的意义：既回收原料、维持递质供给，又把间隙谷氨酸压到无毒水平——EAAT 失效即兴奋性毒性。</text>
+  <rect x="720" y="132" width="650" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="736" y="154.84" font-size="19" fill="#475569" font-weight="700">二、谷氨酸受体三系并存与 NMDA 三重门控</text>
+  <rect x="750" y="190" width="78" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="217.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">受体</text>
+  <rect x="828" y="190" width="82" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="869" y="217.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">类型</text>
+  <rect x="910" y="190" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="217.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">激动 / 门控</text>
+  <rect x="1070" y="190" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1116" y="217.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要离子</text>
+  <rect x="1162" y="190" width="178" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="217.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">时程与角色</text>
+  <rect x="750" y="234" width="78" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="262.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">AMPA</text>
+  <rect x="828" y="234" width="82" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="869" y="262.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">离子型</text>
+  <rect x="910" y="234" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="262.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">谷氨酸</text>
+  <rect x="1070" y="234" width="92" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1116" y="262.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">Na⁺ / K⁺</text>
+  <rect x="1162" y="234" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="262.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">快电流（毫秒级）</text>
+  <rect x="750" y="280" width="590" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="750" y="280" width="78" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="308.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">KA</text>
+  <rect x="828" y="280" width="82" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="869" y="308.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">离子型</text>
+  <rect x="910" y="280" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="308.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">谷氨酸</text>
+  <rect x="1070" y="280" width="92" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1116" y="308.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">Na⁺ / K⁺</text>
+  <rect x="1162" y="280" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="308.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">快电流</text>
+  <rect x="750" y="326" width="78" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="354.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">NMDA</text>
+  <rect x="828" y="326" width="82" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="869" y="354.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">离子型</text>
+  <rect x="910" y="326" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="354.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">Glu + 共激动 + 去极化</text>
+  <rect x="1070" y="326" width="92" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1116" y="354.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">Ca²⁺（高通透）</text>
+  <rect x="1162" y="326" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="354.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">慢成分 · 可塑性</text>
+  <rect x="750" y="372" width="590" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="750" y="372" width="78" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="400.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">mGluR1–8</text>
+  <rect x="828" y="372" width="82" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="869" y="400.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">代谢型</text>
+  <rect x="910" y="372" width="160" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="400.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">谷氨酸（GPCR）</text>
+  <rect x="1070" y="372" width="92" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1116" y="400.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="1162" y="372" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="400.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">慢速调音（G 蛋白）</text>
+  <rect x="750" y="436" width="590" height="106" rx="9" fill="#fce7f3" fill-opacity="0.35" stroke="#be185d" stroke-width="1.5"/>
+  <text x="770" y="462" font-size="13.5" fill="#831843" font-weight="700">NMDA 三重门控——巧合检测器的分子原型</text>
+  <text x="770" y="486" font-size="11.5" fill="#475569">① 谷氨酸结合　② 甘氨酸 / D-丝氨酸共激动　③ 去极化逐出 Mg²⁺——三关齐过方开放，通透 Ca²⁺，</text>
+  <text x="770" y="503" font-size="11.5" fill="#475569">承担钙信号与可塑性。</text>
+  <rect x="30" y="576" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、抑制性递质、兴奋性毒性与神经肽阿片系统</text>
+  <rect x="60" y="656" width="400" height="300" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="80" y="688" font-size="15" fill="#134e4a" font-weight="700">GABA 与甘氨酸</text>
+  <text x="80" y="720" font-size="12" fill="#475569">GABA_A：氯通道，带苯二氮卓位点（安定类增强其开放）。</text>
+  <text x="80" y="760" font-size="12" fill="#475569">GABA_B：代谢型受体，巴氯芬为其激动剂。</text>
+  <text x="80" y="800" font-size="12" fill="#475569">甘氨酸受体：被士的宁竞争性封锁 → 强直痉挛。</text>
+  <rect x="490" y="656" width="400" height="300" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="510" y="688" font-size="15" fill="#dc2626" font-weight="700">兴奋性毒性：钙的越界</text>
+  <text x="510" y="720" font-size="12" fill="#475569">清除失效（EAAT 失灵 / 缺血）</text>
+  <text x="510" y="740" font-size="12" fill="#475569">→ 间隙谷氨酸堆积 → NMDA 钙超载 → 蛋白酶 · NOS · 线粒体级联 → 神经元死亡。</text>
+  <text x="510" y="790" font-size="12" fill="#dc2626" font-weight="700">卒中半暗带与神经变性共有的轴。</text>
+  <rect x="920" y="656" width="420" height="300" rx="9" fill="#ede9fe" fill-opacity="0.4" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="940" y="688" font-size="15" fill="#4c1d95" font-weight="700">神经肽与阿片受体</text>
+  <text x="940" y="720" font-size="12" fill="#475569">代表：阿片肽（脑啡肽 · 内啡肽）与 P 物质。</text>
+  <text x="940" y="760" font-size="12" fill="#475569">μ / δ / κ 受体皆 Gi 偶联。</text>
+  <text x="940" y="800" font-size="12" fill="#475569">吗啡与芬太尼激动 μ 受体；纳洛酮竞争性逆转过量。</text>
+</svg>

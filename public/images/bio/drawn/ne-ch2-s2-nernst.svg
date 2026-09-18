@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Nernst 方程与平衡电位：十倍一档的心算尺及其检验</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">E = (RT/zF)·ln(外/内)；37 ℃ 单价离子每十倍浓度差对应 61.5 mV；E_K = 61.5×log₁₀(5/140) ≈ −90 mV、E_Na ≈ +60 mV、E_Cl ≈ −64 mV、E_Ca ≈ +130 mV（二价每十倍 30.75 mV）；高钾段实测贴合理论斜率，低钾段因钠漏与泵偏离；高钾血症抬高 E_K 致心律失常</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Nernst 方程与「十倍一档」心算尺</text>
+  <rect x="60" y="176" width="640" height="64" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="380" y="202" font-size="17.5" fill="#1e293b" text-anchor="middle" font-weight="700">E_ion = (RT / zF) · ln（胞外浓度 / 胞内浓度）</text>
+  <text x="380" y="228" font-size="11.5" fill="#475569" text-anchor="middle">37 ℃：RT/F ≈ 26.7 mV；换以 10 为底——单价离子每十倍浓度差对应 61.5 mV</text>
+  <line x1="170" y1="268" x2="170" y2="512" stroke="#475569" stroke-width="2"/>
+  <line x1="164" y1="280" x2="170" y2="280" stroke="#475569" stroke-width="1.6"/>
+  <text x="158" y="284" font-size="11" fill="#64748b" text-anchor="end">+130</text>
+  <line x1="164" y1="350" x2="170" y2="350" stroke="#475569" stroke-width="1.6"/>
+  <text x="158" y="354" font-size="11" fill="#64748b" text-anchor="end">+60</text>
+  <line x1="164" y1="410" x2="170" y2="410" stroke="#475569" stroke-width="1.6"/>
+  <text x="158" y="414" font-size="11" fill="#64748b" text-anchor="end">0</text>
+  <line x1="164" y1="500" x2="170" y2="500" stroke="#475569" stroke-width="1.6"/>
+  <text x="158" y="504" font-size="11" fill="#64748b" text-anchor="end">−90</text>
+  <text x="170" y="538" font-size="11.5" fill="#64748b" text-anchor="middle">平衡电位（mV）</text>
+  <line x1="176" y1="280" x2="250" y2="280" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="275.010625" y="269.375" width="129.97875" height="21.25" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="340" y="284.5" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">E_Ca ≈ +130 mV</text>
+  <line x1="176" y1="350" x2="250" y2="350" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="279.001875" y="339.375" width="121.99625" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="340" y="354.5" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">E_Na ≈ +60 mV</text>
+  <line x1="176" y1="474" x2="204" y2="474" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="247.226875" y="463.375" width="209.54625000000001" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="352" y="478.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">E_Cl ≈ −64 mV（与静息相当）</text>
+  <line x1="176" y1="500" x2="250" y2="500" stroke="#0f766e" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="282.349375" y="489.375" width="115.30125" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="340" y="504.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">E_K ≈ −90 mV</text>
+  <line x1="200" y1="350" x2="200" y2="500" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="212" y="420" font-size="11" fill="#64748b" font-weight="700">150 mV</text>
+  <text x="212" y="436" font-size="10.5" fill="#64748b">≈2.4 个十倍档</text>
+  <text x="490" y="286" font-size="11.5" fill="#475569">十倍一档：浓度差每差一个数量级，</text>
+  <text x="490" y="303" font-size="11.5" fill="#475569">平衡电位移动 61.5 mV</text>
+  <text x="490" y="320" font-size="11.5" fill="#475569">（25 ℃ 时约 59 mV）。二价离子减半：</text>
+  <text x="490" y="337" font-size="11.5" fill="#475569">每十倍仅移 30.75 mV。</text>
+  <text x="380" y="548" font-size="11.5" fill="#475569" text-anchor="middle">E_K = 61.5×log₁₀(5/140) ≈ −90 mV；E_Na = 61.5×log₁₀(145/15) ≈ +60 mV</text>
+  <rect x="740" y="132" width="630" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、四大离子的平衡电位、驱动力与意义</text>
+  <rect x="770" y="200" width="62" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="801" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">离子</text>
+  <rect x="832" y="200" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="891" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">浓度比（外/内）</text>
+  <rect x="950" y="200" width="100" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">平衡电位</text>
+  <rect x="1050" y="200" width="112" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1106" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">静息驱动力</text>
+  <rect x="1162" y="200" width="178" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">生理意义</text>
+  <rect x="770" y="244" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="801" y="272.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">K⁺</text>
+  <rect x="832" y="244" width="118" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="891" y="272.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">5 / 140</text>
+  <rect x="950" y="244" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="272.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">≈ −90 mV</text>
+  <rect x="1050" y="244" width="112" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1106" y="272.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">+20 mV 外向</text>
+  <rect x="1162" y="244" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="272.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">静息电位之锚</text>
+  <rect x="770" y="290" width="570" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="290" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="801" y="318.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Na⁺</text>
+  <rect x="832" y="290" width="118" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="891" y="318.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">145 / 15</text>
+  <rect x="950" y="290" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="318.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">≈ +60 mV</text>
+  <rect x="1050" y="290" width="112" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1106" y="318.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">−130 mV 内向</text>
+  <rect x="1162" y="290" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="318.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">动作电位超射的靶位</text>
+  <rect x="770" y="336" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="801" y="364.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <rect x="832" y="336" width="118" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="891" y="364.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">近被动分布</text>
+  <rect x="950" y="336" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="364.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">≈ −64 mV</text>
+  <rect x="1050" y="336" width="112" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1106" y="364.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">≈ 0</text>
+  <rect x="1162" y="336" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="364.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">与静息相当；分流抑制</text>
+  <rect x="770" y="382" width="570" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="382" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="801" y="410.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Ca²⁺</text>
+  <rect x="832" y="382" width="118" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="891" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">悬殊（10⁴ 倍级）</text>
+  <rect x="950" y="382" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">≈ +130 mV</text>
+  <rect x="1050" y="382" width="112" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1106" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">逾 −200 mV</text>
+  <rect x="1162" y="382" width="178" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1251" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">势能最饱满的信号离子</text>
+  <rect x="770" y="452" width="570" height="82" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="790" y="476" font-size="11.5" fill="#475569">失分点提示：E_Cl 的 z = −1，代入 Nernst 时符号翻转（阴离子内外项对调）；E_Ca 为二价，</text>
+  <text x="790" y="493" font-size="11.5" fill="#475569">每十倍浓度差仅移动 30.75 mV。</text>
+  <rect x="30" y="566" width="1340" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="588.84" font-size="19" fill="#475569" font-weight="700">三、实验检验：改变胞外钾浓度——理论线与实测的分歧</text>
+  <rect x="190" y="610" width="720" height="290" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="190" y1="827.5" x2="910" y2="827.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="370" y1="900" x2="370" y2="610" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="190" y1="755" x2="910" y2="755" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="550" y1="900" x2="550" y2="610" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="190" y1="682.5" x2="910" y2="682.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="730" y1="900" x2="730" y2="610" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="190" y1="900" x2="190" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="190" y="922" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="456.4" y1="900" x2="456.4" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="456.4" y="922" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="722.8" y1="900" x2="722.8" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="722.8" y="922" font-size="13" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="910" y1="900" x2="910" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="910" y="922" font-size="13" fill="#64748b" text-anchor="middle">500</text>
+  <line x1="184" y1="900" x2="190" y2="900" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="904" font-size="13" fill="#64748b" text-anchor="end">−140</text>
+  <line x1="184" y1="819.38" x2="190" y2="819.38" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="823.38" font-size="13" fill="#64748b" text-anchor="end">−90</text>
+  <line x1="184" y1="738.76" x2="190" y2="738.76" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="742.76" font-size="13" fill="#64748b" text-anchor="end">−40</text>
+  <line x1="184" y1="610" x2="190" y2="610" stroke="#475569" stroke-width="1.8"/>
+  <text x="180" y="614" font-size="13" fill="#64748b" text-anchor="end">+40</text>
+  <text x="550" y="944" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">胞外 K⁺ 浓度（mM，对数刻度）</text>
+  <text x="144" y="755" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">E_K（mV）</text>
+  <path d="M190.0,895.1 L317.4,846.9 L456.4,797.6 L591.0,748.6 L722.8,698.7 L848.1,649.4 L910.0,621.3" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <text x="660" y="626" font-size="12.5" fill="#134e4a" font-weight="700">Nernst 理论线</text>
+  <text x="660" y="644" font-size="11" fill="#134e4a">（斜率 61.5 mV / 十倍）</text>
+  <path d="M190,815.9 C200.8,816.1 233.6,817.8 254.8,817.35 C276.0,816.9 283.8,816.6 317.44,813 C351.0,809.4 410.8,806.2 456.4,795.6 C502.0,785.0 546.6,765.2 591.04,749.2 C635.4,733.3 669.6,720.9 722.8,699.9 C776.0,678.9 878.8,635.9 910,623.05" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <text x="316" y="856" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">实测 E_K：低钾段抬离理论线</text>
+  <line x1="298" y1="846" x2="244" y2="824" stroke="#dc2626" stroke-width="1.4" marker-end="url(#arr-bad)"/>
+  <line x1="190" y1="787" x2="910" y2="787" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 5" opacity="0.85"/>
+  <text x="902" y="781" font-size="10.5" fill="#64748b" text-anchor="end" font-weight="700">V_rest = −70 mV</text>
+  <text x="240" y="872" font-size="11" fill="#475569">低钾段：Na⁺ 漏电流与泵电流掺入，实测点高于理论线；高钾段：</text>
+  <text x="240" y="887" font-size="11" fill="#475569">K⁺ 通透占绝对优势，实测贴合 Nernst 斜率。</text>
+  <rect x="960" y="616" width="380" height="128" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="980" y="644" font-size="14.5" fill="#dc2626" font-weight="700">临床警示：高钾血症</text>
+  <text x="980" y="668" font-size="11.5" fill="#475569">胞外 K⁺ 升高 → E_K 抬高（变正）</text>
+  <text x="980" y="685" font-size="11.5" fill="#475569">→ 心肌静息膜去极化 → 兴奋性与传导异常 → 心律失常。</text>
+  <text x="960" y="772" font-size="11.5" fill="#475569">使用须知：Nernst 只适用于净流为零或单离子通透的情形；</text>
+  <text x="960" y="789" font-size="11.5" fill="#475569">应代入活度而非浓度；数值随温度与浓度变化。</text>
+  <rect x="960" y="850.96" width="13.200000000000001" height="10.08" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="981.2" y="860.32" font-size="12" fill="#475569">Nernst 理论线</text>
+  <rect x="1077.68" y="850.96" width="13.200000000000001" height="10.08" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1098.88" y="860.32" font-size="12" fill="#475569">实测 E_K</text>
+</svg>

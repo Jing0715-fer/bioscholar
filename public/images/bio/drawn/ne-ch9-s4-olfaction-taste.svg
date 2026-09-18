@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">嗅觉与味觉：组合编码、不经丘脑的直达通路与五味受体</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">约 400 个功能 OR 组合编码万千气味；甜鲜苦走 gustducin–TRPM5 级联，咸酸由离子直接介导</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、嗅受体：最大基因家族与放大级联</text>
+  <rect x="236.57729999999998" y="186.225" width="246.84540000000004" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="360" y="200.14" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">OR 属 GPCR · 每只嗅神经元终身只表达一种</text>
+  <text x="60" y="240" font-size="11" fill="#475569">人类基因组 OR 座位逾 800 个、功能基因约 400 个（小鼠约 1000 个，约占其基因总数 3%）——人类最大的基因家族。</text>
+  <text x="60" y="256" font-size="11" fill="#475569">Buck 与 Axel 1991 年克隆首个 OR 基因，获 2004 年诺贝尔奖。</text>
+  <rect x="80" y="310" width="560" height="32" rx="7" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="100" y="331" font-size="12" fill="#1e293b" font-weight="600">气味分子结合 OR（GPCR）</text>
+  <line x1="360" y1="342" x2="360" y2="354" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="354" width="560" height="32" rx="7" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="100" y="375" font-size="12" fill="#1e293b" font-weight="600">偶联 Golf → 腺苷酸环化酶 → cAMP</text>
+  <line x1="360" y1="386" x2="360" y2="398" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="398" width="560" height="32" rx="7" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.6"/>
+  <text x="100" y="419" font-size="12" fill="#1e293b" font-weight="600">CNG 通道开放 → Ca²⁺ 内流去极化</text>
+  <line x1="360" y1="430" x2="360" y2="442" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="442" width="560" height="32" rx="7" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.6"/>
+  <text x="100" y="463" font-size="12" fill="#1e293b" font-weight="600">Ca²⁺ 激活 Cl⁻ 通道 → Cl⁻ 外流放大</text>
+  <line x1="360" y1="474" x2="360" y2="486" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="486" width="560" height="32" rx="7" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="100" y="507" font-size="12" fill="#1e293b" font-weight="600">动作电位沿嗅神经轴突入嗅球</text>
+  <text x="80" y="538" font-size="10.5" fill="#64748b">Cl⁻ 外流是嗅觉特有的放大设计：嗅神经元内 Cl⁻ 浓度高，通道开放时氯外流而非内流，与去极化同向叠加。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、组合编码：约 400 种受体辨识万千气味</text>
+  <text x="920" y="216" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">激活组合谱（颜色深浅 ∝ 亲和力）</text>
+  <text x="748" y="260" font-size="11" fill="#475569" font-weight="700">气味 A</text>
+  <text x="748" y="312" font-size="11" fill="#475569" font-weight="700">气味 B</text>
+  <text x="748" y="364" font-size="11" fill="#475569" font-weight="700">气味 C</text>
+  <text x="824" y="240" font-size="10.5" fill="#64748b" text-anchor="middle">OR1</text>
+  <text x="890" y="240" font-size="10.5" fill="#64748b" text-anchor="middle">OR2</text>
+  <text x="956" y="240" font-size="10.5" fill="#64748b" text-anchor="middle">OR3</text>
+  <text x="1022" y="240" font-size="10.5" fill="#64748b" text-anchor="middle">OR4</text>
+  <text x="1088" y="240" font-size="10.5" fill="#64748b" text-anchor="middle">OR5</text>
+  <rect x="800" y="248" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.88" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="824" y="272" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">强</text>
+  <rect x="800" y="300" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.355" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="824" y="324" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">弱</text>
+  <rect x="800" y="352" width="48" height="40" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="866" y="248" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="890" y="272" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">中</text>
+  <rect x="866" y="300" width="48" height="40" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="866" y="352" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.45999999999999996" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="890" y="376" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">弱</text>
+  <rect x="932" y="248" width="48" height="40" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="932" y="300" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.845" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="956" y="324" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">强</text>
+  <rect x="932" y="352" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.565" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="956" y="376" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">中</text>
+  <rect x="998" y="248" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.39" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="1022" y="272" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">弱</text>
+  <rect x="998" y="300" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.6699999999999999" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="1022" y="324" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">中</text>
+  <rect x="998" y="352" width="48" height="40" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1064" y="248" width="48" height="40" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="1064" y="300" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.45999999999999996" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="1088" y="324" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">弱</text>
+  <rect x="1064" y="352" width="48" height="40" rx="4" fill="#0f766e" fill-opacity="0.9149999999999999" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="1088" y="376" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">强</text>
+  <text x="740" y="452" font-size="11" fill="#475569">一个分子以不同亲和力激活多种 OR；一种 OR 也可被多种分子激活——天然气味是数十至数百种分子的混合物，</text>
+  <text x="740" y="468" font-size="11" fill="#475569">其「指纹」即受体激活谱。</text>
+  <text x="740" y="508" font-size="11" fill="#64748b">表达同一 OR 的轴突汇聚于嗅球固定的肾小球 → 僧帽细胞；嗅觉是唯一不经丘脑直接抵达皮层（梨状皮层、杏仁核）</text>
+  <text x="740" y="524" font-size="11" fill="#64748b">的主要感觉；人类犁鼻器退化。</text>
+  <rect x="30" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、味蕾与味觉中枢通路</text>
+  <text x="105" y="646" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">味蕾（舌乳头）</text>
+  <ellipse cx="105" cy="720" rx="30" ry="46" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="93" y1="760" x2="93" y2="682" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="105" y1="760" x2="105" y2="682" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="117" y1="760" x2="117" y2="682" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="105" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">约 50–100 个细胞</text>
+  <text x="105" y="790" font-size="9.5" fill="#64748b" text-anchor="middle">寿命约 10 天</text>
+  <circle cx="105" cy="676" r="5" fill="#d97706"/>
+  <text x="105" y="660" font-size="9.5" fill="#64748b" text-anchor="middle">味孔</text>
+  <text x="160" y="656" font-size="11" fill="#475569">成人味蕾总数约 4000–10000 个，单个轮廓乳头可含数百个味蕾；顶端微绒毛经味孔伸入口腔。</text>
+  <rect x="160" y="712" width="148" height="40" rx="7" fill="#f1f5f9" stroke="#b45309" stroke-width="1.6"/>
+  <text x="168" y="728" font-size="9.5" fill="#1e293b" font-weight="600">面神经鼓索支（前 2/3）</text>
+  <rect x="320" y="712" width="148" height="40" rx="7" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="328" y="728" font-size="9.5" fill="#1e293b" font-weight="600">舌咽神经（后 1/3）</text>
+  <rect x="480" y="712" width="148" height="40" rx="7" fill="#f1f5f9" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="488" y="728" font-size="9.5" fill="#1e293b" font-weight="600">迷走神经（会厌）</text>
+  <line x1="105" y1="766" x2="105" y2="800" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="105" y="816" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">汇聚于孤束核头端</text>
+  <line x1="232" y1="816" x2="330" y2="816" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="336" y="792" width="130" height="48" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="401" y="812" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">丘脑腹后内侧核</text>
+  <text x="401" y="830" font-size="10" fill="#64748b" text-anchor="middle">（VPM）</text>
+  <line x1="466" y1="816" x2="520" y2="816" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="526" y="792" width="140" height="48" rx="8" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="596" y="812" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">岛叶味皮层</text>
+  <text x="596" y="830" font-size="9.5" fill="#64748b" text-anchor="middle">（味觉的皮层终点）</text>
+  <text x="60" y="880" font-size="10.5" fill="#64748b">五味信息与咀嚼温度质地整合成「风味」——嗅觉（鼻后通路）贡献了风味的大部分：捏住鼻子，咖啡与洋葱汁难分。</text>
+  <rect x="710" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="600.84" font-size="19" fill="#475569" font-weight="700">四、五种基本味质的受体与传导</text>
+  <rect x="740" y="648" width="70" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="675.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">味质</text>
+  <rect x="810" y="648" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="675.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">受体 / 通道</text>
+  <rect x="1060" y="648" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="675.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">传导级联</text>
+  <rect x="740" y="692" width="70" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="720.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">甜</text>
+  <rect x="810" y="692" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="720.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">T1R2 + T1R3</text>
+  <rect x="1060" y="692" width="280" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="720.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">gustducin–PLCβ2–TRPM5 → ATP</text>
+  <rect x="740" y="738" width="600" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="738" width="70" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="766.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">鲜</text>
+  <rect x="810" y="738" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="766.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">T1R1 + T1R3</text>
+  <rect x="1060" y="738" width="280" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="766.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">gustducin–PLCβ2–TRPM5 → ATP</text>
+  <rect x="740" y="784" width="70" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="812.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">苦</text>
+  <rect x="810" y="784" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="812.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">T2R 家族（约 25–30 种）</text>
+  <rect x="1060" y="784" width="280" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="812.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">gustducin–PLCβ2–TRPM5 → ATP</text>
+  <rect x="740" y="830" width="600" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="830" width="70" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="858.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">咸</text>
+  <rect x="810" y="830" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="858.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">ENaC（钠通道）</text>
+  <rect x="1060" y="830" width="280" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="858.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Na⁺ 直接内流去极化</text>
+  <rect x="740" y="876" width="70" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="904.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">酸</text>
+  <rect x="810" y="876" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="904.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">H⁺ 经质子通道</text>
+  <rect x="1060" y="876" width="280" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="904.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">H⁺ 阻断 K⁺ 通道去极化</text>
+  <text x="740" y="940" font-size="10.5" fill="#475569">甜/鲜/苦共用同一套 G 蛋白级联（TRPM5 通透阳离子、ATP 为传出信使）；咸与酸则由离子直接介导——五味在味蕾即分两路。</text>
+</svg>

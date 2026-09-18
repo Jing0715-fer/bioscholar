@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电压门控钠通道与钾通道：S4 传感器、IFM 失活球与延迟整流</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Nav 为约 2000 个氨基酸的单链四同源结构域（各 6 跨膜），S4 每隔三个残基带碱性氨基酸构成电压传感器（每通道约 12–16 个元电荷的门控电流），P 环 DEKA 基序拼成滤器；DIII–DIV 连接环 IFM 基序约 1 ms 内塞孔失活；Kv 四聚体四 S4 逐一外翻故激活慢（延迟整流）；TTX 纳摩尔封 Nav、TEA 堵 Kv、利多卡因具使用依赖性；SCN1A/SCN4A/KCNQ2/3 突变构成通道病</text>
+  <rect x="30" y="132" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Nav 的分子构造：单链四结构域与球-链失活</text>
+  <rect x="70" y="172" width="660" height="148" rx="8" fill="#e0f2fe" fill-opacity="0.25" stroke="none"/>
+  <text x="86" y="196" font-size="13" fill="#075985" font-weight="700">胞外</text>
+  <g><circle cx="70" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="70" y1="324" x2="70" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="70" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="94" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="94" y1="324" x2="94" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="94" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="118" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="118" y1="324" x2="118" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="118" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="142" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="142" y1="324" x2="142" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="142" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="166" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="166" y1="324" x2="166" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="166" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="190" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="190" y1="324" x2="190" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="190" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="214" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="214" y1="324" x2="214" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="214" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="238" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="238" y1="324" x2="238" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="238" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="262" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="262" y1="324" x2="262" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="262" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="286" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="286" y1="324" x2="286" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="286" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="310" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="310" y1="324" x2="310" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="310" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="334" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="334" y1="324" x2="334" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="334" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="358" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="358" y1="324" x2="358" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="358" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="382" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="382" y1="324" x2="382" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="382" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="406" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="406" y1="324" x2="406" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="406" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="430" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="430" y1="324" x2="430" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="430" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="454" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="454" y1="324" x2="454" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="454" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="478" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="478" y1="324" x2="478" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="478" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="502" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="502" y1="324" x2="502" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="502" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="526" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="526" y1="324" x2="526" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="526" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="550" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="550" y1="324" x2="550" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="550" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="574" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="574" y1="324" x2="574" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="574" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="598" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="598" y1="324" x2="598" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="598" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="622" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="622" y1="324" x2="622" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="622" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="646" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="646" y1="324" x2="646" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="646" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="670" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="670" y1="324" x2="670" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="670" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="694" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="694" y1="324" x2="694" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="694" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="718" cy="320" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="718" y1="324" x2="718" y2="329" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="718" cy="333" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="70" y="336" width="660" height="110" rx="8" fill="#f1f5f9" fill-opacity="0.8" stroke="none"/>
+  <text x="86" y="360" font-size="13" fill="#475569" font-weight="700">胞内</text>
+  <rect x="100" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="112" y1="308" x2="112" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="130" y1="308" x2="130" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="148" y1="308" x2="148" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="166" y1="308" x2="166" y2="344" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="166" y="299" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <line x1="184" y1="308" x2="184" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="202" y1="308" x2="202" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <text x="155" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DI</text>
+  <text x="155" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
+  <rect x="240" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="252" y1="308" x2="252" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="270" y1="308" x2="270" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="288" y1="308" x2="288" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="306" y1="308" x2="306" y2="344" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="306" y="299" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <line x1="324" y1="308" x2="324" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="342" y1="308" x2="342" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <text x="295" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DII</text>
+  <text x="295" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
+  <rect x="380" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="392" y1="308" x2="392" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="410" y1="308" x2="410" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="428" y1="308" x2="428" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="446" y1="308" x2="446" y2="344" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="446" y="299" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <line x1="464" y1="308" x2="464" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="482" y1="308" x2="482" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <text x="435" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DIII</text>
+  <text x="435" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
+  <rect x="520" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="532" y1="308" x2="532" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="550" y1="308" x2="550" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="568" y1="308" x2="568" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="586" y1="308" x2="586" y2="344" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="586" y="299" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">+</text>
+  <line x1="604" y1="308" x2="604" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="622" y1="308" x2="622" y2="344" stroke="#64748b" stroke-width="1.8"/>
+  <text x="575" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DIV</text>
+  <text x="575" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
+  <text x="365" y="244" font-size="11.5" fill="#be185d" text-anchor="middle" font-weight="700">P 环拼成选择性滤器（DEKA 基序）</text>
+  <line x1="365" y1="252" x2="365" y2="296" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr-enz)"/>
+  <text x="190" y="216" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">S4：电压传感器（红色）</text>
+  <circle cx="450" cy="408" r="13" fill="#fce7f3" stroke="#be185d" stroke-width="2.2"/>
+  <text x="450" y="412" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">IFM</text>
+  <path d="M495,352 C480,380 465,390 452,396" fill="none" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="436" y1="400" x2="376" y2="360" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
+  <text x="470" y="396" font-size="10.5" fill="#831843">开放后约 1 ms 内塞住胞内侧孔口</text>
+  <text x="470" y="410" font-size="10.5" fill="#831843">（DIII–DIV 连接环）</text>
+  <text x="86" y="424" font-size="10.5" fill="#475569">激活（S4 外携）与失活（IFM 塞孔）</text>
+  <text x="86" y="438" font-size="10.5" fill="#475569">是两把彼此独立的锁。</text>
+  <rect x="800" y="180" width="540" height="120" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="820" y="210" font-size="14.5" fill="#075985" font-weight="700">S4：电压传感器</text>
+  <text x="820" y="234" font-size="11.5" fill="#475569">每隔三个残基一个碱性氨基酸；去极化时正电残基外携，</text>
+  <text x="820" y="250" font-size="11.5" fill="#475569">产生先于离子电流的门控电流——实测每钠通道约 12–16 个元电荷。</text>
+  <rect x="800" y="316" width="540" height="120" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="820" y="346" font-size="14.5" fill="#4c1d95" font-weight="700">失活：球与链模型</text>
+  <text x="820" y="370" font-size="11.5" fill="#475569">DIII–DIV 连接环的 IFM 基序像系在链上的球，</text>
+  <text x="820" y="386" font-size="11.5" fill="#475569">开放后约 1 ms 内塞住胞内侧孔口——快进快退的「保险丝」。</text>
+  <rect x="30" y="478" width="1340" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="500.84" font-size="19" fill="#475569" font-weight="700">二、Nav 与 Kv（延迟整流）：上升与回落的分工</text>
+  <rect x="100" y="524" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="551.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="240" y="524" width="550" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="551.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">Nav（电压门控钠通道）</text>
+  <rect x="790" y="524" width="550" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="551.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">Kv（延迟整流钾通道）</text>
+  <rect x="100" y="568" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="591.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">结构</text>
+  <rect x="240" y="568" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="591.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 2000 个氨基酸的单链，折成四个同源结构域（DI–DIV，各 6 跨膜）</text>
+  <rect x="790" y="568" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="591.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">四聚体（每个亚基 6 跨膜）</text>
+  <rect x="100" y="604" width="1240" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="100" y="604" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="627.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">激活</text>
+  <rect x="240" y="604" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="627.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">极快：S4 外携后孔口雪崩式开放</text>
+  <rect x="790" y="604" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="627.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">四个 S4 逐一外翻 → 激活慢，构成延迟整流</text>
+  <rect x="100" y="640" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="663.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">失活</text>
+  <rect x="240" y="640" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="663.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">快：IFM 球塞孔（约 1 ms）</text>
+  <rect x="790" y="640" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="663.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">慢（C 型失活）——去极化期间持续外流</text>
+  <rect x="100" y="676" width="1240" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="100" y="676" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="170" y="699.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">电位贡献</text>
+  <rect x="240" y="676" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="699.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">上升支与超射（冲向 E_Na）</text>
+  <rect x="790" y="676" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="699.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">下降支与后超极化（拉回 E_K 方向）</text>
+  <rect x="30" y="732" width="1340" height="246" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">三、毒药即探针：毒素工具箱与通道病</text>
+  <rect x="60" y="800" width="300" height="160" rx="9" fill="#fce7f3" fill-opacity="0.45" stroke="#be185d" stroke-width="1.6"/>
+  <text x="210" y="830" font-size="14.5" fill="#be185d" text-anchor="middle" font-weight="700">河鲀毒素 TTX</text>
+  <text x="82" y="858" font-size="11.5" fill="#475569">纳摩尔亲和力自胞外封住 Nav 滤器；</text>
+  <text x="82" y="875" font-size="11.5" fill="#475569">心脏 Nav1.5 相对不敏感——心肌仍可放电。</text>
+  <rect x="390" y="800" width="300" height="160" rx="9" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="540" y="830" font-size="14.5" fill="#0369a1" text-anchor="middle" font-weight="700">四乙基铵 TEA</text>
+  <text x="412" y="858" font-size="11.5" fill="#475569">自孔口堵住 Kv：延迟整流被按下暂停键，</text>
+  <text x="412" y="875" font-size="11.5" fill="#475569">动作电位时程延长。</text>
+  <rect x="720" y="800" width="300" height="160" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="870" y="830" font-size="14.5" fill="#d97706" text-anchor="middle" font-weight="700">利多卡因</text>
+  <text x="742" y="858" font-size="11.5" fill="#475569">自胞内侧优先结合并稳定失活态 → 使用依赖性：</text>
+  <text x="742" y="875" font-size="11.5" fill="#475569">越放电越被阻断（局麻 / 抗心律失常）。</text>
+  <rect x="1050" y="800" width="300" height="160" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1200" y="830" font-size="14.5" fill="#dc2626" text-anchor="middle" font-weight="700">通道病：临床回声</text>
+  <text x="1072" y="858" font-size="11.5" fill="#475569">SCN1A → 癫痫；SCN4A → 周期性麻痹；</text>
+  <text x="1072" y="875" font-size="11.5" fill="#475569">KCNQ2/3 → 新生儿癫痫——结构-功能映射的临床级证据。</text>
+</svg>

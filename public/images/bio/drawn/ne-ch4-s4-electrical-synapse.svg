@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电突触与突触传递的调制：缝隙连接、轴-轴突触与短时程可塑性</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">缝隙连接由两侧各一个连接蛋白六聚体半通道对接而成，孔径约 1.5–2 nm、双向、近零延迟，间隙约 3.5 nm（化学突触 20–40 nm）；Cx36 介导 PV 阳性中间神经元网络的伽马同步；突触前抑制经轴-轴突触 GABA_B 压制末梢钙通道、突触前易化经 cAMP 升高释放概率；PPF 主因残留钙、PPD 主因池耗竭；AChE 水解 ACh、EAAT 摄取谷氨酸、NET/DAT/SERT 再摄取单胺——清除失效即病理</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、电突触：缝隙连接的直通电路</text>
+  <rect x="60" y="176" width="640" height="130" rx="8" fill="#e0f2fe" fill-opacity="0.2" stroke="none"/>
+  <text x="76" y="200" font-size="13" fill="#075985" font-weight="700">细胞 A（胞浆）</text>
+  <g><circle cx="60" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="310" x2="60" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="310" x2="84" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="310" x2="108" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="310" x2="132" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="310" x2="156" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="310" x2="180" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="310" x2="204" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="310" x2="228" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="310" x2="252" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="310" x2="276" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="310" x2="300" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="310" x2="324" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="310" x2="348" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="310" x2="372" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="310" x2="396" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="420" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="420" y1="310" x2="420" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="420" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="444" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="444" y1="310" x2="444" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="444" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="468" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="468" y1="310" x2="468" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="468" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="492" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="492" y1="310" x2="492" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="492" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="516" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="516" y1="310" x2="516" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="516" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="540" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="540" y1="310" x2="540" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="540" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="564" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="564" y1="310" x2="564" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="564" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="588" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="588" y1="310" x2="588" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="588" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="612" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="612" y1="310" x2="612" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="612" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="636" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="636" y1="310" x2="636" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="636" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="660" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="660" y1="310" x2="660" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="660" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="684" cy="306" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="684" y1="310" x2="684" y2="315" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="684" cy="319" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <g><circle cx="60" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="353" x2="60" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="353" x2="84" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="353" x2="108" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="353" x2="132" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="353" x2="156" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="353" x2="180" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="353" x2="204" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="353" x2="228" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="353" x2="252" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="353" x2="276" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="353" x2="300" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="353" x2="324" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="353" x2="348" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="353" x2="372" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="353" x2="396" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="420" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="420" y1="353" x2="420" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="420" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="444" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="444" y1="353" x2="444" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="444" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="468" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="468" y1="353" x2="468" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="468" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="492" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="492" y1="353" x2="492" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="492" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="516" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="516" y1="353" x2="516" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="516" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="540" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="540" y1="353" x2="540" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="540" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="564" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="564" y1="353" x2="564" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="564" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="588" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="588" y1="353" x2="588" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="588" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="612" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="612" y1="353" x2="612" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="612" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="636" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="636" y1="353" x2="636" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="636" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="660" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="660" y1="353" x2="660" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="660" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="684" cy="349" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="684" y1="353" x2="684" y2="358" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="684" cy="362" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="60" y="362" width="640" height="90" rx="8" fill="#f1f5f9" fill-opacity="0.8" stroke="none"/>
+  <text x="76" y="386" font-size="13" fill="#475569" font-weight="700">细胞 B（胞浆）</text>
+  <text x="692" y="340" font-size="11.5" fill="#64748b" text-anchor="end" font-weight="700">间隙约 3.5 nm</text>
+  <circle cx="399" cy="312" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="389.5" cy="320.66025403784437" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="370.5" cy="320.66025403784437" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="361" cy="312" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="370.5" cy="303.33974596215563" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="389.5" cy="303.33974596215563" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="399" cy="355" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="389.5" cy="363.66025403784437" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="370.5" cy="363.66025403784437" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="361" cy="355" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="370.5" cy="346.33974596215563" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="389.5" cy="346.33974596215563" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="380" y1="296" x2="380" y2="372" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="380" y="288" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">孔径约 1.5–2 nm</text>
+  <line x1="330" y1="268" x2="330" y2="402" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <line x1="430" y1="402" x2="430" y2="268" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <text x="500" y="340" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">双向 · 近零延迟</text>
+  <text x="60" y="470" font-size="11.5" fill="#475569">每一侧膜上嵌着由六个连接蛋白亚基围成的半通道（connexon），两侧半通道对接即成缝隙连接；</text>
+  <text x="60" y="486" font-size="11.5" fill="#475569">Cx36 介导 PV 阳性中间神经元网络的伽马同步。</text>
+  <rect x="740" y="132" width="630" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、电突触 vs 化学突触：全面分野，协同分工</text>
+  <rect x="770" y="190" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="880" y="190" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">电突触（缝隙连接）</text>
+  <rect x="1100" y="190" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">化学突触</text>
+  <rect x="770" y="234" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="262.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">间隙宽度</text>
+  <rect x="880" y="234" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="262.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 3.5 nm（半通道对接）</text>
+  <rect x="1100" y="234" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="262.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 20–40 nm</text>
+  <rect x="770" y="280" width="570" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="280" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="308.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">速度</text>
+  <rect x="880" y="280" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="308.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">近零延迟（电学耦合）</text>
+  <rect x="1100" y="280" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="308.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 0.5 ms 突触延迟</text>
+  <rect x="770" y="326" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="354.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">方向</text>
+  <rect x="880" y="326" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="354.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">多为双向</text>
+  <rect x="1100" y="326" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="354.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">单向（突触前 → 后）</text>
+  <rect x="770" y="372" width="570" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="372" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="400.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">可塑性</text>
+  <rect x="880" y="372" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="400.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">较有限</text>
+  <rect x="1100" y="372" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="400.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">丰富（长 / 短时程可塑性）</text>
+  <rect x="770" y="418" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="825" y="446.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">代谢成本</text>
+  <rect x="880" y="418" width="220" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="990" y="446.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">低</text>
+  <rect x="1100" y="418" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="446.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">高（囊泡循环 · 递质重合成）</text>
+  <text x="770" y="486" font-size="11.5" fill="#475569">两者常在同一回路中协同分工：电突触保同步与速度，化学突触保可塑与特异性。</text>
+  <rect x="30" y="576" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、调制的旋钮：突触前抑制 · 易化 · 短时程可塑性 · 递质清除</text>
+  <text x="265" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">突触前抑制与易化（轴-轴突触）</text>
+  <ellipse cx="150" cy="690" rx="42" ry="24" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="135" cy="690" r="4" fill="#b45309"/>
+  <circle cx="150" cy="690" r="4" fill="#b45309"/>
+  <circle cx="165" cy="690" r="4" fill="#b45309"/>
+  <text x="150" y="654" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">传入 A 末梢</text>
+  <line x1="192" y1="702" x2="246" y2="728" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="231.42485" y="679.075" width="53.1503" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="258" y="691.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">GABA_B</text>
+  <ellipse cx="300" cy="750" rx="55" ry="28" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="280" cy="750" r="4" fill="#6d28d9"/>
+  <circle cx="295" cy="750" r="4" fill="#6d28d9"/>
+  <circle cx="310" cy="750" r="4" fill="#6d28d9"/>
+  <text x="300" y="708" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">末梢 B</text>
+  <rect x="352" y="770" width="8" height="18" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="362" y="770" width="8" height="18" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="358" y="764" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">✕</text>
+  <text x="420" y="800" font-size="10.5" fill="#dc2626" font-weight="700">Ca²⁺ 通道被抑制</text>
+  <line x1="230" y1="830" x2="460" y2="830" stroke="#0369a1" stroke-width="5" opacity="0.55"/>
+  <text x="345" y="854" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">突触后树突</text>
+  <line x1="300" y1="780" x2="300" y2="822" stroke="#6d28d9" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <circle cx="292" cy="802" r="3" fill="#6d28d9"/>
+  <circle cx="300" cy="802" r="3" fill="#6d28d9"/>
+  <circle cx="308" cy="802" r="3" fill="#6d28d9"/>
+  <text x="70" y="884" font-size="11" fill="#475569">GABA_B 抑制末梢钙通道 → 只压制这一路输入，而不改变突触后膜兴奋性；</text>
+  <text x="70" y="899" font-size="11" fill="#475569">突触前易化：调质升高 cAMP → 释放概率 ↑。</text>
+  <text x="625" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">短时程可塑性：频率的滤波器</text>
+  <rect x="500" y="642" width="230" height="100" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="500" y1="717" x2="730" y2="717" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="557.5" y1="742" x2="557.5" y2="642" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="692" x2="730" y2="692" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="615" y1="742" x2="615" y2="642" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="667" x2="730" y2="667" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="672.5" y1="742" x2="672.5" y2="642" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="534.5" y1="742" x2="534.5" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="534.5" y="764" font-size="13" fill="#64748b" text-anchor="middle">①</text>
+  <line x1="626.5" y1="742" x2="626.5" y2="748" stroke="#475569" stroke-width="1.8"/>
+  <text x="626.5" y="764" font-size="13" fill="#64748b" text-anchor="middle">②</text>
+  <line x1="494" y1="732" x2="500" y2="732" stroke="#475569" stroke-width="1.8"/>
+  <text x="490" y="736" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="494" y1="652" x2="500" y2="652" stroke="#475569" stroke-width="1.8"/>
+  <text x="490" y="656" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <path d="M534.5,734 C536.4,729.5 540.3,709.3 546,707 C551.8,704.7 561.3,716.2 569,720 C576.7,723.8 582.4,728.3 592,730 C601.6,731.7 618.1,738.3 626.5,730 C634.9,721.7 634.9,684.7 642.6,680 C650.3,675.3 661.8,694.7 672.5,702 C683.2,709.3 701.3,720.3 707,724" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="500" y="762" font-size="10.5" fill="#134e4a">PPF：残留 Ca²⁺ → 第二脉冲释放概率 ↑（易化）</text>
+  <rect x="500" y="800" width="230" height="100" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="500" y1="875" x2="730" y2="875" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="557.5" y1="900" x2="557.5" y2="800" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="850" x2="730" y2="850" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="615" y1="900" x2="615" y2="800" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="500" y1="825" x2="730" y2="825" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="672.5" y1="900" x2="672.5" y2="800" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="534.5" y1="900" x2="534.5" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="534.5" y="922" font-size="13" fill="#64748b" text-anchor="middle">①</text>
+  <line x1="626.5" y1="900" x2="626.5" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="626.5" y="922" font-size="13" fill="#64748b" text-anchor="middle">②</text>
+  <line x1="494" y1="890" x2="500" y2="890" stroke="#475569" stroke-width="1.8"/>
+  <text x="490" y="894" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="494" y1="810" x2="500" y2="810" stroke="#475569" stroke-width="1.8"/>
+  <text x="490" y="814" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <path d="M534.5,892 C536.4,881.7 540.3,836.2 546,830 C551.8,823.8 561.3,847.5 569,855 C576.7,862.5 582.4,871.7 592,875 C601.6,878.3 618.1,876.7 626.5,875 C634.9,873.3 634.9,864.5 642.6,865 C650.3,865.5 661.8,873.8 672.5,878 C683.2,882.2 701.3,888.0 707,890" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <text x="500" y="920" font-size="10.5" fill="#92400e">PPD：可释放池耗竭 → 第二脉冲变小（压抑）</text>
+  <text x="1070" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">递质清除：各走各路</text>
+  <rect x="792.1232" y="679.8" width="39.7536" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="812" y="694.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">ACh</text>
+  <line x1="862" y1="690" x2="958" y2="690" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="910" y="678" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">AChE 水解</text>
+  <rect x="978" y="666" width="342" height="48" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="996" y="695" font-size="11.5" fill="#dc2626" font-weight="700">清除失效 → 胆碱能危象</text>
+  <rect x="784.46" y="747.8" width="55.08" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="812" y="762.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">谷氨酸</text>
+  <line x1="862" y1="758" x2="958" y2="758" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="910" y="746" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">EAAT 摄取（胶质）</text>
+  <rect x="978" y="734" width="342" height="48" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="996" y="763" font-size="11.5" fill="#dc2626" font-weight="700">清除失效 → 兴奋性毒性</text>
+  <rect x="784.46" y="815.8" width="55.08" height="20.4" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="812" y="830.32" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">单胺类</text>
+  <line x1="862" y1="826" x2="958" y2="826" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="910" y="814" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">NET / DAT / SERT</text>
+  <rect x="978" y="802" width="342" height="48" rx="8" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.4"/>
+  <text x="996" y="831" font-size="11.5" fill="#d97706" font-weight="700">清除失效 → 递质堆积（药靶）</text>
+  <text x="790" y="892" font-size="11.5" fill="#475569">递质清除各走各路：清除速度决定信号的时长——清除失效即病理。</text>
+</svg>

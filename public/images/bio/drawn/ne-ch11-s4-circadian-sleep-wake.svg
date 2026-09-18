@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">生物节律与睡眠-觉醒：SCN 主钟、分子钟与整夜周期结构</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">每周期约 90 分钟、每夜约 4–6 个；前半夜 N3 富集、后半夜 REM 递增；腺苷累积构成睡眠压力</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、视交叉上核：哺乳动物的昼夜主钟</text>
+  <rect x="70" y="210" width="560" height="52" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <text x="350" y="242" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">ipRGC（内在光敏视网膜节细胞）</text>
+  <line x1="350" y1="262" x2="350" y2="280" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="70" y="280" width="560" height="52" rx="9" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="350" y="312" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">视网膜下丘脑束 → SCN（每侧约一万、双侧约两万神经元）</text>
+  <line x1="350" y1="332" x2="350" y2="350" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="70" y="350" width="560" height="52" rx="9" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="350" y="382" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">室旁核（PVN）→ 颈上神经节</text>
+  <line x1="350" y1="402" x2="350" y2="420" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="70" y="420" width="560" height="52" rx="9" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="350" y="452" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">松果体：暗期分泌褪黑素（光亮则抑制）</text>
+  <text x="60" y="522" font-size="11" fill="#475569">光是最强的对时信号（zeitgeber）：黄昏的褪黑素上升标记生物学夜晚——盲人失去光对时，节律逐日漂移。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、时钟基因：耗时约 24 小时的分子负反馈</text>
+  <rect x="740" y="210" width="270" height="74" rx="9" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="2"/>
+  <text x="875" y="240" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">CLOCK–BMAL1</text>
+  <text x="875" y="262" font-size="11" fill="#475569" text-anchor="middle">驱动 per 与 cry 转录</text>
+  <line x1="1010" y1="247" x2="1070" y2="247" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <rect x="1070" y="210" width="270" height="74" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="2"/>
+  <text x="1205" y="240" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700">PER / CRY 蛋白</text>
+  <text x="1205" y="262" font-size="11" fill="#475569" text-anchor="middle">累积 → 延迟入核</text>
+  <path d="M1205,284 C1205,360 875,360 875,284" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="8 5" marker-end="url(#arr-bad)"/>
+  <text x="1040" y="348" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">入核后抑制 CLOCK–BMAL1（负反馈）</text>
+  <text x="740" y="400" font-size="11" fill="#475569">转录 → 翻译 → 入核 → 抑制 → 降解重启：环路一周耗时约 24 小时；外周器官各有钟，由进食与代谢信号对时。</text>
+  <text x="740" y="460" font-size="11" fill="#64748b" font-weight="700">时差与轮班：中枢钟被光快速重置、外周钟跟得慢——「肚子还留在上个时区」。</text>
+  <rect x="30" y="578" width="690" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、整夜睡眠结构：约 4–6 个周期、每周期约 90 分钟</text>
+  <line x1="130" y1="650" x2="690" y2="650" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="124" y="654" font-size="11" fill="#475569" text-anchor="end" font-weight="600">清醒</text>
+  <line x1="130" y1="682" x2="690" y2="682" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="124" y="686" font-size="11" fill="#475569" text-anchor="end" font-weight="600">REM</text>
+  <line x1="130" y1="714" x2="690" y2="714" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="124" y="718" font-size="11" fill="#475569" text-anchor="end" font-weight="600">N1</text>
+  <line x1="130" y1="746" x2="690" y2="746" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="124" y="750" font-size="11" fill="#475569" text-anchor="end" font-weight="600">N2</text>
+  <line x1="130" y1="778" x2="690" y2="778" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="124" y="782" font-size="11" fill="#475569" text-anchor="end" font-weight="600">N3</text>
+  <polyline points="90,650 90,714 107,714 107,746 132,746 132,778 182,778 182,746 207,746 207,682 240,714 248,714 248,746 273,746 273,778 323,778 323,746 348,746 348,682 390,714 400,714 400,746 431,746 431,778 456,778 456,746 465,746 465,682 540,746 573,746 573,682 665,682 690,650" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="207" y1="682" x2="240" y2="682" stroke="#dc2626" stroke-width="4"/>
+  <line x1="348" y1="682" x2="390" y2="682" stroke="#dc2626" stroke-width="4"/>
+  <line x1="465" y1="682" x2="540" y2="682" stroke="#dc2626" stroke-width="4"/>
+  <line x1="573" y1="682" x2="665" y2="682" stroke="#dc2626" stroke-width="4"/>
+  <line x1="90" y1="800" x2="690" y2="800" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="800" x2="90" y2="806" stroke="#475569" stroke-width="1.6"/>
+  <text x="90" y="824" font-size="10.5" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="240" y1="800" x2="240" y2="806" stroke="#475569" stroke-width="1.6"/>
+  <text x="240" y="824" font-size="10.5" fill="#64748b" text-anchor="middle">90</text>
+  <line x1="390" y1="800" x2="390" y2="806" stroke="#475569" stroke-width="1.6"/>
+  <text x="390" y="824" font-size="10.5" fill="#64748b" text-anchor="middle">180</text>
+  <line x1="540" y1="800" x2="540" y2="806" stroke="#475569" stroke-width="1.6"/>
+  <text x="540" y="824" font-size="10.5" fill="#64748b" text-anchor="middle">270</text>
+  <line x1="690" y1="800" x2="690" y2="806" stroke="#475569" stroke-width="1.6"/>
+  <text x="690" y="824" font-size="10.5" fill="#64748b" text-anchor="middle">360 分钟</text>
+  <line x1="240" y1="640" x2="240" y2="800" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.8"/>
+  <line x1="390" y1="640" x2="390" y2="800" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.8"/>
+  <line x1="540" y1="640" x2="540" y2="800" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.8"/>
+  <text x="165" y="632" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">周期 1</text>
+  <text x="315" y="632" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">周期 2</text>
+  <text x="465" y="632" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">周期 3</text>
+  <text x="615" y="632" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">周期 4</text>
+  <text x="660" y="664" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">← 后半夜 REM 递增</text>
+  <text x="60" y="862" font-size="11" fill="#475569">前半夜 N3（慢波）富集、后半夜 REM 递增——两类睡眠各有独立的稳态需求：N3 守突触稳态与分泌，REM 守情绪与记忆整合。</text>
+  <text x="60" y="916" font-size="11" fill="#64748b">整夜大致比例：N1 约 5%、N2 约 45–55%、N3 约 15–20%、REM 约 20–25%；增龄以 N3 与 REM 比例缩减为特征。</text>
+  <rect x="750" y="578" width="620" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="600.84" font-size="19" fill="#475569" font-weight="700">四、EEG 频段、腺苷压力与睡眠的功能</text>
+  <rect x="780" y="640" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="667.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">频段</text>
+  <rect x="860" y="640" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="667.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">频率范围</text>
+  <rect x="990" y="640" width="350" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="667.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">典型状态 / 睡眠标志</text>
+  <rect x="780" y="684" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="706.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">β 波</text>
+  <rect x="860" y="684" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="706.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 13–30 Hz</text>
+  <rect x="990" y="684" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="706.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">清醒警觉、主动思维</text>
+  <rect x="780" y="718" width="560" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="780" y="718" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="740.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">α 波</text>
+  <rect x="860" y="718" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 8–13 Hz</text>
+  <rect x="990" y="718" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">清醒放松、闭眼</text>
+  <rect x="780" y="752" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="774.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">θ 波</text>
+  <rect x="860" y="752" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="774.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 4–8 Hz</text>
+  <rect x="990" y="752" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="774.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">N1 浅睡与困倦（顶尖波）</text>
+  <rect x="780" y="786" width="560" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="780" y="786" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="820" y="808.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">δ 波</text>
+  <rect x="860" y="786" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="808.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 0.5–4 Hz</text>
+  <rect x="990" y="786" width="350" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="808.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">N3 慢波深睡（纺锤波与 K 复合波属 N2）</text>
+  <rect x="780" y="832" width="560" height="92" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="800" y="854" font-size="11" fill="#475569">腺苷随清醒时长累积构成睡眠压力（「睡眠债」）；咖啡因拮抗腺苷受体而掩蔽睡意——并未偿还债务。</text>
+  <text x="800" y="870" font-size="11" fill="#475569">突触稳态假说：慢波睡眠整体下调突触强度，与海马-皮层耦合的记忆巩固（LTP 转存）相辅相成。</text>
+</svg>

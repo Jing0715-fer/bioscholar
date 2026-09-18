@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">神经退行性疾病：AD 淀粉样级联、PD 路易体与共同终末机制</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Aβ 置于上游、tau 播散为下游执行者；家族性均占 5–10%；蛋白聚集与选择性易损是共同主题</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、阿尔茨海默病：Aβ 与 tau 的双分子病理（1906）</text>
+  <rect x="60" y="208" width="640" height="50" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <text x="380" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">APP / 早老素 PS1 / PS2 突变 → Aβ42 增高（家族性早发）</text>
+  <line x1="380" y1="258" x2="380" y2="272" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="272" width="640" height="50" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="380" y="302" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">Aβ 寡聚体与斑块（淀粉样级联假说：上游启动）</text>
+  <line x1="380" y1="322" x2="380" y2="336" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="336" width="640" height="50" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="380" y="366" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">tau 过度磷酸化 → 神经原纤维缠结（下游执行者，沿脑区播散）</text>
+  <line x1="380" y1="386" x2="380" y2="400" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="400" width="640" height="50" rx="8" fill="#f1f5f9" fill-opacity="0.5" stroke="#64748b" stroke-width="1.8"/>
+  <text x="380" y="430" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">突触失效 → 神经元退变 → 认知衰退</text>
+  <text x="60" y="492" font-size="11" fill="#475569">Alzheimer 1906 年首次报告患者 Auguste D. 的老年斑与神经原纤维缠结——两类损伤结构至今仍是病理双标志。</text>
+  <text x="60" y="536" font-size="11" fill="#64748b" font-weight="700">遗传学：APOE4 为散发性最重要风险等位基因、APOE2 具保护性——散发的遗传面。</text>
+  <rect x="750" y="132" width="620" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、帕金森病与 ALS：路易体、激酶与兴奋性毒性</text>
+  <rect x="780" y="200" width="560" height="120" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="796" y="226" font-size="13" fill="#134e4a" font-weight="700">帕金森病（PD）</text>
+  <text x="796" y="250" font-size="11" fill="#475569">黑质致密部多巴胺能神经元退变 + α-突触核蛋白路易体；家族性约占 5–10%：LRRK2</text>
+  <text x="796" y="266" font-size="11" fill="#475569">（G2019S 激酶功能增强，常显）与 Parkin（E3 泛素连接酶）/ PINK1（线粒体质量控制，常隐、早发）。</text>
+  <rect x="780" y="340" width="560" height="120" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.8"/>
+  <text x="796" y="366" font-size="13" fill="#78350f" font-weight="700">肌萎缩侧索硬化（ALS）</text>
+  <text x="796" y="390" font-size="11" fill="#475569">家族性约 5–10%：SOD1（1993 年首个致病基因，毒性功能获得）、C9orf72 六核苷酸 GGGGCC 重复扩增</text>
+  <text x="796" y="406" font-size="11" fill="#475569">（最常见家族性病因）、TDP-43 / FUS；散发的 TDP-43 胞质聚集为共同标志。</text>
+  <text x="780" y="490" font-size="11.5" fill="#dc2626" font-weight="700">共同终末机制：兴奋性毒性 + 氧化应激 + 蛋白稳态崩溃——四类退行性疾病在此汇流。</text>
+  <rect x="30" y="578" width="1340" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、四大神经退行性疾病对照：共同主题——蛋白聚集 + 选择性易损</text>
+  <rect x="60" y="650" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">疾病</text>
+  <rect x="190" y="650" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">主要易损神经元</text>
+  <rect x="490" y="650" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">标志蛋白病理</text>
+  <rect x="740" y="650" width="290" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">代表基因</text>
+  <rect x="1030" y="650" width="310" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="677.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">主流对症治疗</text>
+  <rect x="60" y="694" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="722.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">阿尔茨海默病</text>
+  <rect x="190" y="694" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">内嗅皮层、海马及广泛皮层神经元</text>
+  <rect x="490" y="694" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Aβ 斑块与 tau 缠结</text>
+  <rect x="740" y="694" width="290" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">APP、PS1、PS2、APOE4</text>
+  <rect x="1030" y="694" width="310" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">胆碱酯酶抑制剂（多奈哌齐）、美金刚</text>
+  <rect x="60" y="740" width="1280" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="740" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="768.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">帕金森病</text>
+  <rect x="190" y="740" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">黑质致密部多巴胺能神经元</text>
+  <rect x="490" y="740" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">α-突触核蛋白路易体</text>
+  <rect x="740" y="740" width="290" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">LRRK2、Parkin、PINK1、SNCA</text>
+  <rect x="1030" y="740" width="310" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="768.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">L-DOPA、深部脑刺激（DBS）</text>
+  <rect x="60" y="786" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="814.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">肌萎缩侧索硬化</text>
+  <rect x="190" y="786" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">上与下运动神经元</text>
+  <rect x="490" y="786" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">TDP-43 胞质聚集</text>
+  <rect x="740" y="786" width="290" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">SOD1、C9orf72、TDP-43、FUS</text>
+  <rect x="1030" y="786" width="310" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="814.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Riluzole 等延缓病程药物</text>
+  <rect x="60" y="832" width="1280" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="832" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="860.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">亨廷顿病</text>
+  <rect x="190" y="832" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="340" y="860.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">纹状体 D2 型中型多棘神经元</text>
+  <rect x="490" y="832" width="250" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="860.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Huntingtin 聚集体</text>
+  <rect x="740" y="832" width="290" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="860.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">HTT 的 CAG 重复扩增</text>
+  <rect x="1030" y="832" width="310" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1185" y="860.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">对症与支持治疗</text>
+  <text x="60" y="928" font-size="11" fill="#475569">胆碱能假说导出胆碱酯酶抑制剂与美金刚的对症治疗——可改善症状但不能改变病程；对症与修饰病程的分野是当前药物研发的核心战场。</text>
+</svg>

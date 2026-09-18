@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">神经科学的研究方法：染色 · 电生理 · 成像 · 干预 · 连接组</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">1929 EEG 无创读脑；1949 玻璃微电极（&lt;1 μm）实现胞内记录；1976 膜片钳以 10 GΩ 封接记录皮安级单通道电流（1991 诺奖）；1990 双光子与 BOLD fMRI 开启成像时代；2005 光遗传学以 ChR2（蓝光约 473 nm）/NpHR（黄光约 590 nm）实现毫秒级操控；连接组学已绘线虫 302（1986）与果蝇约 14 万神经元（2024）</text>
+  <rect x="30" y="132" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、读脑工具的六个时代：从染色到连接组</text>
+  <rect x="56" y="190" width="196" height="122" rx="9" fill="#0369a1" fill-opacity="0.08" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="154" y="218" font-size="15" fill="#0369a1" text-anchor="middle" font-weight="700">解剖学时代</text>
+  <text x="154" y="252" font-size="11.5" fill="#475569" text-anchor="middle">高尔基 · 尼氏 · 髓鞘染色</text>
+  <text x="154" y="276" font-size="11.5" fill="#475569" text-anchor="middle">HRP 逆行示踪通路</text>
+  <text x="154" y="300" font-size="12" fill="#64748b" text-anchor="middle">↓</text>
+  <rect x="274" y="190" width="196" height="122" rx="9" fill="#0f766e" fill-opacity="0.08" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="372" y="218" font-size="15" fill="#0f766e" text-anchor="middle" font-weight="700">电生理时代</text>
+  <text x="372" y="252" font-size="11.5" fill="#475569" text-anchor="middle">1949 玻璃微电极 &lt;1 μm</text>
+  <text x="372" y="276" font-size="11.5" fill="#475569" text-anchor="middle">胞内记录 · 电压钳</text>
+  <text x="372" y="300" font-size="12" fill="#64748b" text-anchor="middle">↓</text>
+  <rect x="492" y="190" width="196" height="122" rx="9" fill="#6d28d9" fill-opacity="0.08" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="590" y="218" font-size="15" fill="#6d28d9" text-anchor="middle" font-weight="700">成像时代</text>
+  <text x="590" y="252" font-size="11.5" fill="#475569" text-anchor="middle">钙成像 · 双光子 1990</text>
+  <text x="590" y="276" font-size="11.5" fill="#475569" text-anchor="middle">fMRI BOLD 1990</text>
+  <text x="590" y="300" font-size="12" fill="#64748b" text-anchor="middle">↓</text>
+  <rect x="710" y="190" width="196" height="122" rx="9" fill="#be185d" fill-opacity="0.08" stroke="#be185d" stroke-width="1.6"/>
+  <text x="808" y="218" font-size="15" fill="#be185d" text-anchor="middle" font-weight="700">干预时代</text>
+  <text x="808" y="252" font-size="11.5" fill="#475569" text-anchor="middle">光遗传 ChR2 · NpHR</text>
+  <text x="808" y="276" font-size="11.5" fill="#475569" text-anchor="middle">DREADD 化学遗传</text>
+  <text x="808" y="300" font-size="12" fill="#64748b" text-anchor="middle">↓</text>
+  <rect x="928" y="190" width="196" height="122" rx="9" fill="#b45309" fill-opacity="0.08" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1026" y="218" font-size="15" fill="#b45309" text-anchor="middle" font-weight="700">理论与计算</text>
+  <text x="1026" y="252" font-size="11.5" fill="#475569" text-anchor="middle">Hodgkin-Huxley 类模型</text>
+  <text x="1026" y="276" font-size="11.5" fill="#475569" text-anchor="middle">计算神经科学</text>
+  <text x="1026" y="300" font-size="12" fill="#64748b" text-anchor="middle">↓</text>
+  <rect x="1146" y="190" width="196" height="122" rx="9" fill="#059669" fill-opacity="0.08" stroke="#059669" stroke-width="1.6"/>
+  <text x="1244" y="218" font-size="15" fill="#059669" text-anchor="middle" font-weight="700">全景时代</text>
+  <text x="1244" y="252" font-size="11.5" fill="#475569" text-anchor="middle">透明脑 · 连接组学</text>
+  <text x="1244" y="276" font-size="11.5" fill="#475569" text-anchor="middle">线虫 302 → 果蝇 14 万</text>
+  <text x="1244" y="300" font-size="12" fill="#64748b" text-anchor="middle">↓</text>
+  <line x1="254" y1="251" x2="272" y2="251" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="472" y1="251" x2="490" y2="251" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="690" y1="251" x2="708" y2="251" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="908" y1="251" x2="926" y2="251" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="1126" y1="251" x2="1144" y2="251" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="30" y="396" width="780" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="418.84" font-size="19" fill="#475569" font-weight="700">二、电生理的阶梯：把电流变成数字</text>
+  <rect x="60" y="456" width="70" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="483.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">年代</text>
+  <rect x="130" y="456" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="483.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">技术</text>
+  <rect x="270" y="456" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="483.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表人物</text>
+  <rect x="430" y="456" width="350" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="605" y="483.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">里程碑意义</text>
+  <rect x="60" y="500" width="70" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="531.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">1929</text>
+  <rect x="130" y="500" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="531.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">脑电图 EEG</text>
+  <rect x="270" y="500" width="160" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="531.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">Berger</text>
+  <rect x="430" y="500" width="350" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="605" y="531.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">人头皮上无创记录脑的电活动</text>
+  <rect x="60" y="552" width="720" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="552" width="70" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="583.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">1949</text>
+  <rect x="130" y="552" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="583.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">玻璃微电极</text>
+  <rect x="270" y="552" width="160" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="583.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">Ling &amp; Gerard</text>
+  <rect x="430" y="552" width="350" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="605" y="583.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">尖端 &lt;1 μm，实现单细胞胞内记录——静息电位与动作电位数值可直读</text>
+  <rect x="60" y="604" width="70" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="635.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">1976</text>
+  <rect x="130" y="604" width="140" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="200" y="635.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">膜片钳</text>
+  <rect x="270" y="604" width="160" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="635.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">Neher &amp; Sakmann</text>
+  <rect x="430" y="604" width="350" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="605" y="635.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">吉欧（10 GΩ）封接骤降噪声，皮安级单通道电流可辨（1991 诺奖）</text>
+  <rect x="60" y="668" width="720" height="40" rx="7" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="78" y="692" font-size="11.5" fill="#134e4a">电压钳（Hodgkin &amp; Huxley）先行分离离子电流，膜片钳再下探到单通道——电生理两级台阶。</text>
+  <rect x="830" y="396" width="540" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="846" y="418.84" font-size="19" fill="#475569" font-weight="700">三、光遗传学：毫秒级、细胞类型特异的开关</text>
+  <circle cx="1080" cy="566" r="26" fill="#ffffff" stroke="#1e293b" stroke-width="2.4"/>
+  <circle cx="1080" cy="566" r="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <line x1="1106" y1="566" x2="1180" y2="566" stroke="#1e293b" stroke-width="2.4"/>
+  <path d="M1180,566 q18,-10 34,-12" fill="none" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <path d="M1180,566 q18,10 34,12" fill="none" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1011.5381" y="602.225" width="136.92380000000003" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1080" y="616.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">ChR2 / NpHR 表达于膜</text>
+  <line x1="946" y1="468" x2="1056" y2="540" stroke="#0369a1" stroke-width="3" marker-end="url(#arr-acc)"/>
+  <text x="940" y="452" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">蓝光 ≈473 nm</text>
+  <rect x="935.2916" y="489.8" width="45.416799999999995" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="958" y="504.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">ChR2</text>
+  <line x1="946" y1="668" x2="1056" y2="596" stroke="#d97706" stroke-width="3" marker-end="url(#arr-warn)"/>
+  <text x="940" y="690" font-size="12.5" fill="#92400e" text-anchor="middle" font-weight="700">黄光 ≈590 nm</text>
+  <rect x="935.2916" y="637.8" width="45.416799999999995" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="958" y="652.32" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">NpHR</text>
+  <rect x="1224" y="500" width="130" height="44" rx="7" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="1236" y="518" font-size="11" fill="#075985" font-weight="700">毫秒级去极化放电</text>
+  <rect x="1224" y="592" width="130" height="44" rx="7" fill="#fef3c7" fill-opacity="0.6" stroke="#d97706" stroke-width="1.4"/>
+  <text x="1236" y="610" font-size="11" fill="#92400e" font-weight="700">超极化 · 抑制放电</text>
+  <text x="1100" y="712" font-size="11.5" fill="#475569" text-anchor="middle">DREADD 化学遗传学补足慢时间尺度（分钟级）</text>
+  <rect x="30" y="740" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="762.84" font-size="19" fill="#475569" font-weight="700">四、成像与全景时代：看见活动、看见全脑</text>
+  <rect x="60" y="806" width="290" height="130" rx="9" fill="#6d28d9" fill-opacity="0.07" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="205" y="836" font-size="15.5" fill="#6d28d9" text-anchor="middle" font-weight="700">钙成像</text>
+  <text x="84" y="866" font-size="11.5" fill="#475569">钙指示剂把放电翻译为荧光，</text>
+  <text x="84" y="900" font-size="11.5" fill="#475569">群体活动可视化</text>
+  <rect x="390" y="806" width="290" height="130" rx="9" fill="#0f766e" fill-opacity="0.07" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="535" y="836" font-size="15.5" fill="#0f766e" text-anchor="middle" font-weight="700">双光子显微镜</text>
+  <text x="414" y="866" font-size="11.5" fill="#475569">1990 Denk 确立；活体皮层深达</text>
+  <text x="414" y="900" font-size="11.5" fill="#475569">数百 μm，追踪同一群树突棘数月</text>
+  <rect x="720" y="806" width="290" height="130" rx="9" fill="#0369a1" fill-opacity="0.07" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="865" y="836" font-size="15.5" fill="#0369a1" text-anchor="middle" font-weight="700">fMRI（BOLD）</text>
+  <text x="744" y="866" font-size="11.5" fill="#475569">1990 Ogawa；活跃脑区脱氧血红蛋白↓</text>
+  <text x="744" y="900" font-size="11.5" fill="#475569">毫米级 · 秒级的代谢代偿指标</text>
+  <rect x="1050" y="806" width="290" height="130" rx="9" fill="#059669" fill-opacity="0.07" stroke="#059669" stroke-width="1.6"/>
+  <text x="1195" y="836" font-size="15.5" fill="#059669" text-anchor="middle" font-weight="700">连接组学</text>
+  <text x="1074" y="866" font-size="11.5" fill="#475569">1986 线虫 302 神经元完整图谱；</text>
+  <text x="1074" y="900" font-size="11.5" fill="#475569">2024 果蝇整脑约 14 万神经元</text>
+</svg>

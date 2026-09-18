@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">听觉的中枢通路与编码：双侧上行、频率双轨与双耳定位</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">&gt;5000 Hz 靠场所编码、中低频靠锁相（排齐发射至约 4–5 kHz）；低频定位算 ITD、高频比 IID</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、听觉上行通路：自蜗神经核起大量双侧交叉</text>
+  <rect x="80" y="200" width="250" height="44" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="205" y="219" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">螺旋神经节</text>
+  <text x="205" y="235" font-size="9" fill="#64748b" text-anchor="middle">（柯蒂器 → 双极细胞）</text>
+  <line x1="205" y1="244" x2="205" y2="256" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="256" width="250" height="44" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <text x="205" y="275" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">蜗腹侧核</text>
+  <text x="205" y="291" font-size="9" fill="#64748b" text-anchor="middle">（延髓脑桥界 · 分化放电型）</text>
+  <line x1="205" y1="300" x2="205" y2="312" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="312" width="250" height="44" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="205" y="331" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">上橄榄核复合体</text>
+  <text x="205" y="347" font-size="9" fill="#64748b" text-anchor="middle">（双耳比较 · 声源定位起点）</text>
+  <line x1="205" y1="356" x2="205" y2="368" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="368" width="250" height="44" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="205" y="387" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">下丘</text>
+  <text x="205" y="403" font-size="9" fill="#64748b" text-anchor="middle">（双耳线索整合 · 听-运动反射）</text>
+  <line x1="205" y1="412" x2="205" y2="424" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="424" width="250" height="44" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.8"/>
+  <text x="205" y="443" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">内侧膝状体</text>
+  <text x="205" y="459" font-size="9" fill="#64748b" text-anchor="middle">（投射皮层前最后驿站）</text>
+  <line x1="205" y1="468" x2="205" y2="480" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="480" width="250" height="44" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.8"/>
+  <text x="205" y="499" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">听皮层 A1（41 区）</text>
+  <text x="205" y="515" font-size="9" fill="#64748b" text-anchor="middle">（频率拓扑 · 复杂特征抽取）</text>
+  <text x="460" y="226" font-size="11" fill="#475569">自蜗神经核起大量交叉、</text>
+  <text x="460" y="242" font-size="11" fill="#475569">双侧上行——一侧通路受损时对侧仍可传递，</text>
+  <text x="460" y="258" font-size="11" fill="#475569">故单侧皮层或通路病变几乎不致单侧耳聋。</text>
+  <path d="M330,268 C386,274 396,300 330,312" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-bad)"/>
+  <path d="M330,324 C386,330 396,356 330,368" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-bad)"/>
+  <text x="446" y="300" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">交叉至对侧</text>
+  <text x="446" y="356" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">交叉至对侧</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、频率编码双轨：场所编码 + 锁相时间编码</text>
+  <rect x="740" y="200" width="280" height="130" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="760" y="226" font-size="13" fill="#134e4a" font-weight="700">场所编码（基底膜）</text>
+  <text x="760" y="250" font-size="11" fill="#475569">高频 → 基底膜底部振动；低频 → 顶部振动。</text>
+  <text x="760" y="266" font-size="11" fill="#475569">约 5000 Hz 以上主要靠部位编码。</text>
+  <rect x="1050" y="200" width="290" height="130" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1070" y="226" font-size="13" fill="#78350f" font-weight="700">锁相时间编码</text>
+  <text x="1070" y="250" font-size="11" fill="#475569">中低频下每周期固定相位放电；排齐发射（volley）</text>
+  <text x="1070" y="266" font-size="11" fill="#475569">把群体时间编码上限扩展到约 4–5 kHz。</text>
+  <text x="1040" y="366" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">音调拓扑：蜗神经核至 A1 的每一级逐级保留</text>
+  <rect x="790" y="386" width="500" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="806" y="412" font-size="11" fill="#075985" font-weight="700">低频（前外侧）</text>
+  <text x="1274" y="412" font-size="11" fill="#dc2626" text-anchor="end" font-weight="700">高频（后内侧）</text>
+  <line x1="940" y1="412" x2="1140" y2="412" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="1040" y="452" font-size="10.5" fill="#64748b" text-anchor="middle">A1 皮层频率代表的方向</text>
+  <text x="740" y="496" font-size="11" fill="#475569">调谐曲线的特征频率阈值是耳蜗频率选择性的量度；OHC（外毛细胞）受损时尖端消失——选择性骤降而听阈升高。</text>
+  <text x="740" y="512" font-size="11" fill="#475569">强度编码靠放电率、纤维募集与潜伏期三条途径。</text>
+  <rect x="30" y="578" width="700" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、声源定位：低频算时间差，高频比强度差</text>
+  <circle cx="140" cy="700" r="44" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2"/>
+  <text x="140" y="705" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">头</text>
+  <circle cx="88" cy="690" r="11" fill="#0f766e"/>
+  <circle cx="192" cy="690" r="11" fill="#dc2626"/>
+  <text x="88" y="664" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">左耳</text>
+  <text x="192" y="664" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">右耳</text>
+  <text x="330" y="664" font-size="12" fill="#d97706" text-anchor="middle" font-weight="700">声源</text>
+  <polygon points="300,700 284,690 284,710" fill="#d97706"/>
+  <line x1="302" y1="700" x2="204" y2="692" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <line x1="302" y1="700" x2="96" y2="688" stroke="#0f766e" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-dna)"/>
+  <text x="250" y="676" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">先到</text>
+  <text x="160" y="676" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">后到</text>
+  <rect x="60" y="742" width="320" height="96" rx="9" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="76" y="768" font-size="12.5" fill="#134e4a" font-weight="700">ITD 双耳时间差（低频）</text>
+  <text x="76" y="790" font-size="10.5" fill="#475569">锁相比较相位；Jeffress 延迟线（1948）：</text>
+  <text x="76" y="805" font-size="10.5" fill="#475569">两耳输入沿不同长度延迟线抵达按 ITD 排列的「符合检测器」——只有同时到达才放电，</text>
+  <text x="76" y="820" font-size="10.5" fill="#475569">鸟类获解剖证实。</text>
+  <rect x="400" y="742" width="300" height="96" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="416" y="768" font-size="12.5" fill="#dc2626" font-weight="700">IID 双耳强度差（高频）</text>
+  <text x="416" y="790" font-size="10.5" fill="#475569">头影效应：高频声被头颅遮挡，对侧耳声强衰减；</text>
+  <text x="416" y="805" font-size="10.5" fill="#475569">哺乳类另用速率对比策略。</text>
+  <text x="60" y="874" font-size="10.5" fill="#64748b">上橄榄核是双耳比较的起点：内侧上橄榄核（MSO）比较时间差，外侧上橄榄核（LSO）比较强度差。</text>
+  <rect x="750" y="578" width="620" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="600.84" font-size="19" fill="#475569" font-weight="700">四、听觉中枢各站功能一览</text>
+  <rect x="780" y="660" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="687.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">中枢站</text>
+  <rect x="990" y="660" width="350" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="687.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要功能</text>
+  <rect x="780" y="704" width="210" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="733.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">蜗神经核（腹/背侧）</text>
+  <rect x="990" y="704" width="350" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="733.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">保持音调拓扑，分化出多种放电反应型</text>
+  <rect x="780" y="752" width="560" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="780" y="752" width="210" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="781.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">上橄榄核复合体</text>
+  <rect x="990" y="752" width="350" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="781.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">双耳时间差与强度差比较，声源定位起点</text>
+  <rect x="780" y="800" width="210" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="829.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">下丘</text>
+  <rect x="990" y="800" width="350" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="829.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">双耳线索整合，听-运动反射与注意联络</text>
+  <rect x="780" y="848" width="560" height="48" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="780" y="848" width="210" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="877.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">内侧膝状体</text>
+  <rect x="990" y="848" width="350" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="877.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">皮层前最后驿站，分频段投向听皮层</text>
+  <rect x="780" y="896" width="210" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="925.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">听皮层 A1（41 区）</text>
+  <rect x="990" y="896" width="350" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1165" y="925.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">频率拓扑代表与复杂听觉特征抽取</text>
+  <text x="780" y="952" font-size="10.5" fill="#64748b">「每级保持拓扑 + 每级加入新运算」是听觉通路的组织通则。</text>
+</svg>

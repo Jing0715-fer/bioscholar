@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">动作电位的特性：全或无、四阶段波形与不应期</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">阈值约 −55 mV（静息之上 10–15 mV）；上升支约 0.2–0.5 ms、超射 +30 ～ +40 mV（Na⁺ 通道 0.1–0.2 ms 内雪崩开放但从未到达 E_Na）、下降支与持续数 ms 的后超极化，全程约 1–2 ms；绝对不应期约 1 ms 源于钠通道失活，保证单向传播并设定数百赫兹的频率上限；强度以放电频率编码，分级电位与动作电位构成「局部模拟 + 长程数字」分工</text>
+  <rect x="30" y="132" width="820" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、一次放电的解剖：全或无的固定剧本</text>
+  <rect x="120" y="180" width="560" height="300" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="120" y1="405" x2="680" y2="405" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="260" y1="480" x2="260" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="120" y1="330" x2="680" y2="330" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="480" x2="400" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="120" y1="255" x2="680" y2="255" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="540" y1="480" x2="540" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="213.52" y1="480" x2="213.52" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="213.52" y="502" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="306.48" y1="480" x2="306.48" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="306.48" y="502" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="400" y1="480" x2="400" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="400" y="502" font-size="13" fill="#64748b" text-anchor="middle">3</text>
+  <line x1="493.52000000000004" y1="480" x2="493.52000000000004" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="493.52000000000004" y="502" font-size="13" fill="#64748b" text-anchor="middle">4</text>
+  <line x1="586.48" y1="480" x2="586.48" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="586.48" y="502" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="114" y1="455.1" x2="120" y2="455.1" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="459.1" font-size="13" fill="#64748b" text-anchor="end">−70</text>
+  <line x1="114" y1="417.6" x2="120" y2="417.6" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="421.6" font-size="13" fill="#64748b" text-anchor="end">−55</text>
+  <line x1="114" y1="279.9" x2="120" y2="279.9" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="283.9" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="114" y1="204.89999999999998" x2="120" y2="204.89999999999998" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="208.89999999999998" font-size="13" fill="#64748b" text-anchor="end">+30</text>
+  <text x="400" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时间（ms）</text>
+  <text x="74" y="330" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位（mV）</text>
+  <line x1="120" y1="417.6" x2="680" y2="417.6" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="6 5" opacity="0.8"/>
+  <text x="676" y="411" font-size="11.5" fill="#dc2626" text-anchor="end" font-weight="700">阈值 ≈ −55 mV（静息之上 10–15 mV）</text>
+  <line x1="120" y1="455.1" x2="680" y2="455.1" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.8"/>
+  <text x="676" y="471" font-size="11" fill="#64748b" text-anchor="end">静息 −70 mV</text>
+  <path d="M120,455.1 C124.7,454.8 138.7,455.1 148,453 C157.3,450.9 168.5,444.8 176,442.5 C183.5,440.3 188.1,439.0 192.8,439.5 C197.5,440.0 199.1,443.5 204,445.5 C208.9,447.5 216.2,449.9 222.48000000000002,451.5 C228.7,453.1 238.3,454.5 241.51999999999998,455.1" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="135" y="214" font-size="11" fill="#64748b" font-weight="700">阈下刺激：分级、衰减</text>
+  <line x1="156" y1="226" x2="168" y2="428" stroke="#64748b" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <path d="M120,455.1 C127.7,454.3 152.5,452.9 166.48000000000002,450 C180.5,447.1 196.2,443.4 204,438 C211.8,432.6 209.6,429.4 213.52,417.6 C217.4,405.9 222.9,388.4 227.51999999999998,367.5 C232.2,346.6 236.9,316.3 241.51999999999998,292.5 C246.2,268.8 251.7,240.4 255.51999999999998,225 C259.3,209.6 261.4,205.5 264.48,200.09999999999997 C267.6,194.7 270.1,188.5 274,192.60000000000002 C277.9,196.8 282.6,204.6 288,225 C293.4,245.4 300.2,287.0 306.48,315 C312.7,343.0 319.3,373.0 325.52,393 C331.8,413.0 337.8,425.0 344,435 C350.2,445.0 356.2,448.6 362.48,453 C368.7,457.4 373.7,458.7 381.52000000000004,461.1 C389.4,463.5 398.7,467.1 409.52,467.4 C420.3,467.6 429.4,464.3 446.47999999999996,462.6 C463.6,461.0 488.7,458.8 512,457.5 C535.3,456.3 558.5,455.5 586.48,455.1 C614.5,454.7 664.4,455.1 680,455.1" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="300" y="198" font-size="11.5" fill="#dc2626" font-weight="700">② 超射 +30 ～ +40 mV</text>
+  <text x="135" y="290" font-size="11.5" fill="#134e4a" font-weight="700">① 上升支 0.2–0.5 ms</text>
+  <line x1="222" y1="300" x2="236" y2="362" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arr-dna)"/>
+  <text x="355" y="330" font-size="11.5" fill="#075985" font-weight="700">③ 下降支（K⁺ 外流）</text>
+  <line x1="352" y1="340" x2="328" y2="386" stroke="#0369a1" stroke-width="1.5" marker-end="url(#arr-acc)"/>
+  <text x="430" y="430" font-size="11.5" fill="#4c1d95" font-weight="700">④ 后超极化（持续数 ms）</text>
+  <line x1="428" y1="438" x2="412" y2="464" stroke="#6d28d9" stroke-width="1.5" marker-end="url(#arr-pro)"/>
+  <text x="452" y="236" font-size="11" fill="#475569">上升支：</text>
+  <text x="452" y="251" font-size="11" fill="#475569">Na⁺ 通道在 0.1–0.2 ms 内雪崩式开放，</text>
+  <text x="452" y="266" font-size="11" fill="#475569">膜电位直冲 E_Na 方向，</text>
+  <text x="452" y="281" font-size="11" fill="#475569">但从未真正到达 +60 mV。</text>
+  <line x1="213" y1="528" x2="410" y2="528" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="311" y="550" font-size="11.5" fill="#64748b" text-anchor="middle">峰—峰全程约 1–2 ms（后超极化可持续数 ms）</text>
+  <rect x="870" y="132" width="500" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="886" y="154.84" font-size="19" fill="#475569" font-weight="700">二、不应期：钠通道的强制冷却</text>
+  <line x1="900" y1="300" x2="1330" y2="300" stroke="#475569" stroke-width="2.5" marker-end="url(#arr-ink)"/>
+  <polyline points="905,300 909,294 913,258 919,306 923,318 927,300" fill="none" stroke="#be185d" stroke-width="2.4"/>
+  <rect x="940" y="262" width="120" height="76" rx="6" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1000" y="250" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">绝对不应期 ≈ 1 ms</text>
+  <text x="938" y="360" font-size="10.5" fill="#475569">Na⁺ 通道失活：</text>
+  <text x="938" y="374" font-size="10.5" fill="#475569">任何刺激都不能再触发——保证单向传播、</text>
+  <text x="938" y="388" font-size="10.5" fill="#475569">设定频率上限。</text>
+  <rect x="1060" y="262" width="200" height="76" rx="6" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1160" y="250" font-size="12.5" fill="#92400e" text-anchor="middle" font-weight="700">相对不应期（数 ms）</text>
+  <text x="1064" y="360" font-size="10.5" fill="#475569">K⁺ 外流残余 + 后超极化：</text>
+  <text x="1064" y="374" font-size="10.5" fill="#475569">需更强刺激方能到达阈值。</text>
+  <rect x="1260" y="262" width="70" height="76" rx="6" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.6"/>
+  <text x="1295" y="250" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">恢复</text>
+  <text x="1115" y="428" font-size="11" fill="#64748b" text-anchor="middle">放电后时间 →</text>
+  <rect x="900" y="452" width="430" height="58" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="918" y="474" font-size="11.5" fill="#475569">频率上限 = 1 / 绝对不应期：理论上限约千 Hz，</text>
+  <text x="918" y="490" font-size="11.5" fill="#475569">实际放电频率上限在数百赫兹量级——强度被翻译为频率。</text>
+  <rect x="30" y="576" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、分级电位 vs 动作电位：局部模拟计算 + 长程数字传输</text>
+  <rect x="60" y="648" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="675.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">特性</text>
+  <rect x="170" y="648" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="335" y="675.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">分级电位（突触/感受器电位）</text>
+  <rect x="500" y="648" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="650" y="675.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">动作电位</text>
+  <rect x="60" y="692" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="720.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">幅度</text>
+  <rect x="170" y="692" width="330" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="335" y="720.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">分级、可叠加总和</text>
+  <rect x="500" y="692" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="650" y="720.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">全或无：幅度与波形固定</text>
+  <rect x="60" y="738" width="740" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="738" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="766.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">传播</text>
+  <rect x="170" y="738" width="330" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="335" y="766.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">电紧张被动衰减</text>
+  <rect x="500" y="738" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="650" y="766.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">再生性传导、不衰减</text>
+  <rect x="60" y="784" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="812.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">离子基础</text>
+  <rect x="170" y="784" width="330" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="335" y="812.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">通道被动开放（突触 / 换能）</text>
+  <rect x="500" y="784" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="650" y="812.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">Na⁺ 通道再生性正反馈</text>
+  <rect x="60" y="830" width="740" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="830" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="858.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">出现部位</text>
+  <rect x="170" y="830" width="330" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="335" y="858.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">树突 · 胞体（局部）</text>
+  <rect x="500" y="830" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="650" y="858.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">轴突（长程）</text>
+  <rect x="60" y="876" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="904.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">信息编码</text>
+  <rect x="170" y="876" width="330" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="335" y="904.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">模拟量（幅度大小）</text>
+  <rect x="500" y="876" width="300" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="650" y="904.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">数字量（放电频率）</text>
+  <text x="1100" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">频率编码：刺激强度 → 放电频率</text>
+  <line x1="1030" y1="700" x2="1340" y2="700" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="1035" y1="687" x2="1035" y2="701" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1180" y1="687" x2="1180" y2="701" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1310" y1="687" x2="1310" y2="701" stroke="#1e293b" stroke-width="2.4"/>
+  <text x="860" y="704" font-size="12" fill="#475569" font-weight="600">弱 → 低频</text>
+  <line x1="1030" y1="770" x2="1340" y2="770" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="1035" y1="757" x2="1035" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1080" y1="757" x2="1080" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1125" y1="757" x2="1125" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1170" y1="757" x2="1170" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1215" y1="757" x2="1215" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1260" y1="757" x2="1260" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1305" y1="757" x2="1305" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1335" y1="757" x2="1335" y2="771" stroke="#1e293b" stroke-width="2.4"/>
+  <text x="860" y="774" font-size="12" fill="#475569" font-weight="600">中 → 中频</text>
+  <line x1="1030" y1="840" x2="1340" y2="840" stroke="#94a3b8" stroke-width="1.6"/>
+  <line x1="1035" y1="827" x2="1035" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1058" y1="827" x2="1058" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1081" y1="827" x2="1081" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1104" y1="827" x2="1104" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1127" y1="827" x2="1127" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1150" y1="827" x2="1150" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1173" y1="827" x2="1173" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1196" y1="827" x2="1196" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1219" y1="827" x2="1219" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1242" y1="827" x2="1242" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1265" y1="827" x2="1265" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1288" y1="827" x2="1288" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1311" y1="827" x2="1311" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="1334" y1="827" x2="1334" y2="841" stroke="#1e293b" stroke-width="2.4"/>
+  <text x="860" y="844" font-size="12" fill="#475569" font-weight="600">强 → 高频（上限数百 Hz）</text>
+  <text x="860" y="896" font-size="11.5" fill="#475569">强度被翻译为放电频率，辅以纤维募集（逐步征募更多纤维）</text>
+  <text x="860" y="912" font-size="11.5" fill="#475569">与时间编码——构成「局部模拟计算 + 长程数字传输」的分工。</text>
+</svg>
