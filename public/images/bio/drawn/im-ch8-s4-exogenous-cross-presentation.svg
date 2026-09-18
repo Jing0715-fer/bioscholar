@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">外源性抗原的加工提呈与交叉提呈：不变链-CLIP 系统与两条交叉轨道</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">外源性抗原经内体-溶酶体逐步酸化与组织蛋白酶降解后由 MHC II 提呈给 CD4⁺ T；不变链 CLIP 段占据 II 类凹槽防止错误装载，HLA-DM 在 MIIC 中催化肽交换与肽编辑、HLA-DO 负向调节 DM；交叉提呈（Bevan 1976）指外源性抗原经 MHC I 提呈给 CD8⁺ T，经依赖蛋白酶体与 TAP 的胞质溶胶途径和不依赖 TAP 的空泡途径实现，专职执行者为 cDC1，是抗病毒、抗肿瘤与交叉耐受的共同枢纽</text>
+  <rect x="30" y="132" width="1340" height="292" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、外源性途径总览：内吞 → 酸化降解 → MHC II 提呈给 CD4⁺ T 细胞</text>
+  <rect x="250" y="196" width="860" height="176" rx="16" fill="#f1f5f9" fill-opacity="0.7" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="270" y="222" font-size="11.5" fill="#64748b" font-weight="700">抗原提呈细胞（APC：树突状细胞 · 巨噬细胞 · B 细胞）</text>
+  <rect x="76" y="273" width="58" height="30" rx="15" fill="#d1fae5" stroke="#134e4a" stroke-width="2.2"/>
+  <text x="105" y="340" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">外源性抗原</text>
+  <text x="105" y="358" font-size="9.5" fill="#64748b" text-anchor="middle">细菌 · 蛋白 · 毒素</text>
+  <line x1="140" y1="288" x2="296" y2="288" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="218" y="274" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">内吞 / 吞噬</text>
+  <circle cx="370" cy="296" r="36" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <text x="370" y="292" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">早期</text>
+  <text x="370" y="308" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">内体</text>
+  <line x1="410" y1="296" x2="500" y2="296" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="455" y="282" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">酸化递进</text>
+  <circle cx="548" cy="296" r="46" fill="#fef3c7" fill-opacity="0.7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="548" y="292" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">晚期内体</text>
+  <text x="548" y="310" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">pH ↓</text>
+  <line x1="598" y1="296" x2="688" y2="296" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="643" y="282" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">组织蛋白酶</text>
+  <circle cx="736" cy="296" r="56" fill="#fce7f3" fill-opacity="0.6" stroke="#be185d" stroke-width="1.9"/>
+  <text x="736" y="290" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">溶酶体</text>
+  <text x="736" y="306" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">MIIC</text>
+  <text x="736" y="366" font-size="9.5" fill="#64748b" text-anchor="middle">降解为肽段并与 MHC II 装载</text>
+  <line x1="794" y1="296" x2="848" y2="296" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <rect x="852" y="264" width="190" height="64" rx="8" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="947" y="288" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">MHC II - 肽</text>
+  <text x="947" y="310" font-size="9.5" fill="#475569" text-anchor="middle">运至细胞表面</text>
+  <line x1="1046" y1="296" x2="1100" y2="296" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <ellipse cx="1230" cy="296" rx="100" ry="64" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="1230" cy="296" rx="93" ry="57" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="1230" y="296" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">CD4⁺ T</text>
+  <text x="1230" y="382" font-size="9.5" fill="#64748b" text-anchor="middle">识别并被活化</text>
+  <text x="60" y="398" font-size="11" fill="#1e293b" font-weight="600">要旨：内体-溶酶体逐步酸化激活组织蛋白酶，将抗原降解为肽段；MHC II 类分子专司装载外源肽，提呈给 CD4⁺ T 细胞。</text>
+  <rect x="30" y="440" width="1340" height="292" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="462.84" font-size="19" fill="#475569" font-weight="700">二、不变链与 CLIP：凹槽的占位保护与 HLA-DM 催化的肽交换</text>
+  <rect x="60" y="494" width="320" height="62" rx="8" fill="#6d28d9" fill-opacity="0.09" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="74" y="518" font-size="12" fill="#6d28d9" font-weight="700">① 内质网</text>
+  <text x="74" y="536" font-size="9.5" fill="#475569">MHC II α/β + 不变链三聚体组装</text>
+  <line x1="388" y1="525" x2="420" y2="525" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="430" y="494" width="340" height="62" rx="8" fill="#b45309" fill-opacity="0.09" stroke="#b45309" stroke-width="1.7"/>
+  <text x="444" y="518" font-size="12" fill="#b45309" font-weight="700">② 运输至 MIIC</text>
+  <text x="444" y="536" font-size="9.5" fill="#475569">不变链逐步降解，仅余 CLIP 占槽</text>
+  <line x1="778" y1="525" x2="800" y2="525" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="810" y="494" width="250" height="62" rx="8" fill="#0f766e" fill-opacity="0.09" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="824" y="518" font-size="12" fill="#0f766e" font-weight="700">③ 肽交换后出胞</text>
+  <text x="824" y="536" font-size="9.5" fill="#475569">稳定 MHC II-肽复合物上膜</text>
+  <line x1="1068" y1="525" x2="1080" y2="525" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="1090" y="494" width="250" height="62" rx="8" fill="#0369a1" fill-opacity="0.09" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="1104" y="518" font-size="12" fill="#0369a1" font-weight="700">④ 提呈</text>
+  <text x="1104" y="536" font-size="9.5" fill="#475569">CD4⁺ T 细胞识别 pMHC II</text>
+  <rect x="60" y="578" width="620" height="132" rx="9" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="78" y="602" font-size="12.5" fill="#4c1d95" font-weight="700">CLIP：凹槽的「占位锁」</text>
+  <text x="78" y="622" font-size="10.5" fill="#475569">不变链的 CLIP 段占据 II 类肽结合凹槽，防止内质网中错误装载自身肽或内源肽。</text>
+  <rect x="100" y="654" width="250" height="30" rx="5" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="225" y="673" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">MHC II 凹槽</text>
+  <rect x="150" y="660" width="150" height="18" rx="4" fill="#fef3c7" fill-opacity="0.8" stroke="#b45309" stroke-width="1.2"/>
+  <text x="225" y="673" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">CLIP</text>
+  <rect x="710" y="578" width="630" height="132" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <text x="728" y="602" font-size="12.5" fill="#78350f" font-weight="700">HLA-DM：换肽师与质检员</text>
+  <text x="728" y="622" font-size="10.5" fill="#475569">MIIC 中 HLA-DM 催化 CLIP 与外源肽交换，并进行肽编辑——亲和力不足的肽被再次换下。</text>
+  <rect x="740" y="654" width="130" height="30" rx="5" fill="#fef3c7" fill-opacity="0.8" stroke="#b45309" stroke-width="1.4"/>
+  <text x="805" y="673" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">CLIP 退出</text>
+  <line x1="876" y1="669" x2="940" y2="669" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="944" y="654" width="150" height="30" rx="5" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1019" y="673" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">外源肽装入</text>
+  <rect x="1120" y="640" width="190" height="26" rx="5" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="1215" y="657" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">HLA-DO ⊣ DM</text>
+  <text x="1215" y="688" font-size="9" fill="#64748b" text-anchor="middle">DO 负向调节 DM 活性</text>
+  <rect x="30" y="748" width="1340" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="770.84" font-size="19" fill="#475569" font-weight="700">三、交叉提呈：外源性抗原经 MHC I 提呈给 CD8⁺ T——「内外有别」的例外通道</text>
+  <rect x="60" y="798" width="560" height="152" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="78" y="824" font-size="10.5" fill="#475569">交叉提呈由 Bevan 于 1976 年以「交叉致敏」实验首先证实：外源性抗原经 MHC I 类分子提呈给 CD8⁺ T 细胞，</text>
+  <text x="78" y="840" font-size="10.5" fill="#475569">打破内源-I 类、外源-II 类的经典分工。</text>
+  <text x="78" y="886" font-size="11" fill="#075985" font-weight="700">专职执行者：cDC1 型树突状细胞。</text>
+  <rect x="111.07499999999999" y="919.5" width="117.85000000000002" height="17" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="170" y="931.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">抗病毒 CD8 应答启动</text>
+  <rect x="292.25" y="919.5" width="71.5" height="17" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="328" y="931.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">抗肿瘤免疫</text>
+  <rect x="455.4" y="919.5" width="61.2" height="17" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="486" y="931.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">交叉耐受</text>
+  <rect x="650" y="798" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="825.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">比较项目</text>
+  <rect x="840" y="798" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="825.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">胞质溶胶途径</text>
+  <rect x="1090" y="798" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="825.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">空泡途径</text>
+  <rect x="650" y="842" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="862.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">抗原处理部位</text>
+  <rect x="840" y="842" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="862.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">逸出至胞浆，蛋白酶体降解</text>
+  <rect x="1090" y="842" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="862.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">特殊内体腔室内组织蛋白酶降解</text>
+  <rect x="650" y="872" width="690" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="650" y="872" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="892.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">依赖蛋白酶体与 TAP</text>
+  <rect x="840" y="872" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="892.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">依赖</text>
+  <rect x="1090" y="872" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="892.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">不依赖</text>
+  <rect x="650" y="902" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="922.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">装载分子</text>
+  <rect x="840" y="902" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="922.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">内质网中新的 MHC I 类分子</text>
+  <rect x="1090" y="902" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="922.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">再循环的成熟 MHC I 类分子</text>
+  <rect x="650" y="932" width="690" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="650" y="932" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="952.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">代表底物情境</text>
+  <rect x="840" y="932" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="952.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">可溶性蛋白、凋亡细胞相关抗原</text>
+  <rect x="1090" y="932" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="952.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">部分颗粒性与膜相关抗原</text>
+</svg>

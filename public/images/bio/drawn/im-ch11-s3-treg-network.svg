@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">调节性 T 细胞与免疫调节网络：Foxp3、抑制手段与独特型网络</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Treg 分胸腺来源 tTreg（阴性选择中等亲和力分支分流，守护自身抗原耐受）与外周诱导 iTreg（TGF-β 等环境诱导，主黏膜与母胎耐受）；Foxp3 为命脉转录因子，Scurfy 小鼠与 IPEX 综合征证明其缺陷即多器官自身免疫；Treg 经 IL-10、TGF-β、IL-35，联合 CD25 掳夺 IL-2、CTLA-4 掣夺 B7 与 IDO 代谢剥夺执行抑制；Jerne 1974 年网络学说以 Ab1-Ab2-Ab3 与内影像刻画识别库镜像调节，1984 年与单抗技术同获诺贝尔奖；稳态环过长过短皆有代价</text>
+  <rect x="30" y="132" width="1340" height="334" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Treg 两支来源：胸腺 tTreg 守自身抗原，外周 iTreg 守环境抗原</text>
+  <rect x="70" y="182" width="1240" height="44" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="90" y="210" font-size="12" fill="#4c1d95" font-weight="700">Treg 常用表型：CD4⁺CD25⁺Foxp3⁺</text>
+  <text x="640" y="210" font-size="12" fill="#4c1d95" font-weight="700">人类外周血 CD4⁺ T 细胞中约占 5%–10%</text>
+  <rect x="60" y="240" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="267.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">比较项目</text>
+  <rect x="240" y="240" width="550" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="267.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">tTreg（nTreg）</text>
+  <rect x="790" y="240" width="550" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="267.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">iTreg（pTreg）</text>
+  <rect x="60" y="284" width="180" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="306.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">产生场所</text>
+  <rect x="240" y="284" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="306.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">胸腺</text>
+  <rect x="790" y="284" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="306.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">外周（黏膜为主）</text>
+  <rect x="60" y="318" width="1280" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="318" width="180" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="340.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">诱导信号</text>
+  <rect x="240" y="318" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="340.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中等亲和力 TCR、CD28 与 IL-2</text>
+  <rect x="790" y="318" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="340.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">TGF-β 加 IL-2 或维 A 酸、无炎症环境</text>
+  <rect x="60" y="352" width="180" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="374.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">特异性偏好</text>
+  <rect x="240" y="352" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="374.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">自身抗原</text>
+  <rect x="790" y="352" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="374.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">环境与共生抗原</text>
+  <rect x="60" y="386" width="1280" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="386" width="180" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="408.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">谱系稳定性</text>
+  <rect x="240" y="386" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="408.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Foxp3 表观遗传稳定（TSDR 去甲基化）</text>
+  <rect x="790" y="386" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="408.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">稳定性较低、可随环境波动</text>
+  <rect x="60" y="420" width="180" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="442.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">主要职能</text>
+  <rect x="240" y="420" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="442.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">防自身免疫</text>
+  <rect x="790" y="420" width="550" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1065" y="442.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">黏膜耐受、口服耐受与母胎界面耐受</text>
+  <rect x="30" y="478" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="500.84" font-size="19" fill="#475569" font-weight="700">二、Foxp3：命脉转录因子 · Treg 的四板斧抑制手段</text>
+  <rect x="60" y="528" width="560" height="180" rx="9" fill="#fee2e2" fill-opacity="0.3" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="78" y="552" font-size="12.5" fill="#dc2626" font-weight="700">两种「天然实验」证明 Foxp3 不可或缺</text>
+  <rect x="84" y="578" width="250" height="50" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="209" y="598" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">Scurfy 小鼠</text>
+  <text x="209" y="616" font-size="9" fill="#475569" text-anchor="middle">Foxp3 缺陷 → 多器官自身免疫</text>
+  <rect x="346" y="578" width="250" height="50" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="471" y="598" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">人类 IPEX 综合征</text>
+  <text x="471" y="616" font-size="9" fill="#475569" text-anchor="middle">Foxp3 突变 → X 连锁多器官自身免疫</text>
+  <text x="78" y="662" font-size="11" fill="#dc2626" font-weight="600">Foxp3 坍塌 = Treg 坍塌 = 免疫稳态坍塌。</text>
+  <rect x="650" y="528" width="690" height="180" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="668" y="552" font-size="12.5" fill="#134e4a" font-weight="700">四板斧：因子压制 · 营养掳夺 · 配体掣肘 · 代谢剥夺</text>
+  <rect x="668" y="576" width="320" height="62" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="682" y="598" font-size="11" fill="#134e4a" font-weight="700">① 抑制性因子</text>
+  <text x="682" y="616" font-size="9.5" fill="#475569">分泌 IL-10、TGF-β、IL-35 压抑效应 T</text>
+  <rect x="1010" y="576" width="320" height="62" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1024" y="598" font-size="11" fill="#134e4a" font-weight="700">② CD25 掳夺 IL-2</text>
+  <text x="1024" y="616" font-size="9.5" fill="#475569">高亲和受体吃光局部 IL-2，效应 T 饿馁</text>
+  <rect x="668" y="646" width="320" height="62" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="682" y="668" font-size="11" fill="#134e4a" font-weight="700">③ CTLA-4 掣夺 B7</text>
+  <text x="682" y="686" font-size="9.5" fill="#475569">抢走 APC 的 B7，拆掉第二信号</text>
+  <rect x="1010" y="646" width="320" height="62" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1024" y="668" font-size="11" fill="#134e4a" font-weight="700">④ IDO 代谢剥夺</text>
+  <text x="1024" y="686" font-size="9.5" fill="#475569">色氨酸耗竭环境令效应 T 停摆</text>
+  <rect x="30" y="740" width="1340" height="234" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="762.84" font-size="19" fill="#475569" font-weight="700">三、Jerne 独特型网络（1974）· 应答的稳态环</text>
+  <rect x="60" y="790" width="620" height="152" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="78" y="814" font-size="12.5" fill="#075985" font-weight="700">独特型-抗独特型网络：识别库内部的镜像之镜</text>
+  <text x="78" y="838" font-size="10.5" fill="#475569">针对抗原的抗体（Ab1）之独特位可诱生抗独特型抗体（Ab2），Ab2 又被 Ab3 识别——识别库内部镜像相生、自成网络，</text>
+  <text x="78" y="853" font-size="10.5" fill="#475569">对外应答必在网内激起「回声」（内影像概念）。</text>
+  <text x="78" y="906" font-size="10.5" fill="#075985" font-weight="600">Jerne 因网络学说与单克隆抗体技术同获 1984 年诺贝尔生理学或医学奖。</text>
+  <rect x="710" y="790" width="630" height="152" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="728" y="814" font-size="12.5" fill="#4c1d95" font-weight="700">稳态环：正向放大与负向收敛的合围</text>
+  <text x="728" y="838" font-size="10.5" fill="#475569">免疫应答由正向放大（效应执行）与负向收敛（调节抑制）构成稳态环：过短致清除不力，过长致自身免疫。</text>
+  <text x="728" y="886" font-size="10.5" fill="#4c1d95" font-weight="600">多环节冗余的代价：疾病多需多环节联合薄弱才会显形。</text>
+</svg>

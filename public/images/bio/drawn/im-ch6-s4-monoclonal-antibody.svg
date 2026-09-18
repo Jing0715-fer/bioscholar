@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单克隆抗体与抗体工程：从杂交瘤到全人源与新一代药物</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">1975 年 Köhler 与 Milstein 以 PEG 融合免疫脾细胞与 HGPRT 缺陷骨髓瘤细胞、经 HAT 筛选建立杂交瘤技术（1984 年诺奖），获得结构均一、单一特异性、可无限供应的单克隆抗体；治疗性抗体经鼠源（OKT3，1986）、嵌合（约 33% 鼠源）、人源化（CDR 移植，5% 以下）与全人源四代演进；噬菌体展示（2018 年诺贝尔化学奖）实现体外全人源淘选；双特异抗体、ADC 与 Fc 工程拓展了抗体药物的边界</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、杂交瘤技术（1975，Köhler 与 Milstein，1984 年诺贝尔奖）：永生的特异性</text>
+  <rect x="60" y="180" width="220" height="108" rx="9" fill="#0f766e" fill-opacity="0.09" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="170" y="204" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">免疫脾细胞</text>
+  <text x="170" y="228" font-size="10.5" fill="#475569" text-anchor="middle">绵羊红细胞免疫小鼠的 B 细胞</text>
+  <text x="170" y="252" font-size="10.5" fill="#475569" text-anchor="middle">有限寿命 · 特异分泌</text>
+  <line x1="282" y1="234" x2="324" y2="234" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="330" y="180" width="220" height="108" rx="9" fill="#dc2626" fill-opacity="0.09" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="440" y="204" font-size="13.5" fill="#dc2626" text-anchor="middle" font-weight="700">骨髓瘤细胞</text>
+  <text x="440" y="228" font-size="10.5" fill="#475569" text-anchor="middle">HGPRT 缺陷</text>
+  <text x="440" y="252" font-size="10.5" fill="#475569" text-anchor="middle">永生 · 不分泌抗体</text>
+  <line x1="552" y1="234" x2="594" y2="234" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="600" y="180" width="220" height="108" rx="9" fill="#6d28d9" fill-opacity="0.09" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="710" y="204" font-size="13.5" fill="#4c1d95" text-anchor="middle" font-weight="700">PEG 融合</text>
+  <text x="710" y="228" font-size="10.5" fill="#475569" text-anchor="middle">聚乙二醇介导</text>
+  <text x="710" y="252" font-size="10.5" fill="#475569" text-anchor="middle">产生杂交瘤细胞</text>
+  <line x1="822" y1="234" x2="864" y2="234" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="870" y="180" width="220" height="108" rx="9" fill="#be185d" fill-opacity="0.09" stroke="#be185d" stroke-width="1.7"/>
+  <text x="980" y="204" font-size="13.5" fill="#831843" text-anchor="middle" font-weight="700">HAT 筛选</text>
+  <text x="980" y="228" font-size="10.5" fill="#475569" text-anchor="middle">培养基筛选</text>
+  <text x="980" y="252" font-size="10.5" fill="#475569" text-anchor="middle">仅杂交瘤存活</text>
+  <line x1="1092" y1="234" x2="1134" y2="234" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="1140" y="180" width="220" height="108" rx="9" fill="#059669" fill-opacity="0.09" stroke="#059669" stroke-width="1.7"/>
+  <text x="1250" y="204" font-size="13.5" fill="#065f46" text-anchor="middle" font-weight="700">单克隆抗体</text>
+  <text x="1250" y="228" font-size="10.5" fill="#475569" text-anchor="middle">克隆化后扩大培养</text>
+  <text x="1250" y="252" font-size="10.5" fill="#475569" text-anchor="middle">结构均一 · 无限供应</text>
+  <rect x="60" y="306" width="620" height="40" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="370" y="331" font-size="11" fill="#475569" text-anchor="middle">HAT 筛选原理：HGPRT 缺陷的骨髓瘤细胞不能利用补救途径合成核苷酸而死亡</text>
+  <rect x="710" y="306" width="610" height="40" rx="7" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.3"/>
+  <text x="1015" y="331" font-size="11" fill="#78350f" text-anchor="middle" font-weight="600">首个上市治疗性单抗：1986 年鼠源抗 CD3 的 OKT3，用于防治移植排斥</text>
+  <rect x="30" y="448" width="1340" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="470.84" font-size="19" fill="#475569" font-weight="700">二、治疗性抗体四代演进：免疫原性逐代下降</text>
+  <rect x="60" y="494" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="521.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">演进阶段</text>
+  <rect x="210" y="494" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="521.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">技术路线</text>
+  <rect x="540" y="494" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="521.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">鼠源成分（约）</text>
+  <rect x="740" y="494" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="521.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">免疫原性</text>
+  <rect x="980" y="494" width="360" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1160" y="521.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">代表药物</text>
+  <rect x="60" y="538" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="563.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">鼠源</text>
+  <rect x="210" y="538" width="330" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="563.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">杂交瘤直接制备</text>
+  <rect x="540" y="538" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="563.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">100%</text>
+  <rect x="740" y="538" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="563.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">高（HAMA 常见）</text>
+  <rect x="980" y="538" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1160" y="563.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">OKT3（1986）</text>
+  <rect x="60" y="578" width="1280" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="578" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="603.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">嵌合</text>
+  <rect x="210" y="578" width="330" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="603.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">鼠 V 区拼接人 C 区</text>
+  <rect x="540" y="578" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="603.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 33%</text>
+  <rect x="740" y="578" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="603.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">中</text>
+  <rect x="980" y="578" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1160" y="603.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">利妥昔单抗</text>
+  <rect x="60" y="618" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="643.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">人源化</text>
+  <rect x="210" y="618" width="330" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="643.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">CDR 移植入人抗体框架</text>
+  <rect x="540" y="618" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="643.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 5% 以下</text>
+  <rect x="740" y="618" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="643.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">低</text>
+  <rect x="980" y="618" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1160" y="643.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">曲妥珠单抗</text>
+  <rect x="60" y="658" width="1280" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="658" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="683.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">全人源</text>
+  <rect x="210" y="658" width="330" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="683.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">噬菌体展示等体外淘选</text>
+  <rect x="540" y="658" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="683.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 0</text>
+  <rect x="740" y="658" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="860" y="683.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">极低</text>
+  <rect x="980" y="658" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1160" y="683.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <text x="60" y="676" font-size="10.5" fill="#64748b">HAMA：人抗鼠抗体——鼠源成分诱发的人源抗抗体反应，是免疫原性问题所在。</text>
+  <rect x="30" y="724" width="1340" height="254" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="746.84" font-size="19" fill="#475569" font-weight="700">三、噬菌体展示与新一代抗体药物：双特异 · ADC · Fc 工程</text>
+  <rect x="60" y="764" width="400" height="182" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="80" y="790" font-size="13" fill="#075985" font-weight="700">噬菌体展示（2018 诺贝尔化学奖）</text>
+  <text x="80" y="814" font-size="11" fill="#475569">将抗体片段展示于噬菌体表面，构成体外全人源抗体库，</text>
+  <text x="80" y="830" font-size="11" fill="#475569">经「淘选—亲和力成熟」获得高亲和力全人源抗体。</text>
+  <text x="80" y="846" font-size="11" fill="#475569">Smith 与 Winter 获 2018 年诺贝尔化学奖。</text>
+  <text x="260" y="926" font-size="11" fill="#075985" text-anchor="middle" font-weight="600">绕过免疫动物，体外进化抗体</text>
+  <rect x="490" y="764" width="400" height="182" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="510" y="790" font-size="13" fill="#134e4a" font-weight="700">双特异性抗体</text>
+  <line x1="620" y1="890" x2="620" y2="866" stroke="#64748b" stroke-width="4"/>
+  <line x1="620" y1="866" x2="606" y2="846" stroke="#0f766e" stroke-width="4"/>
+  <line x1="620" y1="866" x2="634" y2="846" stroke="#6d28d9" stroke-width="4"/>
+  <text x="660" y="862" font-size="10.5" fill="#475569">一端桥接免疫细胞（如 T 细胞），另一端桥</text>
+  <text x="660" y="880" font-size="10.5" fill="#475569">接靶细胞——把效应细胞「牵」到肿瘤旁。</text>
+  <text x="690" y="926" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="600">两个不同抗原结合臂</text>
+  <rect x="920" y="764" width="420" height="182" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="940" y="790" font-size="13" fill="#78350f" font-weight="700">ADC 与 Fc 工程</text>
+  <text x="940" y="814" font-size="11" fill="#475569">ADC（抗体偶联药物）：以抗体递送细胞毒载荷，须平衡靶点、连接子与 DAR</text>
+  <text x="940" y="830" font-size="11" fill="#475569">（药物抗体比）。</text>
+  <text x="940" y="862" font-size="11" fill="#475569">Fc 工程化：去岩藻糖增强 ADCC；</text>
+  <text x="940" y="878" font-size="11" fill="#475569">调节 FcRn 相互作用以延长半衰期——现代抗体药物成药性的关键。</text>
+</svg>

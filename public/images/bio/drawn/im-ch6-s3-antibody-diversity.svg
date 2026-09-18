@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">抗体多样性生成机制：V(D)J 重排、组合与连接多样性</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">重链 V 约 65、D 约 27、J 约 6 个片段，轻链仅 V 与 J（κ：V40·J5 约 200 种；λ：V30·J4 约 120 种，合计约 320 种）；RAG 识别 RSS 并遵循 12/23 规则；组合多样性约贡献 300 万量级，N/P 核苷酸与末端修剪的连接多样性使理论库容达 10⁹–10¹¹；等位排斥与同型排斥保证一克隆一受体，中枢经受体编辑、克隆删除与诱导无能清除自身反应性 B 细胞</text>
+  <rect x="30" y="132" width="1340" height="310" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、V(D)J 体细胞基因重排：抗体多样性不来自种系基因的直接转录</text>
+  <text x="90" y="186" font-size="12" fill="#134e4a" font-weight="700">重链基因座 IGH（14 号染色体长臂，自 5′ 端起）</text>
+  <line x1="90" y1="240" x2="690" y2="240" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="91" y="225" width="262" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="222" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">V 基因 ×65</text>
+  <rect x="355" y="225" width="106" height="30" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="408" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">D ×27</text>
+  <rect x="463" y="225" width="88" height="30" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="507" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">J ×6</text>
+  <rect x="553" y="225" width="136" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="621" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">C 基因（μ δ γ …）</text>
+  <line x1="150" y1="258" x2="250" y2="286" stroke="#0f766e" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-dna)"/>
+  <line x1="408" y1="258" x2="340" y2="286" stroke="#b45309" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-rna)"/>
+  <line x1="507" y1="258" x2="430" y2="286" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <rect x="200" y="290" width="280" height="34" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="340" y="312" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">V — D — J 重排单元（各取其一）</text>
+  <line x1="490" y1="307" x2="540" y2="307" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="544" y="290" width="200" height="34" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="644" y="312" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">+ C → 有功能的重链</text>
+  <text x="90" y="356" font-size="11" fill="#475569">RAG 重组酶识别 RSS（重组信号序列）并遵循 12/23 规则：带 12 bp 间隔的 RSS 只能与带 23 bp 间隔者配对重组，</text>
+  <text x="90" y="373" font-size="11" fill="#475569">从规则上排除 V–V、J–J 的错误连接。</text>
+  <text x="90" y="408" font-size="11" fill="#64748b">轻链基因座没有 D 片段，只进行 V–J 连接。</text>
+  <text x="760" y="186" font-size="12" fill="#134e4a" font-weight="700">κ 轻链（2 号染色体）</text>
+  <line x1="760" y1="240" x2="1140" y2="240" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="761" y="225" width="210.8" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="866.4" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">V ×40</text>
+  <rect x="973.8" y="225" width="81.6" height="30" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1014.5999999999999" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">J ×5</text>
+  <rect x="1057.3999999999999" y="225" width="81.6" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1098.1999999999998" y="273" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">C</text>
+  <text x="760" y="296" font-size="12" fill="#134e4a" font-weight="700">λ 轻链（22 号染色体，J–C 串联排列）</text>
+  <line x1="760" y1="350" x2="1140" y2="350" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="761" y="335" width="210.8" height="30" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="866.4" y="383" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">V ×30</text>
+  <rect x="973.8" y="335" width="81.6" height="30" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1014.5999999999999" y="383" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">J ×4</text>
+  <rect x="1057.3999999999999" y="335" width="81.6" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1098.1999999999998" y="383" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">C</text>
+  <text x="760" y="402" font-size="11" fill="#475569">重链 V(D)J 与轻链 VJ 的随机组合，构成组合多样性的主体。</text>
+  <rect x="30" y="458" width="1340" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="480.84" font-size="19" fill="#475569" font-weight="700">二、组合多样性 × 连接多样性：从 300 万到 10⁹–10¹¹</text>
+  <rect x="60" y="506" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="533.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">基因座</text>
+  <rect x="180" y="506" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="533.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">染色体定位</text>
+  <rect x="320" y="506" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="533.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">片段与数目（约）</text>
+  <rect x="540" y="506" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="533.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">组合贡献（约）</text>
+  <rect x="60" y="550" width="120" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="573.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">重链 IGH</text>
+  <rect x="180" y="550" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="573.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">14 号染色体长臂</text>
+  <rect x="320" y="550" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="573.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V 65 · D 27 · J 6</text>
+  <rect x="540" y="550" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="573.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V×D×J 随机取一</text>
+  <rect x="60" y="586" width="680" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="586" width="120" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="609.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">κ 轻链</text>
+  <rect x="180" y="586" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="609.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">2 号染色体</text>
+  <rect x="320" y="586" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="609.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V 40 · J 5</text>
+  <rect x="540" y="586" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="609.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V×J 约 200 种</text>
+  <rect x="60" y="622" width="120" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">λ 轻链</text>
+  <rect x="180" y="622" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="645.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">22 号染色体</text>
+  <rect x="320" y="622" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="645.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V 30 · J 4</text>
+  <rect x="540" y="622" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="645.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">V×J 约 120 种</text>
+  <rect x="60" y="658" width="680" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="658" width="120" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="681.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">轻链合计</text>
+  <rect x="180" y="658" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="681.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="320" y="658" width="220" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="430" y="681.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="540" y="658" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="640" y="681.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">约 320 种</text>
+  <rect x="780" y="500" width="560" height="190" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="800" y="526" font-size="13" fill="#1e293b" font-weight="700">两层多样性叠加</text>
+  <text x="800" y="550" font-size="11.5" fill="#475569">组合多样性：重链与轻链的片段组合约贡献 300 万量级；</text>
+  <text x="800" y="584" font-size="11.5" fill="#475569">连接多样性：连接点上添加 N 核苷酸（TDT）与 P 核苷酸、末端修剪；</text>
+  <text x="800" y="618" font-size="12.5" fill="#831843" font-weight="700">二者相乘，使理论库容达 10⁹–10¹¹。</text>
+  <text x="800" y="652" font-size="10.5" fill="#64748b">极少数基因片段，编码近乎无限的识别库——这正是 1987 年诺贝尔奖表彰利根川进的工作。</text>
+  <rect x="30" y="714" width="1340" height="264" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="736.84" font-size="19" fill="#475569" font-weight="700">三、等位排斥与同型排斥：一个克隆一种受体；中枢的筛选与校正</text>
+  <rect x="60" y="758" width="620" height="196" rx="9" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="80" y="784" font-size="13.5" fill="#134e4a" font-weight="700">等位排斥 · 同型排斥</text>
+  <ellipse cx="200" cy="870" rx="90" ry="58" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <path d="M 200 866 L 200 842 M 200 842 L 188 824 M 200 842 L 212 824" fill="none" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="188" cy="820" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="212" cy="820" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="320" y="830" font-size="11" fill="#475569">每条等位基因重排成功即抑制另一条（等位排斥）；κ 成功即抑制 λ</text>
+  <text x="320" y="846" font-size="11" fill="#475569">（同型排斥）。</text>
+  <text x="320" y="878" font-size="11" fill="#134e4a" font-weight="600">结果：每个 B 细胞只表达一种特异性受体——克隆选择的分子前提。</text>
+  <text x="200" y="948" font-size="10" fill="#64748b" text-anchor="middle">仅表达单一 BCR 的 B 细胞</text>
+  <rect x="710" y="758" width="610" height="196" rx="9" fill="#ede9fe" fill-opacity="0.3" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="730" y="784" font-size="13.5" fill="#4c1d95" font-weight="700">中枢的筛选与校正（未成熟 B 细胞）</text>
+  <circle cx="770" cy="812" r="3.5" fill="#6d28d9"/>
+  <text x="782" y="816" font-size="12" fill="#1e293b" font-weight="700">受体编辑</text>
+  <text x="878" y="816" font-size="11" fill="#475569">再度重排改写自身反应性受体</text>
+  <circle cx="770" cy="850" r="3.5" fill="#6d28d9"/>
+  <text x="782" y="854" font-size="12" fill="#1e293b" font-weight="700">克隆删除</text>
+  <text x="878" y="854" font-size="11" fill="#475569">删除自身反应性克隆</text>
+  <circle cx="770" cy="888" r="3.5" fill="#6d28d9"/>
+  <text x="782" y="892" font-size="12" fill="#1e293b" font-weight="700">诱导无能</text>
+  <text x="878" y="892" font-size="11" fill="#475569">留存但不应答（无能状态）</text>
+  <text x="730" y="930" font-size="10.5" fill="#64748b">三机制共同清除自身反应性未成熟 B 细胞，交出多样性丰富且自身耐受的库。</text>
+</svg>

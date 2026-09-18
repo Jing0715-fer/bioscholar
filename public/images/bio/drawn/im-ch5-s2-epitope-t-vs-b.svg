@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">表位：T 细胞表位与 B 细胞表位的对照与线性 / 构象之分</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">表位是抗原分子上被 TCR、BCR 或抗体特异性识别的最小结构单位，约 5–15 个氨基酸残基（或多糖残基、化学基团）；线性表位由连续残基组成、构象表位由折叠后相聚的不连续残基拼合（变性可破坏）；T 表位为经 MHC 提呈的线性肽（约 8–17 aa，I 类槽 8–10 aa、II 类槽 13–17 aa），B 表位为天然表面结构（约 5–15 aa 或 5–7 个糖残基）</text>
+  <rect x="30" y="132" width="1340" height="282" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、线性表位与构象表位：抗原特异性的物质基础</text>
+  <rect x="60" y="176" width="620" height="196" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="80" y="202" font-size="13.5" fill="#134e4a" font-weight="700">线性表位（连续残基）</text>
+  <path d="M90,260 C100.0,253.3 128.3,218.3 150,220 C171.7,221.7 196.7,269.2 220,270 C243.3,270.8 266.7,225.3 290,225 C313.3,224.7 336.7,268.5 360,268 C383.3,267.5 406.7,222.3 430,222 C453.3,221.7 476.7,264.7 500,266 C523.3,267.3 546.7,230.7 570,230 C593.3,229.3 628.3,256.7 640,262" fill="none" stroke="#0f766e" stroke-width="3.4"/>
+  <path d="M255,244 C260.8,240.8 278.3,222.7 290,225 C301.7,227.3 319.2,252.5 325,258" fill="none" opacity="0.75" stroke="#be185d" stroke-width="7"/>
+  <circle cx="255" cy="250" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="290" cy="225" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <circle cx="325" cy="250" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="300" y="300" font-size="11" fill="#475569" text-anchor="middle">由序列上连续的氨基酸残基组成</text>
+  <text x="300" y="322" font-size="10.5" fill="#64748b" text-anchor="middle">变性 / 复性后仍可保留</text>
+  <text x="300" y="352" font-size="10" fill="#64748b" text-anchor="middle">一段序列上连续的残基（玫红高亮段）</text>
+  <rect x="720" y="176" width="620" height="196" rx="9" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="740" y="202" font-size="13.5" fill="#4c1d95" font-weight="700">构象表位（不连续残基拼合）</text>
+  <ellipse cx="1030" cy="262" rx="130" ry="58" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="2.4"/>
+  <circle cx="950" cy="240" r="7.5" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <circle cx="1090" cy="232" r="7.5" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <circle cx="1030" cy="308" r="7.5" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <line x1="950" y1="240" x2="1090" y2="232" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3" opacity="0.7"/>
+  <line x1="1090" y1="232" x2="1030" y2="308" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3" opacity="0.7"/>
+  <text x="1030" y="268" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">折叠抗原</text>
+  <text x="1030" y="344" font-size="11" fill="#475569" text-anchor="middle">折叠后空间上相聚的不连续残基拼合</text>
+  <text x="1030" y="366" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">变性破坏折叠 → 构象表位随之消失</text>
+  <rect x="30" y="428" width="1340" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="450.84" font-size="19" fill="#475569" font-weight="700">二、T 细胞表位与 B 细胞表位：提呈方式与大小口径的对照</text>
+  <rect x="60" y="476" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="503.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">比较项目</text>
+  <rect x="190" y="476" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="503.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">T 细胞表位</text>
+  <rect x="510" y="476" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="503.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">B 细胞表位</text>
+  <rect x="60" y="520" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="547.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">构成</text>
+  <rect x="190" y="520" width="320" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="547.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">经 MHC 提呈的线性肽</text>
+  <rect x="510" y="520" width="330" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="547.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">天然表面结构（线性或构象）</text>
+  <rect x="60" y="564" width="780" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="564" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="591.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">大小口径</text>
+  <rect x="190" y="564" width="320" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="591.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 8–17 个氨基酸残基</text>
+  <rect x="510" y="564" width="330" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="591.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 5–15 个氨基酸残基或 5–7 个糖残基</text>
+  <rect x="60" y="608" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="635.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">识别受体</text>
+  <rect x="190" y="608" width="320" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="635.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">TCR（须经 MHC 提呈）</text>
+  <rect x="510" y="608" width="330" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="635.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">BCR / 抗体（直接识别）</text>
+  <rect x="60" y="652" width="780" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="652" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="679.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">MHC 肽槽</text>
+  <rect x="190" y="652" width="320" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="679.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">I 类槽容纳 8–10 aa（9 肽最典型）；II 类 13–17 aa</text>
+  <rect x="510" y="652" width="330" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="679.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="880" y="476" width="440" height="176" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="898" y="502" font-size="12.5" fill="#1e293b" font-weight="700">为何 T 表位是短肽？</text>
+  <text x="898" y="524" font-size="11" fill="#475569">MHC I 类肽结合槽两端封闭，容纳 8–10 aa；II 类槽两端开放、</text>
+  <text x="898" y="540" font-size="11" fill="#475569">肽段可垂出槽外，容纳 13–17 aa。</text>
+  <text x="898" y="580" font-size="11" fill="#475569">B 细胞表位大小约 5–15 aa，恰与抗体可变区构成的结合界面互补。</text>
+  <text x="898" y="624" font-size="10.5" fill="#64748b">表位是抗原分子上被 TCR、BCR 或抗体特异性识别的最小结构单位。</text>
+  <rect x="30" y="704" width="1340" height="274" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="726.84" font-size="19" fill="#475569" font-weight="700">三、功能性表位与隐蔽表位：从变性暴露到疫苗设计</text>
+  <rect x="60" y="748" width="620" height="194" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="80" y="774" font-size="13" fill="#92400e" font-weight="700">功能性表位 vs 隐蔽表位</text>
+  <text x="80" y="798" font-size="11.5" fill="#475569">天然抗原表面可供识别者为功能性表位；藏于内部、正常不可及者为隐蔽表位。</text>
+  <text x="80" y="838" font-size="11.5" fill="#92400e" font-weight="600">· 变性抗原暴露出新的（隐蔽）表位</text>
+  <text x="80" y="862" font-size="11.5" fill="#92400e" font-weight="600">· 隐蔽自身抗原释放可诱发自身免疫病</text>
+  <text x="80" y="902" font-size="10.5" fill="#64748b">同一抗原分子上多个表位共存——即抗原结合价的基础。</text>
+  <rect x="710" y="748" width="610" height="194" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="730" y="774" font-size="13" fill="#075985" font-weight="700">表位技术的应用</text>
+  <circle cx="750" cy="802" r="3.5" fill="#0369a1"/>
+  <text x="762" y="806" font-size="12" fill="#1e293b" font-weight="700">表位作图</text>
+  <text x="858" y="806" font-size="11" fill="#475569">逐段扫描鉴定关键残基</text>
+  <circle cx="750" cy="840" r="3.5" fill="#0369a1"/>
+  <text x="762" y="844" font-size="12" fill="#1e293b" font-weight="700">模拟表位</text>
+  <text x="858" y="844" font-size="11" fill="#475569">以模拟肽替代天然表位</text>
+  <circle cx="750" cy="878" r="3.5" fill="#0369a1"/>
+  <text x="762" y="882" font-size="12" fill="#1e293b" font-weight="700">应用出口</text>
+  <text x="858" y="882" font-size="11" fill="#475569">诊断试剂开发与疫苗设计</text>
+  <text x="730" y="922" font-size="10.5" fill="#64748b">二者是诊断试剂开发与疫苗设计的核心工具。</text>
+</svg>

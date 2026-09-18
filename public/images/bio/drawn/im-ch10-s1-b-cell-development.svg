@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">B 细胞的发育与中枢耐受：pre-BCR 检查点与三种裁决</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">B 细胞在骨髓经 pro-B、pre-B、未成熟 B 至成熟 B 推进，Ig 基因重排先重链（D-J 先于 V-DJ）后轻链（κ 先于 λ）；pre-BCR 由 μ 重链与 λ5/VpreB 替代轻链组装并自发发出检查点信号（验证重链、驱动克隆扩增、锁定等位排斥、转启轻链重排），BTK 突变致 XLA；未成熟 B 遇多价膜型自身抗原被克隆删除、遇低浓度可溶性抗原致克隆失能，受体编辑为 B 独有的「返厂整改」；成熟 B 共表达 mIgM 与 mIgD 输出外周定居滤泡与边缘区</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、骨髓阶梯：pro-B → pre-B → 未成熟 B → 成熟 B</text>
+  <rect x="60" y="184" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="211.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">发育阶段</text>
+  <rect x="200" y="184" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="211.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">主要标志</text>
+  <rect x="500" y="184" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="660" y="211.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Ig 基因状态</text>
+  <rect x="820" y="184" width="520" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="211.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">关键事件</text>
+  <rect x="60" y="228" width="140" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="253.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">pro-B</text>
+  <rect x="200" y="228" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="253.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">CD19⁺、CD43⁺、c-Kit⁺</text>
+  <rect x="500" y="228" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="660" y="253.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">重链 D-J 与 V-DJ 重排</text>
+  <rect x="820" y="228" width="520" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="253.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">依赖基质细胞 IL-7 增殖</text>
+  <rect x="60" y="268" width="1280" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="268" width="140" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="293.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">大 pre-B</text>
+  <rect x="200" y="268" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="293.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">胞浆 μ 链、pre-BCR</text>
+  <rect x="500" y="268" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="660" y="293.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">重链完成、轻链未启动</text>
+  <rect x="820" y="268" width="520" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="293.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">pre-BCR 检查点与克隆扩增</text>
+  <rect x="60" y="308" width="140" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="333.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">未成熟 B</text>
+  <rect x="200" y="308" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="333.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">mIgM⁺</text>
+  <rect x="500" y="308" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="660" y="333.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">轻链重排完成</text>
+  <rect x="820" y="308" width="520" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="333.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中枢耐受：删除、编辑、失能</text>
+  <rect x="60" y="348" width="1280" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="348" width="140" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="373.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">成熟 B</text>
+  <rect x="200" y="348" width="300" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="373.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">mIgM⁺ 与 mIgD⁺</text>
+  <rect x="500" y="348" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="660" y="373.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">重排全部停止</text>
+  <rect x="820" y="348" width="520" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="373.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">输出外周、定居滤泡与边缘区</text>
+  <text x="60" y="400" font-size="11" fill="#1e293b" font-weight="600">重排时序：先重链（D-J 先于 V-DJ）、后轻链（κ 先于 λ）；轻链等位排斥保证每个 B 细胞单一特异性。</text>
+  <rect x="30" y="446" width="1340" height="288" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="468.84" font-size="19" fill="#475569" font-weight="700">二、pre-BCR 检查点：无需抗原的自发信号，四项职能一次完成</text>
+  <rect x="60" y="496" width="560" height="218" rx="9" fill="#fef3c7" fill-opacity="0.35" stroke="#b45309" stroke-width="1.6"/>
+  <text x="80" y="520" font-size="12.5" fill="#78350f" font-weight="700">pre-BCR 的构造</text>
+  <g><circle cx="110" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="110" y1="680" x2="110" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="110" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="134" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="134" y1="680" x2="134" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="134" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="158" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="158" y1="680" x2="158" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="158" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="182" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="182" y1="680" x2="182" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="182" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="206" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="206" y1="680" x2="206" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="206" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="230" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="230" y1="680" x2="230" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="230" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="254" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="254" y1="680" x2="254" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="254" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="278" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="278" y1="680" x2="278" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="278" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="302" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="302" y1="680" x2="302" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="302" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="326" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="326" y1="680" x2="326" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="326" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="350" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="350" y1="680" x2="350" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="350" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="374" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="374" y1="680" x2="374" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="374" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="398" cy="676" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="398" y1="680" x2="398" y2="685" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="398" cy="689" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="150" y="590" width="120" height="52" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <text x="210" y="612" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">μ 重链</text>
+  <text x="210" y="630" font-size="9" fill="#64748b" text-anchor="middle">（已重排成功）</text>
+  <rect x="290" y="590" width="130" height="52" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="355" y="612" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">λ5 / VpreB</text>
+  <text x="355" y="630" font-size="9" fill="#64748b" text-anchor="middle">（替代轻链）</text>
+  <line x1="210" y1="642" x2="210" y2="672" stroke="#b45309" stroke-width="2"/>
+  <line x1="355" y1="642" x2="355" y2="672" stroke="#be185d" stroke-width="2"/>
+  <text x="80" y="560" font-size="10.5" fill="#475569">pre-BCR 组装成功即自发发出检查点信号——验证「重链可用」的出厂质检。</text>
+  <rect x="650" y="496" width="300" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="666" y="520" font-size="11.5" fill="#075985" font-weight="700">① 验证重链可用性</text>
+  <text x="666" y="540" font-size="9.5" fill="#475569">重链能否与替代轻链组装出受体</text>
+  <rect x="970" y="496" width="300" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="986" y="520" font-size="11.5" fill="#075985" font-weight="700">② 驱动克隆扩增</text>
+  <text x="986" y="540" font-size="9.5" fill="#475569">大 pre-B 短暂增殖扩充库容</text>
+  <rect x="650" y="570" width="300" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="666" y="594" font-size="11.5" fill="#075985" font-weight="700">③ 锁定重链等位排斥</text>
+  <text x="666" y="614" font-size="9.5" fill="#475569">一条重链成功即关停另一条</text>
+  <rect x="970" y="570" width="300" height="66" rx="8" fill="#e0f2fe" fill-opacity="0.45" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="986" y="594" font-size="11.5" fill="#075985" font-weight="700">④ 转启轻链重排</text>
+  <text x="986" y="614" font-size="9.5" fill="#475569">检查点通过后启动 κ / λ 重排</text>
+  <rect x="650" y="648" width="620" height="66" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="668" y="672" font-size="12" fill="#dc2626" font-weight="700">BTK 突变 → X 连锁无丙种球蛋白血症（XLA）</text>
+  <text x="668" y="692" font-size="10.5" fill="#475569">pre-BCR 信号传不下去：B 细胞发育受阻、成熟 B 几近缺如，抗体严重缺乏。</text>
+  <rect x="30" y="748" width="1340" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="770.84" font-size="19" fill="#475569" font-weight="700">三、未成熟 B 的中枢耐受裁决：删除 · 失能 · 受体编辑</text>
+  <rect x="60" y="798" width="620" height="46" rx="8" fill="#dc2626" fill-opacity="0.08" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="78" y="818" font-size="11" fill="#1e293b" font-weight="700">多价膜型自身抗原</text>
+  <text x="78" y="834" font-size="9" fill="#475569">强交联信号 → 凋亡出局</text>
+  <rect x="528.37" y="812.075" width="63.26" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="560" y="824.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">克隆删除</text>
+  <rect x="60" y="852" width="620" height="46" rx="8" fill="#d97706" fill-opacity="0.08" stroke="#d97706" stroke-width="1.5"/>
+  <text x="78" y="872" font-size="11" fill="#1e293b" font-weight="700">低浓度可溶性自身抗原</text>
+  <text x="78" y="888" font-size="9" fill="#475569">弱信号长期拖垮应答能力</text>
+  <rect x="528.37" y="866.075" width="63.26" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="560" y="878.78" font-size="10.5" fill="#d97706" text-anchor="middle" font-weight="700">克隆失能</text>
+  <rect x="60" y="906" width="620" height="46" rx="8" fill="#0f766e" fill-opacity="0.08" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="78" y="926" font-size="11" fill="#1e293b" font-weight="700">受体编辑（B 系独有）</text>
+  <text x="78" y="942" font-size="9" fill="#475569">更换轻链重排出新特异性，减少删除的库容损耗</text>
+  <rect x="528.37" y="920.075" width="63.26" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="560" y="932.78" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">返厂整改</text>
+  <rect x="710" y="798" width="630" height="154" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.6"/>
+  <text x="728" y="822" font-size="12.5" fill="#065f46" font-weight="700">通过裁决：成熟 B 细胞</text>
+  <text x="728" y="846" font-size="10.5" fill="#475569">共表达 mIgM 与 mIgD（同一 V 区、不同恒定区），输出外周后定居于淋巴滤泡与边缘区，成为巡游的抗体预备队。</text>
+  <text x="728" y="906" font-size="10.5" fill="#065f46" font-weight="600">考过自身抗原这一关，才有资格拿到外周的「通行证」。</text>
+</svg>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">神经-内分泌-免疫网络：HPA 轴、胆碱能抗炎通路与细胞因子入脑</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">神经、内分泌与免疫三大系统互表达受体、互为信号源，HPA 轴、交感神经与迷走神经为三条解剖干线；糖皮质激素经胞内受体抑制促炎基因、诱导淋巴细胞凋亡并压制 Th1，炎症细胞因子上传激活 HPA 轴构成炎症自限的内分泌负反馈；胆碱能抗炎通路（2000 年前后确立）经迷走神经-乙酰胆碱-α7 烟碱型受体抑制巨噬细胞促炎因子合成，脾神经-乙酰胆碱能 T 细胞接力完成脾内末段；IL-1、TNF、IL-6 经 PGE2 上移体温调定点致发热并驱动病态行为，非甾体抗炎药抑制环氧化酶退热；自身免疫病是遗传易感、分子模拟与表位扩展、屏障失守及调节失效多环节失守的复合终局（同卵双胞胎一致率常仅 20%–40%）</text>
+  <rect x="30" y="132" width="1340" height="274" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、总蓝图：神经 · 内分泌 · 免疫三大系统互表达受体、互为信号源</text>
+  <rect x="150" y="196" width="260" height="56" rx="9" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="280" y="220" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">神经系统</text>
+  <text x="280" y="240" font-size="9.5" fill="#475569" text-anchor="middle">交感 / 迷走神经递质</text>
+  <rect x="990" y="196" width="260" height="56" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1120" y="220" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">内分泌系统</text>
+  <text x="1120" y="240" font-size="9.5" fill="#475569" text-anchor="middle">皮质醇等激素</text>
+  <rect x="565" y="326" width="260" height="56" rx="9" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="695" y="350" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">免疫系统</text>
+  <text x="695" y="370" font-size="9.5" fill="#475569" text-anchor="middle">细胞因子 · 趋化因子</text>
+  <line x1="416" y1="224" x2="984" y2="224" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <line x1="300" y1="256" x2="520" y2="336" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <line x1="870" y1="336" x2="1090" y2="256" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <rect x="540" y="236" width="320" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="700" y="260" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">互表达受体 · 互为信号源</text>
+  <text x="60" y="284" font-size="10.5" fill="#475569">炎症细胞因子上传激活 HPA 轴，构成炎症自限的内分泌负反馈；三条解剖干线：</text>
+  <text x="60" y="299" font-size="10.5" fill="#475569">HPA 轴 · 交感神经 · 迷走神经。</text>
+  <text x="880" y="284" font-size="10.5" fill="#475569">糖皮质激素经胞内受体抑制促炎基因、诱导淋巴细胞凋亡并压制 Th1——应激的免疫账单。</text>
+  <rect x="30" y="418" width="1340" height="306" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="440.84" font-size="19" fill="#475569" font-weight="700">二、三条解剖干线的分子账本与免疫效应方向</text>
+  <rect x="60" y="468" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="495.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">通路</text>
+  <rect x="300" y="468" width="270" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="495.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">关键分子</text>
+  <rect x="570" y="468" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="495.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">免疫效应方向</text>
+  <rect x="870" y="468" width="470" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="495.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">代表性证据或应用</text>
+  <rect x="60" y="512" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="538.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">HPA 轴-糖皮质激素</text>
+  <rect x="300" y="512" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="538.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">皮质醇、糖皮质激素受体</text>
+  <rect x="570" y="512" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="538.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">广泛抑制、Th1 压制</text>
+  <rect x="870" y="512" width="470" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="538.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">泼尼松治疗排斥与自身炎</text>
+  <rect x="60" y="554" width="1280" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="554" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="580.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">交感-儿茶酚胺</text>
+  <rect x="300" y="554" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="580.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">去甲肾上腺素、β2 受体</text>
+  <rect x="570" y="554" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="580.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">抑制促炎因子、Th2 偏置</text>
+  <rect x="870" y="554" width="470" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="580.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">淋巴器官交感纤维支配</text>
+  <rect x="60" y="596" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="622.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">胆碱能抗炎通路</text>
+  <rect x="300" y="596" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="622.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">乙酰胆碱、α7 烟碱受体</text>
+  <rect x="570" y="596" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="622.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">抑制 TNF 等促炎因子</text>
+  <rect x="870" y="596" width="470" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="622.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">迷走神经刺激改善炎症模型</text>
+  <rect x="60" y="638" width="1280" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="638" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="180" y="664.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">细胞因子入脑</text>
+  <rect x="300" y="638" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="664.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">IL-1、TNF、IL-6、PGE2</text>
+  <rect x="570" y="638" width="300" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="720" y="664.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">发热、病态行为、HPA 激活</text>
+  <rect x="870" y="638" width="470" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="664.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">非甾体抗炎药退热原理</text>
+  <text x="60" y="694" font-size="10.5" fill="#1e293b" font-weight="600">胆碱能抗炎通路（2000 年前后确立的炎症反射弧）：组织炎症信号经迷走神经感觉纤维上传脑干（孤束核等整合），经迷走运动纤维下传；脾神经-乙酰胆碱能 T 细胞接力完成脾内末段。</text>
+  <rect x="30" y="732" width="1340" height="242" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">三、细胞因子反向入脑：发热与病态行为 · 失耐受的复合终局</text>
+  <rect x="60" y="782" width="620" height="162" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="78" y="806" font-size="12.5" fill="#92400e" font-weight="700">发热与病态行为：免疫系统的「求助广播」</text>
+  <text x="78" y="830" font-size="10.5" fill="#475569">IL-1、TNF、IL-6 经 PGE2 上移体温调定点致发热，并驱动病态行为、</text>
+  <text x="78" y="845" font-size="10.5" fill="#475569">急性期反应与 HPA 轴激活——「生病感」本身即是细胞因子作品。</text>
+  <text x="78" y="894" font-size="10.5" fill="#92400e" font-weight="600">非甾体抗炎药经抑制环氧化酶（COX）减少 PGE2 而退热。</text>
+  <rect x="710" y="782" width="630" height="162" rx="9" fill="#fee2e2" fill-opacity="0.3" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="728" y="806" font-size="12.5" fill="#dc2626" font-weight="700">自身免疫病：多环节失守的复合终局</text>
+  <text x="728" y="830" font-size="10.5" fill="#475569">遗传易感（HLA 关联）＋ 分子模拟与表位扩展 ＋ 屏障失守 ＋ 调节失效——同卵双胞胎一致率常仅 20%–40%。</text>
+  <text x="728" y="886" font-size="11" fill="#dc2626" font-weight="700">基因上膛，扣动扳机的却是环境与随机。</text>
+</svg>

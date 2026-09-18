@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">外周耐受的机制：失能、忽视、AICD、免疫豁免与细胞因子绥靖</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">克隆失能源于「有抗原、无共刺激」的半套信号，NFAT 单独驱动的抑制性回路固化无反应状态，强共刺激加 IL-2 可部分逆转；免疫忽视与低带/高带耐受描述抗原剂量两端效应，炎症可打破忽视；AICD 经 Fas-FasL-FADD-胱天蛋白酶级联删除反复活化的 T 细胞，缺陷致 ALPS；免疫豁免部位以屏障、FasL、TGF-β 与 IDO 偏置应答，ACAID 改写前房抗原应答、屏障破坏致交感性眼炎；IL-10 与 TGF-β 使黏膜组织默认耐受，支撑口服耐受与菌群共生</text>
+  <rect x="30" y="132" width="1340" height="282" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、克隆失能：缺了第二信号的沉寂 · 免疫忽视与剂量依赖带</text>
+  <rect x="60" y="184" width="620" height="210" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="78" y="208" font-size="12.5" fill="#4c1d95" font-weight="700">半套信号的后果</text>
+  <ellipse cx="180" cy="300" rx="90" ry="66" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="180" cy="300" rx="83" ry="59" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="180" y="300" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">T 细胞</text>
+  <ellipse cx="500" cy="300" rx="100" ry="66" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="500" cy="300" rx="93" ry="59" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="500" y="300" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">APC</text>
+  <line x1="272" y1="276" x2="408" y2="276" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <text x="340" y="262" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">信号一：pMHC ✓</text>
+  <line x1="272" y1="330" x2="408" y2="330" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="340" y="352" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">信号二：B7 ✗（无共刺激）</text>
+  <text x="78" y="382" font-size="10.5" fill="#475569">NFAT 单独驱动的抑制性回路固化无反应状态——「有抗原、无共刺激」的半套信号把细胞锁进失能。</text>
+  <text x="78" y="240" font-size="10.5" fill="#4c1d95" font-weight="600">强共刺激 + IL-2 可部分逆转。</text>
+  <rect x="710" y="184" width="630" height="210" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="728" y="208" font-size="12.5" fill="#075985" font-weight="700">免疫忽视与低带/高带耐受</text>
+  <rect x="750" y="216" width="540" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="750" y1="328.5" x2="1290" y2="328.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="885" y1="366" x2="885" y2="216" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="750" y1="291" x2="1290" y2="291" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1020" y1="366" x2="1020" y2="216" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="750" y1="253.5" x2="1290" y2="253.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1155" y1="366" x2="1155" y2="216" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="793.2" y1="366" x2="793.2" y2="372" stroke="#475569" stroke-width="1.8"/>
+  <text x="793.2" y="388" font-size="13" fill="#64748b" text-anchor="middle">低带耐受</text>
+  <line x1="1020" y1="366" x2="1020" y2="372" stroke="#475569" stroke-width="1.8"/>
+  <text x="1020" y="388" font-size="13" fill="#64748b" text-anchor="middle">有效应答带</text>
+  <line x1="1236" y1="366" x2="1236" y2="372" stroke="#475569" stroke-width="1.8"/>
+  <text x="1236" y="388" font-size="13" fill="#64748b" text-anchor="middle">高带耐受</text>
+  <line x1="744" y1="231" x2="750" y2="231" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="235" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <line x1="744" y1="351" x2="750" y2="351" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="355" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <text x="1020" y="410" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">抗原剂量（对数坐标）</text>
+  <text x="704" y="291" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">应答强度</text>
+  <path d="M750,363 C760.8,363.0 795.0,367.0 814.8,363 C834.6,359.0 848.1,355.5 868.8,339 C889.5,322.5 913.8,284.5 939,264 C964.2,243.5 993.0,217.0 1020,216 C1047.0,215.0 1074.0,240.5 1101,258 C1128.0,275.5 1159.5,305.0 1182,321 C1204.5,337.0 1218.0,347.0 1236,354 C1254.0,361.0 1281.0,361.5 1290,363" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="1020" y="206" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">抗原剂量的两端效应：过低无人理睬，过高诱导麻痹</text>
+  <text x="728" y="246" font-size="10.5" fill="#475569">免疫忽视：抗原量低于阈值时细胞与抗原相互静默；炎症可随时打破忽视。</text>
+  <rect x="30" y="424" width="1340" height="282" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="446.84" font-size="19" fill="#475569" font-weight="700">二、活化诱导的细胞死亡（AICD）· 免疫豁免与 ACAID · 细胞因子绥靖</text>
+  <rect x="60" y="474" width="620" height="206" rx="9" fill="#fee2e2" fill-opacity="0.25" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="78" y="498" font-size="12.5" fill="#dc2626" font-weight="700">AICD：给反复活化者的死刑通知</text>
+  <rect x="78" y="520" width="150" height="40" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="153" y="545" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">FasL（活化 T 细胞）</text>
+  <line x1="234" y1="540" x2="252" y2="540" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="248" y="520" width="130" height="40" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="313" y="545" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Fas（靶受体）</text>
+  <line x1="384" y1="540" x2="402" y2="540" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="396" y="520" width="130" height="40" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="461" y="545" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">FADD</text>
+  <line x1="532" y1="540" x2="550" y2="540" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="544" y="520" width="100" height="40" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="594" y="545" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">胱天蛋白酶级联</text>
+  <text x="78" y="588" font-size="10.5" fill="#475569">反复活化的 T 细胞经此级联被删除——构成克隆收缩与外周删除。</text>
+  <rect x="78" y="612" width="560" height="56" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="94" y="632" font-size="10.5" fill="#dc2626" font-weight="600">AICD 缺陷 → ALPS：淋巴细胞增殖、双阴性 T 堆积与自身免疫——「死刑通知」失灵的代价。</text>
+  <rect x="710" y="474" width="630" height="96" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="728" y="498" font-size="12.5" fill="#075985" font-weight="700">免疫豁免部位与 ACAID</text>
+  <text x="728" y="520" font-size="10.5" fill="#475569">屏障 + FasL + TGF-β + IDO 实现应答偏置；ACAID 把前房抗原应答改写为非炎症型；屏障破坏可致交感性眼炎。</text>
+  <rect x="710" y="584" width="630" height="96" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="728" y="608" font-size="12.5" fill="#134e4a" font-weight="700">调节性细胞因子环境的绥靖</text>
+  <text x="728" y="630" font-size="10.5" fill="#475569">IL-10、TGF-β 等抑制性细胞因子环境使黏膜等屏障组织默认耐受——口服耐受与菌群共生赖之。</text>
+  <rect x="30" y="718" width="1340" height="254" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="740.84" font-size="19" fill="#475569" font-weight="700">三、外周耐受机制总表：核心分子 · 触发条件 · 失败后果</text>
+  <rect x="60" y="768" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
+  <rect x="240" y="768" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">核心分子</text>
+  <rect x="540" y="768" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">触发条件</text>
+  <rect x="860" y="768" width="480" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表性失败后果</text>
+  <rect x="60" y="812" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="832.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">克隆失能</text>
+  <rect x="240" y="812" width="300" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">NFAT 单独信号、Cbl-b</text>
+  <rect x="540" y="812" width="320" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">有抗原、缺共刺激</text>
+  <rect x="860" y="812" width="480" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">慢性感染与肿瘤中应答乏力</text>
+  <rect x="60" y="842" width="1280" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="842" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="862.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">免疫忽视</text>
+  <rect x="240" y="842" width="300" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="862.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">低于活化阈值的抗原量</text>
+  <rect x="540" y="842" width="320" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="862.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗原稀少、无炎症</text>
+  <rect x="860" y="842" width="480" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="862.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">炎症破局后自身免疫点燃</text>
+  <rect x="60" y="872" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="892.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">AICD</text>
+  <rect x="240" y="872" width="300" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="892.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Fas-FasL-FADD-胱天蛋白酶 8</text>
+  <rect x="540" y="872" width="320" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="892.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗原反复刺激</text>
+  <rect x="860" y="872" width="480" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="892.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">ALPS（淋巴细胞堆积与自身免疫）</text>
+  <rect x="60" y="902" width="1280" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="902" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="922.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">免疫豁免与 ACAID</text>
+  <rect x="240" y="902" width="300" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="922.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">FasL、TGF-β、IDO</text>
+  <rect x="540" y="902" width="320" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="922.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">解剖隔离部位</text>
+  <rect x="860" y="902" width="480" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="922.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">交感性眼炎等屏障破漏后炎症</text>
+  <rect x="60" y="932" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="150" y="952.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">细胞因子绥靖</text>
+  <rect x="240" y="932" width="300" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="952.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">IL-10、TGF-β、IL-35</text>
+  <rect x="540" y="932" width="320" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="952.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">屏障组织持续低危暴露</text>
+  <rect x="860" y="932" width="480" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1100" y="952.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">黏膜炎症与失耐受倾向</text>
+</svg>

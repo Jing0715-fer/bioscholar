@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">模式识别受体与 PAMP/DAMP：固有免疫识别的核心逻辑</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">PAMP 为病原体保守且必需的分子模式、DAMP 为损伤细胞释放的内源性危险信号，共同被种系基因编码的 PRR（膜型 TLR/CLR、胞质型 NLR/RLR、分泌型 MBL/CRP）识别；人 TLR 共 10 种，表面识别胞外组分、内体识别核酸，信号汇合于 NF-κB 与 IRF；NLRP3 炎症小体经两信号组装，caspase-1 成熟 IL-1β/IL-18 并经 gasdermin D 诱发焦亡；PRR 上调共刺激分子是佐剂作用的分子基础</text>
+  <rect x="30" y="132" width="1340" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、PAMP 与 DAMP：病原的「保守模式」与自身的「危险信号」</text>
+  <rect x="60" y="180" width="480" height="140" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="80" y="208" font-size="13.5" fill="#dc2626" font-weight="700">PAMP（病原相关分子模式）</text>
+  <text x="80" y="232" font-size="11.5" fill="#475569">病原体上保守而必需的分子结构——突变即失去生存力，因而难以逃逸识别。</text>
+  <text x="80" y="268" font-size="11.5" fill="#475569">来源：细菌脂多糖、鞭毛、核酸，真菌甘露聚糖等病原体组分。</text>
+  <rect x="120" y="295" width="60" height="26" rx="13" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="210" y="312" font-size="10.5" fill="#64748b">病原体（外源信号）</text>
+  <rect x="860" y="180" width="480" height="140" rx="9" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.7"/>
+  <text x="880" y="208" font-size="13.5" fill="#92400e" font-weight="700">DAMP（损伤相关分子模式）</text>
+  <text x="880" y="232" font-size="11.5" fill="#475569">受损伤或应激的自身细胞释放的内源性警戒信号——「危险」而非「非己」也可拉响警报。</text>
+  <text x="880" y="268" font-size="11.5" fill="#475569">来源：损伤细胞释放的组分与异常定位的自身分子。</text>
+  <circle cx="950" cy="308" r="20" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <path d="M 943 301 L 957 315 M 957 301 L 943 315" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <text x="988" y="312" font-size="10.5" fill="#64748b">损伤的自身细胞（内源信号）</text>
+  <line x1="545" y1="250" x2="640" y2="288" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <line x1="855" y1="250" x2="760" y2="288" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="580.6749" y="288.95" width="238.6502" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="700" y="304.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">PRR 模式识别受体（种系基因编码）</text>
+  <text x="60" y="372" font-size="10.5" fill="#64748b">1989 年 Janeway 预言固有免疫必有先天设定的「非己识别」装置；1994 年 Matzinger 提出「危险模式」；1997 年 Medzhitov 与 Janeway 克隆第一个人类同源受体 TLR4（识别脂多糖）。</text>
+  <rect x="30" y="416" width="1340" height="286" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="438.84" font-size="19" fill="#475569" font-weight="700">二、PRR 家族总览：膜型 · 胞质型 · 分泌型，与人 TLR 的定位分工</text>
+  <rect x="60" y="456" width="380" height="74" rx="9" fill="#0f766e" fill-opacity="0.09" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="80" y="482" font-size="13.5" fill="#134e4a" font-weight="700">膜型 PRR</text>
+  <text x="80" y="504" font-size="12.5" fill="#134e4a" font-weight="600">TLR · CLR</text>
+  <text x="80" y="522" font-size="10.5" fill="#475569">识别细胞外 / 吞噬体中的配体</text>
+  <rect x="60" y="538" width="380" height="74" rx="9" fill="#6d28d9" fill-opacity="0.09" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="80" y="564" font-size="13.5" fill="#4c1d95" font-weight="700">胞质型 PRR</text>
+  <text x="80" y="586" font-size="12.5" fill="#4c1d95" font-weight="600">NLR · RLR</text>
+  <text x="80" y="604" font-size="10.5" fill="#475569">感知进入胞质的配体与核酸</text>
+  <rect x="60" y="620" width="380" height="74" rx="9" fill="#0369a1" fill-opacity="0.09" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="80" y="646" font-size="13.5" fill="#075985" font-weight="700">分泌型 PRR</text>
+  <text x="80" y="668" font-size="12.5" fill="#075985" font-weight="600">MBL · CRP</text>
+  <text x="80" y="686" font-size="10.5" fill="#475569">循环中识别并启动级联</text>
+  <rect x="480" y="470" width="460" height="200" rx="20" fill="#ffffff" stroke="#475569" stroke-width="2.2"/>
+  <line x1="540" y1="452" x2="540" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="540" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="580" y1="452" x2="580" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="580" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="620" y1="452" x2="620" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="620" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="660" y1="452" x2="660" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="660" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="700" y1="452" x2="700" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="700" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="740" y1="452" x2="740" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="740" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="780" y1="452" x2="780" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="780" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="820" y1="452" x2="820" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="820" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="860" y1="452" x2="860" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="860" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="900" y1="452" x2="900" y2="469" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="900" cy="447" r="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="710" y="502" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="600">细胞表面 TLR：识别胞外病原体组分（如 TLR4 识别脂多糖）</text>
+  <circle cx="590" cy="556" r="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="830" cy="556" r="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="710" y="562" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">内体</text>
+  <text x="710" y="600" font-size="11" fill="#075985" text-anchor="middle" font-weight="600">内体 TLR：吞噬后识别病原体核酸（如 TLR7 / TLR9）</text>
+  <rect x="613.8208" y="636.225" width="192.35840000000002" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="710" y="650.14" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">信号汇合：NF-κB 与 IRF 转录轴</text>
+  <text x="710" y="690" font-size="9.5" fill="#64748b" text-anchor="middle">细胞（示意）</text>
+  <text x="970" y="490" font-size="11.5" fill="#475569">人类共表达 10 种 TLR（小鼠 12–13 种，人无 TLR11–13），</text>
+  <text x="970" y="507" font-size="11.5" fill="#475569">以同源或异源二聚体形式工作。</text>
+  <text x="970" y="546" font-size="11.5" fill="#475569">细胞表面的 TLR 识别病原体的胞外组分；</text>
+  <text x="970" y="563" font-size="11.5" fill="#475569">内体中的 TLR 在吞噬之后识别核酸。</text>
+  <text x="970" y="600" font-size="11.5" fill="#475569">第 10 种 TLR10 的配体与功能尚未完全明确。</text>
+  <text x="970" y="636" font-size="10.5" fill="#64748b">Toll 基因最早因决定果蝇背腹轴发育而闻名，</text>
+  <text x="970" y="651" font-size="10.5" fill="#64748b">1996 年 Hoffmann 证明它同时是果蝇抗真菌免疫的关键。</text>
+  <rect x="30" y="714" width="1340" height="264" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="736.84" font-size="19" fill="#475569" font-weight="700">三、NLRP3 炎症小体与适应性免疫的「许可证」</text>
+  <rect x="60" y="754" width="640" height="198" rx="9" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="80" y="780" font-size="13.5" fill="#831843" font-weight="700">NLRP3 炎症小体：「启动—活化」两信号</text>
+  <rect x="80" y="796" width="270" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="215" y="818" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">① 启动信号</text>
+  <text x="215" y="840" font-size="10" fill="#475569" text-anchor="middle">NF-κB 上调 IL-1β 前体与 NLRP3</text>
+  <line x1="354" y1="824" x2="378" y2="824" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="382" y="796" width="270" height="56" rx="7" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="517" y="818" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">② 活化信号</text>
+  <text x="517" y="840" font-size="10" fill="#475569" text-anchor="middle">组装 NLRP3–ASC–caspase-1 复合体</text>
+  <line x1="517" y1="856" x2="517" y2="880" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="80" y="884" width="572" height="56" rx="7" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="366" y="906" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="600">caspase-1 成熟 IL-1β 与 IL-18，并经 gasdermin D 打孔诱发细胞焦亡</text>
+  <text x="366" y="928" font-size="10.5" fill="#475569" text-anchor="middle">焦亡释放的 DAMP 进一步放大炎症</text>
+  <rect x="740" y="754" width="580" height="198" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="760" y="780" font-size="13.5" fill="#075985" font-weight="700">PRR 为适应性免疫发放「许可证」</text>
+  <circle cx="780" cy="808" r="3.5" fill="#0369a1"/>
+  <text x="792" y="812" font-size="12.5" fill="#1e293b" font-weight="700">PRR 活化</text>
+  <text x="916" y="812" font-size="11.5" fill="#475569">识别 PAMP / DAMP 并传导信号</text>
+  <circle cx="780" cy="852" r="3.5" fill="#0369a1"/>
+  <text x="792" y="856" font-size="12.5" fill="#1e293b" font-weight="700">共刺激分子上调</text>
+  <text x="916" y="856" font-size="11.5" fill="#475569">为 T 细胞活化提供第二信号</text>
+  <circle cx="780" cy="896" r="3.5" fill="#0369a1"/>
+  <text x="792" y="900" font-size="12.5" fill="#1e293b" font-weight="700">佐剂作用</text>
+  <text x="916" y="900" font-size="11.5" fill="#475569">疫苗佐剂的分子基础即在于此</text>
+  <text x="760" y="926" font-size="11" fill="#64748b">无 PRR 信号则无共刺激上调——抗原单独刺激倾向于耐受。</text>
+</svg>

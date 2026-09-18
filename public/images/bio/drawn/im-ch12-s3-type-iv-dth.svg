@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">IV 型超敏反应：迟发型的细胞基础、结核菌素试验与肉芽肿</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">IV 型由致敏 Th1 与 CTL 介导，无抗体与补体参与，再次接触后 24–72 小时达峰，只能以淋巴细胞（不能以免疫血清）被动转移；结核菌素试验以 PPD 皮内注射、48–72 小时读取硬结，阳性示细胞免疫致敏而非现症感染，重症免疫抑制者可呈假阴性；接触性皮炎由镍、漆酚、TNCB 等半抗原经朗格汉斯细胞提呈致敏 CTL/Th1，表位扩散使皮炎慢性化；肉芽肿是持续性抗原驱动 Th1-M1 聚集的慢性 IV 型形态；IV 型与细胞免疫保护为同一机制的两面——适度清除病原、失度则组织损伤</text>
+  <rect x="30" y="132" width="1340" height="288" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、IV 型（迟发型）：致敏 Th1 与 CTL 介导——无抗体、无补体</text>
+  <rect x="60" y="184" width="620" height="130" rx="9" fill="#ccfbf1" fill-opacity="0.35" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="78" y="208" font-size="12.5" fill="#134e4a" font-weight="700">致敏阶段（初次接触，约 1–2 周）</text>
+  <rect x="84" y="226" width="160" height="44" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="164" y="252" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">抗原 / 半抗原</text>
+  <line x1="248" y1="248" x2="288" y2="248" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="292" y="226" width="160" height="44" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="372" y="252" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">朗格汉斯细胞</text>
+  <line x1="456" y1="248" x2="496" y2="248" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="500" y="226" width="160" height="44" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="580" y="252" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">致敏 Th1 / CTL</text>
+  <rect x="710" y="184" width="620" height="130" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="728" y="208" font-size="12.5" fill="#4c1d95" font-weight="700">效应阶段（再次接触，24–72 小时达峰）</text>
+  <rect x="734" y="226" width="170" height="44" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="819" y="244" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">记忆 Th1 / CTL</text>
+  <text x="819" y="262" font-size="9" fill="#64748b" text-anchor="middle">再次识别同一抗原</text>
+  <line x1="908" y1="248" x2="948" y2="248" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="952" y="226" width="160" height="44" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="1032" y="244" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">IFN-γ 等动员</text>
+  <text x="1032" y="262" font-size="9" fill="#64748b" text-anchor="middle">巨噬细胞活化</text>
+  <line x1="1118" y1="248" x2="1158" y2="248" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="1162" y="226" width="150" height="44" rx="7" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="1237" y="252" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">硬结 · 损伤</text>
+  <rect x="60" y="328" width="1240" height="72" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="80" y="352" font-size="11" fill="#075985" font-weight="600">铁证——被动转移实验：IV 型只能以淋巴细胞（不能以免疫血清）被动转移给正常个体；抗体与补体均不参与。</text>
+  <text x="80" y="378" font-size="10.5" fill="#475569">「迟发」之名：效应细胞招募与活化需要时间，24–72 小时方达峰——与 I 型的数分钟形成鲜明对照。</text>
+  <rect x="30" y="434" width="1340" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="456.84" font-size="19" fill="#475569" font-weight="700">二、结核菌素试验（PPD 试验）：IV 型超敏反应的临床标尺</text>
+  <line x1="120" y1="560" x2="740" y2="560" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="132.4" cy="560" r="6.5" fill="#0369a1"/>
+  <line x1="132.4" y1="551" x2="132.4" y2="530" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="132.4" y="510" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">0 h：皮内注射 PPD</text>
+  <text x="132.4" y="490" font-size="12" fill="#64748b" text-anchor="middle">结核分枝杆菌纯蛋白衍生物</text>
+  <circle cx="368" cy="560" r="6.5" fill="#b45309"/>
+  <line x1="368" y1="569" x2="368" y2="590" stroke="#b45309" stroke-width="1.7"/>
+  <text x="368" y="610" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">24 h：红斑渐起</text>
+  <text x="368" y="630" font-size="12" fill="#64748b" text-anchor="middle">记忆 T 募集途中</text>
+  <circle cx="566.4" cy="560" r="6.5" fill="#dc2626"/>
+  <line x1="566.4" y1="551" x2="566.4" y2="530" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="566.4" y="510" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">48–72 h：硬结达峰</text>
+  <text x="566.4" y="490" font-size="12" fill="#64748b" text-anchor="middle">读取硬结直径</text>
+  <circle cx="727.6" cy="560" r="6.5" fill="#64748b"/>
+  <line x1="727.6" y1="569" x2="727.6" y2="590" stroke="#64748b" stroke-width="1.7"/>
+  <text x="727.6" y="610" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">数日：渐退</text>
+  <rect x="790" y="484" width="540" height="80" rx="9" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="808" y="508" font-size="12.5" fill="#134e4a" font-weight="700">阳性 = 细胞免疫致敏</text>
+  <text x="808" y="530" font-size="10.5" fill="#475569">示机体对结核分枝杆菌已建立细胞免疫（感染或卡介苗），并非现症感染的诊断。</text>
+  <rect x="790" y="576" width="540" height="74" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="808" y="600" font-size="12.5" fill="#92400e" font-weight="700">假阴性警报</text>
+  <text x="808" y="622" font-size="10.5" fill="#475569">重症免疫抑制者（如播散性结核、HIV 晚期）应答无力，可呈假阴性。</text>
+  <rect x="30" y="688" width="1340" height="284" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="710.84" font-size="19" fill="#475569" font-weight="700">三、接触性皮炎与肉芽肿 · 四型超敏反应速览</text>
+  <rect x="60" y="738" width="620" height="90" rx="9" fill="#fee2e2" fill-opacity="0.3" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="78" y="762" font-size="12.5" fill="#dc2626" font-weight="700">接触性皮炎：半抗原的皮肤伏击战</text>
+  <text x="78" y="784" font-size="10.5" fill="#475569">镍、漆酚、TNCB 等小分子半抗原与皮肤蛋白结合，经朗格汉斯细胞提呈致敏 CTL/Th1；表位扩散可使皮炎慢性化与顽固化。</text>
+  <rect x="60" y="840" width="620" height="104" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="78" y="864" font-size="12.5" fill="#78350f" font-weight="700">肉芽肿：持续性抗原的僵局</text>
+  <text x="78" y="886" font-size="10.5" fill="#475569">无法清除的抗原（如结核分枝杆菌）持续驱动 Th1-M1（活化巨噬细胞）聚集，</text>
+  <text x="78" y="901" font-size="10.5" fill="#475569">形成慢性 IV 型形态——上皮样细胞与多核巨细胞围而不歼。</text>
+  <text x="78" y="932" font-size="10.5" fill="#78350f" font-weight="700">一体两面：IV 型与细胞免疫保护为同一机制——适度清除病原，失度则成组织损伤。</text>
+  <rect x="710" y="744" width="70" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="771.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">分型</text>
+  <rect x="780" y="744" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="880" y="771.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">介导物</text>
+  <rect x="980" y="744" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="771.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">达峰时相</text>
+  <rect x="1140" y="744" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="771.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">代表性疾病</text>
+  <rect x="710" y="788" width="70" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="811.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">I 型</text>
+  <rect x="780" y="788" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="880" y="811.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">IgE-FcεRI-肥大细胞</text>
+  <rect x="980" y="788" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="811.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数分钟</text>
+  <rect x="1140" y="788" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="811.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">过敏性休克、哮喘</text>
+  <rect x="710" y="824" width="630" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="824" width="70" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="847.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">II 型</text>
+  <rect x="780" y="824" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="880" y="847.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">IgG/IgM，补体-吞噬-ADCC</text>
+  <rect x="980" y="824" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="847.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">分钟至数小时</text>
+  <rect x="1140" y="824" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="847.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">输血反应、Graves 病</text>
+  <rect x="710" y="860" width="70" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="883.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">III 型</text>
+  <rect x="780" y="860" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="880" y="883.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">中等大小可溶性 IC</text>
+  <rect x="980" y="860" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="883.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数小时至数天</text>
+  <rect x="1140" y="860" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="883.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">血清病（7–14 天）、狼疮肾炎</text>
+  <rect x="710" y="896" width="630" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="896" width="70" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="745" y="919.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">IV 型</text>
+  <rect x="780" y="896" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="880" y="919.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Th1 与 CTL，无抗体</text>
+  <rect x="980" y="896" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="919.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">24–72 小时</text>
+  <rect x="1140" y="896" width="200" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1240" y="919.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">结核菌素反应、接触性皮炎</text>
+</svg>

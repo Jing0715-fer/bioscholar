@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">T 细胞活化的双信号与免疫突触：从亲和力悖论到检查点阻断</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">TCR 与 pMHC 亲和力低（Kd 约 1–100 μmol/L，比抗原-抗体低三至五个数量级），靠动力校对与串联触发实现敏感特异识别；免疫突触以 cSMAC、pSMAC、dSMAC 三层超分子结构兼具信号汇聚、定向杀伤与受体降解终止三重功能；双信号模型中缺 CD28-B7 第二信号者克隆失能，信号三指定亚群方向；CTLA-4 与 PD-1 为生理刹车，慢性刺激致耗竭（PD-1 持续高表达、效应阶梯式丧失），检查点阻断抗体可部分逆转——2018 年诺贝尔奖主题</text>
+  <rect x="30" y="132" width="1340" height="282" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、免疫突触：T 细胞-APC 接触面的超分子重组（SMAC）</text>
+  <circle cx="300" cy="300" r="104" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <circle cx="300" cy="300" r="74" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.8"/>
+  <circle cx="300" cy="300" r="44" fill="#fce7f3" fill-opacity="0.7" stroke="#be185d" stroke-width="1.8"/>
+  <text x="300" y="296" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">cSMAC</text>
+  <text x="300" y="314" font-size="8.5" fill="#831843" text-anchor="middle">TCR-pMHC</text>
+  <text x="382" y="232" font-size="11" fill="#134e4a" font-weight="700">pSMAC：LFA-1–ICAM-1 黏附环</text>
+  <line x1="376" y1="236" x2="322" y2="258" stroke="#0f766e" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="382" y="366" font-size="11" fill="#075985" font-weight="700">dSMAC：肌动蛋白外环</text>
+  <line x1="376" y1="370" x2="330" y2="380" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="300" y="428" font-size="10" fill="#64748b" text-anchor="middle">中央汇聚 · 外围黏附 · 动态重组</text>
+  <rect x="560" y="182" width="780" height="110" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="578" y="206" font-size="12.5" fill="#075985" font-weight="700">免疫突触的三重功能</text>
+  <text x="578" y="232" font-size="10.5" fill="#475569">① 信号汇聚：放大微弱的 TCR 信号</text>
+  <text x="578" y="254" font-size="10.5" fill="#475569">② 定向杀伤：CTL 把颗粒定向释入突触</text>
+  <text x="578" y="276" font-size="10.5" fill="#475569">③ 受体降解：在 cSMAC 中终止应答</text>
+  <rect x="560" y="306" width="780" height="90" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="578" y="330" font-size="12.5" fill="#92400e" font-weight="700">亲和力悖论：弱结合，强识别</text>
+  <text x="578" y="352" font-size="10.5" fill="#475569">TCR 与 pMHC 的 Kd 约 1–100 μmol/L，比典型抗原-抗体亲和力低三至五个数量级——依靠动力校对、串联触发与受体动力重排实现敏感而特异的识别。</text>
+  <rect x="30" y="430" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="452.84" font-size="19" fill="#475569" font-weight="700">二、双信号模型：信号一给特异性，信号二给许可，信号三定方向</text>
+  <ellipse cx="190" cy="600" rx="110" ry="82" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="190" cy="600" rx="103" ry="75" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="190" y="600" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">T 细胞</text>
+  <ellipse cx="590" cy="600" rx="120" ry="82" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="590" cy="600" rx="113" ry="75" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="590" y="600" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">APC</text>
+  <line x1="300" y1="548" x2="480" y2="548" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)" marker-start="url(#arr-dna)"/>
+  <rect x="309.37805000000003" y="513.075" width="161.2439" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="390" y="525.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">信号一：TCR/CD3 识别 pMHC</text>
+  <text x="390" y="566" font-size="9.5" fill="#64748b" text-anchor="middle">特异性识别（MHC 限制）</text>
+  <line x1="300" y1="668" x2="480" y2="668" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)" marker-start="url(#arr-pro)"/>
+  <rect x="297.535625" y="633.075" width="184.92875" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="390" y="645.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">信号二：CD28 ↔ B7（CD80/86）</text>
+  <text x="390" y="690" font-size="9.5" fill="#64748b" text-anchor="middle">共刺激许可（无则失能）</text>
+  <line x1="560" y1="728" x2="230" y2="728" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="395" y="714" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">信号三：极化细胞因子（IL-12、IL-4 等）指定亚群方向</text>
+  <rect x="790" y="486" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">状态</text>
+  <rect x="900" y="486" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1015" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">抗原与共刺激情境</text>
+  <rect x="1130" y="486" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">结局</text>
+  <rect x="790" y="530" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="558.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">有效活化</text>
+  <rect x="900" y="530" width="230" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1015" y="558.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗原 + 充分共刺激</text>
+  <rect x="1130" y="530" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="558.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">IL-2 高分泌、克隆扩增，效应与记忆生成</text>
+  <rect x="790" y="576" width="580" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="790" y="576" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="604.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">克隆失能</text>
+  <rect x="900" y="576" width="230" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1015" y="604.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">有抗原、缺第二信号</text>
+  <rect x="1130" y="576" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="604.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">IL-2 转导受损且顽固，对再刺激无应答</text>
+  <rect x="790" y="622" width="110" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="650.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">T 细胞耗竭</text>
+  <rect x="900" y="622" width="230" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1015" y="650.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗原长期持续存在</text>
+  <rect x="1130" y="622" width="240" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="650.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">PD-1 持续高表达，效应功能阶梯式丧失</text>
+  <text x="790" y="688" font-size="10.5" fill="#1e293b" font-weight="600">缺 CD28-B7 第二信号的 T 细胞发生克隆失能——外周耐受的重要形式。</text>
+  <rect x="30" y="744" width="1340" height="230" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="766.84" font-size="19" fill="#475569" font-weight="700">三、生理刹车、耗竭与检查点阻断：从刹车到抗癌兵器</text>
+  <rect x="60" y="794" width="620" height="150" rx="9" fill="#fee2e2" fill-opacity="0.3" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="78" y="818" font-size="12.5" fill="#dc2626" font-weight="700">生理刹车与 T 细胞耗竭</text>
+  <text x="78" y="842" font-size="10.5" fill="#475569">CTLA-4 与 PD-1 构成生理刹车；慢性抗原刺激使 PD-1 持续高表达、效应功能阶梯式丧失——从「战斗」滑向「躺平」。</text>
+  <text x="78" y="894" font-size="10.5" fill="#64748b">耗竭 T 细胞：TCR 信号仍在，增殖与杀伤却逐级退场。</text>
+  <rect x="710" y="794" width="630" height="150" rx="9" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="728" y="818" font-size="12.5" fill="#065f46" font-weight="700">检查点阻断抗体</text>
+  <text x="728" y="842" font-size="10.5" fill="#475569">抗 PD-1、抗 PD-L1、抗 CTLA-4 松开刹车，使耗竭 T 细胞部分「复苏」；在黑色素瘤、</text>
+  <text x="728" y="858" font-size="10.5" fill="#475569">肺癌等多种恶性肿瘤治疗中取得突破。</text>
+  <text x="728" y="896" font-size="11" fill="#065f46" font-weight="700">——2018 年诺贝尔生理学或医学奖的主题。</text>
+</svg>

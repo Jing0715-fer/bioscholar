@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">免疫应答的基本规律：初次与再次应答的抗体动态曲线</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">初次应答潜伏期约 1–2 周、IgM 先行、平台低；再次应答潜伏期 1–3 天、IgG 为主、平台高且亲和力高；免疫记忆由记忆 T/B 细胞与骨髓长寿命浆细胞构成，是疫苗初免—加强程序的理论依据；CTLA-4、PD-1 检查点与 Treg 负责应答自限</text>
+  <rect x="30" y="132" width="1340" height="140" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、免疫应答的四个阶段：识别 → 活化 → 效应 → 记忆</text>
+  <rect x="70" y="176" width="300" height="60" rx="8" fill="#0369a1" fill-opacity="0.09" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="86" y="200" font-size="14" fill="#0369a1" font-weight="700">① 识别</text>
+  <text x="86" y="222" font-size="10.5" fill="#475569">TCR 识别 MHC-肽；BCR 直接识别天然抗原表位</text>
+  <rect x="400" y="176" width="300" height="60" rx="8" fill="#0f766e" fill-opacity="0.09" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="416" y="200" font-size="14" fill="#0f766e" font-weight="700">② 活化</text>
+  <text x="416" y="222" font-size="10.5" fill="#475569">T 细胞需双信号：MHC-肽第一信号 + 共刺激第二信号</text>
+  <rect x="730" y="176" width="300" height="60" rx="8" fill="#6d28d9" fill-opacity="0.09" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="746" y="200" font-size="14" fill="#6d28d9" font-weight="700">③ 效应</text>
+  <text x="746" y="222" font-size="10.5" fill="#475569">CTL · Th · 抗体等协同清除抗原</text>
+  <rect x="1060" y="176" width="300" height="60" rx="8" fill="#b45309" fill-opacity="0.09" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1076" y="200" font-size="14" fill="#b45309" font-weight="700">④ 记忆</text>
+  <text x="1076" y="222" font-size="10.5" fill="#475569">记忆 T/B 细胞 + 骨髓长寿命浆细胞</text>
+  <line x1="376" y1="206" x2="394" y2="206" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="706" y1="206" x2="724" y2="206" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="1036" y1="206" x2="1054" y2="206" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="30" y="288" width="1340" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="310.84" font-size="19" fill="#475569" font-weight="700">二、初次应答与再次应答：抗体动态的定量规律（再次应答更快、更高、亲和力更强）</text>
+  <line x1="166.2" y1="340" x2="166.2" y2="612" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.7"/>
+  <line x1="463.2" y1="340" x2="463.2" y2="612" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.7"/>
+  <rect x="150" y="340" width="540" height="272" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="150" y1="544" x2="690" y2="544" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="285" y1="612" x2="285" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="150" y1="476" x2="690" y2="476" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="420" y1="612" x2="420" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="150" y1="408" x2="690" y2="408" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="555" y1="612" x2="555" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="166.2" y1="612" x2="166.2" y2="618" stroke="#475569" stroke-width="1.8"/>
+  <text x="166.2" y="634" font-size="13" fill="#64748b" text-anchor="middle">初免</text>
+  <line x1="463.2" y1="612" x2="463.2" y2="618" stroke="#475569" stroke-width="1.8"/>
+  <text x="463.2" y="634" font-size="13" fill="#64748b" text-anchor="middle">再次暴露</text>
+  <line x1="663" y1="612" x2="663" y2="618" stroke="#475569" stroke-width="1.8"/>
+  <text x="663" y="634" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="144" y1="598.4" x2="150" y2="598.4" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="602.4" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="144" y1="476" x2="150" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="480" font-size="13" fill="#64748b" text-anchor="end">中</text>
+  <line x1="144" y1="353.6" x2="150" y2="353.6" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="357.6" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="420" y="656" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时间（初次免疫 → 再次暴露同一抗原）</text>
+  <text x="104" y="476" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">抗体滴度（对数坐标）</text>
+  <path d="M166.2,606.6 L214.8,606.6 L258.0,587.5 L301.2,546.7 L344.4,503.2 L387.6,486.9 L430.8,503.2 L463.2,519.5" fill="none" stroke="#b45309" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <path d="M204.0,606.6 L268.8,601.1 L322.8,571.2 L376.8,525.0 L430.8,508.6 L463.2,514.1" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <path d="M463.2,519.5 L490.2,462.4 L528.0,386.2 L571.2,359.0 L625.2,350.9 L690.0,350.9" fill="none" stroke="#0f766e" stroke-width="3.4"/>
+  <line x1="166.2" y1="584.8" x2="258" y2="584.8" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)" marker-start="url(#arr-rna)"/>
+  <text x="212.1" y="574.8" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">潜伏期约 1–2 周</text>
+  <line x1="463.2" y1="579.36" x2="498.3" y2="579.36" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)" marker-start="url(#arr-dna)"/>
+  <text x="479.4" y="569.36" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">潜伏期 1–3 天</text>
+  <text x="506.40000000000003" y="443.36" font-size="11" fill="#134e4a" font-weight="700">平台更高 · 更持久</text>
+  <text x="506.40000000000003" y="459.36" font-size="11" fill="#134e4a">亲和力更高（亲和力成熟）</text>
+  <text x="312" y="492.32" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">IgM 先行</text>
+  <rect x="390" y="361.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="410.1" y="369.96" font-size="11" fill="#475569">再次 IgG</text>
+  <rect x="470.98" y="361.38" width="12.100000000000001" height="9.24" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="491.08000000000004" y="369.96" font-size="11" fill="#475569">初次 IgG</text>
+  <rect x="551.96" y="361.38" width="12.100000000000001" height="9.24" rx="3" fill="#b45309" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="572.0600000000001" y="369.96" font-size="11" fill="#475569">初次 IgM</text>
+  <rect x="730" y="350" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="377.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">比较项</text>
+  <rect x="840" y="350" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="377.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">初次应答</text>
+  <rect x="1030" y="350" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="377.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">再次应答</text>
+  <rect x="730" y="394" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="419.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">潜伏期</text>
+  <rect x="840" y="394" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="419.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 1–2 周</text>
+  <rect x="1030" y="394" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="419.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 1–3 天</text>
+  <rect x="730" y="434" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="434" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="459.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">先导抗体</text>
+  <rect x="840" y="434" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="459.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">IgM 先行</text>
+  <rect x="1030" y="434" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="459.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">IgG 为主</text>
+  <rect x="730" y="474" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="499.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">抗体平台</text>
+  <rect x="840" y="474" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="499.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">较低</text>
+  <rect x="1030" y="474" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="499.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">更高、更持久</text>
+  <rect x="730" y="514" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="514" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="539.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">亲和力</text>
+  <rect x="840" y="514" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="539.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">较低</text>
+  <rect x="1030" y="514" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="539.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">高（亲和力成熟）</text>
+  <rect x="730" y="554" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="579.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">细胞基础</text>
+  <rect x="840" y="554" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="935" y="579.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">初始 T / B 细胞</text>
+  <rect x="1030" y="554" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1190" y="579.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">记忆 T / B 细胞 + 骨髓长寿命浆细胞</text>
+  <rect x="730" y="614" width="620" height="60" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="748" y="638" font-size="13.5" fill="#065f46" font-weight="700">疫苗学的基石</text>
+  <text x="748" y="660" font-size="11.5" fill="#475569">初免—加强程序正是利用免疫记忆，以再次应答的快、高、强获得保护。</text>
+  <rect x="30" y="704" width="1340" height="274" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="726.84" font-size="19" fill="#475569" font-weight="700">三、应答的自限与免疫耐受：收放之间的艺术</text>
+  <rect x="80" y="744" width="330" height="58" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="96" y="768" font-size="13.5" fill="#134e4a" font-weight="700">效应应答</text>
+  <text x="96" y="790" font-size="11" fill="#475569">克隆扩增 · 清除抗原</text>
+  <line x1="418" y1="773" x2="506" y2="773" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="512" y="744" width="330" height="58" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="528" y="768" font-size="13.5" fill="#1e293b" font-weight="700">自限回落</text>
+  <text x="528" y="790" font-size="11" fill="#475569">检查点 + Treg 双重「刹车」</text>
+  <line x1="850" y1="773" x2="938" y2="773" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="944" y="744" width="350" height="58" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.6"/>
+  <text x="960" y="768" font-size="13.5" fill="#78350f" font-weight="700">免疫记忆留存</text>
+  <text x="960" y="790" font-size="11" fill="#475569">记忆 T/B 细胞 · 骨髓长寿命浆细胞</text>
+  <line x1="320" y1="842" x2="320" y2="808" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <line x1="700" y1="842" x2="700" y2="808" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <rect x="80" y="846" width="480" height="96" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="100" y="872" font-size="13.5" fill="#075985" font-weight="700">免疫检查点：CTLA-4 · PD-1</text>
+  <text x="100" y="896" font-size="11" fill="#475569">抑制性受体为活化的 T 细胞「踩刹车」，负调控应答强度，防止过度免疫损伤。</text>
+  <rect x="590" y="846" width="440" height="96" rx="9" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="610" y="872" font-size="13.5" fill="#4c1d95" font-weight="700">调节性 T 细胞（Treg）</text>
+  <text x="610" y="896" font-size="11" fill="#475569">主动抑制效应 T 细胞活性与应答放大，维持对自身抗原的耐受。</text>
+  <rect x="1055" y="846" width="285" height="96" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1075" y="872" font-size="13.5" fill="#dc2626" font-weight="700">耐受被打破</text>
+  <text x="1075" y="896" font-size="11" fill="#475569">对自身抗原的耐受丧失 → 自身免疫病。</text>
+  <text x="700" y="962" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">应答的「收放之间」：耐受的维持与效应的执行同等重要</text>
+</svg>

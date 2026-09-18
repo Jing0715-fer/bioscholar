@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">急性期反应与固有免疫的时相：CRP/SAA 动态曲线与发热机制</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">固有免疫按即刻（0–4 小时）、早期诱导（4–96 小时）与适应性应答（96 小时后）三时相接力；急性期反应以 IL-6 驱动的肝脏急性期蛋白合成为核心，CRP 与 SAA 升幅最大；适度发热与血清铁、锌下降（营养免疫）均为有利于宿主的抗感染策略；经 DC 提呈与共刺激、细胞因子极化及 C3d-CR2 协同完成向适应性免疫的交接</text>
+  <rect x="30" y="132" width="1340" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、固有免疫应答的时相划分：即刻 → 早期诱导 → 适应性应答接力</text>
+  <rect x="60" y="180" width="380" height="118" rx="9" fill="#0f766e" fill-opacity="0.09" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="250" y="206" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">即刻应答</text>
+  <text x="250" y="230" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">0–4 小时</text>
+  <text x="84" y="254" font-size="10.5" fill="#475569">现有屏障与分子即刻生效：补体、吞噬细胞、NK 细胞等</text>
+  <line x1="446" y1="236" x2="464" y2="236" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="470" y="180" width="420" height="118" rx="9" fill="#be185d" fill-opacity="0.09" stroke="#be185d" stroke-width="1.8"/>
+  <text x="680" y="206" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">早期诱导应答</text>
+  <text x="680" y="230" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">4–96 小时</text>
+  <text x="494" y="254" font-size="10.5" fill="#475569">炎症级联与细胞因子动员：急性期反应、白细胞渗出</text>
+  <line x1="896" y1="236" x2="914" y2="236" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="920" y="180" width="380" height="118" rx="9" fill="#6d28d9" fill-opacity="0.09" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1110" y="206" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">适应性应答</text>
+  <text x="1110" y="230" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">96 小时后</text>
+  <text x="944" y="254" font-size="10.5" fill="#475569">T / B 淋巴细胞克隆扩增，特异性清除与记忆</text>
+  <text x="700" y="340" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="600">炎症是补体、吞噬与细胞因子协同的放大级联：血管反应与白细胞渗出是其形态学特征</text>
+  <rect x="30" y="388" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="410.84" font-size="19" fill="#475569" font-weight="700">二、急性期反应：IL-6 驱动肝合成急性期蛋白，CRP 与 SAA 升幅最大</text>
+  <rect x="150" y="410" width="520" height="230" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="150" y1="582.5" x2="670" y2="582.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="280" y1="640" x2="280" y2="410" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="150" y1="525" x2="670" y2="525" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="410" y1="640" x2="410" y2="410" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="150" y1="467.5" x2="670" y2="467.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="540" y1="640" x2="540" y2="410" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="160.4" y1="640" x2="160.4" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="160.4" y="662" font-size="13" fill="#64748b" text-anchor="middle">0 h</text>
+  <line x1="290.4" y1="640" x2="290.4" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="290.4" y="662" font-size="13" fill="#64748b" text-anchor="middle">24 h</text>
+  <line x1="420.40000000000003" y1="640" x2="420.40000000000003" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="420.40000000000003" y="662" font-size="13" fill="#64748b" text-anchor="middle">48 h</text>
+  <line x1="550.4000000000001" y1="640" x2="550.4000000000001" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="550.4000000000001" y="662" font-size="13" fill="#64748b" text-anchor="middle">72 h</text>
+  <line x1="670" y1="640" x2="670" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="670" y="662" font-size="13" fill="#64748b" text-anchor="middle">96 h+</text>
+  <line x1="144" y1="628.5" x2="150" y2="628.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="632.5" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="144" y1="525" x2="150" y2="525" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="529" font-size="13" fill="#64748b" text-anchor="end">中</text>
+  <line x1="144" y1="421.5" x2="150" y2="421.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="425.5" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="410" y="684" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">感染 / 损伤后的时间</text>
+  <text x="104" y="525" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">血清急性期蛋白</text>
+  <path d="M160.4,633.1 L212.4,626.2 L280.0,559.5 L358.0,474.4 L436.0,428.4 L503.6,433.0 L576.4,488.2 L670.0,536.5" fill="none" stroke="#be185d" stroke-width="3"/>
+  <path d="M160.4,635.4 L228.0,628.5 L306.0,571.0 L384.0,483.6 L462.0,421.5 L540.0,414.6 L607.6,456.0 L670.0,513.5" fill="none" stroke="#0369a1" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <rect x="210" y="429.38" width="12.100000000000001" height="9.24" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="230.1" y="437.96" font-size="11" fill="#475569">CRP（C 反应蛋白）</text>
+  <rect x="344.9" y="429.38" width="12.100000000000001" height="9.24" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="365" y="437.96" font-size="11" fill="#475569">SAA（血清淀粉样蛋白 A）</text>
+  <text x="436" y="513.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">升幅最大的两种急性期蛋白</text>
+  <rect x="730" y="430" width="580" height="258" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1020" y="456" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">急性期反应的通路</text>
+  <rect x="933.4916" y="481.8" width="173.01680000000002" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1020" y="496.32" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">炎症灶：IL-6（核心驱动）</text>
+  <line x1="1020" y1="512" x2="1020" y2="538" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <text x="1080" y="528" font-size="10.5" fill="#64748b" text-anchor="middle">经血行抵达肝脏</text>
+  <rect x="830" y="542" width="380" height="50" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1020" y="564" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">肝细胞大量合成急性期蛋白</text>
+  <text x="1020" y="584" font-size="10.5" fill="#475569" text-anchor="middle">CRP 与 SAA 升幅最大</text>
+  <line x1="1020" y1="596" x2="1020" y2="620" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <text x="1020" y="644" font-size="11" fill="#475569" text-anchor="middle">释放入血：结合病原 / 损伤面 → 激活补体与调理吞噬</text>
+  <text x="1020" y="676" font-size="10.5" fill="#64748b" text-anchor="middle">血清 CRP 是感染与组织损伤的常用监测指标</text>
+  <rect x="30" y="734" width="1340" height="244" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="756.84" font-size="19" fill="#475569" font-weight="700">三、发热与营养免疫：利于宿主的抗感染策略；向适应性免疫的交接</text>
+  <rect x="60" y="774" width="620" height="182" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="80" y="800" font-size="13.5" fill="#92400e" font-weight="700">适度发热与营养免疫</text>
+  <text x="80" y="824" font-size="11.5" fill="#475569">内源性致热原（IL-1 · IL-6 · TNF 等）作用于下丘脑，体温调定点上移——适度发热抑制病原、</text>
+  <text x="80" y="841" font-size="11.5" fill="#475569">增强免疫细胞活性，有利于宿主。</text>
+  <rect x="197.31" y="902.225" width="65.38" height="19.55" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="230" y="916.14" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">适度发热</text>
+  <rect x="389.93" y="902.225" width="160.14000000000001" height="19.55" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="470" y="916.14" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">营养免疫：血清铁、锌下降</text>
+  <text x="360" y="940" font-size="10.5" fill="#64748b" text-anchor="middle">限制病原体获取必需营养</text>
+  <rect x="710" y="774" width="610" height="182" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="730" y="800" font-size="13.5" fill="#075985" font-weight="700">向适应性免疫的交接（定向与降阈）</text>
+  <circle cx="750" cy="828" r="3.5" fill="#0369a1"/>
+  <text x="762" y="832" font-size="12" fill="#1e293b" font-weight="700">树突状细胞</text>
+  <text x="886" y="832" font-size="11" fill="#475569">提呈抗原并上传共刺激分子</text>
+  <circle cx="750" cy="864" r="3.5" fill="#0369a1"/>
+  <text x="762" y="868" font-size="12" fill="#1e293b" font-weight="700">细胞因子极化</text>
+  <text x="886" y="868" font-size="11" fill="#475569">为应答方向「定型」</text>
+  <circle cx="750" cy="900" r="3.5" fill="#0369a1"/>
+  <text x="762" y="904" font-size="12" fill="#1e293b" font-weight="700">C3d–CR2 协同</text>
+  <text x="886" y="904" font-size="11" fill="#475569">降低 B 细胞活化阈值</text>
+  <text x="730" y="940" font-size="11" fill="#64748b">固有免疫为适应性免疫定向并降低其活化阈值。</text>
+</svg>

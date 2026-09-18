@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">影响免疫原性的因素：抗原、宿主与免疫方式的三元函数</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">异物性是首要因素，随种系距离增大而增强；分子量大于 100 kDa 多为强免疫原、小于 10 kDa 通常微弱；宿主 MHC 肽结合基序（Ir 基因）决定提呈效率，是个体应答差异的遗传基础；进入途径与剂量影响应答走向——皮内与皮下最佳，过高或过低剂量及口服途径倾向耐受</text>
+  <rect x="30" y="132" width="1340" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、免疫原性是抗原、宿主与免疫方式三方变量的函数，而非物质的固有常数</text>
+  <rect x="60" y="178" width="380" height="118" rx="9" fill="#0f766e" fill-opacity="0.09" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="250" y="204" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">抗原自身</text>
+  <text x="250" y="230" font-size="11.5" fill="#475569" text-anchor="middle">异物性 · 分子量</text>
+  <text x="250" y="256" font-size="11.5" fill="#475569" text-anchor="middle">化学组成 · 构象 · 物理状态</text>
+  <line x1="250" y1="300" x2="250" y2="326" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="500" y="178" width="380" height="118" rx="9" fill="#6d28d9" fill-opacity="0.09" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="690" y="204" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">宿主</text>
+  <text x="690" y="230" font-size="11.5" fill="#475569" text-anchor="middle">遗传背景（MHC / Ir 基因）</text>
+  <text x="690" y="256" font-size="11.5" fill="#475569" text-anchor="middle">年龄 · 营养 · 健康状态</text>
+  <line x1="690" y1="300" x2="690" y2="326" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="940" y="178" width="380" height="118" rx="9" fill="#0369a1" fill-opacity="0.09" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="1130" y="204" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">免疫方式</text>
+  <text x="1130" y="230" font-size="11.5" fill="#475569" text-anchor="middle">进入途径 · 剂量</text>
+  <text x="1130" y="256" font-size="11.5" fill="#475569" text-anchor="middle">免疫程序（初免 / 加强）</text>
+  <line x1="1130" y1="300" x2="1130" y2="326" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <rect x="460" y="330" width="480" height="34" rx="8" fill="#1e293b"/>
+  <text x="700" y="352" font-size="14.5" fill="#ffffff" text-anchor="middle" font-weight="700">免疫原性强弱 = 三方变量的函数</text>
+  <rect x="30" y="388" width="1340" height="306" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="410.84" font-size="19" fill="#475569" font-weight="700">二、影响因素总表：异物性居首，分子量定档，宿主与方式定走向</text>
+  <rect x="60" y="434" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="461.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">因素类别</text>
+  <rect x="190" y="434" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="461.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">具体因素</text>
+  <rect x="380" y="434" width="470" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="461.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">一般规律</text>
+  <rect x="850" y="434" width="490" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="461.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">典型实例</text>
+  <rect x="60" y="478" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="500.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">抗原自身</text>
+  <rect x="190" y="478" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="500.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">异物性（首要）</text>
+  <rect x="380" y="478" width="470" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="500.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">种系距离越大，免疫原性越强</text>
+  <rect x="850" y="478" width="490" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="500.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">隐蔽抗原释放 → 自身免疫</text>
+  <rect x="60" y="512" width="1280" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="512" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="534.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">抗原自身</text>
+  <rect x="190" y="512" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="534.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">分子量</text>
+  <rect x="380" y="512" width="470" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="534.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">越大越强：大于 100 kDa 多为强免疫原，小于 10 kDa 通常微弱</text>
+  <rect x="850" y="512" width="490" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="534.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">类毒素与 DNP 的对照</text>
+  <rect x="60" y="546" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="568.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">抗原自身</text>
+  <rect x="190" y="546" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="568.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">组成 · 构象 · 状态</text>
+  <rect x="380" y="546" width="470" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="568.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">共同决定免疫原性强弱</text>
+  <rect x="850" y="546" width="490" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="568.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">—</text>
+  <rect x="60" y="580" width="1280" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="580" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="602.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">宿主</text>
+  <rect x="190" y="580" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="602.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">MHC 肽结合基序</text>
+  <rect x="380" y="580" width="470" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="602.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">Ir 基因决定提呈效率——应答个体差异的遗传基础</text>
+  <rect x="850" y="580" width="490" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="602.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">同品系应答者 / 无应答者</text>
+  <rect x="60" y="614" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="636.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">免疫方式</text>
+  <rect x="190" y="614" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="636.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">进入途径</text>
+  <rect x="380" y="614" width="470" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="636.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">皮内与皮下最佳；口服倾向耐受</text>
+  <rect x="850" y="614" width="490" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="636.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">口服耐受</text>
+  <rect x="60" y="648" width="1280" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="648" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="670.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">免疫方式</text>
+  <rect x="190" y="648" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="285" y="670.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">剂量</text>
+  <rect x="380" y="648" width="470" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="670.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">过高或过低剂量均倾向耐受</text>
+  <rect x="850" y="648" width="490" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="670.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">低带 / 高带耐受</text>
+  <rect x="30" y="710" width="1340" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="732.84" font-size="19" fill="#475569" font-weight="700">三、两条定量规律：异物性的种系阶梯与分子量档位</text>
+  <rect x="60" y="754" width="620" height="194" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="80" y="780" font-size="13" fill="#1e293b" font-weight="700">异物性：种系距离阶梯</text>
+  <rect x="90" y="800" width="170" height="44" rx="7" fill="#d1fae5" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="175" y="818" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">自身成分</text>
+  <text x="175" y="836" font-size="10" fill="#475569" text-anchor="middle">无 / 极弱</text>
+  <line x1="262" y1="822" x2="276" y2="822" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="280" y="800" width="170" height="44" rx="7" fill="#fef3c7" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="365" y="818" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">同种异型抗原</text>
+  <text x="365" y="836" font-size="10" fill="#475569" text-anchor="middle">弱</text>
+  <line x1="452" y1="822" x2="466" y2="822" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="470" y="800" width="170" height="44" rx="7" fill="#fee2e2" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="555" y="818" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">异种抗原</text>
+  <text x="555" y="836" font-size="10" fill="#475569" text-anchor="middle">强</text>
+  <text x="370" y="876" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">种系距离增大 → 异物性增强 → 免疫原性增强</text>
+  <text x="370" y="900" font-size="10.5" fill="#64748b" text-anchor="middle">隐蔽抗原（晶状体蛋白等）释放，可越过阶梯诱发自身免疫</text>
+  <text x="370" y="930" font-size="10" fill="#64748b" text-anchor="middle">同种异型抗原：同种不同个体间存在的那类抗原</text>
+  <rect x="710" y="754" width="610" height="194" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="730" y="780" font-size="13" fill="#1e293b" font-weight="700">分子量档位（一般规律）</text>
+  <rect x="790" y="896.4285714285714" width="106.66666666666666" height="23.571428571428573" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="843.3333333333334" y="887.4285714285714" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">通常微弱</text>
+  <text x="843.3333333333334" y="940" font-size="12.5" fill="#64748b" text-anchor="middle">&lt; 10 kDa</text>
+  <rect x="956.6666666666666" y="861.0714285714286" width="106.66666666666666" height="58.92857142857142" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1010" y="852.0714285714286" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">中等</text>
+  <text x="1010" y="940" font-size="12.5" fill="#64748b" text-anchor="middle">10–100 kDa</text>
+  <rect x="1123.3333333333333" y="821.7857142857142" width="106.66666666666666" height="98.21428571428572" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1176.6666666666665" y="812.7857142857142" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">强免疫原</text>
+  <text x="1176.6666666666665" y="940" font-size="12.5" fill="#64748b" text-anchor="middle">&gt; 100 kDa</text>
+  <text x="1010" y="952" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">分子量越大，免疫原性越强</text>
+</svg>

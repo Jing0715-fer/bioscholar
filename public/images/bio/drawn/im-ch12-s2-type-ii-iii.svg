@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">II 型与 III 型超敏反应：细胞毒三途径与免疫复合物沉积</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">II 型由 IgG/IgM 靶向细胞表面抗原，经补体溶破、调理吞噬与 ADCC 三途径破坏靶细胞，Graves 病演示抗体改写受体功能的非溶细胞性变体；ABO 天然抗体源于肠道菌群交叉刺激、多为 IgM，Rh 抗 D 须经致敏产生 IgG 并经胎盘转运驱动新生儿溶血症，抗 D 免疫球蛋白以被动抗体抢先清除胎儿红细胞阻断母体致敏；III 型由中等大小可溶性免疫复合物在血管通透性增高与血流涡流部位沉积致病，损伤由补体过敏毒素与中性粒细胞酶及活性氧造成，Arthus 为局部型、血清病潜伏 7–14 天，CH50 与 C3、C4 下降是实验室指纹</text>
+  <rect x="30" y="132" width="1340" height="288" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、II 型（细胞毒型）：IgG/IgM 靶向细胞表面抗原的三条破坏途径</text>
+  <ellipse cx="220" cy="300" rx="120" ry="74" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="220" cy="300" rx="113" ry="67" fill="none" stroke="#475569" stroke-width="1.2" opacity="0.6"/>
+  <text x="220" y="300" font-size="18" fill="#475569" text-anchor="middle" font-weight="600">靶细胞</text>
+  <rect x="189.37" y="207.075" width="61.26" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="220" y="219.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">表面抗原</text>
+  <line x1="220" y1="232" x2="220" y2="252" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="300" y="244" width="120" height="40" rx="7" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.5"/>
+  <text x="360" y="268" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">IgG / IgM</text>
+  <line x1="348" y1="292" x2="420" y2="262" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="424" y="232" width="200" height="60" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="524" y="254" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">① 补体溶破</text>
+  <text x="524" y="274" font-size="9.5" fill="#475569" text-anchor="middle">MAC 打孔</text>
+  <line x1="348" y1="306" x2="420" y2="336" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <rect x="424" y="306" width="200" height="60" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="524" y="328" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">② 调理吞噬</text>
+  <text x="524" y="348" font-size="9.5" fill="#475569" text-anchor="middle">C3b 标记 → 吞噬细胞</text>
+  <line x1="348" y1="330" x2="420" y2="400" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <rect x="424" y="372" width="200" height="60" rx="8" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="524" y="394" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">③ ADCC</text>
+  <text x="524" y="414" font-size="9.5" fill="#475569" text-anchor="middle">NK 细胞等经 Fc 受体杀伤</text>
+  <rect x="680" y="232" width="660" height="90" rx="9" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.6"/>
+  <text x="698" y="256" font-size="12.5" fill="#92400e" font-weight="700">变体：Graves 病——抗体「改写受体功能」</text>
+  <text x="698" y="278" font-size="10.5" fill="#475569">甲状腺刺激性抗体模拟 TSH 持续激活 TSH 受体：细胞不被破坏，而被「策反」——非溶细胞性 II 型。</text>
+  <rect x="680" y="336" width="660" height="96" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <text x="698" y="360" font-size="12.5" fill="#78350f" font-weight="700">ABO 天然抗体：肠道菌群交叉刺激的产物</text>
+  <text x="698" y="382" font-size="10.5" fill="#475569">多为 IgM、无需事先致敏，不能通过胎盘——输血反应的主力；药物半抗原（如青霉素）修饰红细胞膜亦可触发药物性溶血。</text>
+  <rect x="30" y="432" width="1340" height="266" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="454.84" font-size="19" fill="#475569" font-weight="700">二、Rh 血型不合：从母体致敏到新生儿溶血症，以及抗 D 的阻断预防</text>
+  <rect x="60" y="482" width="330" height="64" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="76" y="506" font-size="11.5" fill="#78350f" font-weight="700">Rh⁻ 产妇分娩 Rh⁺ 胎儿</text>
+  <text x="76" y="526" font-size="9.5" fill="#475569">胎儿红细胞入母体</text>
+  <line x1="396" y1="514" x2="424" y2="514" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="430" y="482" width="330" height="64" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="446" y="506" font-size="11.5" fill="#78350f" font-weight="700">母体被致敏 → 抗 D（IgG）</text>
+  <text x="446" y="526" font-size="9.5" fill="#475569">须经致敏产生，非天然抗体</text>
+  <line x1="766" y1="514" x2="794" y2="514" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="860" y="482" width="330" height="64" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.6"/>
+  <text x="876" y="506" font-size="11.5" fill="#78350f" font-weight="700">再次妊娠：IgG 经胎盘</text>
+  <text x="876" y="526" font-size="9.5" fill="#475569">攻击 Rh⁺ 胎儿红细胞</text>
+  <line x1="1190" y1="550" x2="1190" y2="578" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="860" y="582" width="480" height="40" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1100" y="606" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">新生儿溶血症：胎儿红细胞破坏 → 贫血 · 黄疸</text>
+  <rect x="60" y="582" width="770" height="92" rx="9" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="78" y="606" font-size="12.5" fill="#065f46" font-weight="700">抗 D 免疫球蛋白：被动抗体的抢先清除</text>
+  <text x="78" y="628" font-size="10.5" fill="#475569">产后尽快注射抗 D，抢在母体致敏前清除漏入的胎儿红细胞——阻断下一胎的免疫记忆，阻断预防的经典范例。</text>
+  <rect x="30" y="708" width="1340" height="264" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="730.84" font-size="19" fill="#475569" font-weight="700">三、III 型（免疫复合物型）：中等 IC 沉积致病 · II/III 型对照</text>
+  <rect x="60" y="758" width="620" height="194" rx="9" fill="#e0f2fe" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="78" y="782" font-size="12.5" fill="#075985" font-weight="700">从形成到沉积损伤</text>
+  <text x="78" y="804" font-size="10.5" fill="#475569">抗原稍过量时形成中等大小可溶性免疫复合物（IC），在血管通透性增高与血流涡流部位（肾小球、关节、脉络膜等）</text>
+  <text x="78" y="819" font-size="10.5" fill="#475569">穿出沉积。</text>
+  <text x="78" y="852" font-size="10.5" fill="#075985" font-weight="600">损伤主力：补体过敏毒素（C3a/C5a）＋ 中性粒细胞释放的蛋白酶与活性氧。</text>
+  <text x="78" y="890" font-size="10.5" fill="#475569">Arthus 反应为局部 III 型；血清病潜伏 7–14 天，恰对应初次体液应答动力学。</text>
+  <text x="78" y="928" font-size="10.5" fill="#dc2626" font-weight="700">实验室指纹：补体消耗——CH50 与 C3、C4 消耗性下降。</text>
+  <rect x="710" y="758" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="785.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">比较项</text>
+  <rect x="820" y="758" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="785.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">II 型（细胞毒型）</text>
+  <rect x="1070" y="758" width="270" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1205" y="785.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">III 型（IC 型）</text>
+  <rect x="710" y="802" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="822.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">参与抗体</text>
+  <rect x="820" y="802" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="822.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">靶向表面抗原的 IgG/IgM</text>
+  <rect x="1070" y="802" width="270" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1205" y="822.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">与可溶性抗原成中等 IC</text>
+  <rect x="710" y="832" width="630" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="832" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="852.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">补体角色</text>
+  <rect x="820" y="832" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="852.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">打孔溶破与调理吞噬</text>
+  <rect x="1070" y="832" width="270" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1205" y="852.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">过敏毒素趋化、驱动中性粒细胞</text>
+  <rect x="710" y="862" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="882.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">损伤定位</text>
+  <rect x="820" y="862" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="882.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">固定靶细胞（血细胞等）</text>
+  <rect x="1070" y="862" width="270" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1205" y="882.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">沉积处血管与基膜（肾小球、关节）</text>
+  <rect x="710" y="892" width="630" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="710" y="892" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="912.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">典型疾病</text>
+  <rect x="820" y="892" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="912.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">输血反应、新生儿溶血症、Graves 病</text>
+  <rect x="1070" y="892" width="270" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1205" y="912.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">血清病、Arthus 反应、狼疮肾炎</text>
+  <rect x="710" y="922" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="765" y="942.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">实验线索</text>
+  <rect x="820" y="922" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="942.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Coombs 试验阳性、靶细胞减少</text>
+  <rect x="1070" y="922" width="270" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1205" y="942.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">CH50 与 C3、C4 消耗性下降</text>
+</svg>

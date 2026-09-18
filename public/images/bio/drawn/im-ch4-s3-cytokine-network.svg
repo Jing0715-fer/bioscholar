@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">细胞因子：免疫系统的信使——家族谱、JAK-STAT 与细胞因子风暴</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">细胞因子为低分子量分泌蛋白，以自泌与旁泌为主，具多效性、冗余性、协同性与网络性；IL、TNF、IFN、趋化因子（约 8–10 kDa）与集落刺激因子分工覆盖活化增殖、极化、趋化与造血；多数经 JAK-STAT 通路转导、SOCS 负反馈刹停；风暴见于超抗原中毒、CAR-T 与重症感染（IL-6 为中心节点），抗 IL-6R、抗 TNF 与 IL-1 受体拮抗剂为精准干预</text>
+  <rect x="30" y="132" width="1340" height="342" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、细胞因子的共同特性与家族功能谱：免疫系统的信使网络</text>
+  <rect x="83.62" y="168.225" width="112.76" height="19.55" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="140" y="182.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">低分子量分泌蛋白</text>
+  <rect x="313.8569" y="168.225" width="112.2862" height="19.55" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="370" y="182.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">以自泌 / 旁泌为主</text>
+  <rect x="573.2325" y="168.225" width="53.535000000000004" height="19.55" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="600" y="182.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">多效性</text>
+  <rect x="683.2325" y="168.225" width="53.535000000000004" height="19.55" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="710" y="182.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">冗余性</text>
+  <rect x="793.2325" y="168.225" width="53.535000000000004" height="19.55" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="820" y="182.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">协同性</text>
+  <rect x="903.2325" y="168.225" width="53.535000000000004" height="19.55" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="930" y="182.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">网络性</text>
+  <text x="1070" y="182" font-size="10.5" fill="#64748b">1979 年国际会议统一命名白细胞介素（IL）</text>
+  <rect x="60" y="214" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="241.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">家族</text>
+  <rect x="230" y="214" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="241.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">代表成员</text>
+  <rect x="510" y="214" width="270" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="241.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">主要来源</text>
+  <rect x="780" y="214" width="560" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="241.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">代表功能</text>
+  <rect x="60" y="258" width="170" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="284.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">白细胞介素（IL）</text>
+  <rect x="230" y="258" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="284.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">IL-1 · IL-2 · IL-4 · IL-6 · IL-12</text>
+  <rect x="510" y="258" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="284.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">单核巨噬细胞 · T 细胞等</text>
+  <rect x="780" y="258" width="560" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="284.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">活化增殖、分化与 Th 极化</text>
+  <rect x="60" y="300" width="1280" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="300" width="170" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="326.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">肿瘤坏死因子（TNF）</text>
+  <rect x="230" y="300" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="326.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">TNF-α</text>
+  <rect x="510" y="300" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="326.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">活化的单核-巨噬细胞</text>
+  <rect x="780" y="300" width="560" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="326.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">炎症介质与细胞毒性</text>
+  <rect x="60" y="342" width="170" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="368.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">干扰素（IFN）</text>
+  <rect x="230" y="342" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="368.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">IFN-α / β（I 型）· IFN-γ（II 型）</text>
+  <rect x="510" y="342" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="368.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">pDC · NK 细胞 · T 细胞</text>
+  <rect x="780" y="342" width="560" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="368.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">抗病毒与免疫调节</text>
+  <rect x="60" y="384" width="1280" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="384" width="170" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="410.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">趋化因子</text>
+  <rect x="230" y="384" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">IL-8 等约 8–10 kDa 小蛋白</text>
+  <rect x="510" y="384" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">多种细胞</text>
+  <rect x="780" y="384" width="560" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="410.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">按 C / CXC 等亚家族趋化白细胞定向迁移</text>
+  <rect x="60" y="426" width="170" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="145" y="452.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">集落刺激因子（CSF）</text>
+  <rect x="230" y="426" width="280" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="452.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">G-CSF · GM-CSF</text>
+  <rect x="510" y="426" width="270" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="452.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">基质细胞与免疫细胞</text>
+  <rect x="780" y="426" width="560" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="452.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">造血与白细胞生成</text>
+  <rect x="30" y="488" width="1340" height="252" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="510.84" font-size="19" fill="#475569" font-weight="700">二、JAK-STAT 通路：从受体到细胞核，SOCS 负反馈把关</text>
+  <g><circle cx="80" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="80" y1="564" x2="80" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="80" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="104" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="104" y1="564" x2="104" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="104" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="128" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="128" y1="564" x2="128" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="128" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="152" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="152" y1="564" x2="152" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="152" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="176" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="176" y1="564" x2="176" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="176" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="200" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="200" y1="564" x2="200" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="200" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="224" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="224" y1="564" x2="224" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="224" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="248" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="248" y1="564" x2="248" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="248" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="272" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="272" y1="564" x2="272" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="272" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="296" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="296" y1="564" x2="296" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="296" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="320" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="320" y1="564" x2="320" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="320" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="344" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="344" y1="564" x2="344" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="344" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="368" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="368" y1="564" x2="368" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="368" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="392" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="392" y1="564" x2="392" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="392" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="416" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="416" y1="564" x2="416" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="416" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/><circle cx="440" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.55"/><line x1="440" y1="564" x2="440" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="440" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.55"/></g>
+  <rect x="138.01" y="526.65" width="83.98" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="180" y="539.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">细胞因子受体</text>
+  <circle cx="150" cy="640" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="150" y="643.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">IL-6</text>
+  <line x1="150" y1="620" x2="150" y2="586" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="150" y="684" font-size="10.5" fill="#64748b" text-anchor="middle">胞外</text>
+  <text x="400" y="596" font-size="10.5" fill="#64748b" text-anchor="middle">胞内</text>
+  <line x1="446" y1="566" x2="490" y2="566" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="494" y="540" width="150" height="52" rx="8" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.6"/>
+  <text x="569" y="562" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">JAK 磷酸化</text>
+  <text x="569" y="582" font-size="9.5" fill="#64748b" text-anchor="middle">受体近端激酶</text>
+  <line x1="648" y1="566" x2="692" y2="566" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="696" y="540" width="170" height="52" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="781" y="562" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">STAT 二聚化</text>
+  <text x="781" y="582" font-size="9.5" fill="#64748b" text-anchor="middle">磷酸化后入核</text>
+  <line x1="872" y1="566" x2="948" y2="566" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <circle cx="1010" cy="566" r="52" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="1028.2" cy="553" r="11.44" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 979.9577836172878,582.148774739098 q 15.6,-13 31.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1039.1616276059083,583.1163033213732 q 15.6,-13 31.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1021.1869164672145,538.7841806867599 q 15.6,-13 31.2,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="930" y="530" font-size="10.5" fill="#64748b">细胞核</text>
+  <text x="1010" y="566" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">靶基因转录</text>
+  <polyline points="781,594 781,640 569,640 569,596" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-bad)"/>
+  <text x="675" y="660" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">SOCS 负反馈：抑制 JAK，及时刹停信号</text>
+  <rect x="655.228" y="679.5" width="39.544" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="675" y="691.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">SOCS</text>
+  <rect x="1090" y="530" width="250" height="190" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1106" y="556" font-size="12.5" fill="#1e293b" font-weight="700">通路基因突变的疾病谱</text>
+  <circle cx="1116" cy="584" r="3.5" fill="#dc2626"/>
+  <text x="1128" y="588" font-size="11.5" fill="#475569">免疫缺陷</text>
+  <circle cx="1116" cy="624" r="3.5" fill="#dc2626"/>
+  <text x="1128" y="628" font-size="11.5" fill="#475569">高 IgE 综合征</text>
+  <circle cx="1116" cy="664" r="3.5" fill="#dc2626"/>
+  <text x="1128" y="668" font-size="11.5" fill="#475569">骨髓增殖性肿瘤</text>
+  <text x="1106" y="690" font-size="10.5" fill="#64748b">JAK-STAT 成分突变即可致病，</text>
+  <text x="1106" y="705" font-size="10.5" fill="#64748b">足见其枢纽地位。</text>
+  <rect x="30" y="754" width="1340" height="224" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="776.84" font-size="19" fill="#475569" font-weight="700">三、细胞因子风暴：失控的信使网络与精准干预</text>
+  <rect x="60" y="794" width="640" height="154" rx="9" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="80" y="820" font-size="13.5" fill="#dc2626" font-weight="700">细胞因子风暴：正反馈失控的全身炎症</text>
+  <text x="80" y="844" font-size="11.5" fill="#475569">免疫细胞与细胞因子互为放大器，形成正反馈级联，溢出局部而成为全身炎症。</text>
+  <rect x="107.3875" y="890.225" width="77.225" height="19.55" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="146" y="904.14" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">超抗原中毒</text>
+  <rect x="305.4923" y="890.225" width="81.0154" height="19.55" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="346" y="904.14" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">CAR-T 治疗</text>
+  <rect x="513.31" y="890.225" width="65.38" height="19.55" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="546" y="904.14" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">重症感染</text>
+  <text x="370" y="934" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">IL-6 为风暴的中心节点之一</text>
+  <rect x="740" y="794" width="580" height="154" rx="9" fill="#d1fae5" fill-opacity="0.45" stroke="#059669" stroke-width="1.6"/>
+  <text x="760" y="820" font-size="13.5" fill="#065f46" font-weight="700">生物制剂：对信使网络的精准干预</text>
+  <circle cx="780" cy="848" r="3.5" fill="#059669"/>
+  <text x="792" y="852" font-size="12" fill="#1e293b" font-weight="700">抗 IL-6R 单抗</text>
+  <text x="922" y="852" font-size="11" fill="#475569">阻断 IL-6 信号轴</text>
+  <circle cx="780" cy="882" r="3.5" fill="#059669"/>
+  <text x="792" y="886" font-size="12" fill="#1e293b" font-weight="700">抗 TNF 制剂</text>
+  <text x="922" y="886" font-size="11" fill="#475569">抑制 TNF 炎症轴</text>
+  <circle cx="780" cy="916" r="3.5" fill="#059669"/>
+  <text x="792" y="920" font-size="12" fill="#1e293b" font-weight="700">IL-1 受体拮抗剂</text>
+  <text x="922" y="920" font-size="11" fill="#475569">封闭 IL-1 通路</text>
+</svg>

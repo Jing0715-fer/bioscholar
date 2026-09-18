@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">补体系统概览：三条激活途径的级联瀑布与共同末端通路</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">40 余种蛋白组成、肝细胞与单核-巨噬细胞合成，C3 血清浓度最高（约 1.2–1.6 g/L）；经典/凝集素/旁路三途径在 C3 汇合，经 C3 转化酶（C4b2a 或 C3bBb）与 C5 转化酶进入共同末端通路，C5b 募集 12–18 个 C9 形成攻膜复合物；效应涵盖溶菌、调理、过敏毒素、免疫复合物清除与 B 细胞共刺激</text>
+  <rect x="30" y="132" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、补体激活的级联瀑布：三条途径在 C3 汇合，共用末端通路形成 MAC</text>
+  <rect x="60" y="180" width="330" height="60" rx="8" fill="#0369a1" fill-opacity="0.1" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="76" y="204" font-size="13.5" fill="#075985" font-weight="700">经典途径</text>
+  <text x="76" y="224" font-size="9.5" fill="#475569">免疫复合物（抗原-抗体）——结合 C1q 起步</text>
+  <rect x="60" y="258" width="330" height="60" rx="8" fill="#6d28d9" fill-opacity="0.1" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="76" y="282" font-size="13.5" fill="#4c1d95" font-weight="700">凝集素途径</text>
+  <text x="76" y="302" font-size="9.5" fill="#475569">甘露糖结合凝集素（MBL）——识别病原体表面糖结构</text>
+  <rect x="60" y="336" width="330" height="60" rx="8" fill="#b45309" fill-opacity="0.1" stroke="#b45309" stroke-width="1.7"/>
+  <text x="76" y="360" font-size="13.5" fill="#78350f" font-weight="700">旁路途径</text>
+  <text x="76" y="380" font-size="9.5" fill="#475569">血清 C3 低水平自发水解——微生物表面激活并放大</text>
+  <line x1="394" y1="210" x2="448" y2="262" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="394" y1="288" x2="446" y2="288" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="394" y1="366" x2="448" y2="314" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <circle cx="490" cy="288" r="38" fill="#fce7f3" stroke="#be185d" stroke-width="3"/>
+  <text x="490" y="295" font-size="21" fill="#831843" text-anchor="middle" font-weight="700">C3</text>
+  <text x="490" y="350" font-size="9.5" fill="#64748b" text-anchor="middle">血清浓度最高（约 1.2–1.6 g/L）</text>
+  <line x1="530" y1="288" x2="586" y2="288" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <rect x="590" y="262" width="210" height="52" rx="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="695" y="284" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">C3 转化酶</text>
+  <text x="695" y="304" font-size="9.5" fill="#64748b" text-anchor="middle">C4b2a / C3bBb</text>
+  <rect x="824" y="262" width="150" height="52" rx="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="899" y="284" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">C5 转化酶</text>
+  <text x="899" y="304" font-size="9.5" fill="#64748b" text-anchor="middle">级联枢纽</text>
+  <rect x="1006" y="262" width="90" height="52" rx="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1051" y="284" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">C5b</text>
+  <text x="1051" y="304" font-size="9.5" fill="#64748b" text-anchor="middle">末端通路起点</text>
+  <line x1="802" y1="288" x2="820" y2="288" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="976" y1="288" x2="1002" y2="288" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <line x1="1098" y1="288" x2="1126" y2="288" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="1130" y="250" width="200" height="76" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1230" y="274" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">攻膜复合物 MAC</text>
+  <text x="1230" y="296" font-size="9" fill="#475569">C5b·C6·C7·C8 募集 12–18 个 C9 聚合成贯穿脂质双层的管状孔道</text>
+  <g><circle cx="1150" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1150" y1="354" x2="1150" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1150" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/><circle cx="1174" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1174" y1="354" x2="1174" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1174" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/><circle cx="1198" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1198" y1="354" x2="1198" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1198" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/><circle cx="1222" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1222" y1="354" x2="1222" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1222" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/><circle cx="1246" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1246" y1="354" x2="1246" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1246" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/><circle cx="1270" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1270" y1="354" x2="1270" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1270" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/><circle cx="1294" cy="350" r="5.5" fill="#dc2626" fill-opacity="0.5"/><line x1="1294" y1="354" x2="1294" y2="359" stroke="#dc2626" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1294" cy="363" r="5.5" fill="#dc2626" fill-opacity="0.5"/></g>
+  <polygon points="1215,340 1226,344 1230,366 1226,370 1215,374 1210,366" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1230" y="396" font-size="9.5" fill="#64748b" text-anchor="middle">管状孔道 → 溶菌溶细胞</text>
+  <polyline points="695,314 695,380 398,380" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-rna)"/>
+  <text x="545" y="400" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">C3b 正反馈放大回路（回到旁路途径）</text>
+  <text x="60" y="436" font-size="11" fill="#64748b">补体系统由 40 余种可溶性与膜结合蛋白组成，肝细胞与单核-巨噬细胞为主要合成场所；调节蛋白维持级联的时空边界。</text>
+  <rect x="30" y="478" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="500.84" font-size="19" fill="#475569" font-weight="700">二、三条激活途径对照：殊途同归</text>
+  <rect x="60" y="524" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="551.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">比较项目</text>
+  <rect x="190" y="524" width="360" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="551.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">经典途径</text>
+  <rect x="550" y="524" width="380" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="740" y="551.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">凝集素途径</text>
+  <rect x="930" y="524" width="410" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="551.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">旁路途径</text>
+  <rect x="60" y="568" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="593.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">启动方式</text>
+  <rect x="190" y="568" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="593.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">抗原-抗体复合物结合 C1q</text>
+  <rect x="550" y="568" width="380" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="740" y="593.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">MBL 识别病原体表面甘露糖样糖结构</text>
+  <rect x="930" y="568" width="410" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="593.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">血清 C3 持续低水平自发性水解</text>
+  <rect x="60" y="608" width="1280" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="608" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="633.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">关键成分</text>
+  <rect x="190" y="608" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="633.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">C1（q/r/s）· C2 · C4</text>
+  <rect x="550" y="608" width="380" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="740" y="633.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">MBL · MASP · C2 · C4</text>
+  <rect x="930" y="608" width="410" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="633.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">C3b · B 因子 · D 因子 · 备解素</text>
+  <rect x="60" y="648" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="673.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">C3 转化酶</text>
+  <rect x="190" y="648" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="673.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">C4b2a</text>
+  <rect x="550" y="648" width="380" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="740" y="673.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">C4b2a</text>
+  <rect x="930" y="648" width="410" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="673.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">C3bBb</text>
+  <rect x="60" y="688" width="1280" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="688" width="130" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="713.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="190" y="688" width="360" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="370" y="713.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">依赖抗体，连接适应性与固有免疫</text>
+  <rect x="550" y="688" width="380" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="740" y="713.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">不依赖抗体，糖型识别</text>
+  <rect x="930" y="688" width="410" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="713.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">可放大的正反馈回路</text>
+  <rect x="30" y="744" width="1340" height="234" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="766.84" font-size="19" fill="#475569" font-weight="700">三、补体的生物学效应与调节蛋白的守护</text>
+  <rect x="70" y="788" width="220" height="66" rx="8" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="180" y="812" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">溶菌溶细胞</text>
+  <text x="180" y="836" font-size="10.5" fill="#475569" text-anchor="middle">MAC 破坏靶细胞膜</text>
+  <rect x="330" y="788" width="220" height="66" rx="8" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="440" y="812" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">调理吞噬</text>
+  <text x="440" y="836" font-size="10.5" fill="#475569" text-anchor="middle">C3b 标记靶物</text>
+  <rect x="590" y="788" width="220" height="66" rx="8" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="700" y="812" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">过敏毒素与趋化</text>
+  <text x="700" y="836" font-size="10.5" fill="#475569" text-anchor="middle">C3a · C5a</text>
+  <rect x="850" y="788" width="220" height="66" rx="8" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="960" y="812" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">免疫复合物清除</text>
+  <text x="960" y="836" font-size="10.5" fill="#475569" text-anchor="middle">防止沉积致病</text>
+  <rect x="1110" y="788" width="220" height="66" rx="8" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1220" y="812" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">B 细胞共刺激</text>
+  <text x="1220" y="836" font-size="10.5" fill="#475569" text-anchor="middle">C3d–CR2 协同</text>
+  <rect x="60" y="880" width="1280" height="82" rx="9" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="80" y="908" font-size="13.5" fill="#dc2626" font-weight="700">调节蛋白缺陷的对应疾病</text>
+  <text x="80" y="936" font-size="11.5" fill="#475569">遗传性血管神经性水肿（C1 抑制物缺陷） · 阵发性睡眠性血红蛋白尿（PNH） · 反复化脓性感染</text>
+  <text x="700" y="962" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="600">调节蛋白维持补体级联的时空边界——既保效应，又防自伤</text>
+</svg>

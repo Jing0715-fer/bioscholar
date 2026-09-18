@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">补体活化的调节：四级刹车与同源限制</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">补体调节蛋白分可溶性与膜型两类，对启动酶（C1-INH 灭活 C1r/C1s 及 MASP）、C3/C5 转化酶（C4bp 与 H 因子加速衰变）、C3b/C4b 命运（I 因子依赖辅因子裂解为 iC3b、C3dg 等失活片段）与 MAC 组装（S 蛋白、CD59）逐级设卡；H 因子借宿主表面唾液酸分辨自我与非我；C1-INH 缺陷致遗传性血管神经性水肿，PIGA 突变致 GPI 锚缺陷、DAF 与 CD59 缺失而发生 PNH</text>
+  <rect x="30" y="132" width="1340" height="286" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、调节总格局：可溶性与膜型两类调节蛋白，对级联逐级设卡</text>
+  <rect x="70" y="190" width="280" height="62" rx="8" fill="#fce7f3" fill-opacity="0.45" stroke="#be185d" stroke-width="1.7"/>
+  <text x="84" y="210" font-size="10.5" fill="#be185d" font-weight="700">关卡 ① 启动阶段</text>
+  <text x="84" y="230" font-size="12.5" fill="#831843" font-weight="700">C1r / C1s（及 MASP）</text>
+  <text x="84" y="242" font-size="9" fill="#64748b">级联靶标</text>
+  <line x1="210" y1="254" x2="210" y2="272" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="70" y="274" width="280" height="78" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="84" y="296" font-size="9.5" fill="#dc2626" font-weight="700" opacity="0.85">刹车</text>
+  <text x="122" y="296" font-size="11.5" fill="#dc2626" font-weight="700">C1-INH（血清）</text>
+  <text x="84" y="316" font-size="9.5" fill="#475569">共价灭活丝氨酸蛋白酶，把级联扼杀于起步</text>
+  <rect x="390" y="190" width="280" height="62" rx="8" fill="#fce7f3" fill-opacity="0.45" stroke="#be185d" stroke-width="1.7"/>
+  <text x="404" y="210" font-size="10.5" fill="#be185d" font-weight="700">关卡 ② 转化酶阶段</text>
+  <text x="404" y="230" font-size="12.5" fill="#831843" font-weight="700">C3/C5 转化酶（C4b2a · C3bBb）</text>
+  <text x="404" y="242" font-size="9" fill="#64748b">级联靶标</text>
+  <line x1="530" y1="254" x2="530" y2="272" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="390" y="274" width="280" height="78" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="404" y="296" font-size="9.5" fill="#dc2626" font-weight="700" opacity="0.85">刹车</text>
+  <text x="442" y="296" font-size="11.5" fill="#dc2626" font-weight="700">C4bp · H 因子 · DAF · CR1</text>
+  <text x="404" y="316" font-size="9.5" fill="#475569">竞争置换与加速衰变：C4bp 抢占 C4b、H 因子竞争 Bb，</text>
+  <text x="404" y="329" font-size="9.5" fill="#475569">膜上 DAF/CR1 促解离</text>
+  <rect x="710" y="190" width="280" height="62" rx="8" fill="#fce7f3" fill-opacity="0.45" stroke="#be185d" stroke-width="1.7"/>
+  <text x="724" y="210" font-size="10.5" fill="#be185d" font-weight="700">关卡 ③ 游离片段命运</text>
+  <text x="724" y="230" font-size="12.5" fill="#831843" font-weight="700">C3b 与 C4b</text>
+  <text x="724" y="242" font-size="9" fill="#64748b">级联靶标</text>
+  <line x1="850" y1="254" x2="850" y2="272" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="710" y="274" width="280" height="78" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="724" y="296" font-size="9.5" fill="#dc2626" font-weight="700" opacity="0.85">刹车</text>
+  <text x="762" y="296" font-size="11.5" fill="#dc2626" font-weight="700">I 因子（血清）</text>
+  <text x="724" y="316" font-size="9.5" fill="#475569">蛋白酶解灭活，需辅因子陪伴：H 因子 · C4bp · MCP · CR1</text>
+  <rect x="1030" y="190" width="280" height="62" rx="8" fill="#fce7f3" fill-opacity="0.45" stroke="#be185d" stroke-width="1.7"/>
+  <text x="1044" y="210" font-size="10.5" fill="#be185d" font-weight="700">关卡 ④ 末端通路</text>
+  <text x="1044" y="230" font-size="12.5" fill="#831843" font-weight="700">MAC 组装（C5b-6-7-8-9n）</text>
+  <text x="1044" y="242" font-size="9" fill="#64748b">级联靶标</text>
+  <line x1="1170" y1="254" x2="1170" y2="272" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="1030" y="274" width="280" height="78" rx="8" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1044" y="296" font-size="9.5" fill="#dc2626" font-weight="700" opacity="0.85">刹车</text>
+  <text x="1082" y="296" font-size="11.5" fill="#dc2626" font-weight="700">S 蛋白（SP-40/40）· CD59</text>
+  <text x="1044" y="316" font-size="9.5" fill="#475569">S 蛋白阻止 C5b-7 插入膜磷脂；</text>
+  <text x="1044" y="329" font-size="9.5" fill="#475569">CD59 阻断 C9 聚合与 MAC 组装</text>
+  <line x1="352" y1="221" x2="388" y2="221" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="672" y1="221" x2="708" y2="221" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <line x1="992" y1="221" x2="1028" y2="221" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="70" y="362" width="1240" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="90" y="386" font-size="11" fill="#1e293b" font-weight="600">可溶性（血清）：C1-INH · C4bp · H 因子 · I 因子 · S 蛋白</text>
+  <text x="620" y="386" font-size="11" fill="#1e293b" font-weight="600">膜型（自身细胞）：DAF · MCP · CR1 · CD59</text>
+  <text x="1010" y="386" font-size="11" fill="#dc2626" font-weight="700">同源限制：补体只攻「非我」</text>
+  <rect x="30" y="434" width="1340" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="456.84" font-size="19" fill="#475569" font-weight="700">二、液相调节三员大将：C1-INH · C4bp · H/I 因子轴</text>
+  <rect x="60" y="484" width="390" height="96" rx="9" fill="#0369a1" fill-opacity="0.08" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="76" y="508" font-size="12.5" fill="#0369a1" font-weight="700">C1 抑制物（C1-INH）</text>
+  <text x="76" y="526" font-size="10" fill="#475569">共价灭活 C1r/C1s 与 MASP——启动酶被拆械，经典与凝集素途径双双断电</text>
+  <rect x="475" y="484" width="380" height="96" rx="9" fill="#6d28d9" fill-opacity="0.08" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="491" y="508" font-size="12.5" fill="#6d28d9" font-weight="700">C4 结合蛋白（C4bp）</text>
+  <text x="491" y="526" font-size="10" fill="#475569">高分子量可溶性糖蛋白：与 C2a 竞争 C4b 位点，</text>
+  <text x="491" y="540" font-size="10" fill="#475569">加速经典 C3 转化酶 C4b2a 衰变解离，兼作 I 因子辅因子</text>
+  <rect x="875" y="484" width="465" height="96" rx="9" fill="#0f766e" fill-opacity="0.08" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="891" y="508" font-size="12.5" fill="#0f766e" font-weight="700">H 因子：自我与非我的分界线</text>
+  <text x="891" y="526" font-size="10" fill="#475569">竞争 Bb、加速 C3bBb 衰变；</text>
+  <text x="891" y="540" font-size="10" fill="#475569">借对宿主表面唾液酸等多阴离子结构的亲和识别「自己」——旁路途径核心负调轴</text>
+  <text x="60" y="600" font-size="12" fill="#1e293b" font-weight="700">I 因子：依赖辅因子的丝氨酸蛋白酶，把 C3b / C4b 逐段拆解为失活片段</text>
+  <rect x="60" y="614" width="66" height="30" rx="6" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="93" y="633" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">C3b</text>
+  <line x1="132" y1="629" x2="160" y2="629" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="166" y="614" width="80" height="30" rx="6" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="206" y="633" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">iC3b</text>
+  <line x1="252" y1="629" x2="280" y2="629" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="286" y="614" width="178" height="30" rx="6" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="375" y="633" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">C3dg + C3c</text>
+  <text x="226" y="672" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">I 因子 + 辅因子</text>
+  <rect x="520" y="614" width="66" height="30" rx="6" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="553" y="633" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">C4b</text>
+  <line x1="592" y1="629" x2="620" y2="629" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="626" y="614" width="178" height="30" rx="6" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <text x="715" y="633" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">C4d + C4c</text>
+  <text x="645" y="672" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">I 因子 + 辅因子</text>
+  <text x="860" y="622" font-size="10.5" fill="#475569">辅因子军团：H 因子 · C4bp · MCP（CD46）· CR1（CD35）——没有辅因子，I 因子无从下剪。</text>
+  <text x="860" y="652" font-size="10" fill="#64748b">裂解产物 iC3b、C3dg 仍可被 CR3/CR4 等受体识别，保留调理功能。</text>
+  <rect x="30" y="720" width="1340" height="254" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="742.84" font-size="19" fill="#475569" font-weight="700">三、膜型调节与同源限制：自身细胞上的四重防线及其失守</text>
+  <rect x="60" y="768" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">膜型蛋白</text>
+  <rect x="210" y="768" width="78" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">CD</text>
+  <rect x="288" y="768" width="152" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="364" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要靶标</text>
+  <rect x="440" y="768" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="795.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">作用机制</text>
+  <rect x="60" y="812" width="150" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="833" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">DAF</text>
+  <rect x="210" y="812" width="78" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="833" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">CD55</text>
+  <rect x="288" y="812" width="152" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="364" y="833" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C3/C5 转化酶</text>
+  <rect x="440" y="812" width="240" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="833" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">竞争置换，加速衰变</text>
+  <rect x="60" y="843" width="620" height="31" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="843" width="150" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="864" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">MCP</text>
+  <rect x="210" y="843" width="78" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="864" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">CD46</text>
+  <rect x="288" y="843" width="152" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="364" y="864" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C3b、C4b</text>
+  <rect x="440" y="843" width="240" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="864" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">I 因子辅因子</text>
+  <rect x="60" y="874" width="150" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="895" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">CR1</text>
+  <rect x="210" y="874" width="78" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="895" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">CD35</text>
+  <rect x="288" y="874" width="152" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="364" y="895" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C3b、C4b</text>
+  <rect x="440" y="874" width="240" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="895" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">加速衰变并兼辅因子</text>
+  <rect x="60" y="905" width="620" height="31" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="905" width="150" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="926" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">CD59</text>
+  <rect x="210" y="905" width="78" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="926" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">（GPI 锚）</text>
+  <rect x="288" y="905" width="152" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="364" y="926" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">C5b-8、C9</text>
+  <rect x="440" y="905" width="240" height="31" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="926" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">阻断 C9 聚合与 MAC 组装</text>
+  <text x="60" y="948" font-size="10.5" fill="#64748b" font-weight="600">DAF 与 CD59 均以 GPI 锚定于膜——这为 PNH 埋下伏笔。</text>
+  <rect x="710" y="768" width="630" height="82" rx="9" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.6"/>
+  <text x="728" y="792" font-size="12.5" fill="#92400e" font-weight="700">C1-INH 遗传缺陷 → 遗传性血管神经性水肿（HAE）</text>
+  <text x="728" y="812" font-size="10.5" fill="#475569">反复发作、不伴瘙痒的皮肤黏膜水肿——启动闸门失灵，缓激肽样效应放大。</text>
+  <rect x="710" y="862" width="630" height="96" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="728" y="886" font-size="12.5" fill="#dc2626" font-weight="700">PNH（阵发性睡眠性血红蛋白尿）：GPI 锚防线整体失守</text>
+  <text x="728" y="908" font-size="10.5" fill="#475569">PIGA 基因突变 → GPI 锚合成障碍 → DAF 与 CD59 双缺失 → 红细胞对补体异常敏感 → 血管内溶血与血红蛋白尿。</text>
+</svg>
