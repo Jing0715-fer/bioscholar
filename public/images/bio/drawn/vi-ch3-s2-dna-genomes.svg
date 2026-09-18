@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 病毒基因组：大小谱、末端解法与环形复制</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">环状病毒 1.7–2 kb 至痘病毒 130–300 kb 相差逾百倍；线性末端四解法（冗余切割／cos 环化／发夹／末端蛋白）；HBV 经 pgRNA 逆转录复制；AAV 4.7 kb 八种蛋白</text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、基因组大小谱：相差逾百倍（对数尺度）</text>
+  <text x="50" y="201" font-size="11" fill="#475569">环状病毒科</text>
+  <rect x="229.07333049892011" y="188" width="11.967240402081899" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="235.05695069996108" y="201" font-size="9.5" fill="#134e4a" text-anchor="middle">1.7–2 kb</text>
+  <text x="50" y="237" font-size="11" fill="#475569">细小病毒科</text>
+  <rect x="292.081141802004" y="224" width="29.85681999248561" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="307.00955179824683" y="237" font-size="9.5" fill="#134e4a" text-anchor="middle">4–6 kb</text>
+  <text x="50" y="273" font-size="11" fill="#475569">多瘤 / 乳头瘤病毒</text>
+  <rect x="308.51253555412694" y="260" width="34.6091771488791" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="325.8171241285665" y="273" font-size="9.5" fill="#134e4a" text-anchor="middle">5–8 kb</text>
+  <text x="50" y="309" font-size="11" fill="#475569">腺病毒科</text>
+  <rect x="429.91312669966635" y="296" width="45.14654779782933" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="452.486400598581" y="309" font-size="9.5" fill="#134e4a" text-anchor="middle">26–48 kb</text>
+  <text x="50" y="345" font-size="11" fill="#475569">疱疹病毒科</text>
+  <rect x="545.5376066623809" y="332" width="48.03460338924174" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="569.5549083570018" y="345" font-size="9.5" fill="#134e4a" text-anchor="middle">125–240 kb</text>
+  <text x="50" y="381" font-size="11" fill="#475569">痘病毒科</text>
+  <rect x="548.4256622537933" y="368" width="61.57794154995224" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="579.2146330287694" y="381" font-size="9.5" fill="#134e4a" text-anchor="middle">130–300 kb</text>
+  <line x1="190" y1="404" x2="190" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <text x="190" y="424" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="359.55310645512895" y1="404" x2="359.55310645512895" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <text x="359.55310645512895" y="424" font-size="11" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="529.1062129102579" y1="404" x2="529.1062129102579" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <text x="529.1062129102579" y="424" font-size="11" fill="#64748b" text-anchor="middle">100</text>
+  <text x="400" y="424" font-size="11" fill="#64748b" text-anchor="middle">kb</text>
+  <line x1="210" y1="470" x2="600" y2="470" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="405" y="456" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">基因组增大 → 自主性增强、对宿主依赖变浅</text>
+  <text x="50" y="500" font-size="10.5" fill="#475569">从环状病毒约 1.7–2 kb 到痘病毒 130–300 kb（AAV 4.7 kb 属细小病毒科）——DNA 病毒的大小跨度冠绝病毒界。</text>
+  <rect x="710" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、线性基因组的末端难题与四类解法</text>
+  <text x="730" y="194" font-size="12.5" fill="#1e293b" font-weight="700">1. 末端冗余＋连环体切割</text>
+  <text x="730" y="216" font-size="10.5" fill="#475569">疱疹病毒、T 偶数噬菌体：复制产生连环体，</text>
+  <text x="730" y="230" font-size="10.5" fill="#475569">包装时「量裁」出单位长度基因组。</text>
+  <rect x="1050" y="186" width="44" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="1102" y="186" width="44" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="1154" y="186" width="44" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="1206" y="186" width="44" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="1258" y="186" width="44" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="1178" y="226" font-size="10" fill="#64748b" text-anchor="middle">连环体 → 切割</text>
+  <line x1="1096" y1="178" x2="1096" y2="210" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <line x1="1304" y1="178" x2="1304" y2="210" stroke="#be185d" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <text x="730" y="282" font-size="12.5" fill="#1e293b" font-weight="700">2. cos 位点粘端环化</text>
+  <text x="730" y="304" font-size="10.5" fill="#475569">λ 噬菌体：末端 cos 粘端互补，进胞后即环化，</text>
+  <text x="730" y="318" font-size="10.5" fill="#475569">回避线性末端问题。</text>
+  <rect x="1050" y="276" width="130" height="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="1050" y="276" width="14" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="1166" y="276" width="14" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1196" y1="282" x2="1236" y2="282" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <circle cx="1282" cy="282" r="22" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="1128" y="312" font-size="10" fill="#b45309" text-anchor="middle">cos 粘端</text>
+  <text x="1282" y="312" font-size="10" fill="#64748b" text-anchor="middle">环化</text>
+  <text x="730" y="370" font-size="12.5" fill="#1e293b" font-weight="700">3. 共价闭合发夹末端</text>
+  <text x="730" y="392" font-size="10.5" fill="#475569">痘病毒、细小病毒：DNA 末端回折成发夹，自身即为复制模板。</text>
+  <line x1="1076" y1="370" x2="1256" y2="370" stroke="#0f766e" stroke-width="2"/>
+  <path d="M1070,370 L1070,348 A9,9 0 0 1 1082,348 L1082,370" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M1250,370 L1250,348 A9,9 0 0 1 1262,348 L1262,370" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="1166" y="400" font-size="10" fill="#64748b" text-anchor="middle">两端回折成发夹</text>
+  <text x="730" y="458" font-size="12.5" fill="#1e293b" font-weight="700">4. 末端蛋白引发</text>
+  <text x="730" y="480" font-size="10.5" fill="#475569">腺病毒与 φ29：5′ 端共价结合的末端蛋白直接作复制引物。</text>
+  <line x1="1076" y1="458" x2="1256" y2="458" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="1076" cy="458" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1256" cy="458" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1166" y="488" font-size="10" fill="#64748b" text-anchor="middle">末端蛋白＝引物</text>
+  <text x="1076" y="438" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">TP</text>
+  <rect x="30" y="556" width="660" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="578.84" font-size="19" fill="#475569" font-weight="700">三、环形基因组：θ 型与滚环复制回避末端难题</text>
+  <circle cx="195" cy="672" r="46" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
+  <ellipse cx="195" cy="672" rx="21" ry="21" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <line x1="214" y1="653" x2="230" y2="637" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="176" y1="691" x2="160" y2="707" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="195" y="738" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">θ 型（双向复制叉）</text>
+  <circle cx="460" cy="666" r="38" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M 460,704 C 500,704 520,690 560,668" fill="none" stroke="#b45309" stroke-width="2.4" marker-end="url(#arr-rna)"/>
+  <text x="460" y="738" font-size="11.5" fill="#b45309" text-anchor="middle" font-weight="700">滚环复制（σ 型）</text>
+  <text x="560" y="640" font-size="10" fill="#64748b" text-anchor="middle">切口→延伸</text>
+  <text x="50" y="778" font-size="12.5" fill="#1e293b" font-weight="700">乳头瘤病毒：把基因组扩增与上皮分化耦合</text>
+  <rect x="50" y="796" width="560" height="36" fill="#fee2e2" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="150" y="819" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">颗粒层（表层）</text>
+  <text x="400" y="819" font-size="11" fill="#475569" text-anchor="middle">晚期基因表达、装配子代毒粒</text>
+  <rect x="50" y="838" width="560" height="36" fill="#fef3c7" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="150" y="861" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">棘层（中间）</text>
+  <text x="400" y="861" font-size="11" fill="#475569" text-anchor="middle">基因组大量扩增</text>
+  <rect x="50" y="880" width="560" height="36" fill="#ccfbf1" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="150" y="903" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">基底层（底层）</text>
+  <text x="400" y="903" font-size="11" fill="#475569" text-anchor="middle">维持低拷贝、随细胞分裂分配</text>
+  <line x1="620" y1="906" x2="620" y2="800" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="646" y="850" font-size="10" fill="#64748b" text-anchor="middle">分化上行</text>
+  <rect x="710" y="556" width="660" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="578.84" font-size="19" fill="#475569" font-weight="700">四、两个特例：HBV 的逆转录复制与 AAV 的极限压缩</text>
+  <rect x="730" y="608" width="140" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="800" y="628" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">rcDNA</text>
+  <text x="800" y="646" font-size="9" fill="#475569" text-anchor="middle">不完全双链环状</text>
+  <rect x="905" y="608" width="140" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="975" y="628" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">cccDNA</text>
+  <text x="975" y="646" font-size="9" fill="#475569" text-anchor="middle">入核修复为共价闭合环</text>
+  <rect x="1080" y="608" width="140" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="1150" y="628" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">前基因组 RNA</text>
+  <text x="1150" y="646" font-size="9" fill="#475569" text-anchor="middle">3.5 kb · 带 ε 茎环</text>
+  <rect x="1255" y="608" width="140" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="1325" y="628" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">rcDNA 子代</text>
+  <text x="1325" y="646" font-size="9" fill="#475569" text-anchor="middle">经逆转录生成</text>
+  <line x1="872" y1="633" x2="901" y2="633" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <line x1="1047" y1="633" x2="1076" y2="633" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <line x1="1222" y1="633" x2="1251" y2="633" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="886" y="596" font-size="9.5" fill="#134e4a" text-anchor="middle">修复</text>
+  <text x="1061" y="596" font-size="9.5" fill="#b45309" text-anchor="middle">转录</text>
+  <text x="1236" y="596" font-size="9.5" fill="#dc2626" text-anchor="middle">逆转录</text>
+  <path d="M 1325,662 C 1240,730 830,730 795,662" fill="none" stroke="#0f766e" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arr-dna)"/>
+  <text x="1058" y="722" font-size="10" fill="#475569" text-anchor="middle">子代 rcDNA 再入核 → cccDNA 库扩容（巴尔的摩第七类：DNA 经 RNA 中介逆转录）</text>
+  <text x="730" y="768" font-size="12.5" fill="#1e293b" font-weight="700">AAV：4.7 kb 的极限压缩</text>
+  <line x1="790" y1="856" x2="1210" y2="856" stroke="#94a3b8" stroke-width="1.6"/>
+  <rect x="791" y="841" width="216.4" height="30" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="899.2" y="889" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">rep</text>
+  <rect x="1009.4" y="841" width="199.6" height="30" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1109.2" y="889" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">cap</text>
+  <path d="M776,856 L776,830 A9,9 0 0 1 788,830 L788,856" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <path d="M1212,856 L1212,830 A9,9 0 0 1 1224,830 L1224,856" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <text x="782" y="826" font-size="10" fill="#b45309" text-anchor="middle" font-weight="700">ITR</text>
+  <text x="1218" y="826" font-size="10" fill="#b45309" text-anchor="middle" font-weight="700">ITR</text>
+  <text x="730" y="900" font-size="10.5" fill="#475569">4.7 kb 基因组产出八种蛋白；约 145 nt 的反向末端重复（ITR）兼任复制起点、</text>
+  <text x="730" y="915" font-size="10.5" fill="#475569">包装信号与整合元件——AAV 由此成为基因治疗的首选载体。</text>
+</svg>

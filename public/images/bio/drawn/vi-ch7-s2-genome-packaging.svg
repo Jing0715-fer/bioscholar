@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">核酸的识别与包装：信号、马达、满装与相分离</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">ψ 等顺式包装信号决定身份；12 聚体门户＋末端酶马达把 dsDNA 泵入（壳内约 500 mg/mL、数十大气压）；λ 按 cos 切割、T4 头部满装；内腔为基因组体积 1.5–2 倍</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、顺式包装信号：基因组的身份标签</text>
+  <line x1="60" y1="280" x2="620" y2="280" stroke="#b45309" stroke-width="3"/>
+  <text x="60" y="302" font-size="10" fill="#b45309" text-anchor="middle">5′</text>
+  <text x="620" y="302" font-size="10" fill="#b45309" text-anchor="middle">3′</text>
+  <path d="M174,280 L174,236 A15,15 0 0 1 186,236 L186,280" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <text x="180" y="214" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">ψ 包装信号（HIV）</text>
+  <path d="M424,280 L424,244 A12,12 0 0 1 436,244 L436,280" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <text x="430" y="222" font-size="10.5" fill="#831843" text-anchor="middle">DIS 二聚化位点</text>
+  <circle cx="180" cy="352" r="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="180" y="356" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Gag</text>
+  <line x1="180" y1="330" x2="180" y2="310" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="180" y="396" font-size="10.5" fill="#475569" text-anchor="middle">衣壳蛋白只认带标签的 RNA</text>
+  <text x="50" y="196" font-size="11" fill="#475569">包装特异性由两端答案合写：基因组上的顺式包装信号（茎环／位点）＋衣壳或核衣壳蛋白的识别——细胞 RNA 无标签，</text>
+  <text x="50" y="212" font-size="11" fill="#475569">装不进去。</text>
+  <text x="50" y="440" font-size="11" fill="#64748b">包装信号常兼作复制／二聚化元件——「一物三用」是小基因组的常态。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、门户＋末端酶：分子马达强行泵入</text>
+  <polygon points="880.0,254.0 919.8,277.0 919.8,323.0 880.0,346.0 840.2,323.0 840.2,277.0" fill="#fee2e2" fill-opacity="0.9" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="857" y1="271.48" x2="903" y2="271.48" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="839.98" y1="300" x2="920.02" y2="300" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="926" y1="300" x2="934" y2="300" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="936" cy="300" r="3.1" fill="#dc2626"/>
+  <line x1="917.2147817412476" y1="327.03812160545374" x2="923.6869176962472" y2="331.74040362379355" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="925.304951684997" cy="332.9159741283785" r="3.1" fill="#dc2626"/>
+  <line x1="894.2147817412476" y1="343.74859974957707" x2="896.6869176962472" y2="351.3570518799383" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="897.304951684997" cy="353.2591649125286" r="3.1" fill="#dc2626"/>
+  <line x1="865.7852182587524" y1="343.74859974957707" x2="863.3130823037528" y2="351.3570518799383" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="862.695048315003" cy="353.2591649125286" r="3.1" fill="#dc2626"/>
+  <line x1="842.7852182587524" y1="327.0381216054538" x2="836.3130823037528" y2="331.74040362379355" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="834.695048315003" cy="332.9159741283785" r="3.1" fill="#dc2626"/>
+  <line x1="834" y1="300" x2="826" y2="300" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="824" cy="300" r="3.1" fill="#dc2626"/>
+  <line x1="842.7852182587524" y1="272.96187839454626" x2="836.3130823037528" y2="268.25959637620645" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="834.695048315003" cy="267.0840258716215" r="3.1" fill="#dc2626"/>
+  <line x1="865.7852182587524" y1="256.25140025042293" x2="863.3130823037528" y2="248.6429481200617" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="862.695048315003" cy="246.7408350874714" r="3.1" fill="#dc2626"/>
+  <line x1="894.2147817412475" y1="256.25140025042293" x2="896.6869176962472" y2="248.6429481200617" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="897.304951684997" cy="246.7408350874714" r="3.1" fill="#dc2626"/>
+  <line x1="917.2147817412476" y1="272.9618783945462" x2="923.6869176962472" y2="268.25959637620645" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="925.304951684997" cy="267.0840258716215" r="3.1" fill="#dc2626"/>
+  <polygon points="858,350 902,350 894,376 866,376" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="880" y="398" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">12 聚体门户蛋白</text>
+  <rect x="838" y="414" width="84" height="34" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="880" y="436" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">末端酶</text>
+  <text x="880" y="468" font-size="9.5" fill="#64748b" text-anchor="middle">ATPase 马达</text>
+  <line x1="880" y1="410" x2="880" y2="384" stroke="#0f766e" stroke-width="2.6" marker-end="url(#arr-dna)"/>
+  <path d="M760,431L760.0,431.0L762.0,428.5L764.0,426.1L766.0,424.2L768.0,422.8L770.0,422.1L772.0,422.1L774.0,422.8L776.0,424.2L778.0,426.1L780.0,428.5L782.0,431.0L784.0,433.5L786.0,435.9L788.0,437.8L790.0,439.2L792.0,439.9L794.0,439.9L796.0,439.2L798.0,437.8L800.0,435.9L802.0,433.5L804.0,431.0L806.0,428.5L808.0,426.1L810.0,424.2L812.0,422.8L814.0,422.1L816.0,422.1L818.0,422.8L820.0,424.2L822.0,426.1L824.0,428.5L826.0,431.0L828.0,433.5L830.0,435.9" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M760,431L760.0,431.0L762.0,433.5L764.0,435.9L766.0,437.8L768.0,439.2L770.0,439.9L772.0,439.9L774.0,439.2L776.0,437.8L778.0,435.9L780.0,433.5L782.0,431.0L784.0,428.5L786.0,426.1L788.0,424.2L790.0,422.8L792.0,422.1L794.0,422.1L796.0,422.8L798.0,424.2L800.0,426.1L802.0,428.5L804.0,431.0L806.0,433.5L808.0,435.9L810.0,437.8L812.0,439.2L814.0,439.9L816.0,439.9L818.0,439.2L820.0,437.8L822.0,435.9L824.0,433.5L826.0,431.0L828.0,428.5L830.0,426.1" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="771" y1="422" x2="771" y2="440" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="793" y1="440" x2="793" y2="422" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="815" y1="422" x2="815" y2="440" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="795" y="458" font-size="8.5" fill="#64748b" text-anchor="middle"> concatenated</text>
+  <text x="795" y="470" font-size="9.5" fill="#134e4a" text-anchor="middle">DNA</text>
+  <line x1="834" y1="431" x2="836" y2="431" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <text x="880" y="250" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">壳内浓度约 500 mg/mL</text>
+  <text x="880" y="270" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">内压达数十个大气压</text>
+  <text x="1000" y="210" font-size="11" fill="#475569">双链 DNA 靠水解 ATP 逆压泵入——壳内 DNA 浓度可与脱水晶体比肩，</text>
+  <text x="1000" y="226" font-size="11" fill="#475569">内压把它变成「上膛的弹簧」。</text>
+  <text x="1000" y="290" font-size="11" fill="#64748b">高压的另一用途：</text>
+  <text x="1000" y="306" font-size="11" fill="#64748b">感染时基因组经尾管「喷射」注入——包装能量在下一轮感染中释放。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、装多少、从哪装：两条决定方式</text>
+  <text x="50" y="646" font-size="12" fill="#1e293b" font-weight="700">λ：位点特异性（cos 切割）：</text>
+  <rect x="60" y="664" width="112" height="18" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="168" y="664" width="12" height="18" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="180" y="664" width="112" height="18" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="288" y="664" width="12" height="18" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="300" y="664" width="112" height="18" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="408" y="664" width="12" height="18" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="420" y="664" width="112" height="18" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="528" y="664" width="12" height="18" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="540" y="664" width="112" height="18" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <rect x="648" y="664" width="12" height="18" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="360" y="706" font-size="10" fill="#b45309" text-anchor="middle">连环体上的 cos 位点</text>
+  <line x1="258" y1="690" x2="258" y2="716" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="378" y1="690" x2="378" y2="716" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="230" y="724" width="176" height="20" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="318" y="738" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">单体基因组</text>
+  <text x="60" y="770" font-size="10.5" fill="#475569">末端酶在 cos 位点交错切割，产生带 12 个核苷酸 5′ 突出末端的单体——长度由位点写死。</text>
+  <text x="50" y="826" font-size="12" fill="#1e293b" font-weight="700">T4 与 P22：头部满装（headful）：</text>
+  <rect x="60" y="844" width="90" height="34" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="105" y="866" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">装满即切</text>
+  <line x1="158" y1="861" x2="208" y2="861" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="220" y="848" font-size="10.5" fill="#475569">头有多大、装多长：由此产生末端冗余与环状排列基因组（比单体多装一段、首尾循环）。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、容积耦合与 RNA 的凝聚包装</text>
+  <text x="730" y="646" font-size="12" fill="#1e293b" font-weight="700">衣壳内腔 ≈ 基因组体积的 1.5–2 倍：</text>
+  <rect x="730" y="664" width="180" height="26" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="820" y="682" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">紧密堆积的基因组</text>
+  <rect x="916" y="656" width="360" height="42" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="1096" y="680" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">衣壳内腔（1.5–2 倍）</text>
+  <text x="730" y="726" font-size="10.5" fill="#475569">统计规律把 T 数与基因组大小耦合：既容得下基因组与内部蛋白、又不浪费空腔。</text>
+  <text x="730" y="782" font-size="12" fill="#1e293b" font-weight="700">单链 RNA：凝聚包装</text>
+  <circle cx="800" cy="830" r="36" fill="#fef3c7" fill-opacity="0.75" stroke="#b45309" stroke-width="2"/>
+  <path d="M 778,830 q 5.5,-12 11,0 q 5.5,12 11,0 q 5.5,-12 11,0 q 5.5,12 11,0" fill="none" opacity="0.8" stroke="#78350f" stroke-width="3.2"/>
+  <circle cx="836" cy="838" r="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.3"/>
+  <circle cx="812" cy="846" r="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="800" y="886" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">N 蛋白＋RNA 液-液相分离</text>
+  <text x="920" y="806" font-size="10.5" fill="#475569">冠状病毒 N 蛋白与基因组 RNA 经液-液相分离压缩成凝聚体滴——不靠压力、靠相变。</text>
+  <text x="920" y="862" font-size="10.5" fill="#64748b">节段病毒另有「逐段分选」机制：每段各带信号，确保一粒毒粒配齐全套。</text>
+  <text x="730" y="934" font-size="11" fill="#64748b">DNA 靠马达硬泵、RNA 靠相变软缩——两条路线殊途同归：把基因组塞进最小的壳。</text>
+</svg>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">传播途径与感染动力学：途径、R0 与载量时程</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">呼吸道／粪-口／血液性／垂直四主干＋虫媒；麻疹 R0 12–18、1918 大流感 1.5–2.5（约五亿感染）；SARS-CoV-2 气溶胶传播 2021 年确认；载量峰值错位决定防控难度</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、传播途径总览：四条主干＋虫媒</text>
+  <rect x="50" y="196" width="118" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="109" y="227" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">呼吸道</text>
+  <text x="184" y="218" font-size="10.5" fill="#475569" font-weight="700">流感 · SARS-CoV-2 · 麻疹</text>
+  <text x="184" y="237" font-size="9.5" fill="#64748b">飞沫与气溶胶，经鼻腔入呼吸道</text>
+  <rect x="50" y="258" width="118" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="109" y="289" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">粪-口</text>
+  <text x="184" y="280" font-size="10.5" fill="#475569" font-weight="700">脊灰 · 诺如 · 甲肝</text>
+  <text x="184" y="299" font-size="9.5" fill="#64748b">粪便污染水与食物，耐环境</text>
+  <rect x="50" y="320" width="118" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="109" y="351" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">血液与性</text>
+  <text x="184" y="342" font-size="10.5" fill="#475569" font-weight="700">HIV · HBV · HCV</text>
+  <text x="184" y="361" font-size="9.5" fill="#64748b">血液、黏膜接触传播</text>
+  <rect x="50" y="382" width="118" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="109" y="413" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">垂直传播</text>
+  <text x="184" y="404" font-size="10.5" fill="#475569" font-weight="700">HBV · HCMV · 风疹（寨卡与小头畸形相关）</text>
+  <text x="184" y="423" font-size="9.5" fill="#64748b">宫内、产道与母乳</text>
+  <rect x="50" y="444" width="118" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="109" y="475" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">虫媒</text>
+  <text x="184" y="466" font-size="10.5" fill="#475569" font-weight="700">登革 · 乙脑</text>
+  <text x="184" y="485" font-size="9.5" fill="#64748b">蚊蜱叮咬注入</text>
+  <text x="50" y="522" font-size="10.5" fill="#64748b">排出门户与环境耐受性决定传播效率——同一病毒可兼走多条途径。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、基本传染数 R0 与屏障阈值</text>
+  <rect x="760" y="160" width="300" height="220" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="325" x2="1060" y2="325" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="835" y1="380" x2="835" y2="160" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="270" x2="1060" y2="270" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="910" y1="380" x2="910" y2="160" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="760" y1="215" x2="1060" y2="215" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="985" y1="380" x2="985" y2="160" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="754" y1="380" x2="760" y2="380" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="384" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="754" y1="270" x2="760" y2="270" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="274" font-size="13" fill="#64748b" text-anchor="end">10</text>
+  <line x1="754" y1="160" x2="760" y2="160" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="164" font-size="13" fill="#64748b" text-anchor="end">20</text>
+  <rect x="811.6" y="215" width="76.8" height="165" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="850" y="206" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">12–18</text>
+  <text x="850" y="400" font-size="12.5" fill="#64748b" text-anchor="middle">麻疹</text>
+  <rect x="931.6" y="358" width="76.8" height="22" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="970" y="349" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">1.5–2.5</text>
+  <text x="970" y="400" font-size="12.5" fill="#64748b" text-anchor="middle">1918 大流感</text>
+  <rect x="1090" y="210" width="260" height="96" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1220" y="236" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">Rt ＝ R0 × 易感比例</text>
+  <text x="1220" y="262" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">屏障阈值 ＝ 1 − 1/R0</text>
+  <text x="1220" y="288" font-size="9.5" fill="#64748b" text-anchor="middle">麻疹 ≈ 92%–94% · 1918 流感 ≈ 三到六成</text>
+  <text x="726" y="430" font-size="10.5" fill="#475569">1918 年大流感 R0 仅约 1.5–2.5、屏障阈值只约三到六成——但在无抗生素、无疫苗的年代仍造成约五亿人感染、约五千万人死亡：</text>
+  <text x="726" y="445" font-size="10.5" fill="#475569">R0 度量传播能力，绝非严重程度。</text>
+  <text x="726" y="486" font-size="10.5" fill="#64748b">传代间隔决定疫情倍增速度：流感约 2–3 日，一旬即可翻数番。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、呼吸道传播：粒径分工与超扩散</text>
+  <circle cx="120" cy="730" r="14" fill="none" stroke="#475569" stroke-width="2"/>
+  <rect x="106" y="748" width="28" height="40" rx="6" fill="none" stroke="#475569" stroke-width="2"/>
+  <circle cx="160" cy="716" r="4.4" fill="#0f766e"/>
+  <circle cx="176" cy="730" r="4" fill="#0f766e"/>
+  <circle cx="192" cy="744" r="3.6000000000000005" fill="#0f766e"/>
+  <circle cx="208" cy="758" r="3.2" fill="#0f766e"/>
+  <circle cx="224" cy="772" r="2.8000000000000003" fill="#0f766e"/>
+  <text x="208" y="820" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">飞沫：≥5 μm，1–2 米内沉降</text>
+  <circle cx="250" cy="660" r="2.4" fill="#dc2626"/>
+  <circle cx="274" cy="676" r="2.4" fill="#dc2626"/>
+  <circle cx="298" cy="692" r="2.4" fill="#dc2626"/>
+  <circle cx="322" cy="660" r="2.4" fill="#dc2626"/>
+  <circle cx="346" cy="676" r="2.4" fill="#dc2626"/>
+  <circle cx="370" cy="692" r="2.4" fill="#dc2626"/>
+  <circle cx="394" cy="660" r="2.4" fill="#dc2626"/>
+  <text x="330" y="706" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">气溶胶：＜5 μm，悬浮数小时、随气流远扩散</text>
+  <text x="50" y="848" font-size="10.5" fill="#475569">传统以直径 5 μm 为界区分飞沫与气溶胶；2021 年前后，</text>
+  <text x="50" y="863" font-size="10.5" fill="#475569">世界卫生组织与美国疾控机构正式确认 SARS-CoV-2 可经气溶胶传播，</text>
+  <text x="50" y="878" font-size="10.5" fill="#475569">终结数十年争论。</text>
+  <text x="560" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">继发病例数分布（高度偏态）</text>
+  <rect x="407.8" y="690" width="27.733333333333334" height="140" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="421.6666666666667" y="850" font-size="12.5" fill="#64748b" text-anchor="middle">0</text>
+  <rect x="451.1333333333333" y="780" width="27.733333333333334" height="50" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="465" y="850" font-size="12.5" fill="#64748b" text-anchor="middle">1</text>
+  <rect x="494.4666666666667" y="810" width="27.733333333333334" height="20" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="508.33333333333337" y="850" font-size="12.5" fill="#64748b" text-anchor="middle">2</text>
+  <rect x="537.8" y="820" width="27.733333333333334" height="10" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="551.6666666666666" y="850" font-size="12.5" fill="#64748b" text-anchor="middle">3</text>
+  <rect x="581.1333333333333" y="800" width="27.733333333333334" height="30" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="595" y="850" font-size="12.5" fill="#64748b" text-anchor="middle">4–9</text>
+  <rect x="624.4666666666667" y="750" width="27.733333333333334" height="80" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="638.3333333333334" y="850" font-size="12.5" fill="#64748b" text-anchor="middle">≥10</text>
+  <rect x="558.25" y="863.5" width="63.5" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="590" y="875.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">超扩散事件</text>
+  <text x="380" y="916" font-size="10" fill="#64748b">SARS 2003：教堂唱诗班、医院、</text>
+  <text x="380" y="930" font-size="10" fill="#64748b">宿舍与邮轮等封闭拥挤场所的少数感染者贡献不成比例的病例。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、载量时程：同是冠状病毒，防控难度迥异</text>
+  <rect x="766" y="680" width="500" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="766" y1="807.5" x2="1266" y2="807.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="891" y1="850" x2="891" y2="680" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="766" y1="765" x2="1266" y2="765" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1016" y1="850" x2="1016" y2="680" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="766" y1="722.5" x2="1266" y2="722.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1141" y1="850" x2="1141" y2="680" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="766" y1="850" x2="766" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="766" y="872" font-size="13" fill="#64748b" text-anchor="middle">-5</text>
+  <line x1="891" y1="850" x2="891" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="891" y="872" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1016" y1="850" x2="1016" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1016" y="872" font-size="13" fill="#64748b" text-anchor="middle">+5</text>
+  <line x1="1141" y1="850" x2="1141" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1141" y="872" font-size="13" fill="#64748b" text-anchor="middle">+10</text>
+  <line x1="1266" y1="850" x2="1266" y2="856" stroke="#475569" stroke-width="1.8"/>
+  <text x="1266" y="872" font-size="13" fill="#64748b" text-anchor="middle">+15（天）</text>
+  <line x1="760" y1="850" x2="766" y2="850" stroke="#475569" stroke-width="1.8"/>
+  <text x="756" y="854" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="760" y1="680" x2="766" y2="680" stroke="#475569" stroke-width="1.8"/>
+  <text x="756" y="684" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <path d="M776,841.5 C784.3,833.0 806.8,816.0 826,790.5 C845.2,765.0 867.7,695.6 891,688.5 C914.3,681.4 936.8,729.6 966,748 C995.2,766.4 1016.0,784.8 1066,799 C1116.0,813.2 1232.7,827.3 1266,833" fill="none" stroke="#0369a1" stroke-width="2.8"/>
+  <path d="M791,846.6 C811.8,845.5 882.7,844.9 916,839.8 C949.3,834.7 964.3,837.0 991,816 C1017.7,795.0 1051.0,735.3 1076,714 C1101.0,692.8 1117.7,680.0 1141,688.5 C1164.3,697.0 1195.2,743.8 1216,765 C1236.8,786.3 1257.7,807.5 1266,816" fill="none" stroke="#dc2626" stroke-width="2.8"/>
+  <line x1="891" y1="850" x2="891" y2="680" stroke="#475569" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="891" y="670" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">症状出现</text>
+  <rect x="726" y="641.8" width="11" height="8.4" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="745" y="649.6" font-size="10" fill="#475569">SARS-CoV-2（峰值在症状前后）</text>
+  <rect x="916" y="641.8" width="11" height="8.4" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="935" y="649.6" font-size="10" fill="#475569">SARS-CoV（峰值在发病后约第十日）</text>
+  <text x="726" y="892" font-size="10.5" fill="#475569">纵轴为病毒载量。SARS-CoV-2 前症状传播使隔离难以奏效；</text>
+  <text x="726" y="907" font-size="10.5" fill="#475569">SARS-CoV 载量高峰时患者多已就医隔离——隔离能奏效而前症状传播罕见。</text>
+  <text x="726" y="928" font-size="10.5" fill="#64748b">HIV 急性期高载量贡献不成比例的传播；麻疹出疹前后各四日传染；抗原检测宜用于载量高峰期。</text>
+</svg>

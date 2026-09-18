@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">逆转录与基因组整合：一酶三役、两次链转移与 LTR</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RT 兼 RNA 依赖 DNA 聚合酶、RNase H、DNA 依赖 DNA 聚合酶；tRNA 引负链（HIV 用 tRNALys3）；整合酶两步转酯、5 bp 缺口修复成 TSD；人类基因组约 8% 为 HERV</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、逆转录酶：一酶三役、无校读</text>
+  <ellipse cx="350" cy="300" rx="130" ry="92" fill="#fce7f3" stroke="#be185d" stroke-width="2.4"/>
+  <text x="350" y="296" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">逆转录酶 RT</text>
+  <text x="350" y="320" font-size="11" fill="#475569" text-anchor="middle">一个酶、三种活性</text>
+  <rect x="121.18" y="191.075" width="117.64" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="180" y="203.78" font-size="10.5" fill="#78350f" text-anchor="middle">RNA 依赖 DNA 聚合酶</text>
+  <line x1="210" y1="218" x2="270" y2="250" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="492.365" y="191.075" width="55.27" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="520" y="203.78" font-size="10.5" fill="#dc2626" text-anchor="middle">RNase H</text>
+  <line x1="490" y1="218" x2="430" y2="250" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="291.18" y="419.075" width="117.64" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="350" y="431.78" font-size="10.5" fill="#134e4a" text-anchor="middle">DNA 依赖 DNA 聚合酶</text>
+  <line x1="350" y1="410" x2="350" y2="394" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="50" y="476" font-size="11" fill="#475569">三种活性接力：RNA →（−）DNA → 降解 RNA → 双链 DNA。无校读、高错误率——逆转录病毒的变异引擎。</text>
+  <text x="50" y="504" font-size="11" fill="#64748b">负链由 tRNA 引发：禽类肉瘤病毒用宿主 tRNATrp，HIV-1 用 tRNALys3——tRNA 3′ 端约 18 nt 与 PBS 配对。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、两次链转移：把 U3-R-U5 复制成两端 LTR</text>
+  <text x="730" y="190" font-size="11.5" fill="#1e293b" font-weight="700">基因组 RNA 的地标：</text>
+  <line x1="730" y1="210" x2="1350" y2="210" stroke="#b45309" stroke-width="3"/>
+  <text x="730" y="232" font-size="10" fill="#b45309" text-anchor="middle" font-weight="700">5′</text>
+  <text x="1350" y="232" font-size="10" fill="#b45309" text-anchor="middle" font-weight="700">3′</text>
+  <text x="754" y="196" font-size="9.5" fill="#b45309" text-anchor="middle" font-weight="700">R·U5</text>
+  <line x1="754" y1="202" x2="754" y2="210" stroke="#b45309" stroke-width="1.4"/>
+  <text x="854" y="196" font-size="9.5" fill="#6d28d9" text-anchor="middle" font-weight="700">PBS</text>
+  <line x1="854" y1="202" x2="854" y2="210" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="924" y="196" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">（基因区）</text>
+  <line x1="924" y1="202" x2="924" y2="210" stroke="#64748b" stroke-width="1.4"/>
+  <text x="1174" y="196" font-size="9.5" fill="#6d28d9" text-anchor="middle" font-weight="700">PPT</text>
+  <line x1="1174" y1="202" x2="1174" y2="210" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="1274" y="196" font-size="9.5" fill="#b45309" text-anchor="middle" font-weight="700">U3·R</text>
+  <line x1="1274" y1="202" x2="1274" y2="210" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="801.675" y="253.925" width="56.65" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="830" y="265.42" font-size="9.5" fill="#4c1d95" text-anchor="middle">tRNA 结合</text>
+  <rect x="1149.395" y="253.925" width="61.209999999999994" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1180" y="265.42" font-size="9.5" fill="#4c1d95" text-anchor="middle">PPT 引正链</text>
+  <text x="730" y="306" font-size="11.5" fill="#1e293b" font-weight="700">两次链转移的接力：</text>
+  <rect x="730" y="320" width="170" height="40" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="815" y="340" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">（−）链强终止</text>
+  <text x="815" y="376" font-size="9.5" fill="#64748b" text-anchor="middle">第一次链转移：跳到 3′ 端</text>
+  <path d="M 760,364 C 700,400 700,420 760,436" fill="none" stroke="#be185d" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <rect x="790" y="406" width="170" height="40" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="875" y="426" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">（＋）链合成</text>
+  <text x="875" y="462" font-size="9.5" fill="#64748b" text-anchor="middle">第二次链转移：换模板到 5′ 端</text>
+  <path d="M 960,426 C 990,426 990,336 960,336" fill="none" stroke="#be185d" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <rect x="1010" y="320" width="130" height="40" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1075" y="336" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">LTR</text>
+  <text x="1075" y="352" font-size="10" fill="#134e4a" text-anchor="middle">U3·R·U5</text>
+  <line x1="1010" y1="400" x2="1140" y2="400" stroke="#0f766e" stroke-width="3"/>
+  <text x="1075" y="396" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">LTR</text>
+  <text x="1075" y="420" font-size="9.5" fill="#64748b" text-anchor="middle">（基因区）</text>
+  <text x="1075" y="444" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">LTR</text>
+  <line x1="1010" y1="424" x2="1140" y2="424" stroke="#0f766e" stroke-width="3"/>
+  <text x="1190" y="336" font-size="10.5" fill="#475569">产物质病毒 DNA：</text>
+  <text x="1190" y="351" font-size="10.5" fill="#475569">两端 LTR 完整对称。</text>
+  <text x="730" y="504" font-size="11" fill="#64748b">多嘌呤区（PPT）抗 RNase H 残留，充当正链引物；两次链转移使单拷贝的 U3-R-U5 复制成两端。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、整合酶：两步转酯完成整合</text>
+  <text x="50" y="646" font-size="12" fill="#1e293b" font-weight="700">① 3′ 加工：</text>
+  <rect x="130" y="634" width="200" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="230" y="647" font-size="9.5" fill="#134e4a" text-anchor="middle">病毒 DNA 末端（LTR）</text>
+  <rect x="130" y="634" width="18" height="18" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="139" y="670" font-size="9" fill="#dc2626" text-anchor="middle">切去 2 nt</text>
+  <text x="380" y="646" font-size="12" fill="#1e293b" font-weight="700">② 链转移：</text>
+  <path d="M380,640L380.0,640.0L382.0,637.7L384.0,635.7L386.0,634.0L388.0,632.7L390.0,632.1L392.0,632.1L394.0,632.7L396.0,634.0L398.0,635.7L400.0,637.7L402.0,640.0L404.0,642.3L406.0,644.3L408.0,646.0L410.0,647.3L412.0,647.9L414.0,647.9L416.0,647.3L418.0,646.0L420.0,644.3L422.0,642.3L424.0,640.0L426.0,637.7L428.0,635.7L430.0,634.0L432.0,632.7L434.0,632.1L436.0,632.1L438.0,632.7L440.0,634.0L442.0,635.7L444.0,637.7L446.0,640.0L448.0,642.3L450.0,644.3L452.0,646.0L454.0,647.3L456.0,647.9L458.0,647.9L460.0,647.3L462.0,646.0L464.0,644.3L466.0,642.3L468.0,640.0L470.0,637.7L472.0,635.7L474.0,634.0L476.0,632.7L478.0,632.1L480.0,632.1L482.0,632.7L484.0,634.0L486.0,635.7L488.0,637.7L490.0,640.0L492.0,642.3L494.0,644.3L496.0,646.0L498.0,647.3L500.0,647.9L502.0,647.9L504.0,647.3L506.0,646.0L508.0,644.3L510.0,642.3L512.0,640.0L514.0,637.7L516.0,635.7L518.0,634.0L520.0,632.7L522.0,632.1L524.0,632.1L526.0,632.7L528.0,634.0L530.0,635.7L532.0,637.7L534.0,640.0L536.0,642.3L538.0,644.3L540.0,646.0L542.0,647.3L544.0,647.9L546.0,647.9L548.0,647.3L550.0,646.0L552.0,644.3L554.0,642.3L556.0,640.0L558.0,637.7L560.0,635.7L562.0,634.0L564.0,632.7L566.0,632.1L568.0,632.1L570.0,632.7L572.0,634.0L574.0,635.7L576.0,637.7L578.0,640.0L580.0,642.3L582.0,644.3L584.0,646.0L586.0,647.3L588.0,647.9L590.0,647.9L592.0,647.3L594.0,646.0L596.0,644.3L598.0,642.3L600.0,640.0L602.0,637.7L604.0,635.7L606.0,634.0L608.0,632.7L610.0,632.1L612.0,632.1L614.0,632.7L616.0,634.0L618.0,635.7L620.0,637.7L622.0,640.0L624.0,642.3L626.0,644.3L628.0,646.0L630.0,647.3L632.0,647.9L634.0,647.9L636.0,647.3L638.0,646.0L640.0,644.3" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M380,640L380.0,640.0L382.0,642.3L384.0,644.3L386.0,646.0L388.0,647.3L390.0,647.9L392.0,647.9L394.0,647.3L396.0,646.0L398.0,644.3L400.0,642.3L402.0,640.0L404.0,637.7L406.0,635.7L408.0,634.0L410.0,632.7L412.0,632.1L414.0,632.1L416.0,632.7L418.0,634.0L420.0,635.7L422.0,637.7L424.0,640.0L426.0,642.3L428.0,644.3L430.0,646.0L432.0,647.3L434.0,647.9L436.0,647.9L438.0,647.3L440.0,646.0L442.0,644.3L444.0,642.3L446.0,640.0L448.0,637.7L450.0,635.7L452.0,634.0L454.0,632.7L456.0,632.1L458.0,632.1L460.0,632.7L462.0,634.0L464.0,635.7L466.0,637.7L468.0,640.0L470.0,642.3L472.0,644.3L474.0,646.0L476.0,647.3L478.0,647.9L480.0,647.9L482.0,647.3L484.0,646.0L486.0,644.3L488.0,642.3L490.0,640.0L492.0,637.7L494.0,635.7L496.0,634.0L498.0,632.7L500.0,632.1L502.0,632.1L504.0,632.7L506.0,634.0L508.0,635.7L510.0,637.7L512.0,640.0L514.0,642.3L516.0,644.3L518.0,646.0L520.0,647.3L522.0,647.9L524.0,647.9L526.0,647.3L528.0,646.0L530.0,644.3L532.0,642.3L534.0,640.0L536.0,637.7L538.0,635.7L540.0,634.0L542.0,632.7L544.0,632.1L546.0,632.1L548.0,632.7L550.0,634.0L552.0,635.7L554.0,637.7L556.0,640.0L558.0,642.3L560.0,644.3L562.0,646.0L564.0,647.3L566.0,647.9L568.0,647.9L570.0,647.3L572.0,646.0L574.0,644.3L576.0,642.3L578.0,640.0L580.0,637.7L582.0,635.7L584.0,634.0L586.0,632.7L588.0,632.1L590.0,632.1L592.0,632.7L594.0,634.0L596.0,635.7L598.0,637.7L600.0,640.0L602.0,642.3L604.0,644.3L606.0,646.0L608.0,647.3L610.0,647.9L612.0,647.9L614.0,647.3L616.0,646.0L618.0,644.3L620.0,642.3L622.0,640.0L624.0,637.7L626.0,635.7L628.0,634.0L630.0,632.7L632.0,632.1L634.0,632.1L636.0,632.7L638.0,634.0L640.0,635.7" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="391" y1="632" x2="391" y2="648" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="413" y1="648" x2="413" y2="632" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="435" y1="632" x2="435" y2="648" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="457" y1="648" x2="457" y2="632" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="479" y1="632" x2="479" y2="648" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="501" y1="648" x2="501" y2="632" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="523" y1="632" x2="523" y2="648" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="545" y1="648" x2="545" y2="632" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="567" y1="632" x2="567" y2="648" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="589" y1="648" x2="589" y2="632" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="611" y1="632" x2="611" y2="648" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="633" y1="648" x2="633" y2="632" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="510" y="674" font-size="9.5" fill="#64748b" text-anchor="middle">宿主染色体 DNA</text>
+  <line x1="420" y1="620" x2="420" y2="632" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="600" y1="620" x2="600" y2="632" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="510" y="612" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">3′-OH 攻击相距 5 bp（HIV）的两处磷酸二酯键</text>
+  <text x="50" y="722" font-size="12" fill="#1e293b" font-weight="700">③ 宿主修复缺口：</text>
+  <path d="M170,716L170.0,716.0L172.0,713.7L174.0,711.5L176.0,709.6L178.0,708.2L180.0,707.3L182.0,707.0L184.0,707.3L186.0,708.2L188.0,709.6L190.0,711.5L192.0,713.7L194.0,716.0L196.0,718.3L198.0,720.5L200.0,722.4L202.0,723.8L204.0,724.7L206.0,725.0L208.0,724.7L210.0,723.8L212.0,722.4L214.0,720.5L216.0,718.3L218.0,716.0L220.0,713.7L222.0,711.5L224.0,709.6L226.0,708.2L228.0,707.3L230.0,707.0L232.0,707.3L234.0,708.2L236.0,709.6L238.0,711.5L240.0,713.7L242.0,716.0L244.0,718.3L246.0,720.5L248.0,722.4L250.0,723.8L252.0,724.7L254.0,725.0L256.0,724.7L258.0,723.8L260.0,722.4L262.0,720.5L264.0,718.3L266.0,716.0L268.0,713.7L270.0,711.5L272.0,709.6L274.0,708.2L276.0,707.3L278.0,707.0L280.0,707.3L282.0,708.2L284.0,709.6L286.0,711.5L288.0,713.7L290.0,716.0L292.0,718.3L294.0,720.5L296.0,722.4L298.0,723.8L300.0,724.7L302.0,725.0L304.0,724.7L306.0,723.8L308.0,722.4L310.0,720.5L312.0,718.3L314.0,716.0L316.0,713.7L318.0,711.5L320.0,709.6L322.0,708.2L324.0,707.3L326.0,707.0L328.0,707.3L330.0,708.2L332.0,709.6L334.0,711.5L336.0,713.7L338.0,716.0L340.0,718.3L342.0,720.5L344.0,722.4L346.0,723.8L348.0,724.7L350.0,725.0L352.0,724.7L354.0,723.8L356.0,722.4L358.0,720.5L360.0,718.3L362.0,716.0L364.0,713.7L366.0,711.5L368.0,709.6L370.0,708.2L372.0,707.3L374.0,707.0L376.0,707.3L378.0,708.2L380.0,709.6L382.0,711.5L384.0,713.7L386.0,716.0L388.0,718.3L390.0,720.5L392.0,722.4L394.0,723.8L396.0,724.7L398.0,725.0L400.0,724.7L402.0,723.8L404.0,722.4L406.0,720.5L408.0,718.3L410.0,716.0L412.0,713.7L414.0,711.5L416.0,709.6L418.0,708.2L420.0,707.3L422.0,707.0L424.0,707.3L426.0,708.2L428.0,709.6L430.0,711.5L432.0,713.7L434.0,716.0L436.0,718.3L438.0,720.5L440.0,722.4L442.0,723.8L444.0,724.7L446.0,725.0L448.0,724.7L450.0,723.8L452.0,722.4L454.0,720.5L456.0,718.3L458.0,716.0L460.0,713.7L462.0,711.5L464.0,709.6L466.0,708.2L468.0,707.3L470.0,707.0L472.0,707.3L474.0,708.2L476.0,709.6L478.0,711.5L480.0,713.7L482.0,716.0L484.0,718.3L486.0,720.5L488.0,722.4L490.0,723.8L492.0,724.7L494.0,725.0L496.0,724.7L498.0,723.8L500.0,722.4L502.0,720.5L504.0,718.3L506.0,716.0L508.0,713.7L510.0,711.5L512.0,709.6L514.0,708.2L516.0,707.3L518.0,707.0L520.0,707.3L522.0,708.2L524.0,709.6L526.0,711.5L528.0,713.7L530.0,716.0L532.0,718.3L534.0,720.5L536.0,722.4L538.0,723.8L540.0,724.7L542.0,725.0L544.0,724.7L546.0,723.8L548.0,722.4L550.0,720.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M170,716L170.0,716.0L172.0,718.3L174.0,720.5L176.0,722.4L178.0,723.8L180.0,724.7L182.0,725.0L184.0,724.7L186.0,723.8L188.0,722.4L190.0,720.5L192.0,718.3L194.0,716.0L196.0,713.7L198.0,711.5L200.0,709.6L202.0,708.2L204.0,707.3L206.0,707.0L208.0,707.3L210.0,708.2L212.0,709.6L214.0,711.5L216.0,713.7L218.0,716.0L220.0,718.3L222.0,720.5L224.0,722.4L226.0,723.8L228.0,724.7L230.0,725.0L232.0,724.7L234.0,723.8L236.0,722.4L238.0,720.5L240.0,718.3L242.0,716.0L244.0,713.7L246.0,711.5L248.0,709.6L250.0,708.2L252.0,707.3L254.0,707.0L256.0,707.3L258.0,708.2L260.0,709.6L262.0,711.5L264.0,713.7L266.0,716.0L268.0,718.3L270.0,720.5L272.0,722.4L274.0,723.8L276.0,724.7L278.0,725.0L280.0,724.7L282.0,723.8L284.0,722.4L286.0,720.5L288.0,718.3L290.0,716.0L292.0,713.7L294.0,711.5L296.0,709.6L298.0,708.2L300.0,707.3L302.0,707.0L304.0,707.3L306.0,708.2L308.0,709.6L310.0,711.5L312.0,713.7L314.0,716.0L316.0,718.3L318.0,720.5L320.0,722.4L322.0,723.8L324.0,724.7L326.0,725.0L328.0,724.7L330.0,723.8L332.0,722.4L334.0,720.5L336.0,718.3L338.0,716.0L340.0,713.7L342.0,711.5L344.0,709.6L346.0,708.2L348.0,707.3L350.0,707.0L352.0,707.3L354.0,708.2L356.0,709.6L358.0,711.5L360.0,713.7L362.0,716.0L364.0,718.3L366.0,720.5L368.0,722.4L370.0,723.8L372.0,724.7L374.0,725.0L376.0,724.7L378.0,723.8L380.0,722.4L382.0,720.5L384.0,718.3L386.0,716.0L388.0,713.7L390.0,711.5L392.0,709.6L394.0,708.2L396.0,707.3L398.0,707.0L400.0,707.3L402.0,708.2L404.0,709.6L406.0,711.5L408.0,713.7L410.0,716.0L412.0,718.3L414.0,720.5L416.0,722.4L418.0,723.8L420.0,724.7L422.0,725.0L424.0,724.7L426.0,723.8L428.0,722.4L430.0,720.5L432.0,718.3L434.0,716.0L436.0,713.7L438.0,711.5L440.0,709.6L442.0,708.2L444.0,707.3L446.0,707.0L448.0,707.3L450.0,708.2L452.0,709.6L454.0,711.5L456.0,713.7L458.0,716.0L460.0,718.3L462.0,720.5L464.0,722.4L466.0,723.8L468.0,724.7L470.0,725.0L472.0,724.7L474.0,723.8L476.0,722.4L478.0,720.5L480.0,718.3L482.0,716.0L484.0,713.7L486.0,711.5L488.0,709.6L490.0,708.2L492.0,707.3L494.0,707.0L496.0,707.3L498.0,708.2L500.0,709.6L502.0,711.5L504.0,713.7L506.0,716.0L508.0,718.3L510.0,720.5L512.0,722.4L514.0,723.8L516.0,724.7L518.0,725.0L520.0,724.7L522.0,723.8L524.0,722.4L526.0,720.5L528.0,718.3L530.0,716.0L532.0,713.7L534.0,711.5L536.0,709.6L538.0,708.2L540.0,707.3L542.0,707.0L544.0,707.3L546.0,708.2L548.0,709.6L550.0,711.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="182" y1="707" x2="182" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="206" y1="725" x2="206" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="230" y1="707" x2="230" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="254" y1="725" x2="254" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="278" y1="707" x2="278" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="302" y1="725" x2="302" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="326" y1="707" x2="326" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="350" y1="725" x2="350" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="374" y1="707" x2="374" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="398" y1="725" x2="398" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="422" y1="707" x2="422" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="446" y1="725" x2="446" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="470" y1="707" x2="470" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="494" y1="725" x2="494" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="518" y1="707" x2="518" y2="725" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="542" y1="725" x2="542" y2="707" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <rect x="330" y="706" width="60" height="20" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="360" y="722" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">原病毒</text>
+  <path d="M 320,765 Q 320,756 329,756 M 391,756 Q 400,756 400,765" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="329" y1="756" x2="391" y2="756" stroke="#64748b" stroke-width="1.7"/>
+  <text x="360" y="780" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">5 bp 缺口修复 → TSD</text>
+  <line x1="280" y1="756" x2="320" y2="756" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <line x1="400" y1="756" x2="440" y2="756" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <text x="50" y="800" font-size="10.5" fill="#475569">两侧遂留下宿主来源的靶位点重复（TSD）；LEDGF/p75 决定整合位点偏好。</text>
+  <text x="50" y="838" font-size="10.5" fill="#64748b">整合后的原病毒随宿主染色体世代传递，LTR 支配其全部表达。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、原病毒的遗产：ERV、药靶与工具酶</text>
+  <rect x="730" y="646" width="600" height="26" rx="13" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1030" y="664" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">宿主染色体</text>
+  <rect x="960" y="640" width="140" height="38" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1030" y="656" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">原病毒</text>
+  <text x="915" y="660" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">LTR</text>
+  <text x="1145" y="660" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">LTR</text>
+  <text x="730" y="716" font-size="11" fill="#475569">逆转录也镌刻于人类基因组：约 8% 由内源性逆转录病毒（HERV）构成；合胞素是 env 驯化的典范。</text>
+  <rect x="725.78" y="758.65" width="128.44" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="790" y="771.96" font-size="11" fill="#dc2626" text-anchor="middle">齐多夫定 1987（RT）</text>
+  <rect x="926.1" y="758.65" width="147.8" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1000" y="771.96" font-size="11" fill="#134e4a" text-anchor="middle">拉替拉韦 2007（整合酶）</text>
+  <text x="920" y="812" font-size="10.5" fill="#64748b" text-anchor="middle">RT 与整合酶均为成熟药靶</text>
+  <text x="730" y="852" font-size="11" fill="#475569">RT 亦是分子生物学核心工具酶——从 RNA 到 DNA 的那一步，如今每天都在实验室里被复制。</text>
+</svg>

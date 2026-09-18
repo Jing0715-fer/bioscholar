@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">突变与准种：错误率、突变谱与错误阈值</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RdRp 无校读错误率 10⁻⁶–10⁻⁴（高 3–5 个数量级）；冠状病毒 nsp14 校读支撑 26–32 kb；Eigen 1971 准种＋Domingo 1978 Qβ 证据；错误阈值定 33 kb 上限；耐药变异预先存在</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、没有校读的聚合酶：突变率谱系</text>
+  <text x="46" y="190" font-size="11" fill="#475569">RdRp 缺乏校读，使 RNA 病毒单碱基错误率达 10⁻⁶–10⁻⁴，比校读加错配修复的细胞 DNA 聚合酶高三到五个数量级。</text>
+  <rect x="60" y="246" width="160" height="26" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="60" y="236" font-size="11.5" fill="#134e4a" font-weight="700">细胞 DNA 聚合酶（校读＋错配修复）</text>
+  <text x="140" y="264" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">10⁻¹¹–10⁻⁹</text>
+  <rect x="380" y="308" width="160" height="26" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="380" y="298" font-size="11.5" fill="#78350f" font-weight="700">冠状病毒 RdRp＋nsp14（ExoN 校读）</text>
+  <text x="460" y="326" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">≈10⁻⁷–10⁻⁵</text>
+  <rect x="460" y="370" width="160" height="26" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="460" y="360" font-size="11.5" fill="#dc2626" font-weight="700">典型 RdRp（流感等，无校读）</text>
+  <text x="540" y="388" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">10⁻⁶–10⁻⁴</text>
+  <line x1="60" y1="448" x2="640" y2="448" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="60" y1="448" x2="60" y2="455" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="470" font-size="12" fill="#64748b" text-anchor="middle">10⁻¹¹</text>
+  <line x1="220" y1="448" x2="220" y2="455" stroke="#475569" stroke-width="1.8"/>
+  <text x="220" y="470" font-size="12" fill="#64748b" text-anchor="middle">10⁻⁹</text>
+  <line x1="380" y1="448" x2="380" y2="455" stroke="#475569" stroke-width="1.8"/>
+  <text x="380" y="470" font-size="12" fill="#64748b" text-anchor="middle">10⁻⁷</text>
+  <line x1="540" y1="448" x2="540" y2="455" stroke="#475569" stroke-width="1.8"/>
+  <text x="540" y="470" font-size="12" fill="#64748b" text-anchor="middle">10⁻⁵</text>
+  <text x="350" y="496" font-size="11" fill="#475569" text-anchor="middle">单碱基错误率（对数尺度，向右升高）</text>
+  <text x="46" y="520" font-size="10.5" fill="#64748b">冠状病毒是著名例外：nsp14 兼具 3′→5′ 外切核酸酶（ExoN）活性，为聚合酶充当校读器，</text>
+  <text x="46" y="535" font-size="10.5" fill="#64748b">使突变率下降约一个数量级——26 至 32 kb 的基因组稳居 RNA 世界之最。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、准种：选择作用于突变谱整体</text>
+  <text x="880" y="208" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">突变谱（准种）</text>
+  <circle cx="880" cy="310" r="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="880" y="314" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">共有</text>
+  <circle cx="810" cy="250" r="4.4" fill="#be185d" fill-opacity="0.85" stroke="none"/>
+  <circle cx="785" cy="302" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="818" cy="354" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="866" cy="232" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="896" cy="388" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="938" cy="258" r="4.4" fill="#be185d" fill-opacity="0.85" stroke="none"/>
+  <circle cx="964" cy="332" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="950" cy="300" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="840" cy="392" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="856" cy="268" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="916" cy="292" r="4.4" fill="#be185d" fill-opacity="0.85" stroke="none"/>
+  <circle cx="924" cy="350" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="788" cy="350" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="972" cy="250" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="888" cy="316" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="828" cy="318" r="4.4" fill="#be185d" fill-opacity="0.85" stroke="none"/>
+  <circle cx="902" cy="244" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <circle cx="944" cy="372" r="4.4" fill="#0369a1" fill-opacity="0.85" stroke="none"/>
+  <text x="880" y="408" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">共有序列＝群体的加权平均</text>
+  <text x="880" y="426" font-size="9.5" fill="#64748b" text-anchor="middle">（并非真实存在的「个体」）</text>
+  <text x="880" y="470" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">Eigen 1971 年提出准种理论：</text>
+  <text x="880" y="490" font-size="10.5" fill="#475569" text-anchor="middle">复制保真度有限而群体足够大时，</text>
+  <text x="880" y="507" font-size="10.5" fill="#475569" text-anchor="middle">自然选择的对象是整个突变谱。</text>
+  <text x="1080" y="208" font-size="11.5" fill="#1e293b" font-weight="700">Domingo 1978（Qβ 噬菌体）：</text>
+  <rect x="1080" y="232" width="90" height="66" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="1125" cy="265" r="6" fill="#0369a1"/>
+  <text x="1125" y="316" font-size="10" fill="#475569" text-anchor="middle">单一克隆纯化扩增</text>
+  <line x1="1125" y1="332" x2="1125" y2="366" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="1140" y="352" font-size="9.5" fill="#831843" text-anchor="middle">仅数轮传代</text>
+  <circle cx="1087" cy="382" r="4.2" fill="#be185d" fill-opacity="0.85"/>
+  <circle cx="1155" cy="374" r="4.2" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="1131" cy="432" r="4.2" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="1099" cy="438" r="4.2" fill="#be185d" fill-opacity="0.85"/>
+  <circle cx="1169" cy="418" r="4.2" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="1121" cy="348" r="4.2" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="1177" cy="400" r="4.2" fill="#be185d" fill-opacity="0.85"/>
+  <circle cx="1069" cy="412" r="4.2" fill="#0369a1" fill-opacity="0.85"/>
+  <text x="1125" y="460" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">复杂突变谱重新恢复</text>
+  <text x="1080" y="484" font-size="10.5" fill="#475569">把单一克隆接种后再传代，</text>
+  <text x="1080" y="499" font-size="10.5" fill="#475569">群体迅速回到复杂谱——准种结构是复制保真度决定的稳态。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、错误阈值：RNA 基因组约 33 kb 的上限</text>
+  <rect x="70" y="660" width="270" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="840" x2="70" y2="846" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="862" font-size="13" fill="#64748b" text-anchor="middle">低</text>
+  <line x1="340" y1="840" x2="340" y2="846" stroke="#475569" stroke-width="1.8"/>
+  <text x="340" y="862" font-size="13" fill="#64748b" text-anchor="middle">错误率 → 高</text>
+  <path d="M70,669 C83.5,671.1 128.5,674.1 151,681.6 C173.5,689.1 190.6,700.2 205,714 C219.4,727.8 226.6,747.0 237.4,764.4 C248.2,781.8 252.7,807.0 269.8,818.4 C286.9,829.8 328.3,830.4 340,832.8" fill="none" stroke="#0369a1" stroke-width="2.8"/>
+  <line x1="237.4" y1="840" x2="237.4" y2="660" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <rect x="208.77" y="639.075" width="57.26" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="237.4" y="651.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">错误阈值</text>
+  <text x="60" y="900" font-size="10.5" fill="#475569">纵轴：突变谱的信息保持度。越过阈值后突变谱解体、</text>
+  <text x="60" y="915" font-size="10.5" fill="#475569">遗传信息无法维持——绝大多数 RNA 病毒基因组因此被压在约 33 kb 以下。</text>
+  <text x="560" y="640" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">致死诱变：把错误率推过阈值</text>
+  <circle cx="400" cy="712" r="4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="454" cy="702" r="4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="434" cy="750" r="4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="410" cy="756" r="4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="464" cy="738" r="4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="428" cy="684" r="4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="430" cy="730" r="40" fill="none" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <text x="430" y="796" font-size="10" fill="#0369a1" text-anchor="middle">阈值内：凝聚</text>
+  <line x1="486" y1="730" x2="546" y2="730" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <rect x="495.3225" y="691.925" width="41.355000000000004" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="516" y="703.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">诱变剂</text>
+  <circle cx="562" cy="692" r="4" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="658" cy="676" r="4" fill="#be185d" fill-opacity="0.8"/>
+  <circle cx="634" cy="770" r="4" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="580" cy="782" r="4" fill="#be185d" fill-opacity="0.8"/>
+  <circle cx="676" cy="742" r="4" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="616" cy="668" r="4" fill="#be185d" fill-opacity="0.8"/>
+  <circle cx="680" cy="706" r="4" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="556" cy="746" r="4" fill="#be185d" fill-opacity="0.8"/>
+  <circle cx="620" cy="730" r="62" fill="none" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="2 5"/>
+  <text x="620" y="816" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">阈值外：解体</text>
+  <text x="380" y="862" font-size="10.5" fill="#475569">「致死诱变」由此派生为治疗思路；</text>
+  <text x="380" y="877" font-size="10.5" fill="#475569">穆勒棘轮说明小群体瓶颈下适应度单向衰减——减毒选育正利用这一点。</text>
+  <text x="380" y="912" font-size="10.5" fill="#64748b">冠状病毒唯有先获得校读酶才能越界支撑 26–32 kb 大基因组。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、负链的克制、穆勒棘轮与医学含义</text>
+  <rect x="730" y="646" width="290" height="74" rx="8" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="875" y="668" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">正链 RNA 病毒</text>
+  <text x="742" y="690" font-size="9.5" fill="#475569">模板裸露、经胞质游离复制——突变率与演化速率高</text>
+  <rect x="1040" y="646" width="290" height="74" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1185" y="668" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">负链 RNA 病毒</text>
+  <text x="1052" y="690" font-size="9.5" fill="#475569">核蛋白包裹模板、膜结合复制工厂、更严瓶颈——总体更低</text>
+  <text x="730" y="764" font-size="11.5" fill="#1e293b" font-weight="700">穆勒棘轮：瓶颈逐次丢失最优突变类</text>
+  <circle cx="800" cy="842" r="34" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="825" cy="842" r="3.4" fill="#78350f"/>
+  <circle cx="817.6776695296637" cy="859.6776695296637" r="3.4" fill="#78350f"/>
+  <circle cx="800" cy="867" r="3.4" fill="#78350f"/>
+  <circle cx="782.3223304703363" cy="859.6776695296637" r="3.4" fill="#78350f"/>
+  <circle cx="775" cy="842" r="3.4" fill="#78350f"/>
+  <circle cx="782.3223304703363" cy="824.3223304703363" r="3.4" fill="#78350f"/>
+  <circle cx="800" cy="817" r="3.4" fill="#78350f"/>
+  <circle cx="817.6776695296637" cy="824.3223304703363" r="3.4" fill="#78350f"/>
+  <line x1="842" y1="842" x2="886" y2="842" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <circle cx="960" cy="842" r="24" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="968.1045345880221" cy="854.6220647721184" r="3.4" fill="#78350f"/>
+  <circle cx="953.1212385531438" cy="855.329765225136" r="3.4" fill="#78350f"/>
+  <circle cx="945.0167039651217" cy="842.7077004530175" r="3.4" fill="#78350f"/>
+  <circle cx="951.8954654119779" cy="829.3779352278816" r="3.4" fill="#78350f"/>
+  <circle cx="966.8787614468562" cy="828.670234774864" r="3.4" fill="#78350f"/>
+  <circle cx="974.9832960348783" cy="841.2922995469825" r="3.4" fill="#78350f"/>
+  <line x1="992" y1="842" x2="1056" y2="842" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <circle cx="1100" cy="842" r="16" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="1097.08697214417" cy="848.3650819877797" r="3.4" fill="#78350f"/>
+  <circle cx="1093.6349180122202" cy="839.08697214417" r="3.4" fill="#78350f"/>
+  <circle cx="1102.91302785583" cy="835.6349180122203" r="3.4" fill="#78350f"/>
+  <circle cx="1106.3650819877798" cy="844.91302785583" r="3.4" fill="#78350f"/>
+  <text x="800" y="900" font-size="9.5" fill="#64748b" text-anchor="middle">瓶颈①</text>
+  <text x="960" y="900" font-size="9.5" fill="#64748b" text-anchor="middle">瓶颈②</text>
+  <text x="1100" y="900" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">适应度衰减</text>
+  <text x="1190" y="820" font-size="10" fill="#475569">小群体逐代传递中，</text>
+  <text x="1190" y="834" font-size="10" fill="#475569">最少突变的最优类一旦随机丢失便不可复得——群体的平均适应度单向下滑。</text>
+  <rect x="828.4934000000001" y="942.65" width="383.0132" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1020" y="955.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">医学含义：耐药与免疫逃逸变异预先存在——联合用药与疫苗设计必须直面</text>
+</svg>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">毒粒装配的分子逻辑：自组装、准等价与支架蛋白</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Caspar-Klug 1962 准等价：一个亚基胜任五重／六重轴；TMV 2130 亚基、螺距 2.3 nm、1955 年两组分重建；成核-生长动力学弱键纠错；HSV 支架 VP21/VP24 用完即弃</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、自组装与准等价：少数基因搭大衣壳</text>
+  <polygon points="200,266 232.3,289.5 220,327.5 180,327.5 167.7,289.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <polygon points="284,266 271,288.5 245,288.5 232,266 245,243.5 271,243.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <polygon points="292,330 279,352.5 253,352.5 240,330 253,307.5 279,307.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <polygon points="164,334 151,356.5 125,356.5 112,334 125,311.5 151,311.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <polygon points="160,270 147,292.5 121,292.5 108,270 121,247.5 147,247.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <polygon points="226,366 213,388.5 187,388.5 174,366 187,343.5 213,343.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <polygon points="226,232 213,254.5 187,254.5 174,232 187,209.5 213,209.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="200" y="302" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">五聚体</text>
+  <text x="400" y="210" font-size="11" fill="#475569">Caspar 与 Klug（1962）准等价理论：</text>
+  <text x="400" y="226" font-size="11" fill="#475569">同一亚基只需微调构象，</text>
+  <text x="400" y="242" font-size="11" fill="#475569">即可胜任五重轴顶点与六重轴侧面两类位置。</text>
+  <text x="400" y="290" font-size="11" fill="#475569">亚基内置信息 + 弱键可逆性：装错了就拆、</text>
+  <text x="400" y="306" font-size="11" fill="#475569">重装——忠实与纠错由此保证。</text>
+  <text x="400" y="356" font-size="11" fill="#64748b">少数基因编码的蛋白，</text>
+  <text x="400" y="372" font-size="11" fill="#64748b">得以搭建庞大衣壳——几何是省基因的最大杠杆。</text>
+  <text x="200" y="396" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">一个亚基，两种座位（准等价）</text>
+  <text x="50" y="480" font-size="11" fill="#64748b">「自组装」的含义：没有酶催、没有模板指令，信息全部写在亚基的形状与结合面上。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、TMV：两组分复活病毒（1955）</text>
+  <rect x="813.8" y="253.2" width="32.4" height="93.60000000000001" rx="8.1" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="2.2"/>
+  <path d="M 813.8,262.2 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,271.6 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,281.1 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,290.6 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,300.0 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,309.4 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,318.9 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,328.4 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 813.8,337.8 q 8.1,9.072000000000001 16.2,0 q 8.1,-9.072000000000001 16.2,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="830" y1="244.2" x2="830" y2="355.8" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <text x="830" y="420" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">2130 个亚基 · 螺距 2.3 nm</text>
+  <line x1="940" y1="260" x2="1020" y2="260" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="980" y="244" font-size="9.5" fill="#64748b" text-anchor="middle">解离</text>
+  <circle cx="1060" cy="236" r="13" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1060" y="240" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">P</text>
+  <text x="1060" y="268" font-size="9.5" fill="#64748b" text-anchor="middle">衣壳蛋白</text>
+  <path d="M 1040,300 q 10,-16 20,0 q 10,16 20,0 q 10,-16 20,0 q 10,16 20,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="1080" y="330" font-size="9.5" fill="#b45309" text-anchor="middle">RNA</text>
+  <line x1="1130" y1="260" x2="1130" y2="280" stroke="#1e293b" stroke-width="2"/>
+  <line x1="1120" y1="270" x2="1140" y2="270" stroke="#1e293b" stroke-width="2"/>
+  <line x1="1180" y1="280" x2="1240" y2="300" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="1210" y="264" font-size="9.5" fill="#64748b" text-anchor="middle">混合</text>
+  <rect x="1279.2" y="298.8" width="21.6" height="62.400000000000006" rx="5.4" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="2.2"/>
+  <path d="M 1279.2,307.8 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,313.4 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,318.9 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,324.4 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,330.0 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,335.6 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,341.1 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,346.7 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 1279.2,352.2 q 5.4,6.048000000000001 10.8,0 q 5.4,-6.048000000000001 10.8,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="1290" y1="289.8" x2="1290" y2="370.2" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <text x="730" y="452" font-size="11" fill="#475569">Fraenkel-Conrat 与 Williams 把颗粒解离为蛋白与 RNA，再混合——侵染性颗粒原样重建：装配信息在蛋白亚基、</text>
+  <text x="730" y="468" font-size="11" fill="#475569">遗传信息在 RNA。</text>
+  <text x="730" y="502" font-size="11" fill="#64748b">装配自基因组内部的起始序列发起，以 20S 双层盘起始；体外数小时即可完成、产物侵染率可观。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、成核-生长：衣壳装配的动力学骨架</text>
+  <rect x="110" y="680" width="300" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="110" y1="867.5" x2="410" y2="867.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="185" y1="930" x2="185" y2="680" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="805" x2="410" y2="805" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="260" y1="930" x2="260" y2="680" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="742.5" x2="410" y2="742.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="335" y1="930" x2="335" y2="680" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110" y1="930" x2="110" y2="936" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="952" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="260" y1="930" x2="260" y2="936" stroke="#475569" stroke-width="1.8"/>
+  <text x="260" y="952" font-size="13" fill="#64748b" text-anchor="middle">时间</text>
+  <line x1="410" y1="930" x2="410" y2="936" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="952" font-size="13" fill="#64748b" text-anchor="middle">→</text>
+  <line x1="104" y1="930" x2="110" y2="930" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="934" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="104" y1="680" x2="110" y2="680" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="684" font-size="13" fill="#64748b" text-anchor="end">完成</text>
+  <text x="260" y="668" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">装配程度 vs 时间</text>
+  <path d="M110,930 C120.0,928.3 152.5,924.2 170,920 C187.5,915.8 200.0,924.2 215,905 C230.0,885.8 245.0,836.3 260,805 C275.0,773.8 290.0,736.7 305,717.5 C320.0,698.3 332.5,695.4 350,690 C367.5,684.6 400.0,685.8 410,685" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="190" y="700" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">成核限速</text>
+  <text x="330" y="810" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">快速生长</text>
+  <text x="440" y="650" font-size="11" fill="#475569">成核是慢步骤：少数亚基凑成「种子」后，</text>
+  <text x="440" y="666" font-size="11" fill="#475569">生长一泻千里——S 形曲线由此而来。</text>
+  <text x="440" y="724" font-size="11" fill="#475569">成核速率对亚基浓度高度敏感：</text>
+  <text x="440" y="740" font-size="11" fill="#475569">浓度不足则装配几乎不启动。</text>
+  <text x="440" y="788" font-size="11" fill="#475569">弱键可逆性提供质量控制：</text>
+  <text x="440" y="804" font-size="11" fill="#475569">错配中间体自发解体，只有正确衣壳存续。</text>
+  <text x="440" y="868" font-size="11" fill="#64748b">可逆＝纠错，这是自组装忠实性的来源。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、支架蛋白：临时的内部模板</text>
+  <text x="730" y="646" font-size="12.5" fill="#1e293b" font-weight="700">HSV 衣壳装配：</text>
+  <polygon points="800.0,704.0 822.5,717.0 822.5,743.0 800.0,756.0 777.5,743.0 777.5,717.0" fill="#fee2e2" fill-opacity="0.9" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="787" y1="713.88" x2="813" y2="713.88" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="777.38" y1="730" x2="822.62" y2="730" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="826" y1="730" x2="834" y2="730" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="836" cy="730" r="3.1" fill="#dc2626"/>
+  <line x1="821.0344418537486" y1="745.2824165596043" x2="827.5065778087483" y2="749.9846985779441" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="829.1246117974981" cy="751.160269082529" r="3.1" fill="#dc2626"/>
+  <line x1="808.0344418537486" y1="754.7274694236739" x2="810.5065778087483" y2="762.3359215540352" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="811.1246117974981" cy="764.2380345866255" r="3.1" fill="#dc2626"/>
+  <line x1="791.9655581462514" y1="754.7274694236739" x2="789.4934221912517" y2="762.3359215540352" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="788.8753882025019" cy="764.2380345866255" r="3.1" fill="#dc2626"/>
+  <line x1="778.9655581462514" y1="745.2824165596043" x2="772.4934221912517" y2="749.9846985779441" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="770.8753882025019" cy="751.160269082529" r="3.1" fill="#dc2626"/>
+  <line x1="774" y1="730" x2="766" y2="730" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="764" cy="730" r="3.1" fill="#dc2626"/>
+  <line x1="778.9655581462514" y1="714.7175834403957" x2="772.4934221912517" y2="710.0153014220559" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="770.8753882025019" cy="708.839730917471" r="3.1" fill="#dc2626"/>
+  <line x1="791.9655581462514" y1="705.2725305763261" x2="789.4934221912517" y2="697.6640784459648" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="788.8753882025019" cy="695.7619654133745" r="3.1" fill="#dc2626"/>
+  <line x1="808.0344418537486" y1="705.2725305763261" x2="810.5065778087483" y2="697.6640784459648" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="811.1246117974981" cy="695.7619654133745" r="3.1" fill="#dc2626"/>
+  <line x1="821.0344418537486" y1="714.7175834403957" x2="827.5065778087483" y2="710.0153014220559" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="829.1246117974981" cy="708.839730917471" r="3.1" fill="#dc2626"/>
+  <circle cx="800" cy="730" r="14" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="800" y="734" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">支架</text>
+  <line x1="848" y1="730" x2="896" y2="730" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="872" y="714" font-size="9.5" fill="#4c1d95" text-anchor="middle">UL26 自切</text>
+  <polygon points="950.0,704.0 972.5,717.0 972.5,743.0 950.0,756.0 927.5,743.0 927.5,717.0" fill="#fee2e2" fill-opacity="0.9" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="937" y1="713.88" x2="963" y2="713.88" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="927.38" y1="730" x2="972.62" y2="730" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="976" y1="730" x2="984" y2="730" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="986" cy="730" r="3.1" fill="#dc2626"/>
+  <line x1="971.0344418537486" y1="745.2824165596043" x2="977.5065778087483" y2="749.9846985779441" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="979.1246117974981" cy="751.160269082529" r="3.1" fill="#dc2626"/>
+  <line x1="958.0344418537486" y1="754.7274694236739" x2="960.5065778087483" y2="762.3359215540352" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="961.1246117974981" cy="764.2380345866255" r="3.1" fill="#dc2626"/>
+  <line x1="941.9655581462514" y1="754.7274694236739" x2="939.4934221912517" y2="762.3359215540352" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="938.8753882025019" cy="764.2380345866255" r="3.1" fill="#dc2626"/>
+  <line x1="928.9655581462514" y1="745.2824165596043" x2="922.4934221912517" y2="749.9846985779441" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="920.8753882025019" cy="751.160269082529" r="3.1" fill="#dc2626"/>
+  <line x1="924" y1="730" x2="916" y2="730" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="914" cy="730" r="3.1" fill="#dc2626"/>
+  <line x1="928.9655581462514" y1="714.7175834403957" x2="922.4934221912517" y2="710.0153014220559" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="920.8753882025019" cy="708.839730917471" r="3.1" fill="#dc2626"/>
+  <line x1="941.9655581462514" y1="705.2725305763261" x2="939.4934221912517" y2="697.6640784459648" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="938.8753882025019" cy="695.7619654133745" r="3.1" fill="#dc2626"/>
+  <line x1="958.0344418537486" y1="705.2725305763261" x2="960.5065778087483" y2="697.6640784459648" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="961.1246117974981" cy="695.7619654133745" r="3.1" fill="#dc2626"/>
+  <line x1="971.0344418537486" y1="714.7175834403957" x2="977.5065778087483" y2="710.0153014220559" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="979.1246117974981" cy="708.839730917471" r="3.1" fill="#dc2626"/>
+  <text x="950" y="734" font-size="1" text-anchor="middle"></text>
+  <path d="M934,730L934.0,730.0L936.0,727.8L938.0,726.0L940.0,724.6L942.0,724.0L944.0,724.2L946.0,725.2L948.0,726.8L950.0,728.9L952.0,731.1L954.0,733.2L956.0,734.8L958.0,735.8L960.0,736.0L962.0,735.4L964.0,734.0L966.0,732.2L968.0,730.0" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M934,730L934.0,730.0L936.0,732.2L938.0,734.0L940.0,735.4L942.0,736.0L944.0,735.8L946.0,734.8L948.0,733.2L950.0,731.1L952.0,728.9L954.0,726.8L956.0,725.2L958.0,724.2L960.0,724.0L962.0,724.6L964.0,726.0L966.0,727.8L968.0,730.0" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="942.5" y1="724" x2="942.5" y2="736" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="959.5" y1="736" x2="959.5" y2="724" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="880" y="786" font-size="10" fill="#64748b" text-anchor="middle">支架被切割、经门户排出，DNA 入驻</text>
+  <text x="1040" y="636" font-size="10.5" fill="#475569">UL26 前体自切产生蛋白酶 VP24 与支架亚基 VP21——支架用完即弃，</text>
+  <text x="1040" y="651" font-size="10.5" fill="#475569">腾出空间装基因组。</text>
+  <text x="730" y="822" font-size="12.5" fill="#1e293b" font-weight="700">衣壳装配的三条途径：</text>
+  <rect x="763.75" y="846.225" width="52.5" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="790" y="860.14" font-size="11.5" fill="#134e4a" text-anchor="middle">共装配</text>
+  <rect x="904" y="846.225" width="64" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="936" y="860.14" font-size="11.5" fill="#4c1d95" text-anchor="middle">支架辅助</text>
+  <rect x="1047.01" y="846.225" width="69.98" height="19.55" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1082" y="860.14" font-size="11.5" fill="#831843" text-anchor="middle">装配-成熟</text>
+  <text x="730" y="898" font-size="10.5" fill="#64748b">（核酸与衣壳共聚成核 / 先搭外壳再装内容 / 装完再切一刀成熟）复杂衣壳常兼用后两者。</text>
+  <text x="730" y="936" font-size="10.5" fill="#475569">代表体系：共装配——TMV；支架辅助——HSV；装配-成熟——HIV（Gag 切割成熟）。</text>
+</svg>

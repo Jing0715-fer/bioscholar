@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">病毒的定义与生命边缘：非细胞判据、结晶性与三域之外</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">吕夫 1957：只含一种核酸、严格胞内寄生、复制增殖、蛋白衣壳；TMV 可结晶（95% 蛋白+5% RNA）；无 rRNA 排除在三域之外；抗生素对病毒一律无效</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、吕夫 1957 年定义与四条非细胞判据</text>
+  <rect x="50" y="176" width="620" height="70" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="64" y="199" font-size="11.5" fill="#475569">「病毒是只含一种核酸（DNA 或 RNA）、严格活细胞内寄生、</text>
+  <text x="64" y="216" font-size="11.5" fill="#475569">以复制方式增殖并包裹于蛋白质衣壳之中的感染性实体。」——吕夫（André Lwoff），1957</text>
+  <rect x="50" y="266" width="300" height="72" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="200" y="296" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">① 只含一种核酸</text>
+  <text x="200" y="320" font-size="11.5" fill="#475569" text-anchor="middle">DNA 或 RNA 仅居其一</text>
+  <rect x="366" y="266" width="300" height="72" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="516" y="296" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">② 无核糖体</text>
+  <text x="516" y="320" font-size="11.5" fill="#475569" text-anchor="middle">无独立翻译系统</text>
+  <rect x="50" y="352" width="300" height="72" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="200" y="382" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">③ 无产能代谢</text>
+  <text x="200" y="406" font-size="11.5" fill="#475569" text-anchor="middle">不含产能代谢酶系</text>
+  <rect x="366" y="352" width="300" height="72" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="516" y="382" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">④ 复制而非二分裂</text>
+  <text x="516" y="406" font-size="11.5" fill="#475569" text-anchor="middle">借宿主机器装配子代</text>
+  <text x="50" y="462" font-size="11" fill="#475569">四条判据环环相扣，把病毒与最小的细胞也划开界限：直径不足 0.3 μm、基因组仅约 580 kb 的支原体，</text>
+  <text x="50" y="478" font-size="11" fill="#475569">也保有核糖体与产能代谢酶系。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、生命的边缘：结晶的化学分子 vs 病毒细胞</text>
+  <rect x="730" y="176" width="280" height="316" rx="10" fill="#f1f5f9" fill-opacity="0.45"/>
+  <text x="746" y="202" font-size="18" fill="#475569" font-weight="700">离体：化学大分子</text>
+  <rect x="858.3" y="212.2" width="23.400000000000002" height="67.60000000000001" rx="5.8500000000000005" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="2.2"/>
+  <path d="M 858.3,221.2 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,227.4 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,233.6 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,239.8 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,246.0 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,252.2 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,258.4 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,264.6 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M 858.3,270.8 q 5.8500000000000005,6.552000000000001 11.700000000000001,0 q 5.8500000000000005,-6.552000000000001 11.700000000000001,0" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="870" y1="203.2" x2="870" y2="288.8" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <text x="870" y="322" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">毒粒（virion）</text>
+  <text x="870" y="342" font-size="11" fill="#475569" text-anchor="middle">胞外完整感染颗粒</text>
+  <polygon points="800,396 940,380 946,388 806,404" fill="#f1f5f9" stroke="#64748b" stroke-width="1.4"/>
+  <polygon points="812,400 952,414 950,423 810,409" fill="#f8fafc" stroke="#64748b" stroke-width="1.4"/>
+  <polygon points="820,404 930,442 926,451 816,413" fill="#f1f5f9" stroke="#64748b" stroke-width="1.4"/>
+  <text x="748" y="470" font-size="10.5" fill="#475569">1935 年斯坦利将 TMV 提纯为针状结晶，</text>
+  <text x="748" y="485" font-size="10.5" fill="#475569">溶解后仍具感染性（1946 年诺贝尔化学奖）；</text>
+  <text x="748" y="500" font-size="10.5" fill="#475569">1936 年鲍登与皮里证明颗粒约 95% 为蛋白质、</text>
+  <text x="748" y="515" font-size="10.5" fill="#475569">5% 为核糖核酸。</text>
+  <rect x="1050" y="176" width="300" height="316" rx="10" fill="#ccfbf1" fill-opacity="0.45"/>
+  <text x="1066" y="202" font-size="18" fill="#475569" font-weight="700">胞内：生命属性显现</text>
+  <ellipse cx="1200" cy="250" rx="108" ry="72" fill="#f8fafc" stroke="#0f766e" stroke-width="2"/>
+  <path d="M 1140,250 q 15,-24 30,0 q 15,24 30,0 q 15,-24 30,0 q 15,24 30,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <circle cx="1230" cy="232" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="1252" cy="262" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="1200" y="322" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">病毒细胞（virocell）</text>
+  <text x="1070" y="346" font-size="11" fill="#475569">以感染细胞为病毒的生命形式：</text>
+  <text x="1070" y="362" font-size="11" fill="#475569">进入活细胞方表现复制、变异、演化与竞争。</text>
+  <line x1="1014" y1="230" x2="1042" y2="230" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <text x="1028" y="214" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">感染</text>
+  <line x1="1042" y1="492" x2="1014" y2="492" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <text x="1028" y="514" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">释放子代毒粒</text>
+  <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、细胞生物与病毒：逐项对照</text>
+  <rect x="50" y="636" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="663.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">比较项目</text>
+  <rect x="220" y="636" width="225" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="332.5" y="663.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">细胞生物</text>
+  <rect x="445" y="636" width="225" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="557.5" y="663.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">病毒</text>
+  <rect x="50" y="680" width="170" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="707.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">核酸类型</text>
+  <rect x="220" y="680" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="332.5" y="707.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">DNA 与 RNA 并存</text>
+  <rect x="445" y="680" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="557.5" y="707.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">仅一种（DNA 或 RNA）</text>
+  <rect x="50" y="724" width="620" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="724" width="170" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="751.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">核糖体与翻译</text>
+  <rect x="220" y="724" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="332.5" y="751.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">自有核糖体</text>
+  <rect x="445" y="724" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="557.5" y="751.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">无，劫持宿主翻译</text>
+  <rect x="50" y="768" width="170" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="795.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">产能代谢</text>
+  <rect x="220" y="768" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="332.5" y="795.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">自有酶系</text>
+  <rect x="445" y="768" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="557.5" y="795.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">无产能代谢</text>
+  <rect x="50" y="812" width="620" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="812" width="170" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="839.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">增殖方式</text>
+  <rect x="220" y="812" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="332.5" y="839.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">二分裂</text>
+  <rect x="445" y="812" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="557.5" y="839.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">复制与装配</text>
+  <rect x="50" y="856" width="170" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="883.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">对抗生素</text>
+  <rect x="220" y="856" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="332.5" y="883.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">敏感（细胞壁、核糖体为靶）</text>
+  <rect x="445" y="856" width="225" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="557.5" y="883.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">一律无效（缺乏靶结构）</text>
+  <text x="50" y="940" font-size="11" fill="#475569">抗生素以细菌细胞壁、核糖体等为靶——病毒缺乏这些结构，故抗生素对病毒一律无效。</text>
+  <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、三域之外：分类学的悬置</text>
+  <circle cx="790" cy="668" r="46" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="790" y="673" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">细菌</text>
+  <circle cx="950" cy="668" r="46" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="950" y="673" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">古菌</text>
+  <circle cx="1110" cy="668" r="46" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1110" y="673" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">真核生物</text>
+  <path d="M 744,737 Q 744,728 753,728 M 1147,728 Q 1156,728 1156,737" fill="none" stroke="#0369a1" stroke-width="1.7"/>
+  <line x1="753" y1="728" x2="1147" y2="728" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="950" y="752" font-size="11.5" fill="#0369a1" text-anchor="middle" font-weight="600">共享 rRNA 分子标记——伍斯（Woese）1990 年三域系统</text>
+  <rect x="1190" y="630" width="160" height="82" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <polygon points="1270.0,645.0 1283.0,652.5 1283.0,667.5 1270.0,675.0 1257.0,667.5 1257.0,652.5" fill="#fee2e2" fill-opacity="0.9" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="1262.5" y1="650.7" x2="1277.5" y2="650.7" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="1256.95" y1="660" x2="1283.05" y2="660" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="1285" y1="660" x2="1293" y2="660" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1295" cy="660" r="3.1" fill="#dc2626"/>
+  <line x1="1282.1352549156243" y1="668.8167787843871" x2="1288.6073908706237" y2="673.5190608027269" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1290.2254248593738" cy="674.6946313073119" r="3.1" fill="#dc2626"/>
+  <line x1="1274.6352549156243" y1="674.2658477444273" x2="1277.1073908706237" y2="681.8742998747886" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1277.7254248593738" cy="683.7764129073788" r="3.1" fill="#dc2626"/>
+  <line x1="1265.3647450843757" y1="674.2658477444273" x2="1262.8926091293763" y2="681.8742998747886" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1262.2745751406262" cy="683.7764129073788" r="3.1" fill="#dc2626"/>
+  <line x1="1257.8647450843757" y1="668.8167787843871" x2="1251.3926091293763" y2="673.5190608027269" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1249.7745751406262" cy="674.6946313073119" r="3.1" fill="#dc2626"/>
+  <line x1="1255" y1="660" x2="1247" y2="660" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1245" cy="660" r="3.1" fill="#dc2626"/>
+  <line x1="1257.8647450843757" y1="651.1832212156129" x2="1251.3926091293763" y2="646.4809391972731" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1249.7745751406262" cy="645.3053686926881" r="3.1" fill="#dc2626"/>
+  <line x1="1265.3647450843757" y1="645.7341522555727" x2="1262.8926091293763" y2="638.1257001252114" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1262.2745751406262" cy="636.2235870926212" r="3.1" fill="#dc2626"/>
+  <line x1="1274.6352549156243" y1="645.7341522555727" x2="1277.1073908706237" y2="638.1257001252114" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1277.7254248593738" cy="636.2235870926212" r="3.1" fill="#dc2626"/>
+  <line x1="1282.1352549156243" y1="651.1832212156129" x2="1288.6073908706237" y2="646.4809391972731" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1290.2254248593738" cy="645.3053686926881" r="3.1" fill="#dc2626"/>
+  <text x="1200" y="700" font-size="10.5" fill="#dc2626" font-weight="700">病毒：</text>
+  <text x="1200" y="714" font-size="10.5" fill="#dc2626" font-weight="700">无 rRNA 等共享分子标记</text>
+  <line x1="1156" y1="668" x2="1182" y2="668" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="1169" y="652" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">排除</text>
+  <text x="730" y="762" font-size="11" fill="#475569">病毒被排除在三域系统之外：由 ICTV 另立分类体系命名；缺乏共同祖先的分子证据，可能多系起源。</text>
+  <text x="730" y="820" font-size="12.5" fill="#1e293b" font-weight="700">抗生素为何对病毒无效：</text>
+  <rect x="748" y="852" width="84" height="40" rx="20" fill="#d1fae5" stroke="#075985" stroke-width="2.2"/>
+  <text x="790" y="918" font-size="14.5" fill="#075985" text-anchor="middle" font-weight="700">细菌</text>
+  <text x="790" y="908" font-size="10.5" fill="#64748b" text-anchor="middle">细胞壁 / 核糖体</text>
+  <polygon points="990.0,848.0 1007.3,858.0 1007.3,878.0 990.0,888.0 972.7,878.0 972.7,858.0" fill="#fee2e2" fill-opacity="0.9" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="980" y1="855.6" x2="1000" y2="855.6" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="972.6" y1="868" x2="1007.4" y2="868" stroke="#dc2626" stroke-width="1.5" opacity="0.55"/>
+  <line x1="1010" y1="868" x2="1018" y2="868" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1020" cy="868" r="3.1" fill="#dc2626"/>
+  <line x1="1006.1803398874989" y1="879.7557050458495" x2="1012.6524758424986" y2="884.4579870641893" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1014.2705098312484" cy="885.6335575687742" r="3.1" fill="#dc2626"/>
+  <line x1="996.1803398874989" y1="887.0211303259031" x2="998.6524758424986" y2="894.6295824562643" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="999.2705098312484" cy="896.5316954888546" r="3.1" fill="#dc2626"/>
+  <line x1="983.8196601125011" y1="887.0211303259031" x2="981.3475241575014" y2="894.6295824562643" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="980.7294901687516" cy="896.5316954888547" r="3.1" fill="#dc2626"/>
+  <line x1="973.8196601125011" y1="879.7557050458495" x2="967.3475241575014" y2="884.4579870641893" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="965.7294901687516" cy="885.6335575687742" r="3.1" fill="#dc2626"/>
+  <line x1="970" y1="868" x2="962" y2="868" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="960" cy="868" r="3.1" fill="#dc2626"/>
+  <line x1="973.8196601125011" y1="856.2442949541505" x2="967.3475241575014" y2="851.5420129358107" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="965.7294901687516" cy="850.3664424312258" r="3.1" fill="#dc2626"/>
+  <line x1="983.8196601125011" y1="848.9788696740969" x2="981.3475241575014" y2="841.3704175437357" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="980.7294901687516" cy="839.4683045111454" r="3.1" fill="#dc2626"/>
+  <line x1="996.1803398874989" y1="848.9788696740969" x2="998.6524758424986" y2="841.3704175437357" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="999.2705098312484" cy="839.4683045111453" r="3.1" fill="#dc2626"/>
+  <line x1="1006.1803398874989" y1="856.2442949541505" x2="1012.6524758424986" y2="851.5420129358107" stroke="#dc2626" stroke-width="1.9"/>
+  <circle cx="1014.2705098312484" cy="850.3664424312258" r="3.1" fill="#dc2626"/>
+  <text x="990" y="936" font-size="14.5" fill="#dc2626" text-anchor="middle" font-weight="700">病毒</text>
+  <rect x="1094.92" y="852.225" width="110.16000000000001" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1150" y="866.14" font-size="11.5" fill="#065f46" text-anchor="middle">抗生素命中靶点 ✓</text>
+  <rect x="1092.1025" y="886.225" width="115.795" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1150" y="900.14" font-size="11.5" fill="#dc2626" text-anchor="middle">无靶可击 → 无效 ✗</text>
+  <line x1="880" y1="872" x2="930" y2="872" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="905" y="856" font-size="10.5" fill="#64748b" text-anchor="middle">无对应结构</text>
+  <text x="730" y="952" font-size="11" fill="#475569">「病毒」指完整寄生周期实体，「毒粒」指胞外感染颗粒——概念的精确区分贯穿全书。</text>
+</svg>

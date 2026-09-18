@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">病毒转化与致瘤：检查站沦陷、原癌基因与炎症致癌</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">E6 经 E6AP 降解 p53 并激活端粒酶、E7 降解 Rb；1976 年 Bishop 与 Varmus 证明 v-src 源自细胞（1989 诺奖）；LMP1 模拟 CD40 持续点燃 NF-κB；约 12% 人类癌症归因感染</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、检查站的沦陷：Rb 与 p53 双双失守</text>
+  <circle cx="200" cy="240" r="30" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="200" y="245" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">Rb</text>
+  <circle cx="440" cy="240" r="30" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="440" y="245" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">p53</text>
+  <text x="200" y="290" font-size="10" fill="#475569" text-anchor="middle">E2F 被 Rb 扣押 → 周期刹车</text>
+  <text x="440" y="290" font-size="10" fill="#475569" text-anchor="middle">DNA 损伤哨兵 → 凋亡／修复</text>
+  <rect x="134.88" y="347.075" width="130.24" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="200" y="359.78" font-size="10.5" fill="#dc2626" text-anchor="middle">E7（高危 HPV）降解 Rb</text>
+  <line x1="200" y1="334" x2="200" y2="274" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <rect x="410.76" y="347.075" width="118.47999999999999" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="470" y="359.78" font-size="10.5" fill="#dc2626" text-anchor="middle">E6 经 E6AP 降解 p53</text>
+  <line x1="470" y1="334" x2="456" y2="272" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="470" y="400" font-size="10" fill="#475569" text-anchor="middle">并激活端粒酶 → 永生化</text>
+  <text x="50" y="452" font-size="11" fill="#475569">SV40 大 T 抗原同时扣留 Rb 与 p53、小 t 解除 PP2A 刹车；腺病毒以 E1A（Rb）＋E1B-55K／19K（p53／凋亡）</text>
+  <text x="50" y="468" font-size="11" fill="#475569">分工同一逻辑。</text>
+  <text x="50" y="496" font-size="11" fill="#64748b">宫颈癌几乎全部检出 HPV DNA——E6／E7 是高危型的「驾驶证」。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、癌基因的病毒之窗：v-src 的细胞起源</text>
+  <rect x="740" y="200" width="250" height="40" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="865" y="224" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">正常鸡基因组：c-src</text>
+  <line x1="1000" y1="220" x2="1060" y2="220" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="1030" y="204" font-size="9.5" fill="#831843" text-anchor="middle">偶然捕获</text>
+  <rect x="1064" y="200" width="270" height="40" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1199" y="218" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">禽肉瘤病毒：v-src</text>
+  <text x="1199" y="234" font-size="9.5" fill="#475569" text-anchor="middle">失去调控的酪氨酸激酶</text>
+  <text x="740" y="286" font-size="11" fill="#475569">1976 年 Bishop 与 Varmus 的杂交实验证明 v-src 序列本就存在于正常鸡基因组——原癌基因概念确立：</text>
+  <text x="740" y="302" font-size="11" fill="#475569">癌症的范式从「病毒带来什么」翻转为「细胞丢失了什么」（1989 年诺贝尔奖）。</text>
+  <text x="740" y="372" font-size="12" fill="#1e293b" font-weight="700">插入活化：</text>
+  <path d="M840,380L840.0,380.0L842.0,377.7L844.0,375.7L846.0,374.0L848.0,372.7L850.0,372.1L852.0,372.1L854.0,372.7L856.0,374.0L858.0,375.7L860.0,377.7L862.0,380.0L864.0,382.3L866.0,384.3L868.0,386.0L870.0,387.3L872.0,387.9L874.0,387.9L876.0,387.3L878.0,386.0L880.0,384.3L882.0,382.3L884.0,380.0L886.0,377.7L888.0,375.7L890.0,374.0L892.0,372.7L894.0,372.1L896.0,372.1L898.0,372.7L900.0,374.0L902.0,375.7L904.0,377.7L906.0,380.0L908.0,382.3L910.0,384.3L912.0,386.0L914.0,387.3L916.0,387.9L918.0,387.9L920.0,387.3L922.0,386.0L924.0,384.3L926.0,382.3L928.0,380.0L930.0,377.7L932.0,375.7L934.0,374.0L936.0,372.7L938.0,372.1L940.0,372.1L942.0,372.7L944.0,374.0L946.0,375.7L948.0,377.7L950.0,380.0L952.0,382.3L954.0,384.3L956.0,386.0L958.0,387.3L960.0,387.9L962.0,387.9L964.0,387.3L966.0,386.0L968.0,384.3L970.0,382.3L972.0,380.0L974.0,377.7L976.0,375.7L978.0,374.0L980.0,372.7L982.0,372.1L984.0,372.1L986.0,372.7L988.0,374.0L990.0,375.7L992.0,377.7L994.0,380.0L996.0,382.3L998.0,384.3L1000.0,386.0L1002.0,387.3L1004.0,387.9L1006.0,387.9L1008.0,387.3L1010.0,386.0L1012.0,384.3L1014.0,382.3L1016.0,380.0L1018.0,377.7L1020.0,375.7L1022.0,374.0L1024.0,372.7L1026.0,372.1L1028.0,372.1L1030.0,372.7L1032.0,374.0L1034.0,375.7L1036.0,377.7L1038.0,380.0L1040.0,382.3L1042.0,384.3L1044.0,386.0L1046.0,387.3L1048.0,387.9L1050.0,387.9L1052.0,387.3L1054.0,386.0L1056.0,384.3L1058.0,382.3L1060.0,380.0L1062.0,377.7L1064.0,375.7L1066.0,374.0L1068.0,372.7L1070.0,372.1L1072.0,372.1L1074.0,372.7L1076.0,374.0L1078.0,375.7L1080.0,377.7L1082.0,380.0L1084.0,382.3L1086.0,384.3L1088.0,386.0L1090.0,387.3L1092.0,387.9L1094.0,387.9L1096.0,387.3L1098.0,386.0L1100.0,384.3L1102.0,382.3L1104.0,380.0L1106.0,377.7L1108.0,375.7L1110.0,374.0L1112.0,372.7L1114.0,372.1L1116.0,372.1L1118.0,372.7L1120.0,374.0L1122.0,375.7L1124.0,377.7L1126.0,380.0L1128.0,382.3L1130.0,384.3L1132.0,386.0L1134.0,387.3L1136.0,387.9L1138.0,387.9L1140.0,387.3L1142.0,386.0L1144.0,384.3L1146.0,382.3L1148.0,380.0L1150.0,377.7L1152.0,375.7L1154.0,374.0L1156.0,372.7L1158.0,372.1L1160.0,372.1L1162.0,372.7L1164.0,374.0L1166.0,375.7L1168.0,377.7L1170.0,380.0" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M840,380L840.0,380.0L842.0,382.3L844.0,384.3L846.0,386.0L848.0,387.3L850.0,387.9L852.0,387.9L854.0,387.3L856.0,386.0L858.0,384.3L860.0,382.3L862.0,380.0L864.0,377.7L866.0,375.7L868.0,374.0L870.0,372.7L872.0,372.1L874.0,372.1L876.0,372.7L878.0,374.0L880.0,375.7L882.0,377.7L884.0,380.0L886.0,382.3L888.0,384.3L890.0,386.0L892.0,387.3L894.0,387.9L896.0,387.9L898.0,387.3L900.0,386.0L902.0,384.3L904.0,382.3L906.0,380.0L908.0,377.7L910.0,375.7L912.0,374.0L914.0,372.7L916.0,372.1L918.0,372.1L920.0,372.7L922.0,374.0L924.0,375.7L926.0,377.7L928.0,380.0L930.0,382.3L932.0,384.3L934.0,386.0L936.0,387.3L938.0,387.9L940.0,387.9L942.0,387.3L944.0,386.0L946.0,384.3L948.0,382.3L950.0,380.0L952.0,377.7L954.0,375.7L956.0,374.0L958.0,372.7L960.0,372.1L962.0,372.1L964.0,372.7L966.0,374.0L968.0,375.7L970.0,377.7L972.0,380.0L974.0,382.3L976.0,384.3L978.0,386.0L980.0,387.3L982.0,387.9L984.0,387.9L986.0,387.3L988.0,386.0L990.0,384.3L992.0,382.3L994.0,380.0L996.0,377.7L998.0,375.7L1000.0,374.0L1002.0,372.7L1004.0,372.1L1006.0,372.1L1008.0,372.7L1010.0,374.0L1012.0,375.7L1014.0,377.7L1016.0,380.0L1018.0,382.3L1020.0,384.3L1022.0,386.0L1024.0,387.3L1026.0,387.9L1028.0,387.9L1030.0,387.3L1032.0,386.0L1034.0,384.3L1036.0,382.3L1038.0,380.0L1040.0,377.7L1042.0,375.7L1044.0,374.0L1046.0,372.7L1048.0,372.1L1050.0,372.1L1052.0,372.7L1054.0,374.0L1056.0,375.7L1058.0,377.7L1060.0,380.0L1062.0,382.3L1064.0,384.3L1066.0,386.0L1068.0,387.3L1070.0,387.9L1072.0,387.9L1074.0,387.3L1076.0,386.0L1078.0,384.3L1080.0,382.3L1082.0,380.0L1084.0,377.7L1086.0,375.7L1088.0,374.0L1090.0,372.7L1092.0,372.1L1094.0,372.1L1096.0,372.7L1098.0,374.0L1100.0,375.7L1102.0,377.7L1104.0,380.0L1106.0,382.3L1108.0,384.3L1110.0,386.0L1112.0,387.3L1114.0,387.9L1116.0,387.9L1118.0,387.3L1120.0,386.0L1122.0,384.3L1124.0,382.3L1126.0,380.0L1128.0,377.7L1130.0,375.7L1132.0,374.0L1134.0,372.7L1136.0,372.1L1138.0,372.1L1140.0,372.7L1142.0,374.0L1144.0,375.7L1146.0,377.7L1148.0,380.0L1150.0,382.3L1152.0,384.3L1154.0,386.0L1156.0,387.3L1158.0,387.9L1160.0,387.9L1162.0,387.3L1164.0,386.0L1166.0,384.3L1168.0,382.3L1170.0,380.0" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="851" y1="372" x2="851" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="873" y1="388" x2="873" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="895" y1="372" x2="895" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="917" y1="388" x2="917" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="939" y1="372" x2="939" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="961" y1="388" x2="961" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="983" y1="372" x2="983" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1005" y1="388" x2="1005" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1027" y1="372" x2="1027" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1049" y1="388" x2="1049" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1071" y1="372" x2="1071" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1093" y1="388" x2="1093" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1115" y1="372" x2="1115" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1137" y1="388" x2="1137" y2="372" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1159" y1="372" x2="1159" y2="388" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <rect x="920" y="372" width="70" height="16" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="955" y="384" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">前病毒</text>
+  <rect x="1090" y="372" width="60" height="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1120" y="384" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">c-myc</text>
+  <line x1="990" y1="360" x2="1090" y2="360" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="1040" y="346" font-size="9.5" fill="#dc2626" text-anchor="middle">顺式激活</text>
+  <text x="740" y="424" font-size="10.5" fill="#475569">禽白血病病毒把前病毒插到 c-myc 旁顺式激活——不带癌基因的逆转录病毒也能致癌。</text>
+  <text x="740" y="464" font-size="10.5" fill="#64748b">转导（带基因）与插入（插基因）是逆转录病毒致癌的两条路。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、LMP1 以假乱真与炎症-再生循环</text>
+  <circle cx="180" cy="700" r="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="180" y="704" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">LMP1</text>
+  <line x1="218" y1="700" x2="268" y2="700" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="243" y="684" font-size="9.5" fill="#64748b" text-anchor="middle">模拟</text>
+  <circle cx="300" cy="700" r="34" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="300" y="704" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">CD40</text>
+  <line x1="336" y1="700" x2="400" y2="700" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="368" y="684" font-size="9.5" fill="#dc2626" text-anchor="middle">组成性</text>
+  <rect x="404" y="676" width="210" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="509" y="696" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">NF-κB 持续点燃</text>
+  <text x="509" y="714" font-size="9.5" fill="#475569" text-anchor="middle">B 细胞增殖不刹车</text>
+  <text x="50" y="762" font-size="11" fill="#475569">EB 病毒 LMP1 模拟「已收到 T 细胞救援信号」的 CD40——无需配体、永不断电的假开关。</text>
+  <text x="50" y="810" font-size="12" fill="#1e293b" font-weight="700">HBV／HCV：慢性炎症—再生循环致癌</text>
+  <rect x="90" y="836.65" width="60" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="120" y="849.96" font-size="11" fill="#78350f" text-anchor="middle">慢性炎症</text>
+  <line x1="190" y1="846" x2="230" y2="846" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="238.5" y="836.65" width="115" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="296" y="849.96" font-size="11" fill="#78350f" text-anchor="middle">肝细胞反复坏死再生</text>
+  <line x1="396" y1="846" x2="436" y2="846" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <rect x="475" y="836.65" width="82" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="516" y="849.96" font-size="11" fill="#dc2626" text-anchor="middle">突变累积成癌</text>
+  <text x="50" y="892" font-size="11" fill="#64748b">乙肝疫苗使儿童肝癌发病率下降约七成——防感染即防癌的最好例证。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、肿瘤病毒学简史与感染归因</text>
+  <line x1="740" y1="760" x2="1340" y2="760" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="770" cy="760" r="6.5" fill="#0f766e"/>
+  <line x1="770" y1="769" x2="770" y2="790" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="770" y="810" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1911 Rous</text>
+  <text x="770" y="830" font-size="12" fill="#64748b" text-anchor="middle">发现禽肉瘤病毒</text>
+  <circle cx="956" cy="760" r="6.5" fill="#b45309"/>
+  <line x1="956" y1="751" x2="956" y2="730" stroke="#b45309" stroke-width="1.7"/>
+  <text x="956" y="710" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1964 EB 病毒</text>
+  <text x="956" y="690" font-size="12" fill="#64748b" text-anchor="middle">伯基特淋巴瘤培养细胞电镜窥见</text>
+  <circle cx="1148" cy="760" r="6.5" fill="#dc2626"/>
+  <line x1="1148" y1="769" x2="1148" y2="790" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1148" y="810" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1976 v-src 细胞起源</text>
+  <text x="1148" y="830" font-size="12" fill="#64748b" text-anchor="middle">原癌基因 · 1989 诺奖</text>
+  <circle cx="1310" cy="760" r="6.5" fill="#059669"/>
+  <line x1="1310" y1="751" x2="1310" y2="730" stroke="#059669" stroke-width="1.7"/>
+  <text x="1310" y="710" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">疫苗防癌</text>
+  <text x="1310" y="690" font-size="12" fill="#64748b" text-anchor="middle">儿童肝癌降约七成</text>
+  <text x="1040" y="700" font-size="10" fill="#64748b" text-anchor="middle">（Rous 迟至 1966 年获诺贝尔奖）</text>
+  <text x="730" y="852" font-size="12.5" fill="#1e293b" font-weight="700">感染归因：约一成二人类癌症</text>
+  <rect x="940" y="836" width="300" height="22" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="940" y="836" width="36" height="22" fill="#dc2626" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="1090" y="851" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">≈ 12%</text>
+  <text x="730" y="892" font-size="11" fill="#475569">主要病毒因子：高危 HPV、EB 病毒、HBV 与 HCV、HTLV-1、HHV-8。</text>
+  <text x="730" y="928" font-size="10.5" fill="#64748b">致癌不是病毒的「目的」——只是它劫持增殖机器的副产品被时间放大。</text>
+</svg>

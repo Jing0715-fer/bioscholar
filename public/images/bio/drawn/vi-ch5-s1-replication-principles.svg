@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">病毒基因组复制的总原则：场所、聚合酶来源与中间体</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">核内（借宿主 Pol II）vs 胞质（自带聚合酶）；聚合酶三来源；RNA 复制经复制型与分枝中间体、正负链不对称；立即早期—早期—晚期级联调度资源</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、复制场所：核内与胞质两大阵营</text>
+  <ellipse cx="350" cy="350" rx="300" ry="172" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <circle cx="230" cy="330" r="84" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="259.4" cy="309" r="18.48" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 181.47026584331093,356.08648227085064 q 25.2,-21 50.4,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 277.1072445941597,357.64941305760277 q 25.2,-21 50.4,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 248.0711727547311,286.03598418630435 q 25.2,-21 50.4,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="195.28" y="239.8" width="69.44" height="20.4" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="230" y="254.32" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">核内阵营</text>
+  <text x="130" y="448" font-size="10.5" fill="#475569">须用宿主 Pol II 者：入核转录复制——SV40、腺病毒、</text>
+  <text x="130" y="463" font-size="10.5" fill="#475569">疱疹病毒、乳多空病毒。</text>
+  <rect x="380" y="260" width="250" height="160" rx="10" fill="#e0f2fe" fill-opacity="0.45"/>
+  <text x="396" y="286" font-size="18" fill="#475569" font-weight="700">胞质阵营</text>
+  <rect x="467.25" y="320.225" width="75.5" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="505" y="334.14" font-size="11.5" fill="#075985" text-anchor="middle">痘病毒工厂</text>
+  <polygon points="505.0,368.0 515.4,374.0 515.4,386.0 505.0,392.0 494.6,386.0 494.6,374.0" fill="#fee2e2" fill-opacity="0.9" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="499" y1="372.56" x2="511" y2="372.56" stroke="#b45309" stroke-width="1.5" opacity="0.55"/>
+  <line x1="494.56" y1="380" x2="515.44" y2="380" stroke="#b45309" stroke-width="1.5" opacity="0.55"/>
+  <line x1="517" y1="380" x2="525" y2="380" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="527" cy="380" r="3.1" fill="#b45309"/>
+  <line x1="514.7082039324994" y1="387.05342302750967" x2="521.1803398874989" y2="391.7557050458495" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="522.7983738762489" cy="392.9312755504344" r="3.1" fill="#b45309"/>
+  <line x1="508.7082039324994" y1="391.41267819554184" x2="511.180339887499" y2="399.0211303259031" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="511.79837387624883" cy="400.9232433584934" r="3.1" fill="#b45309"/>
+  <line x1="501.2917960675006" y1="391.41267819554184" x2="498.819660112501" y2="399.0211303259031" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="498.20162612375117" cy="400.9232433584934" r="3.1" fill="#b45309"/>
+  <line x1="495.2917960675006" y1="387.05342302750967" x2="488.8196601125011" y2="391.7557050458495" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="487.20162612375117" cy="392.9312755504344" r="3.1" fill="#b45309"/>
+  <line x1="493" y1="380" x2="485" y2="380" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="483" cy="380" r="3.1" fill="#b45309"/>
+  <line x1="495.2917960675006" y1="372.94657697249033" x2="488.819660112501" y2="368.2442949541505" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="487.20162612375117" cy="367.0687244495656" r="3.1" fill="#b45309"/>
+  <line x1="501.2917960675006" y1="368.58732180445816" x2="498.819660112501" y2="360.9788696740969" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="498.20162612375117" cy="359.0767566415066" r="3.1" fill="#b45309"/>
+  <line x1="508.7082039324994" y1="368.58732180445816" x2="511.1803398874989" y2="360.9788696740969" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="511.79837387624883" cy="359.0767566415066" r="3.1" fill="#b45309"/>
+  <line x1="514.7082039324994" y1="372.94657697249033" x2="521.1803398874989" y2="368.2442949541505" stroke="#b45309" stroke-width="1.9"/>
+  <circle cx="522.7983738762489" cy="367.0687244495656" r="3.1" fill="#b45309"/>
+  <text x="505" y="414" font-size="10.5" fill="#475569" text-anchor="middle">大多数 RNA 病毒</text>
+  <text x="390" y="448" font-size="10.5" fill="#475569">基因组不可被宿主读取者：</text>
+  <text x="390" y="463" font-size="10.5" fill="#475569">自带聚合酶留在胞质——痘病毒、大多数 RNA 病毒。</text>
+  <text x="50" y="500" font-size="11" fill="#64748b">选址逻辑：能否借用宿主聚合酶、基因组的「可读性」——两问答案决定毒粒开包后的去向。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、聚合酶的三大来源</text>
+  <rect x="709.5488" y="197.8" width="116.9024" height="20.4" rx="7" fill="#0f766e22" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="768" y="212.32" font-size="12" fill="#0f766e" text-anchor="middle" font-weight="700">① 完全借用宿主酶</text>
+  <text x="930" y="196" font-size="10.5" fill="#475569">环状小 DNA 基因组直接调用宿主复制机器：Pol α/δ、Pol II 一应俱全。</text>
+  <text x="930" y="266" font-size="10" fill="#0f766e" font-weight="700">代表：SV40 · 乳多空病毒</text>
+  <ellipse cx="790" cy="260" rx="40" ry="24" fill="#f8fafc" stroke="#0f766e" stroke-width="2"/>
+  <text x="790" y="264" font-size="9" fill="#134e4a" text-anchor="middle">宿主</text>
+  <line x1="836" y1="260" x2="868" y2="260" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <ellipse cx="896" cy="260" rx="26" ry="17" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="896" y="264" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">Pol</text>
+  <rect x="728.0888" y="319.8" width="79.8224" height="20.4" rx="7" fill="#dc262622" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="768" y="334.32" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">② 毒粒自带</text>
+  <text x="930" y="318" font-size="10.5" fill="#475569">基因组不可被宿主读取者，毒粒必携 RdRp——或如痘病毒整套转录系随颗粒包装。</text>
+  <text x="930" y="388" font-size="10" fill="#dc2626" font-weight="700">代表：负链 RNA 病毒 · 痘病毒</text>
+  <circle cx="800" cy="382" r="14" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="814" y1="382" x2="826" y2="382" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="826" cy="382" r="4.6" fill="#dc2626"/>
+  <line x1="812.1243556529821" y1="389" x2="822.5166604983954" y2="395" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="822.5166604983954" cy="395" r="4.6" fill="#dc2626"/>
+  <line x1="807" y1="394.12435565298216" x2="813" y2="404.5166604983954" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="813" cy="404.5166604983954" r="4.6" fill="#dc2626"/>
+  <line x1="800" y1="396" x2="800" y2="408" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="800" cy="408" r="4.6" fill="#dc2626"/>
+  <line x1="793" y1="394.12435565298216" x2="787" y2="404.5166604983954" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="787" cy="404.5166604983954" r="4.6" fill="#dc2626"/>
+  <line x1="787.8756443470179" y1="389" x2="777.4833395016046" y2="395" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="777.4833395016046" cy="395" r="4.6" fill="#dc2626"/>
+  <line x1="786" y1="382" x2="774" y2="382" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="774" cy="382" r="4.6" fill="#dc2626"/>
+  <line x1="787.8756443470179" y1="375" x2="777.4833395016046" y2="369" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="777.4833395016046" cy="369" r="4.6" fill="#dc2626"/>
+  <line x1="793" y1="369.87564434701784" x2="787" y2="359.48333950160463" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="787" cy="359.48333950160463" r="4.6" fill="#dc2626"/>
+  <line x1="800" y1="368" x2="800" y2="356" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="800" cy="356" r="4.6" fill="#dc2626"/>
+  <line x1="807" y1="369.87564434701784" x2="813" y2="359.4833395016046" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="813" cy="359.4833395016046" r="4.6" fill="#dc2626"/>
+  <line x1="812.1243556529821" y1="375" x2="822.5166604983954" y2="369" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="822.5166604983954" cy="369" r="4.6" fill="#dc2626"/>
+  <path d="M 792.3,382.0 L 793.3,386.6 L 794.2,387.7 L 795.2,384.5 L 796.1,379.4 L 797.1,376.3 L 798.1,377.5 L 799.0,382.1 L 800.0,386.7 L 801.0,387.7 L 801.9,384.4 L 802.9,379.3 L 803.8,376.2 L 804.8,377.5 L 805.8,382.2 L 806.7,386.7 L 807.7,387.7 " fill="none" opacity="0.85" stroke="#dc2626" stroke-width="4.4"/>
+  <circle cx="866" cy="382" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="866" y="386" font-size="7.5" fill="#831843" text-anchor="middle" font-weight="700">RdRp</text>
+  <text x="866" y="408" font-size="9" fill="#64748b" text-anchor="middle">随毒粒进胞</text>
+  <rect x="715.7288" y="441.8" width="104.5424" height="20.4" rx="7" fill="#b4530922" stroke="#b45309" stroke-width="1.5"/>
+  <text x="768" y="456.32" font-size="12" fill="#b45309" text-anchor="middle" font-weight="700">③ 感染后新合成</text>
+  <text x="930" y="440" font-size="10.5" fill="#475569">基因组即 mRNA：进胞先翻译出聚合酶，再回头开始复制。</text>
+  <text x="930" y="510" font-size="10" fill="#b45309" font-weight="700">代表：＋ssRNA 病毒（小 RNA 病毒等）</text>
+  <path d="M 770,496 q 8.75,-14 17.5,0 q 8.75,14 17.5,0 q 8.75,-14 17.5,0 q 8.75,14 17.5,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <path d="M 854,507.2 a 12 8 0 0 1 24,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 858,508 a 8 6 0 0 0 16,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <text x="866" y="534" font-size="9" fill="#64748b" text-anchor="middle">先翻译、后复制</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、复制型与分枝状中间体：正负链不对称</text>
+  <text x="95" y="656" font-size="11" fill="#b45309" text-anchor="middle" font-weight="700">＋RNA</text>
+  <line x1="60" y1="668" x2="130" y2="668" stroke="#b45309" stroke-width="3"/>
+  <line x1="140" y1="668" x2="180" y2="668" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="190" y="656" width="120" height="24" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <path d="M196,668L196.0,668.0L198.0,665.8L200.0,663.8L202.0,662.2L204.0,660.9L206.0,660.2L208.0,660.0L210.0,660.5L212.0,661.5L214.0,663.0L216.0,664.8L218.0,666.9L220.0,669.1L222.0,671.2L224.0,673.0L226.0,674.5L228.0,675.5L230.0,676.0L232.0,675.8L234.0,675.1L236.0,673.8L238.0,672.2L240.0,670.2L242.0,668.0L244.0,665.8L246.0,663.8L248.0,662.2L250.0,660.9L252.0,660.2L254.0,660.0L256.0,660.5L258.0,661.5L260.0,663.0L262.0,664.8L264.0,666.9L266.0,669.1L268.0,671.2L270.0,673.0L272.0,674.5L274.0,675.5L276.0,676.0L278.0,675.8L280.0,675.1L282.0,673.8L284.0,672.2L286.0,670.2L288.0,668.0L290.0,665.8L292.0,663.8L294.0,662.2L296.0,660.9L298.0,660.2L300.0,660.0L302.0,660.5L304.0,661.5" fill="none" stroke="#b45309" stroke-width="2.6"/>
+  <path d="M196,668L196.0,668.0L198.0,670.2L200.0,672.2L202.0,673.8L204.0,675.1L206.0,675.8L208.0,676.0L210.0,675.5L212.0,674.5L214.0,673.0L216.0,671.2L218.0,669.1L220.0,666.9L222.0,664.8L224.0,663.0L226.0,661.5L228.0,660.5L230.0,660.0L232.0,660.2L234.0,660.9L236.0,662.2L238.0,663.8L240.0,665.8L242.0,668.0L244.0,670.2L246.0,672.2L248.0,673.8L250.0,675.1L252.0,675.8L254.0,676.0L256.0,675.5L258.0,674.5L260.0,673.0L262.0,671.2L264.0,669.1L266.0,666.9L268.0,664.8L270.0,663.0L272.0,661.5L274.0,660.5L276.0,660.0L278.0,660.2L280.0,660.9L282.0,662.2L284.0,663.8L286.0,665.8L288.0,668.0L290.0,670.2L292.0,672.2L294.0,673.8L296.0,675.1L298.0,675.8L300.0,676.0L302.0,675.5L304.0,674.5" fill="none" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="207.5" y1="660" x2="207.5" y2="676" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="230.5" y1="676" x2="230.5" y2="660" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="253.5" y1="660" x2="253.5" y2="676" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="276.5" y1="676" x2="276.5" y2="660" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="299.5" y1="660" x2="299.5" y2="676" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <text x="250" y="700" font-size="10" fill="#64748b" text-anchor="middle">复制型（RF，双链）</text>
+  <line x1="320" y1="668" x2="360" y2="668" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="370" y="640" width="150" height="56" rx="7" fill="#f1f5f9" stroke="#b45309" stroke-width="1.5"/>
+  <path d="M380,668L380.0,668.0L382.0,666.0L384.0,664.1L386.0,662.5L388.0,661.2L390.0,660.4L392.0,660.0L394.0,660.1L396.0,660.8L398.0,661.8L400.0,663.3L402.0,665.1L404.0,667.0L406.0,669.0L408.0,670.9L410.0,672.7L412.0,674.2L414.0,675.2L416.0,675.9L418.0,676.0L420.0,675.6L422.0,674.8L424.0,673.5L426.0,671.9L428.0,670.0L430.0,668.0L432.0,666.0L434.0,664.1L436.0,662.5L438.0,661.2L440.0,660.4L442.0,660.0L444.0,660.1L446.0,660.8L448.0,661.8L450.0,663.3L452.0,665.1L454.0,667.0L456.0,669.0L458.0,670.9L460.0,672.7L462.0,674.2L464.0,675.2L466.0,675.9L468.0,676.0L470.0,675.6L472.0,674.8L474.0,673.5L476.0,671.9L478.0,670.0L480.0,668.0L482.0,666.0L484.0,664.1L486.0,662.5L488.0,661.2L490.0,660.4L492.0,660.0L494.0,660.1L496.0,660.8L498.0,661.8L500.0,663.3L502.0,665.1L504.0,667.0L506.0,669.0L508.0,670.9L510.0,672.7" fill="none" stroke="#b45309" stroke-width="2.6"/>
+  <path d="M380,668L380.0,668.0L382.0,670.0L384.0,671.9L386.0,673.5L388.0,674.8L390.0,675.6L392.0,676.0L394.0,675.9L396.0,675.2L398.0,674.2L400.0,672.7L402.0,670.9L404.0,669.0L406.0,667.0L408.0,665.1L410.0,663.3L412.0,661.8L414.0,660.8L416.0,660.1L418.0,660.0L420.0,660.4L422.0,661.2L424.0,662.5L426.0,664.1L428.0,666.0L430.0,668.0L432.0,670.0L434.0,671.9L436.0,673.5L438.0,674.8L440.0,675.6L442.0,676.0L444.0,675.9L446.0,675.2L448.0,674.2L450.0,672.7L452.0,670.9L454.0,669.0L456.0,667.0L458.0,665.1L460.0,663.3L462.0,661.8L464.0,660.8L466.0,660.1L468.0,660.0L470.0,660.4L472.0,661.2L474.0,662.5L476.0,664.1L478.0,666.0L480.0,668.0L482.0,670.0L484.0,671.9L486.0,673.5L488.0,674.8L490.0,675.6L492.0,676.0L494.0,675.9L496.0,675.2L498.0,674.2L500.0,672.7L502.0,670.9L504.0,669.0L506.0,667.0L508.0,665.1L510.0,663.3" fill="none" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="392.5" y1="660" x2="392.5" y2="676" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="417.5" y1="676" x2="417.5" y2="660" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="442.5" y1="660" x2="442.5" y2="676" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="467.5" y1="676" x2="467.5" y2="660" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="492.5" y1="660" x2="492.5" y2="676" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
+  <line x1="420" y1="660" x2="420" y2="620" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="480" y1="676" x2="480" y2="716" stroke="#b45309" stroke-width="2.4"/>
+  <text x="445" y="714" font-size="10" fill="#64748b" text-anchor="middle">分枝状复制中间体</text>
+  <line x1="530" y1="668" x2="570" y2="668" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <path d="M 580,660 q 11.25,-14 22.5,0 q 11.25,14 22.5,0 q 11.25,-14 22.5,0 q 11.25,14 22.5,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <path d="M 580,690 q 11.25,-14 22.5,0 q 11.25,14 22.5,0 q 11.25,-14 22.5,0 q 11.25,14 22.5,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="625" y="724" font-size="10" fill="#b45309" text-anchor="middle" font-weight="700">大量子代＋链</text>
+  <text x="50" y="782" font-size="12.5" fill="#1e293b" font-weight="700">产出高度不对称：</text>
+  <rect x="190" y="798" width="300" height="22" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="346" y="813" font-size="10.5" fill="#78350f" text-anchor="middle">（＋）链：海量——装进毒粒、兼作 mRNA</text>
+  <rect x="190" y="832" width="70" height="22" fill="#f1f5f9" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="270" y="847" font-size="10.5" fill="#dc2626" text-anchor="middle">（−）链：仅作模板</text>
+  <text x="50" y="896" font-size="11" fill="#475569">RNA 复制经复制型（RF）与分枝状复制中间体运转；子代链从中间体上不断「收割」，正链远多于负链。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、转录的对称性与时序级联</text>
+  <text x="730" y="646" font-size="12.5" fill="#1e293b" font-weight="700">对称 vs 非对称转录：</text>
+  <rect x="730" y="664" width="260" height="60" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <path d="M 760,686 q 11.25,-12 22.5,0 q 11.25,12 22.5,0 q 11.25,-12 22.5,0 q 11.25,12 22.5,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <path d="M 880,686 q 11.25,-12 22.5,0 q 11.25,12 22.5,0 q 11.25,-12 22.5,0 q 11.25,12 22.5,0" fill="none" opacity="0.8" stroke="#0f766e" stroke-width="3.2"/>
+  <text x="860" y="712" font-size="10" fill="#475569" text-anchor="middle">对称（呼肠孤特例）：两条链都当模板</text>
+  <rect x="1010" y="664" width="320" height="60" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <line x1="1040" y1="686" x2="1090" y2="686" stroke="#0f766e" stroke-width="3"/>
+  <path d="M 1100,686 q 15,-12 30,0 q 15,12 30,0 q 15,-12 30,0 q 15,12 30,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="1170" y="712" font-size="10" fill="#475569" text-anchor="middle">非对称（主流）：只产（＋）mRNA</text>
+  <text x="860" y="744" font-size="10.5" fill="#64748b" text-anchor="middle">聚合酶在「转录」与「复制」两模式间由辅助因子切换</text>
+  <text x="730" y="782" font-size="12.5" fill="#1e293b" font-weight="700">立即早期—早期—晚期级联：</text>
+  <rect x="730" y="892.6666666666666" width="200.66666666666666" height="43.333333333333336" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="744" y="916.6666666666666" font-size="11" fill="#1e293b">立即早期：接管与防御</text>
+  <rect x="936.6666666666666" y="849.3333333333334" width="200.66666666666666" height="43.333333333333336" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="950.6666666666666" y="873.3333333333334" font-size="11" fill="#1e293b">早期：造复制工具</text>
+  <rect x="1143.3333333333333" y="806" width="200.66666666666666" height="43.333333333333336" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1157.3333333333333" y="830" font-size="11" fill="#1e293b">晚期：造结构建材</text>
+  <text x="1040" y="962" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">「先造工具、后造建材」的资源调度</text>
+</svg>

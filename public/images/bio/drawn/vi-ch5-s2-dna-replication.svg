@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 病毒复制：从 SV40 极简借用到痘病毒全自营</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">SV40 约 5.2 kb 大 T 抗原一蛋白三职并劫持 Rb/p53；HSV-1 约 152 kb 滚动环产头尾连环体；腺病毒 pTP-dCMP 蛋白引物链置换；HBV 约 3.2 kb 经 pgRNA 逆转录</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、SV40：大 T 抗原主导的宿主机器借用</text>
+  <circle cx="200" cy="330" r="90" fill="#ffffff" stroke="#0f766e" stroke-width="2.6"/>
+  <ellipse cx="200" cy="330" rx="34" ry="34" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <line x1="210" y1="312" x2="226" y2="296" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="190" y1="348" x2="174" y2="364" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="200" y="452" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">环状双链 DNA（约 5.2 kb）θ 复制</text>
+  <circle cx="258" cy="282" r="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="258" y="286" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">大T</text>
+  <rect x="358" y="240.225" width="64" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="390" y="254.14" font-size="11.5" fill="#4c1d95" text-anchor="middle">起点识别</text>
+  <rect x="363.75" y="282.225" width="52.5" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="390" y="296.14" font-size="11.5" fill="#4c1d95" text-anchor="middle">解旋酶</text>
+  <rect x="341.555" y="324.225" width="96.89" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="390" y="338.14" font-size="11.5" fill="#dc2626" text-anchor="middle">劫持 Rb 与 p53</text>
+  <rect x="339.255" y="366.225" width="101.49000000000001" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="390" y="380.14" font-size="11.5" fill="#dc2626" text-anchor="middle">强推细胞入 S 期</text>
+  <text x="50" y="490" font-size="11" fill="#475569">「一个蛋白办三件事」的极简范本：识别起点、解开双链、再借宿主 Pol α/δ 复制——把细胞推入 S 期以获取充足原料。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、HSV 滚动环与腺病毒链置换</text>
+  <text x="730" y="192" font-size="12.5" fill="#1e293b" font-weight="700">疱疹病毒（HSV-1 约 152 kb）：</text>
+  <rect x="730" y="206" width="130" height="16" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="795" y="218" font-size="9.5" fill="#134e4a" text-anchor="middle">线性 dsDNA</text>
+  <line x1="866" y1="214" x2="896" y2="214" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <text x="881" y="200" font-size="9" fill="#64748b" text-anchor="middle">入核环化</text>
+  <circle cx="940" cy="214" r="22" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M 940,236 C 990,236 1030,258 1062,258" fill="none" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <text x="990" y="226" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">滚动环</text>
+  <rect x="1060" y="250" width="54" height="16" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <rect x="1118" y="250" width="54" height="16" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <rect x="1176" y="250" width="54" height="16" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <rect x="1234" y="250" width="54" height="16" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <text x="1175" y="286" font-size="10" fill="#64748b" text-anchor="middle">头尾连环体</text>
+  <text x="730" y="320" font-size="10.5" fill="#475569">末端酶复合体在包装时从连环体上切割单位长度；必需复制基因仅七个。</text>
+  <text x="730" y="372" font-size="12.5" fill="#1e293b" font-weight="700">腺病毒：蛋白引物与链置换</text>
+  <line x1="760" y1="396" x2="1000" y2="396" stroke="#0f766e" stroke-width="3"/>
+  <circle cx="756" cy="396" r="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="756" y="420" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">pTP-dCMP</text>
+  <path d="M 1010,390 q 12.5,-16 25,0 q 12.5,16 25,0 q 12.5,-16 25,0 q 12.5,16 25,0" fill="none" opacity="0.8" stroke="#dc2626" stroke-width="3.2"/>
+  <text x="1060" y="424" font-size="9.5" fill="#dc2626" text-anchor="middle">被置换的单链</text>
+  <rect x="1120" y="386" width="90" height="20" rx="8" fill="#f1f5f9" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1165" y="400" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">锅柄结构</text>
+  <text x="730" y="456" font-size="10.5" fill="#475569">5′ 端 pTP-dCMP 蛋白引物起始；链置换复制中被置出的单链靠两端互补成「锅柄」，启动再合成。</text>
+  <text x="730" y="502" font-size="10.5" fill="#64748b">线性末端各有解法，复制形式亦分道扬镳——但都绕开「线性末端越复制越短」的死结。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、痘病毒：胞质中的全套自营体系</text>
+  <rect x="50" y="626" width="620" height="190" rx="10" fill="#fce7f3" fill-opacity="0.45"/>
+  <text x="66" y="652" font-size="18" fill="#475569" font-weight="700">病毒工厂（胞质）</text>
+  <rect x="139.68" y="677.075" width="180.64" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="230" y="689.78" font-size="10.5" fill="#831843" text-anchor="middle">DNA 依赖 RNA 聚合酶（八个亚基）</text>
+  <rect x="185.25" y="715.075" width="89.5" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="230" y="727.78" font-size="10.5" fill="#831843" text-anchor="middle">加帽甲基化酶系</text>
+  <rect x="188.085" y="753.075" width="83.83" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="230" y="765.78" font-size="10.5" fill="#831843" text-anchor="middle">poly(A) 聚合酶</text>
+  <rect x="504.805" y="677.075" width="70.39" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="540" y="689.78" font-size="10.5" fill="#831843" text-anchor="middle">DNA 聚合酶</text>
+  <rect x="516.25" y="715.075" width="47.5" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="540" y="727.78" font-size="10.5" fill="#831843" text-anchor="middle">解旋酶</text>
+  <rect x="479.71" y="753.075" width="120.58" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="540" y="765.78" font-size="10.5" fill="#831843" text-anchor="middle">拓扑异构酶 · 胸苷激酶</text>
+  <text x="70" y="852" font-size="11" fill="#475569">130–300 kb 的基因组编码近二百种蛋白：自带整套转录复制酶系，</text>
+  <text x="70" y="868" font-size="11" fill="#475569">不依赖宿主核机器——在胞质「工厂」内自营复制与早期转录。</text>
+  <text x="70" y="906" font-size="11" fill="#64748b">自营度谱系：SV40（极简借用）→ 腺病毒／疱疹（部分自理）→ 痘病毒（全自营）。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、HBV：最小的 DNA 基因组借逆转录复制</text>
+  <rect x="730" y="636" width="150" height="52" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="805" y="658" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">cccDNA</text>
+  <text x="805" y="678" font-size="9.5" fill="#475569" text-anchor="middle">细胞核内小池</text>
+  <line x1="886" y1="662" x2="936" y2="662" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <text x="911" y="646" font-size="10" fill="#b45309" text-anchor="middle">转录</text>
+  <rect x="940" y="636" width="160" height="52" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1020" y="658" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">前基因组 RNA</text>
+  <text x="1020" y="678" font-size="9.5" fill="#475569" text-anchor="middle">pgRNA（3.5 kb）</text>
+  <line x1="1106" y1="662" x2="1156" y2="662" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="1160" y="636" width="190" height="52" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1255" y="658" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">核心颗粒内逆转录</text>
+  <text x="1255" y="678" font-size="9.5" fill="#475569" text-anchor="middle">蛋白引发 · 衣壳中进行</text>
+  <path d="M 1348,688 C 1390,780 820,800 805,692" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arr-bad)"/>
+  <rect x="940" y="760" width="180" height="46" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1030" y="780" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">部分双链 rcDNA</text>
+  <text x="1030" y="798" font-size="9.5" fill="#475569" text-anchor="middle">毒粒基因组</text>
+  <line x1="1124" y1="782" x2="1160" y2="700" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="1100" y="760" font-size="9.5" fill="#64748b" text-anchor="middle">包装出芽</text>
+  <line x1="936" y1="782" x2="886" y2="700" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="924" y="758" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">回补 cccDNA 池</text>
+  <text x="730" y="852" font-size="11" fill="#475569">约 3.2 kb 的最小 DNA 基因组：「借 RNA 之轻」——复制经 pgRNA 中介；「行 DNA 之稳」——rcDNA 修复回补 cccDNA，</text>
+  <text x="730" y="868" font-size="11" fill="#475569">长期驻留。</text>
+  <text x="730" y="906" font-size="11" fill="#64748b">cccDNA 池的存在意味着：即便血清 DNA 转阴，肝内模板仍可重启感染——抗 HBV 须长期作战。</text>
+</svg>

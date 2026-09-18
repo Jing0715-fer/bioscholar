@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">病毒 mRNA 的转录后加工：帽尾来源、剪接发现与多层调控</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">宿主 Pol II 者享受加帽加尾，自带聚合酶者抢帽（流感）或自营（痘）；1977 年腺病毒 R 环实验发现剪接（1993 诺奖）；选择剪接一票多产；vhs 清场</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、帽子与尾巴：宿主全套 or 自营抢帽</text>
+  <text x="50" y="196" font-size="12" fill="#1e293b" font-weight="700">A. 用宿主 Pol II 转录（SV40、腺病毒等）：</text>
+  <circle cx="66" cy="248" r="8" fill="#d97706"/>
+  <line x1="78" y1="248" x2="260" y2="248" stroke="#b45309" stroke-width="3"/>
+  <rect x="262" y="242" width="40" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <text x="282" y="236" font-size="9" fill="#b45309" text-anchor="middle">poly(A)</text>
+  <text x="66" y="274" font-size="9.5" fill="#64748b" text-anchor="middle">5′ 帽</text>
+  <text x="180" y="274" font-size="10.5" fill="#475569" text-anchor="middle">宿主加帽加尾体系「一条龙」服务</text>
+  <text x="50" y="322" font-size="12" fill="#1e293b" font-weight="700">B. 自带聚合酶（流感、痘病毒等）：</text>
+  <rect x="39.20499999999994" y="347.075" width="221.59000000000012" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="359.78" font-size="10.5" fill="#dc2626" text-anchor="middle">流感：抢宿主 mRNA 的帽（cap-snatching）</text>
+  <rect x="348.5" y="347.075" width="163" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="430" y="359.78" font-size="10.5" fill="#831843" text-anchor="middle">痘病毒：自建加帽／聚腺苷体系</text>
+  <text x="50" y="404" font-size="11" fill="#475569">用谁的聚合酶，就决定 mRNA 两端的「包装」由谁负责——这是巴尔的摩分类之外另一条隐性分界线。</text>
+  <text x="50" y="444" font-size="11" fill="#64748b">自带聚合酶者要么抢帽、要么自营：两种都绕开了对宿主 Pol II CTD 加工机器的依赖。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、剪接的发现：腺病毒的 R 环实验（1977）</text>
+  <line x1="730" y1="220" x2="1000" y2="220" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="865" y="208" font-size="10.5" fill="#134e4a" text-anchor="middle">DNA（编码链）</text>
+  <line x1="730" y1="240" x2="1000" y2="240" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="740" y1="230" x2="780" y2="230" stroke="#b45309" stroke-width="3"/>
+  <line x1="800" y1="230" x2="840" y2="230" stroke="#b45309" stroke-width="3"/>
+  <line x1="860" y1="230" x2="900" y2="230" stroke="#b45309" stroke-width="3"/>
+  <path d="M 780,230 C 790,196 810,196 820,230" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <path d="M 840,230 C 850,196 870,196 880,230" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <text x="812" y="184" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">环出的单链 DNA 环（R 环）</text>
+  <text x="900" y="262" font-size="10" fill="#64748b" text-anchor="middle">RNA 与外显子配对，内含子区段被顶出成环</text>
+  <text x="1040" y="210" font-size="11" fill="#475569">电镜下 RNA–DNA 杂交分子上出现单链环——基因是断裂的：</text>
+  <text x="1040" y="226" font-size="11" fill="#475569">外显子被内含子隔开。</text>
+  <rect x="738.7986" y="320.65" width="282.4028" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="880" y="333.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">Sharp 与 Roberts 同年各自发现 · 1993 年诺贝尔奖</text>
+  <text x="730" y="386" font-size="11" fill="#475569">断裂基因的概念由此确立——这是病毒学送给整个分子生物学的意外馈赠。</text>
+  <text x="730" y="426" font-size="11" fill="#64748b">mRNA 前体须剪去内含子、拼接外显子，才能作为可翻译的模板。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、病毒对剪接的利用：一票多产</text>
+  <rect x="60" y="646" width="60" height="22" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="160" y="646" width="90" height="22" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="300" y="646" width="60" height="22" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="400" y="646" width="110" height="22" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="540" y="646" width="60" height="22" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="90" y="640" font-size="9.5" fill="#134e4a" text-anchor="middle">外显子</text>
+  <text x="205" y="640" font-size="9.5" fill="#64748b" text-anchor="middle">内含子（可保留）</text>
+  <text x="570" y="640" font-size="9.5" fill="#134e4a" text-anchor="middle">外显子</text>
+  <text x="350" y="690" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">一条 pre-mRNA</text>
+  <line x1="180" y1="706" x2="180" y2="726" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="230" y="722" font-size="10" fill="#075985" text-anchor="middle">选择剪接 A</text>
+  <line x1="460" y1="706" x2="460" y2="726" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="510" y="722" font-size="10" fill="#831843" text-anchor="middle">选择剪接 B</text>
+  <rect x="90" y="734" width="240" height="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="210" y="749" font-size="10" fill="#075985" text-anchor="middle">mRNA 甲（跳过内含子）</text>
+  <rect x="360" y="734" width="240" height="22" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="480" y="749" font-size="10" fill="#831843" text-anchor="middle">mRNA 乙（保留内含子）</text>
+  <text x="50" y="800" font-size="11" fill="#475569">SV40 与腺病毒 E1A 以选择剪接一票多产：同一转录本按保留 / 跳过内含子产出多种蛋白。</text>
+  <text x="50" y="844" font-size="11" fill="#64748b">流感 M 与 NS 节段借宿主剪接机器，让一个节段的蛋白产出翻倍。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、不剪接的例外与转录后的多层网络</text>
+  <rect x="744.3050000000001" y="626.225" width="131.39" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="810" y="640.14" font-size="11.5" fill="#134e4a" text-anchor="middle">HSV：基因多无内含子</text>
+  <rect x="746.835" y="668.225" width="126.33" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="810" y="682.14" font-size="11.5" fill="#dc2626" text-anchor="middle">ICP27 抑制宿主剪接</text>
+  <text x="1030" y="630" font-size="10.5" fill="#475569">把宿主的剪接机器关掉，</text>
+  <text x="1030" y="645" font-size="10.5" fill="#475569">自己的「无内含子」基因照样表达——独占核糖体的第一步。</text>
+  <rect x="732" y="716.225" width="156" height="19.55" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="810" y="730.14" font-size="11.5" fill="#831843" text-anchor="middle">痘病毒：胞质自建加工体系</text>
+  <text x="1030" y="720" font-size="10.5" fill="#475569">在胞质「工厂」里自备加帽、聚腺苷化全套装置，根本不进核、</text>
+  <text x="1030" y="735" font-size="10.5" fill="#475569">不碰剪接。</text>
+  <text x="730" y="782" font-size="12.5" fill="#1e293b" font-weight="700">转录后调控的多层网络：</text>
+  <rect x="760" y="802.65" width="60" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="790" y="815.96" font-size="11" fill="#075985" text-anchor="middle">出核运输</text>
+  <rect x="864.31" y="802.65" width="143.38" height="18.7" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="936" y="815.96" font-size="11" fill="#78350f" text-anchor="middle">mRNA 稳定性（vhs 清场）</text>
+  <rect x="1094.01" y="802.65" width="83.98" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1136" y="815.96" font-size="11" fill="#4c1d95" text-anchor="middle">RNA 结构开关</text>
+  <text x="730" y="856" font-size="11" fill="#475569">HSV 的 vhs 核酸酶清空宿主 mRNA、腾出翻译机器——降解也是调控。</text>
+  <text x="730" y="896" font-size="11" fill="#64748b">剪接与否、帽尾来源、出核配额、寿命长短——病毒在 RNA 离开 Pol II 之后的每一步都做了手脚。</text>
+</svg>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">病毒翻译策略与宿主翻译劫持：五大破法与拆桥留墩</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">脊灰约 7.5 kb 单 ORF 产约 247 kDa 多聚蛋白；HIV 移码 5%–10% 使 Gag∶Gag-Pol≈20∶1；2Apro 切 eIF4G 关宿主翻译、IRES 自给；eIF2α 磷酸化为攻防焦点</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、真核单顺反子铁律的五大破法</text>
+  <rect x="50" y="196" width="300" height="72" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="224" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">① 多聚蛋白</text>
+  <text x="200" y="248" font-size="10" fill="#475569" text-anchor="middle">一条 ORF 翻译后切割成多个蛋白</text>
+  <rect x="366" y="196" width="300" height="72" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="516" y="224" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">② 嵌套亚基因组 mRNA</text>
+  <text x="516" y="248" font-size="10" fill="#475569" text-anchor="middle">多条 sg mRNA 各带一个 ORF</text>
+  <rect x="50" y="284" width="300" height="72" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="312" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">③ 节段化</text>
+  <text x="200" y="336" font-size="10" fill="#475569" text-anchor="middle">每段基因组各产一条 mRNA</text>
+  <rect x="366" y="284" width="300" height="72" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="516" y="312" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">④ 渗漏扫描</text>
+  <text x="516" y="336" font-size="10" fill="#475569" text-anchor="middle">核糖体漏过弱起始码、从下游起步</text>
+  <rect x="50" y="372" width="300" height="72" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="400" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">⑤ −1 程序性移码</text>
+  <text x="200" y="424" font-size="10" fill="#475569" text-anchor="middle">按固定比率产出下游 ORF</text>
+  <text x="50" y="496" font-size="11" fill="#475569">一条 mRNA 只翻一个开放阅读框？病毒用五种方式把「一条」变成「多条」。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、多聚蛋白的紧凑与移码的定量</text>
+  <text x="730" y="190" font-size="12" fill="#1e293b" font-weight="700">脊髓灰质炎：约 7.5 kb 几乎一条 ORF</text>
+  <rect x="730" y="204" width="560" height="26" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1010" y="222" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">多聚蛋白（约 247 kDa）</text>
+  <line x1="820" y1="200" x2="820" y2="234" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="1040" y1="200" x2="1040" y2="234" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="1230" y1="200" x2="1230" y2="234" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="820" y="258" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">2Apro</text>
+  <text x="1040" y="258" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">3Cpro</text>
+  <text x="1230" y="258" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">3Cpro</text>
+  <text x="730" y="288" font-size="10.5" fill="#475569">自内切割依序释放衣壳前体 P1 与复制加工蛋白——基因组紧凑、产物化学计量恒定。</text>
+  <text x="730" y="336" font-size="12" fill="#1e293b" font-weight="700">−1 程序性移码：滑动序列＋茎环＝定量电位器</text>
+  <line x1="760" y1="380" x2="900" y2="380" stroke="#b45309" stroke-width="3"/>
+  <text x="830" y="368" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">滑动序列</text>
+  <path d="M924,380 L924,346 A12,12 0 0 1 936,346 L936,380" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <text x="930" y="356" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">茎环</text>
+  <path d="M 1046.5,375.6 a 13.5 9 0 0 1 27,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 1051,376.5 a 9 6.75 0 0 0 18,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <line x1="1024" y1="372" x2="1042" y2="372" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="1060" y="408" font-size="9.5" fill="#4c1d95" text-anchor="middle">核糖体回移一码</text>
+  <text x="730" y="440" font-size="12" fill="#1e293b" font-weight="700">比率即剂量：</text>
+  <rect x="830" y="428" width="320" height="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="990" y="442" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">Gag（上游 ORF）</text>
+  <rect x="1154" y="428" width="116" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1212" y="442" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">Gag-Pol</text>
+  <text x="1060" y="470" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">HIV：Gag ∶ Gag-Pol ≈ 20 ∶ 1（移码 5%–10%）</text>
+  <text x="1060" y="492" font-size="10.5" fill="#475569" text-anchor="middle">冠状病毒 ORF1ab：移码效率约一至三成</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、2Apro「拆桥留墩」：关闭宿主、自给翻译</text>
+  <text x="50" y="636" font-size="11.5" fill="#1e293b" font-weight="700">宿主帽依赖翻译的「闭环桥」：</text>
+  <circle cx="70" cy="690" r="10" fill="#d97706"/>
+  <text x="70" y="716" font-size="9.5" fill="#64748b" text-anchor="middle">帽</text>
+  <line x1="82" y1="690" x2="130" y2="690" stroke="#b45309" stroke-width="2.6"/>
+  <rect x="134" y="676" width="60" height="28" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="164" y="694" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">eIF4E</text>
+  <rect x="214" y="684" width="120" height="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="274" y="695" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">eIF4G（桥）</text>
+  <rect x="348" y="676" width="60" height="28" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="378" y="694" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">PABP</text>
+  <rect x="412" y="676" width="40" height="12" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <text x="432" y="712" font-size="9" fill="#b45309" text-anchor="middle">poly(A)</text>
+  <line x1="412" y1="690" x2="452" y2="690" stroke="#b45309" stroke-width="2.6"/>
+  <text x="274" y="744" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">2Apro 一刀切断 eIF4G——宿主帽依赖翻译瘫痪</text>
+  <line x1="274" y1="672" x2="274" y2="700" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <text x="50" y="790" font-size="11.5" fill="#1e293b" font-weight="700">病毒自己的后路：</text>
+  <path d="M124,838 L124,808 A11,11 0 0 1 136,808 L136,838" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="150" y1="838" x2="240" y2="838" stroke="#b45309" stroke-width="2.6"/>
+  <text x="200" y="864" font-size="10.5" fill="#b45309" text-anchor="middle" font-weight="700">IRES</text>
+  <path d="M 287.25,833.4 a 12.75 8.5 0 0 1 25.5,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <path d="M 291.5,834.25 a 8.5 6.375 0 0 0 17,0 z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.9"/>
+  <text x="340" y="864" font-size="10" fill="#475569" text-anchor="middle">无需 eIF4G 桥即可募集核糖体</text>
+  <text x="50" y="900" font-size="11" fill="#64748b">「拆桥留墩」：拆掉宿主的桥，留下自己过河的墩——翻译劫持的经典范式。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、劫持的深层逻辑：资源与免疫</text>
+  <rect x="795.28" y="629.8" width="69.44" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="644.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">资源独占</text>
+  <text x="950" y="628" font-size="10.5" fill="#475569">宿主 mRNA 被清场、核糖体全部改产病毒蛋白——工厂一夜换招牌。</text>
+  <rect x="782.92" y="683.8" width="94.16" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="830" y="698.32" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">压制先天免疫</text>
+  <text x="950" y="682" font-size="10.5" fill="#475569">阻断 ISG（干扰素刺激基因）蛋白产出：翻译关闭本身就是免疫逃逸。</text>
+  <text x="730" y="748" font-size="12.5" fill="#1e293b" font-weight="700">攻防焦点：eIF2α 磷酸化</text>
+  <circle cx="800" cy="790" r="24" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="800" y="794" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">eIF2α</text>
+  <line x1="830" y1="790" x2="900" y2="790" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="865" y="774" font-size="9.5" fill="#065f46" text-anchor="middle">磷酸化</text>
+  <text x="865" y="808" font-size="9.5" fill="#64748b" text-anchor="middle">→ 全局翻译刹车</text>
+  <rect x="910" y="768" width="130" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="975" y="786" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">病毒去磷酸化</text>
+  <text x="975" y="804" font-size="10" fill="#475569" text-anchor="middle">／劫持复位</text>
+  <line x1="910" y1="790" x2="858" y2="790" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <text x="730" y="856" font-size="11" fill="#475569">宿主以 eIF2α 磷酸化急刹全局翻译；病毒则以去磷酸化或劫持反转——这一攻防贯穿急慢性感染全程。</text>
+  <text x="730" y="900" font-size="11" fill="#64748b">翻译劫持从来不只是「抢资源」：同时掐断干扰素系统的产出线，一石二鸟。</text>
+</svg>

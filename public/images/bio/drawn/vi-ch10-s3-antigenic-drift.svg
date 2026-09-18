@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">抗原漂移与免疫逃逸：表位、糖盾与呈递封锁</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">HA 年积 1%–2% 替换、集群每二至八年跃迁；糖盾遮蔽表位；TAP 封堵／MHC I 降解／HLA 下调三线封锁；免疫印记（Francis 1953）</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、流感 HA：漂移的靶点与抗原图谱</text>
+  <text x="46" y="190" font-size="11" fill="#475569">A 型流感 H3N2 的 HA 每年积累约 1%–2% 氨基酸替换，</text>
+  <text x="46" y="206" font-size="11" fill="#475569">集中于头部围绕受体结合部位的五个主要抗体表位。</text>
+  <ellipse cx="160" cy="310" rx="56" ry="42" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <polygon points="144,348 176,348 186,424 134,424" fill="#f1f5f9" stroke="#dc2626" stroke-width="1.8"/>
+  <rect x="150" y="262" width="20" height="12" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="160" y="250" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">受体结合部位</text>
+  <circle cx="112" cy="288" r="13" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="112" y="292" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">①</text>
+  <circle cx="208" cy="288" r="13" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="208" y="292" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">②</text>
+  <circle cx="122" cy="332" r="13" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="122" y="336" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">③</text>
+  <circle cx="198" cy="332" r="13" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="198" y="336" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">④</text>
+  <circle cx="160" cy="286" r="13" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="160" y="290" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">⑤</text>
+  <text x="160" y="452" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">HA 单体（示意）</text>
+  <text x="160" y="470" font-size="9.5" fill="#64748b" text-anchor="middle">茎部高度保守，头部承压漂移</text>
+  <text x="505" y="250" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">抗原图谱（Smith 等 2004）</text>
+  <rect x="370" y="264" width="280" height="176" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <circle cx="406" cy="312" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="438" cy="306" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="418" cy="334" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="444" cy="328" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="400" cy="330" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="428" cy="296" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="434" cy="342" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="412" cy="298" r="4.4" fill="#0369a1" fill-opacity="0.85"/>
+  <text x="424" y="364" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">集群 1</text>
+  <circle cx="487" cy="378" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="519" cy="372" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="499" cy="400" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="525" cy="394" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="481" cy="396" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="509" cy="362" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="515" cy="408" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <circle cx="493" cy="364" r="4.4" fill="#b45309" fill-opacity="0.85"/>
+  <text x="505" y="430" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">集群 2</text>
+  <circle cx="570" cy="306" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="602" cy="300" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="582" cy="328" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="608" cy="322" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="564" cy="324" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="592" cy="290" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="598" cy="336" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <circle cx="576" cy="292" r="4.4" fill="#dc2626" fill-opacity="0.85"/>
+  <text x="588" y="358" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">集群 3</text>
+  <line x1="448" y1="320" x2="480" y2="366" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="530" y1="380" x2="562" y2="336" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="510" y="296" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">抗原集群跃迁</text>
+  <text x="510" y="312" font-size="9.5" fill="#64748b" text-anchor="middle">每二至八年一次</text>
+  <text x="46" y="486" font-size="10.5" fill="#475569">抗原图谱把数十年血凝抑制数据投成二维地图：H3N2 的抗原演化并非匀速漂移，而是集群间跃迁；</text>
+  <text x="46" y="501" font-size="10.5" fill="#475569">鸡胚适应突变曾致 2014–2015 季节疫苗有效性跌至两成上下。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、糖盾：把表位藏进糖链之间</text>
+  <text x="866" y="196" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1918 H1N1：糖链寥寥</text>
+  <ellipse cx="866" cy="262" rx="52" ry="38" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <line x1="830" y1="248" x2="830" y2="236" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="825" cy="234" r="3.4" fill="#0369a1"/>
+  <circle cx="835" cy="234" r="3.4" fill="#0369a1"/>
+  <line x1="902" y1="256" x2="902" y2="244" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="897" cy="242" r="3.4" fill="#0369a1"/>
+  <circle cx="907" cy="242" r="3.4" fill="#0369a1"/>
+  <text x="1130" y="196" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">现代季节性毒株：增设数处</text>
+  <ellipse cx="1130" cy="262" rx="52" ry="38" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <line x1="1082" y1="244" x2="1082" y2="232" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1077" cy="230" r="3.4" fill="#0369a1"/>
+  <circle cx="1087" cy="230" r="3.4" fill="#0369a1"/>
+  <line x1="1108" y1="238" x2="1108" y2="226" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1103" cy="224" r="3.4" fill="#0369a1"/>
+  <circle cx="1113" cy="224" r="3.4" fill="#0369a1"/>
+  <line x1="1136" y1="236" x2="1136" y2="224" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1131" cy="222" r="3.4" fill="#0369a1"/>
+  <circle cx="1141" cy="222" r="3.4" fill="#0369a1"/>
+  <line x1="1164" y1="246" x2="1164" y2="234" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1159" cy="232" r="3.4" fill="#0369a1"/>
+  <circle cx="1169" cy="232" r="3.4" fill="#0369a1"/>
+  <line x1="1096" y1="300" x2="1096" y2="288" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1091" cy="286" r="3.4" fill="#0369a1"/>
+  <circle cx="1101" cy="286" r="3.4" fill="#0369a1"/>
+  <line x1="1160" y1="298" x2="1160" y2="286" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1155" cy="284" r="3.4" fill="#0369a1"/>
+  <circle cx="1165" cy="284" r="3.4" fill="#0369a1"/>
+  <line x1="1130" y1="308" x2="1130" y2="296" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="1125" cy="294" r="3.4" fill="#0369a1"/>
+  <circle cx="1135" cy="294" r="3.4" fill="#0369a1"/>
+  <path d="M 1130,352 l -8,20 M 1130,352 l 8,20 M 1130,352 l 0,24" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <text x="1130" y="396" font-size="9.5" fill="#831843" text-anchor="middle">抗体只能打「糖链之间可及的角落」</text>
+  <text x="866" y="340" font-size="9.5" fill="#475569" text-anchor="middle">糖链如盾牌遮蔽蛋白表位，</text>
+  <text x="866" y="356" font-size="9.5" fill="#475569" text-anchor="middle">抗原则转向可及角落继续漂移</text>
+  <text x="726" y="424" font-size="10.5" fill="#475569">HIV gp120：高变区加约半表面积的糖链覆盖，使中和应答快速逃逸；广谱中和抗体靶向 CD4 结合位点、</text>
+  <text x="726" y="439" font-size="10.5" fill="#475569">V3/V1V2 聚糖与 MPER 等保守表位——但其发育需体细胞超突变两至三成，极难经疫苗诱导。</text>
+  <rect x="802.7025" y="491.075" width="154.595" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="880" y="503.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">广谱中和抗体：稀有的天然解</text>
+  <rect x="1051.8875" y="491.075" width="176.225" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1140" y="503.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">糖盾＋高变区：疫苗诱导的双屏障</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、T 细胞免疫逃逸：抗原呈递的三条封锁线</text>
+  <rect x="50" y="686" width="140" height="58" rx="9" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="120" y="710" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">蛋白酶体</text>
+  <text x="120" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">切割产生肽</text>
+  <line x1="192" y1="715" x2="208" y2="715" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="210" y="686" width="140" height="58" rx="9" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="280" y="710" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">TAP 转运</text>
+  <text x="280" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">肽入内质网</text>
+  <line x1="352" y1="715" x2="368" y2="715" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="370" y="686" width="140" height="58" rx="9" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="440" y="710" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">MHC I 装载</text>
+  <text x="440" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">内质网组装</text>
+  <line x1="512" y1="715" x2="528" y2="715" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="530" y="686" width="140" height="58" rx="9" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="600" y="710" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">表面呈递</text>
+  <text x="600" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">CD8 T 细胞识别</text>
+  <line x1="210" y1="668" x2="210" y2="682" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="210" y="662" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">✕</text>
+  <rect x="178.1676" y="765.925" width="63.6648" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="210" y="777.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">HSV ICP47</text>
+  <text x="210" y="800" font-size="9.5" fill="#475569" text-anchor="middle">封堵 TAP</text>
+  <line x1="370" y1="668" x2="370" y2="682" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="370" y="662" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">✕</text>
+  <rect x="319.86965" y="765.925" width="100.2607" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="370" y="777.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">CMV US2/US3/US11</text>
+  <text x="370" y="800" font-size="9.5" fill="#475569" text-anchor="middle">降解 MHC I</text>
+  <line x1="530" y1="668" x2="530" y2="682" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="530" y="662" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">✕</text>
+  <rect x="505.2128" y="765.925" width="49.5744" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="530" y="777.42" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">HIV Nef</text>
+  <text x="530" y="800" font-size="9.5" fill="#475569" text-anchor="middle">选择性下调 HLA-A/B</text>
+  <text x="50" y="840" font-size="10.5" fill="#475569">表位突变与抗原呈递下调是 T 细胞逃逸的两大利器——病毒把「山不就我」变成「拆路断桥」。</text>
+  <text x="50" y="878" font-size="10.5" fill="#64748b">CTL 杀伤受限于 HLA 呈递：Nef 只下调 HLA-A/B 而保留 HLA-C/E，NK 细胞的「自我」信号不被惊动——逃逸与防误伤并行。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、漂移与转变对照＋免疫印记</text>
+  <rect x="730" y="652" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="679.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">比较项目</text>
+  <rect x="850" y="652" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="679.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">抗原漂移（drift）</text>
+  <rect x="1090" y="652" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="679.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">抗原转变（shift）</text>
+  <rect x="730" y="696" width="120" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="722.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
+  <rect x="850" y="696" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="722.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">点突变的渐进积累</text>
+  <rect x="1090" y="696" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="722.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">节段重排的亚型跃迁</text>
+  <rect x="730" y="738" width="600" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="738" width="120" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="764.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">幅度</text>
+  <rect x="850" y="738" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="764.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">抗原性小步微调</text>
+  <rect x="1090" y="738" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="764.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">亚型替换、可致大流行</text>
+  <rect x="730" y="780" width="120" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="790" y="806.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">频率</text>
+  <rect x="850" y="780" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="806.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">持续发生（年积约 1%–2%）</text>
+  <rect x="1090" y="780" width="240" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="806.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">偶发（需共感染重配）</text>
+  <text x="730" y="852" font-size="11.5" fill="#1e293b" font-weight="700">免疫印记（旧称「抗原原罪」，Francis 1953）：</text>
+  <rect x="727.51905" y="883.075" width="124.9619" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="790" y="895.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">首发感染塑造记忆 B 库</text>
+  <line x1="950" y1="892" x2="1010" y2="892" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <rect x="1028.925" y="883.075" width="122.15" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1090" y="895.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">此后应答偏向首发毒株</text>
+  <text x="726" y="926" font-size="10.5" fill="#475569">2009 年大流行 H1N1 期间，不同出生队列的应答谱各自偏向童年毒株——印记塑造年龄队列间的保护差异。</text>
+</svg>

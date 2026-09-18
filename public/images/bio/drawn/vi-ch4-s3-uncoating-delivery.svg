@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">脱壳与基因组递送：M2 通道、核孔输入与机械注射</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">流感 M2 导酸脱壳（金刚烷胺靶点、已普遍耐药）；腺病毒破膜后沿微管每秒约数微米抵达 NPC；痘病毒两阶段脱壳；T4 尾鞘收缩把脱壳与侵入并为一步</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、流感：M2 质子通道与酸化脱壳</text>
+  <circle cx="240" cy="340" r="122" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <text x="240" y="208" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">内体（pH 酸化）</text>
+  <circle cx="140" cy="240" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="140" y="245.04" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">H⁺</text>
+  <circle cx="150" cy="292" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="150" y="297.04" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">H⁺</text>
+  <line x1="160" y1="250" x2="208" y2="280" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <circle cx="215" cy="316" r="30" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="245" y1="316" x2="257" y2="316" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="257" cy="316" r="4.6" fill="#dc2626"/>
+  <line x1="240.98076211353316" y1="331" x2="251.37306695894642" y2="337" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="251.37306695894642" cy="337" r="4.6" fill="#dc2626"/>
+  <line x1="230" y1="341.98076211353316" x2="236" y2="352.3730669589464" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="236" cy="352.3730669589464" r="4.6" fill="#dc2626"/>
+  <line x1="215" y1="346" x2="215" y2="358" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="215" cy="358" r="4.6" fill="#dc2626"/>
+  <line x1="200" y1="341.98076211353316" x2="194" y2="352.3730669589464" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="194" cy="352.3730669589464" r="4.6" fill="#dc2626"/>
+  <line x1="189.01923788646684" y1="331" x2="178.62693304105358" y2="337" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="178.62693304105358" cy="337" r="4.6" fill="#dc2626"/>
+  <line x1="185" y1="316" x2="173" y2="316" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="173" cy="316" r="4.6" fill="#dc2626"/>
+  <line x1="189.01923788646684" y1="301" x2="178.62693304105358" y2="295" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="178.62693304105358" cy="295" r="4.6" fill="#dc2626"/>
+  <line x1="200" y1="290.01923788646684" x2="193.99999999999997" y2="279.6269330410536" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="193.99999999999997" cy="279.6269330410536" r="4.6" fill="#dc2626"/>
+  <line x1="215" y1="286" x2="215" y2="274" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="215" cy="274" r="4.6" fill="#dc2626"/>
+  <line x1="230" y1="290.01923788646684" x2="236" y2="279.6269330410536" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="236" cy="279.6269330410536" r="4.6" fill="#dc2626"/>
+  <line x1="240.98076211353316" y1="301" x2="251.37306695894642" y2="295" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="251.37306695894642" cy="295" r="4.6" fill="#dc2626"/>
+  <path d="M 198.5,316.0 L 200.6,325.9 L 202.6,328.3 L 204.7,321.4 L 206.8,310.4 L 208.8,303.7 L 210.9,306.3 L 212.9,316.2 L 215.0,326.0 L 217.1,328.2 L 219.1,321.2 L 221.2,310.2 L 223.3,303.6 L 225.3,306.4 L 227.4,316.4 L 229.4,326.1 L 231.5,328.2 " fill="none" opacity="0.85" stroke="#dc2626" stroke-width="4.4"/>
+  <rect x="206" y="330" width="14" height="12" rx="3" fill="#be185d" stroke="#831843" stroke-width="1.2"/>
+  <text x="213" y="368" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">M2 通道</text>
+  <path d="M 260,380 q 8.75,-12 17.5,0 q 8.75,12 17.5,0 q 8.75,-12 17.5,0 q 8.75,12 17.5,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="295" y="412" font-size="11" fill="#b45309" text-anchor="middle" font-weight="700">vRNP 释放</text>
+  <line x1="300" y1="416" x2="340" y2="416" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <rect x="417.41499999999996" y="330.225" width="105.17000000000002" height="19.55" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="470" y="344.14" font-size="11.5" fill="#78350f" text-anchor="middle">M1 与 vRNP 解离</text>
+  <text x="400" y="396" font-size="11" fill="#475569">M2 质子通道把内体的酸导入毒粒核心：酸化使 M1</text>
+  <text x="400" y="412" font-size="11" fill="#475569">（基质）与 vRNP 分家，核糖核蛋白才得以释放、</text>
+  <text x="400" y="428" font-size="11" fill="#475569">入核转录。</text>
+  <text x="400" y="456" font-size="11" fill="#64748b">金刚烷胺类即 M2 通道抑制剂——最早的抗流感药之一，</text>
+  <text x="400" y="472" font-size="11" fill="#64748b">现已普遍耐药。</text>
+  <text x="50" y="496" font-size="11" fill="#475569">脱壳须等待明确信号（此处为内体酸化），</text>
+  <text x="50" y="512" font-size="11" fill="#475569">时机与场所均受精确控制。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、腺病毒：内体破裂、微管运输与核孔输入</text>
+  <rect x="730" y="176" width="150" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="805" y="198" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">① 吸附</text>
+  <text x="805" y="218" font-size="9.5" fill="#475569" text-anchor="middle">纤维 knob 结合受体</text>
+  <rect x="890" y="176" width="150" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="965" y="198" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">② 内吞</text>
+  <text x="965" y="218" font-size="9.5" fill="#475569" text-anchor="middle">五邻体基板结合整合素</text>
+  <rect x="1050" y="176" width="150" height="52" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1125" y="198" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">③ 破膜而出</text>
+  <text x="1125" y="218" font-size="9.5" fill="#475569" text-anchor="middle">酸化变构释放蛋白 VI 裂解内体膜</text>
+  <line x1="882" y1="202" x2="888" y2="202" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="1042" y1="202" x2="1048" y2="202" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="740" y1="330" x2="1120" y2="330" stroke="#6d28d9" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="930" y="312" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">微管</text>
+  <rect x="980" y="306" width="46" height="34" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1003" y="328" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">壳层</text>
+  <line x1="976" y1="324" x2="890" y2="324" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="920.31" y="363.075" width="179.38" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1010" y="375.78" font-size="10.5" fill="#4c1d95" text-anchor="middle">动力蛋白（dynein）· 每秒约数微米</text>
+  <text x="730" y="412" font-size="11" fill="#475569">此时衣壳已先后丢弃纤维与五邻体，</text>
+  <text x="730" y="428" font-size="11" fill="#475569">剩余六邻体壳层携约 36 kb 基因组沿微管逆行，运抵核孔复合体（NPC）。</text>
+  <circle cx="1240" cy="330" r="88" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="1240" y="326" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">细胞核</text>
+  <rect x="1160" y="318" width="14" height="24" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1167" y="358" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">NPC</text>
+  <path d="M1180,330L1180.0,330.0L1182.0,327.8L1184.0,325.9L1186.0,324.3L1188.0,323.3L1190.0,323.0L1192.0,323.3L1194.0,324.3L1196.0,325.9L1198.0,327.8L1200.0,330.0L1202.0,332.2L1204.0,334.1L1206.0,335.7L1208.0,336.7L1210.0,337.0L1212.0,336.7L1214.0,335.7L1216.0,334.1L1218.0,332.2L1220.0,330.0L1222.0,327.8L1224.0,325.9L1226.0,324.3" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M1180,330L1180.0,330.0L1182.0,332.2L1184.0,334.1L1186.0,335.7L1188.0,336.7L1190.0,337.0L1192.0,336.7L1194.0,335.7L1196.0,334.1L1198.0,332.2L1200.0,330.0L1202.0,327.8L1204.0,325.9L1206.0,324.3L1208.0,323.3L1210.0,323.0L1212.0,323.3L1214.0,324.3L1216.0,325.9L1218.0,327.8L1220.0,330.0L1222.0,332.2L1224.0,334.1L1226.0,335.7" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="1190" y1="323" x2="1190" y2="337" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="1210" y1="337" x2="1210" y2="323" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="1140" y="412" font-size="11" fill="#475569">壳层在核孔处解体，基因组经核孔入核。</text>
+  <text x="730" y="490" font-size="11" fill="#64748b">递送终点由基因组而定：DNA 病毒入核，多数 RNA 病毒留在胞质。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、痘病毒两阶段脱壳与噬菌体机械注射</text>
+  <text x="50" y="646" font-size="12.5" fill="#1e293b" font-weight="700">痘病毒：两阶段脱壳</text>
+  <rect x="70" y="668" width="96" height="60" rx="12" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <rect x="88" y="682" width="60" height="32" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="118" y="702" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">核心</text>
+  <text x="118" y="744" font-size="10.5" fill="#64748b" text-anchor="middle">完整核心</text>
+  <line x1="176" y1="700" x2="216" y2="700" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="196" y="684" font-size="9.5" fill="#831843" text-anchor="middle">早期转录</text>
+  <path d="M 224,690 q 7,-12 14,0 q 7,12 14,0 q 7,-12 14,0 q 7,12 14,0" fill="none" opacity="0.8" stroke="#b45309" stroke-width="3.2"/>
+  <text x="252" y="716" font-size="9.5" fill="#64748b" text-anchor="middle">早期 mRNA 自核心释出</text>
+  <line x1="300" y1="700" x2="340" y2="700" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="344" y="668" width="96" height="60" rx="12" fill="#ffffff" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4"/>
+  <path d="M360,698L360.0,698.0L362.0,695.7L364.0,693.7L366.0,692.1L368.0,691.2L370.0,691.0L372.0,691.6L374.0,692.8L376.0,694.7L378.0,696.8L380.0,699.2L382.0,701.3L384.0,703.2L386.0,704.4L388.0,705.0L390.0,704.8L392.0,703.9L394.0,702.3L396.0,700.3L398.0,698.0L400.0,695.7L402.0,693.7L404.0,692.1L406.0,691.2L408.0,691.0L410.0,691.6L412.0,692.8L414.0,694.7L416.0,696.8L418.0,699.2L420.0,701.3L422.0,703.2L424.0,704.4" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M360,698L360.0,698.0L362.0,700.3L364.0,702.3L366.0,703.9L368.0,704.8L370.0,705.0L372.0,704.4L374.0,703.2L376.0,701.3L378.0,699.2L380.0,696.8L382.0,694.7L384.0,692.8L386.0,691.6L388.0,691.0L390.0,691.2L392.0,692.1L394.0,693.7L396.0,695.7L398.0,698.0L400.0,700.3L402.0,702.3L404.0,703.9L406.0,704.8L408.0,705.0L410.0,704.4L412.0,703.2L414.0,701.3L416.0,699.2L418.0,696.8L420.0,694.7L422.0,692.8L424.0,691.6" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="369.5" y1="691" x2="369.5" y2="705" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="388.5" y1="705" x2="388.5" y2="691" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="407.5" y1="691" x2="407.5" y2="705" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="392" y="744" font-size="10.5" fill="#64748b" text-anchor="middle">核心瓦解</text>
+  <text x="70" y="780" font-size="10.5" fill="#475569">第一阶段在完整核心内转录早期 mRNA；</text>
+  <text x="70" y="795" font-size="10.5" fill="#475569">核心瓦解后方开始胞质复制——「病毒工厂」就地开工。</text>
+  <text x="470" y="646" font-size="12.5" fill="#1e293b" font-weight="700">T4：机械注射</text>
+  <rect x="530" y="677" width="120" height="46" rx="23" fill="#d1fae5" stroke="#075985" stroke-width="2.2"/>
+  <text x="590" y="762" font-size="10.5" fill="#64748b" text-anchor="middle">细菌</text>
+  <rect x="562" y="616" width="34" height="34" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="566" y="650" width="26" height="14" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="579" y1="664" x2="579" y2="688" stroke="#dc2626" stroke-width="4"/>
+  <text x="579" y="600" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">尾鞘收缩</text>
+  <line x1="579" y1="688" x2="579" y2="706" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
+  <text x="579" y="726" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">DNA 注入</text>
+  <text x="470" y="780" font-size="10.5" fill="#475569">以尾鞘收缩把基因组直接注射入菌——脱壳与侵入一步完成，</text>
+  <text x="470" y="795" font-size="10.5" fill="#475569">衣壳根本不进细胞。</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、脱壳＝基因组递送的时空调控程序</text>
+  <text x="730" y="646" font-size="12.5" fill="#1e293b" font-weight="700">逐级触发的信号：</text>
+  <rect x="758" y="670.225" width="64" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="790" y="684.14" font-size="11.5" fill="#075985" text-anchor="middle">内体酸化</text>
+  <rect x="904" y="670.225" width="64" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="936" y="684.14" font-size="11.5" fill="#134e4a" text-anchor="middle">受体结合</text>
+  <rect x="1042" y="670.225" width="64" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1074" y="684.14" font-size="11.5" fill="#4c1d95" text-anchor="middle">核孔锚定</text>
+  <line x1="1160" y1="680" x2="1200" y2="680" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <rect x="1210" y="652" width="130" height="56" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1275" y="674" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">逐级触发</text>
+  <text x="1275" y="696" font-size="10" fill="#475569" text-anchor="middle">时机·场所精确控制</text>
+  <text x="730" y="746" font-size="12.5" fill="#1e293b" font-weight="700">脱壳时机与先天免疫的博弈：</text>
+  <rect x="760" y="768" width="120" height="84" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="820" y="796" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">渐进解体</text>
+  <text x="820" y="816" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">的衣壳</text>
+  <text x="820" y="838" font-size="9.5" fill="#475569" text-anchor="middle">遮蔽基因组</text>
+  <circle cx="960" cy="800" r="24" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="960" y="804" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">先天</text>
+  <text x="960" y="830" font-size="10.5" fill="#475569" text-anchor="middle">免疫传感器</text>
+  <line x1="892" y1="800" x2="926" y2="800" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <text x="908" y="784" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">够不着</text>
+  <text x="1030" y="776" font-size="10.5" fill="#475569">基因组在最后一刻才暴露——脱壳太快会被传感器「看见」，</text>
+  <text x="1030" y="791" font-size="10.5" fill="#475569">太慢则复制落后。</text>
+  <text x="730" y="902" font-size="11" fill="#475569">现代病毒学把脱壳理解为「基因组递送的时空调控程序」：信号、路径、终点三位一体，而非简单的「脱衣服」。</text>
+</svg>

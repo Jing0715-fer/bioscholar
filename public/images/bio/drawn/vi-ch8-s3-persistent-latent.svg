@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">持续性感染与潜伏感染：四型曲线、储库与沉默</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">急性／慢性／潜伏／慢病毒四型结局；HBV 靠 cccDNA 储库（核苷类似物不能清除、功能性治愈为目标）；HSV 潜伏神经节仅转录 LAT；EBV 潜伏记忆 B 细胞</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、感染结局四型：病毒载量曲线</text>
+  <rect x="50" y="150" width="280" height="120" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="50" y1="270" x2="50" y2="276" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="292" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="330" y1="270" x2="330" y2="276" stroke="#475569" stroke-width="1.8"/>
+  <text x="330" y="292" font-size="13" fill="#64748b" text-anchor="middle">时间→</text>
+  <text x="190" y="138" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">急性</text>
+  <path d="M50,270 C53.7,264.0 64.0,253.0 72.4,234 C80.8,215.0 89.2,162.0 100.4,156 C111.6,150.0 124.7,182.0 139.60000000000002,198 C154.5,214.0 172.3,240.4 190,252 C207.7,263.6 222.7,264.6 246,267.6 C269.3,270.6 316.0,269.6 330,270" fill="none" stroke="#0369a1" stroke-width="2.2"/>
+  <rect x="366" y="150" width="280" height="120" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="366" y1="270" x2="366" y2="276" stroke="#475569" stroke-width="1.8"/>
+  <text x="366" y="292" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="646" y1="270" x2="646" y2="276" stroke="#475569" stroke-width="1.8"/>
+  <text x="646" y="292" font-size="13" fill="#64748b" text-anchor="middle">时间→</text>
+  <text x="506" y="138" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">慢性</text>
+  <path d="M366,270 C370.7,260.0 382.3,227.0 394,210 C405.7,193.0 417.3,172.0 436,168 C454.7,164.0 482.7,184.0 506,186 C529.3,188.0 552.7,180.0 576,180 C599.3,180.0 634.3,185.0 646,186" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <rect x="50" y="322" width="280" height="120" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="50" y1="442" x2="50" y2="448" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="464" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="330" y1="442" x2="330" y2="448" stroke="#475569" stroke-width="1.8"/>
+  <text x="330" y="464" font-size="13" fill="#64748b" text-anchor="middle">时间→</text>
+  <text x="190" y="310" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">潜伏</text>
+  <path d="M50,442 C54.7,426.0 68.7,347.2 78,346 C87.3,344.8 87.3,419.4 106,434.8 C124.7,450.2 165.7,438.2 190,438.4 C214.3,438.6 237.6,449.4 251.6,436 C265.6,422.6 265.6,363.0 274,358 C282.4,353.0 292.7,392.8 302,406 C311.3,419.2 325.3,432.0 330,437.2" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="240" y="314" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">再激活</text>
+  <line x1="272" y1="320" x2="272" y2="338" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <rect x="366" y="322" width="280" height="120" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="366" y1="442" x2="366" y2="448" stroke="#475569" stroke-width="1.8"/>
+  <text x="366" y="464" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="646" y1="442" x2="646" y2="448" stroke="#475569" stroke-width="1.8"/>
+  <text x="646" y="464" font-size="13" fill="#64748b" text-anchor="middle">时间→</text>
+  <text x="506" y="310" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">慢病毒</text>
+  <path d="M366,442 C375.3,440.0 403.3,435.0 422,430 C440.7,425.0 459.3,419.0 478,412 C496.7,405.0 515.3,397.0 534,388 C552.7,379.0 571.3,367.0 590,358 C608.7,349.0 636.7,338.0 646,334" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="50" y="630" font-size="11" fill="#475569">难点各不相同：储库（慢性）、靶点不表达（潜伏）、免疫失效（慢病毒）——治疗思路亦随之不同。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、慢性感染储库：HBV 的 cccDNA</text>
+  <ellipse cx="1050" cy="320" rx="130" ry="84" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <circle cx="1010" cy="300" r="66" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="1033.1" cy="283.5" r="14.52" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 971.8694945911728,320.4965217842398 q 19.8,-16.5 39.6,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1047.0128350382683,321.72453883097364 q 19.8,-16.5 39.6,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 1024.198778593003,265.45684471781055 q 19.8,-16.5 39.6,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1010" cy="300" r="30" fill="none" stroke="#dc2626" stroke-width="6" opacity="0.85"/>
+  <text x="1010" y="256" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">cccDNA</text>
+  <text x="730" y="200" font-size="11" fill="#475569">HBV 持久性的核心：核内 cccDNA 微染色体储库——核苷类似物只压复制、不能清除之。</text>
+  <line x1="880" y1="320" x2="940" y2="306" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-enz)"/>
+  <text x="900" y="336" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">核苷类似物</text>
+  <text x="1010" y="390" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">✗ 清除不了</text>
+  <rect x="985.1433999999999" y="470.65" width="269.71320000000003" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1120" y="483.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">功能性治愈：压到不可检出并维持——现实治疗目标</text>
+  <text x="730" y="440" font-size="11" fill="#64748b">停药即回升的根源就在这枚「微染色体」：半衰期长、不随药物消失。</text>
+  <rect x="30" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、潜伏感染：神经节里的沉默与再激活</text>
+  <circle cx="200" cy="700" r="56" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="200" y="700" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">感觉神经节</text>
+  <path d="M168,726L168.0,726.0L170.0,724.1L172.0,722.5L174.0,721.1L176.0,720.3L178.0,720.0L180.0,720.3L182.0,721.1L184.0,722.5L186.0,724.1L188.0,726.0L190.0,727.9L192.0,729.5L194.0,730.9L196.0,731.7L198.0,732.0L200.0,731.7L202.0,730.9L204.0,729.5L206.0,727.9L208.0,726.0L210.0,724.1L212.0,722.5L214.0,721.1L216.0,720.3L218.0,720.0L220.0,720.3L222.0,721.1L224.0,722.5L226.0,724.1L228.0,726.0L230.0,727.9L232.0,729.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <path d="M168,726L168.0,726.0L170.0,727.9L172.0,729.5L174.0,730.9L176.0,731.7L178.0,732.0L180.0,731.7L182.0,730.9L184.0,729.5L186.0,727.9L188.0,726.0L190.0,724.1L192.0,722.5L194.0,721.1L196.0,720.3L198.0,720.0L200.0,720.3L202.0,721.1L204.0,722.5L206.0,724.1L208.0,726.0L210.0,727.9L212.0,729.5L214.0,730.9L216.0,731.7L218.0,732.0L220.0,731.7L222.0,730.9L224.0,729.5L226.0,727.9L228.0,726.0L230.0,724.1L232.0,722.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="178" y1="720" x2="178" y2="732" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="198" y1="732" x2="198" y2="720" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <line x1="218" y1="720" x2="218" y2="732" stroke="#0f766e" stroke-width="1.4" opacity="0.55"/>
+  <text x="200" y="760" font-size="9.5" fill="#134e4a" text-anchor="middle">潜伏基因组（环形）</text>
+  <text x="200" y="636" font-size="10.5" fill="#b45309" text-anchor="middle" font-weight="700">LAT＝唯一大量转录产物</text>
+  <text x="60" y="820" font-size="11" fill="#475569">HSV 潜伏于感觉神经节：不产毒粒、仅 LAT 长期低语——「不表达」让免疫与药物都无从下手。</text>
+  <line x1="90" y1="900" x2="650" y2="900" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="134.8" cy="900" r="6.5" fill="#0369a1"/>
+  <line x1="134.8" y1="909" x2="134.8" y2="930" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="134.8" y="950" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">儿童：水痘</text>
+  <text x="134.8" y="970" font-size="12" fill="#64748b" text-anchor="middle">初次感染</text>
+  <circle cx="370" cy="900" r="6.5" fill="#64748b"/>
+  <line x1="370" y1="891" x2="370" y2="870" stroke="#64748b" stroke-width="1.7"/>
+  <text x="370" y="850" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">潜伏数十年</text>
+  <text x="370" y="830" font-size="12" fill="#64748b" text-anchor="middle">神经节内沉默</text>
+  <circle cx="605.2" cy="900" r="6.5" fill="#dc2626"/>
+  <line x1="605.2" y1="909" x2="605.2" y2="930" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="605.2" y="950" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">老年：带状疱疹</text>
+  <text x="605.2" y="970" font-size="12" fill="#64748b" text-anchor="middle">再激活</text>
+  <text x="370" y="962" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">VZV：同一病毒相隔数十年的两副面孔</text>
+  <rect x="710" y="586" width="660" height="394" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、EB 病毒与慢病毒：另外两种藏法</text>
+  <ellipse cx="860" cy="680" rx="80" ry="48" fill="#f8fafc" stroke="#0f766e" stroke-width="2"/>
+  <text x="860" y="672" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">静息记忆 B 细胞</text>
+  <circle cx="860" cy="690" r="20" fill="none" stroke="#dc2626" stroke-width="6" opacity="0.85"/>
+  <text x="860" y="656" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">附加体</text>
+  <text x="860" y="744" font-size="10" fill="#475569" text-anchor="middle">EBNA1 低表达维护附加体</text>
+  <text x="730" y="636" font-size="11" fill="#475569">EB 病毒潜伏于静息记忆 B 细胞：几乎不表达抗原，免疫监视近乎失明——成人感染率逾九成。</text>
+  <rect x="1010" y="760" width="330" height="160" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1010" y1="920" x2="1010" y2="926" stroke="#475569" stroke-width="1.8"/>
+  <text x="1010" y="942" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1340" y1="920" x2="1340" y2="926" stroke="#475569" stroke-width="1.8"/>
+  <text x="1340" y="942" font-size="13" fill="#64748b" text-anchor="middle">时间→</text>
+  <text x="1175" y="748" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">慢病毒（Maedi-Visna）：抗原漂变</text>
+  <path d="M1010,840 C1018.3,832.0 1045.8,786.7 1059.5,792 C1073.3,797.3 1078.8,868.0 1092.5,872 C1106.3,876.0 1125.5,814.7 1142,816 C1158.5,817.3 1175.0,878.7 1191.5,880 C1208.0,881.3 1224.5,822.7 1241,824 C1257.5,825.3 1274.0,886.7 1290.5,888 C1307.0,889.3 1331.8,841.3 1340,832" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="1040" y="736" font-size="10.5" fill="#475569">免疫失效型：抗原持续漂变、波浪式推进——免疫总慢半拍。</text>
+  <text x="730" y="788" font-size="11" fill="#64748b">无包膜病毒同样构成储库：HPV 的附加体、腺病毒与细小病毒的隐匿——「潜伏」不是有包膜者的专利。</text>
+</svg>
