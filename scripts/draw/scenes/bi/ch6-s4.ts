@@ -8,22 +8,22 @@ const draw = (b: B) => {
   b.ctext(350, 214, '后验 ∝ 似然 × 先验', { size: 15, weight: 700, fill: C.ink })
   b.ctext(350, 240, '输出树与参数的后验分布；分支后验概率 = 采样树中含该分支的比例', { size: 11.5, fill: C.sub })
   b.ctext(350, 266, 'MCMC 以「提议—接受」采样逼近后验（MrBayes / BEAST 等实现）', { size: 11.5, fill: C.mute })
-  b.axis(100, 470, 520, 200, {
+  b.axis(100, 490, 520, 170, {
     xlabel: 'MCMC 迭代 →',
     title: '链的轨迹：老化后收敛到平稳分布',
     xticks: [[0, '0'], [0.5, '中期'], [1, '后期']],
     yticks: [],
   })
-  b.curve(100, 470, 520, 200, [
+  b.curve(100, 490, 520, 170, [
     [0, 0.5], [0.02, 0.72], [0.05, 0.34], [0.08, 0.65], [0.11, 0.4], [0.14, 0.78], [0.17, 0.52],
     [0.2, 0.34], [0.24, 0.6], [0.28, 0.48], [0.32, 0.55], [0.36, 0.46], [0.4, 0.52], [0.45, 0.49],
     [0.5, 0.53], [0.55, 0.5], [0.6, 0.52], [0.65, 0.49], [0.7, 0.51], [0.75, 0.5], [0.8, 0.53],
     [0.85, 0.5], [0.9, 0.51], [0.95, 0.5], [1, 0.52],
   ], { stroke: C.dna, sw: 2.2, smooth: true })
-  b.rect(100, 270, 104, 200, { fill: C.badL, stroke: 'none', fillOp: 0.45 })
-  b.wtext(104, 456, '老化段丢弃', { size: 10.5, weight: 700, fill: C.bad, maxW: 60, lh: 13 })
-  b.tag(480, 320, 'ESS > 200 才可信', { fill: C.okL, stroke: C.ok, size: 11, weight: 700, tfill: '#065f46', pad: 8 })
-  b.tag(480, 352, '多链并行起点不同', { fill: C.accL, stroke: C.acc, size: 11, weight: 700, tfill: C.accD, pad: 8 })
+  b.rect(100, 320, 104, 170, { fill: C.badL, stroke: 'none', fillOp: 0.45 })
+  b.wtext(104, 470, '老化段丢弃', { size: 10.5, weight: 700, fill: C.bad, maxW: 60, lh: 13 })
+  b.tag(480, 350, 'ESS > 200 才可信', { fill: C.okL, stroke: C.ok, size: 11, weight: 700, tfill: '#065f46', pad: 8 })
+  b.tag(480, 382, '多链并行起点不同', { fill: C.accL, stroke: C.acc, size: 11, weight: 700, tfill: C.accD, pad: 8 })
 
   // ============ 二、自展支持率 ============
   b.panel(710, 132, 660, 430, { title: '二、自展支持率：以重抽样度量稳健度' })

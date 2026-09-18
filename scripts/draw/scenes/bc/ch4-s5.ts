@@ -16,8 +16,8 @@ const draw = (b: B) => {
   b.line(414, 372, 450, 372, { stroke: C.bad, sw: 2 })
   b.line(284, 428, 316, 428, { stroke: C.bad, sw: 2 })
   // 结构域分段标记
-  b.tag(130, 252, 'VH + CDR', { fill: C.rnaL, stroke: C.rna, size: 10.5, weight: 700, tfill: C.rnaD, pad: 6 })
-  b.tag(470, 252, 'VH + CDR', { fill: C.rnaL, stroke: C.rna, size: 10.5, weight: 700, tfill: C.rnaD, pad: 6 })
+  b.tag(130, 244, 'VH + CDR', { fill: C.rnaL, stroke: C.rna, size: 10.5, weight: 700, tfill: C.rnaD, pad: 6 })
+  b.tag(470, 244, 'VH + CDR', { fill: C.rnaL, stroke: C.rna, size: 10.5, weight: 700, tfill: C.rnaD, pad: 6 })
   b.ctext(110, 412, 'VL', { size: 11.5, weight: 700, fill: C.rnaD })
   b.ctext(490, 412, 'VL', { size: 11.5, weight: 700, fill: C.rnaD })
   b.ctext(186, 412, 'CL', { size: 11.5, weight: 700, fill: C.rnaD })
@@ -26,7 +26,7 @@ const draw = (b: B) => {
   b.ctext(300, 500, 'CH2 / CH3（Fc）', { size: 11, weight: 700, fill: C.proD })
   b.text(56, 200, '重链 H ×2（~450 aa）', { size: 11.5, weight: 700, fill: C.proD })
   b.text(56, 224, '轻链 L ×2（~220 aa，κ / λ 型）', { size: 11.5, weight: 700, fill: C.rnaD })
-  b.wtext(56, 258, 'V 区 CDR（3 段超变环）构成抗原结合位点：VH+VL 共同形成两个相同结合位点；C 区决定类别与效应功能。', { size: 10.5, fill: C.sub, maxW: 240, lh: 15 })
+  b.wtext(56, 270, 'V 区 CDR（3 段超变环）构成抗原结合位点：VH+VL 共同形成两个相同结合位点；C 区决定类别与效应功能。', { size: 10.5, fill: C.sub, maxW: 240, lh: 15 })
   // 木瓜蛋白酶 / 胃蛋白酶切点
   b.line(232, 316, 240, 300, { stroke: C.enz, sw: 2, dash: '4 3' })
   b.line(360, 300, 368, 316, { stroke: C.enz, sw: 2, dash: '4 3' })
@@ -101,7 +101,7 @@ const draw = (b: B) => {
   // PrPsc：β 折叠丰富、不溶
   b.rect(966, 636, 96, 88, { fill: C.badL, stroke: C.bad, sw: 2, rx: 10 })
   for (let i = 0; i < 5; i++) b.line(980, 650 + i * 16, 1048, 650 + i * 16, { stroke: C.bad, sw: 3 })
-  b.ctext(1014, 600, 'PrPˢᶜ（致病）', { size: 12.5, weight: 700, fill: C.bad })
+  b.ctext(1014, 626, 'PrPˢᶜ（致病）', { size: 12.5, weight: 700, fill: C.bad })
   b.ctext(1014, 744, 'β 折叠丰富 · 不溶 · 抗蛋白酶', { size: 10.5, fill: C.mute })
   // 自我模板化循环
   b.path('M1014,760 L1014,790 Q1014,806 990,806 L900,806', { stroke: C.bad, sw: 2, marker: 'bad' })

@@ -76,7 +76,7 @@ const draw = (b: B) => {
   b.circle(620, 730, 62, { fill: 'none', stroke: C.bad, sw: 1.4, dash: '2 5' })
   b.ctext(620, 816, '阈值外：解体', { size: 10, weight: 700, fill: C.bad })
   b.wtext(380, 862, '「致死诱变」由此派生为治疗思路；穆勒棘轮说明小群体瓶颈下适应度单向衰减——减毒选育正利用这一点。', { size: 10.5, fill: C.sub, maxW: 290, lh: 15 })
-  b.wtext(380, 912, '冠状病毒唯有先获得校读酶才能越界支撑 26–32 kb 大基因组。', { size: 10.5, fill: C.mute, maxW: 290, lh: 15 })
+  b.wtext(380, 940, '冠状病毒唯有先获得校读酶才能越界支撑 26–32 kb 大基因组。', { size: 10.5, fill: C.mute, maxW: 290, lh: 15 })
 
   // ============ 四、正负链差异与医学含义 ============
   b.panel(710, 586, 660, 394, { title: '四、负链的克制、穆勒棘轮与医学含义' })
@@ -99,7 +99,7 @@ const draw = (b: B) => {
   b.ctext(800, 900, '瓶颈①', { size: 9.5, fill: C.mute })
   b.ctext(960, 900, '瓶颈②', { size: 9.5, fill: C.mute })
   b.ctext(1100, 900, '适应度衰减', { size: 9.5, weight: 700, fill: C.bad })
-  b.wtext(1190, 820, '小群体逐代传递中，最少突变的最优类一旦随机丢失便不可复得——群体的平均适应度单向下滑。', { size: 10, fill: C.sub, maxW: 150, lh: 14 })
+  b.wtext(730, 926, '小群体逐代传递中，最少突变的最优类一旦随机丢失便不可复得——群体的平均适应度单向下滑。', { size: 10, fill: C.sub, maxW: 620, lh: 14 })
   b.tag(1020, 952, '医学含义：耐药与免疫逃逸变异预先存在——联合用药与疫苗设计必须直面', { fill: C.warnL, stroke: C.warn, size: 11, weight: 700, tfill: '#78350f', pad: 10 })
 }
 

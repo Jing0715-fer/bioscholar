@@ -41,7 +41,7 @@ const draw = (b: B) => {
   b.ctext(942, 243, '草酰乙酸', { size: 11.5, fill: C.ink })
   b.tag(942, 290, '胞质苹果酸脱氢酶（NADH→NAD⁺）', { fill: C.enzL, stroke: C.enz, size: 10, weight: 600, tfill: C.enzD, pad: 5 })
   b.arrow(942, 256, 942, 333, { stroke: C.rna, sw: 2.2, marker: 'rna' })
-  b.ctext(976, 300, '苹果酸 ↓', { size: 9.5, weight: 700, fill: C.rnaD })
+  b.ctext(976, 272, '苹果酸 ↓', { size: 9.5, weight: 700, fill: C.rnaD })
   // 膜与转运蛋白
   b.bilayer(736, 312, 580, { h: 12, tint: C.dna })
   b.tag(942, 312, '苹果酸 ⇄ α-酮戊二酸', { fill: C.dnaL, stroke: C.dna, size: 9.5, weight: 700, tfill: C.dnaD, pad: 4 })

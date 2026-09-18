@@ -111,7 +111,9 @@ const draw = (b: B) => {
   b.text(770, 892, '拟时序：轨迹的拓扑次序（非钟表时间）', { size: 11.5, weight: 700, fill: C.enzD })
   b.text(770, 916, 'RNA 速度：以未剪接 / 剪接比例补充方向', { size: 11.5, weight: 700, fill: C.rnaD })
   b.text(1140, 626, '伪 bulk：回到样本级检验', { size: 13, weight: 700, fill: C.ink })
-  b.wtext(1140, 652, '细胞不是独立重复——按样本聚合回伪 bulk 再做检验，每组仍需 3 个以上供体。', { size: 11, fill: C.sub, maxW: 220, lh: 15 })
+  b.text(1140, 652, '细胞不是独立重复——', { size: 11, fill: C.sub })
+  b.text(1140, 667, '按样本聚合回伪 bulk 再做检验，', { size: 11, fill: C.sub })
+  b.text(1140, 682, '每组仍需 3 个以上供体。', { size: 11, fill: C.sub })
   b.wtext(1140, 736, '批次整合的权衡：欠校正留批次假象，过校正抹掉真实差异。', { size: 11, fill: C.sub, maxW: 220, lh: 15 })
   b.wtext(740, 952, '一图两读：点的次序是拟时序，箭头的方向是 RNA 速度。', { size: 11.5, weight: 600, fill: C.mute })
 }

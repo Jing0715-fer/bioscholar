@@ -33,7 +33,7 @@ const draw = (b: B) => {
   b.ctext(450, 412, 'IFM', { size: 9, weight: 700, fill: C.enzD })
   b.path('M495,352 C480,380 465,390 452,396', { stroke: C.enz, sw: 1.6, dash: '4 3' })
   b.arrow(436, 400, 376, 360, { stroke: C.enz, sw: 1.6, dash: '4 3', marker: 'enz' })
-  b.wtext(470, 396, '开放后约 1 ms 内塞住胞内侧孔口（DIII–DIV 连接环）', { size: 10.5, fill: C.enzD, maxW: 250, lh: 14 })
+  b.wtext(470, 428, '开放后约 1 ms 内塞住胞内侧孔口（DIII–DIV 连接环）', { size: 10.5, fill: C.enzD, maxW: 250, lh: 14 })
   b.wtext(86, 424, '激活（S4 外携）与失活（IFM 塞孔）是两把彼此独立的锁。', { size: 10.5, fill: C.sub, maxW: 240, lh: 14 })
   // 右侧说明卡
   b.rect(800, 180, 540, 120, { fill: C.accL, fillOp: 0.4, stroke: C.acc, sw: 1.6, rx: 9 })

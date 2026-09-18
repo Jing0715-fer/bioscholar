@@ -9,7 +9,7 @@ const draw = (b: B) => {
   const turns: [number, number][] = [[220, 250], [220, 180], [420, 180], [420, 290]]
   turns.forEach(([x, y]) => b.circle(x, y, 6, { fill: C.warn, stroke: C.warn }))
   b.tag(90, 205, '跑 ≈1 s · 20 μm/s', { fill: C.dnaL, stroke: C.dna, size: 12.5, weight: 600, tfill: C.dnaD, pad: 8 })
-  b.tag(300, 145, '翻滚（tumble）= 随机重定向', { fill: C.warnL, stroke: C.warn, size: 12.5, weight: 600, tfill: C.ink, pad: 8 })
+  b.tag(350, 312, '翻滚（tumble）= 随机重定向', { fill: C.warnL, stroke: C.warn, size: 12.5, weight: 600, tfill: C.ink, pad: 8 })
   // 浓度梯度背景
   b.rect(30, 132, 640, 420, { fill: 'none', stroke: C.line, sw: 0 })
   b.wtext(70, 340, '引诱剂浓度梯度 ↑（时间比较而非空间比较：细菌仅 2 μm，太短无法测两端浓度差）', { size: 13, fill: C.sub, maxW: 560, lh: 20 })

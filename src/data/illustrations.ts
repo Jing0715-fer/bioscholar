@@ -206,7 +206,7 @@ export const illustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/structures/composite-vitamins-fat-soluble.svg',
       caption:
-        '脂溶性维生素（A 原、A、D、E、K）的结构式：β-胡萝卜素——对称的双 β-紫罗酮头–共轭多烯长链，在小肠中被 β-胡萝卜素双加氧酶于中心位置对称裂解，理论上生成两分子视黄醇（实际转化效率约 1/12）；视黄醇——环己烯–共轭多烯–醇，氧化为 11-顺视黄醛后与视蛋白的 Lys 形成 Schiff 碱，是视紫红质光异构化的生色团；骨化三醇（1,25-二羟维生素 D₃）——开环甾（secosteroid）结构，胆固醇经紫外光开环成的维生素 D₃ 在肝、肾两次羟化后的活性激素，与核受体 VDR 结合规钙磷代谢基因；生育酚（E）——色满环上可牺牲的酚羟基捕获脂质过氧化自由基链（自身被氧化后由维生素 C 再生）；叶绿醌（K1）——萘醌核在 γ-谷氨酰羧化酶介导的谷氨酸 γ-羧化中循环氧化还原，为凝血因子提供 Ca²⁺ 结合位点。',
+        '脂溶性维生素（A 原、A、D、E、K）的结构式：β-胡萝卜素——对称的双 β-紫罗酮头–共轭多烯长链，在小肠中被 β-胡萝卜素双加氧酶于中心位置对称裂解，理论上生成两分子视黄醇（实际转化效率约 1/12）；视黄醇——环己烯–共轭多烯–醇，氧化为 11-顺视黄醛后与视蛋白的 Lys 形成 Schiff 碱，是视紫红质光异构化的生色团；骨化三醇（1,25-二羟维生素 D₃——核受体 VDR 结合规钙磷代谢基因；生育酚（E）——色满环上可牺牲的酚羟基捕获脂质过氧化自由基链（自身被氧化后由维生素 C 再生）；叶绿醌（K1）——萘醌核在 γ-谷氨酰羧化酶介导的谷氨酸 γ-羧化中循环氧化还原，为凝血因子提供 Ca²⁺ 结合位点。',
       credit: CCD_CREDIT,
     },
   ],
@@ -591,7 +591,7 @@ export const illustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/commons/cdk-cyclin.png',
       caption:
-        '细胞周期的 CDK–cyclin 引擎：cyclin 周期性合成与降解（经泛素–蛋白酶体途径）驱动 CDK 活性振荡，不同 cyclin–CDK 组合序贯主导各时相转换——G1 期 cyclin D–CDK4/6 磷酸化 Rb 释放 E2F，启动 G1/S 基因表达；cyclin E–CDK2 触发 S 期起始、启动复制起点；cyclin A–CDK2 维持 S 期进程；cyclin B–CDK1（MPF）驱动 G2/M 转换与有丝分裂事件；末期 APC/C 降解 cyclin B 使细胞退出分裂。CKI（p21、p27 等）与磷酸化修饰（Wee1/Cdc25）对引擎进行精密校准，DNA 损伤经 p53→p21 拉动刹车（限制点与纺锤体组装检查点为图中主线之外的监督层）。',
+        '细胞周期的 CDK–cyclin 引擎：cyclin 周期性合成与降解（经泛素–蛋白酶体途径）驱动 CDK 活性振荡，不同 cyclin–CDK 组合序贯主导各时相转换——G1 期 cyclin D–CDK4/6 磷酸化 Rb 释放 E2F，启动 G1/S 基因表达；cyclin E–CDK2 触发 S 期起始、启动复制起点；cyclin A–CDK2 维持 S 期进——与有丝分裂事件；末期 APC/C 降解 cyclin B 使细胞退出分裂。CKI（p21、p27 等）与磷酸化修饰（Wee1/Cdc25）对引擎进行精密校准，DNA 损伤经 p53→p21 拉动刹车（限制点与纺锤体组装检查点为图中主线之外的监督层）。',
       credit: commonsCredit('Fatma Abukhater', 'CC0'),
     },
   ],

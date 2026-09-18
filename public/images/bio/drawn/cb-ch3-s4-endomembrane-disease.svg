@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">内膜系统与疾病：ER 应激、错误折叠与互作网络</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">未折叠蛋白累积触发 UPR（PERK 抑翻译 / IRE1 剪接 XBP1 / ATF6 入核），失代偿经 CHOP 走向凋亡；CFTR ΔF508 被 ER 质控降解致囊性纤维化；MAM 介导 ER-线粒体 Ca²⁺ 与脂质交换</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">内膜系统与疾病：ER 应激、错误折叠与互作网络</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">未折叠蛋白累积触发UPR（PERK抑翻译/IRE1剪接XBP1/ATF6入核），失代偿经CHOP走向凋亡；CFTRΔF508被ER质控降解致囊性纤维化；MAM介导ER-线粒体Ca²⁺</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">与脂质交换</text>
   <rect x="30" y="132" width="900" height="440" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、内质网应激与未折叠蛋白反应（UPR）三条分支</text>
   <path d="M 60,240 q 30,-18 60,0 q 30,18 60,0 q 30,-18 60,0 q 30,18 60,0" fill="none" opacity="0.75" stroke="#0f766e" stroke-width="4.4"/>
@@ -34,16 +35,19 @@
   <text x="230" y="340" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">IRE1</text>
   <rect x="300" y="320" width="60" height="30" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
   <text x="330" y="340" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">ATF6</text>
-  <text x="390" y="330" font-size="10.5" fill="#64748b">应激时伴侣 BiP/GRP78 与传感器解离，传感器活化</text>
+  <text x="390" y="294" font-size="10.5" fill="#64748b">应激时伴侣 BiP/GRP78 与传感器解离，传感器活化</text>
   <line x1="130" y1="355" x2="130" y2="392" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
-  <text x="56" y="412" font-size="11" fill="#475569">磷酸化 eIF2α → 全局抑制翻译、</text>
-  <text x="56" y="427" font-size="11" fill="#475569">减少蛋白流入</text>
+  <text x="56" y="412" font-size="11" fill="#475569">磷酸化 eIF2α →</text>
+  <text x="56" y="427" font-size="11" fill="#475569">全局抑制翻译、</text>
+  <text x="56" y="442" font-size="11" fill="#475569">减少蛋白流入</text>
   <line x1="230" y1="355" x2="230" y2="392" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
-  <text x="156" y="412" font-size="11" fill="#475569">非经典剪接 XBP1 mRNA → 转录因子，</text>
-  <text x="156" y="427" font-size="11" fill="#475569">上调折叠与 ERAD 基因</text>
+  <text x="166" y="412" font-size="11" fill="#475569">非经典剪接 XBP1</text>
+  <text x="166" y="427" font-size="11" fill="#475569">mRNA → 转录因子，</text>
+  <text x="166" y="442" font-size="11" fill="#475569">上调折叠与 ERAD 基因</text>
   <line x1="330" y1="355" x2="330" y2="392" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
-  <text x="256" y="412" font-size="11" fill="#475569">经 S1P/S2P 切割后入核，</text>
-  <text x="256" y="427" font-size="11" fill="#475569">上调伴侣蛋白表达</text>
+  <text x="296" y="412" font-size="11" fill="#475569">经 S1P/S2P</text>
+  <text x="296" y="427" font-size="11" fill="#475569">切割后入核，</text>
+  <text x="296" y="442" font-size="11" fill="#475569">上调伴侣蛋白表达</text>
   <line x1="430" y1="335" x2="470" y2="335" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
   <rect x="475" y="306" width="130" height="58" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
   <text x="540" y="330" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">应激持续失代偿</text>
@@ -61,34 +65,34 @@
   <text x="1027" y="217.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">疾病</text>
   <rect x="1092" y="190" width="266" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="1225" y="217.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
-  <rect x="962" y="234" width="130" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1027" y="267.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">囊性纤维化</text>
-  <rect x="1092" y="234" width="266" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1225" y="267.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">CFTR ΔF508 错误折叠，被 ER 质量控制降解，膜上功能通道不足</text>
-  <rect x="962" y="290" width="396" height="56" fill="#f8fafc" fill-opacity="0.85"/>
-  <rect x="962" y="290" width="130" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1027" y="323.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">家族性高胆固醇血症</text>
-  <rect x="1092" y="290" width="266" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1225" y="323.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">LDL 受体缺陷，胆固醇稳态失衡</text>
-  <rect x="962" y="346" width="130" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1027" y="379.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">I-cell 病</text>
-  <rect x="1092" y="346" width="266" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1225" y="379.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">M6P 分选障碍，溶酶体酶错误分泌</text>
-  <rect x="962" y="402" width="396" height="56" fill="#f8fafc" fill-opacity="0.85"/>
-  <rect x="962" y="402" width="130" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1027" y="435.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">α1-抗胰蛋白酶缺乏</text>
-  <rect x="1092" y="402" width="266" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1225" y="435.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">突变蛋白在 ER 聚集，肝细胞损伤</text>
-  <rect x="962" y="458" width="130" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1027" y="491.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">Zellweger 综合征</text>
-  <rect x="1092" y="458" width="266" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1225" y="491.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">过氧化物酶体装配缺陷，VLCFA 累积</text>
-  <rect x="962" y="514" width="396" height="56" fill="#f8fafc" fill-opacity="0.85"/>
-  <rect x="962" y="514" width="130" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1027" y="547.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">高尔基体与肿瘤</text>
-  <rect x="1092" y="514" width="266" height="56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1225" y="547.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">糖基化谱改变（N-糖链分支增加），与侵袭转移相关</text>
-  <text x="962" y="548" font-size="10" fill="#64748b">囊性纤维化新型治疗采用「正确剂」帮助突变蛋白折叠运输。</text>
+  <rect x="962" y="234" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1027" y="262.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">囊性纤维化</text>
+  <rect x="1092" y="234" width="266" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="262.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">CFTR ΔF508 错误折叠，被 ER 质量控制降解，膜上功能通道不足</text>
+  <rect x="962" y="280" width="396" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="962" y="280" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1027" y="308.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">家族性高胆固醇血症</text>
+  <rect x="1092" y="280" width="266" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="308.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">LDL 受体缺陷，胆固醇稳态失衡</text>
+  <rect x="962" y="326" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1027" y="354.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">I-cell 病</text>
+  <rect x="1092" y="326" width="266" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="354.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">M6P 分选障碍，溶酶体酶错误分泌</text>
+  <rect x="962" y="372" width="396" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="962" y="372" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1027" y="400.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">α1-抗胰蛋白酶缺乏</text>
+  <rect x="1092" y="372" width="266" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="400.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">突变蛋白在 ER 聚集，肝细胞损伤</text>
+  <rect x="962" y="418" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1027" y="446.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">Zellweger 综合征</text>
+  <rect x="1092" y="418" width="266" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="446.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">过氧化物酶体装配缺陷，VLCFA 累积</text>
+  <rect x="962" y="464" width="396" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="962" y="464" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1027" y="492.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">高尔基体与肿瘤</text>
+  <rect x="1092" y="464" width="266" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="492.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">糖基化谱改变（N-糖链分支增加），与侵袭转移相关</text>
+  <text x="962" y="530" font-size="10" fill="#64748b">囊性纤维化新型治疗采用「正确剂」帮助突变蛋白折叠运输。</text>
   <rect x="30" y="588" width="1340" height="392" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="610.84" font-size="19" fill="#475569" font-weight="700">三、细胞器互作网络：内膜系统的稳态即细胞稳态</text>
   <path d="M 90,680 q 27.5,-16.8 55,0 q 27.5,16.8 55,0 q 27.5,-16.8 55,0 q 27.5,16.8 55,0" fill="none" opacity="0.75" stroke="#0f766e" stroke-width="4.4"/>
@@ -103,7 +107,7 @@
   <text x="90" y="770" font-size="11" fill="#475569">ER-线粒体接触位点（MAM）介导 Ca²⁺ 与脂质交换，</text>
   <text x="90" y="785.5" font-size="11" fill="#475569">是脂质合成与凋亡调控的平台。</text>
   <line x1="200" y1="712" x2="200" y2="760" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
-  <text x="90" y="786" font-size="11" fill="#475569">ER 以 COPII 出芽为其他细胞器提供膜来源。</text>
+  <text x="90" y="806" font-size="11" fill="#475569">ER 以 COPII 出芽为其他细胞器提供膜来源。</text>
   <circle cx="700" cy="700" r="42" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
   <text x="700" y="696" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">内体</text>
   <text x="700" y="712" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">系统</text>

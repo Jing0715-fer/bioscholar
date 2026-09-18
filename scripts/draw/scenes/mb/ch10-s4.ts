@@ -103,7 +103,8 @@ const draw = (b: B) => {
   // —— 互补结论 ——
   b.rect(970, 570, 380, 232, { fill: C.panel, stroke: C.line, sw: 1.3, rx: 10 })
   b.text(986, 598, '为什么必须互补？', { size: 14, weight: 700, fill: C.ink })
-  b.wtext(986, 624, '翻译效率 · 降解 · 修饰的解释力必须由蛋白质组补齐——mRNA 丰度无法替代「翻译后现实」。', { size: 11.5, fill: C.sub, maxW: 348, lh: 18 })
+  b.wtext(986, 624, '翻译效率 · 降解 · 修饰的解释力必须由蛋白质组补齐', { size: 11.5, fill: C.sub, maxW: 348, lh: 18 })
+  b.wtext(986, 642, '——mRNA 丰度无法替代「翻译后现实」。', { size: 11.5, fill: C.sub, maxW: 348, lh: 18 })
   // 拼图示意
   b.rect(1000, 690, 150, 70, { fill: C.rnaL, stroke: C.rna, sw: 1.8, rx: 8 })
   b.ctext(1075, 730, 'RNA-seq', { size: 13, weight: 700, fill: C.rnaD })

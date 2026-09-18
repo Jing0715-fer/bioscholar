@@ -2,6 +2,11 @@
 import { scene, C, B } from '../../lib'
 
 const draw = (b: B) => {
+  // 副标题过长（scene 两行自动换行仍溢出）→ 手动三行渲染（原文未改动）
+  b.ctext(700, 77, 'BCR 由 mIgM/mIgD 与 Igα/Igβ（CD79a/b）组成，信号亚单位共携两枚 ITAM，经 Lyn-Syk-BLNK-PLCγ2 接通钙流、MAPK 与 NF-κB 三条主干（Btk 缺陷致 XLA）；', { size: 12.5, fill: C.mute })
+  b.ctext(700, 94, 'CD21-CD19-CD81 共受体以 C3d 耦联补体激活、显著降低活化阈值，EB 病毒经 gp350 盗用 CD21；CD22 与 FCGR2B 经 ITIM 招募 SHP-1 与 SHIP 负调，抗体反馈构成自限环；', { size: 12.5, fill: C.mute })
+  b.ctext(700, 111, 'TD 抗原须 Tfh 辅助并产出记忆与亲和力成熟，TI-1 依赖丝裂原、TI-2 依赖重复表位交联，婴幼儿对 TI-2 应答弱故多糖疫苗须制成结合疫苗', { size: 12.5, fill: C.mute })
+
   // ============ 一、BCR 复合体与信号主干 ============
   b.panel(30, 132, 1340, 300, { title: '一、BCR 复合体：识别亚单位 + 信号亚单位，接通三条主干' })
 
@@ -89,6 +94,5 @@ const draw = (b: B) => {
 
 export default scene({
   title: 'BCR 复合体与 B 细胞活化信号：构造、正负调控与三类抗原',
-  subtitle: 'BCR 由 mIgM/mIgD 与 Igα/Igβ（CD79a/b）组成，信号亚单位共携两枚 ITAM，经 Lyn-Syk-BLNK-PLCγ2 接通钙流、MAPK 与 NF-κB 三条主干（Btk 缺陷致 XLA）；CD21-CD19-CD81 共受体以 C3d 耦联补体激活、显著降低活化阈值，EB 病毒经 gp350 盗用 CD21；CD22 与 FCGR2B 经 ITIM 招募 SHP-1 与 SHIP 负调，抗体反馈构成自限环；TD 抗原须 Tfh 辅助并产出记忆与亲和力成熟，TI-1 依赖丝裂原、TI-2 依赖重复表位交联，婴幼儿对 TI-2 应答弱故多糖疫苗须制成结合疫苗',
   draw,
 })

@@ -78,7 +78,7 @@ const draw = (b: B) => {
   // ============ 三、EMSA 与 ChIP（左下） ============
   b.panel(30, 554, 860, 406, { title: '三、DNA-蛋白互作验证：EMSA（体外）与 ChIP（体内）' })
   // —— EMSA ——
-  b.ctext(250, 582, 'EMSA：凝胶迁移阻滞', { size: 14.5, weight: 700, fill: C.ink })
+  b.text(302, 622, 'EMSA：凝胶迁移阻滞', { size: 14.5, weight: 700, fill: C.ink })
   b.gel(56, 596, 240, 240, [
     { label: '游离探针', bands: [[0.80, C.rna]] },
     { label: '+ 蛋白', bands: [[0.44, C.rna], [0.80, '#e7c998']] },
@@ -107,7 +107,7 @@ const draw = (b: B) => {
 
   // ============ 四、报告基因系统（右下） ============
   b.panel(910, 554, 460, 406, { title: '四、报告基因系统：量化启动子 / 增强子活性' })
-  b.wtext(926, 584, '将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：', { size: 11.5, fill: C.sub, maxW: 430 })
+  b.wtext(926, 596, '将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：', { size: 11.5, fill: C.sub, maxW: 430 })
   // —— GFP ——
   b.rect(926, 600, 430, 100, { fill: C.okL, stroke: C.ok, sw: 1.4, rx: 9, fillOp: 0.4 })
   b.text(942, 624, 'GFP 绿色荧光蛋白', { size: 13.5, weight: 700, fill: C.ok })

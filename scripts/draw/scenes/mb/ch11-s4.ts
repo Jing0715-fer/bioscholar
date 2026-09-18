@@ -57,11 +57,11 @@ const draw = (b: B) => {
   b.line(200, 620, 700, 620, { stroke: C.acc, sw: 5, opacity: 0.5 }) // 细胞膜
   b.ctext(120, 624, '细胞膜', { size: 10.5, fill: C.mute })
   // 胞外 scFv
-  b.ellipse(300, 596, 40, 20, { fill: C.enzL, stroke: C.enz, sw: 1.8 })
-  b.ctext(300, 601, 'scFv', { size: 12, weight: 700, fill: C.enzD })
-  b.ctext(300, 566, '单链抗体识别肿瘤抗原', { size: 10.5, fill: C.mute })
-  b.line(300, 616, 300, 636, { stroke: C.sub, sw: 2 })
-  b.ctext(300, 650, '铰链区', { size: 10, fill: C.mute })
+  b.ellipse(575, 596, 40, 20, { fill: C.enzL, stroke: C.enz, sw: 1.8 })
+  b.ctext(575, 601, 'scFv', { size: 12, weight: 700, fill: C.enzD })
+  b.ctext(690, 592, '单链抗体识别肿瘤抗原', { size: 10.5, fill: C.mute })
+  b.line(575, 616, 575, 636, { stroke: C.sub, sw: 2 })
+  b.ctext(505, 630, '铰链区', { size: 10, fill: C.mute })
   // 胞内：共刺激域 + CD3ζ
   b.rect(500, 636, 150, 30, { fill: C.rnaL, stroke: C.rna, sw: 1.6, rx: 5 })
   b.ctext(575, 656, '共刺激域 CD28 / 4-1BB', { size: 10.5, weight: 700, fill: C.rnaD })
@@ -69,7 +69,7 @@ const draw = (b: B) => {
   b.ctext(575, 691, 'CD3ζ 信号域', { size: 10.5, weight: 700, fill: C.proD })
   b.line(575, 620, 575, 636, { stroke: C.sub, sw: 2 })
   b.ctext(575, 716, '胞内信号输出', { size: 10, fill: C.mute })
-  b.ctext(420, 614, '（第二代 CAR：共刺激域是疗效关键）', { size: 10.5, fill: C.rnaD })
+  b.ctext(240, 660, '（第二代 CAR：共刺激域是疗效关键）', { size: 10.5, fill: C.rnaD })
   // 流程
   const flow = ['分离患者 T 细胞', '慢病毒导入受体基因', '体外扩增', '回输患者']
   flow.forEach((s, i) => {
@@ -102,7 +102,8 @@ const draw = (b: B) => {
     b.text(972, y + 26, t, { size: 12.5, weight: 700, fill: C.ink })
     b.etext(1318, y + 26, s, { size: 11.5, fill: C.sub })
   })
-  b.wtext(956, 906, '技术能力与伦理边界的张力将持续考验分子生物学——「能否做到」与「是否应当」必须同步回答', { size: 11, fill: C.mute, maxW: 378, lh: 17 })
+  b.wtext(956, 906, '技术能力与伦理边界的张力将持续考验分子生物学', { size: 11, fill: C.mute, maxW: 378, lh: 17 })
+  b.wtext(956, 923, '——「能否做到」与「是否应当」必须同步回答', { size: 11, fill: C.mute, maxW: 378, lh: 17 })
 }
 
 export default scene({

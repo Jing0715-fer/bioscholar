@@ -54,12 +54,17 @@ const draw = (b: B) => {
   // ============ 三、表达工程蛋白（右中） ============
   b.panel(710, 400, 660, 276, { title: '三、表达工程蛋白的经典路线（分子克隆 → 生物药）' })
   const steps = ['目的基因（常自 cDNA）', '表达载体装配', '大肠杆菌 BL21(DE3) 诱导', '亲和纯化 → 复性 / 去标签']
-  const subs = ['反转录获得编码序列', 'T7/lac 启动子 + RBS + His₆ 标签 + 终止子', '携 T7 RNAP 基因 · IPTG 诱导', 'Ni 柱捕获 His₆ → 产物']
+  const subs: string[][] = [
+    ['反转录获得编码序列'],
+    ['T7/lac 启动子 + RBS +', 'His₆ 标签 + 终止子'],
+    ['携 T7 RNAP 基因 ·', 'IPTG 诱导'],
+    ['Ni 柱捕获 His₆ → 产物'],
+  ]
   steps.forEach((s, i) => {
     const x = 726 + i * 156
     b.rect(x, 444, 142, 122, { fill: '#ffffff', stroke: i === 1 ? C.enz : C.acc, sw: 1.5, rx: 9 })
     b.wtext(x + 71, 470, s, { size: 12, weight: 700, fill: i === 1 ? C.enzD : C.accD, maxW: 126, lh: 17, anchor: 'middle' })
-    b.wtext(x + 71, 508, subs[i], { size: 10.5, fill: C.sub, maxW: 126, lh: 15, anchor: 'middle' })
+    subs[i].forEach((ln, j) => b.text(x + 71, 508 + j * 15, ln, { size: 10.5, fill: C.sub, anchor: 'middle' }))
     if (i < 3) b.arrow(x + 144, 505, x + 154, 505, { stroke: C.sub, sw: 2, marker: 'ink' })
   })
   b.rect(726, 580, 604, 56, { fill: C.panelB, stroke: C.line, sw: 1.2, rx: 9 })

@@ -42,7 +42,8 @@ const draw = (b: B) => {
   // MAC
   b.rect(1130, 250, 200, 76, { fill: C.badL, fillOp: 0.5, stroke: C.bad, sw: 1.8, rx: 8 })
   b.ctext(1230, 274, '攻膜复合物 MAC', { size: 13, weight: 700, fill: C.bad })
-  b.wtext(1230, 296, 'C5b·C6·C7·C8 募集 12–18 个 C9 聚合成贯穿脂质双层的管状孔道', { size: 9, fill: C.sub, maxW: 180, lh: 12 })
+  b.ctext(1230, 296, 'C5b·C6·C7·C8 募集 12–18 个 C9', { size: 9, fill: C.sub })
+  b.ctext(1230, 308, '聚合成贯穿脂质双层的管状孔道', { size: 9, fill: C.sub })
   // 膜上孔道示意
   b.bilayer(1150, 350, 160, { tint: C.bad, op: 0.5 })
   b.polygon([[1215, 340], [1226, 344], [1230, 366], [1226, 370], [1215, 374], [1210, 366]], { fill: C.bad, fillOp: 0.75, stroke: C.bad, sw: 1.6 })

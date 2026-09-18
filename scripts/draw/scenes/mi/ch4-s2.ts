@@ -14,7 +14,7 @@ const draw = (b: B) => {
   ]
   stages.forEach(([cx, t, s]) => {
     b.ctext(cx, 185, t, { size: 14, weight: 700, fill: C.ink })
-    b.wtext(cx, 300, s, { size: 10.5, fill: C.sub, maxW: 240, lh: 15 })
+    b.wtext(cx, 300, s, { size: 10.5, fill: C.sub, maxW: 185, lh: 15 })
   })
   // 阶段间箭头
   for (let i = 0; i < 4; i++) b.arrow(180 + i * 260 + 110, 235, 440 + i * 260 - 110, 235, { stroke: C.faint, sw: 2, marker: 'mute' })
@@ -54,10 +54,12 @@ const draw = (b: B) => {
   b.rect(ax + 0.30 * aw, ay - ah, 0.15 * aw, ah, { fill: C.badL, fillOp: 0.35 })
   b.rect(ax + 0.45 * aw, ay - ah, 0.55 * aw, ah, { fill: C.okL, fillOp: 0.3 })
   b.axis(ax, ay, aw, ah, {
-    xlabel: '同步感染后的培养时间', ylabel: '噬菌体效价（对数坐标）',
+    xlabel: '同步感染后的培养时间',
     xticks: [[0.075, '潜隐期'], [0.375, '裂解期'], [0.72, '平顶期']],
     yticks: [[0.03, '低'], [0.5, '中'], [0.95, '高']],
   })
+  // 轴 ylabel 手绘于绘图区左上空白（避开 y 轴中部刻度）
+  b.text(170, 522, '噬菌体效价（对数坐标）', { size: 13, weight: 600, fill: C.sub })
   // 总效价曲线（实线）
   b.curve(ax, ay, aw, ah, [
     [0, 0.03], [0.15, 0.03], [0.30, 0.03], [0.34, 0.10], [0.38, 0.38],

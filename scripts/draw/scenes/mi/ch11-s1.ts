@@ -38,14 +38,14 @@ const draw = (b: B) => {
   // ============ 三、双名法 ============
   b.panel(30, 464, 660, 240, { title: '三、双名法：学名 = 属名 + 种加词' })
 
-  b.tag(240, 530, 'Escherichia', { fill: C.proL, stroke: C.pro, size: 15, weight: 700, tfill: C.proD, pad: 12 })
-  b.tag(430, 530, 'coli', { fill: C.enzL, stroke: C.enz, size: 15, weight: 700, tfill: C.enzD, pad: 12 })
-  b.wtext(100, 572, '属名（名词，首字母大写）', { size: 10.5, fill: C.proD, maxW: 180, lh: 14 })
-  b.ctext(300, 572, '种加词（形容词，一律小写）', { size: 10.5, fill: C.enzD })
-  b.ctext(335, 530, '斜体书写', { size: 10, fill: C.mute })
-  b.ctext(335, 510, '（Migula, 1895）', { size: 11, fill: C.sub })
-  b.ctext(335, 492, '定名人与年份', { size: 9.5, fill: C.mute })
-  b.wtext(60, 614, '再次出现可缩写为 E. coli；中文惯称「大肠杆菌」。种加词常编码形态、栖息地等信息（如 Staphylococcus aureus 的 aureus 即「金黄色」）。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
+  b.tag(240, 538, 'Escherichia', { fill: C.proL, stroke: C.pro, size: 15, weight: 700, tfill: C.proD, pad: 12 })
+  b.tag(430, 538, 'coli', { fill: C.enzL, stroke: C.enz, size: 15, weight: 700, tfill: C.enzD, pad: 12 })
+  b.wtext(100, 580, '属名（名词，首字母大写）', { size: 10.5, fill: C.proD, maxW: 180, lh: 14 })
+  b.ctext(300, 580, '种加词（形容词，一律小写）', { size: 10.5, fill: C.enzD })
+  b.ctext(335, 538, '斜体书写', { size: 10, fill: C.mute })
+  b.ctext(335, 520, '（Migula, 1895）', { size: 11, fill: C.sub })
+  b.ctext(335, 502, '定名人与年份', { size: 9.5, fill: C.mute })
+  b.wtext(60, 622, '再次出现可缩写为 E. coli；中文惯称「大肠杆菌」。种加词常编码形态、栖息地等信息（如 Staphylococcus aureus 的 aureus 即「金黄色」）。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
 
   // ============ 四、种以下单元与菌株 ============
   b.panel(710, 464, 660, 240, { title: '四、种以下的单元与「菌株」' })

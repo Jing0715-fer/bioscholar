@@ -63,7 +63,8 @@ const draw = (b: B) => {
   b.text(78, 602, 'CLIP：凹槽的「占位锁」', { size: 12.5, weight: 700, fill: C.proD })
   b.wtext(78, 622, '不变链的 CLIP 段占据 II 类肽结合凹槽，防止内质网中错误装载自身肽或内源肽。', { size: 10.5, fill: C.sub, maxW: 580, lh: 15 })
   b.rect(100, 654, 250, 30, { fill: C.proL, fillOp: 0.5, stroke: C.pro, sw: 1.4, rx: 5 })
-  b.ctext(225, 673, 'MHC II 凹槽', { size: 10, weight: 700, fill: C.proD })
+  // 标签移至凹槽图下方，避免与 CLIP 标签同位重叠
+  b.ctext(225, 700, 'MHC II 凹槽', { size: 10, weight: 700, fill: C.proD })
   b.rect(150, 660, 150, 18, { fill: C.rnaL, fillOp: 0.8, stroke: C.rna, sw: 1.2, rx: 4 })
   b.ctext(225, 673, 'CLIP', { size: 9.5, weight: 700, fill: C.rnaD })
 

@@ -93,7 +93,9 @@ const draw = (b: B) => {
   ]
   ma.forEach(([fx, fy]) => b.circle(760 + fx * 340, 880 - fy * 240, 4, { fill: C.acc, fillOp: 0.6 }))
   b.tag(880, 668, '相关 r ≈ 0.4–0.6', { fill: C.accL, stroke: C.acc, size: 11.5, weight: 700, tfill: C.accD, pad: 9 })
-  b.wtext(1130, 656, 'mRNA 与蛋白的相关系数量级约 0.4–0.6——翻译与翻译后过程构成缓冲层。', { size: 11, fill: C.sub, maxW: 220, lh: 15 })
+  b.text(1130, 656, 'mRNA 与蛋白的相关系数量级', { size: 11, fill: C.sub })
+  b.text(1130, 671, '约 0.4–0.6——翻译与翻译后', { size: 11, fill: C.sub })
+  b.text(1130, 686, '过程构成缓冲层。', { size: 11, fill: C.sub })
   b.wtext(1130, 736, '这层缓冲正是两层互补整合的理由：各答一问，合起来才见全貌。', { size: 11, fill: C.sub, maxW: 220, lh: 15 })
   b.ctext(930, 948, '读定量先读偏差：标签法的比值压缩、无标记法的缺失值、DIA 的嵌合谱。', { size: 11.5, weight: 600, fill: C.mute })
 }

@@ -94,7 +94,7 @@ const draw = (b: B) => {
   b.rect(1104, 522, 74, 30, { fill: C.accL, stroke: C.acc, sw: 1.8, rx: 6 })
   b.ctext(1141, 541, 'sGC', { size: 10, weight: 700, fill: C.accD })
   b.arrow(1066, 560, 1100, 546, { stroke: C.ok, sw: 1.8, marker: 'ok' })
-  b.wtext(1230, 528, 'cGMP→PKG→肌球蛋白轻链去磷酸化→舒张', { size: 9, fill: C.sub, maxW: 120, lh: 12.5 })
+  b.wtext(1185, 528, 'cGMP→PKG→肌球蛋白轻链去磷酸化→舒张', { size: 9, fill: C.sub, maxW: 120, lh: 12.5 })
   b.wtext(790, 648, '硝酸甘油（体内缓释 NO）治疗心绞痛；Furchgott、Ignarro 与 Murad 因 NO 信号获 1998 年诺贝尔奖；西地那非抑制 PDE5 减少 cGMP 降解。', { size: 9.5, fill: C.sub, maxW: 540, lh: 13.5 })
   // SOCE
   b.text(790, 700, 'SOCE：', { size: 10.5, weight: 700, fill: C.ink })

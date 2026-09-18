@@ -1,0 +1,267 @@
+  1400→Task: 编写免疫学第 1–3 章教材正文（12 小节）+ 测验 15 题 + 术语 8 条
+  1401→
+  1402→Work Log:
+  1403→- 通读 27-A1-brief.md 与前置文件（types.ts、neuro/ch1.ts、microbiology.ts 测验、validate-chapters.ts），确认 Chapter/Section/QuizQuestion/GlossaryTerm 结构与正文禁用字符规则
+  1404→- 编写 src/data/subjects/immuno/ch1.ts（免疫学绪论，4 节：基本概念与功能／系统组成概览／应答类型与规律／发展简史），导出 immunoCh1
+  1405→- 编写 src/data/subjects/immuno/ch2.ts（免疫器官与组织，4 节：骨髓与胸腺／淋巴结与脾／MALT 与 SALT／再循环与归巢），导出 immunoCh2
+  1406→- 编写 src/data/subjects/immuno/ch3.ts（固有免疫细胞，4 节：中性粒与单核巨噬／树突状细胞／NK 与 ILC／嗜酸嗜碱与肥大细胞），导出 immunoCh3
+  1407→- 编写 src/data/quiz/immunology-a1.ts，导出 immunologyQuizA1：15 题（q-immunology-1~15，每章 5 题；single 11／truefalse 2／multiple 2；难度 1=4、2=8、3=3；解析均≥80 字）
+  1408→- 编写 src/data/glossary-immuno-a1.ts，导出 immunoGlossaryA1：8 条（g-155~g-162，定义均≥80 字）
+  1409→- 第一轮校验发现 ch1-s3 正文 2168 字不足，扩写应答时相、克隆扩增规模、抗体四期曲线与记忆亚群内容；随后对低于 2600 字的 ch2-s4、ch3-s2 补写收束段
+  1410→- 修正审校问题：Behring 拼写、ch2 英文残词（densely、modified）、CGD 英文拼写、ch3-s2 冗余表述
+  1411→- 校验通过：bun run scripts/validate-chapters.ts immunology src/data/subjects/immuno/{ch1,ch2,ch3}.ts → 「12 节全部通过 · 字数区间 2610–3076」；另以脚本核验测验题量/题型/难度/解析长度与术语 id 连续性、定义长度，全部合规
+  1412→- 注：immunology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 文件内以双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 5 个产出文件之外的任何文件
+  1413→
+  1414→Stage Summary:
+  1415→- 章节：3 章 12 小节；小节正文字数区间 2610–3076 字符，全部含≥4 个 H2 与 Markdown 表格；每节 keyPoints 5 条、terms 5–8 个；每章 summary≥200 字、keywords 6–8 个
+  1416→- 教材口径：中性粒细胞 50–70%、单核 3–8%、嗜酸 0.5–5%、嗜碱 0–1%、淋巴细胞 20–40%；T 60–70%/B 10–20%/NK 5–10%（占外周血淋巴细胞）；淋巴结 500–600 个；派尔结 100–200 个；胸腺选择约 95% 淘汰
+  1417→- 测验：15 题，每章 5 题，覆盖三大功能、初次/再次应答、检查点诺奖、胸腺与骨髓定位、淋巴结区室、MALT 组成、HEV 机制、白细胞占比、最强 APC、NK 机制、M1/M2、肥大细胞脱颗粒
+  1418→- 术语：g-155 固有免疫／g-156 中枢免疫器官／g-157 淋巴细胞再循环／g-158 黏膜相关淋巴组织(MALT)／g-159 NK 细胞／g-160 树突状细胞(DC)／g-161 肥大细胞／g-162 高内皮静脉(HEV)
+  1419→---
+  1420→Task ID: 27-A2
+  1421→Agent: immuno-A2（免疫学教材内容编写代理）
+  1422→Task: 编写免疫学第 4–6 章教材正文（12 小节）+ 测验 15 题 + 术语 8 条
+  1423→
+  1424→Work Log:
+  1425→- 通读 27-A2-brief.md 与前置文件（types.ts 接口、immuno/ch1.ts 格式范例、quiz/immunology-a1.ts 与 glossary-immuno-a1.ts 断言写法、validate-chapters.ts 校验规则），保持与 A1 批次风格一致
+  1426→- 编写 src/data/subjects/immuno/ch4.ts（固有免疫的分子机制，4 节：补体系统概览／模式识别受体与 PAMP-DAMP／细胞因子／急性期反应与时相），导出 immunoCh4
+  1427→- 编写 src/data/subjects/immuno/ch5.ts（抗原，4 节：基本特性／表位／影响免疫原性的因素／超抗原佐剂与丝裂原），导出 immunoCh5
+  1428→- 编写 src/data/subjects/immuno/ch6.ts（免疫球蛋白，4 节：基本结构／五类特性与功能／多样性生成机制／单克隆抗体与抗体工程），导出 immunoCh6
+  1429→- 编写 src/data/quiz/immunology-a2.ts，导出 immunologyQuizA2：15 题（q-immunology-16~30，每章 5 题；single 11／truefalse 2／multiple 2；难度 1=4、2=8、3=3；解析均≥80 字）
+  1430→- 编写 src/data/glossary-immuno-a2.ts，导出 immunoGlossaryA2：8 条（g-163~g-170，定义均≥80 字）
+  1431→- 首轮字数核查发现 5 节低于 2600 字（ch4-s4、ch5-s1/s2/s3、ch6-s3），以 Edit 逐节定向扩写（CRP 动力学、立体异构表位、异物性量度实验、pre-BCR 检查点、肽疫苗固有难题等），并修正「分辫率」「氨苯甲酸」两处笔误；ch6-s4 补写多克隆血清精制背景段
+  1432→- 校验通过：bun run scripts/validate-chapters.ts immunology src/data/subjects/immuno/{ch4,ch5,ch6}.ts → 「12 节全部通过 · 字数区间 2646–3419」；另以脚本核验测验题量/题型/难度/解析长度/答案索引与术语 id 完整性、定义长度，全部合规；禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中
+  1433→- 注：immunology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 文件沿用 A1 的双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 5 个产出文件之外的任何文件
+  1434→
+  1435→Stage Summary:
+  1436→- 章节：3 章 12 小节；小节正文字数区间 2646–3419 字符，全部含 5–6 个 H2 与 Markdown 表格（三章共 8 张：三途径对照、TLR 家族、细胞因子家族、急性期蛋白、完全抗原与半抗原、T/B 表位对照、影响免疫原性因素、三类激活物对照、木瓜/胃蛋白酶水解、五类 Ig 特性、Ig 基因片段、四代抗体演进）；每节 keyPoints 5 条、terms 5–8 个；每章 summary≥300 字、keywords 7–8 个
+  1437→- 教材口径：补体 40 余种蛋白、C3 血清浓度约 1.2–1.6 g/L、MAC 聚合 12–18 个 C9；人 TLR 10 种；T 表位 8–17 aa／B 表位 5–15 aa；超抗原激活 2%–20% T 细胞；人 IgG 约占血清 Ig 75–80%、半衰期约 23 天；重链 V 约 65／D 约 27／J 约 6、κ V 40/J 5、λ V 30/J 4，组合约 300 万、理论库容 10 的 9 至 11 次方
+  1438→- 测验：15 题，每章 5 题，覆盖三条补体途径与转化酶、C3 滴答放大、TLR 配体匹配、NLRP3 两信号模型、细胞因子共同特性、半抗原定义、T/B 表位差异、免疫途径效果、SEB 超抗原机制、弗氏佐剂禁忌、五类 Ig 排序、胃蛋白酶片段、多样性机制、杂交瘤 HAT 筛选、ADC 杀伤机制
+  1439→- 术语：g-163 补体系统／g-164 C3 转化酶／g-165 Toll 样受体(TLR)／g-166 炎症小体／g-167 表位／g-168 超抗原(SAg)／g-169 免疫球蛋白(Ig)／g-170 杂交瘤
+  1440→---
+  1441→Task ID: 27-B2
+  1442→Agent: bioinfo-B2（生物信息学教材内容编写代理）
+  1443→Task: 超集式扩写生物信息学第 7–8 章（8 小节）+ 测验 10 题 + 术语 5 条
+  1444→
+  1445→Work Log:
+  1446→- 通读 27-B2-brief.md 与 shared-style-guide.md，逐节细读 bioinfo/ch7.ts、ch8.ts 原文并统计各节字数（2382/1949/1995/1881 与 2027/1903/2025/1845），确认超集式扩写基线；参照 ch4.ts 与 quiz/immunology-a2.ts、glossary-immuno-a2.ts 的既有写法
+  1447→- 重写 src/data/subjects/bioinfo/ch7.ts（导出名 bioinfoCh7 不变，章结构与节标题不变）：保留全部原有知识点、表格、数值与结论，新增 DSSP 指派口径与「全卷曲」基线陷阱、Chou-Fasman 三步机理、SOV 度量；Browne 1969/MODELLER 1993 溯源、模板选择与多模板工程经验、Bowie 3D 概型（1991）、三条路线对照表、局部质量剖面；CASP 靶标分层与 CAMEO 持续评估、GDT 数值示例与 GDT-HA、TM-score/lDDT 互补、AF1 两段式对照与 MSA 深度依赖、AlphaFold-Multimer；SCOP/CATH 建库溯源（1995/1997）与层级对照表、TIM 桶与 P-loop 超级折叠、结构域洗牌、Pfam 条目量级、GO 真路径规则与重复计票陷阱、枯草杆菌蛋白酶-胰凝乳蛋白酶收敛演化、域架构与 EC-GO 互引
+  1448→- 重写 src/data/subjects/bioinfo/ch8.ts（导出名 bioinfoCh8 不变）：新增 Maxam–Gilbert 化学降解法与 1980 诺奖、454/SOLiD/Ion Torrent 谱系、Q30 质量值口径、图案化流动池与双通道、纳米孔直读 RNA 与现场流行病学、三代平台四问归位法；de Bruijn 1946 溯源与 Idury–Waterman 1995、奇数 k 约定、k-mer 覆盖算术（30×/150 bp/k=51→约 20×）、人类重复占比拆解与 Alu 陷阱、错误 k-mer 覆盖剪枝、minimizer 2004、三种组装策略分工表、L50/NG50 变体；软硬屏蔽分寸、重复注释反向质检、外显子-内含子尺度悬殊、tRNAscan-SE 等非编码 RNA 工具、基因集三级评估口径、直向/旁向同源对照表、BUSCO 分层归因；Renwick 1971 词源、非等位同源重组机制、四类重排对照表、Tettelin 2005 泛基因组溯源、核心/可变阈值口径、图基因组消解参考偏倚、三千份水稻计划、MHC/食叶猴溶菌酶正选择案例、Nei–Gojobori 计数法、密码子使用偏好扰动 dS
+  1449→- 编写 src/data/quiz/bioinformatics-b2.ts，导出 bioinformaticsQuizB2：10 题（q-bioinformatics-31~40，每章 5 题；single 7／truefalse 2／multiple 1；难度 1=3、2=5、3=3→3=2，解析均≥80 字），考点与扩写正文严格一致（三代方法演进逻辑、PSIPRED 信息来源、暮光区边界、GDT-TS 定义判断、AlphaFold2 多选、N50 数值计算、Illumina 化学、de Bruijn 图 k 权衡、dN/dS 区间判断、BUSCO 重复桶与开放泛基因组综合）
+  1450→- 编写 src/data/glossary-bioinfo-b2.ts，导出 bioinfoGlossaryB2：5 条（g-215~g-219，定义 240–283 字符）
+  1451→- 首轮校验发现 ch8-s3 keyPoints 7 条超上限，合并「三方合流」与「评估口径」两条后复检通过；四节字数低于 2600（ch7-s3/s4、ch8-s3/s4）以 MultiEdit 定向补写（CAMEO、等变几何耦合、域架构、EC-GO 互引、重复反向质检、证据裁决原则、核心/可变阈值、密码子偏好扰动）至全部达标
+  1452→- 校验通过：bun run scripts/validate-chapters.ts bioinformatics src/data/subjects/bioinfo/ch7.ts src/data/subjects/bioinfo/ch8.ts → 「8 节全部通过 · 字数区间 2625–3050」；另以脚本核验测验题量/题型/难度分布/解析长度/答案形态与术语 id、定义长度，全部合规；关键数值口径逐一复核在位（CASP14 中位 GDT-TS 约 92.4、2024 诺贝尔化学奖、30% 暮光区阈值、N50=150 kb 示例、Sanger 800–1000 bp、Illumina 2×150 bp、PacBio 10–20 kb、BUSCO 四桶、dN/dS 三分法）；tsc 全库类型检查中本批次 4 个文件零报错
+  1453→- 注：bioinformatics 尚未收录于 SubjectId 联合类型，quiz 与 glossary 文件以双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 4 个产出文件之外的任何文件
+  1454→
+  1455→Stage Summary:
+  1456→- 章节：2 章 8 小节全部超集式扩写，正文字数区间 2625–3050 字符（扩写前 1845–2382），全部含≥4 个 H2 与 Markdown 表格（两章共 14 张：三代方法、SWISS-MODEL 四步、三条路线、CASP 里程碑、SCOP/CATH 对照、GO 三分支，三代平台、三种组装策略、N50 累加示例、注释流水线、直向/旁向同源、四类重排、dN/dS 三分法等）；每节 keyPoints 5–6 条、terms 6–8 个
+  1457→- 教材口径：Q3 三档 50–60%/60–65%/75–80%、Ramachandran 许可区约九成、同一性 40% 以上误差约 1 Å、30% 上下 1.5–2 Å；CASP14 中位 GDT-TS 约 92.4、AFDB 数亿量级；N50=150 kb（500 kb、200/150/90/60 kb）、Sanger 800–1000 bp、Illumina 2×150 bp、PacBio HiFi 约 0.1%、大肠杆菌核心基因约两千余、全基因组平均 dN/dS 约 0.1 量级
+  1458→- 测验：10 题，每章 5 题，覆盖方法演进逻辑、进化概型、暮光区、GDT-TS、AlphaFold2 多选、N50 计算、簇与可逆终止子、de Bruijn 图、dN/dS 区间、BUSCO 与泛基因组综合
+  1459→- 术语：g-215 同源建模(homology modeling)／g-216 GDT-TS／g-217 de Bruijn 图／g-218 N50／g-219 泛基因组(pan-genome)
+  1460→---
+  1461→Task ID: 27-A3
+  1462→Agent: immuno-A3（免疫学教材内容编写代理）
+  1463→Task: 编写免疫学第 8–9 章教材正文（8 小节）+ 测验 10 题 + 术语 5 条
+  1464→
+  1465→Work Log:
+  1466→- 通读 27-A3-brief.md 与 shared-style-guide.md，参照 immuno/ch5.ts 格式范例、quiz/immunology-a1.ts 与 glossary-immuno-a2.ts 的双重断言写法及 validate-chapters.ts 校验规则，与 A1/A2 批次保持风格一致；简报中「公交座位现象」一处疑为转写讹误，按语境以「公共表位与交叉反应组（CREG）现象」教材口径完整覆盖
+  1467→- 编写 src/data/subjects/immuno/ch8.ts（MHC 与抗原提呈，4 节：基因结构与遗传特征／分子结构与功能／内源性抗原加工提呈／外源性抗原加工提呈与交叉提呈），导出 immunoCh8
+  1468→- 编写 src/data/subjects/immuno/ch9.ts（T 淋巴细胞，4 节：表面分子与 TCR-CD3 复合体／胸腺发育与选择／亚群及其功能／双信号与免疫突触），导出 immunoCh9
+  1469→- 编写 src/data/quiz/immunology-a3.ts，导出 immunologyQuizA3：10 题（q-immunology-31~40，每章 5 题；single 7／truefalse 2／multiple 1；难度 1=3、2=5、3=2；解析均≥80 字），考点与正文严格一致
+  1470→- 编写 src/data/glossary-immuno-a3.ts，导出 immunoGlossaryA3：5 条（g-171~g-175，定义均≥80 字）
+  1471→- 首轮校验发现 5 节低于 2600 字（ch8-s2/s3/s4、ch9-s2/s4），以 MultiEdit 逐节定向扩写（pMHC 表面存留与两类分子行路分野、HLA-DR 流式指标、超抗原「旁门」识别、提呈产量决定因素、免疫蛋白酶体-TAP-MHC 流水线匹配、JAK/STAT 突变免疫编辑、组织蛋白酶谱差异、HLA-DM 缺陷表型、poly I:C 佐剂、CAR 的 ITAM 计数、Notch 谱系定向、RAG 重排窗口、β5t 剔除证据、胰岛素克隆删除剂量效应、胸腺脂肪化速率、TGF-β 分岔 Th17/Treg、颗粒酶 B 底物偏好、二维亲和效力、外周发射-中心关机时序、B7 双向实验、LCMV 耗竭模型等），二轮再补足 ch8-s3/s4 与 ch9-s4 至 2600 以上
+  1472→- 校验通过：bun run scripts/validate-chapters.ts immunology src/data/subjects/immuno/ch8.ts src/data/subjects/immuno/ch9.ts → 「8 节全部通过 · 字数区间 2613–2882」；另以脚本核验测验题量/题型/难度分布/解析长度/答案形态与术语 id、定义长度，全部合规；禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中
+  1473→- 注：immunology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 文件沿用既有双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 4 个产出文件之外的任何文件
+  1474→
+  1475→Stage Summary:
+  1476→- 章节：2 章 8 小节；小节正文字数区间 2613–2882 字符，全部含 4–5 个 H2 与 Markdown 表格（两章共 7 张：HLA 三类分区、I/II 类分子结构对照、交叉提呈两途径、共刺激/共抑制分子、阳性/阴性选择对照、Th 亚群主转录因子、活化-失能-耗竭三态）；每节 keyPoints 4–5 条、terms 6–8 个；每章 summary 约 300 字、keywords 7 个
+  1477→- 教材口径：HLA 复合体位于 6p21.3 跨约 3600 kb、HLA-B 已命名等位基因逾八千、I 类结合 8–10 aa／II 类 13–17 aa、TAP 偏好 8–16 aa 疏水碱性 C 端、TCR-pMHC Kd 约 1–100 μmol/L、TCR-CD3 复合体共 10 个 ITAM、DP 阶段约 95% 以上凋亡、Th1/T-bet、Th2/GATA3、Th17/RORγt、Tfh/BCL6、Treg/Foxp3
+  1478→- 测验：10 题，每章 5 题，覆盖 HLA 染色体定位、I/II 类分子对照、单元型遗传判断、CMV US6 阻断 TAP、HLA-DM 催化 CLIP 交换、ITAM 计数、AIRE 部位与功能判断、Tfh 主转录因子连线、免疫突触与耗竭多选、β 选择意义
+  1479→- 术语：g-171 主要组织相容性复合体(MHC)／g-172 抗原加工相关转运体(TAP)／g-173 交叉提呈／g-174 阳性选择／g-175 T 细胞耗竭
+  1480→
+  1481→---
+  1482→Task ID: 27-C2
+  1483→Agent: neuro-C2（神经生物学教材内容编写代理）
+  1484→Task: 编写神经生物学第 9–10 章教材正文（8 小节）+ 测验 10 题（q41–50）+ 术语 5 条（g-193~197）
+  1485→
+  1486→Work Log:
+  1487→- 通读 27-C2-brief.md 与 shared-style-guide.md，参照 neuro/ch7.ts 格式范例、quiz/neurobiology-c1.ts 与 glossary-neuro-c1.ts 的双重断言写法及 validate-chapters.ts 校验规则，与 C1 批次保持风格一致
+  1488→- 编写 src/data/subjects/neuro/ch9.ts（听觉、前庭与化学感觉，4 节：耳蜗机械学与毛细胞转导／听觉中枢通路与编码／前庭系统／嗅觉与味觉），导出 neuroCh9
+  1489→- 编写 src/data/subjects/neuro/ch10.ts（运动系统，4 节：运动单位与脊髓反射／脊髓上的运动控制／小脑与运动学习／基底神经节与动作选择），导出 neuroCh10
+  1490→- 编写 src/data/quiz/neurobiology-c2.ts，导出 neurobiologyQuizC2：10 题（q-neurobiology-41~50，每章 5 题；single 7／truefalse 2／multiple 1；难度 1=3、2=5、3=2；解析均≥80 字，最短 166 字），考点与正文严格一致
+  1491→- 编写 src/data/glossary-neuro-c2.ts，导出 neuroGlossaryC2：5 条（g-193~g-197，定义均≥80 字，最短 174 字）
+  1492→- 首轮校验发现 5 节低于 2600 字（ch9-s2/s4、ch10-s1/s2/s3），逐节定向扩写（传导性与感音神经性聋音叉鉴别、耳声发射与新生儿筛查、蜗神经核反应型与 MSO/LSO 分工、听皮层核心-带层次与优先效应、速度储存机制、眼球反向滚转与 VEMP、嗅腺生物转化酶、嗅球振荡、TAS2R38 多态、脂肪第六味质候选、前角内外侧柱、Renshaw 回返抑制与 H 反射、红核与顶盖脊髓束、皮质脊髓纤维来源、群体向量与准备电位、Hoffmann 征与阵挛、小脑内部模型、浦肯野简单/复杂锋定量、基底节并行环路、MPTP 模型等）；期间一次 MultiEdit 异常重复插入，以脚本去重后复检无重复片段
+  1493→- 校验通过：bun run scripts/validate-chapters.ts neurobiology src/data/subjects/neuro/ch9.ts src/data/subjects/neuro/ch10.ts → 「8 节全部通过 · 字数区间 2629–2984」；另以脚本核验测验题量/题型/难度分布/解析长度/答案形态与术语 id、定义长度，全部合规；正文禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中；tsc 全库类型检查中本批次 4 个文件零报错
+  1494→- 注：neurobiology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 文件沿用既有双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 4 个产出文件之外的任何文件
+  1495→
+  1496→Stage Summary:
+  1497→- 章节：2 章 8 小节；小节正文字数区间 2629–2984 字符，全部含 4–5 个 H2 与 Markdown 表格（两章共 8 张：外中内耳分工、听觉中枢五站、前庭三类结构、嗅球三层次、运动单位三型、上下运动神经元对照、小脑三分区、基底核团五结构）；每节 keyPoints 5 条、terms 6–8 个；每章 summary 约 310–370 字、keywords 6 个
+  1498→- 教材口径：人耳听频 20–20000 Hz、外耳道共鸣约 3400 Hz、听骨链增压约 22 倍、内毛细胞约 3500 个／外毛细胞约 12000–20000 个、von Békésy 1961 诺奖、锁相与排齐发射上限 4–5 kHz、双耳时间差上限约 0.6–0.7 ms、Jeffress 延迟线 1948、VOR 三神经元弧潜伏约 10 ms、人类功能嗅受体基因约 400 个、味蕾每枚 50–100 个细胞、T1R 甜鲜／T2R 苦／ENaC 咸／H⁺ 酸、Henneman 大小原则 1965、牵张反射潜伏 20–25 ms、Betz 细胞约 3 万个、皮质脊髓侧束 75–90% 交叉、平行纤维 LTD（mGluR1-PLC-PKC-GluA2 内吞）、HTT 基因 CAG 重复超过 36 次
+  1499→- 测验：10 题，每章 5 题，覆盖行波学说、prestin 电能动性、VOR 三神经元弧判断、ITD/ILD 频段分工、嗅觉组合编码、大小原则募集顺序、牵张反射单突触与 γ 共激活、巴宾斯基征判断、平行纤维 LTD 机制、基底节直接/间接通路多选
+  1500→- 术语：g-193 行波学说(traveling wave theory)／g-194 耳蜗放大器(cochlear amplifier)／g-195 前庭眼反射(VOR)／g-196 大小原则(size principle)／g-197 直接通路与间接通路(direct and indirect pathways)
+  1501→
+  1502→---
+  1503→Task ID: 27-B3
+  1504→Agent: bioinfo-B3（生物信息学教材内容编写代理）
+  1505→Task: 超集式扩写生物信息学第 9–10 章（8 小节）+ 测验 10 题（q41–50）+ 术语 5 条（g-220~224）
+  1506→
+  1507→Work Log:
+  1508→- 通读 27-B3-brief.md 与 shared-style-guide.md，参照 ch7.ts 格式范例、quiz/bioinformatics-b2.ts 与 glossary-bioinfo-b2.ts 的双重断言写法及 validate-chapters.ts 校验规则，与 B2 批次保持风格一致
+  1509→- 逐节精读 ch9/ch10 原文（各节 1710–1987 字符），以超集方式用 Write 重写整文件：保留全部知识点/表格/数值/结论与章节 id、导出名（bioinfoCh9/bioinfoCh10）及节标题，重组语言并补足深度
+  1510→- ch9 扩写增量：RIN 高于 7 与 FFPE 的 DV200 高于约 50% 判据、index 跳跃与 ERCC 掺入对照、深度与重复的预算权衡（基因级一千万至三千万读段、追加经费优先投重复）、链特异性反义比例检查、MAPQ 与多比对读段策略、Trinity de novo 第三路线、bootstrap/sleuth 不确定度、MultiQC/RSeQC 质控链条与链特异性参数腰斩事故、设计矩阵公式（批次加条件、个体加处理、LRT 多水平、交互项、无重复设计不可检验）、Cook 距离与独立过滤、BH 三步操作、GO 三分支与真路径规则、GO slim、GSEA 两种置换与领先集、clusterProfiler/g:Profiler 工具生态与标识符转换丢基因陷阱、方法学三件套报告规范
+  1511→- ch10 扩写增量：四类质量分析器谱系表（四极杆/离子阱/Orbitrap 十万级分辨率 ppm 精度/TOF）、漏切 0–2 与半胰酶肽、可鉴肽段 7–25 残基、PSM 单元与开放搜索两段式、de novo 场合与标准酶切物质控、无标记缺失值与归一化、TMT 通道演进（iTRAQ 4/8、TMT 6–11、TMTpro 16–18）与参照通道、DDA 动态排除与 DIA 可变窗口、Prosit 预测谱库无库 DIA、SCoPE-MS 载体通道单细胞蛋白质组、AQUA 重标肽绝对定量、临床生理状态入组标准、条件化注入与 QC 穿插频率（每五到十个样本）、C18 与 HILIC 双柱、XCMS/CAMERA 处理链条、内标/概率商归一化/尿肌酐校正三级归一、PCA-PLS-DA 置换检验与交叉验证警戒线、掉落零膨胀、解离应激基因（FOS/JUN）、注释三策略与细胞周期回归、RNA 速度、伪 bulk 检验纪律（每组三个以上供体）
+  1512→- 编写 src/data/quiz/bioinformatics-b3.ts，导出 bioinformaticsQuizB3：10 题（q-bioinformatics-41~50，每章 5 题；single 7/truefalse 2/multiple 1；难度 1=3、2=5、3=2；解析均≥80 字，最短 191 字），考点与扩写正文严格一致
+  1513→- 编写 src/data/glossary-bioinfo-b3.ts，导出 bioinfoGlossaryB3：5 条（g-220~g-224，定义均≥80 字，最短 273 字），subjectId 以双重断言保持类型自洽
+  1514→- 校验通过：bun run scripts/validate-chapters.ts bioinformatics src/data/subjects/bioinfo/ch9.ts src/data/subjects/bioinfo/ch10.ts → 「8 节全部通过 · 字数区间 2603–3084」；另以脚本核验测验题量/题型/难度分布/章分布/解析长度/答案形态与术语 id 连续性、定义长度，全部合规；正文禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中；tsc 全库类型检查中本批次 4 个文件零报错（现存 14 条报错均在 examples/、skills/、scripts/ 等无关旧文件）
+  1515→- 未改动 4 个产出文件之外的任何文件
+  1516→
+  1517→Stage Summary:
+  1518→- 章节：2 章 8 小节；小节正文字数区间 2603–3084 字符（扩写前 1710–1987），全部含 4–6 个 H2 与 Markdown 表格（两章共 10 张：polyA 与 rRNA 去除路线、CPM/FPKM/TPM 谱系、工具成本账、泊松与负二项对照、ORA 与 GSEA 对照、ESI 与 MALDI、四类分析器谱系、三大定量策略、三大代谢平台、bulk 与 scRNA-seq）；每节 keyPoints 5–6 条、terms 8 个
+  1519→- 教材口径：rRNA 占八成以上而 mRNA 不足百分之五、RIN 高于 7/DV200 高于约 50%、每组生物学重复至少 3（三至六常见）、基因级深度一千万至三千万读段、负二项方差 μ + αμ²、padj 低于 0.05 且绝对 log₂FC 超过 1、GO 术语数以万计、2002 年诺贝尔化学奖、Orbitrap 十万级分辨率与 ppm 精度、肽段 7–25 残基、FDR 三级各 1%、动态范围约七个数量级、mRNA 与蛋白相关性 0.4–0.6、TMTpro 16–18 通道、代谢物确认数千种含推测万级、分子量约 1000 以下、NMR 毫摩尔量级、Tang 2009 首例、2015 年 10x 液滴数万细胞、每细胞基因数千总 UMI 一万至十万、双联体率百分之一至百分之十
+  1520→- 测验：10 题，每章 5 题，覆盖 FFPE 建库路线选择、TPM 与 FPKM 归一顺序、技术重复不能替代生物学重复（判断）、LFC shrinkage 定位、GSEA 排序检验与领先集、同量异位报告离子与比值压缩、DIA 无遗漏可回溯、UMI 与人工双联体（判断）、HILIC/NMR 平台组合与尿液校正、单细胞流水线与伪 bulk（多选）
+  1521→- 术语：g-220 TPM(transcripts per million)／g-221 负二项分布(negative binomial distribution)／g-222 GSEA(Gene Set Enrichment Analysis)／g-223 数据非依赖采集(data-independent acquisition, DIA)／g-224 单细胞 RNA 测序(single-cell RNA sequencing, scRNA-seq)
+  1522→Task ID: 27-C3
+  1523→Agent: neuro-C3（神经生物学教材内容编写代理）
+  1524→Task: 编写神经生物学第 11–12 章教材正文（8 小节）+ 测验 10 题（q51–60）+ 术语 5 条（g-198~202）
+  1525→
+  1526→Work Log:
+  1527→- 通读 27-C3-brief.md 与 shared-style-guide.md，参照 neuro/ch10.ts 格式范例、quiz/neurobiology-c2.ts 与 glossary-neuro-c2.ts 的双重断言写法及 validate-chapters.ts 校验规则，与 C1/C2 批次保持风格一致
+  1528→- 编写 src/data/subjects/neuro/ch11.ts（自主神经与神经内分泌，4 节：自主神经系统的结构与递质／下丘脑与垂体：神经内分泌的总开关／应激与下丘脑-垂体-肾上腺轴／生物节律与睡眠-觉醒），导出 neuroCh11
+  1529→- 编写 src/data/subjects/neuro/ch12.ts（脑的发育与神经疾病，4 节：神经系统的早期发育／轴突导向与突触修剪／神经退行性疾病／神经损伤的修复与前沿），导出 neuroCh12
+  1530→- 编写 src/data/quiz/neurobiology-c3.ts，导出 neurobiologyQuizC3：10 题（q-neurobiology-51~60，每章 5 题；single 7／truefalse 2／multiple 1；难度 1=3、2=5、3=2；解析均≥80 字，最短 190 字），考点与正文严格一致（汗腺胆碱能例外、大细胞/小细胞两套垂体调控、应激免疫双相、睡眠周期结构、腺苷/咖啡因/突触稳态、默认模型、inside-out 分层、AD 遗传分层、Wallerian 变性判断、CNS 再生三障碍多选）
+  1531→- 编写 src/data/glossary-neuro-c3.ts，导出 neuroGlossaryC3：5 条（g-198~g-202，定义均≥80 字，最短 236 字）
+  1532→- 首轮校验发现 5 节低于 2600 字（ch11-s2/s3/s4、ch12-s1/s4）及 2 节处于 2400–2600 边缘（ch11-s1、ch12-s2），按主题定向扩写：交感/副交感效应器对偶与唾液腺配比、储尿期交感协同、SIADH 与中枢性尿崩镜像、neurophysin 共运输、催乳素多巴胺张力性抑制、kisspeptin 脉冲发生器、应激认知评价与快慢双系统、蓝斑-CRH 正反馈环、皮质醇快慢两级时程、免疫器官交感支配、杏仁核-前额叶-海马三角失衡、时差方向性与倒班光疗、时型与社会时差、整夜各期比例、REM 自主变化与情绪记忆降温、背腹模式化 Shh/BMP、神经嵴起源回望、神经节隆起切线迁移、孕 2–5 月神经发生窗口、视网膜活动波精调、围网刹车与成年可塑性重启、tau 网络播散、生物标志物、Aguayo 外周桥接经典、Seddon 三级分类、BDNF-抑郁链条、光遗传工具箱等；另修正「摧开→撬开」与「Cohen因此→Cohen 因此」两处笔误
+  1533→- 校验通过：bun run scripts/validate-chapters.ts neurobiology src/data/subjects/neuro/ch11.ts src/data/subjects/neuro/ch12.ts → 「8 节全部通过 · 字数区间 2652–2863」；另以脚本核验测验题量/题型/难度分布/解析长度/答案形态（多选为数组）与术语 id、定义长度，全部合规；正文禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中
+  1534→- 注：neurobiology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 文件沿用既有双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 4 个产出文件之外的任何文件
+  1535→
+  1536→Stage Summary:
+  1537→- 章节：2 章 8 小节；小节正文字数区间 2652–2863 字符，全部含 4–5 个 H2 与 Markdown 表格（两章共 7 张：自主递质五环节对照、下丘脑核团六分野、六类下丘脑调节激素对腺垂体七激素、脑电四频段、三脑泡五衍生物、四类导向线索、四类退行性疾病对照）；每节 keyPoints 5 条、terms 6–8 个；每章 summary 367–537 字、keywords 6 个
+  1538→- 教材口径：节前 ACh-烟碱受体／交感节后 NE（汗腺 M3 例外）／副交感节后 ACh、肾上腺髓质 E 约八成、ENS 约一亿神经元、ADH/催产素-神经垂体、TRH/CRH/GnRH/GHRH/SST/DA 六类与七种腺垂体激素、皮质醇半衰期 60–90 分钟、Selye 三期、SCN 双侧约两万神经元、per/cry 环路约 24 h、睡眠周期约 90 分钟每晚 4–6 个、β 13–30／α 8–13／θ 4–8／δ 0.5–4 Hz、咖啡因半衰期 3–5 小时、神经管第 3–4 周闭合（前孔约 25 天/后孔约 27–28 天）、约半数神经元凋亡、reelin-reeler 层序颠倒、AD 家族 APP/PS1/PS2 与 APOE4、PD 家族 LRRK2/Parkin/PINK1/SNCA、ALS 的 SOD1/TDP-43/C9orf72、再生速度每日约 1–3 mm、Levi-Montalcini 与 Cohen 1986 诺奖
+  1539→- 测验：10 题，每章 5 题，覆盖自主递质对照（含汗腺例外）、大细胞/小细胞双系统、急性增强慢性抑制免疫（判断）、整夜睡眠结构、腺苷-咖啡因-突触稳态综合、默认模型去抑制、inside-out 分层与 reelin、AD 遗传与对症边界、Wallerian 变性（判断）、CNS 再生三障碍（多选）
+  1540→- 术语：g-198 肠神经系统(enteric nervous system, ENS)／g-199 下丘脑-垂体-肾上腺轴(hypothalamic-pituitary-adrenal axis, HPA)／g-200 视交叉上核(suprachiasmatic nucleus, SCN)／g-201 淀粉样级联假说(amyloid cascade hypothesis)／g-202 Wallerian 变性(Wallerian degeneration)
+  1541→
+  1542→---
+  1543→Task ID: 27-A4
+  1544→Agent: immuno-A4（免疫学教材内容编写代理）
+  1545→Task: 编写免疫学第 10–11 章教材正文（8 小节）+ 测验 10 题 + 术语 5 条
+  1546→
+  1547→Work Log:
+  1548→- 通读 27-A4-brief.md 与 shared-style-guide.md，参照 immuno/ch9.ts 全文格式范例、quiz/immunology-a3.ts 与 glossary-immuno-a3.ts 的 SubjectId 双重断言写法，与前序免疫学批次保持风格与教材口径一致
+  1549→- 编写 src/data/subjects/immuno/ch10.ts（B 淋巴细胞与体液免疫应答，4 节：B 细胞的发育与中枢耐受／BCR 复合体与 B 细胞活化信号／生发中心反应／体液免疫应答的规律），导出 immunoCh10
+  1550→- 编写 src/data/subjects/immuno/ch11.ts（免疫耐受与免疫调节，4 节：中枢耐受／外周耐受的机制／调节性 T 细胞与免疫调节网络／神经-内分泌-免疫网络），导出 immunoCh11
+  1551→- 编写 src/data/quiz/immunology-a4.ts，导出 immunologyQuizA4：10 题（q-immunology-41~50，每章 5 题；single 7／truefalse 2／multiple 1；难度 1=3、2=5、3=2；解析均≥80 字），考点与正文严格一致，两章四节各有覆盖
+  1552→- 编写 src/data/glossary-immuno-a4.ts，导出 immunoGlossaryA4：5 条（g-176~g-180，定义均≥80 字，类别：免疫发育 1／体液免疫 2／免疫调控 2）
+  1553→- 首轮自查发现 2 节低于 2600 字（ch10-s4 为 2207、ch11-s1 为 2232）且 ch10-s1/s2 贴近下限，以 MultiEdit 定向扩写（BCR 信号强度评分线、重排试错损耗、过渡期 BAFF 外周检验、tonic signal、免疫复合物两面性、结合疫苗可塑性、血清学四段曲线、骨髓龛竞争置换、婴儿免疫球蛋白爬升次序、全链条收束；耐受诱导参数、AIRE 染色质松动、Bim 与 tTreg 分流依存、两系考题覆盖面差、中枢外周两幕合演等），复测全部 8 节落入 2600–3600 区间
+  1554→- 校验通过：bun run scripts/validate-chapters.ts immunology src/data/subjects/immuno/ch10.ts src/data/subjects/immuno/ch11.ts → 「✓ … 8 节全部通过 · 字数区间 2685–3065」；另以脚本核验测验题量/题型/难度分布/解析长度/多选答案数组形态与术语 id、定义长度，全部合规
+  1555→- 注：immunology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 沿用既有双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 4 个产出文件之外的任何文件
+  1556→
+  1557→Stage Summary:
+  1558→- 章节：2 章 8 小节；小节正文字数区间 2685–3065 字符，全部含 4–5 个 H2 与 Markdown 表格（两章共 8 张：B 细胞发育四阶段、TD/TI-1/TI-2 三型抗原、暗区/亮区极化、初次/再次应答对照、T/B 中枢耐受对读、外周耐受五机制总览、tTreg/iTreg 对照、神经-内分泌-免疫四通路）；每节 keyPoints 4–5 条、terms 6–8 个；每章 summary 约 300–400 字、keywords 7–8 个
+  1559→- 教材口径：pro-B→pre-B→未成熟→成熟 B 阶梯、重链 D-J 先于 V-DJ、轻链 κ 先于 λ（人 κ:λ 约 2:1、小鼠约 20:1）、pre-BCR 检查点与 BTK-XLA、BCR 复合体共 2 枚 ITAM、C3d-CD21 降低活化阈值约千分之一、中央母细胞周期 6–12 h、SHM 每碱基每代约 10⁻³、AID 胞嘧啶脱氨、CD40L/CD40 与 AID 缺陷致高 IgM、BLIMP1/XBP1 浆细胞程序、潜伏期 5–10 天对 1–3 天、IgG 半衰期约 23 天、FcRn 回收循环与胎盘转运、麻疹疫苗约 9 月龄、Burnet/Medawar 1960 诺奖、AIRE-APS-1/APECED、AICD-Fas-ALPS、ACAID、Foxp3-Scurfy/IPEX、IL-35（p35-EBI3）、Jerne 网络 1984 诺奖、迷走-α7 烟碱受体胆碱能抗炎、IL-1/TNF/IL-6-PGE2 发热、HLA-DQ/DR 与 B27 关联、双胎一致率 20%–40%
+  1560→- 测验：10 题，每章 5 题，覆盖重链重排时序、CD21-C3d 共受体、AID 催化反应与产物、暗区亮区极化（判断）、初次/再次潜伏期数值、AIRE-APS-1 发病环节、ALPS 分子缺陷、免疫豁免与 ACAID（判断）、Treg 抑制机制（多选全选）、胆碱能抗炎通路
+  1561→- 术语：g-176 受体编辑(receptor editing)／g-177 生发中心(germinal center, GC)／g-178 体细胞高频突变(somatic hypermutation, SHM)／g-179 活化诱导的细胞死亡(activation-induced cell death, AICD)／g-180 调节性 T 细胞(regulatory T cell, Treg)
+  1562→---
+  1563→Task ID: 27-A5
+  1564→Agent: immuno-A5（免疫学教材内容编写代理）
+  1565→Task: 编写免疫学第 12 章教材正文（4 小节）+ 测验 10 题（q51–60）+ 术语 4 条（g-181~184）
+  1566→
+  1567→Work Log:
+  1568→- 通读 27-A5-brief.md 与 shared-style-guide.md，参照 immuno/ch11.ts 格式范例、quiz/immunology-a4.ts 与 glossary-immuno-a4.ts 的 SubjectId 双重断言写法及 validate-chapters.ts 校验规则，与前序免疫学批次保持风格与教材口径一致
+  1569→- 编写 src/data/subjects/immuno/ch12.ts（超敏反应与免疫学应用，4 节：I 型超敏反应／II 型与 III 型超敏反应／IV 型超敏反应／疫苗与免疫治疗），导出 immunoCh12
+  1570→- 编写 src/data/quiz/immunology-a5.ts，导出 immunologyQuizA5：10 题（q-immunology-51~60，s1 三题/s2 三题/s3 两题/s4 两题；single 7／truefalse 2／multiple 1；难度 1=3、2=5、3=2；解析均≥80 字，最短 168 字），考点与正文严格一致
+  1571→- 编写 src/data/glossary-immuno-a5.ts，导出 immunoGlossaryA5：4 条（g-181~g-184，定义均≥80 字，最短 289 字，类别：免疫病理 2／免疫治疗 2）
+  1572→- 首轮校验通过但 s3 为 2435 字符（低于本批 2600 下限），以 MultiEdit 定向扩写（IV 型亚型谱：接触型/结核菌素型/肉芽肿型/Jones-Mote 型、硬结毫米界值 5/10/15 按风险分层、急性细胞性移植排斥的 IV 型本质），复测 4 节全部落入 2600–3600 区间
+  1573→- 校验通过：bun run scripts/validate-chapters.ts immunology src/data/subjects/immuno/ch12.ts → 「✓ src/data/subjects/immuno/ch12.ts: 4 节全部通过 · 字数区间 2624–3368」；另以脚本核验测验题量/题型/难度分布/解析长度/多选答案数组形态与术语 id、定义长度，全部合规；正文禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中
+  1574→- 注：immunology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 沿用既有双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 3 个产出文件之外的任何文件
+  1575→
+  1576→Stage Summary:
+  1577→- 章节：1 章 4 小节；小节正文字数区间 2624–3368 字符，全部含 5–8 个 H2 与 Markdown 表格（4 张：肥大细胞介质双库、II/III 型对照、四型超敏反应总比较、疫苗代际对照）；每节 keyPoints 4–5 条、terms 5–8 个；章 summary 约 500 字、keywords 8 个
+  1578→- 教材口径：Gell-Coombs 四型框架、FcεRI 交联致 Lyn-Syk-PLCγ 钙流脱颗粒、预生成组胺对新生白三烯/PGD2/PAF、迟发相 4–6 h 嗜酸性浸润、Der p1 半胱氨酸蛋白酶、AIT 疗程约 3 年与 IgG4 阻断、奥马珠单抗遮蔽 Fcε3 使 FcεRI 密度下调、ABO 天然抗体与肠道菌群交叉刺激、抗 D 72 小时内阻断（同种免疫率约 10% 压至 1% 以下）、TSAb-Graves 对桥本细胞毒、半抗原三型药物溶血、中等 IC 涡流沉积、血清病 7–14 天、链感后肾炎 2–3 周、CH50/C3/C4 消耗性下降、IV 型 24–72 h 与淋巴细胞被动转移、PPD 48–72 h 硬结读数、TNCB/镍/漆酚-朗格汉斯提呈与表位扩散、结核/麻风 Th1-M1 肉芽肿、疫苗五代际与多糖结合 TI 改 TD、假尿苷修饰逃逸 TLR3/7/8-RIG-I、R₀ 阈值 1-1/R₀（麻疹 92%–95%）、CTLA-4/PD-1 释放刹车与 irAE 重症约一至两成、二代 CAR 加 CD28/4-1BB、CD19 B-ALL 缓解率七至九成口径、CRS-托珠单抗与 ICANS、免疫编辑消除-平衡-逃逸
+  1579→- 测验：10 题，覆盖 FcεRI 交联发敏机制、介质双库与药理分工、迟发相 4–6 h 与抗组胺边界（判断）、抗 D 被动抗体抢先清除机制、Graves/桥本/血清病/链感后肾炎机制配对、III 型四要点（多选全选）、PPD 硬结判读、IV 型血清不可被动转移（判断）、检查点释放刹车与 irAE、二代 CAR 共刺激域与 CRS/ICANS
+  1580→- 术语：g-181 超敏反应(hypersensitivity)／g-182 变应原特异性免疫治疗(allergen-specific immunotherapy, AIT)／g-183 新生儿溶血症(hemolytic disease of the newborn, HDN)／g-184 免疫检查点抑制剂(immune checkpoint inhibitor, ICI)
+  1581→---
+  1582→Task ID: 27-C4
+  1583→Agent: neuro-C4（神经生物学测验补写代理）
+  1584→Task: 补写神经生物学测验 q1–15（第 1–3 章）与 q31–40（第 7–8 章）+ 术语 g-203~209
+  1585→
+  1586→Work Log:
+  1587→- 通读 27-C4-brief.md 与 shared-style-guide.md，再完整细读 neuro/ch1.ts、ch2.ts、ch3.ts、ch7.ts、ch8.ts 五章全文（各一次 Read），并参照 quiz/neurobiology-c1.ts 与 glossary-neuro-c3.ts 的 SubjectId 双重断言写法，与 C1/C2/C3 批次保持风格一致
+  1588→- 编写 src/data/quiz/neurobiology-c4.ts，导出 neurobiologyQuizC4：25 题（q-neurobiology-1~15 对应第 1–3 章 12 节，每节 1–2 题；q-neurobiology-31~40 对应第 7–8 章 8 节，每节 1–2 题；两章各 5 题）；题型 single 17／truefalse 5／multiple 3；难度 1=6、2=14、3=5；解析均≥80 字（最短 169 字），判断题统一 options ['正确','错误']，多选 answer 为数组；考点与正文严格一致（详见 Stage Summary）
+  1589→- 说明：简报抬头「20 题」与其明细「q1–15 合计 15 题 + q31–40 合计 10 题」自相矛盾，且 q16–30/41–50/51–60 已由 C1/C2/C3 覆盖，为保持 q1–60 全库编号无缺口，按明细执行 15+10=25 题；题型与难度配比按简报 20 题口径（single 14／truefalse 4／multiple 2；难度 5/11/4）等比放大
+  1590→- 编写 src/data/glossary-neuro-c4.ts，导出 neuroGlossaryC4：7 条（g-203~g-209，定义均≥80 字，最短 278 字，类别：电生理 2／转运 1／神经生理 1／感觉系统 2／痛觉 1），与前序批次术语零重复
+  1591→- 校验：以 bun 内联脚本核验题量（25）、ID 覆盖（1–15 与 31–40 连续无缺、全局唯一）、题型分布、难度分布、解析长度、答案形态（多选为数组）、判断题规范、章节分布（ch1/ch2/ch3/ch7/ch8 各 5 题）、subjectId 一致性与术语 id 序列、定义长度，全部通过；bunx tsc --noEmit -p tsconfig.json 过滤本批次两文件 → 「本批次零错误」（全库其余 14 条报错均位于 agent-ctx/tmp* 临时脚本，与本批次无关）
+  1592→- 注：neurobiology 尚未收录于 SubjectId 联合类型，quiz 与 glossary 沿用既有双重断言保持类型自洽（类型联合扩展后可改回字面量）；未改动 2 个产出文件之外的任何文件（worklog 追加除外）
+  1593→
+  1594→Stage Summary:
+  1595→- 测验：25 题，覆盖第 1–3 章 12 节与第 7–8 章 8 节，每节 1–2 题；核心考点：高尔基/卡哈尔论战与 1906 诺奖、人脑 860 亿神经元/850 亿胶质约一比一、AIS 扳机区 ankyrin-G、胶质五类对比（少突 40–60 段/施万一段一包/小胶质 5–15%/EAAT-3Na⁺ 耦联）、Berger-EEG/膜片钳 1991/ChR2 473 nm/线虫 302；静息电位 −70~−65 mV 电荷分离极薄层、Nernst 61.5 mV/decade 与高钾血症 E_K −89→−28 mV、四平衡电位（E_K −90/E_Na +60/E_Cl −64/E_Ca +130）、GHK 1:0.04:0.45 与 V_rest −67 mV 及 Cl⁻ 对调、钠钾泵 3:2:1 ATP 与地高辛药链；AP 阈值 −55/超射 +30~+40/全程 1–2 ms/绝对不应期 1 ms、Nav 单链四结构域-S4-DEKA-IFM、TTX 胞外/TEA 胞内/利多卡因使用依赖、HH m³h-n⁴ 与 18.7 对 21 m/s、Erlanger–Gasser 纤维分类；Müller 特殊神经能量定律、内侧丘系延髓交叉对脊髓丘脑束前连合交叉、闸门学说粗关细开、PAG-邹冈张昌绍-纳洛酮多选、四型机械感受器与肌梭腱器官；60 D-角膜三分之二-视近三联-老视近视远视散光、光转导级联顺序与暗电流 −40 mV、三视锥 560/530/420 nm 与红绿色盲男 8%、Kuffler 1953 拮抗感受野与 mGluR6 符号翻转、LGN 六层 M/P/K 与双流双重分离
+  1596→- 术语：g-203 静息膜电位(resting membrane potential)／g-204 Nernst 方程(Nernst equation)／g-205 Na⁺/K⁺ 泵(Na⁺/K⁺-ATPase)／g-206 跳跃传导(saltatory conduction)／g-207 感受野(receptive field)／g-208 中心-周围拮抗感受野(center-surround receptive field)／g-209 痛觉闸门学说(gate control theory)
+  1597→Task ID: 27-B4
+  1598→Agent: bioinfo-B4（生物信息学教材内容编写代理）
+  1599→Task: 超集式扩写生物信息学第 11–12 章（8 小节）+ 测验 10 题（q51–60）+ 术语 5 条（g-225~229）
+  1600→
+  1601→Work Log:
+  1602→- 通读 27-B4-brief.md 与 shared-style-guide.md，参照 ch9.ts 前 50 行格式范例、quiz/bioinformatics-b3.ts 与 glossary-bioinfo-b3.ts 的双重断言写法及 validate-chapters.ts 校验规则，与前序批次保持风格一致
+  1603→- 逐节精读 ch11/ch12 原文（各节 1686–2158 字符），以超集方式用 Write 重写整文件：保留全部知识点/表格/数值/结论与章节 id、导出名（bioinfoCh11/bioinfoCh12）及节标题，重组语言并补足深度
+  1604→- ch11 扩写增量：中心性度量（中介中心性、直径）与「度-中介背离」、幂律 γ 约 2–3 与「无典型节点」的无标度本义、小世界相对随机基线的操作化判据、基序-模块层级句法、party/date hub 的界面机制、Erdős–Rényi 对照；Y2H 假阳性比例数成量级口径（两三成到过半）、双报告与反向双杂交、AP-MS 复测印证与团块全连/spokes 展开口径、interolog 同源互作转移与网络版本快照意识、必需性的条件口径（培养基依赖）；GRN 层级组织、调控模块化整理、吸引子「换盆地」直觉与同步/异步更新方案、真值表穷举逻辑、相平面零斜线、剖面似然报告不确定性、群体同步振荡；多视图矩阵形状与因果方向自觉、MOFA+ 缺失视图与因子秩选取纪律、SNF 相似性网络融合、顺式/反式 QTL 分档、sQTL/mQTL/caQTL 谱系与坐标口径一致性、CPTAC eQTL-pQTL 错位实测、中心协变量与层缺失/值缺失之辨
+  1605→- ch12 扩写增量：监督学习回归退化与 k 取五或十惯例、模型动物园与流程纪律之辨、样本量功效规划、欠拟合判别（正则化反伤）、生物学合理性质检、稳定性评估分折纪律、AUC 0.5–1 区间与 0.7–0.8/0.8–0.9 分档、PR-AUC 与阈值按代价比优化、患病率随 AUC 报告制度化；多通道表示与先验救生圈/天花板、多模态共享嵌入、滤波器宽度对应基序长度与 JASPAR 对标质检、遮挡测试与虚拟突变印证、GRU 够用简单论、注意力非通吃边界、两段式缝合与端到端的差异、CASP 模板可得/自由建模分档读法、基础设施即竞争力；零样本家族基线定标、MSA 与单序列路线互补、残基置信与界面置信之别、活性位点几何查询、逆折叠天然训练对、负例回流价值、可制造性验证维度；计算可重复与结论可复现的层次、互操作标识对齐、Singularity/HPC、nf-core 社区打磨、CASP/CAMDA/CAFA 届际累积、数十到上百 SNP 再识别口径、GDPR/人类遗传资源表述分寸（以现行法规原文为准）、祖源代表性统计效度
+  1606→- 编写 src/data/quiz/bioinformatics-b4.ts，导出 bioinformaticsQuizB4：10 题（q-bioinformatics-51~60，每章 5 题；single 7/truefalse 2/multiple 1；难度 1=3、2=5、3=2；解析均≥80 字，最短 202 字），考点与扩写正文严格一致
+  1607→- 编写 src/data/glossary-bioinfo-b4.ts，导出 bioinfoGlossaryB4：5 条（g-225~g-229，定义均≥80 字，最短 283 字），subjectId 以双重断言保持类型自洽
+  1608→- 校验通过：bun run scripts/validate-chapters.ts bioinformatics src/data/subjects/bioinfo/ch11.ts src/data/subjects/bioinfo/ch12.ts → 「✓ … 8 节全部通过 · 字数区间 2772–2892」；另以脚本核验测验题量/题型/难度分布/章分布/解析长度/答案形态与术语 id 连续性、定义长度，全部合规；产出文件禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中；g-225~229 与 q-bioinformatics-51~60 无跨文件 id 冲突
+  1609→- 未改动 4 个产出文件之外的任何文件
+  1610→
+  1611→Stage Summary:
+  1612→- 章节：2 章 8 小节；小节正文字数区间 2772–2892 字符（扩写前 1686–2158），全部含 4–5 个 H2 与 Markdown 表格（两章共 8 张：网络类型谱系、互作证据来源、布尔与 ODE 分工、整合策略选型、分类指标盲区、三架构对照、设计路线谱系、可重复工具生态，均保留并扩充）；每节 keyPoints 5–6 条、terms 6–8 个
+  1613→- 教材口径：幂律 γ 约 2–3、Watts-Strogatz 1998 与 Barabási-Albert 1999、Y2H 1989/2000 图谱与假阳性数成量级、2006 两大 AP-MS 计划、Jeong 2001 与 He-Zhang 批评、Kauffman 1969 与 2 的 N 次方状态空间、平均连接数二到三、Elowitz-Leibler 2000 阻遏振荡器、mRNA-蛋白相关性 0.4–0.6、MOFA/iCluster/DIABLO/SNF 谱系、eQTL-pQTL 错位语法、AUC 0.5–1 与 0.7–0.8 可用/0.8–0.9 良好分档、阳性率 1% 对 99% 准确率陷阱、CASP13 约 58 分与 CASP14 约 92.4、ESM-2 百亿参数、ESMFold 单序列、foldseek 结构字母表、AlphaFold3 2024 扩散模型复合物、Rosetta/Top7 与 RFdiffusion/ProteinMPNN、2024 诺贝尔化学奖、Excel SEPT2 事故污染约五分之一基因列表、CASP/CAMDA/CAFA 三大考场、dbGaP/EGA 受控访问、GDPR 表述分寸
+  1614→- 测验：10 题，每章 5 题，覆盖无标度幂律与双重性格、Y2H/AP-MS 互补与噪声结构、Kauffman 吸引子假说（判断）、阻遏振荡器噪声与闭环修正、多组学配对/归一/复现纪律（多选）、ROC-AUC 概率释义与区间、差异基因预筛泄漏与嵌套修复、AlphaFold3 复合物与构象系综边界（判断）、CNN/RNN/自注意力角色对照、可重复三件套与 AI 作者责任
+  1615→- 术语：g-225 无标度网络(scale-free network)／g-226 酵母双杂交(yeast two-hybrid, Y2H)／g-227 ROC 曲线下面积(area under the ROC curve, ROC-AUC)／g-228 蛋白质语言模型(protein language model, PLM)／g-229 FAIR 原则(FAIR principles)
+  1616→Task ID: 27-B6
+  1617→Agent: bioinfo-B6（生物信息学测验补写代理）
+  1618→Task: 补写生物信息学第 1–3 章测验 15 题（q-bioinformatics-1~15）+ 术语 10 条（g-235~244）
+  1619→
+  1620→Work Log:
+  1621→- 通读 27-B6-brief.md 与 shared-style-guide.md，参照 quiz/bioinformatics-b4.ts 与 glossary-bioinfo-b4.ts 的双重断言写法、文件头注释与 explanation/definition 体例
+  1622→- 完整精读 src/data/subjects/bioinfo/ch1.ts、ch2.ts、ch3.ts（12 小节全文细读），逐题核对数值与结论与正文严格一致（INSDC 三库每日交换、Swiss-Prot 约 50 余万对 TrEMBL 数亿条三数量级、PDB 1971 年超 20 万条、Entrez 1991、Q20/Q30 错误率口径、SRA 四层 SRP/SRS/SRX/SRR、RefSeq 前缀层级、GI 号 2016 退役、NW 复杂度 O(mn) 与边界 F(0,j)=−j·d、GA 对 GAT 算例总分 2、SW 零选项与最大值格回溯、Gotoh 三矩阵、同源全或无/直旁异源辨析等均照抄正文口径）
+  1623→- 编写 src/data/quiz/bioinformatics-b6.ts，导出 bioinformaticsQuizB6：15 题（每章 5 题；single 11/truefalse 2/multiple 2；难度 1=4、2=8、3=3；解析 252–410 字均≥80 字；判断题 options ['正确','错误']；多选 answer 为数组；subjectId 双重断言）
+  1624→- 编写 src/data/glossary-bioinfo-b6.ts，导出 bioinfoGlossaryB6：10 条（g-235~g-244，定义 249–339 字均≥80 字；类别：基础概念 1/分子演化 3/序列比对 3/数据库资源 3；与 g-215~229 无重复，FAIR 原则已由 g-229 覆盖故不再收录）
+  1625→- 校验：bunx tsc --noEmit -p tsconfig.json 过滤本批次两文件 → 「本批次零错误」；另以 bun 内联脚本核验题量 15、ID 连续唯一（q-bioinformatics-1~15）、题型/难度/章分布（ch1/ch2/ch3 各 5）、答案形态、解析与定义长度、禁用字符（反引号、${、制表符）零命中；q-bioinformatics-1~15 与 g-235~244 与既有批次（b2/b3/b4/b5）无跨文件 id 冲突
+  1626→- 未改动 2 个产出文件之外的任何文件（worklog 追加除外）
+  1627→
+  1628→Stage Summary:
+  1629→- 测验：15 题，第 1 章 5 题（定义三要件与学科定位、学科史坐标点配对、基因组规模口径与增速、FDR 5% 含义判断、数据库版图多选）；第 2 章 5 题（flat file 身份证与名片、RefSeq 前缀层级选层、UniProtKB 证据标签与注释传播、SRA 四层与 FASTQ Phred 口径、标识符版本/次级登录号/FAIR 多选）；第 3 章 5 题（同源直旁异源辨析、点阵图几何语义、NW 递推边界与复杂度、GA 对 GAT 微型算例回溯、SW 零选项与最大值格回溯判断）
+  1630→- 术语：g-235 生物信息学(bioinformatics)／g-236 同源性(homology)／g-237 直系同源(ortholog)／g-238 旁系同源(paralog)／g-239 Needleman-Wunsch 算法(Needleman-Wunsch algorithm)／g-240 Smith-Waterman 算法(Smith-Waterman algorithm)／g-241 点阵图(dot plot)／g-242 GenBank／g-243 UniProt／g-244 RefSeq
+  1631→
+  1632→---
+  1633→Task ID: 27-B5
+  1634→Agent: content-bioinformatics（教材内容修复代理）
+  1635→Task: 生物信息学第 6 章超集式扩写 + 测验批次 B5（q16–30）+ 术语批次 B5（g-230~234）
+  1636→
+  1637→Work Log:
+  1638→- 超集式扩写 src/data/subjects/bioinfo/ch6.ts（分子系统发生，导出 bioinfoCh6 不变）：保留原有全部知识点、表格、数值与四节节标题，逐节扩写并新增内容——s1 增分子钟速率量级与校准锚点、dN/dS 三段判读与 Ohta 近中性理论、Fitch 1970 直系/旁系定义与注释转移纪律、树的无环连通图定义与有根树计数 (2n−3)!!（n=4 时 15 棵为无根 3 棵的五倍）、多叉节点两解、新 H2「祖征与衍征：系统学的证据语法」（Hennig、共享衍征、同型）、两大路线信息流向引言；s2 增 p=0.25→d≈0.30 手工算例、JC 校正 p→d 数值表（0.05/0.10/0.25/0.40/0.50/0.70/趋近 0.75 发散）、模型阶梯参数表（JC/K2P/HKY/GTR）、相对速率检验（UPGMA 前三点体检）、可加性与四点条件、最小二乘法 Fitch–Margoliash 对照；s3 增 AAGG 四类元简约算例（一步对两步）与 AAGC 无区分力预告、信息位点四模式速查表、GTR 自由度清点与似然比检验、分支限界法精确边界、NNI/SPR/TBR 改动半径表；s4 增先验渗入与换先验质检、MCMC 接受率/踪迹图听诊、多数规则一致树与冗余序列伪重复坑、钟模型松紧谱系（严格/宽松）与数据裁决、Felsenstein 区四类元理想实验与不一致渐进性
+  1639→- 编写 src/data/quiz/bioinformatics-b5.ts，导出 bioinformaticsQuizB5：15 题（q-bioinformatics-16~30；ch4/ch5/ch6 各 5 题；single 11/truefalse 2/multiple 2；难度 1=4、2=8、3=3；解析均≥80 字，最短 194 字），考点与第 4–6 章正文严格一致（BLOSUM62 聚类阈值与档位、E 值公式思想与 bit 分、两步命中与 X-drop、PSI-BLAST 漂移防控（多选）、对数几率比与有效打分条件；Clustal W 三步、渐进法局限与 T-Coffee/MUSCLE、GT-AG 约 98% 与外显子建模（判断）、CpG 岛三判据与 Obs/Exp 算法、profile HMM 三态与 trusted cutoff；中性理论与分子钟、JC 校正数值与 UPGMA/NJ 边界、Fitch 算法与信息位点及 ML 对照、长枝吸引诊断处置、贝叶斯/自展/定标纪律（多选））
+  1640→- 编写 src/data/glossary-bioinfo-b5.ts，导出 bioinfoGlossaryB5：5 条（g-230~g-234，定义均≥80 字，最短 303 字），subjectId 以双重断言保持类型自洽
+  1641→- 校验通过：bun run scripts/validate-chapters.ts bioinformatics src/data/subjects/bioinfo/ch6.ts → 「✓ src/data/subjects/bioinfo/ch6.ts: 4 节全部通过 · 字数区间 2784–3564」；另以脚本核验测验 id 连续性、题型/难度/章分布、解析长度、判断题选项与 answer 形态、术语 id 连续性与定义长度，全部合规；产出文件禁用字符（反引号、${、尖括号、制表符、H3+、图片链接）零命中；bunx tsc 全量检查中三个产出文件 0 错误（现存错误均在 examples/skills 等无关文件）；q-bioinformatics-16~30 与 g-230~234 无跨文件 id 冲突
+  1642→- 未改动 3 个产出文件之外的任何文件
+  1643→
+  1644→Stage Summary:
+  1645→- 章节：1 章 4 小节；小节正文字数区间 2784–3564 字符（扩写前 1929–2124），每节 4–6 个 H2；表格 4 张原有表全部保留并新增 4 张（JC 校正 p→d 数值表、模型阶梯参数表、信息位点四模式速查表、NNI/SPR/TBR 算子表）；每节 keyPoints 5–6 条、terms 7–8 个
+  1646→- 教材口径：Zuckerkandl-Pauling 1962 血红蛋白、Kimura 1968 中性理论（固定速率等于突变率、与群体大小无关）、Ohta 近中性理论、Fitch 1970 直系/旁系定义、(2n−5)!! 与 (2n−3)!! 树数、n=4 时 3/15 棵、n=10 逾两百万棵、p 渐近 0.75 饱和、JC 校正 d = −(3/4)·ln(1 − 4p/3) 及 0.052/0.107/0.304/0.572/0.824/2.03 数值、Saitou-Nei 1987 NJ 与 Q 准则、O(n³)、Fitch 算法 1971、信息位点判据、GTR 九参数+Γ+I、Felsenstein 修剪算法 1981、AIC/BIC 与 LRT、IQ-TREE/RAxML/UFBoot、贝叶斯后验与 MCMC、ESS 高于 200、自展 Felsenstein 1985 与不低于 70% 惯例、宽松钟与定标先验、Felsenstein 1978 长枝吸引；跨章保留 GT-AG 约 98%、CpG 岛 GC 高于 50% 且 Obs/Exp 高于 0.6、BLAST E 值公式思想、BLOSUM62
+  1647→- 测验：15 题（ch4 5：BLOSUM62 阈值方向、E 值/bit 分口径、两步命中与 X-drop（判断）、PSI-BLAST 漂移（多选）、对数几率比与打分合法性；ch5 5：Clustal W 流程、渐进局限与两大改进、GT-AG 与外显子建模（判断）、CpG 岛判据机制、HMM 三态与 Pfam 阈值；ch6 5：中性理论、JC/UPGMA/NJ 边界、简约对似然、长枝吸引场景、贝叶斯/自展/定标（多选））
+  1648→- 术语：g-230 E 值(expect value, E)／g-231 邻接法(neighbor joining, NJ)／g-232 最大似然法(maximum likelihood, ML)／g-233 长枝吸引(long branch attraction)／g-234 密码子适应指数(codon adaptation index, CAI)
+  1649→
+  1650→---
+  1651→Task ID: 27-C5
+  1652→Agent: content-neuro（教材内容修复代理）
+  1653→Task: 神经生物学 ch6/ch8 五个不足小节超集式扩写 + 术语批次 C5（g-210~214）
+  1654→
+  1655→Work Log:
+  1656→- 通读 27-C5-brief.md 与 shared-style-guide.md；完整精读 src/data/subjects/neuro/ch6.ts 与 ch8.ts，并核对 quiz/neurobiology-c1.ts、c4.ts 中 ch6/ch8 相关题目事实口径（60 D 与角膜三分之二、LGN 六层对侧 1/4/6、±20 ms、mGluR6 符号翻转、Hubel-Wiesel 1981 等），确保扩写与既有测验严格一致；rg 核查 src/data 下无挂载于 ch6/ch8 的插图文件，无图注呼应约束
+  1657→- 以 MultiEdit 逐段替换五个目标小节的 content（其余小节与章节元数据零改动）：ch6-s3 六段全部扩写并原样保留 LTP/LTD 对照表；ch6-s4 扩写并新增「工作记忆：秒级在线的心灵黑板」H2 与海马环路站点分工表（原有分类表保留）；ch8-s1 五个 H2 全部扩写；ch8-s3 新增「突触带：暗处的持续高速释放」「发育期的视网膜波：睁眼前的排练」两个 H2，并修复原文「rgb 雉间反馈／surrounds」中英混杂表述为 H1/H2 锥间反馈与色拮抗外周；ch8-s4 扩写四个 H2 并新增高级视觉专家区域表（原腹背双流对照表保留）
+  1658→- 扩写增量（教材口径）：Purkinje 细胞 GABA 能唯一出口、Ito 1982 与约 1 Hz 配对协议时序、NO-cGMP-PKG 辅线、VOR 增益适应落点绒球小结叶；Dudek-Bear 1992 的 1 Hz 约 900 脉冲、钙神经素脱磷酸抑制蛋白-1 解放 PP1、GluA1 脱磷酸内吞、mGluR-LTD 与 eCB-LTD；BCM 理论（Bienenstock-Cooper-Munro 1982）滑动阈值 θm 与元可塑性、单眼剥夺/暗饲养预言；突触标签双通路实验设计与晚联合性（先后不拘）；Bi-Poo 1998 系统测量与 LTD 支更宽、eCB-CB1 路线；Turrigiano 1998 突触缩放（乘法性保相对权重）与 Tononi-Cirelli 睡眠去权；Baddeley 工作记忆模型、7±2（Miller 1956）与约 4（Cowan 2001）、前额叶延迟期持续放电；苔藓纤维巨大末梢、齿状回稀疏编码百分之几、环路三站计算分工表；HM 的 Ribot 律时间坡度、Corkin 1997 MRI（海马后部残存）、2008 去世脑切片保存；Morris 探测试（象限时间与穿台次数）、平台隐于水下约 1–2 cm、Tolman 1948 认知地图、Hafting 2005 网格细胞、位置细胞重映射；CREB 过表达果蝇单次训练成记忆、CREB 记忆分配与 engram、睡眠尖波涟漪十数倍压缩重放；恐惧消退为抑制性新学习而非擦除、PTSD 暴露疗法需维持；折光率 1.00/约 1.376/约 1.336/约 1.40、简化眼节点至视网膜约 17 mm 相似三角形算例（1 m 外 1 cm 成像约 0.17 mm）、远点；近视户外光照多巴胺假说、2020 年我国儿童青少年近视率逾五成、调节幅度青年十余 D 至 50 岁约 2 D、老视附加一至三个屈光度；Horner 综合征三联与交感性/副交感性瞳孔方向对举；视网膜的间脑视杯 CNS 起源、双层血供与视网膜脱离潜在间隙；黄斑区约 5–6 mm、中央小凹锥间距约 2–3 μm 与 1 分视角极限、视杆密度 15–20 度离心度峰值环、盲点颞侧约 15 度横径数度；IPL 内 ON/OFF 亚层分层布线、L-AP4 与 Slaughter-Miller 1981；带状突触每秒数十至上百囊泡与 L 型钙通道线性释放；X/Y 细胞（Enroth-Cugell-Robson 1966）对应 P/M；H1/H2 水平细胞锥间反馈、缝隙连接合胞体与多巴胺解耦、AII 连接蛋白 36 电耦合与甘氨酸桥接、Barlow-Levick 1964 零方向抑制与视动眼震；M/P 对比响应陡峭早饱和对平缓线性；视网膜波（胆碱能）教会 LGN 眼别分层、打乱时间结构致分层与眼优势柱紊乱；视束约九成至 LGN、余至上丘/顶盖前区/视交叉上核、皮层放大、深睡爆发模式断流；M 止于 4Cα、P 止于 4Cβ、K 入 2/3 层 blob、风车状方位柱与 CO 斑点（Livingstone-Hubel）、V2 薄/厚/间条纹双流雏形；MST 光流、LIP 注视计划、V4 双侧损毁皮层性色觉丧失、IT 不变性反应、盲视经上丘-丘脑枕核备份路线；VWFA 识字文化训练模块与先天面孔失认
+  1659→- 编写 src/data/glossary-neuro-c5.ts，导出 neuroGlossaryC5：5 条（g-210~g-214，定义 315–382 字均≥80 字；类别：视觉系统 3／学习记忆 2），subjectId 以双重断言保持类型自洽（与 C1–C4 批次写法一致）
+  1660→- 校验通过：bun run scripts/validate-chapters.ts neurobiology + 全 12 章文件 → 「✓ … 48 节全部通过 · 字数区间 2595–3356」；另以 bun 内联脚本核验：五节扩写字数 3067/3356/2965/2965/2763 均落 2600–3600、H2 数 5–7、keyPoints/terms 条数合规、其余小节零改动（ch6-s1 2722、ch6-s2 2836、ch8-s2 2851 与扩写前一致）、禁用字符（反引号、\${、尖括号、制表符、H3+、图片链接）零命中；术语 id 与全库 184 条无冲突（C4 止于 g-209，C5 顺延无缺口）；bunx tsc --noEmit 过滤本批次三文件 → 零错误
+  1661→- 未改动 3 个产出文件之外的任何文件（worklog 追加除外；临时校验脚本均置于 /tmp）
+  1662→
+  1663→Stage Summary:
+  1664→- 章节：2 章 5 小节超集式扩写——ch6-s3（2076→3067）、ch6-s4（2220→3356）、ch8-s1（2279→2965）、ch8-s3（1827→2965）、ch8-s4（1932→2763）；原有知识点、H2 主题、表格与数值全部保留，新增 3 个 H2（工作记忆、突触带、发育期视网膜波）与 2 张新表（海马环路站点分工、高级视觉专家区域），修复 1 处中英混杂表述
+  1665→- 术语：g-210 视网膜中央凹(fovea centralis)／g-211 外侧膝状体(lateral geniculate nucleus, LGN)／g-212 眼优势柱(ocular dominance column)／g-213 海马(hippocampus)／g-214 Morris 水迷宫(Morris water maze)
+  1666→

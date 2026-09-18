@@ -15,14 +15,21 @@ const draw = (b: B) => {
     b.rect(x - 30, 320, 60, 30, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 6 })
     b.ctext(x, 340, name, { size: 12, weight: 700, fill: C.proD })
   })
-  b.wtext(390, 330, '应激时伴侣 BiP/GRP78 与传感器解离，传感器活化', { size: 10.5, fill: C.mute, maxW: 240, lh: 14 })
+  b.wtext(390, 294, '应激时伴侣 BiP/GRP78 与传感器解离，传感器活化', { size: 10.5, fill: C.mute, maxW: 240, lh: 14 })
   // 三条分支效果
   b.arrow(130, 355, 130, 392, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.wtext(56, 412, '磷酸化 eIF2α → 全局抑制翻译、减少蛋白流入', { size: 11, fill: C.sub, maxW: 150, lh: 15 })
+  // 三列窄注（原 wtext 窄列互相交叠，改手工断行三列）
+  b.text(56, 412, '磷酸化 eIF2α →', { size: 11, fill: C.sub })
+  b.text(56, 427, '全局抑制翻译、', { size: 11, fill: C.sub })
+  b.text(56, 442, '减少蛋白流入', { size: 11, fill: C.sub })
   b.arrow(230, 355, 230, 392, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.wtext(156, 412, '非经典剪接 XBP1 mRNA → 转录因子，上调折叠与 ERAD 基因', { size: 11, fill: C.sub, maxW: 150, lh: 15 })
+  b.text(166, 412, '非经典剪接 XBP1', { size: 11, fill: C.sub })
+  b.text(166, 427, 'mRNA → 转录因子，', { size: 11, fill: C.sub })
+  b.text(166, 442, '上调折叠与 ERAD 基因', { size: 11, fill: C.sub })
   b.arrow(330, 355, 330, 392, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.wtext(256, 412, '经 S1P/S2P 切割后入核，上调伴侣蛋白表达', { size: 11, fill: C.sub, maxW: 150, lh: 15 })
+  b.text(296, 412, '经 S1P/S2P', { size: 11, fill: C.sub })
+  b.text(296, 427, '切割后入核，', { size: 11, fill: C.sub })
+  b.text(296, 442, '上调伴侣蛋白表达', { size: 11, fill: C.sub })
   // 失代偿 → 凋亡
   b.arrow(430, 335, 470, 335, { stroke: C.bad, sw: 2.2, marker: 'bad' })
   b.rect(475, 306, 130, 58, { fill: C.badL, stroke: C.bad, sw: 1.8, rx: 8 })
@@ -39,7 +46,7 @@ const draw = (b: B) => {
   b.table(962, 190, 396, {
     headers: ['疾病', '机制'],
     colW: [130, 266],
-    rowH: 56,
+    rowH: 46,
     fontSize: 10,
     rows: [
       ['囊性纤维化', 'CFTR ΔF508 错误折叠，被 ER 质量控制降解，膜上功能通道不足'],
@@ -50,7 +57,7 @@ const draw = (b: B) => {
       ['高尔基体与肿瘤', '糖基化谱改变（N-糖链分支增加），与侵袭转移相关'],
     ],
   })
-  b.wtext(962, 548, '囊性纤维化新型治疗采用「正确剂」帮助突变蛋白折叠运输。', { size: 10, fill: C.mute, maxW: 396, lh: 13.5 })
+  b.wtext(962, 530, '囊性纤维化新型治疗采用「正确剂」帮助突变蛋白折叠运输。', { size: 10, fill: C.mute, maxW: 396, lh: 13.5 })
 
   // ============ 三、细胞器互作网络 ============
   b.panel(30, 588, 1340, 392, { title: '三、细胞器互作网络：内膜系统的稳态即细胞稳态' })
@@ -66,7 +73,7 @@ const draw = (b: B) => {
   b.wtext(90, 770, 'ER-线粒体接触位点（MAM）介导 Ca²⁺ 与脂质交换，是脂质合成与凋亡调控的平台。', { size: 11, fill: C.sub, maxW: 330, lh: 15.5 })
   // ER 提供膜来源
   b.arrow(200, 712, 200, 760, { stroke: C.dna, sw: 2, marker: 'dna' })
-  b.wtext(90, 786, 'ER 以 COPII 出芽为其他细胞器提供膜来源。', { size: 11, fill: C.sub, maxW: 330, lh: 15.5 })
+  b.wtext(90, 806, 'ER 以 COPII 出芽为其他细胞器提供膜来源。', { size: 11, fill: C.sub, maxW: 330, lh: 15.5 })
   // 内体-溶酶体系统
   b.circle(700, 700, 42, { fill: C.accL, stroke: C.acc, sw: 2.2 })
   b.ctext(700, 696, '内体', { size: 11.5, weight: 700, fill: C.accD })

@@ -34,7 +34,7 @@ const draw = (b: B) => {
   b.wtext(56, 530, '转氨只转移氨基、并未净脱氨——净脱氨需与谷氨酸脱氢酶配合。', { size: 10.5, fill: C.mute, maxW: 610, lh: 15 })
 
   // ============ 二、联合脱氨基与嘌呤核苷酸循环 ============
-  b.panel(750, 132, 660, 430, { title: '二、联合脱氨基（主要方式）与嘌呤核苷酸循环' })
+  b.panel(750, 132, 640, 430, { title: '二、联合脱氨基（主要方式）与嘌呤核苷酸循环' })
   b.rect(770, 186, 140, 36, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
   b.ctext(840, 208, '各种氨基酸', { size: 11.5, fill: C.ink })
   b.arrow(912, 204, 1000, 204, { stroke: C.sub, sw: 2.2, marker: 'ink' })
@@ -45,9 +45,9 @@ const draw = (b: B) => {
   b.rect(1214, 176, 136, 56, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
   b.ctext(1282, 198, 'α-酮戊二酸', { size: 11, weight: 700, fill: C.ink })
   b.ctext(1282, 216, '＋ NH₄⁺', { size: 11, weight: 700, fill: C.bad })
-  b.tag(1170, 160, 'L-谷氨酸脱氢酶 GDH（限速关键）', { fill: C.enzL, stroke: C.enz, size: 10.5, weight: 700, tfill: C.enzD, pad: 5 })
-  b.wtext(766, 262, 'GDH 位于线粒体基质，辅酶 NAD⁺ 或 NADP⁺：谷氨酸 + NAD(P)⁺ + H₂O ⇌ α-KG + NH₄⁺ + NAD(P)H。', { size: 10.5, fill: C.sub, maxW: 610, lh: 15 })
-  b.wtext(766, 300, '受 ADP / GDP 激活、ATP / GTP 抑制（能量状态调控）。', { size: 10.5, fill: C.sub, maxW: 610, lh: 15 })
+  b.tag(1150, 244, 'L-谷氨酸脱氢酶 GDH（限速关键）', { fill: C.enzL, stroke: C.enz, size: 10.5, weight: 700, tfill: C.enzD, pad: 5 })
+  b.wtext(766, 272, 'GDH 位于线粒体基质，辅酶 NAD⁺ 或 NADP⁺：谷氨酸 + NAD(P)⁺ + H₂O ⇌ α-KG + NH₄⁺ + NAD(P)H。', { size: 10.5, fill: C.sub, maxW: 610, lh: 15 })
+  b.wtext(766, 310, '受 ADP / GDP 激活、ATP / GTP 抑制（能量状态调控）。', { size: 10.5, fill: C.sub, maxW: 610, lh: 15 })
   b.rect(766, 330, 340, 44, { fill: C.okL, fillOp: 0.45, stroke: C.ok, sw: 1.6, rx: 8 })
   b.wtext(782, 350, '联合脱氨基 = 转氨 + GDH：体内氨基酸脱氨的主要方式，可逆——其逆过程即非必需氨基酸合成的主要途径。', { size: 10.5, weight: 700, fill: '#065f46', maxW: 312, lh: 14 })
   b.rect(1126, 330, 224, 118, { fill: C.panelB, stroke: C.line, sw: 1.4, rx: 9 })

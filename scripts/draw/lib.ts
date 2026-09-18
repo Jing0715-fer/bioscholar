@@ -755,6 +755,23 @@ export interface SceneOpt {
   draw: (b: B) => void
 }
 
+/** 按估算宽度把字符串断成 ≤maxLines 行（CJK 逐字断行，拉丁按词） */
+function wrapLines(s: string, size: number, maxW: number, maxLines: number): string[] {
+  const lines: string[] = []
+  let cur = ''
+  const tokens = s.split(/(?<=[，。；：、！？）,;:])\s*|(?<=[^，。；：、！？）,;:\s])\s+/)
+  for (const tk of tokens.length > 1 ? tokens : s.split('')) {
+    const cand = cur + tk
+    if (cur && textW(cand, size) > maxW) { lines.push(cur); cur = tk } else cur = cand
+  }
+  if (cur) lines.push(cur)
+  if (lines.length > maxLines) { // 压缩失败 → 均分
+    const per = Math.ceil(s.length / maxLines)
+    return Array.from({ length: maxLines }, (_, i) => s.slice(i * per, (i + 1) * per)).filter(Boolean)
+  }
+  return lines
+}
+
 export function scene(o: SceneOpt): string {
   const w = o.w ?? 1400
   const h = o.h ?? 1000
@@ -764,11 +781,36 @@ export function scene(o: SceneOpt): string {
   const markers = (Object.keys(MARKER_FILL) as MarkerKey[])
     .map(k => `<marker id="arr-${k}" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="${MARKER_PATH}" fill="${MARKER_FILL[k]}"/></marker>`)
     .join('\n    ')
+  // ---- 标题自适应：过宽则缩字号（下限 24）----
+  let tsize = 33
+  if (o.title) {
+    const tw = textW(o.title, tsize, 700)
+    if (tw > w - 100) tsize = Math.max(24, Math.floor(((w - 100) / tw) * tsize))
+  }
+  // ---- 副标题自适应：过宽优先两行（字号 17–19），仍溢出则缩字号（下限 13）----
+  let subLines: string[] = []
+  let ssize = 19
+  if (o.subtitle) {
+    const maxW = w - 90
+    if (textW(o.subtitle, ssize) <= maxW) subLines = [o.subtitle]
+    else {
+      ssize = 17
+      subLines = wrapLines(o.subtitle, ssize, maxW, 2)
+      while (subLines.some(ln => textW(ln, ssize) > maxW) && ssize > 13) {
+        ssize--
+        subLines = wrapLines(o.subtitle, ssize, maxW, 2)
+      }
+    }
+  }
+  const two = subLines.length > 1
+  const tBaseline = two ? head - 84 : head - 66
   const title = o.title
-    ? `<text x="${w / 2}" y="${head - 66}" text-anchor="middle" font-size="33" font-weight="700" fill="${C.ink}">${esc(o.title)}</text>`
+    ? `<text x="${w / 2}" y="${tBaseline}" text-anchor="middle" font-size="${tsize}" font-weight="700" fill="${C.ink}">${esc(o.title)}</text>`
     : ''
-  const sub = o.subtitle
-    ? `<text x="${w / 2}" y="${head - 32}" text-anchor="middle" font-size="19" fill="${C.mute}">${esc(o.subtitle)}</text>`
+  const sub = subLines.length
+    ? (two
+        ? `<text x="${w / 2}" y="${head - 48}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${esc(subLines[0])}</text>\n  <text x="${w / 2}" y="${head - 22}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${esc(subLines[1] ?? '')}</text>`
+        : `<text x="${w / 2}" y="${head - 32}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${esc(subLines[0])}</text>`)
     : ''
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">

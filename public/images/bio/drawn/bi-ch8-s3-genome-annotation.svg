@@ -13,28 +13,33 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因组注释：重复先行、三方证据合流与 BUSCO 体检</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RepeatMasker 同源屏蔽与 RepeatModeler de novo 挖掘互补，软屏蔽（小写化）为默认；结构注释由从头预测、转录证据与蛋白同源三方合流，EVM/MAKER 加权投票输出一致基因集，评估须区分核苷酸级、外显子级与基因级口径；功能注释以直向同源转移为核心（同一性约 ≥40% 且覆盖过半，宁紧勿松）；BUSCO 四桶统计完整性——高分不担保基因家族注释正确</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因组注释：重复先行、三方证据合流与 BUSCO 体检</text>
+  <text x="700" y="74" text-anchor="middle" font-size="16" fill="#64748b">RepeatMasker同源屏蔽与RepeatModelerdenovo挖掘互补，软屏蔽（小写化）为默认；结构注释由从头预测、转录证据与蛋白同源三方合流，EVM/MAKER加权投票输出一致基因集，</text>
+  <text x="700" y="100" text-anchor="middle" font-size="16" fill="#64748b">评估须区分核苷酸级、外显子级与基因级口径；功能注释以直向同源转移为核心（同一性约≥40%且覆盖过半，宁紧勿松）；BUSCO四桶统计完整性——高分不担保基因家族注释正确</text>
   <rect x="30" y="132" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、注释流水线：重复先行 → 结构合流 → 功能转移 → 完整性体检</text>
   <rect x="68" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="180" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">原始基因组组装</text>
-  <text x="82" y="240" font-size="10.5" fill="#475569">重叠群 / 支架序列，尚未指认任何元件</text>
+  <text x="82" y="240" font-size="10.5" fill="#475569">重叠群 / 支架序列，</text>
+  <text x="82" y="254.5" font-size="10.5" fill="#475569">尚未指认任何元件</text>
   <rect x="328" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="440" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">① 重复注释先行</text>
-  <text x="342" y="240" font-size="10.5" fill="#475569">RepeatMasker 同源屏蔽 ＋ RepeatModeler 等 de novo 挖掘；</text>
-  <text x="342" y="254.5" font-size="10.5" fill="#475569">软屏蔽（小写化）为默认</text>
+  <text x="342" y="240" font-size="10.5" fill="#475569">RepeatMasker 同源屏蔽 ＋</text>
+  <text x="342" y="254.5" font-size="10.5" fill="#475569">RepeatModeler 等 de novo 挖掘；</text>
+  <text x="342" y="269" font-size="10.5" fill="#475569">软屏蔽（小写化）为默认</text>
   <rect x="588" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="700" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">② 基因结构注释</text>
-  <text x="602" y="240" font-size="10.5" fill="#475569">从头预测 ＋ 转录证据 ＋ 蛋白同源三方合流，</text>
-  <text x="602" y="254.5" font-size="10.5" fill="#475569">EVM / MAKER 加权投票</text>
+  <text x="602" y="240" font-size="10.5" fill="#475569">从头预测 ＋ 转录证据 ＋</text>
+  <text x="602" y="254.5" font-size="10.5" fill="#475569">蛋白同源三方合流，</text>
+  <text x="602" y="269" font-size="10.5" fill="#475569">EVM / MAKER 加权投票</text>
   <rect x="848" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="960" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">③ 功能注释</text>
-  <text x="862" y="240" font-size="10.5" fill="#475569">直向同源转移 ＋ InterProScan 签名扫描，</text>
-  <text x="862" y="254.5" font-size="10.5" fill="#475569">两条路线互为印证</text>
+  <text x="862" y="240" font-size="10.5" fill="#475569">直向同源转移 ＋ InterProScan</text>
+  <text x="862" y="254.5" font-size="10.5" fill="#475569">签名扫描，两条路线互为印证</text>
   <rect x="1108" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="1220" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">④ 完整性评估</text>
-  <text x="1122" y="240" font-size="10.5" fill="#475569">BUSCO 以单拷贝直系同源标记集四桶统计</text>
+  <text x="1122" y="240" font-size="10.5" fill="#475569">BUSCO 以单拷贝直系同源</text>
+  <text x="1122" y="254.5" font-size="10.5" fill="#475569">标记集四桶统计</text>
   <line x1="292" y1="241" x2="328" y2="241" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
   <line x1="552" y1="241" x2="588" y2="241" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
   <line x1="812" y1="241" x2="848" y2="241" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>

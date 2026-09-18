@@ -30,12 +30,12 @@ const draw = (b: B) => {
   b.ctext(cx0 + 2, cy0 - 2, 'B', { size: 11, weight: 700, fill: C.rna })
   b.ctext(cx0 + 8, cy0 + 42, 'E', { size: 11, weight: 700, fill: C.rna })
   b.ctext(cx0 + 46, cy0 + 6, 'K', { size: 11, weight: 700, fill: C.rna })
-  b.ctext(cx0, cy0 + 108, 'φX174', { size: 12.5, weight: 700, fill: C.ink })
+  b.ctext(cx0, cy0 + 94, 'φX174', { size: 12.5, weight: 700, fill: C.ink })
   b.wtext(290, 196, '1977 年桑格完成史上第一个基因组全序列：φX174 共 5,386 nt。', { size: 11, weight: 700, fill: C.ink, maxW: 370, lh: 16 })
   b.wtext(290, 236, '按已知蛋白数推算，基因总长超出基因组长度——答案是 B 嵌于 A、E 嵌于 D：5.4 kb 由此容纳 11 个基因，「一寸核酸两寸用」。', { size: 11, fill: C.sub, maxW: 370, lh: 16 })
   b.legend(290, 320, [['外圈基因', C.dna], ['嵌套基因（B／E／K）', C.rna]], { size: 10.5, gap: 12 })
   // HBV 四阅读框
-  b.text(50, 372, 'HBV 约 3.2 kb：四个阅读框广泛重叠', { size: 12.5, weight: 700, fill: C.ink })
+  b.text(50, 380, 'HBV 约 3.2 kb：四个阅读框广泛重叠', { size: 12.5, weight: 700, fill: C.ink })
   const frames: [string, number, number, string][] = [
     ['X', 130, 290, C.acc], ['P（最长）', 210, 660, C.bad],
     ['S', 280, 470, C.dna], ['C', 500, 615, C.pro],

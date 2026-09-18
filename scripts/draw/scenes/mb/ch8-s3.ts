@@ -20,7 +20,8 @@ const draw = (b: B) => {
   // 交换拼接示意
   b.rect(720, 178, 300, 92, { fill: C.panel, stroke: C.line, sw: 1.3, rx: 8 })
   b.ctext(870, 204, '交换拼接实验', { size: 13.5, weight: 700, fill: C.ink })
-  b.wtext(736, 228, 'Gal4 的 DBD 拼接 VP16 的 TAD 仍有活性——两域可独立作业', { size: 12, fill: C.sub, maxW: 268 })
+  b.wtext(775, 228, 'Gal4 的 DBD 拼接 VP16 的 TAD 仍有活性', { size: 12, fill: C.sub, maxW: 268 })
+  b.wtext(775, 246, '——两域可独立作业', { size: 12, fill: C.sub, maxW: 268 })
   // 激活域三类
   b.rect(1040, 168, 300, 148, { fill: C.proL, stroke: C.pro, sw: 1.4, rx: 8, fillOp: 0.4 })
   b.ctext(1190, 192, '激活域按氨基酸组成分类', { size: 13.5, weight: 700, fill: C.proD })

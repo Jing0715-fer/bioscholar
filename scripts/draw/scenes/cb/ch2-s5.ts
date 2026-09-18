@@ -74,7 +74,7 @@ const draw = (b: B) => {
 
   // ============ 三、LDL 受体途径 ============
   b.panel(30, 546, 920, 434, { title: '三、LDL 受体途径与内体分选（受体介导胞吞的经典）' })
-  b.wtext(56, 600, 'LDL 颗粒的载脂蛋白 B-100 被细胞表面 LDL 受体识别，经网格蛋白途径内吞。', { size: 11.5, fill: C.sub, maxW: 860, lh: 16 })
+  b.wtext(56, 600, 'LDL 颗粒的载脂蛋白 B-100 被细胞表面 LDL 受体识别，经网格蛋白途径内吞。', { size: 11.5, fill: C.sub, maxW: 300, lh: 16 })
   // 血浆侧标签
   b.text(56, 636, '血浆', { size: 11, weight: 600, fill: C.mute })
   // LDL 颗粒
@@ -96,11 +96,11 @@ const draw = (b: B) => {
   b.ctext(560, 692, 'pH ≈ 6', { size: 10.5, fill: C.bad })
   // 受体再循环（回到质膜）
   b.spline([[556, 646], [490, 610], [400, 606], [310, 614], [272, 646]], { stroke: C.pro, sw: 2.2, dash: '6 5', marker: 'pro', fill: 'none' })
-  b.ctext(415, 596, '受体再循环回质膜（每 10 余分钟一次）', { size: 11, weight: 600, fill: C.proD })
+  b.ctext(460, 596, '受体再循环回质膜（每 10 余分钟一次）', { size: 11, weight: 600, fill: C.proD })
   b.ctext(560, 726, 'V 型质子泵降低腔内 pH，受体-配体解离', { size: 10.5, fill: C.mute })
   // 晚期内体 → 溶酶体
   b.arrow(588, 706, 668, 736, { stroke: C.mute, sw: 2, marker: 'mute' })
-  b.ctext(660, 720, 'LDL 随内体成熟', { size: 10, fill: C.mute })
+  b.ctext(640, 700, 'LDL 随内体成熟', { size: 10, fill: C.mute })
   b.circle(700, 748, 25, { fill: C.panelB, stroke: C.sub, sw: 2 })
   b.ctext(700, 752, '晚期内体', { size: 9.5, fill: C.sub })
   b.arrow(728, 748, 760, 748, { stroke: C.mute, sw: 2, marker: 'mute' })

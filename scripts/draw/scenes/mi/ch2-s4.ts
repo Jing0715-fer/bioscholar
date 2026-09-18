@@ -24,7 +24,7 @@ const draw = (b: B) => {
   // ============ 二、质粒 ============
   b.panel(30, 392, 1340, 310, { title: '二、质粒：染色体外自主复制的小型遗传单位（1 kb – 数百 kb）' })
 
-  b.plasmid(195, 505, 64, { genes: ['复制起点 ori', '转移基因 tra', '选择标记'], stroke: C.pro })
+  b.plasmid(195, 525, 64, { genes: ['复制起点 ori', '转移基因 tra', '选择标记'], stroke: C.pro })
   b.ctext(195, 612, '共价闭环双链 DNA', { size: 12.5, weight: 700, fill: C.proD })
   b.ctext(195, 634, '严紧型 1–2 拷贝 / 松弛型高拷贝', { size: 10.5, fill: C.mute })
   b.tag(195, 664, '独立于染色体自主复制', { fill: C.proL, stroke: C.pro, size: 11, weight: 700, tfill: C.proD, pad: 8 })

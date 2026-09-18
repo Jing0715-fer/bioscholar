@@ -1,110 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980" font-family="Noto Serif SC, LXGW WenKai, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
   <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
-    </marker>
-    <marker id="arrT" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
-    </marker>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
-
-  <rect x="0" y="0" width="1500" height="980" fill="#ffffff"/>
-  <text x="750" y="58" text-anchor="middle" font-size="34" font-weight="700" fill="#1e293b">膜脂的相变：凝胶相与液晶相</text>
-  <text x="750" y="94" text-anchor="middle" font-size="19" fill="#64748b">同一磷脂双层在相变温度 Tm 上下的两种状态（侧视图，上为膜外侧）</text>
-
-  <!-- ==================== 左：凝胶相 ==================== -->
-  <rect x="70" y="140" width="620" height="640" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="380" y="185" text-anchor="middle" font-size="26" font-weight="700" fill="#0f766e">凝胶相（L<span baseline-shift="sub" font-size="16">β</span>）</text>
-  <text x="380" y="216" text-anchor="middle" font-size="18" fill="#64748b">T &lt; Tm：低温有序态</text>
-
-  <!-- 磷脂列（尾部伸展有序） -->
-  <g>
-    <!-- 14 列磷脂：头部两圆 + 两条竖直尾部 -->
-    <g id="gelLipids">
-      <!-- generated columns -->
-    </g>
-    <!-- 手工排列 14 列，x 从 110 到 660，间隔 40 -->
-    <g stroke-linecap="round">
-      <!-- col 1 -->
-      <g transform="translate(112,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(152,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(192,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(232,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(272,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(312,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(352,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(392,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(432,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(472,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(512,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(552,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(592,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-      <g transform="translate(632,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><line x1="-7" y1="14" x2="-7" y2="205" stroke="#475569" stroke-width="4"/><line x1="7" y1="14" x2="7" y2="205" stroke="#475569" stroke-width="4"/></g>
-    </g>
-  </g>
-  <text x="380" y="560" text-anchor="middle" font-size="19" fill="#334155">脂肪酸尾部全反式伸展、排列紧密有序</text>
-  <text x="380" y="588" text-anchor="middle" font-size="19" fill="#334155">膜刚性强、流动性与通透性低</text>
-  <text x="380" y="636" text-anchor="middle" font-size="20" font-weight="600" fill="#0f766e">尾部振动幅度小 · 链间紧密堆积 · 厚度略大</text>
-  <text x="380" y="700" text-anchor="middle" font-size="19" fill="#64748b">饱和磷脂（如 DPPC，Tm ≈ 41 ℃）常处于此态</text>
-
-  <!-- ==================== 中：升温箭头 ==================== -->
-  <g>
-    <line x1="705" y1="400" x2="795" y2="400" stroke="#b45309" stroke-width="5" marker-end="url(#arrT)"/>
-    <text x="750" y="368" text-anchor="middle" font-size="21" font-weight="700" fill="#b45309">升温</text>
-    <text x="750" y="445" text-anchor="middle" font-size="20" font-weight="700" fill="#334155">T → Tm</text>
-    <text x="750" y="475" text-anchor="middle" font-size="17" fill="#64748b">吸热峰</text>
-    <!-- 温度计 -->
-    <g transform="translate(750,510)">
-      <rect x="-9" y="-55" width="18" height="85" rx="9" fill="#ffffff" stroke="#334155" stroke-width="2"/>
-      <circle cx="0" cy="42" r="14" fill="#ef4444" fill-opacity="0.85" stroke="#334155" stroke-width="2"/>
-      <rect x="-4" y="-40" width="8" height="80" fill="#ef4444" fill-opacity="0.85"/>
-      <line x1="-14" y1="0" x2="14" y2="0" stroke="#334155" stroke-width="1.5"/>
-      <text x="0" y="80" text-anchor="middle" font-size="16" fill="#475569">Tm</text>
-    </g>
-    <text x="750" y="640" text-anchor="middle" font-size="17" fill="#64748b">降温则逆向</text>
-    <text x="750" y="664" text-anchor="middle" font-size="17" fill="#64748b">回到凝胶相</text>
-  </g>
-
-  <!-- ==================== 右：液晶相 ==================== -->
-  <rect x="810" y="140" width="620" height="640" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="1120" y="185" text-anchor="middle" font-size="26" font-weight="700" fill="#0d9488">液晶相（L<span baseline-shift="sub" font-size="16">α</span>）</text>
-  <text x="1120" y="216" text-anchor="middle" font-size="18" fill="#64748b">T &gt; Tm：生理温度下的功能态</text>
-
-  <!-- 磷脂列（尾部弯曲活动） -->
-  <g stroke-linecap="round">
-    <g transform="translate(852,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-11,60 1,100 -6,150 C-2,180 -8,195 -7,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C12,55 3,105 10,150 C5,185 12,196 9,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(892,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-3,70 -13,120 -5,170 C-9,190 -4,198 -6,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C4,60 14,110 6,160 C10,188 3,196 6,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(932,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-12,80 2,130 -8,180 C-3,196 -8,200 -8,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C13,75 1,135 11,175 C6,194 10,199 8,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <!-- 胆固醇（刚性甾环插入尾部之间） -->
-    <g transform="translate(972,290)">
-      <circle cx="0" cy="10" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/>
-      <circle cx="0" cy="-7" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/>
-      <!-- 甾核：四环融合 -->
-      <path d="M-10,28 L10,28 L10,120 L-10,120 Z M-2,120 L2,120 L4,205 L-4,205 Z" fill="#a8a29e" fill-opacity="0.45" stroke="#57534e" stroke-width="2"/>
-      <text x="0" y="82" text-anchor="middle" font-size="15" fill="#44403c">胆固醇</text>
-    </g>
-    <g transform="translate(1012,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-2,65 -14,115 -4,165 C-8,188 -2,197 -5,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C11,70 0,125 9,170 C4,190 11,198 7,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1052,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-10,75 4,125 -6,175 C-1,192 -6,199 -7,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C3,60 15,115 5,165 C9,190 2,197 5,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1092,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-13,60 1,110 -9,160 C-4,185 -9,196 -8,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C12,65 -1,120 10,168 C5,192 12,200 10,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1132,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-4,70 -15,120 -3,170 C-7,190 -3,198 -4,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C10,60 2,115 12,162 C7,187 1,196 4,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1172,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-11,65 3,125 -7,172 C-2,190 -7,197 -6,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C4,75 13,120 3,168 C8,192 12,199 9,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1212,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-2,70 -12,130 -2,178 C-6,194 -1,200 -3,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C12,70 0,130 10,175 C5,193 10,199 8,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1252,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-9,60 5,115 -5,165 C0,185 -5,195 -6,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C10,70 -2,120 8,170 C3,190 9,198 6,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1292,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-13,80 1,140 -9,185 C-4,197 -8,201 -8,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C13,75 -1,135 11,180 C6,195 11,200 10,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1332,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-3,65 -14,125 -4,175 C-8,192 -3,199 -5,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C5,60 14,118 4,168 C8,190 2,197 5,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-    <g transform="translate(1372,300)"><circle cx="0" cy="0" r="15" fill="#f59e0b" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><circle cx="0" cy="-17" r="10" fill="#2dd4bf" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.2"/><path d="M-7,14 C-11,70 2,128 -8,178 C-2,194 -7,200 -7,205" fill="none" stroke="#475569" stroke-width="4"/><path d="M7,14 C11,65 -3,122 9,172 C4,192 9,199 9,205" fill="none" stroke="#475569" stroke-width="4"/></g>
-  </g>
-  <text x="1120" y="560" text-anchor="middle" font-size="19" fill="#334155">尾部产生歪扭（gauche）构象、活动加剧</text>
-  <text x="1120" y="588" text-anchor="middle" font-size="19" fill="#334155">膜流动性增大：侧向扩散、翻转酶活性上升</text>
-  <text x="1120" y="636" text-anchor="middle" font-size="20" font-weight="600" fill="#0d9488">胆固醇（灰）：Tm 以上限制流动 · Tm 以下阻止紧密排列</text>
-  <text x="1120" y="700" text-anchor="middle" font-size="19" fill="#64748b">动物细胞膜大量掺入胆固醇，把相变“抹平”为宽温区中间态</text>
-
-  <!-- ==================== 底部注释 ==================== -->
-  <g>
-    <line x1="70" y1="816" x2="1430" y2="816" stroke="#cbd5e1" stroke-width="1.5"/>
-    <text x="750" y="856" text-anchor="middle" font-size="19" fill="#475569">顺式双键使不饱和尾部产生约 30° 固定弯折（金色头部仅示意极性区）——链间无法紧密堆积，Tm 显著低于同链长饱和磷脂（油酸 13.4 ℃ vs 硬脂酸 69.6 ℃）</text>
-    <text x="750" y="890" text-anchor="middle" font-size="19" fill="#475569">膜功能（酶活性、信号转导、物质转运）依赖液晶相流动性——体温下细胞膜须处于 Tm 之上</text>
-    <text x="750" y="944" text-anchor="middle" font-size="15" fill="#94a3b8">依据教材相变模型绘制（矢量示意图，非 AI 生成）· 磷脂头部：胆碱（青）/磷酸（金）</text>
-  </g>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">膜脂的相变：凝胶相与液晶相</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">同一磷脂双层在相变温度 Tm 上下的两种状态；胆固醇双向缓冲、不饱和键显著降低 Tm</text>
+  <rect x="30" y="150" width="620" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="172.84" font-size="19" fill="#475569" font-weight="700">一、凝胶相 Lβ（T &lt; Tm）：低温有序态</text>
+  <circle cx="62" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="62" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="62" y1="234" x2="62" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="90" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="90" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="90" y1="234" x2="90" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="118" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="118" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="118" y1="234" x2="118" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="146" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="146" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="146" y1="234" x2="146" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="174" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="174" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="174" y1="234" x2="174" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="202" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="202" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="202" y1="234" x2="202" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="230" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="230" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="230" y1="234" x2="230" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="258" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="258" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="258" y1="234" x2="258" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="286" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="286" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="286" y1="234" x2="286" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="314" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="314" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="314" y1="234" x2="314" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="342" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="342" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="342" y1="234" x2="342" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="370" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="370" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="370" y1="234" x2="370" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="398" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="398" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="398" y1="234" x2="398" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="426" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="426" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="426" y1="234" x2="426" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="454" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="454" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="454" y1="234" x2="454" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="482" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="482" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="482" y1="234" x2="482" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="510" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="510" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="510" y1="234" x2="510" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="538" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="538" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="538" y1="234" x2="538" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="566" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="566" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="566" y1="234" x2="566" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="594" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="594" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <line x1="594" y1="234" x2="594" y2="322" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <rect x="285.3325" y="191.075" width="109.33500000000001" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="340" y="203.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">磷脂头部（极性区）</text>
+  <text x="340" y="356" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">脂肪酸尾部全反式伸展、排列紧密有序</text>
+  <text x="80" y="384" font-size="11.5" fill="#475569">膜刚性强、流动性与通透性低；尾部振动幅度小、链间紧密堆积、厚度略大。饱和磷脂（如 DPPC，</text>
+  <text x="80" y="401" font-size="11.5" fill="#475569">Tm ≈ 41 ℃）常处于此态。</text>
+  <text x="700" y="240" font-size="15" fill="#d97706" text-anchor="middle" font-weight="700">升温</text>
+  <line x1="700" y1="268" x2="700" y2="352" stroke="#d97706" stroke-width="3.5" marker-end="url(#arr-warn)"/>
+  <text x="700" y="382" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="700">T → Tm</text>
+  <text x="700" y="414" font-size="11" fill="#64748b" text-anchor="middle">降温则逆向</text>
+  <text x="700" y="432" font-size="11" fill="#64748b" text-anchor="middle">回到凝胶相</text>
+  <rect x="750" y="150" width="620" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="172.84" font-size="19" fill="#475569" font-weight="700">二、液晶相 Lα（T &gt; Tm）：生理温度下的功能态</text>
+  <circle cx="782" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="782" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="782,234 775,258 789,280 775,302 782,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="810" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="810" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="810,234 810,258 810,280 810,302 810,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="838" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="838" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="838,234 845,258 831,280 845,302 838,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="866" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="866" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="866,234 859,258 873,280 859,302 866,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="894" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="894" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="894,234 894,258 894,280 894,302 894,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="922" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="922" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="922,234 929,258 915,280 929,302 922,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="950" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="950" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="950,234 943,258 957,280 943,302 950,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="978" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="978" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="978,234 978,258 978,280 978,302 978,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1006" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1006" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1006,234 1013,258 999,280 1013,302 1006,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1034" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1034" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1034,234 1027,258 1041,280 1027,302 1034,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1062" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1062" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1062,234 1062,258 1062,280 1062,302 1062,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1090" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1090" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1090,234 1097,258 1083,280 1097,302 1090,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1118" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1118" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1118,234 1111,258 1125,280 1111,302 1118,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1146" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1146" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1146,234 1146,258 1146,280 1146,302 1146,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1174" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1174" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1174,234 1181,258 1167,280 1181,302 1174,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1202" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1202" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1202,234 1195,258 1209,280 1195,302 1202,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1230" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1230" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1230,234 1230,258 1230,280 1230,302 1230,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1258" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1258" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1258,234 1265,258 1251,280 1265,302 1258,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1286" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1286" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1286,234 1279,258 1293,280 1279,302 1286,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <circle cx="1314" cy="226" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <circle cx="1314" cy="330" r="8" fill="#0f766e" fill-opacity="0.85"/>
+  <polyline points="1314,234 1314,258 1314,280 1314,302 1314,322" fill="none" stroke="#0f766e" stroke-width="2" opacity="0.55"/>
+  <rect x="847" y="240" width="26" height="52" rx="5" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="852" y1="252" x2="868" y2="252" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="852" y1="266" x2="868" y2="266" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="852" y1="280" x2="868" y2="280" stroke="#64748b" stroke-width="1.2"/>
+  <circle cx="860" cy="318" r="9" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+  <text x="860" y="321.24" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">OH</text>
+  <rect x="997" y="240" width="26" height="52" rx="5" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="1002" y1="252" x2="1018" y2="252" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1002" y1="266" x2="1018" y2="266" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1002" y1="280" x2="1018" y2="280" stroke="#64748b" stroke-width="1.2"/>
+  <circle cx="1010" cy="318" r="9" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+  <text x="1010" y="321.24" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">OH</text>
+  <rect x="1147" y="240" width="26" height="52" rx="5" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="1152" y1="252" x2="1168" y2="252" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1152" y1="266" x2="1168" y2="266" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1152" y1="280" x2="1168" y2="280" stroke="#64748b" stroke-width="1.2"/>
+  <circle cx="1160" cy="318" r="9" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+  <text x="1160" y="321.24" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">OH</text>
+  <rect x="1277" y="240" width="26" height="52" rx="5" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <line x1="1282" y1="252" x2="1298" y2="252" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1282" y1="266" x2="1298" y2="266" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="1282" y1="280" x2="1298" y2="280" stroke="#64748b" stroke-width="1.2"/>
+  <circle cx="1290" cy="318" r="9" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+  <text x="1290" y="321.24" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">OH</text>
+  <rect x="921.555" y="191.075" width="76.89" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+  <text x="960" y="203.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">胆固醇（灰）</text>
+  <text x="1060" y="356" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">尾部歪扭（gauche）构象、活动加剧</text>
+  <text x="800" y="384" font-size="11.5" fill="#475569">膜流动性增大：侧向扩散、翻转酶活性上升。胆固醇 Tm 以上限制流动、</text>
+  <text x="800" y="401" font-size="11.5" fill="#475569">Tm 以下阻止紧密排列——动物细胞膜把相变「抹平」为宽温区中间态。</text>
+  <rect x="30" y="600" width="430" height="376" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="622.84" font-size="19" fill="#475569" font-weight="700">三、差示扫描量热（DSC）：Tm 处吸热峰</text>
+  <rect x="80" y="690" width="340" height="210" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="847.5" x2="420" y2="847.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="165" y1="900" x2="165" y2="690" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="795" x2="420" y2="795" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="250" y1="900" x2="250" y2="690" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="80" y1="742.5" x2="420" y2="742.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="335" y1="900" x2="335" y2="690" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="141.2" y1="900" x2="141.2" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <line x1="250" y1="900" x2="250" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="250" y="922" font-size="13" fill="#64748b" text-anchor="middle">Tm</text>
+  <line x1="358.8" y1="900" x2="358.8" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <line x1="74" y1="883.2" x2="80" y2="883.2" stroke="#475569" stroke-width="1.8"/>
+  <line x1="74" y1="795" x2="80" y2="795" stroke="#475569" stroke-width="1.8"/>
+  <line x1="74" y1="706.8" x2="80" y2="706.8" stroke="#475569" stroke-width="1.8"/>
+  <text x="250" y="944" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">温度 T</text>
+  <path d="M80,891.6 C91.3,890.9 126.5,890.9 148,887.4 C169.5,883.9 192.2,902.5 209.2,870.6 C226.2,838.8 236.4,696.3 250,696.3 C263.6,696.3 273.8,838.8 290.8,870.6 C307.8,902.5 330.5,883.9 352,887.4 C373.5,890.9 408.7,890.9 420,891.6" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <text x="250" y="662" font-size="11.5" fill="#64748b" text-anchor="middle">Cp（吸热）</text>
+  <text x="80" y="964" font-size="11.5" fill="#475569">升温扫过 Tm 时脂双层吸热熔融——峰位即相变温度。</text>
+  <rect x="490" y="600" width="400" height="376" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="506" y="622.84" font-size="19" fill="#475569" font-weight="700">四、不饱和键降低 Tm</text>
+  <line x1="580" y1="660" x2="580" y2="800" stroke="#0f766e" stroke-width="3"/>
+  <text x="580" y="826" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">饱和尾（全反式）</text>
+  <polyline points="760,660 760,706 786,730 760,754 760,800" fill="none" stroke="#b45309" stroke-width="3"/>
+  <text x="770" y="826" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">顺式双键 ≈30° 弯折</text>
+  <circle cx="773" cy="730" r="5" fill="#b45309"/>
+  <text x="530" y="862" font-size="11.5" fill="#475569">顺式双键使链间无法紧密堆积，</text>
+  <text x="530" y="879" font-size="11.5" fill="#475569">Tm 显著低于同链长饱和磷脂——膜在体温保持流动。</text>
+  <rect x="920" y="600" width="450" height="376" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="936" y="622.84" font-size="19" fill="#475569" font-weight="700">五、代表性 Tm 对照</text>
+  <rect x="944" y="656" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1094" y="683.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">脂质 / 链</text>
+  <rect x="1244" y="656" width="102" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1295" y="683.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">Tm</text>
+  <rect x="944" y="700" width="300" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1094" y="731.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">DPPC（饱和 C16:0）</text>
+  <rect x="1244" y="700" width="102" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1295" y="731.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">≈ 41 ℃</text>
+  <rect x="944" y="752" width="402" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="944" y="752" width="300" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1094" y="783.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">硬脂酸（饱和 C18:0）</text>
+  <rect x="1244" y="752" width="102" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1295" y="783.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">69.6 ℃</text>
+  <rect x="944" y="804" width="300" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1094" y="835.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">油酸（顺式 C18:1）</text>
+  <rect x="1244" y="804" width="102" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1295" y="835.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">13.4 ℃</text>
+  <text x="944" y="880" font-size="11.5" fill="#475569">膜功能（酶活性、信号转导、物质转运）</text>
+  <text x="944" y="897" font-size="11.5" fill="#475569">依赖液晶相流动性——体温下细胞膜须处于 Tm 之上。</text>
 </svg>

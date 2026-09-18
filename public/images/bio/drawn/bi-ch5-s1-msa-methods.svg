@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">多序列比对：渐进法三步、命门与迭代补救</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">MSA 的列揭示家族保守性、是 profile / HMM / 系统树的共同入口，而最优 MSA 为 NP 完全问题；Clustal W 按「两两距离建引导树 → 加权 → 渐进 profile 比对」三步走，「once a gap, always a gap」不可撤销；T-Coffee 以一致性库、MUSCLE 以迭代细化补救；SP 分数逐对求和、冗余重复计票</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">多序列比对：渐进法三步、命门与迭代补救</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">MSA的列揭示家族保守性、是profile/HMM/系统树的共同入口，而最优MSA为NP完全问题；ClustalW按「两两距离建引导树→加权→渐进profile比对」三步走，「onceagap,</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">alwaysagap」不可撤销；T-Coffee以一致性库、MUSCLE以迭代细化补救；SP分数逐对求和、冗余重复计票</text>
   <rect x="30" y="132" width="660" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、多序列比对：列揭示家族保守性</text>
   <text x="81" y="214" font-size="13" fill="#475569" text-anchor="middle">A</text>

@@ -13,32 +13,33 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">差异表达分析：负二项模型、设计矩阵与火山图三件套</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">生物学重复存在过度离散，负二项分布以方差 μ + αμ² 吸收超额方差，忽视则 p 值虚小假阳性泛滥；设计矩阵先行（批次+条件、配对写个体+处理、多水平用 LRT）；DESeq2/edgeR 输入未归一化计数，经验离散度向全基因组趋势收缩；BH 控制 FDR，通行阈值 padj &lt; 0.05 且 |log₂FC| &gt; 1；火山图看权衡、MA 图看收缩、热图看结构</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">差异表达分析：负二项模型、设计矩阵与火山图三件套</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">生物学重复存在过度离散，负二项分布以方差μ+αμ²吸收超额方差，忽视则p值虚小假阳性泛滥；设计矩阵先行（批次+条件、配对写个体+处理、多水平用LRT）；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">DESeq2/edgeR输入未归一化计数，经验离散度向全基因组趋势收缩；BH控制FDR，通行阈值padj&lt;0.05且|log₂FC|&gt;1；火山图看权衡、MA图看收缩、热图看结构</text>
   <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、过度离散：从泊松到负二项</text>
-  <rect x="90" y="180" width="380" height="280" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="90" y1="390" x2="470" y2="390" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="185" y1="460" x2="185" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="320" x2="470" y2="320" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="280" y1="460" x2="280" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="250" x2="470" y2="250" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="375" y1="460" x2="375" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <rect x="90" y="220" width="380" height="240" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="400" x2="470" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="185" y1="460" x2="185" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="340" x2="470" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="280" y1="460" x2="280" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="280" x2="470" y2="280" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="375" y1="460" x2="375" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
   <line x1="90" y1="460" x2="90" y2="466" stroke="#475569" stroke-width="1.8"/>
   <text x="90" y="482" font-size="13" fill="#64748b" text-anchor="middle">0</text>
   <line x1="470" y1="460" x2="470" y2="466" stroke="#475569" stroke-width="1.8"/>
   <text x="470" y="482" font-size="13" fill="#64748b" text-anchor="middle">增大 →</text>
   <line x1="84" y1="460" x2="90" y2="460" stroke="#475569" stroke-width="1.8"/>
   <text x="80" y="464" font-size="13" fill="#64748b" text-anchor="end">0</text>
-  <line x1="84" y1="180" x2="90" y2="180" stroke="#475569" stroke-width="1.8"/>
-  <text x="80" y="184" font-size="13" fill="#64748b" text-anchor="end">增大 →</text>
+  <line x1="84" y1="220" x2="90" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="224" font-size="13" fill="#64748b" text-anchor="end">增大 →</text>
   <text x="280" y="504" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">平均计数 μ →</text>
-  <text x="44" y="320" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">方差</text>
-  <text x="280" y="168" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">均值–方差关系（示意）</text>
-  <path d="M90.0,460.0 L470.0,285.0" fill="none" stroke="#94a3b8" stroke-width="2.4" stroke-dasharray="7 6"/>
-  <path d="M90,460 C102.7,453.6 140.7,435.5 166,421.5 C191.3,407.5 216.7,392.3 242,376 C267.3,359.7 292.7,342.2 318,323.5 C343.3,304.8 368.7,285.0 394,264 C419.3,243.0 457.3,208.6 470,197.5" fill="none" stroke="#be185d" stroke-width="3.2"/>
+  <text x="44" y="340" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">方差</text>
+  <text x="280" y="208" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">均值–方差关系（示意）</text>
+  <path d="M90.0,460.0 L470.0,310.0" fill="none" stroke="#94a3b8" stroke-width="2.4" stroke-dasharray="7 6"/>
+  <path d="M90,460 C102.7,454.5 140.7,439.0 166,427 C191.3,415.0 216.7,402.0 242,388 C267.3,374.0 292.7,359.0 318,343 C343.3,327.0 368.7,310.0 394,292 C419.3,274.0 457.3,244.5 470,235" fill="none" stroke="#be185d" stroke-width="3.2"/>
   <text x="250" y="396" font-size="11.5" fill="#64748b" font-weight="600">泊松：方差 = μ</text>
-  <text x="255" y="214" font-size="12.5" fill="#831843" font-weight="700">负二项：方差 = μ + αμ²</text>
+  <text x="255" y="232" font-size="12.5" fill="#831843" font-weight="700">负二项：方差 = μ + αμ²</text>
   <rect x="500" y="190" width="178" height="132" rx="9" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.6"/>
   <text x="589" y="214" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">忽视过度离散</text>
   <text x="512" y="238" font-size="10.5" fill="#dc2626">方差被系统性低估 → p 值虚小 → 假阳性泛滥——RNA-seq 统计的第一课。</text>
@@ -46,8 +47,8 @@
   <text x="589" y="366" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">设计原则</text>
   <text x="512" y="388" font-size="10.5" fill="#475569">无生物学重复的设计，</text>
   <text x="512" y="403" font-size="10.5" fill="#475569">原则上不可检验。</text>
-  <text x="60" y="496" font-size="11.5" fill="#475569">负二项分布以方差 μ + αμ² 吸收结构性超额方差——技术重复近似泊松，生物学重复存在过度离散；</text>
-  <text x="60" y="512" font-size="11.5" fill="#475569">DESeq2 / edgeR 的输入须为未归一化计数。</text>
+  <text x="60" y="520" font-size="11.5" fill="#475569">负二项分布以方差 μ + αμ² 吸收结构性超额方差——技术重复近似泊松，生物学重复存在过度离散；</text>
+  <text x="60" y="536" font-size="11.5" fill="#475569">DESeq2 / edgeR 的输入须为未归一化计数。</text>
   <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、设计矩阵先行：DESeq2 / edgeR 的估计–压缩流程</text>
   <rect x="740" y="190" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
@@ -90,83 +91,83 @@
   <text x="740" y="500" font-size="11.5" fill="#475569">padj &lt; 0.05 且 |log₂FC| &gt; 1；显著基因数跨研究不可比。</text>
   <rect x="30" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、火山图：效应与证据的权衡</text>
-  <rect x="90" y="630" width="540" height="300" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="90" y1="855" x2="630" y2="855" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="225" y1="930" x2="225" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="780" x2="630" y2="780" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="360" y1="930" x2="360" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="705" x2="630" y2="705" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="495" y1="930" x2="495" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="930" x2="90" y2="936" stroke="#475569" stroke-width="1.8"/>
-  <text x="90" y="952" font-size="13" fill="#64748b" text-anchor="middle">-4</text>
-  <line x1="225" y1="930" x2="225" y2="936" stroke="#475569" stroke-width="1.8"/>
-  <text x="225" y="952" font-size="13" fill="#64748b" text-anchor="middle">-2</text>
-  <line x1="360" y1="930" x2="360" y2="936" stroke="#475569" stroke-width="1.8"/>
-  <text x="360" y="952" font-size="13" fill="#64748b" text-anchor="middle">0</text>
-  <line x1="495" y1="930" x2="495" y2="936" stroke="#475569" stroke-width="1.8"/>
-  <text x="495" y="952" font-size="13" fill="#64748b" text-anchor="middle">+2</text>
-  <line x1="630" y1="930" x2="630" y2="936" stroke="#475569" stroke-width="1.8"/>
-  <text x="630" y="952" font-size="13" fill="#64748b" text-anchor="middle">+4</text>
-  <line x1="84" y1="930" x2="90" y2="930" stroke="#475569" stroke-width="1.8"/>
-  <text x="80" y="934" font-size="13" fill="#64748b" text-anchor="end">0</text>
-  <line x1="84" y1="780" x2="90" y2="780" stroke="#475569" stroke-width="1.8"/>
-  <text x="80" y="784" font-size="13" fill="#64748b" text-anchor="end">4</text>
+  <rect x="90" y="630" width="540" height="278" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="838.5" x2="630" y2="838.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="225" y1="908" x2="225" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="769" x2="630" y2="769" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="360" y1="908" x2="360" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="699.5" x2="630" y2="699.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="495" y1="908" x2="495" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="908" x2="90" y2="914" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="930" font-size="13" fill="#64748b" text-anchor="middle">-4</text>
+  <line x1="225" y1="908" x2="225" y2="914" stroke="#475569" stroke-width="1.8"/>
+  <text x="225" y="930" font-size="13" fill="#64748b" text-anchor="middle">-2</text>
+  <line x1="360" y1="908" x2="360" y2="914" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="930" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="495" y1="908" x2="495" y2="914" stroke="#475569" stroke-width="1.8"/>
+  <text x="495" y="930" font-size="13" fill="#64748b" text-anchor="middle">+2</text>
+  <line x1="630" y1="908" x2="630" y2="914" stroke="#475569" stroke-width="1.8"/>
+  <text x="630" y="930" font-size="13" fill="#64748b" text-anchor="middle">+4</text>
+  <line x1="84" y1="908" x2="90" y2="908" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="912" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="84" y1="769" x2="90" y2="769" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="773" font-size="13" fill="#64748b" text-anchor="end">4</text>
   <line x1="84" y1="630" x2="90" y2="630" stroke="#475569" stroke-width="1.8"/>
   <text x="80" y="634" font-size="13" fill="#64748b" text-anchor="end">8</text>
-  <text x="360" y="974" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">log₂FC（效应）</text>
-  <text x="44" y="780" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">−log₁₀ p</text>
+  <text x="360" y="952" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">log₂FC（效应）</text>
+  <text x="44" y="769" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">−log₁₀ p</text>
   <text x="360" y="618" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">差异基因火山图（示意）</text>
-  <line x1="292.5" y1="630" x2="292.5" y2="930" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
-  <line x1="427.5" y1="630" x2="427.5" y2="930" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
-  <line x1="90" y1="881.25" x2="630" y2="881.25" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
-  <circle cx="446.40000000000003" cy="828" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="468" cy="798" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="489.6" cy="816" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="511.2" cy="774" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="532.8" cy="789" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="500.4" cy="744" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="554.4" cy="756" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="576" cy="732" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="543.5999999999999" cy="708" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="592.2" cy="684" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="565.2" cy="660" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="608.4" cy="645" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
-  <circle cx="273.6" cy="828" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="252.00000000000003" cy="798" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="230.4" cy="816" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="208.79999999999998" cy="774" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="187.20000000000005" cy="789" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="219.6" cy="744" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="165.60000000000002" cy="756" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="144" cy="732" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="176.40000000000003" cy="708" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="127.79999999999998" cy="684" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="154.8" cy="660" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="111.60000000000002" cy="645" r="4.5" fill="#be185d" fill-opacity="0.7"/>
-  <circle cx="316.79999999999995" cy="912" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="343.79999999999995" cy="900" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="370.8" cy="915" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="397.79999999999995" cy="903" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="327.6" cy="882" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="360" cy="888" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="387" cy="876" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="414" cy="894" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="300.6" cy="864" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="430.2" cy="858" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="338.4" cy="852" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="376.2" cy="840" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="403.2" cy="846" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="284.4" cy="900" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <circle cx="446.40000000000003" cy="906" r="4" fill="#94a3b8" fill-opacity="0.65"/>
-  <text x="527.4000000000001" y="666" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">上调候选</text>
-  <text x="192.6" y="666" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">下调候选</text>
-  <text x="360" y="912" font-size="12" fill="#64748b" text-anchor="middle">不显著</text>
-  <rect x="90" y="957.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="110.1" y="965.96" font-size="11" fill="#475569">上调 log₂FC &gt; 1</text>
-  <rect x="203.85" y="957.38" width="12.100000000000001" height="9.24" rx="3" fill="#94a3b8" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="223.95" y="965.96" font-size="11" fill="#475569">不显著</text>
-  <rect x="270.95" y="957.38" width="12.100000000000001" height="9.24" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="291.05" y="965.96" font-size="11" fill="#475569">下调 log₂FC &lt; −1</text>
+  <line x1="292.5" y1="630" x2="292.5" y2="908" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="427.5" y1="630" x2="427.5" y2="908" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="90" y1="862.825" x2="630" y2="862.825" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <circle cx="446.40000000000003" cy="813.48" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="468" cy="785.68" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="489.6" cy="802.36" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="511.2" cy="763.44" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="532.8" cy="777.34" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="500.4" cy="735.64" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="554.4" cy="746.76" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="576" cy="724.52" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="543.5999999999999" cy="702.28" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="592.2" cy="680.04" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="565.2" cy="657.8" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="608.4" cy="643.9000000000001" r="4.5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="273.6" cy="813.48" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="252.00000000000003" cy="785.68" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="230.4" cy="802.36" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="208.79999999999998" cy="763.44" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="187.20000000000005" cy="777.34" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="219.6" cy="735.64" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="165.60000000000002" cy="746.76" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="144" cy="724.52" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="176.40000000000003" cy="702.28" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="127.79999999999998" cy="680.04" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="154.8" cy="657.8" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="111.60000000000002" cy="643.9000000000001" r="4.5" fill="#be185d" fill-opacity="0.7"/>
+  <circle cx="316.79999999999995" cy="891.32" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="343.79999999999995" cy="880.2" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="370.8" cy="894.1" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="397.79999999999995" cy="882.98" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="327.6" cy="863.52" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="360" cy="869.08" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="387" cy="857.96" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="414" cy="874.64" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="300.6" cy="846.84" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="430.2" cy="841.28" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="338.4" cy="835.72" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="376.2" cy="824.6" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="403.2" cy="830.16" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="284.4" cy="880.2" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <circle cx="446.40000000000003" cy="885.76" r="4" fill="#94a3b8" fill-opacity="0.65"/>
+  <text x="527.4000000000001" y="663.36" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">上调候选</text>
+  <text x="192.6" y="663.36" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">下调候选</text>
+  <text x="360" y="890" font-size="12" fill="#64748b" text-anchor="middle">不显著</text>
+  <rect x="90" y="963.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="110.1" y="971.96" font-size="11" fill="#475569">上调 log₂FC &gt; 1</text>
+  <rect x="203.85" y="963.38" width="12.100000000000001" height="9.24" rx="3" fill="#94a3b8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="223.95" y="971.96" font-size="11" fill="#475569">不显著</text>
+  <rect x="270.95" y="963.38" width="12.100000000000001" height="9.24" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="291.05" y="971.96" font-size="11" fill="#475569">下调 log₂FC &lt; −1</text>
   <rect x="710" y="576" width="660" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">四、MA 图与热图：收缩与样本结构</text>
   <rect x="760" y="650" width="280" height="230" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
@@ -257,6 +258,6 @@
   <line x1="1192" y1="668" x2="1192" y2="866" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 4"/>
   <line x1="1090" y1="767" x2="1328" y2="767" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 4"/>
   <text x="1209" y="894" font-size="11" fill="#64748b" text-anchor="middle">样本（两群）</text>
-  <text x="740" y="926" font-size="11.5" fill="#475569">MA 图看收缩与均值–方差趋势、热图看样本结构与共表达模块——两者绘制前均须做方差稳定变换（如 vst / rlog）。</text>
-  <text x="740" y="942" font-size="11.5" fill="#475569">BH 程序控制错误发现率并输出 padj。</text>
+  <text x="740" y="946" font-size="11.5" fill="#475569">MA 图看收缩与均值–方差趋势、热图看样本结构与共表达模块——两者绘制前均须做方差稳定变换（如 vst / rlog）。</text>
+  <text x="740" y="962" font-size="11.5" fill="#475569">BH 程序控制错误发现率并输出 padj。</text>
 </svg>

@@ -46,12 +46,12 @@ const draw = (b: B) => {
     'Geminin 与降解机制清除许可因子 → 待下一 G₁ 期重新许可',
   ]
   lic.forEach((s, i) => {
-    const y = 492 + i * 58
+    const y = 492 + i * 56
     b.rect(80, y, 560, 42, { fill: i === 2 ? C.accL : C.panelB, stroke: i === 2 ? C.acc : C.line, sw: 1.5, rx: 8 })
     b.ctext(360, y + 26, s, { size: 12.5, fill: C.sub })
-    if (i < 3) b.arrow(360, y + 44, 360, y + 56, { stroke: C.sub, sw: 2, marker: 'ink' })
+    if (i < 3) b.arrow(360, y + 44, 360, y + 52, { stroke: C.sub, sw: 2, marker: 'ink' })
   })
-  b.text(80, 700, '「许可因子一次性消耗」的逻辑防止重复复制。', { size: 12, fill: C.mute })
+  b.text(80, 716, '「许可因子一次性消耗」的逻辑防止重复复制。', { size: 12, fill: C.mute })
 
   // ============ 四、末端复制问题与端粒酶 ============
   b.panel(740, 452, 630, 270, { title: '四、末端复制问题与端粒酶（Blackburn 与 Greider，1985）' })
@@ -66,7 +66,7 @@ const draw = (b: B) => {
   b.ctext(1155, 624, 'RNA 引物', { size: 9.5, fill: C.rnaD })
   b.line(1148, 634, 1162, 646, { stroke: C.bad, sw: 2.2 })
   b.line(1148, 646, 1162, 634, { stroke: C.bad, sw: 2.2 })
-  b.ctext(1155, 662, '引物切除', { size: 10.5, fill: C.bad })
+  b.ctext(1155, 604, '引物切除', { size: 10.5, fill: C.bad })
   b.arrow(1184, 580, 1330, 580, { stroke: C.dna, sw: 2.4, marker: 'dna' })
   b.ctext(1257, 566, 'TTAGGG 延伸', { size: 10.5, fill: C.dnaD })
   b.braceH(1120, 640, 60, { label: '末端复制问题', size: 10.5 })

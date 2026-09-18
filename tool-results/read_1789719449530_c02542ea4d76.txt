@@ -1,0 +1,502 @@
+    46→    46→  }
+    47→    47→  return w * (weight >= 600 ? 1.03 : 1)
+    48→    48→}
+    49→    49→
+    50→    50→const esc = (s: string) =>
+    51→    51→  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+    52→    52→
+    53→    53→// ---------------- 选项类型 ----------------
+    54→    54→export interface TextOpt {
+    55→    55→  size?: number; fill?: string; anchor?: 'start' | 'middle' | 'end'
+    56→    56→  weight?: number; italic?: boolean; ls?: number; opacity?: number; family?: string
+    57→    57→}
+    58→    58→export interface ShapeOpt {
+    59→    59→  fill?: string; stroke?: string; sw?: number; rx?: number; dash?: string
+    60→    60→  opacity?: number; fillOp?: number
+    61→    61→}
+    62→    62→export interface LineOpt {
+    63→    63→  stroke?: string; sw?: number; dash?: string; marker?: MarkerKey; opacity?: number
+    64→    64→  markerStart?: MarkerKey
+    65→    65→}
+    66→    66→export type MarkerKey = 'ink' | 'dna' | 'rna' | 'pro' | 'enz' | 'acc' | 'ok' | 'warn' | 'bad' | 'mute'
+    67→    67→
+    68→    68→const MARKER_PATH = 'M0,0 L10,5 L0,10 z'
+    69→    69→const MARKER_FILL: Record<MarkerKey, string> = {
+    70→    70→  ink: '#334155', dna: C.dna, rna: C.rna, pro: C.pro, enz: C.enz,
+    71→    71→  acc: C.acc, ok: C.ok, warn: '#b45309', bad: C.bad, mute: '#94a3b8',
+    72→    72→}
+    73→    73→
+    74→    74→// ---------------- 构建器 ----------------
+    75→    75→export class B {
+    76→    76→  els: string[] = []
+    77→    77→
+    78→    78→  private a(o: TextOpt = {}) {
+    79→    79→    const s = ` font-size="${o.size ?? 18}"`
+    80→    80→    return (
+    81→    81→      s +
+    82→    82→      (o.fill ? ` fill="${o.fill}"` : '') +
+    83→    83→      (o.anchor ? ` text-anchor="${o.anchor}"` : '') +
+    84→    84→      (o.weight && o.weight !== 400 ? ` font-weight="${o.weight}"` : '') +
+    85→    85→      (o.italic ? ` font-style="italic"` : '') +
+    86→    86→      (o.ls ? ` letter-spacing="${o.ls}"` : '') +
+    87→    87→      (o.opacity != null ? ` opacity="${o.opacity}"` : '')
+    88→    88→    )
+    89→    89→  }
+    90→    90→  private sh(o: ShapeOpt = {}) {
+    91→    91→    return (
+    92→    92→      (o.fill && o.fill !== 'none' ? ` fill="${o.fill}"` : ' fill="none"') +
+    93→    93→      (o.fillOp != null ? ` fill-opacity="${o.fillOp}"` : '') +
+    94→    94→      (o.stroke ? ` stroke="${o.stroke}"` : '') +
+    95→    95→      (o.sw != null ? ` stroke-width="${o.sw ?? 1.5}"` : '') +
+    96→    96→      (o.dash ? ` stroke-dasharray="${o.dash}"` : '') +
+    97→    97→      (o.opacity != null ? ` opacity="${o.opacity}"` : '')
+    98→    98→    )
+    99→    99→  }
+   100→   100→  private lh(o: LineOpt = {}) {
+   101→   101→    const mk = o.marker ? ` marker-end="url(#arr-${o.marker})"` : ''
+   102→   102→    const ms = o.markerStart ? ` marker-start="url(#arr-${o.markerStart})"` : ''
+   103→   103→    return (
+   104→   104→      ` stroke="${o.stroke ?? '#334155'}"` +
+   105→   105→      (o.sw != null ? ` stroke-width="${o.sw ?? 1.5}"` : '') +
+   106→   106→      (o.dash ? ` stroke-dasharray="${o.dash}"` : '') +
+   107→   107→      (o.opacity != null ? ` opacity="${o.opacity}"` : '') +
+   108→   108→      mk + ms
+   109→   109→    )
+   110→   110→  }
+   111→   111→
+   112→   112→  /** 文本（默认左对齐，y 为基线） */
+   113→   113→  text(x: number, y: number, s: string, o: TextOpt = {}): this {
+   114→   114→    this.els.push(`<text x="${x}" y="${y}"${this.a(o)}>${esc(s)}</text>`)
+   115→   115→    return this
+   116→   116→  }
+   117→   117→  /** 居中文本 */
+   118→   118→  ctext(x: number, y: number, s: string, o: TextOpt = {}): this {
+   119→   119→    return this.text(x, y, s, { ...o, anchor: 'middle' })
+   120→   120→  }
+   121→   121→  /** 右对齐文本 */
+   122→   122→  etext(x: number, y: number, s: string, o: TextOpt = {}): this {
+   123→   123→    return this.text(x, y, s, { ...o, anchor: 'end' })
+   124→   124→  }
+   125→   125→  /** 自动换行的文本块（按估算宽度断行），返回下一行基线 y */
+   126→   126→  wtext(x: number, y: number, s: string, o: TextOpt & { maxW?: number; lh?: number } = {}): number {
+   127→   127→    const size = o.size ?? 17
+   128→   128→    const maxW = o.maxW ?? 260
+   129→   129→    const lh = o.lh ?? size * 1.5
+   130→   130→    const lines: string[] = []
+   131→   131→    let cur = ''
+   132→   132→    for (const word of s.split(/(?<=[，。；：、！？）])|(?=[（])/)) {
+   133→   133→      if (cur && textW(cur + word, size) > maxW) { lines.push(cur); cur = word }
+   134→   134→      else cur += word
+   135→   135→    }
+   136→   136→    if (cur) lines.push(cur)
+   137→   137→    lines.forEach((ln, i) => this.text(x, y + i * lh, ln, o))
+   138→   138→    return y + lines.length * lh
+   139→   139→  }
+   140→   140→
+   141→   141→  rect(x: number, y: number, w: number, h: number, o: ShapeOpt = {}): this {
+   142→   142→    this.els.push(
+   143→   143→      `<rect x="${x}" y="${y}" width="${w}" height="${h}"${o.rx != null ? ` rx="${o.rx}"` : ''}${this.sh(o)}/>`
+   144→   144→    )
+   145→   145→    return this
+   146→   146→  }
+   147→   147→  /** 圆角面板（默认浅底 + 细边） */
+   148→   148→  panel(x: number, y: number, w: number, h: number, o: ShapeOpt & { title?: string; tsize?: number; tfill?: string } = {}): this {
+   149→   149→    const { title, tsize = 19, tfill, ...rest } = o
+   150→   150→    this.rect(x, y, w, h, { fill: rest.fill ?? C.panel, stroke: rest.stroke ?? C.line, sw: rest.sw ?? 1.5, rx: rest.rx ?? 10, dash: rest.dash, opacity: rest.opacity })
+   151→   151→    if (title) this.text(x + 16, y + 16 + tsize * 0.36, title, { size: tsize, weight: 700, fill: tfill ?? C.sub })
+   152→   152→    return this
+   153→   153→  }
+   154→   154→  circle(cx: number, cy: number, r: number, o: ShapeOpt = {}): this {
+   155→   155→    this.els.push(`<circle cx="${cx}" cy="${cy}" r="${r}"${this.sh(o)}/>`)
+   156→   156→    return this
+   157→   157→  }
+   158→   158→  ellipse(cx: number, cy: number, rx: number, ry: number, o: ShapeOpt = {}): this {
+   159→   159→    this.els.push(`<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}"${this.sh(o)}/>`)
+   160→   160→    return this
+   161→   161→  }
+   162→   162→  /** pts: [[x,y],...] */
+   163→   163→  polygon(pts: [number, number][], o: ShapeOpt = {}): this {
+   164→   164→    this.els.push(`<polygon points="${pts.map(p => p.join(',')).join(' ')}"${this.sh(o)}/>`)
+   165→   165→    return this
+   166→   166→  }
+   167→   167→  polyline(pts: [number, number][], o: LineOpt = {}): this {
+   168→   168→    this.els.push(`<polyline points="${pts.map(p => p.join(',')).join(' ')}" fill="none"${this.lh(o)}/>`)
+   169→   169→    return this
+   170→   170→  }
+   171→   171→  line(x1: number, y1: number, x2: number, y2: number, o: LineOpt = {}): this {
+   172→   172→    this.els.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"${this.lh(o)}/>`)
+   173→   173→    return this
+   174→   174→  }
+   175→   175→  /** 带箭头的连线（marker 自动取描边色系） */
+   176→   176→  arrow(x1: number, y1: number, x2: number, y2: number, o: LineOpt = {}): this {
+   177→   177→    return this.line(x1, y1, x2, y2, { ...o, marker: o.marker ?? 'ink' })
+   178→   178→  }
+   179→   179→  path(d: string, o: (ShapeOpt & LineOpt) = {}): this {
+   180→   180→    this.els.push(
+   181→   181→      `<path d="${d}"${this.sh({ fill: o.fill, fillOp: o.fillOp, opacity: o.opacity })}` +
+   182→   182→      (o.stroke ? ` stroke="${o.stroke}"` : o.fill ? '' : ' stroke="#334155"') +
+   183→   183→      (o.sw != null ? ` stroke-width="${o.sw ?? 1.5}"` : '') +
+   184→   184→      (o.dash ? ` stroke-dasharray="${o.dash}"` : '') +
+   185→   185→      (o.marker ? ` marker-end="url(#arr-${o.marker})"` : '') +
+   186→   186→      (o.markerStart ? ` marker-start="url(#arr-${o.markerStart})"` : '') +
+   187→   187→      `/>`
+   188→   188→    )
+   189→   189→    return this
+   190→   190→  }
+   191→   191→  /** 平滑曲线（Catmull-Rom → Bezier），pts 至少 2 点 */
+   192→   192→  spline(pts: [number, number][], o: (ShapeOpt & LineOpt) = {}): this {
+   193→   193→    const d = catmullRom(pts)
+   194→   194→    return this.path(d, o)
+   195→   195→  }
+   196→   196→
+   197→   197→  /** 自动定宽标签盒（cx,cy 为盒心）。返回盒宽。tfill 为文字色（区别于盒填充 fill）。 */
+   198→   198→  tag(cx: number, cy: number, s: string, o: TextOpt & ShapeOpt & { pad?: number; minh?: number; tfill?: string } = {}): number {
+   199→   199→    const size = o.size ?? 17
+   200→   200→    const w = textW(s, size, o.weight ?? 400) + (o.pad ?? 16) * 2
+   201→   201→    const h = o.minh ?? size * 1.7
+   202→   202→    this.rect(cx - w / 2, cy - h / 2, w, h, {
+   203→   203→      fill: o.fill ?? C.accL, stroke: o.stroke, sw: o.sw ?? 1.5, rx: o.rx ?? 7, dash: o.dash, opacity: o.opacity,
+   204→   204→    })
+   205→   205→    this.text(cx, cy + size * 0.36, s, { size, fill: o.tfill ?? C.ink, weight: o.weight, anchor: 'middle' })
+   206→   206→    return w
+   207→   207→  }
+   208→   208→  /** 图例（色块 + 文字横排），返回总宽 */
+   209→   209→  legend(x: number, y: number, items: [string, string][], o: { size?: number; gap?: number; stroke?: boolean } = {}): number {
+   210→   210→    const size = o.size ?? 15
+   211→   211→    const gap = o.gap ?? 22
+   212→   212→    let cx = x
+   213→   213→    for (const [label, color] of items) {
+   214→   214→      this.rect(cx, y - size * 0.42, size * 1.1, size * 0.84, { fill: color, stroke: o.stroke === false ? undefined : C.line, sw: 1, rx: 3 })
+   215→   215→      this.text(cx + size * 1.1 + 8, y + size * 0.36, label, { size, fill: C.sub })
+   216→   216→      cx += size * 1.1 + 8 + textW(label, size) + gap
+   217→   217→    }
+   218→   218→    return cx - x - gap
+   219→   219→  }
+   220→   220→
+   221→   221→  // -------- 生物学常用构件 --------
+   222→   222→  /** 水平双链 DNA 示意：两条相位相反的正弦链 + 碱基横档 */
+   223→   223→  dna(x: number, y: number, w: number, o: { amp?: number; period?: number; stroke?: string; sw?: number; rung?: boolean; rungC?: string; opacity?: number } = {}): this {
+   224→   224→    const amp = o.amp ?? 9
+   225→   225→    const period = o.period ?? 46
+   226→   226→    const top: string[] = [`M${x},${y}`]
+   227→   227→    const bot: string[] = [`M${x},${y}`]
+   228→   228→    let phase = 0
+   229→   229→    for (let t = 0; t <= w; t += 2) {
+   230→   230→      const dy = amp * Math.sin((2 * Math.PI * t) / period)
+   231→   231→      if (t % 2 === 0) {
+   232→   232→        top.push(`L${(x + t).toFixed(1)},${(y - dy).toFixed(1)}`)
+   233→   233→        bot.push(`L${(x + t).toFixed(1)},${(y + dy).toFixed(1)}`)
+   234→   234→      }
+   235→   235→      phase = dy
+   236→   236→    }
+   237→   237→    const stroke = o.stroke ?? C.dna
+   238→   238→    this.els.push(`<path d="${top.join('')}" fill="none" stroke="${stroke}" stroke-width="${o.sw ?? 2.6}"${o.opacity != null ? ` opacity="${o.opacity}"` : ''}/>`)
+   239→   239→    this.els.push(`<path d="${bot.join('')}" fill="none" stroke="${stroke}" stroke-width="${o.sw ?? 2.6}"${o.opacity != null ? ` opacity="${o.opacity}"` : ''}/>`)
+   240→   240→    if (o.rung !== false) {
+   241→   241→      for (let t = period / 4; t < w; t += period / 2) {
+   242→   242→        const dy = amp * Math.sin((2 * Math.PI * t) / period)
+   243→   243→        this.line(x + t, y - dy, x + t, y + dy, { stroke: o.rungC ?? stroke, sw: 1.4, opacity: 0.55 })
+   244→   244→      }
+   245→   245→    }
+   246→   246→    void phase
+   247→   247→    return this
+   248→   248→  }
+   249→   249→  /** 基因簇轨道：在基线上排布基因方块并标注 */
+   250→   250→  genes(x: number, y: number, w: number, list: { label: string; frac: number; fill?: string; stroke?: string; h?: number; up?: boolean; size?: number }[]): this {
+   251→   251→    let cx = x
+   252→   252→    this.line(x, y, x + w, y, { stroke: C.faint, sw: 1.6 })
+   253→   253→    for (const g of list) {
+   254→   254→      const gw = w * g.frac
+   255→   255→      const h = g.h ?? 30
+   256→   256→      this.rect(cx + 1, y - h / 2, Math.max(gw - 2, 6), h, { fill: g.fill ?? C.dnaL, stroke: g.stroke ?? C.dna, sw: 1.6, rx: 4 })
+   257→   257→      const size = g.size ?? (gw > textW(g.label, 15) + 12 ? 15 : 13)
+   258→   258→      this.ctext(cx + gw / 2, g.up ? y - h / 2 - 12 : y + h / 2 + 18, g.label, { size, weight: 600, fill: C.sub })
+   259→   259→      cx += gw
+   260→   260→    }
+   261→   261→    return this
+   262→   262→  }
+   263→   263→  /** 泳道式凝胶图（孔在上、梯度带）。bands: [相对迁移(0顶-1底), 颜色, 标签?] */
+   264→   264→  gel(x: number, y: number, w: number, h: number, lanes: { label: string; bands: [number, string][] }[], o: { size?: number } = {}): this {
+   265→   265→    const size = o.size ?? 14
+   266→   266→    const n = lanes.length
+   267→   267→    const lw = (w - 40) / n
+   268→   268→    this.rect(x, y, w, h, { fill: '#ffffff', stroke: C.sub, sw: 2, rx: 4 })
+   269→   269→    lanes.forEach((lane, i) => {
+   270→   270→      const lx = x + 20 + i * lw
+   271→   271→      // 上样孔
+   272→   272→      this.rect(lx + lw * 0.18, y + 10, lw * 0.64, 7, { fill: C.ink, rx: 2 })
+   273→   273→      // 条带
+   274→   274→      for (const [rf, color] of lane.bands) {
+   275→   275→        const by = y + 26 + rf * (h - 40)
+   276→   276→        this.rect(lx + lw * 0.14, by - 4.5, lw * 0.72, 9, { fill: color, opacity: 0.9, rx: 2 })
+   277→   277→      }
+   278→   278→      this.ctext(lx + lw / 2, y + h + 20, lane.label, { size, fill: C.sub })
+   279→   279→    })
+   280→   280→    return this
+   281→   281→  }
+   282→   282→  /** 阶梯/台阶图（用于容量分级、范式演进等）。items 自动等分宽度。 */
+   283→   283→  stairs(x: number, y: number, w: number, h: number, items: string[], o: { fill?: string; stroke?: string; size?: number } = {}): this {
+   284→   284→    const n = items.length
+   285→   285→    const swStep = w / n
+   286→   286→    const shStep = h / n
+   287→   287→    items.forEach((s, i) => {
+   288→   288→      const bx = x + i * swStep
+   289→   289→      const by = y + h - (i + 1) * shStep
+   290→   290→      this.rect(bx, by, swStep - 6, shStep, { fill: o.fill ?? C.accL, stroke: o.stroke ?? C.acc, sw: 1.6, rx: 5 })
+   291→   291→      this.wtext(bx + 14, by + 24, s, { size: o.size ?? 15, fill: C.ink, maxW: swStep - 24, lh: 21 })
+   292→   292→    })
+   293→   293→    return this
+   294→   294→  }
+   295→   295→  /** 大括号标注（右侧），label 放在括号尖角处 */
+   296→   296→  brace(x: number, y1: number, y2: number, label: string, o: { size?: number; fill?: string; side?: 'left' | 'right' } = {}): this {
+   297→   297→    const mid = (y1 + y2) / 2
+   298→   298→    const d = y2 > y1 ? 14 : -14
+   299→   299→    const dir = o.side === 'left' ? -1 : 1
+   300→   300→    const p = `M${x + dir * 6},${y1} q${-dir * 12},0 ${-dir * 12},${d / 2} L${x + dir * 6},${mid - d / 3} q${-dir * 4},${d / 6} ${dir * 6},${d / 3} q${dir * 10},${d / 6} ${dir * 6},${d / 3} L${x + dir * 6},${y2} q${-dir * 12},0 ${-dir * 12},${-d / 2}`
+   301→   301→    this.path(p, { stroke: o.fill ?? C.mute, sw: 1.8 })
+   302→   302→    this.text(x + dir * 26, mid + 6, label, { size: o.size ?? 15, fill: o.fill ?? C.mute, anchor: o.side === 'left' ? 'end' : 'start' })
+   303→   303→    return this
+   304→   304→  }
+   305→   305→  /** 细胞示意（圆角胶囊），可选双层膜 */
+   306→   306→  cell(cx: number, cy: number, rx: number, ry: number, o: ShapeOpt & { label?: string; double?: boolean } = {}): this {
+   307→   307→    const { label, double, ...rest } = o
+   308→   308→    this.ellipse(cx, cy, rx, ry, { fill: rest.fill ?? C.panel, stroke: rest.stroke ?? C.sub, sw: rest.sw ?? 2, dash: rest.dash, opacity: rest.opacity })
+   309→   309→    if (double) this.ellipse(cx, cy, rx - 7, ry - 7, { fill: 'none', stroke: rest.stroke ?? C.sub, sw: 1.2, opacity: 0.6 })
+   310→   310→    if (label) this.ctext(cx, cy, label, { size: 18, weight: 600, fill: C.sub })
+   311→   311→    return this
+   312→   312→  }
+   313→   313→  /** 茎环（发夹）结构：茎自 (x,y) 向上，顶部半圆环 */
+   314→   314→  stemLoop(x: number, y: number, o: { h?: number; r?: number; stroke?: string; sw?: number; label?: string; fill?: string; lsize?: number; dash?: string } = {}): this {
+   315→   315→    const h = o.h ?? 52
+   316→   316→    const r = o.r ?? 16
+   317→   317→    const stroke = o.stroke ?? C.rna
+   318→   318→    const sw = o.sw ?? 2.2
+   319→   319→    const d = `M${x - 6},${y} L${x - 6},${y - h} A${r},${r} 0 0 1 ${x + 6},${y - h} L${x + 6},${y}`
+   320→   320→    this.path(d, { stroke, sw, dash: o.dash })
+   321→   321→    if (o.label) this.ctext(x, y - h - r - 10, o.label, { size: o.lsize ?? 14, weight: 600, fill: stroke })
+   322→   322→    return this
+   323→   323→  }
+   324→   324→  /** 蛋白结构域条（圆角矩形分段 + 域标签） */
+   325→   325→  domains(x: number, y: number, h: number, list: { label: string; frac: number; fill?: string; stroke?: string; sub?: string }[]): this {
+   326→   326→    let cx = x
+   327→   327→    let totalFrac = 0
+   328→   328→    for (const d of list) totalFrac += d.frac
+   329→   329→    void totalFrac
+   330→   330→    for (const d of list) {
+   331→   331→      const w = d.frac
+   332→   332→      this.rect(cx, y, w, h, { fill: d.fill ?? C.proL, stroke: d.stroke ?? C.pro, sw: 1.6, rx: 6 })
+   333→   333→      const size = w > textW(d.label, 14) + 10 ? 14 : 12
+   334→   334→      this.ctext(cx + w / 2, y + h / 2 + (d.sub ? -4 : 5), d.label, { size, weight: 600, fill: C.proD })
+   335→   335→      if (d.sub) this.ctext(cx + w / 2, y + h / 2 + 14, d.sub, { size: 11.5, fill: C.mute })
+   336→   336→      cx += w
+   337→   337→    }
+   338→   338→    return this
+   339→   339→  }
+   340→   340→
+   341→   341→  // ================= 通用科研图原语（39 系列扩展） =================
+   342→   342→
+   343→   343→  /** 带标签的分区底色 */
+   344→   344→  zone(x: number, y: number, w: number, h: number, o: ShapeOpt & { label?: string; sub?: string; lfill?: string; rx?: number } = {}): this {
+   345→   345→    this.rect(x, y, w, h, { fill: o.fill ?? '#f1f5f9', fillOp: o.fillOp ?? 0.45, stroke: o.stroke, sw: o.sw, dash: o.dash, rx: o.rx ?? 10 })
+   346→   346→    if (o.label) this.text(x + 16, y + 26, o.label, { size: 18, weight: 700, fill: o.lfill ?? C.sub })
+   347→   347→    if (o.sub) this.text(x + 16, y + 48, o.sub, { size: 13.5, fill: C.mute })
+   348→   348→    return this
+   349→   349→  }
+   350→   350→
+   351→   351→  /** 坐标轴框（y 为轴底；grid 是否画网格） */
+   352→   352→  axis(x: number, y: number, w: number, h: number, o: {
+   353→   353→    xlabel?: string; ylabel?: string; title?: string; grid?: boolean
+   354→   354→    xticks?: Array<[number, string]>; yticks?: Array<[number, string]>
+   355→   355→  } = {}): this {
+   356→   356→    this.rect(x, y - h, w, h, { fill: C.bg, stroke: C.sub, sw: 1.8 })
+   357→   357→    if (o.grid !== false) {
+   358→   358→      for (let i = 1; i < 4; i++) {
+   359→   359→        this.line(x, y - (h * i) / 4, x + w, y - (h * i) / 4, { stroke: C.faint, sw: 0.9, dash: '4 5', opacity: 0.55 })
+   360→   360→        this.line(x + (w * i) / 4, y, x + (w * i) / 4, y - h, { stroke: C.faint, sw: 0.9, dash: '4 5', opacity: 0.55 })
+   361→   361→      }
+   362→   362→    }
+   363→   363→    o.xticks?.forEach(([fx, label]) => {
+   364→   364→      const tx = x + fx * w
+   365→   365→      this.line(tx, y, tx, y + 6, { stroke: C.sub, sw: 1.8 })
+   366→   366→      if (label) this.ctext(tx, y + 22, label, { size: 13, fill: C.mute })
+   367→   367→    })
+   368→   368→    o.yticks?.forEach(([fy, label]) => {
+   369→   369→      const ty = y - fy * h
+   370→   370→      this.line(x - 6, ty, x, ty, { stroke: C.sub, sw: 1.8 })
+   371→   371→      if (label) this.text(x - 10, ty + 4, label, { size: 13, fill: C.mute, anchor: 'end' })
+   372→   372→    })
+   373→   373→    if (o.xlabel) this.ctext(x + w / 2, y + 44, o.xlabel, { size: 15, weight: 600, fill: C.sub })
+   374→   374→    if (o.ylabel) this.ctext(x - 46, y - h / 2, o.ylabel, { size: 15, weight: 600, fill: C.sub })
+   375→   375→    if (o.title) this.ctext(x + w / 2, y - h - 12, o.title, { size: 16, weight: 700, fill: C.ink })
+   376→   376→    return this
+   377→   377→  }
+   378→   378→
+   379→   379→  /** axis 内画数据曲线（归一化坐标 [0..1]²；pts 绝对像素亦可） */
+   380→   380→  curve(ax: number, ay: number, aw: number, ah: number, pts: Array<[number, number]>, o: LineOpt & { smooth?: boolean; label?: string; labelAt?: [number, number] } = {}): this {
+   381→   381→    const px = pts.map(([fx, fy]): [number, number] => [ax + fx * aw, ay - fy * ah])
+   382→   382→    const d = o.smooth ? catmullRom(px) : px.map((p, i) => `${i === 0 ? 'M' : 'L'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ')
+   383→   383→    this.path(d, { fill: 'none', stroke: o.stroke ?? C.dna, sw: o.sw ?? 3, dash: o.dash, marker: o.marker })
+   384→   384→    if (o.label) {
+   385→   385→      const at = o.labelAt ?? pts[pts.length - 1]
+   386→   386→      this.text(ax + at[0] * aw + 8, ay - at[1] * ah, o.label, { size: 14, weight: 700, fill: o.stroke ?? C.dna })
+   387→   387→    }
+   388→   388→    return this
+   389→   389→  }
+   390→   390→
+   391→   391→  /** 柱状图（y 为基线；values 归一化到 max） */
+   392→   392→  bars(x: number, y: number, w: number, h: number, values: number[], o: { labels?: string[]; fill?: string; stroke?: string; max?: number; vlabels?: string[] } = {}): this {
+   393→   393→    const max = o.max ?? Math.max(...values) * 1.15
+   394→   394→    const bw = w / values.length
+   395→   395→    values.forEach((v, i) => {
+   396→   396→      const bh = (v / max) * h
+   397→   397→      this.rect(x + i * bw + bw * 0.18, y - bh, bw * 0.64, bh, { fill: o.fill ?? C.dnaL, stroke: o.stroke ?? C.dna, sw: 1.6, rx: 4 })
+   398→   398→      if (o.vlabels?.[i]) this.ctext(x + i * bw + bw / 2, y - bh - 9, o.vlabels[i], { size: 12.5, weight: 600, fill: C.sub })
+   399→   399→      if (o.labels?.[i]) this.ctext(x + i * bw + bw / 2, y + 20, o.labels[i], { size: 12.5, fill: C.mute })
+   400→   400→    })
+   401→   401→    return this
+   402→   402→  }
+   403→   403→
+   404→   404→  /** 对照表（headers + rows；返回底边 y） */
+   405→   405→  table(x: number, y: number, w: number, o: {
+   406→   406→    headers: string[]; rows: string[][]; title?: string; rowH?: number; colW?: number[]
+   407→   407→    headFill?: string; fontSize?: number; headFillTxt?: string; zebra?: boolean
+   408→   408→  } = {}): number {
+   409→   409→    const ncol = o.headers.length
+   410→   410→    const rowH = o.rowH ?? 42
+   411→   411→    const fs = o.fontSize ?? 14
+   412→   412→    const headFill = o.headFill ?? C.panelB
+   413→   413→    const colW = o.colW ?? Array(ncol).fill(w / ncol)
+   414→   414→    const headH = 44
+   415→   415→    if (o.title) this.ctext(x + w / 2, y - 12, o.title, { size: 17, weight: 700, fill: C.ink })
+   416→   416→    let cx = x
+   417→   417→    o.headers.forEach((hd, i) => {
+   418→   418→      this.rect(cx, y, colW[i], headH, { fill: headFill, stroke: C.faint, sw: 1.3 })
+   419→   419→      this.ctext(cx + colW[i] / 2, y + headH / 2 + 5.5, hd, { size: fs + 1, weight: 700, fill: C.ink })
+   420→   420→      cx += colW[i]
+   421→   421→    })
+   422→   422→    o.rows.forEach((row, ri) => {
+   423→   423→      const ry = y + headH + ri * rowH
+   424→   424→      if (o.zebra !== false && ri % 2 === 1) this.rect(x, ry, w, rowH, { fill: '#f8fafc', fillOp: 0.85 })
+   425→   425→      let rx = x
+   426→   426→      row.forEach((cell, ci) => {
+   427→   427→        this.rect(rx, ry, colW[ci], rowH, { stroke: C.faint, sw: 1.3 })
+   428→   428→        this.ctext(rx + colW[ci] / 2, ry + rowH / 2 + 5.5, cell, { size: fs, weight: ci === 0 ? 700 : 500, fill: ci === 0 ? C.ink : C.sub })
+   429→   429→        rx += colW[ci]
+   430→   430→      })
+   431→   431→    })
+   432→   432→    return y + headH + o.rows.length * rowH
+   433→   433→  }
+   434→   434→
+   435→   435→  /** 水平时间线（events.at ∈ [0,1]；above 上/下方交错） */
+   436→   436→  timelineH(x: number, y: number, w: number, events: Array<{ at: number; label: string; sub?: string; above?: boolean; c?: string }>, o: { title?: string } = {}): this {
+   437→   437→    if (o.title) this.ctext(x + w / 2, y - 34, o.title, { size: 16, weight: 700, fill: C.ink })
+   438→   438→    this.line(x, y, x + w, y, { stroke: C.sub, sw: 3, marker: 'ink' })
+   439→   439→    events.forEach(ev => {
+   440→   440→      const ex = x + ev.at * w
+   441→   441→      const ec = ev.c ?? C.bad
+   442→   442→      this.circle(ex, y, 6.5, { fill: ec })
+   443→   443→      const dir = ev.above ? -1 : 1
+   444→   444→      this.line(ex, y + dir * 9, ex, y + dir * 30, { stroke: ec, sw: 1.7 })
+   445→   445→      this.ctext(ex, y + dir * 50, ev.label, { size: 14, weight: 700, fill: C.ink })
+   446→   446→      if (ev.sub) this.ctext(ex, y + dir * 70, ev.sub, { size: 12, fill: C.mute })
+   447→   447→    })
+   448→   448→    return this
+   449→   449→  }
+   450→   450→
+   451→   451→  /** 离子/小分子球 */
+   452→   452→  ion(cx: number, cy: number, label: string, o: { r?: number; fill?: string; stroke?: string; tfill?: string; size?: number } = {}): this {
+   453→   453→    const r = o.r ?? 16
+   454→   454→    this.circle(cx, cy, r, { fill: o.fill ?? C.warnL, stroke: o.stroke ?? C.warn, sw: 1.6 })
+   455→   455→    this.ctext(cx, cy + (o.size ?? 14) * 0.36, label, { size: o.size ?? 14, weight: 700, fill: o.tfill ?? '#78350f' })
+   456→   456→    return this
+   457→   457→  }
+   458→   458→
+   459→   459→  /** 磷脂双层条带 */
+   460→   460→  bilayer(x: number, y: number, w: number, o: { h?: number; tint?: string; op?: number } = {}): this {
+   461→   461→    const h = o.h ?? 13
+   462→   462→    const tint = o.tint ?? C.dna
+   463→   463→    const step = 24
+   464→   464→    const n = Math.floor(w / step)
+   465→   465→    const parts: string[] = []
+   466→   466→    for (let i = 0; i <= n; i++) {
+   467→   467→      const px = x + i * step
+   468→   468→      parts.push(`<circle cx="${px}" cy="${y}" r="5.5" fill="${tint}" fill-opacity="${o.op ?? 0.85}"/>`)
+   469→   469→      parts.push(`<line x1="${px}" y1="${y + 4}" x2="${px}" y2="${y + h - 4}" stroke="${tint}" stroke-width="1.5" stroke-opacity="0.7"/>`)
+   470→   470→      parts.push(`<circle cx="${px}" cy="${y + h}" r="5.5" fill="${tint}" fill-opacity="${o.op ?? 0.85}"/>`)
+   471→   471→    }
+   472→   472→    this.els.push(`<g>${parts.join('')}</g>`)
+   473→   473→    return this
+   474→   474→  }
+   475→   475→
+   476→   476→  /** 膜囊泡（coat 可选 'clathrin'|'cop'） */
+   477→   477→  vesicle(cx: number, cy: number, r: number, o: ShapeOpt & { label?: string; double?: boolean; coat?: 'clathrin' | 'cop' | null; lsize?: number } = {}): this {
+   478→   478→    this.circle(cx, cy, r, { fill: o.fill ?? C.bg, stroke: o.stroke ?? C.dna, sw: 2.4 })
+   479→   479→    if (o.double) this.circle(cx, cy, r - 6, { stroke: (o.stroke ?? C.dna), sw: 1.2, opacity: 0.65 })
+   480→   480→    if (o.coat === 'clathrin') this.circle(cx, cy, r + 7, { stroke: C.warn, sw: 1.9, dash: '5 4' })
+   481→   481→    else if (o.coat === 'cop') this.circle(cx, cy, r + 7, { stroke: C.bad, sw: 1.9, dash: '5 4' })
+   482→   482→    if (o.label) this.ctext(cx, cy + (o.lsize ?? 13.5) * 0.36, o.label, { size: o.lsize ?? 13.5, weight: 600, fill: C.ink })
+   483→   483→    return this
+   484→   484→  }
+   485→   485→
+   486→   486→  /** 细胞核（核仁 + 染色质纹） */
+   487→   487→  nucleusU(cx: number, cy: number, r: number, o: { label?: string; fill?: string; stroke?: string } = {}): this {
+   488→   488→    this.circle(cx, cy, r, { fill: o.fill ?? C.proL, fillOp: 0.9, stroke: o.stroke ?? C.pro, sw: 2.2 })
+   489→   489→    this.circle(cx + r * 0.35, cy - r * 0.25, r * 0.22, { fill: o.stroke ?? C.pro, fillOp: 0.4 })
+   490→   490→    for (let i = 0; i < 3; i++) {
+   491→   491→      const a = 0.6 + i * 1.9
+   492→   492→      this.path(`M ${cx - r * 0.7 * Math.cos(a)},${cy + r * 0.55 * Math.sin(a)} q ${r * 0.3},${-r * 0.25} ${r * 0.6},0`, { stroke: o.stroke ?? C.pro, sw: 1.8, opacity: 0.45 })
+   493→   493→    }
+   494→   494→    if (o.label) this.ctext(cx, cy + r + 22, o.label, { size: 13.5, weight: 700, fill: o.stroke ?? C.pro })
+   495→   495→    return this
+   496→   496→  }
+   497→   497→
+   498→   498→  /** 线粒体（嵴） */
+   499→   499→  mito(cx: number, cy: number, w: number, h: number, o: { label?: string; fill?: string; stroke?: string } = {}): this {
+   500→   500→    const rx = w / 2; const ry = h / 2
+   501→   501→    const st = o.stroke ?? C.warn
+   502→   502→    this.ellipse(cx, cy, rx, ry, { fill: o.fill ?? '#ffedd5', stroke: st, sw: 2.4 })
+   503→   503→    const n = Math.max(3, Math.floor(w / 32))
+   504→   504→    let d = ''
+   505→   505→    for (let i = 0; i < n; i++) {
+   506→   506→      const px = cx - rx + 14 + (i * (w - 28)) / (n - 1)
+   507→   507→      d += `M ${px - 7},${cy - ry * 0.55} L ${px},${cy} L ${px + 7},${cy - ry * 0.55} `
+   508→   508→    }
+   509→   509→    this.path(d, { stroke: st, sw: 1.8, opacity: 0.8 })
+   510→   510→    if (o.label) this.ctext(cx, cy + ry + 20, o.label, { size: 13.5, weight: 700, fill: st })
+   511→   511→    return this
+   512→   512→  }
+   513→   513→
+   514→   514→  /** 内质网（波浪 + 核糖体点） */
+   515→   515→  erU(x: number, y: number, w: number, h: number, o: { ribo?: boolean; label?: string; stroke?: string } = {}): this {
+   516→   516→    const n = Math.max(4, Math.floor(w / 56))
+   517→   517→    const amp = h * 0.3
+   518→   518→    const st = o.stroke ?? C.dna
+   519→   519→    let d = `M ${x},${y}`
+   520→   520→    const step = w / n
+   521→   521→    for (let i = 0; i < n; i++) d += ` q ${step / 2},${i % 2 === 0 ? -amp * 2 : amp * 2} ${step},0`
+   522→   522→    this.path(d, { stroke: st, sw: 4.4, opacity: 0.75 })
+   523→   523→    if (o.ribo !== false) {
+   524→   524→      for (let i = 0; i <= n * 2; i++) {
+   525→   525→        const px = x + (i * step) / 2
+   526→   526→        const py = y + (i % 2 === 0 ? -amp * 1.1 - 5 : amp * 0.4 + 2)
+   527→   527→        this.circle(px, py, 3.1, { fill: C.bad })
+   528→   528→      }
+   529→   529→    }
+   530→   530→    if (o.label) this.ctext(x + w / 2, y - h - 6, o.label, { size: 13.5, weight: 700, fill: st })
+   531→   531→    return this
+   532→   532→  }
+   533→   533→
+   534→   534→  /** 高尔基体（叠层囊） */
+   535→   535→  golgi(cx: number, y: number, w: number, o: { label?: string; layers?: number; stroke?: string } = {}): this {
+   536→   536→    const layers = o.layers ?? 5
+   537→   537→    const st = o.stroke ?? C.acc
+   538→   538→    for (let i = 0; i < layers; i++) {
+   539→   539→      const lw = w * (0.42 + (0.58 * i) / (layers - 1))
+   540→   540→      const ly = y + i * 13
+   541→   541→      this.path(`M ${cx - lw / 2},${ly} q ${lw / 4},${i % 2 === 0 ? -14 : 14} ${lw / 2},0 q ${lw / 4},${i % 2 === 0 ? 14 : -14} ${lw / 2},0`, { fill: i % 2 === 0 ? '#e0f2fe' : C.bg, fillOp: 0.9, stroke: st, sw: 2 })
+   542→   542→    }
+   543→   543→    if (o.label) this.ctext(cx, y + layers * 13 + 22, o.label, { size: 13.5, weight: 700, fill: st })
+   544→   544→    return this
+   545→   545→  }
+
+[showing lines 46-545 of 786; use offset=546 with limit to continue reading]

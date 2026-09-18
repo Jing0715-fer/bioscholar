@@ -96,10 +96,10 @@ const draw = (b: B) => {
 
   // 左：1/√N 曲线
   b.axis(100, 936, 540, 158, {
-    ylabel: '相对误差',
     xticks: [[0, '1'], [0.25, '10'], [0.5, '10²'], [0.75, '10³'], [1, '10⁴']],
     yticks: [[0, '0'], [0.5, '50%'], [1, '100%']],
   })
+  b.ctext(54, 810, '相对误差', { size: 13, weight: 600, fill: C.sub })
   const pois: [number, number][] = []
   for (let i = 0; i <= 40; i++) {
     const fx = i / 40

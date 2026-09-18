@@ -35,7 +35,8 @@ const draw = (b: B) => {
   b.text(60, 352, 'gal', { size: 11, fill: C.mute })
   b.text(640, 352, 'bio', { size: 11, fill: C.mute, anchor: 'end' })
   b.wtext(60, 398, '保守性重组：不依赖 RecA 与大范围同源、不伴随 DNA 净合成；能量来自磷酸二酯键的断裂-再连接转移，不需 ATP。', { size: 11.5, fill: C.sub, maxW: 610, lh: 16 })
-  b.text(466, 192, 'Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，用于条件性基因敲除（第 11 章）', { size: 10.5, fill: C.mute })
+  b.text(430, 304, 'Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，', { size: 10.5, fill: C.mute })
+  b.text(430, 320, '用于条件性基因敲除（第 11 章）', { size: 10.5, fill: C.mute })
 
   // ============ 二、细菌转座子三类 ============
   b.panel(710, 132, 660, 296, { title: '二、细菌转座子的三种组织' })

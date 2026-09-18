@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">脂肪酸的从头合成：ACC 限速与 FAS 七轮循环</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">胞质进行：乙酰CoA 经柠檬酸-丙酮酸穿梭出线粒体，ACC（生物素）产丙二酰CoA 为二碳供体，FAS 四步循环 7 轮耗 14 NADPH 产棕榈酸；人体缺 Δ12/Δ15 去饱和酶故亚油酸、α-亚麻酸为必需脂肪酸</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">脂肪酸的从头合成：ACC 限速与 FAS 七轮循环</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">胞质进行：乙酰CoA经柠檬酸-丙酮酸穿梭出线粒体，ACC（生物素）产丙二酰CoA为二碳供体，FAS四步循环7轮耗14NADPH产棕榈酸；人体缺Δ12/Δ15去饱和酶故亚油酸、</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">α-亚麻酸为必需脂肪酸</text>
   <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、原料准备与限速反应：乙酰CoA 羧化酶（ACC）</text>
   <rect x="46" y="172" width="618" height="150" rx="10" fill="#f1f5f9" fill-opacity="0.5"/>
@@ -63,12 +64,12 @@
   <line x1="1036" y1="400" x2="1002" y2="400" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
   <line x1="890" y1="342" x2="890" y2="306" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
   <text x="1020" y="320" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">× 7 轮</text>
-  <line x1="998" y1="232" x2="1212" y2="196" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
-  <rect x="1057.1475" y="227.075" width="85.705" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
-  <text x="1100" y="239.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="600">硫酯酶水解释放</text>
-  <rect x="1216" y="168" width="132" height="40" rx="8" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.8"/>
-  <text x="1282" y="186" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">棕榈酸</text>
-  <text x="1282" y="200" font-size="10" fill="#64748b" text-anchor="middle">（16:0）</text>
+  <line x1="890" y1="214" x2="1238" y2="186" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="1057.1475" y="193.075" width="85.705" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1100" y="205.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="600">硫酯酶水解释放</text>
+  <rect x="1240" y="164" width="114" height="44" rx="8" fill="#d1fae5" fill-opacity="0.6" stroke="#059669" stroke-width="1.8"/>
+  <text x="1297" y="183" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">棕榈酸</text>
+  <text x="1297" y="199" font-size="10" fill="#64748b" text-anchor="middle">（16:0）</text>
   <rect x="726" y="452" width="620" height="62" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
   <text x="742" y="474" font-size="11" fill="#1e293b" font-weight="700">总反应：8 乙酰CoA + 7 ATP + 14 NADPH + 14 H⁺ → 棕榈酸 + 8 CoA + 7 ADP + 7 Pi + 14 NADP⁺ + 6 H₂O</text>
   <text x="726" y="532" font-size="10.5" fill="#64748b">部位：胞质。与 β 氧化互为开关：丙二酰CoA 抑制 CPT-I，关掉「氧化门」。</text>

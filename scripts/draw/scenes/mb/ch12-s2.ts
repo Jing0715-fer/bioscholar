@@ -78,7 +78,8 @@ const draw = (b: B) => {
   b.ctext(1292, 516, 'c-myc', { size: 9.5, weight: 700, fill: C.dnaD })
   b.arrow(1226, 512, 1260, 512, { stroke: C.bad, sw: 2, marker: 'bad' })
   b.ctext(1243, 538, '激活', { size: 8.5, weight: 700, fill: C.bad })
-  b.wtext(1059, 570, '不含 onc 的逆转录病毒（ALV）随机整合，前病毒 LTR 充当启动子 / 增强子激活旁侧原癌基因——插入诱变是发现新癌基因的遗传学工具。', { size: 10.5, fill: C.sub, maxW: 296, lh: 15 })
+  b.wtext(1059, 570, '不含 onc 的逆转录病毒（ALV）随机整合，前病毒 LTR 充当启动子 / 增强子激活旁侧原癌基因', { size: 10.5, fill: C.sub, maxW: 296, lh: 15 })
+  b.wtext(1059, 600, '——插入诱变是发现新癌基因的遗传学工具。', { size: 10.5, fill: C.sub, maxW: 296, lh: 15 })
   b.wtext(1059, 645, '与转导（RSV 捕获 c-src 成 v-src）同为逆转录病毒的激活路线——两条路线殊途同归。', { size: 10.5, fill: C.sub, maxW: 296, lh: 15 })
 
   // ============ 三、靶向治疗的逻辑起点 ============

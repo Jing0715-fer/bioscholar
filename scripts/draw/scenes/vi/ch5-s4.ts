@@ -18,7 +18,7 @@ const draw = (b: B) => {
 
   // ============ 二、两次链转移与 LTR 形成 ============
   b.panel(710, 132, 660, 430, { title: '二、两次链转移：把 U3-R-U5 复制成两端 LTR' })
-  b.text(730, 190, '基因组 RNA 的地标：', { size: 11.5, weight: 700, fill: C.ink })
+  b.text(730, 178, '基因组 RNA 的地标：', { size: 11.5, weight: 700, fill: C.ink })
   const marks: [string, number, string][] = [
     ['R·U5', 730, C.rna], ['PBS', 830, C.pro], ['（基因区）', 900, C.mute], ['PPT', 1150, C.pro], ['U3·R', 1250, C.rna],
   ]
@@ -77,7 +77,7 @@ const draw = (b: B) => {
   // ============ 四、原病毒、ERV 与药靶 ============
   b.panel(710, 586, 660, 394, { title: '四、原病毒的遗产：ERV、药靶与工具酶' })
   b.rect(730, 646, 600, 26, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 13 })
-  b.ctext(1030, 664, '宿主染色体', { size: 11.5, weight: 700, fill: C.proD })
+  b.ctext(845, 664, '宿主染色体', { size: 11.5, weight: 700, fill: C.proD })
   b.rect(960, 640, 140, 38, { fill: C.badL, stroke: C.bad, sw: 2 })
   b.ctext(1030, 656, '原病毒', { size: 11.5, weight: 700, fill: C.bad })
   b.ctext(915, 660, 'LTR', { size: 9.5, weight: 700, fill: C.dnaD })

@@ -1,166 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950" font-family="Noto Serif SC, LXGW WenKai, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
   <defs>
-    <marker id="arrS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
-    </marker>
-    <marker id="arrE" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#059669"/>
-    </marker>
-    <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
-    </marker>
-    <marker id="arrR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#e11d48"/>
-    </marker>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
-
-  <rect x="0" y="0" width="1500" height="950" fill="#ffffff"/>
-  <text x="750" y="56" text-anchor="middle" font-size="34" font-weight="700" fill="#1e293b">静息膜电位的离子基础</text>
-  <text x="750" y="92" text-anchor="middle" font-size="19" fill="#64748b">离子分布不均 + K⁺ 漏通道外流 + Na⁺/K⁺-ATP 酶生电性泵 → 外正内负 ≈ −70 mV</text>
-
-  <!-- ==================== 细胞外液区域 ==================== -->
-  <rect x="60" y="120" width="1380" height="330" fill="#fef3c7" fill-opacity="0.30"/>
-  <text x="92" y="156" font-size="21" font-weight="700" fill="#92400e">细胞外液（组织液 / 血浆）</text>
-  <text x="92" y="184" font-size="17" fill="#a16207">高 Na⁺ · 高 Cl⁻ · 低 K⁺</text>
-
-  <!-- 胞外 Na+（金色） -->
-  <g font-size="17" font-weight="700">
-    <g transform="translate(240,240)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(320,300)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(400,235)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(490,315)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(580,245)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(660,320)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(1150,245)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(1230,315)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(1310,240)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-    <g transform="translate(1380,300)"><circle r="17" fill="#fbbf24" fill-opacity="0.9" stroke="#b45309" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#78350f">Na⁺</text></g>
-  </g>
-  <!-- 胞外 Cl-（石板灰） -->
-  <g font-size="16" font-weight="700">
-    <g transform="translate(270,360)"><circle r="17" fill="#cbd5e1" fill-opacity="0.95" stroke="#475569" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#1e293b">Cl⁻</text></g>
-    <g transform="translate(430,370)"><circle r="17" fill="#cbd5e1" fill-opacity="0.95" stroke="#475569" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#1e293b">Cl⁻</text></g>
-    <g transform="translate(610,375)"><circle r="17" fill="#cbd5e1" fill-opacity="0.95" stroke="#475569" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#1e293b">Cl⁻</text></g>
-    <g transform="translate(1180,365)"><circle r="17" fill="#cbd5e1" fill-opacity="0.95" stroke="#475569" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#1e293b">Cl⁻</text></g>
-    <g transform="translate(1345,370)"><circle r="17" fill="#cbd5e1" fill-opacity="0.95" stroke="#475569" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#1e293b">Cl⁻</text></g>
-    <g transform="translate(960,300)"><circle r="17" fill="#cbd5e1" fill-opacity="0.95" stroke="#475569" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#1e293b">Cl⁻</text></g>
-  </g>
-  <!-- 胞外少量 K+ -->
-  <g font-size="16" font-weight="700">
-    <g transform="translate(350,250)"><circle r="17" fill="#6ee7b7" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(1290,330)"><circle r="17" fill="#6ee7b7" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-  </g>
-
-  <!-- ==================== 磷脂双分子层（膜） ==================== -->
-  <g>
-    <!-- 上层头部 -->
-    <g fill="#2dd4bf" fill-opacity="0.75">
-      <circle cx="100" cy="450" r="10"/><circle cx="140" cy="450" r="10"/><circle cx="180" cy="450" r="10"/><circle cx="220" cy="450" r="10"/><circle cx="260" cy="450" r="10"/><circle cx="300" cy="450" r="10"/><circle cx="340" cy="450" r="10"/><circle cx="380" cy="450" r="10"/><circle cx="420" cy="450" r="10"/><circle cx="460" cy="450" r="10"/><circle cx="500" cy="450" r="10"/><circle cx="540" cy="450" r="10"/><circle cx="580" cy="450" r="10"/><circle cx="620" cy="450" r="10"/><circle cx="660" cy="450" r="10"/><circle cx="700" cy="450" r="10"/><circle cx="740" cy="450" r="10"/><circle cx="780" cy="450" r="10"/><circle cx="820" cy="450" r="10"/><circle cx="860" cy="450" r="10"/><circle cx="900" cy="450" r="10"/><circle cx="940" cy="450" r="10"/><circle cx="980" cy="450" r="10"/><circle cx="1020" cy="450" r="10"/><circle cx="1060" cy="450" r="10"/><circle cx="1100" cy="450" r="10"/><circle cx="1140" cy="450" r="10"/><circle cx="1180" cy="450" r="10"/><circle cx="1220" cy="450" r="10"/><circle cx="1260" cy="450" r="10"/><circle cx="1300" cy="450" r="10"/><circle cx="1340" cy="450" r="10"/><circle cx="1380" cy="450" r="10"/><circle cx="1420" cy="450" r="10"/>
-    </g>
-    <!-- 尾部（竖线带弯） -->
-    <g stroke="#64748b" stroke-width="3" stroke-linecap="round">
-      <line x1="100" y1="460" x2="100" y2="540"/><line x1="140" y1="460" x2="140" y2="540"/><line x1="180" y1="460" x2="180" y2="540"/><line x1="220" y1="460" x2="220" y2="540"/><line x1="260" y1="460" x2="260" y2="540"/><line x1="300" y1="460" x2="300" y2="540"/><line x1="340" y1="460" x2="340" y2="540"/><line x1="380" y1="460" x2="380" y2="540"/><line x1="420" y1="460" x2="420" y2="540"/><line x1="460" y1="460" x2="460" y2="540"/><line x1="500" y1="460" x2="500" y2="540"/><line x1="540" y1="460" x2="540" y2="540"/><line x1="580" y1="460" x2="580" y2="540"/><line x1="620" y1="460" x2="620" y2="540"/><line x1="660" y1="460" x2="660" y2="540"/><line x1="700" y1="460" x2="700" y2="540"/><line x1="740" y1="460" x2="740" y2="540"/><line x1="780" y1="460" x2="780" y2="540"/><line x1="820" y1="460" x2="820" y2="540"/><line x1="860" y1="460" x2="860" y2="540"/><line x1="900" y1="460" x2="900" y2="540"/><line x1="940" y1="460" x2="940" y2="540"/><line x1="980" y1="460" x2="980" y2="540"/><line x1="1020" y1="460" x2="1020" y2="540"/><line x1="1060" y1="460" x2="1060" y2="540"/><line x1="1100" y1="460" x2="1100" y2="540"/><line x1="1140" y1="460" x2="1140" y2="540"/><line x1="1180" y1="460" x2="1180" y2="540"/><line x1="1220" y1="460" x2="1220" y2="540"/><line x1="1260" y1="460" x2="1260" y2="540"/><line x1="1300" y1="460" x2="1300" y2="540"/><line x1="1340" y1="460" x2="1340" y2="540"/><line x1="1380" y1="460" x2="1380" y2="540"/><line x1="1420" y1="460" x2="1420" y2="540"/>
-    </g>
-    <!-- 下层头部 -->
-    <g fill="#f59e0b" fill-opacity="0.80">
-      <circle cx="100" cy="550" r="10"/><circle cx="140" cy="550" r="10"/><circle cx="180" cy="550" r="10"/><circle cx="220" cy="550" r="10"/><circle cx="260" cy="550" r="10"/><circle cx="300" cy="550" r="10"/><circle cx="340" cy="550" r="10"/><circle cx="380" cy="550" r="10"/><circle cx="420" cy="550" r="10"/><circle cx="460" cy="550" r="10"/><circle cx="500" cy="550" r="10"/><circle cx="540" cy="550" r="10"/><circle cx="580" cy="550" r="10"/><circle cx="620" cy="550" r="10"/><circle cx="660" cy="550" r="10"/><circle cx="700" cy="550" r="10"/><circle cx="740" cy="550" r="10"/><circle cx="780" cy="550" r="10"/><circle cx="820" cy="550" r="10"/><circle cx="860" cy="550" r="10"/><circle cx="900" cy="550" r="10"/><circle cx="940" cy="550" r="10"/><circle cx="980" cy="550" r="10"/><circle cx="1020" cy="550" r="10"/><circle cx="1060" cy="550" r="10"/><circle cx="1100" cy="550" r="10"/><circle cx="1140" cy="550" r="10"/><circle cx="1180" cy="550" r="10"/><circle cx="1220" cy="550" r="10"/><circle cx="1260" cy="550" r="10"/><circle cx="1300" cy="550" r="10"/><circle cx="1340" cy="550" r="10"/><circle cx="1380" cy="550" r="10"/><circle cx="1420" cy="550" r="10"/>
-    </g>
-    <text x="1448" y="456" font-size="16" fill="#475569" text-anchor="middle">膜</text>
-    <text x="1448" y="548" font-size="16" fill="#475569" text-anchor="middle">磷脂双层</text>
-  </g>
-
-  <!-- ==================== K+ 漏通道 ==================== -->
-  <g transform="translate(430,500)">
-    <!-- 通道蛋白（跨膜桶状） -->
-    <path d="M-38,-52 C-30,-14 -30,14 -38,52 L38,52 C30,14 30,-14 38,-52 Z" fill="#a7f3d0" fill-opacity="0.85" stroke="#047857" stroke-width="2.5"/>
-    <path d="M-14,-52 C-8,-20 -8,20 -14,52" fill="none" stroke="#047857" stroke-width="2"/>
-    <path d="M14,-52 C8,-20 8,20 14,52" fill="none" stroke="#047857" stroke-width="2"/>
-    <text x="0" y="86" text-anchor="middle" font-size="19" font-weight="700" fill="#047857">K⁺ 漏通道（孔道开放）</text>
-    <text x="0" y="112" text-anchor="middle" font-size="15" fill="#64748b">膜对 K⁺ 的本底通透性最高</text>
-    <!-- K+ 正在通过（向上外流） -->
-    <g transform="translate(0,-18)">
-      <circle r="15" fill="#6ee7b7" fill-opacity="0.95" stroke="#047857" stroke-width="1.8"/>
-      <text y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#064e3b">K⁺</text>
-    </g>
-    <line x1="0" y1="42" x2="0" y2="-6" stroke="#047857" stroke-width="3" marker-end="url(#arrE)"/>
-    <text x="64" y="-26" font-size="16" fill="#047857">K⁺ 顺浓度梯度外流</text>
-    <text x="64" y="-4" font-size="15" fill="#64748b">（正电荷净外移）</text>
-  </g>
-
-  <!-- ==================== Na+/K+ ATP 酶 ==================== -->
-  <g transform="translate(1010,500)">
-    <!-- 泵蛋白 -->
-    <path d="M-58,-56 C-48,-16 -48,16 -58,56 L58,56 C48,16 48,-56 58,-56 Z" fill="#fecaca" fill-opacity="0.7" stroke="#b91c1c" stroke-width="2.5"/>
-    <ellipse cx="0" cy="-20" rx="30" ry="16" fill="#ef4444" fill-opacity="0.30" stroke="#b91c1c" stroke-width="1.5"/>
-    <text x="0" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#b91c1c">Na⁺/K⁺-ATP 酶</text>
-    <text x="0" y="114" text-anchor="middle" font-size="15" fill="#64748b">每水解 1 ATP 泵出 3 Na⁺、泵入 2 K⁺</text>
-    <!-- 3 Na+ 出（向上箭头） -->
-    <line x1="-34" y1="-30" x2="-34" y2="-104" stroke="#b45309" stroke-width="3.5" marker-end="url(#arrA)"/>
-    <line x1="-8" y1="-30" x2="-8" y2="-104" stroke="#b45309" stroke-width="3.5" marker-end="url(#arrA)"/>
-    <line x1="18" y1="-30" x2="18" y2="-104" stroke="#b45309" stroke-width="3.5" marker-end="url(#arrA)"/>
-    <text x="-12" y="-128" text-anchor="middle" font-size="17" font-weight="700" fill="#b45309">3 Na⁺ 泵出</text>
-    <!-- 2 K+ 入（向下箭头） -->
-    <line x1="-18" y1="34" x2="-18" y2="108" stroke="#047857" stroke-width="3.5" marker-end="url(#arrE)"/>
-    <line x1="12" y1="34" x2="12" y2="108" stroke="#047857" stroke-width="3.5" marker-end="url(#arrE)"/>
-    <text x="106" y="66" font-size="17" font-weight="700" fill="#047857">2 K⁺ 泵入</text>
-    <!-- ATP -->
-    <g transform="translate(-88,-46)">
-      <ellipse cx="0" cy="0" rx="30" ry="17" fill="#fde68a" stroke="#b45309" stroke-width="1.8"/>
-      <text y="6" text-anchor="middle" font-size="16" font-weight="700" fill="#78350f">ATP</text>
-      <text x="-6" y="40" font-size="14" fill="#64748b">磷酸化供能</text>
-    </g>
-    <text x="150" y="-40" font-size="15" fill="#64748b">净外移 1 个正电荷</text>
-    <text x="150" y="-18" font-size="15" fill="#64748b">→ 生电性泵</text>
-  </g>
-
-  <!-- ==================== 细胞质区域 ==================== -->
-  <rect x="60" y="620" width="1380" height="250" fill="#d1fae5" fill-opacity="0.30"/>
-  <text x="92" y="656" font-size="21" font-weight="700" fill="#065f46">细胞质（细胞内液）</text>
-  <text x="92" y="684" font-size="17" fill="#047857">高 K⁺ · 低 Na⁺ · 富含不可通透阴离子 A⁻</text>
-
-  <!-- 胞内 K+（翠绿） -->
-  <g font-size="16" font-weight="700">
-    <g transform="translate(240,740)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(330,800)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(430,745)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(530,810)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(630,748)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(1160,745)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(1250,810)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(1345,748)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-    <g transform="translate(1420,812)"><circle r="17" fill="#34d399" fill-opacity="0.9" stroke="#047857" stroke-width="1.5"/><text y="6" text-anchor="middle" fill="#064e3b">K⁺</text></g>
-  </g>
-  <!-- 胞内 A-（大分子阴离子） -->
-  <g>
-    <g transform="translate(760,780)"><ellipse rx="56" ry="30" fill="#94a3b8" fill-opacity="0.55" stroke="#334155" stroke-width="2"/><text y="7" text-anchor="middle" font-size="19" font-weight="700" fill="#1e293b">A⁻</text></g>
-    <g transform="translate(980,790)"><ellipse rx="56" ry="30" fill="#94a3b8" fill-opacity="0.55" stroke="#334155" stroke-width="2"/><text y="7" text-anchor="middle" font-size="19" font-weight="700" fill="#1e293b">A⁻</text></g>
-    <text x="870" y="856" text-anchor="middle" font-size="15" fill="#475569">蛋白质、磷酸化中间物等（不能透过膜）</text>
-  </g>
-  <!-- 胞内少量 Na+ -->
-  <g transform="translate(180,810)"><circle r="15" fill="#fbbf24" fill-opacity="0.85" stroke="#b45309" stroke-width="1.5"/><text y="5" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">Na⁺</text></g>
-
-  <!-- ==================== 电位计 ==================== -->
-  <g transform="translate(1350,430)">
-    <circle cx="0" cy="0" r="86" fill="#ffffff" stroke="#334155" stroke-width="3"/>
-    <path d="M-58,30 A65,65 0 0 1 58,30" fill="none" stroke="#e11d48" stroke-width="5"/>
-    <!-- 指针指向负区（左上） -->
-    <line x1="0" y1="6" x2="-34" y2="-52" stroke="#1e293b" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="0" cy="6" r="9" fill="#1e293b"/>
-    <text x="-66" y="-34" font-size="20" font-weight="700" fill="#e11d48">−</text>
-    <text x="58" y="-34" font-size="20" font-weight="700" fill="#334155">+</text>
-    <text x="0" y="112" text-anchor="middle" font-size="19" font-weight="700" fill="#334155">静息电位 ≈ −70 mV</text>
-    <text x="0" y="138" text-anchor="middle" font-size="15" fill="#64748b">（膜内相对膜外）</text>
-  </g>
-
-  <!-- 极性标记：膜外+ / 膜内− -->
-  <g font-size="20" font-weight="700" fill="#334155">
-    <text x="70" y="448">+</text><text x="118" y="448">+</text><text x="166" y="448">+</text><text x="214" y="448">+</text><text x="262" y="448">+</text>
-    <text x="70" y="576">−</text><text x="118" y="576">−</text><text x="166" y="576">−</text><text x="214" y="576">−</text><text x="262" y="576">−</text>
-  </g>
-
-  <!-- ==================== 底部注释 ==================== -->
-  <line x1="60" y1="884" x2="1440" y2="884" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="750" y="916" text-anchor="middle" font-size="18" fill="#475569">K⁺ 外流使膜内负电荷积累，电位接近 K⁺ 的 Nernst 平衡电位 E<tspan font-size="13" baseline-shift="sub">K</tspan>（约 −90 mV）；生电性 Na⁺/K⁺ 泵与 Na⁺/Cl⁻ 渗漏把实测值拉升至约 −70 mV</text>
-  <text x="750" y="944" text-anchor="middle" font-size="15" fill="#94a3b8">依据教材静息电位模型绘制（矢量示意图，非 AI 生成）</text>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">静息膜电位的离子基础</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">离子分布不均 + K⁺ 漏通道外流 + Na⁺/K⁺-ATP 酶生电性泵 → 外正内负 ≈ −70 mV</text>
+  <rect x="30" y="146" width="1340" height="268" rx="10" fill="#e0f2fe" fill-opacity="0.4"/>
+  <text x="46" y="176" font-size="16" fill="#075985" font-weight="700">细胞外液（组织液 / 血浆）</text>
+  <text x="46" y="200" font-size="13" fill="#64748b">高 Na⁺ · 高 Cl⁻ · 低 K⁺</text>
+  <rect x="30" y="502" width="1340" height="262" rx="10" fill="#fef3c7" fill-opacity="0.5"/>
+  <text x="46" y="532" font-size="16" fill="#78350f" font-weight="700">细胞质（细胞内液）</text>
+  <text x="46" y="556" font-size="13" fill="#64748b">高 K⁺ · 低 Na⁺ · 富含不可通透阴离子 A⁻（蛋白质、磷酸化中间物）</text>
+  <g><circle cx="30" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="30" y1="432" x2="30" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="30" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="54" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="54" y1="432" x2="54" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="54" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="78" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="78" y1="432" x2="78" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="78" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="102" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="102" y1="432" x2="102" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="102" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="126" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="126" y1="432" x2="126" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="126" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="150" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="150" y1="432" x2="150" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="150" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="174" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="174" y1="432" x2="174" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="174" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="198" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="198" y1="432" x2="198" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="198" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="222" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="222" y1="432" x2="222" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="222" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="246" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="246" y1="432" x2="246" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="246" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="270" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="270" y1="432" x2="270" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="270" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="294" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="294" y1="432" x2="294" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="294" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="318" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="318" y1="432" x2="318" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="318" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="342" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="342" y1="432" x2="342" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="342" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="366" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="366" y1="432" x2="366" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="366" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="390" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="390" y1="432" x2="390" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="390" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="414" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="414" y1="432" x2="414" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="414" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="438" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="438" y1="432" x2="438" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="438" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="462" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="462" y1="432" x2="462" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="462" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="486" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="486" y1="432" x2="486" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="486" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="510" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="510" y1="432" x2="510" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="510" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="534" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="534" y1="432" x2="534" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="534" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="558" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="558" y1="432" x2="558" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="558" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="582" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="582" y1="432" x2="582" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="582" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="606" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="606" y1="432" x2="606" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="606" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="630" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="630" y1="432" x2="630" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="630" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="654" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="654" y1="432" x2="654" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="654" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="678" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="678" y1="432" x2="678" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="678" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="702" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="702" y1="432" x2="702" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="702" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="726" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="726" y1="432" x2="726" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="726" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="750" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="750" y1="432" x2="750" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="750" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="774" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="774" y1="432" x2="774" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="774" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="798" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="798" y1="432" x2="798" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="798" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="822" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="822" y1="432" x2="822" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="822" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="846" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="846" y1="432" x2="846" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="846" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="870" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="870" y1="432" x2="870" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="870" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="894" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="894" y1="432" x2="894" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="894" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="918" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="918" y1="432" x2="918" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="918" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="942" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="942" y1="432" x2="942" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="942" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="966" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="966" y1="432" x2="966" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="966" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="990" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="990" y1="432" x2="990" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="990" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1014" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1014" y1="432" x2="1014" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1014" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1038" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1038" y1="432" x2="1038" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1038" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1062" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1062" y1="432" x2="1062" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1062" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1086" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1086" y1="432" x2="1086" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1086" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1110" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1110" y1="432" x2="1110" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1110" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1134" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1134" y1="432" x2="1134" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1134" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1158" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1158" y1="432" x2="1158" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1158" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1182" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1182" y1="432" x2="1182" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1182" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1206" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1206" y1="432" x2="1206" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1206" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1230" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1230" y1="432" x2="1230" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1230" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1254" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1254" y1="432" x2="1254" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1254" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1278" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1278" y1="432" x2="1278" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1278" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1302" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1302" y1="432" x2="1302" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1302" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1326" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1326" y1="432" x2="1326" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1326" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1350" cy="428" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1350" y1="432" x2="1350" y2="468" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1350" cy="472" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="1382" y="497" font-size="11.5" fill="#64748b" text-anchor="end">膜（磷脂双层）</text>
+  <rect x="352" y="408" width="34" height="84" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <rect x="454" y="408" width="34" height="84" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <rect x="350.872975" y="286.225" width="138.25405" height="19.55" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="420" y="300.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">K⁺ 漏通道（孔道开放）</text>
+  <circle cx="420" cy="496" r="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="420" y="499.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <line x1="420" y1="480" x2="420" y2="452" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <circle cx="420" cy="438" r="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="420" y="441.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <line x1="420" y1="422" x2="420" y2="394" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <circle cx="420" cy="380" r="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="420" y="383.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <line x1="420" y1="364" x2="420" y2="340" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <circle cx="420" cy="326" r="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="420" y="329.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <rect x="740" y="404" width="280" height="92" rx="18" fill="#fce7f3" stroke="#be185d" stroke-width="2.4"/>
+  <text x="880" y="460" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">Na⁺/K⁺-ATP 酶</text>
+  <text x="880" y="484" font-size="10" fill="#475569" text-anchor="middle">ATP → ADP + Pi</text>
+  <line x1="764" y1="498" x2="764" y2="386" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <line x1="790" y1="498" x2="790" y2="386" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <line x1="816" y1="498" x2="816" y2="386" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <circle cx="764" cy="368" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="764" y="371.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="790" cy="368" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="790" y="371.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="816" cy="368" r="11" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="816" y="371.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <text x="790" y="340" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">3 Na⁺ 泵出</text>
+  <line x1="950" y1="386" x2="950" y2="498" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <line x1="990" y1="386" x2="990" y2="498" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <circle cx="950" cy="514" r="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="950" y="517.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="990" cy="514" r="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="990" y="517.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <text x="970" y="544" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">2 K⁺ 泵入</text>
+  <circle cx="80" cy="240" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="80" y="243.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="140" cy="300" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="140" y="303.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="220" cy="250" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="220" y="253.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="300" cy="320" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="300" y="323.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="560" cy="250" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="560" y="253.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="640" cy="310" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="640" y="313.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="700" cy="240" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="700" y="243.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="1120" cy="250" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1120" y="253.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="1200" cy="310" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1200" y="313.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="1280" cy="250" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1280" y="253.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="1330" cy="330" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1330" y="333.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="90" cy="350" r="13" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="90" y="353.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Na⁺</text>
+  <circle cx="60" cy="300" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="60" y="303.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="180" cy="350" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="180" y="353.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="260" cy="300" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="260" y="303.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="600" cy="340" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="600" y="343.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="680" cy="280" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="680" y="283.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="1140" cy="340" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1140" y="343.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="1240" cy="290" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1240" y="293.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="1310" cy="370" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1310" y="373.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="130" cy="240" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="130" y="243.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Cl⁻</text>
+  <circle cx="340" cy="350" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="340" y="353.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="700" cy="390" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="700" y="393.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="1100" cy="380" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1100" y="383.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="100" cy="690" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="100" y="693.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="190" cy="680" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="190" y="683.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="270" cy="700" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="270" y="703.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="560" cy="640" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="560" y="643.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="640" cy="700" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="640" y="703.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="740" cy="660" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="740" y="663.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="1120" cy="640" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1120" y="643.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="1200" cy="690" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1200" y="693.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="1280" cy="630" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1280" y="633.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <circle cx="1330" cy="700" r="13" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1330" y="703.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K⁺</text>
+  <ellipse cx="190" cy="720" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="190" y="725" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">A⁻</text>
+  <ellipse cx="420" cy="690" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="420" y="695" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">A⁻</text>
+  <ellipse cx="660" cy="620" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="660" y="625" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">A⁻</text>
+  <ellipse cx="900" cy="640" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="900" y="645" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">A⁻</text>
+  <ellipse cx="1160" cy="700" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1160" y="705" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">A⁻</text>
+  <ellipse cx="1330" cy="660" rx="30" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1330" y="665" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">A⁻</text>
+  <text x="56" y="600" font-size="11.5" fill="#475569">膜对 K⁺ 的本底通透性最高：</text>
+  <text x="56" y="617" font-size="11.5" fill="#475569">K⁺ 经漏通道顺浓度梯度外流（正电荷净外移）</text>
+  <text x="56" y="634" font-size="11.5" fill="#475569">，膜内侧净负电荷积累。</text>
+  <text x="1110" y="570" font-size="11.5" fill="#475569">每水解 1 ATP 泵出 3 Na⁺、</text>
+  <text x="1110" y="587" font-size="11.5" fill="#475569">泵入 2 K⁺——净外移 1 个正电荷（生电性泵），</text>
+  <text x="1110" y="604" font-size="11.5" fill="#475569">维持离子梯度。</text>
+  <rect x="30" y="786" width="560" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="808.84" font-size="19" fill="#475569" font-weight="700">膜电位标尺（内负外正）</text>
+  <line x1="150" y1="830" x2="150" y2="950" stroke="#475569" stroke-width="2"/>
+  <line x1="142" y1="836" x2="158" y2="836" stroke="#0369a1" stroke-width="3"/>
+  <text x="168" y="840" font-size="12.5" fill="#075985" font-weight="700">0 mV（膜外）</text>
+  <line x1="142" y1="912" x2="158" y2="912" stroke="#dc2626" stroke-width="3"/>
+  <text x="168" y="916" font-size="12.5" fill="#dc2626" font-weight="700">−70 mV（静息电位，膜内）</text>
+  <line x1="142" y1="937" x2="158" y2="937" stroke="#0f766e" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <text x="168" y="941" font-size="12" fill="#0f766e">E_K ≈ −90 mV（K⁺ 平衡电位）</text>
+  <rect x="60" y="836" width="60" height="101" fill="#e0f2fe" fill-opacity="0.5"/>
+  <rect x="60" y="836" width="60" height="76" fill="#fee2e2" fill-opacity="0.6"/>
+  <text x="90" y="826" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">膜</text>
+  <text x="320" y="874" font-size="11.5" fill="#475569">静息电位接近但不等于 E_K：</text>
+  <text x="320" y="891" font-size="11.5" fill="#475569">差值来自 Na⁺ 少量内漏与泵的生电贡献。</text>
+  <rect x="620" y="786" width="750" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="636" y="808.84" font-size="19" fill="#475569" font-weight="700">要点串联</text>
+  <text x="644" y="830" font-size="12.5" fill="#1e293b">① 离子分布不均由 Na⁺/K⁺ 泵维持：胞外高 Na⁺/Cl⁻，胞内高 K⁺ 与不可通透的 A⁻；</text>
+  <text x="644" y="872" font-size="12.5" fill="#1e293b">② K⁺ 漏通道本底通透性最高 → K⁺ 外流建立内负外正的扩散电位；</text>
+  <text x="644" y="914" font-size="12.5" fill="#1e293b">③ 生电性 Na⁺/K⁺-ATP 酶（3:2 比例）叠加泵流——两者共同建立约 −70 mV 静息电位。</text>
 </svg>

@@ -77,7 +77,7 @@ const draw = (b: B) => {
   b.panel(30, 776, 1340, 204, { title: '四、机会致病的条件与微生态干预' })
 
   // 左：机会致病条件
-  b.text(60, 810, '条件致病菌 → 机会感染的三类条件', { size: 12.5, weight: 700, fill: C.ink })
+  b.text(60, 820, '条件致病菌 → 机会感染的三类条件', { size: 12.5, weight: 700, fill: C.ink })
   const conds: Array<[number, string]> = [
     [838, '免疫屏障破损（放化疗、烧伤、老年）'],
     [866, '正常菌群失调（抗生素后生态位空出）'],

@@ -37,7 +37,7 @@ const draw = (b: B) => {
   b.table(1000, 176, 340, {
     headers: ['两态对照', '要点'],
     colW: [130, 210],
-    rowH: 40,
+    rowH: 28,
     fontSize: 11.5,
     rows: [
       ['摄取能力', '高 → 下调'],

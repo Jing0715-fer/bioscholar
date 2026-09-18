@@ -79,7 +79,7 @@ const draw = (b: B) => {
     stroke: C.dna, sw: 2.6, smooth: true,
   })
   b.line(265, 650, 265, 900, { stroke: C.bad, sw: 1.8, dash: '7 5' })
-  b.ctext(265, 634, '错误阈值', { size: 11.5, weight: 700, fill: C.bad })
+  b.text(275, 674, '错误阈值', { size: 11.5, weight: 700, fill: C.bad })
   b.ctext(380, 780, '突变灾难区', { size: 11, weight: 700, fill: C.bad })
   b.wtext(430, 626, '埃根（Eigen）错误阈值：L×μ ≪ 1——基因组越长（L 越大），可容忍的错误率越小。', { size: 11, weight: 700, fill: C.ink, maxW: 240, lh: 16 })
   b.wtext(430, 686, 'RdRp 缺乏校读，错误率高达 10⁻⁶–10⁻⁴：DNA 聚合酶的校读把错误率再压低几个数量级，故 DNA 病毒可达数百 kb。', { size: 10.5, fill: C.sub, maxW: 240, lh: 15 })

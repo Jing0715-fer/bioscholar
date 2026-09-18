@@ -7,10 +7,12 @@ const draw = (b: B) => {
 
   const ax = 70, ay = 352, aw = 560, ah = 175
   b.axis(ax, ay, aw, ah, {
-    xlabel: '温度', ylabel: '相对生长速率',
+    xlabel: '温度',
     xticks: [[0.05, '最低温度'], [0.5, '最适温度'], [0.95, '最高温度']],
     yticks: [[0.05, '低'], [0.5, '中'], [0.95, '高']],
   })
+  // 轴 ylabel 手绘于绘图区左上空白（避开 y 轴中部刻度与左缘）
+  b.text(80, 205, '相对生长速率', { size: 13, weight: 600, fill: C.sub })
   for (const [tx, lab] of [[0.05, '最低'], [0.5, '最适'], [0.95, '最高']] as Array<[number, string]>) {
     b.line(ax + tx * aw, ay, ax + tx * aw, ay - ah, { stroke: C.mute, sw: 1.2, dash: '5 4', opacity: 0.7 })
   }
@@ -18,7 +20,7 @@ const draw = (b: B) => {
     [0.03, 0.02], [0.10, 0.10], [0.18, 0.28], [0.30, 0.62], [0.42, 0.92],
     [0.50, 1.0], [0.58, 0.93], [0.70, 0.62], [0.82, 0.28], [0.90, 0.10], [0.97, 0.02],
   ], { stroke: C.bad, sw: 3 })
-  b.ctext(ax + 0.5 * aw, ay - ah - 16, '钟形曲线：峰即最适温度', { size: 10.5, weight: 700, fill: C.bad })
+  b.ctext(ax + 0.5 * aw, 172, '钟形曲线：峰即最适温度', { size: 10.5, weight: 700, fill: C.bad })
   b.wtext(70, 384, '低于最低温度不生长（代谢停滞）；高于最高温度蛋白质变性加速、死亡超过增殖。', { size: 10.5, fill: C.mute, maxW: 560, lh: 15 })
 
   // 右侧卡片
@@ -35,16 +37,18 @@ const draw = (b: B) => {
   // pH 响应曲线
   const px = 60, py = 592, pw = 300, ph = 128
   b.axis(px, py, pw, ph, {
-    xlabel: 'pH', ylabel: '相对生长速率',
     xticks: [[0.08, 'pH 1'], [0.5, 'pH 7'], [0.92, 'pH 13']],
     yticks: [[0.05, '低'], [0.5, '中'], [0.95, '高']],
   })
+  // 轴 xlabel/ylabel 手绘（左缘截断与刻度冲突，改绘绘图区内空白处）
+  b.text(358, 480, 'pH', { size: 15, weight: 600, fill: C.sub, anchor: 'end' })
+  b.text(65, 480, '相对生长速率', { size: 13, weight: 600, fill: C.sub })
   b.curve(px, py, pw, ph, [
     [0.02, 0.02], [0.15, 0.15], [0.28, 0.5], [0.38, 0.85], [0.48, 1],
     [0.58, 0.85], [0.68, 0.5], [0.8, 0.15], [0.95, 0.02],
   ], { stroke: C.dna, sw: 3 })
   b.ctext(px + 0.48 * pw, py - ph - 14, '多数菌最适近中性', { size: 10.5, weight: 700, fill: C.dnaD })
-  b.wtext(50, 618, '嗜酸菌胞内仍近中性：质子泵与 K⁺/H⁺ 反向转运构成反向离子梯度；生理酸性盐会使培养过程 pH 漂移。', { size: 10, fill: C.mute, maxW: 320, lh: 14 })
+  b.wtext(50, 628, '嗜酸菌胞内仍近中性：质子泵与 K⁺/H⁺ 反向转运构成反向离子梯度；生理酸性盐会使培养过程 pH 漂移。', { size: 10, fill: C.mute, maxW: 320, lh: 14 })
 
   // aw 刻度条
   b.text(370, 462, '水分活度 aw 阈值', { size: 12.5, weight: 700, fill: C.ink })

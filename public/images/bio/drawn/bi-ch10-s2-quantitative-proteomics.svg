@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">定量蛋白质组学：报告离子、DIA 窗口循环与三级工作流</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">iTRAQ/TMT 以报告基团-平衡基团的同量异位设计在 MS1 不可区分、碎裂后以报告离子强度比定量，共洗脱干扰造成比值压缩由 SPS-MS3 缓解；DIA 把质量范围划成固定窗口（如每 25 Da 一档）循环全碎，无随机遗漏可回溯重搜；发现（DDA）、全景定量（DIA）、靶向验证（MRM/PRM）构成三级工作流；AQUA 重标肽段实现绝对定量；mRNA 与蛋白相关性约 0.4–0.6，翻译后缓冲层是两层互补整合的理由</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">定量蛋白质组学：报告离子、DIA 窗口循环与三级工作流</text>
+  <text x="700" y="74" text-anchor="middle" font-size="14" fill="#64748b">iTRAQ/TMT以报告基团-平衡基团的同量异位设计在MS1不可区分、碎裂后以报告离子强度比定量，共洗脱干扰造成比值压缩由SPS-MS3缓解；DIA把质量范围划成固定窗口（如每25Da一档）循环全碎，</text>
+  <text x="700" y="100" text-anchor="middle" font-size="14" fill="#64748b">无随机遗漏可回溯重搜；发现（DDA）、全景定量（DIA）、靶向验证（MRM/PRM）构成三级工作流；AQUA重标肽段实现绝对定量；mRNA与蛋白相关性约0.4–0.6，翻译后缓冲层是两层互补整合的理由</text>
   <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、iTRAQ / TMT：报告离子的同量异位设计</text>
   <text x="125" y="192" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">报告基团</text>
@@ -160,7 +161,9 @@
   <circle cx="1015" cy="748" r="4" fill="#0369a1" fill-opacity="0.6"/>
   <rect x="823.797675" y="658.225" width="112.40465" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
   <text x="880" y="672.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">相关 r ≈ 0.4–0.6</text>
-  <text x="1130" y="656" font-size="11" fill="#475569">mRNA 与蛋白的相关系数量级约 0.4–0.6——翻译与翻译后过程构成缓冲层。</text>
+  <text x="1130" y="656" font-size="11" fill="#475569">mRNA 与蛋白的相关系数量级</text>
+  <text x="1130" y="671" font-size="11" fill="#475569">约 0.4–0.6——翻译与翻译后</text>
+  <text x="1130" y="686" font-size="11" fill="#475569">过程构成缓冲层。</text>
   <text x="1130" y="736" font-size="11" fill="#475569">这层缓冲正是两层互补整合的理由：</text>
   <text x="1130" y="751" font-size="11" fill="#475569">各答一问，合起来才见全貌。</text>
   <text x="930" y="948" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="600">读定量先读偏差：标签法的比值压缩、无标记法的缺失值、DIA 的嵌合谱。</text>

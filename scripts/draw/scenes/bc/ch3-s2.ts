@@ -86,7 +86,7 @@ const draw = (b: B) => {
   b.ctext(800 + 0.5 * 450, 742 - 1.0 * 140 - 10, '核酸 260 nm', { size: 10.5, weight: 700, fill: C.dna })
   b.text(800 + 0.78 * 450, 742 - 0.6 * 140 + 6, '蛋白质 280 nm', { size: 10.5, weight: 700, fill: C.pro })
   b.text(800 + 0.09 * 450, 742 - 0.95 * 140 + 8, '肽键 190~220 nm', { size: 10, fill: C.mute })
-  b.wtext(766, 786, 'A₂₈₀ 估算蛋白质浓度（Trp 与 Tyr 的贡献）；A₂₆₀/A₂₈₀ 评估纯度。', { size: 11, fill: C.sub, maxW: 590, lh: 16 })
+  b.wtext(766, 806, 'A₂₈₀ 估算蛋白质浓度（Trp 与 Tyr 的贡献）；A₂₆₀/A₂₈₀ 评估纯度。', { size: 11, fill: C.sub, maxW: 590, lh: 16 })
   // 电泳迁移示意（上负下正）
   b.text(766, 826, '电泳迁移方向取决于 pH 与 pI：', { size: 12.5, weight: 700, fill: C.ink })
   b.line(790, 846, 1180, 846, { stroke: C.mute, sw: 1.6, dash: '6 4' })
