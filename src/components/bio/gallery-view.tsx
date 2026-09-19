@@ -7,7 +7,7 @@ import { figureNumber } from '@/lib/figure-utils'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { useAppStore } from '@/lib/store'
 import type { SubjectId } from '@/lib/types'
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog'
+import { FigureLightbox } from '@/components/bio/figure-lightbox'
 import { cn } from '@/lib/utils'
 import {
   BookOpenText,
@@ -159,7 +159,7 @@ function GalleryTab({
       aria-pressed={active}
       aria-label={label}
       className={cn(
-        'inline-flex h-9 items-center gap-1.5 border-b-2 px-0.5 text-sm font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring',
+        'inline-flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap border-b-2 px-0.5 text-sm font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring',
         active
           ? activeCls
           : 'border-b-transparent text-muted-foreground hover:border-border hover:text-foreground'
@@ -250,6 +250,8 @@ export function GalleryView() {
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>('all')
   const [subjectFilter, setSubjectFilter] = useState<SubjectFilter>('all')
   const [zoomed, setZoomed] = useState<GalleryItem | null>(null)
+  /** 灯箱开关与条目分离：关闭动画期间保留上一张图，避免 src 置空 */
+  const [lbOpen, setLbOpen] = useState(false)
 
   const openReader = useAppStore((s) => s.openReader)
 
@@ -305,7 +307,7 @@ export function GalleryView() {
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
       {/* 头部 */}
       <header>
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
           <div className="min-w-0">
             <p className="bio-eyebrow text-muted-foreground">Figure Gallery · 教材图库</p>
             <h1 className="mt-2 flex items-center gap-2.5 font-serif text-xl font-bold tracking-tight sm:text-2xl">
@@ -316,8 +318,12 @@ export function GalleryView() {
               {allItems.length} 张教材插图 · {realCount} 张（{realPct}%）来自真实科学数据库
             </p>
           </div>
-          {/* 来源统计卡 */}
-          <div className="grid grid-cols-3 gap-2 sm:grid-cols-6" role="group" aria-label="配图来源统计">
+          {/* 来源统计卡（移动端 3 列两行，桌面 6 列一行） */}
+          <div
+            className="grid w-full grid-cols-3 gap-1.5 sm:w-auto sm:gap-2 sm:grid-cols-6"
+            role="group"
+            aria-label="配图来源统计"
+          >
             {(['ccd', 'pdb', 'commons', 'web', 'drawn', 'ai'] as const).map((k) => {
               const meta = SOURCE_META[k]
               return (
@@ -328,7 +334,7 @@ export function GalleryView() {
                   aria-pressed={sourceFilter === k}
                   title={`筛选：${meta.full}`}
                   className={cn(
-                    'flex min-w-[72px] flex-col items-center gap-0.5 rounded-lg border px-2.5 py-2 text-center transition-colors',
+                    'flex min-w-0 flex-col items-center gap-0.5 rounded-lg border px-1.5 py-2 text-center transition-colors sm:px-2.5',
                     sourceFilter === k
                       ? meta.badge
                       : 'bg-card hover:bg-accent'
@@ -338,7 +344,9 @@ export function GalleryView() {
                   <span className="text-sm font-bold tabular-nums leading-none">
                     {sourceCounts.get(k) ?? 0}
                   </span>
-                  <span className="text-[10px] leading-tight opacity-80">{meta.label}</span>
+                  <span className="w-full truncate text-[10px] leading-tight opacity-80">
+                    {meta.label}
+                  </span>
                 </button>
               )
             })}
@@ -347,9 +355,9 @@ export function GalleryView() {
         <div className="bio-rule mt-4" aria-hidden />
       </header>
 
-      {/* 学科筛选 */}
+      {/* 学科筛选（小屏横向滑动单行，桌面自动换行） */}
       <div
-        className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1"
+        className="bio-scroll-none mt-4 -mx-4 flex items-center gap-x-4 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:gap-x-5 sm:gap-y-1 sm:overflow-visible sm:px-0"
         role="group"
         aria-label="按学科筛选配图"
       >
@@ -395,7 +403,7 @@ export function GalleryView() {
               setSourceFilter('all')
               setSubjectFilter('all')
             }}
-            className="ml-auto inline-flex items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex h-9 shrink-0 items-center gap-1 whitespace-nowrap text-xs text-muted-foreground transition-colors hover:text-foreground sm:ml-auto"
           >
             <X className="h-3 w-3" aria-hidden />
             清除筛选
@@ -436,9 +444,16 @@ export function GalleryView() {
                   </span>
                   <div className="bio-rule h-px flex-1" aria-hidden />
                 </div>
-                <div className="mt-3.5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="mt-3.5 grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
                   {items.map((item) => (
-                    <FigureCard key={item.sectionId + item.num} item={item} onZoom={setZoomed} />
+                    <FigureCard
+                      key={item.sectionId + item.num}
+                      item={item}
+                      onZoom={(it) => {
+                        setZoomed(it)
+                        setLbOpen(true)
+                      }}
+                    />
                   ))}
                 </div>
               </section>
@@ -447,62 +462,48 @@ export function GalleryView() {
         </div>
       )}
 
-      {/* 灯箱：大图 + 完整图注 + 跳转阅读 */}
-      <Dialog open={!!zoomed} onOpenChange={(o) => !o && setZoomed(null)}>
-        <DialogContent className="max-w-4xl overflow-hidden p-0 sm:rounded-xl">
-          {zoomed && (
-            <>
-              <div className="sr-only">
-                <DialogTitle>{`图 ${zoomed.num} · ${zoomed.sectionTitle}`}</DialogTitle>
-                <DialogDescription>{zoomed.caption}</DialogDescription>
-              </div>
-              <div className="max-h-[62vh] overflow-y-auto bg-[#faf9f4] dark:bg-[#111a16]">
-                <img
-                  src={zoomed.src}
-                  alt={`图 ${zoomed.num}：${zoomed.caption}`}
-                  className="mx-auto block w-full object-contain"
-                />
-              </div>
-              <div className="border-t bg-background px-5 py-4">
-                <div className="flex items-center gap-2">
-                  <span className="font-mono text-xs font-bold text-primary">图 {zoomed.num}</span>
-                  <span className="text-xs text-muted-foreground">
-                    {getSubject(zoomed.subjectId)?.name} · 第 {zoomed.chapterNumber} 章 ·{' '}
-                    {zoomed.chapterTitle}
-                  </span>
-                </div>
-                <p className="mt-2 text-sm leading-relaxed text-foreground">{zoomed.caption}</p>
-                {zoomed.credit && (
-                  <p className="mt-1.5 text-xs text-muted-foreground">{zoomed.credit}</p>
+      {/* 灯箱：全屏大图 + 滚轮/双击缩放 + 左键/中键拖拽 + 完整图注 + 跳转阅读 */}
+      <FigureLightbox
+        open={lbOpen}
+        onOpenChange={(o) => !o && setLbOpen(false)}
+        src={zoomed?.src ?? ''}
+        num={zoomed?.num}
+        title={zoomed ? `图 ${zoomed.num} · ${zoomed.sectionTitle}` : undefined}
+        caption={zoomed?.caption}
+        credit={zoomed?.credit}
+        headerMeta={
+          zoomed
+            ? `${getSubject(zoomed.subjectId)?.name ?? ''} · 第 ${zoomed.chapterNumber} 章 · ${zoomed.chapterTitle}`
+            : undefined
+        }
+        footer={
+          zoomed ? (
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t pt-3">
+              <span
+                className={cn(
+                  'inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[10px] font-medium',
+                  SOURCE_META[zoomed.source].badge
                 )}
-                <div className="mt-3 flex items-center justify-between gap-3">
-                  <span
-                    className={cn(
-                      'inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[10px] font-medium',
-                      SOURCE_META[zoomed.source].badge
-                    )}
-                  >
-                    <span aria-hidden>来源</span>
-                    {SOURCE_META[zoomed.source].full}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      const { subjectId, chapterId, sectionId } = zoomed
-                      setZoomed(null)
-                      openReader(subjectId, chapterId, sectionId)
-                    }}
-                    className="inline-flex items-center gap-1.5 rounded-lg border bg-card px-3 py-1.5 text-xs font-semibold transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    <BookOpenText className="h-3.5 w-3.5" aria-hidden />
-                    阅读本节「{zoomed.sectionTitle}」
-                  </button>
-                </div>
-              </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
+              >
+                <span aria-hidden>来源</span>
+                {SOURCE_META[zoomed.source].full}
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  const { subjectId, chapterId, sectionId } = zoomed
+                  setLbOpen(false)
+                  openReader(subjectId, chapterId, sectionId)
+                }}
+                className="inline-flex items-center gap-1.5 rounded-lg border bg-card px-3 py-1.5 text-xs font-semibold transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <BookOpenText className="h-3.5 w-3.5" aria-hidden />
+                阅读本节「{zoomed.sectionTitle}」
+              </button>
+            </div>
+          ) : null
+        }
+      />
     </div>
   )
 }

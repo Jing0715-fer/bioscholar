@@ -6,12 +6,7 @@ import { memo } from 'react'
 import remarkGfm from 'remark-gfm'
 import rehypeUnwrapImages from 'rehype-unwrap-images'
 import { Maximize2, RotateCcw, Sparkles } from 'lucide-react'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-} from '@/components/ui/dialog'
+import { FigureLightbox } from '@/components/bio/figure-lightbox'
 import { cn } from '@/lib/utils'
 import {
   FIGURE_MARKER,
@@ -112,13 +107,13 @@ function BioFigure({
         type="button"
         className="bio-figure-frame group relative block w-full cursor-zoom-in overflow-hidden rounded-lg border bg-[#faf9f4] outline-none focus-visible:ring-2 focus-visible:ring-ring dark:bg-[#111a16]"
         onClick={() => setZoom(true)}
-        aria-label={`放大查看 图${fig.num}`}
+        aria-label={`放大查看 图${fig.num}（支持滚轮缩放与拖拽）`}
       >
         <img
           src={fig.src}
           alt={fig.caption}
           loading="lazy"
-          className="mx-auto block w-full max-w-[560px] object-contain"
+          className="mx-auto block w-full max-w-[560px] object-contain sm:max-w-[580px]"
         />
         <span className="pointer-events-none absolute bottom-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-background/90 text-foreground opacity-0 shadow-md transition-opacity duration-200 group-hover:opacity-100">
           <Maximize2 className="h-3.5 w-3.5" aria-hidden="true" />
@@ -130,31 +125,20 @@ function BioFigure({
         {fig.credit && <span className="bio-fig-credit">{fig.credit}</span>}
       </figcaption>
 
-      {/* 灯箱放大（含 AI 看图讲解） */}
-      <Dialog open={zoom} onOpenChange={handleOpenChange}>
-        <DialogContent className="max-h-[92vh] max-w-4xl overflow-y-auto p-0 sm:rounded-xl">
-          <div className="sr-only">
-            <DialogTitle>{`图 ${fig.num}`}</DialogTitle>
-            <DialogDescription>{fig.caption}</DialogDescription>
-          </div>
-          <div className="bg-[#faf9f4] dark:bg-[#111a16]">
-            <img
-              src={fig.src}
-              alt={fig.caption}
-              className="mx-auto block max-h-[62vh] w-auto max-w-full object-contain"
-            />
-          </div>
-          <div className="border-t bg-background px-5 py-4">
-            <p className="text-sm leading-relaxed text-foreground">
-              <span className="mr-2 font-bold">图 {fig.num}</span>
-              {fig.caption}
-            </p>
-            {fig.credit && (
-              <p className="mt-1 text-xs text-muted-foreground">{fig.credit}</p>
-            )}
-
+      {/* 灯箱放大：全屏大图 + 滚轮/双击缩放 + 左键/中键拖拽 + AI 看图讲解 */}
+      <FigureLightbox
+        open={zoom}
+        onOpenChange={handleOpenChange}
+        src={fig.src}
+        num={fig.num}
+        title={`图 ${fig.num}${sectionCtx?.sectionTitle ? ` · ${sectionCtx.sectionTitle}` : ''}`}
+        caption={fig.caption}
+        credit={fig.credit}
+        headerMeta={sectionCtx?.sectionTitle}
+        footer={
+          <>
             {/* AI 看图讲解 */}
-            <div className="mt-3 border-t pt-3">
+            <div className="border-t pt-3">
               {!explanation && !explaining && !explainErr && (
                 <button
                   type="button"
@@ -200,9 +184,9 @@ function BioFigure({
                 </div>
               )}
             </div>
-          </div>
-        </DialogContent>
-      </Dialog>
+          </>
+        }
+      />
     </figure>
   )
 }
