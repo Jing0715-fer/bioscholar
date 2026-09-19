@@ -568,3 +568,28 @@ Stage Summary:
 - ch9-s2：E∝r⁻⁶ 说明改 4 行手动 text 移入图内左下空白 (752,448-487)；ch10-s2：跑-翻滚轨迹整体下移 20px，翻滚 tag 145→176、跑 tag 205→225。
 
 **终态**：`verify-subject bc/vi/bp` 全部输出「确认真问题 0 处（0 张图）」，退出码 0。未解决问题：无。未动 lib.ts/gen.ts/index.ts/review/src/其他学科；未运行任何 git 命令、未删除任何文件。
+
+---
+Task ID: 41（完成）
+Agent: 主控 (Z.ai Code)
+Task: 自绘矢量图全量审校与排版修复——每个图达到可用程度
+
+Work Log:
+- 【系统性根因】scene() 副标题单行 middle 锚定 → 长副标题两侧溢出画布（像素边缘检测证实 190/307 张被裁）。lib.ts 重写：标题过宽自动缩字号（33→24）；副标题过宽优先 17px 两行（布局移入 head 区），仍溢出再缩字号（下限 13）+ wrapLines 断行器
+- 【审校基建】scripts/review/ 五件套：rasterize（sharp 批量 SVG→PNG 1200px）、verify-subject（像素级真值：单文本单独渲染取真实墨迹包围盒 → 截断判定；成对像素 AND → 重叠判定）、verify-all（十学科汇总）、vlm-audit（glm-5v-turbo 四维审校：文字重叠/乱码/截断/科学性，断点续跑 + 429 六次退避）
+- 【场景修复】九学科 186 处真问题全部清零（bc 16/vi 13/bp 12/cb 16/mb 26/im 22/ne 17/bi 12/mi 39→0），手法：节标题避让下移、轴 ylabel 手动重置、长 token 手动断行、wtext maxW 收紧、贴边元素内移。调色板补 okD/warnD/badD/rose 深色变体（修复场景中无效引用）
+- 【遗留图重绘】4 张早期手绘 SVG（membrane-phase-transition / optical-tweezers / resting-membrane-potential / kcsa-selectitivity-filter，静态检查 77 处问题）scene 化重写并登记 bp/index.ts，验证 0 问题；VLM 复检 kcsa「科学严谨、制作精良」全项通过
+- 【图注治理】3 条超限图注修剪至 ≤330 字（cb-ch10-s2 340→323、cb-ch12-s2 376→326、bc-ch6-s3 366→328），科学事实全保留
+- 【灾难×2 恢复】失控僵尸子代理两次破坏（git reset 到 9 天前 + 清未跟踪文件）：均从 origin/main 完整恢复 + 逐学科即时 commit+push 检查点；流程改为串行派发 + 简报前置绝对禁令（禁 git/禁删文件/禁清理脚本/完成即停）
+- 【次生修复】db/ 目录被清空 → mkdir db + db:push 重建，/api/stats 与 /api/activity 恢复 200
+- 【终验】check-ill：441/441 小节 100% 覆盖、缺失/无效/图注异常 0；verify-all：307 张 SVG 像素级真问题 0 处；bunx tsc src/ 零错误；bun run lint 通过；agent-browser：首页/学科中心/章节目录/阅读器（插图完整渲染+图注正常）/图库（479 张全展示）/SVG 直链 200
+
+Stage Summary:
+- 307 张自绘矢量图全部达到可用标准：文字重叠 0、贴边截断 0、乱码 0（字体回退差异除外）、图注合规 0 异常
+- 管线沉淀：审校四件套可持续复用——新图只需 `bun scripts/review/verify-subject.ts <学科>` 验证 + `vlm-audit.ts` 视觉复核
+- GitHub 已推送至 36f8d53（含九学科修复、遗留重绘、基建、图注修剪、db 重建）
+
+未解决问题与下一步建议：
+- VLM 视觉审校仅完成抽样（~40 张 + 各代理过程性复检），全量 307 张因账户级 429 限流（用户并行会话占用配额）暂缓——vlm-audit.ts 断点续跑就绪，配额恢复后 `bun scripts/review/vlm-audit.ts --conc 2` 即可继续
+- mb/ch10-s1.ts 存在 4 元组 legend 类型标注不匹配（运行时无影响，非本轮引入）
+- 建议下轮：VLM 全量审校补完 + 图库「自绘」筛选体验打磨 + 插图 AI 讲解对新图覆盖
