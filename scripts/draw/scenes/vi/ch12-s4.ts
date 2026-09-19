@@ -47,7 +47,9 @@ const draw = (b: B) => {
     b.circle(x, y, 34, { fill: C.okL, stroke: C.ok, sw: 2 })
     b.ctext(x, y + 5, s, { size: 14, weight: 700, fill: C.ink })
   })
-  b.wtext(1060, 580, 'One Health：人-动物-环境界面治理统摄溢出预防、污水监测与禽流感预警——病毒学转化为公共卫生成果的制度出口。', { size: 12.5, weight: 600, fill: C.ok, maxW: 290, lh: 19 })
+  b.text(1060, 580, 'One Health：人-动物-环境界面治理统摄溢出预防、', { size: 12.5, weight: 600, fill: C.ok })
+  b.text(1060, 599, '污水监测与禽流感预警——', { size: 12.5, weight: 600, fill: C.ok })
+  b.text(1060, 618, '病毒学转化为公共卫生成果的制度出口。', { size: 12.5, weight: 600, fill: C.ok })
 
   // 底部主线条
   b.panel(30, 690, 1340, 48, { fill: '#f1f5f9' })

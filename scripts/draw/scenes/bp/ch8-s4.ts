@@ -37,7 +37,7 @@ const draw = (b: B) => {
   b.panel(30, 422, 1340, 270, { title: '二、Piezo：三叶螺旋桨状三聚体的碟形门控（2021 年诺贝尔生理学或医学奖）' })
 
   // 左：俯视三臂
-  b.text(60, 450, '俯视', { size: 10, fill: C.mute })
+  b.text(60, 465, '俯视', { size: 10, fill: C.mute })
   b.path('M 280,540 C 262,505 250,475 258,448', { stroke: C.pro, sw: 12, fill: 'none', opacity: 0.55 })
   b.path('M 280,540 C 262,505 250,475 258,448', { stroke: C.pro, sw: 3.5, fill: 'none' })
   b.path('M 242,574 C 215,585 195,600 180,618', { stroke: C.pro, sw: 12, fill: 'none', opacity: 0.55 })
@@ -52,7 +52,7 @@ const draw = (b: B) => {
   b.ctext(280, 655, '三聚体：三叶螺旋桨', { size: 10, fill: C.sub })
 
   // 中：碟形 → 展平
-  b.text(490, 450, '侧视：碟形 → 展平', { size: 10, fill: C.mute })
+  b.text(490, 465, '侧视：碟形 → 展平', { size: 10, fill: C.mute })
   b.path('M 520,478 Q 620,548 720,478', { stroke: C.dna, sw: 4, fill: 'none' })
   b.path('M 520,494 Q 620,564 720,494', { stroke: C.dna, sw: 4, fill: 'none' })
   b.circle(620, 521, 8, { fill: C.proL, stroke: C.pro, sw: 2 })

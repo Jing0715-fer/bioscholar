@@ -69,7 +69,7 @@ const draw = (b: B) => {
     { at: 0.68, label: '1976 v-src 细胞起源', sub: '原癌基因 · 1989 诺奖', c: C.bad },
     { at: 0.95, label: '疫苗防癌', sub: '儿童肝癌降约七成', above: true, c: C.ok },
   ])
-  b.ctext(1040, 700, '（Rous 迟至 1966 年获诺贝尔奖）', { size: 10, fill: C.mute })
+  b.ctext(1160, 710, '（Rous 迟至 1966 年获诺贝尔奖）', { size: 10, fill: C.mute })
   b.text(730, 852, '感染归因：约一成二人类癌症', { size: 12.5, weight: 700, fill: C.ink })
   b.rect(940, 836, 300, 22, { fill: C.panelB, stroke: C.line, sw: 1.3 })
   b.rect(940, 836, 36, 22, { fill: C.bad, stroke: C.bad, sw: 1.3 })

@@ -39,7 +39,7 @@ const draw = (b: B) => {
   b.arrow(806, 238, 878, 238, { stroke: C.sub, sw: 2, marker: 'ink' })
   b.rect(880, 222, 124, 34, { fill: '#ffffff', stroke: C.line, sw: 1.4, rx: 7 })
   b.ctext(942, 243, '草酰乙酸', { size: 11.5, fill: C.ink })
-  b.tag(942, 290, '胞质苹果酸脱氢酶（NADH→NAD⁺）', { fill: C.enzL, stroke: C.enz, size: 10, weight: 600, tfill: C.enzD, pad: 5 })
+  b.tag(942, 281, '胞质苹果酸脱氢酶（NADH→NAD⁺）', { fill: C.enzL, stroke: C.enz, size: 10, weight: 600, tfill: C.enzD, pad: 5 })
   b.arrow(942, 256, 942, 333, { stroke: C.rna, sw: 2.2, marker: 'rna' })
   b.ctext(976, 300, '苹果酸 ↓', { size: 9.5, weight: 700, fill: C.rnaD })
   // 膜与转运蛋白

@@ -5,11 +5,11 @@ const draw = (b: B) => {
   // ============ 一、跑-翻滚随机游走（左上） ============
   b.panel(30, 132, 640, 420, { title: '一、有偏随机游走：跑（run）与翻滚（tumble）' })
   // 跑-翻滚轨迹
-  b.path('M 80,250 L 220,250 L 220,180 L 420,180 L 420,290 L 560,290', { stroke: C.dna, sw: 3, marker: 'dna' })
-  const turns: [number, number][] = [[220, 250], [220, 180], [420, 180], [420, 290]]
+  b.path('M 80,270 L 220,270 L 220,200 L 420,200 L 420,310 L 560,310', { stroke: C.dna, sw: 3, marker: 'dna' })
+  const turns: [number, number][] = [[220, 270], [220, 200], [420, 200], [420, 310]]
   turns.forEach(([x, y]) => b.circle(x, y, 6, { fill: C.warn, stroke: C.warn }))
-  b.tag(90, 205, '跑 ≈1 s · 20 μm/s', { fill: C.dnaL, stroke: C.dna, size: 12.5, weight: 600, tfill: C.dnaD, pad: 8 })
-  b.tag(300, 145, '翻滚（tumble）= 随机重定向', { fill: C.warnL, stroke: C.warn, size: 12.5, weight: 600, tfill: C.ink, pad: 8 })
+  b.tag(90, 225, '跑 ≈1 s · 20 μm/s', { fill: C.dnaL, stroke: C.dna, size: 12.5, weight: 600, tfill: C.dnaD, pad: 8 })
+  b.tag(300, 176, '翻滚（tumble）= 随机重定向', { fill: C.warnL, stroke: C.warn, size: 12.5, weight: 600, tfill: C.ink, pad: 8 })
   // 浓度梯度背景
   b.rect(30, 132, 640, 420, { fill: 'none', stroke: C.line, sw: 0 })
   b.wtext(70, 340, '引诱剂浓度梯度 ↑（时间比较而非空间比较：细菌仅 2 μm，太短无法测两端浓度差）', { size: 13, fill: C.sub, maxW: 560, lh: 20 })

@@ -74,7 +74,10 @@ const draw = (b: B) => {
   b.circle(933, 415, 5, { fill: C.dnaD })
   b.tag(1064, 398, 'r = R₀ 时 E = 50%', { fill: C.dnaL, stroke: C.dna, size: 10.5, weight: 700, tfill: C.dnaD, pad: 9 })
   b.line(996, 402, 940, 412, { stroke: C.mute, sw: 1.2 })
-  b.text(730, 552, 'E ∝ r⁻⁶：距离稍增、效率陡降——环化 FRET 传感器可读出活细胞内的构象与活性。', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 448, 'E ∝ r⁻⁶：距离稍增、', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 461, '效率陡降——环化 FRET', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 474, '传感器可读出活细胞内', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 487, '的构象与活性。', { size: 10, weight: 600, fill: C.sub })
 
   // ============ 三、调色板与标记工具折中 ============
   b.panel(30, 592, 1340, 388, { title: '三、荧光蛋白调色板与标记工具的物理折中' })

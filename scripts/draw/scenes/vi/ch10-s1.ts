@@ -62,7 +62,11 @@ const draw = (b: B) => {
   b.curve(70, 840, 270, 180, [[0, 0.95], [0.3, 0.88], [0.5, 0.7], [0.62, 0.42], [0.74, 0.12], [1, 0.04]], { stroke: C.acc, sw: 2.8, smooth: true })
   b.line(70 + 0.62 * 270, 840, 70 + 0.62 * 270, 660, { stroke: C.bad, sw: 1.8, dash: '5 4' })
   b.tag(70 + 0.62 * 270, 648, '错误阈值', { fill: C.badL, stroke: C.bad, size: 10.5, weight: 700, tfill: C.bad, pad: 7 })
-  b.wtext(60, 900, '纵轴：突变谱的信息保持度。越过阈值后突变谱解体、遗传信息无法维持——绝大多数 RNA 病毒基因组因此被压在约 33 kb 以下。', { size: 10.5, fill: C.sub, maxW: 290, lh: 15 })
+  b.text(60, 900, '纵轴：突变谱的信息保持度。', { size: 10.5, fill: C.sub })
+  b.text(60, 915, '越过阈值后突变谱解体、', { size: 10.5, fill: C.sub })
+  b.text(60, 930, '遗传信息无法维持——绝大多数', { size: 10.5, fill: C.sub })
+  b.text(60, 945, 'RNA 病毒基因组因此被压在约', { size: 10.5, fill: C.sub })
+  b.text(60, 960, '33 kb 以下。', { size: 10.5, fill: C.sub })
   // 右：致死诱变
   b.ctext(560, 640, '致死诱变：把错误率推过阈值', { size: 11.5, weight: 700, fill: C.ink })
   const dotsA: [number, number][] = [[-30, -18], [24, -28], [4, 20], [-20, 26], [34, 8], [-2, -46]]
@@ -99,7 +103,10 @@ const draw = (b: B) => {
   b.ctext(800, 900, '瓶颈①', { size: 9.5, fill: C.mute })
   b.ctext(960, 900, '瓶颈②', { size: 9.5, fill: C.mute })
   b.ctext(1100, 900, '适应度衰减', { size: 9.5, weight: 700, fill: C.bad })
-  b.wtext(1190, 820, '小群体逐代传递中，最少突变的最优类一旦随机丢失便不可复得——群体的平均适应度单向下滑。', { size: 10, fill: C.sub, maxW: 150, lh: 14 })
+  b.text(1190, 820, '小群体逐代传递中，', { size: 10, fill: C.sub })
+  b.text(1190, 834, '最少突变的最优类一旦', { size: 10, fill: C.sub })
+  b.text(1190, 848, '随机丢失便不可复得——', { size: 10, fill: C.sub })
+  b.text(1190, 862, '群体的平均适应度单向下滑。', { size: 10, fill: C.sub })
   b.tag(1020, 952, '医学含义：耐药与免疫逃逸变异预先存在——联合用药与疫苗设计必须直面', { fill: C.warnL, stroke: C.warn, size: 11, weight: 700, tfill: '#78350f', pad: 10 })
 }
 

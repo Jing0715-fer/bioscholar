@@ -76,7 +76,7 @@ const draw = (b: B) => {
   // 抗生素无效示意
   b.text(730, 820, '抗生素为何对病毒无效：', { size: 12.5, weight: 700, fill: C.ink })
   b.bacterium(790, 872, 84, 40, { shape: 'rod', stroke: C.accD, label: '细菌' })
-  b.ctext(790, 908, '细胞壁 / 核糖体', { size: 10.5, fill: C.mute })
+  b.ctext(790, 844, '细胞壁 / 核糖体', { size: 10.5, fill: C.mute })
   b.virion(990, 868, 20, { shape: 'icosahedral', stroke: C.bad, label: '病毒' })
   b.tag(1150, 862, '抗生素命中靶点 ✓', { fill: C.okL, stroke: C.ok, size: 11.5, tfill: '#065f46', pad: 10 })
   b.tag(1150, 896, '无靶可击 → 无效 ✗', { fill: C.badL, stroke: C.bad, size: 11.5, tfill: C.bad, pad: 10 })
