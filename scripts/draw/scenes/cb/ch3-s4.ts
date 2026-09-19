@@ -15,14 +15,15 @@ const draw = (b: B) => {
     b.rect(x - 30, 320, 60, 30, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 6 })
     b.ctext(x, 340, name, { size: 12, weight: 700, fill: C.proD })
   })
-  b.wtext(390, 330, '应激时伴侣 BiP/GRP78 与传感器解离，传感器活化', { size: 10.5, fill: C.mute, maxW: 240, lh: 14 })
+  b.wtext(390, 296, '应激时伴侣 BiP/GRP78 与传感器解离，传感器活化', { size: 10.5, fill: C.mute, maxW: 240, lh: 14 })
   // 三条分支效果
   b.arrow(130, 355, 130, 392, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.wtext(56, 412, '磷酸化 eIF2α → 全局抑制翻译、减少蛋白流入', { size: 11, fill: C.sub, maxW: 150, lh: 15 })
+  // 三列窄注改等行距多行 text（列间距 100px，单行宽压在 ~90px 内）
+  ;['磷酸化 eIF2α →', '全局抑制翻译、', '减少蛋白流入'].forEach((ln, k) => b.text(56, 412 + k * 15, ln, { size: 11, fill: C.sub }))
   b.arrow(230, 355, 230, 392, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.wtext(156, 412, '非经典剪接 XBP1 mRNA → 转录因子，上调折叠与 ERAD 基因', { size: 11, fill: C.sub, maxW: 150, lh: 15 })
+  ;['非经典剪接', 'XBP1 mRNA →', '转录因子，上调', '折叠与 ERAD 基因'].forEach((ln, k) => b.text(156, 412 + k * 15, ln, { size: 11, fill: C.sub }))
   b.arrow(330, 355, 330, 392, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.wtext(256, 412, '经 S1P/S2P 切割后入核，上调伴侣蛋白表达', { size: 11, fill: C.sub, maxW: 150, lh: 15 })
+  ;['经 S1P/S2P', '切割后入核，', '上调伴侣蛋白表达'].forEach((ln, k) => b.text(256, 412 + k * 15, ln, { size: 11, fill: C.sub }))
   // 失代偿 → 凋亡
   b.arrow(430, 335, 470, 335, { stroke: C.bad, sw: 2.2, marker: 'bad' })
   b.rect(475, 306, 130, 58, { fill: C.badL, stroke: C.bad, sw: 1.8, rx: 8 })
@@ -39,7 +40,7 @@ const draw = (b: B) => {
   b.table(962, 190, 396, {
     headers: ['疾病', '机制'],
     colW: [130, 266],
-    rowH: 56,
+    rowH: 50,
     fontSize: 10,
     rows: [
       ['囊性纤维化', 'CFTR ΔF508 错误折叠，被 ER 质量控制降解，膜上功能通道不足'],
@@ -66,7 +67,7 @@ const draw = (b: B) => {
   b.wtext(90, 770, 'ER-线粒体接触位点（MAM）介导 Ca²⁺ 与脂质交换，是脂质合成与凋亡调控的平台。', { size: 11, fill: C.sub, maxW: 330, lh: 15.5 })
   // ER 提供膜来源
   b.arrow(200, 712, 200, 760, { stroke: C.dna, sw: 2, marker: 'dna' })
-  b.wtext(90, 786, 'ER 以 COPII 出芽为其他细胞器提供膜来源。', { size: 11, fill: C.sub, maxW: 330, lh: 15.5 })
+  b.wtext(90, 806, 'ER 以 COPII 出芽为其他细胞器提供膜来源。', { size: 11, fill: C.sub, maxW: 330, lh: 15.5 })
   // 内体-溶酶体系统
   b.circle(700, 700, 42, { fill: C.accL, stroke: C.acc, sw: 2.2 })
   b.ctext(700, 696, '内体', { size: 11.5, weight: 700, fill: C.accD })

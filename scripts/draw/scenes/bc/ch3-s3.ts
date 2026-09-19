@@ -66,7 +66,7 @@ const draw = (b: B) => {
   b.ellipse(760 + 0.658 * 540, 500 - 0.369 * 320, 26, 22, { fill: C.rnaL, fillOp: 0.85, stroke: C.rna, sw: 1.8 })
   b.ctext(760 + 0.658 * 540, 500 - 0.369 * 320 - 34, '左手 α', { size: 11, weight: 700, fill: C.rnaD })
   b.wtext(1052, 286, '每个残基的构象由一对 (φ, ψ) 决定；肽平面刚性使多数稳定二级结构集中于 α 螺旋与 β 折叠允许区。', { size: 11, fill: C.mute, maxW: 220, lh: 16 })
-  b.text(760, 540, '书写方向：N 端（左）→ C 端（右），如 Ala-Gly-Ser', { size: 11.5, fill: C.sub })
+  b.text(760, 560, '书写方向：N 端（左）→ C 端（右），如 Ala-Gly-Ser', { size: 11.5, fill: C.sub })
 
   // ============ 三、生物活性肽 ============
   b.panel(30, 588, 1340, 384, { title: '三、生物活性肽：γ-肽键、环肽与神经肽' })

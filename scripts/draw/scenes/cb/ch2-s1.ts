@@ -38,7 +38,13 @@ const draw = (b: B) => {
       b.rect(x + 72, 236, 12, 40, { fill: C.proL, stroke: C.pro, sw: 1.5, rx: 5 })
       b.rect(x + 99, 236, 12, 40, { fill: C.proL, stroke: C.pro, sw: 1.5, rx: 5 })
     }
-    b.wtext(x + 12, 306, s, { size: 10.5, fill: C.sub, maxW: 224, lh: 14 })
+    if (i === 0) {
+      // 长句无标点可断 → 手动拆两行，避免溢出与右邻盒注文交叠
+      b.text(x + 12, 306, '红细胞膜脂单层铺展面积约为细胞表面积 2 倍', { size: 10.5, fill: C.sub })
+      b.text(x + 12, 320, '→ 提示脂双层', { size: 10.5, fill: C.sub })
+    } else {
+      b.wtext(x + 12, 306, s, { size: 10.5, fill: C.sub, maxW: 224, lh: 14 })
+    }
     if (i < 4) b.arrow(x + 249, 260, x + 259, 260, { stroke: C.mute, sw: 1.8, marker: 'mute' })
   })
   b.text(56, 366, '演变主线：静态「三明治」→ 流动的脂双层基质＋镶嵌蛋白 → 有序微区（脂筏）——流动性与不对称性贯穿始终。', { size: 12.5, weight: 600, fill: C.ink })
@@ -61,7 +67,7 @@ const draw = (b: B) => {
   b.line(307, 580, 302, 562, { stroke: C.rna, sw: 1.4 })
   b.line(313, 580, 318, 562, { stroke: C.rna, sw: 1.4 })
   // 单次跨膜糖蛋白
-  b.ctext(430, 480, '糖蛋白', { size: 11.5, weight: 700, fill: C.rnaD })
+  b.ctext(430, 488, '糖蛋白', { size: 11.5, weight: 700, fill: C.rnaD })
   b.ellipse(430, 548, 30, 18, { fill: C.proL, stroke: C.pro, sw: 1.8 })
   b.rect(416, 560, 28, 50, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 8 })
   b.circle(410, 512, 7, { fill: C.rnaL, stroke: C.rna, sw: 1.5 })

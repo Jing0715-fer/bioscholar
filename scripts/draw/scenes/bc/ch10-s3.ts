@@ -50,7 +50,7 @@ const draw = (b: B) => {
   b.ctext(1020, 320, '× 7 轮', { size: 13, weight: 700, fill: C.enzD })
   // 产物
   b.arrow(998, 232, 1212, 196, { stroke: C.ok, sw: 2.2, marker: 'ok' })
-  b.tag(1100, 236, '硫酯酶水解释放', { fill: C.enzL, stroke: C.enz, size: 10.5, weight: 600, tfill: C.enzD, pad: 5 })
+  b.tag(1310, 232, '硫酯酶水解释放', { fill: C.enzL, stroke: C.enz, size: 10.5, weight: 600, tfill: C.enzD, pad: 5 })
   b.rect(1216, 168, 132, 40, { fill: C.okL, fillOp: 0.6, stroke: C.ok, sw: 1.8, rx: 8 })
   b.ctext(1282, 186, '棕榈酸', { size: 13, weight: 700, fill: '#065f46' })
   b.ctext(1282, 200, '（16:0）', { size: 10, fill: C.mute })

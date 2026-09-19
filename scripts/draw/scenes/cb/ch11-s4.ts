@@ -67,7 +67,8 @@ const draw = (b: B) => {
   })
   // 干预
   b.text(100, 800, '干预前沿：', { size: 11, weight: 700, fill: C.ink })
-  b.tag(200, 826, 'senolytics：达沙替尼＋槲皮素清除 p16⁺/p21⁺ 衰老细胞——改善小鼠健康寿命，已进入人体试验', { fill: C.okL, stroke: C.ok, size: 9.5, tfill: C.ok, pad: 6 })
+  b.tag(200, 814, 'senolytics：达沙替尼＋槲皮素清除 p16⁺/p21⁺ 衰老细胞', { fill: C.okL, stroke: C.ok, size: 9.5, tfill: C.ok, pad: 6 })
+  b.tag(200, 840, '——改善小鼠健康寿命，已进入人体试验', { fill: C.okL, stroke: C.ok, size: 9.5, tfill: C.ok, pad: 6 })
   b.tag(840, 826, 'mTOR 抑制（雷帕霉素）与热量限制＝经典延寿通路', { fill: C.accL, stroke: C.acc, size: 9.5, tfill: C.accD, pad: 6 })
   b.wtext(100, 878, '清除衰老细胞与抑制 mTOR 分别从"去存量"与"降速率"两端延缓衰老。', { size: 10, fill: C.mute, maxW: 620, lh: 13.5 })
   b.wtext(950, 780, '自噬活性随年龄下降；热量限制延寿部分依赖自噬（详见第 12 章）。', { size: 9.5, fill: C.mute, maxW: 380, lh: 13 })

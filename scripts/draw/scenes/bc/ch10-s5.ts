@@ -36,25 +36,26 @@ const draw = (b: B) => {
   b.panel(750, 132, 620, 430, { title: '二、转变去路：胆汁酸 · 类固醇激素 · 维生素 D₃' })
   b.rect(950, 172, 120, 40, { fill: C.proL, fillOp: 0.55, stroke: C.pro, sw: 1.8, rx: 8 })
   b.ctext(1010, 196, '胆固醇', { size: 13, weight: 700, fill: C.proD })
-  b.ctext(1010, 160, '（不能氧化分解）', { size: 9.5, fill: C.mute })
+  b.ctext(1010, 168, '（不能氧化分解）', { size: 9.5, fill: C.mute })
   // 去路 1
   b.arrow(960, 212, 860, 258, { stroke: C.acc, sw: 2.4, marker: 'acc' })
   b.rect(766, 260, 190, 56, { fill: C.accL, fillOp: 0.6, stroke: C.acc, sw: 1.8, rx: 8 })
   b.ctext(861, 282, '胆汁酸（主要去路）', { size: 12, weight: 700, fill: C.accD })
   b.ctext(861, 302, '7α-羟化酶（限速）', { size: 10, fill: C.sub })
-  b.wtext(766, 340, '胆酸与鹅脱氧胆酸（与甘氨酸 / 牛磺酸结合），随胆汁乳化脂类；肠肝循环重吸收约 95%。', { size: 10, fill: C.sub, maxW: 240, lh: 14 })
+  // 三列窄注改等行距多行 text（列间距有限，单行宽压在列内）
+  ;['胆酸与鹅脱氧胆酸', '（与甘氨酸 / 牛磺酸结合），', '随胆汁乳化脂类；肠肝循环', '重吸收约 95%。'].forEach((ln, k) => b.text(766, 338 + k * 13, ln, { size: 10, fill: C.sub }))
   // 去路 2
   b.arrow(1010, 212, 1010, 258, { stroke: C.rna, sw: 2.4, marker: 'rna' })
   b.rect(920, 260, 180, 56, { fill: C.rnaL, fillOp: 0.6, stroke: C.rna, sw: 1.8, rx: 8 })
   b.ctext(1010, 282, '类固醇激素', { size: 12, weight: 700, fill: C.rnaD })
   b.ctext(1010, 302, 'P450 侧链裂解酶起步', { size: 10, fill: C.sub })
-  b.wtext(920, 340, '肾上腺皮质（糖皮质 · 盐皮质激素）与性腺（性激素）——第一步生成孕烯醇酮。', { size: 10, fill: C.sub, maxW: 240, lh: 14 })
+  ;['肾上腺皮质（糖皮质 · 盐皮质激素）', '与性腺（性激素）——', '第一步生成孕烯醇酮。'].forEach((ln, k) => b.text(920, 338 + k * 13, ln, { size: 10, fill: C.sub }))
   // 去路 3
   b.arrow(1060, 212, 1160, 258, { stroke: C.warn, sw: 2.4, marker: 'warn' })
   b.rect(1114, 260, 160, 56, { fill: C.warnL, fillOp: 0.6, stroke: C.warn, sw: 1.8, rx: 8 })
   b.ctext(1194, 282, '维生素 D₃', { size: 12, weight: 700, fill: '#78350f' })
   b.ctext(1194, 302, '皮肤 · 紫外线', { size: 10, fill: C.sub })
-  b.wtext(1114, 340, '皮肤 7-脱氢胆固醇经紫外线转变。', { size: 10, fill: C.sub, maxW: 220, lh: 14 })
+  b.text(1114, 338, '皮肤 7-脱氢胆固醇经紫外线转变。', { size: 10, fill: C.sub })
   b.wtext(766, 412, '树脂类药物与膳食纤维促进胆汁酸排泄，间接拉动胆固醇转变为胆汁酸而降胆固醇。', { size: 10.5, fill: C.sub, maxW: 600, lh: 15 })
   b.wtext(766, 456, '三大去路中胆汁酸量最大——「变废为乳」用于脂类消化吸收。', { size: 10.5, fill: C.mute, maxW: 600, lh: 15 })
 

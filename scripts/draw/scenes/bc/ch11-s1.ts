@@ -45,7 +45,7 @@ const draw = (b: B) => {
   b.rect(1214, 176, 136, 56, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
   b.ctext(1282, 198, 'α-酮戊二酸', { size: 11, weight: 700, fill: C.ink })
   b.ctext(1282, 216, '＋ NH₄⁺', { size: 11, weight: 700, fill: C.bad })
-  b.tag(1170, 160, 'L-谷氨酸脱氢酶 GDH（限速关键）', { fill: C.enzL, stroke: C.enz, size: 10.5, weight: 700, tfill: C.enzD, pad: 5 })
+  b.tag(1150, 168, 'L-谷氨酸脱氢酶 GDH（限速关键）', { fill: C.enzL, stroke: C.enz, size: 10.5, weight: 700, tfill: C.enzD, pad: 5 })
   b.wtext(766, 262, 'GDH 位于线粒体基质，辅酶 NAD⁺ 或 NADP⁺：谷氨酸 + NAD(P)⁺ + H₂O ⇌ α-KG + NH₄⁺ + NAD(P)H。', { size: 10.5, fill: C.sub, maxW: 610, lh: 15 })
   b.wtext(766, 300, '受 ADP / GDP 激活、ATP / GTP 抑制（能量状态调控）。', { size: 10.5, fill: C.sub, maxW: 610, lh: 15 })
   b.rect(766, 330, 340, 44, { fill: C.okL, fillOp: 0.45, stroke: C.ok, sw: 1.6, rx: 8 })

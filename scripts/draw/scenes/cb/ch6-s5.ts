@@ -5,7 +5,7 @@ const draw = (b: B) => {
   // ============ 一、迁移循环 ============
   b.panel(30, 132, 1340, 340, { title: '一、迁移循环：前端伸展 → 新粘着 → 胞体牵引 → 尾部释放' })
   b.arrow(100, 172, 200, 172, { stroke: C.acc, sw: 3, marker: 'acc' })
-  b.ctext(150, 156, '迁移方向', { size: 11, weight: 700, fill: C.accD })
+  b.ctext(150, 192, '迁移方向', { size: 11, weight: 700, fill: C.accD })
   // 细胞体
   b.ellipse(450, 300, 190, 95, { fill: C.panel, stroke: C.sub, sw: 2.2 })
   b.ellipse(655, 300, 55, 85, { fill: C.accL, fillOp: 0.6, stroke: C.sub, sw: 2.2 })

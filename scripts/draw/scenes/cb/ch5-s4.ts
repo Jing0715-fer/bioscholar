@@ -37,7 +37,7 @@ const draw = (b: B) => {
   b.text(494, 252, 'ANT·VDAC·亲环蛋白 D', { size: 9, fill: C.sub })
   b.wtext(505, 285, '开放 → 内膜失去选择性、Δψ 崩解、基质肿胀、外膜破裂', { size: 9.5, fill: C.sub, maxW: 168, lh: 13 })
   b.arrow(560, 315, 486, 272, { stroke: C.ok, sw: 1.8, marker: 'ok' })
-  b.ctext(528, 302, '抑制', { size: 9, weight: 700, fill: C.ok })
+  b.ctext(545, 328, '抑制', { size: 9, weight: 700, fill: C.ok })
   b.tag(600, 330, '环孢素 A', { fill: C.okL, stroke: C.ok, size: 10, weight: 700, tfill: C.ok, pad: 6 })
   b.wtext(505, 360, '环孢素 A 结合亲环蛋白 D 抑制其开放——缺血再灌注损伤（心肌梗死、脑卒中）保护研究的焦点。', { size: 9.5, fill: C.mute, maxW: 168, lh: 13 })
   b.wtext(255, 522, '嵴重构（OPA1 断裂）与动力学：分裂促进 Cyt c 释放、融合延缓凋亡。', { size: 10, fill: C.mute, maxW: 420, lh: 14 })

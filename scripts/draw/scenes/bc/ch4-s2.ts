@@ -52,7 +52,7 @@ const draw = (b: B) => {
   quad(360, 350, '④ 希腊钥匙（Greek key）', '四段反平行 β 链的特殊连接方式')
   for (let i = 0; i < 4; i++) betaArrowV(424 + i * 36, 398, 84, 16, i % 2 === 0 ? 1 : -1)
   b.path('M432,394 Q500,368 566,394', { stroke: C.acc, sw: 1.8, dash: '5 4' })
-  b.text(486, 376, '跨接', { size: 10, fill: C.mute })
+  b.text(584, 390, '跨接', { size: 10, fill: C.mute })
 
   // ============ 二、结构域 ============
   b.panel(710, 132, 660, 412, { title: '二、结构域：独立折叠的功能单元（以 Src 激酶为例）' })

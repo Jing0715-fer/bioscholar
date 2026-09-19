@@ -56,8 +56,8 @@ const draw = (b: B) => {
     ],
   })
   b.text(726, 472, '工具药：', { size: 11, weight: 700, fill: C.sub })
-  b.tag(810, 470, '细胞松弛素：切断微丝、阻止聚合', { fill: C.badL, stroke: C.bad, size: 10, tfill: C.bad, pad: 6 })
-  b.tag(1030, 470, '鬼笔环肽：稳定微丝、F-actin 荧光标记', { fill: C.okL, stroke: C.ok, size: 10, tfill: C.ok, pad: 6 })
+  b.tag(865, 470, '细胞松弛素：切断微丝、阻止聚合', { fill: C.badL, stroke: C.bad, size: 10, tfill: C.bad, pad: 6 })
+  b.tag(1050, 470, '鬼笔环肽：稳定微丝、F-actin 荧光标记', { fill: C.okL, stroke: C.ok, size: 10, tfill: C.ok, pad: 6 })
   b.text(726, 505, '非肌肉细胞的微丝结构：', { size: 11, weight: 700, fill: C.sub })
   b.tag(790, 532, '细胞皮层（膜下凝胶层）', { fill: C.accL, stroke: C.acc, size: 10, tfill: C.accD, pad: 6 })
   b.tag(975, 532, '微绒毛（刷状缘）', { fill: C.dnaL, stroke: C.dna, size: 10, tfill: C.dnaD, pad: 6 })
