@@ -62,7 +62,11 @@ const draw = (b: B) => {
   // ITD 卡
   b.rect(60, 742, 320, 96, { fill: C.dnaL, fillOp: 0.45, stroke: C.dna, sw: 1.6, rx: 9 })
   b.text(76, 768, 'ITD 双耳时间差（低频）', { size: 12.5, weight: 700, fill: C.dnaD })
-  b.wtext(76, 790, '锁相比较相位；Jeffress 延迟线（1948）：两耳输入沿不同长度延迟线抵达按 ITD 排列的「符合检测器」——只有同时到达才放电，鸟类获解剖证实。', { size: 10.5, fill: C.sub, maxW: 288, lh: 15 })
+  ;[
+    '锁相比较相位；Jeffress 延迟线（1948）：',
+    '两耳输入沿不同长度延迟线抵达按 ITD 排列的',
+    '「符合检测器」——只有同时到达才放电，鸟类获解剖证实。',
+  ].forEach((ln, i) => b.text(76, 790 + i * 15, ln, { size: 10.5, fill: C.sub }))
   // IID 卡
   b.rect(400, 742, 300, 96, { fill: C.badL, fillOp: 0.4, stroke: C.bad, sw: 1.6, rx: 9 })
   b.text(416, 768, 'IID 双耳强度差（高频）', { size: 12.5, weight: 700, fill: C.bad })

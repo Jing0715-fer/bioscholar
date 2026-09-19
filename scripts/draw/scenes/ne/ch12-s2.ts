@@ -64,7 +64,11 @@ const draw = (b: B) => {
   b.panel(710, 578, 660, 396, { title: '四、突触修剪：经验、小胶质细胞与青春期' })
   b.rect(740, 648, 290, 130, { fill: C.accL, fillOp: 0.45, stroke: C.acc, sw: 1.8, rx: 9 })
   b.text(756, 674, '经验依赖修剪', { size: 12.5, weight: 700, fill: C.accD })
-  b.wtext(756, 698, '视觉关键期的单眼剥夺实验：被剥夺眼的突触被成批删除——「用进废退」在突触尺度的直接演示。', { size: 11, fill: C.sub, maxW: 258, lh: 15 })
+  ;[
+    '视觉关键期的单眼剥夺实验：',
+    '被剥夺眼的突触被成批删除——',
+    '「用进废退」在突触尺度的直接演示。',
+  ].forEach((ln, i) => b.text(756, 698 + i * 15, ln, { size: 11, fill: C.sub }))
   b.rect(1050, 648, 290, 130, { fill: C.dnaL, fillOp: 0.45, stroke: C.dna, sw: 1.8, rx: 9 })
   b.text(1066, 674, '小胶质细胞的吞噬修剪', { size: 12.5, weight: 700, fill: C.dnaD })
   b.wtext(1066, 698, '补体 C1q 与 C3 标记弱突触，小胶质细胞经 CR3 介导吞噬——免疫分子被征用为「突触裁决官」。', { size: 11, fill: C.sub, maxW: 258, lh: 15 })

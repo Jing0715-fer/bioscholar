@@ -42,7 +42,7 @@ const draw = (b: B) => {
   b.circle(869, 340, 5, { fill: C.acc })
   b.text(880, 372, 'E_rev(GABA_A) ≈ E_Cl', { size: 11.5, weight: 700, fill: C.accD })
   b.legend(800, 240, [['AMPA 电流（Na⁺ 与 K⁺ 混透）', C.bad], ['GABA_A 电流（Cl⁻）', C.acc]], { size: 11, gap: 14 })
-  b.wtext(770, 530, 'E_rev 为各离子电池按电导的加权平均；V_m 在 E_rev 之上或之下，电流方向随之翻转。', { size: 11.5, fill: C.sub, maxW: 580, lh: 16 })
+  b.wtext(770, 548, 'E_rev 为各离子电池按电导的加权平均；V_m 在 E_rev 之上或之下，电流方向随之翻转。', { size: 11.5, fill: C.sub, maxW: 580, lh: 16 })
 
   // ============ 三、总和与 AIS ============
   b.panel(30, 576, 1340, 402, { title: '三、时间与空间总和、轴突起始段的终审' })

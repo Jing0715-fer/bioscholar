@@ -61,7 +61,13 @@ const draw = (b: B) => {
   // 长时分支
   b.rect(1150, 208, 196, 214, { fill: C.badL, fillOp: 0.45, stroke: C.bad, sw: 1.6, rx: 9 })
   b.text(1166, 232, '长时敏化（数天）', { size: 12.5, weight: 700, fill: C.bad })
-  b.wtext(1166, 254, '多次间隔 5-HT 脉冲 → PKA 催化亚基入核 → 磷酸化 CREB → 启动转录（C/EBP 等即刻早基因）→ 新突触生长，突触数近乎倍增。', { size: 10.5, fill: C.sub, maxW: 166, lh: 15 })
+  ;[
+    '多次间隔 5-HT 脉冲 →',
+    'PKA 催化亚基入核 →',
+    '磷酸化 CREB → 启动转录',
+    '（C/EBP 等即刻早基因）→',
+    '新突触生长，突触数近乎倍增。',
+  ].forEach((ln, i) => b.text(1166, 254 + i * 15, ln, { size: 10.5, fill: C.sub }))
   b.wtext(1150, 452, '蛋白合成抑制剂或 CREB 阻断：取消长时成分而保留短时成分。', { size: 10.5, fill: C.mute, maxW: 200, lh: 15 })
   b.wtext(790, 540, '同一级联还实现联合性：感觉末梢的腺苷酸环化酶为钙-钙调蛋白敏感——「刚活动过、钙尚存」的末梢才被 5-HT 重点放大。', { size: 11, fill: C.sub, maxW: 540, lh: 16 })
 
