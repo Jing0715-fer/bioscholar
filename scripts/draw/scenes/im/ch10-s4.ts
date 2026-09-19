@@ -94,8 +94,8 @@ const draw = (b: B) => {
     [0.03, 0.02], [0.2, 0.06], [0.36, 0.16], [0.52, 0.34], [0.68, 0.55], [0.85, 0.72], [1, 0.82],
   ], { stroke: C.dna, sw: 3, smooth: true })
   b.legend(ax2 + aw2 - 320, ay2 - ah2 + 26, [['自身 IgG（主动合成）', C.dna], ['母传 IgG（被动获得）', C.rna]], { size: 10.5, gap: 14 })
-  b.ctext(ax2 + 0.32 * aw2, ay2 - ah2 - 10, '低谷窗：母传保护与自体免疫交接的脆弱期', { size: 10, weight: 700, fill: C.warn })
-  b.ctext(ax2 + aw2 / 2, ay2 + 68, 'IgM、IgA、IgE 均不能通过胎盘——脐血 IgM 升高提示宫内感染（TORCH 等）', { size: 10, fill: C.mute })
+  b.ctext(ax2 + 0.7 * aw2, ay2 - 0.18 * ah2, '低谷窗：母传保护与自体免疫交接的脆弱期', { size: 10, weight: 700, fill: C.warn })
+  b.ctext(1035, 840, 'IgM、IgA、IgE 均不能通过胎盘——脐血 IgM 升高提示宫内感染（TORCH 等）', { size: 10, fill: C.mute })
 
   b.rect(700, 768, 670, 90, { fill: C.rnaL, fillOp: 0.4, stroke: C.rna, sw: 1.6, rx: 9 })
   b.text(718, 792, '被动免疫的两条馈赠', { size: 12.5, weight: 700, fill: C.rnaD })
@@ -108,6 +108,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: '体液免疫应答的规律：初次与再次应答、抗体持久性与母传抗体',
-  subtitle: '初次应答潜伏期约 5–10 天、IgM 起步、平台低而亲和力低；再次应答潜伏期约 1–3 天、IgG 为主、平台高数倍至数十倍且维持更久；IgG 血清半衰期约 23 天（IgG3 约一周、IgM 约 5 天、IgE 约 2 天），经 FcRn 酸性内体拾取-中性释放的回收循环延寿；长期维持由骨髓生存龛长寿浆细胞不依赖抗原持续供给；母体 IgG 经胎盘 FcRn 转运（孕晚期最活跃）、母乳 sIgA 覆盖黏膜构成被动免疫，脐血 IgM 升高提示宫内感染，母传 IgG 干扰疫苗应答故麻疹疫苗约 9 月龄前后接种',
+  subtitle: '初次应答潜伏期约 5–10 天、IgM 起步、平台低而亲和力低；再次应答约 1–3 天、IgG 为主、平台高数倍且维持更久；IgG 半衰期约 23 天，经 FcRn 酸性内体拾取-中性释放的回收循环延寿，长期维持赖骨髓长寿浆细胞不依赖抗原持续供给；母体 IgG 经胎盘 FcRn 转运、母乳 sIgA 覆盖黏膜构成被动免疫，脐血 IgM 升高提示宫内感染，母传 IgG 干扰应答故麻疹疫苗约 9 月龄接种',
   draw,
 })

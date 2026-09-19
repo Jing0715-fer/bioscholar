@@ -89,6 +89,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: 'BCR 复合体与 B 细胞活化信号：构造、正负调控与三类抗原',
-  subtitle: 'BCR 由 mIgM/mIgD 与 Igα/Igβ（CD79a/b）组成，信号亚单位共携两枚 ITAM，经 Lyn-Syk-BLNK-PLCγ2 接通钙流、MAPK 与 NF-κB 三条主干（Btk 缺陷致 XLA）；CD21-CD19-CD81 共受体以 C3d 耦联补体激活、显著降低活化阈值，EB 病毒经 gp350 盗用 CD21；CD22 与 FCGR2B 经 ITIM 招募 SHP-1 与 SHIP 负调，抗体反馈构成自限环；TD 抗原须 Tfh 辅助并产出记忆与亲和力成熟，TI-1 依赖丝裂原、TI-2 依赖重复表位交联，婴幼儿对 TI-2 应答弱故多糖疫苗须制成结合疫苗',
+  subtitle: 'BCR 由 mIg 与 Igα/Igβ 组成、共携两枚 ITAM，经 Lyn-Syk-BLNK-PLCγ2 接通钙流、MAPK 与 NF-κB 三条主干（Btk 缺陷致 XLA）；CD21 共受体以 C3d 耦联补体降低阈值，EB 病毒经 gp350 盗用 CD21；CD22 与 FCGR2B 经 ITIM 招募 SHP-1/SHIP 负调，抗体反馈构成自限环；TD 须 Tfh 辅助，TI-1 依赖丝裂原、TI-2 依赖重复表位交联，婴幼儿 TI-2 应答弱故多糖须制成结合疫苗',
   draw,
 })

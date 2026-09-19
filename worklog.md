@@ -525,3 +525,19 @@ Stage Summary:
   - ch8-s3.ts：共性卡 wtext 起始 x 由 cx-140 改为 max(16, cx-140)，首列不再负坐标贴边
 - 终态：`bun scripts/review/verify-subject.ts mi` → 「30 张 SVG，确认真问题 0 处（0 张图）」，退出码 0；生成 30/30 张无失败
 - 遗留：无
+
+## Task ID: 41-fix-k — im 学科排版修复（2025-12）
+- 范围：scripts/draw/scenes/im/*.ts（仅此目录）；lib/gen/review/其他学科零改动
+- 验证：bun scripts/review/verify-subject.ts im → 22 处真问题（12 图）→ 0 处（exit 0）
+- 修复明细（12 文件）：
+  - ch10-s2 / ch10-s4 / ch11-s4 / ch12-s2 / ch12-s3 / ch8-s1：subtitle 过宽致 TRUNC-LEFT/RIGHT（middle 锚定，y=74/100）→ 按 scene() 换行/缩字号逻辑校准后缩短副标题（保持科学语义，细节均已在图正文中），终态字号 13–16、边距 ≥42px
+  - ch10-s4 另修复：「低谷窗」标注与 panel 三标题交叠 390px → 移入曲线间空带 (500,906)；「IgM/IgA/IgE 不能通过胎盘」注记 TRUNC-BOTTOM(y=1008) → 移入右侧「被动免疫」框内 (1035,840)
+  - ch11-s1：「耐受亦可后天获得」wtext 与时间线 Burnet 副注交叠 339px → y 250→232（面板标题下、时间线上方空带）
+  - ch8-s1：「多基因性拓宽…」总结句与条形图注交叠 173px → y 668→688（panel 底内侧）
+  - ch3-s2：表一末行「效应方向」与表二表头「成熟 DC」交叠 81px（两表重叠 44px）→ 表一 rowH 40→36、表二 y 336→380 rowH 38→36，两表分离
+  - ch4-s1：MAC 框 wtext 左对齐起点 x=1230 且无断行点致 TRUNC-RIGHT → 拆两行居中 (1230,294/306)，内容原样保留
+  - ch4-s4：轴 ylabel「血清急性期蛋白」与 ytick「中」交叠 32px → 改自绘 ctext(104,478) 避开刻度带
+  - ch6-s4：HAMA 注释行压入表格末行（交叠 22/70px）→ 表 rowH 40→36、注释 y 676→698
+  - ch8-s4：「MHC II 凹槽」与「CLIP」同位交叠 25px → 凹槽标签下移 (225,700)
+- 手法：仅位置/字号/断行/表格行高调整，无科学语义改动；无任何 git/删除/清理操作
+- /tmp 留有校准脚本 fixk-*.ts 与 sub-*.txt 草稿（未删除）
