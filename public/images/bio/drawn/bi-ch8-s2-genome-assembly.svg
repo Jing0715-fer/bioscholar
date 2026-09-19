@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因组组装：de Bruijn 图的欧拉路径、重复困境与 N50 标尺</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">de Bruijn 图把读段切为 k-mer 建图，组装化为多项式可解的欧拉路径；k-mer 覆盖 ≈ 读覆盖 ×（读长 − k + 1）/ 读长，30×·150 bp·k=51 时约 20×；人类基因组约半数为重复衍生物（LINE 约两成、Alu 约 300 bp 拷贝逾百万）；OLC 以重叠–布局–共识三步复兴于长读；N50 为降序累加达总长一半时所在重叠群长度，与 L50、NG50 及 QUAST 评估合看</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">基因组组装：de Bruijn 图的欧拉路径、重复困境与 N50 标尺</text>
+  <text x="700" y="74" text-anchor="middle" font-size="16" fill="#64748b">deBruijn图把读段切为k-mer建图，组装化为多项式可解的欧拉路径；k-mer覆盖≈读覆盖×（读长−k+1）/读长，30×·150bp·k=51时约20×；人类基因组约半数为重复衍生物（LINE</text>
+  <text x="700" y="100" text-anchor="middle" font-size="16" fill="#64748b">约两成、Alu约300bp拷贝逾百万）；OLC以重叠–布局–共识三步复兴于长读；N50为降序累加达总长一半时所在重叠群长度，与L50、NG50及QUAST评估合看</text>
   <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、de Bruijn 图：把组装化为多项式可解的欧拉路径</text>
   <rect x="96.28" y="169.8" width="67.44" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>

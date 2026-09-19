@@ -27,6 +27,10 @@ import ch10s1 from './ch10-s1'
 import ch10s2 from './ch10-s2'
 import ch10s3 from './ch10-s3'
 import ch10s4 from './ch10-s4'
+import legacyPhase from './legacy-phase'
+import legacyTweezers from './legacy-tweezers'
+import legacyResting from './legacy-resting'
+import legacyKcsa from './legacy-kcsa'
 
 export default {
   'bp-ch1-s1-scale-hierarchy': ch1s1,
@@ -57,4 +61,9 @@ export default {
   'bp-ch10-s2-chemotaxis-limits': ch10s2,
   'bp-ch10-s3-quantum-biology': ch10s3,
   'bp-ch10-s4-synbio-outlook': ch10s4,
+  // 遗留手绘图重绘（41 系列）
+  'membrane-phase-transition': legacyPhase,
+  'optical-tweezers': legacyTweezers,
+  'resting-membrane-potential': legacyResting,
+  'kcsa-selectivity-filter': legacyKcsa,
 } as Record<string, string>

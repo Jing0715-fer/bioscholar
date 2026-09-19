@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">BLAST 统计显著性：极值分布、E 值与 bit 分</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">随机序列最高局部比对分服从极值分布，尾部按 e 的负 λS 次方指数衰减；E ≈ K·m·N·e^(−λS) 为期望假命中次数，与 P 值经 P = 1 − e^(−E) 换算；数据库翻倍则 E 近似翻倍，跨搜索比较应使用 bit 分；蛋白搜索常以 E &lt; 0.01 为显著惯例</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">BLAST 统计显著性：极值分布、E 值与 bit 分</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">随机序列最高局部比对分服从极值分布，尾部按e的负λS次方指数衰减；E≈K·m·N·e^(−λS)为期望假命中次数，与P值经P=1−e^(−E)换算；数据库翻倍则E近似翻倍，</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">跨搜索比较应使用bit分；蛋白搜索常以E&lt;0.01为显著惯例</text>
   <rect x="30" y="132" width="780" height="480" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、随机高分服从极值分布（Karlin-Altschul，1990）</text>
   <rect x="150" y="210" width="560" height="280" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>

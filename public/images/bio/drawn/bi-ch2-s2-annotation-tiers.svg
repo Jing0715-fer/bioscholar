@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">注释层级：RefSeq 代表序列与 UniProtKB 审阅层</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">RefSeq 以 NM_/NP_（策展）与 XM_/XP_（预测，随注释版本变动）为每个基因提供唯一代表；UniProtKB 手工审阅约 50 余万条、自动注释数亿条，相差约三个数量级；注释沿「文献→审阅层→自动层」传播——视数据库为带时间戳的假说集合</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">注释层级：RefSeq 代表序列与 UniProtKB 审阅层</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">RefSeq以NM_/NP_（策展）与XM_/XP_（预测，随注释版本变动）为每个基因提供唯一代表；UniProtKB手工审阅约50余万条、自动注释数亿条，相差约三个数量级；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">注释沿「文献→审阅层→自动层」传播——视数据库为带时间戳的假说集合</text>
   <rect x="30" y="132" width="640" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、RefSeq：给每个基因一位代表序列</text>
   <rect x="60" y="216" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>

@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单细胞转录组：均值遮罩的解耦、UMI 去重与伪 bulk 检验</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">bulk 均值无法区分「细胞比例 20%→35%」与「该类型自身表达上调」，单细胞测序使二者解耦并照亮稀有细胞群；10x 液滴以细胞条形码凝胶珠封装细胞，UMI 给每条原始分子发身份证、同 UMI 去重只计一次，掉落使计数零膨胀；双联体与漏液是两类技术噪声；标准流水线为质控-归一化-高变基因-PCA-UMAP-图聚类-注释；拟时序度量轨迹拓扑次序，RNA 速度以未剪接比例补充方向；伪 bulk 把检验单位收回样本级——每组仍需三个以上供体</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单细胞转录组：均值遮罩的解耦、UMI 去重与伪 bulk 检验</text>
+  <text x="700" y="74" text-anchor="middle" font-size="13" fill="#64748b">bulk均值无法区分「细胞比例20%→35%」与「该类型自身表达上调」，单细胞测序使二者解耦并照亮稀有细胞群；10x液滴以细胞条形码凝胶珠封装细胞，UMI给每条原始分子发身份证、同UMI去重只计一次，掉落使计数零膨胀；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="13" fill="#64748b">双联体与漏液是两类技术噪声；标准流水线为质控-归一化-高变基因-PCA-UMAP-图聚类-注释；拟时序度量轨迹拓扑次序，RNA速度以未剪接比例补充方向；伪bulk把检验单位收回样本级——每组仍需三个以上供体</text>
   <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、bulk 的平均遮罩：同一读数的两种真相</text>
   <rect x="60" y="186" width="300" height="226" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>

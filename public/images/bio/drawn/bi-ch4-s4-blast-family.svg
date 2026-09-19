@@ -13,8 +13,9 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">BLAST 家族与参数调优：翻译方向、迭代与旋钮</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">tBLASTn 以蛋白查六读框翻译的核酸库、tBLASTx 两端皆译最慢；PSI-BLAST 由显著命中构建 PSSM 逐轮迭代、凭家族模式召回远缘同源，漂移源于非同源序列混入 profile 并自我强化；字长与 T 是速度—灵敏度主旋钮，SEG/DUST 屏蔽低复杂度</text>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">BLAST 家族与参数调优：翻译方向、迭代与旋钮</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">tBLASTn以蛋白查六读框翻译的核酸库、tBLASTx两端皆译最慢；PSI-BLAST由显著命中构建PSSM逐轮迭代、凭家族模式召回远缘同源，漂移源于非同源序列混入profile</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">并自我强化；字长与T是速度—灵敏度主旋钮，SEG/DUST屏蔽低复杂度</text>
   <rect x="30" y="132" width="700" height="500" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、BLAST 家族：五个程序的翻译方向</text>
   <rect x="60" y="210" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
