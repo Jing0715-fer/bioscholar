@@ -591,7 +591,7 @@ export const illustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/commons/cdk-cyclin.png',
       caption:
-        '细胞周期的 CDK–cyclin 引擎：cyclin 周期性合成与降解（经泛素–蛋白酶体途径）驱动 CDK 活性振荡，不同 cyclin–CDK 组合序贯主导各时相转换——G1 期 cyclin D–CDK4/6 磷酸化 Rb 释放 E2F，启动 G1/S 基因表达；cyclin E–CDK2 触发 S 期起始、启动复制起点；cyclin A–CDK2 维持 S 期进程；cyclin B–CDK1（MPF）驱动 G2/M 转换与有丝分裂事件；末期 APC/C 降解 cyclin B 使细胞退出分裂。CKI（p21、p27 等）与磷酸化修饰（Wee1/Cdc25）对引擎进行精密校准，DNA 损伤经 p53→p21 拉动刹车（限制点与纺锤体组装检查点为图中主线之外的监督层）。',
+        '细胞周期的 CDK–cyclin 引擎：cyclin 周期性合成与降解（经泛素–蛋白酶体途径）驱动 CDK 活性振荡，不同 cyclin–CDK 组合序贯主导各时相转换——G1 期 cyclin D–CDK4/6 磷酸化 Rb 释放 E2F，开启 G1/S 表达；cyclin E–CDK2 触发 S 期起始与复制起点启动；cyclin A–CDK2 维持 S 期进程；cyclin B–CDK1（MPF）驱动 G2/M 转换与有丝分裂事件；末期 APC/C 降解 cyclin B 退出分裂。CKI（p21、p27 等）与 Wee1/Cdc25 磷酸化精密校准引擎，DNA 损伤经 p53→p21 拉动刹车（限制点与纺锤体检查点为图外监督层）。',
       credit: commonsCredit('Fatma Abukhater', 'CC0'),
     },
   ],

@@ -23,9 +23,10 @@ export const C = {
   // 技术流程 / 数据（天蓝）
   acc: '#0369a1', accL: '#e0f2fe', accD: '#075985',
   // 状态色
-  ok: '#059669', okL: '#d1fae5',
-  warn: '#d97706', warnL: '#fef3c7',
-  bad: '#dc2626', badL: '#fee2e2',
+  ok: '#059669', okL: '#d1fae5', okD: '#065f46',
+  warn: '#d97706', warnL: '#fef3c7', warnD: '#92400e',
+  bad: '#dc2626', badL: '#fee2e2', badD: '#991b1b',
+  rose: '#be123c',
 } as const
 
 // ---------------- 文本宽度估算（用于自动定宽，防溢出） ----------------
