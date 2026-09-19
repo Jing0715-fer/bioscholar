@@ -321,7 +321,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      '复合体 I、III、IV 传递电子的同时把 H⁺ 从基质泵入膜间隙，形成质子动力势；H⁴ 经 ATP 合酶回流释放能量合成 ATP，这就是化学渗透耦联。A 为被否证的化学偶联假说；电子传递链位于内膜；H⁺ 泵出而非泵入基质。',
+      '复合体 I、III、IV 传递电子的同时把 H⁺ 从基质泵入膜间隙，形成质子动力势；H⁺ 经 ATP 合酶回流释放能量合成 ATP，这就是化学渗透耦联。A 为被否证的化学偶联假说；电子传递链位于内膜；H⁺ 泵出而非泵入基质。',
     difficulty: 2
   },
   {
@@ -420,7 +420,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 0,
     explanation:
-      '多数驱动蛋白执行顺向运输（向正端/轴突末梢），胞质动力蛋白在 dynactin 辅助下执行逆向运输（向负端/胞体），两者都以 ATP 水解与构象变化耦联、以约 8 nm 步距 hand-over-hand 行走。轴丝动力蛋白缺陷导致原发性纤毛不动综合征（Kartagener 综合征：不育伴内脏反位）。',
+      '多数驱动蛋白执行顺向运输（向正端/轴突末梢），胞质动力蛋白在 dynactin 辅助下执行逆向运输（向负端/胞体），两者都以 ATP 水解与构象变化耦联供能；驱动蛋白-1 以约 8 nm 的步长 hand-over-hand 前行（动力蛋白步长可变，约 8—32 nm）。轴丝动力蛋白缺陷导致原发性纤毛不动综合征（Kartagener 综合征：不育伴内脏反位）。',
     difficulty: 3
   },
   {
@@ -449,7 +449,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 0,
     explanation:
-      '肌钙蛋白-原肌球蛋白复合体位于细肌丝，是 Ca²⁺ 的开关：肌浆去极化使 Ca²⁺ 经 ryanodine 受体释放，结合肌钙蛋白 C 后原肌球蛋白滑入螺旋沟，暴露结合位点，横桥循环得以进行。CaM-CaMKII 参与平滑肌收缩调控而非骨骼肌的分子开关。',
+      '肌钙蛋白-原肌球蛋白复合体位于细肌丝，是 Ca²⁺ 的开关：肌浆去极化使 Ca²⁺ 经 ryanodine 受体释放，结合肌钙蛋白 C 后原肌球蛋白滑入螺旋沟，暴露结合位点，横桥循环得以进行。CaM-MLCK（肌球蛋白轻链激酶）参与平滑肌收缩调控而非骨骼肌的分子开关。',
     difficulty: 3
   },
   {
@@ -788,7 +788,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      '分化细胞与受精卵拥有基本相同的基因组，差异源于基因表达模式（转录因子组合与表观遗传标记），这保证了 Gurdon 核移植与 iPS 重编程在原理上可行。B 细胞抗体基因重排是基因组不变的少数例外，故 A、C 错误。',
+      '分化细胞与受精卵拥有基本相同的基因组，差异源于基因表达模式（转录因子组合与表观遗传标记），这保证了 Gurdon 核移植与 iPS 重编程在原理上可行。抗体基因的 V(D)J 重排仅发生在 B 细胞谱系且限于免疫球蛋白位点，并不改变其他体细胞的基因组，也不是分化的普遍机制——A、C 选项描述的基因组大量丢失/重排与定向突变并非分化的本质，故错误。',
     difficulty: 1
   },
   {
@@ -899,7 +899,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 0,
     explanation:
-      '死亡受体（外源性）途径：FasL-Fas 二聚化募集接头 FADD 与起始 caspase-8 组成 DISC，caspase-8 活化后直接切割激活执行 caspase-3（在 II 型细胞中经 tBid 借道线粒体放大）。B 是线粒体（内源性）途径，C 是坏死性凋亡轴，D 混淆了颗粒酶/穿孔素机制。',
+      '死亡受体（外源性）途径：FasL-Fas 三聚化募集接头 FADD 与起始 caspase-8 组成 DISC，caspase-8 活化后直接切割激活执行 caspase-3（在 II 型细胞中经 tBid 借道线粒体放大）。B 是线粒体（内源性）途径，C 是坏死性凋亡轴，D 混淆了颗粒酶/穿孔素机制。',
     difficulty: 2
   },
   {

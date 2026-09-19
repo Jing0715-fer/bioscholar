@@ -228,7 +228,7 @@ export const drawBiR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/bi-ch10-s1-ms-protein-id.svg',
       caption:
-        'ESI 与 MALDI 两项软电离分享 2002 年诺贝尔化学奖；四类分析器分工——四极杆滤门、离子阱多级碎裂、Orbitrap 十万级分辨率加 ppm 精度、TOF 质量范围宽；MS1 选母离子、MS2 读 b/y 离子质量阶梯推序列，可鉴肽段多在 7–25 残基、漏切允许 0–2 个；靶-诱饵策略以假目标标定假阳性，谱/肽/蛋白三级各控 FDR 约 1%；动态范围约七个数量级是根本瓶颈',
+        'ESI 与 MALDI 两项软电离分享 2002 年诺贝尔化学奖；四类分析器分工——四极杆滤门、离子阱多级碎裂、Orbitrap 十万级分辨率加 ppm 精度、TOF 质量范围宽；MS1 选母离子、MS2 读 b/y 离子质量阶梯推序列，可鉴肽段多在 7–25 残基、漏切允许 0–2 个；靶-诱饵策略以假目标标定假阳性，谱/肽/蛋白三级各控 FDR 约 1%；动态范围约十个数量级是根本瓶颈',
       credit: DRAWN_CREDIT,
     },
   ],
@@ -276,7 +276,7 @@ export const drawBiR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/bi-ch7-s2-homology-threading.svg',
       caption:
-        '同一性高于 40% 建模近乎照抄（主链误差约 1 Å）、30% 上下 1.5–2 Å、低于 30% 进入暮光区；SWISS-MODEL 四步为模板识别、序列比对、模型搭建与质量评估，侧链用旋转异构体库安装、环区是误差主要来源；穿线按残基-环境相容性打分；Ramachandran 许可区占比约九成以上、QMEAN 给出准确性估计',
+        '同一性高于 40% 建模近乎照抄（主链误差约 1 Å）、30% 上下 1.5–2 Å、低于 30% 进入暮区；SWISS-MODEL 四步为模板识别、序列比对、模型搭建与质量评估，侧链用旋转异构体库安装、环区是误差主要来源；穿线按残基-环境相容性打分；Ramachandran 许可区占比约九成以上、QMEAN 给出准确性估计',
       credit: DRAWN_CREDIT,
     },
   ],

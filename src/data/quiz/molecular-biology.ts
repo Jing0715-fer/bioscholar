@@ -526,10 +526,10 @@ export const molecularBiologyQuiz: QuizQuestion[] = [
     chapterId: 'molecular-biology-ch7',
     type: 'single',
     question: '氨基酸饥饿触发严紧反应时，由 RelA 催化合成的效应分子是？',
-    options: ['cAMP', 'ppGpp（鸟苷四/五磷酸，"魔斑"）', 'cGMP', 'IP₃'],
+    options: ['cAMP', 'ppGpp（鸟苷四磷酸，"魔斑"）', 'cGMP', 'IP₃'],
     answer: 1,
     explanation:
-      '空载 tRNA 进入 A 位激活核糖体相关 RelA，催化 GTP+ATP 合成 ppGpp。ppGpp 与 DksA 协同改变 RNA 聚合酶启动子选择：下调 rRNA/tRNA 等稳定 RNA 转录、上调氨基酸合成基因，使细胞进入低生长的应急模式。SpoT 负责 ppGpp 的水解。',
+      '空载 tRNA 进入 A 位激活核糖体相关 RelA，催化 GDP+ATP 合成 ppGpp（鸟苷四磷酸；以 GTP 为底物则生成 pppGpp，二者合称"魔斑"）。ppGpp 与 DksA 协同改变 RNA 聚合酶启动子选择：下调 rRNA/tRNA 等稳定 RNA 转录、上调氨基酸合成基因，使细胞进入低生长的应急模式。SpoT 负责 ppGpp 的水解。',
     difficulty: 3,
   },
 
@@ -767,7 +767,7 @@ export const molecularBiologyQuiz: QuizQuestion[] = [
     options: ["5'-NGG-3'", "5'-TTTV-3'", "5'-NNGRRT-3'", "3'-NGG-5' 位于靶序列 5′ 侧"],
     answer: 0,
     explanation:
-      "SpCas9 要求靶序列紧邻的 3′ 侧存在 5′-NGG-3′ 的 PAM。PAM 是自我/非我识别的第一道闸门：自身 CRISPR 阵列不含 PAM，故不被自身免疫攻击。TTTV 为 Cas12a 的 PAM，NNGRRT 为 Cas13 检测的原间隔序列特征（Cas13 靶向 RNA 不用 PAM）。",
+      "SpCas9 要求靶序列紧邻的 3′ 侧存在 5′-NGG-3′ 的 PAM。PAM 是自我/非我识别的第一道闸门：自身 CRISPR 阵列不含 PAM，故不被自身免疫攻击。TTTV 为 Cas12a 的 PAM，NNGRRT 为 SaCas9 的 PAM（Cas13 靶向 RNA 不用 PAM）。",
     difficulty: 1,
   },
   {

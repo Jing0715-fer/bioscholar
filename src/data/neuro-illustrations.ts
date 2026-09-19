@@ -58,7 +58,7 @@ export const neuroIllustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/commons/neurotransmitter-release.png',
       caption:
-        '突触囊泡胞吐的分子机器：突触前膜上的 syntaxin 与 SNAP-25 组成受体复合体，囊泡膜上的 synaptobrevin（VAMP）以三股 α 螺旋束与它们组装成 SNARE 复合体，像拉链一样把两层膜拉到几纳米内；Ca²⁺ 内流后 synaptotagmin 的 C2 结构域感知钙并结合磷脂，触发融合孔开放——递质于亚毫秒内倾入间隙。肉毒杆菌毒素各血清型以锌内肽酶特异性切割三种 SNARE 蛋白之一，据此可反推每型毒素的麻痹机制。',
+        '突触囊泡胞吐的分子机器：突触前膜上的 syntaxin 与 SNAP-25 组成受体复合体，囊泡膜上的 synaptobrevin（VAMP）与它们组装成四股 α 螺旋束的 SNARE 复合体（SNAP-25 贡献其中两条螺旋），像拉链一样把两层膜拉到几纳米内；Ca²⁺ 内流后 synaptotagmin 的 C2 结构域感知钙并结合磷脂，触发融合孔开放——递质于亚毫秒内倾入间隙。肉毒杆菌毒素各血清型以锌内肽酶特异性切割三种 SNARE 蛋白之一，据此可反推每型毒素的麻痹机制。',
       credit: '图片来源：Wikimedia Commons（neurotransmitter release diagram）',
     },
     {

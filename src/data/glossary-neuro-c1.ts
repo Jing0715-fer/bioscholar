@@ -24,7 +24,7 @@ export const neuroGlossaryC1: GlossaryTerm[] = [
     subjectId: 'neurobiology',
     category: '突触结构',
     definition:
-      '介导突触囊泡与突触前膜融合的核心蛋白机器，由囊泡上的 synaptobrevin（VAMP）、膜上的 syntaxin 与 SNAP-25 三者组装成三股螺旋束，像拉链一样把囊泡拉向质膜。synaptotagmin 作为钙感受器感知钙离子浓度升高后触发融合孔开放。肉毒杆菌毒素与破伤风毒素均为锌依赖内肽酶，特异性切割 SNARE 蛋白从而阻断递质释放——前者致弛缓性麻痹，后者致痉挛性麻痹，是 SNARE 机制的著名病理注脚。',
+      '介导突触囊泡与突触前膜融合的核心蛋白机器，由囊泡上的 synaptobrevin（VAMP）、膜上的 syntaxin 与 SNAP-25（贡献两条螺旋）三者组装成四股螺旋束，像拉链一样把囊泡拉向质膜。synaptotagmin 作为钙感受器感知钙离子浓度升高后触发融合孔开放。肉毒杆菌毒素与破伤风毒素均为锌依赖内肽酶，特异性切割 SNARE 蛋白从而阻断递质释放——前者致弛缓性麻痹，后者致痉挛性麻痹，是 SNARE 机制的著名病理注脚。',
   },
   {
     id: 'g-187',
