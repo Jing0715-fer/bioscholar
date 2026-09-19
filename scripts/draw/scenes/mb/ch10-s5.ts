@@ -91,7 +91,7 @@ const draw = (b: B) => {
     b.ctext(x, 672, d, { size: 11, fill: C.mute })
   })
   // 技术矩阵
-  b.tag(150, 712, '动用 8+ 技术：RNA-seq · ChIP-seq · DNase · BS-seq · Hi-C 等', { fill: C.accL, stroke: C.acc, size: 11.5, tfill: C.accD, pad: 8 })
+  b.tag(380, 712, '动用 8+ 技术：RNA-seq · ChIP-seq · DNase · BS-seq · Hi-C 等', { fill: C.accL, stroke: C.acc, size: 11.5, tfill: C.accD, pad: 8 })
   // 80% 结论
   b.rect(56, 742, 648, 100, { fill: C.warnL, stroke: '#b45309', sw: 1.4, rx: 9, fillOp: 0.4 })
   b.text(72, 768, '2012 年主论文：约 80% 的基因组具生化活性', { size: 14, weight: 700, fill: C.rnaD })

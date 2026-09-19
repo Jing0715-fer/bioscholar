@@ -81,7 +81,7 @@ const draw = (b: B) => {
   b.text(712, 824, '前导链模板（连续合成）', { size: 12, fill: C.sub })
   b.text(712, 914, '后随链模板（不连续合成）', { size: 12, fill: C.sub })
   b.wtext(760, 860, 'γ 复合体（钳载蛋白）以 ATP 水解将 β 夹装载至引物-模板连接处；β 二聚体环套住 DNA，使 pol III 获得高续进性。', { size: 12, fill: C.sub, maxW: 570, lh: 18 })
-  b.wtext(760, 908, 'τ 亚基连接两个核心并结合 DnaB，实现前导链与后随链的协同合成。', { size: 12, fill: C.sub, maxW: 570, lh: 18 })
+  b.wtext(760, 944, 'τ 亚基连接两个核心并结合 DnaB，实现前导链与后随链的协同合成。', { size: 12, fill: C.sub, maxW: 570, lh: 18 })
 }
 
 export default scene({

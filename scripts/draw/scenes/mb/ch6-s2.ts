@@ -52,7 +52,7 @@ const draw = (b: B) => {
   })
   b.ellipse(1108, 394, 16, 13, { fill: C.badL, stroke: C.bad, sw: 1.8 })
   b.ctext(1108, 398, 'I', { size: 11, weight: 700, fill: '#991b1b' })
-  b.wtext(1140, 356, 'I 读 U / C / A', { size: 10.5, weight: 700, fill: C.bad, maxW: 200, lh: 14 })
+  b.wtext(1215, 356, 'I 读 U / C / A', { size: 10.5, weight: 700, fill: C.bad, maxW: 200, lh: 14 })
 
   // ============ 三、摆动规则表 ============
   b.panel(30, 432, 660, 280, { title: '三、Crick 摆动规则（1966）与 tRNA 数目' })
@@ -69,7 +69,7 @@ const draw = (b: B) => {
       ['I（肌苷）', 'U、C 或 A'],
     ],
   })
-  b.wtext(60, 656, 'tRNA 数量可少于 61 种：大肠杆菌约 40～50 种有效 tRNA，人线粒体仅 22 种。', { size: 11.5, fill: C.sub, maxW: 620, lh: 16 })
+  b.wtext(60, 682, 'tRNA 数量可少于 61 种：大肠杆菌约 40～50 种有效 tRNA，人线粒体仅 22 种。', { size: 11.5, fill: C.sub, maxW: 620, lh: 16 })
 
   // ============ 四、通用性例外 ============
   b.panel(710, 432, 660, 280, { title: '四、通用性的系统例外与功能性再定义' })
@@ -86,7 +86,7 @@ const draw = (b: B) => {
       ['赭球菌 / 甲烷菌', 'UAG→吡咯赖氨酸（Pyl）'],
     ],
   })
-  b.wtext(730, 656, '功能性再定义：UGA 在 SECIS 元件配合下插入硒代半胱氨酸（第 21 种氨基酸，SELB / eEFSec 系统）。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
+  b.wtext(730, 682, '功能性再定义：UGA 在 SECIS 元件配合下插入硒代半胱氨酸（第 21 种氨基酸，SELB / eEFSec 系统）。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
 
   // ============ 五、读码框与移码 ============
   b.panel(30, 732, 1340, 238, { title: '五、读码框：三联体连续、无重叠、无逗号' })

@@ -78,18 +78,18 @@ const draw = (b: B) => {
   // ============ 三、EMSA 与 ChIP（左下） ============
   b.panel(30, 554, 860, 406, { title: '三、DNA-蛋白互作验证：EMSA（体外）与 ChIP（体内）' })
   // —— EMSA ——
-  b.ctext(250, 582, 'EMSA：凝胶迁移阻滞', { size: 14.5, weight: 700, fill: C.ink })
-  b.gel(56, 596, 240, 240, [
+  b.ctext(250, 596, 'EMSA：凝胶迁移阻滞', { size: 14.5, weight: 700, fill: C.ink })
+  b.gel(56, 604, 240, 232, [
     { label: '游离探针', bands: [[0.80, C.rna]] },
     { label: '+ 蛋白', bands: [[0.44, C.rna], [0.80, '#e7c998']] },
     { label: '+ 蛋白 + 抗体', bands: [[0.16, C.rna]] },
   ], { size: 11 })
-  b.text(302, 664, '← 超迁移（抗体）', { size: 11.5, weight: 700, fill: C.enzD })
-  b.text(302, 718, '← 阻滞带（复合物）', { size: 11.5, weight: 700, fill: C.sub })
+  b.text(302, 670, '← 超迁移（抗体）', { size: 11.5, weight: 700, fill: C.enzD })
+  b.text(302, 724, '← 阻滞带（复合物）', { size: 11.5, weight: 700, fill: C.sub })
   b.wtext(56, 878, '① 标记 DNA 探针与蛋白结合 → 复合物在非变性凝胶中迁移变慢（阻滞带）', { size: 11.5, fill: C.sub, maxW: 400, lh: 19 })
   b.wtext(56, 916, '② 加入特异性抗体产生「超迁移」确认蛋白身份——体外验证 DNA-蛋白互作', { size: 11.5, fill: C.sub, maxW: 400, lh: 19 })
   // —— ChIP ——
-  b.ctext(680, 582, 'ChIP：染色质免疫沉淀', { size: 14.5, weight: 700, fill: C.ink })
+  b.ctext(680, 596, 'ChIP：染色质免疫沉淀', { size: 14.5, weight: 700, fill: C.ink })
   const chipSteps = [
     '甲醛交联蛋白-DNA',
     '超声打断染色质（200–500 bp）',
@@ -98,7 +98,7 @@ const draw = (b: B) => {
     'qPCR（ChIP-qPCR）或测序（ChIP-seq）',
   ]
   chipSteps.forEach((s, i) => {
-    const y = 596 + i * 64
+    const y = 604 + i * 64
     b.rect(478, y, 400, 48, { fill: i === 4 ? C.accL : C.panel, stroke: i === 4 ? C.acc : C.line, sw: 1.5, rx: 8 })
     b.ctext(678, y + 29, s, { size: 12.5, fill: i === 4 ? C.accD : C.sub, weight: i === 4 ? 600 : 400 })
     if (i < 4) b.arrow(678, y + 50, 678, y + 62, { stroke: C.sub, sw: 2, marker: 'ink' })
@@ -107,7 +107,7 @@ const draw = (b: B) => {
 
   // ============ 四、报告基因系统（右下） ============
   b.panel(910, 554, 460, 406, { title: '四、报告基因系统：量化启动子 / 增强子活性' })
-  b.wtext(926, 584, '将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：', { size: 11.5, fill: C.sub, maxW: 430 })
+  b.wtext(926, 596, '将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：', { size: 11.5, fill: C.sub, maxW: 430 })
   // —— GFP ——
   b.rect(926, 600, 430, 100, { fill: C.okL, stroke: C.ok, sw: 1.4, rx: 9, fillOp: 0.4 })
   b.text(942, 624, 'GFP 绿色荧光蛋白', { size: 13.5, weight: 700, fill: C.ok })

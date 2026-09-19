@@ -4,7 +4,7 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、oriC 与复制子 ============
   b.panel(30, 132, 640, 300, { title: '一、复制起点与复制子：大肠杆菌 oriC（约 245 bp）' })
-  b.text(155, 212, 'DnaA 蛋白（起始因子）', { size: 12, weight: 700, fill: C.enzD })
+  b.text(90, 212, 'DnaA 蛋白（起始因子）', { size: 12, weight: 700, fill: C.enzD })
   for (let i = 0; i < 5; i++) {
     b.circle(93 + i * 30, 240, 9, { fill: C.enzL, stroke: C.enz, sw: 1.8 })
   }
