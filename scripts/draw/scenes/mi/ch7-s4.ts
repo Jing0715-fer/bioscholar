@@ -53,10 +53,12 @@ const draw = (b: B) => {
 
   const ax = 740, ay = 610, aw = 300, ah = 175
   b.axis(ax, ay, aw, ah, {
-    xlabel: '加热时间（min）', ylabel: '存活数（对数）',
+    xlabel: '加热时间（min）',
     xticks: [[0.25, '10'], [0.5, '20'], [0.75, '30']],
     yticks: [[0.1, '10⁶'], [0.3, '10⁵'], [0.5, '10⁴'], [0.7, '10³'], [0.9, '10²']],
   })
+  // 手动纵轴标签（置于图左上方，避开 0.5 处的「10⁴」刻度）
+  b.text(742, 412, '存活数（对数）↑', { size: 12.5, weight: 600, fill: C.sub })
   b.curve(ax, ay, aw, ah, [[0, 1], [0.35, 0]], { stroke: C.bad, sw: 2.6 })
   b.curve(ax, ay, aw, ah, [[0, 1], [0.6, 0.05]], { stroke: C.warn, sw: 2.6 })
   b.curve(ax, ay, aw, ah, [[0, 1], [1, 0.35]], { stroke: C.acc, sw: 2.6 })

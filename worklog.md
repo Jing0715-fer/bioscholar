@@ -506,3 +506,22 @@ Stage Summary:
 - 终态：`bun scripts/draw/gen.ts ne`（34 张，失败 0）→ verify-subject ne：确认真问题 0 处，exit 0
 - 附加核查：12 张修改图经 sharp 渲染 + VLM 视觉复检，无文字重叠/裁剪/压线
 - 未解决：无
+
+## Task ID: 41-fix-i2 — mi（微生物学）场景排版修复
+
+- 日期：2025-06-15（子代理自动执行）
+- 范围：仅 scripts/draw/scenes/mi/ch*.ts（10 个文件）；未触碰 lib.ts / gen.ts / index.ts / review / src / public 等禁改区；无 git、无删除、无清理脚本
+- 流程：verify-subject mi（初轮 39 处系旧 SVG 所致）→ 先 `bun scripts/draw/gen.ts mi` 重生成对齐源码，真实基线 11 处（9 图）→ 逐文件修复 → 重生成 → 复验清零
+- 修复明细（前→后 11→0）：
+  - ch10-s1.ts：节四左栏标题 y 810→824，避开 panel 标题（19px 交叠）
+  - ch11-s1.ts：双名法标签组（定名人与年份/（Migula, 1895）/两 tag）整体下移 14px（492/510/530→506/524/544）
+  - ch2-s4.ts：质粒圆 cx,cy 505→517 及下方三行注释同步 +12，基因标签避让 panel 标题
+  - ch4-s2.ts：五阶段 wtext maxW 收紧为 min(240, 1384-cx)（⑤列右缘溢出 1399）；去掉 axis ylabel 手动两行居中 x=58，避开 0.5 处「中」刻度
+  - ch6-s1.ts：底物水平磷酸化卡长 token 无断点，「ADP——EMP」改「ADP，EMP」制造断点（语义不变），消除跨栏 94px 交叠
+  - ch6-s2.ts：NADH 循环标注 y 308→272，避开丙酮酸脱羧酶标签
+  - ch6-s3.ts：「富 H₂S 热液」y 800→816，避开节四 panel 标题
+  - ch7-s2.ts：比浊法说明 wtext y 745→470（移入面板上部空白），避开 x 轴标签 OD₆₀₀ 且不再溢出面板底
+  - ch7-s4.ts：去掉 axis ylabel，手动「存活数（对数）↑」置于图左上 (742,412)，避开 0.5 处 10⁴ 刻度
+  - ch8-s3.ts：共性卡 wtext 起始 x 由 cx-140 改为 max(16, cx-140)，首列不再负坐标贴边
+- 终态：`bun scripts/review/verify-subject.ts mi` → 「30 张 SVG，确认真问题 0 处（0 张图）」，退出码 0；生成 30/30 张无失败
+- 遗留：无

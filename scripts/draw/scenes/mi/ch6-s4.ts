@@ -10,17 +10,18 @@ const draw = (b: B) => {
   b.rect(ax + 0.18 * aw, ay - ah, 0.37 * aw, ah, { fill: C.dnaL, fillOp: 0.5 })
   b.rect(ax + 0.55 * aw, ay - ah, 0.30 * aw, ah, { fill: C.enzL, fillOp: 0.5 })
   b.axis(ax, ay, aw, ah, {
-    xlabel: '培养时间', ylabel: '菌数（对数）',
+    xlabel: '培养时间',
     xticks: [[0.09, '延滞期'], [0.36, '对数期'], [0.70, '稳定期'], [0.94, '衰亡期']],
     yticks: [[0.05, '低'], [0.5, '中'], [0.95, '高']],
   })
+  b.text(100, 240, '菌数（对数）', { size: 10, weight: 600, fill: C.sub })
   b.curve(ax, ay, aw, ah, [
     [0, 0.05], [0.08, 0.06], [0.16, 0.10], [0.28, 0.32], [0.40, 0.68],
     [0.50, 0.88], [0.62, 0.95], [0.78, 0.94], [0.92, 0.88], [1, 0.74],
   ], { stroke: C.ink, sw: 3 })
   b.tag(300, 212, '初级代谢（生长必需）', { fill: C.dnaL, stroke: C.dna, size: 11, weight: 700, tfill: C.dnaD, pad: 8 })
   b.tag(475, 212, '次级代谢（非必需）', { fill: C.enzL, stroke: C.enz, size: 11, weight: 700, tfill: C.enzD, pad: 8 })
-  b.wtext(70, 452, '次级代谢产物由初级代谢的中间物衍生——营养受限、生长进入稳定期后方才大量涌现。', { size: 10.5, fill: C.mute, maxW: 560, lh: 15 })
+  b.wtext(70, 180, '次级代谢产物由初级代谢的中间物衍生——营养受限、生长进入稳定期后方才大量涌现。', { size: 10.5, fill: C.mute, maxW: 560, lh: 15 })
 
   // 右：对照表
   b.table(680, 190, 670, {
@@ -63,7 +64,7 @@ const draw = (b: B) => {
     { at: 0.74, label: '1945', sub: '三人共获诺奖', above: false, c: C.ok },
     { at: 0.96, label: '1952', sub: '瓦克斯曼诺奖', above: true, c: C.pro },
   ], { title: '从偶然发现到系统筛选' })
-  b.wtext(70, 946, '1943 年沙茨从灰色链霉菌培养物中分离到链霉素——第一个抗革兰氏阴性菌与结核分枝杆菌的抗生素，使结核不再是不治之症；二战期间深层通气发酵把青霉素放大投产。', { size: 10.5, fill: C.sub, maxW: 620, lh: 15 })
+  b.wtext(70, 958, '1943 年沙茨从灰色链霉菌培养物中分离到链霉素——第一个抗革兰氏阴性菌与结核分枝杆菌的抗生素，使结核不再是不治之症；二战期间深层通气发酵把青霉素放大投产。', { size: 10.5, fill: C.sub, maxW: 620, lh: 15 })
 
   // 右：调节与育种
   b.rect(730, 745, 620, 108, { fill: C.panelB, stroke: C.line, sw: 1.3, rx: 9 })

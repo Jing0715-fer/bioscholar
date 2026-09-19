@@ -13,7 +13,7 @@ const draw = (b: B) => {
   ]
   commons.forEach(([cx, t, s]) => {
     b.tag(cx, 190, t, { fill: C.dnaL, stroke: C.dna, size: 12.5, weight: 700, tfill: C.dnaD, pad: 9 })
-    b.wtext(cx - 140, 214, s, { size: 10, fill: C.sub, maxW: 280, lh: 14 })
+    b.wtext(Math.max(16, cx - 140), 214, s, { size: 10, fill: C.sub, maxW: 280, lh: 14 })
   })
 
   b.table(50, 262, 1300, {

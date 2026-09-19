@@ -9,7 +9,7 @@ const draw = (b: B) => {
     b.text(x + 20, 206, t, { size: 14.5, weight: 700, fill: cd })
     b.wtext(x + 20, 232, s, { size: 11.5, fill: C.sub, maxW: 372, lh: 18 })
   }
-  mech(50, '① 底物水平磷酸化', '高能磷酸基团直接从中间物转移到 ADP——EMP 中 1,3-二磷酸甘油酸与磷酸烯醇式丙酮酸、TCA 中的琥珀酰辅酶 A。', C.acc, C.accD)
+  mech(50, '① 底物水平磷酸化', '高能磷酸基团直接从中间物转移到 ADP，EMP 中 1,3-二磷酸甘油酸与磷酸烯醇式丙酮酸、TCA 中的琥珀酰辅酶 A。', C.acc, C.accD)
   mech(470, '② 氧化磷酸化', '电子经呼吸链传递把质子泵出膜外，形成跨膜质子梯度，由 ATP 合酶合成 ATP（化学渗透学说，Mitchell 1961）。', C.dna, C.dnaD)
   mech(890, '③ 光合磷酸化', '光能驱动电子传递，同样建立质子梯度产 ATP——与产能代谢的总纲（见自养代谢节）。', C.ok, C.ok)
 
