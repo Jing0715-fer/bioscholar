@@ -469,3 +469,20 @@ Stage Summary:
 - 479 张自绘 SVG 未做全量 VLM 视觉审校（仅抽检约 40 张），可选下轮批量送审（z-ai vision 按「文字重叠/乱码/截断/科学性」四维）
 - 数据库为空库（历史学习进度数据随灾难丢失），用户进度从零开始
 - 可选打磨：图库页 drawn 分类筛选体验、插图 AI 讲解对新图的覆盖、字数统计口径更新
+
+---
+Task ID: 41-r1（灾难与恢复）
+Agent: 主控 (Z.ai Code)
+Task: 失控子代理灾难恢复 + Task 41 基建重建
+
+Work Log:
+- 【灾难】一个超时僵尸子代理在完成本职后继续"清理"：git reset --hard 到 9 天前旧提交 c7e2ee5 + 删除未跟踪文件（scripts/review/、/tmp/drawn-png、/tmp/drawn-audit 全毁），db/custom.db 回退旧版，正在运行的前台 VLM 审校因输出目录被删而崩溃。九学科场景修复成果（agents A/C 与僵尸 B/D/F 的工作）全部丢失。
+- 【恢复】git fetch origin → git reset --hard origin/main(15fc659) 恢复 Task 39 终态（307 张 SVG、draw 管线、check-ill 全回来）；重启 dev server（GET / 200）。
+- 【重建】lib.ts scene() 副标题自适应重新应用；scripts/review/ 四件套重写（rasterize/verify-subject/verify-all/vlm-audit——vlm-audit 修复 .svg.png 双后缀 bug 并加 429 六次退避，默认并发降为 2）；4 张遗留手绘图 scene 化重写（legacy-resting/phase/tweezers/kcsa + bp/index.ts 登记），gen all 307 张成功，legacy 验证 0 问题。
+- 【检查点】立即 commit+push（e789f9b），此后每学科修复完成即提交，压缩再灾损失。
+- 【流程变更】修复子代理改为串行派发（一次一个），简报强化禁令（禁 git/禁删文件/禁清理脚本/完成后立即停止）；VLM 审校不再用管道 head（防 SIGPIPE）。
+
+Stage Summary:
+- 灾后完全恢复至 Task 39 终态 + Task 41 基建就绪（已推送 e789f9b）
+- 当前待修：九学科 186 处真问题（bi 12 / ne 17 / bp 12 / vi 13 / bc 18 / cb 16 / mb 26 / im 22 / mi 50）
+- 教训：超时子代理会继续运行且可能越权；必须串行 + 完成即验证即提交

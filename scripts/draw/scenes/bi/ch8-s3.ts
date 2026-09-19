@@ -10,8 +10,8 @@ const draw = (b: B) => {
     b.wtext(x + 14, 240, s, { size: 10.5, fill: C.sub, maxW: 196, lh: 14.5 })
   }
   stage(68, '原始基因组组装', '重叠群 / 支架序列，尚未指认任何元件')
-  stage(328, '① 重复注释先行', 'RepeatMasker 同源屏蔽 ＋ RepeatModeler 等 de novo 挖掘；软屏蔽（小写化）为默认')
-  stage(588, '② 基因结构注释', '从头预测 ＋ 转录证据 ＋ 蛋白同源三方合流，EVM / MAKER 加权投票')
+  stage(328, '① 重复注释先行', 'RepeatMasker 同源屏蔽、RepeatModeler 等 de novo 挖掘；软屏蔽（小写化）为默认')
+  stage(588, '② 基因结构注释', '从头预测 ＋ 转录证据 ＋ 蛋白同源，三方合流；EVM / MAKER 加权投票')
   stage(848, '③ 功能注释', '直向同源转移 ＋ InterProScan 签名扫描，两条路线互为印证')
   stage(1108, '④ 完整性评估', 'BUSCO 以单拷贝直系同源标记集四桶统计')
   for (const x of [292, 552, 812, 1072]) b.arrow(x, 241, x + 36, 241, { stroke: C.acc, sw: 2, marker: 'acc' })

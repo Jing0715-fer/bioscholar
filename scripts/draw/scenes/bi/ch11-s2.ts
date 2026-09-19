@@ -70,23 +70,23 @@ const draw = (b: B) => {
 
   // ============ 四、时间线与合成致死 ============
   b.panel(710, 576, 660, 404, { title: '四、里程碑时间线与网络的价值' })
-  b.timelineH(760, 668, 560, [
+  b.timelineH(760, 690, 560, [
     { at: 0.05, label: '1989', sub: 'Fields–Song 创建 Y2H', above: true, c: C.sub },
     { at: 0.4, label: '2000 前后', sub: '基因组规模 Y2H 互作图谱', above: false, c: C.acc },
     { at: 0.68, label: '2006', sub: '两大 AP-MS 计划同期发表', above: true, c: C.pro },
     { at: 0.95, label: '启示', sub: '复合物边界不一致 → 条件依赖', above: false, c: C.warn },
   ])
-  b.text(760, 742, '合成致死：冗余通路的交叉点', { size: 13, weight: 700, fill: C.ink })
-  b.rect(760, 762, 190, 40, { fill: C.accL, stroke: C.acc, sw: 1.7, rx: 8 })
-  b.ctext(855, 787, '通路 A（基因 a）', { size: 12, weight: 700, fill: C.accD })
-  b.rect(760, 838, 190, 40, { fill: C.accL, stroke: C.acc, sw: 1.7, rx: 8 })
-  b.ctext(855, 863, '通路 B（基因 b）', { size: 12, weight: 700, fill: C.accD })
-  b.rect(1160, 800, 170, 40, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 8 })
-  b.ctext(1245, 825, '核心功能', { size: 12.5, weight: 700, fill: C.proD })
-  b.arrow(950, 782, 1160, 810, { stroke: C.acc, sw: 1.8, marker: 'acc' })
-  b.arrow(950, 858, 1160, 830, { stroke: C.acc, sw: 1.8, marker: 'acc' })
-  b.wtext(760, 906, '单独失活任一条 → 另一条代偿，细胞存活；两条同时失活 → 合成致死。', { size: 11, fill: C.sub, maxW: 600, lh: 15 })
-  b.wtext(760, 944, '网络拓扑 × 合成致死等遗传筛选是靶点发现的高产策略——网络的价值在提出可检验的因果假设。', { size: 11.5, weight: 600, fill: C.mute, maxW: 600, lh: 16 })
+  b.text(760, 780, '合成致死：冗余通路的交叉点', { size: 13, weight: 700, fill: C.ink })
+  b.rect(760, 800, 190, 40, { fill: C.accL, stroke: C.acc, sw: 1.7, rx: 8 })
+  b.ctext(855, 825, '通路 A（基因 a）', { size: 12, weight: 700, fill: C.accD })
+  b.rect(760, 876, 190, 40, { fill: C.accL, stroke: C.acc, sw: 1.7, rx: 8 })
+  b.ctext(855, 901, '通路 B（基因 b）', { size: 12, weight: 700, fill: C.accD })
+  b.rect(1160, 838, 170, 40, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 8 })
+  b.ctext(1245, 863, '核心功能', { size: 12.5, weight: 700, fill: C.proD })
+  b.arrow(950, 820, 1160, 848, { stroke: C.acc, sw: 1.8, marker: 'acc' })
+  b.arrow(950, 896, 1160, 868, { stroke: C.acc, sw: 1.8, marker: 'acc' })
+  b.wtext(760, 930, '单独失活任一条 → 另一条代偿，细胞存活；两条同时失活 → 合成致死。', { size: 11, fill: C.sub, maxW: 600, lh: 15 })
+  b.wtext(760, 962, '网络拓扑 × 合成致死等遗传筛选是靶点发现的高产策略——网络的价值在提出可检验的因果假设。', { size: 11.5, weight: 600, fill: C.mute, maxW: 600, lh: 16 })
 }
 
 export default scene({

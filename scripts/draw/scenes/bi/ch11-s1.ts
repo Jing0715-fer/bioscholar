@@ -4,21 +4,21 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、幂律度分布 ============
   b.panel(30, 132, 660, 420, { title: '一、无标度网络：幂律度分布与优先连接' })
-  b.axis(90, 460, 380, 280, {
+  b.axis(90, 480, 380, 280, {
     xlabel: 'log 度 k →',
     ylabel: 'log P(k)',
     title: '度分布（log–log 直线）',
     xticks: [[0, '低'], [1, '高']],
     yticks: [[0, '低'], [1, '高']],
   })
-  b.curve(90, 460, 380, 280, [[0.05, 0.95], [0.95, 0.08]], { stroke: C.dna, sw: 2.2 })
+  b.curve(90, 480, 380, 280, [[0.05, 0.95], [0.95, 0.08]], { stroke: C.dna, sw: 2.2 })
   const pts: Array<[number, number]> = [
     [0.05, 0.95], [0.15, 0.85], [0.25, 0.75], [0.35, 0.66], [0.45, 0.56], [0.55, 0.47],
     [0.65, 0.38], [0.75, 0.29], [0.85, 0.2], [0.95, 0.1], [0.1, 0.9], [0.3, 0.72],
     [0.5, 0.53], [0.7, 0.36], [0.9, 0.16],
   ]
-  pts.forEach(([fx, fy]) => b.circle(90 + fx * 380, 460 - fy * 280, 4, { fill: C.dna, fillOp: 0.65 }))
-  b.tag(400, 205, '幂律：γ ≈ 2–3', { fill: C.dnaL, stroke: C.dna, size: 11.5, weight: 700, tfill: C.dnaD, pad: 9 })
+  pts.forEach(([fx, fy]) => b.circle(90 + fx * 380, 480 - fy * 280, 4, { fill: C.dna, fillOp: 0.65 }))
+  b.tag(400, 215, '幂律：γ ≈ 2–3', { fill: C.dnaL, stroke: C.dna, size: 11.5, weight: 700, tfill: C.dnaD, pad: 9 })
   b.text(150, 400, '斜率 ≈ −γ', { size: 11.5, weight: 700, fill: C.dnaD })
   b.text(500, 216, '优先连接', { size: 13, weight: 700, fill: C.ink })
   const hub = { x: 585, y: 250, r: 18 }

@@ -18,32 +18,32 @@
   <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">为可接受惯例、UFBoot大幅降本；长枝吸引把快演化谱系虚假拉拢（Felsenstein1978）；分歧时间靠化石定标与宽松钟</text>
   <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、贝叶斯推断：后验即答案</text>
-  <rect x="60" y="186" width="580" height="100" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
-  <text x="350" y="214" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">后验 ∝ 似然 × 先验</text>
-  <text x="350" y="240" font-size="11.5" fill="#475569" text-anchor="middle">输出树与参数的后验分布；分支后验概率 = 采样树中含该分支的比例</text>
-  <text x="350" y="266" font-size="11.5" fill="#64748b" text-anchor="middle">MCMC 以「提议—接受」采样逼近后验（MrBayes / BEAST 等实现）</text>
-  <rect x="100" y="270" width="520" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="100" y1="420" x2="620" y2="420" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="230" y1="470" x2="230" y2="270" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="100" y1="370" x2="620" y2="370" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="360" y1="470" x2="360" y2="270" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="100" y1="320" x2="620" y2="320" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="490" y1="470" x2="490" y2="270" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="100" y1="470" x2="100" y2="476" stroke="#475569" stroke-width="1.8"/>
-  <text x="100" y="492" font-size="13" fill="#64748b" text-anchor="middle">0</text>
-  <line x1="360" y1="470" x2="360" y2="476" stroke="#475569" stroke-width="1.8"/>
-  <text x="360" y="492" font-size="13" fill="#64748b" text-anchor="middle">中期</text>
-  <line x1="620" y1="470" x2="620" y2="476" stroke="#475569" stroke-width="1.8"/>
-  <text x="620" y="492" font-size="13" fill="#64748b" text-anchor="middle">后期</text>
-  <text x="360" y="514" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">MCMC 迭代 →</text>
-  <text x="360" y="258" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">链的轨迹：老化后收敛到平稳分布</text>
-  <path d="M100,370 C101.7,362.7 106.1,320.7 110.4,326 C114.7,331.3 120.8,399.7 126,402 C131.2,404.3 136.4,342.0 141.6,340 C146.8,338.0 152.0,394.3 157.2,390 C162.4,385.7 167.6,318.0 172.8,314 C178.0,310.0 183.2,351.3 188.4,366 C193.6,380.7 197.9,404.7 204,402 C210.1,399.3 217.9,354.7 224.8,350 C231.7,345.3 238.7,372.3 245.60000000000002,374 C252.5,375.7 259.5,359.3 266.4,360 C273.3,360.7 280.3,377.0 287.2,378 C294.1,379.0 300.2,367.0 308,366 C315.8,365.0 325.3,372.3 334,372 C342.7,371.7 351.3,364.3 360,364 C368.7,363.7 377.3,369.7 386,370 C394.7,370.3 403.3,365.7 412,366 C420.7,366.3 429.3,371.7 438,372 C446.7,372.3 455.3,368.3 464,368 C472.7,367.7 481.3,370.7 490,370 C498.7,369.3 507.3,364.0 516,364 C524.7,364.0 533.3,369.3 542,370 C550.7,370.7 559.3,368.0 568,368 C576.7,368.0 585.3,370.3 594,370 C602.7,369.7 615.7,366.7 620,366" fill="none" stroke="#0f766e" stroke-width="2.2"/>
-  <rect x="100" y="270" width="104" height="200" fill="#fee2e2" fill-opacity="0.45" stroke="none"/>
-  <text x="104" y="456" font-size="10.5" fill="#dc2626" font-weight="700">老化段丢弃</text>
-  <rect x="425.54699999999997" y="310.65" width="108.90600000000002" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="480" y="323.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">ESS &gt; 200 才可信</text>
-  <rect x="426.68" y="342.65" width="106.64" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
-  <text x="480" y="355.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">多链并行起点不同</text>
+  <rect x="60" y="172" width="580" height="98" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="350" y="198" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">后验 ∝ 似然 × 先验</text>
+  <text x="350" y="224" font-size="11.5" fill="#475569" text-anchor="middle">输出树与参数的后验分布；分支后验概率 = 采样树中含该分支的比例</text>
+  <text x="350" y="250" font-size="11.5" fill="#64748b" text-anchor="middle">MCMC 以「提议—接受」采样逼近后验（MrBayes / BEAST 等实现）</text>
+  <rect x="100" y="300" width="520" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="100" y1="450" x2="620" y2="450" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="230" y1="500" x2="230" y2="300" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="400" x2="620" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="360" y1="500" x2="360" y2="300" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="350" x2="620" y2="350" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="490" y1="500" x2="490" y2="300" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="500" x2="100" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="522" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="360" y1="500" x2="360" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="522" font-size="13" fill="#64748b" text-anchor="middle">中期</text>
+  <line x1="620" y1="500" x2="620" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="620" y="522" font-size="13" fill="#64748b" text-anchor="middle">后期</text>
+  <text x="360" y="544" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">MCMC 迭代 →</text>
+  <text x="360" y="288" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">链的轨迹：老化后收敛到平稳分布</text>
+  <path d="M100,400 C101.7,392.7 106.1,350.7 110.4,356 C114.7,361.3 120.8,429.7 126,432 C131.2,434.3 136.4,372.0 141.6,370 C146.8,368.0 152.0,424.3 157.2,420 C162.4,415.7 167.6,348.0 172.8,344 C178.0,340.0 183.2,381.3 188.4,396 C193.6,410.7 197.9,434.7 204,432 C210.1,429.3 217.9,384.7 224.8,380 C231.7,375.3 238.7,402.3 245.60000000000002,404 C252.5,405.7 259.5,389.3 266.4,390 C273.3,390.7 280.3,407.0 287.2,408 C294.1,409.0 300.2,397.0 308,396 C315.8,395.0 325.3,402.3 334,402 C342.7,401.7 351.3,394.3 360,394 C368.7,393.7 377.3,399.7 386,400 C394.7,400.3 403.3,395.7 412,396 C420.7,396.3 429.3,401.7 438,402 C446.7,402.3 455.3,398.3 464,398 C472.7,397.7 481.3,400.7 490,400 C498.7,399.3 507.3,394.0 516,394 C524.7,394.0 533.3,399.3 542,400 C550.7,400.7 559.3,398.0 568,398 C576.7,398.0 585.3,400.3 594,400 C602.7,399.7 615.7,396.7 620,396" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <rect x="100" y="300" width="104" height="200" fill="#fee2e2" fill-opacity="0.45" stroke="none"/>
+  <text x="104" y="486" font-size="10.5" fill="#dc2626" font-weight="700">老化段丢弃</text>
+  <rect x="425.54699999999997" y="340.65" width="108.90600000000002" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="480" y="353.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">ESS &gt; 200 才可信</text>
+  <rect x="426.68" y="372.65" width="106.64" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="480" y="385.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">多链并行起点不同</text>
   <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、自展支持率：以重抽样度量稳健度</text>
   <rect x="740" y="196" width="130" height="64" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
