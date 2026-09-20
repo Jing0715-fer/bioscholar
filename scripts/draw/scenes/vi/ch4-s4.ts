@@ -7,26 +7,25 @@ const draw = (b: B) => {
   b.bilayer(60, 186, 200, { tint: C.bad })
   b.ctext(160, 172, '病毒包膜', { size: 10.5, fill: C.mute })
   b.bilayer(60, 372, 200, { tint: C.dna })
-  b.ctext(160, 400, '靶细胞膜', { size: 10.5, fill: C.mute })
+  b.ctext(160, 406, '靶细胞膜', { size: 10.5, fill: C.mute })
   for (let k = 0; k < 3; k++) {
     b.rect(104 + k * 22, 200, 10, 56, { fill: C.dnaL, stroke: C.dna, sw: 1.6, rx: 4 })
     b.rect(104 + k * 22, 302, 10, 56, { fill: C.rnaL, stroke: C.rna, sw: 1.6, rx: 4 })
-    b.path(`M 109,${302 + k * 0} C ${80 + k * 12},280 ${80 + k * 12},232 109,${262 - k * 0}`, { fill: 'none', stroke: C.rna, sw: 1.6, dash: '4 3' })
+    b.path(`M 109,${302 + k * 0} C ${80 + k * 12},280 ${80 + k * 12},232 109,${262 - k * 0}`, { fill: 'none', stroke: C.rna, sw: 1.6, dash: '4 3', marker: 'rna' })
   }
   b.ctext(160, 286, 'HR1（三聚体芯）', { size: 10.5, weight: 700, fill: C.dnaD })
   b.ctext(160, 296, '', { size: 1 })
-  b.ctext(160, 320, 'HR2 折回', { size: 10.5, weight: 700, fill: C.rna })
-  b.arrow(150, 262, 150, 296, { stroke: C.ink, sw: 1.6, marker: 'ink' })
+  b.ctext(190, 320, 'HR2 折回', { size: 10.5, weight: 700, fill: C.rna })
   b.tag(160, 434, '六螺旋束＝两膜拉拢锁定', { fill: C.okL, stroke: C.ok, size: 11, weight: 700, tfill: '#065f46', pad: 9 })
   b.wtext(300, 196, 'I 类融合的终末结构：HR1 三条螺旋成芯、HR2 三条折回包拢，六螺旋束像拉链把两膜锁死——融合完成。', { size: 11, fill: C.sub, maxW: 370, lh: 16 })
   b.rect(300, 258, 370, 148, { fill: C.badL, stroke: C.bad, sw: 1.7, rx: 9 })
   b.text(316, 282, '恩夫韦肽（T-20，2003 年获批）', { size: 12.5, weight: 700, fill: C.bad })
   b.rect(340, 300, 84, 14, { fill: C.rnaL, stroke: C.rna, sw: 1.6, rx: 6 })
   b.ctext(382, 311, '药物肽（36 aa）', { size: 9.5, weight: 700, fill: C.rna })
-  b.arrow(382, 322, 382, 344, { stroke: C.bad, sw: 2, marker: 'bad' })
-  for (let k = 0; k < 3; k++) b.rect(348 + k * 22, 350, 10, 40, { fill: C.dnaL, stroke: C.dna, sw: 1.6, rx: 4 })
-  b.ctext(382, 388, '抢占 HR1 芯', { size: 9.5, weight: 700, fill: C.bad })
-  b.wtext(316, 320, '模拟 HR2 序列、抢先与 HR1 芯结合——真正的 HR2 无处可折，融合被阻断。首个融合抑制剂。', { size: 10.5, fill: C.sub, maxW: 220, lh: 15 })
+  b.arrow(382, 322, 382, 342, { stroke: C.bad, sw: 2, marker: 'bad' })
+  for (let k = 0; k < 3; k++) b.rect(348 + k * 22, 348, 10, 34, { fill: C.dnaL, stroke: C.dna, sw: 1.6, rx: 4 })
+  b.ctext(382, 396, '抢占 HR1 芯', { size: 9.5, weight: 700, fill: C.bad })
+  b.wtext(446, 322, '模拟 HR2 序列、抢先与 HR1 芯结合——真正的 HR2 无处可折，融合被阻断。首个融合抑制剂。', { size: 10.5, fill: C.sub, maxW: 205, lh: 15 })
 
   // ============ 二、三条非常规侵入路径 ============
   b.panel(710, 132, 660, 430, { title: '二、侵入方式的多样性：三条非常规路径' })
@@ -37,7 +36,7 @@ const draw = (b: B) => {
   ]
   paths.forEach((p, i) => {
     const y0 = 188 + i * 124
-    b.tag(760, y0 + 20, p.nm, { fill: p.c + '22', stroke: p.c, size: 11.5, weight: 700, tfill: p.c, pad: 9 })
+    b.tag(772, y0 + 20, p.nm, { fill: p.c + '22', stroke: p.c, size: 11.5, weight: 700, tfill: p.c, pad: 9 })
     b.wtext(920, y0 + 12, p.txt, { size: 10.5, fill: C.sub, maxW: 420, lh: 15 })
     if (p.icon === 'ad') {
       b.virion(780, y0 + 72, 13, { shape: 'icosahedral', stroke: C.acc })
@@ -58,7 +57,7 @@ const draw = (b: B) => {
       b.circle(840, y0 + 70, 30, { fill: C.badL, stroke: C.bad, sw: 1.8 })
       b.ctext(840, y0 + 74, 'NPC1', { size: 10, weight: 700, fill: C.bad })
       b.arrow(874, y0 + 70, 916, y0 + 70, { stroke: C.bad, sw: 2, marker: 'bad' })
-      b.ctext(894, y0 + 54, '组织蛋白酶切割', { size: 9, weight: 700, fill: C.bad })
+      b.ctext(902, y0 + 54, '组织蛋白酶切割', { size: 9, weight: 700, fill: C.bad })
     }
   })
 
@@ -69,7 +68,7 @@ const draw = (b: B) => {
     colW: [180, 190, 250],
     rows: [
       ['恩夫韦肽（2003）', 'gp41 六螺旋束', '36 aa 肽模拟 HR2，阻断融合'],
-      ['马拉维若（2008）', '宿主 CCR5 共受体', '封堵共受体（首个宿主靶点）'],
+      ['马拉维若（2007）', '宿主 CCR5 共受体', '封堵共受体（首个宿主靶点）'],
       ['金刚烷胺类', 'M2 离子通道', '抑制酸化脱壳（已普遍耐药）'],
     ],
     rowH: 48, fontSize: 12,
@@ -83,7 +82,7 @@ const draw = (b: B) => {
   b.virion(820, 646, 16, { shape: 'enveloped', stroke: C.bad })
   b.virion(1000, 646, 16, { shape: 'icosahedral', stroke: C.bad })
   b.line(790, 660, 1070, 660, { stroke: C.ok, sw: 2.4, dash: '8 6' })
-  b.ctext(930, 640, '药物拦截线（胞外）', { size: 11, weight: 700, fill: '#065f46' })
+  b.ctext(915, 640, '药物拦截线（胞外）', { size: 11, weight: 700, fill: '#065f46' })
   b.ctext(880, 730, '细胞膜', { size: 10, fill: C.mute })
   b.wtext(730, 780, '局限：病毒表面蛋白变异极快（尤其包膜刺突的抗原漂移），单靶药物很快被逃逸。', { size: 11, fill: C.sub, maxW: 300, lh: 16 })
   b.wtext(730, 836, '对策：与其他机制药物联用——多环节同时施压，降低逃逸空间。', { size: 11, weight: 700, fill: C.ink, maxW: 300, lh: 16 })
@@ -98,6 +97,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: '侵入方式的多样性与抗侵入策略：六螺旋束、ER 脱壳与内体受体',
-  subtitle: '恩夫韦肽（36 aa，2003）模拟 HR2 抢占 HR1 芯；SV40 借 ERAD 逆转位「ER 脱壳」；埃博拉以内体 NPC1 为受体；马拉维若（2008）为首个宿主靶点药，须测向性',
+  subtitle: '恩夫韦肽（36 aa，2003）模拟 HR2 抢占 HR1 芯；SV40 借 ERAD 逆转位「ER 脱壳」；埃博拉以内体 NPC1 为受体；马拉维若（2007）为首个宿主靶点药，须测向性',
   draw,
 })
