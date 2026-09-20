@@ -21,7 +21,9 @@ const draw = (b: B) => {
     b.circle(x, 464 - h, 3.6, { fill: C.enz })
     b.ctext(x, 484, lab, { size: 10, fill: C.mute })
   })
-  b.wtext(545, 386, '相邻峰质量差 ＝ 残基质量 → 推出序列', { size: 10.5, weight: 600, fill: C.enzD, maxW: 120, lh: 14 })
+  b.text(552, 380, '相邻峰质量差', { size: 11, weight: 600, fill: C.enzD })
+  b.text(552, 398, '＝ 残基质量', { size: 11, weight: 600, fill: C.enzD })
+  b.text(552, 416, '→ 推出序列', { size: 11, weight: 600, fill: C.enzD })
   b.wtext(60, 512, '可被可靠鉴定的肽段多在 7–25 个残基（太短特异性不足、太长碎片谱难解读）；胰酶特异性高，搜索允许 0–2 个漏切。', { size: 11.5, fill: C.sub, maxW: 600, lh: 16 })
 
   // ============ 二、分析器谱系与 DDA ============
