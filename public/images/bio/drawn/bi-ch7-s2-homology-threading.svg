@@ -30,11 +30,12 @@
   <line x1="520" y1="282" x2="520" y2="298" stroke="#475569" stroke-width="2"/>
   <text x="300" y="274" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">30%</text>
   <text x="520" y="274" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">40%</text>
-  <text x="80" y="348" font-size="11.5" fill="#065f46">&gt;40%：主链结构均方根偏差通常很小，建模近乎照抄</text>
-  <text x="80" y="364" font-size="11.5" fill="#065f46">（主链误差约 1 Å）。</text>
-  <text x="470" y="348" font-size="11.5" fill="#92400e">30% 上下：主链误差约 1.5–2 Å，环区与侧链可信度下降。</text>
-  <text x="820" y="348" font-size="11.5" fill="#dc2626">&lt;30%：比对本身开始不可靠，插入缺失位置难定，</text>
-  <text x="820" y="364" font-size="11.5" fill="#dc2626">结构相似性存疑。</text>
+  <text x="80" y="344" font-size="11.5" fill="#dc2626">&lt;30%：比对本身开始不可靠，</text>
+  <text x="80" y="360" font-size="11.5" fill="#dc2626">插入缺失位置难定，结构相似性存疑。</text>
+  <text x="316" y="344" font-size="11.5" fill="#92400e">30% 上下：主链误差约 1.5–2 Å，</text>
+  <text x="316" y="360" font-size="11.5" fill="#92400e">环区与侧链可信度下降。</text>
+  <text x="536" y="344" font-size="11.5" fill="#065f46">&gt;40%：主链结构均方根偏差通常很小，建模近乎照抄</text>
+  <text x="536" y="360" font-size="11.5" fill="#065f46">（主链误差约 1 Å）。</text>
   <rect x="80" y="420" width="380" height="92" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
   <text x="100" y="448" font-size="13" fill="#1e293b" font-weight="700">1969 · Browne 等</text>
   <text x="100" y="472" font-size="11" fill="#475569">以鸡蛋清溶菌酶晶体结构为模板，</text>
@@ -97,6 +98,8 @@
   <text x="947" y="678" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">β 区</text>
   <ellipse cx="1010" cy="789" rx="48" ry="36" fill="#d1fae5" fill-opacity="0.85" stroke="#059669" stroke-width="1.8"/>
   <text x="1010" y="794" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">α 区</text>
-  <text x="1130" y="720" font-size="10.5" fill="#64748b">落在许可区之外的残基提示模型局部不合理</text>
+  <text x="1068" y="710" font-size="10.5" fill="#64748b">落在许可区之外的残基</text>
+  <text x="1068" y="726" font-size="10.5" fill="#64748b">提示模型局部不合理</text>
+  <text x="1068" y="840" font-size="10.5" fill="#475569" font-weight="600">合格判据：许可区 ≥ 90%</text>
   <text x="880" y="934" font-size="11.5" fill="#dc2626">低精度模型不得直接用于需原子级精度的任务（如配体结合位点分析）。</text>
 </svg>

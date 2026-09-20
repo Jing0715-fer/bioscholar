@@ -4,28 +4,29 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、FMO 量子节拍（左上） ============
   b.panel(30, 132, 660, 400, { title: '一、FMO 复合物：数百飞秒的量子节拍' })
-  // 色素网络
+  // 色素网络（整体下移，让出顶部说明文字带；能量自位点 1/2 输入、经位点 3 输出至 RC）
   const sites: [number, number, string][] = [
-    [130, 240, '1'], [230, 200, '2'], [320, 250, '3'], [200, 320, '4'],
-    [330, 350, '5'], [430, 280, '6'], [540, 330, '7'], [580, 240, 'RC'],
+    [130, 280, '1'], [230, 240, '2'], [320, 290, '3'], [200, 360, '4'],
+    [330, 390, '5'], [430, 315, '6'], [540, 363, '7'], [580, 268, 'RC'],
   ]
   sites.forEach(([x, y, s]) => {
     b.circle(x, y, 22, { fill: C.okL, stroke: C.ok, sw: 2 })
     b.ctext(x, y + 5, s, { size: 13, weight: 700, fill: C.ink })
   })
-  // 相干连线（虚线波浪示意）
+  // 相干连线（虚线示意）：1–2 强耦合对、链式连接至全部位点，位点 3 邻近 RC（能量出口）
   const links: [number, number, number, number][] = [
-    [130, 240, 230, 200], [230, 200, 320, 250], [320, 250, 430, 280],
-    [230, 200, 200, 320], [200, 320, 330, 350], [430, 280, 540, 330], [430, 280, 580, 240],
+    [130, 280, 230, 240], [230, 240, 320, 290], [320, 290, 200, 360],
+    [200, 360, 330, 390], [330, 390, 430, 315], [430, 315, 540, 363], [320, 290, 580, 268],
   ]
   links.forEach(([x1, y1, x2, y2]) => {
     b.line(x1, y1, x2, y2, { stroke: C.ok, sw: 1.8, dash: '5 4', opacity: 0.75 })
   })
+  // 能量入口标注（左上，箭头指向位点 1）
+  b.tag(70, 262, '天线能量输入', { fill: C.accL, stroke: C.acc, size: 9.5, weight: 600, tfill: C.accD, pad: 5 })
+  b.arrow(48, 280, 103, 280, { stroke: C.acc, sw: 1.8, marker: 'acc' })
   b.wtext(70, 190, '细菌光合天线 FMO：激发能以「量子节拍」在 7 个色素位点间震荡传递（2D 电子谱观测数百 fs 相干拍频）', { size: 13, fill: C.sub, maxW: 560, lh: 20 })
-  b.wtext(70, 420, '争论点：生理温度下相干是「量子漫步导引」还是仅经典跳跃的表象？功能意义至今未有定论。', { size: 13.5, weight: 600, fill: C.warn, maxW: 570, lh: 21 })
-  b.tag(120, 370, '低温 77K', { fill: '#f1f5f9', stroke: C.faint, size: 12, weight: 600, tfill: C.sub, pad: 7 })
-  b.tag(260, 370, '相干时间数百 fs', { fill: C.okL, stroke: C.ok, size: 12, weight: 600, tfill: C.ink, pad: 7 })
-  b.tag(430, 370, '→ 反应中心', { fill: C.dnaL, stroke: C.dna, size: 12, weight: 600, tfill: C.dnaD, pad: 7 })
+  b.wtext(70, 446, '实验：低温 77K、相干时间数百 fs；能量自位点 1/2 输入、经位点 3 输出至反应中心 RC。', { size: 11, fill: C.sub, maxW: 560, lh: 16 })
+  b.wtext(70, 496, '争论点：生理温度下相干是「量子漫步导引」还是仅经典跳跃的表象？功能意义至今未有定论。', { size: 13.5, weight: 600, fill: C.warn, maxW: 570, lh: 21 })
 
   // ============ 二、鸟磁罗盘（右上） ============
   b.panel(720, 132, 650, 400, { title: '二、鸟磁罗盘：自由基对机制（cryptochrome 假说）' })
@@ -34,12 +35,12 @@ const draw = (b: B) => {
   b.ctext(970, 205, '地磁场 B ≈ 50 μT', { size: 12.5, weight: 600, fill: C.bad })
   // 光激发
   b.tag(800, 290, '蓝光', { fill: C.accL, stroke: C.acc, size: 12, weight: 700, tfill: C.ink, pad: 7 })
-  b.arrow(840, 290, 900, 290, { stroke: C.acc, sw: 2, marker: 'acc' })
+  b.arrow(840, 290, 876, 290, { stroke: C.acc, sw: 2, marker: 'acc' })
   b.tag(960, 290, 'Cryptochrome（FAD）', { fill: C.proL, stroke: C.pro, size: 12.5, weight: 700, tfill: C.proD, pad: 8 })
   // 自由基对
   b.arrow(1090, 290, 1150, 290, { stroke: C.pro, sw: 2, marker: 'pro' })
-  b.tag(1240, 275, 'FAD•⁻', { fill: '#fee2e2', stroke: C.bad, size: 12.5, weight: 700, tfill: C.bad, pad: 7 })
-  b.tag(1240, 315, 'Trp•⁺', { fill: '#fef3c7', stroke: C.warn, size: 12.5, weight: 700, tfill: '#78350f', pad: 7 })
+  b.tag(1240, 275, 'FAD•^{-}', { fill: '#fee2e2', stroke: C.bad, size: 12.5, weight: 700, tfill: C.bad, pad: 7 })
+  b.tag(1240, 315, 'Trp•^{+}', { fill: '#fef3c7', stroke: C.warn, size: 12.5, weight: 700, tfill: '#78350f', pad: 7 })
   // 自旋态
   b.wtext(760, 380, '单重态 ⇌ 三重态：地磁场经超精细相互作用改变自旋演化速率→单/三重态化学产率随磁倾角变化', { size: 13, fill: C.sub, maxW: 560, lh: 20 })
   b.wtext(760, 460, '对蓝光依赖、射频磁场干扰（弱场射频可扰乱罗盘）与倾角感知（区分南北 vs 南北倒转）的实验证据共同指向自由基对假说。', { size: 13, weight: 600, fill: C.dnaD, maxW: 560, lh: 20 })
@@ -55,7 +56,11 @@ const draw = (b: B) => {
   b.ctext(80 + 0.5 * 280, 880 - 0.42 * 200, 'H 隧穿', { size: 13, weight: 700, fill: C.proD })
   b.legend(400, 700, [['H（轻，隧穿强）', C.dna], ['D/T（重，隧穿弱）', C.bad]], { size: 12.5 })
   b.wtext(400, 760, 'KIE = k(H)/k(D)：经典过渡态理论上限 ≈ 7（零点能差）', { size: 13, fill: C.sub, maxW: 250, lh: 20 })
-  b.wtext(400, 830, '酶促氢转移实测 3–10、极端 >80——超出经典解释，需量子隧穿+蛋白热振动「-promoting vibrations」辅助（Klinman 实验）。', { size: 13, weight: 600, fill: C.dnaD, maxW: 250, lh: 20 })
+  // 手动拆行（无标点长 token 会导致 wtext 整行溢出面板右缘）
+  b.text(400, 826, '酶促氢转移实测 3–10、极端 >80', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(400, 850, '——超出经典解释，需量子隧穿', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(400, 874, '与蛋白热振动「promoting vibrations」', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(400, 898, '辅助（Klinman 实验）。', { size: 13, weight: 600, fill: C.dnaD })
 
   // ============ 四、嗅觉振动理论（右下） ============
   b.panel(720, 550, 650, 420, { title: '四、嗅觉振动理论：可检验的量子假说' })
@@ -66,7 +71,7 @@ const draw = (b: B) => {
   b.arrow(990, 750, 1060, 750, { stroke: C.acc, sw: 2.2, marker: 'acc' })
   b.ctext(1170, 745, '振动频率变化', { size: 12.5, weight: 600, fill: C.ink })
   b.ctext(1170, 775, '形状几乎不变', { size: 12, fill: C.mute })
-  b.wtext(760, 830, '判决实验：果蝇对気代气味分子的行为辨别（2011）；人类实验结果反复——假说至今存争议。', { size: 13, weight: 600, fill: C.warn, maxW: 560, lh: 20 })
+  b.wtext(760, 830, '判决实验：果蝇对氘代气味分子的行为辨别（2011）；人类实验结果反复——假说至今存争议。', { size: 13, weight: 600, fill: C.warn, maxW: 560, lh: 20 })
   b.wtext(760, 900, '量子生物学的共同品格：可检验、可证伪——从光合、磁感、隧穿到嗅觉，皆以实验裁决而非神秘主义。', { size: 13.5, weight: 600, fill: C.dnaD, maxW: 560, lh: 20 })
 }
 

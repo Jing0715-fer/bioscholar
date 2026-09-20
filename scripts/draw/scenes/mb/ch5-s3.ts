@@ -4,9 +4,9 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、五种模式 ============
   b.panel(30, 132, 1340, 348, { title: '一、选择性剪接的五种模式（青框＝保留外显子，白框＝被跳过）' })
-  const box = (x: number, y: number, w: number, h: number, s: string, keep: boolean) => {
+  const box = (x: number, y: number, w: number, h: number, s: string, keep: boolean, fs = 11) => {
     b.rect(x, y, w, h, { fill: keep ? C.dnaL : '#ffffff', stroke: keep ? C.dna : C.faint, sw: 1.6, rx: 4 })
-    b.ctext(x + w / 2, y + h / 2 + 5, s, { size: 10, weight: 700, fill: keep ? C.dnaD : C.mute })
+    b.ctext(x + w / 2, y + h / 2 + 5, s, { size: fs, weight: 700, fill: keep ? C.dnaD : C.mute })
   }
   // 行 1：外显子跳跃
   b.text(56, 210, '外显子跳跃', { size: 12, weight: 700, fill: C.ink })
@@ -37,7 +37,9 @@ const draw = (b: B) => {
   box(400, 320, 80, 24, '外显子 3', true)
   b.line(280, 322, 300, 322, { stroke: C.rna, sw: 2 })
   b.line(380, 322, 400, 322, { stroke: C.rna, sw: 2 })
-  b.path('M280,346 L 300,346 L 380,346 L 400,322', { stroke: C.rna, sw: 2, fill: 'none' })
+  // 转录本线只画到外显子框边缘（避免穿过框内文字）
+  b.line(280, 346, 300, 346, { stroke: C.rna, sw: 2 })
+  b.line(380, 346, 400, 322, { stroke: C.rna, sw: 2 })
   b.text(700, 336, '肌钙蛋白 T', { size: 10.5, fill: C.mute })
   // 行 4：内含子保留
   b.text(56, 394, '内含子保留', { size: 12, weight: 700, fill: C.ink })
@@ -51,12 +53,13 @@ const draw = (b: B) => {
   b.text(700, 394, '多在特定发育阶段出现', { size: 10.5, fill: C.mute })
   // 行 5：可变末端 / poly(A)
   b.text(56, 444, '可变末端 / poly(A)', { size: 12, weight: 700, fill: C.ink })
-  box(200, 428, 80, 24, '外显子 1', true)
-  box(300, 420, 110, 20, '末端 A（polyA）', true)
-  box(300, 446, 110, 20, '末端 B（polyA）', false)
-  b.line(280, 430, 300, 430, { stroke: C.rna, sw: 2 })
-  b.line(410, 430, 470, 430, { stroke: C.rna, sw: 2, marker: 'rna' })
-  b.path('M280,456 L 300,456 L 410,456', { stroke: C.rna, sw: 2, dash: '5 4' })
+  box(200, 422, 84, 26, '外显子 1', true)
+  box(300, 418, 124, 24, '末端 A（polyA）', true, 12)
+  box(300, 442, 124, 24, '末端 B（polyA）', false, 12)
+  b.line(284, 430, 300, 430, { stroke: C.rna, sw: 2 })
+  b.line(424, 430, 470, 430, { stroke: C.rna, sw: 2, marker: 'rna' })
+  b.line(284, 454, 300, 454, { stroke: C.rna, sw: 2, dash: '5 4' })
+  b.line(424, 454, 470, 454, { stroke: C.rna, sw: 2, dash: '5 4', marker: 'rna' })
   b.text(700, 444, '免疫球蛋白 M 膜型 / 分泌型', { size: 10.5, fill: C.mute })
   b.wtext(950, 200, '人约 95% 多外显子基因经历选择性剪接——蛋白质组多样性超过基因数目的主要原因。Dscam 经互斥外显子组合理论上可产生 38 000 余种异构体，是单一基因扩展信息容量的极致案例。', { size: 11.5, fill: C.sub, maxW: 400, lh: 17 })
 
@@ -91,7 +94,7 @@ const draw = (b: B) => {
     { label: '外显子 7（被跳过）', frac: 0.36, fill: '#ffffff', stroke: C.bad },
     { label: '外显子 8', frac: 0.2, fill: C.dnaL, stroke: C.dna },
   ])
-  b.wtext(770, 632, '外显子 7 被跳过导致脊髓性肌萎缩（SMA）；约 15%～50% 的致病点突变落于剪接信号，tau、TDP-43 等剪接异常参与神经退行性疾病。', { size: 11, fill: C.sub, maxW: 580, lh: 15 })
+  b.wtext(770, 636, '外显子 7 被跳过导致脊髓性肌萎缩（SMA）；约 15%～50% 的致病点突变落于剪接信号，tau、TDP-43 等剪接异常参与神经退行性疾病。', { size: 11, fill: C.sub, maxW: 580, lh: 17 })
   b.rect(770, 672, 580, 50, { fill: C.okL, stroke: C.ok, sw: 1.8, rx: 8, fillOp: 0.75 })
   b.text(786, 692, 'Spinraza（nusinersen）：反义寡核苷酸药物', { size: 12, weight: 700, fill: '#065f46' })
   b.wtext(786, 712, '掩盖 SMN2 的内含子沉默子、促进外显子 7 包含——理解剪接机制直接转化为疗法。', { size: 10.5, fill: C.sub, maxW: 552, lh: 14 })

@@ -16,9 +16,9 @@ const draw = (b: B) => {
   b.line(520, 282, 520, 298, { stroke: C.sub, sw: 2 })
   b.ctext(300, 274, '30%', { size: 11.5, weight: 700, fill: C.ink })
   b.ctext(520, 274, '40%', { size: 11.5, weight: 700, fill: C.ink })
-  b.wtext(80, 348, '>40%：主链结构均方根偏差通常很小，建模近乎照抄（主链误差约 1 Å）。', { size: 11.5, fill: '#065f46', maxW: 360, lh: 16 })
-  b.wtext(470, 348, '30% 上下：主链误差约 1.5–2 Å，环区与侧链可信度下降。', { size: 11.5, fill: '#92400e', maxW: 320, lh: 16 })
-  b.wtext(820, 348, '<30%：比对本身开始不可靠，插入缺失位置难定，结构相似性存疑。', { size: 11.5, fill: C.bad, maxW: 320, lh: 16 })
+  b.wtext(80, 344, '<30%：比对本身开始不可靠，插入缺失位置难定，结构相似性存疑。', { size: 11.5, fill: C.bad, maxW: 210, lh: 16 })
+  b.wtext(316, 344, '30% 上下：主链误差约 1.5–2 Å，环区与侧链可信度下降。', { size: 11.5, fill: '#92400e', maxW: 190, lh: 16 })
+  b.wtext(536, 344, '>40%：主链结构均方根偏差通常很小，建模近乎照抄（主链误差约 1 Å）。', { size: 11.5, fill: '#065f46', maxW: 310, lh: 16 })
   // 历史两卡
   b.rect(80, 420, 380, 92, { fill: C.panel, stroke: C.line, sw: 1.3, rx: 8 })
   b.text(100, 448, '1969 · Browne 等', { size: 13, weight: 700, fill: C.ink })
@@ -69,7 +69,9 @@ const draw = (b: B) => {
   b.ctext(947, 678, 'β 区', { size: 12, weight: 700, fill: C.accD })
   b.ellipse(1010, 789, 48, 36, { fill: C.okL, stroke: C.ok, sw: 1.8, fillOp: 0.85 })
   b.ctext(1010, 794, 'α 区', { size: 12, weight: 700, fill: '#065f46' })
-  b.wtext(1130, 720, '落在许可区之外的残基提示模型局部不合理', { size: 10.5, fill: C.mute, maxW: 130, lh: 14 })
+  b.text(1068, 710, '落在许可区之外的残基', { size: 10.5, fill: C.mute })
+  b.text(1068, 726, '提示模型局部不合理', { size: 10.5, fill: C.mute })
+  b.text(1068, 840, '合格判据：许可区 ≥ 90%', { size: 10.5, weight: 600, fill: C.sub })
   b.wtext(880, 934, '低精度模型不得直接用于需原子级精度的任务（如配体结合位点分析）。', { size: 11.5, fill: C.bad, maxW: 460, lh: 15 })
 }
 

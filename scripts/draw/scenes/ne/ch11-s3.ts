@@ -36,7 +36,7 @@ const draw = (b: B) => {
   b.ctext(1060, 286, '级联放大', { size: 10.5, weight: 700, fill: C.sub })
   b.ctext(1060, 370, '级联放大', { size: 10.5, weight: 700, fill: C.sub })
   // 负反馈箭头
-  b.path('M1180,436 C1200,510 860,510 740,238', { stroke: C.bad, sw: 2.2, dash: '8 5', marker: 'bad' })
+  b.path('M1180,421 C1305,475 1305,185 1182,233', { stroke: C.bad, sw: 2.2, dash: '8 5', marker: 'bad' })
   b.wtext(800, 524, '三重关闭闸门：① 长环负反馈（皮质醇抑制 CRH 与 ACTH）；② 海马 GR（刹车踏板，慢性高皮质醇反致海马损伤）；③ 快速非基因组反馈。', { size: 11, fill: C.sub, maxW: 550, lh: 16 })
 
   // ============ 三、MR 与 GR 分工 ============
@@ -54,7 +54,7 @@ const draw = (b: B) => {
   b.panel(710, 578, 660, 396, { title: '四、应激与免疫、脑：时间的双面性' })
   b.rect(740, 648, 290, 130, { fill: C.okL, fillOp: 0.5, stroke: C.ok, sw: 1.8, rx: 9 })
   b.text(756, 674, '急性应激：一过性增强', { size: 12.5, weight: 700, fill: '#065f46' })
-  b.wtext(756, 698, '固有免疫与 NK 细胞活性短暂上调——「战或逃」的免疫后备动员。', { size: 11, fill: C.sub, maxW: 258, lh: 15 })
+  b.wtext(756, 698, '固有免疫与 NK 细胞活性短暂上调，「战或逃」的免疫后备动员。', { size: 11, fill: C.sub, maxW: 258, lh: 15 })
   b.rect(1050, 648, 290, 130, { fill: C.badL, fillOp: 0.45, stroke: C.bad, sw: 1.8, rx: 9 })
   b.text(1066, 674, '慢性应激：全面抑制', { size: 12.5, weight: 700, fill: C.bad })
   b.wtext(1066, 698, '持续皮质醇抑制细胞免疫：胸腺萎缩、Th1 向 Th2 偏移、感染易感性增加。', { size: 11, fill: C.sub, maxW: 258, lh: 15 })

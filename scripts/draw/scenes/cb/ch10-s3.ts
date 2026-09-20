@@ -20,8 +20,8 @@ const draw = (b: B) => {
   b.ctext(544, 350, '释放', { size: 9, fill: C.dnaD })
   // 正反馈回环
   b.path('M 544,366 C 544,412 240,412 200,362', { stroke: C.dna, sw: 2.2, dash: '6 4', marker: 'dna', fill: 'none' })
-  b.wtext(300, 404, '转录 cyclin E → cyclin E-CDK2 进一步磷酸化 Rb（正反馈）', { size: 9.5, weight: 700, fill: C.dnaD })
-  b.wtext(64, 436, '低磷酸化 Rb 结合并抑制 E2F；正反馈使 Rb 彻底失活后 S 期基因全面表达。', { size: 9.5, fill: C.sub, maxW: 600, lh: 13 })
+  b.wtext(300, 420, '转录 cyclin E → cyclin E-CDK2 进一步磷酸化 Rb（正反馈）', { size: 9.5, weight: 700, fill: C.dnaD, maxW: 300 })
+  b.wtext(64, 440, '低磷酸化 Rb 结合并抑制 E2F；正反馈使 Rb 彻底失活后 S 期基因全面表达。', { size: 9.5, fill: C.sub, maxW: 600, lh: 13 })
   b.tag(200, 470, '接触抑制：E-钙粘蛋白接触上调 p27、下调 cyclin D/E（肿瘤细胞失去）', { fill: C.warnL, stroke: C.warn, size: 9.5, tfill: '#78350f', pad: 5 })
   b.tag(300, 518, 'p16-cyclin D-CDK4/6-Rb-E2F 轴：肿瘤最常扰动的通路之一', { fill: C.badL, stroke: C.bad, size: 9.5, weight: 700, tfill: C.bad, pad: 5 })
 
@@ -94,7 +94,7 @@ const draw = (b: B) => {
   b.tag(540, 938, '姐妹染色单体分离（后期启动）', { fill: C.okL, stroke: C.ok, size: 10, weight: 700, tfill: C.ok, pad: 5 })
   // MCC 抑制箭头
   b.arrow(300, 666, 470, 666, { stroke: C.bad, sw: 2, marker: 'bad' })
-  b.ctext(385, 650, 'MCC 抑制 Cdc20', { size: 9, weight: 700, fill: C.bad })
+  b.ctext(310, 652, 'MCC 抑制 Cdc20', { size: 9, weight: 700, fill: C.bad })
   // 右：cyclin B 降解与药物
   b.text(700, 618, '退出与临床', { size: 11.5, weight: 700, fill: C.ink })
   b.wtext(700, 640, '同时 APC/C 降解 cyclin B → 细胞退出 M 期；SAC 失败导致染色体错误分配与非整倍体。', { size: 9.5, fill: C.sub, maxW: 300, lh: 13.5 })

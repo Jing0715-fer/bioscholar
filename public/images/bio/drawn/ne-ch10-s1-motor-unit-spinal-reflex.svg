@@ -86,16 +86,17 @@
   <line x1="784" y1="223" x2="790" y2="223" stroke="#475569" stroke-width="1.8"/>
   <text x="780" y="227" font-size="13" fill="#64748b" text-anchor="end">高</text>
   <text x="1040" y="514" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">力量需求（突触驱动的去极化）</text>
-  <text x="744" y="340" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">募集与放电率</text>
+  <text x="740" y="323" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">募集与</text>
+  <text x="740" y="341" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">放电率</text>
   <path d="M790,457 C794.2,456.6 808.3,464.4 815,454.4 C821.7,444.4 809.2,408.9 830,397.2 C850.8,385.5 900.8,388.5 940,384.2 C979.2,379.9 1006.7,375.1 1065,371.2 C1123.3,367.3 1252.5,362.5 1290,360.8" fill="none" stroke="#059669" stroke-width="3"/>
   <path d="M790,457 C813.3,457.0 902.5,476.5 930,457 C957.5,437.5 928.3,363.0 955,340 C981.7,317.0 1034.2,325.3 1090,319.20000000000005 C1145.8,313.1 1256.7,306.2 1290,303.6" fill="none" stroke="#b45309" stroke-width="3"/>
   <path d="M790,457 C840.0,457.0 1033.3,486.0 1090,457 C1146.7,428.0 1096.7,320.5 1130,282.8 C1163.3,245.1 1263.3,239.5 1290,230.79999999999998" fill="none" stroke="#dc2626" stroke-width="3"/>
-  <rect x="800" y="491.59" width="11.55" height="8.82" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="819.55" y="499.78" font-size="10.5" fill="#475569">S（约 8–12 Hz 起步）</text>
-  <rect x="947.5999999999999" y="491.59" width="11.55" height="8.82" rx="3" fill="#b45309" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="967.1499999999999" y="499.78" font-size="10.5" fill="#475569">FR</text>
-  <rect x="1002.17" y="491.59" width="11.55" height="8.82" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="1021.7199999999999" y="499.78" font-size="10.5" fill="#475569">FF（高频放电）</text>
+  <rect x="800" y="191.59" width="11.55" height="8.82" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="819.55" y="199.78" font-size="10.5" fill="#475569">S（约 8–12 Hz 起步）</text>
+  <rect x="947.5999999999999" y="191.59" width="11.55" height="8.82" rx="3" fill="#b45309" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="967.1499999999999" y="199.78" font-size="10.5" fill="#475569">FR</text>
+  <rect x="1002.17" y="191.59" width="11.55" height="8.82" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1021.7199999999999" y="199.78" font-size="10.5" fill="#475569">FF（高频放电）</text>
   <text x="740" y="530" font-size="10.5" fill="#475569">神经元胞体愈小 → 膜面积愈小 → 输入电阻愈高 → 同等突触电流去极化愈大 → 阈值愈低、愈先募集；</text>
   <text x="740" y="545" font-size="10.5" fill="#475569">放电率在约 8–50 Hz 范围内上调（频率编码）+ 更大单位顺序加入（募集编码）= 力量分级。</text>
   <rect x="30" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
@@ -118,11 +119,11 @@
   <text x="400" y="728" font-size="9.5" fill="#78350f" text-anchor="middle">Ia 侧支</text>
   <circle cx="430" cy="820" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
   <text x="430" y="824" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">α</text>
-  <text x="466" y="824" font-size="9.5" fill="#64748b" text-anchor="middle">拮抗肌（屈肌）</text>
+  <text x="490" y="824" font-size="9.5" fill="#64748b">拮抗肌（屈肌）</text>
   <line x1="430" y1="793" x2="430" y2="806" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-rna)"/>
   <text x="495" y="800" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">抑制</text>
   <line x1="324" y1="720" x2="230" y2="700" stroke="#059669" stroke-width="2.4" marker-end="url(#arr-ok)"/>
-  <text x="60" y="704" font-size="10.5" fill="#065f46" font-weight="700">兴奋 → 肌收缩（膝跳）</text>
+  <text x="60" y="714" font-size="10.5" fill="#065f46" font-weight="700">兴奋 → 肌收缩（膝跳）</text>
   <text x="60" y="886" font-size="10.5" fill="#475569">牵张反射潜伏期约 20–25 ms（单突触最快通路）；</text>
   <text x="60" y="901" font-size="10.5" fill="#475569">梭外肌主动缩短时 α-γ 共激活令肌梭全程保持敏感——「预计性调节」的现代观点由此而来。</text>
   <rect x="710" y="578" width="660" height="396" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>

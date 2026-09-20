@@ -14,7 +14,7 @@
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">DNA 损伤的类型与后果</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">自发损伤（脱嘌呤、脱氨、8-oxoG、O⁶-meG）与环境因素（UV 二聚体、电离断裂、嵌入移码、交联）——损伤是结构异常，经复制拷贝才固定为突变</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">自发损伤（脱嘌呤、脱氨、8-oxoG、O<tspan dy="-6.5" font-size="13.7">6</tspan><tspan dy="6.5">-meG）与环境因素（UV 二聚体、电离断裂、嵌入移码、交联）——损伤是结构异常，经复制拷贝才固定为突变</tspan></text>
   <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、自发性损伤：脱嘌呤 / 脱氨 / 氧化 / 烷基化</text>
   <rect x="91.6875" y="175.375" width="56.625" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
@@ -56,9 +56,9 @@
   <text x="387" y="348" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">G</text>
   <line x1="412" y1="343" x2="448" y2="343" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
   <rect x="452" y="328" width="68" height="30" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
-  <text x="486" y="348" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">O⁶-meG</text>
+  <text x="486" y="348" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">O<tspan dy="-4.4" font-size="9.4">6</tspan><tspan dy="4.4">-meG</tspan></text>
   <text x="360" y="380" font-size="11" fill="#475569">内源或外源烷化剂（亚硝胺、EMS、MMS）；</text>
-  <text x="360" y="395.5" font-size="11" fill="#475569">O⁶-meG 与 T 错配，强致癌与细胞毒性。</text>
+  <text x="360" y="395.5" font-size="11" fill="#475569">O<tspan dy="-3.7" font-size="7.9">6</tspan><tspan dy="3.7">-meG 与 T 错配，强致癌与细胞毒性。</tspan></text>
   <rect x="690" y="132" width="680" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="706" y="154.84" font-size="19" fill="#475569" font-weight="700">二、环境因素诱导的损伤</text>
   <rect x="710" y="176" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
@@ -68,7 +68,7 @@
   <rect x="1130" y="176" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="1240" y="203.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
   <rect x="710" y="220" width="170" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="795" y="249.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">紫外线（260 nm）</text>
+  <text x="795" y="249.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">紫外线（254 nm）</text>
   <rect x="880" y="220" width="250" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="1005" y="249.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">环丁烷嘧啶二聚体（CPD）、6-4 光产物</text>
   <rect x="1130" y="220" width="220" height="48" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
@@ -140,9 +140,18 @@
   <text x="102" y="826" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
   <rect x="140" y="800" width="44" height="40" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
   <text x="162" y="826" font-size="15" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
-  <rect x="124" y="806" width="16" height="28" fill="#fef3c7" stroke="#b45309" stroke-width="1.8" stroke-dasharray="4 3"/>
-  <text x="220" y="812" font-size="12" fill="#475569">相邻嘧啶经环丁烷环共价联结（CPD），阻断复制与转录；</text>
-  <text x="220" y="829.5" font-size="12" fill="#475569">另有 6-4 光产物。</text>
+  <line x1="124" y1="812" x2="140" y2="812" stroke="#b45309" stroke-width="2.4"/>
+  <line x1="124" y1="830" x2="140" y2="830" stroke="#b45309" stroke-width="2.4"/>
+  <text x="132" y="860" font-size="9.5" fill="#78350f" text-anchor="middle">环丁烷环（CPD）</text>
+  <rect x="80" y="884" width="44" height="36" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="102" y="908" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <rect x="140" y="884" width="44" height="36" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="162" y="908" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">T</text>
+  <line x1="124" y1="914" x2="140" y2="890" stroke="#b45309" stroke-width="2.4"/>
+  <text x="132" y="944" font-size="9.5" fill="#78350f" text-anchor="middle">6-4 光产物（单键）</text>
+  <text x="220" y="812" font-size="12" fill="#475569">相邻嘧啶经 UV 共价联结：CPD 为环丁烷环（两条键，上），</text>
+  <text x="220" y="829.5" font-size="12" fill="#475569">6-4 光产物为 C6–C4 单键（下）——均扭曲 DNA 螺旋、</text>
+  <text x="220" y="847" font-size="12" fill="#475569">阻断复制与转录。</text>
   <text x="700" y="782" font-size="13.5" fill="#1e293b" font-weight="700">移码突变（嵌入剂 / 复制滑移）</text>
   <rect x="700" y="796" width="72" height="32" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
   <text x="736" y="817" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">ATG</text>

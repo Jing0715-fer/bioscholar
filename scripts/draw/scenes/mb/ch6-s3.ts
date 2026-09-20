@@ -92,7 +92,7 @@ const draw = (b: B) => {
   b.rect(318, 645, 128, 44, { fill: C.enzL, stroke: C.enz, sw: 1.6, rx: 6 })
   b.ctext(382, 663, 'aa-AMP', { size: 11.5, weight: 700, fill: C.enzD })
   b.ctext(382, 680, '氨酰-腺苷酸', { size: 9, fill: C.sub })
-  b.text(454, 672, '+ PPᵢ', { size: 11.5, weight: 600, fill: C.sub })
+  b.text(454, 672, '+ PP_{i}', { size: 11.5, weight: 600, fill: C.sub })
   // ② 转移
   b.text(56, 724, '② 转移', { size: 12.5, weight: 700, fill: C.enzD })
   b.rect(122, 708, 92, 30, { fill: C.enzL, stroke: C.enz, sw: 1.5, rx: 5 })
@@ -124,21 +124,21 @@ const draw = (b: B) => {
   // 酶体
   b.ellipse(960, 730, 140, 68, { fill: C.proL, stroke: C.pro, sw: 2 })
   b.ctext(960, 690, 'IleRS', { size: 13, weight: 700, fill: C.proD })
-  b.rect(886, 706, 96, 50, { fill: '#ffffff', stroke: C.enz, sw: 1.7, rx: 5 })
+  b.rect(886, 704, 96, 54, { fill: '#ffffff', stroke: C.enz, sw: 1.7, rx: 5 })
   b.ctext(934, 724, '催化腔', { size: 11.5, weight: 700, fill: C.enzD })
-  b.ctext(934, 742, '大·第一筛', { size: 9, fill: C.sub })
-  b.rect(1006, 706, 96, 50, { fill: C.enzL, stroke: C.enz, sw: 1.7, rx: 5 })
+  b.ctext(934, 744, '大·第一筛', { size: 10, fill: C.sub })
+  b.rect(1006, 704, 96, 54, { fill: C.enzL, stroke: C.enz, sw: 1.7, rx: 5 })
   b.ctext(1054, 724, '编辑腔', { size: 11.5, weight: 700, fill: C.enzD })
-  b.ctext(1054, 742, '小·第二筛', { size: 9, fill: C.sub })
+  b.ctext(1054, 744, '小·第二筛', { size: 10, fill: C.sub })
   b.arrow(984, 731, 1004, 731, { stroke: C.enz, sw: 2, marker: 'enz' })
-  b.ctext(994, 698, '副底物转入', { size: 8.5, fill: C.sub })
+  b.ctext(994, 722, '转入', { size: 9.5, fill: C.sub })
   // 底物
   b.ion(770, 690, 'Ile', { r: 16, fill: C.okL, stroke: C.ok, tfill: '#065f46', size: 11 })
   b.arrow(790, 690, 884, 716, { stroke: C.ok, sw: 1.8, marker: 'ok' })
-  b.ctext(834, 676, '✓ 正确底物', { size: 9.5, weight: 600, fill: C.ok })
-  b.ion(770, 748, 'Val', { r: 16, fill: C.warnL, stroke: C.warn, tfill: '#78350f', size: 11 })
-  b.arrow(790, 748, 884, 744, { stroke: C.warn, sw: 1.8, marker: 'warn' })
-  b.ctext(834, 770, '比 Ile 小·误活化', { size: 9.5, weight: 600, fill: C.warn })
+  b.ctext(834, 672, '正确底物 ✓', { size: 10, weight: 600, fill: C.ok })
+  b.ion(770, 752, 'Val', { r: 16, fill: C.warnL, stroke: C.warn, tfill: '#78350f', size: 11 })
+  b.arrow(790, 752, 884, 744, { stroke: C.warn, sw: 1.8, marker: 'warn' })
+  b.ctext(834, 774, '比 Ile 小·误活化', { size: 10, weight: 600, fill: C.warn })
   // 去向
   b.arrow(934, 756, 934, 792, { stroke: C.ok, sw: 2, marker: 'ok' })
   b.ctext(934, 816, 'Ile-tRNA ✓ 产物', { size: 10.5, weight: 700, fill: '#065f46' })
@@ -150,7 +150,7 @@ const draw = (b: B) => {
   b.wtext(1128, 730, '· 第二筛：过小的副底物在编辑腔被水解', { size: 10.5, fill: C.sub, maxW: 226, lh: 15 })
   b.wtext(1128, 760, '· 「恰好 Ile」通过两筛 → 正确酰化', { size: 10.5, fill: C.sub, maxW: 226, lh: 15 })
   // 频率与延伸
-  b.ctext(1010, 846, 'Val 误入频率：10⁻² → 10⁻⁵ 以下（pre / post-transfer editing）', { size: 11.5, weight: 700, fill: C.ink })
+  b.ctext(1010, 846, 'Val 误入频率：10^{-2} → 10^{-5} 以下（pre / post-transfer editing）', { size: 11.5, weight: 700, fill: C.ink })
   b.wtext(716, 870, 'ThrRS 编辑 Ser、PheRS 编辑 Tyr 遵循同一逻辑；tRNA 结合还诱导酶构象校验（诱导契合）协同保真。', { size: 10.5, fill: C.sub, maxW: 620, lh: 15 })
   b.rect(716, 890, 620, 56, { fill: C.accL, stroke: C.acc, sw: 1.2, rx: 8, fillOp: 0.5 })
   b.wtext(730, 910, '药物靶点：莫匹罗星特异抑制细菌 IleRS（外用抗生素经典）；镰孢菌酸抑制哺乳动物 GlnRS——近年发现 aaRS 兼有「第二职业」（非催化功能参与信号转导）。', { size: 10.5, fill: C.sub, maxW: 592, lh: 15 })
@@ -158,6 +158,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: 'tRNA 结构与氨酰-tRNA 合成酶',
-  subtitle: '三叶草二级结构折叠为倒 L 形——3′-CCA 与反密码子分居两端（相距约 7 nm）；aaRS 两步反应（aa-AMP 中间体，I 类 2′-OH / II 类 3′-OH），双筛校对使 IleRS 的 Val 误入从 10⁻² 降至 10⁻⁵ 以下',
+  subtitle: '三叶草二级结构折叠为倒 L 形——3′-CCA 与反密码子分居两端（相距约 7 nm）；aaRS 两步反应（aa-AMP 中间体，I 类 2′-OH / II 类 3′-OH），双筛校对使 IleRS 的 Val 误入从 10^{-2} 降至 10^{-5} 以下',
   draw,
 })

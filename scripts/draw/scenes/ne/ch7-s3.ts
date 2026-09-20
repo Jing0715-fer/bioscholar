@@ -33,15 +33,15 @@ const draw = (b: B) => {
   // SG 抑制性中间神经元
   b.circle(1060, 315, 26, { fill: C.rnaL, fillOp: 0.7, stroke: C.rna, sw: 2 })
   b.ctext(1060, 319, 'SG', { size: 12.5, weight: 700, fill: C.rnaD })
-  b.ctext(1060, 358, '胶状质抑制性', { size: 10, fill: C.mute })
-  b.ctext(1060, 371, '中间神经元', { size: 10, fill: C.mute })
+  b.ctext(988, 316, '胶状质抑制性', { size: 10, fill: C.mute })
+  b.ctext(988, 331, '中间神经元', { size: 10, fill: C.mute })
   // T 细胞（后角投射神经元）
   b.circle(1190, 315, 30, { fill: C.accL, fillOp: 0.7, stroke: C.acc, sw: 2.2 })
   b.ctext(1190, 319, 'T', { size: 14, weight: 700, fill: C.accD })
   b.ctext(1190, 358, '投射神经元', { size: 10, fill: C.mute })
   // 粗纤维 → SG（+）
   b.arrow(1000, 250, 1042, 292, { stroke: C.dna, sw: 2.2, marker: 'dna' })
-  b.ctext(990, 262, '＋', { size: 12, weight: 700, fill: C.dnaD })
+  b.ctext(990, 268, '＋', { size: 12, weight: 700, fill: C.dnaD })
   // 粗纤维 → T（+，直接）
   b.arrow(1010, 250, 1168, 292, { stroke: C.dna, sw: 1.8, dash: '6 4', marker: 'dna' })
   // SG → T（− 抑制）
@@ -59,7 +59,7 @@ const draw = (b: B) => {
   // 下行控制
   b.arrow(1300, 420, 1085, 336, { stroke: C.pro, sw: 2.2, dash: '6 4', marker: 'pro' })
   b.ctext(1305, 442, '下行控制', { size: 11, weight: 700, fill: C.proD })
-  b.wtext(740, 470, '粗纤维兴奋 SG → 抑制 T 细胞（关门）；细纤维抑制 SG 并直接兴奋 T（开门）——轻抚伤处可镇痛（TENS 经皮电刺激据此设计），下行控制可拨动闸门。', { size: 10.5, fill: C.sub, maxW: 590, lh: 15 })
+  b.wtext(740, 470, '粗纤维兴奋 SG → 抑制 T 细胞（关门）；细纤维抑制 SG 并直接兴奋 T（开门）——轻抚伤处可镇痛（TENS 经皮电刺激据此设计），下行控制可拨动闸门。符号：＋ / − 为箭头对所指向神经元的直接效应。', { size: 10.5, fill: C.sub, maxW: 590, lh: 15 })
 
   // ============ 三、下行镇痛系统与阿片机制 ============
   b.panel(30, 578, 1340, 396, { title: '三、下行镇痛系统：从 PAG 到脊髓背角的刹车' })
@@ -81,7 +81,7 @@ const draw = (b: B) => {
   b.ctext(700, 760, '5-羟色胺 · 去甲肾上腺素 · 脑啡肽 → 抑制痛觉传递', { size: 11.5, weight: 700, fill: C.rnaD })
   // 历史卡
   b.rect(1010, 648, 340, 120, { fill: C.panelB, stroke: C.line, sw: 1.5, rx: 9 })
-  b.wtext(1030, 676, '20 世纪 60 年代邹冈与张昌绍发现：向家兔 PAG 内微量注射吗啡即产生强烈镇痛——揭开内源性镇痛研究的序幕。', { size: 11, fill: C.sub, maxW: 300, lh: 17 })
+  b.wtext(1030, 676, '20 世纪 60 年代邹冈与张昌绍发现：向家兔 PAG 内微量注射吗啡，即产生强烈镇痛——揭开内源性镇痛研究的序幕。', { size: 11, fill: C.sub, maxW: 300, lh: 17 })
   // 阿片肽卡
   b.rect(90, 800, 400, 140, { fill: C.dnaL, fillOp: 0.45, stroke: C.dna, sw: 1.6, rx: 9 })
   b.text(110, 826, '内源性阿片肽', { size: 13, weight: 700, fill: C.dnaD })

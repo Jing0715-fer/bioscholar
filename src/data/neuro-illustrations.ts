@@ -40,8 +40,8 @@ export const neuroIllustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/commons/nodes-of-ranvier.png',
       caption:
-        '有髓纤维的郎飞结区超微结构：髓鞘由 Schwann 细胞（外周）的质膜层层紧密包卷而成，结间体两侧在郎飞结处收口，结区轴膜裸露、密集聚集电压门控 Na⁺ 通道；结旁的 Schwann 细胞微绒毛与结周星形胶质细胞突起共同密封结区，把细胞外空间约束成高阻抗窄缝——去极化电流因此被迫沿轴浆跳向下一个结，即跳跃式传导。这种「膜绝缘加结区集中放电」的设计把传导速度提升两个数量级而无需增大轴径，正是多发性硬化脱髓鞘疾病中传导阻断的结构反面。',
-      credit: '图片来源：Wikimedia Commons（Mgcaptainzanko，CC BY 4.0）',
+        '有髓纤维与郎飞结的传导设计：髓鞘由 Schwann 细胞（外周）的质膜层层紧密包卷而成，结间体之间的郎飞结处轴膜裸露、密集聚集电压门控 Na⁺ 通道——去极化电流被迫沿轴浆从一个结跳向下一个结，即跳跃式传导（saltatory conduction）。这种「膜绝缘加结区集中放电」的设计把传导速度提升两个数量级而无需增大轴径；多发性硬化等脱髓鞘疾病中髓鞘绝缘丧失，传导减慢甚至阻断——同一结构在健康与疾病中的正反面。',
+      credit: '图片来源：Wikimedia Commons（Chandres，CC BY-SA）',
     },
   ],
 

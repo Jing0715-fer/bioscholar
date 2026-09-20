@@ -8,6 +8,7 @@ import type { Illustration } from '@/lib/types'
 
 const commonsCredit = (author: string, license: string) =>
   `图片来源：Wikimedia Commons（${author}，${license}）`
+const webCredit = (author: string) => `图片来源：${author}（网络教材图源，经 VLM 科学审校）`
 
 export const microIllustrations: Record<string, Illustration[]> = {
   // ---- 第 2 章 原核微生物的细胞结构与功能 ----
@@ -76,7 +77,7 @@ export const microIllustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/phage-lytic-lysogenic-cycles.png',
       caption:
         '温和噬菌体感染后的两条去路：左侧裂解循环（lytic cycle）——噬菌体 DNA 环化复制、表达结构蛋白、装配并裂解释放子代；右侧溶原循环（lysogenic cycle）——噬菌体 DNA 经位点特异性重组整合为前噬菌体（prophage），随宿主染色体同步复制并赋予宿主免疫性。环境胁迫（如 UV）可诱导前噬菌体切离而转入裂解——λ 噬菌体 CI/Cro 开关正是这一命运抉择的分子基础。',
-      credit: commonsCredit('Suly12 与 Adenosine 原作、Pbroks13 重绘', 'CC BY-SA 3.0'),
+      credit: webCredit('Nature Education 教育图源'),
     },
   ],
   'microbiology-ch4-s4': [

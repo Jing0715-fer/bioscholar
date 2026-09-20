@@ -4,8 +4,8 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、迁移循环 ============
   b.panel(30, 132, 1340, 340, { title: '一、迁移循环：前端伸展 → 新粘着 → 胞体牵引 → 尾部释放' })
-  b.arrow(100, 172, 200, 172, { stroke: C.acc, sw: 3, marker: 'acc' })
-  b.ctext(150, 192, '迁移方向', { size: 11, weight: 700, fill: C.accD })
+  b.arrow(100, 190, 200, 190, { stroke: C.acc, sw: 3, marker: 'acc' })
+  b.ctext(150, 178, '迁移方向', { size: 11, weight: 700, fill: C.accD })
   // 细胞体
   b.ellipse(450, 300, 190, 95, { fill: C.panel, stroke: C.sub, sw: 2.2 })
   b.ellipse(655, 300, 55, 85, { fill: C.accL, fillOp: 0.6, stroke: C.sub, sw: 2.2 })
@@ -33,9 +33,9 @@ const draw = (b: B) => {
   b.circle(415, 420, 11, { fill: C.accL, stroke: C.acc, sw: 1.6 })
   b.ctext(415, 424, '③', { size: 11, weight: 700, fill: C.accD })
   b.text(435, 425, '胞体牵引（应力纤维收缩）', { size: 10.5, fill: C.ink })
-  b.circle(125, 235, 11, { fill: C.accL, stroke: C.acc, sw: 1.6 })
-  b.ctext(125, 239, '④', { size: 11, weight: 700, fill: C.accD })
-  b.text(145, 240, '尾部释放（整联蛋白内吞与钙蛋白酶切断）', { size: 10.5, fill: C.ink })
+  b.circle(120, 212, 11, { fill: C.accL, stroke: C.acc, sw: 1.6 })
+  b.ctext(120, 216, '④', { size: 11, weight: 700, fill: C.accD })
+  b.text(140, 213, '尾部释放（整联蛋白内吞与钙蛋白酶切断）', { size: 10.5, fill: C.ink })
 
   // ============ 二、Rho 家族 GTP 酶 ============
   b.panel(30, 494, 660, 240, { title: '二、Rho 家族 GTP 酶：运动的方向盘' })
@@ -63,14 +63,14 @@ const draw = (b: B) => {
   b.rect(1180, 545, 60, 145, { fill: C.rna, fillOp: 0.35 })
   b.rect(1120, 545, 60, 145, { fill: C.rna, fillOp: 0.2 })
   b.rect(1060, 545, 60, 145, { fill: C.rna, fillOp: 0.1 })
-  b.ctext(1180, 530, '趋化因子梯度（高 → 低）', { size: 10, weight: 700, fill: C.rnaD })
+  b.ctext(1180, 704, '趋化因子梯度（低 → 高）', { size: 10, weight: 700, fill: C.rnaD })
   // 细胞
   b.circle(900, 618, 60, { fill: C.panel, stroke: C.sub, sw: 2.2 })
   b.path('M 940,568 A 60,60 0 0 1 940,668', { stroke: C.ok, sw: 8, fill: 'none', opacity: 0.8 })
   b.line(958, 590, 985, 580, { stroke: C.acc, sw: 2 })
   b.line(962, 620, 992, 618, { stroke: C.acc, sw: 2 })
   b.line(958, 650, 985, 660, { stroke: C.acc, sw: 2 })
-  b.text(975, 540, '前端 PIP₃ 浓集（PI3K 产生）', { size: 9.5, weight: 700, fill: C.ok })
+  b.text(975, 537, '前端 PIP_{3} 浓集（PI3K 产生）', { size: 9.5, weight: 700, fill: C.ok })
   b.etext(826, 585, '后端 PTEN 清除', { size: 9.5, weight: 700, fill: C.bad })
   // GPCR 均匀分布
   for (let i = 0; i < 6; i++) {
@@ -105,6 +105,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: '细胞骨架与细胞运动',
-  subtitle: '迁移四步循环（伸展→粘着→牵引→释放）；Rac1→板状伪足、Cdc42→丝状伪足与极性、RhoA→应力纤维收缩；趋化核心是 PIP₃ 胞内极化梯度（PI3K/PTEN）；微管探路、微丝产力、中间丝保完整性',
+  subtitle: '迁移四步循环（伸展→粘着→牵引→释放）；Rac1→板状伪足、Cdc42→丝状伪足与极性、RhoA→应力纤维收缩；趋化核心是 PIP_{3} 胞内极化梯度（PI3K/PTEN）；微管探路、微丝产力、中间丝保完整性',
   draw,
 })

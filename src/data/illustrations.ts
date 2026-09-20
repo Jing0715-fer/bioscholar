@@ -316,7 +316,7 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/beta-oxidation.png',
       caption:
         '脂肪酸的 β-氧化螺旋：胞质中活化的脂酰 CoA 经肉碱穿梭进入线粒体基质后，每轮循环四步反应——脂酰 CoA 脱氢酶（FAD 介导，生成 FADH₂）、烯酰 CoA 水化酶、β-羟脂酰 CoA 脱氢酶（NAD⁺ 介导，生成 NADH）、β-酮硫解酶（硫解，切下一个乙酰 CoA）——链长缩短两个碳原子，缩短的脂酰 CoA 重新进入循环。以棕榈酸（C16:0）为例：活化耗 2 个高能键，7 轮螺旋产 8 乙酰 CoA、7 FADH₂、7 NADH，彻底氧化净得 106 ATP；奇数碳脂肪酸最后一轮生成丙酰 CoA，经羧化异构为琥珀酰 CoA 汇入 TCA。',
-      credit: commonsCredit('Mplanine', 'CC BY 4.0'),
+      credit: webCredit('Nature 教育图源（线粒体肉碱穿梭示意）'),
     },
   ],
   'biochemistry-ch11-s2': [
@@ -342,7 +342,7 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/dna-replication-fork.png',
       caption:
         '复制叉（replication fork）与半不连续复制：解旋酶在复制叉处解开亲代双链，SSB 蛋白维持单链状态，拓扑异构酶消除解旋产生的超螺旋扭转；前导链沿 5′→3′ 方向随复制叉推进连续合成；后随链模板环出，指导合成短的冈崎片段（原核约 1000 nt）——引物酶合成 RNA 引物、DNA polⅢ 延伸、polⅠ 切除引物并填补缺口，最后由 DNA 连接酶封口。两条子链的合成方式不对称却同步推进，全部由多聚体复制体（replisome）协调完成。',
-      credit: commonsCredit('LadyofHats (Mariana Ruiz)', 'Public domain'),
+      credit: webCredit('Biology LibreTexts 教材图源'),
     },
   ],
   'molecular-biology-ch4-s2': [
@@ -400,7 +400,7 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/chromatin-packaging.png',
       caption:
         '染色质的多级包装层级：DNA 双螺旋（直径 2 nm）→ 组蛋白八聚体缠绕 147 bp DNA 约 1.65 圈构成核小体，串成 10 nm「串珠」纤维 → 借组蛋白 H1 螺旋成 30 nm 纤维 → 环状结构域锚定于蛋白质支架 → 最终浓缩为中期染色体（合计压缩约 10⁴ 倍而仍保持可转录、可复制）。图中「Add core histones / Add histone H1 / Add further scaffold proteins」标注每级包装的添加成分；包装层级间的转换由组蛋白修饰、凝聚素（condensin）等调控——基因表达调控的第一步就是打开包装。',
-      credit: commonsCredit('Richard Wheeler (Panther)', 'CC BY-SA 3.0'),
+      credit: webCredit('Springer Nature 教育图源'),
     },
     {
       src: '/images/bio/pdb/1AOI.jpeg',
@@ -444,7 +444,7 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/pcr-cycles.png',
       caption:
         '聚合酶链式反应（PCR）的三步温度循环：①变性（约 94–95 ℃）——双链模板氢键断裂解为单链；②退火（约 50–65 ℃，低于 Tm 5 ℃左右）——引物与互补序列特异性结合；③延伸（约 72 ℃）——Taq DNA 聚合酶从引物 3′-OH 起沿模板合成新链。每循环目的片段数翻倍（2ⁿ），30 轮即可扩增约 10⁹ 倍；上一轮产物成为下一轮模板是指数扩增的关键。耐热聚合酶（Taq，来自水生栖热菌）使自动化热循环成为可能（Mullis，1993 年诺贝尔奖）。',
-      credit: commonsCredit('Enzoklop', 'CC BY-SA 3.0'),
+      credit: webCredit('Superior BioDiagnostics 教育图源'),
     },
   ],
   'molecular-biology-ch9-s4': [
@@ -540,7 +540,7 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/chromatin-packaging.png',
       caption:
         '染色体多级包装模型（核型视角）：2 nm DNA 双螺旋 → 10 nm 核小体串珠 → 30 nm 螺线管纤维 → 襻环结构域 → 浓缩为中期染色体。间期染色质以环状结构域状态存在、保持转录活性（图中标注每级包装依次添加 core histones、histone H1 与 scaffold proteins）；仅在分裂期才完全浓缩为棒状染色体。全套基因组压缩约 10⁴ 倍而复制与转录机器仍可定位操作——包装与解包装本身就是基因调控的组成环节。',
-      credit: commonsCredit('Richard Wheeler (Panther)', 'CC BY-SA 3.0'),
+      credit: webCredit('Springer Nature 教育图源'),
     },
   ],
   'cell-biology-ch8-s2': [
@@ -570,7 +570,7 @@ export const illustrations: Record<string, Illustration[]> = {
       src: '/images/bio/web/cell-junctions-overview.png',
       caption:
         '上皮细胞侧面连接装置的全景示意（自顶向基）：紧密连接构成最顶端的封闭索；其下黏附连接（肌动蛋白锚定）与桥粒（中间纤维锚定）负责机械铆合；缝隙连接允许小分子与离子直接胞间互通；基底的半桥粒把细胞锚在基膜上。四类连接各司封闭、连接与通讯之职，沿侧膜排布成典型的「连接复合体」。',
-      credit: webCredit('GeeksforGeeks 教育图库'),
+      credit: webCredit('Physics Wallah 教育图库'),
     },
     {
       src: '/images/bio/web/tight-junction-diagram.jpg',

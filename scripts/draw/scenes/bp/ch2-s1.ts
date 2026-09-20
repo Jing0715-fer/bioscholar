@@ -48,13 +48,13 @@ const draw = (b: B) => {
   b.ctext(1095, 305, '自发重氧化', { size: 9.5, fill: C.sub })
   ss(b, 1061, 272); ss(b, 1130, 265); ss(b, 1062, 315); ss(b, 1128, 312)
   b.tag(1095, 350, '几乎全部催化活性恢复', { fill: C.okL, stroke: C.ok, size: 10, weight: 700, tfill: C.ok, pad: 7 })
-  // 转移箭头
+  // 转移箭头（文字与箭头/箭头保持 ≥15px 净空，避免视觉叠压）
   b.arrow(406, 290, 452, 290, { stroke: C.ink, sw: 3, marker: 'ink' })
-  b.ctext(428, 268, '8 mol/L 尿素', { size: 9.5, weight: 700, fill: C.bad })
-  b.ctext(428, 318, '＋β-巯基乙醇', { size: 9.5, fill: C.bad })
+  b.ctext(428, 261, '8 mol/L 尿素', { size: 9.5, weight: 700, fill: C.bad })
+  b.ctext(428, 325, '＋β-巯基乙醇', { size: 9.5, fill: C.bad })
   b.arrow(806, 290, 852, 290, { stroke: C.ink, sw: 3, marker: 'ink' })
-  b.ctext(830, 268, '透析去除', { size: 9.5, weight: 700, fill: C.ok })
-  b.ctext(830, 318, '变性剂', { size: 9.5, fill: C.ok })
+  b.ctext(830, 261, '透析去除', { size: 9.5, weight: 700, fill: C.ok })
+  b.ctext(830, 325, '变性剂', { size: 9.5, fill: C.ok })
   // 阶段说明
   b.ctext(230, 388, '牛胰核糖核酸酶', { size: 10.5, weight: 700, fill: C.sub })
   b.ctext(230, 406, '含 4 个链内二硫键', { size: 10, fill: C.mute })
@@ -75,19 +75,19 @@ const draw = (b: B) => {
   // ============ 二、Levinthal 悖论 ============
   b.panel(30, 552, 660, 410, { title: '二、Levinthal 悖论（1969）：折叠不可能是随机搜索' })
   b.wtext(60, 608, 'Cyrus Levinthal 算了一笔账：设每个氨基酸仅有 3 种构象状态，一条 100 肽的构象总数即为——', { size: 11, fill: C.sub, maxW: 600, lh: 16 })
-  b.text(60, 672, '3¹⁰⁰ ≈ 10⁴⁸ 种构象', { size: 18, weight: 700, fill: C.ink })
-  b.text(60, 700, '即使每尝试一个构象仅需 10⁻¹³ s，遍历全部构象也需要约 10³⁵ s：', { size: 11, fill: C.sub })
+  b.text(60, 672, '3^{100} ≈ 10^{48} 种构象', { size: 18, weight: 700, fill: C.ink })
+  b.text(60, 700, '即使每尝试一个构象仅需 10^{-13} s，遍历全部构象也需要约 10^{35} s：', { size: 11, fill: C.sub })
   // 三个时间尺度对比框
   b.rect(60, 725, 190, 60, { fill: C.badL, stroke: C.bad, sw: 1.6, rx: 9 })
-  b.ctext(155, 750, '≈ 10³⁵ s', { size: 14, weight: 700, fill: C.bad })
-  b.ctext(155, 772, '10⁴⁸ 构象 × 10⁻¹³ s', { size: 9, fill: C.mute })
+  b.ctext(155, 750, '≈ 10^{35} s', { size: 14, weight: 700, fill: C.bad })
+  b.ctext(155, 772, '10^{48} 构象 × 10^{-13} s', { size: 9, fill: C.mute })
   b.ctext(277, 756, '≫', { size: 22, weight: 700, fill: C.ink })
   b.rect(300, 725, 170, 60, { fill: C.rnaL, stroke: C.rna, sw: 1.6, rx: 9 })
-  b.ctext(385, 750, '≈ 10¹⁷ s', { size: 14, weight: 700, fill: C.rna })
+  b.ctext(385, 750, '≈ 10^{17} s', { size: 14, weight: 700, fill: C.rna })
   b.ctext(385, 772, '宇宙年龄', { size: 9.5, fill: C.mute })
   b.ctext(497, 756, '≫', { size: 22, weight: 700, fill: C.ink })
   b.rect(520, 725, 170, 60, { fill: C.okL, stroke: C.ok, sw: 1.6, rx: 9 })
-  b.ctext(605, 750, '10⁻³ – 1 s', { size: 14, weight: 700, fill: C.ok })
+  b.ctext(605, 750, '10^{-3} – 1 s', { size: 14, weight: 700, fill: C.ok })
   b.ctext(605, 772, '实际折叠（毫秒—秒级）', { size: 9, fill: C.mute })
   // 结论框
   b.rect(60, 820, 630, 120, { fill: C.panelB, stroke: C.line, sw: 1.4, rx: 9 })
@@ -96,8 +96,8 @@ const draw = (b: B) => {
   b.wtext(76, 918, '随机搜索远超宇宙年龄，真实折叠仅需毫秒—秒级，两者相差数十个数量级。', { size: 10.5, fill: C.mute, maxW: 590, lh: 15 })
 
   // ============ 三、能量漏斗 ============
-  b.panel(710, 552, 660, 410, { title: '三、折叠能量漏斗：从 10⁴⁸ 构象到唯一天然态' })
-  b.ctext(1040, 622, '去折叠态集合：~10⁴⁸ 个构象（高构象熵、高自由能）', { size: 11.5, weight: 700, fill: C.proD })
+  b.panel(710, 552, 660, 410, { title: '三、折叠能量漏斗：从 10^{48} 构象到唯一天然态' })
+  b.ctext(1040, 622, '去折叠态集合：~10^{48} 个构象（高构象熵、高自由能）', { size: 11.5, weight: 700, fill: C.proD })
   // 漏斗主体
   b.path('M 770,655 C 830,770 950,855 1035,890 L 1045,890 C 1130,855 1250,770 1310,655 Z', { fill: C.proL, fillOp: 0.5, stroke: C.pro, sw: 2.4 })
   b.ellipse(1040, 655, 270, 17, { fill: C.proL, stroke: C.pro, sw: 2 })
@@ -106,10 +106,11 @@ const draw = (b: B) => {
   b.ellipse(1040, 758, 185, 10, { fill: 'none', stroke: C.pro, sw: 1.3, dash: '5 4', opacity: 0.65 })
   b.ellipse(1040, 808, 128, 8, { fill: 'none', stroke: C.pro, sw: 1.3, dash: '5 4', opacity: 0.65 })
   b.ellipse(1040, 852, 62, 6, { fill: 'none', stroke: C.pro, sw: 1.3, dash: '5 4', opacity: 0.65 })
-  // 下坡通道
+  // 下坡通道（标签左移，避开漏斗左侧斜坡曲线）
   b.polyline([[1040, 675], [975, 710], [1085, 750], [995, 790], [1055, 832], [1040, 878]], { stroke: C.enz, sw: 2.6, marker: 'enz' })
-  b.text(860, 780, '下坡通道', { size: 10.5, weight: 700, fill: C.enzD, anchor: 'end' })
-  b.line(864, 776, 992, 788, { stroke: C.enz, sw: 1.2, dash: '3 3' })
+  b.rect(799, 767, 52, 17, { fill: C.bg, opacity: 0.85, rx: 4 })
+  b.text(845, 779, '下坡通道', { size: 10.5, weight: 700, fill: C.enzD, anchor: 'end' })
+  b.line(850, 781, 992, 790, { stroke: C.enz, sw: 1.2, dash: '3 3' })
   b.tag(880, 672, '构象熵大', { fill: C.bg, stroke: C.pro, size: 9.5, weight: 700, tfill: C.proD, pad: 6 })
   // 自由能轴
   b.arrow(733, 640, 733, 895, { stroke: C.sub, sw: 2, marker: 'ink' })
@@ -122,6 +123,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: 'Anfinsen 实验与折叠自组织：从序列到唯一天然态',
-  subtitle: 'RNase A（124 aa、4 个二硫键）经 8 mol/L 尿素+β-巯基乙醇变性后透析复性、活性几乎全恢复（1972 诺奖）；Levinthal 悖论 3¹⁰⁰≈10⁴⁸ 构象 vs 毫秒级折叠 → 能量漏斗下坡通道',
+  subtitle: 'RNase A（124 aa、4 个二硫键）经 8 mol/L 尿素+β-巯基乙醇变性后透析复性、活性几乎全恢复（1972 诺奖）；Levinthal 悖论 3^{100}≈10^{48} 构象 vs 毫秒级折叠 → 能量漏斗下坡通道',
   draw,
 })

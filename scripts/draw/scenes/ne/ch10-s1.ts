@@ -21,10 +21,11 @@ const draw = (b: B) => {
   b.panel(710, 132, 660, 430, { title: '二、Henneman 大小原则（1965）：小的先上' })
   b.axis(790, 470, 500, 260, {
     xlabel: '力量需求（突触驱动的去极化）',
-    ylabel: '募集与放电率',
     xticks: [[0.08, '轻握茶杯'], [0.4, '提购物袋'], [0.75, '搬起杠铃'], [1, '冲刺']],
     yticks: [[0.05, '0'], [0.35, '低'], [0.65, '中'], [0.95, '高']],
   })
+  b.ctext(740, 323, '募集与', { size: 13, weight: 600, fill: C.sub })
+  b.ctext(740, 341, '放电率', { size: 13, weight: 600, fill: C.sub })
   // 三段募集曲线
   b.curve(790, 470, 500, 260, [
     [0, 0.05], [0.05, 0.06], [0.08, 0.28], [0.3, 0.33], [0.55, 0.38], [1, 0.42],
@@ -35,7 +36,7 @@ const draw = (b: B) => {
   b.curve(790, 470, 500, 260, [
     [0, 0.05], [0.6, 0.05], [0.68, 0.72], [1, 0.92],
   ], { stroke: C.bad, sw: 3, smooth: true })
-  b.legend(800, 496, [
+  b.legend(800, 196, [
     ['S（约 8–12 Hz 起步）', C.ok],
     ['FR', C.rna],
     ['FF（高频放电）', C.bad],
@@ -68,12 +69,12 @@ const draw = (b: B) => {
   // α（拮抗肌）
   b.circle(430, 820, 14, { fill: C.badL, stroke: C.bad, sw: 2 })
   b.ctext(430, 824, 'α', { size: 10.5, weight: 700, fill: C.bad })
-  b.ctext(466, 824, '拮抗肌（屈肌）', { size: 9.5, fill: C.mute })
+  b.text(490, 824, '拮抗肌（屈肌）', { size: 9.5, fill: C.mute })
   b.arrow(430, 793, 430, 806, { stroke: C.rna, sw: 2, dash: '5 4', marker: 'rna' })
   b.ctext(495, 800, '抑制', { size: 9.5, weight: 700, fill: C.rnaD })
   // 输出箭头
   b.arrow(324, 720, 230, 700, { stroke: C.ok, sw: 2.4, marker: 'ok' })
-  b.text(60, 704, '兴奋 → 肌收缩（膝跳）', { size: 10.5, weight: 700, fill: '#065f46' })
+  b.text(60, 714, '兴奋 → 肌收缩（膝跳）', { size: 10.5, weight: 700, fill: '#065f46' })
   b.wtext(60, 886, '牵张反射潜伏期约 20–25 ms（单突触最快通路）；梭外肌主动缩短时 α-γ 共激活令肌梭全程保持敏感——「预计性调节」的现代观点由此而来。', { size: 10.5, fill: C.sub, maxW: 620, lh: 15 })
 
   // ============ 四、屈肌反射与交叉伸肌反射 ============

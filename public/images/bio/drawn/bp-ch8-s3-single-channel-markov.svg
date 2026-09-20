@@ -13,9 +13,8 @@
     <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
-  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单通道行为与马尔可夫模型：随机构象跃迁子</text>
-  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">I=N·P_o·g·(V−E_rev)连接单分子与全细胞；驻留时间指数分布↔马尔可夫状态图（HH的m³h、n⁴即隐式马尔可夫）；P_o–电压S形曲线（P_o可0→&gt;0.9）；</text>
-  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">膜噪声设定检测极限</text>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单通道行为与马尔可夫模型：随机构象跃迁子</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">I=N·P_o·g·(V−E_rev)连接单分子与全细胞；驻留时间指数分布↔马尔可夫状态图（HH的m<tspan dy="-5.8" font-size="12.2">3</tspan><tspan dy="5.8">h、n</tspan><tspan dy="-5.8" font-size="12.2">4</tspan><tspan dy="5.8">即隐式马尔可夫）；P_o–电压S形曲线（P_o可0→&gt;0.9）；膜噪声设定检测极限</tspan></text>
   <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、单通道记录：通道是「随机构象跃迁子」</text>
   <rect x="70" y="190" width="560" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
@@ -44,22 +43,22 @@
   <text x="668" y="216" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">开放</text>
   <text x="668" y="352" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">关闭</text>
   <text x="70" y="432" font-size="10" fill="#475569" font-weight="600">开放与关闭的时长随机分布——但服从确定的统计规律（单通道电导 g = i/V 是家族「指纹」）</text>
-  <rect x="170.53670000000002" y="461.075" width="318.92659999999995" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="330" y="473.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">开放概率 P_o：长时间记录中开放时间的占比，可从 0 到 &gt;0.9</text>
-  <rect x="246.6313" y="500.95" width="166.7374" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
-  <text x="330" y="516.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">I = N·P_o·g·(V − E_rev)</text>
-  <text x="70" y="540" font-size="9.5" fill="#64748b">宏观电流与单分子行为的桥梁：全细胞电流的任何变化都可分解为 N（通道数）、P_o 或 g 的变化——药理学、</text>
-  <text x="70" y="553" font-size="9.5" fill="#64748b">遗传学与生物物理记在同一张账上。</text>
+  <rect x="170.53670000000002" y="455.075" width="318.92659999999995" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="330" y="467.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">开放概率 P_o：长时间记录中开放时间的占比，可从 0 到 &gt;0.9</text>
+  <rect x="246.6313" y="498.95" width="166.7374" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="330" y="514.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">I = N·P_o·g·(V − E_rev)</text>
+  <text x="70" y="536" font-size="9.5" fill="#64748b">宏观电流与单分子行为的桥梁：全细胞电流的任何变化都可分解为 N（通道数）、P_o 或 g 的变化——药理学、</text>
+  <text x="70" y="549" font-size="9.5" fill="#64748b">遗传学与生物物理记在同一张账上。</text>
   <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、马尔可夫状态图：离散状态 + 速率常数 k_ij 跃迁</text>
   <circle cx="770" cy="240" r="30" fill="#f1f5f9" stroke="#475569" stroke-width="2.4"/>
-  <text x="770" y="245" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">C₂</text>
+  <text x="770" y="245" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">C<tspan dy="3.1" font-size="10.1">2</tspan></text>
   <text x="770" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">关闭</text>
   <circle cx="910" cy="240" r="30" fill="#f1f5f9" stroke="#475569" stroke-width="2.4"/>
-  <text x="910" y="245" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">C₁</text>
+  <text x="910" y="245" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">C<tspan dy="3.1" font-size="10.1">1</tspan></text>
   <text x="910" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">关闭</text>
   <circle cx="1050" cy="240" r="30" fill="#d1fae5" stroke="#059669" stroke-width="2.4"/>
-  <text x="1050" y="245" font-size="14" fill="#065f46" text-anchor="middle" font-weight="700">O</text>
+  <text x="1050" y="245" font-size="14" text-anchor="middle" font-weight="700">O</text>
   <text x="1050" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">开放</text>
   <circle cx="1190" cy="240" r="30" fill="#f1f5f9" stroke="#64748b" stroke-width="2.4"/>
   <text x="1190" y="245" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">I</text>
@@ -72,8 +71,8 @@
   <line x1="1160" y1="252" x2="1090" y2="252" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
   <path d="M 1214,268 C 1300,330 850,340 776,270" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
   <text x="995" y="322" font-size="9" fill="#64748b" text-anchor="middle">失活 → 复活</text>
-  <text x="730" y="350" font-size="10.5" fill="#1e293b" font-weight="600">某状态的驻留时间分布为指数；多个指数之和 → 多个串行关闭态</text>
-  <text x="730" y="362" font-size="9.5" fill="#475569">HH 模型的 m³h、n⁴ 门控即隐式马尔可夫模型；速率图可由单通道记录以最大似然法直接估计——突变 / 药物即改写个别 k_ij</text>
+  <text x="730" y="340" font-size="10.5" fill="#1e293b" font-weight="600">某状态的驻留时间分布为指数；多个指数之和 → 多个串行关闭态</text>
+  <text x="730" y="354" font-size="9.5" fill="#475569">HH 模型的 m<tspan dy="-3.2" font-size="6.8">3</tspan><tspan dy="3.2">h、n</tspan><tspan dy="-3.2" font-size="6.8">4</tspan><tspan dy="3.2"> 门控即隐式马尔可夫模型；速率图可由单通道记录以最大似然法估计——突变/药物即改写个别 k_ij</tspan></text>
   <rect x="740" y="393" width="260" height="135" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
   <line x1="740" y1="494.25" x2="1000" y2="494.25" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
   <line x1="805" y1="528" x2="805" y2="393" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
@@ -103,35 +102,36 @@
   <text x="1280" y="548" font-size="12.5" fill="#64748b" text-anchor="middle">BK</text>
   <rect x="30" y="572" width="1340" height="408" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、开放概率–电压 S 形（Boltzmann）曲线与通道噪声</text>
-  <rect x="80" y="640" width="560" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="80" y1="827.5" x2="640" y2="827.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="220" y1="890" x2="220" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="80" y1="765" x2="640" y2="765" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="360" y1="890" x2="360" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="80" y1="702.5" x2="640" y2="702.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="500" y1="890" x2="500" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="80" y1="890" x2="80" y2="896" stroke="#475569" stroke-width="1.8"/>
-  <text x="80" y="912" font-size="13" fill="#64748b" text-anchor="middle">超极化</text>
-  <line x1="640" y1="890" x2="640" y2="896" stroke="#475569" stroke-width="1.8"/>
-  <text x="640" y="912" font-size="13" fill="#64748b" text-anchor="middle">去极化</text>
-  <line x1="74" y1="890" x2="80" y2="890" stroke="#475569" stroke-width="1.8"/>
-  <text x="70" y="894" font-size="13" fill="#64748b" text-anchor="end">0</text>
-  <line x1="74" y1="765" x2="80" y2="765" stroke="#475569" stroke-width="1.8"/>
-  <text x="70" y="769" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
-  <line x1="74" y1="640" x2="80" y2="640" stroke="#475569" stroke-width="1.8"/>
-  <text x="70" y="644" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
-  <text x="360" y="934" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位 V（去极化方向 →）</text>
-  <text x="96" y="700" font-size="12" fill="#475569" font-weight="600">开放概率 P_o</text>
-  <path d="M80.0,885.0 L136.0,880.0 L192.0,870.0 L248.0,850.0 L292.8,820.0 L326.4,785.0 L360.0,765.0 L393.6,745.0 L427.2,710.0 L472.0,680.0 L528.0,660.0 L584.0,650.0 L640.0,645.0" fill="none" stroke="#0f766e" stroke-width="3"/>
-  <path d="M180.8,885.0 L236.8,880.0 L292.8,870.0 L348.8,850.0 L393.6,820.0 L427.2,785.0 L460.8,765.0 L494.4,745.0 L528.0,710.0 L572.8,680.0 L640.0,660.0" fill="none" stroke="#be185d" stroke-width="2.6" stroke-dasharray="7 5"/>
-  <line x1="360" y1="640" x2="360" y2="890" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
-  <line x1="80" y1="765" x2="640" y2="765" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
-  <text x="250" y="790" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">V₁/₂（P_o = 0.5）</text>
-  <line x1="305" y1="786" x2="348" y2="770" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
-  <rect x="120" y="663.8" width="11" height="8.4" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="139" y="671.6" font-size="10" fill="#475569">基础曲线</text>
-  <rect x="195" y="663.8" width="11" height="8.4" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="214" y="671.6" font-size="10" fill="#475569">突变 / 药物 / 配体调制（P_o 可 0 → &gt;0.9）</text>
+  <rect x="120" y="640" width="560" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="120" y1="827.5" x2="680" y2="827.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="260" y1="890" x2="260" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="120" y1="765" x2="680" y2="765" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="890" x2="400" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="120" y1="702.5" x2="680" y2="702.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="540" y1="890" x2="540" y2="640" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="120" y1="890" x2="120" y2="896" stroke="#475569" stroke-width="1.8"/>
+  <text x="120" y="912" font-size="13" fill="#64748b" text-anchor="middle">超极化</text>
+  <line x1="680" y1="890" x2="680" y2="896" stroke="#475569" stroke-width="1.8"/>
+  <text x="680" y="912" font-size="13" fill="#64748b" text-anchor="middle">去极化</text>
+  <line x1="114" y1="890" x2="120" y2="890" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="894" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="114" y1="765" x2="120" y2="765" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="769" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="114" y1="640" x2="120" y2="640" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="644" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
+  <text x="400" y="934" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位 V（去极化方向 →）</text>
+  <text x="74" y="742" font-size="14" fill="#475569" text-anchor="middle" font-weight="600">开放概率</text>
+  <text x="74" y="764" font-size="14" fill="#475569" text-anchor="middle" font-weight="600">P_o</text>
+  <path d="M120.0,885.0 L176.0,880.0 L232.0,870.0 L288.0,850.0 L332.8,820.0 L366.4,785.0 L400.0,765.0 L433.6,745.0 L467.2,710.0 L512.0,680.0 L568.0,660.0 L624.0,650.0 L680.0,645.0" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <path d="M220.8,885.0 L276.8,880.0 L332.8,870.0 L388.8,850.0 L433.6,820.0 L467.2,785.0 L500.8,765.0 L534.4,745.0 L568.0,710.0 L612.8,680.0 L680.0,660.0" fill="none" stroke="#be185d" stroke-width="2.6" stroke-dasharray="7 5"/>
+  <line x1="400" y1="680" x2="400" y2="890" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="120" y1="765" x2="680" y2="765" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="290" y="790" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">V<tspan dy="2.2" font-size="7.2">1/2</tspan><tspan dy="-2.2">（P_o = 0.5）</tspan></text>
+  <line x1="345" y1="786" x2="388" y2="770" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="140" y="663.8" width="11" height="8.4" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="159" y="671.6" font-size="10" fill="#475569">基础曲线</text>
+  <rect x="215" y="663.8" width="11" height="8.4" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="234" y="671.6" font-size="10" fill="#475569">突变 / 药物 / 配体调制（P_o 可 0 → &gt;0.9）</text>
   <rect x="700" y="610" width="640" height="340" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="716" y="638" font-size="13" fill="#1e293b" font-weight="700">通道噪声：从涨落到功能</text>
   <circle cx="734" cy="668" r="4" fill="#be185d"/>

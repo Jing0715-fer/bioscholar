@@ -46,18 +46,20 @@ const draw = (b: B) => {
   })
   b.wtext(770, 424, '5S rRNA 由 pol III 在核仁外转录并单独成熟；rRNA 加工与核糖体组装在核仁偶联进行。', { size: 11, fill: C.mute, maxW: 580, lh: 15 })
 
-  // ============ 三、tRNA 加工四步 ============
-  b.panel(30, 452, 660, 280, { title: '三、tRNA 前体的四步成熟' })
+  // ============ 三、tRNA 加工五步 ============
+  b.panel(30, 452, 660, 280, { title: '三、tRNA 前体的五步成熟' })
   const tsteps: [string, string][] = [
-    ['① 5′ 端：RNase P', '切除前导序列（必需的第一加工事件）'],
-    ['② 3′ 端：tRNase Z', '切除尾部；无 CCA 基因者由 CCA 添加酶（CTP/ATP 为底物，不依赖模板）加上 3′-CCA'],
-    ['③ 内含子去除', '约 1/5 真核 tRNA 基因（均位于反密码子环）由剪接内切酶切出、连接酶封口（酵母经 2′-磷酸中间体）'],
-    ['④ 碱基修饰', '修饰碱基占 10%～20%：摆动位肌苷 I（A 脱氨）、D、ψ、T 等'],
+    ['① 5′ 端：RNase P（核酶）', '切除前导序列（必需的第一加工事件）'],
+    ['② 3′ 端：RNase Z', '切除 3′ 尾部序列'],
+    ['③ CCA 添加酶补尾', '无 CCA 基因者以 CTP/ATP 为底物补上 3′-CCA（不依赖模板）'],
+    ['④ 碱基修饰', '约 10% 碱基被修饰：D、ψ、T 与摆动位肌苷 I（A 脱氨）'],
+    ['⑤ 正确折叠为 L 形', '三叶草二级结构折叠为稳定的三级结构（倒 L 形）'],
   ]
   tsteps.forEach(([t, s], i) => {
-    b.text(60, 500 + i * 54, t, { size: 12, weight: 700, fill: C.ink })
-    b.wtext(60, 516 + i * 54, s, { size: 10.5, fill: C.sub, maxW: 600, lh: 14 })
+    b.text(60, 500 + i * 44, t, { size: 12, weight: 700, fill: C.ink })
+    b.wtext(60, 516 + i * 44, s, { size: 10.5, fill: C.sub, maxW: 600, lh: 14 })
   })
+  b.text(60, 722, '注：约 1/5 真核 tRNA 基因还含内含子（反密码子环），另需剪接内切酶去除、连接酶封口。', { size: 10, fill: C.mute })
 
   // ============ 四、tRNA 结构 ============
   b.panel(710, 452, 660, 280, { title: '四、tRNA：三叶草二级结构与 L 形三级结构' })
@@ -116,12 +118,12 @@ const draw = (b: B) => {
   b.ellipse(1000, 864, 30, 16, { fill: C.accL, stroke: C.acc, sw: 1.8 })
   b.ctext(1000, 869, 'Dbp5', { size: 9.5, weight: 700, fill: C.accD })
   b.arrow(960, 864, 968, 864, { stroke: C.acc, sw: 1.8, marker: 'acc' })
-  b.wtext(1060, 850, 'Dbp5 在胞质面 remodel mRNP 并单向化运输（防回流）；未完成剪接 / 加工的 RNA 被滞留或降解于核内（NMD 检查）。', { size: 10, fill: C.sub, maxW: 240, lh: 14 })
+  b.wtext(1060, 850, 'Dbp5（NPC 胞质面 ATP 酶）在胞质侧 remodel mRNP 并单向化运输（防回流）；未完成剪接 / 加工的 RNA 被滞留或降解于核内（NMD 检查）。', { size: 10, fill: C.sub, maxW: 240, lh: 15 })
   b.ctext(642, 906, '加工-转运-翻译构成连续的 RNA 生命周期', { size: 10.5, fill: C.mute })
 }
 
 export default scene({
   title: 'rRNA、tRNA 加工与 mRNA 出核转运',
-  subtitle: '原核 30S 前 rRNA 经 RNase III/E/G 切分；真核 45S 前体在核仁由 C/D box（2′-O-甲基化）与 H/ACA（假尿苷化）snoRNP 指导修饰——tRNA 经 RNase P、CCA 添加酶与修饰成熟为 L 形；mRNP 经 TREX/NXF1 过核孔输出',
+  subtitle: '原核 30S 前 rRNA 经 RNase III/E/G 切分；真核 45S 前体在核仁由 C/D box（2′-O-甲基化）与 H/ACA（假尿苷化）snoRNP 指导修饰——tRNA 五步成熟（RNase P→RNase Z→CCA→修饰→折叠 L 形）；mRNP 经 TREX/NXF1 过核孔输出',
   draw,
 })

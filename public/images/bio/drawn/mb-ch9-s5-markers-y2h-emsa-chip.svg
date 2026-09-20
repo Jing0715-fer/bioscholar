@@ -45,10 +45,10 @@
   <rect x="160" y="320" width="10" height="9" rx="2" fill="#fef3c7" stroke="#b45309" stroke-width="1.2"/>
   <text x="136" y="300" font-size="9.5" fill="#78350f">n=5</text>
   <text x="178" y="328" font-size="9.5" fill="#78350f">n=8</text>
-  <text x="120" y="352" font-size="9.5" fill="#64748b" text-anchor="middle">等位间 (CA)ₙ 重复数不同</text>
+  <text x="120" y="352" font-size="9.5" fill="#64748b" text-anchor="middle">等位间 (CA)<tspan dy="2.1" font-size="6.8">n</tspan><tspan dy="-2.1"> 重复数不同</tspan></text>
   <rect x="164.0378" y="290.1" width="103.9244" height="23.8" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
   <text x="216" y="307.04" font-size="14" fill="#78350f" text-anchor="middle" font-weight="700">SSR / 微卫星</text>
-  <text x="216" y="330" font-size="11.5" fill="#475569">多态性来源：(CA)ₙ 等重复数变异</text>
+  <text x="216" y="330" font-size="11.5" fill="#475569">多态性来源：(CA)<tspan dy="2.5" font-size="8.3">n</tspan><tspan dy="-2.5"> 等重复数变异</tspan></text>
   <text x="216" y="354" font-size="11.5" fill="#475569">检测：PCR + 电泳 ｜ 特点：多等位 · 共显性 · 基因组中丰富</text>
   <rect x="46" y="378" width="728" height="92" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
   <text x="66" y="400" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">A</text>
@@ -73,12 +73,12 @@
   <text x="60" y="524" font-size="11" fill="#64748b">SNP 芯片使全基因组关联研究（GWAS）常规化</text>
   <rect x="810" y="132" width="560" height="408" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="826" y="154.84" font-size="19" fill="#475569" font-weight="700">二、酵母双杂交（Y2H）：体内检测蛋白-蛋白互作</text>
-  <rect x="836" y="156" width="96" height="30" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
-  <text x="884" y="176" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">BD 结合域</text>
-  <text x="943" y="176" font-size="15" fill="#64748b" text-anchor="middle" font-weight="700">＋</text>
-  <rect x="950" y="156" width="96" height="30" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
-  <text x="998" y="176" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">AD 激活域</text>
-  <text x="1068" y="172" font-size="11.5" fill="#475569">转录因子 Gal4 拆分为两个可独立融合的结构域</text>
+  <rect x="836" y="162" width="96" height="30" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="884" y="182" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">BD 结合域</text>
+  <text x="943" y="182" font-size="15" fill="#64748b" text-anchor="middle" font-weight="700">＋</text>
+  <rect x="950" y="162" width="96" height="30" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="998" y="182" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">AD 激活域</text>
+  <text x="1068" y="178" font-size="11.5" fill="#475569">转录因子 Gal4 拆分为两个可独立融合的结构域</text>
   <line x1="840" y1="430" x2="1340" y2="430" stroke="#0f766e" stroke-width="3"/>
   <rect x="884" y="416" width="56" height="28" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
   <text x="912" y="434" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">UAS</text>
@@ -88,6 +88,7 @@
   <text x="911" y="389" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">BD</text>
   <rect x="944" y="372" width="92" height="26" rx="5" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
   <text x="990" y="389" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">诱饵蛋白 X</text>
+  <line x1="936" y1="385" x2="944" y2="385" stroke="#6d28d9" stroke-width="2"/>
   <line x1="911" y1="398" x2="911" y2="414" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
   <rect x="1082" y="300" width="92" height="26" rx="5" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
   <text x="1128" y="317" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">猎物蛋白 Y</text>
@@ -95,9 +96,9 @@
   <text x="1207" y="317" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">AD</text>
   <line x1="1174" y1="313" x2="1182" y2="313" stroke="#64748b" stroke-width="2"/>
   <line x1="1038" y1="384" x2="1078" y2="322" stroke="#475569" stroke-width="2.2" stroke-dasharray="6 4"/>
-  <text x="1028" y="344" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">X–Y 互作？</text>
+  <text x="1016" y="340" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">X–Y 互作？</text>
   <path d="M1207,330 C1160,384 1080,402 986,414" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
-  <text x="1170" y="388" font-size="11" fill="#831843" text-anchor="middle" font-weight="600">AD 随互作归位 → 激活</text>
+  <text x="1255" y="388" font-size="11" fill="#831843" text-anchor="middle" font-weight="600">AD 随互作归位 → 激活</text>
   <line x1="1010" y1="460" x2="1290" y2="460" stroke="#b45309" stroke-width="2.6" marker-end="url(#arr-rna)"/>
   <text x="1150" y="450" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="600">报告基因表达</text>
   <rect x="1014.385" y="480.225" width="271.23" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
@@ -106,74 +107,74 @@
   <text x="848" y="523" font-size="10.5" fill="#dc2626">局限：假阳性（自激活 / 黏性蛋白）· 假阴性（核外 / 需修饰互作）——需共免疫沉淀等验证</text>
   <rect x="30" y="554" width="860" height="406" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="576.84" font-size="19" fill="#475569" font-weight="700">三、DNA-蛋白互作验证：EMSA（体外）与 ChIP（体内）</text>
-  <text x="250" y="596" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">EMSA：凝胶迁移阻滞</text>
-  <rect x="56" y="604" width="240" height="232" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
-  <rect x="88" y="614" width="42.66666666666667" height="7" rx="2" fill="#1e293b"/>
-  <rect x="85.33333333333334" y="779.1" width="48" height="9" rx="2" fill="#b45309" opacity="0.9"/>
-  <text x="109.33333333333334" y="856" font-size="11" fill="#475569" text-anchor="middle">游离探针</text>
-  <rect x="154.66666666666669" y="614" width="42.66666666666667" height="7" rx="2" fill="#1e293b"/>
-  <rect x="152.00000000000003" y="709.98" width="48" height="9" rx="2" fill="#b45309" opacity="0.9"/>
-  <rect x="152.00000000000003" y="779.1" width="48" height="9" rx="2" fill="#e7c998" opacity="0.9"/>
-  <text x="176.00000000000003" y="856" font-size="11" fill="#475569" text-anchor="middle">+ 蛋白</text>
-  <rect x="221.33333333333334" y="614" width="42.66666666666667" height="7" rx="2" fill="#1e293b"/>
-  <rect x="218.66666666666669" y="656.22" width="48" height="9" rx="2" fill="#b45309" opacity="0.9"/>
-  <text x="242.66666666666669" y="856" font-size="11" fill="#475569" text-anchor="middle">+ 蛋白 + 抗体</text>
-  <text x="302" y="670" font-size="11.5" fill="#831843" font-weight="700">← 超迁移（抗体）</text>
+  <text x="250" y="604" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">EMSA：凝胶迁移阻滞</text>
+  <rect x="56" y="612" width="240" height="212" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <rect x="88" y="622" width="42.66666666666667" height="7" rx="2" fill="#1e293b"/>
+  <rect x="85.33333333333334" y="771.1" width="48" height="9" rx="2" fill="#b45309" opacity="0.9"/>
+  <text x="109.33333333333334" y="844" font-size="11" fill="#475569" text-anchor="middle">游离探针</text>
+  <rect x="154.66666666666669" y="622" width="42.66666666666667" height="7" rx="2" fill="#1e293b"/>
+  <rect x="152.00000000000003" y="709.1800000000001" width="48" height="9" rx="2" fill="#b45309" opacity="0.9"/>
+  <rect x="152.00000000000003" y="771.1" width="48" height="9" rx="2" fill="#e7c998" opacity="0.9"/>
+  <text x="176.00000000000003" y="844" font-size="11" fill="#475569" text-anchor="middle">+ 蛋白</text>
+  <rect x="221.33333333333334" y="622" width="42.66666666666667" height="7" rx="2" fill="#1e293b"/>
+  <rect x="218.66666666666669" y="661.02" width="48" height="9" rx="2" fill="#b45309" opacity="0.9"/>
+  <text x="242.66666666666669" y="844" font-size="11" fill="#475569" text-anchor="middle">+ 蛋白 + 抗体</text>
+  <text x="302" y="676" font-size="11.5" fill="#831843" font-weight="700">← 超迁移（抗体）</text>
   <text x="302" y="724" font-size="11.5" fill="#475569" font-weight="700">← 阻滞带（复合物）</text>
-  <text x="56" y="878" font-size="11.5" fill="#475569">① 标记 DNA 探针与蛋白结合 → 复合物在非变性凝胶中迁移变慢（阻滞带）</text>
-  <text x="56" y="916" font-size="11.5" fill="#475569">② 加入特异性抗体产生「超迁移」确认蛋白身份——体外验证 DNA-蛋白互作</text>
-  <text x="680" y="596" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">ChIP：染色质免疫沉淀</text>
-  <rect x="478" y="604" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="678" y="633" font-size="12.5" fill="#475569" text-anchor="middle">甲醛交联蛋白-DNA</text>
-  <line x1="678" y1="654" x2="678" y2="666" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="478" y="668" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="678" y="697" font-size="12.5" fill="#475569" text-anchor="middle">超声打断染色质（200–500 bp）</text>
-  <line x1="678" y1="718" x2="678" y2="730" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="478" y="732" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="678" y="761" font-size="12.5" fill="#475569" text-anchor="middle">特异抗体免疫沉淀（组蛋白修饰 / 转录因子）</text>
-  <line x1="678" y1="782" x2="678" y2="794" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="478" y="796" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="678" y="825" font-size="12.5" fill="#475569" text-anchor="middle">逆转交联 → 纯化 DNA</text>
-  <line x1="678" y1="846" x2="678" y2="858" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="478" y="860" width="400" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
-  <text x="678" y="889" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="600">qPCR（ChIP-qPCR）或测序（ChIP-seq）</text>
-  <text x="678" y="938" font-size="11.5" fill="#64748b" text-anchor="middle">体内捕捉真实染色质环境中的蛋白-DNA 关联</text>
+  <text x="56" y="886" font-size="11.5" fill="#475569">① 标记 DNA 探针与蛋白结合 → 复合物在非变性凝胶中迁移变慢（阻滞带）</text>
+  <text x="56" y="922" font-size="11.5" fill="#475569">② 加入特异性抗体产生「超迁移」确认蛋白身份——体外验证 DNA-蛋白互作</text>
+  <text x="680" y="604" font-size="14.5" fill="#1e293b" text-anchor="middle" font-weight="700">ChIP：染色质免疫沉淀</text>
+  <rect x="478" y="612" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="678" y="641" font-size="12.5" fill="#475569" text-anchor="middle">甲醛交联蛋白-DNA</text>
+  <line x1="678" y1="662" x2="678" y2="674" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="478" y="676" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="678" y="705" font-size="12.5" fill="#475569" text-anchor="middle">超声打断染色质（200–500 bp）</text>
+  <line x1="678" y1="726" x2="678" y2="738" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="478" y="740" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="678" y="769" font-size="12.5" fill="#475569" text-anchor="middle">特异抗体免疫沉淀（组蛋白修饰 / 转录因子）</text>
+  <line x1="678" y1="790" x2="678" y2="802" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="478" y="804" width="400" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="678" y="833" font-size="12.5" fill="#475569" text-anchor="middle">逆转交联 → 纯化 DNA</text>
+  <line x1="678" y1="854" x2="678" y2="866" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="478" y="868" width="400" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="678" y="897" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="600">qPCR（ChIP-qPCR）或测序（ChIP-seq）</text>
+  <text x="678" y="948" font-size="11.5" fill="#64748b" text-anchor="middle">体内捕捉真实染色质环境中的蛋白-DNA 关联</text>
   <rect x="910" y="554" width="460" height="406" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="926" y="576.84" font-size="19" fill="#475569" font-weight="700">四、报告基因系统：量化启动子 / 增强子活性</text>
-  <text x="926" y="596" font-size="11.5" fill="#475569">将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：</text>
-  <rect x="926" y="600" width="430" height="100" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.4"/>
-  <text x="942" y="624" font-size="13.5" fill="#059669" font-weight="700">GFP 绿色荧光蛋白</text>
-  <text x="942" y="648" font-size="10.5" fill="#475569">来自水母，238 aa；Ser65-Tyr66-Gly67 自催化生色</text>
-  <text x="942" y="676" font-size="10.5" fill="#475569">无需底物 · 活细胞动态观测 · mCherry 等多色变体</text>
-  <text x="942" y="692" font-size="10.5" fill="#475569">（2008 诺贝尔化学奖）</text>
-  <circle cx="1314" cy="646" r="15" fill="#059669"/>
-  <line x1="1333" y1="646" x2="1341" y2="646" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1295" y1="646" x2="1287" y2="646" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1314" y1="665" x2="1314" y2="673" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1314" y1="627" x2="1314" y2="619" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1327.3" y1="659.3" x2="1332.9" y2="664.9" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1300.7" y1="632.7" x2="1295.1" y2="627.1" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1327.3" y1="632.7" x2="1332.9" y2="627.1" stroke="#059669" stroke-width="1.4"/>
-  <line x1="1300.7" y1="659.3" x2="1295.1" y2="664.9" stroke="#059669" stroke-width="1.4"/>
-  <rect x="926" y="712" width="430" height="100" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.4"/>
-  <text x="942" y="736" font-size="13.5" fill="#78350f" font-weight="700">荧光素酶（luciferase）</text>
-  <text x="942" y="760" font-size="10.5" fill="#475569">虫荧光素 + ATP + O₂ → 氧化虫荧光素 + 光（560 nm）</text>
-  <text x="942" y="788" font-size="10.5" fill="#475569">灵敏 · 线性范围宽 · 双荧光素酶（Firefly + Renilla）内参归一化</text>
-  <circle cx="1314" cy="758" r="15" fill="#b45309"/>
-  <line x1="1333" y1="758" x2="1341" y2="758" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1295" y1="758" x2="1287" y2="758" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1314" y1="777" x2="1314" y2="785" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1314" y1="739" x2="1314" y2="731" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1327.3" y1="771.3" x2="1332.9" y2="776.9" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1300.7" y1="744.7" x2="1295.1" y2="739.1" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1327.3" y1="744.7" x2="1332.9" y2="739.1" stroke="#b45309" stroke-width="1.4"/>
-  <line x1="1300.7" y1="771.3" x2="1295.1" y2="776.9" stroke="#b45309" stroke-width="1.4"/>
-  <rect x="926" y="824" width="430" height="100" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
-  <text x="942" y="848" font-size="13.5" fill="#075985" font-weight="700">lacZ / β-半乳糖苷酶</text>
-  <text x="942" y="872" font-size="10.5" fill="#475569">X-gal 显色 · 组织化学定位经典</text>
-  <text x="942" y="900" font-size="10.5" fill="#475569">GFP 融合蛋白：把「定位 - 动态 - 互作」带入活细胞时代</text>
-  <rect x="1302" y="856" width="24" height="24" rx="5" fill="#0369a1"/>
-  <text x="1314" y="873" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">Z</text>
-  <text x="926" y="942" font-size="10" fill="#64748b">报告基因与启动子缺失 / 突变分析结合＝顺式元件功能鉴定的标准流程；</text>
-  <text x="926" y="957" font-size="10" fill="#64748b">组学与测序给全景——现代分子生物学即「证据链的编织术」。</text>
+  <text x="926" y="600" font-size="11.5" fill="#475569">将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：</text>
+  <rect x="926" y="612" width="430" height="92" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.4"/>
+  <text x="942" y="634" font-size="13.5" fill="#059669" font-weight="700">GFP 绿色荧光蛋白</text>
+  <text x="942" y="656" font-size="10.5" fill="#475569">来自水母，238 aa；Ser65-Tyr66-Gly67 自催化生色</text>
+  <text x="942" y="682" font-size="10.5" fill="#475569">无需底物 · 活细胞动态观测 · mCherry 等多色变体</text>
+  <text x="942" y="698" font-size="10.5" fill="#475569">（2008 诺贝尔化学奖）</text>
+  <circle cx="1314" cy="654" r="15" fill="#059669"/>
+  <line x1="1333" y1="654" x2="1341" y2="654" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1295" y1="654" x2="1287" y2="654" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1314" y1="673" x2="1314" y2="681" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1314" y1="635" x2="1314" y2="627" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1327.3" y1="667.3" x2="1332.9" y2="672.9" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1300.7" y1="640.7" x2="1295.1" y2="635.1" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1327.3" y1="640.7" x2="1332.9" y2="635.1" stroke="#059669" stroke-width="1.4"/>
+  <line x1="1300.7" y1="667.3" x2="1295.1" y2="672.9" stroke="#059669" stroke-width="1.4"/>
+  <rect x="926" y="716" width="430" height="92" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.4"/>
+  <text x="942" y="738" font-size="13.5" fill="#78350f" font-weight="700">荧光素酶（luciferase）</text>
+  <text x="942" y="760" font-size="10.5" fill="#475569">虫荧光素 + ATP + O<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3"> → 氧化虫荧光素 + 光（560 nm）</tspan></text>
+  <text x="942" y="786" font-size="10.5" fill="#475569">灵敏 · 线性范围宽 · 双荧光素酶（Firefly + Renilla）内参归一化</text>
+  <circle cx="1314" cy="766" r="15" fill="#b45309"/>
+  <line x1="1333" y1="766" x2="1341" y2="766" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1295" y1="766" x2="1287" y2="766" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1314" y1="785" x2="1314" y2="793" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1314" y1="747" x2="1314" y2="739" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1327.3" y1="779.3" x2="1332.9" y2="784.9" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1300.7" y1="752.7" x2="1295.1" y2="747.1" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1327.3" y1="752.7" x2="1332.9" y2="747.1" stroke="#b45309" stroke-width="1.4"/>
+  <line x1="1300.7" y1="779.3" x2="1295.1" y2="784.9" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="926" y="820" width="430" height="92" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="942" y="842" font-size="13.5" fill="#075985" font-weight="700">lacZ / β-半乳糖苷酶</text>
+  <text x="942" y="864" font-size="10.5" fill="#475569">X-gal 显色 · 组织化学定位经典</text>
+  <text x="942" y="890" font-size="10.5" fill="#475569">GFP 融合蛋白：把「定位 - 动态 - 互作」带入活细胞时代</text>
+  <rect x="1302" y="852" width="24" height="24" rx="5" fill="#0369a1"/>
+  <text x="1314" y="869" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">Z</text>
+  <text x="926" y="932" font-size="10" fill="#64748b">报告基因与启动子缺失 / 突变分析结合＝顺式元件功能鉴定的标准流程；</text>
+  <text x="926" y="947" font-size="10" fill="#64748b">组学与测序给全景——现代分子生物学即「证据链的编织术」。</text>
 </svg>

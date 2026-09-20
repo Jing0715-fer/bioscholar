@@ -4,16 +4,16 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、流水线总览 ============
   b.panel(30, 132, 1340, 250, { title: '一、注释流水线：重复先行 → 结构合流 → 功能转移 → 完整性体检' })
-  const stage = (x: number, t: string, s: string) => {
+  const stage = (x: number, t: string, lines: string[]) => {
     b.rect(x, 185, 224, 112, { fill: C.accL, stroke: C.acc, sw: 1.7, rx: 9, fillOp: 0.55 })
     b.ctext(x + 112, 214, t, { size: 13, weight: 700, fill: C.accD })
-    b.wtext(x + 14, 240, s, { size: 10.5, fill: C.sub, maxW: 196, lh: 14.5 })
+    lines.forEach((ln, i) => b.text(x + 14, 240 + i * 14.5, ln, { size: 10.5, fill: C.sub }))
   }
-  stage(68, '原始基因组组装', '重叠群 / 支架序列，尚未指认任何元件')
-  stage(328, '① 重复注释先行', 'RepeatMasker 同源屏蔽、RepeatModeler 等 de novo 挖掘；软屏蔽（小写化）为默认')
-  stage(588, '② 基因结构注释', '从头预测 ＋ 转录证据 ＋ 蛋白同源，三方合流；EVM / MAKER 加权投票')
-  stage(848, '③ 功能注释', '直向同源转移 ＋ InterProScan 签名扫描，两条路线互为印证')
-  stage(1108, '④ 完整性评估', 'BUSCO 以单拷贝直系同源标记集四桶统计')
+  stage(68, '原始基因组组装', ['重叠群 / 支架序列，', '尚未指认任何元件'])
+  stage(328, '① 重复注释先行', ['RepeatMasker 同源屏蔽＋', 'RepeatModeler 等 de novo', '挖掘；软屏蔽（小写化）', '为默认'])
+  stage(588, '② 基因结构注释', ['从头预测 ＋ 转录证据', '＋ 蛋白同源三方合流，', 'EVM / MAKER 加权投票'])
+  stage(848, '③ 功能注释', ['直向同源转移 ＋ InterProScan', '签名扫描，两条路线互为印证'])
+  stage(1108, '④ 完整性评估', ['BUSCO 以单拷贝直系同源', '标记集四桶统计'])
   for (const x of [292, 552, 812, 1072]) b.arrow(x, 241, x + 36, 241, { stroke: C.acc, sw: 2, marker: 'acc' })
   b.wtext(60, 336, '软屏蔽仅把重复区碱基小写化——位置与序列信息俱在，故为默认；重复屏蔽不先行，基因预测会被转座子淹没。', { size: 11.5, fill: C.sub, maxW: 1280, lh: 16 })
 
@@ -75,9 +75,9 @@ const draw = (b: B) => {
       b.rect(740 + c * 26, 758 + r * 26, 24, 24, { fill: color, fillOp: 0.75, stroke: C.line, sw: 0.6, rx: 3 })
     })
   })
-  b.wtext(1030, 772, '四桶：单拷贝完整、重复、缺失、碎片——汇总为完整度百分比。', { size: 11.5, fill: C.sub, maxW: 300, lh: 16 })
+  b.wtext(1030, 772, '四桶：单拷贝完整、重复、缺失、碎裂——汇总为完整度百分比。', { size: 11.5, fill: C.sub, maxW: 300, lh: 16 })
   b.legend(740, 886, [
-    ['单拷贝', C.ok], ['重复', C.pro], ['缺失', C.faint], ['碎片', C.bad],
+    ['单拷贝', C.ok], ['重复', C.pro], ['缺失', C.faint], ['碎裂', C.bad],
   ], { size: 11.5, gap: 14 })
   b.wtext(740, 924, '全基因组加倍物种「重复」偏高属正常；BUSCO 高分不担保基因家族注释正确——最宜作同一流程下的比较性体检。', { size: 11.5, fill: C.sub, maxW: 600, lh: 16 })
 }

@@ -72,9 +72,9 @@
   <circle cx="360" cy="416" r="13" fill="none" stroke="#6d28d9" stroke-width="2"/>
   <text x="400" y="424" font-size="9.5" fill="#4c1d95">篮筐末端环</text>
   <ellipse cx="360" cy="317" rx="26" ry="30" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
-  <text x="338" y="300" font-size="9.5" fill="#134e4a" font-weight="700">中央栓（转运体）</text>
-  <text x="338" y="314" font-size="9.5" fill="#78350f" font-weight="700">FG 重复核孔蛋白</text>
-  <text x="338" y="328" font-size="9" fill="#64748b">凝胶样选择性筛网</text>
+  <rect x="435.9846" y="313.925" width="138.0308" height="16.15" rx="7" fill="#f1f5f9" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="505" y="325.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="600">中央栓：FG 重复蛋白·凝胶筛</text>
+  <line x1="434" y1="322" x2="392" y2="322" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
   <rect x="126.25" y="235.925" width="57.5" height="16.15" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
   <text x="155" y="247.42" font-size="9.5" fill="#64748b" text-anchor="middle">胞质细纤维</text>
   <rect x="465.28499999999997" y="235.925" width="85.43" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
@@ -120,8 +120,8 @@
   <text x="900" y="214" font-size="9.5" fill="#475569">胞质侧 Ran-GTP 水解为 Ran-GDP，货物释放；</text>
   <text x="900" y="227" font-size="9.5" fill="#475569">NES 为富含亮氨酸的出核信号</text>
   <text x="1254" y="448" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">出核（exportin / CRM1）</text>
-  <rect x="705.15" y="477.925" width="169.69999999999996" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="790" y="489.42" font-size="9.5" fill="#dc2626" text-anchor="middle">LMB（来普霉素 B）特异性抑制 CRM1</text>
+  <rect x="715.15" y="477.925" width="169.69999999999996" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="800" y="489.42" font-size="9.5" fill="#dc2626" text-anchor="middle">LMB（来普霉素 B）特异性抑制 CRM1</text>
   <rect x="989.26" y="477.925" width="181.48000000000002" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
   <text x="1080" y="489.42" font-size="9.5" fill="#78350f" text-anchor="middle">mRNA 以 mRNP 形式经 TREX 等因子输出</text>
   <rect x="30" y="576" width="1340" height="404" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
@@ -141,10 +141,10 @@
   <line x1="344.5" y1="851" x2="344.5" y2="869" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
   <line x1="361.5" y1="869" x2="361.5" y2="851" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
   <line x1="378.5" y1="851" x2="378.5" y2="869" stroke="#134e4a" stroke-width="1.4" opacity="0.55"/>
-  <text x="262" y="828" font-size="9.5" fill="#134e4a" font-weight="700">染色质</text>
-  <rect x="260.449" y="717.5" width="139.102" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="330" y="729.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">RCC1（GEF）只位于染色质</text>
-  <line x1="330" y1="738" x2="330" y2="762" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <text x="230" y="796" font-size="9.5" fill="#134e4a" font-weight="700">染色质</text>
+  <rect x="260.449" y="711.5" width="139.102" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="330" y="723.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">RCC1（GEF）只位于染色质</text>
+  <line x1="330" y1="732" x2="330" y2="750" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
   <text x="448" y="742" font-size="10" fill="#059669" font-weight="700">Ran-GDP → Ran-GTP</text>
   <circle cx="262" cy="766" r="13" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
   <text x="262" y="768.88" font-size="8" fill="#059669" text-anchor="middle" font-weight="700">GTP</text>
@@ -190,10 +190,10 @@
   <line x1="754" y1="792.5" x2="760" y2="792.5" stroke="#475569" stroke-width="1.8"/>
   <line x1="754" y1="692.5" x2="760" y2="692.5" stroke="#475569" stroke-width="1.8"/>
   <text x="750" y="696.5" font-size="13" fill="#64748b" text-anchor="end">高</text>
-  <text x="714" y="805" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">Ran-GTP 浓度</text>
   <text x="1040" y="668" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">Ran-GTP 梯度</text>
+  <text x="704" y="805" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">Ran-GTP 浓度</text>
   <path d="M760,695 C771.2,696.7 799.2,695.8 827.2,705 C855.2,714.2 897.2,730.0 928,750 C958.8,770.0 988.7,803.3 1012,825 C1035.3,846.7 1044.7,865.8 1068,880 C1091.3,894.2 1121.2,903.3 1152,910 C1182.8,916.7 1224.8,917.9 1252.8,920 C1280.8,922.1 1308.8,922.1 1320,922.5" fill="none" stroke="#059669" stroke-width="3"/>
-  <text x="868.8" y="715" font-size="14" fill="#059669" font-weight="700">Ran-GTP</text>
+  <text x="969.6" y="725" font-size="14" fill="#059669" font-weight="700">Ran-GTP</text>
   <text x="790" y="968" font-size="10.5" fill="#475569">RCC1（核）与 RanGAP（胞质）的区室化分布建立梯度，驱动双向单向流。</text>
   <text x="790" y="628" font-size="10.5" fill="#d97706" font-weight="600">有丝分裂前期 CDK1 磷酸化核纤层蛋白与核孔蛋白 → 核被膜崩解；末期去磷酸化重建。</text>
 </svg>

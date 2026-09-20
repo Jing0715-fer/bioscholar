@@ -20,23 +20,27 @@
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、注释流水线：重复先行 → 结构合流 → 功能转移 → 完整性体检</text>
   <rect x="68" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="180" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">原始基因组组装</text>
-  <text x="82" y="240" font-size="10.5" fill="#475569">重叠群 / 支架序列，尚未指认任何元件</text>
+  <text x="82" y="240" font-size="10.5" fill="#475569">重叠群 / 支架序列，</text>
+  <text x="82" y="254.5" font-size="10.5" fill="#475569">尚未指认任何元件</text>
   <rect x="328" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="440" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">① 重复注释先行</text>
-  <text x="342" y="240" font-size="10.5" fill="#475569">RepeatMasker 同源屏蔽、</text>
-  <text x="342" y="254.5" font-size="10.5" fill="#475569">RepeatModeler 等 de novo 挖掘；软屏蔽</text>
-  <text x="342" y="269" font-size="10.5" fill="#475569">（小写化）为默认</text>
+  <text x="342" y="240" font-size="10.5" fill="#475569">RepeatMasker 同源屏蔽＋</text>
+  <text x="342" y="254.5" font-size="10.5" fill="#475569">RepeatModeler 等 de novo</text>
+  <text x="342" y="269" font-size="10.5" fill="#475569">挖掘；软屏蔽（小写化）</text>
+  <text x="342" y="283.5" font-size="10.5" fill="#475569">为默认</text>
   <rect x="588" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="700" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">② 基因结构注释</text>
-  <text x="602" y="240" font-size="10.5" fill="#475569">从头预测 ＋ 转录证据 ＋ 蛋白同源，</text>
-  <text x="602" y="254.5" font-size="10.5" fill="#475569">三方合流；EVM / MAKER 加权投票</text>
+  <text x="602" y="240" font-size="10.5" fill="#475569">从头预测 ＋ 转录证据</text>
+  <text x="602" y="254.5" font-size="10.5" fill="#475569">＋ 蛋白同源三方合流，</text>
+  <text x="602" y="269" font-size="10.5" fill="#475569">EVM / MAKER 加权投票</text>
   <rect x="848" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="960" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">③ 功能注释</text>
-  <text x="862" y="240" font-size="10.5" fill="#475569">直向同源转移 ＋ InterProScan 签名扫描，</text>
-  <text x="862" y="254.5" font-size="10.5" fill="#475569">两条路线互为印证</text>
+  <text x="862" y="240" font-size="10.5" fill="#475569">直向同源转移 ＋ InterProScan</text>
+  <text x="862" y="254.5" font-size="10.5" fill="#475569">签名扫描，两条路线互为印证</text>
   <rect x="1108" y="185" width="224" height="112" rx="9" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.7"/>
   <text x="1220" y="214" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">④ 完整性评估</text>
-  <text x="1122" y="240" font-size="10.5" fill="#475569">BUSCO 以单拷贝直系同源标记集四桶统计</text>
+  <text x="1122" y="240" font-size="10.5" fill="#475569">BUSCO 以单拷贝直系同源</text>
+  <text x="1122" y="254.5" font-size="10.5" fill="#475569">标记集四桶统计</text>
   <line x1="292" y1="241" x2="328" y2="241" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
   <line x1="552" y1="241" x2="588" y2="241" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
   <line x1="812" y1="241" x2="848" y2="241" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
@@ -135,7 +139,7 @@
   <rect x="948" y="836" width="24" height="24" rx="3" fill="#059669" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.6"/>
   <rect x="974" y="836" width="24" height="24" rx="3" fill="#dc2626" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.6"/>
   <text x="1030" y="772" font-size="11.5" fill="#475569">四桶：单拷贝完整、重复、缺失、</text>
-  <text x="1030" y="788" font-size="11.5" fill="#475569">碎片——汇总为完整度百分比。</text>
+  <text x="1030" y="788" font-size="11.5" fill="#475569">碎裂——汇总为完整度百分比。</text>
   <rect x="740" y="881.17" width="12.65" height="9.66" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
   <text x="760.65" y="890.14" font-size="11.5" fill="#475569">单拷贝</text>
   <rect x="809.15" y="881.17" width="12.65" height="9.66" rx="3" fill="#6d28d9" stroke="#cbd5e1" stroke-width="1"/>
@@ -143,6 +147,6 @@
   <rect x="866.8" y="881.17" width="12.65" height="9.66" rx="3" fill="#94a3b8" stroke="#cbd5e1" stroke-width="1"/>
   <text x="887.4499999999999" y="890.14" font-size="11.5" fill="#475569">缺失</text>
   <rect x="924.4499999999999" y="881.17" width="12.65" height="9.66" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="945.0999999999999" y="890.14" font-size="11.5" fill="#475569">碎片</text>
+  <text x="945.0999999999999" y="890.14" font-size="11.5" fill="#475569">碎裂</text>
   <text x="740" y="924" font-size="11.5" fill="#475569">全基因组加倍物种「重复」偏高属正常；BUSCO 高分不担保基因家族注释正确——最宜作同一流程下的比较性体检。</text>
 </svg>

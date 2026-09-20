@@ -14,8 +14,8 @@
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">rRNA、tRNA 加工与 mRNA 出核转运</text>
-  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">原核30S前rRNA经RNaseIII/E/G切分；真核45S前体在核仁由C/Dbox（2′-O-甲基化）与H/ACA（假尿苷化）snoRNP指导修饰——tRNA经RNaseP、CCA添加酶与修饰成熟为L</text>
-  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">形；mRNP经TREX/NXF1过核孔输出</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">原核30S前rRNA经RNaseIII/E/G切分；真核45S前体在核仁由C/Dbox（2′-O-甲基化）与H/ACA（假尿苷化）snoRNP指导修饰——tRNA五步成熟（RNaseP→RNase</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">Z→CCA→修饰→折叠L形）；mRNP经TREX/NXF1过核孔输出</text>
   <rect x="30" y="132" width="700" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、原核 rRNA 加工：30S 前 rRNA 的切分</text>
   <line x1="60" y1="200" x2="660" y2="200" stroke="#94a3b8" stroke-width="1.6"/>
@@ -62,15 +62,18 @@
   <text x="770" y="400" font-size="10.5" fill="#64748b">分段切割，ITS 逐步降解（中间经 32S 等阶段）</text>
   <text x="770" y="424" font-size="11" fill="#64748b">5S rRNA 由 pol III 在核仁外转录并单独成熟；rRNA 加工与核糖体组装在核仁偶联进行。</text>
   <rect x="30" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、tRNA 前体的四步成熟</text>
-  <text x="60" y="500" font-size="12" fill="#1e293b" font-weight="700">① 5′ 端：RNase P</text>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、tRNA 前体的五步成熟</text>
+  <text x="60" y="500" font-size="12" fill="#1e293b" font-weight="700">① 5′ 端：RNase P（核酶）</text>
   <text x="60" y="516" font-size="10.5" fill="#475569">切除前导序列（必需的第一加工事件）</text>
-  <text x="60" y="554" font-size="12" fill="#1e293b" font-weight="700">② 3′ 端：tRNase Z</text>
-  <text x="60" y="570" font-size="10.5" fill="#475569">切除尾部；无 CCA 基因者由 CCA 添加酶（CTP/ATP 为底物，不依赖模板）加上 3′-CCA</text>
-  <text x="60" y="608" font-size="12" fill="#1e293b" font-weight="700">③ 内含子去除</text>
-  <text x="60" y="624" font-size="10.5" fill="#475569">约 1/5 真核 tRNA 基因（均位于反密码子环）由剪接内切酶切出、连接酶封口（酵母经 2′-磷酸中间体）</text>
-  <text x="60" y="662" font-size="12" fill="#1e293b" font-weight="700">④ 碱基修饰</text>
-  <text x="60" y="678" font-size="10.5" fill="#475569">修饰碱基占 10%～20%：摆动位肌苷 I（A 脱氨）、D、ψ、T 等</text>
+  <text x="60" y="544" font-size="12" fill="#1e293b" font-weight="700">② 3′ 端：RNase Z</text>
+  <text x="60" y="560" font-size="10.5" fill="#475569">切除 3′ 尾部序列</text>
+  <text x="60" y="588" font-size="12" fill="#1e293b" font-weight="700">③ CCA 添加酶补尾</text>
+  <text x="60" y="604" font-size="10.5" fill="#475569">无 CCA 基因者以 CTP/ATP 为底物补上 3′-CCA（不依赖模板）</text>
+  <text x="60" y="632" font-size="12" fill="#1e293b" font-weight="700">④ 碱基修饰</text>
+  <text x="60" y="648" font-size="10.5" fill="#475569">约 10% 碱基被修饰：D、ψ、T 与摆动位肌苷 I（A 脱氨）</text>
+  <text x="60" y="676" font-size="12" fill="#1e293b" font-weight="700">⑤ 正确折叠为 L 形</text>
+  <text x="60" y="692" font-size="10.5" fill="#475569">三叶草二级结构折叠为稳定的三级结构（倒 L 形）</text>
+  <text x="60" y="722" font-size="10" fill="#64748b">注：约 1/5 真核 tRNA 基因还含内含子（反密码子环），另需剪接内切酶去除、连接酶封口。</text>
   <rect x="710" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、tRNA：三叶草二级结构与 L 形三级结构</text>
   <text x="730" y="500" font-size="12" fill="#1e293b" font-weight="700">三叶草形（二级结构，约 76～90 nt）</text>
@@ -120,9 +123,9 @@
   <ellipse cx="1000" cy="864" rx="30" ry="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
   <text x="1000" y="869" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">Dbp5</text>
   <line x1="960" y1="864" x2="968" y2="864" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
-  <text x="1060" y="850" font-size="10" fill="#475569">Dbp5 在胞质面 remodel mRNP 并单向化运输</text>
-  <text x="1060" y="864" font-size="10" fill="#475569">（防回流）；</text>
-  <text x="1060" y="878" font-size="10" fill="#475569">未完成剪接 / 加工的 RNA 被滞留或降解于核内</text>
-  <text x="1060" y="892" font-size="10" fill="#475569">（NMD 检查）。</text>
+  <text x="1060" y="850" font-size="10" fill="#475569">Dbp5（NPC 胞质面 ATP 酶）</text>
+  <text x="1060" y="865" font-size="10" fill="#475569">在胞质侧 remodel mRNP 并单向化运输（防回流）；</text>
+  <text x="1060" y="880" font-size="10" fill="#475569">未完成剪接 / 加工的 RNA 被滞留或降解于核内</text>
+  <text x="1060" y="895" font-size="10" fill="#475569">（NMD 检查）。</text>
   <text x="642" y="906" font-size="10.5" fill="#64748b" text-anchor="middle">加工-转运-翻译构成连续的 RNA 生命周期</text>
 </svg>

@@ -40,7 +40,7 @@
   <line x1="840" y1="240" x2="950" y2="240" stroke="#be185d" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arr-enz)"/>
   <text x="895" y="226" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">挣脱距离与方向</text>
   <rect x="960" y="226" width="370" height="52" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="5 4"/>
-  <text x="975" y="246" font-size="10.5" fill="#075985" font-weight="700">核心启动子（RNA Pol II 装配平台）</text>
+  <text x="960" y="220" font-size="10.5" fill="#075985" font-weight="700">核心启动子（RNA Pol II 装配平台）</text>
   <rect x="1050" y="234" width="84" height="36" rx="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
   <text x="1092" y="256" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">TATAAA</text>
   <rect x="1160" y="234" width="64" height="36" rx="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
@@ -109,16 +109,16 @@
   <text x="1105" y="626" font-size="11" fill="#475569">wᵢ：密码子 i 的相对适应性</text>
   <text x="1105" y="641" font-size="11" fill="#475569">（最优同义密码子取 1）</text>
   <text x="1105" y="676" font-size="11" fill="#475569">L：基因内密码子总数——几何平均</text>
-  <rect x="740" y="756" width="150" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
-  <text x="815" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">高表达参考集</text>
-  <line x1="894" y1="783" x2="926" y2="783" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="930" y="756" width="150" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
-  <text x="1005" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">逐密码子 w</text>
-  <line x1="1084" y1="783" x2="1116" y2="783" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="1120" y="756" width="150" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
-  <text x="1195" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">几何平均</text>
-  <line x1="1274" y1="783" x2="1306" y2="783" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="1290" y="756" width="150" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
-  <text x="1365" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">CAI</text>
+  <rect x="740" y="756" width="128" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="804" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">高表达参考集</text>
+  <line x1="874" y1="783" x2="896" y2="783" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="900" y="756" width="128" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="964" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">逐密码子 w</text>
+  <line x1="1034" y1="783" x2="1056" y2="783" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1060" y="756" width="128" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1124" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">几何平均</text>
+  <line x1="1194" y1="783" x2="1216" y2="783" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1220" y="756" width="128" height="54" rx="8" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1284" y="787" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">CAI</text>
   <text x="740" y="860" font-size="11.5" fill="#475569">CAI 为高表达参考集相对适应性的几何平均——高表达基因的密码子选择向参考集靠拢，CAI 量度这种偏性。</text>
 </svg>

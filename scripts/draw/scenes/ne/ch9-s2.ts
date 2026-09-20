@@ -20,7 +20,7 @@ const draw = (b: B) => {
     if (i < stations.length - 1) b.arrow(205, y + 44, 205, y + 56, { stroke: C.sub, sw: 2, marker: 'ink' })
   })
   // 交叉示意
-  b.wtext(460, 226, '自蜗神经核起大量交叉、双侧上行——一侧通路受损时对侧仍可传递，故单侧皮层或通路病变几乎不致单侧耳聋。', { size: 11, fill: C.sub, maxW: 200, lh: 16 })
+  b.wtext(460, 226, '自蜗神经核起大量交叉、双侧上行，一侧通路受损时对侧仍可传递，故单侧皮层或通路病变，几乎不致单侧耳聋。', { size: 11, fill: C.sub, maxW: 200, lh: 16 })
   b.path('M330,268 C386,274 396,300 330,312', { stroke: C.bad, sw: 2, dash: '6 4', marker: 'bad' })
   b.path('M330,324 C386,330 396,356 330,368', { stroke: C.bad, sw: 2, dash: '6 4', marker: 'bad' })
   b.ctext(446, 300, '交叉至对侧', { size: 10.5, weight: 700, fill: C.bad })
@@ -60,15 +60,11 @@ const draw = (b: B) => {
   b.ctext(250, 676, '先到', { size: 10, weight: 700, fill: C.bad })
   b.ctext(160, 676, '后到', { size: 10, weight: 700, fill: C.dnaD })
   // ITD 卡
-  b.rect(60, 742, 320, 96, { fill: C.dnaL, fillOp: 0.45, stroke: C.dna, sw: 1.6, rx: 9 })
+  b.rect(60, 742, 320, 108, { fill: C.dnaL, fillOp: 0.45, stroke: C.dna, sw: 1.6, rx: 9 })
   b.text(76, 768, 'ITD 双耳时间差（低频）', { size: 12.5, weight: 700, fill: C.dnaD })
-  ;[
-    '锁相比较相位；Jeffress 延迟线（1948）：',
-    '两耳输入沿不同长度延迟线抵达按 ITD 排列的',
-    '「符合检测器」——只有同时到达才放电，鸟类获解剖证实。',
-  ].forEach((ln, i) => b.text(76, 790 + i * 15, ln, { size: 10.5, fill: C.sub }))
+  b.wtext(76, 790, '锁相比较相位；Jeffress 延迟线（1948）：两耳输入沿不同长度延迟线，抵达按 ITD 排列的「符合检测器」，只有同时到达才放电，鸟类获解剖证实。', { size: 10.5, fill: C.sub, maxW: 288, lh: 15 })
   // IID 卡
-  b.rect(400, 742, 300, 96, { fill: C.badL, fillOp: 0.4, stroke: C.bad, sw: 1.6, rx: 9 })
+  b.rect(400, 742, 300, 108, { fill: C.badL, fillOp: 0.4, stroke: C.bad, sw: 1.6, rx: 9 })
   b.text(416, 768, 'IID 双耳强度差（高频）', { size: 12.5, weight: 700, fill: C.bad })
   b.wtext(416, 790, '头影效应：高频声被头颅遮挡，对侧耳声强衰减；哺乳类另用速率对比策略。', { size: 10.5, fill: C.sub, maxW: 268, lh: 15 })
   b.wtext(60, 874, '上橄榄核是双耳比较的起点：内侧上橄榄核（MSO）比较时间差，外侧上橄榄核（LSO）比较强度差。', { size: 10.5, fill: C.mute, maxW: 640, lh: 15 })

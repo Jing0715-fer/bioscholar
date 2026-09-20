@@ -24,7 +24,7 @@ const draw = (b: B) => {
     b.line(tx, 226, tx, 306, { stroke: C.acc, sw: 3.5 })
     b.arrow(tx - 5, 262, tx + 22, 262, { stroke: C.acc, sw: 1.6, marker: 'acc' })
   }
-  b.ctext(466, 240, '纺锤体微管（＋端）', { size: 9.5, weight: 700, fill: C.accD })
+  b.ctext(600, 240, '纺锤体微管（＋端）', { size: 9.5, weight: 700, fill: C.accD })
   // 外层 KMN
   b.rect(300, 308, 332, 34, { fill: C.proL, stroke: C.pro, sw: 2 })
   b.ctext(466, 330, '外层 KMN 网络', { size: 11, weight: 700, fill: C.proD })
@@ -35,12 +35,11 @@ const draw = (b: B) => {
   // 着丝粒染色质
   b.rect(300, 430, 332, 44, { fill: C.dnaL, stroke: C.dna, sw: 2 })
   b.ctext(466, 448, '着丝粒染色质：兆碱基级 α 卫星 DNA', { size: 9.5, weight: 700, fill: C.dnaD })
-  for (let i = 0; i < 9; i++) {
-    b.circle(322 + i * 36, 462, 6.5, { fill: C.enzL, stroke: C.enz, sw: 1.6 })
+  for (let i = 0; i < 7; i++) {
+    b.circle(322 + i * 32, 464, 6.5, { fill: C.enzL, stroke: C.enz, sw: 1.6 })
   }
-  b.tag(500, 462, 'CENP-A 核小体', { fill: C.enzL, stroke: C.enz, size: 9.5, weight: 700, tfill: C.enzD, pad: 5 })
-  b.arrow(488, 462, 452, 462, { stroke: C.enz, sw: 1.6, marker: 'enz' })
-  b.wtext(64, 478, 'CENP-A（H3 变体）替换着丝粒核小体——身份由表观遗传决定，新着丝粒可出现在缺乏卫星 DNA 的位点；每个动粒可附着 1 至数十条微管（哺乳动物）。', { size: 10, fill: C.sub, maxW: 610, lh: 14 })
+  b.tag(576, 464, 'CENP-A 核小体', { fill: C.enzL, stroke: C.enz, size: 9.5, weight: 700, tfill: C.enzD, pad: 5 })
+  b.wtext(64, 488, 'CENP-A（H3 变体）替换着丝粒核小体——身份由表观遗传决定，新着丝粒可出现在缺乏卫星 DNA 的位点；每个动粒可附着 1 至数十条微管（哺乳动物）。', { size: 10, fill: C.sub, maxW: 610, lh: 14 })
   b.wtext(64, 526, 'SAC 传感平台：未附着 / 缺乏张力的动粒募集 Mad2·BubR1 抑制 APC/C；CPC（Aurora B）纠错（见第 10 章）。', { size: 10, fill: C.mute, maxW: 610, lh: 14 })
 
   // ============ 二、端粒：T 环与 shelterin 保护帽 ============
@@ -84,6 +83,10 @@ const draw = (b: B) => {
   b.line(640, 766, 700, 766, { stroke: C.rna, sw: 3.5, dash: '5 5' })
   b.rect(642, 756, 56, 20, { fill: C.badL, stroke: C.bad, sw: 1.6, rx: 3 })
   b.ctext(570, 716, '子代 ②：后随链（冈崎片段）末端 RNA 引物切除', { size: 9.5, fill: C.rnaD })
+  b.etext(434, 740, '5′', { size: 9.5, weight: 700, fill: C.mute })
+  b.text(704, 740, '3′', { size: 9.5, weight: 700, fill: C.mute })
+  b.etext(434, 770, '3′', { size: 9.5, weight: 700, fill: C.rnaD })
+  b.text(704, 770, '5′', { size: 9.5, weight: 700, fill: C.rnaD })
   b.arrow(616, 788, 690, 788, { stroke: C.bad, sw: 2.2, marker: 'bad' })
   b.ctext(570, 808, '末端空缺无法补齐 → 每次复制缩短 50—200 bp', { size: 10, weight: 700, fill: C.bad })
   b.wtext(90, 836, '端粒酶在多数体细胞中被抑制——端粒逐次缩短最终触发复制性衰老（Hayflick 界限，第 11 章）。', { size: 10, fill: C.sub, maxW: 620, lh: 14 })
@@ -94,7 +97,7 @@ const draw = (b: B) => {
   b.text(786, 646, '3′ G 链突出（延伸中）', { size: 9.5, weight: 700, fill: C.ok })
   // TERC RNA 模板（波浪）与配对
   b.rnaW(790, 688, 280, { amp: 9, stroke: C.rna })
-  b.ctext(930, 672, 'TERC（RNA 模板）', { size: 9.5, weight: 700, fill: C.rnaD })
+  b.ctext(960, 650, 'TERC（RNA 模板）', { size: 9.5, weight: 700, fill: C.rnaD })
   for (let i = 0; i < 6; i++) {
     b.line(820 + i * 48, 660, 820 + i * 48, 688, { stroke: C.faint, sw: 1.4 })
   }

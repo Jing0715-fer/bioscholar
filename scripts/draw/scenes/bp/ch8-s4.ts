@@ -34,12 +34,12 @@ const draw = (b: B) => {
   b.wtext(716, 368, '听觉把机械门控推到单分子极限：单个静纤毛顶端通道的开放概率随纳米级偏转变化。', { size: 10, fill: C.sub, maxW: 600, lh: 14 })
 
   // ============ 二、Piezo 三臂结构 ============
-  b.panel(30, 422, 1340, 270, { title: '二、Piezo：三叶螺旋桨状三聚体的碟形门控（2021 年诺贝尔生理学或医学奖）' })
+  b.panel(30, 422, 1340, 270, { title: '二、Piezo：三叶螺旋桨三聚体的碟形门控（2021 诺奖）' })
 
-  // 左：俯视三臂
-  b.text(60, 465, '俯视', { size: 10, fill: C.mute })
-  b.path('M 280,540 C 262,505 250,475 258,448', { stroke: C.pro, sw: 12, fill: 'none', opacity: 0.55 })
-  b.path('M 280,540 C 262,505 250,475 258,448', { stroke: C.pro, sw: 3.5, fill: 'none' })
+  // 左：俯视三臂（顶部桨叶缩短，避开面板标题带）
+  b.text(60, 470, '俯视', { size: 10, fill: C.mute })
+  b.path('M 280,540 C 262,506 250,482 256,462', { stroke: C.pro, sw: 12, fill: 'none', opacity: 0.55 })
+  b.path('M 280,540 C 262,506 250,482 256,462', { stroke: C.pro, sw: 3.5, fill: 'none' })
   b.path('M 242,574 C 215,585 195,600 180,618', { stroke: C.pro, sw: 12, fill: 'none', opacity: 0.55 })
   b.path('M 242,574 C 215,585 195,600 180,618', { stroke: C.pro, sw: 3.5, fill: 'none' })
   b.path('M 318,574 C 345,585 365,600 380,618', { stroke: C.pro, sw: 12, fill: 'none', opacity: 0.55 })
@@ -48,11 +48,11 @@ const draw = (b: B) => {
   b.circle(280, 560, 8, { fill: C.bg, stroke: C.proD, sw: 2 })
   b.line(292, 552, 356, 530, { stroke: C.mute, sw: 1.2, dash: '4 3' })
   b.text(360, 534, '中央孔', { size: 10, weight: 700, fill: C.proD })
-  b.ctext(280, 425, '桨叶 ×3（每亚基 30 余个跨膜螺旋）', { size: 10.5, weight: 700, fill: C.ink })
-  b.ctext(280, 655, '三聚体：三叶螺旋桨', { size: 10, fill: C.sub })
+  b.ctext(280, 652, '三聚体：三叶螺旋桨', { size: 10, fill: C.sub })
+  b.ctext(280, 676, '桨叶 ×3（每亚基 30 余个跨膜螺旋）', { size: 10.5, weight: 700, fill: C.ink })
 
   // 中：碟形 → 展平
-  b.text(490, 465, '侧视：碟形 → 展平', { size: 10, fill: C.mute })
+  b.text(490, 470, '侧视', { size: 10, fill: C.mute })
   b.path('M 520,478 Q 620,548 720,478', { stroke: C.dna, sw: 4, fill: 'none' })
   b.path('M 520,494 Q 620,564 720,494', { stroke: C.dna, sw: 4, fill: 'none' })
   b.circle(620, 521, 8, { fill: C.proL, stroke: C.pro, sw: 2 })
@@ -91,15 +91,15 @@ const draw = (b: B) => {
   b.text(388, 777, '选择性滤器', { size: 9.5, weight: 700, fill: C.enzD })
   b.text(200, 757, '胞外', { size: 9.5, weight: 700, fill: C.mute })
   b.text(200, 915, '胞内', { size: 9.5, weight: 700, fill: C.mute })
-  b.ctext(300, 710, '胍基⁺ 从胞外卡入', { size: 9.5, weight: 700, fill: C.badD })
-  b.ion(300, 743, 'TTX', { r: 17, fill: C.badL, stroke: C.bad, tfill: C.badD, size: 9.5 })
-  b.arrow(300, 763, 300, 787, { stroke: C.bad, sw: 2, marker: 'bad' })
+  b.ctext(300, 760, '胍基^{+} 从胞外卡入', { size: 9.5, weight: 700, fill: C.badD })
+  b.ion(300, 781, 'TTX', { r: 15, fill: C.badL, stroke: C.bad, tfill: C.badD, size: 9.5 })
+  b.arrow(300, 799, 300, 814, { stroke: C.bad, sw: 2, marker: 'bad' })
   b.ion(255, 927, 'TEA', { r: 16, fill: C.enzL, stroke: C.enz, tfill: C.enzD, size: 9 })
   b.arrow(255, 909, 283, 889, { stroke: C.enz, sw: 2, marker: 'enz' })
   b.ctext(245, 950, 'TEA / 4-AP', { size: 9, fill: C.sub })
-  b.ion(360, 927, 'LA⁺', { r: 16, fill: C.warnL, stroke: C.warn, tfill: '#78350f', size: 9.5 })
+  b.ion(360, 927, 'LA^{+}', { r: 16, fill: C.warnL, stroke: C.warn, tfill: '#78350f', size: 9.5 })
   b.arrow(360, 909, 322, 889, { stroke: C.warn, sw: 2, marker: 'warn' })
-  b.ctext(370, 950, 'LA⁺＝利多卡因', { size: 9, fill: C.sub })
+  b.ctext(370, 950, 'LA^{+}＝利多卡因', { size: 9, fill: C.sub })
 
   // 右：三张要点卡
   b.rect(480, 730, 850, 66, { fill: C.panelB, stroke: C.line, sw: 1.2, rx: 8 })
@@ -109,12 +109,12 @@ const draw = (b: B) => {
   b.text(496, 826, '局麻药（利多卡因等）：使用依赖性', { size: 10.5, weight: 700, fill: C.warn })
   b.wtext(496, 846, '带电形式从胞内侧进入孔道，优先结合开放 / 失活态——高频发放的疼痛纤维先被阻断，构成治疗指数的物理基础。', { size: 9.5, fill: C.sub, maxW: 810, lh: 13 })
   b.rect(480, 878, 850, 58, { fill: C.panelB, stroke: C.line, sw: 1.2, rx: 8 })
-  b.wtext(496, 900, '4-AP / TEA 从内口堵 K_v；硝苯地平类阻滞 L 型 Ca²⁺ 通道；氯胺酮等阻断 NMDA 受体孔道。', { size: 9.5, fill: C.sub, maxW: 810, lh: 13 })
+  b.wtext(496, 900, '4-AP / TEA 从内口堵 K_v；硝苯地平类阻滞 L 型 Ca^{2+} 通道；氯胺酮等阻断 NMDA 受体孔道。', { size: 9.5, fill: C.sub, maxW: 810, lh: 13 })
   b.tag(820, 952, '统一图像：阻断剂以态依赖方式占据孔道或变构位点，把马尔可夫图向关闭 / 失活态偏置——既是治疗武器，也是动力学探针', { fill: C.accL, stroke: C.acc, size: 10, weight: 700, tfill: C.accD, pad: 10 })
 }
 
 export default scene({
   title: '机械门控通道与通道阻断剂：力来自脂双层 / 栓系，TTX 与 TEA 的位点',
-  subtitle: 'Piezo 三叶螺旋桨三聚体（每亚基 30 余个跨膜螺旋，碟形→展平，2021 诺贝尔奖）；TTX 胍基⁺ 从胞外封 Na⁺ 通道滤器口（nM 级，神经型敏感高数百–上千倍）；局麻药从胞内结合开放/失活态（使用依赖性）；TEA/4-AP 堵 K_v 内口',
+  subtitle: 'Piezo 三叶螺旋桨三聚体（每亚基 30 余个跨膜螺旋，碟形→展平，2021 诺贝尔奖）；TTX 胍基^{+} 从胞外封 Na^{+} 通道滤器口（nM 级，神经型敏感高数百–上千倍）；局麻药从胞内结合开放/失活态（使用依赖性）；TEA/4-AP 堵 K_v 内口',
   draw,
 })

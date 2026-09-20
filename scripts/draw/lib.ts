@@ -29,13 +29,62 @@ export const C = {
   rose: '#be123c',
 } as const
 
+// ---------------- 上/下标标记语法（防字体缺字乱码） ----------------
+// 文本中 ^{..} 渲染为上标、_{..} 渲染为下标（tspan dy 实现，字体无关）。
+// 用于 10^{-2}、O^{6}-meG、(CA)_{n} 等场景，替代生僻 Unicode 上标字符。
+const SUPSUB_SPLIT = /(\^\{[^}]*\}|_\{[^}]*\}|~\{[^}]*\})/
+interface SupSubSeg { t: 'n' | 's' | 'b' | 'o'; v: string }
+function splitSup(s: string): SupSubSeg[] {
+  const out: SupSubSeg[] = []
+  for (const part of s.split(SUPSUB_SPLIT)) {
+    if (!part) continue
+    if (part.startsWith('^{')) out.push({ t: 's', v: part.slice(2, -1) })
+    else if (part.startsWith('_{')) out.push({ t: 'b', v: part.slice(2, -1) })
+    else if (part.startsWith('~{')) out.push({ t: 'o', v: part.slice(2, -1) }) // ~{x} 顶线上标（ḡ 等，字体无关）
+    else out.push({ t: 'n', v: part })
+  }
+  return out
+}
+const hasSup = (s: string) => SUPSUB_SPLIT.test(s)
+/** 把含 ^{}/_{} 标记的字符串渲染为 tspan 拼接的 SVG 文本片段 */
+function renderSup(s: string, size: number): string {
+  let out = ''
+  let cur = 0 // 当前累计基线偏移
+  let dx = 0 // 当前累计 x 位移（顶线记号的回退需在后续段补回）
+  for (const seg of splitSup(s)) {
+    if (seg.t === 'n') {
+      const d = -cur
+      cur = 0
+      const fwd = dx ? ` dx="${dx.toFixed(1)}"` : ''
+      dx = 0
+      out += d || fwd ? `<tspan dy="${d.toFixed(1)}"${fwd}>${esc(seg.v)}</tspan>` : esc(seg.v)
+    } else if (seg.t === 'o') {
+      // ~{x} 顶线记号：在紧邻的前一个字符头顶画横杠（负 dx 回退 + 上移），字体无关
+      const off = -0.58 * size
+      const d = off - cur
+      cur = off // 后续段需抬回基线（tspan dy 相对累计）
+      const bar = seg.v || '¯'
+      const back = size * 0.52 // 回退约一个字符位（盖住前面的 g/数字）
+      dx += back
+      out += `<tspan dy="${d.toFixed(1)}" font-size="${(size * 0.8).toFixed(1)}" dx="${(-back).toFixed(1)}">${esc(bar)}</tspan>`
+    } else {
+      const off = (seg.t === 's' ? -0.34 : 0.22) * size
+      const d = off - cur
+      cur = off
+      const fwd = dx ? ` dx="${dx.toFixed(1)}"` : ''
+      dx = 0
+      out += `<tspan dy="${d.toFixed(1)}"${fwd} font-size="${(size * 0.72).toFixed(1)}">${esc(seg.v)}</tspan>`
+    }
+  }
+  return out
+}
+
 // ---------------- 文本宽度估算（用于自动定宽，防溢出） ----------------
 const CJK = /[\u2E80-\u9FFF\uF900-\uFAFF\u3000-\u303F\uFF00-\uFFEF]/
 const WIDE = /[A-Z0-9Ａ-Ｚ０-９]/
 const THIN = /[·,.:;'"()\[\]{}?!\/|ilj I1]/  // 注意含空格
 const SUBSUP = /[\u2070-\u209F\u00B2\u00B3\u00B9]/
-/** 估算字符串渲染宽度（px）。size 为字号。 */
-export function textW(s: string, size: number, weight = 400): number {
+function rawW(s: string, size: number): number {
   let w = 0
   for (const ch of s) {
     if (CJK.test(ch)) w += size
@@ -45,6 +94,12 @@ export function textW(s: string, size: number, weight = 400): number {
     else if ('→←↔↑↓⇌≥≤≈×±'.includes(ch)) w += size * 0.85
     else w += size * 0.52
   }
+  return w
+}
+/** 估算字符串渲染宽度（px）。size 为字号。支持 ^{}/_{} 上下标标记。 */
+export function textW(s: string, size: number, weight = 400): number {
+  let w = 0
+  for (const seg of splitSup(s)) w += rawW(seg.v, seg.t === 'n' ? size : seg.t === 'o' ? size * 0.45 : size * 0.72)
   return w * (weight >= 600 ? 1.03 : 1)
 }
 
@@ -110,9 +165,10 @@ export class B {
     )
   }
 
-  /** 文本（默认左对齐，y 为基线） */
+  /** 文本（默认左对齐，y 为基线；支持 ^{..} 上标与 _{..} 下标标记） */
   text(x: number, y: number, s: string, o: TextOpt = {}): this {
-    this.els.push(`<text x="${x}" y="${y}"${this.a(o)}>${esc(s)}</text>`)
+    const body = hasSup(s) ? renderSup(s, o.size ?? 18) : esc(s)
+    this.els.push(`<text x="${x}" y="${y}"${this.a(o)}>${body}</text>`)
     return this
   }
   /** 居中文本 */
@@ -806,12 +862,12 @@ export function scene(o: SceneOpt): string {
   const two = subLines.length > 1
   const tBaseline = two ? head - 84 : head - 66
   const title = o.title
-    ? `<text x="${w / 2}" y="${tBaseline}" text-anchor="middle" font-size="${tsize}" font-weight="700" fill="${C.ink}">${esc(o.title)}</text>`
+    ? `<text x="${w / 2}" y="${tBaseline}" text-anchor="middle" font-size="${tsize}" font-weight="700" fill="${C.ink}">${hasSup(o.title) ? renderSup(o.title, tsize) : esc(o.title)}</text>`
     : ''
   const sub = subLines.length
     ? (two
-        ? `<text x="${w / 2}" y="${head - 48}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${esc(subLines[0])}</text>\n  <text x="${w / 2}" y="${head - 22}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${esc(subLines[1] ?? '')}</text>`
-        : `<text x="${w / 2}" y="${head - 32}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${esc(subLines[0])}</text>`)
+        ? `<text x="${w / 2}" y="${head - 48}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${hasSup(subLines[0]) ? renderSup(subLines[0], ssize) : esc(subLines[0])}</text>\n  <text x="${w / 2}" y="${head - 22}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${hasSup(subLines[1] ?? '') ? renderSup(subLines[1] ?? '', ssize) : esc(subLines[1] ?? '')}</text>`
+        : `<text x="${w / 2}" y="${head - 32}" text-anchor="middle" font-size="${ssize}" fill="${C.mute}">${hasSup(subLines[0]) ? renderSup(subLines[0], ssize) : esc(subLines[0])}</text>`)
     : ''
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
