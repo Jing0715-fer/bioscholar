@@ -29,7 +29,7 @@ const draw = (b: B) => {
   b.ctext(1205, 262, '累积 → 延迟入核', { size: 11, fill: C.sub })
   // 反馈弧
   b.path('M1205,284 C1205,360 875,360 875,284', { stroke: C.bad, sw: 2.4, dash: '8 5', marker: 'bad' })
-  b.ctext(1040, 348, '入核后抑制 CLOCK–BMAL1（负反馈）', { size: 11.5, weight: 700, fill: C.bad })
+  b.ctext(1040, 372, '入核后抑制 CLOCK–BMAL1（负反馈）', { size: 11.5, weight: 700, fill: C.bad })
   b.wtext(740, 400, '转录 → 翻译 → 入核 → 抑制 → 降解重启：环路一周耗时约 24 小时；外周器官各有钟，由进食与代谢信号对时。', { size: 11, fill: C.sub, maxW: 590, lh: 16 })
   b.wtext(740, 460, '时差与轮班：中枢钟被光快速重置、外周钟跟得慢——「肚子还留在上个时区」。', { size: 11, weight: 700, fill: C.mute, maxW: 590, lh: 15 })
 
@@ -39,7 +39,7 @@ const draw = (b: B) => {
   const rows: Array<[string, number]> = [['清醒', 650], ['REM', 682], ['N1', 714], ['N2', 746], ['N3', 778]]
   rows.forEach(([label, y]) => {
     b.line(130, y, 690, y, { stroke: C.faint, sw: 1, dash: '3 5', opacity: 0.6 })
-    b.etext(124, y + 4, label, { size: 11, fill: C.sub, weight: 600 })
+    b.etext(124, y + 14, label, { size: 11, fill: C.sub, weight: 600 })
   })
   // 主阶梯（NREM + 清醒转换）
   b.polyline([
@@ -66,7 +66,7 @@ const draw = (b: B) => {
   b.ctext(315, 632, '周期 2', { size: 10.5, weight: 700, fill: C.mute })
   b.ctext(465, 632, '周期 3', { size: 10.5, weight: 700, fill: C.mute })
   b.ctext(615, 632, '周期 4', { size: 10.5, weight: 700, fill: C.mute })
-  b.ctext(660, 664, '← 后半夜 REM 递增', { size: 10.5, weight: 700, fill: C.bad })
+  b.ctext(595, 664, '← 后半夜 REM 递增', { size: 10.5, weight: 700, fill: C.bad })
   b.wtext(60, 862, '前半夜 N3（慢波）富集、后半夜 REM 递增——两类睡眠各有独立的稳态需求：N3 守突触稳态与分泌，REM 守情绪与记忆整合。', { size: 11, fill: C.sub, maxW: 640, lh: 16 })
   b.wtext(60, 916, '整夜大致比例：N1 约 5%、N2 约 45–55%、N3 约 15–20%、REM 约 20–25%；增龄以 N3 与 REM 比例缩减为特征。', { size: 11, fill: C.mute, maxW: 640, lh: 15 })
 

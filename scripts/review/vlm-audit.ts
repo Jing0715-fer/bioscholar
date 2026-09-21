@@ -1,15 +1,17 @@
 // ============================================================
 // 41 系列：自绘插图 VLM 全量审校
 // 四维：文字重叠 / 乱码 / 截断溢出 / 科学性
-// 用法：bun scripts/review/vlm-audit.ts [--limit N] [--only file1.svg,file2.svg] [--conc N]
-// 断点续跑：结果增量写入 /tmp/drawn-audit/vlm.json，重跑自动跳过已审
+// 用法：bun scripts/review/vlm-audit.ts [--limit N] [--only f1.svg,f2.svg] [--conc N]
+// 断点续跑：结果增量写入 /tmp/drawn-audit/vlm.json，重跑自动跳过已审（ERROR 除外）
+// 注意：429 限流时指数退避（最多 6 次）
 // ============================================================
 import ZAI from 'z-ai-web-dev-sdk'
-import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const PNG_DIR = '/tmp/drawn-png'
 const REPORT = '/tmp/drawn-audit/vlm.json'
+mkdirSync('/tmp/drawn-audit', { recursive: true })
 
 const args = process.argv.slice(2)
 function argVal(flag: string): string | undefined {
@@ -18,7 +20,7 @@ function argVal(flag: string): string | undefined {
 }
 const LIMIT = Number(argVal('--limit') ?? Infinity)
 const ONLY = argVal('--only')?.split(',').filter(Boolean)
-const CONC = Number(argVal('--conc') ?? 4)
+const CONC = Number(argVal('--conc') ?? 2)
 
 interface Result {
   file: string
@@ -39,10 +41,10 @@ const PROMPT = `你是出版级插图质检专家。这是一张代码绘制的 
 只输出严格 JSON（无其他文字）：
 {"verdict":"PASS或FAIL","overlap":true或false,"garbled":true或false,"truncate":true或false,"science":true或false,"issues":"具体列出每个问题的位置与内容，PASS 则为空串","fix_hint":"针对每个问题给出可执行的修复建议，PASS 则为空串"}`
 
-async function auditOne(zai: Awaited<ReturnType<typeof ZAI.create>>, png: string): Promise<Result> {
-  const buf = readFileSync(resolve(PNG_DIR, png))
+async function auditOne(zai: Awaited<ReturnType<typeof ZAI.create>>, slug: string): Promise<Result> {
+  const buf = readFileSync(resolve(PNG_DIR, `${slug}.png`))
   const dataUrl = `data:image/png;base64,${buf.toString('base64')}`
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  for (let attempt = 1; attempt <= 6; attempt++) {
     try {
       const completion = await zai.chat.completions.createVision({
         model: 'glm-5v-turbo',
@@ -60,41 +62,42 @@ async function auditOne(zai: Awaited<ReturnType<typeof ZAI.create>>, png: string
       if (!jsonM) throw new Error('无 JSON 输出')
       const parsed = JSON.parse(jsonM[0])
       return {
-        file: png.replace('.png', '.svg'),
+        file: `${slug}.svg`,
         verdict: parsed.verdict === 'FAIL' ? 'FAIL' : 'PASS',
         overlap: !!parsed.overlap, garbled: !!parsed.garbled, truncate: !!parsed.truncate, science: !!parsed.science,
         issues: String(parsed.issues ?? ''), fix_hint: String(parsed.fix_hint ?? ''),
         note: content.slice(0, 120),
       }
     } catch (e) {
-      if (attempt === 3) return { file: png.replace('.png', '.svg'), verdict: 'ERROR', note: (e as Error).message.slice(0, 200) }
-      await new Promise(r => setTimeout(r, 1500 * attempt))
+      const is429 = /429|Too many/i.test(String(e))
+      if (attempt === (is429 ? 6 : 3)) return { file: `${slug}.svg`, verdict: 'ERROR', note: (e as Error).message.slice(0, 200) }
+      await new Promise(r => setTimeout(r, (is429 ? 9000 : 2000) * attempt + Math.random() * 2000))
     }
   }
-  return { file: png.replace('.png', '.svg'), verdict: 'ERROR' }
+  return { file: `${slug}.svg`, verdict: 'ERROR' }
 }
 
 async function main() {
   const zai = await ZAI.create()
-  const all = readdirSync(PNG_DIR).filter(f => f.endsWith('.png')).sort()
+  const all = readdirSync(PNG_DIR).filter(f => f.endsWith('.png')).sort().map(f => f.replace('.png', ''))
   const existing: Result[] = existsSync(REPORT) ? JSON.parse(readFileSync(REPORT, 'utf-8')) : []
-  const done = new Set(existing.map(r => r.file))
-  let targets = all.map(f => f.replace('.png', '.svg')).filter(f => !done.has(f))
-  if (ONLY) targets = targets.filter(f => ONLY.includes(f))
+  const done = new Set(existing.filter(r => r.verdict !== 'ERROR').map(r => r.file.replace('.svg', '')))
+  let targets = all.filter(f => !done.has(f))
+  if (ONLY) targets = targets.filter(f => ONLY.some(o => o.replace('.svg', '') === f))
   targets = targets.slice(0, LIMIT)
-  console.log(`待审 ${targets.length} 张（已完成 ${existing.length}，并发 ${CONC}）`)
+  console.log(`待审 ${targets.length} 张（已完成 ${done.size}，并发 ${CONC}）`)
 
-  const results = [...existing]
+  const results = [...existing.filter(r => r.verdict !== 'ERROR')]
   let idx = 0, n = 0
   async function worker(wid: number) {
     while (idx < targets.length) {
       const slug = targets[idx++]
-      const r = await auditOne(zai, `${slug.replace(".svg", "")}.png`)
+      const r = await auditOne(zai, slug)
       results.push(r)
       n++
       const flag = r.verdict === 'PASS' ? '✓' : r.verdict === 'FAIL' ? '✗ FAIL' : '✗ ERR'
       console.log(`[w${wid}] ${n}/${targets.length} ${flag} ${slug}`)
-      if (r.verdict === 'FAIL') console.log(`    → ${r.issues?.slice(0, 160)}`)
+      if (r.verdict === 'FAIL') console.log(`    → ${(r.issues ?? '').slice(0, 160)}`)
       if (n % 10 === 0) writeFileSync(REPORT, JSON.stringify(results, null, 1))
     }
   }
@@ -102,9 +105,8 @@ async function main() {
   writeFileSync(REPORT, JSON.stringify(results, null, 1))
 
   const fails = results.filter(r => r.verdict === 'FAIL')
-  const errs = results.filter(r => r.verdict === 'ERROR')
-  console.log(`\n===== 审校汇总：${results.length} 张，FAIL ${fails.length}，ERROR ${errs.length} =====`)
+  console.log(`\n===== 审校汇总：${results.length} 张，FAIL ${fails.length} =====`)
   writeFileSync('/tmp/drawn-audit/vlm-fails.json', JSON.stringify(fails, null, 2))
-  for (const f of fails) console.log(`  ✗ ${f.file}\n    ${f.issues?.slice(0, 200)}`)
+  for (const f of fails) console.log(`  ✗ ${f.file}\n    ${(f.issues ?? '').slice(0, 200)}`)
 }
 main()

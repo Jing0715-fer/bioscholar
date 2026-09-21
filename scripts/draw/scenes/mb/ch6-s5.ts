@@ -36,7 +36,7 @@ const draw = (b: B) => {
     b.circle(952, y, 5.5, { fill: C.dna, fillOp: 0.85 })
     b.circle(976, y, 5.5, { fill: C.dna, fillOp: 0.85 })
   }
-  b.ctext(964, 184, 'ER 膜', { size: 10, fill: C.mute })
+  b.ctext(964, 176, 'ER 膜', { size: 10, fill: C.mute })
   b.rect(942, 256, 40, 100, { fill: '#ffffff', stroke: C.pro, sw: 2.2, rx: 5 })
   b.ctext(962, 248, 'Sec61', { size: 10.5, weight: 700, fill: C.proD })
   b.ctext(962, 372, '易位子', { size: 9.5, fill: C.proD })
@@ -123,8 +123,11 @@ const draw = (b: B) => {
   })
   b.text(1080, 768, '机制旁注', { size: 12, weight: 700, fill: C.ink })
   b.wtext(1080, 788, '嘌呤霉素是 3′ 端「分子仿冒品」：氨酰-腺苷类似物接受肽酰基后脱落，证明肽键转移的化学本质——酯酰基向游离氨基转移。', { size: 10.5, fill: C.sub, maxW: 250, lh: 15 })
-  b.wtext(1080, 852, '链霉素的耳毒性（结合线粒体核糖体）提示翻译机器同源性的另一面；白喉毒素把 NAD⁺ 的 ADP 核糖基转移到 eEF2', { size: 10.5, fill: C.sub, maxW: 250, lh: 15 })
-  b.wtext(1080, 897, '——单分子毒素使延伸瘫痪，反证延伸因子的必需性。', { size: 10.5, fill: C.sub, maxW: 250, lh: 15 })
+  b.text(1080, 852, '链霉素的耳毒性（结合线粒体核糖体）', { size: 10.5, fill: C.sub })
+  b.text(1080, 867, '提示翻译机器同源性的另一面；', { size: 10.5, fill: C.sub })
+  b.text(1080, 882, '白喉毒素把 NAD⁺ 的 ADP 核糖基', { size: 10.5, fill: C.sub })
+  b.text(1080, 897, '转移到 eEF2——单分子毒素使', { size: 10.5, fill: C.sub })
+  b.text(1080, 912, '延伸瘫痪，反证延伸因子的必需性。', { size: 10.5, fill: C.sub })
 }
 
 export default scene({

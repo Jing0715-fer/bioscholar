@@ -139,12 +139,6 @@ export const viroIllustrations: Record<string, Illustration[]> = {
         '温和噬菌体感染后的两条去路：左侧裂解循环——噬菌体 DNA 环化复制、表达结构蛋白、装配并裂解释放子代；右侧溶原循环——噬菌体 DNA 经位点特异性重组整合为前噬菌体，随宿主染色体同步复制并赋予宿主免疫性。环境胁迫（如 UV）可诱导前噬菌体切离而转入裂解——λ 噬菌体 CI/Cro 开关正是这一命运抉择的分子基础。',
       credit: commonsCredit('Suly12 与 Adenosine 原作、Pbroks13 重绘', 'CC BY-SA 3.0'),
     },
-    {
-      src: '/images/bio/commons/lambda-genome-insertion.png',
-      caption:
-        'λ 噬菌体基因组整合的分子机制：噬菌体环化基因组的 attP 位点与细菌基因组的 attB 位点经整合酶（Int，必要时辅以整合宿主因子 IHF）催化发生位点特异性重组，交错切割-交换-连接后产生杂交位点 attL 与 attR，前噬菌体遂定置于 gal 与 bio 基因之间。切离需要 Int 与 Xis（切除酶）共同作用，恰好使用与整合相反的位点半边——「整合用一边、切离用另一边」的位点不对称设计，使两个方向反应在酶学上得以分别调控。',
-      credit: commonsCredit('λ 噬菌体教学图', 'CC BY-SA 3.0'),
-    },
   ],
 
   // ---- 第 10 章 病毒的遗传、变异与进化 ----

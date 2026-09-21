@@ -35,8 +35,8 @@ const draw = (b: B) => {
   b.tag(450, 308, '烷基化', { fill: C.accL, stroke: C.acc, size: 12.5, weight: 700, tfill: C.accD, pad: 9 })
   base(370, 328, 'G', C.acc, C.accL)
   b.arrow(412, 343, 448, 343, { stroke: C.sub, sw: 1.8, marker: 'ink' })
-  base(452, 328, 'O⁶-meG', C.acc, C.accL, 68)
-  b.wtext(360, 380, '内源或外源烷化剂（亚硝胺、EMS、MMS）；O⁶-meG 与 T 错配，强致癌与细胞毒性。', { size: 11, fill: C.sub, maxW: 280, lh: 15.5 })
+  base(452, 328, 'O^{6}-meG', C.acc, C.accL, 68)
+  b.wtext(360, 380, '内源或外源烷化剂（亚硝胺、EMS、MMS）；O^{6}-meG 与 T 错配，强致癌与细胞毒性。', { size: 11, fill: C.sub, maxW: 280, lh: 15.5 })
 
   // ============ 二、环境因素诱导的损伤 ============
   b.panel(690, 132, 680, 300, { title: '二、环境因素诱导的损伤' })
@@ -46,7 +46,7 @@ const draw = (b: B) => {
     rowH: 48,
     fontSize: 11.5,
     rows: [
-      ['紫外线（260 nm）', '环丁烷嘧啶二聚体（CPD）、6-4 光产物', '相邻嘧啶共价联结'],
+      ['紫外线（254 nm）', '环丁烷嘧啶二聚体（CPD）、6-4 光产物', '相邻嘧啶共价联结'],
       ['电离辐射（X / γ）', '单 / 双链断裂（SSB / DSB）、碱基破坏', 'DSB 最致命'],
       ['嵌入剂（吖啶类）', '插入引起移码突变', '复制滑移'],
       ['交联剂（顺铂等）', '链间 / 链内交联', '完全阻断复制与转录'],
@@ -103,8 +103,18 @@ const draw = (b: B) => {
   b.ctext(102, 826, 'T', { size: 15, weight: 700, fill: C.dnaD })
   b.rect(140, 800, 44, 40, { fill: C.dnaL, stroke: C.dna, sw: 1.8, rx: 5 })
   b.ctext(162, 826, 'T', { size: 15, weight: 700, fill: C.dnaD })
-  b.rect(124, 806, 16, 28, { fill: C.warnL, stroke: '#b45309', sw: 1.8, dash: '4 3' })
-  b.wtext(220, 812, '相邻嘧啶经环丁烷环共价联结（CPD），阻断复制与转录；另有 6-4 光产物。', { size: 12, fill: C.sub, maxW: 380, lh: 17.5 })
+  // 环丁烷环：两条共价键联结相邻嘧啶
+  b.line(124, 812, 140, 812, { stroke: '#b45309', sw: 2.4 })
+  b.line(124, 830, 140, 830, { stroke: '#b45309', sw: 2.4 })
+  b.ctext(132, 860, '环丁烷环（CPD）', { size: 9.5, fill: C.rnaD })
+  // 6-4 光产物：单键联结
+  b.rect(80, 884, 44, 36, { fill: C.dnaL, stroke: C.dna, sw: 1.8, rx: 5 })
+  b.ctext(102, 908, 'T', { size: 14, weight: 700, fill: C.dnaD })
+  b.rect(140, 884, 44, 36, { fill: C.dnaL, stroke: C.dna, sw: 1.8, rx: 5 })
+  b.ctext(162, 908, 'T', { size: 14, weight: 700, fill: C.dnaD })
+  b.line(124, 914, 140, 890, { stroke: '#b45309', sw: 2.4 })
+  b.ctext(132, 944, '6-4 光产物（单键）', { size: 9.5, fill: C.rnaD })
+  b.wtext(220, 812, '相邻嘧啶经 UV 共价联结：CPD 为环丁烷环（两条键，上），6-4 光产物为 C6–C4 单键（下）——均扭曲 DNA 螺旋、阻断复制与转录。', { size: 12, fill: C.sub, maxW: 380, lh: 17.5 })
   b.text(700, 782, '移码突变（嵌入剂 / 复制滑移）', { size: 13.5, weight: 700, fill: C.ink })
   const cod = (x: number, y: number, s: string, fill: string, stroke: string, w = 72) => {
     b.rect(x, y, w, 32, { fill, stroke, sw: 1.6, rx: 4 })
@@ -124,6 +134,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: 'DNA 损伤的类型与后果',
-  subtitle: '自发损伤（脱嘌呤、脱氨、8-oxoG、O⁶-meG）与环境因素（UV 二聚体、电离断裂、嵌入移码、交联）——损伤是结构异常，经复制拷贝才固定为突变',
+  subtitle: '自发损伤（脱嘌呤、脱氨、8-oxoG、O^{6}-meG）与环境因素（UV 二聚体、电离断裂、嵌入移码、交联）——损伤是结构异常，经复制拷贝才固定为突变',
   draw,
 })

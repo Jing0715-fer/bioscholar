@@ -121,7 +121,7 @@ const draw = (b: B) => {
   b.polygon([[196, 862], [206, 838], [234, 838], [244, 862]], { fill: C.badL, stroke: C.bad, sw: 1.8 })
   b.path('M 220 836 C 190 812, 250 800, 218 780', { stroke: C.warn, sw: 3, fill: 'none', opacity: 0.75 })
   b.path('M 220 836 C 250 814, 186 796, 226 778', { stroke: C.warn, sw: 3, fill: 'none', opacity: 0.75 })
-  b.ctext(150, 824, '富 H₂S 热液', { size: 10.5, weight: 700, fill: C.warn })
+  b.ctext(150, 816, '富 H₂S 热液', { size: 10.5, weight: 700, fill: C.warn })
   b.ctext(220, 968, '海底热泉喷口', { size: 10, fill: C.mute })
 
   // 中右：化学合成食物链

@@ -14,7 +14,7 @@
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">RNA 病毒基因组：三种链型策略与 33 kb 错误阈值</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">多数 3–15 kb、冠状病毒 26–32 kb 为 RNA 之最；RdRp 无校读错误率 10⁻⁶–10⁻⁴，埃根阈值 L×μ≪1 封顶；准种既是快适应引擎也是复杂度天花板</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">多数 3–15 kb、冠状病毒 26–32 kb 为 RNA 之最；RdRp 无校读错误率 10<tspan dy="-6.5" font-size="13.7">-6</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">-4</tspan><tspan dy="6.5">，埃根阈值 L×μ≪1 封顶；准种既是快适应引擎也是复杂度天花板</tspan></text>
   <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、RNA 基因组大小：多数 3–15 kb，止步于约 33 kb</text>
   <rect x="234.28571428571428" y="190" width="137.14285714285717" height="190" fill="#fef3c7" fill-opacity="0.4"/>
@@ -33,9 +33,9 @@
   <text x="425.1428571428571" y="324" font-size="10" fill="#78350f">19 kb</text>
   <text x="50" y="359" font-size="11" fill="#475569">冠状病毒</text>
   <rect x="497.14285714285717" y="346" width="68.57142857142861" height="18" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
-  <text x="573.7142857142858" y="359" font-size="10" fill="#dc2626" font-weight="700">26–32 kb · RNA 之最</text>
+  <text x="584.1428571428571" y="358" font-size="9.5" fill="#dc2626" font-weight="700">26–32 kb · RNA 之最</text>
   <line x1="577.1428571428571" y1="188" x2="577.1428571428571" y2="388" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 5"/>
-  <text x="583.1428571428571" y="202" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">上限 ≈ 33 kb</text>
+  <text x="588.1428571428571" y="202" font-size="11" fill="#dc2626" font-weight="700">上限 ≈ 33 kb</text>
   <line x1="200" y1="388" x2="200" y2="394" stroke="#475569" stroke-width="1.8"/>
   <text x="200" y="408" font-size="11" fill="#64748b" text-anchor="middle">0</text>
   <line x1="314.2857142857143" y1="388" x2="314.2857142857143" y2="394" stroke="#475569" stroke-width="1.8"/>
@@ -55,11 +55,11 @@
   <rect x="730" y="222" width="170" height="34" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
   <text x="815" y="243" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">毒粒 RNA(+)</text>
   <line x1="904" y1="239" x2="926" y2="239" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
-  <text x="915" y="216" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">翻译</text>
+  <text x="915" y="230" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">翻译</text>
   <rect x="930" y="222" width="170" height="34" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
   <text x="1015" y="243" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">蛋白 · RdRp</text>
   <line x1="1104" y1="239" x2="1126" y2="239" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
-  <text x="1115" y="216" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">复制</text>
+  <text x="1115" y="230" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">复制</text>
   <rect x="1130" y="222" width="170" height="34" rx="7" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
   <text x="1215" y="243" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">子代 RNA(+)</text>
   <text x="730" y="276" font-size="10" fill="#64748b">核糖体直接读取第一条链；蛋白到位后复制才能开动。</text>
@@ -69,11 +69,11 @@
   <rect x="730" y="332" width="170" height="34" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
   <text x="815" y="353" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">RNA(−)＋RdRp</text>
   <line x1="904" y1="349" x2="926" y2="349" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
-  <text x="915" y="326" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">转录</text>
+  <text x="915" y="340" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">转录</text>
   <rect x="930" y="332" width="170" height="34" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
   <text x="1015" y="353" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">mRNA</text>
   <line x1="1104" y1="349" x2="1126" y2="349" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
-  <text x="1115" y="326" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">翻译</text>
+  <text x="1115" y="340" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">翻译</text>
   <rect x="1130" y="332" width="170" height="34" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
   <text x="1215" y="353" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">病毒蛋白</text>
   <text x="730" y="386" font-size="10" fill="#64748b">非节段病毒呈 3′ 起始的转录梯度（基因排位＝转录丰度）；节段病毒各段独立转录。</text>
@@ -83,43 +83,37 @@
   <rect x="730" y="442" width="170" height="34" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
   <text x="815" y="463" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">dsRNA（衣壳内）</text>
   <line x1="904" y1="459" x2="926" y2="459" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
-  <text x="915" y="436" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">转录</text>
+  <text x="915" y="450" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">转录</text>
   <rect x="930" y="442" width="170" height="34" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
   <text x="1015" y="463" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">mRNA 自顶点释出</text>
   <line x1="1104" y1="459" x2="1126" y2="459" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
-  <text x="1115" y="436" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">翻译</text>
+  <text x="1115" y="450" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">翻译</text>
   <rect x="1130" y="442" width="170" height="34" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
   <text x="1215" y="463" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">蛋白</text>
   <text x="730" y="496" font-size="10" fill="#64748b">复制为保守型、dsRNA 始终不暴露于胞质，规避宿主的双链 RNA 传感报警。</text>
   <rect x="30" y="556" width="660" height="424" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="578.84" font-size="19" fill="#475569" font-weight="700">三、RdRp 无校读：错误阈值封顶基因组大小</text>
-  <rect x="100" y="650" width="300" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="100" y1="837.5" x2="400" y2="837.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="175" y1="900" x2="175" y2="650" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="100" y1="775" x2="400" y2="775" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="250" y1="900" x2="250" y2="650" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="100" y1="712.5" x2="400" y2="712.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="325" y1="900" x2="325" y2="650" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="100" y1="900" x2="100" y2="906" stroke="#475569" stroke-width="1.8"/>
-  <text x="100" y="922" font-size="13" fill="#64748b" text-anchor="middle">10⁻⁶</text>
-  <line x1="250" y1="900" x2="250" y2="906" stroke="#475569" stroke-width="1.8"/>
-  <text x="250" y="922" font-size="13" fill="#64748b" text-anchor="middle">10⁻⁵</text>
+  <rect x="120" y="650" width="280" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="120" y1="900" x2="120" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="120" y="922" font-size="13" fill="#64748b" text-anchor="middle">10<tspan dy="-4.4" font-size="9.4">-6</tspan></text>
+  <line x1="260" y1="900" x2="260" y2="906" stroke="#475569" stroke-width="1.8"/>
+  <text x="260" y="922" font-size="13" fill="#64748b" text-anchor="middle">10<tspan dy="-4.4" font-size="9.4">-5</tspan></text>
   <line x1="400" y1="900" x2="400" y2="906" stroke="#475569" stroke-width="1.8"/>
-  <text x="400" y="922" font-size="13" fill="#64748b" text-anchor="middle">10⁻⁴</text>
-  <line x1="94" y1="900" x2="100" y2="900" stroke="#475569" stroke-width="1.8"/>
-  <text x="90" y="904" font-size="13" fill="#64748b" text-anchor="end">低</text>
-  <line x1="94" y1="650" x2="100" y2="650" stroke="#475569" stroke-width="1.8"/>
-  <text x="90" y="654" font-size="13" fill="#64748b" text-anchor="end">高</text>
-  <text x="250" y="944" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">每碱基复制错误率 μ →</text>
-  <text x="54" y="775" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">信息保持度</text>
-  <text x="250" y="638" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">埃根错误阈值</text>
-  <path d="M100,662.5 C110.0,663.3 140.0,664.6 160,667.5 C180.0,670.4 202.5,667.1 220,680 C237.5,692.9 250.0,720.0 265,745 C280.0,770.0 295.0,807.5 310,830 C325.0,852.5 340.0,869.6 355,880 C370.0,890.4 392.5,890.4 400,892.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="400" y="922" font-size="13" fill="#64748b" text-anchor="middle">10<tspan dy="-4.4" font-size="9.4">-4</tspan></text>
+  <line x1="114" y1="887.5" x2="120" y2="887.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="891.5" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="114" y1="662.5" x2="120" y2="662.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="666.5" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="260" y="944" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">每碱基复制错误率 μ →</text>
+  <text x="74" y="775" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">信息保持度</text>
+  <text x="260" y="638" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">埃根错误阈值</text>
+  <path d="M120,662.5 C129.3,663.3 157.3,664.6 176,667.5 C194.7,670.4 215.7,667.1 232,680 C248.3,692.9 260.0,720.0 274,745 C288.0,770.0 302.0,807.5 316,830 C330.0,852.5 344.0,869.6 358,880 C372.0,890.4 393.0,890.4 400,892.5" fill="none" stroke="#0f766e" stroke-width="2.6"/>
   <line x1="265" y1="650" x2="265" y2="900" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
-  <text x="275" y="674" font-size="11.5" fill="#dc2626" font-weight="700">错误阈值</text>
-  <text x="380" y="780" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">突变灾难区</text>
+  <text x="302" y="690" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">错误阈值</text>
+  <text x="330" y="780" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">突变灾难区</text>
   <text x="430" y="626" font-size="11" fill="#1e293b" font-weight="700">埃根（Eigen）错误阈值：L×μ ≪ 1——基因组越长</text>
   <text x="430" y="642" font-size="11" fill="#1e293b" font-weight="700">（L 越大），可容忍的错误率越小。</text>
-  <text x="430" y="686" font-size="10.5" fill="#475569">RdRp 缺乏校读，错误率高达 10⁻⁶–10⁻⁴：</text>
+  <text x="430" y="686" font-size="10.5" fill="#475569">RdRp 缺乏校读，错误率高达 10<tspan dy="-3.6" font-size="7.6">-6</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">-4</tspan><tspan dy="3.6">：</tspan></text>
   <text x="430" y="701" font-size="10.5" fill="#475569">DNA 聚合酶的校读把错误率再压低几个数量级，</text>
   <text x="430" y="716" font-size="10.5" fill="#475569">故 DNA 病毒可达数百 kb。</text>
   <text x="430" y="756" font-size="10.5" fill="#475569">冠状病毒靠 nsp14 外切酶「补上」校读，</text>
@@ -148,12 +142,6 @@
   <text x="730" y="867" font-size="10.5" fill="#475569">任何时刻群体里都备好适应新环境的变体——快适应的引擎，</text>
   <text x="730" y="882" font-size="10.5" fill="#475569">也封死了 RNA 基因组复杂度的上限。</text>
   <rect x="1080" y="700" width="250" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="1080" y1="835" x2="1330" y2="835" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1142.5" y1="880" x2="1142.5" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1080" y1="790" x2="1330" y2="790" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1205" y1="880" x2="1205" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1080" y1="745" x2="1330" y2="745" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1267.5" y1="880" x2="1267.5" y2="700" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
   <line x1="1080" y1="880" x2="1080" y2="886" stroke="#475569" stroke-width="1.8"/>
   <text x="1080" y="902" font-size="13" fill="#64748b" text-anchor="middle">低</text>
   <line x1="1330" y1="880" x2="1330" y2="886" stroke="#475569" stroke-width="1.8"/>
@@ -162,7 +150,7 @@
   <text x="1205" y="688" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">致死诱变</text>
   <path d="M1080,727 C1092.5,728.5 1132.1,725.5 1155,736 C1177.9,746.5 1198.8,770.5 1217.5,790 C1236.3,809.5 1248.8,838.9 1267.5,853 C1286.3,867.1 1319.6,871.0 1330,874.6" fill="none" stroke="#0f766e" stroke-width="2.4"/>
   <line x1="1218" y1="700" x2="1218" y2="880" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
-  <line x1="1090" y1="912" x2="1200" y2="912" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
-  <text x="1145" y="930" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">核苷类似物推高 μ</text>
-  <text x="730" y="940" font-size="10.5" fill="#475569">核苷类似物「致死诱变」：把错误率推过阈值，让突变灾难性地积累——反用快适应引擎作为治疗武器。</text>
+  <line x1="1092" y1="845" x2="1206" y2="845" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="1148" y="826" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">核苷类似物推高 μ</text>
+  <text x="730" y="944" font-size="10.5" fill="#475569">核苷类似物「致死诱变」：把错误率推过阈值，让突变灾难性地积累——反用快适应引擎作为治疗武器。</text>
 </svg>

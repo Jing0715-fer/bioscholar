@@ -3,7 +3,7 @@ import { scene, C, B } from '../../lib'
 
 const draw = (b: B) => {
   // ============ 一、λ 噬菌体的整合与切离 ============
-  b.panel(30, 132, 660, 296, { title: '一、位点特异性重组：λ 噬菌体 attP × attB' })
+  b.panel(30, 132, 660, 306, { title: '一、位点特异性重组：λ 噬菌体 attP × attB' })
   // 上排：游离噬菌体环 + 宿主染色体
   b.text(60, 192, '整合（需 Int + IHF）', { size: 13, weight: 700, fill: C.ink })
   b.line(60, 226, 340, 226, { stroke: C.dna, sw: 2.4 })
@@ -12,7 +12,7 @@ const draw = (b: B) => {
   b.rect(196, 218, 44, 16, { fill: C.accL, stroke: C.acc, sw: 1.6 })
   b.ctext(218, 230, 'attB', { size: 9, weight: 700, fill: C.accD })
   b.ctext(218, 250, '约 25 bp（gal-bio 间）', { size: 10.5, fill: C.mute })
-  b.ctext(218, 196, '大肠杆菌染色体', { size: 11, fill: C.sub })
+  b.ctext(288, 196, '大肠杆菌染色体', { size: 11, fill: C.sub })
   b.circle(560, 226, 44, { stroke: C.pro, sw: 3 })
   b.rect(576, 218, 44, 16, { fill: C.rnaL, stroke: C.rna, sw: 1.6 })
   b.ctext(598, 230, 'attP', { size: 9, weight: 700, fill: C.rnaD })
@@ -34,12 +34,10 @@ const draw = (b: B) => {
   b.ctext(452, 368, 'attR', { size: 9, weight: 700, fill: C.rnaD })
   b.text(60, 352, 'gal', { size: 11, fill: C.mute })
   b.text(640, 352, 'bio', { size: 11, fill: C.mute, anchor: 'end' })
-  b.wtext(60, 398, '保守性重组：不依赖 RecA 与大范围同源、不伴随 DNA 净合成；能量来自磷酸二酯键的断裂-再连接转移，不需 ATP。', { size: 11.5, fill: C.sub, maxW: 610, lh: 16 })
-  b.text(430, 304, 'Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，', { size: 10.5, fill: C.mute })
-  b.text(430, 320, '用于条件性基因敲除（第 11 章）', { size: 10.5, fill: C.mute })
+  b.wtext(60, 398, '保守性重组：不依赖 RecA 与大范围同源、不伴随 DNA 净合成；能量来自磷酸二酯键的断裂-再连接转移，不需 ATP。Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，用于条件性基因敲除（第 11 章）。', { size: 11.5, fill: C.sub, maxW: 560, lh: 17 })
 
   // ============ 二、细菌转座子三类 ============
-  b.panel(710, 132, 660, 296, { title: '二、细菌转座子的三种组织' })
+  b.panel(710, 132, 660, 306, { title: '二、细菌转座子的三种组织' })
   const seg = (x: number, y: number, w: number, s: string, fill: string, stroke: string, fs = 11) => {
     b.rect(x, y, w, 26, { fill, stroke, sw: 1.6, rx: 4 })
     b.ctext(x + w / 2, y + 17, s, { size: fs, weight: 700, fill: stroke })
@@ -65,11 +63,11 @@ const draw = (b: B) => {
   b.wtext(1100, 330, '复制型转座形成共整合体，由解离酶在 res 位点拆分。', { size: 10.5, fill: C.mute, maxW: 256, lh: 15 })
   // 靶点重复示意
   b.text(730, 380, '靶位点重复：插入后两侧各复制出一段短重复（5～9 bp）', { size: 12, weight: 700, fill: C.sub })
-  b.line(760, 402, 900, 402, { stroke: C.dna, sw: 2.2 })
+  b.line(760, 402, 880, 402, { stroke: C.dna, sw: 2.2 })
   b.rect(820, 394, 30, 16, { fill: C.enzL, stroke: C.enz, sw: 1.6 })
   b.line(806, 392, 816, 412, { stroke: C.acc, sw: 2 })
   b.line(846, 392, 856, 412, { stroke: C.acc, sw: 2 })
-  b.etext(920, 406, '斜线＝5～9 bp 靶点重复', { size: 10.5, fill: C.mute })
+  b.ctext(810, 426, '斜线＝5～9 bp 靶点重复', { size: 10.5, fill: C.mute })
 
   // ============ 三、两种转座机制 ============
   b.panel(30, 448, 660, 260, { title: '三、非复制型与复制型转座' })
@@ -115,10 +113,10 @@ const draw = (b: B) => {
   seg(730, 620, 40, 'LTR', C.rnaL, C.rnaD, 9)
   seg(774, 620, 150, 'gag-pol', C.proL, C.proD, 10.5)
   seg(928, 620, 40, 'LTR', C.rnaL, C.rnaD, 9)
-  b.text(990, 634, 'LINE-1（自主）：', { size: 11.5, weight: 700, fill: C.rnaD })
-  seg(1100, 620, 100, 'ORF1', C.accL, C.accD, 10)
-  seg(1204, 620, 140, 'ORF2', C.accL, C.accD, 10)
-  b.wtext(1100, 660, 'ORF1 编码 RNA 结合蛋白；ORF2 具内切酶与逆转录酶活性，经 TPRT 插入新拷贝。Alu 等非自主 SINE 借用 LINE-1 酶系转座。', { size: 10.5, fill: C.mute, maxW: 400, lh: 15 })
+  b.text(976, 634, 'LINE-1（自主）：', { size: 11.5, weight: 700, fill: C.rnaD })
+  seg(1108, 620, 96, 'ORF1', C.accL, C.accD, 10)
+  seg(1208, 620, 130, 'ORF2', C.accL, C.accD, 10)
+  b.wtext(730, 676, 'ORF1 编码 RNA 结合蛋白；ORF2 具内切酶与逆转录酶活性，经 TPRT 插入新拷贝。Alu 等非自主 SINE 借用 LINE-1 酶系转座。', { size: 10.5, fill: C.mute, maxW: 620, lh: 16 })
 
   // ============ 五、发现史与基因组意义 ============
   b.panel(30, 732, 1340, 238, { title: '五、McClintock 的发现与转座的基因组意义' })

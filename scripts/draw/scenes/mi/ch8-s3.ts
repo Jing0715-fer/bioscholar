@@ -5,16 +5,15 @@ const draw = (b: B) => {
   // ============ 一、质粒的共性与主要类群 ============
   b.panel(30, 132, 1340, 258, { title: '一、质粒的四大共性；F / R / Col / Ti 主要类群' })
 
-  const commons: Array<[number, number, string, string | string[]]> = [
-    [120, 50, '自主复制', ['各有复制起点；严紧型 1–2 拷贝（F、Ti），', '松弛型数十至上百（ColE1）']],
-    [450, 310, '不相容性', '同群质粒不能在同一细胞长期共存——据此分群'],
-    [770, 630, '非必需性', '非生长必需，决定附加性状'],
-    [1080, 940, '可转移性', '部分可经接合自主转移'],
+  const commons: Array<[number, string, string]> = [
+    [120, '自主复制', '各有复制起点；严紧型 1–2 拷贝（F、Ti），松弛型数十至上百（ColE1）'],
+    [450, '不相容性', '同群质粒不能在同一细胞长期共存——据此分群'],
+    [770, '非必需性', '非生长必需，决定附加性状'],
+    [1080, '可转移性', '部分可经接合自主转移'],
   ]
-  commons.forEach(([cx, x, t, s]) => {
+  commons.forEach(([cx, t, s]) => {
     b.tag(cx, 190, t, { fill: C.dnaL, stroke: C.dna, size: 12.5, weight: 700, tfill: C.dnaD, pad: 9 })
-    if (Array.isArray(s)) s.forEach((ln, i) => b.text(x, 214 + i * 14, ln, { size: 10, fill: C.sub }))
-    else b.wtext(x, 214, s, { size: 10, fill: C.sub, maxW: 280, lh: 14 })
+    b.wtext(Math.max(16, cx - 140), 214, s, { size: 10, fill: C.sub, maxW: 280, lh: 14 })
   })
 
   b.table(50, 262, 1300, {

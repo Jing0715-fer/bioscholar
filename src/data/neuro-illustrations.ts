@@ -40,8 +40,8 @@ export const neuroIllustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/commons/nodes-of-ranvier.png',
       caption:
-        '有髓纤维的郎飞结区超微结构：髓鞘由 Schwann 细胞（外周）的质膜层层紧密包卷而成，结间体两侧在郎飞结处收口，结区轴膜裸露、密集聚集电压门控 Na⁺ 通道；结旁的 Schwann 细胞微绒毛与结周星形胶质细胞突起共同密封结区，把细胞外空间约束成高阻抗窄缝——去极化电流因此被迫沿轴浆跳向下一个结，即跳跃式传导。这种「膜绝缘加结区集中放电」的设计把传导速度提升两个数量级而无需增大轴径，正是多发性硬化脱髓鞘疾病中传导阻断的结构反面。',
-      credit: '图片来源：Wikimedia Commons（Mgcaptainzanko，CC BY 4.0）',
+        '有髓纤维与郎飞结的传导设计：髓鞘由 Schwann 细胞（外周）的质膜层层紧密包卷而成，结间体之间的郎飞结处轴膜裸露、密集聚集电压门控 Na⁺ 通道——去极化电流被迫沿轴浆从一个结跳向下一个结，即跳跃式传导（saltatory conduction）。这种「膜绝缘加结区集中放电」的设计把传导速度提升两个数量级而无需增大轴径；多发性硬化等脱髓鞘疾病中髓鞘绝缘丧失，传导减慢甚至阻断——同一结构在健康与疾病中的正反面。',
+      credit: '图片来源：Wikimedia Commons（Chandres，CC BY-SA）',
     },
   ],
 
@@ -58,7 +58,7 @@ export const neuroIllustrations: Record<string, Illustration[]> = {
     {
       src: '/images/bio/commons/neurotransmitter-release.png',
       caption:
-        '突触囊泡胞吐的分子机器：突触前膜上的 syntaxin 与 SNAP-25 组成受体复合体，囊泡膜上的 synaptobrevin（VAMP）以三股 α 螺旋束与它们组装成 SNARE 复合体，像拉链一样把两层膜拉到几纳米内；Ca²⁺ 内流后 synaptotagmin 的 C2 结构域感知钙并结合磷脂，触发融合孔开放——递质于亚毫秒内倾入间隙。肉毒杆菌毒素各血清型以锌内肽酶特异性切割三种 SNARE 蛋白之一，据此可反推每型毒素的麻痹机制。',
+        '突触囊泡胞吐的分子机器：突触前膜上的 syntaxin 与 SNAP-25 组成受体复合体，囊泡膜上的 synaptobrevin（VAMP）与它们组装成四股 α 螺旋束的 SNARE 复合体（SNAP-25 贡献其中两条螺旋），像拉链一样把两层膜拉到几纳米内；Ca²⁺ 内流后 synaptotagmin 的 C2 结构域感知钙并结合磷脂，触发融合孔开放——递质于亚毫秒内倾入间隙。肉毒杆菌毒素各血清型以锌内肽酶特异性切割三种 SNARE 蛋白之一，据此可反推每型毒素的麻痹机制。',
       credit: '图片来源：Wikimedia Commons（neurotransmitter release diagram）',
     },
     {

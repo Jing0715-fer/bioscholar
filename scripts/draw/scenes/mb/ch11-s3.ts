@@ -15,8 +15,8 @@ const draw = (b: B) => {
   // NHEJ 卡
   b.rect(56, 252, 300, 122, { fill: C.badL, stroke: C.bad, sw: 1.5, rx: 9, fillOp: 0.4 })
   b.ctext(206, 276, 'NHEJ（非同源末端连接）', { size: 13.5, weight: 700, fill: C.bad })
-  b.wtext(70, 298, 'Ku70/80 识别末端', { size: 11, fill: C.sub, maxW: 272, lh: 16 })
-  b.wtext(70, 314, '→ DNA-PKcs / Artemis 加工 → XRCC4-LigIV 连接', { size: 11, fill: C.sub, maxW: 272, lh: 16 })
+  b.text(70, 298, 'Ku70/80 识别末端 → DNA-PKcs', { size: 11, fill: C.sub })
+  b.text(70, 314, '/ Artemis 加工 → XRCC4-LigIV 连接', { size: 11, fill: C.sub })
   b.text(70, 350, '快速 · 易错：indel → 移码基因敲除（全周期，G1 为主）', { size: 11, weight: 600, fill: C.bad })
   // HDR 卡
   b.rect(372, 252, 300, 122, { fill: C.okL, stroke: C.ok, sw: 1.5, rx: 9, fillOp: 0.4 })
@@ -88,7 +88,7 @@ const draw = (b: B) => {
 
   // ============ 四、脱靶与优化（下，全宽） ============
   b.panel(30, 726, 1340, 234, { title: '四、脱靶效应与优化：精准度与安全性步步推进' })
-  b.wtext(56, 768, '脱靶根源：sgRNA 与非靶位点的部分互补（尤其种子区错配耐受）+ Cas9 停留时间决定脱靶概率', { size: 11.5, fill: C.sub, maxW: 900 })
+  b.wtext(56, 766, '脱靶根源：sgRNA 与非靶位点的部分互补（尤其种子区错配耐受）+ Cas9 停留时间决定脱靶概率', { size: 11.5, fill: C.sub, maxW: 900 })
   const opts: [string, string][] = [
     ['高保真变体', 'eSpCas9(1.0) · SpCas9-HF1（消除非特异性 DNA 接触）· HiFi Cas9'],
     ['二聚与截短', 'dCas9-FokI（需二聚体提高特异性）· 截短引导链 tru-gRNA（17–18 nt）'],
@@ -96,7 +96,7 @@ const draw = (b: B) => {
     ['全基因组脱靶检测', 'GUIDE-seq · CIRCLE-seq · Digenome-seq（体内 / 体外系统评估）'],
   ]
   opts.forEach(([t, s], i) => {
-    const x = 56 + (i % 2) * 660, y = 778 + Math.floor(i / 2) * 62
+    const x = 56 + (i % 2) * 660, y = 774 + Math.floor(i / 2) * 62
     b.rect(x, y, 640, 52, { fill: C.panel, stroke: C.line, sw: 1.2, rx: 8 })
     b.text(x + 16, y + 22, t, { size: 12.5, weight: 700, fill: C.ink })
     b.wtext(x + 16, y + 40, s, { size: 11, fill: C.sub, maxW: 608 })

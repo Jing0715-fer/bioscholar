@@ -38,8 +38,10 @@ const draw = (b: B) => {
     '· 基因多为单拷贝；重复序列主要为 rRNA、tRNA 等多拷贝基因',
     '· 质粒（F 因子、R 质粒）携带附加遗传信息',
   ]
-  let fy = 200
-  for (const s of feats) fy = b.wtext(1080, fy, s, { size: 12.5, fill: C.sub, maxW: 262, lh: 19 })
+  b.wtext(1080, 200, feats[0], { size: 12.5, fill: C.sub, maxW: 262, lh: 19 })
+  b.wtext(1080, 219, feats[1], { size: 12.5, fill: C.sub, maxW: 262, lh: 19 })
+  b.wtext(1080, 238, feats[2], { size: 12.5, fill: C.sub, maxW: 262, lh: 19 })
+  b.wtext(1080, 276, feats[3], { size: 12.5, fill: C.sub, maxW: 262, lh: 19 })
   b.circle(1105, 352, 15, { stroke: C.pro, sw: 3 })
   b.ctext(1105, 382, '质粒（F / R）', { size: 11, fill: C.proD })
   b.ctext(950, 410, '操纵子＝功能相关结构基因与调控序列的成簇组织（详见第 7 章）', { size: 12, fill: C.mute })

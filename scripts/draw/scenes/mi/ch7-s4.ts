@@ -57,8 +57,8 @@ const draw = (b: B) => {
     xticks: [[0.25, '10'], [0.5, '20'], [0.75, '30']],
     yticks: [[0.1, '10⁶'], [0.3, '10⁵'], [0.5, '10⁴'], [0.7, '10³'], [0.9, '10²']],
   })
-  // 轴 ylabel 手绘于绘图区右上空白（避开 y 轴刻度）
-  b.etext(1037, 472, '存活数（对数）', { size: 13, weight: 600, fill: C.sub })
+  // 手动纵轴标签（置于图左上方，避开 0.5 处的「10⁴」刻度）
+  b.text(742, 412, '存活数（对数）↑', { size: 12.5, weight: 600, fill: C.sub })
   b.curve(ax, ay, aw, ah, [[0, 1], [0.35, 0]], { stroke: C.bad, sw: 2.6 })
   b.curve(ax, ay, aw, ah, [[0, 1], [0.6, 0.05]], { stroke: C.warn, sw: 2.6 })
   b.curve(ax, ay, aw, ah, [[0, 1], [1, 0.35]], { stroke: C.acc, sw: 2.6 })

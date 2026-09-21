@@ -23,7 +23,6 @@ const draw = (b: B) => {
       }
     }
     b.ctext(x + 55, 376, lab, { size: 12.5, weight: 700, fill: C.ink })
-    b.ctext(x + 55, 394, '6 跨膜（S1–S6）', { size: 9.5, fill: C.mute })
   })
   b.ctext(365, 244, 'P 环拼成选择性滤器（DEKA 基序）', { size: 11.5, weight: 700, fill: C.enz })
   b.arrow(365, 252, 365, 296, { stroke: C.enz, sw: 1.5, marker: 'enz' })
@@ -33,8 +32,8 @@ const draw = (b: B) => {
   b.ctext(450, 412, 'IFM', { size: 9, weight: 700, fill: C.enzD })
   b.path('M495,352 C480,380 465,390 452,396', { stroke: C.enz, sw: 1.6, dash: '4 3' })
   b.arrow(436, 400, 376, 360, { stroke: C.enz, sw: 1.6, dash: '4 3', marker: 'enz' })
-  b.wtext(470, 428, '开放后约 1 ms 内塞住胞内侧孔口（DIII–DIV 连接环）', { size: 10.5, fill: C.enzD, maxW: 250, lh: 14 })
-  b.wtext(86, 424, '激活（S4 外携）与失活（IFM 塞孔）是两把彼此独立的锁。', { size: 10.5, fill: C.sub, maxW: 240, lh: 14 })
+  b.wtext(470, 396, '开放后约 1 ms 内塞住胞内侧孔口（DIII–DIV 连接环）', { size: 10.5, fill: C.enzD, maxW: 250, lh: 14 })
+  b.wtext(86, 424, '每域 6 跨膜（S1–S6）；激活（S4 外携）与失活（IFM 塞孔）是两把独立的锁。', { size: 10.5, fill: C.sub, maxW: 240, lh: 14 })
   // 右侧说明卡
   b.rect(800, 180, 540, 120, { fill: C.accL, fillOp: 0.4, stroke: C.acc, sw: 1.6, rx: 9 })
   b.text(820, 210, 'S4：电压传感器', { size: 14.5, weight: 700, fill: C.accD })
@@ -53,7 +52,7 @@ const draw = (b: B) => {
     rows: [
       ['结构', '约 2000 个氨基酸的单链，折成四个同源结构域（DI–DIV，各 6 跨膜）', '四聚体（每个亚基 6 跨膜）'],
       ['激活', '极快：S4 外携后孔口雪崩式开放', '四个 S4 逐一外翻 → 激活慢，构成延迟整流'],
-      ['失活', '快：IFM 球塞孔（约 1 ms）', '慢（C 型失活）——去极化期间持续外流'],
+      ['失活', '快：IFM 球塞孔（约 1 ms）', '慢或无（Shaker 为 N 型球链）——去极化期间持续外流'],
       ['电位贡献', '上升支与超射（冲向 E_Na）', '下降支与后超极化（拉回 E_K 方向）'],
     ],
   })
@@ -64,7 +63,7 @@ const draw = (b: B) => {
     [60, '河鲀毒素 TTX', '纳摩尔亲和力自胞外封住 Nav 滤器；心脏 Nav1.5 相对不敏感——心肌仍可放电。', C.enz, C.enzL],
     [390, '四乙基铵 TEA', '自孔口堵住 Kv：延迟整流被按下暂停键，动作电位时程延长。', C.acc, C.accL],
     [720, '利多卡因', '自胞内侧优先结合并稳定失活态 → 使用依赖性：越放电越被阻断（局麻 / 抗心律失常）。', C.warn, C.warnL],
-    [1050, '通道病：临床回声', 'SCN1A → 癫痫；SCN4A → 周期性麻痹；KCNQ2/3 → 新生儿癫痫——结构-功能映射的临床级证据。', C.bad, C.badL],
+    [1050, '通道病：临床回声', 'SCN1A → 癫痫；SCN4A → 周期性麻痹；KCNQ2/3 → 新生儿癫痫，结构-功能映射的临床级证据。', C.bad, C.badL],
   ]
   cards.forEach(([x, t, s, col, colL]) => {
     b.rect(x, 800, 300, 160, { fill: colL, fillOp: 0.45, stroke: col, sw: 1.6, rx: 9 })

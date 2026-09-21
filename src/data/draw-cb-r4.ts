@@ -276,7 +276,7 @@ export const drawCbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/cb-ch12-s2-apoptosis-pathways-bcl2.svg',
       caption:
-        '细胞凋亡的两条信号途径与 Bcl-2 家族：外在途径——FasL 结合同源三聚体受体→FADD 接头招募 pro-caspase-8 组装 DISC→caspase-8 活化（同时剪切 Bid 增援内在途径）→执行 caspase-3/7。内在途径——BH3-only 蛋白（Bid/Bim/Puma）感应压力激活 Bax/Bak 在线粒体外膜成孔→细胞色素 c 释放入——家族两方阵：抗凋亡（Bcl-2、Bcl-xL 封锁 Bax/Bak）vs 促凋亡（BH3-only 感应器+执行者）；t(14;18) 易位过表达 Bcl-2 见于滤泡淋巴瘤；维奈托克（Venetoclax，Bcl-2 拮抗剂）为靶向凋亡的临床转化。',
+        '细胞凋亡两条途径与 Bcl-2 家族：外在途径：FasL 结合三聚体受体→FADD 招募 pro-caspase-8 组装 DISC→caspase-8 活化（Bid 增援内在途径）→执行 caspase-3/7。内在途径：BH3-only 蛋白（Bid/Bim/Puma）激活 Bax/Bak 在线粒体外膜成孔→细胞色素 c 释出后与 Apaf-1/ATP 组装凋亡体→procaspase-9→效应 caspase 级联。Bcl-2 家族：抗凋亡（Bcl-2/Bcl-xL 封锁 Bax/Bak）vs 促凋亡（BH3-only 感应器+执行者）；t(14;18) 过表达 Bcl-2 见于滤泡淋巴瘤；Bcl-2 拮抗剂维奈托克为靶向凋亡的临床转化。',
       credit: DRAWN_CREDIT,
     },
   ],

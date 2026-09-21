@@ -34,11 +34,10 @@ const draw = (b: B) => {
   // 核篮末端小环
   b.circle(cx, 416, 13, { stroke: C.pro, sw: 2 })
   b.text(400, 424, '篮筐末端环', { size: 9.5, fill: C.proD })
-  // 中央栓 + FG 筛网
+  // 中央栓 + FG 筛网（标注移至膜间 gap，避免被辐条线穿过）
   b.ellipse(cx, 317, 26, 30, { fill: C.bg, stroke: C.dna, sw: 2.2 })
-  b.text(338, 300, '中央栓（转运体）', { size: 9.5, weight: 700, fill: C.dnaD })
-  b.text(338, 314, 'FG 重复核孔蛋白', { size: 9.5, weight: 700, fill: C.rnaD })
-  b.text(338, 328, '凝胶样选择性筛网', { size: 9, fill: C.mute })
+  b.tag(505, 322, '中央栓：FG 重复蛋白·凝胶筛', { fill: C.panelB, stroke: C.dna, size: 9.5, weight: 600, tfill: C.dnaD, pad: 6 })
+  b.arrow(434, 322, 392, 322, { stroke: C.dna, sw: 1.6, marker: 'dna' })
   // 标注
   b.tag(155, 244, '胞质细纤维', { fill: C.panelB, stroke: C.mute, size: 9.5, tfill: C.mute, pad: 5 })
   b.tag(508, 244, '胞质环（8 辐条）', { fill: C.enzL, stroke: C.enz, size: 9.5, tfill: C.enzD, pad: 5 })
@@ -76,7 +75,7 @@ const draw = (b: B) => {
   b.wtext(900, 214, '胞质侧 Ran-GTP 水解为 Ran-GDP，货物释放；NES 为富含亮氨酸的出核信号', { size: 9.5, fill: C.sub, maxW: 280, lh: 13 })
   b.ctext(1254, 448, '出核（exportin / CRM1）', { size: 10.5, weight: 700, fill: C.ink })
   // -- 工具药与 mRNA --
-  b.tag(790, 486, 'LMB（来普霉素 B）特异性抑制 CRM1', { fill: C.badL, stroke: C.bad, size: 9.5, tfill: C.bad, pad: 6 })
+  b.tag(800, 486, 'LMB（来普霉素 B）特异性抑制 CRM1', { fill: C.badL, stroke: C.bad, size: 9.5, tfill: C.bad, pad: 6 })
   b.tag(1080, 486, 'mRNA 以 mRNP 形式经 TREX 等因子输出', { fill: C.rnaL, stroke: C.rna, size: 9.5, tfill: C.rnaD, pad: 6 })
 
   // ============ 三、Ran-GTP 梯度：方向性的来源 ============
@@ -85,9 +84,9 @@ const draw = (b: B) => {
   b.cell(330, 796, 272, 172, { label: '' })
   b.nucleusU(330, 792, 108)
   b.dna(268, 860, 124, { amp: 9, period: 34, stroke: C.dna, sw: 2.2, rung: true, rungC: C.dnaD })
-  b.text(262, 828, '染色质', { size: 9.5, weight: 700, fill: C.dnaD })
-  b.tag(330, 726, 'RCC1（GEF）只位于染色质', { fill: C.okL, stroke: C.ok, size: 10, weight: 700, tfill: C.ok, pad: 6 })
-  b.arrow(330, 738, 330, 762, { stroke: C.ok, sw: 1.8, marker: 'ok' })
+  b.text(230, 796, '染色质', { size: 9.5, weight: 700, fill: C.dnaD })
+  b.tag(330, 720, 'RCC1（GEF）只位于染色质', { fill: C.okL, stroke: C.ok, size: 10, weight: 700, tfill: C.ok, pad: 6 })
+  b.arrow(330, 732, 330, 750, { stroke: C.ok, sw: 1.8, marker: 'ok' })
   b.text(448, 742, 'Ran-GDP → Ran-GTP', { size: 10, weight: 700, fill: C.ok })
   for (let i = 0; i < 6; i++) {
     b.ion(262 + i * 30, 792 + (i % 2 === 0 ? -26 : 26), 'GTP', { r: 13, fill: C.okL, stroke: C.ok, tfill: C.ok, size: 8 })
@@ -101,11 +100,12 @@ const draw = (b: B) => {
   b.tag(505, 944, '胞质低 Ran-GTP', { fill: C.panelB, stroke: C.mute, size: 10.5, weight: 700, tfill: C.mute, pad: 6 })
   // -- 梯度示意（右）--
   b.axis(760, 930, 560, 250, {
-    ylabel: 'Ran-GTP 浓度', title: 'Ran-GTP 梯度',
+    title: 'Ran-GTP 梯度',
     xticks: [[0.08, '核质'], [0.5, 'NPC'], [0.92, '胞质']],
     yticks: [[0.05, '低'], [0.55, ''], [0.95, '高']],
   })
-  b.curve(760, 930, 560, 250, [[0, 0.94], [0.12, 0.9], [0.3, 0.72], [0.45, 0.42], [0.55, 0.2], [0.7, 0.08], [0.88, 0.04], [1, 0.03]], { stroke: C.ok, sw: 3, smooth: true, label: 'Ran-GTP', labelAt: [0.18, 0.86] })
+  b.ctext(704, 805, 'Ran-GTP 浓度', { size: 15, weight: 600, fill: C.sub })
+  b.curve(760, 930, 560, 250, [[0, 0.94], [0.12, 0.9], [0.3, 0.72], [0.45, 0.42], [0.55, 0.2], [0.7, 0.08], [0.88, 0.04], [1, 0.03]], { stroke: C.ok, sw: 3, smooth: true, label: 'Ran-GTP', labelAt: [0.36, 0.82] })
   b.text(790, 968, 'RCC1（核）与 RanGAP（胞质）的区室化分布建立梯度，驱动双向单向流。', { size: 10.5, fill: C.sub })
   b.text(790, 628, '有丝分裂前期 CDK1 磷酸化核纤层蛋白与核孔蛋白 → 核被膜崩解；末期去磷酸化重建。', { size: 10.5, weight: 600, fill: C.warn })
 }

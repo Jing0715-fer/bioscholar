@@ -15,7 +15,7 @@
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">位点特异性重组与转座子</text>
   <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">λ 噬菌体 attP×attB 保守性重组（Int/IHF/Xis）——细菌 IS / Tn10 / Tn3 与真核 DNA 转座子、LINE-1 / Alu 逆转座子：切下-粘贴与复制-粘贴两条路线</text>
-  <rect x="30" y="132" width="660" height="296" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="30" y="132" width="660" height="306" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、位点特异性重组：λ 噬菌体 attP × attB</text>
   <text x="60" y="192" font-size="13" fill="#1e293b" font-weight="700">整合（需 Int + IHF）</text>
   <line x1="60" y1="226" x2="340" y2="226" stroke="#0f766e" stroke-width="2.4"/>
@@ -24,7 +24,7 @@
   <rect x="196" y="218" width="44" height="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
   <text x="218" y="230" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">attB</text>
   <text x="218" y="250" font-size="10.5" fill="#64748b" text-anchor="middle">约 25 bp（gal-bio 间）</text>
-  <text x="218" y="196" font-size="11" fill="#475569" text-anchor="middle">大肠杆菌染色体</text>
+  <text x="288" y="196" font-size="11" fill="#475569" text-anchor="middle">大肠杆菌染色体</text>
   <circle cx="560" cy="226" r="44" fill="none" stroke="#6d28d9" stroke-width="3"/>
   <rect x="576" y="218" width="44" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
   <text x="598" y="230" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">attP</text>
@@ -45,10 +45,9 @@
   <text x="452" y="368" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">attR</text>
   <text x="60" y="352" font-size="11" fill="#64748b">gal</text>
   <text x="640" y="352" font-size="11" fill="#64748b" text-anchor="end">bio</text>
-  <text x="60" y="398" font-size="11.5" fill="#475569">保守性重组：不依赖 RecA 与大范围同源、不伴随 DNA 净合成；能量来自磷酸二酯键的断裂-再连接转移，不需 ATP。</text>
-  <text x="430" y="304" font-size="10.5" fill="#64748b">Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，</text>
-  <text x="430" y="320" font-size="10.5" fill="#64748b">用于条件性基因敲除（第 11 章）</text>
-  <rect x="710" y="132" width="660" height="296" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="60" y="398" font-size="11.5" fill="#475569">保守性重组：不依赖 RecA 与大范围同源、不伴随 DNA 净合成；能量来自磷酸二酯键的断裂-再连接转移，</text>
+  <text x="60" y="415" font-size="11.5" fill="#475569">不需 ATP。Cre-loxP / FLP-FRT 系统即此类重组的工程化典范，用于条件性基因敲除（第 11 章）。</text>
+  <rect x="710" y="132" width="660" height="306" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、细菌转座子的三种组织</text>
   <text x="730" y="190" font-size="13" fill="#1e293b" font-weight="700">插入序列 IS（0.7～1.5 kb）</text>
   <rect x="730" y="202" width="42" height="26" rx="4" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.6"/>
@@ -77,11 +76,11 @@
   <text x="1069" y="343" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">IR</text>
   <text x="1100" y="330" font-size="10.5" fill="#64748b">复制型转座形成共整合体，由解离酶在 res 位点拆分。</text>
   <text x="730" y="380" font-size="12" fill="#475569" font-weight="700">靶位点重复：插入后两侧各复制出一段短重复（5～9 bp）</text>
-  <line x1="760" y1="402" x2="900" y2="402" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="760" y1="402" x2="880" y2="402" stroke="#0f766e" stroke-width="2.2"/>
   <rect x="820" y="394" width="30" height="16" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
   <line x1="806" y1="392" x2="816" y2="412" stroke="#0369a1" stroke-width="2"/>
   <line x1="846" y1="392" x2="856" y2="412" stroke="#0369a1" stroke-width="2"/>
-  <text x="920" y="406" font-size="10.5" fill="#64748b" text-anchor="end">斜线＝5～9 bp 靶点重复</text>
+  <text x="810" y="426" font-size="10.5" fill="#64748b" text-anchor="middle">斜线＝5～9 bp 靶点重复</text>
   <rect x="30" y="448" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="470.84" font-size="19" fill="#475569" font-weight="700">三、非复制型与复制型转座</text>
   <text x="60" y="504" font-size="13.5" fill="#1e293b" font-weight="700">非复制型（切下-粘贴）</text>
@@ -131,13 +130,12 @@
   <text x="849" y="637" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">gag-pol</text>
   <rect x="928" y="620" width="40" height="26" rx="4" fill="#fef3c7" stroke="#78350f" stroke-width="1.6"/>
   <text x="948" y="637" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">LTR</text>
-  <text x="990" y="634" font-size="11.5" fill="#78350f" font-weight="700">LINE-1（自主）：</text>
-  <rect x="1100" y="620" width="100" height="26" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
-  <text x="1150" y="637" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">ORF1</text>
-  <rect x="1204" y="620" width="140" height="26" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
-  <text x="1274" y="637" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">ORF2</text>
-  <text x="1100" y="660" font-size="10.5" fill="#64748b">ORF1 编码 RNA 结合蛋白；ORF2 具内切酶与逆转录酶活性，经 TPRT 插入新拷贝。</text>
-  <text x="1100" y="675" font-size="10.5" fill="#64748b">Alu 等非自主 SINE 借用 LINE-1 酶系转座。</text>
+  <text x="976" y="634" font-size="11.5" fill="#78350f" font-weight="700">LINE-1（自主）：</text>
+  <rect x="1108" y="620" width="96" height="26" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="1156" y="637" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">ORF1</text>
+  <rect x="1208" y="620" width="130" height="26" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.6"/>
+  <text x="1273" y="637" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">ORF2</text>
+  <text x="730" y="676" font-size="10.5" fill="#64748b">ORF1 编码 RNA 结合蛋白；ORF2 具内切酶与逆转录酶活性，经 TPRT 插入新拷贝。Alu 等非自主 SINE 借用 LINE-1 酶系转座。</text>
   <rect x="30" y="732" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">五、McClintock 的发现与转座的基因组意义</text>
   <line x1="70" y1="800" x2="660" y2="800" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>

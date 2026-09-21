@@ -90,11 +90,11 @@ const draw = (b: B) => {
   for (let i = 0; i <= 90; i++) {
     const th = 0.6 + (i / 90) * 6.2
     const r = 3 + 9.2 * th
-    spiral.push(`${(i === 0 ? 'M' : 'L')}${(1010 + r * Math.cos(th)).toFixed(1)},${(620 + r * Math.sin(th)).toFixed(1)}`)
+    spiral.push(`${(i === 0 ? 'M' : 'L')}${(1010 + r * Math.cos(th)).toFixed(1)},${(628 + r * Math.sin(th)).toFixed(1)}`)
   }
   b.path(spiral.join(''), { stroke: C.bad, sw: 3, fill: 'none' })
-  b.circle(1010, 620, 66, { stroke: C.faint, sw: 1.2, dash: '4 4' })
-  b.ctext(1010, 706, '螺旋波（示意）', { size: 9.5, fill: C.mute })
+  b.circle(1010, 628, 66, { stroke: C.faint, sw: 1.2, dash: '4 4' })
+  b.ctext(1010, 712, '螺旋波（示意）', { size: 9.5, fill: C.mute })
   const waves: Array<[string, number]> = [
     ['黏菌聚集的螺旋波', 592],
     ['心肌电螺旋波', 626],

@@ -4,7 +4,7 @@ import { scene, C, B } from '../../lib'
 const draw = (b: B) => {
   // ============ 一、侵入的两条通路 ============
   b.panel(30, 132, 660, 430, { title: '一、侵入的两条通路：质膜融合 vs 内吞' })
-  b.text(50, 196, '质膜融合（中性 pH 触发）', { size: 12.5, weight: 700, fill: C.dnaD })
+  b.text(50, 184, '质膜融合（中性 pH 触发）', { size: 12.5, weight: 700, fill: C.dnaD })
   b.bilayer(60, 282, 280, { tint: C.dna })
   b.virion(200, 232, 26, { shape: 'enveloped', stroke: C.bad })
   b.circle(200, 288, 20, { fill: C.badL, stroke: C.bad, sw: 2, fillOp: 0.6 })
@@ -13,7 +13,7 @@ const draw = (b: B) => {
   b.ctext(200, 344, '融合孔开，vRNP 入胞', { size: 10.5, fill: C.mute })
   b.ctext(200, 370, '病毒在细胞表面直接卸货', { size: 11, weight: 700, fill: C.sub })
   b.line(90, 404, 330, 404, { stroke: C.faint, sw: 1, dash: '4 4' })
-  b.text(370, 196, '内吞（多需低 pH 触发）', { size: 12.5, weight: 700, fill: C.accD })
+  b.text(370, 184, '内吞（多需低 pH 触发）', { size: 12.5, weight: 700, fill: C.accD })
   b.bilayer(370, 226, 290, { tint: C.dna })
   b.vesicle(515, 286, 34, { coat: 'clathrin', fill: C.bg })
   b.virion(515, 286, 13, { shape: 'icosahedral', stroke: C.bad })
@@ -22,7 +22,7 @@ const draw = (b: B) => {
   b.circle(515, 428, 52, { fill: C.accL, stroke: C.acc, sw: 2 })
   b.virion(515, 424, 15, { shape: 'enveloped', stroke: C.bad })
   b.ctext(515, 496, '内体酸化 pH↓ → 融合蛋白变构', { size: 10.5, weight: 700, fill: C.accD })
-  b.wtext(370, 256, '融合蛋白的触发方式决定通路：中性 pH 融合可在细胞表面发生；低 pH 依赖者须待内体酸化。', { size: 10.5, fill: C.sub, maxW: 240, lh: 15 })
+  b.wtext(50, 530, '融合蛋白的触发方式决定通路：中性 pH 融合可在细胞表面发生；低 pH 依赖者须待内体酸化。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
 
   // ============ 二、三类融合蛋白 ============
   b.panel(710, 132, 660, 430, { title: '二、三类融合蛋白：结构与活化方式' })
@@ -35,10 +35,16 @@ const draw = (b: B) => {
     const y0 = 190 + i * 120
     b.tag(752, y0 + 22, f.nm, { fill: f.c + '22', stroke: f.c, size: 12.5, weight: 700, tfill: f.c, pad: 10 })
     if (i === 0) {
-      for (let k = 0; k < 3; k++) b.rect(810 + k * 18, y0 - 2, 10, 44, { fill: C.badL, stroke: f.c, sw: 1.5, rx: 4 })
+      // I 类：三聚体针状刺突（HA1 球头＋HA2 茎），立于膜上，酶切位点以虚线标记
+      b.ctext(837, y0 - 12, '三聚体刺突：HA1 球头＋HA2 茎', { size: 9.5, fill: C.mute })
       b.line(806, y0 + 52, 868, y0 + 52, { stroke: C.dna, sw: 2.4 })
+      for (let k = 0; k < 3; k++) {
+        const sx = 815 + k * 20
+        b.rect(sx - 3, y0 + 11, 6, 41, { fill: C.badL, stroke: f.c, sw: 1.4, rx: 2 })
+        b.circle(sx, y0 + 6, 6.5, { fill: C.badL, stroke: f.c, sw: 1.5 })
+      }
+      b.line(800, y0 + 26, 870, y0 + 26, { stroke: C.enz, sw: 1.6, dash: '5 4' })
       b.ctext(838, y0 + 70, '切割（HA0→HA1/HA2）', { size: 9.5, fill: C.mute })
-      b.line(810, y0 - 10, 868, y0 - 10, { stroke: C.enz, sw: 2, dash: '5 4' })
     } else if (i === 1) {
       b.rect(806, y0 + 6, 26, 16, { fill: C.rnaL, stroke: f.c, sw: 1.5, rx: 5 })
       b.rect(836, y0 + 6, 26, 16, { fill: C.rnaL, stroke: f.c, sw: 1.5, rx: 5 })
@@ -48,7 +54,7 @@ const draw = (b: B) => {
     } else {
       for (let k = 0; k < 3; k++) b.rect(808 + k * 15, y0 + 2, 8, 18, { fill: C.dnaL, stroke: f.c, sw: 1.4, rx: 3 })
       for (let k = 0; k < 2; k++) b.polygon([[806 + k * 40, y0 + 26], [830 + k * 40, y0 + 26], [818 + k * 40, y0 + 46]], { fill: C.dnaL, stroke: f.c, sw: 1.4 })
-      b.ctext(844, y0 + 48, '螺旋束＋β 桶', { size: 9.5, fill: C.mute })
+      b.ctext(844, y0 + 60, '螺旋束＋β 桶', { size: 9.5, fill: C.mute })
     }
     b.wtext(950, y0 + 16, f.feat, { size: 10.5, fill: C.sub, maxW: 400, lh: 15 })
     b.text(950, y0 + 92, `代表：${f.rep}`, { size: 10, weight: 700, fill: f.c })
@@ -97,7 +103,7 @@ const draw = (b: B) => {
   b.path('M 1188,676 C 1208,716 1188,756 1148,760', { fill: 'none', stroke: C.dna, sw: 5 })
   b.virion(1110, 716, 17, { shape: 'icosahedral', stroke: C.bad })
   b.ctext(1110, 790, '大胞饮', { size: 11.5, weight: 700, fill: C.sub })
-  b.ctext(1110, 810, '膜皱褶大量吞饮液体与颗粒', { size: 10, fill: C.mute })
+  b.ctext(1110, 810, '大量吞饮液体与颗粒；酸化后低 pH 触发', { size: 10, fill: C.mute })
   b.wtext(730, 856, '内体的意义：提供酸度梯度等触发信号——多数经内吞侵入的病毒，其融合蛋白在低 pH 下才变构活化；内体也是很多病毒「脱壳」的车间。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
   b.wtext(730, 912, '选择哪条路，取决于融合蛋白的触发方式与受体的位置（表面受体 vs 内体受体）。', { size: 11, fill: C.mute, maxW: 620, lh: 16 })
 }

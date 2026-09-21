@@ -2,11 +2,6 @@
 import { scene, C, B } from '../../lib'
 
 const draw = (b: B) => {
-  // 副标题过长（scene 两行自动换行仍溢出）→ 手动三行渲染（原文未改动）
-  b.ctext(700, 77, 'HLA 复合体位于第 6 号染色体短臂 6p21.3、跨越约 3600 kb、座位超 200 个；I 类区（HLA-A/B/C 经典，E/F/G 非经典）、II 类区（DR/DQ/DP 经典 + TAP/PSMB/DM-DO 配套）与 III 类区（C2、C4、Bf、TNF）；', { size: 12, fill: C.mute })
-  b.ctext(700, 94, '多样性来自多基因性与多态性（HLA-B 已逾八千等位基因，多态残基集中于肽结合槽编码区）两层，共显性表达使单个细胞陈列至多 6 种 I 类与 10 种上下 II 类分子；', { size: 12, fill: C.mute })
-  b.ctext(700, 111, '紧密连锁的单元型整体传递、连锁不平衡与公共表位交叉反应是移植配型的遗传学基础', { size: 12, fill: C.mute })
-
   // ============ 一、HLA 复合体基因图 ============
   b.panel(30, 132, 1340, 290, { title: '一、HLA 复合体基因图：第 6 号染色体短臂 6p21.3 的「免疫基因特区」' })
 
@@ -59,8 +54,8 @@ const draw = (b: B) => {
   b.rect(470, 490, 390, 148, { fill: C.dnaL, fillOp: 0.55, stroke: C.dna, sw: 1.6, rx: 9 })
   b.text(488, 514, '多态性（群体内）', { size: 13, weight: 700, fill: C.dnaD })
   b.wtext(488, 538, '群体内每个座位等位基因众多；多态残基集中于肽结合槽编码区——HLA-B 已逾八千个等位基因。', { size: 10.5, fill: C.sub, maxW: 356, lh: 16 })
-  b.bars(488, 590, 356, 26, [86, 46, 60, 24, 30], { labels: ['A', 'B', 'C', 'DRB1', 'DQB1'], fill: C.dnaL, stroke: C.dna, max: 100 })
-  b.ctext(666, 630, '各座位等位基因数（示意，B 居首、已逾 8000）', { size: 9.5, fill: C.mute })
+  b.bars(488, 634, 356, 30, [86, 46, 60, 24, 30], { labels: ['A', 'B', 'C', 'DRB1', 'DQB1'], fill: C.dnaL, stroke: C.dna, max: 100 })
+  b.ctext(666, 672, '各座位等位基因数（示意，B 居首、已逾 8000）', { size: 9.5, fill: C.mute })
 
   b.rect(880, 490, 460, 148, { fill: C.proL, fillOp: 0.55, stroke: C.pro, sw: 1.6, rx: 9 })
   b.text(898, 514, '共显性表达（细胞面）', { size: 13, weight: 700, fill: C.proD })
@@ -72,7 +67,7 @@ const draw = (b: B) => {
   b.ctext(1215, 600, 'II 类分子 ~10 种', { size: 11.5, weight: 700, fill: C.proD })
   b.ctext(1215, 616, 'DR · DQ · DP 各两份', { size: 9, fill: C.mute })
 
-  b.ctext(700, 668, '多基因性拓宽个体覆盖面，多态性加深群体储备库——HLA 是个体的免疫身份签名', { size: 11.5, weight: 600, fill: C.ink })
+  b.ctext(700, 688, '多基因性拓宽个体覆盖面，多态性加深群体储备库——HLA 是个体的免疫身份签名', { size: 11.5, weight: 600, fill: C.ink })
 
   // ============ 三、单元型遗传与连锁不平衡 ============
   b.panel(30, 712, 1340, 260, { title: '三、单元型遗传 · 连锁不平衡 · 公共表位：移植配型的遗传学基础' })
@@ -101,5 +96,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: 'HLA 复合体的基因结构与遗传特征：6p21.3 的分区与三重多样性',
+  subtitle: 'HLA 复合体位于第 6 号染色体 6p21.3、跨越约 3600 kb、座位超 200 个；I 类区（A/B/C 经典、E/F/G 非经典）、II 类区（DR/DQ/DP 经典加 TAP/PSMB 配套）与 III 类区（C2、C4、Bf、TNF）；多样性来自多基因性与多态性（HLA-B 已逾八千等位基因），共显性表达使单个细胞陈列至多 6 种 I 类与约 10 种 II 类分子；紧密连锁的单元型整体传递、连锁不平衡与公共表位交叉反应是移植配型的遗传学基础',
   draw,
 })

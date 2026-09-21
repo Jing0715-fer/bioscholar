@@ -10,9 +10,14 @@ const draw = (b: B) => {
     vlabels: ['4377', '902', '473'],
     fill: C.dnaL, stroke: C.dna, max: 5000,
   })
-  b.ctext(230, 470, '基因组基因数（编码序列）', { size: 12.5, fill: C.mute })
-  b.wtext(420, 250, 'syn3.0 的 473 基因 = 维持独立生命的最简基因集：', { size: 13.5, weight: 600, fill: C.ink, maxW: 250, lh: 21 })
-  b.wtext(420, 300, '· DNA 复制/转录/翻译全套\n· 代谢与 ATP 合成\n· 膜与转运\n· 149 个功能未知（约 1/3）', { size: 13, fill: C.sub, maxW: 250, lh: 24 })
+  b.ctext(230, 498, '基因组基因数（编码序列）', { size: 12.5, fill: C.mute })
+  // 文字列手动拆行（wtext 遇无标点长 token 会整行溢出面板右缘；\n 在 SVG text 中会被折叠为空格）
+  b.text(420, 250, 'syn3.0 的 473 基因', { size: 13.5, weight: 600, fill: C.ink })
+  b.text(420, 272, '＝ 维持独立生命的最简基因集：', { size: 13.5, weight: 600, fill: C.ink })
+  b.text(420, 300, '· DNA 复制/转录/翻译全套', { size: 13, fill: C.sub })
+  b.text(420, 322, '· 代谢与 ATP 合成', { size: 13, fill: C.sub })
+  b.text(420, 344, '· 膜与转运', { size: 13, fill: C.sub })
+  b.text(420, 366, '· 149 个功能未知（约 1/3）', { size: 13, fill: C.sub })
   b.wtext(420, 430, 'TDT（移植-拼装-移植）设计-合成-测试循环：非必需基因逐轮敲除。', { size: 12.5, fill: C.mute, maxW: 250, lh: 19 })
 
   // ============ 二、基因线路两大开山作（右上） ============
@@ -42,8 +47,13 @@ const draw = (b: B) => {
   b.line(80, 880 - 0.5 * 220, 380, 880 - 0.5 * 220, { stroke: C.faint, sw: 1.5, dash: '7 5' })
   b.ctext(230, 610, '内在噪声（随机出生-死亡涨落）', { size: 13, weight: 600, fill: C.sub })
   b.wtext(420, 640, '挑战：低拷贝分子使噪声显著 → 稳健线路需负反馈、冗余与滤波。', { size: 13, fill: C.sub, maxW: 250, lh: 20 })
-  b.wtext(420, 730, '资源（bet-hedging）：基因切换噪声产生表型多样性——群体以「次优个体」对冲环境剧变（持留菌抗药、营养应激预适应）。', { size: 13, weight: 600, fill: C.dnaD, maxW: 250, lh: 20 })
-  b.wtext(420, 860, '噪声既是bug也是feature——合成生物学的「热力学-信息」视角。', { size: 12.5, weight: 600, fill: C.warn, maxW: 250, lh: 19 })
+  // 手动拆行，避免长 token 溢出到右侧面板
+  b.text(420, 730, '资源（bet-hedging）：', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(420, 752, '基因切换噪声产生表型多样性——', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(420, 774, '群体以「次优个体」对冲环境剧变', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(420, 796, '（持留菌抗药、营养应激预适应）。', { size: 13, weight: 600, fill: C.dnaD })
+  b.text(420, 860, '噪声既是 bug 也是 feature——', { size: 12.5, weight: 600, fill: C.warn })
+  b.text(420, 882, '合成生物学的「热力学-信息」视角。', { size: 12.5, weight: 600, fill: C.warn })
 
   // ============ 四、展望与边界（右下） ============
   b.panel(720, 550, 650, 420, { title: '四、从解释生命到重编生命：可控性与安全边界' })

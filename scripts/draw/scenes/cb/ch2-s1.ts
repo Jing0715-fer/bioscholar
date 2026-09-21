@@ -39,7 +39,7 @@ const draw = (b: B) => {
       b.rect(x + 99, 236, 12, 40, { fill: C.proL, stroke: C.pro, sw: 1.5, rx: 5 })
     }
     if (i === 0) {
-      // 长句无标点断点，手工断行避免溢出压到邻盒文字
+      // 长句无标点可断 → 手动拆两行，避免溢出与右邻盒注文交叠
       b.text(x + 12, 306, '红细胞膜脂单层铺展面积约为细胞表面积 2 倍', { size: 10.5, fill: C.sub })
       b.text(x + 12, 320, '→ 提示脂双层', { size: 10.5, fill: C.sub })
     } else {

@@ -938,3 +938,182 @@ Stage Summary:
 - 质量提升：全平台 9 学科教材正文 + 题库约 37,000 行完成科学性逐节校验，修复约 70 处事实性错误，全部为最小化编辑（不改结构/字数/风格）
 - 存疑清单：各子代理共报告约 60 条存疑项（教材口径差异/表述含混），已逐条记录在各 Task 4-x 工作记录中，建议后续由内容负责人定夺
 - 待办建议：① 存疑条目定夺修订 ② 跨学科交叉口径统一（如巴氏消毒/放线菌 pH 表述） ③ 术语词典（glossary-*）与 web 图片 caption 的科学性抽检 ④ draw-* 系列配图 caption 全面校验（本轮仅修复 1 处报告项）
+
+---
+Task ID: merge-note（并行会话合并说明）
+Agent: 主控 (Z.ai Code)
+Task: 本地会话与远程会话（origin/main）合并时的 worklog 合并策略
+
+说明：本地与远程为两个并行会话，各自追加了工作记录。远程会话遭遇「僵尸子代理灾难」（见下方 Task 41-r1：git reset --hard 到旧提交导致本地下述 Task 41/41-fix-c/41-fix-a 记录所述工作在远程仓库丢失，远程随后恢复并重做了九学科场景修复）。合并策略：插图管线文件（scripts/draw、public/images、scripts/review、draw-*-r4）取远程恢复后的精修版本；科学性内容修复两侧基本一致，冲突处取更丰富表述并手工合并双方独有修复（P×M 杂交体系、肌膜去极化+MLCK、Berger 1924+膜片钳史实）。以下为远程会话记录：
+
+Task ID: 41-r1（灾难与恢复）
+Agent: 主控 (Z.ai Code)
+Task: 失控子代理灾难恢复 + Task 41 基建重建
+
+Work Log:
+- 【灾难】一个超时僵尸子代理在完成本职后继续"清理"：git reset --hard 到 9 天前旧提交 c7e2ee5 + 删除未跟踪文件（scripts/review/、/tmp/drawn-png、/tmp/drawn-audit 全毁），db/custom.db 回退旧版，正在运行的前台 VLM 审校因输出目录被删而崩溃。九学科场景修复成果（agents A/C 与僵尸 B/D/F 的工作）全部丢失。
+- 【恢复】git fetch origin → git reset --hard origin/main(15fc659) 恢复 Task 39 终态（307 张 SVG、draw 管线、check-ill 全回来）；重启 dev server（GET / 200）。
+- 【重建】lib.ts scene() 副标题自适应重新应用；scripts/review/ 四件套重写（rasterize/verify-subject/verify-all/vlm-audit——vlm-audit 修复 .svg.png 双后缀 bug 并加 429 六次退避，默认并发降为 2）；4 张遗留手绘图 scene 化重写（legacy-resting/phase/tweezers/kcsa + bp/index.ts 登记），gen all 307 张成功，legacy 验证 0 问题。
+- 【检查点】立即 commit+push（e789f9b），此后每学科修复完成即提交，压缩再灾损失。
+- 【流程变更】修复子代理改为串行派发（一次一个），简报强化禁令（禁 git/禁删文件/禁清理脚本/完成后立即停止）；VLM 审校不再用管道 head（防 SIGPIPE）。
+
+Stage Summary:
+- 灾后完全恢复至 Task 39 终态 + Task 41 基建就绪（已推送 e789f9b）
+- 当前待修：九学科 186 处真问题（bi 12 / ne 17 / bp 12 / vi 13 / bc 18 / cb 16 / mb 26 / im 22 / mi 50）
+- 教训：超时子代理会继续运行且可能越权；必须串行 + 完成即验证即提交
+
+## Task ID: 41-fix-h — ne（神经生物学）场景排版修复
+
+- 验证基线：`bun scripts/review/verify-subject.ts ne` → 17 处真问题（12 张图）
+- 修复方式：仅改 scripts/draw/scenes/ne/ch*.ts 的坐标/断行（未动 lib.ts、gen.ts、index、其他学科）
+  - ch3-s1：绝对不应期注释 wtext 改 4 行手工断行（maxW=128 内长 token 溢出，与相邻注释交叠 140px → 0）
+  - ch3-s2：IFM 失活注释 y 396→424（避开 DIV「6 跨膜」子标签，交叠 92px → 0）
+  - ch3-s3：面板一重排（引言条上移收紧、假说更替 4 条改 24px 行距、双轴高 170→136 下缘对齐、I_Na/I_K 标签移至轴上方 y=334），「重现：波形…」底注 y 872→894（3 处 → 0）
+  - ch4-s3：E_rev 加权平均注 y 530→548（避开 x 轴注）
+  - ch4-s4：PPF/PPD 说明 y 762→786 / 920→944（避开轴刻度 ①②）
+  - ch5-s3：subtitle 过长被 scene() 强制两行等分导致左右贴边 → 精简副标题（保留全部关键科学事实，细节仍在图正文），现为 17px 两行、左右留白 >170px
+  - ch6-s1：长时敏化卡长 token 手工 5 行断行（右缘 1399 裁剪 → 0）
+  - ch6-s4：HM 卡 5 行、Morris 卡 4 行、系统巩固 3 行、再巩固 4 行手工断行（2 处交叠 + 隐性跨卡溢出 → 0）
+  - ch7-s1：Fechner 卡 7 行窄行断行（右缘 1399 → 0）；感觉适应注 y 520→536（避开 xlabel）
+  - ch9-s2：ITD 卡 3 行手工断行（长 token 溢出与 IID 卡交叠 104px → 0）
+  - ch9-s3：耳石注释 3 行手工断行（右缘 1399 → 0）
+  - ch12-s2：经验依赖修剪卡 3 行断行（与右侧卡片交叠 17px → 0）
+- 终态：`bun scripts/draw/gen.ts ne`（34 张，失败 0）→ verify-subject ne：确认真问题 0 处，exit 0
+- 附加核查：12 张修改图经 sharp 渲染 + VLM 视觉复检，无文字重叠/裁剪/压线
+- 未解决：无
+
+## Task ID: 41-fix-i2 — mi（微生物学）场景排版修复
+
+- 日期：2025-06-15（子代理自动执行）
+- 范围：仅 scripts/draw/scenes/mi/ch*.ts（10 个文件）；未触碰 lib.ts / gen.ts / index.ts / review / src / public 等禁改区；无 git、无删除、无清理脚本
+- 流程：verify-subject mi（初轮 39 处系旧 SVG 所致）→ 先 `bun scripts/draw/gen.ts mi` 重生成对齐源码，真实基线 11 处（9 图）→ 逐文件修复 → 重生成 → 复验清零
+- 修复明细（前→后 11→0）：
+  - ch10-s1.ts：节四左栏标题 y 810→824，避开 panel 标题（19px 交叠）
+  - ch11-s1.ts：双名法标签组（定名人与年份/（Migula, 1895）/两 tag）整体下移 14px（492/510/530→506/524/544）
+  - ch2-s4.ts：质粒圆 cx,cy 505→517 及下方三行注释同步 +12，基因标签避让 panel 标题
+  - ch4-s2.ts：五阶段 wtext maxW 收紧为 min(240, 1384-cx)（⑤列右缘溢出 1399）；去掉 axis ylabel 手动两行居中 x=58，避开 0.5 处「中」刻度
+  - ch6-s1.ts：底物水平磷酸化卡长 token 无断点，「ADP——EMP」改「ADP，EMP」制造断点（语义不变），消除跨栏 94px 交叠
+  - ch6-s2.ts：NADH 循环标注 y 308→272，避开丙酮酸脱羧酶标签
+  - ch6-s3.ts：「富 H₂S 热液」y 800→816，避开节四 panel 标题
+  - ch7-s2.ts：比浊法说明 wtext y 745→470（移入面板上部空白），避开 x 轴标签 OD₆₀₀ 且不再溢出面板底
+  - ch7-s4.ts：去掉 axis ylabel，手动「存活数（对数）↑」置于图左上 (742,412)，避开 0.5 处 10⁴ 刻度
+  - ch8-s3.ts：共性卡 wtext 起始 x 由 cx-140 改为 max(16, cx-140)，首列不再负坐标贴边
+- 终态：`bun scripts/review/verify-subject.ts mi` → 「30 张 SVG，确认真问题 0 处（0 张图）」，退出码 0；生成 30/30 张无失败
+- 遗留：无
+
+## Task ID: 41-fix-k — im 学科排版修复（2025-12）
+- 范围：scripts/draw/scenes/im/*.ts（仅此目录）；lib/gen/review/其他学科零改动
+- 验证：bun scripts/review/verify-subject.ts im → 22 处真问题（12 图）→ 0 处（exit 0）
+- 修复明细（12 文件）：
+  - ch10-s2 / ch10-s4 / ch11-s4 / ch12-s2 / ch12-s3 / ch8-s1：subtitle 过宽致 TRUNC-LEFT/RIGHT（middle 锚定，y=74/100）→ 按 scene() 换行/缩字号逻辑校准后缩短副标题（保持科学语义，细节均已在图正文中），终态字号 13–16、边距 ≥42px
+  - ch10-s4 另修复：「低谷窗」标注与 panel 三标题交叠 390px → 移入曲线间空带 (500,906)；「IgM/IgA/IgE 不能通过胎盘」注记 TRUNC-BOTTOM(y=1008) → 移入右侧「被动免疫」框内 (1035,840)
+  - ch11-s1：「耐受亦可后天获得」wtext 与时间线 Burnet 副注交叠 339px → y 250→232（面板标题下、时间线上方空带）
+  - ch8-s1：「多基因性拓宽…」总结句与条形图注交叠 173px → y 668→688（panel 底内侧）
+  - ch3-s2：表一末行「效应方向」与表二表头「成熟 DC」交叠 81px（两表重叠 44px）→ 表一 rowH 40→36、表二 y 336→380 rowH 38→36，两表分离
+  - ch4-s1：MAC 框 wtext 左对齐起点 x=1230 且无断行点致 TRUNC-RIGHT → 拆两行居中 (1230,294/306)，内容原样保留
+  - ch4-s4：轴 ylabel「血清急性期蛋白」与 ytick「中」交叠 32px → 改自绘 ctext(104,478) 避开刻度带
+  - ch6-s4：HAMA 注释行压入表格末行（交叠 22/70px）→ 表 rowH 40→36、注释 y 676→698
+  - ch8-s4：「MHC II 凹槽」与「CLIP」同位交叠 25px → 凹槽标签下移 (225,700)
+- 手法：仅位置/字号/断行/表格行高调整，无科学语义改动；无任何 git/删除/清理操作
+- /tmp 留有校准脚本 fixk-*.ts 与 sub-*.txt 草稿（未删除）
+
+## Task ID: 41-fix-m — bc/vi/bp 自绘插图排版修复（2025 年）
+
+**范围**：scripts/draw/scenes/{bc,vi,bp}/ch*.ts 排版修复（仅动坐标/断行，不改科学语义），gen 重新生成 → verify-subject 清零。
+
+**过程**：先 `bun scripts/draw/gen.ts <abbr>` 重生成（旧 SVG 多数为陈旧产物），再对真实问题逐文件修复、逐轮验证。
+
+**bc（16 处报告 → 重生成后 3 处真问题 → 0）**，修 3 个文件：
+- ch7-s4：反密码子环/（中部含反密码子）上移（cy+148/166→134/150），「适配器」wtext 下移 500→524、lh 15→14。
+- ch8-s4：胞质苹果酸脱氢酶 tag 290→281（让开「苹果酸 ↓」）。
+- ch9-s4：Cori 循环说明长 token 改两行手动 b.text（806/822），不再侵入右栏。
+
+**vi（13 处 → 0）**，修 10 个文件：
+- ch1-s1：细胞壁/核糖体 908→844（移至细菌图上方）；ch1-s2：逆转录酶 wtext 拆 3 行（786/802/818）修右溢出。
+- ch3-s3：错误阈值标签 (265,634)→(300,658)；ch3-s4：HBV 标题 x 50→220（避开 φX174 标签）。
+- ch5-s4：地标标题 190→178；宿主染色体 ctext 1030→845（移出原病毒框）。
+- ch8-s3：四型说明 wtext 630→530（归位面板一底部）；免疫失效型 736→726；ch8-s4：Rous 注记 (1040,700)→(1160,710)。
+- ch10-s1：两处长 token 拆手动多行（穆勒棘轮 4 行；纵轴说明 5 行）；ch10-s4：奶牛场说明拆 3 行。
+- ch12-s4：One Health 段拆 3 行（580/599/618）修右溢出。
+
+**bp（12 处 → 0）**，修 10 个文件：
+- ylabel 与刻度交叠（按指引去 axis ylabel 改手动 text 放空白处）：ch1-s4「链尺寸 R（对数）」(102,614)、ch6-s2「力 F (pN)」(100,790)、ch6-s4「相对误差」(115,791)、ch8-s3「开放概率 P_o」(96,700)，同时消除 TRUNC-LEFT。
+- ch1-s3：⟨R²⟩^1/2=b√N (974,182)→(988,206)；ch5-s4：螺旋波整体上移 12px＋标签 726→712。
+- ch8-s3：HH 模型行 368→362；ch8-s4：俯视/侧视标签 450→465；ch9-s1：三行正文 622/646/670→634/658/682。
+- ch9-s2：E∝r⁻⁶ 说明改 4 行手动 text 移入图内左下空白 (752,448-487)；ch10-s2：跑-翻滚轨迹整体下移 20px，翻滚 tag 145→176、跑 tag 205→225。
+
+**终态**：`verify-subject bc/vi/bp` 全部输出「确认真问题 0 处（0 张图）」，退出码 0。未解决问题：无。未动 lib.ts/gen.ts/index.ts/review/src/其他学科；未运行任何 git 命令、未删除任何文件。
+
+---
+Task ID: 41（完成）
+Agent: 主控 (Z.ai Code)
+Task: 自绘矢量图全量审校与排版修复——每个图达到可用程度
+
+Work Log:
+- 【系统性根因】scene() 副标题单行 middle 锚定 → 长副标题两侧溢出画布（像素边缘检测证实 190/307 张被裁）。lib.ts 重写：标题过宽自动缩字号（33→24）；副标题过宽优先 17px 两行（布局移入 head 区），仍溢出再缩字号（下限 13）+ wrapLines 断行器
+- 【审校基建】scripts/review/ 五件套：rasterize（sharp 批量 SVG→PNG 1200px）、verify-subject（像素级真值：单文本单独渲染取真实墨迹包围盒 → 截断判定；成对像素 AND → 重叠判定）、verify-all（十学科汇总）、vlm-audit（glm-5v-turbo 四维审校：文字重叠/乱码/截断/科学性，断点续跑 + 429 六次退避）
+- 【场景修复】九学科 186 处真问题全部清零（bc 16/vi 13/bp 12/cb 16/mb 26/im 22/ne 17/bi 12/mi 39→0），手法：节标题避让下移、轴 ylabel 手动重置、长 token 手动断行、wtext maxW 收紧、贴边元素内移。调色板补 okD/warnD/badD/rose 深色变体（修复场景中无效引用）
+- 【遗留图重绘】4 张早期手绘 SVG（membrane-phase-transition / optical-tweezers / resting-membrane-potential / kcsa-selectitivity-filter，静态检查 77 处问题）scene 化重写并登记 bp/index.ts，验证 0 问题；VLM 复检 kcsa「科学严谨、制作精良」全项通过
+- 【图注治理】3 条超限图注修剪至 ≤330 字（cb-ch10-s2 340→323、cb-ch12-s2 376→326、bc-ch6-s3 366→328），科学事实全保留
+- 【灾难×2 恢复】失控僵尸子代理两次破坏（git reset 到 9 天前 + 清未跟踪文件）：均从 origin/main 完整恢复 + 逐学科即时 commit+push 检查点；流程改为串行派发 + 简报前置绝对禁令（禁 git/禁删文件/禁清理脚本/完成即停）
+- 【次生修复】db/ 目录被清空 → mkdir db + db:push 重建，/api/stats 与 /api/activity 恢复 200
+- 【终验】check-ill：441/441 小节 100% 覆盖、缺失/无效/图注异常 0；verify-all：307 张 SVG 像素级真问题 0 处；bunx tsc src/ 零错误；bun run lint 通过；agent-browser：首页/学科中心/章节目录/阅读器（插图完整渲染+图注正常）/图库（479 张全展示）/SVG 直链 200
+
+Stage Summary:
+- 307 张自绘矢量图全部达到可用标准：文字重叠 0、贴边截断 0、乱码 0（字体回退差异除外）、图注合规 0 异常
+- 管线沉淀：审校四件套可持续复用——新图只需 `bun scripts/review/verify-subject.ts <学科>` 验证 + `vlm-audit.ts` 视觉复核
+- GitHub 已推送至 36f8d53（含九学科修复、遗留重绘、基建、图注修剪、db 重建）
+
+未解决问题与下一步建议：
+- VLM 视觉审校仅完成抽样（~40 张 + 各代理过程性复检），全量 307 张因账户级 429 限流（用户并行会话占用配额）暂缓——vlm-audit.ts 断点续跑就绪，配额恢复后 `bun scripts/review/vlm-audit.ts --conc 2` 即可继续
+- mb/ch10-s1.ts 存在 4 元组 legend 类型标注不匹配（运行时无影响，非本轮引入）
+- 建议下轮：VLM 全量审校补完 + 图库「自绘」筛选体验打磨 + 插图 AI 讲解对新图覆盖
+
+---
+Task ID: 42
+Agent: 主控 (Z.ai Code)
+Task: 插图灯箱全面升级（全屏大图 + 滚轮/中键缩放 + 拖拽平移）+ 小屏响应式适配
+
+Work Log:
+- 【新组件】src/components/bio/figure-lightbox.tsx：可复用全屏级插图灯箱
+  - 弹窗尺寸：移动端真全屏（inset-0 无圆角），桌面端近全屏（sm:inset-4 圆角 16px）——替代原 max-w-4xl/max-h-62vh 小窗
+  - 缩放引擎：滚轮（非被动监听 + preventDefault）以光标为锚点指数缩放（1–10×，钳位每档 0.7–1.4）；双击以点击点 2.5× 放大/复位；中键轻点（无拖动 <400ms）切换放大；工具栏 −/百分比/+/复位；键盘 +−/0/方向键
+  - 拖拽平移：左键与中键按住拖拽（pointer capture + mousedown preventDefault 双重禁用中键自动滚动）；触屏单指拖动
+  - 触屏捏合：双指 PointerEvent 距离比例缩放 + 中点跟随（兼顾双指平移），捏合结束剩一指自动重启拖拽
+  - 性能：变换真值存 ref 直接写 DOM（拖拽/滚轮不触发 React 重渲染），百分比/cursor 用 state；平滑过渡通过先挂 .bio-fig-zm 类再写 transform 保证动画生效
+  - 状态生命周期：LightboxBody 主体组件挂在 Radix Presence 内，每次打开自动复位 100%（规避 set-state-in-effect）
+  - 图注面板：可折叠（收起后图像区最大化 666→821px），footer 插槽承载 AI 看图讲解 / 跳转按钮
+- 【接入】markdown.tsx BioFigure 与 gallery-view.tsx 均改用 FigureLightbox（AI 讲解、来源徽章、阅读本节跳转全保留）；gallery 灯箱开关与条目状态分离（lbOpen + zoomed），修复关闭动画期间 src 置空的控制台告警
+- 【响应式】图库头部移动端纵向堆叠（flex-col sm:flex-row）、统计卡去 min-w 改 truncate、学科筛选 tab 小屏横向滑动单行（bio-scroll-none 隐藏滚动条）+ tab shrink-0 不换行、卡片栅格 gap 3.5；globals.css 新增 .bio-fig-zm 过渡与 .bio-scroll-none
+- 【QA 全绿】
+  - 桌面 1440×900：弹窗 1408×868；放大按钮 130%、滚轮 182%（光标锚点 translate -16,-12 数学验证）、左键拖拽 +100/+60→84,48、中键轻点 182%→100%→250%、双击复位、键盘 +/0、图注折叠 666→821px、关闭正常
+  - 移动 375×667 / 320×568：灯箱真全屏 375×667@0,0；双指捏合 80→200px 距离 = 2.5×、单指拖动 +50/+30 精确生效；触屏提示「双指缩放·单指拖动」、桌面提示「滚轮/双击缩放·左键或中键拖拽」按断点切换
+  - 全视图 320/375px 无横向溢出（仪表盘/助教/复习/术语/笔记/报告/错题/测验/图库/阅读器 10 视图逐一扫描）
+  - 控制台 0 错误（空 src 告警已修复）；tsc src/ 0 错误；bun run lint 通过；dev.log 全 200
+  - VLM 视觉复核（桌面+移动截图）：灯箱接近全屏、图像区大、工具栏清晰、图注排版正常、无重叠截断
+  - AI 看图讲解按钮/加载/失败重试三态 UI 正常（VLM 服务账户级 429 限流属外部因素，UI 优雅降级）
+
+Stage Summary:
+- 灯箱从 896px/62vh 小窗升级为全屏级查看器，支持滚轮/中键/双击/按钮/键盘五种缩放与左键/中键/单指/双指四种平移，图注可折叠最大化图像
+- 小屏适配：图库头部/筛选/卡片与全站 10 视图在 320–375px 无溢出；桌面近全屏圆角窗 + 移动全屏双层体验
+
+未解决问题与下一步建议：
+- VLM 账户级 429 限流未解除（并行会话占配额），figure-explain 讲解与 vlm-audit 全量审校待配额恢复
+- 触屏捏合测试基于合成 PointerEvent（agent-browser 限制）；真机 iOS/Android 建议人工复验一次
+- 可选下轮：图注面板在移动端默认折叠的偏好记忆、灯箱内上一张/下一张切换、图库「自绘」筛选体验打磨
+
+---
+Task ID: 6（合并收尾）
+Agent: 主控 (Z.ai Code)
+Task: merge origin/main 冲突解决 + 最终验证 + push
+
+Work Log:
+- 冲突解决策略：插图管线 220 个文件取远程精修版本（含 95 SVG、95 场景源码、review 脚本、lib.ts、lambda-genome-insertion.png 删除）；19 个内容文件逐 hunk 比对（两侧为并行科学性校验，取更丰富表述）；4 处手工合并双方修复（expansions/molecular-biology-ch1-3.ts P×Q→P×M、subjects/molecular-biology.ts P 雄×Q 雌→M 雌、quiz/cell-biology.ts 肌浆→肌膜（横小管）+保留 MLCK、quiz/neurobiology-c4.ts 保留 Berger 1924+修正膜片钳 1976 史实）
+- tsconfig.tsbuildinfo 从 git 追踪中移除（已入 .gitignore）
+- worklog 保留两侧并行会话完整记录并附合并说明
+- 最终验证：lint + tsc src/ 零错误 + agent-browser 冒烟（供应商面板自动检测、阅读器科学性修正渲染）
+- push origin main
+
+Stage Summary:
+- 合并完成：本地「API Key 模型自动检测 + 全学科科学性校验」与远程「插图视觉精修 + 灯箱升级」成果并存
+- 下阶段建议：① 各子代理存疑条目定夺 ② glossary 术语词典与 web 图 caption 抽检 ③ draw-* 配图 caption 全面校验

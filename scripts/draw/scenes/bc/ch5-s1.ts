@@ -5,14 +5,14 @@ const draw = (b: B) => {
   // ============ 一、酶的化学本质与结合酶组成 ============
   b.panel(30, 132, 660, 412, { title: '一、酶的化学本质：绝大多数是蛋白质' })
   // 结合酶 = 酶蛋白 + 辅因子
-  b.ellipse(200, 250, 96, 58, { fill: C.proL, stroke: C.pro, sw: 2 })
-  b.ctext(200, 244, '酶蛋白', { size: 15, weight: 700, fill: C.proD })
-  b.ctext(200, 266, '决定专一性', { size: 11, fill: C.mute })
-  b.ion(316, 250, '辅因子', { r: 30, fill: C.enzL, stroke: C.enz, tfill: C.enzD, size: 13 })
-  b.ctext(316, 296, '决定反应类型', { size: 11, fill: C.mute })
-  b.line(296, 250, 284, 250, { stroke: C.sub, sw: 2, dash: '4 3' })
-  b.ctext(258, 228, '结合酶', { size: 13, weight: 700, fill: C.ink })
-  b.text(56, 196, '单纯酶：仅由氨基酸组成', { size: 11.5, weight: 700, fill: C.ink })
+  b.ellipse(190, 250, 84, 55, { fill: C.proL, stroke: C.pro, sw: 2 })
+  b.ctext(190, 244, '酶蛋白', { size: 15, weight: 700, fill: C.proD })
+  b.ctext(190, 266, '决定专一性', { size: 11, fill: C.mute })
+  b.ion(330, 250, '辅因子', { r: 32, fill: C.enzL, stroke: C.enz, tfill: C.enzD, size: 13 })
+  b.ctext(330, 300, '决定反应类型', { size: 11, fill: C.mute })
+  b.line(274, 250, 304, 250, { stroke: C.sub, sw: 2, dash: '4 3' })
+  b.ctext(289, 230, '结合酶', { size: 13, weight: 700, fill: C.ink })
+  b.text(56, 192, '单纯酶：仅由氨基酸组成', { size: 11.5, weight: 700, fill: C.ink })
   // 辅酶 vs 辅基
   b.rect(56, 340, 296, 66, { fill: C.rnaL, fillOp: 0.5, stroke: C.rna, sw: 1.5, rx: 8 })
   b.text(70, 364, '辅酶（松散结合）', { size: 12.5, weight: 700, fill: C.rnaD })
@@ -53,7 +53,7 @@ const draw = (b: B) => {
       ['6', '连接酶（合成酶）', '伴随 ATP 水解的合成', '丙酮酸羧化酶、DNA 连接酶'],
     ],
   })
-  b.wtext(56, 880, '系统命名含底物与反应类型（如乳酸 : NAD⁺ 氧化还原酶）；按结构分单体酶、寡聚酶与多酶复合体（丙酮酸脱氢酶复合体、脂肪酸合酶）。', { size: 11.5, fill: C.sub, maxW: 708, lh: 17 })
+  b.wtext(56, 880, '系统命名含底物与反应类型（如乳酸 : NAD⁺ 氧化还原酶）；按结构分单体酶、寡聚酶与多酶复合体（丙酮酸脱氢酶复合体、脂肪酸合酶）。', { size: 11.5, fill: C.sub, maxW: 730, lh: 17 })
 
   // ============ 四、酶活力单位与比活力 ============
   b.panel(800, 556, 600, 424, { title: '四、酶活力单位、比活力与初速度' })
@@ -62,19 +62,19 @@ const draw = (b: B) => {
   b.text(830, 658, '比活力 = 活力单位数 / 毫克蛋白——表示酶纯度', { size: 12.5, weight: 700, fill: C.accD })
   // 纯化过程比活力升高、总活力下降
   b.axis(846, 850, 240, 150, {
-    xlabel: '纯化步骤 →', ylabel: '比活力',
+    xlabel: '纯化步骤 →', title: '比活力',
     xticks: [[0.25, '粗提液'], [0.6, '部分纯化'], [0.95, '纯酶']],
     yticks: [[0, '低'], [1, '高']],
   })
   b.curve(846, 850, 240, 150, [[0.06, 0.06], [0.3, 0.28], [0.55, 0.55], [0.8, 0.85], [0.95, 1]], { stroke: C.dna, sw: 2.8 })
   b.axis(1126, 850, 220, 150, {
-    xlabel: '纯化步骤 →', ylabel: '总活力',
+    xlabel: '纯化步骤 →', title: '总活力',
     xticks: [[0.25, '粗提液'], [0.6, '部分纯化'], [0.95, '纯酶']],
     yticks: [[0, '低'], [1, '高']],
   })
   b.curve(1126, 850, 220, 150, [[0.06, 0.88], [0.3, 0.75], [0.55, 0.55], [0.8, 0.35], [0.95, 0.2]], { stroke: C.enz, sw: 2.8 })
-  b.ctext(966, 616, '纯化过程中：比活力升高（左）· 总活力下降（右）', { size: 11.5, weight: 700, fill: C.ink })
-  b.wtext(816, 922, '酶促反应速度以初速度 v₀ 表示，以避免产物抑制与酶失活的干扰。', { size: 11.5, fill: C.sub, maxW: 568, lh: 17 })
+  b.ctext(1100, 604, '纯化过程中：比活力升高（左）· 总活力下降（右）', { size: 11.5, weight: 700, fill: C.ink })
+  b.wtext(816, 916, '酶促反应速度以初速度 v₀ 表示，以避免产物抑制与酶失活的干扰。', { size: 11.5, fill: C.sub, maxW: 568, lh: 17 })
 }
 
 export default scene({

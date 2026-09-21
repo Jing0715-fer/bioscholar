@@ -48,7 +48,7 @@ const draw = (b: B) => {
   b.ion(990, 514, 'K⁺', { r: 11, fill: C.dnaL, stroke: C.dna, tfill: C.dnaD, size: 10.5 })
   b.ctext(970, 544, '2 K⁺ 泵入', { size: 12.5, weight: 700, fill: C.dnaD })
 
-  // ---- 散布离子（避开通道 340-520 与泵 780-1070 区域）----
+  // ---- 散布离子（避开通道与泵区域）----
   const naPos: [number, number][] = [[80, 240], [140, 300], [220, 250], [300, 320], [560, 250], [640, 310], [700, 240], [1120, 250], [1200, 310], [1280, 250], [1330, 330], [90, 350]]
   for (const [x, y] of naPos) b.ion(x, y, 'Na⁺', { r: 13, fill: C.warnL, stroke: C.warn, tfill: '#78350f', size: 11 })
   const clPos: [number, number][] = [[60, 300], [180, 350], [260, 300], [600, 340], [680, 280], [1140, 340], [1240, 290], [1310, 370], [130, 240]]
@@ -84,7 +84,7 @@ const draw = (b: B) => {
   // 膜内外示意
   b.rect(60, 836, 60, 101, { fill: C.accL, fillOp: 0.5 })
   b.rect(60, 836, 60, 76, { fill: C.badL, fillOp: 0.6 })
-  b.ctext(90, 826, '膜', { size: 11.5, weight: 700, fill: C.sub })
+  b.ctext(90, 830, '膜', { size: 11.5, weight: 700, fill: C.sub })
   b.wtext(320, 874, '静息电位接近但不等于 E_K：差值来自 Na⁺ 少量内漏与泵的生电贡献。', { size: 11.5, fill: C.sub, maxW: 250, lh: 17 })
 
   b.panel(620, 786, 750, 190, { title: '要点串联' })

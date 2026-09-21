@@ -14,7 +14,7 @@
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Anfinsen 实验与折叠自组织：从序列到唯一天然态</text>
-  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">RNaseA（124aa、4个二硫键）经8mol/L尿素+β-巯基乙醇变性后透析复性、活性几乎全恢复（1972诺奖）；Levinthal悖论3¹⁰⁰≈10⁴⁸构象vs毫秒级折叠→能量漏斗下坡通道</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">RNaseA（124aa、4个二硫键）经8mol/L尿素+β-巯基乙醇变性后透析复性、活性几乎全恢复（1972诺奖）；Levinthal悖论3<tspan dy="-5.8" font-size="12.2">100</tspan><tspan dy="5.8">≈10</tspan><tspan dy="-5.8" font-size="12.2">48</tspan><tspan dy="5.8">构象vs毫秒级折叠→能量漏斗下坡通道</tspan></text>
   <rect x="30" y="132" width="1340" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Anfinsen 实验：RNase A 的变性—复性（获 1972 年诺贝尔化学奖）</text>
   <rect x="60" y="185" width="340" height="230" rx="10" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.4"/>
@@ -66,11 +66,11 @@
   <rect x="1036.5" y="341.5" width="117" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
   <text x="1095" y="353.6" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">几乎全部催化活性恢复</text>
   <line x1="406" y1="290" x2="452" y2="290" stroke="#1e293b" stroke-width="3" marker-end="url(#arr-ink)"/>
-  <text x="428" y="268" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">8 mol/L 尿素</text>
-  <text x="428" y="318" font-size="9.5" fill="#dc2626" text-anchor="middle">＋β-巯基乙醇</text>
+  <text x="428" y="261" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">8 mol/L 尿素</text>
+  <text x="428" y="325" font-size="9.5" fill="#dc2626" text-anchor="middle">＋β-巯基乙醇</text>
   <line x1="806" y1="290" x2="852" y2="290" stroke="#1e293b" stroke-width="3" marker-end="url(#arr-ink)"/>
-  <text x="830" y="268" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">透析去除</text>
-  <text x="830" y="318" font-size="9.5" fill="#059669" text-anchor="middle">变性剂</text>
+  <text x="830" y="261" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">透析去除</text>
+  <text x="830" y="325" font-size="9.5" fill="#059669" text-anchor="middle">变性剂</text>
   <text x="230" y="388" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">牛胰核糖核酸酶</text>
   <text x="230" y="406" font-size="10" fill="#64748b" text-anchor="middle">含 4 个链内二硫键</text>
   <text x="630" y="388" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">二硫键还原为游离 –SH</text>
@@ -88,18 +88,18 @@
   <rect x="30" y="552" width="660" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="574.84" font-size="19" fill="#475569" font-weight="700">二、Levinthal 悖论（1969）：折叠不可能是随机搜索</text>
   <text x="60" y="608" font-size="11" fill="#475569">Cyrus Levinthal 算了一笔账：设每个氨基酸仅有 3 种构象状态，一条 100 肽的构象总数即为——</text>
-  <text x="60" y="672" font-size="18" fill="#1e293b" font-weight="700">3¹⁰⁰ ≈ 10⁴⁸ 种构象</text>
-  <text x="60" y="700" font-size="11" fill="#475569">即使每尝试一个构象仅需 10⁻¹³ s，遍历全部构象也需要约 10³⁵ s：</text>
+  <text x="60" y="672" font-size="18" fill="#1e293b" font-weight="700">3<tspan dy="-6.1" font-size="13.0">100</tspan><tspan dy="6.1"> ≈ 10</tspan><tspan dy="-6.1" font-size="13.0">48</tspan><tspan dy="6.1"> 种构象</tspan></text>
+  <text x="60" y="700" font-size="11" fill="#475569">即使每尝试一个构象仅需 10<tspan dy="-3.7" font-size="7.9">-13</tspan><tspan dy="3.7"> s，遍历全部构象也需要约 10</tspan><tspan dy="-3.7" font-size="7.9">35</tspan><tspan dy="3.7"> s：</tspan></text>
   <rect x="60" y="725" width="190" height="60" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
-  <text x="155" y="750" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">≈ 10³⁵ s</text>
-  <text x="155" y="772" font-size="9" fill="#64748b" text-anchor="middle">10⁴⁸ 构象 × 10⁻¹³ s</text>
+  <text x="155" y="750" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="700">≈ 10<tspan dy="-4.8" font-size="10.1">35</tspan><tspan dy="4.8"> s</tspan></text>
+  <text x="155" y="772" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">48</tspan><tspan dy="3.1"> 构象 × 10</tspan><tspan dy="-3.1" font-size="6.5">-13</tspan><tspan dy="3.1"> s</tspan></text>
   <text x="277" y="756" font-size="22" fill="#1e293b" text-anchor="middle" font-weight="700">≫</text>
   <rect x="300" y="725" width="170" height="60" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
-  <text x="385" y="750" font-size="14" fill="#b45309" text-anchor="middle" font-weight="700">≈ 10¹⁷ s</text>
+  <text x="385" y="750" font-size="14" fill="#b45309" text-anchor="middle" font-weight="700">≈ 10<tspan dy="-4.8" font-size="10.1">17</tspan><tspan dy="4.8"> s</tspan></text>
   <text x="385" y="772" font-size="9.5" fill="#64748b" text-anchor="middle">宇宙年龄</text>
   <text x="497" y="756" font-size="22" fill="#1e293b" text-anchor="middle" font-weight="700">≫</text>
   <rect x="520" y="725" width="170" height="60" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
-  <text x="605" y="750" font-size="14" fill="#059669" text-anchor="middle" font-weight="700">10⁻³ – 1 s</text>
+  <text x="605" y="750" font-size="14" fill="#059669" text-anchor="middle" font-weight="700">10<tspan dy="-4.8" font-size="10.1">-3</tspan><tspan dy="4.8"> – 1 s</tspan></text>
   <text x="605" y="772" font-size="9" fill="#64748b" text-anchor="middle">实际折叠（毫秒—秒级）</text>
   <rect x="60" y="820" width="630" height="120" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
   <text x="76" y="848" font-size="13" fill="#1e293b" font-weight="700">结论：折叠必须沿「下坡」通道进行</text>
@@ -107,8 +107,8 @@
   <text x="76" y="890" font-size="11" fill="#475569">（右图漏斗）。</text>
   <text x="76" y="918" font-size="10.5" fill="#64748b">随机搜索远超宇宙年龄，真实折叠仅需毫秒—秒级，两者相差数十个数量级。</text>
   <rect x="710" y="552" width="660" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="726" y="574.84" font-size="19" fill="#475569" font-weight="700">三、折叠能量漏斗：从 10⁴⁸ 构象到唯一天然态</text>
-  <text x="1040" y="622" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">去折叠态集合：~10⁴⁸ 个构象（高构象熵、高自由能）</text>
+  <text x="726" y="574.84" font-size="19" fill="#475569" font-weight="700">三、折叠能量漏斗：从 10<tspan dy="-6.5" font-size="13.7">48</tspan><tspan dy="6.5"> 构象到唯一天然态</tspan></text>
+  <text x="1040" y="622" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">去折叠态集合：~10<tspan dy="-3.9" font-size="8.3">48</tspan><tspan dy="3.9"> 个构象（高构象熵、高自由能）</tspan></text>
   <path d="M 770,655 C 830,770 950,855 1035,890 L 1045,890 C 1130,855 1250,770 1310,655 Z" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2.4"/>
   <ellipse cx="1040" cy="655" rx="270" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
   <ellipse cx="1040" cy="708" rx="235" ry="12" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
@@ -116,8 +116,9 @@
   <ellipse cx="1040" cy="808" rx="128" ry="8" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
   <ellipse cx="1040" cy="852" rx="62" ry="6" fill="none" stroke="#6d28d9" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.65"/>
   <polyline points="1040,675 975,710 1085,750 995,790 1055,832 1040,878" fill="none" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
-  <text x="860" y="780" font-size="10.5" fill="#831843" text-anchor="end" font-weight="700">下坡通道</text>
-  <line x1="864" y1="776" x2="992" y2="788" stroke="#be185d" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <rect x="799" y="767" width="52" height="17" rx="4" fill="#ffffff" opacity="0.85"/>
+  <text x="845" y="779" font-size="10.5" fill="#831843" text-anchor="end" font-weight="700">下坡通道</text>
+  <line x1="850" y1="781" x2="992" y2="790" stroke="#be185d" stroke-width="1.2" stroke-dasharray="3 3"/>
   <rect x="854.43" y="663.925" width="51.14" height="16.15" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
   <text x="880" y="675.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">构象熵大</text>
   <line x1="733" y1="640" x2="733" y2="895" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>

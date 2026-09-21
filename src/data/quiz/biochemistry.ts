@@ -320,7 +320,7 @@ export const biochemistryQuiz: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      'Km 是 v = Vmax/2 时的底物浓度，是酶的特征性常数。仅当 k₃ ≪ k₂ 时，Km = (k₂+k₃)/k₂ 才近似等于解离常数 Ks，此时 Km 越小表示亲和力越大；严格说 C 表述缺少该前提。',
+      'Km 是 v = Vmax/2 时的底物浓度，是酶的特征性常数。仅当 k₃ ≪ k₂ 时，Km = (k₂+k₃)/k₁ 才近似等于解离常数 Ks，此时 Km 越小表示亲和力越大；严格说 C 表述缺少该前提。',
     difficulty: 1
   },
   {

@@ -32,7 +32,6 @@
   <line x1="184" y1="308" x2="184" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="202" y1="308" x2="202" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <text x="155" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DI</text>
-  <text x="155" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
   <rect x="240" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
   <line x1="252" y1="308" x2="252" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="270" y1="308" x2="270" y2="344" stroke="#64748b" stroke-width="1.8"/>
@@ -42,7 +41,6 @@
   <line x1="324" y1="308" x2="324" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="342" y1="308" x2="342" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <text x="295" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DII</text>
-  <text x="295" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
   <rect x="380" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
   <line x1="392" y1="308" x2="392" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="410" y1="308" x2="410" y2="344" stroke="#64748b" stroke-width="1.8"/>
@@ -52,7 +50,6 @@
   <line x1="464" y1="308" x2="464" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="482" y1="308" x2="482" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <text x="435" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DIII</text>
-  <text x="435" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
   <rect x="520" y="302" width="110" height="48" rx="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
   <line x1="532" y1="308" x2="532" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="550" y1="308" x2="550" y2="344" stroke="#64748b" stroke-width="1.8"/>
@@ -62,7 +59,6 @@
   <line x1="604" y1="308" x2="604" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <line x1="622" y1="308" x2="622" y2="344" stroke="#64748b" stroke-width="1.8"/>
   <text x="575" y="376" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">DIV</text>
-  <text x="575" y="394" font-size="9.5" fill="#64748b" text-anchor="middle">6 跨膜（S1–S6）</text>
   <text x="365" y="244" font-size="11.5" fill="#be185d" text-anchor="middle" font-weight="700">P 环拼成选择性滤器（DEKA 基序）</text>
   <line x1="365" y1="252" x2="365" y2="296" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr-enz)"/>
   <text x="190" y="216" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">S4：电压传感器（红色）</text>
@@ -72,8 +68,8 @@
   <line x1="436" y1="400" x2="376" y2="360" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
   <text x="470" y="396" font-size="10.5" fill="#831843">开放后约 1 ms 内塞住胞内侧孔口</text>
   <text x="470" y="410" font-size="10.5" fill="#831843">（DIII–DIV 连接环）</text>
-  <text x="86" y="424" font-size="10.5" fill="#475569">激活（S4 外携）与失活（IFM 塞孔）</text>
-  <text x="86" y="438" font-size="10.5" fill="#475569">是两把彼此独立的锁。</text>
+  <text x="86" y="424" font-size="10.5" fill="#475569">每域 6 跨膜（S1–S6）；激活（S4 外携）与失活</text>
+  <text x="86" y="438" font-size="10.5" fill="#475569">（IFM 塞孔）是两把独立的锁。</text>
   <rect x="800" y="180" width="540" height="120" rx="9" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.6"/>
   <text x="820" y="210" font-size="14.5" fill="#075985" font-weight="700">S4：电压传感器</text>
   <text x="820" y="234" font-size="11.5" fill="#475569">每隔三个残基一个碱性氨基酸；去极化时正电残基外携，</text>
@@ -108,7 +104,7 @@
   <rect x="240" y="640" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="515" y="663.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">快：IFM 球塞孔（约 1 ms）</text>
   <rect x="790" y="640" width="550" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1065" y="663.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">慢（C 型失活）——去极化期间持续外流</text>
+  <text x="1065" y="663.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">慢或无（Shaker 为 N 型球链）——去极化期间持续外流</text>
   <rect x="100" y="676" width="1240" height="36" fill="#f8fafc" fill-opacity="0.85"/>
   <rect x="100" y="676" width="140" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="170" y="699.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">电位贡献</text>
@@ -133,5 +129,6 @@
   <rect x="1050" y="800" width="300" height="160" rx="9" fill="#fee2e2" fill-opacity="0.45" stroke="#dc2626" stroke-width="1.6"/>
   <text x="1200" y="830" font-size="14.5" fill="#dc2626" text-anchor="middle" font-weight="700">通道病：临床回声</text>
   <text x="1072" y="858" font-size="11.5" fill="#475569">SCN1A → 癫痫；SCN4A → 周期性麻痹；</text>
-  <text x="1072" y="875" font-size="11.5" fill="#475569">KCNQ2/3 → 新生儿癫痫——结构-功能映射的临床级证据。</text>
+  <text x="1072" y="875" font-size="11.5" fill="#475569">KCNQ2/3 → 新生儿癫痫，</text>
+  <text x="1072" y="892" font-size="11.5" fill="#475569">结构-功能映射的临床级证据。</text>
 </svg>

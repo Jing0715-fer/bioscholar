@@ -5,17 +5,17 @@ const draw = (b: B) => {
   // ============ 一、Taq 与 PCR ============
   b.panel(30, 132, 660, 300, { title: '一、嗜热菌的经典馈赠：Taq DNA 聚合酶与 PCR' })
 
-  b.timelineH(70, 242, 580, [
-    { at: 0.08, label: '1960 年代', sub: 'Brock 分离', above: true, c: C.dna },
-    { at: 0.55, label: '1980 年代中期', sub: '引入 PCR', above: false, c: C.acc },
+  b.timelineH(70, 210, 580, [
+    { at: 0.08, label: '1960 年代', sub: 'Brock 分离', above: false, c: C.dna },
+    { at: 0.45, label: '1980 年代中期', sub: '引入 PCR', above: false, c: C.acc },
     { at: 0.88, label: '1993', sub: 'Mullis 获诺奖', above: true, c: C.pro },
   ], { title: '从黄石热泉到诺贝尔奖' })
-  b.wtext(60, 260, 'Thomas Brock 从黄石公园约 70–80 ℃ 热泉分离嗜热水生栖热菌（Thermus aquaticus）——当时教科书仍断言生命不能在如此高温存活。', { size: 10.5, fill: C.sub, maxW: 240, lh: 15 })
+  b.wtext(60, 300, 'Thomas Brock 从黄石公园约 70–80 ℃ 热泉分离嗜热水生栖热菌（Thermus aquaticus）——当时教科书仍断言生命不能在如此高温存活。', { size: 10.5, fill: C.sub, maxW: 620, lh: 15 })
 
-  b.rect(50, 316, 610, 96, { fill: C.accL, fillOp: 0.4, stroke: C.acc, sw: 1.5, rx: 9 })
-  b.text(70, 340, 'Taq DNA 聚合酶', { size: 13, weight: 700, fill: C.accD })
-  b.wtext(70, 364, '最适延伸约 72 ℃、95 ℃ 下半衰期约 40 分钟——恰可耐受 PCR 每轮变性高温，使程序化自动循环成为可能。', { size: 11, fill: C.sub, maxW: 570, lh: 16 })
-  b.ctext(355, 424, '增殖温度纪录：Methanopyrus 约 122 ℃', { size: 11, weight: 700, fill: C.bad })
+  b.rect(50, 356, 610, 70, { fill: C.accL, fillOp: 0.4, stroke: C.acc, sw: 1.5, rx: 9 })
+  b.text(70, 380, 'Taq DNA 聚合酶', { size: 13, weight: 700, fill: C.accD })
+  b.wtext(70, 402, '最适延伸约 72 ℃、95 ℃ 下半衰期约 40 分钟——恰可耐受 PCR 每轮变性高温，使程序化自动循环成为可能。', { size: 11, fill: C.sub, maxW: 570, lh: 16 })
+  b.ctext(360, 340, '增殖温度纪录：Methanopyrus 约 122 ℃', { size: 11, weight: 700, fill: C.bad })
 
   // ============ 二、嗜盐古菌 ============
   b.panel(710, 132, 660, 300, { title: '二、嗜盐古菌：「从盐里长出来的生命」' })
@@ -58,7 +58,7 @@ const draw = (b: B) => {
       ['高压', '蛋白与膜受压形变', '膜流动对策与柔性蛋白平衡', '深海嗜压菌'],
     ],
   })
-  b.wtext(60, 722, '四大通用设计：四醚单层膜 · 相容溶质 · 反向转运维持胞内中性 · 蛋白刚性柔性平衡。', { size: 11.5, weight: 700, fill: C.ink, maxW: 1280 })
+  b.wtext(60, 726, '四大通用设计：四醚单层膜 · 相容溶质 · 反向转运维持胞内中性 · 蛋白刚性柔性平衡。', { size: 11.5, weight: 700, fill: C.ink, maxW: 1250, lh: 16 })
 
   // ============ 四、极端环境与天体生物学 ============
   b.panel(30, 756, 1340, 224, { title: '四、极端环境与天体生物学：生命边界的地球参照系' })

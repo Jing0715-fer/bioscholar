@@ -117,8 +117,8 @@ const draw = (b: B) => {
     b.circle(x, 592, 5, { fill: C.dna })
     b.rect(x - 6, 566, 12, 12, { fill: C.warnL, stroke: C.warn, sw: 1.2, rx: 3 })
   }
-  b.wtext(730, 612, '（双层流动区：不饱和磷脂弯曲链）', { size: 10.5, fill: C.mute, maxW: 106, lh: 14 })
-  b.ctext(954, 626, '（脂筏：鞘磷脂 + 饱和磷脂 + 胆固醇）', { size: 10.5, fill: C.ok })
+  b.text(730, 626, '（双层流动区：不饱和磷脂弯曲链）', { size: 10.5, fill: C.mute })
+  b.ctext(954, 640, '（脂筏：鞘磷脂 + 饱和磷脂 + 胆固醇）', { size: 10.5, fill: C.ok })
   b.wtext(730, 656, '脂筏微区富集信号分子，参与信号转导与膜运输。', { size: 11.5, fill: C.sub, maxW: 620, lh: 16 })
   // Frye–Edidin 融合实验
   b.text(730, 706, '膜蛋白侧向扩散的经典证据（人 · 鼠细胞融合实验）：', { size: 12.5, weight: 700, fill: C.ink })

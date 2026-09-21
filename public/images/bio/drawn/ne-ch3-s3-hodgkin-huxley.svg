@@ -15,64 +15,62 @@
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Hodgkin-Huxley 模型：电压钳、门控变量与手摇计算机上的奇迹</text>
   <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">枪乌贼巨轴突直径0.5–1mm；1939年测得超射+40mV否定Bernstein膜学说，1949年钠假说登场；胆碱置换（后用TTX/TEA）分离出快失活的I_Na与持续延迟的I_K；g_Na=</text>
-  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">ḡ_Na·m³h、g_K=ḡ_K·n⁴（E_Na=+50、E_K=−77、E_l=−54.4mV）；数值积分重现波形与传导速度（计算约18.7m/s对实测约21m/s），1963年三人共获诺奖</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">g<tspan dy="-9.9" font-size="13.6" dx="-8.8">¯</tspan><tspan dy="9.9" dx="8.8">_Na·m</tspan><tspan dy="-5.8" font-size="12.2">3</tspan><tspan dy="5.8">h、g_K=g</tspan><tspan dy="-9.9" font-size="13.6" dx="-8.8">¯</tspan><tspan dy="9.9" dx="8.8">_K·n</tspan><tspan dy="-5.8" font-size="12.2">4</tspan><tspan dy="5.8">（E_Na=+50、E_K=−77、E_l=−54.4mV）；数值积分重现波形与传导速度（计算约18.7m/s对实测约21m/s），1963年三人共获诺奖</tspan></text>
   <rect x="30" y="132" width="700" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、枪乌贼巨轴突：大自然送来的实验台</text>
   <rect x="60" y="176" width="640" height="52" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.4"/>
   <text x="78" y="196" font-size="11.5" fill="#075985">直径 0.5–1 mm、肉眼可见、可插入电极的神经纤维——本是枪乌贼喷水推进的高速信号线。</text>
-  <rect x="75.5894" y="255.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="96" y="267.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1902</text>
-  <text x="146" y="268" font-size="11" fill="#475569">Bernstein 膜学说：兴奋时膜「崩塌」，电位向零坍塌——无法容纳超射</text>
-  <rect x="75.5894" y="295.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="96" y="307.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1939</text>
-  <text x="146" y="308" font-size="11" fill="#475569">Hodgkin &amp; Huxley 微电极刺入巨轴突：测得超射 +40 mV，旧说当场失效</text>
-  <rect x="75.5894" y="335.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="96" y="347.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1949</text>
-  <text x="146" y="348" font-size="11" fill="#475569">钠假说登场：兴奋时膜转为对 Na⁺ 通透，电位冲向 E_Na</text>
-  <rect x="66.07220000000001" y="375.075" width="59.855599999999995" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="96" y="387.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1947–52</text>
-  <text x="146" y="388" font-size="11" fill="#475569">电压钳系列实验：把放电问题化为各钳位电压下的电流测量</text>
-  <rect x="90" y="310" width="260" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="90" y1="437.5" x2="350" y2="437.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="155" y1="480" x2="155" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="395" x2="350" y2="395" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="220" y1="480" x2="220" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="352.5" x2="350" y2="352.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="285" y1="480" x2="285" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="110.8" y1="480" x2="110.8" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="110.8" y="502" font-size="13" fill="#64748b" text-anchor="middle">去极化钳位</text>
-  <line x1="324" y1="480" x2="324" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="324" y="502" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
-  <line x1="84" y1="463" x2="90" y2="463" stroke="#475569" stroke-width="1.8"/>
-  <text x="80" y="467" font-size="13" fill="#64748b" text-anchor="end">0</text>
-  <line x1="84" y1="327" x2="90" y2="327" stroke="#475569" stroke-width="1.8"/>
-  <text x="80" y="331" font-size="13" fill="#64748b" text-anchor="end">大</text>
-  <text x="220" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">钳位时间</text>
-  <path d="M110.8,471.5 C112.5,449.7 116.0,364.7 121.2,340.6 C126.4,316.5 132.0,317.9 142,327 C152.0,336.1 168.0,376.6 181,395 C194.0,413.4 204.8,426.2 220,437.5 C235.2,448.8 254.7,457.1 272,463 C289.3,468.9 315.3,471.5 324,473.2" fill="none" stroke="#dc2626" stroke-width="2.6"/>
-  <text x="220" y="310" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">I_Na：快起 · 自我失活</text>
-  <rect x="400" y="310" width="250" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="400" y1="437.5" x2="650" y2="437.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="462.5" y1="480" x2="462.5" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="400" y1="395" x2="650" y2="395" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="525" y1="480" x2="525" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="400" y1="352.5" x2="650" y2="352.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="587.5" y1="480" x2="587.5" y2="310" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="420" y1="480" x2="420" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="420" y="502" font-size="13" fill="#64748b" text-anchor="middle">去极化钳位</text>
-  <line x1="625" y1="480" x2="625" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="625" y="502" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
-  <line x1="394" y1="463" x2="400" y2="463" stroke="#475569" stroke-width="1.8"/>
-  <text x="390" y="467" font-size="13" fill="#64748b" text-anchor="end">0</text>
-  <line x1="394" y1="327" x2="400" y2="327" stroke="#475569" stroke-width="1.8"/>
-  <text x="390" y="331" font-size="13" fill="#64748b" text-anchor="end">大</text>
-  <text x="525" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">钳位时间</text>
-  <path d="M420,476.6 C425.0,474.3 438.8,470.9 450,463 C461.3,455.1 475.0,441.8 487.5,429 C500.0,416.3 510.4,398.4 525,386.5 C539.6,374.6 558.3,364.1 575,357.6 C591.7,351.1 612.5,349.7 625,347.4 C637.5,345.1 645.8,344.6 650,344" fill="none" stroke="#0f766e" stroke-width="2.6"/>
-  <text x="525" y="310" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">I_K：慢起 · 持续</text>
-  <text x="385" y="546" font-size="11" fill="#475569" text-anchor="middle">胆碱置换（后用 TTX / TEA）分离两种电流——两张时间表暗含动作电位剧本</text>
+  <rect x="75.5894" y="243.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="255.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1902</text>
+  <text x="146" y="256" font-size="11" fill="#475569">Bernstein 膜学说：兴奋时膜「崩塌」，电位向零坍塌——无法容纳超射</text>
+  <rect x="75.5894" y="277.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="289.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1939</text>
+  <text x="146" y="290" font-size="11" fill="#475569">Hodgkin &amp; Huxley 微电极刺入巨轴突：测得超射 +40 mV，旧说当场失效</text>
+  <rect x="75.5894" y="311.075" width="40.821200000000005" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="323.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1949</text>
+  <text x="146" y="324" font-size="11" fill="#475569">钠假说登场：兴奋时膜转为对 Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 通透，电位冲向 E_Na</tspan></text>
+  <rect x="66.07220000000001" y="345.075" width="59.855599999999995" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="96" y="357.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">1947–52</text>
+  <text x="146" y="358" font-size="11" fill="#475569">电压钳系列实验：把放电问题化为各钳位电压下的电流测量</text>
+  <rect x="90" y="400" width="260" height="100" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="475" x2="350" y2="475" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="155" y1="500" x2="155" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="450" x2="350" y2="450" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="220" y1="500" x2="220" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="425" x2="350" y2="425" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="285" y1="500" x2="285" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="110.8" y1="500" x2="110.8" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="110.8" y="522" font-size="13" fill="#64748b" text-anchor="middle">去极化钳位</text>
+  <line x1="324" y1="500" x2="324" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="324" y="522" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="84" y1="490" x2="90" y2="490" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="494" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="84" y1="410" x2="90" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="414" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <path d="M110.8,495 C112.5,482.2 116.0,432.2 121.2,418 C126.4,403.8 132.0,404.7 142,410 C152.0,415.3 168.0,439.2 181,450 C194.0,460.8 204.8,468.3 220,475 C235.2,481.7 254.7,486.5 272,490 C289.3,493.5 315.3,495.0 324,496" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="220" y="384" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">I_Na：快起 · 自我失活</text>
+  <rect x="400" y="400" width="250" height="100" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="400" y1="475" x2="650" y2="475" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="462.5" y1="500" x2="462.5" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="450" x2="650" y2="450" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="525" y1="500" x2="525" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="400" y1="425" x2="650" y2="425" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="587.5" y1="500" x2="587.5" y2="400" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="420" y1="500" x2="420" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="420" y="522" font-size="13" fill="#64748b" text-anchor="middle">去极化钳位</text>
+  <line x1="625" y1="500" x2="625" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="625" y="522" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
+  <line x1="394" y1="490" x2="400" y2="490" stroke="#475569" stroke-width="1.8"/>
+  <text x="390" y="494" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="394" y1="410" x2="400" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <text x="390" y="414" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <path d="M420,498 C425.0,496.7 438.8,494.7 450,490 C461.3,485.3 475.0,477.5 487.5,470 C500.0,462.5 510.4,452.0 525,445 C539.6,438.0 558.3,431.8 575,428 C591.7,424.2 612.5,423.3 625,422 C637.5,420.7 645.8,420.3 650,420" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="525" y="384" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">I_K：慢起 · 持续</text>
+  <text x="385" y="544" font-size="11" fill="#475569" text-anchor="middle">胆碱置换（后用 TTX / TEA）分离两种电流——两张时间表暗含动作电位剧本</text>
   <rect x="740" y="132" width="630" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、m、h、n：三个门控变量写成的方程</text>
   <rect x="770" y="178" width="570" height="62" rx="9" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
-  <text x="1055" y="204" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">g_Na = ḡ_Na · m³h　　g_K = ḡ_K · n⁴</text>
+  <text x="1055" y="204" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">g_Na = g<tspan dy="-9.9" font-size="13.6" dx="-8.8">¯</tspan><tspan dy="9.9" dx="8.8">_Na · m</tspan><tspan dy="-5.8" font-size="12.2">3</tspan><tspan dy="5.8">h　　g_K = g</tspan><tspan dy="-9.9" font-size="13.6" dx="-8.8">¯</tspan><tspan dy="9.9" dx="8.8">_K · n</tspan><tspan dy="-5.8" font-size="12.2">4</tspan></text>
   <text x="1055" y="230" font-size="10.5" fill="#475569" text-anchor="middle">m 快激活 · h 慢失活 · n 慢（四次方对应四聚体）</text>
   <rect x="770" y="258" width="76" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="808" y="285.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">门控变量</text>
@@ -148,11 +146,11 @@
   <circle cx="596" cy="630" r="4.5" fill="#dc2626"/>
   <circle cx="662.5" cy="756" r="4.5" fill="#dc2626"/>
   <circle cx="732.5" cy="810" r="4.5" fill="#dc2626"/>
-  <rect x="490" y="643.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="510.1" y="651.96" font-size="11" fill="#475569">模型（数值积分）</text>
-  <rect x="612.1" y="643.38" width="12.100000000000001" height="9.24" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="632.2" y="651.96" font-size="11" fill="#475569">实测散点</text>
-  <text x="645" y="872" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">重现：波形 · 阈值 · 不应期 · 传导速度</text>
+  <rect x="490" y="605.38" width="12.100000000000001" height="9.24" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="510.1" y="613.96" font-size="11" fill="#475569">模型（数值积分）</text>
+  <rect x="612.1" y="605.38" width="12.100000000000001" height="9.24" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="632.2" y="613.96" font-size="11" fill="#475569">实测散点</text>
+  <text x="645" y="888" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">重现：波形 · 阈值 · 不应期 · 传导速度</text>
   <rect x="900" y="636" width="440" height="120" rx="9" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.6"/>
   <text x="920" y="666" font-size="14.5" fill="#065f46" font-weight="700">1963 年诺贝尔生理学或医学奖</text>
   <text x="920" y="690" font-size="11.5" fill="#475569">Hodgkin、</text>

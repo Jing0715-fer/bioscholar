@@ -19,9 +19,9 @@ const draw = (b: B) => {
   for (let i = 0; i < 8; i++) b.rect(62 + i * 14, 320, 10, 9, { fill: C.rnaL, stroke: C.rna, sw: 1.2, rx: 2 })
   b.text(136, 300, 'n=5', { size: 9.5, fill: C.rnaD })
   b.text(178, 328, 'n=8', { size: 9.5, fill: C.rnaD })
-  b.ctext(120, 352, '等位间 (CA)ₙ 重复数不同', { size: 9.5, fill: C.mute })
+  b.ctext(120, 352, '等位间 (CA)_{n} 重复数不同', { size: 9.5, fill: C.mute })
   b.tag(216, 302, 'SSR / 微卫星', { fill: C.rnaL, stroke: C.rna, size: 14, weight: 700, tfill: C.rnaD, pad: 10 })
-  b.text(216, 330, '多态性来源：(CA)ₙ 等重复数变异', { size: 11.5, fill: C.sub })
+  b.text(216, 330, '多态性来源：(CA)_{n} 等重复数变异', { size: 11.5, fill: C.sub })
   b.text(216, 354, '检测：PCR + 电泳 ｜ 特点：多等位 · 共显性 · 基因组中丰富', { size: 11.5, fill: C.sub })
   // —— SNP 卡 ——
   b.rect(46, 378, 728, 92, { fill: '#ffffff', stroke: C.line, sw: 1.3, rx: 9 })
@@ -43,12 +43,12 @@ const draw = (b: B) => {
   // ============ 二、酵母双杂交（右上） ============
   b.panel(810, 132, 560, 408, { title: '二、酵母双杂交（Y2H）：体内检测蛋白-蛋白互作' })
   // —— Gal4 拆分 ——
-  b.rect(836, 156, 96, 30, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 6 })
-  b.ctext(884, 176, 'BD 结合域', { size: 12, weight: 700, fill: C.proD })
-  b.ctext(943, 176, '＋', { size: 15, weight: 700, fill: C.mute })
-  b.rect(950, 156, 96, 30, { fill: C.enzL, stroke: C.enz, sw: 1.8, rx: 6 })
-  b.ctext(998, 176, 'AD 激活域', { size: 12, weight: 700, fill: C.enzD })
-  b.wtext(1068, 172, '转录因子 Gal4 拆分为两个可独立融合的结构域', { size: 11.5, fill: C.sub, maxW: 280, lh: 17 })
+  b.rect(836, 162, 96, 30, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 6 })
+  b.ctext(884, 182, 'BD 结合域', { size: 12, weight: 700, fill: C.proD })
+  b.ctext(943, 182, '＋', { size: 15, weight: 700, fill: C.mute })
+  b.rect(950, 162, 96, 30, { fill: C.enzL, stroke: C.enz, sw: 1.8, rx: 6 })
+  b.ctext(998, 182, 'AD 激活域', { size: 12, weight: 700, fill: C.enzD })
+  b.wtext(1068, 178, '转录因子 Gal4 拆分为两个可独立融合的结构域', { size: 11.5, fill: C.sub, maxW: 280, lh: 17 })
   // —— 主体示意 ——
   b.line(840, 430, 1340, 430, { stroke: C.dna, sw: 3 })
   b.rect(884, 416, 56, 28, { fill: C.proL, stroke: C.pro, sw: 1.8, rx: 3 })
@@ -59,6 +59,7 @@ const draw = (b: B) => {
   b.ctext(911, 389, 'BD', { size: 11.5, weight: 700, fill: C.proD })
   b.rect(944, 372, 92, 26, { fill: '#ffffff', stroke: C.pro, sw: 1.6, rx: 5 })
   b.ctext(990, 389, '诱饵蛋白 X', { size: 11.5, weight: 600, fill: C.ink })
+  b.line(936, 385, 944, 385, { stroke: C.pro, sw: 2 })
   b.arrow(911, 398, 911, 414, { stroke: C.pro, sw: 1.8, marker: 'pro' })
   b.rect(1082, 300, 92, 26, { fill: '#ffffff', stroke: C.rna, sw: 1.6, rx: 5 })
   b.ctext(1128, 317, '猎物蛋白 Y', { size: 11.5, weight: 600, fill: C.ink })
@@ -66,9 +67,9 @@ const draw = (b: B) => {
   b.ctext(1207, 317, 'AD', { size: 11.5, weight: 700, fill: C.enzD })
   b.line(1174, 313, 1182, 313, { stroke: C.mute, sw: 2 })
   b.line(1038, 384, 1078, 322, { stroke: C.sub, sw: 2.2, dash: '6 4' })
-  b.ctext(1028, 344, 'X–Y 互作？', { size: 11.5, weight: 700, fill: C.sub })
+  b.ctext(1016, 340, 'X–Y 互作？', { size: 11.5, weight: 700, fill: C.sub })
   b.path('M1207,330 C1160,384 1080,402 986,414', { stroke: C.enz, sw: 2, dash: '5 4', fill: 'none', marker: 'enz' })
-  b.ctext(1170, 388, 'AD 随互作归位 → 激活', { size: 11, weight: 600, fill: C.enzD })
+  b.ctext(1255, 388, 'AD 随互作归位 → 激活', { size: 11, weight: 600, fill: C.enzD })
   b.arrow(1010, 460, 1290, 460, { stroke: C.rna, sw: 2.6, marker: 'rna' })
   b.ctext(1150, 450, '报告基因表达', { size: 11.5, weight: 600, fill: C.rnaD })
   b.tag(1150, 490, '缺陷培养基上生长＝互作阳性（可筛 cDNA 文库）', { fill: C.okL, stroke: C.ok, size: 11.5, tfill: C.ok, pad: 9 })
@@ -78,18 +79,18 @@ const draw = (b: B) => {
   // ============ 三、EMSA 与 ChIP（左下） ============
   b.panel(30, 554, 860, 406, { title: '三、DNA-蛋白互作验证：EMSA（体外）与 ChIP（体内）' })
   // —— EMSA ——
-  b.text(302, 622, 'EMSA：凝胶迁移阻滞', { size: 14.5, weight: 700, fill: C.ink })
-  b.gel(56, 596, 240, 240, [
+  b.ctext(250, 604, 'EMSA：凝胶迁移阻滞', { size: 14.5, weight: 700, fill: C.ink })
+  b.gel(56, 612, 240, 212, [
     { label: '游离探针', bands: [[0.80, C.rna]] },
     { label: '+ 蛋白', bands: [[0.44, C.rna], [0.80, '#e7c998']] },
     { label: '+ 蛋白 + 抗体', bands: [[0.16, C.rna]] },
   ], { size: 11 })
-  b.text(302, 664, '← 超迁移（抗体）', { size: 11.5, weight: 700, fill: C.enzD })
-  b.text(302, 718, '← 阻滞带（复合物）', { size: 11.5, weight: 700, fill: C.sub })
-  b.wtext(56, 878, '① 标记 DNA 探针与蛋白结合 → 复合物在非变性凝胶中迁移变慢（阻滞带）', { size: 11.5, fill: C.sub, maxW: 400, lh: 19 })
-  b.wtext(56, 916, '② 加入特异性抗体产生「超迁移」确认蛋白身份——体外验证 DNA-蛋白互作', { size: 11.5, fill: C.sub, maxW: 400, lh: 19 })
+  b.text(302, 676, '← 超迁移（抗体）', { size: 11.5, weight: 700, fill: C.enzD })
+  b.text(302, 724, '← 阻滞带（复合物）', { size: 11.5, weight: 700, fill: C.sub })
+  b.wtext(56, 886, '① 标记 DNA 探针与蛋白结合 → 复合物在非变性凝胶中迁移变慢（阻滞带）', { size: 11.5, fill: C.sub, maxW: 400, lh: 19 })
+  b.wtext(56, 922, '② 加入特异性抗体产生「超迁移」确认蛋白身份——体外验证 DNA-蛋白互作', { size: 11.5, fill: C.sub, maxW: 400, lh: 19 })
   // —— ChIP ——
-  b.ctext(680, 582, 'ChIP：染色质免疫沉淀', { size: 14.5, weight: 700, fill: C.ink })
+  b.ctext(680, 604, 'ChIP：染色质免疫沉淀', { size: 14.5, weight: 700, fill: C.ink })
   const chipSteps = [
     '甲醛交联蛋白-DNA',
     '超声打断染色质（200–500 bp）',
@@ -98,43 +99,43 @@ const draw = (b: B) => {
     'qPCR（ChIP-qPCR）或测序（ChIP-seq）',
   ]
   chipSteps.forEach((s, i) => {
-    const y = 596 + i * 64
+    const y = 612 + i * 64
     b.rect(478, y, 400, 48, { fill: i === 4 ? C.accL : C.panel, stroke: i === 4 ? C.acc : C.line, sw: 1.5, rx: 8 })
     b.ctext(678, y + 29, s, { size: 12.5, fill: i === 4 ? C.accD : C.sub, weight: i === 4 ? 600 : 400 })
     if (i < 4) b.arrow(678, y + 50, 678, y + 62, { stroke: C.sub, sw: 2, marker: 'ink' })
   })
-  b.ctext(678, 938, '体内捕捉真实染色质环境中的蛋白-DNA 关联', { size: 11.5, fill: C.mute })
+  b.ctext(678, 948, '体内捕捉真实染色质环境中的蛋白-DNA 关联', { size: 11.5, fill: C.mute })
 
   // ============ 四、报告基因系统（右下） ============
   b.panel(910, 554, 460, 406, { title: '四、报告基因系统：量化启动子 / 增强子活性' })
-  b.wtext(926, 596, '将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：', { size: 11.5, fill: C.sub, maxW: 430 })
+  b.wtext(926, 600, '将调控元件克隆于报告基因上游，以报告分子活性读出元件强度：', { size: 11.5, fill: C.sub, maxW: 430 })
   // —— GFP ——
-  b.rect(926, 600, 430, 100, { fill: C.okL, stroke: C.ok, sw: 1.4, rx: 9, fillOp: 0.4 })
-  b.text(942, 624, 'GFP 绿色荧光蛋白', { size: 13.5, weight: 700, fill: C.ok })
-  b.wtext(942, 648, '来自水母，238 aa；Ser65-Tyr66-Gly67 自催化生色', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
-  b.wtext(942, 676, '无需底物 · 活细胞动态观测 · mCherry 等多色变体（2008 诺贝尔化学奖）', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
-  b.circle(1314, 646, 15, { fill: C.ok })
+  b.rect(926, 612, 430, 92, { fill: C.okL, stroke: C.ok, sw: 1.4, rx: 9, fillOp: 0.4 })
+  b.text(942, 634, 'GFP 绿色荧光蛋白', { size: 13.5, weight: 700, fill: C.ok })
+  b.wtext(942, 656, '来自水母，238 aa；Ser65-Tyr66-Gly67 自催化生色', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
+  b.wtext(942, 682, '无需底物 · 活细胞动态观测 · mCherry 等多色变体（2008 诺贝尔化学奖）', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
+  b.circle(1314, 654, 15, { fill: C.ok })
   for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1], [0.7, 0.7], [-0.7, -0.7], [0.7, -0.7], [-0.7, 0.7]] as [number, number][]) {
-    b.line(1314 + dx * 19, 646 + dy * 19, 1314 + dx * 27, 646 + dy * 27, { stroke: C.ok, sw: 1.4 })
+    b.line(1314 + dx * 19, 654 + dy * 19, 1314 + dx * 27, 654 + dy * 27, { stroke: C.ok, sw: 1.4 })
   }
   // —— 荧光素酶 ——
-  b.rect(926, 712, 430, 100, { fill: C.warnL, stroke: '#b45309', sw: 1.4, rx: 9, fillOp: 0.4 })
-  b.text(942, 736, '荧光素酶（luciferase）', { size: 13.5, weight: 700, fill: C.rnaD })
-  b.wtext(942, 760, '虫荧光素 + ATP + O₂ → 氧化虫荧光素 + 光（560 nm）', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
-  b.wtext(942, 788, '灵敏 · 线性范围宽 · 双荧光素酶（Firefly + Renilla）内参归一化', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
-  b.circle(1314, 758, 15, { fill: '#b45309' })
+  b.rect(926, 716, 430, 92, { fill: C.warnL, stroke: '#b45309', sw: 1.4, rx: 9, fillOp: 0.4 })
+  b.text(942, 738, '荧光素酶（luciferase）', { size: 13.5, weight: 700, fill: C.rnaD })
+  b.wtext(942, 760, '虫荧光素 + ATP + O_{2} → 氧化虫荧光素 + 光（560 nm）', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
+  b.wtext(942, 786, '灵敏 · 线性范围宽 · 双荧光素酶（Firefly + Renilla）内参归一化', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
+  b.circle(1314, 766, 15, { fill: '#b45309' })
   for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1], [0.7, 0.7], [-0.7, -0.7], [0.7, -0.7], [-0.7, 0.7]] as [number, number][]) {
-    b.line(1314 + dx * 19, 758 + dy * 19, 1314 + dx * 27, 758 + dy * 27, { stroke: '#b45309', sw: 1.4 })
+    b.line(1314 + dx * 19, 766 + dy * 19, 1314 + dx * 27, 766 + dy * 27, { stroke: '#b45309', sw: 1.4 })
   }
   // —— lacZ ——
-  b.rect(926, 824, 430, 100, { fill: C.accL, stroke: C.acc, sw: 1.4, rx: 9, fillOp: 0.4 })
-  b.text(942, 848, 'lacZ / β-半乳糖苷酶', { size: 13.5, weight: 700, fill: C.accD })
-  b.wtext(942, 872, 'X-gal 显色 · 组织化学定位经典', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
-  b.wtext(942, 900, 'GFP 融合蛋白：把「定位 - 动态 - 互作」带入活细胞时代', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
-  b.rect(1302, 856, 24, 24, { fill: C.acc, rx: 5 })
-  b.ctext(1314, 873, 'Z', { size: 12, weight: 700, fill: '#ffffff' })
+  b.rect(926, 820, 430, 92, { fill: C.accL, stroke: C.acc, sw: 1.4, rx: 9, fillOp: 0.4 })
+  b.text(942, 842, 'lacZ / β-半乳糖苷酶', { size: 13.5, weight: 700, fill: C.accD })
+  b.wtext(942, 864, 'X-gal 显色 · 组织化学定位经典', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
+  b.wtext(942, 890, 'GFP 融合蛋白：把「定位 - 动态 - 互作」带入活细胞时代', { size: 10.5, fill: C.sub, maxW: 320, lh: 16 })
+  b.rect(1302, 852, 24, 24, { fill: C.acc, rx: 5 })
+  b.ctext(1314, 869, 'Z', { size: 12, weight: 700, fill: '#ffffff' })
   // —— 收束 ——
-  b.wtext(926, 942, '报告基因与启动子缺失 / 突变分析结合＝顺式元件功能鉴定的标准流程；组学与测序给全景——现代分子生物学即「证据链的编织术」。', { size: 10, fill: C.mute, maxW: 430, lh: 15 })
+  b.wtext(926, 932, '报告基因与启动子缺失 / 突变分析结合＝顺式元件功能鉴定的标准流程；组学与测序给全景——现代分子生物学即「证据链的编织术」。', { size: 10, fill: C.mute, maxW: 430, lh: 15 })
 }
 
 export default scene({

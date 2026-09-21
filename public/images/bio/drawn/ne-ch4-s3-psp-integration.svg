@@ -19,12 +19,6 @@
   <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、EPSP 与 IPSP：突触后的两种货币</text>
   <rect x="120" y="180" width="500" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="120" y1="367.5" x2="620" y2="367.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="245" y1="430" x2="245" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="120" y1="305" x2="620" y2="305" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="370" y1="430" x2="370" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="120" y1="242.5" x2="620" y2="242.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="495" y1="430" x2="495" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
   <line x1="160" y1="430" x2="160" y2="436" stroke="#475569" stroke-width="1.8"/>
   <text x="160" y="452" font-size="13" fill="#64748b" text-anchor="middle">刺激 ①（兴奋性）</text>
   <line x1="330" y1="430" x2="330" y2="436" stroke="#475569" stroke-width="1.8"/>
@@ -38,9 +32,10 @@
   <line x1="114" y1="217.5" x2="120" y2="217.5" stroke="#475569" stroke-width="1.8"/>
   <text x="110" y="221.5" font-size="13" fill="#64748b" text-anchor="end">−65</text>
   <text x="370" y="474" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时间</text>
-  <text x="74" y="305" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位（mV）</text>
+  <text x="74" y="305" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="600">膜电位/mV</text>
   <rect x="120" y="305" width="500" height="125" fill="#e0f2fe" fill-opacity="0.15" stroke="none"/>
-  <text x="614" y="302" font-size="10.5" fill="#075985" text-anchor="end" font-weight="700">IPSP 的去向：E_Cl ≈ −70 ～ −80 mV</text>
+  <text x="430" y="385" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">IPSP 的去向：E_Cl ≈ −70 ～ −80 mV</text>
+  <line x1="430" y1="372" x2="430" y2="356" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-acc)"/>
   <path d="M160,280 C165.0,277.5 180.0,267.3 190,265 C200.0,262.7 206.7,265.0 220,266.25 C233.3,267.5 251.7,270.2 270,272.5 C288.3,274.8 305.0,278.8 330,280 C355.0,281.3 405.0,280.0 420,280" fill="none" stroke="#dc2626" stroke-width="2.6"/>
   <text x="236" y="252" font-size="11.5" fill="#dc2626" font-weight="700">单个 EPSP 仅 0.5–1 mV</text>
   <line x1="300" y1="258" x2="240" y2="270" stroke="#dc2626" stroke-width="1.3" marker-end="url(#arr-bad)"/>
@@ -50,49 +45,37 @@
   <text x="70" y="515" font-size="11" fill="#475569">或同一输入数十 Hz 连发、由时间总和积攒。IPSP 由 GABA（GABA_A 氯通道）或甘氨酸介导，多为超极化或「钉住不动」。</text>
   <rect x="740" y="132" width="630" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="756" y="154.84" font-size="19" fill="#475569" font-weight="700">二、反转电位 E_rev：电流方向的试金石</text>
-  <rect x="790" y="200" width="420" height="280" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="790" y1="410" x2="1210" y2="410" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="895" y1="480" x2="895" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="790" y1="340" x2="1210" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1000" y1="480" x2="1000" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="790" y1="270" x2="1210" y2="270" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="1105" y1="480" x2="1105" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="868.75" y1="480" x2="868.75" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="868.75" y="502" font-size="13" fill="#64748b" text-anchor="middle">−70</text>
-  <line x1="1052.5" y1="480" x2="1052.5" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="1052.5" y="502" font-size="13" fill="#64748b" text-anchor="middle">0</text>
-  <line x1="1131.25" y1="480" x2="1131.25" y2="486" stroke="#475569" stroke-width="1.8"/>
-  <text x="1131.25" y="502" font-size="13" fill="#64748b" text-anchor="middle">+30</text>
-  <line x1="784" y1="438" x2="790" y2="438" stroke="#475569" stroke-width="1.8"/>
-  <text x="780" y="442" font-size="13" fill="#64748b" text-anchor="end">内向</text>
-  <line x1="784" y1="340" x2="790" y2="340" stroke="#475569" stroke-width="1.8"/>
-  <text x="780" y="344" font-size="13" fill="#64748b" text-anchor="end">0</text>
-  <line x1="784" y1="242" x2="790" y2="242" stroke="#475569" stroke-width="1.8"/>
-  <text x="780" y="246" font-size="13" fill="#64748b" text-anchor="end">外向</text>
-  <text x="1000" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位 V_m（mV）</text>
-  <text x="744" y="340" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">突触电流</text>
-  <line x1="790" y1="340" x2="1210" y2="340" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="5 5"/>
-  <path d="M811.0,239.2 L1052.5,340.0 L1189.0,404.4" fill="none" stroke="#dc2626" stroke-width="2.4"/>
-  <circle cx="1053" cy="340" r="5" fill="#dc2626"/>
-  <text x="1080" y="300" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">E_rev(AMPA) ≈ 0 mV</text>
-  <path d="M811.0,384.8 L868.8,340.0 L1042.0,278.4" fill="none" stroke="#0369a1" stroke-width="2.4"/>
-  <circle cx="869" cy="340" r="5" fill="#0369a1"/>
-  <text x="880" y="372" font-size="11.5" fill="#075985" font-weight="700">E_rev(GABA_A) ≈ E_Cl</text>
-  <rect x="800" y="235.38" width="12.100000000000001" height="9.24" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="820.1" y="243.96" font-size="11" fill="#475569">AMPA 电流（Na⁺ 与 K⁺ 混透）</text>
-  <rect x="983.92" y="235.38" width="12.100000000000001" height="9.24" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="1004.02" y="243.96" font-size="11" fill="#475569">GABA_A 电流（Cl⁻）</text>
-  <text x="770" y="530" font-size="11.5" fill="#475569">E_rev 为各离子电池按电导的加权平均；V_m 在 E_rev 之上或之下，电流方向随之翻转。</text>
+  <rect x="830" y="200" width="420" height="280" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="908.75" y1="480" x2="908.75" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="908.75" y="502" font-size="13" fill="#64748b" text-anchor="middle">−70</text>
+  <line x1="1092.5" y1="480" x2="1092.5" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1092.5" y="502" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1171.25" y1="480" x2="1171.25" y2="486" stroke="#475569" stroke-width="1.8"/>
+  <text x="1171.25" y="502" font-size="13" fill="#64748b" text-anchor="middle">+30</text>
+  <line x1="824" y1="438" x2="830" y2="438" stroke="#475569" stroke-width="1.8"/>
+  <text x="820" y="442" font-size="13" fill="#64748b" text-anchor="end">内向</text>
+  <line x1="824" y1="340" x2="830" y2="340" stroke="#475569" stroke-width="1.8"/>
+  <text x="820" y="344" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="824" y1="242" x2="830" y2="242" stroke="#475569" stroke-width="1.8"/>
+  <text x="820" y="246" font-size="13" fill="#64748b" text-anchor="end">外向</text>
+  <text x="1040" y="524" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">膜电位 V_m（mV）</text>
+  <text x="784" y="300" font-size="13.5" fill="#475569" text-anchor="middle" font-weight="600">突触电流</text>
+  <line x1="830" y1="340" x2="1250" y2="340" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="5 5"/>
+  <path d="M851.0,239.2 L1092.5,340.0 L1229.0,404.4" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="1093" cy="340" r="5" fill="#dc2626"/>
+  <text x="1120" y="300" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">E_rev(AMPA) ≈ 0 mV</text>
+  <path d="M851.0,384.8 L908.8,340.0 L1082.0,278.4" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="909" cy="340" r="5" fill="#0369a1"/>
+  <text x="920" y="372" font-size="11.5" fill="#075985" font-weight="700">E_rev(GABA_A) ≈ E_Cl</text>
+  <rect x="840" y="213.38" width="12.100000000000001" height="9.24" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="860.1" y="221.96" font-size="11" fill="#475569">AMPA 电流（Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 与 K</tspan><tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 混透）</tspan></text>
+  <rect x="1020.0568" y="213.38" width="12.100000000000001" height="9.24" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1040.1568" y="221.96" font-size="11" fill="#475569">GABA_A 电流（Cl<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">）</tspan></text>
+  <text x="770" y="544" font-size="11.5" fill="#475569">E_rev 为各离子电池按电导的加权平均；V_m 在 E_rev 之上或之下，电流方向随之翻转。</text>
   <rect x="30" y="576" width="1340" height="402" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">三、时间与空间总和、轴突起始段的终审</text>
   <text x="240" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">时间总和：τ ≈ 5–20 ms 的限窗</text>
   <rect x="90" y="670" width="300" height="210" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
-  <line x1="90" y1="827.5" x2="390" y2="827.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="165" y1="880" x2="165" y2="670" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="775" x2="390" y2="775" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="240" y1="880" x2="240" y2="670" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="90" y1="722.5" x2="390" y2="722.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
-  <line x1="315" y1="880" x2="315" y2="670" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
   <line x1="114" y1="880" x2="114" y2="886" stroke="#475569" stroke-width="1.8"/>
   <line x1="240" y1="880" x2="240" y2="886" stroke="#475569" stroke-width="1.8"/>
   <text x="240" y="902" font-size="13" fill="#64748b" text-anchor="middle">时间 →</text>
@@ -105,7 +88,7 @@
   <path d="M90,859 C93.0,859.0 103.0,866.0 108,859 C113.0,852.0 115.0,821.9 120,817 C125.0,812.1 132.0,833.8 138,829.6 C144.0,825.4 150.0,796.7 156,791.8 C162.0,786.9 168.0,805.1 174,800.2 C180.0,795.3 186.0,767.3 192,762.4 C198.0,757.5 204.0,775.7 210,770.8 C216.0,765.9 222.0,738.3 228,733 C234.0,727.8 240.0,744.5 246,739.3 C252.0,734.0 259.0,711.3 264,701.5 C269.0,691.7 270.0,678.8 276,680.5 C282.0,682.3 288.5,696.3 300,712 C311.5,727.8 330.0,757.5 345,775 C360.0,792.5 382.5,810.0 390,817" fill="none" stroke="#0f766e" stroke-width="2.4"/>
   <path d="M90,859 C94.0,859.0 108.0,865.3 114,859 C120.0,852.7 120.0,824.0 126,821.2 C132.0,818.4 141.0,837.0 150,842.2 C159.0,847.5 170.0,850.3 180,852.7 C190.0,855.2 202.5,862.9 210,856.9 C217.5,850.9 217.5,820.1 225,817 C232.5,813.9 242.5,832.4 255,838 C267.5,843.6 277.5,847.1 300,850.6 C322.5,854.1 375.0,857.6 390,859" fill="none" stroke="#0369a1" stroke-width="2.2"/>
   <text x="310" y="664" font-size="11" fill="#134e4a" font-weight="700">数十 Hz 连发 → 叠加达阈</text>
-  <text x="150" y="790" font-size="11" fill="#075985" font-weight="700">低频 → 各自衰减</text>
+  <text x="320" y="830" font-size="11" fill="#075985" font-weight="700">低频 → 各自衰减</text>
   <text x="90" y="944" font-size="11" fill="#475569">同一输入数十 Hz 连发，EPSP 落在前一衰减尾巴上——积少成多；</text>
   <text x="90" y="959" font-size="11" fill="#475569">须数十个量子同步方能抵达阈值。</text>
   <text x="640" y="636" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">空间总和：电缆衰减定权重</text>
@@ -119,7 +102,7 @@
   <text x="710" y="654" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">近端 · 衰减少</text>
   <text x="470" y="770" font-size="11" fill="#475569">抑制的解剖位置本身就是计算变量：放在树突只压局部，</text>
   <text x="470" y="785" font-size="11" fill="#475569">放在胞体压全局；吊灯细胞的轴-轴突突更直接把守 AIS 闸门。</text>
-  <line x1="817" y1="716" x2="905" y2="716" stroke="#1e293b" stroke-width="2.4"/>
+  <line x1="817" y1="716" x2="872" y2="716" stroke="#1e293b" stroke-width="2.4"/>
   <rect x="830" y="704" width="26" height="24" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
   <text x="843" y="692" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">AIS</text>
   <text x="800" y="748" font-size="10.5" fill="#475569" text-anchor="middle">Nav 密度最高 · 阈值最低</text>

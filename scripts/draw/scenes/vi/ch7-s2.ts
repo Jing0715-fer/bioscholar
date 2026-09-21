@@ -15,7 +15,8 @@ const draw = (b: B) => {
   b.ctext(180, 356, 'Gag', { size: 9.5, weight: 700, fill: C.proD })
   b.arrow(180, 330, 180, 310, { stroke: C.pro, sw: 2, marker: 'pro' })
   b.ctext(180, 396, '衣壳蛋白只认带标签的 RNA', { size: 10.5, fill: C.sub })
-  b.wtext(50, 196, '包装特异性由两端答案合写：基因组上的顺式包装信号（茎环／位点）＋衣壳或核衣壳蛋白的识别——细胞 RNA 无标签，装不进去。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
+  b.wtext(50, 176, '包装特异性由两端答案合写：基因组上的顺式包装信号（茎环／位点）＋衣壳或核衣壳蛋白的识别——细胞 RNA 无标签，装不进去。', { size: 11, fill: C.sub, maxW: 620, lh: 16 })
+  b.text(50, 262, '基因组 RNA（单链）', { size: 10.5, weight: 700, fill: C.rnaD })
   b.wtext(50, 440, '包装信号常兼作复制／二聚化元件——「一物三用」是小基因组的常态。', { size: 11, fill: C.mute, maxW: 620, lh: 15 })
 
   // ============ 二、末端酶与门户：马达泵入 ============
@@ -23,18 +24,19 @@ const draw = (b: B) => {
   b.virion(880, 300, 46, { shape: 'icosahedral', stroke: C.bad })
   // 门户（唯一顶点）
   b.polygon([[858, 350], [902, 350], [894, 376], [866, 376]], { fill: C.proL, stroke: C.pro, sw: 2 })
-  b.ctext(880, 398, '12 聚体门户蛋白', { size: 10, weight: 700, fill: C.proD })
   // 末端酶马达
   b.rect(838, 414, 84, 34, { fill: C.enzL, stroke: C.enz, sw: 1.8, rx: 7 })
   b.ctext(880, 436, '末端酶', { size: 11, weight: 700, fill: C.enzD })
   b.ctext(880, 468, 'ATPase 马达', { size: 9.5, fill: C.mute })
   b.arrow(880, 410, 880, 384, { stroke: C.dna, sw: 2.6, marker: 'dna' })
+  b.line(894, 374, 906, 392, { stroke: C.pro, sw: 1.2, opacity: 0.55 })
+  b.ctext(945, 400, '12 聚体门户蛋白', { size: 10, weight: 700, fill: C.proD })
   b.dna(760, 431, 70, { stroke: C.dna, amp: 9, period: 44 })
   b.ctext(795, 458, ' concatenated', { size: 8.5, fill: C.mute })
   b.ctext(795, 470, 'DNA', { size: 9.5, fill: C.dnaD })
   b.arrow(834, 431, 836, 431, { stroke: C.dna, sw: 2, marker: 'dna' })
-  b.ctext(880, 250, '壳内浓度约 500 mg/mL', { size: 11, weight: 700, fill: C.bad })
-  b.ctext(880, 270, '内压达数十个大气压', { size: 11, weight: 700, fill: C.bad })
+  b.ctext(880, 214, '壳内浓度约 500 mg/mL', { size: 11, weight: 700, fill: C.bad })
+  b.ctext(880, 232, '内压达数十个大气压', { size: 11, weight: 700, fill: C.bad })
   b.wtext(1000, 210, '双链 DNA 靠水解 ATP 逆压泵入——壳内 DNA 浓度可与脱水晶体比肩，内压把它变成「上膛的弹簧」。', { size: 11, fill: C.sub, maxW: 340, lh: 16 })
   b.wtext(1000, 290, '高压的另一用途：感染时基因组经尾管「喷射」注入——包装能量在下一轮感染中释放。', { size: 11, fill: C.mute, maxW: 340, lh: 16 })
 
@@ -45,7 +47,7 @@ const draw = (b: B) => {
     b.rect(60 + k * 120, 664, 112, 18, { fill: C.dnaL, stroke: C.dna, sw: 1.4, rx: 5 })
     b.rect(168 + k * 120, 664, 12, 18, { fill: C.rnaL, stroke: C.rna, sw: 1.4 })
   }
-  b.ctext(360, 706, '连环体上的 cos 位点', { size: 10, fill: C.rna })
+  b.ctext(318, 706, '连环体上的 cos 位点', { size: 10, fill: C.rna })
   b.arrow(258, 690, 258, 716, { stroke: C.enz, sw: 1.8, marker: 'enz' })
   b.arrow(378, 690, 378, 716, { stroke: C.enz, sw: 1.8, marker: 'enz' })
   b.rect(230, 724, 176, 20, { fill: C.dnaL, stroke: C.dna, sw: 1.6, rx: 5 })

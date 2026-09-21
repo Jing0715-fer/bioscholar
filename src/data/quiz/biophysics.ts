@@ -161,7 +161,7 @@ export const biophysicsQuiz: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      '饱和链每增加一个 CH₂，Tm 升高约 5–8 °C（DSPC 18:0 为 55 °C，DMPC 14:0 为 24 °C）。顺式双键因刚性扭结阻碍密堆积而使 Tm 降低 20 °C 以上；缩短链也降低 Tm；胆固醇则宽化并最终消除相变，形成液态有序相。',
+      '饱和链每增加一个 CH₂，Tm 升高约 7–10 °C、随链长增长而递减（DSPC 18:0 为 55 °C，DMPC 14:0 为 24 °C）。顺式双键因刚性扭结阻碍密堆积而使 Tm 降低 20 °C 以上；缩短链也降低 Tm；胆固醇则宽化并最终消除相变，形成液态有序相。',
     difficulty: 1,
   },
   {
@@ -653,13 +653,13 @@ export const biophysicsQuiz: QuizQuestion[] = [
     question: '关于 DNA 数据存储，下列说法正确的是：',
     options: [
       '每个碱基可编码 1 bit 信息',
-      '4 种碱基相当于 4 进制字母表，每碱基 2 bit；1 g DNA 理论可存约 215 PB',
+      '4 种碱基相当于 4 进制字母表，每碱基 2 bit；2017 年 DNA fountain 实测逻辑密度约 215 PB/g',
       'DNA 存储必须把信息翻译成氨基酸序列',
       'DNA 存储的主要优势是随机读写速度快',
     ],
     answer: 1,
     explanation:
-      '4 种碱基 = 2 bit/碱基；理论密度约 215 PB/g（比硬盘高 6–7 个数量级）。实用方案以寡核苷酸为单位，含索引 + 载荷 + 纠错码（Reed–Solomon），须避免长同聚物与 GC 失衡。DNA 的优势是密度与持久性（归档冷存储），瓶颈恰是读写速度与随机寻址成本。',
+      '4 种碱基 = 2 bit/碱基；理论极限约 455 EB/g，2017 年 DNA fountain 策略实测逻辑密度约 215 PB/g（比硬盘高 6–7 个数量级）。实用方案以寡核苷酸为单位，含索引 + 载荷 + 纠错码（Reed–Solomon），须避免长同聚物与 GC 失衡。DNA 的优势是密度与持久性（归档冷存储），瓶颈恰是读写速度与随机寻址成本。',
     difficulty: 2,
   },
   {

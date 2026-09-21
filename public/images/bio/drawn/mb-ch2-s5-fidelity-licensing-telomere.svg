@@ -55,18 +55,18 @@
   <text x="760" y="372" font-size="12" fill="#dc2626">人类同源蛋白 MSH2/6、MLH1/PMS2 突变导致遗传性非息肉性结直肠癌（Lynch 综合征）。</text>
   <rect x="30" y="452" width="700" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、复制许可：一个细胞周期只复制一次</text>
-  <rect x="80" y="492" width="560" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="360" y="518" font-size="12.5" fill="#475569" text-anchor="middle">G₁ 期：ORC（起点识别复合体）结合复制起点</text>
-  <line x1="360" y1="536" x2="360" y2="544" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="80" y="548" width="560" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="360" y="574" font-size="12.5" fill="#475569" text-anchor="middle">Cdc6 与 Cdt1 加载 MCM2-7 解旋酶 → pre-RC（获得许可）</text>
-  <line x1="360" y1="592" x2="360" y2="600" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="80" y="604" width="560" height="42" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
-  <text x="360" y="630" font-size="12.5" fill="#475569" text-anchor="middle">S 期：CDK 与 DDK 激酶激活 MCM，起始复制</text>
-  <line x1="360" y1="648" x2="360" y2="656" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <rect x="80" y="660" width="560" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="360" y="686" font-size="12.5" fill="#475569" text-anchor="middle">Geminin 与降解机制清除许可因子 → 待下一 G₁ 期重新许可</text>
-  <text x="80" y="716" font-size="12" fill="#64748b">「许可因子一次性消耗」的逻辑防止重复复制。</text>
+  <rect x="80" y="484" width="560" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="360" y="510" font-size="12.5" fill="#475569" text-anchor="middle">G₁ 期：ORC（起点识别复合体）结合复制起点</text>
+  <line x1="360" y1="528" x2="360" y2="536" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="538" width="560" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="360" y="564" font-size="12.5" fill="#475569" text-anchor="middle">Cdc6 与 Cdt1 加载 MCM2-7 解旋酶 → pre-RC（获得许可）</text>
+  <line x1="360" y1="582" x2="360" y2="590" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="592" width="560" height="42" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="618" font-size="12.5" fill="#475569" text-anchor="middle">S 期：CDK 与 DDK 激酶激活 MCM，起始复制</text>
+  <line x1="360" y1="636" x2="360" y2="644" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="80" y="646" width="560" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="360" y="672" font-size="12.5" fill="#475569" text-anchor="middle">Geminin 与降解机制清除许可因子 → 待下一 G₁ 期重新许可</text>
+  <text x="80" y="700" font-size="12" fill="#64748b">「许可因子一次性消耗」的逻辑防止重复复制。</text>
   <rect x="740" y="452" width="630" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="756" y="474.84" font-size="19" fill="#475569" font-weight="700">四、末端复制问题与端粒酶（Blackburn 与 Greider，1985）</text>
   <text x="1010" y="490" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">端粒酶：TERT（逆转录酶）+ TER（RNA 模板）</text>
@@ -80,13 +80,13 @@
   <text x="1155" y="624" font-size="9.5" fill="#78350f" text-anchor="middle">RNA 引物</text>
   <line x1="1148" y1="634" x2="1162" y2="646" stroke="#dc2626" stroke-width="2.2"/>
   <line x1="1148" y1="646" x2="1162" y2="634" stroke="#dc2626" stroke-width="2.2"/>
-  <text x="1155" y="604" font-size="10.5" fill="#dc2626" text-anchor="middle">引物切除</text>
+  <text x="1155" y="656" font-size="10.5" fill="#dc2626" text-anchor="middle">引物切除</text>
   <line x1="1184" y1="580" x2="1330" y2="580" stroke="#0f766e" stroke-width="2.4" marker-end="url(#arr-dna)"/>
   <text x="1257" y="566" font-size="10.5" fill="#134e4a" text-anchor="middle">TTAGGG 延伸</text>
-  <path d="M 1120,649 Q 1120,640 1129,640 M 1171,640 Q 1180,640 1180,649" fill="none" stroke="#64748b" stroke-width="1.7"/>
-  <line x1="1129" y1="640" x2="1171" y2="640" stroke="#64748b" stroke-width="1.7"/>
-  <text x="1150" y="664" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="600">末端复制问题</text>
-  <text x="760" y="690" font-size="11.5" fill="#475569">核糖核蛋白，以 3′ 端突出单链为引物反复回折延伸端粒重复序列（人端粒为 5′-TTAGGG-3′ 串联）。</text>
+  <path d="M 1120,677 Q 1120,668 1129,668 M 1171,668 Q 1180,668 1180,677" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="1129" y1="668" x2="1171" y2="668" stroke="#64748b" stroke-width="1.7"/>
+  <text x="1150" y="692" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="600">末端复制问题</text>
+  <text x="760" y="712" font-size="11.5" fill="#475569">核糖核蛋白，以 3′ 端突出单链为引物反复回折延伸端粒重复序列（人端粒为 5′-TTAGGG-3′ 串联）。</text>
   <rect x="30" y="732" width="1340" height="238" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="754.84" font-size="19" fill="#475569" font-weight="700">五、端粒的生理意义：衰老、干细胞与肿瘤</text>
   <rect x="56" y="786" width="400" height="100" rx="10" fill="#f1f5f9" fill-opacity="0.55" stroke="#64748b" stroke-width="1.8"/>

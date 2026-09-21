@@ -14,8 +14,8 @@
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">tRNA 结构与氨酰-tRNA 合成酶</text>
-  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">三叶草二级结构折叠为倒L形——3′-CCA与反密码子分居两端（相距约7nm）；aaRS两步反应（aa-AMP中间体，I类2′-OH/II类3′-OH），双筛校对使IleRS的Val误入从10⁻²</text>
-  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">降至10⁻⁵以下</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">三叶草二级结构折叠为倒L形——3′-CCA与反密码子分居两端（相距约7nm）；aaRS两步反应（aa-AMP中间体，I类2′-OH/II类3′-OH），双筛校对使IleRS的Val误入从10<tspan dy="-5.8" font-size="12.2">-2</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">降至10<tspan dy="-5.8" font-size="12.2">-5</tspan><tspan dy="5.8">以下</tspan></text>
   <rect x="30" y="132" width="640" height="448" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、二级结构：三叶草形（70～90 nt）</text>
   <line x1="316" y1="215" x2="316" y2="345" stroke="#b45309" stroke-width="2"/>
@@ -130,7 +130,7 @@
   <rect x="318" y="645" width="128" height="44" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
   <text x="382" y="663" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">aa-AMP</text>
   <text x="382" y="680" font-size="9" fill="#475569" text-anchor="middle">氨酰-腺苷酸</text>
-  <text x="454" y="672" font-size="11.5" fill="#475569" font-weight="600">+ PPᵢ</text>
+  <text x="454" y="672" font-size="11.5" fill="#475569" font-weight="600">+ PP<tspan dy="2.5" font-size="8.3">i</tspan></text>
   <text x="56" y="724" font-size="12.5" fill="#831843" font-weight="700">② 转移</text>
   <rect x="122" y="708" width="92" height="30" rx="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
   <text x="168" y="728" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">aa-AMP</text>
@@ -167,22 +167,22 @@
   <text x="716" y="652" font-size="11" fill="#475569" font-weight="600">第一筛：催化腔经几何排阻排除过大的氨基酸（不能进入活化）</text>
   <ellipse cx="960" cy="730" rx="140" ry="68" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
   <text x="960" y="690" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">IleRS</text>
-  <rect x="886" y="706" width="96" height="50" rx="5" fill="#ffffff" stroke="#be185d" stroke-width="1.7"/>
+  <rect x="886" y="704" width="96" height="54" rx="5" fill="#ffffff" stroke="#be185d" stroke-width="1.7"/>
   <text x="934" y="724" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">催化腔</text>
-  <text x="934" y="742" font-size="9" fill="#475569" text-anchor="middle">大·第一筛</text>
-  <rect x="1006" y="706" width="96" height="50" rx="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.7"/>
+  <text x="934" y="744" font-size="10" fill="#475569" text-anchor="middle">大·第一筛</text>
+  <rect x="1006" y="704" width="96" height="54" rx="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.7"/>
   <text x="1054" y="724" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">编辑腔</text>
-  <text x="1054" y="742" font-size="9" fill="#475569" text-anchor="middle">小·第二筛</text>
+  <text x="1054" y="744" font-size="10" fill="#475569" text-anchor="middle">小·第二筛</text>
   <line x1="984" y1="731" x2="1004" y2="731" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
-  <text x="994" y="698" font-size="8.5" fill="#475569" text-anchor="middle">副底物转入</text>
+  <text x="994" y="722" font-size="9.5" fill="#475569" text-anchor="middle">转入</text>
   <circle cx="770" cy="690" r="16" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
   <text x="770" y="693.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">Ile</text>
   <line x1="790" y1="690" x2="884" y2="716" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
-  <text x="834" y="676" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="600">✓ 正确底物</text>
-  <circle cx="770" cy="748" r="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
-  <text x="770" y="751.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Val</text>
-  <line x1="790" y1="748" x2="884" y2="744" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
-  <text x="834" y="770" font-size="9.5" fill="#d97706" text-anchor="middle" font-weight="600">比 Ile 小·误活化</text>
+  <text x="834" y="672" font-size="10" fill="#059669" text-anchor="middle" font-weight="600">正确底物 ✓</text>
+  <circle cx="770" cy="752" r="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="770" y="755.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Val</text>
+  <line x1="790" y1="752" x2="884" y2="744" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="834" y="774" font-size="10" fill="#d97706" text-anchor="middle" font-weight="600">比 Ile 小·误活化</text>
   <line x1="934" y1="756" x2="934" y2="792" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
   <text x="934" y="816" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">Ile-tRNA ✓ 产物</text>
   <line x1="1054" y1="756" x2="1054" y2="792" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
@@ -191,7 +191,7 @@
   <text x="1128" y="700" font-size="10.5" fill="#475569">· 第一筛：过大者进不了催化腔</text>
   <text x="1128" y="730" font-size="10.5" fill="#475569">· 第二筛：过小的副底物在编辑腔被水解</text>
   <text x="1128" y="760" font-size="10.5" fill="#475569">· 「恰好 Ile」通过两筛 → 正确酰化</text>
-  <text x="1010" y="846" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">Val 误入频率：10⁻² → 10⁻⁵ 以下（pre / post-transfer editing）</text>
+  <text x="1010" y="846" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">Val 误入频率：10<tspan dy="-3.9" font-size="8.3">-2</tspan><tspan dy="3.9"> → 10</tspan><tspan dy="-3.9" font-size="8.3">-5</tspan><tspan dy="3.9"> 以下（pre / post-transfer editing）</tspan></text>
   <text x="716" y="870" font-size="10.5" fill="#475569">ThrRS 编辑 Ser、PheRS 编辑 Tyr 遵循同一逻辑；tRNA 结合还诱导酶构象校验（诱导契合）协同保真。</text>
   <rect x="716" y="890" width="620" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.2"/>
   <text x="730" y="910" font-size="10.5" fill="#475569">药物靶点：莫匹罗星特异抑制细菌 IleRS（外用抗生素经典）；</text>

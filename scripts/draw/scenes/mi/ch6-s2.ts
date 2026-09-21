@@ -21,7 +21,7 @@ const draw = (b: B) => {
   b.arrow(268, 384, 278, 384, { stroke: C.enz, sw: 2, marker: 'enz' })
   b.ctext(186, 308, 'NAD⁺', { size: 11, weight: 700, fill: C.enzD })
   b.path('M 398 384 C 452 380, 452 232, 396 232', { stroke: C.enz, sw: 2, dash: '6 4' })
-  b.ctext(452, 262, 'NADH', { size: 11, weight: 700, fill: C.enzD })
+  b.ctext(470, 272, 'NADH', { size: 11, weight: 700, fill: C.enzD })
   b.ctext(330, 452, '总反应：1 葡萄糖 → 2 乙醇 + 2 CO₂（净得 2 ATP）', { size: 11.5, weight: 700, fill: C.sub })
   // 甘油支路
   b.tag(170, 346, '亚硫酸氢盐固定乙醛', { fill: C.badL, stroke: C.bad, size: 9.5, weight: 700, tfill: C.bad, pad: 7 })

@@ -43,7 +43,7 @@ const draw = (b: B) => {
   b.arrow(1150, 356, 1080, 410, { stroke: C.sub, sw: 2.4, marker: 'ink' })
   b.ctext(1148, 398, 'Schaffer 侧枝', { size: 11.5, weight: 700, fill: C.ink })
   b.arrow(950, 438, 870, 356, { stroke: C.acc, sw: 2.4, marker: 'acc' })
-  b.ctext(878, 398, '返回内嗅皮层', { size: 11.5, weight: 700, fill: C.accD })
+  b.ctext(856, 404, '返回内嗅皮层', { size: 11.5, weight: 700, fill: C.accD })
   b.wtext(760, 500, '三级突触均可诱导 LTP；CA1 的 Schaffer 侧枝-CA1 突触是 Bliss 与 Lømo 1973 年发现 LTP 的地点——记忆研究的「标准跑道」。', { size: 11, fill: C.sub, maxW: 590, lh: 16 })
 
   // ============ 三、里程碑病例与巩固机制 ============
@@ -65,12 +65,12 @@ const draw = (b: B) => {
   // HM 卡
   b.rect(60, 730, 300, 150, { fill: C.badL, fillOp: 0.4, stroke: C.bad, sw: 1.6, rx: 9 })
   b.text(76, 756, 'HM：顺行性遗忘的教科书', { size: 13, weight: 700, fill: C.bad })
-  b.wtext(76, 778, '1953 年 Scoville 行双侧内侧颞叶切除（含双侧海马大部分与杏仁核）治疗难治性癫痫：短时记忆与程序性学习完好，唯独不能形成新的陈述性长时记忆——海马是巩固通道而非最终仓库。', { size: 10.5, fill: C.sub, maxW: 268, lh: 15 })
-  b.wtext(76, 862, 'Corkin 等 1997 年 MRI 复查：损毁限于内侧颞叶、新皮层大体完好。', { size: 10, fill: C.mute, maxW: 268, lh: 14 })
+  b.wtext(76, 778, '1953 年 Scoville 行双侧内侧颞叶切除（含双侧海马大部分与杏仁核）治疗难治性癫痫：短时记忆与程序性学习完好，唯独不能形成新的陈述性长时记忆，海马是巩固通道而非最终仓库。', { size: 10.5, fill: C.sub, maxW: 268, lh: 15 })
+  b.wtext(76, 858, 'Corkin 等 1997 年 MRI 复查：损毁限于内侧颞叶、新皮层大体完好。', { size: 10, fill: C.mute, maxW: 268, lh: 14 })
   // 水迷宫卡
   b.rect(390, 730, 310, 150, { fill: C.accL, fillOp: 0.45, stroke: C.acc, sw: 1.6, rx: 9 })
   b.text(406, 756, 'Morris 水迷宫（1982）', { size: 13, weight: 700, fill: C.accD })
-  b.wtext(406, 778, '不透明浑水池中寻找隐于水面下约 1–2 cm 的平台，入水点随机轮换；海马 NMDA 受体阻断剂 AP5 阻断空间学习而不阻断可见平台任务——把可塑性机制与行为连成闭环。', { size: 10.5, fill: C.sub, maxW: 278, lh: 15 })
+  b.wtext(406, 778, '不透明浑水池中寻找隐于水面下约 1–2 cm 的平台，入水点随机轮换；海马 NMDA 受体阻断剂 AP5 阻断空间学习，而不阻断可见平台任务——把可塑性机制与行为连成闭环。', { size: 10.5, fill: C.sub, maxW: 278, lh: 15 })
   // 空间记忆细胞注
   b.wtext(60, 910, '空间记忆的细胞学底座：位置细胞（O\'Keefe 1971，只在特定位置放电）、网格细胞（Hafting 2005，六边形栅格铺满环境）与 Tolman 1948 的「认知地图」假说。', { size: 10.5, fill: C.mute, maxW: 620, lh: 15 })
 
@@ -81,10 +81,10 @@ const draw = (b: B) => {
   b.wtext(786, 698, 'cAMP/PKA 磷酸化 CREB（Ser133）开启 CRE 驱动转录，产出可塑性相关蛋白支持突触持久增强与新突触生长——海兔长时敏化、果蝇长时记忆与小鼠海马晚相 LTP 共用此开关。', { size: 10.5, fill: C.sub, maxW: 548, lh: 15 })
   b.rect(770, 750, 280, 130, { fill: C.dnaL, fillOp: 0.45, stroke: C.dna, sw: 1.6, rx: 9 })
   b.text(786, 776, '系统级巩固：数月至数年', { size: 12.5, weight: 700, fill: C.dnaD })
-  b.wtext(786, 798, '记忆从依赖海马过渡到分布式储存于新皮层；睡眠中海马在慢波睡眠的尖波涟漪中以十数倍压缩速度重演当日路线，边播边向皮层转存。', { size: 10.5, fill: C.sub, maxW: 248, lh: 15 })
+  b.wtext(786, 798, '记忆从依赖海马过渡到分布式储存于新皮层；睡眠中海马在慢波睡眠的尖波涟漪中，以十数倍压缩速度重演当日路线，边播边向皮层转存。', { size: 10.5, fill: C.sub, maxW: 248, lh: 15 })
   b.rect(1070, 750, 280, 130, { fill: C.proL, fillOp: 0.45, stroke: C.pro, sw: 1.6, rx: 9 })
   b.text(1086, 776, '再巩固与情绪放大', { size: 12.5, weight: 700, fill: C.proD })
-  b.wtext(1086, 798, '提取不是只读操作——记忆每次被提取都重回可塑状态，可被更新或削弱。情绪记忆经杏仁核-NE-β 受体通路放大：「记忆不是磁带，而是持续重写的施工」。', { size: 10.5, fill: C.sub, maxW: 248, lh: 15 })
+  b.wtext(1086, 798, '提取不是只读操作：每次提取都令记忆重回可塑状态，可被更新或削弱。情绪记忆经杏仁核-NE-β 受体通路放大：「记忆不是磁带，而是持续重写的施工」。', { size: 10.5, fill: C.sub, maxW: 248, lh: 15 })
 }
 
 export default scene({

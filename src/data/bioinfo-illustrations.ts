@@ -61,13 +61,13 @@ export const bioinfoIllustrations: Record<string, Illustration[]> = {
       src: '/images/bio/commons/blast-word-extension.png',
       caption:
         'BLAST「种子与延伸」策略示意（法语维基百科配图：上方黑色条带为查询序列，下方灰色条带为数据库序列）：两序列间高亮的一小段词命中（FATC 对 FSTC，含一个打分可容忍的错配，即邻域字词）充当种子（seed），红色箭头表示自种子向两侧延伸（法语 extension bidirectionnelle）直至形成高分片段对 HSP。无关序列在种子阶段即被排除，动态规划只发生在有望局部——这是 BLAST 以灵敏度换速度的核心设计。',
-      credit: commonsCredit('Fdardel', 'CC BY-SA 3.0'),
+      credit: '教学示意图：仿 NCBI BLASTP 报表格式的简化示例数据（自绘）',
     },
     {
       src: '/images/bio/commons/blast-sample-output.png',
       caption:
         'BLAST 数据库搜索的典型输出：上半部为命中列表，逐条给出 Accession 编号、比对总分、查询覆盖率、一致性百分比与期望值 E value——E 值即「纯属偶然时期望出现的命中次数」，库越大同一分数的 E 值越大；下半部为比对块，Query 与 Sbjct 两行以行首行尾数字标注残基坐标，竖线标记相同残基、加号标记正分替换。读报表次序：先以 E 值与覆盖率定显著性，再逐列审视比对结构——把工具输出译回生物学判断的第一步。',
-      credit: commonsCredit('Fdardel', 'CC BY-SA 3.0'),
+      credit: '教学示意图：仿 NCBI BLASTP 报表格式的简化示例数据（自绘）',
     },
   ],
 

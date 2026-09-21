@@ -64,7 +64,7 @@ const draw = (b: B) => {
   ]
   b.curve(750, 430, 560, 240, gauss, { stroke: C.pro, sw: 3, smooth: true })
   b.line(974, 190, 974, 430, { stroke: C.mute, sw: 1.6, dash: '6 4' })
-  b.text(982, 201, '⟨R²⟩^1/2 = b√N', { size: 10.5, weight: 700, fill: C.sub })
+  b.text(988, 206, '⟨R²⟩^1/2 = b√N', { size: 10.5, weight: 700, fill: C.sub })
   b.line(806, 300, 1060, 300, { stroke: C.warn, sw: 1.6, marker: 'warn', markerStart: 'warn' })
   b.ctext(935, 288, '分布宽度与均值同量级', { size: 9.5, weight: 700, fill: C.warn })
   b.ctext(935, 316, '相对涨落 ~ 1/√N', { size: 9.5, fill: C.mute })

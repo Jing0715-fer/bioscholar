@@ -6,9 +6,9 @@ const draw = (b: B) => {
   b.panel(30, 132, 1340, 252, { title: '一、转录因子为模块化蛋白：结构域可独立交换拼接（domain swapping）' })
   // 结构域条
   b.domains(80, 196, 54, [
-    { label: 'DNA 结合域 DBD', frac: 300, fill: C.dnaL, stroke: C.dna },
-    { label: '铰链 + NLS', frac: 170, fill: C.panelB, stroke: C.line },
-    { label: '转录激活域 TAD', frac: 330, fill: C.proL, stroke: C.pro },
+    { label: 'DNA 结合域 DBD', frac: 232, fill: C.dnaL, stroke: C.dna },
+    { label: '铰链 + NLS', frac: 132, fill: C.panelB, stroke: C.line },
+    { label: '转录激活域 TAD', frac: 256, fill: C.proL, stroke: C.pro },
   ])
   // DBD 接触 DNA
   b.dna(110, 288, 240, { amp: 6, period: 42, stroke: C.dna, sw: 2.2 })
@@ -20,8 +20,8 @@ const draw = (b: B) => {
   // 交换拼接示意
   b.rect(720, 178, 300, 92, { fill: C.panel, stroke: C.line, sw: 1.3, rx: 8 })
   b.ctext(870, 204, '交换拼接实验', { size: 13.5, weight: 700, fill: C.ink })
-  b.wtext(775, 228, 'Gal4 的 DBD 拼接 VP16 的 TAD 仍有活性', { size: 12, fill: C.sub, maxW: 268 })
-  b.wtext(775, 246, '——两域可独立作业', { size: 12, fill: C.sub, maxW: 268 })
+  b.text(736, 226, 'Gal4 的 DBD 拼接 VP16 的 TAD', { size: 12, fill: C.sub })
+  b.text(736, 244, '仍有活性——两域可独立作业', { size: 12, fill: C.sub })
   // 激活域三类
   b.rect(1040, 168, 300, 148, { fill: C.proL, stroke: C.pro, sw: 1.4, rx: 8, fillOp: 0.4 })
   b.ctext(1190, 192, '激活域按氨基酸组成分类', { size: 13.5, weight: 700, fill: C.proD })

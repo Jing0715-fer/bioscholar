@@ -304,6 +304,20 @@
   font-style: italic;
 }
 
+/* 灯箱（FigureLightbox）：平滑缩放过渡 —— JS 在写入 transform 前挂载该类 */
+.bio-fig-zm {
+  transition: transform 0.22s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* 隐藏滚动条（横向筛选 tab 滚动容器等） */
+.bio-scroll-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.bio-scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
 /* 动效 */
 @keyframes bio-fade-up {
   from { opacity: 0; transform: translateY(8px); }

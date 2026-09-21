@@ -26,7 +26,7 @@ const draw = (b: B) => {
   b.arrow(840, 240, 950, 240, { stroke: C.enz, sw: 1.8, marker: 'enz', dash: '6 4' })
   b.ctext(895, 226, '挣脱距离与方向', { size: 10.5, weight: 700, fill: C.enzD })
   b.rect(960, 226, 370, 52, { fill: C.accL, stroke: C.acc, sw: 1.2, dash: '5 4', fillOp: 0.4 })
-  b.text(975, 246, '核心启动子（RNA Pol II 装配平台）', { size: 10.5, weight: 700, fill: C.accD })
+  b.text(960, 220, '核心启动子（RNA Pol II 装配平台）', { size: 10.5, weight: 700, fill: C.accD })
   b.rect(1050, 234, 84, 36, { fill: '#ffffff', stroke: C.acc, sw: 1.6, rx: 4 })
   b.ctext(1092, 256, 'TATAAA', { size: 11.5, weight: 700, fill: C.accD })
   b.rect(1160, 234, 64, 36, { fill: '#ffffff', stroke: C.acc, sw: 1.6, rx: 4 })
@@ -92,14 +92,14 @@ const draw = (b: B) => {
   b.wtext(1105, 676, 'L：基因内密码子总数——几何平均', { size: 11, fill: C.sub, maxW: 222, lh: 15 })
   const cflow: Array<[number, string]> = [
     [740, '高表达参考集'],
-    [930, '逐密码子 w'],
-    [1120, '几何平均'],
-    [1290, 'CAI'],
+    [900, '逐密码子 w'],
+    [1060, '几何平均'],
+    [1220, 'CAI'],
   ]
   cflow.forEach(([x, t], i) => {
-    b.rect(x, 756, 150, 54, { fill: C.accL, stroke: C.acc, sw: 1.6, rx: 8, fillOp: 0.6 })
-    b.ctext(x + 75, 787, t, { size: 12, weight: 700, fill: C.accD })
-    if (i < 3) b.arrow(x + 154, 783, x + 186, 783, { stroke: C.sub, sw: 2, marker: 'ink' })
+    b.rect(x, 756, 128, 54, { fill: C.accL, stroke: C.acc, sw: 1.6, rx: 8, fillOp: 0.6 })
+    b.ctext(x + 64, 787, t, { size: 12, weight: 700, fill: C.accD })
+    if (i < 3) b.arrow(x + 134, 783, x + 156, 783, { stroke: C.sub, sw: 2, marker: 'ink' })
   })
   b.wtext(740, 860, 'CAI 为高表达参考集相对适应性的几何平均——高表达基因的密码子选择向参考集靠拢，CAI 量度这种偏性。', { size: 11.5, fill: C.sub, maxW: 590, lh: 16 })
 }

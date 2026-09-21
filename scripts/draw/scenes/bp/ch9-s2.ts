@@ -56,8 +56,8 @@ const draw = (b: B) => {
   b.ctext(944, 208, 'r', { size: 13, weight: 700, italic: true, fill: C.ink })
   b.path('M 832,198 C 890,180 970,180 1028,198', { stroke: C.ok, sw: 2.2, marker: 'ok', fill: 'none' })
   b.ctext(944, 174, '能量转移（偶极–偶极）', { size: 9.5, weight: 700, fill: C.okD })
-  b.tag(1040, 264, 'E = 1 / (1 + (r/R₀)⁶)', { fill: C.accL, stroke: C.acc, size: 13, weight: 700, tfill: C.accD, pad: 12 })
-  b.axis(740, 490, 580, 210, {
+  b.tag(1040, 292, 'E = 1 / (1 + (r/R₀)⁶)', { fill: C.accL, stroke: C.acc, size: 13, weight: 700, tfill: C.accD, pad: 12 })
+  b.axis(740, 520, 580, 210, {
     ylabel: 'FRET 效率 E',
     xlabel: '供体–受体间距 r（以 Förster 半径 R₀ 为单位）',
     yticks: [[0, '0'], [0.5, '0.5'], [1, '1.0']],
@@ -68,13 +68,16 @@ const draw = (b: B) => {
     const x = (i / 40) * 3
     fret.push([x / 3, 1 / (1 + Math.pow(x, 6))])
   }
-  b.curve(740, 490, 580, 210, fret, { stroke: C.dna, sw: 3 })
-  b.line(933, 280, 933, 490, { stroke: C.faint, sw: 1.4, dash: '5 4' })
-  b.line(740, 385, 933, 385, { stroke: C.faint, sw: 1.4, dash: '5 4' })
-  b.circle(933, 385, 5, { fill: C.dnaD })
-  b.tag(1064, 368, 'r = R₀ 时 E = 50%', { fill: C.dnaL, stroke: C.dna, size: 10.5, weight: 700, tfill: C.dnaD, pad: 9 })
-  b.line(996, 372, 940, 387, { stroke: C.mute, sw: 1.2 })
-  b.text(730, 556, 'E ∝ r⁻⁶：距离稍增、效率陡降——环化 FRET 传感器可读出活细胞内的构象与活性。', { size: 10, weight: 600, fill: C.sub })
+  b.curve(740, 520, 580, 210, fret, { stroke: C.dna, sw: 3 })
+  b.line(933, 310, 933, 520, { stroke: C.faint, sw: 1.4, dash: '5 4' })
+  b.line(740, 415, 933, 415, { stroke: C.faint, sw: 1.4, dash: '5 4' })
+  b.circle(933, 415, 5, { fill: C.dnaD })
+  b.tag(1064, 398, 'r = R₀ 时 E = 50%', { fill: C.dnaL, stroke: C.dna, size: 10.5, weight: 700, tfill: C.dnaD, pad: 9 })
+  b.line(996, 402, 940, 412, { stroke: C.mute, sw: 1.2 })
+  b.text(752, 448, 'E ∝ r⁻⁶：距离稍增、', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 461, '效率陡降——环化 FRET', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 474, '传感器可读出活细胞内', { size: 10, weight: 600, fill: C.sub })
+  b.text(752, 487, '的构象与活性。', { size: 10, weight: 600, fill: C.sub })
 
   // ============ 三、调色板与标记工具折中 ============
   b.panel(30, 592, 1340, 388, { title: '三、荧光蛋白调色板与标记工具的物理折中' })

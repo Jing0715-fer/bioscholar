@@ -13,21 +13,21 @@ const draw = (b: B) => {
   b.text(80, 406, '皮下', { size: 11.5, weight: 700, fill: C.proD })
   // Merkel（表皮基底层）
   b.circle(150, 270, 9, { fill: C.dna, fillOp: 0.8 })
-  b.text(168, 266, 'Merkel（SA1）', { size: 10.5, weight: 700, fill: C.dnaD })
-  b.text(168, 280, '棱角·盲文样细节', { size: 9.5, fill: C.mute })
+  b.text(168, 260, 'Merkel（SA1）', { size: 10.5, weight: 700, fill: C.dnaD })
+  b.text(168, 273, '棱角·盲文样细节', { size: 9.5, fill: C.mute })
   // Meissner（真皮乳头）
   b.ellipse(260, 306, 10, 15, { fill: C.rna, fillOp: 0.75 })
-  b.text(284, 304, 'Meissner（RA）', { size: 10.5, weight: 700, fill: C.rnaD })
-  b.text(284, 318, '5–40 Hz 低频振动', { size: 9.5, fill: C.mute })
+  b.text(276, 304, 'Meissner（RA）', { size: 10.5, weight: 700, fill: C.rnaD })
+  b.text(276, 318, '5–40 Hz 低频振动', { size: 9.5, fill: C.mute })
   // Ruffini（真皮深层）
   b.ellipse(180, 420, 16, 9, { fill: C.acc, fillOp: 0.75 })
   b.text(212, 418, 'Ruffini（SA2）', { size: 10.5, weight: 700, fill: C.accD })
   b.text(212, 432, '皮肤牵拉·手形', { size: 9.5, fill: C.mute })
   // 环层小体（皮下）
-  b.ellipse(320, 452, 13, 19, { fill: C.badL, fillOp: 0.8, stroke: C.bad, sw: 1.6 })
-  b.circle(320, 452, 4, { fill: C.bad })
-  b.text(350, 448, '环层小体（RA2）', { size: 10.5, weight: 700, fill: C.bad })
-  b.text(350, 462, '100–300 Hz 高频振动', { size: 9.5, fill: C.mute })
+  b.ellipse(226, 462, 13, 19, { fill: C.badL, fillOp: 0.8, stroke: C.bad, sw: 1.6 })
+  b.circle(226, 462, 4, { fill: C.bad })
+  b.text(252, 458, '环层小体（RA2）', { size: 10.5, weight: 700, fill: C.bad })
+  b.text(252, 472, '100–300 Hz 高频振动', { size: 9.5, fill: C.mute })
   // 感受野大小示意
   b.ctext(480, 226, '感受野：浅小深大', { size: 12.5, weight: 700, fill: C.ink })
   b.circle(500, 292, 13, { fill: C.dna, fillOp: 0.35, stroke: C.dna, sw: 1.8 })
@@ -71,9 +71,9 @@ const draw = (b: B) => {
   b.ctext(310, 760, '并联于梭外肌之间', { size: 10, fill: C.mute })
   // Ia / II 传入
   b.arrow(220, 718, 200, 664, { stroke: C.dna, sw: 2.2, marker: 'dna' })
-  b.ctext(178, 690, 'Ia', { size: 11, weight: 700, fill: C.dnaD })
+  b.ctext(178, 698, 'Ia', { size: 11, weight: 700, fill: C.dnaD })
   b.arrow(400, 718, 420, 664, { stroke: C.rna, sw: 2.2, marker: 'rna' })
-  b.ctext(440, 690, 'II', { size: 11, weight: 700, fill: C.rnaD })
+  b.ctext(440, 698, 'II', { size: 11, weight: 700, fill: C.rnaD })
   // γ 神经元
   b.arrow(310, 848, 310, 808, { stroke: C.pro, sw: 2.4, marker: 'pro' })
   b.ctext(310, 868, 'γ 运动神经元支配梭内纤维两端', { size: 11, weight: 700, fill: C.proD })

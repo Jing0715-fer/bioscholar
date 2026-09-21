@@ -25,8 +25,7 @@ const draw = (b: B) => {
     { at: 0.58, label: '获得性耐受', sub: 'Medawar：新生期小鼠诱导同种移植耐受', above: false, c: C.acc },
     { at: 0.95, label: '1960 诺贝尔奖', sub: '两人分享', above: true, c: C.pro },
   ], { title: '' })
-  // 上移避开时间轴上方事件标签（Burnet 行）
-  b.wtext(728, 230, '「耐受亦可后天获得」——免疫系统能学会不攻击。', { size: 10.5, weight: 600, fill: C.accD, maxW: 590, lh: 15 })
+  b.wtext(728, 232, '「耐受亦可后天获得」——免疫系统能学会不攻击。', { size: 10.5, weight: 600, fill: C.accD, maxW: 590, lh: 15 })
 
   // ============ 二、T 与 B 的中枢耐受对照 ============
   b.panel(30, 428, 1340, 296, { title: '二、T 细胞（胸腺）与 B 细胞（骨髓）的中枢耐受对照' })

@@ -67,8 +67,8 @@ const draw = (b: B) => {
   b.etext(cx - 128, cy + 8, '（二氢尿嘧啶）', { size: 9, fill: C.mute })
   b.text(cx + 128, cy - 10, 'TψC 环', { size: 10.5, weight: 700, fill: C.ink })
   b.text(cx + 128, cy + 8, '（含稀有碱基 T·ψ）', { size: 9, fill: C.mute })
-  b.ctext(cx, cy + 130, '反密码子环', { size: 10.5, weight: 700, fill: C.ink })
-  b.ctext(cx, cy + 147, '（中部含反密码子）', { size: 9, fill: C.mute })
+  b.ctext(cx, cy + 134, '反密码子环', { size: 10.5, weight: 700, fill: C.ink })
+  b.ctext(cx, cy + 150, '（中部含反密码子）', { size: 9, fill: C.mute })
   b.ctext(cx + 96, cy + 74, '可变环', { size: 9.5, weight: 700, fill: C.sub })
   // 反密码子点
   for (const [dx, dy] of [[-12, -4], [0, 2], [12, -4]] as [number, number][]) {
@@ -82,7 +82,7 @@ const draw = (b: B) => {
   b.tag(1336, 284, '反密码子', { fill: C.dnaL, stroke: C.dna, size: 9.5, weight: 700, tfill: C.dnaD, pad: 4 })
   b.ctext(1283, 430, '氨基酸臂与反密码子臂', { size: 9.5, fill: C.mute })
   b.ctext(1283, 444, '分居 L 两端', { size: 9.5, fill: C.mute })
-  b.wtext(726, 520, 'tRNA 是「适配器」分子：一端连密码（反密码子识别 mRNA 密码子）、一端连氨基酸（3′-CCA）；含稀有碱基最多（假尿苷 ψ · DHU · T · 甲基化碱基）。', { size: 10.5, fill: C.sub, maxW: 620, lh: 15 })
+  b.wtext(726, 524, 'tRNA 是「适配器」分子：一端连密码（反密码子识别 mRNA 密码子）、一端连氨基酸（3′-CCA）；含稀有碱基最多（假尿苷 ψ · DHU · T · 甲基化碱基）。', { size: 10.5, fill: C.sub, maxW: 620, lh: 14 })
 
   // ============ 三、rRNA：核糖体结构与催化核心 ============
   b.panel(30, 566, 660, 414, { title: '三、rRNA（约 80%）：核糖体的结构与催化核心' })

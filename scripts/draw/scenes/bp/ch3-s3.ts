@@ -42,7 +42,7 @@ const draw = (b: B) => {
   b.bilayer(70, 495, 130, { h: 14, tint: C.dna })
   for (const cx of [95, 135, 175]) b.polygon([[cx - 6, 516], [cx + 6, 516], [cx, 530]], { fill: C.enz, stroke: C.enz, sw: 1 })
   b.path('M 80,488 Q 135,462 190,488', { stroke: C.warn, sw: 1.8, dash: '5 4', fill: 'none' })
-  b.ctext(135, 556, '① 局部提高 C₀ / 蛋白衣架', { size: 10.5, weight: 600, fill: C.sub })
+  b.ctext(135, 556, '① 局部提高 C_{0} / 蛋白衣架', { size: 10.5, weight: 600, fill: C.sub })
   b.ctext(135, 574, '锥形脂 / 网格蛋白 / ESCRT / BAR', { size: 9.5, fill: C.mute })
   b.arrow(215, 515, 250, 515, { stroke: C.dna, sw: 2, marker: 'dna' })
   // ② 鼓芽
@@ -57,7 +57,7 @@ const draw = (b: B) => {
   b.vesicle(455, 505, 26, { coat: 'clathrin', label: '', stroke: C.dna })
   b.ctext(455, 556, '③ 掐断成囊泡', { size: 10.5, weight: 600, fill: C.sub })
   b.ctext(455, 574, '做功由 ATP/GTP 水解支付', { size: 9.5, fill: C.mute })
-  b.wtext(60, 620, '胞内转运的基本动作：通过局部提高自发曲率 C₀ 或蛋白脚手架，膜鼓出球形芽并颈缩掐断，形成囊泡。', { size: 10.5, fill: C.sub, maxW: 480, lh: 14 })
+  b.wtext(60, 620, '胞内转运的基本动作：通过局部提高自发曲率 C_{0} 或蛋白脚手架，膜鼓出球形芽并颈缩掐断，形成囊泡。', { size: 10.5, fill: C.sub, maxW: 480, lh: 14 })
 
   // -- 右：融合三阶段 --
   b.text(690, 452, '融合（fusion）', { size: 13.5, weight: 700, fill: C.accD })
@@ -71,19 +71,26 @@ const draw = (b: B) => {
   b.ctext(765, 556, '① SNARE 拉链拉近至 1–2 nm', { size: 10.5, weight: 600, fill: C.sub })
   b.ctext(765, 574, '克服水化排斥与涨落排斥', { size: 9.5, fill: C.mute })
   b.arrow(855, 515, 890, 515, { stroke: C.acc, sw: 2, marker: 'acc' })
-  // ② 半融合茎：两膜内侧叶在中央融合成腰
+  // ② 半融合茎：两膜内侧叶在中央融合成腰（SNARE 复合体持续钳在两侧提供能量）
   b.line(898, 480, 975, 480, { stroke: C.acc, sw: 3 })
   b.line(898, 512, 975, 512, { stroke: C.acc, sw: 3 })
   b.path('M 928,480 C 928,489 940,491 940,496 C 940,501 928,503 928,512', { stroke: C.enz, sw: 2.4, fill: 'none' })
   b.path('M 946,480 C 946,489 934,491 934,496 C 934,501 946,503 946,512', { stroke: C.enz, sw: 2.4, fill: 'none' })
+  // SNARE 拉链（与步骤① 同一 X 基序，两侧钳持）
+  b.line(899, 486, 913, 506, { stroke: C.enz, sw: 2 })
+  b.line(913, 486, 899, 506, { stroke: C.enz, sw: 2 })
+  b.text(896, 530, 'SNARE', { size: 8.5, weight: 700, fill: C.enzD })
   b.ctext(936, 556, '② 茎状半融合中间体', { size: 10.5, weight: 600, fill: C.sub })
   b.ctext(936, 574, 'SNARE 释放数十 k_BT 结合能', { size: 9.5, fill: C.mute })
   b.arrow(1000, 515, 1035, 515, { stroke: C.acc, sw: 2, marker: 'acc' })
-  // ③ 融合孔：两膜连通，中央留 ~1 nm 开口并向外扩展
+  // ③ 融合孔：两膜连通，中央留 ~1 nm 开口并向外扩展（SNARE 仍钳在孔缘）
   b.path('M 1060,480 L 1102,480 C 1112,480 1112,486 1112,492', { stroke: C.acc, sw: 3, fill: 'none' })
   b.path('M 1060,512 L 1102,512 C 1112,512 1112,506 1112,500', { stroke: C.acc, sw: 3, fill: 'none' })
   b.path('M 1112,492 C 1126,486 1136,470 1152,470 L 1190,470', { stroke: C.acc, sw: 3, fill: 'none' })
   b.path('M 1112,500 C 1126,506 1136,522 1152,522 L 1190,522', { stroke: C.acc, sw: 3, fill: 'none' })
+  b.line(1068, 486, 1082, 506, { stroke: C.enz, sw: 2 })
+  b.line(1082, 486, 1068, 506, { stroke: C.enz, sw: 2 })
+  b.text(1065, 530, 'SNARE', { size: 8.5, weight: 700, fill: C.enzD })
   b.ctext(1128, 556, '③ 融合孔扩大', { size: 10.5, weight: 600, fill: C.sub })
   b.ctext(1128, 574, '开口约 1 nm 起步、可逆开合', { size: 9.5, fill: C.mute })
   b.wtext(690, 620, '病毒入胞与神经递质释放走同一条能量上艰难的路径：两膜靠近 → 半融合茎 → 融合孔。', { size: 10.5, fill: C.sub, maxW: 500, lh: 14 })
@@ -120,6 +127,6 @@ const draw = (b: B) => {
 
 export default scene({
   title: '膜的热涨落、出芽融合与脂筏：软膜的三个物理剧本',
-  subtitle: 'κ ~ k_BT → 显著起伏与熵致排斥 (k_BT)²/(κd²)；出芽靠 C₀ / 蛋白衣架，融合经半融合茎与 ~1 nm 融合孔；脂筏 = 鞘脂–胆固醇 Lo 相微区（10–200 nm）与 Ld 相分离',
+  subtitle: 'κ ~ k_BT → 显著起伏与熵致排斥 (k_BT)²/(κd²)；出芽靠 C_{0} / 蛋白衣架，融合经半融合茎与 ~1 nm 融合孔；脂筏 = 鞘脂–胆固醇 Lo 相微区（10–200 nm）与 Ld 相分离',
   draw,
 })
