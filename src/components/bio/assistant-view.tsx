@@ -9,6 +9,7 @@ import {
   CircleAlert,
   Copy,
   Dna,
+  Key,
   Lightbulb,
   RotateCcw,
   Send,
@@ -21,6 +22,7 @@ import { useAppStore } from '@/lib/store'
 import { getChapter, getSubject, subjects } from '@/data/biology'
 import { getSubjectTheme } from '@/components/bio/subject-theme'
 import { Markdown } from '@/components/bio/markdown'
+import { ProvidersPanel } from '@/components/bio/providers-panel'
 import type { ChatMessage, SubjectId } from '@/lib/types'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -336,6 +338,14 @@ export function AssistantView() {
   const [atBottom, setAtBottom] = useState(true)
   const [copiedId, setCopiedId] = useState<string | null>(null)
   const [subjectFilter, setSubjectFilter] = useState<SubjectId | 'all'>('all')
+  /** 供应商配置面板开关 */
+  const [providersOpen, setProvidersOpen] = useState(false)
+  /** 当前生效的 LLM 供应商（头部指示器） */
+  const [activeLlm, setActiveLlm] = useState<{
+    displayName: string
+    model: string
+    isBuiltin: boolean
+  } | null>(null)
 
   const scrollRef = useRef<HTMLDivElement>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
@@ -345,6 +355,38 @@ export function AssistantView() {
   const pendingRef = useRef('')
   const streamIdRef = useRef<string | null>(null)
   const sessionIdRef = useRef<string | null>(null)
+
+  /** 拉取当前生效供应商信息（用于头部指示器） */
+  const refreshActiveLlm = useCallback(async () => {
+    try {
+      const res = await fetch('/api/assistant/providers')
+      if (!res.ok) return
+      const data = (await res.json()) as {
+        defaultProvider?: string
+        providers?: Array<{
+          id: string
+          displayName: string
+          effectiveModel: string
+          defaultModel: string
+        }>
+      }
+      const id = data.defaultProvider ?? 'zai'
+      const p = data.providers?.find((x) => x.id === id)
+      if (p) {
+        setActiveLlm({
+          displayName: p.displayName.split(/[（(]/)[0].trim() || p.displayName,
+          model: p.effectiveModel || p.defaultModel || '',
+          isBuiltin: id === 'zai',
+        })
+      }
+    } catch {
+      /* 指示器静默失败 */
+    }
+  }, [])
+
+  useEffect(() => {
+    void refreshActiveLlm()
+  }, [refreshActiveLlm])
 
   /* ----- 会话初始化 + 历史加载 ----- */
   useEffect(() => {
@@ -788,6 +830,35 @@ export function AssistantView() {
           </div>
 
           <div className="flex shrink-0 items-center gap-1.5">
+            {/* 供应商配置入口：显示当前生效供应商 */}
+            <Button
+              type="button"
+              variant="ghost"
+              size="sm"
+              onClick={() => setProvidersOpen(true)}
+              aria-label="AI 供应商配置"
+              title={
+                activeLlm
+                  ? `当前供应商：${activeLlm.displayName} · ${activeLlm.model}（点击配置）`
+                  : '配置 AI 供应商与 API Key'
+              }
+              className="h-8 gap-1.5 rounded-lg px-2 text-xs text-muted-foreground hover:text-foreground"
+            >
+              <span
+                className={cn(
+                  'h-1.5 w-1.5 shrink-0 rounded-full',
+                  activeLlm && !activeLlm.isBuiltin
+                    ? 'bg-teal-500'
+                    : 'bg-emerald-500'
+                )}
+                aria-hidden
+              />
+              <Key className="h-3.5 w-3.5 shrink-0" aria-hidden />
+              <span className="hidden max-w-[7.5rem] truncate font-medium sm:inline">
+                {activeLlm ? activeLlm.displayName : '供应商'}
+              </span>
+            </Button>
+
             <Select value={subjectFilter} onValueChange={handleFilterChange}>
               <SelectTrigger
                 size="sm"
@@ -932,9 +1003,21 @@ export function AssistantView() {
         <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 px-1 text-[10px] leading-relaxed text-muted-foreground">
           <span>Enter 发送 · Shift + Enter 换行</span>
           {filterSubject ? <span>当前聚焦「{filterSubject.name}」（提示性，不严格限定）</span> : null}
+          {activeLlm ? (
+            <span className="font-mono">
+              引擎：{activeLlm.displayName} / {activeLlm.model || '默认模型'}
+            </span>
+          ) : null}
           <span className="ml-auto hidden sm:inline">回答由 AI 生成，请注意核对关键数据</span>
         </p>
       </div>
+
+      {/* 供应商配置弹窗 */}
+      <ProvidersPanel
+        open={providersOpen}
+        onClose={() => setProvidersOpen(false)}
+        onChanged={() => void refreshActiveLlm()}
+      />
     </div>
   )
 }

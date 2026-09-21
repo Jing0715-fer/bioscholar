@@ -1,0 +1,661 @@
+     1→/**
+     2→ * ProvidersPanel — a simplified modal for managing LLM provider API keys.
+     3→ *
+     4→ * UI: a single dropdown to select a provider → Base URL auto-fills →
+     5→ * API Key input → Save / Test buttons.
+     6→ *
+     7→ * Also shows a compact list of already-configured providers below.
+     8→ */
+     9→
+    10→'use client';
+    11→
+    12→import { useEffect, useState, useCallback } from 'react';
+    13→import { motion, AnimatePresence } from 'framer-motion';
+    14→import {
+    15→  Key, Globe, Loader2, Check, AlertCircle, ExternalLink, RefreshCw,
+    16→  Trash2, Zap, ShieldCheck, Plus, Box, ChevronDown,
+    17→} from 'lucide-react';
+    18→import { Button } from '@/components/ui/button';
+    19→import { Input } from '@/components/ui/input';
+    20→import { Label } from '@/components/ui/label';
+    21→import { Badge } from '@/components/ui/badge';
+    22→import {
+    23→  Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription,
+    24→} from '@/components/ui/dialog';
+    25→import { cn } from '@/lib/utils';
+    26→
+    27→interface ProviderModel {
+    28→  id: string;
+    29→  name: string;
+    30→  contextWindow?: number;
+    31→}
+    32→
+    33→interface ProviderInfo {
+    34→  id: string;
+    35→  displayName: string;
+    36→  label: string;
+    37→  baseURL: string;
+    38→  apiKeyEnv: string;
+    39→  defaultModel: string;
+    40→  models: ProviderModel[];
+    41→  supportsToolCalling: boolean;
+    42→  docsUrl: string;
+    43→  available: boolean;
+    44→  hasApiKey: boolean;
+    45→  hasBaseURLOverride: boolean;
+    46→  effectiveModel: string;
+    47→}
+    48→
+    49→interface Props {
+    50→  open: boolean;
+    51→  onClose: () => void;
+    52→}
+    53→
+    54→export function ProvidersPanel({ open, onClose }: Props) {
+    55→  const [providers, setProviders] = useState<ProviderInfo[]>([]);
+    56→  const [defaultProvider, setDefaultProvider] = useState<string>('zai');
+    57→  const [loading, setLoading] = useState(false);
+    58→
+    59→  const refresh = useCallback(async () => {
+    60→    setLoading(true);
+    61→    try {
+    62→      const res = await fetch('/api/agent/providers');
+    63→      if (!res.ok) return;
+    64→      const data = (await res.json()) as { providers: ProviderInfo[]; defaultProvider?: string };
+    65→      setProviders(data.providers ?? []);
+    66→      setDefaultProvider(data.defaultProvider ?? 'zai');
+    67→    } catch {
+    68→      /* ignore */
+    69→    } finally {
+    70→      setLoading(false);
+    71→    }
+    72→  }, []);
+    73→
+    74→  useEffect(() => {
+    75→    if (open) void refresh();
+    76→  }, [open, refresh]);
+    77→
+    78→  const configuredProviders = providers.filter((p) => p.hasApiKey || p.id === 'zai');
+    79→  const unconfiguredProviders = providers.filter((p) => !p.hasApiKey && p.id !== 'zai');
+    80→
+    81→  return (
+    82→    <Dialog open={open} onOpenChange={(o) => { if (!o) onClose(); }}>
+    83→      <DialogContent className="max-w-lg w-[92vw] !max-w-lg p-0 overflow-hidden gap-0">
+    84→        {/* Header */}
+    85→        <DialogHeader className="px-5 pt-5 pb-3 border-b border-claude-border/50">
+    86→          <DialogTitle className="flex items-center gap-2 text-sm leading-none">
+    87→            <Key className="h-4 w-4 text-claude-accent" />
+    88→            供应商配置
+    89→          </DialogTitle>
+    90→          <DialogDescription className="text-xs text-claude-text-muted mt-2 leading-relaxed">
+    91→            选择供应商并输入 API Key，Base URL 将自动填充。
+    92→          </DialogDescription>
+    93→        </DialogHeader>
+    94→
+    95→        {/* Content */}
+    96→        <div className="px-5 py-4 max-h-[65vh] overflow-y-auto space-y-4">
+    97→          {loading && providers.length === 0 ? (
+    98→            <div className="flex items-center justify-center py-8 gap-2">
+    99→              <Loader2 className="h-4 w-4 animate-spin text-claude-text-muted" />
+   100→              <span className="text-xs text-claude-text-muted">加载中…</span>
+   101→            </div>
+   102→          ) : (
+   103→            <>
+   104→              {/* Add new provider */}
+   105→              <AddProviderForm providers={unconfiguredProviders} onSaved={() => void refresh()} />
+   106→
+   107→              {/* Configured providers list */}
+   108→              {configuredProviders.length > 0 && (
+   109→                <div>
+   110→                  <div className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-2 flex items-center justify-between">
+   111→                    <span>已配置 ({configuredProviders.length})</span>
+   112→                    <span className="text-[9px] text-claude-text-muted/60">点击选中默认供应商</span>
+   113→                  </div>
+   114→                  <div className="space-y-1.5">
+   115→                    {configuredProviders.map((p) => (
+   116→                      <ConfiguredProviderRow
+   117→                        key={p.id}
+   118→                        provider={p}
+   119→                        isDefault={defaultProvider === p.id}
+   120→                        onSetDefault={async (id) => {
+   121→                          await fetch('/api/agent/providers', {
+   122→                            method: 'POST',
+   123→                            headers: { 'Content-Type': 'application/json' },
+   124→                            body: JSON.stringify({ providerId: id, setDefault: true }),
+   125→                          });
+   126→                          setDefaultProvider(id);
+   127→                        }}
+   128→                        onChanged={() => void refresh()}
+   129→                      />
+   130→                    ))}
+   131→                  </div>
+   132→                </div>
+   133→              )}
+   134→            </>
+   135→          )}
+   136→        </div>
+   137→
+   138→        {/* Footer */}
+   139→        <div className="px-5 py-2.5 border-t border-claude-border/50 bg-claude-bg-elevated/30 flex items-center gap-2">
+   140→          <ShieldCheck className="h-3 w-3 text-claude-text-muted shrink-0" />
+   141→          <span className="text-[10px] text-claude-text-muted">
+   142→            API Key 存储在本地，不上传服务器日志
+   143→          </span>
+   144→          <Button
+   145→            size="sm"
+   146→            variant="ghost"
+   147→            onClick={() => void refresh()}
+   148→            disabled={loading}
+   149→            className="ml-auto h-6 text-[10px] text-claude-text-muted"
+   150→          >
+   151→            <RefreshCw className={cn('h-3 w-3', loading && 'animate-spin')} />
+   152→          </Button>
+   153→        </div>
+   154→      </DialogContent>
+   155→    </Dialog>
+   156→  );
+   157→}
+   158→
+   159→/** Form for adding a new provider — dropdown + auto-filled baseURL + API key input. */
+   160→function AddProviderForm({ providers, onSaved }: { providers: ProviderInfo[]; onSaved: () => void }) {
+   161→  const [selectedId, setSelectedId] = useState('');
+   162→  const [apiKey, setApiKey] = useState('');
+   163→  const [baseURL, setBaseURL] = useState('');
+   164→  const [selectedModel, setSelectedModel] = useState('');
+   165→  const [useCustomModel, setUseCustomModel] = useState(false);
+   166→  const [customModel, setCustomModel] = useState('');
+   167→  const [saving, setSaving] = useState(false);
+   168→  const [testing, setTesting] = useState(false);
+   169→  const [testResult, setTestResult] = useState<{ ok: boolean; error?: string } | null>(null);
+   170→
+   171→  // Auto-fill baseURL + default model when provider changes.
+   172→  useEffect(() => {
+   173→    const selected = providers.find((p) => p.id === selectedId);
+   174→    if (selected) {
+   175→      setBaseURL(selected.baseURL);
+   176→      setSelectedModel(selected.defaultModel);
+   177→      setUseCustomModel(false);
+   178→      setCustomModel('');
+   179→    }
+   180→  }, [selectedId, providers]);
+   181→
+   182→  const selected = providers.find((p) => p.id === selectedId);
+   183→  const effectiveModel = useCustomModel ? customModel.trim() : selectedModel;
+   184→
+   185→  const handleSave = async () => {
+   186→    if (!selectedId || !apiKey.trim()) return;
+   187→    setSaving(true);
+   188→    try {
+   189→      await fetch('/api/agent/providers', {
+   190→        method: 'POST',
+   191→        headers: { 'Content-Type': 'application/json' },
+   192→        body: JSON.stringify({ providerId: selectedId, apiKey: apiKey.trim(), baseURL: baseURL.trim() || undefined, defaultModel: effectiveModel || undefined }),
+   193→      });
+   194→      setSelectedId('');
+   195→      setApiKey('');
+   196→      setBaseURL('');
+   197→      setSelectedModel('');
+   198→      setCustomModel('');
+   199→      setUseCustomModel(false);
+   200→      setTestResult(null);
+   201→      onSaved();
+   202→    } finally {
+   203→      setSaving(false);
+   204→    }
+   205→  };
+   206→
+   207→  const handleTest = async () => {
+   208→    if (!selectedId || !apiKey.trim()) return;
+   209→    setTesting(true);
+   210→    setTestResult(null);
+   211→    try {
+   212→      await fetch('/api/agent/providers', {
+   213→        method: 'POST',
+   214→        headers: { 'Content-Type': 'application/json' },
+   215→        body: JSON.stringify({ providerId: selectedId, apiKey: apiKey.trim(), baseURL: baseURL.trim() || undefined, defaultModel: effectiveModel || undefined }),
+   216→      });
+   217→      const res = await fetch('/api/agent/providers/test', {
+   218→        method: 'POST',
+   219→        headers: { 'Content-Type': 'application/json' },
+   220→        body: JSON.stringify({ providerId: selectedId }),
+   221→      });
+   222→      const data = (await res.json()) as { ok: boolean; error?: string };
+   223→      setTestResult(data);
+   224→      if (data.ok) {
+   225→        setSelectedId('');
+   226→        setApiKey('');
+   227→        setBaseURL('');
+   228→        setSelectedModel('');
+   229→        setCustomModel('');
+   230→        setUseCustomModel(false);
+   231→        onSaved();
+   232→      }
+   233→    } catch (err) {
+   234→      setTestResult({ ok: false, error: err instanceof Error ? err.message : String(err) });
+   235→    } finally {
+   236→      setTesting(false);
+   237→    }
+   238→  };
+   239→
+   240→  if (providers.length === 0) {
+   241→    return (
+   242→      <div className="rounded-lg border border-dashed border-claude-border bg-claude-bg-elevated/30 px-4 py-6 text-center">
+   243→        <Check className="h-4 w-4 text-emerald-500 mx-auto mb-1.5" />
+   244→        <p className="text-xs text-claude-text-muted">所有供应商已配置。</p>
+   245→      </div>
+   246→    );
+   247→  }
+   248→
+   249→  return (
+   250→    <div className="rounded-lg border border-claude-border bg-claude-surface p-4 space-y-3">
+   251→      <div className="flex items-center gap-1.5 text-xs font-medium text-claude-text">
+   252→        <Plus className="h-3.5 w-3.5 text-claude-accent" />
+   253→        添加供应商
+   254→      </div>
+   255→
+   256→      {/* Provider dropdown */}
+   257→      <div>
+   258→        <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1.5 block">供应商</Label>
+   259→        <select
+   260→          value={selectedId}
+   261→          onChange={(e) => setSelectedId(e.target.value)}
+   262→          className="w-full h-8 text-xs bg-claude-bg-base border border-claude-border rounded px-2 focus:outline-none focus:ring-1 focus:ring-claude-accent/30"
+   263→        >
+   264→          <option value="">选择供应商…</option>
+   265→          {providers.map((p) => (
+   266→            <option key={p.id} value={p.id}>{p.displayName}</option>
+   267→          ))}
+   268→        </select>
+   269→      </div>
+   270→
+   271→      {/* Base URL (auto-filled) */}
+   272→      {selected && (
+   273→        <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="space-y-3">
+   274→          <div>
+   275→            <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1.5 flex items-center gap-1">
+   276→              <Globe className="h-2.5 w-2.5" />
+   277→              Base URL
+   278→            </Label>
+   279→            <Input
+   280→              type="text"
+   281→              value={baseURL}
+   282→              onChange={(e) => setBaseURL(e.target.value)}
+   283→              className="h-8 text-xs bg-claude-bg-base border-claude-border font-mono"
+   284→            />
+   285→          </div>
+   286→
+   287→          {/* Model selector */}
+   288→          <div>
+   289→            <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1.5 flex items-center gap-1">
+   290→              <Box className="h-2.5 w-2.5" />
+   291→              默认模型
+   292→            </Label>
+   293→            {!useCustomModel ? (
+   294→              <>
+   295→                <select
+   296→                  value={selectedModel}
+   297→                  onChange={(e) => setSelectedModel(e.target.value)}
+   298→                  className="w-full h-8 text-xs bg-claude-bg-base border border-claude-border rounded px-2 focus:outline-none focus:ring-1 focus:ring-claude-accent/30"
+   299→                >
+   300→                  {selected.models.map((m) => (
+   301→                    <option key={m.id} value={m.id}>
+   302→                      {m.name} ({m.id})
+   303→                    </option>
+   304→                  ))}
+   305→                </select>
+   306→                <button
+   307→                  onClick={() => { setUseCustomModel(true); setCustomModel(selectedModel); }}
+   308→                  className="mt-1 text-[10px] text-claude-accent hover:underline"
+   309→                >
+   310→                  + 自定义模型…
+   311→                </button>
+   312→              </>
+   313→            ) : (
+   314→              <div className="flex gap-1.5">
+   315→                <Input
+   316→                  type="text"
+   317→                  value={customModel}
+   318→                  onChange={(e) => setCustomModel(e.target.value)}
+   319→                  placeholder="输入自定义模型 ID…"
+   320→                  className="h-8 text-xs bg-claude-bg-base border-claude-border font-mono flex-1"
+   321→                />
+   322→                <Button
+   323→                  size="sm"
+   324→                  variant="ghost"
+   325→                  onClick={() => { setUseCustomModel(false); }}
+   326→                  className="h-8 text-[10px] text-claude-text-muted shrink-0"
+   327→                >
+   328→                  列表
+   329→                </Button>
+   330→              </div>
+   331→            )}
+   332→          </div>
+   333→
+   334→          {/* API Key */}
+   335→          <div>
+   336→            <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1.5 flex items-center gap-1">
+   337→              <Key className="h-2.5 w-2.5" />
+   338→              API Key
+   339→            </Label>
+   340→            <Input
+   341→              type="password"
+   342→              value={apiKey}
+   343→              onChange={(e) => setApiKey(e.target.value)}
+   344→              placeholder={`输入 ${selected.displayName} API Key…`}
+   345→              className="h-8 text-xs bg-claude-bg-base border-claude-border font-mono"
+   346→            />
+   347→          </div>
+   348→
+   349→          {/* Test result */}
+   350→          {testResult && (
+   351→            <div className={cn(
+   352→              'rounded-md px-2.5 py-1.5 text-[11px] flex items-center gap-1.5 border',
+   353→              testResult.ok
+   354→                ? 'border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-300'
+   355→                : 'border-red-500/30 bg-red-500/5 text-red-700 dark:text-red-300',
+   356→            )}>
+   357→              {testResult.ok ? <Check className="h-3 w-3 shrink-0" /> : <AlertCircle className="h-3 w-3 shrink-0" />}
+   358→              <span className="break-words">{testResult.ok ? '连接成功！' : testResult.error}</span>
+   359→            </div>
+   360→          )}
+   361→
+   362→          {/* Actions */}
+   363→          <div className="flex items-center justify-between gap-2 pt-1">
+   364→            <a
+   365→              href={selected.docsUrl}
+   366→              target="_blank"
+   367→              rel="noopener noreferrer"
+   368→              className="text-[10px] text-claude-text-muted hover:text-claude-accent flex items-center gap-0.5 transition-colors"
+   369→            >
+   370→              <ExternalLink className="h-2.5 w-2.5" />
+   371→              获取 Key
+   372→            </a>
+   373→            <div className="flex items-center gap-1.5">
+   374→              <Button
+   375→                size="sm"
+   376→                variant="outline"
+   377→                onClick={handleTest}
+   378→                disabled={testing || !apiKey.trim()}
+   379→                className="h-7 text-[10px] border-claude-border"
+   380→              >
+   381→                {testing ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+   382→                测试并保存
+   383→              </Button>
+   384→              <Button
+   385→                size="sm"
+   386→                onClick={handleSave}
+   387→                disabled={saving || !apiKey.trim()}
+   388→                className="h-7 text-[10px] bg-claude-accent hover:bg-claude-accent-hover text-white"
+   389→              >
+   390→                {saving ? <Loader2 className="h-3 w-3 animate-spin" /> : <Check className="h-3 w-3" />}
+   391→                保存
+   392→              </Button>
+   393→            </div>
+   394→          </div>
+   395→        </motion.div>
+   396→      )}
+   397→    </div>
+   398→  );
+   399→}
+   400→
+   401→/** A single configured provider row with default indicator, expand to edit, test, delete. */
+   402→function ConfiguredProviderRow({ provider, isDefault, onSetDefault, onChanged }: {
+   403→  provider: ProviderInfo;
+   404→  isDefault: boolean;
+   405→  onSetDefault: (id: string) => Promise<void>;
+   406→  onChanged: () => void;
+   407→}) {
+   408→  const [deleting, setDeleting] = useState(false);
+   409→  const [expanded, setExpanded] = useState(false);
+   410→  const [editApiKey, setEditApiKey] = useState('');
+   411→  const [editBaseURL, setEditBaseURL] = useState('');
+   412→  const [editModel, setEditModel] = useState('');
+   413→  const [saving, setSaving] = useState(false);
+   414→  const [testing, setTesting] = useState(false);
+   415→  const [testResult, setTestResult] = useState<{ ok: boolean; error?: string } | null>(null);
+   416→
+   417→  const handleDelete = async () => {
+   418→    setDeleting(true);
+   419→    try {
+   420→      await fetch(`/api/agent/providers?providerId=${provider.id}`, { method: 'DELETE' });
+   421→      onChanged();
+   422→    } finally {
+   423→      setDeleting(false);
+   424→    }
+   425→  };
+   426→
+   427→  const handleExpand = () => {
+   428→    if (!expanded) {
+   429→      // Pre-fill edit fields with current values
+   430→      setEditBaseURL(provider.baseURL);
+   431→      setEditModel(provider.effectiveModel || provider.defaultModel);
+   432→      setEditApiKey('');
+   433→    }
+   434→    setExpanded(!expanded);
+   435→  };
+   436→
+   437→  const handleSave = async (e: React.MouseEvent) => {
+   438→    e.stopPropagation();
+   439→    setSaving(true);
+   440→    try {
+   441→      await fetch('/api/agent/providers', {
+   442→        method: 'POST',
+   443→        headers: { 'Content-Type': 'application/json' },
+   444→        body: JSON.stringify({
+   445→          providerId: provider.id,
+   446→          apiKey: editApiKey.trim() || undefined,
+   447→          baseURL: editBaseURL.trim() || undefined,
+   448→          defaultModel: editModel.trim() || undefined,
+   449→        }),
+   450→      });
+   451→      setEditApiKey('');
+   452→      setExpanded(false);
+   453→      onChanged();
+   454→    } finally {
+   455→      setSaving(false);
+   456→    }
+   457→  };
+   458→
+   459→  const handleTest = async (e: React.MouseEvent) => {
+   460→    e.stopPropagation();
+   461→    // Save first if there are unsaved edits
+   462→    if (editApiKey.trim() || editBaseURL !== provider.baseURL || editModel !== (provider.effectiveModel || provider.defaultModel)) {
+   463→      setSaving(true);
+   464→      await fetch('/api/agent/providers', {
+   465→        method: 'POST',
+   466→        headers: { 'Content-Type': 'application/json' },
+   467→        body: JSON.stringify({
+   468→          providerId: provider.id,
+   469→          apiKey: editApiKey.trim() || undefined,
+   470→          baseURL: editBaseURL.trim() || undefined,
+   471→          defaultModel: editModel.trim() || undefined,
+   472→        }),
+   473→      });
+   474→      setSaving(false);
+   475→      setEditApiKey('');
+   476→    }
+   477→    setTesting(true);
+   478→    setTestResult(null);
+   479→    try {
+   480→      const res = await fetch('/api/agent/providers/test', {
+   481→        method: 'POST',
+   482→        headers: { 'Content-Type': 'application/json' },
+   483→        body: JSON.stringify({ providerId: provider.id }),
+   484→      });
+   485→      const data = (await res.json()) as { ok: boolean; error?: string };
+   486→      setTestResult(data);
+   487→    } catch (err) {
+   488→      setTestResult({ ok: false, error: err instanceof Error ? err.message : String(err) });
+   489→    } finally {
+   490→      setTesting(false);
+   491→    }
+   492→  };
+   493→
+   494→  return (
+   495→    <div className={cn(
+   496→      'rounded-md border transition-colors overflow-hidden',
+   497→      isDefault
+   498→        ? 'border-claude-accent bg-claude-accent-light/20 ring-1 ring-claude-accent/30'
+   499→        : provider.available
+   500→          ? 'border-emerald-500/30 bg-emerald-500/5'
+   501→          : 'border-claude-border bg-claude-surface',
+   502→    )}>
+   503→      {/* Header row — click to set default, has expand chevron */}
+   504→      <div
+   505→        className="flex items-center gap-2.5 px-3 py-2 cursor-pointer hover:bg-claude-bg-elevated/30 transition-colors"
+   506→        onClick={() => void onSetDefault(provider.id)}
+   507→      >
+   508→        {/* Radio indicator */}
+   509→        <div className={cn(
+   510→          'h-4 w-4 rounded-full border-2 shrink-0 flex items-center justify-center transition-colors',
+   511→          isDefault ? 'border-claude-accent' : 'border-claude-border',
+   512→        )}>
+   513→          {isDefault && <div className="h-2 w-2 rounded-full bg-claude-accent" />}
+   514→        </div>
+   515→        {/* Label badge */}
+   516→        <div className={cn(
+   517→          'w-8 h-8 rounded shrink-0 flex items-center justify-center text-[10px] font-bold',
+   518→          provider.available
+   519→            ? 'bg-emerald-500/15 text-emerald-600'
+   520→            : 'bg-claude-bg-elevated text-claude-text-muted',
+   521→        )}>
+   522→          {provider.label}
+   523→        </div>
+   524→        {/* Info */}
+   525→        <div className="flex-1 min-w-0">
+   526→          <div className="flex items-center gap-1.5">
+   527→            <span className="text-xs font-medium text-claude-text truncate">{provider.displayName}</span>
+   528→            {isDefault && (
+   529→              <Badge variant="outline" className="h-4 px-1 text-[9px] border-claude-accent/40 text-claude-accent bg-claude-accent/10 shrink-0">
+   530→                默认
+   531→              </Badge>
+   532→            )}
+   533→            {provider.available && !isDefault && (
+   534→              <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 shrink-0" />
+   535→            )}
+   536→          </div>
+   537→          <div className="text-[10px] text-claude-text-muted truncate">
+   538→            <span className="font-mono">{provider.effectiveModel || provider.defaultModel}</span>
+   539→          </div>
+   540→        </div>
+   541→        {/* Actions */}
+   542→        {provider.id !== 'zai' && (
+   543→          <button
+   544→            onClick={(e) => { e.stopPropagation(); void handleExpand(); }}
+   545→            className="shrink-0 text-claude-text-muted hover:text-claude-accent transition-colors p-1"
+   546→            title={expanded ? "收起" : "编辑"}
+   547→          >
+   548→            <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', expanded && 'rotate-180')} />
+   549→          </button>
+   550→        )}
+   551→        {provider.id !== 'zai' && (
+   552→          <button
+   553→            onClick={(e) => { e.stopPropagation(); void handleDelete(); }}
+   554→            disabled={deleting}
+   555→            className="shrink-0 text-claude-text-muted hover:text-red-500 transition-colors p-1"
+   556→            title="删除"
+   557→          >
+   558→            {deleting ? <Loader2 className="h-3 w-3 animate-spin" /> : <Trash2 className="h-3 w-3" />}
+   559→          </button>
+   560→        )}
+   561→      </div>
+   562→
+   563→      {/* Expanded edit panel */}
+   564→      {expanded && provider.id !== 'zai' && (
+   565→        <motion.div
+   566→          initial={{ height: 0, opacity: 0 }}
+   567→          animate={{ height: 'auto', opacity: 1 }}
+   568→          exit={{ height: 0, opacity: 0 }}
+   569→          className="overflow-hidden"
+   570→        >
+   571→          <div className="px-3 pb-3 pt-1 border-t border-claude-border/50 space-y-2.5">
+   572→            {/* API Key */}
+   573→            <div>
+   574→              <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1 flex items-center gap-1">
+   575→                <Key className="h-2.5 w-2.5" />
+   576→                API Key {provider.hasApiKey && <span className="text-emerald-600 normal-case tracking-normal">（已设置，输入新值替换）</span>}
+   577→              </Label>
+   578→              <Input
+   579→                type="password"
+   580→                value={editApiKey}
+   581→                onChange={(e) => setEditApiKey(e.target.value)}
+   582→                placeholder={provider.hasApiKey ? '••••••••（输入新值替换）' : '输入 API Key…'}
+   583→                className="h-8 text-xs bg-claude-bg-base border-claude-border font-mono"
+   584→              />
+   585→            </div>
+   586→            {/* Base URL */}
+   587→            <div>
+   588→              <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1 flex items-center gap-1">
+   589→                <Globe className="h-2.5 w-2.5" />
+   590→                Base URL
+   591→              </Label>
+   592→              <Input
+   593→                type="text"
+   594→                value={editBaseURL}
+   595→                onChange={(e) => setEditBaseURL(e.target.value)}
+   596→                className="h-8 text-xs bg-claude-bg-base border-claude-border font-mono"
+   597→              />
+   598→            </div>
+   599→            {/* Model */}
+   600→            <div>
+   601→              <Label className="text-[10px] uppercase tracking-wider text-claude-text-muted mb-1 flex items-center gap-1">
+   602→                <Box className="h-2.5 w-2.5" />
+   603→                默认模型
+   604→              </Label>
+   605→              <select
+   606→                value={editModel}
+   607→                onChange={(e) => setEditModel(e.target.value)}
+   608→                className="w-full h-8 text-xs bg-claude-bg-base border border-claude-border rounded px-2 focus:outline-none focus:ring-1 focus:ring-claude-accent/30"
+   609→              >
+   610→                {provider.models.map((m) => (
+   611→                  <option key={m.id} value={m.id}>
+   612→                    {m.name} ({m.id})
+   613→                  </option>
+   614→                ))}
+   615→                {/* Include current if not in list */}
+   616→                {!provider.models.some((m) => m.id === editModel) && editModel && (
+   617→                  <option value={editModel}>{editModel}</option>
+   618→                )}
+   619→              </select>
+   620→            </div>
+   621→            {/* Test result */}
+   622→            {testResult && (
+   623→              <div className={cn(
+   624→                'rounded-md px-2.5 py-1.5 text-[11px] flex items-center gap-1.5 border',
+   625→                testResult.ok
+   626→                  ? 'border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-300'
+   627→                  : 'border-red-500/30 bg-red-500/5 text-red-700 dark:text-red-300',
+   628→              )}>
+   629→                {testResult.ok ? <Check className="h-3 w-3 shrink-0" /> : <AlertCircle className="h-3 w-3 shrink-0" />}
+   630→                <span className="break-words">{testResult.ok ? '连接成功！' : testResult.error}</span>
+   631→              </div>
+   632→            )}
+   633→            {/* Action buttons */}
+   634→            <div className="flex items-center justify-end gap-1.5 pt-1">
+   635→              <Button
+   636→                size="sm"
+   637→                variant="outline"
+   638→                onClick={handleTest}
+   639→                disabled={testing}
+   640→                className="h-7 text-[10px] border-claude-border"
+   641→              >
+   642→                {testing ? <Loader2 className="h-3 w-3 animate-spin" /> : <Zap className="h-3 w-3" />}
+   643→                测试
+   644→              </Button>
+   645→              <Button
+   646→                size="sm"
+   647→                onClick={handleSave}
+   648→                disabled={saving || (!editApiKey.trim() && editBaseURL === provider.baseURL && editModel === (provider.effectiveModel || provider.defaultModel))}
+   649→                className="h-7 text-[10px] bg-claude-accent hover:bg-claude-accent-hover text-white"
+   650→              >
+   651→                {saving ? <Loader2 className="h-3 w-3 animate-spin" /> : <Check className="h-3 w-3" />}
+   652→                保存
+   653→              </Button>
+   654→            </div>
+   655→          </div>
+   656→        </motion.div>
+   657→      )}
+   658→    </div>
+   659→  );
+   660→}
+   661→

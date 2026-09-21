@@ -548,3 +548,27 @@ Stage Summary:
 - cb 9 文件 16 处全部清零；bc 前会话已清零、本轮重生成复核一致；两学科验证退出码均为 0
 - 沉淀三类手法：①无标点断点的 wtext 长句（整 token 宽即整行宽、maxW 收紧无效）→ 手工按语义断成多行 text；②表底注被表格末行压住 → 缩 rowH 腾出表底带并把注移入；③窄列 wtext 多列同基线互叠 → 统一改为等宽多列×等行距的手工断行列
 - 待主控汇总九学科后进入全量栅格化 + VLM 四维审校
+
+---
+Task ID: 42-llm-providers
+Agent: 主控（AI 供应商配置功能全栈开发）
+Task: 给 AI 助教加上 provider 选择和 API key 配置等设置页面（参考 github.com/Jing0715-fer/pdb-tracker-web-v5）
+
+Work Log:
+- 【调研参考】clone pdb-tracker-web-v5 到 /tmp/pdb-ref，研读其 ProvidersPanel.tsx / providers API / catalog / credentials / openai-compat-adapter 设计
+- 【新增 src/lib/ai/providers.ts】16 家供应商目录：zai（内置 SDK 免 Key）、deepseek、openai、anthropic、google、qwen、moonshot、zhipu、siliconflow、minimax、openrouter、groq、mistral、xai、ollama、custom（自定义 OpenAI 兼容）；每家含 baseURL/模型列表/文档链接/分组（内置/国内/国际/聚合/本地）
+- 【新增 src/lib/ai/credentials.ts】文件型凭据存储：.bioscholar/ai-providers.json + ai-default-provider.json（0o600 权限），内存缓存 + mtime 失效；resolveApiKey/BaseURL/Model 带 env var fallback；listProviderStatuses 输出脱敏 Key（sk-te…2345）
+- 【新增 src/lib/ai/llm.ts】统一调用器：streamLlmDeltas()（AsyncGenerator<string>）——zai 走 SDK，其余走 OpenAI 兼容 fetch SSE（支持 authHeader/extraHeaders 覆盖，错误带供应商名+排查提示：401 Key 无效/404 URL 错/429 限流）；completeVision() 看图讲解统一入口（zai→createVision，其余→多模态 chat）
+- 【新增 API】/api/assistant/providers（GET 列表+状态、POST 保存/设默认（providerId 白名单校验）、DELETE 删除）；/api/assistant/providers/test（GET /models 优先 → 404/405 回退最小 chat 请求，8s 超时，401/HTML/超时分类报错）
+- 【新增 src/components/bio/providers-panel.tsx】配置弹窗：分组供应商下拉 → Base URL 自动填充 → 模型下拉/自定义模型切换 → Key 密码框（眼睛切换）→ 测试并保存/保存；已配置列表（radio 设默认、ring 高亮、脱敏 Key+模型展示、展开编辑、测试、删除）；底部安全声明；framer-motion 展开动画；emerald 主题匹配 BioScholar
+- 【改造 assistant-view.tsx】工具栏新增供应商配置按钮（绿点=内置/teal 点=自定义 + 当前供应商名，title 显示供应商·模型）；输入区底部新增「引擎：供应商 / 模型」标注；挂载时拉取 /api/assistant/providers 刷新指示器；配置变更后 onChanged 同步刷新
+- 【改造 /api/chat】ZAI 直调替换为 streamLlmDeltas（req.signal 透传给上游 fetch）；safeEnqueue 防 client 断开崩溃；figure-explain 替换为 completeVision；错误 message 直接透传前端（含供应商配置引导）
+- 【合规】.gitignore 新增 .bioscholar/（API Key 不入库）；未删任何文件
+- 【验证】bun run lint 零错误；curl 全 CRUD 流程：save 假 Key→test 真实 DeepSeek 401（"API Key 无效——Authentication Fails, ****6789 is invalid"）→maskedKey 展示→DELETE→默认回退 zai；agent-browser 端到端：面板开合、分组下拉、Base URL 自动填充、自定义模型输入、Key 显示切换、测试内联报错、设默认（服务端+UI ring+头部指示器+引擎标注同步）、删除配置、聊天 401 错误展示+重试按钮；移动端 375px 弹窗全宽适配无溢出、按钮 48px；桌面 1280px 粘性页脚正常；console 无错误
+
+Stage Summary:
+- 功能完整交付：16 家 LLM 供应商可选可配可测可切换，聊天+看图讲解统一走生效供应商
+- 双路径均经真实 API 验证：OpenAI 兼容路径（DeepSeek 假 Key 真实 401 往返）、zai 路径（SDK 调用链路经 stack trace 确认，因沙箱账户级 429 限流未能看到完整成功流；代码与原实现逻辑等价）
+- Key 安全：仅存本机 .bioscholar/（0o600、gitignore），API 返回脱敏 Key
+- 未解决/风险：①沙箱 z-ai 账户 429 限流持续（影响本会话所有 SDK 调用与聊天验证，非代码问题，限流解除后聊天应即刻恢复）②zai 切自定义供应商后若模型不支持视觉输入，看图讲解会报错（已在错误信息中提示）③测试端点对不含 /models 的供应商依赖回退 chat 请求，会消耗少量 token
+- 下一阶段建议：①限流解除后补一轮成功流聊天验证 ②供应商配置可考虑增加「每会话独立供应商」或连接池监控 ③可加 Key 有效性定期巡检角标

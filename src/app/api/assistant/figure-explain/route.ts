@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { readFile } from 'node:fs/promises'
 import path from 'node:path'
-import ZAI from 'z-ai-web-dev-sdk'
+import { completeVision } from '@/lib/ai/llm'
 import { subjects } from '@/data/biology'
 import type { SubjectId } from '@/lib/types'
 
@@ -112,37 +112,25 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // ---- 调用 VLM 看图讲解 ----
-    const zai = await ZAI.create()
-    const completion = await zai.chat.completions.createVision({
-      model: 'glm-5v-turbo',
-      messages: [
-        {
-          role: 'user',
-          content: [
-            {
-              type: 'text' as const,
-              text: buildPrompt({
-                num: body.num,
-                caption: body.caption,
-                credit: body.credit,
-                ...ctx,
-              }),
-            },
-            { type: 'image_url' as const, image_url: { url: dataUrl } },
-          ],
-        },
-      ],
-      thinking: { type: 'disabled' },
-    })
+    // ---- 调用统一看图讲解（供应商可在「供应商配置」中切换） ----
+    const content = await completeVision(
+      buildPrompt({
+        num: body.num,
+        caption: body.caption,
+        credit: body.credit,
+        ...ctx,
+      }),
+      dataUrl
+    )
 
-    const content = completion.choices[0]?.message?.content ?? ''
     if (!content) {
       return NextResponse.json({ error: '讲解生成失败，请稍后再试' }, { status: 502 })
     }
     return NextResponse.json({ content })
   } catch (e) {
     console.error('figure-explain error:', e)
-    return NextResponse.json({ error: '服务器内部错误' }, { status: 500 })
+    const message =
+      e instanceof Error ? e.message : '服务器内部错误'
+    return NextResponse.json({ error: message }, { status: 502 })
   }
 }

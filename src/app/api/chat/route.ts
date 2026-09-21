@@ -1,8 +1,9 @@
 import { NextRequest } from 'next/server'
-import ZAI from 'z-ai-web-dev-sdk'
 import { db } from '@/lib/db'
 import { getSection, getSubject, getChapter } from '@/data/biology'
 import { glossary } from '@/data/glossary'
+import { streamLlmDeltas } from '@/lib/ai/llm'
+import type { LlmMessage } from '@/lib/ai/llm'
 import type { SubjectId } from '@/lib/types'
 
 export const runtime = 'nodejs'
@@ -122,61 +123,36 @@ export async function POST(req: NextRequest) {
     const systemPrompt =
       buildSystemPrompt(context) + findRelevantTerms(message)
 
-    const messages = [
-      { role: 'system' as const, content: systemPrompt },
+    const messages: LlmMessage[] = [
+      { role: 'system', content: systemPrompt },
       ...trimmed.map((m) => ({
         role: m.role as 'user' | 'assistant',
         content: m.content,
       })),
     ]
 
-    // 调用 LLM（流式）
-    const zai = await ZAI.create()
-    const stream = (await zai.chat.completions.create({
-      messages,
-      stream: true,
-      thinking: { type: 'disabled' },
-    })) as unknown as ReadableStream<Uint8Array> | null
-
-    if (!stream) {
-      throw new Error('LLM 未返回流')
-    }
-
-    // 转发 SSE，同时累计完整回复
+    // 统一 LLM 流式调用（供应商可在「供应商配置」中切换；
+    // 客户端断开时透传 abort 给上游 fetch）
     const encoder = new TextEncoder()
-    const decoder = new TextDecoder()
     let fullReply = ''
 
     const transformed = new ReadableStream({
       async start(controller) {
-        const reader = stream.getReader()
-        let buffer = ''
+        /** 客户端断开后 enqueue 会抛错——静默吞掉 */
+        const safeEnqueue = (chunk: string) => {
+          try {
+            controller.enqueue(encoder.encode(chunk))
+          } catch {
+            /* client disconnected */
+          }
+        }
         try {
-          for (;;) {
-            const { done, value } = await reader.read()
-            if (done) break
-            buffer += decoder.decode(value, { stream: true })
-            // 解析 SSE 行
-            const lines = buffer.split('\n')
-            buffer = lines.pop() ?? ''
-            for (const line of lines) {
-              const trimmedLine = line.trim()
-              if (!trimmedLine.startsWith('data:')) continue
-              const payload = trimmedLine.slice(5).trim()
-              if (payload === '[DONE]') continue
-              try {
-                const json = JSON.parse(payload)
-                const delta: string | undefined =
-                  json?.choices?.[0]?.delta?.content ??
-                  json?.choices?.[0]?.message?.content
-                if (delta) {
-                  fullReply += delta
-                  controller.enqueue(encoder.encode(sseEncode({ delta })))
-                }
-              } catch {
-                // 忽略无法解析的行
-              }
-            }
+          for await (const delta of streamLlmDeltas({
+            messages,
+            signal: req.signal,
+          })) {
+            fullReply += delta
+            safeEnqueue(sseEncode({ delta }))
           }
           // 完成：保存助手消息
           if (fullReply.trim()) {
@@ -189,14 +165,20 @@ export async function POST(req: NextRequest) {
               },
             })
           }
-          controller.enqueue(encoder.encode(sseEncode({ done: true })))
+          safeEnqueue(sseEncode({ done: true }))
         } catch (e) {
           console.error('chat stream error:', e)
-          controller.enqueue(
-            encoder.encode(sseEncode({ error: '生成回复时出错，请重试' }))
-          )
+          const error =
+            e instanceof Error
+              ? e.message
+              : '生成回复时出错，请重试'
+          safeEnqueue(sseEncode({ error }))
         } finally {
-          controller.close()
+          try {
+            controller.close()
+          } catch {
+            /* already closed */
+          }
         }
       },
     })

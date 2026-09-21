@@ -1,0 +1,941 @@
+     1→     1→'use client'
+     2→     2→
+     3→     3→import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+     4→     4→import type { ChangeEvent, KeyboardEvent } from 'react'
+     5→     5→import {
+     6→     6→  BookOpenText,
+     7→     7→  Check,
+     8→     8→  ChevronDown,
+     9→     9→  CircleAlert,
+    10→    10→  Copy,
+    11→    11→  Dna,
+    12→    12→  Lightbulb,
+    13→    13→  RotateCcw,
+    14→    14→  Send,
+    15→    15→  Sparkles,
+    16→    16→  Square,
+    17→    17→  Trash2,
+    18→    18→  X,
+    19→    19→} from 'lucide-react'
+    20→    20→import { useAppStore } from '@/lib/store'
+    21→    21→import { getChapter, getSubject, subjects } from '@/data/biology'
+    22→    22→import { getSubjectTheme } from '@/components/bio/subject-theme'
+    23→    23→import { Markdown } from '@/components/bio/markdown'
+    24→    24→import type { ChatMessage, SubjectId } from '@/lib/types'
+    25→    25→import { Button } from '@/components/ui/button'
+    26→    26→import { Badge } from '@/components/ui/badge'
+    27→    27→import { Skeleton } from '@/components/ui/skeleton'
+    28→    28→import { Textarea } from '@/components/ui/textarea'
+    29→    29→import {
+    30→    30→  Select,
+    31→    31→  SelectContent,
+    32→    32→  SelectItem,
+    33→    33→  SelectTrigger,
+    34→    34→  SelectValue,
+    35→    35→} from '@/components/ui/select'
+    36→    36→import {
+    37→    37→  AlertDialog,
+    38→    38→  AlertDialogAction,
+    39→    39→  AlertDialogCancel,
+    40→    40→  AlertDialogContent,
+    41→    41→  AlertDialogDescription,
+    42→    42→  AlertDialogFooter,
+    43→    43→  AlertDialogHeader,
+    44→    44→  AlertDialogTitle,
+    45→    45→  AlertDialogTrigger,
+    46→    46→} from '@/components/ui/alert-dialog'
+    47→    47→import { useToast } from '@/hooks/use-toast'
+    48→    48→import { cn } from '@/lib/utils'
+    49→    49→
+    50→    50→// ============================================================
+    51→    51→// AI 智能助教聊天视图（SSE 流式渲染）
+    52→    52→// ============================================================
+    53→    53→
+    54→    54→/** localStorage 会话 id 键 */
+    55→    55→const SESSION_KEY = 'bioscholar-chat-session'
+    56→    56→
+    57→    57→/** 输入框最大高度（约 4 行） */
+    58→    58→const MAX_INPUT_HEIGHT = 104
+    59→    59→
+    60→    60→/** 学科 id 列表（下拉过滤用） */
+    61→    61→const SUBJECT_IDS: SubjectId[] = subjects.map((s) => s.id)
+    62→    62→
+    63→    63→/** 空会话时的快捷经典问题 */
+    64→    64→const QUICK_QUESTIONS: Array<{ tag: string; question: string }> = [
+    65→    65→  { tag: '生物化学', question: '用化学渗透假说解释氧化磷酸化中 ATP 的合成过程' },
+    66→    66→  {
+    67→    67→    tag: '生物化学',
+    68→    68→    question: '米氏常数 Km 与最大速率 Vmax 的物理意义是什么？如何用双倒数作图法求取？',
+    69→    69→  },
+    70→    70→  { tag: '分子生物学', question: '比较原核与真核基因表达调控的异同' },
+    71→    71→  { tag: '细胞生物学', question: '为什么说 Bcl-2 家族是细胞凋亡的「开关」？' },
+    72→    72→  { tag: '生物物理学', question: '膜蛋白跨膜区的 α-螺旋为什么在脂双层环境中能保持稳定？' },
+    73→    73→  {
+    74→    74→    tag: '综合',
+    75→    75→    question: '从中心法则出发，梳理遗传信息从 DNA 到蛋白质的传递过程及其调控层次',
+    76→    76→  },
+    77→    77→]
+    78→    78→
+    79→    79→/* ---------- 类型与守卫 ---------- */
+    80→    80→
+    81→    81→/** 聊天上下文（与后端 API 契约一致） */
+    82→    82→type ChatContext = NonNullable<ChatMessage['context']>
+    83→    83→
+    84→    84→/** 本地展示消息（在持久化字段之外附加流式状态） */
+    85→    85→interface DisplayMessage extends ChatMessage {
+    86→    86→  /** 流式过程中出错的信息 */
+    87→    87→  error?: string
+    88→    88→  /** 用户手动停止 */
+    89→    89→  stopped?: boolean
+    90→    90→}
+    91→    91→
+    92→    92→function isRecord(v: unknown): v is Record<string, unknown> {
+    93→    93→  return typeof v === 'object' && v !== null
+    94→    94→}
+    95→    95→
+    96→    96→function isDeltaEvent(v: unknown): v is { delta: string } {
+    97→    97→  return isRecord(v) && typeof v.delta === 'string'
+    98→    98→}
+    99→    99→
+   100→   100→function isDoneEvent(v: unknown): v is { done: boolean } {
+   101→   101→  return isRecord(v) && typeof v.done === 'boolean'
+   102→   102→}
+   103→   103→
+   104→   104→function isErrorEvent(v: unknown): v is { error: string } {
+   105→   105→  return isRecord(v) && typeof v.error === 'string'
+   106→   106→}
+   107→   107→
+   108→   108→function isChatMessage(v: unknown): v is ChatMessage {
+   109→   109→  return (
+   110→   110→    isRecord(v) &&
+   111→   111→    typeof v.id === 'string' &&
+   112→   112→    (v.role === 'user' || v.role === 'assistant') &&
+   113→   113→    typeof v.content === 'string' &&
+   114→   114→    typeof v.createdAt === 'string'
+   115→   115→  )
+   116→   116→}
+   117→   117→
+   118→   118→function isHistoryResponse(v: unknown): v is { messages: ChatMessage[] } {
+   119→   119→  return isRecord(v) && Array.isArray(v.messages) && v.messages.every(isChatMessage)
+   120→   120→}
+   121→   121→
+   122→   122→function isSubjectId(v: string): v is SubjectId {
+   123→   123→  return SUBJECT_IDS.includes(v as SubjectId)
+   124→   124→}
+   125→   125→
+   126→   126→function uuid(): string {
+   127→   127→  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+   128→   128→    return crypto.randomUUID()
+   129→   129→  }
+   130→   130→  return `local-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`
+   131→   131→}
+   132→   132→
+   133→   133→const timeFormatter = new Intl.DateTimeFormat('zh-CN', {
+   134→   134→  hour: '2-digit',
+   135→   135→  minute: '2-digit',
+   136→   136→  hour12: false,
+   137→   137→})
+   138→   138→
+   139→   139→function formatTime(iso: string): string {
+   140→   140→  const d = new Date(iso)
+   141→   141→  return Number.isNaN(d.getTime()) ? '' : timeFormatter.format(d)
+   142→   142→}
+   143→   143→
+   144→   144→/* ---------- 子组件 ---------- */
+   145→   145→
+   146→   146→/** 历史加载骨架 */
+   147→   147→function HistorySkeleton() {
+   148→   148→  return (
+   149→   149→    <div className="flex flex-col gap-5 py-2" aria-label="正在加载历史对话" aria-busy="true">
+   150→   150→      <div className="flex justify-end">
+   151→   151→        <Skeleton className="h-10 w-44 rounded-2xl rounded-br-md" />
+   152→   152→      </div>
+   153→   153→      <div className="flex gap-2.5">
+   154→   154→        <Skeleton className="h-8 w-8 shrink-0 rounded-full" />
+   155→   155→        <Skeleton className="h-16 w-3/5 rounded-2xl rounded-tl-md" />
+   156→   156→      </div>
+   157→   157→      <div className="flex justify-end">
+   158→   158→        <Skeleton className="h-10 w-32 rounded-2xl rounded-br-md" />
+   159→   159→      </div>
+   160→   160→      <div className="flex gap-2.5">
+   161→   161→        <Skeleton className="h-8 w-8 shrink-0 rounded-full" />
+   162→   162→        <Skeleton className="h-28 w-4/5 rounded-2xl rounded-tl-md" />
+   163→   163→      </div>
+   164→   164→    </div>
+   165→   165→  )
+   166→   166→}
+   167→   167→
+   168→   168→/** 空会话快捷问题（编辑式学术卡：衬线题号 + 衬线问题文本） */
+   169→   169→function QuickQuestions({ onPick }: { onPick: (question: string) => void }) {
+   170→   170→  return (
+   171→   171→    <div className="flex h-full flex-col items-center justify-center px-1 py-4 text-center">
+   172→   172→      <p className="bio-eyebrow text-muted-foreground">Quick Questions · 经典问题</p>
+   173→   173→      <h2 className="mt-2.5 font-serif text-lg font-bold leading-snug sm:text-xl">
+   174→   174→        向 BioScholar 助教提问
+   175→   175→      </h2>
+   176→   176→      <p className="mt-1.5 max-w-md text-[11px] leading-relaxed text-muted-foreground sm:text-xs">
+   177→   177→        助教精通生物化学、分子生物学、细胞生物学与生物物理学，
+   178→   178→        支持表格、公式推导与对比分析。点击经典问题立即开始：
+   179→   179→      </p>
+   180→   180→      <div className="mt-5 grid w-full grid-cols-1 gap-2 text-left sm:grid-cols-2">
+   181→   181→        {QUICK_QUESTIONS.map((q, i) => (
+   182→   182→          <button
+   183→   183→            key={q.question}
+   184→   184→            type="button"
+   185→   185→            onClick={() => onPick(q.question)}
+   186→   186→            className="group flex items-start gap-3 rounded-lg border bg-card p-3 text-left outline-none transition-colors hover:border-foreground/25 hover:bg-accent/40 focus-visible:ring-2 focus-visible:ring-ring sm:p-3.5"
+   187→   187→          >
+   188→   188→            <span
+   189→   189→              className="mt-0.5 font-serif text-base font-bold leading-none tabular-nums text-muted-foreground/55 transition-colors group-hover:text-foreground"
+   190→   190→              aria-hidden
+   191→   191→            >
+   192→   192→              {String(i + 1).padStart(2, '0')}
+   193→   193→            </span>
+   194→   194→            <span className="flex min-w-0 flex-col gap-0.5">
+   195→   195→              <span className="text-[10px] font-medium tracking-wide text-muted-foreground/80">
+   196→   196→                {q.tag}
+   197→   197→              </span>
+   198→   198→              <span className="font-serif text-[13px] leading-relaxed text-foreground/90">
+   199→   199→                {q.question}
+   200→   200→              </span>
+   201→   201→            </span>
+   202→   202→          </button>
+   203→   203→        ))}
+   204→   204→      </div>
+   205→   205→    </div>
+   206→   206→  )
+   207→   207→}
+   208→   208→
+   209→   209→/** 消息气泡 */
+   210→   210→interface MessageBubbleProps {
+   211→   211→  message: DisplayMessage
+   212→   212→  streaming: boolean
+   213→   213→  copied: boolean
+   214→   214→  onCopy: (message: DisplayMessage) => void
+   215→   215→  onRetry: () => void
+   216→   216→}
+   217→   217→
+   218→   218→const MessageBubble = memo(function MessageBubble({
+   219→   219→  message,
+   220→   220→  streaming,
+   221→   221→  copied,
+   222→   222→  onCopy,
+   223→   223→  onRetry,
+   224→   224→}: MessageBubbleProps) {
+   225→   225→  const isUser = message.role === 'user'
+   226→   226→  const time = formatTime(message.createdAt)
+   227→   227→
+   228→   228→  if (isUser) {
+   229→   229→    return (
+   230→   230→      <div className="bio-fade-up flex justify-end">
+   231→   231→        <div className="flex max-w-[85%] flex-col items-end sm:max-w-[75%]">
+   232→   232→          {message.context?.sectionTitle ? (
+   233→   233→            <span className="mb-1 flex max-w-full items-center gap-1 text-[10px] text-muted-foreground">
+   234→   234→              <BookOpenText className="h-3 w-3 shrink-0" aria-hidden />
+   235→   235→              <span className="truncate">{message.context.sectionTitle}</span>
+   236→   236→            </span>
+   237→   237→          ) : null}
+   238→   238→          <div className="whitespace-pre-wrap break-words rounded-2xl rounded-br-md bg-primary px-4 py-2.5 text-sm leading-relaxed text-primary-foreground shadow-sm">
+   239→   239→            {message.content}
+   240→   240→          </div>
+   241→   241→          <span className="mt-1 text-[10px] text-muted-foreground/80">{time}</span>
+   242→   242→        </div>
+   243→   243→      </div>
+   244→   244→    )
+   245→   245→  }
+   246→   246→
+   247→   247→  return (
+   248→   248→    <div className="bio-fade-up flex gap-2.5 sm:gap-3">
+   249→   249→      <div
+   250→   250→        className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm"
+   251→   251→        aria-hidden
+   252→   252→      >
+   253→   253→        <Dna className="h-4 w-4" />
+   254→   254→      </div>
+   255→   255→      <div className="flex min-w-0 flex-1 flex-col items-start">
+   256→   256→        <div className="w-full max-w-full rounded-2xl rounded-tl-md border bg-card px-3.5 py-3 shadow-sm sm:px-4">
+   257→   257→          {message.content ? (
+   258→   258→            <>
+   259→   259→              <Markdown content={message.content} />
+   260→   260→              {streaming ? (
+   261→   261→                <span
+   262→   262→                  className="mt-1 inline-block h-4 w-[2px] translate-y-0.5 animate-pulse rounded bg-primary"
+   263→   263→                  aria-hidden
+   264→   264→                />
+   265→   265→              ) : null}
+   266→   266→            </>
+   267→   267→          ) : streaming ? (
+   268→   268→            <div className="flex items-center gap-1.5 py-1" role="status" aria-label="AI 正在思考">
+   269→   269→              <span className="bio-dot-1 h-2 w-2 rounded-full bg-primary" />
+   270→   270→              <span className="bio-dot-2 h-2 w-2 rounded-full bg-primary" />
+   271→   271→              <span className="bio-dot-3 h-2 w-2 rounded-full bg-primary" />
+   272→   272→              <span className="ml-1.5 text-xs text-muted-foreground">助教正在思考…</span>
+   273→   273→            </div>
+   274→   274→          ) : null}
+   275→   275→
+   276→   276→          {message.error ? (
+   277→   277→            <div className="mt-2 flex items-start gap-1.5 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2 text-xs leading-relaxed text-destructive">
+   278→   278→              <CircleAlert className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden />
+   279→   279→              <span>生成中断：{message.error}</span>
+   280→   280→            </div>
+   281→   281→          ) : null}
+   282→   282→
+   283→   283→          {message.stopped && !message.error ? (
+   284→   284→            <p className="mt-1.5 text-[11px] italic text-muted-foreground">已手动停止生成</p>
+   285→   285→          ) : null}
+   286→   286→        </div>
+   287→   287→
+   288→   288→        <div className="mt-1 flex items-center gap-1">
+   289→   289→          <span className="text-[10px] text-muted-foreground/80">{time}</span>
+   290→   290→          {!streaming && message.content ? (
+   291→   291→            <button
+   292→   292→              type="button"
+   293→   293→              onClick={() => onCopy(message)}
+   294→   294→              aria-label={copied ? '已复制' : '复制回复内容'}
+   295→   295→              className="rounded-md p-1 text-muted-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
+   296→   296→            >
+   297→   297→              {copied ? (
+   298→   298→                <Check className="h-3 w-3 text-emerald-600" aria-hidden />
+   299→   299→              ) : (
+   300→   300→                <Copy className="h-3 w-3" aria-hidden />
+   301→   301→              )}
+   302→   302→            </button>
+   303→   303→          ) : null}
+   304→   304→          {message.error ? (
+   305→   305→            <Button
+   306→   306→              type="button"
+   307→   307→              variant="ghost"
+   308→   308→              size="sm"
+   309→   309→              onClick={onRetry}
+   310→   310→              className="h-6 gap-1 rounded-md px-2 text-[11px] text-destructive hover:bg-destructive/10 hover:text-destructive"
+   311→   311→            >
+   312→   312→              <RotateCcw className="h-3 w-3" aria-hidden />
+   313→   313→              重试
+   314→   314→            </Button>
+   315→   315→          ) : null}
+   316→   316→        </div>
+   317→   317→      </div>
+   318→   318→    </div>
+   319→   319→  )
+   320→   320→})
+   321→   321→
+   322→   322→/* ---------- 主视图 ---------- */
+   323→   323→
+   324→   324→export function AssistantView() {
+   325→   325→  const assistantContext = useAppStore((s) => s.assistantContext)
+   326→   326→  const setAssistantContext = useAppStore((s) => s.setAssistantContext)
+   327→   327→  const { toast } = useToast()
+   328→   328→
+   329→   329→  const [sessionId, setSessionId] = useState<string | null>(null)
+   330→   330→  const [historyLoaded, setHistoryLoaded] = useState(false)
+   331→   331→  const [hadHistory, setHadHistory] = useState(false)
+   332→   332→  const [messages, setMessages] = useState<DisplayMessage[]>([])
+   333→   333→  const [input, setInput] = useState('')
+   334→   334→  const [generating, setGenerating] = useState(false)
+   335→   335→  const [streamingId, setStreamingId] = useState<string | null>(null)
+   336→   336→  const [atBottom, setAtBottom] = useState(true)
+   337→   337→  const [copiedId, setCopiedId] = useState<string | null>(null)
+   338→   338→  const [subjectFilter, setSubjectFilter] = useState<SubjectId | 'all'>('all')
+   339→   339→
+   340→   340→  const scrollRef = useRef<HTMLDivElement>(null)
+   341→   341→  const textareaRef = useRef<HTMLTextAreaElement>(null)
+   342→   342→  const abortRef = useRef<AbortController | null>(null)
+   343→   343→  const stickRef = useRef(true)
+   344→   344→  const rafRef = useRef<number | null>(null)
+   345→   345→  const pendingRef = useRef('')
+   346→   346→  const streamIdRef = useRef<string | null>(null)
+   347→   347→  const sessionIdRef = useRef<string | null>(null)
+   348→   348→
+   349→   349→  /* ----- 会话初始化 + 历史加载 ----- */
+   350→   350→  useEffect(() => {
+   351→   351→    let sid: string | null = null
+   352→   352→    try {
+   353→   353→      sid = window.localStorage.getItem(SESSION_KEY)
+   354→   354→      if (!sid) {
+   355→   355→        sid = uuid()
+   356→   356→        window.localStorage.setItem(SESSION_KEY, sid)
+   357→   357→      }
+   358→   358→    } catch {
+   359→   359→      // 隐私模式等 localStorage 不可用时退化为内存会话
+   360→   360→      sid = uuid()
+   361→   361→    }
+   362→   362→    sessionIdRef.current = sid
+   363→   363→    setSessionId(sid)
+   364→   364→
+   365→   365→    let cancelled = false
+   366→   366→    fetch(`/api/chat?sessionId=${encodeURIComponent(sid)}`)
+   367→   367→      .then((r) => {
+   368→   368→        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+   369→   369→        return r.json() as Promise<unknown>
+   370→   370→      })
+   371→   371→      .then((data: unknown) => {
+   372→   372→        if (cancelled) return
+   373→   373→        if (isHistoryResponse(data)) {
+   374→   374→          setMessages(data.messages)
+   375→   375→          setHadHistory(data.messages.length > 0)
+   376→   376→        }
+   377→   377→      })
+   378→   378→      .catch(() => {
+   379→   379→        if (!cancelled) {
+   380→   380→          toast({
+   381→   381→            title: '加载历史对话失败',
+   382→   382→            description: '请刷新页面重试',
+   383→   383→            variant: 'destructive',
+   384→   384→          })
+   385→   385→        }
+   386→   386→      })
+   387→   387→      .finally(() => {
+   388→   388→        if (!cancelled) setHistoryLoaded(true)
+   389→   389→      })
+   390→   390→
+   391→   391→    return () => {
+   392→   392→      cancelled = true
+   393→   393→    }
+   394→   394→  }, [toast])
+   395→   395→
+   396→   396→  /* ----- 卸载时中止请求 ----- */
+   397→   397→  useEffect(() => {
+   398→   398→    return () => {
+   399→   399→      abortRef.current?.abort()
+   400→   400→      if (rafRef.current != null) cancelAnimationFrame(rafRef.current)
+   401→   401→    }
+   402→   402→  }, [])
+   403→   403→
+   404→   404→  /* ----- 流式增量 rAF 批量渲染 ----- */
+   405→   405→  const flush = useCallback(() => {
+   406→   406→    const chunk = pendingRef.current
+   407→   407→    pendingRef.current = ''
+   408→   408→    const id = streamIdRef.current
+   409→   409→    if (!chunk || !id) return
+   410→   410→    setMessages((prev) =>
+   411→   411→      prev.map((m) => (m.id === id ? { ...m, content: m.content + chunk } : m))
+   412→   412→    )
+   413→   413→  }, [])
+   414→   414→
+   415→   415→  const scheduleFlush = useCallback(() => {
+   416→   416→    if (rafRef.current == null) {
+   417→   417→      rafRef.current = requestAnimationFrame(() => {
+   418→   418→        rafRef.current = null
+   419→   419→        flush()
+   420→   420→      })
+   421→   421→    }
+   422→   422→  }, [flush])
+   423→   423→
+   424→   424→  /* ----- 滚动控制：仅当接近底部时自动跟随 ----- */
+   425→   425→  const handleScroll = useCallback(() => {
+   426→   426→    const el = scrollRef.current
+   427→   427→    if (!el) return
+   428→   428→    const near = el.scrollHeight - el.scrollTop - el.clientHeight < 80
+   429→   429→    stickRef.current = near
+   430→   430→    setAtBottom((prev) => (prev === near ? prev : near))
+   431→   431→  }, [])
+   432→   432→
+   433→   433→  const scrollToBottom = useCallback((smooth: boolean) => {
+   434→   434→    const el = scrollRef.current
+   435→   435→    if (!el) return
+   436→   436→    stickRef.current = true
+   437→   437→    setAtBottom(true)
+   438→   438→    el.scrollTo({ top: el.scrollHeight, behavior: smooth ? 'smooth' : 'auto' })
+   439→   439→  }, [])
+   440→   440→
+   441→   441→  useEffect(() => {
+   442→   442→    if (!stickRef.current) return
+   443→   443→    const el = scrollRef.current
+   444→   444→    if (el) el.scrollTop = el.scrollHeight
+   445→   445→  }, [messages])
+   446→   446→
+   447→   447→  /* ----- 输入框自适应高度 ----- */
+   448→   448→  useEffect(() => {
+   449→   449→    const el = textareaRef.current
+   450→   450→    if (!el) return
+   451→   451→    el.style.height = 'auto'
+   452→   452→    el.style.height = `${Math.min(el.scrollHeight, MAX_INPUT_HEIGHT)}px`
+   453→   453→  }, [input])
+   454→   454→
+   455→   455→  /* ----- 发送 / 流式接收 ----- */
+   456→   456→  const runCompletion = useCallback(
+   457→   457→    async (opts: {
+   458→   458→      text: string
+   459→   459→      context?: ChatContext
+   460→   460→      appendUser: boolean
+   461→   461→      dropTrailingAssistant?: boolean
+   462→   462→    }) => {
+   463→   463→      const sid = sessionIdRef.current
+   464→   464→      const trimmed = opts.text.trim()
+   465→   465→      if (!sid || !trimmed) return
+   466→   466→
+   467→   467→      const aiId = uuid()
+   468→   468→      const now = new Date().toISOString()
+   469→   469→      const assistantMsg: DisplayMessage = {
+   470→   470→        id: aiId,
+   471→   471→        role: 'assistant',
+   472→   472→        content: '',
+   473→   473→        createdAt: now,
+   474→   474→        context: opts.context,
+   475→   475→      }
+   476→   476→      const userMsg: DisplayMessage = {
+   477→   477→        id: uuid(),
+   478→   478→        role: 'user',
+   479→   479→        content: trimmed,
+   480→   480→        createdAt: now,
+   481→   481→        context: opts.context,
+   482→   482→      }
+   483→   483→
+   484→   484→      setMessages((prev) => {
+   485→   485→        let base = prev
+   486→   486→        if (opts.dropTrailingAssistant) {
+   487→   487→          while (base.length > 0 && base[base.length - 1].role === 'assistant') {
+   488→   488→            base = base.slice(0, -1)
+   489→   489→          }
+   490→   490→        }
+   491→   491→        return opts.appendUser ? [...base, userMsg, assistantMsg] : [...base, assistantMsg]
+   492→   492→      })
+   493→   493→      setGenerating(true)
+   494→   494→      setStreamingId(aiId)
+   495→   495→      streamIdRef.current = aiId
+   496→   496→      pendingRef.current = ''
+   497→   497→      stickRef.current = true
+   498→   498→
+   499→   499→      const controller = new AbortController()
+   500→   500→      abortRef.current = controller
+   501→   501→
+   502→   502→      let streamError: string | null = null
+   503→   503→      let userAborted = false
+   504→   504→
+   505→   505→      try {
+   506→   506→        const res = await fetch('/api/chat', {
+   507→   507→          method: 'POST',
+   508→   508→          headers: { 'Content-Type': 'application/json' },
+   509→   509→          body: JSON.stringify({
+   510→   510→            sessionId: sid,
+   511→   511→            message: trimmed,
+   512→   512→            context: opts.context ?? undefined,
+   513→   513→          }),
+   514→   514→          signal: controller.signal,
+   515→   515→        })
+   516→   516→
+   517→   517→        if (!res.ok) {
+   518→   518→          streamError = `服务响应异常（HTTP ${res.status}）`
+   519→   519→        } else {
+   520→   520→          const body = res.body
+   521→   521→          if (!body) {
+   522→   522→            streamError = '响应流不可用'
+   523→   523→          } else {
+   524→   524→            const reader = body.getReader()
+   525→   525→            const decoder = new TextDecoder()
+   526→   526→            let buffer = ''
+   527→   527→            for (;;) {
+   528→   528→              const { done, value } = await reader.read()
+   529→   529→              if (done) break
+   530→   530→              buffer += decoder.decode(value, { stream: true })
+   531→   531→              const lines = buffer.split('\n')
+   532→   532→              buffer = lines.pop() ?? ''
+   533→   533→              for (const rawLine of lines) {
+   534→   534→                const line = rawLine.trim()
+   535→   535→                if (!line.startsWith('data:')) continue
+   536→   536→                const payload = line.slice(5).trim()
+   537→   537→                if (!payload || payload === '[DONE]') continue
+   538→   538→                let parsed: unknown
+   539→   539→                try {
+   540→   540→                  parsed = JSON.parse(payload)
+   541→   541→                } catch {
+   542→   542→                  continue // 忽略无法解析的行
+   543→   543→                }
+   544→   544→                if (isErrorEvent(parsed)) {
+   545→   545→                  streamError = parsed.error
+   546→   546→                  break
+   547→   547→                }
+   548→   548→                if (isDeltaEvent(parsed)) {
+   549→   549→                  pendingRef.current += parsed.delta
+   550→   550→                  scheduleFlush()
+   551→   551→                }
+   552→   552→                // { done: true } 为正常结束标记，无需处理
+   553→   553→              }
+   554→   554→              if (streamError) break
+   555→   555→            }
+   556→   556→            // 提前退出时释放底层连接
+   557→   557→            void reader.cancel().catch(() => {})
+   558→   558→          }
+   559→   559→        }
+   560→   560→      } catch (e) {
+   561→   561→        if (controller.signal.aborted) {
+   562→   562→          userAborted = true
+   563→   563→        } else if (e instanceof TypeError) {
+   564→   564→          streamError = '网络连接失败，请检查网络后重试'
+   565→   565→        } else {
+   566→   566→          streamError = e instanceof Error ? e.message : '请求失败，请重试'
+   567→   567→        }
+   568→   568→      } finally {
+   569→   569→        if (rafRef.current != null) {
+   570→   570→          cancelAnimationFrame(rafRef.current)
+   571→   571→          rafRef.current = null
+   572→   572→        }
+   573→   573→        flush()
+   574→   574→        abortRef.current = null
+   575→   575→        streamIdRef.current = null
+   576→   576→        setStreamingId(null)
+   577→   577→        setGenerating(false)
+   578→   578→      }
+   579→   579→
+   580→   580→      if (streamError !== null) {
+   581→   581→        const err = streamError
+   582→   582→        setMessages((prev) => prev.map((m) => (m.id === aiId ? { ...m, error: err } : m)))
+   583→   583→        toast({ title: '回复生成失败', description: err, variant: 'destructive' })
+   584→   584→      } else if (userAborted) {
+   585→   585→        setMessages((prev) => prev.map((m) => (m.id === aiId ? { ...m, stopped: true } : m)))
+   586→   586→      }
+   587→   587→    },
+   588→   588→    [flush, scheduleFlush, toast]
+   589→   589→  )
+   590→   590→
+   591→   591→  const send = useCallback(
+   592→   592→    (raw: string) => {
+   593→   593→      const text = raw.trim()
+   594→   594→      if (!text || generating || !historyLoaded || sessionId === null) return
+   595→   595→      setInput('')
+   596→   596→      const ctx: ChatContext | undefined = assistantContext ?? undefined
+   597→   597→      textareaRef.current?.focus()
+   598→   598→      void runCompletion({ text, context: ctx, appendUser: true })
+   599→   599→    },
+   600→   600→    [assistantContext, generating, historyLoaded, runCompletion, sessionId]
+   601→   601→  )
+   602→   602→
+   603→   603→  const retryLast = useCallback(() => {
+   604→   604→    if (generating || !historyLoaded) return
+   605→   605→    const lastUser = [...messages].reverse().find((m) => m.role === 'user')
+   606→   606→    if (!lastUser) return
+   607→   607→    void runCompletion({
+   608→   608→      text: lastUser.content,
+   609→   609→      context: lastUser.context ?? undefined,
+   610→   610→      appendUser: false,
+   611→   611→      dropTrailingAssistant: true,
+   612→   612→    })
+   613→   613→  }, [generating, historyLoaded, messages, runCompletion])
+   614→   614→
+   615→   615→  const stop = useCallback(() => {
+   616→   616→    abortRef.current?.abort()
+   617→   617→  }, [])
+   618→   618→
+   619→   619→  const clearConversation = useCallback(async () => {
+   620→   620→    const sid = sessionIdRef.current
+   621→   621→    if (!sid) return
+   622→   622→    abortRef.current?.abort()
+   623→   623→    try {
+   624→   624→      const res = await fetch(`/api/chat?sessionId=${encodeURIComponent(sid)}`, {
+   625→   625→        method: 'DELETE',
+   626→   626→      })
+   627→   627→      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+   628→   628→      setMessages([])
+   629→   629→      setHadHistory(false)
+   630→   630→      toast({ title: '对话已清空', description: '已开始新的会话' })
+   631→   631→    } catch (e) {
+   632→   632→      const desc = e instanceof Error ? e.message : '请稍后重试'
+   633→   633→      toast({ title: '清空对话失败', description: desc, variant: 'destructive' })
+   634→   634→    }
+   635→   635→  }, [toast])
+   636→   636→
+   637→   637→  const copyMessage = useCallback(
+   638→   638→    async (message: DisplayMessage) => {
+   639→   639→      try {
+   640→   640→        await navigator.clipboard.writeText(message.content)
+   641→   641→        setCopiedId(message.id)
+   642→   642→        window.setTimeout(() => setCopiedId((cur) => (cur === message.id ? null : cur)), 1600)
+   643→   643→      } catch {
+   644→   644→        toast({
+   645→   645→          title: '复制失败',
+   646→   646→          description: '当前浏览器不支持剪贴板操作',
+   647→   647→          variant: 'destructive',
+   648→   648→        })
+   649→   649→      }
+   650→   650→    },
+   651→   651→    [toast]
+   652→   652→  )
+   653→   653→
+   654→   654→  /* ----- 输入事件 ----- */
+   655→   655→  const handleInputChange = useCallback((e: ChangeEvent<HTMLTextAreaElement>) => {
+   656→   656→    setInput(e.target.value)
+   657→   657→  }, [])
+   658→   658→
+   659→   659→  const handleKeyDown = useCallback(
+   660→   660→    (e: KeyboardEvent<HTMLTextAreaElement>) => {
+   661→   661→      if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+   662→   662→        e.preventDefault()
+   663→   663→        send(input)
+   664→   664→      }
+   665→   665→    },
+   666→   666→    [input, send]
+   667→   667→  )
+   668→   668→
+   669→   669→  const handleFilterChange = useCallback((v: string) => {
+   670→   670→    setSubjectFilter(v === 'all' ? 'all' : isSubjectId(v) ? v : 'all')
+   671→   671→  }, [])
+   672→   672→
+   673→   673→  /* ----- 派生数据 ----- */
+   674→   674→  const contextInfo = useMemo(() => {
+   675→   675→    if (!assistantContext?.subjectId) return null
+   676→   676→    const subject = getSubject(assistantContext.subjectId)
+   677→   677→    const chapter = assistantContext.chapterId
+   678→   678→      ? getChapter(assistantContext.subjectId, assistantContext.chapterId)
+   679→   679→      : undefined
+   680→   680→    const parts: string[] = [subject?.name ?? '教材']
+   681→   681→    if (chapter) parts.push(`第 ${chapter.number} 章 ${chapter.title}`)
+   682→   682→    if (assistantContext.sectionTitle) parts.push(assistantContext.sectionTitle)
+   683→   683→    return {
+   684→   684→      label: parts.join(' · '),
+   685→   685→      theme: subject ? getSubjectTheme(subject.id) : null,
+   686→   686→    }
+   687→   687→  }, [assistantContext])
+   688→   688→
+   689→   689→  const filterSubject = useMemo(
+   690→   690→    () => (subjectFilter === 'all' ? null : getSubject(subjectFilter)),
+   691→   691→    [subjectFilter]
+   692→   692→  )
+   693→   693→
+   694→   694→  const canSend = input.trim().length > 0 && !generating && historyLoaded && sessionId !== null
+   695→   695→
+   696→   696→  const placeholder = !historyLoaded
+   697→   697→    ? '正在加载会话…'
+   698→   698→    : filterSubject
+   699→   699→      ? `聚焦「${filterSubject.name}」· 输入你的生物学问题…`
+   700→   700→      : '输入你的生物学问题，例如：解释糖酵解的反应历程…'
+   701→   701→
+   702→   702→  /* ----- 渲染 ----- */
+   703→   703→  return (
+   704→   704→    <div className="mx-auto flex h-[calc(100dvh-10rem)] min-h-[460px] w-full max-w-4xl flex-col px-3 pt-4 sm:px-4 lg:h-[calc(100dvh-8.5rem)]">
+   705→   705→      {/* 顶部：编辑式学术头部（含工具栏） */}
+   706→   706→      <header className="relative shrink-0 overflow-hidden rounded-t-2xl border bg-card">
+   707→   707→        <div
+   708→   708→          className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-600"
+   709→   709→          aria-hidden
+   710→   710→        />
+   711→   711→        <div className="px-4 pt-4 sm:px-5">
+   712→   712→          <div className="flex items-start justify-between gap-3">
+   713→   713→            <div className="min-w-0">
+   714→   714→              <p className="bio-eyebrow text-muted-foreground">AI Teaching Assistant</p>
+   715→   715→              <h1 className="mt-1.5 font-serif text-lg font-bold leading-snug tracking-tight sm:text-xl">
+   716→   716→                AI 智能助教
+   717→   717→              </h1>
+   718→   718→              <p className="mt-1 text-xs text-muted-foreground">
+   719→   719→                基于「101计划」教材体系的生物学专家助教
+   720→   720→              </p>
+   721→   721→            </div>
+   722→   722→            <span
+   723→   723→              className="hidden shrink-0 items-center gap-1.5 pt-1 text-[10px] text-muted-foreground sm:inline-flex"
+   724→   724→              aria-live="polite"
+   725→   725→            >
+   726→   726→              <span
+   727→   727→                className={cn(
+   728→   728→                  'h-1.5 w-1.5 rounded-full',
+   729→   729→                  generating ? 'animate-pulse bg-amber-500' : 'bg-emerald-500'
+   730→   730→                )}
+   731→   731→                aria-hidden
+   732→   732→              />
+   733→   733→              {generating ? '生成中' : '在线'}
+   734→   734→            </span>
+   735→   735→          </div>
+   736→   736→        </div>
+   737→   737→        <div className="bio-rule mt-3.5" aria-hidden />
+   738→   738→
+   739→   739→        {/* 工具栏：教材上下文 / 学科过滤 / 清空 */}
+   740→   740→        <div className="flex items-center gap-2 px-3 py-2 sm:px-4">
+   741→   741→          <div className="flex min-w-0 flex-1 items-center">
+   742→   742→            {contextInfo ? (
+   743→   743→              <Badge
+   744→   744→                variant="outline"
+   745→   745→                className={cn(
+   746→   746→                  'gap-1.5 py-1 pl-2.5 pr-1 text-[11px] font-medium',
+   747→   747→                  contextInfo.theme?.classes.badge ??
+   748→   748→                    'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30'
+   749→   749→                )}
+   750→   750→              >
+   751→   751→                <BookOpenText className="h-3 w-3 shrink-0" aria-hidden />
+   752→   752→                <span className="max-w-[13rem] truncate sm:max-w-[24rem]" title={contextInfo.label}>
+   753→   753→                  {contextInfo.label}
+   754→   754→                </span>
+   755→   755→                <button
+   756→   756→                  type="button"
+   757→   757→                  onClick={() => setAssistantContext(null)}
+   758→   758→                  aria-label="清除教材上下文"
+   759→   759→                  className="ml-0.5 rounded-full p-0.5 transition-colors hover:bg-foreground/10"
+   760→   760→                >
+   761→   761→                  <X className="h-3 w-3" aria-hidden />
+   762→   762→                </button>
+   763→   763→              </Badge>
+   764→   764→            ) : filterSubject ? (
+   765→   765→              <Badge
+   766→   766→                variant="outline"
+   767→   767→                className="gap-1.5 border-emerald-500/30 bg-emerald-500/15 py-1 pl-2.5 pr-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400"
+   768→   768→              >
+   769→   769→                <Sparkles className="h-3 w-3 shrink-0" aria-hidden />
+   770→   770→                <span className="truncate">提问聚焦：{filterSubject.name}</span>
+   771→   771→                <button
+   772→   772→                  type="button"
+   773→   773→                  onClick={() => setSubjectFilter('all')}
+   774→   774→                  aria-label="取消学科聚焦"
+   775→   775→                  className="ml-0.5 rounded-full p-0.5 transition-colors hover:bg-foreground/10"
+   776→   776→                >
+   777→   777→                  <X className="h-3 w-3" aria-hidden />
+   778→   778→                </button>
+   779→   779→              </Badge>
+   780→   780→            ) : (
+   781→   781→              <p className="flex min-w-0 items-center gap-1.5 text-[11px] text-muted-foreground">
+   782→   782→                <Lightbulb className="h-3.5 w-3.5 shrink-0 text-muted-foreground/70" aria-hidden />
+   783→   783→                <span className="truncate">
+   784→   784→                  提示：从知识点阅读页点击「向 AI 提问」可携带教材上下文
+   785→   785→                </span>
+   786→   786→              </p>
+   787→   787→            )}
+   788→   788→          </div>
+   789→   789→
+   790→   790→          <div className="flex shrink-0 items-center gap-1.5">
+   791→   791→            <Select value={subjectFilter} onValueChange={handleFilterChange}>
+   792→   792→              <SelectTrigger
+   793→   793→                size="sm"
+   794→   794→                aria-label="选择学科聚焦范围"
+   795→   795→                className="h-8 w-[124px] rounded-lg text-xs text-muted-foreground"
+   796→   796→              >
+   797→   797→                <SelectValue />
+   798→   798→              </SelectTrigger>
+   799→   799→              <SelectContent>
+   800→   800→                <SelectItem value="all">全部学科</SelectItem>
+   801→   801→                {subjects.map((s) => (
+   802→   802→                  <SelectItem key={s.id} value={s.id}>
+   803→   803→                    {s.name}
+   804→   804→                  </SelectItem>
+   805→   805→                ))}
+   806→   806→              </SelectContent>
+   807→   807→            </Select>
+   808→   808→
+   809→   809→            <AlertDialog>
+   810→   810→              <AlertDialogTrigger asChild>
+   811→   811→                <Button
+   812→   812→                  type="button"
+   813→   813→                  variant="ghost"
+   814→   814→                  size="icon"
+   815→   815→                  disabled={messages.length === 0}
+   816→   816→                  aria-label="清空对话"
+   817→   817→                  className="h-8 w-8 rounded-lg text-muted-foreground hover:text-destructive"
+   818→   818→                >
+   819→   819→                  <Trash2 className="h-4 w-4" aria-hidden />
+   820→   820→                </Button>
+   821→   821→              </AlertDialogTrigger>
+   822→   822→              <AlertDialogContent className="max-w-sm">
+   823→   823→                <AlertDialogHeader>
+   824→   824→                  <AlertDialogTitle>清空当前对话？</AlertDialogTitle>
+   825→   825→                  <AlertDialogDescription>
+   826→   826→                    将删除本会话的全部 {messages.length} 条消息记录，此操作无法恢复。
+   827→   827→                  </AlertDialogDescription>
+   828→   828→                </AlertDialogHeader>
+   829→   829→                <AlertDialogFooter>
+   830→   830→                  <AlertDialogCancel>取消</AlertDialogCancel>
+   831→   831→                  <AlertDialogAction
+   832→   832→                    onClick={() => void clearConversation()}
+   833→   833→                    className="bg-destructive text-white hover:bg-destructive/90"
+   834→   834→                  >
+   835→   835→                    确认清空
+   836→   836→                  </AlertDialogAction>
+   837→   837→                </AlertDialogFooter>
+   838→   838→              </AlertDialogContent>
+   839→   839→            </AlertDialog>
+   840→   840→          </div>
+   841→   841→        </div>
+   842→   842→      </header>
+   843→   843→
+   844→   844→      {/* 消息区 */}
+   845→   845→      <div className="relative min-h-0 flex-1 border-x bg-background">
+   846→   846→        <div
+   847→   847→          ref={scrollRef}
+   848→   848→          onScroll={handleScroll}
+   849→   849→          role="log"
+   850→   850→          aria-label="对话消息"
+   851→   851→          aria-live="polite"
+   852→   852→          className="bio-scroll h-full overflow-y-auto px-3 py-4 sm:px-5"
+   853→   853→        >
+   854→   854→          {!historyLoaded ? (
+   855→   855→            <HistorySkeleton />
+   856→   856→          ) : messages.length === 0 ? (
+   857→   857→            <QuickQuestions onPick={send} />
+   858→   858→          ) : (
+   859→   859→            <div className="flex flex-col gap-5">
+   860→   860→              {hadHistory ? (
+   861→   861→                <div className="flex items-center gap-3" aria-hidden>
+   862→   862→                  <div className="bio-rule h-px flex-1" />
+   863→   863→                  <span className="text-[10px] text-muted-foreground">历史消息</span>
+   864→   864→                  <div className="h-px flex-1 bg-gradient-to-l from-border to-transparent" />
+   865→   865→                </div>
+   866→   866→              ) : null}
+   867→   867→              {messages.map((m) => (
+   868→   868→                <MessageBubble
+   869→   869→                  key={m.id}
+   870→   870→                  message={m}
+   871→   871→                  streaming={m.id === streamingId}
+   872→   872→                  copied={copiedId === m.id}
+   873→   873→                  onCopy={copyMessage}
+   874→   874→                  onRetry={retryLast}
+   875→   875→                />
+   876→   876→              ))}
+   877→   877→            </div>
+   878→   878→          )}
+   879→   879→          <div className="h-2" aria-hidden />
+   880→   880→        </div>
+   881→   881→
+   882→   882→        {!atBottom && (
+   883→   883→          <button
+   884→   884→            type="button"
+   885→   885→            onClick={() => scrollToBottom(true)}
+   886→   886→            aria-label="滚动到最新消息"
+   887→   887→            className="absolute bottom-3 right-3 flex h-9 w-9 items-center justify-center rounded-full border bg-background text-muted-foreground shadow-sm transition-colors hover:text-foreground"
+   888→   888→          >
+   889→   889→            <ChevronDown className="h-4 w-4" aria-hidden />
+   890→   890→          </button>
+   891→   891→        )}
+   892→   892→      </div>
+   893→   893→
+   894→   894→      {/* 输入区 */}
+   895→   895→      <div className="shrink-0 rounded-b-2xl border border-t bg-card p-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] sm:p-3">
+   896→   896→        <div className="flex items-end gap-2 rounded-lg border bg-background px-2 py-1 transition-shadow focus-within:border-ring/50 focus-within:ring-2 focus-within:ring-ring/40">
+   897→   897→          <Textarea
+   898→   898→            ref={textareaRef}
+   899→   899→            value={input}
+   900→   900→            onChange={handleInputChange}
+   901→   901→            onKeyDown={handleKeyDown}
+   902→   902→            rows={1}
+   903→   903→            placeholder={placeholder}
+   904→   904→            aria-label="输入你的问题"
+   905→   905→            disabled={!historyLoaded}
+   906→   906→            className="min-h-[44px] flex-1 resize-none border-0 bg-transparent px-2 py-2.5 shadow-none focus-visible:border-transparent focus-visible:ring-0 focus-visible:ring-offset-0 dark:bg-transparent"
+   907→   907→          />
+   908→   908→          {generating ? (
+   909→   909→            <Button
+   910→   910→              type="button"
+   911→   911→              variant="outline"
+   912→   912→              size="icon"
+   913→   913→              onClick={stop}
+   914→   914→              aria-label="停止生成"
+   915→   915→              className="h-10 w-10 shrink-0 rounded-lg border-destructive/40 text-destructive hover:bg-destructive/10 hover:text-destructive"
+   916→   916→            >
+   917→   917→              <Square className="h-4 w-4" aria-hidden />
+   918→   918→            </Button>
+   919→   919→          ) : (
+   920→   920→            <Button
+   921→   921→              type="button"
+   922→   922→              size="icon"
+   923→   923→              onClick={() => send(input)}
+   924→   924→              disabled={!canSend}
+   925→   925→              aria-label="发送问题"
+   926→   926→              className="h-10 w-10 shrink-0 rounded-lg"
+   927→   927→            >
+   928→   928→              <Send className="h-4 w-4" aria-hidden />
+   929→   929→            </Button>
+   930→   930→          )}
+   931→   931→        </div>
+   932→   932→        <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 px-1 text-[10px] leading-relaxed text-muted-foreground">
+   933→   933→          <span>Enter 发送 · Shift + Enter 换行</span>
+   934→   934→          {filterSubject ? <span>当前聚焦「{filterSubject.name}」（提示性，不严格限定）</span> : null}
+   935→   935→          <span className="ml-auto hidden sm:inline">回答由 AI 生成，请注意核对关键数据</span>
+   936→   936→        </p>
+   937→   937→      </div>
+   938→   938→    </div>
+   939→   939→  )
+   940→   940→}
+   941→   941→
