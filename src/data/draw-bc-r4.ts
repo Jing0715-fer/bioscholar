@@ -172,7 +172,7 @@ export const drawBcR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/bc-ch11-s3-carbon-skeleton-one-carbon.svg',
       caption:
-        '碳骨架去路、生糖生酮分类与一碳单位：氨基酸碳架经转氨后汇入代谢干线——丙酮酸（Ala、Cys、Ser 等）、乙酰 CoA（Ile、Leu、Lys、Phe 等）或 TCA 中间物（α-酮戊二酸、草酰乙酸、琥珀酰 CoA）。分类口径：纯生酮仅 Leu 与 Lys；纯生糖 13 种；生糖兼生酮为 Ile、Phe、Tyr、Trp——判断依据即碳架入口。一碳单位（甲基/甲烯基/甲炔基/亚氨甲基/甲酰基）由四氢叶酸（THF）携带，来源为 Ser、Gly、His、Trp，去向核苷酸合成——dTMP 的甲烯基 THF 供给正是 MTX 类靶点。S-腺苷甲硫氨酸（SAM）是活性甲基通用供体，甲基化后经 SAM 循环再生——与 THF 互为甲基代谢双轨。',
+        '碳骨架去路、生糖生酮分类与一碳单位：氨基酸碳架经转氨后汇入代谢干线——丙酮酸（Ala、Cys、Ser 等）、乙酰 CoA（Ile、Leu、Lys、Phe 等）或 TCA 中间物（α-酮戊二酸、草酰乙酸、琥珀酰 CoA）。分类口径：纯生酮仅 Leu 与 Lys；纯生糖 14 种；生糖兼生酮为 Ile、Phe、Tyr、Trp——判断依据即碳架入口。一碳单位（甲基/甲烯基/甲炔基/亚氨甲基/甲酰基）由四氢叶酸（THF）携带，来源为 Ser、Gly、His、Trp，去向核苷酸合成——dTMP 的甲烯基 THF 供给正是 MTX 类靶点。S-腺苷甲硫氨酸（SAM）是活性甲基通用供体，甲基化后经 SAM 循环再生——与 THF 互为甲基代谢双轨。',
       credit: DRAWN_CREDIT,
     },
   ],

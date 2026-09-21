@@ -1117,3 +1117,260 @@ Work Log:
 Stage Summary:
 - 合并完成：本地「API Key 模型自动检测 + 全学科科学性校验」与远程「插图视觉精修 + 灯箱升级」成果并存
 - 下阶段建议：① 各子代理存疑条目定夺 ② glossary 术语词典与 web 图 caption 抽检 ③ draw-* 配图 caption 全面校验
+
+---
+Task ID: 7-d
+Agent: scientific-reviewer (术语词典 part2)
+Task: 术语词典第二批 15 个批次文件（immuno-a1~a5 / neuro-c1~c5 / bioinfo-b2~b6，g-155~g-244）全量科学性校对
+
+Work Log:
+- 读 worklog.md 尾部（41-fix 系列与合并收尾记录）确认此前校验惯例：教材正文与题库已审校，glossary part2 为盲区补齐
+- 逐文件完整 Read 全部 15 个文件（免疫 30 条 / 神经 30 条 / 生信 30 条，共 90 条），逐 definition 核对数值单位、诺奖归属、机制方向、分子归属、数据库口径、英文拼写
+- 关键锚点复核：Tonegawa 之外的免疫锚点（Köhler/Milstein 1975→1984、Steinman 1973、Bevan 1976）；神经锚点（Katz 1970、von Békésy 1961、Hubel/Wiesel+Sperry 1981、O'Keefe/Moser 2014、Bliss&Lømo 1973、H.M. 1953、Melzack&Wall 1965、Kuffler 1953、Henneman 1965、Skou 1957/1997）；生信锚点（Needleman-Wunsch 1970、Smith-Waterman 1981、Saitou&Nei 1987、Felsenstein 1978/1981、Barabási&Albert 1999、Fields&Song 1989、Subramanian 2005、Tettelin 2005、Wagner 2012、Gillet 2012、Tang 2009、CASP14 AF2 中位 GDT-TS 92.4）
+- 与已审校教材口径逐项比对：补体 40 余种/C3 1.2–1.6 g/L、NK 5–10%、Treg 5–10%、胸腺 95% 淘汰、IgG 75–80% 与 23 天半衰期、Morris 水迷宫 1982、耳蜗放大器「数十倍」与鼓膜振幅小于氢原子直径、SCN 每侧约一万、HPA 皮质醇 60–90 min、GenBank 数万亿碱基/两月一版、UniProt 50 余万 vs 数亿（约三个数量级）——全部一致
+- 复核 N50 算例（200+150=350≥250→N50=150 kb）、Nernst 61.5 mV/37℃ 与 E_K/E_Na/E_Cl/E_Ca、GDT-TS 四阈值均值、E 值 Karlin-Altschul 公式、NJ Q(i,j) 公式、GTR 4+6 参数、TPM 归一顺序、NB 方差 μ+αμ²、RefSeq 前缀层级、LGN 1/4/6 对侧规则等——均正确
+- 发现并修复 1 处明确科学性错误（见下）；修改前 Grep 确认字符串唯一，修改后 rg 复核落盘
+- 验证：bunx tsc --noEmit | rg glossary → 空（通过）；全项目 35 处 TS 错误均位于 scripts/skills/examples（预存，与本任务无关，worklog 已有 mb/ch10-s1 记录佐证）
+
+Stage Summary:
+- 审阅条数：15 文件 90 条（g-155~g-244：免疫 a1-a5 共 30 条、神经 c1-c5 共 30 条、生信 b2-b6 共 30 条）
+- 修复清单（1 处）：
+  - glossary-neuro-c1.ts:86（g-192 海马）「颞叶内侧的皮质下结构」→「颞叶内侧的古皮质结构」。理由：海马为古皮质（archicortex，三层皮质），属大脑皮质组成部分而非皮质下结构（皮质下结构指基底神经节、丘脑等）；同库 g-213 词条（glossary-neuro-c5.ts:49）正确表述为「内侧颞叶的卷曲皮层结构」，本条与之自相矛盾，属笔误级科学性错误；单字符级最小修复，不改句式与结构
+- 存疑未改清单（4 条，均可辩护，按规则保留）：
+  - glossary-neuro-c1.ts:36（g-187 量子释放）MEPP「约 0.5–1 mV」——经典口径 0.4–0.8 mV（蛙 NMJ），哺乳类可近 1 mV，区间量级可辩护，与教材叙述不冲突
+  - glossary-neuro-c5.ts:58（g-214 Morris 水迷宫）「Morris 于 1982 年设计」——文献常引 1981（Morris et al. Nature），但与已审校教材 ch6 口径（1982 年）完全一致，按「教材口径为准」保留
+  - glossary-bioinfo-b6.ts:99（g-243 UniProt）「2002 年由三大资源整合而成」——联盟组建 2002 年、首个版本发布 2003 年，两种文献口径并存，取整为 2002 可辩护
+  - glossary-bioinfo-b2.ts:34（g-216 GDT-TS）「约 90 分相当于中等分辨率晶体结构」——CASP 社区经验性类比，非硬性标准，量级陈述可辩护
+- 结构观察（非科学错误，未改动）：海马词条在 c1（g-192）与 c5（g-213）重复出现（分属不同章节批次），内容部分重叠，如需去重属产品层决策
+- 验证结果：bunx tsc --noEmit 过滤 glossary → 0 错误，通过；未触碰清单外任何文件，未改 id/subjectId/category 等结构字段
+
+---
+Task ID: 7-a
+Agent: scientific-adjudicator (四大学科存疑定夺)
+Task: 细胞生物学、分子生物学、生物化学、生物物理学四学科共 31 条存疑条目的最终定夺（fix or keep），最小化编辑，expansions（用户可见正文层）与 subjects（基础层）同步
+
+Work Log:
+- 读 worklog.md 尾部了解 13 个并行审校代理背景（约 70 处已修复、约 60 条存疑待定夺）
+- 逐条用 Grep 定位原文 → Read 前后 15 行上下文 → 按定夺规则（事实性硬错 / 平台内部自相矛盾 / 明显劣于通行口径才改；教材口径差异、带约/量级限定词、口语化可读、含混无唯一修正目标一律保留）定夺
+- 执行 8 条 FIX 共 17 处最小化编辑（MultiEdit），全部落在清单指定的 expansions/subjects 文件内，未做漫游式修改：
+  1. expansions/cell-biology-ch7-9.ts:167 hormone 造词年份归属修正
+  2. expansions/cell-biology-ch10-12.ts:272 + subjects/cell-biology.ts:2056 角膜缘干细胞标志修正（2 处）
+  3. expansions/cell-biology-ch4-6.ts:284 「显性线粒体病」消歧
+  4. 线粒体核糖体 70S→55S 共 6 处（expansions/cell-biology-ch4-6.ts:170、210；subjects/cell-biology.ts:806、823、846、863，含 2 条 keyPoint，避免同文件内 ch5-s1 与 ch5-s2 口径自相矛盾）
+  5. U12 内含子 0.1%→0.3% 共 3 处（expansions/molecular-biology-ch4-6.ts:254、261；subjects/molecular-biology.ts:821）
+  6. TFIIH 亚基 9→10 共 2 处（expansions/molecular-biology-ch4-6.ts:140；subjects/molecular-biology.ts:689）
+  7. expansions/molecular-biology-ch10-12.ts:365 同步振荡器年份 2016→2010
+  8. expansions/biophysics-ch1-3.ts:356 DPPC 亚甲基计数 32→约 30
+- 验证：bunx tsc --noEmit 后 grep cell-biology|molecular-biology|biochemistry|biophysics 输出为空（0 条）；src/ 全目录 0 类型错误（examples/、scripts/ 的既有报错与本任务无关）；rg 反向复核旧表述（Leu⁺/罹患显性线粒体/约 0.1%（内含子语境）/TFIIH|9/2016 年改造版/32 个亚甲基/线粒体 70S）在四学科 expansions/subjects 层零残留
+
+Stage Summary:
+- 定夺总条数 31（细胞生物学 9 / 分子生物学 12 / 生物化学 4 / 生物物理学 6）；FIX 8 条（17 处编辑）；KEEP 23 条
+- 细胞生物学：
+  1. ch5-s2 线粒体分裂「Fts1」——KEEP：当前文本已是正确表述（「部分谱系仍保留与细菌分裂同源的 FtsZ；哺乳动物的分裂动力蛋白 Drp1/Dnm1 则是真核创新」，expansions:211/subjects:847），疑似此前已修复，无需再改
+  2. 角膜缘干细胞「（Leu⁺）」——FIX（expansions/cell-biology-ch10-12.ts:272、subjects/cell-biology.ts:2056）：Leu⁺ 无通行出处（Leu 系列为白细胞单抗命名，与角膜缘干细胞无关），改为通行标志「（p63⁺/ABCG2⁺）」（p63 为 LSCD 临床诊断常用标志、ABCG2 为经典侧群标志）
+  3. 1902 年「并创造激素一词」——FIX（expansions/cell-biology-ch7-9.ts:167）：原句明示 1902 年造词，事实性硬错（hormone 为 Starling 1905 年 Croonian 演讲创造），改为「其后 Starling 于 1905 年创造」；subjects 层无对应表述，单处修改
+  4. cyclin 1982 年发现——KEEP：原句「1982 年发现、随后完成分子克隆」未称发表；Hunt 实验确于 1982 年夏完成、论文 1983 年发表，教材口径可辩护
+  5. 45S 前 rRNA「约 1.4 万 nt」——KEEP：人 45S 实为 13,354 nt，偏差约 5% 在「约」的量级容差内，且「约 14 kb」口径在教材/早期文献（含完整 ETS 估计）确实并存
+  6. 「罹患显性线粒体病」——FIX（expansions/cell-biology-ch4-6.ts:284）：上下文与 1/200 携带率对比支持「显性=临床显现」之义，且「显性线粒体病」易误读为显性遗传（线粒体病无显隐二分）；最小消歧「临床上……罹患显性」→「罹患临床显性」
+  7. 经典 NES 1995 年鉴定——KEEP：主流记载恰为 1995（Fischer et al. EMBO J 与 Wen et al. PNAS 鉴定 HIV Rev 及 PKI 的富亮氨酸 NES），原文正确
+  8. 线粒体核糖体 70S——FIX（6 处，两层同步）：人线粒体核糖体为 55S（39S+28S，冷冻电镜确证、Alberts MBoC 6th 明确记载），70S 为相对细菌类比旧口径且新口径已成主流，符合「过时口径」修正规则；ch5-s1 基质描述与 ch5-s2 内共生证据列表同步改 55S（「与细菌相近」在 55S 下依然成立）；ch1-s2 的 70S 为原核/真核对比语境（正确）未动；quiz 层「70S」不在清单范围未动（经典教材口径可辩护，建议后续题库专项统一）
+  9. LHON G11778A 约占半数——KEEP：全球口径 40%–70%，原文「半数上下」在范围内
+- 分子生物学：
+  1. pol I「928 aa，约 109 kDa」——KEEP：109 kDa 为经典 SDS 迁移测定口径（Jovin 1969），序列推算约 103 kDa（UniProt），两口径并存且带「约」
+  2. 小卫星 6～25 bp（一说 9～64 bp）——KEEP：原文已并列标注两口径
+  3. U12 内含子约 0.1%——FIX（3 处）：人类 U12 型内含子现代口径约 700–800 个、占全部内含子约 0.3%（0.1% 为早期仅发现数百个时的估计），现代口径已成主流；0.1%→0.3%（正文 2 处 + 对比表 1 处，expansions/subjects 同步）
+  4. TFIIH 亚基 9——FIX（2 处）：现代共识 10 亚基（XPB/XPD/p62/p52/p44/p34/p8-TTDA + CAK 三亚基 CDK7/cyclin H/MAT1），9 为 TTDA 归位前旧文献口径；表格 9→10（expansions/subjects 同步）
+  5. 「赭球菌 UAG→Pyl」——KEEP：当前文本已是「甲烷八叠球菌等产甲烷古菌」（expansions:469/subjects:1042），正确表述疑似此前已修复；全局搜索「赭球菌」零命中
+  6. 「12～17 个共有亚基」——KEEP：subjects:624 现文本已是「pol II 12 个亚基、pol I 14 个、pol III 17 个，其中 5 个为共有亚基」，正确（三类 pol 共有亚基确为 5 个），疑此前已修复；586 行的「12～17 bp」是开放复合物解链长度（正确语境）
+  7. RB1 克隆（1986）——KEEP：Friend et al. 1986 Nature cDNA 克隆为通行引用，1986–1987 口径并存可辩护
+  8. 1994 年遗传图「数百个微卫星标记」——KEEP：版本不明（1987 RFLP 图 403 标记/1992 微卫星图 814/1994 综合图数千），原句可解读为 HGP 起步时的早期图，非硬错
+  9. tRNA D 环「常为 5～7 个」——KEEP：读原文确认指 tRNA 二级结构 D 环（非复制 D-loop）；D 环大小跨 tRNA 变化大（约 4–12 nt，标准编号 14–21 位常缺插），「常为」限定 + 无唯一公认正确值
+  10. 同步振荡器「2016 年」——FIX（expansions/molecular-biology-ch10-12.ts:365）：2016 无对应经典论文；群体感应菌群级同步振荡的奠基工作为 Danino et al. Nature 2010「A synchronized quorum of genetic clocks」（repressilator 式环路 + QS 元件），年份张冠李戴属事实性错误，2016→2010
+  11. IleRS 编辑 Val「仅小一个甲基」——KEEP：Val 比 Ile 少一个 CH₂（= 一个甲基），通行且正确
+  12. PDB 1LBG——KEEP（核实通过）：1LBG 确为 LacI-操纵基因 DNA 复合物 4.8 Å 晶体结构（Lewis et al. Science 1996，α-碳轨迹），原文编号、分辨率均正确
+- 生物化学：
+  1. 酮体 ATP 数——KEEP：当前文本为「乙酰乙酸 19~20 ATP、β-羟丁酸 21.5~22.5 ATP（按 NADH 2.5、FADH₂ 1.5 计）」（expansions:81/subjects:1727/draw-bc-r4:135），内部自洽且括注算法口径；清单所述 23.5/26 版本在当前代码库不存在
+  2. subjects 远端组氨酸 CO 表述——KEEP：当前 subjects:660 已是正确通行口径（「游离血红素中 CO 亲和力比 O₂ 高出上万倍，远端 His 把这一优势压缩到约 200 倍」），清单所述「降低 10,000 倍」版本已不存在，疑此前已修复
+  3. keyPoint「Km = Vmax/2 时的底物浓度」——KEEP：口语化简写语义可读通
+  4. 糖原分支 8~12/约 11、空腹血糖约 20 g 等——KEEP：均通行范围内
+- 生物物理学：
+  1. ch10-s1「1 g 单链 DNA 理论密度 2×10¹⁷ 字节（215 PB）」——KEEP（正文层面）：expansions/biophysics-ch9-10.ts:139 与 subjects/biophysics.ts:1319 已正确区分「理论极限约 455 EB/g」与「DNA fountain 实测约 215 PB/g」；「2×10¹⁷ 字节称理论容量」的错误表述仅存在于范围外配图 caption（draw-bp-r4.ts:207，建议后续配图 caption 专项校验时修正）
+  2. [ATP]/[ADP] 约 10³——KEEP：教材口径依总/游离 ADP 之分给出 10¹~10³+ 不等，「约 10³」为有支持的量级式陈述（带约）；−50~−60 kJ/mol 推算在 10²~10³ 下均成立
+  3. 疏水相互作用 60–80 °C / 每离子 2–4 k_BT——KEEP：文献区间宽
+  4. 两笔熵账口径——KEEP：量级式表述
+  5. DPPC「两条链共 32 个亚甲基」——FIX（expansions/biophysics-ch1-3.ts:356）：DPPC 两条 16:0 链严格含 28 个 CH₂（+2 个 CH₃），任何口径均数不出 32（疑为 2×16 链碳误计），改为「约 30 个亚甲基」（宽松口径 2×15 链碳），修正后 35/30≈1.17 kJ 与后文「每个 CH₂ 约 1 kJ/mol」仍自洽；subjects 层无对应句
+  6. 横穿 1 mm 组织以小时计——KEEP：组织中有效扩散系数低，可辩护
+- 验证结果：bunx tsc --noEmit | grep -E "cell-biology|molecular-biology|biochemistry|biophysics" 为空（0 条错误）；src/ 全目录零类型错误（examples/、scripts/ 预存报错与本任务无关）；rg 复核 17 处修改全部落盘、旧表述零残留（quiz/cell-biology.ts:336/341 的「线粒体核糖体 70S」为范围外题库层经典教材口径，未动）
+- 遗留建议：① quiz/cell-biology.ts 内共生证据题的「70S」表述与正文新口径（55S）存在跨层张力，建议后续题库专项统一；② draw-bp-r4.ts:207「理论容量约 2×10¹⁷ 字节」应改为「DNA fountain 实用密度」，归入 worklog 已列的 draw-* caption 全面校验待办
+
+---
+Task ID: 7-b
+Agent: scientific-adjudicator (五学科存疑定夺)
+Task: 对微生物学、免疫学、病毒学、神经生物学、生物信息学五学科的 38 条存疑条目逐条定夺（fix or keep），并做同学科内跨章口径统一与译名统一
+
+Work Log:
+- 读 worklog 尾部了解 13 个并行审校代理的背景与约 60 条存疑清单
+- 对每条存疑项执行「Grep 定位原文 → Read 前后上下文 → 按三规则定夺（事实性硬错 / 同学科内部矛盾 / 明显劣于通行口径，其余一律保留并说明理由）→ fix 用 Edit 最小化修改（不改句式/字数/结构）」
+- 译名统一前用 Grep 找全所有出现处（病毒分岔/分馏、皮层/间层），逐处核对语境后统一（viro/ch11「疾病谱的关键分岔」为普通动词用法，neuro/micro 的「皮层」均为大脑皮层/细胞皮层义，均不在统一范围，未误改）
+- 多条清单所载冲突经核实现文已不存在（此前代理或已修复）：immuno 初次应答潜伏期（ch1/ch10 均为「约 5–10 天」）、viro RdRp 差距（ch3/ch10 均为「三到七个数量级」且与所给错误率区间算术自洽）、viro λ 基因数（ch9 已为「约 70 个基因」）、neuro 有髓纤维 Q10（ch3 已为「约 1.3–1.5」）、bioinfo 转录因子结合谱（ch12 已为「核心约 6–12 bp、含侧翼 8–20 bp」）、viro 海洋日裂解比例正文（ch1/ch9 正文与 keyPoints 均已为「约 20%（部分研究最高可达 40%）」，仅剩 ch9 章节摘要「两至四成」未对齐，本轮修复）
+- 验证：cd /home/z/my-project && bunx tsc --noEmit 后 grep 五学科路径输出为空（0 条类型错误；scripts/skills 下 35 条错误为存量、与本轮无关）；rg 复核 12 处修改全部落盘、旧字符串全部清除
+
+Stage Summary:
+- 定夺总条数 38（micro 7 / immuno 8 / viro 9 / neuro 9 / bioinfo 5）：FIX 9 条，KEEP 29 条；译名统一 2 组；共 12 处最小化编辑落盘于 10 个文件
+- 微生物学（2 FIX / 5 KEEP）：
+  1) FIX ch1.ts:89 巴氏消毒「63–66 ℃、30 min」→「63 ℃、30 min」——与 ch7 的 LTLT 标准（63 ℃/30 min）统一，属同学科口径统一
+  2) FIX ch5.ts:105 培养基 pH 指南「放线菌约 7.2–7.4」→「放线菌约 7.5–8.5」——ch5 括注列表与 ch7「放线菌略偏碱（7.5–8.5）」为同一事实却数值冲突且无口径注（细菌 6.5–7.5 两处完全一致可证系同一口径列表），统一向周德庆教材通行口径；高氏一号配方 pH 7.2–7.4 为具体配方事实，保留不动
+  3) KEEP ch1 大肠杆菌糖代谢 2000 倍——周德庆教材经典口径，原文自带「经典测定常被引用」「约」限定
+  4) KEEP ch2 游速 20–40 μm/s——带「约为」，文献 20–30（峰 35+）区间搭边
+  5) KEEP ch7 0.1% 硝酸银滴眼——原文为历史叙述（「曾用于…因毒性与环境残留渐被替代」），浓度属教材口径差异（部分中文教材载 0.1%–1%）
+  6) KEEP ch9 土壤微生物 10³⁰ 量级——带「量级」，与 Whitman 土壤 ~10²⁹·³ 搭边
+  7) KEEP ch1「明胶在 37 ℃ 熔化」vs ch5「约 25 ℃ 上下」——ch1 语境为 37 ℃ 培养温度下明胶液化（明胶在 37 ℃ 确为液态，正是 Koch 学派弃用明胶的经典理由），ch5 带「约…上下」为固有熔点低端估值，两处口径不同非实质矛盾，无唯一修正目标
+- 免疫学（8 条全部 KEEP）：
+  1) 补体 40 余种蛋白质——ch4/ch7 表述一致，计入调节蛋白与受体后 40+ 成立
+  2) 青霉噻唑醛酸——人卫版《医学免疫学》对青霉素降解半抗原的惯用译名，「青霉素降解产物为半抗原」的事实正确，属译名口径差异
+  3) IgE 0.1–0.9 mg/L——中文教材常用区间，带「约」
+  4) 小肠黏膜面——原文自带双重限定「数十平方米量级（传统教材曾估计达上百平方米）」
+  5) 中性粒细胞 12–15 μm、半衰期 6–8 h——教材通行口径
+  6) MPS 取代网状内皮系统于 1969 年——van Furth 1969 为最通行引用年代
+  7) 初次应答潜伏期——ch1 与 ch10 现均为「约 5–10 天」，清单所载冲突已不存在
+  8) 麻疹疫苗「约 9 月龄前后」——「约…前后」双重限定，兼容中国 8 月龄/美国 12 月龄
+- 病毒学（3 FIX / 5 KEEP / 译名统一 2 组）：
+  1) FIX ch9.ts:14 章节摘要「每日裂解两至四成」→「约两成」——与本章正文及 keyPoints「约 20%（部分研究最高可达 40%）」、ch1 口径统一（Suttle ~20% 为中心估计）
+  2) FIX ch3.ts:45 Baltimore II 类表「再行转录与滚环复制」→「滚环/滚发夹复制」——细小病毒为滚发夹机制，同文件 ch3-s2 与 ch5 已有正确机制描述，表内简写与正文冲突，加 4 字消歧
+  3) KEEP ch3 甲病毒 10–13 kb——区间中值正确、上界略高但含旧分类，无唯一修正目标
+  4) KEEP ch3/ch10「相差三到七个数量级」——两处已一致，且与自述错误率区间算术自洽（10⁻⁶↔10⁻⁹ 为 3 个、10⁻⁴↔10⁻¹¹ 为 7 个数量级）
+  5) KEEP ch11 狂犬病「潜伏期…全程不排毒」——上下文为潜伏期/潜伏传染期之辨，句内「潜伏与传染窗口完全分离」已点明所指
+  6) KEEP ch10 麻疹 10⁻⁴ 量级、流感/HIV「高出数倍到一个数量级」——含混区间+文献口径浮动
+  7) KEEP ch9 λ「约 70 个基因」——与现代注释 60–73 ORF 一致（清单所载「50 余个」已不存在）；ch7 λ S 蛋白「相距三个碱基的两个起始密码子」自洽（S107/S105 起始密码子相距 3 nt），保留
+  译名统一：①「病毒分岔」→「病毒分馏（viral shunt）」（ch1.ts:149 正文 + ch1.ts:157 terms，ch9 已用分馏，全学科现统一为「病毒分馏」）；②「皮层」→「间层（tegument）」（ch2.ts:53 两处，首现处加英文注，与 ch7 的「间层」统一）
+- 神经生物学（3 FIX / 6 KEEP）：
+  1) FIX ch5.ts:62 囊泡 ACh 浓度「数十毫摩尔级」→「上百毫摩尔级」——Kandel 口径 ~100+ mM、按量子含量/囊泡容积估算 100–500 mM，原值偏低约一档，弱化「陡峭梯度」的教学点
+  2) FIX ch8.ts:40 瞳孔光量「相差可达 16 倍以上」→「相差可达 16 倍」——按自述 2–8 mm 恰为 8²/2²=16 倍，「以上」与自述范围矛盾（删 2 字最小化消歧）
+  3) FIX ch8.ts:141 ipRGC「约数万」→「数千至两万」——灵长类每眼文献口径约数千至 2 万（Dacey 2005 ~3,000 起），原值偏高约一档
+  4) KEEP ch3「快菊形细胞快而稀疏」——非通行称谓但无法确定唯一所指（篮状/吊灯/其他快放电中间神经元均有可能），改错风险大于收益
+  5) KEEP ch4 释放概率钙幂律「约三次方量级」——经典 Dodge-Rahamimoff 四次方、实测 2–5 次方，处灰色地带且带「约…量级」
+  6) KEEP ch8「约 1–2 pA 的光电流在数十毫秒内被抑制」——可读作抑制起始之潜伏（哺乳类潜伏确为数十 ms），含混不构成硬错
+  7) KEEP ch3「同样 20 m/s，无髓纤维需约 500 μm」——枪乌贼巨轴突（~500 μm、20–25 m/s）为经典锚点，句内自带「数值随物种与温度浮动」
+  8) KEEP ch3 有髓纤维 Q10「约 1.3–1.5」——现文已与临床神经传导测定口径一致（清单所载 1.1–1.3 不存在）
+  9) KEEP ch9 中耳肌反射潜伏期「约 30–40 ms」——原文限定「80 dB 以上强声」高强度情境，高强度下潜伏期确处最短端（约 25–40 ms），带「约」
+- 生物信息学（1 FIX（2 处）/ 4 KEEP）：
+  1) FIX ch10.ts:114 正文 + ch10.ts:142 keyPoints「含推测条目的总库则达万级」→「十万级」——HMDB v4/v5 含推测条目总库约 11 万+（十万级），原值低一档；同句「确认并量化数千种」保留不动
+  2) KEEP ch5「四条序列尚可（约数千万格）」——序列长度未指明，~75–95 残基时 L⁴≈3×10⁷–8×10⁷ 确为数千万格，带「约」且教学点在「五条以上失控」
+  3) KEEP ch7「模板同一性 40% 以上主链误差约 1 Å 量级」——原文带「约…量级」弱化，文献分档确有 40%/50% 两说，且与同学科 quiz 口径一致（改动反而制造新矛盾）
+  4) KEEP ch12 转录因子结合谱——现文已为「核心约 6–12 bp、含侧翼 8–20 bp」，与 JASPAR 口径一致（清单所载「十到三十」不存在）
+  5) KEEP ch1「30× 原始读段约数十吉碱基」——90 Gbp 处「数十」上限边缘，同文件表格自洽（约 90 Gbp）
+- 验证结果：bunx tsc --noEmit 过滤 micro/|immuno/|viro/|neuro/|bioinfo/ 输出为空（0 类型错误）；rg 逐处复核 12 处修改全部落盘、旧字符串全部清除；「皮层」在 neuro/micro/immuno 的剩余出现均为大脑皮层/细胞皮层（肌动蛋白）义，与 tegument 译名统一无关，未误改
+
+---
+Task ID: 7-c
+Agent: scientific-reviewer (术语词典 part1)
+Task: 术语词典第一批科学性完整校对（glossary.ts 四学科 124 条 + 微生物 30 条 + 病毒学 30 条 + 分子生物学 a1 5 条 + term-structures.ts 术语-结构图映射）
+
+Work Log:
+- 读 worklog 尾部了解此前校验惯例（正文与题库已审校，以其为口径基准）
+- 逐文件完整阅读：glossary.ts（1197 行 124 条：生化 50/生分 26/细胞 26/生物物理 22，分四段 Read 读完无跳读）、glossary-micro.ts（30 条）、glossary-virology.ts（30 条）、term-structures.ts（26 条映射）
+- glossary-molecular-biology-a1.ts 在当前工作树不存在：git 考古确认 36d438f 创建、4285b51（八学科完整版恢复）删除；经 `git show 36d438f:...` 审读其 5 条历史内容（中心法则/核小体/异染色质/冈崎片段/端粒酶）均无科学性错误；其中 3 条已并入现行 glossary.ts（g-027/g-030/g-050 口径更新版）。遵守「不创建新文件」规则，仅记录
+- 逐条核对：数值与单位（ATP −30.5/−50~−60 kJ/mol、呼吸链 −0.32/+0.816 V 与 ΔG°′≈−219、高能磷酸化合物四值、Okazaki 1000–2000/100–200 nt、Nernst 61.5 mV、kinesin 8 nm/5–7 pN、ATP 合酶 45 pN·nm、DNA p≈50 nm、NADH 2.5/FADH₂ 1.5 ATP、NPC 120 MDa、GPCR ~800、TMV 17.5 kDa×2130/18×300 nm/2.3 nm 螺距、β-胡萝卜素 C40H56 等）；诺奖与人名（Mitchell 1978、Baltimore/Temin 1975、Fire/Mello 2006、Doudna/Charpentier 2020 化学、Mullis 1993、Blackburn/Greider/Szostak 2009、大隅 2016、Lefkowitz/Kobilka 2012、Neher/Sakmann 1991、Cryo-EM 2017 化学、超分辨 2014 化学、Karikó/Weissman 2023、Smith/Winter 2018、Enders/Weeller/Robbins 1954 等——Weissmann（Qβ 准种）与 Weissman（mRNA 疫苗）为两个不同人名、各自拼写正确）；机制方向性（质子泵向膜间隙、β-氧化切乙酰-CoA、摆动位 5′ 反密码子对第 3 位密码子、整合酶两步转酯 3′ 端切 2 nt/宿主靶点 5 bp、抢帽 PB2/PA/PB1 分工、APOBEC3G 致 G→A 超突变等）；分类归属（巴尔的摩七类、出芽位点三源、Caspar-Klug 10T+2 各实例等）；中英术语拼写全量提取核验（含 Förster、Michaelis–Menten、semidiscontinuous、quasispecies 等 285 个 token，无「泷素化」类错字，泛素连接酶拼写正确）
+- 内部一致性对照已审正文：呼吸链电位/ΔG（quiz/biophysics、expansions/biophysics-ch4-6、draw-bp-r4 同口径）、Nernst 61.5 mV 与 E_K/E_Na（neuro/ch2 同口径）、冈崎片段长度（molecular-biology.ts 同口径）、转氨示例、果糖代谢途径（biochemistry.ts 同口径）、固氮年产（micro/ch9「一两亿吨」vs 词典「约 2 亿吨」相容）
+- term-structures.ts 全量核验：26 个 CCD 配体代码逐一经 data.rcsb.org 官方 API 实测比对（formula+name 100% 一致）；关键陷阱码 TDR 实为 THYMINE（C5H6N2O2，API 实证）而 THY 是硫胺素衍生物——映射正确；TDR.svg 像素级查看确为 5-甲基尿嘧啶（2 N-H、2 C=O、1 CH3，无糖环）；26 个 SVG 文件全部存在且路径模板一致
+- 抽验：web-search 全程 429 限流（与此前会话同况）；改用 NCBI E-utilities 直连（可达）核验存疑数值
+- 修复 1 处（详见下）→ rg 复核落盘 → bunx tsc --noEmit 过滤 glossary 零错误（其余 52 条错误均为 examples/、scripts/draw/ 遗留，与词典无关）
+
+Stage Summary:
+- 审阅条数：在盘 184 条（glossary.ts 124 + micro 30 + virology 30）+ 历史版 a1 5 条（git 审读）+ term-structures 26 条 CCD 映射，共 215 项逐条过检
+- 修复清单（1 处）：
+  1. src/data/glossary.ts:1041（g-110 胞嘧啶）：「每昼夜每基因组数千次」→「每昼夜每基因组数百次」。理由：胞嘧啶自发脱氨经典量级为每细胞每日 10² 次（Alberts MBoC 自发损伤表；Lindahl 1993；PMID 11607036 Nature 2001 原文 "uracil appears in DNA at the rate of several hundred bases per cell each day as a result of misincorporation of dU or deamination of cytosine"——即便合并 dU 错掺亦仅数百/日）；「数千次」与脱嘌呤量级（本平台正文口径：每天每细胞数千至上万）混淆，且与本平台 expansions/molecular-biology-ch1-3「脱嘌呤与氧化产物占自发损伤大头（10⁴~10⁵/日）」直接矛盾，属数值张冠李戴，最小化改动两字
+- 存疑未改清单（保留，供主控定夺）：
+  1. glossary.ts g-049 端粒「TTAGGG 重复数百次」——正文口径 5–15 kb（≈830–2500 次）；「数百」仅覆盖衰老/短端粒或部分教材说法，未达明确无疑
+  2. glossary.ts g-088 熔球态「尺寸膨胀 10–30%」——文献常用 10–20%，30% 为宽松上界，可辩护区间
+  3. glossary.ts g-093「蛋白质变性链约 1 nm」——文献 0.4–1.5 nm 口径并存（化学变性/温度变性、p 与 Kuhn 长度换算差异），带「约」量级陈述
+  4. glossary.ts g-072 微管「外径约 24 nm」——教材 24/25 nm 两口径并存
+  5. glossary.ts g-007 与 g-008：Km 稳态式 (k₋₁+k_cat)/k₁ 与「快速平衡假设」并存——两条均系标准教科书表述，非矛盾
+  6. glossary-micro.ts g-151 内毒素「250 ℃ 干热约 30 分钟方失活」——制药去热原惯例（250℃/30min）与微生物教材（160℃/2–4h）口径并存
+  7. glossary-micro.ts g-149 固氮「每年约 2 亿吨」——全球估计 100–250 Tg 不等，与正文「一两亿吨」相容
+  8. glossary-virology.ts g-273 水痘-带状疱疹 R0「约 8 至 12」、g-259 nsp14「压低约一个数量级」——均在文献区间内
+  9. term-structures.ts：g-101 GLC（CCD 为 α-D-吡喃葡萄糖）、g-102 FRU（CCD 为 β-D-呋喃果糖）与词条定义强调的 β-吡喃葡萄糖（64%）/游离果糖 β-吡喃糖（70%）非同一异头物/环型——CCD 标准码映射（en 字段已如实标注），非科学性错误，建议主控知悉此口径选择
+- 缺失项记录：glossary-molecular-biology-a1.ts 已于 commit 4285b51 删除（内容并入 glossary.ts），任务清单与仓库现状不符；核小体/异染色质两条未保留于现行词典（内容完整性问题，超出科学性校对范围）
+- 验证结果：bunx tsc --noEmit | grep -E "glossary" → 空（通过）；修改处 rg 复核落盘无误；term-structures 26 项经 RCSB 官方 API 全量实证
+
+---
+Task ID: 7-e
+Agent: scientific-reviewer (自绘插图 caption)
+Task: 九学科自绘插图挂载文件（draw-*-r4.ts）全部 caption 的科学性完整校对——数值/单位、年代与科学家归属、机制方向性、与正文章节口径一致性、中文术语规范
+
+Work Log:
+- 读 worklog 尾部了解背景（此前插图仅做过排版/视觉审校，caption 科学性从未校验）
+- 逐文件 Read 全文并逐条核对 9 个文件全部 caption：bc 27 / bp 28 / cb 36 / im 34 / mb 44 / mi 30 / ne 34 / vi 34 / bi 36，共 303 条；逐条心算复核数量级（如 λ 噬菌体 48.5 kb×0.34 nm=16.5 μm、2×96485×1.136≈−219 kJ/mol、E. coli 48 h×3 代/h→2¹⁴⁴≈2.2×10⁴³、Asp pI=(2.1+3.9)/2≈2.98、Nernst 61.5×log(5/140)≈−90 mV、HH 18.7 vs 21 m/s 等）
+- 关键史实逐条核对（Stanley 1935/1946、Enders 1949/1954、Bishop-Varmus 1976/1989、沙奎那韦 1995、恩夫韦肽 2003、马拉维若 2007、Piezo 2021、Prusiner 1997、Goldstein-Brown 1985、Sharp-Roberts 1993 等）
+- 与已审校正文交叉核对（subjects/ 与 expansions/）：生糖生酮分类、D 环置换链、断裂基因归属、胀泡 puff、LAD-CD18、PKC 辅因子 PS、HIV PR 十一切点（正文 vi/ch6 明确十一处）等
+- 每处修改先 Grep 全库确认字符串唯一性 → Edit 最小化修复 → rg 复核落盘无误、旧串零残留
+- bunx tsc --noEmit 过滤 draw-：零类型错误（现存报错均位于 scripts/review 与 skills/，非本轮引入、与 9 文件无关）
+
+Stage Summary:
+- 审阅 caption 总条数：303（9 文件全量，无跳读）
+- 修复 8 处（文件:行号 原文→修正+理由）：
+  1) draw-bc-r4.ts:175 「纯生糖 13 种」→「纯生糖 14 种」——caption 自身已列纯生酮 2（Leu/Lys）+生糖兼生酮 4（Ile/Phe/Tyr/Trp），20 种标准氨基酸余数必为 14；正文（biochemistry.ts:1992）与 quiz 均为「其余均为生糖」，2+4+13=19 自相矛盾
+  2) draw-cb-r4.ts:183 「胀泡（puddle）」→「胀泡（puff）」——puddle（水坑）为误拼，多线染色体转录胀泡的标准英文术语为 puff，与正文 cell-biology.ts:1343 一致
+  3) draw-cb-r4.ts:199 「磷脂酸丝氨酸增敏」→「磷脂酰丝氨酸增敏」——错字（磷脂酸=PA 为另一分子）；经典 PKC 辅因子为磷脂酰丝氨酸（PS），同文件 ch2-s2 及正文均用正确名
+  4) draw-cb-r4.ts:223 「LAD（LFA-2/CD18 缺陷）」→「LAD（LFA-1/CD18 缺陷）」——LFA-2 即 CD2，与 LAD 无关；LAD-I 为 CD18（β2 整联蛋白）缺陷致 LFA-1（αLβ2）功能丧失，正文口径「LAD（CD18 缺陷）」
+  5) draw-mb-r4.ts:160 「Brover 与 Sharp/Roberts 两组」→「Roberts 与 Sharp 两组」——无「Brover」其人；断裂基因/R 环发现者为 Roberts 与 Sharp 两实验室（1993 诺奖），与正文（expansions/molecular-biology-ch1-3.ts:15）及 quiz 口径一致
+  6) draw-mb-r4.ts:192 「先合成重链置换出轻链单环 D 环」→「先合成重链置换出重链单环 D 环」——新 H 链以 L 链为模板合成，被置换的是亲代 H 链（碱基互补逻辑上模板链不可能被置换）；正文明确「先以 L 链为模板合成新 H 链、置换出亲代 H 链形成 D 环」
+  7) draw-mb-r4.ts:336 「病毒 LTR 插入激活 c-mc」→「c-myc」——错字，同文件 ch12-s1 即作 c-myc
+  8) draw-ne-r4.ts:95 删除睡眠/昼夜节律 caption 末尾游离句「浅层感受野小而密。」——该句为躯体感觉图（ne-ch7-s4「浅层感受器感受野小密度高」）的串入残留，与睡眠主题无关且无科学意义支撑，正文（neuro/ch11.ts 睡眠节）无此内容
+- 存疑未改清单（不达「明确无疑」或属教材口径差异，一律保留）：
+  1) draw-bc-r4.ts:47 短杆菌肽「以环形结构稳定跨膜通道」——形成跨膜通道的短杆菌肽 A 为线性十五肽（β 螺旋二聚体成孔），环状的短杆菌肽 S 并不成孔；因「短杆菌肽」中文名在教材传统中 A/S 两指皆有、且修复需重写机制表述，记存疑
+  2) draw-bp-r4.ts:119 呼吸链电位 cyt c +0.254 V、Q +0.045 V——不同教材表值有 0.235/0.10 等版本，ΔE°′=1.136 V 与 ΔG≈−219 kJ/mol 自洽，属可辩护口径
+  3) draw-mb-r4.ts:184 Meselson-Stahl「¹⁵NH₄Cl（重氮）」——「重氮」严格指 diazo，但中文教材确有称 ¹⁵N 为「重氮（同位素）」的用法，保留
+  4) draw-mb-r4.ts:176 小卫星重复单位「6～25 bp」——文献口径 10–100 bp 与 6–25 bp 并存，保留
+  5) draw-bi-r4.ts:55「一致性 20–35% 为暮区」——同文件 ch7-s2 及 quiz 用「<30% 暮区」，但同源建模文献（Chothia-Lesk）25–35% 暮区说法亦可辩护，属口径差异
+  6) draw-mi-r4.ts:183「1983 年鉴定 AHL」——AHL 结构鉴定为 1981（Eberhard），1983 为 lux 系统克隆（Engebrecht/Silverman），年份归属略有出入但可辩护
+  7) draw-im-r4.ts:271 单细胞「至多 6 种 I 类与 10 种上下 II 类分子」——II 类上限文献有 8–12 种不同口径，保留
+  8) draw-vi-r4.ts:103「柏林病人 2008」——移植实施于 2007、治愈报告于 2008/2009，文献两说并存，保留
+- 验证结果：bunx tsc --noEmit 过滤「draw-」输出为空（9 文件零类型错误）；全部修改经 rg 复核落盘、旧串零残留；未改 src/credit/键名，未创建新文件，未动 9 文件之外任何文件
+
+---
+Task ID: 7-f
+Agent: scientific-reviewer (网络插图 caption)
+Task: 6 个插图挂载文件（illustrations/immuno/neuro/bioinfo/micro/viro-illustrations.ts）全部 caption 的科学性系统校对（VLM 此前只审了图本身，图注文字从未系统校验）
+
+Work Log:
+- 读 worklog 尾部了解背景：上轮正文/题库已校，网络图经 VLM 视觉审校，但 caption 文字科学性未验；上轮遗留存疑含「1LBG/5F9R 等 PDB 编号与分辨率未能独立核实」
+- 逐文件 Read 全文（illustrations.ts 759 行分两段读完，其余 5 文件各一次读完），共 175 条 caption 逐条核对：数值与单位心算复核（TMV 2130 亚基/18 nm/2.3 nm/6.4 kb 自洽 2130×3≈6390 nt；棕榈酸 β 氧化 8×10+7×1.5+7×2.5−2=106 ATP；PCR 2³⁰≈10⁹；E. coli ATP 合酶 c₁₀ → H⁺/ATP≈3.3；α 螺旋 0.54/3.6=0.15 nm、360/3.6=100°；ETC 泵出 4/4/2；Mb P₅₀ 2.8 torr、Hb 26 torr、Hill 2.8；内毛细胞 3500/外毛 12000–20000；耳蜗 2.5–2.75 圈；CD3 十枚 ITAM；BLOSUM62 W-W=11/C-C=9/A-A=4；T4 169 kb/24 环；脊灰 7.5 kb/T=1/约 1% 麻痹；麻疹 R0 12–18；埃博拉 80 nm/19 kb/约四成；VSV 75×180 nm/11 kb；Sanger 两次诺奖；卡里科与韦斯曼 2023 等），与正文（subjects/、expansions/、quiz/）逐项对表
+- 年代与归属核对：Singer–Nicolson 1972、Koshland 1958、Pauling/Corey 1951、Ramachandran 1963、Luger 1997、Dickerson 1981、Kendrew 1958、Crick 1958、Temin/Baltimore 1970、Fire/Mello 2006、Mullis 1993、Bliss/Lømo 1973、Sherrington 1897、Cajal 1906、杜尔贝科 1952、Woese 1977/1990、Dulbecco 蚀斑 1952——均与正文一致
+- 机制方向性核对：HIV gp120/gp41 三聚体/p17/p24 锥形衣壳/tRNALys 引物、流感 HA 三聚体+NA 四聚体+M1+8 节段、SNARE 四股螺旋（SNAP-25 贡献两条）、nAChR 2αβδε（胚胎 γ 代 ε）、NMDA 双门、钠钾泵 3:2:1、RTK→Ras→RAF→MEK→ERK、CDK–cyclin 序列、C3/C5 转化酶（C4b2a/C3bBb）、MHC I 8–10 aa/II 13–17 aa、Cas9 HNH/RuvC 切链方向、巴尔的摩 I–VII 类、CDC 转录泡 12–17 bp/杂合区 8 bp——全部正确
+- 专项核查（图片证据）：VLM 账户级 429 限流（重试 3 次均失败），改用 tesseract OCR + sharp 像素级取证：①protein-folding-concepts.jpg 图上为「Sequence haystack reduced by 10^x」量级表述、无「20^N」字样，判定 caption 的 20^N 为作者自撰错误；②gene-structure-exon-intron.png 图上 SNP 编号实为「rs1426654」（OCR 逐字证实），像素级颜色分段分析（黄=外显子方块、蓝=内含子、红=5′ flank 区）证实 SNP 高亮带紧邻外显子方块而非内含子中段，结合 rs1426654 为错义变异（Ala111Thr，肤色经典案例的机制本体）判定「位于内含子」表述错误
+- 修复 6 处（每处先 Grep 确认字符串唯一性 → Edit 最小化修改 → rg 复核落盘与旧串清除）
+- 验证：bunx tsc --noEmit | grep -iE illustration → 空（6 个插图文件零类型错误；全量 tsc 仅剩 scripts/review 与 skills/ 既有错误，与本轮无关）
+
+Stage Summary:
+- 审阅 caption 总数 175 条（illustrations.ts 89、immuno 15、neuro 17、bioinfo 17、micro 16、viro 21）；修复 6 处，存疑未改 10 项
+- 修复清单（文件:行号 原文→修正+理由）：
+  1) illustrations.ts:193「3′-磷酸腺苷–泛醇–巯基乙胺」→「3′-磷酸腺苷–泛酸–巯基乙胺」——CoA 三段为磷酸腺苷–泛酸–巯基乙胺（泛醇 panthenol 非 CoA 组分）；与正文 expansions/biochemistry-ch4-6.ts:453 口径一致
+  2) illustrations.ts:636「20 种氨基酸的全构象搜索空间（20^N）」→「N 个残基的全构象搜索空间（3^N）」——Levinthal 悖论构象空间为每残基约 3 种构象态的 3^N，20^N 是序列空间数；与正文 biophysics.ts:209「每个氨基酸仅有 3 种构象状态……3¹⁰⁰」一致；图上亦无 20^N 字样
+  3) bioinfo-illustrations.ts:93「位于内含子中的 SNP 位点 rs14266554」→「位于外显子中的 SNP 位点 rs1426654」——图上编号实为 rs1426654（OCR 证实，多写一个 5）；该 SNP 为 SLC24A5 错义变异 Ala111Thr，必在编码外显子（「肤色演化经典案例」的机制即此错义替换），原图 SNP 高亮带亦紧贴外显子方块
+  4) neuro-illustrations.ts:23「室管膜细胞村于脑室壁」→「衬于脑室壁」——错字
+  5) neuro-illustrations.ts:135「高 K⁺ 终蜗阶电位约 +80 mV」→「高 K⁺ 蜗内电位约 +80 mV」——「终蜗阶电位」非存在术语，endocochlear potential 标准译名「蜗内电位」且为正文（neuro/ch9.ts:38）既用词
+  6) viro-illustrations.ts:21「由杜贝科 1952 年确立」→「由杜尔贝科 1952 年确立」——Dulbecco 规范译名及全平台统一口径（正文/quiz/glossary/场景图共 10 处均为「杜尔贝科」，此为孤例变体）
+- 存疑未改清单：①PDB 分辨率/结构细节未能独立核实（VLM 429 + 无外网）：4LJZ 3.6 Å、5NRL 7.2 Å、5F9R 3.4 Å、4V4R「P/E 位 Phe-tRNA」、6OQV 3.3 Å、1BKV 2.0 Å（上轮已将 1LBG/5F9R 列同类存疑；1MBO 1.6/1HHO 2.1/2HHB 1.74/1BNA 1.9/1AOI 2.8/1LBG 4.8/2ZXE 2.4/1OEL 2.8/1BL8 3.2/1C17 2.4 Å 经心算与公认值一致）；②micro:53 青霉「梗基（ramuli）」——规范对应梗基=metulae、ramuli=小枝，但文献层级命名有分歧且正文未给拉丁词；③viro:31 TMV「装配亦从环化基因组两端双向推进」——实为内部 OAS 发夹起始双向延伸，该句存在「环化处两端」的合理解读、与正文口径相容但含混；④micro:87 流感「抗原转变（pandemic）大流行」英文夹注突兀（viro 版同图无），非科学错误仅报备；⑤neuro:145 Cajal 图「猫小脑皮层」物种归属未能核实（Commons 上 Cajal 浦肯野图人体/猫均有）；⑥bp TIRF「约 61°」临界角（n=1.52 时 61.0°、n=1.5 时 62.5°，带约、在文献常用范围）；⑦cb cAMP「10⁻⁸ M 放大数十倍」（Lehninger 口径约百倍，保守量级陈述）；⑧cb 2ZXE「E2·2K⁺·Pi 态」（实含 MgF₄²⁻ 过渡态类似物，教学简化）；⑨micro 三域「Woese 1977……提出三域学说的核心证据」（正式三域学说 1990 年确立，1977 为古菌独立支系发现，表述可辩护）；⑩viro 冠状病毒「冠状病毒科基因组规模之冠」（=冠状病毒科居 RNA 病毒基因组之冠，与 ch5-s3 口径一致）
+- 验证结果：bunx tsc --noEmit | grep -iE "illustration" 为空——6 个插图文件零类型错误，通过；未触碰 6 文件之外任何文件，未改 src/credit/键名，未创建新文件
+
+---
+Task ID: 7（主控收尾）
+Agent: 主控 (Z.ai Code)
+Task: 完成全部章节文字内容校对——存疑条目定夺 + 术语词典 + 插图 caption 全面校验收口
+
+Work Log:
+- 派发 6 个并行子代理：7-a 四大学科存疑定夺（31 条：FIX 8/KEEP 23，含 70S→55S 六处、U12 0.3%、TFIIH 10 亚基、DPPC 30 亚甲基、hormone 1905、Leu⁺→p63⁺/ABCG2⁺、同步振荡器 2010、临床显性）；7-b 五学科存疑定夺（38 条：FIX 9/KEEP 29，含巴氏消毒 63℃ 统一、放线菌 pH 7.5–8.5 统一、病毒分馏/间层译名统一、滚环/滚发夹、ACh 上百毫摩尔、ipRGC 数千至两万、HMDB 十万级）；7-c 术语词典 part1（glossary.ts 124 条 + micro/virology 60 条 + term-structures 26 映射：FIX 1——胞嘧啶脱氨 数千→数百次/日，CCD 26 码经 RCSB API 全部实测一致）；7-d 术语词典 part2（immuno/neuro/bioinfo 90 条：FIX 1——海马 皮质下→古皮质）；7-e 自绘插图 caption（9 文件 303 条：FIX 8——纯生糖 14 种、puff、磷脂酰丝氨酸、LFA-1、Roberts、置换重链、c-myc、删串文句）；7-f 网络插图 caption（6 文件 175 条：FIX 6——泛酸、3^N 构象空间、rs1426654 外显子（OCR+像素取证）、衬、蜗内电位、杜尔贝科）
+- 主控跨层收口 3 处：quiz/cell-biology.ts q-22 选项与解析 70S→「细菌类型（哺乳类为 55S）」（与正文新口径对齐，答案索引不变）；quiz/microbiology.ts 巴氏消毒 63–66℃→63℃ 两处（与正文统一口径）；draw-bp-r4.ts DNA 存储 caption「理论容量 2×10¹⁷ 字节」→「理论极限 455 EB/g + 实用逻辑密度 215 PB」分列（与 biophysics 正文一致）
+- 核查 5 学科索引文件 description（均为无具体事实断言的学科综述句，通过）与 biology.ts 聚合层（纯代码）
+- 验证：bunx tsc --noEmit src/ 零错误；bun run lint 通过；dev.log 全 200 无报错；agent-browser 端到端冒烟——首页/学科中心/病毒学阅读器（病毒分馏 渲染 ✓）/术语词典（海马 古皮质 渲染 ✓）/测验中心（细胞 ch5 内共生题 细菌类型（哺乳类为 55S）渲染 ✓）；375px 移动视口无横向溢出；控制台与页面 0 错误
+
+Stage Summary:
+- 全平台文字内容科学性校对至此全部完成：九学科 432 节正文 + 全部题库（前轮 ~70 处修复）+ 约 60 条存疑条目定夺（本轮 17 条 FIX/54 条 KEEP 定案）+ 术语词典 274 条（2 处修复）+ 自绘/网络插图 caption 478 条（14 处修复）+ 跨层口径统一（70S/55S、巴氏消毒、DNA 密度、病毒分馏、间层）共 33 处子代理修复 + 3 处主控收口 = 本轮 36 处
+- 累计两轮共修复约 106 处科学性问题；所有修改均为最小化编辑（31 文件 286 insertions/50 deletions）
+- git commit + push origin main
+
+未解决问题与下一步建议：
+- 各代理存疑 KEEP 项已全部定案记录在 worklog（教材口径差异类，无需再动）
+- VLM 账户级 429 限流仍未解除（插图 AI 讲解/全量视觉审校待配额恢复）
+- 可选下轮：图库「自绘」筛选体验打磨、灯箱上一张/下一张切换、glossary 海马词条 g-192/g-213 去重（产品层决策）

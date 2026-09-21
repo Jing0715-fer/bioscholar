@@ -180,7 +180,7 @@ export const drawCbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/cb-ch7-s5-karyotype-giant-chromosomes.svg',
       caption:
-        '核型分析与巨大染色体：人类 2n=46，按丹佛体制分 A–G 七组，G 显带（胰酶-Giemsa）为常规核型分析；21 三体（Down 综合征）与 t(9;22) 费城染色体（BCR-ABL）是核型病的经典教材案例。两套天然放大体系：果蝇唾腺多线染色体经 10 轮复制达 1024 条染色丝同向平行排列，胀泡（puddle）即活跃转录位点；两栖类卵母细胞灯刷染色体的侧环是伸展的转录单元——巨大染色体让转录可直接在光镜下观察。',
+        '核型分析与巨大染色体：人类 2n=46，按丹佛体制分 A–G 七组，G 显带（胰酶-Giemsa）为常规核型分析；21 三体（Down 综合征）与 t(9;22) 费城染色体（BCR-ABL）是核型病的经典教材案例。两套天然放大体系：果蝇唾腺多线染色体经 10 轮复制达 1024 条染色丝同向平行排列，胀泡（puff）即活跃转录位点；两栖类卵母细胞灯刷染色体的侧环是伸展的转录单元——巨大染色体让转录可直接在光镜下观察。',
       credit: DRAWN_CREDIT,
     },
   ],
@@ -196,7 +196,7 @@ export const drawCbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/cb-ch8-s3-ip3-dag-calcium.svg',
       caption:
-        'IP₃/DAG 双信使与钙信号：Gq 偶联受体激活 PLCβ 裂解 PIP₂——水溶的 IP₃ 扩散至内质网开 IP₃ 受体钙库，脂溶的 DAG 留膜上激活 PKC（靶需先经磷脂酸丝氨酸增敏）。钙信号的组织学：胞质游离 Ca²⁺ 约 100 nM、胞外/ER 腔约 1–2 mM——近万倍梯度以振荡频率编码信息（钙峰频率而非幅度承载信号）；钙调蛋白 CaM 一分子四钙构象变化激活 CaMKII（自磷酸化记忆）、MLCK（平滑肌收缩）与 eNOS——NO 舒张血管的信号链（1998 诺奖）。',
+        'IP₃/DAG 双信使与钙信号：Gq 偶联受体激活 PLCβ 裂解 PIP₂——水溶的 IP₃ 扩散至内质网开 IP₃ 受体钙库，脂溶的 DAG 留膜上激活 PKC（靶需先经磷脂酰丝氨酸增敏）。钙信号的组织学：胞质游离 Ca²⁺ 约 100 nM、胞外/ER 腔约 1–2 mM——近万倍梯度以振荡频率编码信息（钙峰频率而非幅度承载信号）；钙调蛋白 CaM 一分子四钙构象变化激活 CaMKII（自磷酸化记忆）、MLCK（平滑肌收缩）与 eNOS——NO 舒张血管的信号链（1998 诺奖）。',
       credit: DRAWN_CREDIT,
     },
   ],
@@ -220,7 +220,7 @@ export const drawCbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/cb-ch9-s4-adhesion-leukocyte-extravasation.svg',
       caption:
-        '细胞粘附分子与白细胞渗出级联：四大粘附家族——钙粘蛋白（同型结合，组织连贯）、选择素（唾液酸化糖链识别，滚动起始）、整联蛋白（异二聚体，与 ICAM/纤连蛋白结合，牢固锚定）与 IgSF（如 ICAM-1/VCAM-1）。炎症渗出四步：毛细血管后微静脉 selectin 介导初始滚动→趋化因子激活 LFA-1 构象→LFA-1-ICAM-1 牢固粘附→PECAM-1 介导穿内皮迁移（diapedesis）。LAD（LFA-2/CD18 缺陷）反复感染与那他珠单抗（抗 VLA-4）致 PML——渗出级联正反两面的临床印证。',
+        '细胞粘附分子与白细胞渗出级联：四大粘附家族——钙粘蛋白（同型结合，组织连贯）、选择素（唾液酸化糖链识别，滚动起始）、整联蛋白（异二聚体，与 ICAM/纤连蛋白结合，牢固锚定）与 IgSF（如 ICAM-1/VCAM-1）。炎症渗出四步：毛细血管后微静脉 selectin 介导初始滚动→趋化因子激活 LFA-1 构象→LFA-1-ICAM-1 牢固粘附→PECAM-1 介导穿内皮迁移（diapedesis）。LAD（LFA-1/CD18 缺陷）反复感染与那他珠单抗（抗 VLA-4）致 PML——渗出级联正反两面的临床印证。',
       credit: DRAWN_CREDIT,
     },
   ],

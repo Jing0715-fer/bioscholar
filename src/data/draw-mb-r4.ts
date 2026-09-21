@@ -157,7 +157,7 @@ export const drawMbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/mb-ch1-s1-gene-concept-split-gene.svg',
       caption:
-        '基因概念的历史演进：孟德尔遗传因子（1865）→ Morgan 基因学说（连锁互换，果蝇实验）→ Beadle-Tatum 一个基因一种酶（链孢霉，1958 诺奖）→ Benzer 顺反子测验（T4 rII，基因内部存在重组单元）→ 1977 年断裂基因的发现——Brover 与 Sharp/Roberts 两组电镜下观察到 mRNA 与 DNA 杂交后内含子区段形成 R 环 loops，证明真核基因是外显子与内含子相间排列的断裂结构（1993 诺奖）。顺反测验确立了「基因=顺反子=一个功能单位」的操作定义，而断裂基因则把单位细化为外显子编码区。',
+        '基因概念的历史演进：孟德尔遗传因子（1865）→ Morgan 基因学说（连锁互换，果蝇实验）→ Beadle-Tatum 一个基因一种酶（链孢霉，1958 诺奖）→ Benzer 顺反子测验（T4 rII，基因内部存在重组单元）→ 1977 年断裂基因的发现——Roberts 与 Sharp 两组电镜下观察到 mRNA 与 DNA 杂交后内含子区段形成 R 环 loops，证明真核基因是外显子与内含子相间排列的断裂结构（1993 诺奖）。顺反测验确立了「基因=顺反子=一个功能单位」的操作定义，而断裂基因则把单位细化为外显子编码区。',
       credit: DRAWN_CREDIT,
     },
   ],
@@ -189,7 +189,7 @@ export const drawMbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/mb-ch2-s2-origin-theta-rolling-dloop.svg',
       caption:
-        '复制起点与三种复制方式：大肠杆菌 oriC 长 245 bp，含 5 个 DnaA 盒与 3 个 AT 富集的 DUE 元件——DnaA 蛋白 ATP 依赖聚合使双链在 DUE 处解链，装载 DnaB 解旋酶后双向延伸。θ 型（theta）复制见于大肠杆菌环状染色体（电镜下 θ 形中间体）；滚动环复制为 λ 噬菌体/M13/F 质粒策略——在一条链切口后以另一条环链为模板滚出新生链，可连续产多拷贝基因组；D 环复制发生在线粒体——两条链起点错位，先合成重链置换出轻链单环 D 环。',
+        '复制起点与三种复制方式：大肠杆菌 oriC 长 245 bp，含 5 个 DnaA 盒与 3 个 AT 富集的 DUE 元件——DnaA 蛋白 ATP 依赖聚合使双链在 DUE 处解链，装载 DnaB 解旋酶后双向延伸。θ 型（theta）复制见于大肠杆菌环状染色体（电镜下 θ 形中间体）；滚动环复制为 λ 噬菌体/M13/F 质粒策略——在一条链切口后以另一条环链为模板滚出新生链，可连续产多拷贝基因组；D 环复制发生在线粒体——两条链起点错位，先合成重链置换出重链单环 D 环。',
       credit: DRAWN_CREDIT,
     },
   ],
@@ -333,7 +333,7 @@ export const drawMbR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/mb-ch12-s2-oncogene-activation-modes.svg',
       caption:
-        '原癌基因的分类与四大激活机制：按功能层级排列——生长因子（SIS/PDGF）、受体酪氨酸激酶（HER2/EGFR）、信号转导（src/abl/Ras）、转录因子（myc）与细胞周期（cyclin D1/CDK4）。激活四模式各配典型病例：①点突变——Ras G12V 使 GTP 水解锁定开启态（约 30% 人类肿瘤）；②基因扩增——MYCN（神经母细胞瘤双微体）、HER2（乳腺癌）；③染色体易位——费城染色体 t(9;22) 的 BCR-ABL 融合激酶（CML），伊马替尼靶向 ATP 口袋使五年生存率超 90%；④病毒 LTR 插入激活 c-mc——四条路线殊途同归：使生长信号失去可调控性。',
+        '原癌基因的分类与四大激活机制：按功能层级排列——生长因子（SIS/PDGF）、受体酪氨酸激酶（HER2/EGFR）、信号转导（src/abl/Ras）、转录因子（myc）与细胞周期（cyclin D1/CDK4）。激活四模式各配典型病例：①点突变——Ras G12V 使 GTP 水解锁定开启态（约 30% 人类肿瘤）；②基因扩增——MYCN（神经母细胞瘤双微体）、HER2（乳腺癌）；③染色体易位——费城染色体 t(9;22) 的 BCR-ABL 融合激酶（CML），伊马替尼靶向 ATP 口袋使五年生存率超 90%；④病毒 LTR 插入激活 c-myc——四条路线殊途同归：使生长信号失去可调控性。',
       credit: DRAWN_CREDIT,
     },
   ],

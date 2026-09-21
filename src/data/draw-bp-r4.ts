@@ -204,7 +204,7 @@ export const drawBpR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/bp-ch10-s1-dna-data-storage.svg',
       caption:
-        'DNA 作为信息分子与数据存储：4 种碱基=每碱基 2 bit，1 g 单链 DNA 理论容量约 2×10¹⁷ 字节（约 215 PB）——比最好的硬盘高 6–7 个数量级；半衰期与常温稳定性亦远超磁介质。编码架构：约 150–200 nt 寡核苷酸=索引+载荷+Reed-Solomon 纠错；里程碑：2012 年 Church 编码 5.27 Mb（含一本书与 GIF），2017 年 Erlich「DNA fountain」逼近理论密度极限——「硅基写、碳基存」的冷数据归档新路线。',
+        'DNA 作为信息分子与数据存储：4 种碱基=每碱基 2 bit，理论极限约 455 EB/g，1 g 单链 DNA 经纠错编码的实用逻辑密度约 2×10¹⁷ 字节（约 215 PB）——比最好的硬盘高 6–7 个数量级；半衰期与常温稳定性亦远超磁介质。编码架构：约 150–200 nt 寡核苷酸=索引+载荷+Reed-Solomon 纠错；里程碑：2012 年 Church 编码 5.27 Mb（含一本书与 GIF），2017 年 Erlich「DNA fountain」逼近该实用密度极限——「硅基写、碳基存」的冷数据归档新路线。',
       credit: DRAWN_CREDIT,
     },
   ],

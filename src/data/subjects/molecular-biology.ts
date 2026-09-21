@@ -686,7 +686,7 @@ RNA 转录由依赖 DNA 的 RNA 聚合酶（RNA polymerase, RNAP）催化。大�
 | TFIIB | 1 | 单体，桥接 pol II 与 TBP，决定转录起始位点 |
 | TFIIF | 2 | 随 pol II 结合，抑制非特异结合，协助延伸 |
 | TFIIE | 2 | 募集并调节 TFIIH |
-| TFIIH | 9 | XPB（3′→5′ 解旋酶）解链；CDK7/MO15 磷酸化 CTD Ser5；兼具 NER 修复功能 |
+| TFIIH | 10 | XPB（3′→5′ 解旋酶）解链；CDK7/MO15 磷酸化 CTD Ser5；兼具 NER 修复功能 |
 
 **前起始复合物（PIC）**按序组装：TBP（TFIID）落于 TATA → TFIIA 稳定 → TFIIB 提供极性标志 → pol II 携 TFIIF 进入 → TFIIE → TFIIH；XPB 在 Inr 周围解开约 13 bp 形成**转录泡**（真核开放复合物形成需 ATP——与原核不同），随后首个磷酸二酯键形成，CTD 被 CDK7 磷酸化后启动子清除（promoter clearance）。
 
@@ -818,7 +818,7 @@ ATP 在剪接中用于重塑 snRNP 构象（解旋酶 Prp28、Brr2 等），而�
 
 ## AT-AC 型次要剪接体
 
-少数内含子（约 0.1%）以 AT…AC 为末端（而非 GT…AG），由含 U11/U12（替代 U1/U2）、U4atac/U6atac 的**次要剪接体（U12 型）**剪接，机制与主要剪接体平行，说明剪接机器在演化上发生过重复与分化。`,
+少数内含子（约 0.3%）以 AT…AC 为末端（而非 GT…AG），由含 U11/U12（替代 U1/U2）、U4atac/U6atac 的**次要剪接体（U12 型）**剪接，机制与主要剪接体平行，说明剪接机器在演化上发生过重复与分化。`,
           keyPoints: [
             '剪接识别 5′ GU、3′ AG 与分支点 A 三类信号；GU-AG 规则是预测内含子的依据',
             '两步转酯：分支点 A 的 2′-OH 攻击 5′ 位点成套索；5′ 外显子 3′-OH 再攻击 3′ 位点连接外显子',
