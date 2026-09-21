@@ -114,7 +114,7 @@ for (const [sectionId, info] of SECTION_INDEX) {
   CARD_LABELS.set(`kp-${sectionId}`, info.sectionTitle)
 }
 
-/** 全部小节总数（203） */
+/** 全部小节总数（441） */
 const TOTAL_SECTIONS = SECTION_INDEX.size
 
 /**

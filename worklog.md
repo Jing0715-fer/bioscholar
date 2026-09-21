@@ -1374,3 +1374,118 @@ Stage Summary:
 - 各代理存疑 KEEP 项已全部定案记录在 worklog（教材口径差异类，无需再动）
 - VLM 账户级 429 限流仍未解除（插图 AI 讲解/全量视觉审校待配额恢复）
 - 可选下轮：图库「自绘」筛选体验打磨、灯箱上一张/下一张切换、glossary 海马词条 g-192/g-213 去重（产品层决策）
+
+---
+Task ID: 8-c
+Agent: scientific-reviewer (API 文案与 manifest 数据)
+Task: API 路由用户可见文案（错误消息/提示语/注释断言）事实准确性校验 + public/images/bio 三类 manifest 数据文件（terms/structures 化合物分子式与中英名、commons topic 与 sectionId 引用）科学性收尾
+
+Work Log:
+- 读 worklog 尾部确认口径：九学科正文/题库/词典/插图 caption 已完成校对，本轮为 API 层与图片数据层的科学性收尾
+- 任务 A：逐文件 Read 全部 14 个 API 路由文件（report/stats/activity/progress/notes/flashcards/quiz-attempts/wrongbook/assistant-providers 及其 test/models/figure-explain/chat、api 根 route.ts），提取全部中文文案与含数字断言的注释逐条核对：DAYS=126↔「18 周」（report/activity 两处一致）、stats「最近 14 天」（i=13..0 恰 14 天）、assistant test「超时 8s」=TIMEOUT_MS 8000、models「超时 10s」=10000、activity「四类学习行为」=completed/quiz/notes/reviews、flashcards 三常量（术语 12/要点 6/会话 25）与注释一致、wq- 前缀三路由约定一致、chat/figure-explain/notes/providers 系列错误消息（「标题不能为空」「参数不完整」「服务内部错误」「未知供应商」等）均为无事实断言的技术文案
+- 重点项：report/route.ts:117 注释「全部小节总数（203）」——实测数据层 bun 脚本计数 9 学科 441 小节（生化 53/生分 57/细胞 53/生物物理 40/微生物 46/免疫 48/神经 48/生信 48/病毒 48），且 53+57+53+40=203 恰为四学科时代残值；代码 TOTAL_SECTIONS=SECTION_INDEX.size 为动态统计、逻辑本身正确，属纯过时注释 → 仅改注释 203→441，改后 rg 复核落盘、全 api 目录无 203 残留
+- 任务 B1：terms/manifest.json（26 条）+ structures/manifest.json（77 条，任务书预估 ~40，实测 77 条全量核验）——RCSB CCD 官方 API 可达性预检通过（ATP/CLR/GLC 三码 200）后写 bun 脚本批量拉取 77 个唯一 CCD code 的 chem_comp.formula/name 与两 manifest 全部 103 条目逐条比对：公式不一致 0 条、en 名称不一致 0 条（含大小写归一）
+- zh↔en 中文名全量人工核对（TDR=胸腺嘧啶、GUN=鸟嘌呤、CYT=胞嘧啶（IUPAC 名 6-AMINOPYRIMIDIN-2(1H)-ONE 对应正确）、STE=硬脂酸 C18:0、MYR=豆蔻酸 C14:0、PAM=棕榈油酸 C16:1 Δ9、OLA=油酸 C18:1、PCW=1,2-二油酰-sn-甘油-3-磷酸胆碱（DOPC）、NAI=NADH、NAP=NADP⁺、NDP=NADPH、CMP=环腺苷酸 cAMP、TMP=dTMP、ACO=乙酰辅酶A、VDY=骨化三醇、PQN=叶绿醌等全部正确）
+- 不饱和度心算复核：C18H36O2（硬脂酸 0 双键）/C18H34O2（油酸 1）/C16H30O2（棕榈油酸 1）/C16H32O2（棕榈酸 0）/SPH C18H37NO2（鞘氨醇 d18:1 一条双键）全部自洽；乙酰辅酶A=CoA+C2H2O 加和核对无误
+- 任务 B2：7 个 commons manifest（5a/5b/5c/21a/21b/21c/24a，共 66 条目含 1 条双 sectionId 数组引用、合计 67 个引用）——bun 脚本构建数据层 441 个 sectionId 全集逐一比对：失效引用 0 个；topic 字段逐条抽核科学性（糖酵解 10 步/TCA 8 步/蔗糖 α(1→2) 非还原糖/乳糖 β(1→4) 还原糖/麦芽糖 α(1→4)/中心法则三级流向/钠钾泵 3Na⁺出 2K⁺入/静息 −70 mV 阈值 −55 mV 超射 +30 mV/α 螺旋 i→i+4 氢键/染色质 10nm→30nm 层级/膜相变 Lβ/Lα/Tm/驱动蛋白 8 nm 步长/TIRF 隐失场 100–200 nm/KcsA TVGYG 选择性 ~10⁴/G⁺厚肽聚糖 G⁻外膜 LPS 等均正确）；另将 66 条 topic 与所挂 section 标题逐条对表，主题-章节归属全部吻合（如 glycolysis-pathway→「糖酵解」、trp-attenuation→「色氨酸操纵子与衰减机制」、kcsa→「KcsA 的启示」）；verified 字段系历史 VLM QA 记录按指示跳过；24a 为数组格式无 topic 字段，仅核 sectionId（16 条全部有效）
+- 验证：9 个 manifest JSON.parse 全部合法；bunx tsc --noEmit 过滤 "api/" 输出为空
+
+Stage Summary:
+- API 文案审阅条数：14 个路由文件全量（含任务书点名 13 个 + api 根 route.ts），用户可见文案与含数字注释约 90 条逐一核对，修复 1 处
+- manifest 核验条数：CCD 分子式/名称 103 条（77 唯一码）API 实测 103 条 vs 心算 0 条（外网可达，未启用降级路径）；commons 66 条 topic 抽核 + 67 个 sectionId 引用全量核对
+- 修复清单（1 处）：
+  1. src/app/api/report/route.ts:117 注释「全部小节总数（203）」→「全部小节总数（441）」——代码逻辑（SECTION_INDEX.size 动态统计）正确，注释为四学科时代（53+57+53+40=203）残值，实测九学科 441 小节，仅改注释不动逻辑
+- sectionId 失效引用清单：空（67/67 引用全部有效）
+- 存疑未改清单：
+  1. src/app/api/assistant/figure-explain/route.ts:29 prompt 人设「精通生物化学、分子生物学、细胞生物学与生物物理学的资深教授」仅列四学科（平台现九学科；chat/route.ts:19 已列全九学科）——按任务分工 prompt 人设归另一代理，移交其处理，本轮未动
+  2. src/app/api/flashcards/route.ts:34 注释「本节要点（3-6 条）」——数据层实测分布为 4/5/6 条（108/288/45 节），过滤条件为 >=3；开发者注释与过滤逻辑相容、非用户可见文案，不构成硬错，保留
+  3. structures/manifest.json 中 LYS（C6H15N2O2）/ARG（C6H15N4O2）/HIS（C6H10N3O2）为 RCSB CCD 质子化 +1 价态形式（API 实证 formal charge=1），与教材中性式（C6H14N2O2 等）相差 1H——manifest 忠实镜像其声明来源 rcsb.org，与前轮 7-c 对 GLC/FRU 异头物口径的处理一致，非科学性错误，仅备案
+- 验证结果：9 个 manifest JSON.parse 合法；bunx tsc --noEmit | grep "api/" 为空（API 层零类型错误）；report 注释修改经 rg 复核落盘、无旧值残留；未做 git 操作、未增删文件、未触碰任务范围外文件（仅改 report/route.ts 1 行注释）
+
+---
+Task ID: 8-b
+Agent: scientific-reviewer (辅助视图与 AI prompt)
+Task: 校验辅助视图组件、落地页、AI 助手 prompt、供应商目录中所有用户可见文案的科学性与事实准确性（14 个文件）
+
+Work Log:
+- 读 worklog 尾部 ~400 行：此前九学科正文/题库/词典/插图 caption 已完成校对，本轮为 UI 辅助视图与 AI prompt 收尾
+- 逐一通读 14 个目标文件全文（subjects-view 307 行 / assistant-view 1023 行 / gallery-view 509 行 / search-dialog 267 行 / ability-radar 314 行 / activity-heatmap 225 行 / figure-lightbox 605 行 / markdown 261 行 / providers-panel 1306 行 / page 296 行 / layout 61 行 / chat route 242 行 / figure-explain route 136 行 / providers 325 行）
+- 专项 1：assistant-view QUICK_QUESTIONS 6 条快捷问题逐条核科学性（化学渗透假说/氧化磷酸化、Km/Vmax/双倒数作图、原核真核调控对比、Bcl-2 凋亡开关、跨膜 α-螺旋脂双层稳定、中心法则 DNA→蛋白质调控层次）——均为标准教材概念且问题本身无科学错误，零修改
+- 专项 2：chat/route.ts system prompt 教材引用 13 本逐本核实（王镜岩《生物化学》、朱玉贤《现代分子生物学》、翟中和/丁明孝《细胞生物学》、周德庆《微生物学教程》、沈萍《微生物学》、曹雪涛《医学免疫学》、寿天德《神经生物学》、Kandel《Principles of Neural Science》、Pevzner《Bioinformatics Algorithms》、Lehninger《Principles of Biochemistry》、Alberts《Molecular Biology of the Cell》、谢天恩/胡志红《普通病毒学》、Flint《Principles of Virology》）——书名/作者拼写与搭配全部正确（含 Kandel 书名单数 Neural Science、曹雪涛确为《医学免疫学》主编），零修改
+- 专项 3：数据层交叉验证——biology.ts 实测九学科 441 小节；插图来源实测（rg 统计挂载 src 前缀）：drawn 307 / commons 123 / web 18 / pdb 17 / structures(CCD) 13 / ai 0，合计 478 张全部真实来源；credentials.ts 实测 API Key 走本地 JSON 文件 + 环境变量（无 prisma/db 写入），与 providers-panel「不写入数据库」声明一致
+- 专项 4：providers.ts 全目录 15 供应商 31 个模型条目逐一核 contextWindow 量级与模型 id 拼写（GPT-4.1 1047576 / o4-mini 200000 / Claude 全系 200000 / Gemini 2.5 1048576 / DeepSeek 64000 / GLM 128000 / Qwen3-Max 262144 / Kimi K2 131072 / Llama 3.3 70B 131072 / Mistral Small 32000 / MiniMax-Text-01 1000000 / grok-3 131072 等）——全部无明显错误，零修改
+- 每处修改前 Grep 确认字符串唯一性 → Edit 最小化修复（不改句式结构/变量名/动态数字）→ rg 复核落盘 + 旧串零残留
+- 验证：bunx tsc --noEmit 过滤 14 文件名 → 零输出（全部通过）
+
+Stage Summary:
+- 审阅条数：约 240 条用户可见文案（含 6 条快捷问题、13 本教材引用逐本核实、31 个模型技术事实、6 类插图来源标签、6 维雷达 hint、10 个导航项），修复 5 处，存疑未改 4 项
+- 修复清单（文件:行号 原文→修正+理由）：
+  1) ability-radar.tsx:276 「已完成小节占五学科全部小节的比例」→「占九学科全部小节的比例」——平台实为九学科 441 小节（biology.ts 实测），覆盖率分母为全平台小节，主控 ground truth 指定修正
+  2) assistant-view.tsx:179 「助教精通生物化学、分子生物学、细胞生物学与生物物理学」→「助教精通生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学、生物信息学与病毒学」——空会话引导页仅列四学科，与 chat route system prompt 九学科人设跨文件矛盾（且学科下拉可选九学科），对齐为与 chat prompt 完全一致的九学科列表
+  3) api/assistant/figure-explain/route.ts:29 「一位精通生物化学、分子生物学、细胞生物学与生物物理学的资深教授」→「一位精通生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学、生物信息学与病毒学的资深教授」——看图讲解服务覆盖九学科插图（微生物/免疫/神经/生信/病毒的图均走此 prompt），四学科人设与实际服务范围不符，与 chat prompt 不一致，任务线索指定对齐为九学科
+  4) app/layout.tsx:21 metadata description 「教材体系（生物化学、分子生物学、细胞生物学、生物物理学）」→ 括号内补全九学科——SEO 描述声称教材体系仅覆盖四学科，与数据层九学科事实矛盾（过时残留），逐字补齐与 biology.ts 学科列表一致
+  5) gallery-view.tsx:318 「{realCount} 张（{realPct}%）来自真实科学数据库」→「{realCount} 张（{realPct}%）为真实来源（非 AI 生成）」——realCount=all-ai=478（100%），其中 307 张为依据教材参数代码自绘、123 张来自 Wikimedia Commons、18 张来自期刊/教育插图，真正来自科学数据库（RCSB PDB/CCD）仅 30 张（6.3%）；「100% 来自真实科学数据库」系来源误述且与同文件 SOURCE_META.drawn「依据教材参数代码绘制（非 AI 生成）」自相矛盾；修正后表述与代码统计口径（非 AI 计数）严格一致
+- 存疑未改清单（附理由）：
+  1) dashboard.tsx:181「五学科 · {TOTAL_SECTIONS} 小节」与 report-view.tsx:503 meta="五学科"——同一性质过时残留（应作「九学科」），但两文件不在本轮授权范围（任务明确圈定 14 文件且严禁触碰范围外），报请主控收口
+  2) search-dialog.tsx:99-105/113-121 figureSource 判定链缺少 /web/ 分支——18 张 web 图（期刊/教育插图）在全局搜索中被兜底归为 ai 类，subtitle 显示「机制示意」且 keywords 含「AI 绘制」，与 gallery-view 六分类（web=「教材图源」）跨文件不一致；属来源性质误述，但修复需扩展 figureSource 类型联合（+subtitle 三元链/iconFor/SRC_KEYWORDS 共 4 处结构分支），超出「最小化文案修改、不重构」边界，报请主控决定是否补齐
+  3) page.tsx:59 导航 desc「教材图库——真实科学数据配图」——图库确实含 30 张 RCSB 真实数据配图，该 5 字导航语属产品定位描述而非数量断言，未达确凿错误级别，保留（头部汇总句已修复）
+  4) providers.ts qwen-max contextWindow 32768 与 ollama qwen2.5 32768——均为该模型历史版本/默认部署口径（qwen-max 旧版 32K、Ollama 常见 32K 部署），与当前最新版口径（128K/256K）并存，非「明显错误」，按任务规则不动
+- 验证结果：bunx tsc --noEmit | grep -E "(subjects-view|assistant-view|gallery-view|search-dialog|ability-radar|activity-heatmap|figure-lightbox|markdown|providers-panel|page|layout|api/chat|figure-explain|providers)" → 空输出（14 文件零类型错误）；5 处修改 rg 复核全部落盘、旧串（五学科/来自真实科学数据库/「与生物物理学」四学科残句）在 14 文件内零残留；未触碰范围外文件、未创建/删除文件、无 git 操作
+
+---
+Task ID: 8-a
+Agent: scientific-reviewer (大学科视图文案)
+Task: 校验 8 个大学科视图组件（reader/quiz/glossary/wrongbook/notes/revision/report/dashboard）中所有用户可见文案的科学性与事实准确性——统计口径类 hints、学科名映射表、记忆科学断言、平台内容描述性断言与硬编码生物学名词
+
+Work Log:
+- 读 worklog.md 尾部 400 行：确认此前九学科正文/题库/词典（274 条）/插图 caption（478 条）已校对完毕，本轮为 UI 视图文案收尾；沿用「只修确凿无疑三类 + 最小化 Edit + rg 复核落盘」惯例
+- 数据层实测（bun 临时脚本，非落盘文件）：9 学科 106 章 441 小节（bc 53/mb 57/cb 53/bp 40/mi 46/im 48/ne 48/bi 48/vi 48）；glossary 274 条；要点卡源 441（全部小节 keyPoints≥3，实际每节 4–6 条）；卡库静态基数 274+441=715；题库 525 题，105/106 章有题且全部 quizCount≥sectionCount（唯一无题章不渲染自测入口）
+- 通读 8 个组件全文（共 6113 行）+ 对照数据层：src/lib/srs.ts（masteredInterval=21、initEase=2.5、grade0→+10min、firstInterval 1/3）、src/app/api/report/route.ts（subjects.map 聚合全部 9 学科、DAYS=126=18 周）、src/app/api/flashcards/route.ts（totalCards=glossary+keypoints+wq；分桶 <1/[1,7)/[7,21)/≥21）、src/app/api/notes/route.ts
+- 逐项核对记忆科学断言：report「复习间隔 ≥ 21 天=已掌握」「按 SM-2 间隔调度」、revision 分桶口径「<1 天/1–7 天/7–21 天/≥ 21 天」（与 API 分桶及 srs.ts 1/7/21 阈值一致）、「初始 2.5，评分越简单越高」（grade3 +0.15/grade1 −0.15/grade0 −0.2）、「10 分钟内再次巩固」（grade0 +10min）——全部与代码一致
+- 逐项核对统计口径与映射：report「近 18 周/四类学习行为/五项核心学习产出/六维」、dashboard hero 九大学科列举（与 subjects 逐一相符）、quiz/glossary/wrongbook/revision 四份学科映射（9 学科齐全无缺）、题型名（单选/多选/判断）、reader「共 X 道题覆盖本章 N 个小节的知识点」（实测 105 个有题章全部 quizCount≥小节数）、glossary 检索示例 ATP/糖酵解/apoptosis（均在库）、notes 示例「糖酵解的三个关键调控点」（己糖激酶/PFK-1/丙酮酸激酶三酶调控，通行口径）
+- 发现并修复 6 处（见下）；每处修改前 Grep 确认字符串唯一、修改后 rg 复核落盘
+- 验证：bunx tsc --noEmit 过滤 8 组件 → 零类型错误（残余错误均在 scripts/review 与 skills/，预存与本轮无关）；bunx eslint 4 个修改文件 → exit 0；旧串（四大学科/五学科/?? 303/阅读页快速记笔记）rg 复核零残留
+
+Stage Summary:
+- 审阅文案条数：8 文件约 90 条含事实断言的用户可见文案（统计口径 hints、学科映射 4 份、记忆科学断言、平台内容描述、示例术语、aria-label 事实内容）全部过检；纯机制文案（加载中/暂无数据/按钮标签）按任务约定不算
+- 修复清单（6 处，5 个文件）：
+  1. report-view.tsx:342 「汇总四大学科的学习进度…」→「汇总九大学科的学习进度…」——/api/report subjectsReport 由 @/data/biology subjects.map 聚合全部 9 学科，旧文案系四学科时代残留，事实性硬错
+  2. report-view.tsx:503 meta="五学科"→"九学科"——学科进展区循环渲染 data.subjects 全部 9 条，与 ability-radar:276 同源的过时计数
+  3. dashboard.tsx:181 「五学科 · {TOTAL_SECTIONS} 小节」→「九学科 · …」——「学科学习进度」卡 subjects.map 渲染全部 9 学科、TOTAL_SECTIONS=441 为九学科合计，旧计数与数据层矛盾
+  4. revision-view.tsx:249 {stats?.totalCards ?? 303}→?? 715——静态兜底数过时：卡库基数=glossary 274+要点卡 441=715（错题卡随用户数据追加）；动态值 stats.totalCards 优先级不变，仅修兜底
+  5. notes-view.tsx:62-68 SUBJECT_IDS 补齐 immunology/neurobiology/bioinformatics/virology 四项（5→9 学科）——学科映射不完整（任务指定核查项）：API 对 subjectId 原样入库不校验，旧 5 学科守卫使四新学科的笔记静默丢失学科徽标与「跳回知识点」链接，与数据层 9 学科矛盾；仅追加数组项，无重命名/重构
+  6. notes-view.tsx:285-287 删除「；在知识点阅读页也可以快速记笔记，并自动关联所在学科与小节」——事实性硬错：全库核查（reader-view 全文 1041 行 + rg api/notes 全部调用点 + markdown/assistant/gallery/search-dialog）确认阅读器无任何笔记入口，唯一创建路径是本视图对话框且不携带 subjectId；该句宣称不存在的功能
+- 存疑未改清单：
+  1. ability-radar.tsx:276 「已完成小节占五学科全部小节的比例」——已知过时文案（应改九学科），但该文件不在本轮 8 文件白名单内（严禁触碰范围外文件），报请主控收口
+  2. api/report/route.ts:117 代码注释「全部小节总数（203）」——过时注释（实际 441），非用户可见且在范围外，仅报备
+  3. revision-view.tsx:664-665 分桶图例「1–7 天」「7–21 天」——半开区间惯例写法（API 注释即 1≤x<7），边界 7/21 归属上图例含混但分桶本身正确，属显示惯例非硬错
+  4. notes-view/flashcards API「要点卡：本节要点（3-6 条）」注释与 '3-6' 兜底——实际每节 4–6 条、过滤条件 ≥3，区间表述为宽松超集且兜底分支几乎不可达，未达确凿错误
+  5. dashboard.tsx:89 「教育部「101计划」生物学核心课程」——课程体系归属性表述（101 计划含生物科学领域，九学科为标准核心课程），非与数据层矛盾的事实断言，保留
+  6. reader-view.tsx:482「全文 X 字」计数口径（中文逐字+英文按词混计）——平台自有学术计数口径且动态展示，非科学性错误
+- 验证结果：bunx tsc --noEmit | grep -E "components/bio/(reader|quiz|glossary|wrongbook|notes|revision|report|dashboard)" → 空（零类型错误）；eslint 4 修改文件 exit 0；rg 复核 6 处修改全部落盘、旧串零残留；未触碰 8 文件之外任何文件（ability-radar.tsx 与 api/report/route.ts 的问题仅报备）、无 git 操作、未创建/删除文件
+
+---
+Task ID: 8（主控收尾）
+Agent: 主控 (Z.ai Code)
+Task: 全部文案科学性校对收官——UI 视图/落地页/AI prompt/API 文案/manifest 数据全覆盖（继 Task 4~7 正文/题库/词典/插图 caption 之后的最后一块拼图）
+
+Work Log:
+- 盘点前两轮覆盖（九学科 441 小节正文、525 题题库、274 条词典、478 条插图 caption、术语结构映射）后锁定本轮范围：UI 组件文案、落地页/元数据、AI 助教 prompt、API 路由文案、manifest 数据文件
+- 主控预核：数据层实测 9 学科 106 章 441 小节（bc53/mb57/cb53/bp40/mi46/im48/ne48/bi48/vi48），srs.ts 掌握阈值 21 天与能力雷达口径吻合，manifests 非运行时消费（数据已迁入 .ts 文件）
+- 派发 3 个并行子代理：
+  - 8-a 大学科视图（reader/quiz/glossary/wrongbook/notes/revision/report/dashboard，~90 条）：FIX 6——report-view「四大学科」→「九大学科」、meta「五学科」→「九学科」；dashboard「五学科」→「九学科」；revision-view 卡库兜底 303→715（274 术语+441 要点）；notes-view SUBJECT_IDS 补齐 4 学科（5→9，修复新学科笔记学科徽标丢失）；notes-view 删除「阅读页快速记笔记」不实功能宣称（全库核查确认无此入口）
+  - 8-b 辅助视图与 AI prompt（~240 条 + 13 本教材引用 + 31 模型条目）：FIX 5——ability-radar「五学科」→「九学科」；assistant-view 人设四学科→九学科；figure-explain prompt 人设四学科→九学科；layout.tsx metadata description 补全九学科；gallery-view「来自真实科学数据库」→「为真实来源（非 AI 生成）」（realCount 478 中仅 30 张来自数据库，原句系来源误述）。QUICK_QUESTIONS 6 条概念表述、13 本教材书名作者搭配（Kandel 单数书名、曹雪涛主编《医学免疫学》等）、providers.ts 31 模型 contextWindow/id 全部核验通过
+  - 8-c API 文案与 manifest（14 路由 ~90 条 + manifest 103 条 API 实测）：FIX 1——api/report/route.ts 注释「203」→「441」（恰为四学科时代残值）；terms/structures manifest 经 RCSB CCD 官方 API 实测 103 条分子式与名称 0 处不一致；commons 7 manifest 67 个 sectionId 引用全部有效、topic 抽核全部正确
+- 主控收口 1 处：search-dialog.tsx 补 /web/ 分支（figureSource 联合类型、检测链、SRC_KEYWORDS、副标题「教材图源」、Globe 图标 rose 色），修复 18 张期刊图被兜底误标为「AI 绘制」的事实性误标，与 gallery-view 六分类完全对齐
+- 验证：bunx tsc --noEmit src/ 零错误（残余均在 examples/、scripts/ 预存）；bun run lint 通过；agent-browser 端到端——首页「106 章 441 小节」、仪表盘「九学科」、学习报告「汇总九大学科」+ 学科进展 meta「九学科」+ 雷达 hint「九学科全部小节」、搜索对话框 Illumina 图正确显示「教材图源」（此前显示 AI 绘制）、图库「478 张（100%）为真实来源（非 AI 生成）」、AI 助教九学科人设全部渲染正确；375px 移动视口 scrollWidth=375 无横向溢出；控制台 0 错误；dev.log 全 200
+
+Stage Summary:
+- 全平台文案科学性校对至此真正收官：本轮 3 子代理 12 处修复 + 主控收口 1 处 = 13 处（过时学科计数 7、人设/元数据口径 3、不实功能宣称 1、来源误述 1、兜底数过时 1、注释过时 1），累计三轮约 119 处
+- 本轮 0 处生物学概念性错误（前两轮已清除殆尽），全部为平台演进遗留的口径过时与元描述失实——UX 层文案与数据层的一致性现在是完整的
+- manifest 103 条化学数据经 RCSB 官方 API 100% 实证；67 个 sectionId 引用全部有效
+- git commit + push origin main
+
+未解决问题与下一步建议：
+- 存疑 KEEP 项均为教材口径差异类，已定案记录（dashboard「101计划」归属语、providers.ts 历史模型 contextWindow、LYS/ARG/HIS CCD 质子化价态式等）
+- VLM 账户级 429 限流仍未解除（插图 AI 讲解/全量视觉审校待配额恢复）
+- 可选下轮产品打磨：图库灯箱上一张/下一张切换、glossary 海马词条去重、阅读器笔记入口（若补上则恢复 notes-view 相应文案）

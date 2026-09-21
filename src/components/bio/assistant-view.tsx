@@ -176,7 +176,7 @@ function QuickQuestions({ onPick }: { onPick: (question: string) => void }) {
         向 BioScholar 助教提问
       </h2>
       <p className="mt-1.5 max-w-md text-[11px] leading-relaxed text-muted-foreground sm:text-xs">
-        助教精通生物化学、分子生物学、细胞生物学与生物物理学，
+        助教精通生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学、生物信息学与病毒学，
         支持表格、公式推导与对比分析。点击经典问题立即开始：
       </p>
       <div className="mt-5 grid w-full grid-cols-1 gap-2 text-left sm:grid-cols-2">

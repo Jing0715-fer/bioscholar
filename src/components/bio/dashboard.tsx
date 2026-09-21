@@ -178,7 +178,7 @@ export function Dashboard() {
               <span className="h-2.5 w-2.5 rounded-[2px] bg-primary/70" aria-hidden />
               <h2 className="font-serif text-lg font-bold">学科学习进度</h2>
               <span className="ml-auto text-xs tabular-nums text-muted-foreground">
-                五学科 · {TOTAL_SECTIONS} 小节 · 约 {formatWordCount(totalWordCount)}
+                九学科 · {TOTAL_SECTIONS} 小节 · 约 {formatWordCount(totalWordCount)}
               </span>
             </div>
             <div className="mt-4 space-y-2">

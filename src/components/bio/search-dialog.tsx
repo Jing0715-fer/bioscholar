@@ -21,6 +21,7 @@ import {
   BookOpen,
   Search,
   FlaskConical,
+  Globe,
   Microscope,
   PenTool,
   Route,
@@ -36,7 +37,7 @@ interface SearchEntry {
   group: string
   icon: 'section' | 'chapter' | 'term' | 'figure'
   /** 教材插图来源体系（icon === 'figure' 时用于选图标） */
-  figureSource?: 'ccd' | 'pdb' | 'commons' | 'drawn' | 'ai'
+  figureSource?: 'ccd' | 'pdb' | 'commons' | 'web' | 'drawn' | 'ai'
   subjectId?: string
   chapterId?: string
   sectionId?: string
@@ -100,6 +101,7 @@ export function SearchDialog({
       ccd: '化学结构式 分子结构 结构式 RCSB CCD 小分子',
       pdb: '实验结构 三维结构 晶体结构 冷冻电镜 PDB RCSB 蛋白质数据库',
       commons: '通路过程图 代谢通路 信号通路 示意图 Wikimedia Commons',
+      web: '教材图源 期刊文献 开放教育插图 VLM 审校',
       drawn: '自绘 矢量图 机制示意 自绘矢量图 教材参数绘制',
       ai: '机制示意 示意图 AI 绘制',
     }
@@ -116,9 +118,11 @@ export function SearchDialog({
                 ? ('pdb' as const)
                 : src.includes('/commons/')
                   ? ('commons' as const)
-                  : src.includes('/drawn/')
-                    ? ('drawn' as const)
-                    : ('ai' as const)
+                  : src.includes('/web/')
+                    ? ('web' as const)
+                    : src.includes('/drawn/')
+                      ? ('drawn' as const)
+                      : ('ai' as const)
             // 从路径提取数据库名标识（如 glycolysis-pathway / 1MBO / GLC）增强检索
             const fileToken = src
               .split('/')
@@ -136,9 +140,11 @@ export function SearchDialog({
                     ? '实验结构'
                     : figureSource === 'commons'
                       ? '通路过程图'
-                      : figureSource === 'drawn'
-                        ? '自绘矢量图'
-                        : '机制示意'
+                      : figureSource === 'web'
+                        ? '教材图源'
+                        : figureSource === 'drawn'
+                          ? '自绘矢量图'
+                          : '机制示意'
               }`,
               group: '教材插图',
               icon: 'figure',
@@ -202,6 +208,8 @@ export function SearchDialog({
         return <Microscope className="h-4 w-4 text-teal-600 dark:text-teal-400" />
       if (figureSource === 'commons')
         return <Route className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+      if (figureSource === 'web')
+        return <Globe className="h-4 w-4 text-rose-600 dark:text-rose-400" />
       if (figureSource === 'drawn')
         return <PenTool className="h-4 w-4 text-violet-600 dark:text-violet-400" />
       return <Wand2 className="h-4 w-4 text-muted-foreground" />

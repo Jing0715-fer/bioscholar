@@ -339,7 +339,7 @@ export function ReportView() {
               学习报告
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              汇总四大学科的学习进度、测验成绩、复习记忆与学习活跃度，
+              汇总九大学科的学习进度、测验成绩、复习记忆与学习活跃度，
               形成一份可存档的阶段学习档案。
             </p>
             <p className="mt-2 text-xs tabular-nums text-muted-foreground/80">
@@ -500,7 +500,7 @@ export function ReportView() {
               <SectionHead
                 eyebrow="Subject Progress"
                 title="学科进展"
-                meta="五学科"
+                meta="九学科"
               />
               <div className="bio-rule mt-2.5" aria-hidden />
               <div className="mt-5 space-y-6">

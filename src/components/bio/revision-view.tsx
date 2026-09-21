@@ -246,7 +246,7 @@ export function RevisionView() {
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           基于 SM-2 间隔重复算法调度{' '}
           <span className="tabular-nums font-semibold text-foreground">
-            {stats?.totalCards ?? 303}
+            {stats?.totalCards ?? 715}
           </span>{' '}
           张学科卡片——核心术语、小节要点与测验错题。看正面回忆，翻卡自评，
           算法将按遗忘曲线安排每张卡的下次复习时间；

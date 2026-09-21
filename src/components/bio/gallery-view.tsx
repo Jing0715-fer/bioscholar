@@ -315,7 +315,7 @@ export function GalleryView() {
               <Images className="h-5 w-5 text-primary/70" aria-hidden />
             </h1>
             <p className="mt-1.5 text-sm text-muted-foreground">
-              {allItems.length} 张教材插图 · {realCount} 张（{realPct}%）来自真实科学数据库
+              {allItems.length} 张教材插图 · {realCount} 张（{realPct}%）为真实来源（非 AI 生成）
             </p>
           </div>
           {/* 来源统计卡（移动端 3 列两行，桌面 6 列一行） */}

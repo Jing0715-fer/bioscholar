@@ -65,6 +65,10 @@ const SUBJECT_IDS: ReadonlyArray<SubjectId> = [
   'cell-biology',
   'biophysics',
   'microbiology',
+  'immunology',
+  'neurobiology',
+  'bioinformatics',
+  'virology',
 ]
 
 function isSubjectId(v: string | null): v is SubjectId {
@@ -282,8 +286,7 @@ export function NotesView() {
               <div>
                 <p className="font-semibold">还没有学习笔记</p>
                 <p className="mt-1 max-w-sm text-sm leading-relaxed text-muted-foreground">
-                  点击「新建笔记」写下第一篇心得；在知识点阅读页也可以快速记笔记，
-                  并自动关联所在学科与小节。
+                  点击「新建笔记」写下第一篇心得。
                 </p>
               </div>
               <Button variant="outline" onClick={openCreate}>
