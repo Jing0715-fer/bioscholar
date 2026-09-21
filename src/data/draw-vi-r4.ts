@@ -28,7 +28,7 @@ export const drawViR4: Record<string, Illustration[]> = {
     {
       src: '/images/bio/drawn/vi-ch4-s4-entry-diversity.svg',
       caption:
-        '恩夫韦肽（36 aa，2003）模拟 HR2 抢占 HR1 芯；SV40 借 ERAD 逆转位「ER 脱壳」；埃博拉以内体 NPC1 为受体；马拉维若（2008）为首个宿主靶点药，须测向性。gp41 六螺旋束为 I 类融合的终末结构，恩夫韦肽模拟 HR2 抢占 HR1 芯而阻断融合，是首个融合抑制剂；腺病毒五邻体基板结合整合素并触发内吞，酸化后变构释放蛋白 VI 裂解内体膜。',
+        '恩夫韦肽（36 aa，2003）模拟 HR2 抢占 HR1 芯；SV40 借 ERAD 逆转位「ER 脱壳」；埃博拉以内体 NPC1 为受体；马拉维若（2007）为首个宿主靶点药，须测向性。gp41 六螺旋束为 I 类融合的终末结构，恩夫韦肽模拟 HR2 抢占 HR1 芯而阻断融合，是首个融合抑制剂；腺病毒五邻体基板结合整合素并触发内吞，酸化后变构释放蛋白 VI 裂解内体膜。',
       credit: DRAWN_CREDIT,
     },
   ],

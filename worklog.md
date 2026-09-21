@@ -572,3 +572,369 @@ Stage Summary:
 - Key 安全：仅存本机 .bioscholar/（0o600、gitignore），API 返回脱敏 Key
 - 未解决/风险：①沙箱 z-ai 账户 429 限流持续（影响本会话所有 SDK 调用与聊天验证，非代码问题，限流解除后聊天应即刻恢复）②zai 切自定义供应商后若模型不支持视觉输入，看图讲解会报错（已在错误信息中提示）③测试端点对不含 /models 的供应商依赖回退 chat 请求，会消耗少量 token
 - 下一阶段建议：①限流解除后补一轮成功流聊天验证 ②供应商配置可考虑增加「每会话独立供应商」或连接池监控 ③可加 Key 有效性定期巡检角标
+---
+Task ID: 4-d
+Agent: scientific-reviewer (生物物理学)
+Task: 校验生物物理学教材内容科学性并修复明确错误
+
+Work Log:
+- 读 worklog.md 前 60 行了解项目背景与生物物理各批次口径
+- 完整阅读 5 个受派文件：expansions/biophysics-ch1-3.ts、biophysics-ch4-6.ts、biophysics-ch7-8.ts、biophysics-ch9-10.ts、subjects/biophysics.ts（含全部 content/keyPoints/terms/summary/keywords）
+- 逐节核对数值与单位（阿贝极限 d=λ/2NA、k_BT≈4.1 pN·nm、HH 参数、Nernst/GHK、电对电位、膜弹性 κ/KA、马达步长与停滞力、GroEL、GFP/量子点、FMO/Larmor 频率、JCVI-syn3.0 等）与人物/年份归属（Anfinsen 1972、Boyer-Walker-Skou 1997、Neher-Sakmann 1976/1991、MacKinnon 2003、Zernike 1953、Zsigmondy 1925 化学、Patapoutian-Julius 2021、Hell-Betzig-Moerner 2014、Dubochet-Frank-Henderson 2017、Bawendi-Brus-Ekimov 2023、Baker/Hassabis-Jumper 2024 等），复核各处心算（8πκ≈500 kT、膜管 25 pN、NADH→O₂ −219 kJ/mol、AP 充电离子占比 ~10⁻⁵ 等），绝大多数正确
+- 发现并修复 5 处明确错误（2 处在 expansions 显示层、1 处在 expansions、2 处在 subjects 隐藏 content/keyPoints 一致层）
+- 尝试用 web-search 核实 DNA Fountain 存储密度（215 PB/g）单位口径，因 429 限流不可用，该项列入存疑不改
+- 运行 bunx tsc --noEmit 过滤 biophysics：无输出（无类型错误）
+
+Stage Summary:
+- 审阅 5 个文件；发现 9 处问题；修复 5 处，存疑不改 4+ 处
+- 修复清单（文件:行号 原文→修正+理由）：
+  1) expansions/biophysics-ch4-6.ts:97 「可悬挂约 30 kg 重物」→「约 3 kg 重物」：0.3 MPa=30 N/cm²，1 cm² 截面产生 30 N≈3 kgf，原文与自身「30 N/cm²」矛盾（经典生理学口径 3–4 kg/cm²），差 10 倍
+  2) expansions/biophysics-ch4-6.ts:97 「跨度约十个数量级」→「跨度十余个数量级」：单头 3–5 pN→1 cm² 肌肉 30 N 为 10^12.5–10^13，原文低估约 3 个数量级
+  3) expansions/biophysics-ch7-8.ts:189 「电量转移仅约 2×10⁻¹⁹ C」→「2×10⁻¹⁸ C」：13 个元电荷×1.6×10⁻¹⁹ C=2.08×10⁻¹⁸ C，原文差 10 倍
+  4) subjects/biophysics.ts:503 「轨道直径 7 nm（微管）或 8 nm（F-actin）」→「25 nm（微管）或 7–8 nm（F-actin）」：微管外径约 25 nm、F-肌动蛋白约 7–8 nm，原文数值归属颠倒，且与 expansions 同章正确表述矛盾
+  5) subjects/biophysics.ts:1188 「齐格蒙迪因此获 1925 年诺贝尔物理学奖」→「Zernike 因此获 1953 年诺贝尔物理学奖」：相差显微的诺奖为 Zernike 1953 物理学奖；齐格蒙迪获 1925 化学奖（胶体/超显微镜），原句人物与奖项学科双重错误
+- 存疑未改清单：①「1 g 单链 DNA 理论密度约 2×10¹⁷ 字节（215 PB）」（ch10-s1）——215 PB/g 为 Erlich 2017 DNA Fountain 广泛流传的发表值，但按 2 bit/核苷酸严格计算 1 g ssDNA 理论容量约 4.5×10²⁰ 字节，「理论密度」提法欠精确，因无法联网核实单位口径而保留；②「[ATP]/[ADP] 约 10³（ATP 毫摩尔、ADP 数十微摩尔）」（ch5-s2）——按括号内数字约为 10²，教材口径 10²–10³ 不一；③「疏水相互作用约 60–80 °C 达极大」（ch1-s2）与「每离子 2–4 k_BT」（ch4-s1）——文献/教材取值区间宽，属可辩护表述；④「−TΔS_chain 可达 40–100 kJ/mol」与「ΔH≈−400、−TΔS≈+350 kJ/mol」同节并存（ch2-s2）——两笔熵账口径不一致但均为量级式表述；另有 DPPC「32 个亚甲基」（约 30 CH₂+2 CH₃）、「横穿 1 mm 组织以小时计」（组织中有效扩散系数下降后可辩护）等轻微不精确，均不动
+---
+Task ID: 4-e
+Agent: scientific-reviewer (微生物学)
+Task: 校验微生物学教材内容科学性并修复明确错误
+
+Work Log:
+- 通读 worklog.md 前 60 行了解项目背景与写作规范（周德庆《微生物学教程》第4版/沈萍《微生物学》第8版口径）。
+- 用 Read 工具完整逐节阅读 src/data/subjects/micro/ 下全部 12 章文件（ch1–ch12，共 48 节），逐项核对数值（细菌尺寸、世代时间、灭菌温度与时间、巴氏消毒参数、培养基配方、ATP 产率、aw/pH/Eh、D/Z/F 值、16S/DDH/ANI 阈值、历史年代与诺奖归属等）与微生物学事实（革兰氏反应、分类归属、营养类型、灭菌/消毒/防腐界分、发酵类型、免疫学与生态学陈述），并做跨章一致性检查。
+- 发现并修复 6 处（共 7 个编辑点，其中 ch1 质量推演为正文+keyPoint 两处联动）明确无疑的事实性错误，均做最小化修改（不改句式、不动代码结构、保持模板字符串完整）。
+- 修复后运行 cd /home/z/my-project && bunx tsc --noEmit 2>&1 | grep -E "micro/"，输出为空（micro/ 12 文件无任何类型错误）；并用 rg 复核 6 处修改点全部落盘。
+
+Stage Summary:
+- 审阅 12 个文件；发现 12 处问题；修复 6 处，存疑未改 6 处。逐条如下：
+- 修复 1 ch1.ts:57 正文：「总质量约 2×10³¹ g，已数倍于地球总质量（约 6×10³⁰ g）」→「已数千倍于地球总质量（约 6×10²⁷ g）」。理由：地球质量约 5.97×10²⁷ g，原数大了 1000 倍；2.2×10³¹ g ÷ 6×10²⁷ g ≈ 3700，周德庆教材口径为「约数千倍（4000 倍上下）」，故「数倍」亦错。
+- 修复 2 ch1.ts:68 keyPoint：「总质量数倍于地球」→「总质量数千倍于地球」（同上，与正文联动）。
+- 修复 3 ch1.ts:97：「瓦克斯曼…筛得链霉素（1952 年获诺奖）、新霉素与土霉素等」→「…、新霉素等」。理由：土霉素（氧四环素）系辉瑞公司 Finlay 等 1950 年从委内瑞拉龟裂链霉菌（S. rimosus）发现，非瓦克斯曼；瓦克斯曼发现的是链霉素、新霉素等。
+- 修复 4 ch3.ts:76：「粗糙脉孢霉的菌落在培养基上每天可扩展数毫米」→「…数厘米」。理由：N. crassa 平板/竞赛管径向生长率约 2–7 cm/天（经典 3–5 cm/天），「数毫米」低估约一个数量级；修正后与后半句曲霉菌丝「每分钟数微米」（≈0.4–1.3 cm/天）的相对关系也一致。
+- 修复 5 ch8.ts:82：「普遍性转导：烈性噬菌体（沙门菌 P22、大肠杆菌 P1 等）裂解晚期…」→「噬菌体（沙门菌 P22、大肠杆菌 P1 等）裂解晚期…」。理由：P22、P1 均为温和噬菌体（可形成溶原体），与本书 ch4-s3 表格「温和噬菌体：λ、P22」自相矛盾，属明确归类错误，删去「烈性」二字即可（转导确实发生在其裂解周期，后半句不受影响）。
+- 修复 6 ch9.ts:79：「1983 年鉴定其为 AHL」→「1981 年鉴定其为 AHL」。理由：费氏弧菌自诱导物结构由 Eberhard et al. 1981（Biochemistry 20:2444）鉴定为 N-(3-氧代己酰基)高丝氨酸内酯；1983 年对应的是 lux 基因克隆（Engebrecht/Nealson/Silverman），原句系年份张冠李戴。
+- 修复 7 ch11.ts:58：「而嗜酸乳杆菌、鼠李糖乳杆菌等常见菌分别移入新属，更名如 Lacticaseibacillus acidophilus。」→「而鼠李糖乳杆菌等常见菌分别移入新属，更名如 Lacticaseibacillus rhamnosus。」理由：2020 年乳杆菌属拆分（Zheng et al., IJSEM）后嗜酸乳杆菌（L. acidophilus）属德氏乳杆菌群、保留 Lactobacillus 属名未移出；「Lacticaseibacillus acidophilus」组合不存在，正确示例为鼠李糖乳杆菌 → Lacticaseibacillus rhamnosus。
+- 存疑未改清单（保持原样）：① ch1-s1「大肠杆菌每小时代谢的糖量约相当于其细胞干重的 2000 倍」——与周德庆教材经典口径一致但生理学实测约 1–2 倍干重/h，属教材惯用说法；② ch1-s2 巴氏消毒「63–66 ℃、30 min」与 ch7「63 ℃/30 min、72 ℃/15 s」——63–66 ℃ 见于部分食品科学文献，未统一改口径；③ ch2-s5 大肠杆菌游速「约每秒 20–40 μm」——文献多为 20–30 μm/s，40 偏高端但不属硬错；④ ch5-s2「放线菌约 7.2–7.4」（培养基 pH 口径）与 ch7-s3「放线菌略偏碱 7.5–8.5」（最适生长 pH 口径）并存，属口径差异非矛盾；⑤ ch7-s4「0.1% 硝酸银」滴眼——经典 Crédé 法为 1%–2%，但部分中文教材载 0.1%–1%；⑥ ch9-s1「全球土壤微生物总数达 10³⁰ 量级」——Whitman 1998 等估算为 10²⁹–10³⁰，量级存在文献分歧；另 ch1-s2 明胶「37 ℃ 熔化」与 ch5「约 25 ℃ 上下」（明胶熔点 26–35 ℃ 随浓度/类型而异）、ch4-s1「最小的病毒为小 RNA 病毒约 30 nm」（现知 ssDNA 环病毒 ~17–22 nm，属教材传统口径）一并保留并报备。
+---
+Task ID: 4-i
+Agent: scientific-reviewer (生物信息学)
+Task: 校验生物信息学教材内容科学性并修复明确错误
+
+Work Log:
+- 读取 worklog.md 前 60 行，了解 BioScholar 平台结构与各批次写作规范
+- 完整通读 src/data/subjects/bioinfo/ 全部 12 个章节文件（ch1–ch12，每章 4 节），未跳读
+- 逐节核对科学性：
+  - 归属与年代：Needleman-Wunsch 1970、Smith-Waterman 1981、Gotoh 1982、BLAST/Altschul 1990、Karlin-Altschul 1990、Dayhoff PAM 1978（71 超家族/1500 余替换）、Henikoff BLOSUM 1992、Saitou-Nei NJ 1987、Fitch 1970/1971、Felsenstein 1978/1981/1985、Clustal W（Thompson/Higgins/Gibson 1994）、T-Coffee 2000、MUSCLE 2004、Jeong 2001、Gavin/Krogan AP-MS 2006、Tettelin 泛基因组 2005、Renwick synteny 1971、Nei-Gojobori 1986、Moult CASP 1994、Browne 1969、Sali-Blundell 1993、Bowie-Lüthy-Eisenberg 1991、SCOP 1995/CATH 1997、Hassabis/Jumper/Baker 2024 诺奖——均正确
+  - 数值逐项复算：NW 微型算例矩阵与回溯（GA- vs GAT 总分 2）逐格验算正确；O(mn) 与千/万/百万残基的格数（10^6/10^8/10^12）正确；仿射空位 3×10=30 vs 10+2×1=12 正确；JC 校正 p=0.05/0.10/0.25/0.40/0.50/0.70 → 0.052/0.107/0.304/0.572/0.824/2.03 全部复算正确；k-mer 覆盖 30×(150−51+1)/150=20 正确；N50 算例（150 kb、L50=2）正确；负二项 100+0.1×100²=1100、SD≈33 正确；Bonferroni 0.05/2万=2.5e-6、BH 流程正确；E=0.01→P≈0.00995 正确；λ≈0.3 时原始分 +8 分≈E 降一个数量级、对应 3.3 bit（=log2 10）自洽；GDT-TS 算例 (88+94+96+98)/4=94 正确；无根树 (2n−5)!!、n=10 → 2,027,025 正确；有根 n=4 → 15=5×3 正确
+  - 数据库与 NGS 口径：GenBank 1982 建立/1992 归 NCBI/数万亿碱基/约两月一版、UniProt 2002 三库整合、Swiss-Prot 约 50 余万 vs TrEMBL 数亿、PDB 1971/>20 万条、Pfam 两万余家族、GO 1998、Sanger 800–1000 bp/99.9%、Illumina 2×150 bp/Q30=0.1%、PacBio 10–20 kb/HiFi 99.9%、ONT 数十 kb–Mb 级、454 2005 商用——均正确
+  - 概念性陈述：全局 vs 局部 vs 半全局、SW 负分截断与最大值回溯、E 值为期望次数而非概率、bit 分跨体系可比、PAM 幂外推与 BLOSUM 聚类阈值方向（BLOSUM 大→近缘、PAM 大→远缘）、HMM 三态（D 态静默）与 Viterbi、PSI-BLAST 漂移、GT-AG 约 98%、CpG 岛三判据（200 bp/50%/0.6）、-35 TTGACA/-10 TATAAT/间距 15–19 bp、CAI 几何平均、bootstrap 70% 惯例、ESS>200、后验>自展的口径差异、TPM/FPKM 归一顺序、伪 bulk 检验单位、DESeq2 尺寸因子与输入须为原始计数、GSEA 排序检验与领先集——均正确
+- 发现并修复 1 处明确事实错误（ch10 内正文与 keyPoints 两处联动，共改 2 个字符）
+- 校验：cd /home/z/my-project && bunx tsc --noEmit 2>&1 | grep -E "bioinfo/" → 输出为空（12 个文件零类型错误；现存报错均位于 scripts/review、skills/ 等与本任务无关的既有文件）；仅改动 ch10.ts，未创建新文件、未动其他任何文件
+
+Stage Summary:
+- 审阅 12 个文件；发现 5 处疑点；修复 1 处（2 处联动）：
+  - ch10.ts:54（s1 正文）：「但血浆等体系丰度横跨约七个数量级（白蛋白与痕量细胞因子的鸿沟）」→「…约十个数量级（…）」。理由：人血浆蛋白浓度范围公认约 10 个数量级（白蛋白 ~40 g/L ≈ 0.6 mM，对 pg/mL 级细胞因子实测比值 ~10^9.7；Anderson & Anderson 2002 及主流质谱综述口径为 >9–10 个数量级），括注锚定的正是该经典例证，「七个」为明确低估
+  - ch10.ts:61（s1 keyPoints）：「动态范围横跨约七个数量级是质谱的根本瓶颈」→「…约十个数量级…」。理由同上，且须与正文同步以避免同章前后矛盾
+- 存疑未改清单（保持原样）：
+  1) ch5.ts s1「四条序列尚可（约数千万格）」——四条各 100 残基应为 10^8 格（一亿），「数千万」仅在约 80 残基时成立；原文未给序列长度且带「约」字，属口径模糊，未达确凿错误
+  2) ch7.ts s2「模板同一性在 40% 以上时主链误差约 1 Å」——教材常用口径为 >50% 才约 1 Å、30–50% 约 1.5 Å；原文以「量级」措辞弱化并与同节「40% 近乎照抄」自洽，未改
+  3) ch12.ts s2「转录因子结合谱多在十到三十碱基对」——JASPAR 多数模体为 6–20 bp，「十到三十」偏长；计入二聚体等大模体时勉强可辩，未改
+  4) ch10.ts s3「含推测条目的总库则达万级」——HMDB v5 总条目约 11 万（十万级），「达万级」表述偏保守；因「达」字可解读为「达到万级以上」且原文已声明口径依赖，未改
+  5) ch1.ts s2「30× 原始读段约数十吉碱基」——93 Gbp 处「数十」上限边缘，与同文件表格「约 90 Gbp」自洽，未改
+- 其余全部核验通过，无归属错误、无章内数据矛盾、无中文术语误用
+
+---
+Task ID: 4-f
+Agent: scientific-reviewer (免疫学)
+Task: 校验免疫学教材内容科学性并修复明确错误
+
+Work Log:
+- 读取 worklog.md 前 60 行了解项目背景与各批次写作规范。
+- 用 Read 工具完整通读 src/data/subjects/immuno/ 下 ch1.ts～ch12.ts 全部 12 个文件（每节内容、keyPoints、terms、summary 均读），逐节核对科学性。
+- 重点核查通过项：免疫球蛋白数值（IgG 约 150 kDa/半衰期 23 天/占血清 Ig 75–80%；IgM 五聚体约 970 kDa、19S；κ:λ≈2:1；五类半衰期 23/5/6/3/2 天；重链 50–70 kDa、轻链 25 kDa、结构域约 110 aa）；CD 编号（CD55/DAF、CD46/MCP、CD59、CD35/CR1、CD21/CR2、CD11b-CD18/CR3、CD11c-CD18/CR4、CD79a/b、CD88/C5aR、CD74/Ii、CD141、CD1c、CD56/CD16 等均正确）；补体三条途径与级联（实际顺序 C1→C4→C2→C3→C5；C3 转化酶 C4b2a/C3bBb、C5 转化酶 C4b2a3b/C3bBb3b、MAC 12–18 个 C9、C3 约 1.2–1.6 g/L）；细胞因子与 JAK-STAT 配对（IL-6→STAT3、IFN-γ→JAK1/2-STAT1、IL-2→JAK1/3-STAT5、IL-4→STAT6、IL-12→STAT4）；MHC 基因座（HLA 6p21.3 约 3600 kb；β2m 基因在 15 号染色体；IGH 14q32、κ 2 号、λ 22 号；HLA-B 等位基因逾八千）；VDJ 片段数与组合（V65/D27/J6=10530、κ V40/J5、λ V30/J4、配对约 300 万、RSS 12/23 规则）；T/B 发育选择（阳性/阴性选择、β 选择、pre-BCR、受体编辑、95% 淘汰）；科学家归属与年份（Burnet 克隆选择、Burnet/Medawar 1960、Porter/Edelman 1972、Tonegawa 1976/1987、Köhler/Milstein 1975/1984、Steinman 2011（逝于公布前三日）、Beutler/Hoffmann 2011、Zinkernagel/Doherty 1974/1996、Smith/Winter 2018 化学奖、Allison/本庶佑 2018）全部无误；初次/再次应答参数、TCR-CD3 十枚 ITAM、MHC I/II 结合肽长 8–10/13–17 aa 等亦无误。
+- 对 2 处明确错误用 MultiEdit 做最小化修复（均在 ch12.ts，字数基本不变，反引号模板与代码结构未动）。
+- 校验：cd /home/z/my-project && bunx tsc --noEmit 2>&1 | grep -E "immuno/" → 输出为空（项目其余 95 条既有类型报错均位于 scripts/、skills/ 等无关文件）。
+
+Stage Summary:
+- 审阅 12 个文件；发现 2 处明确错误与 8 项存疑点；修复 2 处：
+  1) ch12.ts:约 33 行（s1「介质双库」）：「…花生四烯酸，循环氧化酶途径生成**前列腺素 D2**…」→「经环氧化酶途径生成**前列腺素 D2**」。理由：不存在「循环氧化酶」这一酶名，系「循＋环氧化酶」粘连所致的术语讹误（cyclooxygenase 规范译名为环氧化酶）；同节介质表格与第十一章均用「环氧化酶」，且与后文「循 5-脂氧合酶途径」句式平行；改动字数不变。
+  2) ch12.ts:约 98 行（s2「补体消耗与免疫复合物性肾病」）：「IC 持续激活补体使 CH50…与 C3、C4 同步下降」→「与 C3 同步下降」。理由：链球菌感染后肾小球肾炎主要经旁路途径激活补体，典型表现为 C3/CH50 下降而 C4 正常（低 C3＋正常 C4 为其与狼疮肾炎鉴别的经典要点），原文称两病「C3、C4 同步下降」对 PSGN 不成立；本章 summary 本即作「CH50/C3 消耗性下降」，改后与摘要一致；II/III 型对照表及 keyPoints 中「III 型（血清病、狼疮肾炎）CH50 与 C3、C4 消耗性下降」系对经典途径 IC 病的一般性正确表述，保持原样。
+- 存疑未改清单：
+  1) ch4/ch7「补体系统由四十余种蛋白质组成」——文献口径 30～50 余种不一（传统教材多作 30 余种，新近综述计入调节蛋白/受体后 40+），属计数口径差异且两文件内部一致。
+  2) ch5「青霉素的降解产物青霉噻唑醛酸」——非规范化学名（标准为青霉噻唑基/青霉噻唑酸等），疑沿袭某中文教材旧译。
+  3) ch6「IgE 约 0.1–0.9 mg/L」——中文教材常用区间（Janeway 约 0.2 mg/L），属口径差异。
+  4) ch2「小肠黏膜面按微绒毛计入达上百平方米量级」——经典教材估值（新解剖学修正约 30–40 m²），原文已有「按微绒毛计入」「量级」限定。
+  5) ch3「中性粒细胞直径约 12–15 μm」「血流半衰期约 6–8 小时」——均为教材通行口径（重水标记新证据提示体内中性粒细胞寿命更长）。
+  6) ch3「1969 年后由『单核-吞噬细胞系统』概念取代」——MPS 提出年代文献记为 1968/1969/1972，表述可容。
+  7) ch1「初次应答潜伏期约 1–2 周」与 ch10「约 5–10 天」——两种教材口径并存、区间重叠，非矛盾。
+  8) ch10「麻疹疫苗推迟至约 9 月龄前后接种」——中国程序 8 月龄、美国 12 月龄，原文为折中模糊表述。
+
+---
+Task ID: 4-g
+Agent: scientific-reviewer (病毒学)
+Task: 校验病毒学教材内容科学性并修复明确错误
+
+Work Log:
+- 通读 viro/ 目录全部 12 个章节文件（ch1–ch12），按数字/单位、Baltimore 分类与复制策略、科学家归属、中文术语、同文件前后一致性五条线索逐节校验
+- 交叉核对经典数值（TMV 2130 亚基/螺距 2.3 nm/6.4 kb；T 值谱系 60T 与 10T+2；HIV 衣壳约 250 六聚体+12 五聚体、基因组 9.7 kb、11 个切点；λ 48.5 kb/cos 12 nt/CI 236 aa；流感 8 节段合计约 13.6 kb；冠状病毒 26–32 kb；呼肠孤 10–12 节段；MOI=1 感染率约六成；1 TCID50≈0.69 PFU 等均正确）
+- 核对科学史归属（Ivanovsky 1892/Beijerinck 1898/Stanley 1935 及 1946 化学诺奖/Enders 1949 及 1954 诺奖/Dulbecco 1952 蚀斑/Temin-Mizutani-Baltimore 1970 及 1975 诺奖/Sanger φX174 1977/Sharp-Roberts 1977 及 1993 诺奖/Bishop-Varmus 1976 及 1989 诺奖/Smith-Wilcox 1970 HindII/Smith-Winter 2018 化学诺奖等均正确）
+- 修复 6 处明确事实错误（ch2 keyPoints 三角剖分数公式漏 hk 项、ch4 马拉维若获批年份、ch10 SARS-CoV-2 突变积累速率单位、ch11 柏林病人移植年份、ch3 尼多病毒目例举"环状病毒"误、ch3 多瘤/乳头瘤行大 T 抗原归属误）
+- 修复后运行 bunx tsc --noEmit 过滤 viro/：无输出（无类型错误）；grep 复核确认旧错误串均已清除
+
+Stage Summary:
+- 审阅 12 个文件；发现 12 处问题；修复 6 处：
+  1. ch2.ts:62（keyPoints）"三角剖分数 T（T=h²+k²）"→"T=h²+hk+k²"：Caspar-Klug 公式正确形式为 h²+hk+k²（正文第 39 行亦用完整式，keyPoints 漏项自相矛盾）
+  2. ch3.ts:93（DNA 病毒科表）"宿主聚合酶复制，大 T 抗原识别起点"→"大 T 或 E1 识别起点"：大 T 抗原为多瘤病毒（SV40）专属，乳头瘤病毒起点识别由 E1（辅以 E2）执行，原表述把大 T 抗原归属到 HPV 属错误
+  3. ch3.ts:162（正链 RNA 病毒节）"尼多病毒目（冠状病毒、环状病毒等）"→"（冠状病毒、环曲病毒等）"：环状病毒=环状病毒科（1.7–2 kb 环状单链 DNA），绝非尼多病毒目成员；本目 25–32 kb 量级者应为冠状病毒科之环曲病毒（torovirus），"状"系"曲"之误且与同文件 s2 中"环状病毒=最小 ssDNA"的用法冲突
+  4. ch4.ts:223 "马拉维若（2008 年获批）"→"（2007 年获批）"：maraviroc 于 2007 年 8 月 6 日获 FDA 加速批准
+  5. ch10.ts:25 "演化速率约为每年每个基因组累积一至两个替换"→"约为每月……"：SARS-CoV-2 替换率约 1×10⁻³/位点/年 ≈ 30/基因组/年 ≈ 每月 1–2 个替换，"每年 1–2 个"低估 15–30 倍
+  6. ch11.ts:205 "「柏林病人」2008 年经 CCR5Δ32 纯合干细胞移植"→"2007 年"：Timothy Brown 首次 CCR5Δ32 纯合供体干细胞移植为 2007 年 2 月（2008 年为白血病复发后的第二次移植），公认治愈事件年份为 2007
+- 存疑未改清单：
+  1. ch1"每日裂解海洋约两成微生物生物量"与 ch9"每日 20%–40%"口径不一（两者均见于文献：Suttle 保守口径 ~20%，部分综述 20–40%）；跨章非同文件矛盾，未改
+  2. ch3 s3 表"甲病毒 10–13 kb"上限偏高（主流 9.7–11.8 kb），幅度小未改
+  3. ch3 s1 Baltimore 表 II 类"滚环复制"统摄 φX174/M13/细小病毒欠精确（细小为滚发夹），同文件 s2 已给出正确机制，未改
+  4. ch3 s3"相差三到七个数量级"与 ch10 s1"相差三到五个数量级"两处 RdRp vs DNA 聚合酶差距范围不一，依所取参考值均可见于文献，未改
+  5. ch1"病毒分岔"与 ch9"病毒分馏"对 viral shunt 两种译名并存；ch2"皮层"与 ch7"间层"对 tegument 两种译名并存，均属译名不统一而非科学错误，未改
+  6. ch11 s1"狂犬病……全程不排毒"若读作整个病程欠妥（临床期唾液可排毒），按上下文读作潜伏期则成立，未改
+  7. ch10 s3 麻疹 10⁻⁵/位点/年 vs 流感、HIV"高出数倍到一个数量级"略保守（实测常引 1–2 个数量级），未改
+  8. ch9 λ"编码 50 余个基因"较旧口径，现代注释 60–73 个 ORF，属教学口径差异，未改
+  9. ch7 λ S 蛋白"相距三个碱基的两个起始密码子"与 S107/S105 相差两氨基酸在算术上自洽（间隔 1 个密码子/3 nt），亦见文献 3 nt 表述，维持不改
+---
+Task ID: 4-h
+Agent: scientific-reviewer (神经生物学)
+Task: 校验神经生物学教材内容科学性并修复明确错误
+
+Work Log:
+- 读取 worklog.md 前 60 行了解项目背景与各学科重建/校验惯例
+- 通读 src/data/subjects/neuro/ 全部 12 个章节文件（ch1–ch12，共 48 节），逐节核对科学性
+- 核对核心数值：静息电位 −70～−65 mV、阈电位 −55 mV（阈上 10–15 mV）、超射 +30～+40 mV、AP 时程 1–2 ms、突触延迟 0.5 ms、E_K/E_Na/E_Cl/E_Ca（−90/+60/−64/+130 mV）及驱动力（+20/−130/−200 mV）、61.5 mV/decade、GHK 通透比 1:0.04:0.45 与 V_rest≈−67 mV 复算、HH 经典参数（ḡ_Na 120/ḡ_K 36/ḡ_l 0.3 mS/cm²、E_Na +50/E_K −77/E_l −54.4 mV、传导速度计算 18.7 对实测约 21 m/s）、Erlanger–Gasser 纤维分类（Aα 70–120、Aβ 30–70、Aδ 12–30、C 0.5–2 m/s）、人脑 860 亿神经元/约 850 亿胶质/小脑 690 亿/皮层 160 亿、中耳增压约 22 倍（约 27 dB）、内淋巴电位 +80 mV、跨顶驱动约 125 mV——均与标准教材口径一致
+- 核对科学家归属与年代：Golgi 1873 染色/1906 诺奖、Sherrington 1897 命名突触/1932 诺奖、Loewi 1921/1936、Katz 量子释放 1952/1970、Skou 1957/1997、Hodgkin-Huxley-Eccles 1963、Békésy 1961、Hubel-Wiesel-Sperry 1981、Levi-Montalcini/Cohen 1986、Neher-Sakmann 1991、Furchgott-Ignarro-Murad 1998、Buck-Axel 2004、O'Keefe-Moser 2014、Spemann 1935、邹冈-张昌绍 PAG 微量吗啡镇痛——全部正确
+- 核对机制性陈述：Na⁺/K⁺ 流向与去极化/超极化对应关系、视杆暗电流与光致超极化、听觉毛细胞朝最高静纤毛偏转去极化/反向超极化、Ewald 定律与眼震方向、LTP（NMDA-CaMKII-AMPA 上膜）与 LTD（小脑 mGluR1-PKC 路线、海马钙神经素-PP1 路线）、视觉通路（鼻侧交叉、LGN 1/4/6 层对侧、M→4Cα/P→4Cβ）、受体-G 蛋白偶联（M1/3/5-Gq、M2/4-Gi、D1/D5-Gs、D2/3/4-Gi、5-HT3 离子型、μ/δ/κ-Gi）、递质共存与 Dale 原则原意、SNARE 复合体与肉毒/破伤风毒素切割位点、三突触环路、直接/间接通路——均正确
+- 发现并修复 1 处明确数量级错误（ch12），其余存疑表述保持原样并列出清单
+- 校验：cd /home/z/my-project && bunx tsc --noEmit 2>&1 | grep -E "neuro/" → 输出为空，neuro/ 12 个文件无任何类型错误
+
+Stage Summary:
+- 审阅 12 个文件、48 节；共发现 1 处明确错误与 9 处存疑表述；修复 1 处
+- 修复清单：
+  1) ch12.ts:44（第一节「皮层的 inside-out 分层与发育性凋亡」）：「神经发生高峰期每日产生数以万计的神经元」→「神经发生高峰期每日产生数以亿计的神经元」。理由：人类神经发生高峰期产生速率的经典估计约 25 万个/分钟（Rakic），即每日约 3.6 亿；皮层神经发生窗口（约孕 7–18 周）平均日产亦逾 1 亿，「数以万计」低估约 4 个数量级，且与本段「约半数神经元经凋亡删除」的过量生产叙述所需量级不符。修改保持原句式与字数不变。
+- 存疑未改清单：
+  1) ch3-s1「快菊形细胞快而稀疏」——细胞类型称谓不通行（疑指快放电吊灯/篮状中间神经元），与 ch1「枝形细胞」、ch4「吊灯细胞」称谓不一，无法断定原意，未改
+  2) ch4-s2「释放概率对钙浓度呈高次幂关系（约三次方量级）」——经典 Dodge-Rahamimoff 定律为四次方，各突触实测 2–5 次方不等，处于文献灰色地带，未改
+  3) ch5-s2「囊泡内的 ACh 浓度可达数十毫摩尔级」——文献估计约 100–600 mM，原文可能偏低，但各家估计分歧大，未改
+  4) ch8-s1「瞳孔直径约 2–8 mm……入眼光量随面积比相差可达 16 倍以上」——按自述范围恰为 16 倍，「以上」与范围略有出入（真实瞳孔更宽时约 30 倍），未改
+  5) ch8-s2「约 1–2 pA 的光电流在数十毫秒内被抑制」——哺乳类视杆单光子响应达峰约 100–200 ms（两栖类可达秒级），时程表述偏快，属数量级边缘问题，未改
+  6) ch8-s3「约数万含黑视蛋白的 ipRGC」——灵长类每眼计数约数千至 2 万，「数万」可能略偏高一档，未改
+  7) ch3-s4「同样 20 m/s，无髓纤维需约 500 μm 直径」——按平方根律推算约 300 μm，原文以「约/随物种与温度浮动」对冲，属举例性数量级陈述，未改
+  8) ch3-s4「有髓纤维 Q10 约 1.1–1.3」——临床神经传导测定约 1.3–1.5，区间搭边，未改
+  9) ch9-s1「中耳肌反射潜伏期约 30–40 ms」——文献多为 40–100 ms（最短约 25–40 ms），原文取最短端，未改
+- 其余全部数值、机制、归属与中文术语核查与 Kandel《Principles of Neural Science》及寿天德/许绍芬《神经生物学》公认表述一致；未改动 neuro/ 目录以外任何文件；未创建新文件
+
+---
+Task ID: 4-a
+Agent: scientific-reviewer (细胞生物学)
+Task: 校验细胞生物学教材内容科学性并修复明确错误
+
+Work Log:
+- 通读 worklog.md 前 60 行了解项目背景与既有各学科文件口径。
+- 完整阅读 5 个目标文件：src/data/expansions/cell-biology-ch1-3.ts、cell-biology-ch4-6.ts、cell-biology-ch7-9.ts、cell-biology-ch10-12.ts 及 src/data/subjects/cell-biology.ts（2343 行），逐节核对数字/单位（浓度、kDa、nm/µm、kJ/mol、年代、数量级）、机制方向性（离子流向、运输方向、通路上下游、马达方向）、科学家与诺贝尔奖归属、中文术语规范及文件内前后一致性。
+- 对明确无疑的错误用 Edit/MultiEdit 做最小化修复：共 14 处问题、20 处编辑（其中 5 处错误在 expansions 与 subjects 两份文件中重复出现，均同步修复）。
+- 运行 bunx tsc --noEmit 并过滤 cell-biology：无任何类型报错；另以 bun 动态 import 验证 4 个 expansions 模块键数（13/13/14/13）与 subjects 12 章 53 节结构完好。
+
+Stage Summary:
+- 审阅 5 个文件；发现 14 处明确科学性错误并全部修复；另有 9 处存疑内容保持原样（见文末清单）。
+- 修复清单（文件:大致行号 原文→修正+理由）：
+  1) cell-biology-ch1-3.ts:21 与 subjects/cell-biology.ts:61：「达尔文进化论、孟德尔遗传定律并称 19 世纪自然科学的三大发现」→「达尔文进化论、能量守恒定律…」；恩格斯所列三大发现为细胞学说、能量守恒与转化定律、达尔文进化论，孟德尔遗传定律（1866 年发表、1900 年重发现）不在其列。
+  2) cell-biology-ch1-3.ts:149 与 subjects:187：「Meselson 与 Stahl，1957」→「1958」；DNA 半保留复制经典实验通行按 1958 年（PNAS 论文）引用，平台生物化学分册工作记录亦作 1958。
+  3) cell-biology-ch1-3.ts:463 与 subjects:548：「植物中特化为乙醛酸循环体参与光呼吸」→「植物中特化为乙醛酸循环体将脂肪转化为糖」；乙醛酸循环体（种子中）经乙醛酸循环将脂肪转化为糖，光呼吸由叶过氧化物酶体参与，二者为不同的植物微体分工。
+  4) cell-biology-ch4-6.ts:120 与 subjects:722：三类膜泡表「网格蛋白…Arf6 等」→「Arf1 等」；TGN 处招募 AP1/GGA 网格蛋白包被的小 GTP 酶是 Arf1（Arf6 主要参与网格蛋白非依赖内吞与再循环）。
+  5) cell-biology-ch4-6.ts:244 与 subjects:882：「泵出 2 H⁺（4 e⁻ + O₂ + 4 H⁺ → 2 H₂O）」→「泵出 2 H⁺（2 e⁻ + 1/2 O₂ + 2 H⁺ → H₂O）」；4 电子总反应式对应泵出 4 H⁺，与同条「泵出 2 H⁺」（每对电子）及本章「NADH 泵 10 H⁺、FADH₂ 6 H⁺」记账矛盾，统一为每对电子口径。
+  6) cell-biology-ch7-9.ts:245：「（心肌与骨骼肌另有肌浆网 Ryanodine 受体经钙致钙释放机制放大信号）」→「…，分别经钙致钙释放与机械偶联放大信号」；骨骼肌经 DHPR-RyR 机械偶联释放 Ca²⁺、钙致钙释放为心肌机制，原句把二者混同，且与本学科第 6 章肌肉节的正确表述冲突。
+  7) cell-biology-ch10-12.ts:218 与 subjects:2015：「B 淋巴细胞免疫球蛋白基因重排、tRNA/抗体基因的体细胞突变」→「…、TCR 基因重排、抗体基因的体细胞突变」；tRNA 基因不存在分化相关的体细胞重排/超突变（笔误），「基因组恒定」的经典例外是 Ig/TCR 基因重排与抗体基因体细胞超突变。
+  8) subjects:1442：「百日咳毒素使 Giα 不能与受体解离而保持 GDP 结合的失活态」→「不能与受体耦合…」；百日咳毒素使 Giα ADP 核糖基化后无法与受体偶联交换 GTP（冻结于 GDP 失活态），「不能解离」方向说反（expansions 版本原表述正确）。
+  9) subjects:1745：「IL-8/CKCL8」→「IL-8/CXCL8」；IL-8 的规范系统名为 CXCL8（CKCL8 为笔误）。
+  10) subjects:2046：「注射入囊胚产生嵌合体、体外形成含三胚层的畸胎瘤」→「…注入免疫缺陷小鼠形成含三胚层的畸胎瘤」；畸胎瘤检验为体内（免疫缺陷小鼠）金标准，体外形成的是拟胚体（expansions 版本原表述正确）。
+  11) subjects:2079：「iPS：山中伸母因子」→「山中伸弥因子」；Yamanaka Shinya 规范汉译为「山中伸弥」。
+  12) subjects:2118：「Ras 过表达——Ras 是抑癌的屏障」→「…——OIS 是抑癌的屏障」；Ras 为原癌基因，起抑癌屏障作用的是癌基因诱导衰老（OIS）本身。
+  13) subjects:2162：「其发现者与线虫凋亡遗传学研究者 Horvitz 共享 2002 年诺贝尔生理学或医学奖」→「线虫凋亡遗传学研究者 Horvitz 与 Brenner、Sulston 共享…」；凋亡命名者 Kerr/Wyllie/Currie 从未获诺奖，2002 年获奖者为 Brenner、Horvitz、Sulston（expansions 版本原表述正确）。
+  14) subjects:2190：「PS 受体（scramblase 激活 / flippase 灭活）」→「PS 转位系统（…）」；scramblase/flippase 是磷脂转位酶而非 PS 受体（吞噬细胞的 PS 受体为另一概念，expansions 版本原表述正确）。
+- 存疑未改清单：
+  1) ch5-s2（expansions:211 / subjects:847）「独立分裂（动力学机器 Fts1/Dnm1 与细菌分裂同源）」："Fts1"非标准基因名（疑为 Fis1 或 FtsZ 之误），且 Dnm1/Drp1 属动力蛋白超家族、并非细菌分裂蛋白的同源物（仅原始类群线粒体分裂使用 FtsZ），无法确定原意，未改。
+  2) subjects:2056「角膜缘干细胞（Leu⁺）」：Leu⁺ 标志写法无法核实（角膜缘干细胞经典特征为慢周期/标记保留，现代标志为 ABCG2、p63 等），疑为笔误，未改。
+  3) ch8-s1「1902 年 Bayliss 与 Starling 发现促胰液素……并创造『激素（hormone）』一词」：hormone 一词为 Starling 于 1905 年采纳（W. B. Hardy 建议），句式易使读者误作 1902 年且二人共同造词；因未明写造词年份，属轻微含混，未改。
+  4) ch10-s2「cyclin，1982 年发现」：经典论文 1983 年发表（实验在 1982 年完成），口径可辩护，未改。
+  5) ch7-s2「转录约 1.4 万个核苷酸的 45S 前体 rRNA」：人 45S/47S 前体实为 13,354 nt，「约 1.4 万」略高约 5%，带「约」字属舍入口径，未改。
+  6) ch5-s4「约每 5000 人有一人罹患显性线粒体病」：「显性」疑指「临床显现/外显」而非显性遗传，语境可读通，未改。
+  7) ch7-s1「经典 NES 于 1995 年被鉴定」：首个 NES 于 1994 年在 HIV Rev 蛋白鉴定（PKI 为 1995），年份口径在 1994/1995 间浮动，未改。
+  8) 哺乳动物线粒体核糖体按「70S」表述（ch1-s2、ch5-s1）：人线粒体核糖体实为 55S，但「70S」为相对细胞质 80S 的教材通行口径，未改。
+  9) ch5-s4「LHON 的 G11778A 约占病例半数上下」：西方人群约 40—70%、东亚人群更高，「半数上下」属全球口径，未改。
+- 校验：bunx tsc --noEmit 过滤 cell-biology 无报错；4 个 expansions 模块动态导入正常（13/13/14/13 节），subjects 12 章 53 节结构完好；未改动 5 个目标文件之外的任何文件。
+---
+Task ID: 4-b
+Agent: scientific-reviewer (分子生物学)
+Task: 校验分子生物学教材内容科学性并修复明确错误
+
+Work Log:
+- 读取 worklog.md 前 60 行了解项目背景与既有约定
+- 完整通读 5 个指定文件：expansions/molecular-biology-ch1-3.ts（446 行）、ch4-6（606 行）、ch7-9（512 行）、ch10-12（592 行）、subjects/molecular-biology.ts（2454 行）
+- 逐节核对：科学家/年份归属（Watson-Crick/Meselson-Stahl/Benzer/Okazaki/Kornberg/Nirenberg-Khorana-Holley/Cech-Altman/Blobel/Arber-Smith-Nathans/McClintock/Greider-Blackburn-Szostak/Varmus-Bishop/Doudna-Charpentier 等）、数值量级（oriC 245 bp、E. coli 4.6 Mb/1.6 mm、冈崎片段 1000–2000 nt 与真核 100–200 nt、pol III ~1000 nt/s、16 569 bp mtDNA、Cot 组分比例、trp 阻遏 70×/衰减 10×/700×、HGP 27 亿美元、Ka/Ks 等）、机制方向性（5′→3′ 聚合、前导/后滞链、DnaB 5′→3′、RuvAB/UvrABC 切点、HNH/RuvC 切链归属、PAM 3′ 侧等）
+- 用 Grep 定位全部待修实例后以 Edit/MultiEdit 做最小化修复（共 20 处，含 expansions 9 处、subjects 11 处）
+- 校验：bunx tsc --noEmit 2>&1 | grep -E "molecular-biology" → 无输出（现存 95 行报错均在 scripts/、skills/ 等无关既有文件）
+
+Stage Summary:
+- 审阅 5 个文件；发现 20 处明确错误；全部修复（原文片段→修正片段+理由）：
+  1. expansions/ch1-3.ts:194（表）"先合成重链（H 链）置换出亲代轻链形成 D 环"→"置换出亲代重链"：新 H 链以亲代 L 链为模板合成，被置换的是亲代 H 链（OL 位于被置换的 H 链上，暴露后方启 L 链合成）
+  2. expansions/ch1-3.ts:196 "H 链先合成并置换出亲代 L 链……（置换出的短链产物曾称 7S DNA）"→"置换出亲代 H 链……（新合成的短链产物曾称 7S DNA）"：7S DNA 是新生 H 链片段而非被置换链
+  3. expansions/ch1-3.ts:434 "P × Q 杂交""Q 细胞质背景"→"P × M""M 细胞质背景"：果蝇杂种不育经典体系为 P 品系雄 × M 品系雌（M 株无 P 元件、无相应 piRNA），Q 品系并非经典不育杂交对象
+  4. expansions/ch4-6.ts:239 "约 8～10 种 Sm 蛋白组成的七聚环"→"7 种 Sm 蛋白组成的七聚环"：Sm 核心环由 SmB/D1/D2/D3/E/F/G 共 7 种蛋白构成，与"七聚环"自洽
+  5. expansions/ch7-9.ts:139 "RelA 催化 GTP＋ATP → ppGpp（鸟苷五磷酸）"→"GDP＋ATP → ppGpp（鸟苷四磷酸）"：RelA 以 GDP 为焦磷酸受体生成 ppGpp（GTP+ATP 产物为 pppGpp）；ppGpp 共 4 个磷酸（五磷酸为 pppGpp）
+  6. expansions/ch10-12.ts:455 "KRAS G12D 见于约 90% 胰腺导管腺癌"→"KRAS 突变见于约 90%"：G12D 仅约占 PDAC 的四成余，"约 90%"是 KRAS 总体突变率
+  7. subjects/molecular-biology.ts:263 同 1（D 环表）轻链→重链
+  8. subjects/molecular-biology.ts:522 同 3（P × Q→P × M）
+  9. subjects/molecular-biology.ts:810 "约 8～10 种 Sm 蛋白"→"7 种 Sm 蛋白"（同 4）
+  10. subjects/molecular-biology.ts:872 "核酶（riozyme）"→"（ribozyme）"拼写订正
+  11. subjects/molecular-biology.ts:899 "显著扩展了蛋白酶解多样性"→"蛋白质组多样性"：ADAR A→I 编辑扩展的是蛋白组多样性
+  12. subjects/molecular-biology.ts:1261 "CAP-cRP"→"CAP-cAMP"笔误订正
+  13. subjects/molecular-biology.ts:1275 trp 操纵基因"位于 trpE 内/前导区上游"→"位于前导区上游"：trpO 与启动子/转录起点重叠，不在 trpE 编码区内
+  14. subjects/molecular-biology.ts:1337 同 5（GTP+ATP→GDP+ATP、五磷酸→四磷酸）
+  15. subjects/molecular-biology.ts:2110 "（如 RS-1 抑制 NHEJ、scr7）"→"（如 scr7 抑制 NHEJ、RS-1 促 HDR）"：scr7 抑连接酶 IV 削弱 NHEJ，RS-1 激活 RAD51 促进 HDR（与 expansions 正确表述一致）
+  16. subjects/molecular-biology.ts:2298 同 6（KRAS G12D→KRAS 突变）
+  17. subjects/molecular-biology.ts:2302 "MYCN 扩散"→"MYCN 扩增"术语订正
+  18. subjects/molecular-biology.ts:2374 "p53 泷素化"→"泛素化"错字订正
+  19. subjects/molecular-biology.ts:2420 "imetelestat"→"imetelstat"拼写订正
+  20. subjects/molecular-biology.ts:1337（并入 14）等以上各项均保持模板字符串与表格结构不变
+- 存疑未改清单：pol I "928 aa，约 109 kDa"（UniProt 102,963 Da≈103 kDa，但部分酶学手册记 109 kDa）；小卫星重复单位"6～25 bp（一说 9～64 bp）"（各家定义不一）；U12 内含子"约 0.1%"（近年实测约 0.3%）；TFIIH 亚基数"9"（现行口径 10，旧文献 9）；"赭球菌/甲烷菌 UAG→Pyl"（"赭球菌"无法对应已知含 Pyl 的生物，已证实的为产甲烷古菌及 Desulfitobacterium 等）；subjects:624 "12～17 个共有亚基同源"（表述含混，三类 pol 共有亚基实为约 5 个）；"RB1 克隆（1986）"（文献多记 1986–1987）；1994 年遗传图"数百个微卫星标记"（当年度图谱标记数为数百到数千不等，所指版本不明）；D 环"常为 5～7 个"碱基（多数教材为 7–10 nt）；同步振荡器"2016 年"（群体感应同步振荡报道有 2010/2015 等年份）；IleRS 编辑 Val"仅小一个甲基"（严格为少一个 CH2，通行说法）；1LBG/5F9R 等 PDB 编号与分辨率未能独立核实
+---
+Task ID: 4-c
+Agent: scientific-reviewer (生物化学)
+Task: 校验生物化学教材内容科学性并修复明确错误
+
+Work Log:
+- 通读 5 个负责文件：src/data/expansions/biochemistry-ch1-3.ts、ch4-6.ts、ch7-9.ts、ch10-12.ts（用户可见正文）与 src/data/subjects/biochemistry.ts（keyPoints/terms/summary/keywords 展示层 + 被 expansions 覆盖的 content）。
+- 逐节核对数值/单位（ATP 水解 ΔG°′、高能化合物表、pKa、Tm、B/A/Z-DNA 参数、呼吸链 4/0/4/2 泵 H⁺、P/O 2.5/1.5、30/32 ATP、糖酵解 10 步、TCA 八步、β氧化 106/129、胆固醇 18/36/16、必需氨基酸 8 种、生糖生酮氨基酸等）、代谢途径酶学与产物、诺贝尔奖归属与年份（Sanger、Anfinsen、Kendrew/Perutz、Krebs/Lipmann、Mitchell、Boyer/Walker、Prusiner、Köhler/Milstein 等 30 余处）及中文术语；多数内容与教材口径一致。
+- 尝试用 web-search 核验两处存疑数值（亚油酸 ATP 产量、乙酰乙酸 23.5 ATP），均遇 429 限流，改用教材通行的推导核算（硬脂酸 120 → 油酸 118.5 → 亚油酸 116 的经典序列）确认亚油酸应为约 116。
+- 修复 5 处明确错误（2 处在用户可见正文，3 处在被覆盖的 subjects base content），均为最小化字符级替换，未改动代码结构与模板字符串转义。
+- 校验：cd /home/z/my-project && bunx tsc --noEmit 2>&1 | grep -E "biochemistry" → 输出为空（项目其余报错均为 examples/scripts/draw 等无关既有文件）。
+
+Stage Summary:
+- 审阅 5 个文件；发现 9 处问题；修复 5 处：
+  1. expansions/biochemistry-ch10-12.ts:42 「亚油酸完全氧化净得约 98 ATP」→「约 116 ATP」。理由：18:2 Δ9,12 经 8 轮 β氧化产 9 乙酰CoA(90) + 8 NADH(20) + 7 FADH₂(10.5)，扣活化 2 与 2,4-二烯酰CoA 还原酶 1 NADPH(2.5)，净约 116（旧口径亦为 141~144），与 98 相差 ~18，且与同文件棕榈酸 106 的新口径自洽性矛盾；98 无法由任何通行算法导出。
+  2. subjects/biochemistry.ts:1695 同上「约 98 ATP」→「约 116 ATP」（与展示层 expansions 保持一致）。
+  3. subjects/biochemistry.ts:827 「Km = (k₂ + k₃) / k₂」→「/ k₁」。理由：Briggs-Haldane 稳态推导 Km=(k₂+k₃)/k₁；分母写成 k₂ 则 k₃≪k₂ 时 Km→1，与其后"Km≈Ks"的表述自相矛盾（expansions 同条目本为 /k₁ 正确）。
+  4. subjects/biochemistry.ts:299 flippase 方向「将新合成的脂质从胞质叶翻至外叶」→「将磷脂由外叶翻回胞质叶」。理由：P4 型 ATP 酶（翻转酶）将磷脂从外叶翻回胞质叶，外向为 ABC 型外翻酶；原句方向相反且与展示层 expansions（「多将磷脂由外叶翻回胞质叶」）冲突。
+  5. subjects/biochemistry.ts:1466 LDH「A 型/ M 型同工酶」→「H 型/ M 型」。理由：LDH 两类亚基为 H（心型/LDHB）与 M（肌型/LDHA），A 与 M 为同一亚基的两种命名，原写法把同一亚基当作两种；展示层 expansions 亦作 H/M。
+- 存疑未改清单：① expansions ch10-s2 与 subjects ch10-s2「乙酰乙酸氧化约得 23.5 ATP、β-羟丁酸约 26 ATP」——自算为 23/25.5（含琥珀酸→OAA 段 4 ATP、扣 1 GTP），23.5 与各教材口径（23/23.5/24/26）有 ≤1 ATP 的记账差异且内部自洽（23.5+2.5=26），未达"明确无疑"；② subjects ch4-s4（隐藏层）「远端组氨酸使 CO 结合能降低约 10,000 倍」——通行口径为 CO/O₂ 亲和比由游离血红素 ~25,000 压缩至 ~200（约 125 倍），原句含义含混、无法确定唯一修正目标，且展示层 expansions 表述正确；③ subjects ch5-s3 keyPoint「Km = Vmax/2 时的底物浓度」为口语化简写（=读作"是"），未按事实错误处理；④ 糖原分支间隔两处分别作「8~12」「约 11」，均在通行范围内；空腹血糖总量「约 20 g」「肝糖原 12~24 h 耗尽」等表述在教材口径波动范围内。仅修改上述 5 处，未创建新文件、未改动其他文件。
+---
+Task ID: 4-l
+Agent: scientific-reviewer (测验题库:免疫学)
+Task: 校验免疫学测验题库科学性
+
+Work Log:
+- 读取 worklog.md 前 40 行了解项目背景与各批次产出惯例
+- 通读 src/lib/types.ts 确认 QuizQuestion 类型（answer: number | number[]，判断题 options ['正确','错误']）
+- 完整逐题审阅 5 个批次文件共 60 题（a1: q1–q15 ch1–3；a2: q16–q30 ch4–6；a3: q31–q40 ch8–9；a4: q41–q50 ch10–11；a5: q51–q60 ch12），每题核验：correct/answer 索引指向选项的科学正确性、解析与 answer 的一致性（含"故选 X"字母）、题干与选项事实陈述、选项间歧义、题型与 answer 形式匹配
+- 重点核验事实：三大免疫功能；2011/2018/1984 诺奖归属（Steinman-DC、Allison-CTLA-4/本庶佑-PD-1、Köhler-Milstein、Smith/Winter 噬菌体展示化学奖）；中性粒细胞 50–70%；补体 C4b2a vs C3bBb 与 C3 浓度；TLR4/9/3/5 配体；NLRP3 两信号；IgG 75–80%/23 天、IgE 血清含量最低；木瓜/胃蛋白酶切点与 Fab/F(ab')2/pFc'；V(D)J、N/P 核苷酸；HAT/HGPRT；HLA 6p21.3 与 β2m 15 号染色体；MHC 槽 8–10/13–17 肽；CD4/CD8 共受体对应；单元型 1/4 概率；US6-TAP/ICP47/US2-US11；HLA-DM 肽编辑；TCR-CD3 复合体 ITAM=10；AIRE-mTEC-阴性选择；Tfh-BCL6/Treg-Foxp3；pro-B 重排；CD21-CR2-C3d 与 EBV；AID；暗区/亮区分工；APS-1/ALPS/IPEX/SCID 归属；Treg 抑制机制（IL-35=p35/EBI3、CTLA-4 转胞吞、CD25 掳夺 IL-2）；胆碱能抗炎通路 α7 nAChR；I–IV 型超敏各机制（IgE 交联、迟发相 4–6 h、抗 D 72 h、Arthus、血清病 7–14 天、PPD 48–72 h 硬结、颗粒状 vs 线条状沉积）；检查点抑制剂 irAE；二代 CAR 共刺激域、CRS-托珠单抗、ICANS
+- 运行 bunx tsc --noEmit 2>&1 | grep -E "quiz/immunology" → 输出为空（全仓 95 条既有类型错误均位于 examples/、scripts/、src/draw/ 等无关文件，quiz/immunology 无任何报错）
+
+Stage Summary:
+- 审阅 5 个批次文件（共 60 题：15+15+10+10+10）；发现 0 处确凿科学性错误；修复 0 处（无需任何修改）。60 题中：single 42/truefalse 10/multiple 8，题型与 answer 形式全部匹配；所有解析的选项指称与 answer 索引全部一致；答案选项的科学内容经逐条核验全部正确（含 4 道多选的每一正确项与每一错误干扰项的排除理由）
+- 存疑清单（均在教材口径容差内，保持原样未改）：
+  1) immunology-a2.ts:139–144（q-immunology-23）"静脉注射免疫效果最差"系国产教材标准口径（皮内>皮下>肌内>静脉），严格说最适用于可溶性蛋白抗原；题干已限定"同一蛋白抗原""通常"，不构成错误
+  2) immunology-a2.ts:190（q-immunology-26 解析）IgE "约 0.1–0.9 mg/L" 为国内教材表值（英文文献约 0.05–0.2 mg/L）；核心论断"IgE 为五类中血清含量最低"无疑义
+  3) immunology-a3.ts:149（q-immunology-39 选项 A）TCR-pMHC Kd "1–100 μmol/L" 为常用引用范围，文献全谱更宽（约 0.1–500 μM）
+  4) immunology-a4.ts:79（q-immunology-44 解析）中央母细胞周期 "6–12 小时"，文献常引约 6–7 h，6–12 h 亦见于综述
+  5) a1 q2 解析"初次应答潜伏期一至两周"与 a4 q45"约 5–10 天"为并存的两个教材口径，均在合理区间，不构成矛盾
+- 校验：bunx tsc --noEmit | grep quiz/immunology → 空；未改动 5 个分配文件之外的任何文件，本任务未修改任何题库内容
+
+---
+Task ID: 4-j
+Agent: scientific-reviewer (测验题库:生化/分子/细胞)
+Task: 校验三学科测验题库科学性
+
+Work Log:
+- 读 worklog.md 前 40 行了解项目背景（BioScholar，题库配套 subjects 章节，王镜岩/Lehninger/翟中和/Alberts 教材口径）。
+- 完整通读 src/data/quiz/biochemistry.ts（60 题）、molecular-biology.ts（60 题）、cell-biology.ts（60 题），共 180 题。
+- 逐题校验：answer 索引指向选项是否科学正确；explanation 与 answer 是否一致且事实准确（数值：B-DNA 2 nm/10 bp/3.4 nm、Tm≈69.3+0.41×GC%、ATP −30.5/PEP −61.9 kJ/mol、棕榈酸净 106 ATP、尿素循环 3 ATP/4 高能键、mtDNA 16 569 bp/13+22+2、核小体 146 bp/1.65 圈、Na⁺:K⁺=3:2、HGP 约 2 万基因、MES 两代 1:1 轻带/杂合带、山中年氏四因子等均核对无误；机制/术语/人物归属/诺奖年份逐一核对）；选项间无歧义（无两个都对或都不对）；truefalse 的 answer 均为 0/1、multiple 的 answer 均为数组、索引均在界内。
+- bun -e 脚本对三文件做结构自检：60+60+60 题全部通过（无重复 id、无空选项、解析非空、题型-answer 形状匹配）。
+- 修复 2 处确凿错误（均在 cell-biology.ts，仅动 explanation 字符串）。
+- 校验：bunx tsc --noEmit 过滤 quiz/(biochemistry|molecular-biology|cell-biology) 输出为空（无类型错误）；bun -e 重新导入三模块正常（60/60/60），确认修复生效。
+
+Stage Summary:
+- 审阅 3 个题库共 180 题；发现 2 处确凿问题并修复，另 4 处存疑保留：
+  1) cell-biology.ts:324（q-cell-biology-21 解析）："H⁴ 经 ATP 合酶回流" → "H⁺ 经 ATP 合酶回流"。H⁴ 非有效化学符号（质子应为 H⁺），属字符笔误，修正后与该解析其余 H⁺ 表述一致。
+  2) cell-biology.ts:452（q-cell-biology-29 解析）："肌浆去极化" → "肌膜（横小管）去极化"。肌浆（胞质）不发生去极化，骨骼肌兴奋-收缩耦联中去极化事件发生在肌膜/横小管并经 DHPR 机械偶联开放肌浆网 RyR 释放 Ca²⁺；原表述为事实性错误。
+- 存疑清单（保持原样）：① molecular-biology.ts q-molecular-biology-51 解析称"NNGRRT 为 Cas13 的原间隔侧翼序列特征"，该具体序列归属未能核实（文献常见 LshCas13a 需 3′ 非 G 的 PFS、LwaCas13a 无 PFS 约束；沙箱 web 搜索接口限流不可用）；本题考点（SpCas9 PAM=NGG）与 answer 无误。② molecular-biology.ts q-molecular-biology-35 解析"催化 GTP+ATP 合成 ppGpp"欠严谨（GTP+ATP 严格生成 pppGpp，ppGpp 由 GDP+ATP 生成；选项本身已注明"鸟苷四/五磷酸"，教材常作简写，未改）。③ biochemistry.ts q-biochemistry-25 将"酶原激活"列入酶活性快速调节，部分教材仅列别构与共价修饰两类，但按王镜岩体系可成立，未改。④ biochemistry.ts q-biochemistry-36 解析 1,3-BPG ΔG°′ 写作 −49.3 kJ/mol（另有教材 −49.4），属来源间正常差异，未改。
+- 结论：三题库 180 题的 answer 索引全部科学正确，解析与答案一致；除上述 2 处解析级修正外无 correct 索引错误。
+---
+Task ID: 4-k
+Agent: scientific-reviewer (测验题库:生物物理/微生物/病毒)
+Task: 校验三学科测验题库科学性
+
+Work Log:
+- 读取 worklog.md 了解平台背景与各批次规范（QuizQuestion 结构：answer 为 number | number[]，单选/判断为索引，多选为数组）。
+- 完整通读 src/data/quiz/biophysics.ts（45 题）、microbiology.ts（60 题）、virology.ts（60 题），共 165 题。
+- 逐题校验四要素：①answer 索引指向选项是否科学正确；②explanation 与 answer 是否一致且科学准确；③题干/选项中的数值、机制、术语、人物年代归属；④题型（single/truefalse/multiple）与 answer 形式匹配（全部匹配，字段类型符合 QuizQuestion 定义）。
+- 重点复核的高风险数值/史实并确认无误：水介电常数 80 削弱静电作用、高斯链 ⟨R²⟩=Nb²、dsDNA 持续长度 50 nm、Flory 指数 3/5-1/2-1/3、Anfinsen 1972、DSPC 55℃/DMPC 24℃、kinesin 8 nm/1ATP、F₁ 每转 3 ATP/转矩 45 pN·nm、ΔG=RT lnQ≈+11.4 kJ/mol、NADH→O₂ ΔG≈−219 kJ/mol、TIRF 隐失波 100–200 nm、1 pA≈6×10⁶ 离子/s、E_K≈−89 mV、Abbe 196 nm、215 PB/g DNA、Berg–Purcell 公式；革兰氏染色机制、λ 特殊转导 attP/attB、Luria–Delbrück 1943、Ames 试验、志贺菌 10–100/霍乱 10⁸–10¹¹、内毒素 250℃ 干热 30 min、16S 98.7%/DDH 70%、JCVI-syn3.0 473 基因/青蒿酸 25 g/L；Caspar–Klug 60T/10T+2、HA 三聚体结合受体 vs NA 四聚体水解唾液酸、HIV 衣壳 250 六聚体+12 五聚体、负链 RNA 须预装 RdRp、PB2 抓帽/PA 内切、attP 240 bp/attB 25 bp、CI 236 aa、Hershey–Chase 约三成 ³²P、T4 潜伏期 21–25 min/隐蔽期 12 min、1957 三节段/1968 两节段重排、尼帕狐蝠储存/猪中间宿主、Dengvaxia 83 万、麻疹 11–73% 抗体丢失、天花 1977/1980、Elion 1988、索非布韦 2013、mRNA 疫苗 2020 年 12 月 EUA/心肌炎约万分之一等。
+- 交叉对照 src/data/subjects/biophysics.ts、viro/ch4.ts、viro/ch9.ts、micro/ch7.ts、micro/ch10.ts 等正文与 src/lib/types.ts 定义，确认题库口径来源。
+
+Stage Summary:
+- 审阅 3 个题库共 165 题；发现 3 处确凿科学性错误，已全部最小化修复：
+  1. virology.ts:322（q-virology-19 选项 B）「马拉维若（2008 年获批）」→「马拉维若（2007 年获批）」：maraviroc 于 2007 年 8 月获 FDA 批准（欧洲同年 9 月），题库写 2008 属事实错误；且本平台正文 viro/ch4.ts:223 亦明确写「2007 年获批」，题库与正文与史实均不一致，改为 2007。
+  2. virology.ts:740（q-virology-44 选项 B）「…Nathans 随即绘出 SV40 首张限制酶图谱，三人获 1978 年诺贝尔奖」→「…Smith、Nathans 与 Arber 同获 1978 年诺贝尔奖」：原句仅出现 Smith、Wilcox、Nathans 三人，「三人」按上文指代将把未获诺奖的 Wilcox 计入；1978 年诺贝尔生理学或医学奖得主实为 Arber、Nathans、Smith（正文 viro/ch9.ts:181 亦如此表述），修正指代。
+  3. microbiology.ts:697（q-microbiology-42 解析）「该菌是中度嗜酸的化能自养菌」→「极端嗜酸」：嗜酸氧化亚铁硫杆菌最适 pH≈2–2.5、可在 pH 1–2 酸性矿水生长，属极端嗜酸菌（optimum<3），「中度嗜酸」（optimum 3–5）分类错误，且与本平台正文 micro/ch7.ts「极端值的代表…可在 pH 1–2 生长」口径冲突。
+- 修复后校验：bunx tsc --noEmit 对 quiz/(biophysics|microbiology|virology) 三个文件零报错（grep 无输出）。
+- 存疑清单（保持原样，未修改）：
+  1) q-microbiology-49 选项 D「三条途径交汇于 C5 转化酶水平」：正文 micro/ch10.ts 表述为「汇合于共同通路：C3 转化酶切割 C3…随后形成 C5 转化酶」；免疫学教材对汇合点（C3 转化酶水平 vs C5 裂解起始的末端共同通路）两种表述并存，题面表述可辩护，答案判定不受影响。
+  2) q-biophysics-22 解析「[ATP]/[ADP] 维持约 10³」：与正文 biophysics.ts:675 一致；按游离 ADP 计的文献值跨度约 10²–10³，属可接受的高端近似。
+  3) q-biophysics-33 选项 B「每通道移动约 12–16 个元电荷」：与正文一致且符合 Shaker 实测 ~13 e₀；部分 Nav 通道估计可达 ~24 e₀，区间表述可接受。
+  4) q-biophysics-36 解析「肌肉型 α₂βγδ」：为胚胎型亚基组成（成人型为 α₂βδε），教材惯用简写，且非该题考点。
+  5) q-microbiology-42 选项 B「pH 2–4 的酸性环境」：该菌生长上限约 pH 4、最适 2–2.5，表述在可接受范围（仅修正了解析中的「中度嗜酸」）。
+  6) 超出本任务文件范围的提示：src/data/draw-vi-r4.ts:31 也写着「马拉维若（2008）」，同样应为 2007，请相关维护者另行修正（本次未触碰该文件）。
+- 其余 162 题的 answer 索引、解析一致性、事实数值与题型结构均校验通过，未发现其他确凿科学性错误。
+---
+Task ID: 4-m
+Agent: scientific-reviewer (测验题库:神经生物学/生物信息学)
+Task: 校验神经生物学与生物信息学测验题库科学性
+
+Work Log:
+- 通读 worklog.md 前 40 行了解项目背景与题库编号方案（q-neurobiology-1~60、q-bioinformatics-1~60）。
+- 完整阅读 9 个批次文件共 2144 行、110 题：neurobiology-c1(15)/c2(10)/c3(10)/c4(25)、bioinformatics-b2(10)/b3(10)/b4(10)/b5(15)/b6(15)。
+- 逐题校验 correct 索引指向选项的科学正确性、answer 与 explanation 的一致性、选项间歧义、题型与 correct 形式匹配（single/truefalse→数字，multiple→数组，全部合规）。
+- 重点复核可独立验算的数值与史实：Nernst/GHK（E_K≈−89、E_Na≈+60.5、E_Cl≈−64、E_Ca≈+132 mV；V_rest≈−67 mV）、高钾十倍上移 61.5 mV、驱动力 ±20/−130/−200 mV、MEPP 量子式释放、Gray I/II 型参数、HH 参数（ḡ 120/36/0.3 mS/cm²、传导速度 18.7 vs 21 m/s）、Erlanger–Gasser 分级、Weber 分数（0.003/0.14/0.20）、双耳时差 0.6–0.7 ms、视锥 560/530/420 nm、睡眠周期 90 min×4–6、基底节直接/间接通路、VOR 三神经元弧、JC 校正（0.1→0.107、0.4→0.57、0.7→2.03、p→0.75 发散）、N50 手算（200+150≥250→150 kb）、BLOSUM62≈PAM160、E≈KmNe^−λS、CpG 岛三判据、FDR/Bonferroni（0.05/2万=2.5e-6）、Q20/Q30 错误率、RefSeq/UniProt PE 分级、TPM/FPKM 归一次序、负二项离散、GDT-TS 四阈值、CASP14 中位 92.4、2024 诺贝尔化学奖分配、Word2Vec 类比全部一致；NW 算例（GA vs GAT，F(2,3)=2、GA-/GAT）逐格复算无误。
+- 核对各 multiple 题的解析字母（A/B/C/D 逐项判对错）与 answer 数组完全一致，无「解析说错、答案选对」或反向情况。
+
+Stage Summary:
+- 审阅 9 个批次文件、110 题；发现 1 处确凿错误；修复 1 处：
+  1) neurobiology-c4.ts:105（q-neurobiology-5 解析）：原文「Neher 与 Sakmann 于 1976 年借高达 10 GΩ 的吉欧封接记录到皮安级单通道电流，即膜片钳」——史实错误：1976 年首篇单通道记录使用的是兆欧级封接，10 GΩ 吉欧封接技术系其后约 1980/1981 年（Hamill-Marty-Neher-Sakmann-Sigworth 1981 改良版膜片钳）才建立。已最小化改为「1976 年首次记录到皮安级单通道电流，其后以高达 10 GΩ 的吉欧封接发展出膜片钳技术」；选项 A（正确答案本身）本就只陈述「1976 记录单通道电流、1991 获诺奖」，无需改动。
+- 存疑清单（保持原样，均为教材口径差异或量级舍入，非确凿错误）：
+  1) neurobiology-c1 q-18：MEPP「0.5–1 mV」——Katz 原始文献与部分教材为 0.4–0.8 mV，0.5–1 mV 属 Kandel 类教材区间，可用。
+  2) neurobiology-c2 q-43：VOR 潜伏期「约 10 ms 量级」——文献多为 5–10 ms，「量级」措辞已留容差。
+  3) neurobiology-c4 q-2 解析：「从线虫 302 到人脑跨九个数量级」严格计算约 8.4 个数量级，属四舍五入口径。
+  4) neurobiology-c4 q-8 解析：「Ca²⁺ 驱动力逾 −200 mV」按题给浓度算为 −199 mV，边界舍入。
+  5) neurobiology-c4 q-5：「1929 年 Berger 记录人脑电图」——首次记录在 1924、1929 为首次发表，符合寿天德教材惯用表述，未改。
+  6) neurobiology-c1 q-23：「L-DOPA 为对因治疗之一」——按「替代疗法针对递质缺乏环节」的教学口径可成立（类似胰岛素之于 T1DM），未改。
+  7) bioinformatics-b2 q-33：同源建模「>40% 一致性对应 ~1 Å、<30% 入暮光区」——不同文献分档（有用 50%/25% 者），与正文口径一致，未改。
+  8) bioinformatics-b6 q-3 解析：「测序数据倍增周期约 1–1.5 年」——公开估计从 5 个月到 18 个月不等，题面锚定正文口径，未改。
+- 其余 109 题的 correct 指向、解析文字、干扰项设置均科学正确；未改动任何分配外文件。
+- 校验：cd /home/z/my-project && bunx tsc --noEmit 后 grep quiz/(neurobiology|bioinformatics) 输出为空（0 条），9 个文件无类型错误。
+
+---
+Task ID: 5 (总协调)
+Agent: Z.ai Code (主会话)
+Task: API Key 输入后自动检测模型功能 + 全学科文字内容科学性校验 + 打磨收尾
+
+Work Log:
+- 新建 src/app/api/assistant/providers/models/route.ts：POST 接口，支持 body 直传 apiKey（未保存时即时检测，不落盘）或使用已保存 Key；GET {baseURL}/models 解析 OpenAI 兼容三种变体（data:[]/顶层数组/models:[]）；与 PROVIDER_CATALOG 合并补全 name/contextWindow；目录默认模型置顶排序；zai 返回内置目录；10s 超时；401/403/HTML/非 JSON 各类错误路径齐备
+- providers-panel.tsx AddProviderForm 集成自动检测：新增 detectedModels/detecting/detectNote 状态；API Key 输入框失焦且 Key≥8 字符时静默自动触发 detectModels()；模型下拉选项切换为「检测到的实时列表优先，否则目录预设」；检测中显示 spinner + 文案；成功显示「✓ 已实时检测到 N 个可用模型」+「实时」徽标；失败显示原因且保留预设回退；当前选中不在检测列表时自动切到默认模型/首个；检测按钮支持手动重测；「当前值不在选项中时追加选项」防 Select 显示空
+- providers-panel.tsx ConfiguredProviderRow 编辑区升级：新增 editModels/editDetecting/editDetectNote；「检测模型」按钮（优先用未保存的新 Key/BaseURL，否则已保存配置）；检测成功后模型 ID 从纯文本输入升级为下拉选择（含 contextWindow 展示 + 当前值兜底追加）；检测状态内联提示
+- 修复 providers-panel.tsx:216 onSetDefault 回调类型错误（void setDefault → setDefault 直传）
+- 启动 13 个并行子代理完成全学科文字内容科学性校验（9 个教材正文代理 4-a~4-i + 4 个测验题库代理 4-j~4-m），覆盖：4 大学科 expansions 正文 + subjects 展示层 + micro/immuno/viro/neuro/bioinfo 五大学科全部章节 + 全部在用题库（约 37,000 行）
+- 子代理共修复约 70 处明确科学性错误（代表性：19 世纪三大发现误写孟德尔定律→能量守恒定律、Meselson-Stahl 1957→1958、mtDNA D 环置换链方向颠倒、CIV 泵出质子数口径、KRAS G12D→KRAS 总体突变率 90%、亚油酸氧化 98→116 ATP、Km 公式分母 k₂→k₁、flippase 方向反写、肌肉比张力 30kg→3kg、地球质量数量级、补体 PSGN C4 表述、T=h²+k²→h²+hk+k²、maraviroc 2008→2007、SARS-CoV-2 演化速率每年→每月、神经发生数以万计→数以亿计、血浆蛋白组动态范围 7→10 个数量级等）；另补充修复 draw-vi-r4.ts 马拉维若年份（4-k 代理报告的范围外问题）
+- .gitignore 补充 tool-results/ 与 tsconfig.tsbuildinfo
+- 验证：bun run lint 通过；bunx tsc src/ 零错误；curl 实测 /api/assistant/providers/models 三种场景（zai 目录返回/无 Key 提示/无效 Key 真实 401 回显）；agent-browser 端到端：供应商面板→选 DeepSeek→Base URL 自动填充→输入 Key 失焦自动检测（真实调用 DeepSeek API 返回 401 内联提示）→手动检测按钮→保存→编辑区检测（用已存 Key）→删除配置全链路通过；移动端 390px 视口正常；科学性修正「能量守恒定律」在阅读器实际渲染验证通过；粘性页脚长页无遮挡
+- git commit + push 到 origin/main
+
+Stage Summary:
+- 新功能：API Key 输入后模型列表自动检测（后端接口 + 双端 UI 集成，未保存 Key 亦可即时检测）
+- 质量提升：全平台 9 学科教材正文 + 题库约 37,000 行完成科学性逐节校验，修复约 70 处事实性错误，全部为最小化编辑（不改结构/字数/风格）
+- 存疑清单：各子代理共报告约 60 条存疑项（教材口径差异/表述含混），已逐条记录在各 Task 4-x 工作记录中，建议后续由内容负责人定夺
+- 待办建议：① 存疑条目定夺修订 ② 跨学科交叉口径统一（如巴氏消毒/放线菌 pH 表述） ③ 术语词典（glossary-*）与 web 图片 caption 的科学性抽检 ④ draw-* 系列配图 caption 全面校验（本轮仅修复 1 处报告项）

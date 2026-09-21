@@ -21,6 +21,7 @@ import {
   Loader2,
   Plus,
   RefreshCw,
+  ScanSearch,
   ShieldCheck,
   Trash2,
   Zap,
@@ -212,7 +213,7 @@ export function ProvidersPanel({ open, onClose, onChanged }: Props) {
                         key={p.id}
                         provider={p}
                         isDefault={defaultProvider === p.id}
-                        onSetDefault={(id) => void setDefault(id)}
+                        onSetDefault={(id) => setDefault(id)}
                         onChanged={() => {
                           void refresh()
                           onChanged?.()
@@ -279,12 +280,26 @@ function AddProviderForm({
     models?: number
   } | null>(null)
 
+  /* ---------- 模型自动检测状态 ---------- */
+  /** 检测到的模型列表（null = 未检测，用目录预设） */
+  const [detectedModels, setDetectedModels] = useState<
+    ProviderModelInfo[] | null
+  >(null)
+  const [detecting, setDetecting] = useState(false)
+  const [detectNote, setDetectNote] = useState<{
+    ok: boolean
+    text: string
+  } | null>(null)
+
   const selected = providers.find((p) => p.id === selectedId)
   const effectiveModel = useCustomModel
     ? customModel.trim()
     : selectedModel
 
-  // 切换供应商时自动填充 baseURL 与默认模型
+  // 模型下拉选项：检测到约实时列表优先，否则回退目录预设
+  const modelOptions = detectedModels ?? selected?.models ?? []
+
+  // 切换供应商时自动填充 baseURL 与默认模型，并重置检测状态
   useEffect(() => {
     if (selected) {
       setBaseURL(selected.baseURL)
@@ -292,6 +307,8 @@ function AddProviderForm({
       setUseCustomModel(false)
       setCustomModel('')
       setTestResult(null)
+      setDetectedModels(null)
+      setDetectNote(null)
     }
   }, [selectedId, selected])
 
@@ -311,6 +328,98 @@ function AddProviderForm({
     setUseCustomModel(false)
     setTestResult(null)
     setShowKey(false)
+    setDetectedModels(null)
+    setDetectNote(null)
+  }
+
+  /* ---------- 模型自动检测 ---------- */
+
+  /** 调用 /api/assistant/providers/models 拉取实时模型列表 */
+  const detectModels = useCallback(async () => {
+    if (!selectedId || selectedId === 'zai') return
+    const key = apiKey.trim()
+    const url = baseURL.trim()
+    if (!key) {
+      setDetectNote({ ok: false, text: '请先输入 API Key 再检测模型' })
+      return
+    }
+    if (selected?.customBaseURL && !url) {
+      setDetectNote({ ok: false, text: '自定义接口需先填写 Base URL' })
+      return
+    }
+    setDetecting(true)
+    setDetectNote(null)
+    try {
+      const res = await fetch('/api/assistant/providers/models', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          providerId: selectedId,
+          apiKey: key,
+          baseURL: url || undefined,
+        }),
+      })
+      const data = (await res.json()) as {
+        ok: boolean
+        error?: string
+        models?: ProviderModelInfo[]
+        source?: string
+      }
+      if (data.ok && data.models && data.models.length > 0) {
+        setDetectedModels(data.models)
+        setDetectNote({
+          ok: true,
+          text:
+            data.source === 'live'
+              ? `已实时检测到 ${data.models.length} 个可用模型`
+              : `返回 ${data.models.length} 个预设模型`,
+        })
+        // 当前选中不在检测列表内 → 自动切到默认模型或首个
+        const ids = new Set(data.models.map((m) => m.id))
+        if (
+          !useCustomModel &&
+          (!selectedModel || !ids.has(selectedModel))
+        ) {
+          const fallback =
+            data.models.find((m) => m.id === selected?.defaultModel)?.id ??
+            data.models[0]?.id ??
+            ''
+          setSelectedModel(fallback)
+        }
+      } else {
+        setDetectNote({
+          ok: false,
+          text: data.error ?? '未检测到模型，可从预设列表选择或手动输入',
+        })
+      }
+    } catch (err) {
+      setDetectNote({
+        ok: false,
+        text: err instanceof Error ? err.message : String(err),
+      })
+    } finally {
+      setDetecting(false)
+    }
+  }, [
+    selectedId,
+    apiKey,
+    baseURL,
+    selected,
+    selectedModel,
+    useCustomModel,
+  ])
+
+  /** Key 输入框失焦时的自动检测（Key 完整时静默触发） */
+  const handleApiKeyBlur = () => {
+    if (
+      selectedId &&
+      selectedId !== 'zai' &&
+      apiKey.trim().length >= 8 &&
+      !detectedModels &&
+      !detecting
+    ) {
+      void detectModels()
+    }
   }
 
   const buildSaveBody = () => ({
@@ -484,11 +593,39 @@ function AddProviderForm({
               )}
             </div>
 
-            {/* 默认模型 */}
+            {/* 默认模型（支持自动检测） */}
             <div>
-              <Label className="mb-1.5 block text-[10px] uppercase tracking-wider text-muted-foreground">
-                默认模型
-              </Label>
+              <div className="mb-1.5 flex items-center justify-between">
+                <Label className="flex items-center gap-1 text-[10px] uppercase tracking-wider text-muted-foreground">
+                  默认模型
+                  {detectedModels && (
+                    <span
+                      className="ml-0.5 inline-flex items-center gap-0.5 rounded-full bg-emerald-500/10 px-1.5 text-[9px] font-medium normal-case tracking-normal text-emerald-700 dark:text-emerald-400"
+                    >
+                      <ScanSearch className="h-2 w-2" aria-hidden />
+                      实时
+                    </span>
+                  )}
+                </Label>
+                {selected.id !== 'zai' && (
+                  <button
+                    type="button"
+                    onClick={() => void detectModels()}
+                    disabled={detecting || !apiKey.trim()}
+                    aria-label={
+                      detectedModels ? '重新检测可用模型' : '检测可用模型'
+                    }
+                    className="flex items-center gap-1 rounded px-1.5 py-0.5 text-[10px] text-emerald-700 transition-colors hover:bg-emerald-500/10 disabled:cursor-not-allowed disabled:opacity-50 dark:text-emerald-400"
+                  >
+                    {detecting ? (
+                      <Loader2 className="h-2.5 w-2.5 animate-spin" aria-hidden />
+                    ) : (
+                      <ScanSearch className="h-2.5 w-2.5" aria-hidden />
+                    )}
+                    {detectedModels ? '重新检测' : '检测模型'}
+                  </button>
+                )}
+              </div>
               {!useCustomModel ? (
                 <>
                   <Select
@@ -503,7 +640,7 @@ function AddProviderForm({
                       <SelectValue placeholder="选择模型…" />
                     </SelectTrigger>
                     <SelectContent>
-                      {selected.models.map((m) => (
+                      {modelOptions.map((m) => (
                         <SelectItem key={m.id} value={m.id} className="text-xs">
                           {m.name}
                           {m.contextWindow
@@ -511,18 +648,30 @@ function AddProviderForm({
                             : ''}
                         </SelectItem>
                       ))}
+                      {/* 当前值不在选项中时追加，避免 Select 显示空 */}
+                      {selectedModel &&
+                        !modelOptions.some((m) => m.id === selectedModel) && (
+                          <SelectItem
+                            value={selectedModel}
+                            className="font-mono text-xs"
+                          >
+                            {selectedModel}（预设）
+                          </SelectItem>
+                        )}
                     </SelectContent>
                   </Select>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setUseCustomModel(true)
-                      setCustomModel(selectedModel)
-                    }}
-                    className="mt-1 text-[10px] text-emerald-700 transition-colors hover:underline dark:text-emerald-400"
-                  >
-                    + 输入自定义模型 ID…
-                  </button>
+                  <div className="mt-1 flex items-center justify-between">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setUseCustomModel(true)
+                        setCustomModel(selectedModel)
+                      }}
+                      className="text-[10px] text-emerald-700 transition-colors hover:underline dark:text-emerald-400"
+                    >
+                      + 输入自定义模型 ID…
+                    </button>
+                  </div>
                 </>
               ) : (
                 <div className="flex gap-1.5">
@@ -544,6 +693,36 @@ function AddProviderForm({
                   </Button>
                 </div>
               )}
+              {/* 检测状态提示 */}
+              {detecting && (
+                <p
+                  className="mt-1 flex items-center gap-1 text-[10px] text-muted-foreground"
+                  role="status"
+                  aria-live="polite"
+                >
+                  <Loader2 className="h-2.5 w-2.5 animate-spin" aria-hidden />
+                  正在从 {selected.displayName} 检测可用模型…
+                </p>
+              )}
+              {!detecting && detectNote && (
+                <p
+                  role="status"
+                  className={cn(
+                    'mt-1 text-[10px] leading-relaxed',
+                    detectNote.ok
+                      ? 'text-emerald-600 dark:text-emerald-400'
+                      : 'text-muted-foreground'
+                  )}
+                >
+                  {detectNote.ok ? '✓ ' : ''}
+                  {detectNote.text}
+                </p>
+              )}
+              {!detecting && !detectNote && selected.id !== 'zai' && (
+                <p className="mt-1 text-[10px] text-muted-foreground/70">
+                  输入 API Key 后将自动检测可用模型
+                </p>
+              )}
             </div>
 
             {/* API Key */}
@@ -556,6 +735,7 @@ function AddProviderForm({
                   type={showKey ? 'text' : 'password'}
                   value={apiKey}
                   onChange={(e) => setApiKey(e.target.value)}
+                  onBlur={handleApiKeyBlur}
                   placeholder={`输入 ${selected.displayName} 的 Key…`}
                   aria-label="API Key"
                   autoComplete="off"
@@ -574,6 +754,11 @@ function AddProviderForm({
                   )}
                 </button>
               </div>
+              {selected.id !== 'zai' && (
+                <p className="mt-1 text-[10px] text-muted-foreground/70">
+                  输入后失焦或点击「检测模型」可自动拉取该 Key 可用的模型列表
+                </p>
+              )}
             </div>
 
             {/* 测试结果 */}
@@ -674,6 +859,13 @@ function ConfiguredProviderRow({
     error?: string
   } | null>(null)
 
+  /* ---------- 编辑区模型检测状态 ---------- */
+  const [editModels, setEditModels] = useState<ProviderModelInfo[] | null>(
+    null
+  )
+  const [editDetecting, setEditDetecting] = useState(false)
+  const [editDetectNote, setEditDetectNote] = useState<string | null>(null)
+
   const handleDelete = async () => {
     setDeleting(true)
     try {
@@ -696,8 +888,54 @@ function ConfiguredProviderRow({
       setEditModel(provider.effectiveModel || provider.defaultModel)
       setEditApiKey('')
       setTestResult(null)
+      setEditModels(null)
+      setEditDetectNote(null)
     }
     setExpanded(!expanded)
+  }
+
+  /** 编辑区模型检测：优先用未保存的新 Key，否则用已保存配置 */
+  const detectEditModels = async (e: React.MouseEvent) => {
+    e.stopPropagation()
+    setEditDetecting(true)
+    setEditDetectNote(null)
+    try {
+      const res = await fetch('/api/assistant/providers/models', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          providerId: provider.id,
+          apiKey: editApiKey.trim() || undefined,
+          baseURL: editBaseURL.trim() || undefined,
+        }),
+      })
+      const data = (await res.json()) as {
+        ok: boolean
+        error?: string
+        models?: ProviderModelInfo[]
+      }
+      if (data.ok && data.models && data.models.length > 0) {
+        setEditModels(data.models)
+        setEditDetectNote(`已检测到 ${data.models.length} 个可用模型`)
+        // 当前值不在检测列表内 → 自动切到默认模型或首个
+        const ids = new Set(data.models.map((m) => m.id))
+        if (editModel && !ids.has(editModel)) {
+          const fallback =
+            data.models.find((m) => m.id === provider.defaultModel)?.id ??
+            data.models[0]?.id ??
+            editModel
+          setEditModel(fallback)
+        } else if (!editModel) {
+          setEditModel(data.models[0]?.id ?? '')
+        }
+      } else {
+        setEditDetectNote(data.error ?? '未检测到模型，可手动输入模型 ID')
+      }
+    } catch (err) {
+      setEditDetectNote(err instanceof Error ? err.message : String(err))
+    } finally {
+      setEditDetecting(false)
+    }
   }
 
   const handleSave = async (e: React.MouseEvent) => {
@@ -913,16 +1151,88 @@ function ConfiguredProviderRow({
                 />
               </div>
               <div>
-                <Label className="mb-1 block text-[10px] uppercase tracking-wider text-muted-foreground">
-                  模型 ID
-                </Label>
-                <Input
-                  type="text"
-                  value={editModel}
-                  onChange={(e) => setEditModel(e.target.value)}
-                  aria-label="编辑模型 ID"
-                  className="h-8 font-mono text-xs"
-                />
+                <div className="mb-1 flex items-center justify-between">
+                  <Label className="block text-[10px] uppercase tracking-wider text-muted-foreground">
+                    模型 ID
+                    {editModels && (
+                      <span className="ml-1 inline-flex items-center gap-0.5 rounded-full bg-emerald-500/10 px-1.5 text-[9px] font-medium normal-case tracking-normal text-emerald-700 dark:text-emerald-400">
+                        <ScanSearch className="h-2 w-2" aria-hidden />
+                        实时
+                      </span>
+                    )}
+                  </Label>
+                  <button
+                    type="button"
+                    onClick={(e) => void detectEditModels(e)}
+                    disabled={editDetecting}
+                    aria-label="检测可用模型"
+                    className="flex items-center gap-1 rounded px-1.5 py-0.5 text-[10px] text-emerald-700 transition-colors hover:bg-emerald-500/10 disabled:cursor-not-allowed disabled:opacity-50 dark:text-emerald-400"
+                  >
+                    {editDetecting ? (
+                      <Loader2 className="h-2.5 w-2.5 animate-spin" aria-hidden />
+                    ) : (
+                      <ScanSearch className="h-2.5 w-2.5" aria-hidden />
+                    )}
+                    {editModels ? '重新检测' : '检测模型'}
+                  </button>
+                </div>
+                {editModels && editModels.length > 0 ? (
+                  <Select value={editModel} onValueChange={setEditModel}>
+                    <SelectTrigger
+                      size="sm"
+                      className="h-8 w-full font-mono text-xs"
+                      aria-label="选择模型"
+                    >
+                      <SelectValue placeholder="选择模型…" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {editModels.map((m) => (
+                        <SelectItem key={m.id} value={m.id} className="text-xs">
+                          {m.name}
+                          {m.contextWindow
+                            ? ` · ${Math.round(m.contextWindow / 1000)}k`
+                            : ''}
+                        </SelectItem>
+                      ))}
+                      {/* 当前值不在列表中时追加，避免 Select 显示空 */}
+                      {editModel &&
+                        !editModels.some((m) => m.id === editModel) && (
+                          <SelectItem
+                            value={editModel}
+                            className="font-mono text-xs"
+                          >
+                            {editModel}（当前）
+                          </SelectItem>
+                        )}
+                    </SelectContent>
+                  </Select>
+                ) : (
+                  <Input
+                    type="text"
+                    value={editModel}
+                    onChange={(e) => setEditModel(e.target.value)}
+                    aria-label="编辑模型 ID"
+                    className="h-8 font-mono text-xs"
+                  />
+                )}
+                {editDetecting && (
+                  <p
+                    className="mt-1 flex items-center gap-1 text-[10px] text-muted-foreground"
+                    role="status"
+                    aria-live="polite"
+                  >
+                    <Loader2 className="h-2.5 w-2.5 animate-spin" aria-hidden />
+                    正在检测可用模型…
+                  </p>
+                )}
+                {!editDetecting && editDetectNote && (
+                  <p
+                    role="status"
+                    className="mt-1 text-[10px] text-muted-foreground"
+                  >
+                    {editDetectNote}
+                  </p>
+                )}
               </div>
               <div>
                 <Label className="mb-1 block text-[10px] uppercase tracking-wider text-muted-foreground">

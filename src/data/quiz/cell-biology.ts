@@ -321,7 +321,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 1,
     explanation:
-      '复合体 I、III、IV 传递电子的同时把 H⁺ 从基质泵入膜间隙，形成质子动力势；H⁴ 经 ATP 合酶回流释放能量合成 ATP，这就是化学渗透耦联。A 为被否证的化学偶联假说；电子传递链位于内膜；H⁺ 泵出而非泵入基质。',
+      '复合体 I、III、IV 传递电子的同时把 H⁺ 从基质泵入膜间隙，形成质子动力势；H⁺ 经 ATP 合酶回流释放能量合成 ATP，这就是化学渗透耦联。A 为被否证的化学偶联假说；电子传递链位于内膜；H⁺ 泵出而非泵入基质。',
     difficulty: 2
   },
   {
@@ -449,7 +449,7 @@ export const cellBiologyQuiz: QuizQuestion[] = [
     ],
     answer: 0,
     explanation:
-      '肌钙蛋白-原肌球蛋白复合体位于细肌丝，是 Ca²⁺ 的开关：肌浆去极化使 Ca²⁺ 经 ryanodine 受体释放，结合肌钙蛋白 C 后原肌球蛋白滑入螺旋沟，暴露结合位点，横桥循环得以进行。CaM-CaMKII 参与平滑肌收缩调控而非骨骼肌的分子开关。',
+      '肌钙蛋白-原肌球蛋白复合体位于细肌丝，是 Ca²⁺ 的开关：肌膜（横小管）去极化使 Ca²⁺ 经 ryanodine 受体释放，结合肌钙蛋白 C 后原肌球蛋白滑入螺旋沟，暴露结合位点，横桥循环得以进行。CaM-CaMKII 参与平滑肌收缩调控而非骨骼肌的分子开关。',
     difficulty: 3
   },
   {
