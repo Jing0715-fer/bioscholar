@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">低剂量成像：search–focus–expose 与剂量预算</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">search剂量率约0.01–0.05e⁻/Å²·s⁻¹（总剂量&lt;1e⁻/Å²）；focus于曝光区旁1–2μm牺牲区；预算：负染10–20、单颗粒40–60、断层每投影0.5–3、二维衍射&lt;5e⁻/Å²</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三步工作流：search – focus – expose，把剂量花在刀刃上</text>
+  <rect x="60" y="190" width="380" height="150" rx="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="250" y="216" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">① SEARCH 搜索</text>
+  <text x="250" y="240" font-size="11" fill="#475569" text-anchor="middle">极低束流扫览载网</text>
+  <text x="250" y="258" font-size="11" fill="#475569" text-anchor="middle">剂量率 0.01–0.05 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">·s</tspan><tspan dy="-3.7" font-size="7.9">-1</tspan></text>
+  <text x="250" y="276" font-size="11" fill="#475569" text-anchor="middle">导航总剂量 &lt; 1 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <text x="250" y="294" font-size="11" fill="#475569" text-anchor="middle">定位合适孔位与颗粒分布</text>
+  <text x="250" y="322" font-size="10" fill="#64748b" text-anchor="middle">map 模式先拼整网低剂量镶嵌图</text>
+  <rect x="480" y="190" width="380" height="150" rx="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="670" y="216" font-size="14" fill="#92400e" text-anchor="middle" font-weight="700">② FOCUS / ALIGN 对焦</text>
+  <text x="670" y="240" font-size="11" fill="#475569" text-anchor="middle">束斑移至曝光区旁 1–2 μm 牺牲区</text>
+  <text x="670" y="258" font-size="11" fill="#475569" text-anchor="middle">对焦、像散校正、束流对中</text>
+  <text x="670" y="276" font-size="11" fill="#475569" text-anchor="middle">defocus 预设分档：−0.5 至 −2.5 μm</text>
+  <text x="670" y="294" font-size="11" fill="#475569" text-anchor="middle">Z 高度（欧拉高度）按孔联动</text>
+  <text x="670" y="322" font-size="10" fill="#64748b" text-anchor="middle">高剂量操作烧在注定不要的地方</text>
+  <rect x="900" y="190" width="380" height="150" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1090" y="216" font-size="14" fill="#991b1b" text-anchor="middle" font-weight="700">③ EXPOSE 曝光</text>
+  <text x="1090" y="240" font-size="11" fill="#475569" text-anchor="middle">仅在拍摄瞬间施加满剂量</text>
+  <text x="1090" y="258" font-size="11" fill="#475569" text-anchor="middle">冷冻单颗粒目标约 40–60 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <text x="1090" y="276" font-size="11" fill="#475569" text-anchor="middle">三步之间束闸关闭、偏转复位</text>
+  <text x="1090" y="294" font-size="11" fill="#475569" text-anchor="middle">曝光区在全过程中只见一次电子</text>
+  <text x="1090" y="322" font-size="10" fill="#64748b" text-anchor="middle">电子断层：剂量分摊至各倾角投影</text>
+  <line x1="443" y1="265" x2="474" y2="265" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="863" y1="265" x2="894" y2="265" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="352" width="320" height="68" rx="8" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="220" y="346" font-size="9.5" fill="#64748b" text-anchor="middle">search 定位区（低倍）</text>
+  <circle cx="150" cy="386" r="18" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <circle cx="300" cy="386" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="172" y1="386" x2="278" y2="386" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)" marker-start="url(#arr-ink)"/>
+  <text x="225" y="372" font-size="10" fill="#475569" text-anchor="middle">约 1–2 μm</text>
+  <text x="150" y="420" font-size="9.5" fill="#92400e" text-anchor="middle">focus 牺牲区</text>
+  <text x="300" y="420" font-size="9.5" fill="#075985" text-anchor="middle">expose 曝光区</text>
+  <text x="420" y="366" font-size="10.5" fill="#475569">低剂量源流：1975 年 Unwin–Henderson 紫膜二维晶体低剂量衍射，每张约 0.5 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">、</tspan></text>
+  <text x="420" y="381" font-size="10.5" fill="#475569">多图拼合。</text>
+  <text x="900" y="366" font-size="10.5" fill="#475569">现代软件把三步整合为半自动网格方案：map 镶嵌 → 按孔选目标 → 自动计算 focus 偏移；</text>
+  <text x="900" y="381" font-size="10.5" fill="#475569">「顺手先看一眼」即透支预算。</text>
+  <rect x="30" y="456" width="700" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="478.84" font-size="19" fill="#475569" font-weight="700">二、总剂量预算（Henderson 1995：液氮温度约 20 e<tspan dy="-6.5" font-size="13.7">-</tspan><tspan dy="6.5">/Å</tspan><tspan dy="-6.5" font-size="13.7">2</tspan><tspan dy="6.5">）</tspan></text>
+  <rect x="50" y="494" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="521.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">应用</text>
+  <rect x="200" y="494" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="295" y="521.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">总剂量（e⁻/Å²）</text>
+  <rect x="390" y="494" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="521.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要约束</text>
+  <rect x="50" y="538" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="561.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">负染筛查</text>
+  <rect x="200" y="538" width="190" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="295" y="561.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 10–20</text>
+  <rect x="390" y="538" width="320" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="561.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">染料相对耐辐照，bake 重排随剂量加剧</text>
+  <rect x="50" y="574" width="660" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="574" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="597.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">冷冻单颗粒</text>
+  <rect x="200" y="574" width="190" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="295" y="597.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 40–60</text>
+  <rect x="390" y="574" width="320" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="597.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">运动校正时代的标准预算</text>
+  <rect x="50" y="610" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="633.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">电子断层</text>
+  <rect x="200" y="610" width="190" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="295" y="633.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">每投影 0.5–3，总 50–150</text>
+  <rect x="390" y="610" width="320" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="633.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">剂量分摊于数十个倾角</text>
+  <rect x="50" y="646" width="660" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="646" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="669.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">二维晶体衍射</text>
+  <rect x="200" y="646" width="190" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="295" y="669.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">单图常低于 5</text>
+  <rect x="390" y="646" width="320" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="669.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">晶格序最先失守，多图拼合</text>
+  <rect x="50" y="682" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="705.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">室温蛋白</text>
+  <rect x="200" y="682" width="190" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="295" y="705.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">个位数</text>
+  <rect x="390" y="682" width="320" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="705.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">无低温抑制，损伤全速推进</text>
+  <rect x="750" y="456" width="620" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="478.84" font-size="19" fill="#475569" font-weight="700">三、剂量分割（dose fractionation）与剂量加权</text>
+  <rect x="770" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.9" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="789" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">1</text>
+  <rect x="814" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.8380000000000001" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="833" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">2</text>
+  <rect x="858" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.776" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="877" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">3</text>
+  <rect x="902" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.714" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="921" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">4</text>
+  <rect x="946" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.652" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="965" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">5</text>
+  <rect x="990" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.5900000000000001" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1009" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">6</text>
+  <rect x="1034" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.528" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1053" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">7</text>
+  <rect x="1078" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.466" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1097" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">8</text>
+  <rect x="1122" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.404" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1141" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">9</text>
+  <rect x="1166" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.34199999999999997" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1185" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">10</text>
+  <rect x="1210" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.28" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1229" y="570" font-size="8.5" fill="#64748b" text-anchor="middle">11</text>
+  <rect x="1254" y="500" width="38" height="52" rx="3" fill="#0369a1" fill-opacity="0.21800000000000008" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1296" y="572" font-size="13" fill="#64748b">…</text>
+  <text x="1030" y="592" font-size="10.5" fill="#475569" text-anchor="middle">电影 50–60 帧：每帧约 1 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">，总曝约 10 s（每帧 0.1–0.2 s）</tspan></text>
+  <rect x="819.717975" y="622.225" width="120.56405" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="880" y="636.14" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">早帧 → 高频全权重</text>
+  <rect x="1069.717975" y="622.225" width="120.56405" height="19.55" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1130" y="636.14" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">晚帧 → 仅贡献低频</text>
+  <text x="770" y="668" font-size="10.5" fill="#475569">Grant 与 Grigorieff（2015）：B 因子每 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6"> 增约 1–2 Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">，逐帧逐频率赋权——晚帧高频不是「噪声大」，</tspan></text>
+  <text x="770" y="683" font-size="10.5" fill="#475569">而是「结构已不在」。</text>
+  <text x="1040" y="712" font-size="10.5" fill="#64748b" text-anchor="middle">计数模式以约 5–10 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/像素/秒 上限规避重合损失</tspan></text>
+  <rect x="30" y="750" width="1340" height="228" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="772.84" font-size="19" fill="#475569" font-weight="700">四、损伤时序与最优剂量：信噪累积 × 损伤衰减</text>
+  <rect x="60" y="800" width="420" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="60" y1="950" x2="60" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="972" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="270" y1="950" x2="270" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="270" y="972" font-size="13" fill="#64748b" text-anchor="middle">50</text>
+  <line x1="480" y1="950" x2="480" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="480" y="972" font-size="13" fill="#64748b" text-anchor="middle">100 e<tspan dy="-4.4" font-size="9.4">-</tspan><tspan dy="4.4">/Å</tspan><tspan dy="-4.4" font-size="9.4">2</tspan></text>
+  <line x1="54" y1="800" x2="60" y2="800" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="804" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
+  <line x1="54" y1="875" x2="60" y2="875" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="879" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="54" y1="950" x2="60" y2="950" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="954" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <path d="M60,950 C67.0,942.0 88.0,913.3 102,902 C116.0,890.8 130.0,888.3 144,882.5 C158.0,876.8 172.0,872.0 186,867.5 C200.0,863.0 214.0,859.5 228,855.5 C242.0,851.5 256.0,847.0 270,843.5 C284.0,840.0 298.0,837.8 312,834.5 C326.0,831.3 340.0,827.0 354,824 C368.0,821.0 382.0,819.3 396,816.5 C410.0,813.8 424.0,810.3 438,807.5 C452.0,804.8 473.0,801.3 480,800" fill="none" stroke="#059669" stroke-width="2.2"/>
+  <path d="M60,800 C67.0,801.3 88.0,804.5 102,807.5 C116.0,810.5 130.0,814.0 144,818 C158.0,822.0 172.0,826.5 186,831.5 C200.0,836.5 214.0,842.8 228,848 C242.0,853.3 256.0,858.0 270,863 C284.0,868.0 298.0,873.3 312,878 C326.0,882.8 340.0,887.3 354,891.5 C368.0,895.8 382.0,900.0 396,903.5 C410.0,907.0 424.0,909.8 438,912.5 C452.0,915.3 473.0,918.8 480,920" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <path d="M60,950 C67.0,942.5 88.0,915.0 102,905 C116.0,895.0 130.0,893.3 144,890 C158.0,886.8 172.0,886.3 186,885.5 C200.0,884.8 214.0,885.0 228,885.5 C242.0,886.0 256.0,887.0 270,888.5 C284.0,890.0 298.0,892.5 312,894.5 C326.0,896.5 340.0,898.3 354,900.5 C368.0,902.8 382.0,905.8 396,908 C410.0,910.3 424.0,912.0 438,914 C452.0,916.0 473.0,919.0 480,920" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <circle cx="228" cy="885" r="4.5" fill="#0369a1"/>
+  <rect x="198.737118" y="785.65" width="142.52576399999998" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="270" y="798.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">最优剂量 ≈ 40–60 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <text x="320" y="842" font-size="10" fill="#059669">√D 信噪累积</text>
+  <text x="320" y="858" font-size="10" fill="#dc2626">exp(−B·D·s<tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4">/4) 损伤衰减</tspan></text>
+  <text x="320" y="874" font-size="10" fill="#075985">乘积（中等剂量取极大）</text>
+  <text x="620" y="838" font-size="13" fill="#1e293b" font-weight="700">损伤时序（谁先死）</text>
+  <rect x="620" y="852" width="164" height="48" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="702" y="872" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="600">高分辨衍射强度</text>
+  <text x="702" y="890" font-size="9" fill="#64748b" text-anchor="middle">最先衰减</text>
+  <line x1="786" y1="876" x2="798" y2="876" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="800" y="852" width="164" height="48" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="882" y="872" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">晶格有序下降</text>
+  <line x1="966" y1="876" x2="978" y2="876" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="980" y="852" width="164" height="48" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1062" y="872" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">化学键断裂、交联</text>
+  <line x1="1146" y1="876" x2="1158" y2="876" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="1160" y="852" width="164" height="48" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1242" y="872" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">去羧与质量损失</text>
+  <text x="1242" y="890" font-size="9" fill="#64748b" text-anchor="middle">最晚出现</text>
+  <text x="620" y="928" font-size="10.5" fill="#475569">B 因子每 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6"> 约增 1–2 Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">；Grant 与 Grigorieff（2015）证明最优曝光随频率分层——「先定分辨率目标、再定剂量」，而非先拍后算。</tspan></text>
+</svg>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">对称操作、Sohncke 群与系统消光</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">螺旋轴2<tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">＝旋转180°＋平移半周期；滑移面＝反映＋分数平移；65个Sohncke手性群⊂230空间群；P2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">使0k0奇数消光、P2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">三轴仅偶、C心h+k奇全消</tspan></text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、螺旋轴、滑移面与记号解读</text>
+  <line x1="180" y1="190" x2="180" y2="430" stroke="#475569" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="166.409648" y="171.8" width="27.180704000000002" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="180" y="186.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">2<tspan dy="2.6" font-size="8.6">1</tspan></text>
+  <polygon points="203,225 225,233 209,243" fill="#e0f2fe" stroke="#075985" stroke-width="1.8"/>
+  <circle cx="220" cy="230" r="2.6" fill="#075985"/>
+  <polygon points="157,315 135,307 151,297" fill="#e0f2fe" stroke="#075985" stroke-width="1.8"/>
+  <circle cx="140" cy="310" r="2.6" fill="#075985"/>
+  <polygon points="203,365 225,373 209,383" fill="#e0f2fe" stroke="#075985" stroke-width="1.8"/>
+  <circle cx="220" cy="370" r="2.6" fill="#075985"/>
+  <line x1="120" y1="235" x2="136" y2="235" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="120" y1="305" x2="136" y2="305" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="120" y1="375" x2="136" y2="375" stroke="#64748b" stroke-width="1.4"/>
+  <text x="116" y="239" font-size="10" fill="#64748b" text-anchor="end">0</text>
+  <text x="116" y="309" font-size="10" fill="#64748b" text-anchor="end">c/2</text>
+  <text x="116" y="379" font-size="10" fill="#64748b" text-anchor="end">c</text>
+  <text x="80" y="428" font-size="10" fill="#475569">旋转 180°＋沿轴平移 c/2：</text>
+  <text x="80" y="442" font-size="10" fill="#475569">投影上左右交替</text>
+  <line x1="360" y1="190" x2="360" y2="430" stroke="#475569" stroke-width="2"/>
+  <rect x="349.1684" y="171.8" width="21.6632" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="360" y="186.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">2</text>
+  <polygon points="383,260 405,268 389,278" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.8"/>
+  <circle cx="400" cy="265" r="2.6" fill="#134e4a"/>
+  <polygon points="337,280 315,272 331,262" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.8"/>
+  <circle cx="320" cy="275" r="2.6" fill="#134e4a"/>
+  <polygon points="383,350 405,358 389,368" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.8"/>
+  <circle cx="400" cy="355" r="2.6" fill="#134e4a"/>
+  <polygon points="337,370 315,362 331,352" fill="#ccfbf1" stroke="#134e4a" stroke-width="1.8"/>
+  <circle cx="320" cy="365" r="2.6" fill="#134e4a"/>
+  <text x="280" y="428" font-size="10" fill="#475569">纯旋转 2 次：同高度左右成对，</text>
+  <text x="280" y="442" font-size="10" fill="#475569">不沿轴平移</text>
+  <line x1="470" y1="300" x2="650" y2="300" stroke="#475569" stroke-width="2" stroke-dasharray="9 5"/>
+  <rect x="451.7864" y="271.8" width="20.4272" height="20.4" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="462" y="286.32" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">a</text>
+  <polygon points="489,245 511,253 495,263" fill="#fce7f3" stroke="#831843" stroke-width="1.8"/>
+  <circle cx="506" cy="250" r="2.6" fill="#831843"/>
+  <polygon points="545,355 567,347 551,337" fill="#fce7f3" stroke="#831843" stroke-width="1.8"/>
+  <circle cx="562" cy="350" r="2.6" fill="#831843"/>
+  <polygon points="601,245 623,253 607,263" fill="#fce7f3" stroke="#831843" stroke-width="1.8"/>
+  <circle cx="618" cy="250" r="2.6" fill="#831843"/>
+  <line x1="500" y1="268" x2="556" y2="332" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="556" y1="322" x2="612" y2="262" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <text x="558" y="375" font-size="10" fill="#475569" text-anchor="middle">反映＋沿面内平移 a/2</text>
+  <text x="60" y="466" font-size="10.5" fill="#475569">读记号：P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">＝简单格子＋沿 a、b、c 各一根 2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 螺旋轴（三轴垂直）；P2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 仅沿 b 有 2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">；C222</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">＝C 心格子加 2、2、2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">；</tspan></text>
+  <text x="60" y="481.5" font-size="10.5" fill="#475569">P4<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2＝沿 c 的 4</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 加 a、b 的 2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 与 2。n</tspan><tspan dy="2.3" font-size="7.6">m</tspan><tspan dy="-2.3"> 读作「旋转 2π/n 后沿轴平移 m/n 周期」：3</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 转 120° 移 1/3，4</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 转 90° 移 1/4，</tspan></text>
+  <text x="60" y="497" font-size="10.5" fill="#475569">6<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 转 60° 移 1/6；3</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 与 3</tspan><tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">、4</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 与 4</tspan><tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3"> 互为镜像操作，恰与生物分子手性呼应。</tspan></text>
+  <rect x="710" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、晶体学限制定理与 65/230：手性的宿命</text>
+  <polygon points="760,215 760,199 776,215" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="760,215 760,231 744,215" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="760" cy="215" r="3" fill="#0f766e"/>
+  <text x="760" y="249" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">2 次</text>
+  <text x="760" y="265" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">✓</text>
+  <polygon points="880,215 880,199 893.856406460551,207" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="880,215 893.856406460551,223 880,231" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="880,215 866.143593539449,223 866.143593539449,207" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="880" cy="215" r="3" fill="#0f766e"/>
+  <text x="880" y="249" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">3 次</text>
+  <text x="880" y="265" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">✓</text>
+  <polygon points="1000,215 1000,199 1011.3137084989847,203.68629150101523" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1000,215 1016,215 1011.3137084989847,226.31370849898477" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1000,215 1000,231 988.6862915010153,226.31370849898477" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1000,215 984,215 988.6862915010153,203.68629150101523" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1000" cy="215" r="3" fill="#0f766e"/>
+  <text x="1000" y="249" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">4 次</text>
+  <text x="1000" y="265" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">✓</text>
+  <polygon points="1120,215 1120,199 1128,201.14359353944897" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1120,215 1133.856406460551,207 1136,215" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1120,215 1133.856406460551,223 1128,228.85640646055103" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1120,215 1120,231 1112,228.85640646055103" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1120,215 1106.143593539449,223 1104,215" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <polygon points="1120,215 1106.143593539449,207 1112,201.14359353944897" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1120" cy="215" r="3" fill="#0f766e"/>
+  <text x="1120" y="249" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">6 次</text>
+  <text x="1120" y="265" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">✓</text>
+  <polygon points="1250,215 1250,199 1259.4045640366796,202.05572809000085" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <polygon points="1250,215 1265.2169042607225,210.05572809000085 1265.2169042607225,219.94427190999915" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <polygon points="1250,215 1259.4045640366796,227.94427190999915 1250,231" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <polygon points="1250,215 1240.5954359633204,227.94427190999915 1234.7830957392775,219.94427190999917" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <polygon points="1250,215 1234.7830957392775,210.05572809000085 1240.5954359633204,202.05572809000085" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="1250" cy="215" r="3" fill="#dc2626"/>
+  <text x="1250" y="249" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">5 次</text>
+  <text x="1250" y="265" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">✗</text>
+  <text x="730" y="296" font-size="10.5" fill="#475569">晶体学限制定理：与平移周期相容的旋转轴仅 1、2、3、4、6 次——五次轴无法与任何二维点阵相容。准晶体</text>
+  <text x="730" y="311" font-size="10.5" fill="#475569">（Shechtman 1982 年发现、2011 年诺贝尔化学奖）以五次、十次对称震动学界：有长程序却无平移周期，</text>
+  <text x="730" y="326" font-size="10.5" fill="#475569">是「晶体」定义被改写的著名例外。</text>
+  <rect x="730" y="482.5" width="76.5" height="19.5" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="744" y="506.5" font-size="11" fill="#1e293b">7 晶系</text>
+  <rect x="812.5" y="463" width="76.5" height="19.5" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="826.5" y="487" font-size="11" fill="#1e293b">14 布拉维格子</text>
+  <rect x="895" y="443.5" width="76.5" height="19.5" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="909" y="467.5" font-size="11" fill="#1e293b">32 点群</text>
+  <rect x="977.5" y="424" width="76.5" height="19.5" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="991.5" y="448" font-size="11" fill="#1e293b">230 空间群</text>
+  <rect x="1080" y="388" width="268" height="120" rx="10" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1214" y="412" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">65 个 Sohncke 群</text>
+  <text x="1096" y="436" font-size="10" fill="#134e4a">仅含纯旋转、</text>
+  <text x="1096" y="450" font-size="10" fill="#134e4a">螺旋轴与平移——L-氨基酸与 D-核糖构成的手性分子只能栖身其中</text>
+  <text x="1096" y="464" font-size="10" fill="#134e4a">（1879 年索恩克枚举）；镜面、滑移面、</text>
+  <text x="1096" y="478" font-size="10" fill="#134e4a">反演被禁止。</text>
+  <rect x="1097.5" y="517.5" width="232.9999999999999" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1214" y="529.6" font-size="10" fill="#64748b" text-anchor="middle">忽略反常散射：衍射点对称归并为 11 个 Laue 群</text>
+  <rect x="30" y="552" width="1340" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="574.84" font-size="19" fill="#475569" font-weight="700">三、系统消光：空间群判定的第一实验依据</text>
+  <rect x="60" y="618" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="645.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">空间群</text>
+  <rect x="210" y="618" width="330" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="645.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">特征对称元素</text>
+  <rect x="540" y="618" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="645.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">Sohncke 手性群</text>
+  <rect x="750" y="618" width="610" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="645.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表性系统消光</text>
+  <rect x="60" y="662" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="684.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">P2<tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="210" y="662" width="330" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="684.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">沿 b 的 2<tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8"> 螺旋轴</tspan></text>
+  <rect x="540" y="662" width="210" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="684.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">是</text>
+  <rect x="750" y="662" width="610" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="684.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">0k0 仅 k 为偶（奇数消光）</text>
+  <rect x="60" y="696" width="1300" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="696" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="718.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">P2<tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8">2</tspan><tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8">2</tspan><tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="210" y="696" width="330" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="718.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">三根互相垂直的 2<tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="540" y="696" width="210" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="718.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">是</text>
+  <rect x="750" y="696" width="610" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="718.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">h00、0k0、00l 仅偶</text>
+  <rect x="60" y="730" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="752.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">C222<tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="210" y="730" width="330" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="752.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">C 心加对称轴组合</text>
+  <rect x="540" y="730" width="210" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="752.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">是</text>
+  <rect x="750" y="730" width="610" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="752.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">h+k 为奇数全消</text>
+  <rect x="60" y="764" width="1300" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="764" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="786.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">P6<tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="210" y="764" width="330" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="786.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">沿 c 的 6<tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8"> 螺旋轴</tspan></text>
+  <rect x="540" y="764" width="210" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="786.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">是</text>
+  <rect x="750" y="764" width="610" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="786.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">00l 仅 l 为 6 的倍数</text>
+  <rect x="60" y="798" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="135" y="820.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">P2<tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8">/c（对照）</tspan></text>
+  <rect x="210" y="798" width="330" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="820.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">2<tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8"> 加 c 滑移面</tspan></text>
+  <rect x="540" y="798" width="210" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="645" y="820.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">否（含滑移与反演）</text>
+  <rect x="750" y="798" width="610" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="820.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">0k0 仅偶；h0l 仅 l 偶</text>
+  <text x="60" y="856" font-size="10.5" fill="#475569">消光机理一句话：分数平移使相邻等效位置对某指标的散射波相位差恰为 π 的奇数倍，</text>
+  <text x="60" y="871.5" font-size="10.5" fill="#475569">求和归零——理解它即可对任意记号自行推出大部分消光条件。消光只能缩小候选范围：P4<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 与 P4</tspan><tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3"> 消光模式部分相同，</tspan></text>
+  <text x="60" y="887" font-size="10.5" fill="#475569">最终判定靠强度统计甚至解析后回验。</text>
+  <text x="730" y="856" font-size="10.5" fill="#475569">蛋白晶体空间群高度集中：P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 约占四分之一强、P2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 约一成半、C2 次之，三者合计约半数——手性分子只能以一般位置入格，</tspan></text>
+  <text x="730" y="871.5" font-size="10.5" fill="#475569">低对称群一般位置多重数为 1，堆积限制最少。小分子最常见的 P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">/c 含滑移与反演，蛋白晶体学家终其一生几乎不会遇到。</tspan></text>
+</svg>

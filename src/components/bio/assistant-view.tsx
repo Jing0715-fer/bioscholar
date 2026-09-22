@@ -758,7 +758,7 @@ export function AssistantView() {
                 AI 智能助教
               </h1>
               <p className="mt-1 hidden text-xs text-muted-foreground sm:block">
-                覆盖九大基础学科的生物学专家助教
+                覆盖十二大基础学科的生物学专家助教
               </p>
             </div>
             <span

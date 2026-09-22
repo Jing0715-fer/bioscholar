@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">亲和层析原理：IMAC 螯合镍柱与 His<tspan dy="7.3" font-size="23.8">6</tspan><tspan dy="-7.3"> 标签配位识别</tspan></text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">IDA三齿／NTA四齿螯合Ni<tspan dy="-5.8" font-size="12.2">2+</tspan><tspan dy="5.8">，余位由咪唑基补位；咪唑20–250mM梯度竞争洗脱（洗脱区间150–500mM，实例250mM）；GST、MBP、Strep、ProteinA各成体系</tspan></text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、IMAC 配位原理：螯合金属的「余位」识别</text>
+  <text x="50" y="178" font-size="11" fill="#475569">IDA（次氮基三乙酸）占 3 个配位点，余 3 个空位招引咪唑——容量大、</text>
+  <text x="50" y="193" font-size="11" fill="#475569">金属固着较松；Ni 容量高而通用，Co（Talon 类介质）配位更紧、容量略低、</text>
+  <text x="50" y="208" font-size="11" fill="#475569">对宿主杂蛋白更挑剔，常用于二次纯化。</text>
+  <rect x="460" y="168" width="220" height="104" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="474" y="188" font-size="11" fill="#475569" font-weight="700">NTA：四齿占位（余 2 空位）</text>
+  <line x1="480" y1="208" x2="545" y2="228" stroke="#0f766e" stroke-width="2"/>
+  <line x1="480" y1="225" x2="545" y2="233" stroke="#0f766e" stroke-width="2"/>
+  <line x1="480" y1="242" x2="545" y2="238" stroke="#0f766e" stroke-width="2"/>
+  <line x1="480" y1="259" x2="545" y2="243" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="556" cy="236" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="556" y="240" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">Ni</text>
+  <circle cx="576" cy="226" r="5.5" fill="none" stroke="#64748b" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <circle cx="576" cy="246" r="5.5" fill="none" stroke="#64748b" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="470" y="288" font-size="10" fill="#64748b">金属固着牢固、泄漏少；</text>
+  <text x="470" y="301.5" font-size="10" fill="#64748b">容量与结合力略降——同一蛋白常需更高咪唑才能洗脱。</text>
+  <circle cx="150" cy="352" r="62" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+  <circle cx="171.1347389212026" cy="375.4998072888245" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="145.61928719395215" cy="381.7499443135741" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="122.76111707140426" cy="369.9541643231187" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="116.4256878230986" cy="347.26762917570255" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="130.45598581786888" cy="327.4516866680677" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="156.34142056036757" cy="322.52642162127" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="178.38023468453144" cy="335.4794337220709" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="150" y="432" font-size="10.5" fill="#64748b" text-anchor="middle">琼脂糖介质珠（共价偶联螯合配基）</text>
+  <line x1="204" y1="322" x2="316" y2="312" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="212" y1="352" x2="311" y2="322" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="204" y1="382" x2="316" y2="332" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="258" y="300" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">IDA 三齿</text>
+  <circle cx="337" cy="322" r="20" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="337" y="326.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">Ni<tspan dy="-4.1" font-size="8.6">2+</tspan></text>
+  <circle cx="357.6507390566812" cy="304.60612244458235" r="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="364" cy="322" r="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="357.6507390566812" cy="339.39387755541765" r="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <ellipse cx="565" cy="372" rx="62" ry="44" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="585" y="376" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">目的蛋白</text>
+  <circle cx="508" cy="344" r="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="487" cy="342" r="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="466" cy="340" r="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="445" cy="338" r="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="424" cy="336" r="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <circle cx="403" cy="334" r="8" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="455" y="322" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">His<tspan dy="2.3" font-size="7.6">6</tspan><tspan dy="-2.3"> 标签（咪唑基）</tspan></text>
+  <line x1="395" y1="333" x2="358" y2="340" stroke="#be185d" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <text x="376" y="316" font-size="10" fill="#be185d" text-anchor="middle">补位配位</text>
+  <rect x="159.37249999999997" y="453.075" width="401.25500000000005" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="360" y="465.78" font-size="10.5" fill="#991b1b" text-anchor="middle">pH 低于 6：咪唑质子化（pKa 约 6）→ 失去配位——「低 pH 不结合」是第一条纪律</text>
+  <text x="50" y="500" font-size="11" fill="#475569">Porath 等 1975 年以 IDA 螯合铜锌首创「金属螯合亲和层析」；Hochuli 等 1987 年改用 NTA 配基并配合基因工程 His 标签，</text>
+  <text x="50" y="515" font-size="11" fill="#475569">把它推上重组蛋白纯化的王座。缓冲液须维持 pH 不低于 7；偏酸或含弱螯合组分的缓冲液长时间运行时镍会逐渐剥落，</text>
+  <text x="50" y="530" font-size="11" fill="#475569">洗脱组分必要时以丁二酮肟比色或 ICP-MS 核查。</text>
+  <rect x="750" y="132" width="620" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、咪唑梯度洗脱与操作流程</text>
+  <rect x="780" y="180" width="550" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="780" y1="292.5" x2="1330" y2="292.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="917.5" y1="330" x2="917.5" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="780" y1="255" x2="1330" y2="255" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1055" y1="330" x2="1055" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="780" y1="217.5" x2="1330" y2="217.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1192.5" y1="330" x2="1192.5" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="780" y1="330" x2="780" y2="336" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="352" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="917.5" y1="330" x2="917.5" y2="336" stroke="#475569" stroke-width="1.8"/>
+  <text x="917.5" y="352" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="1055" y1="330" x2="1055" y2="336" stroke="#475569" stroke-width="1.8"/>
+  <text x="1055" y="352" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="1192.5" y1="330" x2="1192.5" y2="336" stroke="#475569" stroke-width="1.8"/>
+  <text x="1192.5" y="352" font-size="13" fill="#64748b" text-anchor="middle">15</text>
+  <line x1="1330" y1="330" x2="1330" y2="336" stroke="#475569" stroke-width="1.8"/>
+  <text x="1330" y="352" font-size="13" fill="#64748b" text-anchor="middle">20</text>
+  <text x="1055" y="374" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">洗脱体积（柱体积 CV）</text>
+  <text x="734" y="255" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">A<tspan dy="3.3" font-size="10.8">280</tspan></text>
+  <line x1="785" y1="322" x2="1325" y2="178" stroke="#d97706" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="790" y="314" font-size="10" fill="#92400e" font-weight="700">20 mM</text>
+  <circle cx="1215" cy="207" r="4.5" fill="#d97706"/>
+  <text x="1215" y="193" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">250 mM（实例洗脱浓度）</text>
+  <path d="M 829.6,326 L 829.6,325.8 L 832.6,325.7 L 835.6,325.5 L 838.6,325.3 L 841.6,325.0 L 844.6,324.6 L 847.6,324.0 L 850.6,323.3 L 853.6,322.3 L 856.6,321.1 L 859.6,319.7 L 862.6,318.0 L 865.6,316.0 L 868.6,313.7 L 871.6,311.2 L 874.6,308.5 L 877.6,305.8 L 880.6,303.0 L 883.6,300.2 L 886.6,297.8 L 889.6,295.6 L 892.6,293.9 L 895.6,292.7 L 898.6,292.1 L 901.6,292.1 L 904.6,292.7 L 907.6,294.0 L 910.6,295.7 L 913.6,297.9 L 916.6,300.4 L 919.6,303.1 L 922.6,305.9 L 925.6,308.7 L 928.6,311.4 L 931.6,313.9 L 934.6,316.1 L 937.6,318.1 L 940.6,319.8 L 943.6,321.2 L 946.6,322.4 L 949.6,323.3 L 952.6,324.0 L 955.6,324.6 L 958.6,325.0 L 961.6,325.3 L 964.6,325.5 L 967.6,325.7 L 970.4,326 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <path d="M 902.4,326 L 902.4,325.9 L 905.4,325.8 L 908.4,325.6 L 911.4,325.4 L 914.4,325.1 L 917.4,324.7 L 920.4,324.0 L 923.4,323.2 L 926.4,322.1 L 929.4,320.8 L 932.4,319.2 L 935.4,317.4 L 938.4,315.3 L 941.4,313.1 L 944.4,310.9 L 947.4,308.8 L 950.4,306.9 L 953.4,305.4 L 956.4,304.4 L 959.4,304.0 L 962.4,304.2 L 965.4,305.0 L 968.4,306.3 L 971.4,308.0 L 974.4,310.0 L 977.4,312.2 L 980.4,314.4 L 983.4,316.5 L 986.4,318.5 L 989.4,320.2 L 992.4,321.6 L 995.4,322.8 L 998.4,323.7 L 1001.4,324.4 L 1004.4,324.9 L 1007.4,325.3 L 1010.4,325.6 L 1013.4,325.7 L 1016.4,325.8 L 1017.6,326 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <path d="M 1106.2,326 L 1106.2,325.4 L 1109.2,325.1 L 1112.2,324.9 L 1115.2,324.5 L 1118.2,324.1 L 1121.2,323.6 L 1124.2,322.9 L 1127.2,322.2 L 1130.2,321.2 L 1133.2,320.0 L 1136.2,318.6 L 1139.2,317.0 L 1142.2,315.1 L 1145.2,312.9 L 1148.2,310.3 L 1151.2,307.4 L 1154.2,304.2 L 1157.2,300.5 L 1160.2,296.5 L 1163.2,292.2 L 1166.2,287.4 L 1169.2,282.4 L 1172.2,277.1 L 1175.2,271.6 L 1178.2,265.9 L 1181.2,260.1 L 1184.2,254.3 L 1187.2,248.7 L 1190.2,243.2 L 1193.2,238.1 L 1196.2,233.3 L 1199.2,229.1 L 1202.2,225.4 L 1205.2,222.4 L 1208.2,220.1 L 1211.2,218.7 L 1214.2,218.0 L 1217.2,218.2 L 1220.2,219.3 L 1223.2,221.1 L 1226.2,223.7 L 1229.2,227.0 L 1232.2,231.0 L 1235.2,235.5 L 1238.2,240.4 L 1241.2,245.7 L 1244.2,251.3 L 1247.2,257.0 L 1250.2,262.8 L 1253.2,268.5 L 1256.2,274.2 L 1259.2,279.6 L 1262.2,284.8 L 1265.2,289.7 L 1268.2,294.2 L 1271.2,298.4 L 1274.2,302.3 L 1277.2,305.7 L 1280.2,308.8 L 1283.2,311.6 L 1286.2,313.9 L 1289.2,316.0 L 1292.2,317.8 L 1295.2,319.3 L 1298.2,320.6 L 1301.2,321.7 L 1304.2,322.5 L 1307.2,323.3 L 1310.2,323.9 L 1313.2,324.3 L 1316.2,324.7 L 1319.2,325.0 L 1322.2,325.3 L 1323.8,326 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="930" y="268" font-size="10.5" fill="#64748b" text-anchor="middle">弱结合杂蛋白</text>
+  <text x="1090" y="230" font-size="11.5" fill="#075985" text-anchor="end" font-weight="700">目标 His 融合蛋白</text>
+  <rect x="798.09" y="362.65" width="123.82" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="860" y="375.96" font-size="11" fill="#1e293b" text-anchor="middle">① 平衡结合 10–40 mM</text>
+  <rect x="1024.09" y="362.65" width="101.82" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1075" y="375.96" font-size="11" fill="#1e293b" text-anchor="middle">② 洗涤 20–60 mM</text>
+  <rect x="1213.27" y="362.65" width="137.45999999999998" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1282" y="375.96" font-size="11" fill="#075985" text-anchor="middle">③ 梯度洗脱 150–500 mM</text>
+  <rect x="868.69" y="394.65" width="132.62" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="935" y="407.96" font-size="11" fill="#1e293b" text-anchor="middle">④ EDTA 20–50 mM 剥镍</text>
+  <rect x="1117.42" y="394.65" width="145.15999999999997" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1190" y="407.96" font-size="11" fill="#1e293b" text-anchor="middle">⑤ 硫酸镍 50–100 mM 重挂</text>
+  <text x="770" y="436" font-size="11" fill="#475569">咪唑在 280 nm 有吸收，高浓度时监测基线上移——读峰须扣除参比。动态结合容量约 10–50 mg/mL，</text>
+  <text x="770" y="451" font-size="11" fill="#475569">上样按容量七至八成；捕获按停留时间 1–4 分钟设定流速（1 mL 预装柱即 0.5–1 mL/min），宁可放慢换容量。</text>
+  <text x="770" y="496" font-size="11" fill="#475569">典型案例：1 L BL21 培养物裂解得目的 His 融合蛋白 50–150 mg；5 mL 镍柱（标称 DBC 40 mg/mL，</text>
+  <text x="770" y="511" font-size="11" fill="#475569">按八折分两轮上样）以 250 mM 咪唑洗脱，两小时收得 60–100 mg、SDS-PAGE 纯度 85–92%——「两小时九成纯」；</text>
+  <text x="770" y="526" font-size="11" fill="#475569">再经离子交换与排阻精纯，全程收率约 50–60%。</text>
+  <rect x="30" y="578" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、其他亲和体系：配基—洗脱对照</text>
+  <rect x="50" y="618" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="645.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">系统</text>
+  <rect x="200" y="618" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="300" y="645.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">固定相配基</text>
+  <rect x="400" y="618" width="320" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="645.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">洗脱方式</text>
+  <rect x="720" y="618" width="630" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1035" y="645.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="50" y="662" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="687.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">GST 融合</text>
+  <rect x="200" y="662" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="300" y="687.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">谷胱甘肽</text>
+  <rect x="400" y="662" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="687.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">还原型谷胱甘肽 5–20 mM</text>
+  <rect x="720" y="662" width="630" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1035" y="687.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">特异性洗脱；标签 26 kDa 且二聚</text>
+  <rect x="50" y="702" width="1300" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="702" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="727.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">MBP 融合</text>
+  <rect x="200" y="702" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="300" y="727.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">直链淀粉</text>
+  <rect x="400" y="702" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="727.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">麦芽糖 10 mM</text>
+  <rect x="720" y="702" width="630" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1035" y="727.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">特异性洗脱；42 kDa 增溶标签</text>
+  <rect x="50" y="742" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="767.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Strep-tag II</text>
+  <rect x="200" y="742" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="300" y="767.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">链霉亲和素变体</text>
+  <rect x="400" y="742" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="767.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">desthiobiotin 2.5 mM</text>
+  <rect x="720" y="742" width="630" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1035" y="767.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">条件最温和，可用 HABA 再生</text>
+  <rect x="50" y="782" width="1300" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="782" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="807.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">Protein A/G</text>
+  <rect x="200" y="782" width="200" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="300" y="807.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">重组 Protein A/G</text>
+  <rect x="400" y="782" width="320" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="560" y="807.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">甘氨酸 pH 2.5–3.5</text>
+  <rect x="720" y="782" width="630" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1035" y="807.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">抗体类别级捕获；须以 1 M Tris 快速中和</text>
+  <rect x="30" y="844" width="1340" height="126" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="866.84" font-size="19" fill="#475569" font-weight="700">四、洗脱方式两型与纯度天花板</text>
+  <rect x="214.5" y="868.65" width="251" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="340" y="881.96" font-size="11" fill="#065f46" text-anchor="middle">特异性洗脱＝游离配体竞争（温和、活性无忧）</text>
+  <rect x="882.94" y="868.65" width="294.12" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1030" y="881.96" font-size="11" fill="#92400e" text-anchor="middle">严苛洗脱＝pH／离子强度强制解离（低 pH 后立即中和）</text>
+  <text x="50" y="906" font-size="11" fill="#475569">链霉亲和素—生物素解离常数低至 10<tspan dy="-3.7" font-size="7.9">-14</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">-15</tspan><tspan dy="3.7"> M，改造为 desthiobiotin 可逆体系后兼得刚性亲和与温和洗脱。宿主杂蛋白 SlyD（约 25 kDa，富含组氨酸 C 端）与 GroEL（约 57 kDa 伴娘蛋白）常挂镍柱，须经离子交换与排阻清除；一步亲和可至 90% 以上纯度，</tspan></text>
+  <text x="50" y="922" font-size="11" fill="#475569">标准流程再接酶切去标签、二次亲和负吸附、IEX 精纯与 SEC 终纯，推至电泳级 95% 以上。</text>
+</svg>

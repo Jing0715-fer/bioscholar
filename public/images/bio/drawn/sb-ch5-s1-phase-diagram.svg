@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">溶解度与结晶相图：四区、Cohn 方素与蒸气扩散轨迹</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">相图四区（不饱和/亚稳/成核/沉淀）；logS=β−K<tspan dy="3.7" font-size="12.2">s</tspan><tspan dy="-3.7">·I；Hofmeister序列硫酸铵最强；悬滴沿蒸汽压差爬升过饱和、回落溶解度线生长——成核要快、生长要慢的两幕剧</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、结晶相图四区：液滴的地形图</text>
+  <line x1="90" y1="480" x2="650" y2="480" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="480" x2="90" y2="180" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="370" y="506" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">沉淀剂浓度（PEG / 盐）</text>
+  <text x="60" y="330" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="600">蛋白溶解度</text>
+  <path d="M 110,454 Q 300,420 420,375 Q 530,335 590,275" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="475" y="305" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">溶解度线</text>
+  <rect x="147" y="340.65" width="106" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="200" y="353.96" font-size="11" fill="#475569" text-anchor="middle">不饱和区（溶解）</text>
+  <rect x="330.015" y="410.65" width="119.97" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="390" y="423.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">亚稳区（只长不生）</text>
+  <rect x="483.2325" y="340.225" width="53.535000000000004" height="19.55" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="510" y="354.14" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">成核区</text>
+  <rect x="527.6975" y="230.225" width="124.605" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="590" y="244.14" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">沉淀区（无序聚集）</text>
+  <path d="M 150,270 Q 330,290 440,385" fill="none" stroke="#0369a1" stroke-width="2.4" stroke-dasharray="8 5" marker-end="url(#arr-acc)"/>
+  <text x="220" y="248" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">悬滴轨迹：从低过饱和走向平衡</text>
+  <circle cx="440" cy="385" r="5" fill="#0369a1" stroke="none"/>
+  <text x="450" y="396" font-size="10" fill="#475569" text-anchor="middle">终点：回到溶解度线附近缓慢生长</text>
+  <text x="60" y="176" font-size="11" fill="#475569">蛋白溶解度随盐浓度先升后降（盐溶到盐析）；Cohn 方程 log S = β − Ks·I 刻画盐析段直线。</text>
+  <text x="60" y="192" font-size="11" fill="#475569">过饱和度 S = c/c* 是相图的垂直驱动力：成核区自发成核，亚稳区只允许已有晶体生长——晶种技术的全部原理。</text>
+  <rect x="710" y="132" width="660" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Cohn 方程与 Hofmeister 序列</text>
+  <rect x="700.636892" y="178.95" width="118.72621600000001" height="22.099999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="760" y="194.68" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">log S = β − K<tspan dy="2.9" font-size="9.4">s</tspan><tspan dy="-2.9">·I</tspan></text>
+  <text x="760" y="224" font-size="10.5" fill="#475569">S 为溶解度，I 为离子强度，K<tspan dy="2.3" font-size="7.6">s</tspan><tspan dy="-2.3"> 为盐析斜率（盐种特异）。</tspan></text>
+  <text x="760" y="252" font-size="11" fill="#1e293b" font-weight="700">Hofmeister 析出能力：</text>
+  <text x="760" y="272" font-size="10.5" fill="#475569">阴离子 SO<tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-5.9" font-size="7.6">2−</tspan><tspan dy="3.6"> &gt; HPO</tspan><tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-5.9" font-size="7.6">2−</tspan><tspan dy="3.6"> &gt; F</tspan><tspan dy="-3.6" font-size="7.6">−</tspan><tspan dy="3.6"> &gt; Cl</tspan><tspan dy="-3.6" font-size="7.6">−</tspan><tspan dy="3.6"> &gt; Br</tspan><tspan dy="-3.6" font-size="7.6">−</tspan><tspan dy="3.6"> &gt; I</tspan><tspan dy="-3.6" font-size="7.6">−</tspan><tspan dy="3.6">；阳离子 NH</tspan><tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-5.9" font-size="7.6">+</tspan><tspan dy="3.6"> &gt; K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> &gt; Na</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> &gt; Mg</tspan><tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6">。硫酸铵以最强的 K</tspan><tspan dy="2.3" font-size="7.6">s</tspan><tspan dy="-2.3"> 成为经典结晶盐。</tspan></text>
+  <text x="1040" y="316" font-size="10.5" fill="#64748b" text-anchor="middle">PEG 走的是另一条路：优先排阻使蛋白有效浓度升高（体积排阻效应）</text>
+  <rect x="710" y="352" width="660" height="210" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="374.84" font-size="19" fill="#475569" font-weight="700">三、溶解度的四个旋钮</text>
+  <rect x="730" y="392" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="419.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">旋钮</text>
+  <rect x="840" y="392" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="419.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">规律</text>
+  <rect x="1100" y="392" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="419.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">结晶学的用法</text>
+  <rect x="730" y="436" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="461.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">盐浓度</text>
+  <rect x="840" y="436" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="461.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">低盐盐溶、高盐盐析（Cohn 线性）</text>
+  <rect x="1100" y="436" width="250" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="461.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">梯度优化沉淀剂浓度</text>
+  <rect x="730" y="476" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="476" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="501.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">pH</text>
+  <rect x="840" y="476" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="501.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">近 pI 净电荷小、溶解度最低</text>
+  <rect x="1100" y="476" width="250" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="501.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">近 pI 微调促结晶，但防不可逆沉淀</text>
+  <rect x="730" y="516" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="541.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">温度</text>
+  <rect x="840" y="516" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="541.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">多数蛋白低温降溶（少数反向如胰岛素）</text>
+  <rect x="1100" y="516" width="250" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="541.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">温度梯度结晶与两温筛选</text>
+  <rect x="730" y="556" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="556" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="581.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">沉淀剂</text>
+  <rect x="840" y="556" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="581.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">PEG 排阻、有机溶剂降介电</text>
+  <rect x="1100" y="556" width="250" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="581.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">稀疏矩阵筛选的首要变量</text>
+  <text x="730" y="548" font-size="10.5" fill="#475569">四个旋钮正交组合构成「结晶空间」：稀疏矩阵筛选（Jancarik 与 Kim 1991 年 48 条件）就是对这片空间的高效抽样。</text>
+  <rect x="30" y="582" width="1340" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="604.84" font-size="19" fill="#475569" font-weight="700">四、从相图读懂结晶实验</text>
+  <rect x="70" y="640" width="240" height="140" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="190" y="660" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">悬滴蒸气扩散</text>
+  <text x="84" y="684" font-size="10.5" fill="#475569">液滴（蛋白＋沉淀剂）与池液存在蒸汽压差，</text>
+  <text x="84" y="699" font-size="10.5" fill="#475569">水分自液滴迁移至池液，</text>
+  <text x="84" y="714" font-size="10.5" fill="#475569">液滴被缓慢浓缩——在相图上沿轨迹爬升，</text>
+  <text x="84" y="729" font-size="10.5" fill="#475569">穿过成核区获得晶核，回落亚稳区长成晶体。</text>
+  <line x1="320" y1="700" x2="360" y2="700" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="370" y="640" width="280" height="140" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="510" y="660" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">时间维度上的两幕剧</text>
+  <text x="384" y="684" font-size="10.5" fill="#475569">第一幕（小时级）：水汽交换把液滴推入过饱和。</text>
+  <text x="384" y="699" font-size="10.5" fill="#475569">第二幕（天级）：晶核消耗溶质，</text>
+  <text x="384" y="714" font-size="10.5" fill="#475569">浓度沿溶解度线缓降，</text>
+  <text x="384" y="729" font-size="10.5" fill="#475569">晶体在亚稳区按台阶机制生长至平衡。</text>
+  <text x="384" y="744" font-size="10.5" fill="#475569">动力学快慢由扩散与表面反应共同限制。</text>
+  <line x1="660" y1="700" x2="700" y2="700" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="710" y="640" width="630" height="140" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1025" y="660" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">教材级数值锚点</text>
+  <text x="724" y="684" font-size="10.5" fill="#475569">临界过饱和是成核区与亚稳区的边界；</text>
+  <text x="724" y="699" font-size="10.5" fill="#475569">成核速率 ~ exp(−ΔG*/kT) 对过饱和度指数敏感——过饱和度提高 1 倍可把成核率推高数个量级，这正是「成核易过头、</text>
+  <text x="724" y="714" font-size="10.5" fill="#475569">生长嫌不足」的数学根源，也是晶种稀释串接（microseeding 10<tspan dy="-3.6" font-size="7.6">−1</tspan><tspan dy="3.6"> 至 10</tspan><tspan dy="-3.6" font-size="7.6">−8</tspan><tspan dy="3.6">）能够精确控制核数的物理基础。</tspan></text>
+  <text x="700" y="820" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">读图即读实验：每块结晶板都是一部行进中的相图——见第 5 章第 2、3 节的成核动力学与实验方法</text>
+</svg>

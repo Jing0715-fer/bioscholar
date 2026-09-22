@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：X射线晶体学 · 绯赤 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#dc2626" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#dc2626" stroke-opacity="0.6" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#dc2626"/>
+
+  <!-- eyebrow -->
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#b91c1c">X-RAY CRYSTALLOGRAPHY · CORE CURRICULUM</text>
+
+  <!-- 书名 -->
+  <text x="421" y="218" text-anchor="middle" font-size="64" font-weight="700" letter-spacing="12" fill="#1c1917">X射线晶体学</text>
+
+  <!-- bio-rule 双分隔线 -->
+  <line x1="300" y1="252" x2="500" y2="252" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="255" y1="259" x2="545" y2="259" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+
+  <!-- 副题 -->
+  <text x="401" y="294" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">Rhodes / Drenth / Rupp 体系 · 12 章 48 节</text>
+
+  <!-- ===== 科学元素线稿带 ===== -->
+  <!-- 布拉格衍射几何：晶面族 + 入射/反射束 -->
+  <g stroke="#dc2626" fill="none" transform="translate(148,392)">
+    <!-- 三层晶面 -->
+    <g stroke-width="1.8">
+      <line x1="-40" y1="-18" x2="40" y2="-18"/>
+      <line x1="-40" y1="0" x2="40" y2="0"/>
+      <line x1="-40" y1="18" x2="40" y2="18"/>
+    </g>
+    <!-- 面间距标注 d -->
+    <path d="M46,-18 L46,0 M46,0 L46,18" stroke-width="0.7" stroke-opacity="0.6"/>
+    <text x="52" y="-6" font-size="10" fill="#b91c1c" stroke="none">d</text>
+    <!-- 入射束与衍射束（对晶面对称） -->
+    <path d="M-58,32 L-18,-18" stroke-width="1.6"/>
+    <path d="M-18,-18 L24,32" stroke-width="1.6"/>
+    <path d="M-30,44 L-24,36" stroke-width="1"/>
+    <!-- 波长弧标 -->
+    <path d="M-52,24 q4,-8 8,0 q4,8 8,0" stroke-width="1" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- 单斜晶胞（P2₁ 空间群示意：a b c 轴与 β 角） -->
+  <g stroke="#dc2626" fill="none" transform="translate(300,386)">
+    <path d="M-30,-26 H26 L38,-14 V28 H-18 L-30,16 Z" stroke-width="1.7"/>
+    <path d="M-30,-26 L-18,-14 H38 M-18,-14 V28" stroke-width="1" stroke-opacity="0.55"/>
+    <!-- 轴标 -->
+    <g stroke="none" font-size="10.5" fill="#b91c1c">
+      <text x="30" y="-28">a</text>
+      <text x="-34" y="18">c</text>
+      <text x="42" y="30">b</text>
+    </g>
+    <!-- β 弧 -->
+    <path d="M-20,8 A14,14 0 0 1 -30,2" stroke-width="0.8" stroke-opacity="0.6"/>
+    <text x="-14" y="10" font-size="9" fill="#b91c1c" stroke="none">β</text>
+    <!-- 二重螺旋轴标记（椭圆+1/2 平移箭头） -->
+    <ellipse cx="6" cy="4" rx="4" ry="9" stroke-width="1.1" stroke-opacity="0.8"/>
+    <text x="2" y="26" font-size="9.5" fill="#b91c1c" stroke="none">2₁</text>
+  </g>
+
+  <!-- 倒易点阵 + Ewald 球（反射球构造） -->
+  <g stroke="#dc2626" fill="none" transform="translate(505,382)">
+    <!-- Ewald 球弧 -->
+    <path d="M-2,46 A46,46 0 0 1 43,12" stroke-width="2.2"/>
+    <!-- 晶体位置（球心）与入射束 -->
+    <circle cx="0" cy="0" r="3" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+    <line x1="-40" y1="-32" x2="-3" y2="-3" stroke-width="1.5"/>
+    <!-- 倒易格点 -->
+    <g fill="#dc2626" fill-opacity="0.6" stroke="none">
+      <circle cx="20" cy="26" r="2.4"/><circle cx="32" cy="34" r="2.4"/><circle cx="44" cy="42" r="2.4"/>
+      <circle cx="14" cy="38" r="2.4"/><circle cx="26" cy="46" r="2.4"/><circle cx="38" cy="54" r="2.4"/>
+      <circle cx="8" cy="14" r="2.4"/><circle cx="-6" cy="18" r="2.4"/><circle cx="2" cy="30" r="2.4"/>
+    </g>
+    <!-- 衍射束：球心到球面交点 -->
+    <line x1="0" y1="0" x2="29" y2="34" stroke-width="1.3" stroke-dasharray="4 3"/>
+    <text x="-44" y="-38" font-size="10" fill="#b91c1c" stroke="none">2θ</text>
+  </g>
+
+  <!-- 电子密度等高线圈 + 原子位（右端） -->
+  <g stroke="#dc2626" fill="none" transform="translate(668,386)">
+    <!-- 同心等高线（原子密度） -->
+    <circle cx="-6" cy="-2" r="20" stroke-width="1.2"/>
+    <circle cx="-6" cy="-2" r="13" stroke-width="1.2"/>
+    <circle cx="-6" cy="-2" r="7" stroke-width="1.4"/>
+    <circle cx="-6" cy="-2" r="2.4" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+    <!-- 相邻轻原子 -->
+    <circle cx="20" cy="14" r="10" stroke-width="1" stroke-opacity="0.7"/>
+    <circle cx="20" cy="14" r="2" fill="#dc2626" fill-opacity="0.5" stroke="none"/>
+    <circle cx="-24" cy="18" r="8" stroke-width="1" stroke-opacity="0.6"/>
+    <!-- 键连线 -->
+    <line x1="-6" y1="-2" x2="20" y2="14" stroke-width="0.9" stroke-dasharray="3 2"/>
+    <line x1="-6" y1="-2" x2="-24" y2="18" stroke-width="0.9" stroke-dasharray="3 2"/>
+  </g>
+
+  <!-- 顶部点阵点缀 -->
+  <g fill="#dc2626" fill-opacity="0.28">
+    <circle cx="640" cy="120" r="2"/><circle cx="652" cy="112" r="1.5"/><circle cx="664" cy="120" r="2"/>
+    <circle cx="676" cy="112" r="1.5"/><circle cx="688" cy="120" r="2"/>
+  </g>
+
+  <!-- 底部注记 -->
+  <text x="400" y="470" text-anchor="middle" font-size="10.5" letter-spacing="2.2" fill="#78716c">BRAGG · EWALD · PHASING · REFINEMENT · VALIDATION</text>
+</svg>

@@ -886,6 +886,9 @@ function subjectName(id: SubjectId): string {
     neurobiology: '神经生物学',
     bioinformatics: '生物信息学',
     virology: '病毒学',
+    'structural-biology': '结构生物学实验方法',
+    'x-ray-crystallography': 'X射线晶体学',
+    'electron-microscopy': '电子显微学',
   }
   return names[id] ?? id
 }

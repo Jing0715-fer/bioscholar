@@ -14,6 +14,9 @@ export type SubjectId =
   | 'neurobiology'
   | 'bioinformatics'
   | 'virology'
+  | 'structural-biology'
+  | 'x-ray-crystallography'
+  | 'electron-microscopy'
 
 /** 学科 */
 export interface Subject {

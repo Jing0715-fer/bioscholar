@@ -1663,3 +1663,282 @@ Stage Summary:
 - AI 助手移动端沉浸式全屏对话：占屏 77%→93%，消除卡片下方的背景留白带与页脚双重安全区；桌面端保持页脚的 7.5rem 精确适配
 - 灯箱矢量缩放"落盘布局尺寸"机制：SVG 任意倍率静止即锐利（重新光栅化），手势流畅性不受影响；附带修复工具栏按钮 pointer-capture 劫持死点击 bug
 - 下一步建议：VLM 配额恢复后可对移动端截图与高倍率矢量渲染做视觉复核；hero-bioscience.png 为未使用的旧栅格副本（含旧文案），如需可删除或重新导出
+
+---
+Task ID: 2-a
+Agent: general-purpose
+Task: X射线晶体学 ch1–3 + 测验A1 + 术语A1（g-295~299）
+
+Work Log:
+- 开工前逐个精读 six 指定样板：types.ts（Chapter/Section/QuizQuestion/GlossaryTerm 接口，SubjectId 已含 'x-ray-crystallography' 故 quiz 可用字面量）、neuro/ch1.ts（黄金样板的密度/H2/表格/keyPoints 风格）、immunology-a1.ts（题库样板）、glossary-neuro-c1.ts（词条样板）、validate-chapters.ts（全部校验规则，特别注意到 emoji 正则含 U+2190–21FF 箭头区与 U+2600–27BF，正文严禁 → ✓ 等字符）、worklog.md 尾部（边界纪律与并行批次背景）
+- 新建 src/data/subjects/xc/ 目录，写 ch1.ts（xcCh1 绪论：晶体学的历史与疆域）：s1 Steno 1669 晶面角守恒、Haüy 1784 有理指数、Hessel 1830/Bravais 1850/Schoenflies-Fedorov-Barlow 1890–1894 230 空间群、Sohncke 1879 65 群预告、偏光显微镜传统；s2 伦琴 1895、劳厄 1912（硫酸铜、Friedrich & Knipping）、W.L. Bragg 2d sinθ = nλ、NaCl 首个原子结构、1915 父子诺奖（W.L. 25 岁最年轻）、莫塞莱定律；s3 Bernal & Crowfoot 1934 保湿教训、Perutz 同晶置换 1953、肌红蛋白 1958 6 Å/1960 2 Å、Hodgkin 青霉素/B12/胰岛素、Phillips 1965 溶菌酶；s4 PDB 1971–2023 增长时间线、结构基因组学（JCSG/SGC/NYSGXRC）、HIV 蛋白酶/KcsA/核糖体/β2/剪接体诺奖叙事、中国胰岛素工作
+- 写 ch2.ts（xcCh2 点阵、晶胞与对称性）：s1 点阵+基元、六参数、原胞/惯用胞、Miller 指数与晶带定律、立方 d = a/√(h²+k²+l²) 计算表、倒易点阵 b₁ = a₂×a₃/V 与 d* = 1/d；s2 七晶系判据表（点群数合计 32）、14 布拉维格子、蛋白空间群统计（P2₁2₁2₁ 约 1/4 强）、约化胞；s3 限制定理证明、螺旋轴/滑移面记号解读、65 Sohncke 群、11 Laue 群、系统消光（P2₁ 0k0 奇消、P6₁ 00l=6n、P2₁/c 对照表）；s4 Matthews VM = Vcell/(MW·Z)（1.7–3.5 Å³/Da、算例 2.5）、溶剂 27–65%、接触面 5–10%、镶嵌度 0.1–1°、NCS、浸泡/共结晶、小分子对照表
+- 写 ch3.ts（xcCh3 蛋白质晶体生长）：s1 盐溶盐析、Cohn 方程 log S = β − Ks·I、Hofmeister 序列、pI 权衡、温度（胰岛素反向例）、PEG 优先排阻、>95% 纯度底线；s2 相图四区表、CNT（ΔG(r)、r* = 2γ/(ρΔμ)、ΔG* = 16πγ³/(3(Δμ)²ρ²)、exp(−ΔG*/kT)）、异相成核、两步成核（Vekilov & Pan）、晶种相图逻辑、奥斯特瓦尔德阶段规则；s3 悬滴（24 孔 1–2 μL + 0.5–1 mL 池液、蒸汽压差）、坐滴 96 孔、微批量/微透析/自由界面扩散、温度梯度、方法对照表、Mosquito/Gryphon 20–200 nL；s4 Jancarik & Kim 1991 48 条件、正交网格优化、添加剂机制分述、streak/micro（10⁻¹–10⁻⁸ + MMS）/macro-seeding、LCP（monoolein、Caffrey/Cherezov、2007 β2 与 2011–2012 GPCR）、SER（Derewenda）、优化手段对照表
+- 写 quiz/x-ray-crystallography-a1.ts：15 题（q-x-ray-crystallography-1~15），每章 5 题 = single×3 + truefalse×1（options ['正确','错误']）+ multiple×1（answer 数组、题干含「（多选题）」），每章难度 1×1 + 2×3 + 3×1；覆盖 Steno 1669、劳厄实验双重意义、1915 父子诺奖判断题、溶菌酶 1965、PDB 多选、立方 (111) d 值计算、65 Sohncke 原因、限制定理判断题、VM 计算题（2.5 Å³/Da）、P2₁2₁2₁ 多选、悬滴驱动力、亚稳区特征、稀疏矩阵判断题、microseeding 目的、CNT 多选；explanation 全部 ≥80 字
+- 写 glossary-x-ray-crystallography-a1.ts：g-295 布拉格定律、g-296 倒易点阵、g-297 空间群、g-298 马修斯系数、g-299 蒸气扩散结晶法；definition 206–245 字均 ≥80
+- 内容长度三轮迭代：初稿每节约 2000–2400（低于 2600），逐节补写学术性扩展段（体积通式、Miller 换算算例、限制定理推论、Matthews 算例、S = c/c* 与 Δμ = kT ln S、溶菌酶教学体系、读板即读相图等）至全部达标；期间做一处科学性修正：肌红蛋白/血红蛋白分辨率时间线改为 1960 年肌红蛋白 2 Å（肯德鲁）+ 血红蛋白 1959 年 5.5 Å 后至原子级，避免把 2 Å 血红蛋白误钉在 1962 年
+- 校验（全绿）：bun run scripts/validate-chapters.ts x-ray-crystallography 三章文件 → 「x-ray-crystallography：3 章共 12 节全部通过」（各节 2601–2790 字符、H2 5–6 个、全部含表）；quiz 检查 15/15、expOK true、uniq 15，逐章结构核对（题型/难度分布/判断题 options/多选 answer 数组）全部正确；glossary 5 条 defOK true；tsc --noEmit 过滤新文件零错误；自写脚本扫描五文件确认零 emoji/箭头区字符、零制表符；git status 确认仅新增 5 个文件、未修改任何既有文件（并行批次的 M 状态文件与 em/sb/ 目录非本批次产出）
+
+Stage Summary:
+- 产出 5 文件：src/data/subjects/xc/ch1.ts（xcCh1，4 节 2694/2790/2708/2747 字符）、ch2.ts（xcCh2，2601/2604/2687/2633）、ch3.ts（xcCh3，2601/2602/2631/2611）、src/data/quiz/x-ray-crystallography-a1.ts（xrayCrystallographyQuizA1 15 题）、src/data/glossary-x-ray-crystallography-a1.ts（xrayCrystallographyGlossaryA1 5 条 g-295~299）；三章每节 5–6 个行首 ## H2、至少 1 张 Markdown 表格（含表头分隔行），章 summary ≥250 字、keywords 6–7 个、keyPoints 4–6 条、terms 6–7 个
+- 校验输出摘要：validate-chapters「3 章共 12 节全部通过」；quiz 15 expOK true uniq 15（每章 single×3+truefalse×1+multiple×1，难度 1/2/2/2/3）；gloss 5 defOK true
+- 术语 5 条中文词头：布拉格定律、倒易点阵、空间群、马修斯系数、蒸气扩散结晶法
+- 给后续批次注意事项：① xc/ch4.ts、ch5.ts、ch6.ts 由并行批次（2-b）产出，本批次未触碰 xc 目录内他人文件；② 正文已预埋跨章引用（第 4 章 Ewald 球、第 5 章冷冻与镶嵌度、第 6 章指标化与 Laue 群、第 7/8 章分子置换与定相、第 11 章验证、第 12 章前沿），后续章撰写时宜兑现这些引用口径；③ 术语 g-295~299 已覆盖 ch1–3 核心概念，ch4 起批次若扩词条建议从 g-300 续号；④ 本批次正文严格避开 U+2190–21FF 箭头等 emoji 区字符（用「—」「加」「换」等文字表述），后续批次同样须防；⑤ quiz 难度与题型分布已严格对齐任务规定，A2 及后续批次可沿用本文件的排列模式（single→single→truefalse→single→multiple）
+---
+Task ID: 1-a-fix
+Agent: general-purpose
+Task: 修复结构生物学实验方法 ch3/5/6 扩写 + 补测验A1 + 术语A1（g-275~279）
+
+Work Log:
+- 通读 types.ts、validate-chapters.ts、neuro/ch1.ts 密度样板、sb/ch1~ch6 正文、glossary-structural-biology-a2.ts（确认 g-280~284 为差示扫描荧光法/蒸气扩散结晶法/脂立方相结晶/布拉格定律/辐射损伤，避免重复）、quiz/immunology-a1.ts 样板
+- ch3.ts 超集式扩写三节：s2 增 IMAC 配位化学（Porath 1975 / Hochuli 1987、IDA 三齿 vs NTA 四齿泄漏差异、Co²⁺ 选择性、串联 His 标签）+ 新 H2「容量、流速与典型案例」（停留时间 1–4 min、1 L TB 培养案例数字）+ 工业延伸（Protein A/ADC、ICP-MS 镍残留放行）；s3 增缓冲离子「同号」原则、梯度陡度与峰宽（Rs 随梯度体积平方根增长）、聚焦效应、去酰胺化 pI 漂移 + 新 H2「流程角色与常见故障」5 行故障速查表；s4 增 SEC 塔板理论体现与 8–13 μm 增效介质、分析型 vs 制备型 SEC 参数对比表、HIC 配基链长选择逻辑（辛基/苯基/丁基）、工业应用（ADC 载药数分离、HCIC 疏水电荷诱导色谱）
+- ch5.ts 扩写三节：s2 增过饱和度定量表述（S=c/c*、σ=ln S、Δμ=kT·ln S）、成核速率数量级（每 μL 每天一至数千核）与亚稳区宽度 MZW、生长限速环节两型判别（表面反应 BCF 抛物线律 vs 溶质输运）、Ostwald 1897 阶段规则展开；s3 增蒸气扩散定量动力学（水活度平衡时间常数）、坐滴/悬滴死角与对策、微批量油层水通道率（1:1 混油约 5–10%/天失水）、透析膜截留选择 + 新 H2「温度梯度结晶」（溶菌酶 0.1–0.2 °C/天缓降、胰岛素升温路线）；s4 增添加剂机理表（金属桥/去垢剂/还原剂/氨基酸/甘油）、LCP 相图位置（Ia3d/Pn3m、双通道扩散）、SER 设计原则与统计收益、共结晶 vs 浸泡决策
+- ch6.ts 扩写四节：s1 增波荡器亮度 10²⁰–10²² 标准单位、新 H2「单色器、能量带宽与束线稳定」（Si(111) ΔE/E 约 1.4×10⁻⁴、轨道反馈约 1 μm）、通量-剂量率换算直觉（10¹² 光子每秒约 2×10⁻³ W、2×10⁵ Gy/s）、实验室源发散度与波长分工；s2 增楔角-镶嵌度定量关系（帧数约等于（镶嵌度+发散）/每帧宽度）、过载处理策略、像素尺寸与点扩散、部分反射三维盒积分、典型帧数与总时长锚点（360–1800 帧、5–30 min）；s3 增渗透平衡时间常数、冰判读「环 vs 斑」操作细节、剂量-镶嵌度线性增长（每 10 MGy 增 0.05–0.1°）、退火风险、低温晶格各向异性收缩 0.2–2%（与损伤膨胀对照）；s4 增 Rmerge/Rmeas/Rpim 数学定义与四次数值示例（1.98%/2.3%/1.1%）、CC1/2 分半相关直觉与 CC* 换算、空间群判定五步流程、指标化歧义处理路径、「典型好数据」参数清单表
+- 新建 src/data/quiz/structural-biology-a1.ts：15 题（q-structural-biology-1~15），第 1–3 章各 5 题（single×3 + truefalse×1 + multiple×1），每章难度 1×1+2×3+3×1，解析均不低于 80 字，多选题干含「（多选题）」，判断题 options ['正确','错误']
+- 新建 src/data/glossary-structural-biology-a1.ts：g-275 分子置换、g-276 冷冻电镜单颗粒分析、g-277 融合标签、g-278 离子交换层析、g-279 分子排阻层析，定义均不低于 80 字，与 g-280~284 无重复
+- 运行三项校验全部通过；确认仅改动上述 5 个文件
+
+Stage Summary:
+- 扩写前后字符数：ch3-s2 1743→2768、ch3-s3 1598→2797、ch3-s4 1763→2926、ch5-s2 2256→2937、ch5-s3 1990→2951、ch5-s4 1940→2841、ch6-s1 1843→2861、ch6-s2 1713→2817、ch6-s3 1775→2789、ch6-s4 1722→2879（全部落在 2600–3600 区间，原有知识点、H2、表格与数值全数保留，纯增补）
+- 校验输出：validate-chapters.ts「structural-biology：6 章共 24 节全部通过」；quiz 输出「quiz 15 expOK true uniq 15」；glossary 输出「gloss 5 defOK true」；附加结构自检：每章题型 3/1/1、难度 1/3/1 分布正确、id 连续、判断题 options/answer 合规、多选题 answer 为数组
+- 产出文件：src/data/subjects/sb/ch3.ts、ch5.ts、ch6.ts（修改）；src/data/quiz/structural-biology-a1.ts、src/data/glossary-structural-biology-a1.ts（新建）
+---
+Task ID: 3-b-fix
+Agent: general-purpose
+Task: 修复电子显微学 ch4/5/6 扩写（9 节）
+
+Work Log:
+- 开工必读：阅读 src/lib/types.ts 接口、src/data/subjects/neuro/ch1.ts 密度样板、scripts/validate-chapters.ts 校验规则（含箭头区字符禁令）与 em/ch4-6 三章本体
+- 用临时 bun 脚本统计 24 节 content 字符数，确认 9 个待扩写小节现状（1382–1716 字符，均低于 2600 下限）
+- 超集式扩写 ch4-s4（低剂量成像与剂量管理）：新增 focus 预设学（defocus 分档与 Z 高度/欧拉高度联动）、计数模式约 5–10 e⁻/像素/秒 重合损失上限、50–60 帧剂量分割折中、Grant–Grigorieff 2015 最优剂量推导直觉（√D 与 exp(−B·D·s²/4) 乘积极大）、样品类型剂量修正与剂量元数据纪律；keyPoints 增至 6、terms 增重合损失
+- 超集式扩写 ch5-s1（负染技术）：新增染液化学两型（铀酰离子配位渗入 vs 磷钨酸根机械包裹、Huxley–Zubay 1960 近中性 PTA 保酶活）、辉光放电表面能与接触角量化、吸附平衡与表观亲和直觉、连续碳膜 vs 微孔膜颗粒分布、2D 分类读图要点（左右手/构象态初判）、Caspar–Klug 1962 历史注脚、负染 vs 冷冻投入对比表
+- 超集式扩写 ch5-s2（化学固定、包埋与超薄切片）：新增流水线定型史（Palade 1952、Watson 1958、Luft 1961、Sabatini–Bensch–Barrnett 1963、Reynolds 1963）、戊二醛 Schiff 碱/Michael 加成与约 7 Å 交联桥、OsO₄ 顺式双羟基化与电子密度来源、脱水收缩假象机制与对策（渐进脱水/醋酸铀块染抗抽取）、玻璃刀 vs 钻石刀、树脂硬度软硬匹配、刀痕/颤痕/压缩/皱褶假象诊断表与固定假象 vs 切片假象鉴别
+- 超集式扩写 ch5-s3（冷冻固定与冷冻替代）：新增 HPF 物理账（2100 bar 把冰点压至约 −22 °C、Moor–Riehle 1968 先加压后骤冷工程、约 200 μm 热流极限与 0.1–0.2 mm 浅槽）、压力-保护剂货币兑换三角权衡、FS 置换化学温度窗口与程序分段表（−90 至 0 °C 数天）、Lowicryl 低温紫外聚合抗原性保护、CEMOVIS 纯玻璃冰与 Tokuyasu 氢键蔗糖玻璃的切片温度化学
+- 超集式扩写 ch5-s4（免疫电镜与相关显微学）：新增 Turkevich 1951 柠檬酸盐还原制备胶体金与粒径控制、蛋白 A-金 Fc 段方向性桥接、多色标记 5+10 nm 粒径配对与先小后大顺序、包埋前通透三明治与 40–60 μm 振动切片、Mayhew–Lucocq 相对标记指数定量、fiducial 三分类（网格寻址/荧光-电子双标记颗粒/光镜定位后电镜复查）、自噬体成熟与 ER-线粒体接触位点 CLEM 案例
+- 超集式扩写 ch6-s1（水的玻璃化原理）：新增 TH 约 235 K 与 Tg 约 136 K 的「无人区」及临界冷却速率换算（纯水 10⁶–10⁷ 对薄层实测 10⁵–10⁶ K/s）、气膜导热数字坐实与丙烷温区、反玻璃化温度阶梯（136–160 K）、Dubochet 1982 论文实验设计细节（电子衍射验收）、HDA/LDA 玻璃一族衍射指纹、两条玻璃化路线的剂量代价粗算
+- 超集式扩写 ch6-s2（载网与支持膜）：新增 mesh 算术（200 mesh 线距约 127 μm、孔宽约 100–120 μm、开孔三到五成）、铜/金/镍网导热与束下行为对比表、Quantifoil 孔型谱系（R0.6/1 至 R2/2）与连续碳膜 vs 悬孔冰取向差异、膜厚账本与石墨烯选项、辉光放电三行参数学（电流-时间/气氛/新鲜度）与等离子清洗时机、决策表增微晶电子衍射与小分子量蛋白两行
+- 超集式扩写 ch6-s3（plunge freezing 的实践）：新增 Vitrobot 双侧对夹 vs EM GP 单侧点吸结构差异、湿度大于 90% 的蒸发-盐析物理账、blot-冰厚指数逼近关系、样品适配清单表（高盐/甘油/去垢剂/低浓度/易氧化）、液态乙烷老化判别（浑浊/粘度）与三条安全底线、转移盒屏蔽罩防霜链路、Spotiton/chameleon 免 blot 定向收益机制、失败模式表增冰厚分布散一行
+- 超集式扩写 ch6-s4（空气-水界面问题与对策）：新增 AWI 界面化学（水偶极取向层约 1 nm、表面张力约 72 mN/m、吸附自由能数十 kT 与去折叠屏障）、冷冻断层普查证据链、氟化表面活性剂设计逻辑（氟碳尾惰性、0.01–0.05 mM 即成膜）、亲和网格收益与局限（标签决定取向的缺失锥换向）、UltrAuFoil 金膜界面改善、诊断流程表（2D 视角统计、贴附统计、3D 角度覆盖、对策迭代）、预倾角采集补救、螺旋样品「故意贴附」辩证案例（TMV/微管侧视）
+- 全程人工自查禁用字符：无反引号、无模板插值、无三级以下标题、无 HTML、无制表符、无 Markdown 链接、无 emoji 与箭头区字符（U+2190–21FF 等）
+- 校验命令：bun run scripts/validate-chapters.ts electron-microscopy ch1–ch6，一次通过后微调 ch6-s1/ch6-s4 增补缓冲段并复跑，全部通过
+
+Stage Summary:
+- 产出：em/ch4.ts、em/ch5.ts、em/ch6.ts 三个章文件中 9 个小节全部完成超集式扩写；原有知识点、H2 标题、表格与数值全部保留，仅增补机理段落、定量数据、经典文献人物年份、方法学联系与易混淆对照；keyPoints 各增至 6 条、terms 各增至 6–8 个
+- 每节扩写前后字符数：ch4-s4 1716 增至 2823；ch5-s1 1462 增至 2727；ch5-s2 1571 增至 2815；ch5-s3 1657 增至 2860；ch5-s4 1539 增至 2687；ch6-s1 1647 增至 2718；ch6-s2 1382 增至 2714；ch6-s3 1595 增至 2825；ch6-s4 1544 增至 2744
+- 校验结果：electron-microscopy：6 章共 24 节全部通过（每节 2600–3600 字符、H2 数量达标、含表格、keyPoints 3–6、terms 3–8、无禁用字符）
+- 未修改 quiz/glossary 及其他任何文件；未运行 bun run build；章结构字段（id/number/title/summary/keywords）未动
+---
+Task ID: 2-b-fix
+Agent: general-purpose
+Task: 修复X射线晶体学 ch4/5/6 扩写 + 补测验A2 + 术语A2（g-300~304）
+
+Work Log:
+- 通读开工必读材料：src/lib/types.ts（接口）、neuro/ch1.ts（密度样板）、scripts/validate-chapters.ts（校验规则与箭头区字符禁令）、ch4/ch5/ch6 本体、glossary-x-ray-crystallography-a1.ts（确认 g-295~299 已有词条、避免重复）、quiz/immunology-a1.ts（测验样板）。
+- 记录扩写前各节字符数：ch4-s1 2417 / s2 1904 / s3 1986 / s4 1841；ch5-s1 1786 / s2 1749 / s3 1610 / s4 1740；ch6-s1 1459 / s2 1452 / s3 1475 / s4 1572（均低于 2600）。
+- 超集式扩写 ch4.ts（24 处编辑）：s1 增亮度单位换算直觉（10²¹ vs 10¹¹–10¹²）、波荡器准单色性 1/(nN)、新增 H2「束线光学链」（单色器/聚焦镜/狭缝/衰减器）、家用源 vs 同步辐射 I/σ 与曝光时间量化对比；s2 增光电吸收与荧光辐射因果链（P/S/Ca K 边与 Se 12.66 keV）、吸收修正两条路、挡板直径与空气散射全程积分、f₀ 数值（O/N/S）、Se f″ 约 4 e⁻、电子 vs X 射线定量（0.0251 Å、Ewald 球 40 倍、晶体尺寸两个数量级差）；s3 增 Ewald 球五步作图、盲区、正交晶胞数值例、球面平直的算术、限制球 1/64 数值例、傅里叶折叠直觉；s4 增两原子晶胞数值演算（h=1/2/4）、洛伦兹因子直觉、2₁ 螺旋轴消光推导、B 因子部位便查表、静态无序不可分辨、Friedel 一行推导与 f″ 破缺伏笔、傅里叶求和收支。
+- 超集式扩写 ch5.ts（30 处编辑）：s1 增晶格收缩约 1%、环径与油封操作、100 K 最优温度、保护剂梯度实操、双帧冰环判别与盐环鉴别、退火两派出处（Yeh-Hol 1998、Harp 1999）与风险次序、构象冻结实例；s2 墧帧数时长量级（900 帧 2–5 分钟 vs 家用数小时）、Δφ 与 mosaicity 定量重叠判据（d_min/a_max 换算 0.76°/0.38°）、盲区结算、探测器距离数值例（1.31/1.72/2.2 Å）与 0.1°/像素换算、挡板影子 20–30 Å 预警、衰减器两段式收数；s3 增光子货币账本与预算数值例（12 kGy/帧、830 帧、166°）、inverse beam 正反对顶逻辑、MAD 剂量 40-30-30 切分、多晶合并示意账单表、微光斑体积比量化、网格扫描热图细节、完整度方向性偏差、反常完整度换算；s4 增 Henderson 估算路数、衰减器策略边界、RADDOSE-3D 输入输出便查表、损伤经验刻度（μ 0.02–0.04 MGy⁻¹、β 每MGy十分之几 Å²）、差值图证据链（Ravelli-McSweeney 2000）与 SAD/MAD 影响与零剂量外推、自由基捕获剂、XFEL GGy 量级。
+- 超集式扩写 ch6.ts（33 处编辑）：s1 增 zinger 假斑、找斑参数化（3–6σ 阈值与尺寸窗）、索引器两路线对比、tP/tI 同度规歧义实例与误判代价、L 检验算法（|L| 向零堆积）与合并 R 三证、mosaicity 与帧宽换算、精修收敛判据、空间群四步实操抓手（xtriage/0k0 奇偶/Flack 0.5 倒反孪生/Rfree 终审）；s2 增预测中心分量、盒尺寸两三倍规则、225 对 81 方差数值账、Kabsch 2010 剖面拟合公式 Σ(o·p)/Σ(p²) 与剖面库两步、部分反射三细节与占比粗估（mosaicity/Δφ）、过载外推两三成上限、背景扫地与环带掩膜、混合策略收束段；s3 增多时间尺度缩放、exp(−μD) 衰减模型与 B(D) 线性式、逐帧/逐批权衡、各向异性椭球二次型与采样伪影、吸收花瓣样签名、球谐阶数阀门与物理路线复活、加权 σ 根源、outlier z 检验与多重校正、anomalous 三层级菜单、MTZ 剂量元数据；s4 增 Rmerge 惩罚勤奋根源、Rmerge/Rmeas/Rpim 数值表演表（N=2/5/10/20）、CC1/2 按反射内分半澄清与统计底气、CC* 标尺衔接第 11 章、I/σ 肉眼时代出身、外壳/整体口径、CC_anom 同宗算法、截断三级决策、交账自检清单表。
+- 微增 terms：ch4-s1 +单色器（8 条）、ch4-s3 +盲区、ch5-s2 +衰减器、ch5-s4 +RADDOSE-3D、ch6-s1 +孪生（均 3–8 内）；keyPoints 保持原样（各节均 5 条）。
+- 新建 src/data/quiz/x-ray-crystallography-a2.ts：15 题 q-x-ray-crystallography-16~30，覆盖 ch4/ch5/ch6 各 5 题（single×3 + truefalse×1 + multiple×1，难度每章 1×1+2×3+3×1）；考点含 Cu Kα 1.5418 Å、Ewald 作图正误、布拉格角计算、结构因子多选、两原子晶胞 h=2 消光演算、甘油 15–25%、冰环 3.67/1.92 Å、Henderson 20–30 MGy、inverse beam 目的、特异性损伤顺序多选、Rmeas 单次精度、CC1/2=0.143 对应 CC*=0.5、65 个 Sohncke 群判断、tP/tI 消光裁决、绿灯数据清单多选；explanation 均 ≥80 字。
+- 新建 src/data/glossary-x-ray-crystallography-a2.ts：5 条 g-300~g-304（埃瓦尔德反射球、结构因子、辐射剂量极限、CC1/2、系统消光），definition 均 ≥80 字，与 A1 批次（布拉格定律/倒易点阵/空间群/马修斯系数/蒸气扩散结晶法）零重复。
+- 全部校验通过后核对 git 状态：仅改动 ch4/ch5/ch6 与新建 quiz/glossary 两文件，未触碰其他文件、未运行 build、未 kill 进程。
+
+Stage Summary:
+- 产出：12 节全部扩至 2650–3400 字符区间（扩后 ch4：3177/2794/2859/2983；ch5：2742/2841/2843/2896；ch6：2745/2712/2815/3029），原有知识点、H2、表格与数值全数保留（超集式），新增表格 6 张（B 因子部位表、多晶合并账单、RADDOSE-3D 输入输出表、三兄弟数值表演表、交账自检清单表、积分方式表后收束段）。
+- 校验：bun run scripts/validate-chapters.ts x-ray-crystallography ch1~ch6 输出「x-ray-crystallography：6 章共 24 节全部通过」（无反引号/模板插值/HTML/制表符/链接/emoji/箭头区字符）；quiz 检验输出 quiz 15 expOK true uniq 15（每章题型与难度分布核对通过）；gloss 检验输出 gloss 5 defOK true。
+- 新增术语 5 条中文词头：埃瓦尔德反射球、结构因子、辐射剂量极限、CC1/2、系统消光。
+
+---
+Task ID: 1-c-fix
+Agent: general-purpose
+Task: 修复结构生物学实验方法 ch9 扩写 + 补测验A3 + 补术语A3（g-285~289）
+
+Work Log:
+- 开工前通读 src/lib/types.ts、src/data/subjects/sb/ch7.ts、ch8.ts、ch9.ts、quiz/structural-biology-a1.ts、a2.ts、glossary-structural-biology-a1.ts、a2.ts 与 scripts/validate-chapters.ts，确认类型契约、样板格式与校验规则。
+- 测定 ch9 三节基线字数：ch9-s2 2195、ch9-s3 1940、ch9-s4 1862，均低于 2600 下限。
+- 超集式扩写 ch9-s2（玻璃化冷冻与载网制备）：保留原有全部知识点、H2 标题、表格与数值；增补液态乙烷 vs 液氮的导热物理（乙烷沸点约 184 K、90 K 远低于沸点不汽化；液氮 77 K 沸点触发 Leidenfrost 气膜、传热骤降约一个量级）、blot 时间-冰厚-颗粒密度三角权衡、金网 vs 铜网束致运动差异（约两倍数据质量收益）、Quantifoil 孔型谱系表（R0.6/1 至 R2/2）、辉光放电三参数（电流约 15–30 mA、时间约 30–90 秒、气氛）、浓度两端风险细化与预处理清单表（高盐/甘油/去垢剂/聚集体）。
+- 超集式扩写 ch9-s3（单颗粒数据收集）：增补 search/focus/expose 三步剂量数值（侦察像约 0.01–0.05 e⁻/Å²、对焦像约 0.1 e⁻/Å²、预曝光合计约 1–2 e⁻/Å²）、曝光时间反推换算例（50 e⁻/Å²、1 Å 像素、8 e⁻/像素/秒约 6 秒切 50 帧）、EPU 与 SerialEM 策略差异（模板化单颗粒 vs 脚本化组收集/多孔模式/断层）、defocus 零点互补数值例（300 kV 下 −1.5 μm 与 −2.5 μm 第一零点约 17 Å 与 22 Å）、能量过滤狭缝 10–20 eV 信噪比收益与通量折衷、K3/Falcon4 每小时千张量级通量锚点、离焦深浅与分子量挂钩及相位板补充。
+- 超集式扩写 ch9-s4（数据收集的质量评估）：增补实时处理闭环判据表（漂移小于 1–2 Å、CTF 拟合 3–5 Å、每微图数十至数百颗、2D 类质量）、空孔率定量分级（低于 10% 良好、10–30% 收紧圈孔、大于 30% 换网）与冰厚定量测定（零损失峰对数比）、微晶识别强化（六方冰最强衍射环约 3.67 Å）、取向分布量化预警（视角投影欧拉球）与小角度倾转 20–40 度、数据集规模-目标分辨率对照表（3 Å 约 10⁵、亚 2 Å 与构象解析约 10⁶）、颗粒数换算链、session 三段式决策（弃孔/弃网换网/补数据收工）与机会成本原则。
+- keyPoints 按新内容微增更新（各节仍为 5 条、3–6 区间内），章级 id/number/title/summary/keywords 与各节 id/title 全部原样保留。
+- 新建 src/data/quiz/structural-biology-a3.ts：structuralBiologyQuizA3 共 15 题（q-structural-biology-31 至 q-structural-biology-45），覆盖 ch7/ch8/ch9 各 5 题；每章 single×3 + truefalse×1 + multiple×1、难度 1×1 + 2×3 + 3×1；考点覆盖相位主导原则、Patterson 函数、Phaser TFZ 判据、SeMet 吸收边（0.9795 Å、f″ 约 3.8 e⁻）、SIR 双解、Rfree 交叉验证（5% 自由集、gap 2–5%）、差值图判读、参数化阶梯、水分子三判据、CTF 零点互补、玻璃化冷却速率大于 10⁵ K/s、Leidenfrost 效应、总剂量 40–60 e⁻/Å²、3.67 Å 冰晶环、空孔率、gold-standard FSC 0.143 等；explanation 全部不低于 80 字。
+- 新建 src/data/glossary-structural-biology-a3.ts：structuralBiologyGlossaryA3 恰好 5 条（g-285 至 g-289），词头 Patterson 函数、溶剂平坦化、R 自由因子、衬度传递函数、玻璃化，均含中文词头、英文、subjectId: structural-biology、中文 category 与不低于 80 字定义，与 A1/A2 已有 10 条无重复。
+- 校验：bun run scripts/validate-chapters.ts structural-biology ch7/ch8/ch9 输出「structural-biology：3 章共 12 节全部通过」；quiz 检验输出 quiz 15 expOK true uniq 15（每章题型与难度分布核对通过）；gloss 检验输出 gloss 5 defOK true。全文无反引号、模板插值、H3、HTML、制表符、Markdown 链接、emoji 与箭头区字符。
+
+Stage Summary:
+- 产出 5 件事中的 3 件文件变更：修改 src/data/subjects/sb/ch9.ts，新建 src/data/quiz/structural-biology-a3.ts 与 src/data/glossary-structural-biology-a3.ts；未触碰其他文件。
+- 扩写前后字符数对比：ch9-s2 2195 至 3185、ch9-s3 1940 至 2819、ch9-s4 1862 至 2845（三节均落于 2650–3400 区间，各含 5 个 H2 与 2–4 个表格）。
+- 校验全部通过：章节校验「structural-biology：3 章共 12 节全部通过」；quiz 15 题 expOK true uniq 15；gloss 5 条 defOK true。
+- 新增术语 5 条中文词头：Patterson 函数、溶剂平坦化、R 自由因子、衬度传递函数、玻璃化。
+
+---
+Task ID: 3-c-fix
+Agent: general-purpose
+Task: 修复电子显微学 ch9 扩写 + 补测验A3 + 术语A3（g-325~329）
+
+Work Log:
+- 开工前通读 src/lib/types.ts、src/data/subjects/em/ch9.ts（待扩写本体）与 ch7.ts、ch8.ts（出题依据）、src/data/quiz/electron-microscopy-a1.ts 与 a2.ts（测验样板）、src/data/glossary-electron-microscopy-a1.ts 与 a2.ts（避免词条重复）、scripts/validate-chapters.ts（校验规则），确认类型契约与基线：ch9-s1 2170、s2 1921、s3 1743、s4 2034 字，均低于 2600。
+- 超集式扩写 ch9-s1（电子断层扫描的原理）：保留全部原有 H2、表格与数值；增补缺失楔定量表述（±60 度空缺占 180 度完备倾角的三分之一、按方向覆盖约 33%）、伸长伪影方向性直觉（点源被抹成沿 z 的纺锤形拖尾）、双轴断层操作代价（金字塔形缺失约一成 vs 剂量翻倍与两套配准）、有效厚度 1/cos θ 的 60 度翻倍账、dose-symmetric 低倾优先两笔物理账、投影剂量分配算术例（总 100 e⁻/Å² 摊 60 张即每张约 1.7 e⁻/Å²、120 张则约 0.8）、WBP vs SIRT 频域权重对比（无条件 |g| 提权 vs 按投影覆盖赋权的自适应低通、双重构对账法）、倾角方案表扩两行（双轴倾转、连续倾转）。
+- 超集式扩写 ch9-s2（倾斜系列的收集与对位）：增补 SerialEM 预测跟踪模型原理（多项式轨迹外推下一倾角位置、预测先行实测微调、等间隔利于预测）、通量现实（每小时 1–2 套系列）、fiducial 均匀分布制备技巧（金珠稀释浓度、与样品混滴或背面滴珠两面撒布、每图 8–15 颗为宜）、patch tracking 块尺寸 128–512 像素与约半重叠、每片 defocus 变化的 CTF 三路线（条带 CTF、multi-focus 多焦点、三维体数据校正）、网格翘曲与杆遮挡规避（低倍预扫、能倾满区域常不足两成）、FIB lamella 参数（Ga 离子 30 kV、粗铣数百 pA 梯度递减至抛光 10–50 pA、最终厚度 100–300 nm）、FIB 日通量（一天数片到十余片）。
+- 超集式扩写 ch9-s3（断层图的分析与分割）：增补各向异性分辨率直观表现（约 5 nm 膜在 z 向拖成 8–10 nm 泡影、囊泡变竖直长轴椭球）、cryoCARE 训练对构造（同区两次低剂量采集、一图输入一图平均为监督目标）、IMOD contour/mesh 五步工作流（描 contour、归对象、插值平滑、mesh 化、测量）、模板匹配互相关数学（归一化 CC 公式）与假阳性控制三连（对照区高分位阈值、尺寸过滤、聚类或非极大值抑制）、线粒体-ER 接触位点定量工作流（两套 mesh 最近距离、10–30 nm 接触带、接触带面积占比统计）、MemBrain/U-Net 类 AI 分割前沿与网络初画加人工校对纪律、注释工时现实数字（1–3 个工作日一幅、项目数十幅）。
+- 超集式扩写 ch9-s4（子图平均与原位结构生物学）：增补 6D 搜索计算量直觉（单子图 10⁵–10⁷ 次评估、傅里叶域卷积与旋转插值、GPU 与分层搜索三支柱）、子图 CTF 三维楔形权重处理、10² 至 10⁴ 子图收益递减（统计瓶颈让位均一度瓶颈）、分辨率里程碑保守数字链条（2000 年前后 2–4 nm、2015 年前后约 8 Å、近年 3–4 Å 级、低于 3 Å 仍属个例）、in situ 与 in vitro 结构差异案例（核糖体翻译态占据比与多聚体组织、蛋白酶体核周浓度梯度 Mahamid 2016 HeLa）、拥挤环境识别的约 200 kDa 尺寸地板、vCLEM 光电对应工作流（荧光先行、低温转移、标志物多项式拟合、相关误差 100–200 nm）。
+- keyPoints 按新内容微调更新（各节 5–6 条、均在 3–6 区间），章级 id/number/title/summary/keywords 与各节 id/title 全部原样保留。
+- 新建 src/data/quiz/electron-microscopy-a3.ts：electronMicroscopyQuizA3 共 15 题（q-electron-microscopy-31 至 -45），覆盖 ch7/ch8/ch9 各 5 题；每章 single×3 + truefalse×1 + multiple×1、难度 1×1 + 2×3 + 3×1；判断题 options ['正确','错误']、多选题 answer 为数组且题干含「（多选题）」；考点含中心截面定理、ψ 角面内自旋、Crowther 判据计算（D=200 Å、d=4 Å 约 157 个视角）、CTF 零点与欠焦多选、优势取向处置、MotionCor2 全局加局部、剂量加权「结构已不在」判断、贝叶斯软分配、金标准 FSC 0.143 多选、逐颗粒精修顺序、缺失楔 33%、dose-symmetric 判断、fiducial 对位、STA 多选、FIB 参数综合场景；explanation 全部不低于 80 字。
+- 新建 src/data/glossary-electron-microscopy-a3.ts：electronMicroscopyGlossaryA3 恰好 5 条（g-325 至 g-329），词头中心截面定理、缺失楔、傅里叶壳层相关、电子断层扫描、子图平均，均含中文词头、英文、subjectId: electron-microscopy、中文 category 与不低于 80 字 definition；与 A1/A2 已有 10 条（衬度传递函数、球差、玻璃化冷冻、弱相位物体近似、负染色、弹性散射、电子剂量、负染、玻璃化、空气-水界面）零重复。
+- 校验与修复：首轮校验 ch9-s2 2578 字不达标，增补 FIB 全流程通量与全链条账本段后复跑通过；未触碰其他文件、未运行 bun run build、未 kill 进程。
+
+Stage Summary:
+- 产出 3 个文件变更：修改 src/data/subjects/em/ch9.ts，新建 src/data/quiz/electron-microscopy-a3.ts 与 src/data/glossary-electron-microscopy-a3.ts。
+- 扩写前后字符数对比：ch9-s1 2170 至 3154、ch9-s2 1921 至 2707、ch9-s3 1743 至 2707、ch9-s4 2034 至 3037（四节均落于 2650–3400 区间，各含 5 个行首 H2 与至少 1 个 Markdown 表格；s1 倾角方案表扩至 6 行数据行）。
+- 校验全部通过：bun run scripts/validate-chapters.ts electron-microscopy ch7 ch8 ch9 输出「electron-microscopy：3 章共 12 节全部通过」；quiz 检验输出 quiz 15 expOK true uniq 15（每章题型 single×3+truefalse×1+multiple×1 与难度 1×1+2×3+3×1 逐章核对通过）；gloss 检验输出 gloss 5 defOK true。全文无反引号、模板插值、H3、HTML、制表符、Markdown 链接、emoji 与箭头区字符。
+- 新增术语 5 条中文词头：中心截面定理、缺失楔、傅里叶壳层相关、电子断层扫描、子图平均。
+---
+Task ID: 2-c-fix
+Agent: general-purpose
+Task: 修复X射线晶体学 ch9 扩写（4 节）
+
+Work Log:
+- 通读 types.ts、validate-chapters.ts 校验规则与 ch7/ch8 上下文口径，确认 ch9 四节仅字数不足（1896/1898/1794/1714 字），其余结构合规
+- 基线运行 validate-chapters.ts：ch7/ch8 八节全过，ch9 四节均报「字数不足」，确认需扩写至 2600–3600（目标 2650–3400）
+- ch9-s1 超集扩写：新增 omit 实操三步（挖区-精修-重构图）及掩膜回填陷阱；sigma-A 数学直觉段（m/D 折扣因子、偏差项与截断波纹）；密度纹理细读段（螺旋麻点约 100° 角间距、β 织纹 3.3–3.5/4.7–4.8 Å、羰基瓦片判向、Met-Trp/Gly-Gly register 锚定案例）；分辨率表扩 1.05/1.5/2.8 Å 三行；模型偏差三个历史小案例（Brändén & Jones 1990「客观与主观之间」、Brunger 1992 Rfree、低分辨率 MR 连接环误判）
+- ch9-s2 扩写：渲染参数方法学段（map radius 8–15 Å、sigma 滑条诚实度、±0.3σ 检验纪律）；快捷键与效率/保存纪律段；五件套典型场景段（peptide flip ψ 禁区指纹、chiral 翻转镜像指纹、RSR 区段 3–8 残基）；round-trip 节奏段（先看 R/Rfree 再清球、先大后小、三轮无新发现收敛、Find Ligands 五步流程）
+- ch9-s3 扩写：restraints 参数体系段（键长 σ 0.02 Å/键角 σ 2°/平面组/chiral volume 混合积/非键 2.9–4.0 Å）；occupancy-B 乘积简并山谷与固定纪律段；部分占有比例失配判定段；phenix.refine ordered water 策略与人工复核要点段；交替构象硬判据段（峰心距 0.5–1 Å、体积比估比例、Asn/Asp 半拆）；药物发现假配体代价段
+- ch9-s4 扩写：三工具算法直觉段（ARP/wARP 自由原子先撒后认亲、Buccaneer 概率追踪+动态规划、AutoBuild 修饰-建模-精修三轮杠杆）；AF2 当代工作流段（model-to-map 拟合度、限制性 rebuild、pLDDT-密度互证）；register 报警组合口诀段；N/C 端处理惯例段（REMARK 465/mmCIF 对照表）；建模验收 checklist 表（5 行 3 列）插入验收清单与章末结语之间
+- 每节 keyPoints 由 5 条增至 6 条（均在 3–6 区间），terms/章结构字段/节 id 与 title 未动；修正一处笔误（香出区间改飙出区间）
+- 首测 s1 达 3568 字超 3400 上限，回剪冗余修饰（删与原段落重复的 polder 尾句与 Phaser 同源尾句、压缩三案例措辞）至 3387 字
+- 复扫禁用字符（反引号、${、###、HTML、制表符、链接、emoji、U+2190–21FF 箭头）全部为零
+
+Stage Summary:
+- 产出：仅修改 src/data/subjects/xc/ch9.ts；四节均超集扩写，原知识点、H2 标题、表格与数值全部保留
+- 扩后字符数：ch9-s1 1896 改 3387；ch9-s2 1898 改 2997；ch9-s3 1794 改 3247；ch9-s4 1714 改 3036（每节 5 个 H2、均含表格、keyPoints 6 条）
+- 校验结果：bun run scripts/validate-chapters.ts x-ray-crystallography ch7.ts ch8.ts ch9.ts 输出「✓ x-ray-crystallography：3 章共 12 节全部通过」，ch7/ch8 未动、测验A3与术语A3未触碰
+---
+Task ID: 2-d1
+Agent: general-purpose
+Task: X射线晶体学 ch10–11
+
+Work Log:
+- 阅读 src/lib/types.ts（Chapter/Section 接口）、src/data/subjects/xc/ch9.ts（上一章文风与承接口径）、src/data/subjects/neuro/ch1.ts（密度样板）与 scripts/validate-chapters.ts（校验规则）
+- 规划第 10 章《结构精修》4 节（数学基础与目标函数、参数层级与策略、精修循环与 R 因子、收敛与最终模型）与第 11 章《结构验证与质量评估》4 节（几何验证、密度匹配验证、全局指标与验证报告、模型偏差的历史教训）
+- 创建 src/data/subjects/xc/ch10.ts（导出 xcCh10）与 src/data/subjects/xc/ch11.ts（导出 xcCh11），每章恰好 4 节、每节 5 个 H2、含 Markdown 表格，全文无反引号、无模板插值、无 H3、无 HTML、无制表符、无链接、无 emoji、无箭头区字符，箭头一律以文字表述
+- 首轮校验：7 节字数不足（1800–2300），逐节补充学术内容（参数计数账目、TLS 与 group B 关系、自由集传递纪律、分辨率-R 锚点表、收敛病案警示、方法学写作粒度、PDB_REDO 方法学、偏差强度阶梯、验证文化制度化等）
+- 修订文字瑕疵（informative、glamorous、buried 等英文混入改中文，「一眉」「追绍」错字纠正，删除重复段落），复查后全部通过
+
+Stage Summary:
+- 产出 2 个新文件：src/data/subjects/xc/ch10.ts（xcCh10 结构精修）、src/data/subjects/xc/ch11.ts（xcCh11 结构验证与质量评估）；未修改任何既有文件
+- 各节字符数：ch10 四节 2751/3153/2983/2782；ch11 四节 2991/2615/2634/2750（全部落在 2600–3600 区间）
+- 每节 5 个行首 H2、至少 1 个 Markdown 表格（含表头分隔行）；keyPoints 各 5–6 条含具体数字；terms 各 6–7 个中文术语；summary 均超 80 字；keywords 各 6–7 个
+- 校验输出：bun run scripts/validate-chapters.ts x-ray-crystallography ch10.ts ch11.ts 结果为「x-ray-crystallography：2 章共 8 节全部通过」
+- 内容口径：与第 9 章承接（polder/RSRCC/occupancy 纪律回指）、预告第 12 章前沿与 OneDep 验证报告；Engh 与 Huber 1991、Brunger 1992 Rfree、Schomaker 与 Trueblood 1968 TLS、Jiang 与 Brünger 1994 体溶剂、Kleywegt 2004 EDS、Read 2011 验证报告、Joosten 2009 PDB_REDO、青霉素/准晶/HIV 蛋白酶历史案例等事实均已核对口径
+---
+Task ID: 1-d1
+Agent: general-purpose
+Task: 结构生物学实验方法 ch10–11
+
+Work Log:
+- 阅读 types.ts（Chapter 接口）、sb/ch9.ts（承接口径与文风）、neuro/ch1.ts（密度样板）、validate-chapters.ts（校验规则：2600–3600 字、H2/表格/禁箭头与反引号等）
+- 编写 src/data/subjects/sb/ch10.ts：sbCh10《冷冻电镜：图像处理与三维重构》，4 节（CTF 与图像校正／颗粒挑选与二维分类／三维重构与均匀化精修／分辨率评估与模型构建），含预处理检查点表、2D 判读决策表、精修选项决策表、投稿检查清单表
+- 编写 src/data/subjects/sb/ch11.ts：sbCh11《核磁共振波谱学》，4 节（NMR 基础／共振指定与结构约束／结构计算与系综评估／动力学与拓展应用），含三大方法样品对照表、约束类型对照表、NMR vs 晶体学对照表、时间尺度总表
+- 首测字符数偏低（2118–2520），对 8 节逐节扩充学术内容（Brilot 2012、Sigworth 1998、Yip 2020 1.2 Å、CCPN 错位比对、多介质 RDC、S² 实验纪律等），复测全部落入 2746–2897
+- 运行 bun run scripts/validate-chapters.ts structural-biology ch10.ts ch11.ts：8 节全部通过；另以 bun 脚本全文扫描箭头区/emoji/制表符/反引号：零命中；未修改任何既有文件、未运行 build、未创建额外文件
+
+Stage Summary:
+- 产出：src/data/subjects/sb/ch10.ts（sbCh10）与 src/data/subjects/sb/ch11.ts（sbCh11），各 4 节、每节 5 个 H2、至少 1 个 Markdown 表格、keyPoints 5–6 条、terms 5–6 个
+- 各节字符数：ch10-s1 2897、ch10-s2 2746、ch10-s3 2752、ch10-s4 2772；ch11-s1 2757、ch11-s2 2788、ch11-s3 2806、ch11-s4 2781（全部在 2600–3600 区间）
+- 校验结果：structural-biology：2 章共 8 节全部通过（H2 各 5、表格齐备、summary 475/442 字、keywords 各 6 个）
+- 后续：第 12 章与测验 A4、术语 A4 由后续代理完成
+---
+Task ID: 3-d1
+Agent: general-purpose
+Task: 电子显微学 ch10–11
+
+Work Log:
+- 开工前通读 src/lib/types.ts（Chapter/Section 接口）、src/data/subjects/em/ch9.ts（文风与跨章承接口径）、src/data/subjects/neuro/ch1.ts（密度样板）与 scripts/validate-chapters.ts（校验规则：content 2600–3600 字符、行首 H2 不小于 4、表格、禁反引号/模板插值/H3/HTML/制表符/Markdown 链接/emoji/箭头区 U+2190–21FF）。
+- 新建 src/data/subjects/em/ch10.ts（emCh10《电子晶体学与 MicroED》）：s1 电子衍射的发现与早期历史（1927 Davisson-Germer 镍单晶 54 eV、波长约 1.67 Å；G. P. Thomson 薄膜环状衍射；1937 共享诺奖；J. J. 与 G. P. 汤姆孙父子粒子/波对仗；100/200/300 kV 波长 0.037/0.025/0.020 Å；Pinsker-Vainshtein 苏联学派；Taylor 与 Glaeser 1974 冷冻催化酶；Henderson 与 Unwin 1975 紫膜 7 Å、p3 晶格 a 约 62 Å；1990 年 3.5 Å 原子模型；里程碑年表 6 行）；s2 二维晶体电子晶体学（透析重组/亲和重组/脂单层三路；AQP1 正方晶格约 9.6 nm；振幅衍射加相位图像分账、单图剂量低于 1 e⁻/Å²；unbending 四步；lattice line 采样 g·sin θ 与约 3 度步长；Murata 等 2000 年 2.2 Å 面内/3.8 Å 垂直；AQP0 脂质可视化；2D/MicroED/SAXS 对照表）；s3 MicroED 原理与实践（ADT 与 RED 前置；Shi 等 2013 溶菌酶 2.9 Å；2014 连续旋转约 1.7 Å；晶体 0.1–4 μm、束流 0.01–0.1 e⁻/Å²/s、总剂量约 1 e⁻/Å²；Ewald 球近平面布拉格角不足半度对 X 射线约 23 度；散射截面高 10³–10⁵ 倍；动力学散射厚度阈值约一二百纳米；XDS/SHELX/phenix 软件栈复用与 Peng 等 1996 电子散射因子表；MicroED/同步辐射/XFEL 对照表）；s4 MicroED 样品与应用（涡旋上载/LCP 提取/FIB 铣薄 100–300 nm；浸泡时间随尺寸平方；Brázda 与 Palatinus 2019 动力学精修绝对构型；淀粉样肽拉链 4.7 Å 签名升级；四笔局限账；六行方法分工决策表联动第 12 章）。
+- 新建 src/data/subjects/em/ch11.ts（emCh11《扫描电子显微镜》）：s1 原理与构造（点扫对全场；放大倍数屏/扫描区之比约 10 至 10⁶ 倍；d ∝ √(I/β) 与亮度阶梯钨 10⁹ 至冷场发射 10¹⁴ A·cm⁻²·sr⁻¹；探针形成链与末光阑 20–100 μm；落地能量与减速模式 2 keV 减 1.5 kV 落地 0.5 keV；1937 von Ardenne 与 1965 Stereoscan；SEM/TEM 八行对照表）；s2 信号种类与探测器（SE 低于 50 eV、逸出 1–10 nm、SE1/SE2/SE3 三源分辨率阶梯；BSE 逸出约 0.1–1 μm、产额随 Z 约 0.7–1 次幂、碳约 0.05 金约 0.5；ET 1960 年、环内、四象限求和/相减；CL 与 EBIC；荷电四对策与 E₂ 约 1–3 keV；信号-深度-衬度六行速查表）；s3 样品制备（双重困境与表面张力 72 mN/m；梯度脱水 30 至 100%；CPD 的 CO₂ 31.1 °C、7.4 MPa 与 Anderson 1951；溅射金钯 2–10 nm、金岛 2–5 nm、铱约 1 nm 级、OTO 导电染色；CP 离子铣与块面成像；五行制备路线决策表）；s4 生物与冷冻扫描电镜（约 110 K 冷台与升华蚀刻约 −100 °C；深蚀刻复型五步流程与 P/E 面、间隙连接六角阵列、Branton 命名规范；SBF-SEM Denk 与 Horstmann 2004 年 z 步长 10–50 nm；FIB-SEM 4–10 nm、果蝇全脑约 8 nm 体素 Zheng 等 2018 年；肾病理足突融合与免疫金双标、核孔篮 Ris 场发射 SEM；体积电镜四行对照表联动第 12 章）。
+- 首轮校验：8 节字数不足（2050–2544 字符），按节逐段增补学术细节（仪器形态、损伤定量、采样算术、帧率联动、产额锚点、固定配比、工艺参数、通量限制等），并补齐 ch10-s4 与 ch11-s4 的第五个行首 H2；修正一处英文口语「miss 了」为「错过了」。
+- 复跑校验全部通过：bun run scripts/validate-chapters.ts electron-microscopy src/data/subjects/em/ch10.ts src/data/subjects/em/ch11.ts 输出「electron-microscopy：2 章共 8 节全部通过」。
+- 附加自检脚本复核：反引号、模板插值、H3、HTML 标签、制表符、Markdown 链接、方括号、箭头区 U+2190–21FF、emoji 各区段均为零命中；每节 H2 数 5、表格行 6–10 行、keyPoints 与 terms 均为 6 条；summary 475/537 字、keywords 各 7 个。
+- 边界纪律遵守：仅新建上述 2 个文件，未修改任何既有文件（git status 中其他变更均为此前任务遗留），未运行 bun run build、未 kill 进程。
+
+Stage Summary:
+- 产出 2 个新文件：src/data/subjects/em/ch10.ts（emCh10，id electron-microscopy-ch10）与 src/data/subjects/em/ch11.ts（emCh11，id electron-microscopy-ch11），各 4 节、每节 5 个行首 H2、至少 1 个 Markdown 表格（含表头分隔行）。
+- 各节字符数（JS .length）：ch10 为 2884/2804/2827/2683，ch11 为 2806/2760/2743/2820——全部落于 2600–3600 区间；keyPoints 与 terms 每节各 6 条（均在 3–6 与 3–8 区间）。
+- 校验结果：validate-chapters.ts 输出「electron-microscopy：2 章共 8 节全部通过」；禁用字符（反引号、模板插值、H3、HTML、制表符、链接、emoji、箭头区 U+2190–21FF）自检零命中。
+- 跨章引用已就位：第 1/2/3/4/6/7/8/9/12 章按需引用，第 12 章与测验 A4/术语 A4 留给后续代理。
+---
+Task ID: 1-d2
+Agent: general-purpose
+Task: 结构生物学实验方法 ch12 + 测验A4 + 术语A4（g-290~294）
+
+Work Log:
+- 开工前逐一 Read：src/lib/types.ts（Chapter/QuizQuestion/GlossaryTerm 接口）、sb/ch11.ts 与 sb/ch10.ts（文风与承接口径、出题依据）、neuro/ch1.ts（密度样板）、quiz/structural-biology-a1.ts（题型与难度分布样板）、glossary-structural-biology-a1/a2/a3.ts（既有 15 条词头 g-275~g-289 防重复）、scripts/validate-chapters.ts（箭头区 U+2190–21FF 等禁令）。
+- 编写 src/data/subjects/sb/ch12.ts《整合结构生物学与前沿》：恰好 4 节（s1 结构验证与数据库提交／s2 整合结构生物学方法／s3 计算结构生物学与 AlphaFold／s4 方法选择决策与前沿），每节 5–6 个行首 H2、至少 1 张 Markdown 表格（s1 投稿自查清单、s2 方法互补矩阵、s3 AF 置信度解读、s4 决策对照表与 2030 展望表）；跨章引用第 1、2、4、5、7、8、9、10、11 章，承接 ch10/ch11 的「第 12 章」伏笔（连续柔性重构、三法分工、整合棋局）。
+- 初版 s1/s3/s4 字数不足（2405/2189/2383），按学术密度扩充后复检通过：补充验证报告百分位与红黄绿三色读法、有序水与 B 因子梯度自查、CASP13 对照（中位 GDT 约 60）、AF2 训练规模（约十七万条 PDB 结构）、Foldseek 结构检索、MicroED 常以 MR 求解、260 kDa 六聚体酶方法选择案例等；随后做小处润色（去重复表述、修「两法一分工一共短」句、标签切除引用改指第 2 章）。
+- 编写 src/data/quiz/structural-biology-a4.ts：15 题 q-structural-biology-46 至 60，覆盖第 10/11/12 章各 5 题，每章 single ×3 + truefalse ×1 + multiple ×1、难度 1×d1+3×d2+1×d3；考点含 FSC 0.143 信噪比含义、贝叶斯抛光（Zivanov 2019）、blocres 局部分辨率、掩蔽伪相关与相位随机化、HSQC 二维身份证、TROSY 极限、NOE r⁻⁶ 与自旋扩散、RMSD 精度对准确度、CPMG/CEST/PRE、clashscore 定义、SAXS Guinier 区与 Dmax、PDB_REDO 平均 Rfree 降约 2 个百分点、45 kDa 激酶方法选择综合题、pLDDT/PAE 与 AF 边界多选题；每题 explanation 不小于 80 字。
+- 编写 src/data/glossary-structural-biology-a4.ts：恰好 5 条 g-290~g-294，与既有 15 条零重复。
+- 禁用字符自检：三文件对反引号、模板插值、H3、HTML 标签、制表符、Markdown 链接、emoji 与箭头区 U+2190–21FF 零命中；git status 确认仅新增 3 个文件、未修改任何既有文件；未运行 build、未触碰进程。
+
+Stage Summary:
+- 产出文件：src/data/subjects/sb/ch12.ts（4 节，字符数 s1 2804／s2 2821／s3 2703／s4 2760，H2 计 5/5/6/5，keyPoints 5/6/6/5，terms 5/7/6/5）、src/data/quiz/structural-biology-a4.ts（15 题，subjectId 均为 structural-biology）、src/data/glossary-structural-biology-a4.ts（5 条）。
+- 校验结果：validate-chapters.ts 输出「structural-biology：1 章共 4 节全部通过」；quiz 检查输出「quiz 15 expOK true uniq 15」且每章题型与难度分布（1,2,2,2,3）核验通过；glossary 检查输出「gloss 5 defOK true」、与既有词条重复数 0。
+- 术语 5 条中文词头：整合结构生物学、小角 X 射线散射、交联质谱、氢氘交换质谱、pLDDT 置信度。
+- 《结构生物学实验方法》全书 12 章正文与 A1–A4 批次测验（60 题）、术语（g-275~g-294 共 20 条）至此完整收卷。
+
+---
+Task ID: 2-d2
+Agent: general-purpose
+Task: X射线晶体学 ch12 + 测验A4 + 术语A4（g-310~314）
+
+Work Log:
+- 开工前逐个 Read 必读文件：src/lib/types.ts（Chapter/QuizQuestion/GlossaryTerm 接口）、subjects/xc/ch11.ts 与 ch10.ts（文风与承接口径、出题依据）、subjects/neuro/ch1.ts（密度样板）、quiz/x-ray-crystallography-a1.ts 与 a3.ts（题型/难度分布模式与 ID 续号确认 46 起）、glossary a1/a2/a3（既有 15 条词头清单，避免重复）、scripts/validate-chapters.ts（校验规则：2600–3600 字符、H2≥4、表格、箭头区 U+2190–21FF 禁令等）。
+- 撰写 src/data/subjects/xc/ch12.ts《晶体学前沿方法》：导出 xcCh12，4 节（s1 串行晶体学与XFEL：LCLS 2009/SACLA/European XFEL 2017、10–100 fs、10¹² 光子、9 个数量级亮度、Neutze 2000 与 Chapman 2011 PSI 首证、Boutet 2012 1.9 Å、GDVN/LCP 注射器、hit 率 1–10%、数万–百万图案 Monte Carlo 合并、固定靶与 SSX、剂量范式转移、三路技术对照表；s2 室温晶体学与时间分辨：冷冻伪象与构象系综、Laue 白光 ms–ns、caged compounds、Srajer 1996/Schlichting 1990、mix-and-inject ms 扩散、bR 系列 Tenboer 2014/Nango 2016/Nogly 2018、PSII S 态 Kern 2018、设计三角与方案对照表；s3 复杂体系：LCP（Landau-Rosenbusch 1996、Cherezov 2007 β2AR、Rasmussen 2011 Gs、2012 诺奖）、去垢剂 β 桶、核糖体 2.4 MDa（2000 前后、2009 诺奖）、26S 蛋白酶体约 2.5 MDa 2016、剪接体与 cryo-EM 竞速、体内结晶（Coulibaly 2007 多角体、Redecke 2013 锥虫 CatB）、中子衍射（H/D、0.1–1 mm³、ILL/SNS/J-PARC/CSNS）与攻坚策略表；s4 MicroED 与互补技术：Gonen 2013、散射强 10³、动力学散射与 Palatinus 2017 精修、药物晶型与 FDA 2019、蛋白快筛三岔路、与 cryo-EM 分工决策表、无人线站与 AlphaFold、从劳厄到 XFEL 的 110 余年收束）。
+- 首轮校验 s1/s2 字数不足（2439/2240），按学术内容扩写（亮度读法、Rsplit/CC1/2 合并统计、RT 历史回环、Laue 单张策略、扩散时标平方律、电影式产出、三角互相牵制、基态参照），复跑通过。
+- 撰写 src/data/quiz/x-ray-crystallography-a4.ts：导出 xrayCrystallographyQuizA4，15 题 q-46~q-60，覆盖 ch10/ch11/ch12 各 5 题（single×3+truefalse×1+multiple×1；每章 d1×1+d2×3+d3×1）；考点含 Rfree 不可见原则、TLS 20 参数、Babinet/体溶剂、gap 9 个百分点诊断、ML 假设辨析、Ramachandran 0.5%、clashscore 定义、PDB_REDO、RSRZ 成串报警、Cβ/llgf/百分位/rmsZ 综合多选、衍射先于破坏、串晶 hit 率与合并、LCP 主线、MicroED 10³ 与动力学散射、前沿综合多选。
+- 撰写 src/data/glossary-x-ray-crystallography-a4.ts：导出 xrayCrystallographyGlossaryA4，g-310~g-314 共 5 条（X射线自由电子激光/串行晶体学/脂立方相结晶/微晶电子衍射/时间分辨晶体学），与既有 15 条零重复，definition 均远超 80 字。
+- 执行三项强制校验全部通过；附加自检：题目 ID 连续、难度/题型分布合规、多选答案为数组、判断题选项为「正确/错误」、三个新文件箭头区/emoji/制表符/### 零命中、git status 确认仅新增 3 个文件未改任何既有文件。
+
+Stage Summary:
+- 产出 3 个新文件：src/data/subjects/xc/ch12.ts（xcCh12，id x-ray-crystallography-ch12，4 节）、src/data/quiz/x-ray-crystallography-a4.ts（15 题）、src/data/glossary-x-ray-crystallography-a4.ts（5 条，g-310~314）。
+- 各节字符数（JS .length）：s1 2715、s2 2722、s3 2731、s4 2629——全部落于 2600–3600；每节 H2 5/5/6/6、表格行 8/6/8/8；keyPoints 5/5/5/6、terms 每节 6 条。
+- 校验输出：validate-chapters.ts「x-ray-crystallography：1 章共 4 节全部通过」；quiz 15 expOK true uniq 15；gloss 5 defOK true；既有 15 条词头零重复；未修改任何既有文件、未运行 build、未触碰进程。
+- 至此《X射线晶体学》全书 12 章 + 测验 A1–A4 + 术语 A1–A4（g-295~314 共 20 条）全部完成。
+---
+Task ID: 3-d2
+Agent: general-purpose
+Task: 电子显微学 ch12 + 测验A4 + 术语A4（g-330~334）
+
+Work Log:
+- 开工前逐个 Read：types.ts（Chapter/QuizQuestion/GlossaryTerm 接口）、em/ch11.ts 与 em/ch10.ts（文风与承接口径）、neuro/ch1.ts（密度样板）、quiz/electron-microscopy-a1.ts（题型与难度分布样板）、glossary a1/a2/a3（15 条既有词头清单）、scripts/validate-chapters.ts（校验规则与箭头区 U+2190–21FF 禁令）。
+- 事实核查：grep 既有 em/ch1、ch7、ch9 的既定口径（apoferritin 1.2 Å 记作「Yip 与 Kato 等团队、2020 年前后」；Mahamid 2016 Science HeLa 为原位引路案例、子图平均里程碑 3–4 Å；DQE 从不足 0.1 升至约 0.3；计数剂量率 5–10 e⁻/像素/秒），ch12 全文照此对齐；web_search 因共享配额 429 限流，改以平台既有章节口径为准。
+- 撰写 src/data/subjects/em/ch12.ts《前沿与整合》：s1 分辨率革命（CCD 困境、K2 Summit 2012–2013、Falcon/DE、counting 与 DQE 0.1 升至 0.3–0.5、剂量分数化电影、MotionCor Li 2013 三部曲、RELION Scheres 2012 与 cryoSPARC Punjani 2017、TRPV1 3.4 Å 与 β-半乳糖苷酶 2.2 Å、诺奖 2017、里程碑年表）；s2 相位板与像差校正（Zernike 与 Boersch 1947 历史、Volta 相位板 Danev 2014、血红蛋白 64 kDa 3 Å 级、激光相位板、Cs/Cc 校正冷遇、4D-STEM 与叠层成像、成像模式对照表）；s3 人工智能与自动化（Topaz/crYOLO、自监督去噪、cryoDRGN 变分自编码器、Leginon/SerialEM/EPU、cryoSPARC Live 与 RELION-5 Nexus、EMPIAR、AlphaFold2 双向流动、AI 应用矩阵表）；s4 原位结构生物学（FIB lamella 100–300 nm 加 cryo-ET 加 STA、Mahamid 2016 引路、果蝇连接组约 8 nm 体素、混合-喷雾与光触发时间分辨、CLEM、未来四道题、原位路线对照表）。
+- 初次校验 s2/s3/s4 字数不足（2484/2205/2159），按节扩写：Boersch 相位板史、相位板工作流账本、泛化与质量分级两段、原位与体外知识对账、玻璃化体积电镜、单分子结构物理账——复跑全部通过。
+- 撰写 src/data/quiz/electron-microscopy-a4.ts：q-46~60 共 15 题，第 10/11/12 章各 5 题（single×3 + truefalse×1 + multiple×1；难度每章 1×1 + 2×3 + 3×1），考点覆盖 MicroED 晶体尺寸与剂量、连续旋转、电子散射因子与动力学精修、SE1/SE2/SE3、CPD 临界点、背散射 Z 衬度、荷电对策、SBF-SEM/FIB-SEM 权衡、counting DQE、Volta 相位板、cryoDRGN、革命要素多选、原位链路决策。
+- 撰写 src/data/glossary-electron-microscopy-a4.ts：g-330~334（直接电子探测相机、剂量分数化、Volta 相位板、叠层成像、原位结构生物学），与既有 15 条词头零重复，definition 均 ≥80 字。
+- 三道规定校验全部通过；另自查箭头区/emoji/制表符/链接均为零、判断题 options 与答案合法、多选题题干含「（多选题）」、只新增 3 个文件未改任何既有文件、未运行 build、未触碰进程。
+
+Stage Summary:
+- 产出 3 个新文件：src/data/subjects/em/ch12.ts（4 节：s1 2742、s2 2921、s3 2683、s4 2765 字符，H2 5/6/6/6，每节含表格；keyPoints 5/5/5/6、terms 每节 6 条）、src/data/quiz/electron-microscopy-a4.ts（15 题，uniq 15，explanation 最短 181 字）、src/data/glossary-electron-microscopy-a4.ts（5 条，g-330~334）。
+- 校验输出摘要：validate-chapters.ts「electron-microscopy：1 章共 4 节全部通过」；quiz 15 expOK true uniq 15（每章 single3+truefalse1+multiple1、难度 1/2/2/2/3）；gloss 5 defOK true、与既有 15 条零重复。
+- 至此《电子显微学》全书 12 章 + 测验 A1–A4（q-1~60）+ 术语 A1–A4（g-315~334 共 20 条）全部完成。
+
+---
+Task ID: 11-orchestrator
+Agent: 主线（Z.ai Code）
+Task: 三本新教材工程总控——《结构生物学实验方法》《X射线晶体学》《电子显微学》全书编写、注册集成、插图与验证推送
+
+Work Log:
+- 通读既有九学科标准（Chapter/Section 接口、validate-chapters.ts 校验规则、quiz/glossary 批次体系、主题注册点、自绘插图管线 scripts/draw/*）
+- 类型与主题先行注册：types.ts SubjectId 增加 'structural-biology'/'x-ray-crystallography'/'electron-microscopy'；subject-theme.ts（紫晶 Boxes／绯赤 Gem／磐灰 Aperture）；glossary/quiz/notes/wrongbook/revision 各视图配色与名称映射同步补齐——保证 app 全程可编译
+- 内容生产（并行代理 + 中断修复循环）：每本 12 章×4 节、每节 2600–3600 字符；sb/xc/em 各 60 题（q-{subjectId}-1~60，每章 single×3+truefalse×1+multiple×1、难度 1:3:1）与 20 条术语（g-275~294／g-295~314／g-315~334）
+- 多个代理因 harness 超时中断（模式：完成约 2/3 后被切），对过短小节一律「超集式扩写」修复（1-a-fix/2-b-fix/3-b-fix/1-c-fix/2-c-fix/3-c-fix），直至三本 144 节全部通过 validate-chapters
+- 集成注册：subjects/{structural-biology,x-ray-crystallography,electron-microscopy}.ts 学科索引；biology.ts subjects 数组（十二大学科）与 allQuizQuestions（705 题）；glossary.ts 聚合（333 条）；quiz 聚合文件 ×3；修复 electron-microscopy-a4 重复 type 属性
+- 文案更新：layout.tsx 元数据、dashboard 副标题、page.tsx 导航描述、assistant/report 视图——「九大」全部改「十二大」并列入三新学科名
+- 封面：public/images/bio/covers/cover-{structural-biology,x-ray-crystallography,electron-microscopy}.svg（沿用 800×500 学科封面体系，元素分别为三方法意象／布拉格几何+晶胞+密度图／镜筒+CTF+Thon 环+载网）；subjectCovers 注册
+- 插图：scripts/draw/scenes/{sb,xc,em}/（9+10+10 张场景，gen.ts SUBJECTS 扩展）→ public/images/bio/drawn/ 共 29 张 SVG 全部生成 ✓；挂载 src/data/draw-{sb,xc,em}-r4.ts 并入 getIllustrations
+- 验证：bunx tsc --noEmit src/ 零错误；bun run lint 零输出；agent-browser 全链路实测——学科中心 12 卡片与封面渲染、结构生物学阅读器章节目录与小节正文（H2/表格/交叉引用）、X射线晶体学测验 60 题（开卷、作答、判分、翻题）、术语词典搜索新词条（分子排阻层析）、插图在阅读器中渲染（xc-ch1-s3 等 SVG 200）；coverage 470/585（新学科 9–10/48 为有图小节，既有九学科保持 100%）
+- git commit + push（PAT token）
+
+Stage Summary:
+- 平台现为十二大学科：142 章 585 小节、教材全文约 111 万字、705 道自测题、333 条术语、29 张新自绘插图
+- 三本新教材：《结构生物学实验方法》（表达系统→纯化→结晶→X射线定相→精修→冷冻电镜→NMR→整合前沿，Scopes/Drenth/Frank/Wüthrich 体系）；《X射线晶体学》（历史→点阵与空间群→晶体生长→衍射几何→数据收集处理→相位两章→建模精修→验证→XFEL/串晶/MicroED 前沿，Rhodes/Drenth/Rupp 体系）；《电子显微学》（电子光学→成像理论→损伤物理→制样两章→单颗粒两章→断层→电子晶体学/MicroED→SEM→分辨率革命与原位前沿，Frank/Reimer/Williams&Carter 体系）
+- 遗留与建议：① 三新学科插图覆盖 9–10/48 小节（关键小节已配图），后续可按 39 系列管线补至更高覆盖；② quiz 聚合顺序 a1→a2→a3→a4 已核对无 id 冲突；③ VLM 恢复后可对 29 张新自绘图做视觉科学性复核；④ web_search 限流期间代理依赖平台口径与可靠文献记忆成稿，重要引文建议后续抽查

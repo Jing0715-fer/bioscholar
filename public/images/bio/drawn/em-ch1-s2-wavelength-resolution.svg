@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电子波长与分辨率极限：短十万倍的光源</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">λ=h/√(2meV·(1+eV/2mc²))：100kV→0.0370Å、200kV→0.0251Å、300kV→0.0197Å；阿贝极限下光镜约200nm、电子衍射极限仍约0.12nm——像差才是瓶颈</text>
+  <rect x="30" y="132" width="660" height="290" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、相对论电子波长：比可见光短约十万倍</text>
+  <text x="50" y="192" font-size="16" fill="#1e293b" font-weight="700">λ = h / √(2meV·(1 + eV/2mc<tspan dy="-5.4" font-size="11.5">2</tspan><tspan dy="5.4">))</tspan></text>
+  <text x="50" y="216" font-size="10.5" fill="#475569">非相对论近似 λ ≈ 12.27/√V（Å）：200 kV 时 0.0274 Å，再除以相对论因子 ≈1.09 → 0.0251 Å</text>
+  <rect x="50" y="232" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">加速电压</text>
+  <rect x="230" y="232" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">电子波长</text>
+  <rect x="410" y="232" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">与 550 nm 可见光之比</text>
+  <rect x="50" y="276" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="299.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">80 kV</text>
+  <rect x="230" y="276" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="299.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">0.0418 Å</text>
+  <rect x="410" y="276" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="299.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 1.3×10<tspan dy="-4.4" font-size="9.4">-5</tspan></text>
+  <rect x="50" y="312" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="312" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="335.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">100 kV</text>
+  <rect x="230" y="312" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="335.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">0.0370 Å</text>
+  <rect x="410" y="312" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="335.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 1.5×10<tspan dy="-4.4" font-size="9.4">-5</tspan></text>
+  <rect x="50" y="348" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="371.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">200 kV</text>
+  <rect x="230" y="348" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="371.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">0.0251 Å</text>
+  <rect x="410" y="348" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="371.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 2.2×10<tspan dy="-4.4" font-size="9.4">-5</tspan></text>
+  <rect x="50" y="384" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="384" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="407.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">300 kV</text>
+  <rect x="230" y="384" width="180" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="320" y="407.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">0.0197 Å</text>
+  <rect x="410" y="384" width="260" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="407.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 2.8×10<tspan dy="-4.4" font-size="9.4">-5</tspan></text>
+  <rect x="710" y="132" width="660" height="290" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、阿贝极限：d = 0.61λ / (n·sinα)</text>
+  <rect x="730" y="196" width="300" height="118" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="880" y="220" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">光学显微镜（油浸）</text>
+  <text x="880" y="244" font-size="11" fill="#64748b" text-anchor="middle">λ ≈ 550 nm，NA = n·sinα ≈ 1.4</text>
+  <text x="880" y="266" font-size="11" fill="#64748b" text-anchor="middle">玻璃透镜近完美</text>
+  <text x="880" y="294" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">极限分辨率 ≈ 200 nm</text>
+  <rect x="1050" y="196" width="300" height="118" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1200" y="220" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">电子物镜（300 kV）</text>
+  <text x="1200" y="244" font-size="11" fill="#64748b" text-anchor="middle">λ = 0.00197 nm，n = 1</text>
+  <text x="1200" y="266" font-size="11" fill="#64748b" text-anchor="middle">α ≈ 10 mrad（像差随 α 急增）</text>
+  <text x="1200" y="294" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">d ≈ 0.61×0.00197/0.01 ≈ 0.12 nm</text>
+  <text x="730" y="338" font-size="10.5" fill="#475569">孔径角被砍小四个数量级，衍射极限仍在 1 Å 上下——波长已不是瓶颈，像差才是：球差 Cs 典型 0.5–2 mm、色差 Cc 约 1–2 mm</text>
+  <text x="730" y="354" font-size="10.5" fill="#475569">（Scherzer 定理）。</text>
+  <text x="1040" y="396" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="600">点分辨率（Cs 与 λ 决定）≠ 信息极限（相干性与稳定性决定）</text>
+  <rect x="30" y="448" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="470.84" font-size="19" fill="#475569" font-weight="700">三、分辨率阶梯（示意，非等比例）</text>
+  <rect x="50" y="643.75" width="146.5" height="46.25" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="64" y="667.75" font-size="15" fill="#1e293b">可见光显微镜 约 200 nm</text>
+  <rect x="202.5" y="597.5" width="146.5" height="46.25" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="216.5" y="621.5" font-size="15" fill="#1e293b">X 射线波带片 数十 nm</text>
+  <rect x="355" y="551.25" width="146.5" height="46.25" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="369" y="575.25" font-size="15" fill="#1e293b">电子未校正 0.5–2 Å</text>
+  <rect x="507.5" y="505" width="146.5" height="46.25" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="521.5" y="529" font-size="15" fill="#1e293b">球差校正 sub-Å</text>
+  <text x="335" y="715" font-size="10.5" fill="#475569" text-anchor="middle">1998 年六极校正器装机，材料电镜进入 sub-Å；生物电镜同期走离焦相位衬度 + 算法修正路线</text>
+  <rect x="710" y="448" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="470.84" font-size="19" fill="#475569" font-weight="700">四、三种成像探针对比</text>
+  <rect x="730" y="492" width="90" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="519.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">探针</text>
+  <rect x="820" y="492" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="519.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">波长</text>
+  <rect x="950" y="492" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="519.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">透镜状况</text>
+  <rect x="1140" y="492" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="519.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">实际分辨率</text>
+  <rect x="730" y="536" width="90" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="567.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">可见光</text>
+  <rect x="820" y="536" width="130" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="567.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">400–700 nm</text>
+  <rect x="950" y="536" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="567.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">玻璃近完美，NA ≈ 1.4</text>
+  <rect x="1140" y="536" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="567.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 200 nm</text>
+  <rect x="730" y="588" width="620" height="52" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="588" width="90" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="619.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">X 射线</text>
+  <rect x="820" y="588" width="130" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="619.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">约 0.1 nm</text>
+  <rect x="950" y="588" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="619.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">无优质折射透镜（波带片）</text>
+  <rect x="1140" y="588" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="619.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">透镜成像数十 nm</text>
+  <rect x="730" y="640" width="90" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="671.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">电子</text>
+  <rect x="820" y="640" width="130" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="885" y="671.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">皮米级 0.02–0.04 Å</text>
+  <rect x="950" y="640" width="190" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1045" y="671.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">磁透镜，α ≈ 10 mrad</text>
+  <rect x="1140" y="640" width="210" height="52" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="671.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">未校正 0.5–2 Å；校正后 sub-Å</text>
+  <text x="730" y="716" font-size="10.5" fill="#475569">X 射线「有光无镜」，被波带片锁死在数十纳米；电子「镜不如光」但远远够用——皮米波长被毫米级像差削平到亚纳米。</text>
+  <rect x="30" y="772" width="1340" height="206" rx="10" fill="#f1f5f9" fill-opacity="0.45"/>
+  <text x="46" y="798" font-size="18" fill="#475569" font-weight="700">五、电压选择的权衡：生物 cryo-EM 主流 300 kV</text>
+  <text x="46" y="820" font-size="13.5" fill="#64748b">高电压波长短、穿透厚、亮度高；低电压轻元素衬度高——取舍逻辑详见第 4、6 章</text>
+  <text x="60" y="858" font-size="12.5" fill="#475569" font-weight="700">高电压</text>
+  <rect x="109" y="876.65" width="62" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="140" y="889.96" font-size="11" fill="#065f46" text-anchor="middle">波长更短</text>
+  <rect x="209" y="876.65" width="62" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="240" y="889.96" font-size="11" fill="#065f46" text-anchor="middle">穿透更厚</text>
+  <rect x="319" y="876.65" width="62" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="350" y="889.96" font-size="11" fill="#065f46" text-anchor="middle">亮度提升</text>
+  <rect x="103.36" y="910.65" width="133.28" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="170" y="923.96" font-size="11" fill="#991b1b" text-anchor="middle">knock-on 位移损伤上升</text>
+  <rect x="292.5" y="910.65" width="95" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="340" y="923.96" font-size="11" fill="#991b1b" text-anchor="middle">轻元素衬度下降</text>
+  <rect x="579.0072" y="875.8" width="241.98559999999998" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="700" y="890.32" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">300 kV（Titan Krios 一类）：主流折中</text>
+  <text x="700" y="922" font-size="10.5" fill="#475569" text-anchor="middle">低剂量筛选与小分子敏感成像亦用 100–200 kV 机型</text>
+  <text x="960" y="858" font-size="12.5" fill="#475569" font-weight="700">低电压（80–100 kV）</text>
+  <rect x="1012.5" y="876.65" width="95" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1060" y="889.96" font-size="11" fill="#075985" text-anchor="middle">轻元素衬度更高</text>
+  <rect x="1132" y="876.65" width="106" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1185" y="889.96" font-size="11" fill="#075985" text-anchor="middle">剂量效率机制不同</text>
+  <rect x="1029" y="910.65" width="62" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1060" y="923.96" font-size="11" fill="#991b1b" text-anchor="middle">穿透变薄</text>
+  <rect x="1143" y="910.65" width="84" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1185" y="923.96" font-size="11" fill="#991b1b" text-anchor="middle">色差影响加重</text>
+</svg>

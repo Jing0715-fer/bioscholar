@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">布拉格定律、倒易点阵与埃瓦尔德反射球</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">2dsinθ=nλ（λ=1Å：d=2.0/1.0/0.8Å→θ=14.5°/30.0°/38.7°）；倒易格矢|g|=1/d；Ewald球半径1/λ、五步作图；限制球2/λ=2Å<tspan dy="-5.8" font-size="12.2">-1</tspan><tspan dy="5.8">；d</tspan><tspan dy="3.7" font-size="12.2">min</tspan><tspan dy="-3.7">2→1Å反射数×8</tspan></text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、布拉格定律：把衍射当反射处理</text>
+  <line x1="100" y1="210" x2="560" y2="210" stroke="#475569" stroke-width="2"/>
+  <circle cx="108" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="149" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="190" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="231" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="272" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="313" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="354" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="395" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="436" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="477" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="518" cy="210" r="2.4" fill="#64748b"/>
+  <circle cx="559" cy="210" r="2.4" fill="#64748b"/>
+  <line x1="100" y1="270" x2="560" y2="270" stroke="#475569" stroke-width="2"/>
+  <circle cx="108" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="149" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="190" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="231" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="272" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="313" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="354" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="395" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="436" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="477" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="518" cy="270" r="2.4" fill="#64748b"/>
+  <circle cx="559" cy="270" r="2.4" fill="#64748b"/>
+  <line x1="100" y1="330" x2="560" y2="330" stroke="#475569" stroke-width="2"/>
+  <circle cx="108" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="149" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="190" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="231" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="272" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="313" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="354" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="395" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="436" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="477" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="518" cy="330" r="2.4" fill="#64748b"/>
+  <circle cx="559" cy="330" r="2.4" fill="#64748b"/>
+  <line x1="100" y1="390" x2="560" y2="390" stroke="#475569" stroke-width="2"/>
+  <circle cx="108" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="149" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="190" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="231" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="272" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="313" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="354" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="395" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="436" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="477" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="518" cy="390" r="2.4" fill="#64748b"/>
+  <circle cx="559" cy="390" r="2.4" fill="#64748b"/>
+  <line x1="585" y1="270" x2="585" y2="330" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)" marker-start="url(#arr-enz)"/>
+  <text x="600" y="304" font-size="13" fill="#be185d" text-anchor="middle" font-weight="700" font-style="italic">d</text>
+  <line x1="140" y1="160" x2="320" y2="270" stroke="#d97706" stroke-width="2.6" marker-end="url(#arr-warn)"/>
+  <line x1="320" y1="270" x2="500" y2="160" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <line x1="320" y1="270" x2="413" y2="330" stroke="#d97706" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <line x1="413" y1="330" x2="593" y2="220" stroke="#be185d" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arr-enz)"/>
+  <path d="M 284,254 A 38,38 0 0 1 291,270" fill="none" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="272" y="246" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700" font-style="italic">θ</text>
+  <path d="M 349,254 A 38,38 0 0 0 342,270" fill="none" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="368" y="246" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700" font-style="italic">θ</text>
+  <text x="230" y="188" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">入射</text>
+  <text x="438" y="188" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">反射</text>
+  <text x="372" y="316" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700" font-style="italic">θ</text>
+  <text x="330" y="420" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">2d sinθ = nλ</text>
+  <text x="430" y="408" font-size="10" fill="#475569">相邻两面「反射」的程差恰为波长整数倍时相干加强；</text>
+  <text x="430" y="422" font-size="10" fill="#475569">「镜面反射」是全体电子散射干涉相长的几何近似</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、布拉格角数量级与高级反射</text>
+  <text x="878" y="190" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">λ = 1 Å 的算例</text>
+  <rect x="730" y="202" width="76" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="768" y="229.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">d（Å）</text>
+  <rect x="806" y="202" width="70" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="229.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">θ</text>
+  <rect x="876" y="202" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="951" y="229.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">要点</text>
+  <rect x="730" y="246" width="76" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="768" y="267.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">2.0</text>
+  <rect x="806" y="246" width="70" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="267.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">14.5°</text>
+  <rect x="876" y="246" width="150" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="951" y="267.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">中分辨率</text>
+  <rect x="730" y="278" width="296" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="278" width="76" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="768" y="299.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">1.0</text>
+  <rect x="806" y="278" width="70" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="299.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">30.0°</text>
+  <rect x="876" y="278" width="150" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="951" y="299.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">原子分辨率</text>
+  <rect x="730" y="310" width="76" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="768" y="331.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">0.8</text>
+  <rect x="806" y="310" width="70" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="841" y="331.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">38.7°</text>
+  <rect x="876" y="310" width="150" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="951" y="331.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">高角区</text>
+  <text x="730" y="372" font-size="10.5" fill="#475569">高分辨率数据天然住在高角区——探测器须后撤或 2θ 偏移才能接住</text>
+  <text x="730" y="387" font-size="10.5" fill="#475569">（第 5 章）。倒易格矢长度 1/d = |g| = 2 sinθ/λ。</text>
+  <text x="1060" y="200" font-size="12" fill="#1e293b" font-weight="700">高级反射：</text>
+  <text x="1060" y="222" font-size="10.5" fill="#475569">(hkl) 的一级反射与 (2h 2k 2l) 的「一级」指向同一方向</text>
+  <text x="1060" y="237" font-size="10.5" fill="#475569">（后者面间距恰为 d/2）——级数吸收进指数，</text>
+  <text x="1060" y="252" font-size="10.5" fill="#475569">统一写作 2d<tspan dy="2.3" font-size="7.6">hkl</tspan><tspan dy="-2.3"> sinθ = λ。</tspan></text>
+  <text x="1060" y="292" font-size="12" fill="#1e293b" font-weight="700">谐波污染：</text>
+  <text x="1060" y="314" font-size="10.5" fill="#475569">单色光混有 λ/2 分量时，</text>
+  <text x="1060" y="329" font-size="10.5" fill="#475569">会以同一布拉格角在探测器上冒充「更高等」反射——家用源靠镍滤波片与石墨单色器、</text>
+  <text x="1060" y="344" font-size="10.5" fill="#475569">同步辐射靠单色器谐波抑制设计压住。</text>
+  <rect x="30" y="452" width="660" height="520" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、埃瓦尔德反射球：衍射条件的几何化（五步作图）</text>
+  <circle cx="240" cy="700" r="180" fill="#e0f2fe" fill-opacity="0.28" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="58" y1="700" x2="232" y2="700" stroke="#d97706" stroke-width="2.6" marker-end="url(#arr-warn)"/>
+  <text x="120" y="684" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">入射波矢 k<tspan dy="2.4" font-size="7.9">in</tspan></text>
+  <text x="240" y="722" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">晶体 O（球心）</text>
+  <circle cx="420" cy="700" r="5" fill="#dc2626"/>
+  <text x="420" y="724" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">倒易原点 L</text>
+  <text x="330" y="724" font-size="10.5" fill="#075985" text-anchor="middle">球半径 1/λ</text>
+  <circle cx="420" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="420" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="420" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="420" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="420" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="348" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="348" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="348" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="348" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="348" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="348" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="312" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="312" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="312" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="312" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="312" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="312" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="276" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="276" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="276" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="276" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="276" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="276" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="240" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="240" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="240" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="240" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="240" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="240" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="204" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="204" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="204" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="204" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="204" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="204" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="168" cy="700" r="2.8" fill="#64748b"/>
+  <circle cx="168" cy="664" r="2.8" fill="#64748b"/>
+  <circle cx="168" cy="628" r="2.8" fill="#64748b"/>
+  <circle cx="168" cy="592" r="2.8" fill="#64748b"/>
+  <circle cx="168" cy="556" r="2.8" fill="#64748b"/>
+  <circle cx="168" cy="520" r="2.8" fill="#64748b"/>
+  <circle cx="384" cy="592" r="5.5" fill="#0369a1" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="240" y1="700" x2="384" y2="592" stroke="#be185d" stroke-width="2.6" marker-end="url(#arr-enz)"/>
+  <text x="296" y="626" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">衍射束 k<tspan dy="2.4" font-size="7.9">out</tspan></text>
+  <line x1="420" y1="700" x2="384" y2="592" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="452" y="640" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">g = h b<tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4"> + k b</tspan><tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4"> + l b</tspan><tspan dy="2.4" font-size="7.9">3</tspan></text>
+  <text x="452" y="658" font-size="10.5" fill="#dc2626" text-anchor="middle">|g| = 1/d<tspan dy="2.3" font-size="7.6">hkl</tspan></text>
+  <text x="388" y="566" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">落在球面即衍射</text>
+  <text x="462" y="530" font-size="10" fill="#475569">① 取一点 O 为晶体（球心）</text>
+  <text x="462" y="548" font-size="10" fill="#475569">② 自 O 沿入射方向取长度 1/λ 得 L</text>
+  <text x="462" y="566" font-size="10" fill="#475569">③ 以 O 为心、1/λ 为半径作球</text>
+  <text x="462" y="584" font-size="10" fill="#475569">④ 把倒易点阵原点置于 L</text>
+  <text x="462" y="602" font-size="10" fill="#475569">⑤ 旋转晶体＝倒易点阵绕过 L 的轴旋转——格点扫过球面的瞬间即产生衍射斑</text>
+  <text x="462" y="668" font-size="10" fill="#64748b">盲区：</text>
+  <text x="462" y="682" font-size="10" fill="#64748b">紧贴转轴的格点永远贴不上球面——单轴旋转天然留下锥形盲区，</text>
+  <text x="462" y="696" font-size="10" fill="#64748b">须靠等效反射（高对称群）</text>
+  <text x="462" y="710" font-size="10" fill="#64748b">或第二个晶体取向补足。</text>
+  <text x="60" y="906" font-size="10.5" fill="#475569">数量级：λ≈1 Å → 球半径 1 Å<tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">；晶胞 100 Å 的倒易格点间距仅约 0.01 Å</tspan><tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">——球面相对格点阵近乎平直，静止晶体几乎不出斑，</tspan></text>
+  <text x="60" y="921" font-size="10.5" fill="#475569">旋转法由此成为必然。</text>
+  <rect x="710" y="452" width="660" height="520" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、限制球 2/λ 与反射数立方律</text>
+  <circle cx="960" cy="730" r="200" fill="#fee2e2" fill-opacity="0.3" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="8 5"/>
+  <circle cx="960" cy="730" r="100" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="960" cy="730" r="50" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="2.2"/>
+  <circle cx="960" cy="730" r="4" fill="#1e293b"/>
+  <text x="960" y="692" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">d<tspan dy="2.3" font-size="7.6">min</tspan><tspan dy="-2.3">=2 Å</tspan></text>
+  <text x="960" y="708" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">|g| ≤ 0.5 Å<tspan dy="-3.6" font-size="7.6">-1</tspan></text>
+  <text x="960" y="620" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">d<tspan dy="2.3" font-size="7.6">min</tspan><tspan dy="-2.3">=1 Å</tspan></text>
+  <text x="960" y="636" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">|g| ≤ 1 Å<tspan dy="-3.6" font-size="7.6">-1</tspan></text>
+  <text x="960" y="552" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">限制球 |g| ≤ 2/λ = 2 Å<tspan dy="-3.7" font-size="7.9">-1</tspan><tspan dy="3.7">（λ=1 Å，背散射极限）</tspan></text>
+  <text x="1178" y="590" font-size="10.5" fill="#475569">d<tspan dy="2.3" font-size="7.6">min</tspan><tspan dy="-2.3"> 从 2 Å 推到 1 Å：</tspan></text>
+  <text x="1178" y="605" font-size="10.5" fill="#475569">倒易球半径翻倍、反射数约增 8 倍</text>
+  <text x="1178" y="620" font-size="10.5" fill="#475569">（立方律）</text>
+  <text x="1178" y="635" font-size="10.5" fill="#475569">——10⁶ Å³ 晶胞到 2 Å 约 5×10⁵ 个反射、</text>
+  <text x="1178" y="650" font-size="10.5" fill="#475569">到 1 Å 约 4×10⁶ 个；</text>
+  <text x="1178" y="665" font-size="10.5" fill="#475569">2 Å 分辨率球体积仅占限制球 1/64，</text>
+  <text x="1178" y="680" font-size="10.5" fill="#475569">1 Å 时升至 1/8。</text>
+  <text x="730" y="906" font-size="10.5" fill="#64748b">正交晶胞 a=80、b=100、c=120 Å 的倒易格点间距分别为 0.0125、0.0100、0.0083 Å<tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">——球面随便哪个方向都排七八十个格点，</tspan></text>
+  <text x="730" y="921" font-size="10.5" fill="#64748b">长晶胞衍射图拥挤由此而来（大晶胞须小转角、远距离）。</text>
+</svg>

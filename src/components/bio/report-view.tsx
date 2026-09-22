@@ -339,7 +339,7 @@ export function ReportView() {
               学习报告
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              汇总九大学科的学习进度、测验成绩、复习记忆与学习活跃度，
+              汇总十二大学科的学习进度、测验成绩、复习记忆与学习活跃度，
               形成一份可存档的阶段学习档案。
             </p>
             <p className="mt-2 text-xs tabular-nums text-muted-foreground/80">

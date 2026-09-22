@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">颗粒挑选与二维分类：三种眼力与 √N 法则</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">LoG/深度学习挑选（框径1.2–1.5倍）；类平均SNR∝√N（Scheres2012贝叶斯）；好类判读α螺旋约10Å；垃圾类剔除；参考偏差三防线（Dotson-Glaeser2016）</text>
+  <rect x="30" y="132" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、颗粒挑选：三种眼力</text>
+  <rect x="87.31" y="165.225" width="65.38" height="19.55" rx="7" fill="#d9770622" stroke="#d97706" stroke-width="1.5"/>
+  <text x="120" y="179.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">模板相关</text>
+  <text x="230" y="179" font-size="10.5" fill="#475569">参考投影互相关；快但易参考偏差</text>
+  <rect x="74.99119999999999" y="211.225" width="90.0176" height="19.55" rx="7" fill="#05966922" stroke="#059669" stroke-width="1.5"/>
+  <text x="120" y="225.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">LoG 差分高斯</text>
+  <text x="230" y="225" font-size="10.5" fill="#475569">免参考、按尺寸先验找斑；稳健通用</text>
+  <rect x="87.31" y="257.225" width="65.38" height="19.55" rx="7" fill="#0369a122" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="120" y="271.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">深度学习</text>
+  <text x="230" y="271" font-size="10.5" fill="#475569">Topaz/cryolo/cryoSPARC；众包训练集</text>
+  <text x="60" y="330" font-size="10.5" fill="#475569">框尺寸取颗粒直径的 1.2–1.5 倍；挑选后人工复查：中心偏移、双粒、聚集、冰污染剔除。一张微图典型 50–300 颗粒，</text>
+  <text x="60" y="346" font-size="10.5" fill="#475569">一套数据 10<tspan dy="-3.6" font-size="7.6">5</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">6</tspan><tspan dy="3.6"> 颗粒。</tspan></text>
+  <rect x="710" y="132" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、二维分类：类平均与 √N 法则</text>
+  <text x="730" y="170" font-size="10.5" fill="#475569">把颗粒按取向聚类、类内对齐平均——信噪比随颗粒数 N 的平方根提升。贝叶斯最大似然框架（Scheres 2012 年）</text>
+  <text x="730" y="185" font-size="10.5" fill="#475569">把取向与类别当隐变量边缘化。</text>
+  <line x1="760" y1="380" x2="1320" y2="380" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="760" y1="380" x2="760" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <path d="M 760,380 Q 920,250 1320,230" fill="none" stroke="#059669" stroke-width="2.6"/>
+  <line x1="760" y1="380" x2="760" y2="374" stroke="#475569" stroke-width="1.6"/>
+  <text x="760" y="398" font-size="9.5" fill="#64748b" text-anchor="middle">N=1</text>
+  <circle cx="760" cy="378.5" r="3.5" fill="#059669" stroke="none"/>
+  <line x1="1012" y1="380" x2="1012" y2="374" stroke="#475569" stroke-width="1.6"/>
+  <text x="1012" y="398" font-size="9.5" fill="#64748b" text-anchor="middle">N=100</text>
+  <circle cx="1012" cy="365" r="3.5" fill="#059669" stroke="none"/>
+  <line x1="1275.2" y1="380" x2="1275.2" y2="374" stroke="#475569" stroke-width="1.6"/>
+  <text x="1275.2" y="398" font-size="9.5" fill="#64748b" text-anchor="middle">N=10000</text>
+  <circle cx="1275.2" cy="230" r="3.5" fill="#059669" stroke="none"/>
+  <text x="1040" y="420" font-size="10.5" fill="#475569" text-anchor="middle">类内颗粒数 N（对数趋势）</text>
+  <text x="1354" y="300" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">SNR ∝ √N</text>
+  <text x="730" y="396" font-size="10.5" fill="#475569">类数选 50–200 起步；「好类」标准：α 螺旋约 10 Å 纹理可辨、类内一致、视角多样。</text>
+  <rect x="30" y="432" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="454.84" font-size="19" fill="#475569" font-weight="700">三、2D 类别判读：一眼分好坏</text>
+  <rect x="119.155" y="460.225" width="41.69" height="19.55" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="140" y="474.14" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">好类</text>
+  <circle cx="110" cy="545" r="32" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <line x1="88" y1="545" x2="132" y2="545" stroke="#065f46" stroke-width="2.4"/>
+  <line x1="90" y1="535" x2="130" y2="535" stroke="#065f46" stroke-width="1.2"/>
+  <line x1="90" y1="555" x2="130" y2="555" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="200" cy="545" r="32" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <line x1="178" y1="545" x2="222" y2="545" stroke="#065f46" stroke-width="2.4"/>
+  <line x1="180" y1="535" x2="220" y2="535" stroke="#065f46" stroke-width="1.2"/>
+  <line x1="180" y1="555" x2="220" y2="555" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="290" cy="545" r="32" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <line x1="268" y1="545" x2="312" y2="545" stroke="#065f46" stroke-width="2.4"/>
+  <line x1="270" y1="535" x2="310" y2="535" stroke="#065f46" stroke-width="1.2"/>
+  <line x1="270" y1="555" x2="310" y2="555" stroke="#065f46" stroke-width="1.2"/>
+  <text x="60" y="600" font-size="10.5" fill="#475569">内部结构可辨、视角互补——保留进 3D；α 螺旋约 10 Å 条纹是分辨率合格的第一信号。</text>
+  <rect x="113.2325" y="635.225" width="53.535000000000004" height="19.55" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="140" y="649.14" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">垃圾类</text>
+  <circle cx="110" cy="700" r="30" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <circle cx="102" cy="694" r="7" fill="#dc2626" stroke="none"/>
+  <circle cx="120" cy="706" r="9" fill="#dc2626" stroke="none"/>
+  <circle cx="200" cy="700" r="30" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="182" y="690" width="36" height="18" fill="none" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="290" cy="700" r="30" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="274" y1="688" x2="306" y2="712" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="274" y1="712" x2="306" y2="688" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="340" y="660" font-size="10.5" fill="#475569">左：空框/碎屑；中：聚集物；右：冰污染——一律剔除。</text>
+  <text x="340" y="700" font-size="10.5" fill="#475569">全部类别视角单一：警惕优势取向（AWI，第 9 章第 4 节）</text>
+  <text x="340" y="715" font-size="10.5" fill="#475569">——需干预制样而非硬算。</text>
+  <rect x="710" y="432" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="454.84" font-size="19" fill="#475569" font-weight="700">四、参考偏差：噪声里的幽灵</text>
+  <text x="730" y="470" font-size="10.5" fill="#475569">用原子模型投影做 2D 参考可能「诱导」出模型假象——Dotson 与 Glaeser 2016 年的论战让全社区警醒：随机参考或 LoG 起步、</text>
+  <text x="730" y="486" font-size="10.5" fill="#475569">多参考并行、垃圾类不硬救，是三条防线。</text>
+  <text x="730" y="540" font-size="10.5" fill="#475569">2D 阶段还有诊断价值：构象异质性初判（类别形态连续变化提示多构象）、对称性初判（正面观的角度对称）。</text>
+  <text x="1040" y="700" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">2D 是数据质量的镜子——见第 10 章第 3 节的 3D 分类与精修</text>
+  <text x="700" y="772" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="600">挑选给足数量、分类给足质量——三维重构的成功在这两步就已成了一半</text>
+</svg>

@@ -9,7 +9,7 @@ import { writeFileSync, statSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const OUT = resolve(import.meta.dir, '../../public/images/bio/drawn')
-const SUBJECTS = ['bc', 'mb', 'cb', 'bp', 'mi', 'im', 'ne', 'bi', 'vi'] as const
+const SUBJECTS = ['bc', 'mb', 'cb', 'bp', 'mi', 'im', 'ne', 'bi', 'vi', 'sb', 'xc', 'em'] as const
 
 async function load(subj: string): Promise<Record<string, string>> {
   const merged: Record<string, string> = {}

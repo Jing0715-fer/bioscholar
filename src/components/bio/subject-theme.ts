@@ -10,6 +10,9 @@ import {
   Brain,
   Network,
   Bug,
+  Boxes,
+  Gem,
+  Aperture,
 } from 'lucide-react'
 
 /** 学科主题色映射（Tailwind 类名） */
@@ -157,6 +160,48 @@ export const subjectThemes: Record<
       hover: 'hover:border-orange-500/60 hover:shadow-orange-500/10',
     },
     colorName: '朱橙',
+  },
+  'structural-biology': {
+    icon: Boxes,
+    classes: {
+      bg: 'bg-purple-600 text-white',
+      bgSoft: 'bg-purple-500/10',
+      text: 'text-purple-700 dark:text-purple-400',
+      border: 'border-purple-500/40',
+      ring: 'ring-purple-500/30',
+      gradient: 'from-purple-500/90 to-fuchsia-600/90',
+      badge: 'bg-purple-500/15 text-purple-700 dark:text-purple-400 border-purple-500/30',
+      hover: 'hover:border-purple-500/60 hover:shadow-purple-500/10',
+    },
+    colorName: '紫晶',
+  },
+  'x-ray-crystallography': {
+    icon: Gem,
+    classes: {
+      bg: 'bg-red-600 text-white',
+      bgSoft: 'bg-red-500/10',
+      text: 'text-red-700 dark:text-red-400',
+      border: 'border-red-500/40',
+      ring: 'ring-red-500/30',
+      gradient: 'from-red-500/90 to-orange-600/90',
+      badge: 'bg-red-500/15 text-red-700 dark:text-red-400 border-red-500/30',
+      hover: 'hover:border-red-500/60 hover:shadow-red-500/10',
+    },
+    colorName: '绯赤',
+  },
+  'electron-microscopy': {
+    icon: Aperture,
+    classes: {
+      bg: 'bg-stone-600 text-white',
+      bgSoft: 'bg-stone-500/10',
+      text: 'text-stone-700 dark:text-stone-300',
+      border: 'border-stone-500/40',
+      ring: 'ring-stone-500/30',
+      gradient: 'from-stone-500/90 to-neutral-700/90',
+      badge: 'bg-stone-500/15 text-stone-700 dark:text-stone-300 border-stone-500/30',
+      hover: 'hover:border-stone-500/60 hover:shadow-stone-500/10',
+    },
+    colorName: '磐灰',
   },
 }
 

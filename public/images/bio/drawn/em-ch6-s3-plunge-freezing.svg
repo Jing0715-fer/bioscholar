@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">plunge freezing：玻璃化冷冻的工作流</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">环境仓湿度&gt;90%（4–20°C）→滤纸blot1–5s→约0.1–0.5s浸入液态乙烷（约90K）速冷10⁵–10⁶K/s→液氮储存&lt;130K；样品浓度0.5–5mg/mL、目标冰厚30–100nm</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、商品化装置四要素（Vitrobot / EM GP）</text>
+  <rect x="60" y="190" width="280" height="150" rx="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="200" y="216" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">① 环境仓</text>
+  <text x="200" y="242" font-size="10.5" fill="#475569" text-anchor="middle">湿度保持 90–100%（近饱和）</text>
+  <text x="200" y="261" font-size="10.5" fill="#475569" text-anchor="middle">温度 4–20 °C 可控</text>
+  <text x="200" y="280" font-size="10.5" fill="#475569" text-anchor="middle">防蒸发致盐浓缩、颗粒聚集</text>
+  <rect x="390" y="190" width="280" height="150" rx="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="530" y="216" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="700">② 滤纸 blot</text>
+  <text x="530" y="242" font-size="10.5" fill="#475569" text-anchor="middle">blot 时间典型 1–5 s（0.5 s 微调）</text>
+  <text x="530" y="261" font-size="10.5" fill="#475569" text-anchor="middle">Vitrobot 双侧对夹 / EM GP 单侧点吸</text>
+  <text x="530" y="280" font-size="10.5" fill="#475569" text-anchor="middle">滤纸型号、压力与次数定残液量</text>
+  <rect x="720" y="190" width="280" height="150" rx="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="860" y="216" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="700">③ 快速 plunge</text>
+  <text x="860" y="242" font-size="10.5" fill="#475569" text-anchor="middle">约 0.1–0.5 s 送入液态乙烷</text>
+  <text x="860" y="261" font-size="10.5" fill="#475569" text-anchor="middle">乙烷约 90 K（液氮预冷至熔点附近）</text>
+  <text x="860" y="280" font-size="10.5" fill="#475569" text-anchor="middle">速冷 10<tspan dy="-3.6" font-size="7.6">5</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">6</tspan><tspan dy="3.6"> K/s → 玻璃化</tspan></text>
+  <rect x="1050" y="190" width="280" height="150" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1190" y="216" font-size="14" fill="#065f46" text-anchor="middle" font-weight="700">④ 液氮转移储存</text>
+  <text x="1190" y="242" font-size="10.5" fill="#475569" text-anchor="middle">乙烷槽外套液氮杜瓦</text>
+  <text x="1190" y="261" font-size="10.5" fill="#475569" text-anchor="middle">带屏蔽罩的转移盒全程 &lt; 约 130 K</text>
+  <text x="1190" y="280" font-size="10.5" fill="#475569" text-anchor="middle">防霜链路闭合，样品待用</text>
+  <line x1="343" y1="265" x2="386" y2="265" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="673" y1="265" x2="716" y2="265" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="1003" y1="265" x2="1046" y2="265" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <text x="700" y="382" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">目标冰厚约 30–100 nm、颗粒单层悬浮：太厚多重散射衬度塌，太薄颗粒被挤向空气-水界面</text>
+  <text x="700" y="408" font-size="10.5" fill="#64748b" text-anchor="middle">湿度大于 90% 的物理必要性：近饱和水汽掐断蒸发链，液滴组成在进入乙烷前保持原样</text>
+  <rect x="30" y="456" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="478.84" font-size="19" fill="#475569" font-weight="700">二、为什么是液态乙烷（约 90 K）：Leidenfrost 的教训</text>
+  <polygon points="70,530 230,530 215,640 85,640" fill="#e0f2fe" stroke="#475569" stroke-width="2"/>
+  <rect x="135" y="460" width="30" height="10" fill="#64748b"/>
+  <line x1="150" y1="470" x2="150" y2="575" stroke="#475569" stroke-width="3"/>
+  <circle cx="128" cy="540" r="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="129.53017542194902" cy="546" r="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="149.85011533491343" cy="552" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="133.47896152981048" cy="558" r="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="156.5987233852993" cy="564" r="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="151.42423444615088" cy="570" r="5" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="143.18029884094904" cy="576" r="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="150" y="664" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">液氮（77 K）</text>
+  <text x="150" y="684" font-size="10.5" fill="#dc2626" text-anchor="middle">Leidenfrost 气膜绝热，热流被掐断</text>
+  <polygon points="390,530 550,530 535,640 405,640" fill="#ccfbf1" stroke="#475569" stroke-width="2"/>
+  <rect x="455" y="460" width="30" height="10" fill="#64748b"/>
+  <line x1="470" y1="470" x2="470" y2="575" stroke="#475569" stroke-width="3"/>
+  <text x="470" y="664" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">液态乙烷（约 90 K）</text>
+  <text x="470" y="684" font-size="10.5" fill="#134e4a" text-anchor="middle">液-液接触无气膜，换热高约一个数量级</text>
+  <rect x="374.518934" y="701.075" width="190.962132" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="470" y="713.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">速冷 10<tspan dy="-3.6" font-size="7.6">5</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">6</tspan><tspan dy="3.6"> K/s，越过玻璃化门槛</tspan></text>
+  <text x="340" y="734" font-size="10" fill="#64748b" text-anchor="middle">纯水玻璃化需 10<tspan dy="-3.4" font-size="7.2">6</tspan><tspan dy="3.4">–10</tspan><tspan dy="-3.4" font-size="7.2">7</tspan><tspan dy="3.4"> K/s；溶质抗成核 + 薄膜小体积把门槛压到实测可及</tspan></text>
+  <rect x="710" y="456" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="478.84" font-size="19" fill="#475569" font-weight="700">三、样品纪律与预处理清单（浓度 0.5–5 mg/mL）</text>
+  <rect x="831.3025" y="493.075" width="217.395" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="940" y="505.78" font-size="10.5" fill="#92400e" text-anchor="middle">缓冲液：Tris 冻融 pH 漂移 → 改用 HEPES</text>
+  <rect x="730" y="516" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="543.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">样品情形</text>
+  <rect x="900" y="516" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="543.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要风险</text>
+  <rect x="1090" y="516" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="543.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">预处理建议</text>
+  <rect x="730" y="560" width="170" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="581.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">高盐（&gt; 500 mM）</text>
+  <rect x="900" y="560" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="581.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">背景散射、盐晶</text>
+  <rect x="1090" y="560" width="260" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="581.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">脱盐柱换低盐缓冲液</text>
+  <rect x="730" y="592" width="620" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="592" width="170" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="613.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">甘油 / DMSO ≥ 2%</text>
+  <rect x="900" y="592" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="613.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">背景散射大增</text>
+  <rect x="1090" y="592" width="260" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="613.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">透析或脱盐柱去除</text>
+  <rect x="730" y="624" width="170" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">去垢剂体系</text>
+  <rect x="900" y="624" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="645.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">起泡与液膜失稳</text>
+  <rect x="1090" y="624" width="260" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="645.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">选温和去垢剂、控浓度</text>
+  <rect x="730" y="656" width="620" height="32" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="656" width="170" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="677.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">浓度过低</text>
+  <rect x="900" y="656" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="677.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">颗粒稀疏、空孔率高</text>
+  <rect x="1090" y="656" width="260" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="677.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">适度浓缩或亲和富集</text>
+  <rect x="730" y="688" width="170" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="709.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">易氧化样品</text>
+  <rect x="900" y="688" width="190" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="709.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">暴露窗口内损伤</text>
+  <rect x="1090" y="688" width="260" height="32" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1220" y="709.5" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">缩短冰龄、加 TCEP 类还原剂</text>
+  <rect x="30" y="762" width="1340" height="216" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="784.84" font-size="19" fill="#475569" font-weight="700">四、冰厚控制的艺术与免滤纸新装置</text>
+  <text x="250" y="802" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">冰厚 vs blot 时间（示意）</text>
+  <rect x="60" y="810" width="380" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="60" y1="950" x2="60" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="972" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="185.4" y1="950" x2="185.4" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="185.4" y="972" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="314.6" y1="950" x2="314.6" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="314.6" y="972" font-size="13" fill="#64748b" text-anchor="middle">4</text>
+  <line x1="440" y1="950" x2="440" y2="956" stroke="#475569" stroke-width="1.8"/>
+  <text x="440" y="972" font-size="13" fill="#64748b" text-anchor="middle">6 s</text>
+  <line x1="54" y1="810" x2="60" y2="810" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="814" font-size="13" fill="#64748b" text-anchor="end">300</text>
+  <line x1="54" y1="903.8" x2="60" y2="903.8" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="907.8" font-size="13" fill="#64748b" text-anchor="end">100</text>
+  <line x1="54" y1="950" x2="60" y2="950" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="954" font-size="13" fill="#64748b" text-anchor="end">0 nm</text>
+  <rect x="60" y="903" width="380" height="33" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="250" y="897" font-size="10" fill="#065f46" text-anchor="middle" font-weight="600">甜点区 30–100 nm</text>
+  <path d="M60,810 C66.3,818.9 85.3,850.4 98,863.2 C110.7,876.0 121.4,880.5 136,887 C150.6,893.5 166.4,898.2 185.4,902.4 C204.4,906.6 228.5,909.6 250,912.2 C271.5,914.8 293.7,916.2 314.6,917.8 C335.5,919.4 354.5,921.0 375.4,922 C396.3,923.0 429.2,923.8 440,924.1" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="500" y="812" font-size="13" fill="#1e293b" font-weight="700">新一代：喷洒-免滤纸（Spotiton / chameleon）</text>
+  <rect x="548" y="843.075" width="144" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="620" y="855.78" font-size="10.5" fill="#075985" text-anchor="middle">纳升级液滴喷到自吸干载网</text>
+  <rect x="881.99" y="843.075" width="136.01999999999998" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="950" y="855.78" font-size="10.5" fill="#075985" text-anchor="middle">亚毫秒完成润湿到 plunge</text>
+  <rect x="552.1475" y="883.075" width="135.70499999999998" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="620" y="895.78" font-size="10.5" fill="#134e4a" text-anchor="middle">冰龄：数百 ms → 数十 ms</text>
+  <rect x="888.5" y="883.075" width="123" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="950" y="895.78" font-size="10.5" fill="#134e4a" text-anchor="middle">冰更薄更均、聚集减少</text>
+  <text x="500" y="932" font-size="10.5" fill="#475569">blot-冰厚为指数逼近：前 1–2 s 吃掉大部分厚度，之后每加半秒只刮下十纳米上下——一味加长 blot 得不到更薄的冰，只买到更久的界面暴露。</text>
+</svg>

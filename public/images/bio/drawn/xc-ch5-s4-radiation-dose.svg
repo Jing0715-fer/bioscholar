@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">辐射损伤与剂量学：Henderson 极限、损伤次序与 RADDOSE-3D</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">1Gy=1J/kg；Henderson1995极限2×10⁷Gy（20MGy）、Owen2006修正至30MGy；损伤次序二硫键(1–5MGy)→金属→羧基→Tyr；全局四指纹；RADDOSE-3D三维剂量图；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">XFEL衍射先于破坏</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、剂量单位与 Henderson 极限</text>
+  <rect x="100" y="240" width="151.42857142857142" height="28" fill="#d1fae5" stroke="#ffffff" stroke-width="1"/>
+  <rect x="251.42857142857142" y="240" width="151.42857142857142" height="28" fill="#fef3c7" stroke="#ffffff" stroke-width="1"/>
+  <rect x="402.85714285714283" y="240" width="151.42857142857142" height="28" fill="#fee2e2" stroke="#ffffff" stroke-width="1"/>
+  <rect x="554.2857142857142" y="240" width="75.71428571428571" height="28" fill="#fecaca" stroke="#ffffff" stroke-width="1"/>
+  <line x1="100" y1="240" x2="100" y2="272" stroke="#475569" stroke-width="1.2"/>
+  <text x="100" y="290" font-size="10.5" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="251.42857142857142" y1="240" x2="251.42857142857142" y2="272" stroke="#475569" stroke-width="1.2"/>
+  <text x="251.42857142857142" y="290" font-size="10.5" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="402.85714285714283" y1="240" x2="402.85714285714283" y2="272" stroke="#475569" stroke-width="1.2"/>
+  <text x="402.85714285714283" y="290" font-size="10.5" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="554.2857142857142" y1="240" x2="554.2857142857142" y2="272" stroke="#475569" stroke-width="1.2"/>
+  <text x="554.2857142857142" y="290" font-size="10.5" fill="#64748b" text-anchor="middle">30</text>
+  <text x="365" y="308" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">剂量（MGy；1 Gy = 1 J/kg）</text>
+  <text x="175.71428571428572" y="259" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">安全</text>
+  <text x="327.1428571428571" y="259" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">警戒</text>
+  <text x="478.57142857142856" y="259" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">上限</text>
+  <line x1="402.85714285714283" y1="224" x2="402.85714285714283" y2="276" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="554.2857142857142" y1="224" x2="554.2857142857142" y2="276" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="120" y="208" font-size="10.5" fill="#dc2626" font-weight="700">Henderson 1995 极限：</text>
+  <text x="120" y="222" font-size="10.5" fill="#dc2626" font-weight="700">2×10<tspan dy="-3.6" font-size="7.6">7</tspan><tspan dy="3.6"> Gy＝20 MGy——超过则衍射能力退化到不可用</tspan></text>
+  <text x="452" y="208" font-size="10.5" fill="#475569">Owen 等 2006：</text>
+  <text x="452" y="222" font-size="10.5" fill="#475569">30 MGy 量级强度已明显衰减，</text>
+  <text x="452" y="236" font-size="10.5" fill="#475569">但电子密度图通常仍可解读</text>
+  <text x="50" y="336" font-size="10.5" fill="#475569">实务警戒线放在 20–30 MGy，并为反常与高分辨率数据留足余量（损伤最先吃掉高分辨与弱反射）。他的估算路数：</text>
+  <text x="50" y="351" font-size="10.5" fill="#475569">从电镜辐射化学数据外推「每单位剂量产生的自由基数目」，再设衍射衰减的可容忍阈值——先验估算被后续实验反复检验的范例。</text>
+  <rect x="141.6873" y="399.075" width="376.6254" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="330" y="411.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">减通量 ≠ 省剂量：只延长曝光；省剂量须减总光子数、或让光只照有用体积</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、特异性损伤：明确的化学次序</text>
+  <circle cx="775" cy="238" r="12" fill="#fef3c7" stroke="#92400e" stroke-width="1.8"/>
+  <circle cx="832" cy="224" r="12" fill="#fef3c7" stroke="#92400e" stroke-width="1.8"/>
+  <text x="775" y="242" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">S</text>
+  <text x="832" y="228" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">S</text>
+  <line x1="787" y1="233" x2="820" y2="228" stroke="#92400e" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <text x="804" y="276" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">二硫键断裂</text>
+  <text x="804" y="292" font-size="9.5" fill="#dc2626" text-anchor="middle">1–5 MGy 起</text>
+  <circle cx="948" cy="232" r="14" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="948" y="236" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">M</text>
+  <line x1="962" y1="232" x2="974" y2="232" stroke="#6d28d9" stroke-width="1.4"/>
+  <line x1="948" y1="246" x2="948" y2="258" stroke="#6d28d9" stroke-width="1.4"/>
+  <line x1="934" y1="232" x2="922" y2="232" stroke="#6d28d9" stroke-width="1.4"/>
+  <line x1="948" y1="218" x2="948" y2="206" stroke="#6d28d9" stroke-width="1.4" stroke-dasharray="2 3"/>
+  <text x="948" y="276" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">金属中心</text>
+  <text x="948" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">光电子还原·失序</text>
+  <circle cx="1092" cy="226" r="9" fill="#1e293b"/>
+  <text x="1082" y="230" font-size="8" fill="#ffffff" text-anchor="middle">C</text>
+  <circle cx="1116" cy="214" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="1116" cy="238" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="1100" y1="222" x2="1110" y2="216" stroke="#475569" stroke-width="1.5"/>
+  <line x1="1100" y1="230" x2="1110" y2="236" stroke="#475569" stroke-width="1.5"/>
+  <text x="1104" y="276" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">Glu/Asp 羧基</text>
+  <text x="1104" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">去羧基</text>
+  <polygon points="1252,211 1264.9903810567666,218.5 1264.9903810567666,233.5 1252,241 1239.0096189432334,233.5 1239.0096189432334,218.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <line x1="1252" y1="241" x2="1252" y2="258" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1252" y="270" font-size="8.5" fill="#b45309" text-anchor="middle" font-weight="700">OH</text>
+  <text x="1252" y="296" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">Tyr 邻位损伤</text>
+  <line x1="856" y1="232" x2="908" y2="232" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="996" y1="232" x2="1048" y2="226" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1152" y1="226" x2="1204" y2="226" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="730" y="330" font-size="10.5" fill="#475569">差值傅里叶图（±3σ 峰对）揭示损伤并不均匀：最早现形的是二硫键（硫位出现特征正负峰对）；随后金属中心被光电子还原、</text>
+  <text x="730" y="345" font-size="10.5" fill="#475569">配位改变或失序（对金属酶与铁硫蛋白尤其致命）；再后是羧基去羧基；最后 Tyr 羟基邻部也现损伤迹象。</text>
+  <text x="730" y="360" font-size="10.5" fill="#475569">Ravelli 与 McSweeney 2000 年把这类损伤指纹系统化。</text>
+  <text x="730" y="398" font-size="10.5" fill="#64748b">对策：氧化还原敏感位点的「真初态」应向零剂量外推；</text>
+  <text x="730" y="413" font-size="10.5" fill="#64748b">别把损伤伪影当作真实构象变化——同一晶体先低剂量段后高剂量段分别精修作差值图，</text>
+  <text x="730" y="428" font-size="10.5" fill="#64748b">剂量依赖的方向性是区分「损伤」与「构象」的试金石。</text>
+  <rect x="30" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、全局损伤：整颗晶体的「疲劳」四指纹</text>
+  <rect x="60" y="490" width="86" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <path d="M 70,504 C 90,506 110,530 134,540" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="162" y="506" font-size="12" fill="#1e293b" font-weight="700">① 总衍射强度指数衰减</text>
+  <text x="162" y="526" font-size="10.5" fill="#475569">I(D) = I(0)·exp(−μD)，衰减常数 μ 典型 0.02–0.04 MGy<tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">——每 30–50 MGy 掉一个 e 因子。</tspan></text>
+  <rect x="60" y="566" width="86" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <path d="M 70,616 C 94,612 116,594 134,578" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <text x="162" y="582" font-size="12" fill="#1e293b" font-weight="700">② 表观 B 因子近似线性上升</text>
+  <text x="162" y="602" font-size="10.5" fill="#475569">B(D) = B<tspan dy="2.3" font-size="7.6">0</tspan><tspan dy="-2.3"> + βD，斜率每 MGy 十分之几 Å²——随剂量单调爬升。</tspan></text>
+  <rect x="60" y="642" width="86" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="78" y="658" width="50" height="32" rx="3" fill="none" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="72" y="652" width="62" height="44" rx="3" fill="none" stroke="#6d28d9" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="162" y="658" font-size="12" fill="#1e293b" font-weight="700">③ 晶格常数轻微膨胀</text>
+  <text x="162" y="678" font-size="10.5" fill="#475569">膨胀百分之零点几；可测变化多在 5–10 MGy 后登场。</text>
+  <rect x="60" y="718" width="86" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="88" cy="750" r="6" fill="none" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="118" cy="750" r="11" fill="none" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="162" y="734" font-size="12" fill="#1e293b" font-weight="700">④ mosaicity 增大</text>
+  <text x="162" y="754" font-size="10.5" fill="#475569">斑点变大变糊；个别体系每 10 MGy 涨 0.1–0.2°。</text>
+  <text x="50" y="806" font-size="10.5" fill="#64748b">四条指纹都不指向特定原子。数据处理以「批间 scale 因子＋B 因子衰减」建模补偿前两条——但补偿是记账不是治愈：</text>
+  <text x="50" y="821.5" font-size="10.5" fill="#64748b">衰减严重的帧本质上是低质量数据，多晶合并优于硬撑单晶。100 K 把自由基扩散压到局部：损伤放缓几十倍，却从不归零</text>
+  <text x="50" y="837" font-size="10.5" fill="#64748b">（自由基原料是水：水合电子与羟基自由基）。</text>
+  <rect x="710" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、RADDOSE-3D：把剂量算成地图</text>
+  <rect x="730" y="520" width="72" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">类别</text>
+  <rect x="802" y="520" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="861" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="920" y="520" width="426" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1133" y="547.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型内容</text>
+  <rect x="730" y="564" width="72" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="586" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输入</text>
+  <rect x="802" y="564" width="118" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="861" y="586" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">束流几何</text>
+  <rect x="920" y="564" width="426" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1133" y="586" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">光斑尺寸、高斯或平顶剖面、发散与扫描方式</text>
+  <rect x="730" y="597" width="616" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="597" width="72" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="619" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输入</text>
+  <rect x="802" y="597" width="118" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="861" y="619" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">通量与时长</text>
+  <rect x="920" y="597" width="426" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1133" y="619" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">每秒光子数、每帧曝光、帧数与总转角</text>
+  <rect x="730" y="630" width="72" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="652" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输入</text>
+  <rect x="802" y="630" width="118" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="861" y="652" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">晶体与组成</text>
+  <rect x="920" y="630" width="426" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1133" y="652" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">尺寸形状取向、由序列推得的元素组成与溶剂份额</text>
+  <rect x="730" y="663" width="616" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="663" width="72" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="685" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输出</text>
+  <rect x="802" y="663" width="118" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="861" y="685" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">剂量账本</text>
+  <rect x="920" y="663" width="426" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1133" y="685" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">平均与峰值剂量（MGy）、逐帧累计、吸收效率</text>
+  <rect x="730" y="696" width="72" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="718" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输出</text>
+  <rect x="802" y="696" width="118" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="861" y="718" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">预警</text>
+  <rect x="920" y="696" width="426" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1133" y="718" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">逼近 20–30 MGy 警戒线即提示调整策略</text>
+  <text x="730" y="742" font-size="10.5" fill="#475569">「光斑 20 μm、晶体 80 μm、转 180°、每帧几 Gy、总共会不会超」——收数之前就有答案。峰值常被低估：光斑只照亮晶体一角时，</text>
+  <text x="730" y="757" font-size="10.5" fill="#475569">峰值剂量可数倍于整颗平均——旋转能摊薄它，这是转角策略的隐性红利；BEST 进一步以剂量为约束反推最优曝光。</text>
+  <rect x="730" y="818" width="616" height="106" rx="10" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1038" y="844" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">XFEL「衍射先于破坏」（diffraction before destruction）</text>
+  <text x="748" y="868" font-size="10.5" fill="#4c1d95">飞秒脉冲短于原子被推离原位的时间尺度——破坏发生时衍射已经完成：脉冲 10–50 fs，单脉冲剂量可高达 GGy 量级，</text>
+  <text x="748" y="883" font-size="10.5" fill="#4c1d95">每张图都来自一颗「殉道晶体」；串行飞秒晶体学把剂量极限改写为「每晶一脉冲」的新记账（第 12 章）。</text>
+</svg>

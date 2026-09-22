@@ -66,6 +66,12 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-fuchsia-500/10 dark:data-[state=active]:bg-fuchsia-500/15 data-[state=active]:text-fuchsia-700 dark:data-[state=active]:text-fuchsia-400 data-[state=active]:shadow-none',
   virology:
     'data-[state=active]:bg-orange-500/10 dark:data-[state=active]:bg-orange-500/15 data-[state=active]:text-orange-700 dark:data-[state=active]:text-orange-400 data-[state=active]:shadow-none',
+  'structural-biology':
+    'data-[state=active]:bg-purple-500/10 dark:data-[state=active]:bg-purple-500/15 data-[state=active]:text-purple-700 dark:data-[state=active]:text-purple-400 data-[state=active]:shadow-none',
+  'x-ray-crystallography':
+    'data-[state=active]:bg-red-500/10 dark:data-[state=active]:bg-red-500/15 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-none',
+  'electron-microscopy':
+    'data-[state=active]:bg-stone-500/10 dark:data-[state=active]:bg-stone-500/15 data-[state=active]:text-stone-700 dark:data-[state=active]:text-stone-300 data-[state=active]:shadow-none',
 }
 
 /** 学科主按钮配色（含 hover 深色，避免默认 hover 变主色） */
@@ -79,6 +85,9 @@ const SUBJECT_BUTTON: Record<SubjectId, string> = {
   neurobiology: 'bg-teal-600 text-white hover:bg-teal-700',
   immunology: 'bg-fuchsia-600 text-white hover:bg-fuchsia-700',
   virology: 'bg-orange-600 text-white hover:bg-orange-700',
+  'structural-biology': 'bg-purple-600 text-white hover:bg-purple-700',
+  'x-ray-crystallography': 'bg-red-600 text-white hover:bg-red-700',
+  'electron-microscopy': 'bg-stone-600 text-white hover:bg-stone-700',
 }
 
 /** 章节卡学科色左边框 */
@@ -92,6 +101,9 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   neurobiology: 'border-l-teal-500',
   immunology: 'border-l-fuchsia-500',
   virology: 'border-l-orange-500',
+  'structural-biology': 'border-l-purple-500',
+  'x-ray-crystallography': 'border-l-red-500',
+  'electron-microscopy': 'border-l-stone-500',
 }
 
 interface AttemptApiItem {

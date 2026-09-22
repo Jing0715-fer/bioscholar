@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：结构生物学实验方法 · 紫晶 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#7e22ce" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#7e22ce" stroke-opacity="0.6" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#7e22ce"/>
+
+  <!-- eyebrow -->
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#6d28d9">STRUCTURAL BIOLOGY METHODS · CORE CURRICULUM</text>
+
+  <!-- 书名 -->
+  <text x="421" y="212" text-anchor="middle" font-size="50" font-weight="700" letter-spacing="10" fill="#1c1917">结构生物学实验方法</text>
+
+  <!-- bio-rule 双分隔线 -->
+  <line x1="290" y1="246" x2="510" y2="246" stroke="#7e22ce" stroke-width="2.5"/>
+  <line x1="250" y1="253" x2="550" y2="253" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+
+  <!-- 副题 -->
+  <text x="401" y="288" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">Scopes / Drenth / Frank / Wüthrich 体系 · 12 章 48 节</text>
+
+  <!-- ===== 科学元素线稿带：三大方法意象 ===== -->
+  <!-- 晶体学：晶格点阵 + 衍射斑 -->
+  <g stroke="#7e22ce" fill="none" transform="translate(130,388)">
+    <!-- 简立方晶胞两叠 -->
+    <path d="M-34,-24 H34 V24 H-34 Z M-34,-24 L-20,-36 H48 V12 L34,24 M48,-36 H48,-24 M48,-36 L34,-24" stroke-width="1.6"/>
+    <!-- 晶格点 -->
+    <g fill="#7e22ce" fill-opacity="0.65" stroke="none">
+      <circle cx="-34" cy="-24" r="2.6"/><circle cx="0" cy="-24" r="2.6"/><circle cx="34" cy="-24" r="2.6"/>
+      <circle cx="-34" cy="0" r="2.6"/><circle cx="0" cy="0" r="2.6"/><circle cx="34" cy="0" r="2.6"/>
+      <circle cx="-34" cy="24" r="2.6"/><circle cx="0" cy="24" r="2.6"/><circle cx="34" cy="24" r="2.6"/>
+    </g>
+    <!-- 入射束与衍射束 -->
+    <path d="M0,44 L0,34" stroke-width="1.4"/>
+    <path d="M0,34 L-26,52 M0,34 L4,56 M0,34 L28,50" stroke-width="1" stroke-opacity="0.6" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- 冷冻电镜：载网网格 + 玻璃化液滴中的颗粒 -->
+  <g stroke="#7e22ce" fill="none" transform="translate(306,390)">
+    <!-- 网格圆 -->
+    <circle r="40" fill="#7e22ce" fill-opacity="0.04" stroke-width="2"/>
+    <!-- 网格线（两方向） -->
+    <g stroke-width="0.7" stroke-opacity="0.5">
+      <line x1="-40" y1="-24" x2="40" y2="-24"/><line x1="-40" y1="-8" x2="40" y2="-8"/>
+      <line x1="-40" y1="8" x2="40" y2="8"/><line x1="-40" y1="24" x2="40" y2="24"/>
+      <line x1="-24" y1="-40" x2="-24" y2="40"/><line x1="-8" y1="-40" x2="-8" y2="40"/>
+      <line x1="8" y1="-40" x2="8" y2="40"/><line x1="24" y1="-40" x2="24" y2="40"/>
+    </g>
+    <!-- 中心孔中颗粒（五边形轮廓 + 内部二级结构条带） -->
+    <circle cx="0" cy="0" r="11" fill="#7e22ce" fill-opacity="0.12" stroke-width="1.5"/>
+    <path d="M-6,-3 Q-2,-7 3,-5 T7,1 Q5,6 -1,6 T-7,2 Z" stroke-width="1.1"/>
+    <path d="M-4,0 L4,-1 M-3,3 L3,2" stroke-width="0.9" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- NMR：谱峰（化学位移指纹样） -->
+  <g stroke="#7e22ce" fill="none" transform="translate(478,388)">
+    <!-- 坐标基线 -->
+    <line x1="-52" y1="30" x2="52" y2="30" stroke-width="1.4"/>
+    <line x1="-52" y1="30" x2="-52" y2="-40" stroke-width="1.4"/>
+    <!-- HSQC 式离散峰（细竖线 + 顶端节点） -->
+    <g stroke-width="1.2">
+      <line x1="-44" y1="30" x2="-44" y2="-8"/><line x1="-34" y1="30" x2="-34" y2="-30"/>
+      <line x1="-22" y1="30" x2="-22" y2="-16"/><line x1="-10" y1="30" x2="-10" y2="-38"/>
+      <line x1="4" y1="30" x2="4" y2="-12"/><line x1="16" y1="30" x2="16" y2="-26"/>
+      <line x1="30" y1="30" x2="30" y2="-6"/><line x1="42" y1="30" x2="42" y2="-20"/>
+    </g>
+    <g fill="#7e22ce" fill-opacity="0.6" stroke="none">
+      <circle cx="-44" cy="-8" r="2.4"/><circle cx="-34" cy="-30" r="2.4"/><circle cx="-22" cy="-16" r="2.4"/>
+      <circle cx="-10" cy="-38" r="2.4"/><circle cx="4" cy="-12" r="2.4"/><circle cx="16" cy="-26" r="2.4"/>
+      <circle cx="30" cy="-6" r="2.4"/><circle cx="42" cy="-20" r="2.4"/>
+    </g>
+  </g>
+
+  <!-- 纯化层析柱意象（右端：柱 + 梯度洗脱峰） -->
+  <g stroke="#7e22ce" fill="none" transform="translate(648,390)">
+    <!-- 层析柱 -->
+    <rect x="-12" y="-46" width="24" height="72" rx="3" fill="#7e22ce" fill-opacity="0.05" stroke-width="1.8"/>
+    <line x1="-12" y1="-26" x2="12" y2="-26" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="-12" y1="-6" x2="12" y2="-6" stroke-width="0.8" stroke-opacity="0.5"/>
+    <path d="M0,-46 L0,-56" stroke-width="1.2"/>
+    <!-- 洗脱峰曲线 -->
+    <path d="M8,26 Q16,24 24,26 T40,26" stroke-width="1.6" transform="translate(-4,0)"/>
+    <path d="M4,26 Q8,6 12,26" stroke-width="1.6"/>
+  </g>
+
+  <!-- 顶部点阵点缀 -->
+  <g fill="#7e22ce" fill-opacity="0.28">
+    <circle cx="640" cy="120" r="2"/><circle cx="652" cy="112" r="1.5"/><circle cx="664" cy="120" r="2"/>
+    <circle cx="676" cy="112" r="1.5"/><circle cx="688" cy="120" r="2"/>
+  </g>
+
+  <!-- 底部注记 -->
+  <text x="400" y="470" text-anchor="middle" font-size="10.5" letter-spacing="2.2" fill="#78716c">PURIFICATION · CRYSTALLOGRAPHY · CRYO-EM · NMR</text>
+</svg>

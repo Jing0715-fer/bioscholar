@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">SEM 信号家族与探测器几何</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">SE能量&lt;50eV、逸出深度1–10nm（SE1探针级约1nm，SE2/SE3亚微米）；BSE逸出约0.1–1μm、Z衬度（碳约0.05、金约0.5）；ET／环内／四象限探测器各司其职</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、相互作用体积：信号的出生地与分层</text>
+  <line x1="270" y1="168" x2="270" y2="424" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="282" y="192" font-size="11" fill="#075985">入射电子探针（约 1–10 nm）</text>
+  <rect x="100" y="430" width="380" height="110" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <line x1="100" y1="430" x2="480" y2="430" stroke="#475569" stroke-width="3"/>
+  <path d="M 222,430 C 194,482 206,528 270,540 C 334,528 346,482 318,430" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <path d="M 242,430 C 220,472 228,506 270,518 C 312,506 320,472 298,430" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.6"/>
+  <text x="270" y="496" font-size="9.5" fill="#831843" text-anchor="middle">相互作用体积</text>
+  <text x="290" y="554" font-size="9.5" fill="#92400e" text-anchor="middle">X 射线生成区约 1–3 μm</text>
+  <line x1="270" y1="424" x2="240" y2="406" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <line x1="270" y1="424" x2="300" y2="406" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <text x="270" y="392" font-size="9.5" fill="#065f46" text-anchor="middle">SE1（表层 1–10 nm）</text>
+  <line x1="270" y1="468" x2="170" y2="412" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <line x1="270" y1="468" x2="372" y2="412" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <text x="215" y="448" font-size="9.5" fill="#b45309" text-anchor="middle" font-weight="700">BSE</text>
+  <line x1="170" y1="408" x2="170" y2="390" stroke="#059669" stroke-width="1.6" marker-end="url(#arr-ok)"/>
+  <line x1="372" y1="408" x2="372" y2="390" stroke="#059669" stroke-width="1.6" marker-end="url(#arr-ok)"/>
+  <text x="170" y="382" font-size="9.5" fill="#065f46" text-anchor="middle">SE2</text>
+  <text x="372" y="382" font-size="9.5" fill="#065f46" text-anchor="middle">SE2</text>
+  <rect x="58" y="240" width="20" height="300" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="68" y="232" font-size="9.5" fill="#64748b" text-anchor="middle">极靴/腔壁</text>
+  <line x1="166" y1="410" x2="88" y2="396" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="82" y1="390" x2="122" y2="372" stroke="#059669" stroke-width="1.5" marker-end="url(#arr-ok)"/>
+  <text x="132" y="362" font-size="9.5" fill="#065f46" text-anchor="middle">SE3</text>
+  <rect x="500" y="240" width="11" height="11" rx="2" fill="#059669"/>
+  <text x="518" y="258" font-size="10" fill="#475569">SE1：入射点直接激发（约 1 nm）</text>
+  <rect x="500" y="262" width="11" height="11" rx="2" fill="#059669"/>
+  <text x="518" y="280" font-size="10" fill="#475569">SE2：BSE 再激发（亚微米拖尾）</text>
+  <rect x="500" y="284" width="11" height="11" rx="2" fill="#059669"/>
+  <text x="518" y="302" font-size="10" fill="#475569">SE3：腔壁再激发（均匀背景）</text>
+  <rect x="500" y="306" width="11" height="11" rx="2" fill="#b45309"/>
+  <text x="518" y="324" font-size="10" fill="#475569">BSE：能量近束能，Z 衬度</text>
+  <rect x="500" y="328" width="11" height="11" rx="2" fill="#d97706"/>
+  <text x="518" y="346" font-size="10" fill="#475569">X 射线：生成区约 1–3 μm</text>
+  <text x="500" y="378" font-size="10" fill="#64748b">SE 能量 &lt; 50 eV（最概然 2–5 eV）</text>
+  <text x="500" y="398" font-size="10" fill="#64748b">BSE 产额随入射角增大</text>
+  <text x="500" y="418" font-size="10" fill="#64748b">边缘与台阶侧壁「露脸」→ 发亮</text>
+  <rect x="750" y="132" width="620" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、探测器几何：ET、环内与分段 BSE</text>
+  <rect x="920" y="175" width="200" height="58" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <rect x="990" y="175" width="60" height="58" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+  <rect x="1002" y="183" width="36" height="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="912" y="208" font-size="10" fill="#475569" text-anchor="end">物镜极靴</text>
+  <line x1="1020" y1="178" x2="1020" y2="428" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="1028" y="206" font-size="10" fill="#075985">e<tspan dy="-3.4" font-size="7.2">-</tspan></text>
+  <text x="950" y="246" font-size="9.5" fill="#075985" text-anchor="middle">环内探测器</text>
+  <rect x="925" y="252" width="66" height="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="1049" y="252" width="66" height="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="918" y="262" font-size="9.5" fill="#92400e" text-anchor="end">四象限 BSE</text>
+  <path d="M 1020,426 q -16,-28 0,-56 q 16,-28 0,-56 q -12,-22 0,-44" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="1080" y="340" font-size="9.5" fill="#065f46">SE1 螺旋导入</text>
+  <line x1="975" y1="428" x2="955" y2="272" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <line x1="1065" y1="428" x2="1085" y2="272" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <text x="855" y="330" font-size="9.5" fill="#b45309">BSE 直线飞行</text>
+  <rect x="830" y="430" width="380" height="55" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <line x1="830" y1="430" x2="1210" y2="430" stroke="#475569" stroke-width="3"/>
+  <text x="1195" y="466" font-size="9.5" fill="#64748b" text-anchor="middle">样品</text>
+  <rect x="1150" y="350" width="130" height="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <polygon points="1162,372 1268,372 1256,412 1174,412" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <line x1="1140" y1="355" x2="1140" y2="400" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="1145" y1="355" x2="1145" y2="400" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="1150" y1="355" x2="1150" y2="400" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="1215" y="334" font-size="10" fill="#134e4a" text-anchor="middle">ET 探测器：闪烁体 + PMT</text>
+  <text x="1215" y="428" font-size="9.5" fill="#64748b" text-anchor="middle">+ 偏压前栅收低能 SE</text>
+  <path d="M 1105,430 Q 1145,415 1141,372" fill="none" stroke="#059669" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-ok)"/>
+  <text x="770" y="505" font-size="10" fill="#475569">ET（1960 年设计）：闪烁体＋光电倍增管，前栅加数十至数百伏正偏压拉来低能 SE，BSE 仅收几何直射部分；</text>
+  <text x="770" y="520" font-size="10" fill="#475569">环内探测器藏于极靴内孔，SE1 效率最高、几乎无 SE2/SE3 污染（1 nm 级标配）；四象限求和突出 Z 衬度、</text>
+  <text x="770" y="535" font-size="10" fill="#475569">相减突出凹凸——成分与形貌被算术分离。</text>
+  <rect x="30" y="586" width="700" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、信号–深度–衬度速查</text>
+  <rect x="50" y="626" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="653.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">信号</text>
+  <rect x="160" y="626" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="653.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">逸出深度</text>
+  <rect x="320" y="626" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="420" y="653.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">衬度来源</text>
+  <rect x="520" y="626" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="653.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率</text>
+  <rect x="50" y="670" width="110" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="689.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">SE1</text>
+  <rect x="160" y="670" width="160" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="689.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">1–10 nm</text>
+  <rect x="320" y="670" width="200" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="420" y="689.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">表面形貌</text>
+  <rect x="520" y="670" width="190" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="689.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">探针级（约 1 nm）</text>
+  <rect x="50" y="698" width="660" height="28" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="698" width="110" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="717.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">SE2 / SE3</text>
+  <rect x="160" y="698" width="160" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="717.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">源于远处</text>
+  <rect x="320" y="698" width="200" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="420" y="717.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">背景与拖尾</text>
+  <rect x="520" y="698" width="190" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="717.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">亚微米～微米</text>
+  <rect x="50" y="726" width="110" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="745.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">BSE</text>
+  <rect x="160" y="726" width="160" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="745.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 0.1–1 μm</text>
+  <rect x="320" y="726" width="200" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="420" y="745.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">原子序数 Z</text>
+  <rect x="520" y="726" width="190" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="745.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">亚微米</text>
+  <rect x="50" y="754" width="660" height="28" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="754" width="110" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="773.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">特征 X 射线</text>
+  <rect x="160" y="754" width="160" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="773.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">生成区 1–3 μm</text>
+  <rect x="320" y="754" width="200" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="420" y="773.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">元素成分</text>
+  <rect x="520" y="754" width="190" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="615" y="773.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">微米级</text>
+  <rect x="750" y="586" width="620" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="608.84" font-size="19" fill="#475569" font-weight="700">四、BSE 产额随 Z 上升；绝缘样品荷电对策</text>
+  <rect x="784.4" y="689.1666666666666" width="51.2" height="5.833333333333334" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="810" y="680.1666666666666" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">≈0.05</text>
+  <text x="810" y="715" font-size="12.5" fill="#64748b" text-anchor="middle">碳 Z=6</text>
+  <rect x="864.4" y="663.5" width="51.2" height="31.500000000000004" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="890" y="654.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">≈0.27</text>
+  <text x="890" y="715" font-size="12.5" fill="#64748b" text-anchor="middle">铁 Z=26</text>
+  <rect x="944.4" y="636.6666666666666" width="51.2" height="58.333333333333336" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="970" y="627.6666666666666" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">≈0.5</text>
+  <text x="970" y="715" font-size="12.5" fill="#64748b" text-anchor="middle">金 Z=79</text>
+  <text x="770" y="730" font-size="10" fill="#475569">产额随 Z 约 0.7–1 次幂上升、</text>
+  <text x="770" y="743.5" font-size="10" fill="#475569">不饱和不交叉——成分衬度与免疫金（5–15 nm）读出的基础。</text>
+  <text x="1180" y="628" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">荷电对策（按侵扰性排序）：</text>
+  <rect x="1119.34" y="647.075" width="121.32" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1180" y="659.78" font-size="10.5" fill="#075985" text-anchor="middle">① 导电镀膜（最通用）</text>
+  <rect x="1102.9264" y="675.075" width="154.1472" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1180" y="687.78" font-size="10.5" fill="#075985" text-anchor="middle">② E<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3"> 低电压平衡（1–3 keV）</tspan></text>
+  <rect x="1098.34" y="703.075" width="163.32" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1180" y="715.78" font-size="10.5" fill="#075985" text-anchor="middle">③ 低真空模式（气体离子中和）</text>
+  <rect x="1103.59" y="731.075" width="152.82" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1180" y="743.78" font-size="10.5" fill="#075985" text-anchor="middle">④ 减速模式（落地能量压低）</text>
+  <rect x="30" y="806" width="1340" height="172" rx="10" fill="#f1f5f9" fill-opacity="0.45"/>
+  <text x="46" y="832" font-size="18" fill="#475569" font-weight="700">五、高分辨目标与读图折扣</text>
+  <text x="46" y="854" font-size="13.5" fill="#64748b">按分辨率需求选信号：1 nm 表面细节 → SE1 配环内；成分图 → BSE 亚微米；元素定量 → X 射线（接受微米级生成区）</text>
+  <rect x="179.4781" y="874.65" width="141.04379999999998" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="250" y="887.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">收 SE1、挤 SE2 与 SE3</text>
+  <rect x="474" y="874.65" width="172" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="560" y="887.96" font-size="11" fill="#475569" text-anchor="middle">边缘亮带＝行程效应（非高度）</text>
+  <rect x="800.5" y="874.65" width="139" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="870" y="887.96" font-size="11" fill="#475569" text-anchor="middle">同一斜面换朝向即换明暗</text>
+  <rect x="1079.72" y="874.65" width="160.56" height="18.7" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1160" y="887.96" font-size="11" fill="#475569" text-anchor="middle">立体像对 / 多探测器合成纠偏</text>
+  <text x="70" y="930" font-size="10.5" fill="#475569">免疫金标记以背散射读出：5–15 nm 金粒在 SE 像只是模糊亮团，在 BSE 像是高衬度白点；样品台电流（束流减出射信号流）可当「充电表」实时预警。</text>
+</svg>

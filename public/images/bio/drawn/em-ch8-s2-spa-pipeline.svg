@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">单颗粒数据处理流水线：从电影到结构</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">MotionCor2运动校正+剂量加权→CTFFIND4拟合→挑颗粒→2D分类（SNR∝√N）→abinitio初始模型→3D分类→gold-standard精修→FSC0.143报告分辨率</text>
+  <rect x="30" y="132" width="1340" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、从电影到结构：主流流水线（软件标注）</text>
+  <rect x="70" y="195" width="215" height="85" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="177" y="219" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">电影帧序列</text>
+  <text x="177" y="241" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">直接探测 50–60 帧</text>
+  <text x="177" y="261" font-size="10" fill="#64748b" text-anchor="middle">每帧约 1 e<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">/Å</tspan><tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <rect x="330" y="195" width="215" height="85" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="437" y="219" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">运动校正 + 剂量加权</text>
+  <text x="437" y="241" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">MotionCor2 / RELION</text>
+  <text x="437" y="261" font-size="10" fill="#64748b" text-anchor="middle">全局 + 局部轨迹拟合</text>
+  <rect x="590" y="195" width="215" height="85" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="697" y="219" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">CTF 拟合</text>
+  <text x="697" y="241" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">CTFFIND4 / GCTF</text>
+  <text x="697" y="261" font-size="10" fill="#64748b" text-anchor="middle">欠焦·像散·拟合极限</text>
+  <rect x="850" y="195" width="215" height="85" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="957" y="219" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">颗粒挑选</text>
+  <text x="957" y="241" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">LoG / Topaz / cryolo</text>
+  <text x="957" y="261" font-size="10" fill="#64748b" text-anchor="middle">微图 50–300 个颗粒</text>
+  <rect x="1110" y="195" width="215" height="85" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1217" y="219" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">2D 分类</text>
+  <text x="1217" y="241" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">RELION / cryoSPARC</text>
+  <text x="1217" y="261" font-size="10" fill="#64748b" text-anchor="middle">先聚类后平均，SNR ∝ √N</text>
+  <line x1="290" y1="237" x2="325" y2="237" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="550" y1="237" x2="585" y2="237" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="810" y1="237" x2="845" y2="237" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1070" y1="237" x2="1105" y2="237" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1217" y1="284" x2="1217" y2="325" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1110" y="330" width="215" height="85" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1217" y="354" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">初始模型</text>
+  <text x="1217" y="376" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">cryoSPARC ab initio</text>
+  <text x="1217" y="396" font-size="10" fill="#64748b" text-anchor="middle">SGD + 频率爬升</text>
+  <rect x="850" y="330" width="215" height="85" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="957" y="354" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">3D 分类</text>
+  <text x="957" y="376" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">RELION（T = 4）</text>
+  <text x="957" y="396" font-size="10" fill="#64748b" text-anchor="middle">拆解构象异质性</text>
+  <rect x="590" y="330" width="215" height="85" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="697" y="354" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">金标准精修</text>
+  <text x="697" y="376" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">RELION / cryoSPARC</text>
+  <text x="697" y="396" font-size="10" fill="#64748b" text-anchor="middle">半图独立 + 贝叶斯抛光</text>
+  <rect x="330" y="330" width="215" height="85" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="437" y="354" font-size="12.5" fill="#991b1b" text-anchor="middle" font-weight="700">分辨率报告</text>
+  <text x="437" y="376" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">FSC = 0.143</text>
+  <text x="437" y="396" font-size="10" fill="#64748b" text-anchor="middle">半图 FSC + mask 修正</text>
+  <line x1="1105" y1="372" x2="1070" y2="372" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="845" y1="372" x2="810" y2="372" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="580" y1="372" x2="545" y2="372" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="325" y1="372" x2="262" y2="372" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="148.1036" y="362.65" width="87.79280000000001" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="192" y="375.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">密度图 + 模型</text>
+  <text x="700" y="442" font-size="10.5" fill="#475569" text-anchor="middle">on-the-fly：收数当晚即见 2D 类平均与取向分布，把结果反馈到采集参数（欠焦分布、冰厚、束流）的迭代</text>
+  <rect x="30" y="486" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="508.84" font-size="19" fill="#475569" font-weight="700">二、2D 分类：先聚类、后平均</text>
+  <rect x="60" y="530" width="130" height="130" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <circle cx="64" cy="534" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="98.24790940608364" cy="564.0162147988995" r="2.6933499872060565" fill="#64748b" opacity="0.55"/>
+  <circle cx="161.23402577435263" cy="611.4020962098657" r="2.6897816340373537" fill="#64748b" opacity="0.55"/>
+  <circle cx="157.67634807323338" cy="562.341200928433" r="1.810113243336127" fill="#64748b" opacity="0.55"/>
+  <circle cx="175.98722259789793" cy="545.1895630372292" r="1.458151003991952" fill="#64748b" opacity="0.55"/>
+  <circle cx="122.92723595624557" cy="557.8481837461422" r="2.3919884110449856" fill="#64748b" opacity="0.55"/>
+  <circle cx="126.48797429775004" cy="643.2256956439414" r="2.6342216473234656" fill="#64748b" opacity="0.55"/>
+  <circle cx="113.74817487639666" cy="607.0517808910226" r="2.473019518214096" fill="#64748b" opacity="0.55"/>
+  <circle cx="93.97231330897193" cy="547.0450899687494" r="2.6881892660370794" fill="#64748b" opacity="0.55"/>
+  <circle cx="90.41568867452952" cy="549.9057588389096" r="2.6083936453039667" fill="#64748b" opacity="0.55"/>
+  <circle cx="183.80841636128025" cy="638.1149657939677" r="2.28143085509364" fill="#64748b" opacity="0.55"/>
+  <circle cx="154.43196729582814" cy="572.3007379564333" r="2.0626043484093315" fill="#64748b" opacity="0.55"/>
+  <circle cx="111.40546321804868" cy="566.6623570592492" r="1.9632592576021124" fill="#64748b" opacity="0.55"/>
+  <circle cx="116.72559989906222" cy="598.5621847626462" r="2.511767239590563" fill="#64748b" opacity="0.55"/>
+  <circle cx="150.11342477161088" cy="569.0535491548912" r="1.9386430902424308" fill="#64748b" opacity="0.55"/>
+  <circle cx="175.74739239502378" cy="535.9187091105268" r="2.769741204107413" fill="#64748b" opacity="0.55"/>
+  <circle cx="123.80558216008649" cy="566.6621663660007" r="1.8258005734673133" fill="#64748b" opacity="0.55"/>
+  <circle cx="129.27207168564928" cy="535.277825987956" r="2.263193359885372" fill="#64748b" opacity="0.55"/>
+  <circle cx="151.10997390782723" cy="613.7858594187373" r="2.3167957148538636" fill="#64748b" opacity="0.55"/>
+  <circle cx="149.67945724756282" cy="573.2232761577015" r="1.8760597880758723" fill="#64748b" opacity="0.55"/>
+  <circle cx="158.67937871163303" cy="608.3260673265831" r="1.445450082438947" fill="#64748b" opacity="0.55"/>
+  <circle cx="104.29389893032203" cy="605.2873483122021" r="2.125212179158916" fill="#64748b" opacity="0.55"/>
+  <circle cx="102.8126932351679" cy="589.2146635198405" r="2.0688523765051285" fill="#64748b" opacity="0.55"/>
+  <circle cx="67.00355317510548" cy="648.5612201284787" r="1.4818051159562855" fill="#64748b" opacity="0.55"/>
+  <circle cx="178.35177436985032" cy="606.3315210984547" r="2.896441219414919" fill="#64748b" opacity="0.55"/>
+  <circle cx="120.83949552530248" cy="569.9653855942452" r="2.66856300284453" fill="#64748b" opacity="0.55"/>
+  <circle cx="139.62910467025358" cy="582.4107716272847" r="1.8316687521300081" fill="#64748b" opacity="0.55"/>
+  <circle cx="75.81650948400784" cy="589.8274075469017" r="2.0252146312018957" fill="#64748b" opacity="0.55"/>
+  <circle cx="112.66874440065294" cy="576.414120580318" r="1.4772432327530622" fill="#64748b" opacity="0.55"/>
+  <circle cx="125.04269297836436" cy="647.5481590321542" r="2.3383202879416785" fill="#64748b" opacity="0.55"/>
+  <circle cx="164.7041851801332" cy="638.5391186781526" r="2.295967783974811" fill="#64748b" opacity="0.55"/>
+  <circle cx="98.86048372078949" cy="552.1458896732111" r="1.6293984931106933" fill="#64748b" opacity="0.55"/>
+  <circle cx="94.90929931701976" cy="555.6608379571039" r="2.521466583238771" fill="#64748b" opacity="0.55"/>
+  <circle cx="154.8733732487599" cy="642.8217729006046" r="1.5143174992548665" fill="#64748b" opacity="0.55"/>
+  <circle cx="112.78904177359072" cy="576.9852001518702" r="2.0013082857271" fill="#64748b" opacity="0.55"/>
+  <circle cx="82.31535699153386" cy="580.3639569873885" r="2.8936219081064336" fill="#64748b" opacity="0.55"/>
+  <circle cx="181.26825939190167" cy="569.1404137922109" r="1.7336588236404977" fill="#64748b" opacity="0.55"/>
+  <circle cx="72.61723507542774" cy="538.6558695773797" r="2.5849876333340034" fill="#64748b" opacity="0.55"/>
+  <circle cx="151.50214471029176" cy="563.8947587038529" r="1.7412164073442908" fill="#64748b" opacity="0.55"/>
+  <circle cx="141.92951423299382" cy="624.2756264663949" r="2.475521841125919" fill="#64748b" opacity="0.55"/>
+  <circle cx="64.2401331866422" cy="627.3208777193322" r="2.693397674144444" fill="#64748b" opacity="0.55"/>
+  <circle cx="161.09194885021134" cy="562.9153239201332" r="2.057619576863908" fill="#64748b" opacity="0.55"/>
+  <circle cx="162.63395977385517" cy="625.1804987497344" r="1.6233658439308782" fill="#64748b" opacity="0.55"/>
+  <circle cx="122.12358747173857" cy="551.7305382983432" r="2.8240379056900564" fill="#64748b" opacity="0.55"/>
+  <circle cx="149.0538375885153" cy="579.0125905315654" r="2.449059298926295" fill="#64748b" opacity="0.55"/>
+  <circle cx="118.45245111630356" cy="591.8096482319743" r="1.4421367062533448" fill="#64748b" opacity="0.55"/>
+  <ellipse cx="125" cy="595" rx="42" ry="33" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2" opacity="0.6"/>
+  <text x="125" y="678" font-size="10" fill="#475569" text-anchor="middle">单个颗粒（SNR &lt; 0.1）</text>
+  <line x1="200" y1="595" x2="250" y2="595" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="225" y="578" font-size="10.5" fill="#475569" text-anchor="middle">N = 100 平均</text>
+  <rect x="258" y="530" width="130" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <ellipse cx="323" cy="595" rx="42" ry="34" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="290" y1="622" x2="312" y2="568" stroke="#075985" stroke-width="3" opacity="0.7"/>
+  <line x1="306" y1="622" x2="328" y2="568" stroke="#075985" stroke-width="3" opacity="0.7"/>
+  <line x1="322" y1="622" x2="344" y2="568" stroke="#075985" stroke-width="3" opacity="0.7"/>
+  <line x1="338" y1="622" x2="360" y2="568" stroke="#075985" stroke-width="3" opacity="0.7"/>
+  <text x="323" y="678" font-size="10" fill="#475569" text-anchor="middle">类平均（干净 10 倍）</text>
+  <text x="323" y="694" font-size="9.5" fill="#64748b" text-anchor="middle">α 螺旋约 10 Å 周期条纹</text>
+  <text x="420" y="540" font-size="10.5" fill="#475569">N 个同类颗粒对齐平均，信噪比按 √N 提升；</text>
+  <text x="420" y="556" font-size="10.5" fill="#475569">「先聚类后平均」的顺序不可颠倒——异质颗粒硬塞一类只得模糊鬼影。</text>
+  <rect x="487.7" y="621.075" width="114.60000000000001" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="545" y="633.78" font-size="10.5" fill="#4c1d95" text-anchor="middle">类数 K 起步 50–200</text>
+  <rect x="473" y="653.075" width="144" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="545" y="665.78" font-size="10.5" fill="#4c1d95" text-anchor="middle">好类：螺旋条纹、视角多样</text>
+  <rect x="483.5" y="685.075" width="123" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="545" y="697.78" font-size="10.5" fill="#991b1b" text-anchor="middle">坏类淘汰常削两至四成</text>
+  <rect x="710" y="486" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="508.84" font-size="19" fill="#475569" font-weight="700">三、金标准精修与 FSC 0.143 判据</text>
+  <rect x="735" y="535" width="90" height="34" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="780" y="556" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">颗粒库</text>
+  <line x1="765" y1="572" x2="745" y2="606" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="795" y1="572" x2="815" y2="606" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="720" y="610" width="84" height="30" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="762" y="629" font-size="11" fill="#075985" text-anchor="middle" font-weight="600">半图 A</text>
+  <rect x="800" y="610" width="84" height="30" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="842" y="629" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="600">半图 B</text>
+  <line x1="762" y1="643" x2="790" y2="672" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="842" y1="643" x2="812" y2="672" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="761.6553" y="680.65" width="76.6894" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="800" y="693.96" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">半图间 FSC</text>
+  <rect x="980" y="550" width="320" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="980" y1="700" x2="980" y2="706" stroke="#475569" stroke-width="1.8"/>
+  <text x="980" y="722" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1300" y1="700" x2="1300" y2="706" stroke="#475569" stroke-width="1.8"/>
+  <text x="1300" y="722" font-size="13" fill="#64748b" text-anchor="middle">空间频率 →</text>
+  <line x1="974" y1="550" x2="980" y2="550" stroke="#475569" stroke-width="1.8"/>
+  <text x="970" y="554" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
+  <line x1="974" y1="678.55" x2="980" y2="678.55" stroke="#475569" stroke-width="1.8"/>
+  <text x="970" y="682.55" font-size="13" fill="#64748b" text-anchor="end">0.143</text>
+  <line x1="974" y1="700" x2="980" y2="700" stroke="#475569" stroke-width="1.8"/>
+  <text x="970" y="704" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <text x="1140" y="538" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">FSC（金标准半图）</text>
+  <line x1="980" y1="678.5" x2="1300" y2="678.5" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <path d="M980,550 C984.3,550.8 996.0,552.5 1005.6,554.5 C1015.2,556.5 1026.9,558.8 1037.6,562 C1048.3,565.3 1058.9,568.5 1069.6,574 C1080.3,579.5 1090.9,587.0 1101.6,595 C1112.3,603.0 1124.0,612.0 1133.6,622 C1143.2,632.0 1151.7,645.6 1159.2,655 C1166.7,664.4 1170.9,672.0 1178.4,678.55 C1185.9,685.0 1183.7,690.7 1204,694 C1224.3,697.3 1284.0,697.8 1300,698.5" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <line x1="1178" y1="700" x2="1178" y2="640" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <circle cx="1178" cy="678.5" r="4.5" fill="#dc2626"/>
+  <rect x="1115.2761" y="619.075" width="125.44780000000002" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1178" y="631.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">分辨率（0.143 判据）</text>
+  <text x="725" y="720" font-size="9.5" fill="#475569">两半独立演化：任何一半的过拟合都不会被另一半承认</text>
+  <text x="730" y="740" font-size="10" fill="#475569">0.143 对应相位误差（更保守的 0.5 亦用）；半图与 mask 修正 FSC 为 EMDB 投稿硬标准。</text>
+  <rect x="30" y="772" width="1340" height="206" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="794.84" font-size="19" fill="#475569" font-weight="700">四、微图质检与逐颗粒精修</text>
+  <rect x="139.5" y="828.65" width="161" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="220" y="841.96" font-size="11" fill="#075985" text-anchor="middle">漂移图：轨迹平滑收敛者可用</text>
+  <rect x="437.51" y="828.65" width="184.98000000000002" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="530" y="841.96" font-size="11" fill="#075985" text-anchor="middle">CTF 拟合分辨率极限（体检指标）</text>
+  <rect x="758.62" y="828.65" width="162.76" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="840" y="841.96" font-size="11" fill="#92400e" text-anchor="middle">微图级淘汰率 10–30% 属常态</text>
+  <rect x="1071.9508" y="828.65" width="156.09839999999997" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1150" y="841.96" font-size="11" fill="#92400e" text-anchor="middle">计数上限约 5–10 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/像素/秒</tspan></text>
+  <rect x="157.63000000000002" y="878.65" width="164.73999999999995" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="240" y="891.96" font-size="11" fill="#4c1d95" text-anchor="middle">贝叶斯抛光（Zivanov 2019）</text>
+  <rect x="462.25" y="878.65" width="155.5" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="540" y="891.96" font-size="11" fill="#4c1d95" text-anchor="middle">逐颗粒 CTF 与高阶像差精修</text>
+  <rect x="752.23" y="878.65" width="195.53999999999996" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="850" y="891.96" font-size="11" fill="#4c1d95" text-anchor="middle">multi-body 分刚体（Nakane 2018）</text>
+  <rect x="1067.8400000000001" y="878.65" width="184.31999999999994" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1160" y="891.96" font-size="11" fill="#4c1d95" text-anchor="middle">局部分辨率（blocres / RELION）</text>
+  <text x="700" y="946" font-size="10.5" fill="#475569" text-anchor="middle">规模：一张微图 50–300 个颗粒、一套数据 10⁵–10⁶ 个；「边收边算」把「收完才发现问题」变成当日可纠的工程迭代</text>
+</svg>

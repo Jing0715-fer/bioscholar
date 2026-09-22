@@ -12,6 +12,9 @@ import { immunology } from './subjects/immunology'
 import { neurobiology } from './subjects/neurobiology'
 import { bioinformatics } from './subjects/bioinformatics'
 import { virology } from './subjects/virology'
+import { structuralBiology } from './subjects/structural-biology'
+import { xrayCrystallography } from './subjects/x-ray-crystallography'
+import { electronMicroscopy } from './subjects/electron-microscopy'
 import { sectionExpansions } from './expansions'
 
 /**
@@ -36,7 +39,7 @@ function withExpansions(subject: Subject): Subject {
   }
 }
 
-/** 九大学科 */
+/** 十二大学科 */
 export const subjects: Subject[] = [
   biochemistry,
   molecularBiology,
@@ -47,6 +50,9 @@ export const subjects: Subject[] = [
   neurobiology,
   bioinformatics,
   virology,
+  structuralBiology,
+  xrayCrystallography,
+  electronMicroscopy,
 ].map(withExpansions)
 
 export function getSubject(id: SubjectId): Subject | undefined {
@@ -137,6 +143,9 @@ import { immunologyQuiz } from './quiz/immunology'
 import { neurobiologyQuiz } from './quiz/neurobiology'
 import { bioinformaticsQuiz } from './quiz/bioinformatics'
 import { virologyQuiz } from './quiz/virology'
+import { structuralBiologyQuiz } from './quiz/structural-biology'
+import { xrayCrystallographyQuiz } from './quiz/x-ray-crystallography'
+import { electronMicroscopyQuiz } from './quiz/electron-microscopy'
 
 export const allQuizQuestions: QuizQuestion[] = [
   ...biochemistryQuiz,
@@ -148,6 +157,9 @@ export const allQuizQuestions: QuizQuestion[] = [
   ...neurobiologyQuiz,
   ...bioinformaticsQuiz,
   ...virologyQuiz,
+  ...structuralBiologyQuiz,
+  ...xrayCrystallographyQuiz,
+  ...electronMicroscopyQuiz,
 ]
 
 export function getQuizBySubject(subjectId: SubjectId): QuizQuestion[] {

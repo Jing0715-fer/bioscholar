@@ -22,6 +22,18 @@ import { bioinfoGlossaryB4 } from './glossary-bioinfo-b4'
 import { bioinfoGlossaryB5 } from './glossary-bioinfo-b5'
 import { bioinfoGlossaryB6 } from './glossary-bioinfo-b6'
 import { viroGlossary } from './glossary-virology'
+import { structuralBiologyGlossaryA1 } from './glossary-structural-biology-a1'
+import { structuralBiologyGlossaryA2 } from './glossary-structural-biology-a2'
+import { structuralBiologyGlossaryA3 } from './glossary-structural-biology-a3'
+import { structuralBiologyGlossaryA4 } from './glossary-structural-biology-a4'
+import { xrayCrystallographyGlossaryA1 } from './glossary-x-ray-crystallography-a1'
+import { xrayCrystallographyGlossaryA2 } from './glossary-x-ray-crystallography-a2'
+import { xrayCrystallographyGlossaryA3 } from './glossary-x-ray-crystallography-a3'
+import { xrayCrystallographyGlossaryA4 } from './glossary-x-ray-crystallography-a4'
+import { electronMicroscopyGlossaryA1 } from './glossary-electron-microscopy-a1'
+import { electronMicroscopyGlossaryA2 } from './glossary-electron-microscopy-a2'
+import { electronMicroscopyGlossaryA3 } from './glossary-electron-microscopy-a3'
+import { electronMicroscopyGlossaryA4 } from './glossary-electron-microscopy-a4'
 
 export const glossary: GlossaryTerm[] = [
   // ---------- 生物化学（g-001 ~ g-026） ----------
@@ -1194,4 +1206,16 @@ export const glossary: GlossaryTerm[] = [
   ...bioinfoGlossaryB5,
   ...bioinfoGlossaryB6,
   ...viroGlossary,
+  ...structuralBiologyGlossaryA1,
+  ...structuralBiologyGlossaryA2,
+  ...structuralBiologyGlossaryA3,
+  ...structuralBiologyGlossaryA4,
+  ...xrayCrystallographyGlossaryA1,
+  ...xrayCrystallographyGlossaryA2,
+  ...xrayCrystallographyGlossaryA3,
+  ...xrayCrystallographyGlossaryA4,
+  ...electronMicroscopyGlossaryA1,
+  ...electronMicroscopyGlossaryA2,
+  ...electronMicroscopyGlossaryA3,
+  ...electronMicroscopyGlossaryA4,
 ]

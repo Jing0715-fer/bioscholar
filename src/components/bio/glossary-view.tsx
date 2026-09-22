@@ -40,6 +40,9 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   neurobiology: 'border-l-teal-500',
   immunology: 'border-l-fuchsia-500',
   virology: 'border-l-orange-500',
+  'structural-biology': 'border-l-purple-500',
+  'x-ray-crystallography': 'border-l-red-500',
+  'electron-microscopy': 'border-l-stone-500',
 }
 
 /** 学科筛选下边线激活态（学科色文字 + 下边线，不用全色块） */
@@ -59,6 +62,12 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-fuchsia-500/10 dark:data-[state=active]:bg-fuchsia-500/15 data-[state=active]:text-fuchsia-700 dark:data-[state=active]:text-fuchsia-400 data-[state=active]:shadow-none',
   virology:
     'data-[state=active]:bg-orange-500/10 dark:data-[state=active]:bg-orange-500/15 data-[state=active]:text-orange-700 dark:data-[state=active]:text-orange-400 data-[state=active]:shadow-none',
+  'structural-biology':
+    'data-[state=active]:bg-purple-500/10 dark:data-[state=active]:bg-purple-500/15 data-[state=active]:text-purple-700 dark:data-[state=active]:text-purple-400 data-[state=active]:shadow-none',
+  'x-ray-crystallography':
+    'data-[state=active]:bg-red-500/10 dark:data-[state=active]:bg-red-500/15 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-none',
+  'electron-microscopy':
+    'data-[state=active]:bg-stone-500/10 dark:data-[state=active]:bg-stone-500/15 data-[state=active]:text-stone-700 dark:data-[state=active]:text-stone-300 data-[state=active]:shadow-none',
 }
 
 // ============================================================

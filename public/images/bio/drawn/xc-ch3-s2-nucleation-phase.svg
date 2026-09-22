@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">成核理论与结晶相图：四区、能垒与两步成核</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">相图四区（不饱和/亚稳/成核/沉淀）；ΔG(r)=4πr²γ−(4/3)πr³ρΔμ，r*=2γ/(ρΔμ)、ΔG*=16πγ³/(3(Δμ)²ρ²)；成核速率∝exp(−ΔG*/kT)；致密液滴先行；晶种解耦成核与生长</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、结晶相图四区：液滴的地形图</text>
+  <polygon points="110,480 250,450 400,400 530,355 640,320 640,505 110,505" fill="#e0f2fe" fill-opacity="0.75"/>
+  <polygon points="110,480 250,450 400,400 530,355 640,320 640,270 530,305 400,350 250,400 110,430" fill="#d1fae5" fill-opacity="0.85"/>
+  <polygon points="110,430 250,400 400,350 530,305 640,270 640,220 530,255 400,300 250,350 110,380" fill="#fef3c7" fill-opacity="0.9"/>
+  <polygon points="110,380 250,350 400,300 530,255 640,220 640,185 110,185" fill="#fee2e2" fill-opacity="0.75"/>
+  <path d="M110,480 C133.3,475.0 201.7,463.3 250,450 C298.3,436.7 353.3,415.8 400,400 C446.7,384.2 490.0,368.3 530,355 C570.0,341.7 621.7,325.8 640,320" fill="none" stroke="#1e293b" stroke-width="2.4"/>
+  <path d="M110,430 C133.3,425.0 201.7,413.3 250,400 C298.3,386.7 353.3,365.8 400,350 C446.7,334.2 490.0,318.3 530,305 C570.0,291.7 621.7,275.8 640,270" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="7 5"/>
+  <path d="M110,380 C133.3,375.0 201.7,363.3 250,350 C298.3,336.7 353.3,315.8 400,300 C446.7,284.2 490.0,268.3 530,255 C570.0,241.7 621.7,225.8 640,220" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="7 5"/>
+  <line x1="110" y1="505" x2="650" y2="505" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="110" y1="505" x2="110" y2="178" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="380" y="530" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">沉淀剂浓度 →</text>
+  <text x="84" y="172" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">蛋白浓度 ↑</text>
+  <text x="490" y="478" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">不饱和区</text>
+  <text x="490" y="497" font-size="10" fill="#64748b" text-anchor="middle">晶体溶解、变小</text>
+  <text x="430" y="428" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">亚稳区</text>
+  <text x="430" y="447" font-size="10" fill="#64748b" text-anchor="middle">只长不生·养晶区</text>
+  <text x="430" y="378" font-size="12.5" fill="#92400e" text-anchor="middle" font-weight="700">成核区</text>
+  <text x="430" y="397" font-size="10" fill="#64748b" text-anchor="middle">新核不断冒出</text>
+  <text x="300" y="215" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">沉淀区</text>
+  <text x="300" y="234" font-size="10" fill="#dc2626" text-anchor="middle">絮状·油滴·聚集</text>
+  <text x="500" y="386" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">溶解度曲线</text>
+  <path d="M 170,468 C 240,430 300,392 330,332" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="6 4" marker-end="url(#arr-bad)"/>
+  <path d="M 336,330 C 350,360 380,400 430,414" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="6 4" marker-end="url(#arr-dna)"/>
+  <text x="212" y="380" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">① 等比例浓缩</text>
+  <text x="216" y="396" font-size="10" fill="#dc2626" text-anchor="middle">（蒸气扩散）</text>
+  <text x="428" y="380" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">② 晶核消耗溶质</text>
+  <text x="428" y="396" font-size="10" fill="#134e4a" text-anchor="middle">回落亚稳区养晶</text>
+  <text x="300" y="460" font-size="10" fill="#475569" text-anchor="middle">亚稳区宽度因蛋白而异：宽者好养晶、窄者易跨入沉淀</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、经典成核理论：表面惩罚与体积收益的竞争</text>
+  <text x="1040" y="196" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">ΔG(r) = 4πr<tspan dy="-4.4" font-size="9.4">2</tspan><tspan dy="4.4">γ − (4/3)πr</tspan><tspan dy="-4.4" font-size="9.4">3</tspan><tspan dy="4.4">·ρΔμ</tspan></text>
+  <line x1="780" y1="480" x2="1314" y2="480" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="780" y1="480" x2="780" y2="186" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="1040" y="506" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">核半径 r →</text>
+  <text x="770" y="206" font-size="12.5" fill="#475569" text-anchor="end" font-weight="600">ΔG</text>
+  <line x1="780" y1="354" x2="1300" y2="354" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="1256" y="348" font-size="10.5" fill="#64748b" text-anchor="middle">0</text>
+  <polyline points="780,354 910,345.32 1040,319 1170,275.32 1300,214" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="7 4"/>
+  <polyline points="780,354 910,355.96 1040,368.7 1170,403.56 1300,471.6" fill="none" stroke="#0369a1" stroke-width="2" stroke-dasharray="7 4"/>
+  <polyline points="780,354 842.4,347.84000000000003 910,342.24 977.6,337.2 1040,327.4 1092,323.2 1144,327.4 1196,344.20000000000005 1248,368 1300,396" fill="none" stroke="#be185d" stroke-width="3"/>
+  <text x="1185.6" y="258.79999999999995" font-size="11" fill="#d97706" text-anchor="middle" font-weight="700">表面项 4πr<tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">γ</tspan></text>
+  <text x="1102.4" y="424" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">体积项 −(4/3)πr<tspan dy="-3.7" font-size="7.9">3</tspan><tspan dy="3.7">ρΔμ</tspan></text>
+  <text x="1102.4" y="306.4" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">ΔG 总曲线</text>
+  <line x1="1092" y1="480" x2="1092" y2="323.2" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <text x="1092" y="496" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700" font-style="italic">r*</text>
+  <line x1="780" y1="323.2" x2="1092" y2="323.2" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <text x="810" y="315.2" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700" font-style="italic">ΔG*</text>
+  <text x="730" y="528" font-size="10.5" fill="#475569">临界核 r* = 2γ/(ρΔμ)；能垒 ΔG* = 16πγ<tspan dy="-3.6" font-size="7.6">3</tspan><tspan dy="3.6">/(3(Δμ)</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">ρ</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">)。成核速率近似正比于 exp(−ΔG*/kT)——对过饱和度极其陡峭：S = c/c*，</tspan></text>
+  <text x="730" y="543.5" font-size="10.5" fill="#475569">Δμ = kT·ln S，小幅提高 S 可使速率跨越数个数量级（「一夜满板微晶」与「三周无一核」的两极命运）。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、两步成核：液滴先行</text>
+  <rect x="55" y="630" width="130" height="92" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="120" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">① 过饱和溶液</text>
+  <text x="120" y="670" font-size="9.5" fill="#64748b" text-anchor="middle">分子散布</text>
+  <circle cx="75" cy="700" r="2.2" fill="#64748b"/>
+  <circle cx="128" cy="709" r="2.2" fill="#64748b"/>
+  <circle cx="85" cy="704" r="2.2" fill="#64748b"/>
+  <circle cx="138" cy="713" r="2.2" fill="#64748b"/>
+  <circle cx="95" cy="708" r="2.2" fill="#64748b"/>
+  <circle cx="148" cy="703" r="2.2" fill="#64748b"/>
+  <circle cx="105" cy="712" r="2.2" fill="#64748b"/>
+  <circle cx="158" cy="707" r="2.2" fill="#64748b"/>
+  <circle cx="115" cy="702" r="2.2" fill="#64748b"/>
+  <circle cx="168" cy="711" r="2.2" fill="#64748b"/>
+  <circle cx="125" cy="706" r="2.2" fill="#64748b"/>
+  <circle cx="82" cy="701" r="2.2" fill="#64748b"/>
+  <circle cx="135" cy="710" r="2.2" fill="#64748b"/>
+  <circle cx="92" cy="705" r="2.2" fill="#64748b"/>
+  <circle cx="145" cy="700" r="2.2" fill="#64748b"/>
+  <circle cx="102" cy="709" r="2.2" fill="#64748b"/>
+  <rect x="207" y="630" width="130" height="92" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="272" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">② 致密液滴</text>
+  <text x="272" y="670" font-size="9.5" fill="#64748b" text-anchor="middle">无序·可逆涨落</text>
+  <circle cx="272" cy="706" r="26" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <circle cx="287" cy="706" r="2.2" fill="#b45309"/>
+  <circle cx="284.9903810567666" cy="711.5" r="2.2" fill="#b45309"/>
+  <circle cx="279.5" cy="715.5262794416288" r="2.2" fill="#b45309"/>
+  <circle cx="272" cy="717" r="2.2" fill="#b45309"/>
+  <circle cx="264.5" cy="715.5262794416288" r="2.2" fill="#b45309"/>
+  <circle cx="259.0096189432334" cy="711.5" r="2.2" fill="#b45309"/>
+  <circle cx="257" cy="706" r="2.2" fill="#b45309"/>
+  <circle cx="259.0096189432334" cy="700.5" r="2.2" fill="#b45309"/>
+  <circle cx="264.5" cy="696.4737205583712" r="2.2" fill="#b45309"/>
+  <circle cx="272" cy="695" r="2.2" fill="#b45309"/>
+  <circle cx="279.5" cy="696.4737205583712" r="2.2" fill="#b45309"/>
+  <circle cx="284.9903810567666" cy="700.5" r="2.2" fill="#b45309"/>
+  <rect x="359" y="630" width="130" height="92" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="424" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">③ 滴内萌发晶核</text>
+  <text x="424" y="670" font-size="9.5" fill="#64748b" text-anchor="middle">有序相出现</text>
+  <circle cx="424" cy="706" r="26" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="414" y="696" width="20" height="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="424" y1="696" x2="424" y2="716" stroke="#0f766e" stroke-width="1.2"/>
+  <line x1="414" y1="706" x2="434" y2="706" stroke="#0f766e" stroke-width="1.2"/>
+  <rect x="511" y="630" width="130" height="92" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="576" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">④ 晶体</text>
+  <text x="576" y="670" font-size="9.5" fill="#64748b" text-anchor="middle">逐层生长</text>
+  <polygon points="549,688 585,682 598,702 583,726 548,722" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="186" y1="676" x2="204" y2="676" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="338" y1="676" x2="356" y2="676" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="490" y1="676" x2="508" y2="676" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="60" y="756" font-size="10.5" fill="#475569">韦基洛夫与潘等用光学显微镜对溶菌酶等体系给出直接证据：晶核在致密液滴中出现、</text>
+  <text x="60" y="771.5" font-size="10.5" fill="#475569">液滴本身可逆涨落——解释成核对蛋白浓度异常陡的依赖与「先浑浊后出晶」的肉眼时序；</text>
+  <text x="60" y="787" font-size="10.5" fill="#475569">「沉淀」与「结晶」由此从对立变成前后相继。</text>
+  <text x="60" y="826" font-size="10.5" fill="#64748b">异相成核：尘埃、划痕、纤维、器壁与残晶充当现成界面——「半个核」已就位、能垒更低。无尘操作、</text>
+  <text x="60" y="841.5" font-size="10.5" fill="#64748b">0.22 μm 过滤与硅化盖片的物理理由正在于此。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、成核要快、生长要慢：晶种解耦</text>
+  <rect x="815.28" y="625.8" width="69.44" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="850" y="640.32" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">成核要快</text>
+  <text x="850" y="668" font-size="10.5" fill="#475569" text-anchor="middle">须高过饱和跨过能垒</text>
+  <line x1="960" y1="636" x2="1050" y2="636" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="1005" y="620" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">时间上切开</text>
+  <rect x="1125.28" y="625.8" width="69.44" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1160" y="640.32" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">生长要慢</text>
+  <text x="1160" y="668" font-size="10.5" fill="#475569" text-anchor="middle">低过饱和逐层铺展、缺陷最少</text>
+  <text x="730" y="712" font-size="11.5" fill="#1e293b" font-weight="700">晶种三法（种子已就位，液滴只管在亚稳区内生长）：</text>
+  <rect x="723.2" y="733.075" width="133.6" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="790" y="745.78" font-size="10.5" fill="#075985" text-anchor="middle">streak seeding 须晶划种</text>
+  <rect x="912.6116" y="733.075" width="174.7768" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1000" y="745.78" font-size="10.5" fill="#075985" text-anchor="middle">microseeding 梯度稀释 10<tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">-8</tspan></text>
+  <rect x="1184.88" y="733.075" width="130.24" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1250" y="745.78" font-size="10.5" fill="#075985" text-anchor="middle">macro-seeding 大晶续长</text>
+  <text x="730" y="782" font-size="10.5" fill="#475569">与晶种组合的 MMS（微晶种基质筛选）把「成核数目」变成可调参数——在整套面板上逐条件投送同一种子，</text>
+  <text x="730" y="797.5" font-size="10.5" fill="#475569">常把「永不结晶」的蛋白拉出 hit。</text>
+  <text x="730" y="838" font-size="10.5" fill="#64748b">奥斯特瓦尔德阶段规则：体系常先析出与母相界面能最低的亚稳相——同一液滴先后两种晶型、第一波微晶被取代皆由此解释；</text>
+  <text x="730" y="853.5" font-size="10.5" fill="#64748b">最先出现的晶体未必是最终值得收集的那一个。</text>
+  <text x="1040" y="920" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">工业蛋白结晶（胰岛素量产纯化）与结构生物学结晶同遵此框架</text>
+</svg>

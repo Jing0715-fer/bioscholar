@@ -29,6 +29,9 @@ import { drawImR4 } from './draw-im-r4'
 import { drawNeR4 } from './draw-ne-r4'
 import { drawBiR4 } from './draw-bi-r4'
 import { drawViR4 } from './draw-vi-r4'
+import { drawSbR4 } from './draw-sb-r4'
+import { drawXcR4 } from './draw-xc-r4'
+import { drawEmR4 } from './draw-em-r4'
 
 /** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
@@ -41,6 +44,9 @@ export const subjectCovers: Record<SubjectId, string> = {
   neurobiology: '/images/bio/covers/cover-neurobiology.svg',
   bioinformatics: '/images/bio/covers/cover-bioinformatics.svg',
   virology: '/images/bio/covers/cover-virology.svg',
+  'structural-biology': '/images/bio/covers/cover-structural-biology.svg',
+  'x-ray-crystallography': '/images/bio/covers/cover-x-ray-crystallography.svg',
+  'electron-microscopy': '/images/bio/covers/cover-electron-microscopy.svg',
 }
 
 /** 仪表盘主视觉横幅（自绘矢量） */
@@ -755,5 +761,8 @@ export function getIllustrations(sectionId: string): Illustration[] {
     ...(drawNeR4[sectionId] ?? []),
     ...(drawBiR4[sectionId] ?? []),
     ...(drawViR4[sectionId] ?? []),
+    ...(drawSbR4[sectionId] ?? []),
+    ...(drawXcR4[sectionId] ?? []),
+    ...(drawEmR4[sectionId] ?? []),
   ]
 }

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">离焦成像与衬度传递函数：CTF、Thon 环与包络衰减</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">300kV、Cs=1.2mm、Δf=−2.0μm：第一零点约0.50nm⁻¹（周期约2nm）、其后依次约0.71/0.87/1.01nm⁻¹；混合CTF=−[sinχ+Q·cosχ]，Q≈0.1–0.2</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、CTF 曲线：χ、−sin χ 与零点盲区</text>
+  <text x="50" y="182" font-size="15" fill="#1e293b" font-weight="700">χ(g) = πλg<tspan dy="-5.1" font-size="10.8">2</tspan><tspan dy="5.1">(Δf − 0.5λ</tspan><tspan dy="-5.1" font-size="10.8">2</tspan><tspan dy="5.1">g</tspan><tspan dy="-5.1" font-size="10.8">2</tspan><tspan dy="5.1">Cs)，CTF(g) = −sin χ</tspan></text>
+  <text x="95" y="200" font-size="11" fill="#475569">代入 300 kV（λ = 0.00197 nm）、Cs = 1.2 mm、Δf = −2.0 μm（欠焦取负）</text>
+  <rect x="80" y="210" width="620" height="290" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="500" x2="80" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="522" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="340.25186026872757" y1="500" x2="340.25186026872757" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="340.25186026872757" y="522" font-size="13" fill="#64748b" text-anchor="middle">g<tspan dy="2.9" font-size="9.4">1</tspan><tspan dy="-2.9"> 0.50</tspan></text>
+  <line x1="447.99892484531216" y1="500" x2="447.99892484531216" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="447.99892484531216" y="522" font-size="13" fill="#64748b" text-anchor="middle">g<tspan dy="2.9" font-size="9.4">2</tspan><tspan dy="-2.9"> 0.71</tspan></text>
+  <line x1="530.6393277384853" y1="500" x2="530.6393277384853" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="530.6393277384853" y="522" font-size="13" fill="#64748b" text-anchor="middle">g<tspan dy="2.9" font-size="9.4">3</tspan><tspan dy="-2.9"> 0.87</tspan></text>
+  <line x1="600.2775675859815" y1="500" x2="600.2775675859815" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="600.2775675859815" y="522" font-size="13" fill="#64748b" text-anchor="middle">g<tspan dy="2.9" font-size="9.4">4</tspan><tspan dy="-2.9"> 1.01</tspan></text>
+  <line x1="661.6038071351921" y1="500" x2="661.6038071351921" y2="506" stroke="#475569" stroke-width="1.8"/>
+  <text x="661.6038071351921" y="522" font-size="13" fill="#64748b" text-anchor="middle">g<tspan dy="2.9" font-size="9.4">5</tspan><tspan dy="-2.9"> 1.13</tspan></text>
+  <line x1="74" y1="210" x2="80" y2="210" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="214" font-size="13" fill="#64748b" text-anchor="end">+1</text>
+  <line x1="74" y1="355" x2="80" y2="355" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="359" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="74" y1="500" x2="80" y2="500" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="504" font-size="13" fill="#64748b" text-anchor="end">−1</text>
+  <text x="390" y="544" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">空间频率 g（nm⁻¹）</text>
+  <line x1="340.25186026872757" y1="210" x2="340.25186026872757" y2="500" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.65"/>
+  <circle cx="340.25186026872757" cy="355" r="4" fill="#dc2626"/>
+  <line x1="447.99892484531216" y1="210" x2="447.99892484531216" y2="500" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.65"/>
+  <circle cx="447.99892484531216" cy="355" r="4" fill="#dc2626"/>
+  <line x1="530.6393277384853" y1="210" x2="530.6393277384853" y2="500" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.65"/>
+  <circle cx="530.6393277384853" cy="355" r="4" fill="#dc2626"/>
+  <line x1="600.2775675859815" y1="210" x2="600.2775675859815" y2="500" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.65"/>
+  <circle cx="600.2775675859815" cy="355" r="4" fill="#dc2626"/>
+  <line x1="661.6038071351921" y1="210" x2="661.6038071351921" y2="500" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.65"/>
+  <circle cx="661.6038071351921" cy="355" r="4" fill="#dc2626"/>
+  <path d="M80.0,210.0L85.2,210.0L90.3,210.1L95.5,210.2L100.7,210.3L105.8,210.5L111.0,210.7L116.2,211.0L121.3,211.3L126.5,211.6L131.7,212.0L136.8,212.4L142.0,212.9L147.2,213.4L152.3,213.9L157.5,214.5L162.7,215.1L167.8,215.8L173.0,216.5L178.2,217.2L183.3,217.9L188.5,218.7L193.7,219.5L198.8,220.4L204.0,221.3L209.2,222.2L214.3,223.1L219.5,224.1L224.7,225.1L229.8,226.2L235.0,227.2L240.2,228.3L245.3,229.4L250.5,230.6L255.7,231.8L260.8,232.9L266.0,234.2L271.2,235.4L276.3,236.6L281.5,237.9L286.7,239.2L291.8,240.5L297.0,241.9L302.2,243.2L307.3,244.6L312.5,245.9L317.7,247.3L322.8,248.7L328.0,250.1L333.2,251.5L338.3,253.0L343.5,254.4L348.7,255.9L353.8,257.3L359.0,258.8L364.2,260.2L369.3,261.7L374.5,263.2L379.7,264.7L384.8,266.1L390.0,267.6L395.2,269.1L400.3,270.5L405.5,272.0L410.7,273.5L415.8,275.0L421.0,276.4L426.2,277.9L431.3,279.3L436.5,280.8L441.7,282.2L446.8,283.6L452.0,285.1L457.2,286.5L462.3,287.9L467.5,289.3L472.7,290.6L477.8,292.0L483.0,293.4L488.2,294.7L493.3,296.0L498.5,297.4L503.7,298.7L508.8,300.0L514.0,301.2L519.2,302.5L524.3,303.8L529.5,305.0L534.7,306.2L539.8,307.4L545.0,308.6L550.2,309.7L555.3,310.9L560.5,312.0L565.7,313.1L570.8,314.2L576.0,315.3L581.2,316.4L586.3,317.4L591.5,318.5L596.7,319.5L601.8,320.5L607.0,321.4L612.2,322.4L617.3,323.3L622.5,324.2L627.7,325.1L632.8,326.0L638.0,326.9L643.2,327.7L648.3,328.6L653.5,329.4L658.7,330.2L663.8,330.9L669.0,331.7L674.2,332.4L679.3,333.1L684.5,333.8L689.7,334.5L694.8,335.2L700.0,335.9" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="2 4"/>
+  <path d="M80.0,500.0L85.2,500.0L90.3,499.9L95.5,499.8L100.7,499.7L105.8,499.5L111.0,499.3L116.2,499.0L121.3,498.7L126.5,498.4L131.7,498.0L136.8,497.6L142.0,497.1L147.2,496.6L152.3,496.1L157.5,495.5L162.7,494.9L167.8,494.2L173.0,493.5L178.2,492.8L183.3,492.1L188.5,491.3L193.7,490.5L198.8,489.6L204.0,488.7L209.2,487.8L214.3,486.9L219.5,485.9L224.7,484.9L229.8,483.8L235.0,482.8L240.2,481.7L245.3,480.6L250.5,479.4L255.7,478.2L260.8,477.1L266.0,475.8L271.2,474.6L276.3,473.4L281.5,472.1L286.7,470.8L291.8,469.5L297.0,468.1L302.2,466.8L307.3,465.4L312.5,464.1L317.7,462.7L322.8,461.3L328.0,459.9L333.2,458.5L338.3,457.0L343.5,455.6L348.7,454.1L353.8,452.7L359.0,451.2L364.2,449.8L369.3,448.3L374.5,446.8L379.7,445.3L384.8,443.9L390.0,442.4L395.2,440.9L400.3,439.5L405.5,438.0L410.7,436.5L415.8,435.0L421.0,433.6L426.2,432.1L431.3,430.7L436.5,429.2L441.7,427.8L446.8,426.4L452.0,424.9L457.2,423.5L462.3,422.1L467.5,420.7L472.7,419.4L477.8,418.0L483.0,416.6L488.2,415.3L493.3,414.0L498.5,412.6L503.7,411.3L508.8,410.0L514.0,408.8L519.2,407.5L524.3,406.2L529.5,405.0L534.7,403.8L539.8,402.6L545.0,401.4L550.2,400.3L555.3,399.1L560.5,398.0L565.7,396.9L570.8,395.8L576.0,394.7L581.2,393.6L586.3,392.6L591.5,391.5L596.7,390.5L601.8,389.5L607.0,388.6L612.2,387.6L617.3,386.7L622.5,385.8L627.7,384.9L632.8,384.0L638.0,383.1L643.2,382.3L648.3,381.4L653.5,380.6L658.7,379.8L663.8,379.1L669.0,378.3L674.2,377.6L679.3,376.9L684.5,376.2L689.7,375.5L694.8,374.8L700.0,374.1" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="2 4"/>
+  <path d="M80.0,355.0L85.2,354.8L90.3,354.3L95.5,353.4L100.7,352.1L105.8,350.5L111.0,348.6L116.2,346.3L121.3,343.6L126.5,340.7L131.7,337.3L136.8,333.7L142.0,329.8L147.2,325.6L152.3,321.1L157.5,316.4L162.7,311.4L167.8,306.3L173.0,300.9L178.2,295.4L183.3,289.9L188.5,284.2L193.7,278.6L198.8,273.0L204.0,267.5L209.2,262.2L214.3,257.1L219.5,252.3L224.7,247.8L229.8,243.8L235.0,240.3L240.2,237.4L245.3,235.2L250.5,233.7L255.7,233.0L260.8,233.1L266.0,234.2L271.2,236.3L276.3,239.4L281.5,243.6L286.7,248.8L291.8,255.1L297.0,262.5L302.2,270.8L307.3,280.1L312.5,290.3L317.7,301.3L322.8,313.0L328.0,325.1L333.2,337.6L338.3,350.3L343.5,362.9L348.7,375.3L353.8,387.3L359.0,398.5L364.2,408.8L369.3,418.0L374.5,425.9L379.7,432.2L384.8,436.8L390.0,439.6L395.2,440.5L400.3,439.4L405.5,436.3L410.7,431.3L415.8,424.5L421.0,416.0L426.2,406.1L431.3,395.0L436.5,383.0L441.7,370.5L446.8,357.8L452.0,345.4L457.2,333.6L462.3,322.9L467.5,313.5L472.7,305.8L477.8,300.0L483.0,296.5L488.2,295.2L493.3,296.2L498.5,299.5L503.7,304.9L508.8,312.2L514.0,321.0L519.2,331.0L524.3,341.7L529.5,352.6L534.7,363.2L539.8,373.0L545.0,381.6L550.2,388.6L555.3,393.5L560.5,396.3L565.7,396.8L570.8,395.0L576.0,391.2L581.2,385.4L586.3,378.2L591.5,369.9L596.7,361.2L601.8,352.4L607.0,344.2L612.2,337.1L617.3,331.4L622.5,327.6L627.7,325.8L632.8,326.1L638.0,328.3L643.2,332.3L648.3,337.8L653.5,344.2L658.7,351.1L663.8,357.9L669.0,364.1L674.2,369.3L679.3,373.1L684.5,375.2L689.7,375.5L694.8,374.0L700.0,371.1" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <path d="M80.0,355.0L85.2,354.8L90.3,354.3L95.5,353.4L100.7,352.1L105.8,350.5L111.0,348.5L116.2,346.2L121.3,343.5L126.5,340.5L131.7,337.1L136.8,333.4L142.0,329.3L147.2,324.9L152.3,320.2L157.5,315.1L162.7,309.8L167.8,304.2L173.0,298.4L178.2,292.3L183.3,286.1L188.5,279.7L193.7,273.2L198.8,266.7L204.0,260.2L209.2,253.7L214.3,247.3L219.5,241.2L224.7,235.3L229.8,229.9L235.0,224.9L240.2,220.4L245.3,216.6L250.5,213.6L255.7,211.4L260.8,210.2L266.0,210.1L271.2,211.1L276.3,213.4L281.5,217.0L286.7,222.0L291.8,228.5L297.0,236.4L302.2,245.8L307.3,256.7L312.5,269.0L317.7,282.7L322.8,297.7L328.0,313.7L333.2,330.6L338.3,348.3L343.5,366.4L348.7,384.7L353.8,402.9L359.0,420.5L364.2,437.4L369.3,452.9L374.5,466.9L379.7,478.9L384.8,488.4L390.0,495.3L395.2,499.2L400.3,499.8L405.5,497.0L410.7,490.7L415.8,480.8L421.0,467.6L426.2,451.0L431.3,431.6L436.5,409.7L441.7,385.9L446.8,360.8L452.0,335.1L457.2,309.8L462.3,285.6L467.5,263.4L472.7,244.1L477.8,228.5L483.0,217.3L488.2,211.1L493.3,210.4L498.5,215.4L503.7,226.1L508.8,242.2L514.0,263.4L519.2,288.8L524.3,317.4L529.5,348.1L534.7,379.4L539.8,410.0L545.0,438.2L550.2,462.5L555.3,481.6L560.5,494.4L565.7,499.8L570.8,497.5L576.0,487.2L581.2,469.2L586.3,444.5L591.5,414.3L596.7,380.1L601.8,344.1L607.0,308.4L612.2,275.4L617.3,247.2L622.5,225.9L627.7,213.2L632.8,210.2L638.0,217.4L643.2,234.5L648.3,260.5L653.5,293.9L658.7,332.1L663.8,372.5L669.0,411.8L674.2,447.0L679.3,474.9L684.5,493.2L689.7,500.0L694.8,494.4L700.0,476.7" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="545" y="236" font-size="10" fill="#075985">实线 −sin χ（理想）</text>
+  <text x="545" y="254" font-size="10" fill="#0f766e">虚线 包络衰减后</text>
+  <text x="545" y="272" font-size="10" fill="#64748b">点线 ±包络 E(g)</text>
+  <text x="180" y="470" font-size="10" fill="#075985" text-anchor="middle">低频通带（强传递）</text>
+  <text x="400" y="470" font-size="10" fill="#dc2626" text-anchor="middle">负衬度区（黑白反转）</text>
+  <text x="390" y="250" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="600">χ(g<tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">) ≈ −π</tspan></text>
+  <rect x="750" y="132" width="620" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Thon 环：功率谱的可见指纹</text>
+  <rect x="800" y="195" width="340" height="340" rx="4" fill="#1e293b"/>
+  <circle cx="970" cy="365" r="46.75000000000001" fill="none" stroke="#e2e8f0" stroke-width="13" opacity="0.85"/>
+  <circle cx="970" cy="365" r="85" fill="none" stroke="#e2e8f0" stroke-width="11" opacity="0.6"/>
+  <circle cx="970" cy="365" r="111.91666666666669" fill="none" stroke="#e2e8f0" stroke-width="9" opacity="0.42"/>
+  <circle cx="970" cy="365" r="133.16666666666666" fill="none" stroke="#e2e8f0" stroke-width="8" opacity="0.3"/>
+  <circle cx="970" cy="365" r="158.66666666666669" fill="none" stroke="#e2e8f0" stroke-width="7" opacity="0.2"/>
+  <circle cx="970" cy="365" r="71.3593810414253" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+  <circle cx="970" cy="365" r="100.90293100597269" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+  <circle cx="970" cy="365" r="123.56239631539114" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+  <circle cx="970" cy="365" r="142.65675240260782" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+  <circle cx="970" cy="365" r="159.472011633843" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+  <circle cx="970" cy="365" r="16" fill="#f8fafc" fill-opacity="0.25"/>
+  <circle cx="970" cy="365" r="8" fill="#f8fafc"/>
+  <line x1="1041.3593810414252" y1="535" x2="1041.3593810414252" y2="541" stroke="#475569" stroke-width="1.5"/>
+  <line x1="1070.9029310059727" y1="535" x2="1070.9029310059727" y2="541" stroke="#475569" stroke-width="1.5"/>
+  <line x1="1093.5623963153912" y1="535" x2="1093.5623963153912" y2="541" stroke="#475569" stroke-width="1.5"/>
+  <line x1="1112.6567524026077" y1="535" x2="1112.6567524026077" y2="541" stroke="#475569" stroke-width="1.5"/>
+  <line x1="1129.472011633843" y1="535" x2="1129.472011633843" y2="541" stroke="#475569" stroke-width="1.5"/>
+  <line x1="1160" y1="252" x2="1005" y2="262" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="1168" y="250" font-size="11" fill="#475569">亮环＝通带</text>
+  <line x1="1160" y1="330" x2="1080" y2="358" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <text x="1168" y="328" font-size="11" fill="#dc2626">暗带＝CTF 零点</text>
+  <line x1="1160" y1="470" x2="990" y2="390" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="1168" y="468" font-size="11" fill="#475569">中心束斑</text>
+  <text x="970" y="560" font-size="10" fill="#475569" text-anchor="middle">零点：0.50 / 0.71 / 0.87 / 1.01 nm⁻¹（Δf = −2 μm）— CTFFIND4 / GCTF 拟合 → 欠焦与像散</text>
+  <rect x="30" y="586" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="608.84" font-size="19" fill="#475569" font-weight="700">三、欠焦–零点–分辨率（300 kV，Cs = 1.2 mm）</text>
+  <text x="50" y="626" font-size="10.5" fill="#475569">第一零点 g₁ ≈ (1/λ|Δf|)<tspan dy="-3.6" font-size="7.6">1/2</tspan><tspan dy="3.6">：欠焦越大，首零越向低频内移——分辨率潜力与低频可视性此消彼长</tspan></text>
+  <rect x="50" y="638" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="665.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">欠焦 Δf</text>
+  <rect x="160" y="638" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="665.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">第一零点 g₁</text>
+  <rect x="310" y="638" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="665.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">对应周期 d</text>
+  <rect x="440" y="638" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="555" y="665.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点</text>
+  <rect x="50" y="682" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="705.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">−0.5 μm</text>
+  <rect x="160" y="682" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="705.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 1.01 nm⁻¹</text>
+  <rect x="310" y="682" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="705.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.99 nm</text>
+  <rect x="440" y="682" width="230" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="555" y="705.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">高频通带宽，低频衬度弱</text>
+  <rect x="50" y="718" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="718" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="741.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">−1.0 μm</text>
+  <rect x="160" y="718" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="741.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.71 nm⁻¹</text>
+  <rect x="310" y="718" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="741.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 1.40 nm</text>
+  <rect x="440" y="718" width="230" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="555" y="741.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">常用折中</text>
+  <rect x="50" y="754" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="777.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">−2.0 μm</text>
+  <rect x="160" y="754" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="777.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.50 nm⁻¹</text>
+  <rect x="310" y="754" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="777.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 1.98 nm</text>
+  <rect x="440" y="754" width="230" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="555" y="777.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">低频强，首零明显内移</text>
+  <rect x="50" y="790" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="790" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="105" y="813.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">−3.0 μm</text>
+  <rect x="160" y="790" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="235" y="813.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.41 nm⁻¹</text>
+  <rect x="310" y="790" width="130" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="813.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">约 2.43 nm</text>
+  <rect x="440" y="790" width="230" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="555" y="813.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">适合小分子或极低衬度样品</text>
+  <rect x="710" y="586" width="660" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="608.84" font-size="19" fill="#475569" font-weight="700">四、混合衬度与三种包络</text>
+  <text x="730" y="630" font-size="14.5" fill="#1e293b" font-weight="700">CTF<tspan dy="3.2" font-size="10.4">total</tspan><tspan dy="-3.2">(g) = −[sin χ + Q·cos χ]，Q ≈ 0.1–0.2</tspan></text>
+  <text x="730" y="650" font-size="10.5" fill="#475569">振幅项 cos χ 集中于低频，填补 −sin χ 的空档——冷冻像「低频轮廓尚可辨认」的出处</text>
+  <rect x="730" y="660" width="200" height="96" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="680" font-size="11.5" fill="#0369a1" text-anchor="middle" font-weight="700">空间相干包络</text>
+  <text x="742" y="700" font-size="9.5" fill="#475569">照明束有限发散角：各入射方向 χ 不同，</text>
+  <text x="742" y="713" font-size="9.5" fill="#475569">高频指数衰减</text>
+  <rect x="950" y="660" width="200" height="96" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1050" y="680" font-size="11.5" fill="#6d28d9" text-anchor="middle" font-weight="700">时间相干包络</text>
+  <text x="962" y="700" font-size="9.5" fill="#475569">能量展宽 ΔE 与 ΔV/V、ΔI/I（10<tspan dy="-3.2" font-size="6.8">-6</tspan><tspan dy="3.2"> 级）</tspan></text>
+  <text x="962" y="713" font-size="9.5" fill="#475569">等效焦距展宽</text>
+  <rect x="1170" y="660" width="200" height="96" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1270" y="680" font-size="11.5" fill="#d97706" text-anchor="middle" font-weight="700">漂移振动包络</text>
+  <text x="1182" y="700" font-size="9.5" fill="#475569">1 nm/s 漂移 × 1 s 曝光 → 1 nm 信息被拉成拖影</text>
+  <text x="730" y="782" font-size="10.5" fill="#475569">Scherzer 欠焦 Δf<tspan dy="2.3" font-size="7.6">S</tspan><tspan dy="-2.3"> = −1.2(Csλ)</tspan><tspan dy="-3.6" font-size="7.6">1/2</tspan><tspan dy="3.6"> 给出最宽同号通带，最小衬度像用于对焦定位；信息极限由包络决定（场发射约 0.1 nm），</tspan></text>
+  <text x="730" y="797" font-size="10.5" fill="#475569">未校正 300 kV 点分辨率约 0.2 nm——两者之差即后处理可挖掘的空间。</text>
+</svg>

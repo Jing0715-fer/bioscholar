@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">晶体点阵、晶胞与 Miller 指数</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">晶体结构＝点阵＋基元；晶胞六参数 a b c α β γ；(110)/(111)/(210) 面族；立方 d = a/√(h²+k²+l²)（a=10 Å 时 d=7.07/5.77/4.47 Å）；倒易点阵 d* = 1/d</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、点阵＋基元＝晶体结构；晶胞六参数</text>
+  <circle cx="80" cy="250" r="5" fill="#0f766e"/>
+  <circle cx="90" cy="242" r="3.6" fill="#b45309"/>
+  <circle cx="80" cy="308" r="5" fill="#0f766e"/>
+  <circle cx="90" cy="300" r="3.6" fill="#b45309"/>
+  <circle cx="80" cy="366" r="5" fill="#0f766e"/>
+  <circle cx="90" cy="358" r="3.6" fill="#b45309"/>
+  <circle cx="80" cy="424" r="5" fill="#0f766e"/>
+  <circle cx="90" cy="416" r="3.6" fill="#b45309"/>
+  <circle cx="138" cy="250" r="5" fill="#0f766e"/>
+  <circle cx="148" cy="242" r="3.6" fill="#b45309"/>
+  <circle cx="138" cy="308" r="5" fill="#0f766e"/>
+  <circle cx="148" cy="300" r="3.6" fill="#b45309"/>
+  <circle cx="138" cy="366" r="5" fill="#0f766e"/>
+  <circle cx="148" cy="358" r="3.6" fill="#b45309"/>
+  <circle cx="138" cy="424" r="5" fill="#0f766e"/>
+  <circle cx="148" cy="416" r="3.6" fill="#b45309"/>
+  <circle cx="196" cy="250" r="5" fill="#0f766e"/>
+  <circle cx="206" cy="242" r="3.6" fill="#b45309"/>
+  <circle cx="196" cy="308" r="5" fill="#0f766e"/>
+  <circle cx="206" cy="300" r="3.6" fill="#b45309"/>
+  <circle cx="196" cy="366" r="5" fill="#0f766e"/>
+  <circle cx="206" cy="358" r="3.6" fill="#b45309"/>
+  <circle cx="196" cy="424" r="5" fill="#0f766e"/>
+  <circle cx="206" cy="416" r="3.6" fill="#b45309"/>
+  <circle cx="254" cy="250" r="5" fill="#0f766e"/>
+  <circle cx="264" cy="242" r="3.6" fill="#b45309"/>
+  <circle cx="254" cy="308" r="5" fill="#0f766e"/>
+  <circle cx="264" cy="300" r="3.6" fill="#b45309"/>
+  <circle cx="254" cy="366" r="5" fill="#0f766e"/>
+  <circle cx="264" cy="358" r="3.6" fill="#b45309"/>
+  <circle cx="254" cy="424" r="5" fill="#0f766e"/>
+  <circle cx="264" cy="416" r="3.6" fill="#b45309"/>
+  <circle cx="312" cy="250" r="5" fill="#0f766e"/>
+  <circle cx="322" cy="242" r="3.6" fill="#b45309"/>
+  <circle cx="312" cy="308" r="5" fill="#0f766e"/>
+  <circle cx="322" cy="300" r="3.6" fill="#b45309"/>
+  <circle cx="312" cy="366" r="5" fill="#0f766e"/>
+  <circle cx="322" cy="358" r="3.6" fill="#b45309"/>
+  <circle cx="312" cy="424" r="5" fill="#0f766e"/>
+  <circle cx="322" cy="416" r="3.6" fill="#b45309"/>
+  <circle cx="370" cy="250" r="5" fill="#0f766e"/>
+  <circle cx="380" cy="242" r="3.6" fill="#b45309"/>
+  <circle cx="370" cy="308" r="5" fill="#0f766e"/>
+  <circle cx="380" cy="300" r="3.6" fill="#b45309"/>
+  <circle cx="370" cy="366" r="5" fill="#0f766e"/>
+  <circle cx="380" cy="358" r="3.6" fill="#b45309"/>
+  <circle cx="370" cy="424" r="5" fill="#0f766e"/>
+  <circle cx="380" cy="416" r="3.6" fill="#b45309"/>
+  <rect x="80" y="250" width="58" height="58" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="2"/>
+  <text x="109" y="236" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">基元</text>
+  <text x="210" y="470" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">点阵＝排的秩序；基元＝排的内容</text>
+  <text x="60" y="496" font-size="10.5" fill="#475569">平移周期是相干衍射的根源（第 1 章劳厄实验的尺度匹配）；</text>
+  <text x="60" y="511" font-size="10.5" fill="#475569">原胞每胞恰含 1 个格点，惯用晶胞按对称性最高选取——面心含 4 个、</text>
+  <text x="60" y="526" font-size="10.5" fill="#475569">体心含 2 个。</text>
+  <line x1="450" y1="415" x2="580" y2="415" stroke="#475569" stroke-width="1.8"/>
+  <line x1="450" y1="415" x2="505" y2="460" stroke="#475569" stroke-width="1.8"/>
+  <line x1="580" y1="415" x2="635" y2="460" stroke="#475569" stroke-width="1.8"/>
+  <line x1="505" y1="460" x2="635" y2="460" stroke="#475569" stroke-width="1.8"/>
+  <line x1="450" y1="415" x2="450" y2="270" stroke="#475569" stroke-width="1.8"/>
+  <line x1="580" y1="415" x2="580" y2="270" stroke="#475569" stroke-width="1.8"/>
+  <line x1="450" y1="270" x2="580" y2="270" stroke="#475569" stroke-width="1.8"/>
+  <line x1="505" y1="460" x2="505" y2="315" stroke="#475569" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="635" y1="460" x2="635" y2="315" stroke="#475569" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="450" y1="270" x2="505" y2="315" stroke="#475569" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="580" y1="270" x2="635" y2="315" stroke="#475569" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="505" y1="315" x2="635" y2="315" stroke="#475569" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="450" y1="415" x2="580" y2="415" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <line x1="450" y1="415" x2="505" y2="460" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <line x1="450" y1="415" x2="450" y2="270" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="515" y="438" font-size="13" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">a</text>
+  <text x="490" y="482" font-size="13" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">b</text>
+  <text x="436" y="340" font-size="13" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">c</text>
+  <path d="M 488,415 A 38,38 0 0 1 478,452" fill="none" stroke="#64748b" stroke-width="1.4"/>
+  <text x="512" y="449" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700" font-style="italic">γ</text>
+  <text x="487" y="384" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700" font-style="italic">α</text>
+  <text x="462" y="402" font-size="12" fill="#64748b" text-anchor="middle" font-weight="700" font-style="italic">β</text>
+  <text x="470" y="196" font-size="10.5" fill="#475569">六参数：棱长 a、b、c；夹角 α（b、</text>
+  <text x="470" y="211" font-size="10.5" fill="#475569">c 间）、β（c、a 间）、γ（a、b 间）。</text>
+  <text x="470" y="226" font-size="10.5" fill="#475569">一般晶胞 V = abc·√(1−cos²α−cos²β−cos²γ+2cosα·cosβ·cosγ)；</text>
+  <text x="470" y="241" font-size="10.5" fill="#475569">单斜 P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 直接用 V = abc·sinβ。</tspan></text>
+  <text x="440" y="496" font-size="10.5" fill="#64748b">蛋白晶胞边长数十至数百 Å、</text>
+  <text x="440" y="511" font-size="10.5" fill="#64748b">体积 10⁵–10⁷ Å³——是 Matthews 判据与强度绝对标定的共同入口。</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Miller 指数：晶面的身份证</text>
+  <text x="730" y="186" font-size="10.5" fill="#475569">规则：晶面在三轴截距取倒数再整数化；(hkl) 标一族无限平行、等距的晶面；平行于某轴则该指数为 0；负截距在指数上方加横线。</text>
+  <circle cx="760" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="760" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="760" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="760" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="800" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="800" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="800" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="800" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="840" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="840" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="840" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="840" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="880" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="880" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="880" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="880" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="920" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="920" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="920" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="920" cy="310" r="2.6" fill="#64748b"/>
+  <line x1="800" y1="430" x2="760" y2="390" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="840" y1="430" x2="760" y2="350" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="880" y1="430" x2="760" y2="310" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="920" y1="430" x2="760" y2="270" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="852" y1="404" x2="830" y2="426" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)" marker-start="url(#arr-enz)"/>
+  <text x="848" y="392" font-size="11" fill="#be185d" text-anchor="middle" font-weight="700" font-style="italic">d</text>
+  <text x="842" y="462" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">(110) 面对角线面族</text>
+  <circle cx="960" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="960" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="960" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="960" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="1000" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="1000" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="1000" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="1000" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="1040" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="1040" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="1040" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="1040" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="1080" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="1080" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="1080" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="1080" cy="310" r="2.6" fill="#64748b"/>
+  <circle cx="1120" cy="430" r="2.6" fill="#64748b"/>
+  <circle cx="1120" cy="390" r="2.6" fill="#64748b"/>
+  <circle cx="1120" cy="350" r="2.6" fill="#64748b"/>
+  <circle cx="1120" cy="310" r="2.6" fill="#64748b"/>
+  <line x1="1040" y1="430" x2="960" y2="390" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="1120" y1="430" x2="960" y2="350" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="1120" y1="390" x2="960" y2="310" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="1052" y1="406" x2="1034" y2="424" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)" marker-start="url(#arr-enz)"/>
+  <text x="1050" y="394" font-size="11" fill="#be185d" text-anchor="middle" font-weight="700" font-style="italic">d</text>
+  <text x="1044" y="462" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">(210) 高指数面族</text>
+  <line x1="1210" y1="420" x2="1320" y2="420" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1210" y1="420" x2="1265" y2="452" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1320" y1="420" x2="1375" y2="452" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1265" y1="452" x2="1375" y2="452" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1210" y1="420" x2="1210" y2="325" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1320" y1="420" x2="1320" y2="325" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1210" y1="325" x2="1320" y2="325" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="1265" y1="452" x2="1265" y2="357" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="1375" y1="452" x2="1375" y2="357" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="1210" y1="325" x2="1265" y2="357" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="1320" y1="325" x2="1375" y2="357" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="1265" y1="357" x2="1375" y2="357" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <polygon points="1320,420 1265,452 1210,325" fill="#e0f2fe" fill-opacity="0.75" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="1320" cy="420" r="3.4" fill="#0369a1"/>
+  <circle cx="1265" cy="452" r="3.4" fill="#0369a1"/>
+  <circle cx="1210" cy="325" r="3.4" fill="#0369a1"/>
+  <text x="1324" y="438" font-size="11" fill="#64748b" text-anchor="middle" font-weight="700" font-style="italic">a</text>
+  <text x="1270" y="470" font-size="11" fill="#64748b" text-anchor="middle" font-weight="700" font-style="italic">b</text>
+  <text x="1196" y="372" font-size="11" fill="#64748b" text-anchor="middle" font-weight="700" font-style="italic">c</text>
+  <text x="1282" y="300" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">(111) 体对角线面族</text>
+  <text x="730" y="500" font-size="10.5" fill="#475569">换算实例：截距 2a、3b、6c → 取倒数 1/2、1/3、1/6 → 通分乘 6 → (321)；截距恰为 a、b、c → (111)。</text>
+  <text x="730" y="515" font-size="10.5" fill="#475569">晶带定律 hu + kv + lw = 0 判晶向 [uvw] 与晶面 (hkl) 平行。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、面间距：d = a/√(h²+k²+l²)（a = 10 Å 算例）</text>
+  <rect x="60" y="646" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="673.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">晶面 (hkl)</text>
+  <rect x="190" y="646" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="673.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">h²+k²+l²</text>
+  <rect x="310" y="646" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="673.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">间距 d（Å）</text>
+  <rect x="440" y="646" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="673.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">备注</text>
+  <rect x="60" y="690" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="712" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">(100)</text>
+  <rect x="190" y="690" width="120" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="712" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">1</text>
+  <rect x="310" y="690" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="712" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">10.00</text>
+  <rect x="440" y="690" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="712" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">晶胞的六个面</text>
+  <rect x="60" y="723" width="600" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="723" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="745" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">(110)</text>
+  <rect x="190" y="723" width="120" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="745" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">2</text>
+  <rect x="310" y="723" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="745" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">7.07</text>
+  <rect x="440" y="723" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="745" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">面对角线面族</text>
+  <rect x="60" y="756" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="778" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">(111)</text>
+  <rect x="190" y="756" width="120" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="778" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">3</text>
+  <rect x="310" y="756" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="778" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">5.77</text>
+  <rect x="440" y="756" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="778" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">体对角线面族</text>
+  <rect x="60" y="789" width="600" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="789" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="811" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">(210)</text>
+  <rect x="190" y="789" width="120" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="811" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">5</text>
+  <rect x="310" y="789" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="811" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">4.47</text>
+  <rect x="440" y="789" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="811" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">高指数面族</text>
+  <rect x="60" y="822" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="844" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">(222)</text>
+  <rect x="190" y="822" width="120" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="844" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">12</text>
+  <rect x="310" y="822" width="130" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="375" y="844" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">2.89</text>
+  <rect x="440" y="822" width="220" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="844" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">指数升高、间距减小</text>
+  <text x="60" y="856" font-size="10.5" fill="#475569">间距随指数升高单调减小——高分辨率信息藏在高指数反射里：测到多大 hkl，就看到多小的细节。</text>
+  <text x="60" y="871.5" font-size="10.5" fill="#475569">四方 d = 1/√((h²+k²)/a² + l²/c²)；正交 d = 1/√(h²/a² + k²/b² + l²/c²)。</text>
+  <rect x="216.2764" y="918.65" width="267.4472" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="350" y="931.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">「求 d」永远等价于「求倒易格点到原点的距离」</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、倒易点阵：衍射的自然语言</text>
+  <text x="730" y="616" font-size="10.5" fill="#475569">倒易基矢 b₁ = a₂×a₃/V、b₂ = a₃×a₁/V、b₃ = a₁×a₂/V；b₁⊥a₂、b₂⊥a₁。正空间 (hkl) 面族 ↔ 倒易格点 h b₁ + k b₂ + l b₃，</text>
+  <text x="730" y="631" font-size="10.5" fill="#475569">格矢沿面法线、长度 d* = 1/d（晶体学惯例不含 2π）；两套晶胞体积互为倒数 V* = 1/V。</text>
+  <circle cx="790" cy="930" r="3.4" fill="#0f766e"/>
+  <circle cx="814" cy="862" r="3.4" fill="#0f766e"/>
+  <circle cx="838" cy="794" r="3.4" fill="#0f766e"/>
+  <circle cx="880" cy="930" r="3.4" fill="#0f766e"/>
+  <circle cx="904" cy="862" r="3.4" fill="#0f766e"/>
+  <circle cx="928" cy="794" r="3.4" fill="#0f766e"/>
+  <circle cx="970" cy="930" r="3.4" fill="#0f766e"/>
+  <circle cx="994" cy="862" r="3.4" fill="#0f766e"/>
+  <circle cx="1018" cy="794" r="3.4" fill="#0f766e"/>
+  <line x1="790" y1="930" x2="880" y2="930" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <line x1="790" y1="930" x2="814" y2="862" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <text x="835" y="948" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">a₁</text>
+  <text x="832" y="890" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">a₂</text>
+  <text x="895" y="852" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">正空间点阵</text>
+  <circle cx="1090" cy="880" r="3.4" fill="#0369a1"/>
+  <circle cx="1090" cy="825" r="3.4" fill="#0369a1"/>
+  <circle cx="1090" cy="770" r="3.4" fill="#0369a1"/>
+  <circle cx="1144" cy="860" r="3.4" fill="#0369a1"/>
+  <circle cx="1144" cy="805" r="3.4" fill="#0369a1"/>
+  <circle cx="1144" cy="750" r="3.4" fill="#0369a1"/>
+  <circle cx="1198" cy="840" r="3.4" fill="#0369a1"/>
+  <circle cx="1198" cy="785" r="3.4" fill="#0369a1"/>
+  <circle cx="1198" cy="730" r="3.4" fill="#0369a1"/>
+  <line x1="1090" y1="880" x2="1144" y2="860" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <line x1="1090" y1="880" x2="1090" y2="825" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="1126" y="886" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">b₁</text>
+  <text x="1074" y="834" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">b₂</text>
+  <text x="1152" y="788" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">倒易点阵</text>
+  <path d="M 1000,790 C 1010,760 1040,750 1062,760" fill="none" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <text x="730" y="952" font-size="10.5" fill="#64748b">长晶轴 ↔ 短倒易轴：正交晶胞 a=80、b=100、c=120 Å 的倒易格点间距分别为 0.0125、0.0100、</text>
+  <text x="730" y="967" font-size="10.5" fill="#64748b">0.0083 Å<tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">——「反射指标」本质就是倒易格点坐标，第 4 章 Ewald 球的语言。</tspan></text>
+</svg>

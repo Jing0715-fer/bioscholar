@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：电子显微学 · 磐灰 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+
+  <!-- 细边框 + 角标 -->
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#57534e" stroke-opacity="0.32" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#57534e" stroke-opacity="0.65" stroke-width="1.6"/>
+
+  <!-- 顶部菱形标记 -->
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#57534e"/>
+
+  <!-- eyebrow -->
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#44403c">ELECTRON MICROSCOPY · CORE CURRICULUM</text>
+
+  <!-- 书名 -->
+  <text x="417" y="220" text-anchor="middle" font-size="72" font-weight="700" letter-spacing="13" fill="#1c1917">电子显微学</text>
+
+  <!-- bio-rule 双分隔线 -->
+  <line x1="300" y1="254" x2="500" y2="254" stroke="#57534e" stroke-width="2.5"/>
+  <line x1="255" y1="261" x2="545" y2="261" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+
+  <!-- 副题 -->
+  <text x="401" y="296" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">Frank / Reimer / Williams &amp; Carter 体系 · 12 章 48 节</text>
+
+  <!-- ===== 科学元素线稿带 ===== -->
+  <!-- 电镜镜筒意象：电子枪-透镜链-样品-荧光屏 -->
+  <g stroke="#57534e" fill="none" transform="translate(150,384)">
+    <!-- 电子枪（尖端发射） -->
+    <path d="M-6,-52 L0,-44 L6,-52" stroke-width="1.6"/>
+    <line x1="0" y1="-44" x2="0" y2="-38" stroke-width="1.2"/>
+    <!-- 聚光镜/物镜（双极靴示意） -->
+    <g stroke-width="1.6">
+      <path d="M-14,-34 H-4 M4,-34 H14 M-14,-28 H-4 M4,-28 H14"/>
+      <path d="M-14,-10 H-4 M4,-10 H14 M-14,-4 H-4 M4,-4 H14"/>
+    </g>
+    <!-- 电子束（波浪线过透镜） -->
+    <path d="M0,-38 Q3,-34 0,-30 Q-3,-26 0,-22 L0,-16 Q3,-12 0,-8 Q-3,-4 0,0" stroke-width="1.1" stroke-opacity="0.75"/>
+    <!-- 样品（载网杆 + 圆网） -->
+    <line x1="-26" y1="4" x2="-9" y2="4" stroke-width="1.8"/>
+    <circle cx="0" cy="4" r="9" stroke-width="1.5"/>
+    <g stroke-width="0.6" stroke-opacity="0.55">
+      <line x1="-9" y1="0" x2="9" y2="0"/><line x1="-9" y1="4" x2="9" y2="4"/><line x1="-9" y1="8" x2="9" y2="8"/>
+      <line x1="0" y1="-5" x2="0" y2="13"/><line x1="-6" y1="-3" x2="-6" y2="11"/><line x1="6" y1="-3" x2="6" y2="11"/>
+    </g>
+    <!-- 出射束与底片 -->
+    <path d="M-4,13 L-10,38 M4,13 L10,38 M0,13 L0,38" stroke-width="1" stroke-opacity="0.6"/>
+    <rect x="-16" y="38" width="32" height="6" rx="1.5" stroke-width="1.6"/>
+  </g>
+
+  <!-- CTF 曲线（衬度传递函数：衰减正弦） -->
+  <g stroke="#57534e" fill="none" transform="translate(330,378)">
+    <line x1="-44" y1="18" x2="44" y2="18" stroke-width="1.3"/>
+    <!-- 包络内正弦衰减 -->
+    <path d="M-44,18 C-38,18 -36,-14 -30,-14 C-24,-14 -22,18 -16,18 C-10,18 -8,10 -2,10 C4,10 6,26 12,26 C18,26 20,20 26,20 C32,20 34,17.5 44,17.8" stroke-width="1.7"/>
+    <!-- 包络线 -->
+    <path d="M-44,18 C-30,-26 -10,34 44,17.5" stroke-width="0.8" stroke-opacity="0.45" stroke-dasharray="4 3"/>
+    <path d="M-44,18 C-30,54 -10,-6 44,18.5" stroke-width="0.8" stroke-opacity="0.45" stroke-dasharray="4 3"/>
+    <text x="-44" y="34" font-size="9" fill="#78716c" stroke="none">CTF</text>
+  </g>
+
+  <!-- Thon 环功率谱（同心环） -->
+  <g stroke="#57534e" fill="none" transform="translate(490,388)">
+    <circle r="34" stroke-width="0.8" stroke-opacity="0.4"/>
+    <circle r="27" stroke-width="1.5"/>
+    <circle r="20" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle r="13" stroke-width="1.6"/>
+    <circle r="6" stroke-width="1" stroke-opacity="0.55"/>
+    <circle cx="0" cy="0" r="1.8" fill="#57534e" fill-opacity="0.6" stroke="none"/>
+    <!-- 中心亮点（直流斑遮挡块） -->
+    <rect x="-3.5" y="-3.5" width="7" height="7" fill="#faf8f4" stroke="none"/>
+  </g>
+
+  <!-- 冷冻载网 + 颗粒俯视（右端：六边形孔阵列 + 两颗粒） -->
+  <g stroke="#57534e" fill="none" transform="translate(662,388)">
+    <g stroke-width="1.3">
+      <polygon points="-14,-24 14,-24 28,-12 28,12 14,24 -14,24 -28,12 -28,-12"/>
+      <polygon points="-2,-24 26,-24 40,-12 40,12 26,24 -2,24 -16,12 -16,-12" stroke-opacity="0.55"/>
+    </g>
+    <!-- 孔内颗粒 -->
+    <g transform="translate(0,0)">
+      <circle r="8" fill="#57534e" fill-opacity="0.1" stroke-width="1.4"/>
+      <path d="M-4,-2 Q0,-5 4,-2 T5,3 Q2,5 -2,4 T-5,1 Z" stroke-width="1"/>
+    </g>
+    <g transform="translate(30,2)" stroke-opacity="0.7">
+      <circle r="7" fill="#57534e" fill-opacity="0.08" stroke-width="1.3"/>
+      <path d="M-3,-2 Q1,-4 3,-1 T3,3 Q0,4 -3,3 T-4,0 Z" stroke-width="0.9"/>
+    </g>
+  </g>
+
+  <!-- 顶部点阵点缀 -->
+  <g fill="#57534e" fill-opacity="0.3">
+    <circle cx="640" cy="120" r="2"/><circle cx="652" cy="112" r="1.5"/><circle cx="664" cy="120" r="2"/>
+    <circle cx="676" cy="112" r="1.5"/><circle cx="688" cy="120" r="2"/>
+  </g>
+
+  <!-- 底部注记 -->
+  <text x="400" y="470" text-anchor="middle" font-size="10.5" letter-spacing="2.2" fill="#78716c">VITRIFICATION · SINGLE PARTICLE · TOMOGRAPHY · MICROED</text>
+</svg>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质 NMR 基础：HSQC 指纹谱、同位素标记与分子量极限</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">¹H-¹⁵NHSQC每个非脯氨酸残基一枚峰；¹⁵NH<tspan dy="3.7" font-size="12.2">4</tspan><tspan dy="-3.7">Cl/¹³C-葡萄糖双标记、0.2–1mM；600–950MHz（14.1–22.3T）；常规小于30–50kDa、TROSY加氘代至约100</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">kDa（Pervushin1997）</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、¹H-¹⁵N HSQC：每个残基一枚身份证</text>
+  <line x1="120" y1="520" x2="680" y2="520" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="120" y1="520" x2="120" y2="200" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="400" y="546" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">¹⁵N 化学位移（ppm）</text>
+  <text x="94" y="360" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">¹H（ppm）</text>
+  <line x1="120" y1="520" x2="120" y2="514" stroke="#475569" stroke-width="1.4"/>
+  <text x="120" y="534" font-size="9" fill="#64748b" text-anchor="middle">130</text>
+  <line x1="232" y1="520" x2="232" y2="514" stroke="#475569" stroke-width="1.4"/>
+  <text x="232" y="534" font-size="9" fill="#64748b" text-anchor="middle">120</text>
+  <line x1="344" y1="520" x2="344" y2="514" stroke="#475569" stroke-width="1.4"/>
+  <text x="344" y="534" font-size="9" fill="#64748b" text-anchor="middle">110</text>
+  <line x1="456" y1="520" x2="456" y2="514" stroke="#475569" stroke-width="1.4"/>
+  <text x="456" y="534" font-size="9" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="568" y1="520" x2="568" y2="514" stroke="#475569" stroke-width="1.4"/>
+  <text x="568" y="534" font-size="9" fill="#64748b" text-anchor="middle">90</text>
+  <line x1="680" y1="520" x2="680" y2="514" stroke="#475569" stroke-width="1.4"/>
+  <text x="680" y="534" font-size="9" fill="#64748b" text-anchor="middle">80</text>
+  <circle cx="187.2" cy="424" r="3" fill="#6d28d9" stroke="none"/>
+  <circle cx="243.2" cy="344" r="3.4" fill="#6d28d9" stroke="none"/>
+  <circle cx="288" cy="449.6" r="3" fill="#6d28d9" stroke="none"/>
+  <circle cx="321.6" cy="289.6" r="3.2" fill="#6d28d9" stroke="none"/>
+  <circle cx="372" cy="392" r="3.6" fill="#6d28d9" stroke="none"/>
+  <circle cx="400" cy="321.6" r="3.2" fill="#6d28d9" stroke="none"/>
+  <circle cx="444.79999999999995" cy="430.4" r="3.5" fill="#6d28d9" stroke="none"/>
+  <circle cx="478.40000000000003" cy="360" r="3.3" fill="#6d28d9" stroke="none"/>
+  <circle cx="512" cy="270.4" r="3" fill="#6d28d9" stroke="none"/>
+  <circle cx="556.8" cy="408" r="3.4" fill="#6d28d9" stroke="none"/>
+  <circle cx="596" cy="328" r="3.2" fill="#6d28d9" stroke="none"/>
+  <circle cx="635.2" cy="456" r="3" fill="#6d28d9" stroke="none"/>
+  <circle cx="220.8" cy="248" r="3.1" fill="#6d28d9" stroke="none"/>
+  <circle cx="467.2" cy="238.39999999999998" r="3.3" fill="#6d28d9" stroke="none"/>
+  <circle cx="624" cy="257.6" r="3.2" fill="#6d28d9" stroke="none"/>
+  <text x="140" y="560" font-size="10.5" fill="#475569">每个非脯氨酸残基给出一枚酰胺峰（100 残基蛋白约 100 枚）——序列指纹：突变、配体结合、构象变化都会移动特定峰位。</text>
+  <rect x="750" y="132" width="620" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、同位素标记：NMR 的入场券</text>
+  <rect x="770" y="172" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="835" y="199.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">体系</text>
+  <rect x="900" y="172" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="199.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">标记组合</text>
+  <rect x="1100" y="172" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="199.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">用途</text>
+  <rect x="770" y="216" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="835" y="238.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">大肠杆菌</text>
+  <rect x="900" y="216" width="200" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="238.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">¹⁵NH<tspan dy="2.4" font-size="7.9">4</tspan><tspan dy="-2.4">Cl + ¹³C-葡萄糖</tspan></text>
+  <rect x="1100" y="216" width="250" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="238.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">双标记：三共振指定</text>
+  <rect x="770" y="250" width="580" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="250" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="835" y="272.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">氘代</text>
+  <rect x="900" y="250" width="200" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="272.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">D<tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4">O 培养基 + 选择性 H 回补</tspan></text>
+  <rect x="1100" y="250" width="250" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="272.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">降低谱线展宽</text>
+  <rect x="770" y="284" width="130" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="835" y="306.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">TROSY 体系</text>
+  <rect x="900" y="284" width="200" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="306.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">²H + ¹⁵N + ¹³C</text>
+  <rect x="1100" y="284" width="250" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="306.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">大分子量极限突破</text>
+  <text x="770" y="306" font-size="10.5" fill="#475569">样品需求：0.2–1 mM 浓度、300–600 μL、稳定性足以撑数天的采集。</text>
+  <rect x="750" y="352" width="620" height="210" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="374.84" font-size="19" fill="#475569" font-weight="700">三、磁场强度与分子量极限</text>
+  <rect x="770" y="392" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="419.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">氢谱频率</text>
+  <rect x="910" y="392" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="419.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">磁场强度</text>
+  <rect x="1050" y="392" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="419.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">定位</text>
+  <rect x="770" y="436" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="458.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">600 MHz</text>
+  <rect x="910" y="436" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="458.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">14.1 T</text>
+  <rect x="1050" y="436" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="458.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">常规蛋白主力</text>
+  <rect x="770" y="470" width="580" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="470" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="492.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">800 MHz</text>
+  <rect x="910" y="470" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="492.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">18.8 T</text>
+  <rect x="1050" y="470" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="492.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">灵敏度与色散提升</text>
+  <rect x="770" y="504" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="840" y="526.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">950 MHz</text>
+  <rect x="910" y="504" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="980" y="526.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">22.3 T</text>
+  <rect x="1050" y="504" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1200" y="526.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高色散旗舰</text>
+  <text x="770" y="520" font-size="10.5" fill="#475569">分子量极限的物理根源：分子越大转动越慢、弛豫越快、谱线越宽。常规小于 30–50 kDa；TROSY（Pervushin 1997 年）</text>
+  <text x="770" y="536" font-size="10.5" fill="#475569">＋氘代把极限推至约 100 kDa。</text>
+  <rect x="30" y="582" width="1340" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="604.84" font-size="19" fill="#475569" font-weight="700">四、三大方法样品要求速查</text>
+  <rect x="50" y="622" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">维度</text>
+  <rect x="200" y="622" width="380" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">X 射线晶体学</text>
+  <rect x="580" y="622" width="380" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">冷冻电镜（单颗粒）</text>
+  <rect x="960" y="622" width="390" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">溶液 NMR</text>
+  <rect x="50" y="666" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="688.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">样品形态</text>
+  <rect x="200" y="666" width="380" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="688.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">有序晶体</text>
+  <rect x="580" y="666" width="380" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="688.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">玻璃化薄冰载网</text>
+  <rect x="960" y="666" width="390" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="688.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">同位素标记溶液</text>
+  <rect x="50" y="700" width="1300" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="700" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="722.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">典型用量</text>
+  <rect x="200" y="700" width="380" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">微克级／晶体</text>
+  <rect x="580" y="700" width="380" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 0.1–0.5 mg 上样</text>
+  <rect x="960" y="700" width="390" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="722.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">数 mg（0.2–1 mM）</text>
+  <rect x="50" y="734" width="150" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="756.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">分子量窗口</text>
+  <rect x="200" y="734" width="380" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="390" y="756.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">数 kDa 至数 MDa</text>
+  <rect x="580" y="734" width="380" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="756.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 100 kDa 以上</text>
+  <rect x="960" y="734" width="390" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="756.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">常规小于 30–50 kDa</text>
+  <text x="700" y="756" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">HSQC 一张谱即可体检样品——峰位分布均匀、线宽一致的样品才值得进入三共振指定（第 11 章第 2 节）</text>
+</svg>
