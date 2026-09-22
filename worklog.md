@@ -2084,3 +2084,281 @@ Stage Summary:
 - 导航三件套上线：跳转回顶（全局视图+subjects 内部+quiz 阶段）、全页面返回上一级（历史栈+逻辑父级）、阅读器返回精准回学科详情
 - 仪表盘热力图默认折叠为单行摘要条（含周活动火花条），可一键展开完整 18 周日历
 - 遗留：① VLM 视觉复核持续 429 限流（子代理 bun 导入自检+sharp 渲染抽检已过，VLM 深度复核留给定时任务重试）；② scripts/tmp/mount-*.json 为图注源数据可后续清理；③ integrate.ts/final-check.ts/svg-audit.ts 保留为插图管线工具
+
+---
+Task ID: 13-b
+Agent: general-purpose
+Task: xc 学科（X 射线晶体学）12 章文字科学性校对 + 2023–2026 最新进展织入
+
+Work Log:
+- 精读 scripts/tmp/research/LATEST-ADVANCES.md 全文并逐文件通读 ch1–ch12 的 summary、各节 content 与 keyPoints；按简报纪律「只用简报事实、宁缺毋滥」执行两类修改
+- ch1（6 处编辑）：s4 PDB 增长句补「2025 年初已逾 22.7 万条（Burley 等 2025）、年增约 2 万条」并补「冷冻电镜条目至 2026 年已逾 3.6 万条、年增速居各方法之首」；PDB 年表追加 2025 行（逾 227 000）；里程碑段在剪接体之后织入 2024 化学诺奖（Baker 计算蛋白质设计 + Hassabis/Jumper AlphaFold2）；s4 小节内文小标题「从 13 个条目到二十万」改「二十余万」；本章小结「2023 年的二十万条目」更新为「2025 年初逾 22.7 万条的条目库」；s4 keyPoint 同步改为「2025 年初逾 22.7 万（年增约 2 万条）」
+- ch2–ch6、ch8–ch11（0 处编辑）：全文排查诺奖年份/人物、数量级、波长（Cu Kα 1.5418 Å、Se 0.9795 Å、S f″ 数值）、空间群（230/65/14/32/11）、Henderson 20 MGy 与 Owen 2006 30 MGy、CC1/2（2012）、Rfree（1992）、Engh & Huber（1991）、polder（2017）、MolProbity/EDS/PDB_REDO 年份等，均与史实一致且无被 2023–2026 事实推翻的断言；crambin 0.48 Å 级既有正确表述未见于本章、亦无需改动；按「宁缺毋滥」保持原文不动
+- ch7（3 处编辑）：s1「PDB 库已积累二十余万条实验结构（2023 年突破二十万）」更新为「逾 22.7 万条（2025 年初，年增约 2 万条）」；s1 keyPoint 同步更新；s3 AlphaFold 模型段以 AF3 强化——织入「2024 年 5 月 AlphaFold 3（Abramson 等，Nature）联合预测扩展至蛋白-配体-DNA-RNA-抗体复合物、为复合物 MR 备好整装搜索模型」及 2024 化学诺奖（Baker + Hassabis/Jumper）
+- ch12（4 处编辑）：s1 固定靶/SSX 段末织入「2024–2025 年固定靶与脂立方相串晶常态化运行、XFEL 与同步辐射两路串晶持续成熟」的方向性表述；s4 蛋白 MicroED 段末补「至 2024–2025 年 MicroED 对微小晶体与小分子体系优势面进一步坐实」；s4 自动化与 AI 段织入 AF3（2024-05 Nature）+ 2024 化学诺奖 + CASP16（2025，蛋白单体趋近实用上限、核酸预测仍显著落后）；s4 三线时间线「AlphaFold（2021 年）」补「2024 年获诺贝尔化学奖」锚点
+- 自检：12 个文件全部 bun -e 导入 OK（sections.length 均为 4）；ch1/ch7/ch12 的 id、小节标题、keyPoints 条数、terms 数组逐项核对未变；编辑文本无反引号与 ${；bunx tsc --noEmit 在 src/data/subjects/xc/ 下零错误（全库 98 条报错均为 examples/ 与 scripts/draw/ 等本次未触碰文件的既有问题）
+
+Stage Summary:
+- 修改文件数 3/12（ch1、ch7、ch12），总编辑次数 13（ch1 6、ch7 3、ch12 4）；其余 9 章经全文核查无科学性错误与过时断言，按纪律不动
+- 主要更新类别：①PDB 存量时效（2023 二十万 → 2025 初逾 22.7 万、年增约 2 万条；3DEM 2026 逾 3.6 万条）②2024 化学诺奖（Baker + Hassabis/Jumper）补入学科发展史三处 ③AlphaFold 3（2024-05 Nature，Abramson 等）对分子置换/复合物搜索模型的意义两处 ④CASP16（2025）核酸预测落后的边界表述 ⑤串晶（固定靶/LCP）与 MicroED 2024–2025 成熟度方向性表述
+
+---
+Task ID: 13-d
+Agent: general-purpose
+Task: immuno 学科（免疫学）12 章文字科学性校对 + 2023–2026 最新进展织入（2025 诺奖 Treg 重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文与 worklog 尾部；逐文件 Read ch1–ch12 全部 summary/sections/keyPoints，核查诺奖年表（1901/1908/1960/1972/1984/1987/1996/2011/2018 均无误）、细胞因子/CD/补体数量级、TLR 种数、Ig 基因片段组合数（65×27×6≈10530 等）等——未发现确证科学性错误，未凭记忆改动任何数字
+- ch1（4 处）：s3 耐负调控段尾织入 2025 诺奖（Brunkow/Ramsdell/Sakaguchi 外周免疫耐受）；s4 现代免疫学段补 2023 Karikó/Weissman（核苷修饰奠基 mRNA 疫苗）与 2025 诺奖两句；s4 里程碑年表增 2023/2025 两行；s4 keyPoint 微调（条数不变）
+- ch2（1 处）：s1 阴性选择「分化为 Treg 成为外周耐受的种子」句尾织入 2025 诺奖锚点（见第十一章）
+- ch3、ch4、ch7：全文复查（吞噬/DC/NK/ILC/粒细胞；PRR/TLR/炎症小体/细胞因子/JAK-STAT/急性期；补体全章）——无简报可适用事实（CAR-NK 无核实数据）、无确证错误，按「宁缺毋滥」纪律零改动
+- ch5（1 处）：s4 佐剂段尾织入 mRNA 疫苗「内建佐剂」另一思路 + Karikó/Weissman 2023 诺奖（见第十二章）
+- ch6（2 处）：s4 ADC 三要素句后补「双特异性抗体与 ADC 为当前（2025–2026）肿瘤免疫药物两大热点平台」方向性表述；章尾嵌合抗原受体句织入 FDA 已批 7 款 CAR-T（CD19/BCMA 血液肿瘤）+ 2026 年 6 月中国批准全球首个实体瘤（胃癌等上皮实体瘤）CAR-T；既有药名（blinatumomab/catumaxomab/恩美曲妥珠单抗/维布妥昔单抗）拼写核对无误、未新增品种
+- ch8（1 处）：s4 交叉耐受句织入 2025 诺奖与 Treg 主动抑制互补（见第十一章）
+- ch9（3 处）：s2 中枢耐受多重保险句尾织入 tTreg 与 2025 诺奖；s3 Treg 段改写为完整发现史（Sakaguchi 1995 鉴定 CD4⁺CD25⁺ Treg、Brunkow 2001 Foxp3 缺陷致 Scurfy/IPEX、Ramsdell 推动 Treg 治疗与 IL-2 选择性激动剂转化、三人共享 2025 诺奖）；s3 keyPoint 同步（条数不变）
+- ch10（1 处）：s4 疫苗设计段（多糖结合疫苗句后）织入 mRNA-4157（V940）+ 帕博利珠单抗 KEYNOTE-942 复发/死亡风险降约 44%、2026 年 8 月 III 期阳性、首个 III 期成功的个体化 mRNA 肿瘤疫苗（见第十二章）
+- ch11（5 处）：s1 1960 诺奖句后接「六十五年后」2025 诺奖对照；s2 五重机制清单尾补 Treg 为第六重保险 + 2025 诺奖；s3 开头补 Sakaguchi 1995 鉴定（CD4⁺CD25⁺）；s3 Foxp3 段尾补 Brunkow 2001/Ramsdell 转化/三人共享 2025 诺奖；s3 keyPoint 同步（条数不变）
+- ch12（5 处）：s4 mRNA 核苷修饰要点织入 Karikó/Weissman 2023 诺奖；mRNA 平台段尾织入 mRNA-4157 完整数据链（II 期 44%、5 年随访 2026 年 1 月获益持续、III 期 2026 年 8 月阳性、首个 III 期成功个体化 mRNA 肿瘤疫苗）；CAR-T 段「实体瘤突破仍在攻坚」过时断言改为 FDA 7 款（CD19/BCMA 血液肿瘤）+ 2026 年 6 月中国全球首个实体瘤 CAR-T（胃癌等上皮来源）里程碑；keyPoints 两条同步微调（条数不变）
+- 自检：12 个文件全部 bun -e 动态导入 OK（各 4 sections，keyPoints 总数不变：20/20/20/20/20/20/21/20/18/16/19/17）；rg 确认 12 文件无 ${ 注入、无反引号破坏；bunx tsc --noEmit 输出中 src/data 与 immuno 零错误（余者为 examples/scripts/skills 既有无关报错，未触碰）
+- 纪律遵守：仅编辑 12 个 immuno 章节文件 + 追加本 worklog；未动 id/小节标题/导出名/对象结构/keyPoints 条数/terms；全部替换均为精准小片段；未 git/build/kill/重启
+
+Stage Summary:
+- 修改 9 个文件（ch1/ch2/ch5/ch6/ch8/ch9/ch10/ch11/ch12）共 23 处编辑；ch3/ch4/ch7 复查后零改动
+- 主要更新类别：① 2025 诺奖（外周免疫耐受，Brunkow/Ramsdell/Sakaguchi）织入 8 个文件 12 处（含 4 处 keyPoint/年表同步）；② 2023 诺奖（Karikó/Weissman mRNA 核苷修饰）织入 ch1/ch5/ch12；③ CAR-T 现状（FDA 7 款 + 2026 年中国全球首个实体瘤 CAR-T）更新 ch6/ch12 过时断言「实体瘤仍在攻坚」；④ mRNA 肿瘤疫苗（mRNA-4157/KEYNOTE-942，III 期首个成功）织入 ch10/ch12；⑤ 双特异抗体与 ADC 两大热点平台方向性表述（ch6，未新增未经核实药名）
+
+---
+Task ID: 13-a
+Agent: general-purpose
+Task: sb 学科（结构生物学实验方法）12 章文字科学性校对 + 2023–2026 最新进展织入
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文并通读 sb/ch1–ch12 全部 summary/content/keyPoints，只采用简报核实事实做更新
+- ch1（12 处编辑）：summary 两处（PDB 增长曲线改「逾 22.7 万条（2025 年初）」；发展史时间线终点由 2020 AlphaFold2 延至 2024 AlphaFold 3 与蛋白质设计诺奖）；s1 两座数据库段改「2025 年初逾 22.7 万条（Burley 等 2025）、年增约 2 万条」并织入 3DEM 2026 逾 3.6 万条/2025 单年逾 7,200 条；s1 段末织入 AlphaFold 3（2024-05，Abramson 等，PoseBusters 较传统对接准确约 50%、AlphaFold Server 免费开放）；里程碑表 2024/超 22 万行改 2025/逾 22.7 万；「从 13 条到 22 万条」同步改；keyPoint 同步改 22.7 万；s2 冷冻电镜段织入 Volta 相位板下压 <100 kDa 分子量下限；s3 小节内标题「2013–2020」改「2013 至今」，段落续写 2024 化学诺奖（Baker 蛋白质设计 + Hassabis/Jumper AlphaFold2）与 CASP16（2025，蛋白单体趋饱和、核酸显著落后，Kretsch 等 2025）；诺奖年表补 2024 化学奖一行；s3 keyPoint 补 2024 诺奖
+- ch2（1 处）：s4 科学性纠错——TEV 蛋白酶来源「烟草花叶病毒」更正为「烟草蚀纹病毒」（NIa 蛋白属 potyvirus 的 TEV，原文字张冠李戴）；其余事实核对无误，无简报相关织入点
+- ch3（1 处）：s2 科学性纠错——IMAC 配基中文命名「IDA，次氮基三乙酸／NTA，次氮基三乙酸衍生物」更正为「IDA，亚氨基二乙酸／NTA，次氮基三乙酸」（配位齿数原文正确，名称互串）；Porath 1975/Hochuli 1987 等史实核对无误
+- ch4（0 处）：全章纯化实操与质控数值逐条核对（SDS 结合比、银染灵敏度、+16/+42/+1 Da、二硫键 −2 Da、330/350 nm 等）无科学性错误；简报无适用于本章的事实，宁缺毋滥不动
+- ch5（1 处）：s4 LCP 段末织入 in meso 串晶以固定靶形态在 XFEL 与同步辐射两侧持续成熟（呼应第 12 章）
+- ch6（1 处）：s3 多晶合并段末织入固定靶芯片与脂立方相载体的串晶路线持续成熟、每晶一照剂量不叠加；Teng 1990/Henderson 1995/Owen 2006/CC1/2 2012/L 检验 2003 等史实核对无误
+- ch7（0 处）：相位问题章全部史实（Patterson 1934、Rossmann-Blow 1962、Harker 1956、Blow-Crick 1959、Wang 1985、Read 1986、Se K 边 12.658 keV/0.9795 Å、f″ 3.8 对 0.56 e⁻）核对无误，无过时断言
+- ch8（1 处）：s4 排版修正——「（ wwPDB validation report）」多余空格清除；全部方法学归属（Coot 2004、polder 2017、Engh-Huber 1991、TLS 1968、Rfree 1992 等）核对无误
+- ch9（1 处）：s1 全流程鸟瞰段织入 3DEM 存量数据（2026 逾 3.6 万条、2025 单年逾 7,200 条、年增速居各方法之首）；Dubochet 1982/Li 2013/Russo-Passmore 2014 等核对无误
+- ch10（0 处）：图像处理章全部程序与论文归属（CTFFIND4 2015、MotionCor2 2017、Grant-Grigorieff 2015、Scheres 2012、Zivanov 2018/2019、Nakane 2018、Rosenthal-Henderson 2003、Yip 2020 铁蛋白 1.2 Å）核对无误且与简报保留纪录一致
+- ch11（0 处）：NMR 章（Pervushin 1997、Lipari-Szabo 1982、Güntert 1997、TALOS-N 2013 等）核对无误；CASP16 核酸预测落后一节与本章蛋白 NMR 主题关联弱，按宁缺毋滥不织入
+- ch12（6 处）：summary 更新（AF-Multimer 与 AlphaFold 3 2024 联合预测、cryo-ET FIB 自动化高通量化、ESM3 生成式蛋白设计入展望句）；s3 CASP14 段末织入 2024 化学诺奖（Baker + Hassabis/Jumper）；s3 AF3 段充实为 2024 年 5 月 Nature、PoseBusters 准确约 50%、无需结构输入、AlphaFold Server 免费开放，并续 CASP16 蛋白单体趋饱和/核酸与复合物仍落后（Kretsch 等 2025）；s3 ESMFold 段末织入 ESM3（2024-06，EvolutionaryScale，980 亿参数三模态生成式模型，esmGFP 模拟 5 亿年进化、与天然 GFP 序列一致性约 40%）；s3 keyPoint AF3 条目同步充实；s4 原位段织入 FIB 减薄自动化与深度学习颗粒识别推动 cryo-ET 高通量化（2024–2025 前沿）
+- 自检：12 个文件逐一 bun -e 动态导入全部 OK（各 4 sections）；keyPoints 条数逐节比对不变；模板字符串扫描无新增反引号与 ${（每文件 8 个反引号、成对）；bunx tsc --noEmit 输出 98 条错误均为既有遗留（examples/、scripts/draw/、mb scenes 等），grep subjects/sb 零命中
+
+Stage Summary:
+- 修改 8 个文件（ch1/ch2/ch3/ch5/ch6/ch8/ch9/ch12）共 24 处编辑；ch4/ch7/ch10/ch11 经逐条核对无科学性错误且无简报适用事实，按「宁缺毋滥」纪律零改动
+- 更新类别：过时数字更新（PDB/3DEM 存量口径）、2023–2026 前沿织入（AlphaFold 3、2024 化学诺奖、CASP16、ESM3/esmGFP、cryo-ET FIB 自动化、串晶成熟）、科学性纠错 2 处（TEV 病毒名、IDA/NTA 中文名）、诺奖年表补行 1 处、排版修正 1 处
+- 未触碰 12 个章节文件与 worklog.md 之外的任何文件；未 build、未 kill、未 git、未重启 dev server
+
+---
+Task ID: 13-c
+Agent: general-purpose
+Task: em 学科（电子显微学）12 章文字科学性校对 + 2023–2026 最新进展织入
+
+Work Log:
+- 通读研究简报 scripts/tmp/research/LATEST-ADVANCES.md 全文与 worklog 尾部；逐文件 Read ch1–ch12 全文（summary/各节 content/keyPoints），仅使用简报核实事实做更新
+- ch1（3 处）：①s2 电子波长比对表指数符号纠错——原「与 550 nm 可见光之比」四行数值 1.3/1.5/2.2/2.8×10⁻⁵ 与波长不符（550 nm/λ 恰为 1.3/1.5/2.2/2.8×10⁵），改为表头「550 nm 可见光与电子波长之比」＋×10⁵；②s3 1974 年诺奖表述纠错——原文「三人共享」紧接波特/帕拉德/克劳德易误读为含波特，改为「克劳德、帕拉德与德迪夫（de Duve）共享」；③s3 里程碑年表后织入 3DEM 条目 2026 年逾 3.6 万条（2025 年单年逾 7,200 条、年增速居各方法之首）与 AI 颗粒挑选/构象分析成常规
+- ch2：通读电子光学全章（枪型亮度/透镜公式/Scherzer/真空数字）未发现确证科学性错误，简报亦无对应更新点，未改动
+- ch3（1 处）：s4「克鲁 1970 年用环形探测器分辩单原子」错别字「分辩」改「分辨」
+- ch4（1 处）：s2 数量级纠错——300 keV 电子能量 4.8×10⁻¹⁷ J 应为 4.8×10⁻¹⁴ J（3×10⁵ eV × 1.602×10⁻¹⁹ J/eV）；ch4-s3 原有重复段落属既有文本缺陷，未在本次科学性校对范围内处理（仅记录）
+- ch5：通读负染/包埋/HPF/免疫电镜全章（固定剂年表、2100 bar、Turkevich/Faulk&Saylor 1971 等均核对无误），无适用简报事实，未改动
+- ch6（1 处）：s3 Spotiton/chameleon 段织入单颗粒借助相位板与衬度改善向 100 kDa 以内小蛋白扩展的趋势
+- ch7（2 处）：s4「小于 100 kDa 普遍困难」处织入当前借 Volta 相位板与更好衬度向 100 kDa 以内推移；对应 keyPoint 同步微调（条目数不变）
+- ch8（3 处）：s2 α 螺旋判读纠错——「约 10 Å 周期的条纹」改为「直径约 10 Å 的密度棒（螺距约 5.4 Å）」（α 螺旋螺距 5.4 Å、直径约 10 Å，原文周期数字有误）；同条 keyPoint 同步；s1 颗粒挑选段织入「到 2025 年深度学习挑选已成主流流水线常规配置」
+- ch9（1 处）：s2 FIB 减薄段织入 FIB 减薄自动化与原位结构生物学为 2024–2025 年冷冻电镜最活跃前沿热点、高通量化为主攻方向
+- ch10（1 处）：s4 章末织入「时至 2026 年，微米晶电子衍射对微小晶体与稀缺小分子的利好仍在持续兑现」
+- ch11（6 处）：亮度单位纠错 3 处——summary/s1 正文/s1 keyPoints 的 A·cm⁻²·sr⁻¹ 均为 SI 数值误标英制单位（与 ch2 的 A·m⁻²·sr⁻¹ 相差 10⁴），统一改为 A·m⁻²·sr⁻¹并把冷场发射上限收敛为 10¹³（与 ch2 相对亮度 10³–10⁴ 自洽，summary 同步 10¹⁴→10¹³）；s4 体积电镜段织入 2024 年 10 月完整成体果蝇脑连接组（约 14 万神经元、约 5,000 万突触，Nature 六连发）与 2026 年 9 月首个完整雄性果蝇中枢神经系统（脑加腹神经索）连接组；对应 keyPoint 追加 2024 果蝇脑条目
+- ch12（11 处）：s1 里程碑年表补 2024 化学诺奖行（Baker、Hassabis 与 Jumper——蛋白质设计与 AlphaFold2）；s1 表后织入 3DEM 条目 2026 年逾 3.6 万条/2025 年单年逾 7,200 条/年增速居各方法之首；s2 Volta 相位板处织入单颗粒向 100 kDa 以内扩展；s3 深度学习落点段补「到 2025 年 AI 驱动的颗粒挑选与构象分析已成常规环节」；s3 结构预测合流段织入 2024 化学诺奖（Baker 计算蛋白质设计、Hassabis 与 Jumper 因 AlphaFold2）与 AlphaFold 3（2024 年 5 月 Nature，Abramson 等：单一模型联合预测蛋白+配体+DNA+RNA+抗体，PoseBusters 较传统对接准确约 50%，2024 年 7 月起 AlphaFold Server 非商业免费开放）；s4 原位段织入 FIB 减薄自动化 2024–2025 热点；s4 体积电镜段织入果蝇 2024 完整脑/2026 完整雄性 CNS 连接组；keyPoints 同步 3 条（生态侧补 2024 诺奖、体积电镜补 2024 果蝇脑、里程碑链条补 3DEM 统计——条目数均不变）；summary 补 AlphaFold2 2024 年诺奖锚点
+- 自检：12 个文件逐一 bun -e 动态导入全部 OK（各 4 sections、keyPoints 条数不变）；rg 扫描确认未引入反引号/「${」序列；bunx tsc --noEmit 在 src/ 范围零错误（98 条报错均为 examples/ 与 scripts/draw/ 既有问题，与本次编辑无关）
+
+Stage Summary:
+- 修改 10/12 个文件、共 30 处编辑；ch2/ch5 经逐句核对未发现确证错误且无适用简报事实，按「宁缺毋滥」原则未动
+- 更新类别：科学性纠错 7 处（波长比表指数、1974 诺奖三人、300 keV 能量数量级、α 螺旋 10 Å 表述、亮度单位×3、错别字）；2023–2026 进展织入 23 处（3DEM 3.6 万条×4、AI 成常规×4、cryo-ET/FIB 自动化 2024–2025 热点×3、<100 kDa 扩展×3、果蝇连接组 2024/2026×4、2024 化学诺奖×4、AlphaFold 3×1、MicroED 现状×1；keyPoints/summary 同步微调 5 处）
+- 既有正确纪录均保留（ferritin 1.22 Å 2020、Cu Kα 1.54 Å、2017 冷冻电镜诺奖、1986 Ruska 诺奖等）；未触碰 12 文件与 worklog 之外的任何文件，未 build/git/kill
+
+---
+Task ID: 13-f
+Agent: general-purpose
+Task: cb 学科（细胞生物学单文件）文字科学性校对 + 2023–2026 最新进展织入（HCA/合成细胞重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文与 worklog 尾部交接；分 4 块 Read 通读 cell-biology.ts 全部 12 章 53 小节的 summary/content/keyPoints（约 186KB），逐条核对诺奖年份（Zernike 1953、GFP 2008、Blobel 1999、de Duve 1974、Mitchell 1978、Boyer/Walker 1997、端粒酶 2009、Hartwell/Hunt/Nurse 2001、NO 1998、Brown/Goldstein 1985、Gurdon/Yamanaka 2012、凋亡 2002 等）与数字硬伤（mtDNA 16569 bp、NPC 110—125 MDa、微管 13 原丝、核小体 146 bp/1.65 圈、2²³≈8.4×10⁶ 等）——均无误
+- ch1（4 处）：s1 病毒与细胞段尾织入合成生物学（Sc2.0 合成酵母基因组 2025 收官、16 条染色体/约 6,000 基因/SCRaMbLE、迄今最大合成真核基因组；2026-07 SpudCell 首个从零构建具备摄食-生长-复制完整生命周期的合成细胞），呼应「何为细胞」的定义讨论；s3 显微成像章末新增「成像大科学的兴起」段（2024-10 完整成体果蝇脑连接组约 14 万神经元/约 5,000 万突触、Nature 六篇连发；2026-09 首个完整雄性果蝇 CNS 脑+腹神经索连接组）；s4 流式细胞术段尾织入单细胞转录组测序与 HCA（2024-11 里程碑论文集、18 个生物网络图谱推进中、V1.0 预计 2026 发布）
+- ch2—ch6（0 处）：膜运输/内膜系统后半/蛋白质分选/线粒体/骨架五章逐句核对（Singer-Nicolson 1972、MacKinnon 2003、3Na⁺/2K⁺ 计量、呼吸链 4/4/2 H⁺ 泵出、NADH 2.5 ATP、驱动蛋白 8 nm 步长、Mitchison-Kirschner 1984、Margulis 1967 等）无确证错误，且无简报适用织入点，按宁缺毋滥不动
+- ch3（1 处）：s4 科学性精修——ER 应激凋亡执行者 caspase-12 补「（啮齿类）」种属限定（人类 CASP12 多为失活假基因，原文在人疾病语境下无限定易误导）
+- ch7（3 处）：s2 核仁段尾织入相分离/生物凝聚体方向性表述（2018 年起持续前沿、至 2025 仍高度活跃、与转录调控及疾病药物发现交叉）；s4 着丝粒 α 卫星重复句后括注「此类高度重复区段正是既往基因组参照序列的缺口，直至 2022 年 T2T-CHM13 完整序列方被解析」；s5 显带技术后新增「从核型到完整基因组参照」段（T2T-CHM13 2022 完整序列补齐约 8% 缺失区段、Y 染色体完整序列 2023、泛基因组首版草图 2023-05 47 分相二倍体/94 单倍型/目标 350 人）
+- ch8—ch10（0 处）：信号转导/细胞连接/细胞周期三章逐句核对（GPCR 约 800 种、Ras 30%、核受体 48 成员、胶原 28 型占 30%、Tjio-Levan 1956、Ph 染色体 1960、p53 50%、Pardee 1974 等）无确证错误，无简报适用事实，不动
+- ch11（2 处）：s1 转录因子组合调控段中织入 microRNA 转录后调控与 2024 诺奖（Ambros 与 Ruvkun）；s1 段尾织入 HCA（2024-11 里程碑论文集、18 个生物网络图谱、V1.0 预计 2026）呼应章首「二百余种细胞类型」的细胞分类主题
+- ch12（1 处）：s4 科学性纠错——「（人还有 caspase-4/5/11 直接识别胞内 LPS）」更正为「（人还有 caspase-4/5、小鼠则有 caspase-11 直接识别胞内 LPS）」（人类无 caspase-11，其为小鼠/啮齿类炎症性 caspase，原表述种属张冠李戴）
+- 自检：bun -e 动态导入输出 OK 12 4,5,4,4,4,5,5,5,4,5,4,4（53 小节）；反引号总数 106=53×2 成对无新增；无 ${ 注入；bunx tsc --noEmit 在 cell-biology.ts 零错误（余者均为 examples/scripts 既有无关报错）
+- 纪律遵守：仅编辑 cell-biology.ts 与追加本 worklog；未动 id/章/节标题/导出名/对象结构/keyPoints 条数与 terms；全部为精准小片段替换（11 次编辑，含 1 处织入后措辞补「合成酵母基因组」限定）；未 git/build/kill/重启
+
+Stage Summary:
+- 共 11 处编辑，分布：ch1×4、ch3×1、ch7×3、ch11×2、ch12×1；ch2/ch4/ch5/ch6/ch8/ch9/ch10 经逐句核对无科学性错误且无简报适用事实，零改动
+- 主要更新类别：①合成生物学织入 1 处（Sc2.0 2025 收官 + SpudCell 2026 完整生命周期合成细胞）；②HCA 织入 2 处（ch1-s4 方法学视角 + ch11-s1 细胞分类视角）；③基因组参照更新 2 处（T2T-CHM13/Y 染色体/泛基因组 47 分相二倍体）；④果蝇连接组织入 1 处（2024 完整脑 + 2026 完整雄性 CNS）；⑤相分离/凝聚体方向性表述 1 处（核仁无膜细胞器语境）；⑥2024 microRNA 诺奖织入 1 处；⑦科学性精修/纠错 2 处（caspase-12 啮齿类限定、caspase-11 种属归属）
+
+---
+Task ID: 13-h
+Agent: general-purpose
+Task: neuro 学科（神经生物学）12 章文字科学性校对 + 2023–2026 最新进展织入（AD 获批药物重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文（§4 neuro 重点 + §0/§3 通用条目），并通读 worklog 尾部；逐文件 Read neuro/ch1–ch12 全文（summary/content/keyPoints/terms），仅采用简报核实事实做更新
+- ch1（6 处编辑）：s1 跨物种对照表线虫行「唯一测得完整连接组的动物」改为「首个……（1986）」（2024 果蝇整脑连接组已成，唯一性断言过时）；同表果蝇行突触规模「约 10⁷ 量级」改「约 5×10⁷」并补「2024 年完成整脑连接组」；s4 连接组学段重写——「至今仍是唯一全连接的动物」改「首个」，织入 2024 年 10 月完整成体果蝇脑连接组（约 14 万神经元、约 5000 万突触、Nature 六连发）与 2026 年 9 月首个完整雄性果蝇中枢神经系统（脑与腹神经索）连接组；s4 方法年表末行「1986–2024」改「1986–2026」、里程碑改为「从线虫到果蝇脑与完整中枢的全连接图谱」；s4 keyPoint 同步补 5000 万突触与 2026 雄性果蝇 CNS 连接组（条数不变）；s4 电生理段科学性纠错——1976 年 Neher 与 Sakmann 首次单通道记录时「形成高达 10 GΩ 的吉欧封接」为史实错置（吉欧封接系 1980 年代初改进），改为「形成紧密封接（1980 年代初改进为高达 10 GΩ 的吉欧封接）」
+- ch5（2 处编辑）：s3 科学性纠错——「一切抗精神病药皆为 D2 拮抗剂」全称断言与史实不符（D2 部分激动剂早有获批品种），改为「经典抗精神病药皆为……，新一代药物中亦引入了 D2 部分激动剂」；s3 对应 keyPoint 同步（条数不变）
+- ch12（7 处编辑）：summary 第三节 AD 括注补「抗 Aβ 单抗的获批」；s1 脑区分基因段末织入 2024 年生理学或医学诺奖（Ambros 与 Ruvkun 发现 microRNA 转录后基因调控，视语境关联神经发育分化）；s3 AD 主段过时表述更新——原「近年靶向 Aβ 原纤维的抗体……显示延缓衰退」扩写为获批事实链：阿杜卡努单抗 2021 年加速批准、2024 年退市；仑卡奈单抗 2023 年 7 月 FDA 完全批准（早期 AD）、2025 年 1 月每四周维持剂量；多奈单抗 2024 年 7 月完全批准；「淀粉样级联假说由此首次转化为获批的疾病修饰疗法」；s3 胆碱能假说小节过时断言「对症治疗的边界，恰是『疾病修饰治疗』尚未满足的需求所在」更新为「边界已被部分填补……首批延缓病程的疾病修饰疗法」；s3 keyPoint 两条同步（淀粉样级联条补 2023–2024 获批、胆碱能条补首批疾病修饰疗法，条数不变）；s4 类脑器官段织入「类装配体（assembloid）技术正持续拓展疾病模型的边界」（方向性表述，简报口径）
+- ch2/ch3/ch4/ch6/ch7/ch8/ch9/ch10/ch11 逐章逐节核对：诺奖年份与人物（1906/1932/1936/1961/1963/1970/1981/1986/1991/1997/1998/2004/2014）全部无误；Nernst/GHK 数值、HH 参数、离子与通道数字（DEKA/IFM、Nav 亚型与 TTX 敏感性、门控电荷 12–16e、AChE、5-HT 约 14 亚型、耳蜗 3500/12000–20000、+80 mV 内淋巴电位、LGN 六层、SCN 两万、小脑 690 亿等）无科学性硬伤；无「尚无获批疗法」类过时断言、无适用简报事实的织入点，按「宁缺毋滥」零改动
+- 自检：12 文件全部 bun -e 动态导入 OK（各 4 sections；keyPoints 条数 ch1 5/5/5/5、ch5 4/5/5/6、ch12 5/5/5/5 均与原文一致）；三份编辑文件反引号数均为 8（模板字符串结构完好）且无「${」注入；bunx tsc --noEmit 输出中 subjects/neuro 零错误（其余报错均为 examples/ 与 scripts/draw/ 既有遗留，未触碰）
+- 纪律遵守：仅编辑 ch1/ch5/ch12 三个章节文件 + 追加本 worklog；未动 id/小节标题/导出名/对象结构/keyPoints 条数/terms；全部为精准小片段替换；未 git/build/kill/重启 dev server
+
+Stage Summary:
+- 修改 3 个文件（ch1/ch5/ch12）共 15 处编辑；其余 9 章经逐节核对无科学性错误且无简报适用事实，零改动
+- 主要更新类别：① AD 获批药物（仑卡奈单抗 2023-07 完全批准 + 2025-01 维持剂量、多奈单抗 2024-07、阿杜卡努单抗 2021 加速批准后 2024 退市）更新 ch12 两处过时断言并同步 summary 与两条 keyPoint；② 果蝇连接组 2024 整脑（14 万神经元/5000 万突触/Nature 六连发）与 2026 雄性完整 CNS 织入 ch1 四处（含「唯一全连接动物」过时断言纠正）；③ 2024 microRNA 诺奖织入 ch12 神经发育基因调控处；④ 科学性纠错 3 处（抗精神病药 D2 全称断言、膜片钳吉欧封接年代错置、线虫唯一性断言）；⑤ 类装配体方向性表述 1 处
+
+---
+Task ID: 13-e
+Agent: general-purpose
+Task: mb 学科（分子生物学单文件 12 章）文字科学性校对 + 2023–2026 最新进展织入（2024 microRNA 诺奖重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文与 worklog 尾部；Read 分块通读 molecular-biology.ts 全部 2453 行（12 章 57 节 summary/content/keyPoints/terms），仅采用简报核实事实
+- ch1–ch4、ch6、ch12：逐条核对史实与数字（Beadle-Tatum 1958、Roberts-Sharp 1993、Temin-Baltimore 1975、Nirenberg-Khorana-Holley 1968、密码子 64/61/3、摆动规则、pol I/III 亚基、诺奖年份等均无误）且无简报适用织入点，按「宁缺毋滥」零改动
+- ch5（1 处）：s4 结尾「RNA 层再编程」句后织入 microRNA 经碱基互补介导转录后基因调控 + 2024 年诺贝尔生理学或医学奖表彰其发现（交叉引用第 8 章）
+- ch7（2 处）：s1 科学性纠错——Gilbert 与 Müller-Hill 纯化 LacI（1966）后「同年 Ptashne 纯化出 λ 阻遏蛋白」更正为「次年（1967）」（Ptashne PNAS 1967）；s4 sRNA 段尾织入真核 microRNA 同源逻辑 + lin-4/let-7 获 2024 年诺奖（殊途同归表述）
+- ch8（1 处）：s5 miRNA 段「（2024 年诺贝尔奖授予 Ambros 与 Ruvkun）」精确化为「Ambros 与 Ruvkun 因此获 2024 年诺贝尔生理学或医学奖——microRNA 介导的转录后基因调控由此确立为真核基因调控的关键层次」（原文已含 2024 诺奖但未标奖项类别）
+- ch9（1 处）：s4 结尾过时断言「长读长技术正补齐着人类基因组最后的高度重复区段（T2T）」更新为已完成事实——补齐缺失约 8%，2022 年完成的 T2T-CHM13 完整人类基因组序列为里程碑
+- ch10（2 处）：s1 遗产段 T2T 句扩充为 T2T-CHM13（补缺失约 8%）+ 2023 年 Y 染色体完整序列 + 2023 年 5 月人类泛基因组首版草图（47 个分相二倍体组装、94 条单倍型、目标 350 人）；s3 Perturb-seq 后新增段落织入人类细胞图谱（HCA）——2024 年 11 月里程碑论文集、18 个生物网络图谱、首版草图 V1.0 预计 2026 年发布
+- ch11（6 处）：s3 段尾织入 VERVE-101（肝脏 PCSK9 单碱基编辑降 LDL）I 期成功推进 II 期、先导编辑进入早期临床；s4 LNP-mRNA 条织入 Karikó 与 Weissman 核苷修饰（N1-甲基假尿苷抑制先天免疫感应）+ 2023 年诺贝尔生理学或医学奖；s4 基因治疗末（CAR-T 前）新增 Casgevy（exa-cel）段——BCL11A 增强子编辑恢复胎儿血红蛋白、2023 年 11 月英国全球首批、12 月美国 FDA 批准、治镰状细胞病与输血依赖型 β 地贫、首个获批 CRISPR 疗法、至 2025 年初全球约 250 项 CRISPR 临床试验；s5 Sc2.0 条更新为 2025 年收官（16 条染色体全部构建、约 6,000 基因、SCRaMbLE 系统、迄今最大合成真核基因组）；s5 深层议题段织入 SpudCell（2026 年 7 月报道，首个从零构建、具完整生命周期——摄食生长复制的合成细胞）；s5 keyPoint 同步改写（条数不变）
+- ch12：全章核对（Rous 1911/1966、Varmus-Bishop 1989、Knudson 1971、Ras 约 30%、KRAS 胰腺约 90%、伊马替尼 2001、imetelstat 获批低危 MDS 等）无误，无适用简报事实，零改动
+- 自检：bun -e 动态导入 OK（12 章，sections 4,5,4,5,5,5,4,5,5,5,5,5）；keyPoints 总数 257、条目数不变；模板字符串无新增反引号（114 个成对）与 ${ 序列；bunx tsc --noEmit 输出中 subjects/molecular-biology 零错误（150 条报错均为 examples/ 与 scripts/draw/ 既有遗留，与本次编辑无关）
+- 纪律遵守：仅编辑 molecular-biology.ts 一个文件 + 追加本 worklog；未动 id/章/节标题/导出名/对象结构/terms/keyPoints 条数；全部替换均为精准小片段；未 git/build/kill/重启
+
+Stage Summary:
+- 修改 6 个章（ch5/ch7/ch8/ch9/ch10/ch11）共 14 处编辑（13 处 MultiEdit + 1 处 VERVE-101 表述修正）；ch1–ch4/ch6/ch12 经逐条核对无确证科学性错误且无简报适用事实，零改动
+- 更新类别：①科学性纠错 1 处（Ptashne λ 阻遏蛋白纯化年份 1966→1967）；②2024 microRNA 诺奖织入 3 处（ch5-s4/ch7-s4 新增，ch8-s5 奖项类别精确化）；③2023 Karikó/Weissman 诺奖织入 ch11-s4；④CRISPR 临床进展 2 处（Casgevy 首个获批 + 约 250 项试验；VERVE-101 与先导编辑临床转化）；⑤基因组参照 3 处（T2T-CHM13 完成、Y 染色体 2023、泛基因组草图 2023）；⑥HCA 里程碑 1 处；⑦合成生物学 3 处（Sc2.0 2025 收官、SpudCell 2026、keyPoint 同步）
+- 未触碰 molecular-biology.ts 与 worklog.md 之外的任何文件；未 build、未 kill、未 git、未重启 dev server
+
+---
+Task ID: 13-g
+Agent: general-purpose
+Task: biochem 学科（生物化学单文件）文字科学性校对 + 2023–2026 最新进展织入（2024 化学诺奖/ESM3 重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文与 worklog 尾部；将 biochemistry.ts（2287 行、12 章 53 节）分块通读完毕，只采用简报核实事实做更新
+- ch1（0 处）：变旋 +112°→+52.7°（36%α/64%β/0.02% 开链）、直链淀粉螺距 0.8 nm/每圈 6 残基、支链淀粉 24~30 分支、糖原 8~12 分支、碘显色、GAG 重复二糖表逐项核对无误；简报无适用事实，宁缺毋滥不动
+- ch2（2 处）：s2 胆固醇碳数算术硬伤——原文「母核（17 碳）+ 8 碳侧链（共 27 碳）」17+8=25≠27，补 C-10/C-13 两个角甲基改为「17+2+8，共 27 碳」；s2 磷脂酰丝氨酸行「血浆膜」错字改「质膜」；脂肪酸熔点表、Singer-Nicolson 1972、侧向扩散 2 μm/s 等核对无误
+- ch3（0 处）：Sanger 1955 胰岛素（51 残基/3 二硫键）、各氨基酸 pKa/pI（Asp 2.98、Lys 9.74）、肽键 0.133 nm、X-Pro 顺式 6%、Edman 50~60 残基、1965 我国合成胰岛素均正确；无简报适用事实
+- ch4（3 处）：s1 α 螺旋段「每个肽键偶极（约 0.5 D）」数量级错误更正为「约 3.5 D」（肽单元偶极标准值 3.46 D）；s1 二级结构预测段——原文把 2024 化学诺奖全归 AlphaFold，改写为「AlphaFold2（2021 年 Nature）……Hassabis 与 Jumper 及 David Baker 共获 2024 年诺贝尔化学奖」并织入 AlphaFold 3（2024 年 5 月，Abramson 等：单一模型联合预测蛋白+配体+DNA+RNA+抗体，PoseBusters 较传统对接准确约 50%）；s5 分子伴侣段末织入 2024 化学诺奖双半归属与 ESM3（2024-06，EvolutionaryScale，980 亿参数三模态生成式模型，模拟约 5 亿年进化设计出与天然 GFP 序列一致性约 40% 而功能相似的 esmGFP）
+- ch5（1 处）：s2 过渡态抑制剂段末织入 David Baker 从头人工酶设计（2024 化学诺奖，「稳定过渡态策略编入全新序列」呼应本章催化原理）；另核查 s5 胰蛋白酶原激活肽——原文实为正确的 Val-Asp-Asp-Asp-Asp-Lys（VDDDDK 六肽，与肠激酶 DDDDK 识别位点一致），不改
+- ch6（1 处）：s1 FAD 段「异咯嗪环 N1、N10」编号错误更正为「N1、N5」——N10 为核糖醇侧链连接位，不可能参与加氢；氧化还原活性氮为 N5（氢负受体）与 N1
+- ch7（4 处）：s4 mRNA 条目末织入核苷修饰与 mRNA 疫苗（N1-甲基假尿苷抑制先天免疫感应，Karikó 与 Weissman 2023 年诺贝尔生理学或医学奖）；s4 ncRNA 段在 Fire/Mello 2006 诺奖后补「Ambros 与 Ruvkun 因发现 miRNA（lin-4 与 let-7）及其转录后基因调控作用获 2024 年诺贝尔生理学或医学奖」；s4 两条 keyPoints 同步（miRNA 条补 2024 诺奖、mRNA 条补「核苷修饰支撑 mRNA 疫苗（2023 年诺奖）」，条目数不变）；B-DNA 参数、A/Z 构象、Tm 经验式、增色 37%、rRNA 80% 等核对无误
+- ch8–ch12（0 处）：能量核算已全部采用现代口径（NADH 2.5/FADH₂ 1.5、30/32 ATP、棕榈酸 106 ATP、c₈ 环 2.7 H⁺/ATP）；诺奖年份逐一核对（Anfinsen 1972、Mitchell 1978、Boyer 1997、Krebs 1953、Brown & Goldstein 1985、Prusiner 1997、Watson/Crick/Wilkins 1962）；尿素循环、一碳单位、嘌呤原子来源、生糖生酮分类、抗代谢物表、饥饿代谢数字（肝糖原 24 h、脑 40 g/天、酮体 50%~70%）均正确且简报无适用织入事实，宁缺毋滥不动
+- 自检：bun -e 动态导入输出 OK 12 4,4,4,5,5,3,4,5,5,5,5,4（12 章 53 节结构不变）；keyPoints 总数 263 条不变；rg 确认全文无 ${ 注入、反引号恰 106 个（53 节成对）；bunx tsc --noEmit 150 条报错全部位于 examples/ 与 scripts/draw/（既有遗留），biochemistry.ts 与 src/data 零命中
+- 纪律遵守：仅编辑 biochemistry.ts 与追加本 worklog；未动 id/标题/导出名/对象结构/keyPoints 条数；未 git/build/kill/重启
+
+Stage Summary:
+- 共 11 处编辑，分布于 ch2（2）/ch4（3）/ch5（1）/ch6（1）/ch7（4）；ch1/ch3/ch8–ch12 经逐条核对无确证科学性错误且无简报适用事实，零改动
+- 主要类别：①科学性纠错 4 处（胆固醇 27 C 算术、螺旋肽键偶极 0.5→3.5 D、FAD 氧化还原氮 N10→N5、血浆膜错字）；②2024 化学诺奖（Baker 设计 + Hassabis/Jumper AlphaFold2）织入 3 处；③AlphaFold 3（2024-05，PoseBusters 准确约 50%）织入 1 处；④ESM3/esmGFP（980 亿参数、模拟 5 亿年进化、序列一致性约 40%）织入 1 处；⑤2023 医学诺奖（Karikó/Weissman mRNA 核苷修饰）织入 1 处；⑥2024 医学诺奖（Ambros/Ruvkun microRNA）织入 1 处（含 keyPoint 同步）
+
+---
+Task ID: 13-i
+Agent: general-purpose
+Task: micro 学科（微生物学）12 章文字科学性校对 + 2023–2026 最新进展织入（CRISPR 临床/合成微生物学重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文（§6 micro 重点 + §0 通用条目）与 worklog 尾部；逐文件 Read micro/ch1–ch12 全文（summary/content/keyPoints/terms），仅采用简报核实事实做更新
+- ch1（2 处）：s3 基因工程工具段在 CRISPR-Cas9 2020 年诺奖句后织入「2023 年底获批的首个基因编辑疗法（详见第十二章）」方向性表述；s3 人体微生物组段粪菌移植句补「已获临床指南认可」（简报 §6 口径，不新增数字）
+- ch7（2 处）：s3 科学性纠错——正文「Pyrolobus fumarii……长期保持 113 ℃ 增殖的生命温度纪录」改为「曾长期保持」并补注「其后甲烷火菌菌株在高压培养中据报道可达约 122 ℃（见第九章）」，消除与 ch9「122 ℃ 保持实验室培养温度纪录」的章间矛盾；s3 对应 keyPoint 同步改「曾长期保持」（条数不变）
+- ch9（1 处）：s1 人体微生物组段末织入「微生物组研究的重心正从描述群落构成转向因果验证」（方向性表述）
+- ch10（3 处）：s1 粪菌移植括注「（其循证地位详见第 12 章）」更新为「（已获临床指南认可，详见第 12 章）」；s1 无菌动物/人源化菌群小鼠段末织入「微生物组状态与肿瘤免疫治疗应答的关联」热点方向性表述；s4 免疫学诊断段末织入 CRISPR-Cas12/Cas13 检测平台用于病原体快速检验（向导 RNA 识别后附带切割活性、即时判读信号、现场与床旁快检，无具体数字/药名）
+- ch12（6 处）：s4 CRISPR 时间线表新增 2023 行（全球首个 CRISPR 基因编辑疗法 Casgevy（exa-cel）先后在英国与美国获批上市）；s4 Cas9 衍生技术段末新增临床转化句——Casgevy 编辑 BCL11A 增强子重启胎儿血红蛋白、2023 年 11 月英国率先获批、12 月美国 FDA 批准、适应证为镰状细胞病与输血依赖型 β 地中海贫血、至 2025 年初全球在研 CRISPR 临床试验约 250 项；s4 Sc2.0 句科学性更新——原「2023 年宣布全部 16 条合成染色体构建完成（合并入单一菌株的工作其后才接近完成）」更正为「2025 年计划收官：全部 16 条合成染色体构建完成并合并入单一菌株，合计约 6,000 个基因——迄今最大的合成真核基因组」，并续接 SpudCell（2026 年 7 月报道，首个从零构建、具备完整生命周期（摄食、生长与复制）的合成细胞）；s4 微生物组时代段织入「研究重心从描述性图谱转向因果验证（悉生动物与人源化菌群小鼠为判定因果主力工具）+ 微生物组与肿瘤免疫治疗应答关联为最受关注交叉热点」；s4 两条 keyPoints 同步（时间线条补 2023 首个 CRISPR 疗法获批、Sc2.0 条改 2025 年收官与迄今最大合成真核基因组，条数不变）
+- ch2/ch3/ch4/ch5/ch6/ch8/ch11 逐章逐节核对：诺奖年份与人物（Behring 1901、Koch 1905、Fleming 等 1945、Waksman 1952、Luria/Delbrück 1943、Lederberg 1952、Avery 1944、McClintock 1983、Mitchell 1978、Calvin 1961、Beadle/Tatum 1958、Prusiner 1997、Temin/Baltimore 1975、Doudna/Charpentier 2020）全部无误；分类/代谢/结构数字（肽聚糖与 LPS 结构、70S/80S、支原体 0.1–0.3 μm、纳米比亚硫珠菌 750 μm、λ 48.5 kb、T4 裂解量 100–200、TMV 2130 壳粒、PSTVd 359 nt、ATP 得率 38/32 口径、Calvin 循环 9 ATP/6 NADPH、沙门菌 2600 余血清型、ANI 95%–96%、乳杆菌属 2020 拆分 25 属等）无科学性硬伤；无 sRNA/microRNA 调控小节（2024 microRNA 诺奖无适用语境，未强行织入）；按「宁缺毋滥」零改动
+- 自检：12 文件全部 bun -e 动态导入 OK（sections 3/5/4/4/3/4/4/4/4/4/3/4，keyPoints 各节条数与原文一致）；5 个编辑文件反引号数均为偶数（6/8/8/8/8，模板字符串结构完好）且 rg 确认全文无「${」；bunx tsc --noEmit 输出中 subjects/micro 零错误（其余报错均为 examples/ 与 scripts/ 既有遗留，未触碰）
+- 纪律遵守：仅编辑 micro/ch1、ch7、ch9、ch10、ch12 五个章节文件 + 追加本 worklog；未动 id/小节标题/导出名/对象结构/terms/keyPoints 条数；全部为精准小片段替换；未 git/build/kill/重启 dev server
+
+Stage Summary:
+- 修改 5 个文件（ch1/ch7/ch9/ch10/ch12）共 14 处编辑；其余 7 章经逐节核对无确证科学性错误且无简报适用事实，零改动
+- 主要更新类别：①CRISPR 临床 3 处（ch12 时间线表 2023 行 + Casgevy 获批与约 250 项临床试验正文 + keyPoint 同步；ch1 绪论方向性表述 1 处）；②CRISPR-Cas12/Cas13 病原快检平台织入 ch10 免疫学诊断 1 处；③合成微生物学 3 处（Sc2.0 2023→2025 收官纠错 + SpudCell 织入 ch12；keyPoint 同步）；④微生物组 5 处（FMT 获指南认可 ch1/ch10、描述→因果验证 ch9/ch12、肿瘤免疫治疗应答热点 ch10/ch12，均为方向性表述）；⑤科学性/一致性纠错 2 处（Pyrolobus 113 ℃「纪录」断言与 ch9 122 ℃ 矛盾、Sc2.0「2023 全部完成」年份错误）
+
+---
+Task ID: 13-k
+Agent: general-purpose
+Task: bioinfo 学科（生物信息学）12 章文字科学性校对 + 2023–2026 最新进展织入（AF3/ESM3/CASP16 重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文（§7 bioinfo 重点 + §0 通用表）并通读 worklog 尾部；逐文件 Read bioinfo/ch1–ch12 全文（summary/content/keyPoints/terms），仅采用简报核实事实
+- ch1（4 处编辑）：s1 微缩学科史段末织入 2024 年诺贝尔化学奖（Hassabis 与 Jumper／AlphaFold2 + Baker 计算蛋白质设计）；s3 结构数据库 PDB 段「收录结构已超过 20 万条」更新为「2025 年初逾 22.7 万条、年增约 1.5–2 万条」并补 RCSB 一体化检索约百万级 AlphaFold2 计算结构模型（CSM）；s3 量级锚点表 PDB 行同步；s3 对应 keyPoint 同步（条数不变）
+- ch7（5 处编辑）：s3 CASP 历程表「CASP15 起｜2022 起」改为 CASP15（2022）并新增 CASP16（2025）行——单体预测趋近饱和、核酸预测仍显著落后、蛋白质设计（反向折叠）赛道兴起；s3 末节将「AlphaFold-Multimer 扩展到复合物」句扩写为 AlphaFold 3（2024 年 5 月，Abramson 等：单一模型联合预测蛋白+配体+DNA+RNA+抗体，PoseBusters 较传统对接准确约 50%，无需结构输入，2024 年 7 月起免费非商业 AlphaFold Server）+ CASP16 三要点（含 Kretsch 等 2025 核酸落后）；s3 局限段「其二，模型对配体结合态、金属离子与翻译后修饰的处理有限」改为「配体与核酸虽已进入 AlphaFold 3 射程，翻译后修饰、金属离子价态与构象系综仍属短板」（消除与 AF3 新表述的内在矛盾）；s3 两条 keyPoints 同步（AF3 联合预测复合物；删「配体态」补「构象系综」，条数不变）
+- ch8（2 处编辑）：s4 图基因组段末织入 2023 年 5 月人类泛基因组首版草图（47 个分相二倍体组装、94 条单倍型、目标 350 人）+ 机器学习驱动建图/变异检出为持续方法学热点（方向性表述）；s4 泛基因组 keyPoint 同步（条数不变）
+- ch10（1 处编辑）：s4 单细胞转录组导语织入人类细胞图谱 HCA（2024 年 11 月里程碑论文集、18 个生物网络图谱、V1.0 预计 2026 年发布）
+- ch11（1 处编辑）：s4 多组学整合动机段末补单细胞多组学整合（同一细胞转录与染色质可及性/蛋白层配对测量）为近年持续热点（方向性表述）
+- ch12（6 处编辑）：s2 DeepMind 蛋白质预测史 RoseTTAFold 句后织入 CASP16（2025：单体较 CASP15 提升趋近饱和、核酸仍显著落后〔Kretsch 等 2025〕、焦点移向复合物/配体/蛋白质设计新赛场）；s2 对应 keyPoint 同步；s3 ESM 段 ESMFold 句后织入 ESM3（2024 年 6 月，EvolutionaryScale，980 亿参数生成式多模态，同时推理序列/结构/功能；「模拟约 5 亿年进化」设计出与天然 GFP 序列一致性约 40% 而功能相似的全新荧光蛋白 esmGFP）；s3 AlphaFold3 句精确化（2024 年 5 月 Abramson 等、PoseBusters 较传统对接准确约 50%、无需结构输入、AlphaFold Server 免费非商业开放）；s3 两条 keyPoints 同步（ESM3/esmGFP；AF3 PoseBusters，条数不变）
+- ch2/ch3/ch4/ch5/ch6/ch9 逐章逐节核对：诺奖年份与人物（Sanger/Gilbert/Berg 1980、ESI/MALDI 2002）、算法史实与复杂度（NW 1970、SW 1981、Gotoh 1982、NJ 1987、PAM 1978、BLOSUM 1992、BLAST 1990/1997、Clustal W 1994、T-Coffee 2000、MUSCLE 2004）、JC 校正数值（p=0.1/0.4/0.7 → 0.107/0.57/2.03）、树数目恒等式、Fitch/修剪算法、三肽 8000 种、GT-AG 98%、CpG 岛三判据等均无误；无被 2023–2026 事实推翻的断言、无简报适用织入点，按「宁缺毋滥」零改动
+- 自检：12 文件全部 bun -e 动态导入 OK（各 4 sections；keyPoints 条数与原文一致：ch1 5/5/5/5、ch7 6/6/6/6、ch8 5/6/6/6、ch10 6/6/6/6、ch11 6/6/5/6、ch12 6/5/6/6）；全部文件反引号恰 8 个（4 节模板字符串成对完好）、零「${」注入；bunx tsc --noEmit 中 subjects/bioinfo 零错误（150 条报错均为 examples/ 与 scripts/draw/ 既有遗留，未触碰）
+- 纪律遵守：仅编辑 ch1/ch7/ch8/ch10/ch11/ch12 六个章节文件 + 追加本 worklog；未动 id/小节标题/导出名/对象结构/terms/keyPoints 条数；全部为精准小片段替换；未 git/build/kill/重启 dev server
+
+Stage Summary:
+- 修改 6 个文件（ch1/ch7/ch8/ch10/ch11/ch12）共 19 处编辑；其余 6 章经逐节核对无科学性错误且无简报适用事实，零改动
+- 主要更新类别：①AlphaFold 3（2024-05，Abramson 等，蛋白+配体+DNA+RNA+抗体联合预测，PoseBusters 准确约 50%，AlphaFold Server 免费非商业）织入 ch7-s3/ch12-s3 共 3 处并同步 2 条 keyPoint；②CASP16（2025，单体趋近饱和、核酸显著落后〔Kretsch 等〕、蛋白质设计赛道兴起）织入 ch7-s3（表+正文）/ch12-s2 共 3 处并同步 2 条 keyPoint；③ESM3（980 亿参数三模态、esmGFP 模拟约 5 亿年进化、序列一致性约 40%）织入 ch12-s3 并同步 keyPoint；④2024 化学诺奖织入 ch1-s1 学科史；⑤PDB 逾 22.7 万条（2025 年初）+ RCSB 约百万级 AF2 CSM 更新 ch1-s3 三处（正文/表/keyPoint）；⑥人类泛基因组首版草图（2023-05，47 分相二倍体组装）织入 ch8-s4；⑦HCA（2024-11 里程碑、18 网络图谱、V1.0 预计 2026）织入 ch10-s4；⑧机器学习建图与单细胞多组学整合方向性表述织入 ch8-s4/ch11-s4；⑨内在一致性修正 1 处（ch7-s3 预测局限表述与新 AF3 事实对齐）
+
+---
+Task ID: 13-j
+Agent: general-purpose
+Task: viro 学科（病毒学）12 章文字科学性校对 + 2023–2026 最新进展织入（H5N1/mpox/mRNA 肿瘤疫苗重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文（§5 viro 重点 + §0 通用条目），并通读 worklog 尾部；逐文件 Read viro/ch1–ch12 全文（summary/content/keyPoints/terms），仅采用简报核实事实做更新
+- ch1（1 处）：s2 发展史收束段「医学传统×分子传统合流」句后织入卡里科与韦斯曼以核苷修饰奠定 mRNA 疫苗技术、获 2023 年诺贝尔生理学或医学奖（诺奖年表补 2023 条目）
+- ch4（1 处）：s1 唾液酸链接与种属屏障段末织入 H5N1 更新——2024 年起美国奶牛群高致病性 H5N1（2.3.4.4b 分支）疫情并外溢感染人；2024-03 至 2025-05 美国累计约 70 例人感染；2025 年 1 月美国首例 H5N1 死亡病例（D1.1 基因型，接触病禽）
+- ch7（1 处）：s2 科学性纠错——MS2 装配起始信号「十九碱基对茎环」更正为「十九核苷酸的茎环」（经典 MS2 衣壳蛋白结合位点为 19 nt RNA 茎环，19 bp 计量错误）
+- ch10（4 处）：s3 奥密克戎句后补「其后代谱系持续更替（2024–2025 以 JN.1、XEC 等重组与抗原漂移谱系为主）、人群免疫背景累积使疾病严重度总体下降、疫苗转为单价组分更新策略」；s4 H5N1 段过时数字更新——「累计人间病例八百余例、死亡四百余例、病死率过半」改为「累计人感染约 900 余例、病死率约 48%」（1997 年以来），并将「2024 年北美奶牛场暴露」扩为完整事实链（奶牛群疫情+约 70 例人感染+美国首例死亡 D1.1）；s4 跨种四阶段框架后织入猴痘 Ib 分支 2024 年非洲扩张、经性传播网络国际化、WHO 2024 年 8 月再次宣布 PHEIC；s4 keyPoint 同步（条数不变）
+- ch11（1 处）：s3 SARS-CoV-2 系统性疾病描述后补「画像定格于免疫空白的大流行早期，其后奥密克戎后代谱系持续抗原漂移更替，人群免疫背景逐层累积，疾病严重度总体下降」（稳妥表述，不列株名）
+- ch12（4 处）：s2 载体疫苗节 Imvamune 句后织入 mpox Ib 分支 2024 年扩张与 WHO 2024-08 PHEIC（痘苗平台重回新发传染病应对前线）；s2 mRNA 疫苗节末织入平台扩张——mRNA-4157（V940）联合帕博利珠单抗治疗黑色素瘤（II 期 KEYNOTE-942 复发/死亡风险降约 44%、5 年随访 2026-01 获益持续、2026-08 III 期阳性、首个 III 期成功的个体化 mRNA 肿瘤疫苗）+ RSV/流感 mRNA 疫苗处于 III 期/上市审批阶段（泛称）；s2 keyPoint 同步（条数不变）；s4 One Health 段「禽流感 H5N1 在哺乳动物的持续溢出」精确化为「在海狮乃至北美奶牛群（2024 年起）等哺乳动物的持续溢出」
+- ch2/ch3/ch5/ch6/ch8/ch9 逐章逐节核对：诺奖年份与人物（1946 斯坦利/1954 恩德斯/1965 Lwoff 等/1966 Rous/1975 特明-巴尔的摩-杜尔贝科/1978 Arber/1986 鲁斯卡/1988 Elion/1989 Bishop-Varmus/1993 Sharp-Roberts/2018 Smith-Winter）全部无误；巴尔的摩体系、TMV 2130 亚基/螺距 2.3 nm、T 值谱系（T=1 细小至 T=25 腺病毒、疱疹 T=16）、λ 48.5 kb/cos 12 nt、冠状病毒 26–32 kb 与 nsp14 校读、HIV 锥形衣壳约 250 六聚体+12 五聚体、TCID50 约合 0.69 PFU、Hershey-Chase/Benzer rII/PaJaMo、MERS 累计两千六百余例、1918 约 5000 万死、索非布韦 SVR>95% 等数字均无硬伤，且无简报适用织入点，按「宁缺毋滥」零改动
+- 自检：12 文件 bun -e 动态导入全部 OK（各 4 sections；keyPoints 各章条目数不变：ch1 5/5/5/6、ch4 5/5/6/6、ch7 5/5/5/5、ch10 5/5/5/5、ch11 5/5/5/5、ch12 5/6/6/6）；六份编辑文件反引号数均为 8（模板字符串结构完好）且无 ${ 注入；bunx tsc --noEmit 输出中 subjects/viro 零错误（其余报错均为 examples/ 与 scripts/ 既有遗留，未触碰）
+- 纪律遵守：仅编辑 viro/ch1、ch4、ch7、ch10、ch11、ch12 六个章节文件 + 追加本 worklog；未动 id/小节标题/导出名/对象结构/keyPoints 条数/terms；全部为精准小片段替换；未 git/build/kill/重启 dev server
+
+Stage Summary:
+- 修改 6 个文件（ch1/ch4/ch7/ch10/ch11/ch12）共 12 处编辑；其余 6 章（ch2/ch3/ch5/ch6/ch8/ch9）经逐节核对无确证科学性错误且无简报适用事实，零改动
+- 主要更新类别：①H5N1 织入 4 处（ch4-s1 受体屏障、ch10-s4 专节+keyPoint、ch12-s4 One Health）：美国奶牛群 2.3.4.4b 疫情、约 70 例人感染（2024-03 至 2025-05）、美国首例死亡（D1.1，2025-01）、全球累计约 900 余例/病死率约 48% 纠正过时数字；②mpox 织入 2 处（ch10-s4 新发传染病四阶段、ch12-s2 Imvamune/痘苗平台）：Ib 分支 2024 非洲扩张+性传播网络国际化+WHO 2024-08 PHEIC；③SARS-CoV-2 织入 2 处（ch10-s3 漂移：JN.1/XEC 谱系+严重度下降+单价疫苗；ch11-s3 严重度下降稳妥表述）；④mRNA 平台织入 3 处（ch1-s2 2023 Karikó/Weissman 诺奖、ch12-s2 mRNA-4157 KEYNOTE-942 约 44%/5 年随访/III 期阳性+RSV/流感泛称、keyPoint 同步）；⑤科学性纠错 1 处（MS2 茎环 19 bp→19 nt）
+
+---
+Task ID: 13-l
+Agent: general-purpose
+Task: biophysics 学科（生物物理学单文件）文字科学性校对 + 2023–2026 最新进展织入（AF3/2024 化学诺奖重点）
+
+Work Log:
+- 动笔前精读 scripts/tmp/research/LATEST-ADVANCES.md 全文（§8 biophysics 重点 + §0/§1 通用条目 + §3 合成生物学条目）与 worklog 尾部；将 biophysics.ts（1432 行、10 章 40 节）分 4 块通读完毕（summary/content/keyPoints/terms 全部过目），只采用简报核实事实做更新
+- ch1（1 处）：s1 发展史段「X 射线晶体学、核磁共振、电子显微镜与单分子操控技术先后成为结构生物学的支柱」句后补 2024 年诺贝尔化学奖同时表彰蛋白质结构预测（AlphaFold2）与从头蛋白质设计、计算方法跻身生命科学基础设施（发展史止于 20 世纪中叶的补齐）
+- ch2（1 处）：s1 Anfinsen 原理段——「由序列预测结构（蛋白质折叠问题）」句后织入 AlphaFold2（2021 年 Nature，Hassabis 与 Jumper）基本解决折叠问题、2024 年化学诺奖双半归属（Baker 从头设计）、AlphaFold 3（2024 年 5 月，Abramson 等：单一模型联合预测蛋白+配体+DNA+RNA+抗体复合物、PoseBusters 较传统对接准确约 50%）、AlphaFold Server 2024 年 7 月起非商业免费开放；补写后消除「这一问题悬而未决」的过时语境
+- ch3（1 处）：s3 脂筏段末——原文已有膜相分离物理学（Ising 临界涨落），顺势补方向性表述：同一套相分离物理近十余年延伸至细胞质与细胞核的液—液相分离与生物凝聚体，自 2018 年以来持续为前沿热点（简报 §8「若已有」条件满足）
+- ch4（1 处）：s3 科学性文字纠错——「解除原肌球蛋白对结合位位的位阻」错字「位位」更正为「位点」；本章其余内容（滑动丝 1954 双组同时提出、Lymn–Taylor 1971、比张力 0.3 MPa=30 N/cm²、Piezo 2010 发现/2021 诺奖、马达步长与力表、HH 与 ATP 合酶参数）逐项核对无误
+- ch5–ch8（0 处）：逐节核对诺奖年份（Anfinsen 1972、Onsager 1968、Prigogine 1977、Ashkin 2018、Neher–Sakmann 1991、Hodgkin–Huxley 1963、MacKinnon 2003、Armstrong–Bezanilla 1973 门控电流）与全部物理数字（ε≈80、德拜长度 ~1 nm、dsDNA p≈50 nm、κ≈10–25 kBT、8πκ≈500 kBT、ATP 细胞内 −50~−60 kJ/mol、ΔE°′=1.136 V→−219 kJ/mol、RT/F=26.7 mV、KcsA 水化能补偿与 P_K/P_Na>10⁴、门控电荷 12–16 e₀、Nernst 61.5 mV、HH 参数组、单通道电导表、TTX/局麻药机制、磁镊 dsDNA 扭转刚度 ~400 pN·nm²、WLC 公式、1 pA≈6×10⁶ 离子/s 等）均无硬伤且简报无适用织入事实，宁缺毋滥零改动
+- ch9（2 处）：s2 荧光蛋白段末织入 ESM3（2024 年 6 月，EvolutionaryScale，980 亿参数三模态生成式蛋白语言模型，经「模拟约 5 亿年进化」生成探索设计出与天然 GFP 序列一致性仅约 40% 而功能相似的全新荧光蛋白 esmGFP）；s4 冷冻电镜段——「2–4 Å 甚至更高」处补 2020 年铁蛋白 1.22 Å 最高分辨率纪录（简报认可保留的既有纪录），2017 年诺奖句后织入 PDB 3DEM 条目至 2026 年逾 3.6 万条、2025 年单年逾 7200 条、年增速居各解析方法之首，cryo-ET 句改写为 FIB 减薄自动化 + AI 颗粒挑选/构象分析推动原位结构生物学高通量化（2024–2025 热点）
+- ch10（2 处）：s4 最小基因组段——JCVI-syn3.0（2016）后补「写满整套基因组」另一端的 Sc2.0 合成酵母基因组计划 2025 年收官（16 条染色体全部从头构建、约 6000 个基因、迄今最大合成真核基因组）与 2026 年 7 月 SpudCell（首个从零构建、具备摄食生长复制完整生命周期的合成细胞），消除「展望止于 2016」的过时感；s4 物理与工程合流段——「蛋白质从头设计（AlphaFold 之后进入理性设计时代）」改写并织入 2024 化学诺奖一半授予 David Baker 从头设计（另一半 AlphaFold2，交叉引用第 2 章）与 ESM3 设计 esmGFP（交叉引用第 9 章）
+- 自检：bun -e 动态导入输出 OK 10 4,4,4,4,4,4,4,4,4,4（10 章 40 节结构不变）；keyPoints 总数 160 条、条目数不变；全文反引号恰 80 个（40 节成对）且无 ${ 注入；bunx tsc --noEmit 150 条报错全部位于 examples/ 与 scripts/draw/（既有遗留），biophysics.ts 零命中
+- 纪律遵守：仅编辑 biophysics.ts 一个文件（共 9 处精准小片段替换：8 处初始 MultiEdit + 1 处行文去重微调）+ 追加本 worklog；未动 id/章/节标题/导出名/对象结构/keyPoints 条数/terms；未 git/build/kill/重启 dev server
+
+Stage Summary:
+- 共 9 处编辑，分布于 ch1（1）/ch2（1）/ch3（1）/ch4（1）/ch9（2）/ch10（2）；ch5–ch8 经逐节核对无确证科学性错误且无简报适用事实，零改动
+- 主要类别：①科学性纠错 1 处（「结合位位」错字）；②AlphaFold2/2024 化学诺奖（Baker 设计 + Hassabis/Jumper 结构预测）织入 3 处（ch1 发展史、ch2 折叠问题、ch10 设计展望）；③AlphaFold 3（联合预测复合物、PoseBusters 准确约 50%、AlphaFold Server 免费）织入 1 处（ch2）；④ESM3/esmGFP（980 亿参数、模拟约 5 亿年进化、序列一致性约 40%）织入 2 处（ch9 荧光蛋白、ch10 设计展望）；⑤冷冻电镜更新 1 处（3DEM 逾 3.6 万条/2025 年逾 7200 条/年增速居首 + 1.22 Å 铁蛋白纪录 + cryo-ET FIB/AI 高通量化 2024–2025 热点）；⑥相分离→生物凝聚体方向性表述 1 处（ch3）；⑦合成生物学补齐 1 处（Sc2.0 2025 收官 + SpudCell 2026）
+
+---
+Task ID: 13-orchestrator
+Agent: 主线（Z.ai Code）
+Task: 全平台 12 学科文字科学性校对 + 2023–2026 最新研究进展织入（用户指令：不仅据原教材撰写，还要结合最新研究更新过时内容）
+
+Work Log:
+- 检索前先做 15 组联网检索（诺奖 2023–2025、AlphaFold 3、ESM3、CASP16、PDB/3DEM 存量、CRISPR 临床、H5N1、mpox、AD 药物、CAR-T、mRNA-4157、HCA、泛基因组、Sc2.0/SpudCell、果蝇连接组），多源交叉后写入 scripts/tmp/research/LATEST-ADVANCES.md（12 学科共用简报，含全局数字时效核查表与写作纪律）
+- 分三波并行 12 个子代理逐学科审校（13-a sb / 13-b xc / 13-c em / 13-d immuno / 13-e mb / 13-f cb / 13-g biochem / 13-h neuro / 13-i micro / 13-j viro / 13-k bioinfo / 13-l biophysics），每代理只许用简报核实事实、只做精准小片段 Edit、逐文件 bun 导入自检
+- em 子代理最终报告因 harness 超时丢失，但经 git diff + worklog 核验其工作完整落盘（10/12 文件 30 处编辑，含波长比指数 10⁻⁵→10⁵、1974 诺奖三人归属、300 keV 能量数量级、α 螺旋螺距/直径、亮度单位等 7 处纠错）
+- 中心化验证：bunx tsc --noEmit src/(data|app|components|lib) 零错误；bun run lint 零输出；54 文件 +200/−181 行
+- agent-browser 全链路实测：首页渲染 → 学科中心 → 免疫学 → 第 9 章 → 「T 细胞亚群及其功能」小节，正文正确渲染 Sakaguchi/Brunkow/Ramsdell 2025 年诺贝尔生理学或医学奖新内容；返回按钮在位；dev.log 无运行时错误
+
+Stage Summary:
+- 12 学科共约 195 处编辑落盘（sb 24 / xc 13 / em 30 / immuno 23 / mb 14 / cb 11 / biochem 11 / neuro 15 / micro 14 / viro 12 / bioinfo 19 / biophysics 9）
+- 重大科学性纠错：胆固醇 27 碳算术（17+2+8）、肽键偶极 0.5→3.5 D、FAD 氢受体 N10→N5、TEV 蛋白酶病毒归属（花叶→蚀纹）、IDA/NTA 中文名互换、Ptashne 1966→1967、MS2 19 bp→19 nt、caspase-11 种属、D2 拮抗剂全称断言、em 波长比指数、1974 诺奖归属、300 keV 能量 J 数量级、α 螺旋 10 Å 表述、亮度单位 SI、线虫「唯一连接组」→「首个」、超嗜热纪录章间口径、Sc2.0「2023 完成」→「2025 收官」等约 20 处
+- 重大时效更新：PDB 逾 22.7 万条（2025 年初）/年增约 2 万条、3DEM 2026 逾 3.6 万条、2025 医学诺奖（Treg 外周免疫耐受）、2024 医学诺奖（microRNA）、2024 化学诺奖（Baker + AlphaFold2）、2023 医学诺奖（Karikó/Weissman）、AlphaFold 3（2024-05）、ESM3/esmGFP（2024-06）、CASP16（2025）、Casgevy 获批与约 250 项 CRISPR 临床、VERVE-101、mRNA-4157 III 期阳性（2026-08）、仑卡奈/多奈单抗 AD 获批链、CAR-T 7 款+中国实体瘤首批（2026-06）、H5N1 美国奶牛疫情约 70 例与首例死亡、mpox Ib 分支 PHEIC（2024-08）、T2T/Y/泛基因组、HCA（2024-11 里程碑、2026 V1.0）、果蝇连接组（2024 脑/2026 完整 CNS）、SpudCell 合成细胞（2026-07）
+- 遗留：quiz/glossary 文件未在本轮范围（前轮已覆盖）；研究检索 JSON 留存 scripts/tmp/research/ 供后续复用
