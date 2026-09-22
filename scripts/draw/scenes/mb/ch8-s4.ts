@@ -3,7 +3,7 @@ import { scene, C, B } from '../../lib'
 
 const draw = (b: B) => {
   // ============ 上：Mediator 总线 + 共调节因子 ============
-  b.panel(30, 132, 1340, 428, { title: '一、Mediator（约 30 亚基）：激活域与 pol II 基础机器之间的「总线」' })
+  b.panel(30, 132, 1340, 428, { title: '一、Mediator（约 30 亚基）：激活域与 pol II 的「总线」' })
   const dy = 270 // DNA 基线
   b.line(70, dy, 1330, dy, { stroke: C.dna, sw: 3 })
   // 增强子 + 激活因子
@@ -20,8 +20,11 @@ const draw = (b: B) => {
   b.rect(496, 170, 92, 80, { fill: C.accL, stroke: C.acc, sw: 2, rx: 10 })
   b.ctext(542, 202, '头部', { size: 13.5, weight: 700, fill: C.accD })
   b.ctext(542, 224, '接触 pol II', { size: 10.5, fill: C.mute })
-  b.ellipse(398, 140, 40, 18, { fill: C.panelB, stroke: C.mute, sw: 1.6, dash: '4 3' })
-  b.ctext(398, 145, 'CDK8', { size: 11, weight: 600, fill: C.sub })
+  // CDK8 激酶模块（虚线，可解离）：置于 pol II 上方空白区，避免与面板标题叠压
+  b.ellipse(680, 148, 46, 20, { fill: C.panelB, stroke: C.mute, sw: 1.6, dash: '4 3' })
+  b.ctext(680, 153, 'CDK8', { size: 11, weight: 600, fill: C.sub })
+  b.text(736, 150, '可解离激酶模块（磷酸化 CTD）', { size: 9.5, fill: C.mute })
+  b.path('M 634,158 C 616,168 602,170 590,174', { stroke: C.mute, sw: 1.4, dash: '4 3', fill: 'none' })
   b.ctext(444, 262, 'Mediator（头-中-尾 + CDK8 模块）', { size: 12.5, fill: C.sub })
   // 激活域 → 尾模块；头部 → Pol II
   b.arrow(211, 218, 296, 205, { stroke: C.pro, sw: 2.2, marker: 'pro' })
@@ -38,9 +41,9 @@ const draw = (b: B) => {
   b.ctext(620, dy + 36, '启动子', { size: 11.5, fill: C.mute })
   b.ctext(865, dy + 36, '基因', { size: 11.5, fill: C.mute })
   b.ctext(680, dy + 60, '稳定 PIC、促进 CTD 磷酸化', { size: 12, fill: C.sub })
-  // DNA 成环（下方弧）
-  b.path('M165,288 C 300,362 500,362 620,288', { stroke: C.pro, sw: 2.4, dash: '8 6' })
-  b.ctext(392, 332, 'DNA 成环：增强子-启动子沟通', { size: 12, fill: C.proD })
+  // DNA 成环（下方弧，箭头指向启动子侧，表达增强子→启动子的沟通方向）
+  b.path('M165,288 C 300,362 500,362 620,288', { stroke: C.pro, sw: 2.4, dash: '8 6', marker: 'pro' })
+  b.ctext(392, 332, 'DNA 成环：增强子→启动子沟通', { size: 12, fill: C.proD })
   // mRNA
   b.arrow(710, 322, 1310, 322, { stroke: C.rna, sw: 2.6, marker: 'rna' })
   b.ctext(1010, 308, '转录（启动频率由 Mediator 决定）', { size: 12, fill: C.rnaD })

@@ -1597,3 +1597,23 @@ Stage Summary:
 - 17 节迁移结果（节 → expansion 文件 → 插入子节）：biochemistry-ch2-s3/3-s2/3-s3 → biochemistry-ch1-3.ts（流动镶嵌模型的核心要点 / 氨基酸的特征化学反应 / 生物活性肽举例 子节末）；molecular-biology-ch6-s4 → molecular-biology-ch4-6.ts（终止与核糖体回收末=content 末）；molecular-biology-ch10-s5 → molecular-biology-ch10-12.ts（表观基因组学末）；cell-biology-ch4-s4/ch5-s2/ch5-s3/ch6-s1/ch6-s2/ch6-s5 → cell-biology-ch4-6.ts（content 末兜底 / mtDNA：独立遗传系统 / ATP 合酶：旋转催化的分子马达 / content 末（微管的功能后） / 细胞质动力蛋白 / 细胞迁移的循环 子节末）；cell-biology-ch7-s4 → cell-biology-ch7-9.ts（端粒的结构与 shelterin 保护末）；biophysics-ch6-s1/ch6-s3 → biophysics-ch4-6.ts（content 末（「三足鼎立」句后） / 光漂白步进与超定位末）；biophysics-ch8-s3 → biophysics-ch7-8.ts（从单通道到宏观电流的记账单末）；biophysics-ch10-s3/ch10-s4 → biophysics-ch9-10.ts（content 末（边界与判据后） / 基因线路：把调控网络当电路设计末）
 - 需主控注意：① cb-ch4-s4 衣被小泡表系兜底 content 末插入（该表主题的 H2 在 ch4-s3 条目，且 ch4-s3 已有「三类膜泡对照」既有表，列向不同：既有表按类型横排，本表按属性竖排）；② 两处内容近邻的既有表——cb-ch6-s1 迁入表 vs ch6-s4 既有「三类细胞骨架对照」表（ch6-s1 末段原有「三类体系的系统对照见本章第 4 节」交叉引用仍在）、bp-ch6-s1 迁入表 vs ch6-s2 既有「三件主力工具」表——同章两表主题相近但列集不同（迁移表多「样品与基底/典型应用」等列），主控统一清理底稿 17 张原表时可斟酌是否去重；③ 底稿 17 张表按指令原样保留未删，待主控统一处理；④ 5 个 content 末表块的 content 以「表格末行\n\n」收尾（其余条目均以句号收尾），为满足「前后有空行」验证标准的刻意为之，GFM 渲染无差异
 - 全部 17 表已在运行时（withExpansions 之后）可见，「每节至少一表」体例在扩充层生效；expansion 既有句子零改动（186 个非目标条目逐条长度不变为证）
+
+---
+Task ID: 9-a
+Agent: 底稿遮蔽表清理代理
+Task: 从 4 个底稿文件移除被扩充层遮蔽的 17 张对照表（运行时零变化证明）
+
+Work Log:
+- 读 worklog 尾部 5-a/5-b/5-c/5-e 四节确认背景：5-a/5-b/5-c 把 17 张对照表插入 subjects 四底稿，5-e 已将 17 表迁移到 src/data/expansions/*.ts；确认 biology.ts withExpansions 机制——sectionExpansions[id] !== undefined 时该节 content 被整体替换，故底稿 17 表在运行时被遮蔽、属死代码
+- 写 /tmp/snapshot.ts（bun，import allSections 自 src/data/biology）导出全部小节 id+content+length 基线到 /tmp/pre-cleanup.json：441 节 / 1,225,312 字符；另以 /tmp/check-coverage.ts 验证 17 个目标节全部被 sectionExpansions 覆盖（17/17，扩充层总条目 203）——这是「删底稿表不影响运行时」的前提保证
+- 逐表定位与删除前置核验：对每张表先用 bun 脚本做「底稿表块在扩充层对应文件 byte 级存在」断言（17/17 全部整表逐字节一致，仅 content 末表块因 .ts 源码行尾闭合反引号 `, 语法差异需剥离后比对，表体本身一致），并用 rg 确认表头行在底稿文件内唯一；17 处逐一用 Edit 做最小化删除——中间位置表删「\n\n + 表块」（保留后侧空行），content 末表块删「\n\n + 表块」使闭反引号回归末段同行（bc-ch2-s3/bc-ch3-s2/bp-ch6-s3/bp-ch8-s3/bp-ch10-s4 为中间位置，bc-ch3-s3/mb-ch6-s4/mb-ch10-s5/bp-ch6-s1/bp-ch10-s3 闭反引号本与末表行同行，cb 7 节按 5-b 插入原样删「\n\n + 表块 + \n\n」完整插入单元使闭反引号回归段落行——恢复该文件 46/46 节「文本`,` 同行」收尾惯例、避免遗留尾部空行）
+- 删除明细：biochemistry.ts 3 处（ch2-s3 膜组分 6 行 / ch3-s2 显色衍生反应 7 行 / ch3-s3 生物活性肽 9 行）、molecular-biology.ts 2 处（ch6-s4 原核 vs 真核翻译 9 行 / ch10-s5 组蛋白修饰 7 行）、cell-biology.ts 7 处（ch4-s4 衣被小泡 7 / ch5-s2 线粒体 vs 核基因组 9 / ch5-s3 呼吸链复合体 7 / ch6-s1 三类骨架 7 / ch6-s2 两类马达 8 / ch6-s5 迁移五步 7 / ch7-s4 Shelterin 8 行）、biophysics.ts 5 处（ch6-s1 三力谱 7 / ch6-s3 三种荧光法 6 / ch8-s3 单通道 vs 宏流 7 / ch10-s3 量子生物现象 7 / ch10-s4 合成生物学里程碑 8 行）；未触碰任何句子/标题/keyPoints/terms/summary/keywords 与其他小节
+- 重跑快照导出 /tmp/post-cleanup.json（441 节 / 1,225,312 字符），/tmp/compare.ts 逐节逐字节比对 pre vs post：441/441 小节 id 顺序一致、content 完全一致（0 差异、总字符数相同）——运行时零变化硬证明
+- 附加验证：①/tmp/structure-check.ts——四底稿零三连换行（无残留双空行）、17 节底稿 content 均不再含 | --- | 表块、运行时扩充层 17/17 仍含对应表；②/tmp/final-verify.ts——运行时 17 节 content 逐字节等于 sectionExpansions 条目、其余 424 节出现本批 17 表头次数为 0（表无流窜）；③行数核算——四文件 wc -l 与「删除的表行 + 空行 + 合并行」算术完全吻合（如 biophysics 1472−40=1432，恰回 5-c 改前基线）
+- 验证命令：cd /home/z/my-project && bunx tsc --noEmit 2>&1 | grep "src/data" → 空输出（0 类型错误；全库残余 45 条 error 均为 scripts/、skills/ 预存，与 5-e 记录一致）；rg -c "^\|" 四底稿 267/279/212/99 → 245/263/159/64（−22/−16/−53/−35，总 −126 行 = 17 表全部表格行，四值恰为 5-a/5-b/5-c 插表前基线）；未运行 git、未创建项目内新文件（脚本与快照均在 /tmp）、未改动四底稿与 worklog.md 之外任何文件
+
+Stage Summary:
+- 移除明细（文件 × 小节 × 表格行数）：biochemistry.ts ×3 节 ×22 行；molecular-biology.ts ×2 节 ×16 行；cell-biology.ts ×7 节 ×53 行；biophysics.ts ×5 节 ×35 行——合计 17 张表、126 表格行，四文件表格行数精确回到插表前基线（245/263/159/64）
+- 运行时一致性证明：pre/post 快照 441/441 小节 content 逐字节一致（总字符 1,225,312 不变）；17 目标节 content 运行时逐字节等于扩充层条目且 17/17 含表、其余 424 节零表头流窜——删除的仅为被 withExpansions 遮蔽的死代码，运行时内容 100% 零变化，同表双份维护隐患与 bundle 冗余消除
+- 验证结果全绿：tsc --noEmit 过滤 src/data 为空（四底稿及扩充层零类型错误）；表格行数变化与 5-a/b/c 记载数字逐文件吻合；结构断言（无双空行/无零空行/表块无残留）全部通过
+

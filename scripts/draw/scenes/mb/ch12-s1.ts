@@ -49,13 +49,13 @@ const draw = (b: B) => {
   // ============ 三、病毒激活的两条路线（右中） ============
   b.panel(710, 400, 660, 280, { title: '三、病毒激活癌基因的两条路线' })
   // 路线 1：转导性
-  b.rect(726, 440, 306, 200, { fill: C.enzL, stroke: C.enz, sw: 1.4, rx: 9, fillOp: 0.35 })
+  b.rect(726, 440, 306, 218, { fill: C.enzL, stroke: C.enz, sw: 1.4, rx: 9, fillOp: 0.35 })
   b.ctext(879, 464, '转导性逆转录病毒（急性转化）', { size: 12.5, weight: 700, fill: C.enzD })
   b.wtext(742, 488, 'RSV 捕获 c-src 时 C 端缺失 Tyr527（c-Src 的负调控自抑制位点）——酪氨酸激酶活性组成性激活', { size: 11, fill: C.sub, maxW: 274, lh: 16 })
   b.tag(830, 578, '「去掉刹车」式激活', { fill: '#ffffff', stroke: C.enz, size: 11.5, weight: 700, tfill: C.enzD, pad: 8 })
-  b.wtext(742, 616, '多数急性转化病毒（如携带 v-myc 的禽类成髓细胞瘤病毒）还伴随 LTR 强启动子的「过表达」', { size: 10.5, fill: C.mute, maxW: 274, lh: 15 })
+  b.wtext(742, 608, '多数急性转化病毒（如携带 v-myc 的禽类成髓细胞瘤病毒）还伴随 LTR 强启动子的「过表达」', { size: 10.5, fill: C.mute, maxW: 274, lh: 15 })
   // 路线 2：插入性
-  b.rect(1046, 440, 306, 200, { fill: C.badL, stroke: C.bad, sw: 1.4, rx: 9, fillOp: 0.35 })
+  b.rect(1046, 440, 306, 218, { fill: C.badL, stroke: C.bad, sw: 1.4, rx: 9, fillOp: 0.35 })
   b.ctext(1199, 464, '插入性突变（慢性转化）', { size: 12.5, weight: 700, fill: C.bad })
   // 前病毒插入 c-myc 附近
   b.line(1062, 540, 1336, 540, { stroke: C.dna, sw: 2.6 })
@@ -65,14 +65,14 @@ const draw = (b: B) => {
   b.ctext(1280, 544, 'c-myc', { size: 11, weight: 700, fill: C.dnaD })
   b.arrow(1224, 566, 1252, 566, { stroke: C.bad, sw: 2, marker: 'bad' })
   b.ctext(1238, 588, '激活', { size: 10.5, weight: 700, fill: C.bad })
-  b.wtext(1062, 616, '不含 onc 的逆转录病毒（如 ALV）随机整合，充当活跃「增强子 / 启动子」——插入诱变是发现新癌基因的遗传学工具', { size: 10.5, fill: C.sub, maxW: 274, lh: 15 })
+  b.wtext(1062, 608, '不含 onc 的逆转录病毒（如 ALV）随机整合，充当活跃「增强子 / 启动子」——插入诱变是发现新癌基因的遗传学工具', { size: 10.5, fill: C.sub, maxW: 274, lh: 15 })
 
   // ============ 四、DNA 肿瘤病毒的另一手（下，全宽） ============
   b.panel(30, 700, 1340, 260, { title: '四、DNA 肿瘤病毒的另一手：结合并失活抑癌蛋白' })
   const dnav: [string, string][] = [
-    ['SV40 大 T 抗原', '结合并失活'],
-    ['HPV E6 / E7', '结合并失活'],
-    ['腺病毒 E1A / E1B', '结合并失活'],
+    ['SV40 大 T 抗原', '结合并失活 p53 · Rb'],
+    ['HPV E6 / E7', 'E6 降解 p53 · E7 失活 Rb'],
+    ['腺病毒 E1A / E1B', 'E1A 结 Rb · E1B 结 p53'],
   ]
   dnav.forEach(([t, s], i) => {
     const x = 56 + i * 200

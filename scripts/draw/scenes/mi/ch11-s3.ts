@@ -6,15 +6,15 @@ const draw = (b: B) => {
   b.panel(30, 132, 1340, 220, { title: '一、经典表型鉴定：四条线索的标准流程' })
 
   const clues: Array<[number, string, string, string, string]> = [
-    [90, '① 菌落形态', '大小 · 颜色 · 边缘 · 光滑度——平板上的第一眼', C.dna, C.dnaL],
-    [420, '② 细胞形态与革兰反应', '球菌/杆菌/螺旋 · 芽孢与鞭毛 · 革兰阳/阴性', C.pro, C.proL],
-    [750, '③ 生理生化试验', 'IMViC · 触酶 · 氧化酶等代谢指纹', C.enz, C.enzL],
-    [1080, '④ 血清学分型', '已知抗体鉴定表面抗原（血清型）', C.acc, C.accL],
+    [64, '① 菌落形态', '大小 · 颜色 · 边缘 · 光滑度——平板上的第一眼', C.dna, C.dnaL],
+    [392, '② 细胞形态与革兰反应', '球菌/杆菌/螺旋 · 芽孢与鞭毛 · 革兰阳/阴性', C.pro, C.proL],
+    [720, '③ 生理生化试验', 'IMViC · 触酶 · 氧化酶等代谢指纹', C.enz, C.enzL],
+    [1048, '④ 血清学分型', '已知抗体鉴定表面抗原（血清型）', C.acc, C.accL],
   ]
   clues.forEach(([x, t, s, c, cl]) => {
-    b.rect(x, 176, 320, 108, { fill: cl, fillOp: 0.45, stroke: c, sw: 1.5, rx: 9 })
-    b.tag(x + 90, 204, t, { fill: cl, stroke: c, size: 11.5, weight: 700, tfill: C.ink, pad: 8 })
-    b.wtext(x + 16, 232, s, { size: 10.5, fill: C.sub, maxW: 288, lh: 15 })
+    b.rect(x, 176, 304, 108, { fill: cl, fillOp: 0.45, stroke: c, sw: 1.5, rx: 9 })
+    b.tag(x + 88, 204, t, { fill: cl, stroke: c, size: 11.5, weight: 700, tfill: C.ink, pad: 8 })
+    b.wtext(x + 16, 232, s, { size: 10.5, fill: C.sub, maxW: 272, lh: 15 })
   })
   b.ctext(700, 316, '四条线索互补印证 → 初步鉴定到属、种', { size: 11.5, weight: 700, fill: C.ink })
 
@@ -76,7 +76,6 @@ const draw = (b: B) => {
   b.rect(650, 706, 330, 130, { fill: C.okL, fillOp: 0.4, stroke: C.ok, sw: 1.5, rx: 9 })
   b.text(670, 730, 'MALDI-TOF', { size: 13, weight: 700, fill: C.ok })
   b.wtext(670, 754, '以核糖体蛋白指纹比对数据库：分钟级、低成本，已成临床鉴定常规。', { size: 11, fill: C.sub, maxW: 290, lh: 16 })
-  b.ctext(815, 826, 'Bergey 手册沿革：1923 表型鉴定版 → 1984 四卷本 → 2001–2012 二版五卷按 16S 系统发育的门级框架编排', { size: 10, fill: C.mute })
 
   // 未培养卡
   b.rect(1000, 706, 340, 130, { fill: C.badL, fillOp: 0.35, stroke: C.bad, sw: 1.5, rx: 9 })
