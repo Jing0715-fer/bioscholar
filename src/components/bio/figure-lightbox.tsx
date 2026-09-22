@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import {
   ChevronDown,
@@ -27,12 +27,22 @@ import { cn } from '@/lib/utils'
  * - 键盘：+/- 缩放、0 复位、方向键平移、Esc 关闭
  * - 图注面板可折叠：折叠后图像区域最大化（小屏友好）
  *
+ * 矢量清晰度（SVG 专属）：
+ * - 纯 transform: scale 会把 SVG 按适配尺寸光栅化后再位图放大，手机端高倍率下发虚；
+ * - 手势进行中仍用 transform（保证跟手流畅），手势/过渡结束后将倍率"落盘"为
+ *   真实布局尺寸（width/height），浏览器按新尺寸重新光栅化矢量，边缘恢复锐利；
+ * - 纯平移（倍率不变）时始终保持在落盘尺寸上仅更新 translate，平移同样清晰；
+ * - 设备像素宽度超过 8192 时不再落盘（避免超大光栅内存压力），退回 transform 模式。
+ *
  * 状态生命周期：LightboxBody 仅在对话框打开期间挂载（Radix Presence），
  * 每次打开自动复位到 100% 适配视图，无需手动重置。
  */
 
 const MIN_SCALE = 1
 const MAX_SCALE = 10
+
+/** 矢量落盘后允许的最大设备像素宽度（超出则退回 transform 缩放） */
+const VECTOR_COMMIT_MAX_DEVICE_PX = 8192
 
 interface Transform {
   scale: number
@@ -146,6 +156,15 @@ function LightboxBody({
   const viewportRef = useRef<HTMLDivElement | null>(null)
   const imgRef = useRef<HTMLImageElement | null>(null)
 
+  /** 矢量源（SVG）：启用"落盘为布局尺寸"的清晰缩放模式 */
+  const isVector = useMemo(() => /\.svg(?:\?|$)/i.test(src), [src])
+  /** 适配基准：图片 contain 适配视口后的布局尺寸（onLoad 时测量） */
+  const fitRef = useRef<{ w: number; h: number } | null>(null)
+  /** 当前倍率是否已落盘为真实布局尺寸（矢量清晰模式） */
+  const committedRef = useRef(false)
+  /** 落盘调度定时器 */
+  const commitTimerRef = useRef<number | null>(null)
+
   // 仅用于 UI 呈现的状态
   const [scalePct, setScalePct] = useState(100)
   const [dragging, setDragging] = useState(false)
@@ -179,22 +198,109 @@ function LightboxBody({
     if (img) img.classList.toggle('bio-fig-zm', on)
   }, [])
 
-  /** 将变换写入图片元素（transform-origin: center） */
-  const writeTf = useCallback((t: Transform) => {
-    tfRef.current = t
+  /** 矢量模式：从"已落盘"瞬时回退到 transform 缩放模式。
+ *  回退前后视觉完全一致（布局尺寸 × scale 与直接 scale 同一映射），
+ *  仅为后续缩放动画/手势提供统一的 transform 基础。必须瞬时完成，不能带过渡。 */
+  const ensureTransformMode = useCallback(() => {
+    if (!committedRef.current) return
+    committedRef.current = false
     const img = imgRef.current
-    if (img) img.style.transform = `translate(${t.tx}px, ${t.ty}px) scale(${t.scale})`
-    setScalePct(Math.round(t.scale * 100))
+    if (!img) return
+    const t = tfRef.current
+    img.classList.remove('bio-fig-zm')
+    img.style.width = ''
+    img.style.height = ''
+    img.style.maxWidth = ''
+    img.style.maxHeight = ''
+    img.style.transform = `translate(${t.tx}px, ${t.ty}px) scale(${t.scale})`
   }, [])
+
+  /** 矢量模式：把当前倍率落盘为真实布局尺寸，浏览器按新尺寸重新光栅化 SVG → 任意倍率下边缘锐利。
+ *  布局尺寸（fit×s + translate）与 transform（fit + translate + scale）像素映射完全等价，
+ *  因此落盘瞬间无任何视觉跳动，只有清晰度的提升。 */
+  const commitLayout = useCallback(() => {
+    commitTimerRef.current = null
+    const img = imgRef.current
+    if (!img || !isVector) return
+    const t = tfRef.current
+    const fit = fitRef.current
+    const dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1
+    if (t.scale <= 1.001) {
+      // 回到适配视图：清除落盘样式，恢复 contain 约束
+      img.classList.remove('bio-fig-zm')
+      img.style.width = ''
+      img.style.height = ''
+      img.style.maxWidth = ''
+      img.style.maxHeight = ''
+      img.style.transform = t.tx || t.ty ? `translate(${t.tx}px, ${t.ty}px)` : ''
+      committedRef.current = false
+      return
+    }
+    if (!fit) return
+    if (fit.w * t.scale * dpr > VECTOR_COMMIT_MAX_DEVICE_PX) {
+      // 超大光栅防护：设备像素过大会带来内存压力，退回 transform 模式
+      ensureTransformMode()
+      return
+    }
+    img.classList.remove('bio-fig-zm') // 落盘必须瞬时，避免 width 跳变叠加 transform 过渡
+    img.style.maxWidth = 'none'
+    img.style.maxHeight = 'none'
+    img.style.width = `${fit.w * t.scale}px`
+    img.style.height = `${fit.h * t.scale}px`
+    img.style.transform = t.tx || t.ty ? `translate(${t.tx}px, ${t.ty}px)` : ''
+    committedRef.current = true
+  }, [isVector, ensureTransformMode])
+
+  /** 请求在 idle 后落盘（等待手势结束/过渡动画完成，避免中途打断） */
+  const requestCommit = useCallback(
+    (delay = 240) => {
+      if (!isVector) return
+      if (commitTimerRef.current) window.clearTimeout(commitTimerRef.current)
+      commitTimerRef.current = window.setTimeout(commitLayout, delay)
+    },
+    [isVector, commitLayout]
+  )
+
+  /** 将变换写入图片元素（transform-origin: center）。
+ *  矢量已落盘且倍率不变（纯平移）时，仅在落盘尺寸上更新 translate，保持矢量锐利。 */
+  const writeTf = useCallback(
+    (t: Transform) => {
+      const prev = tfRef.current
+      tfRef.current = t
+      const img = imgRef.current
+      if (img) {
+        if (isVector && committedRef.current && t.scale === prev.scale) {
+          // 纯平移：保持落盘布局尺寸，仅更新位移
+          img.style.transform = t.tx || t.ty ? `translate(${t.tx}px, ${t.ty}px)` : ''
+        } else {
+          if (isVector && committedRef.current) {
+            // 倍率改变：先瞬时回退到 transform 模式（此时不应有进行中的过渡）
+            img.classList.remove('bio-fig-zm')
+            img.style.width = ''
+            img.style.height = ''
+            img.style.maxWidth = ''
+            img.style.maxHeight = ''
+            committedRef.current = false
+          }
+          img.style.transform = `translate(${t.tx}px, ${t.ty}px) scale(${t.scale})`
+        }
+      }
+      setScalePct(Math.round(t.scale * 100))
+    },
+    [isVector]
+  )
 
   /** 以视口内 (clientX, clientY) 为锚点缩放 factor 倍 */
   const zoomAt = useCallback(
     (clientX: number, clientY: number, factor: number, withSmooth: boolean) => {
       const prev = tfRef.current
       const next = clampScale(prev.scale * factor)
+      // 已落盘时先瞬时回退到 transform 模式，保证动画从当前视觉状态出发
+      ensureTransformMode()
       setTransition(withSmooth)
       if (next <= MIN_SCALE) {
         writeTf(IDENTITY)
+        requestCommit(withSmooth ? 340 : 120)
         return
       }
       const rect = viewportRef.current?.getBoundingClientRect()
@@ -208,8 +314,10 @@ function LightboxBody({
         tx: cx - (cx - prev.tx) * ratio,
         ty: cy - (cy - prev.ty) * ratio,
       })
+      // 手势/动画结束后落盘为布局尺寸，恢复矢量锐利
+      requestCommit(withSmooth ? 340 : 120)
     },
-    [writeTf, setTransition]
+    [writeTf, setTransition, ensureTransformMode, requestCommit]
   )
 
   /** 以视口中心缩放（按钮 / 键盘） */
@@ -228,9 +336,11 @@ function LightboxBody({
 
   /** 复位到适配大小 */
   const resetView = useCallback(() => {
+    ensureTransformMode()
     setTransition(true)
     writeTf(IDENTITY)
-  }, [writeTf, setTransition])
+    requestCommit(340)
+  }, [writeTf, setTransition, ensureTransformMode, requestCommit])
 
   // 滚轮缩放（必须非被动监听才能 preventDefault；组件仅在打开期间挂载）
   useEffect(() => {
@@ -245,6 +355,50 @@ function LightboxBody({
     el.addEventListener('wheel', onWheel, { passive: false })
     return () => el.removeEventListener('wheel', onWheel)
   }, [zoomAt])
+
+  // 视口尺寸显著变化（旋转屏幕等）时复位并重新测量适配基准（忽略地址栏收展引起的轻微 resize）
+  useEffect(() => {
+    if (!isVector) return
+    let prevW = window.innerWidth
+    let timer: number | null = null
+    const onResize = () => {
+      if (timer) window.clearTimeout(timer)
+      timer = window.setTimeout(() => {
+        timer = null
+        if (Math.abs(window.innerWidth - prevW) < 60) return
+        prevW = window.innerWidth
+        const img = imgRef.current
+        if (!img) return
+        img.classList.remove('bio-fig-zm')
+        img.style.width = ''
+        img.style.height = ''
+        img.style.maxWidth = ''
+        img.style.maxHeight = ''
+        img.style.transform = ''
+        committedRef.current = false
+        tfRef.current = IDENTITY
+        setScalePct(100)
+        fitRef.current =
+          img.complete && img.naturalWidth > 0
+            ? { w: img.offsetWidth, h: img.offsetHeight }
+            : null
+      }, 250)
+    }
+    window.addEventListener('resize', onResize)
+    return () => {
+      window.removeEventListener('resize', onResize)
+      if (timer) window.clearTimeout(timer)
+    }
+  }, [isVector])
+
+  // 卸载时清理落盘定时器
+  useEffect(() => {
+    const timerRef = commitTimerRef
+    return () => {
+      if (timerRef.current) window.clearTimeout(timerRef.current)
+      timerRef.current = null
+    }
+  }, [])
 
   // 中键按下禁用浏览器自动滚动（兜底：部分浏览器 pointerdown 不拦截）
   useEffect(() => {
@@ -346,6 +500,11 @@ function LightboxBody({
   }
 
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    // 工具栏等交互子元素（缩放按钮/复位胶囊）不进入拖拽：
+    // 一旦对视区 setPointerCapture，后续 click 会被重定向到捕获元素，按钮将永远收不到点击
+    if ((e.target as HTMLElement).closest('button, a, input, textarea, select, [role=button]')) {
+      return
+    }
     const el = viewportRef.current
     if (!el) return
     // 捕获指针使拖拽移出视区仍可跟踪；个别环境（非活动指针）会抛错，安全兜底
@@ -434,6 +593,8 @@ function LightboxBody({
         return
       }
       endDrag()
+      // 捏合/拖拽手势结束：尽快落盘为布局尺寸，恢复矢量锐利
+      requestCommit(80)
     } else if (pointersRef.current.size === 1 && e.pointerType !== 'mouse') {
       // 捏合结束还剩一指：从当前位置重启拖拽
       const [p] = [...pointersRef.current.values()]
@@ -442,6 +603,8 @@ function LightboxBody({
   }
 
   const onDoubleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // 双击落在按钮上时交给按钮自身的 click，不触发缩放切换
+    if ((e.target as HTMLElement).closest('button, a, [role=button]')) return
     e.preventDefault()
     if (tfRef.current.scale > MIN_SCALE + 0.01) resetView()
     else zoomAt(e.clientX, e.clientY, 2.5, true)
@@ -480,6 +643,13 @@ function LightboxBody({
             src={src}
             alt={caption ?? a11yTitle}
             draggable={false}
+            onLoad={() => {
+              const img = imgRef.current
+              // 记录 contain 适配后的布局基准（仅首次加载时测量，避免被落盘尺寸污染）
+              if (img && !fitRef.current && img.offsetWidth > 0) {
+                fitRef.current = { w: img.offsetWidth, h: img.offsetHeight }
+              }
+            }}
             className="pointer-events-none max-h-full max-w-full select-none object-contain will-change-transform"
           />
         ) : null}

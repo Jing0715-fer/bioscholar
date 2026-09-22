@@ -13,7 +13,7 @@ export const cellBiology: Subject = {
   englishName: 'Cell Biology',
   description: '从细胞整体、超微结构与分子水平研究细胞结构与生命活动的学科',
   textbook:
-    '参照丁明孝、翟中和《细胞生物学》（第五版）与 Alberts《Molecular Biology of the Cell》知识体系，融合教育部"101计划"核心课程要求',
+    '参照丁明孝、翟中和《细胞生物学》（第五版）与 Alberts《Molecular Biology of the Cell》知识体系，融合核心课程教学要求',
   color: 'rose',
   icon: 'microscope',
   chapters: [

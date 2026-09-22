@@ -743,22 +743,22 @@ export function AssistantView() {
 
   /* ----- 渲染 ----- */
   return (
-    <div className="mx-auto flex h-[calc(100dvh-10rem)] min-h-[460px] w-full max-w-4xl flex-col px-3 pt-4 sm:px-4 lg:h-[calc(100dvh-8.5rem)]">
+    <div className="mx-auto flex h-[calc(100dvh-3.5rem)] min-h-[460px] w-full max-w-4xl flex-col px-3 pt-2 sm:px-4 sm:pt-4 lg:h-[calc(100dvh-7.5rem)]">
       {/* 顶部：编辑式学术头部（含工具栏） */}
       <header className="relative shrink-0 overflow-hidden rounded-t-2xl border bg-card">
         <div
           className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-600"
           aria-hidden
         />
-        <div className="px-4 pt-4 sm:px-5">
+        <div className="px-4 pt-3 sm:px-5 sm:pt-4">
           <div className="flex items-start justify-between gap-3">
             <div className="min-w-0">
-              <p className="bio-eyebrow text-muted-foreground">AI Teaching Assistant</p>
-              <h1 className="mt-1.5 font-serif text-lg font-bold leading-snug tracking-tight sm:text-xl">
+              <p className="bio-eyebrow hidden text-muted-foreground sm:block">AI Teaching Assistant</p>
+              <h1 className="mt-1.5 font-serif text-lg font-bold leading-snug tracking-tight sm:mt-1 sm:text-xl">
                 AI 智能助教
               </h1>
-              <p className="mt-1 text-xs text-muted-foreground">
-                基于「101计划」教材体系的生物学专家助教
+              <p className="mt-1 hidden text-xs text-muted-foreground sm:block">
+                覆盖九大基础学科的生物学专家助教
               </p>
             </div>
             <span

@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="bio-eyebrow text-muted-foreground">教材体系依据</div>
                 <div className="bio-rule mt-2" aria-hidden />
                 <p className="mt-3 text-[11px] leading-[1.9] text-muted-foreground">
-                  教育部「101计划」生物学核心课程
+                  经典生物学核心课程体系
                 </p>
                 <p className="mt-1 text-[11px] leading-[1.9] text-muted-foreground/80">
                   王镜岩《生物化学》 · 朱玉贤《现代分子生物学》 · 翟中和《细胞生物学》 ·
@@ -278,10 +278,15 @@ export default function Home() {
               </div>
             </main>
 
-            {/* 页脚 */}
-            <footer className="mt-auto border-t">
+            {/* 页脚：移动端对话视图沉浸式全屏，隐藏页脚（输入区自带安全区留白） */}
+            <footer
+              className={cn(
+                'mt-auto border-t',
+                view.name === 'assistant' && 'hidden lg:block'
+              )}
+            >
               <div className="mx-auto max-w-5xl px-4 py-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] text-center text-[11px] leading-relaxed text-muted-foreground/80">
-                BioScholar · 生命科学智能学习平台 — 内容体系参照教育部「101计划」生物学核心课程教材 ·
+                BioScholar · 生命科学智能学习平台 — 内容体系参照经典生物学核心课程教材 ·
                 学习资源仅用于教学参考
               </div>
             </footer>

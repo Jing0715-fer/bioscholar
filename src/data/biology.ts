@@ -1,5 +1,5 @@
 // 生物学教材内容数据 - 汇总导出
-// 内容体系参照教育部"101计划"生物学核心课程及经典教材
+// 内容体系参照经典生物学核心课程教材
 
 import type { Subject, SubjectId, QuizQuestion, Chapter, Section } from '@/lib/types'
 import { countWords } from '@/lib/word-count'

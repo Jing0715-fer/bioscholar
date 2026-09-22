@@ -1645,3 +1645,21 @@ Stage Summary:
 - VLM 配额恢复时间不可控；监视器拉起审校后需人工/下轮处理 FAIL 结果（修复→重生成→重栅格化→复审循环）
 - axis() ylabel 与中位刻度标签的系统性估宽交叠：6/9 已 VLM PASS 判定可读，暂不动 lib.ts；若后续 VLM 复审出现真实 FAIL 再做系统性修复（ylabel 自适应避让或旋转）
 - 待推送：本地 2 个提交（e0317ee + 5b8b246）待 VLM 审校完成后一并 push
+
+---
+Task ID: 11
+Agent: 主代理（会话 web-c393288f）
+Task: 用户三项反馈——1) 删除全部「101计划」字样 2) AI 助手手机端对话窗口占比过小 3) 矢量图手机端放大后不清晰
+
+Work Log:
+- 【101计划清除】rg 全库定位 → 修改 13 处：page.tsx（侧栏"教材体系依据"卡 + 页脚）、layout.tsx（description 重写 + keywords 删"101计划"）、dashboard.tsx（hero 眉标→"生命科学核心课程体系"）、assistant-view.tsx（副题→"覆盖九大基础学科的生物学专家助教"）、api/chat/route.ts（system prompt→"基于经典生物学核心课程教材"）、biology.ts / types.ts 注释、biochemistry/molecular-biology/cell-biology/biophysics 四学科 textbook 字段与头注释；hero-bioscience.svg（"BIOSCIENCE · CORE CURRICULUM" + "生命科学核心课程 · 基础学科体系"）+ 9 张学科封面 SVG（删"101 CORE"）。worklog/agent-ctx 历史档案按惯例保留不动。
+- 【助手移动端布局】根因：h-[calc(100dvh-10rem)] 扣除过多（实际 chrome 仅 ~56px 顶栏），卡片浮在页面中间留下大片背景带。修复：assistant-view.tsx 容器改为 h-[calc(100dvh-3.5rem)]（移动/平板，全出血到屏底）lg:h-[calc(100dvh-7.5rem)]（桌面，含页脚）；page.tsx 页脚在 assistant 视图移动端 hidden lg:block（沉浸式对话，输入区自带 safe-area 留白，避免双重安全区）；助手头部移动端隐藏装饰性英文眉标与副题、pt 收紧。注意 Tailwind border-box：高度含 padding，故扣 3.5rem（仅顶栏）。
+- 【矢量图缩放清晰化】figure-lightbox.tsx 重构缩放管线：根因是 transform: scale 把 SVG 按适配尺寸光栅化后位图放大（will-change:transform 合成层光栅不随 scale 重采样，iOS 尤甚）。方案（仅对 .svg 源，isVector 检测）：手势/动画期间仍写 transform（跟手流畅）；手势结束 80~340ms 后 commitLayout 把倍率"落盘"为真实布局 width/height（fit×scale + translate-only），浏览器按新尺寸重新光栅化矢量 → 静止即锐利；纯平移（scale 不变）在落盘尺寸上仅更新 translate（平移也清晰）；倍率改变时 ensureTransformMode 瞬时回退（视觉映射等价，零跳动）；>8192 设备像素宽度防护退回 transform；onLoad 测量 contain 适配基准 fitRef；resize（宽变>60px，如旋转）复位重测。requestCommit 在 zoomAt/resetView/pointerup 统一调度。
+- 【顺手修复既有 bug】灯箱工具栏按钮（缩小/放大/复位）对真实点击完全无响应：viewport onPointerDown 对冒泡自按钮的 pointerdown 也 setPointerCapture → click 被重定向到捕获元素。修复：pointerdown/doubleclick 起源自 button/a/input 等交互子元素时直接放行。
+- 【验证】bun run lint 零错误；dev.log 无 error/warn；agent-browser 端到端（390×844 移动端 + 1440×900 桌面）：页面 innerText 无"101"字样 ✓ meta 描述已更新 ✓；助手移动端对话卡 56→844 全出血、占屏 93%（原 ~77%）、页脚 display:none、无页面滚动 ✓ 桌面端 780px 高 + 页脚正常 17px 间距 ✓；灯箱滚轮 1.4×→落盘 width 1968.4px、捏合 2.5×→975px、平移保持落盘尺寸仅改 translate、再缩放正确回退换算、复位清样式回 100% ✓ 工具栏真实点击生效（130%+落盘 1827.8px）✓ 关闭正常 ✓ 控制台零错误。VLM 目检因账户级 429 限流暂不可用（DOM 度量已充分验证）。
+
+Stage Summary:
+- 「101计划」字样全产品面清零（UI 13 处 + SVG 10 张），metadata 口径同步重写，无残留（worklog 历史档案除外）
+- AI 助手移动端沉浸式全屏对话：占屏 77%→93%，消除卡片下方的背景留白带与页脚双重安全区；桌面端保持页脚的 7.5rem 精确适配
+- 灯箱矢量缩放"落盘布局尺寸"机制：SVG 任意倍率静止即锐利（重新光栅化），手势流畅性不受影响；附带修复工具栏按钮 pointer-capture 劫持死点击 bug
+- 下一步建议：VLM 配额恢复后可对移动端截图与高倍率矢量渲染做视觉复核；hero-bioscience.png 为未使用的旧栅格副本（含旧文案），如需可删除或重新导出

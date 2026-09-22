@@ -2,7 +2,6 @@
 // BioScholar 生命科学学习平台 - 分子生物学教材内容
 // 知识体系参照：朱玉贤《现代分子生物学》（第五版）、
 // Watson《Molecular Biology of the Gene》、Lewin《GENES XII》
-// 及教育部"101计划"核心课程要求
 // ============================================================
 
 import type { Subject } from '@/lib/types'
@@ -14,7 +13,7 @@ export const molecularBiology: Subject = {
   description:
     '在分子水平上研究基因与基因组结构、功能及其调控机制的学科，围绕"中心法则"揭示遗传信息的储存、复制、转录、翻译与表达调控的分子本质。',
   textbook:
-    '参照朱玉贤《现代分子生物学》（第五版）、Watson《Molecular Biology of the Gene》与 Lewin《GENES XII》知识体系，融合教育部"101计划"核心课程要求',
+    '参照朱玉贤《现代分子生物学》（第五版）、Watson《Molecular Biology of the Gene》与 Lewin《GENES XII》知识体系，融合核心课程教学要求',
   color: 'violet',
   icon: 'dna',
   chapters: [

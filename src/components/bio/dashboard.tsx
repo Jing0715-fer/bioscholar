@@ -86,7 +86,7 @@ export function Dashboard() {
         <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,4fr)]">
           <div className="p-6 sm:p-8 lg:p-10">
             <p className="bio-eyebrow text-primary">
-              教育部「101计划」生物学核心课程
+              生命科学核心课程体系
             </p>
             <h1 className="mt-3 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
               生命科学研习堂

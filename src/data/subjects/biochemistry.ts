@@ -1,7 +1,7 @@
 // ============================================================
 // BioScholar 生物化学学科内容
 // 知识体系：王镜岩《生物化学》(第四版) × Lehninger《Principles of Biochemistry》
-// 融合教育部"101计划"生物化学核心课程要求
+// 融合生物化学核心课程教学要求
 // ============================================================
 
 import type { Subject } from '@/lib/types'
@@ -13,7 +13,7 @@ export const biochemistry: Subject = {
   description:
     '生物化学是在分子水平上研究生命现象化学本质的学科，揭示糖、脂、蛋白质、核酸等生物分子的结构与功能，阐明物质代谢与能量代谢的规律及其调节机制，是理解生命现象、连接基础医学与分子生物学的核心课程。',
   textbook:
-    '参照王镜岩《生物化学》（上、下册，第四版）与 Lehninger《Principles of Biochemistry》知识体系，融合教育部"101计划"生物化学核心课程要求',
+    '参照王镜岩《生物化学》（上、下册，第四版）与 Lehninger《Principles of Biochemistry》知识体系，融合生物化学核心课程教学要求',
   color: 'amber',
   icon: 'flask-conical',
   chapters: [
