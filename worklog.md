@@ -1617,3 +1617,31 @@ Stage Summary:
 - 运行时一致性证明：pre/post 快照 441/441 小节 content 逐字节一致（总字符 1,225,312 不变）；17 目标节 content 运行时逐字节等于扩充层条目且 17/17 含表、其余 424 节零表头流窜——删除的仅为被 withExpansions 遮蔽的死代码，运行时内容 100% 零变化，同表双份维护隐患与 bundle 冗余消除
 - 验证结果全绿：tsc --noEmit 过滤 src/data 为空（四底稿及扩充层零类型错误）；表格行数变化与 5-a/b/c 记载数字逐文件吻合；结构断言（无双空行/无零空行/表块无残留）全部通过
 
+
+---
+Task ID: 10（主控：VLM 恢复前会话）
+Agent: 主控 (Z.ai Code)
+Task: 拉取最新代码 + VLM 恢复前的人工图片科学性核查与文字打磨（含上轮中断现场恢复）
+
+Work Log:
+- git pull：远端 Already up to date（本地 e0317ee 未推送——含上轮 7 张 FAIL 图的 scene 修复但 SVG 未再生成的半成品现场）
+- 现场取证：审计报告 /tmp/drawn-audit/vlm.json 卡死于 220/307（03:14 起 429 死循环），僵尸审校进程 PID 15301 仍在重试耗配额 → kill；11 张 FAIL 的 SVG mtime 均早于 scene 修复时间，确认修复未落盘
+- VLM 误报甄别（人工源码级核查）：cb-ch11-s4「p23」实为 p21（源码正确）；cb-ch11-s3「B 淋巴细胞→巨噬细胞」系 Graf 2010 经典转分化实验（科学正确）；mi-ch11-s3「API 20E 21 孔」实为 20 孔循环；mb-ch6-s3「U N N」实为 N N N 占位符
+- 真实修复 3 个 scene 并全量重生成 SVG+PNG（307 张）：mb-ch8-s4（CDK8 椭球移出标题带至 pol II 上方+成环弧线补 marker-end 指向启动子+标题缩短）；mb-ch12-s1（两路线卡 h200→218 止溢出+E1A/E1B/E6/E7 靶点标注具体化）；mi-ch11-s3（四线索卡等宽收回面板右界内+删挤压冗余 Bergey 行）
+- PDB 图注全量实证（RCSB API 17 条 + CIF 序列/实体/坐标计算）：分辨率断言 16/17 与 API 一致（4LJZ 3.59≈3.6 等）；4 处实质错误修复——1C17（实为 E.coli a₁c₁₂ 溶液 NMR，Rastogi-Girvin 1999；原称 2.4 Å/Ilyobacter 均张冠李戴，改写并衔接「旧教材 4 H⁺/ATP 源自 c₁₂」教学线）、1BKV（(Pro-Hyp-Gly) 重复+Ⅲ型胶原 α1(Ⅲ) 片段，CIF 实体 T3-785 实证；原称 Pro-Pro-Gly/α1 链均误）、1BL8（铅青链霉菌替换嗜热链霉菌误译）、2HHB（盐键对改坐标实证：βHis146–βAsp94 同链 2.8 Å + α₁Arg141–α₂Asp126 跨 α 2.7 Å，经 1HHO R 态对照验证 T 态特异性；原称「βAsp94–αLys40」实测 38 Å 不成立、「βAsp126」实为 α 链残基）
+- 4V4R 深度实证：CIF 含 'P-site tRNA (Phe)'/'E-site tRNA (Phe)' 实体 + Thermus thermophilus HB8——图注断言全部正确（上轮存疑关闭）
+- 静态几何复检（static-check.ts）：0 越界；46 处估宽级文字交叠中 21 处位于 VLM 已 PASS 图（证实为估宽噪声非真实缺陷）；9 处 axis() ylabel-刻度同类交叠中 6 张已被 VLM 实判 PASS——决策不动 lib.ts（避免无视觉验证下批量改动已 PASS 图），3 张未审留 VLM 裁决
+- 文字打磨：9-a 子代理清理底稿 17 张被扩充层遮蔽的对照表（441 小节运行时逐字节一致证明）；cb-ch6-s1 与 ch6-s4 重复的三态骨架总表替换为微管特异性药物对照表（4×4，镜像本节正文口径，去重且保体例）；glossary 海马词条确认全局唯一（g-192 已在前轮移除）+ neuro-c1 头注释修正（8 条→7 条）
+- 验证：bunx tsc src/ 零错误；bun run lint 通过；agent-browser 端到端——首页/学科中心/生物化学阅读器/图库（修正后 1C17 图注「溶液核磁共振，大肠杆菌 a₁c₁₂ 亚复合物」渲染 ✓、图库统计 478 张 100% 真实来源 ✓）；git commit 5b8b246
+- VLM 恢复监视器上线（scripts/review/watch-vlm-recovery.ts，detached）：每 150s 探测、连续 2 次成功自动拉起 vlm-audit（自绘 103 张待审）+ vlm-audit-commons（commons/web/pdb 共 ~153 张 caption 科学审校）
+
+Stage Summary:
+- 上轮半成品现场完整恢复：e0317ee 遗留的 7 张 scene 修复全部落盘为 SVG，另完成 3 张新修复，11 张 FAIL 全部闭环
+- PDB 图注实证闭环：17 条 API 核验 + CIF 实体/序列/坐标三重取证，4 处张冠李戴型错误修复（含 2HHB 盐键的双结构坐标计算验证）；上轮存疑清单全部关闭
+- 文字打磨：底稿死代码清理（-126 表格行）、同章重复表去重（ch6-s1 换微管药物表）、词条唯一性确认；「每节至少一表」体例全局保持（441/441）
+- VLM 账户级 429 仍未恢复（探测 15+ 次均 429）；监视器持续守望（最长 4 小时），恢复后自动完成剩余 103 张自绘 + ~153 张 commons 审校
+
+未解决问题与下一步建议：
+- VLM 配额恢复时间不可控；监视器拉起审校后需人工/下轮处理 FAIL 结果（修复→重生成→重栅格化→复审循环）
+- axis() ylabel 与中位刻度标签的系统性估宽交叠：6/9 已 VLM PASS 判定可读，暂不动 lib.ts；若后续 VLM 复审出现真实 FAIL 再做系统性修复（ylabel 自适应避让或旋转）
+- 待推送：本地 2 个提交（e0317ee + 5b8b246）待 VLM 审校完成后一并 push
