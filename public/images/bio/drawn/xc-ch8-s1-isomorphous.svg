@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">同晶置换法：让重原子替你看相位</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">F<tspan dy="4.2" font-size="13.7">PH</tspan><tspan dy="-4.2">=F</tspan><tspan dy="4.2" font-size="13.7">P</tspan><tspan dy="-4.2">+F</tspan><tspan dy="4.2" font-size="13.7">H</tspan><tspan dy="-4.2"> 三边解相位；SIR 两圆二义、MIR 与反常破局（FOM 0.5–0.8）；差值 Patterson 定位 1–8 个位点；同晶性门槛：晶胞变化小于约 1%</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、相位圆（Harker 作图）：三边已知，相位可解</text>
+  <circle cx="150" cy="370" r="125" fill="none" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="230" cy="370" r="145" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="215" cy="315" r="92" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="7 5"/>
+  <line x1="150" y1="370" x2="230" y2="370" stroke="#d97706" stroke-width="3" marker-end="url(#arr-warn)"/>
+  <text x="190" y="392" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">F<tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2">（由重原子坐标算出，完全已知）</tspan></text>
+  <line x1="150" y1="370" x2="156" y2="245" stroke="#0f766e" stroke-width="3" marker-end="url(#arr-dna)"/>
+  <line x1="150" y1="370" x2="156" y2="495" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <circle cx="156" cy="245" r="6" fill="#0f766e"/>
+  <circle cx="156" cy="495" r="6" fill="#dc2626"/>
+  <text x="196" y="240" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">φ<tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4">（真解）</tspan></text>
+  <text x="196" y="500" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">φ<tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4">（二义解）</tspan></text>
+  <circle cx="150" cy="370" r="4" fill="#1e293b"/>
+  <text x="150" y="386" font-size="10" fill="#64748b" text-anchor="middle">原点 O</text>
+  <text x="98" y="274" font-size="9.5" fill="#075985" text-anchor="middle">以 O 为心、|F<tspan dy="2.1" font-size="6.8">P</tspan><tspan dy="-2.1">| 为半径</tspan></text>
+  <text x="290" y="250" font-size="9.5" fill="#4c1d95" text-anchor="middle">以 F<tspan dy="2.1" font-size="6.8">H</tspan><tspan dy="-2.1"> 终点为心、|F</tspan><tspan dy="2.1" font-size="6.8">PH</tspan><tspan dy="-2.1">| 为半径</tspan></text>
+  <text x="258" y="288" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">第二衍生物圆</text>
+  <text x="424" y="190" font-size="10.5" fill="#475569">分别测得母体振幅 |F<tspan dy="2.3" font-size="7.6">P</tspan><tspan dy="-2.3">| 与衍生物振幅 |F</tspan><tspan dy="2.3" font-size="7.6">PH</tspan><tspan dy="-2.3">|，</tspan></text>
+  <text x="424" y="205" font-size="10.5" fill="#475569">再定位 F<tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">，</tspan></text>
+  <text x="424" y="220" font-size="10.5" fill="#475569">三个矢量满足加法关系 F<tspan dy="2.3" font-size="7.6">PH</tspan><tspan dy="-2.3"> = F</tspan><tspan dy="2.3" font-size="7.6">P</tspan><tspan dy="-2.3"> + F</tspan><tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">——两边长度与第三边已知，</tspan></text>
+  <text x="424" y="235" font-size="10.5" fill="#475569">相位可解。代数化即余弦定理逐反射解三角形：</text>
+  <text x="424" y="250" font-size="10.5" fill="#475569">如 |F<tspan dy="2.3" font-size="7.6">P</tspan><tspan dy="-2.3">| = 100、|F</tspan><tspan dy="2.3" font-size="7.6">PH</tspan><tspan dy="-2.3">| = 120、|F</tspan><tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">| = 50，三边既定，</tspan></text>
+  <text x="424" y="265" font-size="10.5" fill="#475569">角可解。</text>
+  <text x="424" y="300" font-size="10.5" fill="#475569">SIR 的宿命缺陷：两圆通常交于两点，相位二义。</text>
+  <text x="424" y="315" font-size="10.5" fill="#475569">破局靠 MIR——第二个衍生物的相位圆（虚线）</text>
+  <text x="424" y="330" font-size="10.5" fill="#475569">与第一个交于同一点 φ<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">，二义性消解；</tspan></text>
+  <text x="424" y="345" font-size="10.5" fill="#475569">再叠加反常信号（MIRAS）约束更强。</text>
+  <text x="424" y="360" font-size="10.5" fill="#475569">Hendrickson 与 Lattman 1970 年把各来源相位证据统一成概率曲线；</text>
+  <text x="424" y="375" font-size="10.5" fill="#475569">FOM 量化可信度，MIR 常达 0.5–0.8。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、浸泡化学：把重原子送进溶剂通道</text>
+  <rect x="730" y="186" width="300" height="148" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="880" y="204" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">母液＋重原子化合物</text>
+  <polygon points="790,262 846,238 906,250 926,296 884,322 818,316" fill="#ffffff" stroke="#0f766e" stroke-width="2.2"/>
+  <line x1="800" y1="268" x2="916" y2="306" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="798" y1="292" x2="900" y2="250" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <circle cx="754" cy="240" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="754" y="243.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">Pt</text>
+  <circle cx="754" cy="286" r="12" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="754" y="289.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">Hg</text>
+  <line x1="768" y1="244" x2="806" y2="262" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <line x1="768" y1="282" x2="800" y2="288" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <text x="866" y="342" font-size="9.5" fill="#64748b" text-anchor="middle">化合物沿溶剂通道扩散、与特定残基配位</text>
+  <text x="1046" y="196" font-size="11" fill="#1e293b" font-weight="700">条件扫描三主轴：</text>
+  <rect x="1103.60675" y="207.075" width="92.7865" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1150" y="219.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">浓度 0.1–10 mM</text>
+  <rect x="1097.0096" y="237.075" width="105.9808" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1150" y="249.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">时间 数分钟到数天</text>
+  <rect x="1087.16795" y="267.075" width="125.6641" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1150" y="279.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">pH（决定残基质子化）</text>
+  <text x="1046" y="306" font-size="10" fill="#475569">浸泡即化学：还原性 DTT 与 TCEP 会抢先螯合汞铂</text>
+  <text x="1046" y="320" font-size="10" fill="#475569">（浸泡前须透析除去），缓冲液本身也可能螯合重金属。批次组织：</text>
+  <text x="1046" y="334" font-size="10" fill="#475569">多颗晶体、多化合物同批扫描，</text>
+  <text x="1046" y="348" font-size="10" fill="#475569">衍射预筛先行淘汰——「浸泡后晶胞不变且仍衍射」者才值得收数；</text>
+  <text x="1046" y="362" font-size="10" fill="#475569">产出率常在三成上下，备料按失败率放大。</text>
+  <text x="1046" y="376" font-size="10" fill="#64748b">同晶性门槛：晶胞变化小于约 1%，且蛋白坐标不因浸泡而改变，</text>
+  <text x="1046" y="390" font-size="10" fill="#64748b">F<tspan dy="2.2" font-size="7.2">PH</tspan><tspan dy="-2.2"> = F</tspan><tspan dy="2.2" font-size="7.2">P</tspan><tspan dy="-2.2"> + F</tspan><tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2"> 的加法才成立；镶嵌化恶化常是非同晶的前兆，</tspan></text>
+  <text x="1046" y="404" font-size="10" fill="#64748b">先于晶胞膨胀出现。</text>
+  <rect x="730" y="372" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="399.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">化合物</text>
+  <rect x="890" y="372" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="399.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">主要结合靶标</text>
+  <rect x="1100" y="372" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="399.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">备注</text>
+  <rect x="730" y="416" width="160" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="434.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">K<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">PtCl</tspan><tspan dy="2.2" font-size="7.2">4</tspan></text>
+  <rect x="890" y="416" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="434.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">His、Met、Lys 侧链</text>
+  <rect x="1100" y="416" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="434.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">最常用的首试化合物</text>
+  <rect x="730" y="442" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="442" width="160" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="460.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">HgAc<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">、PCMBA</tspan></text>
+  <rect x="890" y="442" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="460.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Cys（巯基）</text>
+  <rect x="1100" y="442" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="460.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">巯基亲和最强</text>
+  <rect x="730" y="468" width="160" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="486.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">K[Au(CN)<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">]</tspan></text>
+  <rect x="890" y="468" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="486.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">His、Cys</text>
+  <rect x="1100" y="468" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="486.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">线形小配体</text>
+  <rect x="730" y="494" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="494" width="160" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="512.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">K<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">HgI</tspan><tspan dy="2.2" font-size="7.2">4</tspan></text>
+  <rect x="890" y="494" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="512.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">His、酸性残基</text>
+  <rect x="1100" y="494" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="512.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">大体积碘配位</text>
+  <rect x="730" y="520" width="160" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="810" y="538.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">稀土乙酸盐（Sm、Yb 等）</text>
+  <rect x="890" y="520" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="995" y="538.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">酸性残基簇</text>
+  <rect x="1100" y="520" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1225" y="538.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">多点弱结合</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、差值 Patterson：峰稀疏可数，位点不用猜</text>
+  <rect x="70" y="630" width="250" height="250" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="70" y="740" width="250" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <text x="195" y="898" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">Harker 截面（v = 0）</text>
+  <circle cx="70" cy="630" r="11" fill="#1e293b" fill-opacity="0.85"/>
+  <text x="86" y="644" font-size="9" fill="#64748b" text-anchor="middle">原点峰</text>
+  <circle cx="160" cy="755" r="9" fill="#d97706" fill-opacity="0.85" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="265" cy="750" r="9" fill="#d97706" fill-opacity="0.85" stroke="#92400e" stroke-width="1.2"/>
+  <text x="160" y="741" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">2x</text>
+  <circle cx="225" cy="670" r="8" fill="#0369a1" fill-opacity="0.8" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="165" cy="840" r="8" fill="#0369a1" fill-opacity="0.8" stroke="#075985" stroke-width="1.1"/>
+  <text x="235" y="662.5" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">交叉峰 ±u<tspan dy="2.1" font-size="6.8">12</tspan></text>
+  <text x="346" y="626" font-size="10.5" fill="#475569">系数 (|F<tspan dy="2.3" font-size="7.6">PH</tspan><tspan dy="-2.3">| − |F</tspan><tspan dy="2.3" font-size="7.6">P</tspan><tspan dy="-2.3">|)</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6"> 综合——两套晶体的差值里几乎只剩重原子的影子。</tspan></text>
+  <text x="346" y="641" font-size="10.5" fill="#475569">重原子数目少（1–8 个位点属常规），向量峰稀疏可数，</text>
+  <text x="346" y="656" font-size="10.5" fill="#475569">2–3 Å 数据上常可目视解读；</text>
+  <text x="346" y="671" font-size="10.5" fill="#475569">SHELXD 的 Patterson 解读模式几分钟出解。</text>
+  <text x="346" y="706" font-size="10.5" fill="#475569">位点读取从 Harker 截面开始（第 7 章的方法照搬）：</text>
+  <text x="346" y="721" font-size="10.5" fill="#475569">截面上寥寥数峰对应经对称操作联系的重原子对</text>
+  <text x="346" y="736" font-size="10.5" fill="#475569">（C2 中即向量 (2x, 0, 2z)），</text>
+  <text x="346" y="751" font-size="10.5" fill="#475569">几个峰即可锁定全部坐标——位点坐实，相位圆三角形三边齐备。</text>
+  <text x="346" y="792" font-size="10.5" fill="#64748b">误差账本：</text>
+  <text x="346" y="807" font-size="10.5" fill="#64748b">非同晶性往往比测量噪声更重——晶胞差 1% 在 3 Å 反射上即可引入数个百分点的系统振幅差；</text>
+  <text x="346" y="822" font-size="10.5" fill="#64748b">重原子部分占据（occupancy 低于 1）使 |F<tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">| 被系统性高估、</tspan></text>
+  <text x="346" y="837" font-size="10.5" fill="#64748b">三边失配，按位点精修占有率是对策。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、对映反转的镜像图与同晶置换的二十年</text>
+  <ellipse cx="830" cy="668" rx="74" ry="20" fill="#ccfbf1" fill-opacity="0.75" stroke="#0f766e" stroke-width="2.2" transform="rotate(-14 830 668)"/>
+  <circle cx="786" cy="656" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="812" cy="654" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="838" cy="652" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="864" cy="654" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="890" cy="656" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <text x="830" y="622" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">真图：右手 α 螺旋</text>
+  <text x="830" y="712" font-size="9.5" fill="#64748b" text-anchor="middle">侧链齿轮咬向一侧</text>
+  <line x1="920" y1="668" x2="1000" y2="668" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="960" y="652" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">亚结构坐标整体取负</text>
+  <ellipse cx="1070" cy="668" rx="74" ry="20" fill="#ccfbf1" fill-opacity="0.75" stroke="#0f766e" stroke-width="2.2" transform="rotate(14 1070 668)"/>
+  <circle cx="1010" cy="688" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="1036" cy="686" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="1062" cy="684" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="1088" cy="686" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <circle cx="1114" cy="688" r="5" fill="#6d28d9" fill-opacity="0.85"/>
+  <text x="1070" y="622" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">镜像图：螺旋全部反向</text>
+  <text x="1070" y="712" font-size="9.5" fill="#64748b" text-anchor="middle">蛋白天然手性，一眼识破</text>
+  <text x="1176" y="640" font-size="10" fill="#475569">手性空间群里，</text>
+  <text x="1176" y="654.5" font-size="10" fill="#475569">重原子亚结构坐标的对映反转给出另一套同样自洽的解，</text>
+  <text x="1176" y="669" font-size="10" fill="#475569">两套相位分别综合出互为镜像的电子密度图——SIR 二义的更深根源。</text>
+  <text x="1176" y="683.5" font-size="10" fill="#475569">操作纪律：各衍生物独立定位、</text>
+  <text x="1176" y="698" font-size="10" fill="#475569">统一标度，</text>
+  <text x="1176" y="712.5" font-size="10" fill="#475569">相位按概率组合而非取单值。</text>
+  <text x="730" y="748" font-size="10.5" fill="#475569">原理一望即知：一个 Hg 约 80 个电子，对硫的 16 个——重原子超强散射在结构因子上叠加一个可计算的矢量 F<tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">。</tspan></text>
+  <text x="730" y="763" font-size="10.5" fill="#475569">这条窄门整整推了二十年才敞开，同晶置换也由此成为首个「为定相而做」的蛋白化学工程。</text>
+  <line x1="740" y1="880" x2="1300" y2="880" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="762.4" cy="880" r="6.5" fill="#dc2626"/>
+  <line x1="762.4" y1="871" x2="762.4" y2="850" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="762.4" y="830" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1954</text>
+  <text x="762.4" y="810" font-size="12" fill="#64748b" text-anchor="middle">Hg／Ag 衍生物</text>
+  <circle cx="885.6" cy="880" r="6.5" fill="#dc2626"/>
+  <line x1="885.6" y1="889" x2="885.6" y2="910" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="885.6" y="930" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1956</text>
+  <text x="885.6" y="950" font-size="12" fill="#64748b" text-anchor="middle">相位理论</text>
+  <circle cx="1008.8" cy="880" r="6.5" fill="#dc2626"/>
+  <line x1="1008.8" y1="871" x2="1008.8" y2="850" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1008.8" y="830" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1958</text>
+  <text x="1008.8" y="810" font-size="12" fill="#64748b" text-anchor="middle">肌红蛋白 6 Å</text>
+  <circle cx="1132" cy="880" r="6.5" fill="#dc2626"/>
+  <line x1="1132" y1="889" x2="1132" y2="910" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1132" y="930" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1960</text>
+  <text x="1132" y="950" font-size="12" fill="#64748b" text-anchor="middle">推进到 2 Å</text>
+  <circle cx="1255.2" cy="880" r="6.5" fill="#dc2626"/>
+  <line x1="1255.2" y1="871" x2="1255.2" y2="850" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1255.2" y="830" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1962</text>
+  <text x="1255.2" y="810" font-size="12" fill="#64748b" text-anchor="middle">共享诺贝尔奖</text>
+</svg>

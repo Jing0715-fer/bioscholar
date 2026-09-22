@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电子束源与亮度：四代电子枪的谱系</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">钨丝约 10<tspan dy="-6.5" font-size="13.7">9</tspan><tspan dy="6.5">、LaB</tspan><tspan dy="4.2" font-size="13.7">6</tspan><tspan dy="-4.2"> 约 10</tspan><tspan dy="-6.5" font-size="13.7">10</tspan><tspan dy="6.5">、肖特基 10</tspan><tspan dy="-6.5" font-size="13.7">12</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">13</tspan><tspan dy="6.5">、冷场 10</tspan><tspan dy="-6.5" font-size="13.7">13</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">14</tspan><tspan dy="6.5"> A·m</tspan><tspan dy="-6.5" font-size="13.7">-2</tspan><tspan dy="6.5">·sr</tspan><tspan dy="-6.5" font-size="13.7">-1</tspan><tspan dy="6.5">；能量展宽 2–3 eV 收窄至约 0.3 eV；1 pA 约 6.2×10</tspan><tspan dy="-6.5" font-size="13.7">6</tspan><tspan dy="6.5"> e</tspan><tspan dy="-6.5" font-size="13.7">-</tspan><tspan dy="6.5">/s</tspan></text>
+  <rect x="30" y="132" width="700" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、发射的物理：温度与隧穿的竞争</text>
+  <rect x="61.84" y="181.375" width="166.32" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="145" y="196.5" font-size="12.5" fill="#991b1b" text-anchor="middle" font-weight="700">热发射（理查森-杜什曼）</text>
+  <path d="M 120,262 L 145,294 L 170,262" fill="none" stroke="#dc2626" stroke-width="3.5"/>
+  <path d="M 118,252 a 27,27 0 0 1 54,0" fill="none" opacity="0.65" stroke="#d97706" stroke-width="1.2"/>
+  <path d="M 128,262 a 17,17 0 0 1 34,0" fill="none" opacity="0.45" stroke="#d97706" stroke-width="1.2"/>
+  <line x1="132" y1="252" x2="116" y2="222" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="158" y1="252" x2="174" y2="222" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <circle cx="145" cy="208" r="3" fill="#0369a1"/>
+  <text x="145" y="330" font-size="11.5" fill="#475569" text-anchor="middle">钨丝约 2700 K（近熔点）</text>
+  <text x="145" y="352" font-size="11.5" fill="#475569" text-anchor="middle">功函数 W 约 4.5 eV</text>
+  <text x="145" y="374" font-size="11.5" fill="#64748b" text-anchor="middle">寿命数十至百小时</text>
+  <text x="145" y="404" font-size="12.5" fill="#991b1b" text-anchor="middle" font-weight="700">J = A·T<tspan dy="-4.3" font-size="9.0">2</tspan><tspan dy="4.3">·exp(−W/kT)</tspan></text>
+  <rect x="274.8875" y="181.375" width="180.225" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="365" y="196.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">场发射（Fowler-Nordheim）</text>
+  <rect x="315" y="268" width="18" height="24" fill="#475569"/>
+  <polygon points="333,268 333,292 368,280" fill="#475569"/>
+  <line x1="405" y1="235" x2="405" y2="266" stroke="#475569" stroke-width="4"/>
+  <line x1="405" y1="294" x2="405" y2="325" stroke="#475569" stroke-width="4"/>
+  <line x1="398" y1="246" x2="342" y2="265" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <line x1="398" y1="316" x2="342" y2="297" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <circle cx="368" cy="280" r="3" fill="#0369a1"/>
+  <line x1="372" y1="280" x2="396" y2="280" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="365" y="330" font-size="11.5" fill="#475569" text-anchor="middle">针尖半径约百纳米</text>
+  <text x="365" y="352" font-size="11.5" fill="#475569" text-anchor="middle">强场压薄势垒，室温隧穿</text>
+  <text x="365" y="374" font-size="11.5" fill="#64748b" text-anchor="middle">发射面积亚纳米量级</text>
+  <text x="365" y="404" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">须约 10<tspan dy="-4.3" font-size="9.0">-8</tspan><tspan dy="4.3"> Pa 超高真空</tspan></text>
+  <rect x="505.1875" y="181.375" width="159.625" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="585" y="196.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">肖特基发射（热场协同）</text>
+  <rect x="535" y="268" width="18" height="24" fill="#475569"/>
+  <polygon points="553,268 553,292 588,280" fill="#475569"/>
+  <path d="M 538,254 a 20,20 0 0 1 40,0" fill="none" opacity="0.7" stroke="#d97706" stroke-width="1.3"/>
+  <path d="M 546,260 a 12,12 0 0 1 24,0" fill="none" opacity="0.5" stroke="#d97706" stroke-width="1.3"/>
+  <line x1="625" y1="235" x2="625" y2="266" stroke="#475569" stroke-width="4"/>
+  <line x1="625" y1="294" x2="625" y2="325" stroke="#475569" stroke-width="4"/>
+  <line x1="618" y1="246" x2="562" y2="265" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <line x1="618" y1="316" x2="562" y2="297" stroke="#64748b" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arr-mute)"/>
+  <circle cx="588" cy="280" r="3" fill="#0369a1"/>
+  <line x1="592" y1="280" x2="616" y2="280" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="585" y="330" font-size="11.5" fill="#475569" text-anchor="middle">ZrO 涂覆 W 尖，约 1800 K</text>
+  <text x="585" y="352" font-size="11.5" fill="#475569" text-anchor="middle">热助长 + 场聚焦</text>
+  <text x="585" y="374" font-size="11.5" fill="#64748b" text-anchor="middle">发射稳定，可自动合轴</text>
+  <text x="585" y="404" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">亮度 10<tspan dy="-4.3" font-size="9.0">12</tspan><tspan dy="4.3">–10</tspan><tspan dy="-4.3" font-size="9.0">13</tspan><tspan dy="4.3"> 量级</tspan></text>
+  <text x="50" y="452" font-size="11.5" fill="#475569">电流对温度指数敏感、对功函数更苛刻：LaB<tspan dy="2.5" font-size="8.3">6</tspan><tspan dy="-2.5"> 功函数约 2.7 eV，1800 K 即获约十倍于钨丝的亮度。三种机制的取舍，</tspan></text>
+  <text x="50" y="470" font-size="11.5" fill="#475569">框定了全部商用电子枪的谱系。</text>
+  <rect x="114.0075" y="502.225" width="171.985" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="516.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">肖特基：现代冷冻电镜的标配</text>
+  <rect x="421.7389" y="502.225" width="216.52220000000003" height="19.55" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="530" y="516.14" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">冷场：极限单色，高端 EELS / 低电压</text>
+  <rect x="750" y="132" width="620" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、四代电子枪参数对照</text>
+  <rect x="770" y="192" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="219.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="862" y="192" width="96" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="219.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">钨丝</text>
+  <rect x="958" y="192" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="219.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">LaB<tspan dy="2.6" font-size="8.6">6</tspan></text>
+  <rect x="1068" y="192" width="142" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="219.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">肖特基场发射</text>
+  <rect x="1210" y="192" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="219.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">冷场发射</text>
+  <rect x="770" y="236" width="92" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="258" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">工作温度</text>
+  <rect x="862" y="236" width="96" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="258" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 2700 K</text>
+  <rect x="958" y="236" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="258" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 1800 K</text>
+  <rect x="1068" y="236" width="142" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="258" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 1800 K</text>
+  <rect x="1210" y="236" width="140" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="258" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">室温</text>
+  <rect x="770" y="269" width="580" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="269" width="92" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="291" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">相对亮度</text>
+  <rect x="862" y="269" width="96" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="291" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">1</text>
+  <rect x="958" y="269" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="291" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 10</text>
+  <rect x="1068" y="269" width="142" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="291" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.7" font-size="7.9">3</tspan></text>
+  <rect x="1210" y="269" width="140" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="291" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.7" font-size="7.9">3</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">4</tspan></text>
+  <rect x="770" y="302" width="92" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="324" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">能量展宽</text>
+  <rect x="862" y="302" width="96" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="324" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">2–3 eV</text>
+  <rect x="958" y="302" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="324" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 1–2 eV</text>
+  <rect x="1068" y="302" width="142" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="324" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 0.5–1 eV</text>
+  <rect x="1210" y="302" width="140" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="324" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 0.3 eV</text>
+  <rect x="770" y="335" width="580" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="335" width="92" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="357" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">源尺寸</text>
+  <rect x="862" y="335" width="96" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="357" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">数十 μm</text>
+  <rect x="958" y="335" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="357" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">数 μm</text>
+  <rect x="1068" y="335" width="142" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="357" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">亚 μm</text>
+  <rect x="1210" y="335" width="140" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="357" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 10 nm 级</text>
+  <rect x="770" y="368" width="92" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="390" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">真空要求</text>
+  <rect x="862" y="368" width="96" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="390" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.7" font-size="7.9">-3</tspan><tspan dy="3.7"> Pa</tspan></text>
+  <rect x="958" y="368" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="390" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">10<tspan dy="-3.7" font-size="7.9">-4</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">-5</tspan><tspan dy="3.7"> Pa</tspan></text>
+  <rect x="1068" y="368" width="142" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="390" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">10<tspan dy="-3.7" font-size="7.9">-7</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">-8</tspan><tspan dy="3.7"> Pa</tspan></text>
+  <rect x="1210" y="368" width="140" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="390" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.7" font-size="7.9">-8</tspan><tspan dy="3.7"> Pa</tspan></text>
+  <rect x="770" y="401" width="580" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="770" y="401" width="92" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="816" y="423" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">典型用户</text>
+  <rect x="862" y="401" width="96" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="423" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">教学、常规</text>
+  <rect x="958" y="401" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1013" y="423" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中端多用途</text>
+  <rect x="1068" y="401" width="142" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1139" y="423" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">cryo-EM 标配</text>
+  <rect x="1210" y="401" width="140" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="423" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高端 EELS、低电压</text>
+  <text x="770" y="470" font-size="11.5" fill="#475569">时间相干性由能量展宽 ΔE 决定、空间相干性由有效源尺寸与照明半角决定——二者共同构成第 3 章 CTF 的包络；</text>
+  <text x="770" y="488" font-size="11.5" fill="#475569">这正是冷冻电镜偏爱肖特基枪的原因之一。</text>
+  <rect x="805.4791" y="516.225" width="189.0418" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="900" y="530.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">单色器把 ΔE 再砍至 0.1 eV 以下</text>
+  <rect x="1111.775" y="516.225" width="136.45" height="19.55" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1180" y="530.14" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">代价：损失大部分束流</text>
+  <rect x="30" y="572" width="700" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、亮度：电子枪的硬通货（对数阶梯）</text>
+  <rect x="144.031192" y="614.95" width="211.937616" height="22.099999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="250" y="630.68" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">β = I/(πr<tspan dy="-4.4" font-size="9.4">2</tspan><tspan dy="4.4">·πα</tspan><tspan dy="-4.4" font-size="9.4">2</tspan><tspan dy="4.4">)，单位 A·m</tspan><tspan dy="-4.4" font-size="9.4">-2</tspan><tspan dy="4.4">·sr</tspan><tspan dy="-4.4" font-size="9.4">-1</tspan></text>
+  <rect x="479.93" y="616.225" width="160.14000000000001" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="560" y="630.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">亮度与加速电压近似成正比</text>
+  <line x1="100" y1="930" x2="520" y2="930" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="934" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">8</tspan></text>
+  <line x1="100" y1="883.3333333333334" x2="520" y2="883.3333333333334" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="887.3333333333334" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">9</tspan></text>
+  <line x1="100" y1="836.6666666666666" x2="520" y2="836.6666666666666" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="840.6666666666666" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">10</tspan></text>
+  <line x1="100" y1="790" x2="520" y2="790" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="794" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">11</tspan></text>
+  <line x1="100" y1="743.3333333333334" x2="520" y2="743.3333333333334" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="747.3333333333334" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">12</tspan></text>
+  <line x1="100" y1="696.6666666666666" x2="520" y2="696.6666666666666" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="700.6666666666666" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">13</tspan></text>
+  <line x1="100" y1="650" x2="520" y2="650" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.6"/>
+  <text x="92" y="654" font-size="10.5" fill="#64748b" text-anchor="end">10<tspan dy="-3.6" font-size="7.6">14</tspan></text>
+  <rect x="110" y="883.3333333333334" width="60" height="46.66666666666663" rx="3" fill="#475569" fill-opacity="0.35" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="954" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">钨丝</text>
+  <text x="140" y="873.3333333333334" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">10<tspan dy="-3.7" font-size="7.9">9</tspan></text>
+  <rect x="215" y="836.6666666666666" width="60" height="93.33333333333337" rx="3" fill="#d97706" fill-opacity="0.35" stroke="#d97706" stroke-width="1.8"/>
+  <text x="245" y="954" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">LaB<tspan dy="2.8" font-size="9.0">6</tspan></text>
+  <text x="245" y="826.6666666666666" font-size="11" fill="#d97706" text-anchor="middle" font-weight="700">约 10<tspan dy="-3.7" font-size="7.9">10</tspan></text>
+  <rect x="320" y="743.3333333333334" width="60" height="186.66666666666663" rx="3" fill="#0369a1" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="320" y="696.6666666666666" width="60" height="46.66666666666674" rx="3" fill="#0369a1" fill-opacity="0.15" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="350" y="954" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">肖特基</text>
+  <text x="350" y="686.6666666666666" font-size="11" fill="#0369a1" text-anchor="middle" font-weight="700">10<tspan dy="-3.7" font-size="7.9">12</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">13</tspan></text>
+  <rect x="425" y="696.6666666666666" width="60" height="233.33333333333337" rx="3" fill="#0f766e" fill-opacity="0.35" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="425" y="650" width="60" height="46.66666666666663" rx="3" fill="#0f766e" fill-opacity="0.15" stroke="#0f766e" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="455" y="954" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">冷场发射</text>
+  <text x="455" y="640" font-size="11" fill="#0f766e" text-anchor="middle" font-weight="700">约 10<tspan dy="-3.7" font-size="7.9">13</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">14</tspan></text>
+  <line x1="100" y1="930" x2="520" y2="930" stroke="#475569" stroke-width="2"/>
+  <text x="545" y="700" font-size="11" fill="#475569">亮度守恒：沿无像差光路不增，</text>
+  <text x="545" y="716" font-size="11" fill="#475569">透镜只能重新分配 r 与 α</text>
+  <text x="545" y="780" font-size="11" fill="#475569">STEM 探针电流 I_p ≈ β·(πr_p<tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">)(πα_p</tspan><tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">)：</tspan></text>
+  <text x="545" y="796" font-size="11" fill="#475569">探针越小、会聚角越大，</text>
+  <text x="545" y="812" font-size="11" fill="#475569">能塞进去的电流由 β 拍板</text>
+  <text x="545" y="880" font-size="11" fill="#475569">同一支枪从 100 kV 升到 300 kV，</text>
+  <text x="545" y="896" font-size="11" fill="#475569">亮度提升约三倍</text>
+  <rect x="750" y="572" width="620" height="410" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="594.84" font-size="19" fill="#475569" font-weight="700">四、束流、剂量率与剂量的换算</text>
+  <rect x="947.68006" y="617.25" width="224.63988" height="25.5" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1060" y="635.4" font-size="15" fill="#991b1b" text-anchor="middle" font-weight="700">1 pA ≈ 6.2×10<tspan dy="-5.1" font-size="10.8">6</tspan><tspan dy="5.1"> 个电子每秒</tspan></text>
+  <rect x="838.125" y="689.375" width="43.75" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="860" y="704.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">束流</text>
+  <text x="860" y="728" font-size="10.5" fill="#64748b" text-anchor="middle">数十至数百 pA</text>
+  <rect x="1031.6875" y="689.375" width="56.625" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1060" y="704.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">剂量率</text>
+  <text x="1060" y="728" font-size="10.5" fill="#64748b" text-anchor="middle">1–20 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">·s</tspan><tspan dy="-3.6" font-size="7.6">-1</tspan></text>
+  <rect x="1241.6875" y="689.375" width="56.625" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1270" y="704.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">总剂量</text>
+  <text x="1270" y="728" font-size="10.5" fill="#64748b" text-anchor="middle">预算 50–100 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan></text>
+  <line x1="918" y1="700" x2="975" y2="700" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1138" y1="700" x2="1195" y2="700" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="770" y="770" font-size="11.5" fill="#475569">以直径约 1 μm 的照明区折算：cryo-EM 典型剂量率约 1–20 e<tspan dy="-3.9" font-size="8.3">-</tspan><tspan dy="3.9">/Å</tspan><tspan dy="-3.9" font-size="8.3">2</tspan><tspan dy="3.9">·s</tspan><tspan dy="-3.9" font-size="8.3">-1</tspan><tspan dy="3.9">，</tspan></text>
+  <text x="770" y="788" font-size="11.5" fill="#475569">样品处束流约数十至数百 pA——比材料成像常用的 nA 级低成百上千倍，这正是低剂量技术的含义。</text>
+  <rect x="770" y="850" width="580" height="92" rx="8" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="790" y="880" font-size="13" fill="#134e4a" font-weight="700">算例：60 e<tspan dy="-4.4" font-size="9.4">-</tspan><tspan dy="4.4">/Å</tspan><tspan dy="-4.4" font-size="9.4">2</tspan><tspan dy="4.4"> 总量、10 e</tspan><tspan dy="-4.4" font-size="9.4">-</tspan><tspan dy="4.4">/Å</tspan><tspan dy="-4.4" font-size="9.4">2</tspan><tspan dy="4.4">·s</tspan><tspan dy="-4.4" font-size="9.4">-1</tspan><tspan dy="4.4"> 剂量率</tspan></text>
+  <text x="790" y="902" font-size="11" fill="#475569">即约 6 s 曝光；电影模式切成数十帧，以便做束致运动校正（第 8 章）。剂量与剂量率严格区分：</text>
+  <text x="790" y="918" font-size="11" fill="#475569">总剂量除以帧数得每帧剂量。</text>
+</svg>

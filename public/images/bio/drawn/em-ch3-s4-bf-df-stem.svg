@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">明场、暗场与扫描透射模式：光阑与探测器的收账哲学</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">明场放行中心束（约10mrad内）质厚衬度；暗场只取一支衍射束、中心暗场更优；STEM探针0.05–0.2nm逐点扫描，HAADF亮度约按Z的1.6–2次方增长、不随离焦反号</text>
+  <rect x="30" y="132" width="700" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、明场、暗场与中心暗场：光阑位置的三种选择</text>
+  <rect x="113.0825" y="161.375" width="63.835" height="21.25" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="145" y="176.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">明场 BF</text>
+  <rect x="87" y="190" width="116" height="116" rx="3" fill="#1e293b"/>
+  <circle cx="145" cy="248" r="5" fill="#f8fafc"/>
+  <circle cx="113" cy="216" r="3.5" fill="#e2e8f0"/>
+  <circle cx="177" cy="216" r="3.5" fill="#e2e8f0"/>
+  <circle cx="113" cy="280" r="3.5" fill="#e2e8f0"/>
+  <circle cx="177" cy="280" r="3.5" fill="#e2e8f0"/>
+  <circle cx="145" cy="248" r="15" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  <line x1="145" y1="312" x2="145" y2="320" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="87" y="324" width="116" height="54" fill="#e2e8f0"/>
+  <ellipse cx="145" cy="352" rx="30" ry="14" fill="#1e293b" fill-opacity="0.72"/>
+  <ellipse cx="119" cy="342" rx="12" ry="8" fill="#1e293b" fill-opacity="0.5"/>
+  <text x="50" y="396" font-size="9.5" fill="#475569">放行中心束与近角散射</text>
+  <text x="50" y="409" font-size="9.5" fill="#475569">（合计半角约 10 mrad 内）；厚区、</text>
+  <text x="50" y="422" font-size="9.5" fill="#475569">重元素区显暗</text>
+  <rect x="333.0825" y="161.375" width="63.835" height="21.25" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="365" y="176.5" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">暗场 DF</text>
+  <rect x="307" y="190" width="116" height="116" rx="3" fill="#1e293b"/>
+  <circle cx="365" cy="248" r="5" fill="#f8fafc"/>
+  <circle cx="333" cy="216" r="3.5" fill="#e2e8f0"/>
+  <circle cx="397" cy="216" r="3.5" fill="#e2e8f0"/>
+  <circle cx="333" cy="280" r="3.5" fill="#e2e8f0"/>
+  <circle cx="397" cy="280" r="3.5" fill="#e2e8f0"/>
+  <circle cx="397" cy="216" r="13" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  <line x1="365" y1="312" x2="365" y2="320" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="307" y="324" width="116" height="54" fill="#1e293b"/>
+  <circle cx="375" cy="352" r="9" fill="#f8fafc"/>
+  <circle cx="349" cy="340" r="5" fill="#cbd5e1"/>
+  <text x="270" y="396" font-size="9.5" fill="#475569">光阑移到某衍射斑上：</text>
+  <text x="270" y="409" font-size="9.5" fill="#475569">只有满足该衍射条件的晶区显亮，其余全暗</text>
+  <rect x="536.21625" y="161.375" width="97.5675" height="21.25" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="585" y="176.5" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">中心暗场 CDF</text>
+  <rect x="527" y="190" width="116" height="116" rx="3" fill="#1e293b"/>
+  <circle cx="555" cy="276" r="4" fill="#94a3b8"/>
+  <circle cx="585" cy="248" r="4.5" fill="#f8fafc"/>
+  <circle cx="585" cy="248" r="15" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  <line x1="585" y1="312" x2="585" y2="320" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="527" y="324" width="116" height="54" fill="#1e293b"/>
+  <circle cx="585" cy="352" r="11" fill="#ffffff"/>
+  <circle cx="569" cy="340" r="5" fill="#cbd5e1"/>
+  <text x="490" y="396" font-size="9.5" fill="#475569">束倾转把衍射斑挪到光轴——像差更小、</text>
+  <text x="490" y="409" font-size="9.5" fill="#475569">质量更高的暗场</text>
+  <text x="50" y="430" font-size="10.5" fill="#475569">双束条件下衍衬像最锐利，g·b 不可见判据可实验测定位错滑移系统；等厚、等倾条纹分别标记厚度变化与弯曲梯度。</text>
+  <text x="50" y="445" font-size="10.5" fill="#475569">明场对厚度的宽容度并不大——生物树脂切片经验上控制在约 100 nm 内才保得住信息量。</text>
+  <rect x="750" y="132" width="620" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、STEM：探针逐点扫描，探测器按散射角分区</text>
+  <rect x="830" y="172" width="60" height="8" fill="#475569"/>
+  <line x1="840" y1="182" x2="860" y2="236" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="880" y1="182" x2="860" y2="236" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="815" y1="222" x2="905" y2="222" stroke="#64748b" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="860" y="214" font-size="9.5" fill="#64748b" text-anchor="middle">逐点扫描</text>
+  <circle cx="860" cy="240" r="3.2" fill="#0369a1"/>
+  <rect x="825" y="246" width="70" height="4" fill="#be185d"/>
+  <text x="860" y="268" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">探针 0.05–0.2 nm</text>
+  <line x1="860" y1="252" x2="860" y2="392" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="860" y1="252" x2="839" y2="392" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="860" y1="252" x2="881" y2="392" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="860" y1="252" x2="818" y2="390" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="860" y1="252" x2="902" y2="390" stroke="#dc2626" stroke-width="1.6"/>
+  <circle cx="860" cy="400" r="9" fill="#0369a1" fill-opacity="0.85"/>
+  <circle cx="860" cy="400" r="21" fill="none" stroke="#be185d" stroke-width="8"/>
+  <circle cx="860" cy="400" r="36" fill="none" stroke="#dc2626" stroke-width="10"/>
+  <rect x="770" y="439.59" width="11.55" height="8.82" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="789.55" y="447.78" font-size="10.5" fill="#475569">BF 小于约 10 mrad</text>
+  <rect x="895.01" y="439.59" width="11.55" height="8.82" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="914.56" y="447.78" font-size="10.5" fill="#475569">ADF 30–100 mrad</text>
+  <rect x="1016.66" y="439.59" width="11.55" height="8.82" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1036.21" y="447.78" font-size="10.5" fill="#475569">HAADF 大于 50–100 mrad</text>
+  <text x="960" y="190" font-size="11" fill="#475569">聚光镜与物镜合轴组成探针形成系统，把电子压成直径 0.05–0.2 nm</text>
+  <text x="960" y="206" font-size="11" fill="#475569">（校正后小于 0.1 nm）的探针；每像素驻留从微秒到毫秒、</text>
+  <text x="960" y="222" font-size="11" fill="#475569">探针电流 pA 到几十 pA——扫描参数本身就是剂量分配工具。</text>
+  <rect x="960" y="268" width="390" height="96" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="972" y="288" font-size="10.5" fill="#475569">HAADF 只收大角卢瑟福散射：非相干 Z 衬度，</text>
+  <text x="972" y="303" font-size="10.5" fill="#475569">亮度约按 Z 的 1.6–2 次方增长；原子柱位置即亮度峰，可以直接读、</text>
+  <text x="972" y="318" font-size="10.5" fill="#475569">不会随离焦反号——与相位衬度的「反转与零点」形成鲜明对照。</text>
+  <text x="960" y="390" font-size="10.5" fill="#475569">克鲁 1970 年用环形探测器分辨单个重原子（第 1 章），</text>
+  <text x="960" y="405" font-size="10.5" fill="#475569">正是这一探测哲学的奠基礼。</text>
+  <rect x="30" y="472" width="700" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="494.84" font-size="19" fill="#475569" font-weight="700">三、HAADF 的 Z 衬度与 4D-STEM：重新分配散射预算</text>
+  <rect x="60" y="516" width="250" height="150" rx="3" fill="#1e293b"/>
+  <circle cx="105" cy="545" r="7" fill="#f8fafc"/>
+  <circle cx="105" cy="645" r="7" fill="#f8fafc"/>
+  <circle cx="265" cy="545" r="7" fill="#f8fafc"/>
+  <circle cx="265" cy="645" r="7" fill="#f8fafc"/>
+  <circle cx="185" cy="595" r="7" fill="#f8fafc"/>
+  <circle cx="105" cy="595" r="3.5" fill="#94a3b8"/>
+  <circle cx="265" cy="595" r="3.5" fill="#94a3b8"/>
+  <circle cx="185" cy="545" r="3.5" fill="#94a3b8"/>
+  <circle cx="185" cy="645" r="3.5" fill="#94a3b8"/>
+  <text x="185" y="688" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">HAADF 像示意：重原子亮、轻原子暗</text>
+  <text x="340" y="520" font-size="11" fill="#475569">把环形探测器换成像素阵列探测器，</text>
+  <text x="340" y="536" font-size="11" fill="#475569">在每个探针位置记录一整幅二维衍射图（扫描二维 × 衍射二维），</text>
+  <text x="340" y="552" font-size="11" fill="#475569">即得四维数据集——4D-STEM：</text>
+  <rect x="403.85" y="577.075" width="232.3" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="520" y="589.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">事后重构探测器：同一数据当明场或任意环形</text>
+  <rect x="390.76385000000005" y="615.075" width="258.47229999999996" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="520" y="627.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">叠层成像：迭代相位恢复，轻元素灵敏度超 HAADF</text>
+  <rect x="393.79205" y="653.075" width="252.4159" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="520" y="665.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">差分相衬（DPC）：衍射图重心偏移读出电场磁场</text>
+  <text x="340" y="700" font-size="10.5" fill="#475569">数据量单数据集可达 TB 级，算力即分辨率；</text>
+  <text x="340" y="715" font-size="10.5" fill="#475569">冷冻厚样品的低剂量 STEM 断层是生物侧的特种路线。</text>
+  <rect x="750" y="472" width="620" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="494.84" font-size="19" fill="#475569" font-weight="700">四、BF / DF / HAADF 成像模式对照</text>
+  <rect x="760" y="500" width="104" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">模式</text>
+  <rect x="864" y="500" width="236" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">收集信号与角度</text>
+  <rect x="1100" y="500" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">衬度机制</text>
+  <rect x="760" y="544" width="104" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="561.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">TEM 明场</text>
+  <rect x="864" y="544" width="236" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="561.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">中心束 + 近角（约 10 mrad 内）</text>
+  <rect x="1100" y="544" width="260" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="561.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">质厚为主、相位为辅</text>
+  <rect x="760" y="568" width="600" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="760" y="568" width="104" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="585.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">TEM 暗场</text>
+  <rect x="864" y="568" width="236" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="585.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">单支衍射束（中心暗场更优）</text>
+  <rect x="1100" y="568" width="260" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="585.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">衍射衬度</text>
+  <rect x="760" y="592" width="104" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="609.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">STEM BF</text>
+  <rect x="864" y="592" width="236" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="609.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">内角小于约 10 mrad</text>
+  <rect x="1100" y="592" width="260" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="609.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">相位衬度</text>
+  <rect x="760" y="616" width="600" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="760" y="616" width="104" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="633.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">STEM ADF</text>
+  <rect x="864" y="616" width="236" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="633.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">环形约 30–100 mrad</text>
+  <rect x="1100" y="616" width="260" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="633.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">部分非相干、对缺陷敏感</text>
+  <rect x="760" y="640" width="104" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="657.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">STEM HAADF</text>
+  <rect x="864" y="640" width="236" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="657.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">大于约 50–100 mrad</text>
+  <rect x="1100" y="640" width="260" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="657.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">非相干 Z 衬度，可直读无反号</text>
+  <rect x="760" y="664" width="600" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="760" y="664" width="104" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="681.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">4D-STEM</text>
+  <rect x="864" y="664" width="236" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="982" y="681.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">每点全衍射图</text>
+  <rect x="1100" y="664" width="260" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="681.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">相位恢复 / 叠层 / 差分相衬</text>
+  <text x="760" y="700" font-size="10.5" fill="#475569">分工读表即得：要「形态」用明场，要「取向与缺陷」用暗场/衍衬，要「哪种原子在哪」用 HAADF，</text>
+  <text x="760" y="715" font-size="10.5" fill="#475569">要「轻元素的相位与场」用 4D-STEM。</text>
+</svg>

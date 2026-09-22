@@ -1942,3 +1942,145 @@ Stage Summary:
 - 平台现为十二大学科：142 章 585 小节、教材全文约 111 万字、705 道自测题、333 条术语、29 张新自绘插图
 - 三本新教材：《结构生物学实验方法》（表达系统→纯化→结晶→X射线定相→精修→冷冻电镜→NMR→整合前沿，Scopes/Drenth/Frank/Wüthrich 体系）；《X射线晶体学》（历史→点阵与空间群→晶体生长→衍射几何→数据收集处理→相位两章→建模精修→验证→XFEL/串晶/MicroED 前沿，Rhodes/Drenth/Rupp 体系）；《电子显微学》（电子光学→成像理论→损伤物理→制样两章→单颗粒两章→断层→电子晶体学/MicroED→SEM→分辨率革命与原位前沿，Frank/Reimer/Williams&Carter 体系）
 - 遗留与建议：① 三新学科插图覆盖 9–10/48 小节（关键小节已配图），后续可按 39 系列管线补至更高覆盖；② quiz 聚合顺序 a1→a2→a3→a4 已核对无 id 冲突；③ VLM 恢复后可对 29 张新自绘图做视觉科学性复核；④ web_search 限流期间代理依赖平台口径与可靠文献记忆成稿，重要引文建议后续抽查
+
+---
+Task ID: XC-1
+Agent: xc 教材插图代理
+Task: 《X 射线晶体学》插图补全——ch6-s3 新场景绘制 + 7 张已画场景图注回填（挂载条目）
+
+Work Log:
+- 通读 scripts/draw/lib.ts（B 构建器全 API：text/ctext/etext/wtext/panel/table/tag/legend/spline/axis 等、^{}/_{} 上下标标记、scene 头部自适应）与金标准 scenes/xc/ch6-s4.ts；用 digest 读 x-ray-crystallography-ch6-s3 正文（缩放/各向异性/吸收修正/合并/MTZ 五个 H2 与修正链条表）
+- 新建 scenes/xc/ch6-s3.ts（1400×1000，y≈122 起，4 个 b.panel）：
+  一、缩放模型——三框流程（几百帧 I_raw 至同一把尺）加双轴曲线（I(D)=I(0)e^{−μD} 指数衰减 μ=0.03 示意、B(D)=B₀+βD 线性爬升右轴、1/e=0.368 参考线、按剂量分批虚线与批 1/2/3 标注、μ≈0.02–0.04 MGy^{−1} 注记）；
+  二、各向异性缩放与吸收修正——八瓣玫瑰线花瓣样弥散图（r=44+27cos4θ）、椭球 B 张量（B33=22/B11=38 Å²、主轴差过十几 Å² 按方向截断 tag）、波长特异警告通栏；
+  三、合并与离群剔除——方差加权流程框（w=1/σ²、σ=√(1/Σw)、冗余加倍 σ 缩 1/√2）与 z 检验散点图（±1σ 带、|z|≈6σ 离群红点、4–6σ 阈值与多重校正注记）；
+  四、CC1/2 与三层级输出——分半流程（N 次观测随机对半至 I₁/I₂ 至逐壳层 CC1/2、CC1/2=0.143 即 CC*=0.5 tag）、常规合并/anomalous 保留/质量护栏三卡片、MTZ 内容清单与下游第 7、8 章入口
+- 逐个精读 7 张既有场景（ch2-s2/ch2-s4/ch3-s1/ch3-s3/ch3-s4/ch4-s1/ch4-s2）的 title/subtitle/panel/关键数值，并以 digest 核对各小节 keyPoints，按「左上/右上/左下/右下」方位式学术图注体例撰写 8 条 caption（含 ch6-s3 自身），CJK 字数 192–237 字均落于 150–250 区间
+- mount-xc-a.json 整体重写：原 3 条（ch1-s1/s2/s4）保留在前 + 新 8 条（xc-ch2-s2-bravais-lattices、xc-ch2-s4-macromolecular-crystals、xc-ch3-s1-solubility-behavior、xc-ch3-s3-crystallization-methods、xc-ch3-s4-screening-optimization、xc-ch4-s1-xray-sources、xc-ch4-s2-xray-matter-interaction、xc-ch6-s3-scaling-merging）合并为 11 条，slug 与 mount-xc-b/c/d 零冲突，写入前经脚本校验（slug 唯一、caption 字数区间）
+- 自检：bun -e 场景导入返回 '<?xml' 前缀字符串、长度 24976（OK）；全元素坐标扫描 0≤x≤1400、max-y=954 无越界；JSON 解析合法
+- 纪律遵守：仅新建 ch6-s3.ts 与更新 mount-xc-a.json 两文件（临时草稿脚本用毕即删），未改任何既有场景/挂载/源码，未 build、未 kill、未 git
+
+Stage Summary:
+- xc 插图管线新增 1 张场景（ch6-s3 缩放·吸收修正·合并，与 ch6-s4 质量指标图互补成对）+ 8 条图注挂载条目；mount-xc-a.json 3 条至 11 条
+- 待后续：ch2-s1/ch2-s3/ch3-s2/ch4-s3/ch4-s4/ch5-s4/ch6-s2/ch9-s1/ch11 等小节仍无图，可按同管线续补；29+1 张 xc 系 SVG 建议在 VLM 恢复后做视觉科学性复核
+
+---
+Task ID: EM-1
+Agent: general-purpose
+Task: em 教材插图图注回填——12 张已画场景补写挂载条目（ch4-s1~ch6-s4、ch12-s1~s4）
+
+Work Log:
+- 开工先读金标准：scripts/draw/scenes/em/ch7-s1.ts（中心截面定理，图注与图面的对应方式）与 src/data/draw-em-r4.ts（已挂载 caption 的写法与密度），统计既有挂载图注汉字数约 145–275、总长 312–479，作为 150–250 字目标的标尺。
+- 逐个 Read 12 个场景文件（ch4-s1/s2/s3、ch5-s2/s3/s4、ch6-s1/s4、ch12-s1/s2/s3/s4），梳理各 panel 结构、title/subtitle 与关键数值；回查 src/data/subjects/em/{ch4,ch5,ch6,ch12}.ts 原文核对口径（截面比 20/Z、624 e⁻/Å²、G 值 2.7、Schiff 碱桥约 7 Å、HPF 2100 bar、Tg 136 K/TH 235 K、2.8 Å 晕环、K2 Summit 2012–2013、Volta Danev 2014、Scheffer 2020 等），确保图注与正文零冲突。
+- 撰写 12 条 150–250 汉字中文学术图注（实测 207–249 汉字、总长 363–547），按「标题式总起→面板叙述→关键数值」的金标准结构组织，slug 自起（em-chN-sM-主题英文、全小写连字符）。
+- 交付 1：scripts/tmp/mount-em-a.json 整体重写为 17 条（原 9 条逐字保留 + ch4/ch5/ch6 共 8 条新条目按小节顺序追加）。
+- 交付 2：scripts/tmp/mount-em-b.json 整体重写为 21 条（原 17 条逐字保留 + ch12 共 4 条新条目追加）。
+- 校验：JSON.parse 两文件合法；38 个 sectionId 零重复；slug 全部匹配 ^em-ch\d+-s\d+-[a-z0-9-]+$；既有条目抽样（ch1-s1 尾句、ch7-s2 首句、ch11-s4 尾句）与改前逐字一致；只更新两个 mount JSON 与本 worklog，未改任何场景文件与其他文件，未 build、未 kill、未 git。
+
+Stage Summary:
+- 新增 12 条挂载条目：em-ch4-s1-elastic-inelastic、em-ch4-s2-radiation-damage、em-ch4-s3-cryoprotection、em-ch5-s2-chemical-fixation-sectioning、em-ch5-s3-hpf-freeze-substitution、em-ch5-s4-immunoem-clem、em-ch6-s1-vitrification、em-ch6-s4-air-water-interface、em-ch12-s1-resolution-revolution、em-ch12-s2-phase-plate-aberration、em-ch12-s3-ai-automation、em-ch12-s4-insitu-future。
+- mount-em-a.json 最终 17 条、mount-em-b.json 最终 21 条，合计 38 条；新图注汉字数全部落在 150–250 区间。
+- 移交提示：mount JSON 条目含 sectionId/slug/caption（无 src/credit 字段），供后续挂载管线消费生成 SVG 路径并并入 src/data/draw-em-*.ts。
+
+---
+Task ID: XC-3
+Agent: BioScholar 教材插图绘制代理（xc ch12 前沿章）
+Task: 为《X 射线晶体学》第 12 章（晶体学前沿方法）补绘章节插图（串行晶体学与 XFEL／室温与时间分辨／复杂体系／MicroED 与互补技术）
+
+Work Log:
+- 动笔前通读 scripts/draw/lib.ts 构建库与金标准 scenes/xc/ch10-s1.ts、ch10-s4.ts；逐节 digest x-ray-crystallography-ch12-s1~s4 并核对 src/data/subjects/xc/ch12.ts 正文数值
+- 补充项核验：scenes/xc/ch11-s1.ts 已存在（Ramachandran 图＋clashscore，6-xc 批次），按任务规则跳过
+- 新建 4 个场景文件 scripts/draw/scenes/xc/ch12-{s1,s2,s3,s4}.ts（1400×1000、y 132 起、每图 4 个 b.panel 中文小标题、全部箭头用 b.arrow()、上下标一律 ^{}/_{} 标记）：
+  · ch12-s1 串行晶体学与 XFEL：SASE 出光链＋三数字卡（10–100 fs／10^{12} 光子／9 个数量级）＋装置时间线（LCLS 2009／SACLA／European XFEL 每秒 27000 脉冲）；「衍射先于破坏」三时间带（阿秒吸收－飞秒衍射－数百 fs 级联）＋Neutze 2000／Chapman 2011 PSI／Boutet 2012 1.9 Å 里程碑；GDVN 射流与固定靶硅芯片示意＋命中率标尺（1%–10% 对数十个百分点）；数万–百万图案六步合并管线（Monte Carlo＋post-refinement、R_{split}/CC_{1/2}）＋剂量范式转移（20–30 MGy 预算改「每晶一次曝光」）
+  · ch12-s2 室温与时间分辨：冷冻代价对室温价值双栏（镶嵌度百分之几度涨至十分之几度条形账单）＋RT 实践两条；Laue 白光示意（全谱光束、谐波重叠）＋触发两路＋Srajer 1996／Schlichting 1990 战例＋三条技术债；混合-喷射五步管线（混合器－毫秒扩散－XFEL 每晶一发）＋fs 至 s 对数时标五里程碑（Nogly／Pande／Nango／Tenboer／Kern PSII S_{2} 至 S_{3}）；实验设计三角（触发效率／时间零点／剂量窗口 10^{4}–10^{5} 张）＋四方案卡
+  · ch12-s3 复杂体系：LCP 脂海绵示意（脂相曲线＋膜蛋白成核生长成薄层阵列）＋1996／2007／2012 里程碑（T4L 融合垫脚石、诺奖）；外膜 β 桶圆筒示意＋去垢剂相图要诀＋MDa 标尺条（核糖体 2.4 对 26S 2.5）＋三十年战役时间线＋剪接体让位 cryo-EM；昆虫细胞体内结晶示意（包涵体菱晶＋杆状病毒）＋Coulibaly 2007／Redecke 2013＋三大前沿握手；中子双栏（X 射线盲区对 H/D 可见）＋0.1–1 mm^{3} 与氘代＋六行攻坚策略表
+  · ch12-s4 MicroED 与互补技术：两面账本（10^{3} 倍散射／0.025 Å 近平面 Ewald 球双小图 对 动力学散射 R 约 20%，Palatinus 2017 精修拉回个位数）；工业四步管线＋FDA 2019＋绝对构型；结晶 hit 三岔路（微晶种放大至 20 μm／直接 MicroED／转串晶）；三问决策＋六行互补决策表；无人线站与 AlphaFold－MR＋110 余年光源-探测器-算法三线时间线＋四大边界卡
+- 自检与精修：4 张全部通过 bun 导入自检（<?xml 且 >500 字符，18–27 KB）；另做三轮静态体检——禁字符扫描（Unicode 箭头/emoji/裸上下标为零，发现并修正 mm³ 为 mm^{3}）、面板边界溢出扫描（修正剪接体长 token 断行、体内结晶里程碑行宽）、文字包围盒重叠扫描（修正 ch12-s3 表格行高 22.5 与总纲行距）；sharp 渲染 4 张 PNG 全部成功验证 SVG 良构；VLM 视觉复核因接口限流（429）未执行，与 worklog 既有记录一致
+- 交付：scripts/tmp/mount-xc-d.json（XC-3 专用）整体重写为 4 条（sectionId/slug/caption），图注汉字数 201/239/210/239 均落在 150–250 区间；临时体检脚本与 PNG 已清理
+
+Stage Summary:
+- 产出 4 个新场景文件 + mount-xc-d.json（4 条）；未触碰其他任何文件，未 build、未 kill、未 git
+- slug 清单：xc-ch12-s1-serial-xfel、xc-ch12-s2-rt-timeresolved、xc-ch12-s3-complex-systems、xc-ch12-s4-microed-complement
+- 移交提示：mount-xc-d.json 条目含 sectionId/slug/caption，供后续挂载管线消费生成 SVG 并并入 xc 插图注册表；ch11-s1 已由 6-xc 批次覆盖，无需重画
+
+---
+Task ID: SB-4
+Agent: BioScholar 教材插图绘制代理（sb ch11–12）
+Task: 为《结构生物学实验方法》第 11–12 章补绘 7 张小节插图（共振指定／结构计算与系综／动力学与应用／验证与提交／整合方法／AlphaFold／方法决策与前沿）
+
+Work Log:
+- 动笔前通读 scripts/draw/lib.ts（scene/B 全 API、调色板 C、^{}与_{} 上下标标记）与金标准 scenes/sb/ch11-s1.ts；逐节 bun scripts/draw/digest.ts structural-biology-ch11-s2~s4、ch12-s1~s4，并回读 src/data/subjects/sb/ch11.ts、ch12.ts 原文核对全部图内数值（2.7/3.3/5.0 Å、8000–10000 K、S² 0.8–0.9、kex 100–5000 s⁻¹、clashscore 0.4 Å/98%、30 Å/11.4 Å、GDT_TS 92.4/2 亿条、55/110 MDa、3–4 Å/2.9 Å 等）
+- 新建 7 个场景文件 scripts/draw/scenes/sb/ch11-{s2,s3,s4}.ts 与 ch12-{s1,s2,s3,s4}.ts（1400×1000、y 132 起、每图 4 个 b.panel 中文小标题、箭头一律 b.arrow()、无 emoji 无 Unicode 箭头）：
+  · ch11-s2 三共振串珠相关矩阵（HNCO/HNCA/HNCACB/CBCA(CO)NH 列=核、实心强/空心弱）＋氨基酸指纹与 BMRB 账本＋NOE r^{−6} 对数衰减曲线（强中弱 2.7/3.3/5.0 Å、5–6 Å 上限带、混合时间 80–150 ms）＋短程密集弧对长程虚弧的「局部准全局松」约束锥与 70–80%/两三成占比条＋五类约束表
+  · ch11-s3 五阶段退火流程＋虚拟温度日程曲线（9000 K 高温打散—慢冷—最小化，扭转角空间自由度降两个数量级）＋CANDID 四节点迭代循环（7–8 轮、网络锚定）＋系综叠合 6 条样条（有序区虚框对柔性环弥散）与违约散点（0.3 Å 阈值线、0.55 Å 红点、均方根约 0.05 Å）＋NMR 对晶体学六行对照表
+  · ch11-s4 R1/R2/hetNOE 三参数卡＋模型自由框＋S² 沿序列 44 残基条形图（核心 0.8–0.9/活性环低于 0.4/柔性界虚线）＋CPMG 色散双曲线（Rex 箭头、kex 与 p_{B} 拟合标签、CEST 约 1% 稀态）＋ps 至小时对数时间轴双轨方法带（含 ns–μs 空窗）＋PRE 量程尺（NOE 6 Å 对 15–35 Å）/保护因子 10^{6}–10^{8} 阶梯/应用三卡
+  · ch12-s1 OneDep 五步投递流程＋三类方法投递清单卡（结构因子/EMPIAR/BMRB）＋验证报告红黄绿模拟卡（clashscore 2.1 第 94 百分位、Rama 98.6%/0.12%、红字侧链转角离群）＋四类自查卡＋PDB_REDO 前后 0.238 至 0.218 哑铃图与归档三动因
+  · ch12-s2 SAXS 双对数曲线（Guinier 区底衬、Porod q^{−4}）＋三读数与 0.5 对 0.38 次幂标度律＋0.1–100 nm 距离量程尺六方法横条＋IMP 四步与核孔复合物环形图（55/110 MDa、Alber 2007 约 5 nm、2022 埃级）＋XL-MS 双亚基 30 Å 虚线与 HDX 逐肽保护图谱（表位短条标记）
+  · ch12-s3 AF2 三要素管线（序列、MSA 网格、Evoformer 双轨互喂、结构模块、三轮回收虚线弧）＋pLDDT 0–100 四段色带与分色折线模型＋PAE 8×8 域块热图（域 A/B 括号、误差色标）＋CASP13 约 60 对 CASP14 约 92.4 柱图与生态四条目、实验边界卡
+  · ch12-s4 五问决策树（根框四分支＋两条否决律红卡）＋260 kDa 六聚体酶案例三步分治＋fs 至 s 对数时间轴五快门带（XFEL/Laue/光解/串晶/常规）＋cryo-ET 细胞-FIB 薄片与 MicroED 微米晶＋AI 三工具标签＋2030 展望五行表
+- 自检与精修：7 张全部通过 bun 导入自检（<?xml 前缀、14.7–29.8 KB）；三轮静态体检——禁字符扫描（Unicode 箭头与 emoji 为零）、全文字/矩形坐标越界扫描（无越界）、subtitle 长度核查（逐张压至 74–90 字符）；修正 S² 图标注与条形重叠、短程弧标签高度、AI 标签行与 MicroED 文字碰撞等布局细节
+- 交付：scripts/tmp/mount-sb-d.json（SB-4 专用）整体重写为 7 条（sectionId/slug/caption），图注汉字数 150–198 均落于 150–250 区间，总长与既有 mount-sb-a/b 同量级；每完成 2 张整体重写一次防中断（2、4、6、7 条四轮）
+- 纪律遵守：仅新建 7 个场景文件与 mount-sb-d.json、追加本 worklog；未触碰 index.ts 与任何既有场景/挂载/源码，未 build、未 kill、未 git
+
+Stage Summary:
+- 产出 7 个新场景文件 + mount-sb-d.json（7 条）；slug 清单：sb-ch11-s2-resonance-assignment、sb-ch11-s3-annealing-ensemble、sb-ch11-s4-relaxation-dispersion、sb-ch12-s1-validation-onedep、sb-ch12-s2-integrative-toolbox、sb-ch12-s3-alphafold-confidence、sb-ch12-s4-decision-frontiers
+- 移交提示：mount-sb-d.json 条目含 sectionId/slug/caption，供后续挂载管线消费生成 SVG 并并入 sb 插图注册表；ch11-s1 已由 6-sb 批次覆盖，scenes/sb/index.ts 未改动、由挂载管线统一登记
+
+---
+Task ID: SB-1
+Agent: general-purpose
+Task: sb ch4 插图 4 张 + ch3 已有插图 2 张图注挂载
+
+Work Log:
+- 动笔前逐一 Read：scripts/draw/lib.ts（scene/B 构建器全量 API 与 C 调色板、^{} _{} 上下标、textW 宽度估算）、金标准范例 scenes/sb/ch3-s2.ts、scenes/sb/ch3-s1.ts 与 ch3-s4.ts（任务 B 挂载对象）、src/data/subjects/sb/ch4.ts 全文（4 节定量语句）、scripts/tmp/mount-sb-a.json 既有 7 条、draw-sb-r4.ts 与 gen.ts 挂载管线口径。
+- 新建 scenes/sb/ch4-s1.ts《细胞裂解与样品粗提》：四面板——裂解三军规 tag 行 + 三方法对照表（超声 10 s/50 s 脉冲冰浴 10–20 min、均质 1,000–2,000 psi 2–3 遍 90% 释放、溶菌酶 0.2–1 mg/mL + 1–5 mM EDTA）；裂解液模板 tag + 组分职责表（50 mM Tris/300 mM NaCl/5% 甘油/0.5–1 mM TCEP、PMSF 半衰期 30–110 min）+ 全程 4 °C 低温链（收菌-重悬-裂解-离心-上样 b.arrow 串联）；DNase 酶解与 PEI 絮凝双路线框 + 两级离心（10,000–15,000 g 与 20,000–40,000 g·30–60 min）0.45/0.22 μm 过滤链；2 L 例时间分段条（20/45–60/90 min 合计约 3 h）。
+- 新建 scenes/sb/ch4-s2.ts《多步纯化流程的设计》：五框流程（粗提液-亲和捕获-TEV 逆亲和-IEX-SEC，含咪唑 20/40/250 mM、DBC 5–10 mg/mL、TEV 1:50、pH 偏离 pI 0.5–1、目标峰 100–400 mM、Superdex 200 Increase 10/300）+ b.bars 收率链式核算（100%-70%-56%-47.6%，70%×80%×85%≈48%，1 L 20–50 mg 终得 10–25 mg）+ 浓缩置换面板（MWCO 1/3–1/2、30 kDa 配 10 kDa 管、5–20 mg/mL、内毒素 0.1 EU/mg）+ 四步检查点失败模式表。
+- 新建 scenes/sb/ch4-s3.ts《纯度与均一性的分析》：b.gel 六泳道纯化进程胶（Marker 170–10 kDa 标尺、全样/流穿/亲和洗脱/TEV 消化液/SEC 终纯，目的带 32 kDa 紫色、TEV 27 kDa）+ 考马斯 10–50 ng/银染 1–10 ng；b.axis+b.path 高斯峰分析型 SEC（聚合峰空体积附近 + 主峰表观 95 kDa）与 MALS 双判读 tag（96 kDa 同源三体/64 kDa 二体拉长、误差 3–5%）；PDI 三段色带尺（<0.1/0.1–0.3/>0.3）+ 质谱修饰位移 tag（+16/+42/+1 Da、二硫键每对 −2 Da）；六方法质控对照表 + 均一性四维 + 时间维。
+- 新建 scenes/sb/ch4-s4.ts《稳定性筛选与蛋白保存》：b.curve 双熔解曲线（DSF 染料荧光升、nanoDSF 330/350 比值降，Tm=49 °C 一阶导数峰竖线，约 1 °C/min 25 升至 95 °C、每孔 5 μL）；筛选矩阵 6×4 孔格（pH 4–9 柠檬酸/醋酸/MES/HEPES/Tris × NaCl 50–500 mM、pH 8·Tris 行高亮）+ 激酶实例 b.bars（HEPES 42 °C 对比 Tris+200 mM 精氨酸 49 °C、ΔTm +7 °C 大于 5 °C 阈值）；浓缩前后双 SEC 小图（合格单峰/聚合拖尾）+ 状态定型三件事；冻存四步链（分装 50–100 μL-液氮-−80 °C-4 °C 一次融化）+ 批次放行三件套。
+- 任务 B：为既有 ch3-s1/ch3-s4 场景（未挂载）各写一条 150–250 字学术图注（层析基础 Ve=V0+Kd·Vs、Rs、N=16(tR/wb)²、van Deemter、10⁻⁶ cm²/s、30–150 cm/h、粒径谱系；SEC Kav、Superose 6/Superdex 200/75 分级、0.5–2% 上样、HIC 0.8–1.5 M 硫酸铵、Hofmeister、Cohn 方程）。
+- 每张自检 bun -e 导入：4 个场景全部 OK（19494/16822/28246/23455 字节，均以 <?xml 开头）；另查 Unicode 箭头/emoji 为零、每图恰 4 个 b.panel、无 NaN/undefined、textW 估算无越界（修正 s4 轴左移致 ylabel 越界 4px）、副标题压至 ≤90 字符（89/89/85/88）。
+- mount-sb-a.json 整体重写：7 条原有 + 6 条新条目 = 13 条，JSON 解析通过、sectionId 无重复；slug：sb-ch4-s1-cell-lysis、sb-ch4-s2-three-step-purification、sb-ch4-s3-purity-homogeneity、sb-ch4-s4-stability-screening、sb-ch3-s1-chromatography-basics、sb-ch3-s4-sec-hic。
+- 纪律遵守：仅新建 4 个场景文件 + 重写 mount-sb-a.json + 追加本 worklog；未触碰 index.ts/draw-sb-r4.ts/其他文件；未 build、未 kill、未 git。
+
+Stage Summary:
+- 产出：scripts/draw/scenes/sb/ch4-s1.ts、ch4-s2.ts、ch4-s3.ts、ch4-s4.ts 四张 1400×1000 自绘 SVG 场景（各 4 中文面板、数值全部取自 ch4 正文），scripts/tmp/mount-sb-a.json 13 条挂载条目（含 ch3-s1/ch3-s4 补挂与 ch4 四节新挂）。
+- 待后续管线：scenes/sb/index.ts 登记 6 个新 slug 并 bun scripts/draw/gen.ts sb 生成 public/images/bio/drawn/*.svg，再将 mount 条目并入 draw-sb-r4.ts 挂载表（按任务纪律本任务不执行）。
+
+---
+
+## Task ID: XC-4 —— xc 图注收尾批（5 条挂载条目）
+
+- 日期：2025-09-17（沙箱会话）
+- 任务：为《X 射线晶体学》5 张已画好但缺图注的场景补写挂载条目（只写图注、不画新图）。
+- 产出文件：scripts/tmp/mount-xc-e.json（5 条，仅此一个新文件）。
+- 条目（sectionId → slug）：
+  - x-ray-crystallography-ch4-s4 → xc-ch4-s4-structure-factor（衍射强度与结构因子：√2f/45°、h=2 归零、h+k+l 奇消光、B=8π²⟨u²⟩ 典型 15–50 Å²、到 2 Å 约 5×10⁵ 项）
+  - x-ray-crystallography-ch6-s2 → xc-ch6-s2-profile-fitting（积分与剖面拟合：求和方差 225 vs 拟合 81、信噪比赚约 1.7 倍、Σ(o·p)/Σ(p²)、0.15°/0.2° 约四分之三跨帧）
+  - x-ray-crystallography-ch11-s2 → xc-ch11-s2-density-validation（密度匹配验证：|RSRZ|>2 传唤、B 四判据与 80 Å²、配体四件套与红旗三联、FSC 0.5）
+  - x-ray-crystallography-ch11-s3 → xc-ch11-s3-validation-report（wwPDB 报告三层、百分位分组解读、PDB_REDO 平均 Rfree 再降约 2 个百分点、原始图存档）
+  - x-ray-crystallography-ch11-s4 → xc-ch11-s4-model-bias（MR 相位自我实现、青霉素/准晶/1990 评论三现场、五道防线、免疫系统收束）
+- 写法依据：逐个读取 scenes/xc/ch4-s4、ch6-s2、ch11-s2、ch11-s3、ch11-s4 场景源码（title/subtitle/panel/数值）＋ bun scripts/draw/digest.ts 各节正文摘要；图注风格与密度对齐 src/data/draw-xc-r4.ts 既有 caption（实测参照条目为 152–205 字符）。
+- 自检：bun -e 解析 JSON 通过；5 条 caption 去空格总字符 244–249（全部落在 150–250 区间）；slug 全小写连字符、sectionId 与任务清单逐一对应且无重复；字段三件套（sectionId/slug/caption）完整。
+- 纪律遵守：仅新建 scripts/tmp/mount-xc-e.json 并追加本 worklog；未改任何场景文件与 draw-xc-r4.ts 等其他文件；未 build、未 kill、未 git。
+- 待后续管线：将 mount-xc-e.json 条目并入 draw-xc-r4.ts 挂载表（按任务纪律本任务不执行）。
+
+---
+Task ID: 12-orchestrator
+Agent: 主线（Z.ai Code）
+Task: 导航跳转优化 + 全页面返回按钮 + 热力图空间优化 + 三学科插图补全（470→585 全覆盖）
+
+Work Log:
+- 导航跳转：page.tsx 视图变化 useEffect scrollTo(0,0)；subjects-view 学科列表↔详情互切回顶（activeSubject 状态提升至 store.subjectsDetail）；quiz-view phase（选题/答题/结果）切换回顶
+- 返回上一级：store 新增 viewHistory（上限 30）+ goBack()（历史栈优先，空则回落逻辑父级：reader/quiz→subjects，其余→dashboard）；navigate 同视图重复点击「学科中心」重置为列表；openSubject(id) 保留历史；page.tsx 桌面/移动顶栏 BackButton（dashboard 隐藏；移动端纯图标）；quiz「返回学科」改走 openSubject 精准回详情
+- 热力图优化：activity-heatmap.tsx 重构为可折叠（defaultCollapsed 属性）；折叠态=单行摘要（连续天数+活跃天数+最长）+ 周活动量迷你火花条 + 展开按钮；展开态图例行并入收起按钮；仪表盘默认折叠并去掉描述行/装饰线、卡片 py-4 紧凑化（垂直空间从约 300px 压到约 60px）
+- 插图补全：3 波并行子代理（4-a~4-f、R1/R5/R6/R8、SB-1/2/3/4/5、XC-1/2/3/4、EM-1；多批因 harness 超时中断后按文件产出续批）共绘制 115 张新场景（sb 39、xc 38、em 38）
+- 集成管线：新写 scripts/tmp/integrate.ts（幂等：合并 mount-{subj}-*.json → 重建 scenes/{subj}/index.ts → 追加 draw-{subj}-r4.ts → 调 gen.ts 生成 SVG；修复 sectionId 拆分 ch1-ss1 命名 bug 后改从 draw-r4+mount 推导）；sb/xc/em 各生成 48 张 SVG 零失败
+- 主线亲自补 sb 尾款：ch6-s4 场景（数据处理与质量评估：四步流水线/R 因子三兄弟/消光与孪晶/验收决策表）+ ch5-s2/s3/s4、ch6-s2/s3 共 5 条图注（mount-sb-f.json）
+- 验证：bunx tsc src/ 零错误、bun run lint 零输出；svg-audit.ts 结构审计 115 张全过（XML 声明/1400×1000/无 NaN/无控制字符/无 Unicode 箭头/无 emoji）；coverage 585/585；agent-browser 全链路实测：仪表盘热力图折叠/展开/收起、学科中心→详情→阅读器→返回（精准回详情而非列表）、侧边栏学科中心重置回列表、画廊 622 图含全部新插图、灯箱开关、移动端 390×844 全流程（滚动置顶/返回按钮/新插图渲染）
+- dev server 中途被外部终止一次，已重启（nohup bun run dev）
+
+Stage Summary:
+- 插图覆盖 470/585 → 585/585（100%）：三本新教材 144 小节全部配图，SVG 总数 336→451
+- 导航三件套上线：跳转回顶（全局视图+subjects 内部+quiz 阶段）、全页面返回上一级（历史栈+逻辑父级）、阅读器返回精准回学科详情
+- 仪表盘热力图默认折叠为单行摘要条（含周活动火花条），可一键展开完整 18 周日历
+- 遗留：① VLM 视觉复核持续 429 限流（子代理 bun 导入自检+sharp 渲染抽检已过，VLM 深度复核留给定时任务重试）；② scripts/tmp/mount-*.json 为图注源数据可后续清理；③ integrate.ts/final-check.ts/svg-audit.ts 保留为插图管线工具

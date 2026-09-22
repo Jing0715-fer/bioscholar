@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">模型偏差的历史教训：三个现场与五道防线</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">MR 相位自我实现，R 在降而错误纹丝不动；青霉素 1940 年代、准晶 1984（2011 诺奖）、1990 评论三现场时间轴；五道防线无一单独充分</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、偏差的机制：相位的自我实现与强度阶梯</text>
+  <rect x="56" y="190" width="148" height="48" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="130" y="219" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">① MR 模型带错</text>
+  <rect x="258" y="190" width="162" height="48" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="339" y="219" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">② 相位继承错误</text>
+  <rect x="258" y="286" width="162" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="339" y="315" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">③ 图把错误画成密度</text>
+  <rect x="56" y="286" width="148" height="48" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="130" y="315" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">④ 精修后 R 仍在降</text>
+  <line x1="204" y1="214" x2="258" y2="214" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <line x1="339" y1="238" x2="339" y2="286" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="258" y1="310" x2="204" y2="310" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="130" y1="286" x2="130" y2="238" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="231" y="266" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">自我实现</text>
+  <text x="440" y="200" font-size="10" fill="#1e293b" font-weight="700">偏差强度阶梯（检出难度递增）</text>
+  <rect x="440" y="318" width="234" height="44" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="452" y="335" font-size="9" fill="#065f46" font-weight="700">轻度：侧链被「画胖」，几何与密度指标未必报警</text>
+  <rect x="440" y="268" width="234" height="44" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="452" y="285" font-size="9" fill="#92400e" font-weight="700">中度：整段环区错误构象获看似连续的密度背书</text>
+  <rect x="440" y="218" width="234" height="44" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="452" y="235" font-size="9" fill="#dc2626" font-weight="700">重度：催化残基或配体归属错误，</text>
+  <text x="452" y="246.5" font-size="9" fill="#dc2626" font-weight="700">低分辨率加 MR 双重掩护</text>
+  <text x="46" y="378" font-size="9.5" fill="#475569">按流程走、逐轮精修、R 还在降，错误照样纹丝不动——模型偏差是确认偏误的晶体学版本：不需要任何失误就能发生，伪装成「顺利」。</text>
+  <text x="46" y="398" font-size="9.5" fill="#475569">经验规律：分辨率越低、MR 模型占比越大，风险越高——2.8 Å 以下的纯 MR 结构，重要结论应有实验相位或独立重复的旁证才能安枕。</text>
+  <text x="46" y="418" font-size="9.5" fill="#64748b">检出它的唯一通用手段：把「模型说的」与「数据独立说的」分开——第 10 章交叉验证与本章全部指标的共同逻辑。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、解药清单：五道防线</text>
+  <rect x="726" y="190" width="172" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="217.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">防线</text>
+  <rect x="898" y="190" width="196" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="996" y="217.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">检验方式</text>
+  <rect x="1094" y="190" width="248" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1218" y="217.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">拦截的偏差</text>
+  <rect x="726" y="234" width="172" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="254" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">omit 与 polder 图</text>
+  <rect x="898" y="234" width="196" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="996" y="254" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">无偏密度复核</text>
+  <rect x="1094" y="234" width="248" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1218" y="254" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">幽灵配体与错误构象</text>
+  <rect x="726" y="263" width="616" height="29" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="263" width="172" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="283" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">实验定相复核</text>
+  <rect x="898" y="263" width="196" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="996" y="283" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">SAD 或 MAD 独立相位</text>
+  <rect x="1094" y="263" width="248" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1218" y="283" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">MR 相位继承</text>
+  <rect x="726" y="292" width="172" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="312" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.2" font-size="7.2">free</tspan><tspan dy="-2.2"> 交叉验证</tspan></text>
+  <rect x="898" y="292" width="196" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="996" y="312" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">不可见自由集</text>
+  <rect x="1094" y="292" width="248" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1218" y="312" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">过拟合与参数膨胀</text>
+  <rect x="726" y="321" width="616" height="29" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="321" width="172" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="341" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">PDB_REDO 再精修</text>
+  <rect x="898" y="321" width="196" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="996" y="341" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">机械化重审</text>
+  <rect x="1094" y="321" width="248" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1218" y="341" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">历史欠账与旧权重之弊</text>
+  <rect x="726" y="350" width="172" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812" y="370" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">独立重复解析</text>
+  <rect x="898" y="350" width="196" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="996" y="370" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">不同晶型或同源蛋白</text>
+  <rect x="1094" y="350" width="248" height="29" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1218" y="370" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">系统性偏差</text>
+  <text x="726" y="396" font-size="9.5" fill="#475569">防线越多，偏差的存活空间越小——但没有任何一道防线单独充分，这正是验证体系宁可冗余的原因。实验相位不欠模型任何债：</text>
+  <text x="726" y="408.5" font-size="9.5" fill="#475569">一幅 SAD 图足以撕破 MR 模型在关键位点的自画像。</text>
+  <text x="726" y="422" font-size="9.5" fill="#64748b">日常纪律：机制结论一律 polder 复核；新结构配一版 SAD 印证；投稿前过红色条目；存档原始图与参数。</text>
+  <rect x="30" y="452" width="1340" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、三个历史现场：模型偏差与验证文化的时间轴</text>
+  <line x1="70" y1="592" x2="1300" y2="592" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="113.05000000000001" cy="592" r="6.5" fill="#059669"/>
+  <line x1="113.05000000000001" y1="583" x2="113.05000000000001" y2="562" stroke="#059669" stroke-width="1.7"/>
+  <text x="113.05000000000001" y="542" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1940 年代 青霉素</text>
+  <text x="113.05000000000001" y="522" font-size="12" fill="#64748b" text-anchor="middle">Hodgkin 组：密度终审 β 内酰胺四元环</text>
+  <circle cx="439" cy="592" r="6.5" fill="#d97706"/>
+  <line x1="439" y1="601" x2="439" y2="622" stroke="#d97706" stroke-width="1.7"/>
+  <text x="439" y="642" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1984 准晶</text>
+  <text x="439" y="662" font-size="12" fill="#64748b" text-anchor="middle">Shechtman 观测十重对称电子衍射</text>
+  <circle cx="709.6" cy="592" r="6.5" fill="#dc2626"/>
+  <line x1="709.6" y1="583" x2="709.6" y2="562" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="709.6" y="542" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1990 评论</text>
+  <text x="709.6" y="522" font-size="12" fill="#64748b" text-anchor="middle">Brändén 与 Jones 点名误建结构</text>
+  <circle cx="931" cy="592" r="6.5" fill="#0369a1"/>
+  <line x1="931" y1="601" x2="931" y2="622" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="931" y="642" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1990s 至今 更正潮</text>
+  <text x="931" y="662" font-size="12" fill="#64748b" text-anchor="middle">HIV 蛋白酶细节修正属系统正常运作</text>
+  <circle cx="1115.5" cy="592" r="6.5" fill="#6d28d9"/>
+  <line x1="1115.5" y1="583" x2="1115.5" y2="562" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="1115.5" y="542" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2009 PDB_REDO</text>
+  <text x="1115.5" y="522" font-size="12" fill="#64748b" text-anchor="middle">全库再精修的「行动队」</text>
+  <circle cx="1250.8" cy="592" r="6.5" fill="#059669"/>
+  <line x1="1250.8" y1="601" x2="1250.8" y2="622" stroke="#059669" stroke-width="1.7"/>
+  <text x="1250.8" y="642" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2011 诺奖</text>
+  <text x="1250.8" y="662" font-size="12" fill="#64748b" text-anchor="middle">准晶确立，Shechtman 获奖</text>
+  <text x="70" y="690" font-size="9.5" fill="#475569">双向教训：先验可以错，数据终审；「体面的传统解释」（孪晶、无序、伪对称）未必正确——Pauling 的五重孪晶说曾使争议延续多年，</text>
+  <text x="70" y="703" font-size="9.5" fill="#475569">孪晶检验（H-test）因此被锤炼得格外认真。</text>
+  <rect x="30" y="742" width="1340" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="764.84" font-size="19" fill="#475569" font-weight="700">四、验证文化：结构生物学的免疫系统与库的自我修正</text>
+  <rect x="228.34" y="772.65" width="63.32" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="260" y="785.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">免疫系统</text>
+  <text x="60" y="806" font-size="9.5" fill="#475569">遍布每一步：建模现场的红黄绿球、每轮的 R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 与差值图、本章的报告与百分位；代价低廉</tspan></text>
+  <text x="60" y="819" font-size="9.5" fill="#475569">（分钟级），事后省下以年计的纠错成本。对「自体」的容忍与对「异物」的攻击同样重要：</text>
+  <text x="60" y="832" font-size="9.5" fill="#475569">真实的应变构象可以保留，但要能当庭对质。</text>
+  <rect x="657.01" y="772.65" width="85.98" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="700" y="785.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">库的自我修正</text>
+  <text x="500" y="806" font-size="9.5" fill="#475569">被替换条目标注 obsolete 与 superseded，修正版与历史版并存可溯；</text>
+  <text x="500" y="819" font-size="9.5" fill="#475569">文献的更正与撤稿在库里留下对应记录；PDB_REDO 以批量再精修持续重审全库。</text>
+  <rect x="1091.345" y="772.65" width="97.31" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1140" y="785.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">使用者的半分钟</text>
+  <text x="940" y="806" font-size="9.5" fill="#475569">下载结构时顺手看一眼验证报告与条目历史——是否被替换、</text>
+  <text x="940" y="819" font-size="9.5" fill="#475569">PDB_REDO 是否有再精修版——成本半分钟，避免把一个已被修正的模型写进自己的论文。</text>
+  <rect x="60" y="862" width="1280" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="700" y="889" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">验证不是官僚流程，而是结构生物学的免疫系统——让每一个宣称都有证据负担</text>
+  <text x="70" y="922" font-size="9.5" fill="#475569">从第 3 章长出晶体、第 8 章借来相位、第 9 章搭起模型、第 10 章精修收敛，到本章的验证审判——方法论闭环已然完整；第 12 章走向串晶与 XFEL、冷冻电镜与 AlphaFold，无论技术如何更替，「让数据说话、让验证审判」的纪律一以贯之。</text>
+  <text x="700" y="956" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">结构是假设：发表不是终点，验证与再验证才是结构科学的常态。</text>
+</svg>

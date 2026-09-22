@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">低温晶体学与辐射损伤：100 K、玻璃化与剂量预算</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">Teng1990开创100K冷却、耐受剂量提高约两个数量级；甘油15–25%、冰环3.67/1.92Å；Henderson20MGy与实验上限30MGy；二硫键2–5MGy先断</text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、100 K 冷却：冷流横截面与双重收益</text>
+  <line x1="262" y1="165" x2="262" y2="218" stroke="#475569" stroke-width="2.5"/>
+  <line x1="298" y1="165" x2="298" y2="218" stroke="#475569" stroke-width="2.5"/>
+  <line x1="262" y1="165" x2="298" y2="165" stroke="#475569" stroke-width="2.5"/>
+  <line x1="266" y1="182" x2="294" y2="182" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="266" y1="196" x2="294" y2="196" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="326" y="188" font-size="9.5" fill="#64748b">液氮冷流口</text>
+  <text x="326" y="210" font-size="10" fill="#075985" font-weight="700">100 K 液氮流</text>
+  <text x="326" y="228" font-size="9.5" fill="#64748b">（控温 ±0.1 K）</text>
+  <line x1="264" y1="224" x2="264" y2="276" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="280" y1="224" x2="280" y2="276" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="296" y1="224" x2="296" y2="276" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <path d="M 258,300 Q 240,330 252,368" fill="none" stroke="#0369a1" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <path d="M 302,300 Q 320,330 308,368" fill="none" stroke="#0369a1" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <text x="196" y="356" font-size="9.5" fill="#075985" text-anchor="middle">冷流包裹晶体</text>
+  <ellipse cx="280" cy="310" rx="38" ry="28" fill="none" stroke="#64748b" stroke-width="1.6"/>
+  <polygon points="280,296 294,310 280,324 266,310" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="280" y="352" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">晶体</text>
+  <text x="322" y="292" font-size="9.5" fill="#64748b" text-anchor="end">尼龙环</text>
+  <circle cx="247" cy="293" r="2.2" fill="#94a3b8"/>
+  <circle cx="313" cy="293" r="2.2" fill="#94a3b8"/>
+  <circle cx="245" cy="327" r="2.2" fill="#94a3b8"/>
+  <circle cx="315" cy="327" r="2.2" fill="#94a3b8"/>
+  <rect x="152.859" y="301.075" width="50.282" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="178" y="313.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">100 K</text>
+  <line x1="316" y1="322" x2="368" y2="396" stroke="#475569" stroke-width="2.5"/>
+  <rect x="346" y="396" width="44" height="12" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="368" y="424" font-size="9.5" fill="#64748b" text-anchor="middle">测角仪</text>
+  <text x="440" y="190" font-size="10.5" fill="#475569">Teng（1990）首次报道：</text>
+  <text x="440" y="205" font-size="10.5" fill="#475569">调整母液组成后直接投入液氮冷却，</text>
+  <text x="440" y="220" font-size="10.5" fill="#475569">蛋白晶体衍射显著改善；</text>
+  <text x="440" y="235" font-size="10.5" fill="#475569">Hope 等同期发展成套低温操作器件并推动普及。</text>
+  <text x="440" y="252" font-size="10.5" fill="#475569">低温收益其一：热振动幅度减小</text>
+  <text x="440" y="267" font-size="10.5" fill="#475569">（Debye-Waller 因子），高分辨率反射增强。</text>
+  <text x="440" y="292" font-size="10.5" fill="#475569">其二：</text>
+  <text x="440" y="307" font-size="10.5" fill="#475569">辐射损伤被冻结——X 射线电离水分子产生的自由基，</text>
+  <text x="440" y="322" font-size="10.5" fill="#475569">其扩散与攻击在 100 K 下近乎停摆，</text>
+  <text x="440" y="337" font-size="10.5" fill="#475569">可耐受剂量较室温提高约两个数量级。</text>
+  <text x="440" y="368" font-size="10.5" fill="#475569">绝大多数蛋白晶体在 100 K 液氮气流下收集；</text>
+  <text x="440" y="383" font-size="10.5" fill="#475569">恒温比绝对到 100 K 更重要——温度波动造成的晶格应变会毁掉数据的可合并性。</text>
+  <text x="60" y="480" font-size="10.5" fill="#475569">冷却使晶格常数收缩约 0.2–2% 且各向异性：同一晶体的室温与低温数据不能直接合并；冷却瞬间的各向不同步重排，</text>
+  <text x="60" y="495" font-size="10.5" fill="#475569">以弹性应变或镶嵌度增高的形式被吸收——原本锐利的晶体冷后斑点变弧，多半是各向异性收缩的账单。</text>
+  <text x="60" y="510" font-size="10.5" fill="#475569">低温收缩与损伤膨胀方向相反、成因不同。</text>
+  <rect x="30" y="562" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="584.84" font-size="19" fill="#475569" font-weight="700">二、冷冻保护与玻璃化检查</text>
+  <text x="50" y="606" font-size="11" fill="#1e293b" font-weight="700">逐步置换：梯度提高保护剂浓度</text>
+  <ellipse cx="80" cy="655" rx="24" ry="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="80,647 86,655 80,663 74,655" fill="#ffffff" stroke="#4c1d95" stroke-width="1.4"/>
+  <text x="80" y="690" font-size="10" fill="#475569" text-anchor="middle">10%</text>
+  <line x1="107" y1="648" x2="123" y2="648" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <ellipse cx="150" cy="655" rx="24" ry="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="150,647 156,655 150,663 144,655" fill="#ffffff" stroke="#4c1d95" stroke-width="1.4"/>
+  <text x="150" y="690" font-size="10" fill="#475569" text-anchor="middle">15%</text>
+  <line x1="177" y1="648" x2="193" y2="648" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <ellipse cx="220" cy="655" rx="24" ry="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="220,647 226,655 220,663 214,655" fill="#ffffff" stroke="#4c1d95" stroke-width="1.4"/>
+  <text x="220" y="690" font-size="10" fill="#475569" text-anchor="middle">20%</text>
+  <line x1="247" y1="648" x2="263" y2="648" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <ellipse cx="290" cy="655" rx="24" ry="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="290,647 296,655 290,663 284,655" fill="#ffffff" stroke="#4c1d95" stroke-width="1.4"/>
+  <text x="290" y="690" font-size="10" fill="#475569" text-anchor="middle">25%</text>
+  <text x="50" y="712" font-size="10.5" fill="#475569">每步停留覆盖平衡时间（数十秒至两分钟）、3–5 步到位；</text>
+  <text x="50" y="726" font-size="10.5" fill="#475569">甘油等渗透型小分子扩散进晶体约需数十秒到数分钟，</text>
+  <text x="50" y="740" font-size="10.5" fill="#475569">PEG 类几乎不渗透、靠胞外置换。</text>
+  <text x="50" y="768" font-size="10.5" fill="#475569">渗透冲击的指纹：斑点拉长成弧甚至分裂、</text>
+  <text x="50" y="782" font-size="10.5" fill="#475569">镶嵌度陡增而不见冰环——此时先怀疑渗透而不是结冰。</text>
+  <text x="50" y="796" font-size="10.5" fill="#475569">四大常客：甘油 15–25%、乙二醇、MPD、低分子量 PEG 400。</text>
+  <text x="50" y="824" font-size="10.5" fill="#475569">化学相似原则：硫酸铵条件首选甘油与乙二醇；</text>
+  <text x="50" y="838" font-size="10.5" fill="#475569">PEG 条件常提高 PEG 400 梯度或添 MPD；</text>
+  <text x="50" y="852" font-size="10.5" fill="#475569">柠檬酸盐条件对甘油耐受好。</text>
+  <text x="50" y="866" font-size="10.5" fill="#475569">见冰环：更高浓度重淬或退火去除；</text>
+  <text x="50" y="880" font-size="10.5" fill="#475569">表面霜可在液氮下以冷气流拂拭（有风险）；</text>
+  <text x="50" y="894" font-size="10.5" fill="#475569">内部结冰只能提高浓度重淬；</text>
+  <text x="50" y="908" font-size="10.5" fill="#475569">低角背景抬升而无锐环 = 无定形冰或母液层增厚——先分类再动手。</text>
+  <text x="525" y="606" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">玻璃化检查：衍射图上的「环」与「斑」</text>
+  <circle cx="525" cy="705" r="92" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <circle cx="525" cy="705" r="40" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <circle cx="525" cy="705" r="72" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <circle cx="466" cy="726" r="2.4" fill="#6d28d9"/>
+  <circle cx="467" cy="688" r="2.4" fill="#6d28d9"/>
+  <circle cx="495" cy="750" r="2.4" fill="#6d28d9"/>
+  <circle cx="538" cy="768" r="2.4" fill="#6d28d9"/>
+  <circle cx="568" cy="752" r="2.4" fill="#6d28d9"/>
+  <circle cx="588" cy="688" r="2.4" fill="#6d28d9"/>
+  <circle cx="490" cy="670" r="2.4" fill="#6d28d9"/>
+  <circle cx="520" cy="650" r="2.4" fill="#6d28d9"/>
+  <circle cx="555" cy="660" r="2.4" fill="#6d28d9"/>
+  <circle cx="575" cy="680" r="2.4" fill="#6d28d9"/>
+  <circle cx="470" cy="695" r="2.4" fill="#6d28d9"/>
+  <circle cx="515" cy="720" r="2.4" fill="#6d28d9"/>
+  <circle cx="535" cy="690" r="2.4" fill="#6d28d9"/>
+  <circle cx="545" cy="725" r="2.4" fill="#6d28d9"/>
+  <circle cx="455" cy="745" r="2.4" fill="#6d28d9"/>
+  <circle cx="525" cy="705" r="7" fill="#1e293b"/>
+  <line x1="560" y1="685" x2="592" y2="674" stroke="#dc2626" stroke-width="1"/>
+  <line x1="587" y1="660" x2="592" y2="652" stroke="#dc2626" stroke-width="1"/>
+  <text x="598" y="648" font-size="9.5" fill="#991b1b" font-weight="700">1.92 Å 立方冰</text>
+  <text x="598" y="670" font-size="9.5" fill="#991b1b" font-weight="700">3.67 Å 六方冰</text>
+  <text x="360" y="820" font-size="10.5" fill="#475569">完全玻璃化的冰相无衍射环。</text>
+  <text x="360" y="834" font-size="10.5" fill="#475569">冰晶衍射 = 以直射斑为心的锐利同心环，整环均匀、</text>
+  <text x="360" y="848" font-size="10.5" fill="#475569">不随晶体旋转改变；蛋白反射是离散斑点、</text>
+  <text x="360" y="862" font-size="10.5" fill="#475569">逐帧换位——「环」与「斑」的区分在衍射图上现场完成。</text>
+  <text x="360" y="876" font-size="10.5" fill="#475569">表面霜给出同样锐利但更弥散的环；</text>
+  <text x="360" y="890" font-size="10.5" fill="#475569">内部结冰与表面霜的处置不同，先分类再动手。</text>
+  <rect x="710" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">三、Henderson 剂量极限与损伤次序</text>
+  <text x="730" y="176" font-size="10.5" fill="#475569">辐射损伤的物理学由剂量刻画（单位质量吸收的能量，Gy）。Henderson（1995）</text>
+  <text x="730" y="190" font-size="10.5" fill="#475569">经典估算给出蛋白晶体可耐受剂量上限约 2×10<tspan dy="-3.6" font-size="7.6">7</tspan><tspan dy="3.6"> Gy（20 MGy）；Owen 等（2006）</tspan></text>
+  <text x="730" y="204" font-size="10.5" fill="#475569">把「衍射强度衰减约 30%」的经验上限放宽至约 30 MGy。剂量由 RADDOSE-3D 预计算：输入晶体尺寸、成分与光束能谱通量，</text>
+  <text x="730" y="218" font-size="10.5" fill="#475569">输出每帧吸收剂量。</text>
+  <line x1="740" y1="292" x2="1330" y2="292" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="745" y1="292" x2="745" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="745" y="314" font-size="10" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="840" y1="292" x2="840" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="840" y="314" font-size="10" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="935" y1="292" x2="935" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="935" y="314" font-size="10" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="1030" y1="292" x2="1030" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="1030" y="314" font-size="10" fill="#64748b" text-anchor="middle">15</text>
+  <line x1="1125" y1="292" x2="1125" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="1125" y="314" font-size="10" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="1220" y1="292" x2="1220" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="1220" y="314" font-size="10" fill="#64748b" text-anchor="middle">25</text>
+  <line x1="1315" y1="292" x2="1315" y2="298" stroke="#475569" stroke-width="1.8"/>
+  <text x="1315" y="314" font-size="10" fill="#64748b" text-anchor="middle">30</text>
+  <text x="1035" y="336" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">剂量（MGy）</text>
+  <rect x="1315" y="246" width="35" height="46" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="1"/>
+  <text x="1332" y="272" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">超限</text>
+  <line x1="1125" y1="238" x2="1125" y2="292" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="1125" y="230" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">Henderson 1995：20 MGy</text>
+  <line x1="1315" y1="238" x2="1315" y2="292" stroke="#be185d" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="1348" y="230" font-size="9.5" fill="#831843" text-anchor="end" font-weight="700">Owen 2006：约 30 MGy</text>
+  <rect x="783" y="285" width="57" height="7" fill="#dc2626" fill-opacity="0.8"/>
+  <text x="811" y="262" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">二硫键断裂（2–5 MGy）</text>
+  <line x1="811" y1="268" x2="811" y2="283" stroke="#dc2626" stroke-width="1" stroke-dasharray="3 3"/>
+  <polygon points="935,282 940,288 935,294 930,288" fill="#be185d"/>
+  <text x="935" y="262" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">金属中心失序（数 MGy 起）</text>
+  <line x1="935" y1="268" x2="935" y2="280" stroke="#be185d" stroke-width="1" stroke-dasharray="3 3"/>
+  <polygon points="1060,282 1065,288 1060,294 1055,288" fill="#d97706"/>
+  <text x="1060" y="248" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">Glu/Asp 去羧（更高剂量）</text>
+  <line x1="1060" y1="254" x2="1060" y2="280" stroke="#d97706" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="730" y="352" font-size="10.5" fill="#475569">镶嵌度随剂量近似线性增长：每吸收约 10 MGy 上升约 0.05–0.1°（体系依赖）；晶格常数膨胀约 0.1–0.5%、</text>
+  <text x="730" y="366" font-size="10.5" fill="#475569">整体强度衰减 I/I<tspan dy="2.3" font-size="7.6">0</tspan><tspan dy="-2.3">——逐帧镶嵌度与强度衰减曲线并列为本底监测双指标。</tspan></text>
+  <rect x="730" y="388" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="415.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">损伤类型</text>
+  <rect x="848" y="388" width="152" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="415.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">阈值或表现</text>
+  <rect x="1000" y="388" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1070" y="415.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">检测手段</text>
+  <rect x="1140" y="388" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="415.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">对策</text>
+  <rect x="730" y="432" width="118" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="449.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">二硫键断裂</text>
+  <rect x="848" y="432" width="152" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="449.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">2–5 MGy</text>
+  <rect x="1000" y="432" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1070" y="449.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">差值密度图</text>
+  <rect x="1140" y="432" width="210" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="449.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">限总剂量、降通量</text>
+  <rect x="730" y="456" width="620" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="456" width="118" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="473.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">金属中心失序</text>
+  <rect x="848" y="456" width="152" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="473.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">数 MGy 起</text>
+  <rect x="1000" y="456" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1070" y="473.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">密度形状异常</text>
+  <rect x="1140" y="456" width="210" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="473.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">谨慎解释活性位点</text>
+  <rect x="730" y="480" width="118" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="497.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Glu/Asp 去羧</text>
+  <rect x="848" y="480" width="152" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="497.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">更高剂量</text>
+  <rect x="1000" y="480" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1070" y="497.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">侧链密度消失</text>
+  <rect x="1140" y="480" width="210" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="497.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">同上</text>
+  <rect x="730" y="504" width="620" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="504" width="118" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="789" y="521.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">全局强度衰减</text>
+  <rect x="848" y="504" width="152" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="521.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">30 MGy 处降 30%</text>
+  <rect x="1000" y="504" width="140" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1070" y="521.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">逐帧强度曲线</text>
+  <rect x="1140" y="504" width="210" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="521.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">collect-and-destroy</text>
+  <rect x="710" y="562" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="584.84" font-size="19" fill="#475569" font-weight="700">四、损伤管理：逐区扫描、多晶合并与退火</text>
+  <rect x="752" y="618" width="126" height="78" rx="6" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="794" y1="618" x2="794" y2="696" stroke="#6d28d9" stroke-width="1.2" opacity="0.6"/>
+  <line x1="836" y1="618" x2="836" y2="696" stroke="#6d28d9" stroke-width="1.2" opacity="0.6"/>
+  <line x1="752" y1="657" x2="878" y2="657" stroke="#6d28d9" stroke-width="1.2" opacity="0.6"/>
+  <rect x="752" y="618" width="42" height="39" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="724" y1="638" x2="770" y2="638" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="737" y="626" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">微束</text>
+  <line x1="798" y1="637" x2="830" y2="637" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
+  <text x="880" y="610" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">逐区扫描</text>
+  <text x="726" y="722" font-size="10.5" fill="#475569">collect-and-destroy：高亮度微束对较大晶体逐区扫描，</text>
+  <text x="726" y="736" font-size="10.5" fill="#475569">每个区域只承受部分剂量，靠软件拼接各楔数据；</text>
+  <text x="726" y="750" font-size="10.5" fill="#475569">极端形态是「每晶一小楔」的多晶合并。</text>
+  <text x="726" y="764" font-size="10.5" fill="#475569">同等总剂量下，剂量率高低在 100 K 的损伤差异有限</text>
+  <text x="726" y="778" font-size="10.5" fill="#475569">（自由基扩散已冻结）；</text>
+  <text x="726" y="792" font-size="10.5" fill="#475569">室温串晶学中剂量率效应显著——XFEL「先破坏后衍射」的物理窗口。</text>
+  <polygon points="1090,621 1099,630 1090,639 1081,630" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="1140,621 1149,630 1140,639 1131,630" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="1190,621 1199,630 1190,639 1181,630" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="1240,621 1249,630 1240,639 1231,630" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <polygon points="1290,621 1299,630 1290,639 1281,630" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1190" y="660" font-size="9.5" fill="#475569" text-anchor="middle">数十颗同条件小晶 · 每颗各收一小楔（5–10°）</text>
+  <line x1="1090" y1="642" x2="1138" y2="682" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="3 3" marker-end="url(#arr-ink)"/>
+  <line x1="1140" y1="642" x2="1154" y2="682" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="3 3" marker-end="url(#arr-ink)"/>
+  <line x1="1190" y1="642" x2="1170" y2="682" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="3 3" marker-end="url(#arr-ink)"/>
+  <line x1="1240" y1="642" x2="1186" y2="682" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="3 3" marker-end="url(#arr-ink)"/>
+  <line x1="1290" y1="642" x2="1202" y2="682" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="3 3" marker-end="url(#arr-ink)"/>
+  <rect x="1142.92" y="693.8" width="94.16" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1190" y="708.32" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">统一标定合并</text>
+  <text x="1060" y="745" font-size="10.5" fill="#475569">多晶合并：从数十颗同条件小晶各收 5–10°，</text>
+  <text x="1060" y="759" font-size="10.5" fill="#475569">统一标定下合并、成为完整数据集；</text>
+  <text x="1060" y="773" font-size="10.5" fill="#475569">微焦点端站与自动换晶机械手使其工业化。</text>
+  <text x="726" y="806" font-size="11" fill="#1e293b" font-weight="700">退火（annealing）</text>
+  <rect x="802.92" y="821.8" width="94.16" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="850" y="836.32" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">短暂回升温度</text>
+  <rect x="981.46" y="821.8" width="57.08" height="20.4" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1010" y="836.32" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">再冷却</text>
+  <line x1="903" y1="832" x2="975" y2="832" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <path d="M 1041,846 A 121 40 0 0 1 799,846" fill="none" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <text x="920" y="906" font-size="9.5" fill="#64748b" text-anchor="middle">局部重溶消除晶格应力</text>
+  <text x="1120" y="812" font-size="10.5" fill="#475569">退火：冷流阻断—恢复循环，</text>
+  <text x="1120" y="826" font-size="10.5" fill="#475569">部分晶体镶嵌度可显著回落；</text>
+  <text x="1120" y="840" font-size="10.5" fill="#475569">成功率不保证但成本极低。重溶可能溶解表面、</text>
+  <text x="1120" y="854" font-size="10.5" fill="#475569">放大孪晶——宜在晶体备份到位后进行。</text>
+  <text x="726" y="926" font-size="10.5" fill="#475569">损伤不可逆但可预算：与其祈祷不如记账——把每颗晶体的总剂量写进数据集元数据；第 7、8 章解释活性位点（二硫键、金属中心）</text>
+  <text x="726" y="940" font-size="10.5" fill="#475569">的电子密度时保持戒心。</text>
+  <text x="700" y="972" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="600">低温给出时间窗，剂量决定总信息量，几何决定信息落在哪——三者在第 4 节汇合为可量化、可复盘的处理流水线</text>
+</svg>

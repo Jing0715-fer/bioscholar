@@ -1,0 +1,27 @@
+[
+  {
+    "sectionId": "x-ray-crystallography-ch4-s4",
+    "slug": "xc-ch4-s4-structure-factor",
+    "caption": "结构因子 F(h)＝Σfⱼ·exp(2πi(h·rⱼ)) 是原子散射波相干叠加：两原子模型（B 居 x＝1/4）实算 h＝1 得 |F|＝√2f（相位 45°）、h＝2 反相归零、h＝4 同相达 2f——振幅消长编码原子位置。实测只记 I∝|F|²，开方得 |F|、相位丢失；体心格子 h+k+l 为奇恒消光，螺旋轴与滑移面另留指纹，供空间群判定。温度因子 exp(−B sin²θ/λ²) 中 B＝8π²⟨u²⟩，蛋白典型 15–50 Å²，B＝20 Å² 即均方根位移约 0.5 Å；ρ(x) 与 F(h) 互为傅里叶变换对，到 2 Å 约 5×10⁵ 项。"
+  },
+  {
+    "sectionId": "x-ray-crystallography-ch6-s2",
+    "slug": "xc-ch6-s2-profile-fitting",
+    "caption": "积分盒围绕预测中心记账：盒内像素扣除边缘环带背景后求和，边长约取斑点半径的 2–3 倍。5×5 盒、背景每像素 10 计数（涨落 3）时求和方差 225，剖面拟合集中权重到约 9 个显著像素、方差降至约 81——信噪比立赚约 1.7 倍且斑越弱红利越肥；拟合强度＝Σ(o·p)/Σ(p²)（Kabsch 2010），模板由中强斑分区平均而得，埃瓦尔德球弯曲使剖面随位置漂移、XDS 按九宫格分区。部分反射按部分性跨帧拼合：0.15° 镶嵌配 0.2° 帧宽约四分之三跨帧，σ 依方差传播合成；过载斑按剖面外推，积分输出未缩放强度与 σ。"
+  },
+  {
+    "sectionId": "x-ray-crystallography-ch11-s2",
+    "slug": "xc-ch11-s2-density-validation",
+    "caption": "密度匹配验证逐残基对账：RSRZ 按残基类型与分辨率标准化，|RSRZ| 高于 2 即传唤——成串报警多为 register 错位、零星尖峰逐个调图（EDS 自动计算）；RSCC 管形状、RSR 管失配。B 因子四判据：主链无锯齿、核心到表面平滑升高、与 Wilson B 同量级、单原子逾 80 Å² 即信号弥散；锯齿、断崖、全线过平为病理指纹。配体四件套（RSRZ、llgf、polder、occupancy·B 终审）：密度弱而 occupancy 报 1、B 反低于周边即红旗三联；map-model FSC 降至 0.5 判模型分辨率。"
+  },
+  {
+    "sectionId": "x-ray-crystallography-ch11-s3",
+    "slug": "xc-ch11-s3-validation-report",
+    "caption": "wwPDB 验证报告（Read 2011；OneDep 2012 起强制生成）三层：首页给绝对值加百分位（Rwork/Rfree 0.19/0.23、clashscore 3.2 居前 5%）、outlier 清单点名到残基、数据质量节看完整度；百分位按分辨率分组——clashscore 好于 95% 同期即前 5%。PDB_REDO（Joosten 2009 起）全库再精修：平均 Rfree 再降约 2 个百分点、Ramachandran/rotamer outlier 清零——入库不等于定稿；原始衍射图存档使每步可重走。"
+  },
+  {
+    "sectionId": "x-ray-crystallography-ch11-s4",
+    "slug": "xc-ch11-s4-model-bias",
+    "caption": "模型偏差是确认偏误的晶体学版本：MR 模型带错→相位继承→差值图把错误画成密度→精修后 R 仍在降，错误纹丝不动。三个历史现场：1940 年代青霉素密度终审 β 内酰胺四元环；1984 年 Shechtman 准晶（2011 诺奖）破「体面解释」，Pauling 孪晶说争议多年；1990 年 Brändén 与 Jones 评论催生验证文化。五道防线（omit/polder、实验定相、Rfree 交叉验证、PDB_REDO、独立重复）无一单独充分；验证是结构生物学的免疫系统，库以 obsolete/superseded 自我修正。"
+  }
+]

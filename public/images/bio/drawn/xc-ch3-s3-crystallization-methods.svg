@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">结晶的实验方法：五种扩散路线</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">悬滴1–2μL悬于0.5–1mL池液上方；坐滴0.2–1μL宜自动化；微批量油封控速；微透析以MWCO膜阶梯平衡；自由界面双向扩散成峰；Mosquito/Gryphon以20–200nL</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">液滴把搜索通量提高一至两个数量级</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、悬滴蒸气扩散：经典主力</text>
+  <line x1="120" y1="240" x2="120" y2="470" stroke="#475569" stroke-width="2.5"/>
+  <line x1="120" y1="470" x2="360" y2="470" stroke="#475569" stroke-width="2.5"/>
+  <line x1="360" y1="240" x2="360" y2="470" stroke="#475569" stroke-width="2.5"/>
+  <rect x="126" y="390" width="228" height="74" fill="#e0f2fe"/>
+  <line x1="126" y1="390" x2="354" y2="390" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="240" y="432" font-size="10.5" fill="#475569" text-anchor="middle">池液 0.5–1 mL（沉淀剂＋缓冲液）</text>
+  <rect x="80" y="228" width="330" height="10" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <rect x="112" y="238" width="14" height="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.2"/>
+  <rect x="354" y="238" width="14" height="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.2"/>
+  <text x="240" y="216" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">硅化盖片＋真空脂密封</text>
+  <path d="M 200,238 Q 200,280 240,280 Q 280,280 280,238 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="330" y1="252" x2="284" y2="254" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <text x="300" y="240" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">悬滴 1–2 μL</text>
+  <text x="240" y="190" font-size="9.5" fill="#64748b" text-anchor="middle">蛋白 1 μL＋池液 1 μL</text>
+  <line x1="205" y1="288" x2="152" y2="380" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-acc)"/>
+  <line x1="275" y1="288" x2="328" y2="380" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-acc)"/>
+  <text x="240" y="340" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">水蒸气迁移（蒸汽压差驱动）</text>
+  <text x="80" y="508" font-size="10" fill="#475569">池液体积约为液滴的千倍量级——平衡终点由池液「说了算」，</text>
+  <text x="80" y="522" font-size="10" fill="#475569">而非液滴反向影响池液。</text>
+  <text x="450" y="200" font-size="10.5" fill="#475569">原理只有一个：水的化学势平衡。</text>
+  <text x="450" y="214.5" font-size="10.5" fill="#475569">池液沉淀剂浓度更高、水活度更低，</text>
+  <text x="450" y="229" font-size="10.5" fill="#475569">水分子从液滴经气相迁入池液，</text>
+  <text x="450" y="243.5" font-size="10.5" fill="#475569">液滴被缓慢浓缩，</text>
+  <text x="450" y="258" font-size="10.5" fill="#475569">蛋白与沉淀剂浓度同步上升，</text>
+  <text x="450" y="272.5" font-size="10.5" fill="#475569">直到两相蒸汽压相等。</text>
+  <text x="450" y="314" font-size="10.5" fill="#475569">硅化处理使盖片疏水、</text>
+  <text x="450" y="328.5" font-size="10.5" fill="#475569">液滴保持半球形不摊开——摊开的液滴蒸发过快，</text>
+  <text x="450" y="343" font-size="10.5" fill="#475569">且蛋白易在玻璃表面变性吸附。</text>
+  <text x="450" y="388" font-size="10.5" fill="#475569">慢速档：</text>
+  <text x="450" y="402.5" font-size="10.5" fill="#475569">以不同比例的硅油与石蜡油混合封边，</text>
+  <text x="450" y="417" font-size="10.5" fill="#475569">减缓水汽交换——对成核过快的体系常一缓就灵。</text>
+  <rect x="438.47249999999997" y="481.925" width="243.055" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="560" y="493.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">快混慢缩：滴内数秒混匀，气相水迁移以小时到天计</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、坐滴与微批量：自动化与油封</text>
+  <rect x="750" y="232" width="240" height="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="870" y="220" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">封膜</text>
+  <line x1="760" y1="241" x2="760" y2="440" stroke="#475569" stroke-width="2.5"/>
+  <line x1="760" y1="440" x2="1000" y2="440" stroke="#475569" stroke-width="2.5"/>
+  <line x1="1000" y1="241" x2="1000" y2="440" stroke="#475569" stroke-width="2.5"/>
+  <rect x="766" y="400" width="228" height="36" fill="#e0f2fe"/>
+  <polygon points="850,440 862,375 928,375 940,440" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <ellipse cx="895" cy="362" rx="36" ry="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="895" y="336" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">坐滴 0.2–1 μL</text>
+  <text x="880" y="428" font-size="10" fill="#475569" text-anchor="middle">池液（同孔分置）</text>
+  <text x="790" y="408" font-size="9.5" fill="#64748b">凸台</text>
+  <text x="730" y="468" font-size="10.5" fill="#475569">液滴不接触封膜、便于显微镜观察；液滴更扁、蒸发面大、</text>
+  <text x="730" y="482" font-size="10.5" fill="#475569">平衡更快；</text>
+  <text x="730" y="496" font-size="10.5" fill="#475569">96 孔标准化格式与移液机器人天然匹配——高通量筛选主流载体，</text>
+  <text x="730" y="510" font-size="10.5" fill="#475569">兼容 in situ 板内衍射。</text>
+  <line x1="1080" y1="250" x2="1080" y2="440" stroke="#475569" stroke-width="2.5"/>
+  <line x1="1080" y1="440" x2="1300" y2="440" stroke="#475569" stroke-width="2.5"/>
+  <line x1="1300" y1="250" x2="1300" y2="440" stroke="#475569" stroke-width="2.5"/>
+  <rect x="1086" y="262" width="208" height="172" fill="#fef3c7" fill-opacity="0.5"/>
+  <ellipse cx="1190" cy="396" rx="42" ry="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1190" y="284" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">油层（石蜡油/硅油混合）</text>
+  <text x="1190" y="370" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">液滴 0.5–2 μL</text>
+  <text x="1060" y="468" font-size="10.5" fill="#475569">水只能经油缓慢逸出——油的配比即「扩散阀门」开度：</text>
+  <text x="1060" y="482" font-size="10.5" fill="#475569">石蜡油近不透水、硅油缓慢透水；轨迹平缓、无自动终点，</text>
+  <text x="1060" y="496" font-size="10.5" fill="#475569">适合长时间缓慢浓缩的体系。</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、微透析与自由界面扩散</text>
+  <line x1="80" y1="630" x2="80" y2="800" stroke="#475569" stroke-width="2.5"/>
+  <line x1="80" y1="800" x2="340" y2="800" stroke="#475569" stroke-width="2.5"/>
+  <line x1="340" y1="630" x2="340" y2="800" stroke="#475569" stroke-width="2.5"/>
+  <rect x="86" y="680" width="248" height="114" fill="#e0f2fe"/>
+  <rect x="150" y="704" width="100" height="62" rx="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="150" y1="704" x2="250" y2="704" stroke="#d97706" stroke-width="3.2"/>
+  <line x1="150" y1="710" x2="250" y2="710" stroke="#d97706" stroke-width="1.4"/>
+  <text x="200" y="740" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白液 10–50 μL</text>
+  <text x="292" y="748" font-size="10" fill="#475569" text-anchor="middle">外液（沉淀剂）</text>
+  <line x1="175" y1="684" x2="175" y2="700" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="225" y1="684" x2="225" y2="700" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="200" y="672" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">沉淀剂经半透膜平衡</text>
+  <text x="60" y="828" font-size="10.5" fill="#475569">半透膜截留分子量常用 8–14 kDa——挡住蛋白、放行小分子；</text>
+  <text x="60" y="842" font-size="10.5" fill="#475569">蛋白浓度不变而环境过饱和度阶梯式抬升，适合忌讳浓缩、</text>
+  <text x="60" y="856" font-size="10.5" fill="#475569">易聚集的体系。</text>
+  <rect x="104.99500000000002" y="877.5" width="190.00999999999996" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="889.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">外液阶梯换高：今天 0.5 M、后天 1 M</text>
+  <text x="60" y="924" font-size="10.5" fill="#64748b">「顽固蛋白」常被透析的耐心攻下——过饱和历史完全交给操作者编排。</text>
+  <line x1="470" y1="630" x2="470" y2="860" stroke="#475569" stroke-width="2.5"/>
+  <line x1="540" y1="630" x2="540" y2="860" stroke="#475569" stroke-width="2.5"/>
+  <rect x="474" y="634" width="62" height="110" fill="#fef3c7" fill-opacity="0.6"/>
+  <rect x="474" y="748" width="62" height="108" fill="#e0f2fe"/>
+  <line x1="470" y1="746" x2="540" y2="746" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="505" y="660" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">沉淀剂</text>
+  <text x="505" y="830" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">蛋白液</text>
+  <text x="560" y="750" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">界面</text>
+  <line x1="505" y1="680" x2="505" y2="736" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <line x1="505" y1="820" x2="505" y2="764" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <path d="M566,800 C570.5,790.8 585.5,760.3 593,745 C600.5,729.7 605.0,708.0 611,708 C617.0,708.0 621.5,729.7 629,745 C636.5,760.3 651.5,790.8 656,800" fill="none" stroke="#be185d" stroke-width="2"/>
+  <text x="611" y="688" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">局部过饱和峰值</text>
+  <text x="380" y="828" font-size="10.5" fill="#475569">界面双向扩散自然形成浓度梯度，</text>
+  <text x="380" y="842" font-size="10.5" fill="#475569">局部过饱和峰值自动扫过成核区；</text>
+  <text x="380" y="856" font-size="10.5" fill="#475569">微流控芯片做成纳升级并行阵列——单芯片数十至上百条件，</text>
+  <text x="380" y="870" font-size="10.5" fill="#475569">适合极稀缺样品。</text>
+  <rect x="467.74" y="915.075" width="104.52" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="520" y="927.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">微量、快筛、并行</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、四种路线在相图上的轨迹与纳升级机器人</text>
+  <rect x="730" y="620" width="380" height="260" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="730" y1="815" x2="1110" y2="815" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="825" y1="880" x2="825" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="730" y1="750" x2="1110" y2="750" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="920" y1="880" x2="920" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="730" y1="685" x2="1110" y2="685" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1015" y1="880" x2="1015" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <text x="920" y="924" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">沉淀剂浓度</text>
+  <text x="684" y="750" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">蛋白浓度</text>
+  <text x="920" y="608" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">理解轨迹形状，才能从板中现象反推条件该向哪改</text>
+  <path d="M730,854 C745.8,850.5 793.3,841.0 825,833.2 C856.7,825.4 888.3,816.7 920,807.2 C951.7,797.7 983.3,786.4 1015,776 C1046.7,765.6 1094.2,750.0 1110,744.8" fill="none" stroke="#475569" stroke-width="2"/>
+  <path d="M730,737 C749.0,734.0 806.0,727.0 844,718.8 C882.0,710.6 913.7,701.9 958,687.6 C1002.3,673.3 1084.7,642.1 1110,633" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="795" y="862" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">欠饱和区</text>
+  <text x="806" y="812" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">亚稳区（养晶）</text>
+  <text x="960" y="678" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">成核区</text>
+  <text x="1085" y="648" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">沉淀区</text>
+  <circle cx="760" cy="864" r="4" fill="#1e293b"/>
+  <text x="770" y="856" font-size="9.5" fill="#1e293b">起点</text>
+  <line x1="760" y1="864" x2="920" y2="737" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <text x="930" y="730" font-size="10" fill="#831843" font-weight="700">蒸气扩散（等比例浓缩线）</text>
+  <line x1="920" y1="737" x2="890" y2="788" stroke="#be185d" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <text x="900" y="792" font-size="9.5" fill="#831843">回落养晶</text>
+  <line x1="760" y1="864" x2="844" y2="789" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="850" y="786" font-size="10" fill="#92400e" font-weight="700">微批量（更慢同向）</text>
+  <line x1="760" y1="864" x2="939" y2="864" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="850" y="852" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">透析（水平推进）</text>
+  <line x1="1026" y1="859" x2="1026" y2="737" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="1036" y="800" font-size="10" fill="#4c1d95" font-weight="700">界面（局部竖直穿越）</text>
+  <text x="1150" y="640" font-size="10.5" fill="#475569">Mosquito 以一次性微针柱塞并列吸排 20–200 nL 液滴，</text>
+  <text x="1150" y="654" font-size="10.5" fill="#475569">Gryphon 以针尖接触式点样——96 条件的筛选板压缩到几十微升蛋白。</text>
+  <text x="1150" y="714" font-size="10.5" fill="#475569">纳升级液滴表面张力主导（无喷溅）、</text>
+  <text x="1150" y="728" font-size="10.5" fill="#475569">蒸发极快——须恒湿度房操作、</text>
+  <text x="1150" y="742" font-size="10.5" fill="#475569">点样后即刻封板；</text>
+  <text x="1150" y="756" font-size="10.5" fill="#475569">条件空间覆盖密度提升一至两个数量级。</text>
+  <text x="1150" y="788" font-size="10.5" fill="#475569">同一板、同一成像仪、</text>
+  <text x="1150" y="802" font-size="10.5" fill="#475569">同一套判读标准——两个实验室的筛选结果第一次可以严格比较；</text>
+  <text x="1150" y="816" font-size="10.5" fill="#475569">成像机器人把「何时沉淀、</text>
+  <text x="1150" y="830" font-size="10.5" fill="#475569">何时冒微晶」时间戳化留存。</text>
+  <text x="1150" y="880" font-size="10.5" fill="#64748b">温度梯度结晶：溶解度沿温差驱动生长，</text>
+  <text x="1150" y="894" font-size="10.5" fill="#64748b">晶体常在梯度「甜点位」析出；</text>
+  <text x="1150" y="908" font-size="10.5" fill="#64748b">变体还有反溶剂蒸气扩散与超滤浓缩。</text>
+</svg>

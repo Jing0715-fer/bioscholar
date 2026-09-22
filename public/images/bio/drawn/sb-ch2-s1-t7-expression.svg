@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">大肠杆菌表达系统：T7 体系的分子逻辑</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">lacUV5控制T7聚合酶、T7启动子驱动目的基因的两级放大使外源蛋白占细胞总蛋白10–30%；OD6000.5–0.8、IPTG0.05–1mM、16°C过夜为经典窗口；包涵体复性收率常仅</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">5–20%</text>
+  <rect x="30" y="132" width="680" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、T7 体系：pET 载体与 BL21(DE3) 的两级放大</text>
+  <text x="50" y="170" font-size="10.5" fill="#475569">大肠杆菌是结构生物学样品的第一来源，主力是 Studier 与 Moffatt 1986 年确立的 T7 体系：</text>
+  <text x="50" y="185" font-size="10.5" fill="#475569">pET 载体把目的基因置于 T7 启动子之下，宿主聚合酶与 T7 聚合酶接力，把外源蛋白推到细胞总蛋白的 10–30%。</text>
+  <rect x="80.7369" y="189.075" width="118.52619999999999" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="140" y="201.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">IPTG（乳糖类似物）</text>
+  <line x1="140" y1="209" x2="185" y2="242" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="60" y="214" width="620" height="118" rx="46" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <text x="78" y="236" font-size="12" fill="#475569" font-weight="700">BL21(DE3)</text>
+  <ellipse cx="200" cy="273" rx="95" ry="42" fill="#ccfbf1" fill-opacity="0.45" stroke="#0f766e" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="200" y="270" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">染色体（λDE3 整合）</text>
+  <text x="200" y="286" font-size="9.5" fill="#134e4a" text-anchor="middle">lacUV5–T7 RNAP 基因</text>
+  <circle cx="430" cy="262" r="40" fill="none" stroke="#6d28d9" stroke-width="5" opacity="0.85"/>
+  <text x="430" y="266" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">pET</text>
+  <text x="430" y="316" font-size="9.5" fill="#4c1d95" text-anchor="middle">T7 启动子·目的基因</text>
+  <circle cx="575" cy="288" r="22" fill="none" stroke="#be185d" stroke-width="3.5" opacity="0.9"/>
+  <text x="575" y="291" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">pLysS</text>
+  <text x="575" y="326" font-size="9" fill="#831843" text-anchor="middle">T7 溶菌酶</text>
+  <text x="50" y="362" font-size="10.5" fill="#075985" font-weight="700">两级转录放大：</text>
+  <rect x="77.11" y="379.075" width="145.78" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="150" y="391.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">宿主 RNAP 转录 T7 聚合酶</text>
+  <line x1="228" y1="388" x2="264" y2="388" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="266.0818" y="379.075" width="151.8364" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="342" y="391.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">T7 聚合酶专一驱动目的基因</text>
+  <line x1="432" y1="388" x2="468" y2="388" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="492.1977" y="379.075" width="111.60459999999999" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="548" y="391.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">外源蛋白占 10–30%</text>
+  <text x="246" y="370" font-size="9" fill="#64748b" text-anchor="middle">宿主聚合酶</text>
+  <text x="450" y="370" font-size="9" fill="#64748b" text-anchor="middle">每秒约 200–260 nt</text>
+  <text x="50" y="428" font-size="10.5" fill="#475569">T7 聚合酶延伸速率约为大肠杆菌聚合酶的十倍（每秒约 200–260 个核苷酸）且不识别大肠杆菌启动子；</text>
+  <text x="50" y="443" font-size="10.5" fill="#475569">BL21 背景缺失 Lon 与 OmpT 两个蛋白酶，降低产物降解。</text>
+  <text x="50" y="470" font-size="10.5" fill="#475569">pLysS 表达的 T7 溶菌酶既切割细胞壁又结合抑制 T7 聚合酶，把未诱导本底泄漏压低一到两个数量级，对毒性蛋白尤其重要；</text>
+  <text x="50" y="485" font-size="10.5" fill="#475569">T7lac 衍生载体在目的基因前再加 lac 操纵子，本底被 IPTG 双重压制。</text>
+  <text x="50" y="512" font-size="10" fill="#64748b">放大约需 1–10 L 培养规模；「条件 × 构造」双重矩阵是小试选型依据（构造面板参见第 1 章第 4 节）。</text>
+  <rect x="720" y="132" width="650" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="736" y="154.84" font-size="19" fill="#475569" font-weight="700">二、诱导参数窗口与黄金法则</text>
+  <rect x="740" y="176" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="203.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="890" y="176" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="203.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">常规窗口</text>
+  <rect x="1040" y="176" width="310" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="203.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">调节逻辑</text>
+  <rect x="740" y="220" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="243.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">诱导时机 OD600</text>
+  <rect x="890" y="220" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="243.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">0.5–0.8</text>
+  <rect x="1040" y="220" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="243.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">对数中期代谢旺盛，耐受表达冲击</text>
+  <rect x="740" y="256" width="610" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="256" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="279.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">IPTG 浓度</text>
+  <rect x="890" y="256" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="279.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">0.05–1 mM</text>
+  <rect x="1040" y="256" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="279.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高浓度加重代谢负担，反降可溶比例</text>
+  <rect x="740" y="292" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="315.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">诱导温度</text>
+  <rect x="890" y="292" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="315.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">16–37 °C</text>
+  <rect x="1040" y="292" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="315.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">低温减慢折叠与聚集的竞争</text>
+  <rect x="740" y="328" width="610" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="328" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="351.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">诱导时长</text>
+  <rect x="890" y="328" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="351.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">3–16 h</text>
+  <rect x="1040" y="328" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="351.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">37 °C 约 3–4 h；16 °C 过夜经典</text>
+  <rect x="740" y="364" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="387.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">培养基</text>
+  <rect x="890" y="364" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="387.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">LB 或 TB</text>
+  <rect x="1040" y="364" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="387.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">TB 菌密度 OD600 约 4–8，收率数倍</text>
+  <rect x="740" y="400" width="610" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="400" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="423.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">摇床转速</text>
+  <rect x="890" y="400" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="423.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">180–250 rpm</text>
+  <rect x="1040" y="400" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="423.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">供氧不足时乙酸堆积抑制表达</text>
+  <rect x="740" y="436" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="459.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">抗生素</text>
+  <rect x="890" y="436" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="459.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">相应于载体</text>
+  <rect x="1040" y="436" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="459.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">过夜培养中降解可能需二次补充</text>
+  <rect x="878.3061" y="486.65" width="333.3877999999999" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1045" y="499.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">黄金法则：低温慢表达——16–18 °C 过夜配 0.05–0.2 mM IPTG</text>
+  <text x="740" y="522" font-size="10" fill="#475569">规范小试把菌株、温度、诱导剂浓度、时长拆成矩阵，逐条件记录可溶与不可溶组分的电泳谱；</text>
+  <text x="740" y="535" font-size="10" fill="#475569">37 °C 快速诱导适合本身稳定易溶的原核酶类。</text>
+  <rect x="30" y="578" width="680" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、包涵体：失败中的机会与复性路线</text>
+  <rect x="45" y="630" width="138" height="92" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="114" y="652" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">包涵体</text>
+  <text x="57" y="670" font-size="9.5" fill="#475569">错误折叠产物在胞内凝集：</text>
+  <text x="57" y="682.5" font-size="9.5" fill="#475569">密度高、抗蛋白酶、杂质少</text>
+  <rect x="211" y="630" width="138" height="92" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="280" y="652" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">洗涤与变性</text>
+  <text x="223" y="670" font-size="9.5" fill="#475569">1–2% Triton 洗涤；</text>
+  <text x="223" y="682.5" font-size="9.5" fill="#475569">6–8 M 尿素或约 6 M 盐酸胍溶解</text>
+  <rect x="377" y="630" width="138" height="92" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="446" y="652" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">复性</text>
+  <text x="389" y="670" font-size="9.5" fill="#475569">稀释复性</text>
+  <text x="389" y="682.5" font-size="9.5" fill="#475569">（骤降 50–100 倍）</text>
+  <text x="389" y="695" font-size="9.5" fill="#475569">或透析复性</text>
+  <text x="389" y="707.5" font-size="9.5" fill="#475569">（缓慢梯度除盐）</text>
+  <rect x="543" y="630" width="138" height="92" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="612" y="652" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">活性蛋白</text>
+  <text x="555" y="670" font-size="9.5" fill="#475569">氧化还原对配二硫键；</text>
+  <text x="555" y="682.5" font-size="9.5" fill="#475569">均一性常逊于可溶表达，</text>
+  <text x="555" y="695" font-size="9.5" fill="#475569">无替代时才启用</text>
+  <line x1="187" y1="676" x2="205" y2="676" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="353" y1="676" x2="371" y2="676" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="519" y1="676" x2="537" y2="676" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="124.10000000000002" y="747.5" width="181.79999999999995" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="215" y="759.6" font-size="10" fill="#1e293b" text-anchor="middle">GSH 4 mM／GSSG 0.4 mM（约 10:1）</text>
+  <rect x="325.6" y="747.5" width="128.8" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="390" y="759.6" font-size="10" fill="#1e293b" text-anchor="middle">精氨酸 0.4–1 M 抑制聚集</text>
+  <rect x="498.5" y="747.5" width="133.00000000000003" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="565" y="759.6" font-size="10" fill="#1e293b" text-anchor="middle">蛋白浓度常低于 0.1 mg/mL</text>
+  <rect x="174.0979" y="783.075" width="351.8042" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="350" y="795.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">复性收率通常仅 5–20%：需矩阵筛选 pH、精氨酸、蛋白浓度与添加剂</text>
+  <text x="45" y="822" font-size="10" fill="#475569">包涵体其实是「失败中的机会」：纯化后经复性仍可回收活性蛋白；对结构生物学项目，复性蛋白的均一性常逊于可溶表达，</text>
+  <text x="45" y="836" font-size="10" fill="#475569">仅在没有替代路线时启用。</text>
+  <text x="45" y="862" font-size="10" fill="#475569">优先纪律：先以低温慢表达、增溶标签（MBP／SUMO）与构造边界调整提高可溶性，包涵体复性是无替代路线时的兜底。</text>
+  <text x="45" y="912" font-size="10" fill="#64748b">洗涤以含 Triton X-100 与低浓度尿素的缓冲液反复进行，去除膜片段与杂蛋白——洗涤彻底程度直接决定复性起点的纯度。</text>
+  <rect x="720" y="578" width="650" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="736" y="600.84" font-size="19" fill="#475569" font-weight="700">四、稀有密码子、自诱导与放大</text>
+  <rect x="740" y="616" width="610" height="112" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="756" y="638" font-size="12" fill="#134e4a" font-weight="700">稀有密码子与宿主工程</text>
+  <text x="756" y="656" font-size="10" fill="#475569">AGG、AGA 与 ATA 在大肠杆菌高频词表占比各不足 0.2%，真核基因中可能高出十倍，高频出现触发核糖体停顿与截断。对策：</text>
+  <text x="756" y="669.5" font-size="10" fill="#475569">密码子优化全基因合成；或 Rosetta（pRARE 补约 7 种稀有 tRNA）与 CodonPlus-RIL；二硫键蛋白选 SHuffle</text>
+  <text x="756" y="683" font-size="10" fill="#475569">（氧化性细胞质＋DsbC）或 Origami。</text>
+  <rect x="740" y="742" width="610" height="96" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="756" y="764" font-size="12" fill="#78350f" font-weight="700">自诱导培养基（Studier 2005）</text>
+  <text x="756" y="782" font-size="10" fill="#475569">甘油为主碳源；葡萄糖阻遏乳糖吸收、压制本底；</text>
+  <text x="756" y="795.5" font-size="10" fill="#475569">葡萄糖耗尽后乳糖经代谢产生别乳糖诱导 lac 体系——过夜自动从生长切换到表达，菌密度与收率常高于人工诱导数倍。</text>
+  <rect x="740" y="852" width="610" height="100" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="756" y="874" font-size="12" fill="#075985" font-weight="700">表达放大与适用边界</text>
+  <text x="756" y="892" font-size="10" fill="#475569">放大约需 1–10 L 培养规模，补料分批把比生长速率控制在约 0.1–0.2 每小时以维持可溶性。</text>
+  <text x="756" y="905.5" font-size="10" fill="#475569">大肠杆菌不能糖基化——真核蛋白应及早平行启用酵母、昆虫或哺乳动物体系。</text>
+</svg>

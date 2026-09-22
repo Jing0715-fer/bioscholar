@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">相位板与像差校正：把漏电做成器件</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">Zernike相衬获1953年诺奖；Volta相位板（Danev2014）以约10nm碳膜上的荷电斑作π/2相移器，近焦即得高衬度——血红蛋白约64kDa解析到3Å级；球差校正（Haider1998、</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">Batson2002亚埃）在生物侧遇冷；4D-STEM叠层成像剂量效率高</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、离焦相位衬度的三笔代价与 Zernike 思想</text>
+  <rect x="70" y="200" width="340" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="400" x2="70" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="422" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="410" y1="400" x2="410" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="422" font-size="13" fill="#64748b" text-anchor="middle">频率 g</text>
+  <line x1="64" y1="300" x2="70" y2="300" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="304" font-size="13" fill="#64748b" text-anchor="end">+1</text>
+  <line x1="64" y1="391" x2="70" y2="391" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="395" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="64" y1="210" x2="70" y2="210" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="214" font-size="13" fill="#64748b" text-anchor="end">−1</text>
+  <text x="240" y="188" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">离焦 CTF：低频缺失、振荡、零点环带</text>
+  <path d="M70.0,201.5 L72.8,201.4 L75.7,201.4 L78.5,201.3 L81.3,201.2 L84.2,201.1 L87.0,200.9 L89.8,200.8 L92.7,200.6 L95.5,200.4 L98.3,200.3 L101.2,200.1 L104.0,200.0 L106.8,200.0 L109.7,200.0 L112.5,200.1 L115.3,200.3 L118.2,200.6 L121.0,201.0 L123.8,201.6 L126.7,202.4 L129.5,203.3 L132.3,204.5 L135.2,205.8 L138.0,207.5 L140.8,209.4 L143.7,211.6 L146.5,214.1 L149.3,217.0 L152.2,220.2 L155.0,223.8 L157.8,227.8 L160.7,232.1 L163.5,236.9 L166.3,242.1 L169.2,247.7 L172.0,253.7 L174.8,260.1 L177.7,266.9 L180.5,274.0 L183.3,281.5 L186.2,289.3 L189.0,297.3 L191.8,305.6 L194.7,314.0 L197.5,322.5 L200.3,331.0 L203.2,339.5 L206.0,347.8 L208.8,355.9 L211.7,363.6 L214.5,370.8 L217.3,377.5 L220.2,383.6 L223.0,388.8 L225.8,393.2 L228.7,396.5 L231.5,398.8 L234.3,399.9 L237.2,399.7 L240.0,398.2 L242.8,395.4 L245.7,391.1 L248.5,385.4 L251.3,378.4 L254.2,370.0 L257.0,360.4 L259.8,349.6 L262.7,337.8 L265.5,325.2 L268.3,311.9 L271.2,298.2 L274.0,284.4 L276.8,270.7 L279.7,257.3 L282.5,244.7 L285.3,233.1 L288.2,222.9 L291.0,214.2 L293.8,207.4 L296.7,202.7 L299.5,200.3 L302.3,200.3 L305.2,203.0 L308.0,208.1 L310.8,215.8 L313.7,225.9 L316.5,238.2 L319.3,252.4 L322.2,268.2 L325.0,285.1 L327.8,302.6 L330.7,320.3 L333.5,337.5 L336.3,353.6 L339.2,368.1 L342.0,380.5 L344.8,390.1 L347.7,396.7 L350.5,399.8 L353.3,399.2 L356.2,394.9 L359.0,386.8 L361.8,375.3 L364.7,360.6 L367.5,343.3 L370.3,324.0 L373.2,303.5 L376.0,282.7 L378.8,262.5 L381.7,243.7 L384.5,227.4 L387.3,214.3 L390.2,205.2 L393.0,200.5 L395.8,200.7 L398.7,205.9 L401.5,215.9 L404.3,230.3 L407.2,248.6 L410.0,269.7" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <rect x="536.925" y="181.075" width="126.15" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="600" y="193.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">代价一：低频衬度缺失</text>
+  <rect x="520.7025" y="215.075" width="158.595" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="600" y="227.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">代价二：传递函数随欠焦振荡</text>
+  <rect x="526.11" y="249.075" width="147.78" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="600" y="261.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">代价三：零点环带湮灭信息</text>
+  <text x="450" y="320" font-size="10" fill="#475569">光学显微学早在 1930 年代给过答案——Zernike 相衬法：</text>
+  <text x="450" y="334" font-size="10" fill="#475569">给未散射的中央束单独加 π/2 相移，</text>
+  <text x="450" y="348" font-size="10" fill="#475569">相位差直接转成强度差</text>
+  <text x="450" y="362" font-size="10" fill="#475569">（1953 年诺贝尔物理学奖）。</text>
+  <text x="450" y="376" font-size="10" fill="#475569">把板搬进电镜的尝试持续半个世纪：</text>
+  <text x="450" y="390" font-size="10" fill="#475569">Boersch 1947 年静电环电极方案为首创，</text>
+  <text x="450" y="404" font-size="10" fill="#475569">碳膜污染与充电长期困住这条路。</text>
+  <text x="240" y="470" font-size="10" fill="#64748b" text-anchor="middle">「欠焦＝天然泽尼克板」，但板本身带伤</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Volta 相位板：把漏电做成器件（Danev 2014）</text>
+  <line x1="760" y1="190" x2="760" y2="420" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <text x="770" y="212" font-size="9.5" fill="#075985">散射电子（弱）</text>
+  <line x1="790" y1="190" x2="790" y2="420" stroke="#1e293b" stroke-width="3.4" marker-end="url(#arr-ink)"/>
+  <text x="800" y="330" font-size="9.5" fill="#1e293b" font-weight="700">中央束（强）</text>
+  <rect x="742" y="300" width="96" height="8" fill="#64748b" fill-opacity="0.35" stroke="#475569" stroke-width="1.4"/>
+  <text x="790" y="288" font-size="9" fill="#475569" text-anchor="middle">约 10 nm 无定形碳膜（后焦面）</text>
+  <circle cx="790" cy="304" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="790" y="336" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">Volta 电位荷电斑</text>
+  <text x="880" y="190" font-size="10.5" fill="#475569">中央束在照射点把膜「充」出一个局部表面电位——荷电斑点恰好充当 π/2 相移器，</text>
+  <text x="880" y="205" font-size="10.5" fill="#475569">且随束自动对准：与其对抗充电，不如收编充电。</text>
+  <rect x="880" y="340" width="280" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="880" y1="470" x2="880" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="880" y="492" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1160" y1="470" x2="1160" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="1160" y="492" font-size="13" fill="#64748b" text-anchor="middle">g</text>
+  <line x1="874" y1="353" x2="880" y2="353" stroke="#475569" stroke-width="1.8"/>
+  <text x="870" y="357" font-size="13" fill="#64748b" text-anchor="end">+1</text>
+  <line x1="874" y1="457" x2="880" y2="457" stroke="#475569" stroke-width="1.8"/>
+  <text x="870" y="461" font-size="13" fill="#64748b" text-anchor="end">−1</text>
+  <text x="1020" y="328" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">带相位板的 CTF：低频被救回</text>
+  <path d="M880.0,358.2 L883.5,358.1 L887.0,357.9 L890.5,357.6 L894.0,357.2 L897.5,356.7 L901.0,356.1 L904.5,355.5 L908.0,354.7 L911.5,353.8 L915.0,352.9 L918.5,352.0 L922.0,351.0 L925.5,350.1 L929.0,349.1 L932.5,348.2 L936.0,347.4 L939.5,346.6 L943.0,346.0 L946.5,345.5 L950.0,345.3 L953.5,345.2 L957.0,345.4 L960.5,345.9 L964.0,346.8 L967.5,348.0 L971.0,349.6 L974.5,351.6 L978.0,354.2 L981.5,357.2 L985.0,360.7 L988.5,364.7 L992.0,369.2 L995.5,374.3 L999.0,379.8 L1002.5,385.8 L1006.0,392.1 L1009.5,398.9 L1013.0,405.9 L1016.5,413.0 L1020.0,420.3 L1023.5,427.5 L1027.0,434.4 L1030.5,441.1 L1034.0,447.2 L1037.5,452.7 L1041.0,457.3 L1044.5,460.9 L1048.0,463.5 L1051.5,464.7 L1055.0,464.5 L1058.5,462.9 L1062.0,459.8 L1065.5,455.1 L1069.0,449.0 L1072.5,441.5 L1076.0,432.8 L1079.5,423.1 L1083.0,412.6 L1086.5,401.7 L1090.0,390.7 L1093.5,380.0 L1097.0,370.1 L1100.5,361.3 L1104.0,354.1 L1107.5,348.9 L1111.0,345.9 L1114.5,345.3 L1118.0,347.4 L1121.5,352.1 L1125.0,359.3 L1128.5,368.9 L1132.0,380.4 L1135.5,393.2 L1139.0,406.9 L1142.5,420.6 L1146.0,433.7 L1149.5,445.3 L1153.0,454.7 L1156.5,461.3 L1160.0,464.5" fill="none" stroke="#059669" stroke-width="2.2"/>
+  <rect x="1133.1475" y="231.075" width="93.705" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="243.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">近焦即得高衬度</text>
+  <rect x="1113.25" y="265.075" width="133.5" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="277.78" font-size="10.5" fill="#065f46" text-anchor="middle">小分子量样品的低频救命</text>
+  <rect x="892.2435499999999" y="511.075" width="295.51290000000006" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1040" y="523.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">血红蛋白约 64 kDa 解析到 3 Å 级（Khoshouei 等 2017）</text>
+  <text x="1040" y="480" font-size="9.5" fill="#64748b" text-anchor="middle">落在无相位板时公认「困难区」的样品（小于 100 kDa 地板线）</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、Volta 的账单与像差校正的生物冷遇</text>
+  <text x="50" y="618" font-size="11.5" fill="#1e293b" font-weight="700">Volta 的账单三项：</text>
+  <rect x="92" y="637.5" width="196" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="190" y="649.6" font-size="10" fill="#92400e" text-anchor="middle">相位随时长漂移（须逐张拟合相位偏移）</text>
+  <rect x="497" y="637.5" width="66" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="530" y="649.6" font-size="10" fill="#92400e" text-anchor="middle">膜寿命有限</text>
+  <rect x="487" y="669.5" width="86" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="530" y="681.6" font-size="10" fill="#92400e" text-anchor="middle">对准精度要求高</text>
+  <text x="50" y="710" font-size="10.5" fill="#475569">球差校正的材料学军备：Haider 等 1998 年装机、Batson 等 2002 年达亚埃——生物侧却遇冷：CTF 形态被重写、低频衬度权衡、</text>
+  <text x="50" y="725" font-size="10.5" fill="#475569">机电稳定性风险，三笔账都不好算。</text>
+  <rect x="166.11" y="763.075" width="147.78" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="240" y="775.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">材料学：亚埃分辨已成常规</text>
+  <rect x="447.40005" y="763.075" width="185.19989999999999" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="540" y="775.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">生物侧：Cs 校正遇冷、相位板补位</text>
+  <text x="50" y="812" font-size="10.5" fill="#475569">单色器加色差校正把能量分辨推到毫电子伏量级——低温生物应用仍在萌芽；激光相位板等新器件在研。</text>
+  <text x="360" y="900" font-size="10" fill="#64748b" text-anchor="middle">「相位问题的另一条路」：不改透镜，改后焦面</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、4D-STEM、叠层成像与模式对照</text>
+  <text x="730" y="618" font-size="10.5" fill="#475569">4D-STEM 以像素阵列探测器逐点记录完整衍射图（每个扫描位置一张二维图，故为四维）；叠层成像（ptychography）</text>
+  <text x="730" y="633" font-size="10.5" fill="#475569">从中以迭代算法恢复相位——剂量效率高；微分相衬读内建电磁场；低温生物应用萌芽。</text>
+  <rect x="730" y="692" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="719.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">模式</text>
+  <rect x="880" y="692" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="719.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">机制</text>
+  <rect x="1060" y="692" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="719.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要优点</text>
+  <rect x="1210" y="692" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="719.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要局限</text>
+  <rect x="730" y="736" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="756.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">离焦相位衬度</text>
+  <rect x="880" y="736" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="756.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">欠焦 χ 相位差</text>
+  <rect x="1060" y="736" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="756.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">成熟普适</text>
+  <rect x="1210" y="736" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="756.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">低频缺失、零点环</text>
+  <rect x="730" y="766" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="766" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="786.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Volta 相位板</text>
+  <rect x="880" y="766" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="786.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">荷电斑 π/2 相移</text>
+  <rect x="1060" y="766" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="786.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">近焦高衬度</text>
+  <rect x="1210" y="766" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="786.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">相位漂移、膜寿命</text>
+  <rect x="730" y="796" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="816.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">球差校正</text>
+  <rect x="880" y="796" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="816.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">多极场补偿 Cs</text>
+  <rect x="1060" y="796" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="816.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">亚埃（材料）</text>
+  <rect x="1210" y="796" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="816.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">生物冷遇、低频权衡</text>
+  <rect x="730" y="826" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="826" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="846.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">叠层成像</text>
+  <rect x="880" y="826" width="180" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="970" y="846.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">4D 衍射反演相位</text>
+  <rect x="1060" y="826" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1135" y="846.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">剂量效率高</text>
+  <rect x="1210" y="826" width="140" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1280" y="846.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">算力与稳定性</text>
+  <text x="1040" y="880" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">共通命题：把「相位」从成像几何的负债变成资产</text>
+  <text x="1040" y="920" font-size="10" fill="#64748b" text-anchor="middle">第 7 章的 CTF 账本在此迎来改写</text>
+</svg>

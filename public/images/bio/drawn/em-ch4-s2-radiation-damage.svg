@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">辐射损伤的物理化学：剂量账本与自由基雪球</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">剂量以e<tspan dy="-5.8" font-size="12.2">-</tspan><tspan dy="5.8">/Å</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">记账（约624合1C/cm</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">）；干样品四副面孔、水合样品OH·间接主导（G值约2.7/100eV）；B因子每e</tspan><tspan dy="-5.8" font-size="12.2">-</tspan><tspan dy="5.8">/Å</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">增1–2Å</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">；Henderson极限约20e</tspan><tspan dy="-5.8" font-size="12.2">-</tspan><tspan dy="5.8">/Å</tspan><tspan dy="-5.8" font-size="12.2">2</tspan></text>
+  <rect x="30" y="132" width="660" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、剂量：以电子数记账</text>
+  <rect x="119.77359999999999" y="177.375" width="110.45280000000001" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="175" y="192.5" font-size="12.5" fill="#991b1b" text-anchor="middle" font-weight="700">剂量单位：e<tspan dy="-4.3" font-size="9.0">-</tspan><tspan dy="4.3">/Å</tspan><tspan dy="-4.3" font-size="9.0">2</tspan></text>
+  <rect x="385.76365" y="177.375" width="168.4727" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="470" y="192.5" font-size="12.5" fill="#991b1b" text-anchor="middle" font-weight="700">约 624 e<tspan dy="-4.3" font-size="9.0">-</tspan><tspan dy="4.3">/Å</tspan><tspan dy="-4.3" font-size="9.0">2</tspan><tspan dy="4.3"> 才合 1 C/cm</tspan><tspan dy="-4.3" font-size="9.0">2</tspan></text>
+  <rect x="136.97596" y="215.8" width="166.04808" height="20.4" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="220" y="230.32" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">1 e<tspan dy="-4.1" font-size="8.6">-</tspan><tspan dy="4.1">/Å</tspan><tspan dy="-4.1" font-size="8.6">2</tspan><tspan dy="4.1"> 约 1.6×10</tspan><tspan dy="-4.1" font-size="8.6">-3</tspan><tspan dy="4.1"> C/cm</tspan><tspan dy="-4.1" font-size="8.6">2</tspan></text>
+  <rect x="435.841312" y="215.8" width="168.317376" height="20.4" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="520" y="230.32" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">剂量率 e<tspan dy="-4.1" font-size="8.6">-</tspan><tspan dy="4.1">/Å</tspan><tspan dy="-4.1" font-size="8.6">2</tspan><tspan dy="4.1">·s</tspan><tspan dy="-4.1" font-size="8.6">-1</tspan><tspan dy="4.1">：施加快慢</tspan></text>
+  <line x1="90" y1="310" x2="175" y2="310" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <circle cx="84" cy="310" r="4.5" fill="#d97706"/>
+  <circle cx="196" cy="310" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="196" y="338" font-size="10" fill="#4c1d95" text-anchor="middle">分子</text>
+  <line x1="208" y1="302" x2="258" y2="272" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="208" y1="310" x2="268" y2="308" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="208" y1="318" x2="254" y2="344" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <circle cx="286" cy="262" r="3.2" fill="#0369a1"/>
+  <circle cx="300" cy="286" r="3.2" fill="#0369a1"/>
+  <circle cx="296" cy="318" r="3.2" fill="#0369a1"/>
+  <circle cx="280" cy="348" r="3.2" fill="#0369a1"/>
+  <circle cx="316" cy="300" r="3.2" fill="#0369a1"/>
+  <text x="340" y="268" font-size="10.5" fill="#475569">一次非弹性沉积可经次级电子级联放大成数十次进一步的电离——自由基化学的雪球就此滚起。</text>
+  <rect x="390.971962" y="310.65" width="218.056076" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="500" y="323.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">一个 300 keV 电子携带约 4.8×10<tspan dy="-3.7" font-size="7.9">-17</tspan><tspan dy="3.7"> J</tspan></text>
+  <text x="50" y="380" font-size="10.5" fill="#475569">自由基化学在皮秒至微秒内完成，而束下损伤在秒级上积分——时间尺度的分离正是「总剂量」成为良记账变量的原因</text>
+  <text x="50" y="395" font-size="10.5" fill="#475569">（只要剂量率不把化学推入非线性区）。</text>
+  <rect x="710" y="132" width="660" height="270" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、干样品：直接损伤的四副面孔</text>
+  <rect x="730" y="178" width="300" height="88" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="746" y="202" font-size="12.5" fill="#dc2626" font-weight="700">① 键断裂</text>
+  <text x="746" y="222" font-size="10.5" fill="#475569">肽键、二硫键与糖苷键在电离后经碎裂反应断开。</text>
+  <rect x="1050" y="178" width="300" height="88" rx="8" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1066" y="202" font-size="12.5" fill="#6d28d9" font-weight="700">② 交联</text>
+  <text x="1066" y="222" font-size="10.5" fill="#475569">相邻分子上的自由基彼此复合，</text>
+  <text x="1066" y="236" font-size="10.5" fill="#475569">把可溶蛋白织成不溶网络。</text>
+  <rect x="730" y="276" width="300" height="88" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.6"/>
+  <text x="746" y="300" font-size="12.5" fill="#d97706" font-weight="700">③ 质量损失</text>
+  <text x="746" y="320" font-size="10.5" fill="#475569">氢、氧与小分子碎片（二氧化碳、含硫片段）陆续挥发，</text>
+  <text x="746" y="334" font-size="10.5" fill="#475569">净失重可达百分之十几。</text>
+  <rect x="1050" y="276" width="300" height="88" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1066" y="300" font-size="12.5" fill="#0369a1" font-weight="700">④ 溅射与刻蚀</text>
+  <text x="1066" y="320" font-size="10.5" fill="#475569">高角度弹性碰撞把表面原子打出（生物电压区次要）；</text>
+  <text x="1066" y="334" font-size="10.5" fill="#475569">污染是其对偶过程。</text>
+  <text x="730" y="386" font-size="10.5" fill="#475569">化学指纹：辐照蛋白的谷氨酸与天冬氨酸优先去羧、含硫与芳香残基显著损耗；负染另有 bake 效应——高剂量下染料迁移重排、</text>
+  <text x="730" y="401" font-size="10.5" fill="#475569">颗粒感变粗。</text>
+  <rect x="30" y="422" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="444.84" font-size="19" fill="#475569" font-weight="700">三、水合样品：羟基自由基的间接攻势</text>
+  <ellipse cx="170" cy="540" rx="44" ry="32" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="170" y="545" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">生物分子</text>
+  <circle cx="80" cy="470" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <circle cx="250" cy="462" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <circle cx="292" cy="560" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <circle cx="76" cy="596" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <circle cx="186" cy="634" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <circle cx="58" cy="540" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="64" y="448" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">H<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O</tspan></text>
+  <line x1="320" y1="430" x2="256" y2="456" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <circle cx="326" cy="428" r="4" fill="#d97706"/>
+  <text x="340" y="424" font-size="10" fill="#64748b" text-anchor="middle">电子或其次级电子</text>
+  <circle cx="250" cy="462" r="5" fill="#be185d"/>
+  <circle cx="292" cy="560" r="5" fill="#be185d"/>
+  <text x="262" y="452" font-size="11" fill="#831843" font-weight="700">OH·</text>
+  <text x="304" y="578" font-size="11" fill="#831843" font-weight="700">OH·</text>
+  <circle cx="76" cy="596" r="4.5" fill="#0f766e"/>
+  <text x="44" y="616" font-size="10.5" fill="#134e4a" font-weight="700">e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="5.9" font-size="7.6">aq</tspan></text>
+  <line x1="250" y1="462" x2="202" y2="516" stroke="#be185d" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
+  <line x1="292" y1="560" x2="216" y2="552" stroke="#be185d" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
+  <text x="170" y="668" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="600">纳秒内攻击数纳米之内的一切分子</text>
+  <text x="360" y="466" font-size="11" fill="#475569">电子或其次级电子把水分子电离与激发，产生水合电子、</text>
+  <text x="360" y="482" font-size="11" fill="#475569">羟基自由基（OH·）与氢原子：OH· 的氧化电位仅次于氟，</text>
+  <text x="360" y="498" font-size="11" fill="#475569">常温水中在纳秒量级内即攻击数纳米之内的一切分子——DNA 双链断裂、</text>
+  <text x="360" y="514" font-size="11" fill="#475569">氨基酸侧链氧化、膜脂过氧化的链式反应都由它领衔。</text>
+  <rect x="362.86114999999995" y="583.075" width="314.27770000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="520" y="595.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">G 值：每 100 eV 产生的分子数——OH· 约 2.7、水合电子约 2.6</text>
+  <text x="360" y="640" font-size="10.5" fill="#475569">对水合样品，间接损伤的贡献超过直接损伤；玻璃冰虽是固态，</text>
+  <text x="360" y="655" font-size="10.5" fill="#475569">辐射化学的底账同样适用——只是反应半径被低温压缩</text>
+  <text x="360" y="670" font-size="10.5" fill="#475569">（本章第 3 节）。</text>
+  <rect x="710" y="422" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="444.84" font-size="19" fill="#475569" font-weight="700">四、损伤的时序与 Henderson 极限</text>
+  <rect x="740" y="480" width="280" height="175" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="655" x2="740" y2="661" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="677" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="824" y1="655" x2="824" y2="661" stroke="#475569" stroke-width="1.8"/>
+  <text x="824" y="677" font-size="13" fill="#64748b" text-anchor="middle">30</text>
+  <line x1="908" y1="655" x2="908" y2="661" stroke="#475569" stroke-width="1.8"/>
+  <text x="908" y="677" font-size="13" fill="#64748b" text-anchor="middle">60</text>
+  <line x1="1020" y1="655" x2="1020" y2="661" stroke="#475569" stroke-width="1.8"/>
+  <text x="1020" y="677" font-size="13" fill="#64748b" text-anchor="middle">100 e<tspan dy="-4.4" font-size="9.4">-</tspan><tspan dy="4.4">/Å</tspan><tspan dy="-4.4" font-size="9.4">2</tspan></text>
+  <line x1="734" y1="480" x2="740" y2="480" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="484" font-size="13" fill="#64748b" text-anchor="end">强</text>
+  <line x1="734" y1="655" x2="740" y2="655" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="659" font-size="13" fill="#64748b" text-anchor="end">弱</text>
+  <text x="880" y="699" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">电子剂量</text>
+  <text x="880" y="468" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">各分辨率档的信号衰减（示意）</text>
+  <path d="M740,480 C744.7,487.3 758.7,510.6 768,523.75 C777.3,536.9 786.7,548.5 796,558.75 C805.3,569.0 810.0,575.4 824,585 C838.0,594.6 861.3,608.3 880,616.5 C898.7,624.7 912.7,629.3 936,634 C959.3,638.7 1006.0,642.8 1020,644.5" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <path d="M740,480 C749.3,483.5 777.3,493.7 796,501 C814.7,508.3 833.3,516.2 852,523.75 C870.7,531.3 889.3,539.2 908,546.5 C926.7,553.8 945.3,561.1 964,567.5 C982.7,573.9 1010.7,582.1 1020,585" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M740,480 C754.0,481.5 800.7,485.8 824,488.75 C847.3,491.7 861.3,494.3 880,497.5 C898.7,500.7 912.7,503.9 936,508 C959.3,512.1 1006.0,519.7 1020,522" fill="none" stroke="#059669" stroke-width="2.2"/>
+  <rect x="880" y="497.59" width="11.55" height="8.82" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="899.55" y="505.78" font-size="10.5" fill="#475569">高分辨</text>
+  <rect x="953.05" y="497.59" width="11.55" height="8.82" rx="3" fill="#d97706" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="972.5999999999999" y="505.78" font-size="10.5" fill="#475569">中分辨</text>
+  <rect x="1026.1" y="497.59" width="11.55" height="8.82" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1045.6499999999999" y="505.78" font-size="10.5" fill="#475569">低分辨</text>
+  <text x="880" y="548" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">最先失去的恰是最想要的</text>
+  <rect x="1050" y="470" width="300" height="200" rx="8" fill="#fee2e2" fill-opacity="0.55" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1066" y="494" font-size="13.5" fill="#991b1b" font-weight="700">Henderson 极限（1995）</text>
+  <text x="1066" y="518" font-size="10.5" fill="#475569">液氮温度下生物样品的可用剂量约 20 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">——再多，</tspan></text>
+  <text x="1066" y="533" font-size="10.5" fill="#475569">高分辨率信息折损的速率将超过信号累积的收益。</text>
+  <text x="1066" y="570" font-size="10.5" fill="#475569">液氦温度只能再挤出不多的改善（至多约两倍），</text>
+  <text x="1066" y="585" font-size="10.5" fill="#475569">远不足以改变量级。</text>
+  <text x="1066" y="606" font-size="10.5" fill="#475569">剂量率争论落幕：以总剂量计时，</text>
+  <text x="1066" y="621" font-size="10.5" fill="#475569">液氮下损伤与剂量率基本无关——放心以高帧率拍剂量分割的电影。</text>
+  <text x="1066" y="648" font-size="10.5" fill="#475569">B 因子每 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6"> 约增 1–2 Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">；</tspan></text>
+  <text x="1066" y="663" font-size="10.5" fill="#475569">损伤壁垒不随电压或亮度突破，</text>
+  <text x="1066" y="678" font-size="10.5" fill="#475569">唯一出路是让每个电子物尽其用。</text>
+  <text x="740" y="712" font-size="10.5" fill="#475569">实验测量法：电子衍射逐剂量追踪——各阶反射按分辨率从高到低依次衰减；成像样品用同区连续曝光的功率谱衰减代替。</text>
+</svg>

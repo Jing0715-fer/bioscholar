@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">完整性、冗余与策略规划：三目标账本与网格扫描</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">完整度高于 95%、冗余 3–7×（反常 7–10×）、剂量 5–20 MGy；830 帧 166° 把冗余 3.5× 抬到 7×；十二颗每晶 0.8 MGy 合并得冗余 9×</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三目标三角：光子是损伤的货币</text>
+  <line x1="335" y1="228" x2="196" y2="302" stroke="#475569" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <line x1="385" y1="228" x2="524" y2="302" stroke="#475569" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <line x1="214" y1="330" x2="506" y2="330" stroke="#475569" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <rect x="203.9675" y="249.925" width="100.065" height="16.15" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="254" y="261.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">同一预算下此消彼长</text>
+  <rect x="420.86" y="249.925" width="90.28" height="16.15" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="466" y="261.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">测一个反射要光子</text>
+  <text x="360" y="326" font-size="9" fill="#64748b" text-anchor="middle">重复测量要更多光子</text>
+  <circle cx="360" cy="196" r="40" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <text x="360" y="192" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">完整度</text>
+  <text x="360" y="212" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">高于 95%</text>
+  <circle cx="170" cy="330" r="44" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="170" y="326" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">冗余</text>
+  <text x="170" y="346" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">3–7×</text>
+  <text x="170" y="390" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">反常 7–10×</text>
+  <circle cx="550" cy="330" r="44" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="550" y="326" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">剂量</text>
+  <text x="550" y="346" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">5–20 MGy</text>
+  <rect x="303.7736" y="282.65" width="112.45280000000001" height="18.7" rx="7" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="360" y="295.96" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">光子 = 损伤的货币</text>
+  <text x="46" y="398" font-size="9.5" fill="#475569">数值例：RADDOSE-3D 算得某晶体每帧 0.1 s 吸收 12 kGy，10 MGy 预算折合约 830 帧，按 Δφ=0.2° 可覆盖 166°；</text>
+  <text x="46" y="411" font-size="9.5" fill="#475569">P2<tspan dy="2.1" font-size="6.8">1</tspan><tspan dy="-2.1">2</tspan><tspan dy="2.1" font-size="6.8">1</tspan><tspan dy="-2.1">2</tspan><tspan dy="2.1" font-size="6.8">1</tspan><tspan dy="-2.1"> 约 90° 即达完整度上限，富余的 70 余度——转满 166° 把冗余从约 3.5× 抬到约 7×，或把每帧曝光压到 0.07 s、以 240° 全程摊满。</tspan></text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、旋转范围扫过倒易空间：覆盖与冗余模拟</text>
+  <path d="M820,178 A62,62 0 0 1 820,302 Z" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.8"/>
+  <circle cx="820" cy="240" r="62" fill="none" stroke="#475569" stroke-width="1.6"/>
+  <line x1="820" y1="168" x2="820" y2="312" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <polygon points="820,180 813,198 827,198" fill="#fee2e2" fill-opacity="0.8"/>
+  <polygon points="820,300 813,282 827,282" fill="#fee2e2" fill-opacity="0.8"/>
+  <text x="820" y="332" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">P1：转 180°</text>
+  <text x="820" y="350" font-size="9" fill="#64748b" text-anchor="middle">盲区除外，每反射至少一次</text>
+  <text x="748" y="200" font-size="8.5" fill="#075985" font-weight="700">扫描带</text>
+  <path d="M1020,178 A62,62 0 0 1 1082,240 L1020,240 Z" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.8"/>
+  <circle cx="1020" cy="240" r="62" fill="none" stroke="#475569" stroke-width="1.6"/>
+  <line x1="1020" y1="168" x2="1020" y2="312" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="1020" y1="240" x2="1064" y2="196" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="1020" y1="240" x2="976" y2="196" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="1020" y1="240" x2="976" y2="284" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="1020" y1="240" x2="1064" y2="284" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <polygon points="1020,180 1013,198 1027,198" fill="#fee2e2" fill-opacity="0.8"/>
+  <polygon points="1020,300 1013,282 1027,282" fill="#fee2e2" fill-opacity="0.8"/>
+  <text x="1020" y="332" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">：90° 即达上限</tspan></text>
+  <text x="1020" y="350" font-size="9" fill="#64748b" text-anchor="middle">等效反射补齐其余象限与盲区</text>
+  <text x="1236" y="182" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">P2<tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">2</tspan><tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">2</tspan><tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2"> 的账本</tspan></text>
+  <line x1="1120" y1="350" x2="1352" y2="350" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1120" y1="350" x2="1120" y2="186" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="1112" y="214" font-size="9" fill="#64748b" text-anchor="end">100%</text>
+  <polyline points="1120,350 1153,301 1186,263 1219,235 1252,220 1285,212 1340,210" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <polyline points="1120,350 1202.5,301 1272.1666666666667,252 1340,210" fill="none" stroke="#0f766e" stroke-width="2.6" stroke-dasharray="7 4"/>
+  <text x="1120" y="366" font-size="9" fill="#64748b" text-anchor="middle">0</text>
+  <text x="1202.5" y="366" font-size="9" fill="#64748b" text-anchor="middle">90°</text>
+  <text x="1272.1666666666667" y="366" font-size="9" fill="#64748b" text-anchor="middle">166°</text>
+  <text x="1340" y="366" font-size="9" fill="#64748b" text-anchor="middle">240°</text>
+  <text x="1236" y="382" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">总旋转角</text>
+  <text x="1292" y="202" font-size="9.5" fill="#075985" font-weight="700">完整度</text>
+  <text x="1128" y="292" font-size="9.5" fill="#134e4a" font-weight="700">冗余</text>
+  <rect x="1230.920775" y="223.925" width="82.15845" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1272" y="235.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">166°：冗余 7×</text>
+  <text x="726" y="392" font-size="9.5" fill="#475569">缺失是带方向的空位而非随机噪声：缺哪一「方向族」的反射，图上就朝对应方向出现条纹状假象。完整度由旋转范围与对称性封顶</text>
+  <text x="726" y="405" font-size="9.5" fill="#475569">（至多百分之百），冗余却可随剂量继续堆——两者不是同一维度；反常方案要盯「反常完整度」（Bijvoet 对覆盖率）与反常冗余双达标。</text>
+  <rect x="30" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、反常数据的特殊伺候与多晶合并</text>
+  <text x="46" y="486" font-size="11.5" fill="#1e293b" font-weight="700">MAD 三波长与剂量切分</text>
+  <rect x="46" y="498" width="66" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="79" y="525.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">波长</text>
+  <rect x="112" y="498" width="166" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="195" y="525.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">设定</text>
+  <rect x="278" y="498" width="68" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312" y="525.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">剂量</text>
+  <rect x="46" y="542" width="66" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="79" y="562.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">峰</text>
+  <rect x="112" y="542" width="166" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="195" y="562.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">f″ 最大（Se 0.9795 Å）</text>
+  <rect x="278" y="542" width="68" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312" y="562.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">40%</text>
+  <rect x="46" y="572" width="300" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="572" width="66" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="79" y="592.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">拐点</text>
+  <rect x="112" y="572" width="166" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="195" y="592.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">f′ 最负（紧邻吸收边）</text>
+  <rect x="278" y="572" width="68" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312" y="592.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">30%</text>
+  <rect x="46" y="602" width="66" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="79" y="622.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">远边</text>
+  <rect x="112" y="602" width="166" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="195" y="622.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">0.9164 Å</text>
+  <rect x="278" y="602" width="68" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="312" y="622.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">30%</text>
+  <text x="46" y="652" font-size="9.5" fill="#475569">收数顺序「远边先收、峰值压轴」——最要紧的数据吃到最新鲜的晶体；</text>
+  <text x="46" y="665.5" font-size="9.5" fill="#475569">远边兼顾躲开吸收边以减小吸收、又离边不远以保持可比性。</text>
+  <text x="46" y="679" font-size="9.5" fill="#475569">inverse beam 以 180° 对顶位成对收 Bijvoet（见第 2 节）。</text>
+  <text x="380" y="486" font-size="11.5" fill="#1e293b" font-weight="700">多晶合并与微光斑匹配</text>
+  <text x="380" y="506" font-size="10" fill="#475569">辐射损伤把单晶策略逼到天花板时的另一条路：</text>
+  <text x="380" y="520" font-size="10" fill="#475569">每颗晶体只受很低剂量（如低于 1 MGy），</text>
+  <text x="380" y="534" font-size="10" fill="#475569">把数十颗乃至数百颗同型晶体按对称等效合并成一套。</text>
+  <rect x="380" y="560" width="140" height="86" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <ellipse cx="450" cy="601" rx="52" ry="30" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <circle cx="450" cy="601" r="26" fill="#d97706" fill-opacity="0.3" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="441" y="592" width="18" height="18" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="450" y="660" font-size="9" fill="#92400e" text-anchor="middle">50 μm 光斑连母液一起照</text>
+  <rect x="534" y="560" width="140" height="86" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="599" cy="601" r="11" fill="#d97706" fill-opacity="0.35" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="590" y="592" width="18" height="18" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="604" y="660" font-size="9" fill="#065f46" text-anchor="middle">20 μm 只照晶体</text>
+  <text x="380" y="678" font-size="9.5" fill="#475569">背景光子数正比于受照体积：光斑从 50 μm 缩到 20 μm，</text>
+  <text x="380" y="691.5" font-size="9.5" fill="#475569">母液与空气的背景贡献按体积比降一个量级而晶体信号不减；</text>
+  <text x="380" y="705" font-size="9.5" fill="#475569">代价是对束流稳定性更苛——漂移一个光斑的距离就等于换了一颗晶体。</text>
+  <text x="354" y="718" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">合并账单（示意量级）</text>
+  <rect x="46" y="730" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="106" y="757.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">统计量</text>
+  <rect x="166" y="730" width="216" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="757.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">单晶收满（约 10 MGy）</text>
+  <rect x="382" y="730" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="522" y="757.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">十二颗低剂量合并（每晶约 0.8 MGy）</text>
+  <rect x="46" y="774" width="120" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="106" y="794.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">整体完整度</text>
+  <rect x="166" y="774" width="216" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="794.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">97%</text>
+  <rect x="382" y="774" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="522" y="794.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">96%</text>
+  <rect x="46" y="804" width="616" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="804" width="120" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="106" y="824.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">冗余</text>
+  <rect x="166" y="804" width="216" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="824.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 4×</text>
+  <rect x="382" y="804" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="522" y="824.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 9×</text>
+  <rect x="46" y="834" width="120" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="106" y="854.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">高角 R<tspan dy="2.3" font-size="7.6">meas</tspan></text>
+  <rect x="166" y="834" width="216" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="854.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">偏高（衰减拖累）</text>
+  <rect x="382" y="834" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="522" y="854.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">明显更低</text>
+  <rect x="46" y="864" width="616" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="864" width="120" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="106" y="884.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">特异性损伤</text>
+  <rect x="166" y="864" width="216" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="274" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">二硫键已现负峰</text>
+  <rect x="382" y="864" width="280" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="522" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">近乎无痕</text>
+  <text x="46" y="912" font-size="9.5" fill="#64748b">合并前提：晶格同型（晶胞差异在千分之几内）与 mosaicity 相近；两道安检——逐颗晶胞一致性比对、mosaicity 相近性，</text>
+  <text x="46" y="925" font-size="9.5" fill="#64748b">跨生长批次的晶体常在此露馅。</text>
+  <rect x="710" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、网格扫描热图与收集决策表</text>
+  <text x="726" y="486" font-size="11.5" fill="#1e293b" font-weight="700">网格扫描：先找好晶体再开枪</text>
+  <rect x="726" y="500" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="760" y="500" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="500" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="828" y="500" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="862" y="500" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="896" y="500" width="34" height="34" fill="#d1fae5" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="930" y="500" width="34" height="34" fill="#059669" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="964" y="500" width="34" height="34" fill="#059669" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="726" y="534" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="760" y="534" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="534" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="828" y="534" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="862" y="534" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="896" y="534" width="34" height="34" fill="#d1fae5" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="930" y="534" width="34" height="34" fill="#059669" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="964" y="534" width="34" height="34" fill="#d1fae5" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="726" y="568" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="760" y="568" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="568" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="828" y="568" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="862" y="568" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="896" y="568" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="930" y="568" width="34" height="34" fill="#d1fae5" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="964" y="568" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="726" y="602" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="760" y="602" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="602" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="828" y="602" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="862" y="602" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="896" y="602" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="930" y="602" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="964" y="602" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="726" y="636" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="760" y="636" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="636" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="828" y="636" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="862" y="636" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="896" y="636" width="34" height="34" fill="#fee2e2" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="930" y="636" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="964" y="636" width="34" height="34" fill="#fef3c7" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="494" width="114" height="80" rx="8" fill="none" stroke="#059669" stroke-width="2.2" stroke-dasharray="7 5"/>
+  <text x="947" y="592" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">最好的一角</text>
+  <rect x="726" y="687.8" width="11" height="8.4" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="745" y="695.6" font-size="10" fill="#475569">好</text>
+  <rect x="769" y="687.8" width="11" height="8.4" rx="3" fill="#d97706" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="788" y="695.6" font-size="10" fill="#475569">中</text>
+  <rect x="812" y="687.8" width="11" height="8.4" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="831" y="695.6" font-size="10" fill="#475569">差</text>
+  <text x="1014" y="502" font-size="10" fill="#475569">用微光斑在样品上逐格曝光（步进可到 10 μm），</text>
+  <text x="1014" y="516" font-size="10" fill="#475569">比较各格的衍射质量——斑点锐度、镶嵌度、</text>
+  <text x="1014" y="530" font-size="10" fill="#475569">晶格一致性——把「碰运气」变成「地图作业」；</text>
+  <text x="1014" y="544" font-size="10" fill="#475569">以 10–20 μm 步进排一张衍射热图，每格一次 0.02–0.05 s 的低剂量快照，</text>
+  <text x="1014" y="558" font-size="10" fill="#475569">统计斑点数、可分辨的最小 d 与斑点锐度。</text>
+  <text x="1014" y="568" font-size="10" fill="#475569">一次网格扫描几百次曝光、总剂量常不到总预算的百分之一；</text>
+  <text x="1014" y="582" font-size="10" fill="#475569">「好格子」往往只占两三成——同一环里挑最好的一角再正式开收，</text>
+  <text x="1014" y="596" font-size="10" fill="#475569">是 LCP 与微小晶体流程的标准前奏。</text>
+  <text x="1014" y="624" font-size="10" fill="#475569">能量先定：Se 反常把能量设到峰 0.9795 Å 附近，</text>
+  <text x="1014" y="638" font-size="10" fill="#475569">以荧光扫描实测吸收边位置（不同蛋白的化学环境会使边移动几个电子伏特）</text>
+  <text x="1014" y="652" font-size="10" fill="#475569">；常规数据可选远离吸收边的能量以减小吸收与剂量。</text>
+  <rect x="726" y="716" width="196" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="824" y="743.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">样品状况</text>
+  <rect x="922" y="716" width="420" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1132" y="743.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">推荐策略</text>
+  <rect x="726" y="760" width="196" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="824" y="780.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">常规晶体、优于 2.5 Å</text>
+  <rect x="922" y="760" width="420" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1132" y="780.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">单晶 180° 内、Δφ 0.1–0.5°、冗余 3–5×、剂量约 10 MGy 封顶</text>
+  <rect x="726" y="790" width="616" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="790" width="196" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="824" y="810.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">SAD 反常定相</text>
+  <rect x="922" y="790" width="420" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1132" y="810.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">inverse beam 或宽范围、冗余 7–10×、剂量向低限分配</text>
+  <rect x="726" y="820" width="196" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="824" y="840.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">极易损伤</text>
+  <rect x="922" y="820" width="420" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1132" y="840.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">多晶合并、每晶低于 1 MGy、微光斑匹配</text>
+  <rect x="726" y="850" width="616" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="850" width="196" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="824" y="870.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">微小晶体（10–30 μm）</text>
+  <rect x="922" y="850" width="420" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1132" y="870.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">微聚焦光斑、网格扫描定位、低剂量高通量</text>
+  <rect x="726" y="880" width="196" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="824" y="900.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">mosaicity 大于 0.5°</text>
+  <rect x="922" y="880" width="420" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1132" y="900.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">切窄 Δφ、拉远探测器、先退火再试</text>
+  <text x="726" y="928" font-size="9.5" fill="#64748b">策略执行要留痕：完整度与剂量的实时监控曲线让「边收边看」成为可能——发现停滞或逼近预算，及时改计划胜过硬收到底。</text>
+</svg>

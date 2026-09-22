@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">水的玻璃化原理：绕过结晶的第四条路</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">T<tspan dy="4.2" font-size="13.7">g</tspan><tspan dy="-4.2"> 约 136 K、均相成核 235 K 之间「无人区」；纯水需 10</tspan><tspan dy="-6.5" font-size="13.7">6</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">7</tspan><tspan dy="6.5"> K/s、实测 10</tspan><tspan dy="-6.5" font-size="13.7">5</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">6</tspan><tspan dy="6.5">；玻璃冰判据 2.8 Å 晕环、无锐环</tspan></text>
+  <rect x="30" y="132" width="700" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、水的相图（示意）：冰 Ih、冰 III 与玻璃态</text>
+  <rect x="90" y="186" width="570" height="197" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="90,245 567,245 609,383 90,383" fill="#ccfbf1" fill-opacity="0.5"/>
+  <polygon points="90,186 540,186 567,245 90,245" fill="#fef3c7" fill-opacity="0.45"/>
+  <polygon points="609,383 660,383 660,186 540,186 567,245" fill="#e0f2fe" fill-opacity="0.55"/>
+  <path d="M 609,383 C 595,332 580,288 567,245" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <path d="M 567,245 C 558,225 549,205 540,186" fill="none" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="90" y1="245" x2="567" y2="245" stroke="#475569" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="84" y="386" font-size="9.5" fill="#64748b" text-anchor="end">1</text>
+  <text x="84" y="249" font-size="9.5" fill="#64748b" text-anchor="end">约 2100</text>
+  <text x="84" y="190" font-size="9.5" fill="#64748b" text-anchor="end">3000</text>
+  <text x="92" y="176" font-size="10.5" fill="#475569">压力 P（bar）</text>
+  <line x1="536" y1="186" x2="536" y2="383" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="536" y="176" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">T<tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2"> ≈ 235 K</tspan></text>
+  <line x1="348" y1="186" x2="348" y2="383" stroke="#be185d" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="348" y="176" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">T<tspan dy="2.2" font-size="7.2">g</tspan><tspan dy="-2.2"> ≈ 136 K</tspan></text>
+  <rect x="90" y="186" width="258" height="197" fill="#fce7f3" fill-opacity="0.4" stroke="#be185d" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="100" y="208" font-size="10" fill="#831843" font-weight="700">玻璃态（非平衡，急冷可及）</text>
+  <text x="455" y="200" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">冰 III（高压稳定相）</text>
+  <text x="470" y="231" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">HPF：约 2100 bar，冰点约 −22 °C</text>
+  <circle cx="567" cy="245" r="5" fill="#d97706" stroke="#78350f" stroke-width="1.2"/>
+  <text x="442" y="290" font-size="10" fill="#475569" text-anchor="middle">过冷与「无人区」：136–235 K</text>
+  <text x="505" y="340" font-size="10.5" fill="#134e4a" font-weight="700">冰 I_h（六方冰）</text>
+  <text x="628" y="335" font-size="10.5" fill="#075985" font-weight="700">液态水</text>
+  <line x1="90" y1="383" x2="672" y2="383" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="348" y="400" font-size="9.5" fill="#64748b" text-anchor="middle">136</text>
+  <text x="536" y="400" font-size="9.5" fill="#64748b" text-anchor="middle">235</text>
+  <text x="609" y="400" font-size="9.5" fill="#64748b" text-anchor="middle">273</text>
+  <text x="672" y="400" font-size="9.5" fill="#475569" text-anchor="end">T（K）</text>
+  <text x="90" y="422" font-size="9.5" fill="#475569">慢冷落入冰 I_h、高压落入冰 III；急冷跳过成核动力学直抵 T<tspan dy="2.1" font-size="6.8">g</tspan><tspan dy="-2.1"> 以下——玻璃化是「绕过结晶」而非平衡第四相。</tspan></text>
+  <rect x="750" y="132" width="620" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、临界冷却速率：跳过「无人区」的跳栏</text>
+  <rect x="790" y="178" width="250" height="205" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="790" y="222" width="250" height="61" fill="#fee2e2" fill-opacity="0.3"/>
+  <text x="970" y="268" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">「无人区」</text>
+  <line x1="790" y1="222" x2="1040" y2="222" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1036" y="216" font-size="9.5" fill="#991b1b" text-anchor="end">T<tspan dy="2.1" font-size="6.8">H</tspan><tspan dy="-2.1"> ≈ 235 K</tspan></text>
+  <line x1="790" y1="283" x2="1040" y2="283" stroke="#be185d" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1036" y="277" font-size="9.5" fill="#831843" text-anchor="end">T<tspan dy="2.1" font-size="6.8">g</tspan><tspan dy="-2.1"> ≈ 136 K</tspan></text>
+  <path d="M797.5,196.45 C802.5,197.8 816.3,201.6 827.5,204.65 C838.8,207.7 852.5,211.8 865,214.9 C877.5,218.0 896.3,221.7 902.5,223.1" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <polygon points="895,222 902,215 909,222 902,229" fill="#dc2626"/>
+  <text x="902" y="246" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="600">慢冷：成核结晶（冰 I_h / I_c）</text>
+  <path d="M795,198.5 C797.5,206.7 805.0,232.3 810,247.7 C815.0,263.1 820.0,277.4 825,290.75 C830.0,304.1 835.0,316.7 840,327.65 C845.0,338.6 850.0,348.8 855,356.35 C860.0,363.9 867.5,370.0 870,372.75" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="860" y="316" font-size="10" fill="#134e4a" font-weight="700">急冷：跳过无人区</text>
+  <line x1="784" y1="196" x2="790" y2="196" stroke="#475569" stroke-width="1.5"/>
+  <text x="780" y="200" font-size="9.5" fill="#64748b" text-anchor="end">273 K</text>
+  <line x1="784" y1="222" x2="790" y2="222" stroke="#475569" stroke-width="1.5"/>
+  <text x="780" y="226" font-size="9.5" fill="#64748b" text-anchor="end">235</text>
+  <line x1="784" y1="283" x2="790" y2="283" stroke="#475569" stroke-width="1.5"/>
+  <text x="780" y="287" font-size="9.5" fill="#64748b" text-anchor="end">136</text>
+  <line x1="790" y1="383" x2="1050" y2="383" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="915" y="404" font-size="10" fill="#475569" text-anchor="middle">时间（对数示意）</text>
+  <rect x="1121.333934" y="191.075" width="167.332132" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1205" y="203.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">纯水门槛：大于约 10<tspan dy="-3.6" font-size="7.6">6</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">7</tspan><tspan dy="3.6"> K/s</tspan></text>
+  <text x="1060" y="232" font-size="10.5" fill="#475569">悬液里的盐、缓冲组分与蛋白是天然抗成核剂；</text>
+  <text x="1060" y="247" font-size="10.5" fill="#475569">薄膜内成核体积小、</text>
+  <text x="1060" y="262" font-size="10.5" fill="#475569">统计上难被命中——门槛被压到 10<tspan dy="-3.6" font-size="7.6">5</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">6</tspan><tspan dy="3.6"> K/s 的实测可及范围。</tspan></text>
+  <rect x="1107.184" y="287.5" width="195.63200000000003" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1205" y="299.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">液氮 77 K：Leidenfrost 气膜掐断热流</text>
+  <rect x="1078.447" y="319.5" width="253.10600000000002" height="17" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1205" y="331.6" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">液态乙烷约 90 K：液-液接触，换热高约一个数量级</text>
+  <text x="1060" y="366" font-size="10" fill="#64748b">丙烷（熔点约 86 K、液态温区更宽）同样胜任；</text>
+  <text x="1060" y="380" font-size="10" fill="#64748b">制冷剂的选择是传热的工程，而非温度的算术。</text>
+  <rect x="30" y="456" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="478.84" font-size="19" fill="#475569" font-weight="700">三、形态判据：衍射指纹与四形态对照</text>
+  <circle cx="185" cy="590" r="66" fill="none" stroke="#be185d" stroke-width="16" opacity="0.28"/>
+  <circle cx="185" cy="590" r="66" fill="none" stroke="#be185d" stroke-width="2"/>
+  <circle cx="185" cy="590" r="4" fill="#1e293b"/>
+  <text x="258" y="545" font-size="10" fill="#831843" font-weight="700">约 2.8 Å</text>
+  <text x="185" y="700" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">玻璃冰：宽弥散晕环、绝无锐环</text>
+  <text x="185" y="718" font-size="9.5" fill="#475569" text-anchor="middle">极大位置约 2.8 Å，随受热历史移向 3.7 Å</text>
+  <text x="330" y="594" font-size="13" fill="#64748b" text-anchor="middle" font-weight="700">vs</text>
+  <circle cx="475" cy="590" r="48" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="475" cy="590" r="78" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <circle cx="475" cy="590" r="4" fill="#1e293b"/>
+  <text x="516" y="556" font-size="9.5" fill="#991b1b" font-weight="700">3.67 Å</text>
+  <text x="536" y="528" font-size="9.5" fill="#991b1b" font-weight="700">1.92 Å</text>
+  <text x="475" y="700" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">结晶冰：尖锐环（六方与立方共有强反射位置）</text>
+  <text x="475" y="718" font-size="9.5" fill="#475569" text-anchor="middle">出现 3.67、1.92 Å 锐环即判定结晶</text>
+  <text x="185" y="740" font-size="9.5" fill="#64748b" text-anchor="middle">晕环位置的漂移是一次「温度履历」体检</text>
+  <rect x="620" y="500" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">形态</text>
+  <rect x="730" y="500" width="205" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="832.5" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">形成条件</text>
+  <rect x="935" y="500" width="225" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1047.5" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">衍射特征</text>
+  <rect x="1160" y="500" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="527.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">对样品</text>
+  <rect x="620" y="544" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="566" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">玻璃冰</text>
+  <rect x="730" y="544" width="205" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="832.5" y="566" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.6" font-size="7.6">6</tspan><tspan dy="3.6"> K/s 量级急冷</tspan></text>
+  <rect x="935" y="544" width="225" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1047.5" y="566" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 2.8 Å 宽晕环、无锐环</text>
+  <rect x="1160" y="544" width="190" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="566" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">结构原样封存</text>
+  <rect x="620" y="577" width="730" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="620" y="577" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="599" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">立方冰 I_c</text>
+  <rect x="730" y="577" width="205" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="832.5" y="599" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">冷却不充分或退火</text>
+  <rect x="935" y="577" width="225" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1047.5" y="599" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">尖锐环</text>
+  <rect x="1160" y="577" width="190" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="599" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">轻度畸变</text>
+  <rect x="620" y="610" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="632" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">六方冰 I_h</text>
+  <rect x="730" y="610" width="205" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="832.5" y="632" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">慢冷或升温重结晶</text>
+  <rect x="935" y="610" width="225" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1047.5" y="632" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">3.67、1.92 Å 等锐环</text>
+  <rect x="1160" y="610" width="190" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="632" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">机械损伤、畸变</text>
+  <rect x="620" y="643" width="730" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="620" y="643" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="675" y="665" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">回温的玻璃</text>
+  <rect x="730" y="643" width="205" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="832.5" y="665" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">升至 T_g 以上软化</text>
+  <rect x="935" y="643" width="225" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1047.5" y="665" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">晕环渐变</text>
+  <rect x="1160" y="643" width="190" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="665" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">流动破坏</text>
+  <text x="620" y="706" font-size="10.5" fill="#475569">反玻璃化的温度阶梯：越过约 136 K 玻璃先软化、晕环向低密度形态移动；约 160 K 上下立方冰锐环在晕环上发芽，数十秒内完成重结晶；</text>
+  <text x="620" y="721" font-size="10.5" fill="#475569">继续退火转相六方——链路红线约 130 K 正是安全裕度。</text>
+  <rect x="30" y="766" width="1340" height="212" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="788.84" font-size="19" fill="#475569" font-weight="700">四、两条玻璃化路线与 Dubochet 的方法论遗产</text>
+  <rect x="50" y="800" width="300" height="150" rx="8" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="66" y="824" font-size="12.5" fill="#134e4a" font-weight="700">无保护剂薄冰</text>
+  <text x="66" y="848" font-size="10" fill="#475569">小于 1 μm 水膜乙烷急冷；衬度干净、剂量负担最小；</text>
+  <text x="66" y="862" font-size="10" fill="#475569">单颗粒分析的正规路线（20–60 e<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">/Å</tspan><tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4"> 常规预算）。</tspan></text>
+  <rect x="149.9675" y="897.925" width="100.065" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="200" y="909.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">用速度与薄度换纯度</text>
+  <rect x="370" y="800" width="300" height="150" rx="8" fill="#fef3c7" fill-opacity="0.6" stroke="#d97706" stroke-width="1.6"/>
+  <text x="386" y="824" font-size="12.5" fill="#92400e" font-weight="700">深冷冻保护剂</text>
+  <text x="386" y="848" font-size="10" fill="#475569">高浓度甘油或蔗糖玻璃化厚样品（组织块、细胞团）；</text>
+  <text x="386" y="862" font-size="10" fill="#475569">代价是背景散射与剂量负担、渗透环境改变。</text>
+  <rect x="484.645" y="897.925" width="70.71000000000001" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="520" y="909.42" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">用化学换深度</text>
+  <text x="50" y="968" font-size="10" fill="#64748b">两条路线的剂量账：1 μm 薄冰与 200 μm 高压冷冻样品的散射厚度相差约两百倍——后者须经 CEMOVIS 低温切片或冷冻替代才进透射窗口。</text>
+  <rect x="700" y="800" width="640" height="150" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="716" y="824" font-size="12.5" fill="#1e293b" font-weight="700">Dubochet 1982：方法论闭环</text>
+  <text x="716" y="848" font-size="10" fill="#475569">薄液膜的制备、双侧急冷、液态乙烷制冷、低温转移与玻璃化程度检查（电子衍射验收：弥散晕环、绝无锐环）——完整闭环与 Lepault、</text>
+  <text x="716" y="862" font-size="10" fill="#475569">Freeman 等发表于《Journal of Microscopy》。</text>
+  <text x="716" y="884" font-size="10" fill="#475569">同批图像里玻璃冰中的病毒与膜泡形态完好，证明急冷本身不伤样品；2017 年诺贝尔化学奖表彰 Dubochet、</text>
+  <text x="716" y="898" font-size="10" fill="#475569">Frank 与 Henderson 三人，Dubochet 的获奖点正是「水的玻璃化及其在电镜中的应用」。</text>
+  <rect x="889" y="925.5" width="222" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1000" y="937.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">此后「原生水合状态」成为可日常操作的对象</text>
+</svg>

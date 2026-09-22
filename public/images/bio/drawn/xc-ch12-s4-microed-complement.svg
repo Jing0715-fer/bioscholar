@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">微晶电子衍射与互补技术</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">电子散射强约10<tspan dy="-5.8" font-size="12.2">3</tspan><tspan dy="5.8">倍、200kV下λ约0.025Å的近平面Ewald球；动力学精修把R从约20%拉回个位数；微克粉末即可鉴定晶型，2019年前后进入FDA语境；三问决策定路线</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、MicroED：电子照亮微晶的两面账本</text>
+  <text x="56" y="184" font-size="10" fill="#475569">2013 年 Gonen 组创立微晶电子衍射（MicroED）：把冷冻透射电镜当作衍射仪，对厚度数百纳米的蛋白微晶做连续旋进的电子衍射。</text>
+  <rect x="56" y="214" width="296" height="142" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="72" y="238" font-size="11.5" fill="#065f46" font-weight="700">有利的一面</text>
+  <text x="72" y="260" font-size="9.5" fill="#475569">① 弹性散射截面比 X 射线强约 10<tspan dy="-3.2" font-size="6.8">3</tspan><tspan dy="3.2"> 倍——亚微米晶体也给出高信噪斑点；</tspan></text>
+  <text x="72" y="273.5" font-size="9.5" fill="#475569">② 总剂量比冷冻电镜单颗粒成像低一至两个数量级，</text>
+  <text x="72" y="287" font-size="9.5" fill="#475569">损伤顾虑大幅缓解；③ 电子波长极短（200 kV 下约 0.025 Å）</text>
+  <text x="72" y="300.5" font-size="9.5" fill="#475569">。</text>
+  <rect x="368" y="214" width="296" height="142" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="384" y="238" font-size="11.5" fill="#991b1b" font-weight="700">代价的一面：动力学散射</text>
+  <text x="384" y="260" font-size="9.5" fill="#475569">电子被强散射后还会被再次散射，</text>
+  <text x="384" y="273.5" font-size="9.5" fill="#475569">观测强度不再简单正比于 |F|<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">——运动学近似下结构通常可解，</tspan></text>
+  <text x="384" y="287" font-size="9.5" fill="#475569">但小分子的 R 因子长期停在约 20%；动力学衍射精修</text>
+  <text x="384" y="300.5" font-size="9.5" fill="#475569">（Palatinus 等 2017 年）把多重散射显式建模后，</text>
+  <text x="384" y="314" font-size="9.5" fill="#475569">R 因子落回个位数，绝对构型可从电子衍射本身判定。</text>
+  <rect x="56" y="368" width="296" height="100" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="204" y="388" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">X 射线：Ewald 球面弯曲</text>
+  <line x1="70" y1="448" x2="148" y2="448" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <circle cx="168" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="168" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="168" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="190" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="190" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="190" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="212" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="212" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="212" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="234" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="234" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="234" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="256" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="256" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="256" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="278" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="278" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="278" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="300" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="300" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="300" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="322" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="322" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="322" cy="440" r="2.2" fill="#94a3b8"/>
+  <path d="M150,450 Q240,388 338,462" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <circle cx="186" cy="431" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <circle cx="233" cy="422" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <circle cx="290" cy="434" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <rect x="368" y="368" width="296" height="100" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="516" y="388" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">电子：Ewald 球近乎平面</text>
+  <line x1="382" y1="448" x2="460" y2="448" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <circle cx="480" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="480" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="480" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="501" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="501" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="501" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="522" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="522" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="522" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="543" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="543" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="543" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="564" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="564" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="564" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="585" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="585" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="585" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="606" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="606" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="606" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="627" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="627" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="627" cy="440" r="2.2" fill="#94a3b8"/>
+  <circle cx="648" cy="402" r="2.2" fill="#94a3b8"/>
+  <circle cx="648" cy="421" r="2.2" fill="#94a3b8"/>
+  <circle cx="648" cy="440" r="2.2" fill="#94a3b8"/>
+  <line x1="478" y1="444" x2="648" y2="438" stroke="#0369a1" stroke-width="2.6"/>
+  <circle cx="486" cy="443" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <circle cx="528" cy="441" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <circle cx="570" cy="440" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <circle cx="612" cy="439" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <circle cx="646" cy="438" r="3.6" fill="#be185d" stroke="#be123c" stroke-width="1"/>
+  <text x="56" y="486" font-size="9.5" fill="#64748b">小幅旋转即扫过大片倒易空间，完整度天然占优；蛋白 MicroED 的管线几乎全盘借用 X 射线晶体学：指标化、积分用惯用软件，</text>
+  <text x="56" y="499.5" font-size="9.5" fill="#64748b">精修照走第 10 章的机器——只是解读 R 与 B 时，须记得强度背后的物理学已然不同。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、工业爆发与蛋白侧的三岔路</text>
+  <rect x="736" y="188" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="803" y="210" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">微克级粉末</text>
+  <text x="803" y="230" font-size="8.5" fill="#475569" text-anchor="middle">配方样品常只有微晶与粉末</text>
+  <rect x="886" y="188" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="953" y="210" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">挑一颗晶体</text>
+  <text x="953" y="230" font-size="8.5" fill="#475569" text-anchor="middle">电镜里选亚微米单晶</text>
+  <rect x="1036" y="188" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1103" y="210" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">几分钟收数</text>
+  <text x="1103" y="230" font-size="8.5" fill="#475569" text-anchor="middle">即得可指标化衍射</text>
+  <rect x="1186" y="188" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1253" y="210" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">晶型指认</text>
+  <text x="1253" y="230" font-size="8.5" fill="#475569" text-anchor="middle">多晶型、盐与共晶、痕量杂晶</text>
+  <line x1="872" y1="219" x2="884" y2="219" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="1022" y1="219" x2="1034" y2="219" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="1172" y1="219" x2="1184" y2="219" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="736" y="268" font-size="9.5" fill="#475569">自动化电镜整夜扫描载网、逐晶收数；样品无需溶解重结晶——历史留样与失效分析皆可回收，晶型管理的成本结构由此改写，</text>
+  <text x="736" y="281" font-size="9.5" fill="#475569">制药界的电镜实验室成建制出现。</text>
+  <rect x="807.355" y="321.5" width="165.29" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="890" y="333.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">2019 年前后进入 FDA 申报语境</text>
+  <rect x="1078.9" y="321.5" width="162.20000000000002" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1160" y="333.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">绝对构型可从电子衍射本身判定</text>
+  <rect x="736" y="352" width="588" height="52" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="752" y="370" font-size="9.5" fill="#475569">蛋白侧定位「快筛与补位」：标杆体系（溶菌酶、蛋白酶 K）之外，已扩展到膜蛋白的 LCP 微晶（不离开脂相直接上电镜）</text>
+  <text x="752" y="383" font-size="9.5" fill="#475569">与肽类小体系。</text>
+  <rect x="736" y="424" width="132" height="100" rx="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="802" y="460" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">结晶 hit</text>
+  <text x="802" y="482" font-size="9" fill="#475569" text-anchor="middle">见微晶先问晶体学前途</text>
+  <rect x="912" y="424" width="428" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="928" y="445" font-size="9.3" fill="#475569">① 微晶种放大（第 3 章）：长成 20 μm 以上常规晶体，走同步辐射成熟管线</text>
+  <rect x="912" y="464" width="428" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="928" y="485" font-size="9.3" fill="#475569">② 晶体薄而小、生长不可放大：直接 MicroED，电镜立刻给数</text>
+  <rect x="912" y="504" width="428" height="34" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="928" y="525" font-size="9.3" fill="#475569">③ 微晶数量庞大且均匀：转串晶（XFEL 或 SSX，第 1 节）</text>
+  <line x1="870" y1="446" x2="910" y2="441" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="870" y1="474" x2="910" y2="481" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="870" y1="502" x2="910" y2="521" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="736" y="556" font-size="8.8" fill="#64748b">三条转轨的公共前提：成熟的数据管线——MicroED 借用 X 射线全套基建（从指标化到精修），这是它扩张最快的制度性原因。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、互补决策：样品形态定路线</text>
+  <rect x="56" y="612" width="192" height="64" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="152" y="634" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">第一问：结晶性</text>
+  <text x="152" y="652" font-size="9" fill="#475569" text-anchor="middle">能否长出晶体？</text>
+  <rect x="262" y="612" width="192" height="64" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="358" y="634" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">第二问：尺寸与均一性</text>
+  <text x="358" y="652" font-size="9" fill="#475569" text-anchor="middle">微晶纳晶，还是均一大分子？</text>
+  <rect x="468" y="612" width="192" height="64" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="564" y="634" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">第三问：分辨率需求</text>
+  <text x="564" y="652" font-size="9" fill="#475569" text-anchor="middle">需要氢吗？要多快？</text>
+  <rect x="56" y="700" width="186" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="727.5" font-size="10.3" fill="#1e293b" text-anchor="middle" font-weight="700">场景</text>
+  <rect x="242" y="700" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="727.5" font-size="10.3" fill="#1e293b" text-anchor="middle" font-weight="700">首选路线</text>
+  <rect x="452" y="700" width="212" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="727.5" font-size="10.3" fill="#1e293b" text-anchor="middle" font-weight="700">判据</text>
+  <rect x="56" y="744" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="762.5" font-size="9.3" fill="#1e293b" text-anchor="middle" font-weight="700">可长常规晶体</text>
+  <rect x="242" y="744" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="762.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">同步辐射旋转法</text>
+  <rect x="452" y="744" width="212" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="762.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">分辨率与流程最优</text>
+  <rect x="56" y="770" width="608" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="770" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="788.5" font-size="9.3" fill="#1e293b" text-anchor="middle" font-weight="700">只有微晶纳晶</text>
+  <rect x="242" y="770" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="788.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">MicroED 或串晶</text>
+  <rect x="452" y="770" width="212" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="788.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">电子强散射或每晶一发</text>
+  <rect x="56" y="796" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="814.5" font-size="9.3" fill="#1e293b" text-anchor="middle" font-weight="700">不结晶的均一大分子</text>
+  <rect x="242" y="796" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="814.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">cryo-EM 单颗粒</text>
+  <rect x="452" y="796" width="212" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="814.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">无结晶门槛</text>
+  <rect x="56" y="822" width="608" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="822" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="840.5" font-size="9.3" fill="#1e293b" text-anchor="middle" font-weight="700">需要氢与质子化态</text>
+  <rect x="242" y="822" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="840.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">中子衍射</text>
+  <rect x="452" y="822" width="212" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="840.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">氢直接成像</text>
+  <rect x="56" y="848" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="866.5" font-size="9.3" fill="#1e293b" text-anchor="middle" font-weight="700">飞秒动力学</text>
+  <rect x="242" y="848" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="866.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">XFEL 时间分辨</text>
+  <rect x="452" y="848" width="212" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="866.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">衍射先于破坏</text>
+  <rect x="56" y="874" width="608" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="874" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="149" y="892.5" font-size="9.3" fill="#1e293b" text-anchor="middle" font-weight="700">晶型与绝对构型</text>
+  <rect x="242" y="874" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="347" y="892.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">MicroED</text>
+  <rect x="452" y="874" width="212" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="892.5" font-size="9.3" fill="#475569" text-anchor="middle" font-weight="500">微克样品即可</text>
+  <text x="56" y="922" font-size="9.5" fill="#475569">三类技术在 2 至 3 Å 区间交火，真正的分水岭在样品形态而非装置名号——这是历史上第一次「不结晶也有原子分辨率」；晶体学的应答：</text>
+  <text x="56" y="935" font-size="9.5" fill="#475569">把周期性带来的信噪与精确度延伸到微晶，同时坦然承认边界的重新划定。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、自动化、AI 与下一个百年</text>
+  <rect x="736" y="606" width="288" height="84" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="752" y="628" font-size="11" fill="#075985" font-weight="700">无人化线站</text>
+  <text x="752" y="646" font-size="9" fill="#475569">机器人换样、自动对光、视觉识别在载环上自动寻晶对中；</text>
+  <text x="752" y="658" font-size="9" fill="#475569">「自动指标化-整合-精修」闭环把第 6 章与第 10 章串成无人值守流水线，</text>
+  <text x="752" y="670" font-size="9" fill="#475569">远程操作成常态。</text>
+  <rect x="1040" y="606" width="296" height="84" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="1056" y="628" font-size="11" fill="#4c1d95" font-weight="700">AlphaFold 加速分子置换</text>
+  <text x="1056" y="646" font-size="9" fill="#475569">预测模型作 MR 搜索模型大幅提高成功率（第 7 章），</text>
+  <text x="1056" y="658" font-size="9" fill="#475569">「先预测后实验」成默认起手式；但预测给不出配体、离子、水、</text>
+  <text x="1056" y="670" font-size="9" fill="#475569">交替构象与真实系综——验证（第 11 章）反而更吃重。</text>
+  <text x="736" y="714" font-size="10.5" fill="#1e293b" font-weight="700">从劳厄到 XFEL 的 110 余年：光源-探测器-算法三线并进</text>
+  <text x="884" y="743" font-size="10" fill="#475569" text-anchor="end" font-weight="700">光源</text>
+  <line x1="900" y1="738" x2="1330" y2="738" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <circle cx="916" cy="738" r="5" fill="#0369a1"/>
+  <text x="916" y="726" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">X 射线管</text>
+  <circle cx="1100" cy="738" r="5" fill="#0369a1"/>
+  <text x="1100" y="726" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">同步辐射（1970 年代）</text>
+  <circle cx="1290" cy="738" r="5" fill="#0369a1"/>
+  <text x="1290" y="726" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">XFEL（2009）</text>
+  <text x="884" y="777" font-size="10" fill="#475569" text-anchor="end" font-weight="700">探测器</text>
+  <line x1="900" y1="772" x2="1330" y2="772" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <circle cx="916" cy="772" r="5" fill="#0369a1"/>
+  <text x="916" y="760" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">胶片</text>
+  <circle cx="1100" cy="772" r="5" fill="#0369a1"/>
+  <text x="1100" y="760" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">影像板</text>
+  <circle cx="1290" cy="772" r="5" fill="#0369a1"/>
+  <text x="1290" y="760" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">像素阵列探测器</text>
+  <text x="884" y="811" font-size="10" fill="#475569" text-anchor="end" font-weight="700">算法</text>
+  <line x1="900" y1="806" x2="1330" y2="806" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <circle cx="916" cy="806" r="5" fill="#0369a1"/>
+  <text x="916" y="794" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">Patterson（1934）</text>
+  <circle cx="1100" cy="806" r="5" fill="#0369a1"/>
+  <text x="1100" y="794" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">最大似然（1990 年代）</text>
+  <circle cx="1290" cy="806" r="5" fill="#0369a1"/>
+  <text x="1290" y="794" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="600">AlphaFold（2021）</text>
+  <rect x="736" y="842" width="142" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="807" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">剂量边界</text>
+  <text x="807" y="880" font-size="8.5" fill="#475569" text-anchor="middle">衍射先于破坏绕开</text>
+  <rect x="888" y="842" width="142" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="959" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">尺寸边界</text>
+  <text x="959" y="880" font-size="8.5" fill="#475569" text-anchor="middle">MicroED 与串晶亚微米</text>
+  <rect x="1040" y="842" width="142" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1111" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">温度边界</text>
+  <text x="1111" y="880" font-size="8.5" fill="#475569" text-anchor="middle">室温串晶回摆</text>
+  <rect x="1192" y="842" width="142" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1263" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">时间边界</text>
+  <text x="1263" y="880" font-size="8.5" fill="#475569" text-anchor="middle">飞秒泵浦-探测</text>
+  <text x="736" y="908" font-size="9.5" fill="#64748b">每一次革命都开一扇新门；第 11 章的结论在新技术上逐一复检——XFEL 图案的合并统计、MicroED 的动力学精修、</text>
+  <text x="736" y="921" font-size="9.5" fill="#64748b">预测模型的 MR 起点——「让数据说话、让验证审判」的纪律一以贯之，全书十二章至此收束。</text>
+</svg>

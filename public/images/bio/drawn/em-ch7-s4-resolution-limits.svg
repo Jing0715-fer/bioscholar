@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">生物样品的分辨率极限：一份逐项记账的清单</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">Henderson极限约20e⁻/Å²（实践40–60），每e⁻/Å²加B约1–2Å²；冰厚30–100nm安全、超100–200nmWPOA失效；DQE约0.3、3Å取0.8–1.1Å/像素；apoferritin1.2Å</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">为现实峰值</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Henderson 剂量账本与频率分层曝光</text>
+  <rect x="74.39986800000003" y="178.65" width="231.20026399999995" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="190" y="191.96" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">液氮温度约 20 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">（Henderson 1995）</tspan></text>
+  <rect x="404.36516800000004" y="178.65" width="131.26966399999998" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="470" y="191.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">实践预算 40–60 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <rect x="118.156612" y="214.65" width="183.686776" height="18.7" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="210" y="227.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">每 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7"> 使 B 因子增加约 1–2 Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <rect x="426" y="214.65" width="108" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="480" y="227.96" font-size="11" fill="#475569" text-anchor="middle">剂量预算不容商量</text>
+  <rect x="80" y="290" width="380" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="470" x2="80" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="492" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="460" y1="470" x2="460" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <line x1="74" y1="470" x2="80" y2="470" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="474" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="74" y1="290" x2="80" y2="290" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="294" font-size="13" fill="#64748b" text-anchor="end">临界曝光</text>
+  <text x="270" y="514" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">空间频率 g（示意）</text>
+  <text x="270" y="278" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">信号衰减一半的临界曝光随频率急剧缩短</text>
+  <line x1="454" y1="470" x2="468" y2="470" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <path d="M80.0,290.0 L84.8,295.3 L89.5,300.6 L94.3,305.7 L99.0,310.7 L103.8,315.7 L108.5,320.5 L113.3,325.3 L118.0,329.9 L122.8,334.5 L127.5,339.0 L132.3,343.4 L137.0,347.7 L141.8,351.9 L146.5,356.0 L151.3,360.0 L156.0,363.9 L160.8,367.8 L165.5,371.5 L170.3,375.2 L175.0,378.8 L179.8,382.3 L184.5,385.7 L189.3,389.0 L194.0,392.3 L198.8,395.4 L203.5,398.5 L208.3,401.5 L213.0,404.5 L217.8,407.3 L222.5,410.1 L227.3,412.8 L232.0,415.4 L236.8,418.0 L241.5,420.4 L246.3,422.8 L251.0,425.1 L255.8,427.4 L260.5,429.6 L265.3,431.7 L270.0,433.7 L274.8,435.7 L279.5,437.6 L284.3,439.5 L289.0,441.2 L293.8,442.9 L298.5,444.6 L303.3,446.2 L308.0,447.7 L312.8,449.1 L317.5,450.5 L322.3,451.9 L327.0,453.2 L331.8,454.4 L336.5,455.6 L341.3,456.7 L346.0,457.7 L350.8,458.7 L355.5,459.7 L360.3,460.6 L365.0,461.4 L369.8,462.2 L374.5,463.0 L379.3,463.7 L384.0,464.4 L388.8,465.0 L393.5,465.5 L398.3,466.1 L403.0,466.6 L407.8,467.0 L412.5,467.4 L417.3,467.8 L422.0,468.1 L426.8,468.5 L431.5,468.7 L436.3,469.0 L441.0,469.2 L445.8,469.4 L450.5,469.5 L455.3,469.6 L460.0,469.7" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="270" y="312" font-size="10.5" fill="#075985" text-anchor="middle">低频容得下高剂量、高频只耐几度辐照</text>
+  <text x="480" y="300" font-size="10.5" fill="#475569">Grant 与 Grigorieff 2015 年以轮状病毒 VP6 的 2.6 Å 重构实测「最优曝光」的频率依赖：</text>
+  <text x="480" y="315" font-size="10.5" fill="#475569">低频的最优剂量高于高频——同一张照片里不同频率各有性价比最高的剂量，</text>
+  <text x="480" y="330" font-size="10.5" fill="#475569">剂量加权据此逐帧赋权。</text>
+  <rect x="426.11" y="461.075" width="147.78" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="500" y="473.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">电影帧按累积剂量逐帧加权</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、样品厚度：WPOA 的失效线</text>
+  <line x1="740" y1="300" x2="1330" y2="300" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <text x="1035" y="192" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">冰厚（nm）</text>
+  <line x1="782.1428571428571" y1="293" x2="782.1428571428571" y2="307" stroke="#475569" stroke-width="2"/>
+  <text x="782.1428571428571" y="324" font-size="11" fill="#475569" text-anchor="middle">30</text>
+  <line x1="880.4761904761905" y1="293" x2="880.4761904761905" y2="307" stroke="#475569" stroke-width="2"/>
+  <text x="880.4761904761905" y="324" font-size="11" fill="#475569" text-anchor="middle">100</text>
+  <line x1="1020.952380952381" y1="293" x2="1020.952380952381" y2="307" stroke="#475569" stroke-width="2"/>
+  <text x="1020.952380952381" y="324" font-size="11" fill="#475569" text-anchor="middle">200</text>
+  <line x1="1301.904761904762" y1="293" x2="1301.904761904762" y2="307" stroke="#475569" stroke-width="2"/>
+  <text x="1301.904761904762" y="324" font-size="11" fill="#475569" text-anchor="middle">400</text>
+  <rect x="782.1428571428571" y="208" width="98.33333333333333" height="92" rx="4" fill="#d1fae5" fill-opacity="0.8" stroke="#059669" stroke-width="1.4"/>
+  <text x="839.3095238095239" y="224" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">常规单颗粒冰厚 30–100 nm（安全区）</text>
+  <rect x="880.4761904761905" y="208" width="140.47619047619048" height="92" rx="4" fill="#fef3c7" fill-opacity="0.7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="950.7142857142858" y="244" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">WPOA 失效线</text>
+  <text x="950.7142857142858" y="260" font-size="9.5" fill="#92400e" text-anchor="middle">100–200 nm</text>
+  <text x="1161.4285714285716" y="226" font-size="9.5" fill="#991b1b" text-anchor="middle">多重散射显著、非弹性背景抬升</text>
+  <text x="730" y="360" font-size="10.5" fill="#475569">弱相位物体近似要求相位偏移远小于一弧度，相位随厚度线性积累；散射平均自由程的底数：</text>
+  <text x="730" y="375" font-size="10.5" fill="#475569">100–300 kV 电子在生物物质中弹性与非弹性平均自由程分别约 100–300 nm 与 50–150 nm。</text>
+  <rect x="775.55375" y="419.075" width="228.8925" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="890" y="431.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">300 kV 穿 100 nm 冰：非弹性事件不足一次</text>
+  <rect x="1086.15245" y="419.075" width="207.6951" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1190" y="431.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">穿 400 nm：达两三次，信噪与解释同损</text>
+  <rect x="811.385" y="457.075" width="157.23" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="890" y="469.78" font-size="10.5" fill="#475569" text-anchor="middle">厚度是第 6 章制样的第一变量</text>
+  <rect x="1120.52" y="457.075" width="138.96" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1190" y="469.78" font-size="10.5" fill="#475569" text-anchor="middle">滤冰与 blot 优化在此收账</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、束致运动与构象异质性</text>
+  <rect x="70" y="642" width="300" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="812" x2="70" y2="818" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="834" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="370" y1="812" x2="370" y2="818" stroke="#475569" stroke-width="1.8"/>
+  <line x1="64" y1="812" x2="70" y2="812" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="816" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="64" y1="659" x2="70" y2="659" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="663" font-size="13" fill="#64748b" text-anchor="end">幅度</text>
+  <text x="220" y="856" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">曝光时间</text>
+  <text x="220" y="630" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">束致运动：初期最大、随后衰减（Brilot 2012）</text>
+  <line x1="364" y1="812" x2="378" y2="812" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <path d="M70.0,645.4 L75.0,656.0 L80.0,665.8 L85.0,675.0 L90.0,683.6 L95.0,691.6 L100.0,699.0 L105.0,706.0 L110.0,712.5 L115.0,718.5 L120.0,724.1 L125.0,729.4 L130.0,734.3 L135.0,738.8 L140.0,743.1 L145.0,747.1 L150.0,750.8 L155.0,754.2 L160.0,757.4 L165.0,760.4 L170.0,763.2 L175.0,765.8 L180.0,768.3 L185.0,770.5 L190.0,772.7 L195.0,774.6 L200.0,776.5 L205.0,778.2 L210.0,779.8 L215.0,781.3 L220.0,782.6 L225.0,783.9 L230.0,785.1 L235.0,786.3 L240.0,787.3 L245.0,788.3 L250.0,789.2 L255.0,790.1 L260.0,790.9 L265.0,791.6 L270.0,792.3 L275.0,792.9 L280.0,793.5 L285.0,794.1 L290.0,794.6 L295.0,795.1 L300.0,795.6 L305.0,796.0 L310.0,796.4 L315.0,796.7 L320.0,797.1 L325.0,797.4 L330.0,797.7 L335.0,798.0 L340.0,798.2 L345.0,798.5 L350.0,798.7 L355.0,798.9 L360.0,799.1 L365.0,799.3 L370.0,799.5" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <text x="400" y="640" font-size="10.5" fill="#475569">辐照升温、</text>
+  <text x="400" y="655" font-size="10.5" fill="#475569">充电与网格形变让颗粒在曝光期内走出数埃至数十埃——「先拍的帧最糊」的反直觉现象由此而来。</text>
+  <text x="400" y="670" font-size="10.5" fill="#475569">全局加局部轨迹拟合追回大部分，</text>
+  <text x="400" y="685" font-size="10.5" fill="#475569">残余埃级模糊继续压制高频，</text>
+  <text x="400" y="700" font-size="10.5" fill="#475569">贝叶斯抛光逐颗粒再救一程。</text>
+  <text x="50" y="860" font-size="11.5" fill="#1e293b" font-weight="700">构象与化学计量异质性：平均的分辨率天花板</text>
+  <rect x="146.925" y="883.075" width="126.15" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="210" y="895.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">离散态：三维分类拆解</text>
+  <rect x="409.8875" y="883.075" width="180.225" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="500" y="895.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">连续柔性：多刚体或连续构象分析</text>
+  <text x="360" y="938" font-size="10" fill="#64748b" text-anchor="middle">「同一结构」的假设自带误差——不均一的颗粒硬平均，只会把共同部分留下、把变化部分抹糊</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、检测器、采样与现实的峰值</text>
+  <rect x="762.5" y="687.75" width="80" height="20.249999999999996" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="802.5" y="678.75" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">&lt;0.1</text>
+  <text x="802.5" y="728" font-size="12.5" fill="#64748b" text-anchor="middle">CCD（闪烁体+光纤）</text>
+  <rect x="887.5" y="640.5" width="80" height="67.49999999999999" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="927.5" y="631.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 0.3</text>
+  <text x="927.5" y="728" font-size="12.5" fill="#64748b" text-anchor="middle">直接探测计数</text>
+  <text x="865" y="612" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">奈奎斯特处 DQE（无单位）</text>
+  <text x="1020" y="624" font-size="10.5" fill="#475569">直接电子探测相机把 DQE 从 CCD 时代的不足 0.1 提升到约 0.3，</text>
+  <text x="1020" y="639" font-size="10.5" fill="#475569">并支持逐事件计数与电影输出；计数剂量率上限约 5–10 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/像素/秒。</tspan></text>
+  <rect x="970.97675" y="707.075" width="138.04649999999998" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1040" y="719.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">采样上限 = 2 倍像素尺寸</text>
+  <rect x="966.65075" y="739.075" width="146.6985" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1040" y="751.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">3 Å 目标取 0.8–1.1 Å/像素</text>
+  <rect x="973.25" y="771.075" width="133.5" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1040" y="783.78" font-size="10.5" fill="#475569" text-anchor="middle">过采摊薄计数、纯属浪费</text>
+  <text x="730" y="828" font-size="11.5" fill="#1e293b" font-weight="700">现实的峰值（第 12 章分辨率革命的起点）：</text>
+  <rect x="696.2953" y="851.075" width="307.40940000000006" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="850" y="863.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">apoferritin 约 1.2 Å（2020 年前后，Yip 与 Kato 等团队）</text>
+  <rect x="1096.2761" y="851.075" width="127.44779999999999" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1160" y="863.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">膜蛋白 1.7–2.5 Å 常态</text>
+  <rect x="768.1069" y="883.075" width="163.7862" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="850" y="895.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">小于 100 kDa 的蛋白普遍困难</text>
+  <rect x="1093.25" y="883.075" width="133.5" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1160" y="895.78" font-size="10.5" fill="#475569" text-anchor="middle">极限清单逐项记账后收束</text>
+</svg>

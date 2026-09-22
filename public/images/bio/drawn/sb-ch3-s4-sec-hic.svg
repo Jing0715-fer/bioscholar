@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">分子排阻层析与疏水相互作用层析</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">SEC按流体力学体积筛分，K<tspan dy="3.7" font-size="12.2">av</tspan><tspan dy="-3.7">=(V</tspan><tspan dy="3.7" font-size="12.2">e</tspan><tspan dy="-3.7">−V</tspan><tspan dy="3.7" font-size="12.2">0</tspan><tspan dy="-3.7">)/(V</tspan><tspan dy="3.7" font-size="12.2">t</tspan><tspan dy="-3.7">−V</tspan><tspan dy="3.7" font-size="12.2">0</tspan><tspan dy="-3.7">)，制备上样仅柱体积0.5–2%；HIC以0.8–1.5M硫酸铵高盐上样、降盐梯度洗脱；硫酸铵居Hofmeister序列盐析端</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、SEC：按流体力学体积筛分</text>
+  <text x="50" y="170" font-size="10.5" fill="#475569">SEC 不靠吸附而靠筛分：大分子被孔道排除、先流出（V<tspan dy="2.3" font-size="7.6">e</tspan><tspan dy="-2.3"> 趋近 V</tspan><tspan dy="2.3" font-size="7.6">0</tspan><tspan dy="-2.3">），小分子畅行全部孔道、后流出（趋近 V</tspan><tspan dy="2.3" font-size="7.6">t</tspan><tspan dy="-2.3">），</tspan></text>
+  <text x="50" y="185" font-size="10.5" fill="#475569">居中者部分进入——分配系数 K<tspan dy="2.3" font-size="7.6">av</tspan><tspan dy="-2.3"> 把这支「体积标尺」量化。</tspan></text>
+  <circle cx="100" cy="255" r="30" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="160" cy="275" r="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="88" cy="248" r="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <circle cx="112" cy="262" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <circle cx="100" cy="238" r="4.5" fill="#ffffff" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <circle cx="152" cy="272" r="5" fill="#ffffff" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <circle cx="168" cy="282" r="4" fill="#ffffff" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <circle cx="220" cy="232" r="9" fill="#be185d"/>
+  <text x="238" y="236" font-size="10" fill="#475569">大分子（如聚合体）：走孔外，V<tspan dy="2.2" font-size="7.2">e</tspan><tspan dy="-2.2"> 趋近 V</tspan><tspan dy="2.2" font-size="7.2">0</tspan></text>
+  <circle cx="220" cy="262" r="6.5" fill="#6d28d9"/>
+  <text x="238" y="266" font-size="10" fill="#475569">中等分子：部分进入孔道，K<tspan dy="2.2" font-size="7.2">av</tspan><tspan dy="-2.2"> 介于 0 与 1</tspan></text>
+  <circle cx="220" cy="292" r="4.5" fill="#0369a1"/>
+  <text x="238" y="296" font-size="10" fill="#475569">小分子：畅行全部孔道，V<tspan dy="2.2" font-size="7.2">e</tspan><tspan dy="-2.2"> 趋近 V</tspan><tspan dy="2.2" font-size="7.2">t</tspan></text>
+  <rect x="86.995684" y="320.65" width="206.008632" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="190" y="333.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">K<tspan dy="2.4" font-size="7.9">av</tspan><tspan dy="-2.4"> = (V</tspan><tspan dy="2.4" font-size="7.9">e</tspan><tspan dy="-2.4"> − V</tspan><tspan dy="2.4" font-size="7.9">0</tspan><tspan dy="-2.4">)/(V</tspan><tspan dy="2.4" font-size="7.9">t</tspan><tspan dy="-2.4"> − V</tspan><tspan dy="2.4" font-size="7.9">0</tspan><tspan dy="-2.4">)，取值 0 至 1</tspan></text>
+  <rect x="100" y="375" width="280" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="100" y1="472.5" x2="380" y2="472.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="170" y1="505" x2="170" y2="375" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="440" x2="380" y2="440" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="240" y1="505" x2="240" y2="375" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="407.5" x2="380" y2="407.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="310" y1="505" x2="310" y2="375" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="100" y1="505" x2="100" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="527" font-size="13" fill="#64748b" text-anchor="middle">V<tspan dy="2.9" font-size="9.4">t</tspan></text>
+  <line x1="380" y1="505" x2="380" y2="511" stroke="#475569" stroke-width="1.8"/>
+  <text x="380" y="527" font-size="13" fill="#64748b" text-anchor="middle">V<tspan dy="2.9" font-size="9.4">0</tspan></text>
+  <line x1="94" y1="492" x2="100" y2="492" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="496" font-size="13" fill="#64748b" text-anchor="end">小</text>
+  <line x1="94" y1="388" x2="100" y2="388" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="392" font-size="13" fill="#64748b" text-anchor="end">大</text>
+  <text x="240" y="549" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">洗脱体积 V<tspan dy="3.3" font-size="10.8">e</tspan></text>
+  <text x="54" y="440" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">log MW</text>
+  <text x="240" y="363" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">校准曲线：log MW 对 V<tspan dy="3.5" font-size="11.5">e</tspan></text>
+  <path d="M122.4,388.0 L240.0,440.0 L357.6,492.0" fill="none" stroke="#6d28d9" stroke-width="2.4"/>
+  <circle cx="128" cy="390.6" r="4" fill="#4c1d95"/>
+  <text x="136" y="386" font-size="9.5" fill="#4c1d95" font-weight="700">Superose 6：至约 5000 kDa</text>
+  <circle cx="170" cy="412.7" r="4" fill="#4c1d95"/>
+  <text x="178" y="404" font-size="9.5" fill="#4c1d95" font-weight="700">Superdex 200：10–600 kDa</text>
+  <circle cx="273.6" cy="458.2" r="4" fill="#4c1d95"/>
+  <text x="281" y="448" font-size="9.5" fill="#4c1d95" font-weight="700">Superdex 75：3–70 kDa</text>
+  <rect x="440.9126" y="171.075" width="188.1748" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="535" y="183.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">一柱三用：精纯 · 换液 · 聚合态分析</text>
+  <rect x="453.78245" y="203.075" width="162.43510000000003" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="535" y="215.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">制备上样不超过柱体积 0.5–2%</text>
+  <rect x="438.905" y="235.075" width="192.19" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="535" y="247.78" font-size="10.5" fill="#1e293b" text-anchor="middle">G-25 脱盐：组别分离，上样可达 30%</text>
+  <rect x="468.40999999999997" y="267.075" width="133.18" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="535" y="279.78" font-size="10.5" fill="#1e293b" text-anchor="middle">分析柱流速 0.5–1 mL/min</text>
+  <text x="415" y="312" font-size="10" fill="#475569">分辨率随柱长的平方根增加——加长柱或两柱串联是唯一正道。</text>
+  <text x="415" y="350" font-size="10" fill="#475569">8–13 μm 增效介质较传统约 34 μm 把塔板高度压低两三倍，</text>
+  <text x="415" y="364" font-size="10" fill="#475569">同柱长下分辨率提升四到五成，还容许更高流速。</text>
+  <text x="415" y="410" font-size="10" fill="#475569">分析型 SEC 以标准曲线线性段估算分子量，</text>
+  <text x="415" y="424" font-size="10" fill="#475569">配多角度光散射 SEC-MALS 可得绝对分子量与化学计量</text>
+  <text x="415" y="438" font-size="10" fill="#475569">（参见第 4 章质控）。</text>
+  <text x="415" y="470" font-size="10" fill="#475569">等度洗脱、条件温和，</text>
+  <text x="415" y="484" font-size="10" fill="#475569">但每个峰都是「稀释器」——峰收集须预判体积并安排浓缩衔接。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、分析型与制备型 SEC：参数分野</text>
+  <text x="730" y="172" font-size="10.5" fill="#475569">「信息优先还是物质优先」——两种柱型给出两套参数：</text>
+  <rect x="730" y="200" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="227.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="840" y="200" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="227.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">分析型 SEC</text>
+  <rect x="1080" y="200" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="227.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">制备型 SEC</text>
+  <rect x="730" y="244" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="269.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">柱规格</text>
+  <rect x="840" y="244" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="269.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">10 × 300 mm，约 24 mL</text>
+  <rect x="1080" y="244" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="269.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">26 × 600 mm 串联，约 640 mL</text>
+  <rect x="730" y="284" width="610" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="284" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="309.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">介质粒径</text>
+  <rect x="840" y="284" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="309.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">8–13 μm 增效介质</text>
+  <rect x="1080" y="284" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="309.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">30–45 μm 耐压介质</text>
+  <rect x="730" y="324" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="349.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">流速</text>
+  <rect x="840" y="324" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="349.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.5–0.75 mL/min</text>
+  <rect x="1080" y="324" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="349.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 1–2 mL/min（低线速）</text>
+  <rect x="730" y="364" width="610" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="364" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="389.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">上样量</text>
+  <rect x="840" y="364" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="389.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">柱体积 0.3–0.5%（约 100 μL）</text>
+  <rect x="1080" y="364" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="389.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">柱体积 0.5–2%（数 mL）</text>
+  <rect x="730" y="404" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="429.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">单轮时长</text>
+  <rect x="840" y="404" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="429.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">30–45 分钟</text>
+  <rect x="1080" y="404" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="429.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">数小时</text>
+  <rect x="730" y="444" width="610" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="444" width="110" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="469.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">定位</text>
+  <rect x="840" y="444" width="240" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="469.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">聚合态监测与分子量估算</text>
+  <rect x="1080" y="444" width="260" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1210" y="469.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">精纯、换液与批量制备</text>
+  <text x="730" y="504" font-size="10" fill="#475569">分析柱以塔板数与保留时间的重复性为先，上样以微克至毫克计；制备柱牺牲分辨率换通量与回收。峰收集执行「宁可窄收不全、</text>
+  <text x="730" y="518" font-size="10" fill="#475569">不可宽收掺杂质」——两端参数表贴在层析柜门上，是纯化平台的常见风景。上样带宽直接叠加在峰宽上，</text>
+  <text x="730" y="532" font-size="10" fill="#475569">故上样体积是 SEC 分辨率的第一变量。</text>
+  <rect x="30" y="578" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、HIC：借盐暴露疏水面</text>
+  <rect x="45" y="616" width="190" height="66" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="140" y="636" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">高盐上样</text>
+  <text x="59" y="654" font-size="9.5" fill="#475569">0.8–1.5 M 硫酸铵（或硫酸钠）</text>
+  <text x="59" y="666" font-size="9.5" fill="#475569">把蛋白「挤出」溶剂</text>
+  <rect x="251" y="616" width="190" height="66" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="346" y="636" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">结合</text>
+  <text x="265" y="654" font-size="9.5" fill="#475569">疏水面与苯基／丁基／辛基配基结合挂柱</text>
+  <rect x="457" y="616" width="190" height="66" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="552" y="636" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">降盐洗脱</text>
+  <text x="471" y="654" font-size="9.5" fill="#475569">降低盐浓度梯度，把溶解度还给蛋白</text>
+  <line x1="239" y1="649" x2="247" y2="649" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="445" y1="649" x2="453" y2="649" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="106.72399999999999" y="707.5" width="156.55200000000002" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="185" y="719.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">苯基：默认首发（π 相互作用）</text>
+  <rect x="362.1" y="707.5" width="75.80000000000001" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="400" y="719.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">丁基：最温和</text>
+  <rect x="532.25" y="707.5" width="65.5" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="565" y="719.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">辛基：最猛</text>
+  <text x="45" y="748" font-size="10" fill="#475569">辛基适于疏水性弱、挂不住的目标；丁基留给疏水性强、易在辛基柱上「粘死」的蛋白；两档配基密度与三种链长铺开的筛选矩阵，</text>
+  <text x="45" y="762" font-size="10" fill="#475569">是 HIC 优化的第一轮动作。</text>
+  <rect x="122.98479999999999" y="791.075" width="234.03040000000001" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="240" y="803.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">结合过强：辅以 10–50% 乙二醇或温和去污剂</text>
+  <rect x="421.7025" y="791.075" width="156.595" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="500" y="803.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">「宁弱而可洗，勿强而失收」</text>
+  <text x="45" y="832" font-size="10" fill="#64748b">结合过强者高盐洗脱困难、回收率差；结合过弱者高盐也挂不住。</text>
+  <text x="45" y="866" font-size="10" fill="#475569">工业高光：抗体药物偶联物（ADC）的载药数（0 至 8）按疏水程度被 HIC 梯度逐一分开；疏水电荷诱导色谱（HCIC）</text>
+  <text x="45" y="880" font-size="10" fill="#475569">以 MEP 配基在中性 pH 捕获抗体、pH 降至约 4 时配基质子化相互排斥而洗脱——耐酸抗体的盐耐受替代路线。</text>
+  <text x="45" y="894" font-size="10" fill="#475569">结构生物学流程中 HIC 多用于精纯。</text>
+  <rect x="710" y="578" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="600.84" font-size="19" fill="#475569" font-weight="700">四、Hofmeister 序列、Cohn 方程与三机理协同</text>
+  <text x="1035" y="606" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">阴离子盐析能力自左向右递减</text>
+  <circle cx="775" cy="630" r="20" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="775" y="633.24" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="700">SO<tspan dy="2.0" font-size="6.5">4</tspan><tspan dy="-5.0" font-size="6.5">2−</tspan></text>
+  <circle cx="905" cy="630" r="18" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="905" y="633.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">Cl<tspan dy="-3.4" font-size="7.2">−</tspan></text>
+  <circle cx="1025" cy="630" r="18" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1025" y="633.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">Br<tspan dy="-3.4" font-size="7.2">−</tspan></text>
+  <circle cx="1145" cy="630" r="18" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="1145" y="633.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">I<tspan dy="-3.4" font-size="7.2">−</tspan></text>
+  <circle cx="1268" cy="630" r="19" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1268" y="633.42" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">SCN<tspan dy="-3.2" font-size="6.8">−</tspan></text>
+  <line x1="740" y1="664" x2="1330" y2="664" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="740" y="686" font-size="9.5" fill="#134e4a" font-weight="700">盐析端</text>
+  <text x="1330" y="686" font-size="9.5" fill="#991b1b" text-anchor="end" font-weight="700">盐溶端</text>
+  <text x="740" y="706" font-size="10" fill="#475569">阳离子 NH<tspan dy="2.2" font-size="7.2">4</tspan><tspan dy="-5.6" font-size="7.2">+</tspan><tspan dy="3.4">、K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">、Na</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 居盐析端——硫酸根与铵根双端居首，硫酸铵因此成为经典盐析剂。</tspan></text>
+  <rect x="766.549332" y="731.075" width="126.901336" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="830" y="743.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">Cohn：log S = β − K<tspan dy="2.3" font-size="7.6">s</tspan><tspan dy="-2.3">·I</tspan></text>
+  <rect x="1025.48" y="731.075" width="189.04" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1120" y="743.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">接力设计：上一步洗脱＝下一步上样</text>
+  <text x="740" y="766" font-size="10" fill="#475569">溶解度 S 的对数随离子强度 I 线性下降；HIC 是这条曲线的可逆利用——高盐把蛋白推到接近析出使其挂柱，降盐再把溶解度还给它。</text>
+  <text x="740" y="779.5" font-size="10" fill="#475569">IEX 高盐洗脱组分补加硫酸铵至约 1 M 即可直接上 HIC，省去一步脱盐。</text>
+  <rect x="730" y="800" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="827.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">特性</text>
+  <rect x="840" y="800" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="827.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">SEC</text>
+  <rect x="1010" y="800" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1090" y="827.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">IEX</text>
+  <rect x="1170" y="800" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="827.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">HIC</text>
+  <rect x="730" y="844" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="864.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">分离依据</text>
+  <rect x="840" y="844" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="864.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">流体力学体积</text>
+  <rect x="1010" y="844" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1090" y="864.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">净电荷</text>
+  <rect x="1170" y="844" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="864.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">表面疏水性</text>
+  <rect x="730" y="874" width="610" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="874" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="894.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">上样限制</text>
+  <rect x="840" y="874" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="894.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">0.5–2% 柱体积</text>
+  <rect x="1010" y="874" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1090" y="894.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">容量内宽松</text>
+  <rect x="1170" y="874" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="894.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">高盐下容量内宽松</text>
+  <rect x="730" y="904" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="924.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率调节</text>
+  <rect x="840" y="904" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="924.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">柱长与上样量</text>
+  <rect x="1010" y="904" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1090" y="924.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">梯度体积</text>
+  <rect x="1170" y="904" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="924.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">梯度与配基谱</text>
+  <rect x="730" y="934" width="610" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="934" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="954.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">洗脱条件</text>
+  <rect x="840" y="934" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="954.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">等度温和</text>
+  <rect x="1010" y="934" width="160" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1090" y="954.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">盐梯度</text>
+  <rect x="1170" y="934" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="954.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">降盐梯度</text>
+  <text x="730" y="952" font-size="9.5" fill="#64748b">经典三步：亲和捕获后接 IEX 精纯，再以 SEC 收官换液；目标疏水性强则在 IEX 与 SEC 之间插入 HIC。</text>
+</svg>

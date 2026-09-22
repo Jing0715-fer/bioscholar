@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">反常散射与 SAD/MAD 定相</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">f=f<tspan dy="3.7" font-size="12.2">0</tspan><tspan dy="-3.7">+f′+if″：SeK边0.9795Å处f″约3.8e</tspan><tspan dy="-5.8" font-size="12.2">-</tspan><tspan dy="5.8">、f′陷至−8至−10；Bijvoet差异仅3–6%（含硫约1%），故须7–10倍冗余；SAD单峰配密度修饰成常态、MAD三波长剂量翻倍</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、吸收边上的 f′ 与 f″（以 Se K 边为例）</text>
+  <rect x="60" y="200" width="300" height="330" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="60" y1="306.07142857142856" x2="360" y2="306.07142857142856" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="55" y1="494.64285714285717" x2="60" y2="494.64285714285717" stroke="#475569" stroke-width="1.6"/>
+  <text x="51" y="498.64285714285717" font-size="10.5" fill="#64748b" text-anchor="end">−8</text>
+  <line x1="55" y1="400.3571428571429" x2="60" y2="400.3571428571429" stroke="#475569" stroke-width="1.6"/>
+  <text x="51" y="404.3571428571429" font-size="10.5" fill="#64748b" text-anchor="end">−4</text>
+  <line x1="55" y1="306.07142857142856" x2="60" y2="306.07142857142856" stroke="#475569" stroke-width="1.6"/>
+  <text x="51" y="310.07142857142856" font-size="10.5" fill="#64748b" text-anchor="end">0</text>
+  <line x1="55" y1="258.92857142857144" x2="60" y2="258.92857142857144" stroke="#475569" stroke-width="1.6"/>
+  <text x="51" y="262.92857142857144" font-size="10.5" fill="#64748b" text-anchor="end">2</text>
+  <line x1="55" y1="211.78571428571428" x2="60" y2="211.78571428571428" stroke="#475569" stroke-width="1.6"/>
+  <text x="51" y="215.78571428571428" font-size="10.5" fill="#64748b" text-anchor="end">4</text>
+  <path d="M60,295.4642857142858 C75.0,295.3 131.0,295.2 150,294.75714285714287 C169.0,294.4 169.0,297.5 174,293.1071428571429 C179.0,288.7 178.0,281.1 180,268.3571428571429 C182.0,255.6 183.0,223.6 186,216.5 C189.0,209.4 191.5,223.4 198,225.9285714285714 C204.5,228.5 213.0,230.1 225,231.82142857142856 C237.0,233.6 255.0,235.4 270,236.53571428571428 C285.0,237.7 300.0,238.1 315,238.89285714285717 C330.0,239.7 352.5,240.9 360,241.25" fill="none" stroke="#be185d" stroke-width="2.8"/>
+  <path d="M60,320.21428571428567 C75.0,320.6 131.0,320.2 150,322.57142857142856 C169.0,324.9 168.5,319.4 174,334.3571428571429 C179.5,349.3 179.8,381.5 183,412.1428571428571 C186.3,442.8 189.0,506.0 193.5,518.2142857142857 C198.0,530.4 202.3,497.8 210,485.2142857142857 C217.8,472.6 227.5,453.0 240,442.7857142857143 C252.5,432.6 265.0,429.4 285,423.92857142857144 C305.0,418.4 347.5,412.1 360,409.7857142857143" fill="none" stroke="#0369a1" stroke-width="2.8"/>
+  <rect x="72" y="215.38" width="12.100000000000001" height="9.24" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="92.1" y="223.96" font-size="11" fill="#475569">f″（吸收项）</text>
+  <rect x="180.54" y="215.38" width="12.100000000000001" height="9.24" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="200.64" y="223.96" font-size="11" fill="#475569">f′（色散项）</text>
+  <line x1="186" y1="206" x2="186" y2="526" stroke="#831843" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="186" y="550" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">峰</text>
+  <text x="186" y="568" font-size="9" fill="#64748b" text-anchor="middle">f″ 最大·0.9795 Å</text>
+  <line x1="210" y1="206" x2="210" y2="526" stroke="#075985" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="210" y="550" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">拐点</text>
+  <text x="210" y="568" font-size="9" fill="#64748b" text-anchor="middle">f′ 最低</text>
+  <line x1="324" y1="206" x2="324" y2="526" stroke="#4c1d95" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="324" y="550" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">远边</text>
+  <text x="324" y="568" font-size="9" fill="#64748b" text-anchor="middle">对照波长</text>
+  <text x="210" y="590" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">光子能量（自左向右升高，跨越 Se K 吸收边）／纵轴单位：电子</text>
+  <rect x="458.539552" y="202.95" width="122.920896" height="22.099999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="520" y="218.68" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">f = f<tspan dy="2.9" font-size="9.4">0</tspan><tspan dy="-2.9"> + f′ + i·f″</tspan></text>
+  <text x="386" y="252" font-size="10.5" fill="#475569">f″ 正比该波长的吸收截面，</text>
+  <text x="386" y="267" font-size="10.5" fill="#475569">在吸收边处升起一座峰——Se 的 K 边上峰值约 3.8 个电子；</text>
+  <text x="386" y="282" font-size="10.5" fill="#475569">f′ 是吸收的希尔伯特变换伴随物，在边处急剧下陷</text>
+  <text x="386" y="297" font-size="10.5" fill="#475569">（拐点），典型可到 −8 至 −10 个电子。</text>
+  <text x="386" y="330" font-size="10.5" fill="#475569">物理图像：</text>
+  <text x="386" y="345" font-size="10.5" fill="#475569">束缚电子像一枚共振频率落在吸收边附近的阻尼振子，</text>
+  <text x="386" y="360" font-size="10.5" fill="#475569">入射波驱动它再辐射；两者都在吸收边附近才显著，</text>
+  <text x="386" y="375" font-size="10.5" fill="#475569">远离吸收边时反常贡献趋零——这正是波长策略的物理基础。</text>
+  <text x="386" y="412" font-size="10.5" fill="#64748b">峰（peak，Se 约 0.9795 Å）反常信号最强，</text>
+  <text x="386" y="427" font-size="10.5" fill="#64748b">SAD 只收这一处；拐点（inflection）与远边（remote）</text>
+  <text x="386" y="442" font-size="10.5" fill="#64748b">是 MAD 的全套布阵，多波长之间的差异提供冗余约束。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Bijvoet 差异：弗里德定律的破口（矢量实算）</text>
+  <line x1="730" y1="400" x2="1070" y2="400" stroke="#94a3b8" stroke-width="1.1"/>
+  <line x1="880" y1="280" x2="880" y2="490" stroke="#94a3b8" stroke-width="1.1"/>
+  <line x1="880" y1="400" x2="1010" y2="400" stroke="#64748b" stroke-width="2.4" marker-end="url(#arr-mute)"/>
+  <text x="945" y="420" font-size="9.5" fill="#64748b" text-anchor="middle">正常散射 Σ(f<tspan dy="2.1" font-size="6.8">0</tspan><tspan dy="-2.1">+f′)</tspan></text>
+  <line x1="880" y1="400" x2="1009.2" y2="354.5" stroke="#0f766e" stroke-width="3.2" marker-end="url(#arr-dna)"/>
+  <text x="1030" y="348" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">|F<tspan dy="2.4" font-size="7.9">+</tspan><tspan dy="-2.4">| = 105</tspan></text>
+  <line x1="880" y1="400" x2="1049.8" y2="422.1" stroke="#dc2626" stroke-width="3.2" marker-end="url(#arr-bad)"/>
+  <text x="1072" y="430" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">|F<tspan dy="2.4" font-size="7.9">−</tspan><tspan dy="-2.4">| = 132</tspan></text>
+  <line x1="1010" y1="400" x2="1029.5" y2="366" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="1029.5" y1="366" x2="1009.2" y2="354.5" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <line x1="1010" y1="400" x2="1029.5" y2="434" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="1029.5" y1="434" x2="1049.8" y2="422.1" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <text x="730" y="470" font-size="10.5" fill="#475569">示例（任意单位）：正常散射在 Friedel 对 h 与 −h 中互为共轭、长度相同；反常原子贡献两个小分量——实部（蓝）</text>
+  <text x="730" y="485" font-size="10.5" fill="#475569">随 h 取负而镜像、f″ 项（玫红）自带 90° 相移且不随之翻转，于是两个合矢量 |F<tspan dy="2.3" font-size="7.6">+</tspan><tspan dy="-2.3">| 与 |F</tspan><tspan dy="2.3" font-size="7.6">−</tspan><tspan dy="-2.3">| 长度不等。</tspan></text>
+  <text x="730" y="530" font-size="10.5" fill="#64748b">量级必须心里有数：SeMet 蛋白在峰波长下 Bijvoet 差异典型仅 3%–6%，含硫蛋白更低至 1% 上下——这正是反常数据须高冗余</text>
+  <text x="730" y="545" font-size="10.5" fill="#64748b">（7–10 倍以上）且吸收修正须波长特异的定量理由。手性红利：Bijvoet 差异的符号模式与亚结构手性一一对应，</text>
+  <text x="730" y="560" font-size="10.5" fill="#64748b">Flack 参数以 0 与 0.5 两个读数量化裁决（1983 年）；Bijvoet 本人 1949–1955 年间在酒石酸钠铷上首次以衍射测定绝对构型。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、SeMet：实验定相的旗舰（Hendrickson 等 1990）</text>
+  <path d="M 70,650 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0 q 20,18 40,0 q 20,-18 40,0 q 20,18 40,0" fill="none" opacity="0.8" stroke="#6d28d9" stroke-width="3.2"/>
+  <circle cx="110" cy="638" r="7" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <circle cx="160" cy="660" r="7" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <circle cx="255" cy="660" r="7" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <circle cx="300" cy="638" r="7" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="230" y="626" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">蛋白链中的每个 Met 都换成 SeMet——反常灯塔</text>
+  <text x="60" y="692" font-size="10.5" fill="#475569">两条掺入路线：甲硫氨酸营养缺陷型菌株（E. coli B834）</text>
+  <text x="60" y="707" font-size="10.5" fill="#475569">在无 Met 培养基中以 SeMet 替代；或代谢抑制法（过量供给 Leu、Ile、</text>
+  <text x="60" y="722" font-size="10.5" fill="#475569">Thr、Phe 抑制 Met 内源合成）——掺入率可超过 95%。</text>
+  <text x="60" y="737" font-size="10.5" fill="#475569">Se 的常规散射与硫几乎同构（f<tspan dy="2.3" font-size="7.6">0</tspan><tspan dy="-2.3"> 相近），蛋白结构与功能基本不受扰动。</tspan></text>
+  <text x="60" y="776" font-size="10.5" fill="#64748b">实务要点：亚结构须约 4–5 个以上位点才有像样信号，</text>
+  <text x="60" y="791" font-size="10.5" fill="#64748b">Met 极少的蛋白须定点引入 Met 突变；SeMet 晶体常更脆弱，</text>
+  <text x="60" y="806" font-size="10.5" fill="#64748b">剂量要留余量；表达量与掺入率须在质谱上验收。真核对策：</text>
+  <text x="60" y="821" font-size="10.5" fill="#64748b">昆虫细胞与哺乳动物细胞的甲硫氨酸缺乏培养基，掺入率虽不及原核，</text>
+  <text x="60" y="836" font-size="10.5" fill="#64748b">配高冗余 SAD 常已够用。</text>
+  <rect x="440" y="604" width="236" height="276" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="558" y="622" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">f″ 峰值账本（电子数）</text>
+  <rect x="452" y="640" width="150" height="16" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <text x="612" y="653" font-size="10" fill="#475569" font-weight="700">3.8</text>
+  <text x="444" y="653" font-size="9.5" fill="#64748b" text-anchor="end">Se K 边</text>
+  <rect x="452" y="676" width="150" height="16" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <text x="612" y="689" font-size="10" fill="#475569" font-weight="700">3.8</text>
+  <text x="444" y="689" font-size="9.5" fill="#64748b" text-anchor="end">Br K 边</text>
+  <rect x="452" y="712" width="98.6842105263158" height="16" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <text x="560.6842105263158" y="725" font-size="10" fill="#475569" font-weight="700">2.5</text>
+  <text x="444" y="725" font-size="9.5" fill="#64748b" text-anchor="end">Zn K 边</text>
+  <rect x="452" y="748" width="35.526315789473685" height="16" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="497.5263157894737" y="761" font-size="10" fill="#475569" font-weight="700">0.7–1.1</text>
+  <text x="444" y="761" font-size="9.5" fill="#64748b" text-anchor="end">S 长波</text>
+  <rect x="452" y="784" width="22.10526315789474" height="16" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="484.10526315789474" y="797" font-size="10" fill="#475569" font-weight="700">0.56</text>
+  <text x="444" y="797" font-size="9.5" fill="#64748b" text-anchor="end">S CuKα</text>
+  <rect x="452" y="820" width="3" height="16" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="465" y="833" font-size="10" fill="#475569" font-weight="700">0.06</text>
+  <text x="444" y="833" font-size="9.5" fill="#64748b" text-anchor="end">S 1 Å</text>
+  <text x="448" y="856" font-size="10" fill="#475569">常规 1 Å 波长下 S 的 f″ 仅约 0.06 e<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">；</tspan></text>
+  <text x="448" y="870" font-size="10" fill="#475569">含硫 SAD 靠长波长（1.9–2.7 Å）放大信号，</text>
+  <text x="448" y="884" font-size="10" fill="#475569">代价是更大的吸收与空气衰减，须真空或氦气光路。</text>
+  <text x="60" y="886" font-size="10.5" fill="#475569">核酸与抗体另有捷径：溴化脱氧核苷（BrdU）把 Br 送到 K 边（约 0.92 Å）享受类 Se 信号；碘化抗体 Fab 的 I-SAD 亦是经典；</text>
+  <text x="60" y="901" font-size="10.5" fill="#475569">金属蛋白天生带灯——Fe、Zn、Cu 的边各有打法。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、SAD 对 MAD：三波长布阵与现代取舍</text>
+  <text x="730" y="622" font-size="11" fill="#1e293b" font-weight="700">MAD 的三波长布阵（各收一整套完整数据）：</text>
+  <rect x="730" y="636" width="180" height="40" rx="8" fill="#ffffff" stroke="#be185d" stroke-width="1.8"/>
+  <text x="820" y="652" font-size="11" fill="#be185d" text-anchor="middle" font-weight="700">峰</text>
+  <text x="820" y="668" font-size="9.5" fill="#64748b" text-anchor="middle">f″ 最大</text>
+  <rect x="940" y="636" width="180" height="40" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1030" y="652" font-size="11" fill="#0369a1" text-anchor="middle" font-weight="700">拐点</text>
+  <text x="1030" y="668" font-size="9.5" fill="#64748b" text-anchor="middle">f′ 最低</text>
+  <rect x="1150" y="636" width="180" height="40" rx="8" fill="#ffffff" stroke="#4c1d95" stroke-width="1.8"/>
+  <text x="1240" y="652" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">远边</text>
+  <text x="1240" y="668" font-size="9.5" fill="#64748b" text-anchor="middle">对照</text>
+  <text x="730" y="706" font-size="11" fill="#1e293b" font-weight="700">轮转收集：各波长轮流逐帧，损伤均匀分摊</text>
+  <rect x="730" y="720" width="22" height="18" rx="3" fill="#be185d" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="756" y="720" width="22" height="18" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="782" y="720" width="22" height="18" rx="3" fill="#4c1d95" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="808" y="720" width="22" height="18" rx="3" fill="#be185d" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="834" y="720" width="22" height="18" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="860" y="720" width="22" height="18" rx="3" fill="#4c1d95" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="886" y="720" width="22" height="18" rx="3" fill="#be185d" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="912" y="720" width="22" height="18" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="720" width="22" height="18" rx="3" fill="#4c1d95" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="964" y="720" width="22" height="18" rx="3" fill="#be185d" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="990" y="720" width="22" height="18" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="1016" y="720" width="22" height="18" rx="3" fill="#4c1d95" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="1042" y="720" width="22" height="18" rx="3" fill="#be185d" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="1068" y="720" width="22" height="18" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="1094" y="720" width="22" height="18" rx="3" fill="#4c1d95" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="1180" y="725.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#be185d" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1198.45" y="732.42" font-size="9.5" fill="#475569">峰</text>
+  <rect x="1217.95" y="725.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1236.4" y="732.42" font-size="9.5" fill="#475569">拐点</text>
+  <rect x="1265.4" y="725.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#4c1d95" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1283.8500000000001" y="732.42" font-size="9.5" fill="#475569">远边</text>
+  <rect x="730" y="762" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="776" y="789.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方案</text>
+  <rect x="822" y="762" width="218" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="931" y="789.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">收集</text>
+  <rect x="1040" y="762" width="310" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="789.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">代价与地位</text>
+  <rect x="730" y="806" width="92" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="776" y="831.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">SAD</text>
+  <rect x="822" y="806" width="218" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="931" y="831.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">单波长（峰）＋高冗余＋密度修饰</text>
+  <rect x="1040" y="806" width="310" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="831.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">剂量省；符号二义由密度修饰或模型信息裁决，已成常态</text>
+  <rect x="730" y="846" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="846" width="92" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="776" y="871.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">MAD</text>
+  <rect x="822" y="846" width="218" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="931" y="871.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">峰、拐点、远边各一套</text>
+  <rect x="1040" y="846" width="310" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="871.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约束超定、相位天花板更高；剂量与时间翻倍，渐成精装选项</text>
+  <text x="730" y="906" font-size="10.5" fill="#475569">纪律两条：能量读数须校准——偏差区区 5 eV 就可能错过 f″ 峰顶，正式实验前以荧光扫描（XANES）实测定位吸收边；</text>
+  <text x="730" y="921" font-size="10.5" fill="#475569">判据先行——数据还原阶段看反常信噪比与 CC<tspan dy="2.3" font-size="7.6">anom</tspan><tspan dy="-2.3">，ΔF/σ 峰值壳层明显高于 1 才值得进入定相流程。</tspan></text>
+  <text x="730" y="936" font-size="10.5" fill="#475569">MAD 理论由 Karle 1980 年给出，Hendrickson 等 1985 年完成首个蛋白应用。</text>
+</svg>

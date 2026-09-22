@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">哺乳动物细胞表达系统：瞬时、稳定与糖基化</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">PEI（25kDa线性，与DNA质量比约1比3）转染293F，48–72小时收获，滴度约5–50mg/L；稳定细胞系经DHFR/MTX或GS/MSX扩增，补料分批达1–5g/L；去岩藻糖使ADCC</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">增强最多约50倍</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三大细胞系与 PEI 瞬时表达</text>
+  <text x="50" y="170" font-size="10.5" fill="#475569">HEK293 于 1977 年以腺病毒 5 型 DNA 转化人胚肾细胞建系；293T 表达 SV40 大 T 抗原，</text>
+  <text x="50" y="184.5" font-size="10.5" fill="#475569">支持含 SV40 复制起点的质粒以附加体形式扩增，瞬时表达量更高。CHO（中国仓鼠卵巢细胞）</text>
+  <text x="50" y="199" font-size="10.5" fill="#475569">建系于 1957 年——当今约 70% 的重组蛋白类药物产自 CHO，监管经验与配套工艺最成熟。</text>
+  <rect x="194.2671" y="231.075" width="311.4658" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="350" y="243.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">分工：293 系管瞬时出样与功能验证 · CHO 管放大与监管先例</text>
+  <rect x="73.57799999999999" y="283.5" width="152.84400000000002" height="17" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="150" y="295.6" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">质粒 DNA（每百万细胞 1 μg）</text>
+  <text x="262" y="292" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">＋</text>
+  <rect x="304.514" y="283.5" width="170.97199999999998" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="390" y="295.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">PEI 25 kDa 线性·质量比约 1 比 3</text>
+  <line x1="508" y1="292" x2="538" y2="292" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="577.25" y="283.5" width="65.5" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="610" y="295.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">正电复合物</text>
+  <text x="55" y="324" font-size="10" fill="#475569">复合物经「质子海绵」效应协助内体逃逸；质粒以附加体形式瞬时表达，随传代丢失。转染悬浮驯化的 293F/Expi293：</text>
+  <text x="55" y="338" font-size="10" fill="#475569">细胞密度约 1–3 × 10<tspan dy="-3.4" font-size="7.2">6</tspan><tspan dy="3.4"> 个/mL，转染后 48–72 小时收获上清。</tspan></text>
+  <rect x="137.925" y="383.075" width="124.15" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="395.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">常规滴度约 5–50 mg/L</text>
+  <rect x="362.0192" y="383.075" width="195.9616" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="460" y="395.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">强化体系（补料·降温·丙戊酸）可逾百</text>
+  <rect x="103.79999999999998" y="423.5" width="112.40000000000002" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="160" y="435.6" font-size="10" fill="#1e293b" text-anchor="middle">传代限于 20–30 代内</text>
+  <rect x="311.6" y="423.5" width="76.80000000000001" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="350" y="435.6" font-size="10" fill="#1e293b" text-anchor="middle">活率高于 95%</text>
+  <rect x="502" y="423.5" width="76" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="540" y="435.6" font-size="10" fill="#1e293b" text-anchor="middle">无支原体污染</text>
+  <text x="350" y="456" font-size="9.5" fill="#64748b" text-anchor="middle">培养体系健康度三条件，缺一不可</text>
+  <text x="50" y="486" font-size="10" fill="#475569">无血清培养基是现代标配——既免去批次差异，更重要的是消除胎牛血清中牛 IgG 对 Protein A 纯化的干扰；</text>
+  <text x="50" y="500" font-size="10" fill="#475569">293T 贴壁瞬时适合 6 孔板到 10 层细胞工厂的小量验证，悬浮 293F 是结构样品主力，两者共享同一套质粒。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、分泌捕获与糖基化的生理意义</text>
+  <text x="730" y="170" font-size="10.5" fill="#475569">分泌型蛋白的基因前端接信号肽：疏水核心引导新生肽进入内质网，信号肽酶在其 C 端切割释放成熟蛋白。</text>
+  <text x="730" y="184.5" font-size="10.5" fill="#475569">分泌的巨大红利是「上清即半成品」：细胞碎片与绝大多数杂蛋白留在胞内，离心取上清、0.22 μm 过滤后即可进入捕获。</text>
+  <rect x="769.573" y="243.5" width="120.85400000000003" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="830" y="255.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">离心上清·0.22 μm 过滤</text>
+  <line x1="950" y1="252" x2="978" y2="252" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="995.527" y="243.5" width="178.94600000000003" height="17" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1085" y="255.6" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">Protein A 抓 Fc（CH2–CH3 交界）</text>
+  <line x1="1214" y1="252" x2="1242" y2="252" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="1248.637" y="243.5" width="102.72600000000003" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1300" y="255.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">甘氨酸 pH 2.5–3.5</text>
+  <text x="730" y="286" font-size="10" fill="#475569">低 pH 洗脱须立即以 1 M Tris 中和，短暂停留做时间控制以免酸性诱发聚集；下游经典三步：Protein A 捕获、低 pH 病毒灭活、</text>
+  <text x="730" y="300" font-size="10" fill="#475569">阳离子交换与阴离子交换流穿精纯。</text>
+  <rect x="730" y="330" width="610" height="148" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="746" y="352" font-size="12" fill="#831843" font-weight="700">N297 糖链与 ADCC：糖工程赛道</text>
+  <text x="746" y="372" font-size="10" fill="#475569">N 连接糖基化发生在 Asn-X-Ser/Thr（X 不为 Pro）序列子。Fc 的 N297 糖链若带核心岩藻糖（α1,6 连接），</text>
+  <text x="746" y="385.5" font-size="10" fill="#475569">会立体阻碍 Fc 与 NK 细胞 FcγRIIIa 的结合、削弱 ADCC；</text>
+  <text x="746" y="399" font-size="10" fill="#475569">去掉岩藻糖可使 ADCC 增强最多约 50 倍——obinutuzumab 过量表达 GnT-III 引入平分型糖链，</text>
+  <text x="746" y="412.5" font-size="10" fill="#475569">mogamulizumab 以 FUT8 敲低实现去岩藻糖化。培养天数、葡萄糖与锰离子浓度都能调节岩藻糖与半乳糖比例，</text>
+  <text x="746" y="426" font-size="10" fill="#475569">糖型并非「细胞系决定论」。</text>
+  <rect x="730" y="492" width="610" height="62" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="746" y="514" font-size="12" fill="#92400e" font-weight="700">结构生物学的糖链处理</text>
+  <text x="746" y="532" font-size="10" fill="#475569">糖链异质性是结晶的天敌——哺乳动物来源蛋白常在解析前以 PNGase F 或 Endo H 压缩糖链；冷冻电镜对糖链宽容度更高，</text>
+  <text x="746" y="545.5" font-size="10" fill="#475569">这是膜蛋白结构研究近年转向电镜的原因之一。</text>
+  <rect x="30" y="578" width="1340" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、瞬时与稳定表达对照与选型红线</text>
+  <rect x="50" y="622" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">维度</text>
+  <rect x="170" y="622" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="290" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">瞬时表达</text>
+  <rect x="410" y="622" width="280" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">稳定细胞系</text>
+  <rect x="50" y="666" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="693.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">出样周期</text>
+  <rect x="170" y="666" width="240" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="290" y="693.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">3–7 天</text>
+  <rect x="410" y="666" width="280" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="693.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">稳定池 2–4 周；单克隆 3–6 个月</text>
+  <rect x="50" y="710" width="640" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="710" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="737.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">常规滴度</text>
+  <rect x="170" y="710" width="240" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="290" y="737.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 5–50 mg/L，强化可逾百</text>
+  <rect x="410" y="710" width="280" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="737.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">补料分批 1–5 g/L</text>
+  <rect x="50" y="754" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="781.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">基因状态</text>
+  <rect x="170" y="754" width="240" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="290" y="781.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">附加体质粒，随传代丢失</text>
+  <rect x="410" y="754" width="280" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="781.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">基因组整合并选择扩增</text>
+  <rect x="50" y="798" width="640" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="798" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="825.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">适用场景</text>
+  <rect x="170" y="798" width="240" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="290" y="825.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">结构样品与候选筛选</text>
+  <rect x="410" y="798" width="280" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="825.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">产业化与长期供应</text>
+  <rect x="50" y="842" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="869.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">投入与监管</text>
+  <rect x="170" y="842" width="240" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="290" y="869.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">门槛低、无需克隆溯源</text>
+  <rect x="410" y="842" width="280" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="869.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">投入高、需单克隆化与细胞库体系</text>
+  <rect x="710" y="616" width="630" height="158" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="726" y="638" font-size="12" fill="#075985" font-weight="700">选择扩增两条路线</text>
+  <text x="726" y="658" font-size="10" fill="#475569">DHFR 系统：在 DHFR 缺陷的 CHO DG44/DUKX-B11 中转入目的基因连带 DHFR 标记，甲氨蝶呤（MTX）浓度梯度加压，</text>
+  <text x="726" y="671.5" font-size="10" fill="#475569">只有扩增出更多基因拷贝的克隆才能存活；GS 系统：以谷氨酰胺合成酶为标记，MSX 抑制胞内 GS 迫使基因扩增。随后经有限稀释、</text>
+  <text x="726" y="685" font-size="10" fill="#475569">流式分选或 ClonePix 单克隆化，克隆溯源至单细胞并建立主细胞库与工作细胞库两级种子体系。</text>
+  <rect x="710" y="786" width="630" height="128" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="726" y="808" font-size="12" fill="#831843" font-weight="700">何时必须用哺乳动物系统</text>
+  <rect x="759.555" y="829.075" width="80.89" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="800" y="841.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">需要天然糖型</text>
+  <rect x="974.9625" y="829.075" width="70.075" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1010" y="841.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">复杂二硫键</text>
+  <rect x="1130.84505" y="829.075" width="118.3099" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1190" y="841.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">治疗性抗体／Fc 融合</text>
+  <rect x="832.5175" y="863.075" width="134.965" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="900" y="875.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">人源膜蛋白冷冻电镜样品</text>
+  <text x="726" y="898" font-size="9.5" fill="#64748b">这四类需求下，大肠杆菌与酵母体系均无法替代。</text>
+  <text x="50" y="916" font-size="10" fill="#64748b">瞬时表达适合毫克级的结构与功能研究；产业化与克级以上交给稳定细胞系——工业补料分批的抗体滴度可达 1–5 g/L，</text>
+  <text x="50" y="930" font-size="10" fill="#64748b">批间一致性满足法规要求。</text>
+</svg>

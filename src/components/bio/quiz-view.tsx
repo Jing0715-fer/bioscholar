@@ -274,6 +274,7 @@ function ScoreRing({ pct }: { pct: number }) {
 
 export function QuizView({ subjectId }: { subjectId: SubjectId }) {
   const navigate = useAppStore((s) => s.navigate)
+  const openSubject = useAppStore((s) => s.openSubject)
   const theme = getSubjectTheme(subjectId)
   const subject = getSubject(subjectId)
 
@@ -345,6 +346,11 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
     setNow(Date.now())
     const t = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(t)
+  }, [phase])
+
+  // 选题、答题、结果三个阶段互为「新页面」：切换时回到顶部
+  useEffect(() => {
+    window.scrollTo(0, 0)
   }, [phase])
 
   const current = questions[index]
@@ -914,7 +920,7 @@ export function QuizView({ subjectId }: { subjectId: SubjectId }) {
                     <ListChecks className="mr-1 h-4 w-4" />
                     返回选题
                   </Button>
-                  <Button variant="ghost" onClick={() => navigate({ name: 'subjects' })}>
+                  <Button variant="ghost" onClick={() => openSubject(subjectId)}>
                     返回学科
                   </Button>
                 </div>

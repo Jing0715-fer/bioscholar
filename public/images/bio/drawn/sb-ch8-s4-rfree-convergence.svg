@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">精修的评估与收敛：Rfree、几何三件套与投递检查</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">Rfree以约5%自由集全程不可见守住交叉验证；2Å典型Rwork0.18–0.22、Rfree0.22–0.26，gap2–5%健康、大于7%过拟合警告；Ramachandran优势区大于96%、clashscore</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">小于5；收敛判据ΔR小于约0.1%、差值图无±4σ峰</text>
+  <rect x="30" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Rwork 与 Rfree：交叉验证制度（Brünger 1992）</text>
+  <rect x="70" y="208" width="380" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="358" x2="450" y2="358" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="165" y1="408" x2="165" y2="208" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="308" x2="450" y2="308" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="260" y1="408" x2="260" y2="208" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="258" x2="450" y2="258" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="355" y1="408" x2="355" y2="208" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="77.6" y1="408" x2="77.6" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="77.6" y="430" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="161.2" y1="408" x2="161.2" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="161.2" y="430" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="252.4" y1="408" x2="252.4" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="252.4" y="430" font-size="13" fill="#64748b" text-anchor="middle">4</text>
+  <line x1="343.59999999999997" y1="408" x2="343.59999999999997" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="343.59999999999997" y="430" font-size="13" fill="#64748b" text-anchor="middle">6</text>
+  <line x1="434.8" y1="408" x2="434.8" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="434.8" y="430" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="64" y1="398" x2="70" y2="398" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="402" font-size="13" fill="#64748b" text-anchor="end">0.12</text>
+  <line x1="64" y1="336" x2="70" y2="336" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="340" font-size="13" fill="#64748b" text-anchor="end">0.24</text>
+  <line x1="64" y1="272" x2="70" y2="272" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="276" font-size="13" fill="#64748b" text-anchor="end">0.37</text>
+  <line x1="64" y1="214" x2="70" y2="214" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="218" font-size="13" fill="#64748b" text-anchor="end">0.49</text>
+  <text x="260" y="452" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">精修轮次</text>
+  <text x="260" y="196" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">2 Å 数据的典型收敛（含过拟合反例）</text>
+  <path d="M70.0,293.0 L115.6,328.0 L165.0,340.5 L214.4,350.5 L267.6,358.0 L343.6,360.5 L450.0,363.0" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <path d="M70.0,278.0 L115.6,303.0 L165.0,315.5 L214.4,325.5 L267.6,330.5 L343.6,335.5 L450.0,338.0" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <path d="M70.0,293.0 L127.0,348.0 L184.0,383.0 L260.0,393.0 L336.0,398.0 L450.0,398.0" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 4"/>
+  <path d="M70.0,278.0 L127.0,293.0 L184.0,300.5 L260.0,303.0 L336.0,305.5 L450.0,308.0" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="366.40000000000003" y="353" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">R<tspan dy="2.1" font-size="6.8">work</tspan><tspan dy="-2.1"> 0.19</tspan></text>
+  <text x="366.40000000000003" y="356" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 0.24</tspan></text>
+  <text x="396.8" y="412" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">0.12</text>
+  <text x="396.8" y="298" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">0.30</text>
+  <rect x="438.117056" y="241.075" width="103.76588800000002" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="490" y="253.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">gap = R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> − R</tspan><tspan dy="2.3" font-size="7.6">work</tspan></text>
+  <text x="470" y="282" font-size="9.5" fill="#475569">健康区间 2–5%；</text>
+  <text x="470" y="295.5" font-size="9.5" fill="#475569">大于 7% 即过拟合警告——塞无效水、</text>
+  <text x="470" y="309" font-size="9.5" fill="#475569">低分辨率开个别 B、</text>
+  <text x="470" y="322.5" font-size="9.5" fill="#475569">把噪声建成交替构象。</text>
+  <text x="470" y="346" font-size="9.5" fill="#475569">gap 小于 1% 反而可疑：</text>
+  <text x="470" y="359.5" font-size="9.5" fill="#475569">自由集泄漏或数据冗余过高。</text>
+  <text x="56" y="440" font-size="10" fill="#475569">R = Σ|F<tspan dy="2.2" font-size="7.2">o</tspan><tspan dy="-2.2">−F</tspan><tspan dy="2.2" font-size="7.2">c</tspan><tspan dy="-2.2">|/Σ|F</tspan><tspan dy="2.2" font-size="7.2">o</tspan><tspan dy="-2.2">|。Rfree：随机剥离约 5% 反射组成自由集，全程不可见、不进目标函数，一经划定不得重划；低分辨率可放宽到 10%</tspan></text>
+  <text x="56" y="454.5" font-size="10" fill="#475569">（须注明）。数量级锚点（2 Å）：Rwork 0.18–0.22、Rfree 0.22–0.26；分辨率越低 R 越高属常态。</text>
+  <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Ramachandran 图与几何三件套</text>
+  <rect x="760" y="218" width="300" height="210" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <ellipse cx="810" cy="247.16666666666666" rx="48" ry="28" fill="#ccfbf1" fill-opacity="0.7" stroke="#0f766e" stroke-width="1.4"/>
+  <ellipse cx="857.5" cy="348.08333333333337" rx="34" ry="24" fill="#ccfbf1" fill-opacity="0.7" stroke="#0f766e" stroke-width="1.4"/>
+  <ellipse cx="957.5" cy="299.6666666666667" rx="21" ry="13" fill="#ccfbf1" fill-opacity="0.7" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="810" y="213.16666666666666" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">β 区</text>
+  <text x="857.5" y="386.08333333333337" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">α<tspan dy="2.2" font-size="7.2">R</tspan><tspan dy="-2.2"> 螺旋</tspan></text>
+  <text x="957.5" y="279.6666666666667" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">L<tspan dy="2.2" font-size="7.2">α</tspan></text>
+  <circle cx="786.469042686489" cy="251.51291808137285" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="804.7868617434875" cy="244.0232639821204" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="799.917715508117" cy="251.4563905277624" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="796.5604046649552" cy="252.03905945961168" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="782.4720192919644" cy="245.12476899553354" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="805.5205310813469" cy="252.87063598116015" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="803.7530346570791" cy="255.93953389018316" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="791.5850993793174" cy="243.58683682492088" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="810.7115570032769" cy="239.42794963624024" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="873.6643456904906" cy="350.45882549841474" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="854.3997406794463" cy="351.5479266528334" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="873.6031215033896" cy="350.86780489039" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="860.243724525558" cy="349.1198499142531" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="871.493517161374" cy="343.78444331415943" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="845.9483430529473" cy="343.0403648070097" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="868.8358542970706" cy="349.3761211253465" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="863.250077904674" cy="353.6271104158004" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="854.5623394310963" cy="339.33891988809467" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="959.9047290532059" cy="304.50988822187423" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="957.542940653978" cy="295.6237078644059" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="956.469746331914" cy="299.3747497493913" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="945.2329606752589" cy="300.5494683851727" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="960.2242146126933" cy="303.1336677502007" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="957.296549951181" cy="304.5786339743133" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="956.3871607393872" cy="297.5756136903653" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="965.3088451334437" cy="301.4491353520074" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="955.0357602211274" cy="303.6327254561623" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
+  <circle cx="955.8333333333334" cy="366.75" r="4.2" fill="#dc2626"/>
+  <text x="963.8333333333334" y="370.75" font-size="9.5" fill="#991b1b" font-weight="700">outlier：须能说出理由</text>
+  <text x="910" y="468" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">横轴 φ（度）· 纵轴 ψ（度）</text>
+  <text x="748" y="232" font-size="11" fill="#64748b" text-anchor="end">180</text>
+  <text x="748" y="327" font-size="11" fill="#64748b" text-anchor="end">0</text>
+  <text x="748" y="428" font-size="11" fill="#64748b" text-anchor="end">−180</text>
+  <text x="910" y="210" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">Ramachandran 图（每点一个残基）</text>
+  <text x="910" y="462" font-size="9.5" fill="#64748b" text-anchor="middle">Ramachandran 1963；MolProbity（Richardson 2010）动态分区：优势区大于 96%、离群接近零</text>
+  <rect x="1109.7712999999999" y="241.075" width="80.4574" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1150" y="253.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">rotamer 验证</text>
+  <text x="1080" y="280" font-size="9.5" fill="#475569">侧链构象落在统计库离群区，提示构象错放或密度不足。</text>
+  <rect x="1114.9625" y="331.075" width="70.07500000000002" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1150" y="343.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">clashscore</text>
+  <text x="1080" y="370" font-size="9.5" fill="#475569">每千原子中非键原子对过近的冲突数：小于 5 为合格线，</text>
+  <text x="1080" y="383.5" font-size="9.5" fill="#475569">以同分辨率百分位报告（95 百分位以上更佳）。</text>
+  <rect x="30" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">三、B 因子分布与水分子合理性</text>
+  <text x="216" y="524" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">B 因子沿序列的折线（示意）</text>
+  <rect x="56" y="530" width="320" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="56" y1="627.5" x2="376" y2="627.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="136" y1="660" x2="136" y2="530" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="56" y1="595" x2="376" y2="595" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="216" y1="660" x2="216" y2="530" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="56" y1="562.5" x2="376" y2="562.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="296" y1="660" x2="296" y2="530" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="62.4" y1="660" x2="62.4" y2="666" stroke="#475569" stroke-width="1.8"/>
+  <text x="62.4" y="682" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="216" y1="660" x2="216" y2="666" stroke="#475569" stroke-width="1.8"/>
+  <text x="216" y="682" font-size="13" fill="#64748b" text-anchor="middle">150</text>
+  <line x1="369.6" y1="660" x2="369.6" y2="666" stroke="#475569" stroke-width="1.8"/>
+  <text x="369.6" y="682" font-size="13" fill="#64748b" text-anchor="middle">300</text>
+  <line x1="50" y1="652.2" x2="56" y2="652.2" stroke="#475569" stroke-width="1.8"/>
+  <text x="46" y="656.2" font-size="13" fill="#64748b" text-anchor="end">5</text>
+  <line x1="50" y1="598.9" x2="56" y2="598.9" stroke="#475569" stroke-width="1.8"/>
+  <text x="46" y="602.9" font-size="13" fill="#64748b" text-anchor="end">38</text>
+  <line x1="50" y1="543" x2="56" y2="543" stroke="#475569" stroke-width="1.8"/>
+  <text x="46" y="547" font-size="13" fill="#64748b" text-anchor="end">72</text>
+  <text x="216" y="704" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">残基序号</text>
+  <path d="M56.0,605.4 L72.0,595.0 L88.0,615.8 L104.0,602.8 L120.0,621.0 L136.0,587.2 L152.0,610.6 L171.2,619.7 L190.4,584.6 L209.6,608.0 L228.8,617.1 L248.0,614.5 L267.2,619.7 L286.4,588.5 L305.6,611.9 L324.8,618.4 L344.0,595.0 L376.0,602.8" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <circle cx="190.4" cy="584.6" r="4" fill="#dc2626"/>
+  <line x1="190.4" y1="570.6" x2="190.4" y2="580.6" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <text x="190.4" y="558.6" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">孤立尖峰</text>
+  <text x="56" y="690" font-size="10" fill="#475569">表面残基高、埋藏核心低、沿序列连续平滑。孤立尖峰常见原因：</text>
+  <text x="56" y="704.5" font-size="10" fill="#475569">序列 register 错误、侧链构象错放或辐射损伤的特异性位点。</text>
+  <rect x="420" y="528" width="82" height="92" rx="8" fill="#05966914" stroke="#059669" stroke-width="1.6"/>
+  <text x="461" y="552" font-size="13" fill="#059669" text-anchor="middle" font-weight="700">2 Å</text>
+  <text x="461" y="578" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">数百个水</text>
+  <text x="426" y="596" font-size="9" fill="#64748b">约与残基数同量级</text>
+  <rect x="516" y="528" width="82" height="92" rx="8" fill="#d9770614" stroke="#d97706" stroke-width="1.6"/>
+  <text x="557" y="552" font-size="13" fill="#d97706" text-anchor="middle" font-weight="700">3 Å</text>
+  <text x="557" y="578" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">零星几个</text>
+  <text x="522" y="596" font-size="9" fill="#64748b">只放活性位点附近</text>
+  <rect x="612" y="528" width="82" height="92" rx="8" fill="#dc262614" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="653" y="552" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">6 Å</text>
+  <text x="653" y="578" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">一个不留</text>
+  <text x="618" y="596" font-size="9" fill="#64748b">水数超载=给噪声建模</text>
+  <text x="420" y="656" font-size="10" fill="#475569">删水检验：删去可疑水后 Rfree 若不升反降，</text>
+  <text x="420" y="670.5" font-size="10" fill="#475569">删除就是对的——每个多余参数都在侵蚀 Rfree。</text>
+  <rect x="217.48199999999997" y="801.5" width="285.03600000000006" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="813.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">B 因子各向异性（TLS 张量）应与晶格堆积的物理直觉一致</text>
+  <text x="56" y="842" font-size="10" fill="#475569">活性位点的水参与催化与配体识别，建模优先级最高；表面水次之；溶剂壳之外、密度又弱又孤立的一律不建。</text>
+  <rect x="710" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="504.84" font-size="19" fill="#475569" font-weight="700">四、收敛判据与投递前最后一道工序</text>
+  <rect x="762.345" y="515.5" width="95.31000000000002" height="17" rx="7" fill="#0369a118" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="810" y="527.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">① ΔR 小于约 0.1%</text>
+  <text x="732" y="552" font-size="9" fill="#64748b">再修不动了</text>
+  <rect x="947.092" y="515.5" width="105.81600000000002" height="17" rx="7" fill="#0f766e18" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1000" y="527.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">② 几何 outlier 清零</text>
+  <text x="922" y="552" font-size="9" fill="#64748b">Ramachandran、rotamer、</text>
+  <text x="922" y="564" font-size="9" fill="#64748b">clash 逐项为零</text>
+  <rect x="1138.3795" y="515.5" width="103.241" height="17" rx="7" fill="#6d28d918" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1190" y="527.6" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">③ 差值图无 ±4σ 峰</text>
+  <text x="1112" y="552" font-size="9" fill="#64748b">再没有密度大喊「缺人」或「多了人」</text>
+  <rect x="730" y="588" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="615.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">检查项</text>
+  <rect x="930" y="588" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="615.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">达标线</text>
+  <rect x="1180" y="588" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="615.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">工具</text>
+  <rect x="730" y="632" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="652.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Rwork 与 Rfree</text>
+  <rect x="930" y="632" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="652.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">与分辨率匹配（2 Å 约 0.18–0.22 与 0.22–0.26）</text>
+  <rect x="1180" y="632" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="652.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">精修日志</text>
+  <rect x="730" y="662" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="662" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="682.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Rfree − Rwork</text>
+  <rect x="930" y="662" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="682.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">2–5%，大于 7% 须整改</text>
+  <rect x="1180" y="662" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="682.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">精修日志</text>
+  <rect x="730" y="692" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="712.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Ramachandran</text>
+  <rect x="930" y="692" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="712.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">优势区大于 96%、outlier 接近零</text>
+  <rect x="1180" y="692" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="712.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">MolProbity</text>
+  <rect x="730" y="722" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="722" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="742.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">clashscore</text>
+  <rect x="930" y="722" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="742.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">小于 5（同分辨率 95 百分位更佳）</text>
+  <rect x="1180" y="722" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="742.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">MolProbity</text>
+  <rect x="730" y="752" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="772.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">差值图</text>
+  <rect x="930" y="752" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="772.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">无 ±4σ 遗留峰</text>
+  <rect x="1180" y="752" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="772.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">FFT 差值图</text>
+  <rect x="730" y="782" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="782" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="830" y="802.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">键长键角 RMSD</text>
+  <rect x="930" y="782" width="250" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="802.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.01 Å 与约 1–2°</text>
+  <rect x="1180" y="782" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="802.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">精修日志</text>
+  <text x="730" y="818" font-size="10" fill="#475569">四大陷阱：无效水（删水后 gap 收窄是铁证）；低分辨率幻觉构象（问一句「polder 图在哪里」便现形）；孪晶欠账</text>
+  <text x="730" y="832.5" font-size="10" fill="#475569">（须启用孪晶精修协议并重估自由集）；过早的完美（多为 MR 模型偏差回声，用 omit 图抽查活性位点）。共同解药：交叉验证与无偏图，</text>
+  <text x="730" y="847" font-size="10" fill="#475569">让数据有机会说「不」。</text>
+  <text x="1040" y="866" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">投递前过 MolProbity 全项检查；PDB 验证报告以同分辨率百分位表述模型质量</text>
+  <text x="700" y="946" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">rebuild、refine、validate 的螺旋走到收敛——留下的精修日志就是论文答辩与验证报告的底稿</text>
+</svg>

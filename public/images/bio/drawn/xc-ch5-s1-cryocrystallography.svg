@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">低温晶体学实践：100 K 冷流、玻璃化与退火</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">三件套（保护剂、速冻、100 K 冷流）：损伤放缓几十倍；甘油 15–25%；六方冰环 3.67/1.92 Å；mosaicity 0.1° 冻至 0.3–0.8°；微退火挡流 2–3 秒</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、100 K 冷氮流横截面：三件套的标准姿态</text>
+  <polygon points="372,168 394,168 418,264 382,264" fill="#e0f2fe" fill-opacity="0.5"/>
+  <line x1="352" y1="158" x2="324" y2="274" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <line x1="414" y1="158" x2="442" y2="274" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <rect x="56" y="172" width="86" height="80" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <rect x="64" y="200" width="70" height="44" rx="4" fill="#0369a1" fill-opacity="0.22"/>
+  <text x="99" y="190" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">液氮杜瓦 77 K</text>
+  <text x="99" y="228" font-size="10" fill="#075985" text-anchor="middle">液氮</text>
+  <path d="M142,196 C210,158 300,152 364,162" fill="none" stroke="#475569" stroke-width="5"/>
+  <text x="228" y="146" font-size="9" fill="#64748b">输气管</text>
+  <rect x="364" y="152" width="32" height="22" rx="4" fill="#475569"/>
+  <text x="380" y="146" font-size="9.5" fill="#475569" text-anchor="middle">冷流喷嘴</text>
+  <line x1="375" y1="176" x2="375" y2="248" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="383" y1="176" x2="383" y2="248" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="391" y1="176" x2="391" y2="248" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="250.9061" y="193.075" width="82.1878" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="292" y="205.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">100 K 冷氮流</text>
+  <text x="284" y="288" font-size="9.5" fill="#64748b">干燥空气幕（防霜）</text>
+  <rect x="560" y="330" width="92" height="26" rx="5" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="606" y="348" font-size="10" fill="#475569" text-anchor="middle">测角仪磁座</text>
+  <line x1="560" y1="343" x2="400" y2="343" stroke="#475569" stroke-width="3"/>
+  <line x1="400" y1="343" x2="400" y2="284" stroke="#475569" stroke-width="3"/>
+  <circle cx="400" cy="262" r="22" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <rect x="392" y="254" width="16" height="16" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="410" y1="262" x2="458" y2="248" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="462" y="250" font-size="10" fill="#4c1d95">蛋白晶体+薄防冻液层</text>
+  <line x1="150" y1="262" x2="388" y2="262" stroke="#d97706" stroke-width="2.6" marker-end="url(#arr-warn)"/>
+  <text x="214" y="250" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">X 射线</text>
+  <circle cx="438" cy="262" r="8" fill="#1e293b"/>
+  <text x="438" y="292" font-size="9" fill="#475569" text-anchor="middle">光束挡板</text>
+  <line x1="410" y1="256" x2="562" y2="196" stroke="#be185d" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <line x1="410" y1="268" x2="570" y2="238" stroke="#be185d" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-enz)"/>
+  <text x="588" y="190" font-size="9.5" fill="#831843" font-weight="700">衍射束</text>
+  <text x="470" y="180" font-size="10.5" fill="#1e293b" font-weight="700">100 K：经验最优</text>
+  <text x="470" y="198" font-size="9.5" fill="#64748b">液氦 40 K：收益边际递减</text>
+  <text x="470" y="214" font-size="9.5" fill="#dc2626">约 130 K 以上：再结晶区</text>
+  <text x="470" y="230" font-size="9.5" fill="#64748b">流速与加热补偿稳定在几 K 之内</text>
+  <rect x="93.3325" y="355.075" width="113.33500000000001" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="150" y="367.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">辐射损伤放缓几十倍</text>
+  <rect x="288.74" y="355.075" width="102.52" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="340" y="367.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">晶体寿命大幅延长</text>
+  <rect x="472.74" y="355.075" width="102.52" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="524" y="367.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">液氮杜瓦长途储运</text>
+  <text x="46" y="390" font-size="9.5" fill="#475569">Low 1959 首试；Hope 与 Teng、Moffat 1990 定量降温速率；1990 年代中期三件套成标准——长晶体的实验室与收数据的光源从此解耦。</text>
+  <text x="46" y="412" font-size="9.5" fill="#64748b">100 K 收缩账：晶格常数约缩 1%、晶胞体积缩 2–4%，溶剂通道变窄——低温晶胞与室温晶胞不可直接互查。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、标准流程四步与冷冻保护剂矩阵</text>
+  <rect x="726" y="170" width="222" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="738" y="189" font-size="11.5" fill="#075985" font-weight="700">① 配制防冻液</text>
+  <text x="738" y="206" font-size="9.5" fill="#475569">母液加 15–25% 甘油等保护剂</text>
+  <line x1="837" y1="216" x2="837" y2="228" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="726" y="230" width="222" height="46" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="738" y="249" font-size="11.5" fill="#134e4a" font-weight="700">② loop 捞取</text>
+  <text x="738" y="266" font-size="9.5" fill="#475569">尼龙环带起薄液层，越薄越易玻璃化</text>
+  <line x1="837" y1="276" x2="837" y2="288" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="726" y="290" width="222" height="46" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="738" y="309" font-size="11.5" fill="#4c1d95" font-weight="700">③ 液氮速冻</text>
+  <text x="738" y="326" font-size="9.5" fill="#475569">快到来不及析出六方冰（玻璃化）</text>
+  <line x1="837" y1="336" x2="837" y2="348" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="726" y="350" width="222" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="738" y="369" font-size="11.5" fill="#065f46" font-weight="700">④ 100 K 冷流维持</text>
+  <text x="738" y="386" font-size="9.5" fill="#475569">边收集边防结霜、防晶格漂移</text>
+  <text x="726" y="410" font-size="9.5" fill="#64748b">环径比晶体略大一号（20–400 μm）、</text>
+  <text x="726" y="423" font-size="9.5" fill="#64748b">丝径 10–20 μm；油封一路：</text>
+  <text x="726" y="436" font-size="9.5" fill="#64748b">Paratone-N 惰性油裹油速冻，</text>
+  <text x="726" y="449" font-size="9.5" fill="#64748b">适合怕冲洗的低盐晶体。</text>
+  <rect x="970" y="174" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="201.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">保护剂</text>
+  <rect x="1062" y="174" width="74" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1099" y="201.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">常用浓度</text>
+  <rect x="1136" y="174" width="214" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1243" y="201.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">特点与适用</text>
+  <rect x="970" y="218" width="92" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="236" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">甘油</text>
+  <rect x="1062" y="218" width="74" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1099" y="236" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">15–25%</text>
+  <rect x="1136" y="218" width="214" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1243" y="236" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">默认首选，兼容高盐与 PEG 母液</text>
+  <rect x="970" y="243" width="380" height="25" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="970" y="243" width="92" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="261" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">乙二醇</text>
+  <rect x="1062" y="243" width="74" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1099" y="261" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">10–20%</text>
+  <rect x="1136" y="243" width="214" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1243" y="261" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">渗透快，部分体系优于甘油</text>
+  <rect x="970" y="268" width="92" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="286" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">MPD</text>
+  <rect x="1062" y="268" width="74" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1099" y="286" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">10–30%</text>
+  <rect x="1136" y="268" width="214" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1243" y="286" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">兼作沉淀剂，渗透压效应强</text>
+  <rect x="970" y="293" width="380" height="25" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="970" y="293" width="92" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="311" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">低分子量 PEG</text>
+  <rect x="1062" y="293" width="74" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1099" y="311" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">10–30%</text>
+  <rect x="1136" y="293" width="214" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1243" y="311" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">两性分子，常同时改善镶嵌度</text>
+  <rect x="970" y="318" width="92" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="336" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">高浓度盐</text>
+  <rect x="1062" y="318" width="74" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1099" y="336" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">视体系</text>
+  <rect x="1136" y="318" width="214" height="25" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1243" y="336" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">盐析体系母液近旁即防冻液</text>
+  <text x="970" y="358" font-size="10" fill="#475569">梯度实操：每档 +5 个百分点（甘油 5% 至 25%）逐档「浸、捞、冻、照」，</text>
+  <text x="970" y="372" font-size="10" fill="#475569">每档转移 10–30 秒等渗透平衡，速冻后试收两三帧，记录冰环、</text>
+  <text x="970" y="386" font-size="10" fill="#475569">mosaicity 与衍射极限；多数晶体在 15–20% 找到窗口。</text>
+  <text x="970" y="424" font-size="9.5" fill="#dc2626">跳档直上高浓度是常见败因：渗透冲击先于玻璃化把晶格打伤。</text>
+  <rect x="30" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、玻璃冰、六方冰与霜：同一帧的三种诊断</text>
+  <rect x="56" y="500" width="196" height="180" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="154" cy="590" r="9" fill="#1e293b"/>
+  <circle cx="84" cy="534" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="118" cy="522" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="206" cy="530" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="234" cy="562" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="78" cy="580" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="102" cy="620" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="140" cy="648" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="180" cy="520" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="224" cy="608" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="90" cy="650" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="168" cy="562" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="202" cy="646" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="126" cy="542" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="156" cy="632" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="142" cy="592" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="216" cy="584" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <rect x="262" y="500" width="196" height="180" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="360" cy="590" r="9" fill="#1e293b"/>
+  <circle cx="290" cy="534" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="324" cy="522" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="412" cy="530" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="440" cy="562" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="284" cy="580" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="308" cy="620" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="346" cy="648" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="386" cy="520" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="430" cy="608" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="296" cy="650" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="374" cy="562" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="408" cy="646" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="332" cy="542" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="362" cy="632" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="348" cy="592" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="422" cy="584" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="360" cy="590" r="40" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <circle cx="360" cy="590" r="76" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="360" y="544" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">3.67 Å</text>
+  <text x="360" y="508" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">1.92 Å</text>
+  <rect x="468" y="500" width="196" height="180" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="566" cy="590" r="9" fill="#1e293b"/>
+  <circle cx="496" cy="534" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="530" cy="522" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="618" cy="530" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="646" cy="562" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="490" cy="580" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="514" cy="620" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="552" cy="648" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="592" cy="520" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="636" cy="608" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="502" cy="650" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="580" cy="562" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="614" cy="646" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="538" cy="542" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="568" cy="632" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="554" cy="592" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="628" cy="584" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="498" cy="552" r="7" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="628" cy="538" r="8" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="518" cy="642" r="6" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="608" cy="622" r="7.5" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="648" cy="592" r="6" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="484" cy="612" r="5.5" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="538" cy="566" r="5" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="588" cy="652" r="6.5" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="563" cy="530" r="5.5" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="512" cy="588" r="5" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="620" cy="560" r="5.5" fill="#dc2626" fill-opacity="0.8"/>
+  <text x="154" y="698" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">A 玻璃化：过关</text>
+  <text x="154" y="716" font-size="10" fill="#475569" text-anchor="middle">无定形冰只贡献平缓背景</text>
+  <text x="360" y="698" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">B 六方冰：结冰</text>
+  <text x="360" y="716" font-size="10" fill="#475569" text-anchor="middle">3.67 与 1.92 Å 尖锐粉末环</text>
+  <text x="566" y="698" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">C 霜：结霜</text>
+  <text x="566" y="716" font-size="10" fill="#475569" text-anchor="middle">随机强斑（冷流罩湿度失控）</text>
+  <rect x="115.8475" y="736.65" width="112.30500000000002" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="172" y="749.96" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">环在 3.67 Å = 结冰</text>
+  <rect x="330.1086" y="736.65" width="119.7828" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="390" y="749.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">环外随机强斑 = 结霜</text>
+  <rect x="531.4386" y="736.65" width="97.12280000000001" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="580" y="749.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">背景干净 = 过关</text>
+  <text x="56" y="774" font-size="10" fill="#475569">两帧对比法：连收两帧低剂量快照，若第二帧冰环更强，</text>
+  <text x="56" y="788" font-size="10" fill="#475569">说明结冰正在生长（玻璃化不彻底），须上调保护剂档位；</text>
+  <text x="56" y="802" font-size="10" fill="#475569">轻度结冰只牺牲两环附近反射，重度结冰把整幅图埋进高背景。</text>
+  <text x="380" y="774" font-size="10" fill="#475569">盐环鉴别：母液析出的盐晶也成尖锐环，</text>
+  <text x="380" y="788" font-size="10" fill="#475569">但位置不与 3.67/1.92 Å 重合——盐环改善冲洗与母液配比，</text>
+  <text x="380" y="802" font-size="10" fill="#475569">冰环调保护剂；对策按轻重递进：提高浓度、改降温方式（退火）、</text>
+  <text x="380" y="816" font-size="10" fill="#475569">小晶体修除多余母液。</text>
+  <text x="56" y="836" font-size="10" fill="#64748b">结冰的物理：六方冰是晶态，自己的晶格也会衍射——取向随机的无数小冰晶叠出尖锐粉末环；玻璃化的无定形冰只贡献平缓背景。</text>
+  <text x="56" y="850" font-size="10" fill="#64748b">冷冻成败，衍射图自己会说话。</text>
+  <text x="56" y="884" font-size="9.5" fill="#475569">防霜：干燥空气幕与冷流罩的干燥吹扫；霜的病因是冷流罩内湿度失控、水汽在晶体与环上凝华。</text>
+  <text x="56" y="904" font-size="9.5" fill="#475569">捞取讲究「快、稳、薄」：室内湿度大时，蒸发会先于冷冻把母液浓缩、把晶体「腌伤」。</text>
+  <rect x="710" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、退火：给晶体一次重来的机会，与低温的代价</text>
+  <rect x="726" y="486" width="272" height="84" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="738" y="506" font-size="11.5" fill="#134e4a" font-weight="700">微退火（Yeh 与 Hol 1998）</text>
+  <text x="738" y="524" font-size="9.5" fill="#475569">暂时遮挡冷流约 2–3 秒，晶体短暂升温后复冷；</text>
+  <text x="738" y="537.5" font-size="9.5" fill="#475569">操作更轻，常用于压低 mosaicity。</text>
+  <rect x="726" y="580" width="272" height="96" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="738" y="600" font-size="11.5" fill="#4c1d95" font-weight="700">大退火（Harp 等 1999）</text>
+  <text x="738" y="618" font-size="9.5" fill="#475569">冻僵晶体短暂放回母液或防冻液，重新平衡后再次速冻；</text>
+  <text x="738" y="631.5" font-size="9.5" fill="#475569">适用于保护剂浓度不当导致的镶嵌度恶化与轻度结冰。</text>
+  <text x="726" y="692" font-size="9.5" fill="#475569">稳妥次序「先微后大」：</text>
+  <text x="726" y="705.5" font-size="9.5" fill="#475569">退火前后各拍快照对比 mosaicity 与衍射极限，两轮无效即止；</text>
+  <text x="726" y="719" font-size="9.5" fill="#475569">机理是晶格应力松弛与残冰重排；大退火要过渗透冲击关</text>
+  <text x="726" y="732.5" font-size="9.5" fill="#475569">（晶体可能在回温中溶解或开裂）；</text>
+  <text x="726" y="746" font-size="9.5" fill="#475569">脆弱晶体回第 3 章重新优化更划算。</text>
+  <text x="726" y="790" font-size="11" fill="#1e293b" font-weight="700">温度系综被快门冻结：同一侧链的两幅图</text>
+  <rect x="726" y="802" width="130" height="86" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <ellipse cx="791" cy="848" rx="46" ry="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="791" y="908" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="600">100 K：弥散成一团</text>
+  <rect x="868" y="802" width="130" height="86" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="902" cy="838" r="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.7"/>
+  <circle cx="952" cy="858" r="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="933" y="908" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="600">室温：两位点现身</text>
+  <text x="726" y="928" font-size="9.5" fill="#64748b">构象冻结、镶嵌度上升、化学状态被固定——低温不是免费午餐。</text>
+  <text x="1020" y="500" font-size="11.5" fill="#1e293b" font-weight="700">① 构象冻结</text>
+  <text x="1020" y="518" font-size="10" fill="#475569">100 K 能垒挡住构象态间跃迁，</text>
+  <text x="1020" y="532" font-size="10" fill="#475569">拍到的是被随机冻结在各自势阱里的一群构象，</text>
+  <text x="1020" y="546" font-size="10" fill="#475569">温度因子读出的「柔性」也被压扁。</text>
+  <text x="1020" y="578" font-size="11.5" fill="#1e293b" font-weight="700">② mosaicity 上升</text>
+  <text x="1020" y="596" font-size="10" fill="#475569">速冻的热应力常把 mosaicity 从 0.1° 推到 0.3–0.8°，斑点变大变糊、</text>
+  <text x="1020" y="610" font-size="10" fill="#475569">重叠风险上升（第 2 节的 Δφ 由此切窄）。</text>
+  <text x="1020" y="642" font-size="11.5" fill="#1e293b" font-weight="700">③ 化学状态被固定</text>
+  <text x="1020" y="660" font-size="10" fill="#475569">催化中间态、配体结合态未必是室温下的主流态。</text>
+  <rect x="1020" y="686" width="334" height="96" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1032" y="706" font-size="11.5" fill="#92400e" font-weight="700">室温晶体学复兴</text>
+  <text x="1032" y="724" font-size="9.5" fill="#475569">低剂量串联收集与新型固定靶载体让室温数据重新可行，</text>
+  <text x="1032" y="737.5" font-size="9.5" fill="#475569">与 100 K 互补回答「生理温度下的构象系综」（第 12 章）；</text>
+  <text x="1032" y="751" font-size="9.5" fill="#475569">实务组合拳：先低温保平安，必要时以室温数据核对关键结论。</text>
+  <text x="1020" y="806" font-size="10" fill="#64748b">低温红利与代价同源：100 K 把自由基限制在局部、损伤放缓几十倍</text>
+  <text x="1020" y="820" font-size="10" fill="#64748b">（本章第 4 节）——但从不归零，自由基的原料是水。</text>
+  <text x="1020" y="852" font-size="10" fill="#64748b">把同一晶体不同温度的数据并排看，</text>
+  <text x="1020" y="866" font-size="10" fill="#64748b">是「温度系综被快门冻结」最直观的实验证据；复核与检索须注明温度。</text>
+</svg>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质的溶解度行为：盐、pH、温度与 PEG</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">低盐盐溶、高盐盐析，盐析段logS＝β−Ks·I；Hofmeister阴离子以SO<tspan dy="3.7" font-size="12.2">4</tspan><tspan dy="-9.5" font-size="12.2">2-</tspan><tspan dy="5.8">最强（硫酸铵4°C饱和约4M）；pI附近溶解度最低；PEG400–8000（5–40%）优先排阻；纯度大于</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">95%为底线</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、盐：从盐溶到盐析（Cohn 方程）</text>
+  <rect x="70" y="210" width="560" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="397.5" x2="630" y2="397.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="210" y1="460" x2="210" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="335" x2="630" y2="335" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="350" y1="460" x2="350" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="272.5" x2="630" y2="272.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="490" y1="460" x2="490" y2="210" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="98" y1="460" x2="98" y2="466" stroke="#475569" stroke-width="1.8"/>
+  <text x="98" y="482" font-size="13" fill="#64748b" text-anchor="middle">低盐</text>
+  <line x1="546" y1="460" x2="546" y2="466" stroke="#475569" stroke-width="1.8"/>
+  <text x="546" y="482" font-size="13" fill="#64748b" text-anchor="middle">高盐</text>
+  <text x="350" y="504" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">离子强度 I</text>
+  <text x="24" y="335" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">log S（溶解度对数）</text>
+  <text x="350" y="198" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">离子强度对溶解度：先升后降的钟形行为</text>
+  <path d="M70,385 C77.5,371.7 98.0,323.8 114.80000000000001,305 C131.6,286.3 150.3,273.8 170.8,272.5 C191.3,271.3 212.8,286.3 238,297.5 C263.2,308.8 289.3,325.8 322,340 C354.7,354.2 396.7,368.8 434,382.5 C471.3,396.3 513.3,410.8 546,422.5 C578.7,434.2 616.0,447.5 630,452.5" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <line x1="238" y1="297.5" x2="618.8" y2="450" stroke="#be185d" stroke-width="2.2" stroke-dasharray="7 5"/>
+  <text x="190" y="232" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">盐溶：屏蔽静电吸引、增进水化</text>
+  <text x="470" y="300" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">盐析：盐离子优先水化、竞争水分子</text>
+  <rect x="361.7837" y="345.65" width="226.43259999999998" height="18.7" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="475" y="358.96" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">盐析段：log S = β − Ks·I（半对数直线）</text>
+  <text x="60" y="508" font-size="10.5" fill="#475569">硫酸铵「最盐析」且对多数蛋白构象温和、溶解度极高（4 °C 饱和约 4 M），是分级纯化与结晶实验沉淀剂的常客；</text>
+  <text x="60" y="522" font-size="10.5" fill="#475569">盐析结晶与盐析沉淀的分界——晶形完整与絮状无序——肉眼可辨。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Hofmeister 序列（1888）与经典教学体系</text>
+  <text x="730" y="198" font-size="10.5" fill="#475569" font-weight="700">阴离子（盐析效力自左向右增强）：</text>
+  <rect x="775.505504" y="213.8" width="48.988992" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="800" y="228.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">SO<tspan dy="2.6" font-size="8.6">4</tspan><tspan dy="-6.7" font-size="8.6">2-</tspan></text>
+  <rect x="901.673904" y="213.8" width="56.65219200000001" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="930" y="228.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">HPO<tspan dy="2.6" font-size="8.6">4</tspan><tspan dy="-6.7" font-size="8.6">2-</tspan></text>
+  <rect x="1019.854608" y="213.8" width="30.290784000000002" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1035" y="228.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">F<tspan dy="-4.1" font-size="8.6">-</tspan></text>
+  <rect x="1087.877008" y="213.8" width="34.245984" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1105" y="228.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">Cl<tspan dy="-4.1" font-size="8.6">-</tspan></text>
+  <rect x="1156.641008" y="213.8" width="36.717984" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1175" y="228.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">Br<tspan dy="-4.1" font-size="8.6">-</tspan></text>
+  <rect x="1229.854608" y="213.8" width="30.290784000000002" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1245" y="228.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">I<tspan dy="-4.1" font-size="8.6">-</tspan></text>
+  <line x1="740" y1="256" x2="1330" y2="256" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <text x="1035" y="276" font-size="10" fill="#134e4a" text-anchor="middle">盐析增强（枸橼酸根亦属强盐析端）</text>
+  <text x="730" y="312" font-size="10.5" fill="#475569" font-weight="700">阳离子：NH<tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-5.9" font-size="7.6">+</tspan><tspan dy="3.6"> 强于 K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">、Na</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">、Mg</tspan><tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6">。</tspan></text>
+  <rect x="814.8872" y="338.65" width="250.2256" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="940" y="351.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">硫酸铵：4 °C 饱和约 4 M——最盐析且构象温和</text>
+  <circle cx="830" cy="448" r="60" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <polygon points="812,420 819,430 812,440 805,430" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <polygon points="852,446 860.4,458 852,470 843.6,458" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <polygon points="828,474 833.6,482 828,490 822.4,482" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <polygon points="798,459 802.9,466 798,473 793.1,466" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="830" y="528" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">悬滴中的溶菌酶晶体</text>
+  <text x="920" y="396" font-size="10.5" fill="#475569">教学经典：溶菌酶体系。0.1 M 乙酸钠缓冲液 pH 4.5 中，</text>
+  <text x="920" y="410.5" font-size="10.5" fill="#475569">以 3–10% 氯化钠即可在数小时内把 20–30 mg/mL 的蛋清溶菌酶推入结晶区——一代代学生在这滴液里第一次看见棱角分明的蛋白晶体，</text>
+  <text x="920" y="425" font-size="10.5" fill="#475569">也第一次分辨「结晶」与「絮状沉淀」的分界。</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、pH 与等电点：最易沉出与最易沉坏仅一步之遥</text>
+  <rect x="70" y="630" width="560" height="250" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="817.5" x2="630" y2="817.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="210" y1="880" x2="210" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="755" x2="630" y2="755" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="350" y1="880" x2="350" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="692.5" x2="630" y2="692.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="490" y1="880" x2="490" y2="630" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="232.39999999999998" y1="880" x2="232.39999999999998" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="232.39999999999998" y="902" font-size="13" fill="#64748b" text-anchor="middle">4</text>
+  <line x1="350" y1="880" x2="350" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="350" y="902" font-size="13" fill="#64748b" text-anchor="middle">pI</text>
+  <line x1="467.59999999999997" y1="880" x2="467.59999999999997" y2="886" stroke="#475569" stroke-width="1.8"/>
+  <text x="467.59999999999997" y="902" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <text x="350" y="924" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">pH</text>
+  <text x="24" y="755" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">溶解度</text>
+  <text x="350" y="618" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">溶解度通常在等电点 pI 附近最低</text>
+  <line x1="350" y1="880" x2="350" y2="660" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <path d="M109.2,655 C121.3,669.6 154.9,715.4 182,742.5 C209.1,769.6 250.1,799.6 271.6,817.5 C293.1,835.4 297.7,843.8 310.79999999999995,850 C323.9,856.3 336.9,855.0 350,855 C363.1,855.0 376.1,856.3 389.2,850 C402.3,843.8 406.9,835.4 428.40000000000003,817.5 C449.9,799.6 490.9,769.6 518,742.5 C545.1,715.4 578.7,669.6 590.8000000000001,655" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="360" y="695" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">净电荷趋零、静电排斥最小</text>
+  <text x="160" y="700" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">低 pH：净电荷为正</text>
+  <text x="640" y="700" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">高 pH：净电荷为负</text>
+  <rect x="181.8847" y="751.075" width="336.2306" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="350" y="763.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">pI 附近聚集与变性风险也最高：常在两侧各一两个 pH 单位内扫描</text>
+  <path d="M 232.39999999999998,927 Q 232.39999999999998,918 241.39999999999998,918 M 458.59999999999997,918 Q 467.59999999999997,918 467.59999999999997,927" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="241.39999999999998" y1="918" x2="458.59999999999997" y2="918" stroke="#64748b" stroke-width="1.7"/>
+  <text x="350" y="942" font-size="14" fill="#64748b" text-anchor="middle" font-weight="600">结晶筛选的 pH 维度通常覆盖 4–10</text>
+  <text x="60" y="962" font-size="10" fill="#64748b">温度：多数蛋白溶解度随温度降低而下降（低温结晶常用 4 或 16 °C；胰岛素等反向蛋白真实存在）；</text>
+  <text x="60" y="975" font-size="10" fill="#64748b">恒温纪律——培养箱漂移控制在正负 0.5 °C 内，昼夜几度漂移会让液滴反复溶解与再结晶。</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、PEG 的优先排阻与五因素常用范围</text>
+  <text x="360" y="608" font-size="12" fill="#475569" text-anchor="middle" font-weight="700">优先排阻：PEG 被排除在蛋白水化层之外</text>
+  <circle cx="360" cy="720" r="58" fill="none" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <circle cx="360" cy="720" r="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="360" y="726" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白</text>
+  <circle cx="411" cy="720" r="2.8" fill="#0369a1"/>
+  <circle cx="404.1672955930064" cy="745.5" r="2.8" fill="#0369a1"/>
+  <circle cx="385.5" cy="764.1672955930063" r="2.8" fill="#0369a1"/>
+  <circle cx="360" cy="771" r="2.8" fill="#0369a1"/>
+  <circle cx="334.5" cy="764.1672955930064" r="2.8" fill="#0369a1"/>
+  <circle cx="315.8327044069936" cy="745.5" r="2.8" fill="#0369a1"/>
+  <circle cx="309" cy="720" r="2.8" fill="#0369a1"/>
+  <circle cx="315.8327044069936" cy="694.5" r="2.8" fill="#0369a1"/>
+  <circle cx="334.5" cy="675.8327044069937" r="2.8" fill="#0369a1"/>
+  <circle cx="360" cy="669" r="2.8" fill="#0369a1"/>
+  <circle cx="385.5" cy="675.8327044069937" r="2.8" fill="#0369a1"/>
+  <circle cx="404.1672955930064" cy="694.5" r="2.8" fill="#0369a1"/>
+  <text x="360" y="800" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">水化层（水分子）</text>
+  <path d="M 272.1597781702054,657.8573873892941 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 337.3136439482814,628.0392285201815 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 404.0970172599392,654.003239637244 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 430.16612516139423,701.7224215668543 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 420.7375956939143,764.1071495515866 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 373.33691341185397,805.7475959089849 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 301.7144910376629,803.6553632679627 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 253.31554465848347,750.8189098143432 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <path d="M 257.4982256972585,679.2881192168736 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0 q 5,-9 10,0 q 5,9 10,0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <line x1="321.8518311101066" y1="608.3365896528851" x2="339.30946772073577" y2="659.4367943880055" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="190" y="620" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">PEG 大分子</text>
+  <rect x="214.59619999999998" y="841.075" width="290.80760000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="360" y="853.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">热力学上等价于提高蛋白的有效浓度——「从水里挤出来」</text>
+  <rect x="77.144" y="883.5" width="145.712" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="150" y="895.6" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">PEG 400：黏度低、温和</text>
+  <rect x="279.831" y="883.5" width="160.33800000000002" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="360" y="895.6" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">PEG 3350/4000：筛选中坚</text>
+  <rect x="480.501" y="883.5" width="182.99800000000002" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="572" y="895.6" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">PEG 8000：排阻力强的「重锤」</text>
+  <text x="1030" y="608" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">五因素的常用范围</text>
+  <rect x="730" y="620" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="647.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">因素</text>
+  <rect x="870" y="620" width="300" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="647.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">作用机制</text>
+  <rect x="1170" y="620" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="647.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">常用范围</text>
+  <rect x="730" y="664" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="686.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">硫酸铵</text>
+  <rect x="870" y="664" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="686.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高盐盐析，Cohn 方程</text>
+  <rect x="1170" y="664" width="160" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="686.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">0.5–3 M</text>
+  <rect x="730" y="698" width="600" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="698" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="720.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">PEG 400–8000</text>
+  <rect x="870" y="698" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="720.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">优先排阻，提高有效浓度</text>
+  <rect x="1170" y="698" width="160" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="720.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">5–40% w/v</text>
+  <rect x="730" y="732" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="754.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">pH</text>
+  <rect x="870" y="732" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="754.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">近 pI 溶解度最低</text>
+  <rect x="1170" y="732" width="160" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="754.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">4–10</text>
+  <rect x="730" y="766" width="600" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="766" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="788.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">温度</text>
+  <rect x="870" y="766" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="788.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">多数蛋白低温降溶</text>
+  <rect x="1170" y="766" width="160" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="788.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">4–22 °C</text>
+  <rect x="730" y="800" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="800" y="822.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">有机溶剂</text>
+  <rect x="870" y="800" width="300" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1020" y="822.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">降低介电常数</text>
+  <rect x="1170" y="800" width="160" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1250" y="822.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">5–30%</text>
+  <text x="730" y="862" font-size="10.5" fill="#475569">有机溶剂（乙醇、异丙醇、MPD）削弱电荷水化，须与低温配合、缓慢滴加；分子量越大，同浓度下排阻力越强。样品底线：</text>
+  <text x="730" y="876.5" font-size="10.5" fill="#475569">SDS-PAGE 纯度大于 95%（大于 98% 更佳）；能否浓缩至 5–20 mg/mL 而不浑浊，是「可结晶性」的快速体检。</text>
+</svg>

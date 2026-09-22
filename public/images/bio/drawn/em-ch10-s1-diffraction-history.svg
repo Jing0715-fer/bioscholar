@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电子衍射的发现与早期历史：从物质波到紫膜</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">1927年戴维孙-革末镍单晶（54eV，波长约1.67Å）与G.P.汤姆孙薄膜环状衍射证实电子波动性（1937年诺奖）；电子波长100/200/300kV为0.037/0.025/0.020Å；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">Henderson与Unwin1975年紫膜7Å</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、1927 年：两路实验同时裁决物质波</text>
+  <text x="50" y="180" font-size="12.5" fill="#1e293b" font-weight="700">λ = h/p（德布罗意 1924 年物质波假说）</text>
+  <text x="210" y="204" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">戴维孙-革末：镍单晶弹性散射</text>
+  <rect x="60" y="224" width="42" height="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="81" y="241" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">e<tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1">枪</tspan></text>
+  <line x1="106" y1="237" x2="160" y2="237" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <polygon points="160,218 196,218 188,258 168,258" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="178" y="276" font-size="9.5" fill="#92400e" text-anchor="middle">镍单晶</text>
+  <line x1="192" y1="231" x2="262" y2="205" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="262" y="190" width="34" height="26" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="279" y="207" font-size="8.5" fill="#831843" text-anchor="middle">收集器</text>
+  <path d="M 150,252 A 40,40 0 0 0 186,262" fill="none" stroke="#64748b" stroke-width="1.4"/>
+  <text x="168" y="288" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">θ</text>
+  <rect x="114.16329999999998" y="313.075" width="151.67340000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="190" y="325.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">54 eV 电子，波长约 1.67 Å</text>
+  <text x="540" y="204" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">G. P. 汤姆孙：多晶薄膜环状衍射</text>
+  <rect x="380" y="224" width="42" height="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="401" y="241" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">e<tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1">枪</tspan></text>
+  <line x1="426" y1="237" x2="480" y2="237" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <rect x="480" y="214" width="8" height="46" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="484" y="276" font-size="9.5" fill="#4c1d95" text-anchor="middle">多晶薄膜</text>
+  <line x1="492" y1="237" x2="540" y2="237" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <circle cx="600" cy="237" r="52" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="600" cy="237" r="14" fill="none" stroke="#be185d" stroke-width="1.6" opacity="0.75"/>
+  <circle cx="600" cy="237" r="28" fill="none" stroke="#be185d" stroke-width="1.6" opacity="0.75"/>
+  <circle cx="600" cy="237" r="42" fill="none" stroke="#be185d" stroke-width="1.6" opacity="0.75"/>
+  <text x="600" y="300" font-size="9.5" fill="#831843" text-anchor="middle">透射衍射环</text>
+  <rect x="452.25" y="313.075" width="175.5" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="540" y="325.78" font-size="10.5" fill="#78350f" text-anchor="middle">环纹＝多晶取向平均的布拉格反射</text>
+  <rect x="143.0161" y="383.075" width="213.96779999999998" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="250" y="395.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">德布罗意 1929 年先行获诺贝尔物理学奖</text>
+  <rect x="453.8813" y="383.075" width="212.2374" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="395.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">戴维孙与 G. P. 汤姆孙 1937 年共享诺奖</text>
+  <text x="360" y="468" font-size="10" fill="#64748b" text-anchor="middle">J. J. 汤姆孙因证明电子是粒子获 1906 年诺奖，儿子 G. P. 因证明电子是波获 1937 年——父证其粒、子证其波</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、电子波长随加速电压缩短</text>
+  <rect x="773.5" y="395.47777777777776" width="48" height="4.522222222222221" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="797.5" y="386.47777777777776" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">0.037 Å</text>
+  <text x="797.5" y="420" font-size="12.5" fill="#64748b" text-anchor="middle">100 kV</text>
+  <rect x="848.5" y="396.94444444444446" width="48" height="3.055555555555556" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="872.5" y="387.94444444444446" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">0.025 Å</text>
+  <text x="872.5" y="420" font-size="12.5" fill="#64748b" text-anchor="middle">200 kV</text>
+  <rect x="923.5" y="397.55555555555554" width="48" height="2.4444444444444446" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="947.5" y="388.55555555555554" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">0.020 Å</text>
+  <text x="947.5" y="420" font-size="12.5" fill="#64748b" text-anchor="middle">300 kV</text>
+  <rect x="998.5" y="211.7777777777778" width="48" height="188.2222222222222" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1022.5" y="202.7777777777778" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">1.54 Å</text>
+  <text x="1022.5" y="420" font-size="12.5" fill="#64748b" text-anchor="middle">Cu Kα</text>
+  <text x="910" y="186" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">电子波长比常用 X 射线短数十倍</text>
+  <text x="740" y="216" font-size="10.5" fill="#475569">短波长意味着超小的衍射角与接近平面的 Ewald 球（本章第 3 节 MicroED 的物理红利）；</text>
+  <text x="740" y="231" font-size="10.5" fill="#475569">电子散射截面比 X 射线高多个数量级——薄膜即可衍射，亚微米微晶也给出可测强度。</text>
+  <rect x="1109.015" y="290.65" width="121.97" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1170" y="303.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">散射强：薄膜即衍射</text>
+  <rect x="1114.68" y="326.65" width="110.64" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1170" y="339.96" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">代价：动力学散射</text>
+  <text x="740" y="470" font-size="10.5" fill="#475569">多束相干相互作用使强度偏离 |F|<tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">——「电子衍射不可定量」的质疑伴随半个世纪，直到动力学精修给出回应（本章第 3、4 节）</tspan></text>
+  <text x="740" y="485" font-size="10.5" fill="#475569">。</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、1930 至 1950 年代：从物理玩具到结构工具</text>
+  <line x1="70" y1="780" x2="650" y2="780" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="99" cy="780" r="6.5" fill="#dc2626"/>
+  <line x1="99" y1="771" x2="99" y2="750" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="99" y="730" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1924</text>
+  <text x="99" y="710" font-size="12" fill="#64748b" text-anchor="middle">德布罗意物质波假说</text>
+  <circle cx="197.6" cy="780" r="6.5" fill="#dc2626"/>
+  <line x1="197.6" y1="789" x2="197.6" y2="810" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="197.6" y="830" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1927</text>
+  <text x="197.6" y="850" font-size="12" fill="#64748b" text-anchor="middle">两路衍射实验裁决</text>
+  <circle cx="313.6" cy="780" r="6.5" fill="#dc2626"/>
+  <line x1="313.6" y1="771" x2="313.6" y2="750" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="313.6" y="730" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1930–40 年代</text>
+  <text x="313.6" y="710" font-size="12" fill="#64748b" text-anchor="middle">电子衍射相机成常规仪器</text>
+  <circle cx="429.6" cy="780" r="6.5" fill="#dc2626"/>
+  <line x1="429.6" y1="789" x2="429.6" y2="810" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="429.6" y="830" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1940–50 年代</text>
+  <text x="429.6" y="850" font-size="12" fill="#64748b" text-anchor="middle">苏联学派电子衍射结构分析</text>
+  <circle cx="557.2" cy="780" r="6.5" fill="#dc2626"/>
+  <line x1="557.2" y1="771" x2="557.2" y2="750" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="557.2" y="730" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1960 年代</text>
+  <text x="557.2" y="710" font-size="12" fill="#64748b" text-anchor="middle">Vainshtein 专著译介西方</text>
+  <text x="50" y="880" font-size="10.5" fill="#475569">电子衍射相机定量测定金属蒸镀层晶粒取向、表面氧化层织构与脂肪酸单分子层堆积周期；</text>
+  <text x="50" y="895" font-size="10.5" fill="#475569">Pinsker 与 Vainshtein 等人以强度统计解出轻原子薄层与粘土矿物结构。</text>
+  <rect x="157" y="921.075" width="186" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="250" y="933.78" font-size="10.5" fill="#475569" text-anchor="middle">表面与薄膜：电子的浅穿透恰成优势</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、生物样品：剂量困境与紫膜加冕</text>
+  <rect x="788.2574999999999" y="611.075" width="223.485" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="900" y="623.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">Taylor 与 Glaeser 1974：冷冻催化酶晶体</text>
+  <rect x="1102.75" y="611.075" width="154.5" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1180" y="623.78" font-size="10.5" fill="#075985" text-anchor="middle">低温放宽剂量预算、保留水合</text>
+  <circle cx="780" cy="760" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="787.5" cy="760" r="3.2" fill="#4c1d95"/>
+  <circle cx="776.25" cy="766.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="776.25" cy="753.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="808" cy="712" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="815.5" cy="712" r="3.2" fill="#4c1d95"/>
+  <circle cx="804.25" cy="718.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="804.25" cy="705.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="780" cy="664" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="787.5" cy="664" r="3.2" fill="#4c1d95"/>
+  <circle cx="776.25" cy="670.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="776.25" cy="657.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="836" cy="760" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="843.5" cy="760" r="3.2" fill="#4c1d95"/>
+  <circle cx="832.25" cy="766.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="832.25" cy="753.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="864" cy="712" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="871.5" cy="712" r="3.2" fill="#4c1d95"/>
+  <circle cx="860.25" cy="718.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="860.25" cy="705.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="836" cy="664" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="843.5" cy="664" r="3.2" fill="#4c1d95"/>
+  <circle cx="832.25" cy="670.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="832.25" cy="657.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="892" cy="760" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="899.5" cy="760" r="3.2" fill="#4c1d95"/>
+  <circle cx="888.25" cy="766.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="888.25" cy="753.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="920" cy="712" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="927.5" cy="712" r="3.2" fill="#4c1d95"/>
+  <circle cx="916.25" cy="718.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="916.25" cy="705.5048094716167" r="3.2" fill="#4c1d95"/>
+  <circle cx="892" cy="664" r="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="899.5" cy="664" r="3.2" fill="#4c1d95"/>
+  <circle cx="888.25" cy="670.4951905283833" r="3.2" fill="#4c1d95"/>
+  <circle cx="888.25" cy="657.5048094716167" r="3.2" fill="#4c1d95"/>
+  <line x1="808" y1="768" x2="864" y2="768" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="836" y="788" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">a 约 62 Å</text>
+  <text x="836" y="612" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">紫膜：六角 p3 晶格，每格一个 bR 三聚体</text>
+  <text x="1010" y="690" font-size="10.5" fill="#475569">Henderson 与 Unwin 1975 年紫膜结构：葡萄糖包埋防脱水、</text>
+  <text x="1010" y="705" font-size="10.5" fill="#475569">衍射收振幅加图像收相位，</text>
+  <text x="1010" y="720" font-size="10.5" fill="#475569">得 7 Å 面内分辨率——首个非染色天然膜蛋白结构；</text>
+  <text x="1010" y="735" font-size="10.5" fill="#475569">1990 年达 3.5 Å 完整原子模型。</text>
+  <rect x="1073.665" y="811.075" width="212.67000000000002" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1180" y="823.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">分账纪律：振幅出自衍射、相位出自图像</text>
+  <text x="1040" y="930" font-size="10" fill="#64748b" text-anchor="middle">「图像给相位」的路线为二维晶体电子晶体学加冕（本章第 2 节展开）</text>
+</svg>

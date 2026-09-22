@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电子断层扫描的原理：中心截面定理的断层版</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">样品台锁死于约±60°：60°缺失楔占180°完备倾角的三分之一（约33%方向未测），点扩散沿z拉长约1.7倍；剂量预算50–150e⁻/Å²摊40–80张投影，总100摊60张即每张约</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">1.7e⁻/Å²</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、投影定理的断层版：倾斜系列与正弦图</text>
+  <line x1="110" y1="182" x2="110" y2="216" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="118" y="198" font-size="10" fill="#075985">e<tspan dy="-3.4" font-size="7.2">-</tspan></text>
+  <line x1="78.88730162779191" y1="226.8873016277919" x2="141.1126983722081" y2="289.1126983722081" stroke="#475569" stroke-width="3"/>
+  <ellipse cx="110" cy="258" rx="16" ry="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="116" cy="258" r="4" fill="#4c1d95"/>
+  <rect x="65" y="302" width="90" height="26" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="93.75735931288071" y="306" width="18" height="18" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="110" y="352" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">−45°</text>
+  <text x="110" y="368" font-size="9" fill="#64748b" text-anchor="middle">样品台倾转、束固定</text>
+  <line x1="230" y1="182" x2="230" y2="216" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="238" y="198" font-size="10" fill="#075985">e<tspan dy="-3.4" font-size="7.2">-</tspan></text>
+  <line x1="230" y1="214" x2="230" y2="302" stroke="#475569" stroke-width="3"/>
+  <ellipse cx="230" cy="258" rx="16" ry="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="236" cy="258" r="4" fill="#4c1d95"/>
+  <rect x="185" y="302" width="90" height="26" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="218" y="306" width="18" height="18" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="230" y="352" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">0°</text>
+  <text x="230" y="368" font-size="9" fill="#64748b" text-anchor="middle">样品台倾转、束固定</text>
+  <line x1="350" y1="182" x2="350" y2="216" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="358" y="198" font-size="10" fill="#075985">e<tspan dy="-3.4" font-size="7.2">-</tspan></text>
+  <line x1="381.1126983722081" y1="226.8873016277919" x2="318.8873016277919" y2="289.1126983722081" stroke="#475569" stroke-width="3"/>
+  <ellipse cx="350" cy="258" rx="16" ry="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="356" cy="258" r="4" fill="#4c1d95"/>
+  <rect x="305" y="302" width="90" height="26" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <rect x="342.24264068711926" y="306" width="18" height="18" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="350" y="352" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">+45°</text>
+  <text x="350" y="368" font-size="9" fill="#64748b" text-anchor="middle">样品台倾转、束固定</text>
+  <text x="230" y="396" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">样品台被物镜极靴锁死在约 ±60°——覆盖不完整是与单颗粒的本质分岔</text>
+  <rect x="450" y="190" width="210" height="190" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="555" y="180" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">正弦图（sinogram）</text>
+  <polyline points="510.8,196 510.93625384899576,200.45 511.3441753456949,204.9 512.0212495184227,209.35 512.9633019797542,213.8 514.1645246630011,218.25 515.6175116308741,222.7 517.3133047355491,227.15 519.2414488486273,231.6 521.3900563204786,236.05 523.7458802715546,240.5 526.2943962638059,244.95 529.0198918486727,249.4 531.9055634395551,253.85 534.933619911512,258.3 538.085392289463,262.75 541.3414488486274,267.2 544.681714917569,271.65 548.0855966452218,276.1 551.5321079688292,280.55 555,285 558.4678920311708,289.45 561.9144033547782,293.9 565.318285082431,298.35 568.6585511513726,302.8 571.914607710537,307.25 575.066380088488,311.7 578.0944365604449,316.15 580.9801081513273,320.6 583.7056037361941,325.04999999999995 586.2541197284454,329.5 588.6099436795214,333.95000000000005 590.7585511513727,338.4 592.6866952644509,342.85 594.3824883691259,347.29999999999995 595.8354753369989,351.75 597.0366980202458,356.20000000000005 597.9787504815773,360.65 598.6558246543051,365.1 599.0637461510042,369.54999999999995 599.2,374" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <polyline points="497.2,196 497.37817811022524,200.45 497.91161391360106,204.9 498.7970186010143,209.35 500.02893335814014,213.8 501.5997630208476,218.25 503.49982290191235,222.7 505.7173985003335,227.15 508.23881772512806,231.6 511.0485351883182,236.05 514.1292280474175,240.5 517.4619028065154,244.95 521.026012417495,249.4 524.7995829594181,253.85 528.7593491150542,258.3 532.8808976092978,262.75 537.1388177251281,267.2 541.5068579691286,271.65 545.9580879206746,276.1 550.4650642669305,280.55 555,285 559.5349357330695,289.45 564.0419120793254,293.9 568.4931420308714,298.35 572.8611822748719,302.8 577.1191023907022,307.25 581.2406508849458,311.7 585.2004170405819,316.15 588.973987582505,320.6 592.5380971934846,325.04999999999995 595.8707719525825,329.5 598.9514648116818,333.95000000000005 601.761182274872,338.4 604.2826014996665,342.85 606.5001770980876,347.29999999999995 608.4002369791524,351.75 609.9710666418598,356.20000000000005 611.2029813989857,360.65 612.0883860863989,365.1 612.6218218897748,369.54999999999995 612.8,374" fill="none" stroke="#0f766e" stroke-width="2.2"/>
+  <polyline points="483.6,196 483.82010237145465,200.45 484.47905248150715,204.9 485.5727876836059,209.35 487.094564736526,213.8 489.0350013786941,218.25 491.38213417295054,222.7 494.1214922651178,227.15 497.2361866016288,231.6 500.7070140561578,236.05 504.5125758232805,240.5 508.6294093492249,244.95 513.0321329863174,249.4 517.6936024792813,253.85 522.5850783185964,258.3 527.6764029291326,262.75 532.9361866016287,267.2 538.3320010206884,271.65 543.8305791961275,276.1 549.3980205650319,280.55 555,285 560.6019794349681,289.45 566.1694208038725,293.9 571.6679989793116,298.35 577.0638133983713,302.8 582.3235970708674,307.25 587.4149216814036,311.7 592.3063975207187,316.15 596.9678670136826,320.6 601.3705906507751,325.04999999999995 605.4874241767195,329.5 609.2929859438422,333.95000000000005 612.7638133983712,338.4 615.8785077348822,342.85 618.6178658270494,347.29999999999995 620.9649986213059,351.75 622.9054352634739,356.20000000000005 624.4272123163942,360.65 625.5209475184928,365.1 626.1798976285453,369.54999999999995 626.4,374" fill="none" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="555" y="400" font-size="9.5" fill="#64748b" text-anchor="middle">纵轴：倾角 −60° 至 +60°</text>
+  <text x="555" y="416" font-size="9.5" fill="#64748b" text-anchor="middle">一个点源扫出一条正弦轨迹</text>
+  <text x="50" y="440" font-size="10" fill="#475569">每张倾角投影为傅里叶体积中一张中心截面（Radon 变换的平行束特例）；方法史开端可追到 1968 年前后 Hart 的多向拼接构想。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、缺失楔：宿命的伪影</text>
+  <circle cx="880" cy="310" r="108" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <path d="M 880,310 L 826,216.46925639128062 A 108,108 0 0 1 934,216.46925639128062 Z" fill="#fee2e2" fill-opacity="0.85" stroke="#dc2626" stroke-width="1.4"/>
+  <path d="M 880,310 L 826,403.5307436087194 A 108,108 0 0 0 934,403.5307436087194 Z" fill="#fee2e2" fill-opacity="0.85" stroke="#dc2626" stroke-width="1.4"/>
+  <line x1="793.9517158799782" y1="260.32" x2="966.0482841200218" y2="359.68" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="806.1611301405661" y1="243.51518295218386" x2="953.8388698594339" y2="376.48481704781614" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="821.5976573322199" y1="229.61607143890524" x2="938.4023426677801" y2="390.38392856109476" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="839.5866471439884" y1="219.23012332863118" x2="920.4133528560116" y2="400.7698766713688" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="859.3418944003474" y1="212.81125439108908" x2="900.6581055996526" y2="407.18874560891095" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="880" y1="210.64" x2="880" y2="409.36" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="900.6581055996526" y1="212.81125439108905" x2="859.3418944003474" y2="407.18874560891095" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="920.4133528560114" y1="219.23012332863118" x2="839.5866471439886" y2="400.7698766713688" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="938.4023426677801" y1="229.61607143890524" x2="821.5976573322199" y2="390.38392856109476" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="953.8388698594339" y1="243.51518295218384" x2="806.1611301405661" y2="376.48481704781614" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <line x1="966.0482841200218" y1="260.31999999999994" x2="793.9517158799782" y2="359.68000000000006" stroke="#0369a1" stroke-width="1.6" opacity="0.5"/>
+  <circle cx="880" cy="310" r="3.5" fill="#1e293b"/>
+  <text x="880" y="436" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">以束轴为中心、合计 60° 的缺失楔</text>
+  <text x="880" y="452" font-size="9.5" fill="#64748b" text-anchor="middle">完备倾角 ±90° 共 180°，60° 空缺恰占三分之一</text>
+  <circle cx="1210" cy="268" r="9" fill="#1e293b"/>
+  <line x1="1210" y1="236" x2="1210" y2="216" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <ellipse cx="1210" cy="368" rx="10" ry="38" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1210" y="428" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">点源沿 z 拉长</text>
+  <text x="1210" y="444" font-size="9.5" fill="#475569" text-anchor="middle">±60° 单轴拉长约 1.7 倍</text>
+  <text x="1210" y="460" font-size="9.5" fill="#475569" text-anchor="middle">双轴约 1.4 倍</text>
+  <rect x="1101.89215" y="181.075" width="156.2157" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1180" y="193.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">z 向分辨率常比 xy 差约 2 倍</text>
+  <text x="730" y="492" font-size="10" fill="#475569">这些方向上的信息不是「弱」，而是根本不存在，任何后处理都无从谈起；双轴断层把两个正交的楔相交、剩余缺失收成金字塔形锥区</text>
+  <text x="730" y="506" font-size="10" fill="#475569">（按方向覆盖从约 33% 压到约一成），代价是剂量翻倍与两套系列配准。</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、倾角方案：顺序的艺术</text>
+  <line x1="80" y1="720" x2="640" y2="720" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="80" y1="714" x2="80" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="742" font-size="10" fill="#475569" text-anchor="middle">-60°</text>
+  <line x1="173.33333333333331" y1="714" x2="173.33333333333331" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="173.33333333333331" y="742" font-size="10" fill="#475569" text-anchor="middle">-40°</text>
+  <line x1="266.66666666666663" y1="714" x2="266.66666666666663" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="266.66666666666663" y="742" font-size="10" fill="#475569" text-anchor="middle">-20°</text>
+  <line x1="360" y1="714" x2="360" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="742" font-size="10" fill="#475569" text-anchor="middle">0°</text>
+  <line x1="453.3333333333333" y1="714" x2="453.3333333333333" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="453.3333333333333" y="742" font-size="10" fill="#475569" text-anchor="middle">20°</text>
+  <line x1="546.6666666666667" y1="714" x2="546.6666666666667" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="546.6666666666667" y="742" font-size="10" fill="#475569" text-anchor="middle">40°</text>
+  <line x1="640" y1="714" x2="640" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <text x="640" y="742" font-size="10" fill="#475569" text-anchor="middle">60°</text>
+  <circle cx="360" cy="694" r="7" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="360" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">1</text>
+  <circle cx="369.33333333333337" cy="694" r="7" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="369.33333333333337" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">2</text>
+  <circle cx="350.6666666666667" cy="694" r="7" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="350.6666666666667" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">3</text>
+  <circle cx="378.6666666666667" cy="694" r="7" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="378.6666666666667" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">4</text>
+  <circle cx="341.3333333333333" cy="694" r="7" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="341.3333333333333" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">5</text>
+  <circle cx="397.3333333333333" cy="694" r="7" fill="#d97706" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="397.3333333333333" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">6</text>
+  <circle cx="322.6666666666667" cy="694" r="7" fill="#d97706" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="322.6666666666667" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">7</text>
+  <circle cx="430" cy="694" r="7" fill="#d97706" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="430" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">8</text>
+  <circle cx="290" cy="694" r="7" fill="#d97706" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="290" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">9</text>
+  <circle cx="476.6666666666667" cy="694" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="476.6666666666667" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">10</text>
+  <circle cx="243.33333333333334" cy="694" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="243.33333333333334" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">11</text>
+  <circle cx="546.6666666666667" cy="694" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="546.6666666666667" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">12</text>
+  <circle cx="173.33333333333331" cy="694" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="173.33333333333331" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">13</text>
+  <circle cx="616.6666666666667" cy="694" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="616.6666666666667" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">14</text>
+  <circle cx="103.33333333333333" cy="694" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="103.33333333333333" y="696.5" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">15</text>
+  <text x="360" y="668" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">剂量对称方案（dose-symmetric，Hagen 2017）：从 0 度正负交替递增</text>
+  <text x="50" y="616" font-size="10" fill="#475569">让信息量最大的低倾角投影在剂量最低时入账，损伤最重时才收最难的高倾角；同区样品先收高倾再回 0 度对位核查。</text>
+  <rect x="120.7025" y="777.075" width="158.595" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="200" y="789.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">低倾角＝剂量最低＋信息最多</text>
+  <rect x="408.96434999999997" y="777.075" width="202.07130000000004" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="510" y="789.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">Saxton 变增量（1984）：低倾角加密</text>
+  <text x="50" y="826" font-size="10" fill="#475569">其余方案：单倾递增（最简单、高倾时剂量已重）、双轴（金字塔缺失约一成，剂量翻倍）、连续倾转（机械平滑、剂量均匀）。</text>
+  <text x="50" y="840" font-size="10" fill="#475569">方案的选择由目标反推——各向同性测量优先 dose-symmetric，通量优先单倾。</text>
+  <text x="360" y="930" font-size="9.5" fill="#64748b" text-anchor="middle">（圆点序号＝收集次序；颜色由绿到红示意累积剂量增加）</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、剂量预算表与重构算法</text>
+  <rect x="836.517868" y="610.65" width="126.96426399999999" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="900" y="623.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">总预算 50–150 e<tspan dy="-3.7" font-size="7.9">-</tspan><tspan dy="3.7">/Å</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <rect x="1121.0544" y="610.65" width="117.89120000000001" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1180" y="623.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">摊到 40–80 张投影</text>
+  <rect x="885.174172" y="651.075" width="309.651656" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1040" y="663.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">每张 0.5–3 e<tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">；总 100 e</tspan><tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6"> 摊 60 张即每张约 1.7 e</tspan><tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6">/Å</tspan><tspan dy="-3.6" font-size="7.6">2</tspan></text>
+  <rect x="760" y="712" width="250" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="852" x2="760" y2="858" stroke="#475569" stroke-width="1.8"/>
+  <text x="760" y="874" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1010" y1="852" x2="1010" y2="858" stroke="#475569" stroke-width="1.8"/>
+  <line x1="754" y1="852" x2="760" y2="852" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="856" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="754" y1="723.2" x2="760" y2="723.2" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="727.2" font-size="13" fill="#64748b" text-anchor="end">权重</text>
+  <text x="885" y="700" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">WBP：|g| 权重无条件提权高频</text>
+  <line x1="1004" y1="852" x2="1018" y2="852" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <path d="M760.0,838.0 L822.5,803.0 L885.0,768.0 L947.5,740.0 L1010.0,714.8" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="885" y="876" font-size="9.5" fill="#991b1b" text-anchor="middle">楔缘噪声的来源</text>
+  <rect x="1060" y="712" width="250" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1060" y1="852" x2="1060" y2="858" stroke="#475569" stroke-width="1.8"/>
+  <text x="1060" y="874" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1310" y1="852" x2="1310" y2="858" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1054" y1="852" x2="1060" y2="852" stroke="#475569" stroke-width="1.8"/>
+  <text x="1050" y="856" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="1054" y1="723.2" x2="1060" y2="723.2" stroke="#475569" stroke-width="1.8"/>
+  <text x="1050" y="727.2" font-size="13" fill="#64748b" text-anchor="end">权重</text>
+  <text x="1185" y="700" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">SIRT：按投影覆盖自适应赋权</text>
+  <line x1="1304" y1="852" x2="1318" y2="852" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <path d="M1060.0,733.0 L1135.0,751.2 L1197.5,789.0 L1247.5,824.0 L1310.0,845.0" fill="none" stroke="#6d28d9" stroke-width="2.4"/>
+  <text x="1185" y="876" font-size="9.5" fill="#4c1d95" text-anchor="middle">等效数据驱动的自适应低通</text>
+  <text x="1040" y="712" font-size="10" fill="#475569" text-anchor="middle">双重构对账：两种算法各出一张图，差异处即算法伪影的所在</text>
+  <text x="1040" y="736" font-size="10" fill="#64748b" text-anchor="middle">WBP 一次成像、锐但噪；SIRT 迭代收敛、稳但慢</text>
+  <text x="1040" y="940" font-size="9.5" fill="#64748b" text-anchor="middle">「每频率被多少投影一致支持」——SIRT 的赋权哲学与剂量加权的思路同源</text>
+</svg>

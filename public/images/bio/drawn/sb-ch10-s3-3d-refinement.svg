@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">三维重构与均匀化精修：中心截面定理与金标准</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">十万随机截面填满频率空间；abinitio多起点4–8个、低通40–60Å起步；3D分类3–8类；金标准分半互不通信、FSC0.143；采样7.5度至亚度级、迭代20–25轮</text>
+  <rect x="30" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、中心截面定理：随机截面填满频率空间</text>
+  <text x="66" y="182" font-size="9.5" fill="#64748b" font-weight="600">实空间</text>
+  <circle cx="125" cy="300" r="50" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <ellipse cx="110" cy="285" rx="16" ry="12" fill="#0f766e" fill-opacity="0.4" stroke="none"/>
+  <ellipse cx="140" cy="315" rx="13" ry="9" fill="#0f766e" fill-opacity="0.4" stroke="none"/>
+  <circle cx="135" cy="283" r="7" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <line x1="125" y1="190" x2="125" y2="240" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="44" y1="300" x2="70" y2="300" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="215" y1="390" x2="172" y2="342" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="215" y="175" width="90" height="46" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <ellipse cx="260" cy="198" rx="30" ry="11" fill="#f1f5f9" stroke="#64748b" stroke-width="1.2"/>
+  <rect x="215" y="245" width="90" height="46" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <ellipse cx="260" cy="268" rx="12" ry="16" fill="#f1f5f9" stroke="#64748b" stroke-width="1.2"/>
+  <rect x="215" y="315" width="90" height="46" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <ellipse cx="260" cy="338" rx="26" ry="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.2"/>
+  <text x="260" y="378" font-size="9" fill="#64748b" text-anchor="middle">投影（取向各异）</text>
+  <line x1="309" y1="268" x2="408" y2="268" stroke="#64748b" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="598" y="194" font-size="9.5" fill="#64748b" text-anchor="end" font-weight="600">频率空间</text>
+  <ellipse cx="505" cy="275" rx="88" ry="24" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.4"/>
+  <ellipse cx="505" cy="275" rx="24" ry="88" fill="#ede9fe" fill-opacity="0.55" stroke="#6d28d9" stroke-width="1.4"/>
+  <ellipse cx="505" cy="275" rx="62" ry="62" fill="#d1fae5" fill-opacity="0.45" stroke="#059669" stroke-width="1.4"/>
+  <ellipse cx="505" cy="275" rx="80" ry="46" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.4"/>
+  <ellipse cx="505" cy="275" rx="46" ry="80" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="505" cy="275" r="4" fill="#1e293b" stroke="none"/>
+  <text x="505" y="385" font-size="9" fill="#64748b" text-anchor="middle">每张投影给一张过原点的截面</text>
+  <text x="56" y="408" font-size="9.5" fill="#475569">一张投影的二维傅里叶变换，恰是物体三维傅里叶变换过原点的中心截面——十万颗粒的十万张随机截面填满频率空间，反变换即得密度图；</text>
+  <text x="56" y="421" font-size="9.5" fill="#475569">缺失的截面就是频率空间里补不上的洞。</text>
+  <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、初始模型与三维分类</text>
+  <text x="730" y="180" font-size="11.5" fill="#1e293b" font-weight="700">ab initio：多起点排假</text>
+  <circle cx="755" cy="205" r="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <circle cx="749" cy="201" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="760" cy="198" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="762" cy="210" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="751" cy="212" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="795" cy="205" r="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <circle cx="789" cy="201" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="800" cy="198" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="802" cy="210" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="791" cy="212" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="835" cy="205" r="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <circle cx="829" cy="201" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="840" cy="198" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="842" cy="210" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="831" cy="212" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="875" cy="205" r="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.4"/>
+  <circle cx="869" cy="201" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="880" cy="198" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="882" cy="210" r="2" fill="#64748b" stroke="none"/>
+  <circle cx="871" cy="212" r="2" fill="#64748b" stroke="none"/>
+  <text x="815" y="236" font-size="9" fill="#475569" text-anchor="middle">4–8 个随机起点（噪声球出发）</text>
+  <line x1="755" y1="223" x2="798" y2="258" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="795" y1="223" x2="803" y2="258" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="835" y1="223" x2="810" y2="258" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="875" y1="223" x2="817" y2="258" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <ellipse cx="808" cy="282" rx="27" ry="21" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="800" cy="276" r="6" fill="#0f766e" fill-opacity="0.5" stroke="none"/>
+  <text x="808" y="318" font-size="9" fill="#475569" text-anchor="middle">终态一致才可信</text>
+  <text x="730" y="348" font-size="9.5" fill="#475569">频率以低通逐级放开：约 40–60 Å 起步、</text>
+  <text x="730" y="361" font-size="9.5" fill="#475569">先定轮廓再上细节——高频放得太早，噪声与偏差滚雪球；</text>
+  <text x="730" y="374" font-size="9.5" fill="#475569">AlphaFold 低通先验同守「多起点收敛一致」与「独立交叉验证」的老规矩。</text>
+  <line x1="1020" y1="180" x2="1020" y2="450" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="1040" y="180" font-size="11.5" fill="#1e293b" font-weight="700">三维分类：拆构象、筛质量</text>
+  <rect x="1040" y="200" width="145" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1112" y="222" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">类 1：结合态</text>
+  <text x="1112" y="240" font-size="8.5" fill="#475569" text-anchor="middle">独立参考与取向</text>
+  <rect x="1210" y="200" width="145" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1282" y="222" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">类 2：空载态</text>
+  <text x="1282" y="240" font-size="8.5" fill="#475569" text-anchor="middle">独立参考与取向</text>
+  <line x1="1187" y1="220" x2="1207" y2="220" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <line x1="1207" y1="238" x2="1187" y2="238" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="1197" y="258" font-size="8.5" fill="#92400e" text-anchor="middle">tau 控制迁移</text>
+  <rect x="1040" y="285" width="145" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1112" y="303" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">垃圾类</text>
+  <text x="1112" y="318" font-size="8.5" fill="#475569" text-anchor="middle">自发吸收坏颗粒与冰渣</text>
+  <text x="1040" y="350" font-size="9.5" fill="#475569">类数常取 3–8：太少把构象态压扁平均，太多每类颗粒不足、</text>
+  <text x="1040" y="363" font-size="9.5" fill="#475569">分辨率反跌；类占有率即溶液中的态比例；</text>
+  <text x="1040" y="376" font-size="9.5" fill="#475569">判读须各类密度能互相解释、差异集中于预期功能部位。</text>
+  <rect x="30" y="482" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">三、金标准精修：分半独立、只在 FSC 碰面</text>
+  <rect x="240" y="512" width="220" height="36" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="350" y="535" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">全部颗粒（随机分半）</text>
+  <line x1="315" y1="548" x2="205" y2="588" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="385" y1="548" x2="495" y2="588" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="95" y="592" width="215" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="202" y="614" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">半区 1</text>
+  <text x="115" y="636" font-size="9" fill="#475569">独立取向指认与参考更新</text>
+  <rect x="390" y="592" width="215" height="62" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="497" y="614" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">半区 2</text>
+  <text x="410" y="636" font-size="9" fill="#475569">独立取向指认与参考更新</text>
+  <line x1="310" y1="623" x2="390" y2="623" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="342" y1="617" x2="358" y2="629" stroke="#dc2626" stroke-width="2.2"/>
+  <line x1="342" y1="629" x2="358" y2="617" stroke="#dc2626" stroke-width="2.2"/>
+  <rect x="326.46" y="644.35" width="47.08" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="350" y="655.24" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">互不通信</text>
+  <line x1="202" y1="654" x2="310" y2="700" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="497" y1="654" x2="390" y2="700" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="300" y="705" width="130" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="365" y="724" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">仅算 FSC</text>
+  <text x="365" y="740" font-size="9" fill="#475569" text-anchor="middle">时两半碰面</text>
+  <line x1="365" y1="751" x2="365" y2="772" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="218.9970000000001" y="783.5" width="282.0059999999998" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="360" y="795.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">FSC＝0.143：分辨率金科玉律（Scheres 与 Chen 2012）</text>
+  <text x="56" y="826" font-size="9.5" fill="#475569">常规旋钮：局部角度搜索窗口随迭代收窄、采样步长自约 7.5 度细化到亚度级、掩蔽逐级收紧、频率上限逐级放开——迭代 20–25 轮、</text>
+  <text x="56" y="839" font-size="9.5" fill="#475569">取向参数与 FSC 不再变动即收敛。</text>
+  <text x="56" y="860" font-size="9.5" fill="#475569">分半必须随机化——不能一半来自网 A 一半来自网 B，批次效应会假扮分辨率；金标准把算力翻倍，是「防伪」的诚实代价。</text>
+  <rect x="710" y="482" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="504.84" font-size="19" fill="#475569" font-weight="700">四、精修进阶四层与对称性时机</text>
+  <circle cx="750" cy="526" r="12" fill="#0369a1" stroke="none"/>
+  <text x="750" y="530" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">1</text>
+  <text x="770" y="530" font-size="11.5" fill="#075985" font-weight="700">贝叶斯抛光（Zivanov 等 2019）</text>
+  <text x="770" y="546" font-size="9.5" fill="#475569">逐颗粒轨迹后验估计，运动校正从微图级下沉到颗粒级——对束致运动残留的高频损失是最后一道挽回</text>
+  <circle cx="750" cy="570" r="12" fill="#0369a1" stroke="none"/>
+  <text x="750" y="574" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">2</text>
+  <text x="770" y="574" font-size="11.5" fill="#075985" font-weight="700">逐颗粒 CTF 与高阶像差（Zivanov 等 2018）</text>
+  <text x="770" y="590" font-size="9.5" fill="#475569">defocus 逐颗精修（冰深埃级涨落），再上束倾、三叶、四阶曲面——3 Å 以内攻坚逐项变现</text>
+  <circle cx="750" cy="614" r="12" fill="#0369a1" stroke="none"/>
+  <text x="750" y="618" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">3</text>
+  <text x="770" y="618" font-size="11.5" fill="#075985" font-weight="700">局部聚焦精修</text>
+  <text x="770" y="634" font-size="9.5" fill="#475569">掩蔽目标亚基、减除其余密度后独立精修——柔性附属挂在刚性核心上常靠它单独拿高分辨</text>
+  <circle cx="750" cy="658" r="12" fill="#0369a1" stroke="none"/>
+  <text x="750" y="662" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">4</text>
+  <text x="770" y="662" font-size="11.5" fill="#075985" font-weight="700">多体精修（Nakane 等 2018）</text>
+  <text x="770" y="678" font-size="9.5" fill="#475569">复合物拆成刚体、各自精修取向与位置，产出的体间相对运动谱本身就是动力学数据</text>
+  <line x1="730" y1="692" x2="1350" y2="692" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="940" y="716" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">对称性时机：先 C1 验证、后施加</text>
+  <ellipse cx="790" cy="778" rx="30" ry="23" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="778" cy="766" r="5" fill="#6d28d9" stroke="none"/>
+  <text x="790" y="815" font-size="9" fill="#475569" text-anchor="middle">C1（不对称）</text>
+  <line x1="828" y1="778" x2="886" y2="778" stroke="#64748b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="857" y="766" font-size="8.5" fill="#64748b" text-anchor="middle">确认自发对称</text>
+  <circle cx="955" cy="746" r="12.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="982.712812921102" cy="762" r="12.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="982.712812921102" cy="794" r="12.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="955" cy="810" r="12.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="927.287187078898" cy="794" r="12.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="927.287187078898" cy="762" r="12.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="955" cy="778" r="4.5" fill="#6d28d9" stroke="none"/>
+  <text x="955" y="815" font-size="9" fill="#475569" text-anchor="middle">C6：等效颗粒数 ×6</text>
+  <text x="1040" y="735" font-size="9.5" fill="#475569">对称是假设不是恩赐——错误对称把无关密度相干平均成伪结构；</text>
+  <text x="1040" y="748" font-size="9.5" fill="#475569">施加后 FSC 与密度连通性的改善即是验证。</text>
+  <text x="730" y="840" font-size="9.5" fill="#475569">次序「先便宜后昂贵」：逐颗粒校正近乎免费、先做；聚焦与多体改变问题定义、后做；对称一旦施加便难再客观验证——永远最后做。</text>
+  <text x="700" y="940" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">均匀化的要义：不是把颗粒硬变一样，而是把不一样的先分开，再让每一态各自享受高分辨精修</text>
+</svg>

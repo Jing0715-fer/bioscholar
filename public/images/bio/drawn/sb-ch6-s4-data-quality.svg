@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">衍射数据处理与质量评估：从影像到合并强度</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">指标化-精修-剖面拟合-缩放四步流水线；R<tspan dy="3.7" font-size="12.2">merge</tspan><tspan dy="-3.7">/R</tspan><tspan dy="3.7" font-size="12.2">meas</tspan><tspan dy="-3.7">/R</tspan><tspan dy="3.7" font-size="12.2">pim</tspan><tspan dy="-3.7">三读与CC</tspan><tspan dy="3.7" font-size="12.2">1/2</tspan><tspan dy="-3.7">现代判据；系统消光定空间群、L检验预警孪晶；完整度95%、I/σ(I)大于2的验收线</tspan></text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、处理流水线：从影像到合并强度</text>
+  <rect x="60" y="164" width="96" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="108" y="184" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">指标化</text>
+  <text x="196" y="164" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">XDS / DIALS / iMOSFLM</text>
+  <text x="196" y="182" font-size="10.5" fill="#475569">首帧斑点反解晶胞与取向，枚举 14 种布拉维格子候选</text>
+  <line x1="108" y1="196" x2="108" y2="216" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="60" y="220" width="96" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="108" y="240" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">晶胞精修</text>
+  <text x="196" y="220" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">refine</text>
+  <text x="196" y="238" font-size="10.5" fill="#475569">逐帧迭代收敛晶胞参数与 mosaicity</text>
+  <line x1="108" y1="252" x2="108" y2="272" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="60" y="276" width="96" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="108" y="296" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">剖面拟合积分</text>
+  <text x="196" y="276" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">3D profile</text>
+  <text x="196" y="294" font-size="10.5" fill="#475569">以预测位置取三维峰形拟合，弱斑借邻斑峰形</text>
+  <line x1="108" y1="308" x2="108" y2="328" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="60" y="332" width="96" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="108" y="352" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">缩放合并</text>
+  <text x="196" y="332" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">AIMLESS / XSCALE</text>
+  <text x="196" y="350" font-size="10.5" fill="#475569">批间缩放、衰减与吸收修正后合并出 I(hkl)</text>
+  <rect x="208.88" y="390.65" width="302.24" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="360" y="403.96" font-size="11" fill="#065f46" text-anchor="middle">输出 MTZ：强度 I(hkl) 与 σ(I)——交给第 7 章定相的接力棒</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、R 因子三兄弟：同一组数的三种读法</text>
+  <text x="730" y="170" font-size="10.5" fill="#475569">某反射四次测得 100、104、98、102（均值 101）：离差和 8、分母 404，R<tspan dy="2.3" font-size="7.6">merge</tspan><tspan dy="-2.3"> = 1.98%——同一组数 R</tspan><tspan dy="2.3" font-size="7.6">meas</tspan><tspan dy="-2.3"> 约 2.3%、</tspan></text>
+  <text x="730" y="185" font-size="10.5" fill="#475569">R<tspan dy="2.3" font-size="7.6">pim</tspan><tspan dy="-2.3"> 约 1.1%。</tspan></text>
+  <text x="760" y="214" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.5" font-size="8.3">merge</tspan></text>
+  <rect x="830" y="204" width="91.08" height="14" rx="3" fill="#0369a1" stroke="none"/>
+  <text x="933.08" y="214" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">1.98%</text>
+  <text x="960" y="206" font-size="10" fill="#64748b">随冗余虚高（分母不计次数）</text>
+  <text x="760" y="258" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.5" font-size="8.3">meas</tspan></text>
+  <rect x="830" y="248" width="105.8" height="14" rx="3" fill="#d97706" stroke="none"/>
+  <text x="947.8" y="258" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">2.3%</text>
+  <text x="960" y="250" font-size="10" fill="#64748b">冗余校正：每次测量都算数</text>
+  <text x="760" y="302" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.5" font-size="8.3">pim</tspan></text>
+  <rect x="830" y="292" width="50.6" height="14" rx="3" fill="#0369a1" stroke="none"/>
+  <text x="892.6" y="302" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">1.1%</text>
+  <text x="960" y="294" font-size="10" fill="#64748b">单次测量精度：越冗余越瘦</text>
+  <text x="730" y="352" font-size="10.5" fill="#475569">三个数放在一起读才公允——报告须辨明所用指标；冗余越高 R<tspan dy="2.3" font-size="7.6">merge</tspan><tspan dy="-2.3"> 越「虚胖」而 R</tspan><tspan dy="2.3" font-size="7.6">pim</tspan><tspan dy="-2.3"> 越瘦。</tspan></text>
+  <rect x="844.9232" y="389.075" width="390.1536" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1040" y="401.78" font-size="10.5" fill="#075985" text-anchor="middle">CC<tspan dy="2.3" font-size="7.6">1/2</tspan><tspan dy="-2.3">（Karplus 与 Diederichs 2012）：分半相关，最外壳约 0.3 为现代截断点</tspan></text>
+  <rect x="30" y="452" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、空间群判定与孪晶预警</text>
+  <text x="50" y="490" font-size="10.5" fill="#475569">空间群由 Laue 对称加系统消光共同判定——P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 的 h00 仅 h = 2n 出现（沿三轴各含 2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 螺旋轴），</tspan></text>
+  <text x="50" y="505" font-size="10.5" fill="#475569">消光规律是晶格平移与螺旋/滑移对称的指纹。</text>
+  <text x="70" y="556" font-size="10.5" fill="#1e293b" font-weight="700">h00 衍射（奇偶消光）</text>
+  <circle cx="138" cy="576" r="7" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <text x="138" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">100</text>
+  <circle cx="206" cy="576" r="7" fill="#dc2626" stroke="#991b1b" stroke-width="1"/>
+  <text x="206" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">200</text>
+  <circle cx="274" cy="576" r="7" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <text x="274" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">300</text>
+  <circle cx="342" cy="576" r="7" fill="#dc2626" stroke="#991b1b" stroke-width="1"/>
+  <text x="342" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">400</text>
+  <circle cx="410" cy="576" r="7" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <text x="410" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">500</text>
+  <circle cx="478" cy="576" r="7" fill="#dc2626" stroke="#991b1b" stroke-width="1"/>
+  <text x="478" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">600</text>
+  <circle cx="546" cy="576" r="7" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <text x="546" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">700</text>
+  <circle cx="614" cy="576" r="7" fill="#dc2626" stroke="#991b1b" stroke-width="1"/>
+  <text x="614" y="604" font-size="9.5" fill="#64748b" text-anchor="middle">800</text>
+  <text x="340" y="632" font-size="10" fill="#64748b" text-anchor="middle">实心 = 出现（h = 2n）；空心 = 系统消光（h = 2n+1）</text>
+  <text x="50" y="660" font-size="10.5" fill="#475569">孪晶预警看 L 检验（Padilla 与 Yeates 2003）：L = (I<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> − I</tspan><tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">)/(I</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> + I</tspan><tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">)，正常单晶平均 |L| 约 0.5，孪晶使其显著偏离；</tspan></text>
+  <text x="50" y="675" font-size="10.5" fill="#475569">孪晶分数近 0.5 近乎无解，须回到结晶环节。</text>
+  <rect x="191.995" y="733.075" width="96.00999999999999" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="240" y="745.78" font-size="10.5" fill="#065f46" text-anchor="middle">|L| 约 0.5 = 单晶</text>
+  <rect x="423.90999999999997" y="733.075" width="112.18" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="480" y="745.78" font-size="10.5" fill="#991b1b" text-anchor="middle">显著偏离 = 孪晶警报</text>
+  <rect x="710" y="452" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、数据质量决策表（惯用验收线）</text>
+  <rect x="730" y="492" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="519.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">指标</text>
+  <rect x="880" y="492" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="519.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">经验判据</text>
+  <rect x="1040" y="492" width="310" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="519.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">不达标时的处置</text>
+  <rect x="730" y="536" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="559.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">完整度</text>
+  <rect x="880" y="536" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="559.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">大于 95%</text>
+  <rect x="1040" y="536" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="559.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">补收空缺旋转区（策略计算回补）</text>
+  <rect x="730" y="572" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="572" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="595.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">冗余</text>
+  <rect x="880" y="572" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="595.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">3–7 倍</text>
+  <rect x="1040" y="572" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="595.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">反常实验取高值；过低补收、过高伤剂量</text>
+  <rect x="730" y="608" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="631.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">I/σ(I) 最外壳</text>
+  <rect x="880" y="608" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="631.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">大于 2（传统）</text>
+  <rect x="1040" y="608" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="631.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">以 CC<tspan dy="2.4" font-size="7.9">1/2</tspan><tspan dy="-2.4"> 约 0.3 重判截断壳</tspan></text>
+  <rect x="730" y="644" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="644" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="667.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.4" font-size="7.9">meas</tspan><tspan dy="-2.4"> 最外壳</tspan></text>
+  <rect x="880" y="644" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="667.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">小于约 60%</text>
+  <rect x="1040" y="644" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="667.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">排查吸收、冰环与损伤衰减</text>
+  <rect x="730" y="680" width="150" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="703.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.4" font-size="7.9">pim</tspan></text>
+  <rect x="880" y="680" width="160" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="960" y="703.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">整体越低越精</text>
+  <rect x="1040" y="680" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1195" y="703.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">结合冗余读单次测量精度</text>
+  <text x="730" y="700" font-size="10.5" fill="#475569">现代判据以 CC<tspan dy="2.3" font-size="7.6">1/2</tspan><tspan dy="-2.3"> 为核心：把反射随机分两半算相关系数，直接度量信号可分辨性，</tspan></text>
+  <text x="730" y="715" font-size="10.5" fill="#475569">摆脱对冗余与 σ 估计的依赖——低冗余数据也能被公允评判。</text>
+  <text x="730" y="756" font-size="10.5" fill="#475569">合格数据以 MTZ 交棒第 7 章：从「强度 I」到「结构因子 F」只差一步平方根与强度到幅度的换算——相位问题自此登场。</text>
+  <text x="30" y="824" font-size="11.5" fill="#1e293b" font-weight="600">指标化定盒、积分称重、缩放对表、合并成册——四步流水线把千万斑点收拢为一部可校核的强度账本；账本首页写满 R 家族与 CC<tspan dy="2.5" font-size="8.3">1/2</tspan><tspan dy="-2.5"> 的体检值，末页留给第 7 章的相位钥匙。</tspan></text>
+</svg>

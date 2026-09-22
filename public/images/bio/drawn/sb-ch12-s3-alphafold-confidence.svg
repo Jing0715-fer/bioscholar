@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">计算结构生物学与 AlphaFold：从共进化到置信度体系</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">CASP14 中位 GDT_TS 约 92.4；AFDB 约 2 亿条；pLDDT 大于 90、小于 50 常为无序区；PAE 读域间与界面误差；ESMFold 快约 60 倍</text>
+  <rect x="30" y="132" width="1340" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、AlphaFold2 概念：共进化、双轨注意力与端到端</text>
+  <rect x="60" y="175" width="130" height="90" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="125" y="200" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">氨基酸序列</text>
+  <circle cx="78" cy="225" r="4.5" fill="#0f766e"/>
+  <circle cx="92" cy="225" r="4.5" fill="#6d28d9"/>
+  <circle cx="106" cy="225" r="4.5" fill="#d97706"/>
+  <circle cx="120" cy="225" r="4.5" fill="#0f766e"/>
+  <circle cx="134" cy="225" r="4.5" fill="#6d28d9"/>
+  <circle cx="148" cy="225" r="4.5" fill="#d97706"/>
+  <circle cx="162" cy="225" r="4.5" fill="#0f766e"/>
+  <circle cx="176" cy="225" r="4.5" fill="#6d28d9"/>
+  <text x="125" y="252" font-size="9.5" fill="#64748b" text-anchor="middle">查询一次</text>
+  <line x1="194" y1="220" x2="232" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="240" y="175" width="230" height="90" rx="8" fill="#ccfbf1" fill-opacity="0.4" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="355" y="194" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">MSA：共进化先验</text>
+  <rect x="252" y="204" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="266.4" y="204" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="280.8" y="204" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="295.2" y="204" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="309.6" y="204" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="324" y="204" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="338.4" y="204" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="352.8" y="204" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="367.2" y="204" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="381.6" y="204" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="396" y="204" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="410.4" y="204" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="424.8" y="204" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="439.20000000000005" y="204" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="453.6" y="204" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="252" y="217.5" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="266.4" y="217.5" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="280.8" y="217.5" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="295.2" y="217.5" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="309.6" y="217.5" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="324" y="217.5" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="338.4" y="217.5" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="352.8" y="217.5" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="367.2" y="217.5" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="381.6" y="217.5" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="396" y="217.5" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="410.4" y="217.5" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="424.8" y="217.5" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="439.20000000000005" y="217.5" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="453.6" y="217.5" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="252" y="231" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="266.4" y="231" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="280.8" y="231" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="295.2" y="231" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="309.6" y="231" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="324" y="231" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="338.4" y="231" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="352.8" y="231" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="367.2" y="231" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="381.6" y="231" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="396" y="231" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="410.4" y="231" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="424.8" y="231" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="439.20000000000005" y="231" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="453.6" y="231" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="252" y="244.5" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="266.4" y="244.5" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="280.8" y="244.5" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="295.2" y="244.5" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="309.6" y="244.5" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="324" y="244.5" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="338.4" y="244.5" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="352.8" y="244.5" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="367.2" y="244.5" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="381.6" y="244.5" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <rect x="396" y="244.5" width="12" height="11" rx="2" fill="#6d28d9" fill-opacity="0.75" stroke="none"/>
+  <rect x="410.4" y="244.5" width="12" height="11" rx="2" fill="#d97706" fill-opacity="0.75" stroke="none"/>
+  <rect x="424.8" y="244.5" width="12" height="11" rx="2" fill="#b45309" fill-opacity="0.75" stroke="none"/>
+  <rect x="439.20000000000005" y="244.5" width="12" height="11" rx="2" fill="#0f766e" fill-opacity="0.75" stroke="none"/>
+  <rect x="453.6" y="244.5" width="12" height="11" rx="2" fill="#0369a1" fill-opacity="0.75" stroke="none"/>
+  <text x="355" y="258" font-size="9" fill="#64748b" text-anchor="middle">相互接触的残基对协同涨落</text>
+  <line x1="474" y1="220" x2="502" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="510" y="175" width="300" height="90" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="660" y="194" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">Evoformer 双轨注意力（数十层）</text>
+  <rect x="528" y="204" width="264" height="18" rx="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="660" y="216.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">MSA 表征（行是序列）</text>
+  <rect x="528" y="236" width="264" height="18" rx="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="660" y="248.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">残基对表征（格是残基关系）</text>
+  <path d="M560,222 Q540,229 560,236" fill="none" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <path d="M760,236 Q780,229 760,222" fill="none" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <line x1="814" y1="220" x2="842" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="850" y="175" width="200" height="90" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="950" y="200" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">结构模块</text>
+  <text x="864" y="222" font-size="9.5" fill="#475569">不变点注意力直接输出三维坐标，</text>
+  <text x="864" y="235" font-size="9.5" fill="#475569">不经「预测距离再折叠」</text>
+  <line x1="1054" y1="220" x2="1082" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1100" y="175" width="220" height="90" rx="8" fill="#d1fae5" fill-opacity="0.45" stroke="#059669" stroke-width="1.5"/>
+  <rect x="1120" y="205" width="60" height="16" rx="8" fill="#6d28d9" fill-opacity="0.7"/>
+  <rect x="1240" y="205" width="60" height="16" rx="8" fill="#6d28d9" fill-opacity="0.7"/>
+  <path d="M1180,213 C1200,190 1220,236 1240,213" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1210" y="252" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">端到端三维结构</text>
+  <path d="M950,265 Q730,320 660,265" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-enz)"/>
+  <text x="805" y="308" font-size="10.5" fill="#be185d" text-anchor="middle" font-weight="700">三轮回收：以坐标回头修正表征</text>
+  <text x="50" y="356" font-size="10.5" fill="#475569">MSA 深度是准确度的第一变量：序列近亲众多（深 MSA）则置信度高，</text>
+  <text x="50" y="371" font-size="10.5" fill="#475569">孤儿序列浅 MSA 时 AF2 会诚实给低分——置信度体系由此不可或缺。</text>
+  <text x="720" y="356" font-size="10.5" fill="#475569">训练于 PDB 约十七万条实验结构——半个世纪的实验积累变成一次可复用的先验；</text>
+  <text x="720" y="371" font-size="10.5" fill="#475569">注意力机制的额外红利是从浅 MSA 中榨取共进化信号。</text>
+  <rect x="30" y="420" width="660" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="442.84" font-size="19" fill="#475569" font-weight="700">二、pLDDT：残基级置信度（0–100）</text>
+  <text x="50" y="462" font-size="10.5" fill="#475569">预测局部距离差异检验——AlphaFold DB 直接把它画成模型着色；低分同时是「构象不定」与「本就无折叠」的双重指示。</text>
+  <rect x="60" y="492" width="288" height="26" rx="4" fill="#dc2626" fill-opacity="0.8" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="205" y="509" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">小于 50</text>
+  <text x="62" y="534" font-size="9.5" fill="#475569">常为内在无序区</text>
+  <rect x="350" y="492" width="114" height="26" rx="4" fill="#d97706" fill-opacity="0.8" stroke="#d97706" stroke-width="1.2"/>
+  <text x="408" y="509" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">50–70</text>
+  <text x="352" y="534" font-size="9.5" fill="#475569">低置信</text>
+  <rect x="466" y="492" width="114" height="26" rx="4" fill="#0369a1" fill-opacity="0.8" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="524" y="509" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">70–90</text>
+  <text x="468" y="534" font-size="9.5" fill="#475569">主链可靠、侧链存疑</text>
+  <rect x="582" y="492" width="56" height="26" rx="4" fill="#059669" fill-opacity="0.8" stroke="#059669" stroke-width="1.2"/>
+  <text x="611" y="509" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700">大于 90</text>
+  <text x="584" y="534" font-size="9.5" fill="#475569">主链侧链皆可靠</text>
+  <text x="50" y="588" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">模型着色示意</text>
+  <polyline points="90,567 110,603 130,567 150,603 170,567 190,603 210,567 230,603" fill="none" stroke="#059669" stroke-width="4"/>
+  <polyline points="230,603 250,567 270,603 290,567 310,603 330,567" fill="none" stroke="#0369a1" stroke-width="4"/>
+  <polyline points="330,567 350,603 370,567 390,603 410,567 430,603" fill="none" stroke="#d97706" stroke-width="4"/>
+  <polyline points="430,603 450,567 470,603 490,567 510,603 530,567 550,603 570,567 590,603 610,567" fill="none" stroke="#dc2626" stroke-width="4"/>
+  <text x="50" y="632" font-size="10.5" fill="#475569">大于 90：直接作分子置换搜索模型；70–90：可作 MR 起点、侧链重搭。</text>
+  <text x="50" y="658" font-size="10.5" fill="#475569">50–70：局部重排或删截后再用；小于 50：按无序区处理，勿硬建模。</text>
+  <rect x="710" y="420" width="660" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="442.84" font-size="19" fill="#475569" font-weight="700">三、PAE 热图：残基对级的排布误差</text>
+  <rect x="770" y="486" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="486" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="486" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="486" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="486" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="486" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="486" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="486" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="510" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="510" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="510" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="510" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="510" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="510" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="510" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="510" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="534" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="534" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="534" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="534" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="534" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="534" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="534" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="534" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="558" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="558" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="558" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="558" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="558" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="558" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="558" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="558" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="582" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="582" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="582" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="582" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="582" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="582" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="582" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="582" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="606" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="606" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="606" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="606" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="606" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="606" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="606" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="606" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="630" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="630" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="630" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="630" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="630" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="630" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="630" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="630" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="770" y="654" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="794" y="654" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="818" y="654" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="842" y="654" width="22.5" height="22.5" fill="#fef3c7" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="866" y="654" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="890" y="654" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="914" y="654" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <rect x="938" y="654" width="22.5" height="22.5" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <text x="818" y="478" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">残基 i</text>
+  <text x="736" y="582" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">残基 j</text>
+  <path d="M 751,492 Q 760,492 760,501 M 760,567 Q 760,576 751,576" fill="none" stroke="#075985" stroke-width="1.7"/>
+  <line x1="760" y1="501" x2="760" y2="567" stroke="#075985" stroke-width="1.7"/>
+  <text x="742" y="534" font-size="14" fill="#075985" text-anchor="end" font-weight="600">域 A</text>
+  <path d="M 751,588 Q 760,588 760,597 M 760,663 Q 760,672 751,672" fill="none" stroke="#6d28d9" stroke-width="1.7"/>
+  <line x1="760" y1="597" x2="760" y2="663" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="742" y="630" font-size="14" fill="#6d28d9" text-anchor="end" font-weight="600">域 B</text>
+  <rect x="990" y="486" width="16" height="29" fill="#075985" fill-opacity="0.9" stroke="#cbd5e1" stroke-width="0.7"/>
+  <rect x="990" y="515" width="16" height="29" fill="#075985" fill-opacity="0.85" stroke="#cbd5e1" stroke-width="0.7"/>
+  <rect x="990" y="544" width="16" height="29" fill="#075985" fill-opacity="0.8" stroke="#cbd5e1" stroke-width="0.7"/>
+  <rect x="990" y="573" width="16" height="29" fill="#fef3c7" fill-opacity="0.75" stroke="#cbd5e1" stroke-width="0.7"/>
+  <rect x="990" y="602" width="16" height="29" fill="#fef3c7" fill-opacity="0.7" stroke="#cbd5e1" stroke-width="0.7"/>
+  <rect x="990" y="631" width="16" height="29" fill="#fef3c7" fill-opacity="0.65" stroke="#cbd5e1" stroke-width="0.7"/>
+  <text x="998" y="478" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">误差</text>
+  <text x="1014" y="496" font-size="9.5" fill="#475569" text-anchor="middle">低</text>
+  <text x="1014" y="652" font-size="9.5" fill="#475569" text-anchor="middle">高</text>
+  <text x="1050" y="492" font-size="10.5" fill="#475569">残基 i 对齐后残基 j 的位置不确定度（埃计）。</text>
+  <text x="1050" y="528" font-size="10.5" fill="#475569">主对角块（域内）低而域间高——两个域各自准、相对取向不定：</text>
+  <text x="1050" y="543" font-size="10.5" fill="#475569">分域可用、整体拼接存疑。</text>
+  <text x="1050" y="582" font-size="10.5" fill="#475569">多链界面同理：界面 PAE 高的复合物预测不可轻信</text>
+  <text x="1050" y="597" font-size="10.5" fill="#475569">（抗体-抗原尤甚）。</text>
+  <text x="1050" y="626" font-size="10.5" fill="#475569">读结构先读两幅图：pLDDT 定残基级可用性，</text>
+  <text x="1050" y="641" font-size="10.5" fill="#475569">PAE 定拼装级可信度。</text>
+  <rect x="30" y="702" width="1340" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="724.84" font-size="19" fill="#475569" font-weight="700">四、格局之变：CASP14 的成绩、预测生态与实验边界</text>
+  <text x="130" y="744" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">自由建模目标中位 GDT_TS</text>
+  <line x1="70" y1="862" x2="210" y2="862" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="862" x2="70" y2="748" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="862" x2="64" y2="862" stroke="#475569" stroke-width="1.3"/>
+  <text x="58" y="866" font-size="9" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="70" y1="807" x2="64" y2="807" stroke="#475569" stroke-width="1.3"/>
+  <text x="58" y="811" font-size="9" fill="#64748b" text-anchor="middle">50</text>
+  <line x1="70" y1="752" x2="64" y2="752" stroke="#475569" stroke-width="1.3"/>
+  <text x="58" y="756" font-size="9" fill="#64748b" text-anchor="middle">100</text>
+  <rect x="90" y="796" width="48" height="66" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="1.4"/>
+  <text x="114" y="786" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">约 60</text>
+  <text x="114" y="880" font-size="9.5" fill="#64748b" text-anchor="middle">CASP13</text>
+  <rect x="152" y="760.36" width="48" height="101.64000000000001" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="176" y="750.36" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">约 92.4</text>
+  <text x="176" y="880" font-size="9.5" fill="#475569" text-anchor="middle">CASP14 AF2</text>
+  <rect x="260.3387" y="745.075" width="79.3226" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="300" y="757.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">AlphaFold DB</text>
+  <text x="415" y="744" font-size="10" fill="#475569">2021 年开放，2022 年 7 月扩容至约 2 亿条——覆盖 UniProt 几乎全部编目蛋白</text>
+  <rect x="262.60985" y="777.075" width="74.78030000000001" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="300" y="789.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">AF-Multimer</text>
+  <text x="415" y="776" font-size="10" fill="#475569">同源多聚体最好；异源复合物约三分之二可达可接受界面精度</text>
+  <rect x="263.69135" y="809.075" width="72.6173" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="300" y="821.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">AlphaFold 3</text>
+  <text x="415" y="808" font-size="10" fill="#475569">2024 年把配体、核酸与修饰纳入联合预测</text>
+  <rect x="272.2352" y="841.075" width="55.5296" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="300" y="853.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">ESMFold</text>
+  <text x="415" y="840" font-size="10" fill="#475569">免 MSA、快约 60 倍；宏基因组图谱放出约 6.17 亿条结构</text>
+  <rect x="880" y="736" width="470" height="150" rx="9" fill="#fef3c7" fill-opacity="0.4" stroke="#b45309" stroke-width="1.4"/>
+  <text x="898" y="760" font-size="12.5" fill="#78350f" font-weight="700">边界：这些仍须实验</text>
+  <text x="898" y="782" font-size="10" fill="#475569">点突变 ΔΔG 预测仍不稳；构象态常被平均化为单一状态——开关态与变构态交给三维分类与 CPMG；</text>
+  <text x="898" y="796" font-size="10" fill="#475569">配体与金属结合态、糖型须实验定夺；内在无序区以系综存在，SAXS 与 NMR 联手描述。</text>
+  <text x="1115" y="872" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">「计算覆盖折叠，实验负责构象与机制」</text>
+  <text x="700" y="934" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">预测模型已超过实验同源结构成为分子置换搜索模型的第一来源——「先预测后实验」成为默认次序</text>
+</svg>

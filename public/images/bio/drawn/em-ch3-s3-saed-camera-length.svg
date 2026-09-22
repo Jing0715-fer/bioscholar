@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电子衍射模式与相机长度：SAED、CBED 与 Ewald 球</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">选区光阑在中间像平面圈定约0.1–5μm、照明半角小于约10<tspan dy="-5.8" font-size="12.2">-3</tspan><tspan dy="5.8">rad；R·d=λ·L——200kV、L=400mm时金(111)环半径约4.3mm；Ewald球半径约508nm</tspan><tspan dy="-5.8" font-size="12.2">-1</tspan><tspan dy="5.8">近似平面</tspan></text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、选区电子衍射（SAED）：光阑选区、平行照明</text>
+  <line x1="240" y1="152" x2="240" y2="248" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="260" y1="152" x2="260" y2="248" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="250" y="168" font-size="1" text-anchor="middle"></text>
+  <text x="285" y="175" font-size="10.5" fill="#64748b">平行照明：半角小于约 10<tspan dy="-3.6" font-size="7.6">-3</tspan><tspan dy="3.6"> rad</tspan></text>
+  <rect x="235" y="250" width="30" height="4" fill="#be185d"/>
+  <ellipse cx="250" cy="290" rx="55" ry="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="250" y1="254" x2="250" y2="330" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="250" y1="252" x2="285" y2="290" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="285" y1="290" x2="300" y2="330" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="250" y1="252" x2="215" y2="290" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="215" y1="290" x2="200" y2="330" stroke="#d97706" stroke-width="1.6"/>
+  <line x1="300" y1="330" x2="315" y2="380" stroke="#d97706" stroke-width="1.2" opacity="0.55"/>
+  <line x1="200" y1="330" x2="185" y2="380" stroke="#d97706" stroke-width="1.2" opacity="0.55"/>
+  <line x1="150" y1="330" x2="350" y2="330" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="358" y="334" font-size="10.5" fill="#475569" font-weight="600">物镜背焦面（衍射）</text>
+  <circle cx="250" cy="330" r="5" fill="#f8fafc"/>
+  <circle cx="200" cy="330" r="4.5" fill="#d97706"/>
+  <circle cx="300" cy="330" r="4.5" fill="#d97706"/>
+  <line x1="150" y1="385" x2="350" y2="385" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="358" y="389" font-size="10.5" fill="#475569" font-weight="600">中间像平面（成像）</text>
+  <rect x="206" y="375" width="6" height="24" fill="#1e293b"/>
+  <rect x="288" y="375" width="6" height="24" fill="#1e293b"/>
+  <rect x="216" y="379" width="68" height="15" fill="#fce7f3" stroke="#be185d" stroke-width="1.2"/>
+  <text x="150" y="400" font-size="10.5" fill="#1e293b" font-weight="700">选区光阑（圈定约 0.1–5 μm）</text>
+  <text x="430" y="180" font-size="11" fill="#475569">经典流程：成像模式找区域、聚焦、插光阑、</text>
+  <text x="430" y="196" font-size="11" fill="#475569">切衍射、收束斑——全程低剂量意识贯穿。</text>
+  <text x="430" y="250" font-size="11" fill="#475569">两个易错点：</text>
+  <text x="430" y="266" font-size="11" fill="#475569">选区光阑套住的是中间像上的区域，</text>
+  <text x="430" y="282" font-size="11" fill="#475569">物镜聚焦不准时选区即错位；</text>
+  <text x="430" y="298" font-size="11" fill="#475569">球差使远离光轴的衍射来源偏离名义选区</text>
+  <text x="430" y="314" font-size="11" fill="#475569">（选区漂移）。</text>
+  <rect x="450.8875" y="399.075" width="178.225" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="540" y="411.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">中间镜物面对到背焦面：衍射模式</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、衍射几何与相机常数：R·d = λ·L</text>
+  <rect x="760" y="180" width="240" height="240" rx="4" fill="#1e293b"/>
+  <circle cx="880" cy="300" r="5" fill="#f8fafc"/>
+  <circle cx="880" cy="300" r="86" fill="none" stroke="#e2e8f0" stroke-width="3" opacity="0.8"/>
+  <circle cx="880" cy="300" r="56" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.5"/>
+  <circle cx="940" cy="300" r="4.5" fill="#d97706"/>
+  <circle cx="820" cy="300" r="4.5" fill="#d97706"/>
+  <circle cx="880" cy="360" r="4.5" fill="#d97706"/>
+  <circle cx="880" cy="240" r="4.5" fill="#d97706"/>
+  <line x1="886" y1="300" x2="934" y2="300" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <text x="910" y="288" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">R</text>
+  <text x="880" y="436" font-size="10.5" fill="#64748b" text-anchor="middle">多晶环 + 单晶斑点（示意）</text>
+  <rect x="989.3497" y="196.95" width="201.3006" height="22.099999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1090" y="212.68" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">R·d = λ·L（λL 合称相机常数）</text>
+  <rect x="930" y="236" width="420" height="84" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="944" y="258" font-size="11" fill="#134e4a" font-weight="600">算一次：200 kV（λ = 0.00251 nm）、L = 400 mm，多晶金最内圈为 (111) 面</text>
+  <text x="944" y="273" font-size="11" fill="#134e4a" font-weight="600">（d = 0.2354 nm）</text>
+  <text x="944" y="292" font-size="11" fill="#475569">R = λL/d = 0.00251×400/0.2354 ≈ 4.3 mm——落在荧光屏的舒适区间；</text>
+  <text x="944" y="307" font-size="11" fill="#475569">实测 R 即得未知 d，分钟级晶体学快检。</text>
+  <text x="930" y="348" font-size="11" fill="#475569">相机长度 L 是有效放大几何而非物理尺寸：由投影镜链电流设定，</text>
+  <text x="930" y="364" font-size="11" fill="#475569">可电控切换数百毫米至数米；须定期用多晶金环标定，否则 d 值出现系统性偏差。</text>
+  <rect x="991.51315" y="399.075" width="296.9737" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1140" y="411.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">倍数用交叉光栅、L 用金环——一切可电控，一切须定期标定</text>
+  <rect x="30" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、会聚束（CBED）与纳米束衍射（NBD）</text>
+  <line x1="80" y1="490" x2="140" y2="556" stroke="#0369a1" stroke-width="1.7"/>
+  <line x1="200" y1="490" x2="140" y2="556" stroke="#0369a1" stroke-width="1.7"/>
+  <line x1="140" y1="560" x2="80" y2="628" stroke="#d97706" stroke-width="1.7"/>
+  <line x1="140" y1="560" x2="200" y2="628" stroke="#d97706" stroke-width="1.7"/>
+  <rect x="128" y="556" width="24" height="5" fill="#be185d"/>
+  <text x="140" y="486" font-size="10.5" fill="#64748b" text-anchor="middle">会聚探针</text>
+  <circle cx="280" cy="560" r="32" fill="#1e293b"/>
+  <circle cx="345" cy="560" r="32" fill="#1e293b" fill-opacity="0.85"/>
+  <line x1="258" y1="550" x2="302" y2="550" stroke="#e2e8f0" stroke-width="1.6" opacity="0.8"/>
+  <line x1="258" y1="559" x2="302" y2="559" stroke="#e2e8f0" stroke-width="1.6" opacity="0.8"/>
+  <line x1="258" y1="568" x2="302" y2="568" stroke="#e2e8f0" stroke-width="1.6" opacity="0.8"/>
+  <line x1="323" y1="550" x2="367" y2="550" stroke="#e2e8f0" stroke-width="1.6" opacity="0.8"/>
+  <line x1="323" y1="559" x2="367" y2="559" stroke="#e2e8f0" stroke-width="1.6" opacity="0.8"/>
+  <line x1="323" y1="568" x2="367" y2="568" stroke="#e2e8f0" stroke-width="1.6" opacity="0.8"/>
+  <text x="312" y="620" font-size="10" fill="#475569" text-anchor="middle">衍射斑展开为圆盘，盘内条纹随厚度振荡</text>
+  <text x="312" y="638" font-size="10" fill="#475569" text-anchor="middle">HOLZ 线对原子位置敏感——定晶格参数与空间群</text>
+  <text x="440" y="500" font-size="11" fill="#475569">把会聚角收小、探针缩到 1–10 nm，</text>
+  <text x="440" y="516" font-size="11" fill="#475569">即得纳米束衍射（NBD）：在位错、</text>
+  <text x="440" y="532" font-size="11" fill="#475569">析出相与界面处做定点晶体学。</text>
+  <text x="440" y="570" font-size="11" fill="#475569">伏线：把会聚束换成平行纳米束、</text>
+  <text x="440" y="586" font-size="11" fill="#475569">把剂量压到极限——低剂量电子衍射正是 MicroED 与二维晶体电子晶体学的实验形态</text>
+  <text x="440" y="602" font-size="11" fill="#475569">（第 10 章）。</text>
+  <rect x="422.03499999999997" y="676.65" width="255.93" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="550" y="689.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">衍射模式不是材料学私产，而是通向结构的高铁</text>
+  <rect x="710" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、Ewald 球近乎平面与三种衍射指纹</text>
+  <circle cx="760" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="760" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="760" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="760" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="760" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="790" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="790" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="790" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="790" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="790" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="820" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="820" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="820" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="820" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="820" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="850" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="850" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="850" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="850" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="850" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="880" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="880" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="880" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="880" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="880" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="910" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="910" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="910" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="910" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="910" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="940" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="940" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="940" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="940" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="940" cy="640" r="2.6" fill="#94a3b8"/>
+  <circle cx="970" cy="520" r="2.6" fill="#94a3b8"/>
+  <circle cx="970" cy="550" r="2.6" fill="#94a3b8"/>
+  <circle cx="970" cy="580" r="2.6" fill="#94a3b8"/>
+  <circle cx="970" cy="610" r="2.6" fill="#94a3b8"/>
+  <circle cx="970" cy="640" r="2.6" fill="#94a3b8"/>
+  <path d="M 750,565 Q 860,595 975,565" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <circle cx="790" cy="574" r="4.2" fill="#0369a1"/>
+  <circle cx="850" cy="580" r="4.2" fill="#0369a1"/>
+  <circle cx="910" cy="577" r="4.2" fill="#0369a1"/>
+  <circle cx="970" cy="566" r="4.2" fill="#0369a1"/>
+  <text x="730" y="508" font-size="10.5" fill="#075985" font-weight="700">Ewald 球面（1/λ 约 508 nm<tspan dy="-3.6" font-size="7.6">-1</tspan><tspan dy="3.6">）</tspan></text>
+  <text x="730" y="660" font-size="10.5" fill="#475569">球面在倒易格点尺度上近乎平面：</text>
+  <text x="730" y="675" font-size="10.5" fill="#475569">沿晶带轴一张照片可同时记录多层 hkl 反射</text>
+  <text x="730" y="690" font-size="10.5" fill="#475569">（X 射线须旋转晶体逐层收集）。</text>
+  <rect x="1010" y="510" width="100" height="100" rx="3" fill="#1e293b"/>
+  <circle cx="1060" cy="560" r="4" fill="#f8fafc"/>
+  <circle cx="1060" cy="560" r="22" fill="none" stroke="#e2e8f0" stroke-width="6" opacity="0.5"/>
+  <circle cx="1060" cy="560" r="38" fill="none" stroke="#e2e8f0" stroke-width="5" opacity="0.35"/>
+  <text x="1060" y="632" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">非晶宽环：冰约 0.37 nm</text>
+  <rect x="1125" y="510" width="100" height="100" rx="3" fill="#1e293b"/>
+  <circle cx="1148" cy="533" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1148" cy="551" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1148" cy="569" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1148" cy="587" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1166" cy="533" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1166" cy="551" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1166" cy="569" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1166" cy="587" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1184" cy="533" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1184" cy="551" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1184" cy="569" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1184" cy="587" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1202" cy="533" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1202" cy="551" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1202" cy="569" r="2.6" fill="#e2e8f0"/>
+  <circle cx="1202" cy="587" r="2.6" fill="#e2e8f0"/>
+  <text x="1175" y="632" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">单晶：离散斑点阵</text>
+  <rect x="1240" y="510" width="100" height="100" rx="3" fill="#1e293b"/>
+  <circle cx="1290" cy="560" r="13" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="1290" cy="560" r="25" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="1290" cy="560" r="37" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="1290" y="632" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">多晶：同心锐环（金环系）</text>
+  <text x="1010" y="672" font-size="10.5" fill="#475569">电子散射比 X 射线强约 10<tspan dy="-3.6" font-size="7.6">4</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">5</tspan><tspan dy="3.6"> 倍：几百纳米的晶体就够衍射</tspan></text>
+  <text x="1010" y="687" font-size="10.5" fill="#475569">（MicroED 的根本优势），代价是动力学散射须防；</text>
+  <text x="1010" y="702" font-size="10.5" fill="#475569">散射振幅约随 Z 一次方增长（X 射线强度约 Z<tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">），轻元素相对更可见。</tspan></text>
+</svg>

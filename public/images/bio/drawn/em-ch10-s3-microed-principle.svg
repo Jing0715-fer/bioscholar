@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">MicroED 的原理与实践：微晶、低剂量与连续旋转</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">2013年溶菌酶2.9Å、2014年连续旋转约1.7Å；晶体0.1–4μm、束流0.01–0.1e⁻/Å²/s、单晶总剂量约1e⁻/Å²；200kV波长0.025Å使Ewald球近平面，2Å布拉格角不足半度（X</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">射线约23度）</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、诞生：材料学前置与 2013 年溶菌酶</text>
+  <line x1="80" y1="300" x2="620" y2="300" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="123.2" cy="300" r="6.5" fill="#dc2626"/>
+  <line x1="123.2" y1="291" x2="123.2" y2="270" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="123.2" y="250" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2010 年前后</text>
+  <text x="123.2" y="230" font-size="12" fill="#64748b" text-anchor="middle">ADT（Kolb）与 RED（Zou）打通无机亚微米晶</text>
+  <circle cx="350" cy="300" r="6.5" fill="#dc2626"/>
+  <line x1="350" y1="309" x2="350" y2="330" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="350" y="350" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2013 年</text>
+  <text x="350" y="370" font-size="12" fill="#64748b" text-anchor="middle">Shi 等（Gonen 组）溶菌酶 2.9 Å</text>
+  <circle cx="539" cy="300" r="6.5" fill="#dc2626"/>
+  <line x1="539" y1="291" x2="539" y2="270" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="539" y="250" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">2014 年</text>
+  <text x="539" y="230" font-size="12" fill="#64748b" text-anchor="middle">连续旋转方案推到约 1.7 Å</text>
+  <text x="50" y="386" font-size="10.5" fill="#475569">结晶滴里长出的微晶在光学显微镜下形似沉淀、</text>
+  <text x="50" y="401" font-size="10.5" fill="#475569">从未被 X 射线晶体学当回事——MicroED 把「太小太少长不大」的晶体第一次变成数据。</text>
+  <rect x="104.19799999999998" y="433.075" width="251.60400000000004" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="230" y="445.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">溶菌酶 2.9 Å：首个 MicroED 蛋白结构（eLife）</text>
+  <rect x="423.66499999999996" y="433.075" width="212.67000000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="530" y="445.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">连续旋转：每秒百分之几度到十分之几度</text>
+  <text x="360" y="496" font-size="10" fill="#64748b" text-anchor="middle">样品台连续匀速倾转，衍射几何与 X 射线旋转法完全同构，单颗晶体即得完整数据集</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Ewald 球近平面：电子的几何红利</text>
+  <text x="880" y="186" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">X 射线（Cu Kα，λ = 1.54 Å）</text>
+  <path d="M 760,330 A 130,130 0 0 1 1000,330" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <circle cx="828" cy="242" r="3" fill="#64748b"/>
+  <circle cx="828" cy="268" r="3" fill="#64748b"/>
+  <circle cx="828" cy="294" r="3" fill="#64748b"/>
+  <circle cx="854" cy="242" r="3" fill="#64748b"/>
+  <circle cx="854" cy="268" r="3" fill="#64748b"/>
+  <circle cx="854" cy="294" r="3" fill="#64748b"/>
+  <circle cx="880" cy="242" r="3" fill="#64748b"/>
+  <circle cx="880" cy="268" r="3" fill="#64748b"/>
+  <circle cx="880" cy="294" r="3" fill="#64748b"/>
+  <circle cx="906" cy="242" r="3" fill="#64748b"/>
+  <circle cx="906" cy="268" r="3" fill="#64748b"/>
+  <circle cx="906" cy="294" r="3" fill="#64748b"/>
+  <circle cx="932" cy="242" r="3" fill="#64748b"/>
+  <circle cx="932" cy="268" r="3" fill="#64748b"/>
+  <circle cx="932" cy="294" r="3" fill="#64748b"/>
+  <circle cx="880" cy="330" r="3.5" fill="#1e293b"/>
+  <line x1="880" y1="330" x2="962" y2="258" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="920" y="316" font-size="9.5" fill="#831843" text-anchor="middle">2 Å 衍射：布拉格角约 23°</text>
+  <text x="1190" y="186" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">电子（200 kV，λ = 0.025 Å）</text>
+  <path d="M 1060,332 Q 1190,326 1320,332" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="1138" cy="242" r="3" fill="#075985"/>
+  <circle cx="1138" cy="268" r="3" fill="#075985"/>
+  <circle cx="1138" cy="294" r="3" fill="#075985"/>
+  <circle cx="1164" cy="242" r="3" fill="#075985"/>
+  <circle cx="1164" cy="268" r="3" fill="#075985"/>
+  <circle cx="1164" cy="294" r="3" fill="#075985"/>
+  <circle cx="1190" cy="242" r="3" fill="#075985"/>
+  <circle cx="1190" cy="268" r="3" fill="#075985"/>
+  <circle cx="1190" cy="294" r="3" fill="#075985"/>
+  <circle cx="1216" cy="242" r="3" fill="#075985"/>
+  <circle cx="1216" cy="268" r="3" fill="#075985"/>
+  <circle cx="1216" cy="294" r="3" fill="#075985"/>
+  <circle cx="1242" cy="242" r="3" fill="#075985"/>
+  <circle cx="1242" cy="268" r="3" fill="#075985"/>
+  <circle cx="1242" cy="294" r="3" fill="#075985"/>
+  <circle cx="1190" cy="332" r="3.5" fill="#1e293b"/>
+  <line x1="1190" y1="332" x2="1266" y2="300" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="1230" y="350" font-size="9.5" fill="#065f46" text-anchor="middle">不足半度：单帧近整层激发</text>
+  <rect x="874.15585" y="411.075" width="331.6883000000001" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1040" y="423.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">波长比 Cu Kα 短约 60 倍，Ewald 球曲率半径大 60 倍、近于平面</text>
+  <text x="1040" y="462" font-size="10" fill="#475569" text-anchor="middle">倒易点阵整层同时落在反射条件上——一张照片收一层，旋转几度即换一层</text>
+  <text x="1040" y="500" font-size="9.5" fill="#64748b" text-anchor="middle">（灰点＝倒易格点；曲线＝Ewald 球截面）</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、装备与剂量：核心参数卡</text>
+  <rect x="50" y="612" width="300" height="88" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="66" y="636" font-size="11.5" fill="#1e293b" font-weight="700">可用晶体尺寸</text>
+  <text x="66" y="660" font-size="13" fill="#075985" font-weight="700">0.1–4 μm</text>
+  <text x="66" y="682" font-size="9.5" fill="#64748b">同步辐射要 10 μm 级以上才衍射得动</text>
+  <rect x="370" y="612" width="300" height="88" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="386" y="636" font-size="11.5" fill="#1e293b" font-weight="700">束流与总剂量</text>
+  <text x="386" y="660" font-size="13" fill="#075985" font-weight="700">0.01–0.1 e<tspan dy="-4.4" font-size="9.4">-</tspan><tspan dy="4.4">/Å</tspan><tspan dy="-4.4" font-size="9.4">2</tspan><tspan dy="4.4">/s；单晶约 1 e</tspan><tspan dy="-4.4" font-size="9.4">-</tspan><tspan dy="4.4">/Å</tspan><tspan dy="-4.4" font-size="9.4">2</tspan></text>
+  <text x="386" y="682" font-size="9.5" fill="#64748b">XFEL 吃微米晶但须大科学装置</text>
+  <rect x="50" y="712" width="300" height="88" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="66" y="736" font-size="11.5" fill="#1e293b" font-weight="700">探测器</text>
+  <text x="66" y="760" font-size="13" fill="#075985" font-weight="700">混合像素，数百到数千帧每秒</text>
+  <text x="66" y="782" font-size="9.5" fill="#64748b">连续旋转下逐帧记录衍射</text>
+  <rect x="370" y="712" width="300" height="88" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="386" y="736" font-size="11.5" fill="#1e293b" font-weight="700">旋转速率</text>
+  <text x="386" y="760" font-size="13" fill="#075985" font-weight="700">每秒百分之几度到十分之几度</text>
+  <text x="386" y="782" font-size="9.5" fill="#64748b">曝光期间连续匀速倾转</text>
+  <rect x="259.0725" y="831.075" width="201.85500000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="360" y="843.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">剂量比常规电子成像低一到两个数量级</text>
+  <text x="360" y="900" font-size="10" fill="#475569" text-anchor="middle">散射截面比 X 射线高 10<tspan dy="-3.4" font-size="7.2">3</tspan><tspan dy="3.4"> 至 10</tspan><tspan dy="-3.4" font-size="7.2">5</tspan><tspan dy="3.4"> 倍：小晶体、低束流也能攒够光子数</tspan></text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、软件栈复用与动力学散射的边界</text>
+  <rect x="806.5928" y="611.075" width="166.81440000000006" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="890" y="623.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">XDS 指标化（波长 0.0251 Å）</text>
+  <rect x="830.71025" y="657.075" width="118.5795" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="890" y="669.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">SHELX / phenix 精修</text>
+  <rect x="807.3498500000001" y="703.075" width="165.3003" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="890" y="715.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="600">Peng 等 1996 电子散射因子表</text>
+  <line x1="1040" y1="648" x2="1040" y2="660" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <line x1="1040" y1="694" x2="1040" y2="706" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="899.5711" y="751.075" width="280.85780000000005" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1040" y="763.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">运动学精修 R 因子约 0.2——X 射线软件栈几乎原样复用</text>
+  <text x="730" y="812" font-size="10.5" fill="#475569">边界：动力学散射使强度偏离 |F|<tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">——厚约一二百纳米以内运动学近似成立，更厚须 FIB 减薄或动力学精修（本章第 4 节、第 12 章）</tspan></text>
+  <text x="730" y="827" font-size="10.5" fill="#475569">。</text>
+  <text x="1040" y="906" font-size="10" fill="#64748b" text-anchor="middle">「复用」是 MicroED 扩散快的关键：晶体学家的工具链不必重学</text>
+</svg>

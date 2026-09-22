@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">电子密度图的解读：主图、差值图与无偏检验</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">2Fo−Fc主图按1σ勾画连续「香肠」；Fo−Fc差值图+3σ表缺失、−3σ表多余；omit图防模型偏差、polder图（Liebschner2017）加掩膜挡溶剂为配体判定首选；sigma-A</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">加权逐反射压偏差；1.2Å见氢、6Å仅见包络</text>
+  <rect x="30" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、2Fo−Fc 主图与 Fo−Fc 差值图</text>
+  <rect x="56" y="212" width="300" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="206" y="230" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">2Fo−Fc 主图：1σ 连续「香肠」</text>
+  <ellipse cx="100" cy="280" rx="37" ry="28" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="100" cy="280" rx="24" ry="15" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="100" cy="280" rx="13.200000000000001" ry="8.25" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="100" cy="280" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="150" cy="300" rx="39" ry="29" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="150" cy="300" rx="26" ry="16" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="150" cy="300" rx="14.3" ry="8.8" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="150" cy="300" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="205" cy="290" rx="37" ry="28" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="205" cy="290" rx="24" ry="15" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="205" cy="290" rx="13.200000000000001" ry="8.25" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="205" cy="290" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="255" cy="315" rx="38" ry="28" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="255" cy="315" rx="25" ry="15" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="255" cy="315" rx="13.750000000000002" ry="8.25" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="255" cy="315" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="300" cy="295" rx="35" ry="27" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="300" cy="295" rx="22" ry="14" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="300" cy="295" rx="12.100000000000001" ry="7.700000000000001" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="300" cy="295" r="3.2" fill="#134e4a" stroke="none"/>
+  <text x="66" y="350" font-size="9.5" fill="#64748b">虚线 0.5σ 追柔性 · 内圈 1.5σ 检验扎实</text>
+  <rect x="390" y="212" width="270" height="150" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="525" y="230" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">Fo−Fc 差值图：只画观测减计算</text>
+  <ellipse cx="475" cy="300" rx="34" ry="24" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="505" cy="285" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="475" cy="300" rx="14" ry="10" fill="#059669" fill-opacity="0.75" stroke="#065f46" stroke-width="1.4"/>
+  <text x="452" y="336" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">+3σ：晶体有、模型无</text>
+  <ellipse cx="505" cy="285" rx="13" ry="9" fill="#dc2626" fill-opacity="0.7" stroke="#991b1b" stroke-width="1.4"/>
+  <text x="560" y="268" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">−3σ：模型有、晶体无</text>
+  <line x1="500" y1="288" x2="484" y2="296" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="439.75" y="363.5" width="170.5" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="525" y="375.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">口诀：加水看正峰、删原子看负峰</text>
+  <text x="56" y="404" font-size="10" fill="#475569">读图姿势：主图确认密度存在，差值图指出偏差方向；两者打架时先怀疑相位与缩放。差值图随精修轮次动态变化——每轮精修后重算，</text>
+  <text x="56" y="418.5" font-size="10" fill="#475569">新出现的小峰群往往指向交替构象或构象变化而非噪声：差值图是模型与数据对话的留言板。</text>
+  <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、模型-密度匹配的好坏对照</text>
+  <rect x="740" y="212" width="260" height="140" rx="8" fill="#d1fae5" fill-opacity="0.28" stroke="#059669" stroke-width="1.6"/>
+  <text x="870" y="230" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">好匹配：原子坐在密度中心</text>
+  <ellipse cx="810" cy="285" rx="39" ry="29" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="810" cy="285" rx="26" ry="16" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="810" cy="285" rx="14.3" ry="8.8" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="810" cy="285" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="862" cy="300" rx="39" ry="29" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="862" cy="300" rx="26" ry="16" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="862" cy="300" rx="14.3" ry="8.8" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="862" cy="300" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="912" cy="280" rx="37" ry="28" fill="#ccfbf1" fill-opacity="0.3" stroke="#0f766e" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <ellipse cx="912" cy="280" rx="24" ry="15" fill="#ccfbf1" fill-opacity="0.65" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="912" cy="280" rx="13.200000000000001" ry="8.25" fill="#0f766e" fill-opacity="0.35" stroke="#134e4a" stroke-width="1.2"/>
+  <circle cx="912" cy="280" r="3.2" fill="#134e4a" stroke="none"/>
+  <text x="752" y="340" font-size="9.5" fill="#475569">差值图干净（无 ±3σ 峰），侧链饱满贴模</text>
+  <rect x="1030" y="212" width="310" height="140" rx="8" fill="#fee2e2" fill-opacity="0.28" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1185" y="230" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">坏匹配：成对正负峰喊「搬我」</text>
+  <ellipse cx="1120" cy="300" rx="34" ry="23" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <ellipse cx="1120" cy="300" rx="14" ry="10" fill="#059669" fill-opacity="0.75" stroke="#065f46" stroke-width="1.4"/>
+  <circle cx="1150" cy="282" r="3.2" fill="#134e4a" stroke="none"/>
+  <ellipse cx="1150" cy="282" rx="13" ry="9" fill="#dc2626" fill-opacity="0.7" stroke="#991b1b" stroke-width="1.4"/>
+  <line x1="1146" y1="285" x2="1130" y2="295" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="1042" y="340" font-size="9.5" fill="#475569">正峰在密度中心、负峰在原子处：搬移或翻转的信号</text>
+  <rect x="740" y="366" width="600" height="88" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1040" y="384" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">哑铃状密度：交替构象按 altloc 拆分</text>
+  <ellipse cx="860" cy="424" rx="26" ry="13" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <ellipse cx="908" cy="410" rx="22" ry="12" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.5"/>
+  <circle cx="848" cy="424" r="3" fill="#0369a1" stroke="none"/>
+  <circle cx="918" cy="406" r="3" fill="#6d28d9" stroke="none"/>
+  <text x="830" y="448" font-size="9.5" fill="#075985" font-weight="700">构象 A 占有率 0.6</text>
+  <text x="946" y="414" font-size="9.5" fill="#4c1d95" font-weight="700">构象 B 占有率 0.4</text>
+  <text x="1000" y="428" font-size="9.5" fill="#475569">两构象占有率之和须为 1；占有率与 B 因子强相关（乘积简并），</text>
+  <text x="1000" y="441.5" font-size="9.5" fill="#475569">精修须锁其一防跑飞。成对 ±差值峰是拆分信号。</text>
+  <rect x="30" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">三、无偏检验：omit 图、polder 图与 sigma-A 加权</text>
+  <rect x="95.0127" y="519.075" width="89.9746" height="17.849999999999998" rx="7" fill="#dc262618" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="140" y="531.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">① 抠掉可疑片段</text>
+  <text x="240" y="532" font-size="10" fill="#475569">把配体/可疑残基从模型中删除</text>
+  <line x1="140" y1="548" x2="140" y2="568" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="105.8277" y="579.075" width="68.3446" height="17.849999999999998" rx="7" fill="#0369a118" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="140" y="591.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">② 重算相位</text>
+  <text x="240" y="592" font-size="10" fill="#475569">以剩余模型计算相位并合成图</text>
+  <line x1="140" y1="608" x2="140" y2="628" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="100.4202" y="639.075" width="79.15960000000001" height="17.849999999999998" rx="7" fill="#05966918" stroke="#059669" stroke-width="1.5"/>
+  <text x="140" y="651.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ 看无偏密度</text>
+  <text x="240" y="652" font-size="10" fill="#475569">被抠区域若仍有密度，即真有东西</text>
+  <text x="56" y="700" font-size="10" fill="#475569">omit 图的意义：</text>
+  <text x="56" y="714.5" font-size="10" fill="#475569">被抠区域的密度不再被「模型里有它」这一假设污染，</text>
+  <text x="56" y="729" font-size="10" fill="#475569">是防模型偏差的无偏检验。</text>
+  <rect x="400" y="516" width="280" height="128" rx="6" fill="#fee2e2" fill-opacity="0.35" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="540" y="534" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">普通 omit：bulk 溶剂「填坑」</text>
+  <ellipse cx="540" cy="585" rx="40" ry="24" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <ellipse cx="540" cy="585" rx="16" ry="10" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.1"/>
+  <text x="410" y="632" font-size="9.5" fill="#475569">平坦溶剂把弱配体密度稀释掉</text>
+  <rect x="400" y="656" width="280" height="128" rx="6" fill="#d1fae5" fill-opacity="0.35" stroke="#059669" stroke-width="1.4"/>
+  <text x="540" y="674" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">polder 图：掩膜挡住溶剂（2017）</text>
+  <ellipse cx="540" cy="725" rx="40" ry="24" fill="none" stroke="#d97706" stroke-width="1.6" stroke-dasharray="7 5"/>
+  <ellipse cx="540" cy="725" rx="26" ry="16" fill="#ccfbf1" fill-opacity="0.8" stroke="#0f766e" stroke-width="1.6"/>
+  <ellipse cx="540" cy="725" rx="12" ry="8" fill="#0f766e" fill-opacity="0.6" stroke="none"/>
+  <text x="410" y="772" font-size="9.5" fill="#475569">配体密度保全，弱配体判定首选</text>
+  <rect x="137.04430000000002" y="817.075" width="205.91139999999993" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="240" y="829.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">sigma-A 加权（Read 1986，SIGMAA）</text>
+  <text x="56" y="852" font-size="10" fill="#475569">按逐反射的相位可靠性给图系数加权：模型相位可靠的反射权重大、不可靠者（典型如高分辨率弱反射）权重小——压模型偏差、</text>
+  <text x="56" y="866.5" font-size="10" fill="#475569">提弱密度灵敏度，是所有日常图的公共底座。</text>
+  <rect x="710" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="504.84" font-size="19" fill="#475569" font-weight="700">四、分辨率决定你能看见什么</text>
+  <rect x="730" y="528" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="555.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率</text>
+  <rect x="860" y="528" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="555.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">图上可见</text>
+  <rect x="1110" y="528" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="555.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">建模策略</text>
+  <rect x="730" y="572" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="596.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">优于 1.2 Å</text>
+  <rect x="860" y="572" width="250" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="596.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">氢、各向异性位移</text>
+  <rect x="1110" y="572" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="596.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">全原子精修、交替构象拆分</text>
+  <rect x="730" y="610" width="620" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="610" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="634.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">1.5–2.0 Å</text>
+  <rect x="860" y="610" width="250" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="634.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">键与峰的分叶、有序水网</text>
+  <rect x="1110" y="610" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="634.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">常规逐残基建模、逐个加水</text>
+  <rect x="730" y="648" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="672.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">2.5–3.0 Å</text>
+  <rect x="860" y="648" width="250" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="672.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">主链清晰、长侧链断续</text>
+  <rect x="1110" y="648" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="672.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">主链优先、rotamer 约束建模</text>
+  <rect x="730" y="686" width="620" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="686" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="710.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">3.5–4.0 Å</text>
+  <rect x="860" y="686" width="250" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="710.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">螺旋与片层的轮廓</text>
+  <rect x="1110" y="686" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="710.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">域级刚体、强二级结构约束</text>
+  <rect x="730" y="724" width="130" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="748.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">约 6 Å</text>
+  <rect x="860" y="724" width="250" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="748.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">仅二级结构包络</text>
+  <rect x="1110" y="724" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="748.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">结合同源模型解读（MR）</text>
+  <text x="730" y="760" font-size="10" fill="#475569">低于 3.5 Å 时，侧链建模更多依赖 rotamer 库与几何先验而非密度本身——图给不了的信息必须诚实地由 restraints 供给，</text>
+  <text x="730" y="774.5" font-size="10" fill="#475569">并在论文中声明建模置信度。把 4 Å 图强行建成全原子模型、再用「精修收敛」粉刷，是数据库里过拟合的重灾区。</text>
+  <text x="730" y="826" font-size="10" fill="#475569">同一道理适用于水：分辨率撑不起水网时逐个加水，等于给噪声发居民证——水数必须与分辨率匹配（见第 2 节三判据）。读图技巧：</text>
+  <text x="730" y="840.5" font-size="10" fill="#475569">沿骨架走、找锚点（大侧链与 Gly-Gly 的 register 印记），密度支持度逐段配数字。</text>
+  <text x="700" y="946" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">图是假说、模型是论点——差值图永远留着让数据说「不」的通道</text>
+</svg>

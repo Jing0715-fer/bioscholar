@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">精修收敛与最终模型</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">收敛四判据：R变化小于0.1%、几何outlier清零、无±4σ遗留峰、B分布平滑；2Å每残基约1个水（全蛋白200–400）；身份证示例Rwork0.19与Rfree0.23；投递前四查</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、收敛四判据：全过才算收工</text>
+  <rect x="56" y="184" width="18" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <path d="M 60,194 L 64,198 L 70,189" fill="none" stroke="#065f46" stroke-width="2.4"/>
+  <text x="86" y="198" font-size="11.5" fill="#1e293b" font-weight="700">① R 变化趋平</text>
+  <text x="86" y="218" font-size="9.5" fill="#475569">连续数轮 R<tspan dy="2.1" font-size="6.8">work</tspan><tspan dy="-2.1"> 与 R</tspan><tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 的变化都小于 0.1%，再修只是空转</tspan></text>
+  <rect x="366" y="184" width="18" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <path d="M 370,194 L 374,198 L 380,189" fill="none" stroke="#065f46" stroke-width="2.4"/>
+  <text x="396" y="198" font-size="11.5" fill="#1e293b" font-weight="700">② 几何 outlier 清零</text>
+  <text x="396" y="218" font-size="9.5" fill="#475569">Ramachandran、rotamer、</text>
+  <text x="396" y="231" font-size="9.5" fill="#475569">显著 clash 全部清账或给出书面解释</text>
+  <rect x="56" y="290" width="18" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <path d="M 60,300 L 64,304 L 70,295" fill="none" stroke="#065f46" stroke-width="2.4"/>
+  <text x="86" y="304" font-size="11.5" fill="#1e293b" font-weight="700">③ 差值图干净</text>
+  <text x="86" y="324" font-size="9.5" fill="#475569">无遗留的 ±4σ 孤立峰——正峰是未建模物质，</text>
+  <text x="86" y="337" font-size="9.5" fill="#475569">负峰是占有率或 B 报错的位置</text>
+  <rect x="366" y="290" width="18" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <path d="M 370,300 L 374,304 L 380,295" fill="none" stroke="#065f46" stroke-width="2.4"/>
+  <text x="396" y="304" font-size="11.5" fill="#1e293b" font-weight="700">④ B 分布平滑</text>
+  <text x="396" y="324" font-size="9.5" fill="#475569">沿主链相邻原子 B 连续过渡，核心到表面梯度合理，无锯齿</text>
+  <rect x="56" y="386" width="600" height="118" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="74" y="412" font-size="11.5" fill="#991b1b" font-weight="700">病案警示：R 停在平台而差值图仍有大片残留</text>
+  <text x="74" y="434" font-size="10" fill="#475569">这是模型系统性缺块的信号（整段无序未处理、配体漏建、体溶剂模型失当），此时再多的轮数也无济于事，</text>
+  <text x="74" y="448" font-size="10" fill="#475569">须回到建模层面动手术——R 只能度量「已建模部分」的失配，度量不了「没建的部分」。</text>
+  <text x="74" y="486" font-size="10" fill="#64748b">B 分布的形态即诊断线索：锯齿指向 register 错位（第 9 章）、断崖指向错误的无序建模、全线过平指向 B 根本没被真精修。</text>
+  <text x="56" y="530" font-size="10.5" fill="#1e293b" font-weight="700">四条判据互相独立又互相印证——单看 R 一条定收敛，是初学者最常犯的懒病。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、水的最终清点：数量与分辨率匹配</text>
+  <rect x="730" y="184" width="150" height="54" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.7"/>
+  <text x="805" y="206" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">2 Å</text>
+  <text x="805" y="226" font-size="10" fill="#059669" text-anchor="middle" font-weight="700">每残基约 1 个</text>
+  <text x="900" y="200" font-size="10" fill="#475569">全蛋白数百个（200 至 400 常见）</text>
+  <rect x="730" y="248" width="150" height="54" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.7"/>
+  <text x="805" y="270" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">3 Å</text>
+  <text x="805" y="290" font-size="10" fill="#d97706" text-anchor="middle" font-weight="700">少数几十个或零</text>
+  <text x="900" y="264" font-size="10" fill="#475569">只留证据最强的有序水</text>
+  <rect x="730" y="312" width="150" height="54" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="805" y="334" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">3.5 Å 以上</text>
+  <text x="805" y="354" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">放水基本是自欺</text>
+  <text x="900" y="328" font-size="10" fill="#475569">分辨率撑不起水的证据强度</text>
+  <text x="730" y="392" font-size="10.5" fill="#475569">纪律加两条：R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 监控——每批水加完看 R</tspan><tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 持平或下降，上涨即回滚，那是水在拟合噪声的现场；</tspan></text>
+  <text x="730" y="407" font-size="10.5" fill="#475569">逐轮增删——REFMAC 的 ARP/waters 与 phenix.refine 的 ordered water 先在峰上置水，B 飙出区间或峰消失的水下一轮自动删除，</text>
+  <text x="730" y="422" font-size="10.5" fill="#475569">最终存量是自然选择的结果。</text>
+  <text x="730" y="470" font-size="10.5" fill="#64748b">人工把关四条：孤悬无氢键伙伴的水先删为敬；成排堆在晶体表面的水链多为溶剂噪声；骑在对称元素上的水常是半个占有；</text>
+  <text x="730" y="485" font-size="10.5" fill="#64748b">与配体距离小于 2.2 Å 的「水」要查化学身份。</text>
+  <text x="730" y="530" font-size="10.5" fill="#64748b">水的质量是审稿人估量建模认真程度的低成本样本——一个 clash 满屏的水网，读者有理由怀疑别处更不认真。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、全局 B 终审与 TLS 报告口径</text>
+  <rect x="60" y="630" width="340" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="54" y1="780" x2="60" y2="780" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="784" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="54" y1="705" x2="60" y2="705" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="709" font-size="13" fill="#64748b" text-anchor="end">30</text>
+  <line x1="54" y1="630" x2="60" y2="630" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="634" font-size="13" fill="#64748b" text-anchor="end">60 Å<tspan dy="-4.4" font-size="9.4">2</tspan></text>
+  <text x="230" y="824" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">残基序号</text>
+  <text x="230" y="618" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">B 沿残基序号（合格形态）</text>
+  <path d="M60,723 C65.7,725.0 81.5,732.0 94,735 C106.5,738.0 120.6,741.0 134.8,741 C149.0,741.0 163.1,735.3 179,735 C194.9,734.8 213.0,740.3 230,739.5 C247.0,738.8 264.0,734.3 281,730.5 C298.0,726.8 317.8,721.3 332,717 C346.2,712.8 354.7,709.0 366,705 C377.3,701.0 394.3,695.0 400,693" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M60,705 C68.5,706.0 94.0,710.5 111,711 C128.0,711.5 142.2,707.8 162,708 C181.8,708.3 207.3,713.0 230,712.5 C252.7,712.0 276.5,707.5 298,705 C319.5,702.5 342.2,700.0 359.2,697.5 C376.2,695.0 393.2,691.3 400,690" fill="none" stroke="#0369a1" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="74" y="644.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#0f766e" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="92.45" y="651.42" font-size="9.5" fill="#475569">主链 B（平缓起伏）</text>
+  <rect x="199.38" y="644.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="217.82999999999998" y="651.42" font-size="9.5" fill="#475569">水的 B（略高于周边）</text>
+  <rect x="440" y="626" width="128" height="88" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="504" y="618" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">锯齿：register 错位</text>
+  <polyline points="450,677.6 454.5,662.1312881496522 459,661.9813621583485 463.5,677.2986949033204 468,662.285587567058 472.5,661.8358519813077 477,676.9974749937971 481.5,662.4442167859187 486,661.6947987582195 490.5,676.6964254345019 495,662.6071309574339 499.5,661.5582423686712 504,676.3956313403435 508.5,662.7742840213308 513,661.4262214208734 517.5,676.0951777540039 522,662.9456287188862 526.5,661.2987732407432 531,675.7951496218942 535.5,663.1211166062876 540,661.1759338613518 544.5,675.4956317701384 549,663.3006980683305 553.5,661.0577380127372 558,675.1967088805897" fill="none" stroke="#d97706" stroke-width="2"/>
+  <rect x="582" y="626" width="128" height="88" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="646" y="618" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">断崖：无序建模错</text>
+  <polyline points="592,677.6 596.5,677.6 601,677.6 605.5,677.6 610,677.6 614.5,677.6 619,677.6 623.5,677.6 628,677.6 632.5,677.6 637,677.6 641.5,677.6 646,677.6 650.5,677.6 655,677.6 659.5,649.6 664,649.6 668.5,649.6 673,649.6 677.5,649.6 682,649.6 686.5,649.6 691,649.6 695.5,649.6 700,649.6" fill="none" stroke="#d97706" stroke-width="2"/>
+  <rect x="440" y="726" width="128" height="60" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="504" y="718" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">全线过平</text>
+  <line x1="452" y1="764" x2="556" y2="764" stroke="#64748b" stroke-width="2"/>
+  <text x="504" y="752" font-size="8.5" fill="#64748b" text-anchor="middle">B 没被真精修</text>
+  <text x="440" y="812" font-size="10" fill="#475569">TLS 报告口径：</text>
+  <text x="440" y="826" font-size="10" fill="#475569">每个原子的总有效 B ＝ TLS 贡献加残余 B；</text>
+  <text x="440" y="840" font-size="10" fill="#475569">论文报「平均 B」须注明是否已含 TLS 贡献，</text>
+  <text x="440" y="854" font-size="10" fill="#475569">TLS 分组（哪些残基一组、依据什么划分）</text>
+  <text x="440" y="868" font-size="10" fill="#475569">写进方法学段落——这是可重复性的一部分。</text>
+  <text x="60" y="836" font-size="10.5" fill="#475569">配体终审四条：occupancy 与 B 永不同轮放开（先锁 1 修 B、</text>
+  <text x="60" y="851" font-size="10.5" fill="#475569">回归不了再逐档降）；配体 B 与口袋残基同量级；RSRCC 不低于 0.8；</text>
+  <text x="60" y="866" font-size="10.5" fill="#475569">polder 图上密度仍在。</text>
+  <text x="60" y="900" font-size="10.5" fill="#64748b">任何一处的陡变都是「最后一处没结账」的路标——主链 B 应随二级结构与埋藏深度平缓起伏，</text>
+  <text x="60" y="915" font-size="10.5" fill="#64748b">配体 B 与口袋同带、水的 B 略高于周边蛋白。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、结构身份证、投递前四查与 OneDep</text>
+  <rect x="730" y="622" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="649.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">条目</text>
+  <rect x="880" y="622" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="649.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">示例内容</text>
+  <rect x="1120" y="622" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="649.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">说明</text>
+  <rect x="730" y="666" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="685" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率范围</text>
+  <rect x="880" y="666" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="685" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">45.0 至 1.8 Å</text>
+  <rect x="1120" y="666" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="685" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数据质量总纲（第 5、6 章）</text>
+  <rect x="730" y="693" width="620" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="693" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="712" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">R<tspan dy="2.2" font-size="7.2">work</tspan><tspan dy="-2.2"> 与 R</tspan><tspan dy="2.2" font-size="7.2">free</tspan></text>
+  <rect x="880" y="693" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="712" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">0.19 与 0.23（gap 约 4 个百分点）</text>
+  <rect x="1120" y="693" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="712" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">在锚点带内（第 3 节）</text>
+  <rect x="730" y="720" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="739" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">原子数</text>
+  <rect x="880" y="720" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="739" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">蛋白约 2000、配体 30、水 260</text>
+  <rect x="1120" y="720" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="739" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">各类分开计</text>
+  <rect x="730" y="747" width="620" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="747" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="766" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">平均 B</text>
+  <rect x="880" y="747" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="766" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">蛋白 28、配体 25、水 38 Å<tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <rect x="1120" y="747" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="766" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">注明含 TLS 口径</text>
+  <rect x="730" y="774" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="793" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">空间群与晶胞</text>
+  <rect x="880" y="774" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1000" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">P2<tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">2</tspan><tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">2</tspan><tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">，a、b、c 与夹角</tspan></text>
+  <rect x="1120" y="774" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1235" y="793" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">与数据处理一致</text>
+  <text x="730" y="830" font-size="11" fill="#1e293b" font-weight="700">投递前四查：</text>
+  <rect x="730" y="844" width="146" height="62" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="803" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">序列对版</text>
+  <text x="803" y="884" font-size="8.5" fill="#475569" text-anchor="middle">tag、linker、突变点均有交代</text>
+  <rect x="886" y="844" width="146" height="62" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="959" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">二硫键正确</text>
+  <text x="959" y="884" font-size="8.5" fill="#475569" text-anchor="middle">SG 与 SG 约 2.03 至 2.05 Å</text>
+  <rect x="1042" y="844" width="146" height="62" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1115" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">金属配位合理</text>
+  <text x="1115" y="884" font-size="8.5" fill="#475569" text-anchor="middle">锌约四配位、镁六配位带水壳</text>
+  <rect x="1198" y="844" width="146" height="62" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1271" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">配体字典版本</text>
+  <text x="1271" y="884" font-size="8.5" fill="#475569" text-anchor="middle">与化学组件字典对齐</text>
+  <text x="730" y="930" font-size="10.5" fill="#64748b" font-weight="700">OneDep 投递自动生成验证报告，红色条目终身公开——投递不是终点，而是把模型交给全场读者复核的起点（第 11 章）。</text>
+</svg>

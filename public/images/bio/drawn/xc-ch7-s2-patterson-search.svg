@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">Patterson 函数与旋转-平移两步搜索</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">P(u)=Σ|F|<tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">exp(−2πihu)免相位、峰即原子间向量且峰高∝Z</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">Z</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">；N原子生N(N−1)峰、3000原子近900万；旋转函数定取向（Crowther1972提速数个数量级）、平移函数定位置</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Patterson 图：峰即原子间向量（五原子实算）</text>
+  <rect x="62" y="196" width="170" height="150" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="147" y="188" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">分子（5 个原子）</text>
+  <circle cx="92.6" cy="241" r="4.666666666666667" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="92.6" y="230.33333333333334" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">C</text>
+  <circle cx="133.39999999999998" cy="223" r="4.777777777777778" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="133.39999999999998" y="212.22222222222223" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">N</text>
+  <circle cx="167.4" cy="265" r="4.666666666666667" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="167.4" y="254.33333333333334" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">C</text>
+  <circle cx="194.6" cy="304" r="4.888888888888889" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="194.6" y="293.1111111111111" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">O</text>
+  <circle cx="113" cy="301" r="5.777777777777778" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="113" y="289.22222222222223" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">S</text>
+  <line x1="194.6" y1="304" x2="113" y2="301" stroke="#be123c" stroke-width="2.2" marker-end="url(#arr-mute)"/>
+  <text x="153.8" y="292.5" font-size="9.5" fill="#be123c" text-anchor="middle" font-weight="700">向量 S−O</text>
+  <rect x="292" y="196" width="364" height="300" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="474" y="188" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">Patterson 图 P(u)：5×4 = 20 个向量峰</text>
+  <circle cx="292" cy="196" r="10.5625" fill="#1e293b" fill-opacity="0.9" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="310" y="216" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">原点峰（全部原子自我对齐）</text>
+  <circle cx="568.64" cy="232.00000000000003" r="3.8100925873009825" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="495.84000000000003" cy="448" r="3.75" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="437.59999999999997" cy="370" r="3.8660254037844384" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="612.3199999999999" cy="376" r="4.224744871391589" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="379.36" cy="460" r="3.8100925873009825" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="583.2" cy="412" r="3.8100925873009825" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="524.9599999999999" cy="334" r="3.935414346693485" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="335.68000000000006" cy="340" r="4.322875655532295" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="452.15999999999997" cy="244.00000000000006" r="3.75" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="364.79999999999995" cy="280" r="3.8100925873009825" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="597.76" cy="418" r="3.8660254037844384" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="408.48" cy="424" r="4.224744871391589" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="510.40000000000003" cy="322" r="3.8660254037844384" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="423.0400000000001" cy="358" r="3.935414346693485" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="350.24000000000007" cy="274" r="3.8660254037844384" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1.1"/>
+  <circle cx="466.72" cy="202" r="4.414213562373095" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="335.68000000000006" cy="316" r="4.224744871391589" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="612.3199999999999" cy="352" r="4.322875655532295" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="539.52" cy="268" r="4.224744871391589" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="481.28" cy="490" r="4.414213562373095" fill="#be185d" fill-opacity="0.75" stroke="#831843" stroke-width="1.1"/>
+  <circle cx="481.28" cy="490" r="12" fill="none" stroke="#be123c" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <text x="497.28" y="494" font-size="9.5" fill="#be123c" text-anchor="middle" font-weight="700">u = r<tspan dy="2.1" font-size="6.8">S</tspan><tspan dy="-2.1">−r</tspan><tspan dy="2.1" font-size="6.8">O</tspan></text>
+  <text x="62" y="528" font-size="10.5" fill="#475569">P(u) = Σ<tspan dy="2.3" font-size="7.6">h</tspan><tspan dy="-2.3">|F(h)|</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">·exp(−2πih·u)（Patterson，1934 年）——以 |F|</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6"> 为系数做傅里叶综合，不需要任何相位；</tspan></text>
+  <text x="62" y="543" font-size="10.5" fill="#475569">峰位给向量两端点的坐标差，峰高近似正比 Z<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">Z</tspan><tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">，含重原子的对最亮眼（红圈与玫红示例）。</tspan></text>
+  <text x="62" y="178" font-size="10.5" fill="#64748b">几何意义是自相关：密度与其平移 u 的副本逐点相乘积分，u 恰为某对原子间距时两原子对齐、P(u) 出峰。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、峰海的账目：幸存的取向信息与 Harker 截面</text>
+  <rect x="730" y="190" width="300" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="744" y="209" font-size="10.5" fill="#1e293b" font-weight="700">小分子 20 个原子</text>
+  <text x="744" y="227" font-size="11" fill="#065f46" font-weight="700">N(N−1) = 380 峰</text>
+  <text x="1046" y="206" font-size="10" fill="#475569">峰稀可辨，直接法的主场</text>
+  <rect x="730" y="246" width="300" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="744" y="265" font-size="10.5" fill="#1e293b" font-weight="700">约 30 kDa 单体 2600 原子</text>
+  <text x="744" y="283" font-size="11" fill="#075985" font-weight="700">分子内向量约 340 万</text>
+  <text x="1046" y="262" font-size="10" fill="#475569">密集于半径约 20 Å 的分子尺度球内</text>
+  <rect x="730" y="302" width="300" height="46" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="744" y="321" font-size="10.5" fill="#1e293b" font-weight="700">蛋白约 3000 个原子</text>
+  <text x="744" y="339" font-size="11" fill="#991b1b" font-weight="700">近 900 万个向量峰</text>
+  <text x="1046" y="318" font-size="10" fill="#475569">2–3 Å 分辨率下完全重叠成丘陵地带</text>
+  <rect x="760" y="400" width="250" height="130" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="760" cy="400" r="34" fill="#e0f2fe" fill-opacity="0.8" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <circle cx="765" cy="400" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="751.8886691290463" cy="406.09267788857136" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="761.4874827184706" cy="386.11346535282837" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="773.9920802342418" cy="414.96857591219504" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="731.4440521819703" cy="395.85450914251754" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="764.2192697936624" cy="397.8000510361982" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="757.1420090816487" cy="408.7102331444745" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="752.1684640140069" cy="387.62731555187383" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="781.602067974028" cy="406.4749195575432" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="733.1903185274905" cy="409.06613669155456" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="762.1208950366849" cy="396.28712871577284" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="763.2878769700092" cy="408.6076515523241" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="745.2951719920568" cy="393.00505714377323" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="782.465900919142" cy="395.9591970900196" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="743.309036132161" cy="419.4464815326388" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="759.360181551863" cy="395.93370670088325" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="768.4069669122866" cy="405.81696853116273" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="743.0140813320265" cy="400.56726400745714" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="776.3138108801918" cy="386.70538537836717" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="758.6402096026358" cy="423.7538441579166" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="756.799278302654" cy="396.85015588857294" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="770.900627649723" cy="401.20969229336384" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="746.0375585865881" cy="407.95231881290505" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="765.067046867384" cy="381.60337655340504" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="774.3960348481146" cy="420.64306932290634" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="755.2379350979243" cy="398.7502764534809" r="2.2" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="820" cy="412" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="903" cy="459" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="986" cy="506" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="889" cy="447" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="972" cy="494" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="875" cy="435" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="958" cy="482" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="861" cy="423" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="944" cy="470" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="847" cy="517" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="930" cy="458" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="833" cy="505" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="916" cy="446" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="999" cy="493" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="902" cy="434" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="985" cy="481" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="888" cy="422" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="971" cy="469" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="874" cy="516" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="957" cy="457" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="860" cy="504" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <circle cx="943" cy="445" r="2" fill="#64748b" fill-opacity="0.6"/>
+  <text x="852" y="392" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">分子内向量：短（多在 10 Å 内）</text>
+  <text x="935" y="546" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">交叉向量：长，由堆积与对称决定</text>
+  <rect x="1046" y="386" width="170" height="150" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="1046" y="449" width="170" height="24" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <circle cx="1080" cy="456.5" r="5.5" fill="#d97706" fill-opacity="0.8" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="1134.4" cy="461" r="5.5" fill="#d97706" fill-opacity="0.8" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="1182" cy="453.5" r="5.5" fill="#d97706" fill-opacity="0.8" stroke="#92400e" stroke-width="1.2"/>
+  <text x="1131" y="378" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">Harker 截面（C2 的 v = 0 面）</text>
+  <text x="1131" y="552" font-size="9" fill="#64748b" text-anchor="middle">二重轴联系的对：向量 (2x, 0, 2z)</text>
+  <text x="730" y="566" font-size="10.5" fill="#475569">对称性的红利：特殊截面峰稀疏、信噪比高——C2 中经二重轴联系的原子对向量必落 v = 0 截面，</text>
+  <text x="730" y="581" font-size="10.5" fill="#475569">沿 2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 螺旋轴的对向量落在 Harker 线上；读蛋白 Patterson 从 Harker 截面入手，第 8 章定位重原子靠的正是它。</tspan></text>
+  <text x="730" y="596" font-size="10.5" fill="#475569">取向信息在峰海里幸存：模型自向量集合与晶体分子内向量集合取向一致时高度重叠——旋转函数的全部本钱。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、旋转函数：在取向空间对暗号（Rossmann 与 Blow 1962）</text>
+  <rect x="60" y="630" width="150" height="130" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="135" y="622" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">晶体 Patterson（分子内向量）</text>
+  <circle cx="97" cy="701.8" r="4.4" fill="#075985" fill-opacity="0.85"/>
+  <circle cx="121" cy="676.3" r="4.4" fill="#075985" fill-opacity="0.85"/>
+  <circle cx="145" cy="689.9" r="4.4" fill="#075985" fill-opacity="0.85"/>
+  <circle cx="165" cy="713.7" r="4.4" fill="#075985" fill-opacity="0.85"/>
+  <circle cx="129" cy="723.9" r="4.4" fill="#075985" fill-opacity="0.85"/>
+  <rect x="240" y="630" width="150" height="130" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="315" y="622" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">模型 Patterson（待转向）</text>
+  <circle cx="280.12157955517" cy="678.4550374048877" r="4.4" fill="#4c1d95" fill-opacity="0.85"/>
+  <circle cx="314.4710591087722" cy="671.6459806128884" r="4.4" fill="#4c1d95" fill-opacity="0.85"/>
+  <circle cx="326.1020638853656" cy="696.6595714763941" r="4.4" fill="#4c1d95" fill-opacity="0.85"/>
+  <circle cx="328.5509961978284" cy="727.6505819557085" r="4.4" fill="#4c1d95" fill-opacity="0.85"/>
+  <circle cx="293.3248131204967" cy="715.0348764343235" r="4.4" fill="#4c1d95" fill-opacity="0.85"/>
+  <line x1="214" y1="695" x2="236" y2="695" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="225" y="718" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700" font-style="italic">Ω</text>
+  <rect x="440" y="608" width="230" height="92" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="440" y1="700" x2="440" y2="706" stroke="#475569" stroke-width="1.8"/>
+  <line x1="555" y1="700" x2="555" y2="706" stroke="#475569" stroke-width="1.8"/>
+  <text x="555" y="722" font-size="13" fill="#64748b" text-anchor="middle">正确取向</text>
+  <line x1="670" y1="700" x2="670" y2="706" stroke="#475569" stroke-width="1.8"/>
+  <text x="555" y="744" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">取向 Ω</text>
+  <text x="555" y="596" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">R(Ω)：互相关积分</text>
+  <path d="M440,688.9599998700407 C440.6,688.2 442.6,684.7 443.8333333333333,684.608885342841 C445.1,684.5 446.4,687.0 447.6666666666667,688.2574109095854 C448.9,689.5 450.2,692.9 451.5,691.9711797317731 C452.8,691.1 454.1,684.3 455.3333333333333,682.7653614461939 C456.6,681.2 457.9,682.4 459.1666666666667,682.8534301483037 C460.4,683.3 461.7,685.1 463,685.2595684478376 C464.3,685.4 465.6,682.7 466.8333333333333,683.7777343750764 C468.1,684.8 469.4,690.5 470.6666666666667,691.6246421058215 C471.9,692.7 473.2,691.6 474.5,690.2394306637373 C475.8,688.9 477.1,683.8 478.3333333333333,683.6440913894722 C479.6,683.5 480.9,688.4 482.1666666666667,689.4917711714336 C483.4,690.6 484.7,690.0 486,690.422483840428 C487.3,690.9 488.6,690.9 489.8333333333333,692.0934776499598 C491.1,693.3 492.4,698.2 493.6666666666667,697.81088370796 C494.9,697.4 496.2,691.6 497.5,689.8187019074702 C498.8,688.0 500.1,686.6 501.3333333333333,686.9549620092141 C502.6,687.3 503.9,691.7 505.1666666666667,691.7958105507171 C506.4,691.9 507.7,688.3 509,687.6296951222474 C510.3,687.0 511.6,688.7 512.8333333333334,688.0450152935349 C514.1,687.4 515.4,687.0 516.6666666666666,683.8768135538056 C517.9,680.7 519.2,672.2 520.5,669.242205550557 C521.8,666.3 523.1,667.7 524.3333333333334,666.4023792866305 C525.6,665.1 526.9,664.5 528.1666666666666,661.6540064738359 C529.4,658.8 530.7,652.6 532,649.535051022094 C533.3,646.5 534.6,646.9 535.8333333333334,643.2219153224231 C537.1,639.6 538.4,632.5 539.6666666666666,627.5707688343773 C540.9,622.6 542.2,615.8 543.5,613.6741007710689 C544.8,611.5 546.1,615.3 547.3333333333334,614.7259199983436 C548.6,614.1 549.9,611.1 551.1666666666666,610.0071071522366 C552.4,608.9 553.7,607.8 555,608.3658060151431 C556.3,608.9 557.6,612.7 558.8333333333334,613.2439266751795 C560.1,613.8 561.4,610.0 562.6666666666666,611.594386670362 C563.9,613.2 565.2,618.0 566.5,622.762929290424 C567.8,627.5 569.1,636.3 570.3333333333334,640.2907941932216 C571.6,644.3 572.9,643.9 574.1666666666667,646.8308550683635 C575.4,649.8 576.7,655.0 578,658.0428757335859 C579.3,661.1 580.6,663.7 581.8333333333334,665.049357716466 C583.1,666.4 584.4,663.9 585.6666666666666,666.3145643992038 C586.9,668.7 588.2,676.4 589.5,679.5644274659759 C590.8,682.7 592.1,684.7 593.3333333333333,685.1487016228932 C594.6,685.6 595.9,682.1 597.1666666666666,682.1952415234898 C598.4,682.2 599.7,685.6 601,685.4692156028239 C602.3,685.3 603.6,681.9 604.8333333333334,681.1618894800057 C606.1,680.5 607.4,679.7 608.6666666666666,681.2202134358847 C609.9,682.7 611.2,689.5 612.5,690.3396854695883 C613.8,691.2 615.1,687.6 616.3333333333334,686.5200789095252 C617.6,685.5 618.9,684.1 620.1666666666666,684.1067652470209 C621.4,684.1 622.7,686.6 624,686.3526251635186 C625.3,686.1 626.6,681.8 627.8333333333334,682.3357236733649 C629.1,682.8 630.4,687.2 631.6666666666667,689.3007284755263 C632.9,691.4 634.2,695.3 635.5,695.1469960362894 C636.8,695.0 638.1,689.4 639.3333333333334,688.6527882661422 C640.6,687.9 641.9,690.0 643.1666666666666,690.3944189066224 C644.4,690.7 645.7,690.9 647,690.7231762909332 C648.3,690.5 649.6,688.0 650.8333333333333,689.1809098466878 C652.1,690.4 653.4,696.8 654.6666666666666,697.8031721248793 C655.9,698.8 657.2,696.8 658.5,695.189900324342 C659.8,693.6 661.1,688.7 662.3333333333334,688.0011900114611 C663.6,687.3 664.9,690.8 666.1666666666666,690.6990140877881 C667.4,690.6 669.4,688.0 670,687.4682765603429" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="561" y="619.04" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">尖峰</text>
+  <text x="60" y="790" font-size="10.5" fill="#475569">R(Ω) = ∫ P_xtal(r)·P_model(r, Ω) dr——模型绕原点转动 Ω，取两者在限定向量半径内（典型 10 Å 以内，聚焦分子内向量）</text>
+  <text x="60" y="805" font-size="10.5" fill="#475569">的乘积积分；Ω 扫遍取向空间（三个欧拉角网格化），正确取向处向量对齐、乘积出现尖峰。</text>
+  <text x="60" y="852" font-size="10.5" fill="#64748b">快速旋转函数（Crowther 1972 年）：两个 Patterson 各按球谐函数展开，取向旋转对应球谐系数的维格纳旋转，</text>
+  <text x="60" y="867" font-size="10.5" fill="#64748b">互相关在谐波域逐阶相乘——计算量骤降数个数量级，全空间细网格搜索成为日常。网格须细于峰宽（取向峰宽约数度量级），</text>
+  <text x="60" y="882" font-size="10.5" fill="#64748b">步长常从 2–5° 起步、峰附近再加密。旋转函数输出按峰高排序的取向列表，前几名（常取前 10–100 个）交平移函数逐一甄别。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、平移函数：取向定了找座位（Crowther 与 Blow 1967）</text>
+  <rect x="730" y="622" width="130" height="54" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="795" y="644" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">候选取向</text>
+  <text x="795" y="664" font-size="9.5" fill="#475569" text-anchor="middle">前 10–100 名</text>
+  <rect x="886" y="622" width="140" height="54" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="956" y="644" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">平移函数</text>
+  <text x="956" y="664" font-size="9.5" fill="#475569" text-anchor="middle">交叉向量吻合</text>
+  <rect x="1052" y="622" width="130" height="54" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.7"/>
+  <text x="1117" y="644" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">packing 闸门</text>
+  <text x="1117" y="664" font-size="9.5" fill="#475569" text-anchor="middle">穿模即出局</text>
+  <rect x="1206" y="622" width="140" height="54" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.7"/>
+  <text x="1276" y="644" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">LLG／TFZ 裁决</text>
+  <text x="1276" y="664" font-size="9.5" fill="#475569" text-anchor="middle">交第 3 节复核</text>
+  <line x1="862" y1="649" x2="884" y2="649" stroke="#475569" stroke-width="1.7" marker-end="url(#arr-ink)"/>
+  <line x1="1028" y1="649" x2="1050" y2="649" stroke="#475569" stroke-width="1.7" marker-end="url(#arr-ink)"/>
+  <line x1="1184" y1="649" x2="1204" y2="649" stroke="#475569" stroke-width="1.7" marker-end="url(#arr-ink)"/>
+  <text x="730" y="700" font-size="10.5" fill="#475569">逻辑与旋转函数对偶：旋转只看分子内向量（与平移无关），平移专看交叉向量——分子落位正确时，</text>
+  <text x="730" y="715" font-size="10.5" fill="#475569">它与其对称等效分子之间的向量由空间群对称操作唯一确定，计算的交叉向量图与晶体 Patterson 的长向量区吻合。</text>
+  <text x="730" y="730" font-size="10.5" fill="#475569">现代程序用基于结构因子相关的 FFT 平移函数（TFFC、Phaser 的 MLTF），把三方向平移搜索压缩为一次倒易空间卷积。</text>
+  <rect x="730" y="790" width="88" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="774" y="817.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">步骤</text>
+  <rect x="818" y="790" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="877" y="817.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">输入</text>
+  <rect x="936" y="790" width="122" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="997" y="817.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">搜索变量</text>
+  <rect x="1058" y="790" width="122" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1119" y="817.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">判据</text>
+  <rect x="1180" y="790" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="817.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要陷阱</text>
+  <rect x="730" y="834" width="88" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="774" y="854.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">旋转搜索</text>
+  <rect x="818" y="834" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="877" y="854.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">两条 Patterson</text>
+  <rect x="936" y="834" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="997" y="854.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">取向（三个欧拉角）</text>
+  <rect x="1058" y="834" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1119" y="854.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">旋转峰高排序</text>
+  <rect x="1180" y="834" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="854.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">柔性域使峰弥散</text>
+  <rect x="730" y="864" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="864" width="88" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="774" y="884.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">平移搜索</text>
+  <rect x="818" y="864" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="877" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">固定取向的模型</text>
+  <rect x="936" y="864" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="997" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">平移（三个分量）</text>
+  <rect x="1058" y="864" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1119" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">平移峰高、TFZ</text>
+  <rect x="1180" y="864" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">NCS 干扰出假峰</text>
+  <rect x="730" y="894" width="88" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="774" y="914.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">packing 检查</text>
+  <rect x="818" y="894" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="877" y="914.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">候选解</text>
+  <rect x="936" y="894" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="997" y="914.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="1058" y="894" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1119" y="914.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">分子不穿模</text>
+  <rect x="1180" y="894" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="914.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">伪对称致漏检</text>
+  <rect x="730" y="924" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="924" width="88" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="774" y="944.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">复核精修</text>
+  <rect x="818" y="924" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="877" y="944.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">完整刚体解</text>
+  <rect x="936" y="924" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="997" y="944.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="1058" y="924" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1119" y="944.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">LLG／TFZ、R 因子</text>
+  <rect x="1180" y="924" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="944.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">边缘值假解</text>
+  <text x="730" y="942" font-size="10" fill="#64748b">分诊口诀：旋转都无峰，先查模型质量与数据指标化；旋转有峰而平移失败，嫌疑落在 NCS 与伪平移；两步都成而精修不动，</text>
+  <text x="730" y="956" font-size="10" fill="#64748b">轮到空间群受审。</text>
+</svg>

@@ -1,0 +1,37 @@
+[
+  {
+    "sectionId": "structural-biology-ch11-s2",
+    "slug": "sb-ch11-s2-resonance-assignment",
+    "caption": "共振指定沿主链「串珠」完成：HNCO 交出前一残基羰基，HNCA 给 Cα(i) 强峰与 Cα(i−1) 弱峰，HNCACB 与 CBCA(CO)NH 成对交出 Cα/Cβ——相邻酰胺峰共享同一组 Cα/Cβ(i−1) 即主链邻居；Ala Cβ 约 19 ppm、Gly Cα 低至约 45 ppm 等氨基酸指纹逐段校对，百残基约三四周、覆盖率九成以上，位移表存 BMRB。NOE 强度随距离六次方衰减：强中弱约 2.7、3.3、5.0 Å，上限 5–6 Å，混合时间 80–150 ms 防自旋扩散；长程约束仅两三成——「局部准、全局松」，由数十至一二百枚 RDC（几到几十 Hz）正交互补全局取向，另有数十条氢键（约 2.0 Å）与全残基 TALOS-N 预测。"
+  },
+  {
+    "sectionId": "structural-biology-ch11-s3",
+    "slug": "sb-ch11-s3-annealing-ensemble",
+    "caption": "数千条距离上限与角度区间变成坐标的路径：模拟退火在扭转角空间进行——键长键角冻结、自由度降两个数量级，一次「高温随机化（虚拟 8000–10000 K）—慢冷—能量最小化」在当代工作站约数分钟，显式水盒子精修收尾；同一套约束独立算约 100 个构象、按能量与违约数择优 10–20 个成系综入 PDB。CYANA（Güntert 1997）以 CANDID 网络锚定迭代 7–8 轮自动纠错，Xplor-NIH 与 ARIA 同路。质量标准：大于 0.3–0.5 Å 的 NOE 违约清零、违约均方根约 0.05 Å、有序区骨架 RMSD 小于 0.5 Å 为好、Ramachandran 优势加许可区大于九成；RMSD 只报精度，RDC 与交叉验证才是准确度试金石。"
+  },
+  {
+    "sectionId": "structural-biology-ch11-s4",
+    "slug": "sb-ch11-s4-relaxation-dispersion",
+    "caption": "R1（1/T1）、R2（1/T2）与异核 NOE 三参数经模型自由分析（Lipari 与 Szabo 1982）折成序参量 S² 与有效相关时间 τe：刚性核心 S² 约 0.8–0.9、活性环与末端低于 0.4，一张逐残基条形图即柔性高分辨地图。更慢一档由 CPMG 弛豫色散覆盖约 0.2–10 ms（kex 约 100–5000 s⁻¹），拟合隐藏态占有率 pB 与交换速率；CEST 覆盖约 10–500 ms、稀态占有率低至约 1% 仍可见——稀态先于配体存在即构象选择的直接证据。PRE 以 MTSL 标记读约 15–35 Å 长程距离并对约 1% 瞬态敏感；氢交换保护因子达 10⁶–10⁸ 折算局部稳定性；化学位移滴定 Kd 最佳量程微摩尔至毫摩尔，SAR by NMR 与 STD 支撑片段筛选。"
+  },
+  {
+    "sectionId": "structural-biology-ch12-s1",
+    "slug": "sb-ch12-s1-validation-onedep",
+    "caption": "wwPDB（2003 年由 RCSB、PDBe 与 PDBj 组建）为每笔投递自动生成验证报告：几何线查 clashscore（每 1000 原子中重叠不小于 0.4 Å 的严重冲突数，Chen 等 2010）与 Ramachandran 统计（优势区应大于 98%、离区宜小于 0.2%），密度线查 Rwork/Rfree、实空间残差或 EM 的 map-model FSC 与 EMRinger，多数指标附同分辨率档百分位、红黄绿三色分档。投稿自查四类高频：序列一致、配体化学字典、金属配位几何（Mg 至配位氧约 2.0–2.2 Å 六配位）、occupancy 与备择构象。OneDep 三清单：X 射线交坐标加结构因子、冷冻电镜交坐标加密度图并归档 EMPIAR、NMR 化学位移归 BMRB；PDB_REDO 批量再精修使存量平均 Rfree 下降约 2 个百分点。"
+  },
+  {
+    "sectionId": "structural-biology-ch12-s2",
+    "slug": "sb-ch12-s2-integrative-toolbox",
+    "caption": "SAXS 在溶液中读整体形状：Guinier 区（q·Rg 小于 1.3）以 ln I 对 q² 直线斜率给回转半径 Rg，P(r) 反演给 Dmax，I(0) 与 Porod 体积给分子量；DAMMIN/DAMMIF 珠子包络约 20 次取平均、精度约 1–2 nm；无序链 Rg 约随残基数 0.5 次幂增长（Kohn 等 2004），快于折叠球的约 0.38 次幂。纳米距离探针互补成尺：smFRET 约 3–8 nm（R0 约 5–6 nm）、DEER 约 1.5–8 nm 读距离分布、PRE 15–35 Å、DSS/BS³ 交联赖氨酸 Cα 间距上限约 30 Å（间隔臂约 11.4 Å），HDX-MS 以逐肽保护图谱定位表位与变构路径。IMP 四步（表征、评分、采样、分析）把多源约束拧成带约 2 nm 定位精度的排布——核孔复合物（酵母约 55 MDa、人约 110 MDa，Alber 等 2007）由此成名。"
+  },
+  {
+    "sectionId": "structural-biology-ch12-s3",
+    "slug": "sb-ch12-s3-alphafold-confidence",
+    "caption": "CASP14（2020 年）上 AlphaFold2 对最难的自由建模目标中位 GDT_TS 达约 92.4（CASP13 最佳尚在 60 上下），主链偏差常在 1 Å 内。三要素：MSA 共进化先验（深度是准确度第一变量）、Evoformer 双轨注意力（MSA 与残基对表征互相投喂数十层）、端到端结构模块（不变点注意力直接输出坐标、三轮回收）。置信度体系：pLDDT 大于 90 主链侧链皆可靠、70–90 主链可靠侧链存疑、小于 50 常为内在无序区；PAE 读域间与界面相对排布误差——域内低而域间高即「各自准、拼接存疑」。AlphaFold DB 2022 年 7 月扩容至约 2 亿条；AF-Multimer 异源复合物约三分之二可达可接受界面；ESMFold 免 MSA 快约 60 倍、放出约 6.17 亿条——「计算覆盖折叠，实验负责构象与机制」。"
+  },
+  {
+    "sectionId": "structural-biology-ch12-s4",
+    "slug": "sb-ch12-s4-decision-frontiers",
+    "caption": "方法选择五问先行：分子量、结晶性、均一性、动力学、时间分辨——小于 30 kDa 且以动力学为核心选 NMR（TROSY 加氘代至约 100 kDa），可结晶且需高通量配体筛选选 X 射线晶体学，大于 100–300 kDa、难结晶或构象不均一选冷冻电镜，拓扑与动态拼图交给 SAXS、FRET、XL-MS 加整合建模；先算后验成默认次序，均一性不合格一票否决。前沿：串晶加混合-喷射（Olmos 等 2018 捕获 β-内酰胺酶酰化中间体）与 XFEL 数十飞秒脉冲支撑毫秒到飞秒时间分辨；cryo-ET 加亚断层平均在合适体系达约 3–4 Å；MicroED 使微米级晶体可解埃级结构（Gonen 组 2013 溶菌酶约 2.9 Å）；AlphaFill、ModelAngelo 与 cryoDRGN 接管 AI 全流程——结构生物学从描绘静态走向拍摄动态。"
+  }
+]

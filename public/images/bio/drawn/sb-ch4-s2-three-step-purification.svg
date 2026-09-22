@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">多步纯化流程的设计：捕获、精纯与终纯</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">亲和捕获 60–90%、IEX 管深、SEC 管纯匀；TEV 1:50 去标签；总收率 70%×80%×85% 约 48%，1 L 表达 20–50 mg 终得 10–25 mg</text>
+  <rect x="30" y="132" width="1340" height="320" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、捕获—中间纯化—精纯：三步流程总览</text>
+  <rect x="50" y="184" width="240" height="128" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.8"/>
+  <text x="170" y="208" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">澄清粗提液</text>
+  <text x="64" y="232" font-size="9.8" fill="#475569">来自第 1 节裂解澄清</text>
+  <text x="64" y="249.5" font-size="9.8" fill="#475569">体积数百毫升</text>
+  <text x="64" y="267" font-size="9.8" fill="#475569">A<tspan dy="2.2" font-size="7.1">260</tspan><tspan dy="-2.2">/A</tspan><tspan dy="2.2" font-size="7.1">280</tspan><tspan dy="-2.2"> 监控核酸</tspan></text>
+  <text x="64" y="284.5" font-size="9.8" fill="#475569">4 °C 上样</text>
+  <rect x="316" y="184" width="240" height="128" rx="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="436" y="208" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">① 亲和捕获（Ni-NTA）</text>
+  <text x="330" y="232" font-size="9.8" fill="#475569">介质容量 5–10 mg/mL</text>
+  <text x="330" y="249.5" font-size="9.8" fill="#475569">洗涤 20 mM 咪唑</text>
+  <text x="330" y="267" font-size="9.8" fill="#475569">洗脱 20/40/250 mM 分步</text>
+  <text x="330" y="284.5" font-size="9.8" fill="#475569">收率典型 60–90%</text>
+  <rect x="582" y="184" width="240" height="128" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="702" y="208" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">② TEV 切标签与逆亲和</text>
+  <text x="596" y="232" font-size="9.8" fill="#475569">TEV 1:50，4 °C 过夜</text>
+  <text x="596" y="249.5" font-size="9.8" fill="#475569">识别 ENLYFQ/G 接口</text>
+  <text x="596" y="267" font-size="9.8" fill="#475569">逆亲和一步三分离</text>
+  <text x="596" y="284.5" font-size="9.8" fill="#475569">S219V 耐突变体</text>
+  <rect x="848" y="184" width="240" height="128" rx="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="968" y="208" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">③ 离子交换精纯</text>
+  <text x="862" y="232" font-size="9.8" fill="#475569">Q（pI 5–7）或 SP（碱性）</text>
+  <text x="862" y="249.5" font-size="9.8" fill="#475569">pH 偏离 pI 0.5–1 单位</text>
+  <text x="862" y="267" font-size="9.8" fill="#475569">上样离子强度低于 50 mM</text>
+  <text x="862" y="284.5" font-size="9.8" fill="#475569">目标峰 100–400 mM 洗出</text>
+  <rect x="1114" y="184" width="240" height="128" rx="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1234" y="208" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">④ SEC 终纯</text>
+  <text x="1128" y="232" font-size="9.8" fill="#475569">Superdex 200 Increase</text>
+  <text x="1128" y="249.5" font-size="9.8" fill="#475569">10/300 制备柱</text>
+  <text x="1128" y="267" font-size="9.8" fill="#475569">单体峰占比大于 95%</text>
+  <text x="1128" y="284.5" font-size="9.8" fill="#475569">同步置换终缓冲液</text>
+  <line x1="292" y1="248" x2="314" y2="248" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="558" y1="248" x2="580" y2="248" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="824" y1="248" x2="846" y2="248" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1090" y1="248" x2="1112" y2="248" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="183.48339999999996" y="335.075" width="313.0332000000001" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="340" y="347.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">三步分工：亲和管「快」 · IEX 管「深」 · SEC 管「纯与匀」</text>
+  <rect x="852.4521" y="335.075" width="335.0958" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1020" y="347.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">结晶级判据：纯度 &gt;95% · 单体峰 &gt;95% · 可溶可浓（5–20 mg/mL）</text>
+  <text x="50" y="382" font-size="10.5" fill="#475569">现场纪律：柱子以 5–10 个柱体积平衡；上样流速 0.5–1 mL/min（1 mL 柱）让结合接近平衡；冲洗不少于 10 个柱体积压低非特异背景；每步流出液留样走胶——「目标出现在流穿」是亲和最经典的失败，多源于咪唑竞争过强、pH 偏离或标签被降解。</text>
+  <text x="50" y="414" font-size="10.5" fill="#64748b">变体路线：无标签蛋白改用底物类似物亲和柱或染料柱；Strep 标签以生物素洗脱避开咪唑；降解敏感者把 SEC 提前、IEX 收尾，或以两次 SEC 完成——「三步」是模板而非教条，任何重组都回检查点表逐项验证。</text>
+  <rect x="30" y="470" width="660" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="492.84" font-size="19" fill="#475569" font-weight="700">二、收率的链式核算</text>
+  <rect x="152.22945000000004" y="516.65" width="195.54109999999994" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="250" y="529.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">总收率 = 70% × 80% × 85% ≈ 48%</text>
+  <rect x="83.5" y="545" width="48" height="105" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="107.5" y="536" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">100%</text>
+  <text x="107.5" y="670" font-size="12.5" fill="#64748b" text-anchor="middle">表达量</text>
+  <rect x="158.5" y="576.5" width="48" height="73.5" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="182.5" y="567.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">70%</text>
+  <text x="182.5" y="670" font-size="12.5" fill="#64748b" text-anchor="middle">亲和捕获</text>
+  <rect x="233.5" y="591.2" width="48" height="58.800000000000004" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="257.5" y="582.2" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">56%</text>
+  <text x="257.5" y="670" font-size="12.5" fill="#64748b" text-anchor="middle">切标签</text>
+  <rect x="308.5" y="600.02" width="48" height="49.980000000000004" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="332.5" y="591.02" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 48%</text>
+  <text x="332.5" y="670" font-size="12.5" fill="#64748b" text-anchor="middle">IEX 加 SEC</text>
+  <text x="70" y="692" font-size="9.5" fill="#64748b">各级收率连乘，损耗只增不减</text>
+  <text x="400" y="516" font-size="10" fill="#475569">从 1 L 大肠杆菌表达（典型目标表达量 20–50 mg）出发，</text>
+  <text x="400" y="530" font-size="10" fill="#475569">最终可得约 10–25 mg 纯蛋白——足够一轮稀疏矩阵筛选</text>
+  <text x="400" y="544" font-size="10" fill="#475569">（约需 0.5–1 mg）。</text>
+  <text x="400" y="580" font-size="10" fill="#475569">收率表逐批记录并求均值：连续三批波动超过 ±15%，</text>
+  <text x="400" y="594" font-size="10" fill="#475569">提示上游表达或裂解存在不受控变量——诱导密度、</text>
+  <text x="400" y="608" font-size="10" fill="#475569">诱导时长与裂解完全度是前三大嫌疑。</text>
+  <rect x="730" y="470" width="640" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="492.84" font-size="19" fill="#475569" font-weight="700">三、浓缩与缓冲液置换</text>
+  <rect x="819.7056" y="515.075" width="140.5888" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="890" y="527.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">超滤浓缩目标 5–20 mg/mL</text>
+  <rect x="1087.7589" y="515.075" width="144.48220000000003" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1160" y="527.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">MWCO 取分子量 1/3 至 1/2</text>
+  <rect x="822.15" y="547.075" width="135.7" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="890" y="559.78" font-size="10.5" fill="#1e293b" text-anchor="middle">30 kDa 蛋白配 10 kDa 管</text>
+  <rect x="1069.785" y="547.075" width="180.43" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1160" y="559.78" font-size="10.5" fill="#1e293b" text-anchor="middle">3,000–5,000 g 分次短旋 5–10 min</text>
+  <text x="746" y="588" font-size="10" fill="#475569">缓冲液置换：PD-10 或 G-25 脱盐柱一步完成，也可在超滤管内反复稀释—浓缩 3–4 轮；顺序有讲究——先置换到低盐再浓缩，</text>
+  <text x="746" y="602" font-size="10" fill="#475569">避免把高盐溶液直接带进结晶筛选。浓度测定首选 A<tspan dy="2.2" font-size="7.2">280</tspan><tspan dy="-2.2">（消光系数由序列计算），Bradford 与 BCA 受去垢剂与还原剂干扰须校正。</tspan></text>
+  <text x="746" y="660" font-size="10" fill="#475569">附加工序：治疗用途以 Triton X-114 相分离（高于约 20 °C 去垢剂相富集内毒素）加除内毒素介质，把内毒素压至 0.1 EU/mg 以下；</text>
+  <text x="746" y="673.5" font-size="10" fill="#475569">膜蛋白全程维持去垢剂高于 CMC 的 5–10 倍（DDM、LMNG），浓缩后以 SEC 复核胶束单体峰。</text>
+  <rect x="30" y="730" width="1340" height="220" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="752.84" font-size="19" fill="#475569" font-weight="700">四、每步检查点与典型失败模式</text>
+  <rect x="50" y="766" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="793.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">步骤</text>
+  <rect x="190" y="766" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="275" y="793.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">核心任务</text>
+  <rect x="360" y="766" width="270" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="495" y="793.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">关键参数</text>
+  <rect x="630" y="766" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="793.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">检查点</text>
+  <rect x="890" y="766" width="460" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1120" y="793.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型失败模式</text>
+  <rect x="50" y="810" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="832.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">亲和捕获</text>
+  <rect x="190" y="810" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="275" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">富集与减体积</text>
+  <rect x="360" y="810" width="270" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="495" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">咪唑 20/40/250 mM 分步梯度</text>
+  <rect x="630" y="810" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">SDS-PAGE、A<tspan dy="2.3" font-size="7.6">280</tspan><tspan dy="-2.3"> 回收率</tspan></text>
+  <rect x="890" y="810" width="460" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1120" y="832.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">标签折叠不良、介质容量超载</text>
+  <rect x="50" y="844" width="1300" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="844" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="866.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">TEV 切除与逆亲和</text>
+  <rect x="190" y="844" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="275" y="866.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">去标签</text>
+  <rect x="360" y="844" width="270" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="495" y="866.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">TEV 1:50，4 °C 过夜或室温 2–3 h</text>
+  <rect x="630" y="844" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="866.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">切点完整性（质谱验证）</text>
+  <rect x="890" y="844" width="460" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1120" y="866.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">切除不完全、蛋白酶自降解</text>
+  <rect x="50" y="878" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="900.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">离子交换精纯</text>
+  <rect x="190" y="878" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="275" y="900.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">除核酸与降解片段</text>
+  <rect x="360" y="878" width="270" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="495" y="900.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">pH 偏离 pI 0.5–1 个单位</text>
+  <rect x="630" y="878" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="900.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">A<tspan dy="2.3" font-size="7.6">260</tspan><tspan dy="-2.3">/A</tspan><tspan dy="2.3" font-size="7.6">280</tspan><tspan dy="-2.3">、纯度走胶</tspan></text>
+  <rect x="890" y="878" width="460" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1120" y="900.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">目的不挂柱或洗脱峰过宽</text>
+  <rect x="50" y="912" width="1300" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="912" width="140" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="934.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">SEC 终纯</text>
+  <rect x="190" y="912" width="170" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="275" y="934.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">均一化与换液</text>
+  <rect x="360" y="912" width="270" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="495" y="934.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Superdex 200 Increase 10/300</text>
+  <rect x="630" y="912" width="260" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="760" y="934.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">单体峰占比大于 95%</text>
+  <rect x="890" y="912" width="460" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1120" y="934.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">聚合体拖尾、上样体积超载</text>
+</svg>

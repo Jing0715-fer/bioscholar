@@ -356,10 +356,10 @@ export function Dashboard() {
         </div>
       </div>
 
-      {/* 学习热力图：GitHub 风格活动日历 */}
-      <section className="mt-8" aria-label="学习热力图">
+      {/* 学习热力图：GitHub 风格活动日历（默认折叠为摘要行，节省版面） */}
+      <section className="mt-6" aria-label="学习热力图">
         <Card className="min-w-0 shadow-none">
-          <CardContent className="px-6">
+          <CardContent className="px-6 py-4 sm:px-6">
             <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <div className="flex items-center gap-2.5">
@@ -380,12 +380,12 @@ export function Dashboard() {
                 Learning Activity · 近 18 周
               </p>
             </div>
-            <p className="mt-1.5 text-xs text-muted-foreground">
-              完成小节、答题、笔记与卡片复习四类学习行为按日汇总
-            </p>
-            <div className="bio-rule mt-3" aria-hidden />
-            <div className="mt-4">
-              <ActivityHeatmap days={heatmapDays} summary={heatmapSummary} />
+            <div className="mt-2.5">
+              <ActivityHeatmap
+                days={heatmapDays}
+                summary={heatmapSummary}
+                defaultCollapsed
+              />
             </div>
           </CardContent>
         </Card>

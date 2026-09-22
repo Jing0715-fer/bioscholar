@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">人工智能与自动化：深度学习管线与实时反馈</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">Topaz正-未标注学习（Bepler2019）与crYOLO毫秒级挑选；cryoDRGN（Zhong2021）变分自编码器把构象空间流形化成「分子电影」雏形；Leginon/SerialEM/EPU</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">过夜收集，cryoSPARCLive把反馈周期压到小时；AlphaFold2与电镜双向流动</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、颗粒挑选三代：从模板到深度学习</text>
+  <rect x="60" y="186" width="230" height="180" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="66" cy="192" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="212.7527691974974" cy="233.33380398536974" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="116.64162142590612" cy="298.5864931414544" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="181.30613552925934" cy="231.02722750800604" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="195.64032209168" cy="207.40857860864344" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="259.4622671210236" cy="224.84012187993358" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="236.37603235906136" cy="342.40915465723083" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="209.06048121643835" cy="292.5958949974738" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="219.5276135521999" cy="209.96373044876964" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="159.04134375650028" cy="213.90301217161323" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="275.83524393067637" cy="335.37142830644734" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="230.68658434374083" cy="244.74199980885896" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="203.72001580676442" cy="236.97767201601528" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="193.4898860788744" cy="280.9053036075784" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="125.48768225422828" cy="240.27046113132565" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="89.84201731348003" cy="194.6421568079386" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="208.52313860037248" cy="236.97740942203382" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="81.35557422204147" cy="193.7596292293165" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="79.03137504329788" cy="301.86905231432684" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="248.4534132341396" cy="246.01238028273656" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="119.77616174610739" cy="294.3506500890653" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="257.96106419727585" cy="290.16618456106517" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="260.52118030739075" cy="268.0333071420755" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="272.25699605217415" cy="349.7564342752821" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="168.7535628437763" cy="291.604061840495" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="67.71229729622155" cy="241.52610475273104" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="278.4108058097336" cy="258.66401338839205" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="89.18935851883361" cy="268.8770858022908" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="132.86455629415286" cy="250.4063299794543" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="67.46107480669161" cy="348.36139932296646" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="156.06702249786758" cy="335.95550768794783" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="257.8764785079329" cy="216.98778250081523" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="184.63131453614915" cy="221.82803915404475" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="253.27405861899024" cy="341.8529331746031" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="127.05281340895453" cy="251.19273463536229" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="251.1258927804447" cy="255.84544896623993" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="234.3720399475278" cy="240.39007800894615" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="233.13035713715362" cy="198.41136138524416" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="166.27294668251852" cy="233.16655296924" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="68.01867854049488" cy="316.31397742913396" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="268.9603755194985" cy="320.5074381708837" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="160.28864753601374" cy="231.8178231031343" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="140.93398291659832" cy="317.560031065208" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="282.83221988083096" cy="216.41582323050534" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="246.85490585555453" cy="253.98455089592608" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="85.27353600274364" cy="271.6067287128826" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="184.1915240879116" cy="345.85141630552243" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="90.82855585054494" cy="285.82922082744335" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="250.65458893820633" cy="259.9948363839212" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="283.1873499001231" cy="343.4245884243428" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="76.38096775325721" cy="316.60404204078804" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="241.65136667664046" cy="332.95060529676994" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="218.5170418742673" cy="204.38503566297004" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="161.2233555772691" cy="276.74231540547044" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="217.04545678824798" cy="214.69949143443955" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="265.35700659606664" cy="329.23656986928836" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="204.9073935106353" cy="295.9990775763945" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="141.473838449092" cy="332.1676970780245" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="152.16284835222177" cy="193.82694833415735" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="84.20392397092655" cy="268.4475360818615" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="212.28739406853856" cy="206.22700293061098" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="247.0713153392644" cy="294.0124134543148" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="186.41210624712403" cy="328.8721599129058" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="177.85708186215925" cy="250.27207509748405" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="160.8806588474108" cy="291.0771403123872" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="249.23081777804327" cy="217.37315765452513" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="83.82024444219132" cy="258.1952029870881" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="122.53431068031568" cy="314.0314028767316" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="73.59329008834902" cy="324.5546427058289" r="1.4" fill="#64748b" opacity="0.5"/>
+  <circle cx="150.9670965168334" cy="354.6221749350598" r="1.4" fill="#64748b" opacity="0.5"/>
+  <ellipse cx="105" cy="230" rx="13" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="85" y="210" width="40" height="40" fill="none" stroke="#059669" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <ellipse cx="180" cy="215" rx="13" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="160" y="195" width="40" height="40" fill="none" stroke="#059669" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <ellipse cx="140" cy="300" rx="13" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="120" y="280" width="40" height="40" fill="none" stroke="#059669" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <ellipse cx="235" cy="280" rx="13" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="215" y="260" width="40" height="40" fill="none" stroke="#059669" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <ellipse cx="80" cy="320" rx="13" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="60" y="300" width="40" height="40" fill="none" stroke="#059669" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="175" y="386" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">网络在陌生微图上自动画框</text>
+  <rect x="320" y="182" width="350" height="66" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="336" y="207" font-size="12" fill="#475569" font-weight="700">第一代：模板互相关</text>
+  <text x="336" y="227" font-size="9.5" fill="#475569">先验模板投影匹配——模板里有什么就挑出什么（参考偏差）</text>
+  <rect x="320" y="258" width="350" height="66" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="336" y="283" font-size="12" fill="#134e4a" font-weight="700">第二代：LoG blob</text>
+  <text x="336" y="303" font-size="9.5" fill="#475569">尺寸先验的差分高斯检测，免模板、常作初筛</text>
+  <rect x="320" y="334" width="350" height="66" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="336" y="359" font-size="12" fill="#4c1d95" font-weight="700">第三代：深度学习</text>
+  <text x="336" y="379" font-size="9.5" fill="#475569">Topaz 正-未标注学习（Bepler 等 2019）：少量确认颗粒＋一堆未标注图像，网络自行学会「什么不是颗粒」；crYOLO（Wagner 等 2019）单发检测毫秒级</text>
+  <rect x="152.035" y="443.075" width="255.93" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="280" y="455.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">训练偏见须人工复核：网络只认它见过的颗粒长相</text>
+  <rect x="513.1475" y="443.075" width="93.705" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="455.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">人工标注量骤减</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、cryoDRGN：把构象空间流形化（Zhong 2021）</text>
+  <rect x="740" y="190" width="120" height="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <rect x="740" y="220" width="120" height="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <rect x="740" y="250" width="120" height="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <rect x="740" y="280" width="120" height="24" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="800" y="326" font-size="9.5" fill="#475569" text-anchor="middle">编码器读入二维颗粒图像</text>
+  <line x1="866" y1="250" x2="912" y2="250" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="990" y="190" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">低维构象潜变量 z</text>
+  <polyline points="940,260 944.3333333333334,255.40074761622324 948.6666666666666,250.8518856040186 953,246.4032522475023 957.3333333333334,242.1035877046648 961.6666666666666,238 966,234.1374488991312 970.3333333333334,230.55825332021024 974.6666666666666,227.30162767899466 979,224.4032522475023 983.3333333333334,221.8948822334847 987.6666666666666,219.80399986372555 992,218.15351328301324 996.3333333333334,216.96150556771255 1000.6666666666666,216.24103660379598 1005,216 1009.3333333333334,216.24103660379598 1013.6666666666666,216.96150556771255 1018,218.15351328301324 1022.3333333333334,219.80399986372555 1026.6666666666667,221.89488223348468 1031,224.4032522475023 1035.3333333333333,227.30162767899463 1039.6666666666667,230.55825332021024 1044,234.1374488991312 1048.3333333333333,238 1052.6666666666667,242.1035877046648 1057,246.4032522475023 1061.3333333333333,250.8518856040186 1065.6666666666667,255.40074761622324 1070,260" fill="none" stroke="#6d28d9" stroke-width="2.6"/>
+  <circle cx="940" cy="260" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <circle cx="961.6666666666666" cy="238" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <circle cx="983.3333333333334" cy="221.8948822334847" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <circle cx="1005" cy="216" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <circle cx="1026.6666666666667" cy="221.89488223348468" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <circle cx="1048.3333333333333" cy="238" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <circle cx="1070" cy="260" r="5.5" fill="#6d28d9" fill-opacity="0.75"/>
+  <text x="1005" y="330" font-size="9.5" fill="#4c1d95" text-anchor="middle">连续构象流形</text>
+  <line x1="1078" y1="250" x2="1124" y2="250" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <ellipse cx="1156" cy="216" rx="34" ry="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 1140,214 q 10,-8 18,-2" fill="none" stroke="#4c1d95" stroke-width="2"/>
+  <ellipse cx="1286" cy="216" rx="34" ry="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 1270,214 q 10,-8 18,-2" fill="none" stroke="#4c1d95" stroke-width="2"/>
+  <ellipse cx="1156" cy="288" rx="34" ry="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 1140,286 q 10,-8 18,-2" fill="none" stroke="#4c1d95" stroke-width="2"/>
+  <ellipse cx="1286" cy="288" rx="34" ry="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 1270,286 q 10,-8 18,-2" fill="none" stroke="#4c1d95" stroke-width="2"/>
+  <text x="1230" y="326" font-size="9.5" fill="#475569" text-anchor="middle">解码器从 z 直接生成三维密度</text>
+  <text x="730" y="376" font-size="10.5" fill="#475569">变分自编码器直面连续构象变化：每张图像映射到流形上一点，</text>
+  <text x="730" y="391" font-size="10.5" fill="#475569">沿流形滑动即得「分子电影」雏形——离散分类力不从心的连续柔性在此被建模。</text>
+  <rect x="766.6275" y="457.075" width="266.745" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="900" y="469.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">假构象风险：须交叉验证（留出集与独立重构对账）</text>
+  <rect x="1062.325" y="457.075" width="235.35000000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="469.78" font-size="10.5" fill="#065f46" text-anchor="middle">自监督去噪：Topaz-Denoise、Noise2Noise 类</text>
+  <text x="1040" y="508" font-size="10" fill="#64748b" text-anchor="middle">去噪图只用于观察判读，定量测量回到原始数据</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、自动化：从过夜收集到实时反馈</text>
+  <rect x="83.72" y="617.5" width="172.56" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="170" y="629.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">Leginon 开队列（Suloway 2005）</text>
+  <line x1="272" y1="626" x2="358" y2="626" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="339.143" y="617.5" width="81.71400000000001" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="380" y="629.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">SerialEM 脚本</text>
+  <line x1="482" y1="626" x2="568" y2="626" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="550.173" y="617.5" width="79.654" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="590" y="629.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">EPU 过夜收集</text>
+  <text x="50" y="666" font-size="10.5" fill="#475569">低倍巡网、靶点定位与曝光排成无人值守的队列——深夜的显微镜自己找网格孔、自己对焦、自己曝光。</text>
+  <rect x="165.29500000000002" y="707.075" width="169.41" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="250" y="719.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">实时异常检测：坏微图当场丢弃</text>
+  <rect x="491.5175" y="707.075" width="136.965" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="719.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">「把坏数据挡在磁盘外」</text>
+  <rect x="269.43940000000003" y="755.075" width="261.12119999999993" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="400" y="767.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">cryoSPARC Live：边收边算，反馈周期压到小时级</text>
+  <path d="M 120,830 Q 360,900 600,830" fill="none" stroke="#0369a1" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arr-acc)"/>
+  <text x="360" y="892" font-size="10" fill="#475569" text-anchor="middle">采集参数（欠焦分布、冰厚、束流）随 2D 类平均质量即时回调</text>
+  <text x="360" y="936" font-size="10" fill="#64748b" text-anchor="middle">「收完才发现问题」变成当日可纠的工程迭代</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、生态侧与 AlphaFold 双向流动</text>
+  <rect x="739.7" y="611.075" width="240.59999999999997" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="860" y="623.78" font-size="10.5" fill="#075985" text-anchor="middle">RELION-5 与 Nexus：统一单颗粒与断层工作流</text>
+  <rect x="1108.29" y="611.075" width="123.41999999999999" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1170" y="623.78" font-size="10.5" fill="#075985" text-anchor="middle">EMPIAR 存档原始影像</text>
+  <rect x="798.5" y="645.075" width="123" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="860" y="657.78" font-size="10.5" fill="#075985" text-anchor="middle">盲测挑战赛复核分辨率</text>
+  <rect x="1108.5" y="645.075" width="123" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1170" y="657.78" font-size="10.5" fill="#075985" text-anchor="middle">可复现性成为社区纪律</text>
+  <rect x="760" y="706" width="240" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="880" y="728" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">AlphaFold2（Jumper 等 2021）</text>
+  <text x="880" y="748" font-size="9.5" fill="#64748b" text-anchor="middle">CASP14 横扫</text>
+  <rect x="1060" y="706" width="240" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1180" y="728" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">冷冻电镜实验结构</text>
+  <text x="1180" y="748" font-size="9.5" fill="#64748b" text-anchor="middle">占据率与构象系综</text>
+  <line x1="1006" y1="724" x2="1054" y2="724" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <line x1="1054" y1="744" x2="1006" y2="744" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="1030" y="712" font-size="9" fill="#4c1d95" text-anchor="middle">预测给可达构象</text>
+  <text x="1030" y="790" font-size="9" fill="#075985" text-anchor="middle">电镜给真实占据</text>
+  <text x="730" y="790" font-size="10.5" fill="#475569">两个方向的流动同时打开：预测模型作初始参考与建模校验，电镜密度反过来校准预测的置信与局限。</text>
+  <text x="1040" y="856" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">AI 应用矩阵：挑选、去噪、分类、连续构象、实时质检——经验被搬进权重，纪律仍在人</text>
+  <text x="1040" y="900" font-size="10" fill="#64748b" text-anchor="middle">风险清单：训练偏见、假构象、去噪脑补、指标过拟合</text>
+</svg>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">数据收集的质量评估：边收边看的闭环</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">四指标健康线：漂移小于1–2Å、CTF拟合3–5Å、每微图数十至数百颗；空孔率小于10%良好、大于30%换网；冰晶3.67Å锐环；3Å级约10<tspan dy="-5.8" font-size="12.2">5</tspan><tspan dy="5.8">颗粒、亚2Å约10</tspan><tspan dy="-5.8" font-size="12.2">6</tspan></text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、实时反馈：cryoSPARC Live 四指标</text>
+  <rect x="50" y="180" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="207.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">实时指标</text>
+  <rect x="200" y="180" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="315" y="207.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">健康线</text>
+  <rect x="430" y="180" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="207.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">越线处置</text>
+  <rect x="50" y="224" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="248.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">逐帧漂移</text>
+  <rect x="200" y="224" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="315" y="248.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">总漂移小于约 1–2 Å 且平滑</text>
+  <rect x="430" y="224" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="248.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">尖跳或持续增大即弃曝该孔</text>
+  <rect x="50" y="262" width="620" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="262" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="286.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">CTF 拟合分辨率</text>
+  <rect x="200" y="262" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="315" y="286.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">3–5 Å 以内</text>
+  <rect x="430" y="262" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="286.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">大于 6–8 Å 查冰厚与 defocus</text>
+  <rect x="50" y="300" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="324.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">每微图颗粒数</text>
+  <rect x="200" y="300" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="315" y="324.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数十至数百颗</text>
+  <rect x="430" y="300" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="324.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">长期个位数停机换网</text>
+  <rect x="50" y="338" width="620" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="338" width="150" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="362.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">2D 类平均质量</text>
+  <rect x="200" y="338" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="315" y="362.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">类别锐利、视角多样</text>
+  <rect x="430" y="338" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="550" y="362.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">优劣混判收紧挑孔标准</text>
+  <text x="50" y="394" font-size="9.5" fill="#475569">随收集同步拉取电影流，分钟级完成运动校正、CTF 拟合与颗粒挑选；滚动曲线比单点数值重要——CTF 拟合分辨率随时间缓慢下滑，</text>
+  <text x="50" y="407" font-size="9.5" fill="#475569">常提示液氮液面或冰污染渐进恶化。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、载网分级：空孔率与 A/B/C 纪律</text>
+  <rect x="750" y="190" width="100" height="100" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="764" cy="204" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="764" cy="228" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="764" cy="252" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="764" cy="276" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="788" cy="204" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="788" cy="228" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="788" cy="252" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="788" cy="276" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="812" cy="204" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="812" cy="228" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="812" cy="252" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="812" cy="276" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="836" cy="204" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="836" cy="228" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="836" cy="252" r="6.5" fill="#059669" fill-opacity="0.75" stroke="#059669" stroke-width="1.2"/>
+  <circle cx="836" cy="276" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="870" y="190" width="100" height="100" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="884" cy="204" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="884" cy="228" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="884" cy="252" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="884" cy="276" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="908" cy="204" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="908" cy="228" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="908" cy="252" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="908" cy="276" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="932" cy="204" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="932" cy="228" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="932" cy="252" r="6.5" fill="#d97706" fill-opacity="0.75" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="932" cy="276" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="956" cy="204" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="956" cy="228" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="956" cy="252" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="956" cy="276" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="990" y="190" width="100" height="100" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="1004" cy="204" r="6.5" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="1004" cy="228" r="6.5" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="1004" cy="252" r="6.5" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="1004" cy="276" r="6.5" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="1028" cy="204" r="6.5" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="1028" cy="228" r="6.5" fill="#dc2626" fill-opacity="0.75" stroke="#dc2626" stroke-width="1.2"/>
+  <circle cx="1028" cy="252" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1028" cy="276" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1052" cy="204" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1052" cy="228" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1052" cy="252" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1052" cy="276" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1076" cy="204" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1076" cy="228" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1076" cy="252" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="1076" cy="276" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="800" y="308" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">A 级：冰匀颗粒理想</text>
+  <text x="920" y="308" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="600">B 级：按需补量</text>
+  <text x="1040" y="308" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="600">C 级：直接放弃</text>
+  <text x="1225" y="182" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">空孔率分级</text>
+  <rect x="1120" y="194" width="210" height="26" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.4"/>
+  <text x="1225" y="211" font-size="10" fill="#065f46" text-anchor="middle" font-weight="600">小于 10%：良好</text>
+  <rect x="1120" y="226" width="210" height="26" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="1225" y="243" font-size="10" fill="#92400e" text-anchor="middle" font-weight="600">10–30%：收紧圈孔</text>
+  <rect x="1120" y="258" width="210" height="26" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="1225" y="275" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="600">大于 30%：直接换网</text>
+  <text x="1120" y="300" font-size="8.5" fill="#64748b">空孔＝无冰覆盖或颗粒未挂住；</text>
+  <text x="1120" y="311.5" font-size="8.5" fill="#64748b">大于 30% 说明 blot 或亲水化系统性失当。</text>
+  <text x="730" y="336" font-size="9.5" fill="#475569">冰厚定量：配能量过滤器以零损失峰与等离子体峰的对数比算出纳米级冰厚，无过滤器以通透度粗估——同一张网不同方格差异巨大，</text>
+  <text x="730" y="349" font-size="9.5" fill="#475569">按方格分桶圈选，把剂量预算省给好冰。</text>
+  <rect x="30" y="462" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="484.84" font-size="19" fill="#475569" font-weight="700">三、微晶冰与污染物：坏要坏得可解释</text>
+  <text x="160" y="497" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">微图 FFT（示意）</text>
+  <rect x="70" y="505" width="180" height="180" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="160" cy="595" r="22" fill="none" stroke="#cbd5e1" stroke-width="1.2" opacity="0.9"/>
+  <circle cx="160" cy="595" r="42" fill="none" stroke="#cbd5e1" stroke-width="1.2" opacity="0.9"/>
+  <circle cx="160" cy="595" r="82" fill="none" stroke="#cbd5e1" stroke-width="1.2" opacity="0.9"/>
+  <circle cx="160" cy="595" r="32" fill="none" stroke="#0369a1" stroke-width="1.8" opacity="0.55"/>
+  <circle cx="160" cy="595" r="72" fill="none" stroke="#0369a1" stroke-width="1.8" opacity="0.55"/>
+  <circle cx="160" cy="595" r="58" fill="none" stroke="#d97706" stroke-width="3"/>
+  <circle cx="215.40951636928514" cy="612.1401719863577" r="4" fill="#dc2626" stroke="none"/>
+  <circle cx="181.01674975964707" cy="649.0582669860992" r="4" fill="#dc2626" stroke="none"/>
+  <circle cx="125.86693519918994" cy="641.8927914215362" r="4" fill="#dc2626" stroke="none"/>
+  <circle cx="105.68551213713381" cy="574.6545727940021" r="4" fill="#dc2626" stroke="none"/>
+  <circle cx="153.49515343776682" cy="537.3659217892591" r="4" fill="#dc2626" stroke="none"/>
+  <circle cx="201.10284690889307" cy="554.0786611169173" r="4" fill="#dc2626" stroke="none"/>
+  <line x1="160" y1="688" x2="160" y2="700" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <rect x="104.899" y="705.5" width="110.20200000000001" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="160" y="717.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">3.67 Å 锐环＝六方冰</text>
+  <text x="60" y="740" font-size="9.5" fill="#475569">微晶冰在 FFT 上以离散亮点或锐环现形</text>
+  <text x="60" y="753" font-size="9.5" fill="#475569">（最强衍射环约 3.67 Å）；</text>
+  <text x="60" y="766" font-size="9.5" fill="#475569">无定形污染则背景整体抬升。</text>
+  <path d="M305,535 q20,-10 40,-2 q20,8 45,-5 q15,-8 30,0" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  <text x="400" y="578" font-size="9" fill="#475569" text-anchor="middle">纤维素纤维（滤纸/镊子屑）</text>
+  <polygon points="530,530 565,522 585,540 578,562 545,565 528,548" fill="#64748b" fill-opacity="0.45" stroke="#475569" stroke-width="1.4"/>
+  <text x="575" y="578" font-size="9" fill="#475569" text-anchor="middle">硅酸盐尘埃（不规则亮块）</text>
+  <line x1="330" y1="625" x2="360" y2="640" stroke="#dc2626" stroke-width="1.6" opacity="0.8"/>
+  <line x1="360" y1="640" x2="395" y2="628" stroke="#dc2626" stroke-width="1.6" opacity="0.8"/>
+  <line x1="340" y1="655" x2="370" y2="642" stroke="#dc2626" stroke-width="1.6" opacity="0.8"/>
+  <line x1="370" y1="642" x2="400" y2="660" stroke="#dc2626" stroke-width="1.6" opacity="0.8"/>
+  <line x1="355" y1="615" x2="375" y2="635" stroke="#dc2626" stroke-width="1.6" opacity="0.8"/>
+  <text x="400" y="678" font-size="9" fill="#475569" text-anchor="middle">变性蛋白聚合物（网状）</text>
+  <circle cx="540" cy="622" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="540" cy="641" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="540" cy="660" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="562" cy="622" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="562" cy="641" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="562" cy="660" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="584" cy="622" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="584" cy="641" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="584" cy="660" r="4" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <text x="575" y="678" font-size="9" fill="#475569" text-anchor="middle">蛋白微晶（FFT 周期斑点）</text>
+  <text x="56" y="800" font-size="9.5" fill="#475569">战略意义在「可解释的坏」：识别出污染物说明纯化或操作环节有漏洞、可修；无法解释的噪声弥漫则更可能出在相机或收集参数，</text>
+  <text x="56" y="813" font-size="9.5" fill="#475569">须停机排查硬件。蛋白微晶若可长，也是微晶电子衍射新路线的入口（第 12 章）。</text>
+  <rect x="710" y="462" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="484.84" font-size="19" fill="#475569" font-weight="700">四、取向预警与数据规模预算</text>
+  <text x="810" y="494" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">欧拉球上的视角分布</text>
+  <circle cx="810" cy="565" r="56" fill="none" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="810" cy="565" rx="56" ry="14" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <circle cx="798" cy="527" r="3" fill="#059669" stroke="none"/>
+  <circle cx="807" cy="521" r="3" fill="#059669" stroke="none"/>
+  <circle cx="816" cy="525" r="3" fill="#059669" stroke="none"/>
+  <circle cx="823" cy="533" r="3" fill="#059669" stroke="none"/>
+  <circle cx="802" cy="535" r="3" fill="#059669" stroke="none"/>
+  <circle cx="814" cy="539" r="3" fill="#059669" stroke="none"/>
+  <circle cx="828" cy="523" r="3" fill="#059669" stroke="none"/>
+  <circle cx="792" cy="539" r="3" fill="#059669" stroke="none"/>
+  <circle cx="810" cy="547" r="3" fill="#059669" stroke="none"/>
+  <circle cx="770" cy="570" r="3" fill="#059669" fill-opacity="0.5" stroke="none"/>
+  <circle cx="852" cy="585" r="3" fill="#059669" fill-opacity="0.5" stroke="none"/>
+  <circle cx="795" cy="595" r="3" fill="#059669" fill-opacity="0.5" stroke="none"/>
+  <ellipse cx="810" cy="614" rx="26" ry="9" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="810" y="640" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="600">缺失视角</text>
+  <line x1="872" y1="596" x2="906" y2="640" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="914" y="646" font-size="9.5" fill="#92400e" font-weight="600">倾转 20–40 度补数据</text>
+  <text x="960" y="510" font-size="9.5" fill="#475569">预警的量化形态：把各类平均图的视角投到欧拉球，空腔一目了然。对策四联：</text>
+  <text x="960" y="523.5" font-size="9.5" fill="#475569">小角度倾转 20–40 度、调 defocus 深度「照亮」弱视角、更换支持膜、</text>
+  <text x="960" y="537" font-size="9.5" fill="#475569">回第 2 节改制样——倾转只救急，界面吸附的根治须回制样。</text>
+  <rect x="730" y="664" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="691.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">目标分辨率</text>
+  <rect x="960" y="664" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="691.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">参与精修颗粒数</text>
+  <rect x="1160" y="664" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="691.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">合格微图量级</text>
+  <rect x="730" y="708" width="230" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="730.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">约 3 Å（大复合物）</text>
+  <rect x="960" y="708" width="200" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="730.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.4" font-size="7.2">5</tspan></text>
+  <rect x="1160" y="708" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="730.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数千张</text>
+  <rect x="730" y="742" width="620" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="742" width="230" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="764.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">2–2.5 Å 或中小分子量</text>
+  <rect x="960" y="742" width="200" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">10<tspan dy="-3.4" font-size="7.2">5</tspan><tspan dy="3.4"> 至 10</tspan><tspan dy="-3.4" font-size="7.2">6</tspan></text>
+  <rect x="1160" y="742" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">数千至上万张</text>
+  <rect x="730" y="776" width="230" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="798.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">亚 2 Å 或构象异质性</text>
+  <rect x="960" y="776" width="200" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1060" y="798.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">约 10<tspan dy="-3.4" font-size="7.2">6</tspan></text>
+  <rect x="1160" y="776" width="190" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1255" y="798.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">上万张</text>
+  <rect x="818.4924" y="817.075" width="123.01520000000001" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="880" y="829.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">可用微图比例大于 70%</text>
+  <rect x="1092.6021" y="817.075" width="114.7958" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1150" y="829.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">通量数百至千张/小时</text>
+  <text x="730" y="856" font-size="9.5" fill="#475569">换算链：每微图平均颗粒数 × 合格微图数 × 可用率（常折半甚至更低）＝入精修颗粒数——预算宁可高估废品率，不要在收工线上赌运气。</text>
+  <text x="700" y="940" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">颗粒数与取向覆盖是两条独立的达标线——任何一条不满足都不能交付</text>
+</svg>

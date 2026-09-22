@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">从基因到结构：完整实验路线图</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">十步链路各环节耗时量级：表达约1周、纯化1–2天、结晶数天至数月；放行看SDS-PAGE高于约95%与SEC单体高于90–95%；R约为分辨率数值的十倍</text>
+  <rect x="30" y="132" width="1340" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、十步链路：从基因到 PDB 条目</text>
+  <rect x="75" y="176" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="170" y="202" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">① 目标选择</text>
+  <text x="170" y="221" font-size="10.5" fill="#475569" text-anchor="middle">1–3 天</text>
+  <line x1="273" y1="207" x2="317" y2="207" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="320" y="176" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="415" y="202" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">② 基因克隆</text>
+  <text x="415" y="221" font-size="10.5" fill="#475569" text-anchor="middle">3–7 天</text>
+  <line x1="518" y1="207" x2="562" y2="207" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="565" y="176" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="660" y="202" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">③ 小试表达</text>
+  <text x="660" y="221" font-size="10.5" fill="#475569" text-anchor="middle">3–5 天</text>
+  <line x1="763" y1="207" x2="807" y2="207" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="810" y="176" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="905" y="202" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">④ 纯化</text>
+  <text x="905" y="221" font-size="10.5" fill="#475569" text-anchor="middle">1–2 天</text>
+  <line x1="1008" y1="207" x2="1052" y2="207" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="1055" y="176" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1150" y="202" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">⑤ 稳定性筛选</text>
+  <text x="1150" y="221" font-size="10.5" fill="#475569" text-anchor="middle">1–3 天</text>
+  <rect x="75" y="300" width="190" height="62" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="170" y="326" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">⑥ 结晶或制样</text>
+  <text x="170" y="345" font-size="10.5" fill="#92400e" text-anchor="middle">数天至数月</text>
+  <line x1="273" y1="331" x2="317" y2="331" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="320" y="300" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="415" y="326" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">⑦ 数据收集</text>
+  <text x="415" y="345" font-size="10.5" fill="#475569" text-anchor="middle">数小时至数天</text>
+  <line x1="518" y1="331" x2="562" y2="331" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="565" y="300" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="660" y="326" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">⑧ 结构解析</text>
+  <text x="660" y="345" font-size="10.5" fill="#475569" text-anchor="middle">数天</text>
+  <line x1="763" y1="331" x2="807" y2="331" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="810" y="300" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="905" y="326" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">⑨ 精修验证</text>
+  <text x="905" y="345" font-size="10.5" fill="#475569" text-anchor="middle">数天至数周</text>
+  <line x1="1008" y1="331" x2="1052" y2="331" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="1055" y="300" width="190" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1150" y="326" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">⑩ 数据投递</text>
+  <text x="1150" y="345" font-size="10.5" fill="#475569" text-anchor="middle">1–2 天</text>
+  <path d="M 1150,242 L 1150,269 L 170,269 L 170,294" fill="none" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="75" y="386" font-size="10" fill="#475569">十步链路中⑥结晶或制样是最不可控的瓶颈（数天至数月）；缺陷沿链路逐级放大——构造边界设计错误往往到结晶环节才暴露，代价是数周工期，故「质量源于设计」要求把可溶性、均一性与稳定性评估前置到目标选择阶段。</text>
+  <rect x="30" y="444" width="700" height="514" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="466.84" font-size="19" fill="#475569" font-weight="700">二、瓶颈统计与放行指标</text>
+  <rect x="50" y="482" width="660" height="104" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="66" y="504" font-size="12.5" fill="#991b1b" font-weight="700">结晶：历史性瓶颈</text>
+  <text x="66" y="522" font-size="10" fill="#475569">膜蛋白从纯化蛋白到可衍射晶体的成功率长期低于 5%，其结构条目在 PDB 占比徘徊于低个位数，</text>
+  <text x="66" y="536" font-size="10" fill="#475569">而膜蛋白编码基因约占基因组三成——这一落差正是冷冻电镜崛起的直接动因。初筛以 96 孔板 0.1–2 μL 液滴对 50–500 μL 池液展开，</text>
+  <text x="66" y="550" font-size="10" fill="#475569">4 °C 与 20 °C 双温度平台并行。</text>
+  <rect x="50" y="600" width="660" height="108" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="66" y="622" font-size="12.5" fill="#065f46" font-weight="700">放行指标（进入结晶或制样之前）</text>
+  <rect x="155.70405" y="643.075" width="148.59189999999998" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="230" y="655.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">SDS-PAGE 纯度高于约 95%</text>
+  <rect x="449.86395" y="643.075" width="160.2721" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="530" y="655.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">分析型 SEC 单体高于 90–95%</text>
+  <rect x="199.5742" y="675.075" width="260.8516" height="17.849999999999998" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="330" y="687.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">DSF：能把 Tm 提升数度的配体是共结晶稳定剂首选</text>
+  <rect x="50" y="724" width="660" height="214" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="66" y="746" font-size="12.5" fill="#1e293b" font-weight="700">实验节奏的数值锚点</text>
+  <text x="66" y="764" font-size="10" fill="#475569">构造面板并行 5–20 个截短体；密码子优化基因约 1–2 周交付；Gibson 等温装配 15–60 分钟一步反应；</text>
+  <text x="66" y="778" font-size="10" fill="#475569">DSF 在 qPCR 仪上 25–95 °C 升温监测去折叠；冷冻电镜在 300 kV 场发射电镜 1–3 天采集百万量级颗粒；</text>
+  <text x="66" y="792" font-size="10" fill="#475569">NMR 样品浓缩至 0.1–1 mM 并完成同位素标记；单张衍射 0.1–1°，一套完整数据数分钟到数小时。</text>
+  <rect x="174.85804999999996" y="863.075" width="330.2839000000001" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="340" y="875.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">经验法则：R 因子约等于分辨率数值的十倍（2 Å 结构 R 约 20%）</text>
+  <text x="66" y="902" font-size="10" fill="#64748b">模型验证依赖 MolProbity 拉氏图与 clashscore；终稿投递 PDB，电镜密度图同步投递 EMDB，NMR 化学位移归档 BMRB。</text>
+  <rect x="740" y="444" width="630" height="514" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="756" y="466.84" font-size="19" fill="#475569" font-weight="700">三、方法路线的决策表</text>
+  <rect x="755" y="486" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">提问</text>
+  <rect x="955" y="486" width="400" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">答案指向的方法路线</text>
+  <rect x="755" y="530" width="200" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="560.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">分子量多大？</text>
+  <rect x="955" y="530" width="400" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="560.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">小于 30 kDa：X 射线或 NMR；大于 300 kDa：冷冻电镜优先</text>
+  <rect x="755" y="580" width="600" height="50" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="755" y="580" width="200" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="610.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">能否结晶？</text>
+  <rect x="955" y="580" width="400" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="610.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">结晶在握或家族有先例：X 射线；反复失败或膜蛋白：冷冻电镜</text>
+  <rect x="755" y="630" width="200" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="660.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">构象异质性如何？</text>
+  <rect x="955" y="630" width="400" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="660.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高度异质：冷冻电镜分类解析，或先做稳定化改造</text>
+  <rect x="755" y="680" width="600" height="50" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="755" y="680" width="200" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="710.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">要皮秒至秒动力学？</text>
+  <rect x="955" y="680" width="400" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="710.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">是且分子量许可：NMR</text>
+  <rect x="755" y="730" width="200" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="855" y="760.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">要配体、水与质子化细节？</text>
+  <rect x="955" y="730" width="400" height="50" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1155" y="760.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">追求 1.2 Å 级分辨率：高分辨率 X 射线晶体学</text>
+  <text x="755" y="600" font-size="10" fill="#475569">常见失败模式沿链路分布：边界设计错误、序列差错或移码、不表达或全为包涵体、纯度或收率不足、低 Tm 易聚集、</text>
+  <text x="755" y="614" font-size="10" fill="#475569">无晶或冰污染或颗粒优势取向、衍射弱与剂量损伤、分子置换失败、过拟合、</text>
+  <text x="755" y="628" font-size="10" fill="#475569">验证报告警告——每一项都对应链路上一个可拦截的检查点。</text>
+  <text x="755" y="660" font-size="10" fill="#475569">三条路线殊途同归：大于 300 kDa 或难结晶交给冷冻电镜，动力学交给 NMR，极限分辨率交给 X 射线；</text>
+  <text x="755" y="674" font-size="10" fill="#475569">预测模型又反过来成为分子置换的搜索模型，提高实验解析成功率（方法整合参见第 12 章）。</text>
+  <rect x="948.6949999999999" y="730.65" width="212.61" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1055" y="743.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">上游一毫米的差错，下游一公里的返工</text>
+  <text x="755" y="780" font-size="10" fill="#64748b">章节衔接：表达系统见第 2 章，裂解与纯化见第 3 至 4 章，结晶见第 5 章，数据收集见第 6 章，相位求解与精修验证见第 7 至 9 章，</text>
+  <text x="755" y="794" font-size="10" fill="#64748b">冷冻电镜与 NMR 见第 10 至 11 章。</text>
+</svg>

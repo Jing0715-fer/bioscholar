@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">蛋白质动力学与 NMR 的其他应用：从皮秒到小时的谱系</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">R1/R2/异核 NOE 给出 S² 与 τe；CPMG 覆盖 0.2–10 ms；CEST 至约 1% 稀态；PRE 15–35 Å；保护因子 10⁶–10⁸</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、弛豫三参数与模型自由分析：S² 柔性地图</text>
+  <rect x="50" y="160" width="195" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="147" y="176" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">R1（1/T1 纵向）</text>
+  <text x="147" y="193" font-size="9.5" fill="#475569" text-anchor="middle">秒级，定重复等待</text>
+  <line x1="147" y1="202" x2="147" y2="212" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="255" y="160" width="195" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="352" y="176" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">R2（1/T2 横向）</text>
+  <text x="352" y="193" font-size="9.5" fill="#475569" text-anchor="middle">数十毫秒，定线宽</text>
+  <line x1="352" y1="202" x2="352" y2="212" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="460" y="160" width="195" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="557" y="176" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">异核 NOE</text>
+  <text x="557" y="193" font-size="9.5" fill="#475569" text-anchor="middle">最快的柔性探针</text>
+  <line x1="557" y1="202" x2="557" y2="212" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="50" y="214" width="620" height="36" rx="7" fill="#ede9fe" fill-opacity="0.6" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="360" y="236" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">模型自由分析（Lipari 与 Szabo 1982）：序参量 S²（0 至 1）与有效相关时间 τe</text>
+  <rect x="81.78181818181818" y="356.5" width="9.163636363636362" height="45.5" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="94.5090909090909" y="340.4666666666667" width="9.163636363636362" height="61.533333333333324" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="107.23636363636363" y="324.43333333333334" width="9.163636363636362" height="77.56666666666666" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="119.96363636363637" y="308.4" width="9.163636363636362" height="93.6" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="132.6909090909091" y="292.8" width="9.163636363636362" height="109.2" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="145.4181818181818" y="291.93333333333334" width="9.163636363636362" height="110.06666666666666" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="158.14545454545456" y="291.06666666666666" width="9.163636363636362" height="110.93333333333332" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="170.87272727272727" y="290.2" width="9.163636363636362" height="111.8" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="183.6" y="289.3333333333333" width="9.163636363636362" height="112.66666666666667" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="196.3272727272727" y="288.4666666666667" width="9.163636363636362" height="113.53333333333333" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="209.05454545454543" y="287.6" width="9.163636363636362" height="114.4" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="221.78181818181818" y="286.73333333333335" width="9.163636363636362" height="115.26666666666668" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="234.5090909090909" y="285.8666666666667" width="9.163636363636362" height="116.13333333333333" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="247.23636363636362" y="285" width="9.163636363636362" height="117" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="259.9636363636364" y="347.4" width="9.163636363636362" height="54.6" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="272.6909090909091" y="349.62857142857143" width="9.163636363636362" height="52.371428571428574" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="285.41818181818184" y="351.8571428571429" width="9.163636363636362" height="50.14285714285714" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="298.1454545454546" y="354.0857142857143" width="9.163636363636362" height="47.91428571428571" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="310.8727272727273" y="356.3142857142857" width="9.163636363636362" height="45.68571428571428" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="323.6" y="358.54285714285714" width="9.163636363636362" height="43.457142857142856" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="336.3272727272727" y="360.77142857142854" width="9.163636363636362" height="41.228571428571435" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="349.05454545454546" y="363" width="9.163636363636362" height="39" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="361.7818181818182" y="290.2" width="9.163636363636362" height="111.8" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="374.5090909090909" y="289.9111111111111" width="9.163636363636362" height="112.08888888888889" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="387.23636363636365" y="289.6222222222222" width="9.163636363636362" height="112.37777777777778" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="399.9636363636364" y="289.3333333333333" width="9.163636363636362" height="112.66666666666667" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="412.6909090909091" y="289.0444444444444" width="9.163636363636362" height="112.95555555555556" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="425.41818181818184" y="288.7555555555556" width="9.163636363636362" height="113.24444444444444" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="438.1454545454546" y="288.4666666666667" width="9.163636363636362" height="113.53333333333333" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="450.8727272727273" y="288.1777777777778" width="9.163636363636362" height="113.82222222222222" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="463.6" y="287.8888888888889" width="9.163636363636362" height="114.11111111111111" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="476.3272727272727" y="287.6" width="9.163636363636362" height="114.4" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.1"/>
+  <rect x="489.05454545454546" y="313.6" width="9.163636363636362" height="88.4" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="501.7818181818182" y="321.4" width="9.163636363636362" height="80.6" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="514.5090909090909" y="329.2" width="9.163636363636362" height="72.80000000000001" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="527.2363636363636" y="337" width="9.163636363636362" height="65" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="539.9636363636363" y="343.5" width="9.163636363636362" height="58.5" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="552.690909090909" y="348.51428571428573" width="9.163636363636362" height="53.48571428571429" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.1"/>
+  <rect x="565.4181818181818" y="353.5285714285714" width="9.163636363636362" height="48.471428571428575" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="578.1454545454544" y="358.54285714285714" width="9.163636363636362" height="43.457142857142856" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="590.8727272727272" y="363.5571428571429" width="9.163636363636362" height="38.44285714285714" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="603.5999999999999" y="368.57142857142856" width="9.163636363636362" height="33.42857142857142" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="616.3272727272727" y="373.5857142857143" width="9.163636363636362" height="28.414285714285715" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <rect x="629.0545454545454" y="378.6" width="9.163636363636362" height="23.4" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.1"/>
+  <line x1="80" y1="402" x2="80" y2="272" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="80" y1="402" x2="650" y2="402" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="80" y1="402" x2="75" y2="402" stroke="#475569" stroke-width="1.4"/>
+  <text x="70" y="406" font-size="9.5" fill="#64748b" text-anchor="middle">0.0</text>
+  <line x1="80" y1="337" x2="75" y2="337" stroke="#475569" stroke-width="1.4"/>
+  <text x="70" y="341" font-size="9.5" fill="#64748b" text-anchor="middle">0.5</text>
+  <line x1="80" y1="272" x2="75" y2="272" stroke="#475569" stroke-width="1.4"/>
+  <text x="70" y="276" font-size="9.5" fill="#64748b" text-anchor="middle">1.0</text>
+  <text x="48" y="337" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">序参量 S²</text>
+  <text x="360" y="418" font-size="10" fill="#64748b" text-anchor="middle">残基序号（逐残基读数）</text>
+  <line x1="80" y1="350" x2="640" y2="350" stroke="#dc2626" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="86" y="344" font-size="9.5" fill="#dc2626" font-weight="700">柔性界 0.4</text>
+  <text x="208" y="280.9" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">刚性核心 0.8–0.9</text>
+  <text x="316" y="340" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">活性环低于 0.4</text>
+  <text x="600" y="340" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">C 端弥散</text>
+  <text x="50" y="425" font-size="10" fill="#475569">异核 NOE 低值或负值直接圈定高柔性区，几乎不必建模；三参数须同温同机配套采集。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、CPMG 弛豫色散：把隐藏态拟合出来</text>
+  <line x1="740" y1="372" x2="740" y2="212" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="740" y1="372" x2="1034" y2="372" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="740" y1="318.6666666666667" x2="735" y2="318.6666666666667" stroke="#475569" stroke-width="1.4"/>
+  <text x="731" y="322.6666666666667" font-size="9.5" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="740" y1="265.33333333333337" x2="735" y2="265.33333333333337" stroke="#475569" stroke-width="1.4"/>
+  <text x="731" y="269.33333333333337" font-size="9.5" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="740" y1="212" x2="735" y2="212" stroke="#475569" stroke-width="1.4"/>
+  <text x="731" y="216" font-size="9.5" fill="#64748b" text-anchor="middle">30</text>
+  <line x1="740" y1="372" x2="740" y2="366" stroke="#475569" stroke-width="1.4"/>
+  <text x="740" y="387" font-size="9.5" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="837.8558006070426" y1="372" x2="837.8558006070426" y2="366" stroke="#475569" stroke-width="1.4"/>
+  <text x="837.8558006070426" y="387" font-size="9.5" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="977.8558006070426" y1="372" x2="977.8558006070426" y2="366" stroke="#475569" stroke-width="1.4"/>
+  <text x="977.8558006070426" y="387" font-size="9.5" fill="#64748b" text-anchor="middle">1000</text>
+  <text x="706" y="292" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">R<tspan dy="2.3" font-size="7.6">2,eff</tspan><tspan dy="-2.3">（s⁻¹）</tspan></text>
+  <text x="880" y="404" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">回波频率 ν<tspan dy="2.2" font-size="7.2">CPMG</tspan><tspan dy="-2.2">（Hz，对数）</tspan></text>
+  <line x1="740" y1="308" x2="1020" y2="308" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <text x="994" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">无交换：R2⁰</text>
+  <path d="M740,223.20932697403285 C744.1,223.3 756.4,223.5 764.6527762677954,223.87802313354362 C772.9,224.2 780.7,224.5 789.3055525355908,225.34469843729818 C797.9,226.2 808.1,227.4 816.1695262090386,228.8704253214639 C824.3,230.4 830.1,231.7 837.8558006070426,234.4367816091954 C845.6,237.2 854.5,241.0 862.508576874838,245.2549019607843 C870.5,249.5 877.8,254.6 885.7949759221515,259.9086263901413 C893.8,265.2 902.1,271.7 910.4477521899469,276.8837028393621 C918.8,282.1 927.4,287.2 935.7116012140852,290.93333333333334 C944.0,294.7 952.4,297.3 960.3643774818806,299.4666666666667 C968.4,301.6 976.0,302.7 983.6507765291941,303.80877537655533 C991.3,304.9 1000.4,305.5 1006.432598178872,305.96631712742294 C1012.5,306.4 1017.7,306.6 1020,306.6871794871795" fill="none" stroke="#be185d" stroke-width="2.8"/>
+  <circle cx="740" cy="223.20000000000002" r="4.5" fill="#be185d"/>
+  <text x="748" y="215.20000000000002" font-size="9.5" fill="#be185d" text-anchor="middle" font-weight="700">低频平台：交换显现</text>
+  <line x1="778.6527762677954" y1="225.33333333333334" x2="778.6527762677954" y2="305.3333333333333" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <text x="786.6527762677954" y="269.33333333333337" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">Rex</text>
+  <rect x="907.2288932140852" y="280.4083333333333" width="96.96541599999999" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="955.7116012140852" y="293.1133333333333" font-size="10.5" fill="#be185d" text-anchor="middle" font-weight="700">拟合得 kex 与 p<tspan dy="2.3" font-size="7.6">B</tspan></text>
+  <text x="1060" y="216" font-size="10.5" fill="#475569">自旋回波串成链、</text>
+  <text x="1060" y="231" font-size="10.5" fill="#475569">以回波频率反复「聚焦」交换效应——测 R<tspan dy="2.3" font-size="7.6">2,eff</tspan><tspan dy="-2.3"> 对回波频率的依赖曲线。</tspan></text>
+  <text x="1060" y="268" font-size="10.5" fill="#475569">覆盖窗约 0.2–10 ms（kex 约 100–5000 s⁻¹），</text>
+  <text x="1060" y="283" font-size="10.5" fill="#475569">拟合隐藏态占有率与交换速率。</text>
+  <text x="1060" y="320" font-size="10.5" fill="#475569">更慢的交给 CEST（约 10–500 ms）：</text>
+  <text x="1060" y="335" font-size="10.5" fill="#475569">稀态占有率低至约 1% 仍可见；稀态先于配体存在，</text>
+  <text x="1060" y="350" font-size="10.5" fill="#475569">即构象选择的直接证据。</text>
+  <text x="1060" y="388" font-size="10" fill="#475569">Palmer 组 2000 年代推成变构研究范式。</text>
+  <rect x="30" y="452" width="1340" height="230" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、从皮秒到小时：NMR 动力学方法的时间尺度谱系</text>
+  <line x1="70" y1="572" x2="1310" y2="572" stroke="#475569" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <line x1="92.8220858895706" y1="572" x2="92.8220858895706" y2="578" stroke="#475569" stroke-width="1.8"/>
+  <text x="92.8220858895706" y="594" font-size="11" fill="#64748b" text-anchor="middle">ps</text>
+  <line x1="321.04294478527606" y1="572" x2="321.04294478527606" y2="578" stroke="#475569" stroke-width="1.8"/>
+  <text x="321.04294478527606" y="594" font-size="11" fill="#64748b" text-anchor="middle">ns</text>
+  <line x1="549.2638036809817" y1="572" x2="549.2638036809817" y2="578" stroke="#475569" stroke-width="1.8"/>
+  <text x="549.2638036809817" y="594" font-size="11" fill="#64748b" text-anchor="middle">μs</text>
+  <line x1="777.4846625766871" y1="572" x2="777.4846625766871" y2="578" stroke="#475569" stroke-width="1.8"/>
+  <text x="777.4846625766871" y="594" font-size="11" fill="#64748b" text-anchor="middle">ms</text>
+  <line x1="1005.7055214723927" y1="572" x2="1005.7055214723927" y2="578" stroke="#475569" stroke-width="1.8"/>
+  <text x="1005.7055214723927" y="594" font-size="11" fill="#64748b" text-anchor="middle">s</text>
+  <line x1="1276.5276073619632" y1="572" x2="1276.5276073619632" y2="578" stroke="#475569" stroke-width="1.8"/>
+  <text x="1276.5276073619632" y="594" font-size="11" fill="#64748b" text-anchor="middle">小时</text>
+  <rect x="70" y="522" width="273.8650306748467" height="34" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="206.93251533742335" y="543" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">R1、R2、异核 NOE 加模型自由：S²、τe、τc</text>
+  <rect x="625.3374233128835" y="522" width="152.1472392638036" height="34" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="701.4110429447853" y="543" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">R1ρ、谱线形状</text>
+  <rect x="724.2331288343559" y="522" width="129.32515337423308" height="34" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="788.8957055214726" y="543" font-size="10.5" fill="#be185d" text-anchor="middle" font-weight="700">CPMG：kex、p<tspan dy="2.3" font-size="7.6">B</tspan></text>
+  <rect x="853.5582822085889" y="522" width="129.32515337423308" height="34" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="918.2208588957054" y="543" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">CEST、zz-交换谱</text>
+  <rect x="343.8650306748467" y="522" width="281.4723926380368" height="34" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <text x="484.6012269938651" y="543" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="700">方法学空窗</text>
+  <rect x="777.4846625766871" y="604" width="502.08588957055224" height="34" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1028.5276073619634" y="625" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">氢交换保护因子：局部稳定性与折叠途径（时间窗秒至小时）</text>
+  <text x="70" y="662" font-size="10" fill="#475569">ps–ns 档恰是酶催化环与结合界面「预存在运动」的尺度——晶体学只有 B 因子间接暗示，NMR 直接把幅度读成数字；ns 至 μs 空窗正由顺磁方法与新兴弛豫代理填补。</text>
+  <rect x="30" y="702" width="1340" height="200" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="724.84" font-size="19" fill="#475569" font-weight="700">四、PRE、氢交换与互作应用：不必解结构也有大用</text>
+  <rect x="50" y="728" width="420" height="158" rx="8" fill="#fce7f3" fill-opacity="0.4" stroke="#be185d" stroke-width="1.3"/>
+  <text x="66" y="750" font-size="12.5" fill="#be185d" font-weight="700">PRE：长程距离与稀态探针</text>
+  <text x="66" y="770" font-size="10" fill="#475569">MTSL 自旋标记工程化半胱氨酸，未配对电子使 15–35 Å 内的核额外弛豫。</text>
+  <rect x="70" y="800" width="52.5" height="13" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="201.25" y="800" width="175" height="13" rx="3" fill="#be185d" fill-opacity="0.8" stroke="#be185d" stroke-width="1.2"/>
+  <line x1="70" y1="813" x2="420" y2="813" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="813" x2="70" y2="818" stroke="#475569" stroke-width="1.3"/>
+  <text x="70" y="830" font-size="9" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="157.5" y1="813" x2="157.5" y2="818" stroke="#475569" stroke-width="1.3"/>
+  <text x="157.5" y="830" font-size="9" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="245" y1="813" x2="245" y2="818" stroke="#475569" stroke-width="1.3"/>
+  <text x="245" y="830" font-size="9" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="332.5" y1="813" x2="332.5" y2="818" stroke="#475569" stroke-width="1.3"/>
+  <text x="332.5" y="830" font-size="9" fill="#64748b" text-anchor="middle">30</text>
+  <line x1="420" y1="813" x2="420" y2="818" stroke="#475569" stroke-width="1.3"/>
+  <text x="420" y="830" font-size="9" fill="#64748b" text-anchor="middle">40</text>
+  <text x="96.25" y="792" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">NOE 至约 6 Å</text>
+  <text x="288.75" y="792" font-size="9.5" fill="#be185d" text-anchor="middle" font-weight="700">PRE 15–35 Å</text>
+  <text x="66" y="852" font-size="10" fill="#475569">对约 1% 瞬态敏感——遭遇复合物的成名应用；氧化态与还原态各测一份方为真对照。</text>
+  <rect x="490" y="728" width="390" height="158" rx="8" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.3"/>
+  <text x="506" y="750" font-size="12.5" fill="#065f46" font-weight="700">氢交换保护因子</text>
+  <text x="506" y="770" font-size="10" fill="#475569">PF = 实测交换速率 ÷ 无结构参考速率</text>
+  <rect x="525" y="817.5813953488372" width="32" height="54.418604651162795" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="541" y="808.5813953488372" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">10<tspan dy="-4.3" font-size="9.0">6</tspan></text>
+  <rect x="575" y="808.5116279069767" width="32" height="63.48837209302326" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="591" y="799.5116279069767" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">10<tspan dy="-4.3" font-size="9.0">7</tspan></text>
+  <rect x="625" y="799.4418604651163" width="32" height="72.55813953488372" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="641" y="790.4418604651163" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">10<tspan dy="-4.3" font-size="9.0">8</tspan></text>
+  <text x="591" y="892" font-size="9.5" fill="#64748b" text-anchor="middle">保护因子可达</text>
+  <text x="690" y="792" font-size="10" fill="#475569">折算局部展开自由能：</text>
+  <text x="690" y="806" font-size="10" fill="#475569">一张逐残基稳定性图谱，</text>
+  <text x="690" y="820" font-size="10" fill="#475569">折叠途径的过渡态位置可由此圈定。</text>
+  <rect x="900" y="728" width="440" height="158" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.3"/>
+  <text x="916" y="750" font-size="12.5" fill="#075985" font-weight="700">互作与筛选的量具</text>
+  <text x="916" y="770" font-size="10" fill="#475569">化学位移滴定：Kd 最佳量程微摩尔至毫摩尔，峰移动方向画出结合面地图。</text>
+  <text x="916" y="800" font-size="10" fill="#475569">SAR by NMR（Shuker 等 1996）：先筛两个弱结合片段、再连接优化，开创片段导向设计。</text>
+  <text x="916" y="830" font-size="10" fill="#475569">STD 与 WaterLOGSY（Mayer 与 Meyer 1999）：毫摩尔级弱命中照收，</text>
+  <text x="916" y="844" font-size="10" fill="#475569">每化合物只需纳摩尔级蛋白。</text>
+  <text x="916" y="866" font-size="10" fill="#475569">代谢组学：一维 ¹H 谱加统计模式识别，读出疾病与干预的代谢指纹。</text>
+  <text x="700" y="934" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">静态结构可预测、动力学与系综不可预测——弱结合、瞬态复合物、变构稀态正是预测的盲区与 NMR 的舞台</text>
+</svg>

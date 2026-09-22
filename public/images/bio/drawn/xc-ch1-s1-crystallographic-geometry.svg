@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">从矿物形态学到晶体几何学：夹角、指数与对称分类</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">1669晶面角守恒（石英柱面间120°，歪斜不改变夹角）；1784有理指数定律（截距2a、3b、6c得(321)）；32晶类、14布拉维格子、230空间群先于原子实证穷举完毕；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">偏光显微镜以双折射鉴定晶系</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、晶面角守恒定律（1669，斯坦诺）</text>
+  <text x="60" y="196" font-size="10.5" fill="#475569">测量取代描述：</text>
+  <text x="60" y="211" font-size="10.5" fill="#475569">斯坦诺以酸溶蚀与溶液培养实验推断晶体「逐层添加」生长；</text>
+  <text x="60" y="226" font-size="10.5" fill="#475569">接触式与反射式测角仪成为十九世纪矿物学实验室的标准装备，</text>
+  <text x="60" y="241" font-size="10.5" fill="#475569">数以万计的夹角数据记录成册。</text>
+  <polygon points="164.20428331024323,290.32 128.4085666204864,268 128.4085666204864,442 164.20428331024323,464.32" fill="#e0f2fe" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="128.4085666204864,268 164.20428331024317,245.68 164.20428331024317,419.68 128.4085666204864,442" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="164.20428331024317,245.68 235.79571668975677,245.68 235.79571668975677,419.68 164.20428331024317,419.68" fill="#e0f2fe" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="235.79571668975677,245.68 271.5914333795136,268 271.5914333795136,442 235.79571668975677,419.68" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="271.5914333795136,268 235.7957166897568,290.32 235.7957166897568,464.32 271.5914333795136,442" fill="#e0f2fe" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="235.7957166897568,290.32 164.20428331024323,290.32 164.20428331024323,464.32 235.7957166897568,464.32" fill="#bae6fd" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="164.20428331024323,464.32 128.4085666204864,442 164.20428331024317,419.68 235.79571668975677,419.68 271.5914333795136,442 235.7957166897568,464.32" fill="none" stroke="#94a3b8" stroke-width="1.1"/>
+  <polygon points="164.20428331024323,290.32 128.4085666204864,268 164.20428331024317,245.68 235.79571668975677,245.68 271.5914333795136,268 235.7957166897568,290.32" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <line x1="112" y1="436" x2="112" y2="282" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <text x="96" y="356" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700" font-style="italic">c</text>
+  <text x="200" y="470" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">石英六棱柱（理想外形）</text>
+  <text x="60" y="496" font-size="10.5" fill="#475569">无论个头大小、外形如何「歪斜」，</text>
+  <text x="60" y="510.5" font-size="10.5" fill="#475569">同一矿物对应晶面间夹角恒定：</text>
+  <text x="60" y="525" font-size="10.5" fill="#475569">石英相邻柱面间总为 120°，</text>
+  <text x="60" y="539.5" font-size="10.5" fill="#475569">柱面与锥面间亦各有定值。</text>
+  <polygon points="497.66838492538096,300 465.3367698507619,244.00000000000003 497.66838492538096,188 562.331615074619,188 594.6632301492381,243.99999999999997 562.3316150746191,300" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="2"/>
+  <polyline points="542.331615074619,188 542.7686630599429,192.1582338163552 544.060705921767,196.134732861516 546.1512751871201,199.75570504584948 548.9490029474418,202.86289650954788 552.331615074619,205.3205080756888 556.1512751871201,207.02113032590307 560.241045809266,207.89043790736548 564.4221843399721,207.89043790736545 568.5119549621179,207.02113032590307 572.331615074619,205.32050807568876" fill="none" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="543.331615074619" y="224.9089653438087" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">120°</text>
+  <text x="530" y="178" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">理想横截面（垂直 c 轴）</text>
+  <polygon points="533.8196907134314,515.52 448.46422691643716,367.68 460.1036083433,347.52 611.4155668925171,347.52 617.2352576059486,357.6 526.0601030955229,515.52" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="2"/>
+  <polyline points="448.10360834330004,368.3046096908265 452.6872004783013,370.34535639108367 457.5949252248763,371.3885254888385 462.6122914617237,371.3885254888385 467.5200162082987,370.34535639108367 472.1036083433,368.3046096908265 476.1627428959126,365.35547581145744 479.5200162082987,361.6268460550193 482.0286993267224,357.2816794338192 483.5791507609113,352.5098805796262 484.1036083433,347.52" fill="none" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="481.10360834330004" y="387.8930669589464" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">120°</text>
+  <polyline points="538.0601030955229,494.73539030917345 540.1669491505422,496.10359213500124 542.1192376481355,497.6845241885425 543.8955789069804,499.4608654473874 545.4765109605216,501.41315394498065 546.8447127863494,503.52 547.9851940789454,505.75832056618077 548.8854594866066,508.10359213500124 549.5356455131342,510.53011942037375 549.9286285843615,513.0113168815762 550.0601030955229,515.52" fill="none" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="562.4331700544693" y="498.52" font-size="11.5" fill="#dc2626" text-anchor="middle" font-weight="700">120°</text>
+  <text x="528" y="530" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">歪斜横截面：各面平行内移，夹角不变</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、解理「积木」与有理指数定律（1784，阿羽依）</text>
+  <text x="730" y="186" font-size="10.5" fill="#475569">观察方解石解理：大小不一的碎块仍保持同样的菱面体外形与解理性；晶体可沿解理面一路劈分，</text>
+  <text x="730" y="201" font-size="10.5" fill="#475569">整个晶体是小积木在三维空间的密堆砌。</text>
+  <line x1="770" y1="396" x2="818" y2="468" stroke="#475569" stroke-width="1.4"/>
+  <line x1="818" y1="396" x2="866" y2="468" stroke="#475569" stroke-width="1.4"/>
+  <line x1="866" y1="396" x2="914" y2="468" stroke="#475569" stroke-width="1.4"/>
+  <line x1="914" y1="396" x2="962" y2="468" stroke="#475569" stroke-width="1.4"/>
+  <line x1="962" y1="396" x2="1010" y2="468" stroke="#475569" stroke-width="1.4"/>
+  <line x1="770" y1="396" x2="962" y2="396" stroke="#475569" stroke-width="1.4"/>
+  <line x1="786" y1="420" x2="978" y2="420" stroke="#475569" stroke-width="1.4"/>
+  <line x1="802" y1="444" x2="994" y2="444" stroke="#475569" stroke-width="1.4"/>
+  <line x1="818" y1="468" x2="1010" y2="468" stroke="#475569" stroke-width="1.4"/>
+  <polygon points="882,420 930,420 946,444 898,444" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="900" y1="482" x2="916" y2="450" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <text x="890" y="498" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">「组成分子」（不可再分的小平行六面体）</text>
+  <circle cx="1080" cy="470" r="2.6" fill="#64748b"/>
+  <circle cx="1102" cy="431.9" r="2.6" fill="#64748b"/>
+  <circle cx="1124" cy="393.8" r="2.6" fill="#64748b"/>
+  <circle cx="1146" cy="355.7" r="2.6" fill="#64748b"/>
+  <circle cx="1124" cy="470" r="2.6" fill="#64748b"/>
+  <circle cx="1146" cy="431.9" r="2.6" fill="#64748b"/>
+  <circle cx="1168" cy="393.8" r="2.6" fill="#64748b"/>
+  <circle cx="1190" cy="355.7" r="2.6" fill="#64748b"/>
+  <circle cx="1168" cy="470" r="2.6" fill="#64748b"/>
+  <circle cx="1190" cy="431.9" r="2.6" fill="#64748b"/>
+  <circle cx="1212" cy="393.8" r="2.6" fill="#64748b"/>
+  <circle cx="1234" cy="355.7" r="2.6" fill="#64748b"/>
+  <circle cx="1212" cy="470" r="2.6" fill="#64748b"/>
+  <circle cx="1234" cy="431.9" r="2.6" fill="#64748b"/>
+  <circle cx="1256" cy="393.8" r="2.6" fill="#64748b"/>
+  <circle cx="1278" cy="355.7" r="2.6" fill="#64748b"/>
+  <circle cx="1256" cy="470" r="2.6" fill="#64748b"/>
+  <circle cx="1278" cy="431.9" r="2.6" fill="#64748b"/>
+  <circle cx="1300" cy="393.8" r="2.6" fill="#64748b"/>
+  <circle cx="1322" cy="355.7" r="2.6" fill="#64748b"/>
+  <line x1="1080" y1="470" x2="1306" y2="470" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1080" y1="470" x2="1161" y2="329" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="1318" y="476" font-size="13" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">a</text>
+  <text x="1172" y="320" font-size="13" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">b</text>
+  <line x1="1070" y1="418.6" x2="1086.6" y2="504.3" stroke="#be185d" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="1140.5" y1="327.1" x2="1171.4" y2="487.2" stroke="#be185d" stroke-width="2.4"/>
+  <circle cx="1168" cy="470" r="4.6" fill="#be185d" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1146" cy="355.7" r="4.6" fill="#be185d" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="1180" y="494" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">2a</text>
+  <text x="1124" y="346" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">3b</text>
+  <text x="1218" y="402" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">晶面（虚线为平行面族）</text>
+  <text x="730" y="512" font-size="10.5" fill="#475569">截距之比皆为有理数：二维截距 2a、3b 取倒数 1/2、1/3 化为整数比 3:2；三维例截距 2a、3b、6c 得 (321)。</text>
+  <text x="730" y="526.5" font-size="10.5" fill="#475569">Miller 1839 年规范化的指数记号由此奠基（第 2 章）。</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、点阵、晶类与空间群：纯几何的完备分类（1830–1894）</text>
+  <text x="60" y="606" font-size="10.5" fill="#475569">十九世纪纯几何推导把晶体对称分类穷举完毕——在不知道任何原子实体的年代完成，堪称「理论先行」的典范。</text>
+  <line x1="70" y1="690" x2="650" y2="690" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="87.4" cy="690" r="6.5" fill="#0f766e"/>
+  <line x1="87.4" y1="681" x2="87.4" y2="660" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="87.4" y="640" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1669</text>
+  <text x="87.4" y="620" font-size="12" fill="#64748b" text-anchor="middle">斯坦诺·晶面角守恒</text>
+  <circle cx="186" cy="690" r="6.5" fill="#0369a1"/>
+  <line x1="186" y1="699" x2="186" y2="720" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="186" y="740" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1784</text>
+  <text x="186" y="760" font-size="12" fill="#64748b" text-anchor="middle">阿羽依·积木与有理指数</text>
+  <circle cx="290.4" cy="690" r="6.5" fill="#0f766e"/>
+  <line x1="290.4" y1="681" x2="290.4" y2="660" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="290.4" y="640" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1830</text>
+  <text x="290.4" y="620" font-size="12" fill="#64748b" text-anchor="middle">赫塞尔·32 种晶类</text>
+  <circle cx="389" cy="690" r="6.5" fill="#0369a1"/>
+  <line x1="389" y1="699" x2="389" y2="720" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="389" y="740" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1850</text>
+  <text x="389" y="760" font-size="12" fill="#64748b" text-anchor="middle">布拉维·14 种格子</text>
+  <circle cx="487.59999999999997" cy="690" r="6.5" fill="#0f766e"/>
+  <line x1="487.59999999999997" y1="681" x2="487.59999999999997" y2="660" stroke="#0f766e" stroke-width="1.7"/>
+  <text x="487.59999999999997" y="640" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1879</text>
+  <text x="487.59999999999997" y="620" font-size="12" fill="#64748b" text-anchor="middle">索恩克·65 个 Sohncke 群</text>
+  <circle cx="592" cy="690" r="6.5" fill="#dc2626"/>
+  <line x1="592" y1="699" x2="592" y2="720" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="592" y="740" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1890–94</text>
+  <text x="592" y="760" font-size="12" fill="#64748b" text-anchor="middle">舍恩夫利斯等·230 空间群</text>
+  <rect x="244.12" y="801.8" width="221.76" height="20.4" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="355" y="816.32" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">空间群＝点群对称操作＋平移周期性</text>
+  <rect x="68.895" y="853.375" width="142.21" height="21.25" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="140" y="868.5" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">32 种晶类（点群）</text>
+  <rect x="290.3325" y="853.375" width="129.335" height="21.25" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="355" y="868.5" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">14 种布拉维格子</text>
+  <rect x="509.21625" y="853.375" width="111.5675" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="565" y="868.5" font-size="12.5" fill="#991b1b" text-anchor="middle" font-weight="700">230 种空间群</text>
+  <text x="60" y="916" font-size="10.5" fill="#64748b">后世X射线测定的数千种晶体，无一跳出 230 种空间群之外；由 L-氨基酸构成的手性生物分子只能栖身 65 个 Sohncke 群</text>
+  <text x="60" y="930.5" font-size="10.5" fill="#64748b">（第 2 章）。</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、光学晶体学：偏光显微镜下的各向异性</text>
+  <polygon points="850,635 990,660 970,770 830,745" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="2.2"/>
+  <text x="908" y="700" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">方解石</text>
+  <line x1="748" y1="692" x2="838" y2="690" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="840" y1="690" x2="1028" y2="690" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <line x1="840" y1="690" x2="958" y2="778" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <text x="1032" y="672" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">寻常光 o</text>
+  <text x="1000" y="796" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">非常光 e</text>
+  <text x="730" y="826" font-size="10.5" fill="#475569">1669 年巴尔托林：一束入射光分解为两束——折射率随方向而变</text>
+  <text x="730" y="840.5" font-size="10.5" fill="#475569">（各向异性），正是内部周期有序的光学表现。</text>
+  <line x1="1058" y1="690" x2="1088" y2="690" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1092" y="658" width="13" height="64" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="1095" y1="662" x2="1095" y2="718" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1098" y1="662" x2="1098" y2="718" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1101" y1="662" x2="1101" y2="718" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1104" y1="662" x2="1104" y2="718" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1105" y1="690" x2="1135" y2="690" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1139" y="660" width="62" height="60" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1170" y="694" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">晶片</text>
+  <line x1="1201" y1="690" x2="1231" y2="690" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1235" y="658" width="13" height="64" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <line x1="1237" y1="665" x2="1246" y2="665" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1237" y1="678" x2="1246" y2="678" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1237" y1="691" x2="1246" y2="691" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1237" y1="704" x2="1246" y2="704" stroke="#0369a1" stroke-width="1.1" opacity="0.7"/>
+  <line x1="1248" y1="690" x2="1278" y2="690" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="1098" y="748" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">起偏器 P</text>
+  <text x="1242" y="748" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">检偏器 A（正交）</text>
+  <text x="1060" y="776" font-size="10.5" fill="#475569">正交偏光间：立方晶系等均质体全消光；</text>
+  <text x="1060" y="790.5" font-size="10.5" fill="#475569">非均质体显示干涉色与消光位，</text>
+  <text x="1060" y="805" font-size="10.5" fill="#475569">锥光照明下出现揭示对称性的干涉图。</text>
+  <text x="730" y="884" font-size="10.5" fill="#64748b">马吕斯 1808 年发现偏振；尼科尔 1828 年发明方解石偏振棱镜；格罗特五卷《化学晶体学》登记晶形、光学符号与消光角。</text>
+  <text x="730" y="899" font-size="10.5" fill="#64748b">诺伊曼原理：晶体任何物理性质的对称元素不少于其所属晶类的对称元素。</text>
+</svg>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">衍射斑点的检测与指标化：从照片到晶格</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">找斑 3–6σ 阈值与尺寸窗；一维傅里叶与 FFT 网格搜索两路指标化；tP 与 tI 度规相同靠消光裁决；L 检验揪孪生；230 个空间群砍到 65 个 Sohncke 群</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、找斑：统计、形状、位置三重过滤</text>
+  <rect x="56" y="170" width="250" height="236" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="181" cy="288" r="10" fill="#1e293b"/>
+  <circle cx="90" cy="206" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="130" cy="196" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="206" cy="200" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="252" cy="228" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="82" cy="266" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="126" cy="290" r="4.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="176" cy="210" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="232" cy="266" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="270" cy="320" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="102" cy="338" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="164" cy="350" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="208" cy="312" r="3" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="288" cy="256" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="148" cy="244" r="3.5" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="260" cy="366" r="4" fill="#64748b" fill-opacity="0.62"/>
+  <circle cx="181" cy="288" r="74" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="255" cy="288" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="247.671696224779" cy="320.10739669469933" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="227.1382453375463" cy="345.8555297026342" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="197.46654911276727" cy="360.14466550145494" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="164.53345088723273" cy="360.14466550145494" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="134.86175466245373" cy="345.8555297026342" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="114.32830377522099" cy="320.10739669469933" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="107" cy="288" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="114.32830377522099" cy="255.89260330530072" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="134.8617546624537" cy="230.14447029736579" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="164.53345088723273" cy="215.85533449854506" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="197.46654911276727" cy="215.85533449854506" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="227.13824533754627" cy="230.14447029736579" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <circle cx="247.671696224779" cy="255.89260330530067" r="2.2" fill="#dc2626" fill-opacity="0.8"/>
+  <rect x="113" y="317" width="6" height="6" fill="#dc2626"/>
+  <circle cx="116" cy="320" r="10" fill="none" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="246" y="180" width="34" height="26" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <line x1="228" y1="231" x2="322" y2="202" stroke="#dc2626" stroke-width="1.1"/>
+  <text x="326" y="204" font-size="9.5" fill="#dc2626" font-weight="700">冰环上的粉末斑成串</text>
+  <line x1="280" y1="193" x2="322" y2="188" stroke="#dc2626" stroke-width="1.1"/>
+  <text x="326" y="190" font-size="9.5" fill="#dc2626" font-weight="700">坏区与遮挡（掩膜剔除）</text>
+  <line x1="192" y1="288" x2="322" y2="284" stroke="#475569" stroke-width="1.1"/>
+  <text x="326" y="286" font-size="9.5" fill="#475569" font-weight="700">光束挡板阴影</text>
+  <line x1="126" y1="320" x2="322" y2="318" stroke="#dc2626" stroke-width="1.1"/>
+  <text x="326" y="320" font-size="9.5" fill="#dc2626" font-weight="700">孤立单像素 zinger</text>
+  <text x="320" y="158" font-size="11.5" fill="#1e293b" font-weight="700">找斑三重过滤：统计+形状+位置</text>
+  <text x="320" y="178" font-size="10" fill="#475569">每帧以阈值分割找出显著高于局部背景的像素团，</text>
+  <text x="320" y="191.5" font-size="10" fill="#475569">按尺寸与形状过滤噪声——宇宙线、成片冰晶与霜斑都要挡掉。两个旋钮：</text>
+  <text x="320" y="205" font-size="10" fill="#475569">显著性阈值（局部背景之上 3–6σ）、尺寸窗（三五个到几十个像素）。</text>
+  <text x="320" y="236" font-size="10" fill="#475569">窗口要与像素角分辨率匹配：</text>
+  <text x="320" y="249.5" font-size="10" fill="#475569">斑点典型横宽三到十个像素——窗窄了弱弥散斑被当背景、开宽了邻斑粘连成团；</text>
+  <text x="320" y="263" font-size="10" fill="#475569">找斑表混入百分之几噪声点，差矢量傅里叶的周期峰就会被抹糊。</text>
+  <text x="320" y="276.5" font-size="10" fill="#475569">实务先拿头几帧试找斑调参。</text>
+  <rect x="320" y="302" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="415" y="329.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">PAD（像素阵列）</text>
+  <rect x="510" y="302" width="164" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="592" y="329.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">CCD</text>
+  <rect x="320" y="346" width="190" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="415" y="363.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">逐光子计数</text>
+  <rect x="510" y="346" width="164" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="592" y="363.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">电荷转移读出</text>
+  <rect x="320" y="370" width="354" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="320" y="370" width="190" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="415" y="387.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">无读出噪声与暗电流</text>
+  <rect x="510" y="370" width="164" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="592" y="387.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">读出噪声与暗电流累积</text>
+  <rect x="320" y="394" width="190" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="415" y="411.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">点扩散极小；假斑为孤立 zinger</text>
+  <rect x="510" y="394" width="164" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="592" y="411.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">强斑电荷溢出拉成条纹</text>
+  <text x="181" y="420" font-size="9.5" fill="#64748b" text-anchor="middle">一帧的斑点表（每帧数十到数百个斑点）</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、指标化：从斑点表猜出晶格</text>
+  <text x="730" y="176" font-size="11" fill="#1e293b" font-weight="700">XDS：一维傅里叶（dopangram）</text>
+  <line x1="730" y1="372" x2="1000" y2="372" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="730" y1="372" x2="730" y2="186" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <polyline points="736,368 748,372 760,365 772,370 784,366 796,371 808,367 820,372 832,366 844,370 856,368 868,372 880,366 892,370 904,367 916,371 928,368 940,372 952,366 964,370 976,367 988,371 996,369" fill="none" stroke="#94a3b8" stroke-width="1.4"/>
+  <polygon points="766,372 770,314 774,372" fill="#0369a1" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.2"/>
+  <polygon points="826,372 830,284 834,372" fill="#0369a1" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.2"/>
+  <polygon points="946,372 950,328 954,372" fill="#0369a1" fill-opacity="0.65" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="774.2922" y="253.925" width="111.4156" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="265.42" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">周期峰 = 晶格平移基矢</text>
+  <text x="865" y="396" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">差矢量长度</text>
+  <text x="724" y="196" font-size="9.5" fill="#64748b" text-anchor="end">功率</text>
+  <text x="730" y="316" font-size="9.5" fill="#475569">把帧内斑点两两作差得到差矢量集合，</text>
+  <text x="730" y="329" font-size="9.5" fill="#475569">对其做一维傅里叶——周期峰给出候选晶格平移基矢。</text>
+  <text x="1030" y="180" font-size="10.5" fill="#1e293b" font-weight="700">DIALS：FFT 网格搜索（基矢撒进倒易盒试铺）</text>
+  <rect x="1030" y="190" width="320" height="186" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="1060" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1060" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1060" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1060" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1060" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1092" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1092" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1092" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1092" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1092" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1124" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1124" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1124" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1124" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1124" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1156" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1156" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1156" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1156" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1156" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1188" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1188" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1188" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1188" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1188" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1220" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1220" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1220" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1220" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1220" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1252" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1252" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1252" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1252" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1252" cy="224" r="2.4" fill="#64748b"/>
+  <circle cx="1284" cy="352" r="2.4" fill="#64748b"/>
+  <circle cx="1284" cy="320" r="2.4" fill="#64748b"/>
+  <circle cx="1284" cy="288" r="2.4" fill="#64748b"/>
+  <circle cx="1284" cy="256" r="2.4" fill="#64748b"/>
+  <circle cx="1284" cy="224" r="2.4" fill="#64748b"/>
+  <line x1="1060" y1="352" x2="1124" y2="352" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <line x1="1060" y1="352" x2="1060" y2="288" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="1090" y="368" font-size="10.5" fill="#dc2626" font-weight="700" font-style="italic">a*</text>
+  <text x="1040" y="320" font-size="10.5" fill="#dc2626" font-weight="700" font-style="italic">b*</text>
+  <circle cx="1124" cy="352" r="4" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1060" cy="320" r="4" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1092" cy="320" r="4" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1124" cy="320" r="4" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1092" cy="352" r="4" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="1240" y="250" font-size="9.5" fill="#475569">候选基矢直接在三维倒易盒里试铺，</text>
+  <text x="1240" y="263" font-size="9.5" fill="#475569">能对付斑点较少或带伪对称的疑难帧。</text>
+  <text x="726" y="392" font-size="9.5" fill="#475569">一句话比较：一维傅里叶快而对取向鲁棒；FFT 网格搜索更耐疑难。</text>
+  <text x="726" y="405" font-size="9.5" fill="#475569">两者都输出「候选晶格加取向」与匹配置信度——若多数斑点落不进任何候选格，先别怪算法，回头查冰环掩膜与找斑参数。评价指标化的尺子：</text>
+  <text x="726" y="418" font-size="9.5" fill="#475569">晶格与取向正确时，绝大多数斑点的预测位置与实测吻合到亚像素级，残余偏差交给精修吸收。</text>
+  <rect x="30" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、晶格歧义与伪对称陷阱</text>
+  <rect x="60" y="492" width="150" height="110" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="75" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="75" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="75" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="110" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="110" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="110" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="145" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="145" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="145" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="180" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="180" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="180" cy="580" r="3.5" fill="#64748b"/>
+  <text x="135" y="622" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">tP：仅角上有格点</text>
+  <rect x="230" y="492" width="150" height="110" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <circle cx="245" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="245" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="245" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="280" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="280" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="280" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="315" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="315" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="315" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="350" cy="510" r="3.5" fill="#64748b"/>
+  <circle cx="350" cy="545" r="3.5" fill="#64748b"/>
+  <circle cx="350" cy="580" r="3.5" fill="#64748b"/>
+  <circle cx="262.5" cy="527.5" r="3.5" fill="#dc2626"/>
+  <circle cx="262.5" cy="562.5" r="3.5" fill="#dc2626"/>
+  <circle cx="297.5" cy="527.5" r="3.5" fill="#dc2626"/>
+  <circle cx="297.5" cy="562.5" r="3.5" fill="#dc2626"/>
+  <circle cx="332.5" cy="527.5" r="3.5" fill="#dc2626"/>
+  <circle cx="332.5" cy="562.5" r="3.5" fill="#dc2626"/>
+  <text x="305" y="622" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">tI：体心额外格点</text>
+  <text x="60" y="640" font-size="9.5" fill="#475569">四方晶系 tP 与 tI 的晶胞度规完全相同（a=b、c 一致），</text>
+  <text x="60" y="653.5" font-size="9.5" fill="#475569">单看斑点位置永远分不出两种心性——裁决靠消光统计：</text>
+  <text x="60" y="667" font-size="9.5" fill="#475569">真 tI 的 h+k+l 为奇的反射系统性缺席。</text>
+  <text x="400" y="486" font-size="11" fill="#1e293b" font-weight="700">奇偶消光：真缺席与伪消光</text>
+  <text x="465" y="508" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">真 tI：奇反射缺席</text>
+  <rect x="408" y="536" width="22" height="44" rx="2" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="438" y="577" width="22" height="3" fill="#dc2626"/>
+  <rect x="468" y="540" width="22" height="40" rx="2" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="498" y="577" width="22" height="3" fill="#dc2626"/>
+  <text x="419" y="598" font-size="9" fill="#64748b" text-anchor="middle">0</text>
+  <text x="449" y="598" font-size="9" fill="#64748b" text-anchor="middle">1</text>
+  <text x="479" y="598" font-size="9" fill="#64748b" text-anchor="middle">2</text>
+  <text x="509" y="598" font-size="9" fill="#64748b" text-anchor="middle">3</text>
+  <text x="625" y="508" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">伪消光：奇反射显著偏弱</text>
+  <rect x="568" y="536" width="22" height="44" rx="2" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="598" y="568" width="22" height="12" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <rect x="628" y="540" width="22" height="40" rx="2" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="658" y="570" width="22" height="10" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="579" y="598" font-size="9" fill="#64748b" text-anchor="middle">0</text>
+  <text x="609" y="598" font-size="9" fill="#64748b" text-anchor="middle">1</text>
+  <text x="639" y="598" font-size="9" fill="#64748b" text-anchor="middle">2</text>
+  <text x="669" y="598" font-size="9" fill="#64748b" text-anchor="middle">3</text>
+  <text x="533" y="612" font-size="8.5" fill="#64748b" text-anchor="middle">h+k+l 序号（示意）</text>
+  <text x="400" y="636" font-size="9.5" fill="#475569">非晶体学平移（如二聚体按半平移堆垛）</text>
+  <text x="400" y="649.5" font-size="9.5" fill="#475569">让 tP 晶体的奇反射显著偏弱、貌似缺席；</text>
+  <text x="400" y="663" font-size="9.5" fill="#475569">误选 tI 则近半反射按消光扔掉、完整度虚低一半，</text>
+  <text x="400" y="676.5" font-size="9.5" fill="#475569">漏选则本该缺席的噪声反射混进合并、R<tspan dy="2.1" font-size="6.8">meas</tspan><tspan dy="-2.1"> 暴涨——稳妥做法：</tspan></text>
+  <text x="400" y="690" font-size="9.5" fill="#475569">两种心性各跑一遍缩放合并，比对统计量再拍板。</text>
+  <text x="60" y="700" font-size="10" fill="#475569">预警工具两件：差值帕特森的原点峰诊断伪平移（分子按非晶体学平移堆垛，使部分反射系统性增强）；孪生的预警是孪生分数趋近 0.5</text>
+  <text x="60" y="714" font-size="10" fill="#475569">（完全孪生）与合并 R 因子反常偏低——「好得可疑」的低合并 R 正是假对称平均的结果。</text>
+  <text x="60" y="748" font-size="11" fill="#1e293b" font-weight="700">L 检验：L = (I<tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4">−I</tspan><tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4">)/(I</tspan><tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4">+I</tspan><tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4">) 的 |L| 分布</tspan></text>
+  <rect x="66" y="812" width="26" height="38" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="96" y="808" width="26" height="42" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="126" y="810" width="26" height="40" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="156" y="814" width="26" height="36" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="186" y="809" width="26" height="41" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="216" y="812" width="26" height="38" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="246" y="810" width="26" height="40" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="276" y="808" width="26" height="42" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <line x1="60" y1="850" x2="312" y2="850" stroke="#475569" stroke-width="1.6"/>
+  <text x="180" y="872" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">理想单晶：|L| 近均匀分布</text>
+  <rect x="386" y="786" width="26" height="64" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="416" y="800" width="26" height="50" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="446" y="812" width="26" height="38" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="476" y="822" width="26" height="28" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="506" y="830" width="26" height="20" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="536" y="836" width="26" height="14" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="566" y="840" width="26" height="10" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <rect x="596" y="843" width="26" height="7" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <line x1="380" y1="850" x2="632" y2="850" stroke="#475569" stroke-width="1.6"/>
+  <text x="500" y="872" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">孪生：配对强度被拉平、|L| 向零堆积</text>
+  <text x="180" y="890" font-size="9" fill="#64748b" text-anchor="middle">|L|（0 至 1）</text>
+  <text x="500" y="890" font-size="9" fill="#64748b" text-anchor="middle">|L|（0 至 1）</text>
+  <text x="60" y="916" font-size="9.5" fill="#475569">孪生分数越接近 0.5 堆积越狠；配合「好得可疑」的低合并 R 与表观 Laue 对称升阶，三证齐全即可立案（孪生系统判定见第 11 章）。</text>
+  <rect x="710" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、晶胞、取向与 mosaicity 的精修与空间群判定</text>
+  <text x="726" y="486" font-size="11.5" fill="#1e293b" font-weight="700">最小二乘精修：把预测贴到实测上</text>
+  <text x="726" y="506" font-size="10" fill="#475569">待精修参数：晶胞六参数、取向三参数、探测器几何（距离、</text>
+  <text x="726" y="520" font-size="10" fill="#475569">中心、扭转）与 mosaicity——精修收敛后，</text>
+  <text x="726" y="534" font-size="10" fill="#475569">程序即可预测全部帧上的全部反射位置，积分才有靶子。</text>
+  <text x="726" y="572" font-size="11" fill="#1e293b" font-weight="700">mosaicity：嵌镶块角分布的宽度</text>
+  <text x="726" y="592" font-size="10" fill="#475569">0.1° 上下为良、1° 为差；</text>
+  <text x="726" y="606" font-size="10" fill="#475569">它决定每个反射在 φ 方向摊到几帧——0.3° 镶嵌配 0.2° 帧宽，</text>
+  <text x="726" y="620" font-size="10" fill="#475569">多数反射跨两帧。各向异性镶嵌也应建模，</text>
+  <text x="726" y="634" font-size="10" fill="#475569">否则斑点尺寸的系统残差会被误读为损伤；</text>
+  <text x="726" y="648" font-size="10" fill="#475569">mosaicity 估错半档，强度就有系统偏差。</text>
+  <text x="726" y="672" font-size="11" fill="#1e293b" font-weight="700">收敛判据</text>
+  <text x="726" y="692" font-size="10" fill="#475569">斑点位置残差（预测与实测之差）应压到亚像素量级、</text>
+  <text x="726" y="706" font-size="10" fill="#475569">且不随帧号漂移；若有漂移，先怀疑晶体在冷流里「爬」</text>
+  <text x="726" y="720" font-size="10" fill="#475569">（晶体轴与测角仪轴不重合、冰垫松动），其次才是模型不足。</text>
+  <text x="1030" y="486" font-size="11.5" fill="#1e293b" font-weight="700">手性约束红利：230 个砍到 65 个</text>
+  <text x="1030" y="506" font-size="10" fill="#475569">蛋白由 L 型氨基酸等手性构件构成，只能结晶进 65 个 Sohncke 空间群</text>
+  <text x="1030" y="520" font-size="10" fill="#475569">（仅含旋转、螺旋与平移操作的群）。</text>
+  <rect x="1030" y="548" width="44" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1052" y="575.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">步骤</text>
+  <rect x="1074" y="548" width="158" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1153" y="575.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">依据</text>
+  <rect x="1232" y="548" width="122" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1293" y="575.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">输出</text>
+  <rect x="1030" y="592" width="44" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1052" y="612.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">1</text>
+  <rect x="1074" y="592" width="158" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1153" y="612.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">Laue 对称：等效方向强度</text>
+  <rect x="1232" y="592" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1293" y="612.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">可能点群</text>
+  <rect x="1030" y="622" width="324" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="1030" y="622" width="44" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1052" y="642.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">2</text>
+  <rect x="1074" y="622" width="158" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1153" y="642.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">系统消光：消光规律</text>
+  <rect x="1232" y="622" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1293" y="642.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">候选空间群</text>
+  <rect x="1030" y="652" width="44" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1052" y="672.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">3</text>
+  <rect x="1074" y="652" width="158" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1153" y="672.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">手性：限 65 个 Sohncke 群</text>
+  <rect x="1232" y="652" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1293" y="672.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">裁掉非手性群</text>
+  <rect x="1030" y="682" width="324" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="1030" y="682" width="44" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1052" y="702.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">4</text>
+  <rect x="1074" y="682" width="158" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1153" y="702.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">绝对构型：反常与 Flack</text>
+  <rect x="1232" y="682" width="122" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1293" y="702.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">最终群与手性</text>
+  <text x="1030" y="726" font-size="9.5" fill="#475569">实操抓手：第一步以等效方向强度相关检验筛 Laue 群</text>
+  <text x="1030" y="739.5" font-size="9.5" fill="#475569">（xtriage 给出各候选相关系数与置信度）；</text>
+  <text x="1030" y="753" font-size="9.5" fill="#475569">2<tspan dy="2.1" font-size="6.8">1</tspan><tspan dy="-2.1"> 与 2 的分野只看 0k0 的奇偶；第四步 Flack 参数贴近零确认绝对构型、</tspan></text>
+  <text x="1030" y="766.5" font-size="9.5" fill="#475569">贴近 0.5 提示倒反孪生。</text>
+  <text x="726" y="786" font-size="10" fill="#475569">四步走完仍有歧义时（如 P2<tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2"> 与 P2 择一），以强度统计是否支持螺旋轴消光、以及换群重精修后的 R 因子裁决；终审惯例：</tspan></text>
+  <text x="726" y="800" font-size="10" fill="#475569">残存的两个候选各精修一轮，R<tspan dy="2.2" font-size="7.2">free</tspan><tspan dy="-2.2"> 低者胜出——让数据自己当法官。现代流程换群成本已很低，宁可多试。</tspan></text>
+  <rect x="726" y="830" width="180" height="40" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="816" y="854" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">残存候选群 A 与 B</text>
+  <line x1="910" y1="850" x2="930" y2="850" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="934" y="830" width="200" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1034" y="854" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">各精修一轮（换群成本已很低）</text>
+  <line x1="1138" y1="850" x2="1158" y2="850" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1162" y="830" width="192" height="40" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1258" y="854" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">R<tspan dy="2.2" font-size="7.2">free</tspan><tspan dy="-2.2"> 低者胜出</tspan></text>
+  <text x="726" y="906" font-size="9.5" fill="#64748b">本节产物：晶格、取向、mosaicity 与空间群——它们是下一节积分的靶子与坐标系。</text>
+</svg>

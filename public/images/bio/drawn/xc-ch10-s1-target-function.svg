@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">精修的数学基础：目标函数与先验</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">目标函数=数据项+restraints（键长σ0.02Å、键角σ2°）；2000原子约8000参数，2Å观测刚打平、3Å每原子仅约1观测；rmsZ约1为健康；体溶剂掩膜更新R常降数个百分点</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、目标函数：数据项与先验项的合流</text>
+  <rect x="56" y="182" width="270" height="60" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.9"/>
+  <text x="191" y="208" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">数据项</text>
+  <text x="191" y="230" font-size="10" fill="#475569" text-anchor="middle">ML 似然或 LS 残差（权重 wA 调节）</text>
+  <text x="350" y="216" font-size="24" fill="#1e293b" text-anchor="middle" font-weight="700">＋</text>
+  <rect x="414" y="182" width="270" height="60" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.9"/>
+  <text x="549" y="208" font-size="13" fill="#134e4a" text-anchor="middle" font-weight="700">立体化学 restraints 项</text>
+  <text x="549" y="230" font-size="10" fill="#475569" text-anchor="middle">另有占有率先验等小项</text>
+  <rect x="56" y="262" width="196" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="70" y="284" font-size="10.5" fill="#1e293b" font-weight="700">键长</text>
+  <text x="70" y="302" font-size="9.5" fill="#475569">σ 约 0.02 Å（1.54 Å 碳碳单键的弹簧）</text>
+  <rect x="272" y="262" width="196" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="286" y="284" font-size="10.5" fill="#1e293b" font-weight="700">键角</text>
+  <text x="286" y="302" font-size="9.5" fill="#475569">σ 约 2°</text>
+  <rect x="488" y="262" width="196" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="502" y="284" font-size="10.5" fill="#1e293b" font-weight="700">平面组</text>
+  <text x="502" y="302" font-size="9.5" fill="#475569">芳环／酰胺／羧酸根，σ 约 0.02 Å</text>
+  <rect x="56" y="330" width="196" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="70" y="352" font-size="10.5" fill="#1e293b" font-weight="700">手性体积</text>
+  <text x="70" y="370" font-size="9.5" fill="#475569">三键矢量混合积，σ 约 0.2 Å<tspan dy="-3.2" font-size="6.8">3</tspan></text>
+  <rect x="272" y="330" width="196" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="286" y="352" font-size="10.5" fill="#1e293b" font-weight="700">非键接触</text>
+  <text x="286" y="370" font-size="9.5" fill="#475569">挤压与氢键方向，约 4 Å 监视窗</text>
+  <rect x="488" y="330" width="196" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="502" y="352" font-size="10.5" fill="#1e293b" font-weight="700">NCS 与参考模型</text>
+  <text x="502" y="370" font-size="9.5" fill="#475569">拷贝间与对参考偏差，σ 按分辨率分档</text>
+  <text x="56" y="416" font-size="10.5" fill="#475569">Engh 与 Huber 1991 年（2001 年修订）从剑桥结构数据库的氨基酸小分子统计出蛋白参数集。restraints 的统计含义：</text>
+  <text x="56" y="431" font-size="10.5" fill="#475569">把「碳碳单键约 1.54 Å」这类小分子知识当作额外的伪观测方程，与衍射观测一起进极小化——每条 restraint 都有目标值与 σ，</text>
+  <text x="56" y="446" font-size="10.5" fill="#475569">σ 就是它的发言权。</text>
+  <text x="56" y="478" font-size="10.5" fill="#64748b">σ 的取值哲学：太紧则几何绑架数据，太松则数据压弯几何——0.02 Å 与 2° 是兼顾数据与先验的行业共识。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、最小二乘与最大似然：两种世界观</text>
+  <rect x="730" y="182" width="300" height="210" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.7"/>
+  <text x="880" y="208" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">最小二乘（LS）</text>
+  <text x="746" y="234" font-size="10" fill="#475569">古典表述：对每个反射计算 |F<tspan dy="2.2" font-size="7.2">obs</tspan><tspan dy="-2.2">| 与 |F</tspan><tspan dy="2.2" font-size="7.2">calc</tspan><tspan dy="-2.2">| 之差，</tspan></text>
+  <text x="746" y="248" font-size="10" fill="#475569">加权平方求和后极小化。隐含假设有二：</text>
+  <text x="746" y="262" font-size="10" fill="#475569">观测误差服从高斯分布；模型是「真值加随机误差」。</text>
+  <text x="746" y="314" font-size="10" fill="#991b1b">衍射数据两条都不满足：光子计数是泊松统计，</text>
+  <text x="746" y="328" font-size="10" fill="#991b1b">弱反射误差分布不对称；模型不完备——无序、</text>
+  <text x="746" y="342" font-size="10" fill="#991b1b">溶剂与部分占有率都是系统性缺失。</text>
+  <text x="746" y="372" font-size="10" fill="#dc2626" font-weight="700">弱数据、坏模型处给出有偏的解。</text>
+  <rect x="1050" y="182" width="290" height="210" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.9"/>
+  <text x="1195" y="208" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">最大似然（ML）</text>
+  <text x="1066" y="234" font-size="10" fill="#475569">不再假设模型正确，</text>
+  <text x="1066" y="248" font-size="10" fill="#475569">而问「若真实结构是当前模型叠加某种误差分布，</text>
+  <text x="1066" y="262" font-size="10" fill="#475569">观测到这组数据的概率多大」，参数取概率最大处。</text>
+  <text x="1066" y="302" font-size="10" fill="#475569">模型误差以 σ<tspan dy="2.2" font-size="7.2">A</tspan><tspan dy="-2.2"> 型折扣因子进入似然</tspan></text>
+  <text x="1066" y="316" font-size="10" fill="#475569">（与第 9 章 sigma-A 加权图同源）；</text>
+  <text x="1066" y="330" font-size="10" fill="#475569">对误差不对称的弱反射自动区别对待高估与低估；</text>
+  <text x="1066" y="344" font-size="10" fill="#475569">解释不了的部分记进误差项而非硬拉坐标。</text>
+  <text x="1066" y="378" font-size="10" fill="#075985" font-weight="700">REFMAC 与 phenix.refine 的标准内核。</text>
+  <line x1="740" y1="470" x2="1340" y2="470" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="788" cy="470" r="6.5" fill="#dc2626"/>
+  <line x1="788" y1="461" x2="788" y2="440" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="788" y="420" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1980–90 年代</text>
+  <text x="788" y="400" font-size="12" fill="#64748b" text-anchor="middle">Bricogne 奠定理论</text>
+  <circle cx="992" cy="470" r="6.5" fill="#dc2626"/>
+  <line x1="992" y1="479" x2="992" y2="500" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="992" y="520" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1996／1997</text>
+  <text x="992" y="540" font-size="12" fill="#64748b" text-anchor="middle">Pannu 与 Read；Murshudov 实用化</text>
+  <circle cx="1208" cy="470" r="6.5" fill="#dc2626"/>
+  <line x1="1208" y1="461" x2="1208" y2="440" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1208" y="420" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1997／2012</text>
+  <text x="1208" y="400" font-size="12" fill="#64748b" text-anchor="middle">REFMAC；phenix.refine</text>
+  <text x="730" y="524" font-size="10.5" fill="#64748b">同一个「模型有错、概率说话」的思想，在成图端是加权系数（sigma-A 加权图），在精修端是目标函数。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、参数与观测的数目困境：先验使问题正定</text>
+  <rect x="91.21709999999999" y="612.65" width="177.56580000000002" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="180" y="625.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">250 残基 · 约 2000 个非氢原子</text>
+  <rect x="377.3649" y="612.65" width="185.27020000000002" height="18.7" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="470" y="625.96" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">3 坐标＋1 个 B＝约 8000 个参数</text>
+  <rect x="70" y="690" width="300" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="145" y1="860" x2="145" y2="866" stroke="#475569" stroke-width="1.8"/>
+  <text x="145" y="882" font-size="13" fill="#64748b" text-anchor="middle">2 Å</text>
+  <line x1="295" y1="860" x2="295" y2="866" stroke="#475569" stroke-width="1.8"/>
+  <text x="295" y="882" font-size="13" fill="#64748b" text-anchor="middle">3 Å</text>
+  <line x1="64" y1="860" x2="70" y2="860" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="864" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="64" y1="775" x2="70" y2="775" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="779" font-size="13" fill="#64748b" text-anchor="end">2</text>
+  <line x1="64" y1="690" x2="70" y2="690" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="694" font-size="13" fill="#64748b" text-anchor="end">4</text>
+  <text x="220" y="904" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">分辨率</text>
+  <text x="220" y="678" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">每原子的独立观测数</text>
+  <rect x="112" y="753.75" width="66" height="106.25" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="145" y="743.75" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">约 2–3 个</text>
+  <rect x="262" y="817.5" width="66" height="42.5" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="295" y="807.5" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">约 1 个</text>
+  <line x1="70" y1="690" x2="370" y2="690" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="256" y="681" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">每原子 4 个参数（虚线）</text>
+  <text x="410" y="640" font-size="10.5" fill="#475569">独立反射数与晶胞体积成正比：</text>
+  <text x="410" y="655" font-size="10.5" fill="#475569">2 Å 数据对典型晶胞给出与原子数同量级的独立反射</text>
+  <text x="410" y="670" font-size="10.5" fill="#475569">（每原子约 2 至 3 个），再扣去 5% 自由集；到 3 Å，</text>
+  <text x="410" y="685" font-size="10.5" fill="#475569">每原子只剩约 1 个观测。</text>
+  <text x="410" y="726" font-size="10.5" fill="#475569">观测数在 2 Å 已与参数数打平甚至更少，</text>
+  <text x="410" y="741" font-size="10.5" fill="#475569">更低分辨率则明确欠定——不加先验，</text>
+  <text x="410" y="756" font-size="10.5" fill="#475569">方程组有无穷多组「同样解释数据」的解，</text>
+  <text x="410" y="771" font-size="10.5" fill="#475569">精修器任选一个，通常是几何荒谬的那个。</text>
+  <text x="410" y="812" font-size="10.5" fill="#64748b">restraints 的数学职能正是补足数千条伪观测让问题正定：</text>
+  <text x="410" y="827" font-size="10.5" fill="#64748b">数据管不动的方向，先验接管。</text>
+  <text x="410" y="842" font-size="10.5" fill="#64748b">分辨率越低档位越要认真——3.5 Å「强 NCS 加 group B」正是这句原理的工程化。</text>
+  <text x="60" y="892" font-size="10" fill="#64748b">2 Å 的结构精修各向异性 B 是自欺（数据撑不起六倍参数），3.5 Å 连个体 B 都嫌奢侈。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、权重定价（rmsZ）与体溶剂背景账</text>
+  <rect x="730" y="616" width="192" height="28" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <rect x="922" y="616" width="216" height="28" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
+  <rect x="1138" y="616" width="192" height="28" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="730" y="660" font-size="10" fill="#64748b" text-anchor="middle">0</text>
+  <text x="922" y="660" font-size="10" fill="#64748b" text-anchor="middle">0.8</text>
+  <text x="1138" y="660" font-size="10" fill="#64748b" text-anchor="middle">1.5</text>
+  <text x="1330" y="660" font-size="10" fill="#64748b" text-anchor="middle">2</text>
+  <text x="826" y="631" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">先验绑架</text>
+  <text x="1030" y="631" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">健康带（目标约 1）</text>
+  <text x="1234" y="631" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">数据压弯化学</text>
+  <text x="1030" y="682" font-size="10" fill="#475569" text-anchor="middle">几何 rmsZ（键长键角实际偏差对参数集 σ 的 Z 分数均方根）</text>
+  <rect x="750" y="720" width="270" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="744" y1="920" x2="750" y2="920" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="924" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="744" y1="820" x2="750" y2="820" stroke="#475569" stroke-width="1.8"/>
+  <line x1="744" y1="720" x2="750" y2="720" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="724" font-size="13" fill="#64748b" text-anchor="end">高 |F|</text>
+  <text x="885" y="964" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">分辨率壳层（低角在左）</text>
+  <text x="885" y="708" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">Babinet 原则：低角的系统残差</text>
+  <path d="M750,730 C756.8,735.0 777.0,748.3 790.5,760 C804.0,771.7 815.3,787.3 831,800 C846.8,812.7 867.0,826.0 885,836 C903.0,846.0 916.5,853.3 939,860 C961.5,866.7 1006.5,873.3 1020,876" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <path d="M750,810 C756.8,810.0 777.0,809.0 790.5,810 C804.0,811.0 815.3,811.0 831,816 C846.8,821.0 867.0,832.3 885,840 C903.0,847.7 916.5,855.7 939,862 C961.5,868.3 1006.5,875.3 1020,878" fill="none" stroke="#1e293b" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <path d="M750,808 C756.8,808.7 777.0,810.3 790.5,812 C804.0,813.7 815.3,813.7 831,818 C846.8,822.3 867.0,831.0 885,838 C903.0,845.0 916.5,853.7 939,860 C961.5,866.3 1006.5,873.3 1020,876" fill="none" stroke="#059669" stroke-width="2"/>
+  <rect x="762" y="732.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="779.9" y="739.24" font-size="9" fill="#475569">只算蛋白 |F<tspan dy="2.0" font-size="6.5">calc</tspan><tspan dy="-2.0">|</tspan></text>
+  <rect x="864.3024" y="732.22" width="9.9" height="7.56" rx="3" fill="#1e293b" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="882.2024" y="739.24" font-size="9" fill="#475569">观测 |F<tspan dy="2.0" font-size="6.5">obs</tspan><tspan dy="-2.0">|</tspan></text>
+  <rect x="946.5312" y="732.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="964.4312" y="739.24" font-size="9" fill="#475569">加体溶剂修正</text>
+  <text x="1050" y="716" font-size="10" fill="#475569">体溶剂修正处理占晶体体积三到五成的无序溶剂：</text>
+  <text x="1050" y="730" font-size="10" fill="#475569">溶剂区平均密度低于蛋白区，其低频散射恰是蛋白密度的「负像」，</text>
+  <text x="1050" y="744" font-size="10" fill="#475569">两相相消使低角 |F<tspan dy="2.2" font-size="7.2">obs</tspan><tspan dy="-2.2">| 系统性低于只算蛋白的 |F</tspan><tspan dy="2.2" font-size="7.2">calc</tspan><tspan dy="-2.2">|。</tspan></text>
+  <text x="1050" y="796" font-size="10" fill="#475569">主流修法是平坦溶剂掩膜：mask 之外是蛋白、</text>
+  <text x="1050" y="810" font-size="10" fill="#475569">之内溶剂密度取常数 k<tspan dy="2.2" font-size="7.2">sol</tspan><tspan dy="-2.2"> 约 0.3 至 0.4 e/Å</tspan><tspan dy="-3.4" font-size="7.2">3</tspan><tspan dy="3.4"> 配溶剂 B 40 至 60 Å</tspan><tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <text x="1050" y="824" font-size="10" fill="#475569">（Jiang 与 Brünger 1994 年）。掩膜一更新，</text>
+  <text x="1050" y="838" font-size="10" fill="#475569">低角残差立刻塌落、R 常降数个百分点——「不修不知道」的大头。</text>
+  <text x="1050" y="880" font-size="10" fill="#64748b">纪律：删原子或动模型后掩膜必须重算，</text>
+  <text x="1050" y="894" font-size="10" fill="#64748b">否则溶剂回填会抹掉小配体的证据；整体缩放可带各向异性</text>
+  <text x="1050" y="908" font-size="10" fill="#64748b">（6 参数），背景账先算清、再动原子。</text>
+</svg>

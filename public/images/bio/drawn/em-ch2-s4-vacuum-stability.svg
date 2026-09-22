@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">真空系统与仪器稳定性：气路、泵编队与环境纪律</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">枪区10<tspan dy="-5.8" font-size="12.2">-7</tspan><tspan dy="5.8">–10</tspan><tspan dy="-5.8" font-size="12.2">-8</tspan><tspan dy="5.8">Pa、镜筒约10</tspan><tspan dy="-5.8" font-size="12.2">-5</tspan><tspan dy="5.8">Pa、样品室10</tspan><tspan dy="-5.8" font-size="12.2">-4</tspan><tspan dy="5.8">–10</tspan><tspan dy="-5.8" font-size="12.2">-5</tspan><tspan dy="5.8">Pa靠差分抽气衔接；泵编队机械-分子-离子-钛升华；振动nm级、磁场低于约1mG、电源10</tspan><tspan dy="-5.8" font-size="12.2">-6</tspan><tspan dy="5.8">、冷却水±0.1°C</tspan></text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、真空分级：三个区，三种要求</text>
+  <text x="50" y="170" font-size="11" fill="#475569">自由程的算术：气压 10<tspan dy="-3.7" font-size="7.9">5</tspan><tspan dy="3.7"> Pa 时电子的平均自由程微不足道，束流刚出枪口便被散射成雾；抽到镜筒工作真空 10</tspan><tspan dy="-3.7" font-size="7.9">-5</tspan><tspan dy="3.7"> Pa，</tspan></text>
+  <text x="50" y="186" font-size="11" fill="#475569">平均自由程已达数百米量级——从枪到荧光屏的一米多路程才算「通畅」。</text>
+  <rect x="50" y="206" width="610" height="60" rx="8" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="66" y="230" font-size="13" fill="#0f766e" font-weight="700">电子枪区</text>
+  <text x="66" y="250" font-size="12" fill="#0f766e" font-weight="700">10<tspan dy="-4.1" font-size="8.6">-7</tspan><tspan dy="4.1">–10</tspan><tspan dy="-4.1" font-size="8.6">-8</tspan><tspan dy="4.1"> Pa</tspan></text>
+  <text x="250" y="228" font-size="10.5" fill="#475569">最苛刻：肖特基尖在 1800 K 工作，残余氧与水汽侵蚀发射面、</text>
+  <text x="250" y="243" font-size="10.5" fill="#475569">离子回轰造成发射闪烁——枪区独享离子泵，并用差分孔与镜筒隔离。</text>
+  <rect x="50" y="274" width="610" height="60" rx="8" fill="#e0f2fe" fill-opacity="0.55" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="66" y="298" font-size="13" fill="#0369a1" font-weight="700">镜筒主体</text>
+  <text x="66" y="318" font-size="12" fill="#0369a1" font-weight="700">约 10<tspan dy="-4.1" font-size="8.6">-5</tspan><tspan dy="4.1"> Pa</tspan></text>
+  <text x="250" y="296" font-size="10.5" fill="#475569">电子束沿程散射损失小，光阑与极靴不放电；</text>
+  <text x="250" y="311" font-size="10.5" fill="#475569">直接电子探测相机腔体也要求 10<tspan dy="-3.6" font-size="7.6">-5</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">-7</tspan><tspan dy="3.6"> Pa，避免背散射电子被气体「晕」开。</tspan></text>
+  <rect x="50" y="342" width="610" height="60" rx="8" fill="#fef3c7" fill-opacity="0.55" stroke="#d97706" stroke-width="1.6"/>
+  <text x="66" y="366" font-size="13" fill="#d97706" font-weight="700">样品室</text>
+  <text x="66" y="386" font-size="12" fill="#d97706" font-weight="700">10<tspan dy="-4.1" font-size="8.6">-4</tspan><tspan dy="4.1">–10</tspan><tspan dy="-4.1" font-size="8.6">-5</tspan><tspan dy="4.1"> Pa</tspan></text>
+  <text x="250" y="364" font-size="10.5" fill="#475569">频繁换样牺牲部分真空换取可达性，</text>
+  <text x="250" y="379" font-size="10.5" fill="#475569">靠差分抽气保护上游——真空链的每一环都对应一个物理损失机制。</text>
+  <rect x="180.70499999999998" y="406.65" width="278.59000000000003" height="18.7" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="320" y="419.96" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">差分抽气衔接三区：分区达标、分段可独立放气维修</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、泵的编队：从粗抽到终极真空</text>
+  <text x="1040" y="178" font-size="11" fill="#64748b" text-anchor="middle">一支接力编队：压力由粗到细逐级交接，无油化是像质量要求</text>
+  <rect x="730" y="196" width="140" height="96" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#d97706" stroke-width="1.6"/>
+  <text x="800" y="252" font-size="12.5" fill="#d97706" text-anchor="middle" font-weight="700">机械（旋片）泵</text>
+  <text x="800" y="274" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">大气抽到几 Pa</text>
+  <text x="738" y="312" font-size="9.5" fill="#475569">一切高真空泵的前级</text>
+  <rect x="882" y="196" width="140" height="96" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="952" y="252" font-size="12.5" fill="#0369a1" text-anchor="middle" font-weight="700">涡轮分子泵</text>
+  <text x="952" y="274" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">接力到 10<tspan dy="-3.6" font-size="7.6">-4</tspan><tspan dy="3.6"> Pa</tspan></text>
+  <text x="890" y="312" font-size="9.5" fill="#475569">动叶轮把分子打向排气口</text>
+  <rect x="1034" y="196" width="140" height="96" rx="8" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1104" y="252" font-size="12.5" fill="#0f766e" text-anchor="middle" font-weight="700">离子泵</text>
+  <text x="1104" y="274" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">无油无振动维持</text>
+  <text x="1042" y="312" font-size="9.5" fill="#475569">电离残余气体，溅射钛膜捕获</text>
+  <rect x="1186" y="196" width="140" height="96" rx="8" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1256" y="252" font-size="12.5" fill="#6d28d9" text-anchor="middle" font-weight="700">钛升华泵</text>
+  <text x="1256" y="274" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">攻峰补刀</text>
+  <text x="1194" y="312" font-size="9.5" fill="#475569">周期升华新鲜钛膜，</text>
+  <text x="1194" y="325" font-size="9.5" fill="#475569">冷面大量吸气</text>
+  <circle cx="800" cy="222" r="15" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="806" cy="222" r="5.5" fill="#475569"/>
+  <line x1="788" y1="222" x2="800" y2="222" stroke="#475569" stroke-width="2"/>
+  <line x1="942" y1="208" x2="986" y2="208" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="949" y1="215" x2="979" y2="215" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="942" y1="222" x2="986" y2="222" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="949" y1="229" x2="979" y2="229" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="942" y1="236" x2="986" y2="236" stroke="#0369a1" stroke-width="2.2"/>
+  <rect x="1104" y="210" width="60" height="24" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="1118" y1="214" x2="1118" y2="230" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="1150" y1="214" x2="1150" y2="230" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="1126" cy="222" r="2.2" fill="#0f766e"/>
+  <circle cx="1136" cy="222" r="2.2" fill="#0f766e"/>
+  <circle cx="1144" cy="222" r="2.2" fill="#0f766e"/>
+  <path d="M 1236,228 l 9,-12 l 9,12 l 9,-12 l 9,12 l 9,-12 l 9,12" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="1230" y1="240" x2="1292" y2="240" stroke="#6d28d9" stroke-width="3"/>
+  <line x1="872" y1="244" x2="880" y2="244" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1024" y1="244" x2="1032" y2="244" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1176" y1="244" x2="1184" y2="244" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="730" y="356" font-size="10.5" fill="#475569">整机用闸阀分成可独立放气维修的段落：更换灯丝只放枪、不动镜筒，是二十年老机仍能保持分辨率的日常纪律；</text>
+  <text x="730" y="371" font-size="10.5" fill="#475569">粗抽段改用干泵或隔膜泵，并配干燥氮气放气阀。</text>
+  <text x="730" y="392" font-size="10.5" fill="#475569">日常读表关注「抽气速率是否变慢」：一台抽到工作真空的时间明显拉长的机器，往往先在真空曲线上自报病情，随后才在像质上。</text>
+  <rect x="30" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、残余气体的三宗罪与对策</text>
+  <rect x="50" y="486" width="400" height="62" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="64" y="508" font-size="12.5" fill="#0369a1" font-weight="700">一、散射损失</text>
+  <text x="64" y="526" font-size="10.5" fill="#475569">残余分子把电子撞离光轴：束流沿程衰减、衬度整体变暗，且引入随机背景。</text>
+  <rect x="50" y="558" width="400" height="62" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="64" y="580" font-size="12.5" fill="#dc2626" font-weight="700">二、碳氢污染（最难缠）</text>
+  <text x="64" y="598" font-size="10.5" fill="#475569">泵油、密封脂与样品自带碳氢被束斑辐解聚合成非晶碳，</text>
+  <text x="64" y="612" font-size="10.5" fill="#475569">束斑停留处越淀越厚——「孔洞越看越黑、光阑越用越脏」；冷表面像捕蝇纸，</text>
+  <text x="64" y="626" font-size="10.5" fill="#475569">低温下更甚。</text>
+  <rect x="50" y="630" width="400" height="62" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="64" y="652" font-size="12.5" fill="#d97706" font-weight="700">三、放电与充电</text>
+  <text x="64" y="670" font-size="10.5" fill="#475569">真空不良时高压电极间电离击穿：轻则束流抖动，重则损伤电源；</text>
+  <text x="64" y="684" font-size="10.5" fill="#475569">绝缘件表面污染聚积静电，让像「游走」。</text>
+  <text x="478" y="490" font-size="13" fill="#134e4a" font-weight="700">对策</text>
+  <rect x="470.8875" y="507.075" width="178.225" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="560" y="519.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">冷指：比样品更冷，先截留污染物</text>
+  <rect x="470.8875" y="547.075" width="178.225" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="560" y="559.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">等离子清洗：载网、样品杆、光阑</text>
+  <rect x="475.4298" y="587.075" width="169.1404" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="560" y="599.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">无油操作：干泵粗抽 + 氮气放气</text>
+  <text x="478" y="640" font-size="10.5" fill="#475569">三宗罪渐进而隐蔽：昨天的数据还干净，</text>
+  <text x="478" y="655" font-size="10.5" fill="#475569">今天就莫名其妙脏了——排查清单里真空永远排在前三行。</text>
+  <rect x="710" y="452" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、环境纪律与 cryo-EM 专属清单</text>
+  <rect x="730" y="486" width="96" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="826" y="486" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">要求或量级</text>
+  <rect x="1066" y="486" width="284" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="513.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">常见对策</text>
+  <rect x="730" y="530" width="96" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="548.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">地面振动</text>
+  <rect x="826" y="530" width="240" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="548.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">敏感频段 nm 级（约 1–100 Hz）</text>
+  <rect x="1066" y="530" width="284" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="548.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">独立地基、隔振垫、夜间收数</text>
+  <rect x="730" y="556" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="556" width="96" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="574.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">杂散磁场</text>
+  <rect x="826" y="556" width="240" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="574.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">交变场低于约 1 mG（0.1 μT）</text>
+  <rect x="1066" y="556" width="284" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="574.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">选址测绘、远离电梯变压器</text>
+  <rect x="730" y="582" width="96" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="600.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">电源</text>
+  <rect x="826" y="582" width="240" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="600.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高压/透镜电流稳定 10<tspan dy="-3.6" font-size="7.6">-6</tspan></text>
+  <rect x="1066" y="582" width="284" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="600.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">独立稳压、专用地线、UPS</text>
+  <rect x="730" y="608" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="608" width="96" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="626.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">温度</text>
+  <rect x="826" y="608" width="240" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="626.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">冷却水约 ±0.1 °C，室温 ±1 °C</text>
+  <rect x="1066" y="608" width="284" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="626.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">专用冷水机组与恒温空调</text>
+  <rect x="730" y="634" width="96" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="652.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">真空</text>
+  <rect x="826" y="634" width="240" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="652.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">枪 10<tspan dy="-3.6" font-size="7.6">-7</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">-8</tspan><tspan dy="3.6"> Pa、镜筒约 10</tspan><tspan dy="-3.6" font-size="7.6">-5</tspan><tspan dy="3.6"> Pa</tspan></text>
+  <rect x="1066" y="634" width="284" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="652.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">干泵、离子泵、定期烘烤检漏</text>
+  <rect x="730" y="660" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="660" width="96" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="778" y="678.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">污染控制</text>
+  <rect x="826" y="660" width="240" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="946" y="678.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">束斑无可见碳淀积</text>
+  <rect x="1066" y="660" width="284" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1208" y="678.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">冷指、等离子清洗、无油操作</text>
+  <rect x="778.015" y="696.65" width="119.97" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="838" y="709.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">液氮液位与自动补液</text>
+  <rect x="979.749" y="696.65" width="124.502" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1042" y="709.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">冷台热稳定 1–2 小时</text>
+  <rect x="1192.015" y="696.65" width="119.97" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1252" y="709.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">防结霜与防辐照升华</text>
+</svg>

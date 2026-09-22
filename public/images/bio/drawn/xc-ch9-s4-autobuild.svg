@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">自动建模与模型检查</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">ARP/wARP优于1.7Å主链追踪成功率超90%；Buccaneer2.5–3.2Å概率骨架；AutoBuild修饰-建模-精修循环；AF起点按model-to-map分区；register错位三联报警；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">验收五项过关交棒精修</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、自动建模谱系：ARP/wARP 滚雪球与两个同行者</text>
+  <rect x="56" y="186" width="140" height="96" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="126" y="178" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">① 撒自由原子</text>
+  <circle cx="153.55658436213992" cy="238.03233024691357" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="172.63786008230454" cy="235.25234053497942" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="80.48456790123457" cy="258.4785236625514" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="96.35596707818931" cy="203.41458333333333" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="115.06687242798354" cy="219.98644547325102" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="160.320987654321" cy="257.675591563786" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="78.04423868312757" cy="248.85239197530865" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="149.7181069958848" cy="204.1094393004115" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="105.71296296296296" cy="219.5948816872428" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="138.62139917695475" cy="264.3457561728395" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="76.59156378600824" cy="209.6213220164609" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="76.6604938271605" cy="232.2363940329218" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="78.08744855967078" cy="205.89467592592592" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="175.6872427983539" cy="258.52209362139916" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <rect x="216" y="186" width="140" height="96" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="286" y="178" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">② 拽向峰心</text>
+  <circle cx="273.16358024691357" cy="250.47284807956103" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="336.4423868312757" cy="227.83253600823045" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="287.0051440329218" cy="240.3383144718793" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="295.22222222222223" cy="233.64450445816186" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="273.68621399176953" cy="219.9980195473251" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="250.54526748971193" cy="243.79392146776405" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="342.83641975308643" cy="202.46430898491084" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="329.81893004115227" cy="204.7005401234568" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="266.3076131687243" cy="226.0087877229081" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="336.0061728395062" cy="239.5989283264746" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="304.84053497942386" cy="202.60676440329217" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <circle cx="254.29218106995884" cy="207.64957990397806" r="3" fill="#64748b" fill-opacity="0.75"/>
+  <ellipse cx="286" cy="234" rx="52" ry="30" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <rect x="376" y="186" width="140" height="96" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="446" y="178" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">③ 认亲连链</text>
+  <polyline points="392,250 406,236 420,252 434,238 448,254 462,240" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="392" cy="250" r="4.5" fill="#0369a1" fill-opacity="0.9"/>
+  <circle cx="406" cy="236" r="4.5" fill="#0369a1" fill-opacity="0.9"/>
+  <circle cx="420" cy="252" r="4.5" fill="#0369a1" fill-opacity="0.9"/>
+  <circle cx="434" cy="238" r="4.5" fill="#0369a1" fill-opacity="0.9"/>
+  <circle cx="448" cy="254" r="4.5" fill="#0369a1" fill-opacity="0.9"/>
+  <circle cx="462" cy="240" r="4.5" fill="#0369a1" fill-opacity="0.9"/>
+  <text x="430" y="272" font-size="8.5" fill="#64748b" text-anchor="middle">Cα 间距约 3.8 Å</text>
+  <rect x="536" y="186" width="140" height="96" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="606" y="178" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">④ 反哺相位</text>
+  <path d="M 548,244 q 12,-18 26,-8 q 14,10 26,-6 q 12,-14 24,4" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <line x1="586" y1="220" x2="606" y2="236" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
+  <text x="606" y="272" font-size="8.5" fill="#64748b" text-anchor="middle">图变好</text>
+  <line x1="196" y1="234" x2="214" y2="234" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="356" y1="234" x2="374" y2="234" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="516" y1="234" x2="534" y2="234" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="56" y="300" font-size="10.5" fill="#475569">ARP/wARP 的自由原子迭代是「先撒原子、后认亲」：在密度峰上撒一把无化学身份的自由原子，每轮按峰高增删、</text>
+  <text x="56" y="315" font-size="10.5" fill="#475569">把原子拽向峰心；当一段原子的间距与几何渐渐符合肽链模式（相邻 Cα 约 3.8 Å 的节律），程序便把它们连成主链、</text>
+  <text x="56" y="330" font-size="10.5" fill="#475569">赋予化学身份；成链的模型立即反哺相位，图变好又允许更多原子被指认——滚雪球直至全链。这套打法依赖峰与峰分得开，</text>
+  <text x="56" y="345" font-size="10.5" fill="#475569">故 1.7 Å 是道坎：优于约 1.7 Å 的数据上主链自动追踪成功率可超过 90%。</text>
+  <rect x="56" y="396" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="423.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">工具</text>
+  <rect x="186" y="396" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="423.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">舒适分辨率</text>
+  <rect x="316" y="396" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="421" y="423.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">核心思路</text>
+  <rect x="526" y="396" width="146" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="599" y="423.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">弱点</text>
+  <rect x="56" y="440" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="459" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">ARP/wARP</text>
+  <rect x="186" y="440" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="459" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">优于约 1.7 Å</text>
+  <rect x="316" y="440" width="210" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="421" y="459" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">自由原子迭代建模</text>
+  <rect x="526" y="440" width="146" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="599" y="459" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">低分辨率失效</text>
+  <rect x="56" y="467" width="616" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="467" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="486" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">Buccaneer</text>
+  <rect x="186" y="467" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="486" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">2.5–3.2 Å</text>
+  <rect x="316" y="467" width="210" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="421" y="486" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">概率骨架追踪</text>
+  <rect x="526" y="467" width="146" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="599" y="486" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">依赖相位质量</text>
+  <rect x="56" y="494" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="513" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">AutoBuild</text>
+  <rect x="186" y="494" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="513" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">各档通吃</text>
+  <rect x="316" y="494" width="210" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="421" y="513" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">修饰-建模-重建循环</text>
+  <rect x="526" y="494" width="146" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="599" y="513" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">循环耗算力</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、AlphaFold 起点：AF 骨架加密度裁决</text>
+  <rect x="740" y="200" width="330" height="200" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="400" x2="740" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="740" y="422" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="839" y1="400" x2="839" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="839" y="422" font-size="13" fill="#64748b" text-anchor="middle">60</text>
+  <line x1="938" y1="400" x2="938" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="938" y="422" font-size="13" fill="#64748b" text-anchor="middle">120</text>
+  <line x1="1070" y1="400" x2="1070" y2="406" stroke="#475569" stroke-width="1.8"/>
+  <text x="1070" y="422" font-size="13" fill="#64748b" text-anchor="middle">200</text>
+  <line x1="734" y1="400" x2="740" y2="400" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="404" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="734" y1="300" x2="740" y2="300" stroke="#475569" stroke-width="1.8"/>
+  <line x1="734" y1="200" x2="740" y2="200" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="204" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="905" y="444" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">残基序号（沿序列）</text>
+  <text x="905" y="188" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">model-to-map 逐残基拟合度与 pLDDT</text>
+  <path d="M740,216 C746.6,215.0 766.4,209.3 779.6,210 C792.8,210.7 809.3,217.7 819.2,220 C829.1,222.3 831.3,224.0 839,224 C846.7,224.0 856.6,219.3 865.4,220 C874.2,220.7 883.0,218.0 891.8,228 C900.6,238.0 909.4,269.7 918.2,280 C927.0,290.3 933.1,300.0 944.6,290 C956.1,280.0 973.2,233.0 987.5,220 C1001.8,207.0 1016.7,212.0 1030.4,212 C1044.2,212.0 1063.4,218.7 1070,220" fill="none" stroke="#6d28d9" stroke-width="2.4"/>
+  <path d="M740,230 C746.6,228.3 766.4,220.3 779.6,220 C792.8,219.7 809.3,209.7 819.2,228 C829.1,246.3 831.3,308.7 839,330 C846.7,351.3 856.6,354.3 865.4,356 C874.2,357.7 883.0,351.0 891.8,340 C900.6,329.0 909.4,309.3 918.2,290 C927.0,270.7 933.1,236.3 944.6,224 C956.1,211.7 973.2,216.7 987.5,216 C1001.8,215.3 1016.7,218.3 1030.4,220 C1044.2,221.7 1063.4,225.0 1070,226" fill="none" stroke="#0369a1" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <rect x="752" y="214.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#6d28d9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="770.45" y="221.42" font-size="9.5" fill="#475569">pLDDT（预测置信度）</text>
+  <rect x="887.45" y="214.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="905.9000000000001" y="221.42" font-size="9.5" fill="#475569">局部 map-model 相关</text>
+  <line x1="835.7" y1="200" x2="835.7" y2="400" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="928.1" y1="200" x2="928.1" y2="400" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="789.5" y="368" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">两高：按 AF 摆</text>
+  <text x="881.9" y="368" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">pLDDT 高而无密度</text>
+  <text x="1000.7" y="368" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">两高</text>
+  <text x="1090" y="216" font-size="10" fill="#475569">当代标准姿势：pLDDT 高的区段按模型摆、</text>
+  <text x="1090" y="230.5" font-size="10" fill="#475569">密度冲突处依图重建；</text>
+  <text x="1090" y="245" font-size="10" fill="#475569">侧链构象一律以密度为准重新挑选 rotamer</text>
+  <text x="1090" y="259.5" font-size="10" fill="#475569">（预测侧链的构象精度低于骨架）。对低分辨率结构，</text>
+  <text x="1090" y="274" font-size="10" fill="#475569">AF 起点配 NCS 与限制精修，</text>
+  <text x="1090" y="288.5" font-size="10" fill="#475569">常能把 3–4 Å 的图做出超出手搭的完整度。</text>
+  <text x="1090" y="320" font-size="10" fill="#475569">两步工作流：model-to-map 拟合度检验</text>
+  <text x="1090" y="334.5" font-size="10" fill="#475569">（以 AF 模型计算结构因子、</text>
+  <text x="1090" y="349" font-size="10" fill="#475569">与实验图逐残基比对局部相关系数）；</text>
+  <text x="1090" y="363.5" font-size="10" fill="#475569">限制性 rebuild——高拟合区段不动，</text>
+  <text x="1090" y="378" font-size="10" fill="#475569">低拟合区段按密度重搭，全程以预测骨架作参考模型限制，</text>
+  <text x="1090" y="392.5" font-size="10" fill="#475569">精修器可微调但不许推翻先验。</text>
+  <text x="730" y="440" font-size="10.5" fill="#64748b">pLDDT 与局部拟合度的对照本身即是体检：高 pLDDT 而图上无密度，多半是晶体里局部无序——先验对而晶体不配合；</text>
+  <text x="730" y="455" font-size="10.5" fill="#64748b">低 pLDDT 而密度清晰，则是预测保守或真实构象变化的信号。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、register 错位：三联报警与整段平移</text>
+  <rect x="60" y="600" width="300" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="54" y1="730" x2="60" y2="730" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="734" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="54" y1="665" x2="60" y2="665" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="669" font-size="13" fill="#64748b" text-anchor="end">30</text>
+  <line x1="54" y1="600" x2="60" y2="600" stroke="#475569" stroke-width="1.8"/>
+  <text x="50" y="604" font-size="13" fill="#64748b" text-anchor="end">60 Å<tspan dy="-4.4" font-size="9.4">2</tspan></text>
+  <text x="210" y="774" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">残基序号</text>
+  <text x="210" y="588" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">B 因子锯齿（错位区）</text>
+  <path d="M60.0,691.0 L70.0,691.0 L80.0,691.0 L90.0,691.0 L100.0,691.0 L110.0,691.0 L120.0,691.0 L130.0,691.0 L140.0,691.0 L150.0,691.0 L160.0,681.3 L170.0,633.3 L180.0,644.0 L190.0,663.7 L200.0,626.3 L210.0,676.5 L220.0,635.8 L230.0,640.7 L240.0,668.3 L250.0,626.0 L260.0,671.7 L270.0,691.0 L280.0,691.0 L290.0,691.0 L300.0,691.0 L310.0,691.0 L320.0,691.0 L330.0,691.0 L340.0,691.0 L350.0,691.0 L360.0,691.0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <text x="400" y="626" font-size="11" fill="#1e293b" font-weight="700">验证图标连锁报警：</text>
+  <circle cx="400" cy="650" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="430" cy="650" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="460" cy="650" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="490" cy="650" r="9" fill="#d97706" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="520" cy="650" r="9" fill="#dc2626" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="550" cy="650" r="9" fill="#d97706" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="400" cy="682" r="9" fill="#dc2626" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="430" cy="682" r="9" fill="#d97706" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="460" cy="682" r="9" fill="#dc2626" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="490" cy="682" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="520" cy="682" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="550" cy="682" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="726" font-size="10" fill="#475569">一处 register 错会拉出一串黄红球：</text>
+  <text x="400" y="740" font-size="10" fill="#475569">错位区侧链密度系统性缺失、rotamer 频繁不良、</text>
+  <text x="400" y="754" font-size="10" fill="#475569">Ramachandran 异常连片。</text>
+  <text x="60" y="786" font-size="11" fill="#1e293b" font-weight="700">密度与序列错位：</text>
+  <rect x="70" y="800" width="26" height="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <ellipse cx="83" cy="838" rx="12" ry="7.199999999999999" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="83" cy="820" r="7" fill="#6d28d9" fill-opacity="0.85"/>
+  <rect x="110" y="800" width="26" height="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <ellipse cx="123" cy="838" rx="9" ry="5.3999999999999995" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="123" cy="820" r="8" fill="#6d28d9" fill-opacity="0.85"/>
+  <rect x="150" y="800" width="26" height="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <ellipse cx="163" cy="838" rx="7" ry="4.2" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="163" cy="820" r="9" fill="#6d28d9" fill-opacity="0.85"/>
+  <rect x="190" y="800" width="26" height="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <ellipse cx="203" cy="838" rx="9" ry="5.3999999999999995" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="203" cy="820" r="6" fill="#6d28d9" fill-opacity="0.85"/>
+  <rect x="230" y="800" width="26" height="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <ellipse cx="243" cy="838" rx="12" ry="7.199999999999999" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="243" cy="820" r="7" fill="#6d28d9" fill-opacity="0.85"/>
+  <text x="185" y="868" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">长侧链坐在短密度上、短侧链悬在长密度外</text>
+  <text x="60" y="892" font-size="10.5" fill="#475569">口诀：一连串 rotamer outlier、相邻原子 B 因子锯齿、密度与序列错位三者同现，即 register 错位的教科书像；</text>
+  <text x="60" y="907" font-size="10.5" fill="#475569">三缺一才须另寻他因。发现即整段重搭：整体平移一两个残基再 mutate，比逐个残基修补快得多。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、「无密度即不建」与建模验收清单</text>
+  <path d="M 760,668 L 800,660 L 840,668 L 880,660 L 920,668 L 960,660 L 1000,668 L 1040,660" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <circle cx="1060" cy="668" r="5" fill="#0369a1" fill-opacity="0.55"/>
+  <circle cx="1086" cy="660" r="4.3" fill="#0369a1" fill-opacity="0.4600000000000001"/>
+  <circle cx="1112" cy="668" r="3.6" fill="#0369a1" fill-opacity="0.37000000000000005"/>
+  <circle cx="1138" cy="660" r="2.9000000000000004" fill="#0369a1" fill-opacity="0.28"/>
+  <circle cx="1164" cy="668" r="2.2" fill="#0369a1" fill-opacity="0.19000000000000006"/>
+  <text x="770" y="690" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">N 端</text>
+  <text x="1105" y="690" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">C 端无序（虚化）</text>
+  <text x="730" y="620" font-size="10" fill="#475569">模型完整度口径：覆盖残基数对序列长度之比。两端柔性尾巴在晶格里多构象平均成背景——无密度支撑的残基硬建出来，</text>
+  <text x="730" y="634" font-size="10" fill="#475569">等于向图里注射虚构坐标。</text>
+  <text x="730" y="712" font-size="10" fill="#475569">报告纪律：如实交代「可见第 1 至 28 与第 35 至 212 号残基」；PDB 的 REMARK 465 列出缺失残基，</text>
+  <text x="730" y="726" font-size="10" fill="#475569">mmCIF 以全序列与模型残基对照表记录——「未观测」与「不存在」是两个世界，混写即误导读者。</text>
+  <rect x="730" y="772" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">验收项</text>
+  <rect x="860" y="772" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">检查方法</text>
+  <rect x="1110" y="772" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">通过标准</text>
+  <rect x="730" y="816" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="835" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">主链连续</text>
+  <rect x="860" y="816" width="250" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="835" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">沿骨架逐段巡主图</text>
+  <rect x="1110" y="816" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="835" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">可观测密度内无断点</text>
+  <rect x="730" y="843" width="620" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="843" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="862" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">侧链就位</text>
+  <rect x="860" y="843" width="250" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="862" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">rotamer 着色加密度比对</text>
+  <rect x="1110" y="843" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="862" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">保守区侧链贴合且构象合规</text>
+  <rect x="730" y="870" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="889" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">无显著 clash</text>
+  <rect x="860" y="870" width="250" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="889" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">验证球与 clashscore</text>
+  <rect x="1110" y="870" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="889" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">红球清零或可解释</text>
+  <rect x="730" y="897" width="620" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="897" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="916" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">密度匹配</text>
+  <rect x="860" y="897" width="250" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="916" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">双图整体巡检</text>
+  <rect x="1110" y="897" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="916" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">差值图无大片未解释正负斑</text>
+  <rect x="730" y="924" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="795" y="943" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">register 无误</text>
+  <rect x="860" y="924" width="250" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="985" y="943" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Met 与 Trp 锚定核对</text>
+  <rect x="1110" y="924" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="943" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">大侧链逐一对号</text>
+  <text x="730" y="942" font-size="10.5" fill="#64748b" font-weight="700">全项打勾，模型才有资格进入第 10 章的精修主循环。</text>
+</svg>

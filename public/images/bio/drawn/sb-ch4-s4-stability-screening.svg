@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">稳定性筛选与蛋白保存：Tm、矩阵与冻存纪律</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">DSF 约 1 °C/min 测 Tm，nanoDSF 330/350 nm 免染料；pH 4–9 × 盐 50–500 mM，ΔTm 大于 5 °C 换液；−80 °C 冻存</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、DSF 与 nanoDSF：熔解曲线与 Tm</text>
+  <rect x="60" y="179.17" width="12.65" height="9.66" rx="3" fill="#6d28d9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="80.65" y="188.14" font-size="11.5" fill="#475569">DSF：SYPRO Orange 荧光</text>
+  <rect x="238.58000000000004" y="179.17" width="12.65" height="9.66" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="259.23" y="188.14" font-size="11.5" fill="#475569">nanoDSF：330/350 nm 比值</text>
+  <rect x="96" y="212" width="544" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="96" y1="347" x2="640" y2="347" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="232" y1="392" x2="232" y2="212" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="96" y1="302" x2="640" y2="302" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="368" y1="392" x2="368" y2="212" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="96" y1="257" x2="640" y2="257" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="504" y1="392" x2="504" y2="212" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="96" y1="392" x2="96" y2="398" stroke="#475569" stroke-width="1.8"/>
+  <text x="96" y="414" font-size="13" fill="#64748b" text-anchor="middle">25</text>
+  <line x1="282.592" y1="392" x2="282.592" y2="398" stroke="#475569" stroke-width="1.8"/>
+  <text x="282.592" y="414" font-size="13" fill="#64748b" text-anchor="middle">49</text>
+  <line x1="484.416" y1="392" x2="484.416" y2="398" stroke="#475569" stroke-width="1.8"/>
+  <text x="484.416" y="414" font-size="13" fill="#64748b" text-anchor="middle">75</text>
+  <line x1="640" y1="392" x2="640" y2="398" stroke="#475569" stroke-width="1.8"/>
+  <text x="640" y="414" font-size="13" fill="#64748b" text-anchor="middle">95</text>
+  <line x1="90" y1="392" x2="96" y2="392" stroke="#475569" stroke-width="1.8"/>
+  <text x="86" y="396" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="90" y1="302" x2="96" y2="302" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="212" x2="96" y2="212" stroke="#475569" stroke-width="1.8"/>
+  <text x="86" y="216" font-size="13" fill="#64748b" text-anchor="end">1</text>
+  <text x="368" y="436" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">温度（°C）</text>
+  <text x="50" y="302" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">归一化信号</text>
+  <line x1="283" y1="392" x2="283" y2="216" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <path d="M96,383 C103.3,382.7 125.0,381.8 139.52,381.2 C154.0,380.6 168.5,380.3 183.04000000000002,379.4 C197.5,378.5 213.9,377.9 226.56,375.8 C239.3,373.7 249.9,379.1 259.2,366.8 C268.5,354.5 273.5,321.8 282.592,302 C291.7,282.2 303.0,260.6 313.6,248 C324.2,235.4 331.7,231.2 346.24,226.4 C360.7,221.6 380.7,220.1 400.64000000000004,219.20000000000002 C420.6,218.3 444.2,218.6 465.92,221 C487.7,223.4 502.2,228.5 531.2,233.6 C560.2,238.7 621.9,248.6 640,251.6" fill="none" stroke="#6d28d9" stroke-width="2.8"/>
+  <path d="M96,222.8 C103.3,223.4 125.0,224.6 139.52,226.4 C154.0,228.2 168.5,230.0 183.04000000000002,233.6 C197.5,237.2 213.9,241.4 226.56,248 C239.3,254.6 249.9,264.2 259.2,273.2 C268.5,282.2 273.5,291.8 282.592,302 C291.7,312.2 303.0,325.4 313.6,334.4 C324.2,343.4 331.7,350.0 346.24,356 C360.7,362.0 380.7,366.8 400.64000000000004,370.4 C420.6,374.0 444.2,375.8 465.92,377.6 C487.7,379.4 502.2,380.3 531.2,381.2 C560.2,382.1 621.9,382.7 640,383" fill="none" stroke="#0369a1" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <rect x="397.11" y="241.075" width="145.78" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="470" y="253.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Tm = 49 °C（一阶导数峰）</text>
+  <rect x="160.89999999999998" y="455.5" width="178.20000000000002" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="250" y="467.6" font-size="10" fill="#1e293b" text-anchor="middle">每孔 5 μL 蛋白加染料，qPCR 板分装</text>
+  <rect x="474.5" y="455.5" width="147.00000000000003" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="548" y="467.6" font-size="10" fill="#075985" text-anchor="middle">约 1 °C/min 自 25 升至 95 °C</text>
+  <rect x="253" y="485.5" width="244" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="375" y="497.6" font-size="10" fill="#1e293b" text-anchor="middle">对照孔随行扣基线；矿物油或热封膜抑制边缘孔蒸发</text>
+  <text x="50" y="518" font-size="10" fill="#475569">Tm 即一半分子解链的温度，越高越稳；两种方法 Tm 差值常在 2 °C 以内，严重不一致时优先怀疑染料干扰了蛋白本身——nanoDSF 免染料、</text>
+  <text x="50" y="531.5" font-size="10" fill="#475569">不受 DTT、去垢剂与高浓度添加剂干扰、样品小于 10 μL，被设为仲裁手段，对去垢剂敏感的膜蛋白尤其实用。</text>
+  <text x="50" y="545" font-size="10" fill="#475569">qPCR 仪一晚可完成两块 96 孔板全矩阵扫描。</text>
+  <rect x="730" y="132" width="640" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="154.84" font-size="19" fill="#475569" font-weight="700">二、缓冲液筛选矩阵与 ΔTm 决策</text>
+  <text x="916" y="170" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">矩阵两维：pH 4–9（行）× NaCl 50–500 mM（列）</text>
+  <rect x="800" y="198" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="827.5" cy="214.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="858" y="198" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="885.5" cy="214.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="916" y="198" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="943.5" cy="214.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="974" y="198" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="1001.5" cy="214.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="792" y="222" font-size="10" fill="#64748b" text-anchor="end">9</text>
+  <rect x="800" y="234" width="55" height="33" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="827.5" cy="250.5" r="3.4" fill="#ffffff" stroke="#059669" stroke-width="1.2"/>
+  <rect x="858" y="234" width="55" height="33" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="885.5" cy="250.5" r="3.4" fill="#ffffff" stroke="#059669" stroke-width="1.2"/>
+  <rect x="916" y="234" width="55" height="33" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="943.5" cy="250.5" r="3.4" fill="#ffffff" stroke="#059669" stroke-width="1.2"/>
+  <rect x="974" y="234" width="55" height="33" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <circle cx="1001.5" cy="250.5" r="3.4" fill="#ffffff" stroke="#059669" stroke-width="1.2"/>
+  <text x="792" y="258" font-size="10" fill="#065f46" text-anchor="end" font-weight="700">8 · Tris</text>
+  <rect x="800" y="270" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="827.5" cy="286.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="858" y="270" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="885.5" cy="286.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="916" y="270" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="943.5" cy="286.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="974" y="270" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="1001.5" cy="286.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="792" y="294" font-size="10" fill="#64748b" text-anchor="end">7 · HEPES</text>
+  <rect x="800" y="306" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="827.5" cy="322.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="858" y="306" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="885.5" cy="322.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="916" y="306" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="943.5" cy="322.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="974" y="306" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="1001.5" cy="322.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="792" y="330" font-size="10" fill="#64748b" text-anchor="end">6 · MES</text>
+  <rect x="800" y="342" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="827.5" cy="358.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="858" y="342" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="885.5" cy="358.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="916" y="342" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="943.5" cy="358.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="974" y="342" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="1001.5" cy="358.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="792" y="366" font-size="10" fill="#64748b" text-anchor="end">5 · 醋酸</text>
+  <rect x="800" y="378" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="827.5" cy="394.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="858" y="378" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="885.5" cy="394.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="916" y="378" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="943.5" cy="394.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <rect x="974" y="378" width="55" height="33" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.1"/>
+  <circle cx="1001.5" cy="394.5" r="3.4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="792" y="402" font-size="10" fill="#64748b" text-anchor="end">4 · 柠檬酸</text>
+  <text x="827.5" y="434" font-size="10" fill="#64748b" text-anchor="middle">50</text>
+  <text x="885.5" y="434" font-size="10" fill="#64748b" text-anchor="middle">150</text>
+  <text x="943.5" y="434" font-size="10" fill="#64748b" text-anchor="middle">300</text>
+  <text x="1001.5" y="434" font-size="10" fill="#64748b" text-anchor="middle">500</text>
+  <text x="916" y="454" font-size="9.5" fill="#64748b" text-anchor="middle">pH 自下而上 4 至 9：柠檬酸、醋酸、MES、HEPES、Tris 分段覆盖</text>
+  <text x="1190" y="218" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">激酶实例：Tm 42 升至 49 °C</text>
+  <rect x="1099.8" y="321.8909090909091" width="70.4" height="90.10909090909091" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="1209.8" y="306.8727272727273" width="70.4" height="105.12727272727273" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1135" y="311" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">Tm 42 °C</text>
+  <text x="1245" y="296" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">Tm 49 °C</text>
+  <line x1="1160" y1="322" x2="1222" y2="308" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="1135" y="436" font-size="10.5" fill="#475569" text-anchor="middle">pH 7.5</text>
+  <text x="1135" y="452" font-size="9.5" fill="#64748b" text-anchor="middle">HEPES</text>
+  <text x="1245" y="436" font-size="10.5" fill="#475569" text-anchor="middle">pH 8.0 Tris</text>
+  <text x="1245" y="452" font-size="9.5" fill="#92400e" text-anchor="middle">加 200 mM 精氨酸</text>
+  <rect x="1099.879" y="249.5" width="180.24200000000005" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1190" y="261.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">ΔTm = +7 °C，大于 5 °C 即显著改善</text>
+  <rect x="822.3" y="477.5" width="187.40000000000003" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="916" y="489.6" font-size="10" fill="#065f46" text-anchor="middle">高亮行 pH 8 · Tris：激酶实例所处区间</text>
+  <text x="746" y="516" font-size="10" fill="#475569">第三维添加剂：甘油 5–10%、精氨酸 50–100 mM（作用浓度带 10–500 mM，以胍基与芳香侧链相互作用抑制聚集）、TCEP 0.5 mM、</text>
+  <text x="746" y="529.5" font-size="10" fill="#475569">EDTA 1 mM。两块 96 孔板覆盖 pH 六点 × 盐四档 × 添加剂四类，先粗筛后细筛把消耗压到最低；</text>
+  <text x="746" y="543" font-size="10" fill="#475569">Tm 高于 50 °C 的蛋白在稀疏矩阵中命中率显著更高。</text>
+  <rect x="30" y="578" width="660" height="372" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、浓缩上限验证与状态定型</text>
+  <rect x="70" y="628" width="280" height="110" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="710.5" x2="350" y2="710.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="140" y1="738" x2="140" y2="628" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="683" x2="350" y2="683" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="210" y1="738" x2="210" y2="628" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="655.5" x2="350" y2="655.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="280" y1="738" x2="280" y2="628" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <text x="210" y="782" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">洗脱体积</text>
+  <text x="210" y="616" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">浓缩后合格：单体峰保持</text>
+  <path d="M112,733.6 C119.0,731.0 141.4,728.8 154,718.2 C166.6,707.6 178.3,683.9 187.6,669.8 C196.9,655.7 202.5,632.2 210,633.5 C217.5,634.8 224.0,663.8 232.39999999999998,677.5 C240.8,691.3 249.2,707.0 260.4,716 C271.6,725.0 293.1,728.8 299.6,731.4" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="390" y="628" width="280" height="110" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="390" y1="710.5" x2="670" y2="710.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="460" y1="738" x2="460" y2="628" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="390" y1="683" x2="670" y2="683" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="530" y1="738" x2="530" y2="628" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="390" y1="655.5" x2="670" y2="655.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="600" y1="738" x2="600" y2="628" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <text x="530" y="782" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">洗脱体积</text>
+  <text x="530" y="616" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">超过浓缩上限：聚合与拖尾</text>
+  <path d="M406.8,734.7 C410.1,729.8 419.9,706.3 426.4,705 C432.9,703.7 438.1,724.4 446,727 C453.9,729.6 463.7,735.1 474,720.4 C484.3,705.7 497.3,645.2 507.6,639 C517.9,632.8 525.3,672.0 535.6,683 C545.9,694.0 557.1,699.9 569.2,705 C581.3,710.1 595.3,710.9 608.4,713.8 C621.5,716.7 641.1,721.1 647.6,722.6" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="427" y="694" font-size="9" fill="#991b1b" text-anchor="middle">空体积聚合</text>
+  <text x="575" y="712" font-size="9" fill="#991b1b" text-anchor="middle">拖尾</text>
+  <rect x="110.39999999999998" y="763.5" width="179.20000000000005" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="200" y="775.6" font-size="10" fill="#075985" text-anchor="middle">浓缩目标 5–20 mg/mL（结晶与上镜）</text>
+  <rect x="441.6" y="763.5" width="162.79999999999998" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="523" y="775.6" font-size="10" fill="#1e293b" text-anchor="middle">大于 10 mg/mL 后回查分析型 SEC</text>
+  <rect x="122.70000000000002" y="793.5" width="234.59999999999997" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="240" y="805.6" font-size="10" fill="#1e293b" text-anchor="middle">预留 12–24 h 观察窗，4 °C 静置复查浊度与 SEC</text>
+  <rect x="439.604" y="793.5" width="160.79200000000003" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="520" y="805.6" font-size="10" fill="#92400e" text-anchor="middle">A<tspan dy="2.2" font-size="7.2">280</tspan><tspan dy="-2.2"> 对账差值超 10% 换低吸附膜</tspan></text>
+  <text x="50" y="834" font-size="10" fill="#475569">送结晶前的状态定型：缓冲液定型（20 mM HEPES pH 7.5、150 mM NaCl 一类低背景配方，不携带高浓度咪唑、甘油与还原剂）、浓度定型</text>
+  <text x="50" y="848" font-size="10" fill="#475569">（10 mg/mL 起步，随筛选反馈调整）、批次定型（同一批样品铺满一轮筛选，杜绝跨批次噪声混入条件空间）。</text>
+  <rect x="202" y="909.5" width="286" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="345" y="921.6" font-size="10" fill="#991b1b" text-anchor="middle">「临界可溶」假象：浓缩管中看似清亮，放置过夜即雾状沉降</text>
+  <rect x="730" y="578" width="640" height="372" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="600.84" font-size="19" fill="#475569" font-weight="700">四、冻存纪律与批次放行三件套</text>
+  <text x="746" y="616" font-size="10.5" fill="#1e293b" font-weight="700">长期保存标准动作：</text>
+  <rect x="760" y="632" width="118" height="46" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="819" y="659" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="600">分装 50–100 μL</text>
+  <rect x="918" y="632" width="118" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="977" y="659" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">液氮速冻</text>
+  <rect x="1076" y="632" width="118" height="46" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1135" y="659" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="600">−80 °C 存放</text>
+  <rect x="1234" y="632" width="118" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1293" y="659" font-size="10" fill="#065f46" text-anchor="middle" font-weight="600">4 °C 融化一次用完</text>
+  <line x1="880" y1="655" x2="916" y2="655" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1038" y1="655" x2="1074" y2="655" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1196" y1="655" x2="1232" y2="655" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="798.8" y="697.5" width="282.4" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="940" y="709.6" font-size="10" fill="#78350f" text-anchor="middle">10–20% 甘油防冻伤（氢键网络缓冲冰晶的机械与渗透损伤）</text>
+  <rect x="868" y="729.5" width="284" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1010" y="741.6" font-size="10" fill="#92400e" text-anchor="middle">甘油是双刃剑：结晶筛选与冷冻电镜制冰前须透析或脱盐去除</text>
+  <text x="746" y="768" font-size="10" fill="#475569">标签五要素——蛋白、浓度、批号、冻存日期、解冻标记，取用随记；「每支管只解冻一次」的纪律比任何复苏技巧都可靠：4 °C 融化、</text>
+  <text x="746" y="781.5" font-size="10" fill="#475569">轻柔混匀、离心除尘后尽快使用。</text>
+  <text x="746" y="838" font-size="10.5" fill="#1e293b" font-weight="700">批次放行三件套：</text>
+  <rect x="875.1" y="829.5" width="89.80000000000001" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="920" y="841.6" font-size="10" fill="#065f46" text-anchor="middle">SEC 单体峰 &gt;95%</text>
+  <rect x="1024" y="829.5" width="112" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1080" y="841.6" font-size="10" fill="#4c1d95" text-anchor="middle">完整质量与理论值一致</text>
+  <rect x="1222.7" y="829.5" width="90.60000000000001" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1268" y="841.6" font-size="10" fill="#075985" text-anchor="middle">Tm 偏差不超 2 °C</text>
+  <text x="746" y="872" font-size="10" fill="#475569">达不到即复纯化，不带次品进入下游——「用最好的蛋白做最难的事」，因为下游每一步都比纯化昂贵。</text>
+  <text x="746" y="885.5" font-size="10" fill="#475569">复苏后取 5 μL 走分析型 SEC 确认冻存前后峰形一致；「冻前合格、冻后聚合」者以新鲜制备为默认，冻存只作备份。</text>
+</svg>

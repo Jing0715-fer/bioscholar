@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">结构验证与数据库提交：wwPDB 质检单与 OneDep 投递</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">clashscore：每 1000 原子中重叠不小于 0.4 Å 的冲突数；Ramachandran 优势区应大于 98%；PDB_REDO 使平均 Rfree 降约 2 个百分点</text>
+  <rect x="30" y="132" width="1340" height="260" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、OneDep 投递：三类方法各交各的账</text>
+  <rect x="60" y="160" width="220" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="170" y="178" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">① 上传</text>
+  <text x="170" y="197" font-size="9.5" fill="#475569" text-anchor="middle">坐标与实验数据</text>
+  <line x1="284" y1="183" x2="316" y2="183" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="320" y="160" width="220" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="430" y="178" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">② 自动验证</text>
+  <text x="430" y="197" font-size="9.5" fill="#475569" text-anchor="middle">验证报告即时生成</text>
+  <line x1="544" y1="183" x2="576" y2="183" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="580" y="160" width="220" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="690" y="178" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">③ 人工注释</text>
+  <text x="690" y="197" font-size="9.5" fill="#475569" text-anchor="middle">biocuration 逐条核对</text>
+  <line x1="804" y1="183" x2="836" y2="183" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="840" y="160" width="220" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="950" y="178" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">④ 编号签发</text>
+  <text x="950" y="197" font-size="9.5" fill="#475569" text-anchor="middle">PDB 编号一条龙</text>
+  <line x1="1064" y1="183" x2="1096" y2="183" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="1100" y="160" width="220" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1210" y="178" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">⑤ 持有/释放</text>
+  <text x="1210" y="197" font-size="9.5" fill="#475569" text-anchor="middle">与论文同步释放</text>
+  <rect x="60" y="218" width="420" height="156" rx="9" fill="#f1f5f9" stroke="#0f766e" stroke-width="1.5"/>
+  <rect x="60" y="218" width="420" height="34" rx="9" fill="#0f766e" fill-opacity="0.16" stroke="none"/>
+  <text x="270" y="240" font-size="13" fill="#0f766e" text-anchor="middle" font-weight="700">X 射线：坐标 + 结构因子</text>
+  <text x="78" y="276" font-size="10.5" fill="#475569">mmCIF 反射文件使任何人都能重算 R 因子；缺结构因子的坐标在现代已不可发表。</text>
+  <text x="270" y="352" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">衍射图归同步辐射图像库</text>
+  <rect x="500" y="218" width="420" height="156" rx="9" fill="#f1f5f9" stroke="#6d28d9" stroke-width="1.5"/>
+  <rect x="500" y="218" width="420" height="34" rx="9" fill="#6d28d9" fill-opacity="0.16" stroke="none"/>
+  <text x="710" y="240" font-size="13" fill="#6d28d9" text-anchor="middle" font-weight="700">冷冻电镜：坐标 + 密度图</text>
+  <text x="518" y="276" font-size="10.5" fill="#475569">PDB 与 EMDB 双库互链；挑选与精修所用微图或粒子栈按惯例存入 EMPIAR。</text>
+  <text x="710" y="352" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">原始电影入 EMPIAR</text>
+  <rect x="940" y="218" width="420" height="156" rx="9" fill="#f1f5f9" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="940" y="218" width="420" height="34" rx="9" fill="#b45309" fill-opacity="0.16" stroke="none"/>
+  <text x="1150" y="240" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">NMR：系综坐标 + 约束</text>
+  <text x="958" y="276" font-size="10.5" fill="#475569">化学位移归 BMRB；注释员逐条核对序列、命名与引用——配体命名最常被打回。</text>
+  <text x="1150" y="352" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">处理参数随方法学公开</text>
+  <rect x="30" y="412" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="434.84" font-size="19" fill="#475569" font-weight="700">二、验证报告：几何与密度两条线一起读</text>
+  <text x="70" y="466" font-size="11" fill="#64748b" font-weight="700">指标</text>
+  <text x="300" y="466" font-size="11" fill="#64748b" font-weight="700">读数</text>
+  <text x="400" y="466" font-size="11" fill="#64748b" font-weight="700">同分辨率档对比</text>
+  <text x="600" y="466" font-size="11" fill="#64748b" font-weight="700">档</text>
+  <line x1="60" y1="474" x2="670" y2="474" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="70" y="496" font-size="11" fill="#1e293b" font-weight="600">clashscore</text>
+  <text x="300" y="496" font-size="11" fill="#475569">2.1</text>
+  <text x="400" y="496" font-size="11" fill="#475569">第 94 百分位</text>
+  <rect x="590" y="484" width="44" height="18" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
+  <text x="612" y="497" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">绿</text>
+  <text x="70" y="526" font-size="11" fill="#1e293b" font-weight="600">Ramachandran 优势区</text>
+  <text x="300" y="526" font-size="11" fill="#475569">98.6%</text>
+  <text x="400" y="526" font-size="11" fill="#475569">应大于 98%</text>
+  <rect x="590" y="514" width="44" height="18" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
+  <text x="612" y="527" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">绿</text>
+  <text x="70" y="556" font-size="11" fill="#1e293b" font-weight="600">Ramachandran 离区</text>
+  <text x="300" y="556" font-size="11" fill="#475569">0.12%</text>
+  <text x="400" y="556" font-size="11" fill="#475569">宜小于 0.2%</text>
+  <rect x="590" y="544" width="44" height="18" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
+  <text x="612" y="557" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">绿</text>
+  <text x="70" y="586" font-size="11" fill="#1e293b" font-weight="600">Rwork / Rfree</text>
+  <text x="300" y="586" font-size="11" fill="#475569">0.19 / 0.24</text>
+  <text x="400" y="586" font-size="11" fill="#475569">密度线（X 射线）</text>
+  <rect x="590" y="574" width="44" height="18" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
+  <text x="612" y="587" font-size="10.5" fill="#059669" text-anchor="middle" font-weight="700">绿</text>
+  <text x="70" y="616" font-size="11" fill="#1e293b" font-weight="600">侧链转角离群</text>
+  <text x="300" y="616" font-size="11" fill="#475569">1.9%</text>
+  <text x="400" y="616" font-size="11" fill="#475569">第 8 百分位</text>
+  <rect x="590" y="604" width="44" height="18" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="612" y="617" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">红</text>
+  <text x="60" y="656" font-size="10" fill="#475569">clashscore：每 1000 原子中重叠不小于 0.4 Å 的冲突数（Chen 等 2010）；多数指标附百分位，红黄绿三色分档——红色项即返工清单。</text>
+  <text x="60" y="682" font-size="10" fill="#475569">两条线可背离：几何漂亮而密度残差高，多半「自说自话」精修过头；密度贴而几何糟，常是构象硬塞进噪声。</text>
+  <rect x="710" y="412" width="660" height="280" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="434.84" font-size="19" fill="#475569" font-weight="700">三、投稿前自查：四类机器看不见的语义错误</text>
+  <rect x="730" y="462" width="310" height="108" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#d97706" stroke-width="1.3"/>
+  <text x="744" y="484" font-size="12" fill="#92400e" font-weight="700">序列一致</text>
+  <text x="744" y="504" font-size="10" fill="#475569">SEQRES 与坐标残基对应；纯化标签是否已切、</text>
+  <text x="744" y="518" font-size="10" fill="#475569">引入突变如实标注；</text>
+  <text x="744" y="532" font-size="10" fill="#475569">未建模区段声明为「未观测」而非抹去编号。</text>
+  <rect x="1050" y="462" width="300" height="108" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#d97706" stroke-width="1.3"/>
+  <text x="1064" y="484" font-size="12" fill="#92400e" font-weight="700">配体化学</text>
+  <text x="1064" y="504" font-size="10" fill="#475569">键级、环的平面性、质子化状态与化学组分字典一致；</text>
+  <text x="1064" y="518" font-size="10" fill="#475569">新配体先提交字典，再以理想几何限制参与精修。</text>
+  <rect x="730" y="582" width="310" height="100" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#d97706" stroke-width="1.3"/>
+  <text x="744" y="604" font-size="12" fill="#92400e" font-weight="700">金属配位</text>
+  <text x="744" y="624" font-size="10" fill="#475569">Mg 至配位氧约 2.0–2.2 Å 六配位八面体；</text>
+  <text x="744" y="638" font-size="10" fill="#475569">Zn 与 His/Asp 约 2.0–2.3 Å；五配位镁多半是「水冒充镁」。</text>
+  <rect x="1050" y="582" width="300" height="100" rx="8" fill="#fef3c7" fill-opacity="0.4" stroke="#d97706" stroke-width="1.3"/>
+  <text x="1064" y="604" font-size="12" fill="#92400e" font-weight="700">occupancy</text>
+  <text x="1064" y="624" font-size="10" fill="#475569">双构象侧链成对建模、占据率之和合理；</text>
+  <text x="1064" y="638" font-size="10" fill="#475569">无差别把水设为 1.0，高分辨数据里可被密度直接否决。</text>
+  <text x="1040" y="678" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">另有有序水清点：优于 1.8 Å 时经验上约每残基一枚量级</text>
+  <rect x="30" y="712" width="1340" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="734.84" font-size="19" fill="#475569" font-weight="700">四、PDB_REDO 与可重复性：存量里的免费精度红利</text>
+  <line x1="90" y1="800" x2="380" y2="800" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="800" x2="90" y2="806" stroke="#475569" stroke-width="1.4"/>
+  <text x="90" y="820" font-size="9.5" fill="#64748b" text-anchor="middle">0.21</text>
+  <line x1="170.00000000000006" y1="800" x2="170.00000000000006" y2="806" stroke="#475569" stroke-width="1.4"/>
+  <text x="170.00000000000006" y="820" font-size="9.5" fill="#64748b" text-anchor="middle">0.22</text>
+  <line x1="250.0000000000001" y1="800" x2="250.0000000000001" y2="806" stroke="#475569" stroke-width="1.4"/>
+  <text x="250.0000000000001" y="820" font-size="9.5" fill="#64748b" text-anchor="middle">0.23</text>
+  <line x1="329.99999999999994" y1="800" x2="329.99999999999994" y2="806" stroke="#475569" stroke-width="1.4"/>
+  <text x="329.99999999999994" y="820" font-size="9.5" fill="#64748b" text-anchor="middle">0.24</text>
+  <circle cx="313.99999999999994" cy="776" r="6" fill="#dc2626"/>
+  <text x="313.99999999999994" y="762" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">再精修前 0.238</text>
+  <circle cx="154.00000000000006" cy="776" r="6" fill="#059669"/>
+  <text x="154.00000000000006" y="744" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">再精修后 0.218</text>
+  <line x1="303.99999999999994" y1="776" x2="164.00000000000006" y2="776" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="234" y="796" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">平均 Rfree 降约 2 个百分点</text>
+  <text x="60" y="848" font-size="10" fill="#475569">PDB_REDO（Joosten、Vriend 等 2009 年起）以当代协议批量再精修存量条目：</text>
+  <text x="60" y="862" font-size="10" fill="#475569">各向异性 B 因子、占据率再估、优化的权重日程——已处理数万条，几何同步改善。</text>
+  <text x="60" y="884" font-size="10" fill="#475569">个体启示：定稿前过一遍线上服务，常白捡半个到一个百分点的 Rfree。</text>
+  <rect x="520" y="740" width="830" height="148" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="538" y="764" font-size="12.5" fill="#1e293b" font-weight="700">原始数据存档的三重动因</text>
+  <rect x="553.7775" y="781.075" width="48.445" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="578" y="793.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">再分析</text>
+  <text x="650" y="794" font-size="10.5" fill="#475569">十年后以新算法重处理旧数据仍可收获精度</text>
+  <rect x="559.185" y="811.075" width="37.629999999999995" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="578" y="823.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">纠错</text>
+  <text x="650" y="824" font-size="10.5" fill="#475569">可疑结构可被独立复核，验证体系因此有牙齿</text>
+  <rect x="550.7493" y="841.075" width="54.5014" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="578" y="853.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">AI 训练</text>
+  <text x="650" y="854" font-size="10.5" fill="#475569">今天归档的衍射图与电影就是明天的训练集</text>
+  <text x="700" y="934" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">验证贯穿全程、投稿只是最后一站——红字项只有「修复」与「解释」两条出路，沉默是最差的选项</text>
+</svg>

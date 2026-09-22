@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">缩放、吸收修正与合并：从几百帧到一把尺</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">批间scale加剂量B衰减（μ约0.02–0.04MGy<tspan dy="-5.8" font-size="12.2">−1</tspan><tspan dy="5.8">）；椭球B张量与花瓣样吸收签名；方差加权合并、4–6σ剔除离群；CC</tspan><tspan dy="3.7" font-size="12.2">1/2</tspan><tspan dy="-3.7">分半示意；MTZ衔接第7、8章</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、缩放模型：批间 scale 与剂量 B 衰减</text>
+  <rect x="52" y="168" width="160" height="44" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.4"/>
+  <text x="132" y="187" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">几百帧 I<tspan dy="2.5" font-size="8.3">raw</tspan></text>
+  <text x="132" y="203" font-size="9.5" fill="#64748b" text-anchor="middle">流强·体积·损伤</text>
+  <line x1="216" y1="190" x2="236" y2="190" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="240" y="168" width="254" height="44" rx="7" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="367" y="187" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">逐帧 s<tspan dy="2.5" font-size="8.3">j</tspan><tspan dy="-2.5"> 与 B(D) 衰减项</tspan></text>
+  <text x="367" y="203" font-size="9.5" fill="#64748b" text-anchor="middle">等效反射一致性最小二乘</text>
+  <line x1="496" y1="190" x2="516" y2="190" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="520" y="168" width="158" height="44" rx="7" fill="#f1f5f9" stroke="#059669" stroke-width="1.4"/>
+  <text x="599" y="187" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">同一把尺 I<tspan dy="2.5" font-size="8.3">corr</tspan></text>
+  <text x="599" y="203" font-size="9.5" fill="#64748b" text-anchor="middle">缩放曲线即损伤时间轴</text>
+  <line x1="90" y1="480" x2="640" y2="480" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="480" x2="90" y2="252" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="640" y1="480" x2="640" y2="252" stroke="#475569" stroke-width="1.4"/>
+  <line x1="90" y1="260" x2="640" y2="260" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <text x="84" y="264" font-size="9.5" fill="#64748b" text-anchor="end">1.0</text>
+  <line x1="90" y1="322.8571428571429" x2="640" y2="322.8571428571429" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <text x="84" y="326.8571428571429" font-size="9.5" fill="#64748b" text-anchor="end">0.8</text>
+  <line x1="90" y1="385.7142857142857" x2="640" y2="385.7142857142857" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <text x="84" y="389.7142857142857" font-size="9.5" fill="#64748b" text-anchor="end">0.6</text>
+  <line x1="90" y1="448.57142857142856" x2="640" y2="448.57142857142856" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <text x="84" y="452.57142857142856" font-size="9.5" fill="#64748b" text-anchor="end">0.4</text>
+  <text x="646" y="264" font-size="9.5" fill="#64748b">15</text>
+  <text x="646" y="337.33333333333337" font-size="9.5" fill="#64748b">10</text>
+  <text x="646" y="410.6666666666667" font-size="9.5" fill="#64748b">5</text>
+  <text x="84" y="244" font-size="9.5" fill="#64748b" text-anchor="end" font-weight="600">I(D)/I<tspan dy="2.1" font-size="6.8">0</tspan></text>
+  <text x="644" y="244" font-size="9.5" fill="#64748b" font-weight="600">B(Å<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">)</tspan></text>
+  <line x1="90" y1="480" x2="90" y2="485" stroke="#475569" stroke-width="1.2"/>
+  <text x="90" y="499" font-size="10" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="273.3333333333333" y1="480" x2="273.3333333333333" y2="485" stroke="#475569" stroke-width="1.2"/>
+  <text x="273.3333333333333" y="499" font-size="10" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="456.66666666666663" y1="480" x2="456.66666666666663" y2="485" stroke="#475569" stroke-width="1.2"/>
+  <text x="456.66666666666663" y="499" font-size="10" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="640" y1="480" x2="640" y2="485" stroke="#475569" stroke-width="1.2"/>
+  <text x="640" y="499" font-size="10" fill="#64748b" text-anchor="middle">30</text>
+  <line x1="273.3333333333333" y1="268" x2="273.3333333333333" y2="480" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 5" opacity="0.75"/>
+  <line x1="456.66666666666663" y1="268" x2="456.66666666666663" y2="480" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 5" opacity="0.75"/>
+  <text x="181.66666666666666" y="270" font-size="9.5" fill="#64748b" text-anchor="middle">批 1</text>
+  <text x="365" y="270" font-size="9.5" fill="#64748b" text-anchor="middle">批 2</text>
+  <text x="548.3333333333334" y="270" font-size="9.5" fill="#64748b" text-anchor="middle">批 3</text>
+  <path d="M90,260 C105.3,267.3 151.1,290.2 181.66666666666666,303.77749312355326 C212.2,317.4 242.8,329.8 273.3333333333333,341.4571306428886 C303.9,353.1 334.4,363.8 365,373.8882952045855 C395.6,383.9 426.1,393.1 456.66666666666663,401.8020572275917 C487.2,410.5 517.8,418.4 548.3333333333334,425.82765485282397 C578.9,433.3 624.7,443.1 640,446.5066783672403" fill="none" stroke="#d97706" stroke-width="2.6"/>
+  <polyline points="90,406.6666666666667 640,274.66666666666663" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="90" y1="458.6664613461181" x2="640" y2="458.6664613461181" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="6 4" opacity="0.75"/>
+  <text x="306" y="473" font-size="9.5" fill="#dc2626" font-weight="600">1/e = 0.368：30–50 MGy 掉一个 e 因子（μ = 0.02–0.04 MGy<tspan dy="-3.2" font-size="6.8">−1</tspan><tspan dy="3.2">）</tspan></text>
+  <circle cx="90" cy="260" r="3.2" fill="#d97706"/>
+  <circle cx="90" cy="406.6666666666667" r="3.2" fill="#0369a1"/>
+  <circle cx="273.3333333333333" cy="341.4571306428886" r="3.2" fill="#d97706"/>
+  <circle cx="273.3333333333333" cy="362.6666666666667" r="3.2" fill="#0369a1"/>
+  <circle cx="456.66666666666663" cy="401.8020572275917" r="3.2" fill="#d97706"/>
+  <circle cx="456.66666666666663" cy="318.6666666666667" r="3.2" fill="#0369a1"/>
+  <circle cx="640" cy="446.5066783672403" r="3.2" fill="#d97706"/>
+  <circle cx="640" cy="274.66666666666663" r="3.2" fill="#0369a1"/>
+  <text x="200" y="513" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">累计剂量 D (MGy)</text>
+  <rect x="330" y="508.17" width="12.65" height="9.66" rx="3" fill="#d97706" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="350.65" y="517.14" font-size="11.5" fill="#475569">I(D) = I(0)e<tspan dy="-3.9" font-size="8.3">−μD</tspan></text>
+  <rect x="444.9548" y="508.17" width="12.65" height="9.66" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="465.60479999999995" y="517.14" font-size="11.5" fill="#475569">B(D) = B<tspan dy="2.5" font-size="8.3">0</tspan><tspan dy="-2.5"> + βD</tspan></text>
+  <text x="52" y="538" font-size="10" fill="#475569">μ 典型 0.02–0.04 MGy<tspan dy="-3.4" font-size="7.2">−1</tspan><tspan dy="3.4">、β 每 MGy 十分之几 Å</tspan><tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4">，两条描述等价（指数与 sin</tspan><tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4">θ/λ</tspan><tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4"> 角度展开）；逐帧参数噪声大会把涨落合法化，</tspan></text>
+  <text x="52" y="551.5" font-size="10" fill="#475569">按剂量分批加批内样条又可能抹平 top-up 注入的真实跳变——程序多以剂量为分批轴折中。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、各向异性缩放与吸收修正</text>
+  <text x="885" y="184" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">吸收的签名：花瓣样弥散</text>
+  <polygon points="956,302 954.929950656126,306.58345112050125 951.8062176832817,310.7952054123713 946.8795902495912,314.3086157890294 940.5407350116215,316.8820950933949 933.2821815989423,318.3895921709759 925.6506994304966,318.83807102406394 918.1949514708051,318.3699384851586 911.4137748154254,317.25 905.7103423086506,315.83820831463663 901.3568150073392,314.55102559251065 898.4729713726191,313.8154787803621 897.0208152801713,314.0208152801713 896.8154787803621,315.4729713726191 897.5510255925107,318.3568150073392 898.8382083146366,322.71034230865064 900.25,328.41377481542537 901.3699384851586,335.1949514708051 901.838071024064,342.6506994304966 901.3895921709759,350.2821815989423 899.8820950933949,357.54073501162145 897.3086157890294,363.8795902495911 893.7952054123713,368.8062176832817 889.5834511205012,371.9299506561261 885,373 880.4165488794988,371.9299506561261 876.2047945876287,368.8062176832817 872.6913842109707,363.87959024959116 870.1179049066051,357.54073501162145 868.6104078290241,350.2821815989424 868.161928975936,342.6506994304966 868.6300615148414,335.1949514708051 869.75,328.4137748154254 871.1617916853634,322.7103423086507 872.4489744074893,318.3568150073392 873.1845212196379,315.4729713726191 872.9791847198287,314.0208152801713 871.5270286273809,313.8154787803621 868.6431849926608,314.55102559251065 864.2896576913494,315.83820831463663 858.5862251845746,317.25 851.8050485291949,318.3699384851586 844.3493005695034,318.83807102406394 836.7178184010577,318.3895921709759 829.4592649883787,316.8820950933949 823.120409750409,314.3086157890294 818.1937823167183,310.7952054123713 815.070049343874,306.58345112050125 814,302 815.070049343874,297.41654887949875 818.1937823167183,293.2047945876287 823.1204097504088,289.6913842109706 829.4592649883785,287.1179049066051 836.7178184010577,285.6104078290241 844.3493005695034,285.16192897593606 851.8050485291949,285.6300615148414 858.5862251845747,286.75 864.2896576913494,288.16179168536337 868.6431849926607,289.44897440748935 871.5270286273809,290.1845212196379 872.9791847198287,289.9791847198287 873.1845212196379,288.5270286273809 872.4489744074893,285.64318499266085 871.1617916853634,281.28965769134936 869.75,275.5862251845747 868.6300615148414,268.80504852919495 868.161928975936,261.34930056950344 868.6104078290241,253.71781840105768 870.1179049066051,246.45926498837855 872.6913842109706,240.1204097504089 876.2047945876287,235.19378231671828 880.4165488794988,232.0700493438739 885,231 889.5834511205012,232.07004934387388 893.7952054123713,235.19378231671828 897.3086157890294,240.12040975040887 899.8820950933949,246.45926498837852 901.3895921709759,253.71781840105763 901.838071024064,261.3493005695034 901.3699384851586,268.8050485291949 900.25,275.58622518457463 898.8382083146366,281.2896576913493 897.5510255925107,285.6431849926608 896.8154787803621,288.5270286273809 897.0208152801713,289.9791847198287 898.4729713726191,290.1845212196379 901.3568150073392,289.44897440748935 905.7103423086506,288.16179168536337 911.4137748154253,286.75 918.1949514708051,285.6300615148414 925.6506994304965,285.16192897593606 933.2821815989423,285.6104078290241 940.5407350116215,287.1179049066051 946.879590249591,289.6913842109706 951.8062176832817,293.2047945876287 954.929950656126,297.41654887949875 956,302" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="2"/>
+  <circle cx="885" cy="302" r="2.6" fill="#be185d"/>
+  <text x="885" y="306" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">〈I〉</text>
+  <text x="885" y="392" font-size="10" fill="#64748b" text-anchor="middle">等效反射弥散图（偏差随 φ 与 2θ 系统变化）</text>
+  <text x="726" y="414" font-size="10" fill="#475569">经验法以等效反射间的系统偏差反推吸收面（球谐函数拟合，</text>
+  <text x="726" y="428" font-size="10" fill="#475569">4–5 阶足矣）；</text>
+  <text x="726" y="442" font-size="10" fill="#475569">阶数过高会把真实强度差异也吸进吸收面——对反常数据尤须以正交性约束。</text>
+  <text x="1205" y="184" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">各向异性缩放：椭球 B 张量</text>
+  <ellipse cx="1205" cy="300" rx="88" ry="40" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="2"/>
+  <line x1="1113" y1="300" x2="1297" y2="300" stroke="#0369a1" stroke-width="1" stroke-dasharray="5 4" opacity="0.65"/>
+  <line x1="1205" y1="254" x2="1205" y2="346" stroke="#0369a1" stroke-width="1" stroke-dasharray="5 4" opacity="0.65"/>
+  <text x="1205" y="248" font-size="10" fill="#0369a1" text-anchor="middle" font-weight="700">B<tspan dy="2.2" font-size="7.2">33</tspan><tspan dy="-2.2"> = 22 Å</tspan><tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <text x="1108" y="318" font-size="10" fill="#0369a1" text-anchor="end" font-weight="700">B<tspan dy="2.2" font-size="7.2">11</tspan><tspan dy="-2.2"> = 38 Å</tspan><tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <text x="1205" y="296" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">衰减最快方向</text>
+  <text x="1205" y="313" font-size="9.5" fill="#64748b" text-anchor="middle">常垂直于束流</text>
+  <rect x="1123.153792" y="369.075" width="163.692416" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1205" y="381.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">主轴差过十几 Å<tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">：按方向截断</tspan></text>
+  <text x="1205" y="410" font-size="10.5" fill="#475569" text-anchor="middle">六参数对称张量：三对角 + 三交叉项</text>
+  <text x="726" y="468" font-size="10" fill="#475569">物理路线按晶体几何与线性吸收系数数值积分（近年借照片重建晶体轮廓复活）；经验法不问几何只问效果。</text>
+  <text x="726" y="482" font-size="10" fill="#475569">反常数据的吸收修正必须波长特异：Bijvoet 差仅百分之几、与波长间吸收差同量级，MAD 各波长须分别建模，</text>
+  <text x="726" y="496" font-size="10" fill="#475569">否则吸收伪影直接冒充反常信号。</text>
+  <rect x="30" y="592" width="660" height="370" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、合并与离群剔除</text>
+  <rect x="72" y="634" width="306" height="40" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="225" y="658" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">反射的 N 次测量 I<tspan dy="2.4" font-size="7.9">i</tspan><tspan dy="-2.4">（各带 σ</tspan><tspan dy="2.4" font-size="7.9">i</tspan><tspan dy="-2.4">）</tspan></text>
+  <line x1="225" y1="676" x2="225" y2="690" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
+  <rect x="72" y="698" width="306" height="58" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="225" y="720" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">w<tspan dy="2.4" font-size="7.9">i</tspan><tspan dy="-2.4"> = 1/σ</tspan><tspan dy="2.4" font-size="7.9">i</tspan><tspan dy="-6.2" font-size="7.9">2</tspan><tspan dy="3.7"> 方差加权</tspan></text>
+  <text x="225" y="742" font-size="10.5" fill="#475569" text-anchor="middle">〈I〉 = Σw<tspan dy="2.3" font-size="7.6">i</tspan><tspan dy="-2.3">I</tspan><tspan dy="2.3" font-size="7.6">i</tspan><tspan dy="-2.3">/Σw</tspan><tspan dy="2.3" font-size="7.6">i</tspan><tspan dy="-2.3">，σ = √(1/Σw</tspan><tspan dy="2.3" font-size="7.6">i</tspan><tspan dy="-2.3">)</tspan></text>
+  <line x1="225" y1="758" x2="225" y2="772" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arr-dna)"/>
+  <rect x="72" y="780" width="306" height="36" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="225" y="802" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">冗余加倍，σ 缩至 1/√2</text>
+  <text x="52" y="838" font-size="10" fill="#475569">Bijvoet 对的去留须事先决定：常规数据把 F(h) 与 F(−h) 一并平均</text>
+  <text x="52" y="852" font-size="10" fill="#475569">（弗里德定律）；反常数据保持不合并，</text>
+  <text x="52" y="866" font-size="10" fill="#475569">I<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 与 I</tspan><tspan dy="-3.4" font-size="7.2">−</tspan><tspan dy="3.4"> 分别合并留给 SAD/MAD；σ 还须按等效反射的实际弥散重加权，</tspan></text>
+  <text x="52" y="880" font-size="10" fill="#475569">否则下游一切按 σ 加权的环节都会失真。</text>
+  <text x="545" y="640" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">正态偏差检验揪出离群</text>
+  <line x1="440" y1="850" x2="440" y2="662" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="440" y1="850" x2="662" y2="850" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="442" y="756" width="218" height="28" fill="#d1fae5" fill-opacity="0.55"/>
+  <line x1="440" y1="770" x2="660" y2="770" stroke="#475569" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="658" y="765" font-size="10" fill="#475569" text-anchor="end" font-weight="600">〈I〉</text>
+  <circle cx="458" cy="762" r="3" fill="#0f766e"/>
+  <circle cx="482" cy="775" r="3" fill="#0f766e"/>
+  <circle cx="506" cy="759" r="3" fill="#0f766e"/>
+  <circle cx="528" cy="772" r="3" fill="#0f766e"/>
+  <circle cx="548" cy="764" r="3" fill="#0f766e"/>
+  <circle cx="566" cy="778" r="3" fill="#0f766e"/>
+  <circle cx="588" cy="767" r="3" fill="#0f766e"/>
+  <circle cx="632" cy="781" r="3" fill="#0f766e"/>
+  <line x1="604" y1="689" x2="604" y2="766" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <circle cx="604" cy="685" r="4" fill="#dc2626"/>
+  <circle cx="604" cy="685" r="8" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="604" y="669" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">|z| ≈ 6σ</text>
+  <rect x="470.69288" y="691.5" width="98.61424" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="520" y="703.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">z = (I<tspan dy="2.2" font-size="7.2">i</tspan><tspan dy="-2.2"> − 〈I〉)/σ</tspan><tspan dy="2.2" font-size="7.2">i</tspan></text>
+  <text x="552" y="874" font-size="10" fill="#64748b" text-anchor="middle">等效反射的各次测量</text>
+  <text x="404" y="896" font-size="10" fill="#475569">阈值默认 4–6σ，并随组内测量数与总检验次数作多重校正；</text>
+  <text x="404" y="910" font-size="10" fill="#475569">程序迭代只剔组内最坏一个，总量设上限（百分之零点几），</text>
+  <text x="404" y="924" font-size="10" fill="#475569">清单随报表输出——剔除是手术，不是屠戮。</text>
+  <rect x="710" y="592" width="660" height="370" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="614.84" font-size="19" fill="#475569" font-weight="700">四、CC1/2 示意与三层级输出</text>
+  <rect x="726" y="640" width="122" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="787" y="658" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">N 次观测</text>
+  <text x="787" y="676" font-size="9" fill="#64748b" text-anchor="middle">组内随机对半</text>
+  <line x1="852" y1="662" x2="878" y2="662" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="882" y="618" width="108" height="34" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="936" y="639" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">半组 A：I<tspan dy="2.3" font-size="7.6">1</tspan></text>
+  <rect x="882" y="672" width="108" height="34" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="936" y="693" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">半组 B：I<tspan dy="2.3" font-size="7.6">2</tspan></text>
+  <line x1="994" y1="635" x2="1022" y2="654" stroke="#0369a1" stroke-width="1.5" marker-end="url(#arr-acc)"/>
+  <line x1="994" y1="689" x2="1022" y2="670" stroke="#0369a1" stroke-width="1.5" marker-end="url(#arr-acc)"/>
+  <rect x="1026" y="640" width="130" height="44" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="1091" y="658" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">逐壳层相关</text>
+  <text x="1091" y="676" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">CC<tspan dy="2.5" font-size="8.3">1/2</tspan></text>
+  <rect x="1179.91752" y="653.5" width="144.16496" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1252" y="665.6" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">CC<tspan dy="2.2" font-size="7.2">1/2</tspan><tspan dy="-2.2"> = 0.143 即 CC* = 0.5</tspan></text>
+  <text x="1040" y="712" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">合并的三层级菜单</text>
+  <rect x="726" y="726" width="198" height="68" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="825" y="747" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">常规合并</text>
+  <text x="825" y="766" font-size="9.5" fill="#475569" text-anchor="middle">弗里德对一并平均</text>
+  <text x="825" y="782" font-size="9.5" fill="#64748b" text-anchor="middle">供分子置换与常规精修</text>
+  <rect x="948" y="726" width="198" height="68" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1047" y="747" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">anomalous 保留</text>
+  <text x="1047" y="766" font-size="9.5" fill="#475569" text-anchor="middle">I<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 与 I</tspan><tspan dy="-3.2" font-size="6.8">−</tspan><tspan dy="3.2"> 分别合并</tspan></text>
+  <text x="1047" y="782" font-size="9.5" fill="#64748b" text-anchor="middle">Bijvoet 差交 SAD/MAD</text>
+  <rect x="1170" y="726" width="198" height="68" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1269" y="747" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">质量护栏</text>
+  <text x="1269" y="766" font-size="9.5" fill="#475569" text-anchor="middle">CC<tspan dy="2.1" font-size="6.8">anom</tspan><tspan dy="-2.1"> 与 ΔF/σ</tspan></text>
+  <text x="1269" y="782" font-size="9.5" fill="#64748b" text-anchor="middle">监控反常信号成色</text>
+  <rect x="726" y="820" width="400" height="118" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="926" y="844" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">MTZ（CCP4 生态标准格式）</text>
+  <text x="744" y="866" font-size="9.5" fill="#475569">反射指数 · 强度 I 与 σ · 批次（batch）记录</text>
+  <text x="744" y="884" font-size="9.5" fill="#475569">各壳层 R<tspan dy="2.1" font-size="6.8">merge</tspan><tspan dy="-2.1">、完整度、冗余、I/σ</tspan></text>
+  <text x="744" y="902" font-size="9.5" fill="#475569">每帧剂量、时间与角度写进元数据</text>
+  <text x="744" y="920" font-size="9.5" fill="#475569">按剂量重排与零剂量外推在此落地</text>
+  <line x1="1130" y1="879" x2="1158" y2="879" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="1162" y="842" width="206" height="74" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1265" y="864" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">下游公共入口</text>
+  <text x="1265" y="886" font-size="10" fill="#475569" text-anchor="middle">第 7 章分子置换</text>
+  <text x="1265" y="904" font-size="10" fill="#475569" text-anchor="middle">第 8 章实验定相</text>
+  <text x="1040" y="954" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">合并了弗里德对再想找回反常没有回头路——拿不准时宁可默认保留</text>
+</svg>

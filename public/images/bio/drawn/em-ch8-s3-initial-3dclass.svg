@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">初始模型与三维分类：拆解异质性的决策树</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">初始模型四来路（abinitioSGD／随机锥形／负染约20Å／同源结构）加验证四条；三维分类以独立参考与取向分配拆构象，正则化T常用4，欧拉角分布图查空洞，</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">聚焦分类专攻低占据率构象态</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、初始模型的四条来路与质量验证</text>
+  <rect x="50" y="178" width="620" height="60" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="66" y="202" font-size="12.5" fill="#075985" font-weight="700">ab initio SGD（cryoSPARC）</text>
+  <text x="66" y="222" font-size="10" fill="#475569">随机初始化并行 + 取向与密度联合优化 + 频率爬升；小于约 100 kDa 常须百万级颗粒</text>
+  <text x="654" y="212" font-size="9.5" fill="#991b1b" text-anchor="end">小样品不收敛</text>
+  <rect x="50" y="246" width="620" height="60" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="66" y="270" font-size="12.5" fill="#134e4a" font-weight="700">随机锥形重构</text>
+  <text x="66" y="290" font-size="10" fill="#475569">已知倾角双张照片张出锥面覆盖，实验设计绕开搜索（第 7 章第 2 节）</text>
+  <text x="654" y="280" font-size="9.5" fill="#991b1b" text-anchor="end">锥面覆盖不完整</text>
+  <rect x="50" y="314" width="620" height="60" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="66" y="338" font-size="12.5" fill="#78350f" font-weight="700">负染三维模型</text>
+  <text x="66" y="358" font-size="10" fill="#475569">形状信息约 20 Å 级可靠，作低频形状锚点转入冷冻数据</text>
+  <text x="654" y="348" font-size="9.5" fill="#991b1b" text-anchor="end">染剂压扁构象</text>
+  <rect x="50" y="382" width="620" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="66" y="406" font-size="12.5" fill="#991b1b" font-weight="700">同源结构参考</text>
+  <text x="66" y="426" font-size="10" fill="#475569">以序列同源模型投影定向，起步最快</text>
+  <text x="654" y="416" font-size="9.5" fill="#991b1b" text-anchor="end">参考偏差风险最高</text>
+  <text x="50" y="478" font-size="11" fill="#1e293b" font-weight="700">验证四条（不过关宁可推倒重来）：</text>
+  <rect x="113.9625" y="499.075" width="72.075" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="150" y="511.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">对称性正确</text>
+  <rect x="243.1475" y="499.075" width="93.705" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="290" y="511.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">多起点收敛一致</text>
+  <rect x="387.5739" y="499.075" width="124.8522" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="450" y="511.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">投影与 2D 类平均吻合</text>
+  <rect x="556.76665" y="499.075" width="106.4667" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="610" y="511.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">FSC 收敛趋势健康</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、三维分类：异质性的拆解</text>
+  <circle cx="748" cy="190" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="835.513119246214" cy="226.9051821297944" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="778.1991320429715" cy="285.16651173344144" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="816.7605395357969" cy="224.84573884643396" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="825.3084489537541" cy="203.75765947200307" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="863.3674069987756" cy="219.32153739279784" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="849.600386269165" cy="324.29388808681324" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="833.311296138243" cy="279.8177633906016" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="839.5531640448899" cy="206.03904504354432" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="803.4833701300231" cy="209.5562608675118" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="873.1311087659997" cy="318.01020384504227" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="846.2075961682858" cy="237.0910712579098" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="830.1266149306393" cy="230.15863572858507" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="824.0260788543746" cy="269.3797353639093" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="783.4743059314205" cy="233.09862601011218" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="762.2177167465707" cy="192.3590685785166" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="832.990862468112" cy="230.15840126967305" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="757.1569938021348" cy="191.57109752617544" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="755.7710034661868" cy="288.0973681377918" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="856.8024941304502" cy="238.22533953815764" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="780.0683533348347" cy="281.384509008094" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="862.4721942460819" cy="277.6483790723796" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="863.9988689906459" cy="257.8868813768531" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="870.9972912237736" cy="330.85395917435903" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="809.2750604114262" cy="278.9321980718705" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="749.0210947179303" cy="234.219736386367" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="874.6669942902081" cy="249.52144052535004" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="761.8285165479283" cy="258.6402551806168" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="787.8733592579811" cy="242.14850891022706" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="748.8712831416051" cy="329.6083922526486" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="801.7096923152421" cy="318.53170329281056" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="862.4217532386756" cy="212.3105200900136" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="818.7434444481623" cy="216.63217781611138" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="859.6771909195813" cy="323.7972617630385" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="784.4076410236885" cy="242.8506559244306" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="858.3961745938432" cy="247.0048651484285" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="848.4053449228377" cy="233.20542679370192" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="847.6648918707797" cy="195.72442980825372" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="807.795793893245" cy="226.75585086539286" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="749.2037991296529" cy="300.9946227045839" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="869.0314165941963" cy="304.73878408114615" r="2.6" fill="#64748b" opacity="0.6"/>
+  <circle cx="804.227175136155" cy="225.5516277706556" r="2.6" fill="#64748b" opacity="0.6"/>
+  <text x="812" y="366" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">混合颗粒库</text>
+  <text x="812" y="382" font-size="9.5" fill="#64748b" text-anchor="middle">构象与化学计量各异</text>
+  <line x1="880" y1="268" x2="946" y2="268" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="950" y="196" width="108" height="144" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <ellipse cx="1004" cy="252" rx="30" ry="24" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <path d="M 984,246 q 10,-12 22,0 q 8,-9 14,2" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <text x="1004" y="300" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">构象 A</text>
+  <text x="1004" y="318" font-size="10" fill="#64748b" text-anchor="middle">占据约 60%</text>
+  <line x1="880" y1="268" x2="1066" y2="268" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="1070" y="196" width="108" height="144" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <ellipse cx="1124" cy="252" rx="30" ry="24" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M 1104,246 q 10,-12 22,0 q 8,-9 14,2" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1124" y="300" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">构象 B</text>
+  <text x="1124" y="318" font-size="10" fill="#64748b" text-anchor="middle">占据约 30%</text>
+  <line x1="880" y1="268" x2="1186" y2="268" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="1190" y="196" width="108" height="144" rx="10" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <ellipse cx="1244" cy="252" rx="30" ry="24" fill="#ffffff" stroke="#be185d" stroke-width="2"/>
+  <path d="M 1224,246 q 10,-12 22,0 q 8,-9 14,2" fill="none" stroke="#be185d" stroke-width="2"/>
+  <text x="1244" y="300" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">空结合位</text>
+  <text x="1244" y="318" font-size="10" fill="#64748b" text-anchor="middle">占据约 10%</text>
+  <text x="730" y="366" font-size="10" fill="#475569">每个类拥有独立的三维参考与各自的取向分配：不同构象、不同化学计量（配体有无、寡聚态、占据率）各归其桶，桶内均一度上升、</text>
+  <text x="730" y="380" font-size="10" fill="#475569">各自精修的分辨率随之改善。算法是贝叶斯 EM：类别为隐变量，正则化参数 T（RELION 常用 T = 4）控制类的紧散——T 大先验弱、</text>
+  <text x="730" y="394" font-size="10" fill="#475569">类易拆细，T 小则类被拉向共同平均。</text>
+  <rect x="740.3548" y="467.075" width="279.29040000000003" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="880" y="479.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">分类参考常压低至 10–20 Å：用低频分家、用高频精修</text>
+  <rect x="1068.2575" y="467.075" width="223.485" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1180" y="479.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">免对齐分类：只分裂类别变量，专拆占据率</text>
+  <text x="730" y="522" font-size="10" fill="#64748b">两个实务陷阱：类间迁移（K 或 T 不当）与 mask 过紧（边界密度推挤变形，须比外廓大数个像素并做软边）。</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、分类策略表与欧拉角分布图</text>
+  <rect x="50" y="626" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="653.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">场景</text>
+  <rect x="200" y="626" width="90" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="653.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">类数 K</text>
+  <rect x="290" y="626" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="653.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">正则化 T</text>
+  <rect x="50" y="670" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="695.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">快速试探</text>
+  <rect x="200" y="670" width="90" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="695.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">2–4</text>
+  <rect x="290" y="670" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="695.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">4</text>
+  <rect x="50" y="710" width="360" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="710" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="735.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">构象拆解</text>
+  <rect x="200" y="710" width="90" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="735.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">4–8</text>
+  <rect x="290" y="710" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="735.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">4–8</text>
+  <rect x="50" y="750" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="775.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">化学计量与占据率</text>
+  <rect x="200" y="750" width="90" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="775.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">2–3</text>
+  <rect x="290" y="750" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="775.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高 T 拆得动</text>
+  <rect x="50" y="790" width="360" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="790" width="150" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="125" y="815.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">疑似过度拆分</text>
+  <rect x="200" y="790" width="90" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="815.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">递减 K</text>
+  <rect x="290" y="790" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="815.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">低 T</text>
+  <text x="50" y="800" font-size="10" fill="#475569">备注：先粗拆（2–3 类）看大势，再对目标类细拆（4–8 类）找稀有态；</text>
+  <text x="50" y="814" font-size="10" fill="#475569">高度相似的类可合并再精修。</text>
+  <circle cx="560" cy="706" r="84" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <circle cx="572" cy="706" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="625.2316086152608" cy="716.3316718219972" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="615.397056379167" cy="723.9995947309161" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="599.785489065402" cy="726.2717191994046" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="602.9778549578568" cy="737.225239389329" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="577.4413741752985" cy="723.4413741752985" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="590.2488841329204" cy="747.634017234979" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="570.2857653310347" cy="726.1869510958494" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="572.0432041191872" cy="743.0651710524636" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="566.1372380518243" cy="744.748996045627" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="560" cy="742.7726675731792" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="550.7868799509575" cy="764.1693506645245" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="536.3008903644923" cy="778.9383595709135" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="547.7601514195508" cy="730.022055409782" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="547.8786064482255" cy="722.6836669355782" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="536.803777288732" cy="729.196222711268" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="511.5488445290836" cy="741.2018249806204" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="527.8530839916057" cy="722.3796718290367" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="506.8222731084769" cy="723.2784908679502" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="517.2291390496804" cy="712.774238873815" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="497.1984559618958" cy="706" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="486.36096944744827" cy="694.3367233598926" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="508.45203986882916" cy="689.251052452754" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="536.9839662482608" cy="694.2727450570662" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="508.4321702568141" cy="668.5337786146357" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="510.41229337676725" cy="656.4122933767673" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="544.2975894605725" cy="684.3874860257159" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="536.5874769279271" cy="660.050336258368" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="551.3615703320838" cy="679.4136472240082" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="550.4584366546269" cy="645.756939975783" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="560" cy="661.1444650875658" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="569.9114756788349" cy="643.4214054200913" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="572.4403459585268" cy="667.7125520466774" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="596.2405420801533" cy="634.8739313882895" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="587.4543331800276" cy="668.2123521724183" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="574.0652615851145" cy="691.9347384148855" r="3" fill="#dc2626" opacity="0.75"/>
+  <circle cx="572.8386786538045" cy="696.6721539546164" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="621.6501990367244" cy="674.5876546243919" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="601.9084871789097" cy="692.383107076248" r="3" fill="#059669" opacity="0.75"/>
+  <circle cx="622.0838522487347" cy="696.166883808393" r="3" fill="#dc2626" opacity="0.75"/>
+  <path d="M 560,622 A 84,84 0 0 1 633,648" fill="none" opacity="0.35" stroke="#dc2626" stroke-width="3.5"/>
+  <text x="560" y="612" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">欧拉角分布图（听诊器）</text>
+  <text x="560" y="808" font-size="9.5" fill="#991b1b" text-anchor="middle">红色弧段＝角度空洞</text>
+  <text x="560" y="824" font-size="9.5" fill="#64748b" text-anchor="middle">优势取向实证，回制样端或预倾收集补救</text>
+  <rect x="439.318" y="857.5" width="241.364" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="560" y="869.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">分布图与 2D 类平均视角多样性互证，诊断即闭环</text>
+  <text x="560" y="900" font-size="9.5" fill="#64748b" text-anchor="middle">覆盖均匀度指标把空洞变成数字</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、对称性纠错、聚焦分类与连续构象</text>
+  <text x="730" y="620" font-size="11.5" fill="#1e293b" font-weight="700">对称性误判的纠错：</text>
+  <text x="730" y="640" font-size="10" fill="#475569">把 C 当 D，密度被多余二次轴平均、缺失成分以减半密度出现；把螺旋当 Cn 则完全无法收敛。</text>
+  <rect x="773.115" y="667.075" width="193.76999999999998" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="870" y="679.78" font-size="10.5" fill="#065f46" text-anchor="middle">C1 与候选对称各精修一轮，比较 FSC</text>
+  <rect x="1077.63" y="667.075" width="184.74" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1170" y="679.78" font-size="10.5" fill="#065f46" text-anchor="middle">终审交给 2D 类平均的对称元素计数</text>
+  <text x="730" y="706" font-size="10" fill="#475569">对称颗粒的优势取向更隐蔽：C4 只贡献顶视时傅里叶体积仍缺一大圈——覆盖图须先除以对称操作，回到非对称单元的视角分布。</text>
+  <text x="730" y="748" font-size="11.5" fill="#1e293b" font-weight="700">聚焦分类（focused classification）：</text>
+  <ellipse cx="790" cy="812" rx="46" ry="36" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <ellipse cx="812" cy="800" rx="17" ry="14" fill="#fce7f3" stroke="#be185d" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <text x="790" y="864" font-size="9.5" fill="#475569" text-anchor="middle">mask 圈定易变区域</text>
+  <text x="870" y="782" font-size="10" fill="#475569">在共识取向下只让该区域的类别变量分裂——专为低占据率构象态设计，</text>
+  <text x="870" y="796" font-size="10" fill="#475569">把宝贵的类数预算集中到真正变化的地方；配局部分辨率据此判读。</text>
+  <text x="870" y="840" font-size="10" fill="#475569">对类别间平滑过渡的连续构象变化，离散分类终会力不从心——连续构象分析（3D variability 一类）接棒，</text>
+  <text x="870" y="854" font-size="10" fill="#475569">把异质性建模为低维流形上的连续坐标（第 12 章）。</text>
+  <rect x="893.665" y="921.075" width="212.67000000000002" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1000" y="933.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">分辨率的账记在「每桶的有效颗粒数」上</text>
+</svg>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">断层图的分析与分割：从拉长的地图到定量几何</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">z向分辨率比xy差约2倍：约5nm的膜在z向拖成8–10nm泡影、测量乘约1.4–1.7倍拉长因子；IMODcontour-mesh五步分割（人工1–3个工作日一幅）；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">模板匹配六维搜索配假阳性控制三连</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、断层图的物理特性：先认「拉长的地图」</text>
+  <text x="60" y="186" font-size="11" fill="#1e293b" font-weight="700">横切面上约 5 nm 的膜，在 z 向被拖成 8–10 nm 的「泡影」</text>
+  <rect x="60" y="206" width="180" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <path d="M 80,290 L 220,290" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="150" y="258" font-size="9.5" fill="#64748b" text-anchor="middle">xy 剖面</text>
+  <text x="150" y="316" font-size="9.5" fill="#134e4a" text-anchor="middle">膜约 5 nm</text>
+  <rect x="270" y="206" width="180" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <ellipse cx="360" cy="271" rx="24" ry="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="360" y="240" font-size="9.5" fill="#64748b" text-anchor="middle">xz 剖面</text>
+  <text x="360" y="316" font-size="9.5" fill="#134e4a" text-anchor="middle">z 向拖成 8–10 nm</text>
+  <line x1="248" y1="271" x2="262" y2="271" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <circle cx="530" cy="258" r="34" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <ellipse cx="530" cy="258" rx="26" ry="40" fill="#ede9fe" fill-opacity="0.5" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="530" y1="300" x2="530" y2="316" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <text x="540" y="330" font-size="10" fill="#475569" font-weight="700">z</text>
+  <text x="530" y="362" font-size="9.5" fill="#4c1d95" text-anchor="middle">囊泡拉成竖直长轴椭球</text>
+  <rect x="147.60129999999998" y="386.65" width="164.7974" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="230" y="399.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">z 向分辨率常比 xy 差约 2 倍</text>
+  <rect x="469.5" y="386.65" width="141" height="18.7" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="540" y="399.96" font-size="11" fill="#475569" text-anchor="middle">定量测量按方向分别记账</text>
+  <text x="60" y="440" font-size="10.5" fill="#475569">读图者的第一课：先在脑内把这张「拉长的地图」校正回真实比例——z 向膜厚测量须乘拉长因子（约 1.4–1.7 倍，</text>
+  <text x="60" y="455" font-size="10.5" fill="#475569">随缺失角与算法而异）。</text>
+  <text x="360" y="510" font-size="10" fill="#64748b" text-anchor="middle">缺失楔（本章第 1 节）的实空间账单在此兑付</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、去噪：从非局部均值到深度学习</text>
+  <rect x="740" y="190" width="120" height="120" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="748" cy="198" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="818.0104953969712" cy="223.58759294332413" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="772.1593056343772" cy="263.98211480185273" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="803.0084316286375" cy="222.15971226686088" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="809.8467591630033" cy="207.5386439005888" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="840.2939255990204" cy="218.3295992590065" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="829.280309015332" cy="291.11042907352385" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="816.2490369105944" cy="260.27364928415045" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="821.2425312359119" cy="209.12040456352406" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="792.3866961040185" cy="211.5590075348082" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="848.1048870127997" cy="286.75374133256264" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="826.5660769346287" cy="230.64980940548412" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="813.7012919445115" cy="225.84332077181898" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="808.8208630834997" cy="253.0366165189771" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="776.3794447451364" cy="227.88171403367778" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="759.3741733972565" cy="199.63562088110484" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="815.9926899744896" cy="225.84315821363998" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="755.3255950417079" cy="199.08929428481497" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="754.2168027729494" cy="266.0141752422023" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="835.0419953043602" cy="231.43623541312263" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="773.6546826678677" cy="261.35992624561186" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="839.5777553968655" cy="258.76954282351653" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="840.7990951925167" cy="245.06823775461817" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="846.3978329790189" cy="295.6587450275556" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="797.020048329141" cy="259.6596573298302" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="748.8168757743442" cy="228.65901722788112" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="849.3335954321665" cy="239.2681987642427" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="759.0628132383426" cy="245.59057692522765" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="779.8986874063849" cy="234.15629951109077" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="748.6970265132841" cy="294.7951519618364" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="790.9677538521937" cy="287.1153142830153" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="839.5374025909405" cy="213.46862726240943" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="804.5947555585299" cy="216.46497661917056" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="837.3417527356651" cy="290.76610148904" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="777.1261128189508" cy="234.64312144093856" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="836.3169396750745" cy="237.5233731695771" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="828.3242759382701" cy="227.95576257696666" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="827.7319134966237" cy="201.96893800038924" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="795.836635114596" cy="223.48405660000572" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="748.9630393037223" cy="274.95627174184483" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="844.8251332753571" cy="277.55222362959466" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="792.981740108924" cy="222.64912858765456" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="783.7483221253497" cy="275.7276382784621" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="851.4428938881028" cy="213.11455723793188" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="834.2794046283379" cy="236.371388649859" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="757.1947144233272" cy="247.2803558698797" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="804.3849472712973" cy="293.2413529510377" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="759.8448156351224" cy="256.0847557503221" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="836.0920974751076" cy="240.09204157099884" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="851.6123137138202" cy="291.73903092935507" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="752.9523882859576" cy="275.13583554905927" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="831.7969822677551" cy="285.25513661228615" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="820.7604236464394" cy="205.66692683898145" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="793.4276558717247" cy="250.45952858433884" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="820.058383054944" cy="212.05206612608163" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="843.1060948898667" cy="282.9559718238452" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="814.2677473628719" cy="262.38038135681563" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="784.0058678839705" cy="284.770479143539" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="789.1052120579407" cy="199.13096801638312" r="1.4" fill="#64748b" opacity="0.55"/>
+  <circle cx="756.6844407934695" cy="245.3246651935333" r="1.4" fill="#64748b" opacity="0.55"/>
+  <ellipse cx="800" cy="250" rx="30" ry="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="800" y="332" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">原始低剂量断层片</text>
+  <rect x="716.05205" y="387.075" width="167.89590000000004" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="800" y="399.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">非局部均值（NLM）：保边去噪</text>
+  <text x="740" y="430" font-size="10" fill="#475569">以相似图像块互相平均，</text>
+  <text x="740" y="444" font-size="10" fill="#475569">边缘结构得以保留——无训练、</text>
+  <text x="740" y="458" font-size="10" fill="#475569">无「脑补」风险的经典选项。</text>
+  <rect x="900" y="190" width="90" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.4"/>
+  <ellipse cx="945" cy="235" rx="24" ry="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="945" y="296" font-size="9" fill="#64748b" text-anchor="middle">采集一（噪声实现 A）</text>
+  <rect x="1000" y="190" width="90" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.4"/>
+  <ellipse cx="1045" cy="235" rx="24" ry="17" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="1045" y="296" font-size="9" fill="#64748b" text-anchor="middle">采集二（噪声实现 B）</text>
+  <text x="1045" y="322" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">同区两次低剂量采集</text>
+  <text x="1045" y="338" font-size="9.5" fill="#475569" text-anchor="middle">结构相同、噪声独立</text>
+  <rect x="1110" y="190" width="90" height="90" fill="#ffffff" stroke="#0369a1" stroke-width="1.8"/>
+  <ellipse cx="1155" cy="235" rx="26" ry="19" fill="#e0f2fe" stroke="#075985" stroke-width="2.2"/>
+  <text x="1155" y="296" font-size="9" fill="#64748b" text-anchor="middle">平均（监督目标）</text>
+  <line x1="990" y1="235" x2="996" y2="235" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <line x1="1090" y1="235" x2="1106" y2="235" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="1072.6743" y="387.075" width="164.6514" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1155" y="399.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">cryoCARE：训练对自监督去噪</text>
+  <text x="940" y="430" font-size="10" fill="#475569">一图输入、平均为监督目标——网络学的是「去噪声实现」而非「补结构」；</text>
+  <text x="940" y="444" font-size="10" fill="#475569">但去噪图只用于观察判读，定量测量须回到原始数据（「脑补」风险的纪律）。</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、三维分割：膜与丝的测绘（IMOD 工作流）</text>
+  <rect x="60" y="616" width="66" height="66" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <path d="M 93,622 q 22,12 18,28 q -4,26 -20,30 q -18,-4 -20,-28 q 2,-20 22,-30" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <text x="93" y="696" font-size="9" fill="#64748b" text-anchor="middle">片 1</text>
+  <rect x="138" y="616" width="66" height="66" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <path d="M 171,622 q 22,12 18,28 q -4,26 -20,30 q -18,-4 -20,-28 q 2,-20 22,-30" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <text x="171" y="696" font-size="9" fill="#64748b" text-anchor="middle">片 2</text>
+  <rect x="216" y="616" width="66" height="66" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <path d="M 249,622 q 22,12 18,28 q -4,26 -20,30 q -18,-4 -20,-28 q 2,-20 22,-30" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <text x="249" y="696" font-size="9" fill="#64748b" text-anchor="middle">片 3</text>
+  <rect x="294" y="616" width="66" height="66" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+  <path d="M 327,622 q 22,12 18,28 q -4,26 -20,30 q -18,-4 -20,-28 q 2,-20 22,-30" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <text x="327" y="696" font-size="9" fill="#64748b" text-anchor="middle">片 4</text>
+  <line x1="368" y1="649" x2="400" y2="649" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <ellipse cx="470" cy="649" rx="40" ry="32" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="2"/>
+  <path d="M 430,633 q 20,-8 40,0" fill="none" opacity="0.5" stroke="#0f766e" stroke-width="1"/>
+  <path d="M 434,641 q 20,-8 40,2" fill="none" opacity="0.5" stroke="#0f766e" stroke-width="1"/>
+  <path d="M 438,649 q 20,-8 40,4" fill="none" opacity="0.5" stroke="#0f766e" stroke-width="1"/>
+  <path d="M 442,657 q 20,-8 40,6" fill="none" opacity="0.5" stroke="#0f766e" stroke-width="1"/>
+  <path d="M 446,665 q 20,-8 40,8" fill="none" opacity="0.5" stroke="#0f766e" stroke-width="1"/>
+  <text x="470" y="696" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">mesh 化的三维对象</text>
+  <rect x="84.13425000000001" y="721.925" width="71.73149999999998" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="120" y="733.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">1 描 contour</text>
+  <rect x="203.72355" y="721.925" width="52.5529" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="230" y="733.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">2 归对象</text>
+  <rect x="308.83105" y="721.925" width="62.3379" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="340" y="733.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">3 插值平滑</text>
+  <rect x="421.76655" y="721.925" width="56.4669" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="733.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">4 mesh 化</text>
+  <rect x="538.61605" y="721.925" width="42.7679" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="560" y="733.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">5 测量</text>
+  <text x="50" y="770" font-size="10" fill="#475569">膜性细胞器以 IMOD（Kremer 等 1996）的 contour 工作流逐切片描线、再拟合成 mesh；也可在正交剖面上勾画。</text>
+  <rect x="163.947" y="815.075" width="152.106" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="240" y="827.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">人工分割 1–3 个工作日一幅</text>
+  <rect x="466.11" y="815.075" width="147.78" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="540" y="827.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">注释工作量是断层第一瓶颈</text>
+  <rect x="123.28260000000002" y="851.075" width="233.43479999999997" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="240" y="863.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">MemBrain 等 U-Net 类网络：工时压向小时级</text>
+  <rect x="485.2448" y="851.075" width="149.5104" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="863.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">网络初画 + 人工校对的纪律</text>
+  <text x="360" y="916" font-size="9.5" fill="#64748b" text-anchor="middle">一个项目动辄数十幅断层图——分割效率决定定量生物学的吞吐</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、模板匹配与线粒体-ER 接触位点定量</text>
+  <text x="730" y="620" font-size="11" fill="#1e293b" font-weight="700">模板匹配：以归一化互相关在六维空间定位分子（3 旋转 + 3 平移）</text>
+  <rect x="740" y="638" width="170" height="120" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <circle cx="748" cy="646" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="793.3647520525701" cy="729.5949063469889" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="882.3936121586376" cy="733.4117873248761" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="861.3450290196197" cy="667.8228771894792" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="794.2597988585912" cy="727.4215197730227" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="901.0029822251236" cy="733.4981192811974" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="868.2058843724735" cy="670.0796002962452" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="816.5034980791715" cy="654.5820074158546" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="855.3028853751312" cy="650.7705499721924" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="780.1923467322631" cy="701.5753541137674" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="899.6738239397273" cy="704.2755454567596" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="801.9693175791908" cy="711.9621066779073" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="756.1042310087287" cy="705.1041111494415" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="771.0022846856718" cy="741.4527883233386" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="788.4956925638253" cy="744.6670379016723" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="839.4571315123758" cy="662.8662325817277" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="871.181322987486" cy="662.1599258138449" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="894.0012604141593" cy="682.0304393596234" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="895.7502819711663" cy="676.219994140265" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="780.5558234227356" cy="694.3796079392196" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="788.095112587871" cy="658.0290411275346" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="888.4191587542155" cy="674.6285626841127" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="837.8113916614384" cy="717.0448407392832" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="799.9037600948112" cy="679.950100747199" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="841.7475830551048" cy="661.8414901632059" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="865.7198235123869" cy="724.0460750060738" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="834.5731494808788" cy="713.3520904862089" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="756.2659067996574" cy="711.9421785001487" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="793.5837957504409" cy="707.9075345351594" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="787.210717665017" cy="660.8312447589124" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="892.5298737888916" cy="746.0479568533192" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="788.0608932018076" cy="706.9729229326767" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="826.1611990228048" cy="722.860466772865" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="825.6267610233881" cy="747.4688928980904" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="845.9355390230849" cy="663.3783524626779" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="839.7978905390191" cy="722.2509427779587" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="878.8401129527392" cy="712.8548747414607" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="893.1051120285847" cy="676.6960380917881" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="843.7848068695166" cy="749.1593070371891" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="863.5179025847756" cy="696.4024809168186" r="1.3" fill="#64748b" opacity="0.45"/>
+  <circle cx="780" cy="670" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <rect x="767" y="657" width="26" height="26" fill="none" stroke="#059669" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="840" cy="700" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <rect x="827" y="687" width="26" height="26" fill="none" stroke="#059669" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="880" cy="660" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <rect x="867" y="647" width="26" height="26" fill="none" stroke="#059669" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="770" cy="730" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <rect x="757" y="717" width="26" height="26" fill="none" stroke="#059669" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="825" y="776" font-size="9.5" fill="#475569" text-anchor="middle">峰值＝候选分子位置</text>
+  <text x="940" y="660" font-size="10.5" fill="#1e293b" font-weight="700">假阳性控制三连：</text>
+  <rect x="966.405" y="675.925" width="147.19" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1040" y="687.42" font-size="9.5" fill="#065f46" text-anchor="middle">对照区高分位阈值（如 99.9%）</text>
+  <rect x="1014" y="701.925" width="52" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1040" y="713.42" font-size="9.5" fill="#065f46" text-anchor="middle">尺寸过滤</text>
+  <rect x="1110.25" y="701.925" width="99.5" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1160" y="713.42" font-size="9.5" fill="#065f46" text-anchor="middle">聚类或非极大值抑制</text>
+  <rect x="935" y="728.35" width="210" height="15.299999999999999" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1040" y="739.24" font-size="9" fill="#475569" text-anchor="middle">阈值不靠拍脑袋，在「不含该分子」的对照区标定</text>
+  <ellipse cx="860" cy="856" rx="66" ry="26" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <path d="M 780,886 q 40,-14 90,-10 q 30,2 56,12" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <text x="860" y="856" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">线粒体</text>
+  <text x="930" y="900" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">ER</text>
+  <line x1="838" y1="868" x2="852" y2="880" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="820" y="930" font-size="9.5" fill="#475569" text-anchor="middle">两套 mesh 的最近距离统计</text>
+  <rect x="1017.8404" y="847.075" width="144.31920000000002" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1090" y="859.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">接触带阈值常取 10–30 nm</text>
+  <rect x="1033.75" y="879.075" width="112.5" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1090" y="891.78" font-size="10.5" fill="#78350f" text-anchor="middle">接触带面积占比统计</text>
+  <text x="1000" y="940" font-size="9.5" fill="#64748b" text-anchor="middle">模板匹配定位分子、mesh 定量几何——「以已知找已知」的识别局限见本章第 4 节</text>
+</svg>

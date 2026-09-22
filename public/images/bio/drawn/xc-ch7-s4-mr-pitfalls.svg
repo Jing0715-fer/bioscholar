@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">分子置换的陷阱与出路：假解识别到退路决策</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">假解三检验：TFZ边缘、Rfree高悬0.45以上不降、图不成蛋白样；重索引检验审空间群；低于3.5Å靠NCS限制与密度修饰；MR-SAD双弱互补，退路依次实验相位、</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">重新结晶、换构建</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、假解的三检验：判据、精修、图三者一致</text>
+  <rect x="56" y="184" width="360" height="84" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.7"/>
+  <text x="72" y="208" font-size="11.5" fill="#1e293b" font-weight="700">① 判据分档</text>
+  <text x="72" y="228" font-size="10" fill="#475569">TFZ 大于 8 高概率／5–8 存疑／小于 5 不可信</text>
+  <text x="72" y="244" font-size="10" fill="#475569">假解常停边缘区间，或多候选分数咬得极紧</text>
+  <text x="72" y="260" font-size="10" fill="#475569">正确解通常一峰独秀</text>
+  <rect x="56" y="280" width="360" height="84" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.7"/>
+  <text x="72" y="304" font-size="11.5" fill="#1e293b" font-weight="700">② 精修表现</text>
+  <text x="72" y="324" font-size="10" fill="#475569">刚体精修后 R 应从约 0.45–0.50 明显回落</text>
+  <text x="72" y="340" font-size="10" fill="#475569">典型降到 0.35–0.40 区间并继续下降</text>
+  <text x="72" y="356" font-size="10" fill="#475569">假解 R 与 R<tspan dy="2.2" font-size="7.2">free</tspan><tspan dy="-2.2"> 原地踏步、R</tspan><tspan dy="2.2" font-size="7.2">free</tspan><tspan dy="-2.2"> 高悬 0.45 以上</tspan></text>
+  <rect x="56" y="376" width="360" height="84" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.7"/>
+  <text x="72" y="400" font-size="11.5" fill="#1e293b" font-weight="700">③ 图的样子</text>
+  <text x="72" y="420" font-size="10" fill="#475569">以模型相位算的图应「长成蛋白的样子」</text>
+  <text x="72" y="436" font-size="10" fill="#475569">连续主链、可辨二级结构、独立出现的密度</text>
+  <text x="72" y="452" font-size="10" fill="#475569">假解的图只剩零碎碎片或与模型完全重影</text>
+  <rect x="448" y="218" width="222" height="190" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="448" y1="408" x2="448" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="448" y="430" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="559" y1="408" x2="559" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="559" y="430" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="670" y1="408" x2="670" y2="414" stroke="#475569" stroke-width="1.8"/>
+  <text x="670" y="430" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="442" y1="370" x2="448" y2="370" stroke="#475569" stroke-width="1.8"/>
+  <text x="438" y="374" font-size="13" fill="#64748b" text-anchor="end">0.25</text>
+  <line x1="442" y1="313" x2="448" y2="313" stroke="#475569" stroke-width="1.8"/>
+  <text x="438" y="317" font-size="13" fill="#64748b" text-anchor="end">0.40</text>
+  <line x1="442" y1="256" x2="448" y2="256" stroke="#475569" stroke-width="1.8"/>
+  <text x="438" y="260" font-size="13" fill="#64748b" text-anchor="end">0.55</text>
+  <text x="559" y="452" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">精修轮数</text>
+  <text x="559" y="206" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">刚体精修后的 R 因子走势</text>
+  <path d="M448,271.20000000000005 C451.7,274.4 462.8,284.8 470.2,290.2 C477.6,295.6 485.0,299.7 492.4,303.5 C499.8,307.3 503.5,309.2 514.6,313 C525.7,316.8 544.2,322.5 559,326.3 C573.8,330.1 584.9,333.3 603.4,335.8 C621.9,338.3 658.9,340.6 670,341.5" fill="none" stroke="#059669" stroke-width="2.6" stroke-dasharray="7 4"/>
+  <path d="M448,278.79999999999995 C451.7,282.9 462.8,296.5 470.2,303.5 C477.6,310.5 485.0,316.2 492.4,320.6 C499.8,325.0 503.5,326.3 514.6,330.1 C525.7,333.9 544.2,339.6 559,343.4 C573.8,347.2 584.9,350.4 603.4,352.9 C621.9,355.4 658.9,357.7 670,358.6" fill="none" stroke="#059669" stroke-width="2.6"/>
+  <path d="M448,275 C459.1,276.3 488.7,280.7 514.6,282.6 C540.5,284.5 577.5,285.4 603.4,286.4 C629.3,287.3 658.9,288.0 670,288.3" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="7 4"/>
+  <path d="M448,286.4 C459.1,288.3 488.7,295.3 514.6,297.8 C540.5,300.3 577.5,300.7 603.4,301.6 C629.3,302.6 658.9,303.2 670,303.5" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <rect x="452" y="428.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="469.9" y="435.24" font-size="9" fill="#475569">正确解 R<tspan dy="2.0" font-size="6.5">work</tspan></text>
+  <rect x="532.8384" y="428.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="550.7384" y="435.24" font-size="9" fill="#475569">假解 R<tspan dy="2.0" font-size="6.5">work</tspan></text>
+  <rect x="452" y="446.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="469.9" y="453.24" font-size="9" fill="#475569">正确解 R<tspan dy="2.0" font-size="6.5">free</tspan><tspan dy="-2.0">（虚线）</tspan></text>
+  <rect x="568.8384" y="446.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="586.7384" y="453.24" font-size="9" fill="#475569">假解 R<tspan dy="2.0" font-size="6.5">free</tspan><tspan dy="-2.0">（虚线）</tspan></text>
+  <text x="56" y="478" font-size="10.5" fill="#475569">排序更省力：TFZ 与 LLG 先分档，前两档各跑 10–20 轮刚体精修，R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 纹丝不动者直接弃，幸存者才值得读图。</tspan></text>
+  <text x="56" y="493" font-size="10.5" fill="#475569">更险的是「部分正确」：域取向对、铰链角错，TFZ 中等、图一半可读——处置是拆域两段式 MR（先搜大域、再按密度摆小域），</text>
+  <text x="56" y="508" font-size="10.5" fill="#475569">而非整刚体硬精修。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、重索引检验：让 MR 当空间群的试金石</text>
+  <rect x="740" y="184" width="220" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="850" y="212" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">同一套衍射数据（指标化歧义）</text>
+  <line x1="850" y1="230" x2="850" y2="258" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="740" y="262" width="220" height="52" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="850" y="284" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">指派 A：如 C 心格子</text>
+  <text x="850" y="304" font-size="10" fill="#475569" text-anchor="middle">旋转平移空转、无解</text>
+  <rect x="1050" y="262" width="290" height="52" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1195" y="284" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">指派 B：重索引后（如 h 与 k 互换）</text>
+  <text x="1195" y="304" font-size="10" fill="#475569" text-anchor="middle">显著出解且精修顺畅</text>
+  <line x1="905" y1="288" x2="1046" y2="288" stroke="#475569" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-ink)"/>
+  <text x="975" y="278" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">重索引变换逐一试验</text>
+  <text x="730" y="340" font-size="10.5" fill="#475569">典型歧义：C 心与 P 格子的双重解、四方 tP 与 tI 的度规巧合、伪对称让 Laue 对称升阶。常用重索引变换包括 h 与 k 互换（a、</text>
+  <text x="730" y="355" font-size="10.5" fill="#475569">b 近等长）、指数取负（对映指派）与 C 心基矢另选；xtriage 一类工具能列出候选清单供逐一试验。空间群候选同理：P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 与 P2、</tspan></text>
+  <text x="730" y="370" font-size="10.5" fill="#475569">I222 与 R3 之类手性群近邻，逐个试 MR 的成本远低于反复调模型。</text>
+  <rect x="730" y="440" width="300" height="82" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="464" font-size="11" fill="#1e293b" font-weight="700">绝对构型核对（手性空间群）</text>
+  <text x="746" y="484" font-size="9.5" fill="#475569">把 D 型搜索模型塞进 L 蛋白则图与模型系统性不符；</text>
+  <text x="746" y="497.5" font-size="9.5" fill="#475569">蛋白天然全 L 不易踩雷，</text>
+  <text x="746" y="511" font-size="9.5" fill="#475569">人工 D 蛋白或非天然配体体系必须核对（Flack 参数，第 6、</text>
+  <text x="746" y="524.5" font-size="9.5" fill="#475569">11 章）。</text>
+  <rect x="1050" y="440" width="290" height="82" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1066" y="464" font-size="11" fill="#92400e" font-weight="700">packing 闸门的盲区</text>
+  <text x="1066" y="484" font-size="9.5" fill="#475569">伪对称环境下分子可能「恰好不穿模」却坐错位置——NCS 交叉向量与差值 Patterson</text>
+  <text x="1066" y="497.5" font-size="9.5" fill="#475569">（第 8 章同款技术）可作旁证。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、多拷贝递增与低分辨率的两件救生圈</text>
+  <rect x="56" y="616" width="250" height="170" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="181" y="608" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">packing 检查（硬闸门）</text>
+  <path d="M 96,700 q 18,-38 52,-30 q 30,6 26,34 q -4,26 -34,30 q -34,4 -44,-34 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 216,738 q 22,-40 56,-32 q 28,8 24,34 q -4,24 -36,26 q -34,2 -44,-28 z" fill="#fee2e2" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="181" y="778" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">分子与对称像原子级重叠（穿模）</text>
+  <text x="181" y="794" font-size="9" fill="#64748b" text-anchor="middle">物理不可能——按体积比量化、超阈值直接弃</text>
+  <rect x="330" y="616" width="340" height="170" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="500" y="608" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">递增搜索：先强后弱</text>
+  <circle cx="370" cy="668" r="22" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="370" y="706" font-size="9.5" fill="#475569" text-anchor="middle">拷贝 1（先定位）</text>
+  <line x1="398" y1="668" x2="428" y2="668" stroke="#475569" stroke-width="1.7" marker-end="url(#arr-ink)"/>
+  <circle cx="456" cy="668" r="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="456" y="702" font-size="9.5" fill="#475569" text-anchor="middle">拷贝 2</text>
+  <line x1="480" y1="668" x2="510" y2="668" stroke="#475569" stroke-width="1.7" marker-end="url(#arr-ink)"/>
+  <circle cx="538" cy="668" r="15" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="538" y="699" font-size="9.5" fill="#475569" text-anchor="middle">拷贝 3</text>
+  <text x="346" y="716" font-size="9.5" fill="#475569">每一步都借已完成拷贝的相位贡献增强下一个的信号；</text>
+  <text x="346" y="729.5" font-size="9.5" fill="#475569">拷贝数先由马修斯系数框算（第 2 章），Z 估错一位、</text>
+  <text x="346" y="743" font-size="9.5" fill="#475569">搜索预算全盘皆错。</text>
+  <text x="56" y="806" font-size="10.5" fill="#475569">分辨率低于 3.5 Å 时观测数与参数数之比恶化（第 10 章），两件救生圈：NCS 限制——多拷贝间施强约束</text>
+  <text x="56" y="821" font-size="10.5" fill="#475569">（位置约束演进为参考模型精修），把参数量按拷贝数折叠；密度修饰与 NCS 平均（第 8 章第 3 节）</text>
+  <text x="56" y="836" font-size="10.5" fill="#475569">——多拷贝密度互证平均既改善图又校正相位。</text>
+  <text x="56" y="886" font-size="10.5" fill="#64748b">纪律：先修相位再动原子，顺序反了模型偏差就会接管图（第 9 章）。低于 4 Å 连侧链 rotamer 都失去意义，</text>
+  <text x="56" y="901" font-size="10.5" fill="#64748b">建模退化为「主链管子加 B 因子」；所有新增参数都须有冗余数据背书，R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 是唯一方向盘（第 10 章）。</tspan></text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、MR-SAD 双弱互补与失败后的退路</text>
+  <text x="730" y="620" font-size="11" fill="#1e293b" font-weight="700">七步流水线（各步均有现成程序接力）：</text>
+  <rect x="730" y="636" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="799" y="663" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">MR 出解</text>
+  <line x1="870" y1="658" x2="882" y2="658" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="884" y="636" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="953" y="663" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">刚体精修</text>
+  <line x1="1024" y1="658" x2="1036" y2="658" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="1038" y="636" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1107" y="663" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">反常差值图</text>
+  <line x1="1178" y1="658" x2="1190" y2="658" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="1192" y="636" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1261" y="663" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">挑重原子峰</text>
+  <rect x="730" y="694" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="799" y="721" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">亚结构精修</text>
+  <line x1="870" y1="716" x2="882" y2="716" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="884" y="694" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="953" y="721" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">SAD 定相组合</text>
+  <line x1="1024" y1="716" x2="1036" y2="716" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="1038" y="694" width="138" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1107" y="721" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">修饰与自动建模</text>
+  <path d="M 1261,680 L 1261,687 L 799,687 L 799,692" fill="none" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="730" y="752" font-size="10.5" fill="#475569">逻辑：模型相位虽不足以解读图，却足以把反常差值信号放大——以模型相位计算的反常差值图（系数 (|F<tspan dy="2.3" font-size="7.6">+</tspan><tspan dy="-2.3">|−|F</tspan><tspan dy="2.3" font-size="7.6">−</tspan><tspan dy="-2.3">|)·exp(iφ</tspan><tspan dy="2.3" font-size="7.6">model</tspan><tspan dy="-2.3">)）</tspan></text>
+  <text x="730" y="767" font-size="10.5" fill="#475569">把重原子位点直接点亮；亚结构定位后反常定相反哺相位，两弱相加成强。对 SeMet 或天然含金属、含硫充足的体系尤其划算。</text>
+  <text x="730" y="816" font-size="11" fill="#1e293b" font-weight="700">判成功三件套：</text>
+  <text x="830" y="816" font-size="10" fill="#475569">反常差值峰与序列中 Met（或金属）位置一一对应；组合相位经修饰后 FOM 跃升；</text>
+  <text x="830" y="830" font-size="10" fill="#475569">自动建模沿主链走出数十残基的连续片段。</text>
+  <rect x="730" y="856" width="200" height="58" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="742" y="874" font-size="10" fill="#065f46" font-weight="700">退路一：纯实验相位</text>
+  <text x="742" y="890" font-size="9.5" fill="#475569">SAD／MAD 接管（第 8 章）</text>
+  <rect x="950" y="856" width="180" height="58" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="962" y="874" font-size="10" fill="#92400e" font-weight="700">退路二：重新结晶</text>
+  <text x="962" y="890" font-size="9.5" fill="#475569">换晶型常换更高对称</text>
+  <rect x="1150" y="856" width="190" height="58" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1162" y="874" font-size="10" fill="#4c1d95" font-weight="700">退路三：换构建</text>
+  <text x="1162" y="890" font-size="9.5" fill="#475569">截短柔性域、去糖基化</text>
+  <text x="1055" y="940" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">唯一不建议的是在假解上反复精修——那是把沙子往沙堡上堆。</text>
+</svg>

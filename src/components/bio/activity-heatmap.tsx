@@ -1,7 +1,9 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 
 /** 单日活动计数（与 /api/activity 返回一致） */
 export interface ActivityDay {
@@ -51,15 +53,20 @@ function formatCn(dateStr: string): string {
  * 学习热力图（GitHub 风格活动日历，学术编辑风）
  * - 按周分列、周一为第一行
  * - hover / focus 单格 → 底部明细行更新（避免 tooltip 溢出）
+ * - 可折叠：collapsed 时仅保留单行摘要（节省版面），点击展开完整日历
  */
 export function ActivityHeatmap({
   days,
   summary,
+  defaultCollapsed = false,
 }: {
   days: ActivityDay[]
   summary: ActivitySummary | null
+  /** 初始是否折叠（仪表盘传 true 压缩版面；学习报告默认展开） */
+  defaultCollapsed?: boolean
 }) {
   const [hovered, setHovered] = useState<ActivityDay | null>(null)
+  const [collapsed, setCollapsed] = useState(defaultCollapsed)
 
   /** 布局：周列 × 7 行 */
   const weeks = useMemo(() => {
@@ -96,6 +103,13 @@ export function ActivityHeatmap({
 
   const hasActivity = days.some((d) => d.total > 0)
 
+  /** 折叠态迷你条：每周活动量合计（单行火花条，高 4–22px） */
+  const weeklyTotals = useMemo(
+    () => weeks.map((week) => week.reduce((a, d) => a + (d?.total ?? 0), 0)),
+    [weeks]
+  )
+  const weeklyMax = Math.max(1, ...weeklyTotals)
+
   if (!days.length) {
     return (
       <p className="py-10 text-center text-xs text-muted-foreground">
@@ -104,6 +118,57 @@ export function ActivityHeatmap({
     )
   }
 
+  // ---------- 折叠态：单行摘要 + 周活动火花条 ----------
+  if (collapsed) {
+    return (
+      <button
+        type="button"
+        onClick={() => setCollapsed(false)}
+        aria-expanded={false}
+        aria-label="展开学习热力图完整日历"
+        className="group flex w-full flex-wrap items-center gap-x-4 gap-y-2 rounded-lg px-1 py-1 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring hover:bg-accent/40"
+      >
+        <span className="text-xs tabular-nums text-muted-foreground">
+          {hasActivity && summary ? (
+            <>
+              连续学习{' '}
+              <span className="font-serif text-sm font-bold text-primary">
+                {summary.streak}
+              </span>{' '}
+              天 · 活跃 {summary.activeTotal} 天 · 最长{' '}
+              {summary.maxStreak} 天
+            </>
+          ) : (
+            <span className="text-muted-foreground/70">
+              完成小节、答题或复习后，格子将点亮
+            </span>
+          )}
+        </span>
+        <span className="flex items-end gap-[2px]" aria-hidden="true">
+          {weeklyTotals.map((t, i) => {
+            const h = t > 0 ? 4 + Math.round((t / weeklyMax) * 18) : 3
+            const lv = levelOf(t)
+            return (
+              <span
+                key={i}
+                className={cn(
+                  'w-[5px] rounded-[1px]',
+                  lv === 0 ? 'bg-muted' : LEVEL_BG[lv]
+                )}
+                style={{ height: `${h}px` }}
+              />
+            )
+          })}
+        </span>
+        <span className="ml-auto inline-flex items-center gap-1 text-[11px] font-medium text-primary group-hover:underline">
+          展开日历
+          <ChevronDown className="h-3.5 w-3.5" aria-hidden />
+        </span>
+      </button>
+    )
+  }
+
+  // ---------- 展开态：完整周列日历 ----------
   return (
     <div>
       {/* 月份标尺 */}
@@ -170,8 +235,8 @@ export function ActivityHeatmap({
         </div>
       </div>
 
-      {/* 图例 + 当日明细 */}
-      <div className="mt-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-t pt-3">
+      {/* 图例 + 当日明细 + 收起 */}
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-t pt-2.5">
         <div className="flex items-center gap-4">
           <span className="text-[11px] text-muted-foreground">活动量</span>
           <div className="flex items-center gap-1">
@@ -186,39 +251,51 @@ export function ActivityHeatmap({
             <span className="text-[10px] text-muted-foreground/70">多</span>
           </div>
         </div>
-        <p
-          className="text-xs tabular-nums text-muted-foreground"
-          aria-live="polite"
-        >
-          {hovered ? (
-            <span>
-              <span className="font-medium text-foreground">
-                {formatCn(hovered.date)}
-              </span>
-              {hovered.total === 0 ? (
-                <span className="ml-2 text-muted-foreground/70">无学习记录</span>
-              ) : (
-                <span className="ml-2">
-                  完成 {hovered.completed} · 答题 {hovered.quiz} · 笔记{' '}
-                  {hovered.notes} · 复习 {hovered.reviews}
+        <div className="flex min-w-0 flex-1 items-center justify-end gap-4">
+          <p
+            className="min-w-0 truncate text-xs tabular-nums text-muted-foreground"
+            aria-live="polite"
+          >
+            {hovered ? (
+              <span>
+                <span className="font-medium text-foreground">
+                  {formatCn(hovered.date)}
                 </span>
-              )}
-            </span>
-          ) : hasActivity && summary ? (
-            <span>
-              连续学习{' '}
-              <span className="font-serif font-bold text-primary">
-                {summary.streak}
-              </span>{' '}
-              天 · 活跃 {summary.activeTotal} 天 · 区间最长{' '}
-              {summary.maxStreak} 天
-            </span>
-          ) : (
-            <span className="text-muted-foreground/70">
-              完成小节、答题或复习后，格子将点亮
-            </span>
-          )}
-        </p>
+                {hovered.total === 0 ? (
+                  <span className="ml-2 text-muted-foreground/70">无学习记录</span>
+                ) : (
+                  <span className="ml-2">
+                    完成 {hovered.completed} · 答题 {hovered.quiz} · 笔记{' '}
+                    {hovered.notes} · 复习 {hovered.reviews}
+                  </span>
+                )}
+              </span>
+            ) : hasActivity && summary ? (
+              <span>
+                连续学习{' '}
+                <span className="font-serif font-bold text-primary">
+                  {summary.streak}
+                </span>{' '}
+                天 · 活跃 {summary.activeTotal} 天 · 区间最长{' '}
+                {summary.maxStreak} 天
+              </span>
+            ) : (
+              <span className="text-muted-foreground/70">
+                完成小节、答题或复习后，格子将点亮
+              </span>
+            )}
+          </p>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setCollapsed(true)}
+            aria-label="收起学习热力图，仅保留摘要行"
+            className="h-7 shrink-0 gap-1 px-2 text-[11px] font-medium text-muted-foreground"
+          >
+            收起
+            <ChevronUp className="h-3.5 w-3.5" aria-hidden />
+          </Button>
+        </div>
       </div>
     </div>
   )

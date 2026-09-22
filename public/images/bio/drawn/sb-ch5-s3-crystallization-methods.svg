@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">结晶五法横截面对照：悬滴、坐滴、微批量、微透析与自由界面扩散</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">悬滴1–2μL对500μL池液、晶体0.3–0.5mm；坐滴0.2–1μL晶体20–80μm；微批量1:1混油日失水5–10%；微透析膜3.5–10kDa；稀疏矩阵48条件、耗蛋白不足100μL</text>
+  <rect x="30" y="132" width="1340" height="440" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、结晶五法横截面对照（过饱和的三条来路）</text>
+  <text x="164" y="186" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">① 悬滴蒸气扩散</text>
+  <text x="432" y="186" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">② 坐滴蒸气扩散</text>
+  <text x="700" y="186" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">③ 微批量（油封）</text>
+  <text x="968" y="186" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">④ 微透析（钮）</text>
+  <text x="1236" y="186" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">⑤ 自由界面扩散</text>
+  <rect x="64" y="208" width="200" height="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="262" y="204" font-size="9.5" fill="#64748b" text-anchor="end">硅化盖片</text>
+  <circle cx="74" cy="216" r="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="254" cy="216" r="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <line x1="84" y1="216" x2="84" y2="352" stroke="#475569" stroke-width="2"/>
+  <line x1="244" y1="216" x2="244" y2="352" stroke="#475569" stroke-width="2"/>
+  <line x1="84" y1="352" x2="244" y2="352" stroke="#475569" stroke-width="2"/>
+  <rect x="86" y="306" width="156" height="44" fill="#e0f2fe" fill-opacity="0.85"/>
+  <text x="164" y="332" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">池液 500 μL</text>
+  <ellipse cx="164" cy="244" rx="26" ry="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="156,235 161,240 156,245 151,240" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <polygon points="173,243 177,247 173,251 169,247" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="126" y="240" font-size="9.5" fill="#4c1d95" text-anchor="end">液滴 1–2 μL</text>
+  <path d="M 138,268 Q 118,290 116,304" fill="none" stroke="#0369a1" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr-acc)"/>
+  <path d="M 190,268 Q 210,290 212,304" fill="none" stroke="#0369a1" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arr-acc)"/>
+  <text x="96" y="288" font-size="9" fill="#075985">水汽</text>
+  <text x="232" y="288" font-size="9" fill="#075985" text-anchor="end">水汽</text>
+  <text x="164" y="396" font-size="9.5" fill="#64748b" text-anchor="middle">24 孔 VDX 板 · 真空脂封边</text>
+  <polygon points="424,204 440,204 434,224 430,224" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/>
+  <text x="446" y="216" font-size="9.5" fill="#475569">0.2–1 μL</text>
+  <rect x="352" y="240" width="160" height="115" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="354" y="310" width="156" height="43" fill="#e0f2fe" fill-opacity="0.85"/>
+  <text x="378" y="334" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">池液</text>
+  <rect x="402" y="270" width="60" height="43" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <ellipse cx="432" cy="264" rx="27" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="424,258 428,262 424,266 420,262" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <polygon points="441,262.5 444.5,266 441,269.5 437.5,266" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="398" y="292" font-size="9.5" fill="#64748b" text-anchor="end">凸台</text>
+  <text x="432" y="396" font-size="9.5" fill="#64748b" text-anchor="middle">96 孔板 · 机器人铺板 · 自动成像</text>
+  <rect x="620" y="225" width="160" height="130" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="622" y="227" width="156" height="56" fill="#fef3c7" fill-opacity="0.9"/>
+  <text x="700" y="244" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">石蜡油 + 硅油</text>
+  <circle cx="700" cy="320" r="24" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="692,312 696,316 692,320 688,316" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <polygon points="709,319.5 712.5,323 709,326.5 705.5,323" fill="#ffffff" stroke="#6d28d9" stroke-width="1.4"/>
+  <line x1="676" y1="296" x2="670" y2="258" stroke="#0369a1" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <line x1="724" y1="296" x2="730" y2="258" stroke="#0369a1" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <text x="700" y="396" font-size="9.5" fill="#64748b" text-anchor="middle">1–2 μL 直接混合 · 封于油下</text>
+  <rect x="888" y="252" width="160" height="100" rx="6" fill="#e0f2fe" fill-opacity="0.5" stroke="#475569" stroke-width="1.8"/>
+  <rect x="928" y="222" width="80" height="50" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="968" y="240" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">样品 10–50 μL</text>
+  <circle cx="944" cy="254" r="2.2" fill="#6d28d9"/>
+  <circle cx="958" cy="259" r="2.2" fill="#6d28d9"/>
+  <circle cx="972" cy="252" r="2.2" fill="#6d28d9"/>
+  <circle cx="986" cy="257" r="2.2" fill="#6d28d9"/>
+  <line x1="926" y1="272" x2="1010" y2="272" stroke="#0f766e" stroke-width="3.5" stroke-dasharray="8 4"/>
+  <line x1="948" y1="280" x2="948" y2="264" stroke="#0369a1" stroke-width="1.3" marker-end="url(#arr-acc)"/>
+  <line x1="988" y1="264" x2="988" y2="280" stroke="#6d28d9" stroke-width="1.3" marker-end="url(#arr-pro)"/>
+  <text x="968" y="300" font-size="9" fill="#134e4a" text-anchor="middle">膜 3.5–10 kDa MWCO</text>
+  <text x="1024" y="342" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">外液</text>
+  <text x="968" y="396" font-size="9.5" fill="#64748b" text-anchor="middle">外液逐步置换 · 平滑可逆</text>
+  <rect x="1150" y="262" width="172" height="56" rx="12" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="1162" y="266" width="60" height="48" fill="#ede9fe" fill-opacity="0.85"/>
+  <rect x="1250" y="266" width="60" height="48" fill="#e0f2fe" fill-opacity="0.85"/>
+  <rect x="1222" y="266" width="7" height="48" fill="#ede9fe" fill-opacity="0.55"/>
+  <rect x="1229" y="266" width="7" height="48" fill="#ede9fe" fill-opacity="0.3"/>
+  <rect x="1236" y="266" width="7" height="48" fill="#e0f2fe" fill-opacity="0.3"/>
+  <rect x="1243" y="266" width="7" height="48" fill="#e0f2fe" fill-opacity="0.55"/>
+  <line x1="1236" y1="264" x2="1236" y2="316" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="1226" y1="294" x2="1246" y2="294" stroke="#6d28d9" stroke-width="1.5" marker-end="url(#arr-pro)"/>
+  <line x1="1246" y1="306" x2="1226" y2="306" stroke="#0369a1" stroke-width="1.5" marker-end="url(#arr-acc)"/>
+  <text x="1186" y="250" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白</text>
+  <text x="1286" y="250" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">沉淀剂</text>
+  <text x="1236" y="340" font-size="9.5" fill="#64748b" text-anchor="middle">互扩散形成连续浓度梯度</text>
+  <text x="1236" y="396" font-size="9.5" fill="#64748b" text-anchor="middle">nL 级微流控通道</text>
+  <text x="44" y="420" font-size="10" fill="#475569">晶体大（0.3–0.5 mm）、肉眼可判；</text>
+  <text x="44" y="434" font-size="10" fill="#475569">平衡以小时到天计，液滴减半需一至三天。通量低、</text>
+  <text x="44" y="448" font-size="10" fill="#475569">依赖手工，如今多用于初筛命中后的放大培养。</text>
+  <text x="312" y="420" font-size="10" fill="#475569">96 孔规格契合机器人与每日自动成像，</text>
+  <text x="312" y="434" font-size="10" fill="#475569">现代初筛绝对主力；晶体常 20–80 μm，</text>
+  <text x="312" y="448" font-size="10" fill="#475569">恰好匹配同步辐射微束；疏水板防咖啡环效应。</text>
+  <text x="580" y="420" font-size="10" fill="#475569">无蒸气通道、条件所见即所得：纯石蜡近零透水，</text>
+  <text x="580" y="434" font-size="10" fill="#475569">条件冻结；掺硅油即得连续可调的等效蒸发，</text>
+  <text x="580" y="448" font-size="10" fill="#475569">1:1 混油对应每天约 5–10% 失水。</text>
+  <text x="848" y="420" font-size="10" fill="#475569">外液逐步置换沉淀剂，平滑可逆且能「往回收」；</text>
+  <text x="848" y="434" font-size="10" fill="#475569">膜截留宜低于蛋白分子量十分之一，3.5 kDa 最常用，</text>
+  <text x="848" y="448" font-size="10" fill="#475569">20 kDa 以上可放宽至 10 kDa。</text>
+  <text x="1116" y="420" font-size="10" fill="#475569">界面两侧互扩散，形成连续浓度梯度，</text>
+  <text x="1116" y="434" font-size="10" fill="#475569">一条通道同时扫过相图上一整条线；</text>
+  <text x="1116" y="448" font-size="10" fill="#475569">商品化微流控器件把蛋白用量压到纳升级，</text>
+  <text x="1116" y="462" font-size="10" fill="#475569">多用于优化。</text>
+  <rect x="30" y="592" width="660" height="350" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">二、五法选型与温度梯度结晶</text>
+  <rect x="50" y="640" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="667.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">方法</text>
+  <rect x="168" y="640" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="214" y="667.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">液滴体积</text>
+  <rect x="260" y="640" width="112" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="667.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">过饱和来源</text>
+  <rect x="372" y="640" width="148" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="446" y="667.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">主要优点</text>
+  <rect x="520" y="640" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="667.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">主要局限</text>
+  <rect x="50" y="684" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="704.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">悬滴蒸气扩散</text>
+  <rect x="168" y="684" width="92" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="214" y="704.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">1–2 μL</text>
+  <rect x="260" y="684" width="112" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="704.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">水分蒸发</text>
+  <rect x="372" y="684" width="148" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="446" y="704.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">晶体大、肉眼可见</text>
+  <rect x="520" y="684" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="704.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">通量低、依赖手工</text>
+  <rect x="50" y="714" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="714" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="734.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">坐滴蒸气扩散</text>
+  <rect x="168" y="714" width="92" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="214" y="734.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">0.2–1 μL</text>
+  <rect x="260" y="714" width="112" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="734.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">水分蒸发</text>
+  <rect x="372" y="714" width="148" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="446" y="734.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">自动化与成像友好</text>
+  <rect x="520" y="714" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="734.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">晶体偏小</text>
+  <rect x="50" y="744" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="764.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">微批量</text>
+  <rect x="168" y="744" width="92" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="214" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">1–2 μL</text>
+  <rect x="260" y="744" width="112" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">直接混合</text>
+  <rect x="372" y="744" width="148" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="446" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">条件所见即所得</text>
+  <rect x="520" y="744" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="764.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">条件固定不可调</text>
+  <rect x="50" y="774" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="774" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="794.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">微透析</text>
+  <rect x="168" y="774" width="92" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="214" y="794.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">10–50 μL</text>
+  <rect x="260" y="774" width="112" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="794.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">外液置换</text>
+  <rect x="372" y="774" width="148" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="446" y="794.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">平滑可逆、可回退</text>
+  <rect x="520" y="774" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="794.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">通量极低</text>
+  <rect x="50" y="804" width="118" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="109" y="824.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">自由界面扩散</text>
+  <rect x="168" y="804" width="92" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="214" y="824.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">nL 级</text>
+  <rect x="260" y="804" width="112" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="316" y="824.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">界面互扩散</text>
+  <rect x="372" y="804" width="148" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="446" y="824.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">一扫浓度梯度</text>
+  <rect x="520" y="804" width="150" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="595" y="824.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">需微流控器件</text>
+  <text x="50" y="860" font-size="10.5" fill="#475569">温度梯度结晶以温差施加过饱和——不加任何化学组分、全程可逆：</text>
+  <text x="50" y="875" font-size="10.5" fill="#475569">溶菌酶按约 0.1–0.2 °C/天自 22 °C 缓降至 4 °C 可养成毫米级巨晶；胰岛素历史上走升温路线。多用于「已有晶体、</text>
+  <text x="50" y="890" font-size="10.5" fill="#475569">只差尺寸」的优化阶段，与微透析联用（外液降温）是最常见的工程形态。</text>
+  <rect x="710" y="592" width="660" height="350" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="614.84" font-size="19" fill="#475569" font-weight="700">三、稀疏矩阵：广而浅的初筛</text>
+  <circle cx="748" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="748" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="748" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="748" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="748" cy="732" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="748" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="748" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="748" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="690" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="790" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="790" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="832" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="832" cy="669" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="832" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="832" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="832" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="832" cy="753" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="832" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="832" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="874" cy="774" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="874" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="732" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="916" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="916" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="958" cy="648" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="958" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="958" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="958" cy="711" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="958" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="958" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="958" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="958" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1000" cy="795" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="1042" cy="648" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="1042" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1042" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1042" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1042" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1042" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1042" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1042" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="669" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="1084" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1084" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1126" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1126" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1126" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1126" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1126" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1126" cy="753" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="1126" cy="774" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <circle cx="1126" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="690" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="1168" cy="711" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1168" cy="795" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="648" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="669" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="690" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="711" r="4.5" fill="#059669" stroke="#065f46" stroke-width="1.2"/>
+  <circle cx="1210" cy="732" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="753" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="774" r="4.5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <circle cx="1210" cy="795" r="4.5" fill="#d97706" stroke="#92400e" stroke-width="1.2"/>
+  <text x="979" y="822" font-size="9.5" fill="#64748b" text-anchor="middle">一板 96 条件 · 绿色为命中、黄色为微晶或油滴</text>
+  <text x="730" y="848" font-size="10.5" fill="#475569">Jancarik 与 Kim 1991 年统计当时已报道的结晶条件，浓缩出 48 个「高命中率」条件的经典矩阵——承认溶解度理论预测力有限，</text>
+  <text x="730" y="863" font-size="10.5" fill="#475569">让经验的统计分布替你下注。</text>
+  <text x="730" y="886" font-size="10.5" fill="#475569">Gryphon、Mosquito 等移液机器人以 20–200 nL 液滴铺板，</text>
+  <text x="730" y="901" font-size="10.5" fill="#475569">一次 96 条件筛选消耗蛋白不足 100 μL——「省蛋白」正是坐滴加机器人统治初筛的经济逻辑。</text>
+  <text x="730" y="918" font-size="10.5" fill="#475569">试剂四大家族：PEG 3350/4000/8000、硫酸铵、MPD、有机酸盐；命中形态五级——单晶、簇状、微晶、油滴、沉淀，</text>
+  <text x="730" y="933" font-size="10.5" fill="#475569">前四者皆有信息。</text>
+  <text x="700" y="972" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="600">五法殊途同归：以不同速率把液滴送过成核区、再回落亚稳区养晶——速率之梯就是第 1 节相图上的轨迹</text>
+</svg>

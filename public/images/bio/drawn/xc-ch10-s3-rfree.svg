@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">精修循环与 R 因子：交叉验证的记分牌</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">Rfree（Brunger1992）抽5%反射全程不可见；2Å锚点Rwork0.18–0.22、Rfree0.22–0.26；gap2–5个百分点健康、高于7警报；循环三步典型5–20轮；PDB_REDO</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">平均再降约2个百分点</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、R 与 R<tspan dy="4.2" font-size="13.7">free</tspan><tspan dy="-4.2"> 的演化：过拟合的现场</tspan></text>
+  <rect x="80" y="220" width="360" height="320" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="80" y1="501.9047619047619" x2="440" y2="501.9047619047619" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="4 5"/>
+  <text x="72" y="505.9047619047619" font-size="10" fill="#64748b" text-anchor="end">0.15</text>
+  <line x1="80" y1="425.7142857142857" x2="440" y2="425.7142857142857" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="4 5"/>
+  <text x="72" y="429.7142857142857" font-size="10" fill="#64748b" text-anchor="end">0.25</text>
+  <line x1="80" y1="349.5238095238095" x2="440" y2="349.5238095238095" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="4 5"/>
+  <text x="72" y="353.5238095238095" font-size="10" fill="#64748b" text-anchor="end">0.35</text>
+  <line x1="80" y1="273.33333333333337" x2="440" y2="273.33333333333337" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="4 5"/>
+  <text x="72" y="277.33333333333337" font-size="10" fill="#64748b" text-anchor="end">0.45</text>
+  <text x="80" y="558" font-size="10" fill="#64748b" text-anchor="middle">0</text>
+  <text x="170" y="558" font-size="10" fill="#64748b" text-anchor="middle">5</text>
+  <text x="260" y="558" font-size="10" fill="#64748b" text-anchor="middle">10</text>
+  <text x="350" y="558" font-size="10" fill="#64748b" text-anchor="middle">15</text>
+  <text x="440" y="558" font-size="10" fill="#64748b" text-anchor="middle">20</text>
+  <text x="260" y="580" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">精修循环轮数</text>
+  <text x="36" y="380" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">R 值</text>
+  <path d="M80,250.47619047619048 C87.2,259.4 108.2,287.3 123.19999999999999,303.80952380952385 C138.2,320.3 154.4,336.8 170,349.5238095238095 C185.6,362.2 201.8,371.1 216.8,380 C231.8,388.9 243.8,396.5 260,402.85714285714283 C276.2,409.2 296.0,413.7 314,418.0952380952381 C332.0,422.5 347.0,426.3 368,429.5238095238095 C389.0,432.7 428.0,435.9 440,437.14285714285717" fill="none" stroke="#059669" stroke-width="2.6" stroke-dasharray="8 4"/>
+  <path d="M80,273.33333333333337 C87.2,287.3 108.2,334.3 123.19999999999999,357.1428571428571 C138.2,380.0 154.4,397.1 170,410.4761904761905 C185.6,423.8 201.8,430.2 216.8,437.14285714285717 C231.8,444.1 243.8,447.9 260,452.3809523809524 C276.2,456.8 296.0,461.3 314,463.8095238095238 C332.0,466.3 347.0,466.3 368,467.6190476190476 C389.0,468.9 428.0,470.8 440,471.42857142857144" fill="none" stroke="#059669" stroke-width="2.6"/>
+  <path d="M260,402.85714285714283 C267.2,402.2 288.2,401.0 303.2,399.04761904761904 C318.2,397.1 334.4,393.3 350,391.42857142857144 C365.6,389.5 381.8,389.5 396.8,387.6190476190476 C411.8,385.7 432.8,381.3 440,380" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="8 4"/>
+  <path d="M260,452.3809523809524 C267.2,455.6 288.2,465.7 303.2,471.42857142857144 C318.2,477.1 334.4,482.9 350,486.66666666666663 C365.6,490.5 381.8,491.7 396.8,494.2857142857143 C411.8,496.8 432.8,500.6 440,501.9047619047619" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <rect x="94" y="238.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="112.45" y="245.42" font-size="9.5" fill="#475569">健康 R<tspan dy="2.1" font-size="6.8">work</tspan></text>
+  <rect x="164.6072" y="238.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="183.0572" y="245.42" font-size="9.5" fill="#475569">健康 R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1">（虚线）</tspan></text>
+  <rect x="273.2144" y="238.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="291.6644" y="245.42" font-size="9.5" fill="#475569">过拟合 R<tspan dy="2.1" font-size="6.8">work</tspan></text>
+  <rect x="353.3216" y="238.01" width="10.450000000000001" height="7.9799999999999995" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="371.7716" y="245.42" font-size="9.5" fill="#475569">过拟合 R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 上翘</tspan></text>
+  <line x1="429.2" y1="471.42857142857144" x2="429.2" y2="437.14285714285717" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="368" y="454.6666666666667" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">gap 约 4</text>
+  <text x="317.6" y="360.95238095238096" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">R<tspan dy="2.2" font-size="7.2">free</tspan><tspan dy="-2.2"> 掉头向上：过拟合现场</tspan></text>
+  <text x="470" y="200" font-size="10.5" fill="#475569">R<tspan dy="2.3" font-size="7.6">work</tspan><tspan dy="-2.3"> 的致命弱点是单向讨好：</tspan></text>
+  <text x="470" y="215" font-size="10.5" fill="#475569">任何往模型里塞参数的动作（原子、</text>
+  <text x="470" y="230" font-size="10.5" fill="#475569">各向异性、占有率、交替构象）</text>
+  <text x="470" y="245" font-size="10.5" fill="#475569">都会让 R 下降，无论真假。</text>
+  <text x="470" y="260" font-size="10.5" fill="#475569">Brunger 1992 年在 Nature 提出自由 R：</text>
+  <text x="470" y="275" font-size="10.5" fill="#475569">随机抽取约 5% 反射打入自由集，</text>
+  <text x="470" y="290" font-size="10.5" fill="#475569">精修的目标函数、</text>
+  <text x="470" y="305" font-size="10.5" fill="#475569">权重调整与策略选择一概不许沾它。</text>
+  <text x="470" y="300" font-size="10.5" fill="#475569">健康曲线双双缓降、gap 稳定；</text>
+  <text x="470" y="315" font-size="10.5" fill="#475569">过拟合曲线 R<tspan dy="2.3" font-size="7.6">work</tspan><tspan dy="-2.3"> 单降而 R</tspan><tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 停滞甚至上行——先查最近加了什么。</tspan></text>
+  <text x="470" y="370" font-size="10.5" fill="#64748b">参照系：小分子 R 常在 0.03 至 0.05，</text>
+  <text x="470" y="385" font-size="10.5" fill="#64748b">蛋白到不了那个量级——无序、</text>
+  <text x="470" y="400" font-size="10.5" fill="#64748b">溶剂与模型不完备是结构性差距；</text>
+  <text x="470" y="415" font-size="10.5" fill="#64748b">少数强反射主导 Σ|F<tspan dy="2.3" font-size="7.6">obs</tspan><tspan dy="-2.3">|，</tspan></text>
+  <text x="470" y="430" font-size="10.5" fill="#64748b">弱反射的误差几乎不上账。</text>
+  <text x="470" y="460" font-size="10.5" fill="#1e293b" font-weight="700">「1.8 Å、R<tspan dy="2.3" font-size="7.6">work</tspan><tspan dy="-2.3"> 0.21、</tspan></text>
+  <text x="470" y="475" font-size="10.5" fill="#1e293b" font-weight="700">R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 0.25」才是合格的信息量——分辨率、</tspan></text>
+  <text x="470" y="490" font-size="10.5" fill="#1e293b" font-weight="700">R 双值一起报。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、交叉验证的哲学：自由集是考卷、不是习题册</text>
+  <rect x="730" y="186" width="600" height="60" rx="9" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="1030" y="212" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">全部反射（数据还原交付，第 6 章）</text>
+  <line x1="880" y1="246" x2="880" y2="272" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1180" y1="246" x2="1180" y2="272" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="730" y="276" width="420" height="64" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="940" y="300" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">工作集约 95%（小数据集可至 10%）</text>
+  <text x="940" y="322" font-size="9.5" fill="#475569" text-anchor="middle">目标函数、权重调整、策略选择只许用它</text>
+  <rect x="1180" y="276" width="150" height="64" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1255" y="300" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">自由集约 5%</text>
+  <text x="1255" y="322" font-size="9.5" fill="#475569" text-anchor="middle">全程不可见</text>
+  <rect x="730" y="366" width="294" height="74" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.7"/>
+  <text x="877" y="388" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">合规用法：宏观决策</text>
+  <text x="746" y="408" font-size="9.5" fill="#475569">选策略（加 TLS 值不值、NCS 放哪档、水加几批）、</text>
+  <text x="746" y="421" font-size="9.5" fill="#475569">定收敛、比较两种建模方案。</text>
+  <rect x="1046" y="366" width="284" height="74" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1188" y="388" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">作弊：面向自由集优化</text>
+  <text x="1062" y="408" font-size="9.5" fill="#475569">把侧链朝 R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 更低的方向拧、</tspan></text>
+  <text x="1062" y="421" font-size="9.5" fill="#475569">把水塞进压 R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 的位置——R</tspan><tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 退化成第二个 R</tspan><tspan dy="2.1" font-size="6.8">work</tspan><tspan dy="-2.1">。</tspan></text>
+  <text x="730" y="466" font-size="10.5" fill="#475569">执行细节两处易错：换策略或换程序时自由集构成必须原样继承（随机种子固定），否则前后 R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 不可比；</tspan></text>
+  <text x="730" y="481" font-size="10.5" fill="#475569">程序默认参数有时把全部反射放进工作集——5% 抽取须逐项核对。</text>
+  <text x="730" y="526" font-size="10.5" fill="#64748b">自由集比例的权衡：抽 5% 对大数据集足够稳定；小数据集（反射数千以下）可至 10%，否则自由集只剩两三百个反射、</text>
+  <text x="730" y="541" font-size="10.5" fill="#64748b">R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 涨落大到不可读。自由集一经选定须终身携带——同一份自由集文件在工具间传递，中途重抽等于换考卷。</tspan></text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、数值锚点与 gap 体温计</text>
+  <rect x="56" y="622" width="128" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率</text>
+  <rect x="184" y="622" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型 R<tspan dy="2.5" font-size="8.3">work</tspan></text>
+  <rect x="314" y="622" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="379" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型 R<tspan dy="2.5" font-size="8.3">free</tspan></text>
+  <rect x="444" y="622" width="228" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="649.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">常见陷阱</text>
+  <rect x="56" y="666" width="128" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="685" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">优于 1.2 Å</text>
+  <rect x="184" y="666" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="685" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.12 至 0.15</text>
+  <rect x="314" y="666" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="379" y="685" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.15 至 0.19</text>
+  <rect x="444" y="666" width="228" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="685" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">各向异性滥用</text>
+  <rect x="56" y="693" width="616" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="693" width="128" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="712" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">1.8 至 2.0 Å</text>
+  <rect x="184" y="693" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="712" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.18 至 0.22</text>
+  <rect x="314" y="693" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="379" y="712" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.22 至 0.26</text>
+  <rect x="444" y="693" width="228" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="712" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">水塞太多</text>
+  <rect x="56" y="720" width="128" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="739" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">2.5 至 2.9 Å</text>
+  <rect x="184" y="720" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="739" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.20 至 0.24</text>
+  <rect x="314" y="720" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="379" y="739" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.25 至 0.30</text>
+  <rect x="444" y="720" width="228" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="739" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">交替构象硬拆</text>
+  <rect x="56" y="747" width="616" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="747" width="128" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="120" y="766" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">3.0 至 3.5 Å</text>
+  <rect x="184" y="747" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="249" y="766" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.22 至 0.28</text>
+  <rect x="314" y="747" width="130" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="379" y="766" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.28 至 0.35</text>
+  <rect x="444" y="747" width="228" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="558" y="766" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">NCS 解除过早</text>
+  <rect x="56" y="772" width="147.84" height="28" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <rect x="203.84" y="772" width="221.76" height="28" fill="#d1fae5" stroke="#059669" stroke-width="1.3"/>
+  <rect x="425.59999999999997" y="772" width="98.56" height="28" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <rect x="524.1600000000001" y="772" width="147.84" height="28" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="129.92000000000002" y="787" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">接近 0</text>
+  <text x="314.71999999999997" y="787" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">2 至 5 个百分点：健康带</text>
+  <text x="474.88000000000005" y="787" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">5–7</text>
+  <text x="598.08" y="787" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">高于 7：警报</text>
+  <text x="364" y="818" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">gap ＝ R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 与 R</tspan><tspan dy="2.3" font-size="7.6">work</tspan><tspan dy="-2.3"> 之差（过拟合的体温计）</tspan></text>
+  <text x="56" y="850" font-size="10.5" fill="#475569">gap 高于 7 个百分点即警报——模型里多半有无效率的参数在讨好噪声：塞满的水、滥用的各向异性、不该拆的交替构象、</text>
+  <text x="56" y="865" font-size="10.5" fill="#475569">过松的 restraints。诊断从「最可疑的参数」查起：先删一批水再看 gap 反应，逐类排雷。</text>
+  <text x="56" y="912" font-size="10.5" fill="#64748b">反向的病同样存在：gap 接近零而两者都高，多半是 restraints 过紧或模型系统性残缺（缺配体、缺整段）。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、循环三步 rebuild-refine-validate 与 PDB_REDO</text>
+  <rect x="730" y="620" width="186" height="88" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="823" y="642" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">rebuild</text>
+  <text x="823" y="664" font-size="10" fill="#0f766e" text-anchor="middle" font-weight="700">Coot（第 9 章）</text>
+  <text x="823" y="684" font-size="9" fill="#475569" text-anchor="middle">差值图新斑、验证红黄球</text>
+  <rect x="1024" y="620" width="186" height="88" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1117" y="642" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">refine</text>
+  <text x="1117" y="664" font-size="10" fill="#0369a1" text-anchor="middle" font-weight="700">phenix.refine／REFMAC5</text>
+  <text x="1117" y="684" font-size="9" fill="#475569" text-anchor="middle">坐标、B、TLS、水</text>
+  <rect x="877" y="748" width="186" height="88" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="970" y="770" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">validate</text>
+  <text x="970" y="792" font-size="10" fill="#6d28d9" text-anchor="middle" font-weight="700">MolProbity 加双图巡检</text>
+  <text x="970" y="812" font-size="9" fill="#475569" text-anchor="middle">R 双降、gap 稳定、几何归位</text>
+  <line x1="916" y1="664" x2="1022" y2="664" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1117" y1="708" x2="1040" y2="762" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="877" y1="792" x2="823" y2="708" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="963" y="742" font-size="11" fill="#64748b" text-anchor="middle" font-weight="700">典型 5–20 轮</text>
+  <text x="730" y="862" font-size="10.5" fill="#475569">每轮回来看三样：R 与 R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 是否双降；差值图是否清零（±3σ 斑块逐轮减少）；图是否整体改善。动手次序先大后小：</tspan></text>
+  <text x="730" y="877" font-size="10.5" fill="#475569">整段重搭与 register 平移优先，侧链微调与水殿后。前期大刀阔斧，后期只剩零星侧链与水。</text>
+  <text x="730" y="930" font-size="10.5" fill="#64748b">PDB_REDO（Joosten 等，2009 年起）对全库历史条目系统再精修——重建侧链与氢、重放水、重调权重：</text>
+  <text x="730" y="945" font-size="10.5" fill="#64748b">平均 R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 可再降约 2 个百分点，几何 outlier 大面积清零；「再优化不重建」，收益归因于方法与工具的进化。</tspan></text>
+</svg>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">串行晶体学与 XFEL：衍射先于破坏</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">脉宽 10–100 fs、每脉冲约 10<tspan dy="-6.5" font-size="13.7">12</tspan><tspan dy="6.5"> 光子、亮度高约 9 个数量级；液体射流命中率 1%–10%、固定靶数十个百分点；数万至百万张图案 Monte Carlo 合并</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、XFEL：把光源推到亮度之巅</text>
+  <rect x="58" y="186" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="125" y="210" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">直线加速器</text>
+  <text x="125" y="232" font-size="9" fill="#475569" text-anchor="middle">电子团加速至数十亿 eV</text>
+  <rect x="212" y="186" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="279" y="210" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">波荡器（数十米）</text>
+  <text x="279" y="232" font-size="9" fill="#475569" text-anchor="middle">磁阵列中扭摆辐射</text>
+  <rect x="366" y="186" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="433" y="210" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">SASE 增益</text>
+  <text x="433" y="232" font-size="9" fill="#475569" text-anchor="middle">辐射与电子团相互调制</text>
+  <rect x="520" y="186" width="134" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="587" y="210" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">飞秒巨脉冲</text>
+  <text x="587" y="232" font-size="9" fill="#475569" text-anchor="middle">高度相干、指数放大</text>
+  <line x1="194" y1="217" x2="210" y2="217" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="348" y1="217" x2="364" y2="217" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="502" y1="217" x2="518" y2="217" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="58" y="262" width="192" height="86" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="154" y="286" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">脉宽</text>
+  <text x="154" y="316" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">10–100 fs</text>
+  <text x="154" y="338" font-size="8.5" fill="#475569" text-anchor="middle">短于损伤时标</text>
+  <rect x="264" y="262" width="192" height="86" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="360" y="286" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">每脉冲光子</text>
+  <text x="360" y="316" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">约 10<tspan dy="-6.5" font-size="13.7">12</tspan><tspan dy="6.5"> 个</tspan></text>
+  <text x="360" y="338" font-size="8.5" fill="#475569" text-anchor="middle">一颗微晶一发即够</text>
+  <rect x="470" y="262" width="192" height="86" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="566" y="286" font-size="10" fill="#64748b" text-anchor="middle" font-weight="600">峰值亮度</text>
+  <text x="566" y="316" font-size="19" fill="#1e293b" text-anchor="middle" font-weight="700">高约 9 个数量级</text>
+  <text x="566" y="338" font-size="8.5" fill="#475569" text-anchor="middle">对第三代同步辐射</text>
+  <line x1="80" y1="430" x2="640" y2="430" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="158.4" cy="430" r="6.5" fill="#dc2626"/>
+  <line x1="158.4" y1="421" x2="158.4" y2="400" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="158.4" y="380" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">LCLS 2009</text>
+  <text x="158.4" y="360" font-size="12" fill="#64748b" text-anchor="middle">SLAC · 世界首台硬X射线 FEL</text>
+  <circle cx="360" cy="430" r="6.5" fill="#dc2626"/>
+  <line x1="360" y1="439" x2="360" y2="460" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="360" y="480" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">SACLA 2012</text>
+  <text x="360" y="500" font-size="12" fill="#64748b" text-anchor="middle">日本</text>
+  <circle cx="572.8" cy="430" r="6.5" fill="#dc2626"/>
+  <line x1="572.8" y1="421" x2="572.8" y2="400" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="572.8" y="380" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">European XFEL 2017</text>
+  <text x="572.8" y="360" font-size="12" fill="#64748b" text-anchor="middle">汉堡 · 每秒 27000 脉冲</text>
+  <text x="56" y="524" font-size="10.5" fill="#475569">亮度的直观读法：一颗 1 μm 的微晶在旧光源上曝光数秒、损伤殆尽也攒不够光子，</text>
+  <text x="56" y="539" font-size="10.5" fill="#475569">在 XFEL 上一发即够——「可测晶体」的尺寸下限从几十微米改写到亚微米，第 5 章那堵 Henderson 极限（20 至 30 MGy）</text>
+  <text x="56" y="554" font-size="10.5" fill="#475569">第一次有了绕开的可能。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、衍射先于破坏：一场与时间的赛跑</text>
+  <line x1="750" y1="214" x2="1340" y2="214" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="758" y1="208" x2="758" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="758" y="234" font-size="9.5" fill="#64748b" text-anchor="middle">阿秒</text>
+  <line x1="812" y1="208" x2="812" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="812" y="234" font-size="9.5" fill="#64748b" text-anchor="middle">10 fs</text>
+  <line x1="888" y1="208" x2="888" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="888" y="234" font-size="9.5" fill="#64748b" text-anchor="middle">100 fs</text>
+  <line x1="990" y1="208" x2="990" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="990" y="234" font-size="9.5" fill="#64748b" text-anchor="middle">数百 fs</text>
+  <line x1="1096" y1="208" x2="1096" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="1096" y="234" font-size="9.5" fill="#64748b" text-anchor="middle">1 ps</text>
+  <line x1="1210" y1="208" x2="1210" y2="220" stroke="#475569" stroke-width="1.8"/>
+  <text x="1210" y="234" font-size="9.5" fill="#64748b" text-anchor="middle">1 ns</text>
+  <rect x="750" y="256" width="120" height="28" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="810" y="274" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">飞秒脉冲</text>
+  <text x="884" y="274" font-size="10" fill="#475569">约 10<tspan dy="-3.4" font-size="7.2">12</tspan><tspan dy="3.4"> 个光子压入 10–100 fs</tspan></text>
+  <rect x="750" y="296" width="120" height="28" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="810" y="314" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">衍射完成</text>
+  <text x="884" y="314" font-size="10" fill="#475569">原子位置在最初几十飞秒内几乎未动</text>
+  <rect x="840" y="336" width="290" height="28" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="985" y="354" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">光电子级联与原子位移（数十至数百 fs）</text>
+  <line x1="888" y1="246" x2="888" y2="372" stroke="#64748b" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="888" y="388" font-size="9" fill="#64748b" text-anchor="middle">原子开始移动</text>
+  <rect x="985.085" y="396.225" width="189.83" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1080" y="410.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">样品是一次性的，数据是永久的</text>
+  <rect x="736" y="424" width="64" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="768" y="438" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">2000</text>
+  <text x="812" y="438" font-size="9.8" fill="#475569">Neutze 等 · Nature：理论预言——辐射损伤需要时间，脉冲足够短则衍射先行</text>
+  <rect x="736" y="452" width="64" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="768" y="466" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">2011</text>
+  <text x="812" y="466" font-size="9.8" fill="#475569">Chapman 等 · LCLS：Photosystem I 纳米晶体首证——晶体湮灭而图案已写入探测器</text>
+  <rect x="736" y="480" width="64" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="768" y="494" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">2012</text>
+  <text x="812" y="494" font-size="9.8" fill="#475569">Boutet 等：溶菌酶证明该路线可达 1.9 Å，工程可行性就此钉牢</text>
+  <rect x="736" y="508" width="588" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="752" y="526" font-size="10.5" fill="#92400e" font-weight="700">两点纪律</text>
+  <text x="752" y="542" font-size="9.5" fill="#475569">① 「先于破坏」不等于零损伤：脉冲内电离已经开始，反常信号仍随剂量衰减；</text>
+  <text x="752" y="554" font-size="9.5" fill="#475569">② 相位问题与指标化照旧——XFEL 改变的是剂量的算术，不是衍射的物理。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、进样两路：液体射流与固定靶，命中率对照</text>
+  <rect x="120" y="616" width="110" height="24" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="175" y="632" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">GDVN 喷嘴</text>
+  <line x1="175" y1="640" x2="175" y2="762" stroke="#0369a1" stroke-width="5" opacity="0.6"/>
+  <circle cx="175" cy="656" r="5.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="175" cy="684" r="5.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="175" cy="712" r="5.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="175" cy="740" r="5.5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="70" y1="690" x2="160" y2="690" stroke="#dc2626" stroke-width="2.6" marker-end="url(#arr-bad)"/>
+  <text x="102" y="676" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">XFEL 光束</text>
+  <rect x="238" y="656" width="64" height="68" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="270" y="682" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">探测器</text>
+  <text x="270" y="700" font-size="8" fill="#64748b" text-anchor="middle">图案即数据</text>
+  <line x1="181" y1="690" x2="238" y2="668" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="181" y1="690" x2="238" y2="690" stroke="#be185d" stroke-width="1.6"/>
+  <line x1="181" y1="690" x2="238" y2="712" stroke="#be185d" stroke-width="1.6"/>
+  <text x="56" y="780" font-size="9.5" fill="#475569">GDVN 气动聚焦：同轴气体把液流聚焦成微米级射流，</text>
+  <text x="56" y="793" font-size="9.5" fill="#475569">微晶依次穿过光斑；空射在所难免。</text>
+  <text x="504" y="612" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">固定靶硅芯片：微孔阵列分装微晶</text>
+  <rect x="386" y="620" width="236" height="112" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <rect x="392" y="626" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="392" y="652" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="392" y="678" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="392" y="704" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="409" cy="715" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="430" y="626" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="447" cy="637" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="430" y="652" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="430" y="678" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="430" y="704" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="468" y="626" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="468" y="652" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="468" y="678" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="485" cy="689" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="468" y="704" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="506" y="626" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="506" y="652" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="523" cy="663" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="506" y="678" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="506" y="704" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="523" cy="715" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="544" y="626" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="561" cy="637" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="544" y="652" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="544" y="678" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="544" y="704" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="582" y="626" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="582" y="652" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="599" cy="663" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="582" y="678" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <rect x="582" y="704" width="34" height="22" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="599" cy="715" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <polyline points="378,637 630,637 630,663 378,663 378,689 630,689 630,715 378,715" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.85" marker-end="url(#arr-mute)"/>
+  <text x="350" y="758" font-size="9.5" fill="#475569">光栅式步进扫描逐坑读数：晶体位置已知，样品消耗低一个量级；</text>
+  <text x="350" y="771" font-size="9.5" fill="#475569">芯片便于预先加样与在位触发（第 2 节的混合实验正需要它）。</text>
+  <text x="56" y="840" font-size="11" fill="#1e293b" font-weight="700">命中率（打到晶体的脉冲比例）</text>
+  <line x1="170" y1="850" x2="170" y2="916" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="170" y="930" font-size="9" fill="#64748b" text-anchor="middle">0%</text>
+  <line x1="266" y1="850" x2="266" y2="916" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="266" y="930" font-size="9" fill="#64748b" text-anchor="middle">10%</text>
+  <line x1="410" y1="850" x2="410" y2="916" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="410" y="930" font-size="9" fill="#64748b" text-anchor="middle">25%</text>
+  <line x1="650" y1="850" x2="650" y2="916" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="650" y="930" font-size="9" fill="#64748b" text-anchor="middle">50%</text>
+  <text x="162" y="868" font-size="10" fill="#475569" text-anchor="end">液体射流</text>
+  <rect x="180" y="852" width="76" height="26" fill="#fef3c7" stroke="#d97706" stroke-width="1.7"/>
+  <text x="218" y="869" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">1%–10%</text>
+  <text x="162" y="900" font-size="10" fill="#475569" text-anchor="end">固定靶</text>
+  <rect x="458" y="884" width="192" height="26" fill="#d1fae5" stroke="#059669" stroke-width="1.7"/>
+  <text x="554" y="901" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">数十个百分点</text>
+  <text x="56" y="946" font-size="9.5" fill="#64748b">LCP 注射器（Weierstall 等 2014）以每分钟纳升级慢速挤出脂立方相——膜蛋白微晶不离开脂环境即可测数；SSX 把串晶哲学带回同步辐射：</text>
+  <text x="56" y="958.5" font-size="9.5" fill="#64748b">每晶数帧极低剂量，数十至数百颗合并成套。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、从百万图案到一套数据：合并统计与剂量新账</text>
+  <rect x="738" y="618" width="188" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="832" y="642" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">数万–百万张静止图案</text>
+  <text x="832" y="661" font-size="8.8" fill="#475569" text-anchor="middle">每颗晶体一张、取向随机</text>
+  <rect x="943" y="618" width="188" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1037" y="642" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">逐张指标化</text>
+  <text x="1037" y="661" font-size="8.8" fill="#475569" text-anchor="middle">索引率可站上数十个百分点</text>
+  <rect x="1148" y="618" width="188" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1242" y="642" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">积分</text>
+  <text x="1242" y="661" font-size="8.8" fill="#475569" text-anchor="middle">反射普遍部分记录</text>
+  <rect x="738" y="700" width="188" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="832" y="724" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">Monte Carlo 平均</text>
+  <text x="832" y="743" font-size="8.8" fill="#475569" text-anchor="middle">以图案数压涨落与噪声</text>
+  <rect x="943" y="700" width="188" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1037" y="724" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">post-refinement</text>
+  <text x="1037" y="743" font-size="8.8" fill="#475569" text-anchor="middle">精化各晶参数与比例因子</text>
+  <rect x="1148" y="700" width="188" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1242" y="724" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">完整数据集</text>
+  <text x="1242" y="743" font-size="8.8" fill="#475569" text-anchor="middle">R<tspan dy="1.9" font-size="6.3">split</tspan><tspan dy="-1.9"> 与 CC</tspan><tspan dy="1.9" font-size="6.3">1/2</tspan><tspan dy="-1.9"> 监控</tspan></text>
+  <line x1="928" y1="647" x2="941" y2="647" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1133" y1="647" x2="1146" y2="647" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="928" y1="729" x2="941" y2="729" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1133" y1="729" x2="1146" y2="729" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1242" y1="676" x2="1242" y2="688" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="1242" y1="688" x2="832" y2="688" stroke="#0369a1" stroke-width="1.8"/>
+  <line x1="832" y1="688" x2="832" y2="698" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="738" y="782" font-size="9.5" fill="#475569">多重性按「每反射的图案数」计——高多重性意味着百万级图案；微晶制备产能（毫克级）与束流时间，是实验设计最先要算的两笔账。</text>
+  <text x="738" y="795" font-size="9.5" fill="#475569">CrystFEL（White 等 2012）与 DIALS 的串晶分支以「边收边合并」的在线闭环，把数百万图案的周转压到小时级。</text>
+  <rect x="738" y="838" width="596" height="106" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="754" y="860" font-size="11.5" fill="#1e293b" font-weight="700">剂量范式转移：从预算到军团</text>
+  <rect x="810.6774" y="887.075" width="150.64520000000002" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="886" y="899.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">单晶剂量预算：20–30 MGy</text>
+  <line x1="1000" y1="896" x2="1052" y2="896" stroke="#1e293b" stroke-width="2.4" marker-end="url(#arr-ink)"/>
+  <rect x="1074.489" y="887.5" width="211.02199999999993" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="899.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">每晶一次曝光·单发可越过 Henderson 极限</text>
+  <text x="754" y="926" font-size="9.5" fill="#64748b">损伤发生在记录之后——只要晶体供给源源不断，总数据量就没有天花板：从「保护一颗晶体」到「消耗一支晶体军团」，</text>
+  <text x="754" y="938.5" font-size="9.5" fill="#64748b">第 3 章的高通量筛选与微晶种放大恰为军团准备了兵员。</text>
+</svg>

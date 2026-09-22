@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">组合定相与自动化流程</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">MR-SAD：相位误差60–90°配3–5%Bijvoet的双弱组合区；病毒三段式（弱MR、二十面体平均、延伸）；SHELXD以CC_weak约30%起判真；三级判据位点一致性、图可读性、</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">自动建模覆盖率</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、MR-SAD：两个 60 分凑一个 90 分</text>
+  <rect x="56" y="186" width="280" height="64" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="196" y="210" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">弱模型：MR 弱解</text>
+  <text x="196" y="232" font-size="10" fill="#475569" text-anchor="middle">TFZ 5–8（相位平均误差 60°–90°）</text>
+  <rect x="366" y="186" width="280" height="64" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="506" y="210" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">弱反常：Bijvoet 差异</text>
+  <text x="506" y="232" font-size="10" fill="#475569" text-anchor="middle">3%–5%（SeMet 或含硫体系）</text>
+  <line x1="196" y1="250" x2="300" y2="282" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="506" y1="250" x2="400" y2="282" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="156" y="286" width="390" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="351" y="308" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">反常差值图：(|F<tspan dy="2.5" font-size="8.3">+</tspan><tspan dy="-2.5">|−|F</tspan><tspan dy="2.5" font-size="8.3">−</tspan><tspan dy="-2.5">|)·exp(iφ</tspan><tspan dy="2.5" font-size="8.3">model</tspan><tspan dy="-2.5">)</tspan></text>
+  <text x="351" y="330" font-size="10" fill="#475569" text-anchor="middle">模型相位把重原子位点直接点亮，无需 Patterson 峰海解读</text>
+  <line x1="351" y1="348" x2="351" y2="366" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <rect x="156" y="370" width="390" height="62" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="351" y="392" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">位点定位后 SAD 定相，与模型相位组合</text>
+  <text x="351" y="414" font-size="10" fill="#475569" text-anchor="middle">一轮密度修饰后常一跃到可解读</text>
+  <text x="56" y="460" font-size="10.5" fill="#475569">经验阈值：模型相位平均误差 60°–90° 配 3%–5% 的 Bijvoet 差异，是最典型的双弱组合区；任一边过弱（相位误差大于 100°、</text>
+  <text x="56" y="475" font-size="10.5" fill="#475569">或反常信噪不足）都救不动。适配场景：SeMet 标记但位点少信号弱、含硫蛋白配 MR 弱解、金属蛋白配远缘模型。</text>
+  <text x="56" y="522" font-size="10.5" fill="#64748b">反向的组合同样成立：SAD 相位帮助 MR 排除假解（反常位点与模型中 Met、金属位置的互证），定相与验证一体两面。</text>
+  <text x="56" y="537" font-size="10.5" fill="#64748b">同一颗衍生物上置换差异与 Bijvoet 差异亦可叠加（SIRAS）——组合定相谱系里最早的一员。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、高 NCS 的病毒三段式：弱相位洗成强图</text>
+  <rect x="730" y="186" width="190" height="92" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="825" y="208" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">① 弱 MR 定骨架</text>
+  <text x="825" y="230" font-size="9.5" fill="#475569" text-anchor="middle">粗模型（同源外壳蛋白或预测模型）</text>
+  <text x="825" y="243" font-size="9.5" fill="#475569" text-anchor="middle">先定取向与位置</text>
+  <rect x="940" y="186" width="190" height="92" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1035" y="208" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">② 二十面体平均</text>
+  <text x="1035" y="230" font-size="9.5" fill="#475569" text-anchor="middle">数十倍级 NCS 平均接管相位，</text>
+  <text x="1035" y="243" font-size="9.5" fill="#475569" text-anchor="middle">1/√n 把弱相位洗成强图</text>
+  <rect x="1150" y="186" width="190" height="92" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1245" y="208" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ 相位延伸</text>
+  <text x="1245" y="230" font-size="9.5" fill="#475569" text-anchor="middle">逐壳层推高分辨率，</text>
+  <text x="1245" y="243" font-size="9.5" fill="#475569" text-anchor="middle">每步以平均约束作抵押</text>
+  <line x1="922" y1="232" x2="938" y2="232" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="1132" y1="232" x2="1148" y2="232" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="730" y="316" width="610" height="34" rx="17" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="730" y="316" width="274.5" height="34" rx="17" fill="#d1fae5" stroke="#059669" stroke-width="1.4"/>
+  <text x="867.25" y="337" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">3.5–4 Å 起步</text>
+  <text x="1169.2" y="337" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">推进到 2.5–3 Å 可用区</text>
+  <line x1="1004.5" y1="333" x2="1035" y2="333" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="730" y="382" font-size="10.5" fill="#475569">两个早期坐标供凭吊：1985 年的人鼻病毒 14 与脊髓灰质炎病毒分别在 3.5 Å 与 2.9 Å 上完成，</text>
+  <text x="730" y="397" font-size="10.5" fill="#475569">靠的正是五重平均加相位延伸——低分辨率起步、高倍平均、逐层延伸，三招齐下。这一范式贯穿细小病毒、</text>
+  <text x="730" y="412" font-size="10.5" fill="#475569">杯状病毒直到近年巨型组装体。</text>
+  <text x="730" y="452" font-size="10.5" fill="#64748b">含硫与 SeMet SAD 同高 NCS 的组合同样经典——反常差异虽小，但平均后的小信号依然坚挺（信号相关、</text>
+  <text x="730" y="467" font-size="10.5" fill="#64748b">噪声独立的逻辑对反常同样成立）。病毒与大型组装体是组合定相的秀场：分子量大、拷贝多、分辨率常中庸（3–4 Å），</text>
+  <text x="730" y="482" font-size="10.5" fill="#64748b">但非晶体对称倍数惊人。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、自动流水线：autoSHARP 编队与 SHELX 双算法</text>
+  <rect x="56" y="618" width="116" height="58" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="114" y="640" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">MTZ 数据</text>
+  <text x="114" y="656" font-size="8.5" fill="#475569" text-anchor="middle">还原数据输入</text>
+  <rect x="188" y="618" width="116" height="58" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="246" y="640" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">SHELXD</text>
+  <text x="246" y="656" font-size="8.5" fill="#475569" text-anchor="middle">双算法搜位点</text>
+  <rect x="320" y="618" width="116" height="58" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="378" y="640" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">SHARP</text>
+  <text x="378" y="656" font-size="8.5" fill="#475569" text-anchor="middle">精修占有率与 B</text>
+  <rect x="452" y="618" width="116" height="58" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="510" y="640" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Solomon／DM</text>
+  <text x="510" y="656" font-size="8.5" fill="#475569" text-anchor="middle">密度修饰</text>
+  <rect x="584" y="618" width="116" height="58" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="642" y="640" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">ARP/wARP</text>
+  <text x="642" y="656" font-size="8.5" fill="#475569" text-anchor="middle">自动建模收尾</text>
+  <line x1="172" y1="647" x2="186" y2="647" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="304" y1="647" x2="318" y2="647" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="436" y1="647" x2="450" y2="647" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="568" y1="647" x2="582" y2="647" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="56" y="700" font-size="10.5" fill="#475569">SHELXD 细节值得记：对重原子亚结构同时跑 Patterson 解读与直接法（shake-and-bake 式交替迭代），</text>
+  <text x="56" y="715" font-size="10.5" fill="#475569">以 CC<tspan dy="2.3" font-size="7.6">all</tspan><tspan dy="-2.3"> 与 CC</tspan><tspan dy="2.3" font-size="7.6">weak</tspan><tspan dy="-2.3"> 判位点真伪——常用口径是 CC</tspan><tspan dy="2.3" font-size="7.6">weak</tspan><tspan dy="-2.3"> 显著高于噪声带（约 30% 起判真）、且位点数与期望相符；</tspan></text>
+  <text x="56" y="730" font-size="10.5" fill="#475569">假解的特征是相关系数高而位点数飘忽。</text>
+  <rect x="56" y="772" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="131" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">工具</text>
+  <rect x="206" y="772" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="301" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">定位</text>
+  <rect x="396" y="772" width="276" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="534" y="799.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">强项</text>
+  <rect x="56" y="816" width="150" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="131" y="834.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SHELXC/D/E</text>
+  <rect x="206" y="816" width="190" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="301" y="834.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">子结构定位与定相</text>
+  <rect x="396" y="816" width="276" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="534" y="834.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">SHELXD 双算法搜位点，SHELXE 密度修饰</text>
+  <rect x="56" y="842" width="616" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="842" width="150" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="131" y="860.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">autoSHARP</text>
+  <rect x="206" y="842" width="190" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="301" y="860.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">全流程</text>
+  <rect x="396" y="842" width="276" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="534" y="860.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">重原子搜索、定相、修饰、建模一条龙</text>
+  <rect x="56" y="868" width="150" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="131" y="886.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">CRANK2</text>
+  <rect x="206" y="868" width="190" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="301" y="886.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">闭环自动化</text>
+  <rect x="396" y="868" width="276" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="534" y="886.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">定相、修饰、建模、验证闭环迭代</text>
+  <rect x="56" y="894" width="616" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="894" width="150" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="131" y="912.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">phenix AutoSol</text>
+  <rect x="206" y="894" width="190" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="301" y="912.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">全流程</text>
+  <rect x="396" y="894" width="276" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="534" y="912.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">SAD／MAD 决策树内置</text>
+  <text x="56" y="902" font-size="10" fill="#64748b">SHELXE 的杀手锏：以重原子为光源的「密度阴影」判手性，含硫 SAD 的手性二义常由它一锤定音；</text>
+  <text x="56" y="916" font-size="10" fill="#64748b">还能把修饰后的密度峰值转成伪原子再计算结构因子——低分辨率数据的定相常靠这招起死回生。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、三级判据、失败模式与低分辨率对策</text>
+  <text x="730" y="620" font-size="11" fill="#1e293b" font-weight="700">判「定相成功」的三级证据（成本递增的分诊次序）：</text>
+  <rect x="730" y="636" width="300" height="52" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="746" y="657" font-size="10.5" fill="#1e293b" font-weight="700">① 重原子位点一致性</text>
+  <text x="746" y="674" font-size="9.5" fill="#475569">不同方法、不同晶体独立解出的位点吻合，</text>
+  <text x="746" y="686.5" font-size="9.5" fill="#475569">Met 与金属位置和生物学先验互证</text>
+  <text x="1090" y="660" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">最便宜</text>
+  <rect x="730" y="694" width="300" height="52" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="746" y="715" font-size="10.5" fill="#1e293b" font-weight="700">② 图可读性</text>
+  <text x="746" y="732" font-size="9.5" fill="#475569">主链可追踪、二级结构成形、溶剂区平坦</text>
+  <text x="1090" y="718" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">半自动</text>
+  <rect x="730" y="752" width="300" height="52" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="746" y="773" font-size="10.5" fill="#1e293b" font-weight="700">③ 自动建模覆盖率</text>
+  <text x="746" y="790" font-size="9.5" fill="#475569">CRANK2 或 ARP/wARP 能自动搭出与序列对得上的片段</text>
+  <text x="746" y="802.5" font-size="9.5" fill="#475569">（第 9 章）</text>
+  <text x="1090" y="776" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">最贵但最诚实</text>
+  <text x="1064" y="636" font-size="10" fill="#475569">失败模式谱：非同晶（系统差异压过信号）；亚结构部分占据</text>
+  <text x="1064" y="650" font-size="10" fill="#475569">（occupancy 低于 1 使 |F<tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2">| 估计偏差）；辐射损伤还原重原子</tspan></text>
+  <text x="1064" y="664" font-size="10" fill="#475569">（X 射线把 Hg<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 还原、位点漂移或消失）；</tspan></text>
+  <text x="1064" y="678" font-size="10" fill="#475569">数据处理吞噬反常信号（过度缩放或吸收修正抹平 Bijvoet 差）</text>
+  <text x="1064" y="692" font-size="10" fill="#475569">。</text>
+  <text x="1064" y="728" font-size="10" fill="#475569">鉴别一法：</text>
+  <text x="1064" y="742" font-size="10" fill="#475569">分批次看重原子差值峰强度随帧序的走势——正常位点平稳，</text>
+  <text x="1064" y="756" font-size="10" fill="#475569">被还原的位点前段强后段弱；</text>
+  <text x="1064" y="770" font-size="10" fill="#475569">重跑定相时截取前段数据常即治愈。</text>
+  <text x="730" y="830" font-size="10.5" fill="#475569">低于 3.5 Å：直方图先验钝化、溶剂边界模糊、位点不再锋利——优先 NCS 平均（先验最强、不依赖分辨率）、分阶段延伸</text>
+  <text x="730" y="845" font-size="10.5" fill="#475569">（先在 4 Å 内站稳）、容忍「粗图加强约束精修」共处。</text>
+  <text x="730" y="892" font-size="10.5" fill="#64748b">绝望线：分辨率低于约 4.5–5 Å 时溶剂边界难以界定、直方图先验失效，活路只剩高 NCS 平均与生物先验（同源模型的刚性段），</text>
+  <text x="730" y="907" font-size="10.5" fill="#64748b">或改投电子显微镜（第 12 章）。人工介入原则：流水线每一步都有产出可查，介入越早损失越小。</text>
+</svg>

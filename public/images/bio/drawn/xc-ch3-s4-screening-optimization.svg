@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">结晶筛选与优化策略：稀疏矩阵、正交优化、添加剂、晶种与 LCP</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">1991 年 48 条件稀疏矩阵；hit 后沉淀剂×pH×蛋白浓度正交网格；添加剂六类机制；晶种 10<tspan dy="-6.5" font-size="13.7">-1</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">-8</tspan><tspan dy="6.5"> 稀释与 MMS；LCP 成就 GPCR；SER 表面熵减</tspan></text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、稀疏矩阵筛选：用最小实验次数回答「能不能结晶」</text>
+  <text x="60" y="180" font-size="10.5" fill="#475569">1991 年 Jancarik 与 Kim（伯克利）从文献已报道的成功条件统计采样，浓缩为 48 个彼此尽量不同的条件；</text>
+  <text x="60" y="194" font-size="10.5" fill="#475569">商品化即 Crystal Screen（1 与 2 合计约百条件）。</text>
+  <rect x="56" y="202" width="568" height="238" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <text x="87" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">1</text>
+  <text x="133" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">2</text>
+  <text x="179" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">3</text>
+  <text x="225" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">4</text>
+  <text x="271" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">5</text>
+  <text x="317" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">6</text>
+  <text x="363" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">7</text>
+  <text x="409" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">8</text>
+  <text x="455" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">9</text>
+  <text x="501" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">10</text>
+  <text x="547" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">11</text>
+  <text x="593" y="214" font-size="8.5" fill="#64748b" text-anchor="middle">12</text>
+  <text x="51" y="239.5" font-size="8.5" fill="#64748b">A</text>
+  <rect x="68" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="160" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="230" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="298" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="344" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="482" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="230" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="230" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <text x="51" y="266.5" font-size="8.5" fill="#64748b">B</text>
+  <rect x="68" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="160" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="298" y="257" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="344" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="482" y="257" width="38" height="20" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.2"/>
+  <line x1="489" y1="267" x2="511" y2="267" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="528" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="257" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="51" y="293.5" font-size="8.5" fill="#64748b">C</text>
+  <rect x="68" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="284" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="160" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="298" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="344" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="284" width="38" height="20" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="445" cy="294" r="1.4" fill="#92400e"/>
+  <circle cx="450" cy="294" r="1.4" fill="#92400e"/>
+  <circle cx="455" cy="294" r="1.4" fill="#92400e"/>
+  <circle cx="460" cy="294" r="1.4" fill="#92400e"/>
+  <circle cx="465" cy="294" r="1.4" fill="#92400e"/>
+  <rect x="482" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="284" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="51" y="320.5" font-size="8.5" fill="#64748b">D</text>
+  <rect x="68" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="160" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="311" width="38" height="20" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <rect x="264" y="315" width="12" height="12" fill="none" stroke="#065f46" stroke-width="1.6"/>
+  <rect x="298" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="344" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="311" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="482" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="311" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="51" y="347.5" font-size="8.5" fill="#64748b">E</text>
+  <rect x="68" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="160" y="338" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="206" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="298" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="344" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="482" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="338" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="338" width="38" height="20" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="583" cy="348" r="1.4" fill="#92400e"/>
+  <circle cx="588" cy="348" r="1.4" fill="#92400e"/>
+  <circle cx="593" cy="348" r="1.4" fill="#92400e"/>
+  <circle cx="598" cy="348" r="1.4" fill="#92400e"/>
+  <circle cx="603" cy="348" r="1.4" fill="#92400e"/>
+  <text x="51" y="374.5" font-size="8.5" fill="#64748b">F</text>
+  <rect x="68" y="365" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="114" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="160" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="298" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="344" y="365" width="38" height="20" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.2"/>
+  <line x1="351" y1="375" x2="373" y2="375" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="390" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="482" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="365" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="574" y="365" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="51" y="401.5" font-size="8.5" fill="#64748b">G</text>
+  <rect x="68" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="160" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="298" y="392" width="38" height="20" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <circle cx="307" cy="402" r="1.4" fill="#92400e"/>
+  <circle cx="312" cy="402" r="1.4" fill="#92400e"/>
+  <circle cx="317" cy="402" r="1.4" fill="#92400e"/>
+  <circle cx="322" cy="402" r="1.4" fill="#92400e"/>
+  <circle cx="327" cy="402" r="1.4" fill="#92400e"/>
+  <rect x="344" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="482" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="392" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="51" y="428.5" font-size="8.5" fill="#64748b">H</text>
+  <rect x="68" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="114" y="419" width="38" height="20" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.2"/>
+  <rect x="160" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="206" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="252" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="298" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="344" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="436" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="482" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="528" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="574" y="419" width="38" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="64" y="471.8" width="11" height="8.4" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="83" y="479.6" font-size="10" fill="#475569">清亮</text>
+  <rect x="117" y="471.8" width="11" height="8.4" rx="3" fill="#fee2e2" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="136" y="479.6" font-size="10" fill="#475569">沉淀</text>
+  <rect x="170" y="471.8" width="11" height="8.4" rx="3" fill="#fef3c7" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="189" y="479.6" font-size="10" fill="#475569">微晶</text>
+  <rect x="223" y="471.8" width="11" height="8.4" rx="3" fill="#fce7f3" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="242" y="479.6" font-size="10" fill="#475569">针状簇</text>
+  <rect x="286" y="471.8" width="11" height="8.4" rx="3" fill="#d1fae5" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="305" y="479.6" font-size="10" fill="#475569">晶体（hit）</text>
+  <text x="60" y="508" font-size="10" fill="#64748b">现代面板把采样空间继续细化：Index、PEG Rx、Salt Rx、Ion Screen、Cryos（自带防冻剂组合）与 Morpheus。命中率随蛋白而异</text>
+  <text x="60" y="521.5" font-size="10" fill="#64748b">（数个百分点至数十个百分点），价值不在保证命中，而在于给出优化的起点。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、从 hit 到可衍射晶体：正交网格（grid）优化</text>
+  <text x="730" y="200" font-size="10" fill="#475569" font-weight="700">沉淀剂浓度（上下各两三档）</text>
+  <text x="760" y="238" font-size="10.5" fill="#475569" text-anchor="end" font-weight="600">40%</text>
+  <rect x="770" y="214" width="48" height="36" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="822" y="214" width="48" height="36" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.3"/>
+  <rect x="874" y="214" width="48" height="36" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.3"/>
+  <rect x="926" y="214" width="48" height="36" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.3"/>
+  <rect x="978" y="214" width="48" height="36" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.3"/>
+  <text x="760" y="278" font-size="10.5" fill="#475569" text-anchor="end" font-weight="600">35%</text>
+  <rect x="770" y="254" width="48" height="36" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="822" y="254" width="48" height="36" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.3"/>
+  <rect x="874" y="254" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="886" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="891.5" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="897" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="902.5" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="908" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="913.5" cy="269" r="1.3" fill="#92400e"/>
+  <rect x="926" y="254" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="938" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="943.5" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="949" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="954.5" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="960" cy="269" r="1.3" fill="#92400e"/>
+  <circle cx="965.5" cy="269" r="1.3" fill="#92400e"/>
+  <rect x="978" y="254" width="48" height="36" rx="4" fill="#fee2e2" stroke="#fecaca" stroke-width="1.3"/>
+  <text x="760" y="318" font-size="10.5" fill="#475569" text-anchor="end" font-weight="600">30%</text>
+  <rect x="770" y="294" width="48" height="36" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="822" y="294" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="834" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="839.5" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="845" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="850.5" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="856" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="861.5" cy="309" r="1.3" fill="#92400e"/>
+  <rect x="874" y="294" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="886" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="891.5" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="897" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="902.5" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="908" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="913.5" cy="309" r="1.3" fill="#92400e"/>
+  <rect x="926" y="294" width="48" height="36" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.3"/>
+  <line x1="938" y1="312" x2="962" y2="312" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="978" y="294" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="990" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="995.5" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="1001" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="1006.5" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="1012" cy="309" r="1.3" fill="#92400e"/>
+  <circle cx="1017.5" cy="309" r="1.3" fill="#92400e"/>
+  <text x="760" y="358" font-size="10.5" fill="#475569" text-anchor="end" font-weight="600">25%</text>
+  <rect x="770" y="334" width="48" height="36" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="822" y="334" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="834" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="839.5" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="845" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="850.5" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="856" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="861.5" cy="349" r="1.3" fill="#92400e"/>
+  <rect x="874" y="334" width="48" height="36" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.3"/>
+  <line x1="886" y1="352" x2="910" y2="352" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="926" y="334" width="48" height="36" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <rect x="943" y="346" width="14" height="12" fill="none" stroke="#075985" stroke-width="1.5"/>
+  <rect x="978" y="334" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="990" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="995.5" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="1001" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="1006.5" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="1012" cy="349" r="1.3" fill="#92400e"/>
+  <circle cx="1017.5" cy="349" r="1.3" fill="#92400e"/>
+  <text x="760" y="398" font-size="10.5" fill="#475569" text-anchor="end" font-weight="600">20%</text>
+  <rect x="770" y="374" width="48" height="36" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="822" y="374" width="48" height="36" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <rect x="874" y="374" width="48" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="886" cy="389" r="1.3" fill="#92400e"/>
+  <circle cx="891.5" cy="389" r="1.3" fill="#92400e"/>
+  <circle cx="897" cy="389" r="1.3" fill="#92400e"/>
+  <circle cx="902.5" cy="389" r="1.3" fill="#92400e"/>
+  <circle cx="908" cy="389" r="1.3" fill="#92400e"/>
+  <circle cx="913.5" cy="389" r="1.3" fill="#92400e"/>
+  <rect x="926" y="374" width="48" height="36" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <rect x="943" y="386" width="14" height="12" fill="none" stroke="#075985" stroke-width="1.5"/>
+  <rect x="978" y="374" width="48" height="36" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="2.4"/>
+  <text x="1002" y="396" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">最优</text>
+  <text x="794" y="430" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">6.0</text>
+  <text x="846" y="430" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">6.5</text>
+  <text x="898" y="430" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">7.0</text>
+  <text x="950" y="430" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">7.5</text>
+  <text x="1002" y="430" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">8.0</text>
+  <text x="900" y="450" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">pH（半单位间隔）</text>
+  <circle cx="896" cy="310" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="904" y1="318" x2="990" y2="384" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="736" y="466" font-size="10" fill="#64748b">命中条件（红点）居中；第三维蛋白浓度 0.5–2 倍另层扫描，</text>
+  <text x="736" y="479.5" font-size="10" fill="#64748b">顺梯度走向最优点。</text>
+  <text x="1080" y="196" font-size="11.5" fill="#1e293b" font-weight="700">形貌即诊断信息</text>
+  <rect x="1080" y="214" width="270" height="66" rx="7" fill="#f1f5f9" stroke="#be185d" stroke-width="1.3"/>
+  <text x="1092" y="232" font-size="10.5" fill="#be185d" font-weight="700">针状/片状</text>
+  <text x="1092" y="248" font-size="9.5" fill="#475569">判读：某晶向生长过快</text>
+  <text x="1092" y="264" font-size="9.5" fill="#64748b">对策：添加剂或改变条件整形</text>
+  <rect x="1080" y="290" width="270" height="66" rx="7" fill="#f1f5f9" stroke="#d97706" stroke-width="1.3"/>
+  <text x="1092" y="308" font-size="10.5" fill="#d97706" font-weight="700">微晶淋浴</text>
+  <text x="1092" y="324" font-size="9.5" fill="#475569">判读：成核过多</text>
+  <text x="1092" y="340" font-size="9.5" fill="#64748b">对策：降过饱和或改用晶种</text>
+  <rect x="1080" y="366" width="270" height="66" rx="7" fill="#f1f5f9" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="1092" y="384" font-size="10.5" fill="#dc2626" font-weight="700">单一大晶但衍射差</text>
+  <text x="1092" y="400" font-size="9.5" fill="#475569">判读：有序度问题</text>
+  <text x="1092" y="416" font-size="9.5" fill="#64748b">对策：脱水、退火、换配体或晶型</text>
+  <text x="730" y="498" font-size="10.5" fill="#475569">优化期组合拳：24 孔悬滴放大液滴（求大晶体）与 96 孔坐滴并行扫描（求覆盖）。</text>
+  <text x="730" y="516" font-size="10" fill="#64748b">相图即理论底稿：把命中条件标进浓度平面，观察它落在成核区还是亚稳区，即可判断下一步该「降」还是「升」沉淀剂（本章第 2 节）。</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、添加剂屏幕：小分子的大作用</text>
+  <path d="M177.2,660 C177.0,663.6 179.7,677.1 176.00209221172568,681.8183459846966 C172.3,686.6 162.1,687.3 155.02497531000503,688.4980511196593 C147.9,689.7 138.9,692.0 133.25223008008572,689.0079884147654 C127.6,686.0 123.6,677.1 121.28302095932541,670.4521255888519 C119.0,663.8 117.2,655.2 119.3381000714537,648.8399810999601 C121.5,642.5 128.0,635.6 134.02042606218194,632.3225660563957 C140.0,629.0 148.6,628.0 155.45313143754066,629.0737548182898 C162.3,630.1 172.0,637.1 175.31187056410988,638.7608187452483" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="150" y="648" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白</text>
+  <path d="M307.2,660 C307.0,663.6 309.7,677.1 306.0020922117257,681.8183459846966 C302.3,686.6 292.1,687.3 285.024975310005,688.4980511196593 C277.9,689.7 268.9,692.0 263.2522300800857,689.0079884147654 C257.6,686.0 253.6,677.1 251.28302095932543,670.4521255888519 C249.0,663.8 247.2,655.2 249.33810007145368,648.8399810999601 C251.5,642.5 258.0,635.6 264.02042606218197,632.3225660563957 C270.0,629.0 278.6,628.0 285.45313143754066,629.0737548182898 C292.3,630.1 302.0,637.1 305.3118705641099,638.7608187452483" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="280" y="648" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">蛋白</text>
+  <circle cx="215" cy="660" r="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="215" y="663.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">Zn<tspan dy="-3.7" font-size="7.9">2+</tspan></text>
+  <line x1="180" y1="660" x2="196" y2="660" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <line x1="234" y1="660" x2="250" y2="660" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <text x="115" y="700" font-size="8.5" fill="#64748b" text-anchor="middle">酸性残基</text>
+  <text x="315" y="700" font-size="8.5" fill="#64748b" text-anchor="middle">酸性残基</text>
+  <text x="64" y="726" font-size="10" fill="#475569">二价阳离子桥接两分子表面酸性残基、</text>
+  <text x="64" y="739.5" font-size="10" fill="#475569">形成「金属键」晶格接触——胰岛素含锌六聚体是经典案例。</text>
+  <rect x="400" y="612" width="260" height="42" rx="6" fill="#f1f5f9" stroke="#d97706" stroke-width="1.2"/>
+  <rect x="414.112372" y="616" width="95.775256" height="18" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+  <text x="462" y="628.42" font-size="9.5" fill="#d97706" text-anchor="middle" font-weight="700">二价金属 Mg<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2">/Zn</tspan><tspan dy="-3.2" font-size="6.8">2+</tspan></text>
+  <text x="414" y="646" font-size="9.5" fill="#475569">桥接酸性残基成「金属键」晶格接触</text>
+  <rect x="400" y="664" width="260" height="42" rx="6" fill="#f1f5f9" stroke="#0f766e" stroke-width="1.2"/>
+  <rect x="411.86965" y="668" width="100.2607" height="18" rx="7" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="462" y="680.42" font-size="9.5" fill="#0f766e" text-anchor="middle" font-weight="700">去垢剂 β-OG/CHAPS</text>
+  <text x="414" y="698" font-size="9.5" fill="#475569">阻断疏水性的非特异聚集</text>
+  <rect x="400" y="716" width="260" height="42" rx="6" fill="#f1f5f9" stroke="#6d28d9" stroke-width="1.2"/>
+  <rect x="416.95785" y="720" width="90.0843" height="18" rx="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="462" y="732.42" font-size="9.5" fill="#6d28d9" text-anchor="middle" font-weight="700">还原剂 TCEP/DTT</text>
+  <text x="414" y="750" font-size="9.5" fill="#475569">防半胱氨酸氧化交联致聚集</text>
+  <rect x="400" y="768" width="260" height="42" rx="6" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.2"/>
+  <rect x="416.86" y="772" width="90.28" height="18" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="462" y="784.42" font-size="9.5" fill="#0369a1" text-anchor="middle" font-weight="700">精氨酸（氨基酸）</text>
+  <text x="414" y="802" font-size="9.5" fill="#475569">「精氨酸魔术」缓解聚集</text>
+  <rect x="400" y="820" width="260" height="42" rx="6" fill="#f1f5f9" stroke="#059669" stroke-width="1.2"/>
+  <rect x="413.7288" y="824" width="96.5424" height="18" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="462" y="836.42" font-size="9.5" fill="#059669" text-anchor="middle" font-weight="700">多元醇 甘油/乙二醇</text>
+  <text x="414" y="854" font-size="9.5" fill="#475569">稳定蛋白、兼作防冻剂</text>
+  <rect x="400" y="872" width="260" height="42" rx="6" fill="#f1f5f9" stroke="#be185d" stroke-width="1.2"/>
+  <rect x="413.7288" y="876" width="96.5424" height="18" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="462" y="888.42" font-size="9.5" fill="#be185d" text-anchor="middle" font-weight="700">多价胺 精胺/亚精胺</text>
+  <text x="414" y="906" font-size="9.5" fill="#475569">中和核酸或酸性表面</text>
+  <text x="64" y="790" font-size="10" fill="#64748b">在命中条件上单独叠加低浓度小分子，</text>
+  <text x="64" y="803.5" font-size="10" fill="#64748b">观察形貌与分辨率变化——添加剂多为「调味」而非「主料」，</text>
+  <text x="64" y="817" font-size="10" fill="#64748b">命中率零散却时常一锤定音，故优化流程总保留一席。</text>
+  <text x="64" y="860" font-size="10" fill="#64748b">同类工具箱：脱水策略（抽紧晶体内水）常把分辨率推高一档；</text>
+  <text x="64" y="873.5" font-size="10" fill="#64748b">in situ 结晶板省去捞取，板内直接衍射筛查。</text>
+  <rect x="64.405" y="931.075" width="301.19" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="215" y="943.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">先广（筛选）后深（优化），逐维扫描、一次只动一个变量</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、晶种三法、脂立方相与表面熵减</text>
+  <rect x="730" y="610" width="330" height="46" rx="6" fill="#f1f5f9" stroke="#0369a1" stroke-width="1.2"/>
+  <text x="742" y="628" font-size="10.5" fill="#0369a1" font-weight="700">streak seeding</text>
+  <text x="742" y="644" font-size="9" fill="#475569">猫须划过晶体取碎末，再划过新滴，划痕沿途落下微种</text>
+  <rect x="730" y="666" width="330" height="46" rx="6" fill="#f1f5f9" stroke="#d97706" stroke-width="1.2"/>
+  <text x="742" y="684" font-size="10.5" fill="#d97706" font-weight="700">microseeding</text>
+  <text x="742" y="700" font-size="9" fill="#475569">匀浆梯度稀释 10<tspan dy="-3.1" font-size="6.5">-1</tspan><tspan dy="3.1"> 至 10</tspan><tspan dy="-3.1" font-size="6.5">-8</tspan><tspan dy="3.1">，成核数目变成可调参数</tspan></text>
+  <rect x="730" y="722" width="330" height="46" rx="6" fill="#f1f5f9" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="742" y="740" font-size="10.5" fill="#6d28d9" font-weight="700">macro-seeding</text>
+  <text x="742" y="756" font-size="9" fill="#475569">把已长成的晶体植入新液滴继续生长至可切分可衍射</text>
+  <text x="1076" y="606" font-size="10" fill="#475569">MMS（微晶种基质筛选）：</text>
+  <text x="1076" y="619.5" font-size="10" fill="#475569">在整套面板上逐条件加入同一种子，</text>
+  <text x="1076" y="633" font-size="10" fill="#475569">常把「永不结晶」的蛋白拉出 hit，</text>
+  <text x="1076" y="646.5" font-size="10" fill="#475569">已成为现代流程的标准动作。</text>
+  <text x="1076" y="660" font-size="10" fill="#475569">三种技术把成核从「听天由命」变为「计量投送」。</text>
+  <text x="730" y="800" font-size="11" fill="#134e4a" font-weight="700">脂立方相（LCP，in meso）</text>
+  <rect x="730" y="816" width="150" height="96" rx="6" fill="#ecfdf5" stroke="#0f766e" stroke-width="1.5"/>
+  <path d="M 738,828 q 18,-8 33,0 q 18,8 33,0 q 18,-8 33,0 q 18,8 33,0" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <path d="M 738,843 q 18,-8 33,0 q 18,8 33,0 q 18,-8 33,0 q 18,8 33,0" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <path d="M 738,858 q 18,-8 33,0 q 18,8 33,0 q 18,-8 33,0 q 18,8 33,0" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <path d="M 738,873 q 18,-8 33,0 q 18,8 33,0 q 18,-8 33,0 q 18,8 33,0" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <path d="M 738,888 q 18,-8 33,0 q 18,8 33,0 q 18,-8 33,0 q 18,8 33,0" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <path d="M 738,903 q 18,-8 33,0 q 18,8 33,0 q 18,-8 33,0 q 18,8 33,0" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <ellipse cx="768" cy="858" rx="17" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="768" y="861" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">MP</text>
+  <ellipse cx="826" cy="888" rx="17" ry="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="826" y="891" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">MP</text>
+  <text x="770" y="922" font-size="8.5" fill="#134e4a" text-anchor="middle">monoolein 双连续立方相</text>
+  <text x="842" y="922" font-size="8.5" fill="#075985" text-anchor="middle">水性通道贯穿</text>
+  <text x="900" y="820" font-size="10" fill="#475569">膜蛋白嵌入脂膜环境、沿相结构侧向扩散，</text>
+  <text x="900" y="833.5" font-size="10" fill="#475569">在「脂海」中成核结晶。历史性胜利是 GPCR：</text>
+  <text x="900" y="847" font-size="10" fill="#475569">2007 年 β2 受体与 T4 溶菌酶融合蛋白复合物、</text>
+  <text x="900" y="860.5" font-size="10" fill="#475569">2011–2012 年借胆固醇辅助条件解出的一批 GPCR 结构，</text>
+  <text x="900" y="874" font-size="10" fill="#475569">确立 LCP 为膜蛋白结晶默认路线。</text>
+  <rect x="730" y="928" width="616" height="32" rx="7" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="742" y="948" font-size="10.5" fill="#4c1d95" font-weight="700">SER 表面熵减（Derewenda）：</text>
+  <text x="952" y="948" font-size="10" fill="#475569">Glu/Asp/Gln/Lys 换 Ala/Ser/Thr——降低有序化代价、促成新晶格接触</text>
+</svg>

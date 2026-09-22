@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">分辨率评估与模型构建：从 0.143 到双投递</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">FSC0.143处壳层信噪比约1；紧掩蔽伪相关以相位随机化修正；blocres核心2.5Å、柔性区6–8Å；B因子数十至百余Å<tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">；EMDB加PDB双投递、原始数据入EMPIAR</tspan></text>
+  <rect x="30" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、FSC 曲线与 0.143 黄金准则</text>
+  <rect x="70" y="180" width="330" height="160" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="300" x2="400" y2="300" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="152.5" y1="340" x2="152.5" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="260" x2="400" y2="260" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="235" y1="340" x2="235" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="220" x2="400" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="317.5" y1="340" x2="317.5" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="136" y1="340" x2="136" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="136" y="362" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="202" y1="340" x2="202" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="202" y="362" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="290.11" y1="340" x2="290.11" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="290.11" y="362" font-size="13" fill="#64748b" text-anchor="middle">3</text>
+  <line x1="400" y1="340" x2="400" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="400" y="362" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="64" y1="340" x2="70" y2="340" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="344" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="64" y1="260" x2="70" y2="260" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="264" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="64" y1="180" x2="70" y2="180" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="184" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
+  <text x="235" y="384" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">分辨率（Å）</text>
+  <text x="64" y="268" font-size="12" fill="#475569" text-anchor="end" font-weight="600">FSC</text>
+  <path d="M70.0,184.8 L103.0,186.4 L136.0,189.6 L169.0,199.2 L202.0,215.2 L235.0,240.8 L261.4,268.0 L284.5,295.2 L301.0,311.2 L317.5,320.8 L334.0,327.2 L367.0,335.2 L400.0,338.4" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <line x1="70" y1="317.1" x2="400" y2="317.1" stroke="#be123c" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="404" y="321" font-size="10.5" fill="#be123c" font-weight="700">0.143</text>
+  <line x1="70" y1="260" x2="400" y2="260" stroke="#64748b" stroke-width="1.3" stroke-dasharray="4 4"/>
+  <text x="404" y="264" font-size="9.5" fill="#64748b">0.5 旧口径</text>
+  <circle cx="307.6" cy="317.1" r="4.5" fill="#be123c" stroke="#ffffff" stroke-width="1"/>
+  <line x1="307.6" y1="317.1" x2="307.6" y2="340" stroke="#be123c" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="307.6" y="302" font-size="9" fill="#be123c" text-anchor="middle" font-weight="600">全局分辨率</text>
+  <text x="460" y="192" font-size="9.5" fill="#475569">0.143 并非拍脑袋：</text>
+  <text x="460" y="205.5" font-size="9.5" fill="#475569">按两半独立重构的信噪比换算，</text>
+  <text x="460" y="219" font-size="9.5" fill="#475569">FSC 0.143 处每一壳层信噪比约为 1——信号恰好与噪声打平</text>
+  <text x="460" y="232.5" font-size="9.5" fill="#475569">（Rosenthal 与 Henderson 2003）。</text>
+  <text x="460" y="272" font-size="9.5" fill="#475569">三条纪律：FSC 是全局平均，</text>
+  <text x="460" y="285.5" font-size="9.5" fill="#475569">不保证处处达标；金标准分半是合法性前提，</text>
+  <text x="460" y="299" font-size="9.5" fill="#475569">不分半的分辨率永远虚高；</text>
+  <text x="460" y="312.5" font-size="9.5" fill="#475569">分辨率数字须与可解读性对账。</text>
+  <text x="56" y="404" font-size="9.5" fill="#475569">曲线形状亦有信息量：双平台形态（低频高、中频塌陷再回升）常提示构象异质性未拆净或掩蔽边缘效应——读曲线与读数字并重。</text>
+  <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、掩蔽伪相关与「假分辨率」</text>
+  <rect x="740" y="180" width="340" height="160" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="300" x2="1080" y2="300" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="825" y1="340" x2="825" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="260" x2="1080" y2="260" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="910" y1="340" x2="910" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="220" x2="1080" y2="220" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="995" y1="340" x2="995" y2="180" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="808" y1="340" x2="808" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="808" y="362" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="876" y1="340" x2="876" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="876" y="362" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="966.78" y1="340" x2="966.78" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="966.78" y="362" font-size="13" fill="#64748b" text-anchor="middle">3</text>
+  <line x1="1080" y1="340" x2="1080" y2="346" stroke="#475569" stroke-width="1.8"/>
+  <text x="1080" y="362" font-size="13" fill="#64748b" text-anchor="middle">2</text>
+  <line x1="734" y1="340" x2="740" y2="340" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="344" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="734" y1="260" x2="740" y2="260" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="264" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="734" y1="180" x2="740" y2="180" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="184" font-size="13" fill="#64748b" text-anchor="end">1.0</text>
+  <text x="910" y="384" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">分辨率（Å）</text>
+  <text x="734" y="268" font-size="12" fill="#475569" text-anchor="end" font-weight="600">FSC</text>
+  <path d="M740.0,184.8 L774.0,186.4 L808.0,189.6 L842.0,199.2 L876.0,215.2 L910.0,240.8 L937.2,268.0 L961.0,295.2 L978.0,311.2 L995.0,320.8 L1012.0,327.2 L1046.0,335.2 L1080.0,338.4" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <path d="M740.0,184.8 L808.0,188.0 L876.0,192.8 L944.0,199.2 L995.0,208.8 L1029.0,228.0 L1056.2,268.0 L1069.8,308.0 L1080.0,327.2" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <line x1="740" y1="317.1" x2="1080" y2="317.1" stroke="#be123c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1086" y="321" font-size="10" fill="#be123c" font-weight="700">0.143</text>
+  <line x1="984.8" y1="317.1" x2="984.8" y2="288" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="984.8" y="282" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">真实</text>
+  <line x1="1064.7" y1="317.1" x2="1064.7" y2="288" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1064.7" y="282" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">虚高</text>
+  <rect x="1095" y="191.8" width="11" height="8.4" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1114" y="199.6" font-size="10" fill="#475569">松掩蔽/无掩蔽</text>
+  <rect x="1199.2" y="191.8" width="11" height="8.4" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1218.2" y="199.6" font-size="10" fill="#475569">紧掩蔽未修正</text>
+  <text x="1110" y="232" font-size="9.5" fill="#475569">自测：</text>
+  <text x="1110" y="245" font-size="9.5" fill="#475569">换三种松紧的掩蔽重算——分辨率随掩蔽大幅跳动的，</text>
+  <text x="1110" y="258" font-size="9.5" fill="#475569">问题在掩蔽不在分子；掩蔽以贴合分子表面为度，</text>
+  <text x="1110" y="271" font-size="9.5" fill="#475569">溶剂区可多裁、分子内部一刀不剪。</text>
+  <text x="1110" y="300" font-size="9.5" fill="#475569">第三方检验：</text>
+  <text x="1110" y="313" font-size="9.5" fill="#475569">独立构建的模型分别与两半图算 map-model FSC——模型未参与精修、</text>
+  <text x="1110" y="326" font-size="9.5" fill="#475569">无「共谋」嫌疑，其口径最可信。</text>
+  <text x="730" y="404" font-size="9.5" fill="#475569">紧掩蔽把高频人为托起、曲线「坚挺到底」即是典型指纹。标准修正为相位随机化：在阈值以上打乱两半图相位、重施掩蔽再算 FSC，</text>
+  <text x="730" y="417" font-size="9.5" fill="#475569">差值曲线即伪相关贡献、从原曲线扣除——RELION postprocess 与 cryoSPARC 均内置。</text>
+  <rect x="30" y="482" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">三、局部分辨率与 B 因子锐化</text>
+  <text x="190" y="505" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">局部分辨率着色图（blocres 滑窗约 10–15 Å 见方）</text>
+  <text x="70" y="530" font-size="8.5" fill="#64748b">虚线：blocres 滑窗</text>
+  <ellipse cx="180" cy="585" rx="60" ry="46" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <text x="180" y="589" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">2.5 Å</text>
+  <path d="M240,575 q34,-14 62,-20" fill="none" opacity="0.75" stroke="#d97706" stroke-width="5"/>
+  <text x="316" y="548" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">6–8 Å</text>
+  <path d="M158,630 q-20,26 -52,42" fill="none" opacity="0.75" stroke="#dc2626" stroke-width="5"/>
+  <text x="96" y="690" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">6–8 Å</text>
+  <rect x="128" y="552" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="166" y="552" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="204" y="552" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="128" y="592" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="166" y="592" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="204" y="592" width="34" height="34" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="70" y="712.22" width="9.9" height="7.56" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="87.9" y="719.24" font-size="9" fill="#475569">刚性核心 2.5 Å</text>
+  <rect x="170.38" y="712.22" width="9.9" height="7.56" rx="3" fill="#d97706" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="188.28" y="719.24" font-size="9" fill="#475569">柔性尾区 6–8 Å</text>
+  <text x="520" y="520" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">Guinier 图：ln|F| 对 s<tspan dy="-3.6" font-size="7.6">2</tspan></text>
+  <rect x="420" y="535" width="200" height="115" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="520" y="694" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">s<tspan dy="-5.1" font-size="10.8">2</tspan></text>
+  <text x="374" y="592.5" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">ln|F|</text>
+  <line x1="420" y1="551.1" x2="620" y2="633.9" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="432" cy="560.668" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="457" cy="566.418" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="482" cy="572.168" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="507" cy="591.718" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="532" cy="597.468" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="557" cy="603.218" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="582" cy="622.768" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <circle cx="607" cy="628.518" r="3" fill="#6d28d9" fill-opacity="0.8" stroke="none"/>
+  <text x="575" y="568" font-size="9.5" fill="#6d28d9" font-weight="600" font-style="italic">斜率 ∝ −B</text>
+  <text x="420" y="716" font-size="9.5" fill="#475569">B 因子锐化：以 Guinier 图拟合全局 B</text>
+  <text x="420" y="729" font-size="9.5" fill="#475569">（典型数十至一百余 Å<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">），</tspan></text>
+  <text x="420" y="742" font-size="9.5" fill="#475569">施加负 B 把被衰减的高频抬回；</text>
+  <text x="420" y="755" font-size="9.5" fill="#475569">过度锐化把噪声一并放大——孤立点噪声冒充侧链是常见事故。</text>
+  <text x="56" y="800" font-size="9.5" fill="#475569">着色图随稿随附、柔性区如实标注；投稿版常附未锐化与适度锐化两版供评审判断；深度学习锐化（deepEMhancer 类）</text>
+  <text x="56" y="813" font-size="9.5" fill="#475569">以训练先验区分信号与噪声，须以独立模型-图指标复核——「美化」不得越界成「脑补」。</text>
+  <rect x="710" y="482" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="504.84" font-size="19" fill="#475569" font-weight="700">四、从密度到模型：分辨率分档与双投递</text>
+  <rect x="768.533" y="519.5" width="52.934000000000005" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="795" y="531.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">优于 3 Å</text>
+  <text x="850" y="525" font-size="9.5" fill="#475569">侧链密度可见、可从头搭建——Coot 逐残基入图、旋转构象、修骨架</text>
+  <rect x="774.61" y="551.5" width="40.78" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="795" y="563.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">4–5 Å</text>
+  <text x="850" y="557" font-size="9.5" fill="#475569">以 AlphaFold 或同源模型刚体拟合起步，逐段核对修正、错处以密度为准</text>
+  <rect x="774.61" y="583.5" width="40.78" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="795" y="595.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">6–8 Å</text>
+  <text x="850" y="589" font-size="9.5" fill="#475569">常只支持刚体拟合与二级结构登记——图是实验、预测是先验</text>
+  <rect x="745" y="621.925" width="79.16810000000001" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="784.58405" y="633.42" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">Coot（2004）</text>
+  <line x1="828.1681" y1="630" x2="846.1681" y2="630" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="854.1681" y="621.925" width="171.14709999999997" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="939.7416499999999" y="633.42" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">Phenix real-space refine（2018）</text>
+  <line x1="1029.3152" y1="630" x2="1047.3152" y2="630" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="1055.3152" y="621.925" width="94.237" height="16.15" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1102.4337" y="633.42" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">ISOLDE（2018）</text>
+  <text x="730" y="664" font-size="10.5" fill="#1e293b" font-weight="700">模型-图三指标：</text>
+  <text x="840" y="664" font-size="9.5" fill="#475569">Q-score 逐原子吻合（Pintilie 等 2020）、EMRinger 侧链手性统计（Barad 等 2015）、</text>
+  <text x="840" y="677" font-size="9.5" fill="#475569">map-model FSC 给出频率上限——三项互相印证、缺一不可。</text>
+  <rect x="740" y="700" width="175" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="827" y="722" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">EMDB</text>
+  <text x="827" y="740" font-size="9.5" fill="#475569" text-anchor="middle">密度图</text>
+  <rect x="945" y="700" width="175" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1032" y="722" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">PDB</text>
+  <text x="1032" y="740" font-size="9.5" fill="#475569" text-anchor="middle">原子坐标·两库互链</text>
+  <rect x="1150" y="700" width="190" height="56" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1245" y="722" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">EMPIAR</text>
+  <text x="1245" y="740" font-size="9.5" fill="#475569" text-anchor="middle">原始影像·软件与参数</text>
+  <line x1="915" y1="728" x2="945" y2="728" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <rect x="902.005" y="781.5" width="255.98999999999995" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1030" y="793.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">Yip 等 2020：脱铁铁蛋白约 1.2 Å，氢原子密度初现</text>
+  <text x="730" y="824" font-size="9.5" fill="#475569">双投递为标配；EMPIAR 条目须注明所用软件与版本、参数文件——五年后复现你的精修，靠的是这些而不是记忆。</text>
+  <text x="700" y="940" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">宣称的分辨率须与图的实际可解读性一致——从玻璃化载网到可投递的结构，冷冻电镜已与晶体学并肩</text>
+</svg>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">原位结构生物学与未来展望：链路、动态与四道题</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">链路四步：玻璃化、FIB铣薄100–300nm（Ga离子30kV）、冷冻断层、子图平均——核糖体推进到3–4Å级；果蝇连接组约2.5万神经元以约8nm体素完成；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">混合-喷雾捕集亚秒中间态；未来四道题：通量、单分子剂量极限、多尺度整合、开放生态</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、原位链路四步走：把分子放回细胞</text>
+  <ellipse cx="130" cy="250" rx="54" ry="40" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="118" cy="244" r="14" fill="#ede9fe" fill-opacity="0.9" stroke="#6d28d9" stroke-width="2.2"/>
+  <circle cx="122.9" cy="240.5" r="3.08" fill="#6d28d9" fill-opacity="0.4"/>
+  <path d="M 109.91171097388515,248.34774704514177 q 4.2,-3.5 8.4,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 125.85120743235996,248.60823550960046 q 4.2,-3.5 8.4,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M 121.01186212578851,236.67266403105072 q 4.2,-3.5 8.4,0" fill="none" opacity="0.45" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="130" y="316" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">玻璃化冷冻</text>
+  <text x="130" y="332" font-size="9.5" fill="#64748b" text-anchor="middle">厚 5–10 μm 的细胞</text>
+  <line x1="196" y1="250" x2="246" y2="250" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="252" y="226" width="120" height="48" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="292" y="226" width="30" height="48" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="258" y="216" font-size="9" fill="#075985">Ga<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 30 kV</tspan></text>
+  <text x="312" y="296" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">FIB 铣薄</text>
+  <text x="312" y="312" font-size="9.5" fill="#64748b" text-anchor="middle">lamella 100–300 nm</text>
+  <line x1="380" y1="250" x2="430" y2="250" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="436" y="218" width="110" height="64" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <line x1="466.14609393006555" y1="288.7076653011632" x2="515.8539060699344" y2="211.29233469883675" stroke="#be185d" stroke-width="1.4" opacity="0.6"/>
+  <line x1="450.63120215304286" y1="272.0535747757933" x2="531.3687978469571" y2="227.94642522420668" stroke="#be185d" stroke-width="1.4" opacity="0.6"/>
+  <line x1="445" y1="250" x2="537" y2="250" stroke="#be185d" stroke-width="1.4" opacity="0.6"/>
+  <line x1="450.63120215304286" y1="227.94642522420668" x2="531.3687978469571" y2="272.0535747757933" stroke="#be185d" stroke-width="1.4" opacity="0.6"/>
+  <line x1="466.14609393006555" y1="211.29233469883675" x2="515.8539060699344" y2="288.7076653011632" stroke="#be185d" stroke-width="1.4" opacity="0.6"/>
+  <text x="491" y="304" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">冷冻电子断层</text>
+  <text x="491" y="320" font-size="9.5" fill="#64748b" text-anchor="middle">剂量对称系列</text>
+  <line x1="556" y1="250" x2="606" y2="250" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <ellipse cx="636" cy="250" rx="30" ry="24" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.4"/>
+  <path d="M 622,246 q 8,-9 16,-2 q 6,-7 12,1" fill="none" stroke="#134e4a" stroke-width="2"/>
+  <text x="636" y="304" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">子图平均</text>
+  <text x="636" y="320" font-size="9.5" fill="#64748b" text-anchor="middle">核糖体推进到 3–4 Å 级</text>
+  <text x="50" y="366" font-size="10.5" fill="#475569">Mahamid 等 2016 年（Science）对 HeLa 细胞的冷冻断层是引路案例：核周细胞质里蛋白酶体等大分子机器的原位可视化首次成图。</text>
+  <rect x="144.75" y="419.5" width="170.5" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="230" y="431.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">原位独有产出：翻译态多聚体组织</text>
+  <rect x="430.406" y="419.5" width="139.18800000000002" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="500" y="431.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">膜蛋白间距 · 核周浓度梯度</text>
+  <text x="360" y="480" font-size="10" fill="#64748b" text-anchor="middle">结构相同、社会学不同——原位读的是分子在细胞里的生活方式</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、体积电镜的并行爆发：从细胞到全脑</text>
+  <rect x="724.9628" y="181.075" width="210.07440000000003" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="830" y="193.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">SBF-SEM：z 步长 10–50 nm，通量之最</text>
+  <rect x="1079.08025" y="181.075" width="161.8395" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1160" y="193.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">FIB-SEM：4–10 nm 各向同性</text>
+  <ellipse cx="860" cy="300" rx="40" ry="32" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="860" y="356" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">细胞</text>
+  <ellipse cx="1030" cy="300" rx="58" ry="44" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <ellipse cx="1030" cy="292" rx="30" ry="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1030" y="368" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">组织与器官</text>
+  <ellipse cx="1210" cy="300" rx="74" ry="52" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1210" y="376" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">整脑（果蝇）</text>
+  <line x1="910" y1="300" x2="962" y2="300" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="1096" y1="300" x2="1124" y2="300" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="796.3960000000001" y="419.075" width="487.20799999999986" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1040" y="431.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">果蝇中央脑连接组：约 2.5 万神经元、两千万突触，约 8 nm 各向同性体素（Scheffer 等 2020）</text>
+  <text x="1040" y="480" font-size="10" fill="#64748b" text-anchor="middle">整脑级数据集（Zheng 等 2018 年约 8 nm 体素口径）与连接组先后落地</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、动态维度：时间分辨冷冻电镜</text>
+  <rect x="60" y="618" width="200" height="130" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="660" x2="140" y2="680" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="90" y1="700" x2="140" y2="680" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="84" y="650" font-size="9.5" fill="#075985">蛋白</text>
+  <text x="84" y="714" font-size="9.5" fill="#831843">底物</text>
+  <ellipse cx="170" cy="680" rx="16" ry="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="196" y1="680" x2="230" y2="680" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="232" y="662" width="16" height="36" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="160" y="728" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">混合-喷雾装置</text>
+  <text x="160" y="744" font-size="9.5" fill="#64748b" text-anchor="middle">捕集亚秒中间态</text>
+  <text x="290" y="630" font-size="10.5" fill="#475569">两条触发路线：混合-喷雾装置把反应物在毫秒内混合并喷射冻停；</text>
+  <text x="290" y="645" font-size="10.5" fill="#475569">笼闭化合物以光解瞬间释放、</text>
+  <text x="290" y="660" font-size="10.5" fill="#475569">光遗传触发毫秒级同步——时间戳由光而不是移液器给出。</text>
+  <rect x="299.0725" y="751.075" width="201.85500000000002" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="400" y="763.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">与连续构象分析在「分子电影」处交汇</text>
+  <text x="360" y="812" font-size="10" fill="#64748b" text-anchor="middle">结构生物学从「看静态」走向「看过程」——第 8 章的异质性与本章的动态在此合流</text>
+  <text x="360" y="880" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">时间分辨＋原位断层＋连续构象：同一部「分子电影」的三条摄制组</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、未来十年的四道题与全书收束</text>
+  <circle cx="756" cy="612" r="15" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="756" y="617" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">一</text>
+  <text x="786" y="614" font-size="11.5" fill="#1e293b" font-weight="700">原位普查的通量</text>
+  <text x="786" y="634" font-size="9.5" fill="#475569">从一幅数月到每日成图——自动化与 STA 提速是关键</text>
+  <circle cx="756" cy="678" r="15" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="756" y="683" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">二</text>
+  <text x="786" y="680" font-size="11.5" fill="#1e293b" font-weight="700">单分子结构的剂量极限</text>
+  <text x="786" y="700" font-size="9.5" fill="#475569">约 20 e<tspan dy="-3.2" font-size="6.8">-</tspan><tspan dy="3.2">/Å</tspan><tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2"> 的 Henderson 账下，一颗 100 kDa 分子散射的电子数只比统计涨落多出数倍——相位板加 AI 组合是破题方向</tspan></text>
+  <circle cx="756" cy="744" r="15" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="756" y="749" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">三</text>
+  <text x="786" y="746" font-size="11.5" fill="#1e293b" font-weight="700">多尺度整合</text>
+  <text x="786" y="766" font-size="9.5" fill="#475569">CLEM 配准把荧光定位与断层坐标缝合，跨尺度误差须持续压低</text>
+  <circle cx="756" cy="810" r="15" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="756" y="815" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">四</text>
+  <text x="786" y="812" font-size="11.5" fill="#1e293b" font-weight="700">开放数据与培训生态</text>
+  <text x="786" y="832" font-size="9.5" fill="#475569">EMPIAR 存档、盲测复核、人才梯队——方法论的公共品</text>
+  <text x="1040" y="916" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">全书收束：从看分子到看细胞、从看结构到看过程——问题在哪里，方法就在哪里</text>
+</svg>

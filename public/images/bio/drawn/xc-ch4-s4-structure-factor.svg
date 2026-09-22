@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">衍射强度与结构因子：矢量合成、系统消光、温度因子与傅里叶对偶</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">F(h)＝Σf<tspan dy="4.2" font-size="13.7">j</tspan><tspan dy="-4.2">exp(2πi(h·r</tspan><tspan dy="4.2" font-size="13.7">j</tspan><tspan dy="-4.2">))；两原子实算 h＝1 得 √2f（45°）、h＝2 反相归零；体心 h+k+l 奇消光；B＝8π</tspan><tspan dy="-6.5" font-size="13.7">2</tspan><tspan dy="6.5">〈u</tspan><tspan dy="-6.5" font-size="13.7">2</tspan><tspan dy="6.5">〉典型 15–50 Å</tspan><tspan dy="-6.5" font-size="13.7">2</tspan><tspan dy="6.5">；实测只得 |F|，相位丢失</tspan></text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、结构因子：晶胞内原子散射波的相干叠加</text>
+  <text x="330" y="182" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">F(h) = Σ<tspan dy="3.1" font-size="10.1">j</tspan><tspan dy="-3.1"> f</tspan><tspan dy="3.1" font-size="10.1">j</tspan><tspan dy="-3.1">·exp(2πi(h·r</tspan><tspan dy="3.1" font-size="10.1">j</tspan><tspan dy="-3.1">))</tspan></text>
+  <text x="60" y="206" font-size="10" fill="#475569">练手模型：一维晶胞两原子——A 位于 x＝0、B 位于 x＝1/4，散射力相同（各记 f）；B 的贡献带相位因子 exp(2πi·h/4)，</text>
+  <text x="60" y="219.5" font-size="10" fill="#475569">随 h 每步旋转 90°。</text>
+  <line x1="68" y1="400" x2="235" y2="400" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <line x1="90" y1="415" x2="90" y2="230" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <text x="228" y="416" font-size="8.5" fill="#64748b" text-anchor="middle">Re</text>
+  <text x="72" y="228" font-size="8.5" fill="#64748b" text-anchor="middle">Im</text>
+  <text x="152" y="434" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">h＝1：F＝f(1+i)</text>
+  <text x="152" y="450" font-size="9.5" fill="#475569" text-anchor="middle">|F|＝√2·f，相位 45°</text>
+  <line x1="258" y1="400" x2="425" y2="400" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <line x1="280" y1="415" x2="280" y2="230" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <text x="418" y="416" font-size="8.5" fill="#64748b" text-anchor="middle">Re</text>
+  <text x="262" y="228" font-size="8.5" fill="#64748b" text-anchor="middle">Im</text>
+  <text x="342" y="434" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">h＝2：两项反相抵消</text>
+  <text x="342" y="450" font-size="9.5" fill="#475569" text-anchor="middle">F＝0，反射消失</text>
+  <line x1="448" y1="400" x2="615" y2="400" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <line x1="470" y1="415" x2="470" y2="230" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <text x="608" y="416" font-size="8.5" fill="#64748b" text-anchor="middle">Re</text>
+  <text x="452" y="228" font-size="8.5" fill="#64748b" text-anchor="middle">Im</text>
+  <text x="532" y="434" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">h＝4：两项同相</text>
+  <text x="532" y="450" font-size="9.5" fill="#475569" text-anchor="middle">F＝2f</text>
+  <line x1="90" y1="400" x2="162" y2="400" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <line x1="162" y1="400" x2="162" y2="328" stroke="#6d28d9" stroke-width="2.4" marker-end="url(#arr-pro)"/>
+  <line x1="90" y1="400" x2="162" y2="328" stroke="#dc2626" stroke-width="2.8" marker-end="url(#arr-bad)"/>
+  <path d="M 114,400 A 24,24 0 0 0 107,383" fill="none" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="126" y="390" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">45°</text>
+  <text x="122" y="414" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">f</text>
+  <text x="172" y="366" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700" font-style="italic">f</text>
+  <text x="116" y="356" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700" font-style="italic">F</text>
+  <line x1="280" y1="400" x2="352" y2="400" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <line x1="352" y1="400" x2="280" y2="400" stroke="#be185d" stroke-width="2.4" marker-end="url(#arr-enz)"/>
+  <line x1="284" y1="394" x2="296" y2="406" stroke="#dc2626" stroke-width="2"/>
+  <line x1="284" y1="406" x2="296" y2="394" stroke="#dc2626" stroke-width="2"/>
+  <text x="312" y="414" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">f</text>
+  <text x="316" y="388" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">−f（反相）</text>
+  <text x="346" y="376" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">F＝0</text>
+  <line x1="470" y1="400" x2="542" y2="400" stroke="#0369a1" stroke-width="2.4" marker-end="url(#arr-acc)"/>
+  <line x1="542" y1="400" x2="614" y2="400" stroke="#0369a1" stroke-width="2.4" stroke-dasharray="6 4" marker-end="url(#arr-acc)"/>
+  <line x1="470" y1="400" x2="614" y2="400" stroke="#dc2626" stroke-width="2.8" marker-end="url(#arr-bad)"/>
+  <text x="502" y="414" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">f</text>
+  <text x="574" y="414" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700" font-style="italic">f</text>
+  <text x="542" y="388" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">F＝2f</text>
+  <text x="60" y="478" font-size="10" fill="#64748b">同一对原子，振幅随 h 从 2f、√2f 到 0 起伏——原子间的相对位置就编码在这种消长里，这是「强度知道结构」的最小演示；</text>
+  <text x="60" y="491.5" font-size="10" fill="#64748b">每个反射的相位由原子坐标唯一决定，第 7 章的「相位问题」正从这里出发。蛋白晶胞虽无解析可算的 F，</text>
+  <text x="60" y="505" font-size="10" fill="#64748b">这个定义把「强度里的结构信息」规范化为可计算的量——结构因子就是晶胞电子密度在倒易空间的傅里叶系数。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、从强度到振幅：修正链条与结构消光</text>
+  <rect x="730" y="172" width="140" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="800" y="194" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">探测器计数</text>
+  <text x="800" y="212" font-size="8.5" fill="#475569" text-anchor="middle">I(h) ∝ |F(h)|<tspan dy="-2.9" font-size="6.1">2</tspan></text>
+  <text x="800" y="223" font-size="8.5" fill="#475569" text-anchor="middle">（正比于功率而非振幅）</text>
+  <line x1="873" y1="200" x2="890" y2="200" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="894" y="172" width="150" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="969" y="194" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">除「装机税」</text>
+  <text x="969" y="212" font-size="8.5" fill="#475569" text-anchor="middle">洛伦兹·偏振·吸收·通量归一</text>
+  <line x1="1047" y1="200" x2="1064" y2="200" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1068" y="172" width="130" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1133" y="194" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">修正后严格成正比</text>
+  <text x="1133" y="212" font-size="8.5" fill="#475569" text-anchor="middle">I 与 |F|<tspan dy="-2.9" font-size="6.1">2</tspan><tspan dy="2.9">（第 6 章完成）</tspan></text>
+  <line x1="1201" y1="200" x2="1218" y2="200" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1222" y="172" width="124" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1284" y="194" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">开方取振幅</text>
+  <text x="1284" y="212" font-size="8.5" fill="#475569" text-anchor="middle">得 |F|，相位无从恢复</text>
+  <text x="730" y="254" font-size="11.5" fill="#1e293b" font-weight="700">结构消光：格子的算术（体心 I 的完整推导）</text>
+  <text x="730" y="274" font-size="9.5" fill="#475569">体心格子每个原子 (x, y, z) 必伴随等价原子 (x+½, y+½, z+½)，两项相加——当 h+k+l 为奇数时方括号内两项之和为零，F 恒等于 0，反射整体消失。</text>
+  <rect x="909.32675" y="306.225" width="257.34650000000005" height="19.55" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1038" y="320.14" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">F = f·exp(2πi(hx+ky+lz))·[1 + exp(iπ(h+k+l))]</text>
+  <text x="730" y="346" font-size="9.5" fill="#475569">消光规律由格子心性与对称元素分层贡献，是空间群判定的实验依据（第 2 章规律、第 6 章判定流程）；</text>
+  <text x="730" y="359" font-size="9.5" fill="#475569">螺旋轴与滑移面的「半步平移」沿特征方向留下选择性指纹。洛伦兹修正的直觉：贴着反射球面滑行的格点满足时间长、</text>
+  <text x="730" y="372" font-size="9.5" fill="#475569">被「重复计费」——修正即除掉这笔停留时间税。</text>
+  <rect x="730" y="380" width="216" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="838" y="407.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">对称元素</text>
+  <rect x="946" y="380" width="400" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="407.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">消光条件（示例）</text>
+  <rect x="730" y="424" width="216" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="838" y="441.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">体心 I</text>
+  <rect x="946" y="424" width="400" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="441.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">h+k+l＝2n+1 消光</text>
+  <rect x="730" y="448" width="616" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="448" width="216" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="838" y="465.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">面心 F</text>
+  <rect x="946" y="448" width="400" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="465.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">h、k、l 奇偶混杂消光</text>
+  <rect x="730" y="472" width="216" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="838" y="489.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">C 底心</text>
+  <rect x="946" y="472" width="400" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="489.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">h+l＝2n+1 消光</text>
+  <rect x="730" y="496" width="616" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="496" width="216" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="838" y="513.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3"> 螺旋轴（沿 b）</tspan></text>
+  <rect x="946" y="496" width="400" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="513.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0k0 中 k 为奇者消光</text>
+  <rect x="730" y="520" width="216" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="838" y="537.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">c 滑移面（垂直于 b）</text>
+  <rect x="946" y="520" width="400" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="537.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">h0l 中 l 为奇者消光</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、温度因子：热运动的低通滤波</text>
+  <text x="70" y="600" font-size="10.5" fill="#475569" font-weight="700">振幅衰减因子 exp(−B sin<tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">θ/λ</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">)，其中 B＝8π</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">〈u</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">〉（〈u</tspan><tspan dy="-3.6" font-size="7.6">2</tspan><tspan dy="3.6">〉为原子位移均方值）</tspan></text>
+  <rect x="70" y="620" width="330" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="747.5" x2="400" y2="747.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="152.5" y1="790" x2="152.5" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="705" x2="400" y2="705" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="235" y1="790" x2="235" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="662.5" x2="400" y2="662.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="317.5" y1="790" x2="317.5" y2="620" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="790" x2="70" y2="796" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="812" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="169" y1="790" x2="169" y2="796" stroke="#475569" stroke-width="1.8"/>
+  <text x="169" y="812" font-size="13" fill="#64748b" text-anchor="middle">0.15</text>
+  <line x1="268" y1="790" x2="268" y2="796" stroke="#475569" stroke-width="1.8"/>
+  <text x="268" y="812" font-size="13" fill="#64748b" text-anchor="middle">0.3</text>
+  <line x1="400" y1="790" x2="400" y2="796" stroke="#475569" stroke-width="1.8"/>
+  <text x="400" y="812" font-size="13" fill="#64748b" text-anchor="middle">0.5</text>
+  <line x1="64" y1="620" x2="70" y2="620" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="624" font-size="13" fill="#64748b" text-anchor="end">1</text>
+  <line x1="64" y1="705" x2="70" y2="705" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="709" font-size="13" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="64" y1="790" x2="70" y2="790" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="794" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <text x="235" y="834" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">sin<tspan dy="-5.1" font-size="10.8">2</tspan><tspan dy="5.1">θ/λ</tspan><tspan dy="-5.1" font-size="10.8">2</tspan><tspan dy="5.1">（Å</tspan><tspan dy="-5.1" font-size="10.8">-2</tspan><tspan dy="5.1">）</tspan></text>
+  <path d="M70,620 C75.5,635.0 92.0,688.0 103,710.1 C114.0,732.2 119.5,740.7 136,752.6 C152.5,764.5 180.0,775.6 202,781.5 C224.0,787.4 246.0,786.8 268,788.13 C290.0,789.5 312.0,789.3 334,789.575 C356.0,789.9 389.0,789.8 400,789.898" fill="none" stroke="#059669" stroke-width="2.6"/>
+  <path d="M70,620 C72.8,635.0 81.0,688.0 86.5,710.1 C92.0,732.2 94.8,740.7 103,752.6 C111.3,764.5 125.0,775.6 136,781.5 C147.0,787.4 158.0,786.8 169,788.13 C180.0,789.5 196.5,789.3 202,789.575" fill="none" stroke="#d97706" stroke-width="2.6"/>
+  <path d="M70,620 C71.7,635.0 76.6,688.0 79.9,710.1 C83.2,732.2 84.8,740.7 89.8,752.6 C94.8,764.5 103.0,775.6 109.6,781.5 C116.2,787.4 122.8,786.8 129.4,788.13 C136.0,789.5 145.9,789.3 149.2,789.575" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="235" y="637" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">B＝15</text>
+  <text x="165.7" y="637" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">B＝30</text>
+  <text x="119.5" y="637" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">B＝50</text>
+  <text x="307.6" y="696.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">高角被削平</text>
+  <rect x="430" y="620" width="240" height="88" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="550" y="642" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">B＝8π<tspan dy="-4.1" font-size="8.6">2</tspan><tspan dy="4.1">〈u</tspan><tspan dy="-4.1" font-size="8.6">2</tspan><tspan dy="4.1">〉</tspan></text>
+  <text x="442" y="664" font-size="9.5" fill="#475569">B＝20 Å<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2"> 对应 〈u</tspan><tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">〉约 0.25 Å</tspan><tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">，</tspan></text>
+  <text x="442" y="677" font-size="9.5" fill="#475569">即均方根位移约 0.5 Å；</text>
+  <text x="442" y="690" font-size="9.5" fill="#475569">蛋白质的 B 因子典型范围 15–50 Å<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">，</tspan></text>
+  <text x="442" y="703" font-size="9.5" fill="#475569">主链通常低于侧链，</text>
+  <text x="442" y="716" font-size="9.5" fill="#475569">柔性环与表面赖氨酸可超过 60 Å<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">。</tspan></text>
+  <rect x="410" y="730" width="165" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="492.5" y="757.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">部位</text>
+  <rect x="575" y="730" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="627.5" y="757.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">典型 B（Å<tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">）</tspan></text>
+  <rect x="410" y="774" width="165" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="492.5" y="793.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">蛋白内核与主链</text>
+  <rect x="575" y="774" width="105" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="627.5" y="793.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">15–25</text>
+  <rect x="410" y="802" width="270" height="28" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="410" y="802" width="165" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="492.5" y="821.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">一般侧链</text>
+  <rect x="575" y="802" width="105" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="627.5" y="821.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">25–40</text>
+  <rect x="410" y="830" width="165" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="492.5" y="849.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">表面环与末端</text>
+  <rect x="575" y="830" width="105" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="627.5" y="849.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">40–60 以上</text>
+  <rect x="410" y="858" width="270" height="28" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="410" y="858" width="165" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="492.5" y="877.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">配体与内部水</text>
+  <rect x="575" y="858" width="105" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="627.5" y="877.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">20–35</text>
+  <text x="60" y="908" font-size="10" fill="#64748b">一桩「不可分辨」：同一批原子以两种构象各偏一点位置，平均之后与「热得晃」在衍射上无法区分——精修中占有率与 B 强烈耦合</text>
+  <text x="60" y="921.5" font-size="10" fill="#64748b">（同升同降都能拟合强度），惯用固定其一解另一。100 K 低温冻结了大部分振动，</text>
+  <text x="60" y="935" font-size="10" fill="#64748b">读出的 B 更偏静态无序与镶嵌度的贡献——解读 B 因子时永远要问一句「这是热还是乱」。B 既是精修参数（第 10 章）</text>
+  <text x="60" y="948.5" font-size="10" fill="#64748b">也是模型质量的温度计（第 11 章）。</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、|F|<tspan dy="-6.5" font-size="13.7">2</tspan><tspan dy="6.5"> 与电子密度：傅里叶对偶与相位问题</tspan></text>
+  <rect x="730" y="610" width="240" height="200" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <ellipse cx="810" cy="680" rx="44" ry="36" fill="#ede9fe" fill-opacity="0.25" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="810" cy="680" rx="31.68" ry="25.919999999999998" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="810" cy="680" rx="19.8" ry="16.2" fill="#ede9fe" fill-opacity="0.85" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="900" cy="668" rx="30" ry="26" fill="#ede9fe" fill-opacity="0.25" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="900" cy="668" rx="21.599999999999998" ry="18.72" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="900" cy="668" rx="13.5" ry="11.700000000000001" fill="#ede9fe" fill-opacity="0.85" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="872" cy="748" rx="34" ry="26" fill="#ede9fe" fill-opacity="0.25" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="872" cy="748" rx="24.48" ry="18.72" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="872" cy="748" rx="15.3" ry="11.700000000000001" fill="#ede9fe" fill-opacity="0.85" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="790" cy="745" rx="20" ry="17" fill="#ede9fe" fill-opacity="0.25" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="790" cy="745" rx="14.399999999999999" ry="12.24" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.2"/>
+  <ellipse cx="790" cy="745" rx="9" ry="7.65" fill="#ede9fe" fill-opacity="0.85" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="850" y="796" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">ρ(x)＝(1/V)·Σ<tspan dy="2.1" font-size="6.8">h</tspan><tspan dy="-2.1">F(h)·e</tspan><tspan dy="-3.2" font-size="6.8">−2πih·x</tspan></text>
+  <text x="850" y="826" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">晶胞内电子密度 ρ(x)（实空间）</text>
+  <text x="1015" y="664" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">傅里叶变换</text>
+  <line x1="985" y1="690" x2="1045" y2="690" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="1045" y1="714" x2="985" y2="714" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="1015" y="748" font-size="9" fill="#64748b" text-anchor="middle">互为变换对</text>
+  <circle cx="1070" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1070" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1070" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1070" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1070" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1114" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1114" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1114" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1114" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1114" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1158" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1158" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1158" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1158" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1158" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1202" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1202" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1202" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1202" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1202" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1246" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1246" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1246" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1246" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1246" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1290" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1290" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1290" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1290" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1290" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1334" cy="630" r="2.6" fill="#64748b"/>
+  <circle cx="1334" cy="670" r="2.6" fill="#64748b"/>
+  <circle cx="1334" cy="710" r="2.6" fill="#64748b"/>
+  <circle cx="1334" cy="750" r="2.6" fill="#64748b"/>
+  <circle cx="1334" cy="790" r="2.6" fill="#64748b"/>
+  <circle cx="1158" cy="710" r="4.5" fill="#1e293b"/>
+  <text x="1158" y="694" font-size="8" fill="#64748b" text-anchor="middle">原点</text>
+  <line x1="1158" y1="710" x2="1070" y2="630" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="1158" y1="710" x2="1246" y2="790" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <line x1="1158" y1="710" x2="1290" y2="630" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="1096" y="618" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">F(h)</text>
+  <text x="1252" y="802" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">F(−h)</text>
+  <text x="1332" y="690" font-size="8.5" fill="#dc2626" text-anchor="end" font-weight="700">模相等</text>
+  <text x="1200" y="826" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">倒易格点上的 F(h)：箭长＝|F|，方向＝相位</text>
+  <rect x="730" y="846" width="300" height="96" rx="9" fill="#ede9fe" fill-opacity="0.45" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="744" y="868" font-size="11.5" fill="#4c1d95" font-weight="700">相位问题</text>
+  <text x="744" y="886" font-size="9.5" fill="#475569">探测器只记录 I ∝ |F|<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">：开方得振幅，</tspan></text>
+  <text x="744" y="899" font-size="9.5" fill="#475569">相位在记录过程中天然丢失——分子置换、</text>
+  <text x="744" y="912" font-size="9.5" fill="#475569">同晶置换与反常散射三条路赎回相位（第 7、8 章）。</text>
+  <rect x="1050" y="846" width="296" height="96" rx="9" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1064" y="868" font-size="11.5" fill="#075985" font-weight="700">弗里德定律</text>
+  <text x="1064" y="886" font-size="9.5" fill="#475569">常规波长下 F(h)＝F*(−h)、模相等——h 与 −h 强度相等，</text>
+  <text x="1064" y="899" font-size="9.5" fill="#475569">衍射图自带中心对称；吸收边附近 f″ 将其打破，</text>
+  <text x="1064" y="912" font-size="9.5" fill="#475569">Bijvoet 差是 SAD/MAD 信号源（第 8 章）。</text>
+  <text x="730" y="958" font-size="9.5" fill="#64748b">求和收支：到 2 Å 约 5×10<tspan dy="-3.2" font-size="6.8">5</tspan><tspan dy="3.2"> 项、到 1 Å 约 4×10</tspan><tspan dy="-3.2" font-size="6.8">6</tspan><tspan dy="3.2"> 项——每缺一项，图上就少一块系统性空位（完整度的傅里叶依据，第 6 章）。</tspan></text>
+</svg>

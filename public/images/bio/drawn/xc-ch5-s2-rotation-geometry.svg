@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">旋转法与衍射几何设计：Δφ、范围、距离与 PAD</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">Δφ 0.1–1.0°：a_max 150 Å 角间距 0.76°、300 Å 得 0.38°；P1 转 180°、高对称群 30–90°；D 100/150/200 mm 得 d_min 1.31/1.72/2.2 Å</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、旋转法：倒易点阵绕转轴扫过反射球</text>
+  <circle cx="210" cy="280" r="112" fill="#e0f2fe" fill-opacity="0.28" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="303" cy="346" r="2.6" fill="#64748b"/>
+  <circle cx="303" cy="324" r="2.6" fill="#64748b"/>
+  <circle cx="303" cy="302" r="2.6" fill="#64748b"/>
+  <circle cx="303" cy="280" r="2.6" fill="#64748b"/>
+  <circle cx="303" cy="258" r="2.6" fill="#64748b"/>
+  <circle cx="303" cy="236" r="2.6" fill="#64748b"/>
+  <circle cx="303" cy="214" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="346" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="324" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="302" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="280" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="258" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="236" r="2.6" fill="#64748b"/>
+  <circle cx="281" cy="214" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="346" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="324" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="302" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="280" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="258" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="236" r="2.6" fill="#64748b"/>
+  <circle cx="259" cy="214" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="346" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="324" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="302" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="280" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="258" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="236" r="2.6" fill="#64748b"/>
+  <circle cx="237" cy="214" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="346" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="324" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="302" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="280" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="258" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="236" r="2.6" fill="#64748b"/>
+  <circle cx="215" cy="214" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="346" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="324" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="302" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="280" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="258" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="236" r="2.6" fill="#64748b"/>
+  <circle cx="193" cy="214" r="2.6" fill="#64748b"/>
+  <path d="M99.7,299.4 A112,112 0 0 1 99.7,260.6" fill="none" opacity="0.4" stroke="#059669" stroke-width="9"/>
+  <path d="M98.1,283.9 A112,112 0 0 1 98.1,276.1" fill="none" stroke="#dc2626" stroke-width="5"/>
+  <text x="46" y="318" font-size="9" fill="#dc2626" font-weight="700">一帧 Δφ 弧带</text>
+  <circle cx="102" cy="251" r="4.5" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="102" cy="309" r="4.5" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <line x1="210" y1="280" x2="88" y2="245" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="128" y="238" font-size="9.5" fill="#831843" font-weight="700">衍射束</text>
+  <polygon points="325,280 102,251 102,309" fill="#fce7f3" fill-opacity="0.4"/>
+  <line x1="325" y1="280" x2="102" y2="251" stroke="#be123c" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="325" y1="280" x2="102" y2="309" stroke="#be123c" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="46" y="376" font-size="9.5" fill="#be123c">mosaic 扇形（夸大示意）：φ 向角宽 ≈ mosaicity + 束发散</text>
+  <line x1="36" y1="280" x2="202" y2="280" stroke="#d97706" stroke-width="2.6" marker-end="url(#arr-warn)"/>
+  <text x="104" y="268" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">入射束</text>
+  <text x="210" y="304" font-size="9.5" fill="#475569" text-anchor="middle">O 晶体（球心）</text>
+  <circle cx="325" cy="280" r="5" fill="#dc2626"/>
+  <text x="338" y="266" font-size="10" fill="#dc2626" font-weight="700">倒易原点 L</text>
+  <line x1="325" y1="168" x2="325" y2="392" stroke="#6d28d9" stroke-width="2" stroke-dasharray="9 5"/>
+  <circle cx="325" cy="160" r="8" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="320" y1="155" x2="330" y2="165" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="320" y1="165" x2="330" y2="155" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="342" y="164" font-size="10" fill="#4c1d95" font-weight="700">转轴 φ（测角仪主轴）</text>
+  <polygon points="325,192 318,254 332,254" fill="#fee2e2" fill-opacity="0.6"/>
+  <polygon points="325,368 318,306 332,306" fill="#fee2e2" fill-opacity="0.6"/>
+  <circle cx="325" cy="220" r="2.4" fill="#94a3b8"/>
+  <circle cx="325" cy="340" r="2.4" fill="#94a3b8"/>
+  <text x="338" y="292" font-size="9.5" fill="#dc2626">盲区锥：转轴附近格点永远贴不上球面；</text>
+  <text x="338" y="305.5" font-size="9.5" fill="#dc2626">高对称群靠等效反射补上，</text>
+  <text x="338" y="319" font-size="9.5" fill="#dc2626">P1 大晶胞须第二取向再收一段。</text>
+  <text x="46" y="402" font-size="9.5" fill="#475569">Arndt 与 Wonacott 1970 年代确立旋转法：把「同时衍射」切成每帧少量的流水作业。同步辐射 180° 以 Δφ=0.2° 切 900 帧、</text>
+  <text x="46" y="415" font-size="9.5" fill="#475569">每帧 0.05–0.2 s、近乎零等待读出，整场约 2–5 分钟；家用源以 0.5–1.0° 宽帧配 30–60 s 曝光，180° 要两三个小时。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、每帧转角 Δφ：在两种失败之间走钢丝</text>
+  <rect x="795.524972" y="159.075" width="168.950056" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="880" y="171.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">格点角间距 ≈ (d<tspan dy="2.3" font-size="7.6">min</tspan><tspan dy="-2.3">/a</tspan><tspan dy="2.3" font-size="7.6">max</tspan><tspan dy="-2.3">)×57.3°</tspan></text>
+  <rect x="1068.993325" y="159.075" width="190.01335" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1164" y="171.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">反射 φ 向角宽 ≈ mosaicity + 束发散</text>
+  <rect x="726" y="192" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="219.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">a<tspan dy="2.5" font-size="8.3">max</tspan></text>
+  <rect x="806" y="192" width="72" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="842" y="219.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">d<tspan dy="2.5" font-size="8.3">min</tspan></text>
+  <rect x="878" y="192" width="92" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="219.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">格点角间距</text>
+  <rect x="970" y="192" width="128" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1034" y="219.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">可用 Δφ</text>
+  <rect x="726" y="236" width="80" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="255" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">150 Å</text>
+  <rect x="806" y="236" width="72" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="842" y="255" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">2.0 Å</text>
+  <rect x="878" y="236" width="92" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="255" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.76°</text>
+  <rect x="970" y="236" width="128" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1034" y="255" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.2–0.3°</text>
+  <rect x="726" y="263" width="372" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="263" width="80" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="766" y="282" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">300 Å</text>
+  <rect x="806" y="263" width="72" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="842" y="282" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">2.0 Å</text>
+  <rect x="878" y="263" width="92" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="924" y="282" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 0.38°</text>
+  <rect x="970" y="263" width="128" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1034" y="282" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">0.1–0.15°</text>
+  <text x="1120" y="198" font-size="10" fill="#475569">常规蛋白晶体取 0.1–1.0°：晶胞大、</text>
+  <text x="1120" y="212" font-size="10" fill="#475569">mosaicity 大或波长长时切窄（0.1–0.3°），</text>
+  <text x="1120" y="226" font-size="10" fill="#475569">家用源小晶胞可放宽到 0.5–1.0°。</text>
+  <text x="1120" y="240" font-size="10" fill="#475569">大镶嵌度反而要更窄的转角——斑点在 φ 方向的角宽已经很大，</text>
+  <text x="1120" y="254" font-size="10" fill="#475569">再叠加大转角只会糊成一片。</text>
+  <text x="1120" y="288" font-size="10" fill="#475569">部分反射占比近似等于 mosaicity 与帧宽之比：</text>
+  <text x="1120" y="302" font-size="10" fill="#475569">0.15° 镶嵌配 0.2° 帧宽，约四分之三反射跨帧；</text>
+  <text x="1120" y="316" font-size="10" fill="#475569">帧宽翻倍占比约减半，但斑点重叠风险同步上升。</text>
+  <rect x="730" y="300" width="120" height="64" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="790" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">帧 1</text>
+  <rect x="850" y="300" width="120" height="64" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="910" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">帧 2</text>
+  <rect x="970" y="300" width="120" height="64" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1030" y="292" font-size="9.5" fill="#64748b" text-anchor="middle">帧 3</text>
+  <line x1="730" y1="350" x2="1090" y2="350" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="790,350 820,320 850,310 880,320 910,350" fill="#fce7f3" fill-opacity="0.5"/>
+  <path d="M790,350 C795.0,345.0 810.0,326.7 820,320 C830.0,313.3 840.0,310.0 850,310 C860.0,310.0 870.0,313.3 880,320 C890.0,326.7 905.0,345.0 910,350" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <polygon points="985,350 1007,328 1030,320 1053,328 1075,350" fill="#d1fae5" fill-opacity="0.5"/>
+  <path d="M985,350 C988.7,346.3 999.5,333.0 1007,328 C1014.5,323.0 1022.3,320.0 1030,320 C1037.7,320.0 1045.5,323.0 1053,328 C1060.5,333.0 1071.3,346.3 1075,350" fill="none" stroke="#059669" stroke-width="2.6"/>
+  <line x1="820" y1="372" x2="880" y2="372" stroke="#be123c" stroke-width="1.4" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="850" y="386" font-size="9" fill="#be123c" text-anchor="middle">φ 向角宽</text>
+  <line x1="970" y1="372" x2="1090" y2="372" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="1030" y="386" font-size="9" fill="#475569" text-anchor="middle">帧宽 Δφ</text>
+  <rect x="791.5" y="399.5" width="117" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="850" y="411.6" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">部分反射：跨两帧拼合</text>
+  <rect x="976.65" y="399.5" width="106.7" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1030" y="411.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">整帧落位：一帧收全</text>
+  <rect x="30" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、光路几何：探测器距离、2θ 偏移与挡板</text>
+  <rect x="64" y="536" width="8" height="48" fill="#475569"/>
+  <rect x="88" y="536" width="8" height="48" fill="#475569"/>
+  <text x="80" y="600" font-size="9" fill="#475569" text-anchor="middle">光阑</text>
+  <line x1="20" y1="560" x2="236" y2="560" stroke="#d97706" stroke-width="2.6" marker-end="url(#arr-warn)"/>
+  <text x="122" y="548" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">X 射线</text>
+  <rect x="240" y="552" width="16" height="16" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="248" y1="506" x2="248" y2="614" stroke="#6d28d9" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <circle cx="248" cy="500" r="7" fill="#ffffff" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="244" y1="496" x2="252" y2="504" stroke="#6d28d9" stroke-width="1.4"/>
+  <line x1="244" y1="504" x2="252" y2="496" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="262" y="504" font-size="9.5" fill="#4c1d95" font-weight="700">转轴 φ</text>
+  <circle cx="286" cy="560" r="7" fill="#1e293b"/>
+  <text x="286" y="588" font-size="9" fill="#475569" text-anchor="middle">挡板</text>
+  <rect x="430" y="470" width="14" height="180" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <text x="437" y="460" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">D = 100 mm</text>
+  <line x1="256" y1="556" x2="430" y2="470" stroke="#be185d" stroke-width="1.5"/>
+  <line x1="256" y1="564" x2="430" y2="650" stroke="#be185d" stroke-width="1.5"/>
+  <text x="352" y="516" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">2θ<tspan dy="2.2" font-size="7.2">max</tspan></text>
+  <text x="437" y="672" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">可及 1.31 Å</text>
+  <rect x="612" y="470" width="14" height="180" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="619" y="460" font-size="10" fill="#64748b" text-anchor="middle">D = 200 mm（虚线）</text>
+  <line x1="256" y1="552" x2="612" y2="470" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="256" y1="568" x2="612" y2="650" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="619" y="672" font-size="10" fill="#64748b" text-anchor="middle" font-weight="700">2.2 Å</text>
+  <path d="M 412,472 Q 421,472 421,481 M 421,639 Q 421,648 412,648" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="421" y1="481" x2="421" y2="639" stroke="#64748b" stroke-width="1.7"/>
+  <text x="403" y="560" font-size="14" fill="#64748b" text-anchor="end" font-weight="600">x<tspan dy="3.1" font-size="10.1">max</tspan><tspan dy="-3.1">（有效半宽）</tspan></text>
+  <text x="226" y="688" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">λ = 1.0 Å、有效半宽 100 mm 的算例</text>
+  <rect x="56" y="700" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="96" y="727.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">D（mm）</text>
+  <rect x="136" y="700" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="191" y="727.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">2θ<tspan dy="2.5" font-size="8.3">max</tspan></text>
+  <rect x="246" y="700" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="321" y="727.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">d<tspan dy="2.5" font-size="8.3">min</tspan><tspan dy="-2.5">（Å）</tspan></text>
+  <rect x="56" y="744" width="80" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="96" y="763" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">100</text>
+  <rect x="136" y="744" width="110" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="191" y="763" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">45.0°</text>
+  <rect x="246" y="744" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="321" y="763" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">1.31</text>
+  <rect x="56" y="771" width="340" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="56" y="771" width="80" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="96" y="790" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">150</text>
+  <rect x="136" y="771" width="110" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="191" y="790" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">33.7°</text>
+  <rect x="246" y="771" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="321" y="790" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">1.72</text>
+  <rect x="56" y="798" width="80" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="96" y="817" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">200</text>
+  <rect x="136" y="798" width="110" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="191" y="817" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">26.6°</text>
+  <rect x="246" y="798" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="321" y="817" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">2.2</text>
+  <text x="420" y="700" font-size="10" fill="#475569">距离越近可及分辨率越高，代价是斑点更密、</text>
+  <text x="420" y="714" font-size="10" fill="#475569">重叠风险上升——晶胞大就退远，要高分辨率就逼近。</text>
+  <text x="420" y="744" font-size="10" fill="#475569">2θ 偏移（0–30°）：把探测器中心挪离直射点，</text>
+  <text x="420" y="758" font-size="10" fill="#475569">等效把高角区搬进板内、抬升可及分辨率；</text>
+  <text x="420" y="772" font-size="10" fill="#475569">代价是最低分辨率反射落到板外——低角缺失伤电子密度。</text>
+  <text x="420" y="806" font-size="10" fill="#475569">挡板：截住直射光保护探测器；</text>
+  <text x="420" y="820" font-size="10" fill="#475569">影子边缘决定能收到的最低分辨率——被挡项一旦进入 20–30 Å 一带，</text>
+  <text x="420" y="834" font-size="10" fill="#475569">低频「形体」的原料就开始紧缺，</text>
+  <text x="420" y="848" font-size="10" fill="#475569">试收照片上量影子边缘即可预警。</text>
+  <text x="56" y="856" font-size="10" fill="#475569">像素底数：172 μm 像素在 100 mm 处对应约 0.1°/像素，质心可定到十分之一像素（约 0.01°）——这是指标化做到亚像素的物理底数。</text>
+  <text x="56" y="900" font-size="10" fill="#64748b">κ（kappa）几何三轴测角仪可任设初始取向，让高分辨率壳层落入探测器覆盖、避开遮挡与坏区；单 φ 轴机型只能绕一根轴转，</text>
+  <text x="56" y="914" font-size="10" fill="#64748b">P1 大晶胞常以第二取向补盲区——「两段拼一套」是常规操作。</text>
+  <rect x="710" y="452" width="660" height="490" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="474.84" font-size="19" fill="#475569" font-weight="700">四、总旋转范围、inverse beam 与 PAD 过载斑</text>
+  <text x="726" y="486" font-size="11.5" fill="#1e293b" font-weight="700">总旋转范围：</text>
+  <rect x="826.01735" y="473.075" width="63.9653" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="858" y="485.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">P1：180°</text>
+  <rect x="981.9281" y="473.075" width="106.1438" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1035" y="485.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">高对称群：30–90°</text>
+  <rect x="1164.74" y="473.075" width="100.52" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1215" y="485.78" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="700">反常不享对称便利</text>
+  <text x="726" y="524" font-size="10.5" fill="#1e293b" font-weight="700">inverse beam：180° 对顶位成对收 Bijvoet</text>
+  <line x1="736" y1="580" x2="1000" y2="580" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <circle cx="760" cy="580" r="4" fill="#0369a1"/>
+  <text x="760" y="602" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">正</text>
+  <text x="760" y="568" font-size="8.5" fill="#64748b" text-anchor="middle">φ</text>
+  <circle cx="800" cy="580" r="4" fill="#dc2626"/>
+  <text x="800" y="602" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">反</text>
+  <text x="800" y="568" font-size="8.5" fill="#64748b" text-anchor="middle">φ+180°</text>
+  <circle cx="840" cy="580" r="4" fill="#0369a1"/>
+  <text x="840" y="602" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">正</text>
+  <text x="840" y="568" font-size="8.5" fill="#64748b" text-anchor="middle">φ+Δ</text>
+  <circle cx="880" cy="580" r="4" fill="#dc2626"/>
+  <text x="880" y="602" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">反</text>
+  <text x="880" y="568" font-size="8.5" fill="#64748b" text-anchor="middle">φ+Δ+180°</text>
+  <circle cx="920" cy="580" r="4" fill="#0369a1"/>
+  <text x="920" y="602" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">正</text>
+  <text x="920" y="568" font-size="8.5" fill="#64748b" text-anchor="middle">φ+2Δ</text>
+  <circle cx="960" cy="580" r="4" fill="#dc2626"/>
+  <text x="960" y="602" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">反</text>
+  <text x="960" y="568" font-size="8.5" fill="#64748b" text-anchor="middle">φ+2Δ+180°</text>
+  <path d="M760,576 A20,16 0 0 1 800,576" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <path d="M840,576 A20,16 0 0 1 880,576" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="906" y="550" font-size="9" fill="#dc2626" font-weight="700">F(h) 与 F(−h) 配对</text>
+  <text x="726" y="624" font-size="9.5" fill="#475569">正位收一帧，随即把 φ 加 180° 收对帧，「正、反、正、</text>
+  <text x="726" y="637.5" font-size="9.5" fill="#475569">反」交替推进——两员在几乎相同的通量、</text>
+  <text x="726" y="651" font-size="9.5" fill="#475569">吸收与损伤状态下先后落上反射球，做差时漂移大多抵消；</text>
+  <text x="726" y="664.5" font-size="9.5" fill="#475569">代价是角度预算翻倍，只在反常方案启用。</text>
+  <text x="1030" y="524" font-size="11" fill="#1e293b" font-weight="700">PAD 像素阵列探测器（当代标配）</text>
+  <text x="1030" y="544" font-size="10" fill="#475569">PILATUS 与 EIGER 以硅像素阵列逐光子计数：无读出噪声与暗电流、</text>
+  <text x="1030" y="558" font-size="10" fill="#475569">点扩散极小、帧率覆盖微秒到毫秒，EIGER 支持无死时间连续读出。</text>
+  <text x="1030" y="596" font-size="11" fill="#dc2626" font-weight="700">过载斑（saturated pixel）</text>
+  <text x="1030" y="616" font-size="10" fill="#475569">单像素单帧可计数上限有限，超限像素强度不可信。软件侧：</text>
+  <text x="1030" y="630" font-size="10" fill="#475569">剔除过载像素后按标准剖面外推补全，或丢弃该反射指望冗余补位；</text>
+  <text x="1030" y="644" font-size="10" fill="#475569">硬件侧：插衰减器减通量、降管流、拉远距离。</text>
+  <text x="1030" y="658" font-size="10" fill="#475569">低角强反射承载低频结构信息，一丢了之有代价；</text>
+  <text x="1030" y="672" font-size="10" fill="#475569">若过载清单显示低角壳层成片过载，正确动作是回头调档重收。</text>
+  <text x="726" y="686" font-size="10.5" fill="#1e293b" font-weight="700">两段式收数（衰减器铝箔 20–100 μm、每档衰减两三倍）</text>
+  <rect x="726" y="700" width="170" height="44" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="811" y="717" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">① 重衰减收 3–5 帧</text>
+  <text x="811" y="734" font-size="9" fill="#475569" text-anchor="middle">保住低角强斑</text>
+  <line x1="898" y1="722" x2="918" y2="722" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="922" y="700" width="180" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1012" y="717" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">② 撤衰减收正式数据</text>
+  <text x="1012" y="734" font-size="9" fill="#475569" text-anchor="middle">后段按缩放比例拼回</text>
+  <line x1="1104" y1="722" x2="1124" y2="722" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1128" y="700" width="226" height="44" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1241" y="717" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">③ 两段接成一套完整数据</text>
+  <text x="1241" y="734" font-size="9" fill="#475569" text-anchor="middle">低角强斑与高角弱斑各得其所</text>
+  <text x="726" y="768" font-size="9.5" fill="#64748b">策略软件（MOSFLM 的 strategy 模块、BEST）在收数前预测完整度、重叠与剂量分配——「先试收再后悔」变成「先计算再动手」。</text>
+  <rect x="726" y="782" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="791" y="809.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="856" y="782" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="809.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">典型范围</text>
+  <rect x="976" y="782" width="366" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1159" y="809.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">主要影响</text>
+  <rect x="726" y="826" width="130" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="791" y="845.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">每帧转角 Δφ</text>
+  <rect x="856" y="826" width="120" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="845.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">0.1–1.0°</text>
+  <rect x="976" y="826" width="366" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1159" y="845.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">大则弧向糊叠，小则部分反射多</text>
+  <rect x="726" y="854" width="616" height="28" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="854" width="130" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="791" y="873.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">总旋转范围</text>
+  <rect x="856" y="854" width="120" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="873.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">30–180°</text>
+  <rect x="976" y="854" width="366" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1159" y="873.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">随空间群对称性与反常需求而定</text>
+  <rect x="726" y="882" width="130" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="791" y="901.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">探测器距离</text>
+  <rect x="856" y="882" width="120" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="901.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">60–200 mm</text>
+  <rect x="976" y="882" width="366" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1159" y="901.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">近则分辨率高、斑点密</text>
+  <rect x="726" y="910" width="616" height="28" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="726" y="910" width="130" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="791" y="929.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">2θ 偏移</text>
+  <rect x="856" y="910" width="120" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="916" y="929.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">0–30°</text>
+  <rect x="976" y="910" width="366" height="28" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1159" y="929.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">抬高可及分辨率、牺牲低角</text>
+</svg>

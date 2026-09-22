@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect } from 'react'
 import { useAppStore } from '@/lib/store'
 import {
   subjects,
@@ -25,13 +25,19 @@ import { CheckCircle2, ChevronLeft, ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function SubjectsView() {
-  const [activeSubject, setActiveSubject] = useState<SubjectId | null>(null)
+  const activeSubject = useAppStore((s) => s.subjectsDetail)
+  const openSubject = useAppStore((s) => s.openSubject)
+
+  // 学科列表与详情互为「新页面」：切换时回到顶部（视图重挂载时亦触发）
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [activeSubject])
 
   if (activeSubject) {
-    return <SubjectDetail subjectId={activeSubject} onBack={() => setActiveSubject(null)} />
+    return <SubjectDetail subjectId={activeSubject} onBack={() => openSubject(null)} />
   }
 
-  return <SubjectGrid onSelect={setActiveSubject} />
+  return <SubjectGrid onSelect={openSubject} />
 }
 
 function SubjectGrid({ onSelect }: { onSelect: (id: SubjectId) => void }) {

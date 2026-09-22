@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">均匀化精修与后处理：从颗粒库到密度图</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">金标准半图独立精修加FSC0.143（Scheres2012）防过拟合；贝叶斯抛光（Zivanov2019）与逐颗粒CTF／高阶像差精修（Zivanov2020）收回二级误差；multi-body</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">分刚体（Nakane2018）；后处理三件套收尾</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、金标准精修：过拟合的防线</text>
+  <rect x="60" y="180" width="130" height="40" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="125" y="204" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">颗粒库（随机对半）</text>
+  <line x1="105" y1="224" x2="85" y2="256" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="145" y1="224" x2="165" y2="256" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="40" y="260" width="150" height="118" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="115" y="284" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">半图 A</text>
+  <ellipse cx="115" cy="330" rx="34" ry="26" fill="#ffffff" stroke="#0369a1" stroke-width="2"/>
+  <text x="115" y="362" font-size="9.5" fill="#64748b" text-anchor="middle">独立参考 · 独立迭代</text>
+  <rect x="210" y="260" width="150" height="118" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="285" y="284" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">半图 B</text>
+  <ellipse cx="285" cy="330" rx="34" ry="26" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="285" y="362" font-size="9.5" fill="#64748b" text-anchor="middle">独立参考 · 独立迭代</text>
+  <line x1="190" y1="319" x2="210" y2="319" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="200" y="300" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">FSC</text>
+  <rect x="64.03190000000001" y="399.075" width="271.9362" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="200" y="411.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">半图间 FSC 以 0.143 报告分辨率（Scheres 2012）</text>
+  <text x="400" y="196" font-size="10.5" fill="#475569">两半独立演化：任何一半的过拟合都不会被另一半承认。</text>
+  <text x="400" y="211" font-size="10.5" fill="#475569">精修循环本身是取向、位移与参考的联合最大后验估计；</text>
+  <text x="400" y="226" font-size="10.5" fill="#475569">角度局部化搜索与参考低通约束，防高频噪声混入参考。</text>
+  <rect x="400" y="286" width="270" height="96" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <text x="535" y="308" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">高频噪声替代检验（Scheres 与 Chen 2013）</text>
+  <text x="418" y="330" font-size="9.5" fill="#475569">把两半数据的高频替换为噪声再跑流程：</text>
+  <text x="418" y="352" font-size="9.5" fill="#991b1b">分辨率若不跌——原高频「信号」本是拟合的幽灵</text>
+  <text x="418" y="372" font-size="9.5" fill="#64748b">该检验已并入多个程序的报告项</text>
+  <rect x="226.41895" y="461.075" width="227.16210000000004" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="340" y="473.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">半图与 mask 修正 FSC 为 EMDB 投稿硬标准</text>
+  <text x="350" y="520" font-size="10" fill="#64748b" text-anchor="middle">金标准只防过拟合，不修坏数据——微图与颗粒库的质量仍是上限</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、逐颗粒的物理精修：抛光与像差</text>
+  <text x="730" y="184" font-size="11.5" fill="#1e293b" font-weight="700">贝叶斯抛光（Zivanov 2019）：</text>
+  <rect x="730" y="198" width="300" height="66" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <rect x="742" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="758" cy="231" r="4.5" fill="#075985"/>
+  <rect x="782" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="803.0488259088473" cy="231" r="4.5" fill="#075985"/>
+  <rect x="822" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="843.455784560954" cy="231" r="4.5" fill="#075985"/>
+  <rect x="862" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="878.8467200483592" cy="231" r="4.5" fill="#075985"/>
+  <rect x="902" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="913.4591850281524" cy="231" r="4.5" fill="#075985"/>
+  <rect x="942" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="952.2464543520211" cy="231" r="4.5" fill="#075985"/>
+  <rect x="982" y="212" width="32" height="38" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.1"/>
+  <circle cx="996.3235070108065" cy="231" r="4.5" fill="#075985"/>
+  <polyline points="758,214 798,244 838,222 878,240 918,218 958,238" fill="none" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="730" y="284" font-size="10" fill="#475569">以概率模型描述每个颗粒的轨迹（全局加局部、含速度平滑先验），把电影帧按后验最优加权再平均——等效于给每个颗粒量身定制的运动校正。</text>
+  <text x="730" y="330" font-size="11.5" fill="#1e293b" font-weight="700">逐颗粒 CTF 与高阶像差精修（Zivanov 等 2020）：</text>
+  <rect x="662" y="351.5" width="256" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="790" y="363.6" font-size="10" fill="#4c1d95" text-anchor="middle">逐颗粒重估欠焦（网格箔面弯曲，同图可差数十纳米）</text>
+  <rect x="1112.4" y="351.5" width="115.2" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1170" y="363.6" font-size="10" fill="#4c1d95" text-anchor="middle">束倾 · 球差 · 箔面曲率</text>
+  <text x="730" y="392" font-size="10" fill="#475569">对 2 Å 以内的目标，这些「二级参数」升级为一级瓶颈——误差不除，图谱系统性发糊。</text>
+  <rect x="749.8720000000001" y="419.075" width="260.256" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="880" y="431.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">局部聚焦精修：mask 内重估取向，救回柔性子结构</text>
+  <text x="1040" y="520" font-size="10" fill="#64748b" text-anchor="middle">物理参数精修与贝叶斯框架互补：一个修「样品怎么动」，一个修「光怎么弯」</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、multi-body 精修：分刚体、拼系综</text>
+  <ellipse cx="200" cy="688" rx="78" ry="60" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <path d="M 200,632 A 78,60 0 0 0 200,744" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <ellipse cx="170" cy="688" rx="40" ry="44" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <ellipse cx="232" cy="688" rx="32" ry="36" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="170" y="690" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">刚体 1</text>
+  <text x="232" y="690" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">刚体 2</text>
+  <line x1="150" y1="660" x2="120" y2="636" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <line x1="250" y1="716" x2="280" y2="740" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="200" y="772" font-size="9.5" fill="#64748b" text-anchor="middle">如核糖体大小亚基、聚合酶模块</text>
+  <text x="330" y="630" font-size="10.5" fill="#475569">multi-body 精修（Nakane 2018）：把复合物拆成若干刚体，</text>
+  <text x="330" y="645" font-size="10.5" fill="#475569">每个刚体独立精修取向与平移，</text>
+  <text x="330" y="660" font-size="10.5" fill="#475569">再拼回整体——既提升各刚体内的分辨率，</text>
+  <text x="330" y="675" font-size="10.5" fill="#475569">又给出刚体间相对运动的系综。</text>
+  <rect x="360" y="680" width="290" height="120" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="360" y1="800" x2="360" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="822" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="650" y1="800" x2="650" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="650" y="822" font-size="13" fill="#64748b" text-anchor="middle">颗粒序号</text>
+  <line x1="354" y1="740" x2="360" y2="740" stroke="#475569" stroke-width="1.8"/>
+  <text x="350" y="744" font-size="13" fill="#64748b" text-anchor="end">+σ</text>
+  <line x1="354" y1="800" x2="360" y2="800" stroke="#475569" stroke-width="1.8"/>
+  <text x="350" y="804" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="354" y1="686" x2="360" y2="686" stroke="#475569" stroke-width="1.8"/>
+  <text x="350" y="690" font-size="13" fill="#64748b" text-anchor="end">−σ</text>
+  <text x="505" y="668" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">主成分分析提取相对运动（PC1）</text>
+  <path d="M360,740 C364.8,737.6 379.3,724.6 389,725.6 C398.7,726.6 408.3,748.6 418,746 C427.7,743.4 437.3,707.0 447,710 C456.7,713.0 466.3,761.0 476,764 C485.7,767.0 495.3,729.0 505,728 C514.7,727.0 524.3,760.4 534,758 C543.7,755.6 553.3,714.6 563,713.6 C572.7,712.6 582.3,749.2 592,752 C601.7,754.8 611.3,732.0 621,730.4 C630.7,728.8 645.2,740.4 650,742.4" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <text x="505" y="852" font-size="9.5" fill="#64748b" text-anchor="middle">刚体间相对运动坐标化作连续变量（第 12 章连续构象分析的伏笔）</text>
+  <rect x="93.32599999999998" y="899.5" width="213.34800000000004" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="200" y="911.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">各刚体分辨率提升 + 相对运动系综一并到手</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、后处理三件套与投稿自查</text>
+  <rect x="850" y="642" width="300" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="850" y1="772" x2="850" y2="778" stroke="#475569" stroke-width="1.8"/>
+  <text x="850" y="794" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="1150" y1="772" x2="1150" y2="778" stroke="#475569" stroke-width="1.8"/>
+  <text x="1150" y="794" font-size="13" fill="#64748b" text-anchor="middle">频率 g</text>
+  <line x1="844" y1="655" x2="850" y2="655" stroke="#475569" stroke-width="1.8"/>
+  <text x="840" y="659" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <line x1="844" y1="759" x2="850" y2="759" stroke="#475569" stroke-width="1.8"/>
+  <text x="840" y="763" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <text x="1000" y="630" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">B 因子锐化：振幅谱被拉平</text>
+  <path d="M850.0,645.9 L856.0,652.9 L862.0,659.4 L868.0,665.6 L874.0,671.4 L880.0,676.9 L886.0,682.1 L892.0,686.9 L898.0,691.5 L904.0,695.8 L910.0,699.9 L916.0,703.7 L922.0,707.3 L928.0,710.7 L934.0,713.9 L940.0,716.9 L946.0,719.7 L952.0,722.4 L958.0,724.9 L964.0,727.2 L970.0,729.5 L976.0,731.6 L982.0,733.6 L988.0,735.4 L994.0,737.2 L1000.0,738.8 L1006.0,740.4 L1012.0,741.8 L1018.0,743.2 L1024.0,744.5 L1030.0,745.7 L1036.0,746.9 L1042.0,748.0 L1048.0,749.0 L1054.0,749.9 L1060.0,750.9 L1066.0,751.7 L1072.0,752.5 L1078.0,753.3 L1084.0,754.0 L1090.0,754.7 L1096.0,755.3 L1102.0,755.9 L1108.0,756.4 L1114.0,757.0 L1120.0,757.5 L1126.0,757.9 L1132.0,758.4 L1138.0,758.8 L1144.0,759.2 L1150.0,759.5" fill="none" stroke="#64748b" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M850.0,658.9 L856.0,660.2 L862.0,661.4 L868.0,662.7 L874.0,663.9 L880.0,665.1 L886.0,666.2 L892.0,667.4 L898.0,668.5 L904.0,669.6 L910.0,670.7 L916.0,671.7 L922.0,672.8 L928.0,673.8 L934.0,674.8 L940.0,675.8 L946.0,676.8 L952.0,677.7 L958.0,678.7 L964.0,679.6 L970.0,680.5 L976.0,681.4 L982.0,682.3 L988.0,683.1 L994.0,684.0 L1000.0,684.8 L1006.0,685.6 L1012.0,686.4 L1018.0,687.2 L1024.0,688.0 L1030.0,688.7 L1036.0,689.5 L1042.0,690.2 L1048.0,690.9 L1054.0,691.6 L1060.0,692.3 L1066.0,693.0 L1072.0,693.7 L1078.0,694.3 L1084.0,695.0 L1090.0,695.6 L1096.0,696.2 L1102.0,696.8 L1108.0,697.4 L1114.0,698.0 L1120.0,698.6 L1126.0,699.2 L1132.0,699.7 L1138.0,700.3 L1144.0,700.8 L1150.0,701.3" fill="none" stroke="#059669" stroke-width="2.4"/>
+  <text x="870" y="780" font-size="10" fill="#64748b">锐化前</text>
+  <text x="1080" y="742" font-size="10" fill="#065f46" font-weight="700">锐化后（Rosenthal 与 Henderson 2003）</text>
+  <text x="730" y="620" font-size="10.5" fill="#475569">三件套：B 因子锐化把被包络与平均压平的高频按负温度因子提升；溶剂压平压低 mask 外的溶剂噪声；局部分辨率估计</text>
+  <text x="730" y="635" font-size="10.5" fill="#475569">（blocres 或 RELION）逐区域报告图谱质量。</text>
+  <text x="730" y="816" font-size="11.5" fill="#1e293b" font-weight="700">投稿自查四条：</text>
+  <rect x="823.9625" y="837.075" width="72.075" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="860" y="849.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">半图一致性</text>
+  <rect x="955.41865" y="837.075" width="89.1627" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1000" y="849.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">mask 修正 FSC</text>
+  <rect x="1095.7431" y="837.075" width="88.5138" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1140" y="849.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">模型-图拟合度</text>
+  <rect x="1237.2572" y="837.075" width="85.48559999999999" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1280" y="849.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">分子量 sanity</text>
+  <text x="1040" y="908" font-size="10" fill="#64748b" text-anchor="middle">锐化是「除回」有效传递函数的一部分——过度锐化会把噪声一并抬起来，振幅谱拉平即止</text>
+</svg>

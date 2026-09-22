@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">冷冻电镜总览与负染筛选：两分钟的视频面试</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">单颗粒无需晶体、分子量下限约100kDa；负染以0.5–2%醋酸铀环绕蛋白造负衬度，吸附30–60秒、约2–5分钟完成；分辨率上限约15–20Å且有干燥压平假象；好2D</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">分类类别清晰、视角多样，坏信号聚集/碎片/单一优势视角</text>
+  <rect x="30" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、单颗粒冷冻电镜全流程鸟瞰</text>
+  <rect x="56" y="216" width="92" height="74" rx="8" fill="#0f766e14" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="102" y="244" font-size="11" fill="#0f766e" text-anchor="middle" font-weight="700">样品</text>
+  <text x="60" y="264" font-size="9" fill="#64748b">纯度与均一性</text>
+  <line x1="150" y1="253" x2="164" y2="253" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="166" y="216" width="92" height="74" rx="8" fill="#0369a114" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="212" y="244" font-size="11" fill="#0369a1" text-anchor="middle" font-weight="700">载网玻璃化</text>
+  <text x="170" y="264" font-size="9" fill="#64748b">第 9 章第 2 节</text>
+  <line x1="260" y1="253" x2="274" y2="253" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="276" y="216" width="92" height="74" rx="8" fill="#07598514" stroke="#075985" stroke-width="1.6"/>
+  <text x="322" y="244" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">低剂量成像</text>
+  <text x="280" y="264" font-size="9" fill="#64748b">电影帧收集</text>
+  <line x1="370" y1="253" x2="384" y2="253" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="386" y="216" width="92" height="74" rx="8" fill="#6d28d914" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="432" y="244" font-size="11" fill="#6d28d9" text-anchor="middle" font-weight="700">颗粒挑选</text>
+  <text x="390" y="264" font-size="9" fill="#64748b">模板或深度学习</text>
+  <line x1="480" y1="253" x2="494" y2="253" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="496" y="216" width="92" height="74" rx="8" fill="#4c1d9514" stroke="#4c1d95" stroke-width="1.6"/>
+  <text x="542" y="244" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">2D/3D 分类</text>
+  <text x="500" y="264" font-size="9" fill="#64748b">均一化与取向</text>
+  <line x1="590" y1="253" x2="604" y2="253" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="606" y="216" width="92" height="74" rx="8" fill="#be185d14" stroke="#be185d" stroke-width="1.6"/>
+  <text x="652" y="244" font-size="11" fill="#be185d" text-anchor="middle" font-weight="700">精修与结构</text>
+  <text x="610" y="264" font-size="9" fill="#64748b">第 10 章</text>
+  <rect x="33.784299999999945" y="321.075" width="292.4314000000001" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="180" y="333.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">无需晶体 · 分子量下限约 100 kDa · 大于 300 kDa 更可靠</text>
+  <text x="56" y="372" font-size="10" fill="#475569">时间轴三个坐标：2013 年前后直接电子探测相机普及，2–3 Å 从「奇迹」变「常规」；</text>
+  <text x="56" y="386.5" font-size="10" fill="#475569">2020 年代起 AlphaFold 预测为初始模型提供先验。</text>
+  <text x="56" y="404" font-size="10" fill="#475569">本章节奏：先以负染「面试」样品，合格再上冷冻玻璃化与数据收集；图像处理与三维重构在第 10 章展开。</text>
+  <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、负染：两分钟的视频面试（横截面）</text>
+  <rect x="740" y="236" width="240" height="150" rx="4" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="860" y="226" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">干燥后的铀染料壳（剖面）</text>
+  <circle cx="808.5713311936706" cy="277.6370730404742" r="2.8901748988777403" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="893.1017989600077" cy="244.2621133532375" r="2.4105218858923765" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="944.4913987796754" cy="279.1493802559562" r="3.0880164228379727" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="772.2338345805183" cy="326.3304896298796" r="2.9847202902194114" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="944.3599767740816" cy="354.6778328199871" r="3.498940033838153" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="845.4012616565451" cy="372.06037490908056" r="2.271168490173295" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="917.763553660363" cy="289.8036923590116" r="2.942625183518976" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="747.079108116217" cy="285.7367054820061" r="2.794823692319915" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="889.3082799036056" cy="276.1550283790566" r="2.7285656014457347" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="968.8594510396942" cy="298.63165611121804" r="2.7908596363384275" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="956.4058191739023" cy="251.67448848066851" r="3.13716084798798" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="782.1531421067193" cy="379.20630920678377" r="3.448823504475877" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="944.703274236992" cy="252.51513208309188" r="2.5148868100717663" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="947.7112273527309" cy="350.05932768341154" r="2.8302992718759925" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="786.589286737144" cy="280.93636251380667" r="3.40944357784465" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="935.5356674129143" cy="313.7987241577357" r="2.3726874166633936" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="967.304904891178" cy="293.2279519853182" r="2.313335765898228" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="827.149519152008" cy="271.7728910567239" r="2.087785742478445" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="769.803362775594" cy="357.1498289029114" r="2.889547810982913" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="846.6998333083466" cy="273.38959704712033" r="2.7078552811872214" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="927.9997980389744" cy="316.8434052267112" r="2.83907441329211" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="943.9429373918101" cy="269.65181085746735" r="2.1005857317242773" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="909.4026224464178" cy="375.1283103278838" r="1.8172943615354598" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="964.1272405544296" cy="335.75971772708" r="3.4007875835057346" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="819.1319163497537" cy="286.11495126085356" r="3.3629328589886427" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="928.9488954776898" cy="307.40988123230636" r="2.7539424130227417" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="799.1948104929179" cy="313.27531855972484" r="2.0113435596227647" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="922.426631311886" cy="293.0284747919068" r="2.224961463594809" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="917.4768117759377" cy="376.3350350209512" r="2.2532038567587733" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="793.4485414503142" cy="325.09118126612157" r="2.518361364165321" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="958.1172200590372" cy="274.4071614346467" r="2.0473615505732594" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="823.1095642996952" cy="287.6001921808347" r="2.719137184554711" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="878.6254823133349" cy="375.6246141581796" r="2.3668568369932474" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="796.8590145641938" cy="369.73531938903034" r="3.5358705127146095" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="912.6731098201126" cy="285.5467599038966" r="2.6492140922695397" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="785.5019255420193" cy="373.0009350636974" r="1.9567080151755363" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="927.6251053474844" cy="253.0775379347615" r="1.8183683364652097" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="768.822433215566" cy="312.49599128216505" r="1.8843433830421419" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="911.7868198789656" cy="368.00521737290546" r="3.352500205021352" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="800.3001654045656" cy="271.44213804230094" r="3.0443770594429225" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="891.6402670089155" cy="246.39815257722512" r="3.1760345986112952" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="773.2556035248563" cy="253.6699029309675" r="3.5706984645221382" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="756.9669346809387" cy="362.3101475960575" r="2.1783222765661776" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="861.5609979340807" cy="362.9979904908687" r="3.26998947984539" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="880.7558531370014" cy="358.37174727069214" r="1.9983016837388277" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="965.7727116188034" cy="313.80284452531487" r="1.8307940867263823" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="891.9365404807031" cy="378.70905851898715" r="2.1418525739572942" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="895.5412247302011" cy="264.34482426196337" r="2.6762872803490607" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="911.9644137490541" cy="303.5063228146173" r="3.0333962755277755" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="816.989728028886" cy="265.5270506357774" r="2.2243943172041325" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="970.9304309412837" cy="338.4704967229627" r="3.053936996776611" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="759.2343789273873" cy="305.19407801143825" r="1.8166874283459038" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="758.3193515837193" cy="277.419024375733" r="2.792953007016331" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="914.3306531915441" cy="282.14538194425404" r="3.266845300560817" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="758.5195237305015" cy="327.98429605411366" r="2.6995676580816506" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="958.9254900356755" cy="248.73363162670285" r="3.2186193626839668" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="925.8152249120176" cy="374.59510524151847" r="2.8973415493033827" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="802.0980437649414" cy="340.1260723238811" r="3.379725501174107" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="849.2034630402923" cy="255.40091385832056" r="1.8876182776875794" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="750.8881007665768" cy="249.1130430083722" r="2.09335944741033" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="914.4641764760017" cy="253.60423515504226" r="3.444767308328301" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="964.9835520097986" cy="272.70657840557396" r="1.9564945859368892" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="844.240000506863" cy="255.71961133228615" r="1.990829398110509" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="762.3162178238854" cy="320.86385300848633" r="2.3674738821107892" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="934.5487562976778" cy="314.87361755548045" r="2.593551082815975" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="842.4359998619184" cy="366.98300323355943" r="2.061322444723919" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="778.8338275905699" cy="266.6303919781931" r="2.6841506358236074" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="804.5221078982577" cy="339.7335641765967" r="2.7585447375196965" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="784.5246943347156" cy="328.3474414977245" r="3.021344088669866" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="795.9213043125346" cy="259.4826144427061" r="2.887599464831874" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="913.722072603181" cy="286.0167388529517" r="2.2541294300928714" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="773.17604042124" cy="273.7797430148348" r="2.44329323717393" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="955.2372322939336" cy="344.8387849139981" r="2.804821994807571" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="841.7383936466649" cy="379.702339284122" r="3.4548819574993104" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="767.1510716117918" cy="332.36464893771335" r="2.3980490553192793" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="926.9721721308306" cy="284.75552835687995" r="3.2662906415294857" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="778.3018009606749" cy="254.75142102176324" r="1.8215690961107611" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="964.4526413409039" cy="281.131150434725" r="2.488105315575376" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="761.8751908540726" cy="356.9272915250622" r="2.5369974047876895" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="825.8160334536806" cy="247.39167541451752" r="2.5447399569209663" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="784.2173882331699" cy="258.93061168538406" r="2.6477347064763306" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="776.0478496393189" cy="243.66107517573982" r="3.1530558076221498" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="928.7932505570352" cy="266.9410467701964" r="2.771120105590671" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="761.0328840138391" cy="315.2892780378461" r="1.8796086001675576" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="787.8147256243974" cy="332.78550793090835" r="2.9499922888353467" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="750.4266823725775" cy="303.3129837922752" r="3.0120550058316438" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="807.2438739780337" cy="254.80542206997052" r="2.4488921469077467" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="799.9288359908387" cy="284.0967478407547" r="3.153613205859438" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="802.5447006523609" cy="318.0675785220228" r="2.3050010905601086" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="969.5903426418081" cy="286.12934549339116" r="2.678931745653972" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="782.5885569956154" cy="347.1079569165595" r="3.2421380404382942" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="827.9131677290425" cy="279.12543924245983" r="3.499988291831687" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="927.9419087432325" cy="368.7870925772004" r="2.9980362354777754" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="884.038926047273" cy="252.41193952411413" r="3.081048995582387" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="905.9874256886542" cy="263.5279424483888" r="2.595408059936017" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="926.6123976008967" cy="346.6742894016206" r="1.8018732107710094" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="876.5388012938201" cy="249.29166202573106" r="2.9257925248704852" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="800.135103401728" cy="265.49223574995995" r="2.351596726058051" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <circle cx="953.3616376705468" cy="362.911644406151" r="2.393250375520438" fill="#d97706" fill-opacity="0.8" stroke="none"/>
+  <ellipse cx="860" cy="320" rx="52" ry="38" fill="#ffffff" stroke="#475569" stroke-width="1.6"/>
+  <ellipse cx="846" cy="312" rx="16" ry="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.1"/>
+  <ellipse cx="876" cy="326" rx="14" ry="10" fill="#f1f5f9" stroke="#64748b" stroke-width="1.1"/>
+  <text x="860" y="378" font-size="9.5" fill="#64748b" text-anchor="middle">蛋白呈「浅色镂空」：重原子染料环绕造负衬度</text>
+  <rect x="736" y="382" width="248" height="10" fill="#1e293b" stroke="none"/>
+  <text x="860" y="410" font-size="9.5" fill="#475569" text-anchor="middle">碳膜铜网（辉光放电亲水化）</text>
+  <rect x="1010" y="236" width="340" height="150" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1.8"/>
+  <text x="1180" y="226" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">显微图样貌（顶视）：暗底亮颗粒</text>
+  <circle cx="1094.3201154656708" cy="368.06207052851096" r="2.3187374995090066" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1320.049918597564" cy="248.80908218305558" r="2.683675335231237" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1134.4031312167645" cy="249.3286750963889" r="1.5031760543119161" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1338.731336357072" cy="376.24709435738623" r="2.1968761801021173" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1164.2093007080257" cy="317.6018365104683" r="2.3075539940968155" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1270.9928768556565" cy="349.6141067976132" r="2.0271160583710297" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1171.5074234828353" cy="359.59580026892945" r="1.9436958700884133" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1173.934378111735" cy="254.6878928244114" r="2.5237058002734556" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1289.6180664338171" cy="291.41958583006635" r="1.6682736027054488" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1338.0184272434562" cy="258.845133705996" r="2.0821668826742097" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1165.6741076260805" cy="256.9050925388001" r="1.5710383312311023" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1219.8835776317865" cy="348.65037358365953" r="1.5268121862085535" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1214.6260310970247" cy="369.83599290670827" r="1.7985915090888738" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1209.6879615914077" cy="290.67791507113725" r="1.8691430976381525" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1184.0886523202062" cy="340.2129112924449" r="1.8646351861301809" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1067.8885719869286" cy="362.6308645121753" r="2.3383642269531264" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1140.4150165207684" cy="379.497026654426" r="2.126840638089925" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1074.4317987319082" cy="277.0109890056774" r="2.7810006025014444" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1208.859774529934" cy="310.0027536726557" r="1.6623299721162765" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1158.3386186081916" cy="266.6418754328042" r="1.403067051176913" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1242.858403366059" cy="346.88554716156796" r="1.617027056030929" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1194.1131493430585" cy="344.38108484540135" r="2.724235564447008" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1137.800201229751" cy="298.11814032075927" r="2.3575520877260714" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1287.786091381684" cy="311.49957370013" r="2.1227237947518005" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1273.712049100548" cy="374.0926679954864" r="1.8866583398543297" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1306.2248932924122" cy="270.583606547676" r="1.8159364205552264" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1327.4964936226606" cy="340.65214174380526" r="1.7131900837179272" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1033.1002892423421" cy="282.5507129114121" r="2.6389809620799496" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1265.2817684672773" cy="271.06763413222507" r="2.163927415013313" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1264.0941694807261" cy="299.5919442148879" r="1.894800723507069" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1131.542933858931" cy="270.36229530675337" r="2.7062266728375106" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1083.0665572676808" cy="335.68276474252343" r="2.4495698811719193" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1160.4423764534295" cy="279.06496551120654" r="2.1858143621124326" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1126.4697781857103" cy="255.86936374288052" r="1.9789293310372158" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1168.8144742548466" cy="345.57966284966096" r="2.6921979583334177" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1269.8057202715427" cy="273.9610039088875" r="2.428356752474792" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1207.8832937590778" cy="252.50761621491984" r="2.5136686922982334" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1285.8673959057778" cy="319.6672245943919" r="2.678210439137183" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1034.653749011457" cy="345.0807789298706" r="2.0535393812227993" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1342.3888288978487" cy="367.7362962514162" r="1.6945137914502992" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1108.4557147659361" cy="358.9848992736079" r="2.617834591399878" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1339.0476027037948" cy="373.40327569749206" r="1.4441059590084477" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1305.8471484333277" cy="274.8912396891974" r="2.870880886306986" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1095.022218214348" cy="369.5673399474472" r="2.6511239649029448" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1228.496338006109" cy="319.603927094955" r="1.9578816328197717" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1077.0017220508307" cy="245.71377946902066" r="1.4146527377655729" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1060.2649556472898" cy="347.48968234611675" r="1.5313538069371133" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1136.1778788063675" cy="309.80110984668136" r="2.8885318210581317" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1078.0026591308415" cy="318.4133175187744" r="2.160003459174186" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1149.820473169908" cy="316.2732139630243" r="1.4874911228893324" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1238.0405458211899" cy="274.38090531295165" r="2.062971968529746" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1075.0441403705627" cy="345.15525493212044" r="2.522752913390286" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1157.5348263792694" cy="258.1179154966958" r="2.768146932683885" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1043.820435879752" cy="322.9753031441942" r="1.6287333704298361" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1293.1636478826404" cy="293.50687893806025" r="2.3591495108325033" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1167.6716678086668" cy="279.14619890600443" r="1.914254318200983" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1239.719058547169" cy="283.80328039685264" r="1.4204342543147503" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1274.3033279385418" cy="319.56912528630346" r="2.300484396959655" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1266.3626687377691" cy="315.46439687302336" r="1.8324179289396851" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1083.1897698212415" cy="373.7066939007491" r="2.5874187459470703" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1025.2276254557073" cy="286.88868893356994" r="2.1774405516684054" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1035.323094887659" cy="314.34404949564487" r="2.7648273752769454" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1156.1510799899697" cy="368.99811806483194" r="1.4114048330578952" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1340.4680200014263" cy="275.83657731488347" r="2.0460047463187947" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1323.110390920192" cy="276.02740372205153" r="1.603889435622841" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1325.8358123954386" cy="260.95725035946816" r="1.8970866738585754" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1026.9128671586514" cy="316.7377493730746" r="1.6701369270216673" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1239.5981904286891" cy="369.6304817739874" r="2.054915507067926" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1035.3529182188213" cy="362.1729574580677" r="2.08032902572304" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1021.6074011009187" cy="312.99755071941763" r="2.5161806400632485" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1110.9020413979888" cy="296.6481188121252" r="2.2537297055590897" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1298.5714977625757" cy="376.526248216629" r="2.333588746585883" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1051.536138061434" cy="243.53020272264257" r="1.6963509443216025" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1324.2541539575905" cy="322.3793425699696" r="2.614876727084629" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1243.0312137156725" cy="343.16088941833004" r="1.6395263703074305" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1231.5261618364602" cy="273.1177921053022" r="1.4813202002318575" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1313.4725790582597" cy="318.60987741174176" r="1.9519147794693708" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1300.7910760771483" cy="356.1603360818699" r="2.247761464654468" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1017.3242316916585" cy="298.4566637421958" r="2.6477484645787626" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1314.9402767512947" cy="350.37617276236415" r="1.8298332004109397" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1335.6941606886685" cy="242.10543579095975" r="2.8683405165560543" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1093.0630370732397" cy="314.87688675057143" r="2.709737773495726" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1151.9078786969185" cy="330.86622896557674" r="2.490720726875588" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1294.1449944693595" cy="308.6226158309728" r="1.7934068504022433" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1101.666548769921" cy="294.8108951752074" r="1.9855314387008547" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1250.4337359052151" cy="357.9906506696716" r="2.0128621235257014" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1055.4176356121898" cy="341.8596926438622" r="2.0247326631564646" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1232.533020908013" cy="353.0972388610244" r="1.6618752919370308" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1305.6050734259188" cy="347.29844823339954" r="2.096989995893091" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1153.1074782218784" cy="288.54031792934984" r="1.5443340358091517" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1117.6925050467253" cy="303.5922590731643" r="1.7435993378516286" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1243.8374245334417" cy="251.46723002009094" r="2.6568105665268376" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1335.7672095559537" cy="339.57459091814235" r="1.4491891428828239" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1215.4587662052363" cy="361.59217413980514" r="1.6634504282614215" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1273.6338980570436" cy="291.47539628250524" r="1.9279838836286216" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1065.8557574544102" cy="353.11822992935777" r="1.9462015705415978" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1021.0966198034585" cy="299.43351602042094" r="2.006861645821482" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1176.7447009142488" cy="357.5832400796935" r="1.870337305101566" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1247.1035833656788" cy="252.74214365100488" r="2.239544229907915" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1171.9944890160114" cy="324.57266662456095" r="1.687941604037769" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1093.0937600247562" cy="302.7265223492868" r="2.7607698576524853" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1300.575197128579" cy="282.15073946956545" r="2.054271290055476" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1075.7356990799308" cy="276.47531015006825" r="2.4239665501285343" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1295.008751893416" cy="359.87879364192486" r="2.5474370133364572" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1332.7880472578108" cy="261.2661895365454" r="2.4295184622518717" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1250.5160106923431" cy="292.54164487030357" r="1.704403503309004" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1255.537826910615" cy="371.06731321057305" r="1.6619479277636855" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1175.3124006856233" cy="275.31418122909963" r="2.0096494273515417" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1030.6865901909769" cy="286.58406846644357" r="1.781972687318921" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1331.1995783578604" cy="245.19605170655996" r="1.8406982822110876" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1270.1561288908124" cy="307.5804082150571" r="1.9821907410863786" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1212.2333830092102" cy="350.2474106810987" r="1.6808840876678004" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1221.5744821317494" cy="342.260637330357" r="2.18184448601678" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1026.3186701294035" cy="259.59813041519374" r="2.797899245726876" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1255.6795465946198" cy="259.9760586149059" r="2.0254712666850536" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1106.5894230920821" cy="358.5017218012363" r="2.6506367723690345" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1022.0416564755142" cy="278.0462733064778" r="1.831009187363088" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1326.8778541069478" cy="277.9884067187086" r="1.8703352026408537" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1137.8580628558993" cy="247.68219667254016" r="2.323845001729205" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1224.9590178672224" cy="307.06436348706484" r="2.8588118136161937" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1144.6113046742976" cy="269.4919898645021" r="2.0631151153706013" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1025.077773829922" cy="361.03112002369016" r="2.700378403509967" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1172.610025987029" cy="284.4671248286031" r="1.6340512049850076" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1330.0227455664426" cy="361.48539744131267" r="1.7886237089755013" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1176.3448567055166" cy="341.3086896953173" r="1.9140486769378184" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1175.2072381209582" cy="320.03040994424373" r="2.1683676363667472" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1342.6935364976525" cy="274.0888076941483" r="1.7391791565809398" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1243.3498868141323" cy="369.8097050078213" r="1.6804948264965787" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1235.7985240407288" cy="309.17368326568976" r="1.570817418489605" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1172.9181234296411" cy="356.7890809504315" r="1.9168086661724373" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1081.4168963134289" cy="245.68830466782674" r="2.5076586365234106" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1201.0053582210094" cy="259.3859471324831" r="2.337261703540571" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1320.2064051143825" cy="267.20322299795225" r="2.675413551367819" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1146.258088676259" cy="276.70369514171034" r="2.0166645180201157" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1204.263120494783" cy="314.3960931780748" r="2.3736371219623833" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1056.3519584778696" cy="269.3962274491787" r="1.9660024393582716" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1248.7651532925665" cy="264.80980307469144" r="2.835220445971936" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1161.8361025955528" cy="257.189743145369" r="2.158548104087822" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1155.303511455655" cy="339.1200325503014" r="1.777806203207001" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1174.4229269493371" cy="292.45020849071443" r="1.8767976814182474" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1237.8952073417604" cy="335.1629748684354" r="1.5665245946496724" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1279.495783580467" cy="254.03064313996583" r="1.6266296943416818" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1157.2752956822515" cy="249.98371849907562" r="1.4827397184912114" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1056.239814767614" cy="255.08743102476" r="2.733737705484964" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1258.3535843975842" cy="277.97242799634114" r="2.2726955433376133" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1322.8715520258993" cy="268.74431800376624" r="1.6880717309890314" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1224.1983229517937" cy="258.3839782453142" r="1.551806107489392" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1325.4506684262305" cy="327.5315865147859" r="1.4284880894469096" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1342.0732354335487" cy="289.812086999882" r="2.733596291951835" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <circle cx="1283.20259517245" cy="284.5611005881801" r="2.405803486681543" fill="#d97706" fill-opacity="0.4" stroke="none"/>
+  <ellipse cx="1080" cy="282" rx="22" ry="13.64" fill="#f8fafc" fill-opacity="0.92" stroke="none"/>
+  <ellipse cx="1074.5" cy="279.8" rx="6.6" ry="4.4" fill="#64748b" fill-opacity="0.5" stroke="none"/>
+  <ellipse cx="1200" cy="328" rx="26" ry="16.12" fill="#f8fafc" fill-opacity="0.92" stroke="none"/>
+  <ellipse cx="1193.5" cy="325.4" rx="7.8" ry="5.2" fill="#64748b" fill-opacity="0.5" stroke="none"/>
+  <ellipse cx="1290" cy="276" rx="20" ry="12.4" fill="#f8fafc" fill-opacity="0.92" stroke="none"/>
+  <ellipse cx="1285" cy="274" rx="6" ry="4" fill="#64748b" fill-opacity="0.5" stroke="none"/>
+  <ellipse cx="1120" cy="348" rx="18" ry="11.16" fill="#f8fafc" fill-opacity="0.92" stroke="none"/>
+  <ellipse cx="1115.5" cy="346.2" rx="5.3999999999999995" ry="3.6" fill="#64748b" fill-opacity="0.5" stroke="none"/>
+  <text x="730" y="412" font-size="10" fill="#475569">操作约 2–5 分钟：滴 3–5 μL 样品吸附 30–60 秒，滤纸吸干，滴 0.5–2% 醋酸铀或甲酸铀染色数十秒，吸干、可再染一次</text>
+  <text x="730" y="426.5" font-size="10" fill="#475569">（两次染色衬度更匀）。它回答两个问题：样品均一吗？有哪些构象态？</text>
+  <rect x="30" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">三、2D 分类的判读：好样品长什么样</text>
+  <rect x="56" y="528" width="300" height="176" rx="8" fill="#d1fae5" fill-opacity="0.25" stroke="#059669" stroke-width="1.5"/>
+  <text x="206" y="546" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">好样品：类别清晰、视角多样</text>
+  <ellipse cx="92" cy="600" rx="26" ry="14.3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="98.43231166528375" y1="612.6299392967921" x2="77.89687971704902" y2="601.4113816934539" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="88.16459569116637" y1="607.020660495123" x2="88.16459569116637" y2="607.020660495123" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="77.89687971704902" y1="601.4113816934539" x2="98.43231166528375" y2="612.6299392967921" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="160" cy="588" rx="24" ry="13.200000000000001" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="172.98000293434305" y1="584.5129491221885" x2="159.55322761969668" y2="601.4328103701421" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="166.26661527701987" y1="592.9728797461653" x2="166.26661527701987" y2="592.9728797461653" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="159.55322761969668" y1="601.4328103701421" x2="172.98000293434305" y2="584.5129491221885" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="228" cy="604" rx="25" ry="13.750000000000002" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="237.4363943543535" y1="614.0755625941744" x2="215.38489635292555" y2="609.6055026512855" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="226.41064535363952" y1="611.8405326227299" x2="226.41064535363952" y2="611.8405326227299" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="215.38489635292555" y1="609.6055026512855" x2="237.4363943543535" y2="614.0755625941744" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="296" cy="592" rx="22" ry="12.100000000000001" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="308.2338505790978" y1="595.5132463631675" x2="289.9968428978406" y2="603.2237295408787" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="299.1153467384692" y1="599.3684879520231" x2="299.1153467384692" y2="599.3684879520231" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="289.9968428978406" y1="603.2237295408787" x2="308.2338505790978" y2="595.5132463631675" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="106" cy="668" rx="23" ry="12.65" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="103.56506097626325" y1="680.8527651480405" x2="94.1756212627538" y2="662.4047727947687" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="98.87034111950851" y1="671.6287689714046" x2="98.87034111950851" y2="671.6287689714046" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="94.1756212627538" y1="662.4047727947687" x2="103.56506097626325" y2="680.8527651480405" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="178" cy="678" rx="25" ry="13.750000000000002" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="190.61510364707445" y1="683.6055026512855" x2="168.5636056456465" y2="688.0755625941744" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="179.58935464636048" y1="685.8405326227299" x2="179.58935464636048" y2="685.8405326227299" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="168.5636056456465" y1="688.0755625941744" x2="190.61510364707445" y2="683.6055026512855" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="248" cy="672" rx="22" ry="12.100000000000001" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="250.4181961562149" y1="684.496492601929" x2="235.27432084798204" y2="671.7409823946227" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="242.84625850209846" y1="678.1187374982759" x2="242.84625850209846" y2="678.1187374982759" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="235.27432084798204" y1="671.7409823946227" x2="250.4181961562149" y2="684.496492601929" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <ellipse cx="316" cy="670" rx="20" ry="11" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="327.5944886312764" y1="666.749179583674" x2="317.86904712564996" y2="681.8956573102162" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="322.7317678784632" y1="674.3224184469451" x2="322.7317678784632" y2="674.3224184469451" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <line x1="317.86904712564996" y1="681.8956573102162" x2="327.5944886312764" y2="666.749179583674" stroke="#134e4a" stroke-width="1.6" opacity="0.7"/>
+  <text x="206" y="698" font-size="9.5" fill="#64748b" text-anchor="middle">内部条纹=二级结构迹象</text>
+  <rect x="400" y="528" width="280" height="176" rx="8" fill="#fee2e2" fill-opacity="0.25" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="540" y="546" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">坏信号：三类报警</text>
+  <text x="462" y="570" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">聚集</text>
+  <circle cx="450" cy="606" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="478" cy="596" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="466" cy="626" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="492" cy="618" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="478" cy="646" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="462" y="672" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">碎片</text>
+  <circle cx="430" cy="694" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="446" cy="694" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="462" cy="694" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="478" cy="694" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="494" cy="694" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="430" cy="708" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="446" cy="708" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="462" cy="708" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="478" cy="708" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <circle cx="494" cy="708" r="3.2" fill="#dc2626" fill-opacity="0.7" stroke="none"/>
+  <text x="590" y="570" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">单一优势视角</text>
+  <ellipse cx="566" cy="606" rx="20" ry="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <ellipse cx="596" cy="610" rx="20" ry="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <ellipse cx="578" cy="634" rx="20" ry="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <ellipse cx="608" cy="640" rx="20" ry="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <ellipse cx="590" cy="660" rx="20" ry="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <ellipse cx="620" cy="664" rx="20" ry="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="56" y="726" font-size="10" fill="#475569">负染的边界：分辨率上限约 15–20 Å——染料颗粒本身约 1 nm 粒度，干燥的表面张力还会把近球形蛋白压成「薄饼」</text>
+  <text x="56" y="740.5" font-size="10" fill="#475569">（某一维尺寸可缩短两成）——高分辨细节不可外推，两个样品「看起来一样」不等于冷冻下也一样。</text>
+  <circle cx="66" cy="802" r="4.5" fill="#059669" stroke="none"/>
+  <text x="78" y="806" font-size="10" fill="#475569" font-weight="600">均一清晰：直接上冷冻（第 2 节）</text>
+  <circle cx="66" cy="824" r="4.5" fill="#dc2626" stroke="none"/>
+  <text x="78" y="828" font-size="10" fill="#475569" font-weight="600">聚集：回第 4 章纯化：换柱、加还原剂</text>
+  <circle cx="66" cy="846" r="4.5" fill="#d97706" stroke="none"/>
+  <text x="78" y="850" font-size="10" fill="#475569" font-weight="600">取向单一：调缓冲或换载网</text>
+  <circle cx="66" cy="868" r="4.5" fill="#0369a1" stroke="none"/>
+  <text x="78" y="872" font-size="10" fill="#475569" font-weight="600">无颗粒：查吸附：浓度与亲水化</text>
+  <text x="520" y="838" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">值得上冷冻的三条判据：</text>
+  <text x="400" y="858" font-size="9.5" fill="#64748b">均一性、浓度（0.5–5 mg/mL）、</text>
+  <text x="400" y="871" font-size="9.5" fill="#64748b">稳定性——三条全过再花机时。</text>
+  <rect x="710" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="504.84" font-size="19" fill="#475569" font-weight="700">四、筛查决策表与样品预算</text>
+  <rect x="730" y="528" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="555.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">2D 分类所见</text>
+  <rect x="900" y="528" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="555.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">诊断</text>
+  <rect x="1110" y="528" width="240" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="555.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">决策</text>
+  <rect x="730" y="572" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="596.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">类别清晰、视角多样</text>
+  <rect x="900" y="572" width="210" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="596.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">样品均一、构象态可控</text>
+  <rect x="1110" y="572" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="596.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">直接上冷冻玻璃化</text>
+  <rect x="730" y="610" width="620" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="610" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="634.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">少数大类、轮廓一致</text>
+  <rect x="900" y="610" width="210" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="634.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">存在优势构象或寡聚</text>
+  <rect x="1110" y="610" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="634.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">记录比例，收集时留余量</text>
+  <rect x="730" y="648" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="672.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">聚集为大团块</text>
+  <rect x="900" y="648" width="210" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="672.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">纯度或缓冲问题</text>
+  <rect x="1110" y="648" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="672.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">回第 4 章：换柱/加还原剂</text>
+  <rect x="730" y="686" width="620" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="686" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="710.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">碎片与低衬度</text>
+  <rect x="900" y="686" width="210" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="710.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">降解或浓度过低</text>
+  <rect x="1110" y="686" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="710.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">查降解、浓缩或换负染方案</text>
+  <rect x="730" y="724" width="170" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="748.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">单一优势视角</text>
+  <rect x="900" y="724" width="210" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1005" y="748.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">颗粒取向被膜面锁定</text>
+  <rect x="1110" y="724" width="240" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="748.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">调缓冲、换支持膜或倾转</text>
+  <text x="730" y="764" font-size="10" fill="#475569">负染之后再花 2 分钟看「颗粒浓度与吸附」：正常应在显微图上数得出数百颗/视野。浓度不足 0.1 mg/mL 时优先浓缩；膜面吸附过强</text>
+  <text x="730" y="778.5" font-size="10" fill="#475569">（颗粒贴膜、取向单一）预示 AWI 问题，收集期再以小角度倾转补救（第 4 节）。</text>
+  <rect x="892.744" y="843.5" width="294.512" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1040" y="855.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">面试通过才发冷冻「录取通知」——省下的是玻璃化与机时成本</text>
+  <text x="700" y="946" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">负染是低成本的高通量面试——它回答「值不值得冷冻」，而不是「结构长什么样」</text>
+</svg>

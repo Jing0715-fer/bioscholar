@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">整合结构生物学：距离量程尺与概率拼图</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">SAXS 三读数、包络约 1–2 nm；无序链 Rg 按残基数 0.5 次幂；smFRET 3–8 nm；DEER 1.5–8 nm；交联 Cα 上限约 30 Å；IMP 整合</text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、SAXS：溶液中的整体形状账</text>
+  <rect x="70" y="180" width="293.11764705882354" height="200" fill="#d1fae5" fill-opacity="0.45"/>
+  <path d="M70,180 C79.7,181.5 112.1,185.9 128.23529411764707,189.23076923076923 C144.4,192.6 154.1,195.1 167.05882352941177,200.00000000000003 C180.0,204.9 192.9,210.8 205.88235294117646,218.46153846153845 C218.8,226.2 233.4,237.4 244.7058823529412,246.15384615384616 C256.0,254.9 264.1,262.3 273.82352941176475,270.7692307692308 C283.5,279.2 293.2,288.7 302.9411764705883,296.9230769230769 C312.6,305.1 322.4,312.8 332.05882352941177,320 C341.8,327.2 351.5,333.6 361.1764705882353,340 C370.9,346.4 383.8,354.4 390.29411764705884,358.46153846153845 C396.8,362.6 398.4,363.6 400,364.61538461538464" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <line x1="70" y1="380" x2="412" y2="380" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="380" x2="70" y2="180" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="380" x2="70" y2="374" stroke="#475569" stroke-width="1.3"/>
+  <text x="70" y="395" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-2.0</tspan></text>
+  <line x1="167.05882352941177" y1="380" x2="167.05882352941177" y2="374" stroke="#475569" stroke-width="1.3"/>
+  <text x="167.05882352941177" y="395" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-1.5</tspan></text>
+  <line x1="264.11764705882354" y1="380" x2="264.11764705882354" y2="374" stroke="#475569" stroke-width="1.3"/>
+  <text x="264.11764705882354" y="395" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-1.0</tspan></text>
+  <line x1="361.1764705882353" y1="380" x2="361.1764705882353" y2="374" stroke="#475569" stroke-width="1.3"/>
+  <text x="361.1764705882353" y="395" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-0.5</tspan></text>
+  <text x="235" y="412" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">散射矢量 q（nm<tspan dy="-3.4" font-size="7.2">-1</tspan><tspan dy="3.4">，对数）</tspan></text>
+  <text x="38" y="280" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">I(q)（对数）</text>
+  <text x="216.55882352941177" y="194" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">Guinier 区（q·Rg 小于 1.3）</text>
+  <text x="376.70588235294116" y="300" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">斜率给 Rg</text>
+  <text x="337.88235294117646" y="250" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">Porod 区 q<tspan dy="-3.2" font-size="6.8">-4</tspan></text>
+  <text x="430" y="178" font-size="12.5" fill="#1e293b" font-weight="700">三个核心读数</text>
+  <text x="430" y="200" font-size="10" fill="#475569">Rg——Guinier 区以 ln I 对 q² 作图，</text>
+  <text x="430" y="214" font-size="10" fill="#475569">直线斜率读出质量分布的紧凑度。</text>
+  <text x="430" y="244" font-size="10" fill="#475569">Dmax——P(r) 距离分布经间接傅里叶反演（GNOM），</text>
+  <text x="430" y="258" font-size="10" fill="#475569">从衰减到零处读出。</text>
+  <text x="430" y="288" font-size="10" fill="#475569">分子量——零角外推 I(0) 与 Porod 体积估算，</text>
+  <text x="430" y="302" font-size="10" fill="#475569">判别单体与寡聚。</text>
+  <text x="430" y="330" font-size="10" fill="#475569">DAMMIN/DAMMIF 珠子包络：</text>
+  <text x="430" y="344" font-size="10" fill="#475569">约 20 次独立计算取平均，精度约 1–2 nm。</text>
+  <rect x="430" y="356" width="240" height="46" rx="7" fill="#fef3c7" fill-opacity="0.4" stroke="#d97706" stroke-width="1.2"/>
+  <text x="440" y="374" font-size="9.5" fill="#475569">标度律诊断：无序链 Rg 约随残基数 0.5 次幂</text>
+  <text x="440" y="387" font-size="9.5" fill="#475569">（Kohn 等 2004），快于折叠球的约 0.38 次幂。</text>
+  <text x="50" y="420" font-size="10" fill="#475569">实验纪律：浓度 1–10 mg/mL 做系列稀释扣除颗粒间干涉、缓冲液空白严格相减、重复曝光监测辐射损伤；</text>
+  <text x="50" y="434" font-size="10" fill="#475569">CRYSOL 对拍高分辨结构检验溶液构象。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、距离量程尺：多方法互补矩阵</text>
+  <line x1="860" y1="182" x2="1348" y2="182" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="860" y1="182" x2="860" y2="188" stroke="#475569" stroke-width="1.6"/>
+  <text x="860" y="172" font-size="10" fill="#64748b" text-anchor="middle">0.1 nm</text>
+  <line x1="860" y1="196" x2="860" y2="400" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.5"/>
+  <line x1="1020" y1="182" x2="1020" y2="188" stroke="#475569" stroke-width="1.6"/>
+  <text x="1020" y="172" font-size="10" fill="#64748b" text-anchor="middle">1 nm</text>
+  <line x1="1020" y1="196" x2="1020" y2="400" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.5"/>
+  <line x1="1180" y1="182" x2="1180" y2="188" stroke="#475569" stroke-width="1.6"/>
+  <text x="1180" y="172" font-size="10" fill="#64748b" text-anchor="middle">10 nm</text>
+  <line x1="1180" y1="196" x2="1180" y2="400" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.5"/>
+  <line x1="1340" y1="182" x2="1340" y2="188" stroke="#475569" stroke-width="1.6"/>
+  <text x="1340" y="172" font-size="10" fill="#64748b" text-anchor="middle">100 nm</text>
+  <line x1="1340" y1="196" x2="1340" y2="400" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.5"/>
+  <text x="726" y="220" font-size="11" fill="#1e293b" font-weight="700">晶体学与电镜</text>
+  <rect x="860" y="208" width="111.835200693763" height="16" rx="8" fill="#1e293b22" stroke="#1e293b" stroke-width="1.6"/>
+  <text x="915.9176003468815" y="219.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">埃级锚点</text>
+  <text x="726" y="252" font-size="11" fill="#1e293b" font-weight="700">XL-MS</text>
+  <rect x="860" y="240" width="236.33940075514602" height="16" rx="8" fill="#0f766e22" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="978.169700377573" y="251.5" font-size="9.5" fill="#0f766e" text-anchor="middle" font-weight="700">约 30 Å 上限</text>
+  <text x="726" y="284" font-size="11" fill="#1e293b" font-weight="700">PRE</text>
+  <rect x="1048.174601448909" y="272" width="58.87628564713509" height="16" rx="8" fill="#be185d22" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1077.6127442724764" y="283.5" font-size="9.5" fill="#be185d" text-anchor="middle" font-weight="700">15–35 Å</text>
+  <text x="726" y="316" font-size="11" fill="#1e293b" font-weight="700">DEER</text>
+  <rect x="1048.174601448909" y="304" width="116.31979646980199" height="16" rx="8" fill="#6d28d922" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1106.33449968381" y="315.5" font-size="9.5" fill="#6d28d9" text-anchor="middle" font-weight="700">1.5–8 nm</text>
+  <text x="726" y="348" font-size="11" fill="#1e293b" font-weight="700">smFRET</text>
+  <rect x="1096.339400755146" y="336" width="68.15499716356499" height="16" rx="8" fill="#b4530922" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1130.4168993369285" y="347.5" font-size="9.5" fill="#b45309" text-anchor="middle" font-weight="700">3–8 nm</text>
+  <text x="726" y="380" font-size="11" fill="#1e293b" font-weight="700">SAXS</text>
+  <rect x="1020" y="368" width="320" height="16" rx="8" fill="#0369a122" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1180" y="379.5" font-size="9.5" fill="#0369a1" text-anchor="middle" font-weight="700">Rg 约 1–100 nm、Dmax</text>
+  <text x="726" y="414" font-size="9.5" fill="#475569">样品量级：SAXS mg 级溶液；smFRET nM 级单分子（R0 约 5–6 nm）；DEER 冻结玻璃态读距离分布；XL-MS 与 HDX-MS μg 级、不挑分子量。</text>
+  <rect x="30" y="452" width="1340" height="252" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="474.84" font-size="19" fill="#475569" font-weight="700">三、IMP 整合建模四步与核孔复合物成名作</text>
+  <rect x="74.18010000000001" y="484.225" width="51.639799999999994" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="100" y="498.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">① 表征</text>
+  <text x="165" y="490" font-size="10.5" fill="#475569">把体系拆成刚体结构域与柔性串珠，各数据源映射到各自分辨率</text>
+  <line x1="100" y1="509" x2="100" y2="521" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="74.18010000000001" y="526.225" width="51.639799999999994" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="100" y="540.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">② 评分</text>
+  <text x="165" y="532" font-size="10.5" fill="#475569">交联 30 Å 上限、SAXS 曲线、电镜密度、FRET 距离各写成概率项，加权求和成总分</text>
+  <line x1="100" y1="551" x2="100" y2="563" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="74.18010000000001" y="568.225" width="51.639799999999994" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="100" y="582.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">③ 采样</text>
+  <text x="165" y="574" font-size="10.5" fill="#475569">蒙特卡洛及其变体在构象空间搜索高分布区</text>
+  <line x1="100" y1="593" x2="100" y2="605" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <rect x="74.18010000000001" y="610.225" width="51.639799999999994" height="19.55" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="100" y="624.14" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">④ 分析</text>
+  <text x="165" y="616" font-size="10.5" fill="#475569">聚类、占据频次图，以留出数据交叉验证</text>
+  <text x="60" y="668" font-size="10.5" fill="#475569">产出常不是单一坐标，而是一族满足约束的排布及其定位精度——「亚基 X 位于此区域、精度约 2 nm」（IMP：Sali 实验室，</text>
+  <text x="60" y="683" font-size="10.5" fill="#475569">Russel 等 2012）。</text>
+  <circle cx="950" cy="585" r="92" fill="#ede9fe" fill-opacity="0.35" stroke="#6d28d9" stroke-width="2.6"/>
+  <circle cx="950" cy="585" r="46" fill="#ffffff" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="996" y1="585" x2="1042" y2="585" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="1042" cy="585" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="982.5269119345812" y1="617.5269119345812" x2="1015.0538238691623" y2="650.0538238691623" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="1015.0538238691623" cy="650.0538238691623" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="950" y1="631" x2="950" y2="677" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="950" cy="677" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="917.4730880654188" y1="617.5269119345812" x2="884.9461761308377" y2="650.0538238691623" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="884.9461761308377" cy="650.0538238691623" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="904" y1="585" x2="858" y2="585" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="858" cy="585" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="917.4730880654188" y1="552.4730880654188" x2="884.9461761308376" y2="519.9461761308377" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="884.9461761308376" cy="519.9461761308377" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="950" y1="539" x2="950" y2="493" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="950" cy="493" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <line x1="982.5269119345812" y1="552.4730880654188" x2="1015.0538238691623" y2="519.9461761308376" stroke="#6d28d9" stroke-width="1.6" opacity="0.6"/>
+  <circle cx="1015.0538238691623" cy="519.9461761308376" r="11" fill="#6d28d9" stroke="#ffffff" stroke-width="1.4"/>
+  <text x="950" y="590" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">核孔复合物</text>
+  <text x="950" y="608" font-size="10" fill="#475569" text-anchor="middle">酵母约 55 MDa</text>
+  <text x="950" y="624" font-size="10" fill="#475569" text-anchor="middle">人约 110 MDa</text>
+  <text x="1075" y="500" font-size="10.5" fill="#475569">单一方法吞不下的巨物：</text>
+  <text x="1075" y="515" font-size="10.5" fill="#475569">Alber 等 2007 年把免疫电镜定位、</text>
+  <text x="1075" y="530" font-size="10.5" fill="#475569">冷冻电镜外形与各类距离数据交给 IMP，</text>
+  <text x="1075" y="545" font-size="10.5" fill="#475569">整合出约 5 nm 精度的整体排布——整合建模的成名之作。</text>
+  <text x="1075" y="586" font-size="10.5" fill="#475569">此后交联质谱拓扑与各核孔蛋白结构域的晶体结构陆续拼入；</text>
+  <text x="1075" y="601" font-size="10.5" fill="#475569">2022 年数项互补研究把人源环区推至埃级。</text>
+  <text x="1075" y="646" font-size="10.5" fill="#475569">拼图要义：</text>
+  <text x="1075" y="661" font-size="10.5" fill="#475569">每块拼图的精度须与声称的分辨率匹配——约 30 Å 的交联钉不住埃级细节。</text>
+  <rect x="30" y="724" width="1340" height="178" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="746.84" font-size="19" fill="#475569" font-weight="700">四、XL-MS 与 HDX-MS：质谱加入结构生物学的两个入口</text>
+  <rect x="50" y="748" width="610" height="138" rx="8" fill="#ccfbf1" fill-opacity="0.35" stroke="#0f766e" stroke-width="1.3"/>
+  <ellipse cx="140" cy="806" rx="62" ry="34" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="140" y="810" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">亚基 A</text>
+  <ellipse cx="395" cy="806" rx="62" ry="34" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="395" y="810" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">亚基 B</text>
+  <circle cx="198" cy="794" r="8" fill="#be185d"/>
+  <text x="198" y="776" font-size="10" fill="#be185d" text-anchor="middle" font-weight="700">K</text>
+  <circle cx="340" cy="816" r="8" fill="#be185d"/>
+  <text x="340" y="838" font-size="10" fill="#be185d" text-anchor="middle" font-weight="700">K</text>
+  <line x1="198" y1="794" x2="340" y2="816" stroke="#be185d" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="269" y="782" font-size="10.5" fill="#be185d" text-anchor="middle" font-weight="700">Cα–Cα 上限约 30 Å</text>
+  <rect x="202.10549999999998" y="847.5" width="133.78900000000004" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="269" y="859.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">DSS/BS³ 间隔臂约 11.4 Å</text>
+  <text x="480" y="780" font-size="10" fill="#475569">NHS 酯进攻赖氨酸 ε-氨基与蛋白 N 端；</text>
+  <text x="480" y="793.5" font-size="10" fill="#475569">交联蛋白酶解后以 LC-MS/MS 鉴定</text>
+  <text x="480" y="807" font-size="10" fill="#475569">（假发现率约百分之一量级）</text>
+  <text x="480" y="820.5" font-size="10" fill="#475569">——「哪个赖氨酸挨着哪个赖氨酸」即拓扑约束网。</text>
+  <rect x="680" y="748" width="650" height="138" rx="8" fill="#e0f2fe" fill-opacity="0.35" stroke="#0369a1" stroke-width="1.3"/>
+  <text x="698" y="770" font-size="12" fill="#075985" font-weight="700">HDX-MS 保护图谱（逐肽氘掺入）</text>
+  <rect x="700" y="804" width="24" height="34" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="730" y="798" width="24" height="40" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="760" y="792" width="24" height="46" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="790" y="796" width="24" height="42" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="820" y="802" width="24" height="36" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="850" y="810" width="24" height="28" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="880" y="816" width="24" height="22" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="910" y="826" width="24" height="12" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="940" y="830" width="24" height="8" rx="3" fill="#dc2626" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="970" y="832" width="24" height="6" rx="3" fill="#dc2626" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1000" y="829" width="24" height="9" rx="3" fill="#dc2626" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1030" y="824" width="24" height="14" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1060" y="814" width="24" height="24" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1090" y="806" width="24" height="32" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1120" y="798" width="24" height="40" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1150" y="794" width="24" height="44" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1180" y="800" width="24" height="38" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1210" y="808" width="24" height="30" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1240" y="818" width="24" height="20" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <rect x="1270" y="826" width="24" height="12" rx="3" fill="#0369a1" fill-opacity="0.75" stroke="#075985" stroke-width="1"/>
+  <line x1="698" y1="838" x2="1308" y2="838" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="906" y="842" width="122" height="16" rx="4" fill="none" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="967" y="856" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">表位：氘进不来</text>
+  <text x="1004" y="858" font-size="9.5" fill="#64748b" text-anchor="middle">氘掺入时间窗：秒至小时</text>
+  <text x="1130" y="782" font-size="10" fill="#475569">骤冷猝灭、蛋白酶水解、</text>
+  <text x="1130" y="795.5" font-size="10" fill="#475569">逐肽读出——保护图谱定位表位与变构传导路径。</text>
+  <text x="700" y="934" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">一个量「谁挨着谁」、一个量「谁被保护」——质谱从两个入口加入结构生物学，再交由整合建模拼合</text>
+</svg>

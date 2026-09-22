@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">层析分离的物理化学基础</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">V<tspan dy="3.7" font-size="12.2">e</tspan><tspan dy="-3.7">=V</tspan><tspan dy="3.7" font-size="12.2">0</tspan><tspan dy="-3.7">+K</tspan><tspan dy="3.7" font-size="12.2">d</tspan><tspan dy="-3.7">·V</tspan><tspan dy="3.7" font-size="12.2">s</tspan><tspan dy="-3.7">与R</tspan><tspan dy="3.7" font-size="12.2">s</tspan><tspan dy="-3.7">=2(V</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">−V</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">)/(w</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">+w</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">)；N=16(t</tspan><tspan dy="3.7" font-size="12.2">R</tspan><tspan dy="-3.7">/w</tspan><tspan dy="3.7" font-size="12.2">b</tspan><tspan dy="-3.7">)</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">，塔板数正比柱长、反比粒径平方；vanDeemter三项权衡决定蛋白层析宜低线速（约30–150cm/h）</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、保留与分配：层析的基本语言</text>
+  <text x="50" y="170" font-size="10.5" fill="#475569">层析由携带样品流动的流动相与固定在柱内的固定相构成，分子在两相间反复分配。分配系数 K<tspan dy="2.3" font-size="7.6">d</tspan><tspan dy="-2.3"> 越大，滞留越久、</tspan></text>
+  <text x="50" y="185" font-size="10.5" fill="#475569">保留体积 V<tspan dy="2.3" font-size="7.6">e</tspan><tspan dy="-2.3"> 越大：</tspan></text>
+  <line x1="66" y1="204" x2="334" y2="204" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="200" y="196" font-size="9.5" fill="#64748b" text-anchor="middle">流动相（洗脱液）</text>
+  <rect x="60" y="216" width="280" height="60" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <circle cx="74" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="74" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="74" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="99" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="99" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="99" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="124" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="124" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="124" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="149" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="149" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="149" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="174" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="174" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="174" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="199" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="199" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="199" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="224" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="224" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="224" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="249" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="249" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="249" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="274" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="274" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="274" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="299" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="299" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="299" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="324" cy="230" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="324" cy="247" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="324" cy="264" r="6.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="105" cy="247" r="5.5" fill="#be185d"/>
+  <circle cx="185" cy="247" r="5.5" fill="#0f766e"/>
+  <text x="140" y="294" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">溶质 A：K<tspan dy="2.2" font-size="7.2">d</tspan><tspan dy="-2.2"> 小，先流出</tspan></text>
+  <text x="285" y="294" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">溶质 B：K<tspan dy="2.2" font-size="7.2">d</tspan><tspan dy="-2.2"> 大，后流出</tspan></text>
+  <rect x="104.10341600000001" y="312.65" width="91.793168" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="150" y="325.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">V<tspan dy="2.4" font-size="7.9">e</tspan><tspan dy="-2.4"> = V</tspan><tspan dy="2.4" font-size="7.9">0</tspan><tspan dy="-2.4"> + K</tspan><tspan dy="2.4" font-size="7.9">d</tspan><tspan dy="-2.4">·V</tspan><tspan dy="2.4" font-size="7.9">s</tspan></text>
+  <rect x="291.0446" y="312.65" width="137.9108" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="360" y="325.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">R<tspan dy="2.4" font-size="7.9">s</tspan><tspan dy="-2.4"> = 2(V</tspan><tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4"> − V</tspan><tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4">)/(w</tspan><tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4"> + w</tspan><tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4">)</tspan></text>
+  <rect x="516.729266" y="313.075" width="96.541468" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="565" y="325.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">k′ = (V<tspan dy="2.3" font-size="7.6">e</tspan><tspan dy="-2.3"> − V</tspan><tspan dy="2.3" font-size="7.6">0</tspan><tspan dy="-2.3">)/V</tspan><tspan dy="2.3" font-size="7.6">0</tspan></text>
+  <rect x="60" y="340" width="590" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="60" y1="437.5" x2="650" y2="437.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="207.5" y1="470" x2="207.5" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="60" y1="405" x2="650" y2="405" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="355" y1="470" x2="355" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="60" y1="372.5" x2="650" y2="372.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="502.5" y1="470" x2="502.5" y2="340" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="95.4" y1="470" x2="95.4" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="95.4" y="492" font-size="13" fill="#64748b" text-anchor="middle">V<tspan dy="2.9" font-size="9.4">0</tspan></text>
+  <line x1="225.20000000000002" y1="470" x2="225.20000000000002" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="225.20000000000002" y="492" font-size="13" fill="#64748b" text-anchor="middle">V<tspan dy="2.9" font-size="9.4">1</tspan></text>
+  <line x1="431.7" y1="470" x2="431.7" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="431.7" y="492" font-size="13" fill="#64748b" text-anchor="middle">V<tspan dy="2.9" font-size="9.4">2</tspan></text>
+  <line x1="620.5" y1="470" x2="620.5" y2="476" stroke="#475569" stroke-width="1.8"/>
+  <text x="620.5" y="492" font-size="13" fill="#64748b" text-anchor="middle">V<tspan dy="2.9" font-size="9.4">t</tspan></text>
+  <text x="355" y="514" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">流出体积（柱体积 CV）</text>
+  <path d="M 129,468 L 129.0,467.6 L 132.0,467.5 L 135.0,467.3 L 138.0,467.1 L 141.0,466.8 L 144.0,466.4 L 147.0,465.9 L 150.0,465.3 L 153.0,464.5 L 156.0,463.6 L 159.0,462.5 L 162.0,461.2 L 165.0,459.6 L 168.0,457.8 L 171.0,455.7 L 174.0,453.4 L 177.0,450.8 L 180.0,447.9 L 183.0,444.7 L 186.0,441.4 L 189.0,437.8 L 192.0,434.1 L 195.0,430.4 L 198.0,426.6 L 201.0,423.0 L 204.0,419.5 L 207.0,416.2 L 210.0,413.3 L 213.0,410.8 L 216.0,408.7 L 219.0,407.2 L 222.0,406.3 L 225.0,406.0 L 228.0,406.3 L 231.0,407.2 L 234.0,408.7 L 237.0,410.8 L 240.0,413.3 L 243.0,416.2 L 246.0,419.5 L 249.0,423.0 L 252.0,426.6 L 255.0,430.4 L 258.0,434.1 L 261.0,437.8 L 264.0,441.4 L 267.0,444.7 L 270.0,447.9 L 273.0,450.8 L 276.0,453.4 L 279.0,455.7 L 282.0,457.8 L 285.0,459.6 L 288.0,461.2 L 291.0,462.5 L 294.0,463.6 L 297.0,464.5 L 300.0,465.3 L 303.0,465.9 L 306.0,466.4 L 309.0,466.8 L 312.0,467.1 L 315.0,467.3 L 318.0,467.5 L 321.0,467.6 L 321,468 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1.8"/>
+  <path d="M 309.2,468 L 309.2,467.5 L 312.2,467.3 L 315.2,467.0 L 318.2,466.8 L 321.2,466.4 L 324.2,466.0 L 327.2,465.4 L 330.2,464.7 L 333.2,463.9 L 336.2,462.9 L 339.2,461.7 L 342.2,460.3 L 345.2,458.7 L 348.2,456.8 L 351.2,454.6 L 354.2,452.2 L 357.2,449.4 L 360.2,446.3 L 363.2,442.9 L 366.2,439.2 L 369.2,435.2 L 372.2,430.9 L 375.2,426.3 L 378.2,421.6 L 381.2,416.8 L 384.2,411.9 L 387.2,407.0 L 390.2,402.1 L 393.2,397.5 L 396.2,393.1 L 399.2,389.0 L 402.2,385.4 L 405.2,382.3 L 408.2,379.7 L 411.2,377.8 L 414.2,376.6 L 417.2,376.0 L 420.2,376.2 L 423.2,377.1 L 426.2,378.6 L 429.2,380.9 L 432.2,383.7 L 435.2,387.1 L 438.2,390.9 L 441.2,395.1 L 444.2,399.6 L 447.2,404.4 L 450.2,409.2 L 453.2,414.2 L 456.2,419.1 L 459.2,423.8 L 462.2,428.5 L 465.2,432.9 L 468.2,437.1 L 471.2,441.0 L 474.2,444.5 L 477.2,447.8 L 480.2,450.7 L 483.2,453.4 L 486.2,455.7 L 489.2,457.7 L 492.2,459.5 L 495.2,461.0 L 498.2,462.3 L 501.2,463.4 L 504.2,464.3 L 507.2,465.1 L 510.2,465.7 L 513.2,466.2 L 516.2,466.6 L 519.2,466.9 L 522.2,467.2 L 525.2,467.4 L 526.8,468 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="225" y="392" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">峰 1（杂质）</text>
+  <text x="418" y="360" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">峰 2（目标蛋白）</text>
+  <rect x="505.64884" y="411.5" width="108.70232" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="423.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">R<tspan dy="2.2" font-size="7.2">s</tspan><tspan dy="-2.2"> 达 1.5＝基线分离</tspan></text>
+  <line x1="165" y1="508" x2="285" y2="508" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="165" y1="502" x2="165" y2="514" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="285" y1="502" x2="285" y2="514" stroke="#64748b" stroke-width="1.4"/>
+  <text x="225" y="528" font-size="9.5" fill="#64748b" text-anchor="middle">w<tspan dy="2.1" font-size="6.8">1</tspan></text>
+  <line x1="310" y1="508" x2="526" y2="508" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="310" y1="502" x2="310" y2="514" stroke="#64748b" stroke-width="1.4"/>
+  <line x1="526" y1="502" x2="526" y2="514" stroke="#64748b" stroke-width="1.4"/>
+  <text x="418" y="528" font-size="9.5" fill="#64748b" text-anchor="middle">w<tspan dy="2.1" font-size="6.8">2</tspan></text>
+  <text x="50" y="548" font-size="10" fill="#475569">R<tspan dy="2.2" font-size="7.2">s</tspan><tspan dy="-2.2"> 达 1.5 视为基线分离，1.0 时仍有约 2% 交叉污染；k′ 以 1 至 10 为优，选择性 α = k′</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">/k′</tspan><tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2">。优化顺序：先改选择性（换机理、换 pH）</tspan></text>
+  <text x="50" y="561" font-size="10" fill="#475569">，再补柱效（加长柱），最后才调流速。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、塔板理论与 van Deemter 三项权衡</text>
+  <rect x="826.383012" y="154.65" width="87.233976" height="18.7" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="870" y="167.96" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">N = 16(t<tspan dy="2.4" font-size="7.9">R</tspan><tspan dy="-2.4">/w</tspan><tspan dy="2.4" font-size="7.9">b</tspan><tspan dy="-2.4">)</tspan><tspan dy="-3.7" font-size="7.9">2</tspan></text>
+  <rect x="1092.542" y="154.65" width="74.91600000000001" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1130" y="167.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">HETP = L/N</text>
+  <text x="855" y="188" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">同一根柱：t<tspan dy="2.2" font-size="7.2">R</tspan><tspan dy="-2.2"> = 30 min</tspan></text>
+  <rect x="760.7" y="206.43478260869566" width="73.60000000000001" height="69.56521739130434" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="797.5" y="197.43478260869566" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">N = 14400</text>
+  <text x="797.5" y="296" font-size="12.5" fill="#64748b" text-anchor="middle">w<tspan dy="2.8" font-size="9.0">b</tspan><tspan dy="-2.8"> 1 min</tspan></text>
+  <rect x="875.7" y="258.60869565217394" width="73.60000000000001" height="17.391304347826086" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="912.5" y="249.60869565217394" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">N = 3600</text>
+  <text x="912.5" y="296" font-size="12.5" fill="#64748b" text-anchor="middle">w<tspan dy="2.8" font-size="9.0">b</tspan><tspan dy="-2.8"> 2 min</tspan></text>
+  <text x="740" y="322" font-size="10" fill="#475569">峰宽自 1 分钟增至 2 分钟，</text>
+  <text x="740" y="336" font-size="10" fill="#475569">塔板数跌至四分之一——分辨率几乎腰斩；</text>
+  <text x="740" y="350" font-size="10" fill="#475569">装填质量与操作纪律立竿见影。</text>
+  <rect x="740" y="363" width="290" height="150" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="740" y1="475.5" x2="1030" y2="475.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="812.5" y1="513" x2="812.5" y2="363" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="438" x2="1030" y2="438" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="885" y1="513" x2="885" y2="363" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="740" y1="400.5" x2="1030" y2="400.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="957.5" y1="513" x2="957.5" y2="363" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="774.8" y1="513" x2="774.8" y2="519" stroke="#475569" stroke-width="1.8"/>
+  <text x="774.8" y="535" font-size="13" fill="#64748b" text-anchor="middle">低</text>
+  <line x1="885" y1="513" x2="885" y2="519" stroke="#475569" stroke-width="1.8"/>
+  <text x="885" y="535" font-size="13" fill="#64748b" text-anchor="middle">中</text>
+  <line x1="1001" y1="513" x2="1001" y2="519" stroke="#475569" stroke-width="1.8"/>
+  <text x="1001" y="535" font-size="13" fill="#64748b" text-anchor="middle">高</text>
+  <line x1="734" y1="513" x2="740" y2="513" stroke="#475569" stroke-width="1.8"/>
+  <text x="730" y="517" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="734" y1="363" x2="740" y2="363" stroke="#475569" stroke-width="1.8"/>
+  <text x="885" y="557" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">线性流速 u</text>
+  <text x="694" y="438" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">塔板高度 H</text>
+  <text x="885" y="351" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">H = A + B/u + C·u</text>
+  <path d="M748.7,384 C752.1,393.0 760.8,424.5 769,438 C777.2,451.5 785.9,458.0 798,465 C810.1,472.0 827.0,478.5 841.5,480 C856.0,481.5 868.1,478.5 885,474 C901.9,469.5 922.7,461.5 943,453 C963.3,444.5 996.2,428.0 1006.8,423" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <line x1="841" y1="513" x2="841" y2="383" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="841" y="452" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">u<tspan dy="2.2" font-size="7.2">opt</tspan><tspan dy="-2.2"> = (B/C)</tspan><tspan dy="-3.4" font-size="7.2">1/2</tspan></text>
+  <text x="790" y="412" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">B/u 纵向扩散</text>
+  <text x="1000" y="408" font-size="9.5" fill="#64748b" text-anchor="middle" font-weight="700">C·u 传质阻力</text>
+  <line x1="745" y1="490" x2="1025" y2="490" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="885" y="505" font-size="9" fill="#64748b" text-anchor="middle">A 涡流扩散（正比粒径）</text>
+  <text x="1060" y="188" font-size="10" fill="#475569">蛋白扩散系数仅约 10<tspan dy="-3.4" font-size="7.2">-6</tspan><tspan dy="3.4"> cm</tspan><tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4">/s，比小分子低一至两个数量级，</tspan></text>
+  <text x="1060" y="202" font-size="10" fill="#475569">C 项传质阻力对蛋白尤其苛刻——常规琼脂糖介质宜在约 30 至 150 cm/h 低线速运行，</text>
+  <text x="1060" y="216" font-size="10" fill="#475569">只有足够细的介质才配得上高流速。</text>
+  <rect x="1107.55995" y="279.075" width="194.8801" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1205" y="291.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">冷间 4–8 °C：标称流速再降三至五成</text>
+  <text x="1060" y="320" font-size="10" fill="#475569">优质分析柱每米可达数万至十余万塔板；</text>
+  <text x="1060" y="334" font-size="10" fill="#475569">一支 30 cm 排阻柱通常给出约一万至两万塔板。</text>
+  <text x="1060" y="348" font-size="10" fill="#475569">塔板数正比柱长、</text>
+  <text x="1060" y="362" font-size="10" fill="#475569">反比粒径平方——加长柱或换细介质都提高分辨率，</text>
+  <text x="1060" y="376" font-size="10" fill="#475569">后者幅度大得多。</text>
+  <text x="1060" y="412" font-size="10" fill="#475569">流程经济学：细介质更贵、更怕堵塞，</text>
+  <text x="1060" y="426" font-size="10" fill="#475569">捕获用的粗介质反而耐用——把贵介质留给最后的精纯。</text>
+  <rect x="1115.8875" y="487.075" width="178.225" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1205" y="499.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">柱外展宽：管路与检测池尽量短细</text>
+  <rect x="30" y="578" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、流速换算、柱压与粒径谱系</text>
+  <rect x="218.91924999999998" y="608.65" width="262.16150000000005" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="350" y="621.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">体积流速（mL/min）= 线性流速 × 柱截面积 ÷ 60</text>
+  <rect x="110.5014" y="643.075" width="148.9972" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="185" y="655.78" font-size="10.5" fill="#1e293b" text-anchor="middle">内径 16 mm＝截面积约 2 cm<tspan dy="-3.6" font-size="7.6">2</tspan></text>
+  <rect x="387.055" y="643.075" width="185.89000000000001" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="480" y="655.78" font-size="10.5" fill="#1e293b" text-anchor="middle">5 mL 柱在 150 cm/h 对应约 5 mL/min</text>
+  <rect x="50" y="690" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="717.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">介质粒径</text>
+  <rect x="170" y="690" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="265" y="717.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">典型代表</text>
+  <rect x="360" y="690" width="310" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="717.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">定位与反压</text>
+  <rect x="50" y="734" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="759.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">60–90 μm</text>
+  <rect x="170" y="734" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="265" y="759.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">Sepharose Fast Flow 级</text>
+  <rect x="360" y="734" width="310" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="759.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">捕获：数百 cm/h，反压低</text>
+  <rect x="50" y="774" width="620" height="40" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="774" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="799.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">20–45 μm</text>
+  <rect x="170" y="774" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="265" y="799.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">High Performance 级</text>
+  <rect x="360" y="774" width="310" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="799.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">精纯：约 100–300 cm/h，反压中等</text>
+  <rect x="50" y="814" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="110" y="839.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">约 10 μm 及更细</text>
+  <rect x="170" y="814" width="190" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="265" y="839.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">分析级与 UPLC 填料（1.7–5 μm）</text>
+  <rect x="360" y="814" width="310" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="515" y="839.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">超高柱效，需 10–100 MPa 耐压系统</text>
+  <text x="50" y="874" font-size="10" fill="#475569">反压与流速、粘度、柱长成正比而与粒径平方成反比；细介质、长柱、低温三者都推高压降。常规中低压系统约 0.5–5 MPa，</text>
+  <text x="50" y="888" font-size="10" fill="#475569">高端可至 20 MPa，超高效液相要求 100 MPa 以上；超压运行把软胶基压实变形——初学者最常见也最昂贵的错误。</text>
+  <rect x="165.58069999999995" y="929.075" width="368.8386000000001" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="350" y="941.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">柱体积 CV 是流程语言：平衡 5–10 CV · 洗脱梯度 10–20 CV · 再生 3 CV</text>
+  <rect x="710" y="578" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="600.84" font-size="19" fill="#475569" font-weight="700">四、结合容量与三段式分工</text>
+  <rect x="730" y="618" width="90" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">阶段</text>
+  <rect x="820" y="618" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">目标</text>
+  <rect x="1040" y="618" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">容量利用</text>
+  <rect x="1170" y="618" width="90" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">分辨率</text>
+  <rect x="1260" y="618" width="90" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1305" y="645.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">流速</text>
+  <rect x="730" y="662" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="688.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">捕获</text>
+  <rect x="820" y="662" width="220" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="688.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">从粗提液快速浓缩并脱杂质</text>
+  <rect x="1040" y="662" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="688.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高，上样至近饱和</text>
+  <rect x="1170" y="662" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="688.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">中</text>
+  <rect x="1260" y="662" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1305" y="688.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高</text>
+  <rect x="730" y="704" width="620" height="42" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="704" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="730.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">中间纯化</text>
+  <rect x="820" y="704" width="220" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="730.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">去除大部分杂蛋白与核酸</text>
+  <rect x="1040" y="704" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="730.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">中</text>
+  <rect x="1170" y="704" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="730.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">高</text>
+  <rect x="1260" y="704" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1305" y="730.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">中</text>
+  <rect x="730" y="746" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="775" y="772.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">精纯</text>
+  <rect x="820" y="746" width="220" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="930" y="772.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">去除痕量杂质与聚合体</text>
+  <rect x="1040" y="746" width="130" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="772.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">低</text>
+  <rect x="1170" y="746" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1215" y="772.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">极高</text>
+  <rect x="1260" y="746" width="90" height="42" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1305" y="772.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">低</text>
+  <text x="730" y="790" font-size="10" fill="#475569">吸附型层析上样控制在动态结合容量（DBC）的 70–80% 以内：IMAC 约 10–50 mg/mL，离子交换数十至逾百 mg/mL；</text>
+  <text x="730" y="804" font-size="10" fill="#475569">样品电导过高时先稀释或脱盐。SEC 是唯一例外——不靠吸附而靠筛分，上样量以柱体积的 0.5–2% 计，</text>
+  <text x="730" y="818" font-size="10" fill="#475569">上样体积本身就是分辨率的决定变量。</text>
+  <rect x="783.17815" y="869.075" width="493.64369999999997" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1030" y="881.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">算例：1 mL 镍介质标称 DBC 30 mg/mL，八折可结合约 24 mg；粗提液 2 mg/mL 时一次上样约 12 mL</text>
+  <text x="730" y="916" font-size="10" fill="#64748b">峰形是诊断工具：拖尾峰提示过载、次级相互作用或柱头塌陷——出现即须排查根因而非硬调参数；</text>
+  <text x="730" y="930" font-size="10" fill="#64748b">第 2 章的亲和标签正是「捕获」的理想入口。</text>
+</svg>

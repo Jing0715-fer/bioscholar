@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">二维晶体电子晶体学：分账、unbending 与 lattice lines</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">透析（截留8–14kDa）、亲和与脂单层三路结晶；衍射收振幅（单图低于1e⁻/Å²）、图像收相位；unbending四步把信息界限推进3Å以内；倾角步长约3–5度保1/t采样，AQP1</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">得2.2Å面内、3.8Å垂直</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、二维结晶：把膜蛋白排进阵列</text>
+  <rect x="60" y="190" width="180" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <rect x="78" y="214" width="124" height="84" rx="6" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="140" y="240" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="700">透析袋（截留 8–14 kDa）</text>
+  <circle cx="92" cy="276" r="5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="112" cy="276" r="5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="132" cy="276" r="5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="152" cy="276" r="5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="172" cy="276" r="5" fill="#0f766e" fill-opacity="0.7"/>
+  <circle cx="192" cy="276" r="5" fill="#0f766e" fill-opacity="0.7"/>
+  <text x="150" y="316" font-size="9" fill="#64748b" text-anchor="middle">袋外缓冲液缓慢耗竭去垢剂</text>
+  <text x="150" y="346" font-size="11" fill="#134e4a" text-anchor="middle" font-weight="700">去垢剂透析重组</text>
+  <text x="150" y="362" font-size="9.5" fill="#64748b" text-anchor="middle">数天到数周</text>
+  <rect x="270" y="190" width="180" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="288" y1="240" x2="288" y2="300" stroke="#b45309" stroke-width="3"/>
+  <circle cx="288" cy="258" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="322" y1="240" x2="322" y2="300" stroke="#b45309" stroke-width="3"/>
+  <circle cx="322" cy="258" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="356" y1="240" x2="356" y2="300" stroke="#b45309" stroke-width="3"/>
+  <circle cx="356" cy="258" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="390" y1="240" x2="390" y2="300" stroke="#b45309" stroke-width="3"/>
+  <circle cx="390" cy="258" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="424" y1="240" x2="424" y2="300" stroke="#b45309" stroke-width="3"/>
+  <circle cx="424" cy="258" r="6.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="360" y="316" font-size="9" fill="#64748b" text-anchor="middle">镍螯合脂配 His、抗体脂配 FLAG</text>
+  <text x="360" y="346" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">亲和重组</text>
+  <text x="360" y="362" font-size="9.5" fill="#64748b" text-anchor="middle">标签定向排列</text>
+  <rect x="480" y="190" width="170" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="498" y1="270" x2="632" y2="270" stroke="#0369a1" stroke-width="4"/>
+  <circle cx="506" cy="258" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="530" cy="258" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="554" cy="258" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="578" cy="258" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="602" cy="258" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <circle cx="626" cy="258" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="565" y="316" font-size="9" fill="#64748b" text-anchor="middle">气液界面脂单层成核</text>
+  <text x="565" y="346" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">脂单层结晶</text>
+  <text x="565" y="362" font-size="9.5" fill="#64748b" text-anchor="middle">二维组装快</text>
+  <rect x="207.73225" y="461.075" width="144.5355" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="280" y="473.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">紫膜：六角 p3、a 约 62 Å</text>
+  <rect x="428.1416" y="461.075" width="263.71680000000003" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="560" y="473.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">AQP1：正方晶格、边长约 9.6 nm、每格一个四聚体</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、数据采集分账：衍射收振幅、图像收相位</text>
+  <rect x="740" y="190" width="170" height="150" fill="#0f172a" fill-opacity="0.06" stroke="#475569" stroke-width="1.8"/>
+  <text x="825" y="208" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">电子衍射图</text>
+  <circle cx="765" cy="268" r="5" fill="#0369a1"/>
+  <circle cx="765" cy="268" r="8.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="795" cy="238" r="5" fill="#0369a1"/>
+  <circle cx="795" cy="238" r="8.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="795" cy="268" r="7" fill="#0369a1"/>
+  <circle cx="795" cy="268" r="10.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="795" cy="298" r="5" fill="#0369a1"/>
+  <circle cx="795" cy="298" r="8.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="825" cy="238" r="7" fill="#0369a1"/>
+  <circle cx="825" cy="238" r="10.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="825" cy="268" r="9" fill="#0369a1"/>
+  <circle cx="825" cy="268" r="12.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="825" cy="298" r="7" fill="#0369a1"/>
+  <circle cx="825" cy="298" r="10.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="855" cy="238" r="5" fill="#0369a1"/>
+  <circle cx="855" cy="238" r="8.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="855" cy="268" r="7" fill="#0369a1"/>
+  <circle cx="855" cy="268" r="10.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="855" cy="298" r="5" fill="#0369a1"/>
+  <circle cx="855" cy="298" r="8.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <circle cx="885" cy="268" r="5" fill="#0369a1"/>
+  <circle cx="885" cy="268" r="8.5" fill="none" stroke="#0369a1" stroke-width="1" opacity="0.4"/>
+  <text x="825" y="352" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">强度正比 |F|<tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <text x="825" y="368" font-size="9.5" fill="#64748b" text-anchor="middle">单图剂量可低于 1 e<tspan dy="-3.2" font-size="6.8">-</tspan><tspan dy="3.2">/Å</tspan><tspan dy="-3.2" font-size="6.8">2</tspan></text>
+  <rect x="940" y="190" width="170" height="150" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <text x="1025" y="208" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">高分辨图像</text>
+  <rect x="961" y="234" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="961" y="264" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="961" y="294" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="991" y="234" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="991" y="264" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="991" y="294" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1021" y="234" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1021" y="264" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1021" y="294" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1051" y="234" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1051" y="264" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1051" y="294" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1081" y="234" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1081" y="264" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="1081" y="294" width="8" height="8" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <text x="1025" y="352" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">透镜传播相位</text>
+  <text x="1025" y="368" font-size="9.5" fill="#64748b" text-anchor="middle">晶格条纹携带相位信息</text>
+  <line x1="915" y1="268" x2="935" y2="268" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="1115" y1="268" x2="1150" y2="268" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="1155" y="226" width="130" height="84" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1220" y="258" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">振幅 + 相位</text>
+  <text x="1220" y="280" font-size="9.5" fill="#475569" text-anchor="middle">绕开同晶置换</text>
+  <text x="1220" y="296" font-size="9.5" fill="#475569" text-anchor="middle">与分子置换</text>
+  <text x="740" y="404" font-size="10.5" fill="#475569">分账纪律：衍射强度给振幅（剂量账宽松），图像给相位（透镜的物理馈赠）——相位问题被成像几何直接绕开，</text>
+  <text x="740" y="419" font-size="10.5" fill="#475569">这是电子晶体学相对 X 射线晶体学的根本红利。</text>
+  <text x="1040" y="470" font-size="10" fill="#64748b" text-anchor="middle">紫膜天然晶格与重组晶格共用同一套分账</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、unbending：把弯晶掰直</text>
+  <circle cx="66" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="74.02086624055292" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="73.27646763437632" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="64.58028875271076" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="57.43558133499435" cy="748" r="4.5" fill="#64748b"/>
+  <circle cx="104.31482984743782" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="108.99616242737355" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="103.84641892210446" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="94.49327898151553" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="91.157926486381" cy="748" r="4.5" fill="#64748b"/>
+  <circle cx="141.57323886327106" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="141.76888429983987" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="133.4746327091518" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="125.7545065692549" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="127.04511961199611" cy="748" r="4.5" fill="#64748b"/>
+  <circle cx="176.9774548794365" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="172.6395123463932" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="163.23147473182357" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="159.03451852047743" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="164.63511001652788" cy="748" r="4.5" fill="#64748b"/>
+  <circle cx="210.18367684143112" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="202.3742259618996" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="194.1558180482777" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="194.5095930199849" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="203.04894284365443" cy="748" r="4.5" fill="#64748b"/>
+  <circle cx="241.3862492969356" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="232.01731601034632" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="227.0006906819231" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="231.8185803852762" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="241.2059578794938" cy="748" r="4.5" fill="#64748b"/>
+  <circle cx="271.2700800725388" cy="628" r="4.5" fill="#64748b"/>
+  <circle cx="262.6355060004203" cy="658" r="4.5" fill="#64748b"/>
+  <circle cx="262.0489080985186" cy="688" r="4.5" fill="#64748b"/>
+  <circle cx="270.15132510435916" cy="718" r="4.5" fill="#64748b"/>
+  <circle cx="278.08837286230465" cy="748" r="4.5" fill="#64748b"/>
+  <text x="170" y="800" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">弯晶：点阵畸变抹宽衍射点</text>
+  <line x1="330" y1="700" x2="380" y2="700" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <circle cx="396" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="396" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="396" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="396" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="396" cy="748" r="4.5" fill="#059669"/>
+  <circle cx="430" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="430" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="430" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="430" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="430" cy="748" r="4.5" fill="#059669"/>
+  <circle cx="464" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="464" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="464" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="464" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="464" cy="748" r="4.5" fill="#059669"/>
+  <circle cx="498" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="498" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="498" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="498" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="498" cy="748" r="4.5" fill="#059669"/>
+  <circle cx="532" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="532" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="532" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="532" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="532" cy="748" r="4.5" fill="#059669"/>
+  <circle cx="566" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="566" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="566" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="566" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="566" cy="748" r="4.5" fill="#059669"/>
+  <circle cx="600" cy="628" r="4.5" fill="#059669"/>
+  <circle cx="600" cy="658" r="4.5" fill="#059669"/>
+  <circle cx="600" cy="688" r="4.5" fill="#059669"/>
+  <circle cx="600" cy="718" r="4.5" fill="#059669"/>
+  <circle cx="600" cy="748" r="4.5" fill="#059669"/>
+  <text x="500" y="800" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">掰直后：衍射点锐利、信噪提升</text>
+  <rect x="98.26105" y="839.925" width="103.4779" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="150" y="851.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">1 傅里叶变换识点阵</text>
+  <rect x="243.58355" y="839.925" width="132.8329" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="310" y="851.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">2 点阵滤波互相关解位移场</text>
+  <rect x="423.15355" y="839.925" width="93.69290000000001" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="470" y="851.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">3 二次插值重采样</text>
+  <rect x="597.83105" y="839.925" width="64.33789999999999" height="16.15" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="630" y="851.42" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">4 迭代收敛</text>
+  <rect x="197.55839999999998" y="897.075" width="204.88320000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="300" y="909.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">信息界限从约 3.5–4 Å 推进到 3 Å 以内</text>
+  <text x="360" y="950" font-size="9.5" fill="#64748b" text-anchor="middle">晶格缺陷与漂移是二维晶体的常态，unbending 是流水线的必经站</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、lattice lines：倾角采样与各向异性</text>
+  <line x1="740" y1="820" x2="900" y2="820" stroke="#475569" stroke-width="2.6" marker-end="url(#arr-ink)"/>
+  <text x="820" y="846" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">z<tspan dy="-3.7" font-size="7.9">*</tspan></text>
+  <circle cx="750" cy="820" r="4" fill="#0369a1"/>
+  <line x1="750" y1="820" x2="750" y2="680" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <circle cx="790" cy="820" r="4" fill="#0369a1"/>
+  <line x1="790" y1="820" x2="790" y2="680" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <circle cx="830" cy="820" r="4" fill="#0369a1"/>
+  <line x1="830" y1="820" x2="830" y2="680" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <polyline points="884.8328836739238,776.4873022210535 882.1250183979602,773.2776021911085 879.2295593440288,770.2360523391405 876.1569270380031,767.3735989601373 872.9181796381404,764.7005437951844 869.5249731376525,762.2265069563225 865.989519415718,759.9603923045323 862.3245422879038,757.9103554054501 858.5432317141699,756.0837741781385 854.6591963292562,754.4872223425446 850.6864144662937,753.1264457612076 846.6391838498994,752.0063417603579 842.5320701398077,751.1309415048315 838.3798545102244,750.5033954902294 834.1974804535611,750.1259622045357 830,750 825.8025195464389,750.1259622045357 821.6201454897756,750.5033954902294 817.4679298601923,751.1309415048315 813.3608161501006,752.0063417603579 809.3135855337063,753.1264457612076 805.3408036707438,754.4872223425446 801.4567682858301,756.0837741781384 797.6754577120962,757.9103554054501 794.010480584282,759.9603923045323 790.4750268623475,762.2265069563225 787.0818203618596,764.7005437951844 783.8430729619969,767.3735989601373 780.7704406559712,770.2360523391405 777.8749816020398,773.2776021911084 775.1671163260762,776.4873022210535" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <text x="920" y="760" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">倾角 θ 处切点：z<tspan dy="-3.4" font-size="7.2">*</tspan><tspan dy="3.4"> = g·sin θ</tspan></text>
+  <text x="940" y="800" font-size="10" fill="#475569">lattice line 沿 z<tspan dy="-3.4" font-size="7.2">*</tspan><tspan dy="3.4"> 连续；倾角步长乘 g·cos θ 即沿线采样间隔——以 3 Å 目标</tspan></text>
+  <text x="940" y="814" font-size="10" fill="#475569">（g 约 0.33 Å<tspan dy="-3.4" font-size="7.2">-1</tspan><tspan dy="3.4">）与含脂双层约 6 nm 厚度核算，</tspan></text>
+  <text x="940" y="828" font-size="10" fill="#475569">步长约 3–5 度才能满足 1/t 采样密度。</text>
+  <text x="740" y="620" font-size="10" fill="#475569">垂直方向信息只来自高倾角投影，分辨率被最大倾角系统性压一档：紫膜以 60 度内倾角得三向 3.5 Å；AQP1 得 2.2 Å 面内、3.8 Å 垂直</text>
+  <text x="740" y="634" font-size="10" fill="#475569">（Murata 等 2000 年，Nature）；AQP0 二维晶体直接可视化脂质（Gonen 等 2005 年前后）。</text>
+  <rect x="820.7025" y="921.075" width="158.595" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="900" y="933.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">面内与垂直分辨率各记各的账</text>
+  <text x="1150" y="880" font-size="9" fill="#64748b" text-anchor="middle">「沙漏」构型与 ar/R 选滤器</text>
+  <text x="1150" y="896" font-size="9" fill="#64748b" text-anchor="middle">由此定案（AQP1 案例）</text>
+</svg>

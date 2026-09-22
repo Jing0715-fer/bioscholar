@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useAppStore, type NavKey } from '@/lib/store'
 import { useTheme } from 'next-themes'
 import {
+  ArrowLeft,
   LayoutDashboard,
   BookOpen,
   MessageSquareText,
@@ -144,6 +145,42 @@ function ThemeToggle() {
   )
 }
 
+/** 返回上一级按钮：历史栈优先，空则回落逻辑父级（阅读器/测验回学科中心，其余回仪表盘） */
+function BackButton({ className }: { className?: string }) {
+  const view = useAppStore((s) => s.view)
+  const viewHistory = useAppStore((s) => s.viewHistory)
+  const goBack = useAppStore((s) => s.goBack)
+  if (view.name === 'dashboard') return null
+  const parentLabel =
+    viewHistory.length > 0
+      ? NAV_ITEMS.find(
+          (n) =>
+            n.key ===
+            (viewHistory[viewHistory.length - 1].name === 'reader'
+              ? 'subjects'
+              : viewHistory[viewHistory.length - 1].name)
+        )?.label ?? '上一页'
+      : view.name === 'reader' || view.name === 'quiz'
+        ? '学科中心'
+        : '学习仪表盘'
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button
+          variant="ghost"
+          onClick={() => goBack()}
+          aria-label={`返回${parentLabel}`}
+          className={cn('h-9 gap-1.5 px-2 text-sm font-medium', className)}
+        >
+          <ArrowLeft className="h-4 w-4" aria-hidden />
+          <span className="hidden sm:inline">返回{parentLabel}</span>
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent>返回上一级（{parentLabel}）</TooltipContent>
+    </Tooltip>
+  )
+}
+
 export default function Home() {
   const view = useAppStore((s) => s.view)
   const searchOpen = useAppStore((s) => s.searchOpen)
@@ -160,6 +197,11 @@ export default function Home() {
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
   }, [setSearchOpen])
+
+  // 视图切换后回到页面顶部（新页面一律从顶部开始阅读）
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior })
+  }, [view])
 
   return (
     <TooltipProvider delayDuration={200}>
@@ -187,7 +229,7 @@ export default function Home() {
           {/* 主内容区 */}
           <div className="flex min-w-0 flex-1 flex-col">
             {/* 移动端顶栏 */}
-            <header className="sticky top-0 z-40 flex h-14 items-center gap-2 border-b bg-background px-4 lg:hidden">
+            <header className="sticky top-0 z-40 flex h-14 items-center gap-1 border-b bg-background px-3 lg:hidden">
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" aria-label="打开菜单" className="h-9 w-9">
@@ -203,11 +245,12 @@ export default function Home() {
                   <NavList />
                 </SheetContent>
               </Sheet>
-              <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 items-center justify-center rounded-md border border-primary/30 bg-primary/10 text-primary">
+              <BackButton className="shrink-0" />
+              <div className="flex min-w-0 items-center gap-2">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-primary/30 bg-primary/10 text-primary">
                   <Dna className="h-4 w-4" />
                 </div>
-                <span className="font-serif text-sm font-bold">BioScholar</span>
+                <span className="truncate font-serif text-sm font-bold">BioScholar</span>
               </div>
               <div className="ml-auto flex items-center gap-1">
                 <Button
@@ -225,6 +268,7 @@ export default function Home() {
 
             {/* 桌面顶栏 */}
             <header className="hidden lg:flex sticky top-0 z-30 h-14 items-center gap-3 border-b bg-background px-6">
+              <BackButton className="-ml-2" />
               <div className="flex items-baseline gap-2.5">
                 <span className="bio-eyebrow text-muted-foreground/60">BioScholar</span>
                 <span className="h-3 w-px bg-border" aria-hidden />

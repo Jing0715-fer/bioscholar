@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">酵母与昆虫细胞表达系统</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">AOX1在甲醇诱导下驱动表达至可溶蛋白30%以上、发酵干重约100g/L；polh启动子强度约达感染晚期细胞总蛋白30%；MOI1–10感染、48–96小时收获，四体系各司其职</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、毕赤酵母：甲醇驱动的表达工厂</text>
+  <text x="50" y="170" font-size="10.5" fill="#475569">毕赤酵母（Komagataella phaffii）的王牌是 AOX1 启动子——控制醇氧化酶基因，</text>
+  <text x="50" y="184.5" font-size="10.5" fill="#475569">甲醇诱导下可驱动外源基因表达至可溶蛋白的 30% 以上；载体线性化后整合进基因组（单或多拷贝串联），zeocin 筛选，遗传稳定、</text>
+  <text x="50" y="199" font-size="10.5" fill="#475569">无质粒丢失。</text>
+  <ellipse cx="210" cy="300" rx="120" ry="76" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="178" cy="285" rx="26" ry="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="178" y="289" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">核</text>
+  <rect x="160" y="318" width="104" height="22" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="212" y="333" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">AOX1·目的基因</text>
+  <text x="212" y="356" font-size="9" fill="#64748b" text-anchor="middle">基因组整合</text>
+  <circle cx="58" cy="300" r="19" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="58" y="303.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">甲醇</text>
+  <line x1="80" y1="300" x2="96" y2="300" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="210" y="392" font-size="9.5" fill="#64748b" text-anchor="middle">α 交配因子前导肽引导分泌出胞</text>
+  <text x="350" y="248" font-size="10" fill="#475569">实验室以 0.5% 甲醇流加诱导 24–96 小时；发酵罐 pH 约 5.5、</text>
+  <text x="350" y="262" font-size="10" fill="#475569">溶氧维持 30% 以上；补料分批高密度发酵干重可达约 100 g/L，</text>
+  <text x="350" y="276" font-size="10" fill="#475569">毫克至克级收率屡见不鲜。</text>
+  <text x="350" y="322" font-size="10" fill="#475569">蛋白酶敏感产物选 SMD1168（pep4/prb1 缺陷）；</text>
+  <text x="350" y="336" font-size="10" fill="#475569">Mut+ 与 MutS 表型供诱导动力学调优；</text>
+  <text x="350" y="350" font-size="10" fill="#475569">适用于 20–150 kDa 分泌型真核酶与激素类蛋白。</text>
+  <text x="50" y="424" font-size="10" fill="#475569">短板：N-糖链为高甘露糖型，可延伸数十个甘露糖残基，与人体糖型差异大，可能影响结晶与活性；</text>
+  <text x="50" y="438" font-size="10" fill="#475569">GlycoSwitch 等糖工程菌株可改造为人源化糖型。</text>
+  <rect x="50" y="470" width="610" height="82" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="66" y="492" font-size="12" fill="#78350f" font-weight="700">酿酒酵母 Gal1 体系（备用平台）</text>
+  <text x="66" y="510" font-size="10" fill="#475569">半乳糖诱导、葡萄糖强阻遏；2 微米质粒每细胞约 20–50 拷贝但随代数波动；</text>
+  <text x="66" y="523.5" font-size="10" fill="#475569">1986 年获批的 HBsAg 乙肝疫苗在此自组装为 22 nm 病毒样颗粒，成为首个上市的重组亚单位疫苗；收率通常低于毕赤，</text>
+  <text x="66" y="537" font-size="10" fill="#475569">更多充当遗传筛选与 GPCR 小规模筛选平台。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、杆状病毒表达载体系统（BEVS）</text>
+  <text x="730" y="170" font-size="10.5" fill="#475569">常用苜蓿银纹夜蛾核多角体病毒 AcMNPV：</text>
+  <text x="730" y="184.5" font-size="10.5" fill="#475569">外源基因置于极晚期多角体蛋白启动子 polh 之下——多角体蛋白本可占感染晚期细胞总蛋白约 30%，强度冠绝昆虫体系；</text>
+  <text x="730" y="199" font-size="10.5" fill="#475569">polh 被取代后不再形成多角体，蚀斑即可验证重组。</text>
+  <rect x="730" y="228" width="180" height="58" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="820" y="248" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">DH10Bac 转座</text>
+  <text x="742" y="264" font-size="9.5" fill="#475569">mini-Tn7 插入 lacZα，</text>
+  <text x="742" y="275.5" font-size="9.5" fill="#475569">白斑筛重组 bacmid</text>
+  <rect x="946" y="228" width="180" height="58" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1036" y="248" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">转染 Sf9</text>
+  <text x="958" y="264" font-size="9.5" fill="#475569">重组 bacmid 转染昆虫细胞，</text>
+  <text x="958" y="275.5" font-size="9.5" fill="#475569">收 P1 代病毒</text>
+  <rect x="1162" y="228" width="180" height="58" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1252" y="248" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">扩增种子</text>
+  <text x="1174" y="264" font-size="9.5" fill="#475569">P2/P3 滴度约 10<tspan dy="-3.2" font-size="6.8">8</tspan><tspan dy="3.2"> pfu/mL</tspan></text>
+  <line x1="914" y1="257" x2="942" y2="257" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1130" y1="257" x2="1158" y2="257" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <path d="M 1252,290 L 1252,306 L 820,306 L 820,316" fill="none" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="730" y="322" width="180" height="58" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="820" y="342" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">感染表达</text>
+  <text x="742" y="358" font-size="9.5" fill="#475569">MOI 1–10 接种；</text>
+  <text x="742" y="369.5" font-size="9.5" fill="#475569">高 MOI 同步感染使表达最大化</text>
+  <rect x="946" y="322" width="180" height="58" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1036" y="342" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">收获窗口</text>
+  <text x="958" y="358" font-size="9.5" fill="#475569">感染后 48–96 小时；</text>
+  <text x="958" y="369.5" font-size="9.5" fill="#475569">过晚收获遭蛋白酶与糖苷酶降解</text>
+  <line x1="914" y1="351" x2="942" y2="351" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="730" y="398" width="610" height="82" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="746" y="420" font-size="12" fill="#4c1d95" font-weight="700">MultiBac 多基因表达（2004）</text>
+  <text x="746" y="438" font-size="10" fill="#475569">bacmid 预置 Tn7 与 Cre-lox 两组接驳位点，多个表达盒先后装配进同一病毒基因组，一毒感染、等比表达各亚基；</text>
+  <text x="746" y="451.5" font-size="10" fill="#475569">删除嵌合酶与半胱氨酸蛋白酶基因的骨架进一步降低降解——激酶、染色质调控与病毒复合物的主力平台。</text>
+  <text x="730" y="494" font-size="10" fill="#475569">典型日程：第 0 天转染 Sf9 收 P1，第 4–5 天收 P2 并测滴度，第 7–10 天以 P2 大规模感染，</text>
+  <text x="730" y="507.5" font-size="10" fill="#475569">第 10–13 天收获——从基因到蛋白约两周半，介于大肠杆菌与稳定细胞系之间。</text>
+  <rect x="786.3" y="529.5" width="187.4" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="880" y="541.6" font-size="10" fill="#1e293b" text-anchor="middle">Sf9／Sf21：草地贪夜蛾，贴壁或悬浮</text>
+  <rect x="1060.6" y="529.5" width="158.8" height="17" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1140" y="541.6" font-size="10" fill="#1e293b" text-anchor="middle">High Five：粉纹夜蛾，分泌更强</text>
+  <rect x="30" y="578" width="1340" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、四大表达系统对比与选型纪律</text>
+  <rect x="50" y="622" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">系统</text>
+  <rect x="180" y="622" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">典型周期</text>
+  <rect x="300" y="622" width="100" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">相对成本</text>
+  <rect x="400" y="622" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="505" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">糖基化</text>
+  <rect x="610" y="622" width="350" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">适用分子量与类型</text>
+  <rect x="960" y="622" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">典型收率量级</text>
+  <rect x="50" y="666" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="694.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">大肠杆菌</text>
+  <rect x="180" y="666" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">3–7 天</text>
+  <rect x="300" y="666" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">低</text>
+  <rect x="400" y="666" width="210" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="505" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="610" y="666" width="350" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">约 100 kDa 以下可溶蛋白</text>
+  <rect x="960" y="666" width="190" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="694.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">数十 mg 至 g/L</text>
+  <rect x="50" y="712" width="1300" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="712" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="740.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">毕赤酵母</text>
+  <rect x="180" y="712" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">1–2 周</text>
+  <rect x="300" y="712" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中低</text>
+  <rect x="400" y="712" width="210" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="505" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高甘露糖型</text>
+  <rect x="610" y="712" width="350" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">20–150 kDa 分泌蛋白</text>
+  <rect x="960" y="712" width="190" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="740.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">10–1000 mg/L</text>
+  <rect x="50" y="758" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="786.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">昆虫细胞</text>
+  <rect x="180" y="758" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="786.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">2–3 周</text>
+  <rect x="300" y="758" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="786.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">中</text>
+  <rect x="400" y="758" width="210" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="505" y="786.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">寡甘露糖型加核心岩藻糖</text>
+  <rect x="610" y="758" width="350" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="786.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">复合物、激酶、胞外域</text>
+  <rect x="960" y="758" width="190" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="786.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">1–100 mg/L</text>
+  <rect x="50" y="804" width="1300" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="804" width="130" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="832.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">哺乳动物</text>
+  <rect x="180" y="804" width="120" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="240" y="832.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">3 天至数月</text>
+  <rect x="300" y="804" width="100" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="350" y="832.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">高</text>
+  <rect x="400" y="804" width="210" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="505" y="832.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">接近人源复杂糖型</text>
+  <rect x="610" y="804" width="350" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="832.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">抗体、Fc 融合、膜蛋白</text>
+  <rect x="960" y="804" width="190" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="832.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">瞬时 5–50 mg/L；稳定克级/L</text>
+  <rect x="199.36" y="870.65" width="201.28" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="300" y="883.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">先试大肠杆菌：快而便宜，失败也快</text>
+  <rect x="545.025" y="870.65" width="189.95000000000002" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="640" y="883.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">真核胞内复合物：昆虫或毕赤优先</text>
+  <rect x="895.025" y="870.65" width="189.95000000000002" height="18.7" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="990" y="883.96" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">天然糖型与抗体类：直接哺乳动物</text>
+  <text x="50" y="916" font-size="10" fill="#64748b">读表按约束筛选：分泌型糖蛋白直接排除大肠杆菌；大于 300 kDa 且亚基单独不折叠的复合物，昆虫或哺乳动物共表达几乎是唯一选择；从摇瓶到 5 L 反应器，毕赤与 CHO 放大工艺最成熟——平行启动两三个体系小试，以数据而非习惯做决定。</text>
+</svg>

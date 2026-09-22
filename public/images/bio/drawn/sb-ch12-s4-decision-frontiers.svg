@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">方法选择决策与前沿：五问决策地图与时间分辨</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">小于 30 kDa 需动力学选 NMR、可结晶选晶体学、大于 100 kDa 选冷冻电镜；均一性一票否决；串晶毫秒级；cryo-ET 约 3–4 Å；MicroED 埃级</text>
+  <rect x="30" y="132" width="1340" height="290" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、方法选择决策地图：五问先行、先算后验</text>
+  <text x="50" y="154" font-size="10.5" fill="#475569">先算后验成为默认次序：开工前先取 AF 预测与置信度——可信区划边界、实验钉关键位点，再进入下面的分支。</text>
+  <rect x="500" y="166" width="400" height="38" rx="9" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="700" y="190" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">五问：分子量 · 结晶性 · 均一性 · 动力学 · 时间分辨</text>
+  <line x1="700" y1="204" x2="210" y2="234" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="60" y="238" width="300" height="92" rx="9" fill="#b453091a" stroke="#b45309" stroke-width="1.5"/>
+  <text x="76" y="260" font-size="10" fill="#475569">小于 30 kDa、以动力学互作为核心</text>
+  <text x="210" y="304" font-size="13.5" fill="#b45309" text-anchor="middle" font-weight="700">NMR</text>
+  <text x="210" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">TROSY 加氘代可至约 100 kDa</text>
+  <line x1="700" y1="204" x2="540" y2="234" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="390" y="238" width="300" height="92" rx="9" fill="#0f766e1a" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="406" y="260" font-size="10" fill="#475569">可长出衍射晶体、含高通量配体筛选</text>
+  <text x="540" y="304" font-size="13.5" fill="#0f766e" text-anchor="middle" font-weight="700">X 射线晶体学</text>
+  <text x="540" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">分辨率与通量之王</text>
+  <line x1="700" y1="204" x2="870" y2="234" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="720" y="238" width="300" height="92" rx="9" fill="#0369a11a" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="736" y="260" font-size="10" fill="#475569">大于 100–300 kDa、难结晶或构象不均一</text>
+  <text x="870" y="304" font-size="13.5" fill="#0369a1" text-anchor="middle" font-weight="700">冷冻电镜</text>
+  <text x="870" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">玻璃化均一性是关键</text>
+  <line x1="700" y1="204" x2="1200" y2="234" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="1050" y="238" width="300" height="92" rx="9" fill="#6d28d91a" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1066" y="260" font-size="10" fill="#475569">任何尺寸的拓扑与动态拼图</text>
+  <text x="1200" y="304" font-size="13.5" fill="#6d28d9" text-anchor="middle" font-weight="700">SAXS 加 FRET 加 XL-MS</text>
+  <text x="1200" y="322" font-size="9.5" fill="#64748b" text-anchor="middle">交整合建模（第 2 节）</text>
+  <rect x="60" y="340" width="620" height="44" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="76" y="360" font-size="10" fill="#991b1b">否决律一：均一性不合格的样品在哪个方法里都只产出垃圾——SEC-MALS 先行复核，别让坏样品进任何机器。</text>
+  <rect x="700" y="340" width="620" height="44" rx="8" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="716" y="360" font-size="10" fill="#991b1b">否决律二：天然无序含量高（真核蛋白约三成含长无序区）——「结构」须重定义为「系综」：NMR 加 SAXS 加模拟。</text>
+  <rect x="30" y="442" width="660" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="464.84" font-size="19" fill="#475569" font-weight="700">二、一个案例的分而治之与时间分辨快门</text>
+  <text x="50" y="482" font-size="10.5" fill="#475569">① 260 kDa 六聚体酶、SEC 单峰、筛晶两年未果——冷冻电镜是默认起手。</text>
+  <text x="50" y="508" font-size="10.5" fill="#475569">② 还要追问毫秒级底物诱导构象切换？补串晶或时间分辨冷冻电镜。</text>
+  <text x="50" y="534" font-size="10.5" fill="#475569">③ 催化中心的原子细节必须钉死？对催化结构域单独结晶——分而治之。</text>
+  <text x="350" y="566" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">反应速率决定快门：飞秒以下属于 XFEL，快于毫秒靠光解与扩散对撞，慢于秒用常规混合</text>
+  <rect x="77.05882352941177" y="580" width="201.70588235294116" height="26" rx="6" fill="#dc262622" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="179.41176470588235" y="597.5" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="700">XFEL 泵浦-探测</text>
+  <rect x="281.7647058823529" y="580" width="99.35294117647061" height="26" rx="6" fill="#d9770622" stroke="#d97706" stroke-width="1.4"/>
+  <text x="332.94117647058823" y="597.5" font-size="9" fill="#d97706" text-anchor="middle" font-weight="700">Laue 泵浦</text>
+  <rect x="384.11764705882354" y="580" width="99.35294117647061" height="26" rx="6" fill="#b4530922" stroke="#b45309" stroke-width="1.4"/>
+  <text x="435.29411764705884" y="597.5" font-size="9" fill="#b45309" text-anchor="middle" font-weight="700">光解/对撞</text>
+  <rect x="486.47058823529414" y="580" width="99.3529411764705" height="26" rx="6" fill="#0369a122" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="537.6470588235294" y="597.5" font-size="9" fill="#0369a1" text-anchor="middle" font-weight="700">串晶 · TR-EM</text>
+  <rect x="588.8235294117646" y="580" width="48.17647058823536" height="26" rx="6" fill="#64748b22" stroke="#64748b" stroke-width="1.4"/>
+  <text x="614.4117647058823" y="597.5" font-size="9" fill="#64748b" text-anchor="middle" font-weight="700">常规混合</text>
+  <line x1="60" y1="616" x2="640" y2="616" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="77.05882352941177" y1="616" x2="77.05882352941177" y2="621" stroke="#475569" stroke-width="1.6"/>
+  <text x="77.05882352941177" y="636" font-size="10" fill="#64748b" text-anchor="middle">fs</text>
+  <line x1="179.41176470588235" y1="616" x2="179.41176470588235" y2="621" stroke="#475569" stroke-width="1.6"/>
+  <text x="179.41176470588235" y="636" font-size="10" fill="#64748b" text-anchor="middle">ps</text>
+  <line x1="281.7647058823529" y1="616" x2="281.7647058823529" y2="621" stroke="#475569" stroke-width="1.6"/>
+  <text x="281.7647058823529" y="636" font-size="10" fill="#64748b" text-anchor="middle">ns</text>
+  <line x1="384.11764705882354" y1="616" x2="384.11764705882354" y2="621" stroke="#475569" stroke-width="1.6"/>
+  <text x="384.11764705882354" y="636" font-size="10" fill="#64748b" text-anchor="middle">μs</text>
+  <line x1="486.47058823529414" y1="616" x2="486.47058823529414" y2="621" stroke="#475569" stroke-width="1.6"/>
+  <text x="486.47058823529414" y="636" font-size="10" fill="#64748b" text-anchor="middle">ms</text>
+  <line x1="588.8235294117646" y1="616" x2="588.8235294117646" y2="621" stroke="#475569" stroke-width="1.6"/>
+  <text x="588.8235294117646" y="636" font-size="10" fill="#64748b" text-anchor="middle">s</text>
+  <text x="50" y="660" font-size="10" fill="#475569">串晶加混合-喷射：底物与微晶在线混合、按延时衍射——Olmos 等 2018 年捕获 β-内酰胺酶酰化中间体，</text>
+  <text x="50" y="673.5" font-size="10" fill="#475569">毫秒级酶动力学第一次有了原子影像；XFEL 数十飞秒脉冲「先衍射后损伤」，时间分辨冷冻电镜以混合-喷雾冻毫秒中间态</text>
+  <text x="50" y="687" font-size="10" fill="#475569">（Dandey 等 2020）。</text>
+  <rect x="710" y="442" width="660" height="250" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="464.84" font-size="19" fill="#475569" font-weight="700">三、原位结构生物学、MicroED 与 AI 全流程</text>
+  <ellipse cx="800" cy="545" rx="52" ry="40" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="800" y="542" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">冷冻细胞</text>
+  <text x="800" y="556" font-size="9" fill="#64748b" text-anchor="middle">原生环境</text>
+  <line x1="858" y1="545" x2="892" y2="545" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="900" y="537" width="110" height="16" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="910" cy="545" r="3.4" fill="#0f766e"/>
+  <circle cx="932" cy="545" r="3.4" fill="#0f766e"/>
+  <circle cx="954" cy="545" r="3.4" fill="#0f766e"/>
+  <circle cx="976" cy="545" r="3.4" fill="#0f766e"/>
+  <circle cx="998" cy="545" r="3.4" fill="#0f766e"/>
+  <text x="955" y="570" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">FIB 铣成约 100–200 nm 薄片</text>
+  <text x="730" y="600" font-size="10" fill="#475569">cryo-ET 倾转系列三维重构，分子在细胞里的位置直接成像；</text>
+  <text x="730" y="613.5" font-size="10" fill="#475569">亚断层平均把数千份子图对齐，合适体系已达约 3–4 Å。</text>
+  <text x="730" y="627" font-size="10" fill="#475569">难点如实列出：拷贝数有限、分子拥挤、缺失锥。</text>
+  <text x="1040" y="480" font-size="10" fill="#475569">MicroED：</text>
+  <text x="1040" y="493.5" font-size="10" fill="#475569">电子弹性散射截面比 X 射线高约四个数量级——微米级晶体即可给出埃级结构。</text>
+  <rect x="1060" y="540" width="90" height="60" rx="6" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="1072" cy="552" r="2.8" fill="#075985"/>
+  <circle cx="1094" cy="552" r="2.8" fill="#075985"/>
+  <circle cx="1116" cy="552" r="2.8" fill="#075985"/>
+  <circle cx="1138" cy="552" r="2.8" fill="#075985"/>
+  <circle cx="1072" cy="570" r="2.8" fill="#075985"/>
+  <circle cx="1094" cy="570" r="2.8" fill="#075985"/>
+  <circle cx="1116" cy="570" r="2.8" fill="#075985"/>
+  <circle cx="1138" cy="570" r="2.8" fill="#075985"/>
+  <circle cx="1072" cy="588" r="2.8" fill="#075985"/>
+  <circle cx="1094" cy="588" r="2.8" fill="#075985"/>
+  <circle cx="1116" cy="588" r="2.8" fill="#075985"/>
+  <circle cx="1138" cy="588" r="2.8" fill="#075985"/>
+  <text x="1105" y="620" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">微米级晶体</text>
+  <text x="1180" y="545" font-size="10" fill="#475569">Gonen 组 2013 年溶菌酶纳米晶首演</text>
+  <text x="1180" y="558.5" font-size="10" fill="#475569">（约 2.9 Å）；</text>
+  <text x="1180" y="572" font-size="10" fill="#475569">淀粉样短肽与长不大晶的小蛋白获益。</text>
+  <text x="1180" y="585.5" font-size="10" fill="#475569">数据与晶体学同族，</text>
+  <text x="1180" y="599" font-size="10" fill="#475569">常以 MR 或 AF 模型求解。</text>
+  <text x="730" y="632" font-size="10.5" fill="#1e293b" font-weight="700">AI 全流程接管手工艺环节：</text>
+  <rect x="790.3396" y="641.925" width="79.3208" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="830" y="653.42" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">AlphaFill 2023</text>
+  <rect x="943.2944" y="641.925" width="93.4112" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="990" y="653.42" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">ModelAngelo 2024</text>
+  <rect x="1112.9912" y="641.925" width="84.0176" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1155" y="653.42" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">cryoDRGN 2021</text>
+  <text x="730" y="674" font-size="9.5" fill="#64748b">配体回填、密度图自动建模、连续构象分析——工具产出候选，取舍仍在人。</text>
+  <rect x="30" y="712" width="1340" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="734.84" font-size="19" fill="#475569" font-weight="700">四、2030 展望：结构生物学从描绘静态走向拍摄动态</text>
+  <rect x="50" y="738" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="160" y="765.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方向</text>
+  <rect x="270" y="738" width="540" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="765.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">当下状态</text>
+  <rect x="810" y="738" width="540" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="765.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">2030 展望</text>
+  <rect x="50" y="782" width="220" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="160" y="799" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">时间分辨</text>
+  <rect x="270" y="782" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="799" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">串晶与时间分辨冷冻电镜常规覆盖毫秒级</text>
+  <rect x="810" y="782" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="799" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">飞秒到秒全谱系连续成像</text>
+  <rect x="50" y="805" width="1300" height="23" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="805" width="220" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="160" y="822" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">原位结构</text>
+  <rect x="270" y="805" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="822" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">cryo-ET 加亚断层平均达约 3–4 Å</text>
+  <rect x="810" y="805" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="822" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">细胞内分子分辨率普查</text>
+  <rect x="50" y="828" width="220" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="160" y="845" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">计算与实验</text>
+  <rect x="270" y="828" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="845" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">计算覆盖折叠（AFDB 约 2 亿条）</text>
+  <rect x="810" y="828" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="845" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">构象、互作与机制仍归实验</text>
+  <rect x="50" y="851" width="1300" height="23" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="851" width="220" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="160" y="868" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">整合建模</text>
+  <rect x="270" y="851" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="868" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">纳米级排布成为常规交付物</text>
+  <rect x="810" y="851" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="868" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">多尺度概率模型标准化</text>
+  <rect x="50" y="874" width="220" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="160" y="891" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">单分子结构</text>
+  <rect x="270" y="874" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="540" y="891" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">概念与装置探索期</text>
+  <rect x="810" y="874" width="540" height="23" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1080" y="891" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">单粒子或单分子读出结构</text>
+  <text x="700" y="934" font-size="11" fill="#64748b" text-anchor="middle" font-weight="600">方法在变而主线未变：以可复核的实验数据回答机制问题——带着这张方法地图，去拍属于自己的那部结构电影</text>
+</svg>

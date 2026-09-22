@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">三维重构的角度问题：Crowther 判据与取向覆盖</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">N≈πD/d（D=100Å：10Å约32个视角、4Å约80、2Å约157）；缺失锥与优势取向是失败主因，共线法、随机锥形与abinitio各自给出无参考定向路线</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Crowther 判据：视角数的几何账</text>
+  <text x="50" y="184" font-size="14" fill="#1e293b" font-weight="700">N<tspan dy="3.1" font-size="10.1">view</tspan><tspan dy="-3.1"> ≈ πD/d（Crowther、DeRosier 与 Klug，1970）</tspan></text>
+  <text x="50" y="208" font-size="10.5" fill="#475569">直径 D 的颗粒要无混叠地分辨尺度 d 的细节，需约 πD/d 个均匀分布的投影：相邻中心截面的角间隔不超过 d/D 量级，</text>
+  <text x="50" y="223" font-size="10.5" fill="#475569">才不致把高频信息折叠混叠。</text>
+  <rect x="102.8" y="356.9142857142857" width="81.06666666666668" height="31.085714285714285" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="143.33333333333334" y="347.9142857142857" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 32</text>
+  <text x="143.33333333333334" y="408" font-size="12.5" fill="#64748b" text-anchor="middle">d = 10 Å</text>
+  <rect x="229.4666666666667" y="310.2857142857143" width="81.06666666666668" height="77.71428571428571" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="270" y="301.2857142857143" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 80</text>
+  <text x="270" y="408" font-size="12.5" fill="#64748b" text-anchor="middle">d = 4 Å</text>
+  <rect x="356.1333333333334" y="235.4857142857143" width="81.06666666666668" height="152.5142857142857" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="396.6666666666667" y="226.4857142857143" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 157</text>
+  <text x="396.6666666666667" y="408" font-size="12.5" fill="#64748b" text-anchor="middle">d = 2 Å</text>
+  <text x="270" y="300" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">固定 D = 100 Å：分辨率每提高一倍，所需视角翻倍</text>
+  <text x="270" y="436" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">目标分辨率 d</text>
+  <text x="480" y="318" font-size="10.5" fill="#475569">两点必须强调：其一，</text>
+  <text x="480" y="333" font-size="10.5" fill="#475569">均匀分布是前提——200 个挤在同一方向的投影，</text>
+  <text x="480" y="348" font-size="10.5" fill="#475569">不及 80 个均匀铺开的视角；其二，</text>
+  <text x="480" y="363" font-size="10.5" fill="#475569">判据只算几何账，</text>
+  <text x="480" y="378" font-size="10.5" fill="#475569">统计账须再乘几个数量级，</text>
+  <text x="480" y="393" font-size="10.5" fill="#475569">10<tspan dy="-3.6" font-size="7.6">5</tspan><tspan dy="3.6"> 级颗粒数据集由此而来。</tspan></text>
+  <rect x="468.2575" y="443.075" width="223.485" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="580" y="455.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">大复合物「高分辨须大颗粒数」的定量出处</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、傅里叶空间的取向覆盖：三种命运</text>
+  <circle cx="830" cy="300" r="72" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <line x1="768.08" y1="300" x2="891.92" y2="300" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="769.8792826649789" y1="285.18157406731444" x2="890.1207173350211" y2="314.81842593268556" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="775.1725628915533" y1="271.22434118704984" x2="884.8274371084467" y2="328.77565881295016" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="783.6522144732454" y1="258.93944500172995" x2="876.3477855267546" y2="341.06055499827005" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="794.8254308824069" y1="249.0408390238648" x2="865.1745691175931" y2="350.9591609761352" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="808.0428653943262" y1="242.1037942529191" x2="851.9571346056738" y2="357.8962057470809" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="822.5363687585904" y1="238.53146651584848" x2="837.4636312414096" y2="361.4685334841515" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="837.4636312414096" y1="238.53146651584848" x2="822.5363687585904" y2="361.4685334841515" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="851.9571346056738" y1="242.1037942529191" x2="808.0428653943262" y2="357.8962057470809" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="865.1745691175931" y1="249.0408390238648" x2="794.8254308824069" y2="350.9591609761352" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="876.3477855267546" y1="258.93944500172995" x2="783.6522144732454" y2="341.06055499827005" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="884.8274371084468" y1="271.22434118704984" x2="775.1725628915532" y2="328.77565881295016" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <line x1="890.1207173350211" y1="285.1815740673144" x2="769.8792826649789" y2="314.8184259326856" stroke="#059669" stroke-width="2.2" opacity="0.8"/>
+  <circle cx="830" cy="300" r="3.5" fill="#1e293b"/>
+  <text x="830" y="398" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">均匀覆盖</text>
+  <text x="830" y="416" font-size="9.5" fill="#64748b" text-anchor="middle">中心截面稠密铺满体积</text>
+  <path d="M 1040,300 L 992,246 A 72,72 0 0 1 992,354 Z" fill="#fee2e2" fill-opacity="0.8" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <circle cx="1040" cy="300" r="72" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <line x1="986.3757069976675" y1="269.04" x2="1093.6242930023325" y2="330.96" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="994.9610241137968" y1="257.507917783168" x2="1085.0389758862032" y2="342.492082216832" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1005.9744040778556" y1="248.26659471731097" x2="1074.0255959221442" y2="351.73340528268903" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1018.8221127252746" y1="241.81423292093655" x2="1061.1778872747254" y2="358.18576707906345" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1032.8115267573658" y1="238.49868088861888" x2="1047.1884732426342" y2="361.5013191113811" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1047.1884732426342" y1="238.49868088861888" x2="1032.8115267573658" y2="361.5013191113811" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1061.1778872747254" y1="241.81423292093655" x2="1018.8221127252746" y2="358.18576707906345" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1074.0255959221442" y1="248.26659471731097" x2="1005.9744040778558" y2="351.73340528268903" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1085.0389758862032" y1="257.507917783168" x2="994.9610241137968" y2="342.492082216832" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1093.6242930023325" y1="269.04" x2="986.3757069976675" y2="330.96" stroke="#d97706" stroke-width="2.2" opacity="0.8"/>
+  <circle cx="1040" cy="300" r="3.5" fill="#1e293b"/>
+  <text x="1040" y="244" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">缺失锥</text>
+  <text x="1040" y="398" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">缺失锥/缺失楔</text>
+  <text x="1040" y="416" font-size="9.5" fill="#64748b" text-anchor="middle">密度沿缺失方向拉长</text>
+  <circle cx="1250" cy="300" r="72" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <line x1="1243.5275975544669" y1="238.4192042387965" x2="1256.4724024455331" y2="361.5807957612035" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1244.818667940863" y1="238.29716215527068" x2="1255.181332059137" y2="361.7028378447293" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1246.112011030745" y1="238.20218497572142" x2="1253.887988969255" y2="361.7978150242786" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1247.4070595210878" y1="238.1343143602787" x2="1252.5929404789122" y2="361.86568563972133" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1248.7032453608226" y1="238.09358007923757" x2="1251.2967546391774" y2="361.90641992076246" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1250" y1="238.07999999999998" x2="1250" y2="361.92" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1251.2967546391774" y1="238.09358007923757" x2="1248.7032453608226" y2="361.90641992076246" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1252.592940478912" y1="238.1343143602787" x2="1247.407059521088" y2="361.86568563972133" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1253.887988969255" y1="238.20218497572142" x2="1246.112011030745" y2="361.7978150242786" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1255.181332059137" y1="238.29716215527068" x2="1244.818667940863" y2="361.7028378447293" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <line x1="1256.4724024455331" y1="238.4192042387965" x2="1243.5275975544669" y2="361.5807957612035" stroke="#dc2626" stroke-width="2.2" opacity="0.8"/>
+  <circle cx="1250" cy="300" r="3.5" fill="#1e293b"/>
+  <text x="1250" y="398" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">优势取向</text>
+  <text x="1250" y="416" font-size="9.5" fill="#64748b" text-anchor="middle">单一视角信息论上不可重构</text>
+  <text x="730" y="462" font-size="10.5" fill="#475569">优势取向是单颗粒最常见失败模式：颗粒贴附界面或择优躺平，中心截面挤成一束——缺失锥使分辨率各向异性，</text>
+  <text x="730" y="477" font-size="10.5" fill="#475569">单一视角数据在信息论意义上不可重构，取向加权与倾斜数据收集只能部分补救。</text>
+  <rect x="30" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、无参考定向：共线法与随机锥形重构</text>
+  <circle cx="190" cy="700" r="78" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <line x1="120" y1="660" x2="258" y2="742" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="126" y1="748" x2="254" y2="655" stroke="#6d28d9" stroke-width="2.4"/>
+  <line x1="190" y1="626" x2="190" y2="774" stroke="#be185d" stroke-width="2.6"/>
+  <text x="190" y="610" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">公共线（过原点）</text>
+  <circle cx="190" cy="700" r="3.5" fill="#1e293b"/>
+  <text x="190" y="792" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">两个中心截面必交于公共线</text>
+  <text x="80" y="830" font-size="10.5" fill="#475569">共线法：van Heel 1987 年 angular reconstitution 从几张最清晰的 2D 类平均出发，搜索使公共线一致的相对取向，</text>
+  <text x="80" y="845" font-size="10.5" fill="#475569">以多组三投影投票自举（bootstrap）出低分辨率初始模型——无须任何外部参考。</text>
+  <rect x="163.87385000000006" y="891.075" width="392.2522999999999" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="360" y="903.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">随机锥形重构（Radermacher，1981 年前后构想、1986–1987 年系统发表）</text>
+  <text x="80" y="938" font-size="10.5" fill="#475569">倾转已知角度 α 加 0 度两张照片：0 度像定面内角、倾转像补第三维，</text>
+  <text x="80" y="953" font-size="10.5" fill="#475569">两像的取向共同张出一个锥面覆盖——用实验设计绕开取向搜索。</text>
+  <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、现代 ab initio 与参考偏差的防线</text>
+  <rect x="730" y="616" width="620" height="84" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1040" y="642" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">cryoSPARC ab initio（Punjani 2017）</text>
+  <text x="1040" y="664" font-size="10.5" fill="#475569" text-anchor="middle">随机初始模型 + SGD 联合优化取向与密度 + 频率由低到高爬升</text>
+  <text x="1040" y="686" font-size="10" fill="#64748b" text-anchor="middle">对小于约 100 kDa 的样品常须百万级颗粒才稳</text>
+  <line x1="1040" y1="704" x2="1040" y2="730" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="730" y="756" font-size="11" fill="#1e293b" font-weight="700">参考偏差风险由 Dotson 与 Glaeser 2016 年论战推到台前，防线成套：</text>
+  <rect x="736.34" y="779.075" width="247.32000000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="860" y="791.78" font-size="10.5" fill="#065f46" text-anchor="middle">金标准半图精修与 FSC 0.143（Scheres 2012）</text>
+  <rect x="1108" y="779.075" width="144" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="791.78" font-size="10.5" fill="#065f46" text-anchor="middle">参考低通滤波防噪声入参考</text>
+  <rect x="793.25" y="811.075" width="133.5" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="860" y="823.78" font-size="10.5" fill="#065f46" text-anchor="middle">纯噪声对照检验虚假信号</text>
+  <rect x="1118.5" y="811.075" width="123" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="823.78" font-size="10.5" fill="#065f46" text-anchor="middle">独立初始模型交叉验证</text>
+  <text x="730" y="862" font-size="11" fill="#1e293b" font-weight="700">定向与初始模型方法对照：</text>
+  <rect x="730" y="878" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="905.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方法</text>
+  <rect x="960" y="878" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="905.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">依赖</text>
+  <rect x="1140" y="878" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="905.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要风险</text>
+  <rect x="730" y="922" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="940.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">共线法 / angular reconstitution</text>
+  <rect x="960" y="922" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="940.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">公共线几何</text>
+  <rect x="1140" y="922" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="940.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">噪声下的伪解</text>
+  <rect x="730" y="948" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="948" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="966.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">随机锥形重构</text>
+  <rect x="960" y="948" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="966.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">已知倾角双张照片</text>
+  <rect x="1140" y="948" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="966.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">锥面覆盖不完整</text>
+  <rect x="730" y="974" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="992.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">cryoSPARC ab initio（SGD）</text>
+  <rect x="960" y="974" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="992.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">大颗粒数</text>
+  <rect x="1140" y="974" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="992.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">小样品不收敛</text>
+  <rect x="730" y="1000" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="1000" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="1018.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">同源结构参考</text>
+  <rect x="960" y="1000" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="1018.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">先验模型</text>
+  <rect x="1140" y="1000" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="1018.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">参考偏差（最高）</text>
+</svg>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">室温晶体学与时间分辨</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">冷冻使镶嵌度从百分之几度涨到十分之几度；Laue白光覆盖毫秒至纳秒；混合-喷射以毫秒扩散捕集中间态，光激发横跨fs至ms；每时间点需10<tspan dy="-5.8" font-size="12.2">4</tspan><tspan dy="5.8">–10</tspan><tspan dy="-5.8" font-size="12.2">5</tspan><tspan dy="5.8">张图案</tspan></text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、回到室温：被冷冻藏起的构象系综</text>
+  <rect x="56" y="180" width="296" height="150" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="74" y="204" font-size="11.5" fill="#991b1b" font-weight="700">冷冻的代价（1980 年代末起成标准）</text>
+  <text x="74" y="228" font-size="9.5" fill="#475569">镶嵌度普遍从百分之几度涨到十分之几度；</text>
+  <text x="74" y="241.5" font-size="9.5" fill="#475569">晶格收缩改变分子堆积，表面溶剂重新有序化；</text>
+  <text x="74" y="255" font-size="9.5" fill="#475569">更本质的是构象冻结——低温把柔性环区「选择」成单一构象，</text>
+  <text x="74" y="268.5" font-size="9.5" fill="#475569">室温下本应共存的交替构象被藏了起来。</text>
+  <rect x="368" y="180" width="296" height="150" rx="9" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="386" y="204" font-size="11.5" fill="#065f46" font-weight="700">室温数据的独立价值</text>
+  <text x="386" y="228" font-size="9.5" fill="#475569">构象系综更接近生理温度的真实涨落；催化残基的活性取向、</text>
+  <text x="386" y="241.5" font-size="9.5" fill="#475569">配体的真实占位、通道水的动态都以室温图为准；</text>
+  <text x="386" y="255" font-size="9.5" fill="#475569">分子动力学模拟的系综与实验的对照，只有在室温才有意义。</text>
+  <rect x="56" y="342" width="296" height="60" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="72" y="364" font-size="10.5" fill="#075985" font-weight="700">衰减器＋快速收集</text>
+  <text x="72" y="382" font-size="9" fill="#475569">室温损伤显著快于低温：压通量、快门一体逐帧读出抢时间。</text>
+  <rect x="368" y="342" width="296" height="60" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.7"/>
+  <text x="384" y="364" font-size="10.5" fill="#075985" font-weight="700">多晶低剂量合并</text>
+  <text x="384" y="382" font-size="9" fill="#475569">数十颗晶体的部分数据合并成套，每颗剂量压在 MGy 级以下。</text>
+  <text x="56" y="432" font-size="10.5" fill="#1e293b" font-weight="700">镶嵌度账单（液氮冷冻前后）</text>
+  <text x="148" y="454" font-size="9.5" fill="#475569" text-anchor="end">冻结前</text>
+  <rect x="158" y="442" width="22" height="16" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="188" y="454" font-size="9.5" fill="#475569">百分之几度</text>
+  <text x="148" y="482" font-size="9.5" fill="#475569" text-anchor="end">冻结后</text>
+  <rect x="158" y="470" width="220" height="16" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="386" y="482" font-size="9.5" fill="#991b1b" font-weight="700">十分之几度（涨约一个数量级）</text>
+  <text x="56" y="512" font-size="9" fill="#64748b">晶格收缩还会改变分子堆积——同一颗晶体冷冻前后的衍射性格判若两人。</text>
+  <text x="350" y="432" font-size="9.5" fill="#475569">历史在此画了一个圈：从布拉格的盐到菲利普斯的溶菌酶，</text>
+  <text x="350" y="445.5" font-size="9.5" fill="#475569">学科最早的全部结构都是室温数据，冷冻只是对抗剂量损伤的权宜。</text>
+  <text x="350" y="459" font-size="9.5" fill="#475569">串晶以室温射流、每晶一发，</text>
+  <text x="350" y="472.5" font-size="9.5" fill="#475569">把「默认室温」还给了晶体学——室温结构的生产效率从此与冷冻持平。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Laue 白光法：时间分辨的第一代主力</text>
+  <text x="740" y="188" font-size="9.5" fill="#475569">同步辐射白光（全谱一次点亮大量反射）</text>
+  <line x1="740" y1="200" x2="950" y2="200" stroke="#0369a1" stroke-width="3"/>
+  <line x1="740" y1="208" x2="950" y2="208" stroke="#075985" stroke-width="3"/>
+  <line x1="740" y1="216" x2="950" y2="216" stroke="#0f766e" stroke-width="3"/>
+  <text x="740" y="234" font-size="9" fill="#64748b">不同波长激发的斑点在低角密集重叠（λ 与 λ/2 谐波）</text>
+  <polygon points="970,204 988,186 1006,204 988,222" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="988" y="240" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="700">晶体无需旋转</text>
+  <rect x="1080" y="150" width="64" height="110" rx="4" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="1092" cy="168" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1116" cy="176" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1128" cy="192" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1098" cy="206" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1122" cy="214" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1106" cy="230" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1130" cy="238" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1088" cy="190" r="3" fill="#1e293b" opacity="0.85"/>
+  <circle cx="1114" cy="250" r="3" fill="#1e293b" opacity="0.85"/>
+  <text x="1112" y="278" font-size="9" fill="#475569" text-anchor="middle">探测器：单次曝光即得整套数据</text>
+  <rect x="1193.9876" y="195.075" width="84.0248" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1236" y="207.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">时间窗 ms–ns</text>
+  <rect x="736" y="300" width="288" height="56" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.7"/>
+  <text x="752" y="322" font-size="10.5" fill="#78350f" font-weight="700">自带发色团：激光直接激发</text>
+  <text x="752" y="340" font-size="9" fill="#475569">视黄醛、血红素配体——光解量子产率就是触发效率。</text>
+  <rect x="1040" y="300" width="284" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.7"/>
+  <text x="1056" y="322" font-size="10.5" fill="#4c1d95" font-weight="700">笼状化合物：紫外闪光释放</text>
+  <text x="1056" y="340" font-size="9" fill="#475569">底物被光不稳定基团封存，反应在晶体内部同步起跑。</text>
+  <rect x="736" y="372" width="60" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="766" y="386" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">1996</text>
+  <text x="806" y="386" font-size="9.5" fill="#475569">肌红蛋白 CO 解离的纳秒级中间态（Srajer 等）——开创蛋白质时间分辨先河</text>
+  <rect x="736" y="400" width="60" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="766" y="414" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">1990</text>
+  <text x="806" y="414" font-size="9.5" fill="#475569">笼状 GTP 释放后 Ras 的 GTP 酶时间进程（Schlichting 等）——「笼装底物＋白光」范式确立</text>
+  <rect x="736" y="430" width="588" height="118" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="752" y="452" font-size="10.5" fill="#991b1b" font-weight="700">技术债：Laue 为何让位于串晶</text>
+  <text x="752" y="472" font-size="9.5" fill="#475569">① 斑点低角密集重叠——空间重叠与谐波重叠，波长归一化（λ 与 λ/2 贡献的分离）是数据处理的专门功课；</text>
+  <text x="752" y="502" font-size="9.5" fill="#475569">② 单晶多次曝光剂量叠加——每个时间点都在花同一颗晶体的预算，这是让位于串晶的根本原因；</text>
+  <text x="752" y="528" font-size="9.5" fill="#475569">③ 「单张策略」：每晶只曝光一次、多晶拼出时间点——这套省剂量算术正是串晶思想的前身。</text>
+  <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、串晶时代的时间分辨：混合-喷射与光激发</text>
+  <rect x="56" y="592" width="96" height="40" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="104" y="616" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">酶微晶流</text>
+  <rect x="56" y="648" width="96" height="40" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="104" y="672" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">底物流</text>
+  <line x1="152" y1="612" x2="194" y2="622" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="152" y1="668" x2="194" y2="658" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <rect x="196" y="600" width="110" height="80" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="251" y="628" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">混合器</text>
+  <text x="251" y="648" font-size="9" fill="#475569" text-anchor="middle">几何与流速</text>
+  <text x="251" y="664" font-size="9" fill="#475569" text-anchor="middle">设定延迟</text>
+  <line x1="306" y1="640" x2="338" y2="640" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="340" y="600" width="120" height="80" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="400" y="626" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">扩散入晶</text>
+  <text x="400" y="646" font-size="8.8" fill="#475569" text-anchor="middle">毫秒级</text>
+  <text x="400" y="657.5" font-size="8.8" fill="#475569" text-anchor="middle">（晶体通道允许底物进入）</text>
+  <line x1="460" y1="640" x2="492" y2="640" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="494" y="600" width="150" height="80" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="569" y="626" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">XFEL 光斑</text>
+  <text x="569" y="646" font-size="8.8" fill="#475569" text-anchor="middle">每晶一发＝一个时间切片，</text>
+  <text x="569" y="657.5" font-size="8.8" fill="#475569" text-anchor="middle">中间态当场成像</text>
+  <line x1="100" y1="758" x2="640" y2="758" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <line x1="100" y1="752" x2="100" y2="764" stroke="#475569" stroke-width="1.8"/>
+  <text x="100" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">fs</text>
+  <line x1="208" y1="752" x2="208" y2="764" stroke="#475569" stroke-width="1.8"/>
+  <text x="208" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">ps</text>
+  <line x1="316" y1="752" x2="316" y2="764" stroke="#475569" stroke-width="1.8"/>
+  <text x="316" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">ns</text>
+  <line x1="424" y1="752" x2="424" y2="764" stroke="#475569" stroke-width="1.8"/>
+  <text x="424" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">μs</text>
+  <line x1="532" y1="752" x2="532" y2="764" stroke="#475569" stroke-width="1.8"/>
+  <text x="532" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">ms</text>
+  <line x1="628" y1="752" x2="628" y2="764" stroke="#475569" stroke-width="1.8"/>
+  <text x="628" y="776" font-size="9.5" fill="#64748b" text-anchor="middle">s</text>
+  <circle cx="116" cy="758" r="5" fill="#6d28d9"/>
+  <line x1="116" y1="749" x2="116" y2="728" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="116" y="712" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Nogly 2018</text>
+  <text x="116" y="696" font-size="8.8" fill="#64748b" text-anchor="middle">视黄醛异构化</text>
+  <circle cx="200" cy="758" r="5" fill="#6d28d9"/>
+  <line x1="200" y1="767" x2="200" y2="788" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="200" y="812" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Pande 2016</text>
+  <text x="200" y="828" font-size="8.8" fill="#64748b" text-anchor="middle">PYP 键运动 fs–ps</text>
+  <circle cx="330" cy="758" r="5" fill="#6d28d9"/>
+  <line x1="330" y1="749" x2="330" y2="728" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="330" y="712" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Nango 2016</text>
+  <text x="330" y="696" font-size="8.8" fill="#64748b" text-anchor="middle">bR ns–ms 三维电影</text>
+  <circle cx="500" cy="758" r="5" fill="#6d28d9"/>
+  <line x1="500" y1="767" x2="500" y2="788" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="500" y="812" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Tenboer 2014</text>
+  <text x="500" y="828" font-size="8.8" fill="#64748b" text-anchor="middle">bR 毫秒首发</text>
+  <circle cx="588" cy="758" r="5" fill="#6d28d9"/>
+  <line x1="588" y1="749" x2="588" y2="728" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="588" y="712" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Kern 2018</text>
+  <text x="588" y="696" font-size="8.8" fill="#64748b" text-anchor="middle">PSII S<tspan dy="1.9" font-size="6.3">2</tspan><tspan dy="-1.9"> 至 S</tspan><tspan dy="1.9" font-size="6.3">3</tspan></text>
+  <text x="56" y="850" font-size="9.5" fill="#475569">光激发路线以激光泵浦、X 射线探测：细菌视紫红质系列横跨整个时标，PSII 的 S 态循环逐级点亮放氧催化剂——基态、中间态、</text>
+  <text x="56" y="863" font-size="9.5" fill="#475569">过渡态各有其结构，飞秒泵浦-探测把时间分辨推入化学键运动的世界。</text>
+  <text x="56" y="894" font-size="9.5" fill="#475569">混合-喷射代表战例：β 内酰胺酶与头孢类抗生素——扩散、结合、酰化、水解各阶段在同一条管线上依次捕集；扩散时标与晶体尺寸的平方同增，</text>
+  <text x="56" y="907" font-size="9.5" fill="#475569">串晶偏爱小晶体又多了一条理由：微晶既省剂量，也让毫秒化学触手可及。</text>
+  <text x="56" y="940" font-size="9.5" fill="#64748b">混合器与喷射器的衔接流速把「反应时间」翻译成「飞行距离」——时间轴的标定由此成为机械加工问题。</text>
+  <rect x="710" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、实验设计三角与时间分辨的答卷</text>
+  <polygon points="890,640 790,792 990,792" fill="#fce7f3" fill-opacity="0.55" stroke="#be185d" stroke-width="2.2"/>
+  <circle cx="890" cy="640" r="5.5" fill="#be185d"/>
+  <circle cx="790" cy="792" r="5.5" fill="#be185d"/>
+  <circle cx="990" cy="792" r="5.5" fill="#be185d"/>
+  <text x="890" y="626" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">触发效率</text>
+  <text x="778" y="810" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">时间零点同步</text>
+  <text x="1002" y="810" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">剂量窗口</text>
+  <text x="890" y="728" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">互相牵制</text>
+  <text x="890" y="746" font-size="9" fill="#475569" text-anchor="middle">无同时最优</text>
+  <text x="1024" y="614" font-size="9.5" fill="#475569">① 触发效率：光解量子产率、泵浦光穿透深度、</text>
+  <text x="1024" y="627" font-size="9.5" fill="#475569">混合扩散均匀性——任一不足，中间态即被稀释成基态与终态的混合物。</text>
+  <text x="1024" y="668" font-size="9.5" fill="#475569">② 时间零点同步：激光与 X 射线到达时刻存在抖动，须实时监测、</text>
+  <text x="1024" y="681" font-size="9.5" fill="#475569">事后分箱——飞秒实验中，抖动本身就是时间分辨率的下限。</text>
+  <text x="1024" y="724" font-size="9.5" fill="#475569">③ 剂量窗口：每个时间点需 10<tspan dy="-3.2" font-size="6.8">4</tspan><tspan dy="3.2"> 至 10</tspan><tspan dy="-3.2" font-size="6.8">5</tspan><tspan dy="3.2"> 张图案才有统计效力；</tspan></text>
+  <text x="1024" y="737" font-size="9.5" fill="#475569">泵浦与探测剂量分开记账——加大泵浦先撞剂量角，</text>
+  <text x="1024" y="750" font-size="9.5" fill="#475569">收窄延迟窗则牺牲占有率与信噪。</text>
+  <text x="736" y="834" font-size="9.5" fill="#475569">答卷：各时间点与基态参照图作差值分析（第 9 章差值图的时间维推广），</text>
+  <text x="736" y="847" font-size="9.5" fill="#475569">中间态占有率随时间的演化须与全局动力学模型拟合——「结构＋动力学」联解；时间分辨实验的第一颗晶体，永远留给基态参照。</text>
+  <text x="736" y="884" font-size="10" fill="#1e293b" font-weight="700">方案对照（分工而非替代）</text>
+  <rect x="736" y="894" width="142" height="50" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="807" y="914" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">Laue 白光</text>
+  <text x="807" y="934" font-size="8.5" fill="#475569" text-anchor="middle">ms–ns · 单晶多次曝光</text>
+  <rect x="886" y="894" width="142" height="50" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="957" y="914" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">混合-喷射串晶</text>
+  <text x="957" y="934" font-size="8.5" fill="#475569" text-anchor="middle">ms–s · 每晶一发</text>
+  <rect x="1036" y="894" width="142" height="50" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1107" y="914" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">光激发串晶</text>
+  <text x="1107" y="934" font-size="8.5" fill="#475569" text-anchor="middle">fs–ms · 每晶一发</text>
+  <rect x="1186" y="894" width="142" height="50" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1257" y="914" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">室温多晶合并</text>
+  <text x="1257" y="934" font-size="8.5" fill="#475569" text-anchor="middle">静态系综 · 数十至数百晶</text>
+</svg>

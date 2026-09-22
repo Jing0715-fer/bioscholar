@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">七大晶系与十四种布拉维格子</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">七晶系点群数5+7+5+7+3+3+2＝32；P/I/F/C/R加心与晶系组合共14种布拉维格子；蛋白晶体集中于P2<tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">（约四分之一强）、P2</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">与C2（合计约半数）；Niggli</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">约化胞统一晶胞选择</text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、七大晶系：对称性对晶胞参数的强制定义</text>
+  <text x="360" y="188" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">七晶系对六参数的强制约束（点群数合计 32）</text>
+  <rect x="60" y="200" width="70" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">晶系</text>
+  <rect x="130" y="200" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">晶胞参数约束</text>
+  <rect x="360" y="200" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">特征对称</text>
+  <rect x="560" y="200" width="100" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">点群数</text>
+  <rect x="60" y="244" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="268.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">立方</text>
+  <rect x="130" y="244" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="268.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">a=b=c，α=β=γ=90°</text>
+  <rect x="360" y="244" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="268.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">4 条三次轴</text>
+  <rect x="560" y="244" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="268.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">5</text>
+  <rect x="60" y="282" width="600" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="282" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="306.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">六方</text>
+  <rect x="130" y="282" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="306.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">a=b，γ=120°</text>
+  <rect x="360" y="282" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="306.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1 条六次轴</text>
+  <rect x="560" y="282" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="306.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">7</text>
+  <rect x="60" y="320" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="344.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">三方</text>
+  <rect x="130" y="320" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="344.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">a=b=c，α=β=γ≠90°</text>
+  <rect x="360" y="320" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="344.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1 条三次轴</text>
+  <rect x="560" y="320" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="344.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">5</text>
+  <rect x="60" y="358" width="600" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="358" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="382.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">四方</text>
+  <rect x="130" y="358" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="382.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">a=b，其余 90°</text>
+  <rect x="360" y="358" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="382.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1 条四次轴</text>
+  <rect x="560" y="358" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="382.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">7</text>
+  <rect x="60" y="396" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="420.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">正交</text>
+  <rect x="130" y="396" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="420.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">a≠b≠c，三夹角 90°</text>
+  <rect x="360" y="396" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="420.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">3 条二次轴或镜面</text>
+  <rect x="560" y="396" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="420.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">3</text>
+  <rect x="60" y="434" width="600" height="38" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="434" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="458.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">单斜</text>
+  <rect x="130" y="434" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="458.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">β≠90°，其余 90°</text>
+  <rect x="360" y="434" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="458.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">1 条二次轴或镜面</text>
+  <rect x="560" y="434" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="458.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">3</text>
+  <rect x="60" y="472" width="70" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="95" y="496.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">三斜</text>
+  <rect x="130" y="472" width="230" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="245" y="496.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">六参数全独立</text>
+  <rect x="360" y="472" width="200" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="460" y="496.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">仅恒等与反演</text>
+  <rect x="560" y="472" width="100" height="38" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="610" y="496.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">2</text>
+  <text x="60" y="522" font-size="10.5" fill="#475569">七行点群数 5+7+5+7+3+3+2 合计恰为 32，与第 1 章赫塞尔的枚举闭合；三方可按六方轴系描述，也可取菱方胞。</text>
+  <text x="60" y="536" font-size="10.5" fill="#475569">「参数式样」只是必要条件，衍射强度的对称性（Laue 对称）才是最终裁决。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、十四种布拉维格子（1850，布拉维完备枚举）</text>
+  <text x="730" y="186" font-size="10.5" fill="#475569">P＝简单；I＝体心；F＝面心（每胞等效 4 格点）；C＝底心（一对对面心）；R＝菱心（体对角三分之一处两个附加格点）。</text>
+  <line x1="746" y1="227" x2="788" y2="227" stroke="#475569" stroke-width="1.2"/>
+  <line x1="746" y1="227" x2="760" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="788" y1="227" x2="802" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="760" y1="239" x2="802" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="746" y1="227" x2="746" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="788" y1="227" x2="788" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="746" y1="185" x2="788" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="760" y1="239" x2="760" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="802" y1="239" x2="802" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="746" y1="185" x2="760" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="788" y1="185" x2="802" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="760" y1="197" x2="802" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="746" cy="227" r="3.2" fill="#0f766e"/>
+  <circle cx="788" cy="227" r="3.2" fill="#0f766e"/>
+  <circle cx="760" cy="239" r="3.2" fill="#0f766e"/>
+  <circle cx="802" cy="239" r="3.2" fill="#0f766e"/>
+  <circle cx="746" cy="185" r="3.2" fill="#0f766e"/>
+  <circle cx="788" cy="185" r="3.2" fill="#0f766e"/>
+  <circle cx="760" cy="197" r="3.2" fill="#0f766e"/>
+  <circle cx="802" cy="197" r="3.2" fill="#0f766e"/>
+  <text x="774" y="262" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">立方 P</text>
+  <line x1="874" y1="227" x2="916" y2="227" stroke="#475569" stroke-width="1.2"/>
+  <line x1="874" y1="227" x2="888" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="916" y1="227" x2="930" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="888" y1="239" x2="930" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="874" y1="227" x2="874" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="916" y1="227" x2="916" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="874" y1="185" x2="916" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="888" y1="239" x2="888" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="930" y1="239" x2="930" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="874" y1="185" x2="888" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="916" y1="185" x2="930" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="888" y1="197" x2="930" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="874" cy="227" r="3.2" fill="#0f766e"/>
+  <circle cx="916" cy="227" r="3.2" fill="#0f766e"/>
+  <circle cx="888" cy="239" r="3.2" fill="#0f766e"/>
+  <circle cx="930" cy="239" r="3.2" fill="#0f766e"/>
+  <circle cx="874" cy="185" r="3.2" fill="#0f766e"/>
+  <circle cx="916" cy="185" r="3.2" fill="#0f766e"/>
+  <circle cx="888" cy="197" r="3.2" fill="#0f766e"/>
+  <circle cx="930" cy="197" r="3.2" fill="#0f766e"/>
+  <circle cx="902" cy="212" r="3.2" fill="#0f766e"/>
+  <text x="902" y="262" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">立方 I</text>
+  <line x1="1002" y1="227" x2="1044" y2="227" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1002" y1="227" x2="1016" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1044" y1="227" x2="1058" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1016" y1="239" x2="1058" y2="239" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1002" y1="227" x2="1002" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1044" y1="227" x2="1044" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1002" y1="185" x2="1044" y2="185" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1016" y1="239" x2="1016" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1058" y1="239" x2="1058" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1002" y1="185" x2="1016" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1044" y1="185" x2="1058" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1016" y1="197" x2="1058" y2="197" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="1002" cy="227" r="3.2" fill="#0f766e"/>
+  <circle cx="1044" cy="227" r="3.2" fill="#0f766e"/>
+  <circle cx="1016" cy="239" r="3.2" fill="#0f766e"/>
+  <circle cx="1058" cy="239" r="3.2" fill="#0f766e"/>
+  <circle cx="1002" cy="185" r="3.2" fill="#0f766e"/>
+  <circle cx="1044" cy="185" r="3.2" fill="#0f766e"/>
+  <circle cx="1016" cy="197" r="3.2" fill="#0f766e"/>
+  <circle cx="1058" cy="197" r="3.2" fill="#0f766e"/>
+  <circle cx="1030" cy="233" r="3.2" fill="#0f766e"/>
+  <circle cx="1030" cy="191" r="3.2" fill="#0f766e"/>
+  <circle cx="1023" cy="206" r="3.2" fill="#0f766e"/>
+  <circle cx="1037" cy="218" r="3.2" fill="#0f766e"/>
+  <circle cx="1009" cy="212" r="3.2" fill="#0f766e"/>
+  <circle cx="1051" cy="212" r="3.2" fill="#0f766e"/>
+  <text x="1030" y="262" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">立方 F</text>
+  <line x1="1130" y1="233" x2="1172" y2="233" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1130" y1="233" x2="1144" y2="245" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1172" y1="233" x2="1186" y2="245" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1144" y1="245" x2="1186" y2="245" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1130" y1="233" x2="1130" y2="179" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1172" y1="233" x2="1172" y2="179" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1130" y1="179" x2="1172" y2="179" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1144" y1="245" x2="1144" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1186" y1="245" x2="1186" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1130" y1="179" x2="1144" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1172" y1="179" x2="1186" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1144" y1="191" x2="1186" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="1130" cy="233" r="3.2" fill="#0f766e"/>
+  <circle cx="1172" cy="233" r="3.2" fill="#0f766e"/>
+  <circle cx="1144" cy="245" r="3.2" fill="#0f766e"/>
+  <circle cx="1186" cy="245" r="3.2" fill="#0f766e"/>
+  <circle cx="1130" cy="179" r="3.2" fill="#0f766e"/>
+  <circle cx="1172" cy="179" r="3.2" fill="#0f766e"/>
+  <circle cx="1144" cy="191" r="3.2" fill="#0f766e"/>
+  <circle cx="1186" cy="191" r="3.2" fill="#0f766e"/>
+  <text x="1158" y="262" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">四方 P</text>
+  <line x1="1258" y1="233" x2="1300" y2="233" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1258" y1="233" x2="1272" y2="245" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1300" y1="233" x2="1314" y2="245" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1272" y1="245" x2="1314" y2="245" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1258" y1="233" x2="1258" y2="179" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1300" y1="233" x2="1300" y2="179" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1258" y1="179" x2="1300" y2="179" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1272" y1="245" x2="1272" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1314" y1="245" x2="1314" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1258" y1="179" x2="1272" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1300" y1="179" x2="1314" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1272" y1="191" x2="1314" y2="191" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="1258" cy="233" r="3.2" fill="#0f766e"/>
+  <circle cx="1300" cy="233" r="3.2" fill="#0f766e"/>
+  <circle cx="1272" cy="245" r="3.2" fill="#0f766e"/>
+  <circle cx="1314" cy="245" r="3.2" fill="#0f766e"/>
+  <circle cx="1258" cy="179" r="3.2" fill="#0f766e"/>
+  <circle cx="1300" cy="179" r="3.2" fill="#0f766e"/>
+  <circle cx="1272" cy="191" r="3.2" fill="#0f766e"/>
+  <circle cx="1314" cy="191" r="3.2" fill="#0f766e"/>
+  <circle cx="1286" cy="212" r="3.2" fill="#0f766e"/>
+  <text x="1286" y="262" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">四方 I</text>
+  <line x1="742.5" y1="314" x2="790.5" y2="314" stroke="#475569" stroke-width="1.2"/>
+  <line x1="742.5" y1="314" x2="757.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="790.5" y1="314" x2="805.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="757.5" y1="326" x2="805.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="742.5" y1="314" x2="742.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="790.5" y1="314" x2="790.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="742.5" y1="278" x2="790.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="757.5" y1="326" x2="757.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="805.5" y1="326" x2="805.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="742.5" y1="278" x2="757.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="790.5" y1="278" x2="805.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="757.5" y1="290" x2="805.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="742.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="790.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="757.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="805.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="742.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="790.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="757.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="805.5" cy="290" r="3.2" fill="#0f766e"/>
+  <text x="774" y="352" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">正交 P</text>
+  <line x1="870.5" y1="314" x2="918.5" y2="314" stroke="#475569" stroke-width="1.2"/>
+  <line x1="870.5" y1="314" x2="885.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="918.5" y1="314" x2="933.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="885.5" y1="326" x2="933.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="870.5" y1="314" x2="870.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="918.5" y1="314" x2="918.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="870.5" y1="278" x2="918.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="885.5" y1="326" x2="885.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="933.5" y1="326" x2="933.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="870.5" y1="278" x2="885.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="918.5" y1="278" x2="933.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="885.5" y1="290" x2="933.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="870.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="918.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="885.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="933.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="870.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="918.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="885.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="933.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="902" cy="320" r="3.2" fill="#0f766e"/>
+  <circle cx="902" cy="284" r="3.2" fill="#0f766e"/>
+  <text x="902" y="352" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">正交 C</text>
+  <line x1="998.5" y1="314" x2="1046.5" y2="314" stroke="#475569" stroke-width="1.2"/>
+  <line x1="998.5" y1="314" x2="1013.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1046.5" y1="314" x2="1061.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1013.5" y1="326" x2="1061.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="998.5" y1="314" x2="998.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1046.5" y1="314" x2="1046.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="998.5" y1="278" x2="1046.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1013.5" y1="326" x2="1013.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1061.5" y1="326" x2="1061.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="998.5" y1="278" x2="1013.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1046.5" y1="278" x2="1061.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1013.5" y1="290" x2="1061.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="998.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="1046.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="1013.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="1061.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="998.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="1046.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="1013.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="1061.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="1030" cy="302" r="3.2" fill="#0f766e"/>
+  <text x="1030" y="352" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">正交 I</text>
+  <line x1="1126.5" y1="314" x2="1174.5" y2="314" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1126.5" y1="314" x2="1141.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1174.5" y1="314" x2="1189.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1141.5" y1="326" x2="1189.5" y2="326" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1126.5" y1="314" x2="1126.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1174.5" y1="314" x2="1174.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1126.5" y1="278" x2="1174.5" y2="278" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1141.5" y1="326" x2="1141.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1189.5" y1="326" x2="1189.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1126.5" y1="278" x2="1141.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1174.5" y1="278" x2="1189.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1141.5" y1="290" x2="1189.5" y2="290" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="1126.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="1174.5" cy="314" r="3.2" fill="#0f766e"/>
+  <circle cx="1141.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="1189.5" cy="326" r="3.2" fill="#0f766e"/>
+  <circle cx="1126.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="1174.5" cy="278" r="3.2" fill="#0f766e"/>
+  <circle cx="1141.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="1189.5" cy="290" r="3.2" fill="#0f766e"/>
+  <circle cx="1158" cy="320" r="3.2" fill="#0f766e"/>
+  <circle cx="1158" cy="284" r="3.2" fill="#0f766e"/>
+  <circle cx="1150.5" cy="296" r="3.2" fill="#0f766e"/>
+  <circle cx="1165.5" cy="308" r="3.2" fill="#0f766e"/>
+  <circle cx="1134" cy="302" r="3.2" fill="#0f766e"/>
+  <circle cx="1182" cy="302" r="3.2" fill="#0f766e"/>
+  <text x="1158" y="352" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">正交 F</text>
+  <line x1="1261.5" y1="315" x2="1307.5" y2="315" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1261.5" y1="315" x2="1276.5" y2="327" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1307.5" y1="315" x2="1322.5" y2="327" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1276.5" y1="327" x2="1322.5" y2="327" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1261.5" y1="315" x2="1249.5" y2="277" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1307.5" y1="315" x2="1295.5" y2="277" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1249.5" y1="277" x2="1295.5" y2="277" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1276.5" y1="327" x2="1264.5" y2="289" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1322.5" y1="327" x2="1310.5" y2="289" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1249.5" y1="277" x2="1264.5" y2="289" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1295.5" y1="277" x2="1310.5" y2="289" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1264.5" y1="289" x2="1310.5" y2="289" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="1261.5" cy="315" r="3.2" fill="#0f766e"/>
+  <circle cx="1307.5" cy="315" r="3.2" fill="#0f766e"/>
+  <circle cx="1276.5" cy="327" r="3.2" fill="#0f766e"/>
+  <circle cx="1322.5" cy="327" r="3.2" fill="#0f766e"/>
+  <circle cx="1249.5" cy="277" r="3.2" fill="#0f766e"/>
+  <circle cx="1295.5" cy="277" r="3.2" fill="#0f766e"/>
+  <circle cx="1264.5" cy="289" r="3.2" fill="#0f766e"/>
+  <circle cx="1310.5" cy="289" r="3.2" fill="#0f766e"/>
+  <text x="1286" y="352" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">单斜 P</text>
+  <line x1="749.5" y1="405" x2="795.5" y2="405" stroke="#475569" stroke-width="1.2"/>
+  <line x1="749.5" y1="405" x2="764.5" y2="417" stroke="#475569" stroke-width="1.2"/>
+  <line x1="795.5" y1="405" x2="810.5" y2="417" stroke="#475569" stroke-width="1.2"/>
+  <line x1="764.5" y1="417" x2="810.5" y2="417" stroke="#475569" stroke-width="1.2"/>
+  <line x1="749.5" y1="405" x2="737.5" y2="367" stroke="#475569" stroke-width="1.2"/>
+  <line x1="795.5" y1="405" x2="783.5" y2="367" stroke="#475569" stroke-width="1.2"/>
+  <line x1="737.5" y1="367" x2="783.5" y2="367" stroke="#475569" stroke-width="1.2"/>
+  <line x1="764.5" y1="417" x2="752.5" y2="379" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="810.5" y1="417" x2="798.5" y2="379" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="737.5" y1="367" x2="752.5" y2="379" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="783.5" y1="367" x2="798.5" y2="379" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="752.5" y1="379" x2="798.5" y2="379" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="749.5" cy="405" r="3.2" fill="#0f766e"/>
+  <circle cx="795.5" cy="405" r="3.2" fill="#0f766e"/>
+  <circle cx="764.5" cy="417" r="3.2" fill="#0f766e"/>
+  <circle cx="810.5" cy="417" r="3.2" fill="#0f766e"/>
+  <circle cx="737.5" cy="367" r="3.2" fill="#0f766e"/>
+  <circle cx="783.5" cy="367" r="3.2" fill="#0f766e"/>
+  <circle cx="752.5" cy="379" r="3.2" fill="#0f766e"/>
+  <circle cx="798.5" cy="379" r="3.2" fill="#0f766e"/>
+  <circle cx="780" cy="411" r="3.2" fill="#0f766e"/>
+  <circle cx="768" cy="373" r="3.2" fill="#0f766e"/>
+  <text x="774" y="442" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">单斜 C</text>
+  <line x1="880" y1="402.5" x2="926" y2="402.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="880" y1="402.5" x2="891" y2="419.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="926" y1="402.5" x2="937" y2="419.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="891" y1="419.5" x2="937" y2="419.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="880" y1="402.5" x2="867" y2="364.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="926" y1="402.5" x2="913" y2="364.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="867" y1="364.5" x2="913" y2="364.5" stroke="#475569" stroke-width="1.2"/>
+  <line x1="891" y1="419.5" x2="878" y2="381.5" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="937" y1="419.5" x2="924" y2="381.5" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="867" y1="364.5" x2="878" y2="381.5" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="913" y1="364.5" x2="924" y2="381.5" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="878" y1="381.5" x2="924" y2="381.5" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="880" cy="402.5" r="3.2" fill="#0f766e"/>
+  <circle cx="926" cy="402.5" r="3.2" fill="#0f766e"/>
+  <circle cx="891" cy="419.5" r="3.2" fill="#0f766e"/>
+  <circle cx="937" cy="419.5" r="3.2" fill="#0f766e"/>
+  <circle cx="867" cy="364.5" r="3.2" fill="#0f766e"/>
+  <circle cx="913" cy="364.5" r="3.2" fill="#0f766e"/>
+  <circle cx="878" cy="381.5" r="3.2" fill="#0f766e"/>
+  <circle cx="924" cy="381.5" r="3.2" fill="#0f766e"/>
+  <text x="902" y="442" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">三斜 P</text>
+  <line x1="1030" y1="385.4" x2="1030" y2="419.4" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1007.4833395016046" y1="380.2" x2="1007.4833395016046" y2="414.2" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1007.4833395016046" y1="369.8" x2="1007.4833395016046" y2="403.8" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1030" y1="364.6" x2="1030" y2="398.6" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1052.5166604983954" y1="369.8" x2="1052.5166604983954" y2="403.8" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1052.5166604983954" y1="380.2" x2="1052.5166604983954" y2="414.2" stroke="#475569" stroke-width="1.2"/>
+  <polygon points="1030,419.4 1007.4833395016046,414.2 1007.4833395016046,403.8 1030,398.6 1052.5166604983954,403.8 1052.5166604983954,414.2" fill="none" stroke="#475569" stroke-width="1.2"/>
+  <polygon points="1030,385.4 1007.4833395016046,380.2 1007.4833395016046,369.8 1030,364.6 1052.5166604983954,369.8 1052.5166604983954,380.2" fill="#ccfbf1" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="1030" cy="385.4" r="3.2" fill="#0f766e"/>
+  <circle cx="1030" cy="419.4" r="3.2" fill="#0f766e"/>
+  <circle cx="1007.4833395016046" cy="380.2" r="3.2" fill="#0f766e"/>
+  <circle cx="1007.4833395016046" cy="414.2" r="3.2" fill="#0f766e"/>
+  <circle cx="1007.4833395016046" cy="369.8" r="3.2" fill="#0f766e"/>
+  <circle cx="1007.4833395016046" cy="403.8" r="3.2" fill="#0f766e"/>
+  <circle cx="1030" cy="364.6" r="3.2" fill="#0f766e"/>
+  <circle cx="1030" cy="398.6" r="3.2" fill="#0f766e"/>
+  <circle cx="1052.5166604983954" cy="369.8" r="3.2" fill="#0f766e"/>
+  <circle cx="1052.5166604983954" cy="403.8" r="3.2" fill="#0f766e"/>
+  <circle cx="1052.5166604983954" cy="380.2" r="3.2" fill="#0f766e"/>
+  <circle cx="1052.5166604983954" cy="414.2" r="3.2" fill="#0f766e"/>
+  <text x="1030" y="440" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">六方 P</text>
+  <line x1="1139" y1="403" x2="1177" y2="403" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1139" y1="403" x2="1152" y2="417" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1177" y1="403" x2="1190" y2="417" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1152" y1="417" x2="1190" y2="417" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1139" y1="403" x2="1126" y2="367" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1177" y1="403" x2="1164" y2="367" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1126" y1="367" x2="1164" y2="367" stroke="#475569" stroke-width="1.2"/>
+  <line x1="1152" y1="417" x2="1139" y2="381" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1190" y1="417" x2="1177" y2="381" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1126" y1="367" x2="1139" y2="381" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1164" y1="367" x2="1177" y2="381" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1139" y1="381" x2="1177" y2="381" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="1139" cy="403" r="3.2" fill="#0f766e"/>
+  <circle cx="1177" cy="403" r="3.2" fill="#0f766e"/>
+  <circle cx="1152" cy="417" r="3.2" fill="#0f766e"/>
+  <circle cx="1190" cy="417" r="3.2" fill="#0f766e"/>
+  <circle cx="1126" cy="367" r="3.2" fill="#0f766e"/>
+  <circle cx="1164" cy="367" r="3.2" fill="#0f766e"/>
+  <circle cx="1139" cy="381" r="3.2" fill="#0f766e"/>
+  <circle cx="1177" cy="381" r="3.2" fill="#0f766e"/>
+  <circle cx="1151.6666666666667" cy="395.6666666666667" r="3.2" fill="#0f766e"/>
+  <circle cx="1164.3333333333333" cy="388.3333333333333" r="3.2" fill="#0f766e"/>
+  <text x="1158" y="442" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">三方 R</text>
+  <rect x="1239.8416" y="381.8" width="92.3168" height="20.4" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1286" y="396.32" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">合计 14 种</text>
+  <text x="730" y="470" font-size="10.5" fill="#475569">合法加心方式与七大晶系的组合只有 14 种：立方 P/I/F、四方 P/I、正交 P/C/I/F、单斜 P/C、三斜 P、六方 P 与三方 R。</text>
+  <text x="730" y="484" font-size="10.5" fill="#475569">曾被列举的「底心四方」经基矢变换仍是四方 P（心点成为新格点），故被约化；立方加 C 心与立方对称冲突，同样被排除。</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、蛋白质晶体的空间群统计（RCSB 数十万条目）</text>
+  <rect x="86.2" y="724.6428571428571" width="57.6" height="125.35714285714286" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="115" y="715.6428571428571" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约四分之一强</text>
+  <text x="115" y="870" font-size="12.5" fill="#64748b" text-anchor="middle">P2<tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8">2</tspan><tspan dy="2.8" font-size="9.0">1</tspan><tspan dy="-2.8">2</tspan><tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="176.2" y="777.6785714285714" width="57.6" height="72.32142857142857" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="205" y="768.6785714285714" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约一成半</text>
+  <text x="205" y="870" font-size="12.5" fill="#64748b" text-anchor="middle">P2<tspan dy="2.8" font-size="9.0">1</tspan></text>
+  <rect x="266.2" y="801.7857142857143" width="57.6" height="48.214285714285715" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="295" y="870" font-size="12.5" fill="#64748b" text-anchor="middle">C2</text>
+  <rect x="356.2" y="613.75" width="57.6" height="236.25" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="385" y="604.75" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约半数</text>
+  <text x="385" y="870" font-size="12.5" fill="#64748b" text-anchor="middle">其余全部</text>
+  <path d="M 70,905 Q 70,896 79,896 M 331,896 Q 340,896 340,905" fill="none" stroke="#64748b" stroke-width="1.7"/>
+  <line x1="79" y1="896" x2="331" y2="896" stroke="#64748b" stroke-width="1.7"/>
+  <text x="205" y="920" font-size="14" fill="#64748b" text-anchor="middle" font-weight="600">P2<tspan dy="3.1" font-size="10.1">1</tspan><tspan dy="-3.1">2</tspan><tspan dy="3.1" font-size="10.1">1</tspan><tspan dy="-3.1">2</tspan><tspan dy="3.1" font-size="10.1">1</tspan><tspan dy="-3.1">＋P2</tspan><tspan dy="3.1" font-size="10.1">1</tspan><tspan dy="-3.1">＋C2 三者合计约覆盖一半</tspan></text>
+  <text x="460" y="620" font-size="10.5" fill="#475569">其后依次为 P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2 与 C2、若干立方群</tspan></text>
+  <text x="460" y="634" font-size="10.5" fill="#475569">（P2<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">3、I23 等）、</tspan></text>
+  <text x="460" y="648" font-size="10.5" fill="#475569">四方 P4<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">/P4</tspan><tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3"> 与 P4</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2/P4</tspan><tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2、</tspan></text>
+  <text x="460" y="662" font-size="10.5" fill="#475569">六方 P6<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">/P6</tspan><tspan dy="2.3" font-size="7.6">5</tspan><tspan dy="-2.3">、三方 P3</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">/P3</tspan><tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">2</tspan><tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">。</tspan></text>
+  <text x="460" y="710" font-size="10.5" fill="#475569">正交与单斜晶系合计约占六成；</text>
+  <text x="460" y="724" font-size="10.5" fill="#475569">立方虽少，却是精修与教学的宠儿</text>
+  <text x="460" y="738" font-size="10.5" fill="#475569">（肌红蛋白、多种铁蛋白）。</text>
+  <text x="460" y="782" font-size="10.5" fill="#475569">手性分子只能以一般位置入格；</text>
+  <text x="460" y="796" font-size="10.5" fill="#475569">低对称群一般位置多重数为 1，</text>
+  <text x="460" y="810" font-size="10.5" fill="#475569">对堆积几何限制最少，概率自然最高。</text>
+  <text x="70" y="930" font-size="10.5" fill="#64748b">少见群出现时更须警惕指标化假象，以多条证据交叉确认后再定论（第 6 章）</text>
+  <text x="70" y="944" font-size="10.5" fill="#64748b">。</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、从晶系到空间群的收紧漏斗与晶胞选择惯例</text>
+  <rect x="740" y="616" width="210" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="845" y="635" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">7 种晶系</text>
+  <text x="845" y="652" font-size="9.5" fill="#64748b" text-anchor="middle">晶胞参数式样初判</text>
+  <line x1="845" y1="660" x2="845" y2="676" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="740" y="676" width="210" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="845" y="695" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">14 种布拉维格子</text>
+  <text x="845" y="712" font-size="9.5" fill="#64748b" text-anchor="middle">加心方式与晶系组合</text>
+  <line x1="845" y1="720" x2="845" y2="736" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="740" y="736" width="210" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="845" y="755" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">32 种点群</text>
+  <text x="845" y="772" font-size="9.5" fill="#64748b" text-anchor="middle">点对称的完备分类</text>
+  <line x1="845" y1="780" x2="845" y2="796" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="740" y="796" width="210" height="44" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="845" y="815" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">230 种空间群</text>
+  <text x="845" y="832" font-size="9.5" fill="#64748b" text-anchor="middle">格子＋点群＋螺旋轴与滑移面</text>
+  <text x="1135" y="622" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">同一晶体、不同晶胞划分</text>
+  <circle cx="1010" cy="646" r="3" fill="#64748b"/>
+  <circle cx="1025" cy="668" r="3" fill="#64748b"/>
+  <circle cx="1040" cy="690" r="3" fill="#64748b"/>
+  <circle cx="1055" cy="712" r="3" fill="#64748b"/>
+  <circle cx="1044" cy="646" r="3" fill="#64748b"/>
+  <circle cx="1059" cy="668" r="3" fill="#64748b"/>
+  <circle cx="1074" cy="690" r="3" fill="#64748b"/>
+  <circle cx="1089" cy="712" r="3" fill="#64748b"/>
+  <circle cx="1078" cy="646" r="3" fill="#64748b"/>
+  <circle cx="1093" cy="668" r="3" fill="#64748b"/>
+  <circle cx="1108" cy="690" r="3" fill="#64748b"/>
+  <circle cx="1123" cy="712" r="3" fill="#64748b"/>
+  <circle cx="1112" cy="646" r="3" fill="#64748b"/>
+  <circle cx="1127" cy="668" r="3" fill="#64748b"/>
+  <circle cx="1142" cy="690" r="3" fill="#64748b"/>
+  <circle cx="1157" cy="712" r="3" fill="#64748b"/>
+  <circle cx="1146" cy="646" r="3" fill="#64748b"/>
+  <circle cx="1161" cy="668" r="3" fill="#64748b"/>
+  <circle cx="1176" cy="690" r="3" fill="#64748b"/>
+  <circle cx="1191" cy="712" r="3" fill="#64748b"/>
+  <circle cx="1180" cy="646" r="3" fill="#64748b"/>
+  <circle cx="1195" cy="668" r="3" fill="#64748b"/>
+  <circle cx="1210" cy="690" r="3" fill="#64748b"/>
+  <circle cx="1225" cy="712" r="3" fill="#64748b"/>
+  <polygon points="1010,646 1078,646 1093,668 1025,668" fill="none" stroke="#be185d" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <polygon points="1010,646 1074,690 1089,690 1025,668" fill="none" stroke="#d97706" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <polygon points="1010,646 1044,646 1059,668 1025,668" fill="#ccfbf1" fill-opacity="0.75" stroke="#0f766e" stroke-width="2.2"/>
+  <text x="1090" y="752" font-size="10.5" fill="#134e4a" font-weight="700">实线：Niggli 约化胞（三条最短基矢，唯一）</text>
+  <text x="1090" y="772" font-size="10.5" fill="#831843" font-weight="700">虚线：同一点阵的其他合法划分</text>
+  <text x="730" y="862" font-size="10.5" fill="#475569">Niggli 约化胞按三条最短基矢唯一确定最小胞；惯用原点与轴约定（国际表 A 卷）使同群晶体的参数可直接比较。</text>
+  <text x="730" y="876.5" font-size="10.5" fill="#475569">数据处理软件内部先做约化、再换算到惯用设置输出——两条参数记录对不上时，先查轴变换与设置差异；</text>
+  <text x="730" y="891" font-size="10.5" fill="#475569">胰岛素晶胞的多次「改名」正是这类换算的经典案例。</text>
+  <rect x="922.395" y="934.225" width="235.21" height="19.55" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1040" y="948.14" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">「标准」晶胞参数是约定的产物而非天然</text>
+</svg>

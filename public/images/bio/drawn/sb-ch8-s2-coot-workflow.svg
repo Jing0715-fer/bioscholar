@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">模型搭建的实践：Coot 工作流与自动流水线</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">Coot（Emsley与Cowtan2004）：骨架化、baton接力、mutate、fitrotamer、realspacerefine、peptideflip；ARP/wARP要求优于约1.7Å、Buccaneer面向2–3.5Å；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">水三判据（3σ、氢键2.6–3.0Å、B相当）；配体先造字典再过polder图</text>
+  <rect x="30" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Coot 工作流：从骨架到全原子（Emsley 与 Cowtan 2004）</text>
+  <rect x="56" y="222" width="140" height="110" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="126" y="240" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">① 骨架化（bones）</text>
+  <ellipse cx="90" cy="285" rx="20" ry="14" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.2"/>
+  <ellipse cx="125" cy="300" rx="20" ry="14" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.2"/>
+  <ellipse cx="160" cy="280" rx="20" ry="14" fill="#ccfbf1" fill-opacity="0.6" stroke="#0f766e" stroke-width="1.2"/>
+  <polyline points="76,290 100,278 126,296 150,282 176,272" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <text x="126" y="322" font-size="9" fill="#64748b" text-anchor="middle">Greer 1974「骨头」网络</text>
+  <rect x="216" y="222" width="140" height="110" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="286" y="240" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">② baton 接力搭建</text>
+  <polyline points="232,300 258,282 284,296 310,278 336,290" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <line x1="232" y1="300" x2="258" y2="282" stroke="#0369a1" stroke-width="4.5"/>
+  <line x1="258" y1="282" x2="284" y2="296" stroke="#0369a1" stroke-width="4.5"/>
+  <line x1="284" y1="296" x2="310" y2="278" stroke="#0369a1" stroke-width="4.5"/>
+  <line x1="310" y1="278" x2="336" y2="290" stroke="#0369a1" stroke-width="4.5"/>
+  <circle cx="258" cy="282" r="3.4" fill="#075985" stroke="none"/>
+  <circle cx="284" cy="296" r="3.4" fill="#075985" stroke="none"/>
+  <text x="286" y="322" font-size="9" fill="#64748b" text-anchor="middle">每跳一步预置一个残基</text>
+  <rect x="376" y="222" width="140" height="110" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="446" y="240" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ mutate 与 fit rotamer</text>
+  <circle cx="410" cy="288" r="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+  <line x1="424" y1="288" x2="444" y2="288" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <circle cx="462" cy="288" r="6" fill="#0f766e" stroke="#134e4a" stroke-width="1.6"/>
+  <line x1="462" y1="288" x2="478" y2="272" stroke="#134e4a" stroke-width="2.2"/>
+  <line x1="462" y1="288" x2="480" y2="294" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="462" y1="288" x2="474" y2="304" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="446" y="322" font-size="9" fill="#64748b" text-anchor="middle">虚线=候选构象，实线=最贴合</text>
+  <rect x="536" y="222" width="140" height="110" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="606" y="240" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">④ real space refine zone</text>
+  <ellipse cx="600" cy="292" rx="44" ry="16" fill="#ccfbf1" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.3"/>
+  <path d="M 566,300 q 16,-18 32,-6 q 14,10 34,-8" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M 566,296 q 18,-6 34,2 q 16,8 32,-4" fill="none" stroke="#059669" stroke-width="2.4"/>
+  <line x1="592" y1="312" x2="592" y2="298" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="606" y="322" font-size="9" fill="#64748b" text-anchor="middle">选区贴密度同时保持几何</text>
+  <line x1="196" y1="277" x2="216" y2="277" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="356" y1="277" x2="376" y2="277" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="516" y1="277" x2="536" y2="277" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="56" y="356" font-size="10" fill="#475569">核心逻辑：把「看图、改模、验证」压缩进同一界面。加减残基接续断链、mutate 把暂放残基换成序列指定类型；</text>
+  <text x="56" y="370.5" font-size="10" fill="#475569">rotamer 从 Richardson 系统计库挑最贴合密度者，是防止「怪构象」的第一道闸。</text>
+  <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、peptide flip 与操作时机速查</text>
+  <rect x="740" y="206" width="180" height="84" rx="6" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="830" y="222" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">flip 前：O 装反</text>
+  <circle cx="790" cy="262" r="5" fill="#075985" stroke="none"/>
+  <line x1="790" y1="262" x2="830" y2="262" stroke="#475569" stroke-width="2"/>
+  <circle cx="830" cy="262" r="5" fill="#134e4a" stroke="none"/>
+  <line x1="830" y1="262" x2="830" y2="240" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="830" cy="238" r="3.5" fill="#dc2626" stroke="none"/>
+  <line x1="830" y1="262" x2="872" y2="262" stroke="#475569" stroke-width="2"/>
+  <circle cx="872" cy="262" r="5" fill="#075985" stroke="none"/>
+  <text x="830" y="284" font-size="9" fill="#64748b" text-anchor="middle">φ/ψ 落 Ramachandran 禁区</text>
+  <rect x="910.32775" y="239.925" width="89.3445" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="955" y="251.42" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">肽平面旋转 180°</text>
+  <rect x="1040" y="206" width="180" height="84" rx="6" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.4"/>
+  <text x="1130" y="222" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">flip 后：羰基归位</text>
+  <circle cx="1090" cy="258" r="5" fill="#075985" stroke="none"/>
+  <line x1="1090" y1="258" x2="1130" y2="258" stroke="#475569" stroke-width="2"/>
+  <circle cx="1130" cy="258" r="5" fill="#134e4a" stroke="none"/>
+  <line x1="1130" y1="258" x2="1130" y2="280" stroke="#059669" stroke-width="2.2"/>
+  <circle cx="1130" cy="282" r="3.5" fill="#059669" stroke="none"/>
+  <line x1="1130" y1="258" x2="1172" y2="258" stroke="#475569" stroke-width="2"/>
+  <circle cx="1172" cy="258" r="5" fill="#075985" stroke="none"/>
+  <text x="1130" y="236" font-size="9" fill="#64748b" text-anchor="middle">φ/ψ 回到优势区</text>
+  <line x1="925" y1="248" x2="1035" y2="248" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <rect x="730" y="306" width="186" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="823" y="333.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">操作</text>
+  <rect x="916" y="306" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="333.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">目的</text>
+  <rect x="1116" y="306" width="234" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1233" y="333.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">常用时机</text>
+  <rect x="730" y="350" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="823" y="368.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">骨架化加 baton 搭建</text>
+  <rect x="916" y="350" width="200" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="368.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">沿密度走廊延伸主链</text>
+  <rect x="1116" y="350" width="234" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1233" y="368.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">从零建模、断链重接</text>
+  <rect x="730" y="376" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="376" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="823" y="394.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">加减残基、mutate</text>
+  <rect x="916" y="376" width="200" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="394.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">对齐序列与密度</text>
+  <rect x="1116" y="376" width="234" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1233" y="394.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">register 校正之后</text>
+  <rect x="730" y="402" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="823" y="420.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">fit rotamer</text>
+  <rect x="916" y="402" width="200" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="420.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">侧链按统计先验换构象</text>
+  <rect x="1116" y="402" width="234" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1233" y="420.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">密度与几何冲突时</text>
+  <rect x="730" y="428" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="428" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="823" y="446.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">real space refine zone</text>
+  <rect x="916" y="428" width="200" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="446.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">选区实空间贴密度优化</text>
+  <rect x="1116" y="428" width="234" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1233" y="446.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">每次改动后、全局精修前</text>
+  <rect x="730" y="454" width="186" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="823" y="472.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">peptide flip</text>
+  <rect x="916" y="454" width="200" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1016" y="472.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">翻正肽平面</text>
+  <rect x="1116" y="454" width="234" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1233" y="472.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">成对正负峰伴越界时</text>
+  <rect x="30" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="504.84" font-size="19" fill="#475569" font-weight="700">三、自动建模流水线：分工与门槛</text>
+  <rect x="56" y="504" width="600" height="82" rx="8" fill="#0369a114" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="72" y="526" font-size="12" fill="#0369a1" font-weight="700">ARP/wARP</text>
+  <text x="130.8" y="526" font-size="9.5" fill="#64748b">（Perrakis 等 1999）</text>
+  <text x="240" y="524" font-size="10" fill="#475569">自由原子反复「播种—连接—重评」，拼主链再挂序列</text>
+  <text x="240" y="556" font-size="9.5" fill="#64748b">要求优于约 1.7 Å；数十分钟产出九成以上正确全原子</text>
+  <rect x="56" y="592" width="600" height="82" rx="8" fill="#0f766e14" stroke="#0f766e" stroke-width="1.4"/>
+  <text x="72" y="614" font-size="12" fill="#0f766e" font-weight="700">Buccaneer</text>
+  <text x="137.4" y="614" font-size="9.5" fill="#64748b">（Cowtan 2006）</text>
+  <text x="240" y="612" font-size="10" fill="#475569">从密度特征直接预测主链片段与残基类型，逐步拉长链条</text>
+  <text x="240" y="644" font-size="9.5" fill="#64748b">面向 2–3.5 Å 中低分辨率，长链蛋白尤其受益</text>
+  <rect x="56" y="680" width="600" height="82" rx="8" fill="#6d28d914" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="72" y="702" font-size="12" fill="#6d28d9" font-weight="700">Phenix AutoBuild</text>
+  <text x="183.59999999999997" y="702" font-size="9.5" fill="#64748b">（Terwilliger 等 2008）</text>
+  <text x="240" y="700" font-size="10" fill="#475569">定相、修饰、建模、精修组成循环</text>
+  <text x="240" y="732" font-size="9.5" fill="#64748b">每一轮重建都以最新相位为底</text>
+  <rect x="56" y="768" width="600" height="82" rx="8" fill="#be185d14" stroke="#be185d" stroke-width="1.4"/>
+  <text x="72" y="790" font-size="12" fill="#be185d" font-weight="700">AlphaFold 初稿</text>
+  <text x="168" y="790" font-size="9.5" fill="#64748b">（2021 年后的新实践）</text>
+  <text x="240" y="788" font-size="10" fill="#475569">预测模型按密度对接为骨架参考，任务变「逐段校」</text>
+  <text x="240" y="820" font-size="9.5" fill="#64748b">低置信环区仍须手工，工作量普遍减半</text>
+  <text x="56" y="870" font-size="10" fill="#475569">自动与手工衔接：自动程序先交七八成骨架，建模员在 Coot 处理环区、侧链与配体，再进全局精修</text>
+  <rect x="710" y="482" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="504.84" font-size="19" fill="#475569" font-weight="700">四、水、配体与双色球导航</text>
+  <rect x="730" y="516" width="340" height="142" rx="8" fill="#e0f2fe" fill-opacity="0.3" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="900" y="534" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">水分子三判据（缺一不可）</text>
+  <ellipse cx="820" cy="590" rx="26" ry="17" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="900" cy="590" r="5" fill="#0369a1" stroke="#075985" stroke-width="1.2"/>
+  <ellipse cx="975" cy="592" rx="26" ry="17" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="843" y1="585" x2="893" y2="588" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="907" y1="590" x2="952" y2="590" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="868" y="574" font-size="9" fill="#64748b" text-anchor="middle" font-weight="700">2.6–3.0 Å</text>
+  <text x="930" y="574" font-size="9" fill="#64748b" text-anchor="middle" font-weight="700">2.6–3.0 Å</text>
+  <text x="742" y="624" font-size="9.5" fill="#475569">① Fo−Fc 不低于约 3σ（稳妥 2.5σ 配主图）</text>
+  <text x="742" y="638" font-size="9.5" fill="#475569">② 氢键 2.6–3.0 Å、几何不荒谬（孤立水不放）</text>
+  <text x="742" y="652" font-size="9.5" fill="#475569">③ B 因子与邻居相当——B 飙过 80 多半在占噪声位</text>
+  <rect x="1090" y="516" width="260" height="130" rx="8" fill="#ede9fe" fill-opacity="0.35" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="1220" y="534" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">配体建模四步</text>
+  <circle cx="1108" cy="560" r="3" fill="#6d28d9" stroke="none"/>
+  <text x="1118" y="564" font-size="9.5" fill="#475569">GRADE/eLBOW 生成约束字典</text>
+  <circle cx="1108" cy="582" r="3" fill="#6d28d9" stroke="none"/>
+  <text x="1118" y="586" font-size="9.5" fill="#475569">按密度摆放与旋转</text>
+  <circle cx="1108" cy="604" r="3" fill="#6d28d9" stroke="none"/>
+  <text x="1118" y="608" font-size="9.5" fill="#475569">polder 图判定存在性</text>
+  <circle cx="1108" cy="626" r="3" fill="#6d28d9" stroke="none"/>
+  <text x="1118" y="630" font-size="9.5" fill="#475569">占有率与 B 因子成对检验</text>
+  <rect x="817.36195" y="679.925" width="165.2761" height="16.15" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="900" y="691.42" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">2 Å：数百个水（约与残基同量级）</text>
+  <rect x="1104.8771" y="679.925" width="130.2458" height="16.15" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1170" y="691.42" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">3 Å：零星 · 6 Å：一个不留</text>
+  <text x="730" y="716" font-size="10" fill="#475569">find waters 自动放水只当候选，逐个过三判据再收编；活性位点的水参与催化与配体识别，优先级最高。</text>
+  <rect x="730" y="756" width="620" height="78" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1040" y="776" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">双色球导航：验证项逐个清零</text>
+  <circle cx="800" cy="804" r="8" fill="#0f766e44" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="800" cy="804" r="3" fill="#0f766e" stroke="none"/>
+  <text x="816" y="800" font-size="10" fill="#0f766e" font-weight="700">Ramachandran</text>
+  <text x="816" y="816" font-size="9" fill="#64748b">优势区大于 96%</text>
+  <circle cx="990" cy="804" r="8" fill="#0369a144" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="990" cy="804" r="3" fill="#0369a1" stroke="none"/>
+  <text x="1006" y="800" font-size="10" fill="#0369a1" font-weight="700">rotamer</text>
+  <text x="1006" y="816" font-size="9" fill="#64748b">离群接近零</text>
+  <circle cx="1180" cy="804" r="8" fill="#dc262644" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="1180" cy="804" r="3" fill="#dc2626" stroke="none"/>
+  <text x="1196" y="800" font-size="10" fill="#dc2626" font-weight="700">clash</text>
+  <text x="1196" y="816" font-size="9" fill="#64748b">冲突逐项清零</text>
+  <text x="760" y="804" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">三件套</text>
+  <text x="730" y="854" font-size="10" fill="#475569">清零之后再进入全局精修——几何与密度轮流把关，是省心与严谨的分界线。</text>
+  <text x="700" y="946" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">建模是把密度翻译成坐标的手艺——自动流水线管量产，Coot 管手笔，双色球管纪律</text>
+</svg>

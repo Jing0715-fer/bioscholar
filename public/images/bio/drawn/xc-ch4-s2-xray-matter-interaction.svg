@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">X 射线与物质的相互作用：散射、吸收与数量级</text>
+  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">汤姆逊截面 6.65×10<tspan dy="-6.5" font-size="13.7">-29</tspan><tspan dy="6.5"> m</tspan><tspan dy="-6.5" font-size="13.7">2</tspan><tspan dy="6.5"> 为衍射唯一来源；光电吸收 ∝ Z</tspan><tspan dy="-6.5" font-size="13.7">4</tspan><tspan dy="6.5">λ</tspan><tspan dy="-6.5" font-size="13.7">3</tspan><tspan dy="6.5">；f</tspan><tspan dy="4.2" font-size="13.7">0</tspan><tspan dy="-4.2"> 随 sinθ/λ 下降（碳 6 至 1.7）；I＝I</tspan><tspan dy="4.2" font-size="13.7">0</tspan><tspan dy="-4.2">e</tspan><tspan dy="-6.5" font-size="13.7">-μt</tspan><tspan dy="6.5">；单斑概率 10</tspan><tspan dy="-6.5" font-size="13.7">-8</tspan><tspan dy="6.5">–10</tspan><tspan dy="-6.5" font-size="13.7">-10</tspan><tspan dy="6.5">；电子散射强千倍</tspan></text>
+  <rect x="30" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、X 射线进入晶体后的三条通道</text>
+  <text x="155" y="180" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">汤姆逊散射（相干）</text>
+  <path d="M 72,206 q 11.0,6.0 22.0,0.0 q 11.0,-6.0 22.0,0.0 q 11.0,6.0 22.0,0.0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <line x1="138" y1="206" x2="148" y2="206" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="105" y="194" font-size="8.5" fill="#92400e" text-anchor="middle">入射光子</text>
+  <circle cx="160" cy="240" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="160" y="244" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">e<tspan dy="-3.1" font-size="6.5">-</tspan></text>
+  <line x1="152" y1="212" x2="158" y2="228" stroke="#d97706" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr-warn)"/>
+  <path d="M 152,226.14359353944897 A 16,16 0 0 1 168,226.14359353944897" fill="none" opacity="0.95" stroke="#0369a1" stroke-width="1.8"/>
+  <path d="M 148,219.21539030917347 A 24,24 0 0 1 172,219.21539030917347" fill="none" opacity="0.65" stroke="#0369a1" stroke-width="1.8"/>
+  <path d="M 144,212.28718707889797 A 32,32 0 0 1 176,212.28718707889797" fill="none" opacity="0.4" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="155" y="296" font-size="9" fill="#475569" text-anchor="middle">弹性：同频、相位关系确定</text>
+  <text x="155" y="310" font-size="9" fill="#475569" text-anchor="middle">大量电子的散射可互相干涉</text>
+  <text x="355" y="180" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">光电吸收</text>
+  <path d="M 272,206 q 6.5,8.4 16.7,5.3 q 10.2,-3.0 16.7,5.3 q 6.5,8.4 16.7,5.3" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <line x1="322" y1="222" x2="330" y2="226" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="282" y="194" font-size="8.5" fill="#92400e" text-anchor="middle">入射光子（整个交给原子）</text>
+  <circle cx="355" cy="240" r="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="355" cy="240" r="11" fill="none" stroke="#6d28d9" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="355" cy="240" r="2.5" fill="#4c1d95"/>
+  <text x="355" y="284" font-size="8.5" fill="#64748b" text-anchor="middle">K 层电子被击出、外层回填</text>
+  <line x1="378" y1="224" x2="430" y2="198" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <text x="432" y="194" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">光电子</text>
+  <path d="M 380,254 q 6.2,8.5 16.7,8.0 q 10.5,-0.5 16.7,8.0 q 6.2,8.5 16.7,8.0" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <line x1="430" y1="278" x2="438" y2="282" stroke="#be185d" stroke-width="2.2" marker-end="url(#arr-enz)"/>
+  <text x="442" y="290" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">特征荧光</text>
+  <text x="355" y="308" font-size="9" fill="#475569" text-anchor="middle">次级电离级联＝辐射损伤起点</text>
+  <text x="565" y="180" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">康普顿散射（非相干）</text>
+  <path d="M 480,206 q 8.3,8.7 20.0,6.0 q 11.7,-2.7 20.0,6.0 q 8.3,8.7 20.0,6.0" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <line x1="540" y1="224" x2="548" y2="228" stroke="#d97706" stroke-width="2.2" marker-end="url(#arr-warn)"/>
+  <text x="496" y="194" font-size="8.5" fill="#92400e" text-anchor="middle">入射光子</text>
+  <circle cx="560" cy="240" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="560" y="244" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">e<tspan dy="-3.1" font-size="6.5">-</tspan></text>
+  <path d="M 580,226 q 13.2,3.0 20.0,-8.7 q 6.8,-11.7 20.0,-8.7 q 13.2,3.0 20.0,-8.7" fill="none" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="640" y1="200" x2="648" y2="197" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="620" y="186" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">散射光子 λ′&gt;λ</text>
+  <line x1="580" y1="254" x2="640" y2="282" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="660" y="292" font-size="8.5" fill="#4c1d95" text-anchor="end" font-weight="700">反冲电子</text>
+  <text x="565" y="308" font-size="9" fill="#475569" text-anchor="middle">非弹性碰撞、相位被打乱</text>
+  <rect x="60" y="330" width="96" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="108" y="357.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">相互作用</text>
+  <rect x="156" y="330" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="357.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">光子去向</text>
+  <rect x="346" y="330" width="76" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="384" y="357.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">相干性</text>
+  <rect x="422" y="330" width="238" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="541" y="357.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">对实验的意义</text>
+  <rect x="60" y="374" width="96" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="108" y="394.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">汤姆逊散射</text>
+  <rect x="156" y="374" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="394.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">弹性再辐射</text>
+  <rect x="346" y="374" width="76" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="384" y="394.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">相干</text>
+  <rect x="422" y="374" width="238" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="541" y="394.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">衍射信号唯一来源</text>
+  <rect x="60" y="404" width="600" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="404" width="96" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="108" y="424.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">光电吸收</text>
+  <rect x="156" y="404" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="424.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">被原子吸收、击出内层电子</text>
+  <rect x="346" y="404" width="76" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="384" y="424.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="422" y="404" width="238" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="541" y="424.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">衰减、荧光背景、辐射损伤</text>
+  <rect x="60" y="434" width="96" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="108" y="454.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">康普顿散射</text>
+  <rect x="156" y="434" width="190" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="251" y="454.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">非弹性碰撞后波长变长</text>
+  <rect x="346" y="434" width="76" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="384" y="454.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">非相干</text>
+  <rect x="422" y="434" width="238" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="541" y="454.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">弥散背景、剂量次要来源</text>
+  <text x="60" y="490" font-size="10" fill="#64748b">三种过程同时发生：衍射只「用」第一条通道，却要为后两条「付账」——光电吸收造成衰减与损伤（第 5 章），</text>
+  <text x="60" y="503.5" font-size="10" fill="#64748b">荧光与康普顿散射抬高背景。衍射图因此可以读作「晶体电子分布的傅里叶照片」。</text>
+  <rect x="710" y="132" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、原子散射因子 f<tspan dy="4.2" font-size="13.7">0</tspan><tspan dy="-4.2">：电子云的签名</tspan></text>
+  <rect x="786" y="181.8" width="11" height="8.4" rx="3" fill="#b45309" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="805" y="189.6" font-size="10" fill="#475569">碳 C</text>
+  <rect x="836.4" y="181.8" width="11" height="8.4" rx="3" fill="#6d28d9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="855.4" y="189.6" font-size="10" fill="#475569">氮 N</text>
+  <rect x="886.8" y="181.8" width="11" height="8.4" rx="3" fill="#0369a1" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="905.8" y="189.6" font-size="10" fill="#475569">氧 O</text>
+  <rect x="937.1999999999999" y="181.8" width="11" height="8.4" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="956.1999999999999" y="189.6" font-size="10" fill="#475569">硫 S</text>
+  <rect x="800" y="200" width="300" height="190" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="800" y1="342.5" x2="1100" y2="342.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="875" y1="390" x2="875" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="295" x2="1100" y2="295" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="950" y1="390" x2="950" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="247.5" x2="1100" y2="247.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="1025" y1="390" x2="1025" y2="200" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="800" y1="390" x2="800" y2="396" stroke="#475569" stroke-width="1.8"/>
+  <text x="800" y="412" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="907.1" y1="390" x2="907.1" y2="396" stroke="#475569" stroke-width="1.8"/>
+  <text x="907.1" y="412" font-size="13" fill="#64748b" text-anchor="middle">0.25</text>
+  <line x1="1014.2" y1="390" x2="1014.2" y2="396" stroke="#475569" stroke-width="1.8"/>
+  <text x="1014.2" y="412" font-size="13" fill="#64748b" text-anchor="middle">0.5</text>
+  <line x1="794" y1="390" x2="800" y2="390" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="394" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="794" y1="342.5" x2="800" y2="342.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="346.5" font-size="13" fill="#64748b" text-anchor="end">4</text>
+  <line x1="794" y1="247.5" x2="800" y2="247.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="251.5" font-size="13" fill="#64748b" text-anchor="end">12</text>
+  <line x1="794" y1="200" x2="800" y2="200" stroke="#475569" stroke-width="1.8"/>
+  <text x="790" y="204" font-size="13" fill="#64748b" text-anchor="end">16</text>
+  <text x="950" y="434" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">sinθ/λ（Å<tspan dy="-5.1" font-size="10.8">-1</tspan><tspan dy="5.1">）</tspan></text>
+  <text x="754" y="295" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">f<tspan dy="3.3" font-size="10.8">0</tspan><tspan dy="-3.3">（电子数）</tspan></text>
+  <path d="M800,318.75 C810.0,321.5 839.3,330.6 860,335.375 C880.7,340.1 903.6,343.9 924.2857142857142,347.25 C945.0,350.6 964.3,353.0 984.2857142857143,355.5625 C1004.3,358.1 1024.3,360.3 1044.2857142857142,362.6875 C1064.3,365.1 1083.6,367.9 1104.2857142857142,369.8125 C1125.0,371.7 1147.9,372.6 1168.5714285714287,373.96875 C1189.3,375.4 1218.6,377.4 1228.5714285714284,378.125" fill="none" stroke="#b45309" stroke-width="2.4"/>
+  <text x="814" y="321.75" font-size="10" fill="#b45309" text-anchor="middle" font-weight="700">C</text>
+  <path d="M800,306.875 C810.0,309.8 839.3,319.5 860,324.6875 C880.7,329.8 903.6,333.8 924.2857142857142,337.75 C945.0,341.7 964.3,345.1 984.2857142857143,348.4375 C1004.3,351.8 1024.3,354.8 1044.2857142857142,357.9375 C1064.3,361.1 1083.6,365.1 1104.2857142857142,367.4375 C1125.0,369.8 1147.9,370.8 1168.5714285714287,372.1875 C1189.3,373.6 1218.6,375.2 1228.5714285714284,375.75" fill="none" stroke="#6d28d9" stroke-width="2.4"/>
+  <text x="814" y="309.875" font-size="10" fill="#6d28d9" text-anchor="middle" font-weight="700">N</text>
+  <path d="M800,295 C810.0,298.4 839.3,309.4 860,315.1875 C880.7,320.9 903.6,325.1 924.2857142857142,329.4375 C945.0,333.8 964.3,337.4 984.2857142857143,341.3125 C1004.3,345.3 1024.3,349.0 1044.2857142857142,353.1875 C1064.3,357.3 1083.6,363.3 1104.2857142857142,366.25 C1125.0,369.2 1147.9,369.6 1168.5714285714287,371 C1189.3,372.4 1218.6,374.0 1228.5714285714284,374.5625" fill="none" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="814" y="298" font-size="10" fill="#0369a1" text-anchor="middle" font-weight="700">O</text>
+  <path d="M800,200 C810.0,205.9 839.3,224.7 860,235.625 C880.7,246.5 903.6,256.6 924.2857142857142,265.3125 C945.0,274.0 964.3,280.9 984.2857142857143,287.875 C1004.3,294.8 1024.3,300.3 1044.2857142857142,306.875 C1064.3,313.4 1083.6,321.7 1104.2857142857142,327.0625 C1125.0,332.4 1147.9,335.6 1168.5714285714287,338.9375 C1189.3,342.3 1218.6,345.9 1228.5714285714284,347.25" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="814" y="203" font-size="10" fill="#dc2626" text-anchor="middle" font-weight="700">S</text>
+  <circle cx="1014.2857142857142" cy="369.8125" r="4" fill="#b45309" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1014.2857142857142" cy="367.4375" r="4" fill="#6d28d9" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1014.2857142857142" cy="366.25" r="4" fill="#0369a1" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="1014.2857142857142" cy="327.0625" r="4" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="1022.2857142857142" y="363.875" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">碳约 1.7</text>
+  <text x="1022.2857142857142" y="323.5" font-size="8.5" fill="#dc2626" text-anchor="middle" font-weight="700">硫约 5.3</text>
+  <text x="730" y="446" font-size="10" fill="#475569">零散射角处所有电子同相，f<tspan dy="2.2" font-size="7.2">0</tspan><tspan dy="-2.2">＝Z；随 sinθ/λ 增大，电子云的有限尺寸使各部分散射波出现相位差，f</tspan><tspan dy="2.2" font-size="7.2">0</tspan><tspan dy="-2.2"> 单调下降——碳在 0.5 Å</tspan><tspan dy="-3.4" font-size="7.2">-1</tspan></text>
+  <text x="730" y="459.5" font-size="10" fill="#475569">（约对应 d＝1 Å）处只剩约 1.7 个电子，同处氧约 2.0、氮约 1.9、硫约 5.3（自 16 降）。轻原子高角的「声量」只剩零角时的两三成，</text>
+  <text x="730" y="473" font-size="10" fill="#475569">重原子的相对优势愈发醒目——这是衍射强度随分辨率衰减的普遍趋势之一（另一贡献来自温度因子，本章第 4 节）。</text>
+  <rect x="1110" y="200" width="240" height="176" rx="9" fill="#fce7f3" fill-opacity="0.4" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1230" y="224" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">反常修正：f = f<tspan dy="2.5" font-size="8.3">0</tspan><tspan dy="-2.5"> + f′ + if″</tspan></text>
+  <text x="1122" y="248" font-size="9.5" fill="#475569">吸收边附近实部 f′（色散项）与虚部 f″（吸收项）</text>
+  <text x="1122" y="261" font-size="9.5" fill="#475569">剧变，正是 MAD/SAD 定相的物理支点（第 8 章）</text>
+  <text x="1122" y="274" font-size="9.5" fill="#475569">。以 Se 为例，</text>
+  <text x="1122" y="287" font-size="9.5" fill="#475569">峰处 f″ 约 4 个电子——相当于凭空多出的一枚「虚部原子」。</text>
+  <text x="1122" y="330" font-size="9.5" fill="#64748b">蛋白主要轻元素远离吸收边（C 约 284 eV、</text>
+  <text x="1122" y="343" font-size="9.5" fill="#64748b">O 约 532 eV，而常规工作能量 8–13 keV），</text>
+  <text x="1122" y="356" font-size="9.5" fill="#64748b">修正小而平缓；Se、Br、Zn、Fe 反常显著、</text>
+  <text x="1122" y="369" font-size="9.5" fill="#64748b">可资利用。</text>
+  <rect x="30" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="580.84" font-size="19" fill="#475569" font-weight="700">三、吸收随波长增长：边、衰减与背景</text>
+  <text x="70" y="594" font-size="10.5" fill="#475569" font-weight="700">Se 的 μ–λ 曲线（μ 近似随 Z<tspan dy="-3.6" font-size="7.6">4</tspan><tspan dy="3.6">λ</tspan><tspan dy="-3.6" font-size="7.6">3</tspan><tspan dy="3.6"> 增长，示意）</tspan></text>
+  <rect x="70" y="600" width="280" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="70" y1="735" x2="350" y2="735" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="140" y1="780" x2="140" y2="600" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="690" x2="350" y2="690" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="210" y1="780" x2="210" y2="600" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="645" x2="350" y2="645" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="280" y1="780" x2="280" y2="600" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="70" y1="780" x2="70" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="70" y="802" font-size="13" fill="#64748b" text-anchor="middle">0.5</text>
+  <line x1="140" y1="780" x2="140" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="140" y="802" font-size="13" fill="#64748b" text-anchor="middle">1.0</text>
+  <line x1="210" y1="780" x2="210" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="210" y="802" font-size="13" fill="#64748b" text-anchor="middle">1.5</text>
+  <line x1="280" y1="780" x2="280" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="280" y="802" font-size="13" fill="#64748b" text-anchor="middle">2.0</text>
+  <line x1="350" y1="780" x2="350" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="350" y="802" font-size="13" fill="#64748b" text-anchor="middle">2.5</text>
+  <line x1="64" y1="690" x2="70" y2="690" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="694" font-size="13" fill="#64748b" text-anchor="end">中</text>
+  <line x1="64" y1="618" x2="70" y2="618" stroke="#475569" stroke-width="1.8"/>
+  <text x="60" y="622" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="210" y="824" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">波长 λ（Å）</text>
+  <path d="M70,762 C73.7,761.1 84.9,758.7 92.4,756.6 C99.9,754.5 107.3,751.8 114.80000000000001,749.4 C122.3,747.0 133.5,743.4 137.2,742.2" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <line x1="137.2" y1="742.2" x2="137.2" y2="668.4" stroke="#dc2626" stroke-width="2.6"/>
+  <path d="M137.2,668.4 C144.7,666.0 165.2,659.4 182,654 C198.8,648.6 219.3,641.7 238,636 C256.7,630.3 275.3,624.3 294,619.8 C312.7,615.3 340.7,610.8 350,609" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="137.2" y="608" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">K 吸收边</text>
+  <text x="137.2" y="620" font-size="8.5" fill="#dc2626" text-anchor="middle">12.66 keV（λ≈0.98 Å）</text>
+  <text x="243.6" y="708" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">边以上：吸收剧烈</text>
+  <text x="98" y="708" font-size="9" fill="#64748b" text-anchor="middle">边以下</text>
+  <text x="420" y="594" font-size="10.5" fill="#475569" font-weight="700">穿过厚度 t 后的强度衰减</text>
+  <rect x="420" y="600" width="240" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="420" y1="735" x2="660" y2="735" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="480" y1="780" x2="480" y2="600" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="420" y1="690" x2="660" y2="690" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="540" y1="780" x2="540" y2="600" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="420" y1="645" x2="660" y2="645" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="600" y1="780" x2="600" y2="600" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="414" y1="600" x2="420" y2="600" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="604" font-size="13" fill="#64748b" text-anchor="end">I<tspan dy="2.9" font-size="9.4">0</tspan></text>
+  <line x1="414" y1="713.4" x2="420" y2="713.4" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="717.4" font-size="13" fill="#64748b" text-anchor="end">1/e</text>
+  <line x1="414" y1="780" x2="420" y2="780" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="784" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <text x="540" y="824" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">穿行厚度 t</text>
+  <path d="M420,600 C426.0,604.5 444.0,617.4 456,627 C468.0,636.6 480.0,647.7 492,657.6 C504.0,667.5 516.0,677.4 528,686.4 C540.0,695.4 552.0,703.8 564,711.6 C576.0,719.4 588.0,726.6 600,733.2 C612.0,739.8 626.0,746.7 636,751.2 C646.0,755.7 656.0,758.7 660,760.2" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <text x="568.8" y="686.4" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">I = I<tspan dy="2.4" font-size="7.9">0</tspan><tspan dy="-2.4">·e</tspan><tspan dy="-3.7" font-size="7.9">-μt</tspan></text>
+  <text x="60" y="838" font-size="10" fill="#475569">吸收边与荧光的因果链：K 空位由外层电子回填，多出的能量以该元素特征荧光发出（或以俄歇电子交出）</text>
+  <text x="60" y="851.5" font-size="10" fill="#475569">——入射能量高于边才能击出 K 电子，故荧光是「边以上」的现象。Cu Kα（8.05 keV）高于 P（约 2.15）、S（约 2.47）、Ca</text>
+  <text x="60" y="865" font-size="10" fill="#475569">（约 4.04 keV）的 K 边，会在蛋白晶体里激发荧光铺垫背景；Se 的 K 边约 12.66 keV 高于 Cu Kα——家用源既做不了 Se 反常，</text>
+  <text x="60" y="878.5" font-size="10" fill="#475569">也因此免了 Se 荧光之扰。</text>
+  <text x="60" y="886" font-size="10" fill="#64748b">背景控制：空气散射与挡板散射是低角背景主源——挡板要贴近样品又遮住直射光；直径太大封顶最低分辨率、太小则漏光再散射。</text>
+  <text x="60" y="899.5" font-size="10" fill="#64748b">缩短样品至挡板距离、限束准直管、氦气盒或真空管道是主药；母液、冷冻保护剂、</text>
+  <text x="60" y="913" font-size="10" fill="#64748b">尼龙环与冰壳同样记入背景预算——低角数据决定电子密度图的「形状」，损失常被低估（第 6 章）。</text>
+  <rect x="141.5525" y="931.075" width="376.895" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="330" y="943.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">含重原子或波长偏长的数据，吸收修正是「信不过」与「信得过」的分界线</text>
+  <rect x="710" y="558" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="580.84" font-size="19" fill="#475569" font-weight="700">四、数量级直觉：强源与灵敏探测器的刚需</text>
+  <rect x="730" y="606" width="262" height="32" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="861" y="626" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">入射通量 10<tspan dy="-3.6" font-size="7.6">12</tspan><tspan dy="3.6"> ph/s（同步辐射束）</tspan></text>
+  <line x1="998" y1="622" x2="1072" y2="622" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <rect x="1078" y="612" width="148" height="20" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1152" y="626" font-size="9.5" fill="#dc2626" text-anchor="middle" font-weight="700">单个反射 10<tspan dy="-3.2" font-size="6.8">2</tspan><tspan dy="3.2">–10</tspan><tspan dy="-3.2" font-size="6.8">4</tspan></text>
+  <rect x="917.64374" y="659.075" width="240.71251999999998" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1038" y="671.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">入射光子进入单个衍射斑的概率仅 10<tspan dy="-3.6" font-size="7.6">-8</tspan><tspan dy="3.6">–10</tspan><tspan dy="-3.6" font-size="7.6">-10</tspan></text>
+  <text x="1286" y="616" font-size="8.5" fill="#64748b" text-anchor="middle">计数统计涨落直接进入强度</text>
+  <text x="730" y="700" font-size="10" fill="#475569">一颗 100 μm 见方的蛋白晶体，晶胞体积按 10<tspan dy="-3.4" font-size="7.2">5</tspan><tspan dy="3.4">–10</tspan><tspan dy="-3.4" font-size="7.2">6</tspan><tspan dy="3.4"> Å</tspan><tspan dy="-3.4" font-size="7.2">3</tspan><tspan dy="3.4"> 计，约含 10</tspan><tspan dy="-3.4" font-size="7.2">6</tspan><tspan dy="3.4">–10</tspan><tspan dy="-3.4" font-size="7.2">7</tspan><tspan dy="3.4"> 个晶胞；即便如此，</tspan></text>
+  <text x="730" y="713.5" font-size="10" fill="#475569">通量摊到每个反射常不过 10<tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4">–10</tspan><tspan dy="-3.4" font-size="7.2">4</tspan><tspan dy="3.4"> 个光子——泊松计数噪声直接进入强度。这把「更强的光源」（同步辐射，本章第 1 节）</tspan></text>
+  <text x="730" y="727" font-size="10" fill="#475569">与「零噪声的探测器」（单光子计数 PAD，第 5 章）变成刚需。</text>
+  <rect x="730" y="766" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="793.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">项目</text>
+  <rect x="810" y="766" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="793.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">X 射线衍射</text>
+  <rect x="1010" y="766" width="336" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1178" y="793.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">电子衍射（MicroED）</text>
+  <rect x="730" y="810" width="80" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="830.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">散射能力</text>
+  <rect x="810" y="810" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="830.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">较弱</text>
+  <rect x="1010" y="810" width="336" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1178" y="830.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">原子对电子的散射约强三个数量级</text>
+  <rect x="730" y="840" width="616" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="840" width="80" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="860.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">晶体尺寸</text>
+  <rect x="810" y="840" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="860.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">数十微米以上为舒适区</text>
+  <rect x="1010" y="840" width="336" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1178" y="860.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">1–5 μm 即可</text>
+  <rect x="730" y="870" width="80" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="890.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">Ewald 球</text>
+  <rect x="810" y="870" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="890.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">半径 1/λ，旋转逐帧扫球</text>
+  <rect x="1010" y="870" width="336" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1178" y="890.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">200 kV 电子 λ＝0.0251 Å，半径放大约 40 倍、近乎平面</text>
+  <rect x="730" y="900" width="616" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="900" width="80" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="770" y="920.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">剂量</text>
+  <rect x="810" y="900" width="200" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="910" y="920.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">辐射损伤须低温与剂量管理</text>
+  <rect x="1010" y="900" width="336" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1178" y="920.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">能量沉积迅猛，天生低剂量作业</text>
+  <text x="730" y="944" font-size="10" fill="#64748b">X 射线以数十微米以上晶体为舒适区、MicroED 有 1–5 μm 即可——两者对晶体体积的需求差约两个数量级，</text>
+  <text x="730" y="957.5" font-size="10" fill="#64748b">正是散射强度差在实验尺寸上的投影（第 12 章）；「一图全收」与「逐帧扫球」的对照也由此而来。</text>
+</svg>
