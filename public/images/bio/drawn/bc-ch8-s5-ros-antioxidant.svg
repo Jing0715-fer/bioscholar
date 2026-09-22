@@ -75,14 +75,15 @@
   <line x1="1282.5" y1="269" x2="1282.5" y2="283" stroke="#6d28d9" stroke-width="1.4" opacity="0.55"/>
   <line x1="1299.5" y1="283" x2="1299.5" y2="269" stroke="#6d28d9" stroke-width="1.4" opacity="0.55"/>
   <line x1="1316.5" y1="269" x2="1316.5" y2="283" stroke="#6d28d9" stroke-width="1.4" opacity="0.55"/>
-  <rect x="1230.7569" y="311.925" width="40.486200000000004" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
-  <text x="1251" y="323.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">8-oxoG</text>
+  <line x1="1248" y1="269" x2="1248" y2="283" stroke="#dc2626" stroke-width="3.2" opacity="0.95"/>
+  <rect x="1227.7569" y="311.925" width="40.486200000000004" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1248" y="323.42" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">8-oxoG</text>
   <text x="746" y="356" font-size="10.5" fill="#475569">攻击不饱和脂肪酸引发脂质过氧化链式反应</text>
   <text x="746" y="371" font-size="10.5" fill="#475569">（膜损伤、MDA 生成）。</text>
   <text x="956" y="356" font-size="10.5" fill="#475569">蛋白质侧链氧化、肽键断裂，</text>
   <text x="956" y="371" font-size="10.5" fill="#475569">发生聚集与交联。</text>
-  <text x="1166" y="356" font-size="10.5" fill="#475569">攻击 DNA 碱基产生 8-氧鸟嘌呤</text>
-  <text x="1166" y="371" font-size="10.5" fill="#475569">（8-oxoG）→ G→T 突变。</text>
+  <text x="1166" y="356" font-size="10.5" fill="#475569">鸟嘌呤 C8 位被氧化生成 8-oxoG，</text>
+  <text x="1166" y="371" font-size="10.5" fill="#475569">复制时与 A 误配 → G→T 颠换。</text>
   <rect x="788.65625" y="459.375" width="202.6875" height="21.25" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
   <text x="890" y="474.5" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700">氧化应激 = ROS 产生 &gt; 清除能力</text>
   <text x="736" y="506" font-size="11" fill="#475569">与衰老、动脉粥样硬化、糖尿病并发症、肿瘤、神经退行性疾病及炎症损伤相关。</text>
@@ -98,25 +99,25 @@
   <circle cx="482" cy="652" r="24" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
   <text x="482" y="655.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">H₂O₂</text>
   <line x1="506" y1="636" x2="566" y2="606" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <line x1="506" y1="668" x2="566" y2="698" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="506" y1="668" x2="545" y2="700" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
   <rect x="566.17415" y="583.075" width="87.6517" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
   <text x="610" y="595.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">CAT 过氧化氢酶</text>
   <text x="610" y="570" font-size="10" fill="#64748b" text-anchor="middle">2 H₂O₂ → 2 H₂O + O₂</text>
-  <rect x="523.4549" y="703.075" width="173.0902" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
-  <text x="610" y="715.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">GPx 谷胱甘肽过氧化物酶（含硒）</text>
-  <text x="610" y="690" font-size="10" fill="#64748b" text-anchor="middle">2 GSH + H₂O₂（或 LOOH）</text>
-  <text x="610" y="744" font-size="10" fill="#64748b" text-anchor="middle">→ GSSG + 2 H₂O（或 LOH）</text>
+  <rect x="498.4549" y="703.075" width="173.0902" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="585" y="715.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">GPx 谷胱甘肽过氧化物酶（含硒）</text>
+  <text x="585" y="690" font-size="10" fill="#64748b" text-anchor="middle">2 GSH + H₂O₂（或 LOOH）</text>
+  <text x="585" y="744" font-size="10" fill="#64748b" text-anchor="middle">→ GSSG + 2 H₂O（或 LOH）</text>
   <rect x="96" y="792" width="150" height="44" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
   <text x="171" y="812" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">GSSG（氧化型）</text>
   <text x="171" y="828" font-size="9.5" fill="#64748b" text-anchor="middle">2 GSH → 1 GSSG</text>
   <line x1="246" y1="814" x2="330" y2="814" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
   <rect x="337.02385" y="805.075" width="165.9523" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
   <text x="420" y="817.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">谷胱甘肽还原酶（辅酶 NADPH）</text>
-  <line x1="510" y1="814" x2="590" y2="814" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
-  <rect x="592" y="792" width="130" height="44" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
-  <text x="657" y="812" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">2 GSH（还原型）</text>
-  <text x="657" y="828" font-size="9.5" fill="#64748b" text-anchor="middle">巯基缓冲 · mM 级</text>
-  <path d="M657,790 L657,770 Q657,760 647,760 L120,760 Q110,760 110,770 L110,790" fill="none" stroke="#059669" stroke-width="1.8" stroke-dasharray="6 5" marker-end="url(#arr-ok)"/>
+  <line x1="510" y1="814" x2="574" y2="814" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <rect x="578" y="792" width="108" height="44" rx="8" fill="#d1fae5" fill-opacity="0.55" stroke="#059669" stroke-width="1.6"/>
+  <text x="632" y="812" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">2 GSH（还原型）</text>
+  <text x="632" y="828" font-size="9.5" fill="#64748b" text-anchor="middle">巯基缓冲 · mM 级</text>
+  <path d="M632,790 L632,770 Q632,760 622,760 L120,760 Q110,760 110,770 L110,790" fill="none" stroke="#059669" stroke-width="1.8" stroke-dasharray="6 5" marker-end="url(#arr-ok)"/>
   <text x="384" y="750" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">循环再生：GSSG → 2 GSH</text>
   <rect x="213.50897500000002" y="869.075" width="172.98204999999996" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
   <text x="300" y="881.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">NADPH ← 磷酸戊糖途径（G6PD）</text>

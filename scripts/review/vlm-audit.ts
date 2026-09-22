@@ -44,7 +44,7 @@ const PROMPT = `你是出版级插图质检专家。这是一张代码绘制的 
 async function auditOne(zai: Awaited<ReturnType<typeof ZAI.create>>, slug: string): Promise<Result> {
   const buf = readFileSync(resolve(PNG_DIR, `${slug}.png`))
   const dataUrl = `data:image/png;base64,${buf.toString('base64')}`
-  for (let attempt = 1; attempt <= 6; attempt++) {
+  for (let attempt = 1; attempt <= 8; attempt++) {
     try {
       const completion = await zai.chat.completions.createVision({
         model: 'glm-5v-turbo',
@@ -70,8 +70,9 @@ async function auditOne(zai: Awaited<ReturnType<typeof ZAI.create>>, slug: strin
       }
     } catch (e) {
       const is429 = /429|Too many/i.test(String(e))
-      if (attempt === (is429 ? 6 : 3)) return { file: `${slug}.svg`, verdict: 'ERROR', note: (e as Error).message.slice(0, 200) }
-      await new Promise(r => setTimeout(r, (is429 ? 9000 : 2000) * attempt + Math.random() * 2000))
+      if (attempt === (is429 ? 8 : 3)) return { file: `${slug}.svg`, verdict: 'ERROR', note: (e as Error).message.slice(0, 200) }
+      // 429 时长退避（45s×attempt），让账户配额自然回充
+      await new Promise(r => setTimeout(r, (is429 ? 45000 : 2000) * attempt + Math.random() * 5000))
     }
   }
   return { file: `${slug}.svg`, verdict: 'ERROR' }
@@ -98,7 +99,7 @@ async function main() {
       const flag = r.verdict === 'PASS' ? '✓' : r.verdict === 'FAIL' ? '✗ FAIL' : '✗ ERR'
       console.log(`[w${wid}] ${n}/${targets.length} ${flag} ${slug}`)
       if (r.verdict === 'FAIL') console.log(`    → ${(r.issues ?? '').slice(0, 160)}`)
-      if (n % 10 === 0) writeFileSync(REPORT, JSON.stringify(results, null, 1))
+      writeFileSync(REPORT, JSON.stringify(results, null, 1))
     }
   }
   await Promise.all(Array.from({ length: CONC }, (_, i) => worker(i)))

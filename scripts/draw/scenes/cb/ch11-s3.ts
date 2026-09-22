@@ -19,9 +19,9 @@ const draw = (b: B) => {
     if (i < 3) b.arrow(x + 138, 249, x + 156, 249, { stroke: C.mute, sw: 2.2, marker: 'mute' })
   })
   b.wtext(70, 316, 'Wilmut 与 Campbell 等将成年绵羊乳腺上皮细胞的核移植入去核卵母细胞——首次证明哺乳动物终末分化细胞的细胞核可被卵母细胞质重编程恢复全能性。', { size: 10, fill: C.sub, maxW: 590, lh: 14 })
-  b.tag(200, 372, '277 次核移植仅 1 例成功', { fill: C.badL, stroke: C.bad, size: 10.5, weight: 700, tfill: C.bad, pad: 6 })
-  b.wtext(70, 408, '卵母细胞质中的因子（如今知道包括 Oct4、Klf4 等）足以抹去体细胞的分化记忆；随后克隆牛、鼠、犬等相继成功。', { size: 10, fill: C.sub, maxW: 590, lh: 14 })
-  b.wtext(70, 456, '但克隆动物普遍存在胎盘异常、巨大后代综合征（LOS）等表观缺陷；Dolly 端粒偏短、早逝（2003 年安乐死）——揭示重编程的不完全性与表观屏障。', { size: 9.5, fill: C.mute, maxW: 590, lh: 13.5 })
+  b.tag(200, 380, '277 次核移植仅 1 例成功', { fill: C.badL, stroke: C.bad, size: 10.5, weight: 700, tfill: C.bad, pad: 6 })
+  b.wtext(70, 418, '卵母细胞质中的因子（如今知道包括 Oct4、Klf4 等）足以抹去体细胞的分化记忆；随后克隆牛、鼠、犬等相继成功。', { size: 10, fill: C.sub, maxW: 590, lh: 14 })
+  b.wtext(70, 466, '但克隆动物普遍存在胎盘异常、巨大后代综合征（LOS）等表观缺陷；Dolly 端粒偏短、早逝（2003 年安乐死）——揭示重编程的不完全性与表观屏障。', { size: 9.5, fill: C.mute, maxW: 590, lh: 13.5 })
 
   // ============ 二、iPS：山中因子 OSKM ============
   b.panel(710, 132, 660, 430, { title: '二、iPS 诱导多能干细胞：OSKM 四因子（2006/2007）' })

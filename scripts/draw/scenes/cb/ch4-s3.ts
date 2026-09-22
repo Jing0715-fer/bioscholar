@@ -11,7 +11,7 @@ const draw = (b: B) => {
   b.ctext(145, 294, 'Sec12', { size: 9.5, weight: 700, fill: C.ok })
   b.circle(100, 252, 14, { fill: C.accL, stroke: C.acc, sw: 1.6 })
   b.ctext(100, 256, 'Sar1', { size: 9, weight: 700, fill: C.accD })
-  b.ctext(100, 224, 'Sar1-GDP（GEF 激活）', { size: 10, fill: C.sub })
+  b.ctext(110, 224, 'Sar1-GDP（GEF 置换为 GTP）', { size: 10, fill: C.sub })
   b.arrow(100, 268, 128, 282, { stroke: C.acc, sw: 1.8, marker: 'acc' })
   // 出芽的 COPII 小泡
   b.circle(300, 240, 24, { fill: C.panelB, stroke: C.sub, sw: 2 })
@@ -98,10 +98,10 @@ const draw = (b: B) => {
       ['网格蛋白', 'clathrin+AP/GGA', 'Arf6 等', 'TGN→内体；质膜→内体', 'M6P 受体-酶、受体-配体复合物'],
     ],
   })
-  b.tag(960, 848, '包被蛋白的三重职责', { fill: C.proL, stroke: C.pro, size: 11.5, weight: 700, tfill: C.proD, pad: 9 })
-  b.wtext(726, 830, '驱动膜变形、选择货物、形成小泡——出芽之后须脱包被才能与靶膜融合。', { size: 11, fill: C.sub, maxW: 600, lh: 15.5 })
-  b.wtext(726, 880, 'BFA 抑制 Arf 的 GEF：COPI 解离 → 高尔基体崩解并入 ER（逆向融合），直观展示膜泡运输维持细胞器身份的动态平衡。', { size: 10.5, fill: C.mute, maxW: 600, lh: 14.5 })
-  b.wtext(726, 936, '约 1/3 的 ER 膜蛋白会「逃逸」到高尔基体，依靠 COPI 逆行回收维持 ER 驻留蛋白库。', { size: 10.5, fill: C.mute, maxW: 600, lh: 14.5 })
+  b.tag(1010, 850, '包被蛋白的三重职责', { fill: C.proL, stroke: C.pro, size: 11.5, weight: 700, tfill: C.proD, pad: 9 })
+  b.wtext(726, 884, '驱动膜变形、选择货物、形成小泡——出芽之后须脱包被才能与靶膜融合。', { size: 11, fill: C.sub, maxW: 600, lh: 15.5 })
+  b.wtext(726, 918, 'BFA 抑制 Arf 的 GEF：COPI 解离 → 高尔基体崩解并入 ER（逆向融合），直观展示膜泡运输维持细胞器身份的动态平衡。', { size: 10.5, fill: C.mute, maxW: 600, lh: 14.5 })
+  b.wtext(726, 950, '约 1/3 的 ER 膜蛋白会「逃逸」到高尔基体，依靠 COPI 逆行回收维持 ER 驻留蛋白库。', { size: 10.5, fill: C.mute, maxW: 600, lh: 14.5 })
 }
 export default scene({
   title: '三类包被膜泡：COPII、COPI 与网格蛋白',

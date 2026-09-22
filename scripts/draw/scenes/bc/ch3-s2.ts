@@ -11,19 +11,18 @@ const draw = (b: B) => {
   ]
   states.forEach(([t, f, note, fl, st], i) => {
     const y = 178 + i * 84
-    b.rect(60, y, 330, 70, { fill: fl, fillOp: 0.55, stroke: st, sw: 1.5, rx: 8 })
-    b.text(74, y + 22, t, { size: 12.5, weight: 700, fill: st === C.ok ? '#065f46' : st })
-    b.text(74, y + 44, f, { size: 12.5, fill: C.ink })
-    b.wtext(74, y + 60, note, { size: 10.5, fill: C.sub, maxW: 300, lh: 13 })
+    b.rect(60, y, 330, 64, { fill: fl, fillOp: 0.55, stroke: st, sw: 1.5, rx: 8 })
+    b.text(74, y + 19, t, { size: 12.5, weight: 700, fill: st === C.ok ? '#065f46' : st })
+    b.text(74, y + 38, f, { size: 12.5, fill: C.ink })
+    b.wtext(74, y + 56, note, { size: 10.5, fill: C.sub, maxW: 300, lh: 13 })
   })
-  b.arrow(150, 252, 150, 268, { stroke: C.sub, sw: 1.8, marker: 'ink' })
-  b.arrow(300, 268, 300, 252, { stroke: C.faint, sw: 1.6, marker: 'mute' })
-  b.ctext(150, 246, '加 OH⁻', { size: 9.5, fill: C.mute })
-  b.ctext(300, 246, '加 H⁺', { size: 9.5, fill: C.mute })
-  b.arrow(150, 336, 150, 352, { stroke: C.sub, sw: 1.8, marker: 'ink' })
-  b.arrow(300, 352, 300, 336, { stroke: C.faint, sw: 1.6, marker: 'mute' })
-  b.ctext(150, 330, '加 OH⁻', { size: 9.5, fill: C.mute })
-  b.ctext(300, 330, '加 H⁺', { size: 9.5, fill: C.mute })
+  // 状态间转换箭头与标注（完全位于两框间隙内，不压框内文字）
+  for (const gy of [242, 326]) {
+    b.arrow(150, gy + 4, 150, gy + 16, { stroke: C.sub, sw: 1.8, marker: 'ink' })
+    b.arrow(300, gy + 16, 300, gy + 4, { stroke: C.faint, sw: 1.6, marker: 'mute' })
+    b.text(162, gy + 14, '加 OH⁻', { size: 9, fill: C.mute })
+    b.text(312, gy + 14, '加 H⁺', { size: 9, fill: C.mute })
+  }
   // 右：平均净电荷–pH 曲线
   b.axis(470, 486, 220, 284, {
     xlabel: 'pH', ylabel: '平均净电荷',
@@ -87,22 +86,33 @@ const draw = (b: B) => {
   b.text(800 + 0.78 * 450, 742 - 0.6 * 140 + 6, '蛋白质 280 nm', { size: 10.5, weight: 700, fill: C.pro })
   b.text(800 + 0.09 * 450, 742 - 0.95 * 140 + 8, '肽键 190~220 nm', { size: 10, fill: C.mute })
   b.wtext(766, 806, 'A₂₈₀ 估算蛋白质浓度（Trp 与 Tyr 的贡献）；A₂₆₀/A₂₈₀ 评估纯度。', { size: 11, fill: C.sub, maxW: 590, lh: 16 })
-  // 电泳迁移示意（上负下正）
-  b.text(766, 826, '电泳迁移方向取决于 pH 与 pI：', { size: 12.5, weight: 700, fill: C.ink })
-  b.line(790, 846, 1180, 846, { stroke: C.mute, sw: 1.6, dash: '6 4' })
-  b.text(780, 842, '−', { size: 13, weight: 700, fill: C.sub })
-  b.etext(1190, 842, '+', { size: 13, weight: 700, fill: C.sub })
-  const lanes: [number, number, string][] = [
-    [830, 0.22, 'pH < pI：+1 → 向负极'],
-    [990, 0.5, 'pH = pI：0 → 不动'],
-    [1150, 0.8, 'pH > pI：−1 → 向正极'],
+  // 电泳迁移示意（水平式：左 − 负极 · 右 + 正极，点样孔居中，条带位置即迁移方向）
+  b.text(766, 826, '电泳迁移方向取决于 pH 与 pI（左 − 负极 · 右 + 正极）：', { size: 12.5, weight: 700, fill: C.ink })
+  const lanes: [string, number, string, string, string][] = [
+    ['pH < pI：+1 → 负极', 947, C.acc, C.acc, 'etext'],
+    ['pH = pI：0 → 不动', 1097, C.ok, '#065f46', 'etext'],
+    ['pH > pI：−1 → 正极', 1247, C.enz, C.enz, 'text'],
   ]
-  lanes.forEach(([x, fy, label]) => {
-    b.rect(x - 26, 854, 52, 92, { fill: '#f8fafc', stroke: C.sub, sw: 1.6, rx: 4 })
-    b.rect(x - 20, 858, 40, 6, { fill: C.ink, rx: 2 })
-    b.rect(x - 19, 862 + fy * 74, 38, 7, { fill: C.enz, opacity: 0.85, rx: 3 })
-    b.ctext(x, 962, label, { size: 10, fill: C.sub })
+  lanes.forEach(([label, bx, bandC, textC, anchor], i) => {
+    const y = 840 + i * 36
+    b.rect(884, y, 426, 20, { fill: '#f8fafc', stroke: C.sub, sw: 1.4, rx: 4 })
+    b.text(874, y + 13.5, '−', { size: 10, weight: 700, fill: C.sub })
+    b.text(1320, y + 13.5, '+', { size: 10, weight: 700, fill: C.sub })
+    b.rect(1093, y + 3, 8, 14, { fill: C.ink, rx: 2 })
+    if (bx === 1097) {
+      b.rect(1084, y + 5, 26, 10, { fill: bandC, opacity: 0.9, rx: 3 })
+    } else {
+      b.rect(bx - 13, y + 5, 26, 10, { fill: bandC, opacity: 0.9, rx: 3 })
+      const toLeft = bx < 1097
+      b.arrow(toLeft ? 1078 : 1116, y + 10, toLeft ? 970 : 1224, y + 10, { stroke: bandC, sw: 1.5, marker: 'ink' })
+    }
+    if (anchor === 'etext') {
+      b.etext(1296, y + 13.5, label, { size: 9.5, weight: 700, fill: textC })
+    } else {
+      b.text(896, y + 13.5, label, { size: 9.5, weight: 700, fill: textC })
+    }
   })
+  b.wtext(766, 948, 'pH < pI 时净电荷为正、迁向负极；pH > pI 净负电、迁向正极；pI 处净电荷为零、原地不动——等电聚焦即在 pH 梯度中把各蛋白聚焦至其 pI。', { size: 10, fill: C.sub, maxW: 590, lh: 14 })
 }
 
 export default scene({

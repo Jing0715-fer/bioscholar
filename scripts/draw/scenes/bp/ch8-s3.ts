@@ -43,7 +43,7 @@ const draw = (b: B) => {
   b.arrow(1082, 228, 1158, 228, { stroke: C.acc, sw: 2.2, marker: 'acc' })
   b.arrow(1160, 252, 1090, 252, { stroke: C.mute, sw: 1.8, marker: 'mute' })
   b.path('M 1214,268 C 1300,330 850,340 776,270', { stroke: C.mute, sw: 1.8, marker: 'mute', dash: '5 4', fill: 'none' })
-  b.ctext(995, 322, '失活 → 复活', { size: 9, fill: C.mute })
+  b.ctext(1230, 330, '失活 → 复活', { size: 9, fill: C.mute })
   b.text(730, 340, '某状态的驻留时间分布为指数；多个指数之和 → 多个串行关闭态', { size: 10.5, weight: 600, fill: C.ink })
   b.text(730, 354, 'HH 模型的 m^{3}h、n^{4} 门控即隐式马尔可夫模型；速率图可由单通道记录以最大似然法估计——突变/药物即改写个别 k_ij', { size: 9.5, fill: C.sub })
   // 驻留时间直方图（指数）

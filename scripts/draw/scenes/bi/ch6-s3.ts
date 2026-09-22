@@ -47,7 +47,7 @@ const draw = (b: B) => {
   b.ctext(1030, 230, '根：交集为空 → 取并集，计一次变化', { size: 11.5, weight: 700, fill: C.bad })
   b.wtext(740, 450, '后序（叶 → 根）：对每内部节点取子集交集，空则并集并计一次变化；前序（根 → 叶）：把状态落实到分支。', { size: 11.5, fill: C.sub, maxW: 560, lh: 17 })
   b.text(740, 218, '该列在此拓扑下：', { size: 11.5, fill: C.mute })
-  b.tag(930, 212, '最小变化数 = 1', { fill: C.proL, stroke: C.pro, size: 12, weight: 700, tfill: C.proD, pad: 9 })
+  b.tag(930, 194, '最小变化数 = 1', { fill: C.proL, stroke: C.pro, size: 12, weight: 700, tfill: C.proD, pad: 9 })
 
   // ============ 三、两法对照 ============
   b.panel(30, 576, 1340, 384, { title: '三、最大简约法与最大似然法：两种评分哲学' })

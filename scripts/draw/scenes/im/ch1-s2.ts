@@ -7,7 +7,7 @@ const draw = (b: B) => {
 
   const bands: Array<[string, string, string, Array<[string, string]>]> = [
     ['免疫器官', C.dna, C.dnaD, [
-      ['中枢（育成）', '骨髓 · 胸腺 —— T/B 细胞发育成熟的「质检车间」'],
+      ['中枢（育成）', '骨髓育 B 细胞 · 胸腺育 T 细胞 —— 淋巴细胞的「质检车间」'],
       ['外周（应答）', '淋巴结 · 脾 · MALT —— 免疫应答启动场所'],
     ]],
     ['免疫细胞', C.pro, C.proD, [
@@ -21,8 +21,9 @@ const draw = (b: B) => {
   ]
   bands.forEach(([name, col, colD, groups], i) => {
     const yy = 186 + i * 78
+    const colL = [C.dnaL, C.proL, C.accL][i]
     b.rect(60, yy, 1280, 70, { fill: i % 2 === 0 ? C.panelB : C.bg, stroke: C.line, sw: 1.3, rx: 9 })
-    b.tag(140, yy + 35, name, { fill: col, fillOp: 0.15, stroke: col, tfill: colD, size: 14.5, weight: 700, pad: 12 })
+    b.tag(140, yy + 35, name, { fill: colL, stroke: col, tfill: colD, size: 14.5, weight: 700, pad: 12 })
     groups.forEach(([g, detail], gi) => {
       const gx = 320 + gi * 470
       b.tag(gx + 52, yy + 35, g, { fill: C.bg, stroke: col, tfill: colD, size: 11.5, weight: 700, pad: 8 })

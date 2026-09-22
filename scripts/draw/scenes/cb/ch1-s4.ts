@@ -86,18 +86,13 @@ const draw = (b: B) => {
       b.text(126, y + 86, '上清继续离心', { size: 10, fill: C.mute })
     }
   })
-  b.nucleusU(400, 552, 28, { label: '' })
-  b.mito(390, 648, 76, 36, { label: '' })
-  b.lysosome(500, 646, 24, { label: '' })
-  b.circle(582, 646, 22, { fill: C.badL, stroke: C.bad, sw: 1.8 })
-  b.ctext(390, 608, '细胞核', { size: 11, weight: 600, fill: C.proD })
-  b.ctext(390, 692, '线粒体', { size: 11, weight: 600, fill: C.warn })
-  b.ctext(500, 692, '溶酶体', { size: 11, weight: 600, fill: C.bad })
-  b.ctext(582, 692, '过氧化物酶体', { size: 11, weight: 600, fill: C.bad })
-  b.erU(360, 756, 150, 22, { ribo: true, label: '' })
-  b.ctext(435, 800, '微粒体（内质网碎片）', { size: 11, weight: 600, fill: C.dna })
-  for (let i = 0; i < 6; i++) b.circle(384 + i * 32, 850, 5.5, { fill: C.enz, fillOp: 0.7 })
-  b.ctext(600, 855, '可溶性酶（留在上清）', { size: 11, weight: 600, fill: C.enz })
+  // 各级沉淀物图标紧跟对应标签右侧（与标签同行同义，不再另设重复说明）
+  b.nucleusU(430, 549, 20, { label: '' })
+  b.mito(570, 648, 56, 28, { label: '' })
+  b.lysosome(618, 648, 11, { label: '' })
+  b.circle(652, 648, 11, { fill: C.badL, stroke: C.bad, sw: 1.8 })
+  b.erU(500, 749, 130, 18, { ribo: true, label: '' })
+  for (let i = 0; i < 6; i++) b.circle(446 + i * 30, 854, 5.5, { fill: C.enz, fillOp: 0.7 })
   b.wtext(56, 916, 'de Duve 以差速离心结合酶标志物分析发现溶酶体与过氧化物酶体（1974 年诺贝尔奖）。密度梯度离心在蔗糖／CsCl 梯度中按浮力密度精细分离——Meselson 与 Stahl（1957）以此证明 DNA 半保留复制。', { size: 11, fill: C.sub, maxW: 600, lh: 15.5 })
 
   // ============ 四、放射自显影：分泌路线 ============
