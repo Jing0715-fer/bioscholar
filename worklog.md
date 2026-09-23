@@ -2475,3 +2475,39 @@ Stage Summary:
 - 矢量图文字重叠问题全量清零：解析检测（95 标记）→ VLM 确认（60 真实）→ 修复（95 全部）→ 终检（0 标记）→ 视觉抽检（全 PASS）
 - 检测器/复核器沉淀为可复用工具：scripts/draw/overlap-check.ts（解析式守卫）+ scripts/draw/verify-one.ts（单图渲染+VLM PASS/FAIL 判定）
 - 局限说明：overlap-check 对外部 SVG（Wikimedia 等）因 transform 坐标系会产生误报，仅适用于自绘（无 transform 的绝对坐标）SVG；text×shape 类重叠（标签压曲线）不在解析检测范围，需 VLM 补充（本轮已抽检覆盖）
+
+---
+Task ID: 43-a ~ 43-e（会话续接）
+Agent: 主控（Z.ai Code）
+Task: 用户指令"继续检查和修复，还存在有重叠排版问题的图"——补盲区全量视觉扫查（VLM 级）与修复
+
+Work Log:
+- 背景：上轮 42-a 的解析式检测器只覆盖 text×text 与画布溢出，text×shape（文字压线条/圆弧/色块）不在检测范围；本轮以 VLM 视觉审查补齐盲区，覆盖全部 510 张 SVG（drawn 451 + terms 26 + structures 13 + covers 13 + commons 7）
+- 流水线工具（已沉淀 commit 9e4467e）：
+  · scripts/draw/render-all-sweep.ts：全量渲染到 /tmp/vlm-sweep + manifest 索引
+  · scripts/draw/vlm-sweep-sdk.ts：SDK 单进程分批审查（5 张/批 × 2 并发，断点续跑，429 退避 3s/8s/20s）
+  · scripts/draw/confirm-fails.ts：FAIL 项 2 倍分辨率（1800px）单图精查，消除低分辨率误报
+- 过程曲折（重要经验）：
+  · CLI 多进程并发（z-ai vision ×4）触发 429 限流 + OOM（4GB 机器，next-server 2GB + CLI 每 600MB）——曾把 next-server 都杀掉
+  · 解法：z-ai-web-dev-sdk 单进程调用（内存 ~100MB），速度反而更快（20 批/35s）
+  · 沙箱基础设施两次瞬时故障（Bash 工具 EOF）+ 一次会话级 git 工作区重置事故：本地 6 张修复未及时 commit 被冲掉（本地 HEAD 停在 349c77f 落后 origin/main）——教训：修复必须立即 commit
+  · VLM token 曾中断约 2 小时（401 missing X-Token），等待恢复后完成终裁
+- 扫查结果：510 张 → 初检 FAIL 17 张 → 2 倍精查确认真实缺陷 6 张（其余 11 张为低分辨率误报，含 commons/meiosis-stages 外部图）
+- 6 张修复（commit d6461d0，已推送）：
+  · em-ch3-s3-saed-camera-length：相机常数说明两行 x930→x1010 右移出黑色衍射方块（该方块 x760-1000）并拆三行
+  · im-ch9-s2-thymic-selection：AIRE/tTreg 双框 x830→820、宽 610→570（原右缘 1440 超出 1400 画布截断）
+  · mi-ch10-s4-vaccines-immunity：「再次抗原刺激」y354→341 上移 + 垫 85×13 白底（原压 X 轴标题「抗原刺激后时间」）
+  · ne-ch12-s1-early-development：攀行箭头端点 (460,830)-(500,862)→(455,822)-(485,845) 缩短 + 标签 (520,872)→(545,878) 脱离箭头线
+  · vi-ch1-s1-virus-definition：virocell 标签 y322→336（椭圆底弧最低点恰为 (1200,322) 精确压字）+ 说明行下移 + rRNA 红框加宽 160→190、文字居中收进框内
+  · xc-ch8-s1-isomorphous：副标题 95 字 × 19px ≈ 1805px 超宽（画布仅 1400）拆两行 16px；FH 行垫 184×16 白底（r125/r145 双圆弧分别在 x≈88/271.6 穿过文字行）；「第二衍生物圆」(258,288)→(355,275)（原标签全包围盒在虚线圆内）
+- 验证：
+  · overlap-check 解析守卫 6/6 零标记；sharp 渲染 6/6 完整（1400×1000）
+  · VLM verify-one：6/6 PASS（mi 低分辨率单次误报经 4 倍放大复核排除——红色标注已垫白底，行距 5px+）
+  · agent-browser 端到端：图库 622 张滚动加载 failed 0；6 张修复图 HTTP 200；阅读页（电子显微学 ch3-s3）插图 loaded naturalW=1400，VLM 复核插图完整、右上面板无压字、页面渲染正常
+  · bun run lint 通过；dev server 200；git push d6461d0 + 9e4467e 已推送
+
+Stage Summary:
+- 510 张 SVG 全量视觉级扫查闭环：初检（17 FAIL）→ 精查（6 真实）→ 修复（6/6）→ 三重验证（解析/渲染/视觉）→ 端到端浏览器验证 → commit + push
+- 三件套工具沉淀可复用：render-all-sweep / vlm-sweep-sdk / confirm-fails——下次重新生成插图后可一键复扫
+- 关键经验：① 修复必须立即 commit（本次因未 commit 丢过一轮修复）；② VLM 审查用 SDK 单进程而非 CLI 多进程（OOM+限流双保险）；③ 低分辨率初检误报率高（17→6，65% 误报），2 倍分辨率精查环节必不可少；④ 几何计算（圆弧交点/包围盒）是 VLM 描述模糊时定位真缺陷的最有效手段
+- 全站矢量图排版缺陷状态：451 张自绘 SVG 解析零标记 + 510 张视觉扫查零确认缺陷（commons 外部图抽检亦过）
