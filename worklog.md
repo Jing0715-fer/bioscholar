@@ -2362,3 +2362,30 @@ Stage Summary:
 - 重大科学性纠错：胆固醇 27 碳算术（17+2+8）、肽键偶极 0.5→3.5 D、FAD 氢受体 N10→N5、TEV 蛋白酶病毒归属（花叶→蚀纹）、IDA/NTA 中文名互换、Ptashne 1966→1967、MS2 19 bp→19 nt、caspase-11 种属、D2 拮抗剂全称断言、em 波长比指数、1974 诺奖归属、300 keV 能量 J 数量级、α 螺旋 10 Å 表述、亮度单位 SI、线虫「唯一连接组」→「首个」、超嗜热纪录章间口径、Sc2.0「2023 完成」→「2025 收官」等约 20 处
 - 重大时效更新：PDB 逾 22.7 万条（2025 年初）/年增约 2 万条、3DEM 2026 逾 3.6 万条、2025 医学诺奖（Treg 外周免疫耐受）、2024 医学诺奖（microRNA）、2024 化学诺奖（Baker + AlphaFold2）、2023 医学诺奖（Karikó/Weissman）、AlphaFold 3（2024-05）、ESM3/esmGFP（2024-06）、CASP16（2025）、Casgevy 获批与约 250 项 CRISPR 临床、VERVE-101、mRNA-4157 III 期阳性（2026-08）、仑卡奈/多奈单抗 AD 获批链、CAR-T 7 款+中国实体瘤首批（2026-06）、H5N1 美国奶牛疫情约 70 例与首例死亡、mpox Ib 分支 PHEIC（2024-08）、T2T/Y/泛基因组、HCA（2024-11 里程碑、2026 V1.0）、果蝇连接组（2024 脑/2026 完整 CNS）、SpudCell 合成细胞（2026-07）
 - 遗留：quiz/glossary 文件未在本轮范围（前轮已覆盖）；研究检索 JSON 留存 scripts/tmp/research/ 供后续复用
+
+---
+Task ID: 39-a（会话续接）
+Agent: 主控（Z.ai Code）
+Task: 热力图展开态排版彻底重构（用户反馈"展开后排版很难看"）
+
+Work Log:
+- agent-browser + VLM 双重诊断确认根因：旧实现"外层 grid-flow-col + 嵌套周块 div"结构渲染坏——外层矩阵被拉成 848×684px，每个周块被拉伸到 281px 宽、7 个 12px 小格挤在左缘，月份标签错位悬浮，中间大片空白
+- 重写 src/components/bio/activity-heatmap.tsx：
+  · 扁平单层 grid（grid-auto-flow:column × repeat(7,var(--cell)) 行 + var(--cell) 自动列），子项按列填充、每列即一周，根治嵌套拉伸
+  · 格子尺寸走 CSS 自定义属性：移动 10px/2px、sm 13px/3px、lg 14px/3px——375px 视口 18 周矩阵仅 226px 宽，卡片内永不横向溢出
+  · 月份标尺与格子列共用同一列模板（同一滚动容器内渲染）→ 像素级对齐；星期标尺共用行模板 → 行行对齐
+  · 展开态改为 grid-template-rows 0fr↔1fr 平滑过渡（含 opacity/visibility 离散过渡，收起后 visibility:hidden 移出 Tab 序）
+  · 常驻摘要行（近 N 周 · 活跃 N 天 · 累计 M 次学习活动 + 火花条）+ 右侧展开/收起开关，替代原"两种完全不同的 DOM"切换
+  · 底部图例 + aria-live 明细行重构；悬停/点选格子 → 日期 + 完成/答题/笔记/复习明细；今日格子 ring-ring/70 描边 + "今天"徽标
+  · todayStr 从数据区间末位推导（与 /api/activity 口径一致），消除 set-state-in-effect lint 错误与 SSR 水合风险
+- 验证（agent-browser）：
+  · 桌面 1280px：矩阵 320×116px / 126 格全部正确渲染（旧：848×684 错乱）；区域总高 881px→333px；悬停 9月22日 格 → 明细行正确更新；今日 ring 生效
+  · 移动 375px：矩阵 226px < 容器 293px，无溢出无滚动；图例/明细行换行合理
+  · 学习报告页默认展开态渲染正确；收起→展开往返动画正常（面板 0px / visibility hidden / 复展 116px）
+  · VLM 视觉评审：月份对齐 ✓、矩阵 GitHub 风格规整 ✓、图例明细协调 ✓，综合 9/10
+  · bun run lint 通过；浏览器无 console/页面错误；dev.log 无运行时异常
+
+Stage Summary:
+- 热力图"展开后难看"的本质是结构性渲染缺陷而非审美问题，本次以扁平 grid 彻底根治并同步完成响应式、对齐、动效、a11y、今日标记五项打磨
+- 组件对外 API（days/summary/defaultCollapsed）未变，仪表盘与学习报告两处调用点零改动
+- 产出文件：src/components/bio/activity-heatmap.tsx（全量重写，303 行）
