@@ -2389,3 +2389,31 @@ Stage Summary:
 - 热力图"展开后难看"的本质是结构性渲染缺陷而非审美问题，本次以扁平 grid 彻底根治并同步完成响应式、对齐、动效、a11y、今日标记五项打磨
 - 组件对外 API（days/summary/defaultCollapsed）未变，仪表盘与学习报告两处调用点零改动
 - 产出文件：src/components/bio/activity-heatmap.tsx（全量重写，303 行）
+
+---
+Task ID: 40-a（会话续接）
+Agent: 主控（Z.ai Code）
+Task: 用户反馈"有些图片没有加载出来，只看到一些文字"——排查并修复图片显示问题
+
+Work Log:
+- 三层排查确认资源并非缺失：
+  · 覆盖检查（scripts/check-coverage.ts 临时版）：585 个小节 100% 配图（后删除临时脚本）
+  · HTTP 检查：616 个被引用图片文件全部存在、全部 200 + 正确 image MIME
+  · 浏览器实测：教材图库 622 张（滚动触发懒加载后 failed: 0）、阅读页 figure、灯箱均正常
+- 定位真正根因：40 个 SVG 根 <svg> 标签缺固有 width/height 属性（仅 viewBox）——无固有尺寸的 SVG 在 <img loading="lazy"> 下无法预留空间，部分浏览器（尤其手机端）渲染为 0 高/不显示，用户看到的就是"只剩图注文字"
+  · 主插图 14 个：composite-glucose-anomers / amino-acids-grid / fatty-acids / membrane-lipids / vitamins ×3 / nitrogenous-bases / nucleoside-to-nucleotide / redox-coenzymes / common-monosaccharides / ATP / CMP / animal-cell-anatomy——集中在生物化学（用户当前阅读学科）与细胞生物学
+  · 术语图库 26 个：terms/ 目录（ATP/CLR/GLC/NAD/FAD/COA 等 CCD 结构图）
+- 修复：
+  · scripts/fix-svg-intrinsic.ts（自包含，遍历 public/images）：按 viewBox 等比补写根标签 width/height，共修 40 个文件
+  · scripts/compose-figure-panels.ts 生成器源头同步加 width/height（防重新生成回归）
+  · scripts/check-svg-root.ts（自包含守卫脚本，510 个 SVG 全过，exit 1 报警）
+- 浏览器验证：
+  · composite-glucose-anomers：naturalWidth 300（默认值）→ 7760（真实尺寸）
+  · composite-amino-acids-grid：桌面 248×222 渲染正常；手机 375px 275×246 渲染正常（VLM 确认完整显示 + 图注正常）
+  · 术语词典页 26 张术语图滚动后全部加载
+  · bun run lint 通过；dev.log 无运行时错误
+
+Stage Summary:
+- "图片没加载出来"的本质是 SVG 缺固有尺寸导致的渲染塌陷，而非图片未生成——全部 585 小节配图、616 个引用文件均完整
+- 一次性修复 40 个 SVG 文件 + 生成器源头 + 新增两个可复用诊断/守卫脚本（check-svg-root.ts 可在 CI/手工巡检中防止回归）
+- 若后续重新抓取 CCD 结构式（fetch-term-structures.ts / fetch-ccd-structures.ts），需重跑 bun run scripts/fix-svg-intrinsic.ts 补尺寸
