@@ -106,9 +106,11 @@
   <rect x="320" y="258" width="350" height="66" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
   <text x="336" y="283" font-size="12" fill="#134e4a" font-weight="700">第二代：LoG blob</text>
   <text x="336" y="303" font-size="9.5" fill="#475569">尺寸先验的差分高斯检测，免模板、常作初筛</text>
-  <rect x="320" y="334" width="350" height="66" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="320" y="334" width="350" height="90" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
   <text x="336" y="359" font-size="12" fill="#4c1d95" font-weight="700">第三代：深度学习</text>
-  <text x="336" y="379" font-size="9.5" fill="#475569">Topaz 正-未标注学习（Bepler 等 2019）：少量确认颗粒＋一堆未标注图像，网络自行学会「什么不是颗粒」；crYOLO（Wagner 等 2019）单发检测毫秒级</text>
+  <text x="336" y="379" font-size="9.5" fill="#475569">Topaz 正-未标注学习（Bepler 等 2019）：</text>
+  <text x="336" y="394" font-size="9.5" fill="#475569">少量确认颗粒＋一堆未标注图像，网络自行学会「什么不是颗粒」；</text>
+  <text x="336" y="409" font-size="9.5" fill="#475569">crYOLO（Wagner 等 2019）单发检测毫秒级</text>
   <rect x="152.035" y="443.075" width="255.93" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
   <text x="280" y="455.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">训练偏见须人工复核：网络只认它见过的颗粒长相</text>
   <rect x="513.1475" y="443.075" width="93.705" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
@@ -187,7 +189,7 @@
   <line x1="1006" y1="724" x2="1054" y2="724" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
   <line x1="1054" y1="744" x2="1006" y2="744" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
   <text x="1030" y="712" font-size="9" fill="#4c1d95" text-anchor="middle">预测给可达构象</text>
-  <text x="1030" y="790" font-size="9" fill="#075985" text-anchor="middle">电镜给真实占据</text>
+  <text x="1030" y="766" font-size="9" fill="#075985" text-anchor="middle">电镜给真实占据</text>
   <text x="730" y="790" font-size="10.5" fill="#475569">两个方向的流动同时打开：预测模型作初始参考与建模校验，电镜密度反过来校准预测的置信与局限。</text>
   <text x="1040" y="856" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">AI 应用矩阵：挑选、去噪、分类、连续构象、实时质检——经验被搬进权重，纪律仍在人</text>
   <text x="1040" y="900" font-size="10" fill="#64748b" text-anchor="middle">风险清单：训练偏见、假构象、去噪脑补、指标过拟合</text>

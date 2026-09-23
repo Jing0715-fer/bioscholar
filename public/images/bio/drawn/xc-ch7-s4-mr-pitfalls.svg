@@ -52,14 +52,14 @@
   <path d="M448,278.79999999999995 C451.7,282.9 462.8,296.5 470.2,303.5 C477.6,310.5 485.0,316.2 492.4,320.6 C499.8,325.0 503.5,326.3 514.6,330.1 C525.7,333.9 544.2,339.6 559,343.4 C573.8,347.2 584.9,350.4 603.4,352.9 C621.9,355.4 658.9,357.7 670,358.6" fill="none" stroke="#059669" stroke-width="2.6"/>
   <path d="M448,275 C459.1,276.3 488.7,280.7 514.6,282.6 C540.5,284.5 577.5,285.4 603.4,286.4 C629.3,287.3 658.9,288.0 670,288.3" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="7 4"/>
   <path d="M448,286.4 C459.1,288.3 488.7,295.3 514.6,297.8 C540.5,300.3 577.5,300.7 603.4,301.6 C629.3,302.6 658.9,303.2 670,303.5" fill="none" stroke="#dc2626" stroke-width="2.2"/>
-  <rect x="452" y="428.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="469.9" y="435.24" font-size="9" fill="#475569">正确解 R<tspan dy="2.0" font-size="6.5">work</tspan></text>
-  <rect x="532.8384" y="428.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="550.7384" y="435.24" font-size="9" fill="#475569">假解 R<tspan dy="2.0" font-size="6.5">work</tspan></text>
-  <rect x="452" y="446.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="469.9" y="453.24" font-size="9" fill="#475569">正确解 R<tspan dy="2.0" font-size="6.5">free</tspan><tspan dy="-2.0">（虚线）</tspan></text>
-  <rect x="568.8384" y="446.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="586.7384" y="453.24" font-size="9" fill="#475569">假解 R<tspan dy="2.0" font-size="6.5">free</tspan><tspan dy="-2.0">（虚线）</tspan></text>
+  <rect x="452" y="233.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="469.9" y="240.24" font-size="9" fill="#475569">正确解 R<tspan dy="2.0" font-size="6.5">work</tspan></text>
+  <rect x="544" y="233.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="561.64" y="240.24" font-size="9" fill="#475569">假解 R<tspan dy="2.0" font-size="6.5">work</tspan></text>
+  <rect x="452" y="249.22" width="9.9" height="7.56" rx="3" fill="#059669" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="469.9" y="256.24" font-size="9" fill="#475569">正确解 R<tspan dy="2.0" font-size="6.5">free</tspan><tspan dy="-2.0">（虚线）</tspan></text>
+  <rect x="552" y="249.22" width="9.9" height="7.56" rx="3" fill="#dc2626" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="569.9" y="256.24" font-size="9" fill="#475569">假解 R<tspan dy="2.0" font-size="6.5">free</tspan><tspan dy="-2.0">（虚线）</tspan></text>
   <text x="56" y="478" font-size="10.5" fill="#475569">排序更省力：TFZ 与 LLG 先分档，前两档各跑 10–20 轮刚体精修，R<tspan dy="2.3" font-size="7.6">free</tspan><tspan dy="-2.3"> 纹丝不动者直接弃，幸存者才值得读图。</tspan></text>
   <text x="56" y="493" font-size="10.5" fill="#475569">更险的是「部分正确」：域取向对、铰链角错，TFZ 中等、图一半可读——处置是拆域两段式 MR（先搜大域、再按密度摆小域），</text>
   <text x="56" y="508" font-size="10.5" fill="#475569">而非整刚体硬精修。</text>
@@ -87,8 +87,8 @@
   <text x="746" y="524.5" font-size="9.5" fill="#475569">11 章）。</text>
   <rect x="1050" y="440" width="290" height="82" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
   <text x="1066" y="464" font-size="11" fill="#92400e" font-weight="700">packing 闸门的盲区</text>
-  <text x="1066" y="484" font-size="9.5" fill="#475569">伪对称环境下分子可能「恰好不穿模」却坐错位置——NCS 交叉向量与差值 Patterson</text>
-  <text x="1066" y="497.5" font-size="9.5" fill="#475569">（第 8 章同款技术）可作旁证。</text>
+  <text x="1066" y="484" font-size="9.5" fill="#475569">伪对称环境下分子可能「恰好不穿模」却坐错位置——</text>
+  <text x="1066" y="497.5" font-size="9.5" fill="#475569">NCS 交叉向量与差值 Patterson 可作旁证（第 8 章）。</text>
   <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、多拷贝递增与低分辨率的两件救生圈</text>
   <rect x="56" y="616" width="250" height="170" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>

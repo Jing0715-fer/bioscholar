@@ -145,8 +145,8 @@
   <text x="1090" y="363.5" font-size="10" fill="#475569">限制性 rebuild——高拟合区段不动，</text>
   <text x="1090" y="378" font-size="10" fill="#475569">低拟合区段按密度重搭，全程以预测骨架作参考模型限制，</text>
   <text x="1090" y="392.5" font-size="10" fill="#475569">精修器可微调但不许推翻先验。</text>
-  <text x="730" y="440" font-size="10.5" fill="#64748b">pLDDT 与局部拟合度的对照本身即是体检：高 pLDDT 而图上无密度，多半是晶体里局部无序——先验对而晶体不配合；</text>
-  <text x="730" y="455" font-size="10.5" fill="#64748b">低 pLDDT 而密度清晰，则是预测保守或真实构象变化的信号。</text>
+  <text x="730" y="462" font-size="10.5" fill="#64748b">pLDDT 与局部拟合度的对照本身即是体检：高 pLDDT 而图上无密度，多半是晶体里局部无序——先验对而晶体不配合；</text>
+  <text x="730" y="477" font-size="10.5" fill="#64748b">低 pLDDT 而密度清晰，则是预测保守或真实构象变化的信号。</text>
   <rect x="30" y="572" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、register 错位：三联报警与整段平移</text>
   <rect x="60" y="600" width="300" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
@@ -157,7 +157,7 @@
   <line x1="54" y1="600" x2="60" y2="600" stroke="#475569" stroke-width="1.8"/>
   <text x="50" y="604" font-size="13" fill="#64748b" text-anchor="end">60 Å<tspan dy="-4.4" font-size="9.4">2</tspan></text>
   <text x="210" y="774" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">残基序号</text>
-  <text x="210" y="588" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">B 因子锯齿（错位区）</text>
+  <text x="210" y="617" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">B 因子锯齿（错位区）</text>
   <path d="M60.0,691.0 L70.0,691.0 L80.0,691.0 L90.0,691.0 L100.0,691.0 L110.0,691.0 L120.0,691.0 L130.0,691.0 L140.0,691.0 L150.0,691.0 L160.0,681.3 L170.0,633.3 L180.0,644.0 L190.0,663.7 L200.0,626.3 L210.0,676.5 L220.0,635.8 L230.0,640.7 L240.0,668.3 L250.0,626.0 L260.0,671.7 L270.0,691.0 L280.0,691.0 L290.0,691.0 L300.0,691.0 L310.0,691.0 L320.0,691.0 L330.0,691.0 L340.0,691.0 L350.0,691.0 L360.0,691.0" fill="none" stroke="#d97706" stroke-width="2.2"/>
   <text x="400" y="626" font-size="11" fill="#1e293b" font-weight="700">验证图标连锁报警：</text>
   <circle cx="400" cy="650" r="9" fill="#059669" stroke="#1e293b" stroke-width="1"/>
@@ -246,5 +246,5 @@
   <text x="985" y="943" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Met 与 Trp 锚定核对</text>
   <rect x="1110" y="924" width="240" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="1230" y="943" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">大侧链逐一对号</text>
-  <text x="730" y="942" font-size="10.5" fill="#64748b" font-weight="700">全项打勾，模型才有资格进入第 10 章的精修主循环。</text>
+  <text x="730" y="970" font-size="10.5" fill="#64748b" font-weight="700">全项打勾，模型才有资格进入第 10 章的精修主循环。</text>
 </svg>

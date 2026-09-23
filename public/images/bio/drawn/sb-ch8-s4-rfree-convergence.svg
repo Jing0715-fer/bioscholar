@@ -43,14 +43,14 @@
   <text x="60" y="276" font-size="13" fill="#64748b" text-anchor="end">0.37</text>
   <line x1="64" y1="214" x2="70" y2="214" stroke="#475569" stroke-width="1.8"/>
   <text x="60" y="218" font-size="13" fill="#64748b" text-anchor="end">0.49</text>
-  <text x="260" y="452" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">精修轮次</text>
+  <text x="497" y="430" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">精修轮次</text>
   <text x="260" y="196" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">2 Å 数据的典型收敛（含过拟合反例）</text>
   <path d="M70.0,293.0 L115.6,328.0 L165.0,340.5 L214.4,350.5 L267.6,358.0 L343.6,360.5 L450.0,363.0" fill="none" stroke="#0369a1" stroke-width="3"/>
   <path d="M70.0,278.0 L115.6,303.0 L165.0,315.5 L214.4,325.5 L267.6,330.5 L343.6,335.5 L450.0,338.0" fill="none" stroke="#0f766e" stroke-width="3"/>
   <path d="M70.0,293.0 L127.0,348.0 L184.0,383.0 L260.0,393.0 L336.0,398.0 L450.0,398.0" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 4"/>
   <path d="M70.0,278.0 L127.0,293.0 L184.0,300.5 L260.0,303.0 L336.0,305.5 L450.0,308.0" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="7 4"/>
   <text x="366.40000000000003" y="353" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">R<tspan dy="2.1" font-size="6.8">work</tspan><tspan dy="-2.1"> 0.19</tspan></text>
-  <text x="366.40000000000003" y="356" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 0.24</tspan></text>
+  <text x="366.40000000000003" y="328" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">R<tspan dy="2.1" font-size="6.8">free</tspan><tspan dy="-2.1"> 0.24</tspan></text>
   <text x="396.8" y="412" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">0.12</text>
   <text x="396.8" y="298" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">0.30</text>
   <rect x="438.117056" y="241.075" width="103.76588800000002" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
@@ -61,8 +61,8 @@
   <text x="470" y="322.5" font-size="9.5" fill="#475569">把噪声建成交替构象。</text>
   <text x="470" y="346" font-size="9.5" fill="#475569">gap 小于 1% 反而可疑：</text>
   <text x="470" y="359.5" font-size="9.5" fill="#475569">自由集泄漏或数据冗余过高。</text>
-  <text x="56" y="440" font-size="10" fill="#475569">R = Σ|F<tspan dy="2.2" font-size="7.2">o</tspan><tspan dy="-2.2">−F</tspan><tspan dy="2.2" font-size="7.2">c</tspan><tspan dy="-2.2">|/Σ|F</tspan><tspan dy="2.2" font-size="7.2">o</tspan><tspan dy="-2.2">|。Rfree：随机剥离约 5% 反射组成自由集，全程不可见、不进目标函数，一经划定不得重划；低分辨率可放宽到 10%</tspan></text>
-  <text x="56" y="454.5" font-size="10" fill="#475569">（须注明）。数量级锚点（2 Å）：Rwork 0.18–0.22、Rfree 0.22–0.26；分辨率越低 R 越高属常态。</text>
+  <text x="56" y="446" font-size="10" fill="#475569">R = Σ|F<tspan dy="2.2" font-size="7.2">o</tspan><tspan dy="-2.2">−F</tspan><tspan dy="2.2" font-size="7.2">c</tspan><tspan dy="-2.2">|/Σ|F</tspan><tspan dy="2.2" font-size="7.2">o</tspan><tspan dy="-2.2">|。Rfree：随机剥离约 5% 反射组成自由集，全程不可见、不进目标函数，一经划定不得重划；低分辨率可放宽到 10%</tspan></text>
+  <text x="56" y="459.5" font-size="10" fill="#475569">（须注明）。数量级锚点（2 Å）：Rwork 0.18–0.22、Rfree 0.22–0.26；分辨率越低 R 越高属常态。</text>
   <rect x="710" y="132" width="660" height="330" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Ramachandran 图与几何三件套</text>
   <rect x="760" y="218" width="300" height="210" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
@@ -101,12 +101,12 @@
   <circle cx="955.0357602211274" cy="303.6327254561623" r="2.6" fill="#1e293b" fill-opacity="0.75" stroke="none"/>
   <circle cx="955.8333333333334" cy="366.75" r="4.2" fill="#dc2626"/>
   <text x="963.8333333333334" y="370.75" font-size="9.5" fill="#991b1b" font-weight="700">outlier：须能说出理由</text>
-  <text x="910" y="468" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">横轴 φ（度）· 纵轴 ψ（度）</text>
+  <text x="910" y="444" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">横轴 φ（度）· 纵轴 ψ（度）</text>
   <text x="748" y="232" font-size="11" fill="#64748b" text-anchor="end">180</text>
   <text x="748" y="327" font-size="11" fill="#64748b" text-anchor="end">0</text>
   <text x="748" y="428" font-size="11" fill="#64748b" text-anchor="end">−180</text>
   <text x="910" y="210" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">Ramachandran 图（每点一个残基）</text>
-  <text x="910" y="462" font-size="9.5" fill="#64748b" text-anchor="middle">Ramachandran 1963；MolProbity（Richardson 2010）动态分区：优势区大于 96%、离群接近零</text>
+  <text x="910" y="459" font-size="9.5" fill="#64748b" text-anchor="middle">Ramachandran 1963；MolProbity（Richardson 2010）动态分区：优势区大于 96%、离群接近零</text>
   <rect x="1109.7712999999999" y="241.075" width="80.4574" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
   <text x="1150" y="253.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">rotamer 验证</text>
   <text x="1080" y="280" font-size="9.5" fill="#475569">侧链构象落在统计库离群区，提示构象错放或密度不足。</text>
@@ -141,8 +141,8 @@
   <circle cx="190.4" cy="584.6" r="4" fill="#dc2626"/>
   <line x1="190.4" y1="570.6" x2="190.4" y2="580.6" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
   <text x="190.4" y="558.6" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">孤立尖峰</text>
-  <text x="56" y="690" font-size="10" fill="#475569">表面残基高、埋藏核心低、沿序列连续平滑。孤立尖峰常见原因：</text>
-  <text x="56" y="704.5" font-size="10" fill="#475569">序列 register 错误、侧链构象错放或辐射损伤的特异性位点。</text>
+  <text x="56" y="718" font-size="10" fill="#475569">表面残基高、埋藏核心低、沿序列连续平滑。孤立尖峰常见原因：</text>
+  <text x="56" y="732.5" font-size="10" fill="#475569">序列 register 错误、侧链构象错放或辐射损伤的特异性位点。</text>
   <rect x="420" y="528" width="82" height="92" rx="8" fill="#05966914" stroke="#059669" stroke-width="1.6"/>
   <text x="461" y="552" font-size="13" fill="#059669" text-anchor="middle" font-weight="700">2 Å</text>
   <text x="461" y="578" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">数百个水</text>

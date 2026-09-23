@@ -21,7 +21,7 @@
   <circle cx="230" cy="370" r="145" fill="none" stroke="#6d28d9" stroke-width="2"/>
   <circle cx="215" cy="315" r="92" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="7 5"/>
   <line x1="150" y1="370" x2="230" y2="370" stroke="#d97706" stroke-width="3" marker-end="url(#arr-warn)"/>
-  <text x="190" y="392" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">F<tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2">（由重原子坐标算出，完全已知）</tspan></text>
+  <text x="190" y="404" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">F<tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2">（由重原子坐标算出，完全已知）</tspan></text>
   <line x1="150" y1="370" x2="156" y2="245" stroke="#0f766e" stroke-width="3" marker-end="url(#arr-dna)"/>
   <line x1="150" y1="370" x2="156" y2="495" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
   <circle cx="156" cy="245" r="6" fill="#0f766e"/>
@@ -67,13 +67,12 @@
   <rect x="1087.16795" y="267.075" width="125.6641" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
   <text x="1150" y="279.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">pH（决定残基质子化）</text>
   <text x="1046" y="306" font-size="10" fill="#475569">浸泡即化学：还原性 DTT 与 TCEP 会抢先螯合汞铂</text>
-  <text x="1046" y="320" font-size="10" fill="#475569">（浸泡前须透析除去），缓冲液本身也可能螯合重金属。批次组织：</text>
-  <text x="1046" y="334" font-size="10" fill="#475569">多颗晶体、多化合物同批扫描，</text>
-  <text x="1046" y="348" font-size="10" fill="#475569">衍射预筛先行淘汰——「浸泡后晶胞不变且仍衍射」者才值得收数；</text>
-  <text x="1046" y="362" font-size="10" fill="#475569">产出率常在三成上下，备料按失败率放大。</text>
-  <text x="1046" y="376" font-size="10" fill="#64748b">同晶性门槛：晶胞变化小于约 1%，且蛋白坐标不因浸泡而改变，</text>
-  <text x="1046" y="390" font-size="10" fill="#64748b">F<tspan dy="2.2" font-size="7.2">PH</tspan><tspan dy="-2.2"> = F</tspan><tspan dy="2.2" font-size="7.2">P</tspan><tspan dy="-2.2"> + F</tspan><tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2"> 的加法才成立；镶嵌化恶化常是非同晶的前兆，</tspan></text>
-  <text x="1046" y="404" font-size="10" fill="#64748b">先于晶胞膨胀出现。</text>
+  <text x="1046" y="319" font-size="10" fill="#475569">（浸泡前须透析除去），缓冲液本身也可能螯合重金属。批次组织：</text>
+  <text x="1046" y="332" font-size="10" fill="#475569">多颗晶体、多化合物同批扫描，</text>
+  <text x="1046" y="345" font-size="10" fill="#475569">衍射预筛先行淘汰——「浸泡后晶胞不变且仍衍射」者才值得收数；</text>
+  <text x="1046" y="358" font-size="10" fill="#475569">产出率常在三成上下，备料按失败率放大。</text>
+  <text x="1046" y="370" font-size="10" fill="#64748b">同晶性门槛：晶胞变化小于约 1% 且蛋白坐标不变；</text>
+  <text x="1046" y="560" font-size="10" fill="#64748b">F<tspan dy="2.2" font-size="7.2">PH</tspan><tspan dy="-2.2">＝F</tspan><tspan dy="2.2" font-size="7.2">P</tspan><tspan dy="-2.2">＋F</tspan><tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2"> 才成立；镶嵌化恶化先于晶胞膨胀——非同晶前兆。</tspan></text>
   <rect x="730" y="372" width="160" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="810" y="399.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">化合物</text>
   <rect x="890" y="372" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
@@ -158,18 +157,19 @@
   <text x="1070" y="622" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">镜像图：螺旋全部反向</text>
   <text x="1070" y="712" font-size="9.5" fill="#64748b" text-anchor="middle">蛋白天然手性，一眼识破</text>
   <text x="1176" y="640" font-size="10" fill="#475569">手性空间群里，</text>
-  <text x="1176" y="654.5" font-size="10" fill="#475569">重原子亚结构坐标的对映反转给出另一套同样自洽的解，</text>
-  <text x="1176" y="669" font-size="10" fill="#475569">两套相位分别综合出互为镜像的电子密度图——SIR 二义的更深根源。</text>
-  <text x="1176" y="683.5" font-size="10" fill="#475569">操作纪律：各衍生物独立定位、</text>
-  <text x="1176" y="698" font-size="10" fill="#475569">统一标度，</text>
-  <text x="1176" y="712.5" font-size="10" fill="#475569">相位按概率组合而非取单值。</text>
+  <text x="1176" y="654.5" font-size="10" fill="#475569">重原子亚结构坐标的对映反转给出</text>
+  <text x="1176" y="669" font-size="10" fill="#475569">另一套同样自洽的解，两套相位</text>
+  <text x="1176" y="683.5" font-size="10" fill="#475569">综合出互为镜像的电子密度图——</text>
+  <text x="1176" y="698" font-size="10" fill="#475569">SIR 二义的更深根源。操作纪律：</text>
+  <text x="1176" y="712.5" font-size="10" fill="#475569">各衍生物独立定位、统一标度，</text>
+  <text x="1176" y="727" font-size="10" fill="#475569">相位按概率组合而非取单值。</text>
   <text x="730" y="748" font-size="10.5" fill="#475569">原理一望即知：一个 Hg 约 80 个电子，对硫的 16 个——重原子超强散射在结构因子上叠加一个可计算的矢量 F<tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">。</tspan></text>
   <text x="730" y="763" font-size="10.5" fill="#475569">这条窄门整整推了二十年才敞开，同晶置换也由此成为首个「为定相而做」的蛋白化学工程。</text>
   <line x1="740" y1="880" x2="1300" y2="880" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
   <circle cx="762.4" cy="880" r="6.5" fill="#dc2626"/>
   <line x1="762.4" y1="871" x2="762.4" y2="850" stroke="#dc2626" stroke-width="1.7"/>
   <text x="762.4" y="830" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1954</text>
-  <text x="762.4" y="810" font-size="12" fill="#64748b" text-anchor="middle">Hg／Ag 衍生物</text>
+  <text x="762.4" y="790" font-size="12" fill="#64748b" text-anchor="middle">Hg／Ag 衍生物</text>
   <circle cx="885.6" cy="880" r="6.5" fill="#dc2626"/>
   <line x1="885.6" y1="889" x2="885.6" y2="910" stroke="#dc2626" stroke-width="1.7"/>
   <text x="885.6" y="930" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">1956</text>

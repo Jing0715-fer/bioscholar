@@ -131,7 +131,7 @@
   <line x1="734" y1="363" x2="740" y2="363" stroke="#475569" stroke-width="1.8"/>
   <text x="885" y="557" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">线性流速 u</text>
   <text x="694" y="438" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">塔板高度 H</text>
-  <text x="885" y="351" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">H = A + B/u + C·u</text>
+  <text x="1030" y="351" font-size="16" fill="#1e293b" text-anchor="end" font-weight="700">H = A + B/u + C·u</text>
   <path d="M748.7,384 C752.1,393.0 760.8,424.5 769,438 C777.2,451.5 785.9,458.0 798,465 C810.1,472.0 827.0,478.5 841.5,480 C856.0,481.5 868.1,478.5 885,474 C901.9,469.5 922.7,461.5 943,453 C963.3,444.5 996.2,428.0 1006.8,423" fill="none" stroke="#0369a1" stroke-width="2.6"/>
   <line x1="841" y1="513" x2="841" y2="383" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 4"/>
   <text x="841" y="452" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">u<tspan dy="2.2" font-size="7.2">opt</tspan><tspan dy="-2.2"> = (B/C)</tspan><tspan dy="-3.4" font-size="7.2">1/2</tspan></text>
@@ -140,8 +140,9 @@
   <line x1="745" y1="490" x2="1025" y2="490" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
   <text x="885" y="505" font-size="9" fill="#64748b" text-anchor="middle">A 涡流扩散（正比粒径）</text>
   <text x="1060" y="188" font-size="10" fill="#475569">蛋白扩散系数仅约 10<tspan dy="-3.4" font-size="7.2">-6</tspan><tspan dy="3.4"> cm</tspan><tspan dy="-3.4" font-size="7.2">2</tspan><tspan dy="3.4">/s，比小分子低一至两个数量级，</tspan></text>
-  <text x="1060" y="202" font-size="10" fill="#475569">C 项传质阻力对蛋白尤其苛刻——常规琼脂糖介质宜在约 30 至 150 cm/h 低线速运行，</text>
-  <text x="1060" y="216" font-size="10" fill="#475569">只有足够细的介质才配得上高流速。</text>
+  <text x="1060" y="202" font-size="10" fill="#475569">C 项传质阻力对蛋白尤其苛刻——</text>
+  <text x="1060" y="216" font-size="10" fill="#475569">常规琼脂糖介质宜在约 30 至 150 cm/h 低线速运行，</text>
+  <text x="1060" y="230" font-size="10" fill="#475569">只有足够细的介质才配得上高流速。</text>
   <rect x="1107.55995" y="279.075" width="194.8801" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
   <text x="1205" y="291.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">冷间 4–8 °C：标称流速再降三至五成</text>
   <text x="1060" y="320" font-size="10" fill="#475569">优质分析柱每米可达数万至十余万塔板；</text>

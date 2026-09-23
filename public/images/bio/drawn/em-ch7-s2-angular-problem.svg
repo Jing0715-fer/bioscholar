@@ -29,7 +29,7 @@
   <rect x="356.1333333333334" y="235.4857142857143" width="81.06666666666668" height="152.5142857142857" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
   <text x="396.6666666666667" y="226.4857142857143" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="600">约 157</text>
   <text x="396.6666666666667" y="408" font-size="12.5" fill="#64748b" text-anchor="middle">d = 2 Å</text>
-  <text x="270" y="300" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">固定 D = 100 Å：分辨率每提高一倍，所需视角翻倍</text>
+  <text x="270" y="462" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">固定 D = 100 Å：分辨率每提高一倍，所需视角翻倍</text>
   <text x="270" y="436" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">目标分辨率 d</text>
   <text x="480" y="318" font-size="10.5" fill="#475569">两点必须强调：其一，</text>
   <text x="480" y="333" font-size="10.5" fill="#475569">均匀分布是前提——200 个挤在同一方向的投影，</text>
@@ -108,51 +108,51 @@
   <text x="80" y="953" font-size="10.5" fill="#475569">两像的取向共同张出一个锥面覆盖——用实验设计绕开取向搜索。</text>
   <rect x="710" y="572" width="660" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、现代 ab initio 与参考偏差的防线</text>
-  <rect x="730" y="616" width="620" height="84" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
-  <text x="1040" y="642" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">cryoSPARC ab initio（Punjani 2017）</text>
-  <text x="1040" y="664" font-size="10.5" fill="#475569" text-anchor="middle">随机初始模型 + SGD 联合优化取向与密度 + 频率由低到高爬升</text>
-  <text x="1040" y="686" font-size="10" fill="#64748b" text-anchor="middle">对小于约 100 kDa 的样品常须百万级颗粒才稳</text>
-  <line x1="1040" y1="704" x2="1040" y2="730" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
-  <text x="730" y="756" font-size="11" fill="#1e293b" font-weight="700">参考偏差风险由 Dotson 与 Glaeser 2016 年论战推到台前，防线成套：</text>
-  <rect x="736.34" y="779.075" width="247.32000000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="860" y="791.78" font-size="10.5" fill="#065f46" text-anchor="middle">金标准半图精修与 FSC 0.143（Scheres 2012）</text>
-  <rect x="1108" y="779.075" width="144" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="1180" y="791.78" font-size="10.5" fill="#065f46" text-anchor="middle">参考低通滤波防噪声入参考</text>
-  <rect x="793.25" y="811.075" width="133.5" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="860" y="823.78" font-size="10.5" fill="#065f46" text-anchor="middle">纯噪声对照检验虚假信号</text>
-  <rect x="1118.5" y="811.075" width="123" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="1180" y="823.78" font-size="10.5" fill="#065f46" text-anchor="middle">独立初始模型交叉验证</text>
-  <text x="730" y="862" font-size="11" fill="#1e293b" font-weight="700">定向与初始模型方法对照：</text>
-  <rect x="730" y="878" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="845" y="905.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方法</text>
-  <rect x="960" y="878" width="180" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1050" y="905.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">依赖</text>
-  <rect x="1140" y="878" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1245" y="905.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要风险</text>
-  <rect x="730" y="922" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="845" y="940.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">共线法 / angular reconstitution</text>
-  <rect x="960" y="922" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1050" y="940.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">公共线几何</text>
-  <rect x="1140" y="922" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1245" y="940.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">噪声下的伪解</text>
-  <rect x="730" y="948" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
-  <rect x="730" y="948" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="845" y="966.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">随机锥形重构</text>
-  <rect x="960" y="948" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1050" y="966.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">已知倾角双张照片</text>
-  <rect x="1140" y="948" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1245" y="966.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">锥面覆盖不完整</text>
-  <rect x="730" y="974" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="845" y="992.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">cryoSPARC ab initio（SGD）</text>
-  <rect x="960" y="974" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1050" y="992.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">大颗粒数</text>
-  <rect x="1140" y="974" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1245" y="992.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">小样品不收敛</text>
-  <rect x="730" y="1000" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
-  <rect x="730" y="1000" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="845" y="1018.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">同源结构参考</text>
-  <rect x="960" y="1000" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1050" y="1018.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">先验模型</text>
-  <rect x="1140" y="1000" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
-  <text x="1245" y="1018.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">参考偏差（最高）</text>
+  <rect x="730" y="612" width="620" height="84" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1040" y="638" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">cryoSPARC ab initio（Punjani 2017）</text>
+  <text x="1040" y="660" font-size="10.5" fill="#475569" text-anchor="middle">随机初始模型 + SGD 联合优化取向与密度 + 频率由低到高爬升</text>
+  <text x="1040" y="682" font-size="10" fill="#64748b" text-anchor="middle">对小于约 100 kDa 的样品常须百万级颗粒才稳</text>
+  <line x1="1040" y1="698" x2="1040" y2="724" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="730" y="748" font-size="11" fill="#1e293b" font-weight="700">参考偏差风险由 Dotson 与 Glaeser 2016 年论战推到台前，防线成套：</text>
+  <rect x="736.34" y="764" width="247.32000000000002" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="860" y="776.71" font-size="10.5" fill="#065f46" text-anchor="middle">金标准半图精修与 FSC 0.143（Scheres 2012）</text>
+  <rect x="1108" y="764" width="144" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="776.71" font-size="10.5" fill="#065f46" text-anchor="middle">参考低通滤波防噪声入参考</text>
+  <rect x="793.25" y="788" width="133.5" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="860" y="800.71" font-size="10.5" fill="#065f46" text-anchor="middle">纯噪声对照检验虚假信号</text>
+  <rect x="1118.5" y="788" width="123" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180" y="800.71" font-size="10.5" fill="#065f46" text-anchor="middle">独立初始模型交叉验证</text>
+  <text x="730" y="822" font-size="11" fill="#1e293b" font-weight="700">定向与初始模型方法对照：</text>
+  <rect x="730" y="832" width="230" height="34" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="855.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方法</text>
+  <rect x="960" y="832" width="180" height="34" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="855.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">依赖</text>
+  <rect x="1140" y="832" width="210" height="34" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="855.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要风险</text>
+  <rect x="730" y="866" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="884.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">共线法 / angular reconstitution</text>
+  <rect x="960" y="866" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">公共线几何</text>
+  <rect x="1140" y="866" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="884.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">噪声下的伪解</text>
+  <rect x="730" y="892" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="892" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="910.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">随机锥形重构</text>
+  <rect x="960" y="892" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="910.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">已知倾角双张照片</text>
+  <rect x="1140" y="892" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="910.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">锥面覆盖不完整</text>
+  <rect x="730" y="918" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="936.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">cryoSPARC ab initio（SGD）</text>
+  <rect x="960" y="918" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="936.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">大颗粒数</text>
+  <rect x="1140" y="918" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="936.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">小样品不收敛</text>
+  <rect x="730" y="944" width="620" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="944" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="962.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">同源结构参考</text>
+  <rect x="960" y="944" width="180" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1050" y="962.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">先验模型</text>
+  <rect x="1140" y="944" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1245" y="962.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">参考偏差（最高）</text>
 </svg>

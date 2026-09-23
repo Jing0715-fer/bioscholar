@@ -19,7 +19,7 @@
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、处理流水线：从影像到合并强度</text>
   <rect x="60" y="164" width="96" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
   <text x="108" y="184" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">指标化</text>
-  <text x="196" y="164" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">XDS / DIALS / iMOSFLM</text>
+  <text x="196" y="169" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">XDS / DIALS / iMOSFLM</text>
   <text x="196" y="182" font-size="10.5" fill="#475569">首帧斑点反解晶胞与取向，枚举 14 种布拉维格子候选</text>
   <line x1="108" y1="196" x2="108" y2="216" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
   <rect x="60" y="220" width="96" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
@@ -125,8 +125,8 @@
   <text x="960" y="703.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">整体越低越精</text>
   <rect x="1040" y="680" width="310" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="1195" y="703.5" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">结合冗余读单次测量精度</text>
-  <text x="730" y="700" font-size="10.5" fill="#475569">现代判据以 CC<tspan dy="2.3" font-size="7.6">1/2</tspan><tspan dy="-2.3"> 为核心：把反射随机分两半算相关系数，直接度量信号可分辨性，</tspan></text>
-  <text x="730" y="715" font-size="10.5" fill="#475569">摆脱对冗余与 σ 估计的依赖——低冗余数据也能被公允评判。</text>
-  <text x="730" y="756" font-size="10.5" fill="#475569">合格数据以 MTZ 交棒第 7 章：从「强度 I」到「结构因子 F」只差一步平方根与强度到幅度的换算——相位问题自此登场。</text>
+  <text x="730" y="730" font-size="10.5" fill="#475569">现代判据以 CC<tspan dy="2.3" font-size="7.6">1/2</tspan><tspan dy="-2.3"> 为核心：把反射随机分两半算相关系数，直接度量信号可分辨性，</tspan></text>
+  <text x="730" y="744.5" font-size="10.5" fill="#475569">摆脱对冗余与 σ 估计的依赖——低冗余数据也能被公允评判。</text>
+  <text x="730" y="760" font-size="10.5" fill="#475569">合格数据以 MTZ 交棒第 7 章：从「强度 I」到「结构因子 F」只差一步平方根与强度到幅度的换算——相位问题自此登场。</text>
   <text x="30" y="824" font-size="11.5" fill="#1e293b" font-weight="600">指标化定盒、积分称重、缩放对表、合并成册——四步流水线把千万斑点收拢为一部可校核的强度账本；账本首页写满 R 家族与 CC<tspan dy="2.5" font-size="8.3">1/2</tspan><tspan dy="-2.5"> 的体检值，末页留给第 7 章的相位钥匙。</tspan></text>
 </svg>

@@ -107,9 +107,9 @@
   <path d="M 1224,246 q 10,-12 22,0 q 8,-9 14,2" fill="none" stroke="#be185d" stroke-width="2"/>
   <text x="1244" y="300" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">空结合位</text>
   <text x="1244" y="318" font-size="10" fill="#64748b" text-anchor="middle">占据约 10%</text>
-  <text x="730" y="366" font-size="10" fill="#475569">每个类拥有独立的三维参考与各自的取向分配：不同构象、不同化学计量（配体有无、寡聚态、占据率）各归其桶，桶内均一度上升、</text>
-  <text x="730" y="380" font-size="10" fill="#475569">各自精修的分辨率随之改善。算法是贝叶斯 EM：类别为隐变量，正则化参数 T（RELION 常用 T = 4）控制类的紧散——T 大先验弱、</text>
-  <text x="730" y="394" font-size="10" fill="#475569">类易拆细，T 小则类被拉向共同平均。</text>
+  <text x="730" y="400" font-size="10" fill="#475569">每个类拥有独立的三维参考与各自的取向分配：不同构象、不同化学计量（配体有无、寡聚态、占据率）各归其桶，桶内均一度上升、</text>
+  <text x="730" y="414" font-size="10" fill="#475569">各自精修的分辨率随之改善。算法是贝叶斯 EM：类别为隐变量，正则化参数 T（RELION 常用 T = 4）控制类的紧散——T 大先验弱、</text>
+  <text x="730" y="428" font-size="10" fill="#475569">类易拆细，T 小则类被拉向共同平均。</text>
   <rect x="740.3548" y="467.075" width="279.29040000000003" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
   <text x="880" y="479.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">分类参考常压低至 10–20 Å：用低频分家、用高频精修</text>
   <rect x="1068.2575" y="467.075" width="223.485" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
@@ -149,8 +149,8 @@
   <text x="245" y="815.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">递减 K</text>
   <rect x="290" y="790" width="120" height="40" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
   <text x="350" y="815.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">低 T</text>
-  <text x="50" y="800" font-size="10" fill="#475569">备注：先粗拆（2–3 类）看大势，再对目标类细拆（4–8 类）找稀有态；</text>
-  <text x="50" y="814" font-size="10" fill="#475569">高度相似的类可合并再精修。</text>
+  <text x="50" y="848" font-size="10" fill="#475569">备注：先粗拆（2–3 类）看大势，再对目标类细拆（4–8 类）找稀有态；</text>
+  <text x="50" y="862" font-size="10" fill="#475569">高度相似的类可合并再精修。</text>
   <circle cx="560" cy="706" r="84" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
   <circle cx="572" cy="706" r="3" fill="#059669" opacity="0.75"/>
   <circle cx="625.2316086152608" cy="716.3316718219972" r="3" fill="#059669" opacity="0.75"/>
