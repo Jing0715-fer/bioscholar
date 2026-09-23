@@ -14,13 +14,15 @@
   </defs>
   <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
   <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">同晶置换法：让重原子替你看相位</text>
-  <text x="700" y="90" text-anchor="middle" font-size="19" fill="#64748b">F<tspan dy="4.2" font-size="13.7">PH</tspan><tspan dy="-4.2">=F</tspan><tspan dy="4.2" font-size="13.7">P</tspan><tspan dy="-4.2">+F</tspan><tspan dy="4.2" font-size="13.7">H</tspan><tspan dy="-4.2"> 三边解相位；SIR 两圆二义、MIR 与反常破局（FOM 0.5–0.8）；差值 Patterson 定位 1–8 个位点；同晶性门槛：晶胞变化小于约 1%</tspan></text>
+  <text x="700" y="84" text-anchor="middle" font-size="16" fill="#64748b">F<tspan dy="3.5" font-size="11.5">PH</tspan><tspan dy="-3.5">=F</tspan><tspan dy="3.5" font-size="11.5">P</tspan><tspan dy="-3.5">+F</tspan><tspan dy="3.5" font-size="11.5">H</tspan><tspan dy="-3.5"> 三边解相位；SIR 两圆二义、MIR 与反常破局（FOM 0.5–0.8）；差值 Patterson 定位 1–8 个位点；</tspan></text>
+  <text x="700" y="106" text-anchor="middle" font-size="16" fill="#64748b">同晶性门槛：晶胞变化小于约 1%</text>
   <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、相位圆（Harker 作图）：三边已知，相位可解</text>
   <circle cx="150" cy="370" r="125" fill="none" stroke="#0369a1" stroke-width="2"/>
   <circle cx="230" cy="370" r="145" fill="none" stroke="#6d28d9" stroke-width="2"/>
   <circle cx="215" cy="315" r="92" fill="none" stroke="#be185d" stroke-width="2" stroke-dasharray="7 5"/>
   <line x1="150" y1="370" x2="230" y2="370" stroke="#d97706" stroke-width="3" marker-end="url(#arr-warn)"/>
+  <rect x="98" y="391" width="184" height="16" rx="4" fill="#ffffff" fill-opacity="0.94"/>
   <text x="190" y="404" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">F<tspan dy="2.2" font-size="7.2">H</tspan><tspan dy="-2.2">（由重原子坐标算出，完全已知）</tspan></text>
   <line x1="150" y1="370" x2="156" y2="245" stroke="#0f766e" stroke-width="3" marker-end="url(#arr-dna)"/>
   <line x1="150" y1="370" x2="156" y2="495" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
@@ -32,7 +34,7 @@
   <text x="150" y="386" font-size="10" fill="#64748b" text-anchor="middle">原点 O</text>
   <text x="98" y="274" font-size="9.5" fill="#075985" text-anchor="middle">以 O 为心、|F<tspan dy="2.1" font-size="6.8">P</tspan><tspan dy="-2.1">| 为半径</tspan></text>
   <text x="290" y="250" font-size="9.5" fill="#4c1d95" text-anchor="middle">以 F<tspan dy="2.1" font-size="6.8">H</tspan><tspan dy="-2.1"> 终点为心、|F</tspan><tspan dy="2.1" font-size="6.8">PH</tspan><tspan dy="-2.1">| 为半径</tspan></text>
-  <text x="258" y="288" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">第二衍生物圆</text>
+  <text x="355" y="275" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">第二衍生物圆</text>
   <text x="424" y="190" font-size="10.5" fill="#475569">分别测得母体振幅 |F<tspan dy="2.3" font-size="7.6">P</tspan><tspan dy="-2.3">| 与衍生物振幅 |F</tspan><tspan dy="2.3" font-size="7.6">PH</tspan><tspan dy="-2.3">|，</tspan></text>
   <text x="424" y="205" font-size="10.5" fill="#475569">再定位 F<tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">，</tspan></text>
   <text x="424" y="220" font-size="10.5" fill="#475569">三个矢量满足加法关系 F<tspan dy="2.3" font-size="7.6">PH</tspan><tspan dy="-2.3"> = F</tspan><tspan dy="2.3" font-size="7.6">P</tspan><tspan dy="-2.3"> + F</tspan><tspan dy="2.3" font-size="7.6">H</tspan><tspan dy="-2.3">——两边长度与第三边已知，</tspan></text>
