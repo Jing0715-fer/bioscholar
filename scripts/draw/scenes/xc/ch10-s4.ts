@@ -53,8 +53,8 @@ const draw = (b: B) => {
   b.legend(bx + 14, by - bh + 18, [['主链 B（平缓起伏）', C.dna], ['水的 B（略高于周边）', C.acc]], { size: 9.5 })
   // 三种病态
   const sick = (x: number, t: string, kind: number) => {
-    b.rect(x, 626, 128, 88, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
-    b.ctext(x + 64, 618, t, { size: 9.5, weight: 700, fill: C.sub })
+    b.rect(x, 626, 124, 88, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
+    b.ctext(x + 62, 618, t, { size: 9.5, weight: 700, fill: C.sub })
     const pts: [number, number][] = []
     for (let i = 0; i <= 24; i++) {
       const f = i / 24
@@ -62,17 +62,17 @@ const draw = (b: B) => {
       if (kind === 0) v = 0.4 + 0.32 * Math.abs(Math.sin(i * 2.1))
       else if (kind === 1) v = f < 0.6 ? 0.4 : 0.9
       else v = 0.46
-      pts.push([x + 10 + f * 108, 700 - v * 56])
+      pts.push([x + 10 + f * 104, 700 - v * 56])
     }
     b.polyline(pts, { stroke: kind === 2 ? C.mute : C.warn, sw: 2 })
   }
-  sick(440, '锯齿：register 错位', 0)
-  sick(582, '断崖：无序建模错', 1)
-  b.rect(440, 726, 128, 60, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
-  b.ctext(504, 718, '全线过平', { size: 9.5, weight: 700, fill: C.sub })
-  b.line(452, 764, 556, 764, { stroke: C.mute, sw: 2 })
-  b.ctext(504, 752, 'B 没被真精修', { size: 8.5, fill: C.mute })
-  b.wtext(440, 812, 'TLS 报告口径：每个原子的总有效 B ＝ TLS 贡献加残余 B；论文报「平均 B」须注明是否已含 TLS 贡献，TLS 分组（哪些残基一组、依据什么划分）写进方法学段落——这是可重复性的一部分。', { size: 10, fill: C.sub, maxW: 240, lh: 14 })
+  sick(425, '锯齿：register 错位', 0)
+  sick(561, '断崖：无序建模错', 1)
+  b.rect(425, 726, 124, 60, { fill: '#ffffff', stroke: C.line, sw: 1.5, rx: 7 })
+  b.ctext(487, 718, '全线过平', { size: 9.5, weight: 700, fill: C.sub })
+  b.line(437, 764, 537, 764, { stroke: C.mute, sw: 2 })
+  b.ctext(487, 752, 'B 没被真精修', { size: 8.5, fill: C.mute })
+  b.wtext(425, 812, 'TLS 报告口径：每个原子的总有效 B ＝ TLS 贡献加残余 B；论文报「平均 B」须注明是否已含 TLS 贡献，TLS 分组（哪些残基一组、依据什么划分）写进方法学段落——这是可重复性的一部分。', { size: 10, fill: C.sub, maxW: 240, lh: 14 })
   b.wtext(60, 836, '配体终审四条：occupancy 与 B 永不同轮放开（先锁 1 修 B、回归不了再逐档降）；配体 B 与口袋残基同量级；RSRCC 不低于 0.8；polder 图上密度仍在。', { size: 10.5, fill: C.sub, maxW: 360, lh: 15 })
   b.wtext(60, 900, '任何一处的陡变都是「最后一处没结账」的路标——主链 B 应随二级结构与埋藏深度平缓起伏，配体 B 与口袋同带、水的 B 略高于周边蛋白。', { size: 10.5, fill: C.mute, maxW: 360, lh: 15 })
 
