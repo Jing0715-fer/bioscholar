@@ -2528,3 +2528,43 @@ Stage Summary:
 - Task 43 全量视觉扫查彻底收敛：17 张 FAIL = 7 张真实缺陷修复（6+1 残留）+ 11 张高分辨率精查确认误报；510 图视觉级排版质量全部过关
 - 精查脚本沉淀 A/B 双组断点续跑版；经验：低分辨率批量初检误报率约 65%（11/17），2 倍分辨率单图精查是必要环节
 - 下一步：Task 44 全站文字科学性与实效性校验（用户点名 AlphaFold 等内容时效）
+
+---
+Task ID: 44-a2
+Agent: 科学性审查子代理
+Task: 审查 cell-biology/immuno/micro 三组学科文字科学性
+
+Work Log:
+- 通读各组文件并按年份/数值/机制/时效四类排查（cell-biology.ts 全文 2351 行 + immuno 12 章 + micro 12 章，共 25 个文件）
+- 发现 2 条高置信疑点（详见主控后续修复记录）：cell-biology.ts:191 Meselson-Stahl 半保留复制实验年份（1957→应为 1958，与本项目 mb 章节及 draw-mb-r4 自身口径亦不一致，expansions/cell-biology-ch1-3.ts:149 存在同款年份）；cell-biology.ts:1972 唐氏综合征「约 95% 源于 MI 不分离」（95% 为减数分裂不分离所致游离型三体总占比，MI 仅约占其中七成）
+- immuno/ 12 章与 micro/ 12 章未发现高置信科学事实错误（诺奖年份、人物、数值、通路机制逐项核对均与教科书共识相符）
+- 另有若干 2025/2026 年时效性表述（immuno 多处「2025 年诺贝尔奖授予 Brunkow/Ramsdell/Sakaguchi」、cell-biology 与 micro 的「SpudCell 2026.7」「Sc2.0 2025 收官」「mRNA-4157 III 期 2026.8」「2026.6 中国实体瘤 CAR-T」「果蝇雄性 CNS 连接组 2026.9」「Nature 六篇论文」）超出本代理知识可验证范围，按 >80% 置信门槛未计入，建议主控以 web-search 复核
+
+Stage Summary:
+- 三组共 25 文件科学性总体很高：仅细胞生物学 2 条高置信疑点（1 处年份、1 处 MI 占比表述），immuno/micro 零高置信错误；2025/2026 时效性断言建议联网核实后再定夺。
+
+---
+Task ID: 44-a1
+Agent: 科学性审查子代理
+Task: 审查 biochemistry/molecular-biology/biophysics 三学科文字科学性
+
+Work Log:
+- 通读三个文件并按年份/数值/机制/时效四类排查
+- 全部诺贝尔奖年份/归属（约 38 处）、关键数值（pKa、Tm、高能磷酸 ΔG、呼吸链 H⁺ 数、ATP 产能核算、马达力学参数、HH 方程参数等）逐一核对，均无误
+- 时效性表述经联网核实：SpudCell（2026-07 报道的首个从零合成完整生命周期细胞）真实存在；PDB 冷冻电镜条目"至 2026 年逾 3.6 万条"经 RCSB API 实测 36,850 条属实；HCA/Sc2.0/Casgevy/patisiran 等时效表述均在有效期内
+- 发现 2 条高置信疑点（详见主控后续修复记录）：biochemistry.ts:265 胆固醇低温作用方向颠倒；biochemistry.ts:1960 尿素循环酶肝腺泡分区颠倒（应为汇管区周围Ⅰ带）
+
+Stage Summary:
+- 三学科文件整体科学性很高：molecular-biology.ts 与 biophysics.ts 未发现高置信错误；biochemistry.ts 存在 2 处机制方向/空间分区颠倒类错误（胆固醇对膜流动性双向调节的低温半句、肝腺泡代谢分区），另有多处低置信疑点（血糖总量约 20 g、pol I 109 kDa、Benzer 1957 等）因把握不足未列入报告
+
+---
+Task ID: 44-a3
+Agent: 科学性审查子代理
+Task: 审查 viro/neuro/bioinfo 三组学科文字科学性
+
+Work Log:
+- 通读各组文件并按年份/数值/机制/时效四类排查
+- 发现 2 条高置信疑点（详见主控后续修复记录）
+
+Stage Summary:
+- 三组 36 章总体科学性扎实（诺奖归属、经典实验年份、数值口径绝大多数经核对无误），仅发现 viro/ch5「呼肠孤病毒对称转录、正负链转录本等量产出」与 neuro/ch3「TTX 不敏感型为毫摩尔级」两处高置信疑点。
