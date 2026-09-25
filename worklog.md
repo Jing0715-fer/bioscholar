@@ -2594,3 +2594,27 @@ Stage Summary:
 - 全站文字科学性与时效性校验完成：6 处高置信科学性错误清零 + 10 处时效性数字/表述更新至 2026 年 9 月实测口径；AlphaFold 系内容（AF3、2024 诺奖、CASP16、ESMFold、ESM3/esmGFP）经专项核实时效良好
 - 方法沉淀：RCSB search API 可作 PDB 规模的实时校验源（POST return_type=entry + rows:0 取 total_count）；三域并行「只报告不修改」审查 + 主控联网核实修复的流水线跑通
 - 提交 a6ea562 已推送；未发现错误面较大的学科（三个子代理合计仅 6 条高置信错误，内容底子扎实）
+
+---
+Task ID: 45
+Agent: 主控（Z.ai Code）
+Task: 用户报告「生化的图 3-2-1 曲线跑到框外」→ 修复 + 全站同类「曲线出框」缺陷系统排查
+
+Work Log:
+- 定位：图 3-2-1 = bc-ch3-s2-amino-acid-dissociation-pi.svg（氨基酸解离与等电点）。根因：scenes/bc/ch3-s2.ts:38 把净电荷值（−1~+1）直接当 curve() 归一化 v（应 0~1）→ 滴定曲线后半段 y=557~770 全部超出轴框底 486 达 284px，且与 yticks 电荷方向矛盾
+- 修复①：v=(q+1)/2 重映射（曲线左上 +1 阶梯降至右下 −1 完整入框）+ yticks 改常规方向 [[0,'−1'],[0.5,'0'],[1,'+1']]；pKa₁/pI/pKa₂ 标注位置复核无压线
+- 排查（三层，工具沉淀 scripts/draw/）：
+  · curve-bounds-check.ts：SVG 产物级——326 个标准轴框（fill #ffffff + stroke #475569）×510 图，曲线点 vs 框几何包含 → 6 条疑似
+  · curve-audit.ts：源码级 monkey-patch B.prototype.curve（只读内存生成 451 场景）→ 修复后 0 越界（patch 逻辑单元验证有效）
+  · panel-bounds-check.ts：面板级（#f8fafc 卡片）穿出检测 → 1 条疑似
+- 确认与修复②③：xc-ch4-s2（f₀ 曲线 s/0.7 映射错，右端出框 89px 穿过反常修正卡 + 取值圆圈不在曲线上 + 数字口径错位）→ 轴满量程 1.0 Å⁻¹ + FX 数据对齐 Cromer-Mann（碳 2.5/氮 2.9/氧 3.4/硫 6.1 @0.5 Å⁻¹）+ 正文/keyPoints/图注三处文字同步；xc-ch10-s4（病态卡 582+128=710 超面板右缘 690 达 20px）→ 卡宽 124、断崖卡 x=561、阶梯线/过平卡/图注同步
+- 可接受项：vi-ch8-s3（Catmull-Rom 控制点出框 8px）、cb-ch11-s4（控制点 9px）——锚点贴框边，VLM 确认视觉贴边无碍，不改
+- 事故与恢复：跑 gen.ts xc 全量重生成意外回滚 43 轮手修 SVG（xc-ch8-s1 等 27 张 M）→ git checkout 恢复全部、仅保留本轮 3 张有意修复；**教训：scenes 源码与历史手修 SVG 存在漂移，全量重生成必翻车** → gen.ts 新增 --only <slug> 单图重生成
+- 验证：三图 sharp 渲染 + VLM 终检 PASS×3；gen --only 幂等复检 curve-bounds/panel-bounds 归零；lint 0 错 0 警；agent-browser 端到端：三图 HTTP 200，阅读页图 3-2-1 浏览器级 VLM 复核曲线完整入框、页面渲染正常
+- 提交 a61489c 已推送（12 文件：3 SVG + 3 scenes + gen.ts + 3 检测脚本 + xc 文字 2 处）
+
+Stage Summary:
+- 「曲线出框」类缺陷全站收敛：修复 3 张（用户报告 1 + 排查发现 2），三层检测（轴框/源码归一化/面板）全部归零或仅剩贴边可接受项
+- 检测工具三件套沉淀：比 VLM 视觉扫查更精准的几何级排查，未来重生成插图后可一键复扫（curve-bounds-check + panel-bounds-check + curve-audit）
+- 重要流程护栏：gen.ts --only；遗留风险——43 轮 6 张手修 SVG 的 scenes 源码未同步（em-ch3-s3-saed-camera-length/im-ch9-s2-thymic-selection/mi-ch10-s4-vaccines-immunity/ne-ch12-s1-early-development/vi-ch1-s1-virus-definition/xc-ch8-s1-isomorphous），全量 gen 仍会回滚它们，建议下轮将手修坐标同步进 scenes 源码
+- 下一步建议：Task 44 遗留（文字打磨、ScrollToTop、全站返回上级按钮、删「101计划」字样、AI 助手手机端优化等历史清单）
