@@ -121,7 +121,7 @@ console.log(`待审 ${pending.length} 节（已完成 ${targets.length - pending
 const zai = await ZAI.create()
 let done = 0
 let global429 = 0
-const CONC = 2
+const CONC = 1
 const queue = [...pending]
 
 async function auditOne(sec: (typeof pending)[number]) {
