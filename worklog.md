@@ -2506,3 +2506,19 @@ Stage Summary:
 - "曲线出框"类缺陷全量根治：2张VLM确认修复 + 1张解析检测修复 + 4张越界修复，检测器沉淀可复跑；总计修复7张SVG+5个场景源码同步
 - 文案审查方法论定型：LLM一审误报率高（旧prompt~90%），须配人工核实或二级复核；确定性时效扫描证明教材时效性整体优秀（2024诺奖/AlphaFold3/JN.1谱系均已反映），仅7处固定年份表述需耐久化（已改）
 - 一审 105/585 断点续跑中（/tmp/text-audit/results.json），完成后跑 audit-verify.ts 二级复核再统一修复
+
+---
+Task ID: 44-a 续（一审进度更新）
+Agent: 主控（Z.ai Code）
+Task: 文案一审分段推进（会话收尾记录）
+
+Work Log:
+- 一审经多段前台推进至 238/585 节：CLEAN 225 / ISSUES 13（CLEAN 率 94.5%，新 prompt 质量门槛有效）
+- 后台 setsid 进程在本机两次静默死亡（429 退避期间消失，疑似 OOM/系统清理）——长跑须前台分段或由定时任务每轮续跑
+- 修复内容已全部 commit + push（合并远端并行代理的 Task 44/45 提交，-X ours 保本地版本，curve-overflow 复跑确认无回归）
+- 定时任务已创建：fixed_rate 300s webDevReview（job_id 415158），payload 含一审续跑指令
+
+Stage Summary:
+- 一审剩余 347 节由定时任务每轮续跑（bun scripts/audit-text.ts all，断点 /tmp/text-audit/results.json）
+- 一审完成后跑 bun scripts/audit-verify.ts 二级复核（脚本就绪），对 ACCEPT 项统一修复
+- 已知：ISSUES 中旧 prompt 批（bc-ch5-s4/bp-ch3-s4/im-ch7-s2 等 35 项）经人工核实几乎全为误报，处理时优先按二级复核/人工核实过滤
