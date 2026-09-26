@@ -83,7 +83,7 @@ const draw = (b: B) => {
   const ax = 800, ay = 390, aw = 300, ah = 190
   b.axis(ax, ay, aw, ah, {
     xlabel: 'sinθ/λ（Å^{-1}）', ylabel: 'f_{0}（电子数）',
-    xticks: [[0, '0'], [0.357, '0.25'], [0.714, '0.5']],
+    xticks: [[0, '0'], [0.25, '0.25'], [0.5, '0.5'], [0.75, '0.75'], [1, '1.0']],
     yticks: [[0, '0'], [0.25, '4'], [0.75, '12'], [1, '16']],
   })
   const FX: Array<[string, string, Array<[number, number]>]> = [
@@ -92,19 +92,20 @@ const draw = (b: B) => {
     ['O', C.acc, [[0, 8], [0.14, 6.3], [0.29, 5.1], [0.43, 4.1], [0.57, 3.1], [0.71, 2.0], [0.86, 1.6], [1, 1.3]]],
     ['S', C.bad, [[0, 16], [0.14, 13], [0.29, 10.5], [0.43, 8.6], [0.57, 7.0], [0.71, 5.3], [0.86, 4.3], [1, 3.6]]],
   ]
-  const fx = (v: number) => ax + (v / 0.7) * aw
+  // 横轴域 sinθ/λ∈[0,1]（数据 s 即物理值，直接归一映射，勿再除以 0.7——曾致曲线越框 128px）
+  const fx = (v: number) => ax + v * aw
   const fy = (v: number) => ay - (v / 16) * ah
   for (const [name, col, pts] of FX) {
-    b.curve(ax, ay, aw, ah, pts.map(([s, v]) => [s / 0.7, v / 16] as [number, number]), { smooth: true, stroke: col, sw: 2.4 })
+    b.curve(ax, ay, aw, ah, pts.map(([s, v]) => [s, v / 16] as [number, number]), { smooth: true, stroke: col, sw: 2.4 })
     b.ctext(fx(0) + 14, fy(pts[0][1]) + 3, name, { size: 10, weight: 700, fill: col })
   }
   for (const [name, col, pts] of FX) {
-    const v = pts[5][1]
-    b.circle(fx(0.5), fy(v), 4, { fill: col, stroke: '#ffffff', sw: 1.2 })
+    const v = pts[5][1] // s=0.71 处：碳 1.7 / 氮 1.9 / 氧 2.0 / 硫 5.3
+    b.circle(fx(0.71), fy(v), 4, { fill: col, stroke: '#ffffff', sw: 1.2 })
   }
-  b.ctext(fx(0.5) + 8, fy(2.2), '碳约 1.7', { size: 8.5, weight: 700, fill: C.rnaD })
-  b.ctext(fx(0.5) + 8, fy(5.6), '硫约 5.3', { size: 8.5, weight: 700, fill: C.bad })
-  b.wtext(730, 446, '零散射角处所有电子同相，f_{0}＝Z；随 sinθ/λ 增大，电子云的有限尺寸使各部分散射波出现相位差，f_{0} 单调下降——碳在 0.5 Å^{-1}（约对应 d＝1 Å）处只剩约 1.7 个电子，同处氧约 2.0、氮约 1.9、硫约 5.3（自 16 降）。轻原子高角的「声量」只剩零角时的两三成，重原子的相对优势愈发醒目——这是衍射强度随分辨率衰减的普遍趋势之一（另一贡献来自温度因子，本章第 4 节）。', { size: 10, fill: C.sub, maxW: 616, lh: 13.5 })
+  b.ctext(fx(0.71) + 8, fy(2.2), '碳约 1.7', { size: 8.5, weight: 700, fill: C.rnaD })
+  b.ctext(fx(0.71) + 8, fy(5.6), '硫约 5.3', { size: 8.5, weight: 700, fill: C.bad })
+  b.wtext(730, 446, '零散射角处所有电子同相，f_{0}＝Z；随 sinθ/λ 增大，电子云的有限尺寸使各部分散射波出现相位差，f_{0} 单调下降——碳在 0.7 Å^{-1}（约对应 d＝0.7 Å）处只剩约 1.7 个电子，同处氧约 2.0、氮约 1.9、硫约 5.3（自 16 降）。轻原子高角的「声量」只剩零角时的两三成，重原子的相对优势愈发醒目——这是衍射强度随分辨率衰减的普遍趋势之一（另一贡献来自温度因子，本章第 4 节）。', { size: 10, fill: C.sub, maxW: 616, lh: 13.5 })
   // 反常修正卡
   b.rect(1110, 200, 240, 176, { fill: C.enzL, fillOp: 0.4, stroke: C.enz, sw: 1.6, rx: 9 })
   b.ctext(1230, 224, '反常修正：f = f_{0} + f′ + if″', { size: 11.5, weight: 700, fill: C.enzD })

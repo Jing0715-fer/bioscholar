@@ -43,9 +43,12 @@ const draw = (b: B) => {
   b.ctext(910, 288, 'R', { size: 12, weight: 700, fill: C.bad })
   b.ctext(880, 436, '多晶环 + 单晶斑点（示意）', { size: 10.5, fill: C.mute })
   b.tag(1090, 208, 'R·d = λ·L（λL 合称相机常数）', { fill: C.accL, stroke: C.acc, tfill: C.accD, size: 13, weight: 700, pad: 10 })
-  b.rect(930, 236, 420, 84, { fill: C.dnaL, fillOp: 0.5, stroke: C.dna, sw: 1.5, rx: 8 })
-  b.wtext(944, 258, '算一次：200 kV（λ = 0.00251 nm）、L = 400 mm，多晶金最内圈为 (111) 面（d = 0.2354 nm）', { size: 11, weight: 600, fill: C.dnaD, maxW: 396, lh: 15 })
-  b.wtext(944, 292, 'R = λL/d = 0.00251×400/0.2354 ≈ 4.3 mm——落在荧光屏的舒适区间；实测 R 即得未知 d，分钟级晶体学快检。', { size: 11, fill: C.sub, maxW: 396, lh: 15 })
+  // 说明框右移避开左侧衍射图（x≥1008，不压 x∈[760,1000] 的深色衍射面板）
+  b.rect(1008, 236, 342, 84, { fill: C.dnaL, fillOp: 0.5, stroke: C.dna, sw: 1.5, rx: 8 })
+  b.text(1020, 252, '算一次：200 kV（λ=0.00251 nm）、L=400 mm', { size: 11, weight: 600, fill: C.dnaD })
+  b.text(1020, 267, '多晶金最内圈 (111)：d = 0.2354 nm', { size: 11, weight: 600, fill: C.dnaD })
+  b.text(1020, 286, 'R = λL/d = 0.00251×400/0.2354 ≈ 4.3 mm', { size: 11, fill: C.sub })
+  b.text(1020, 301, '——荧光屏舒适区间；实测 R 即得未知 d', { size: 11, fill: C.sub })
   b.wtext(930, 348, '相机长度 L 是有效放大几何而非物理尺寸：由投影镜链电流设定，可电控切换数百毫米至数米；须定期用多晶金环标定，否则 d 值出现系统性偏差。', { size: 11, fill: C.sub, maxW: 420, lh: 16 })
   b.tag(1140, 408, '倍数用交叉光栅、L 用金环——一切可电控，一切须定期标定', { fill: C.panelB, stroke: C.mute, tfill: C.sub, size: 10.5, weight: 700, pad: 8 })
 

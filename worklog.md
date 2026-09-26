@@ -2475,3 +2475,34 @@ Stage Summary:
 - 矢量图文字重叠问题全量清零：解析检测（95 标记）→ VLM 确认（60 真实）→ 修复（95 全部）→ 终检（0 标记）→ 视觉抽检（全 PASS）
 - 检测器/复核器沉淀为可复用工具：scripts/draw/overlap-check.ts（解析式守卫）+ scripts/draw/verify-one.ts（单图渲染+VLM PASS/FAIL 判定）
 - 局限说明：overlap-check 对外部 SVG（Wikimedia 等）因 transform 坐标系会产生误报，仅适用于自绘（无 transform 的绝对坐标）SVG；text×shape 类重叠（标签压曲线）不在解析检测范围，需 VLM 补充（本轮已抽检覆盖）
+
+---
+Task ID: 43-d（SVG 曲线出框根治）+ 44-a（文案审查启动）
+Agent: 主控（Z.ai Code）
+Task: 用户亲证"生化图3-2-1曲线出框"修复 + 全量同类缺陷排查根治；新指令"检查和打磨所有教材文案内容"启动
+
+Work Log:
+【图形修复 43-d】
+- 定位生化图3-2-1 = bc-ch3-s2-amino-acid-dissociation-pi.svg：滴定曲线 path y∈[202,770] 冲出绘图框（框底486）且走向反转——根因是场景源码 b.curve 期望 fy∈[0,1] 而传入 v∈[−1,+1]（y=344−142v 写成 y=486−284v）
+- 用 Henderson-Hasselbalch 公式（pKa1=2.3/pKa2=9.6）重算 57 点精确曲线：pH0→+1(y486)、pKa₁→半电荷(y415)、pI→0(y344)、pKa₂→y273、pH14→−1(y202)，与图上现成参考虚线完全吻合；SVG 落盘 + 场景源码同步（scenes/bc/ch3-s2.ts，防重生成回归，未运行 gen）
+- VLM 复核三项 PASS；场景/根 viewBox 未动
+- #150（em-ch3-s3-saed-camera-length）：说明框(930,236,420×84)压住深色衍射面板右缘70px——右移至 x=1008 并重排为4行窄版；VLM 复核三项 PASS；场景源码同步
+- 新增解析检测器 scripts/draw/curve-overflow.ts（path/polyline 锚点提取 + 画布/绘图框/面板三级越界检测），全量 451 张自绘 SVG 扫描 → 标记 7 张
+- 逐张核实修复：xc-ch4-s2（4条f₀曲线越框128px，fx=s/0.7 映射错误→改[0,1]域+刻度对齐网格+正文0.5→0.7Å⁻¹科学表述修正）、mb-ch9-s1/mb-ch10-s2（第6流程框越面板7px→收窄左移）、mb-ch10-s3（Perturb-seq卡越界16px→左移与1356对齐）、xc-ch10-s4（锯齿框越界20px→整体左移20px）；4张VLM终检全PASS
+- 误报甄别：im-ch12-s2（骑缝卡VLM判正常）、em-ch8-s1（叠帧漂移轨迹跨帧语义正确）——检测器对叠帧/骑缝布局有已知盲区
+- 之前 VLM sweep 的 /tmp/vlm-sweep 数据被系统清空（results/confirm.json 丢失），FAIL 描述标签无法映射回文件——改用解析式检测器完成同类问题根治，路径更优（确定性、可复跑）
+
+【文案审查 44-a】
+- 摸底：实际展示版 = expansions(bc/mb/cb/bp 203节替换版, 555k字符) + 8学科子目录(382节, 1080k) = 585节/163.5万字符
+- 新增 scripts/audit-text.ts：LLM 结构化一审（A科学性/B时效性/C文字/D矛盾，JSON 输出，断点续跑，429 全局冷却5分钟），修复提取正则两处（expansions键名连字符、8学科id→content分步匹配）后提取全量585节
+- 抽样12节（旧prompt）→33项issues；人工逐项核实：**几乎全部为误报**（红细胞膜参数均正确、C1q花束状是标准描述、原文已含1:1修正等）——LLM文本审查对高质量文案产出率极低
+- 新prompt加"高置信度门槛+文风豁免"后 CLEAN 率 81%；一审进行中 105/585（CLEAN 94/ISSUES 11），后台断点续跑
+- 新增 scripts/audit-timeline.ts：时效性确定性扫描（诺奖/年份区间/至今断言/PDB指标/COVID，零API）→ 146处命中；人工核验：教材已正确反映2024诺奖(AlphaFold/Baker)与AlphaFold3开放，COVID零过时表述，Claim类均为合理"至今仍是经典"表述
+- 落地7处年份耐久化微调：im-ch6"目前（2025–2026年）"→"目前"、viro-ch10"2024至2025年"→"2024年以来"、em-ch9/em-ch12/xc-ch12×2/sb-ch12"2024–2025年"→"近年/近年来"
+- 新增 scripts/audit-verify.ts（二级复核脚本，待一审完成后跑）
+- bun run lint 通过；agent-browser 验证阅读页图3-2-1加载正常（naturalWidth 1400/渲染248px）；dev.log 无异常
+
+Stage Summary:
+- "曲线出框"类缺陷全量根治：2张VLM确认修复 + 1张解析检测修复 + 4张越界修复，检测器沉淀可复跑；总计修复7张SVG+5个场景源码同步
+- 文案审查方法论定型：LLM一审误报率高（旧prompt~90%），须配人工核实或二级复核；确定性时效扫描证明教材时效性整体优秀（2024诺奖/AlphaFold3/JN.1谱系均已反映），仅7处固定年份表述需耐久化（已改）
+- 一审 105/585 断点续跑中（/tmp/text-audit/results.json），完成后跑 audit-verify.ts 二级复核再统一修复
