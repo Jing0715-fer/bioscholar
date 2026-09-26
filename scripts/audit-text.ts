@@ -121,7 +121,7 @@ console.log(`待审 ${pending.length} 节（已完成 ${targets.length - pending
 const zai = await ZAI.create()
 let done = 0
 let global429 = 0
-const CONC = 1
+const CONC = 2
 const queue = [...pending]
 
 async function auditOne(sec: (typeof pending)[number]) {
@@ -166,7 +166,7 @@ const workers = Array.from({ length: CONC }, () => (async () => {
     if (!sec) break
     await auditOne(sec)
     writeFileSync(RESULT, JSON.stringify(results, null, 1))
-    await new Promise((r) => setTimeout(r, 5000))
+    await new Promise((r) => setTimeout(r, 3500))
   }
 })())
 await Promise.all(workers)
