@@ -1141,7 +1141,7 @@ RF1 识别 UAA/UAG，RF2 识别 UAA/UGA（真核单一 **eRF1** 识别全部三�
           title: '蛋白质靶向转运与抗生素的作用靶点',
           content: `## 信号肽与分泌途径
 
-Blobel 提出**信号假说（signal hypothesis）**：分泌蛋白的 N 端信号肽（signal peptide，约 15～30 aa，含碱性 N 段、疏水核心、小氨基酸切割位）由**信号识别颗粒（SRP，6S/7SL RNA + 6 蛋白）**识别，翻译暂停；SRP 与内质网膜上**SRP 受体（SRα/SRβ）**互作（各水解 1 GTP），核糖体-新生肽转交给**易位子 Sec61** 复合体，翻译在 ER 腔面继续——即**共翻译转运（co-translational translocation）**。信号肽酶切除信号肽，可溶性蛋白进入 ER 腔，跨膜蛋白则由终止转移序列与易位子侧口介导多次穿膜。
+Blobel 提出**信号假说（signal hypothesis）**：分泌蛋白的 N 端信号肽（signal peptide，约 15～30 aa，含碱性 N 段、疏水核心、小氨基酸切割位）由**信号识别颗粒（SRP，7SL RNA + 6 蛋白）**识别，翻译暂停；SRP 与内质网膜上**SRP 受体（SRα/SRβ）**互作（各水解 1 GTP），核糖体-新生肽转交给**易位子 Sec61** 复合体，翻译在 ER 腔面继续——即**共翻译转运（co-translational translocation）**。信号肽酶切除信号肽，可溶性蛋白进入 ER 腔，跨膜蛋白则由终止转移序列与易位子侧口介导多次穿膜。
 
 ## 翻译后转运
 

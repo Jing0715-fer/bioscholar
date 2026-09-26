@@ -24,6 +24,10 @@ async function load(subj: string): Promise<Record<string, string>> {
 
 const args = process.argv.slice(2)
 const targets = args[0] === 'all' || !args[0] ? [...SUBJECTS] : [args[0]]
+// --only <slug>：只重生成指定场景（防止全量重跑覆盖手工修复过的 SVG）
+const onlyIdx = args.indexOf('--only')
+const onlySlug = onlyIdx >= 0 ? args[onlyIdx + 1] : undefined
+if (onlySlug) { targets.length = 0; targets.push(...SUBJECTS) } // --only 时扫全部登记表找该 slug
 
 let ok = 0
 let fail = 0
@@ -32,6 +36,7 @@ for (const subj of targets) {
   const entries = Object.entries(scenes)
   if (!entries.length) { console.log(`[${subj}] 0 个场景，跳过`); continue }
   for (const [slug, svg] of entries) {
+    if (onlySlug && slug !== onlySlug) continue
     try {
       if (typeof svg !== 'string' || !svg.startsWith('<?xml') || svg.length < 500) {
         throw new Error(`SVG 内容异常（${typeof svg}，${String(svg).length} 字节）`)
