@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">器官循环的特征：结构服从功能</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">冠脉70–80%灌流在舒张期、摄氧率65–70%（储备靠腺苷等代谢性扩张、3–4倍）；脑自身调节平台MAP60–160mmHg、CO₂为最强生理性舒缩因素、血脑屏障限行；肾占CO</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">20–25%、两套毛细血管串联先滤过后重吸收；肺低压25/8mmHg低阻、缺氧收缩保通气/血流匹配；皮肤动-静脉吻合散热、血流相差数十倍</text>
+  <rect x="30" y="132" width="660" height="425" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、冠脉循环：舒张期灌注与代谢性扩张</text>
+  <line x1="80" y1="450" x2="80" y2="215" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="80" y1="450" x2="400" y2="450" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="84" y="210" font-size="9" fill="#475569" font-weight="600">压强/血流</text>
+  <rect x="200" y="230" width="200" height="220" fill="#d1fae5" fill-opacity="0.25"/>
+  <line x1="200" y1="230" x2="200" y2="450" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="140" y="246" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">收缩期</text>
+  <text x="300" y="246" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">舒张期（70–80% 灌流）</text>
+  <polyline points="80,432 88,425 96,360 102,338 112,345 130,352 160,360 185,368 196,395 200,402 204,396 212,402 240,412 300,424 400,436" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <polyline points="80,434 88,431 96,424 104,427 120,425 150,418 175,390 200,352 230,330 270,322 310,320 350,328 400,345" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <text x="300" y="300" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">冠脉血流（左室）</text>
+  <text x="300" y="400" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">主动脉压</text>
+  <text x="84" y="446" font-size="8.5" fill="#991b1b" font-weight="700">收缩期挤压·冠脉血流骤减</text>
+  <text x="240" y="472" font-size="9" fill="#475569" text-anchor="middle">心动周期（收缩≈0.3 s＋舒张≈0.5 s）</text>
+  <rect x="498.09000000000003" y="191.075" width="103.82" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="550" y="203.78" font-size="10.5" fill="#991b1b" text-anchor="middle">摄氧率 65–70%</text>
+  <text x="466" y="232" font-size="9" fill="#475569">冠状窦 PO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0"> 仅约 20 mmHg：静息提取已近饱和</tspan></text>
+  <text x="466" y="258" font-size="9" fill="#475569">运动须靠血流成全：250→约 1000 ml/min</text>
+  <text x="466" y="282" font-size="9" fill="#64748b">（冠状动脉血流储备 3–4 倍）</text>
+  <text x="466" y="312" font-size="9" fill="#475569">代谢性扩张：腺苷为主（Berne 1963 假说）</text>
+  <text x="466" y="336" font-size="9" fill="#475569">＋ K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">·H</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">·CO</tspan><tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">·NO；半衰期仅数秒</tspan></text>
+  <text x="466" y="366" font-size="9" fill="#475569">产能一停、舒张即止——负反馈天然闭合</text>
+  <text x="466" y="396" font-size="9" fill="#991b1b" font-weight="700">心内膜下做功最大、收缩期受压最重→最易缺血</text>
+  <text x="466" y="422" font-size="9" fill="#475569">心率增快压缩舒张期＝心肌缺血推手</text>
+  <text x="466" y="452" font-size="9.5" fill="#075985" font-weight="700">灌注压≈主动脉舒张压−左室舒张末压</text>
+  <text x="466" y="480" font-size="9" fill="#475569">狭窄&gt;70% 时储备耗竭；</text>
+  <text x="466" y="493" font-size="9" fill="#475569">斑块破裂致血栓形成→心肌梗死。</text>
+  <rect x="710" y="132" width="660" height="425" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、脑循环：自身调节、CO<tspan dy="4.2" font-size="13.7">2</tspan><tspan dy="-4.2"> 与血脑屏障</tspan></text>
+  <text x="764" y="212" font-size="9.5" fill="#475569" font-weight="600">脑血流</text>
+  <rect x="760" y="225" width="300" height="225" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="450" x2="760" y2="456" stroke="#475569" stroke-width="1.8"/>
+  <text x="760" y="472" font-size="13" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="826.6" y1="450" x2="826.6" y2="456" stroke="#475569" stroke-width="1.8"/>
+  <text x="826.6" y="472" font-size="13" fill="#64748b" text-anchor="middle">60</text>
+  <line x1="993.4" y1="450" x2="993.4" y2="456" stroke="#475569" stroke-width="1.8"/>
+  <text x="993.4" y="472" font-size="13" fill="#64748b" text-anchor="middle">160</text>
+  <line x1="1060" y1="450" x2="1060" y2="456" stroke="#475569" stroke-width="1.8"/>
+  <text x="1060" y="472" font-size="13" fill="#64748b" text-anchor="middle">200</text>
+  <line x1="754" y1="450" x2="760" y2="450" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="454" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="754" y1="337.5" x2="760" y2="337.5" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="341.5" font-size="13" fill="#64748b" text-anchor="end">25</text>
+  <line x1="754" y1="225" x2="760" y2="225" stroke="#475569" stroke-width="1.8"/>
+  <text x="750" y="229" font-size="13" fill="#64748b" text-anchor="end">50</text>
+  <text x="910" y="494" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">MAP (mmHg)</text>
+  <path d="M760,438.75 C764.0,429.4 772.9,399.4 784,382.5 C795.1,365.6 791.7,345.0 826.6,337.5 C861.5,330.0 960.5,345.0 993.4,337.5 C1026.3,330.0 1012.9,310.5 1024,292.5 C1035.1,274.5 1054.0,240.0 1060,229.5" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <rect x="826" y="332" width="167" height="12" rx="4" fill="#d1fae5" fill-opacity="0.6"/>
+  <text x="910" y="322" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">自身调节平台</text>
+  <text x="760" y="520" font-size="9" fill="#475569">机制：Bayliss 肌源性反应＋代谢性反馈</text>
+  <text x="1090" y="200" font-size="10" fill="#475569" font-weight="700">脑：体重 2%·氧耗 20%·CO 15%</text>
+  <text x="1090" y="226" font-size="9" fill="#475569">几乎无能量贮备——必须「现用现运」</text>
+  <text x="1090" y="260" font-size="9.5" fill="#991b1b" font-weight="700">慢性高血压→平台右移</text>
+  <text x="1090" y="284" font-size="9" fill="#475569">按「正常」下限快速降压→脑灌注不足</text>
+  <text x="1090" y="316" font-size="10" fill="#075985" font-weight="700">CO<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">：最强生理性舒缩因素</tspan></text>
+  <text x="1090" y="342" font-size="9" fill="#475569">过度通气 PaCO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">≈20：脑血流↓近半</tspan></text>
+  <text x="1090" y="366" font-size="9" fill="#64748b">（麻醉学借此降低颅内压）</text>
+  <text x="1090" y="396" font-size="9" fill="#475569">缺氧：PaO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">&lt;50 mmHg 才明显扩张</tspan></text>
+  <text x="1090" y="420" font-size="10.5" fill="#134e4a" font-weight="700">血脑屏障（BBB）</text>
+  <text x="1090" y="446" font-size="9" fill="#475569">内皮紧密连接＋星形足突＋周细胞</text>
+  <text x="1090" y="470" font-size="9" fill="#475569">GLUT1 运葡萄糖·转铁蛋白受体运铁</text>
+  <text x="1090" y="494" font-size="9" fill="#475569">左旋多巴能入脑而多巴胺不能</text>
+  <text x="1090" y="518" font-size="9" fill="#475569">Monro-Kellie：颅腔容积固定</text>
+  <rect x="30" y="575" width="660" height="405" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="597.84" font-size="19" fill="#475569" font-weight="700">三、肾循环与肺循环：滤过优先与低压系统</text>
+  <line x1="368" y1="615" x2="368" y2="950" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="56" y="628" font-size="11.5" fill="#075985" font-weight="700">肾：占 CO 20–25%（体重 0.5%）</text>
+  <line x1="66" y1="700" x2="124" y2="700" stroke="#0369a1" stroke-width="3" marker-end="url(#arr-acc)"/>
+  <circle cx="150" cy="700" r="25" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+  <circle cx="142" cy="695" r="6" fill="none" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="155" cy="705" r="6" fill="none" stroke="#0369a1" stroke-width="1.2"/>
+  <circle cx="148" cy="708" r="5" fill="none" stroke="#0369a1" stroke-width="1.2"/>
+  <line x1="177" y1="700" x2="215" y2="700" stroke="#0369a1" stroke-width="3"/>
+  <text x="180" y="688" font-size="8" fill="#64748b">出球</text>
+  <ellipse cx="258" cy="700" rx="36" ry="17" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="150" y="748" font-size="9" fill="#075985" text-anchor="middle">肾小球：静水压≈60 mmHg</text>
+  <text x="258" y="748" font-size="9" fill="#134e4a" text-anchor="middle">管周毛细血管</text>
+  <text x="258" y="775" font-size="9" fill="#134e4a" text-anchor="middle">低压·高胶渗压→重吸收</text>
+  <text x="200" y="800" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">两套毛细血管串联：先滤过、后回吸收</text>
+  <text x="56" y="830" font-size="9" fill="#475569">MAP 80–180 mmHg 内自身调节（肌源性＋管球反馈）</text>
+  <text x="56" y="858" font-size="9" fill="#475569">直小血管逆流交换守护髓质渗透梯度；</text>
+  <text x="56" y="871" font-size="9" fill="#475569">以约 0.5% 体重份额经营全身容量与内环境。</text>
+  <text x="56" y="900" font-size="9" fill="#64748b">血流≈1100 ml/min（全部心输出量的 20–25%）</text>
+  <text x="380" y="628" font-size="11.5" fill="#065f46" font-weight="700">肺：低压 25/8（平均≈15 mmHg）</text>
+  <line x1="400" y1="700" x2="520" y2="700" stroke="#475569" stroke-width="1.8"/>
+  <rect x="415" y="592" width="26" height="108" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="475" y="682" width="26" height="18" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="428" y="588" font-size="9" fill="#991b1b" text-anchor="middle">≈100</text>
+  <text x="488" y="676" font-size="9" fill="#065f46" text-anchor="middle">≈15</text>
+  <text x="428" y="718" font-size="9" fill="#991b1b" text-anchor="middle">体循环</text>
+  <text x="488" y="718" font-size="9" fill="#065f46" text-anchor="middle">肺循环</text>
+  <text x="545" y="640" font-size="9" fill="#475569">血管壁薄·顺应性大</text>
+  <text x="545" y="662" font-size="9" fill="#475569">阻力≈体循环的 1/10</text>
+  <text x="545" y="684" font-size="9" fill="#475569">运动靠募集与扩张</text>
+  <text x="380" y="752" font-size="11" fill="#92400e" font-weight="700">缺氧性肺血管收缩（与体循环反向）</text>
+  <line x1="495" y1="758" x2="495" y2="775" stroke="#475569" stroke-width="3"/>
+  <line x1="495" y1="775" x2="438" y2="790" stroke="#059669" stroke-width="4"/>
+  <line x1="495" y1="775" x2="552" y2="790" stroke="#d97706" stroke-width="2.5"/>
+  <circle cx="425" cy="805" r="20" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="425" y="809" font-size="8" fill="#065f46" text-anchor="middle">PO<tspan dy="1.8" font-size="5.8">2</tspan><tspan dy="-1.8"> 高</tspan></text>
+  <circle cx="565" cy="805" r="20" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="565" y="809" font-size="8" fill="#92400e" text-anchor="middle">PO<tspan dy="1.8" font-size="5.8">2</tspan><tspan dy="-1.8"> 低</tspan></text>
+  <text x="425" y="845" font-size="8.5" fill="#065f46" text-anchor="middle">血管扩张·血流↑</text>
+  <text x="565" y="845" font-size="8.5" fill="#92400e" text-anchor="middle">血管收缩·血流↓</text>
+  <text x="425" y="868" font-size="8" fill="#64748b" text-anchor="middle">（通气良好）</text>
+  <text x="565" y="868" font-size="8" fill="#64748b" text-anchor="middle">（通气不良）</text>
+  <text x="380" y="896" font-size="9" fill="#475569">把血流挤向通气良好区域——牺牲通气差的肺泡、</text>
+  <text x="380" y="909" font-size="9" fill="#475569">优化全肺通气/血流匹配；全肺性缺氧（高原）</text>
+  <text x="380" y="922" font-size="9" fill="#475569">使收缩泛化→肺动脉高压、右心肥厚（肺心病）。</text>
+  <text x="380" y="950" font-size="9" fill="#64748b">West 三区：直立时肺尖血流最少、肺底最多（重力）</text>
+  <rect x="710" y="575" width="660" height="405" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="597.84" font-size="19" fill="#475569" font-weight="700">四、皮肤循环：一台热交换器</text>
+  <line x1="740" y1="730" x2="1060" y2="730" stroke="#dc2626" stroke-width="5"/>
+  <line x1="740" y1="860" x2="1060" y2="860" stroke="#0369a1" stroke-width="5"/>
+  <path d="M 760,733 C 754,760 766,800 760,857" fill="none" stroke="#be123c" stroke-width="1.6"/>
+  <path d="M 790,733 C 784,760 796,800 790,857" fill="none" stroke="#be123c" stroke-width="1.6"/>
+  <path d="M 820,733 C 814,760 826,800 820,857" fill="none" stroke="#be123c" stroke-width="1.6"/>
+  <path d="M 850,733 C 844,760 856,800 850,857" fill="none" stroke="#be123c" stroke-width="1.6"/>
+  <path d="M 940,730 C 990,745 990,845 940,860" fill="none" stroke="#d97706" stroke-width="6"/>
+  <text x="760" y="715" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">微动脉</text>
+  <text x="760" y="882" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">微静脉</text>
+  <text x="805" y="902" font-size="9" fill="#475569" text-anchor="middle">毛细血管床（营养性血流）</text>
+  <text x="1020" y="804" font-size="10" fill="#92400e" font-weight="700">动-静脉吻合（AV）</text>
+  <text x="1020" y="840" font-size="9" fill="#475569">管壁肌层厚、密集分布于手足；</text>
+  <text x="1020" y="853" font-size="9" fill="#475569">交感缩血管张力高→关闭</text>
+  <text x="1020" y="866" font-size="9" fill="#475569">（保温），张力撤除→大开</text>
+  <text x="1020" y="879" font-size="9" fill="#475569">（散热）</text>
+  <text x="1160" y="620" font-size="11" fill="#475569" font-weight="700">体温调节（而非营养）</text>
+  <text x="1160" y="644" font-size="9.5" fill="#075985" font-weight="700">寒冷：缩血管张力↑→吻合关闭</text>
+  <text x="1160" y="668" font-size="9" fill="#475569">皮肤少血保温；深冷中平滑肌瘫软</text>
+  <text x="1160" y="690" font-size="9" fill="#475569">→周期复灌「冷致血管舒张」防冻伤</text>
+  <text x="1160" y="720" font-size="9.5" fill="#991b1b" font-weight="700">温热：下丘脑撤去缩血管张力</text>
+  <text x="1160" y="744" font-size="9" fill="#475569">＋出汗（交感胆碱能→缓激肽）</text>
+  <text x="1160" y="768" font-size="9" fill="#475569">皮肤血流可达 6–8 L/min</text>
+  <rect x="1160" y="796" width="60" height="12" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/>
+  <text x="1228" y="806" font-size="8.5" fill="#475569">安静 0.25–0.5 L/min</text>
+  <rect x="1160" y="824" width="180" height="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="1250" y="850" font-size="8.5" fill="#991b1b" text-anchor="middle">极量 6–8 L/min（相差数十倍）</text>
+  <text x="1250" y="880" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="700">全身波动幅度最大的器官循环</text>
+  <text x="1160" y="916" font-size="9" fill="#475569">皮肤颜色忠实反映毛细血管床状态</text>
+  <text x="740" y="930" font-size="9" fill="#475569">皮肤血流执行体温调节而非营养使命（参见能量代谢与体温章）；发绀的化学参见血液章。</text>
+</svg>

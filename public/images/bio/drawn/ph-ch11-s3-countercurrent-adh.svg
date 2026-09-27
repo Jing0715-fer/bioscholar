@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">尿的浓缩与稀释：逆流倍增·直血管·尿素再循环与 ADH</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">逆流倍增把髓质间质由300级联放大至约1200mOsm/kg；直血管发夹慢流守梯度、尿素再循环补内髓近半，ADH经V<tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">-cAMP-AQP2决定终尿1200与50mOsm/kg两极</tspan></text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、髓质渗透梯度与逆流倍增</text>
+  <text x="60" y="176" font-size="11" fill="#64748b">间质渗透压（mOsm/kg）</text>
+  <rect x="60" y="184" width="75" height="72" fill="#0369a1" fill-opacity="0.12" stroke="#075985" stroke-width="1.4"/>
+  <text x="70" y="214" font-size="11" fill="#075985" font-weight="700">皮质 300</text>
+  <rect x="60" y="256" width="150" height="72" fill="#0369a1" fill-opacity="0.28" stroke="#075985" stroke-width="1.4"/>
+  <text x="70" y="286" font-size="11" fill="#075985" font-weight="700">外髓 600</text>
+  <rect x="60" y="328" width="225" height="72" fill="#0369a1" fill-opacity="0.45" stroke="#075985" stroke-width="1.4"/>
+  <text x="70" y="358" font-size="11" fill="#075985" font-weight="700">内髓 900</text>
+  <rect x="60" y="400" width="300" height="72" fill="#0369a1" fill-opacity="0.62" stroke="#075985" stroke-width="1.4"/>
+  <text x="70" y="430" font-size="11" fill="#075985" font-weight="700">内髓乳头 1200</text>
+  <line x1="460" y1="190" x2="460" y2="440" stroke="#0369a1" stroke-width="3.5"/>
+  <line x1="530" y1="190" x2="530" y2="440" stroke="#b45309" stroke-width="3.5"/>
+  <path d="M460,440 Q495,470 530,440" fill="none" stroke="#475569" stroke-width="3.5"/>
+  <text x="460" y="180" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">降支</text>
+  <text x="530" y="180" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">升支</text>
+  <line x1="460" y1="240" x2="460" y2="268" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="530" y1="268" x2="530" y2="240" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <line x1="524" y1="235" x2="486" y2="235" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="524" y1="300" x2="486" y2="300" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="524" y1="365" x2="486" y2="365" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="524" y1="425" x2="486" y2="425" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="454" y1="330" x2="420" y2="330" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <text x="558" y="222" font-size="10.5" fill="#78350f">升支粗段 NKCC2 单向抽盐：</text>
+  <text x="558" y="237" font-size="10.5" fill="#78350f">单效应 ≈200 mOsm</text>
+  <text x="558" y="292" font-size="10.5" fill="#075985">降支透水不透盐：</text>
+  <text x="558" y="307" font-size="10.5" fill="#075985">管液下行渐浓</text>
+  <text x="558" y="352" font-size="10.5" fill="#475569">发夹对流级联放大</text>
+  <text x="50" y="494" font-size="11" fill="#475569">逆流倍增：襻升支一次「抽盐」的单效应（200 mOsm）</text>
+  <text x="50" y="510.5" font-size="11" fill="#475569">被发夹几何沿髓质纵深级联放大——皮质 300 一路放大至内髓乳头约 1200 mOsm/kg（4 倍）。</text>
+  <rect x="710" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、直血管逆流交换与尿素再循环</text>
+  <text x="840" y="178" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">直血管 vasa recta（发夹·极慢流）</text>
+  <line x1="805" y1="200" x2="805" y2="405" stroke="#dc2626" stroke-width="3"/>
+  <line x1="875" y1="200" x2="875" y2="405" stroke="#dc2626" stroke-width="3"/>
+  <path d="M805,405 Q840,435 875,405" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <line x1="805" y1="250" x2="805" y2="278" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="875" y1="278" x2="875" y2="250" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="812" y1="330" x2="868" y2="330" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <line x1="868" y1="362" x2="812" y2="362" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="840" y="318" font-size="9.5" fill="#92400e" text-anchor="middle">溶质渗回</text>
+  <text x="840" y="350" font-size="9.5" fill="#075985" text-anchor="middle">水入降支</text>
+  <text x="840" y="452" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="600">被动逆流交换·守梯度不耗能</text>
+  <rect x="757.9721" y="477.075" width="164.0558" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="840" y="489.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">髓质血流仅占小部分·低流低氧</text>
+  <text x="730" y="510" font-size="10" fill="#64748b">急性肾损伤先打击 S₃ 段与襻升支上皮</text>
+  <rect x="1080.1123" y="170.225" width="189.7754" height="19.55" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1175" y="184.14" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">尿素再循环（UT-A1/UT-A3）</text>
+  <rect x="1075" y="205" width="180" height="48" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1165" y="225" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">内髓集合管</text>
+  <text x="1165" y="243" font-size="10" fill="#64748b" text-anchor="middle">ADH 上调 UT-A 开门</text>
+  <line x1="1165" y1="255" x2="1165" y2="288" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="1175" y="275" font-size="10.5" fill="#4c1d95">尿素入间质</text>
+  <rect x="1040" y="290" width="250" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1165" y="312" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">内髓间质</text>
+  <text x="1165" y="332" font-size="10.5" fill="#475569" text-anchor="middle">尿素贡献内髓渗透压近一半</text>
+  <line x1="1100" y1="348" x2="1055" y2="382" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="1048" y="372" font-size="10.5" fill="#4c1d95" text-anchor="end">渗入襻细段</text>
+  <rect x="985" y="384" width="175" height="48" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1072" y="404" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">襻细段（透尿素）</text>
+  <text x="1072" y="422" font-size="10" fill="#64748b" text-anchor="middle">随管液再下行</text>
+  <path d="M1160,408 C1245,408 1245,229 1253,229" fill="none" stroke="#6d28d9" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-pro)"/>
+  <text x="1262" y="330" font-size="10.5" fill="#4c1d95">尿素再循环</text>
+  <rect x="1089.355" y="455.65" width="171.29" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1175" y="468.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">「尿素是髓质梯度的另一半」</text>
+  <rect x="1090.106125" y="489.075" width="169.78775000000002" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1175" y="501.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">低蛋白饮食→最大尿渗透压下降</text>
+  <rect x="30" y="548" width="660" height="437" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="570.84" font-size="19" fill="#475569" font-weight="700">三、ADH 作用链：V<tspan dy="4.2" font-size="13.7">2</tspan><tspan dy="-4.2">–cAMP–AQP2</tspan></text>
+  <rect x="140.8569" y="576.225" width="118.2862" height="19.55" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="200" y="590.14" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">血浆高渗 / 低容量</text>
+  <line x1="200" y1="600" x2="200" y2="622" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="105" y="624" width="190" height="42" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="200" y="642" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">下丘脑视上核·室旁核</text>
+  <text x="200" y="659" font-size="10" fill="#64748b" text-anchor="middle">合成 ADH 前体</text>
+  <line x1="200" y1="670" x2="200" y2="692" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <text x="210" y="686" font-size="10" fill="#64748b">轴突运输·酶切</text>
+  <rect x="105" y="694" width="190" height="42" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="200" y="712" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">神经垂体贮存·释放</text>
+  <text x="200" y="729" font-size="10" fill="#64748b" text-anchor="middle">Ca<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 依赖胞吐</tspan></text>
+  <line x1="200" y1="740" x2="200" y2="762" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="105" y="764" width="190" height="40" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="200" y="781" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">血循环 ADH</text>
+  <text x="200" y="797" font-size="10" fill="#64748b" text-anchor="middle">大剂量经 V<tspan dy="2.2" font-size="7.2">1</tspan><tspan dy="-2.2"> 收缩血管</tspan></text>
+  <line x1="200" y1="808" x2="200" y2="830" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="95" y="832" width="210" height="46" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="200" y="852" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">集合管基侧膜 V<tspan dy="2.5" font-size="8.3">2</tspan><tspan dy="-2.5"> 受体</tspan></text>
+  <text x="200" y="870" font-size="10" fill="#64748b" text-anchor="middle">G<tspan dy="2.2" font-size="7.2">s</tspan><tspan dy="-2.2">–cAMP–PKA 磷酸化 AQP2</tspan></text>
+  <line x1="200" y1="882" x2="200" y2="904" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="90" y="906" width="220" height="46" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="200" y="925" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">AQP2 囊泡插入顶膜</text>
+  <text x="200" y="943" font-size="10" fill="#475569" text-anchor="middle">水通道开门·水顺梯度重吸收</text>
+  <text x="50" y="972" font-size="10.5" fill="#64748b">长期 ADH 另上调 AQP2 基因转录——「开门」升级为「多装门」</text>
+  <rect x="471.6653" y="582.65" width="146.6694" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="545" y="595.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">集合管主细胞：ADH 效应</text>
+  <text x="442" y="626" font-size="10.5" fill="#64748b">管腔</text>
+  <rect x="440" y="661" width="220" height="195" rx="6" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <g><circle cx="440" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="440" y1="652" x2="440" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="440" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="464" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="464" y1="652" x2="464" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="464" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="488" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="488" y1="652" x2="488" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="488" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="512" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="512" y1="652" x2="512" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="512" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="536" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="536" y1="652" x2="536" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="536" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="560" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="560" y1="652" x2="560" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="560" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="584" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="584" y1="652" x2="584" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="584" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="608" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="608" y1="652" x2="608" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="608" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="632" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="632" y1="652" x2="632" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="632" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/><circle cx="656" cy="648" r="5.5" fill="#0369a1" fill-opacity="0.85"/><line x1="656" y1="652" x2="656" y2="657" stroke="#0369a1" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="656" cy="661" r="5.5" fill="#0369a1" fill-opacity="0.85"/></g>
+  <rect x="466" y="645" width="18" height="18" rx="3" fill="#ffffff" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="531" y="645" width="18" height="18" rx="3" fill="#ffffff" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="596" y="645" width="18" height="18" rx="3" fill="#ffffff" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="605" y="626" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">AQP2</text>
+  <line x1="475" y1="632" x2="475" y2="684" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="540" y1="632" x2="540" y2="684" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="605" y1="632" x2="605" y2="684" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <circle cx="508" cy="795" r="15" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="575" cy="818" r="15" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <circle cx="640" cy="785" r="15" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.4"/>
+  <line x1="508" y1="779" x2="508" y2="664" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <line x1="575" y1="802" x2="575" y2="664" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <line x1="640" y1="769" x2="640" y2="664" stroke="#0369a1" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <g><circle cx="440" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="440" y1="860" x2="440" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="440" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="464" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="464" y1="860" x2="464" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="464" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="488" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="488" y1="860" x2="488" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="488" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="512" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="512" y1="860" x2="512" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="512" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="536" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="536" y1="860" x2="536" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="536" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="560" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="560" y1="860" x2="560" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="560" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="584" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="584" y1="860" x2="584" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="584" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="608" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="608" y1="860" x2="608" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="608" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="632" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="632" y1="860" x2="632" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="632" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="656" cy="856" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="656" y1="860" x2="656" y2="865" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="656" cy="869" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="481" y="853" width="18" height="18" rx="3" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="546" y="853" width="18" height="18" rx="3" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <rect x="611" y="853" width="18" height="18" rx="3" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="632" y="850" font-size="9.5" fill="#134e4a">AQP3/4</text>
+  <line x1="490" y1="838" x2="490" y2="882" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="555" y1="838" x2="555" y2="882" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="620" y1="838" x2="620" y2="882" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="442" y="896" font-size="10.5" fill="#64748b">血液·间质（高渗梯）</text>
+  <line x1="307" y1="855" x2="436" y2="855" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="372" y="843" font-size="10.5" fill="#075985" text-anchor="middle">ADH 结合</text>
+  <rect x="447.74" y="926.075" width="104.52" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="500" y="938.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">速效：囊泡膜插入</text>
+  <rect x="567.1475" y="926.075" width="93.705" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="614" y="938.78" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">长效：转录上调</text>
+  <rect x="710" y="548" width="660" height="437" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="570.84" font-size="19" fill="#475569" font-weight="700">四、浓缩与稀释两极与尿崩症鉴别</text>
+  <text x="865" y="610" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">终尿渗透压两极（mOsm/kg）</text>
+  <rect x="760" y="620" width="210" height="230" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="760" y1="794.8" x2="970" y2="794.8" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.6"/>
+  <text x="752" y="798.8" font-size="10.5" fill="#64748b" text-anchor="end">300</text>
+  <line x1="760" y1="739.6" x2="970" y2="739.6" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.6"/>
+  <text x="752" y="743.6" font-size="10.5" fill="#64748b" text-anchor="end">600</text>
+  <line x1="760" y1="684.4" x2="970" y2="684.4" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.6"/>
+  <text x="752" y="688.4" font-size="10.5" fill="#64748b" text-anchor="end">900</text>
+  <line x1="760" y1="629.2" x2="970" y2="629.2" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.6"/>
+  <text x="752" y="633.2" font-size="10.5" fill="#64748b" text-anchor="end">1200</text>
+  <line x1="760" y1="794.8" x2="970" y2="794.8" stroke="#d97706" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="975" y="798" font-size="10" fill="#92400e">血浆 300</text>
+  <rect x="795" y="629.2" width="50" height="220.8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="820" y="648" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">1200</text>
+  <rect x="890" y="840.8" width="50" height="9.2" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="915" y="832" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">50</text>
+  <text x="820" y="872" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">ADH 有</text>
+  <text x="915" y="872" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">ADH 无</text>
+  <text x="820" y="890" font-size="10" fill="#64748b" text-anchor="middle">浓缩尿 ≤0.5 L/日</text>
+  <text x="915" y="890" font-size="10" fill="#64748b" text-anchor="middle">稀释尿 可达十余升/日</text>
+  <text x="740" y="915" font-size="10.5" fill="#475569">渴阈 280–290 mOsm 同启渴觉与 ADH——饮水与保水双重防线；</text>
+  <text x="740" y="929.5" font-size="10.5" fill="#475569">每日必排溶质约 600 mOsm：</text>
+  <text x="740" y="944" font-size="10.5" fill="#475569">浓缩至 1200 需至少 0.5 L，</text>
+  <text x="740" y="958.5" font-size="10.5" fill="#475569">只能到 300 则需 2 L。</text>
+  <text x="1040" y="605" font-size="11.5" fill="#1e293b" font-weight="700">多尿-多饮鉴别（禁水 + 加压素试验）</text>
+  <rect x="1040" y="620" width="320" height="62" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1200" y="641" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="700">中枢性尿崩症</text>
+  <text x="1200" y="660" font-size="10" fill="#475569" text-anchor="middle">ADH 缺乏；加压素后尿渗显著↑（有反应）</text>
+  <rect x="1040" y="696" width="320" height="62" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1200" y="717" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">肾性尿崩症</text>
+  <text x="1200" y="736" font-size="10" fill="#475569" text-anchor="middle">V<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">/AQP2 缺陷（遗传·锂剂）；无反应</tspan></text>
+  <rect x="1040" y="772" width="320" height="62" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1200" y="793" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">精神性烦渴</text>
+  <text x="1200" y="812" font-size="10" fill="#475569" text-anchor="middle">饮水过多在先；血渗偏低，禁水可浓缩</text>
+  <rect x="1081.147025" y="857.075" width="237.70595" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1200" y="869.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">SIADH＝对立面：ADH 不当分泌→稀释性低钠</text>
+  <text x="1040" y="900" font-size="10" fill="#475569">第四类为渗透性利尿（糖尿·甘露醇）：尿渗反高于血浆。新生儿襻短、</text>
+  <text x="1040" y="914" font-size="10" fill="#475569">尿素循环未充分运转，浓缩仅 ≈700 mOsm/kg；</text>
+  <text x="1040" y="928" font-size="10" fill="#475569">老人最大尿渗透压逐年下滑。</text>
+</svg>

@@ -32,6 +32,14 @@ import { drawViR4 } from './draw-vi-r4'
 import { drawSbR4 } from './draw-sb-r4'
 import { drawXcR4 } from './draw-xc-r4'
 import { drawEmR4 } from './draw-em-r4'
+import { drawPhP1 } from './draw-ph-p1'
+import { drawPhP2 } from './draw-ph-p2'
+import { drawPhP3 } from './draw-ph-p3'
+import { drawPhP4 } from './draw-ph-p4'
+import { drawPhP5 } from './draw-ph-p5'
+import { drawPhP6 } from './draw-ph-p6'
+import { drawPhP7 } from './draw-ph-p7'
+import { drawPhP8 } from './draw-ph-p8'
 
 /** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
@@ -47,6 +55,7 @@ export const subjectCovers: Record<SubjectId, string> = {
   'structural-biology': '/images/bio/covers/cover-structural-biology.svg',
   'x-ray-crystallography': '/images/bio/covers/cover-x-ray-crystallography.svg',
   'electron-microscopy': '/images/bio/covers/cover-electron-microscopy.svg',
+  physiology: '/images/bio/covers/cover-physiology.svg',
 }
 
 /** 仪表盘主视觉横幅（自绘矢量） */
@@ -764,5 +773,13 @@ export function getIllustrations(sectionId: string): Illustration[] {
     ...(drawSbR4[sectionId] ?? []),
     ...(drawXcR4[sectionId] ?? []),
     ...(drawEmR4[sectionId] ?? []),
+    ...(drawPhP1[sectionId] ?? []),
+    ...(drawPhP2[sectionId] ?? []),
+    ...(drawPhP3[sectionId] ?? []),
+    ...(drawPhP4[sectionId] ?? []),
+    ...(drawPhP5[sectionId] ?? []),
+    ...(drawPhP6[sectionId] ?? []),
+    ...(drawPhP7[sectionId] ?? []),
+    ...(drawPhP8[sectionId] ?? []),
   ]
 }

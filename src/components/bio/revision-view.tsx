@@ -889,6 +889,7 @@ function subjectName(id: SubjectId): string {
     'structural-biology': '结构生物学实验方法',
     'x-ray-crystallography': 'X射线晶体学',
     'electron-microscopy': '电子显微学',
+    physiology: '生理学',
   }
   return names[id] ?? id
 }

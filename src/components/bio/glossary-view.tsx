@@ -43,6 +43,7 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   'structural-biology': 'border-l-purple-500',
   'x-ray-crystallography': 'border-l-red-500',
   'electron-microscopy': 'border-l-stone-500',
+  physiology: 'border-l-pink-500',
 }
 
 /** 学科筛选下边线激活态（学科色文字 + 下边线，不用全色块） */
@@ -68,6 +69,8 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-red-500/10 dark:data-[state=active]:bg-red-500/15 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-none',
   'electron-microscopy':
     'data-[state=active]:bg-stone-500/10 dark:data-[state=active]:bg-stone-500/15 data-[state=active]:text-stone-700 dark:data-[state=active]:text-stone-300 data-[state=active]:shadow-none',
+  physiology:
+    'data-[state=active]:bg-pink-500/10 dark:data-[state=active]:bg-pink-500/15 data-[state=active]:text-pink-700 dark:data-[state=active]:text-pink-400 data-[state=active]:shadow-none',
 }
 
 // ============================================================

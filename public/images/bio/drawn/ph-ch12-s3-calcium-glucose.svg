@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">钙磷稳态与血糖调控：钙三角、维生素 D 活化与胰岛传感</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">血钙2.25–2.75mmol/L中游离钙约50%具生理活性；维生素D经皮肤UVB、肝25-羟化与肾1α-羟化两级活化；β细胞以GLUT2–葡萄糖激酶–K<tspan dy="3.7" font-size="12.2">ATP</tspan><tspan dy="-3.7">传感链触发胰岛素胞吐，</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">胰岛素/胰高血糖素摩尔比开关肝脏的入库与放粮</text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、钙稳态三角：CaSR–PTH–降钙素联动</text>
+  <rect x="230" y="176" width="260" height="50" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="360" y="197" font-size="13" fill="#92400e" text-anchor="middle" font-weight="700">血钙 2.25–2.75 mmol/L</text>
+  <text x="360" y="216" font-size="10.5" fill="#475569" text-anchor="middle">游离（离子）钙约 50% 具活性</text>
+  <line x1="290" y1="228" x2="225" y2="256" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="430" y1="228" x2="495" y2="256" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="90" y="260" width="210" height="46" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="195" y="280" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="700">PTH↑（甲状旁腺主细胞）</text>
+  <text x="195" y="298" font-size="10" fill="#475569" text-anchor="middle">血钙↓ 经 CaSR 解除抑制·秒级</text>
+  <rect x="400" y="260" width="210" height="46" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="505" y="280" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">降钙素↑（甲状腺 C 细胞）</text>
+  <text x="505" y="298" font-size="10" fill="#475569" text-anchor="middle">血钙↑ 时分泌·成人体内作用弱</text>
+  <line x1="130" y1="306" x2="130" y2="350" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="235" y1="306" x2="330" y2="350" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="430" y1="306" x2="240" y2="348" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-acc)"/>
+  <text x="335" y="322" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">抑制破骨（弱）</text>
+  <rect x="60" y="352" width="190" height="68" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="155" y="371" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">骨</text>
+  <text x="155" y="389" font-size="10" fill="#475569" text-anchor="middle">快相：骨液泵放钙（分钟）</text>
+  <text x="155" y="407" font-size="10" fill="#475569" text-anchor="middle">慢相：RANKL 招破骨（数日）</text>
+  <rect x="270" y="352" width="190" height="68" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="365" y="371" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">肾</text>
+  <text x="365" y="389" font-size="10" fill="#475569" text-anchor="middle">远端保钙·近端排磷</text>
+  <text x="365" y="407" font-size="10" fill="#475569" text-anchor="middle">1α 羟化酶↑（限速）</text>
+  <rect x="480" y="352" width="190" height="68" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="575" y="371" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">肠（间接）</text>
+  <text x="575" y="389" font-size="10" fill="#475569" text-anchor="middle">骨钙三醇诱导 TRPV6</text>
+  <text x="575" y="407" font-size="10" fill="#475569" text-anchor="middle">与钙结合蛋白·吸收↑</text>
+  <path d="M430,420 L430,448 L575,448 L575,424" fill="none" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="502" y="440" font-size="10" fill="#6d28d9" text-anchor="middle" font-weight="700">1,25(OH)<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">D</tspan><tspan dy="2.2" font-size="7.2">3</tspan></text>
+  <path d="M60,386 L42,386 L42,200 L224,200" fill="none" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <text x="50" y="468" font-size="11" fill="#475569">降钙素在成人体内作用微弱——CaSR–PTH–骨钙三醇双轴已构成冗余稳态；碱中毒时蛋白结合钙增多、游离钙下降可致手足搐搦；</text>
+  <text x="50" y="486" font-size="11" fill="#475569">骨储全身钙约 99%。</text>
+  <rect x="256.7935" y="502.65" width="206.413" height="18.7" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="360" y="515.96" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">判定钙状态须同看 pH·白蛋白·离子钙</text>
+  <rect x="710" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、维生素 D 的两级活化：皮肤→肝→肾</text>
+  <rect x="730" y="176" width="130" height="64" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="795" y="196" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">皮肤</text>
+  <text x="795" y="214" font-size="9.5" fill="#475569" text-anchor="middle">7-脱氢胆固醇</text>
+  <text x="795" y="232" font-size="9.5" fill="#d97706" text-anchor="middle">UVB 光解</text>
+  <line x1="862" y1="208" x2="894" y2="208" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="878" y="170" font-size="9.5" fill="#64748b" text-anchor="middle">D<tspan dy="2.1" font-size="6.8">3</tspan></text>
+  <rect x="898" y="176" width="130" height="64" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="963" y="196" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">肝</text>
+  <text x="963" y="214" font-size="9.5" fill="#475569" text-anchor="middle">25-羟化</text>
+  <text x="963" y="232" font-size="9.5" fill="#475569" text-anchor="middle">CYP2R1 组成型</text>
+  <line x1="1030" y1="208" x2="1062" y2="208" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="1046" y="170" font-size="9.5" fill="#64748b" text-anchor="middle">25(OH)D</text>
+  <rect x="1066" y="176" width="130" height="64" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="1131" y="196" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">肾</text>
+  <text x="1131" y="214" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">1α-羟化（限速）</text>
+  <text x="1131" y="232" font-size="9.5" fill="#475569" text-anchor="middle">CYP27B1</text>
+  <line x1="1198" y1="208" x2="1230" y2="208" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <rect x="1232" y="176" width="130" height="64" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1297" y="195" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">1,25(OH)<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">D</tspan><tspan dy="2.3" font-size="7.6">3</tspan></text>
+  <text x="1297" y="213" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">骨钙三醇</text>
+  <text x="1297" y="231" font-size="9" fill="#475569" text-anchor="middle">（活性激素）</text>
+  <rect x="730" y="260" width="520" height="88" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="746" y="282" font-size="12" fill="#1e293b" font-weight="700">1α-羟化酶：全链限速与调节节点</text>
+  <text x="746" y="304" font-size="10.5" fill="#475569">PTH 与低磷促其表达；FGF23（骨细胞来源）与骨钙三醇自身抑制之——肾既是激活车间又是反馈位点；</text>
+  <text x="746" y="322" font-size="10.5" fill="#475569">24-羟化酶（CYP24A1）并行灭活，防长半衰期失控。</text>
+  <path d="M1297,242 L1310,254 L1310,368" fill="none" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="1310" y1="368" x2="835" y2="368" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="835" y1="368" x2="835" y2="382" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <line x1="1045" y1="368" x2="1045" y2="382" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <line x1="1255" y1="368" x2="1255" y2="382" stroke="#6d28d9" stroke-width="2" marker-end="url(#arr-pro)"/>
+  <text x="1073" y="360" font-size="10.5" fill="#6d28d9" text-anchor="middle" font-weight="700">骨钙三醇三靶</text>
+  <rect x="740" y="386" width="190" height="56" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="835" y="404" font-size="12" fill="#134e4a" text-anchor="middle" font-weight="700">肠</text>
+  <text x="835" y="422" font-size="9.5" fill="#475569" text-anchor="middle">TRPV6 + 钙结合蛋白</text>
+  <text x="835" y="440" font-size="9.5" fill="#475569" text-anchor="middle">钙磷吸收成倍提升</text>
+  <rect x="950" y="386" width="190" height="56" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1045" y="404" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">骨（双向）</text>
+  <text x="1045" y="422" font-size="9.5" fill="#475569" text-anchor="middle">协同 PTH 动员骨钙</text>
+  <text x="1045" y="440" font-size="9.5" fill="#475569" text-anchor="middle">又供骨矿化原料</text>
+  <rect x="1160" y="386" width="190" height="56" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1255" y="404" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">甲状旁腺</text>
+  <text x="1255" y="422" font-size="9.5" fill="#475569" text-anchor="middle">直接抑制 PTH 基因</text>
+  <text x="1255" y="440" font-size="9.5" fill="#475569" text-anchor="middle">（另一重负反馈）</text>
+  <text x="730" y="466" font-size="11" fill="#475569">25(OH)D 是血中主要存在形式与储备指标；骨钙三醇升血钙亦升血磷，</text>
+  <text x="730" y="484" font-size="11" fill="#475569">与 PTH 的「保钙排磷」恰成互补——缺乏时新骨基质钙化不全：儿童佝偻病、成人骨软化症。</text>
+  <rect x="889.946525" y="501.075" width="300.10695000000004" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1040" y="513.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">慢性肾衰：1α 羟化酶丢失 → 继发性甲旁亢·活性维 D 替补</text>
+  <rect x="30" y="546" width="660" height="439" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="568.84" font-size="19" fill="#475569" font-weight="700">三、β 细胞葡萄糖传感链：从 GLUT2 到胞吐</text>
+  <rect x="117.43087499999999" y="584.225" width="105.13825000000001" height="19.55" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="170" y="598.14" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">血糖↑（餐后）</text>
+  <line x1="170" y1="605" x2="170" y2="620" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <rect x="60" y="622" width="220" height="46" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="170" y="641" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">GLUT2 摄入葡萄糖</text>
+  <text x="170" y="659" font-size="9.5" fill="#475569" text-anchor="middle">低亲和力·血糖高时才放行</text>
+  <line x1="170" y1="668" x2="170" y2="682" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="684" width="220" height="48" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="170" y="704" font-size="12" fill="#92400e" text-anchor="middle" font-weight="700">葡萄糖激酶（GK）</text>
+  <text x="170" y="722" font-size="9.5" fill="#475569" text-anchor="middle">「分子血糖计」·Km 高</text>
+  <line x1="170" y1="732" x2="170" y2="746" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="748" width="220" height="46" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="170" y="767" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">ATP/ADP 比值↑</text>
+  <text x="170" y="785" font-size="9.5" fill="#475569" text-anchor="middle">代谢传感</text>
+  <line x1="170" y1="794" x2="170" y2="808" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="810" width="220" height="50" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="170" y="831" font-size="12" fill="#831843" text-anchor="middle" font-weight="700">K<tspan dy="2.6" font-size="8.6">ATP</tspan><tspan dy="-2.6"> 通道关闭</tspan></text>
+  <text x="170" y="849" font-size="9.5" fill="#475569" text-anchor="middle">Kir6.2 孔道 + SUR1 亚基</text>
+  <line x1="170" y1="860" x2="170" y2="874" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="876" width="220" height="46" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="170" y="895" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">去极化 → Ca<tspan dy="-4.1" font-size="8.6">2+</tspan><tspan dy="4.1"> 内流</tspan></text>
+  <text x="170" y="913" font-size="9.5" fill="#475569" text-anchor="middle">电压门控钙通道开放</text>
+  <line x1="170" y1="922" x2="170" y2="936" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="60" y="938" width="220" height="46" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="170" y="957" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">胰岛素囊泡胞吐</text>
+  <text x="170" y="975" font-size="9.5" fill="#475569" text-anchor="middle">入血 → 门静脉首过肝</text>
+  <circle cx="44" cy="645" r="8.5" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <text x="44" y="648.5" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">1</text>
+  <circle cx="44" cy="708" r="8.5" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <text x="44" y="711.5" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">2</text>
+  <circle cx="44" cy="771" r="8.5" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <text x="44" y="774.5" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">3</text>
+  <circle cx="44" cy="835" r="8.5" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <text x="44" y="838.5" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">4</text>
+  <circle cx="44" cy="899" r="8.5" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <text x="44" y="902.5" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">5</text>
+  <circle cx="44" cy="961" r="8.5" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <text x="44" y="964.5" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">6</text>
+  <rect x="340" y="588" width="330" height="80" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="356" y="610" font-size="12" fill="#991b1b" font-weight="700">药物锚点：磺脲类（格列本脲）</text>
+  <text x="356" y="630" font-size="10.5" fill="#475569">结合 SUR1 强行关闭 K<tspan dy="2.3" font-size="7.6">ATP</tspan><tspan dy="-2.3">——不问血糖几何而促分泌，</tspan></text>
+  <text x="356" y="648" font-size="10.5" fill="#475569">故有低血糖之险。</text>
+  <line x1="338" y1="645" x2="283" y2="806" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-bad)"/>
+  <rect x="340" y="680" width="330" height="80" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="356" y="702" font-size="12" fill="#92400e" font-weight="700">疾病位点</text>
+  <text x="356" y="722" font-size="10.5" fill="#475569">MODY2：葡萄糖激酶突变（血糖计失准）；新生儿糖尿病：</text>
+  <text x="356" y="740" font-size="10.5" fill="#475569">K<tspan dy="2.3" font-size="7.6">ATP</tspan><tspan dy="-2.3"> 增益突变。</tspan></text>
+  <rect x="340" y="772" width="330" height="88" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="356" y="794" font-size="12" fill="#065f46" font-weight="700">肠促胰素 GLP-1：葡萄糖胜任性</text>
+  <text x="356" y="814" font-size="10.5" fill="#475569">经 cAMP 只在血糖已高时放大分泌——GLP-1 受体激动剂与 DPP-4 抑制剂由此成为降糖主力。</text>
+  <rect x="340" y="872" width="330" height="104" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="356" y="894" font-size="12" fill="#075985" font-weight="700">分泌的时相与神经调制</text>
+  <text x="356" y="914" font-size="10.5" fill="#475569">第一相释放预锚定即用囊泡，第二相持续补给；副交感（头期）</text>
+  <text x="356" y="932" font-size="10.5" fill="#475569">与交感参与调节；</text>
+  <text x="356" y="950" font-size="10.5" fill="#475569">胰岛血汇入门静脉——肝最先浸泡在高浓度胰岛素中，</text>
+  <text x="356" y="968" font-size="10.5" fill="#475569">糖原合成享「内部价」。</text>
+  <rect x="710" y="546" width="660" height="439" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="568.84" font-size="19" fill="#475569" font-weight="700">四、胰岛素–胰高血糖素：血糖天平与两型糖尿病</text>
+  <rect x="730" y="586" width="180" height="56" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="820" y="606" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">胰岛素（β 约 70%）</text>
+  <text x="820" y="624" font-size="9" fill="#475569" text-anchor="middle">降血糖·IRS–PI3K–Akt</text>
+  <rect x="950" y="590" width="160" height="48" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="1030" y="610" font-size="12.5" fill="#92400e" text-anchor="middle" font-weight="700">血糖</text>
+  <text x="1030" y="628" font-size="9.5" fill="#475569" text-anchor="middle">肝读取两激素摩尔比</text>
+  <rect x="1170" y="586" width="180" height="56" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1260" y="606" font-size="11.5" fill="#831843" text-anchor="middle" font-weight="700">胰高血糖素（α 约 20%）</text>
+  <text x="1260" y="624" font-size="9" fill="#475569" text-anchor="middle">升血糖·29 肽·cAMP–PKA</text>
+  <line x1="948" y1="608" x2="914" y2="608" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="931" y="596" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">血糖↑</text>
+  <line x1="1112" y1="608" x2="1146" y2="608" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="1129" y="596" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">血糖↓</text>
+  <line x1="830" y1="642" x2="830" y2="656" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="730" y="658" width="200" height="48" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="830" y="678" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">肝</text>
+  <text x="830" y="696" font-size="9.5" fill="#475569" text-anchor="middle">糖原合成↑·糖异生↓·酮体↓</text>
+  <line x1="830" y1="706" x2="830" y2="720" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="730" y="722" width="200" height="48" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="830" y="742" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">肌肉</text>
+  <text x="830" y="760" font-size="9.5" fill="#475569" text-anchor="middle">GLUT4 转位摄糖·蛋白合成↑</text>
+  <line x1="830" y1="770" x2="830" y2="784" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="730" y="786" width="200" height="48" rx="7" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="830" y="806" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">脂肪</text>
+  <text x="830" y="824" font-size="9.5" fill="#475569" text-anchor="middle">摄糖↑·脂解↓（HSL 失活）</text>
+  <line x1="1270" y1="642" x2="1270" y2="656" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="1170" y="658" width="200" height="60" rx="7" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1270" y="676" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">肝（几乎唯一靶）</text>
+  <text x="1270" y="694" font-size="9.5" fill="#475569" text-anchor="middle">糖原分解↑·糖异生↑</text>
+  <text x="1270" y="712" font-size="9" fill="#64748b" text-anchor="middle">（经 cAMP–PKA）</text>
+  <rect x="1170" y="736" width="200" height="56" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1186" y="758" font-size="9.5" fill="#475569">低血糖与精氨酸刺激；葡萄糖与胰岛素</text>
+  <text x="1186" y="776" font-size="9.5" fill="#475569">（邻分泌）抑制。</text>
+  <rect x="981.547" y="682.65" width="116.90600000000002" height="18.7" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1040" y="695.96" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">肝读取 I/G 摩尔比</text>
+  <text x="1040" y="722" font-size="10" fill="#475569" text-anchor="middle">餐后 &gt;10：入库模式</text>
+  <text x="1040" y="744" font-size="10" fill="#475569" text-anchor="middle">禁食 ≈1：放粮模式</text>
+  <text x="1040" y="768" font-size="9.5" fill="#475569" text-anchor="middle">蛋白餐两激素同升防塌方</text>
+  <text x="1040" y="792" font-size="9.5" fill="#64748b" text-anchor="middle">脑/红细胞 GLUT1/3 不依赖胰岛素</text>
+  <text x="1040" y="816" font-size="9.5" fill="#64748b" text-anchor="middle">δ 生长抑素局部抑制 β 与 α</text>
+  <rect x="730" y="856" width="300" height="100" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="746" y="878" font-size="12" fill="#991b1b" font-weight="700">1 型糖尿病：免疫性 β 损毁</text>
+  <text x="746" y="898" font-size="10" fill="#475569">绝对缺乏 → 胰高血糖素失去压制 → 酮体失控</text>
+  <text x="746" y="916" font-size="10" fill="#475569">（糖尿病酮症酸中毒）；自身抗体可先于发病多年。</text>
+  <rect x="1050" y="856" width="300" height="100" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="1066" y="878" font-size="12" fill="#92400e" font-weight="700">2 型糖尿病：抵抗 → 疲惫</text>
+  <text x="1066" y="898" font-size="10" fill="#475569">胰岛素抵抗起始（肥胖、游离脂肪酸与炎症因子合谋），</text>
+  <text x="1066" y="916" font-size="10" fill="#475569">代偿性高胰岛素血症拖入 β 细胞疲惫——决堤之前先加高堤坝。</text>
+  <text x="730" y="972" font-size="10" fill="#475569">胰岛约 100 万个（占胰腺质量 1–2%）：β 70% 居核心、α 20% 与 δ 5% 环居外周——由核心向外周的血流方向使胰岛素首过「冲洗」α 细胞。</text>
+</svg>

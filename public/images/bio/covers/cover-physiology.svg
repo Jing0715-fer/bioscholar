@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：生理学 · 桃夭（pink） -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#be185d" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#be185d" stroke-opacity="0.6" stroke-width="1.6"/>
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#be185d"/>
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#9d174d">PHYSIOLOGY · CORE CURRICULUM</text>
+  <text x="398" y="224" text-anchor="middle" font-size="72" font-weight="700" letter-spacing="8" fill="#1c1917">生理学</text>
+  <line x1="335" y1="262" x2="465" y2="262" stroke="#be185d" stroke-width="2.5"/>
+  <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">Guyton · Boron 体系 · 12 章 48 节</text>
+
+  <!-- 左：心电图纸与 PQRST 波形 -->
+  <g>
+    <rect x="78" y="338" width="170" height="86" fill="#ffffff" stroke="#e5b8cc" stroke-width="1"/>
+    <g stroke="#f5d4e2" stroke-width="0.7">
+      <line x1="95" y1="338" x2="95" y2="424"/><line x1="112" y1="338" x2="112" y2="424"/><line x1="129" y1="338" x2="129" y2="424"/>
+      <line x1="146" y1="338" x2="146" y2="424"/><line x1="163" y1="338" x2="163" y2="424"/><line x1="180" y1="338" x2="180" y2="424"/>
+      <line x1="197" y1="338" x2="197" y2="424"/><line x1="214" y1="338" x2="214" y2="424"/><line x1="231" y1="338" x2="231" y2="424"/>
+      <line x1="78" y1="355" x2="248" y2="355"/><line x1="78" y1="372" x2="248" y2="372"/><line x1="78" y1="406" x2="248" y2="406"/>
+    </g>
+    <line x1="78" y1="389" x2="248" y2="389" stroke="#be185d" stroke-opacity="0.35" stroke-width="0.9"/>
+    <path d="M84,389 h14 q7,-9 14,0 h10 l4,7 l7,-52 l7,66 l4,-21 h9 q9,-13 18,0 h22 q7,-9 14,0 h10 l4,7 l7,-52 l7,66 l4,-21 h9 q9,-13 18,0 h14" fill="none" stroke="#be185d" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="163" y="446" text-anchor="middle" font-size="11" fill="#9d174d">心电图 · PQRST 波群</text>
+  </g>
+
+  <!-- 中：稳态负反馈环 -->
+  <g>
+    <circle cx="400" cy="378" r="44" fill="none" stroke="#be185d" stroke-opacity="0.55" stroke-width="1.4" stroke-dasharray="3 4"/>
+    <path d="M400,334 a44,44 0 0 1 40.5,27" fill="none" stroke="#be185d" stroke-width="2"/>
+    <path d="M434,347 l7.5,3.5 -1.5,8.5 z" fill="#be185d"/>
+    <path d="M400,422 a44,44 0 0 1 -40.5,-27" fill="none" stroke="#be185d" stroke-width="2"/>
+    <path d="M366,409 l-7.5,-3.5 1.5,-8.5 z" fill="#be185d"/>
+    <circle cx="400" cy="378" r="21" fill="#fdf2f8" stroke="#be185d" stroke-width="1.2"/>
+    <text x="400" y="374" text-anchor="middle" font-size="10.5" fill="#9d174d">内环境</text>
+    <text x="400" y="388" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9d174d">设定点</text>
+    <text x="448" y="352" font-size="10" fill="#57534e">扰动</text>
+    <text x="336" y="418" font-size="10" fill="#57534e">纠正</text>
+    <text x="400" y="446" text-anchor="middle" font-size="11" fill="#9d174d">稳态 · 负反馈环</text>
+  </g>
+
+  <!-- 右：肾单位示意 -->
+  <g>
+    <circle cx="596" cy="356" r="15" fill="none" stroke="#be185d" stroke-width="1.6"/>
+    <path d="M588,350 q5,-5 9,0 q5,6 10,1 M587,360 q6,5 12,-1 q5,-4 9,2" fill="none" stroke="#be185d" stroke-width="1"/>
+    <line x1="578" y1="352" x2="581" y2="352" stroke="#be185d" stroke-width="1.4"/>
+    <path d="M611,354 q16,3 12,16 q-3,10 8,15 l3,14" fill="none" stroke="#be185d" stroke-width="1.8"/>
+    <path d="M634,399 q-4,10 -3,22 l0,0" fill="none" stroke="#be185d" stroke-width="1.8"/>
+    <path d="M631,421 q-1,14 6,18 q10,5 12,-12 l1,-24" fill="none" stroke="#be185d" stroke-width="1.8"/>
+    <rect x="664" y="352" width="13" height="70" rx="6" fill="none" stroke="#be185d" stroke-width="1.8"/>
+    <path d="M650,378 q7,4 14,0" fill="none" stroke="#be185d" stroke-width="1.2" stroke-dasharray="2.5 2.5"/>
+    <path d="M672,422 v10" stroke="#be185d" stroke-width="1.8"/>
+    <path d="M668.5,428 l3.5,7 3.5,-7 z" fill="#be185d"/>
+    <text x="630" y="446" text-anchor="middle" font-size="11" fill="#9d174d">肾单位 · 滤过与重吸收</text>
+  </g>
+</svg>

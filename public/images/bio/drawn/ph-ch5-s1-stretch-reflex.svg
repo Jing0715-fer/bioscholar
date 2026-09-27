@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">脊髓反射与运动单位：牵张反射的完整回路</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">肌梭Ia/II感受长度与变化率、经单突触兴奋同肌α运动神经元；募集按I→IIa→IIx大小原则；膝跳反射潜伏期约20–25ms；腱器官Ib经中间神经元反向保护</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、运动单位与大小原则募集</text>
+  <text x="50" y="176" font-size="10.5" fill="#475569">一个 α 运动神经元 + 其支配的全部肌纤维 = 运动单位；单位大小差异巨大（眼外肌 &lt;10 根纤维 vs 股四头肌上千根）</text>
+  <ellipse cx="120" cy="255" rx="55" ry="52" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <circle cx="120" cy="240" r="13" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="120" y="244" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">α</text>
+  <rect x="148" y="234" width="14" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <rect x="169" y="234" width="14" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <rect x="190" y="234" width="14" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <rect x="211" y="234" width="14" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <rect x="232" y="234" width="14" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <line x1="133" y1="240" x2="148" y2="240" stroke="#6d28d9" stroke-width="2.4"/>
+  <line x1="246" y1="240" x2="260" y2="240" stroke="#6d28d9" stroke-width="2.4"/>
+  <polyline points="260,240 290,216 300,216" fill="none" stroke="#6d28d9" stroke-width="1.8"/>
+  <polyline points="260,240 290,240 300,240" fill="none" stroke="#6d28d9" stroke-width="1.8"/>
+  <polyline points="260,240 290,304 300,304" fill="none" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="120" y="330" font-size="10.5" fill="#475569" text-anchor="middle">脊髓 α 运动神经元</text>
+  <rect x="300" y="210" width="320" height="12" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <rect x="300" y="232" width="320" height="12" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="300" y="254" width="320" height="12" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <rect x="300" y="276" width="320" height="12" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="300" y="298" width="320" height="12" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="460" y="330" font-size="10.5" fill="#475569" text-anchor="middle">同一运动单位的肌纤维散在分布（不连片）</text>
+  <text x="50" y="410" font-size="10.5" fill="#1e293b" font-weight="700">募集顺序（Henneman 大小原则）：按 I → IIa → IIx 依次募集，阈值与胞体大小成正比</text>
+  <line x1="50" y1="542" x2="590" y2="542" stroke="#475569" stroke-width="1.6"/>
+  <rect x="60" y="500" width="150" height="40" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="135" y="524" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="700">I 慢氧化（SO）</text>
+  <rect x="240" y="476" width="150" height="64" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="315" y="512" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">IIa 快氧化酵解</text>
+  <rect x="420" y="452" width="150" height="88" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="495" y="500" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">IIx 快酵解</text>
+  <text x="135" y="484" font-size="10" fill="#475569" text-anchor="middle">阈值低 · 力量小 · 抗疲劳</text>
+  <text x="315" y="462" font-size="10" fill="#475569" text-anchor="middle">中等阈值 · 中等力量</text>
+  <text x="495" y="438" font-size="10" fill="#475569" text-anchor="middle">阈值高 · 力量大 · 易疲劳</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、肌梭结构与牵张反射弧（单突触）</text>
+  <rect x="740" y="190" width="600" height="10" rx="5" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <text x="746" y="184" font-size="10.5" fill="#92400e">梭外肌纤维（α 支配）</text>
+  <rect x="740" y="286" width="600" height="10" rx="5" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <text x="746" y="310" font-size="10.5" fill="#92400e">梭外肌纤维</text>
+  <rect x="900" y="222" width="360" height="56" rx="28" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="910" y1="240" x2="1250" y2="240" stroke="#0f766e" stroke-width="4"/>
+  <ellipse cx="1080" cy="240" rx="26" ry="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="1080" y="244" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="700">核袋</text>
+  <line x1="910" y1="256" x2="1250" y2="256" stroke="#b45309" stroke-width="3"/>
+  <circle cx="1062" cy="256" r="3" fill="#b45309"/>
+  <circle cx="1071" cy="256" r="3" fill="#b45309"/>
+  <circle cx="1080" cy="256" r="3" fill="#b45309"/>
+  <circle cx="1089" cy="256" r="3" fill="#b45309"/>
+  <circle cx="1098" cy="256" r="3" fill="#b45309"/>
+  <text x="1268" y="242" font-size="10" fill="#134e4a">核袋纤维</text>
+  <text x="1268" y="262" font-size="10" fill="#78350f">核链纤维</text>
+  <polyline points="1070,266 1070,332 884,332" fill="none" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="880" y1="332" x2="880" y2="352" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <polyline points="1240,260 1240,346 854,346" fill="none" stroke="#0f766e" stroke-width="2"/>
+  <line x1="850" y1="346" x2="850" y2="354" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <text x="900" y="324" font-size="10.5" fill="#075985" font-weight="700">Ia（初级·动态+静态）</text>
+  <text x="960" y="368" font-size="10.5" fill="#134e4a" font-weight="700">II（次级·静态）</text>
+  <rect x="740" y="356" width="140" height="90" rx="14" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <circle cx="800" cy="380" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="800" y="384" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">α</text>
+  <text x="800" y="410" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">脊髓</text>
+  <line x1="880" y1="400" x2="1000" y2="400" stroke="#6d28d9" stroke-width="2.2"/>
+  <line x1="1000" y1="400" x2="1000" y2="302" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="1010" y="396" font-size="10.5" fill="#4c1d95" font-weight="700">α → 梭外肌收缩（同一肌肉）</text>
+  <line x1="880" y1="420" x2="950" y2="420" stroke="#b45309" stroke-width="2"/>
+  <line x1="950" y1="420" x2="950" y2="266" stroke="#b45309" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-rna)"/>
+  <text x="960" y="432" font-size="10.5" fill="#78350f" font-weight="700">γ → 梭内肌极部收缩（维持敏感性）</text>
+  <text x="726" y="470" font-size="10.5" fill="#475569">牵张反射：肌肉被牵拉 → 肌梭 Ia 放电 ↑ → 单突触兴奋同肌 α 运动神经元 → 收缩对抗牵张——维持姿势与肌张力的基础反射</text>
+  <rect x="30" y="572" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="594.84" font-size="19" fill="#475569" font-weight="700">三、γ 共激活 · 交互抑制 · 腱器官 Ib 反向保护</text>
+  <text x="50" y="618" font-size="11" fill="#1e293b" font-weight="700">① γ 共激活</text>
+  <rect x="119.37" y="623.075" width="61.26" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="150" y="635.78" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">下行命令</text>
+  <rect x="280" y="602" width="130" height="28" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="345" y="620" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">α → 梭外肌缩短</text>
+  <rect x="280" y="634" width="130" height="28" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="345" y="652" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">γ → 梭内肌极收缩</text>
+  <line x1="182" y1="626" x2="278" y2="618" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="182" y1="638" x2="278" y2="646" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="410" y1="616" x2="460" y2="616" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <line x1="410" y1="648" x2="460" y2="648" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <text x="470" y="620" font-size="10.5" fill="#475569">肌肉缩短</text>
+  <text x="470" y="652" font-size="10.5" fill="#475569">肌梭保持敏感 → Ia 持续放电</text>
+  <text x="50" y="726" font-size="11" fill="#1e293b" font-weight="700">② 交互抑制</text>
+  <line x1="100" y1="760" x2="148" y2="760" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="88" y="736" font-size="10" fill="#075985" font-weight="700">主动肌 α</text>
+  <circle cx="160" cy="760" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="172" y1="760" x2="218" y2="760" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <circle cx="230" cy="760" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="230" y="786" font-size="9.5" fill="#831843" text-anchor="middle">抑制性中间神经元</text>
+  <line x1="239" y1="760" x2="288" y2="760" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <circle cx="300" cy="760" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="312" y="764" font-size="10.5" fill="#475569" font-weight="700">拮抗肌 α 被抑制 → 舒张</text>
+  <text x="50" y="800" font-size="10" fill="#64748b">中间神经元递质为甘氨酸；破伤风毒素阻断其释放 → 全身肌肉强直痉挛</text>
+  <text x="50" y="826" font-size="11" fill="#1e293b" font-weight="700">③ 腱器官（Ib）反向保护</text>
+  <rect x="60" y="848" width="160" height="20" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="140" y="862" font-size="10" fill="#92400e" text-anchor="middle">肌</text>
+  <rect x="224" y="850" width="150" height="16" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="300" y="863" font-size="10" fill="#475569" text-anchor="middle">腱</text>
+  <line x1="218" y1="848" x2="224" y2="868" stroke="#dc2626" stroke-width="1.2"/>
+  <line x1="223" y1="848" x2="229" y2="868" stroke="#dc2626" stroke-width="1.2"/>
+  <line x1="228" y1="848" x2="234" y2="868" stroke="#dc2626" stroke-width="1.2"/>
+  <line x1="233" y1="848" x2="239" y2="868" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="230" y="842" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">腱器官（Golgi）</text>
+  <rect x="94.858225" y="881.075" width="50.28355" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="120" y="893.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">张力 ↑</text>
+  <line x1="156" y1="890" x2="190" y2="890" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <rect x="203.29005" y="881.075" width="53.4199" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="230" y="893.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">Ib 传入</text>
+  <line x1="272" y1="890" x2="296" y2="890" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <rect x="318.74" y="881.075" width="102.52" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="370" y="893.78" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="700">抑制性中间神经元</text>
+  <line x1="452" y1="890" x2="476" y2="890" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <rect x="505.225125" y="881.075" width="109.54975" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="560" y="893.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">同肌 α 抑制 → 舒张</text>
+  <text x="50" y="930" font-size="10.5" fill="#475569">腱器官串联于肌腱、感受主动收缩张力：张力过高时反向抑制 α 运动神经元，防止肌腱撕脱——与肌梭（并联、感受长度）互补</text>
+  <rect x="710" y="572" width="660" height="412" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="594.84" font-size="19" fill="#475569" font-weight="700">四、膝跳反射：完整的单突触弧</text>
+  <polygon points="752,646 948,700 940,726 744,672" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <rect x="800" y="692" width="60" height="10" rx="5" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="806" y="680" font-size="10" fill="#134e4a" font-weight="700">肌梭</text>
+  <circle cx="944" cy="715" r="10" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <polygon points="944,706 1020,862 998,874 926,716" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <line x1="980" y1="660" x2="948" y2="712" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arr-bad)"/>
+  <text x="988" y="656" font-size="10.5" fill="#991b1b" font-weight="700">叩击髌腱</text>
+  <text x="760" y="770" font-size="10.5" fill="#92400e">股四头肌（伸膝）</text>
+  <text x="960" y="918" font-size="10.5" fill="#475569" text-anchor="middle">小腿（伸直）</text>
+  <text x="1070" y="640" font-size="10.5" fill="#475569">① 叩击髌腱，股四头肌被突然牵拉；</text>
+  <text x="1070" y="660" font-size="10.5" fill="#475569">② 肌梭 Ia 经股神经传入脊髓 L<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">–L</tspan><tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-2.3">；</tspan></text>
+  <text x="1070" y="680" font-size="10.5" fill="#475569">③ 单突触兴奋 α 运动神经元；④ 同肌收缩伸膝；</text>
+  <text x="1070" y="700" font-size="10.5" fill="#475569">⑤ 拮抗腘绳肌经交互抑制同步舒张</text>
+  <text x="1070" y="762" font-size="10.5" fill="#475569">反射潜伏期约 20–25 ms</text>
+  <text x="1070" y="780" font-size="10.5" fill="#475569">（含传入传出传导 + 突触 + 肌电-机械延迟）</text>
+  <text x="1070" y="806" font-size="10.5" fill="#475569">γ 环路使肌梭在肌肉缩短中仍保有放电——反射增益由下行系统连续调节</text>
+  <text x="1070" y="850" font-size="10.5" fill="#475569">腱反射均为单突触牵张反射（肱二头肌腱、桡骨膜、</text>
+  <text x="1070" y="868" font-size="10.5" fill="#475569">跟腱等）；亢进提示上运动神经元损害，</text>
+  <text x="1070" y="886" font-size="10.5" fill="#475569">消失提示下运动神经元或传入通路损害</text>
+</svg>

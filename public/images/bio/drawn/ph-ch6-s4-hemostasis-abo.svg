@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">止血、凝血与血型：三幕止血剧与免疫学格局</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">止血三步：血管收缩（即刻）→血小板vWF-GPIb粘附、GPIIb/IIIa聚集成白色栓（数分钟）→凝血瀑布交联纤维蛋白加固红色栓；内源XII→XI→IX→VIII由aPTT、外源</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">TF-VII由PT监测，纤溶t-PA再通；ABO天然IgM即刻溶血、Rh-D溶血重发于二胎、抗D于孕28周与产后72h预防</text>
+  <rect x="30" y="132" width="420" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、止血三步：从血管痉挛到红色血栓</text>
+  <text x="151" y="178" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">① 血管收缩</text>
+  <rect x="56" y="182" width="190" height="46" rx="23" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <rect x="68" y="192" width="166" height="26" rx="13" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <line x1="92" y1="205" x2="117" y2="205" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <line x1="210" y1="205" x2="185" y2="205" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <text x="272" y="196" font-size="10" fill="#92400e" font-weight="700">即刻–数秒</text>
+  <text x="272" y="214" font-size="9.5" fill="#475569">神经轴突反射＋内皮素-1/TXA<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 使伤段痉挛，</tspan></text>
+  <text x="272" y="228" font-size="9.5" fill="#475569">血流骤减</text>
+  <line x1="159" y1="234" x2="159" y2="254" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="159" y="268" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">② 一期止血：白色血栓</text>
+  <rect x="56" y="282" width="66" height="36" rx="18" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <rect x="196" y="282" width="66" height="36" rx="18" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <circle cx="134" cy="295" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="151" cy="291" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="168" cy="295" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="185" cy="299" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="134" cy="307" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="151" cy="303" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="168" cy="307" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="185" cy="303" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <rect x="126" y="320" width="66" height="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1"/>
+  <line x1="136" y1="320" x2="148" y2="328" stroke="#0f766e" stroke-width="0.9"/>
+  <line x1="156" y1="320" x2="168" y2="328" stroke="#0f766e" stroke-width="0.9"/>
+  <line x1="176" y1="320" x2="188" y2="328" stroke="#0f766e" stroke-width="0.9"/>
+  <text x="272" y="288" font-size="10" fill="#831843" font-weight="700">数分钟</text>
+  <text x="272" y="306" font-size="9.5" fill="#475569">vWF 桥接胶原–GPIb 粘附；</text>
+  <text x="272" y="320" font-size="9.5" fill="#475569">ADP/TXA<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 正反馈扩军；</tspan></text>
+  <text x="272" y="334" font-size="9.5" fill="#475569">GPIIb/IIIa–纤维蛋白原聚集</text>
+  <line x1="159" y1="334" x2="159" y2="356" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="159" y="372" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">③ 二期止血：红色血栓</text>
+  <rect x="56" y="384" width="66" height="36" rx="18" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <rect x="196" y="384" width="66" height="36" rx="18" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <circle cx="134" cy="397" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="151" cy="393" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="168" cy="397" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="185" cy="401" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="134" cy="409" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="151" cy="405" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="168" cy="409" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <circle cx="185" cy="405" r="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.4"/>
+  <line x1="124" y1="390" x2="194" y2="416" stroke="#dc2626" stroke-width="1.1" opacity="0.8"/>
+  <line x1="124" y1="416" x2="194" y2="390" stroke="#dc2626" stroke-width="1.1" opacity="0.8"/>
+  <line x1="124" y1="403" x2="194" y2="403" stroke="#dc2626" stroke-width="1.1" opacity="0.8"/>
+  <line x1="146" y1="386" x2="146" y2="418" stroke="#dc2626" stroke-width="1.1" opacity="0.8"/>
+  <line x1="172" y1="386" x2="172" y2="418" stroke="#dc2626" stroke-width="1.1" opacity="0.8"/>
+  <text x="272" y="388" font-size="10" fill="#991b1b" font-weight="700">数十分钟</text>
+  <text x="272" y="406" font-size="9.5" fill="#475569">凝血瀑布在血小板磷脂表面生成纤维蛋白，</text>
+  <text x="272" y="420" font-size="9.5" fill="#475569">XIIIa 交联成网加固白色栓</text>
+  <text x="46" y="452" font-size="9.5" fill="#475569">一期止血缺陷→皮肤黏膜出血（瘀点、瘀斑、鼻衄）；凝血因子缺陷→深部血肿（关节、</text>
+  <text x="46" y="467" font-size="9.5" fill="#475569">肌肉）——出血分布是床旁鉴别的第一条线索。</text>
+  <text x="46" y="494" font-size="9.5" fill="#475569">三幕严丝合缝：过弱则出血不止、</text>
+  <text x="46" y="509" font-size="9.5" fill="#475569">过强则血栓成疾——止血的本质是出血与血栓风险的精准平衡（纤溶再通见右图）。</text>
+  <rect x="470" y="132" width="900" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="486" y="154.84" font-size="19" fill="#475569" font-weight="700">二、凝血级联瀑布：两路入水、共同通路</text>
+  <text x="580" y="190" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">内源性途径（接触激活）</text>
+  <line x1="522" y1="197" x2="638" y2="197" stroke="#0369a1" stroke-width="2"/>
+  <rect x="552.5052000000001" y="211.8" width="54.989599999999996" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="580" y="226.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">XII</text>
+  <line x1="580" y1="233" x2="580" y2="254" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="556.3368" y="255.8" width="47.3264" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="580" y="270.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">XI</text>
+  <line x1="580" y1="277" x2="580" y2="298" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="556.3368" y="299.8" width="47.3264" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="580" y="314.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">IX</text>
+  <line x1="580" y1="321" x2="580" y2="338" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="548.6736" y="339.8" width="62.6528" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="580" y="354.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="600">VIII</text>
+  <text x="580" y="386" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">aPTT 监测（内源）</text>
+  <text x="580" y="406" font-size="9.5" fill="#475569" text-anchor="middle">血友病 A/B 断链于此</text>
+  <text x="745" y="190" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">外源性途径</text>
+  <line x1="716" y1="197" x2="774" y2="197" stroke="#b45309" stroke-width="2"/>
+  <rect x="704.6508" y="229.8" width="80.69839999999999" height="20.4" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="745" y="244.32" font-size="12" fill="#78350f" text-anchor="middle" font-weight="600">TF·VIIa</text>
+  <text x="745" y="272" font-size="9.5" fill="#475569" text-anchor="middle">组织损伤释出 TF</text>
+  <text x="745" y="292" font-size="9" fill="#64748b" text-anchor="middle">（体内生理启动者）</text>
+  <text x="745" y="386" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">PT/INR 监测（外源）</text>
+  <text x="745" y="406" font-size="9.5" fill="#475569" text-anchor="middle">华法林·肝病延长</text>
+  <path d="M 782,246 C 850,262 900,300 918,323" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <path d="M 613,352 C 700,375 810,372 912,344" fill="none" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="760" y="352" font-size="9" fill="#075985" text-anchor="middle">＋磷脂·Ca<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1">＝X 酶复合物</tspan></text>
+  <text x="935" y="306" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">共同通路</text>
+  <line x1="905" y1="314" x2="965" y2="314" stroke="#dc2626" stroke-width="2"/>
+  <rect x="915.1684" y="334.8" width="39.6632" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="935" y="349.32" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="600">X</text>
+  <line x1="935" y1="357" x2="935" y2="388" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="866" y="378" font-size="8.5" fill="#64748b">Xa·Va</text>
+  <rect x="887.6056" y="389.8" width="94.7888" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="935" y="404.32" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="600">IIa 凝血酶</text>
+  <line x1="935" y1="412" x2="935" y2="440" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="866" y="430" font-size="8.5" fill="#64748b">切去 A/B 肽</text>
+  <rect x="888.1" y="441.8" width="93.80000000000001" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="935" y="456.32" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="600">纤维蛋白原</text>
+  <line x1="935" y1="464" x2="935" y2="488" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <text x="866" y="480" font-size="8.5" fill="#64748b">XIIIa 交联</text>
+  <rect x="875.74" y="489.8" width="118.52" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="935" y="504.32" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="600">交联纤维蛋白网</text>
+  <text x="935" y="540" font-size="9.5" fill="#92400e" text-anchor="middle" font-weight="700">共同通路损：PT 与 aPTT 皆延长</text>
+  <text x="580" y="430" font-size="9" fill="#64748b" text-anchor="middle">维生素 K 依赖因子：II·VII·IX·X</text>
+  <text x="505" y="452" font-size="9.5" fill="#475569">凝血酶本身是放大器：反馈激活 V·VIII·XI，</text>
+  <text x="505" y="467" font-size="9.5" fill="#475569">并经血小板 PAR 受体召集血小板。</text>
+  <text x="505" y="496" font-size="9.5" fill="#475569">细胞模型（Hoffman &amp; Monroe）：TF 承载细胞上小量凝血酶点火，</text>
+  <text x="505" y="511" font-size="9.5" fill="#475569">转移到血小板磷脂面轰然放大——「内源/外源」只是体外分析的便利。</text>
+  <text x="1052" y="196" font-size="12.5" fill="#831843" font-weight="700">抗凝三道防线</text>
+  <rect x="1061.1" y="215.5" width="93.80000000000001" height="17" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1108" y="227.6" font-size="10" fill="#831843" text-anchor="middle">抗凝血酶 III</text>
+  <text x="1166" y="228" font-size="9.5" fill="#475569">灭活 IIa·IXa·Xa；肝素增效千倍</text>
+  <rect x="1072.6" y="245.5" width="70.80000000000001" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1108" y="257.6" font-size="10" fill="#4c1d95" text-anchor="middle">蛋白 C/S</text>
+  <text x="1155" y="258" font-size="9.5" fill="#475569">APC 灭活 Va·VIIIa（血栓调节蛋白改行）</text>
+  <rect x="1079.6" y="275.5" width="56.8" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1108" y="287.6" font-size="10" fill="#075985" text-anchor="middle">TFPI</text>
+  <text x="1149" y="288" font-size="9.5" fill="#475569">封闭 TF-VIIa-Xa（掐灭外源点火）</text>
+  <line x1="1052" y1="306" x2="1348" y2="306" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1052" y="330" font-size="12.5" fill="#065f46" font-weight="700">纤溶：凝块的拆迁</text>
+  <rect x="1060.6" y="351.5" width="94.8" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1108" y="363.6" font-size="10" fill="#065f46" text-anchor="middle">t-PA（内皮）</text>
+  <text x="1170" y="378" font-size="9" fill="#831843">PAI-1 随时刹车</text>
+  <line x1="1168" y1="374" x2="1158" y2="366" stroke="#be185d" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arr-enz)"/>
+  <line x1="1108" y1="372" x2="1108" y2="392" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="1072" y="397.5" width="72" height="17" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="1108" y="409.6" font-size="10" fill="#475569" text-anchor="middle">纤溶酶原</text>
+  <text x="1160" y="410" font-size="9" fill="#64748b">选择性结合于纤维蛋白</text>
+  <line x1="1108" y1="418" x2="1108" y2="438" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="1077" y="443.5" width="62" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1108" y="455.6" font-size="10" fill="#065f46" text-anchor="middle">纤溶酶</text>
+  <line x1="1141" y1="452" x2="1215" y2="452" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="1221.3" y="443.5" width="73.4" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1258" y="455.6" font-size="10" fill="#92400e" text-anchor="middle">D-二聚体</text>
+  <text x="1052" y="492" font-size="9.5" fill="#92400e">D-二聚体＝血栓形成与活跃降解的印记（DVT·DIC）</text>
+  <text x="1052" y="520" font-size="9.5" fill="#475569">溶栓药（t-PA·尿激酶）＝借用拆迁队急救，时间窗为天花板</text>
+  <text x="1052" y="544" font-size="9" fill="#64748b">肝素抗凝以 aPTT 监测，过量以鱼精蛋白拮抗</text>
+  <rect x="30" y="580" width="1340" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="602.84" font-size="19" fill="#475569" font-weight="700">三、ABO 血型与 Rh 血型：抗原-抗体互补与输血</text>
+  <rect x="46" y="630" width="64" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="78" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">表型</text>
+  <rect x="110" y="630" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="169" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">红细胞抗原</text>
+  <rect x="228" y="630" width="138" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="297" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">血浆天然抗体</text>
+  <rect x="366" y="630" width="138" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">红细胞可输给</text>
+  <rect x="504" y="630" width="142" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="657.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">可接受红细胞</text>
+  <rect x="46" y="674" width="64" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="78" y="697.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">A</text>
+  <rect x="110" y="674" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="169" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">A</text>
+  <rect x="228" y="674" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="297" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">抗 B</text>
+  <rect x="366" y="674" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">A、AB</text>
+  <rect x="504" y="674" width="142" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="697.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">A、O</text>
+  <rect x="46" y="710" width="600" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="710" width="64" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="78" y="733.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">B</text>
+  <rect x="110" y="710" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="169" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">B</text>
+  <rect x="228" y="710" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="297" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">抗 A</text>
+  <rect x="366" y="710" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">B、AB</text>
+  <rect x="504" y="710" width="142" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="733.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">B、O</text>
+  <rect x="46" y="746" width="64" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="78" y="769.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">AB</text>
+  <rect x="110" y="746" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="169" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">A、B</text>
+  <rect x="228" y="746" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="297" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">无</text>
+  <rect x="366" y="746" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">AB</text>
+  <rect x="504" y="746" width="142" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="769.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">A、B、AB、O</text>
+  <rect x="46" y="782" width="600" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="782" width="64" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="78" y="805.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">O</text>
+  <rect x="110" y="782" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="169" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">H（无 A/B）</text>
+  <rect x="228" y="782" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="297" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">抗 A 与抗 B</text>
+  <rect x="366" y="782" width="138" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="435" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">A、B、AB、O</text>
+  <rect x="504" y="782" width="142" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="575" y="805.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">O</text>
+  <text x="46" y="846" font-size="9.5" fill="#475569">ABO 基因位于第 9 号染色体，A/B 共显性、O 隐性；O 型「万能供体」仅指红细胞——其全血与血浆含抗 A/抗 B 并不万能，</text>
+  <text x="46" y="861" font-size="9.5" fill="#475569">现代成分输血恪守同型。</text>
+  <text x="46" y="872" font-size="9.5" fill="#475569">孟买型（hh）：H 抗原亦缺——红细胞不被任何抗血清凝集，血清却含抗 H，连 O 型也不能接受；极端个例反证糖链底物的层级逻辑。</text>
+  <text x="46" y="920" font-size="9.5" fill="#475569">血型鉴定：正定型查红细胞抗原、反定型查血清抗体，互为印证；Landsteiner 1901 年交叉凝集实验开山。</text>
+  <text x="680" y="624" font-size="13" fill="#991b1b" font-weight="700">Rh 血型与新生儿溶血病</text>
+  <text x="680" y="650" font-size="10" fill="#475569">ABO 不合：常见而轻（天然 IgM·首胎即可）｜Rh：少见而重（IgG·二胎起）</text>
+  <rect x="730.628" y="673.5" width="148.744" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="805" y="685.6" font-size="10" fill="#991b1b" text-anchor="middle">① 首胎分娩：Rh<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 胎血入母</tspan></text>
+  <text x="900" y="686" font-size="9.5" fill="#475569">初次免疫慢而弱——首胎常安然无恙</text>
+  <line x1="805" y1="694" x2="805" y2="712" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="748.5" y="717.5" width="113" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="805" y="729.6" font-size="10" fill="#991b1b" text-anchor="middle">② 记忆 B 细胞建档</text>
+  <text x="900" y="730" font-size="9.5" fill="#475569">再次妊娠仍为 Rh<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 胎儿时引爆</tspan></text>
+  <line x1="805" y1="738" x2="805" y2="756" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="738.1" y="761.5" width="133.8" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="805" y="773.6" font-size="10" fill="#991b1b" text-anchor="middle">③ IgG 抗 D 经胎盘入胎</text>
+  <text x="900" y="774" font-size="9.5" fill="#475569">二次应答快而猛——经胎盘攻击胎儿红细胞</text>
+  <line x1="805" y1="782" x2="805" y2="800" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="753.09" y="805.075" width="103.82" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="805" y="817.78" font-size="10.5" fill="#991b1b" text-anchor="middle">④ 新生儿溶血病</text>
+  <text x="900" y="818" font-size="9.5" fill="#475569">胎儿贫血、黄疸，重者核黄疸或胎死宫内</text>
+  <rect x="680" y="844" width="674" height="72" rx="8" fill="#d1fae5" fill-opacity="0.4" stroke="#059669" stroke-width="1.5"/>
+  <text x="696" y="868" font-size="10" fill="#065f46" font-weight="700">预防（被动免疫的教科书示范）：孕 28 周前后＋产后 72 h 内注射抗 D 免疫球蛋白——</text>
+  <text x="696" y="894" font-size="9.5" fill="#475569">被动 IgG 抢先清除闯入母体的胎儿红细胞，并经抗体反馈压低母体自身应答。</text>
+  <text x="680" y="948" font-size="11" fill="#075985" font-weight="700">交叉配型：</text>
+  <text x="745" y="948" font-size="10" fill="#475569">主侧＝受者血清＋供者红细胞（必须无凝集·一票否决）；次侧＝供者血清＋受者红细胞</text>
+  <text x="680" y="972" font-size="11" fill="#92400e" font-weight="700">其他风险：</text>
+  <text x="745" y="972" font-size="10" fill="#475569">发热（抗白细胞抗体）·过敏·输血相关急性肺损伤——输血从来不是无风险的液体置换。</text>
+</svg>

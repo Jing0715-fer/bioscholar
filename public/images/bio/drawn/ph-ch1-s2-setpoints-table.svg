@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">内环境与稳态：设定点与容许带</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">内环境＝细胞外液：血浆约5%＋组织液约15%（体重）；核心体温37±0.5℃、pH7.35–7.45、血糖3.9–6.1mmol/L等参数被约束在设定点附近的容许带内</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、体液分区：内环境＝细胞外液</text>
+  <rect x="50" y="178" width="600" height="300" rx="12" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <text x="66" y="200" font-size="11.5" fill="#64748b">外环境（空气、水、温度、营养…）</text>
+  <rect x="90" y="222" width="520" height="238" rx="12" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="246" font-size="12.5" fill="#1e293b" font-weight="700">机体（体液 ≈ 体重 60%）</text>
+  <rect x="115" y="290" width="140" height="120" rx="9" fill="#fef3c7" fill-opacity="0.65" stroke="#d97706" stroke-width="1.8"/>
+  <text x="185" y="332" font-size="13.5" fill="#92400e" text-anchor="middle" font-weight="700">血浆</text>
+  <text x="185" y="354" font-size="11" fill="#475569" text-anchor="middle">≈5% 体重</text>
+  <circle cx="360" cy="360" r="36" fill="#ede9fe" fill-opacity="0.75" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="460" cy="360" r="36" fill="#ede9fe" fill-opacity="0.75" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="560" cy="360" r="36" fill="#ede9fe" fill-opacity="0.75" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="460" y="352" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">细胞内液</text>
+  <text x="460" y="372" font-size="10.5" fill="#475569" text-anchor="middle">≈40% 体重</text>
+  <text x="360" y="280" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">组织液 ≈15% 体重</text>
+  <line x1="258" y1="340" x2="316" y2="340" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="316" y1="360" x2="258" y2="360" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <text x="290" y="318" font-size="10" fill="#475569" text-anchor="middle">毛细血管壁交换</text>
+  <text x="50" y="506" font-size="11.5" fill="#475569">内环境＝细胞外液＝血浆（≈5%）＋组织液（≈15%），约占体液 1/3；细胞内液占 2/3——细胞直接浸浴于内环境，</text>
+  <text x="50" y="523" font-size="11.5" fill="#475569">其理化性质被各器官系统协同恒定。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、核心参数的设定点与容许带（成人静息）</text>
+  <rect x="730" y="200" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="880" y="200" width="130" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">设定点</text>
+  <rect x="1010" y="200" width="190" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">正常容许带</text>
+  <rect x="1200" y="200" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="227.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">主要调节系统</text>
+  <rect x="730" y="244" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="271.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">核心体温</text>
+  <rect x="880" y="244" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="271.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">37 ℃</text>
+  <rect x="1010" y="244" width="190" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="271.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">36.5–37.5 ℃</text>
+  <rect x="1200" y="244" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="271.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">体温调节（下丘脑）</text>
+  <rect x="730" y="288" width="620" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="288" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="315.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">动脉血 pH</text>
+  <rect x="880" y="288" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="315.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">7.40</text>
+  <rect x="1010" y="288" width="190" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="315.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">7.35–7.45</text>
+  <rect x="1200" y="288" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="315.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">缓冲系/呼吸/肾</text>
+  <rect x="730" y="332" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="359.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">空腹血糖</text>
+  <rect x="880" y="332" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="359.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">5.0 mmol/L</text>
+  <rect x="1010" y="332" width="190" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="359.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">3.9–6.1 mmol/L</text>
+  <rect x="1200" y="332" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="359.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">胰岛素/胰高血糖素</text>
+  <rect x="730" y="376" width="620" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="376" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="403.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">血浆 Ca<tspan dy="-4.1" font-size="8.6">2+</tspan></text>
+  <rect x="880" y="376" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="403.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">2.4 mmol/L</text>
+  <rect x="1010" y="376" width="190" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="403.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">2.25–2.75 mmol/L</text>
+  <rect x="1200" y="376" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="403.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">PTH/降钙素/VitD</text>
+  <rect x="730" y="420" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="805" y="447.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">血 Na<tspan dy="-4.1" font-size="8.6">+</tspan></text>
+  <rect x="880" y="420" width="130" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="945" y="447.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">140 mmol/L</text>
+  <rect x="1010" y="420" width="190" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1105" y="447.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">135–145 mmol/L</text>
+  <rect x="1200" y="420" width="150" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1275" y="447.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">肾·醛固酮·ADH</text>
+  <text x="730" y="490" font-size="12" fill="#475569">偏离容许带即触发多系统联动调节；稳态是耗能的主动动态过程而非静止，设定点本身也可被生理性重调（发热、</text>
+  <text x="730" y="508" font-size="12" fill="#475569">运动、妊娠）。</text>
+  <rect x="30" y="578" width="1340" height="407" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="600.84" font-size="19" fill="#475569" font-weight="700">三、稳态：围绕设定点的动态波动（体温示例）</text>
+  <rect x="120" y="735" width="760" height="50" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.2"/>
+  <line x1="120" y1="760" x2="880" y2="760" stroke="#64748b" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <text x="300" y="731" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">容许带 36.5–37.5 ℃</text>
+  <text x="872" y="756" font-size="11" fill="#475569" text-anchor="end" font-weight="700">设定点 37 ℃</text>
+  <line x1="120" y1="880" x2="880" y2="880" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="500" y="905" font-size="13" fill="#475569" text-anchor="middle" font-weight="600">时间</text>
+  <text x="114" y="739" font-size="11" fill="#64748b" text-anchor="end">37.5</text>
+  <text x="114" y="764" font-size="11" fill="#64748b" text-anchor="end">37.0</text>
+  <text x="114" y="789" font-size="11" fill="#64748b" text-anchor="end">36.5</text>
+  <text x="114" y="645" font-size="12" fill="#475569" text-anchor="end" font-weight="600">核心体温 ℃</text>
+  <path d="M120,758 C126.7,756.3 146.7,747.3 160,748 C173.3,748.7 186.7,758.3 200,762 C213.3,765.7 226.7,771.7 240,770 C253.3,768.3 266.7,756.3 280,752 C293.3,747.7 306.7,741.7 320,744 C333.3,746.3 346.7,763.7 360,766 C373.3,768.3 386.7,757.7 400,758 C413.3,758.3 426.7,769.0 440,768 C453.3,767.0 466.7,756.3 480,752 C493.3,747.7 509.2,747.0 520,742 C530.8,737.0 536.7,726.7 545,722 C553.3,717.3 561.7,713.3 570,714 C578.3,714.7 586.7,721.3 595,726 C603.3,730.7 610.8,737.7 620,742 C629.2,746.3 640.0,747.7 650,752 C660.0,756.3 670.0,766.3 680,768 C690.0,769.7 700.0,765.0 710,762 C720.0,759.0 730.0,750.7 740,750 C750.0,749.3 760.0,754.7 770,758 C780.0,761.3 790.0,769.7 800,770 C810.0,770.3 820.0,763.0 830,760 C840.0,757.0 851.7,752.7 860,752 C868.3,751.3 876.7,755.3 880,756" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <line x1="545" y1="672" x2="545" y2="708" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="545" y="660" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="700">扰动（运动/高温）</text>
+  <line x1="640" y1="672" x2="640" y2="730" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <text x="640" y="660" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">负反馈纠正</text>
+  <rect x="934.21" y="654.375" width="211.58" height="21.25" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1040" y="669.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">贝尔纳（Claude Bernard）·1865</text>
+  <text x="925" y="700" font-size="12" fill="#475569">「内环境恒定是自由、独立生活的条件。」——体液是细胞直接生活的环境，</text>
+  <text x="925" y="718" font-size="12" fill="#475569">其理化性质的恒定由各器官系统协同维持。</text>
+  <rect x="943.995" y="759.375" width="192.01" height="21.25" rx="7" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1040" y="774.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">坎农（Walter Cannon）·1926</text>
+  <text x="925" y="805" font-size="12" fill="#475569">创「稳态」（homeostasis）一词：稳态不是静止，</text>
+  <text x="925" y="823" font-size="12" fill="#475569">而是围绕设定点的动态平衡——机体不断耗能以对抗熵增。</text>
+  <text x="925" y="870" font-size="11.5" fill="#475569">稳态机制衰竭＝疾病；不可逆衰竭＝死亡。</text>
+  <text x="925" y="887" font-size="11.5" fill="#475569">现代重症医学本质上是「器官系统支援下的稳态维持」。</text>
+</svg>

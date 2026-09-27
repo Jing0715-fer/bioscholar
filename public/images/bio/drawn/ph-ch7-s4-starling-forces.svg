@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">微循环、Starling 液体交换与淋巴回流</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">有效滤过压＝(Pc＋π<tspan dy="3.7" font-size="12.2">i</tspan><tspan dy="-3.7">)−(P</tspan><tspan dy="3.7" font-size="12.2">i</tspan><tspan dy="-3.7">＋π</tspan><tspan dy="3.7" font-size="12.2">p</tspan><tspan dy="-3.7">)：动脉端Pc30＞π</tspan><tspan dy="3.7" font-size="12.2">p</tspan><tspan dy="-3.7">25净滤过、静脉端Pc12净重吸收；日滤出约20L、淋巴回收2–4L；水肿四大机制；肌肉泵＋静脉瓣＝「外周心脏」</tspan></text>
+  <rect x="30" y="132" width="660" height="440" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、微循环单元：主干加分叉，三条通路</text>
+  <rect x="200" y="175" width="260" height="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="460" y1="183" x2="505" y2="183" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="240" y="168" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">微静脉</text>
+  <rect x="60" y="240" width="130" height="20" rx="10" fill="#ffe4e6" stroke="#be123c" stroke-width="2"/>
+  <circle cx="85" cy="240" r="5" fill="#be123c"/>
+  <circle cx="115" cy="240" r="5" fill="#be123c"/>
+  <circle cx="145" cy="240" r="5" fill="#be123c"/>
+  <circle cx="175" cy="240" r="5" fill="#be123c"/>
+  <text x="125" y="232" font-size="10.5" fill="#be123c" text-anchor="middle" font-weight="700">微动脉</text>
+  <rect x="190" y="244" width="240" height="12" rx="6" fill="#ffe4e6" stroke="#be123c" stroke-width="1.6"/>
+  <text x="310" y="236" font-size="10" fill="#be123c" text-anchor="middle" font-weight="700">后微动脉（直捷通路）</text>
+  <rect x="221.5" y="191" width="7" height="53" fill="#fff1f2" stroke="#0f766e" stroke-width="1.6"/>
+  <ellipse cx="225" cy="238" rx="8" ry="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="291.5" y="191" width="7" height="53" fill="#fff1f2" stroke="#0f766e" stroke-width="1.6"/>
+  <ellipse cx="295" cy="238" rx="8" ry="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="361.5" y="191" width="7" height="53" fill="#fff1f2" stroke="#0f766e" stroke-width="1.6"/>
+  <ellipse cx="365" cy="238" rx="8" ry="5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <path d="M 225,153 Q 225,162 234,162 M 363,162 Q 372,162 372,153" fill="none" stroke="#134e4a" stroke-width="1.7"/>
+  <line x1="234" y1="162" x2="363" y2="162" stroke="#134e4a" stroke-width="1.7"/>
+  <text x="298.5" y="138" font-size="14" fill="#134e4a" text-anchor="middle" font-weight="600">真毛细血管网（迂回通路）</text>
+  <text x="388" y="214" font-size="9.5" fill="#134e4a">交换：扩散·滤过·吞饮</text>
+  <path d="M 70,262 Q 55,302 105,306 L 425,306 Q 475,306 462,186" fill="none" opacity="0.75" stroke="#d97706" stroke-width="5"/>
+  <text x="265" y="328" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">动-静脉短路（皮肤，交感缩血管纤维控制）</text>
+  <rect x="60" y="350" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="377.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">通路</text>
+  <rect x="200" y="350" width="210" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="305" y="377.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">开关者</text>
+  <rect x="410" y="350" width="250" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="535" y="377.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要功能</text>
+  <rect x="60" y="394" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="412.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">迂回通路</text>
+  <rect x="200" y="394" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="305" y="412.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">毛细前括约肌轮流开闭</text>
+  <rect x="410" y="394" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="535" y="412.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">营养物质与代谢产物交换</text>
+  <rect x="60" y="420" width="600" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="420" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="438.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">直捷通路</text>
+  <rect x="200" y="420" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="305" y="438.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">后微动脉平滑肌</text>
+  <rect x="410" y="420" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="535" y="438.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">快速过境、少量交换</text>
+  <rect x="60" y="446" width="140" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="130" y="464.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">动-静脉短路</text>
+  <rect x="200" y="446" width="210" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="305" y="464.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">交感缩血管纤维</text>
+  <rect x="410" y="446" width="250" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="535" y="464.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">皮肤散热或保温的血流调门</text>
+  <text x="50" y="492" font-size="10" fill="#475569">毛细前括约肌听命于局部代谢产物：腺苷、CO<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">、H</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">、K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">、乳酸与组织液渗透压升高使其松弛开放，</tspan></text>
+  <text x="50" y="507" font-size="10" fill="#475569">代谢产物被冲走后凭基础张力关闭——「按需灌注」，安静时仅约 1/4 毛细血管开放；灌注压过低时血管内压不足以平衡平滑肌张力，</text>
+  <text x="50" y="522" font-size="10" fill="#475569">出现临界闭合（Burton 1951）。</text>
+  <rect x="710" y="132" width="660" height="440" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Starling 力：滤过与重吸收的天平（1896）</text>
+  <rect x="740" y="300" width="540" height="18" rx="9" fill="#fff1f2" stroke="#be123c" stroke-width="2"/>
+  <line x1="800" y1="296" x2="800" y2="258" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="840" y1="296" x2="840" y2="268" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1180" y1="258" x2="1180" y2="296" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <line x1="1220" y1="268" x2="1220" y2="296" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="800" y="240" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">动脉端滤过</text>
+  <text x="1200" y="240" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">静脉端重吸收</text>
+  <text x="1005" y="240" font-size="10" fill="#64748b" text-anchor="middle">翻转点 Pc ≈14</text>
+  <line x1="1000" y1="250" x2="1000" y2="320" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="790" y="336" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">Pc 30</text>
+  <text x="1230" y="336" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">Pc 12</text>
+  <text x="740" y="362" font-size="12.5" fill="#1e293b" font-weight="700">有效滤过压 ＝ (Pc ＋ π<tspan dy="2.8" font-size="9.0">i</tspan><tspan dy="-2.8">) − (P</tspan><tspan dy="2.8" font-size="9.0">i</tspan><tspan dy="-2.8"> ＋ π</tspan><tspan dy="2.8" font-size="9.0">p</tspan><tspan dy="-2.8">)</tspan></text>
+  <rect x="730" y="378" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="405.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">力</text>
+  <rect x="960" y="378" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1012.5" y="405.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">动脉端</text>
+  <rect x="1065" y="378" width="105" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1117.5" y="405.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">静脉端</text>
+  <rect x="1170" y="378" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="405.5" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方向</text>
+  <rect x="730" y="422" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="440.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">毛细血管血压 Pc</text>
+  <rect x="960" y="422" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1012.5" y="440.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 30</text>
+  <rect x="1065" y="422" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1117.5" y="440.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 12</text>
+  <rect x="1170" y="422" width="120" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="440.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">促滤过</text>
+  <rect x="730" y="448" width="560" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="448" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="466.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">组织液胶体渗透压 π<tspan dy="2.3" font-size="7.6">i</tspan></text>
+  <rect x="960" y="448" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1012.5" y="466.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 8</text>
+  <rect x="1065" y="448" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1117.5" y="466.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 8</text>
+  <rect x="1170" y="448" width="120" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="466.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">促滤过</text>
+  <rect x="730" y="474" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="492.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">组织液静水压 P<tspan dy="2.3" font-size="7.6">i</tspan></text>
+  <rect x="960" y="474" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1012.5" y="492.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 −3</text>
+  <rect x="1065" y="474" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1117.5" y="492.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 −3</text>
+  <rect x="1170" y="474" width="120" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="492.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗滤过</text>
+  <rect x="730" y="500" width="560" height="26" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="500" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="518.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">血浆胶体渗透压 π<tspan dy="2.3" font-size="7.6">p</tspan></text>
+  <rect x="960" y="500" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1012.5" y="518.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 25</text>
+  <rect x="1065" y="500" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1117.5" y="518.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 25</text>
+  <rect x="1170" y="500" width="120" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="518.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">抗滤过（白蛋白）</text>
+  <rect x="730" y="526" width="230" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="845" y="544.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">有效滤过压</text>
+  <rect x="960" y="526" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1012.5" y="544.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 +16</text>
+  <rect x="1065" y="526" width="105" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1117.5" y="544.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">约 −2</text>
+  <rect x="1170" y="526" width="120" height="26" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1230" y="544.5" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="500">动脉端出、静脉端回</text>
+  <text x="726" y="566" font-size="10" fill="#475569">全天滤出约 20 L：约九成静脉端重吸收，余 2–4 L 由淋巴回收——「零头走淋巴」。</text>
+  <rect x="30" y="592" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、水肿四大机制与淋巴回流</text>
+  <rect x="60" y="640" width="290" height="74" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="76" y="666" font-size="12" fill="#991b1b" font-weight="700">① 毛细血管血压 ↑</text>
+  <text x="76" y="686" font-size="9.5" fill="#475569">右心衰竭（下垂部位最重）、静脉血栓或外压</text>
+  <rect x="370" y="640" width="290" height="74" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="386" y="666" font-size="12" fill="#991b1b" font-weight="700">② 血浆胶体渗透压 ↓</text>
+  <text x="386" y="686" font-size="9.5" fill="#475569">肾病综合征大量蛋白尿、肝硬化白蛋白合成不足、</text>
+  <text x="386" y="700" font-size="9.5" fill="#475569">重度营养不良</text>
+  <rect x="60" y="724" width="290" height="74" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="76" y="750" font-size="12" fill="#991b1b" font-weight="700">③ 毛细血管通透性 ↑</text>
+  <text x="76" y="770" font-size="9.5" fill="#475569">炎症介质（组胺、缓激肽）开大内皮间隙，蛋白漏入组织间隙</text>
+  <rect x="370" y="724" width="290" height="74" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="386" y="750" font-size="12" fill="#991b1b" font-weight="700">④ 淋巴回流受阻</text>
+  <text x="386" y="770" font-size="9.5" fill="#475569">丝虫病堵塞淋巴管致象皮肿、肿瘤转移或淋巴结清扫后</text>
+  <ellipse cx="100" cy="870" rx="34" ry="13" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <line x1="70" y1="858" x2="52" y2="846" stroke="#64748b" stroke-width="1.2"/>
+  <line x1="130" y1="858" x2="148" y2="846" stroke="#64748b" stroke-width="1.2"/>
+  <rect x="140" y="862" width="190" height="16" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <line x1="150" y1="870" x2="320" y2="870" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <path d="M 174,862 q 6,8 12,0" fill="none" stroke="#065f46" stroke-width="1.6"/>
+  <path d="M 224,862 q 6,8 12,0" fill="none" stroke="#065f46" stroke-width="1.6"/>
+  <path d="M 274,862 q 6,8 12,0" fill="none" stroke="#065f46" stroke-width="1.6"/>
+  <text x="100" y="846" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">毛细淋巴管（盲端）</text>
+  <text x="235" y="895" font-size="9.5" fill="#065f46" text-anchor="middle">集合淋巴管（瓣膜密布）</text>
+  <line x1="330" y1="870" x2="370" y2="870" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="375" y="866" font-size="10" fill="#065f46" font-weight="700">胸导管 → 锁骨下静脉</text>
+  <text x="60" y="925" font-size="10" fill="#475569">每日引流 2–4 L 组织液；组织间隙蛋白质回收的唯一通道；小肠绒毛中央乳糜管运输长链脂肪为乳糜；</text>
+  <text x="60" y="940" font-size="10" fill="#475569">淋巴结是抗原提呈细胞与淋巴细胞会师的哨所（适应性免疫由此启动）。</text>
+  <rect x="710" y="592" width="660" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="614.84" font-size="19" fill="#475569" font-weight="700">四、静脉回流的三级助力：肌肉泵与呼吸泵</text>
+  <ellipse cx="830" cy="720" rx="52" ry="72" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="768" y="662" font-size="10.5" fill="#92400e" text-anchor="end" font-weight="700">小腿肌群</text>
+  <rect x="820" y="648" width="20" height="165" rx="10" fill="#fff1f2" stroke="#be123c" stroke-width="2"/>
+  <path d="M 820,670 q 10,10 20,0" fill="none" stroke="#be123c" stroke-width="2"/>
+  <path d="M 820,720 q 10,10 20,0" fill="none" stroke="#be123c" stroke-width="2"/>
+  <path d="M 820,770 q 10,10 20,0" fill="none" stroke="#be123c" stroke-width="2"/>
+  <line x1="858" y1="795" x2="858" y2="660" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="868" y="730" font-size="9.5" fill="#075985" font-weight="700">向心单向</text>
+  <line x1="778" y1="700" x2="812" y2="710" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <line x1="884" y1="700" x2="850" y2="710" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="730" y="850" font-size="10" fill="#475569">肌肉泵：小腿肌收缩挤压深静脉，</text>
+  <text x="730" y="865" font-size="10" fill="#475569">静脉瓣保证只向心不返流——行走时堪比「外周心脏」；</text>
+  <text x="730" y="880" font-size="10" fill="#475569">久坐久站则静脉淤滞、深静脉血栓风险上升（长途飞行）</text>
+  <text x="730" y="895" font-size="10" fill="#475569">。</text>
+  <rect x="1000" y="650" width="160" height="100" rx="10" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <rect x="1010" y="668" width="26" height="64" rx="6" fill="#ffe4e6" stroke="#be123c" stroke-width="1.6"/>
+  <rect x="1024" y="676" width="40" height="48" rx="6" fill="#ffe4e6" stroke="#be123c" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M 1000,740 Q 1080,726 1160,740" fill="none" stroke="#d97706" stroke-width="3"/>
+  <path d="M 1000,756 Q 1080,768 1160,756" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="1080" y1="764" x2="1080" y2="786" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="1170" y="672" font-size="9.5" fill="#be123c" font-weight="700">胸腔大静脉</text>
+  <text x="1170" y="700" font-size="9.5" fill="#92400e">膈肌下移</text>
+  <text x="990" y="812" font-size="9.5" fill="#475569">吸气使胸内压更负、</text>
+  <text x="990" y="826" font-size="9.5" fill="#475569">胸腔大静脉扩张「抽吸」；</text>
+  <text x="990" y="840" font-size="9.5" fill="#475569">膈肌下推腹压把下肢与腹腔的血吸入胸腔，</text>
+  <text x="990" y="854" font-size="9.5" fill="#475569">呼气再递入心房。</text>
+  <text x="1185" y="812" font-size="9.5" fill="#475569">体位决定静水柱：</text>
+  <text x="1185" y="826" font-size="9.5" fill="#475569">直立时踝部静脉压骤增近 90 mmHg，</text>
+  <text x="1185" y="840" font-size="9.5" fill="#475569">久站出现站立性水肿</text>
+  <text x="1185" y="854" font-size="9.5" fill="#475569">（Starling 静水侧加重）。</text>
+  <text x="726" y="940" font-size="10" fill="#475569">压力梯度（毛细血管后端→右心房）是原始驱动力；肌肉泵、</text>
+  <text x="726" y="955" font-size="10" fill="#475569">呼吸泵与体位三种辅助共同保障直立回流——静脉瓣失效即静脉曲张与慢性静脉功能不全。</text>
+</svg>

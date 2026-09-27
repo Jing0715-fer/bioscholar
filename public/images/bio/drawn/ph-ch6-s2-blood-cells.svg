@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">血细胞生理：红细胞、白细胞与血小板</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">双凹圆盘以20–30%富余表面积适配气体交换（120天寿命、2,3-DPG调氧亲和力）；白细胞以中性粒50–70%居首；血小板GPIb/GPIIb/IIIa双受体（100–300×10<tspan dy="-5.8" font-size="12.2">9</tspan><tspan dy="5.8">/L）；</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">EPO经HIF-2α感受缺氧负反馈调节红系</text>
+  <rect x="30" y="132" width="700" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、红细胞：为气体交换而生的双凹圆盘</text>
+  <text x="150" y="204" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">直径 7–8 μm</text>
+  <line x1="88" y1="216" x2="212" y2="216" stroke="#dc2626" stroke-width="1.4" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <circle cx="150" cy="283" r="62" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <circle cx="150" cy="283" r="38" fill="#fecaca" stroke="#dc2626" stroke-width="1.2" opacity="0.75"/>
+  <circle cx="150" cy="283" r="14" fill="#fee2e2" opacity="0.9"/>
+  <text x="150" y="372" font-size="10.5" fill="#475569" text-anchor="middle">顶面观</text>
+  <path d="M290,260 C300,248 316,268 350,272 C384,268 400,248 410,260 L410,306 C400,318 384,298 350,294 C316,298 300,318 290,306 Z" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <text x="350" y="340" font-size="10" fill="#475569" text-anchor="middle">切面观：边缘约 2 μm · 中央约 1 μm</text>
+  <polyline points="60,415 170,415 235,432 285,432" fill="none" stroke="#475569" stroke-width="2"/>
+  <polyline points="60,470 170,470 235,453 285,453" fill="none" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="105" cy="442" rx="17" ry="11" fill="#fecaca" stroke="#dc2626" stroke-width="1.8"/>
+  <ellipse cx="105" cy="442" rx="9" ry="5" fill="#fee2e2"/>
+  <ellipse cx="250" cy="442" rx="9" ry="8.5" fill="#fecaca" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="242" y1="445" x2="228" y2="451" stroke="#dc2626" stroke-width="1.2"/>
+  <line x1="242" y1="439" x2="228" y2="433" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="172" y="500" font-size="10" fill="#475569" text-anchor="middle">挤过 3 μm 毛细血管与脾窦裂隙：折叠变形后恢复</text>
+  <text x="470" y="210" font-size="10" fill="#475569">① 表面积/体积比比同体积球形高 20–30%：</text>
+  <text x="470" y="225.5" font-size="10" fill="#475569">O<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">/CO</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2"> 扩散距离处处 ≤ 1 μm</tspan></text>
+  <text x="470" y="252" font-size="10" fill="#475569">② 可变形性：多余膜面积 + 柔韧细胞骨架；</text>
+  <text x="470" y="267.5" font-size="10" fill="#475569">球形红细胞增多症 → 脾窦扣留、慢性溶血</text>
+  <text x="470" y="294" font-size="10" fill="#475569">③ 无核·无线粒体：约 90% 葡萄糖经糖酵解供能；</text>
+  <text x="470" y="309.5" font-size="10" fill="#475569">2,3-DPG 支路降低 Hb 氧亲和力——慢性缺氧与高原时升高</text>
+  <text x="470" y="325" font-size="10" fill="#475569">（促组织释氧），库存血中逐日衰减</text>
+  <text x="470" y="352" font-size="10" fill="#475569">④ 寿命约 120 天：</text>
+  <text x="470" y="367.5" font-size="10" fill="#475569">老化 → 磷脂酰丝氨酸外翻「吃我」信号 → 巨噬细胞清除，</text>
+  <text x="470" y="383" font-size="10" fill="#475569">铁几乎全部回收</text>
+  <text x="470" y="394" font-size="10" fill="#475569">⑤ 每细胞约 2.8 亿个 Hb（α<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">β</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2"> 四聚体，</tspan></text>
+  <text x="470" y="409.5" font-size="10" fill="#475569">血红素 Fe<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 与 O</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2"> 可逆配位）</tspan></text>
+  <text x="470" y="436" font-size="10" fill="#475569">⑥ 戊糖磷酸途径供 NADPH 维持还原型谷胱甘肽——G6PD 缺乏者遇氧化应激溶血</text>
+  <text x="50" y="540" font-size="10" fill="#64748b">红细胞计数男 4.0–5.5、女 3.5–5.0 ×10<tspan dy="-3.4" font-size="7.2">12</tspan><tspan dy="3.4">/L；血红蛋白男 120–160、女 110–150 g/L</tspan></text>
+  <rect x="750" y="132" width="620" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、白细胞分类计数（总数 4–10 ×10<tspan dy="-6.5" font-size="13.7">9</tspan><tspan dy="6.5">/L）</tspan></text>
+  <text x="770" y="182" font-size="10" fill="#64748b">分类计数比总数更具诊断信息量；运动、进食、妊娠与昼夜节律可致生理性波动</text>
+  <text x="950" y="220" font-size="11.5" fill="#1e293b" text-anchor="end" font-weight="700">中性粒细胞</text>
+  <rect x="1195" y="207" width="88" height="18" rx="4" fill="#fee2e2" stroke="#991b1b" stroke-width="1.5"/>
+  <text x="1291" y="220" font-size="10.5" fill="#991b1b" font-weight="700">50–70%</text>
+  <text x="975" y="242" font-size="9.5" fill="#475569">急性化脓感染先头部队；细菌感染升高伴核左移</text>
+  <text x="950" y="276" font-size="11.5" fill="#1e293b" text-anchor="end" font-weight="700">淋巴细胞</text>
+  <rect x="1063" y="263" width="88" height="18" rx="4" fill="#e0f2fe" stroke="#075985" stroke-width="1.5"/>
+  <text x="1159" y="276" font-size="10.5" fill="#075985" font-weight="700">20–40%</text>
+  <text x="975" y="298" font-size="9.5" fill="#475569">T / B 细胞适应性免疫；病毒感染时升高</text>
+  <text x="950" y="332" font-size="11.5" fill="#1e293b" text-anchor="end" font-weight="700">单核细胞</text>
+  <rect x="988.2" y="319" width="22" height="18" rx="4" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+  <text x="1018.2" y="332" font-size="10.5" fill="#92400e" font-weight="700">3–8%</text>
+  <text x="975" y="354" font-size="9.5" fill="#475569">入组织分化为巨噬细胞；慢性感染与恢复期</text>
+  <text x="950" y="388" font-size="11.5" fill="#1e293b" text-anchor="end" font-weight="700">嗜酸粒细胞</text>
+  <rect x="977.2" y="375" width="19.8" height="18" rx="4" fill="#fef3c7" stroke="#78350f" stroke-width="1.5"/>
+  <text x="1005" y="388" font-size="10.5" fill="#78350f" font-weight="700">0.5–5%</text>
+  <text x="975" y="410" font-size="9.5" fill="#475569">抗寄生虫与过敏反应调控</text>
+  <text x="950" y="444" font-size="11.5" fill="#1e293b" text-anchor="end" font-weight="700">嗜碱粒细胞</text>
+  <rect x="975" y="431" width="6" height="18" rx="4" fill="#ede9fe" stroke="#4c1d95" stroke-width="1.5"/>
+  <text x="987.4" y="444" font-size="10.5" fill="#4c1d95" font-weight="700">0–1%</text>
+  <text x="975" y="466" font-size="9.5" fill="#475569">IgE 交联释放组胺；速发超敏（与肥大细胞同源）</text>
+  <line x1="975" y1="478" x2="1315" y2="478" stroke="#475569" stroke-width="1.4"/>
+  <line x1="975" y1="478" x2="975" y2="484" stroke="#475569" stroke-width="1.4"/>
+  <text x="975" y="502" font-size="10" fill="#64748b" text-anchor="middle">0%</text>
+  <line x1="1063" y1="478" x2="1063" y2="484" stroke="#475569" stroke-width="1.4"/>
+  <text x="1063" y="502" font-size="10" fill="#64748b" text-anchor="middle">20%</text>
+  <line x1="1151" y1="478" x2="1151" y2="484" stroke="#475569" stroke-width="1.4"/>
+  <text x="1151" y="502" font-size="10" fill="#64748b" text-anchor="middle">40%</text>
+  <line x1="1239" y1="478" x2="1239" y2="484" stroke="#475569" stroke-width="1.4"/>
+  <text x="1239" y="502" font-size="10" fill="#64748b" text-anchor="middle">60%</text>
+  <text x="1145" y="526" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">占白细胞总数百分比</text>
+  <text x="770" y="550" font-size="10" fill="#475569">渗出三步舞：选择素介导滚动 → 整合素（LFA-1）/ 内皮 ICAM 稳固粘附 → 变形渗出，循趋化因子（IL-8 · C5a）奔赴感染灶</text>
+  <rect x="30" y="584" width="620" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="606.84" font-size="19" fill="#475569" font-weight="700">三、血小板：最小的血细胞</text>
+  <ellipse cx="80" cy="648" rx="15" ry="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <ellipse cx="130" cy="645" rx="12" ry="7.5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <ellipse cx="215" cy="650" rx="17" ry="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <line x1="198" y1="644" x2="186" y2="637" stroke="#6d28d9" stroke-width="1.3"/>
+  <line x1="232" y1="644" x2="244" y2="636" stroke="#6d28d9" stroke-width="1.3"/>
+  <line x1="198" y1="656" x2="184" y2="660" stroke="#6d28d9" stroke-width="1.3"/>
+  <line x1="232" y1="657" x2="246" y2="663" stroke="#6d28d9" stroke-width="1.3"/>
+  <line x1="215" y1="638" x2="215" y2="626" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="105" y="678" font-size="9.5" fill="#475569" text-anchor="middle">静息：双凸盘</text>
+  <text x="215" y="678" font-size="9.5" fill="#475569" text-anchor="middle">活化：棘球状（伸出伪足）</text>
+  <text x="300" y="645" font-size="10" fill="#475569" font-weight="600">巨核细胞胞质脱落的无核碎片</text>
+  <text x="300" y="663" font-size="10" fill="#64748b">保有完整膜受体与颗粒系统</text>
+  <rect x="50" y="704" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="64" y="725" font-size="10.5" fill="#1e293b" font-weight="700">计数 100–300 ×10<tspan dy="-3.6" font-size="7.6">9</tspan><tspan dy="3.6">/L</tspan></text>
+  <text x="64" y="743" font-size="9.5" fill="#475569">寿命 7–10 天 · 约 1/3 滞留脾池</text>
+  <rect x="340" y="704" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="354" y="725" font-size="10.5" fill="#1e293b" font-weight="700">直径 2–3 μm · 无核</text>
+  <text x="354" y="743" font-size="9.5" fill="#475569">静息双凸盘 · 活化伸出伪足</text>
+  <rect x="50" y="764" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="64" y="785" font-size="10.5" fill="#1e293b" font-weight="700">GPIb → vWF 粘附</text>
+  <text x="64" y="803" font-size="9.5" fill="#475569">损伤初期拴于创面（高剪切「系船缆」）</text>
+  <rect x="340" y="764" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="354" y="785" font-size="10.5" fill="#1e293b" font-weight="700">GPIIb/IIIa → 纤维蛋白原</text>
+  <text x="354" y="803" font-size="9.5" fill="#475569">活化变构暴露 · 血小板桥连聚集</text>
+  <rect x="50" y="824" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="64" y="845" font-size="10.5" fill="#1e293b" font-weight="700">ADP → P2Y<tspan dy="2.3" font-size="7.6">12</tspan><tspan dy="-2.3"> 受体</tspan></text>
+  <text x="64" y="863" font-size="9.5" fill="#475569">正反馈招募（氯吡格雷的靶点）</text>
+  <rect x="340" y="824" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="354" y="845" font-size="10.5" fill="#1e293b" font-weight="700">TXA<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">（COX-1 合成）</tspan></text>
+  <text x="354" y="863" font-size="9.5" fill="#475569">阿司匹林不可逆乙酰化封锁</text>
+  <rect x="50" y="884" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="64" y="905" font-size="10.5" fill="#1e293b" font-weight="700">α 颗粒与致密颗粒</text>
+  <text x="64" y="923" font-size="9.5" fill="#475569">vWF · 纤维蛋白原 · PDGF / ADP · 5-HT</text>
+  <rect x="340" y="884" width="280" height="54" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="354" y="905" font-size="10.5" fill="#1e293b" font-weight="700">TPO（肝恒定分泌）</text>
+  <text x="354" y="923" font-size="9.5" fill="#475569">调节产量 · 脾为贮池与衰老清场</text>
+  <text x="50" y="966" font-size="10" fill="#64748b">开放小管系统把血浆因子引入血小板内部；产量由肝脏恒定分泌的 TPO 调节（详见造血一节）</text>
+  <rect x="670" y="584" width="700" height="398" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="686" y="606.84" font-size="19" fill="#475569" font-weight="700">四、EPO 反馈环：肾氧感受与红系调节</text>
+  <rect x="880" y="620" width="280" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1020" y="642" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">组织缺氧（贫血 · 高原 · 运动）</text>
+  <rect x="1130" y="690" width="220" height="66" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="1240" y="712" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">肾皮质间质细胞</text>
+  <text x="1240" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">组织氧分压相对下降 →</text>
+  <text x="1240" y="746" font-size="9.5" fill="#64748b" text-anchor="middle">PHD 失活 · HIF-2α 积累</text>
+  <rect x="1130" y="796" width="220" height="66" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1240" y="818" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">EPO 转录 ↑</text>
+  <text x="1240" y="836" font-size="9.5" fill="#475569" text-anchor="middle">约 30 kDa 糖蛋白激素</text>
+  <text x="1240" y="852" font-size="9.5" fill="#475569" text-anchor="middle">成人 90% 肾 · 10% 肝</text>
+  <rect x="880" y="890" width="280" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1020" y="912" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">骨髓红系祖细胞（CFU-E）</text>
+  <text x="1020" y="930" font-size="9.5" fill="#475569" text-anchor="middle">EPO-R：抑制凋亡 + 增殖分化</text>
+  <text x="1020" y="946" font-size="9.5" fill="#475569" text-anchor="middle">网织红细胞提前释放入血</text>
+  <rect x="690" y="796" width="220" height="66" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="800" y="818" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">红细胞 ↑ · 携氧能力 ↑</text>
+  <text x="800" y="838" font-size="9.5" fill="#475569" text-anchor="middle">红系产线开足马力</text>
+  <rect x="690" y="690" width="220" height="66" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="800" y="712" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">肾氧供改善</text>
+  <text x="800" y="730" font-size="9.5" fill="#64748b" text-anchor="middle">HIF 降解</text>
+  <text x="800" y="746" font-size="9.5" fill="#64748b" text-anchor="middle">EPO 回落（负反馈）</text>
+  <line x1="1090" y1="648" x2="1170" y2="694" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1240" y1="756" x2="1240" y2="796" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="1130" y1="830" x2="1090" y2="894" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="880" y1="905" x2="862" y2="866" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="800" y1="796" x2="800" y2="756" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <line x1="905" y1="690" x2="928" y2="668" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="1020" y="776" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">EPO 负反馈环</text>
+  <text x="950" y="800" font-size="9.5" fill="#64748b">感受的是肾组织氧分压的相对变化，</text>
+  <text x="950" y="813" font-size="9.5" fill="#64748b">而非「血氧」的直接测量</text>
+  <text x="950" y="838" font-size="9.5" fill="#475569">肾性贫血 → 重组人 EPO；</text>
+  <text x="950" y="851" font-size="9.5" fill="#475569">高原训练；罗沙司他</text>
+  <text x="950" y="864" font-size="9.5" fill="#475569">（HIF-PHI 口服促红）；</text>
+  <text x="950" y="877" font-size="9.5" fill="#475569">滥用 EPO → 粘度升高、血栓风险</text>
+  <text x="690" y="968" font-size="10" fill="#475569">网织红细胞占外周红细胞 0.5–1.5%——骨髓红系产量的实时仪表；MCV / MCH / MCHC 把贫血粗分为小细胞低色素、正细胞、大细胞三型</text>
+</svg>

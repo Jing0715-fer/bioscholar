@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">血管生理与血流动力学：半径四次方的统治</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">Q=ΔP·πr<tspan dy="-5.8" font-size="12.2">4</tspan><tspan dy="5.8">/(8ηL)：半径减半阻力增至16倍；MAP=DBP+1/3脉压（120/80→≈93mmHg）＝CO×SVR；毛细总截面积约2500cm</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">、流速0.5–1mm/s；Re临界约2000触发湍流</tspan></text>
+  <rect x="30" y="132" width="660" height="290" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、Poiseuille 定律：半径的四次方统治阻力</text>
+  <text x="360" y="190" font-size="21" fill="#1e293b" text-anchor="middle" font-weight="700">Q = ΔP · πr<tspan dy="-7.1" font-size="15.1">4</tspan><tspan dy="7.1"> / (8ηL)</tspan></text>
+  <text x="360" y="224" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">阻力形式：R = 8ηL / (πr<tspan dy="-4.8" font-size="10.1">4</tspan><tspan dy="4.8">)</tspan></text>
+  <rect x="70" y="258" width="330" height="44" rx="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <line x1="38" y1="280" x2="64" y2="280" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <line x1="406" y1="280" x2="432" y2="280" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="56" y="246" font-size="10" fill="#075985" font-weight="700">P₁ 高</text>
+  <text x="400" y="246" font-size="10" fill="#075985" font-weight="700">P₂ 低</text>
+  <line x1="210" y1="281" x2="210" y2="302" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="218" y="296" font-size="10" fill="#475569">r（半径，四次方）</text>
+  <line x1="110" y1="322" x2="360" y2="322" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="235" y="342" font-size="10" fill="#475569" text-anchor="middle">L（管长）</text>
+  <text x="235" y="366" font-size="10" fill="#475569" text-anchor="middle">η（黏度：全血约为水的 3–4 倍）</text>
+  <rect x="474.5152" y="309.8" width="110.96960000000001" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="530" y="324.32" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="700">r 减半 → R ×16</text>
+  <rect x="457.4584" y="349.8" width="145.08320000000003" height="20.4" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="530" y="364.32" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">r 增两成内 → R ↓约半</text>
+  <text x="50" y="396" font-size="10" fill="#475569">总外周阻力主要落于小动脉与微动脉：单根毛细虽细，数百亿条并联总阻力反而不高；各器官血管并联互不累加，</text>
+  <text x="50" y="411" font-size="10" fill="#475569">动脉压对各器官「一视同仁」地分配压头。</text>
+  <rect x="710" y="132" width="660" height="290" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、血管功能分段：压力-流速-总截面积剖面</text>
+  <rect x="730" y="180" width="110" height="30" rx="15" fill="#fde68a" stroke="#d97706" stroke-width="1.6"/>
+  <rect x="850" y="184" width="110" height="22" rx="11" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="970" y="188.5" width="110" height="13" rx="6.5" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <rect x="1090" y="192" width="110" height="6" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <rect x="1210" y="179" width="110" height="32" rx="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="785" y="228" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">弹性大动脉</text>
+  <text x="785" y="244" font-size="8.5" fill="#64748b" text-anchor="middle">Windkessel 贮器</text>
+  <text x="905" y="228" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">分配动脉</text>
+  <text x="905" y="244" font-size="8.5" fill="#64748b" text-anchor="middle">输送</text>
+  <text x="1025" y="228" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">阻力小动脉</text>
+  <text x="1025" y="244" font-size="8.5" fill="#64748b" text-anchor="middle">平滑肌密集</text>
+  <text x="1145" y="228" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">交换毛细</text>
+  <text x="1145" y="244" font-size="8.5" fill="#64748b" text-anchor="middle">单层内皮</text>
+  <text x="1265" y="228" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">容量静脉</text>
+  <text x="1265" y="244" font-size="8.5" fill="#64748b" text-anchor="middle">容血 60–70%</text>
+  <line x1="740" y1="400" x2="1330" y2="400" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="740" y1="400" x2="740" y2="268" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <polyline points="740,300 860,304 890,318 970,342 1030,352 1090,368 1150,378 1210,383 1330,388" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <polyline points="740,310 860,328 900,342 970,360 1090,392 1120,393 1150,390 1210,378 1330,372" fill="none" stroke="#0369a1" stroke-width="2.2" stroke-dasharray="7 4"/>
+  <polyline points="740,385 860,382 900,370 970,330 1090,285 1150,300 1210,345 1330,355" fill="none" stroke="#0f766e" stroke-width="2.2" stroke-dasharray="3 3"/>
+  <text x="1150" y="262" font-size="9.5" fill="#991b1b" font-weight="700">— 压力</text>
+  <text x="1215" y="262" font-size="9.5" fill="#075985" font-weight="700">-- 流速</text>
+  <text x="1280" y="262" font-size="9.5" fill="#134e4a" font-weight="700">·- 截面积</text>
+  <text x="750" y="282" font-size="9.5" fill="#475569">毛细总截面积 ≈2500 cm²、流速 0.5–1 mm/s</text>
+  <text x="1035" y="418" font-size="9.5" fill="#64748b" text-anchor="middle">沿血管分段 →（压力 100→35→12→5 mmHg 量级；交换时间 1–3 s）</text>
+  <rect x="30" y="442" width="660" height="530" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="464.84" font-size="19" fill="#475569" font-weight="700">三、平均动脉压、脉压与动脉顺应性</text>
+  <line x1="90" y1="620" x2="90" y2="480" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="620" x2="560" y2="620" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="90" y1="561" x2="560" y2="561" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="84" y="500" font-size="10" fill="#64748b" text-anchor="end">120</text>
+  <text x="84" y="565" font-size="10" fill="#64748b" text-anchor="end">93</text>
+  <text x="84" y="591" font-size="10" fill="#64748b" text-anchor="end">80</text>
+  <polyline points="100,585 120,500 140,498 160,530 170,538 182,532 300,582 320,500 340,498 360,530 372,538 382,532 560,584" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="140" y="488" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">收缩压 120</text>
+  <text x="450" y="604" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">舒张压 80</text>
+  <text x="192" y="522" font-size="9" fill="#991b1b">重搏切迹</text>
+  <line x1="214" y1="526" x2="176" y2="534" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr-mute)"/>
+  <rect x="182.213" y="637.8" width="355.574" height="20.4" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="360" y="652.32" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="700">MAP = DBP + 1/3 脉压 ≈ 93 mmHg（舒张期更长的时间加权）</text>
+  <rect x="253.5302" y="683.8" width="212.93959999999998" height="20.4" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="360" y="698.32" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">MAP = CO × SVR：血压两要素框架</text>
+  <text x="50" y="728" font-size="10" fill="#475569">脉压＝SV 与大动脉僵硬度联合放大：顺应性 C=dV/dP 高 → 脉压小；老龄化/动脉硬化 → 收缩压↑、舒张压反降、</text>
+  <text x="50" y="743" font-size="10" fill="#475569">脉压增大——老年人单纯收缩期高血压的血流动力学本质。</text>
+  <text x="50" y="782" font-size="10" fill="#475569">脉搏波是压力波：主动脉波速 5–8 m/s，向外周渐增至 15–35 m/s（比血流快一个数量级，主动脉血流约 30 cm/s）；</text>
+  <text x="50" y="797" font-size="10" fill="#475569">波形放大使下肢收缩压比主动脉高 10–20 mmHg。</text>
+  <text x="50" y="836" font-size="10" fill="#475569">静脉：低压力经营大容量（容血 60–70%）；中心静脉压（右房压）4–12 cmH<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O，是回流与泵功能的交汇读数；</tspan></text>
+  <text x="50" y="851" font-size="10" fill="#475569">直立时踝部静脉加上近 90 mmHg 静水柱，颅顶静脉转为负压。</text>
+  <text x="50" y="896" font-size="10" fill="#475569">袖带法（Riva-Rocci 1896 袖带 ＋ Korotkoff 1905 听诊）：我国指南以诊室 ≥140/90 mmHg 为高血压界值；</text>
+  <text x="50" y="911" font-size="10" fill="#475569">脉压搏动本身携带每搏量与僵硬度信息。</text>
+  <rect x="710" y="442" width="660" height="530" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="464.84" font-size="19" fill="#475569" font-weight="700">四、层流、湍流与雷诺数</text>
+  <rect x="740" y="500" width="280" height="60" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <line x1="745" y1="510" x2="805" y2="510" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="745" y1="520" x2="875" y2="520" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="745" y1="530" x2="995" y2="530" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="745" y1="540" x2="875" y2="540" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="745" y1="550" x2="805" y2="550" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="880" y="585" font-size="10" fill="#475569" text-anchor="middle">层流：抛物线剖面（轴心最快、贴壁趋零）</text>
+  <rect x="1060" y="500" width="280" height="60" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <path d="M 1070,515 q 30,-14 60,4 q 30,16 60,-6 q 30,-18 66,10" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 1070,545 q 34,14 64,-4 q 30,-16 62,6 q 28,18 66,-10" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 1078,515 q 30,-14 60,4 q 30,16 60,-6 q 30,-18 66,10" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 1078,545 q 34,14 64,-4 q 30,-16 62,6 q 28,18 66,-10" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 1086,515 q 30,-14 60,4 q 30,16 60,-6 q 30,-18 66,10" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <path d="M 1086,545 q 34,14 64,-4 q 30,-16 62,6 q 28,18 66,-10" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1200" y="585" font-size="10" fill="#475569" text-anchor="middle">湍流：能量损耗大并产生可闻振动（杂音）</text>
+  <rect x="948.436875" y="621.375" width="183.12625" height="21.25" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1040" y="636.5" font-size="12.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Re = ρvd/η，临界值 ≈ 2000</text>
+  <text x="726" y="670" font-size="10" fill="#475569">杂音的流体力学来源：贫血（黏度↓＋流量↑双重推高 Re）、瓣膜狭窄（局部高速射流）、动脉导管未闭（胸骨左缘连续性机器样杂音）。</text>
+  <rect x="740" y="726" width="280" height="50" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <circle cx="795" cy="751" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="831" cy="751" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="867" cy="751" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="903" cy="751" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="939" cy="751" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="975" cy="751" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="880" y="800" font-size="10" fill="#475569" text-anchor="middle">红细胞向轴集中（Fåhræus–Lindqvist 效应）</text>
+  <rect x="1060" y="726" width="280" height="50" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <line x1="1080" y1="751" x2="1100" y2="751" stroke="#0f766e" stroke-width="2.2" marker-end="url(#arr-dna)"/>
+  <text x="1108" y="745" font-size="9.5" fill="#134e4a" font-weight="700">剪切应力</text>
+  <text x="1108" y="762" font-size="9.5" fill="#475569">作用于内皮</text>
+  <text x="1220" y="745" font-size="11" fill="#065f46" font-weight="700">NO ↑</text>
+  <text x="1200" y="800" font-size="10" fill="#475569" text-anchor="middle">「流量越大、管越松」的自适应</text>
+  <text x="726" y="836" font-size="10" fill="#475569">层流剖面下内皮持续感受剪切应力，诱导一氧化氮（NO）释放而舒张血管——剪切应力诱导 NO 是血流自适应扩张的物理基础</text>
+  <text x="726" y="851" font-size="10" fill="#475569">（内皮因子详见下一章）。</text>
+  <text x="726" y="892" font-size="10" fill="#475569">红细胞向轴集中、血浆贴壁，使微血管表观黏度下降——微血管因此不易被黏度「卡死」，与 Fick 扩散的短距离共同保障交换效率。</text>
+</svg>

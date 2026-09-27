@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">神经调节、体液调节与自身调节</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">神经经反射弧毫秒-秒级完成（膝反射约50ms）；体液以激素经血液秒-分钟起效、广泛持久；自身调节即时而局部（脑血流60–160mmHg平台）——动脉血压由三者接力看护</text>
+  <rect x="30" y="132" width="440" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、神经调节：快而准（反射弧）</text>
+  <rect x="90" y="175" width="150" height="36" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="165" y="197" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">感受器</text>
+  <line x1="165" y1="213" x2="165" y2="227" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="90" y="229" width="150" height="36" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="165" y="251" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">传入神经</text>
+  <line x1="165" y1="267" x2="165" y2="281" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="90" y="283" width="150" height="36" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="165" y="305" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">神经中枢</text>
+  <line x1="165" y1="321" x2="165" y2="335" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="90" y="337" width="150" height="36" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="165" y="359" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">传出神经</text>
+  <line x1="165" y1="375" x2="165" y2="389" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="90" y="391" width="150" height="36" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="165" y="413" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">效应器</text>
+  <text x="258" y="197" font-size="10" fill="#64748b">叩击膝腱</text>
+  <text x="258" y="305" font-size="10" fill="#64748b">突触延搁 ~0.5 ms/个</text>
+  <text x="258" y="413" font-size="10" fill="#64748b">股四头肌收缩</text>
+  <text x="50" y="448" font-size="10.5" fill="#475569">膝反射约 50 ms：传导占小头，大头在突触延搁与兴奋-收缩耦联</text>
+  <text x="50" y="474" font-size="10.5" fill="#475569">动作电位 10–100 m/s 奔行；毫秒-秒级、解剖通路精确而效应短暂（救急）；</text>
+  <text x="50" y="492" font-size="10.5" fill="#475569">交感与副交感拮抗支配内脏，平衡点即器官「设定状态」</text>
+  <text x="50" y="528" font-size="10.5" fill="#475569">反射弧任一环断裂即瘫：脊髓灰质炎破坏运动神经元、重症肌无力阻断神经-肌接头</text>
+  <rect x="490" y="132" width="440" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="506" y="154.84" font-size="19" fill="#475569" font-weight="700">二、体液调节：广而久（激素）</text>
+  <rect x="510" y="185" width="150" height="44" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="585" y="212" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">内分泌细胞</text>
+  <line x1="665" y1="207" x2="745" y2="207" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="705" y="197" font-size="10" fill="#64748b" text-anchor="middle">经血液运输</text>
+  <rect x="750" y="185" width="160" height="44" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="830" y="212" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">远处靶细胞受体</text>
+  <text x="510" y="262" font-size="11.5" fill="#475569" font-weight="700">信使速度谱（应急 - 过渡 - 持守）：</text>
+  <text x="510" y="288" font-size="10.5" fill="#475569">· 儿茶酚胺：秒级起效、分钟级清除（应急）</text>
+  <text x="510" y="312" font-size="10.5" fill="#475569">· 肽类与蛋白激素：分钟-小时（过渡）</text>
+  <text x="510" y="336" font-size="10.5" fill="#475569">· 类固醇经核受体：小时起效、以天计（持守）</text>
+  <text x="510" y="366" font-size="10.5" fill="#475569">旁分泌（组胺·前列腺素）与自分泌：不经血液的短程信使</text>
+  <text x="510" y="394" font-size="10.5" fill="#475569">神经-体液调节：交感神经 → 肾上腺髓质释放肾上腺素——神经的速度接入体液的广度</text>
+  <text x="510" y="436" font-size="10.5" fill="#475569">起效秒-分钟、持续数小时至数天（甲状腺激素以周计）；</text>
+  <text x="510" y="454" font-size="10.5" fill="#475569">血液流经之处皆可及——范围广、作用久</text>
+  <text x="510" y="498" font-size="10.5" fill="#475569">典型：胰岛素降糖 · 醛固酮保钠 · 甲状腺激素调代谢（周级）</text>
+  <text x="510" y="526" font-size="10.5" fill="#64748b" font-weight="600">神经像专线电话，体液像广播，自身像承重结构</text>
+  <rect x="950" y="132" width="420" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="966" y="154.84" font-size="19" fill="#475569" font-weight="700">三、自身调节：内在而即时</text>
+  <text x="1010" y="208" font-size="10.5" fill="#475569">血流量</text>
+  <rect x="1010" y="215" width="330" height="140" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <polyline points="1010,345 1040,262 1310,262 1340,335" fill="none" stroke="#0f766e" stroke-width="2.8"/>
+  <text x="1150" y="254" font-size="10.5" fill="#134e4a" font-weight="700">平台：血流近乎不变</text>
+  <line x1="1010" y1="355" x2="1010" y2="362" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1175" y1="355" x2="1175" y2="362" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1340" y1="355" x2="1340" y2="362" stroke="#475569" stroke-width="1.8"/>
+  <text x="1010" y="376" font-size="10.5" fill="#64748b" text-anchor="middle">60</text>
+  <text x="1175" y="376" font-size="10.5" fill="#64748b" text-anchor="middle">110</text>
+  <text x="1340" y="376" font-size="10.5" fill="#64748b" text-anchor="middle">160</text>
+  <text x="1175" y="396" font-size="11" fill="#475569" text-anchor="middle">灌注压 (mmHg)</text>
+  <text x="970" y="424" font-size="10.5" fill="#475569">肌源性反应：牵张本身引起微动脉平滑肌收缩</text>
+  <text x="970" y="448" font-size="10.5" fill="#475569">压力窗：脑约 60–160 · 肾约 80–180 mmHg</text>
+  <text x="970" y="472" font-size="10.5" fill="#475569">肾管球反馈：致密斑感受 NaCl，收缩入球微动脉</text>
+  <text x="970" y="500" font-size="11.5" fill="#475569" font-weight="700">Starling 心肌定律（异长自身调节）：</text>
+  <text x="970" y="524" font-size="10.5" fill="#475569">静脉回流↑ → 舒张末容积↑ → 肌节初长拉向最适 → 收缩更有力，</text>
+  <text x="970" y="542" font-size="10.5" fill="#475569">多余回心血量被泵出</text>
+  <rect x="30" y="576" width="660" height="406" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="598.84" font-size="19" fill="#475569" font-weight="700">四、起效时程与失血接力（时间轴）</text>
+  <text x="50" y="632" font-size="12" fill="#475569" font-weight="700">急性失血约 1 L 后动脉压的多重防线（三者接力）：</text>
+  <rect x="92.925" y="653.075" width="124.15" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="155" y="665.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">数秒：压力感受器反射</text>
+  <line x1="222" y1="662" x2="285" y2="662" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="300.56305" y="653.075" width="178.8739" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="390" y="665.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">数分钟：交感-肾上腺髓质·Ang II</text>
+  <line x1="495" y1="662" x2="528" y2="662" stroke="#64748b" stroke-width="1.6" marker-end="url(#arr-mute)"/>
+  <rect x="539.54725" y="653.075" width="120.9055" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="600" y="665.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">小时-日：ADH·醛固酮</text>
+  <text x="50" y="690" font-size="10.5" fill="#475569">神经（数秒）→ 体液（数分钟至数日）→ 自身调节全程保脑与肾供血</text>
+  <text x="50" y="716" font-size="10.5" fill="#475569">同一受控变量由不同时间常数的机制层层设防——机体调控的通用架构（Guyton 时间-效应分级图）</text>
+  <text x="70" y="792" font-size="10" fill="#64748b">精确而短暂（救急）</text>
+  <rect x="70" y="800" width="190" height="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="165" y="817" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">神经：毫秒-秒</text>
+  <text x="240" y="836" font-size="10" fill="#64748b">广泛而持久（守成）</text>
+  <rect x="240" y="844" width="330" height="26" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="405" y="861" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">体液：秒-分钟起效，数小时至数天</text>
+  <text x="70" y="880" font-size="10" fill="#64748b">局部固有 · 最后一道防线</text>
+  <rect x="70" y="888" width="570" height="26" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="355" y="905" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">自身：即时 · 限于本组织 · 随局部条件</text>
+  <line x1="70" y1="940" x2="640" y2="940" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="110" y1="940" x2="110" y2="947" stroke="#475569" stroke-width="1.8"/>
+  <text x="110" y="964" font-size="10.5" fill="#64748b" text-anchor="middle">毫秒</text>
+  <line x1="260" y1="940" x2="260" y2="947" stroke="#475569" stroke-width="1.8"/>
+  <text x="260" y="964" font-size="10.5" fill="#64748b" text-anchor="middle">秒</text>
+  <line x1="420" y1="940" x2="420" y2="947" stroke="#475569" stroke-width="1.8"/>
+  <text x="420" y="964" font-size="10.5" fill="#64748b" text-anchor="middle">分钟</text>
+  <line x1="540" y1="940" x2="540" y2="947" stroke="#475569" stroke-width="1.8"/>
+  <text x="540" y="964" font-size="10.5" fill="#64748b" text-anchor="middle">小时</text>
+  <line x1="630" y1="940" x2="630" y2="947" stroke="#475569" stroke-width="1.8"/>
+  <text x="630" y="964" font-size="10.5" fill="#64748b" text-anchor="middle">天/周</text>
+  <rect x="710" y="576" width="660" height="406" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="598.84" font-size="19" fill="#475569" font-weight="700">五、动脉血压稳态：三者协同</text>
+  <rect x="770" y="625" width="180" height="56" rx="8" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="860" y="647" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">神经调节</text>
+  <text x="860" y="667" font-size="10.5" fill="#475569" text-anchor="middle">压力感受器反射 · 数秒</text>
+  <line x1="955" y1="655" x2="984" y2="671" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="1140" y="625" width="200" height="56" rx="8" fill="#fef3c7" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <text x="1240" y="647" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">体液调节</text>
+  <text x="1240" y="667" font-size="10.5" fill="#475569" text-anchor="middle">儿茶酚胺·Ang II · 数分钟</text>
+  <line x1="1135" y1="655" x2="1096" y2="671" stroke="#b45309" stroke-width="2" marker-end="url(#arr-rna)"/>
+  <circle cx="1040" cy="700" r="60" fill="#e0f2fe" fill-opacity="0.6" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="1040" y="694" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">动脉血压</text>
+  <text x="1040" y="714" font-size="10.5" fill="#075985" text-anchor="middle">MAP 稳态</text>
+  <rect x="940" y="790" width="210" height="56" rx="8" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1045" y="812" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">自身调节</text>
+  <text x="1045" y="832" font-size="10.5" fill="#475569" text-anchor="middle">脑肾血流 · 低灌注仍工作</text>
+  <line x1="1045" y1="786" x2="1041" y2="763" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="730" y="890" font-size="10.5" fill="#475569">急性失血约 1 L：数秒内压力感受器反射把有限心输出量优先分配给脑与心（神经）；</text>
+  <text x="730" y="908" font-size="10.5" fill="#475569">数分钟内交感-肾上腺髓质轴与血管紧张素 II 收缩血管、维持外周阻力（体液）；ADH、醛固酮与 RAAS 在小时至日尺度恢复血量；</text>
+  <text x="730" y="926" font-size="10.5" fill="#475569">肾与脑的自身调节在低灌注中竭力保住自身供血</text>
+  <text x="730" y="956" font-size="11.5" fill="#64748b" font-weight="600">三种调节是分工接力，不是竞争——急性期听神经、过渡期听体液、慢性维持依赖自身与结构适应</text>
+</svg>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">通气力学：呼吸泵、胸膜腔负压与肺的弹性</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">胸膜腔压平静呼气末−5、吸气末−7.5cmH<tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">O偶联胸廓与肺（气胸即偶联断裂）；肺顺应性约200ml/cmH</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">O、回缩力约2/3源于气-液界面表面张力；DPPC化解Laplace小泡塌缩，</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">等压点动态压缩解释呼气用力悖论</text>
+  <rect x="30" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、呼吸泵与胸膜腔负压：液压传动式偶联</text>
+  <rect x="70" y="172" width="250" height="235" rx="16" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <rect x="80" y="182" width="230" height="215" fill="#e0f2fe" fill-opacity="0.45" stroke="none"/>
+  <text x="78" y="165" font-size="9.5" fill="#075985" font-weight="600">胸膜腔（浆液 10–20 ml）</text>
+  <line x1="112" y1="170" x2="128" y2="196" stroke="#0369a1" stroke-width="1.4" marker-end="url(#arr-acc)"/>
+  <path d="M 185,212 C 140,212 114,256 111,314 C 109,356 134,382 158,382 C 175,382 180,368 185,352 C 190,368 195,382 212,382 C 236,382 261,356 259,314 C 256,256 230,212 185,212 Z" fill="#ffffff" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="185" y="262" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">肺弹性回缩</text>
+  <text x="185" y="282" font-size="9" fill="#64748b" text-anchor="middle">（肺本身无肌肉）</text>
+  <line x1="122" y1="248" x2="150" y2="272" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arr-dna)"/>
+  <line x1="248" y1="248" x2="220" y2="272" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arr-dna)"/>
+  <path d="M 84,398 Q 185,348 286,398" fill="none" stroke="#be185d" stroke-width="3"/>
+  <line x1="185" y1="356" x2="185" y2="392" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr-enz)"/>
+  <text x="300" y="396" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="600">膈肌</text>
+  <line x1="66" y1="232" x2="42" y2="232" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+  <line x1="66" y1="316" x2="42" y2="316" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+  <line x1="324" y1="232" x2="348" y2="232" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+  <line x1="324" y1="316" x2="348" y2="316" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+  <text x="336" y="212" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">胸廓外弹</text>
+  <text x="70" y="424" font-size="9.5" fill="#64748b">膈肌供平静吸气约 70% 做功（下降 1–2 cm，深吸气 7–10 cm）；</text>
+  <text x="70" y="438" font-size="9.5" fill="#64748b">肋间外肌上抬肋骨；膈神经 C3–C5。</text>
+  <text x="386" y="185" font-size="12" fill="#991b1b" font-weight="700">气胸：偶联断裂</text>
+  <rect x="400" y="200" width="230" height="200" rx="12" fill="none" stroke="#475569" stroke-width="2.2"/>
+  <line x1="405" y1="213" x2="442" y2="240" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="398" y="208" font-size="9" fill="#991b1b">破口进气</text>
+  <text x="505" y="218" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">胸膜腔负压归零</text>
+  <circle cx="432" cy="262" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="462" cy="250" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="560" cy="258" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="578" cy="288" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="440" cy="356" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <circle cx="568" cy="352" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <ellipse cx="505" cy="322" rx="42" ry="34" fill="#fee2e2" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="505" y="326" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">塌陷肺</text>
+  <rect x="582" y="248" width="26" height="110" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="595" y="240" font-size="9" fill="#92400e" text-anchor="middle" font-weight="600">纵隔</text>
+  <line x1="556" y1="303" x2="578" y2="303" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <text x="551" y="372" font-size="8.5" fill="#92400e" text-anchor="middle">→ 健侧</text>
+  <text x="386" y="430" font-size="9.5" fill="#475569">张力性气胸（活瓣破口）：</text>
+  <text x="386" y="444.5" font-size="9.5" fill="#475569">腔压进行性升高并超过大气压→纵隔受压、静脉回流锐减，</text>
+  <text x="386" y="459" font-size="9.5" fill="#475569">需紧急穿刺减压；胸腔闭式引流重建负压后肺即复张。</text>
+  <text x="46" y="470" font-size="10" fill="#475569">力传导链：胸廓扩张→胸膜腔压更负→跨肺压（肺泡内压−胸膜腔内压）增大→不含肌肉的肺被动撑开。平静呼气末 P_pl≈−5 cmH<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O、</tspan></text>
+  <text x="46" y="485.5" font-size="10" fill="#475569">吸气末≈−7.5 cmH<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O——两股相反弹性力（肺向内、胸廓向外）隔着浆液对峙所致。</tspan></text>
+  <text x="46" y="524" font-size="10" fill="#475569">临床：胸壁穿通伤或肺大疱破裂→空气闯入胸膜腔→负压归零、肺塌陷为致密团块（肺不张），胸廓外弹、纵隔被推向健侧。</text>
+  <rect x="710" y="132" width="660" height="430" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、肺压力-容积曲线：顺应性与滞后环</text>
+  <line x1="790" y1="470" x2="1312" y2="470" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="790" y1="470" x2="790" y2="190" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="800" y="186" font-size="10" fill="#475569">肺容积 (ml)</text>
+  <line x1="790" y1="470" x2="790" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="790" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="875" y1="470" x2="875" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="875" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">5</text>
+  <line x1="960" y1="470" x2="960" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="960" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="1045" y1="470" x2="1045" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="1045" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">15</text>
+  <line x1="1130" y1="470" x2="1130" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="1130" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="1215" y1="470" x2="1215" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="1215" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">25</text>
+  <line x1="1300" y1="470" x2="1300" y2="476" stroke="#475569" stroke-width="1.6"/>
+  <text x="1300" y="492" font-size="9.5" fill="#64748b" text-anchor="middle">30</text>
+  <line x1="784" y1="470" x2="790" y2="470" stroke="#475569" stroke-width="1.6"/>
+  <text x="780" y="474" font-size="9.5" fill="#64748b" text-anchor="end">0</text>
+  <line x1="784" y1="378.33" x2="790" y2="378.33" stroke="#475569" stroke-width="1.6"/>
+  <text x="780" y="382.33" font-size="9.5" fill="#64748b" text-anchor="end">1000</text>
+  <line x1="784" y1="286.65999999999997" x2="790" y2="286.65999999999997" stroke="#475569" stroke-width="1.6"/>
+  <text x="780" y="290.65999999999997" font-size="9.5" fill="#64748b" text-anchor="end">2000</text>
+  <line x1="784" y1="194.99" x2="790" y2="194.99" stroke="#475569" stroke-width="1.6"/>
+  <text x="780" y="198.99" font-size="9.5" fill="#64748b" text-anchor="end">3000</text>
+  <text x="1045" y="514" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">跨肺压 (cmH<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">O)</tspan></text>
+  <polyline points="790,470 875,442.5 926,405.8 960,378.3 1011,323.3 1062,277.5 1130,231.7 1198,208.9 1300,196.8" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <polyline points="1300,196.8 1215,207.1 1130,225 1045,261.7 960,313.3 875,382.9 824,437.9 790,470" fill="none" stroke="#0f766e" stroke-width="3"/>
+  <polyline points="790,470 841,415 875,369.2 926,295.8 960,250 1011,209.6 1062,198.8 1130,196 1300,195" fill="none" stroke="#d97706" stroke-width="2.2" stroke-dasharray="7 5"/>
+  <line x1="953" y1="385" x2="1047" y2="284" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="1055" y="296" font-size="9.5" fill="#475569" font-weight="600">顺应性 ≈ 200 ml/cmH<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">O</tspan></text>
+  <text x="830" y="425" font-size="10" fill="#0369a1" font-weight="700">充气支</text>
+  <line x1="855" y1="412" x2="880" y2="395" stroke="#0369a1" stroke-width="1.3" marker-end="url(#arr-acc)"/>
+  <text x="1000" y="258" font-size="10" fill="#0f766e" font-weight="700">放气支</text>
+  <text x="985" y="315" font-size="9.5" fill="#475569" font-weight="700">滞后环</text>
+  <text x="798" y="340" font-size="10" fill="#92400e" font-weight="700">盐水充盈</text>
+  <line x1="815" y1="346" x2="838" y2="412" stroke="#d97706" stroke-width="1.3" marker-end="url(#arr-warn)"/>
+  <text x="726" y="526" font-size="10" fill="#475569">von Neergaard（1929）：充以生理盐水消除气-液界面→滞后环几近消失、充气压大降——肺弹性回缩约 2/3 来自表面张力、</text>
+  <text x="726" y="540" font-size="10" fill="#475569">1/3 来自弹性纤维与胶原。</text>
+  <text x="726" y="554" font-size="10" fill="#475569">肺纤维化、肺水肿、ARDS→顺应性↓（肺变「硬」）；肺气肿→顺应性↑（回缩无力、呼气塌陷）。</text>
+  <rect x="30" y="582" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="604.84" font-size="19" fill="#475569" font-weight="700">三、表面活性物质：Laplace 定律的解药</text>
+  <text x="46" y="642" font-size="11.5" fill="#1e293b" font-weight="700">Laplace：P = 2T / r</text>
+  <circle cx="110" cy="706" r="46" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="110" y="710" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">P 低</text>
+  <text x="110" y="772" font-size="9.5" fill="#475569" text-anchor="middle">r 大</text>
+  <circle cx="225" cy="738" r="23" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="2.2"/>
+  <text x="225" y="742" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">P 高</text>
+  <text x="225" y="772" font-size="9.5" fill="#475569" text-anchor="middle">r 小</text>
+  <line x1="200" y1="730" x2="164" y2="718" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="183" y="694" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="600">气流</text>
+  <text x="46" y="806" font-size="9.5" fill="#475569">同一 T 下小泡内压更高（r 减半→P 翻倍），</text>
+  <text x="46" y="820.5" font-size="9.5" fill="#475569">气体被持续压入大泡→小泡进行性塌缩、呼气末全肺萎缩。</text>
+  <text x="46" y="856" font-size="9.5" fill="#475569">DPPC 之解：</text>
+  <text x="46" y="870.5" font-size="9.5" fill="#475569">肺泡缩小→表面分子挤密→小泡 T 更小→大小肺泡回缩压相近→彼此稳定，</text>
+  <text x="46" y="885" font-size="9.5" fill="#475569">并保持肺泡相对干燥。</text>
+  <text x="380" y="642" font-size="11" fill="#475569" font-weight="700">肺泡内壁液面与 DPPC 单分子层</text>
+  <text x="382" y="662" font-size="9" fill="#64748b">亲水头插入液膜、疏水尾翘出气相</text>
+  <rect x="390" y="690" width="270" height="26" fill="#e0f2fe" fill-opacity="0.5" stroke="none"/>
+  <line x1="390" y1="690" x2="660" y2="690" stroke="#0369a1" stroke-width="2"/>
+  <text x="525" y="708" font-size="8.5" fill="#075985" text-anchor="middle">肺泡液（纯水表面张力≈70 dyn/cm）</text>
+  <circle cx="420" cy="690" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <line x1="417" y1="684" x2="412" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <line x1="423" y1="684" x2="428" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <circle cx="465" cy="690" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <line x1="462" y1="684" x2="457" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <line x1="468" y1="684" x2="473" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <circle cx="510" cy="690" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <line x1="507" y1="684" x2="502" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <line x1="513" y1="684" x2="518" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <circle cx="555" cy="690" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <line x1="552" y1="684" x2="547" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <line x1="558" y1="684" x2="563" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <circle cx="600" cy="690" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <line x1="597" y1="684" x2="592" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <line x1="603" y1="684" x2="608" y2="666" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="380" y="748" font-size="9.5" fill="#475569">II 型肺泡上皮细胞合成分泌，主要成分为 DPPC；</text>
+  <text x="380" y="762.5" font-size="9.5" fill="#475569">肺泡缩小时被挤压变密，T 可降至个位数 dyn/cm；</text>
+  <text x="380" y="777" font-size="9.5" fill="#475569">SP-A/B/C/D 协助铺展，SP-A、SP-D 兼任免疫防御。</text>
+  <text x="380" y="812" font-size="9.5" fill="#475569">新生儿呼吸窘迫综合征（NRDS）：早产儿 II 型细胞未成熟</text>
+  <text x="380" y="826.5" font-size="9.5" fill="#475569">（约孕 34 周后才大量合成）→肺进行性塌陷、换气衰竭。</text>
+  <rect x="46" y="894" width="614" height="50" rx="8" fill="#f1f5f9"/>
+  <text x="60" y="914" font-size="9.5" fill="#475569">「从一条物理定律到一套疗法」：Avery 与 Mead（1959）</text>
+  <text x="60" y="928.5" font-size="9.5" fill="#475569">证明 NRDS 本质即表面活性物质缺乏——产前糖皮质激素促肺成熟＋生后外源性替代治疗，使死亡率大幅下降。</text>
+  <rect x="710" y="582" width="660" height="390" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="604.84" font-size="19" fill="#475569" font-weight="700">四、气道阻力分布与等压点：呼气用力悖论</text>
+  <text x="726" y="642" font-size="10.5" fill="#475569" font-weight="700">阻力分布（Raw 1–2 cmH<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3">O/(L·s)，经鼻呼吸）</tspan></text>
+  <text x="726" y="676" font-size="10" fill="#475569">鼻腔</text>
+  <rect x="800" y="664" width="110" height="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="918" y="676" font-size="9.5" fill="#075985" font-weight="600">≈ 一半</text>
+  <text x="726" y="706" font-size="10" fill="#475569">中等支气管</text>
+  <rect x="800" y="694" width="95" height="16" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="903" y="706" font-size="9.5" fill="#075985" font-weight="600">其余主要部分</text>
+  <text x="726" y="736" font-size="10" fill="#475569">细支气管</text>
+  <rect x="800" y="724" width="14" height="16" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="822" y="736" font-size="9.5" fill="#065f46" font-weight="600">并联总横截面积巨大→合阻力很小</text>
+  <text x="726" y="770" font-size="9.5" fill="#475569">「最细的管道不是最大的障碍」；迷走 ACh–M<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-2.1"> 收缩、</tspan></text>
+  <text x="726" y="784.5" font-size="9.5" fill="#475569">交感与儿茶酚胺经 β<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 受体舒张——哮喘痉挛与 β</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 激动剂的治疗逻辑。</tspan></text>
+  <text x="1050" y="642" font-size="10.5" fill="#475569" font-weight="700">等压点与动态压缩</text>
+  <ellipse cx="1082" cy="722" rx="26" ry="30" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1082" y="726" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">肺泡</text>
+  <rect x="1106" y="706" width="74" height="36" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <path d="M 1180,706 L 1195,714 L 1210,706" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <path d="M 1180,742 L 1195,734 L 1210,742" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <rect x="1210" y="706" width="90" height="36" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <line x1="1195" y1="682" x2="1195" y2="762" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="1195" y="674" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">等压点（P<tspan dy="2.0" font-size="6.5">气道</tspan><tspan dy="-2.0">=P</tspan><tspan dy="2.0" font-size="6.5">pl</tspan><tspan dy="-2.0">）</tspan></text>
+  <line x1="1255" y1="692" x2="1255" y2="702" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-bad)"/>
+  <line x1="1255" y1="756" x2="1255" y2="746" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-bad)"/>
+  <text x="1255" y="682" font-size="8.5" fill="#991b1b" text-anchor="middle" font-weight="600">P_pl 挤压</text>
+  <text x="1255" y="774" font-size="9" fill="#64748b" text-anchor="middle">口侧</text>
+  <line x1="1130" y1="690" x2="1112" y2="700" stroke="#0369a1" stroke-width="1.3" marker-end="url(#arr-acc)"/>
+  <text x="1054" y="688" font-size="8.5" fill="#075985">P 递减</text>
+  <text x="1050" y="800" font-size="9.5" fill="#475569">用力呼气：气道内压自肺泡向口侧衰减，</text>
+  <text x="1050" y="814.5" font-size="9.5" fill="#475569">至与胸膜腔压相等处以口侧受净外压而动态压缩；</text>
+  <text x="1050" y="829" font-size="9.5" fill="#475569">肺气肿回缩力弱→等压点向小气道移位→小气道提前塌陷。</text>
+  <text x="1050" y="852" font-size="9.5" fill="#475569">缩唇呼吸：提高口侧压、</text>
+  <text x="1050" y="866.5" font-size="9.5" fill="#475569">把等压点外移——「再用力反更不通气」的呼气用力悖论的代偿解。</text>
+  <rect x="726" y="894" width="628" height="62" rx="8" fill="#f1f5f9"/>
+  <text x="740" y="914" font-size="9.5" fill="#475569">呼吸功＝弹性功（约与潮气量平方成正比）＋阻力功（约与气流量平方成正比），安静时仅占全身能耗 3%–5%；</text>
+  <text x="740" y="928.5" font-size="9.5" fill="#475569">浅快省弹性功但阻力功与死腔占比陡增，深慢相反——机体自发落于约 12–16 次/分的省功区间；COPD 倾向深慢、肺纤维化倾向浅快。</text>
+</svg>

@@ -72,6 +72,8 @@ const SUBJECT_TAB_ACTIVE: Record<SubjectId, string> = {
     'data-[state=active]:bg-red-500/10 dark:data-[state=active]:bg-red-500/15 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-none',
   'electron-microscopy':
     'data-[state=active]:bg-stone-500/10 dark:data-[state=active]:bg-stone-500/15 data-[state=active]:text-stone-700 dark:data-[state=active]:text-stone-300 data-[state=active]:shadow-none',
+  physiology:
+    'data-[state=active]:bg-pink-500/10 dark:data-[state=active]:bg-pink-500/15 data-[state=active]:text-pink-700 dark:data-[state=active]:text-pink-400 data-[state=active]:shadow-none',
 }
 
 /** 学科主按钮配色（含 hover 深色，避免默认 hover 变主色） */
@@ -88,6 +90,7 @@ const SUBJECT_BUTTON: Record<SubjectId, string> = {
   'structural-biology': 'bg-purple-600 text-white hover:bg-purple-700',
   'x-ray-crystallography': 'bg-red-600 text-white hover:bg-red-700',
   'electron-microscopy': 'bg-stone-600 text-white hover:bg-stone-700',
+  physiology: 'bg-pink-600 text-white hover:bg-pink-700',
 }
 
 /** 章节卡学科色左边框 */
@@ -104,6 +107,7 @@ const SUBJECT_LEFT_BORDER: Record<SubjectId, string> = {
   'structural-biology': 'border-l-purple-500',
   'x-ray-crystallography': 'border-l-red-500',
   'electron-microscopy': 'border-l-stone-500',
+  physiology: 'border-l-pink-500',
 }
 
 interface AttemptApiItem {

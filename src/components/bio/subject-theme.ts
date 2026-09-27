@@ -13,6 +13,7 @@ import {
   Boxes,
   Gem,
   Aperture,
+  HeartPulse,
 } from 'lucide-react'
 
 /** 学科主题色映射（Tailwind 类名） */
@@ -202,6 +203,20 @@ export const subjectThemes: Record<
       hover: 'hover:border-stone-500/60 hover:shadow-stone-500/10',
     },
     colorName: '磐灰',
+  },
+  physiology: {
+    icon: HeartPulse,
+    classes: {
+      bg: 'bg-pink-600 text-white',
+      bgSoft: 'bg-pink-500/10',
+      text: 'text-pink-700 dark:text-pink-400',
+      border: 'border-pink-500/40',
+      ring: 'ring-pink-500/30',
+      gradient: 'from-pink-500/90 to-rose-600/90',
+      badge: 'bg-pink-500/15 text-pink-700 dark:text-pink-400 border-pink-500/30',
+      hover: 'hover:border-pink-500/60 hover:shadow-pink-500/10',
+    },
+    colorName: '桃夭',
   },
 }
 

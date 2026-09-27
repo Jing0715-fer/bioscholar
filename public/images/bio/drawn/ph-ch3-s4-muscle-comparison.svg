@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">三种肌肉的对比：骨骼肌、心肌与平滑肌</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">骨骼肌快钠尖峰1–5ms配DHPR-RyR1构象偶联与肌钙蛋白开关、可完全强直；心肌平台期200–300ms由L型钙内流与K<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">外流相抵，有效不应期防强直，外钙触发钙致钙释放；</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">平滑肌经Ca<tspan dy="-5.8" font-size="12.2">2+</tspan><tspan dy="5.8">-钙调蛋白-MLCK磷酸化驱动横桥，latch桥以极低能耗维持张力——快、稳、省三种工况</tspan></text>
+  <rect x="30" y="132" width="1340" height="308" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三种动作电位波形：快尖峰・平台期・慢波</text>
+  <text x="245" y="192" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">骨骼肌：快 Na<tspan dy="-4.3" font-size="9.0">+</tspan><tspan dy="4.3"> 尖峰</tspan></text>
+  <line x1="80" y1="350" x2="80" y2="208" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="80" y1="350" x2="420" y2="350" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <polyline points="88,308 150,308 168,226 190,314 210,308 355,308" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="148" y="304" font-size="9" fill="#64748b" text-anchor="end">-70 mV</text>
+  <text x="192" y="222" font-size="8.5" fill="#64748b">+30 mV</text>
+  <text x="230" y="234" font-size="9.5" fill="#134e4a" font-weight="700">速开速关（1–5 ms）</text>
+  <text x="245" y="384" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">时间（ms）</text>
+  <text x="60" y="408" font-size="9.5" fill="#475569">全或无尖峰：绝对不应期 0.5–2 ms 封顶发放频率，靠频率编码肌力</text>
+  <text x="680" y="192" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">心肌：平台期 200–300 ms</text>
+  <line x1="515" y1="350" x2="515" y2="208" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="515" y1="350" x2="855" y2="350" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="528" y="220" width="250" height="105" fill="#fee2e2" fill-opacity="0.4"/>
+  <polyline points="515,321 528,321 545,225 560,235 700,233 760,321 840,321" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="538" y="214" font-size="10" fill="#1e293b" font-weight="700">0</text>
+  <text x="565" y="222" font-size="10" fill="#1e293b" font-weight="700">1</text>
+  <text x="628" y="218" font-size="10" fill="#1e293b" font-weight="700">2</text>
+  <text x="735" y="248" font-size="10" fill="#1e293b" font-weight="700">3</text>
+  <text x="788" y="312" font-size="10" fill="#1e293b" font-weight="700">4</text>
+  <text x="575" y="262" font-size="9" fill="#92400e" font-weight="700">L 型 Ca<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1"> 内流 ≈ K</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 外流</tspan></text>
+  <text x="648" y="342" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">有效不应期</text>
+  <text x="842" y="317" font-size="9" fill="#64748b" text-anchor="end">-85 mV</text>
+  <text x="680" y="384" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">时间（ms）</text>
+  <text x="495" y="408" font-size="9.5" fill="#475569">平台期拉长不应期：Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 通道持续失活至舒张早期——防强直、保充盈</tspan></text>
+  <text x="1115" y="192" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">平滑肌：慢波 ＋ 钙峰</text>
+  <line x1="950" y1="350" x2="950" y2="208" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="950" y1="350" x2="1255" y2="350" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <line x1="950" y1="297" x2="1250" y2="297" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="1250" y="293" font-size="8.5" fill="#64748b" text-anchor="end" font-weight="700">阈电位</text>
+  <polyline points="950,320 975,308 1000,297 1012,238 1022,312 1040,320 1065,308 1090,297 1102,238 1112,312 1130,320 1155,308 1180,297 1192,238 1202,312 1220,320 1250,320" fill="none" stroke="#be185d" stroke-width="2.4"/>
+  <text x="950" y="232" font-size="9" fill="#831843" font-weight="700">慢波（起搏）</text>
+  <text x="1150" y="228" font-size="9" fill="#92400e" font-weight="700">L 型 Ca<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1"> 峰</tspan></text>
+  <text x="1115" y="384" font-size="11" fill="#475569" text-anchor="middle" font-weight="600">时间（s）</text>
+  <text x="930" y="408" font-size="9.5" fill="#475569">慢波达阈发钙峰：波幅与频率决定张力，时程变异大</text>
+  <rect x="30" y="460" width="1340" height="525" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="482.84" font-size="19" fill="#475569" font-weight="700">二、三种肌肉的收缩调控设计对比：快・稳・省</text>
+  <rect x="46" y="520" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="547.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">特性</text>
+  <rect x="156" y="520" width="390" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="547.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">骨骼肌（快）</text>
+  <rect x="546" y="520" width="400" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="547.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">心肌（稳）</text>
+  <rect x="946" y="520" width="400" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="547.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">平滑肌（省）</text>
+  <rect x="46" y="564" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="586" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">动作电位</text>
+  <rect x="156" y="564" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="586" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">尖峰 1–5 ms，频率编码张力</text>
+  <rect x="546" y="564" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="586" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">快升＋平台 200–300 ms</text>
+  <rect x="946" y="564" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="586" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">慢波＋钙峰，变异大</text>
+  <rect x="46" y="597" width="1300" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="597" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="619" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">钙来源</text>
+  <rect x="156" y="597" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="619" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">肌质网 RyR1（不看外钙）</text>
+  <rect x="546" y="597" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="619" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">外钙触发 RyR2 释放</text>
+  <rect x="946" y="597" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="619" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">IP<tspan dy="2.4" font-size="7.9">3</tspan><tspan dy="-2.4">R 释放＋L 型通道外钙</tspan></text>
+  <rect x="46" y="630" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="652" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">偶联机制</text>
+  <rect x="156" y="630" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">DHPR-RyR1 构象直连（三联体）</text>
+  <rect x="546" y="630" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">钙致钙释放 CICR（二联体）</text>
+  <rect x="946" y="630" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="652" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">Ca<tspan dy="-3.7" font-size="7.9">2+</tspan><tspan dy="3.7">-CaM-MLCK 磷酸化</tspan></text>
+  <rect x="46" y="663" width="1300" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="663" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="685" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">钙开关</text>
+  <rect x="156" y="663" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="685" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">肌钙蛋白 C</text>
+  <rect x="546" y="663" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="685" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">肌钙蛋白 C＋钙瞬变放大</text>
+  <rect x="946" y="663" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="685" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">钙调蛋白（无肌钙蛋白）</text>
+  <rect x="46" y="696" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="718" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">强直能力</text>
+  <rect x="156" y="696" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="718" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">可完全强直（3–5 倍单收缩）</text>
+  <rect x="546" y="696" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="718" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">有效不应期长 → 不强直</text>
+  <rect x="946" y="696" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="718" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">持续张力（latch 闩锁桥）</text>
+  <rect x="46" y="729" width="1300" height="33" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="729" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="751" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">调控入口</text>
+  <rect x="156" y="729" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="751" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">运动单位募集＋频率</text>
+  <rect x="546" y="729" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="751" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">β<tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4"> 正性变力、力-频率</tspan></text>
+  <rect x="946" y="729" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="751" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">自主＋激素（Gq/RhoA/NO）</text>
+  <rect x="46" y="762" width="110" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="101" y="784" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">速度与能耗</text>
+  <rect x="156" y="762" width="390" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="351" y="784" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">快、能耗高（收缩舒张双耗）</text>
+  <rect x="546" y="762" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="746" y="784" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">稳、连续做功</text>
+  <rect x="946" y="762" width="400" height="33" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1146" y="784" font-size="11" fill="#475569" text-anchor="middle" font-weight="500">慢、latch 省能</text>
+  <text x="46" y="830" font-size="10.5" fill="#475569">心肌注记：CICR 是局部化正反馈——外钙触发 RyR2 迸出「钙火花」，全细胞释放量与触发钙流量成比例，</text>
+  <text x="46" y="847" font-size="10.5" fill="#475569">钙内流量因此是肌力主旋钮；β<tspan dy="2.3" font-size="7.6">1</tspan><tspan dy="-2.3">-Gs-cAMP-PKA 三重正性变力：磷酸化 L 型通道（触发钙↑）、RyR2 与受磷蛋白</tspan></text>
+  <text x="46" y="864" font-size="10.5" fill="#475569">（解除 SERCA 抑制 → 舒张提速、钙库充盈）；力-频率阶梯与 Frank-Starling 定律共同自适应心输出量</text>
+  <text x="700" y="830" font-size="10.5" fill="#475569">平滑肌注记：无肌钙蛋白，Ca<tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6">-钙调蛋白激活 MLCK 磷酸化 20 kDa 调节轻链方能起步；</tspan></text>
+  <text x="700" y="847" font-size="10.5" fill="#475569">latch 桥＝轻链去磷酸化后仍以极慢速率附着，以微小 ATP 消耗长期守住张力；RhoA-ROCK 抑制 MLCP＝钙增敏</text>
+  <text x="700" y="864" font-size="10.5" fill="#475569">（血管紧张素 II 长效缩血管）；电-机械（L 型外钙）与药-机械（Gq-IP<tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3">）双入口并行接入同一台钙-钙调蛋白机器</tspan></text>
+</svg>

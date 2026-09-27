@@ -34,6 +34,12 @@ import { electronMicroscopyGlossaryA1 } from './glossary-electron-microscopy-a1'
 import { electronMicroscopyGlossaryA2 } from './glossary-electron-microscopy-a2'
 import { electronMicroscopyGlossaryA3 } from './glossary-electron-microscopy-a3'
 import { electronMicroscopyGlossaryA4 } from './glossary-electron-microscopy-a4'
+import { physiologyGlossaryP1 } from './glossary-physiology-p1'
+import { physiologyGlossaryP2 } from './glossary-physiology-p2'
+import { physiologyGlossaryP3 } from './glossary-physiology-p3'
+import { physiologyGlossaryP4 } from './glossary-physiology-p4'
+import { physiologyGlossaryP5 } from './glossary-physiology-p5'
+import { physiologyGlossaryP6 } from './glossary-physiology-p6'
 
 export const glossary: GlossaryTerm[] = [
   // ---------- 生物化学（g-001 ~ g-026） ----------
@@ -1218,4 +1224,10 @@ export const glossary: GlossaryTerm[] = [
   ...electronMicroscopyGlossaryA2,
   ...electronMicroscopyGlossaryA3,
   ...electronMicroscopyGlossaryA4,
+  ...physiologyGlossaryP1,
+  ...physiologyGlossaryP2,
+  ...physiologyGlossaryP3,
+  ...physiologyGlossaryP4,
+  ...physiologyGlossaryP5,
+  ...physiologyGlossaryP6,
 ]

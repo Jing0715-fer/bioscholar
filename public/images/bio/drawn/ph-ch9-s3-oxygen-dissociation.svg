@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">气体运输：氧解离曲线、波尔效应与 CO<tspan dy="7.3" font-size="23.8">2</tspan><tspan dy="-7.3"> 的三形态</tspan></text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">P<tspan dy="3.7" font-size="12.2">50</tspan><tspan dy="-3.7">26–27mmHg，肺点PO</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">100→SaO</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">98%、组织点40→75%；右移＝H</tspan><tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">/CO</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">/温度/2,3-DPG升高（波尔效应）；CO</tspan><tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">以HCO</tspan><tspan dy="3.7" font-size="12.2">3</tspan><tspan dy="-9.5" font-size="12.2">-</tspan><tspan dy="5.8">70%、氨基甲酸Hb23%、溶解7%三形态运输，</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">氯转移扩展仓库、何尔登效应促肺端卸碳</text>
+  <rect x="30" y="132" width="700" height="530" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、氧合血红蛋白解离曲线：S 形的装卸设计</text>
+  <line x1="110" y1="555" x2="655" y2="555" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="110" y1="555" x2="110" y2="180" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="120" y="177" font-size="10" fill="#475569">血氧饱和度 (%)</text>
+  <line x1="110" y1="555" x2="110" y2="561" stroke="#475569" stroke-width="1.6"/>
+  <text x="110" y="575" font-size="9.5" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="206.35999999999999" y1="555" x2="206.35999999999999" y2="561" stroke="#475569" stroke-width="1.6"/>
+  <text x="206.35999999999999" y="575" font-size="9.5" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="302.71999999999997" y1="555" x2="302.71999999999997" y2="561" stroke="#475569" stroke-width="1.6"/>
+  <text x="302.71999999999997" y="575" font-size="9.5" fill="#64748b" text-anchor="middle">40</text>
+  <line x1="399.08" y1="555" x2="399.08" y2="561" stroke="#475569" stroke-width="1.6"/>
+  <text x="399.08" y="575" font-size="9.5" fill="#64748b" text-anchor="middle">60</text>
+  <line x1="495.43999999999994" y1="555" x2="495.43999999999994" y2="561" stroke="#475569" stroke-width="1.6"/>
+  <text x="495.43999999999994" y="575" font-size="9.5" fill="#64748b" text-anchor="middle">80</text>
+  <line x1="591.8" y1="555" x2="591.8" y2="561" stroke="#475569" stroke-width="1.6"/>
+  <text x="591.8" y="575" font-size="9.5" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="104" y1="555" x2="110" y2="555" stroke="#475569" stroke-width="1.6"/>
+  <text x="100" y="559" font-size="9.5" fill="#64748b" text-anchor="end">0</text>
+  <line x1="104" y1="462.5" x2="110" y2="462.5" stroke="#475569" stroke-width="1.6"/>
+  <text x="100" y="466.5" font-size="9.5" fill="#64748b" text-anchor="end">25</text>
+  <line x1="104" y1="370" x2="110" y2="370" stroke="#475569" stroke-width="1.6"/>
+  <text x="100" y="374" font-size="9.5" fill="#64748b" text-anchor="end">50</text>
+  <line x1="104" y1="277.5" x2="110" y2="277.5" stroke="#475569" stroke-width="1.6"/>
+  <text x="100" y="281.5" font-size="9.5" fill="#64748b" text-anchor="end">75</text>
+  <line x1="104" y1="185" x2="110" y2="185" stroke="#475569" stroke-width="1.6"/>
+  <text x="100" y="189" font-size="9.5" fill="#64748b" text-anchor="end">100</text>
+  <text x="380" y="599" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="600">PO<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3"> (mmHg)</tspan></text>
+  <path d="M110,555 C118.0,547.0 142.1,528.5 158.2,506.9 C174.3,485.3 193.2,448.3 206.4,425.5 C219.7,402.7 229.7,383.6 237.7,370 C245.7,356.4 243.7,359.5 254.5,344.1 C265.3,328.7 286.6,294.1 302.7,277.5 C318.8,260.9 334.8,253.4 350.9,244.2 C367.0,234.9 383.0,227.8 399.1,222 C415.2,216.2 431.2,212.7 447.3,209.1 C463.4,205.5 479.4,202.7 495.5,200.5 C511.6,198.3 527.6,197.4 543.6,196.1 C559.6,194.8 575.7,193.3 591.8,192.4 C607.9,191.5 632.0,190.9 640,190.6" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <polyline points="110,555 119.6,444 124.5,370 134.1,277.5 148.5,222 167.8,196.1 187.1,188.7" fill="none" stroke="#6d28d9" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="175" y="245" font-size="9" fill="#4c1d95" font-weight="600">肌红蛋白 P<tspan dy="2.0" font-size="6.5">50</tspan><tspan dy="-2.0">≈3</tspan></text>
+  <line x1="591.8" y1="555" x2="591.8" y2="192.4" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="110" y1="192.4" x2="591.8" y2="192.4" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="591.8" cy="192.4" r="5" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="495" y="182" font-size="9.5" fill="#991b1b" font-weight="700">肺点：100→98%</text>
+  <line x1="302.7" y1="555" x2="302.7" y2="277.5" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="110" y1="277.5" x2="302.7" y2="277.5" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="302.7" cy="277.5" r="5" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="330" y="300" font-size="9.5" fill="#831843" font-weight="700">组织点 40→75%（安静卸载约四分之一）</text>
+  <text x="330" y="318" font-size="9" fill="#64748b">运动组织 15–20 mmHg → 卸载超 80%</text>
+  <line x1="237.7" y1="555" x2="237.7" y2="370" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="110" y1="370" x2="237.7" y2="370" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="150" y="357" font-size="9.5" fill="#475569" font-weight="700">P<tspan dy="2.1" font-size="6.8">50</tspan><tspan dy="-2.1"> 26–27</tspan></text>
+  <text x="160" y="225" font-size="9.5" fill="#475569" font-weight="600">平台＝装载保险（60→90%）</text>
+  <line x1="250" y1="230" x2="420" y2="209" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-mute)"/>
+  <text x="130" y="430" font-size="9.5" fill="#475569" font-weight="600">陡坡＝卸载利器</text>
+  <line x1="198" y1="428" x2="240" y2="396" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr-mute)"/>
+  <text x="46" y="624" font-size="9.5" fill="#475569">S 形根源：Hb 四聚体变构协同（Hill 系数≈2.8）——首个 O<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 结合促 T→R 态转换、后续亚基亲和力逐个升高。</tspan></text>
+  <text x="46" y="644" font-size="9.5" fill="#475569">溶解态仅 1.5%（0.003 ml/dL/mmHg）却握有 PO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">「所有权」；结合态 98.5%＝1.34 ml O</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">/g Hb × 15 g/dL ≈ 20 ml/dL 储备。</tspan></text>
+  <rect x="750" y="132" width="620" height="530" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、曲线位移：波尔效应与它的镜像</text>
+  <text x="766" y="186" font-size="11" fill="#075985" font-weight="700">左移（P<tspan dy="2.4" font-size="7.9">50</tspan><tspan dy="-2.4">↓，卸氧吝啬）</tspan></text>
+  <text x="1060" y="186" font-size="11" fill="#991b1b" font-weight="700">右移（P<tspan dy="2.4" font-size="7.9">50</tspan><tspan dy="-2.4">↑，卸氧增强）</tspan></text>
+  <circle cx="772" cy="214.5" r="2.6" fill="#0369a1"/>
+  <text x="782" y="218" font-size="9.5" fill="#475569">pH↑（碱中毒）/ 低温</text>
+  <circle cx="772" cy="241.5" r="2.6" fill="#0369a1"/>
+  <text x="782" y="245" font-size="9.5" fill="#475569">2,3-DPG↓（贮存血）</text>
+  <circle cx="772" cy="268.5" r="2.6" fill="#0369a1"/>
+  <text x="782" y="272" font-size="9.5" fill="#475569">胎儿 Hb：γ 链与 2,3-DPG 亲和弱——胎盘逆向取氧</text>
+  <circle cx="772" cy="295.5" r="2.6" fill="#0369a1"/>
+  <text x="782" y="299" font-size="9.5" fill="#475569">CO 中毒：亲和力 200–250 倍、剩余位点左移</text>
+  <circle cx="1066" cy="214.5" r="2.6" fill="#dc2626"/>
+  <text x="1076" y="218" font-size="9.5" fill="#475569">pH↓、PCO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">↑——波尔效应本体</tspan></text>
+  <circle cx="1066" cy="241.5" r="2.6" fill="#dc2626"/>
+  <text x="1076" y="245" font-size="9.5" fill="#475569">温度↑（运动组织产热）</text>
+  <circle cx="1066" cy="268.5" r="2.6" fill="#dc2626"/>
+  <text x="1076" y="272" font-size="9.5" fill="#475569">2,3-DPG↑：高原适应、慢性缺氧</text>
+  <circle cx="1066" cy="295.5" r="2.6" fill="#dc2626"/>
+  <text x="1076" y="299" font-size="9.5" fill="#475569">酸、热与 CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 在需氧最大处就地促卸氧</tspan></text>
+  <line x1="790" y1="455" x2="968" y2="455" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <line x1="790" y1="455" x2="790" y2="355" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <polyline points="790,455 810.4,426.5 832.5,402.75 866.5,379 909,366.65 960,363.15" fill="none" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <polyline points="790,455 801.9,421.75 815.5,398 841,374.25 875,365.7 917.5,362.1" fill="none" stroke="#0369a1" stroke-width="2.2"/>
+  <line x1="809" y1="407.5" x2="827" y2="407.5" stroke="#0369a1" stroke-width="1.3" marker-end="url(#arr-acc)" marker-start="url(#arr-acc)"/>
+  <text x="831" y="421" font-size="8.5" fill="#075985" font-weight="600">P<tspan dy="1.9" font-size="6.1">50</tspan><tspan dy="-1.9">↓</tspan></text>
+  <text x="875" y="477" font-size="8.5" fill="#64748b" text-anchor="middle">左移（实线）vs 正常（虚线）</text>
+  <line x1="1084" y1="455" x2="1262" y2="455" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <line x1="1084" y1="455" x2="1084" y2="355" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <polyline points="1084,455 1104.4,426.5 1126.5,402.75 1160.5,379 1203,366.65 1254,363.15" fill="none" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <polyline points="1084,455 1114.6,426.5 1143.5,402.75 1186,379 1228.5,366.65 1254,363.15" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <line x1="1121" y1="407.5" x2="1138" y2="407.5" stroke="#dc2626" stroke-width="1.3" marker-end="url(#arr-bad)" marker-start="url(#arr-bad)"/>
+  <text x="1142" y="421" font-size="8.5" fill="#991b1b" font-weight="600">P<tspan dy="1.9" font-size="6.1">50</tspan><tspan dy="-1.9">↑</tspan></text>
+  <text x="1169" y="477" font-size="8.5" fill="#64748b" text-anchor="middle">右移（实线）vs 正常（虚线）</text>
+  <text x="766" y="508" font-size="9.5" fill="#475569">波尔效应（1904，C. Bohr）：H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">/CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 降低 Hb 氧亲和力——酸、热与 CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 在需氧最大处就地促卸氧（负反馈式「按需投递」）；</tspan></text>
+  <text x="766" y="522.5" font-size="9.5" fill="#475569">2,3-DPG 由红细胞糖酵解 Rapoport-Luebering 旁路生成、与脱氧 Hb 中央腔结合，高原数小时至数天进行性升高。</text>
+  <rect x="766" y="578" width="590" height="55" rx="8" fill="#fee2e2" fill-opacity="0.4" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="780" y="598" font-size="9.5" fill="#475569">CO 中毒：亲和力≈O<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 的 200–250 倍且剩余位点左移——樱桃红假象＋脉搏血氧仪读数假性正常；</tspan></text>
+  <text x="780" y="612.5" font-size="9.5" fill="#475569">治疗＝脱离接触＋高浓度乃至高压氧把 CO 挤出位点竞争。</text>
+  <text x="766" y="650" font-size="9.5" fill="#64748b">发绀取决于还原 Hb&gt;5 g/dL（非 SaO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">）：重度贫血缺氧深重却面色苍白；真性红细胞增多症血氧正常亦可发绀。</tspan></text>
+  <rect x="30" y="682" width="700" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="704.84" font-size="19" fill="#475569" font-weight="700">三、CO<tspan dy="4.2" font-size="13.7">2</tspan><tspan dy="-4.2"> 的三种形态与氯转移</tspan></text>
+  <path d="M 150,830 L 150,752 A 78,78 0 1 1 75.8,854.1 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 150,830 L 75.8,854.1 A 78,78 0 0 1 116.8,759.4 Z" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <path d="M 150,830 L 116.8,759.4 A 78,78 0 0 1 150,752 Z" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="46" y="730" font-size="10.5" fill="#475569" font-weight="700">运输形态占比</text>
+  <text x="215" y="893" font-size="9.5" fill="#075985" font-weight="600">碳酸氢盐 HCO<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-5.3" font-size="6.8">-</tspan><tspan dy="3.2"> 70%</tspan></text>
+  <text x="30" y="758" font-size="9.5" fill="#78350f" font-weight="600">氨基甲酸 Hb</text>
+  <text x="30" y="773" font-size="9.5" fill="#78350f" font-weight="600">23%</text>
+  <text x="96" y="745" font-size="9.5" fill="#92400e" font-weight="600">溶解 7%</text>
+  <rect x="358" y="720" width="345" height="200" rx="18" fill="#fef3c7" fill-opacity="0.3" stroke="#be123c" stroke-width="1.8"/>
+  <text x="370" y="742" font-size="9.5" fill="#78350f" font-weight="600">血浆</text>
+  <ellipse cx="490" cy="830" rx="112" ry="78" fill="#ffffff" stroke="#475569" stroke-width="2.2"/>
+  <text x="490" y="758" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">红细胞</text>
+  <rect x="427.65" y="785.35" width="124.7" height="15.299999999999999" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="490" y="796.24" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">碳酸酐酶（限速阀门）</text>
+  <text x="405" y="830" font-size="10" fill="#1e293b" font-weight="600">CO<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">＋H</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O → H</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">＋HCO</tspan><tspan dy="2.2" font-size="7.2">3</tspan><tspan dy="-5.6" font-size="7.2">-</tspan></text>
+  <text x="430" y="863" font-size="8.5" fill="#78350f">Hb＋CO<tspan dy="1.9" font-size="6.1">2</tspan><tspan dy="-1.9"> → 氨基甲酸 Hb（23%）</tspan></text>
+  <text x="430" y="880" font-size="8" fill="#64748b">H<tspan dy="-2.7" font-size="5.8">+</tspan><tspan dy="2.7"> → Hb 组氨酸缓冲</tspan></text>
+  <rect x="378" y="840" width="10" height="40" rx="3" fill="#6d28d9"/>
+  <line x1="400" y1="855" x2="370" y2="855" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="395" y="845" font-size="8.5" fill="#075985" font-weight="600">HCO<tspan dy="1.9" font-size="6.1">3</tspan><tspan dy="-4.8" font-size="6.1">-</tspan><tspan dy="2.9"> 出</tspan></text>
+  <line x1="370" y1="872" x2="400" y2="872" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="395" y="890" font-size="8.5" fill="#92400e" font-weight="600">Cl<tspan dy="-2.9" font-size="6.1">-</tspan><tspan dy="2.9"> 入（氯转移）</tspan></text>
+  <line x1="358" y1="898" x2="378" y2="884" stroke="#64748b" stroke-width="1"/>
+  <text x="330" y="902" font-size="8.5" fill="#4c1d95">AE1（带 3 蛋白）</text>
+  <circle cx="640" cy="815" r="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="640" y="818" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">CO<tspan dy="1.6" font-size="5.4">2</tspan></text>
+  <line x1="627" y1="815" x2="606" y2="815" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <text x="612" y="782" font-size="9" fill="#64748b">自组织扩散入</text>
+  <text x="46" y="935" font-size="9.5" fill="#475569">碳酸酐酶把水合反应提速数个数量级＝整个运输体系的限速阀门；氯转移维持电中性并把 HCO<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-5.3" font-size="6.8">-</tspan><tspan dy="3.2"> 仓库由红细胞扩展至整个血浆。</tspan></text>
+  <text x="46" y="955" font-size="9.5" fill="#475569">CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 溶解度高：仅 7% 溶解态已承担部分运输与全部分压信号；脱氧 Hb 是更弱的酸＝更好的质子受体（何尔登效应伏笔）。</tspan></text>
+  <rect x="750" y="682" width="620" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="704.84" font-size="19" fill="#475569" font-weight="700">四、何尔登效应与线性的 CO<tspan dy="4.2" font-size="13.7">2</tspan><tspan dy="-4.2"> 解离曲线</tspan></text>
+  <line x1="820" y1="920" x2="1112" y2="920" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="820" y1="920" x2="820" y2="725" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="830" y="738" font-size="9.5" fill="#475569">CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 含量 (ml/dL)</tspan></text>
+  <line x1="913.34" y1="920" x2="913.34" y2="926" stroke="#475569" stroke-width="1.6"/>
+  <text x="913.34" y="940" font-size="9" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="1006.6800000000001" y1="920" x2="1006.6800000000001" y2="926" stroke="#475569" stroke-width="1.6"/>
+  <text x="1006.6800000000001" y="940" font-size="9" fill="#64748b" text-anchor="middle">40</text>
+  <line x1="1100.02" y1="920" x2="1100.02" y2="926" stroke="#475569" stroke-width="1.6"/>
+  <text x="1100.02" y="940" font-size="9" fill="#64748b" text-anchor="middle">60</text>
+  <line x1="814" y1="872.5" x2="820" y2="872.5" stroke="#475569" stroke-width="1.6"/>
+  <text x="810" y="876.5" font-size="9" fill="#64748b" text-anchor="end">44</text>
+  <line x1="814" y1="825" x2="820" y2="825" stroke="#475569" stroke-width="1.6"/>
+  <text x="810" y="829" font-size="9" fill="#64748b" text-anchor="end">48</text>
+  <line x1="814" y1="777.5" x2="820" y2="777.5" stroke="#475569" stroke-width="1.6"/>
+  <text x="810" y="781.5" font-size="9" fill="#64748b" text-anchor="end">52</text>
+  <line x1="814" y1="730" x2="820" y2="730" stroke="#475569" stroke-width="1.6"/>
+  <text x="810" y="734" font-size="9" fill="#64748b" text-anchor="end">56</text>
+  <text x="965" y="960" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">PCO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> (mmHg)</tspan></text>
+  <polyline points="913.3,854.8 960,825.1 1006.7,795.4 1053.3,765.7 1100,736" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <polyline points="913.3,896.3 960,866.6 1006.7,837 1053.3,807.3 1100,777.6" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="1108" y="740" font-size="9.5" fill="#831843" font-weight="700">脱氧血</text>
+  <text x="1108" y="782" font-size="9.5" fill="#075985" font-weight="700">氧合血</text>
+  <circle cx="1034.7" cy="766.6" r="4.5" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="950" y="752" font-size="9" fill="#831843" font-weight="600">静脉点 46 / 52 ml/dL</text>
+  <circle cx="1006.7" cy="837" r="4.5" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1015" y="856" font-size="9" fill="#075985" font-weight="600">动脉点 40 / 48</text>
+  <line x1="1030" y1="772" x2="1010" y2="830" stroke="#475569" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-ink)"/>
+  <text x="890" y="800" font-size="8.5" fill="#475569" font-weight="600">功能环：卸碳≈4 ml/dL</text>
+  <text x="1160" y="735" font-size="11.5" fill="#1e293b" font-weight="700">何尔登效应</text>
+  <text x="1160" y="760" font-size="9.5" fill="#475569">肺端 Hb 摄 O<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> → 对 CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 与 H</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 亲和力双降：</tspan></text>
+  <text x="1160" y="774" font-size="9.5" fill="#475569">H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 释出推动碳酸氢盐池逆反应、</tspan></text>
+  <text x="1160" y="788" font-size="9.5" fill="#475569">氨基甲酸键解离——氧合促成卸碳。</text>
+  <text x="1160" y="812" font-size="9.5" fill="#475569">与波尔效应（CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 促卸氧）互为镜像：</tspan></text>
+  <text x="1160" y="826" font-size="9.5" fill="#475569">同一别构机器上 O<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">、H</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">、</tspan></text>
+  <text x="1160" y="840" font-size="9.5" fill="#475569">CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 三种配体偶联的两面。</tspan></text>
+  <text x="1160" y="864" font-size="9.5" fill="#475569">曲线线性无平台→通气改变对 CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 含量「立竿见影」：</tspan></text>
+  <text x="1160" y="878" font-size="9.5" fill="#475569">过度通气速排 CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">（呼碱）、通气不足速积</tspan></text>
+  <text x="1160" y="892" font-size="9.5" fill="#475569">（呼酸）——须分钟级呼吸调节，</text>
+  <text x="1160" y="906" font-size="9.5" fill="#475569">慢性代偿交给肾。</text>
+</svg>

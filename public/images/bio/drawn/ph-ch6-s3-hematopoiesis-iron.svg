@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">造血与铁代谢：分化树和铁的闭环</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">HSC（CD34<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">）经CSF家族分化为髓系与淋巴系各支；铁经DMT1吸收、转铁蛋白转运、巨噬细胞回收约90%（20mg/日）成环，hepcidin-ferroportin为总开关，每日仅丢失约1</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">mg</text>
+  <rect x="30" y="132" width="640" height="560" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、造血分化树：从 HSC 到各系血细胞</text>
+  <rect x="210" y="172" width="280" height="62" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="350" y="194" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">造血干细胞 HSC（CD34<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">）</tspan></text>
+  <text x="350" y="214" font-size="9.5" fill="#475569" text-anchor="middle">自我更新 · 多向分化 · G<tspan dy="2.1" font-size="6.8">0</tspan><tspan dy="-2.1"> 静息储备</tspan></text>
+  <text x="350" y="230" font-size="9" fill="#64748b" text-anchor="middle">Till–McCulloch 脾结节实验（1961）</text>
+  <path d="M210,185 C180,192 180,225 210,232" fill="none" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="176" y="211" font-size="9" fill="#4c1d95" text-anchor="end" font-weight="700">自我更新</text>
+  <line x1="300" y1="234" x2="210" y2="300" stroke="#475569" stroke-width="1.8"/>
+  <line x1="400" y1="234" x2="510" y2="300" stroke="#475569" stroke-width="1.8"/>
+  <rect x="90" y="300" width="240" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="210" y="328" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">髓系祖细胞（CMP）</text>
+  <rect x="390" y="300" width="240" height="46" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="510" y="328" font-size="11.5" fill="#4c1d95" text-anchor="middle" font-weight="700">淋巴系祖细胞（CLP）</text>
+  <line x1="150" y1="346" x2="105" y2="400" stroke="#475569" stroke-width="1.6"/>
+  <line x1="210" y1="346" x2="245" y2="400" stroke="#475569" stroke-width="1.6"/>
+  <line x1="270" y1="346" x2="385" y2="400" stroke="#475569" stroke-width="1.6"/>
+  <line x1="510" y1="346" x2="545" y2="400" stroke="#475569" stroke-width="1.6"/>
+  <rect x="112.42099999999999" y="361.5" width="31.158" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="128" y="373.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">EPO</text>
+  <rect x="193.675" y="361.5" width="68.65" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="228" y="373.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">G/GM/M-CSF</text>
+  <rect x="296.421" y="361.5" width="31.158" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="312" y="373.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">TPO</text>
+  <rect x="524.743" y="361.5" width="36.514" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="543" y="373.6" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">IL-7</text>
+  <rect x="40" y="400" width="130" height="48" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="105" y="428" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">红系（CFU-E）</text>
+  <rect x="180" y="400" width="130" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="245" y="428" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">粒-单系祖细胞</text>
+  <rect x="320" y="400" width="130" height="48" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="385" y="428" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">巨核系祖细胞</text>
+  <rect x="460" y="400" width="170" height="48" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="545" y="428" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">T / B / NK 前体</text>
+  <line x1="105" y1="448" x2="105" y2="506" stroke="#475569" stroke-width="1.6"/>
+  <line x1="245" y1="448" x2="245" y2="506" stroke="#475569" stroke-width="1.6"/>
+  <line x1="385" y1="448" x2="385" y2="506" stroke="#475569" stroke-width="1.6"/>
+  <line x1="545" y1="448" x2="545" y2="506" stroke="#475569" stroke-width="1.6"/>
+  <rect x="40" y="506" width="130" height="48" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+  <text x="105" y="528" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">红细胞</text>
+  <text x="105" y="546" font-size="10" fill="#64748b" text-anchor="middle">（约 120 天）</text>
+  <rect x="180" y="506" width="130" height="48" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+  <text x="245" y="528" font-size="10" fill="#475569" text-anchor="middle" font-weight="700">粒细胞 · 嗜酸 · 嗜碱</text>
+  <text x="245" y="546" font-size="10" fill="#64748b" text-anchor="middle">单核-巨噬细胞</text>
+  <rect x="320" y="506" width="130" height="48" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+  <text x="385" y="528" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">血小板</text>
+  <text x="385" y="546" font-size="10" fill="#64748b" text-anchor="middle">（7–10 天）</text>
+  <rect x="460" y="506" width="170" height="48" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+  <text x="545" y="534" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">T · B · NK 细胞（免疫）</text>
+  <text x="50" y="588" font-size="10" fill="#475569">成年后造血活跃的红骨髓定居于扁骨（椎骨·胸骨·肋骨·髂骨·颅骨与长骨骺端）——骨髓穿刺常选髂后上棘；CD34<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 亦为移植富集标志</tspan></text>
+  <text x="50" y="628" font-size="10" fill="#475569">造血微环境（niche）：成骨细胞与血管周围基质表达 CXCL12（SDF-1）与 SCF，</text>
+  <text x="50" y="643" font-size="10" fill="#475569">经 CXCR4 / c-Kit 留住并滋养干细胞——移植后「归巢」的路标</text>
+  <text x="50" y="668" font-size="10" fill="#64748b">红系成熟列车：原红 → 早幼 → 中幼（Hb 开始积累）→ 晚幼 → 脱核成网织红细胞（0.5–1.5%）→ 成熟红细胞</text>
+  <rect x="690" y="132" width="680" height="560" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="706" y="154.84" font-size="19" fill="#475569" font-weight="700">二、铁代谢闭环与 hepcidin 总开关</text>
+  <rect x="880" y="168" width="300" height="60" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1030" y="190" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">十二指肠与空肠上段吸收</text>
+  <text x="1030" y="208" font-size="9.5" fill="#475569" text-anchor="middle">非血红素 Fe<tspan dy="-3.2" font-size="6.8">3+</tspan><tspan dy="3.2"> → 维 C 还原 Fe</tspan><tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2"> → DMT1 摄入</tspan></text>
+  <text x="1030" y="222" font-size="9.5" fill="#64748b" text-anchor="middle">血红素铁直接摄取（吸收率 15–35%）</text>
+  <rect x="690" y="292" width="240" height="68" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="810" y="314" font-size="11.5" fill="#065f46" text-anchor="middle" font-weight="700">肠上皮细胞</text>
+  <text x="810" y="332" font-size="9.5" fill="#475569" text-anchor="middle">ferroportin 外排入血</text>
+  <text x="810" y="348" font-size="9.5" fill="#475569" text-anchor="middle">或存入铁蛋白随脱落丢弃</text>
+  <rect x="1130" y="292" width="240" height="68" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1250" y="314" font-size="11.5" fill="#075985" text-anchor="middle" font-weight="700">血浆转铁蛋白</text>
+  <text x="1250" y="332" font-size="9.5" fill="#475569" text-anchor="middle">Fe<tspan dy="-3.2" font-size="6.8">3+</tspan><tspan dy="3.2">-Tf · 饱和度 20–45%</tspan></text>
+  <text x="1250" y="348" font-size="9.5" fill="#475569" text-anchor="middle">转运铁仅 3–4 mg · 日吞吐约 20 mg</text>
+  <rect x="1130" y="430" width="240" height="68" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1250" y="452" font-size="11.5" fill="#134e4a" text-anchor="middle" font-weight="700">骨髓红系</text>
+  <text x="1250" y="470" font-size="9.5" fill="#475569" text-anchor="middle">TfR 网格蛋白小窝内吞</text>
+  <text x="1250" y="486" font-size="9.5" fill="#475569" text-anchor="middle">内体酸化 → DMT1 入胞浆</text>
+  <rect x="880" y="548" width="300" height="56" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1030" y="570" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">红细胞功能铁（占总体 65–75%）</text>
+  <text x="1030" y="588" font-size="9.5" fill="#475569" text-anchor="middle">血红蛋白铁——总铁 3–4 g 的主体</text>
+  <rect x="690" y="430" width="240" height="68" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="810" y="452" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="700">巨噬细胞回收</text>
+  <text x="810" y="470" font-size="9.5" fill="#475569" text-anchor="middle">吞噬衰老红细胞</text>
+  <text x="810" y="486" font-size="9.5" fill="#475569" text-anchor="middle">铁约 90% 回收再利用</text>
+  <rect x="950" y="376" width="160" height="76" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="1030" y="396" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">铁调素 hepcidin</text>
+  <text x="1030" y="414" font-size="9.5" fill="#475569" text-anchor="middle">肝合成 · 25 aa</text>
+  <text x="1030" y="430" font-size="9.5" fill="#475569" text-anchor="middle">唯一靶点 ferroportin</text>
+  <text x="1030" y="446" font-size="9.5" fill="#475569" text-anchor="middle">结合 → 内吞降解</text>
+  <line x1="955" y1="228" x2="855" y2="290" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="905" y="252" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">DMT1（Fe<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2">）</tspan></text>
+  <line x1="930" y1="322" x2="1128" y2="322" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <text x="1030" y="306" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">ferroportin 外排（hephaestin 氧化）</text>
+  <line x1="1250" y1="360" x2="1250" y2="430" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <text x="1258" y="400" font-size="9.5" fill="#134e4a" font-weight="700">TfR 内吞</text>
+  <line x1="1150" y1="498" x2="1120" y2="548" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <line x1="880" y1="576" x2="850" y2="500" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <rect x="769.5375" y="536.925" width="60.925000000000004" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="800" y="548.42" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">衰老红细胞</text>
+  <path d="M930,470 L1030,512 L1118,512 L1118,382 L1134,366" fill="none" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="1030" y="530" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">回收铁约 20 mg/日（约 90% 再利用）</text>
+  <line x1="948" y1="396" x2="930" y2="362" stroke="#be185d" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#arr-enz)"/>
+  <line x1="948" y1="436" x2="930" y2="462" stroke="#be185d" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#arr-enz)"/>
+  <text x="710" y="620" font-size="10" fill="#475569">贮存铁（约占总铁 25%）：铁蛋白（水溶·可动用）与含铁血黄素（不溶·沉积）——肝·脾·骨髓；血清铁蛋白 1 μg/L 约相当于储存铁 8 mg</text>
+  <text x="710" y="660" font-size="10" fill="#475569">人体无主动排铁通路：每日仅被动丢失约 1 mg（肠道脱落细胞·汗·尿）；育龄女性月经另耗约 0.5 mg/日——全部调控集中于唯一的吸收入口</text>
+  <rect x="30" y="712" width="1340" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="734.84" font-size="19" fill="#475569" font-weight="700">三、人体铁库分布与每日铁账本</text>
+  <text x="60" y="762" font-size="12.5" fill="#1e293b" font-weight="700">总铁 3–4 g 的分布</text>
+  <rect x="60" y="776" width="252" height="34" fill="#fecaca" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="312" y="776" width="90" height="34" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="402" y="776" width="11" height="34" fill="#d1fae5" stroke="#059669" stroke-width="1.4"/>
+  <rect x="413" y="776" width="7" height="34" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="186" y="798" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">功能铁 65–75%（血红蛋白）</text>
+  <text x="357" y="798" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">储存铁 ~25%</text>
+  <line x1="407" y1="812" x2="440" y2="826" stroke="#059669" stroke-width="1"/>
+  <line x1="416" y1="812" x2="440" y2="844" stroke="#0369a1" stroke-width="1"/>
+  <text x="445" y="830" font-size="9.5" fill="#065f46">组织铁（肌红蛋白·含铁酶）</text>
+  <text x="445" y="848" font-size="9.5" fill="#075985">转运铁 3–4 mg（转铁蛋白）</text>
+  <text x="60" y="880" font-size="10" fill="#475569">每日吸收 1–2 mg 与被动丢失约 1 mg 相抵；巨噬细胞内循环约 20 mg/日 支撑骨髓造血——「小仓库、高周转」</text>
+  <text x="60" y="916" font-size="10" fill="#64748b">慢性炎症（IL-6）→ hepcidin 高企 → 铁锁于巨噬细胞 → 慢性病贫血（「铁出不了库」，盲目补铁无效）</text>
+  <line x1="595" y1="752" x2="595" y2="950" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="620" y="762" font-size="12.5" fill="#1e293b" font-weight="700">每日铁账本（mg/日）</text>
+  <rect x="620" y="782" width="24" height="20" rx="4" fill="#d1fae5" stroke="#065f46" stroke-width="1.4"/>
+  <text x="632" y="796" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">入</text>
+  <text x="656" y="796" font-size="10.5" fill="#475569">肠道吸收 1–2 mg（十二指肠·唯一受控入口）</text>
+  <rect x="620" y="812" width="24" height="20" rx="4" fill="#d1fae5" stroke="#065f46" stroke-width="1.4"/>
+  <text x="632" y="826" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">入</text>
+  <text x="656" y="826" font-size="10.5" fill="#475569">巨噬细胞回收 ~20 mg（衰老红细胞·约 90% 再利用）</text>
+  <rect x="620" y="842" width="24" height="20" rx="4" fill="#fee2e2" stroke="#991b1b" stroke-width="1.4"/>
+  <text x="632" y="856" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">出</text>
+  <text x="656" y="856" font-size="10.5" fill="#475569">骨髓摄取 ~20 mg（血红素合成）</text>
+  <rect x="620" y="872" width="24" height="20" rx="4" fill="#fee2e2" stroke="#991b1b" stroke-width="1.4"/>
+  <text x="632" y="886" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">出</text>
+  <text x="656" y="886" font-size="10.5" fill="#475569">被动丢失 ~1 mg（肠道脱落·汗·尿；月经另 +0.5）</text>
+  <text x="620" y="920" font-size="10.5" fill="#1e293b" font-weight="700">净平衡 ≈ 0：吸收 1–2 mg ≈ 丢失 1 mg——排出口几乎焊死，调控全在入口</text>
+  <text x="620" y="944" font-size="10" fill="#64748b">TMPRSS6 突变使 hepcidin 无法下调 → 铁难治性缺铁性贫血（IRIDA）：口服铁剂无效——罕见病从反面验证总开关地位</text>
+</svg>

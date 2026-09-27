@@ -2564,3 +2564,219 @@ Stage Summary:
 - 本轮（44-b/c）落地 8 处文案修复全部 commit+push（43aa152 / 9847c9a / 3285a1c），渲染经浏览器验证
 - 文案审查方法论完全定型：LLM 一审（高置信门槛 prompt）→ 人工逐项对原文二审（误报率 92%）→ 确定性扫描补盲（叠字/配平/错字模式，零 API）→ 修复落地
 - 一审余 301 节待续（断点续跑安全），下一阶段由定时任务或人工指令续跑
+---
+Task ID: 44-a
+Agent: 主控（Z.ai Code）
+Task: 用户指令「按照同样的标准增加生理学教材」——摸底 12 学科既有标准（em 学科为最新模板：12 章 48 节正文 + 48 张自绘 SVG + 60 题 + 词汇批次 + 封面 + 全站注册），搭建生理学第十三学科骨架
+
+Work Log:
+- 摸底标准：学科定义（subjects/*.ts）→ 章节文件（subjects/{prefix}/ch{N}.ts，12×4=48 节）→ quiz 批次聚合 → glossary 批次聚合 → drawn SVG 场景（scripts/draw/scenes/{prefix}/，1 节 1 图）→ draw-*-r4 挂载 → 封面 covers/cover-{id}.svg → subject-theme/各视图 Record<SubjectId> 补键
+- 设计生理学 12 章大纲（Guyton & Hall 14e / Boron & Boulpaep 3e / Berne & Levy 7e / 王庭槐人卫 9e 体系）：绪论稳态、细胞生理（转运+生物电）、信号转导与肌肉、神经感觉、神经运动整合、血液、循环一（心+血管）、循环二（血压调节+器官循环）、呼吸、消化与能量代谢、肾脏与体液、内分泌与生殖
+- types.ts SubjectId 增加 'physiology'；subject-theme 增加 physiology 主题（HeartPulse 图标、pink-600 桃夭色系）
+- 生成 src/data/subjects/ph/ch1~ch12.ts 占位骨架（真实章标题/summary/keywords/小节标题与 id，正文待 44-b 代理覆写）
+- 创建 subjects/physiology.ts 学科定义并注册进 biology.ts（subjects 数组 + physiologyQuiz 聚合）；quiz/physiology-p1~p6.ts + quiz/physiology.ts 聚合器占位
+- glossary-physiology-p1~p6.ts 占位（g-335~g-394 预留）并注册进 glossary.ts；draw-ph-p1~p4.ts 占位并注册进 illustrations.ts（getIllustrations + subjectCovers）
+- scripts/draw/scenes/ph/part1~4.ts + index.ts 聚合占位；gen.ts SUBJECTS 增加 'ph'
+- 绘制封面 public/images/bio/covers/cover-physiology.svg（800×500 桃夭粉自绘：心电图纸 PQRST 波形、稳态负反馈环、肾单位示意）
+- 组件补键：notes-view SUBJECT_IDS、wrongbook-view SUBJECT_ORDER/SUBJECT_NAMES、glossary-view 两映射、quiz-view 三映射、revision-view subjectName、gallery-view 学科筛选 tab 主题色链（补齐 13 学科各自色）
+- 全站文案「十二大」→「十三大」：dashboard/report-view/assistant-view/page.tsx/layout.tsx 并加入生理学学科名
+- 验证：bunx tsc --noEmit src/ 零错误；bun run lint 通过；dev server 200；首页已渲染「生理学」「十三大」
+
+Stage Summary:
+- 生理学骨架全链路就绪：类型、主题、学科注册、48 节占位、quiz/glossary/illustrations 聚合点、SVG 管线、封面——中间态站点完全可编译可访问
+- 章节大纲定稿（12 章 48 节标题与 id 固定），为 44-b1~b6 内容代理与 44-c1~c4 绘图代理提供对齐基准
+- 学科主题色 pink（桃夭）已避开设限的 indigo/blue；HeartPulse 图标
+
+---
+Task ID: 44-b3
+Agent: general-purpose（生理学内容代理）
+Task: 生理学第 5–6 章教材级正文覆写 + P3 题库（q-physiology-21~30）+ P3 词汇批次（g-355~g-364）
+
+Work Log:
+- 动笔前依序精读 worklog 尾部（44-a 骨架任务背景）、subjects/ph/ch5.ts 与 ch6.ts 占位文件、bioinfo/ch1.ts 前 130 行（正文 Markdown 格式标杆：## 分节、表格、**粗体**（english）术语、交叉引用）、quiz/bioinformatics-b2.ts（题库格式标杆）、glossary-virology.ts 前 45 行（词条格式标杆）
+- ch5.ts 覆写（导出名 phCh5、章 id/小节 id 与小节标题原样保留，文件头注释保持）：s1 脊髓运动神经元与反射（运动单位/大小原则 I→IIa→IIb、α-γ 共激活、肌梭核袋核链-Ia/II、腱器官 Ib 反牵张反射、单突触牵张反射膝跳约 50 ms、交互/Renshaw 回返抑制、屈肌与交叉伸肌反射、上下运动神经元综合征对比表 8 行）；s2 脑干小脑基底节（前庭/颈/翻正/紧张性迷路反射、去大脑僵直 γ/α 两成分及 Guyton 背根-小脑前叶实验、直接 D1-Go/间接 D2-NoGo 通路表、黑质多巴胺双向调控、帕金森-亨廷顿镜像验证、小脑三分区表、CF-PF-MF→浦肯野误差校正与 LTD、意向性震颤/辨距不良/共济失调）；s3 大脑皮层与随意运动（Penfield 运动矮人图、Georgopoulos 群体向量与延迟期预演、SMA 准备电位 Bereitschaftspotential 与 Libet 哲学回响（审慎表述）、镜像神经元、皮层脊髓侧束（锥体交叉 75%–90%）/前束/皮质核束表、内囊三偏与腔梗纯运动性卒中、Kuypers 内侧/外侧系统与 Jackson 层级-释放框架）；s4 自主神经与脑电（交感 T1–L2 节前短节后长/副交感颅骶 III VII IX X+S2–4 对比表、节前均 ACh、节后 NE/汗腺胆碱能例外、α/β/M 受体效应器官大表 11 行、肾上腺髓质改良交感神经节 8:2、下丘脑四大整合（体温/渗透压/摄食含经典毁损实验/昼夜 SCN）与边缘系统、β/α/θ/δ 表、N1-N2-N3-REM 90 分钟周期与 K 复合波/纺锤波/锯齿波/REM 失弛缓、ARAS 与全麻昏迷、海马 LTP/H.M. 指向神经生物学）
+- ch6.ts 覆写（导出名 phCh6 同上纪律）：s1 血液组成与血浆（血量 7–8% 4–5 L、比容男 40–50% 女 37–48%、五参数正常值表、血浆/血清之别、血浆蛋白三族表、白蛋白 4–5 g/dL 维持 75–80% 胶渗压、晶体 300 mOsm vs 胶体 25 mmHg 功能区分及 Starling 力账目、粘度 3–4 倍与 pH 7.35–7.45、ESR 不对称蛋白与叠连判读要领、急性期反应与肝功能指标）；s2 血细胞生理（双凹圆盘三重适配、无核无线粒体 90% 葡萄糖糖酵解与 Rapaport-Luebering 支路 2,3-DPG、戊糖磷酸途径-G6PD、Hb α₂β₂×血红素 Fe²⁺、120 天寿命-PS 外翻巨噬清除、EPO 90% 肾皮质 HIF-2α 反馈环与罗沙司他、MCV/MCH/MCHC 质检、白细胞分类计数表 5 行与滚动-粘附-渗出、血小板 100–300×10⁹/L GPIb/GPIIb-IIIa/ADP/TXA₂-阿司匹林）；s3 造血与铁代谢（CD34⁺/CD38⁻、Till-McCulloch 脾结节、分化树表、CSF 家族表、成年扁骨造血、总铁 3–4 g 分布表、日丢 1 mg/经期 0.5 mg、巨噬回收 20 mg 高周转、DMT1/VitC/植酸、铁蛋白-转铁蛋白-TfR 循环与 IRP/IRE、hepcidin-ferroportin 总开关与 HFE/TFR2/HJV/TMPRSS6 网络、慢性病贫血、缺铁三阶段表）；s4 止凝血与血型（三幕剧、vWF-GPIb-GPIIb/IIIa-TXA₂、内源 XII→XI→IX→VIII-aPTT/外源 TF-VII-PT-INR/共同通路表、维生素 K γ-羧基化、细胞模型 TF 承载细胞、抗凝血酶 III-肝素/蛋白 C-S/TFPI、t-PA-纤溶酶-PAI-1-D 二聚体、ABO 糖链-天然 IgM 互补表与孟德尔遗传-O 型万能供体限定-孟买型、Rh 初次致敏-二次免疫-抗 D 被动免疫预防（孕 28 周+产后 72 h）、交叉配型主次侧表）
+- quiz/physiology-p3.ts 覆写（导出名 physiologyQuizP3，subjectId 直用字面量 'physiology'——类型联合已收录）：10 题 q-physiology-21~30 每章 5 题；题型 single 7/truefalse 2/multiple 1；难度 1×3/2×5/3×2；答案索引分布 0×3/1×2/2×2/3×2；每题 explanation 80–150 字讲机制（覆盖大小原则机制、肌梭/腱器官对比、巴宾斯基定位、基底节正反验证、自主神经递质例外、渗透压分工、2,3-DPG 别构、hepcidin 方向辨析、aPTT/PT 配对判读、Rh 被动免疫原理）
+- glossary-physiology-p3.ts 覆写（导出名 physiologyGlossaryP3）：10 条 g-355~g-364（牵张反射、大小原则、基底节间接通路、前庭小脑、交感神经、促红细胞生成素 EPO、铁调素、纤维蛋白原、凝血酶原时间 PT、Rh 血型），类别 神经 5/血液 3/凝血 1/血型 1，每条 definition 114–142 字
+- 自检：bunx tsc --noEmit 以 rg 过滤 subjects/ph|quiz/physiology|glossary-physiology 零输出；bun 动态导入 4 文件全部 OK；8 节正文 CJK 字数 2312/2447/2287/2417（ch5）、2226/2225/2216/2528（ch6）全落 2200–3200 区间；每节 ## 二级标题 6–7 个、表格各≥1、keyPoints 5–6 条、terms 6–8 个；两章 summary 含标点 152/165 字、keywords 各 6；正文零反引号零 ${ 注入；quiz/glossary 聚合器（physiology.ts/glossary.ts）导入验证：题库共 30 题、生理词条共 30 条，P3 各 10 条正确挂载
+- 纪律遵守：仅覆写 4 个目标交付文件（subjects/ph/ch5.ts、subjects/ph/ch6.ts、quiz/physiology-p3.ts、glossary-physiology-p3.ts）+ 追加本 worklog；git status 核对其余改动均为 44-a 骨架任务遗留未提交内容，本轮未触碰；未联网搜索、未 git 提交、未改任何其他文件
+
+Stage Summary:
+- 生理学第 5–6 章从占位骨架升格为教材级成品：8 节共约 18 700 汉字正文、17 个主题表格、每节 5–7 个 ## 分节、术语首现粗体附英文、与神经生物学/免疫学/生物化学/分子生物学/细胞生物学既有学科交叉引用 20 余处
+- P3 题库 10 题与 P3 词条 10 条同步落盘并通过聚合器挂载验证；题型/难度/答案索引分布与标杆批次（bioinformatics-b2）格式一致
+- 待办衔接：44-b4~b6（第 7–12 章）内容代理与 44-c1~c4 绘图代理可依本次交付对齐风格与口径
+
+---
+Task ID: 44-b1
+Agent: 生理学内容代理（44-b1）
+Task: 编写生理学第 1–2 章教材级正文，覆写批次 P1 题库（10 题）与词条（10 条）
+
+Work Log:
+- 开工前按序通读 worklog（44-a 生理学骨架搭建背景）、src/data/subjects/ph/ch1.ts 与 ch2.ts 占位、bioinfo/ch1.ts（正文质量与 Markdown 标杆）、quiz/bioinformatics-b2.ts（题库格式标杆）、glossary-virology.ts（词条格式标杆）
+- 覆写 src/data/subjects/ph/ch1.ts（phCh1，4 节，小节 id physiology-ch1-s1~s4 与标题原样保留，导出名与文件头注释不变）：
+  · s1 对象·方法·整合观：以功能解释结构（Harvey 1628 起点）、整体-器官-细胞-分子四层级表、急性在体/急性离体/慢性在体实验方法表、整合生理学与系统生物学、定量生理学反馈雏形（dx/dt = −k(x−x₀) 指数回归）
+  · s2 内环境与稳态：Bernard 1857 名言、体液分区表（细胞外液约体重 20%＝血浆 5%＋组织液 15%）、Cannon 1926 homeostasis（homeo- 非 homo-）、设定点/容许带参数表（体温 37±0.5 ℃、pH 7.35–7.45、空腹血糖 3.9–6.1 mmol/L、血钙 2.25–2.75、血钠 135–145 mmol/L）、steady state≠equilibrium、稳态失败即疾病
+  · s3 反馈与前馈：压力感受性反射闭环、增益＝校正量÷残余偏差（40→10 mmHg 例＝3）、时间滞后与振荡、正反馈自限终点剖析（分娩/凝血/动作电位升支/LH 峰）与恶性循环、前馈两源（条件反射＋中央命令）、三控制逻辑比较表
+  · s4 三种调节：反射弧、自主神经拮抗配置、体液信使速度谱、脑肾血流自身调节（60–160/80–180 mmHg）＋管球反馈＋Starling 定律、三方式比较表、失血 1 L 三级接力与体温分工
+- 覆写 src/data/subjects/ph/ch2.ts（phCh2，4 节）：
+  · s1 膜结构与被动转运：流动镶嵌模型（Singer-Nicolson 1972）、简单扩散 Fick 定律与通透物质表、渗透压依数性（ECF 约 280–310 mOsm/kg、154 mmol/L NaCl≈308 mOsm/L）、等渗≠等张（300 mOsm 尿素液溶血）、AQP（Agre 1992/2003 诺奖）、渗透脆性试验
+  · s2 载体与离子泵：GLUT1/2/3/4 饱和动力学（Vmax/Km）、Na⁺/K⁺-ATPase（3Na⁺出:2K⁺入、生电性、乌本苷、全身静息 ATP 的 20%–30%）、继发性主动转运（SGLT1/2 同向、NCX/NHE 反向表）、跨上皮三级能量接力（SGLT1＋GLUT2＋钠泵，肾糖阈 10–11 mmol/L）
+  · s3 静息与动作电位：跨膜离子分布表（K⁺ −90/Na⁺ +60/Ca²⁺ +125 mV）、Nernst 简式、GHK 方程与 −70 mV（P_K:P_Na≈1:0.04，泵直接生电约 −4 mV）、阈电位 −55 mV 再生性升支、全或无、绝对/相对不应期与频率编码、Hodgkin-Huxley 1952/1963 诺奖、复合动作电位
+  · s4 兴奋传导：局部电流学说、电紧张扩布 λ=√(rm/ri)、跳跃传导（郎飞结 1–2 mm、无髓 0.5–2 m/s vs Aα 70–120 m/s、6×直径经验式）、Erlanger-Gasser 分类表（Aα/β/γ/δ、B、C）、多发性硬化脱髓鞘机制（跨膜电阻骤降＋电容回升＋结旁 K⁺ 通道暴露、Uhthoff 现象）、安全因子与局麻序贯
+- 覆写 src/data/quiz/physiology-p1.ts（physiologyQuizP1，10 题 q-physiology-1~10，每章 5 题）：题型 single 7/truefalse 2/multiple 1；难度 1:2:3＝2:5:3；答案索引分布 0×3、1×2、2×2、3×2＋多选 [1,2,3]；全部考机制理解（压力感受性反射方向、SGLT1 能量接力、高钾血症静息电位去向、脱髓鞘生物物理等），解析 115–149 字
+- 覆写 src/data/glossary-physiology-p1.ts（physiologyGlossaryP1，10 条 g-335~g-344）：稳态/内环境/负反馈/前馈/钠钾泵/继发性主动转运/静息膜电位/阈电位/跳跃传导/渗透压；类别分布 稳态 2/调节 2/转运 2/生物电 3/体液 1；definition 126–149 字含关键数值
+- 质量控制与口径对齐：8 节 content 2630–2716 字符（任务带 2200–3200 ∩ 共享校验器 2600–3600 的交集）、每节 5–6 个 ## H2、每节 ≥1 表格、keyPoints 4–6、terms 7–8（按共享校验器上限 8 收口）、summary 178/174 字、keywords 6；术语首现**粗体**（english）；交叉引用既有学科（细胞生物学/生物化学/分子生物学/神经生物学/生物信息学/免疫学/微生物学）与后续器官章；数值用临床通用口径、Unicode 上下标（Na⁺/K⁺/CO₂/HCO₃⁻）
+- 自检：cd /home/z/my-project && bunx tsc --noEmit 过滤 subjects/ph|quiz/physiology|glossary-physiology → 无任何输出（干净）；git status 确认本任务仅落盘 3 个目标文件，未改动其他任何文件
+- 备注：ph 学科 ch3–12 由并行代理同步完成，其正文大量使用 → 箭头表达级联/流程，本批次保持同一风格（共享校验器 scripts/validate-chapters.ts 的 emoji 检查会对全学科的 → 一并报警，属批次间口径差异，未单独改写本批次）；占位文件原有的章级 summary/keywords 质量已达教材级，原样保留
+
+Stage Summary:
+- 生理学第 1–2 章 8 节教材级正文、P1 批次 10 题题库、10 条词条全部落盘，导出名（phCh1/phCh2/physiologyQuizP1/physiologyGlossaryP1）、小节 id 与标题、文件头注释风格均与占位骨架一致，全站编译零错误
+- 内容主线「绪论稳态与调节 → 细胞膜转运与生物电」已为 ch3（信号转导与肌肉）预留衔接（节尾设问式过渡），经典人物脉络（Harvey、Bernard、Cannon、Pavlov、Starling、Singer-Nicolson、Agre、Hodgkin-Huxley、Erlanger-Gasser）与临床联系（发热 vs 中暑、尿素等渗非等张、洋地黄、达格列净、ORS、MS/GBS、局麻序贯）贯穿
+- 后续动作：44-b2~b6 代理续写 ch3–12；44-c1~c4 绘图代理按节配图；若最终 QA 需统一箭头口径，可一次性将全学科 → 替换为文字连接词后重跑 validate-chapters.ts
+
+---
+Task ID: 44-e1
+Agent: 生理学自绘插图小批次代理（44-e1，5 张场景）
+Task: 生理学 ch1-s3/ch1-s4/ch2-s1/ch2-s2/ch2-s3 共 5 张教学矢量插图（场景源码 + SVG 渲染 + overlap-check 清零 + draw-ph-p2 挂载）
+
+Work Log:
+- 开工通读 scripts/draw/lib.ts（构建器 B 全 API：panel/text/ctext/wtext/tag/rect/circle/ellipse/line/arrow/path/curve/bars/axis/timelineH/table/bilayer/ion/polyline，调色板 C，textW 宽度估算，^{} 与 _{} 上下标语法）与标杆场景 scripts/draw/scenes/ph/ch4-s1.ts（三面板 + 表格的信息密度与配色口径）；对照 src/data/subjects/ph/ch1.ts、ch2.ts 对应小节正文核对图注知识点
+- 落盘 5 个场景源码（scripts/draw/scenes/ph/，均 scene({ title, subtitle, draw }) 导出、1400×1000、正文 y 132–982、x 30–1370、C 语义色、b.arrow/b.wtext/b.tag 规范）：
+  · ch1-s3.ts（ph-ch1-s3-feedback-modes）：负反馈闭环框图（扰动 +40 mmHg→压力感受器→延髓中枢⊖→效应器→血压回降，增益=(40-10)/10=3、设定点重置）｜正反馈三例放大环（分娩/凝血/AP 升支，双弧循环图标+自限终点 tag，恶性循环注记）｜前馈双通道（条件反射、中央命令+可学习预测模型）+ 有/无前馈偏差曲线小图｜三逻辑对比表
+  · ch1-s4.ts（ph-ch1-s4-three-regulations）：三列面板（神经反射弧五件套+膝反射 50 ms+断点疾病｜体液经血液运输+信使速度谱三档+旁/自分泌｜自身调节脑血流平台曲线 60–160 mmHg+肌源性/管球反馈+Starling）｜失血 1 L 接力 tag 链+三方式时程条带+对数时间轴｜动脉血压 MAP 圆心三箭头协同图
+  · ch2-s1.ts（ph-ch2-s1-membrane-passive）：流动镶嵌剖面（bilayer 磷脂+胆固醇+通道孔道+糖萼+载体+外周蛋白+7.5–10 nm 厚度标注）与简单扩散透过谱（O₂↓/CO₂↑/类固醇/乙醇/尿素过膜，Na⁺与葡萄糖画×拒入）｜渗透三态细胞（低渗肿胀/等渗/高渗皱缩+水量箭头）+AQP 双通道过水+依数性/生理盐水 308 mOsm/渗透脆性注记｜渗透浓度标尺（0–500 mOsm 刻度+280–310 正常带+三溶液彩点）+等渗 vs 等张辨析
+  · ch2-s2.ts（ph-ch2-s2-carriers-pumps）：GLUT 饱和动力学手绘坐标图（Vmax 虚线/Km 半高标线/线性简单扩散对照+GLUT1-4 分工清单）｜Na⁺/K⁺-ATPase 跨膜图（2K⁺入:3Na⁺出离子簇、ATP→ADP+Pi、生电性、E1/E2、乌本苷 tag、ATP 20%–30% 账单）｜继发性主动转运（Na⁺梯度=充电电池、SGLT1 同向 2Na⁺:1G、NCX 反向 3Na⁺:1Ca²⁺、NHE）｜跨上皮三级能量接力全流程（肠腔 SGLT1→胞内→基底侧 GLUT2/钠泵→血液，①ATP→②Na⁺梯度→③葡萄糖梯度 tag 链+肾 180 g/ORS/肾糖阈）
+  · ch2-s3.ts（ph-ch2-s3-resting-action-potential）：左 Nernst 平衡电位纵向标尺（E_Na +60/E_Cl -70/E_K -90 tag+刻度，RMP -70 虚线+GHK 加权+泵-漏平衡）｜右 AP 分期大图（阈电位 -55/静息 -70/0/+30 参考线，0 期再生升支→Na⁺ 失活→复极 K⁺ 外流→后超极化，绝对/相对不应期色带+0.5–2 ms）｜底部离子浓度四行表（K⁺/Na⁺/Ca²⁺/Cl⁻ 胞内外+平衡电位）+物理账本注记（利多卡因使用依赖、H-H 1963 诺奖、复合动作电位）
+- 每写完一张立即执行单图渲染+检测循环（bun -e import 场景→writeFileSync SVG→bun run scripts/draw/overlap-check.ts），5 张全部一次通过：共 0/1 个文件被标记（无 text-vs-text 重叠、无画布溢出）
+- 覆写 src/data/draw-ph-p2.ts（drawPhP2，5 条 Illustration 挂载，key 为 physiology-ch1-s3/ch1-s4/ch2-s1/ch2-s2/ch2-s3，src 指向 /images/bio/drawn/ 对应 slug，caption 120–260 字学术中文呼应正文与图中元素，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）；illustrations.ts 聚合器按 sectionId 展开无需改动
+- 自检：bunx tsc --noEmit 过滤 draw-ph-p2|ch1-s3|ch1-s4|ch2-s1|ch2-s2|ch2-s3 → 无任何输出（本批次零错误；全仓现存 114 条错误均出自其他代理的 ch4-s4/ch7-s3 等文件，非本批次引入且按纪律不改）；git status 确认本任务仅落盘 5 场景源码+5 SVG+draw-ph-p2.ts+worklog 追加
+
+Stage Summary:
+- 生理学 ch1-s3~ch2-s3 共 5 张自绘矢量插图交付：场景源码（可再生成）、public/images/bio/drawn/ 下 5 张 SVG（17.6/13.8/34.3/31.9/15.8 KB）、draw-ph-p2 挂载三件套齐备，overlap-check 全部 0 标记、tsc 本批次零错误
+- 图注数值口径与 44-b1 正文严格对齐（增益=3、膝反射 50 ms、脑血流 60–160 mmHg、280–310 mOsm、0.9% NaCl≈308 mOsm、3Na⁺:2K⁺、ATP 20%–30%、P_K:P_Na≈1:0.04、阈电位 -55 mV、超射 +30 mV、绝对不应期 0.5–2 ms）
+- 后续动作：44-e2+ 批次按同一管线续绘 ch2-s4 之后小节；若 QA 统一修复其他批次场景的 tsc 错误，本批次 5 文件无需改动
+
+---
+Task ID: 44-e3
+Agent: 生理学自绘插图小批次代理（44-e3，5 张场景）
+Task: 生理学 ch5-s3/ch5-s4/ch6-s1/ch6-s2/ch6-s3 共 5 张教学矢量插图（场景源码 + SVG 渲染 + overlap-check 清零 + draw-ph-p5 挂载）
+
+Work Log:
+- 开工通读 scripts/draw/lib.ts（构建器 B 全 API 与调色板 C、textW 宽度估算、^{}/_{} 上下标语法）与标杆场景 scripts/draw/scenes/ph/ch4-s1.ts；对照 src/data/subjects/ph/ch5.ts、ch6.ts 对应小节正文核对图注知识点与数值口径
+- 落盘 5 个场景源码（scripts/draw/scenes/ph/，均 scene({ title, subtitle, draw }) 导出、1400×1000、正文 y 132–982、x 30–1370、C 语义色、b.arrow/b.wtext/b.tag/b.brace/b.bilayer/b.table 规范）：
+  · ch5-s3.ts（ph-ch5-s3-cortical-motor）：M1 运动矮人图（中央前回躯体定位带宽∝代表区面积，手/唇/舌行放大为红色热区 + 巨手/厚唇/舌体异形图标与「投影最大」标注）｜SMA/前运动区→M1 计划框图 + 准备电位小坐标图（RP 起点 ≈-1 s、主观「想动」-0.2 s、EMG t=0 三事件标记、Libet 数百 ms 注记）｜皮层脊髓束下行链（内囊后肢→大脑脚→延髓锥体→75–90% 锥体交叉 X 线，侧束对侧外侧索司远端精细/前束同侧前索司近端姿势 + 脊髓横断面侧束/前束定位）｜上/下运动神经元综合征六行对比表（肌张力/腱反射/Babinski/肌萎缩/束颤/定位）+ Jackson 释放定律与内囊三偏注记
+  · ch5-s4.ts（ph-ch5-s4-autonomic-sleep）：交感 vs 副交感解剖双栏（T1–L2 中间外侧柱→椎旁链（节前短 ACh→N/节后长 NE→α/β）｜颅骶段 III/VII/IX/X+S2–4→器官旁节（节前长/节后短 ACh→M），汗腺胆碱能例外、肾上腺髓质 E:NE≈8:2、迷走独挑大梁注记）｜效应器官受体七行表（β₁/β₂/α₁/M 的窦房结/支气管/瞳孔/胃肠/汗腺/骨骼肌血管代表效应）｜睡眠架构 hypnogram（90 分钟周期 4–6 轮、N1→N2→N3→REM 阶梯折线、REM 阴影带、清醒/REM/N1–N3 五级分期轴、0–7 小时刻度）+ 右侧五期 EEG 手绘波形（α 8–13/θ 4–8/纺锤+K 复合/δ 0.5–4/去同步锯齿）+ REM 失弛缓与腺苷-食欲素-ARAS 注记
+  · ch6-s1.ts（ph-ch6-s1-plasma-composition）：抗凝全血离心管（血浆 55% 淡黄/白膜层 <1%/红细胞 45% 红点阵 + 三段 brace 标注，比容男 40–50%/女 37–48%、血清 vs 血浆）｜血浆成分堆叠条（水 90–92%/蛋白 6–8 g/dL/其他 3%）+ 血浆蛋白三兄弟四行表（白蛋白胶渗压 75–80%·载体/αβ 球蛋白转运/γ 免疫/纤维蛋白原凝血）+ ESR 缗钱串机制注记｜渗透压三区（① 双 bilayer 毛细血管壁晶体自由通透↔双向抵消 vs 蛋白不能通透、② Starling 力动脉端 30–35 滤出/静脉端 10–15 重吸收/淋巴 2–4 L、③ 300 mOsm 高柱 vs 25 mmHg 矮柱对比）+ 白蛋白 ≲25 g/L 水肿与等渗输液注记
+  · ch6-s2.ts（ph-ch6-s2-blood-cells）：红细胞双凹圆盘（顶面观同心圆 + 切面观双凹 path、直径 7–8 μm 双向箭头、边缘 2/中央 1 μm）+ 挤 3 μm 毛细血管折叠示意 + 六条适配注记（表面积/体积 +20–30%、120 天、2,3-DPG、无核 90% 糖酵解、2.8 亿 Hb、G6PD）｜白细胞分类横条图（中性粒 50–70/淋巴 20–40/单核 3–8/嗜酸 0.5–5/嗜碱 0–1 参考区间条 + 功能注释行 + 0–60% 刻度轴 + 渗出三步舞）｜血小板参数卡 2×4 网格（100–300×10⁹/L、7–10 天、GPIb-vWF、GPIIb/IIIa-Fg、ADP-P2Y₁₂ 氯吡格雷、TXA₂-COX-1 阿司匹林、α/致密颗粒、TPO）+ 静息/活化双形态图｜EPO 反馈环六框闭环（缺氧→肾间质细胞 PHD 失活→HIF-2α→EPO 90% 肾→CFU-E→携氧↑→回落）+ 罗沙司他/滥用风险注记
+  · ch6-s3.ts（ph-ch6-s3-hematopoiesis-iron）：造血分化树（HSC CD34⁺ 自更新弧线→CMP/CLP→红系 EPO/粒单 G-GM-M-CSF/巨核 TPO/淋巴 IL-7 四支 CSF 标签→四类终末细胞，扁骨红骨髓与 niche CXCL12-SCF 注记）｜铁代谢闭环六节点环（十二指肠 DMT1→肠上皮 ferroportin→转铁蛋白 3–4 mg 池→骨髓 TfR→红细胞功能铁 65–75%→巨噬细胞回收 90% 约 20 mg/日回输 path 环线）+ 中央 hepcidin-ferroportin 总开关（玫红抑制虚线箭头指向肠上皮与巨噬细胞）｜铁库堆叠条（功能铁 70%/储存 25%/组织/转运）+ 每日铁账本四行收支 ledger（入 1–2/20、出 20/1）+ 慢性病贫血与 IRIDA 注记
+- 每写完一张立即执行单图渲染+检测循环（bun -e import 场景→writeFileSync SVG→bun run scripts/draw/overlap-check.ts），5 张全部一次通过「共 0/1 个文件被标记」（无 text-vs-text 重叠、无画布溢出）；ch6-s2 副标题一处 Unicode 上标 ⁹ 复查时统一改为 ×10^{9} 标记语法后重渲染复检仍 0 标记
+- 覆写 src/data/draw-ph-p5.ts（drawPhP5，5 条 Illustration 挂载，key 为 physiology-ch5-s3/ch5-s4/ch6-s1/ch6-s2/ch6-s3，src 指向 /images/bio/drawn/ 对应 slug，caption 130–260 字学术中文呼应正文数值，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）；illustrations.ts 已预置 drawPhP5 展开无需改动
+- 自检：bunx tsc --noEmit 过滤本批次 6 文件（ch5-s3/ch5-s4/ch6-s1/ch6-s2/ch6-s3/draw-ph-p5）→ 无任何输出（本批次零错误）；rg "scenes/ph" 剩余输出仅为其他代理先写的 ch4-s4/ch7-s3 既有错误（文件 mtime 14:50/15:23 早于本批次 15:50+，非本批次引入且按纪律不改）；git status 确认本任务仅落盘 5 场景源码+5 SVG+draw-ph-p5.ts+worklog 追加
+
+Stage Summary:
+- 生理学 ch5-s3~ch6-s3 共 5 张自绘矢量插图交付：场景源码（可再生成）、public/images/bio/drawn/ 下 5 张 SVG（22.1/21.2/27.9/17.0/16.7 KB）、draw-ph-p5 挂载三件套齐备，overlap-check 全部 0 标记、tsc 本批次零错误
+- 图注数值口径与 44-b 系列正文严格对齐（锥体交叉 75–90%、RP 早于觉察数百 ms、周期 90 分钟、比容男 40–50%/女 37–48%、白蛋白胶渗压 75–80%、晶体 300 mOsm vs 胶体 25 mmHg、中性粒 50–70%、血小板 100–300×10⁹/L、EPO 90% 肾、巨噬回收 90% 约 20 mg/日、每日丢失约 1 mg）
+- 后续动作：44-e4+ 批次按同一管线续绘 ch6-s4 之后小节；drawPhP5 已挂载可直接被前端聚合器消费；若 QA 统一修复 ch4-s4/ch7-s3 既有 tsc 错误，本批次 5 文件无需改动
+
+---
+Task ID: 44-e2
+Agent: 生理学自绘插图小批次代理（44-e2，5 张场景）
+Task: 生理学 ch2-s4/ch3-s1/ch3-s2/ch3-s3/ch3-s4 共 5 张教学矢量插图（场景源码 + SVG 渲染 + overlap-check 清零 + draw-ph-p3 挂载）
+
+Work Log:
+- 开工通读 scripts/draw/lib.ts（构建器 B 全 API 与调色板 C、textW 宽度估算、^{}/_{} 上下标语法）与标杆场景 scripts/draw/scenes/ph/ch4-s1.ts；对照 src/data/subjects/ph/ch2.ts、ch3.ts 对应小节正文核对图注知识点与数值口径
+- 现场盘点：ch2-s4/ch3-s1/ch3-s2 三个场景源码已由先前中断的运行落盘（标题与 slug 完全对应），逐一全量审查确认内容完整、符合本批次规格后复用并重渲染；ch3-s3/ch3-s4 为本批次新写
+- 落盘 5 个场景源码（scripts/draw/scenes/ph/，均 scene({ title, subtitle, draw }) 导出、1400×1000、正文 y 132–985、x 30–1370、C 语义色、b.arrow/b.wtext/b.tag/b.table/b.axis/b.curve 规范）：
+  · ch2-s4.ts（ph-ch2-s4-saltatory-conduction）：无髓纤维局部电流链式去极化（已兴奋区 +30 mV vs 静息 −70 mV、膜外/轴浆内反向电流环）+ 电紧张扩布衰减曲线（V₀e^{−x/λ}，x=λ 处 0.37V₀、λ 仅 0.1–1 mm）｜有髓纤维跳跃传导（髓鞘节段、郎飞结 Na⁺ 通道集中、结间体 1–2 mm、速度对比条 0.5–2 vs 70–120 m/s、经验式 v≈6×d 与 v∝√d、SERCA 省能耗账单）｜Erlanger–Gasser 纤维分类六行表（Aα/Aβ/Aγ/Aδ/B/C）+ 脱髓鞘 mini 图（MS 斑块电流泄漏、传导阻滞）与多发性硬化/Uhthoff/吉兰-巴雷/安全因子注记
+  · ch3-s1.ts（ph-ch3-s1-gpcr-pathways）：七次跨膜受体剖面（bilayer+7 螺旋+配体菱形）与异三聚体 G 蛋白开关四步（GEF→GDP 换 GTP→α·GTP/βγ 解离→GTP 水解复位）｜Gs/Gi/Gq 三分支链式 tag（β 受体→AC→cAMP→PKA；M₂/α₂ 抑制；M₁/M₃·AT₁→PLC→IP₃+DAG→钙释放/PKC）+ G12/13 与级联放大百万倍注记｜信号终止三重刹车（RGS 加速 GTP 酶、PDE 清除、GRK→β-arrestin→内吞）｜霍乱毒素（Gsα ADP-核糖基化锁死「开」→CFTR→米泔水泻）与百日咳毒素（Giα 锁死「关」→解抑制）分子病理
+  · ch3-s2.ts（ph-ch3-s2-kinase-receptors）：RTK 自磷酸化→Grb2-SOS-RAS-RAF-MEK-ERK 三级级联入核（SH2 码头、RAS 突变三成肿瘤）｜JAK-STAT 磷酸化二聚体一跳直达 GAS 元件（SOCS 负反馈、JAK2 V617F）+ 胰岛素受体 IRS-PI3K-AKT 轴（GLUT4/GSK3/mTORC1）｜NO-cGMP：内皮 eNOS（Ca²⁺·CaM、L-精氨酸）→NO 扩散→sGC→cGMP→PKG→MLCP→血管舒张 + 硝酸甘油/西地那非 PDE5 注记｜第二信使浓度-时间脉冲（钙振荡频率编码）+ 五种第二信使总表（cAMP/cGMP/IP₃/DAG/Ca²⁺ 的生成、效应器、功能、清除）
+  · ch3-s3.ts（ph-ch3-s3-skeletal-ec-coupling，新写）：肌节超微结构（Z 线/粗细丝/横桥斜杆/M 线，I·H·A 带 braceH 标注、A 带 1.6 μm 恒定、按比例 550px≙2.2 μm）+ 区带五行动态表 + titin/nebulin 注记｜三联体偶联链（肌膜 AP→T 管→DHPR 电压感受器-RyR1 构象直连→终池放钙 10⁻⁷→10⁻⁵ mol/L→TnC→原肌球蛋白移位→横桥开闸；⑦ SERCA 泵回 70–90%、⑧ NCX/PMCA 逐出）+ 钙瞬变/恶性高热注记｜横桥循环四步闭环（僵直态→ATP 脱附→水解上弦→作功 10 nm，每圈 1 ATP、尸僵本质）｜长度-张力关系三曲线（主动/被动 titin/总张力，最适初长 2.0–2.2 μm 虚线带、升支细肌丝互扰、3.6 μm 脱离归零）
+  · ch3-s4.ts（ph-ch3-s4-muscle-comparison，新写）：三种 AP 波形并列小图（骨骼肌快 Na⁺ 尖峰 1–5 ms 含 +30/−70 mV 标尺｜心肌 0–4 期含 200–300 ms 平台、L 型 Ca²⁺≈K⁺ 相抵、有效不应期阴影带｜平滑肌慢波+L 型 Ca²⁺ 峰、阈电位虚线）｜三列对比七行表（AP 形态/钙来源 RyR1·RyR2·IP₃R+外钙/偶联 构象直连·CICR·CaM-MLCK/钙开关 TnC·TnC·CaM/强直 完全强直·不应期防强直·latch/调控入口/速度能耗 快·稳·省）｜心肌 CICR+β₁ 三重正性变力+力-频率、平滑肌 latch 省能+RhoA-ROCK 钙增敏+电/药-机械双入口双栏注记
+- 每写完一张立即执行单图渲染+检测循环（bun -e import 场景→writeFileSync SVG→bun run scripts/draw/overlap-check.ts），5 张全部一次通过「共 0/1 个文件被标记」（无 text-vs-text 重叠、无画布溢出）
+- 覆写 src/data/draw-ph-p3.ts（drawPhP3，5 条 Illustration 挂载，key 为 physiology-ch2-s4/ch3-s1/ch3-s2/ch3-s3/ch3-s4，src 指向 /images/bio/drawn/ 对应 slug，caption 130–260 字学术中文呼应正文数值，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）；illustrations.ts 已预置 drawPhP3 展开无需改动
+- 自检：bunx tsc --noEmit 过滤 draw-ph-p3|ch2-s4|ch3-s → 无任何输出（本批次零错误）；git status 确认本任务仅落盘 5 场景源码+5 SVG+draw-ph-p3.ts+worklog 追加
+
+Stage Summary:
+- 生理学 ch2-s4~ch3-s4 共 5 张自绘矢量插图交付：场景源码（可再生成）、public/images/bio/drawn/ 下 5 张 SVG（24.3/26.9/39.1/27.4/16.4 KB）、draw-ph-p3 挂载三件套齐备，overlap-check 全部 0 标记、tsc 本批次零错误
+- 图注数值口径与正文严格对齐（无髓 0.5–2 m/s vs 有髓 70–120 m/s、结间 1–2 mm、v≈6×d、λ=√(rm/ri)、10⁻⁷→10⁻⁵ mol/L、SERCA 70–90%、每 ATP 泵 2 Ca²⁺、最适初长 2.0–2.2 μm、3.6 μm 脱离归零、平台期 200–300 ms、横桥划动 ~10 nm、每圈 1 ATP）
+- 后续动作：44-e4+ 批次按同一管线续绘 ch4-s2 之后小节；drawPhP3 已挂载可直接被前端聚合器消费；若 QA 统一修复 ch4-s4/ch7-s3 既有 tsc 错误，本批次 5 文件无需改动
+
+---
+Task ID: 44-e5
+Agent: 生理学自绘插图小批次代理（44-e5，4 张场景）
+Task: 生理学 ch9-s1/ch9-s2/ch9-s3/ch9-s4 共 4 张教学矢量插图（场景源码 + SVG 渲染 + overlap-check 清零 + draw-ph-p7 挂载）
+
+Work Log:
+- 开工通读 scripts/draw/lib.ts（构建器 B 全 API 与调色板 C、textW 宽度估算、^{}/_{} 上下标语法、scene 头部 122px 自适应标题）与标杆场景 scripts/draw/scenes/ph/ch7-s1.ts；对照 src/data/subjects/ph/ch9.ts 四个小节正文核对图注知识点与数值口径
+- 落盘 4 个场景源码（scripts/draw/scenes/ph/，均 scene({ title, subtitle, draw }) 导出、1400×1000、正文 y 132–985、x 30–1370、C 语义色、b.arrow/b.wtext/b.spline/b.polyline/b.tag 规范、上下标一律 ^{}/_{} 标记语法）：
+  · ch9-s1.ts（ph-ch9-s1-ventilation-mechanics）：呼吸泵与胸膜腔负压偶联（胸廓/肺/膈肌穹顶示意、−5/−7.5 cmH_{2}O、膈肌 70% 做功、膈神经 C3–C5）+ 气胸失偶联（破口进气、负压归零、塌陷肺、纵隔推移、张力性气胸穿刺减压）｜肺压力-容积曲线（充气支/放气支滞后环、盐水充盈虚线、顺应性≈200 ml/cmH_{2}O 切线、von Neergaard 2/3 表面张力结论、纤维化/肺气肿相反方向）｜Laplace 大小泡（r 减半 P 翻倍、气流入大泡、DPPC 挤密解药）+ DPPC 单分子层（亲水头/疏水尾、II 型细胞、70 dyn/cm vs 个位数、NRDS 与产前激素/替代治疗）｜气道阻力分布条（鼻腔≈一半/中等支气管/细支气管并联）+ 等压点动态压缩（P 气道递减、P_pl 挤压、肺气肿内移、缩唇呼吸）+ 呼吸功（3%–5% 能耗、12–16 次/分省功区间、COPD 深慢 vs 纤维化浅快）
+  · ch9-s2.ts（ph-ch9-s2-vq-matching）：肺容积容量堆叠柱（RV/ERV/TV/IRV 四段、TLC/VC/FRC 三括号、FRC 基线、氦稀释/体描法与「蓄水池」注记）｜肺泡通气双卡对比（深慢 4.2 vs 浅快 2.4 L/min、死腔占比 30% vs 60%、Bohr 方程、肺泡气方程 150−40/0.8=100 mmHg）｜V/Q 三区模型（① 理想 0.8=通气 4:血流 5、② 死腔样→∞ 肺栓塞栓子+血流断绝、③ 分流样→0 肺不张塌陷泡；吸纯氧鉴别 + HPV 注记）｜Fick 定律（呼吸膜 0.2–0.6 μm/70 m²、O₂/CO₂ 扩散 1:20 柱对比、灌注限制 vs 扩散限制、DLCO、A-a 梯度 5–15 mmHg、Krogh 师生之争）
+  · ch9-s3.ts（ph-ch9-s3-oxygen-dissociation）：氧解离曲线主图（spline S 形、P_{50} 26–27、肺点 100→98%、组织点 40→75%、运动 15–20 卸载>80%、平台/陡坡标注、肌红蛋白虚线 P_{50}≈3、Hill≈2.8、溶解 1.5% vs 结合 98.5% 所有权分工）｜左移/右移双栏（左：pH↑/低温/2,3-DPG↓/胎儿 Hb/CO；右：pH↓/CO₂/温度/2,3-DPG↑）+ 两侧 P_{50} 箭头迷你曲线 + 波尔效应/CO 中毒警示盒/发绀注记｜CO₂ 三形态饼图（HCO_{3}^{-} 70%/氨基甲酸 23%/溶解 7%，自算弧 path）+ 氯转移红细胞图（CA 限速 tag、HCO_{3}^{-} 出/Cl^{-} 入、AE1 带拧蛋白、自组织 CO₂ 入）｜何尔登效应与线性 CO₂ 解离曲线（脱氧血/氧合血双线、静脉点 46/52 与动脉点 40/48、功能环卸碳 4 ml/dL、三配体偶联镜像、分钟级调节 vs 肾慢性代偿）
+  · ch9-s4.ts（ph-ch9-s4-respiratory-control）：呼吸中枢分层（皮层随意 ellipse + 皮质脊髓束虚线绕行、脑桥调整/长吸、延髓 DRG/VRG/pre-Bötzinger 高亮、脊髓→膈神经 C3–C5→膈肌；Ondine 呼吸诅咒 PHOX2B 警示盒 + Hering-Breuer/咳嗽/J 感受器）｜化学感受器双面板（中枢：血-脑屏障挡 H⁺ 放行 CO₂、CA 水合、70%–80% 贡献；外周：颈动脉体分叉+舌咽神经、PaO_{2}<60 陡增迷你反应曲线、感分压不感含量、CSF 代偿脱敏与控制性氧疗 88%–92%）｜CO₂-通气反应曲线（正常线+低氧虚线、设定点 40、斜率 +2–3 L/min/mmHg、被控变量直驱控制器）｜陈施呼吸（代码循环生成渐强-渐弱-暂停三周期波形+呼吸暂停阴影、30–60 s 周期、负反馈环路框图：循环延迟+增益↑）+ 睡眠呼吸暂停分型注记
+- 每写完一张立即执行单图渲染+检测循环（bun -e import 场景→writeFileSync SVG→bun run scripts/draw/overlap-check.ts）：s1 首检 2 处 text×text（膈肌长行与气胸注记相交、P-V 曲线两段 caption 行距不足）→ wtext 分栏+行距修正后清零；s2 首检 1 处（panel 标题与 y 轴标题「容积 (ml)」同高相交）→ y 轴标题下移后清零；s3 一次通过；s4 一次通过后复查曲线穿越文字两处（功能环标签、CO₂-通气注记块）→ 移位/缩栏后重渲染仍 0 标记；最终 4 张全部「共 0/1 个文件被标记」（无 text-vs-text 重叠、无画布溢出）
+- 覆写 src/data/draw-ph-p7.ts（drawPhP7，4 条 Illustration 挂载，key 为 physiology-ch9-s1/ch9-s2/ch9-s3/ch9-s4，src 指向 /images/bio/drawn/ 对应 slug，caption 130–230 字学术中文呼应正文数值，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）；illustrations.ts 已预置 drawPhP7 展开无需改动
+- 自检：bunx tsc --noEmit 过滤 draw-ph-p7|scenes/ph/ch9-s → 无任何输出（本批次零错误；首跑曾报 4 处 [number,string]↔[number,number] 断言错误，改标注类型后清零；rg 过滤串命中的 scripts/draw/scenes/sb/ch9-s2.ts fillOpacity 为其他学科既有遗留，非本批次文件）；git status 确认本任务仅落盘 4 场景源码+4 SVG+draw-ph-p7.ts+worklog 追加
+
+Stage Summary:
+- 生理学 ch9 全章 4 张自绘矢量插图交付：场景源码（可再生成）、public/images/bio/drawn/ 下 4 张 SVG（21.8/21.1/23.9/28.5 KB）、draw-ph-p7 挂载三件套齐备，overlap-check 全部 0 标记、tsc 本批次零错误
+- 图注数值口径与 ch9 正文严格对齐（−5/−7.5 cmH₂O、顺应性 200 ml/cmH₂O、2/3 表面张力、TV 500/VD 150/VA 4.2 vs 2.4 L/min、V/Q 0.8=4:5、P_{50} 26–27、肺点 98%/组织点 75%、HCO_{3}^{-} 70%/23%/7%、卸碳 4 ml/dL、中枢驱动 70%–80%、PaO_{2}<60 陡增、+2–3 L/(min·mmHg)、SpO_{2} 88%–92%）
+- 后续动作：drawPhP7 已挂载可直接被前端聚合器消费；44-e6+ 批次按同一管线续绘第 10 章及以后小节；呼吸章四图与 ch7-s1 标杆信息密度对齐，可作后续循环对照样板
+
+---
+Task ID: 44-f3
+Agent: 生理学自绘插图小批次代理（44-f3，2 张场景）
+Task: 生理学 ch12-s3/ch12-s4 共 2 张教学矢量插图（场景源码 + SVG 渲染 + overlap-check 清零 + draw-ph-p4 挂载）
+
+Work Log:
+- 开工通读 scripts/draw/lib.ts（构建器 B 全 API 与调色板 C、textW 宽度估算、^{}/_{} 上下标标记、scene 头部 122px 自适应标题）与标杆场景 scripts/draw/scenes/ph/ch10-s1.ts；对照 src/data/subjects/ph/ch12.ts 第三、四节正文核对图注知识点与数值口径
+- 落盘 2 个场景源码（scripts/draw/scenes/ph/，均 scene({ title, subtitle, draw }) 导出、1400×1000、正文 y 132–985、x 30–1370、C 语义色、b.arrow/b.wtext/b.curve/b.timelineH/b.table 规范、上下标一律 ^{}/_{} 标记语法，布局采用 2×2 四面板、同行文本垂直间距均 ≥18px）：
+  · ch12-s3.ts（ph-ch12-s3-calcium-glucose）：钙稳态三角（血钙 2.25–2.75 mmol/L 中央盒·游离 50%｜PTH↑ CaSR 解除抑制·秒级 与 降钙素↑ C 细胞 双臂｜骨 快相骨液泵/慢相 RANKL·肾 远端保钙近端排磷+1α 羟化酶·肠 TRPV6+钙结合蛋白 三靶｜1,25(OH)_{2}D_{3} 肾→肠旁路箭头·三路回升血钙左侧回路·碱中毒搐搦/pH·白蛋白·离子钙 tag）｜维生素 D 两级活化链（皮肤 7-脱氢胆固醇 UVB→肝 CYP2R1 25-羟化→肾 CYP27B1 1α-羟化高亮→骨钙三醇，D_{3}/25(OH)D 中间产物标注｜限速调节虚线卡：PTH/低磷促、FGF23/自身抑、24-羟化酶灭活｜分配线下发肠·骨双向·甲状旁腺三靶｜25(OH)D 储备指标+佝偻病/骨软化+慢性肾衰 tag）｜β 细胞传感链（血糖↑ tag→GLUT2→葡萄糖激酶分子血糖计→ATP/ADP↑→K_{ATP} 关闭 Kir6.2+SUR1→去极化 Ca^{2+} 内流→胞吐 六步编号竖链｜右列四卡：磺脲类锚 SUR1 虚线指 K_{ATP}、MODY2/新生儿糖尿病、GLP-1 葡萄糖胜任性、双相分泌+门脉首过）｜血糖天平（胰岛素 β70% vs 胰高血糖素 α20% 夹血糖盒·血糖↑↓ 触发箭头｜肝/肌肉 GLUT4/脂肪三靶 vs 肝唯一靶 cAMP-PKA｜中列 I/G 摩尔比 餐后>10 入库·禁食≈1 放粮·蛋白餐防塌方·GLUT1/3·δ 生长抑素｜1 型酮症 vs 2 型抵抗卡·胰岛 100 万构筑底注）
+  · ch12-s4.ts（ph-ch12-s4-menstrual-cycle）：月经周期激素曲线（axis 28 天×四线 spline：FSH/LH/雌二醇/孕酮｜LH 峰 0.88 虚线贯至排卵位·峰后 36 h｜第一次翻转 雌二醇 200 pg/ml×48 h、第二次翻转 孕酮+E_{2} 压制 GnRH 脉冲 双注记｜月经期/增殖期/排卵/分泌期 内膜阶段色条|黄体 14 天底注）｜卵巢-内膜双人舞（四阶段表：月经期螺旋动脉痉挛/增殖期腺体再生长/排卵 E_{2} 翻转正反馈/分泌期着床窗｜双细胞双促性腺激素理论 膜细胞 LH→雄激素→颗粒细胞 FSH→芳香化酶→雌二醇自催化链｜抑制素 B 饿死竞争者+尿 LH 试纸/BBT 0.3–0.5 ℃ 判定注）｜hCG 黄体救援（timelineH 六事件：受精-卵 12–24 h/着床 5–6 天-窗 20–24 天/hCG 8–10 天可测/黄体 14 天大限/hCG 救援至 8–10 周/胎盘接管｜hCG 共享 α 亚基 LH 样活性注｜孕酮-hPL-雌三醇 胎儿-胎盘单位三卡｜获能/ZP3 顶体反应/Ca^{2+} 振荡底注）｜分娩+泌乳（左半：胎儿 HPA 皮质醇→胎盘 CRH 自增益环路→缩宫素受体/Cx43/PG→宫缩宫颈扩张→Ferguson 反射→缩宫素释放 五节点闭环+左回环正反馈+产科应用注；右半：PRL 乳汁生成-孕酮封锁解锁→射乳反射 吮吸-脊髓-下丘脑→缩宫素-肌上皮收缩 三级链+哺乳期闭经/漏奶/初乳 IgA/乳腺装配注）
+- 每写完一张立即执行单图渲染+检测循环（bun -e import 场景→writeFileSync SVG→bun run scripts/draw/overlap-check.ts）：2 张均一次通过「共 0/1 个文件被标记」（无 text-vs-text 重叠、无画布溢出），未需返工
+- 覆写 src/data/draw-ph-p4.ts（drawPhP4，2 条 Illustration 挂载，key 为 physiology-ch12-s3/ch12-s4，src 指向 /images/bio/drawn/ 对应 slug，caption 约 150–170 字学术中文呼应正文数值，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）；illustrations.ts 已预置 drawPhP4 展开无需改动
+- 自检：bunx tsc --noEmit 过滤 draw-ph-p4|scenes/ph/ch12-s[34]|drawn/ph-ch12 → 无任何输出（本批次零错误；任务给定宽松过滤串会命中 sb/vi 学科既有 ch12-s3/s4 遗留错误，均非本批次文件，全库 103 处 error TS 为存量）；git status 确认本任务仅落盘 2 场景源码+2 SVG+draw-ph-p4.ts+worklog 追加
+
+Stage Summary:
+- 生理学 ch12-s3/ch12-s4 两张自绘矢量插图交付：场景源码（可再生成）、public/images/bio/drawn/ 下 ph-ch12-s3-calcium-glucose.svg（25.6 KB/121 文本）与 ph-ch12-s4-menstrual-cycle.svg（25.9 KB/105 文本）、draw-ph-p4 挂载三件套齐备，overlap-check 均 0 标记、tsc 本批次零错误
+- 图注数值口径与 ch12 正文严格对齐（血钙 2.25–2.75 mmol/L·游离 50%、PTH 秒级、1α/24-羟化酶、餐后 I/G>10 vs 禁食≈1、β 70%/α 20%/δ 5%、胰岛 100 万；雌二醇 200 pg/ml×48 h、LH 峰后 36 h、黄体 14 天、hCG 8–10 天可测/救援至 8–10 周、BBT 0.3–0.5 ℃）
+- 后续动作：drawPhP4 已挂载可直接被前端聚合器消费；至本章 12 章配图管线闭环；若 QA 统一修复 sb/vi 既有 tsc 遗留，本批次 2 文件无需改动
+
+---
+Task ID: 44-f2
+Agent: 生理学自绘插图小批次代理（44-f2，4 张场景）
+Task: 生理学 ch11-s3/ch11-s4/ch12-s1/ch12-s2 共 4 张教学矢量插图（场景源码 + SVG 渲染 + overlap-check 清零 + draw-ph-p8 挂载）
+
+Work Log:
+- 开工通读 scripts/draw/lib.ts（构建器 B 全 API 与调色板 C、textW 宽度估算、^{}/_{} 上下标标记、scene 头部 122px 自适应标题）与标杆场景 scripts/draw/scenes/ph/ch10-s1.ts；对照 src/data/subjects/ph/ch11.ts、ch12.ts 第一至四节正文核对图注知识点与数值口径
+- 落盘 4 个场景源码（scripts/draw/scenes/ph/，均 scene({ title, subtitle, draw }) 导出、1400×1000、正文 y 132–985、x 30–1370、C 语义色、b.arrow/b.wtext/b.curve/b.axis/b.table/b.tag 规范、上下标一律 ^{}/_{} 标记语法、布局 2×2 四面板）：
+  · ch11-s3.ts（ph-ch11-s3-countercurrent-adh）：髓质渗透梯度梯形图（皮质 300→外髓 600→内髓 900→乳头 1200 mOsm/kg 四带递进填色 + 亨利襻发夹：降支透水/升支 NKCC2 单向抽盐·单效应 ≈200 mOsm·级联放大注记）｜直血管逆流交换（发夹双柱、溶质渗回/水入降支双向箭头、被动守梯度·低流低氧·S₃ 易损注）+ 尿素再循环（集合管 UT-A 开门→内髓间质「近一半」→襻细段回环虚线）｜ADH-V₂-cAMP-AQP2 作用链（高渗/低容量→视上核·室旁核→轴突运输→神经垂体胞吐→V₂ 受体→囊泡插入顶膜 五级竖链 + 主细胞双膜示意：管腔 AQP2 插入/基侧 AQP3/4·水箭头·速效膜插入 vs 长效转录上调双 tag）｜两极与尿崩症（1200 vs 50 mOsm 双柱+血浆 300 参比线·渴阈 280–290 与 600 mOsm 定量注 + 中枢性/肾性/精祏三卡 + SIADH 对立面与渗透性利尿·新生儿≈700/老人下滑注）
+  · ch11-s4.ts（ph-ch11-s4-acid-base-k）：三道防线时间轴（缓冲秒级/呼吸分钟级/肾脏小时至天级三卡+时间刻度线 + HH 方程公式盒：呼吸掐分母·肾脏执掌分子·15000 mmol CO₂ vs 50–100 mEq 固定酸）｜HCO₃⁻ 回收与排酸两路径（左列：滤过 4300 mmol/日→近端 NHE3·CA IV/II 80–85%→远端闰细胞 15%·pH 4.4；右列：可滴定酸 1/3 磷酸盐封顶 vs 铵 2/3 谷氨酰胺·酸中毒数倍上调·扩散捕获与 NH₄⁺ 顶替 K⁺ 搭车；底部净酸排泄公式 tag）｜四种酸碱紊乱代偿方向表（代谢/呼吸 × 酸/碱四行 + Winter 公式与 AG 8–12 mEq/L 双 tag + MUDPILES/高氯性两界注）｜血钾平衡（细胞内 98%·140 mmol/L vs 外 2%·4 mmol/L 双区块 + 促入胞胰岛素/β₂/碱中毒 vs 促出胞酸中毒/崩解双卡 + 远端泌钾三杠杆盒 + 高钾 T 高尖→QRS→正弦波/低钾 U 波 tag）
+  · ch12-s1.ts（ph-ch12-s1-pituitary-axes）：三大化学类卡片（含氮→膜受体速效/类固醇→胞内核受体/胺类「两栖」）+ 膜受体 vs 胞内受体双通路 chip 链（亲水配体→G 蛋白/RTK→级联放大→秒-分钟；脂溶配体→穿膜→核受体转录因子→小时-天）｜下丘脑-垂体解剖（下丘脑总盒双路：左垂体门脉 初级毛细血管网→长门静脉→腺垂体六激素→靶腺；右神经分泌 视上核/室旁核胞体+轴浆运输双曲线→神经垂体贮存 ADH/催产素→Ca²⁺ 胞吐·「仅释放码头」注）｜下丘脑因子-腺垂体六激素对应表（TRH-TSH/GnRH-LH·FSH/CRH-ACTH/GHRH·SST-GH/DA-PRL 五行 + GH 夜间脉冲·IGF-1 与 PRL 多巴胺张力性抑制注 + D₂ 拮抗剂/共享 α 亚基 tag）｜层级负反馈（下丘脑→腺垂体→靶腺→效应四级竖塔 + 超短环/短环/长环三反馈弧 + 游离浓度读数·脉冲频率编码·GnRH 降调·昼夜节律左列注记）
+  · ch12-s2.ts（ph-ch12-s2-thyroid-adrenal）：六步合成蛇形流程（①NIS 摄碘浓集 20–40 倍→②pendrin 入腔→③TPO+H₂O₂ 活化→④碘化 MIT/DIT→⑤偶联 T₄/T₃→⑥胞吞水解释放·脱碘回收 + TPO 硫脲靶点/Wolff-Chaikoff/胶体 2–3 月储量注）｜分泌比例与外周转换（T₄ 93% vs T₃ 7% 分段条 + T₄→T₃ 5′-脱碘 D1/D2（活性×5）/T₄→rT₃ D3 灭活分叉 + 代谢 BMR/发育克汀病·TSH 筛查/允许 β 受体三效卡 + TBG 99.97%·妊娠假性甲亢与 D2 读数器注）｜肾上腺三带同心圆（球状带→醛固酮·血管紧张素 II 与高钾/束状带→皮质醇·ACTH/网状带→DHEA/髓质→肾上腺素 四级引线 + 17α-羟化酶酶链注·肾上腺功能初现 tag）｜皮质醇昼夜节律曲线（axis 0–24 h spline 晨 8 时峰·可达夜间 2–3 倍/午夜谷标注）+ 应激双轴（应激刺激→交感-髓质轴秒级/HPA 轴分钟-小时级双分支 + 允许作用艾迪生注 + 慢性应激海马/IL-1·IL-6 免疫握手/库欣体态三 tag）
+- 每写完一张立即执行单图渲染+检测循环（bun -e import 场景→writeFileSync SVG→bun run scripts/draw/overlap-check.ts）：s3、s1（ch12）、s2（ch12）一次通过；ch11-s4 首检 1 处 text×text（含 NH_{4}^{+} 的双行 wtext 因 tspan 上下标累计 dy 使估算盒高扩至 22.5px、行距 15px 不足）→ 行距提至 23px 并顺带加固 AG 注记行距后重渲染清零；最终 4 张各自「共 0/1 个文件被标记」（无 text-vs-text 重叠、无画布溢出）
+- 覆写 src/data/draw-ph-p8.ts（drawPhP8，4 条 Illustration 挂载，key 为 physiology-ch11-s3/ch11-s4/ch12-s1/ch12-s2，src 指向 /images/bio/drawn/ 对应 slug，caption 约 150–230 字学术中文呼应正文数值，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）；illustrations.ts 已预置 drawPhP8 展开无需改动
+- 自检：bunx tsc --noEmit 过滤 draw-ph-p8|scenes/ph/ch11-s[34]|scenes/ph/ch12-s[12] → 无任何输出（本批次零错误；任务给定宽松过滤串会命中 scripts/draw/scenes/sb/ 其他学科 ch11/ch12 同名文件既有遗留错误，均非本批次产物）；确认仅落盘 4 场景源码+4 SVG+draw-ph-p8.ts+worklog 追加
+
+Stage Summary:
+- 生理学 ch11-s3/ch11-s4/ch12-s1/ch12-s2 四张自绘矢量插图交付：场景源码（可再生成）、public/images/bio/drawn/ 下 4 张 SVG（24.8/21.1/19.5/19.1 KB）、draw-ph-p8 挂载三件套齐备，overlap-check 各自 0 标记、tsc 本批次零错误
+- 图注数值口径与正文严格对齐（300→1200 mOsm/kg、单效应 200、V₂-cAMP-AQP2、1200 vs 50 两极、渴阈 280–290；HCO₃⁻ 4300 mmol/日·80–85%、可滴定酸 1/3 vs 铵 2/3、Winter 1.5×HCO₃⁻+8±2、AG 8–12、血钾 98%/140 vs 4 mmol/L；T₄ 93% vs T₃ 7%·活性 5 倍、NIS 20–40 倍、皮质醇晨峰 2–3 倍、双轴秒级/分钟-小时级）
+- 后续动作：drawPhP8 已挂载可直接被前端聚合器消费；上下标混排 wtext 需行距 ≥23px 的经验已沉淀（overlap 检测器对 _{}^{} 相邻累积 dy 的保守估计），供后续批次预防同类缺陷
+---
+Task ID: 44-d（含 44-b2/b4/b5/b6 补记）
+Agent: 主控（Z.ai Code）+ 内容代理 44-b1~b6 + 绘图代理 44-c/e/f 系列
+Task: 生理学第十三学科全量落地：48 节教材正文 + 60 题 + 60 词条 + 48 张自绘 SVG + 全链路集成与 QA
+
+Work Log:
+- 【补记】44-b2/b4/b5/b6 四个内容代理在运行截止前已写完全部交付物（ch3~ch12 正文 + quiz-p2~p6 + glossary-p2~p6）但未及追加 worklog——48/48 节经核验全部为真实教材内容（无占位残留）、tsc 零错误；44-b1/b3 记录见各自条目
+- 【SVG 交付汇总】10 个小批次代理（e1/e2/e3/e4/f1/f2/f3 + 中断代理 c1~c4 遗留）完成 48 张场景源码；每张均经「写→渲染→overlap-check 清零」循环；f2 沉淀行距不足返工经验（含上下标行 lh 需 ≥15）
+- 主控集成：scripts/draw/scenes/ph/part1~4.ts 全量登记（48 slug 映射）→ bun scripts/draw/gen.ts ph 生成 48/48 张 → 全库 overlap-check 499 张 0 标记
+- 主控亲修 7 处中断代理遗留的重叠（ch4-s1 SNARE 标签、ch4-s3 右眼标签、ch5-s2 D1 副标签入框、ch7-s1 阈电位标签避让 wtext 列、ch7-s2 迷走 wtext maxW 430→168 防压 CO-HR 小图、ch10-s1 纵行肌 lab 错位、ch11-s2 左栏 maxW 470→280 + 行距/断行修正）；另修 ch4-s4/ch7-s3 两处元组类型错误
+- 挂载补齐：draw-ph-p1（15 条：ch1/ch4/ch5/ch7/ch10 中断代理所绘图注）+ draw-ph-p6（8 条：ch6-s4/ch8 四张 + F1 的 ch10-s4/ch11-s1/ch11-s2）——48/48 小节配图唯一且完整
+- 数据层核验：13 学科、生理学 12 章 48 节约 16.4 万字符、题库 60/765、词条 60/393、配图 48/48、全站小节 633
+- agent-browser 全链路 QA：首页十三大学科卡+生理学卡；学科中心（封面+12 章 summary）；阅读器（正文+图 1-1-1 naturalWidth=1400+图注+灯箱）；测验中心生理学 tab 60 题 12 章、作答判分解析全通；词典生理学词条（量子释放/行波理论等）；图库 670 张（622+48）筛选生理学恰 48 张；控制台零错误；375px 移动端无横向溢出
+- VLM 复核主控亲修的三张（ch7-s2/ch11-s2/ch4-s3）全部 PASS
+
+Stage Summary:
+- 生理学学科按既有 12 学科同一标准全量交付：正文（每节 2200–3200 字、H2 分节、表格、术语粗体英文括注、交叉引用）、48 张自绘 SVG（overlap-check 全库零标记）、60 题（single/truefalse/multiple 混合、解析讲机制）、60 词条（g-335~g-394）、封面（桃夭粉 HeartPulse）、全站注册与「十三大」文案
+- 多代理协作经验：单代理运行时限约可完成 4–6 张 SVG 场景，12 张/代理的初始编排必然超时；小批次（4–5 张+单图渲染自检循环）为最优粒度；中断代理常已完成大部分文件写入，重启前先盘点落盘状态可省大量工作
+- 遗留：生理学正文尚未经过 43 系列式 VLM 全量文案科学性审校（可后续纳入「全站文案检查打磨」任务）；SVG 已过解析式+抽检 VLM，可按需补充全量 VLM 视觉审查

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">甲状腺与肾上腺：激素合成、节律与应激双轴</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">T<tspan dy="3.7" font-size="12.2">4</tspan><tspan dy="-3.7">占分泌约93%而活性在T</tspan><tspan dy="3.7" font-size="12.2">3</tspan><tspan dy="-3.7">（约5倍）——外周5′-脱碘本身即调节位点；肾上腺三带分产醛固酮/皮质醇/DHEA，皮质醇晨8时峰可达夜间2–3倍，应激由交感-髓质轴（秒级）与</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">HPA轴（分钟-小时级）双轴接力</text>
+  <rect x="30" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、甲状腺激素六步合成（滤泡装配）</text>
+  <rect x="50" y="180" width="195" height="78" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="147" y="202" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">① 摄碘</text>
+  <text x="147" y="222" font-size="10" fill="#475569" text-anchor="middle">NIS（Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">/I</tspan><tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4"> 同向转运）</tspan></text>
+  <text x="147" y="242" font-size="10" fill="#64748b" text-anchor="middle">二级主动·浓集 20–40 倍</text>
+  <line x1="247" y1="219" x2="263" y2="219" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="265" y="180" width="195" height="78" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="362" y="202" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">② 碘入腔</text>
+  <text x="362" y="222" font-size="10" fill="#475569" text-anchor="middle">顶膜 pendrin 外排</text>
+  <text x="362" y="242" font-size="10" fill="#64748b" text-anchor="middle">I<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4"> 进入滤泡腔</tspan></text>
+  <line x1="462" y1="219" x2="478" y2="219" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="480" y="180" width="195" height="78" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="577" y="202" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">③ 活化</text>
+  <text x="577" y="222" font-size="10" fill="#475569" text-anchor="middle">TPO + H<tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O</tspan><tspan dy="2.2" font-size="7.2">2</tspan></text>
+  <text x="577" y="242" font-size="10" fill="#64748b" text-anchor="middle">I<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4"> 氧化为活性碘</tspan></text>
+  <line x1="577" y1="260" x2="577" y2="283" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="480" y="285" width="195" height="78" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="577" y="307" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">④ 碘化</text>
+  <text x="577" y="327" font-size="10" fill="#475569" text-anchor="middle">TPO 催化</text>
+  <text x="577" y="347" font-size="10" fill="#64748b" text-anchor="middle">TG 酪氨酸挂碘成 MIT/DIT</text>
+  <line x1="478" y1="324" x2="462" y2="324" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="265" y="285" width="195" height="78" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="362" y="307" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">⑤ 偶联</text>
+  <text x="362" y="327" font-size="10" fill="#475569" text-anchor="middle">DIT+DIT→T<tspan dy="2.2" font-size="7.2">4</tspan><tspan dy="-2.2">；MIT+DIT→T</tspan><tspan dy="2.2" font-size="7.2">3</tspan></text>
+  <text x="362" y="347" font-size="10" fill="#64748b" text-anchor="middle">TPO 催化偶联</text>
+  <line x1="263" y1="324" x2="247" y2="324" stroke="#1e293b" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <rect x="50" y="285" width="195" height="78" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="147" y="307" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">⑥ 释放</text>
+  <text x="147" y="327" font-size="10" fill="#475569" text-anchor="middle">胞吞胶体·溶酶体水解</text>
+  <text x="147" y="347" font-size="10" fill="#64748b" text-anchor="middle">MIT/DIT 脱碘回收碘</text>
+  <rect x="124.16175000000001" y="383.075" width="161.67649999999998" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="205" y="395.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">TPO 一肩挑 ③④⑤——硫脲类靶点</text>
+  <rect x="383.04740000000004" y="383.075" width="193.90519999999998" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="480" y="395.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">Wolff-Chaikoff：大剂碘阻断有机化</text>
+  <text x="50" y="428" font-size="11" fill="#475569">胶体（TG 支架）储于滤泡腔、储量够 2–3 个月——抗甲亢药起效慢的根源。碘缺乏→TSH 持续刺激→腺体增生</text>
+  <text x="50" y="444.5" font-size="11" fill="#475569">（地方性甲状腺肿）；食盐加碘基本消除碘缺乏病。</text>
+  <rect x="231.7496" y="473.075" width="196.50080000000003" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="330" y="485.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">滤泡上皮顶面朝腔·底面朝血（极性）</text>
+  <rect x="710" y="132" width="660" height="400" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、分泌比例·外周脱碘·三大作用</text>
+  <text x="730" y="178" font-size="11" fill="#475569" font-weight="700">分泌比例</text>
+  <rect x="730" y="188" width="223" height="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <rect x="953" y="188" width="17" height="26" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="841" y="206" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">T<tspan dy="2.4" font-size="7.9">4</tspan><tspan dy="-2.4"> 约 93%</tspan></text>
+  <text x="977" y="206" font-size="10.5" fill="#78350f" font-weight="700">T<tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3"> 7%</tspan></text>
+  <rect x="730" y="248" width="90" height="44" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="775" y="276" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">T<tspan dy="3.1" font-size="10.1">4</tspan></text>
+  <line x1="822" y1="270" x2="874" y2="270" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <text x="848" y="258" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">5′-脱碘</text>
+  <text x="848" y="290" font-size="9" fill="#64748b" text-anchor="middle">D1/D2</text>
+  <rect x="876" y="248" width="130" height="44" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="941" y="268" font-size="13" fill="#065f46" text-anchor="middle" font-weight="700">T<tspan dy="2.9" font-size="9.4">3</tspan></text>
+  <text x="941" y="285" font-size="9.5" fill="#475569" text-anchor="middle">活性约 5 倍</text>
+  <line x1="848" y1="296" x2="848" y2="330" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="858" y="316" font-size="9.5" fill="#991b1b">D3 内环脱碘</text>
+  <rect x="790" y="332" width="120" height="40" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="850" y="356" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">rT<tspan dy="2.4" font-size="7.9">3</tspan><tspan dy="-2.4">（灭活）</tspan></text>
+  <text x="920" y="356" font-size="9.5" fill="#64748b">饥饿·重症时堆积</text>
+  <line x1="1006" y1="270" x2="1046" y2="228" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <rect x="1050" y="190" width="300" height="58" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1200" y="212" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">代谢：产热 BMR↑</text>
+  <text x="1200" y="232" font-size="10" fill="#475569" text-anchor="middle">上调 Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">/K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">-ATP 酶·促糖异生</tspan></text>
+  <rect x="1050" y="258" width="300" height="58" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1200" y="280" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">发育：脑关键期</text>
+  <text x="1200" y="300" font-size="10" fill="#475569" text-anchor="middle">缺乏→克汀病·新生儿 TSH 筛查</text>
+  <rect x="1050" y="326" width="300" height="58" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1200" y="348" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700">允许：上调 β 受体</text>
+  <text x="1200" y="368" font-size="10" fill="#475569" text-anchor="middle">放大儿茶酚胺效应（甲亢心悸手抖）</text>
+  <text x="730" y="400" font-size="10.5" fill="#475569">T<tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-2.3"> 99.97% 与蛋白结合（TBG 为主）：半衰期约 7 天、</tspan></text>
+  <text x="730" y="415" font-size="10.5" fill="#475569">T<tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3"> 约 1 天；妊娠 TBG 翻倍——总 T</tspan><tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-2.3"> 升而游离 T</tspan><tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-2.3"> 正常</tspan></text>
+  <text x="730" y="430" font-size="10.5" fill="#475569">（假性甲亢），判断须测游离。</text>
+  <rect x="769.077034" y="451.075" width="241.84593200000003" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="890" y="463.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">TRH→TSH→滤泡；T<tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3">/T</tspan><tspan dy="2.3" font-size="7.6">4</tspan><tspan dy="-2.3"> 负反馈于垂体·下丘脑</tspan></text>
+  <rect x="779.494042" y="487.075" width="221.01191599999999" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="890" y="499.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">垂体局部 D2 转换的 T<tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-2.3"> 是反馈「读数器」</tspan></text>
+  <rect x="30" y="548" width="660" height="437" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="570.84" font-size="19" fill="#475569" font-weight="700">三、肾上腺皮质：三带三激素</text>
+  <text x="240" y="636" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="700">肾上腺（皮质三带 + 髓质）</text>
+  <circle cx="240" cy="770" r="118" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="240" cy="770" r="92" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <circle cx="240" cy="770" r="66" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="240" cy="770" r="40" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <line x1="394" y1="672" x2="330" y2="706" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="400" y="668" font-size="12.5" fill="#075985" font-weight="700">球状带 → 醛固酮</text>
+  <text x="400" y="688" font-size="10.5" fill="#475569">血管紧张素 II·高血钾驱动（不听 ACTH）</text>
+  <line x1="394" y1="740" x2="318" y2="742" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="400" y="738" font-size="12.5" fill="#78350f" font-weight="700">束状带 → 皮质醇</text>
+  <text x="400" y="758" font-size="10.5" fill="#475569">ACTH 驱动·最厚一带</text>
+  <line x1="394" y1="810" x2="290" y2="798" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="400" y="808" font-size="12.5" fill="#4c1d95" font-weight="700">网状带 → DHEA</text>
+  <text x="400" y="828" font-size="10.5" fill="#475569">雄激素前体库·17,20-裂解酶活跃</text>
+  <line x1="394" y1="880" x2="262" y2="808" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="400" y="878" font-size="12.5" fill="#831843" font-weight="700">髓质 → 肾上腺素</text>
+  <text x="400" y="898" font-size="10.5" fill="#475569">嗜铬细胞·内脏大神经（交感同源）</text>
+  <text x="50" y="940" font-size="10.5" fill="#475569">球状带无 17α-羟化酶故独产醛固酮；束状带 17α-羟化酶富集产皮质醇；网状带 17,20-裂解酶活跃出 DHEA——同一底物、不同酶链。</text>
+  <rect x="132.665" y="963.075" width="214.67000000000002" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="240" y="975.78" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">青春期「肾上腺功能初现」＝网状带开场</text>
+  <rect x="710" y="548" width="660" height="437" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="570.84" font-size="19" fill="#475569" font-weight="700">四、皮质醇昼夜节律与应激双轴</text>
+  <rect x="745" y="635" width="235" height="165" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="745" y1="800" x2="745" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="745" y="822" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="803.75" y1="800" x2="803.75" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="803.75" y="822" font-size="13" fill="#64748b" text-anchor="middle">6</text>
+  <line x1="862.5" y1="800" x2="862.5" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="862.5" y="822" font-size="13" fill="#64748b" text-anchor="middle">12</text>
+  <line x1="921.25" y1="800" x2="921.25" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="921.25" y="822" font-size="13" fill="#64748b" text-anchor="middle">18</text>
+  <line x1="980" y1="800" x2="980" y2="806" stroke="#475569" stroke-width="1.8"/>
+  <text x="980" y="822" font-size="13" fill="#64748b" text-anchor="middle">24</text>
+  <text x="862.5" y="844" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">时刻（h）</text>
+  <text x="862.5" y="623" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">皮质醇昼夜节律（晨峰夜谷）</text>
+  <path d="M745,750.5 C748.9,749.1 760.7,751.0 768.5,742.25 C776.3,733.5 783.0,714.2 792,697.7 C801.0,681.2 810.8,641.3 822.55,643.25 C834.3,645.2 850.0,692.8 862.5,709.25 C875.0,725.8 886.0,734.8 897.75,742.25 C909.5,749.7 922.0,750.2 933,753.8 C944.0,757.4 955.7,761.0 963.55,763.7 C971.4,766.5 977.3,769.2 980,770.3" fill="none" stroke="#b45309" stroke-width="3"/>
+  <circle cx="822.6" cy="643.3" r="5" fill="#b45309"/>
+  <text x="850" y="640" font-size="10.5" fill="#78350f" font-weight="700">晨 8 时峰</text>
+  <text x="850" y="656" font-size="10" fill="#64748b">可达夜间 2–3 倍</text>
+  <circle cx="980" cy="770.3" r="5" fill="#b45309"/>
+  <text x="972" y="787" font-size="10.5" fill="#78350f" text-anchor="end" font-weight="700">午夜谷</text>
+  <text x="730" y="880" font-size="10.5" fill="#475569">ACTH 亦步亦趋；采样时辰不注明则数据无意义</text>
+  <rect x="1080" y="598" width="230" height="46" rx="10" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="1195" y="618" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">应激刺激</text>
+  <text x="1195" y="635" font-size="9.5" fill="#475569" text-anchor="middle">稳态受威胁（创伤·感染·心理）</text>
+  <line x1="1150" y1="646" x2="1085" y2="668" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-bad)"/>
+  <line x1="1240" y1="646" x2="1290" y2="668" stroke="#0369a1" stroke-width="2" marker-end="url(#arr-acc)"/>
+  <rect x="990" y="670" width="190" height="56" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1085" y="690" font-size="12" fill="#991b1b" text-anchor="middle" font-weight="700">交感-髓质轴</text>
+  <text x="1085" y="708" font-size="10" fill="#475569" text-anchor="middle">内脏大神经→儿茶酚胺</text>
+  <rect x="1195" y="670" width="165" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1277" y="690" font-size="12" fill="#075985" text-anchor="middle" font-weight="700">HPA 轴</text>
+  <text x="1277" y="708" font-size="10" fill="#475569" text-anchor="middle">CRH→ACTH→皮质醇</text>
+  <rect x="1055.37" y="746.075" width="59.26" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1085" y="758.78" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">秒级动员</text>
+  <rect x="1247.1506" y="746.075" width="75.6988" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1285" y="758.78" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">分钟-小时级</text>
+  <text x="1000" y="795" font-size="10.5" fill="#475569">允许作用：皮质醇自身不缩血管，</text>
+  <text x="1000" y="810" font-size="10.5" fill="#475569">却维持血管平滑肌对儿茶酚胺的反应性——艾迪生病「无人允许，</text>
+  <text x="1000" y="825" font-size="10.5" fill="#475569">信号失效」，血压低垂、升压药迟钝。</text>
+  <rect x="1086.994875" y="839.075" width="186.01025" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1180" y="851.78" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="700">慢性应激→海马受损·HPA 刹车松脱</text>
+  <rect x="1053.08985" y="875.075" width="253.82030000000003" height="17.849999999999998" rx="7" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="1180" y="887.78" font-size="10.5" fill="#475569" text-anchor="middle" font-weight="700">IL-1/IL-6 亦激活 HPA：神经-内分泌-免疫握手</text>
+  <rect x="1090.8342" y="911.075" width="178.3316" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="1180" y="923.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">库欣：向心性肥胖·满月脸·水牛背</text>
+</svg>
