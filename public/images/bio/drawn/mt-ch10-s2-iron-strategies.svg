@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">铁的转运：溶解度困境与两条取铁路线</text>
+  <text x="700" y="74" text-anchor="middle" font-size="16" fill="#64748b">pH7游离Fe<tspan dy="-5.4" font-size="11.5">3+</tspan><tspan dy="5.4">仅约10</tspan><tspan dy="-5.4" font-size="11.5">-17</tspan><tspan dy="5.4">mol/L，必需却几乎不溶——动物以DMT1→Tf-TfR1内吞→ferroportin唯一外排→hepcidin总开关（血色病／慢性病贫血双向）应对；双子叶策略I走H</tspan><tspan dy="-5.4" font-size="11.5">+</tspan><tspan dy="5.4">-ATPase</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="16" fill="#64748b">酸化＋FRO2还原＋IRT1吸收（FIT网络），禾草策略II走TOM1外排麦根酸＋YS1/YSL整分子回收、水稻兼用两策；约15亿人缺铁性贫血与石灰性失绿症是同一困境的两张面孔</text>
+  <rect x="30" y="132" width="660" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、溶解度困境：必需却几乎不溶</text>
+  <text x="46" y="184" font-size="10" fill="#475569">地壳金属含量前列＋生命微量元素之首，却在中性有氧环境里几乎全部沉淀——理解本章的钥匙，攥在 10<tspan dy="-3.4" font-size="7.2">-17</tspan><tspan dy="3.4"> 与毫摩尔级需求的落差里</tspan></text>
+  <text x="235" y="256" font-size="11" fill="#475569" text-anchor="middle" font-weight="700">14 个数量级的鸿沟</text>
+  <line x1="110" y1="268" x2="360" y2="268" stroke="#64748b" stroke-width="2" marker-end="url(#arr-mute)"/>
+  <text x="70" y="300" font-size="9.5" fill="#991b1b" font-weight="600">游离 Fe<tspan dy="-3.2" font-size="6.8">3+</tspan><tspan dy="3.2">（pH 7）</tspan></text>
+  <text x="400" y="300" font-size="9.5" fill="#065f46" text-anchor="end" font-weight="600">生命需求 10<tspan dy="-3.2" font-size="6.8">-3</tspan><tspan dy="3.2"> M 级</tspan></text>
+  <circle cx="70" cy="330" r="6" fill="#dc2626"/>
+  <circle cx="400" cy="330" r="6" fill="#059669"/>
+  <line x1="70" y1="330" x2="400" y2="330" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="330" x2="70" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="70" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-17</tspan></text>
+  <line x1="117.14285714285714" y1="330" x2="117.14285714285714" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="117.14285714285714" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-15</tspan></text>
+  <line x1="164.28571428571428" y1="330" x2="164.28571428571428" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="164.28571428571428" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-13</tspan></text>
+  <line x1="211.42857142857144" y1="330" x2="211.42857142857144" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="211.42857142857144" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-11</tspan></text>
+  <line x1="258.57142857142856" y1="330" x2="258.57142857142856" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="258.57142857142856" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-9</tspan></text>
+  <line x1="305.7142857142857" y1="330" x2="305.7142857142857" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="305.7142857142857" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-7</tspan></text>
+  <line x1="352.8571428571429" y1="330" x2="352.8571428571429" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="352.8571428571429" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-5</tspan></text>
+  <line x1="400" y1="330" x2="400" y2="336" stroke="#475569" stroke-width="1.6"/>
+  <text x="400" y="352" font-size="9" fill="#64748b" text-anchor="middle">10<tspan dy="-3.1" font-size="6.5">-3</tspan></text>
+  <rect x="46" y="380" width="305" height="100" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="60" y="402" font-size="10.5" fill="#991b1b" font-weight="700">化学侧</text>
+  <text x="60" y="424" font-size="9.5" fill="#475569">pH 7 有氧环境几乎全部沉淀为 Fe(OH)<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-2.1">；</tspan></text>
+  <text x="60" y="444" font-size="9.5" fill="#475569">Fe<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2"> 溶解度高出许多数量级——胃酸酸化＋维生素 C 还原，</tspan></text>
+  <text x="60" y="464" font-size="9.5" fill="#475569">正是膳食提高铁生物利用度的原理</text>
+  <rect x="365" y="380" width="300" height="100" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <text x="379" y="402" font-size="10.5" fill="#065f46" font-weight="700">生物侧</text>
+  <text x="379" y="424" font-size="9.5" fill="#475569">不给游离铁任何机会：动物以转铁蛋白「押运」、</text>
+  <text x="379" y="444" font-size="9.5" fill="#475569">禾草以麦根酸「螯合护送」——包装即一切，两条路线见下三图</text>
+  <text x="46" y="508" font-size="10" fill="#475569">直观对照：铁器在潮湿空气中数日生锈，而转铁蛋白结合的铁在血浆中穿行无恙、</text>
+  <text x="46" y="531" font-size="10" fill="#475569">红细胞里的铁随约 120 天的细胞寿命被反复回收——差别不在铁，而在「包装」与「押运」</text>
+  <text x="46" y="544" font-size="10.5" fill="#1e293b" font-weight="700">总量账（成年人体）</text>
+  <text x="46" y="568" font-size="9.5" fill="#475569">体铁 3–4 g · 约 2/3 在血红蛋白 · 储存约 1 g · 血浆转运池仅 3–4 mg · 日吸收与丢失各 1–2 mg</text>
+  <rect x="710" y="132" width="660" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、动物铁链条：吸收、循环与 hepcidin 总开关</text>
+  <text x="726" y="184" font-size="10" fill="#475569">吸收在十二指肠：胃酸与维生素 C 把膳食 Fe<tspan dy="-3.4" font-size="7.2">3+</tspan><tspan dy="3.4"> 还原为可溶 Fe</tspan><tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4">，顶膜 DMT1 以 H</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 同向转运收入——吸收与释铁共用一个载体家族</tspan></text>
+  <text x="726" y="220" font-size="9.5" fill="#64748b">肠腔（十二指肠）</text>
+  <circle cx="796" cy="198" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="796" y="200.52" font-size="7" fill="#78350f" text-anchor="middle" font-weight="700">Fe<tspan dy="-2.4" font-size="5.0">2+</tspan></text>
+  <circle cx="830" cy="198" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="830" y="200.34" font-size="6.5" fill="#991b1b" text-anchor="middle" font-weight="700">H<tspan dy="-2.2" font-size="4.7">+</tspan></text>
+  <line x1="796" y1="210" x2="796" y2="222" stroke="#d97706" stroke-width="1.4" marker-end="url(#arr-warn)"/>
+  <line x1="830" y1="208" x2="830" y2="222" stroke="#dc2626" stroke-width="1.4" marker-end="url(#arr-bad)"/>
+  <text x="860" y="208" font-size="8.5" fill="#475569">胃酸·维 C：Fe<tspan dy="-2.9" font-size="6.1">3+</tspan><tspan dy="2.9">→Fe</tspan><tspan dy="-2.9" font-size="6.1">2+</tspan></text>
+  <g><circle cx="740" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="250" x2="740" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="250" x2="764" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="250" x2="788" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="250" x2="812" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="250" x2="836" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="250" x2="860" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="250" x2="884" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="250" x2="908" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="250" x2="932" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="250" x2="956" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="246" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="250" x2="980" y2="255" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="259" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="780" y="224" width="64" height="48" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="812" y="246" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">DMT1</text>
+  <text x="812" y="264" font-size="7.5" fill="#475569" text-anchor="middle">H<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6"> 同向</tspan></text>
+  <rect x="740" y="272" width="240" height="150" rx="10" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="752" y="294" font-size="10" fill="#1e293b" font-weight="700">肠上皮细胞</text>
+  <circle cx="860" cy="344" r="14" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="860" y="346.88" font-size="8" fill="#78350f" text-anchor="middle" font-weight="700">Fe<tspan dy="-2.7" font-size="5.8">2+</tspan></text>
+  <line x1="820" y1="274" x2="846" y2="326" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <g><circle cx="740" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="426" x2="740" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="426" x2="764" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="426" x2="788" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="426" x2="812" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="426" x2="836" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="426" x2="860" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="426" x2="884" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="426" x2="908" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="426" x2="932" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="426" x2="956" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="422" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="426" x2="980" y2="431" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="435" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="780" y="400" width="70" height="48" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="815" y="420" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">FPN</text>
+  <text x="815" y="438" font-size="6.5" fill="#475569" text-anchor="middle">ferroportin</text>
+  <line x1="846" y1="354" x2="822" y2="396" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <text x="880" y="425" font-size="8.5" fill="#4c1d95" font-weight="600">唯一铁外排蛋白</text>
+  <text x="726" y="494" font-size="9.5" fill="#64748b">血流</text>
+  <line x1="815" y1="450" x2="815" y2="464" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <circle cx="815" cy="492" r="24" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="803" cy="484" r="6" fill="#6d28d9"/>
+  <circle cx="827" cy="484" r="6" fill="#6d28d9"/>
+  <text x="815" y="497" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">Tf</text>
+  <text x="815" y="534" font-size="8.5" fill="#475569" text-anchor="middle">转铁蛋白·Fe<tspan dy="-2.9" font-size="6.1">3+</tspan></text>
+  <text x="890" y="474" font-size="8.5" fill="#475569">血浆池仅 3–4 mg</text>
+  <rect x="896.5724" y="500.35" width="66.8552" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="930" y="511.24" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">hepcidin</text>
+  <line x1="900" y1="496" x2="848" y2="452" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <text x="880" y="545" font-size="8.5" fill="#991b1b" font-weight="600">结合→内吞降解＝出口关闭</text>
+  <text x="726" y="572" font-size="8.5" fill="#64748b">DMT1 一个蛋白三处上岗：顶膜吸收、内体释铁、巨噬细胞吞噬体回收</text>
+  <text x="1030" y="232" font-size="11.5" fill="#475569" font-weight="700">循环：Tf-TfR1 内吞</text>
+  <text x="1030" y="262" font-size="9.5" fill="#475569">① Fe<tspan dy="-3.2" font-size="6.8">3+</tspan><tspan dy="3.2">-Tf 结合膜受体 TfR1</tspan></text>
+  <text x="1030" y="288" font-size="9.5" fill="#475569">② 网格蛋白内吞入内体</text>
+  <text x="1030" y="314" font-size="9.5" fill="#475569">③ 内体酸化→铁与蛋白解离</text>
+  <text x="1030" y="340" font-size="9.5" fill="#475569">④ DMT1 同型送铁出内体膜；</text>
+  <text x="1030" y="360" font-size="9.5" fill="#475569">Tf／TfR1 循环再用</text>
+  <rect x="1233.144592" y="230.35" width="63.710815999999994" height="15.299999999999999" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1265" y="241.24" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">Tf·Fe<tspan dy="-3.1" font-size="6.5">3+</tspan></text>
+  <line x1="1265" y1="252" x2="1265" y2="266" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="1237" y="268" width="56" height="36" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1265" y="290" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">TfR1</text>
+  <line x1="1265" y1="306" x2="1265" y2="318" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <circle cx="1265" cy="342" r="20" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <text x="1265" y="338" font-size="8" fill="#134e4a" text-anchor="middle" font-weight="700">pH↓</text>
+  <text x="1265" y="352" font-size="7.5" fill="#475569" text-anchor="middle">释铁</text>
+  <text x="1030" y="442" font-size="11.5" fill="#475569" font-weight="700">总开关：hepcidin（肝脏）</text>
+  <text x="1030" y="464" font-size="9.5" fill="#475569">肝脏 hepcidin 结合 FPN→内吞降解，肠与巨噬细胞的铁出口关闭、</text>
+  <text x="1030" y="485" font-size="9.5" fill="#475569">血清铁下降；</text>
+  <text x="1030" y="506" font-size="9.5" fill="#475569">其转录受铁储备与炎症信号经 HJV-HFE-TFR2＋BMP/SMAD 调控</text>
+  <rect x="1030" y="522" width="158" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1044" y="542" font-size="10.5" fill="#991b1b" font-weight="700">HFE 血色病</text>
+  <text x="1044" y="562" font-size="8.5" fill="#475569">hepcidin 不足→铁过载沉积</text>
+  <rect x="1200" y="522" width="165" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1214" y="542" font-size="10.5" fill="#991b1b" font-weight="700">慢性病贫血</text>
+  <text x="1214" y="562" font-size="8.5" fill="#475569">hepcidin 过高→功能性缺铁</text>
+  <rect x="30" y="600" width="660" height="385" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="622.84" font-size="19" fill="#475569" font-weight="700">三、植物策略 I：酸化—还原—吸收三步曲</text>
+  <text x="46" y="648" font-size="9.5" fill="#64748b">根际（石灰性土壤 pH 高）</text>
+  <text x="76" y="674" font-size="8.5" fill="#075985">pH↓ 溶解度↑</text>
+  <text x="205" y="674" font-size="8.5" fill="#78350f" text-anchor="middle">Fe<tspan dy="-2.9" font-size="6.1">3+</tspan><tspan dy="2.9">·难溶</tspan></text>
+  <circle cx="112" cy="694" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="112" y="696.34" font-size="6.5" fill="#075985" text-anchor="middle" font-weight="700">H<tspan dy="-2.2" font-size="4.7">+</tspan></text>
+  <line x1="112" y1="706" x2="112" y2="688" stroke="#0369a1" stroke-width="1.6" marker-end="url(#arr-acc)"/>
+  <g><circle cx="60" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="734" x2="60" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="734" x2="84" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="734" x2="108" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="734" x2="132" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="734" x2="156" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="734" x2="180" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="734" x2="204" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="734" x2="228" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="734" x2="252" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="734" x2="276" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="734" x2="300" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="734" x2="324" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="734" x2="348" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="734" x2="372" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="730" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="734" x2="396" y2="739" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="743" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="84" y="706" width="76" height="52" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="122" y="728" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9">-ATPase</tspan></text>
+  <text x="122" y="746" font-size="7.5" fill="#475569" text-anchor="middle">酸化根际</text>
+  <polygon points="205,672 213,680 205,688 197,680" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <line x1="216" y1="680" x2="230" y2="680" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <circle cx="243" cy="680" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="243" y="682.34" font-size="6.5" fill="#78350f" text-anchor="middle" font-weight="700">Fe<tspan dy="-2.2" font-size="4.7">2+</tspan></text>
+  <line x1="256" y1="687" x2="300" y2="706" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <rect x="196" y="706" width="68" height="52" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="230" y="728" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">FRO2</text>
+  <text x="230" y="746" font-size="7" fill="#475569" text-anchor="middle">螯铁还原酶</text>
+  <rect x="300" y="706" width="64" height="52" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="332" y="728" font-size="10" fill="#831843" text-anchor="middle" font-weight="700">IRT1</text>
+  <text x="332" y="746" font-size="7" fill="#475569" text-anchor="middle">Fe<tspan dy="-2.4" font-size="5.0">2+</tspan><tspan dy="2.4"> 通道</tspan></text>
+  <line x1="332" y1="760" x2="332" y2="774" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <circle cx="332" cy="790" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="332" y="792.52" font-size="7" fill="#78350f" text-anchor="middle" font-weight="700">Fe<tspan dy="-2.4" font-size="5.0">2+</tspan></text>
+  <text x="46" y="780" font-size="9.5" fill="#64748b">根表皮细胞（IRT1 兼收铁锌）</text>
+  <rect x="46" y="806" width="360" height="64" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="60" y="828" font-size="10.5" fill="#991b1b" font-weight="700">石灰性土壤缺铁失绿症</text>
+  <text x="60" y="848" font-size="9.5" fill="#475569">pH 高＋碳酸钙缓冲强，三步曲仍不够用→新叶脉间失绿发黄：</text>
+  <text x="60" y="868" font-size="9.5" fill="#475569">农业上分布最广的微量元素缺乏症之一</text>
+  <rect x="46" y="898.22" width="9.9" height="7.56" rx="3" fill="#b45309" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="63.9" y="905.24" font-size="9" fill="#475569">Fe<tspan dy="-3.1" font-size="6.5">3+</tspan><tspan dy="3.1">·难溶</tspan></text>
+  <rect x="116.4272" y="898.22" width="9.9" height="7.56" rx="3" fill="#d97706" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="134.3272" y="905.24" font-size="9" fill="#475569">Fe<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1">·可溶</tspan></text>
+  <text x="46" y="936" font-size="9.5" fill="#475569">FRO2 属跨膜还原酶大家族、与酵母铁还原系统同源——策略 I 的装置单件在真核演化早期已经可用</text>
+  <text x="446" y="668" font-size="11.5" fill="#475569" font-weight="700">FIT（bHLH）转录网络</text>
+  <rect x="460" y="690" width="180" height="56" rx="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="550" y="712" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">FIT</text>
+  <text x="550" y="730" font-size="8.5" fill="#475569" text-anchor="middle">缺铁感应枢纽</text>
+  <line x1="550" y1="746" x2="550" y2="762" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="550" y="780" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="700">同步上调三步</text>
+  <rect x="432.39966400000003" y="798.775" width="75.200672" height="14.45" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="470" y="809.06" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9">-ATPase</tspan></text>
+  <rect x="529.1438" y="798.775" width="53.7124" height="14.45" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="556" y="809.06" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="700">FRO2</text>
+  <rect x="599.1438" y="798.775" width="53.7124" height="14.45" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="626" y="809.06" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">IRT1</text>
+  <text x="446" y="842" font-size="9.5" fill="#475569">闸门另有看门人：铁充足时 IRT1 被泛素化降解，</text>
+  <text x="446" y="863" font-size="9.5" fill="#475569">FIT 只管「开闸」——与动物端 ZIP4 的控制如出一辙</text>
+  <text x="446" y="934" font-size="9.5" fill="#475569">IRT1 并非铁专线：Zn<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2">、</tspan></text>
+  <text x="446" y="955" font-size="9.5" fill="#475569">Mn<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2"> 搭车涌入——缺铁的连带伤害是锌锰过量</tspan></text>
+  <rect x="710" y="600" width="660" height="385" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="622.84" font-size="19" fill="#475569" font-weight="700">四、植物策略 II：麦根酸螯合与整分子回收</text>
+  <text x="726" y="644" font-size="10" fill="#475569">禾草类独门路线：根系合成并外排麦根酸类植物铁载体（PS）——对 Fe<tspan dy="-3.4" font-size="7.2">3+</tspan><tspan dy="3.4"> 亲和力极高的六齿螯合剂，整分子回收 Fe(III)-PS 复合物</tspan></text>
+  <text x="726" y="660" font-size="9.5" fill="#64748b">根际（碱性钙质土依然高效）</text>
+  <g><circle cx="740" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="720" x2="740" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="720" x2="764" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="720" x2="788" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="720" x2="812" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="720" x2="836" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="720" x2="860" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="720" x2="884" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="720" x2="908" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="720" x2="932" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="720" x2="956" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="720" x2="980" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1004" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1004" y1="720" x2="1004" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1004" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1028" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1028" y1="720" x2="1028" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1028" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1052" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1052" y1="720" x2="1052" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1052" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1076" cy="716" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1076" y1="720" x2="1076" y2="725" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1076" cy="729" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="780" y="692" width="68" height="52" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="814" y="714" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">TOM1</text>
+  <text x="814" y="732" font-size="7.5" fill="#475569" text-anchor="middle">外排 PS</text>
+  <rect x="920" y="692" width="90" height="52" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="965" y="714" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">YS1/YSL</text>
+  <text x="965" y="732" font-size="7.5" fill="#475569" text-anchor="middle">整分子摄入</text>
+  <line x1="830" y1="690" x2="843" y2="676" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <rect x="828.2526" y="656.35" width="43.4948" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="850" y="667.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">PS</text>
+  <polygon points="920,656 928,664 920,672 912,664" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <line x1="884" y1="664" x2="906" y2="664" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <rect x="958.971" y="656.35" width="82.05799999999999" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1000" y="667.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">Fe(III)-PS</text>
+  <line x1="934" y1="664" x2="948" y2="664" stroke="#64748b" stroke-width="1.4" marker-end="url(#arr-mute)"/>
+  <line x1="1000" y1="682" x2="1000" y2="690" stroke="#059669" stroke-width="1.6" marker-end="url(#arr-ok)"/>
+  <text x="726" y="776" font-size="9.5" fill="#64748b">根细胞</text>
+  <text x="726" y="798" font-size="9.5" fill="#475569">水稻兼用两策：保留策略 I 的还原吸收基因，又有麦根酸合成与 TOM1 外排</text>
+  <rect x="726" y="820" width="355" height="96" rx="9" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="740" y="842" font-size="10.5" fill="#1e293b" font-weight="700">同一困境的两张面孔</text>
+  <text x="740" y="862" font-size="9.5" fill="#475569">人类缺铁性贫血累及约 15 亿人＝全球最普遍的营养缺乏症；</text>
+  <text x="740" y="882" font-size="9.5" fill="#475569">石灰性失绿症＝农业最广布的微量元素缺乏——同一个化学困境，</text>
+  <text x="740" y="902" font-size="9.5" fill="#475569">一张医学面孔，一张农学面孔</text>
+  <text x="726" y="936" font-size="9.5" fill="#475569">互为镜像的工程逻辑：动物用转铁蛋白「蛋白押运」护铁穿越血浆，</text>
+  <text x="726" y="957" font-size="9.5" fill="#475569">禾草用麦根酸「小分子螯合」护铁穿越根际——不给游离铁任何沉淀或成自由基的机会</text>
+  <text x="1100" y="664" font-size="11.5" fill="#475569" font-weight="700">PS 小传</text>
+  <text x="1100" y="688" font-size="9.5" fill="#475569">麦根酸类从蛋氨酸出发、</text>
+  <text x="1100" y="709" font-size="9.5" fill="#475569">以烟酰胺为共同中间体——同一中间体亦生成体内铁的长距离螯合伴侣：</text>
+  <text x="1100" y="730" font-size="9.5" fill="#475569">外勤与内勤一套系统</text>
+  <text x="1100" y="752" font-size="9.5" fill="#475569">分泌有时空指纹：集中在根尖数毫米、常在清晨集中释放；</text>
+  <text x="1100" y="773" font-size="9.5" fill="#475569">分生区与伸长区优先取铁</text>
+  <text x="1100" y="800" font-size="9.5" fill="#1e293b" font-weight="700">禾草分泌量＝耐性排序</text>
+  <text x="1100" y="827" font-size="9" fill="#475569">大麦</text>
+  <rect x="1150" y="818" width="165" height="12" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1100" y="845" font-size="9" fill="#475569">小麦</text>
+  <rect x="1150" y="836" width="128" height="12" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1100" y="863" font-size="9" fill="#475569">燕麦</text>
+  <rect x="1150" y="854" width="98" height="12" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1100" y="881" font-size="9" fill="#475569">玉米</text>
+  <rect x="1150" y="872" width="68" height="12" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1100" y="899" font-size="9" fill="#475569">水稻</text>
+  <rect x="1150" y="890" width="40" height="12" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="1100" y="936" font-size="8.5" fill="#64748b">（分泌量越大越耐石灰性土壤，与其长势吻合）</text>
+</svg>

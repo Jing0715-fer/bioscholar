@@ -16,6 +16,7 @@ import { structuralBiology } from './subjects/structural-biology'
 import { xrayCrystallography } from './subjects/x-ray-crystallography'
 import { electronMicroscopy } from './subjects/electron-microscopy'
 import { physiology } from './subjects/physiology'
+import { membraneTransport } from './subjects/membrane-transport'
 import { sectionExpansions } from './expansions'
 
 /**
@@ -40,7 +41,7 @@ function withExpansions(subject: Subject): Subject {
   }
 }
 
-/** 十三大学科 */
+/** 十四大学科 */
 export const subjects: Subject[] = [
   biochemistry,
   molecularBiology,
@@ -55,6 +56,7 @@ export const subjects: Subject[] = [
   xrayCrystallography,
   electronMicroscopy,
   physiology,
+  membraneTransport,
 ].map(withExpansions)
 
 export function getSubject(id: SubjectId): Subject | undefined {
@@ -149,6 +151,7 @@ import { structuralBiologyQuiz } from './quiz/structural-biology'
 import { xrayCrystallographyQuiz } from './quiz/x-ray-crystallography'
 import { electronMicroscopyQuiz } from './quiz/electron-microscopy'
 import { physiologyQuiz } from './quiz/physiology'
+import { membraneTransportQuiz } from './quiz/membrane-transport'
 
 export const allQuizQuestions: QuizQuestion[] = [
   ...biochemistryQuiz,
@@ -164,6 +167,7 @@ export const allQuizQuestions: QuizQuestion[] = [
   ...xrayCrystallographyQuiz,
   ...electronMicroscopyQuiz,
   ...physiologyQuiz,
+  ...membraneTransportQuiz,
 ]
 
 export function getQuizBySubject(subjectId: SubjectId): QuizQuestion[] {

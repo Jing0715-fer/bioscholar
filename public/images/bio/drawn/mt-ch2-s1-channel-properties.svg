@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="56" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">通道的一般性质：孔道、门控与选择性</text>
+  <text x="700" y="90" text-anchor="middle" font-size="17" fill="#64748b">三要素模块化组合；i=g(V−E<tspan dy="3.7" font-size="12.2">ion</tspan><tspan dy="-3.7">)：多数K</tspan><tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">通道2–20pS、BK大电导达100–300pS；KcsA滤器以羰基氧代水化壳实现&gt;10000:1选择，通道10</tspan><tspan dy="-5.8" font-size="12.2">7</tspan><tspan dy="5.8">–10</tspan><tspan dy="-5.8" font-size="12.2">8</tspan><tspan dy="5.8">离子/s比载体快五个数量级</tspan></text>
+  <rect x="30" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、通道三要素：可独立替换的三个模块</text>
+  <text x="150" y="190" font-size="13.5" fill="#134e4a" text-anchor="middle" font-weight="700">① 孔道 pore</text>
+  <text x="150" y="208" font-size="11" fill="#64748b" text-anchor="middle">贯穿膜的亲水通路</text>
+  <text x="46" y="262" font-size="10.5" fill="#64748b">胞外</text>
+  <text x="46" y="310" font-size="10.5" fill="#64748b">胞质</text>
+  <g><circle cx="75" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="75" y1="274" x2="75" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="75" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="99" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="99" y1="274" x2="99" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="99" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="123" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="123" y1="274" x2="123" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="123" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="147" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="147" y1="274" x2="147" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="147" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="171" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="171" y1="274" x2="171" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="171" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="195" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="195" y1="274" x2="195" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="195" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="219" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="219" y1="274" x2="219" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="219" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <polygon points="139,258 161,258 157,272 157,278 167,288 167,300 133,300 133,288 143,278 143,272" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <polygon points="120,258 139,258 143,272 143,278 133,288 133,300 120,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="180,258 161,258 157,272 157,278 167,288 167,300 180,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="150" cy="240" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="150" y="243.06" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="150" y1="250" x2="150" y2="265" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <circle cx="150" cy="275" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="150" y="277.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="150" y1="284" x2="150" y2="302" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <circle cx="150" cy="320" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="150" y="323.06" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <text x="150" y="342" font-size="11" fill="#475569" text-anchor="middle">前庭宽如漏斗 · 最窄处几 Å</text>
+  <text x="150" y="360" font-size="11" fill="#475569" text-anchor="middle">TEA 内堵 / TTX 外堵定位孔深</text>
+  <text x="360" y="190" font-size="13.5" fill="#831843" text-anchor="middle" font-weight="700">② 门控 gating</text>
+  <text x="360" y="208" font-size="11" fill="#64748b" text-anchor="middle">决定开合的构象开关</text>
+  <text x="365" y="226" font-size="11" fill="#475569" text-anchor="middle">信号：电压 · 配体 · 机械力</text>
+  <g><circle cx="285" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="285" y1="274" x2="285" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="285" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="309" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="309" y1="274" x2="309" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="309" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="333" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="333" y1="274" x2="333" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="333" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="357" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="357" y1="274" x2="357" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="357" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="381" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="381" y1="274" x2="381" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="381" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="405" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="405" y1="274" x2="405" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="405" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="429" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="429" y1="274" x2="429" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="429" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <line x1="348" y1="246" x2="382" y2="246" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <polygon points="319,258 341,258 337,272 337,278 347,288 347,300 313,300 313,288 323,278 323,272" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <polygon points="300,258 319,258 323,272 323,278 313,288 313,300 300,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="360,258 341,258 337,272 337,278 347,288 347,300 360,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="321" y1="298" x2="330" y2="310" stroke="#be185d" stroke-width="2.2"/>
+  <line x1="339" y1="298" x2="330" y2="310" stroke="#be185d" stroke-width="2.2"/>
+  <text x="330" y="326" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">闸关</text>
+  <polygon points="389,258 411,258 407,272 407,278 417,288 417,300 383,300 383,288 393,278 393,272" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <polygon points="370,258 389,258 393,272 393,278 383,288 383,300 370,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="430,258 411,258 407,272 407,278 417,288 417,300 430,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="391" y1="298" x2="381" y2="310" stroke="#059669" stroke-width="2.2"/>
+  <line x1="409" y1="298" x2="419" y2="310" stroke="#059669" stroke-width="2.2"/>
+  <circle cx="400" cy="240" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="400" y="242.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="400" y1="250" x2="400" y2="266" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <circle cx="400" cy="304" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="400" y="306.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <text x="400" y="326" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">闸开</text>
+  <text x="360" y="342" font-size="11" fill="#475569" text-anchor="middle">S6 交叉成束＝关，散开逾 1 nm＝开</text>
+  <text x="360" y="360" font-size="11" fill="#475569" text-anchor="middle">开放概率 P<tspan dy="2.4" font-size="7.9">o</tspan><tspan dy="-2.4"> 由门控曲线刻画</tspan></text>
+  <text x="570" y="190" font-size="13.5" fill="#075985" text-anchor="middle" font-weight="700">③ 选择性 selectivity</text>
+  <text x="570" y="208" font-size="11" fill="#64748b" text-anchor="middle">哪种离子能过、过多快</text>
+  <g><circle cx="495" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="495" y1="274" x2="495" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="495" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="519" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="519" y1="274" x2="519" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="519" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="543" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="543" y1="274" x2="543" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="543" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="567" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="567" y1="274" x2="567" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="567" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="591" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="591" y1="274" x2="591" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="591" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="615" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="615" y1="274" x2="615" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="615" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="639" cy="270" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="639" y1="274" x2="639" y2="279" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="639" cy="283" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <polygon points="559,258 581,258 577,272 577,278 587,288 587,300 553,300 553,288 563,278 563,272" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <polygon points="540,258 559,258 563,272 563,278 553,288 553,300 540,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="600,258 581,258 577,272 577,278 587,288 587,300 600,300" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="570" cy="240" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="570" y="242.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="570" y1="250" x2="570" y2="266" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <circle cx="570" cy="275" r="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="570" y="277.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="570" y1="284" x2="570" y2="302" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <circle cx="570" cy="320" r="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="570" y="322.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <circle cx="622" cy="250" r="7.5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="622" y="252.88" font-size="8" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="622" y1="260" x2="602" y2="270" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-bad)"/>
+  <line x1="592" y1="266" x2="602" y2="276" stroke="#dc2626" stroke-width="2"/>
+  <line x1="602" y1="266" x2="592" y2="276" stroke="#dc2626" stroke-width="2"/>
+  <text x="570" y="342" font-size="11" fill="#475569" text-anchor="middle">几何筛分：K<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 恰容 · Na</tspan><tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 太小止步</tspan></text>
+  <text x="570" y="360" font-size="11" fill="#475569" text-anchor="middle">选择比由反转电位与离子替换测定</text>
+  <rect x="46" y="368" width="628" height="56" rx="8" fill="#f1f5f9" fill-opacity="0.6" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="60" y="390" font-size="11.5" fill="#475569">三要素可独立替换：同一孔道骨架可配不同的门（电压 / 配体 / 机械），</text>
+  <text x="60" y="408" font-size="11.5" fill="#475569">同一种门控也可配不同的滤器——通道家族的多样性，本质上是三要素的排列组合史。</text>
+  <rect x="710" y="132" width="660" height="300" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、单通道电导与欧姆关系：i = g(V − E<tspan dy="4.2" font-size="13.7">ion</tspan><tspan dy="-4.2">)</tspan></text>
+  <text x="1070" y="182" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">典型单通道电导谱（pS，对数轴）</text>
+  <rect x="850" y="190" width="440" height="162" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="850" y1="352" x2="850" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="850" y="374" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="996.6666666666666" y1="352" x2="996.6666666666666" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="996.6666666666666" y="374" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="1143.3333333333333" y1="352" x2="1143.3333333333333" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="1143.3333333333333" y="374" font-size="13" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="1290" y1="352" x2="1290" y2="358" stroke="#475569" stroke-width="1.8"/>
+  <text x="1290" y="374" font-size="13" fill="#64748b" text-anchor="middle">1000</text>
+  <line x1="850" y1="190" x2="850" y2="352" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="996.6666666666666" y1="190" x2="996.6666666666666" y2="352" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="1143.3333333333333" y1="190" x2="1143.3333333333333" y2="352" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="1290" y1="190" x2="1290" y2="352" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <text x="838" y="214" font-size="13" fill="#1e293b" text-anchor="end" font-weight="600">多数 K<tspan dy="-4.4" font-size="9.4">+</tspan><tspan dy="4.4"> 通道</tspan></text>
+  <rect x="894.1510660307173" y="203" width="146.66666666666663" height="14" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1048.817732697384" y="214" font-size="11.5" fill="#475569" font-weight="600">2–20 pS</text>
+  <text x="838" y="252" font-size="13" fill="#1e293b" text-anchor="end" font-weight="600">电压门控 Na<tspan dy="-4.4" font-size="9.4">+</tspan></text>
+  <rect x="952.5156006359495" y="241" width="88.30213206143446" height="14" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1048.817732697384" y="252" font-size="11.5" fill="#475569" font-weight="600">5–20 pS</text>
+  <text x="838" y="290" font-size="13" fill="#1e293b" text-anchor="end" font-weight="600">nAChR</text>
+  <rect x="1066.644450692217" y="279" width="32.53781661039898" height="14" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1107.182267302616" y="290" font-size="11.5" fill="#475569" font-weight="600">30–50 pS</text>
+  <text x="838" y="328" font-size="13" fill="#1e293b" text-anchor="end" font-weight="600">BK（大电导）</text>
+  <rect x="1143.3333333333333" y="317" width="69.97778402555059" height="14" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1221.3111173588838" y="328" font-size="11.5" fill="#475569" font-weight="600">100–300 pS</text>
+  <text x="726" y="396" font-size="11.5" fill="#475569">电导是孔道口径的电学量尺：10 pS 在 150 mV 驱动下 ≈ 1.5 pA，</text>
+  <text x="726" y="419" font-size="11.5" fill="#475569">折合每秒近 10<tspan dy="-3.9" font-size="8.3">7</tspan><tspan dy="3.9"> 个离子——已逼近 0.1 mol/L 溶液撞孔供给率的扩散极限（10</tspan><tspan dy="-3.9" font-size="8.3">8</tspan><tspan dy="3.9">–10</tspan><tspan dy="-3.9" font-size="8.3">9</tspan><tspan dy="3.9">/s）：不是造不出更快的通道，</tspan></text>
+  <text x="726" y="442" font-size="11.5" fill="#475569">是溶液喂不饱。</text>
+  <rect x="30" y="447" width="660" height="538" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="469.84" font-size="19" fill="#475569" font-weight="700">三、KcsA 选择性滤器：以水代水的原子级答案</text>
+  <text x="58" y="500" font-size="10" fill="#64748b">胞外</text>
+  <text x="58" y="655" font-size="10" fill="#64748b">胞质</text>
+  <g><circle cx="60" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="559" x2="60" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="559" x2="84" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="559" x2="108" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="559" x2="132" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="559" x2="156" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="559" x2="180" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="559" x2="204" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="559" x2="228" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="559" x2="252" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="559" x2="276" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="555" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="559" x2="300" y2="564" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="568" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <polygon points="142,515 178,515 168,550 168,578 182,610 188,628 132,628 138,610 152,578 152,550" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <polygon points="120,515 142,515 152,550 152,578 138,610 132,628 120,628" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="200,515 178,515 168,550 168,578 182,610 188,628 200,628" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="140" y1="615" x2="132" y2="630" stroke="#be185d" stroke-width="2"/>
+  <line x1="180" y1="615" x2="188" y2="630" stroke="#be185d" stroke-width="2"/>
+  <text x="66" y="622" font-size="10.5" fill="#475569">S6 闸门</text>
+  <line x1="108" y1="618" x2="128" y2="620" stroke="#94a3b8" stroke-width="1"/>
+  <text x="66" y="560" font-size="10.5" fill="#475569">滤器 ≈3 Å</text>
+  <line x1="112" y1="556" x2="148" y2="560" stroke="#94a3b8" stroke-width="1"/>
+  <text x="205" y="540" font-size="10" fill="#4c1d95" font-weight="600">S1–S4 位点</text>
+  <line x1="202" y1="543" x2="172" y2="556" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="160" cy="490" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="169.52627944162882" cy="495.5" r="2.5" fill="#0369a1"/>
+  <circle cx="160" cy="501" r="2.5" fill="#0369a1"/>
+  <circle cx="150.47372055837118" cy="495.5" r="2.5" fill="#0369a1"/>
+  <circle cx="150.47372055837118" cy="484.5" r="2.5" fill="#0369a1"/>
+  <circle cx="160" cy="479" r="2.5" fill="#0369a1"/>
+  <circle cx="169.52627944162882" cy="484.5" r="2.5" fill="#0369a1"/>
+  <text x="196" y="494" font-size="10" fill="#4c1d95" text-anchor="middle">K<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">·H</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O</tspan></text>
+  <line x1="192" y1="490" x2="172" y2="490" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="160" y1="544" x2="160" y2="584" stroke="#6d28d9" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-pro)"/>
+  <circle cx="153.5" cy="553" r="2.3" fill="#be185d"/>
+  <circle cx="166.5" cy="553" r="2.3" fill="#be185d"/>
+  <circle cx="153.5" cy="560.5" r="2.3" fill="#be185d"/>
+  <circle cx="166.5" cy="560.5" r="2.3" fill="#be185d"/>
+  <circle cx="153.5" cy="568" r="2.3" fill="#be185d"/>
+  <circle cx="166.5" cy="568" r="2.3" fill="#be185d"/>
+  <circle cx="153.5" cy="575.5" r="2.3" fill="#be185d"/>
+  <circle cx="166.5" cy="575.5" r="2.3" fill="#be185d"/>
+  <circle cx="160" cy="553" r="4.5" fill="#6d28d9" stroke="#4c1d95" stroke-width="1.1"/>
+  <circle cx="160" cy="560.5" r="4.5" fill="#6d28d9" stroke="#4c1d95" stroke-width="1.1"/>
+  <circle cx="160" cy="568" r="4.5" fill="#6d28d9" stroke="#4c1d95" stroke-width="1.1"/>
+  <circle cx="160" cy="575.5" r="4.5" fill="#6d28d9" stroke="#4c1d95" stroke-width="1.1"/>
+  <line x1="160" y1="632" x2="160" y2="652" stroke="#6d28d9" stroke-width="1.6" marker-end="url(#arr-pro)"/>
+  <circle cx="160" cy="665" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <circle cx="169.52627944162882" cy="670.5" r="2.5" fill="#0369a1"/>
+  <circle cx="160" cy="676" r="2.5" fill="#0369a1"/>
+  <circle cx="150.47372055837118" cy="670.5" r="2.5" fill="#0369a1"/>
+  <circle cx="150.47372055837118" cy="659.5" r="2.5" fill="#0369a1"/>
+  <circle cx="160" cy="654" r="2.5" fill="#0369a1"/>
+  <circle cx="169.52627944162882" cy="659.5" r="2.5" fill="#0369a1"/>
+  <text x="160" y="690" font-size="10" fill="#4c1d95" text-anchor="middle">K<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">·H</tspan><tspan dy="2.2" font-size="7.2">2</tspan><tspan dy="-2.2">O</tspan></text>
+  <text x="355" y="505" font-size="11.5" fill="#475569">胞外前庭宽如漏斗，引导水合离子鱼贯而入</text>
+  <text x="355" y="530" font-size="11.5" fill="#475569">选择性滤器：TVGYG 主链羰基排成氧环，</text>
+  <text x="355" y="553" font-size="11.5" fill="#475569">孔径约 3 Å——恰容脱去水化壳的 K<tspan dy="-3.9" font-size="8.3">+</tspan></text>
+  <text x="355" y="578" font-size="11.5" fill="#475569">4 个结合位点串联，K<tspan dy="-3.9" font-size="8.3">+</tspan><tspan dy="3.9"> 以 knock-on 推挤接力换位</tspan></text>
+  <text x="355" y="603" font-size="11.5" fill="#475569">K<tspan dy="-3.9" font-size="8.3">+</tspan><tspan dy="3.9"> 脱水的能量损失被羰基氧结合能精确补偿——「以水代水」</tspan></text>
+  <text x="355" y="648" font-size="11.5" fill="#475569">Na<tspan dy="-3.9" font-size="8.3">+</tspan><tspan dy="3.9"> 太小、贴不到足够氧原子，止步于前庭</tspan></text>
+  <text x="355" y="672" font-size="11.5" fill="#475569">长胞内腔与 S6 激活闸门：开门时弯曲散开逾 1 nm</text>
+  <text x="60" y="730" font-size="13" fill="#475569" font-weight="700">选择比对照（条长 ∝ log<tspan dy="2.9" font-size="9.4">10</tspan><tspan dy="-2.9"> 选择比）</tspan></text>
+  <text x="240" y="764" font-size="12" fill="#1e293b" text-anchor="end" font-weight="600">KcsA（K<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">:Na</tspan><tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">）</tspan></text>
+  <rect x="260" y="752" width="300" height="16" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="570" y="764" font-size="12.5" fill="#134e4a" font-weight="700">&gt;10 000 : 1</text>
+  <text x="240" y="796" font-size="12" fill="#1e293b" text-anchor="end" font-weight="600">Nav DEKA（Na<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">:K</tspan><tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">）</tspan></text>
+  <rect x="260" y="784" width="80" height="16" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="350" y="796" font-size="12.5" fill="#075985" font-weight="700">≈12 : 1</text>
+  <text x="350" y="818" font-size="10" fill="#64748b">条长 = lg(选择比) × 75 px</text>
+  <text x="60" y="846" font-size="11" fill="#475569">严筛换高保真、宽筛换高流量——选择性与通量在物理上此消彼长；DEKA 滤器的四个亚基环分别贡献 Asp、Glu、Lys、</text>
+  <text x="60" y="865" font-size="11" fill="#475569">Ala 各一环。</text>
+  <text x="60" y="888" font-size="11" fill="#475569">滤器本身可塌陷变构成为失活位点（Kv 的第二道闸）；关闭态还可以是疏水闸——疏水侧面把水挤出孔道，离子无处驻留。</text>
+  <text x="60" y="912" font-size="11" fill="#475569">欧姆关系在驱动电压超出一定范围后弯折：Kir 的 Mg<tspan dy="-3.7" font-size="7.9">2+</tspan><tspan dy="3.7"> 与多胺堵孔造成内向整流、</tspan></text>
+  <text x="60" y="935" font-size="11" fill="#475569">KAT 弱整流让韧皮部伴胞双向微调——整流常常正是生理设计。</text>
+  <text x="60" y="958" font-size="11" fill="#475569">I = N × P<tspan dy="2.4" font-size="7.9">o</tspan><tspan dy="-2.4"> × i：全细胞电流是数千通道的统计平均，门控调控改的正是开放概率 P</tspan><tspan dy="2.4" font-size="7.9">o</tspan><tspan dy="-2.4">；TTX 堵 Nav 孔口、蝎毒素抓住电压传感器不许复位。</tspan></text>
+  <rect x="710" y="447" width="660" height="538" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="469.84" font-size="19" fill="#475569" font-weight="700">四、速率与梯度成比例：与载体差五个数量级</text>
+  <rect x="790" y="510" width="460" height="205" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="784" y1="715" x2="790" y2="715" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="719" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">0</tspan></text>
+  <line x1="784" y1="692.2222222222222" x2="790" y2="692.2222222222222" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="696.2222222222222" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">1</tspan></text>
+  <line x1="784" y1="669.4444444444445" x2="790" y2="669.4444444444445" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="673.4444444444445" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">2</tspan></text>
+  <line x1="784" y1="646.6666666666666" x2="790" y2="646.6666666666666" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="650.6666666666666" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">3</tspan></text>
+  <line x1="784" y1="623.8888888888889" x2="790" y2="623.8888888888889" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="627.8888888888889" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">4</tspan></text>
+  <line x1="784" y1="601.1111111111111" x2="790" y2="601.1111111111111" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="605.1111111111111" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">5</tspan></text>
+  <line x1="784" y1="578.3333333333334" x2="790" y2="578.3333333333334" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="582.3333333333334" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">6</tspan></text>
+  <line x1="784" y1="555.5555555555555" x2="790" y2="555.5555555555555" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="559.5555555555555" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">7</tspan></text>
+  <line x1="784" y1="532.7777777777778" x2="790" y2="532.7777777777778" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="536.7777777777778" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">8</tspan></text>
+  <line x1="784" y1="510" x2="790" y2="510" stroke="#475569" stroke-width="1.8"/>
+  <text x="780" y="514" font-size="13" fill="#64748b" text-anchor="end">10<tspan dy="-4.4" font-size="9.4">9</tspan></text>
+  <text x="1020" y="498" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">转运速率（对数轴）</text>
+  <line x1="790" y1="692.2222222222222" x2="1250" y2="692.2222222222222" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="669.4444444444445" x2="1250" y2="669.4444444444445" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="646.6666666666666" x2="1250" y2="646.6666666666666" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="623.8888888888889" x2="1250" y2="623.8888888888889" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="601.1111111111111" x2="1250" y2="601.1111111111111" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="578.3333333333334" x2="1250" y2="578.3333333333334" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="555.5555555555555" x2="1250" y2="555.5555555555555" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="790" y1="532.7777777777778" x2="1250" y2="532.7777777777778" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <rect x="830" y="532.7777777777778" width="80" height="22.777777777777715" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="870" y="522.7777777777778" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">10<tspan dy="-4.3" font-size="9.0">7</tspan><tspan dy="4.3">–10</tspan><tspan dy="-4.3" font-size="9.0">8</tspan><tspan dy="4.3"> 离子/s</tspan></text>
+  <rect x="1040" y="623.8888888888889" width="80" height="45.55555555555554" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="1080" y="613.8888888888889" font-size="12.5" fill="#78350f" text-anchor="middle" font-weight="700">10<tspan dy="-4.3" font-size="9.0">2</tspan><tspan dy="4.3">–10</tspan><tspan dy="-4.3" font-size="9.0">4</tspan><tspan dy="4.3"> 分子/s</tspan></text>
+  <line x1="912" y1="532.7777777777778" x2="1230" y2="532.7777777777778" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="1122" y1="623.8888888888889" x2="1230" y2="623.8888888888889" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="1236" y1="536.7777777777778" x2="1236" y2="619.8888888888889" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="1246" y="582.3333333333334" font-size="12" fill="#475569" font-weight="700">≈5 个数量级</text>
+  <text x="870" y="740" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="600">离子通道</text>
+  <text x="1080" y="740" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="600">载体蛋白</text>
+  <text x="870" y="758" font-size="10.5" fill="#64748b" text-anchor="middle">孔的物理：不饱和 · 双向</text>
+  <text x="1080" y="758" font-size="10.5" fill="#64748b" text-anchor="middle">酶的化学：V<tspan dy="2.3" font-size="7.6">max</tspan><tspan dy="-2.3"> · K</tspan><tspan dy="2.3" font-size="7.6">m</tspan></text>
+  <text x="740" y="780" font-size="13.5" fill="#475569" font-weight="700">通道 vs 载体：什么任务只能交给谁</text>
+  <rect x="740" y="790" width="96" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="817.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">特性</text>
+  <rect x="836" y="790" width="260" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="817.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">离子通道</text>
+  <rect x="1096" y="790" width="254" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="817.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">载体蛋白</text>
+  <rect x="740" y="834" width="96" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="850" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">转运速率</text>
+  <rect x="836" y="834" width="260" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="850" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">10<tspan dy="-3.9" font-size="8.3">7</tspan><tspan dy="3.9">–10</tspan><tspan dy="-3.9" font-size="8.3">8</tspan><tspan dy="3.9"> 离子/s</tspan></text>
+  <rect x="1096" y="834" width="254" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="850" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">10<tspan dy="-3.9" font-size="8.3">2</tspan><tspan dy="3.9">–10</tspan><tspan dy="-3.9" font-size="8.3">4</tspan><tspan dy="3.9"> 分子/s</tspan></text>
+  <rect x="740" y="855" width="610" height="21" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="855" width="96" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="871" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">动力学</text>
+  <rect x="836" y="855" width="260" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="871" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">与驱动力成比例、不饱和</text>
+  <rect x="1096" y="855" width="254" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="871" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">米氏饱和（V<tspan dy="2.5" font-size="8.3">max</tspan><tspan dy="-2.5">、K</tspan><tspan dy="2.5" font-size="8.3">m</tspan><tspan dy="-2.5">）</tspan></text>
+  <rect x="740" y="876" width="96" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="892" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">方向性</text>
+  <rect x="836" y="876" width="260" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="892" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">双向、顺梯度</text>
+  <rect x="1096" y="876" width="254" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="892" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">借驱动力可逆浓差</text>
+  <rect x="740" y="897" width="610" height="21" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="897" width="96" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="913" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">底物关系</text>
+  <rect x="836" y="897" width="260" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="913" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">几何筛分、无需稳定结合</text>
+  <rect x="1096" y="897" width="254" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="913" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">特异位点＋构象交替</text>
+  <rect x="740" y="918" width="96" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="934" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表</text>
+  <rect x="836" y="918" width="260" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="934" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">KcsA、nAChR、KAT1</text>
+  <rect x="1096" y="918" width="254" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="934" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">GLUT1、SGLT1、NRT1.1</text>
+  <rect x="740" y="939" width="610" height="21" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="740" y="939" width="96" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="788" y="955" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">生理任务</text>
+  <rect x="836" y="939" width="260" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="966" y="955" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">毫秒级电信号</text>
+  <rect x="1096" y="939" width="254" height="21" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1223" y="955" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">吸收、分泌、稳态浓度</text>
+  <text x="740" y="968" font-size="11.5" fill="#475569">毫秒级动作电位与突触电流只能用通道；葡萄糖吸收、离子稳态只能交给载体与泵。</text>
+</svg>

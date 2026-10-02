@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">植物的逆境转运：盐、旱与养分饥饿</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">盐胁迫SOS全链条：Na⁺经NSCC内流触发胞质钙波，SOS3/CBL4-SOS2/CIPK24级联磷酸化SOS1外排；NHX1液泡隔离「以盐代钾」，HKT1;1木质部回收护地上部（水稻</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">SKC1＝OsHKT1;5）；干旱PYR-PP2C-OST1-SLAC1关闭气孔并下调PIP；低磷PHR1-miR399-PHO2-PHT1调兵；AtNHX1番茄耐200mmol/LNaCl</text>
+  <rect x="30" y="132" width="660" height="445" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、盐胁迫全链条：从感知到外排（SOS 通路）</text>
+  <text x="46" y="172" font-size="8.5" fill="#475569">土壤盐化＝渗透胁迫＋离子胁迫双重胁迫——全球约两成灌溉农田受威胁</text>
+  <text x="46" y="196" font-size="9" fill="#64748b">质外体（高 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">）</tspan></text>
+  <rect x="46" y="222" width="354" height="200" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <g><circle cx="60" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="212" x2="60" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="212" x2="84" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="212" x2="108" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="212" x2="132" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="212" x2="156" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="212" x2="180" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="212" x2="204" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="212" x2="228" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="212" x2="252" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="212" x2="276" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="212" x2="300" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="212" x2="324" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="212" x2="348" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="212" x2="372" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="208" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="212" x2="396" y2="218" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="222" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <circle cx="100" cy="182" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="100" y="184.88" font-size="8" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <text x="160" y="190" font-size="8" fill="#991b1b">Na<tspan dy="-2.7" font-size="5.8">+</tspan><tspan dy="2.7"> 经 NSCC 内流</tspan></text>
+  <rect x="100" y="200" width="60" height="44" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="130" y="218" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">NSCC</text>
+  <text x="130" y="234" font-size="7.5" fill="#475569" text-anchor="middle">CNGC·GLR</text>
+  <text x="130" y="258" font-size="7.5" fill="#64748b" text-anchor="middle">非选择性阳离子通道</text>
+  <circle cx="250" cy="285" r="38" fill="none" stroke="#be185d" stroke-width="1.4" opacity="0.3"/>
+  <circle cx="250" cy="285" r="26" fill="none" stroke="#be185d" stroke-width="1.6" opacity="0.5"/>
+  <circle cx="250" cy="285" r="14" fill="none" stroke="#be185d" stroke-width="1.8" opacity="0.8"/>
+  <circle cx="250" cy="283" r="11" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="250" y="285.88" font-size="8" fill="#831843" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.7" font-size="5.8">2+</tspan></text>
+  <text x="250" y="340" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="600">胞质钙波（数秒–数分钟）</text>
+  <line x1="215" y1="340" x2="160" y2="354" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <rect x="60" y="356" width="130" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="125" y="378" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">SOS3／CBL4</text>
+  <text x="125" y="394" font-size="7.5" fill="#475569" text-anchor="middle">豆蔻酰化钙感受器</text>
+  <line x1="192" y1="384" x2="208" y2="384" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <rect x="210" y="356" width="130" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="275" y="378" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">SOS2／CIPK24</text>
+  <text x="275" y="394" font-size="7.5" fill="#475569" text-anchor="middle">丝氨酸／苏氨酸激酶</text>
+  <rect x="300" y="200" width="76" height="44" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="338" y="218" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">SOS1</text>
+  <text x="338" y="234" font-size="7.5" fill="#475569" text-anchor="middle">Na<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">/H</tspan><tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6"> 外排</tspan></text>
+  <line x1="320" y1="354" x2="340" y2="248" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <circle cx="390" cy="300" r="10" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="390" y="304" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">P</text>
+  <text x="390" y="322" font-size="8" fill="#831843" text-anchor="middle">磷酸化</text>
+  <circle cx="322" cy="176" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="322" y="178.88" font-size="8" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="322" y1="198" x2="322" y2="187" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <circle cx="360" cy="176" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="360" y="178.88" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="360" y1="198" x2="360" y2="252" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <text x="360" y="275" font-size="7.5" fill="#92400e" text-anchor="middle">H<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6"> 顺势内流</tspan></text>
+  <text x="46" y="440" font-size="9" fill="#64748b">根细胞（根尖区）</text>
+  <text x="420" y="190" font-size="11" fill="#475569" font-weight="700">级联要点</text>
+  <text x="420" y="214" font-size="9" fill="#475569">感知即钙：Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 内流后数秒至数分钟，</tspan></text>
+  <text x="420" y="234" font-size="9" fill="#475569">特征性胞质 Ca<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1"> 波启动级联</tspan></text>
+  <text x="420" y="258" font-size="9" fill="#475569">SOS3 读钙招募 SOS2，</text>
+  <text x="420" y="278" font-size="9" fill="#475569">复合体磷酸化 SOS1——其长胞质尾既是磷酸化靶，</text>
+  <text x="420" y="298" font-size="9" fill="#475569">又是自抑制开关</text>
+  <text x="420" y="330" font-size="9" fill="#475569">盐害的化学本质：Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 与 K</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 同为一价、半径相近，</tspan></text>
+  <text x="420" y="350" font-size="9" fill="#475569">胞质酶只认 K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">——钠的「冒名顶替」挤占数百种酶与核糖体的钾结合位</tspan></text>
+  <text x="420" y="425" font-size="9" fill="#475569">容量账：胞质酶系对 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 的耐受上限约几十 mmol/L，</tspan></text>
+  <text x="420" y="445" font-size="9" fill="#475569">液泡可囤到数百 mmol/L——隔离一开，存活阈值成倍上移</text>
+  <text x="420" y="465" font-size="9" fill="#475569">（右图）</text>
+  <text x="46" y="492" font-size="9" fill="#475569">外排不行，才谈隔离：SOS 通路由拟南芥 sos1／sos2／sos3 盐超敏突变体遗传定义，</text>
+  <text x="46" y="511" font-size="9" fill="#475569">是植物耐盐的第一道防线</text>
+  <rect x="710" y="132" width="660" height="445" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、两步止损：液泡隔离与木质部回收</text>
+  <rect x="726" y="190" width="280" height="250" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="1.6"/>
+  <text x="742" y="210" font-size="9" fill="#64748b">根细胞（成熟区）</text>
+  <rect x="746" y="250" width="240" height="150" rx="14" fill="#d1fae5" stroke="#059669" stroke-width="2.2"/>
+  <text x="762" y="272" font-size="10" fill="#065f46" font-weight="700">液泡</text>
+  <text x="762" y="292" font-size="8.5" fill="#065f46">Na<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 数百 mmol/L</tspan></text>
+  <circle cx="880" cy="308" r="8" fill="#ffffff" stroke="#059669" stroke-width="1.6"/>
+  <text x="880" y="310.34" font-size="6.5" fill="#065f46" text-anchor="middle" font-weight="700">Na<tspan dy="-2.2" font-size="4.7">+</tspan></text>
+  <circle cx="920" cy="338" r="8" fill="#ffffff" stroke="#059669" stroke-width="1.6"/>
+  <text x="920" y="340.34" font-size="6.5" fill="#065f46" text-anchor="middle" font-weight="700">Na<tspan dy="-2.2" font-size="4.7">+</tspan></text>
+  <circle cx="884" cy="360" r="8" fill="#ffffff" stroke="#059669" stroke-width="1.6"/>
+  <text x="884" y="362.34" font-size="6.5" fill="#065f46" text-anchor="middle" font-weight="700">Na<tspan dy="-2.2" font-size="4.7">+</tspan></text>
+  <circle cx="940" cy="372" r="8" fill="#ffffff" stroke="#059669" stroke-width="1.6"/>
+  <text x="940" y="374.34" font-size="6.5" fill="#065f46" text-anchor="middle" font-weight="700">Na<tspan dy="-2.2" font-size="4.7">+</tspan></text>
+  <rect x="748" y="232" width="56" height="36" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="776" y="254" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">V-ATPase</text>
+  <rect x="812" y="232" width="60" height="36" rx="6" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="842" y="250" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">NHX1</text>
+  <text x="842" y="264" font-size="7" fill="#475569" text-anchor="middle">Na<tspan dy="-2.4" font-size="5.0">+</tspan><tspan dy="2.4">/H</tspan><tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <rect x="880" y="232" width="56" height="36" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="908" y="254" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">V-PPase</text>
+  <line x1="776" y1="270" x2="776" y2="284" stroke="#d97706" stroke-width="1.5" marker-end="url(#arr-warn)"/>
+  <line x1="908" y1="270" x2="908" y2="284" stroke="#d97706" stroke-width="1.5" marker-end="url(#arr-warn)"/>
+  <circle cx="842" cy="210" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="842" y="212.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <line x1="842" y1="220" x2="842" y2="230" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-bad)"/>
+  <rect x="761.7496" y="412.35" width="208.50080000000003" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="866" y="423.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="600">以盐代钾——既移出酶射程，又以盐维持膨压</text>
+  <text x="726" y="458" font-size="8.5" fill="#475569">胞质：酶系对 Na<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 耐受上限约几十 mmol/L</tspan></text>
+  <circle cx="1150" cy="300" r="78" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="1150" cy="300" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="1150" y="304" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">木质部</text>
+  <rect x="1118" y="258" width="66" height="34" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="1151" y="280" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">HKT1;1</text>
+  <line x1="1150" y1="296" x2="1150" y2="240" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <circle cx="1150" cy="228" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1150" y="230.52" font-size="7" fill="#075985" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <text x="1150" y="208" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">从木质部液回收 Na<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="1170" y1="352" x2="1170" y2="318" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-mute)"/>
+  <text x="1150" y="396" font-size="8.5" fill="#475569" text-anchor="middle">木质部薄壁拦截盐随蒸腾流上攻</text>
+  <rect x="1088.6491" y="416.775" width="122.70179999999998" height="14.45" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1150" y="427.06" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="700">水稻 SKC1＝OsHKT1;5</text>
+  <text x="1030" y="452" font-size="8.5" fill="#475569">启动子活性决定回收能力——耐盐 QTL 标记辅助育种的明星，护地上部光合组织</text>
+  <text x="726" y="500" font-size="10.5" fill="#475569" font-weight="700">耐盐三件套（时空分工）与育种</text>
+  <rect x="739.8555" y="516.775" width="100.289" height="14.45" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="790" y="527.06" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="600">根尖：SOS1 外排</text>
+  <rect x="895.4780000000001" y="516.775" width="109.04399999999998" height="14.45" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="950" y="527.06" font-size="8.5" fill="#065f46" text-anchor="middle" font-weight="600">成熟根：NHX1 隔离</text>
+  <rect x="1060.74065" y="516.775" width="108.5187" height="14.45" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1115" y="527.06" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="600">茎基：HKT1;1 回收</text>
+  <text x="726" y="552" font-size="8.5" fill="#475569">AtNHX1 过表达番茄在 200 mmol/L NaCl 中仍能结果；SOS1＋NHX1 组合转基因随后在小麦、水稻与棉花兑现；「海水稻」在 0.3%–0.6% 盐度滩涂稳定结籽，</text>
+  <text x="726" y="570" font-size="8.5" fill="#475569">汇集自然耐盐等位</text>
+  <rect x="30" y="592" width="660" height="393" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、干旱：ABA 级联；低磷：miR399 调兵</text>
+  <text x="46" y="634" font-size="11" fill="#475569" font-weight="700">干旱：ABA 级联与水路管制</text>
+  <rect x="154.6257" y="652.35" width="70.7486" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="190" y="663.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">根源 ABA</text>
+  <line x1="190" y1="672" x2="190" y2="684" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="138.4959" y="688.35" width="103.0082" height="15.299999999999999" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="190" y="699.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">PYR／RCAR 受体</text>
+  <line x1="190" y1="708" x2="190" y2="720" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="147.117" y="724.35" width="85.766" height="15.299999999999999" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="190" y="735.24" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">PP2C 被抑制</text>
+  <line x1="190" y1="744" x2="190" y2="756" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="142.482" y="760.35" width="95.036" height="15.299999999999999" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="190" y="771.24" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">OST1 激酶释放</text>
+  <line x1="190" y1="780" x2="190" y2="792" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="128.8551" y="796.35" width="122.2898" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="190" y="807.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">SLAC1 磷酸化·气孔关</text>
+  <circle cx="271" cy="700" r="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="299" cy="700" r="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="285" y="734" font-size="8" fill="#64748b" text-anchor="middle">气孔开</text>
+  <circle cx="281" cy="760" r="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="289" cy="760" r="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="285" y="794" font-size="8" fill="#065f46" text-anchor="middle">气孔关</text>
+  <text x="46" y="838" font-size="8.5" fill="#475569">PYR-PP2C-OST1-SLAC1：ABA 结合受体、抑制 PP2C，</text>
+  <text x="46" y="858" font-size="8.5" fill="#475569">释放 OST1 磷酸化 SLAC1 阴离子通道——气孔关闭，蒸腾先压下来</text>
+  <text x="46" y="898" font-size="8.5" fill="#475569">同时下调根与叶的 PIP 水通道：膜水力导度降低、</text>
+  <text x="46" y="918" font-size="8.5" fill="#475569">土壤-大气「漏水」减少——代价是整株水流放缓、光合原料输送延迟</text>
+  <text x="46" y="958" font-size="8.5" fill="#475569">渗透调节跟上：囤积 K<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9">、脯氨酸与蔗糖，把细胞维持在可吸水的渗透势</tspan></text>
+  <text x="360" y="634" font-size="11" fill="#475569" font-weight="700">低磷：miR399 系统性调兵</text>
+  <rect x="415.4252" y="652.35" width="129.1496" height="15.299999999999999" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="480" y="663.24" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">PHR1（磷响应总开关）</text>
+  <line x1="480" y1="674" x2="480" y2="686" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="437.8586" y="690.35" width="84.28280000000001" height="15.299999999999999" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="480" y="701.24" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">miR399 上调</text>
+  <line x1="480" y1="712" x2="480" y2="724" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="431.555" y="728.35" width="96.89" height="15.299999999999999" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="480" y="739.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">韧皮部长途下运</text>
+  <line x1="480" y1="750" x2="480" y2="762" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="429.2375" y="766.35" width="101.525" height="15.299999999999999" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="480" y="777.24" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">PHO2 mRNA 降解</text>
+  <line x1="480" y1="788" x2="480" y2="800" stroke="#475569" stroke-width="1.5" marker-end="url(#arr-mute)"/>
+  <rect x="412.4588" y="804.35" width="135.0824" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="480" y="815.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">PHT1 扩编·高亲和磷摄取</text>
+  <rect x="575" y="646" width="90" height="48" rx="7" fill="#f1f5f9" stroke="#6d28d9" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="620" y="666" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">SPX 监视</text>
+  <text x="620" y="682" font-size="7.5" fill="#475569" text-anchor="middle">InsP<tspan dy="1.6" font-size="5.4">8</tspan><tspan dy="-1.6"> 仪表</tspan></text>
+  <line x1="575" y1="670" x2="560" y2="666" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-pro)"/>
+  <text x="360" y="846" font-size="8.5" fill="#475569">磷足时 SPX 扣押 PHR1，磷饥时放行；放行的 PHR1 上调 miR399，</text>
+  <text x="360" y="866" font-size="8.5" fill="#475569">经韧皮部下运到根，靶向降解 PHO2（泛素结合酶）的 mRNA</text>
+  <text x="360" y="906" font-size="8.5" fill="#475569">番茄 miR399 过表达株在地上部累积过量磷——负反馈链的正向证据；</text>
+  <text x="360" y="925" font-size="8.5" fill="#475569">miR399 是首例被证明跨器官长距离运输、在根部行使功能的植物 microRNA</text>
+  <text x="360" y="962" font-size="8.5" fill="#475569">同型逻辑：低氮诱导 NRT2／AMT，低钾扩编 HAK5，</text>
+  <text x="360" y="981" font-size="8.5" fill="#475569">低铁上调 IRT1——饥饿感翻译为转运体的扩编令</text>
+  <rect x="710" y="592" width="660" height="393" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="614.84" font-size="19" fill="#475569" font-weight="700">四、逆境响应总表：感知×转运响应×农艺抓手</text>
+  <rect x="730" y="648" width="78" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="675.5" font-size="9.4" fill="#1e293b" text-anchor="middle" font-weight="700">逆境</text>
+  <rect x="808" y="648" width="118" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="675.5" font-size="9.4" fill="#1e293b" text-anchor="middle" font-weight="700">感知信号</text>
+  <rect x="926" y="648" width="258" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="675.5" font-size="9.4" fill="#1e293b" text-anchor="middle" font-weight="700">关键转运响应</text>
+  <rect x="1184" y="648" width="166" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="675.5" font-size="9.4" fill="#1e293b" text-anchor="middle" font-weight="700">农艺抓手</text>
+  <rect x="730" y="692" width="78" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="715.5" font-size="8.4" fill="#1e293b" text-anchor="middle" font-weight="700">盐（Na<tspan dy="-2.9" font-size="6.0">+</tspan><tspan dy="2.9">）</tspan></text>
+  <rect x="808" y="692" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="715.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">胞质 Ca<tspan dy="-2.9" font-size="6.0">2+</tspan><tspan dy="2.9"> 波</tspan></text>
+  <rect x="926" y="692" width="258" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="715.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">SOS1 外排·NHX1 液泡隔离·HKT1;1 木质部回收</text>
+  <rect x="1184" y="692" width="166" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="715.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">OsHKT1;5（SKC1）位点、海水稻</text>
+  <rect x="730" y="728" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="728" width="78" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="751.5" font-size="8.4" fill="#1e293b" text-anchor="middle" font-weight="700">干旱</text>
+  <rect x="808" y="728" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="751.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">根源 ABA</text>
+  <rect x="926" y="728" width="258" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="751.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">SLAC1 关闭气孔·PIP 下调·渗透物囤积</text>
+  <rect x="1184" y="728" width="166" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="751.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">气孔导度与根构型选择</text>
+  <rect x="730" y="764" width="78" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="787.5" font-size="8.4" fill="#1e293b" text-anchor="middle" font-weight="700">低磷</text>
+  <rect x="808" y="764" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="787.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">SPX-InsP<tspan dy="1.8" font-size="6.0">8</tspan><tspan dy="-1.8"> 监视 PHR1</tspan></text>
+  <rect x="926" y="764" width="258" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="787.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">miR399-PHO2-PHT1 扩编·排根泌酸</text>
+  <rect x="1184" y="764" width="166" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="787.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">磷效率基因型</text>
+  <rect x="730" y="800" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="800" width="78" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="823.5" font-size="8.4" fill="#1e293b" text-anchor="middle" font-weight="700">低钾</text>
+  <rect x="808" y="800" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="823.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">膜去极化低钾信号</text>
+  <rect x="926" y="800" width="258" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="823.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">HAK5 诱导·AKT1 经 CBL-CIPK 激活</text>
+  <rect x="1184" y="800" width="166" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="823.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">钾效率育种</text>
+  <rect x="730" y="836" width="78" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="859.5" font-size="8.4" fill="#1e293b" text-anchor="middle" font-weight="700">淹水低氧</text>
+  <rect x="808" y="836" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="859.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">低氧与 NO 信号</text>
+  <rect x="926" y="836" width="258" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="859.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">通气组织形成（皮层细胞程序性死亡）</text>
+  <rect x="1184" y="836" width="166" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="859.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">耐涝品种</text>
+  <rect x="730" y="872" width="620" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="872" width="78" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="769" y="895.5" font-size="8.4" fill="#1e293b" text-anchor="middle" font-weight="700">重金属</text>
+  <rect x="808" y="872" width="118" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="867" y="895.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">根系感知</text>
+  <rect x="926" y="872" width="258" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1055" y="895.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">ABC／MTP 液泡隔离·根系阻滞</text>
+  <rect x="1184" y="872" width="166" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1267" y="895.5" font-size="8.4" fill="#475569" text-anchor="middle" font-weight="500">低镉水稻等低累积品种</text>
+  <text x="730" y="930" font-size="9" fill="#475569">设计哲学：感知（钙波·ABA·SPX 仪表）→ 决策（激酶与转录因子）→ 执行（外排·隔离·回收·扩编）</text>
+  <text x="730" y="949" font-size="9" fill="#475569">——与动物上皮 WNK 感知 Cl<tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1">→SPAK/OSR1→NKCC/KCC 结构同构；凡逆境下失守的通路平时必然承重，凡被诱导的转运体就是育种该抓住的手柄</tspan></text>
+</svg>

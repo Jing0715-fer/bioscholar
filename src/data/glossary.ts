@@ -40,6 +40,12 @@ import { physiologyGlossaryP3 } from './glossary-physiology-p3'
 import { physiologyGlossaryP4 } from './glossary-physiology-p4'
 import { physiologyGlossaryP5 } from './glossary-physiology-p5'
 import { physiologyGlossaryP6 } from './glossary-physiology-p6'
+import { membraneTransportGlossaryP1 } from './glossary-membrane-transport-p1'
+import { membraneTransportGlossaryP2 } from './glossary-membrane-transport-p2'
+import { membraneTransportGlossaryP3 } from './glossary-membrane-transport-p3'
+import { membraneTransportGlossaryP4 } from './glossary-membrane-transport-p4'
+import { membraneTransportGlossaryP5 } from './glossary-membrane-transport-p5'
+import { membraneTransportGlossaryP6 } from './glossary-membrane-transport-p6'
 
 export const glossary: GlossaryTerm[] = [
   // ---------- 生物化学（g-001 ~ g-026） ----------
@@ -1230,4 +1236,10 @@ export const glossary: GlossaryTerm[] = [
   ...physiologyGlossaryP4,
   ...physiologyGlossaryP5,
   ...physiologyGlossaryP6,
+  ...membraneTransportGlossaryP1,
+  ...membraneTransportGlossaryP2,
+  ...membraneTransportGlossaryP3,
+  ...membraneTransportGlossaryP4,
+  ...membraneTransportGlossaryP5,
+  ...membraneTransportGlossaryP6,
 ]

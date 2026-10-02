@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">动物钾通道：Kv、Kir、KCa 与 K2P</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">四大家族共享GYG选择性滤器，差别在给孔配的「发动机」——S4电压感受器、G蛋白、Ca<tspan dy="-5.8" font-size="12.2">2+</tspan><tspan dy="5.8">传感器或常开漏流；Kv约40基因·12亚族带N型失活球，Kir以多胺塞孔实现整流，</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">K_ATP把ATP/ADP比值写进门控（磺脲类靶点），BK以100–300pS电导受Ca<tspan dy="-5.8" font-size="12.2">2+</tspan><tspan dy="5.8">＋电压双门控</tspan></text>
+  <rect x="30" y="132" width="1340" height="290" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、四大家族版图：同一滤器，四台「发动机」</text>
+  <text x="45" y="176" font-size="11" fill="#64748b">人类钾通道基因数居各类离子通道之首：Kv 约 40 基因·12 亚族；Kir 7 亚家族 15+ 基因；K2P 15 基因</text>
+  <rect x="45" y="190" width="62" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="76" y="217.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">家族</text>
+  <rect x="107" y="190" width="152" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="183" y="217.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">拓扑与组装</text>
+  <rect x="259" y="190" width="138" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="328" y="217.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">门控方式</text>
+  <rect x="397" y="190" width="293" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="543.5" y="217.5" font-size="13.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表成员与标签</text>
+  <rect x="45" y="234" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="76" y="262.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">Kv</text>
+  <rect x="107" y="234" width="152" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="183" y="262.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">4×(6TMS+P)</text>
+  <rect x="259" y="234" width="138" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="328" y="262.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">去极化开放</text>
+  <rect x="397" y="234" width="293" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="543.5" y="262.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">Shaker·hERG·KCNQ1 → LQT1/LQT2</text>
+  <rect x="45" y="280" width="645" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="45" y="280" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="76" y="308.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">Kir</text>
+  <rect x="107" y="280" width="152" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="183" y="308.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">4×(2TMS+P)</text>
+  <rect x="259" y="280" width="138" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="328" y="308.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">超极化·多胺阻塞</text>
+  <rect x="397" y="280" width="293" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="543.5" y="308.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">Kir2.1·ROMK·Kir6.2 → I<tspan dy="2.8" font-size="9.0">K1</tspan><tspan dy="-2.8">·Bartter</tspan></text>
+  <rect x="45" y="326" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="76" y="354.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">KCa</text>
+  <rect x="107" y="326" width="152" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="183" y="354.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">6TMS（BK 7TMS）</text>
+  <rect x="259" y="326" width="138" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="328" y="354.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">胞内 Ca<tspan dy="-4.3" font-size="9.0">2+</tspan></text>
+  <rect x="397" y="326" width="293" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="543.5" y="354.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">BK·SK·IK → 平滑肌张力</text>
+  <rect x="45" y="372" width="645" height="46" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="45" y="372" width="62" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="76" y="400.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">K2P</text>
+  <rect x="107" y="372" width="152" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="183" y="400.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">2×(4TMS+2P) 二聚</text>
+  <rect x="259" y="372" width="138" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="328" y="400.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">常开背景漏流</text>
+  <rect x="397" y="372" width="293" height="46" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="543.5" y="400.5" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="500">TASK·TREK → 设定静息电位</text>
+  <text x="710" y="176" font-size="11" fill="#64748b">Kv 单亚基：6 跨膜螺旋＋T1 域＋N 型失活球（名号源自果蝇 Shaker「发抖」突变体）</text>
+  <text x="745" y="252" font-size="10" fill="#475569" font-weight="700">细胞外</text>
+  <g><circle cx="730" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="730" y1="289" x2="730" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="730" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="754" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="754" y1="289" x2="754" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="754" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="778" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="778" y1="289" x2="778" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="778" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="802" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="802" y1="289" x2="802" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="802" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="826" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="826" y1="289" x2="826" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="826" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="850" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="850" y1="289" x2="850" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="850" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="874" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="874" y1="289" x2="874" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="874" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="898" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="898" y1="289" x2="898" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="898" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="922" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="922" y1="289" x2="922" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="922" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="946" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="946" y1="289" x2="946" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="946" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="970" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="970" y1="289" x2="970" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="970" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="994" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="994" y1="289" x2="994" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="994" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1018" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1018" y1="289" x2="1018" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1018" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1042" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1042" y1="289" x2="1042" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1042" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1066" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1066" y1="289" x2="1066" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1066" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1090" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1090" y1="289" x2="1090" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1090" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1114" cy="285" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1114" y1="289" x2="1114" y2="294" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1114" cy="298" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="745" y="378" font-size="10" fill="#475569" font-weight="700">细胞质</text>
+  <rect x="775" y="264" width="16" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="783" y="322" font-size="10.5" fill="#4c1d95" text-anchor="middle">S1</text>
+  <rect x="827" y="264" width="16" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="835" y="322" font-size="10.5" fill="#4c1d95" text-anchor="middle">S2</text>
+  <rect x="879" y="264" width="16" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="887" y="322" font-size="10.5" fill="#4c1d95" text-anchor="middle">S3</text>
+  <rect x="931" y="264" width="16" height="42" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="939" y="322" font-size="10.5" fill="#92400e" text-anchor="middle">S4</text>
+  <text x="939" y="278" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">+</text>
+  <text x="939" y="292" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">+</text>
+  <text x="939" y="306" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">+</text>
+  <rect x="983" y="264" width="16" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="991" y="322" font-size="10.5" fill="#4c1d95" text-anchor="middle">S5</text>
+  <rect x="1035" y="264" width="16" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1043" y="322" font-size="10.5" fill="#4c1d95" text-anchor="middle">S6</text>
+  <path d="M 991 278 Q 1009 250 1027 278" fill="none" stroke="#be185d" stroke-width="2.4"/>
+  <text x="1009" y="242" font-size="10" fill="#831843" text-anchor="middle">P 环（GYG）</text>
+  <line x1="1009" y1="306" x2="1009" y2="324" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <circle cx="1009" cy="334" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1026" y="330" font-size="10" fill="#991b1b" font-weight="600">N 型失活球</text>
+  <text x="1026" y="346" font-size="9.5" fill="#991b1b">「球-链」堵孔内口</text>
+  <rect x="775" y="358" width="270" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="910" y="382" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="600">T1 域（四聚化·亚家族特异）</text>
+  <text x="1215" y="190" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">4 亚基顶视·中央孔</text>
+  <circle cx="1175" cy="215" r="19" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1255" cy="215" r="19" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1175" cy="285" r="19" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1255" cy="285" r="19" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="1215" cy="250" r="9" fill="#ffffff" stroke="#4c1d95" stroke-width="2"/>
+  <line x1="1274" y1="250" x2="1306" y2="250" stroke="#64748b" stroke-width="1.4"/>
+  <circle cx="1320" cy="250" r="14" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="1320" y="253" font-size="9" fill="#831843" text-anchor="middle" font-weight="600">Kvβ</text>
+  <text x="1140" y="330" font-size="9.5" fill="#475569">Kvβ：加速/赋予失活</text>
+  <text x="1140" y="348" font-size="9.5" fill="#475569">（醛酮还原酶·耦联氧化还原）</text>
+  <text x="710" y="412" font-size="10" fill="#475569">去极化时 S4 外移旋转、牵开 S6 交联闸门；Kv1 只与 Kv1 装配——「亚基语法」由 T1 写成</text>
+  <rect x="30" y="434" width="1340" height="272" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="456.84" font-size="19" fill="#475569" font-weight="700">二、Kir：孔口阻塞的整流与 K<tspan dy="4.2" font-size="13.7">ATP</tspan><tspan dy="-4.2"> 代谢传感</tspan></text>
+  <text x="48" y="492" font-size="12" fill="#4c1d95" font-weight="700">Kir：4×(2TMS+P)·无 S4——「塞子」守门，而非闸门关水</text>
+  <text x="65" y="520" font-size="10.5" fill="#065f46" font-weight="600">超极化（E<tspan dy="2.3" font-size="7.6">K</tspan><tspan dy="-2.3"> 附近）</tspan></text>
+  <g><circle cx="70" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="70" y1="564" x2="70" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="70" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="94" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="94" y1="564" x2="94" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="94" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="118" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="118" y1="564" x2="118" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="118" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="142" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="142" y1="564" x2="142" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="142" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="166" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="166" y1="564" x2="166" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="166" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="190" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="190" y1="564" x2="190" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="190" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="214" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="214" y1="564" x2="214" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="214" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="238" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="238" y1="564" x2="238" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="238" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="262" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="262" y1="564" x2="262" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="262" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="286" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="286" y1="564" x2="286" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="286" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="310" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="310" y1="564" x2="310" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="310" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="75" y="552" font-size="9" fill="#64748b">胞外</text>
+  <text x="75" y="600" font-size="9" fill="#64748b">胞内</text>
+  <rect x="160" y="542" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="250" y="542" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="196" y="546" width="9" height="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2" opacity="0.4"/>
+  <rect x="222" y="546" width="9" height="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2" opacity="0.4"/>
+  <path d="M 168 548 Q 205 528 242 548" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <circle cx="205" cy="510" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="205" y="513.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-3.1" font-size="6.5">+</tspan></text>
+  <line x1="205" y1="521" x2="205" y2="588" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <circle cx="205" cy="602" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="205" y="605.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-3.1" font-size="6.5">+</tspan></text>
+  <text x="65" y="658" font-size="10.5" fill="#475569">内向电流通行——I<tspan dy="2.3" font-size="7.6">K1</tspan><tspan dy="-2.3"> 把静息电位钳在 E</tspan><tspan dy="2.3" font-size="7.6">K</tspan><tspan dy="-2.3"> 附近</tspan></text>
+  <text x="375" y="520" font-size="10.5" fill="#991b1b" font-weight="600">去极化</text>
+  <g><circle cx="375" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="375" y1="564" x2="375" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="375" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="399" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="399" y1="564" x2="399" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="399" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="423" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="423" y1="564" x2="423" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="423" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="447" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="447" y1="564" x2="447" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="447" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="471" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="471" y1="564" x2="471" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="471" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="495" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="495" y1="564" x2="495" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="495" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="519" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="519" y1="564" x2="519" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="519" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="543" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="543" y1="564" x2="543" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="543" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="567" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="567" y1="564" x2="567" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="567" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="591" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="591" y1="564" x2="591" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="591" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="615" cy="560" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="615" y1="564" x2="615" y2="569" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="615" cy="573" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="465" y="542" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="555" y="542" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="501" y="546" width="9" height="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2" opacity="0.4"/>
+  <rect x="527" y="546" width="9" height="34" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2" opacity="0.4"/>
+  <path d="M 473 548 Q 510 528 547 548" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <ellipse cx="510" cy="588" rx="15" ry="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="498" y="592" font-size="9.5" fill="#831843" text-anchor="end">Mg<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2">·多胺</tspan></text>
+  <circle cx="510" cy="632" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="510" y="635.24" font-size="9" fill="#991b1b" text-anchor="middle" font-weight="700">K<tspan dy="-3.1" font-size="6.5">+</tspan></text>
+  <line x1="510" y1="622" x2="510" y2="601" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="503" y1="587" x2="517" y2="601" stroke="#dc2626" stroke-width="2"/>
+  <line x1="517" y1="587" x2="503" y2="601" stroke="#dc2626" stroke-width="2"/>
+  <text x="375" y="658" font-size="10.5" fill="#475569">外向电流被塞——整流是孔口阻塞，并非门控性质</text>
+  <text x="48" y="678" font-size="10.5" fill="#475569">Kir2.1 构成心肌 I<tspan dy="2.3" font-size="7.6">K1</tspan><tspan dy="-2.3">；GIRK（Kir3.x）由 Gβγ 直接门控——迷走神经减慢心率的离子机制；ROMK（Kir1.1）驻肾髓襻升支，</tspan></text>
+  <text x="48" y="696" font-size="10.5" fill="#475569">突变 → Bartter 综合征</text>
+  <text x="705" y="492" font-size="12" fill="#4c1d95" font-weight="700">K<tspan dy="2.6" font-size="8.6">ATP</tspan><tspan dy="-2.6">＝4×Kir6.2 孔道亚基＋4×SUR1 调节亚基（4+4 八聚体）</tspan></text>
+  <circle cx="869.6" cy="535.4" r="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="869.6" y="538.4" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="600">Kir6.2</text>
+  <circle cx="790.4" cy="535.4" r="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="790.4" y="538.4" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="600">Kir6.2</text>
+  <circle cx="790.4" cy="614.6" r="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="790.4" y="617.6" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="600">Kir6.2</text>
+  <circle cx="869.6" cy="614.6" r="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="869.6" y="617.6" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="600">Kir6.2</text>
+  <rect x="868" y="560" width="36" height="30" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="886" y="578" font-size="9" fill="#075985" text-anchor="middle" font-weight="600">SUR1</text>
+  <rect x="812" y="504" width="36" height="30" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="830" y="522" font-size="9" fill="#075985" text-anchor="middle" font-weight="600">SUR1</text>
+  <rect x="756" y="560" width="36" height="30" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="774" y="578" font-size="9" fill="#075985" text-anchor="middle" font-weight="600">SUR1</text>
+  <rect x="812" y="616" width="36" height="30" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="830" y="634" font-size="9" fill="#075985" text-anchor="middle" font-weight="600">SUR1</text>
+  <circle cx="830" cy="575" r="8" fill="#ffffff" stroke="#4c1d95" stroke-width="2"/>
+  <text x="945" y="515" font-size="10.5" fill="#831843">· ATP 结合 Kir6.2 → 通道关闭</text>
+  <text x="945" y="538" font-size="10.5" fill="#065f46">· ADP 结合 SUR1 → 通道开放</text>
+  <text x="945" y="561" font-size="10.5" fill="#475569">· 实时读取 ATP/ADP 比值——代谢写进门控</text>
+  <text x="945" y="584" font-size="10.5" fill="#475569">· 心肌/神经元 K<tspan dy="2.3" font-size="7.6">ATP</tspan><tspan dy="-2.3"> 缺血时打开＝「熔断器」</tspan></text>
+  <text x="945" y="607" font-size="10.5" fill="#475569">· 格列本脲等磺脲类结合 SUR1 强制关闭——2 型糖尿病经典口服降糖药的分子靶点</text>
+  <text x="705" y="652" font-size="10" fill="#075985" font-weight="600">胰岛 β 细胞的血糖译码：</text>
+  <rect x="714.0375" y="669.075" width="61.925" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="745" y="681.78" font-size="10.5" fill="#92400e" text-anchor="middle">血糖↑</text>
+  <line x1="776" y1="678" x2="806" y2="678" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="828.3275" y="669.075" width="83.345" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="870" y="681.78" font-size="10.5" fill="#831843" text-anchor="middle">ATP/ADP↑</text>
+  <line x1="916" y1="678" x2="946" y2="678" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="956.7842" y="669.075" width="66.4316" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="990" y="681.78" font-size="10.5" fill="#4c1d95" text-anchor="middle">K<tspan dy="2.3" font-size="7.6">ATP</tspan><tspan dy="-2.3"> 关</tspan></text>
+  <line x1="1023" y1="678" x2="1061" y2="678" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="1084.0958" y="669.075" width="111.8084" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1140" y="681.78" font-size="10.5" fill="#075985" text-anchor="middle">去极化·Ca<tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6"> 内流</tspan></text>
+  <line x1="1214" y1="678" x2="1252" y2="678" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="1257.75" y="669.075" width="84.5" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1300" y="681.78" font-size="10.5" fill="#065f46" text-anchor="middle">胰岛素胞吐</text>
+  <rect x="30" y="718" width="1340" height="267" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="740.84" font-size="19" fill="#475569" font-weight="700">三、KCa、K2P 与共享的 GYG 分子筛</text>
+  <text x="48" y="765" font-size="12" fill="#831843" font-weight="700">KCa：给孔配 Ca<tspan dy="-4.1" font-size="8.6">2+</tspan><tspan dy="4.1"> 传感器</tspan></text>
+  <text x="48" y="792" font-size="10.5" fill="#475569" font-weight="600">BK（Slo1）：7TMS＋庞大胞内域</text>
+  <g><circle cx="60" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="830" x2="60" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="830" x2="84" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="830" x2="108" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="830" x2="132" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="830" x2="156" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="830" x2="180" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="830" x2="204" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="830" x2="228" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="830" x2="252" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="70" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="97" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="124" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="151" y="812" width="9" height="42" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="155.5" y="838" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">+</text>
+  <rect x="178" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="205" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="232" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="66" y="866" width="190" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="161" y="890" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="600">胞内域（Ca<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 结合）</tspan></text>
+  <circle cx="100" cy="866" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="100" y="868.88" font-size="8" fill="#831843" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.7" font-size="5.8">2+</tspan></text>
+  <circle cx="222" cy="866" r="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="222" y="868.88" font-size="8" fill="#831843" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.7" font-size="5.8">2+</tspan></text>
+  <text x="48" y="944" font-size="10" fill="#475569">电导高达 100–300 pS——唯一受电压与 Ca<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 双重门控；Ca</tspan><tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 结合使激活曲线大幅负移</tspan></text>
+  <text x="48" y="962" font-size="10" fill="#475569">（血管平滑肌舒缩·耳蜗毛细胞电调谐）</text>
+  <text x="48" y="978" font-size="10" fill="#475569">SK：数 pS·常驻钙调蛋白感受亚微摩尔钙（后超极化）；IK 电导居中（红细胞·上皮）</text>
+  <text x="508" y="765" font-size="12" fill="#075985" font-weight="700">K2P：常开的背景漏流</text>
+  <text x="508" y="792" font-size="10.5" fill="#475569" font-weight="600">亚基 2×(4TMS＋2P)·两亚基拼一孔</text>
+  <g><circle cx="515" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="515" y1="830" x2="515" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="515" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="539" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="539" y1="830" x2="539" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="539" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="563" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="563" y1="830" x2="563" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="563" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="587" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="587" y1="830" x2="587" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="587" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="611" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="611" y1="830" x2="611" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="611" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="635" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="635" y1="830" x2="635" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="635" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="659" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="659" y1="830" x2="659" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="659" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="683" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="683" y1="830" x2="683" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="683" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="707" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="707" y1="830" x2="707" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="707" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="731" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="731" y1="830" x2="731" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="731" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="755" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="755" y1="830" x2="755" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="755" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="779" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="779" y1="830" x2="779" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="779" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="803" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="803" y1="830" x2="803" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="803" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="827" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="827" y1="830" x2="827" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="827" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="851" cy="826" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="851" y1="830" x2="851" y2="835" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="851" cy="839" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="525" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="567" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="609" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="651" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="693" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="735" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="777" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="819" y="812" width="9" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <path d="M 575 818 Q 588 798 601 818" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <path d="M 743 818 Q 756 798 769 818" fill="none" stroke="#be185d" stroke-width="2.2"/>
+  <circle cx="760" cy="785" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="760" y="787.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="760" y1="796" x2="760" y2="860" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-acc)"/>
+  <text x="508" y="944" font-size="10" fill="#475569">15 个基因（KCNK 簇）：生理电位范围内常开，为膜提供稳定「暗电流」，</text>
+  <text x="508" y="962" font-size="10" fill="#475569">直接设定静息电位水平</text>
+  <text x="508" y="978" font-size="10" fill="#475569">TASK 随胞外酸度关闭；TREK/TRAAK 感受机械牵张与温度</text>
+  <text x="898" y="760" font-size="12" fill="#134e4a" font-weight="700">GYG 滤器：四家共享的分子筛</text>
+  <rect x="1005" y="790" width="12" height="70" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="1075" y="790" width="12" height="70" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <line x1="1017" y1="803" x2="1075" y2="803" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="1017" y1="821" x2="1075" y2="821" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="1017" y1="839" x2="1075" y2="839" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="1017" y1="857" x2="1075" y2="857" stroke="#be185d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="1100" y="826" font-size="9.5" fill="#831843">主链羰基氧笼×4</text>
+  <circle cx="1046" cy="782" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1046" y="785.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-3.1" font-size="6.5">+</tspan></text>
+  <line x1="1046" y1="793" x2="1046" y2="862" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <circle cx="1046" cy="874" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1046" y="877.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-3.1" font-size="6.5">+</tspan></text>
+  <circle cx="1150" cy="772" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1150" y="774.88" font-size="8" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="1141" y1="776" x2="1078" y2="790" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-bad)"/>
+  <line x1="1056" y1="781" x2="1070" y2="795" stroke="#dc2626" stroke-width="2"/>
+  <line x1="1070" y1="781" x2="1056" y2="795" stroke="#dc2626" stroke-width="2"/>
+  <text x="1150" y="800" font-size="9.5" fill="#991b1b" text-anchor="middle">Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 偏小被拒</tspan></text>
+  <text x="898" y="908" font-size="10" fill="#475569">K<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 脱水壳换「通道水壳」近零代价；Na</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 半径偏小、无法同时贴合氧笼两侧——选择性达万倍量级</tspan></text>
+  <text x="898" y="926" font-size="10" fill="#475569">（KcsA 1998；MacKinnon 2003 诺奖）</text>
+  <rect x="916.3908" y="943.075" width="137.21839999999997" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="985" y="955.78" font-size="10.5" fill="#991b1b" text-anchor="middle">LQT1＝KCNQ1（I<tspan dy="2.3" font-size="7.6">Ks</tspan><tspan dy="-2.3">）</tspan></text>
+  <rect x="1085.1708" y="943.075" width="129.6584" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1150" y="955.78" font-size="10.5" fill="#92400e" text-anchor="middle">LQT2＝hERG（I<tspan dy="2.3" font-size="7.6">Kr</tspan><tspan dy="-2.3">）</tspan></text>
+  <rect x="1246.095" y="943.075" width="107.81" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1300" y="955.78" font-size="10.5" fill="#831843" text-anchor="middle">Bartter＝ROMK</text>
+  <text x="898" y="980" font-size="9.5" fill="#475569">心肌：I<tspan dy="2.1" font-size="6.8">K1</tspan><tspan dy="-2.1"> 钉住静息电位，I</tspan><tspan dy="2.1" font-size="6.8">Kr</tspan><tspan dy="-2.1">/I</tspan><tspan dy="2.1" font-size="6.8">Ks</tspan><tspan dy="-2.1"> 携手复极平台；特非那定阻断 hERG 被撤市</tspan></text>
+</svg>

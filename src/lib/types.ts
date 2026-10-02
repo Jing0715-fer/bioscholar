@@ -18,6 +18,7 @@ export type SubjectId =
   | 'x-ray-crystallography'
   | 'electron-microscopy'
   | 'physiology'
+  | 'membrane-transport'
 
 /** 学科 */
 export interface Subject {

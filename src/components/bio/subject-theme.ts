@@ -14,6 +14,7 @@ import {
   Gem,
   Aperture,
   HeartPulse,
+  ArrowLeftRight,
 } from 'lucide-react'
 
 /** 学科主题色映射（Tailwind 类名） */
@@ -217,6 +218,20 @@ export const subjectThemes: Record<
       hover: 'hover:border-pink-500/60 hover:shadow-pink-500/10',
     },
     colorName: '桃夭',
+  },
+  'membrane-transport': {
+    icon: ArrowLeftRight,
+    classes: {
+      bg: 'bg-green-600 text-white',
+      bgSoft: 'bg-green-500/10',
+      text: 'text-green-700 dark:text-green-400',
+      border: 'border-green-500/40',
+      ring: 'ring-green-500/30',
+      gradient: 'from-green-500/90 to-emerald-600/90',
+      badge: 'bg-green-500/15 text-green-700 dark:text-green-400 border-green-500/30',
+      hover: 'hover:border-green-500/60 hover:shadow-green-500/10',
+    },
+    colorName: '松绿',
   },
 }
 

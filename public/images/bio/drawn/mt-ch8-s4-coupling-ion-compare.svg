@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">驱动离子对照：动物用钠、植物用酸</text>
+  <text x="700" y="74" text-anchor="middle" font-size="15" fill="#64748b">同一需求、两种支付：七行大表里动物一栏几乎全写Na<tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1">（SGLT·NKCC·NHE·NCX·SLC6），植物一栏几乎全写H</tspan><tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1">（SUC·NRT·AMT·PHT·SULTR·LHT）；钙外排殊途同归（NCX3Na</tspan><tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1">:1Ca</tspan><tspan dy="-5.1" font-size="10.8">2+</tspan><tspan dy="5.1">对CAX多H</tspan><tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1">:</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="15" fill="#64748b">1Ca<tspan dy="-5.1" font-size="10.8">2+</tspan><tspan dy="5.1">，都借单价梯度抬二价）；动物血浆Na</tspan><tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1">约145mmol/L稳定富余、植物自产H</tspan><tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1">（缺铁StrategyI酸化根际）；SOS1与NHE3哲学互逆——驱动离子的选择是环境化学的镜像：海水的钠、土壤的酸</tspan></text>
+  <rect x="30" y="132" width="1340" height="415" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、两套货币的大表：同一需求、两种支付</text>
+  <rect x="60" y="190" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">溶质</text>
+  <rect x="170" y="190" width="405" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">动物（Na<tspan dy="-4.4" font-size="9.4">+</tspan><tspan dy="4.4"> 梯度支付）</tspan></text>
+  <rect x="575" y="190" width="405" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="217.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">植物（H<tspan dy="-4.4" font-size="9.4">+</tspan><tspan dy="4.4"> 梯度支付）</tspan></text>
+  <rect x="60" y="234" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="257.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">糖</text>
+  <rect x="170" y="234" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="257.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">SGLT1/2（肠、肾）</text>
+  <rect x="575" y="234" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="257.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">SUC 蔗糖装载（韧皮部）</text>
+  <rect x="60" y="270" width="920" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="270" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="293.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">氨基酸 / 肽</text>
+  <rect x="170" y="270" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="293.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">SLC6、LAT 交换</text>
+  <rect x="575" y="270" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="293.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">AAP/LHT 同向</text>
+  <rect x="60" y="306" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="329.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">无机氮</text>
+  <rect x="170" y="306" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="329.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">以氨基酸形式获取氮</text>
+  <rect x="575" y="306" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="329.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">NRT1/NRT2、AMT1</text>
+  <rect x="60" y="342" width="920" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="342" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="365.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">磷</text>
+  <rect x="170" y="342" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="365.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">NaPi-II（SLC34）</text>
+  <rect x="575" y="342" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="365.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">PHT1</text>
+  <rect x="60" y="378" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="401.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">硫</text>
+  <rect x="170" y="378" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="401.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">NaS1（SLC13）</text>
+  <rect x="575" y="378" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="401.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">SULTR</text>
+  <rect x="60" y="414" width="920" height="36" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="60" y="414" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="437.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">钙外排</text>
+  <rect x="170" y="414" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="437.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">NCX（3 Na<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">:1 Ca</tspan><tspan dy="-4.1" font-size="8.6">2+</tspan><tspan dy="4.1">）</tspan></text>
+  <rect x="575" y="414" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="437.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">CAX（多 H<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">:1 Ca</tspan><tspan dy="-4.1" font-size="8.6">2+</tspan><tspan dy="4.1">）</tspan></text>
+  <rect x="60" y="450" width="110" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="115" y="473.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">钠的管理</text>
+  <rect x="170" y="450" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="372.5" y="473.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">NHE3（Na<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1"> 进、H</tspan><tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1"> 出）</tspan></text>
+  <rect x="575" y="450" width="405" height="36" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="777.5" y="473.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">SOS1（H<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1"> 进、Na</tspan><tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1"> 出）</tspan></text>
+  <rect x="60" y="502" width="920" height="40" rx="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="520" y="527" font-size="10.5" fill="#134e4a" text-anchor="middle" font-weight="600">动物一栏几乎全写 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">：SGLT·NKCC·NHE·NCX·SLC6 ｜ 植物一栏几乎全写 H</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">：SUC·NRT·AMT·PHT·SULTR·LHT</tspan></text>
+  <text x="1002" y="196" font-size="11.5" fill="#1e293b" font-weight="700">边界的互借票据</text>
+  <rect x="1000" y="208" width="366" height="92" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1012" y="230" font-size="10.5" fill="#075985" font-weight="700">动物端的 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 票据</tspan></text>
+  <text x="1012" y="250" font-size="9" fill="#475569">肠 PEPT1（SLC15A1）以 H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 梯度吸收二肽；腔内微酸由 NHE3 亲手营造；</tspan></text>
+  <text x="1012" y="270" font-size="9" fill="#475569">溶酶体与突触囊泡腔内更是 H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 的天下</tspan></text>
+  <rect x="1000" y="312" width="366" height="92" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1012" y="334" font-size="10.5" fill="#134e4a" font-weight="700">植物端的 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 票据</tspan></text>
+  <text x="1012" y="354" font-size="9" fill="#475569">海藻与硅藻的质膜上不乏 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 偶联的摄取系统；浸泡在海水里的「植物」，</tspan></text>
+  <text x="1012" y="374" font-size="9" fill="#475569">口袋里同样装着钠</text>
+  <rect x="1000" y="416" width="366" height="70" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="1012" y="436" font-size="9" fill="#475569">「动物不用 H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">」说的是质膜主流经济，而非绝对禁区；环境决定货币的规律，</tspan></text>
+  <text x="1012" y="456" font-size="9" fill="#475569">恰在例外中再次显形</text>
+  <rect x="30" y="560" width="440" height="425" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="582.84" font-size="19" fill="#475569" font-weight="700">二、钙外排殊途同归：借单价梯度抬二价</text>
+  <text x="46" y="612" font-size="10" fill="#475569">胞质游离 Ca<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 压在 10</tspan><tspan dy="-3.4" font-size="7.2">-7</tspan><tspan dy="3.4"> mol/L 量级、</tspan></text>
+  <text x="46" y="635" font-size="10" fill="#475569">胞外约 10<tspan dy="-3.4" font-size="7.2">-3</tspan><tspan dy="3.4">——跨膜四个数量级使钙成为「开即全开」的信号；外排逆梯度，代价高昂</tspan></text>
+  <text x="46" y="660" font-size="10.5" fill="#1e293b" font-weight="700">动物：NCX · 3 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 入 : 1 Ca</tspan><tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6"> 出（NCX/CBX 家族）</tspan></text>
+  <g><circle cx="56" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="56" y1="716" x2="56" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="56" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="80" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="80" y1="716" x2="80" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="80" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="104" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="104" y1="716" x2="104" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="104" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="128" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="128" y1="716" x2="128" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="128" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="152" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="152" y1="716" x2="152" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="152" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="176" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="176" y1="716" x2="176" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="176" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="200" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="200" y1="716" x2="200" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="200" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="224" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="224" y1="716" x2="224" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="224" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="248" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="248" y1="716" x2="248" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="248" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="272" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="272" y1="716" x2="272" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="272" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="296" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="296" y1="716" x2="296" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="296" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="320" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="320" y1="716" x2="320" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="320" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="344" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="344" y1="716" x2="344" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="344" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="368" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="368" y1="716" x2="368" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="368" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="392" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="392" y1="716" x2="392" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="392" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="416" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="416" y1="716" x2="416" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="416" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="440" cy="712" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="440" y1="716" x2="440" y2="721" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="440" cy="725" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="150" y="698" width="90" height="42" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="195" y="722" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">NCX</text>
+  <line x1="150" y1="690" x2="150" y2="736" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="185" y1="690" x2="185" y2="736" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="220" y1="690" x2="220" y2="736" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <circle cx="150" cy="680" r="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="150" y="682.7" font-size="7.5" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="185" cy="680" r="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="185" y="682.7" font-size="7.5" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="220" cy="680" r="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="220" y="682.7" font-size="7.5" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <line x1="330" y1="750" x2="330" y2="700" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <circle cx="330" cy="764" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="330" y="766.7" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.6" font-size="5.4">2+</tspan></text>
+  <text x="46" y="780" font-size="8.5" fill="#64748b">细胞外</text>
+  <text x="46" y="748" font-size="8.5" fill="#64748b">细胞质</text>
+  <text x="46" y="806" font-size="10.5" fill="#1e293b" font-weight="700">植物：CAX · 多 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 入 : 1 Ca</tspan><tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6"> 压入液泡（CPA 家族）</tspan></text>
+  <text x="46" y="832" font-size="8.5" fill="#64748b">细胞质</text>
+  <g><circle cx="56" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="56" y1="854" x2="56" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="56" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="80" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="80" y1="854" x2="80" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="80" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="104" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="104" y1="854" x2="104" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="104" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="128" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="128" y1="854" x2="128" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="128" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="152" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="152" y1="854" x2="152" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="152" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="176" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="176" y1="854" x2="176" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="176" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="200" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="200" y1="854" x2="200" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="200" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="224" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="224" y1="854" x2="224" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="224" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="248" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="248" y1="854" x2="248" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="248" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="272" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="272" y1="854" x2="272" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="272" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="296" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="296" y1="854" x2="296" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="296" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="320" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="320" y1="854" x2="320" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="320" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="344" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="344" y1="854" x2="344" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="344" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="368" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="368" y1="854" x2="368" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="368" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="392" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="392" y1="854" x2="392" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="392" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="416" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="416" y1="854" x2="416" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="416" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="440" cy="850" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="440" y1="854" x2="440" y2="859" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="440" cy="863" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="150" y="836" width="90" height="42" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="195" y="860" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">CAX</text>
+  <line x1="330" y1="830" x2="330" y2="866" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <circle cx="330" cy="818" r="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="330" y="820.7" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.6" font-size="5.4">2+</tspan></text>
+  <line x1="150" y1="886" x2="150" y2="842" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <line x1="185" y1="886" x2="185" y2="842" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <line x1="220" y1="886" x2="220" y2="842" stroke="#d97706" stroke-width="1.6" marker-end="url(#arr-warn)"/>
+  <circle cx="150" cy="898" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="150" y="900.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="185" cy="898" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="185" y="900.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="220" cy="898" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="220" y="900.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <text x="46" y="906" font-size="8.5" fill="#64748b">液泡（H<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 库·V 型泵充值）</tspan></text>
+  <text x="46" y="940" font-size="9" fill="#475569">配速各有讲究：NCX 容量大、亲和低（心肌舒张冲刺窗口）；CAX 低速持续压回静息线。</text>
+  <text x="46" y="959" font-size="9" fill="#475569">计量与家族皆异、逻辑如一——功能趋同的干净案例；CAX 另有兼运锰的「混装」版</text>
+  <rect x="475" y="560" width="440" height="425" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="491" y="582.84" font-size="19" fill="#475569" font-weight="700">三、为什么不混用：环境化学的约束</text>
+  <text x="491" y="612" font-size="10" fill="#475569">答案写在环境化学里——动物承袭海水、植物扎根土壤</text>
+  <rect x="491" y="628" width="198" height="160" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="503" y="650" font-size="11" fill="#075985" font-weight="700">动物：富钠体液</text>
+  <text x="503" y="670" font-size="9" fill="#475569">血浆 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 约 145 mmol/L、稳定富余，</tspan></text>
+  <text x="503" y="690" font-size="9" fill="#475569">钠泵随时补充；余额充足的活期账户</text>
+  <text x="503" y="732" font-size="9" fill="#475569">pH 钉死 7.4：H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 仅约 4×10</tspan><tspan dy="-3.1" font-size="6.5">-8</tspan><tspan dy="3.1"> mol/L；</tspan></text>
+  <text x="503" y="752" font-size="9" fill="#475569">把 H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 当通货＝把央行开在火山口</tspan></text>
+  <text x="503" y="772" font-size="9" fill="#475569">（容许带 7.35–7.45）</text>
+  <rect x="701" y="628" width="198" height="160" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="713" y="650" font-size="11" fill="#134e4a" font-weight="700">植物：贫钠土壤</text>
+  <text x="713" y="670" font-size="9" fill="#475569">土壤 pH 约 4–7、H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 摆动数个数量级；</tspan></text>
+  <text x="713" y="690" font-size="9" fill="#475569">Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 在多数生境稀缺，盐渍土反而过量成毒</tspan></text>
+  <text x="713" y="732" font-size="9" fill="#475569">两种外源候选货币都不稳定；</text>
+  <text x="713" y="752" font-size="9" fill="#475569">解法＝自造货币、发行权自办</text>
+  <rect x="491" y="800" width="408" height="92" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.6"/>
+  <text x="503" y="820" font-size="10.5" fill="#92400e" font-weight="700">缺铁 Strategy I：自造货币的极致</text>
+  <text x="503" y="840" font-size="9" fill="#475569">上调 H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">-ATPase（配合 FRO 还原酶与 IRT1 转运体）主动拉低根际 pH 溶解铁；</tspan></text>
+  <text x="503" y="860" font-size="9" fill="#475569">根系呼吸释放 CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">、质子分泌持续酸化根际——发行权握在自己手里，不受土壤行情摆布</tspan></text>
+  <text x="491" y="912" font-size="9" fill="#475569">植物的质子账记在质外体与液泡两个「离岸账户」，胞质 pH 稳在 7 附近；</text>
+  <text x="491" y="931" font-size="9" fill="#475569">盐生植物把 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 囤入液泡当廉价渗透调节剂——储值而不入主流</tspan></text>
+  <rect x="920" y="560" width="450" height="425" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="936" y="582.84" font-size="19" fill="#475569" font-weight="700">四、混用的实例：同一个交换体、两种世界观</text>
+  <text x="936" y="612" font-size="10" fill="#475569">同一个交换体的几何，两种「谁养谁」的世界观</text>
+  <text x="936" y="640" font-size="10" fill="#1e293b" font-weight="700">耐盐植物 SOS1（质膜）</text>
+  <g><circle cx="936" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="936" y1="694" x2="936" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="936" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="960" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="960" y1="694" x2="960" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="960" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="984" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="984" y1="694" x2="984" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="984" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1008" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1008" y1="694" x2="1008" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1008" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1032" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1032" y1="694" x2="1032" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1032" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1056" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1056" y1="694" x2="1056" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1056" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1080" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1080" y1="694" x2="1080" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1080" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1104" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1104" y1="694" x2="1104" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1104" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1010" y="676" width="60" height="42" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1040" y="700" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">SOS1</text>
+  <circle cx="975" cy="660" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="975" y="662.7" font-size="7.5" fill="#075985" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <line x1="975" y1="670" x2="975" y2="712" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <circle cx="1080" cy="734" r="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1080" y="736.7" font-size="7.5" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <line x1="1080" y1="726" x2="1080" y2="682" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="936" y="758" font-size="8.5" fill="#075985" font-weight="600">H<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 是钱</tspan></text>
+  <text x="1028" y="758" font-size="8.5" fill="#991b1b" font-weight="600">Na<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 是毒 · 清场</tspan></text>
+  <text x="1146" y="640" font-size="10" fill="#1e293b" font-weight="700">动物肠 NHE3（顶膜）</text>
+  <g><circle cx="1146" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1146" y1="694" x2="1146" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1146" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1170" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1170" y1="694" x2="1170" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1170" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1194" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1194" y1="694" x2="1194" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1194" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1218" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1218" y1="694" x2="1218" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1218" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1242" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1242" y1="694" x2="1242" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1242" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1266" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1266" y1="694" x2="1266" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1266" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1290" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1290" y1="694" x2="1290" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1290" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1314" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1314" y1="694" x2="1314" y2="699" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1314" cy="703" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1220" y="676" width="60" height="42" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1250" y="700" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">NHE3</text>
+  <circle cx="1185" cy="660" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1185" y="662.7" font-size="7.5" fill="#075985" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <line x1="1185" y1="670" x2="1185" y2="712" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <circle cx="1290" cy="734" r="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="1290" y="736.7" font-size="7.5" fill="#991b1b" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <line x1="1290" y1="726" x2="1290" y2="682" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="1146" y="758" font-size="8.5" fill="#075985" font-weight="600">Na<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 是资源</tspan></text>
+  <text x="1242" y="758" font-size="8.5" fill="#991b1b" font-weight="600">H<tspan dy="-2.9" font-size="6.1">+</tspan><tspan dy="2.9"> 是酸 · 清场</tspan></text>
+  <text x="936" y="786" font-size="9" fill="#475569">SOS3（钙传感器）–SOS2（激酶）磷酸化激活 SOS1；盐胁迫的钙签名被解码为对外排泵的授权——感知、</text>
+  <text x="936" y="806" font-size="9" fill="#475569">决策、执行装进一个模块的遗传学经典</text>
+  <text x="936" y="846" font-size="9.5" fill="#475569" font-weight="700">植物的 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 管理＝毒物处置（第 12 章）</tspan></text>
+  <rect x="961.752" y="866.35" width="76.49600000000001" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1000" y="877.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="600">SOS1 外排</text>
+  <rect x="1072.482" y="866.35" width="95.036" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1120" y="877.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="600">NHX1 液泡隔离</text>
+  <rect x="1197.847" y="866.35" width="104.30600000000001" height="15.299999999999999" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1250" y="877.24" font-size="9" fill="#065f46" text-anchor="middle" font-weight="600">HKT1 木质部回收</text>
+  <rect x="936" y="900" width="418" height="74" rx="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="1145" y="926" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">驱动离子的选择是环境化学的镜像——海水的钠、土壤的酸</text>
+  <text x="1145" y="948" font-size="9.5" fill="#134e4a" text-anchor="middle">动物富钠故用钠；植物自产酸故用酸；两端都拿单价梯度抬二价钙</text>
+  <text x="1145" y="966" font-size="9" fill="#134e4a" text-anchor="middle">深海碱性热液假说：先有梯度后有泵、先有货币后有银行</text>
+</svg>

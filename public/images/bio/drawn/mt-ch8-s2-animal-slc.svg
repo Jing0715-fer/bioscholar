@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">动物 SLC 超家族：从肾糖双闸到疾病谱系</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">52个家族约400基因以不足2%的编码基因承包跨膜运输：SGLT2约90%＋SGLT1约10%收回每日180g滤过糖，恩格列净收获心肾获益；呋塞米卡NKCC2（1Na<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">:1K</tspan><tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">:2Cl</tspan><tspan dy="-5.8" font-size="12.2">-</tspan><tspan dy="5.8">）、</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">噻嗪卡NCC；NCX3Na<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">:1Ca</tspan><tspan dy="-5.8" font-size="12.2">2+</tspan><tspan dy="5.8">司心肌舒张期20%–30%钙外排、缺血时反向成灾；带3运碳、SSRI靶SERT，Bartter/Gitelman/Hartnup/胱氨酸尿钉牢「转运体即生理功能」</tspan></text>
+  <rect x="30" y="132" width="660" height="453" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、SLC 版图：52 个家族、约 400 个基因</text>
+  <text x="361" y="184" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">代表家族速览（HUGO 命名体系）</text>
+  <rect x="46" y="196" width="56" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="223.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">家族</text>
+  <rect x="102" y="196" width="76" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="223.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">通俗名</text>
+  <rect x="178" y="196" width="112" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="223.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">代表成员</text>
+  <rect x="290" y="196" width="386" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="223.5" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">底物与方向</text>
+  <rect x="46" y="240" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="257.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC2</text>
+  <rect x="102" y="240" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="257.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">GLUT</text>
+  <rect x="178" y="240" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="257.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">GLUT1/2/4</text>
+  <rect x="290" y="240" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="257.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖单向（易化扩散）</text>
+  <rect x="46" y="264" width="630" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="264" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="281.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC4</text>
+  <rect x="102" y="264" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="281.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">AE</text>
+  <rect x="178" y="264" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="281.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">带 3 蛋白（AE1）</text>
+  <rect x="290" y="264" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="281.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Cl<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">/HCO</tspan><tspan dy="2.2" font-size="7.2">3</tspan><tspan dy="-5.6" font-size="7.2">-</tspan><tspan dy="3.4"> 交换·红细胞运碳</tspan></text>
+  <rect x="46" y="288" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="305.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC5</text>
+  <rect x="102" y="288" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="305.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">SGLT</text>
+  <rect x="178" y="288" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="305.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">SGLT1/2</text>
+  <rect x="290" y="288" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="305.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖:Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 同向</tspan></text>
+  <rect x="46" y="312" width="630" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="312" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="329.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC6</text>
+  <rect x="102" y="312" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="329.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">NSS</text>
+  <rect x="178" y="312" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="329.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">SERT/DAT/NET/GAT</text>
+  <rect x="290" y="312" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="329.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">递质:Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">（伴 Cl</tspan><tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">）同向</tspan></text>
+  <rect x="46" y="336" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="353.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC7</text>
+  <rect x="102" y="336" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="353.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">氨基酸转运体</text>
+  <rect x="178" y="336" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="353.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">LAT1 等</text>
+  <rect x="290" y="336" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="353.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">氨基酸交换（与 SLC3 重链二聚）</text>
+  <rect x="46" y="360" width="630" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="360" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="377.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC9</text>
+  <rect x="102" y="360" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="377.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">NHE</text>
+  <rect x="178" y="360" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="377.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">NHE1/3</text>
+  <rect x="290" y="360" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="377.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">:H</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 反向</tspan></text>
+  <rect x="46" y="384" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="401.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC11</text>
+  <rect x="102" y="384" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="401.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">金属转运</text>
+  <rect x="178" y="384" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="401.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">DMT1</text>
+  <rect x="290" y="384" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="401.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">二价金属:H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 同向</tspan></text>
+  <rect x="46" y="408" width="630" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="408" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="425.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC12</text>
+  <rect x="102" y="408" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="425.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">CCC</text>
+  <rect x="178" y="408" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="425.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">NKCC2/NCC/KCC</text>
+  <rect x="290" y="408" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="425.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">/K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">/Cl</tspan><tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4"> 同向或反向</tspan></text>
+  <rect x="46" y="432" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="449.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC17</text>
+  <rect x="102" y="432" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="449.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">囊泡转运体</text>
+  <rect x="178" y="432" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="449.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">VGLUT</text>
+  <rect x="290" y="432" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="449.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">谷氨酸入囊泡（H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 驱动）</tspan></text>
+  <rect x="46" y="456" width="630" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="456" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="473.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC22</text>
+  <rect x="102" y="456" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="473.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">OAT/OCT</text>
+  <rect x="178" y="456" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="473.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">OAT1、OCT2</text>
+  <rect x="290" y="456" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="473.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">有机阴/阳离子:离子交换</text>
+  <rect x="46" y="480" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="497.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC26</text>
+  <rect x="102" y="480" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="497.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">阴离子交换体</text>
+  <rect x="178" y="480" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="497.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">DRA 等</text>
+  <rect x="290" y="480" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="497.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Cl<tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">/HCO</tspan><tspan dy="2.2" font-size="7.2">3</tspan><tspan dy="-5.6" font-size="7.2">-</tspan><tspan dy="3.4"> 等交换</tspan></text>
+  <rect x="46" y="504" width="630" height="24" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="504" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="521.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC30/31</text>
+  <rect x="102" y="504" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="521.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">ZnT/CTR</text>
+  <rect x="178" y="504" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="521.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">ZnT1、CTR1</text>
+  <rect x="290" y="504" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="521.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">锌外排·铜摄取</text>
+  <rect x="46" y="528" width="56" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="74" y="545.5" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">SLC40</text>
+  <rect x="102" y="528" width="76" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="140" y="545.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">铁外排体</text>
+  <rect x="178" y="528" width="112" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="234" y="545.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">ferroportin</text>
+  <rect x="290" y="528" width="386" height="24" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="483" y="545.5" font-size="10" fill="#475569" text-anchor="middle" font-weight="500">Fe<tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 外排</tspan></text>
+  <text x="46" y="570" font-size="9.5" fill="#475569">以不足 2% 的蛋白编码基因，承担几乎全部跨膜营养摄取与废物外排；SLC34（NaPi-II）、SLC13（NaS1）等散见第四节对照表</text>
+  <rect x="710" y="132" width="660" height="453" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、肾糖双闸：SGLT2 与 SGLT1 的「先通量、后亲和」</text>
+  <text x="726" y="196" font-size="10" fill="#475569" font-weight="600">肾脏每日滤过约 180 g 葡萄糖，须在近端小管全部收回</text>
+  <circle cx="770" cy="240" r="26" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="770" y="244" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">肾小球</text>
+  <line x1="796" y1="240" x2="804" y2="240" stroke="#475569" stroke-width="2"/>
+  <rect x="804" y="232" width="270" height="16" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <rect x="1084" y="232" width="90" height="16" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <path d="M1182,248 L1182,278 Q1194,290 1206,278 L1206,248" fill="none" opacity="0.55" stroke="#0f766e" stroke-width="4"/>
+  <rect x="1216" y="232" width="118" height="16" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.8"/>
+  <text x="939" y="214" font-size="10" fill="#075985" text-anchor="middle" font-weight="600">S1–S2 段 · SGLT2（SLC5A2）</text>
+  <text x="1129" y="214" font-size="10" fill="#831843" text-anchor="middle" font-weight="600">S3 段 · SGLT1</text>
+  <text x="939" y="270" font-size="9.5" fill="#475569" text-anchor="middle">1 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">:1 葡萄糖 · 容量大而亲和低</tspan></text>
+  <text x="1120" y="270" font-size="9.5" fill="#475569" text-anchor="middle">2 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">:1 葡萄糖 · 亲和更高</tspan></text>
+  <text x="1275" y="268" font-size="8.5" fill="#64748b" text-anchor="middle">远曲小管 → 集合管</text>
+  <rect x="804" y="300" width="479" height="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <rect x="1283" y="300" width="51" height="22" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1043" y="315" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="600">SGLT2 ≈ 90% · 先通量</text>
+  <text x="1309" y="338" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="600">SGLT1 ≈ 10% · 后亲和</text>
+  <rect x="726" y="352" width="628" height="130" rx="9" fill="#ffffff" stroke="#be185d" stroke-width="1.6"/>
+  <text x="742" y="376" font-size="11.5" fill="#831843" font-weight="700">药物靶头：恩格列净 / 达格列净（SGLT2 抑制剂）</text>
+  <text x="742" y="398" font-size="10" fill="#475569">阻断近端重吸收、促成尿糖排泄；临床收益远超降糖本身——管球反馈复位带来肾保护，心衰住院与心血管死亡下降，</text>
+  <text x="742" y="421" font-size="10" fill="#475569">成为糖尿病心肾共管格局的支柱；代价是泌尿生殖道感染（尿糖滋菌）与罕见酮症</text>
+  <text x="742" y="452" font-size="10" fill="#475569">天然 SLC5A2 突变＝家族性肾性糖尿（多为良性）——「SGLT2 缺陷」的人体表型</text>
+  <text x="1040" y="506" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">肠道分工同源：能量三级接力</text>
+  <rect x="773.4630999999999" y="530.65" width="53.073800000000006" height="18.7" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="800" y="543.96" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700">ATP</text>
+  <line x1="832" y1="540" x2="920" y2="540" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="876" y="527" font-size="8.5" fill="#64748b" text-anchor="middle">钠泵</text>
+  <rect x="932.278124" y="530.65" width="75.44375199999999" height="18.7" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="970" y="543.96" font-size="11" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 梯度</tspan></text>
+  <line x1="1024" y1="540" x2="1100" y2="540" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="1062" y="527" font-size="8.5" fill="#64748b" text-anchor="middle">SGLT1</text>
+  <rect x="1107.005" y="530.65" width="65.99000000000001" height="18.7" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1140" y="543.96" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">糖梯度</text>
+  <line x1="1178" y1="540" x2="1256" y2="540" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="1218" y="527" font-size="8.5" fill="#64748b" text-anchor="middle">GLUT2</text>
+  <rect x="1272.67" y="530.65" width="54.66" height="18.7" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1300" y="543.96" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">血液</text>
+  <text x="1040" y="574" font-size="9.5" fill="#475569" text-anchor="middle">顶膜 SGLT1 吸收膳食葡萄糖与半乳糖、基底侧 GLUT2 入血</text>
+  <rect x="30" y="600" width="660" height="385" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="622.84" font-size="19" fill="#475569" font-weight="700">三、利尿剂靶位：SLC12 家族的岗位与开关</text>
+  <rect x="46" y="640" width="195" height="218" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="58" y="650" width="66" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="91" y="664" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">SLC12A1</text>
+  <rect x="170.3225" y="651.925" width="61.355000000000004" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="201" y="663.42" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">呋塞米</text>
+  <text x="58" y="692" font-size="13" fill="#1e293b" font-weight="700">NKCC2</text>
+  <text x="58" y="710" font-size="9.5" fill="#475569">髓袢升支粗段·顶端膜</text>
+  <g><circle cx="66" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="66" y1="746" x2="66" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="66" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="90" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="90" y1="746" x2="90" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="90" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="114" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="114" y1="746" x2="114" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="114" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="138" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="138" y1="746" x2="138" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="138" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="162" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="162" y1="746" x2="162" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="162" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="186" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="186" y1="746" x2="186" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="186" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="210" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="210" y1="746" x2="210" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="210" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <circle cx="85" cy="727" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="85" y="729.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="120" cy="727" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="120" y="729.52" font-size="7" fill="#075985" text-anchor="middle" font-weight="700">K<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="155" cy="727" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="155" y="729.52" font-size="7" fill="#065f46" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.4" font-size="5.0">-</tspan></text>
+  <circle cx="190" cy="727" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="190" y="729.52" font-size="7" fill="#065f46" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.4" font-size="5.0">-</tspan></text>
+  <line x1="85" y1="733" x2="85" y2="762" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <line x1="120" y1="733" x2="120" y2="762" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <line x1="155" y1="733" x2="155" y2="762" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <line x1="190" y1="733" x2="190" y2="762" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <text x="143" y="787" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="600">1 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">:1 K</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">:2 Cl</tspan><tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1"> · 电中性</tspan></text>
+  <text x="58" y="808" font-size="9" fill="#475569">此段水不通透：</text>
+  <text x="58" y="829" font-size="9" fill="#475569">盐被抽走即形成髓质渗透梯度与稀释尿；</text>
+  <text x="58" y="850" font-size="9" fill="#475569">呋塞米为效应最强的袢利尿剂</text>
+  <rect x="256" y="640" width="195" height="218" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="268" y="650" width="66" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="301" y="664" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">SLC12A3</text>
+  <rect x="380.3225" y="651.925" width="61.355000000000004" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="411" y="663.42" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">噻嗪类</text>
+  <text x="268" y="692" font-size="13" fill="#1e293b" font-weight="700">NCC</text>
+  <text x="268" y="710" font-size="9.5" fill="#475569">远曲小管·顶端膜</text>
+  <g><circle cx="276" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="746" x2="276" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="746" x2="300" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="746" x2="324" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="746" x2="348" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="746" x2="372" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="746" x2="396" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="420" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="420" y1="746" x2="420" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="420" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <circle cx="295" cy="727" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="295" y="729.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="340" cy="727" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="340" y="729.52" font-size="7" fill="#065f46" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.4" font-size="5.0">-</tspan></text>
+  <line x1="295" y1="733" x2="295" y2="762" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <line x1="340" y1="733" x2="340" y2="762" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <text x="353" y="787" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="600">1 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">:1 Cl</tspan><tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1"> · 电中性</tspan></text>
+  <text x="268" y="808" font-size="9" fill="#475569">攫取远曲小管残余 NaCl——噻嗪类利尿剂在此设卡</text>
+  <rect x="466" y="640" width="195" height="218" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="478" y="650" width="66" height="20" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="511" y="664" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">SLC12A4–7</text>
+  <rect x="580.5375" y="651.925" width="80.92500000000001" height="16.15" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="621" y="663.42" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="700">（生理岗）</text>
+  <text x="478" y="692" font-size="13" fill="#1e293b" font-weight="700">KCC</text>
+  <text x="478" y="710" font-size="9.5" fill="#475569">多组织·外排方向</text>
+  <g><circle cx="486" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="486" y1="746" x2="486" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="486" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="510" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="510" y1="746" x2="510" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="510" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="534" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="534" y1="746" x2="534" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="534" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="558" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="558" y1="746" x2="558" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="558" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="582" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="582" y1="746" x2="582" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="582" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="606" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="606" y1="746" x2="606" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="606" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="630" cy="742" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="630" y1="746" x2="630" y2="751" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="630" cy="755" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <circle cx="505" cy="768" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="505" y="770.52" font-size="7" fill="#075985" text-anchor="middle" font-weight="700">K<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="550" cy="768" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="550" y="770.52" font-size="7" fill="#065f46" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.4" font-size="5.0">-</tspan></text>
+  <line x1="505" y1="758" x2="505" y2="733" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <line x1="550" y1="758" x2="550" y2="733" stroke="#475569" stroke-width="1.4" marker-end="url(#arr-ink)"/>
+  <text x="563" y="790" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="600">1 K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">:1 Cl</tspan><tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1"> · 同向外排</tspan></text>
+  <text x="478" y="812" font-size="9" fill="#475569">红细胞 KCC1 参与体积调节；</text>
+  <text x="478" y="833" font-size="9" fill="#475569">神经元 KCC2 抽走胞质 Cl<tspan dy="-3.1" font-size="6.5">-</tspan><tspan dy="3.1">，</tspan></text>
+  <text x="478" y="854" font-size="9" fill="#475569">维持 GABA 的抑制性</text>
+  <rect x="46" y="874" width="628" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="60" y="888" font-size="9.5" fill="#475569">家族总开关：WNK–SPAK/OSR1 激酶级联以磷酸化统一调度全家；WNK 突变＝Gordon 综合征（家族性高血压伴高血钾）</text>
+  <text x="60" y="909" font-size="9.5" fill="#475569">——调控网络的失序直接写进血压</text>
+  <rect x="46" y="926" width="305" height="52" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="58" y="946" font-size="10.5" fill="#991b1b" font-weight="700">Bartter 综合征（升支粗段）</text>
+  <text x="58" y="964" font-size="9" fill="#475569">NKCC2/ROMK/ClC-Kb/barttin 缺陷 → 低钾碱中毒</text>
+  <rect x="369" y="926" width="305" height="52" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="381" y="946" font-size="10.5" fill="#991b1b" font-weight="700">Gitelman 综合征（远曲小管）</text>
+  <text x="381" y="964" font-size="9" fill="#475569">NCC 缺陷 → 远端 NaCl 重吸收障碍</text>
+  <rect x="710" y="600" width="660" height="385" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="622.84" font-size="19" fill="#475569" font-weight="700">四、稳态骨干与疾病谱系：NHE3、带 3 与 NCX</text>
+  <text x="726" y="648" font-size="11.5" fill="#4c1d95" font-weight="700">NCX1（SLC8A1）：心肌的钙出口</text>
+  <text x="726" y="672" font-size="9" fill="#64748b">心肌细胞外</text>
+  <g><circle cx="740" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="704" x2="740" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="704" x2="764" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="704" x2="788" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="704" x2="812" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="704" x2="836" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="704" x2="860" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="704" x2="884" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="704" x2="908" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="704" x2="932" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="704" x2="956" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="704" x2="980" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="790" y="686" width="100" height="42" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="840" y="710" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">NCX1</text>
+  <line x1="805" y1="680" x2="805" y2="726" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="835" y1="680" x2="835" y2="726" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="865" y1="680" x2="865" y2="726" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <circle cx="805" cy="672" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="805" y="674.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="835" cy="672" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="835" y="674.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="865" cy="672" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="865" y="674.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">Na<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <line x1="940" y1="748" x2="940" y2="692" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <circle cx="940" cy="762" r="11" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="940" y="764.7" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.6" font-size="5.4">2+</tspan></text>
+  <text x="726" y="768" font-size="9" fill="#64748b">心肌细胞质</text>
+  <text x="865" y="782" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="600">3 Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 入 : 1 Ca</tspan><tspan dy="-3.4" font-size="7.2">2+</tspan><tspan dy="3.4"> 出 · 生电（净 +1）</tspan></text>
+  <text x="726" y="806" font-size="9.5" fill="#475569">舒张期大部分 Ca<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2"> 由 SERCA 泵回肌浆网，</tspan></text>
+  <text x="726" y="829" font-size="9.5" fill="#475569">NCX1 承担剩余约 20%–30% 的钙外排；</text>
+  <text x="726" y="852" font-size="9.5" fill="#475569">其生电性使方向取决于 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 梯度与膜电位的合力</tspan></text>
+  <text x="726" y="872" font-size="11" fill="#991b1b" font-weight="700">危险：缺血时的反向运转</text>
+  <rect x="726" y="882" width="290" height="24" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="871" y="898" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="600">① ATP 枯竭 → 钠泵停转、Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 积聚</tspan></text>
+  <line x1="871" y1="908" x2="871" y2="916" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="726" y="918" width="290" height="24" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="871" y="934" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="600">② 膜去极化 · 电位差失守</text>
+  <line x1="871" y1="944" x2="871" y2="952" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-ink)"/>
+  <rect x="726" y="954" width="290" height="24" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="871" y="970" font-size="9.5" fill="#991b1b" text-anchor="middle" font-weight="600">③ NCX 反转：Ca<tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2"> 涌入 → 心律失常</tspan></text>
+  <rect x="1036" y="640" width="324" height="96" rx="8" fill="#ffffff" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1048" y="662" font-size="11" fill="#075985" font-weight="700">NHE3（SLC9A3）：近端小管 Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7">/H</tspan><tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 交换</tspan></text>
+  <text x="1048" y="684" font-size="9.5" fill="#475569">回收 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 同时排出 H</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">，</tspan></text>
+  <text x="1048" y="705" font-size="9.5" fill="#475569">与刷状缘碳酸酐酶协同把滤过的 HCO<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-5.3" font-size="6.8">-</tspan><tspan dy="3.2"> 以 CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 形式收回；</tspan></text>
+  <text x="1048" y="726" font-size="9.5" fill="#475569">近端 80%–85% 的碳酸氢盐重吸收走此通路</text>
+  <rect x="1036" y="748" width="324" height="112" rx="8" fill="#ffffff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1048" y="770" font-size="11" fill="#4c1d95" font-weight="700">AE1（SLC4A1）＝红细胞「带 3 蛋白」</text>
+  <text x="1048" y="792" font-size="9.5" fill="#475569">含量最大的红细胞膜蛋白：约占膜蛋白 1/4、每细胞逾百万拷贝；</text>
+  <text x="1048" y="813" font-size="9.5" fill="#475569">Cl<tspan dy="-3.2" font-size="6.8">-</tspan><tspan dy="3.2">/HCO</tspan><tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-5.3" font-size="6.8">-</tspan><tspan dy="3.2"> 交换把组织 CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 携带的碱基经血液运抵肺部；</tspan></text>
+  <text x="1048" y="834" font-size="9.5" fill="#475569">肾脏剪接体 kAE1 位于闰细胞基底侧，突变致远端肾小管酸中毒</text>
+  <rect x="1036" y="872" width="324" height="80" rx="8" fill="#ffffff" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1048" y="892" font-size="11" fill="#831843" font-weight="700">SLC6（NSS）：精神药理的半壁江山</text>
+  <text x="1048" y="912" font-size="9.5" fill="#475569">约 2 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">:1 Cl</tspan><tspan dy="-3.2" font-size="6.8">-</tspan><tspan dy="3.2">:1 递质摄取；SSRI 阻断 SERT，可卡因阻断 DAT/NET，</tspan></text>
+  <text x="1048" y="932" font-size="9.5" fill="#475569">安非他明作为底物引发反向转运掏空囊泡</text>
+  <text x="1048" y="960" font-size="9" fill="#475569">疾病谱系：Hartnup（SLC6A19）· 胱氨酸尿（SLC3A1/SLC7A9）</text>
+  <text x="1048" y="978" font-size="9" fill="#475569">——一个基因、一台机器、一组表型的直线对应</text>
+</svg>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">转运的热力学：ΔG、Nernst 与膜电位</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">ΔG=RTln(C<tspan dy="3.7" font-size="12.2">2</tspan><tspan dy="-3.7">/C</tspan><tspan dy="3.7" font-size="12.2">1</tspan><tspan dy="-3.7">)+zFV合并浓度差与电位差（25℃时RT/F≈25.7mV，十倍浓度差≈59mV）；Nernst方程给出E</tspan><tspan dy="3.7" font-size="12.2">K</tspan><tspan dy="-3.7">≈−90、E</tspan><tspan dy="3.7" font-size="12.2">Na</tspan><tspan dy="-3.7">+60~+67、E</tspan><tspan dy="3.7" font-size="12.2">Ca</tspan><tspan dy="-3.7">&gt;+125mV的安分点；动物静息−30~−90</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">mV、植物−120~−250mV——植物以PMF（常超250–300mV当量）驱动次级转运</text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、电化学梯度与 ΔG 判据</text>
+  <rect x="60" y="185" width="600" height="58" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="360" y="222" font-size="21" fill="#075985" text-anchor="middle" font-weight="700">ΔG = RT ln(C<tspan dy="4.6" font-size="15.1">2</tspan><tspan dy="-4.6">/C</tspan><tspan dy="4.6" font-size="15.1">1</tspan><tspan dy="-4.6">) + zFV</tspan></text>
+  <text x="60" y="278" font-size="11" fill="#475569">C<tspan dy="2.4" font-size="7.9">2</tspan><tspan dy="-2.4">/C</tspan><tspan dy="2.4" font-size="7.9">1</tspan><tspan dy="-2.4">：膜两侧浓度；z：电荷数；F = 96 485 C/mol；V：膜电位（胞内 − 胞外）</tspan></text>
+  <text x="60" y="302" font-size="11" fill="#475569">25 ℃ 时 RT/F ≈ 25.7 mV——十倍浓度差 ≈ 59 mV 电位当量，浓度项与电压项同尺相加</text>
+  <text x="60" y="326" font-size="11" fill="#475569">ΔG &lt; 0：顺梯度、可自发；ΔG &gt; 0：逆梯度、必须输入能量——方向与工钱只看这一个数</text>
+  <rect x="60" y="352" width="600" height="158" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="76" y="380" font-size="12.5" fill="#475569" font-weight="700">示范账：静息神经元的 K<tspan dy="-4.3" font-size="9.0">+</tspan><tspan dy="4.3">（胞内 140 / 胞外 4.5 mmol/L）</tspan></text>
+  <text x="76" y="408" font-size="11" fill="#475569">浓度项 ≈ +88 mV 当量 ＋ 电压项 −70 mV ＝ ΔG ≈ +18 mV &gt; 0——内向移动仍是上坡</text>
+  <text x="76" y="434" font-size="11" fill="#475569">若膜电位再负 20 mV 到 −90 mV（即 E<tspan dy="2.4" font-size="7.9">K</tspan><tspan dy="-2.4">）：两项恰好抵消，净流为零</tspan></text>
+  <text x="76" y="460" font-size="11" fill="#475569">维持 140 对 4.5 的格局，靠 Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7">/K</tspan><tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 泵不停把外逸趋势抵回去——这就是泵的工钱</tspan></text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、Nernst 方程与平衡电位标尺</text>
+  <text x="740" y="192" font-size="15" fill="#1e293b" font-weight="700">E<tspan dy="3.3" font-size="10.8">ion</tspan><tspan dy="-3.3"> = (RT/zF) ln([离子]</tspan><tspan dy="3.3" font-size="10.8">外</tspan><tspan dy="-3.3">/[离子]</tspan><tspan dy="3.3" font-size="10.8">内</tspan><tspan dy="-3.3">)</tspan></text>
+  <text x="740" y="216" font-size="11" fill="#475569">25 ℃ 简化式：E = 59/z × log([外]/[内]) mV</text>
+  <text x="740" y="244" font-size="10.5" fill="#475569">E<tspan dy="2.3" font-size="7.6">ion</tspan><tspan dy="-2.3"> 是净流为零的「安分电压」：</tspan></text>
+  <text x="740" y="262" font-size="10.5" fill="#475569">双向流恰好相等，不是不动</text>
+  <text x="740" y="294" font-size="10.5" fill="#475569">实际膜电位离 E<tspan dy="2.3" font-size="7.6">ion</tspan><tspan dy="-2.3"> 越远，</tspan></text>
+  <text x="740" y="312" font-size="10.5" fill="#475569">该离子的驱动力越大——静息时是支柱，</text>
+  <text x="740" y="330" font-size="10.5" fill="#475569">兴奋时是落差</text>
+  <text x="740" y="362" font-size="10.5" fill="#475569">E<tspan dy="2.3" font-size="7.6">K</tspan><tspan dy="-2.3"> 之深：胞内 K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 约为胞外 30 倍以上，</tspan></text>
+  <text x="740" y="385" font-size="10.5" fill="#475569">K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 漏通道的高通透主导动物静息电位</tspan></text>
+  <text x="740" y="422" font-size="10.5" fill="#475569">E<tspan dy="2.3" font-size="7.6">Ca</tspan><tspan dy="-2.3"> 之陡：胞质游离仅约 100 nmol/L、</tspan></text>
+  <text x="740" y="445" font-size="10.5" fill="#475569">外液 1–2 mmol/L（十万倍级）</text>
+  <text x="740" y="468" font-size="10.5" fill="#475569">——几十个 Ca<tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6"> 通道短暂开放即可让钙信号翻倍</tspan></text>
+  <text x="740" y="507" font-size="10.5" fill="#831843" font-weight="600">钙因此成为最常用的第二信使</text>
+  <rect x="1010" y="260" width="160" height="260" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1004" y1="260" x2="1010" y2="260" stroke="#475569" stroke-width="1.8"/>
+  <text x="1000" y="264" font-size="13" fill="#64748b" text-anchor="end">+125</text>
+  <line x1="1004" y1="338.6046511627907" x2="1010" y2="338.6046511627907" stroke="#475569" stroke-width="1.8"/>
+  <text x="1000" y="342.6046511627907" font-size="13" fill="#64748b" text-anchor="end">+60</text>
+  <line x1="1004" y1="411.1627906976744" x2="1010" y2="411.1627906976744" stroke="#475569" stroke-width="1.8"/>
+  <text x="1000" y="415.1627906976744" font-size="13" fill="#64748b" text-anchor="end">0</text>
+  <line x1="1004" y1="483.72093023255815" x2="1010" y2="483.72093023255815" stroke="#475569" stroke-width="1.8"/>
+  <text x="1000" y="487.72093023255815" font-size="13" fill="#64748b" text-anchor="end">−60</text>
+  <line x1="1004" y1="520" x2="1010" y2="520" stroke="#475569" stroke-width="1.8"/>
+  <text x="1000" y="524" font-size="13" fill="#64748b" text-anchor="end">−90</text>
+  <text x="1090" y="248" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">膜电位（mV）</text>
+  <line x1="1010" y1="260" x2="1100" y2="260" stroke="#dc2626" stroke-width="3"/>
+  <text x="1180" y="264" font-size="11.5" fill="#991b1b" font-weight="700">E<tspan dy="2.5" font-size="8.3">Ca</tspan><tspan dy="-2.5"> &gt; +125 mV</tspan></text>
+  <text x="1180" y="284" font-size="9.5" fill="#64748b">十万倍级内外差</text>
+  <line x1="1065" y1="338.6046511627907" x2="1065" y2="330.1395348837209" stroke="#0369a1" stroke-width="2"/>
+  <line x1="1010" y1="334.37209302325584" x2="1100" y2="334.37209302325584" stroke="#0369a1" stroke-width="3"/>
+  <text x="1180" y="338.37209302325584" font-size="11.5" fill="#075985" font-weight="700">E<tspan dy="2.5" font-size="8.3">Na</tspan><tspan dy="-2.5"> +60~+67 mV</tspan></text>
+  <text x="1180" y="358.37209302325584" font-size="9.5" fill="#64748b">去极化的引擎</text>
+  <line x1="1065" y1="483.72093023255815" x2="1065" y2="520" stroke="#be185d" stroke-width="2"/>
+  <line x1="1010" y1="501.86046511627904" x2="1100" y2="501.86046511627904" stroke="#be185d" stroke-width="3"/>
+  <text x="1180" y="505.86046511627904" font-size="11.5" fill="#831843" font-weight="700">E<tspan dy="2.5" font-size="8.3">Cl</tspan><tspan dy="-2.5"> −60~−90 mV</tspan></text>
+  <line x1="1010" y1="520" x2="1100" y2="520" stroke="#0f766e" stroke-width="3"/>
+  <text x="1180" y="524" font-size="11.5" fill="#134e4a" font-weight="700">E<tspan dy="2.5" font-size="8.3">K</tspan><tspan dy="-2.5"> ≈ −90 mV</tspan></text>
+  <text x="1180" y="544" font-size="9.5" fill="#64748b">静息电位的支柱</text>
+  <rect x="30" y="567" width="660" height="418" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="589.84" font-size="19" fill="#475569" font-weight="700">三、被动 vs 主动：ΔG 符号划界</text>
+  <rect x="150" y="612" width="420" height="46" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="641" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">算 ΔG = RT ln(C<tspan dy="3.1" font-size="10.1">2</tspan><tspan dy="-3.1">/C</tspan><tspan dy="3.1" font-size="10.1">1</tspan><tspan dy="-3.1">) + zFV</tspan></text>
+  <line x1="200" y1="658" x2="200" y2="690" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <line x1="520" y1="658" x2="520" y2="690" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <text x="214" y="678" font-size="11" fill="#065f46" font-weight="700">ΔG &lt; 0</text>
+  <text x="534" y="678" font-size="11" fill="#92400e" font-weight="700">ΔG &gt; 0</text>
+  <rect x="60" y="694" width="280" height="150" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="76" y="722" font-size="13.5" fill="#065f46" font-weight="700">ΔG &lt; 0 → 被动转运</text>
+  <text x="76" y="750" font-size="10.5" fill="#475569">简单扩散：溶入脂相、顺梯度</text>
+  <text x="76" y="772" font-size="10.5" fill="#475569">经通道 / 经载体的易化扩散</text>
+  <text x="76" y="794" font-size="10.5" fill="#475569">能量来自梯度本身——但梯度是别人预付的</text>
+  <text x="76" y="816" font-size="10" fill="#64748b">（水特殊：不带净电荷，只服从渗透差）</text>
+  <rect x="380" y="694" width="280" height="150" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="396" y="722" font-size="13.5" fill="#92400e" font-weight="700">ΔG &gt; 0 → 主动转运</text>
+  <text x="396" y="750" font-size="10.5" fill="#475569">初级：泵直接水解 ATP 等高能键</text>
+  <text x="396" y="772" font-size="10.5" fill="#475569">次级：借 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 或 H</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 梯度的转运体</tspan></text>
+  <text x="396" y="794" font-size="10.5" fill="#475569">预付梯度者：动物 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">-ATPase、植物质子泵</tspan></text>
+  <text x="60" y="876" font-size="11" fill="#475569">梯度有账单：维持 Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7">/K</tspan><tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 梯度约占动物静息 ATP 消耗的 20%–30%；植物的质子泵同样位居耗能榜首</tspan></text>
+  <text x="60" y="913" font-size="11" fill="#475569" font-weight="600">被动转运的「免费」，是泵在背后持续付费换来的</text>
+  <text x="60" y="939" font-size="10.5" fill="#475569">水的转运较特殊：不带净电荷，ΔG 的电压项为零，只服从渗透压差（π = iCRT）——后果在动植物截然不同</text>
+  <rect x="710" y="567" width="660" height="418" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="589.84" font-size="19" fill="#475569" font-weight="700">四、静息膜电位与离子环境：量级对照</text>
+  <text x="780" y="612" font-size="10" fill="#64748b" text-anchor="middle">mV</text>
+  <line x1="780" y1="622" x2="780" y2="772" stroke="#475569" stroke-width="2"/>
+  <line x1="774" y1="622" x2="780" y2="622" stroke="#475569" stroke-width="1.8"/>
+  <text x="768" y="626" font-size="10.5" fill="#64748b" text-anchor="end">0</text>
+  <line x1="774" y1="652" x2="780" y2="652" stroke="#475569" stroke-width="1.8"/>
+  <text x="768" y="656" font-size="10.5" fill="#64748b" text-anchor="end">−50</text>
+  <line x1="774" y1="682" x2="780" y2="682" stroke="#475569" stroke-width="1.8"/>
+  <text x="768" y="686" font-size="10.5" fill="#64748b" text-anchor="end">−100</text>
+  <line x1="774" y1="712" x2="780" y2="712" stroke="#475569" stroke-width="1.8"/>
+  <text x="768" y="716" font-size="10.5" fill="#64748b" text-anchor="end">−150</text>
+  <line x1="774" y1="742" x2="780" y2="742" stroke="#475569" stroke-width="1.8"/>
+  <text x="768" y="746" font-size="10.5" fill="#64748b" text-anchor="end">−200</text>
+  <line x1="774" y1="772" x2="780" y2="772" stroke="#475569" stroke-width="1.8"/>
+  <text x="768" y="776" font-size="10.5" fill="#64748b" text-anchor="end">−250</text>
+  <line x1="790" y1="622" x2="1000" y2="622" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="816" y="640" width="44" height="36" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="838" y="662" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">动物</text>
+  <text x="868" y="654" font-size="11" fill="#075985" font-weight="700">−30~−90 mV</text>
+  <text x="868" y="674" font-size="9.5" fill="#64748b">神经元 −70~−90</text>
+  <rect x="896" y="694" width="44" height="78" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="918" y="722" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">植物</text>
+  <text x="918" y="794" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">−120~−250 mV</text>
+  <text x="1010" y="636" font-size="11.5" fill="#475569" font-weight="700">为什么植物把电位做得更深？</text>
+  <text x="1010" y="660" font-size="10.5" fill="#475569">土壤溶液 K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">、NO</tspan><tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-5.9" font-size="7.6">-</tspan><tspan dy="3.6"> 只有 0.1–1 mmol/L——不把电源做大，</tspan></text>
+  <text x="1010" y="683" font-size="10.5" fill="#475569">就抽不进矿质养分</text>
+  <text x="1010" y="722" font-size="11.5" fill="#065f46" font-weight="700">植物 PMF = 膜电位 + H<tspan dy="-3.9" font-size="8.3">+</tspan><tspan dy="3.9"> 浓度差</tspan></text>
+  <text x="1010" y="746" font-size="10.5" fill="#475569">折合能量常超 250–300 mV 当量，是次级转运的通用货币；</text>
+  <text x="1010" y="769" font-size="10.5" fill="#475569">质外体被酸化到约 pH 5.5（胞质 7.2 上下）</text>
+  <text x="1010" y="808" font-size="10.5" fill="#075985">动物侧：Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 梯度＋膜电位合计约 150–200 mV 可用势</tspan></text>
+  <rect x="730" y="818" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="845.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">参数</text>
+  <rect x="900" y="818" width="215" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1007.5" y="845.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">动物（哺乳类）</text>
+  <rect x="1115" y="818" width="235" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1232.5" y="845.5" font-size="12.5" fill="#1e293b" text-anchor="middle" font-weight="700">植物（拟南芥）</text>
+  <rect x="730" y="862" width="170" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="881" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">胞质 K<tspan dy="-3.9" font-size="8.3">+</tspan><tspan dy="3.9">（mmol/L）</tspan></text>
+  <rect x="900" y="862" width="215" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1007.5" y="881" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">约 140</text>
+  <rect x="1115" y="862" width="235" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1232.5" y="881" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">100–200</text>
+  <rect x="730" y="889" width="620" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="889" width="170" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="908" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">胞外 Na<tspan dy="-3.9" font-size="8.3">+</tspan><tspan dy="3.9">（mmol/L）</tspan></text>
+  <rect x="900" y="889" width="215" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1007.5" y="908" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">血浆约 145</text>
+  <rect x="1115" y="889" width="235" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1232.5" y="908" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">土壤溶液仅 0.1–1</text>
+  <rect x="730" y="916" width="170" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="935" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">胞质游离 Ca<tspan dy="-3.9" font-size="8.3">2+</tspan></text>
+  <rect x="900" y="916" width="215" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1007.5" y="935" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">约 100 nmol/L</text>
+  <rect x="1115" y="916" width="235" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1232.5" y="935" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">约 100 nmol/L（液泡毫摩尔级）</text>
+  <rect x="730" y="943" width="620" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="943" width="170" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="815" y="962" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">胞质 pH</text>
+  <rect x="900" y="943" width="215" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1007.5" y="962" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">约 7.2</text>
+  <rect x="1115" y="943" width="235" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1232.5" y="962" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="500">约 7.2（质外体约 5.5）</text>
+</svg>

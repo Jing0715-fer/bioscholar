@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">气体交换与离子流的动植物汇流</text>
+  <text x="700" y="74" text-anchor="middle" font-size="15" fill="#64748b">人肺呼吸膜仅0.2–0.6μm、总面积约70m²，红细胞0.75s过境而0.25s即达扩散平衡，血红蛋白化学耦合使分压差不封顶；植物气孔承担蒸腾比约400–800molH₂O/molCO₂（C₃）的工程折衷；高CO₂经</text>
+  <text x="700" y="100" text-anchor="middle" font-size="15" fill="#64748b">HT1/MPK12使气孔部分关闭并写进化石「古气压计」；K⁺/阴离子通道为两界共同执行器，昆虫气管与气孔趋同演化；AQP1/PIP1;2的CO₂通透性悬而未决，内向/外向整流以「逆势不开门」收束</text>
+  <rect x="30" y="132" width="660" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、两张答卷：内折的肺 vs 外摊的气孔</text>
+  <text x="148" y="170" font-size="10.5" fill="#64748b" text-anchor="middle">肺泡腔</text>
+  <path d="M 56,250 A 92,105 0 0 1 240,250 Z" fill="#e0f2fe" fill-opacity="0.55" stroke="#475569" stroke-width="1.8"/>
+  <circle cx="110" cy="226" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="110" y="228.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">O<tspan dy="1.8" font-size="5.8">2</tspan></text>
+  <line x1="110" y1="236" x2="110" y2="272" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <circle cx="186" cy="230" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="186" y="232.7" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">CO<tspan dy="1.6" font-size="5.4">2</tspan></text>
+  <line x1="186" y1="276" x2="186" y2="242" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <rect x="56" y="250" width="184" height="4" fill="#bae6fd"/>
+  <rect x="56" y="254" width="184" height="5" fill="#fecdd3"/>
+  <rect x="56" y="259" width="184" height="4" fill="#ddd6fe"/>
+  <rect x="56" y="263" width="184" height="5" fill="#e2e8f0"/>
+  <rect x="56" y="250" width="184" height="18" fill="none" stroke="#475569" stroke-width="1.4"/>
+  <path d="M 255,248 Q 246,248 246,257 M 246,261 Q 246,270 255,270" fill="none" stroke="#475569" stroke-width="1.7"/>
+  <line x1="246" y1="257" x2="246" y2="261" stroke="#475569" stroke-width="1.7"/>
+  <text x="264" y="259" font-size="14" fill="#475569" text-anchor="start" font-weight="600">呼吸膜 0.2–0.6 μm</text>
+  <ellipse cx="148" cy="292" rx="92" ry="22" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <ellipse cx="100" cy="292" rx="16" ry="9" fill="#fecdd3" stroke="#991b1b" stroke-width="1.4"/>
+  <ellipse cx="196" cy="292" rx="16" ry="9" fill="#fecdd3" stroke="#991b1b" stroke-width="1.4"/>
+  <ellipse cx="148" cy="292" rx="17" ry="10" fill="#fca5a5" stroke="#991b1b" stroke-width="1.6"/>
+  <text x="148" y="296" font-size="8" fill="#991b1b" text-anchor="middle" font-weight="700">Hb</text>
+  <rect x="96.74104" y="323.5" width="102.51792000000002" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="148" y="335.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">总面积约 70 m<tspan dy="-3.4" font-size="7.2">2</tspan></text>
+  <text x="46" y="362" font-size="9.5" fill="#475569">溶解态 O<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 仅占血氧约 1.5%——血红蛋白以变构结合持续卸走溶解 O</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">，</tspan></text>
+  <text x="46" y="379" font-size="9.5" fill="#475569">使跨膜分压差「不封顶」</text>
+  <text x="46" y="412" font-size="9.5" fill="#475569">红细胞过毛细血管全程约 0.75 s，</text>
+  <text x="46" y="429" font-size="9.5" fill="#475569">扩散平衡在最初约 0.25 s 内完成——安全余量三倍</text>
+  <text x="46" y="462" font-size="9.5" fill="#475569">CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 以碳酸氢盐形式经碳酸酐酶与 AE1 氯转移打包运输，</tspan></text>
+  <text x="46" y="479" font-size="9.5" fill="#475569">物理扩散＋化学耦联</text>
+  <text x="46" y="500" font-size="9.5" fill="#475569">Fick 定律：</text>
+  <text x="46" y="517" font-size="9.5" fill="#475569">扩散速率 ∝ 面积×分压差×溶解度 ÷ 厚度——O<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">/CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 脂溶性足够高，</tspan></text>
+  <text x="46" y="534" font-size="9.5" fill="#475569">跨呼吸膜无需任何转运蛋白；纯扩散会因血液饱和而衰竭，</text>
+  <text x="46" y="551" font-size="9.5" fill="#475569">化学耦合续上接力</text>
+  <rect x="370" y="195" width="280" height="14" fill="#d1fae5" stroke="#059669" stroke-width="1.4"/>
+  <text x="380" y="206" font-size="8" fill="#065f46">上表皮</text>
+  <rect x="370" y="209" width="280" height="74" fill="#ecfccb" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="400" cy="228" r="14" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="440" cy="228" r="14" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="480" cy="228" r="14" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="520" cy="228" r="14" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="560" cy="228" r="14" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="600" cy="228" r="14" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="400" cy="262" r="16" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="445" cy="262" r="16" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="575" cy="262" r="16" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <circle cx="620" cy="262" r="16" fill="#d9f99d" stroke="#059669" stroke-width="1.4"/>
+  <text x="378" y="250" font-size="8.5" fill="#065f46">叶肉细胞</text>
+  <text x="515" y="258" font-size="8.5" fill="#475569" text-anchor="middle">气孔下腔</text>
+  <rect x="370" y="283" width="118" height="14" fill="#d1fae5" stroke="#059669" stroke-width="1.4"/>
+  <rect x="517" y="283" width="133" height="14" fill="#d1fae5" stroke="#059669" stroke-width="1.4"/>
+  <text x="380" y="294" font-size="8" fill="#065f46">下表皮</text>
+  <ellipse cx="490" cy="290" rx="9" ry="11" fill="#059669" fill-opacity="0.7" stroke="#065f46" stroke-width="1.2"/>
+  <ellipse cx="515" cy="290" rx="9" ry="11" fill="#059669" fill-opacity="0.7" stroke="#065f46" stroke-width="1.2"/>
+  <text x="502" y="272" font-size="8.5" fill="#065f46" text-anchor="middle" font-weight="700">气孔</text>
+  <circle cx="470" cy="326" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="470" y="328.7" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">CO<tspan dy="1.6" font-size="5.4">2</tspan></text>
+  <line x1="470" y1="318" x2="470" y2="278" stroke="#0f766e" stroke-width="1.8" marker-end="url(#arr-dna)"/>
+  <circle cx="540" cy="326" r="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="540" y="328.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">H<tspan dy="1.8" font-size="5.8">2</tspan><tspan dy="-1.8">O</tspan></text>
+  <line x1="540" y1="278" x2="540" y2="318" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="470" y="344" font-size="8.5" fill="#134e4a" text-anchor="middle">CO<tspan dy="1.9" font-size="6.1">2</tspan><tspan dy="-1.9"> 入</tspan></text>
+  <text x="540" y="344" font-size="8.5" fill="#075985" text-anchor="middle">H<tspan dy="1.9" font-size="6.1">2</tspan><tspan dy="-1.9">O 出</tspan></text>
+  <rect x="444.27404" y="363.5" width="141.45192000000003" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="515" y="375.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">蒸腾比 400–800（C<tspan dy="2.2" font-size="7.2">3</tspan><tspan dy="-2.2">）</tspan></text>
+  <text x="515" y="396" font-size="9.5" fill="#475569" text-anchor="middle">C<tspan dy="2.1" font-size="6.8">4</tspan><tspan dy="-2.1"> 约 250–350——每同化 1 mol CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 的水账单</tspan></text>
+  <text x="360" y="420" font-size="9.5" fill="#475569">蒸腾并非纯浪费：驱动木质部上行水流、为叶面降温、</text>
+  <text x="360" y="437" font-size="9.5" fill="#475569">把矿质随蒸腾流送上山；干热中午气孔常午间部分关闭</text>
+  <text x="360" y="470" font-size="9.5" fill="#475569">ABA、CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 与蓝光三路联合调门：蓝光「日出开工」、</tspan></text>
+  <text x="360" y="487" font-size="9.5" fill="#475569">CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">「碳足可歇」、ABA「缺水关闸」</tspan></text>
+  <text x="360" y="518" font-size="9.5" fill="#475569">气孔下腔水汽近饱和，叶内外水汽压差越大失水越快；</text>
+  <text x="360" y="535" font-size="9.5" fill="#475569">叶肉阻力已成光合主要瓶颈，叶肉导度是作物改良新靶标</text>
+  <rect x="710" y="132" width="660" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、气孔的 CO<tspan dy="4.2" font-size="13.7">2</tspan><tspan dy="-4.2"> 响应与地质「古气压计」</tspan></text>
+  <rect x="830.7864" y="186.075" width="98.4272" height="17.849999999999998" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="880" y="198.78" font-size="10.5" fill="#134e4a" text-anchor="middle">叶内 CO<tspan dy="2.3" font-size="7.6">2</tspan><tspan dy="-2.3"> 升高</tspan></text>
+  <rect x="810.6033" y="232.075" width="138.79340000000002" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="880" y="244.78" font-size="10.5" fill="#075985" text-anchor="middle">胞外碳酸酐酶 → HCO<tspan dy="2.3" font-size="7.6">3</tspan><tspan dy="-5.9" font-size="7.6">−</tspan></text>
+  <rect x="785.775" y="278.075" width="188.45000000000002" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="880" y="290.78" font-size="10.5" fill="#78350f" text-anchor="middle">HT1（Raf 样激酶）/ MPK12 级联</text>
+  <rect x="775.17" y="324.075" width="209.66000000000003" height="17.849999999999998" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="880" y="336.78" font-size="10.5" fill="#831843" text-anchor="middle">汇聚于 SLAC1（与 ABA 共用执行器）</text>
+  <rect x="832.5" y="370.075" width="95" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="880" y="382.78" font-size="10.5" fill="#991b1b" text-anchor="middle">气孔部分关闭</text>
+  <line x1="880" y1="207" x2="880" y2="229" stroke="#64748b" stroke-width="1.7" marker-end="url(#arr-mute)"/>
+  <line x1="880" y1="253" x2="880" y2="275" stroke="#64748b" stroke-width="1.7" marker-end="url(#arr-mute)"/>
+  <line x1="880" y1="299" x2="880" y2="321" stroke="#64748b" stroke-width="1.7" marker-end="url(#arr-mute)"/>
+  <line x1="880" y1="345" x2="880" y2="367" stroke="#64748b" stroke-width="1.7" marker-end="url(#arr-mute)"/>
+  <text x="726" y="412" font-size="9.5" fill="#475569">与 ABA 通路共用 SLAC1 执行器、只在传感段分岔——两条信号在此合流；</text>
+  <text x="726" y="428" font-size="9.5" fill="#475569">高 CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 使气孔部分关闭</tspan></text>
+  <rect x="1090" y="206" width="240" height="130" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1090" y1="336" x2="1090" y2="342" stroke="#475569" stroke-width="1.8"/>
+  <text x="1090" y="358" font-size="13" fill="#64748b" text-anchor="middle">低 CO<tspan dy="2.9" font-size="9.4">2</tspan></text>
+  <line x1="1330" y1="336" x2="1330" y2="342" stroke="#475569" stroke-width="1.8"/>
+  <text x="1330" y="358" font-size="13" fill="#64748b" text-anchor="middle">高 CO<tspan dy="2.9" font-size="9.4">2</tspan></text>
+  <line x1="1084" y1="325.6" x2="1090" y2="325.6" stroke="#475569" stroke-width="1.8"/>
+  <text x="1080" y="329.6" font-size="13" fill="#64748b" text-anchor="end">低</text>
+  <line x1="1084" y1="216.39999999999998" x2="1090" y2="216.39999999999998" stroke="#475569" stroke-width="1.8"/>
+  <text x="1080" y="220.39999999999998" font-size="13" fill="#64748b" text-anchor="end">高</text>
+  <text x="1210" y="194" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">气孔指数 vs 大气 CO<tspan dy="3.5" font-size="11.5">2</tspan></text>
+  <path d="M1097.2,221.6 C1108.0,225.5 1141.2,235.7 1162,245 C1182.8,254.3 1202.0,267.8 1222,277.5 C1242.0,287.3 1265.2,296.4 1282,303.5 C1298.8,310.6 1316.0,317.6 1322.8,320.4" fill="none" stroke="#0f766e" stroke-width="2.6"/>
+  <text x="1198.8" y="250.2" font-size="14" fill="#0f766e" font-weight="700">气孔指数</text>
+  <rect x="1174.43" y="395.925" width="71.14" height="16.15" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="1210" y="407.42" font-size="9.5" fill="#134e4a" text-anchor="middle" font-weight="700">古气压计</text>
+  <text x="1060" y="430" font-size="9" fill="#475569">化石叶片（银杏等）的气孔记录用于重建古大气 CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">：温室期高 CO</tspan><tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">、</tspan></text>
+  <text x="1060" y="445" font-size="9" fill="#475569">低气孔指数，冰期反之，多个地层序列互证</text>
+  <text x="1026" y="486" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">一个分子级膜事件，接上行星尺度的气候史</text>
+  <line x1="726" y1="520" x2="1326" y2="520" stroke="#475569" stroke-width="3" marker-end="url(#arr-ink)"/>
+  <circle cx="798" cy="520" r="6.5" fill="#dc2626"/>
+  <line x1="798" y1="511" x2="798" y2="490" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="798" y="470" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">白垩纪温室（高 CO<tspan dy="3.1" font-size="10.1">2</tspan><tspan dy="-3.1">）</tspan></text>
+  <circle cx="978" cy="520" r="6.5" fill="#dc2626"/>
+  <line x1="978" y1="529" x2="978" y2="550" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="978" y="570" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">新生代冰期（低 CO<tspan dy="3.1" font-size="10.1">2</tspan><tspan dy="-3.1">）</tspan></text>
+  <circle cx="1176" cy="520" r="6.5" fill="#dc2626"/>
+  <line x1="1176" y1="511" x2="1176" y2="490" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1176" y="470" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">工业革命 CO<tspan dy="3.1" font-size="10.1">2</tspan><tspan dy="-3.1"> 上升</tspan></text>
+  <circle cx="1296" cy="520" r="6.5" fill="#dc2626"/>
+  <line x1="1296" y1="529" x2="1296" y2="550" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="1296" y="570" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">现代气孔密度降低</text>
+  <text x="726" y="578" font-size="9.5" fill="#64748b">化石记录与活体观测在同一页上对齐</text>
+  <rect x="30" y="602" width="660" height="383" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="624.84" font-size="19" fill="#475569" font-weight="700">三、共同执行器（K⁺/阴离子通道）与趋同演化</text>
+  <text x="46" y="655" font-size="12" fill="#1e293b" font-weight="700">K<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">/阴离子通道：两界共同执行器</tspan></text>
+  <text x="46" y="684" font-size="10.5" fill="#475569" font-weight="600">动物：神经元 Kv 复极</text>
+  <g><circle cx="60" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="724" x2="60" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="724" x2="84" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="724" x2="108" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="724" x2="132" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="724" x2="156" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="724" x2="180" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="724" x2="204" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="724" x2="228" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="724" x2="252" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="724" x2="276" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="720" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="724" x2="300" y2="729" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="733" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="180" y="712" width="40" height="24" rx="5" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="200" y="728" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">Kv</text>
+  <circle cx="200" cy="672" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="200" y="674.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="200" y1="682" x2="200" y2="706" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="60" y="714" font-size="8.5" fill="#64748b">胞外</text>
+  <text x="60" y="750" font-size="8.5" fill="#64748b">胞内</text>
+  <rect x="129.7" y="761.5" width="120.60000000000002" height="17" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="190" y="773.6" font-size="10" fill="#134e4a" text-anchor="middle">同属 Shaker 超家族</text>
+  <text x="46" y="800" font-size="10.5" fill="#475569" font-weight="600">植物：GORK/SKOR 排 K<tspan dy="-3.6" font-size="7.6">+</tspan></text>
+  <g><circle cx="60" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="840" x2="60" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="840" x2="84" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="840" x2="108" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="840" x2="132" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="840" x2="156" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="840" x2="180" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="840" x2="204" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="840" x2="228" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="840" x2="252" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="840" x2="276" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="836" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="840" x2="300" y2="845" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="849" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="180" y="828" width="44" height="24" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="202" y="844" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">GORK</text>
+  <circle cx="202" cy="790" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="202" y="792.88" font-size="8" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="202" y1="800" x2="202" y2="822" stroke="#6d28d9" stroke-width="1.8" marker-end="url(#arr-pro)"/>
+  <text x="60" y="830" font-size="8.5" fill="#64748b">胞外</text>
+  <text x="60" y="866" font-size="8.5" fill="#64748b">胞内</text>
+  <text x="46" y="900" font-size="9.5" fill="#475569">动物神经元以 Kv 复极，保卫细胞以 GORK/SKOR 排钾，</text>
+  <text x="46" y="916" font-size="9.5" fill="#475569">同属 Shaker 超家族——微观执行器两界同源</text>
+  <text x="360" y="655" font-size="12" fill="#1e293b" font-weight="700">昆虫气管 vs 植物气孔：开放式气体交换</text>
+  <rect x="380" y="692" width="130" height="36" rx="18" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <text x="380" y="684" font-size="10" fill="#475569" font-weight="600">昆虫：气门→气管→微气管</text>
+  <circle cx="516" cy="710" r="6" fill="#1e293b"/>
+  <text x="528" y="690" font-size="8.5" fill="#475569">气门（括约肌）</text>
+  <line x1="522" y1="710" x2="585" y2="695" stroke="#0f766e" stroke-width="3.5"/>
+  <line x1="585" y1="695" x2="625" y2="688" stroke="#0f766e" stroke-width="2"/>
+  <line x1="585" y1="695" x2="620" y2="712" stroke="#0f766e" stroke-width="2"/>
+  <line x1="522" y1="710" x2="590" y2="725" stroke="#0f766e" stroke-width="3.5"/>
+  <line x1="590" y1="725" x2="625" y2="722" stroke="#0f766e" stroke-width="2"/>
+  <ellipse cx="650" cy="705" rx="17" ry="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="650" y="748" font-size="9" fill="#475569" text-anchor="middle">组织细胞</text>
+  <rect x="493.56" y="758.35" width="124.88" height="15.299999999999999" rx="7" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="556" y="769.24" font-size="9" fill="#134e4a" text-anchor="middle">微气管亚微米·液面接口</text>
+  <text x="360" y="790" font-size="9" fill="#475569">大体型昆虫以腹部气门的顺序开合做「通气泵」——体型越大，扩散越不够用</text>
+  <path d="M 465,852 A 30,30 0 1 0 465,918" fill="none" opacity="0.35" stroke="#059669" stroke-width="14"/>
+  <path d="M 465,852 A 30,30 0 1 0 465,918" fill="none" stroke="#059669" stroke-width="2"/>
+  <path d="M 485,852 A 30,30 0 1 1 485,918" fill="none" opacity="0.35" stroke="#059669" stroke-width="14"/>
+  <path d="M 485,852 A 30,30 0 1 1 485,918" fill="none" stroke="#059669" stroke-width="2"/>
+  <text x="360" y="845" font-size="10" fill="#475569" font-weight="600">植物：气孔控制叶内空间</text>
+  <text x="475" y="932" font-size="9" fill="#475569" text-anchor="middle">CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0"> ⇄ H</tspan><tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">O</tspan></text>
+  <text x="530" y="862" font-size="9" fill="#475569">昆虫以气门括约肌控制气管网的空气直送组织，</text>
+  <text x="530" y="877" font-size="9" fill="#475569">植物以气孔控制叶内空间的气体吞吐——都以可开关的孔在取气与失水之间权衡</text>
+  <text x="360" y="952" font-size="9.5" fill="#475569">同一权衡（取气 vs 失水）、同一解法（可开关的孔）、</text>
+  <text x="360" y="968" font-size="9.5" fill="#475569">不同谱系——趋同演化最干净的例证之一</text>
+  <rect x="710" y="602" width="660" height="383" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="624.84" font-size="19" fill="#475569" font-weight="700">四、AQP 的 CO<tspan dy="4.2" font-size="13.7">2</tspan><tspan dy="-4.2"> 争议与整流的电压经济学</tspan></text>
+  <text x="726" y="655" font-size="12" fill="#1e293b" font-weight="700">AQP 的 CO<tspan dy="2.6" font-size="8.6">2</tspan><tspan dy="-2.6"> 通道争议</tspan></text>
+  <g><circle cx="740" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="704" x2="740" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="704" x2="764" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="704" x2="788" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="704" x2="812" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="704" x2="836" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="704" x2="860" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="704" x2="884" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="704" x2="908" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="704" x2="932" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="704" x2="956" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="704" x2="980" y2="709" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="713" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="850" y="692" width="36" height="30" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="868" y="710" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">AQP</text>
+  <circle cx="800" cy="680" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="800" y="682.7" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">CO<tspan dy="1.6" font-size="5.4">2</tspan></text>
+  <line x1="812" y1="684" x2="846" y2="702" stroke="#0f766e" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-dna)"/>
+  <line x1="886" y1="702" x2="922" y2="684" stroke="#0f766e" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-dna)"/>
+  <circle cx="936" cy="680" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="936" y="682.7" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">CO<tspan dy="1.6" font-size="5.4">2</tspan></text>
+  <line x1="968" y1="692" x2="968" y2="722" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-mute)"/>
+  <text x="960" y="740" font-size="9" fill="#64748b">脂相扩散</text>
+  <text x="726" y="740" font-size="9" fill="#475569">AQP1（红细胞）/ PIP1;2（烟草）</text>
+  <rect x="726" y="758" width="290" height="96" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="740" y="780" font-size="11.5" fill="#065f46" font-weight="700">支持的证据</text>
+  <text x="740" y="802" font-size="9" fill="#065f46">AQP1 与 PIP1;2 在爪蟾卵与红细胞肿胀实验中显著加快 CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0"> 摄取；</tspan></text>
+  <text x="740" y="817" font-size="9" fill="#065f46">PIP1;2 影响气孔导度与叶内 CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0"> 传导</tspan></text>
+  <rect x="726" y="866" width="290" height="88" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="740" y="888" font-size="11.5" fill="#991b1b" font-weight="700">反对的证据</text>
+  <text x="740" y="910" font-size="9" fill="#991b1b">基因敲除表型温和；理论计算表明 CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0"> 的脂相扩散似已够用；</tspan></text>
+  <text x="740" y="925" font-size="9" fill="#991b1b">但水通道多功能化已是事实——甘油、</text>
+  <text x="740" y="940" font-size="9" fill="#991b1b">尿素乃至砷酸根都有专属亚型在运</text>
+  <text x="726" y="966" font-size="9.5" fill="#64748b">一个「通道新功能」的成立，需电生理、同位素通量、体内表型三线证据咬合——悬而未决的科学进行时标本</text>
+  <text x="1046" y="655" font-size="12" fill="#1e293b" font-weight="700">整流的电压经济学：逆势不开门</text>
+  <rect x="1070" y="680" width="120" height="100" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1076" y1="780" x2="1076" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="1076" y="802" font-size="13" fill="#64748b" text-anchor="middle">超极化</text>
+  <line x1="1184" y1="780" x2="1184" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="1184" y="802" font-size="13" fill="#64748b" text-anchor="middle">去极化</text>
+  <text x="1130" y="668" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">内向整流（Kir/KAT1）</text>
+  <path d="M1073.6,772 C1079.0,770.8 1096.6,771.7 1106,765 C1115.4,758.3 1122.0,738.2 1130,732 C1138.0,725.8 1144.6,729.2 1154,728 C1163.4,726.8 1181.0,725.5 1186.4,725" fill="none" stroke="#6d28d9" stroke-width="2.4"/>
+  <text x="1090" y="766" font-size="14" fill="#6d28d9" font-weight="700">I</text>
+  <rect x="1225" y="680" width="120" height="100" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="1231" y1="780" x2="1231" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="1231" y="802" font-size="13" fill="#64748b" text-anchor="middle">超极化</text>
+  <line x1="1339" y1="780" x2="1339" y2="786" stroke="#475569" stroke-width="1.8"/>
+  <text x="1339" y="802" font-size="13" fill="#64748b" text-anchor="middle">去极化</text>
+  <text x="1285" y="668" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="700">外向整流（Kv/GORK）</text>
+  <path d="M1228.6,735 C1234.0,734.5 1251.6,732.8 1261,732 C1270.4,731.2 1277.0,736.2 1285,730 C1293.0,723.8 1299.6,702.0 1309,695 C1318.4,688.0 1336.0,689.2 1341.4,688" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <text x="1336.2" y="705" font-size="14" fill="#0f766e" font-weight="700">I</text>
+  <text x="1046" y="850" font-size="9" fill="#475569">心肌 Kir2.1 把静息电位钳在 K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 平衡电位附近；</tspan></text>
+  <text x="1046" y="865" font-size="9" fill="#475569">KAT1 只在泵超极化后放 K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 入胞；SKOR 只在木质部装卸有利时放 K</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 出胞</tspan></text>
+  <text x="1046" y="894" font-size="9" fill="#475569">分子实现两套：Kir 靠胞内 Mg<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1"> 与多胺在去极化时堵孔，</tspan></text>
+  <text x="1046" y="909" font-size="9" fill="#475569">KAT1 靠电压依赖门控本身——殊途同归，把同一经济学写进两种生物</text>
+  <rect x="1101.6" y="939.5" width="196.8" height="17" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1200" y="951.6" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">逆势不开门：门控窗口匹配梯度方向</text>
+  <text x="1046" y="972" font-size="9.5" fill="#475569">动物的解＝内折表面＋循环运输；植物的解＝外摊表面＋蒸腾流兼任运输降温</text>
+</svg>

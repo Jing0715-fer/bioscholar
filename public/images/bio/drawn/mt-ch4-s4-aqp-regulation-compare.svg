@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">动植物 AQP 调控对照：调数量而非调单孔</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">单孔速率约3×10<tspan dy="-5.8" font-size="12.2">9</tspan><tspan dy="5.8">个水分子/秒是刻在结构里的常数——动物以AVP–cAMP–PKA链分钟级插入AQP2囊泡并辅以转录慢档，植物以ABA转录下调与去磷酸化、泛素化胞吞快速撤膜；</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">AQP2Ser256管膜上有多少、SoPIP2;1Ser283管孔开不开，同一枚磷酸旋钮拧不同螺母</text>
+  <rect x="30" y="132" width="1340" height="352" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、共同逻辑：调数量而非调单孔——两界调控链对照</text>
+  <rect x="50" y="154" width="1300" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="700" y="181" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">单孔速率 ≈3×10<tspan dy="-4.1" font-size="8.6">9</tspan><tspan dy="4.1"> 个水分子/(s·单体)——刻在结构里的出厂参数；两界殊途同归：调节「膜上通道数量」，旋钮只有囊泡贩运（插入/内吞）与转录（合成/停工），磷酸化兼任门控与贩运信号</tspan></text>
+  <text x="60" y="226" font-size="12" fill="#075985" font-weight="700">动物范式：激素指挥的囊泡插入——快在「插膜」</text>
+  <rect x="60" y="246" width="84" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="102" y="265" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">AVP</text>
+  <text x="102" y="283" font-size="8.5" fill="#475569" text-anchor="middle">加压素</text>
+  <line x1="146" y1="269" x2="154" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="156" y="246" width="84" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="198" y="265" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">V2 受体</text>
+  <text x="198" y="283" font-size="8.5" fill="#475569" text-anchor="middle">Gs 耦联</text>
+  <line x1="242" y1="269" x2="250" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="252" y="246" width="84" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="294" y="265" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">cAMP ↑</text>
+  <text x="294" y="283" font-size="8.5" fill="#475569" text-anchor="middle">第二信使</text>
+  <line x1="338" y1="269" x2="346" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="348" y="246" width="84" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="390" y="265" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">PKA</text>
+  <text x="390" y="283" font-size="8.5" fill="#475569" text-anchor="middle">激酶级联</text>
+  <line x1="434" y1="269" x2="442" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="444" y="246" width="84" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="486" y="265" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">pSer256</text>
+  <text x="486" y="283" font-size="8.5" fill="#475569" text-anchor="middle">AQP2 获证</text>
+  <line x1="530" y1="269" x2="538" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="540" y="246" width="84" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="582" y="265" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">插入顶膜</text>
+  <text x="582" y="283" font-size="8.5" fill="#475569" text-anchor="middle">分钟级</text>
+  <text x="60" y="320" font-size="10" fill="#475569">撤除信号 → 内吞回收，水导回落——插入/内吞动态平衡决定膜上数量</text>
+  <text x="60" y="342" font-size="10" fill="#475569">慢档：持续 AVP 于数小时–数天上调 AQP2 转录（脱水、妊娠等慢适应）</text>
+  <text x="60" y="364" font-size="10" fill="#475569">出口恒定：基侧 AQP3/AQP4 常驻——调节面压缩到顶膜一维，控制精度极高</text>
+  <text x="60" y="386" font-size="10" fill="#475569">药理入口：V2 拮抗剂托伐普坦令集合管「拒绝插膜」，卸载水潴留</text>
+  <text x="710" y="226" font-size="12" fill="#065f46" font-weight="700">植物范式：下调与胞吞为主的防御性水导——快在「撤膜」</text>
+  <rect x="710" y="246" width="84" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="752" y="265" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">干旱/ABA</text>
+  <text x="752" y="283" font-size="8.5" fill="#475569" text-anchor="middle">胁迫信号</text>
+  <line x1="796" y1="269" x2="804" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="806" y="246" width="84" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="848" y="265" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">PIP 转录↓</text>
+  <text x="848" y="283" font-size="8.5" fill="#475569" text-anchor="middle">mRNA 下调</text>
+  <line x1="892" y1="269" x2="900" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="902" y="246" width="84" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="944" y="265" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">去磷酸化</text>
+  <text x="944" y="283" font-size="8.5" fill="#475569" text-anchor="middle">孔口关闭</text>
+  <line x1="988" y1="269" x2="996" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="998" y="246" width="84" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1040" y="265" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">泛素化</text>
+  <text x="1040" y="283" font-size="8.5" fill="#475569" text-anchor="middle">打上标签</text>
+  <line x1="1084" y1="269" x2="1092" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1094" y="246" width="84" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1136" y="265" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">网格蛋白胞吞</text>
+  <text x="1136" y="283" font-size="8.5" fill="#475569" text-anchor="middle">撤下质膜</text>
+  <line x1="1180" y1="269" x2="1188" y2="269" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <rect x="1190" y="246" width="84" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="1232" y="265" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">液泡降解</text>
+  <text x="1232" y="283" font-size="8.5" fill="#475569" text-anchor="middle">水导压低</text>
+  <text x="710" y="320" font-size="10" fill="#475569">土壤水势低于细胞水势时，高水导＝被动失水——植物主力调节是「减法」</text>
+  <text x="710" y="342" font-size="10" fill="#475569">加法场合：伸长细胞、展开叶片与黎明前保卫细胞上调水路备水</text>
+  <text x="710" y="364" font-size="10" fill="#475569">ABA 双端收紧：压低根叶 PIP 转录＋关闭气孔——进水管与出水口同拧</text>
+  <text x="710" y="386" font-size="10" fill="#475569">旱地保水需减通道、肾保水需加通道——方向相反、逻辑同构</text>
+  <rect x="60" y="408" width="390" height="56" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="75" y="430" font-size="12" fill="#4c1d95" font-weight="700">AQP2 · Ser256</text>
+  <text x="75" y="450" font-size="9.5" fill="#475569">磷酸化 → 管「膜上有多少」（贩运信号）</text>
+  <rect x="890" y="408" width="390" height="56" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="905" y="430" font-size="12" fill="#065f46" font-weight="700">SoPIP2;1 · Ser283</text>
+  <text x="905" y="450" font-size="9.5" fill="#475569">磷酸化 → 管「孔开不开」（门控开关）</text>
+  <line x1="470" y1="436" x2="870" y2="436" stroke="#64748b" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arr-mute)" marker-start="url(#arr-mute)"/>
+  <text x="670" y="424" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="700">同一枚磷酸旋钮</text>
+  <text x="670" y="456" font-size="10.5" fill="#64748b" text-anchor="middle">拧的是不同的螺母</text>
+  <rect x="30" y="500" width="810" height="485" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="522.84" font-size="19" fill="#475569" font-weight="700">二、底物谱大表：人 13 对拟南芥 35</text>
+  <text x="46" y="544" font-size="10.5" fill="#475569">单孔速率两界同为约 3×10<tspan dy="-3.6" font-size="7.6">9</tspan><tspan dy="3.6"> 个水分子/(s·单体)（结构常数）——差异全在谱系、区室与调控</tspan></text>
+  <rect x="42" y="558" width="148" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="585.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">谱系</text>
+  <rect x="190" y="558" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="585.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">成员</text>
+  <rect x="310" y="558" width="152" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="585.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">代表底物</text>
+  <rect x="462" y="558" width="152" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="585.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">组织/区室</text>
+  <rect x="614" y="558" width="208" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="585.5" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">主要调控</text>
+  <rect x="42" y="602" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="624.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">人·经典水通道</text>
+  <rect x="190" y="602" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="624.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">AQP0/1/2/4/5/6/8</text>
+  <rect x="310" y="602" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="624.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">水（个别兼 H<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">O</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">）</tspan></text>
+  <rect x="462" y="602" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="624.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">肾、脑、晶状体、腺体</text>
+  <rect x="614" y="602" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="624.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">AQP2 囊泡插入；余多组成型</text>
+  <rect x="42" y="636" width="780" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="42" y="636" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="658.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">人·水甘油通道</text>
+  <rect x="190" y="636" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="658.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">AQP3/7/9/10</text>
+  <rect x="310" y="636" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="658.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">水、甘油、尿素</text>
+  <rect x="462" y="636" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="658.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">皮肤、脂肪、肝、小肠</text>
+  <rect x="614" y="636" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="658.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">转录与代谢信号</text>
+  <rect x="42" y="670" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="692.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">人·非典型</text>
+  <rect x="190" y="670" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="692.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">AQP11/12</text>
+  <rect x="310" y="670" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="692.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">水（NPA 偏离）</text>
+  <rect x="462" y="670" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="692.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">内质网、胰腺</text>
+  <rect x="614" y="670" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="692.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">组成型为主</text>
+  <rect x="42" y="704" width="780" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="42" y="704" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="726.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">拟南芥·PIP</text>
+  <rect x="190" y="704" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="726.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">13 个</text>
+  <rect x="310" y="704" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="726.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">水（CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 通透有争议）</tspan></text>
+  <rect x="462" y="704" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="726.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">全株质膜</text>
+  <rect x="614" y="704" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="726.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">磷酸化、胞吞、转录下调</text>
+  <rect x="42" y="738" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="760.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">拟南芥·TIP</text>
+  <rect x="190" y="738" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="760.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">10 个</text>
+  <rect x="310" y="738" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="760.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">水；TIP2;1 兼 NH<tspan dy="2.1" font-size="6.8">3</tspan></text>
+  <rect x="462" y="738" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="760.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">液泡膜</text>
+  <rect x="614" y="738" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="760.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">磷酸化</text>
+  <rect x="42" y="772" width="780" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="42" y="772" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="794.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">拟南芥·NIP</text>
+  <rect x="190" y="772" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="794.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">9 个</text>
+  <rect x="310" y="772" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="794.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">硼酸、硅酸、甘油</text>
+  <rect x="462" y="772" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="794.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">根与幼叶等</text>
+  <rect x="614" y="772" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="794.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">缺素转录诱导</text>
+  <rect x="42" y="806" width="148" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="116" y="828.5" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">拟南芥·SIP</text>
+  <rect x="190" y="806" width="120" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="250" y="828.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">3 个</text>
+  <rect x="310" y="806" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="386" y="828.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">水（低导度）</text>
+  <rect x="462" y="806" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="538" y="828.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">内质网</text>
+  <rect x="614" y="806" width="208" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="718" y="828.5" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">组成型</text>
+  <text x="46" y="862" font-size="10" fill="#475569">三条断层线：① 动物按器官切分、植物按膜区室切分；② 调节重心「插膜」对「撤膜」；③ 水甘油分支两套征募——动物征入脂代谢甘油流（AQP7 出脂肪、AQP9 入肝），</text>
+  <text x="46" y="880" font-size="10" fill="#475569">植物征入类金属营养流（硼入根、硅入茎叶）</text>
+  <text x="46" y="908" font-size="10" fill="#475569">核心水通道（AQP1、AQP2 与 PIP、TIP）严守纯水本行——底物谱宽窄是家族分化交给生态位的答卷</text>
+  <text x="46" y="934" font-size="10" fill="#475569">大肠杆菌 AqpZ 与 GlpF 早于动植物分家已分化水/甘油两支——两界亚科皆继承改写细菌模块</text>
+  <text x="46" y="960" font-size="10" fill="#1e293b" font-weight="600">35 对 13 的编制差异无关先进，只关乎生存方式的形状</text>
+  <rect x="860" y="500" width="510" height="485" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="876" y="522.84" font-size="19" fill="#475569" font-weight="700">三、应用面板：从田间到临床</text>
+  <rect x="872" y="538" width="486" height="100" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="886" y="560" font-size="11.5" fill="#065f46" font-weight="700">农学 · 水分利用效率（WUE）</text>
+  <text x="886" y="580" font-size="9.5" fill="#475569">转基因过表达 PIP（烟草、拟南芥）：水分充足时蒸腾与生长同步提升，干旱下却因「水管过大」失水更快；</text>
+  <text x="886" y="598" font-size="9.5" fill="#475569">反向下调可节水却抑生长——适度水导、按需切换才是杠杆，育种界转而把 PIP 自然等位变异与气孔行为、</text>
+  <text x="886" y="616" font-size="9.5" fill="#475569">根系构型打包评估</text>
+  <rect x="872" y="648" width="486" height="88" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="886" y="670" font-size="11.5" fill="#831843" font-weight="700">医学 · 肿瘤迁移</text>
+  <text x="886" y="690" font-size="9.5" fill="#475569">多种肿瘤高表达 AQP3/AQP5——迁移前沿的水快速进出被认为促进伪足伸展与侵袭；</text>
+  <text x="886" y="708" font-size="9.5" fill="#475569">水通道因此成为肿瘤迁移能力与预后的候选标志物</text>
+  <rect x="872" y="746" width="486" height="100" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="886" y="768" font-size="11.5" fill="#075985" font-weight="700">前沿 · CO<tspan dy="2.5" font-size="8.3">2</tspan><tspan dy="-2.5"> 通透争议</tspan></text>
+  <text x="886" y="788" font-size="9.5" fill="#475569">AQP1 与烟草 PIP1;2 曾被报道对 CO<tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 具通透性、可能参与 CO</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1"> 转运，</tspan></text>
+  <text x="886" y="811" font-size="9.5" fill="#475569">但电生理与同位素证据长期互相矛盾、</text>
+  <text x="886" y="834" font-size="9.5" fill="#475569">至今未有定论——「水通道是否兼职气体通道」是家族边界上最活跃的问号</text>
+  <rect x="872" y="856" width="486" height="88" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="886" y="878" font-size="11.5" fill="#92400e" font-weight="700">工具 · 成药性难题</text>
+  <text x="886" y="898" font-size="9.5" fill="#475569">孔道口袋小而深、胞外可及面窄——汞之外的特异性抑制剂久攻不下，靶向 AQP 的药物至今寥寥；</text>
+  <text x="886" y="916" font-size="9.5" fill="#475569">前沿的另一半是工具的匮乏</text>
+  <text x="872" y="968" font-size="9.5" fill="#64748b">一个已成定论的家族，边界处仍有活跃的前沿</text>
+</svg>

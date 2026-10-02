@@ -81,6 +81,7 @@ const SUBJECT_NAMES: Record<SubjectId, string> = {
   'x-ray-crystallography': 'X射线晶体学',
   'electron-microscopy': '电子显微学',
   physiology: '生理学',
+  'membrane-transport': '膜蛋白与物质转运',
 }
 
 const TYPE_NAMES: Record<string, string> = {

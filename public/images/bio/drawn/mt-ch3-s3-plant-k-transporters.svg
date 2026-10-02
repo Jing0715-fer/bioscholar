@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">植物钾转运体：HAK、KEA 与 CHX</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">土壤溶液K<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">仅0.1–1mM而植物细胞需100–200mM——百倍到千倍的富集鸿沟由双层吸收系统跨越：毫摩尔级AKT1通道管日常，微摩尔级Km的HAK5在低钾时经转录诱导上岗；</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">内膜上KEA（6成员）与CHX再把钾搬进类囊体与高尔基，管好区室K<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">与pH稳态</tspan></text>
+  <rect x="30" y="132" width="1340" height="285" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、浓度鸿沟：土壤 0.1–1 mM 对细胞 100–200 mM</text>
+  <text x="60" y="176" font-size="12" fill="#92400e" font-weight="700">浓度阶梯（对数）：须逆一百到一千倍富集</text>
+  <rect x="70" y="205" width="100" height="22" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="120" y="220" font-size="10" fill="#92400e" text-anchor="middle" font-weight="600">0.1–1</text>
+  <text x="120" y="196" font-size="10.5" fill="#92400e" text-anchor="middle" font-weight="600">土壤溶液 K<tspan dy="-3.6" font-size="7.6">+</tspan></text>
+  <rect x="370" y="305" width="30" height="22" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="430" y="296" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="600">植物细胞 100–200 mM</text>
+  <line x1="175" y1="216" x2="365" y2="310" stroke="#0f766e" stroke-width="2.5" marker-end="url(#arr-dna)"/>
+  <text x="330" y="245" font-size="12" fill="#134e4a" font-weight="700">100–1000 倍富集</text>
+  <line x1="55" y1="350" x2="505" y2="350" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="70" y1="350" x2="70" y2="357" stroke="#475569" stroke-width="1.6"/>
+  <text x="70" y="374" font-size="10" fill="#64748b" text-anchor="middle">0.1</text>
+  <line x1="170" y1="350" x2="170" y2="357" stroke="#475569" stroke-width="1.6"/>
+  <text x="170" y="374" font-size="10" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="270" y1="350" x2="270" y2="357" stroke="#475569" stroke-width="1.6"/>
+  <text x="270" y="374" font-size="10" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="370" y1="350" x2="370" y2="357" stroke="#475569" stroke-width="1.6"/>
+  <text x="370" y="374" font-size="10" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="470" y1="350" x2="470" y2="357" stroke="#475569" stroke-width="1.6"/>
+  <text x="470" y="374" font-size="10" fill="#64748b" text-anchor="middle">1000</text>
+  <text x="280" y="396" font-size="10.5" fill="#475569" text-anchor="middle">K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 浓度（mM，对数刻度）</tspan></text>
+  <text x="60" y="414" font-size="9.5" fill="#64748b">土壤有效钾跨约四个数量级，雨水淋洗与季节波动使其持续摆动</text>
+  <text x="565" y="176" font-size="12" fill="#4c1d95" font-weight="700">HAK/KUP/KT 家族：拟南芥 13 成员（TRK-HAK 超家族）</text>
+  <g><circle cx="580" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="580" y1="262" x2="580" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="580" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="604" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="604" y1="262" x2="604" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="604" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="628" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="628" y1="262" x2="628" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="628" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="652" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="652" y1="262" x2="652" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="652" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="676" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="676" y1="262" x2="676" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="676" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="700" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="700" y1="262" x2="700" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="700" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="724" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="724" y1="262" x2="724" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="724" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="748" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="748" y1="262" x2="748" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="748" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="772" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="772" y1="262" x2="772" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="772" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="796" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="796" y1="262" x2="796" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="796" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="820" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="820" y1="262" x2="820" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="820" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="844" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="844" y1="262" x2="844" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="844" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="868" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="868" y1="262" x2="868" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="868" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="892" cy="258" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="892" y1="262" x2="892" y2="267" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="892" cy="271" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="690" y="236" width="64" height="58" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="620" cy="226" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="620" y="228.88" font-size="8" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <circle cx="655" cy="226" r="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="655" y="228.88" font-size="8" fill="#78350f" text-anchor="middle" font-weight="700">H<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="628" y1="236" x2="692" y2="250" stroke="#059669" stroke-width="1.5" marker-end="url(#arr-ok)"/>
+  <line x1="663" y1="236" x2="700" y2="258" stroke="#b45309" stroke-width="1.5" marker-end="url(#arr-rna)"/>
+  <circle cx="790" cy="285" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="790" y="287.88" font-size="8" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <circle cx="825" cy="285" r="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="825" y="287.88" font-size="8" fill="#78350f" text-anchor="middle" font-weight="700">H<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="738" y1="272" x2="778" y2="282" stroke="#059669" stroke-width="1.5" marker-end="url(#arr-ok)"/>
+  <line x1="742" y1="280" x2="812" y2="284" stroke="#b45309" stroke-width="1.5" marker-end="url(#arr-rna)"/>
+  <text x="580" y="330" font-size="10.5" fill="#4c1d95" font-weight="600">HAK5：K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/H</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 同向转运（借质子梯度驱动）</tspan></text>
+  <text x="950" y="210" font-size="10.5" fill="#475569">· Km 低至 μM 量级——高亲和吸收器</text>
+  <text x="950" y="228" font-size="10.5" fill="#475569">· 低钾数小时内转录诱导数十倍（快上岗）</text>
+  <text x="950" y="246" font-size="10.5" fill="#475569">· 速率随质子梯度增减——符合 K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/H</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 同向转运</tspan></text>
+  <text x="950" y="264" font-size="10.5" fill="#475569">· trh1/kup4 突变体根毛失去极性生长（尖端 K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 循环）</tspan></text>
+  <text x="950" y="282" font-size="10.5" fill="#475569">· 动物基因组无 HAK 对应物——食物钾以 mM 计</text>
+  <text x="565" y="355" font-size="10" fill="#475569">家族三套名字指向一家：HAK5 因真菌高亲和转运体 HAK 得名，KUP 与 KT 为同批基因别名——检索文献须心中有数；其余 KUP 成员在韧皮部与花药表达（装载·花粉发育）</text>
+  <rect x="30" y="429" width="1340" height="262" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="451.84" font-size="19" fill="#475569" font-weight="700">二、低钾双重吸收机制：两层开关的接力</text>
+  <rect x="90" y="470" width="540" height="170" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <line x1="90" y1="597.5" x2="630" y2="597.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="225" y1="640" x2="225" y2="470" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="555" x2="630" y2="555" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="360" y1="640" x2="360" y2="470" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="512.5" x2="630" y2="512.5" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="495" y1="640" x2="495" y2="470" stroke="#94a3b8" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.55"/>
+  <line x1="90" y1="640" x2="90" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="90" y="662" font-size="13" fill="#64748b" text-anchor="middle">0.1</text>
+  <line x1="225" y1="640" x2="225" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="225" y="662" font-size="13" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="360" y1="640" x2="360" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="360" y="662" font-size="13" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="495" y1="640" x2="495" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="495" y="662" font-size="13" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="630" y1="640" x2="630" y2="646" stroke="#475569" stroke-width="1.8"/>
+  <text x="630" y="662" font-size="13" fill="#64748b" text-anchor="middle">1000</text>
+  <line x1="84" y1="555" x2="90" y2="555" stroke="#475569" stroke-width="1.8"/>
+  <text x="80" y="559" font-size="13" fill="#64748b" text-anchor="end">½ Vmax</text>
+  <text x="360" y="684" font-size="15" fill="#475569" text-anchor="middle" font-weight="600">胞外 K<tspan dy="-5.1" font-size="10.8">+</tspan><tspan dy="5.1"> 浓度（μM，对数）· 纵轴为吸收速率</tspan></text>
+  <path d="M90,633.2 C95.4,625.8 110.7,603.5 122.4,589 C134.1,574.5 145.8,558.4 160.2,546.5 C174.6,534.6 190.8,525.8 208.8,517.6 C226.8,509.4 243.0,502.9 268.20000000000005,497.20000000000005 C293.4,491.5 322.2,487.3 360,483.6 C397.8,479.9 450.0,477.4 495,475.1 C540.0,472.8 607.5,470.9 630,470" fill="none" stroke="#be185d" stroke-width="2.6"/>
+  <path d="M90,636.6 C112.5,636.0 184.5,636.0 225,633.2 C265.5,630.4 301.5,627.0 333,619.6 C364.5,612.2 389.7,601.2 414,589 C438.3,576.8 459.0,560.1 478.8,546.5 C498.6,532.9 514.8,517.3 532.8,507.4 C550.8,497.5 570.6,492.1 586.8,487 C603.0,481.9 622.8,478.5 630,476.8" fill="none" stroke="#0369a1" stroke-width="2.6"/>
+  <text x="300" y="505" font-size="10.5" fill="#831843" font-weight="700">HAK5（高亲和）</text>
+  <text x="505" y="590" font-size="10.5" fill="#075985" font-weight="700">AKT1（低亲和）</text>
+  <text x="100" y="480" font-size="10" fill="#64748b">双层吸收合力覆盖土壤钾全部波动区间（跨约四个数量级）</text>
+  <text x="720" y="470" font-size="11" fill="#475569" font-weight="600">两层开关接力：转录（慢档）＋翻译后（快档）</text>
+  <rect x="720" y="490" width="185" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812.5" y="517.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">系统</text>
+  <rect x="905" y="490" width="120" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="517.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">亲和力量级</text>
+  <rect x="1025" y="490" width="325" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1187.5" y="517.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">调控层次（快慢档）</text>
+  <rect x="720" y="534" width="185" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812.5" y="561.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">HAK5 高亲和转运体</text>
+  <rect x="905" y="534" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="561.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">Km μM 级</text>
+  <rect x="1025" y="534" width="325" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1187.5" y="561.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">低钾转录诱导——换装备（以小时计）</text>
+  <rect x="720" y="578" width="630" height="44" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="720" y="578" width="185" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812.5" y="605.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">AKT1 低亲和通道</text>
+  <rect x="905" y="578" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="605.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">mM 级</text>
+  <rect x="1025" y="578" width="325" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1187.5" y="605.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">CBL-CIPK23 磷酸化——拨开关（数分钟）</text>
+  <rect x="720" y="622" width="185" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="812.5" y="649.5" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">KEA/CHX 内膜交换体</text>
+  <rect x="905" y="622" width="120" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="965" y="649.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">依区室而异</text>
+  <rect x="1025" y="622" width="325" height="44" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1187.5" y="649.5" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">组成型＋胁迫响应（区室 K<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1"> 与 pH）</tspan></text>
+  <text x="720" y="676" font-size="10" fill="#64748b">时间上互补：磷酸化级联数分钟起效、转录诱导以小时计——恰如动物肾急性泌钾调节与醛固酮驱动的慢性通道重塑</text>
+  <rect x="30" y="703" width="1340" height="282" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="725.84" font-size="19" fill="#475569" font-weight="700">三、内膜岗位（KEA/CHX）与动物对照预告（CCC 家族）</text>
+  <text x="48" y="745" font-size="12" fill="#134e4a" font-weight="700">KEA 6 成员＋CHX：内膜上的钾搬家队</text>
+  <ellipse cx="170" cy="810" rx="75" ry="40" fill="#ecfccb" stroke="#059669" stroke-width="2.4"/>
+  <rect x="128.75" y="797.6" width="14.423076923076923" height="24.8" rx="3" fill="#059669" fill-opacity="0.5" stroke="#059669" stroke-width="1.3"/>
+  <rect x="157.59615384615384" y="797.6" width="14.423076923076923" height="24.8" rx="3" fill="#059669" fill-opacity="0.5" stroke="#059669" stroke-width="1.3"/>
+  <rect x="186.44230769230768" y="797.6" width="14.423076923076923" height="24.8" rx="3" fill="#059669" fill-opacity="0.5" stroke="#059669" stroke-width="1.3"/>
+  <rect x="215.28846153846155" y="797.6" width="14.423076923076923" height="24.8" rx="3" fill="#059669" fill-opacity="0.5" stroke="#059669" stroke-width="1.3"/>
+  <rect x="244.1346153846154" y="797.6" width="14.423076923076923" height="24.8" rx="3" fill="#059669" fill-opacity="0.5" stroke="#059669" stroke-width="1.3"/>
+  <text x="170" y="870" font-size="13.5" fill="#059669" text-anchor="middle" font-weight="700">叶绿体（类囊体）</text>
+  <path d="M 376.9,775 q 11.549999999999999,-14 23.099999999999998,0 q 11.549999999999999,14 23.099999999999998,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 368.925,788 q 15.537499999999998,14 31.074999999999996,0 q 15.537499999999998,-14 31.074999999999996,0" fill="#ffffff" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 360.95,801 q 19.525,-14 39.05,0 q 19.525,14 39.05,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 352.975,814 q 23.5125,14 47.025,0 q 23.5125,-14 47.025,0" fill="#ffffff" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 345,827 q 27.5,-14 55,0 q 27.5,14 55,0" fill="#e0f2fe" fill-opacity="0.9" stroke="#0369a1" stroke-width="2"/>
+  <text x="400" y="862" font-size="13.5" fill="#0369a1" text-anchor="middle" font-weight="700">高尔基体</text>
+  <circle cx="600" cy="815" r="60" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.5"/>
+  <text x="600" y="812" font-size="14" fill="#075985" text-anchor="middle" font-weight="700">液泡</text>
+  <text x="600" y="834" font-size="10.5" fill="#075985" text-anchor="middle">（九成的钾）</text>
+  <circle cx="475" cy="795" r="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <circle cx="500" cy="812" r="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <rect x="452.055" y="836.075" width="75.88999999999999" height="17.849999999999998" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="490" y="848.78" font-size="10.5" fill="#991b1b" text-anchor="middle">内体 CHX</text>
+  <rect x="108.42999999999999" y="886.075" width="123.14000000000001" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="170" y="898.78" font-size="10.5" fill="#065f46" text-anchor="middle">类囊体膜 KEA1/2/3</text>
+  <rect x="343.68" y="886.075" width="112.64" height="17.849999999999998" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="400" y="898.78" font-size="10.5" fill="#075985" text-anchor="middle">高尔基 KEA4/5/6</text>
+  <rect x="545.36" y="891.075" width="109.28" height="17.849999999999998" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="600" y="903.78" font-size="10.5" fill="#4c1d95" text-anchor="middle">液泡膜 NHX·TPK</text>
+  <text x="48" y="935" font-size="10" fill="#475569">KEA 借 H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 梯度搬 K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">——类囊体腔的 pH 稳压器（调节 ΔpH/Δψ 分配；KEA3 影响光暗转换的 pH 回落速度）；</tspan></text>
+  <text x="48" y="953" font-size="10" fill="#475569">高尔基 KEA4/5/6 缺陷致花粉与细胞壁分泌异常</text>
+  <text x="48" y="975" font-size="10" fill="#475569">CHX 几乎全部驻留内膜（内体/高尔基 pH·极性生长）；液泡另配 NHX 型 Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">(K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">)/H</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 反向转运体管库存</tspan></text>
+  <text x="725" y="745" font-size="12" fill="#991b1b" font-weight="700">动物对照预告：CCC 家族的氯耦联方案（SLC12）</text>
+  <g><circle cx="740" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="740" y1="804" x2="740" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="740" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="764" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="764" y1="804" x2="764" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="764" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="788" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="788" y1="804" x2="788" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="788" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="812" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="812" y1="804" x2="812" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="812" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="836" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="836" y1="804" x2="836" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="836" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="860" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="860" y1="804" x2="860" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="860" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="884" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="884" y1="804" x2="884" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="884" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="908" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="908" y1="804" x2="908" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="908" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="932" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="932" y1="804" x2="932" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="932" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="956" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="956" y1="804" x2="956" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="956" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="980" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="980" y1="804" x2="980" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="980" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1004" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1004" y1="804" x2="1004" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1004" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="840" y="778" width="56" height="56" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="868" y="806" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">NKCC2</text>
+  <circle cx="780" cy="762" r="7.5" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="780" y="764.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="812" cy="762" r="7.5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="812" y="764.7" font-size="7.5" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="844" cy="762" r="7.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="844" y="764.7" font-size="7.5" fill="#78350f" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.6" font-size="5.4">-</tspan></text>
+  <circle cx="876" cy="762" r="7.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="876" y="764.7" font-size="7.5" fill="#78350f" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.6" font-size="5.4">-</tspan></text>
+  <line x1="786" y1="772" x2="843" y2="786" stroke="#475569" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="818" y1="772" x2="853" y2="786" stroke="#475569" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="850" y1="772" x2="863" y2="786" stroke="#475569" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="882" y1="772" x2="873" y2="786" stroke="#475569" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <text x="868" y="850" font-size="10" fill="#991b1b" text-anchor="middle">NKCC2：1Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">:1K</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">:2Cl</tspan><tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">（呋塞米靶）</tspan></text>
+  <g><circle cx="1060" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1060" y1="804" x2="1060" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1060" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1084" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1084" y1="804" x2="1084" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1084" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1108" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1108" y1="804" x2="1108" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1108" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1132" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1132" y1="804" x2="1132" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1132" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1156" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1156" y1="804" x2="1156" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1156" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1180" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1180" y1="804" x2="1180" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1180" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1204" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1204" y1="804" x2="1204" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1204" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1228" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1228" y1="804" x2="1228" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1228" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1252" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1252" y1="804" x2="1252" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1252" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1276" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1276" y1="804" x2="1276" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1276" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1300" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1300" y1="804" x2="1300" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1300" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1324" cy="800" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1324" y1="804" x2="1324" y2="809" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1324" cy="813" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1150" y="778" width="56" height="56" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1178" y="806" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">KCC2</text>
+  <circle cx="1120" cy="845" r="7.5" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1120" y="847.7" font-size="7.5" fill="#065f46" text-anchor="middle" font-weight="700">K<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="1148" cy="845" r="7.5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1148" y="847.7" font-size="7.5" fill="#78350f" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.6" font-size="5.4">-</tspan></text>
+  <line x1="1122" y1="836" x2="1160" y2="792" stroke="#475569" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="1150" y1="836" x2="1170" y2="792" stroke="#475569" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <text x="1178" y="762" font-size="10" fill="#991b1b" text-anchor="middle">KCC2：K<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">+Cl</tspan><tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4"> 外向（神经元压低 Cl</tspan><tspan dy="-3.4" font-size="7.2">-</tspan><tspan dy="3.4">）</tspan></text>
+  <rect x="725" y="890" width="630" height="70" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.3"/>
+  <text x="740" y="912" font-size="10.5" fill="#475569" font-weight="600">CCC 语法：借 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/Cl</tspan><tspan dy="-3.6" font-size="7.6">-</tspan><tspan dy="3.6"> 梯度，把 K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 的搬运与氯捆绑</tspan></text>
+  <text x="740" y="934" font-size="10.5" fill="#134e4a" font-weight="600">HAK 语法：借 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 梯度，把 K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 的搬运与质子捆绑——两套语法，第 8 章并排放置</tspan></text>
+  <text x="740" y="956" font-size="9.5" fill="#64748b">KCC2 表达异常与癫痫、神经痛相关；NKCC2 障碍是 Bartter 综合征的另一起点</text>
+</svg>

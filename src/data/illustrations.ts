@@ -40,6 +40,18 @@ import { drawPhP5 } from './draw-ph-p5'
 import { drawPhP6 } from './draw-ph-p6'
 import { drawPhP7 } from './draw-ph-p7'
 import { drawPhP8 } from './draw-ph-p8'
+import { drawMtP1 } from './draw-mt-p1'
+import { drawMtP2 } from './draw-mt-p2'
+import { drawMtP3 } from './draw-mt-p3'
+import { drawMtP4 } from './draw-mt-p4'
+import { drawMtP5 } from './draw-mt-p5'
+import { drawMtP6 } from './draw-mt-p6'
+import { drawMtP7 } from './draw-mt-p7'
+import { drawMtP8 } from './draw-mt-p8'
+import { drawMtP9 } from './draw-mt-p9'
+import { drawMtP10 } from './draw-mt-p10'
+import { drawMtP11 } from './draw-mt-p11'
+import { drawMtP12 } from './draw-mt-p12'
 
 /** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
@@ -56,6 +68,7 @@ export const subjectCovers: Record<SubjectId, string> = {
   'x-ray-crystallography': '/images/bio/covers/cover-x-ray-crystallography.svg',
   'electron-microscopy': '/images/bio/covers/cover-electron-microscopy.svg',
   physiology: '/images/bio/covers/cover-physiology.svg',
+  'membrane-transport': '/images/bio/covers/cover-membrane-transport.svg',
 }
 
 /** 仪表盘主视觉横幅（自绘矢量） */
@@ -781,5 +794,17 @@ export function getIllustrations(sectionId: string): Illustration[] {
     ...(drawPhP6[sectionId] ?? []),
     ...(drawPhP7[sectionId] ?? []),
     ...(drawPhP8[sectionId] ?? []),
+    ...(drawMtP1[sectionId] ?? []),
+    ...(drawMtP2[sectionId] ?? []),
+    ...(drawMtP3[sectionId] ?? []),
+    ...(drawMtP4[sectionId] ?? []),
+    ...(drawMtP5[sectionId] ?? []),
+    ...(drawMtP6[sectionId] ?? []),
+    ...(drawMtP7[sectionId] ?? []),
+    ...(drawMtP8[sectionId] ?? []),
+    ...(drawMtP9[sectionId] ?? []),
+    ...(drawMtP10[sectionId] ?? []),
+    ...(drawMtP11[sectionId] ?? []),
+    ...(drawMtP12[sectionId] ?? []),
   ]
 }

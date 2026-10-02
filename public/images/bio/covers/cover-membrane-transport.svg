@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 依据学科主题自绘矢量封面（代码绘制，非 AI 生成）：膜蛋白与物质转运 · 松绿（green） -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Noto Serif SC, LXGW WenKai, Georgia, serif">
+  <defs>
+    <pattern id="pgr" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#1c1917" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#faf8f4"/>
+  <rect width="800" height="500" fill="url(#pgr)"/>
+  <rect x="22" y="22" width="756" height="456" fill="none" stroke="#15803d" stroke-opacity="0.30" stroke-width="1"/>
+  <path d="M22,52 V22 H52 M748,22 H778 V52 M778,448 V478 H748 M52,478 H22 V448" fill="none" stroke="#15803d" stroke-opacity="0.6" stroke-width="1.6"/>
+  <rect x="396.5" y="59.5" width="7" height="7" transform="rotate(45 400 63)" fill="#15803d"/>
+  <text x="402" y="94" text-anchor="middle" font-size="12" letter-spacing="3.2" fill="#166534">MEMBRANE PROTEINS &amp; TRANSPORT</text>
+  <text x="398" y="224" text-anchor="middle" font-size="60" font-weight="700" letter-spacing="4" fill="#1c1917">膜蛋白与物质转运</text>
+  <line x1="255" y1="262" x2="545" y2="262" stroke="#15803d" stroke-width="2.5"/>
+  <line x1="290" y1="269" x2="510" y2="269" stroke="#1c1917" stroke-opacity="0.38" stroke-width="1"/>
+  <text x="401" y="304" text-anchor="middle" font-size="16.5" letter-spacing="1.5" fill="#57534e">Stein &amp; Litton · Alberts · Taiz 体系 · 12 章 48 节</text>
+
+  <!-- 左：脂双层与三类转运蛋白（通道 · 载体 · 泵） -->
+  <g>
+    <rect x="78" y="330" width="170" height="100" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+    <!-- 双层：上下两排磷脂头 -->
+    <g fill="#15803d" fill-opacity="0.85">
+      <circle cx="94" cy="362" r="5"/><circle cx="112" cy="362" r="5"/><circle cx="130" cy="362" r="5"/><circle cx="148" cy="362" r="5"/><circle cx="166" cy="362" r="5"/><circle cx="184" cy="362" r="5"/><circle cx="202" cy="362" r="5"/><circle cx="220" cy="362" r="5"/><circle cx="238" cy="362" r="5"/>
+      <circle cx="94" cy="398" r="5"/><circle cx="112" cy="398" r="5"/><circle cx="130" cy="398" r="5"/><circle cx="148" cy="398" r="5"/><circle cx="166" cy="398" r="5"/><circle cx="184" cy="398" r="5"/><circle cx="202" cy="398" r="5"/><circle cx="220" cy="398" r="5"/><circle cx="238" cy="398" r="5"/>
+    </g>
+    <g stroke="#86efac" stroke-width="1">
+      <line x1="94" y1="367" x2="94" y2="393"/><line x1="112" y1="367" x2="112" y2="393"/><line x1="130" y1="367" x2="130" y2="393"/><line x1="148" y1="367" x2="148" y2="393"/><line x1="166" y1="367" x2="166" y2="393"/><line x1="184" y1="367" x2="184" y2="393"/><line x1="202" y1="367" x2="202" y2="393"/><line x1="220" y1="367" x2="220" y2="393"/><line x1="238" y1="367" x2="238" y2="393"/>
+    </g>
+    <!-- 通道（圆柱孔道 + 离子穿越） -->
+    <rect x="128" y="352" width="22" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <circle cx="139" cy="342" r="4.5" fill="#15803d"/>
+    <path d="M139,346 v6 M139,408 v6" stroke="#15803d" stroke-width="1.6"/>
+    <circle cx="139" cy="424" r="4.5" fill="#15803d"/>
+    <text x="139" y="336" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">K⁺</text>
+    <!-- 载体（球碗翻转） -->
+    <circle cx="187" cy="380" r="17" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <path d="M176,375 a11,11 0 0 1 22,0" fill="none" stroke="#15803d" stroke-width="1.6"/>
+    <circle cx="187" cy="357" r="4" fill="#15803d" fill-opacity="0.8"/>
+    <path d="M187,361 v5" stroke="#15803d" stroke-width="1.4"/>
+    <!-- 泵（带 ATP 闪电） -->
+    <ellipse cx="228" cy="380" rx="13" ry="20" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <path d="M226,372 l4,6 -3,1 4,8" fill="none" stroke="#15803d" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="163" y="446" text-anchor="middle" font-size="11" fill="#166534">脂双层 · 通道 · 载体 · 泵</text>
+  </g>
+
+  <!-- 中：动物 Na⁺ 币 vs 植物 H⁺ 币双引擎 -->
+  <g>
+    <rect x="290" y="330" width="220" height="100" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+    <!-- 动物侧 -->
+    <circle cx="338" cy="362" r="20" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+    <text x="338" y="358" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">Na⁺/K⁺</text>
+    <text x="338" y="370" text-anchor="middle" font-size="8" fill="#166534">ATPase</text>
+    <path d="M318,384 q20,10 40,0" fill="none" stroke="#15803d" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text x="338" y="404" text-anchor="middle" font-size="9" fill="#57534e">动物 · Na⁺ 币 · −90 mV</text>
+    <!-- 分隔 -->
+    <line x1="400" y1="340" x2="400" y2="420" stroke="#86efac" stroke-width="1" stroke-dasharray="3 3"/>
+    <!-- 植物侧 -->
+    <circle cx="462" cy="362" r="20" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+    <text x="462" y="358" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">H⁺</text>
+    <text x="462" y="370" text-anchor="middle" font-size="8" fill="#166534">ATPase</text>
+    <path d="M442,384 q20,10 40,0" fill="none" stroke="#15803d" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text x="462" y="404" text-anchor="middle" font-size="9" fill="#57534e">植物 · H⁺ 币 · −200 mV</text>
+    <text x="400" y="446" text-anchor="middle" font-size="11" fill="#166534">两界对照 · 主引擎之争</text>
+  </g>
+
+  <!-- 右：动物细胞与植物细胞隔膜对望 -->
+  <g>
+    <rect x="552" y="330" width="170" height="100" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+    <!-- 动物细胞 -->
+    <circle cx="596" cy="380" r="26" fill="#f0fdf4" stroke="#15803d" stroke-width="1.8"/>
+    <circle cx="596" cy="380" r="9" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+    <!-- 植物细胞（方壁+液泡） -->
+    <rect x="646" y="354" width="54" height="52" rx="5" fill="#f0fdf4" stroke="#15803d" stroke-width="1.8"/>
+    <rect x="654" y="362" width="38" height="36" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="673" y="384" text-anchor="middle" font-size="8.5" fill="#166534">液泡</text>
+    <path d="M622,380 h24" stroke="#15803d" stroke-width="1.6"/>
+    <path d="M642,376 l6,4 -6,4 z" fill="#15803d"/>
+    <text x="596" y="418" text-anchor="middle" font-size="8.5" fill="#57534e">动物细胞</text>
+    <text x="673" y="418" text-anchor="middle" font-size="8.5" fill="#57534e">植物细胞</text>
+    <text x="637" y="446" text-anchor="middle" font-size="11" fill="#166534">同一屏障 · 两本账本</text>
+  </g>
+</svg>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">植物 P3A H<tspan dy="-11.2" font-size="23.8">+</tspan><tspan dy="11.2">-ATPase：电化学引擎与 14-3-3 总开关</tspan></text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">拟南芥11个AHA（AHA1/2/3主力）单亚基引擎：C端R域自抑制，Thr947磷酸化后14-3-3二聚体桥连全激活，糠菌素锁死复合体＝病原劫持；</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">一泵两得——PMF＝ΔpH（细胞质约7.2vs质外体约5.5）＋Δψ（−120~−250mV超极化）；养分吸收、气孔开放、酸生长、韧皮部装载四大岗位共用这台总电池</text>
+  <rect x="30" y="132" width="700" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、AHA 家族与 C 端 14-3-3 总开关</text>
+  <text x="60" y="172" font-size="10.5" fill="#475569" font-weight="600">拟南芥 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">-ATPase 基因家族（AHA＝Arabidopsis H</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">-ATPase）</tspan></text>
+  <rect x="60" y="185" width="52" height="30" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="86" y="204" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">AHA1</text>
+  <rect x="118" y="185" width="52" height="30" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="144" y="204" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">AHA2</text>
+  <rect x="176" y="185" width="52" height="30" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="202" y="204" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="600">AHA3</text>
+  <rect x="234" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="260" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA4</text>
+  <rect x="292" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="318" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA5</text>
+  <rect x="350" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="376" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA6</text>
+  <rect x="408" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="434" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA7</text>
+  <rect x="466" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="492" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA8</text>
+  <rect x="524" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="550" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA9</text>
+  <rect x="582" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="608" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA10</text>
+  <rect x="640" y="185" width="52" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="666" y="204" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="600">AHA11</text>
+  <text x="60" y="240" font-size="10" fill="#475569">11 个成员：AHA1 偏根、AHA2 广谱（1/2/3 主力，双突变致死）；约 100 kDa 单亚基、10 TMS、每 ATP 泵出 1 个 H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">——化学计量 1:1、</tspan></text>
+  <text x="60" y="263" font-size="10" fill="#475569">净外移一个正电荷</text>
+  <rect x="55" y="285" width="170" height="185" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="140" y="308" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">① 自抑制态</text>
+  <rect x="265" y="285" width="170" height="185" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="350" y="308" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">② Thr947 磷酸化</text>
+  <rect x="475" y="285" width="235" height="185" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="592.5" y="308" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="700">③ 14-3-3 二聚体桥连</text>
+  <line x1="227" y1="377" x2="263" y2="377" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="437" y1="377" x2="473" y2="377" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <g><circle cx="70" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="70" y1="349" x2="70" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="70" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="94" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="94" y1="349" x2="94" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="94" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="118" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="118" y1="349" x2="118" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="118" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="142" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="142" y1="349" x2="142" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="142" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="166" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="166" y1="349" x2="166" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="166" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="190" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="190" y1="349" x2="190" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="190" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="105" y="322" width="48" height="76" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="129" y="366" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">AHA</text>
+  <ellipse cx="129" cy="415" rx="26" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="98" y="400" width="64" height="24" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="130" y="415" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">R 域</text>
+  <text x="66" y="448" font-size="9" fill="#64748b">C 端 R 域搭在胞质域上，压低泵速</text>
+  <g><circle cx="280" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="280" y1="349" x2="280" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="280" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="304" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="304" y1="349" x2="304" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="304" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="328" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="328" y1="349" x2="328" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="328" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="352" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="352" y1="349" x2="352" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="352" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="376" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="376" y1="349" x2="376" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="376" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="400" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="400" y1="349" x2="400" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="400" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="315" y="322" width="48" height="76" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="339" y="366" font-size="8.5" fill="#4c1d95" text-anchor="middle" font-weight="700">AHA</text>
+  <ellipse cx="339" cy="415" rx="26" ry="17" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="308" y="398" width="62" height="22" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="339" y="412" font-size="9" fill="#92400e" text-anchor="middle" font-weight="700">R 域</text>
+  <circle cx="378" cy="392" r="10" fill="#be185d" stroke="#831843" stroke-width="1.5"/>
+  <text x="378" y="396" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">P</text>
+  <text x="340" y="380" font-size="8" fill="#831843" font-weight="700">Thr947</text>
+  <text x="276" y="448" font-size="9" fill="#64748b">激酶在 Thr947 打上 ~P，</text>
+  <text x="276" y="466" font-size="9" fill="#64748b">创建 14-3-3 结合位点</text>
+  <g><circle cx="490" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="490" y1="349" x2="490" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="490" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="514" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="514" y1="349" x2="514" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="514" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="538" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="538" y1="349" x2="538" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="538" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="562" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="562" y1="349" x2="562" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="562" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="586" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="586" y1="349" x2="586" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="586" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="610" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="610" y1="349" x2="610" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="610" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="634" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="634" y1="349" x2="634" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="634" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="658" cy="345" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="658" y1="349" x2="658" y2="354" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="658" cy="358" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="515" y="322" width="44" height="76" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="615" y="322" width="44" height="76" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <ellipse cx="537" cy="412" rx="22" ry="15" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <ellipse cx="637" cy="412" rx="22" ry="15" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="505" y="372" width="190" height="24" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <line x1="600" y1="374" x2="600" y2="394" stroke="#0f766e" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="552" y="388" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="700">14-3-3</text>
+  <text x="648" y="388" font-size="8.5" fill="#134e4a" text-anchor="middle" font-weight="700">14-3-3</text>
+  <circle cx="537" cy="404" r="7" fill="#be185d" stroke="#831843" stroke-width="1.2"/>
+  <text x="537" y="407" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="700">P</text>
+  <circle cx="637" cy="404" r="7" fill="#be185d" stroke="#831843" stroke-width="1.2"/>
+  <text x="637" y="407" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="700">P</text>
+  <text x="486" y="448" font-size="9" fill="#64748b">一个二聚体同时绑两个泵：</text>
+  <text x="486" y="466" font-size="9" fill="#64748b">锁离 R 域＋促成二聚排列＝全激活</text>
+  <text x="46" y="494" font-size="10" fill="#831843" font-weight="600">糠菌素（fusicoccin）恰好焊死 14-3-3–C 端复合体：泵「油门卡死」在激活态——气孔失控开放、水分不可逆散失</text>
+  <text x="46" y="520" font-size="9.5" fill="#475569">果园病理学趣闻：毒素源自意大利桃与扁桃园病原真菌 Fusicoccum amygdali（20 世纪 70 年代末查明）——一场病害让生理学家认识了泵的开关，</text>
+  <text x="46" y="538" font-size="9.5" fill="#475569">毒素反成实验室最趁手的激活工具</text>
+  <text x="46" y="560" font-size="9.5" fill="#475569">Thr947 之外尚有多个磷酸化位点：蓝光、蔗糖与病原分子模式都汇入同一节点（总线电机），磷酸酶随时把泵拉回自抑制态——拉锯决定实时功率</text>
+  <rect x="750" y="132" width="620" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="766" y="154.84" font-size="19" fill="#475569" font-weight="700">二、一泵两得：PMF 双组图</text>
+  <text x="766" y="188" font-size="11.5" fill="#92400e" font-weight="700">ΔpH：化学项</text>
+  <rect x="775" y="202" width="250" height="92" rx="8" fill="#fef3c7" fill-opacity="0.45" stroke="#d97706" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="900" y="228" font-size="11" fill="#92400e" text-anchor="middle" font-weight="700">质外体 pH 5.5</text>
+  <circle cx="810" cy="250" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <circle cx="840" cy="244" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <circle cx="870" cy="252" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <circle cx="900" cy="246" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <circle cx="930" cy="252" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <circle cx="960" cy="246" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <circle cx="990" cy="252" r="5" fill="#d97706" fill-opacity="0.7"/>
+  <g><circle cx="775" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="775" y1="304" x2="775" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="775" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="799" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="799" y1="304" x2="799" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="799" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="823" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="823" y1="304" x2="823" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="823" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="847" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="847" y1="304" x2="847" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="847" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="871" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="871" y1="304" x2="871" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="871" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="895" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="895" y1="304" x2="895" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="895" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="919" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="919" y1="304" x2="919" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="919" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="943" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="943" y1="304" x2="943" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="943" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="967" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="967" y1="304" x2="967" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="967" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="991" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="991" y1="304" x2="991" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="991" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1015" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1015" y1="304" x2="1015" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1015" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="868" y="280" width="64" height="62" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="900" y="315" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">AHA</text>
+  <line x1="884" y1="278" x2="884" y2="258" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <line x1="916" y1="278" x2="916" y2="258" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="884" cy="246" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="884" y="248.52" font-size="7" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="916" cy="246" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="916" y="248.52" font-size="7" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <rect x="775" y="322" width="250" height="92" rx="8" fill="#e0f2fe" fill-opacity="0.4" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="900" y="350" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">细胞质 pH 7.2</text>
+  <circle cx="850" cy="372" r="5" fill="#0369a1" fill-opacity="0.7"/>
+  <circle cx="940" cy="368" r="5" fill="#0369a1" fill-opacity="0.7"/>
+  <rect x="803.2995" y="433.5" width="193.40100000000004" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="900" y="445.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">ΔpH ≈ 1.7（约 100 mV 电学当量）</text>
+  <text x="1055" y="188" font-size="11.5" fill="#075985" font-weight="700">Δψ：电学项</text>
+  <g><circle cx="1070" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1070" y1="304" x2="1070" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1070" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1094" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1094" y1="304" x2="1094" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1094" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1118" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1118" y1="304" x2="1118" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1118" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1142" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1142" y1="304" x2="1142" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1142" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1166" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1166" y1="304" x2="1166" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1166" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1190" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1190" y1="304" x2="1190" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1190" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1214" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1214" y1="304" x2="1214" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1214" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1238" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1238" y1="304" x2="1238" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1238" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1262" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1262" y1="304" x2="1262" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1262" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1286" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1286" y1="304" x2="1286" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1286" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1310" cy="300" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1310" y1="304" x2="1310" y2="309" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1310" cy="313" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1163" y="280" width="64" height="62" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1195" y="315" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">AHA</text>
+  <line x1="1195" y1="278" x2="1195" y2="258" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="1195" cy="246" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1195" y="248.52" font-size="7" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <text x="1150" y="272" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">＋</text>
+  <text x="1195" y="262" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">＋</text>
+  <text x="1240" y="272" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700">＋</text>
+  <text x="1150" y="338" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">−</text>
+  <text x="1195" y="348" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">−</text>
+  <text x="1240" y="338" font-size="13" fill="#0369a1" text-anchor="middle" font-weight="700">−</text>
+  <path d="M1165,425 A30,30 0 0 1 1225,425" fill="none" stroke="#475569" stroke-width="2"/>
+  <line x1="1195" y1="425" x2="1178" y2="407" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <circle cx="1195" cy="425" r="4" fill="#475569"/>
+  <text x="1195" y="452" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">−120 ~ −250 mV</text>
+  <text x="1195" y="474" font-size="9.5" fill="#64748b" text-anchor="middle">（超极化，负值加深）</text>
+  <rect x="775" y="480" width="570" height="90" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1060" y="514" font-size="17" fill="#1e293b" text-anchor="middle" font-weight="700">PMF ＝ ΔpH ＋ Δψ</text>
+  <text x="790" y="540" font-size="9.5" fill="#475569">两项同向：把 H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">「赶出」的能量以回流倾向储存于膜两侧，</tspan></text>
+  <text x="790" y="558" font-size="9.5" fill="#475569">总势能坡折合约 −200 ~ −350 mV——第 8 章的上百个 H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 同向体与反向体都从这道坡上取数</tspan></text>
+  <rect x="30" y="602" width="1340" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="624.84" font-size="19" fill="#475569" font-weight="700">三、四大功能岗位：一台引擎，四路输出</text>
+  <circle cx="700" cy="795" r="70" fill="#d1fae5" stroke="#059669" stroke-width="2.6"/>
+  <text x="700" y="780" font-size="15" fill="#065f46" text-anchor="middle" font-weight="700">AHA</text>
+  <text x="700" y="801" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">质子引擎</text>
+  <text x="700" y="822" font-size="9.5" fill="#065f46" text-anchor="middle">1 H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">/ATP·生电</tspan></text>
+  <line x1="638" y1="762" x2="448" y2="716" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <line x1="762" y1="762" x2="952" y2="716" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <line x1="638" y1="828" x2="448" y2="874" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <line x1="762" y1="828" x2="952" y2="874" stroke="#059669" stroke-width="2" marker-end="url(#arr-ok)"/>
+  <rect x="60" y="636" width="380" height="158" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="76" y="666" font-size="12.5" fill="#1e293b" font-weight="700">① 养分吸收引擎</text>
+  <text x="76" y="690" font-size="10" fill="#075985" font-weight="600">泵 → PMF → H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 同向体回流</tspan></text>
+  <text x="76" y="716" font-size="9.5" fill="#475569">根表皮吸收 NO<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-5.3" font-size="6.8">-</tspan><tspan dy="3.2">、H</tspan><tspan dy="2.1" font-size="6.8">2</tspan><tspan dy="-2.1">PO</tspan><tspan dy="2.1" font-size="6.8">4</tspan><tspan dy="-5.3" font-size="6.8">-</tspan><tspan dy="3.2">、K</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">、NH</tspan><tspan dy="2.1" font-size="6.8">4</tspan><tspan dy="-5.3" font-size="6.8">+</tspan><tspan dy="3.2">、</tspan></text>
+  <text x="76" y="739" font-size="9.5" fill="#475569">SO<tspan dy="2.1" font-size="6.8">4</tspan><tspan dy="-5.3" font-size="6.8">2-</tspan><tspan dy="3.2"> 与氨基酸的载体几乎全是 H</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 同向体：NRT、PHT、SULTR、</tspan></text>
+  <text x="76" y="762" font-size="9.5" fill="#475569">AMT 共用这块电池（第 8 章逐一盘点）</text>
+  <rect x="960" y="636" width="380" height="158" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="976" y="666" font-size="12.5" fill="#1e293b" font-weight="700">② 气孔开放</text>
+  <text x="976" y="690" font-size="10" fill="#4c1d95" font-weight="600">蓝光 phot1/2 → 泵激活 → 超极化 → KAT1 开启</text>
+  <text x="976" y="716" font-size="9.5" fill="#475569">电压门控内向 K<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 通道 KAT1 开启，K</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 与伴随阴离子涌入、渗透吸水、</tspan></text>
+  <text x="976" y="739" font-size="9.5" fill="#475569">气孔张开——没有泵就没有气孔运动（保卫细胞全景见第 11 章）</text>
+  <rect x="60" y="806" width="380" height="158" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="76" y="836" font-size="12.5" fill="#1e293b" font-weight="700">③ 酸生长</text>
+  <text x="76" y="860" font-size="10" fill="#92400e" font-weight="600">生长素 → 泵上调 → 壁 pH 约 4.5 → 扩张蛋白松弛</text>
+  <text x="76" y="886" font-size="9.5" fill="#475569">扩张蛋白在酸性壁中打断纤维素-半纤维素间的氢键粘连、壁松弛，</text>
+  <text x="76" y="909" font-size="9.5" fill="#475569">细胞在膨压下伸长——「生长素→泵→酸→壁松→伸长」把激素、膜与壁串成因果链</text>
+  <rect x="960" y="806" width="380" height="158" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="976" y="836" font-size="12.5" fill="#1e293b" font-weight="700">④ 韧皮部装载</text>
+  <text x="976" y="860" font-size="10" fill="#78350f" font-weight="600">伴胞泵 → H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">/蔗糖梯度 → SUC2 同向转运</tspan></text>
+  <text x="976" y="886" font-size="9.5" fill="#475569">伴胞质膜的 AHA 为 SUC2 蔗糖/H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 同向转运体供能，</tspan></text>
+  <text x="976" y="909" font-size="9.5" fill="#475569">是糖物流的能量伴侣——Münch 压力流的第一推动力（第 5 章）</text>
+  <text x="470" y="886" font-size="10" fill="#475569">总线制：任一岗位满负荷都会抬高 PMF 消耗，</text>
+  <text x="470" y="909" font-size="10" fill="#475569">泵必须留有余量——11 个基因与诱导表达提供多机并联冗余；引擎停转（VO<tspan dy="2.2" font-size="7.2">4</tspan><tspan dy="-5.6" font-size="7.2">3-</tspan><tspan dy="3.4"> 或糠菌素处理）</tspan></text>
+  <text x="470" y="932" font-size="10" fill="#475569">则吸收、气孔、伸长、装载同时坍塌；第五战场：盐胁迫 SOS1 排 Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">、NHX1 液泡隔离，</tspan></text>
+  <text x="470" y="955" font-size="10" fill="#475569">能量全部出自 H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 梯度（第 12 章）</tspan></text>
+</svg>

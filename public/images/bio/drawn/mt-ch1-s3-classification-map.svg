@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">转运蛋白分类总框架与动植物总览</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">通道10<tspan dy="-5.8" font-size="12.2">7</tspan><tspan dy="5.8">–10</tspan><tspan dy="-5.8" font-size="12.2">8</tspan><tspan dy="5.8">离子/s、载体10</tspan><tspan dy="-5.8" font-size="12.2">2</tspan><tspan dy="5.8">–10</tspan><tspan dy="-5.8" font-size="12.2">4</tspan><tspan dy="5.8">分子/s、泵直接水解ATP；动物约900个转运基因（SLC52家族约400、ABC48、P型约40、离子通道约400）vs拟南芥&gt;1000个（占基因组</tspan></text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">3%–4%）；主引擎Na<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">币vsH</tspan><tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">币，共有与各自特化家族构成全书对照主线</tspan></text>
+  <rect x="30" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、三分法总树：通道 · 载体 · 泵</text>
+  <rect x="230.125" y="173.25" width="259.75" height="25.5" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="360" y="191.4" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700">转运蛋白：按速率与能量学分三家</text>
+  <line x1="340" y1="202" x2="148" y2="226" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="360" y1="202" x2="360" y2="226" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <line x1="380" y1="202" x2="572" y2="226" stroke="#64748b" stroke-width="1.8" marker-end="url(#arr-mute)"/>
+  <rect x="42" y="228" width="195" height="48" rx="9" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="139" y="252" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">离子通道</text>
+  <text x="139" y="270" font-size="11" fill="#075985" text-anchor="middle" font-weight="600">10<tspan dy="-3.7" font-size="7.9">7</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">8</tspan><tspan dy="3.7"> 离子/s</tspan></text>
+  <rect x="262" y="228" width="195" height="48" rx="9" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="359" y="252" font-size="15" fill="#4c1d95" text-anchor="middle" font-weight="700">载体</text>
+  <text x="359" y="270" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="600">10<tspan dy="-3.7" font-size="7.9">2</tspan><tspan dy="3.7">–10</tspan><tspan dy="-3.7" font-size="7.9">4</tspan><tspan dy="3.7"> 分子/s</tspan></text>
+  <rect x="482" y="228" width="195" height="48" rx="9" fill="#fce7f3" stroke="#be185d" stroke-width="1.8"/>
+  <text x="579" y="252" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">泵</text>
+  <text x="579" y="270" font-size="11" fill="#831843" text-anchor="middle" font-weight="600">直接水解 ATP</text>
+  <text x="48" y="302" font-size="10.5" fill="#475569">带闸门的水孔，开放即顺梯度蜂拥而过</text>
+  <text x="48" y="324" font-size="10.5" fill="#475569">速率与驱动力成比例、永不饱和、可双向</text>
+  <text x="48" y="346" font-size="10.5" fill="#475569">门控三型：电压 / 配体 / 机械</text>
+  <text x="48" y="368" font-size="10.5" fill="#64748b">代表：KcsA、nAChR、KAT1</text>
+  <text x="268" y="302" font-size="10.5" fill="#475569">与底物可逆结合，构象交替换位</text>
+  <text x="268" y="324" font-size="10.5" fill="#475569">饱和曲线（Vmax、Km），可竞争抑制</text>
+  <text x="268" y="346" font-size="10.5" fill="#475569">耦联三式：uniport / symport / antiport</text>
+  <text x="268" y="368" font-size="10.5" fill="#64748b">代表：GLUT1、SGLT1、NRT1.1</text>
+  <text x="488" y="302" font-size="10.5" fill="#475569">消耗 ATP 等高能键逆梯度搬运</text>
+  <text x="488" y="324" font-size="10.5" fill="#475569">速率有限却能创造梯度——发钞行</text>
+  <text x="488" y="346" font-size="10.5" fill="#475569">初级（水解 ATP）/ 次级（借梯度）</text>
+  <text x="488" y="368" font-size="10.5" fill="#64748b">代表：Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">-ATPase、AHA2</tspan></text>
+  <rect x="50" y="392" width="600" height="96" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="66" y="418" font-size="12.5" fill="#475569" font-weight="700">TC 分类系统（Saier）：跨类群查家谱的通用坐标系</text>
+  <text x="66" y="444" font-size="10.5" fill="#475569">1 类 通道与孔道 · 2 类 梯度驱动载体 · 3 类 水解含磷高能键的初级泵</text>
+  <text x="66" y="466" font-size="10.5" fill="#475569">以拓扑、机制与序列同源逐级编号——判断两个家族是否同源的标准坐标</text>
+  <text x="60" y="512" font-size="10.5" fill="#475569">三家速率相差五个数量级：毫秒级电信号只能用通道，养料的定向吸收与稳态浓度只能靠载体，而一切梯度的源头是泵</text>
+  <rect x="710" y="132" width="660" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、基因版图：动物约 900 vs 植物 1000+</text>
+  <text x="740" y="196" font-size="12.5" fill="#075985" font-weight="700">动物（人类基因组）</text>
+  <text x="740" y="216" font-size="10" fill="#64748b">合计约 900 个转运相关基因</text>
+  <text x="1075" y="196" font-size="12.5" fill="#065f46" font-weight="700">植物（拟南芥）</text>
+  <text x="1075" y="216" font-size="10" fill="#64748b">转运基因 &gt;1000，约占基因组 3%–4%</text>
+  <line x1="1052" y1="190" x2="1052" y2="480" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="740" y="256.5" font-size="10.5" fill="#475569">SLC 52 家族</text>
+  <rect x="850" y="244" width="138" height="17" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="919" y="256.5" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">约 400</text>
+  <text x="740" y="288.5" font-size="10.5" fill="#475569">离子通道</text>
+  <rect x="850" y="276" width="138" height="17" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="919" y="288.5" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">约 400（K<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 约 80）</tspan></text>
+  <text x="740" y="320.5" font-size="10.5" fill="#475569">ABC 转运体</text>
+  <rect x="850" y="308" width="16.56" height="17" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="874.56" y="320.5" font-size="10" fill="#075985" font-weight="700">48</text>
+  <text x="740" y="352.5" font-size="10.5" fill="#475569">P 型 ATPase</text>
+  <rect x="850" y="340" width="13.799999999999999" height="17" rx="3" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="871.8" y="352.5" font-size="10" fill="#075985" font-weight="700">约 40</text>
+  <text x="740" y="380" font-size="10.5" fill="#075985" font-weight="600">侧重：换能与快信号</text>
+  <text x="740" y="400" font-size="10" fill="#64748b">Nav/Cav、LGIC、NCX 等特化硬件</text>
+  <text x="1075" y="256" font-size="10.5" fill="#475569">ABC</text>
+  <rect x="1160" y="244" width="149.5" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1234.75" y="255.5" font-size="9.5" fill="#065f46" text-anchor="middle" font-weight="700">约 130</text>
+  <text x="1075" y="282" font-size="10.5" fill="#475569">NPF</text>
+  <rect x="1160" y="270" width="60.949999999999996" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1228.95" y="281.5" font-size="9.5" fill="#065f46" font-weight="700">53</text>
+  <text x="1075" y="308" font-size="10.5" fill="#475569">AQP</text>
+  <rect x="1160" y="296" width="40.25" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1208.25" y="307.5" font-size="9.5" fill="#065f46" font-weight="700">35</text>
+  <text x="1075" y="334" font-size="10.5" fill="#475569">CNGC</text>
+  <rect x="1160" y="322" width="23" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1191" y="333.5" font-size="9.5" fill="#065f46" font-weight="700">20</text>
+  <text x="1075" y="360" font-size="10.5" fill="#475569">GLR</text>
+  <rect x="1160" y="348" width="23" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1191" y="359.5" font-size="9.5" fill="#065f46" font-weight="700">20</text>
+  <text x="1075" y="386" font-size="10.5" fill="#475569">AHA</text>
+  <rect x="1160" y="374" width="12.649999999999999" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180.65" y="385.5" font-size="9.5" fill="#065f46" font-weight="700">11</text>
+  <text x="1075" y="412" font-size="10.5" fill="#475569">CAX</text>
+  <rect x="1160" y="400" width="12.649999999999999" height="15" rx="3" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1180.65" y="411.5" font-size="9.5" fill="#065f46" font-weight="700">11</text>
+  <text x="1075" y="436" font-size="9.5" fill="#64748b">AHA = H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">-ATPase；NPF = 硝酸盐/肽转运体；</tspan></text>
+  <text x="1075" y="454" font-size="9.5" fill="#64748b">CNGC = 环核苷酸门控通道；GLR = 谷氨酸受体样通道；</text>
+  <text x="1075" y="472" font-size="9.5" fill="#64748b">CAX = 钙-氢反向转运体</text>
+  <text x="740" y="486" font-size="10.5" fill="#475569">固着生活的植物必须从毫摩尔级土壤溶液里采矿、远程装运光合产物——转运基因占比高于人类</text>
+  <text x="740" y="512" font-size="11" fill="#475569" font-weight="600">动物押注快信号，植物押注吸收与区室化——两份清单的侧重差异即本书对照主线的目录</text>
+  <rect x="30" y="567" width="660" height="418" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="589.84" font-size="19" fill="#475569" font-weight="700">三、主引擎对照：Na<tspan dy="-6.5" font-size="13.7">+</tspan><tspan dy="6.5"> 币 vs H</tspan><tspan dy="-6.5" font-size="13.7">+</tspan><tspan dy="6.5"> 币</tspan></text>
+  <rect x="46" y="596" width="300" height="288" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="62" y="622" font-size="18" fill="#075985" font-weight="700">动物：Na<tspan dy="-6.1" font-size="13.0">+</tspan><tspan dy="6.1">/K</tspan><tspan dy="-6.1" font-size="13.0">+</tspan><tspan dy="6.1">-ATPase</tspan></text>
+  <g><circle cx="66" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="66" y1="710" x2="66" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="66" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="90" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="90" y1="710" x2="90" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="90" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="114" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="114" y1="710" x2="114" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="114" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="138" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="138" y1="710" x2="138" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="138" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="162" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="162" y1="710" x2="162" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="162" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="186" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="186" y1="710" x2="186" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="186" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="210" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="210" y1="710" x2="210" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="210" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="234" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="234" y1="710" x2="234" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="234" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="258" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="258" y1="710" x2="258" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="258" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="282" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="282" y1="710" x2="282" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="282" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="306" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="306" y1="710" x2="306" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="306" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="176" y="684" width="40" height="58" rx="9" fill="#ffffff" stroke="#0369a1" stroke-width="2.4"/>
+  <text x="196" y="717" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">αβ</text>
+  <line x1="150" y1="744" x2="150" y2="662" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <text x="84" y="700" font-size="10.5" fill="#92400e" font-weight="700">3 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 出</tspan></text>
+  <line x1="245" y1="662" x2="245" y2="744" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dna)"/>
+  <text x="255" y="700" font-size="10.5" fill="#134e4a" font-weight="700">2 K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 入</tspan></text>
+  <circle cx="110" cy="744" r="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="128" cy="740" r="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="146" cy="744" r="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.3"/>
+  <circle cx="228" cy="655" r="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <circle cx="246" cy="651" r="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <circle cx="264" cy="655" r="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.3"/>
+  <rect x="178.235" y="753.075" width="35.53" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="196" y="765.78" font-size="10.5" fill="#92400e" text-anchor="middle">ATP</text>
+  <text x="60" y="792" font-size="10.5" fill="#475569">净外移 1 个正电荷（生电）——建立外钠内钾格局，</text>
+  <text x="60" y="810" font-size="10.5" fill="#475569">支撑约 −90 mV 级膜电位</text>
+  <text x="60" y="838" font-size="10.5" fill="#475569">下游花 Na<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 币：SGLT、NCX、NHE、</tspan></text>
+  <text x="60" y="858" font-size="10.5" fill="#475569">细胞体积调节——几乎全部次级转运</text>
+  <rect x="366" y="596" width="300" height="288" rx="10" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="382" y="622" font-size="18" fill="#065f46" font-weight="700">植物：H<tspan dy="-6.1" font-size="13.0">+</tspan><tspan dy="6.1">-ATPase 主引擎</tspan></text>
+  <g><circle cx="386" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="386" y1="710" x2="386" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="386" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="410" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="410" y1="710" x2="410" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="410" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="434" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="434" y1="710" x2="434" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="434" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="458" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="458" y1="710" x2="458" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="458" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="482" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="482" y1="710" x2="482" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="482" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="506" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="506" y1="710" x2="506" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="506" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="530" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="530" y1="710" x2="530" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="530" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="554" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="554" y1="710" x2="554" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="554" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="578" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="578" y1="710" x2="578" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="578" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="602" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="602" y1="710" x2="602" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="602" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="626" cy="706" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="626" y1="710" x2="626" y2="715" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="626" cy="719" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="496" y="684" width="40" height="58" rx="9" fill="#ffffff" stroke="#059669" stroke-width="2.4"/>
+  <text x="516" y="717" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">AHA</text>
+  <line x1="470" y1="744" x2="470" y2="662" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <text x="386" y="700" font-size="10.5" fill="#831843" font-weight="700">1 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/ATP</tspan></text>
+  <circle cx="440" cy="744" r="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.3"/>
+  <circle cx="456" cy="740" r="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.3"/>
+  <circle cx="470" cy="745" r="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.3"/>
+  <text x="545" y="700" font-size="10" fill="#475569" font-weight="700">−200 mV 级</text>
+  <rect x="498.235" y="753.075" width="35.53" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="516" y="765.78" font-size="10.5" fill="#92400e" text-anchor="middle">ATP</text>
+  <text x="380" y="792" font-size="10.5" fill="#475569">每分子 ATP 泵出 1 个 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">（生电）</tspan></text>
+  <text x="380" y="815" font-size="10.5" fill="#475569">——压入 −120~−250 mV 深负区，质外体酸化到约 pH 5.5</text>
+  <text x="380" y="848" font-size="10.5" fill="#475569">下游花 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 币（PMF）：NPF/NRT、KUP/HAK、SUC、</tspan></text>
+  <text x="380" y="868" font-size="10.5" fill="#475569">AAP——吸收与装载</text>
+  <circle cx="356" cy="740" r="17" fill="#1e293b"/>
+  <text x="356" y="745" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">vs</text>
+  <text x="60" y="912" font-size="11" fill="#475569">同为 P 型 ATPase，发的货币不同：动物发 Na<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 币、植物发 H</tspan><tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7"> 币——读懂这张货币表，就读懂了两个界的转运经济学</tspan></text>
+  <text x="60" y="947" font-size="10" fill="#64748b">（此后每章的驱动离子选择——SGLT 用 Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">、SUC 用 H</tspan><tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">——皆由这两台引擎预付）</tspan></text>
+  <rect x="710" y="567" width="660" height="418" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="589.84" font-size="19" fill="#475569" font-weight="700">四、共有与独有：全书对照框架总图</text>
+  <rect x="726" y="606" width="202" height="306" rx="10" fill="#d1fae5" fill-opacity="0.5" stroke="#059669" stroke-width="1.6"/>
+  <text x="742" y="632" font-size="18" fill="#065f46" font-weight="700">两界共有</text>
+  <rect x="940" y="606" width="202" height="306" rx="10" fill="#e0f2fe" fill-opacity="0.5" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="956" y="632" font-size="18" fill="#075985" font-weight="700">动物特化</text>
+  <rect x="1154" y="606" width="202" height="306" rx="10" fill="#fce7f3" fill-opacity="0.5" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1170" y="632" font-size="18" fill="#831843" font-weight="700">植物特化</text>
+  <rect x="806.77" y="662" width="40.46" height="24" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="827" y="677.96" font-size="11" fill="#065f46" text-anchor="middle">AQP</text>
+  <rect x="806.77" y="694" width="40.46" height="24" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="827" y="709.96" font-size="11" fill="#065f46" text-anchor="middle">ABC</text>
+  <rect x="769.81" y="726" width="114.38" height="24" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="827" y="741.96" font-size="11" fill="#065f46" text-anchor="middle">P 型 / V 型 ATPase</text>
+  <rect x="783.01" y="758" width="87.98" height="24" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="827" y="773.96" font-size="11" fill="#065f46" text-anchor="middle">MFS 主超家族</text>
+  <rect x="806.77" y="790" width="40.46" height="24" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="827" y="805.96" font-size="11" fill="#065f46" text-anchor="middle">CLC</text>
+  <rect x="787.85" y="822" width="78.30000000000001" height="24" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="827" y="837.96" font-size="11" fill="#065f46" text-anchor="middle">ZIP · MATE</text>
+  <text x="827" y="872" font-size="10" fill="#64748b" text-anchor="middle">基本代谢谁也离不开</text>
+  <text x="827" y="892" font-size="9.5" fill="#64748b" text-anchor="middle">（人类 SLC 多数属 MFS）</text>
+  <rect x="1007.46" y="668" width="67.08" height="24" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1041" y="683.96" font-size="11" fill="#075985" text-anchor="middle">Nav / Cav</text>
+  <rect x="1020.77" y="700" width="40.46" height="24" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1041" y="715.96" font-size="11" fill="#075985" text-anchor="middle">NCX</text>
+  <rect x="1017.36" y="732" width="47.28" height="24" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="1041" y="747.96" font-size="11" fill="#075985" text-anchor="middle">LGIC</text>
+  <text x="1041" y="782" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">快信号系统的硬件</text>
+  <text x="1041" y="804" font-size="9.5" fill="#64748b" text-anchor="middle">电压门控 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">/Ca</tspan><tspan dy="-3.2" font-size="6.8">2+</tspan><tspan dy="3.2"> 通道</tspan></text>
+  <text x="1041" y="824" font-size="9.5" fill="#64748b" text-anchor="middle">钠钙交换器 · 神经递质门控通道</text>
+  <rect x="1234.77" y="668" width="40.46" height="24" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1255" y="683.96" font-size="11" fill="#831843" text-anchor="middle">HKT</text>
+  <rect x="1219.26" y="700" width="71.48" height="24" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1255" y="715.96" font-size="11" fill="#831843" text-anchor="middle">NRT / NPF</text>
+  <rect x="1234.77" y="732" width="40.46" height="24" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1255" y="747.96" font-size="11" fill="#831843" text-anchor="middle">BOR</text>
+  <rect x="1227.95" y="764" width="54.1" height="24" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1255" y="779.96" font-size="11" fill="#831843" text-anchor="middle">SWEET</text>
+  <text x="1255" y="810" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="600">采矿与长途运输的硬件</text>
+  <text x="1255" y="832" font-size="9.5" fill="#64748b" text-anchor="middle">HKT 钠钾选择 · NRT 硝酸盐</text>
+  <text x="1255" y="852" font-size="9.5" fill="#64748b" text-anchor="middle">BOR 硼 · SWEET 糖外排</text>
+  <rect x="726" y="928" width="630" height="46" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1041" y="956" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="600">此后每章的问法：这个家族两边都有吗？都有的话用法差在哪？只有一边有的话，缺的一边用什么补位？</text>
+</svg>

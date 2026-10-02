@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">动物的 GLUT 家族：分工与调度</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">SLC2A十四成员均为MFS12TMS摇摆开关：GLUT1（K_m1–2mM）把守血脑屏障、GLUT2（15–20mM）作葡萄糖感受器、GLUT3（1.4mM）亲和最高、GLUT4随胰岛素自GSV</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">转位上膜——人脑日耗约120g葡萄糖经三级接力入脑</text>
+  <rect x="30" y="132" width="680" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、SLC2A 家族：十四个成员的工位表</text>
+  <text x="50" y="182" font-size="10" fill="#475569">人类 14 个命名成员：GLUT1–12、HMIT（GLUT13，H<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 耦联肌醇）、GLUT14（GLUT3 复制近缘）；分 I（1–4 经典葡萄糖）/ II（5、7、</tspan></text>
+  <text x="50" y="200" font-size="10" fill="#475569">9、11 果糖·尿酸）/ III（6、8、10、12 与 HMIT）三大类——1985 年 Mueckler 以表达克隆从 HepG2 细胞首获 GLUT1</text>
+  <rect x="50" y="232" width="80" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">成员</text>
+  <rect x="130" y="232" width="112" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">主要底物</text>
+  <rect x="242" y="232" width="88" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">K<tspan dy="3.1" font-size="10.1">m</tspan><tspan dy="-3.1">（约）</tspan></text>
+  <rect x="330" y="232" width="178" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">主要分布</text>
+  <rect x="508" y="232" width="152" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="259.5" font-size="14" fill="#1e293b" text-anchor="middle" font-weight="700">功能标签</text>
+  <rect x="50" y="276" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="298.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">GLUT1</text>
+  <rect x="130" y="276" width="112" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="298.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖</text>
+  <rect x="242" y="276" width="88" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="298.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">1–2 mM</text>
+  <rect x="330" y="276" width="178" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="298.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">红细胞、血脑屏障内皮</text>
+  <rect x="508" y="276" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="298.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">基础供给看门人</text>
+  <rect x="50" y="310" width="610" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="310" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="332.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">GLUT2</text>
+  <rect x="130" y="310" width="112" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="332.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖、果糖</text>
+  <rect x="242" y="310" width="88" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="332.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">15–20 mM</text>
+  <rect x="330" y="310" width="178" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="332.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">肝、胰岛 β、肾、小肠</text>
+  <rect x="508" y="310" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="332.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖感受器</text>
+  <rect x="50" y="344" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="366.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">GLUT3</text>
+  <rect x="130" y="344" width="112" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="366.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖</text>
+  <rect x="242" y="344" width="88" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="366.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">1.4 mM</text>
+  <rect x="330" y="344" width="178" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="366.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">神经元、胎盘</text>
+  <rect x="508" y="344" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="366.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">最高亲和供糖</text>
+  <rect x="50" y="378" width="610" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="378" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="400.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">GLUT4</text>
+  <rect x="130" y="378" width="112" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="400.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">葡萄糖</text>
+  <rect x="242" y="378" width="88" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="400.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 5 mM</text>
+  <rect x="330" y="378" width="178" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="400.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">骨骼肌、心肌、脂肪</text>
+  <rect x="508" y="378" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="400.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">胰岛素响应</text>
+  <rect x="50" y="412" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="434.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">GLUT5</text>
+  <rect x="130" y="412" width="112" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="434.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">果糖</text>
+  <rect x="242" y="412" width="88" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="434.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">约 6 mM</text>
+  <rect x="330" y="412" width="178" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="434.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">小肠、睾丸</text>
+  <rect x="508" y="412" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="434.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">果糖专用通道</text>
+  <rect x="50" y="446" width="610" height="34" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="50" y="446" width="80" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="90" y="468.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">HMIT（13）</text>
+  <rect x="130" y="446" width="112" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="186" y="468.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">肌醇</text>
+  <rect x="242" y="446" width="88" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="286" y="468.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">毫摩尔级</text>
+  <rect x="330" y="446" width="178" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="419" y="468.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">囊泡、溶酶体膜</text>
+  <rect x="508" y="446" width="152" height="34" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="584" y="468.5" font-size="13" fill="#475569" text-anchor="middle" font-weight="500">H<tspan dy="-4.4" font-size="9.4">+</tspan><tspan dy="4.4"> 耦联异类</tspan></text>
+  <text x="50" y="508" font-size="10" fill="#475569">同为葡萄糖载体：GLUT2 把 K<tspan dy="2.2" font-size="7.2">m</tspan><tspan dy="-2.2"> 放在线性段当「感受器」（15–20 mM，速率随血糖成比例）；</tspan></text>
+  <text x="50" y="531" font-size="10" fill="#475569">GLUT1/3 放在饱和段当「供应商」——结构几乎相同、动力学一字之差，功能便分道扬镳；SLC2A2 突变致 Fanconi-Bickel 综合征</text>
+  <rect x="730" y="132" width="640" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="154.84" font-size="19" fill="#475569" font-weight="700">二、GLUT1 的摇摆开关：内向 ⇌ 外向构象转换</text>
+  <text x="750" y="195" font-size="10.5" fill="#475569" font-weight="600">全部成员共享 MFS 硬件：N/C 两束摇摆把结合腔从一侧翻向另一侧</text>
+  <text x="752" y="260" font-size="9" fill="#64748b" font-weight="600">胞外</text>
+  <text x="752" y="388" font-size="9" fill="#64748b" font-weight="600">胞质</text>
+  <line x1="774" y1="257" x2="800" y2="268" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="774" y1="385" x2="800" y2="372" stroke="#94a3b8" stroke-width="1"/>
+  <g><circle cx="816" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="816" y1="297.5" x2="816" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="816" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="840" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="840" y1="297.5" x2="840" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="840" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="864" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="864" y1="297.5" x2="864" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="864" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="888" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="888" y1="297.5" x2="888" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="888" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="912" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="912" y1="297.5" x2="912" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="912" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="936" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="936" y1="297.5" x2="936" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="936" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <g><circle cx="1126" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1126" y1="297.5" x2="1126" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1126" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1150" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1150" y1="297.5" x2="1150" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1150" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1174" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1174" y1="297.5" x2="1174" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1174" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1198" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1198" y1="297.5" x2="1198" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1198" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1222" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1222" y1="297.5" x2="1222" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1222" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1246" cy="293.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1246" y1="297.5" x2="1246" y2="302.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1246" cy="306.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="880" y="232" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="700">外向开口（GLUT3 捕获态）</text>
+  <text x="1190" y="232" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">内向开口（GLUT1 捕获态）</text>
+  <polygon points="858.2085947869249,259.2554039280401 901.7914052130751,259.2554039280401 882.9214973563011,334.93847057756784 877.0785026436989,334.93847057756784" fill="#e0f2fe" fill-opacity="0.6"/>
+  <polygon points="834.9214973563011,265.06152942243216 858.2085947869249,259.2554039280401 877.0785026436989,334.93847057756784 853.7914052130751,340.7445960719599" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="901.7914052130751,259.2554039280401 925.0785026436989,265.06152942243216 906.2085947869249,340.7445960719599 882.9214973563011,334.93847057756784" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="856" y="303.5" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">N</text>
+  <text x="904" y="303.5" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">C</text>
+  <circle cx="880" cy="274" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="880" y="277.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <line x1="871" y1="341" x2="889" y2="341" stroke="#be185d" stroke-width="2.6"/>
+  <polygon points="1187.078502643699,265.06152942243216 1192.921497356301,265.06152942243216 1211.7914052130752,340.7445960719599 1168.2085947869248,340.7445960719599" fill="#e0f2fe" fill-opacity="0.6"/>
+  <polygon points="1163.7914052130752,259.2554039280401 1187.078502643699,265.06152942243216 1168.2085947869248,340.7445960719599 1144.921497356301,334.93847057756784" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <polygon points="1192.921497356301,265.06152942243216 1216.2085947869248,259.2554039280401 1235.078502643699,334.93847057756784 1211.7914052130752,340.7445960719599" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1166" y="303.5" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">N</text>
+  <text x="1214" y="303.5" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">C</text>
+  <circle cx="1190" cy="326" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1190" y="329.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <line x1="1181" y1="259" x2="1199" y2="259" stroke="#be185d" stroke-width="2.6"/>
+  <line x1="960" y1="300" x2="1070" y2="300" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)" marker-start="url(#arr-ink)"/>
+  <text x="1015" y="326" font-size="10" fill="#475569" text-anchor="middle" font-weight="600">N / C 两束绕伪对称轴摇摆</text>
+  <g><circle cx="756" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="756" y1="417.5" x2="756" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="756" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="780" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="780" y1="417.5" x2="780" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="780" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="804" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="804" y1="417.5" x2="804" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="804" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="828" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="828" y1="417.5" x2="828" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="828" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="852" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="852" y1="417.5" x2="852" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="852" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="876" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="876" y1="417.5" x2="876" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="876" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="900" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="900" y1="417.5" x2="900" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="900" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="924" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="924" y1="417.5" x2="924" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="924" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="948" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="948" y1="417.5" x2="948" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="948" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="972" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="972" y1="417.5" x2="972" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="972" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="996" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="996" y1="417.5" x2="996" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="996" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1020" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1020" y1="417.5" x2="1020" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1020" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1044" cy="413.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1044" y1="417.5" x2="1044" y2="422.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1044" cy="426.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="770" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="791" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="812" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="833" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="854" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="875" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="916" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="937" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="958" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="979" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="1000" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="1021" y="403" width="11" height="34" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <rect x="766" y="399" width="61" height="42" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="829" y="399" width="61" height="42" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="912" y="399" width="61" height="42" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="975" y="399" width="61" height="42" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <path d="M 766,461 Q 766,452 775,452 M 881,452 Q 890,452 890,461" fill="none" stroke="#4c1d95" stroke-width="1.7"/>
+  <line x1="775" y1="452" x2="881" y2="452" stroke="#4c1d95" stroke-width="1.7"/>
+  <text x="828" y="476" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="600">N 端束（TMS 1–6）</text>
+  <path d="M 912,461 Q 912,452 921,452 M 1027,452 Q 1036,452 1036,461" fill="none" stroke="#4c1d95" stroke-width="1.7"/>
+  <line x1="921" y1="452" x2="1027" y2="452" stroke="#4c1d95" stroke-width="1.7"/>
+  <text x="974" y="476" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="600">C 端束（TMS 7–12）</text>
+  <text x="750" y="500" font-size="10" fill="#475569">MFS 拓扑：12 TMS = N 束（1–6）+ C 束（7–12），每束各由一对三螺旋重复拼成——伪二重对称是摇摆开关的硬件基础；</text>
+  <text x="750" y="518" font-size="10" fill="#475569">摇摆全程葡萄糖被锁在结合腔内，中途不许逃逸</text>
+  <rect x="30" y="570" width="680" height="415" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="592.84" font-size="19" fill="#475569" font-weight="700">三、GLUT4 转位：胰岛素的机动调度</text>
+  <rect x="56" y="620" width="70" height="32" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="91" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="600">胰岛素</text>
+  <rect x="156" y="620" width="70" height="32" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="191" y="640" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="600">受体（RTK）</text>
+  <rect x="256" y="620" width="56" height="32" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="284" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="600">IRS</text>
+  <rect x="340" y="620" width="70" height="32" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="375" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="600">PI3K</text>
+  <rect x="434" y="620" width="60" height="32" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="464" y="640" font-size="11" fill="#1e293b" text-anchor="middle" font-weight="600">AKT</text>
+  <line x1="126" y1="636" x2="152" y2="636" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="226" y1="636" x2="252" y2="636" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="312" y1="636" x2="338" y2="636" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="410" y1="636" x2="432" y2="636" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <polyline points="464,652 464,668 340,668 340,686" fill="none" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="386" y="660" font-size="9" fill="#475569">磷酸化</text>
+  <rect x="240" y="688" width="116" height="32" rx="7" fill="#f1f5f9" stroke="#475569" stroke-width="1.8"/>
+  <text x="298" y="708" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="600">AS160（TBC1D4）</text>
+  <rect x="390" y="688" width="100" height="32" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.8"/>
+  <text x="440" y="708" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="600">Rab-GTP</text>
+  <rect x="560" y="688" width="130" height="32" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="625" y="708" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="600">运动 → AMPK</text>
+  <line x1="356" y1="704" x2="386" y2="704" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="371" y="684" font-size="8.5" fill="#475569" text-anchor="middle">失活·刹车解除</text>
+  <line x1="440" y1="720" x2="440" y2="748" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <line x1="625" y1="720" x2="625" y2="748" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-warn)"/>
+  <text x="633" y="738" font-size="9" fill="#92400e">并行调度</text>
+  <text x="56" y="758" font-size="10" fill="#475569" font-weight="600">GSV 储存囊泡（静息时约 90% 的 GLUT4 在此）</text>
+  <circle cx="450" cy="785" r="30" fill="#ffffff" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="434" y="781" width="9" height="8" rx="2" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <rect x="446" y="781" width="9" height="8" rx="2" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <rect x="458" y="781" width="9" height="8" rx="2" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <circle cx="560" cy="795" r="24" fill="#ffffff" stroke="#0f766e" stroke-width="2.4"/>
+  <rect x="544" y="791" width="9" height="8" rx="2" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <rect x="556" y="791" width="9" height="8" rx="2" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <rect x="568" y="791" width="9" height="8" rx="2" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <g><circle cx="56" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="56" y1="859.5" x2="56" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="56" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="80" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="80" y1="859.5" x2="80" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="80" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="104" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="104" y1="859.5" x2="104" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="104" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="128" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="128" y1="859.5" x2="128" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="128" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="152" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="152" y1="859.5" x2="152" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="152" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="176" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="176" y1="859.5" x2="176" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="176" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="200" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="200" y1="859.5" x2="200" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="200" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="224" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="224" y1="859.5" x2="224" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="224" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="248" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="248" y1="859.5" x2="248" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="248" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="272" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="272" y1="859.5" x2="272" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="272" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="296" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="296" y1="859.5" x2="296" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="296" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="320" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="320" y1="859.5" x2="320" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="320" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="344" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="344" y1="859.5" x2="344" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="344" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="368" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="368" y1="859.5" x2="368" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="368" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="392" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="392" y1="859.5" x2="392" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="392" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="416" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="416" y1="859.5" x2="416" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="416" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="440" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="440" y1="859.5" x2="440" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="440" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="464" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="464" y1="859.5" x2="464" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="464" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="488" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="488" y1="859.5" x2="488" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="488" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="512" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="512" y1="859.5" x2="512" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="512" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="536" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="536" y1="859.5" x2="536" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="536" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="560" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="560" y1="859.5" x2="560" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="560" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="584" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="584" y1="859.5" x2="584" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="584" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="608" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="608" y1="859.5" x2="608" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="608" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="632" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="632" y1="859.5" x2="632" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="632" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="656" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="656" y1="859.5" x2="656" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="656" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="680" cy="855.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="680" y1="859.5" x2="680" y2="864.5" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="680" cy="868.5" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="440" y="849" width="52" height="38" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="466" y="871" font-size="9.5" fill="#4c1d95" text-anchor="middle" font-weight="700">GLUT4</text>
+  <line x1="458" y1="818" x2="464" y2="845" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <text x="376" y="838" font-size="9.5" fill="#475569">转位融合</text>
+  <text x="56" y="838" font-size="10" fill="#1e293b" font-weight="600">数分钟内膜上 GLUT4 增多数倍</text>
+  <circle cx="466" cy="822" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="466" y="825.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <line x1="466" y1="832" x2="466" y2="890" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <circle cx="466" cy="904" r="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="466" y="907.24" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <line x1="500" y1="866" x2="610" y2="795" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-mute)"/>
+  <text x="688" y="850" font-size="9" fill="#64748b" text-anchor="end">内吞回收：网格蛋白 / 小窝蛋白</text>
+  <text x="56" y="926" font-size="10" fill="#475569">上膜与回收的动态平衡决定稳态密度；运动收缩经 AMPK 不待胰岛素自发上膜——为供糖中断备了双保险</text>
+  <rect x="224.812" y="959.5" width="270.376" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="360" y="971.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">2 型糖尿病：胰岛素抵抗 → 转位失灵 → 餐后血糖居高</text>
+  <rect x="730" y="570" width="640" height="415" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="746" y="592.84" font-size="19" fill="#475569" font-weight="700">四、脑的糖供给三级接力（日耗约 120 g）</text>
+  <rect x="750" y="632" width="110" height="116" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="805" y="652" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">血液</text>
+  <text x="805" y="728" font-size="9" fill="#991b1b" text-anchor="middle">4–6 mM</text>
+  <rect x="860" y="632" width="120" height="116" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="920" y="652" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">内皮细胞</text>
+  <rect x="980" y="632" width="130" height="116" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="1045" y="652" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">星形胶质细胞</text>
+  <text x="1045" y="670" font-size="8.5" fill="#065f46" text-anchor="middle">终足包裹血管</text>
+  <rect x="1110" y="632" width="130" height="116" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="1175" y="652" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">神经元</text>
+  <rect x="875" y="626" width="14" height="6" fill="#be185d"/>
+  <rect x="935" y="626" width="14" height="6" fill="#be185d"/>
+  <text x="912" y="616" font-size="8.5" fill="#831843" text-anchor="middle">紧密连接</text>
+  <rect x="852" y="662" width="16" height="56" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="860" y="622" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">GLUT1</text>
+  <rect x="972" y="662" width="16" height="56" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="980" y="622" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">GLUT1</text>
+  <rect x="1102" y="662" width="16" height="56" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1110" y="622" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">GLUT3</text>
+  <line x1="760" y1="700" x2="1235" y2="700" stroke="#0369a1" stroke-width="2.2" marker-end="url(#arr-acc)"/>
+  <circle cx="790" cy="685" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="790" y="687.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <circle cx="915" cy="685" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="915" y="687.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <circle cx="1045" cy="685" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1045" y="687.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <circle cx="1175" cy="685" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1175" y="687.88" font-size="8" fill="#075985" text-anchor="middle" font-weight="700">G</text>
+  <rect x="797.687" y="766.5" width="244.62600000000003" height="17" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="920" y="778.6" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">血脑屏障：GLUT1 是葡萄糖入脑的几乎唯一通道</text>
+  <text x="750" y="806" font-size="10" fill="#475569">三级接力：血管内皮 GLUT1（K<tspan dy="2.2" font-size="7.2">m</tspan><tspan dy="-2.2"> 1–2 mM）→ 星形胶质细胞 → 神经元 GLUT3（K</tspan><tspan dy="2.2" font-size="7.2">m</tspan><tspan dy="-2.2"> 约 1.4 mM，家族中亲和最高）</tspan></text>
+  <text x="750" y="829" font-size="10" fill="#475569">——人脑每日耗糖约 120 g</text>
+  <text x="750" y="856" font-size="10" fill="#475569">K<tspan dy="2.2" font-size="7.2">m</tspan><tspan dy="-2.2"> 1–2 mM 使常态血糖（4–6 mM）下已过半饱和：入脑速率对血糖小幅波动不敏感——「脑优先」策略的分子设计</tspan></text>
+  <text x="750" y="906" font-size="10" fill="#991b1b">GLUT1 缺陷综合征（SLC2A1 突变）：脑脊液糖低、癫痫样发作与运动障碍；</text>
+  <text x="750" y="929" font-size="10" fill="#991b1b">生酮饮食以酮体部分绕行供能——「看门人失职」的临床镜像</text>
+  <text x="750" y="956" font-size="9.5" fill="#475569">成熟红细胞无线粒体、全靠糖酵解供能，膜上 GLUT1 密度极高——数十年来载体动力学方法学的「通用试剂盒」</text>
+</svg>

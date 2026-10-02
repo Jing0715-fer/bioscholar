@@ -890,6 +890,7 @@ function subjectName(id: SubjectId): string {
     'x-ray-crystallography': 'X射线晶体学',
     'electron-microscopy': '电子显微学',
     physiology: '生理学',
+    'membrane-transport': '膜蛋白与物质转运',
   }
   return names[id] ?? id
 }

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">V 型 ATPase 的结构与机制</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">V1（胞质侧 A3B3 水解马达＋E3G3/C/H 定子网络）与 V0（膜内 a·c 环·d·e 质子通路）组成双旋转马达：三位点旋转催化推动 D/F 中央轴与 c 环，a 亚基两条互不贯通的半</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">通道（质子井）装货—卸货；酵母 c 环 10 拷贝 → 约 3.3 H<tspan dy="-5.8" font-size="12.2">+</tspan><tspan dy="5.8">/ATP；末端抑制＋动力学不可逆双保险钉死水解方向，葡萄糖缺乏数分钟触发 V1 可逆解离、由 RAVE 复合体重装</tspan></text>
+  <rect x="30" y="132" width="660" height="470" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、V1/V0 双旋转马达总装</text>
+  <text x="60" y="174" font-size="10.5" fill="#64748b">囊泡腔</text>
+  <circle cx="196" cy="170" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="196" y="172.88" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <circle cx="224" cy="177" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="224" y="179.88" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <rect x="511.787" y="165.5" width="108.42600000000002" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="566" y="177.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">腔内 pH 4.5–5.0</text>
+  <g><circle cx="60" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="199" x2="60" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="199" x2="84" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="199" x2="108" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="199" x2="132" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="199" x2="156" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="199" x2="180" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="199" x2="204" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="199" x2="228" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="199" x2="252" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="199" x2="276" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="199" x2="300" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="199" x2="324" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="199" x2="348" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="199" x2="372" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="199" x2="396" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="420" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="420" y1="199" x2="420" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="420" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="444" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="444" y1="199" x2="444" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="444" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="468" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="468" y1="199" x2="468" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="468" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="492" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="492" y1="199" x2="492" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="492" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="516" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="516" y1="199" x2="516" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="516" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="540" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="540" y1="199" x2="540" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="540" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="564" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="564" y1="199" x2="564" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="564" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="588" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="588" y1="199" x2="588" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="588" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="612" cy="195" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="612" y1="199" x2="612" y2="231" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="612" cy="235" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="268" y="200" width="14" height="34" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="275" y="221" font-size="9" fill="#134e4a" text-anchor="middle" font-weight="700">e</text>
+  <rect x="292" y="186" width="92" height="64" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="306" y1="192" x2="306" y2="244" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="319" y1="192" x2="319" y2="244" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="332" y1="192" x2="332" y2="244" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="345" y1="192" x2="345" y2="244" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="358" y1="192" x2="358" y2="244" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="371" y1="192" x2="371" y2="244" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <rect x="384" y="184" width="44" height="68" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="406" y="226" font-size="14" fill="#4c1d95" text-anchor="middle" font-weight="700">a</text>
+  <rect x="324" y="250" width="30" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="339" y="264" font-size="9.5" fill="#075985" text-anchor="middle" font-weight="700">d</text>
+  <rect x="332" y="268" width="10" height="130" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="356" y="300" font-size="9.5" fill="#075985" font-weight="600">D·F 中央转子轴</text>
+  <line x1="353" y1="296" x2="344" y2="288" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="406" cy="402" r="27" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="406" y="407" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="372" cy="343" r="27" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="372" y="348" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="304" cy="343" r="27" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="304" y="348" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="270" cy="402" r="27" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="270" y="407" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="304" cy="461" r="27" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="304" y="466" font-size="15" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="372" cy="461" r="27" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="372" y="466" font-size="15" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="389" cy="372" r="5" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <circle cx="287" cy="372" r="5" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <circle cx="338" cy="461" r="5" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <text x="450" y="372" font-size="9.5" fill="#831843" font-weight="700">催化位点 ×3</text>
+  <text x="450" y="390" font-size="9.5" fill="#475569">（A/B 界面）</text>
+  <line x1="446" y1="369" x2="396" y2="372" stroke="#94a3b8" stroke-width="1"/>
+  <path d="M262,372 C254.3,363.3 223.7,339.7 216,320 C208.3,300.3 216.0,265.0 216,254" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <path d="M414,372 C421.7,363.3 453.7,339.3 460,320 C466.3,300.7 453.3,266.7 452,256" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <rect x="203" y="232" width="26" height="24" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="216" y="248" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">C</text>
+  <rect x="439" y="232" width="26" height="24" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="452" y="248" font-size="11" fill="#4c1d95" text-anchor="middle" font-weight="700">H</text>
+  <path d="M 420,250 Q 414,238 402,228" fill="none" stroke="#d97706" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <path d="M 392,214 Q 386,204 396,190" fill="none" stroke="#d97706" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <circle cx="386" cy="226" r="4.5" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <circle cx="472" cy="286" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="472" y="289.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="457" y1="278" x2="428" y2="261" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <line x1="398" y1="188" x2="424" y2="176" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="436" cy="169" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="436" y="172.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <text x="480" y="300" font-size="9" fill="#92400e" font-weight="600">装货（胞质侧）</text>
+  <text x="456" y="154" font-size="9" fill="#92400e" font-weight="600">卸货（腔侧）</text>
+  <text x="445" y="200" font-size="10" fill="#4c1d95" font-weight="700">a 亚基</text>
+  <text x="445" y="218" font-size="9.5" fill="#475569">两条半通道</text>
+  <line x1="443" y1="215" x2="429" y2="219" stroke="#94a3b8" stroke-width="1"/>
+  <text x="46" y="216" font-size="10.5" fill="#475569" font-weight="700">V0（膜内）</text>
+  <text x="66" y="258" font-size="9.5" fill="#78350f" font-weight="600">c 环 ×10（酵母）</text>
+  <text x="46" y="322" font-size="9.5" fill="#475569">E<tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-2.1">G</tspan><tspan dy="2.1" font-size="6.8">3</tspan><tspan dy="-2.1"> 外周柄与 C、H 构成定子网络</tspan></text>
+  <text x="46" y="340" font-size="9.5" fill="#475569">（弹性棘轮，吸收转子反冲矩）</text>
+  <text x="46" y="386" font-size="10.5" fill="#475569" font-weight="700">V1（胞质侧）</text>
+  <text x="46" y="404" font-size="9.5" fill="#64748b">ATP 水解马达</text>
+  <text x="46" y="530" font-size="10" fill="#64748b">细胞质（pH≈7.2）</text>
+  <rect x="123.94205" y="421.075" width="52.1159" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="150" y="433.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">ATP</text>
+  <line x1="183" y1="424" x2="278" y2="377" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <rect x="499.94205" y="421.075" width="52.1159" height="17.849999999999998" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="526" y="433.78" font-size="10.5" fill="#78350f" text-anchor="middle" font-weight="700">ATP</text>
+  <line x1="516" y1="424" x2="397" y2="377" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <text x="46" y="560" font-size="9.5" fill="#475569">亚基命名冠 VHA- 前缀、基因名 ATP6V1（编码 V1）/ATP6V0（编码 V0）；每个 c 亚基带一个可质子化的 Glu，</text>
+  <text x="46" y="583" font-size="9.5" fill="#475569">经 a 的两条半通道「装货—卸货」过膜（Mitchell 质子井），使 H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 深入膜中部完成交接</tspan></text>
+  <rect x="710" y="132" width="660" height="470" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、旋转催化与质子井半通道</text>
+  <text x="726" y="184" font-size="12" fill="#831843" font-weight="700">三个催化位点轮换（旋转催化）</text>
+  <circle cx="860" cy="315" r="80" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+  <circle cx="860" cy="235" r="26" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="860" y="240" font-size="11.5" fill="#78350f" text-anchor="middle" font-weight="700">ATP</text>
+  <text x="860" y="198" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="600">结合 ATP</text>
+  <circle cx="793" cy="354" r="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.8"/>
+  <text x="793" y="358" font-size="10.5" fill="#64748b" text-anchor="middle" font-weight="700">空置</text>
+  <text x="793" y="398" font-size="9.5" fill="#64748b" text-anchor="middle">待结合</text>
+  <circle cx="927" cy="354" r="26" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="927" y="358" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">ADP+Pi</text>
+  <text x="927" y="398" font-size="9.5" fill="#075985" text-anchor="middle">产物卸下</text>
+  <circle cx="860" cy="315" r="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="860" y="312" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="700">D·F</text>
+  <text x="860" y="329" font-size="8" fill="#4c1d95" text-anchor="middle">转子轴</text>
+  <path d="M 912,315 A 52,52 0 0 0 886,270" fill="none" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arr-pro)"/>
+  <text x="946" y="300" font-size="9.5" fill="#4c1d95" font-weight="700">120°/步</text>
+  <text x="726" y="428" font-size="9.5" fill="#475569">每水解 1 分子 ATP，</text>
+  <text x="726" y="451" font-size="9.5" fill="#475569">D/F 中央轴转过 120° 并带动 c 环转动——位点轮换供能、</text>
+  <text x="726" y="474" font-size="9.5" fill="#475569">转子旋转做功，与 F 型完全同源而能量流向相反</text>
+  <text x="726" y="500" font-size="9.5" fill="#475569">产物 ADP 偶尔滞留位点、短暂锁停旋转（「喘息」调节）：</text>
+  <text x="726" y="523" font-size="9.5" fill="#475569">既防空转烧 ATP，也参与稳态速率调节</text>
+  <text x="1014" y="184" font-size="12" fill="#075985" font-weight="700">质子井：两条半通道＋旋转位点</text>
+  <g><circle cx="1026" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1026" y1="306" x2="1026" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1026" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1050" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1050" y1="306" x2="1050" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1050" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1074" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1074" y1="306" x2="1074" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1074" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1098" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1098" y1="306" x2="1098" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1098" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1122" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1122" y1="306" x2="1122" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1122" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1146" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1146" y1="306" x2="1146" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1146" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1170" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1170" y1="306" x2="1170" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1170" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1194" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1194" y1="306" x2="1194" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1194" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1218" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1218" y1="306" x2="1218" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1218" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1242" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1242" y1="306" x2="1242" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1242" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1266" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1266" y1="306" x2="1266" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1266" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1290" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1290" y1="306" x2="1290" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1290" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1314" cy="302" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1314" y1="306" x2="1314" y2="336" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1314" cy="340" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="1032" y="284" font-size="10" fill="#64748b">囊泡腔</text>
+  <text x="1032" y="368" font-size="10" fill="#64748b">细胞质</text>
+  <rect x="1090" y="296" width="46" height="46" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+  <line x1="1102" y1="300" x2="1102" y2="338" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="1114" y1="300" x2="1114" y2="338" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <line x1="1126" y1="300" x2="1126" y2="338" stroke="#b45309" stroke-width="1" opacity="0.45"/>
+  <rect x="1148" y="294" width="46" height="50" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+  <text x="1171" y="323" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">a</text>
+  <path d="M1078,352 C1083.8,354.5 1101.7,367.0 1113,367 C1124.3,367.0 1140.5,354.5 1146,352" fill="none" stroke="#b45309" stroke-width="2.2" marker-end="url(#arr-rna)"/>
+  <text x="1112" y="390" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">c 环旋转</text>
+  <circle cx="1141" cy="320" r="4.5" fill="#be185d" stroke="#831843" stroke-width="1"/>
+  <text x="1141" y="360" font-size="9" fill="#831843" text-anchor="middle" font-weight="600">Glu 位点</text>
+  <path d="M 1186,356 Q 1192,336 1170,324" fill="none" stroke="#d97706" stroke-width="1.7" stroke-dasharray="4 3" marker-end="url(#arr-warn)"/>
+  <path d="M 1156,308 Q 1144,300 1152,284" fill="none" stroke="#d97706" stroke-width="1.7" stroke-dasharray="4 3" marker-end="url(#arr-warn)"/>
+  <circle cx="1218" cy="382" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1218" y="385.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="1205" y1="373" x2="1190" y2="360" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="1128" cy="264" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1128" y="267.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="1148" y1="282" x2="1136" y2="272" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="1244" y="352" font-size="9" fill="#92400e" font-weight="600">胞质半通道（装货）</text>
+  <line x1="1240" y1="349" x2="1192" y2="350" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1244" y="292" font-size="9" fill="#92400e" font-weight="600">腔侧半通道（卸货）</text>
+  <line x1="1240" y1="289" x2="1198" y2="292" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="1246" cy="452" r="46" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <line x1="1246" y1="452" x2="1292" y2="452" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1283.2147817412476" y2="479.03812160545374" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1260.2147817412476" y2="495.74859974957707" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1231.7852182587524" y2="495.74859974957707" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1208.7852182587524" y2="479.0381216054538" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1200" y2="452" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1208.7852182587524" y2="424.96187839454626" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1231.7852182587524" y2="408.25140025042293" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1260.2147817412476" y2="408.25140025042293" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <line x1="1246" y1="452" x2="1283.2147817412476" y2="424.9618783945462" stroke="#b45309" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="1246" cy="452" r="8" fill="#b45309"/>
+  <text x="1246" y="516" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="600">c 环俯视：10 拷贝</text>
+  <text x="1026" y="538" font-size="9.5" fill="#475569">半通道向膜中部下探、内衬极性与带电残基（质子井）；</text>
+  <text x="1026" y="561" font-size="9.5" fill="#475569">两条半通道互不贯通，靠旋转的质子化位点拼成完整跨膜通路</text>
+  <rect x="30" y="617" width="660" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="639.84" font-size="19" fill="#475569" font-weight="700">三、c 环拷贝数决定 H<tspan dy="-6.5" font-size="13.7">+</tspan><tspan dy="6.5">/ATP 比</tspan></text>
+  <rect x="46" y="660" width="274" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="183" y="687" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">V1 每圈水解 3 ATP</text>
+  <line x1="183" y1="702" x2="183" y2="714" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="46" y="716" width="274" height="42" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="183" y="743" font-size="11.5" fill="#1e293b" text-anchor="middle" font-weight="600">c 环每圈转位 10 H<tspan dy="-3.9" font-size="8.3">+</tspan></text>
+  <line x1="183" y1="758" x2="183" y2="770" stroke="#be185d" stroke-width="2" marker-end="url(#arr-enz)"/>
+  <rect x="46" y="772" width="274" height="54" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="183" y="796" font-size="13.5" fill="#831843" text-anchor="middle" font-weight="700">H<tspan dy="-4.6" font-size="9.7">+</tspan><tspan dy="4.6">/ATP ≈ 10 ÷ 3</tspan></text>
+  <text x="183" y="816" font-size="10.5" fill="#831843" text-anchor="middle" font-weight="600">≈ 3.3 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/ATP（酵母口径）</tspan></text>
+  <text x="46" y="852" font-size="9.5" fill="#475569">拷贝数多→步幅小→单步做功少，可泵的极限质子动力势更高；</text>
+  <text x="46" y="875" font-size="9.5" fill="#475569">拷贝数少→单步做功大、</text>
+  <text x="46" y="898" font-size="9.5" fill="#475569">对既有梯度抽吸力强——V 型与 F 型都用这一几何参数调校所在膜的能量环境</text>
+  <text x="46" y="935" font-size="9.5" fill="#475569">泵入与漏出的平衡点通常落在腔内 pH 4.5–5.0：</text>
+  <text x="46" y="958" font-size="9.5" fill="#475569">多数溶酶体止步于此，并非巧合</text>
+  <text x="362" y="668" font-size="12" fill="#475569" font-weight="700">c 环拷贝数 → H<tspan dy="-4.1" font-size="8.6">+</tspan><tspan dy="4.1">/ATP</tspan></text>
+  <text x="362" y="692" font-size="9" fill="#64748b">V 型本节（酵母 10 拷贝）；F 型三例第四节对照展开</text>
+  <text x="515" y="714" font-size="9.5" fill="#64748b" text-anchor="middle">单位：H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">/ATP</tspan></text>
+  <line x1="368" y1="915" x2="368" y2="726" stroke="#475569" stroke-width="1.8"/>
+  <line x1="368" y1="915" x2="660" y2="915" stroke="#475569" stroke-width="2" marker-end="url(#arr-ink)"/>
+  <line x1="362" y1="915" x2="368" y2="915" stroke="#475569" stroke-width="1.5"/>
+  <text x="358" y="918.5" font-size="9" fill="#64748b" text-anchor="end">0</text>
+  <line x1="362" y1="842.3076923076924" x2="368" y2="842.3076923076924" stroke="#475569" stroke-width="1.5"/>
+  <text x="358" y="845.8076923076924" font-size="9" fill="#64748b" text-anchor="end">2</text>
+  <line x1="362" y1="769.6153846153846" x2="368" y2="769.6153846153846" stroke="#475569" stroke-width="1.5"/>
+  <text x="358" y="773.1153846153846" font-size="9" fill="#64748b" text-anchor="end">4</text>
+  <rect x="386" y="795.0576923076924" width="42" height="119.94230769230768" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="407" y="786.0576923076924" font-size="11" fill="#831843" text-anchor="middle" font-weight="700">≈3.3</text>
+  <text x="407" y="937" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">V·酵母</text>
+  <text x="407" y="955" font-size="9" fill="#64748b" text-anchor="middle">c 环 10</text>
+  <rect x="466" y="816.8653846153846" width="42" height="98.13461538461539" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="487" y="807.8653846153846" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">≈2.7</text>
+  <text x="487" y="937" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">F·哺乳</text>
+  <text x="487" y="955" font-size="9" fill="#64748b" text-anchor="middle">c 环 8</text>
+  <rect x="534" y="795.0576923076924" width="42" height="119.94230769230768" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="555" y="786.0576923076924" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">≈3.3</text>
+  <text x="555" y="937" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">F·酵母</text>
+  <text x="555" y="955" font-size="9" fill="#64748b" text-anchor="middle">c 环 10</text>
+  <rect x="602" y="744.1730769230769" width="42" height="170.82692307692307" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="623" y="735.1730769230769" font-size="11" fill="#075985" text-anchor="middle" font-weight="700">≈4.7</text>
+  <text x="623" y="937" font-size="10" fill="#1e293b" text-anchor="middle" font-weight="700">F·叶绿</text>
+  <text x="623" y="955" font-size="9" fill="#64748b" text-anchor="middle">c 环 14</text>
+  <rect x="710" y="617" width="660" height="368" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="639.84" font-size="19" fill="#475569" font-weight="700">四、可逆解离：节能开关与单向保险</text>
+  <text x="726" y="668" font-size="11" fill="#065f46" font-weight="700">① 葡萄糖充足 → 整泵工作</text>
+  <g><circle cx="744" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="744" y1="704" x2="744" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="744" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="768" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="768" y1="704" x2="768" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="768" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="792" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="792" y1="704" x2="792" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="792" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="816" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="816" y1="704" x2="816" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="816" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="840" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="840" y1="704" x2="840" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="840" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="864" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="864" y1="704" x2="864" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="864" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="888" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="888" y1="704" x2="888" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="888" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="912" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="912" y1="704" x2="912" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="912" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="936" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="936" y1="704" x2="936" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="936" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="960" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="960" y1="704" x2="960" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="960" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="984" cy="700" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="984" y1="704" x2="984" y2="718" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="984" cy="722" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="826" y="694" width="44" height="32" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <rect x="843" y="726" width="10" height="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="875" cy="780" r="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="875" y="783.5" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="861.5" cy="756.51" r="12" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="861.5" y="760.01" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="834.5" cy="756.51" r="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="834.5" y="760.01" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="821" cy="780" r="12" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="821" y="783.5" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="834.5" cy="803.49" r="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="834.5" y="806.99" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="861.5" cy="803.49" r="12" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="861.5" y="806.99" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="900" cy="684" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="900" y="686.88" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.7" font-size="5.8">+</tspan></text>
+  <line x1="866" y1="692" x2="888" y2="686" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="742.421" y="755.5" width="51.158" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="768" y="767.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">ATP</text>
+  <line x1="793" y1="762" x2="807" y2="772" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="848" y1="820" x2="848" y2="840" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arr-bad)"/>
+  <text x="862" y="834" font-size="9" fill="#991b1b" font-weight="600">数分钟内解离</text>
+  <text x="726" y="858" font-size="11" fill="#991b1b" font-weight="700">② 葡萄糖缺乏 → V1 整体脱离 V0</text>
+  <g><circle cx="744" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="744" y1="892" x2="744" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="744" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="768" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="768" y1="892" x2="768" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="768" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="792" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="792" y1="892" x2="792" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="792" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="816" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="816" y1="892" x2="816" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="816" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="840" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="840" y1="892" x2="840" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="840" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="864" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="864" y1="892" x2="864" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="864" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="888" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="888" y1="892" x2="888" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="888" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="912" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="912" y1="892" x2="912" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="912" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="936" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="936" y1="892" x2="936" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="936" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="960" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="960" y1="892" x2="960" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="960" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="984" cy="888" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="984" y1="892" x2="984" y2="906" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="984" cy="910" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="826" y="880" width="44" height="32" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <line x1="818" y1="876" x2="878" y2="876" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <text x="892" y="892" font-size="9" fill="#991b1b" font-weight="600">V0 通路封闭</text>
+  <circle cx="823" cy="948" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="823" y="951.5" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="811.5" cy="927.99" r="10" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="811.5" y="931.49" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="788.5" cy="927.99" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="788.5" y="931.49" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="777" cy="948" r="10" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="777" y="951.5" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <circle cx="788.5" cy="968.01" r="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="788.5" y="971.51" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">B</text>
+  <circle cx="811.5" cy="968.01" r="10" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="811.5" y="971.51" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">A</text>
+  <rect x="838.93855" y="931.925" width="90.1229" height="16.15" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="884" y="943.42" font-size="9.5" fill="#831843" text-anchor="middle" font-weight="700">H 亚基＝刹车</text>
+  <text x="846" y="972" font-size="9" fill="#475569">游离 V1 被锁、不再水解 ATP</text>
+  <path d="M978,902 C983.3,885.0 1010.0,830.0 1010,800 C1010.0,770.0 983.3,735.0 978,722" fill="none" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-ok)"/>
+  <text x="994" y="806" font-size="9.5" fill="#065f46" text-anchor="end" font-weight="700">RAVE 复合体重装</text>
+  <text x="1030" y="670" font-size="12" fill="#831843" font-weight="700">为什么 V 型生理上只水解、不合成？</text>
+  <rect x="1030" y="686" width="322" height="96" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1044" y="710" font-size="11" fill="#831843" font-weight="700">① 末端抑制（结构保险）</text>
+  <text x="1044" y="732" font-size="9.5" fill="#475569">游离或解离态下 H 亚基换位充当「刹车」，锁住 V1 的水解活动、</text>
+  <text x="1044" y="753" font-size="9.5" fill="#475569">防空转烧 ATP；催化机器对水解方向作动力学优化，</text>
+  <text x="1044" y="774" font-size="9.5" fill="#475569">合成方向能垒远高于 F 型</text>
+  <rect x="1030" y="794" width="322" height="88" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1044" y="818" font-size="11" fill="#831843" font-weight="700">② 动力学不可逆性（能量保险）</text>
+  <text x="1044" y="840" font-size="9.5" fill="#475569">内体与溶酶体膜的质子动力势通常不足 200 mV，</text>
+  <text x="1044" y="861" font-size="9.5" fill="#475569">远不足以把 V 型推回合成方向</text>
+  <rect x="1030" y="894" width="322" height="84" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="1044" y="916" font-size="11" fill="#831843" font-weight="700">※ 并非分子层面的绝对禁令</text>
+  <text x="1044" y="938" font-size="9.5" fill="#831843">体外施加远超生理的 PMF，</text>
+  <text x="1044" y="959" font-size="9.5" fill="#831843">V-ATPase 可反向旋转并合成可观测的 ATP——方向设定写在动力学常数与调控件上</text>
+</svg>

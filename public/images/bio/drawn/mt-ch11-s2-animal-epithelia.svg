@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">动物的特化上皮：肾、肠、胃与血脑屏障</text>
+  <text x="700" y="74" text-anchor="middle" font-size="16" fill="#64748b">近端小管以SGLT2约90%＋SGLT1约10%接力回收滤过糖、GLUT2基侧卸货；TAL的NKCC2＋ROMK＋ClC-Ka/b只盐不水驱动逆流倍增；主细胞ENaC＋ROMK保钠泌钾、闰细胞</text>
+  <text x="700" y="100" text-anchor="middle" font-size="16" fill="#64748b">H⁺-ATPase＋AE1司酸碱；霍乱经cAMP开CFTR致分泌性腹泻，ORS借钠糖耦联吸水；壁细胞H⁺/K⁺-ATPase分泌0.16mol/L盐酸；血脑屏障以claudin-5＋P-gp＋GLUT1成药理屏障</text>
+  <rect x="30" y="132" width="660" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、肾小管分段装备：从整批粗加工到激素级精调</text>
+  <text x="46" y="192" font-size="12.5" fill="#1e293b" font-weight="700">① 近端小管：日滤过约 180 L，葡萄糖两段接力</text>
+  <rect x="46" y="198" width="430" height="26" fill="#e0f2fe" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="214" font-size="9" fill="#075985">管腔</text>
+  <circle cx="150" cy="211" r="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="150" y="213.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="198" cy="211" r="9" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="198" y="213.7" font-size="7.5" fill="#78350f" text-anchor="middle" font-weight="700">Glu</text>
+  <rect x="46" y="224" width="430" height="42" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <rect x="74" y="215" width="66" height="18" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="107" y="227" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">SGLT2·90%</text>
+  <rect x="154" y="215" width="62" height="18" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="185" y="227" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">SGLT1·10%</text>
+  <rect x="230" y="215" width="44" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="252" y="227" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">NHE3</text>
+  <rect x="80" y="257" width="48" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="104" y="269" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">GLUT2</text>
+  <rect x="150" y="257" width="88" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="194" y="269" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">/K</tspan><tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">-ATPase</tspan></text>
+  <rect x="256" y="257" width="52" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="282" y="269" font-size="8" fill="#134e4a" text-anchor="middle" font-weight="700">NBCe1</text>
+  <rect x="46" y="268" width="430" height="20" fill="#fee2e2" fill-opacity="0.5" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="282" font-size="9" fill="#991b1b">血液</text>
+  <line x1="147" y1="214" x2="147" y2="246" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="222" y1="214" x2="222" y2="244" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr-enz)"/>
+  <line x1="138" y1="250" x2="138" y2="282" stroke="#0369a1" stroke-width="1.5" marker-end="url(#arr-acc)"/>
+  <text x="490" y="210" font-size="9" fill="#475569">SGLT2 低亲和高容量包揽约 90%，</text>
+  <text x="490" y="226" font-size="9" fill="#475569">S3 段 SGLT1 高亲和收尾约 10%；</text>
+  <text x="490" y="242" font-size="9" fill="#475569">两闸全开时血糖超肾糖阈</text>
+  <text x="490" y="258" font-size="9" fill="#475569">（约 10–11 mmol/L）即溢出糖尿；</text>
+  <text x="490" y="274" font-size="9" fill="#475569">达格列净故意留约 10% 的糖换心肾保护</text>
+  <text x="490" y="288" font-size="9" fill="#475569">NHE3 与碳酸酐酶两段接力，</text>
+  <text x="490" y="304" font-size="9" fill="#475569">约 85% 的碳酸氢盐在近端收回</text>
+  <text x="46" y="330" font-size="12.5" fill="#1e293b" font-weight="700">② 髓襻升支粗段：只盐不水的盐泵（逆流倍增引擎）</text>
+  <rect x="46" y="336" width="430" height="26" fill="#e0f2fe" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="352" font-size="9" fill="#075985">管腔</text>
+  <circle cx="150" cy="349" r="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="150" y="351.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="198" cy="349" r="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="198" y="351.7" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">K<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="246" cy="349" r="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="246" y="351.7" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.6" font-size="5.4">−</tspan></text>
+  <rect x="46" y="362" width="430" height="42" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <rect x="74" y="353" width="60" height="18" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="104" y="365" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">NKCC2</text>
+  <rect x="150" y="353" width="48" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="174" y="365" font-size="8.5" fill="#065f46" text-anchor="middle" font-weight="700">ROMK</text>
+  <rect x="90" y="395" width="58" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="119" y="407" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">ClC-Ka/b</text>
+  <rect x="160" y="395" width="60" height="18" rx="4" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="190" y="407" font-size="7.5" fill="#134e4a" text-anchor="middle" font-weight="700">barttin</text>
+  <rect x="234" y="395" width="88" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="278" y="407" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">/K</tspan><tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">-ATPase</tspan></text>
+  <rect x="46" y="406" width="430" height="20" fill="#fee2e2" fill-opacity="0.5" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="420" font-size="9" fill="#991b1b">血液</text>
+  <line x1="141" y1="352" x2="141" y2="384" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="202" y1="400" x2="202" y2="354" stroke="#059669" stroke-width="1.6" marker-end="url(#arr-ok)"/>
+  <text x="490" y="344" font-size="9" fill="#475569">NKCC2 按 1 Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">:1 K</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">:2 Cl</tspan><tspan dy="-3.1" font-size="6.5">−</tspan><tspan dy="3.1"> 泵盐；</tspan></text>
+  <text x="490" y="360" font-size="9" fill="#475569">ROMK 把 K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 循环送回管腔、使管腔呈正电，</tspan></text>
+  <text x="490" y="376" font-size="9" fill="#475569">牵动 Mg<tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1">/Ca</tspan><tspan dy="-3.1" font-size="6.5">2+</tspan><tspan dy="3.1"> 经 claudin-16/19 细胞旁重吸收</tspan></text>
+  <text x="490" y="420" font-size="9" fill="#475569">「只盐不水」的单效应每次富集约 200 mOsm，</text>
+  <text x="490" y="436" font-size="9" fill="#475569">发夹结构逆流倍增成 300→约 1200 mOsm/kg 髓质梯度；</text>
+  <text x="490" y="452" font-size="9" fill="#475569">呋塞米阻断 NKCC2＝襻利尿剂之王</text>
+  <text x="46" y="468" font-size="12.5" fill="#1e293b" font-weight="700">③ 集合管：主细胞保钠泌钾 · 闰细胞司酸碱</text>
+  <rect x="46" y="474" width="430" height="26" fill="#e0f2fe" fill-opacity="0.55" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="490" font-size="9" fill="#075985">管腔</text>
+  <rect x="46" y="500" width="214" height="42" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <rect x="60" y="491" width="44" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="82" y="503" font-size="8.5" fill="#065f46" text-anchor="middle" font-weight="700">ENaC</text>
+  <rect x="120" y="491" width="46" height="18" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="143" y="503" font-size="8.5" fill="#065f46" text-anchor="middle" font-weight="700">ROMK</text>
+  <rect x="70" y="533" width="88" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="114" y="545" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">/K</tspan><tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">-ATPase</tspan></text>
+  <text x="188" y="524" font-size="9.5" fill="#475569" font-weight="600">主细胞</text>
+  <rect x="272" y="500" width="204" height="42" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <rect x="290" y="491" width="64" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="322" y="503" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">-ATPase</tspan></text>
+  <rect x="330" y="533" width="44" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="352" y="545" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">AE1</text>
+  <text x="384" y="524" font-size="9.5" fill="#475569" font-weight="600">闰细胞</text>
+  <rect x="46" y="544" width="430" height="20" fill="#fee2e2" fill-opacity="0.5" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="52" y="558" font-size="9" fill="#991b1b">血液</text>
+  <line x1="112" y1="488" x2="112" y2="518" stroke="#059669" stroke-width="1.5" marker-end="url(#arr-ok)"/>
+  <line x1="150" y1="528" x2="150" y2="560" stroke="#6d28d9" stroke-width="1.5" marker-end="url(#arr-pro)"/>
+  <line x1="362" y1="528" x2="362" y2="492" stroke="#6d28d9" stroke-width="1.5" marker-end="url(#arr-pro)"/>
+  <text x="490" y="486" font-size="9" fill="#475569">ENaC 高选择性生电钠通道，受醛固酮上调；</text>
+  <text x="490" y="502" font-size="9" fill="#475569">阿米洛利直插孔道。Na<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1"> 入胞使管腔变负，</tspan></text>
+  <text x="490" y="518" font-size="9" fill="#475569">牵动 ROMK 泌 K<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">——保钠与泌钾共用同一电位设计</tspan></text>
+  <text x="490" y="578" font-size="9" fill="#475569">A 型闰细胞：</text>
+  <text x="490" y="593" font-size="9" fill="#475569">H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">-ATPase 可酸化尿液至 pH≈4.4，</tspan></text>
+  <text x="490" y="608" font-size="9" fill="#475569">AE1 以 Cl<tspan dy="-3.1" font-size="6.5">−</tspan><tspan dy="3.1">/HCO</tspan><tspan dy="2.0" font-size="6.5">3</tspan><tspan dy="-5.0" font-size="6.5">-</tspan><tspan dy="3.1"> 交换回收碱</tspan></text>
+  <text x="46" y="578" font-size="9" fill="#64748b">NKCC2 / ROMK / ClC-Kb / barttin / CaSR 突变分别对应 Bartter 五型</text>
+  <rect x="710" y="132" width="660" height="455" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、小肠：吸收与分泌的天平</text>
+  <text x="726" y="180" font-size="10" fill="#64748b">肠腔</text>
+  <rect x="738.4" y="187.5" width="73.2" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="775" y="199.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">霍乱毒素</text>
+  <rect x="810.1" y="187.5" width="91.8" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="856" y="199.6" font-size="10" fill="#991b1b" text-anchor="middle">Gsα 锁死活化</text>
+  <rect x="896.5" y="187.5" width="79" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="936" y="199.6" font-size="10" fill="#991b1b" text-anchor="middle">cAMP 积聚</text>
+  <rect x="984.7" y="187.5" width="50.6" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1010" y="199.6" font-size="10" fill="#991b1b" text-anchor="middle">PKA</text>
+  <line x1="809" y1="196" x2="822" y2="196" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="890" y1="196" x2="903" y2="196" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="969" y1="196" x2="985" y2="196" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <line x1="1000" y1="207" x2="984" y2="234" stroke="#dc2626" stroke-width="1.6" marker-end="url(#arr-bad)"/>
+  <rect x="740" y="255" width="330" height="105" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="760" y="246" width="52" height="18" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="786" y="258" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">SGLT1</text>
+  <rect x="832" y="246" width="48" height="18" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="856" y="258" font-size="8.5" fill="#78350f" text-anchor="middle" font-weight="700">GLUT5</text>
+  <rect x="898" y="246" width="44" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="920" y="258" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">NHE3</text>
+  <rect x="958" y="246" width="46" height="18" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="981" y="258" font-size="8.5" fill="#991b1b" text-anchor="middle" font-weight="700">CFTR</text>
+  <circle cx="981" cy="220" r="9" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="981" y="223.06" font-size="8.5" fill="#991b1b" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.9" font-size="6.1">−</tspan></text>
+  <line x1="981" y1="244" x2="981" y2="231" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="822" y1="218" x2="822" y2="244" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <line x1="889" y1="218" x2="889" y2="244" stroke="#be185d" stroke-width="1.6" marker-end="url(#arr-enz)"/>
+  <rect x="770" y="351" width="48" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="794" y="363" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">GLUT2</text>
+  <rect x="840" y="351" width="84" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="882" y="363" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">/K</tspan><tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">-ATPase</tspan></text>
+  <line x1="800" y1="370" x2="800" y2="384" stroke="#0369a1" stroke-width="1.5" marker-end="url(#arr-acc)"/>
+  <line x1="870" y1="370" x2="870" y2="384" stroke="#6d28d9" stroke-width="1.5" marker-end="url(#arr-pro)"/>
+  <text x="726" y="380" font-size="10" fill="#64748b">血液</text>
+  <line x1="1060" y1="345" x2="1060" y2="262" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arr-bad)"/>
+  <text x="726" y="396" font-size="9.5" fill="#475569">Cl<tspan dy="-3.2" font-size="6.8">−</tspan><tspan dy="3.2"> 分泌 → 管腔变负 → Na</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 与水循电-渗透梯度倾泻（米泔水样便）</tspan></text>
+  <rect x="1086" y="175" width="268" height="200" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.6"/>
+  <text x="1100" y="199" font-size="12" fill="#065f46" font-weight="700">口服补液盐（ORS）的洞见</text>
+  <text x="1100" y="224" font-size="9.5" fill="#065f46">霍乱毒素锁死 Gsα、cAMP 积聚开 CFTR；</text>
+  <text x="1100" y="241" font-size="9.5" fill="#065f46">但 SGLT1 不归 cAMP 管辖——只要葡萄糖在，</text>
+  <text x="1100" y="258" font-size="9.5" fill="#065f46">Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">-葡萄糖耦联吸收照常运转，水随之回收</tspan></text>
+  <text x="1100" y="292" font-size="9.5" fill="#065f46">WHO 低渗配方约 245 mOsm/L</text>
+  <text x="1100" y="309" font-size="9.5" fill="#065f46">（钠与葡萄糖各约 75 mmol/L），</text>
+  <text x="1100" y="326" font-size="9.5" fill="#065f46">把病死率从两三成压到 1% 以下</text>
+  <rect x="1108.416" y="339.5" width="223.16800000000003" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="1220" y="351.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">《柳叶刀》：20 世纪最重要医学进步之一</text>
+  <text x="726" y="440" font-size="9.5" fill="#475569">顶端常备：SGLT1（葡萄糖/半乳糖＋Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">）、GLUT5（果糖易化扩散）</tspan></text>
+  <text x="726" y="457" font-size="9.5" fill="#475569">、NHE3 回收 Na<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 带动水吸收；</tspan></text>
+  <text x="726" y="474" font-size="9.5" fill="#475569">基侧 GLUT2 卸货——三件套接力即矢量语法</text>
+  <text x="1046" y="440" font-size="9.5" fill="#475569">病理的教科书即霍乱：米泔水样便可在数小时内放空循环血量；</text>
+  <text x="1046" y="457" font-size="9.5" fill="#475569">吸收与分泌共用同一套零件，差别只在 CFTR 这枚开关的调门</text>
+  <text x="726" y="500" font-size="9.5" fill="#64748b">汗腺与唾液腺导管以同一套极性语法改造初始分泌液——汗液 Cl<tspan dy="-3.2" font-size="6.8">−</tspan><tspan dy="3.2"> 异常升高是 CFTR 缺陷的诊断窗口</tspan></text>
+  <text x="726" y="530" font-size="9.5" fill="#475569">读图能力比背图重要：换掉顶端膜的一枚芯片，近端小管就变成 TAL，再换三枚就成了集合管</text>
+  <rect x="30" y="602" width="660" height="383" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="624.84" font-size="19" fill="#475569" font-weight="700">三、胃底腺壁细胞：体内最酸的隔间</text>
+  <text x="46" y="648" font-size="10" fill="#64748b">胃腔</text>
+  <rect x="180.71499999999997" y="639.5" width="154.57000000000005" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="258" y="651.6" font-size="10" fill="#991b1b" text-anchor="middle" font-weight="700">HCl 0.16 mol/L（pH 1–2）</text>
+  <rect x="60" y="660" width="290" height="170" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <path d="M 150,660 L 150,755 L 178,755 L 178,660" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="196" y="690" font-size="9.5" fill="#475569">分泌小管</text>
+  <rect x="112" y="698" width="38" height="17" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="131" y="711" font-size="6.5" fill="#4c1d95" text-anchor="middle" font-weight="700">H<tspan dy="-2.2" font-size="4.7">+</tspan><tspan dy="2.2">/K</tspan><tspan dy="-2.2" font-size="4.7">+</tspan><tspan dy="2.2">泵</tspan></text>
+  <rect x="180" y="724" width="38" height="17" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="199" y="737" font-size="6.5" fill="#4c1d95" text-anchor="middle" font-weight="700">H<tspan dy="-2.2" font-size="4.7">+</tspan><tspan dy="2.2">/K</tspan><tspan dy="-2.2" font-size="4.7">+</tspan><tspan dy="2.2">泵</tspan></text>
+  <rect x="112" y="740" width="38" height="16" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="131" y="751" font-size="6.5" fill="#075985" text-anchor="middle" font-weight="700">Cl<tspan dy="-2.2" font-size="4.7">−</tspan><tspan dy="2.2"> 通道</tspan></text>
+  <circle cx="164" cy="680" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="164" y="682.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">H<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <circle cx="164" cy="706" r="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="164" y="708.52" font-size="7" fill="#991b1b" text-anchor="middle" font-weight="700">H<tspan dy="-2.4" font-size="5.0">+</tspan></text>
+  <line x1="158" y1="748" x2="158" y2="666" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="196" y="786" font-size="9" fill="#475569">碳酸酐酶：CO<tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">＋H</tspan><tspan dy="2.0" font-size="6.5">2</tspan><tspan dy="-2.0">O → H</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">＋HCO</tspan><tspan dy="2.0" font-size="6.5">3</tspan><tspan dy="-5.0" font-size="6.5">-</tspan></text>
+  <rect x="80" y="821" width="86" height="18" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="123" y="833" font-size="7.5" fill="#4c1d95" text-anchor="middle" font-weight="700">Na<tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">/K</tspan><tspan dy="-2.6" font-size="5.4">+</tspan><tspan dy="2.6">-ATPase</tspan></text>
+  <rect x="190" y="821" width="44" height="18" rx="4" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="212" y="833" font-size="8.5" fill="#831843" text-anchor="middle" font-weight="700">AE2</text>
+  <text x="46" y="856" font-size="10" fill="#64748b">血液</text>
+  <rect x="360" y="655" width="300" height="108" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="374" y="679" font-size="12" fill="#78350f" font-weight="700">奥美拉唑：前药的共价打击</text>
+  <text x="374" y="703" font-size="9" fill="#78350f">质子泵抑制剂为前药，</text>
+  <text x="374" y="719" font-size="9" fill="#78350f">在酸性分泌小管中活化后共价修饰 H<tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">/K</tspan><tspan dy="-3.1" font-size="6.5">+</tspan><tspan dy="3.1">-ATPase 的半胱氨酸残基；</tspan></text>
+  <text x="374" y="735" font-size="9" fill="#78350f">须餐前约 30 分钟服用，以赶上新泵上岗</text>
+  <rect x="360" y="778" width="300" height="88" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="374" y="802" font-size="12" fill="#475569" font-weight="700">同细胞的第二份工：内因子</text>
+  <text x="374" y="826" font-size="9" fill="#475569">壁细胞还分泌内因子，缺失即维生素 B<tspan dy="2.0" font-size="6.5">12</tspan><tspan dy="-2.0"> 吸收障碍与恶性贫血</tspan></text>
+  <text x="360" y="886" font-size="9.5" fill="#64748b">顶端内陷成分泌小管——泌酸是「泵＋通道＋插膜」的三重协奏</text>
+  <text x="46" y="906" font-size="9.5" fill="#475569">H<tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">/K</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">-ATPase（P 型泵）把 H</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2"> 泵出换入 K</tspan><tspan dy="-3.2" font-size="6.8">+</tspan><tspan dy="3.2">，Cl</tspan><tspan dy="-3.2" font-size="6.8">−</tspan><tspan dy="3.2"> 经通道跟进——分泌约 0.16 mol/L 盐酸；同一节段换一套膜蛋白清单即换一份生理合同</tspan></text>
+  <rect x="710" y="602" width="660" height="383" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="624.84" font-size="19" fill="#475569" font-weight="700">四、血脑屏障：把细胞旁路拧到极紧</text>
+  <text x="726" y="660" font-size="10" fill="#64748b">脑侧（神经元＋星形胶质细胞足突）</text>
+  <rect x="760" y="678" width="110" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <rect x="970" y="678" width="110" height="12" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.4"/>
+  <rect x="740" y="690" width="170" height="80" rx="5" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <rect x="940" y="690" width="170" height="80" rx="5" fill="#f8fafc" stroke="#475569" stroke-width="1.8"/>
+  <text x="795" y="728" font-size="9" fill="#075985">GLUT1：脑供糖</text>
+  <text x="795" y="748" font-size="9" fill="#991b1b">P-gp：药物外排</text>
+  <line x1="913" y1="752" x2="937" y2="752" stroke="#6d28d9" stroke-width="3" stroke-dasharray="5 4"/>
+  <line x1="913" y1="760" x2="937" y2="760" stroke="#6d28d9" stroke-width="3" stroke-dasharray="5 4"/>
+  <line x1="913" y1="768" x2="937" y2="768" stroke="#6d28d9" stroke-width="3" stroke-dasharray="5 4"/>
+  <rect x="998.1949999999999" y="703.925" width="73.61000000000001" height="16.15" rx="7" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="1035" y="715.42" font-size="9.5" fill="#4c1d95" text-anchor="middle">claudin-5</text>
+  <rect x="770" y="761" width="46" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="793" y="773" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">GLUT1</text>
+  <rect x="850" y="761" width="42" height="18" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="871" y="773" font-size="8.5" fill="#991b1b" text-anchor="middle" font-weight="700">P-gp</text>
+  <rect x="790" y="681" width="46" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="813" y="693" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">GLUT1</text>
+  <rect x="990" y="681" width="46" height="18" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1013" y="693" font-size="8.5" fill="#075985" text-anchor="middle" font-weight="700">GLUT1</text>
+  <line x1="760" y1="798" x2="760" y2="662" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <line x1="845" y1="756" x2="845" y2="796" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <line x1="925" y1="795" x2="925" y2="775" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-mute)"/>
+  <line x1="918" y1="769" x2="932" y2="783" stroke="#dc2626" stroke-width="2.2"/>
+  <line x1="932" y1="769" x2="918" y2="783" stroke="#dc2626" stroke-width="2.2"/>
+  <ellipse cx="1000" cy="800" rx="26" ry="14" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="1000" y="804" font-size="8" fill="#991b1b" text-anchor="middle">RBC</text>
+  <text x="726" y="800" font-size="10" fill="#64748b">血液</text>
+  <text x="1120" y="745" font-size="9" fill="#4c1d95">星形胶质细胞足突包裹毛细血管，参与屏障维持</text>
+  <text x="726" y="862" font-size="9.5" fill="#475569">GLUT1 持续为脑供糖：脑每日约耗 100–120 g 葡萄糖；缺陷致 GLUT1 缺陷综合征（癫痫、脑脊液糖低，生酮饮食治疗）</text>
+  <text x="726" y="884" font-size="9.5" fill="#475569">P-gp 把脂溶性药物主动外排回血液——多药耐药、抗癌药难以入脑；紧密连接封死细胞旁路</text>
+  <text x="726" y="906" font-size="9.5" fill="#475569">把紧密连接从「泄漏」拧到「极紧」，普通毛细血管就升格为血脑屏障</text>
+  <text x="726" y="930" font-size="9.5" fill="#64748b">七个器官共用一套语法：极性布阵、钠梯度供能、紧密连接把关——差异只在零件清单与调门方式</text>
+</svg>

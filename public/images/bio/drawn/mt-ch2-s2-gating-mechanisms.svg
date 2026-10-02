@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">门控机制：电压、配体、机械与植物的反向用法</text>
+  <text x="700" y="74" text-anchor="middle" font-size="17" fill="#64748b">S4精氨酸滑尺把毫伏译成开门（Nav门控电荷12–16e）；配体门控分居膜两侧（Cys-loopvsCNG/BK）；Piezo三叶桨对植物MSL/OSCA；KAT1去极化激活却内向导通、TPC1</text>
+  <text x="700" y="100" text-anchor="middle" font-size="17" fill="#64748b">换胞器换离子——门控失效即长QT与Dravet</text>
+  <rect x="30" y="132" width="660" height="295" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、电压门控：S4 精氨酸滑尺（sliding helix）</text>
+  <text x="195" y="185" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">静息：胞内为负，S4 被拉向胞内侧</text>
+  <g><circle cx="75" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="75" y1="259" x2="75" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="75" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="99" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="99" y1="259" x2="99" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="99" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="123" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="123" y1="259" x2="123" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="123" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="147" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="147" y1="259" x2="147" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="147" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="171" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="171" y1="259" x2="171" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="171" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="195" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="195" y1="259" x2="195" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="195" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="219" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="219" y1="259" x2="219" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="219" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="243" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="243" y1="259" x2="243" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="243" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="267" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="267" y1="259" x2="267" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="267" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="291" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="291" y1="259" x2="291" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="291" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="315" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="315" y1="259" x2="315" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="315" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="95" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="122" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="149" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="186" y="256" width="12" height="54" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <rect x="225" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="262" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <path d="M235,236 L235,253 Q249,268 262,253 L262,236" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="233" y1="286" x2="254" y2="302" stroke="#be185d" stroke-width="2.2"/>
+  <line x1="264" y1="286" x2="243" y2="302" stroke="#be185d" stroke-width="2.2"/>
+  <line x1="204" y1="262" x2="204" y2="296" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arr-bad)"/>
+  <text x="100" y="227" font-size="9" fill="#64748b" text-anchor="middle">S1</text>
+  <text x="127" y="227" font-size="9" fill="#64748b" text-anchor="middle">S2</text>
+  <text x="154" y="227" font-size="9" fill="#64748b" text-anchor="middle">S3</text>
+  <text x="192" y="227" font-size="9" fill="#64748b" text-anchor="middle">S4</text>
+  <text x="230" y="227" font-size="9" fill="#64748b" text-anchor="middle">S5</text>
+  <text x="267" y="227" font-size="9" fill="#64748b" text-anchor="middle">S6</text>
+  <text x="60" y="240" font-size="10" fill="#64748b">胞外</text>
+  <text x="60" y="322" font-size="10" fill="#64748b">胞内</text>
+  <text x="249" y="316" font-size="10.5" fill="#991b1b" text-anchor="middle" font-weight="700">闸关</text>
+  <circle cx="192" cy="264" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="192" y="267.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="192" cy="277" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="192" y="280.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="192" cy="290" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="192" y="293.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="192" cy="303" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="192" y="306.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <text x="485" y="185" font-size="12.5" fill="#075985" text-anchor="middle" font-weight="700">去极化：电场翻转，S4 旋转上移 1–2 nm</text>
+  <g><circle cx="365" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="365" y1="259" x2="365" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="365" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="389" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="389" y1="259" x2="389" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="389" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="413" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="413" y1="259" x2="413" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="413" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="437" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="437" y1="259" x2="437" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="437" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="461" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="461" y1="259" x2="461" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="461" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="485" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="485" y1="259" x2="485" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="485" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="509" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="509" y1="259" x2="509" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="509" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="533" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="533" y1="259" x2="533" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="533" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="557" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="557" y1="259" x2="557" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="557" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="581" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="581" y1="259" x2="581" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="581" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="605" cy="255" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="605" y1="259" x2="605" y2="264" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="605" cy="268" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="385" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="412" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="439" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="476" y="232" width="12" height="54" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <rect x="515" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <rect x="552" y="232" width="10" height="54" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <path d="M525,236 L525,253 Q539,268 552,253 L552,236" fill="none" stroke="#0f766e" stroke-width="2.4"/>
+  <line x1="523" y1="286" x2="513" y2="302" stroke="#059669" stroke-width="2.2"/>
+  <line x1="554" y1="286" x2="564" y2="302" stroke="#059669" stroke-width="2.2"/>
+  <line x1="494" y1="292" x2="494" y2="258" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="390" y="227" font-size="9" fill="#64748b" text-anchor="middle">S1</text>
+  <text x="417" y="227" font-size="9" fill="#64748b" text-anchor="middle">S2</text>
+  <text x="444" y="227" font-size="9" fill="#64748b" text-anchor="middle">S3</text>
+  <text x="482" y="227" font-size="9" fill="#64748b" text-anchor="middle">S4</text>
+  <text x="520" y="227" font-size="9" fill="#64748b" text-anchor="middle">S5</text>
+  <text x="557" y="227" font-size="9" fill="#64748b" text-anchor="middle">S6</text>
+  <text x="539" y="316" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">闸开</text>
+  <circle cx="482" cy="240" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="482" y="243.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="482" cy="253" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="482" y="256.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="482" cy="266" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="482" y="269.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <circle cx="482" cy="279" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="482" y="282.24" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">+</text>
+  <line x1="322" y1="245" x2="358" y2="245" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-ink)"/>
+  <text x="340" y="233" font-size="10.5" fill="#075985" text-anchor="middle" font-weight="600">去极化</text>
+  <text x="46" y="348" font-size="11.5" fill="#475569">· S4 每隔 3 个残基一个精氨酸（Arg），像带齿的正电荷齿条；Nav 门控电荷总量约 12–16 e（Kv 约 3–13 e）</text>
+  <text x="46" y="371" font-size="11.5" fill="#475569">· 滑移螺旋：S4 边旋转边交换氢键伙伴；螺旋桨模型：S4 连同 S3b 像桨叶整体横扫过膜</text>
+  <text x="46" y="394" font-size="11.5" fill="#475569">· 传感器运动经 S4–S5 连接螺旋这一杠杆传给孔道，闸门应声而开</text>
+  <text x="46" y="417" font-size="11.5" fill="#475569">· 失活另算：N 型链球（数十 ms）甩进内口、C 型滤器塌陷（数百 ms）——门开着也可能失活</text>
+  <rect x="710" y="132" width="660" height="295" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、配体门控：胞外与胞内的两个世界</text>
+  <text x="880" y="182" font-size="13" fill="#4c1d95" text-anchor="middle" font-weight="700">胞外配体：Cys-loop 五聚体（动物独有）</text>
+  <circle cx="865" cy="214" r="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="910.6" cy="247.2" r="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="893.2" cy="300.8" r="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="836.8" cy="300.8" r="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="819.4" cy="247.2" r="20" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="865" cy="258" r="13" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <circle cx="893.2" cy="223.2" r="7" fill="#be185d" stroke="#831843" stroke-width="1.2"/>
+  <text x="920" y="212" font-size="10.5" fill="#831843" font-weight="700">ACh</text>
+  <line x1="918" y1="215" x2="898" y2="220" stroke="#94a3b8" stroke-width="1"/>
+  <text x="865" y="340" font-size="11.5" fill="#475569" text-anchor="middle">nAChR · 5-HT<tspan dy="2.5" font-size="8.3">3</tspan><tspan dy="-2.5">（阳离子）｜GABA</tspan><tspan dy="2.5" font-size="8.3">A</tspan><tspan dy="-2.5"> · GlyR（Cl</tspan><tspan dy="-3.9" font-size="8.3">-</tspan><tspan dy="3.9">）</tspan></text>
+  <text x="865" y="362" font-size="11" fill="#475569" text-anchor="middle">每亚基 4TMS；闸门＝五个 M2 中央疏水环</text>
+  <text x="865" y="384" font-size="11" fill="#475569" text-anchor="middle">结合令亚基扭转约 15°——数十 μs 孔开，快突触</text>
+  <text x="865" y="406" font-size="11" fill="#475569" text-anchor="middle">药理富矿：苯二氮类增强 GABA<tspan dy="2.4" font-size="7.9">A</tspan><tspan dy="-2.4">；银环蛇毒素别住 nAChR</tspan></text>
+  <text x="1197" y="182" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">胞内配体：第二信使开门</text>
+  <g><circle cx="1050" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1050" y1="254" x2="1050" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1050" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1074" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1074" y1="254" x2="1074" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1074" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1098" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1098" y1="254" x2="1098" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1098" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1122" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1122" y1="254" x2="1122" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1122" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1146" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1146" y1="254" x2="1146" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1146" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1170" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1170" y1="254" x2="1170" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1170" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1194" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1194" y1="254" x2="1194" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1194" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1218" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1218" y1="254" x2="1218" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1218" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1242" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1242" y1="254" x2="1242" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1242" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1266" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1266" y1="254" x2="1266" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1266" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1290" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1290" y1="254" x2="1290" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1290" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1314" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1314" y1="254" x2="1314" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1314" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="1338" cy="250" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="1338" y1="254" x2="1338" y2="259" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="1338" cy="263" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="1086" y="237" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="1114" y="237" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1100" y="231" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">CNG / HCN</text>
+  <rect x="1078.91" y="295" width="42.18" height="20" rx="7" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+  <text x="1100" y="308.96" font-size="11" fill="#831843" text-anchor="middle">cAMP</text>
+  <line x1="1100" y1="293" x2="1100" y2="281" stroke="#be185d" stroke-width="1.8" marker-end="url(#arr-enz)"/>
+  <rect x="1266" y="237" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="1294" y="237" width="12" height="42" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1280" y="231" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">BK 通道</text>
+  <circle cx="1280" cy="305" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="1280" y="308.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.9" font-size="6.1">2+</tspan></text>
+  <line x1="1280" y1="293" x2="1280" y2="281" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <text x="1045" y="336" font-size="10.5" fill="#475569">CNG/HCN：</text>
+  <text x="1045" y="356" font-size="10.5" fill="#475569">cAMP·cGMP 结合胞内 C 端环——视网膜光感受器与嗅上皮的换能器</text>
+  <text x="1045" y="380" font-size="10.5" fill="#475569">BK：胞内 Ca<tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6"> 与膜电压双重门控，钙火花瞬间打开大电导</tspan></text>
+  <text x="726" y="420" font-size="11" fill="#065f46">植物两侧都用：CNGC（环核苷酸＋Ca<tspan dy="-3.7" font-size="7.9">2+</tspan><tspan dy="3.7">-CaM 调制）· GLR（氨基酸门控）· 磷酸化（OST1→SLAC1 关气孔）</tspan></text>
+  <rect x="30" y="440" width="660" height="295" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="462.84" font-size="19" fill="#475569" font-weight="700">三、机械门控：把膜张力翻译成开孔</text>
+  <text x="200" y="488" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="700">动物：Piezo 三叶桨 · 听毛 tip-link</text>
+  <path d="M177.4,562.7 Q183.6,513.6 150.0,497.0 Q116.4,513.6 122.6,562.7 Z" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M146.9,604.8 Q186.4,634.8 217.5,614.0 Q220.0,576.7 174.3,557.4 Z" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <path d="M125.7,557.4 Q80.0,576.7 82.5,614.0 Q113.6,634.8 153.1,604.8 Z" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <circle cx="150" cy="575" r="11" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="150" y="640" font-size="12" fill="#4c1d95" text-anchor="middle" font-weight="700">Piezo1/2</text>
+  <text x="150" y="658" font-size="10.5" fill="#64748b" text-anchor="middle">触觉 · 血压 · 红细胞容量检查</text>
+  <line x1="272" y1="528" x2="312" y2="528" stroke="#0369a1" stroke-width="1.8" marker-end="url(#arr-acc)"/>
+  <text x="292" y="518" font-size="10.5" fill="#075985" text-anchor="middle">毛束偏转</text>
+  <polygon points="283,620 291,620 303,540 295,540" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <polygon points="315,620 323,620 329,565 321,565" fill="#f1f5f9" stroke="#475569" stroke-width="1.6"/>
+  <line x1="299" y1="543" x2="323" y2="566" stroke="#be185d" stroke-width="2"/>
+  <rect x="320" y="563" width="10" height="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="340" y="572" font-size="9" fill="#075985" font-weight="700">MET</text>
+  <line x1="275" y1="620" x2="335" y2="620" stroke="#475569" stroke-width="2"/>
+  <text x="305" y="640" font-size="10.5" fill="#475569" text-anchor="middle">听毛顶端连接</text>
+  <text x="305" y="658" font-size="10.5" fill="#475569" text-anchor="middle">直接拽开 MET 通道</text>
+  <text x="525" y="486" font-size="12.5" fill="#065f46" text-anchor="middle" font-weight="700">植物：MSL 安全阀 · OSCA 钙哨</text>
+  <g><circle cx="395" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="395" y1="549" x2="395" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="395" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="419" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="419" y1="549" x2="419" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="419" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="443" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="443" y1="549" x2="443" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="443" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="467" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="467" y1="549" x2="467" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="467" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="491" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="491" y1="549" x2="491" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="491" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="515" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="515" y1="549" x2="515" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="515" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="440" y="532" width="12" height="38" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="460" y="532" width="12" height="38" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="456" y="502" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">MSL</text>
+  <circle cx="450" cy="518" r="3" fill="#0369a1"/>
+  <circle cx="460" cy="512" r="3" fill="#0369a1"/>
+  <circle cx="455" cy="505" r="3" fill="#0369a1"/>
+  <circle cx="452" cy="590" r="3" fill="#0369a1"/>
+  <circle cx="462" cy="596" r="3" fill="#0369a1"/>
+  <circle cx="456" cy="603" r="3" fill="#0369a1"/>
+  <line x1="456" y1="508" x2="456" y2="600" stroke="#0369a1" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-acc)"/>
+  <text x="456" y="616" font-size="10.5" fill="#64748b" text-anchor="middle">（拟南芥 10 个）</text>
+  <text x="456" y="634" font-size="10.5" fill="#475569" text-anchor="middle">MscS 血统 · 渗透放水防裂解</text>
+  <text x="456" y="652" font-size="10.5" fill="#475569" text-anchor="middle">MSL8 守花粉 · MSL10 高渗</text>
+  <g><circle cx="545" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="545" y1="549" x2="545" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="545" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="569" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="569" y1="549" x2="569" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="569" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="593" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="593" y1="549" x2="593" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="593" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="617" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="617" y1="549" x2="617" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="617" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="641" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="641" y1="549" x2="641" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="641" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="665" cy="545" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="665" y1="549" x2="665" y2="554" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="665" cy="558" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="593" y="532" width="11" height="38" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="616" y="532" width="11" height="38" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="610" y="502" font-size="11" fill="#065f46" text-anchor="middle" font-weight="700">OSCA</text>
+  <line x1="610" y1="574" x2="610" y2="581" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="610" cy="592" r="8.5" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="610" y="594.88" font-size="8" fill="#92400e" text-anchor="middle" font-weight="700">Ca<tspan dy="-2.7" font-size="5.8">2+</tspan></text>
+  <text x="610" y="616" font-size="10.5" fill="#475569" text-anchor="middle">渗透骤降→Ca<tspan dy="-3.6" font-size="7.6">2+</tspan><tspan dy="3.6"> 信号</tspan></text>
+  <text x="610" y="634" font-size="10.5" fill="#475569" text-anchor="middle">根尖高盐第一哨</text>
+  <text x="46" y="678" font-size="11" fill="#475569">Piezo 桨叶间的膜凹陷随张力变形牵开中央孔；植物阵容承袭细菌 MscS/MscL 的安全阀血统——保卫细胞感受膨压变化、</text>
+  <text x="46" y="696" font-size="11" fill="#475569">根尖感知触摸与缠绕。</text>
+  <rect x="710" y="440" width="660" height="295" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="462.84" font-size="19" fill="#475569" font-weight="700">四、植物特色：同一门控、反向用法</text>
+  <text x="868" y="490" font-size="12.5" fill="#134e4a" text-anchor="middle" font-weight="700">KAT1：去极化激活却内向导通</text>
+  <text x="830" y="522" font-size="9.5" fill="#134e4a" text-anchor="middle">V<tspan dy="2.1" font-size="6.8">1/2</tspan><tspan dy="-2.1">≈−120 mV</tspan></text>
+  <rect x="810" y="528" width="40" height="18" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="830" y="541" font-size="10" fill="#134e4a" text-anchor="middle" font-weight="700">KAT1</text>
+  <text x="936" y="522" font-size="9.5" fill="#075985" text-anchor="middle">V<tspan dy="2.1" font-size="6.8">1/2</tspan><tspan dy="-2.1"> −20~+20 mV</tspan></text>
+  <rect x="916" y="528" width="40" height="18" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="936" y="541" font-size="10" fill="#075985" text-anchor="middle" font-weight="700">Kv</text>
+  <line x1="830" y1="546" x2="830" y2="560" stroke="#0f766e" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="936" y1="546" x2="936" y2="560" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="740" y1="560" x2="1000" y2="560" stroke="#475569" stroke-width="1.8" marker-end="url(#arr-ink)"/>
+  <line x1="760" y1="556" x2="760" y2="564" stroke="#475569" stroke-width="1.8"/>
+  <text x="760" y="578" font-size="10" fill="#64748b" text-anchor="middle">−200</text>
+  <line x1="848" y1="556" x2="848" y2="564" stroke="#475569" stroke-width="1.8"/>
+  <text x="848" y="578" font-size="10" fill="#64748b" text-anchor="middle">−100</text>
+  <line x1="936" y1="556" x2="936" y2="564" stroke="#475569" stroke-width="1.8"/>
+  <text x="936" y="578" font-size="10" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="980" y1="556" x2="980" y2="564" stroke="#475569" stroke-width="1.8"/>
+  <text x="980" y="578" font-size="10" fill="#64748b" text-anchor="middle">+50</text>
+  <text x="1004" y="564" font-size="10" fill="#64748b">mV</text>
+  <text x="740" y="600" font-size="10.5" fill="#475569">植物静息电位深达 −200 mV 级：</text>
+  <text x="740" y="616" font-size="10.5" fill="#475569">去极化开门时 K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 驱动力仍指向胞内——KAT1 介导内向 K</tspan><tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 流，</tspan></text>
+  <text x="740" y="632" font-size="10.5" fill="#475569">是气孔开放的吸钾主力（先 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">-ATPase 建深负电位，</tspan></text>
+  <text x="740" y="648" font-size="10.5" fill="#475569">再 KAT1 吸钾）。</text>
+  <text x="740" y="664" font-size="10.5" fill="#475569">动物静息约 −70 mV：同一分子逻辑，</text>
+  <text x="740" y="680" font-size="10.5" fill="#475569">Kv 开门放 K<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6"> 外流复极——用法相反的原因不在蛋白，</tspan></text>
+  <text x="740" y="696" font-size="10.5" fill="#475569">而在电化学语境。</text>
+  <text x="1192" y="490" font-size="12.5" fill="#831843" text-anchor="middle" font-weight="700">TPC1：同门不同胞器、不同离子</text>
+  <rect x="1050" y="520" width="160" height="100" rx="18" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <rect x="1118" y="511" width="11" height="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="1135" y="511" width="11" height="18" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1132" y="505" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">TPC1（SV）</text>
+  <text x="1070" y="560" font-size="12" fill="#065f46" text-anchor="middle" font-weight="700">液泡</text>
+  <text x="1070" y="582" font-size="10" fill="#475569" text-anchor="middle">K<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4">/Ca</tspan><tspan dy="-3.4" font-size="7.2">2+</tspan></text>
+  <line x1="1132" y1="580" x2="1132" y2="509" stroke="#d97706" stroke-width="2" marker-end="url(#arr-warn)"/>
+  <text x="1130" y="645" font-size="10" fill="#475569" text-anchor="middle">电压＞−20 mV ＋ 胞质 Ca<tspan dy="-3.4" font-size="7.2">2+</tspan></text>
+  <text x="1130" y="663" font-size="10" fill="#475569" text-anchor="middle">双重门控才充分开放</text>
+  <circle cx="1290" cy="570" r="40" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="1282" y="521" width="10" height="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <rect x="1296" y="521" width="10" height="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="1290" y="505" font-size="10.5" fill="#4c1d95" text-anchor="middle" font-weight="600">TPCN1/2</text>
+  <text x="1290" y="565" font-size="11.5" fill="#991b1b" text-anchor="middle" font-weight="700">溶酶体</text>
+  <text x="1290" y="585" font-size="10.5" fill="#475569" text-anchor="middle">Na<tspan dy="-3.6" font-size="7.6">+</tspan></text>
+  <text x="1290" y="645" font-size="10" fill="#475569" text-anchor="middle">NAADP 门控</text>
+  <text x="1290" y="663" font-size="10" fill="#475569" text-anchor="middle">溶酶体 Na<tspan dy="-3.4" font-size="7.2">+</tspan><tspan dy="3.4"> 通道</tspan></text>
+  <text x="1030" y="690" font-size="10.5" fill="#475569">祖先同一个基因：动物进溶酶体、</text>
+  <text x="1030" y="706" font-size="10.5" fill="#475569">植物上液泡膜——亚细胞定位的改换比序列改写更能定义用法不同</text>
+  <rect x="1059.2" y="711.5" width="131.60000000000002" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1125" y="723.6" font-size="10" fill="#991b1b" text-anchor="middle">长 QT（Kv7.1/hERG）</text>
+  <rect x="1242.4" y="711.5" width="115.20000000000002" height="17" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1300" y="723.6" font-size="10" fill="#991b1b" text-anchor="middle">Dravet（SCN1A）</text>
+  <rect x="30" y="748" width="1340" height="237" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="770.84" font-size="19" fill="#475569" font-weight="700">五、四类门控 × 传感结构 × 两界代表</text>
+  <rect x="46" y="795" width="150" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="822.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">门控类型</text>
+  <rect x="196" y="795" width="200" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="822.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">传感结构</text>
+  <rect x="396" y="795" width="230" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="511" y="822.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">动物代表</text>
+  <rect x="626" y="795" width="220" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="736" y="822.5" font-size="13" fill="#1e293b" text-anchor="middle" font-weight="700">植物代表</text>
+  <rect x="46" y="839" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="858" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">电压门控</text>
+  <rect x="196" y="839" width="200" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="858" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">S4 精氨酸齿条</text>
+  <rect x="396" y="839" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="511" y="858" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">Nav、Cav、Kv、HCN</text>
+  <rect x="626" y="839" width="220" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="736" y="858" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">KAT1、GORK、TPC1</text>
+  <rect x="46" y="866" width="800" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="866" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="885" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">胞外配体门控</text>
+  <rect x="196" y="866" width="200" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="885" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">胞外配体结合域</text>
+  <rect x="396" y="866" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="511" y="885" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">nAChR、GABA<tspan dy="2.6" font-size="8.6">A</tspan></text>
+  <rect x="626" y="866" width="220" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="736" y="885" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">GLR（氨基酸门控）</text>
+  <rect x="46" y="893" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="912" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">胞内配体门控</text>
+  <rect x="196" y="893" width="200" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="912" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">核苷酸/Ca<tspan dy="-4.1" font-size="8.6">2+</tspan><tspan dy="4.1"> 结合域</tspan></text>
+  <rect x="396" y="893" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="511" y="912" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">CNG、HCN、BK</text>
+  <rect x="626" y="893" width="220" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="736" y="912" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">CNGC</text>
+  <rect x="46" y="920" width="800" height="27" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="46" y="920" width="150" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="121" y="939" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="700">机械门控</text>
+  <rect x="196" y="920" width="200" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="296" y="939" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">桨叶/膜张力感受</text>
+  <rect x="396" y="920" width="230" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="511" y="939" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">Piezo1/2、MET</text>
+  <rect x="626" y="920" width="220" height="27" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="736" y="939" font-size="12" fill="#475569" text-anchor="middle" font-weight="500">MSL、OSCA</text>
+  <rect x="866" y="780" width="490" height="182" rx="10" fill="#fee2e2" fill-opacity="0.5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="886" y="804" font-size="15" fill="#991b1b" font-weight="700">门控失效即疾病</text>
+  <text x="886" y="828" font-size="11" fill="#475569">长 QT 综合征：Kv7.1/hERG 门控减弱 → I<tspan dy="2.4" font-size="7.9">Ks</tspan><tspan dy="-2.4">/I</tspan><tspan dy="2.4" font-size="7.9">Kr</tspan><tspan dy="-2.4"> 不足 → QT 延长，易触发尖端扭转型室速</tspan></text>
+  <text x="886" y="848" font-size="11" fill="#475569">（药物误堵 hERG 亦然）</text>
+  <text x="886" y="870" font-size="11" fill="#475569">SCN1A（Nav1.1）功能缺失：</text>
+  <text x="886" y="890" font-size="11" fill="#475569">抑制性中间神经元先失能 → 网络去抑制 → Dravet 综合征重症癫痫</text>
+  <text x="886" y="914" font-size="11" fill="#475569">植物门控失效以表型现形：cngc 免疫钙信号缺陷、msl 膨压调控异常、tpc1 气孔运动迟缓</text>
+  <text x="46" y="966" font-size="11" fill="#475569">药理深知门控：河豚毒素无差别堵 Nav 全家；拉莫三嗪偏待高放电频率通道（使用依赖性）——改门控的药比堵孔的药更讲选择</text>
+</svg>

@@ -93,8 +93,8 @@ export function Dashboard() {
             </h1>
             <div className="bio-rule mt-5" aria-hidden />
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              覆盖生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学、生物信息学、病毒学、结构生物学实验方法、X射线晶体学、电子显微学与生理学十三大基础学科，
-              系统梳理生命的分子逻辑、细胞世界、结构解析方法与人体功能调节。
+              覆盖生物化学、分子生物学、细胞生物学、生物物理学、微生物学、免疫学、神经生物学、生物信息学、病毒学、结构生物学实验方法、X射线晶体学、电子显微学、生理学与膜蛋白与物质转运十四大基础学科，
+              系统梳理生命的分子逻辑、细胞世界、结构解析方法、人体功能调节与两界转运之同异。
             </p>
             <p className="mt-2 text-xs tabular-nums text-muted-foreground/80">
               {TOTAL_CHAPTERS} 章 · {TOTAL_SECTIONS} 小节 · 教材全文约{' '}
@@ -178,7 +178,7 @@ export function Dashboard() {
               <span className="h-2.5 w-2.5 rounded-[2px] bg-primary/70" aria-hidden />
               <h2 className="font-serif text-lg font-bold">学科学习进度</h2>
               <span className="ml-auto text-xs tabular-nums text-muted-foreground">
-                九学科 · {TOTAL_SECTIONS} 小节 · 约 {formatWordCount(totalWordCount)}
+                十四学科 · {TOTAL_SECTIONS} 小节 · 约 {formatWordCount(totalWordCount)}
               </span>
             </div>
             <div className="mt-4 space-y-2">

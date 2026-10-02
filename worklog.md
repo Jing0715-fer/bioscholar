@@ -2780,3 +2780,199 @@ Stage Summary:
 - 生理学学科按既有 12 学科同一标准全量交付：正文（每节 2200–3200 字、H2 分节、表格、术语粗体英文括注、交叉引用）、48 张自绘 SVG（overlap-check 全库零标记）、60 题（single/truefalse/multiple 混合、解析讲机制）、60 词条（g-335~g-394）、封面（桃夭粉 HeartPulse）、全站注册与「十三大」文案
 - 多代理协作经验：单代理运行时限约可完成 4–6 张 SVG 场景，12 张/代理的初始编排必然超时；小批次（4–5 张+单图渲染自检循环）为最优粒度；中断代理常已完成大部分文件写入，重启前先盘点落盘状态可省大量工作
 - 遗留：生理学正文尚未经过 43 系列式 VLM 全量文案科学性审校（可后续纳入「全站文案检查打磨」任务）；SVG 已过解析式+抽检 VLM，可按需补充全量 VLM 视觉审查
+
+---
+Task ID: 46-a
+Agent: 主控（Z.ai Code）
+Task: 规划并启动第十四学科《膜蛋白与物质转运》（membrane-transport / 缩写 mt）——按生理学第十三学科同一标准全量落地：12 章 48 节正文 + 48 张自绘 SVG + 60 题题库 + 60 词条 + 封面 + 全站注册
+
+Work Log:
+- 通读 worklog 尾部与 git log，确认生理学（44 系列）交付标准：每节 2600–3600 字符（实际约 2700）、4–6 个 H2、含表格、术语粗体英文括注、交叉引用；题库 60 题（single/truefalse/multiple 混合、解析讲机制、难度 1:2:3≈2:5:3）；词条 definition ≥80 字含数字；48 张 SVG 经 overlap-check 清零；封面自绘；全站注册与「十四大」文案
+- 摸底注册链：src/lib/types.ts SubjectId → src/data/subjects/<id>.ts + <id>/ch*.ts → biology.ts subjects 数组 + allQuizQuestions → glossary.ts → illustrations.ts subjectCovers + draw-*-p*.ts → subject-theme.ts → scripts/draw/gen.ts SUBJECTS + scenes/<code>/index.ts → 静态文案 5 处（layout.tsx/page.tsx/dashboard.tsx×2/report-view.tsx/assistant-view.tsx，另发现 dashboard.tsx:181 存量「九学科」错误待一并修复为「十四学科」）
+- 已完成主控准备：types.ts 增加 'membrane-transport'；gen.ts SUBJECTS 增加 'mt'；创建 src/data/subjects/mt/ 与 scripts/draw/scenes/mt/ 目录
+- 定稿学科元信息：id=membrane-transport，name=膜蛋白与物质转运，englishName=Membrane Proteins & Transport，color=green（松绿），icon=ArrowLeftRight，教材依据 Stein & Litton《Channels, Carriers, and Pumps》第2版 · Alberts《Molecular Biology of the Cell》第7版 · Taiz & Zeiger《Plant Physiology》第6版 · Guyton & Hall 第14版
+- 定稿 12 章大纲（每章 4 节，动物/植物对照为全书主线）：
+  · ch1 膜与转运总论：s1 膜脂膜蛋白与选择性屏障 / s2 转运热力学（ΔG、Nernst）/ s3 转运蛋白分类总框架与动植物总览（Na⁺ 循环 vs H⁺ 循环）/ s4 研究方法（膜片钳、表达克隆、结构解析）
+  · ch2 离子通道：s1 通道一般性质 / s2 门控机制 / s3 通道超家族分类 / s4 动物与植物通道家族对照（动物 Nav/Cav/Kv/Kir/LGIC/TRP vs 植物 Shaker/GLR/CNGC/TPC1/MSL）
+  · ch3 钾通道与钾转运体：s1 动物钾通道（Kv/Kir/KCa/K2P）/ s2 植物钾通道（KAT1/AKT/GORK/SKOR）/ s3 植物钾转运体（HAK-KUP/KEA/CHX）/ s4 动植物钾稳态对照
+  · ch4 水通道蛋白：s1 AQP 总论（沙漏模型/NPA/ar-R）/ s2 动物 AQP0–12 / s3 植物 PIP/TIP/NIP/SIP / s4 动植物 AQP 调控对照
+  · ch5 载体与易化扩散：s1 载体一般原理（交替通路/M-M 动力学）/ s2 动物 GLUT/SLC2A / s3 植物糖载体（STP/SUC/SWEET）/ s4 动植物糖流对照
+  · ch6 P 型 ATPase：s1 P 型泵总论（E1-E2 循环）/ s2 动物 P 型泵（Na⁺/K⁺ 泵·Ca²⁺ 泵·H⁺/K⁺ 泵）/ s3 植物 P3A H⁺-ATPase（质子主引擎）/ s4 主引擎对照（Na⁺ 循环 vs H⁺ 循环）
+  · ch7 V 型与 F 型 ATPase：s1 V-ATPase 结构 / s2 动物 V-ATPase（溶酶体/破骨细胞/肾闰细胞）/ s3 植物液泡双引擎（V-ATPase+V-PPase）/ s4 F 型 ATP 合酶回顾与三者对照
+  · ch8 次级主动转运：s1 次级转运原理（同向/反向/PMF）/ s2 动物 SLC 超家族（SGLT/NKCC/NHE/AE/NCX）/ s3 植物次级转运家族（NPF/NRT2/AMT/PHT/SULTR/LHT/BOR）/ s4 驱动离子对照（Na⁺ 梯度 vs H⁺ 梯度、NCX vs CAX）
+  · ch9 ABC 转运体：s1 ABC 总论 / s2 动物 ABC（P-gp/CFTR/ABCA1/TAP）/ s3 植物 ABC（ABCB 生长素/ABCG 角质/ABCC 液泡隔离）/ s4 动植物 ABC 功能对照
+  · ch10 钙与金属转运：s1 钙转运（IP3R/RyR/NCX vs CAX/GLR/CNGC）/ s2 铁转运（DMT1-ferroportin-hepcidin vs 策略 I/II）/ s3 锌铜微量元素（ZIP/CTR vs ZIP/HMA/MTP）/ s4 区室化与解毒（液泡隔离+PC vs 金属硫蛋白）
+  · ch11 特化上皮与细胞的转运：s1 上皮转运总论（极性/紧密连接）/ s2 动物特化上皮（肾/肠/血脑屏障/胃）/ s3 植物特化细胞（气孔保卫细胞/根吸收区/盐腺/韧皮部装载）/ s4 气体交换与离子流动植物汇流
+  · ch12 逆境、疾病与演化：s1 动物转运病（CFTR ΔF508/LQT/Bartter/胱氨酸尿）/ s2 植物逆境转运（SOS 通路/HKT1/NHX1 耐盐）/ s3 生物互作（根瘤/菌根/病原 CNGC）/ s4 转运蛋白演化总论与全书异同总结
+- 编排：6 个内容代理（46-b1~b6，每人 2 章 8 节 + 10 题 + 10 词条，g-395~g-454 顺序分配）→ 12 个绘图代理（46-c1~c12，每人 4 张）→ 主控集成（46-d：学科 meta/注册/主题色/封面/文案/QA/commit）
+
+Stage Summary:
+- 《膜蛋白与物质转运》第十四学科启动：大纲定稿（动物/植物转运蛋白分类异同为经纬、Na⁺ 循环 vs H⁺ 循环两大主引擎为纲）、注册链摸清、目录与类型就绪
+- 后续代理须知：本题库词条 ID 分配——b1 g-395~404 / b2 g-405~414 / b3 g-415~424 / b4 g-425~434 / b5 g-435~444 / b6 g-445~454；题目 ID——b1 q-membrane-transport-1~10 … b6 51~60；validate-chapters.ts 的「含 emoji：→」为箭头误报（生理学既 shipped 标准允许 →），其余规则全部执行
+---
+Task ID: 46-b1
+Agent: 内容代理 46-b1
+Task: 膜蛋白与物质转运 ch1–ch2 正文 + 题库 P1 + 词条 P1
+
+Work Log:
+- 开工按序通读 worklog 尾部（46-a 大纲与注册链摸底、44 系列生理学交付标准）、src/data/subjects/ph/ch1.ts（章文件格式标杆）、src/data/quiz/physiology-p1.ts（题库格式标杆）、src/data/glossary-physiology-p1.ts（词条格式标杆）、scripts/validate-chapters.ts（共享校验规则全量）
+- 落盘 src/data/subjects/mt/ch1.ts（mtCh1「膜与转运总论」，4 节 id membrane-transport-ch1-s1~s4）：
+  · s1 膜脂、膜蛋白与选择性屏障：流动镶嵌模型（Singer–Nicolson 1972）膜厚 7.5–10 nm；疏水核心通用屏障（离子自发跨膜半衰期小时–天）；侧向扩散约 10⁻⁸ cm²/s vs 翻转半衰期小时–天（P4 翻转酶/搅酶拉锯）；动物胆固醇占脂质 30%–50% vs 植物谷甾醇/豆甾醇/菜油甾醇；膜蛋白三大类（内在/外周/GPI 锚定）与 α 螺旋/β 桶（孔蛋白）两种跨膜折叠；人类基因组 20%–30% 编码膜蛋白、红细胞膜蛋白:脂:糖 ≈ 5:4:1；糖萼 vs 细胞壁（膨压 0.3–1 MPa）+ 物质透膜速率五档表
+  · s2 转运的热力学：ΔG = RT ln(C₂/C₁) + zFV 与 25 ℃ RT/F ≈ 25.7 mV（十倍浓差 ≈ 59 mV 当量，附 K⁺ 示范算账 +88−70=+18 mV）；Nernst 方程与典型平衡电位（E_K ≈ −90、E_Na ≈ +60~+67、E_Ca > +125 mV）；被动/主动以 ΔG 正负划界（钠泵 ATP 账单 20%–30%）；动植物静息膜电位量级差（动物 −30~−90 mV vs 植物 −120~−250 mV、PMF 折合 250–300 mV、质外体 pH 5.5）；渗透与膨压 + 植物水势 ψ = ψ_s + ψ_p + 动植物离子浓度六行对照表
+  · s3 转运蛋白分类总框架与动植物总览（全书特色核心节）：三分法通道 10⁷–10⁸ 离子/s 不饱和 / 载体 10²–10⁴ 饱和米氏 / 泵水解 ATP（四行特性对照表）；门控×耦联（uniport/symport/antiport）×能量级次细分与 TC 分类系统；动物版图 SLC 52 家族约 400 基因 + ABC 48 + P 型约 40 + 通道约 400（K⁺ 约 80）；植物版图拟南芥 >1000 转运基因占 3%–4%（AHA 11/AQP 35/ABC 约 130/NPF 53/CNGC 20/GLR 20/CAX 11）；主引擎对照大表：动物 Na⁺/K⁺-ATPase（3:2 生电、Na⁺ 币、−90 mV 级）vs 植物 P3A H⁺-ATPase（1:1、H⁺ 币/PMF、−200 mV 级）；共有家族（AQP/ABC/P/V/MFS/CLC/ZIP/MATE）与各自特化（动物 Nav/Cav/NCX/LGIC；植物 HKT/NRT/BOR/SWEET）
+  · s4 研究方法：膜片钳（Neher–Sakmann 1976、1991 诺奖、GΩ 封接、pS 电导、四构型）；爪蟾卵母细胞表达克隆（SGLT1 Hediger 1987、AQP1 Agre 1992 灌水实验）；酵母 trk1 trk2 互补克隆植物 K⁺ 分子；Ussing 室短路电流；结构里程碑（KcsA 1998 Doyle 滤器首次原子级可视、SERCA1a 2000 Toyoshima、cryo-EM 2017 诺奖解锁 GLUT/SWEET/Piezo）；蛋白脂质体 + ³⁶Cl⁻/⁸⁶Rb⁺ 同位素示踪；植物特有 MIFE 振动离子选择微电极、共聚焦钙成像、拟南芥 SOS 系列遗传筛选；八行方法总表
+- 落盘 src/data/subjects/mt/ch2.ts（mtCh2「离子通道：孔道、门控与超家族」，4 节）：
+  · s1 通道的一般性质：三要素（孔道/门控/选择性）+ 测量学身份；孔道解剖（前庭/滤器/两道闸：S6 激活闸+滤器失活闸、疏水闸）；单通道电导与 i = g(V − E_ion)（K⁺ 2–20 pS、BK 100–300 pS、nAChR 30–50 pS、10 pS@150 mV ≈ 10⁷ 离子/s、扩散极限与整流）；KcsA 滤器 3 Å 四位点羰基氧模拟水化壳（K⁺:Na⁺ > 10 000:1）vs Nav DEKA 12:1（保真/流量取舍、knock-on 推挤）；通道 vs 载体五行对照表（五个数量级差）；宏电流 I = N × P_o × i 与门控运动学/阻断剂
+  · s2 门控机制：电压门控（S4 每 3 位一精氨酸、滑移螺旋/螺旋桨、Nav 门控电荷 12–16 e、S4–S5 偶联、N 型链球与 C 型失活、不应期）；配体门控（胞外 Cys-loop vs 胞内 cAMP-CNG/HCN、Ca²⁺-BK；植物第四种语言——SLAC1 磷酸化门控 OST1-ABA）；机械门控（Piezo1/2 三叶桨、听毛 tip-link/MET；植物 MSL 10 个（MSL8 花粉/MSL10 高渗）与 OSCA）；植物特色：KAT1 去极化激活但内向吸钾（半激活约 −120 mV，与动物 Kv 反向用法）、TPC1 液泡 SV 通道电压+Ca²⁺ 双门控 vs 动物 TPCN 溶酶体 Na⁺ 通道；门控失效疾病（LQT、SCN1A-Dravet）+ 四类门控对照表
+  · s3 通道超家族分类：VGL 4×6TMS（Nav/Cav/Kv/CNG/HCN/TRP/TPC，TRP 动物约 28 员、植物缺）；Cys-loop 5×4TMS 动物独有（含药理富矿注）；谷氨酸受体家族 3TMS+P 环（AMPA/NMDA/KA 与植物 GLR 同源）；Kir 4×2TMS（Mg²⁺/多胺整流、K_ATP）与 K2P 2×4TMS（TREK/TRAAK，植物同源 TPK 液泡）；ClC 双孔二聚体 2×约 18 螺旋（部分已转运体化）与 connexin 间隙连接 vs 胞间连丝；七门第总表
+  · s4 动物与植物通道家族对照（重点节）：动物独有/主力（Nav 9 SCN、Cav 10、LGIC、Piezo、connexin 21）；植物独有/扩张（GLR 20：GLR3.3/3.6 伤电信号、根尖发育；CNGC 20 vs 动物约 6：CNGC2/DND1、CNGC14；MSL 10）；共有用法不同（Shaker：动物约 40 KCN vs 拟南芥 9——AKT1/KAT1/KAT2/GORK/SKOR/AKT2/KC1 无孔亚基 + CBL1/9-CIPK23 磷酸化调门；ClC：动物 9 vs 植物 7，AtCLCa 已演化为 2NO₃⁻/H⁺ 反向转运体；TPC：溶酶体 Na⁺ vs 液泡 SV）；植物动作电位不用 Nav/Cav（Cl⁻/苹果酸根外流升支 + K⁺ 外流与 H⁺-ATPase 复极、钙波接力、含羞草/捕蝇草案例）；十行家族对照大表 + 小结衔接
+- 落盘 src/data/quiz/membrane-transport-p1.ts（membraneTransportQuizP1，10 题 q-membrane-transport-1~10，每章 5 题）：题型 single 7/truefalse 2/multiple 1；难度 1:2:3＝2:5:3；判断题 answer 0/1、多选 answer 索引数组 [0,1,2]；全部考机制理解（脂双层离子能垒、动植物固醇差异、ΔG/Nernst 换算、三分法与主引擎货币、KcsA 滤器几何与能量补偿、S4 门控电荷、KAT1 反向用极、connexin-胞间连丝非同源、植物 AP 离子基础），解析 148–196 字
+- 落盘 src/data/glossary-membrane-transport-p1.ts（membraneTransportGlossaryP1，10 条 g-395~g-404 顺序递增）：流动镶嵌模型/电化学梯度/Nernst 方程/质子动力势/P3A 型 H⁺-ATPase/选择性滤器/单通道电导/门控/膜片钳/膨压；类别分布 膜结构 1/转运热力学 3/泵 1/通道 3/研究方法 1/植物生理 1；definition 165–211 字均含具体数值
+- 质量控制：8 节 content 2647–2924 字符（2600–3600 区间内）、每节 5–6 个 ## H2、每节 ≥1 表格（每章含 3–4 张动植物对照表）、keyPoints 每节 6、terms 每节 6–7、summary 308/321 字、keywords 各 6；术语首现**中文**（English）双注；Unicode 上下标（Na⁺/Ca²⁺/10⁻⁸/³⁶Cl⁻/⁸⁶Rb⁺）；正文零反引号/零 ${/零 H3/零 HTML/零制表符/零链接/零 emoji（刻意未用 → 箭头，规避校验器 U+2190–21FF 误报）；交叉引用仅用「参见生理学/细胞生物学/生物化学/分子生物学/神经生物学相关章节」句式
+- 自检：bun run scripts/validate-chapters.ts membrane-transport ch1.ts ch2.ts → 2 章 8 节全部通过、无任何报错（含箭头误报在内的零输出，优于任务允许口径）；bunx tsc --noEmit 过滤本批次 4 文件 → 零错误（全库尚存 9 处 "membrane-transport" 报错均位于 glossary-view/quiz-view/revision-view/wrongbook-view/subject-theme/illustrations 等注册层文件，经暂存对照验证为 46-a 已加入 SubjectId 后主控 46-d 待注册的存量问题，非本批次引入且按纪律不改）；git status 确认本任务仅落盘 4 个目标文件，未改动其他任何文件
+
+Stage Summary:
+- 膜蛋白与物质转运 ch1–ch2 共 8 节教材级正文、P1 批次 10 题、10 条词条（g-395~g-404）落盘，导出名 mtCh1/mtCh2/membraneTransportQuizP1/membraneTransportGlossaryP1 与章节 id 规范齐备，共享校验器全绿
+- 动植物对照口径已定型并贯穿两章：主引擎对照（动物 Na⁺ 币 vs 植物 H⁺ 币/PMF）、膜电位量级差（−30~−90 vs −120~−250 mV）、基因版图对照（动物约 900 vs 拟南芥 >1000 占 3%–4%）、通道家族三栏法（动物独有 Nav/Cav/LGIC/Piezo/connexin；植物扩张 GLR/CNGC/MSL；共有用法不同 Shaker/ClC/TPC1），并沉淀「同源不同胞器不同离子」「通道到转运体演化」等案例锚点，供 46-b2~b6 与绘图代理 46-c 系列对齐引用
+- 后续动作：ch3–ch12 由并行代理续写（ch4 尚缺）；题库/词条 P2~P6 按 g-405~g-454 顺延；主控 46-d 统一注册（subject-theme/illustrations/各 view 的 Record<SubjectId> 补齐 membrane-transport 键）后 tsc 全库即应归零
+---
+Task ID: 46-b6
+Agent: 内容代理 46-b6
+Task: 膜蛋白与物质转运 ch11–ch12 正文+题库P6+词条P6
+
+Work Log:
+- 开工按序通读 worklog 尾部（46-a 大纲与生理学 44 系列交付标准）、格式标杆 src/data/subjects/ph/ch1.ts、src/data/quiz/physiology-p1.ts、src/data/glossary-physiology-p1.ts；核对共享校验器 scripts/validate-chapters.ts 的全部规则（2600–3600 字、≥4 H2、含表格、keyPoints 3–6、terms 3–8、summary ≥80、keywords ≥4、禁反引号/模板插值/H3/HTML/制表符/链接）
+- 落盘 src/data/subjects/mt/ch11.ts（mtCh11《特化上皮与特化细胞的转运》，4 节 id membrane-transport-ch11-s1~s4）：
+  · s1 上皮转运总论（2739 字，H2×6，表格×1）：极性矢量转运与微绒毛刷状缘（面积扩大约 20 倍）、紧密连接双重身份（claudin 20 余种、claudin-16/19 细胞旁 Mg²⁺ 重吸收缺陷致家族性低镁血症）、穿细胞 vs 细胞旁、紧密/泄漏上皮 TEER 分级（数百至数千 vs 5–10 Ω·cm²）、三步模型+standing gradient（近端小管 180 L/日、约 2/3 等渗回收）、WNK4-SPAK/OSR1 感知 Cl⁻ 切换 NKCC/KCC（Gordon 综合征噻嗪对症）、凯氏带（CASP 组装木栓质带）=植物版紧密连接
+  · s2 动物特化上皮（2709 字，H2×6，表格×1）：近端小管 SGLT2 约 90%+SGLT1 约 10%+GLUT2 溢出、NHE3+碳酸酐酶 IV/II 回收 HCO₃⁻ 约 85%（参见生理学相关章节）；TAL NKCC2+ROMK+ClC-Ka/b（barttin）单效应约 200 mOsm 逆流倍增；主细胞 ENaC（阿米洛利）+ROMK、闰细胞 H⁺-ATPase（pH 极限约 4.4）+AE1；霍乱毒素 Gsα-cAMP-PKA-CFTR 分泌性腹泻与 ORS 钠糖耦联（245 mOsm/L、钠/葡萄糖各约 75 mmol/L、《柳叶刀》20 世纪最重要医学进步）；壁细胞 H⁺/K⁺-ATPase 0.16 mol/L HCl+奥美拉唑前药；血脑屏障 claudin-5+P-gp 外排+GLUT1 供能（脑日耗约 100–120 g 葡萄糖、GLUT1 缺陷综合征生酮治疗）；末附七行特化上皮速览表
+  · s3 植物特化细胞（2701 字，H2×5，表格×1）：保卫细胞「植物的单细胞肾」开放级联（蓝光 phot1/2→H⁺-ATPase Thr 磷酸化+14-3-3→超极化约 −100 mV→KAT1/KAT2+PEPC 苹果酸，膨压摆幅约 1–2 MPa）与关闭级联（ABA→PYR/PYL/RCAR→OST1/SnRK2.6→SLAC1→GORK，CBL1/9-CIPK23 抑制性门控=Ca²⁺ 校验）；根吸收区分区带（AHA2+HAK5/AKT1+IRT1）与径向双路径（凯氏带强制过膜）；盐腺三室结构与盐泡；韧皮部装载双模式（质外体 SUC2 vs 共质体聚合物陷阱）；保卫细胞膜蛋白质组（巨大液泡+TIP 水闸、KAT1 首个克隆植物 K⁺ 通道）；附开/关级联七行对照表
+  · s4 气体交换动植物汇流（2720 字，H2×6，表格×1）：肺 Fick 定律（呼吸膜 0.2–0.6 μm、约 70 m²、0.75 s 通过/0.25 s 平衡，参见生理学相关章节）+Hb 化学耦合（溶解态约 1.5%）；蒸腾比约 400–800（C₃）/250–350（C₄）工程折衷与叶肉导度新靶标；高 CO₂ 经 HT1/MPK12 级联部分关闭、气孔指数古大气重建（白垩纪以来+工业革命百年尺度降低）；昆虫气管 vs 气孔开放式气体交换趋同；AQP1/PIP1;2 的 CO₂ 通道争议（三线证据标准）；内向/外向整流电压经济学（Kir 孔道堵塞 vs KAT1 门控整流，殊途同归）；末附动植物气体交换六行对照表
+- 落盘 src/data/subjects/mt/ch12.ts（mtCh12《逆境、疾病与演化》，4 节 id membrane-transport-ch12-s1~s4）：
+  · s1 动物转运病（2721 字，H2×5，表格×1）：CF（北欧携带率约 1/25、发病率约 1/2500、ΔF508 约 70% 等位基因 II 类折叠、G551D III 类门控、汗液 Cl⁻>60 mmol/L、ivacaftor 与 Trikafta 三联 2019 使 FEV1 提升 10%–14%、ENaC 失抑制加重脱水）；长 QT 三型（KCNQ1/hERG/SCN5A）与获得性 hERG 阻断（西沙必利撤市、hERG 法定筛查）；Bartter 五型（NKCC2/ROMK/ClC-Kb/barttin/CaSR）与 Gitelman（NCC）天然利尿剂表型；胱氨酸尿（SLC3A1/SLC7A9）、肾性尿崩（AQP2/V2R，参见生理学相关章节）、Menkes/Wilson（ATP7A/ATP7B、K-F 环、青霉胺）、GLUT1 缺陷、Hartnup（约 1/26000）；附九行疾病对照表
+  · s2 植物逆境转运（2759 字，H2×6，表格×1）：盐胁迫全链条（NSCC→Ca²⁺ 波→SOS3(CBL4)-SOS2(CIPK24)→SOS1 外排；两成灌溉农田受盐渍化威胁）；NHX1 液泡隔离「以盐代钾」（胞质耐上限几十 mmol/L vs 液泡数百 mmol/L）；HKT1;1 木质部回收（水稻 SKC1=OsHKT1;5）；耐盐育种（AtNHX1 番茄耐 200 mmol/L NaCl、海水稻 0.3%–0.6% 盐度）；干旱 ABA 级联+PIP 下调；低磷 PHR1-miR399-PHO2-SPX-PHT1 网络（miR399 首例长距离 miRNA、番茄过表达高磷表型）；淹水通气组织+ERF-VII 一句带过；附六行逆境×感知×转运响应×农艺抓手大表
+  · s3 生物互作（2723 字，H2×5，表格×1）：根瘤共生（结瘤因子 LysM 受体→CNGC15 参与钙振荡→DMI1/2/3 共共生通路；类菌体周膜 DCT 苹果酸/NH₃ 出口/Fe-S-Mo 进口；豆血红蛋白纳摩尔级控氧；AON 结瘤自抑制；固氮量数十至上百公斤/公顷）；AM「以碳换磷」（PHT1 磷输入、RAM2/STR 脂质输出新学说、化石约 4 亿年前）；病原免疫（FLS2→CNGC 钙内流+气孔免疫、ZAR1 五聚体抗病小体钙渗透孔 2019 结构、大麦 MLO 感病基因失功能=白粉病抗性）；Bt Cry 成孔（碱性中肠 pH 9–10）与 para 钠通道 KDR（L1014F）抗药性；附六行互作表
+  · s4 演化与全书总结（3203 字，H2×6，大表×1）：三大古老家族（F/V-ATPase 同源反向使用于 LUCA 前分化、MFS 古老广布、ABC 细菌输入起家）；主引擎两次选择（动物 P2C Na⁺/K⁺ 泵 vs 植物/真菌 P3A H⁺ 泵）；后生动物特化（Nav 由 Cav 祖先进化、EEEE→DEKA 滤器改写、LGIC 与突触共演化、SLC6 递质摄取）；绿色植物 γ WGT（约 1.2–1.5 亿年前）家族扩张（ABC 约 130、NPF 53、CNGC 20、GLR 20）、GLR 免疫/发育新职能、缺 Nav/Cav 改用 Cl⁻/K⁺ 门控+Ca²⁺ 波、TPC1 与 TPCN 同源不同工；全书总结大表 18 行（家族×动物代表×植物代表×共有性×驱动力×功能主题，覆盖通道 9 行+载体 6 行+泵 2 行+ABC 1 行）；异同四句诀（同超家族不同成员数/同机制不同驱动离子/同家族不同亚细胞定位/同屏障不同化学战场）；展望碳浓缩机制工程（BCT1/SbtA/BicA 二氧化碳泵）与精准医学转运体药理
+- 落盘 src/data/quiz/membrane-transport-p6.ts（membraneTransportQuizP6，10 题 q-membrane-transport-51~60，每章 5 题）：题型 single 7/truefalse 2/multiple 1；难度 1:2:3=2:5:3（q-51/q-56 为 d1）；答案索引分布 0×3、1×2、2×2、3×1+多选 [0,1,3]+判断题正确/错误各一；全部考机制（ORS 钠糖耦联不受 cAMP 管辖、WNK4 Cl⁻ 感知开关、ABA 关闭级联顺序、气孔开放多选、凯氏带判断、CF 事实与基因型用药、SOS 级联顺序、hERG 药物性长 QT、ZAR1 抗病小体、Nav/Cav 演化次序反向判断），解析 181–258 字均讲透机制
+- 落盘 src/data/glossary-membrane-transport-p6.ts（membraneTransportGlossaryP6，10 条 g-445~g-454 顺序递增）：紧密连接/口服补液盐（上皮转运 2）、保卫细胞/蒸腾比/SOS 通路/凯氏带（植物转运 4）、囊性纤维化/长 QT 综合征（转运疾病 2）、抗病小体（植物免疫 1）、F/V-ATPase 旋转马达（演化 1）；definition 179–266 字均含具体数值（claudin 20 余种、245 mOsm/L、膨压 1–2 MPa、蒸腾比 400–800、SKC1=OsHKT1;5、ΔF508 携带率 1/25、五聚体、LUCA 同源反向使用等）
+- 校验：bun run scripts/validate-chapters.ts membrane-transport ch11.ts ch12.ts → 8 节字数 2701–3203 全部落入 2600–3600、每节 ≥5 H2、均含表格、keyPoints 均 6、terms 5–7、两章 summary 达标、keywords 各 6；唯一报错为 ch12-s2/ch12-s3「含 emoji：→」（与生理学批次同源的箭头误报，任务简报已声明可忽略）；bunx tsc --noEmit 过滤 subjects/mt|quiz/membrane-transport-p6|glossary-membrane-transport-p6 → 零输出（本批次 4 文件零错误；全库其余 membrane-transport 报错均为 46-a 已改 types.ts 而主控 46-d 尚未注册的注册位遗留，非本批次文件）；ID 与并行批次核对无冲突（quiz 续 P5 的 q-50 之后、词条续 g-444 之后）；git status 确认本任务仅新增 4 个交付文件，未改动任何其他文件
+- 禁用项自检：正文无反引号（文件中 8 个反引号均为 4 段模板字符串定界符）、无模板插值、无 H3、无 HTML、无制表符、无 markdown 链接、无 → 以外 emoji；术语首现一律粗体中文（English）双注；交叉引用仅按简报指定使用「参见生理学相关章节」（2 处）与「参见微生物学相关章节」（1 处）；Unicode 上下标（Na⁺、Ca²⁺、H⁺、CO₂、HCO₃⁻、Ω·cm²）全文统一
+
+Stage Summary:
+- 第 11、12 章 8 节教材级正文、P6 批次 10 题题库、10 条词条全部落盘：导出名 mtCh11/mtCh12/membraneTransportQuizP6/membraneTransportGlossaryP6、章 id 与节 id、头部注释（BioScholar 膜蛋白与物质转运教材内容-第 N 章 + Stein & Litton/Alberts/Taiz & Zeiger 教材依据 + Task ID 46-b6）均与任务规格一致
+- 内容主线收束全书：ch11 把单分子装配成器官级矢量转运机器（肾/肠/胃/血脑屏障 vs 保卫细胞/根吸收区/盐腺/韧皮部，动物肺 vs 植物气孔汇流）；ch12 完成疾病（CF 基因型对症用药、通道病谱）与逆境（SOS/ABA/miR399）两侧、生物互作（根瘤/菌根/抗病小体/Bt-KDR）以及演化压轴——全书总结大表 18 行+异同四句诀，兑现「动物与植物转运蛋白分类异同系统梳理」的学科特色
+- 后续动作：46-c 系列绘图代理可为 ch11-s1（紧密连接/凯氏带对照）、ch11-s3（气孔开关级联）、ch12-s2（SOS 通路）、ch12-s4（全书总结大表可视化）等小节配图；主控 46-d 统一注册（subjects/mt 索引、allQuizQuestions、glossary、主题色与文案）后全站生效；全库现存 tsc 报错集中在注册位 Record<SubjectId> 缺 membrane-transport 键，属 46-d 待办而非本批次缺陷
+---
+Task ID: 46-b5
+Agent: 内容代理 46-b5
+Task: 膜蛋白与物质转运 ch9–ch10 正文 + 题库 P5 + 词条 P5
+
+Work Log:
+- 开工按序通读 worklog 尾部（46-a 十二章大纲、44 系列生理学交付标准、46-b1 已定型的动植物对照口径）、src/data/subjects/ph/ch1.ts（章文件格式标杆）、src/data/quiz/physiology-p1.ts（题库格式标杆）、src/data/glossary-physiology-p1.ts（词条格式标杆）、scripts/validate-chapters.ts 全量规则与 src/lib/types.ts（确认 'membrane-transport' 已入 SubjectId）
+- 落盘 src/data/subjects/mt/ch9.ts（mtCh9「ABC 转运体：ATP 直接驱动的多面手」，4 节 id membrane-transport-ch9-s1~s4）：
+  · s1 ABC 转运体总论（2983 字）：命名 ATP-Binding Cassette；核心模块 2×TMD（各约 6 TMS）＋2×NBD（Walker A/P 环、Walker B、Q 环、H 环、LSGGQ 签名基序）；NBD 二聚体「三明治」夹两分子 ATP 的结合-二聚化-水解-解离四拍循环与 TMD 交替通路；与 P 型 E1-P 磷酰化中间体五维对照表；全长（P-gp）vs 半分子（TAP1/2 异二聚体、植物 ABCG 同/异二聚）；细菌输入体 MalFGK₂（I 型/BtuCD II 型）vs 动植物输出体主流；动物 7 亚族 48 基因 vs 拟南芥 ABCA–ABCI 约 130（最大基因家族之一）与底物广谱清单；ABCA 翻转酶支线
+  · s2 动物的 ABC 转运体（2793 字）：ABCB1/P-gp 1976 年 Juliano & Ling 中国仓鼠秋水仙素抗性细胞发现（约 170 kDa、「P」即 permeability）与疏水阳离子底物（地高辛/长春碱/罗丹明）、结构口袋柔性与「膜相清扫」；血脑屏障/肠上皮/肾小管/胎盘四道屏障＋维拉帕米抑制＋多药耐药；CFTR（ABCC7）唯一通道型 ABC（R 域 cAMP-PKA 磷酸化＋ATP 门控、Cl⁻/HCO₃⁻ 电导、ΔF508 折叠缺陷被 ERAD 降解、伊瓦卡福特/鲁马卡福特）；ABCA1-Tangier 病、ABCG5/G8-谷固醇血症、MRP2-Dubin-Johnson、TAP1/2-MHC I 抗原肽（参见免疫学相关章节）、ABCD1-X 连锁肾上腺脑白质营养不良；七成员×疾病表
+  · s3 植物的 ABC 转运体（2777 字）：拟南芥约 130 基因、ABCG 40 余个最大/ABCB 约 30/ABCC 约 15、全膜系分布；ABCB1/19（旧称 PGP1/19）生长素 IAA 极性输出与 PIN 协同（NPA 直接靶向 ABCB 的药理史修正、ABCB1/19 双突加重）；ABCG37/PDR9 IBA 外排侧根；ABCG29 香豆醇质外体输出木材形成、ABCG11/CER5 与 ABCG32 蜡质防水（角质/蜡质分工）、ABCG36/PEN3 与 ABCG40/PDR12 防御与百草枯；ABCC1/2 液泡谷胱甘肽结合物隔离＋安全剂农艺＋玉米 Bronze2 花青素谷胱甘肽标签入库；ATM3 Fe-S 簇输出一句带过；γ 全基因组三倍化（约 1.2–1.5 亿年前）家族扩张与冗余分化
+  · s4 动植物 ABC 功能对照（2662 字）：共同祖型脂质/异生物质外排屏障（MsbA-脂质 A 翻转的细菌祖型）＋底物化学趋同（亲脂、胞质小叶舀取）；屏障医学化（血脑/胎盘/肠肝）vs 生态化（蜡质/根际）；军备竞赛平行——多药耐药（化疗）与除草剂抗性（加拿大蓬草甘膦液泡隔离）同一公式，肿瘤关泵 vs 农学安全剂开泵的镜像；区室化分工——植物液泡（80% 体积）ABCC vs 动物肝肾排泄＋MRP4 送信；CFTR 转行氯通道与 ABCE1/RLI 丢失 TMD 转行核糖体循环（单拷贝管家）的「退役再就业」；亚族×动物成员×植物成员×功能×共有性八行全景大表
+- 落盘 src/data/subjects/mt/ch10.ts（mtCh10「钙与金属元素的转运」，4 节 id membrane-transport-ch10-s1~s4）：
+  · s1 钙的转运（2839 字）：静息胞质约 100 nM vs 刺激局部 1–10 μM、动物 ER/SR 库 vs 植物液泡库（总钙 1–10 mmol/L）；动物装备六件套表——PMCA（高亲和低容量、CaM 调节）、SERCA（2 Ca²⁺/ATP、受磷蛋白、心肌舒张）、NCX（3 Na⁺:1 Ca²⁺、缺血反转钙内流危险）、线粒体钙单向体、IP₃R/RyR 各 3 同工型（咖啡因/兰尼碱）、CRAC-Orai1-STIM1 库容操控（免疫缺陷）＋Cav 第二章交叉；植物装备表——CAX 家族 11 个成员（CAX1/3 液泡钙/H⁺ 主力即「刹车」）、ACA/ECA、GLR/CNGC（根尖 CNGC14、免疫 CNGC）、TPC1 SV 通道（fou2 茉莉酸积累）、ZAR1 抗病小体五聚体钙通道（2019 解析）；钙签名概念＋动植物解码器对照（CaM/CaMKII vs CBL-CIPK 网络——SOS3 解码钙振荡——与 CDPK）
+  · s2 铁的转运（2654 字）：溶解度困境（pH 7 游离 Fe³⁺ 约 10⁻¹⁷ mol/L、120 天红细胞回收对照）；动物链——十二指肠 DMT1（SLC11A2，H⁺ 同向 Fe²⁺）、Tf-TfR1 内吞酸化释铁、ferroportin（SLC40A1）唯一外排、hepcidin 总开关（HFE 血色病 hepcidin 不足铁过载 vs 慢性病贫血 hepcidin 高功能性缺铁）＋总量账（3–4 g 库存、日进出 1–2 mg、BMP/SMAD 调节）；植物策略 I（H⁺-ATPase 酸化＋FRO2 还原＋IRT1 吸收、FIT 网络、IRT1 泛素化调控与锌锰搭车）；策略 II（TOM1 外排麦根酸类 PS、YS1/YSL 整分子摄入 Fe(III)-PS、分泌节律与耐性排序大麦至水稻递减、烟酰胺双职）；水稻兼性两策；约 15 亿人缺铁性贫血 vs 石灰性失绿——同一困境两张面孔＋动物铁四栏对照表
+  · s3 锌铜等微量元素（2640 字）：动物锌 ZIP/SLC39A 14 入、ZnT/SLC30A 10 出（ZnT8 胰岛素颗粒）、ZIP4 突变致肠病性肢端皮炎、体锌 2–3 g 与皮摩尔缓冲；动物铜 CTR1 入＋伴侣押运、ATP7A/B（P1B 型）——Menkes 铜出不了肠全身缺铜 vs Wilson 胆汁排铜阻断肝脑过载（K-F 环）、青霉胺与锌疗的镜像治疗；植物锌 ZIP 约 15（IRT3）＋HMA2/4 木质部装载（超富集 A. halleri/遏蓝菜高表达 HMA4）＋MTP1 叶表皮液泡；植物铜 COPT 家族（6 成员，COPT1 根尖/COPT5 液泡出库）＋HMA5、HMA6/PAA1、HMA8/PAA2 叶绿体铜递送至质体蓝素；P1B 家族 CopA/ZntA 三界同谱；ZIP 家族横跨动植物（分化前已存在）＋NRAMP 平行佳话
+  · s4 区室化与解毒（2649 字）：镉搭钙铁锌便车入根与「修门」逻辑；植物液泡「分子保险库」CAX/MTP/NHX；植物螯合肽 PC（(γ-Glu-Cys)n-Gly、n 约 2–11、PCS 镉砷翻译后激活、γ 键无法核糖体编码）＋ABCC1/2 隔离 PC-Cd/PC-As＋裂殖酵母 HMT1 深度保守；动物 MT-1/2（61–62 aa、约 20 Cys、一分子 7 金属）肝肾镉缓冲、Cd-MT 近端小管溶酶体蓄积致痛痛病（呻吟之名与流行病学侦探史）、铁蛋白每壳约 4500 铁原子（血清铁蛋白替代指标）；砷通道学——砷酸盐冒充磷酸盐误入＋亚砷酸 As(OH)₃ 经水甘油通道（动物 AQP7/9 与植物 NIP、OsNIP2;1 硅通道兼砷门）即水通道「阴暗面」＋孟加拉砷井水与稻米砷账本；生态应用——植物修复（A. halleri/遏蓝菜锌镉、蜈蚣草羽叶砷达干重百分之一以上、EDTA 争议）与生物营养强化（HarvestPlus 富锌小麦/富铁珍珠粟数百万农户）；核心差异「能排泄的动物 vs 只能隔离或落叶丢弃的植物」＋四行策略对照表
+- 落盘 src/data/quiz/membrane-transport-p5.ts（membraneTransportQuizP5，10 题 q-membrane-transport-41~50，每章 5 题）：题型 single 6/truefalse 2/multiple 2；难度 1:2:3＝2:5:3；判断题 options ['正确','错误'] 且答案 0/1 各一、多选 answer 为索引数组；考机制理解（NBD 三明治 vs P 型磷酰化、CFTR 唯一通道型＋ERAD、P-gp 血脑屏障方向、植物 ABC 功能组合辨析、半分子组装 TAP1/2、hepcidin-ferroportin 总开关、NCX 缺血反转是否保护性、策略 II 三步、Menkes vs Wilson 镜像、植物解毒区室化），解析 177–210 字
+- 落盘 src/data/glossary-membrane-transport-p5.ts（membraneTransportGlossaryP5，10 条 g-435~g-444 顺序递增）：ABC 转运体（48 vs 130）/P-糖蛋白/CFTR/核苷酸结合域/安全剂/库容操控钙内流/铁调蛋白/麦根酸类植物铁载体/植物螯合肽/金属硫蛋白；类别分布 转运蛋白 3/结构 1/农业应用 1/信号转导 1/调节 1/植物营养 1/植物逆境 1/金属稳态 1；definition 163–227 字均含具体数字
+- 质量控制：8 节 content 2640–2983 字符（2600–3600 区间内）、每节 4–5 个 ## H2、每节 ≥1 表格（含动植物对照大表）、keyPoints 每节 6、terms 每节 5–7、summary 341/441 字、keywords 各 6；术语首现**中文**（English）双注；Unicode 上下标（Na⁺/Ca²⁺/Fe³⁺/Fe(III)-PS/10⁻¹⁷）；正文零反引号/零 ${/零 H3/零 HTML/零制表符/零链接/零 emoji——正文刻意不用 → 箭头（仅 keyPoints 保留一处，未被校验），实现校验器零报错输出，优于任务允许口径；交叉引用仅用「参见生理学/细胞生物学/免疫学/微生物学/生物化学相关章节」句式与本书第二/十二章节内呼应
+- 自检：cd /home/z/my-project && bun run scripts/validate-chapters.ts membrane-transport src/data/subjects/mt/ch9.ts src/data/subjects/mt/ch10.ts → 「2 章共 8 节全部通过」exit 0（含箭头误报在内的零报错）；bunx tsc --noEmit 过滤本批次 4 文件（subjects/mt/ch9|ch10|membrane-transport-p5）→ 零错误（全库 117 处 error TS 为存量，其中 'membrane-transport' 相关注错均位于 subject-theme/illustrations/glossary-view/quiz-view/revision-view/wrongbook-view 等注册层 Record<SubjectId> 缺键，系 46-a 已加 SubjectId 后待主控 46-d 统一注册的既有问题，非本批次引入且按纪律不改）；rg 复核 4 文件无 Review-artifact/无 ${/无 H3/无 HTML/无制表符/无 markdown 链接；git status 确认本任务仅落盘 4 个目标文件，未改动其他任何文件（注册留给主控 46-d）
+
+Stage Summary:
+- 膜蛋白与物质转运 ch9–ch10 共 8 节教材级正文、P5 批次 10 题（q-membrane-transport-41~50）、10 条词条（g-435~g-444）落盘，导出名 mtCh9/mtCh10/membraneTransportQuizP5/membraneTransportGlossaryP5 与章节 id、文件头注释（Stein & Litton 第2版 · Alberts 第7版 · Taiz & Zeiger 第6版 · Task ID 46-b5）规范齐备，共享校验器 8 节全部通过（零报错）
+- 动植物对照主线贯穿两章：ABC 侧「屏障医学化 vs 生态化、军备竞赛平行、液泡区室化 vs 肝肾排泄、CFTR/ABCE1 退役再就业」；钙铁锌铜侧「ER 库 vs 液泡库、hepcidin 总开关 vs 策略 I/II、ATP7A/B 镜像疾病 vs HMA/MTP/COPT、MT-铁蛋白 vs PC-ABCC」；与 46-b1 定型的「Na⁺ 币 vs H⁺ 币」口径及 48/130、CAX 11、ZIP 14+10、PC n=2–11、铁蛋白 4500 铁原子等数字锚点对齐，并预留第十二章疾病/逆境/演化的多处呼应
+- 后续动作：绘图代理 46-c9/c10 按节配图；主控 46-d 统一注册（biology.ts/quiz 聚合/glossary 聚合/subject-theme/illustrations 等 Record<SubjectId> 补齐 membrane-transport 键）后 tsc 全库归零；ch4 正文尚缺由对应代理补齐，不属本批次
+---
+Task ID: 46-b3
+Agent: 内容代理 46-b3
+Task: 膜蛋白与物质转运 ch5–ch6 正文 + 题库 P3 + 词条 P3
+
+Work Log:
+- 开工前按序通读 worklog 尾部（46-a 十二章大纲与编排）、格式标杆 src/data/subjects/ph/ch1.ts、src/data/quiz/physiology-p1.ts、src/data/glossary-physiology-p1.ts，并核对共享校验器 scripts/validate-chapters.ts 的全部规则与 '@/lib/types' 的 Chapter/QuizQuestion/GlossaryTerm 接口
+- 落盘 src/data/subjects/mt/ch5.ts（mtCh5「载体与易化扩散」，id membrane-transport-ch5，4 节 s1–s4）：
+  · s1 载体的一般原理：交替通路总则 + 三大构象模式表（rocker-switch/rocking bundle/elevator，occluded 封闭态结构证据）、载体=膜上酶与 SLC 命名、M-M 饱和动力学（Vmax/Km 定义、Km 2 mM 算例 5→20 mM 速率 0.71→0.91 Vmax、零跨摄取初速率法、表观参数）、根皮素/根皮苷竞争抑制与双倒数判别、Q₁₀>3 vs 简单扩散 1.2–1.6、载体周转 10²–10⁴/s vs 通道 10⁷–10⁸/s（五个数量级）、uniport/symport/antiport 预告第 8 章；20 世纪中叶红细胞摄取饱和与竞争抑制经典证据链
+  · s2 动物的 GLUT 家族：SLC2A 14 成员（GLUT1–12+HMIT/GLUT13+GLUT14）三大类谱系与 1985 Mueckler 表达克隆史、MFS 12 TMS 双六螺旋束摇摆开关（GLUT1/3 内外向构象）；GLUT1 血脑屏障看门人（Km 1–2 mM、人脑日耗糖约 120 g 三级接力、GLUT1 缺陷综合征脑低血糖痫性发作）；GLUT2 葡萄糖感受器（Km 15–20 mM 线性读数、β 细胞葡萄糖激酶呼应、Fanconi-Bickel）；GLUT3/5/HMIT（约 1.4 mM 神经元、约 6 mM 果糖、H⁺ 耦联肌醇的族内异类）；GLUT4 胰岛素响应转位（GSV 储存囊泡、AS160-TBC1D4-Rab 级联、AMPK 运动通路、2 型糖尿病抵抗、内吞回收闭环）
+  · s3 植物的糖载体：三大体系总览表（STP 14/SUC 9/SWEET 17）+ 质外体-共质体解剖坐标；SUC2 伴胞质膜质外体装载关键分子（1 H⁺:1 蔗糖、ΔpH+Δψ 双项驱动）、SUC3 花粉管保卫细胞、蔗糖长距离运输糖的逻辑；SWEET 7 TMS 双三螺旋半重复、细菌 SemiSWEET 3 TMS 同源二聚体「二聚化→融合」演化接力、SWEET11/12/15 筛分子-伴胞装载与 SWEET1 根分泌、SWEET16/17 液泡果糖、双向易化的流向自反转；TAL 效应子（pthXo1→OsSWEET11、AvrXa7→OsSWEET14）白叶枯病「易感基因」与启动子编辑抗病（xa13 自然等位佐证）；亚细胞糖流 TPT/GPT 叶绿体与 TMT/VGT 液泡糖银行
+  · s4 动植物糖流对照：动物血糖稳态 3.9–6.1 mmol/L（5 L 糖池常备 4–5 g vs 日周转约 250 g）；肠吸收顶端 SGLT1 主动+GLUT2 溢流、基侧 GLUT2 出口、GLUT4 餐后缓冲（ORS 押注 SGLT1 与 SGLT2 抑制剂反向利用的临床遗产）；植物源-库流与共质体/质外体双途径装载（环剥与同位素喂叶判据）；Münch 压力流学说（1930）：SUC2 建 H⁺/蔗糖梯度→渗透吸水→筛管压力驱动（0.3–1 M、0.5–1.5 m/h、蚜虫口针取样器）；大表 GLUT/SGLT/STP/SUC/SWEET × 界 × 拓扑 × 底物 × 能量学 × 调控，GLUT（MFS 12 TMS）与 SWEET（7 TMS）趋同演化、SGLT 用 Na⁺ 梯度 vs SUC 用 H⁺ 梯度预告第 8 章
+- 落盘 src/data/subjects/mt/ch6.ts（mtCh6「P 型 ATPase：初级主动转运 I」，id membrane-transport-ch6，4 节 s1–s4）：
+  · s1 P 型泵总论：天冬氨酸磷酸化中间体得名（DKTGT 模体、β 天冬氨酰磷酸）与 Post-Albers 循环 E1→E1~P→E2-P→E2（E1/E2 离子亲和换挡）；P1–P5 五大亚类表（P1B 重金属 CPx 型、P2A SERCA、P2B PMCA、P2C Na⁺/K⁺ 与 H⁺/K⁺ 泵、P3A 植物真菌 H⁺ 泵、P4 翻转酶、P5 待定）；共同拓扑 10 TMS + A/N/P 三胞质域（Mg²⁺ 与 BeF₃⁻/AlF₄⁻ 冻帧剂）；工具药表乌本苷/毒胡萝卜素/钒酸根/糠菌素（1953 Schatzmann 洋地黄）；反转运行合成 ATP（Garrahan-Glynn 1967）；Toyoshima 2000 SERCA1a 2.6 Å 首个原子结构里程碑
+  · s2 动物的 P 型泵：Na⁺/K⁺-ATPase αβ(γ) 组装（α 约 110 kDa 10 TMS、β 折叠质控、FXYD 磷调节蛋白家族、α1 普遍/α2 肌肉/α3 神经亚型、ATP1A2/3 神经系统疾病）、每 ATP 3Na⁺ 出 2K⁺ 入生电 −1（序贯结合不找零、乌本苷堵 K⁺ 位点锁 E2-P）、静息 ATP 约 25%/肾 70%；动物 P 泵总表；地高辛三级级联（抑泵→胞内 Na⁺↑→NCX 正向减弱→Ca²⁺↑→正性肌力，1785 Withering 药理前史）；SERCA2a-受磷蛋白「泵-刹」与 PMCA-CaM 高亲和低容量钙双轨（钙瞬变 SERCA 七成/NCX 两成分流）；胃 H⁺/K⁺-ATPase 电中性交换与奥美拉唑酸活化前药；P4 翻转酶维持 PS 内叶不对称（凝血/凋亡膜语法）；P1B 铜 ATP7A/7B（Menkes 进不来/Wilson 排不出 + 铜位移调控）
+  · s3 植物 P3A H⁺-ATPase：「植物的电化学引擎」11 个 AHA（AHA1/2/3 主力、双突变致死）、约 100 kDa 单亚基 10 TMS、1 H⁺/ATP 生电；C 端 R 域自抑制→Thr947（AHA2 口径）磷酸化→14-3-3 二聚体桥连全激活、糠菌素锁死复合体异常激活（意大利桃与扁桃园 Fusicoccum amygdali 毒素趣闻——按科学可靠性将简报「无花果」校正为桃/扁桃寄主）、激酶-磷酸酶拉锯与多信号总线；PMF = ΔpH + Δψ（细胞质约 7.2 vs 质外体约 5.5、−120~−250 mV、折合约 −200~−350 mV、pH 自稳环）；四大功能岗位表：养分吸收引擎（第 8 章）、气孔开放（phot1/2→泵→KAT1）、酸生长理论（生长素→泵→壁 pH 约 4.5→扩张蛋白松弛→伸长）、韧皮部装载（SUC2 的 H⁺ 伴侣）+ 总线制冗余；盐胁迫 SOS1/NHX1 能量出自 H⁺ 梯度（SOS3-Ca²⁺-SOS2-SOS1 三件套）
+  · s4 主引擎对照（全书核心特色节）：8 行大对照表（3Na:2K/ATP vs 1H⁺/ATP、生电、αβ vs 单亚基、4 α vs 11 AHA、乌本苷 vs 糠菌素、25%/70% 账单、驱动梯度、调控要点）；为什么动物选 Na⁺（海水约 480 mM 起源遗产、外液 145 mM 稀释海水、Ca²⁺ 微摩尔即毒 H⁺ 摆幅窄的落选理由、信号语言）；为什么植物选 H⁺（土壤贫 Na⁺ 且盐毒、代谢产酸易得、一泵三得 pH+PMF+酸生长、液泡金库）；间接后果总链（动物 SGLT/NHE/NCX + Nav/Cav 电信号 vs 植物 NRT/PHT/SULTR/AMT/SUC 全 H⁺ 驱动 + Cl⁻/K⁺ 电压门控与 Ca²⁺ 波、渗透语言 135–145 vs K⁺/脯氨酸）；例外互渗（动物 NHE 的 H⁺ 维度、耐盐植物 SOS1/HKT1 管 Na⁺ 但能量仍出自 H⁺ 泵、电压感受域同源）；「驱动离子的选择是环境化学的镜像」总结句（第 12 章呼应）
+- 落盘 src/data/quiz/membrane-transport-p3.ts（membraneTransportQuizP3，10 题 q-membrane-transport-21~30，每章 5 题）：题型 single 6/truefalse 2/multiple 2；难度 1:2:3 = 2:5:3；判断题 options ['正确','错误']、多选 answer 为索引数组；全部考机制（交替通路与周转率对比、Q₁₀ 能量账判断、GLUT2 线性读数感受器、TAL-OsSWEET14 易感基因与编辑抗病、GLUT/SWEET 趋同+驱动离子+Münch 多选、「P」名由来、地高辛三级级联、钠泵计量与能量账判断、AHA-14-3-3 激活链、主引擎对照多选），解析 154–210 字均讲机制
+- 落盘 src/data/glossary-membrane-transport-p3.ts（membraneTransportGlossaryP3，10 条 g-415~g-424 顺序递增）：类别分布 载体原理 3（载体蛋白/交替通路/易化扩散）+ 糖转运 3（葡萄糖转运体 GLUT/GLUT4 转位/SWEET 载体）+ 韧皮部运输 1（压力流学说）+ 主动转运 3（P 型 ATPase/钠钾泵/植物质膜 H⁺-ATPase）；definition 157–253 字均含具体数字（10²–10⁴ 与 10⁷–10⁸、GLUT 家族 14 成员与四型 Km、SWEET 17 个 7 TMS、0.3–1 M 与 0.5–1.5 m/h、3Na:2K 与 25%/70%、AHA 11 个与 Thr947、pH 7.2 vs 5.5 与 −120~−250 mV）
+- 质量控制：8 节 content 2708–3102 字符（2600–3600 硬限 ∩ 2700–3200 目标带）、每节 H2 5–7 个（≥4）、每节 ≥1 个 Markdown 表格（ch6-s2 动物泵总表、ch6-s3 功能岗位表为补强新增）、keyPoints 5–6、terms 5–7、章 summary 342/391 字（≥80）、keywords 6；术语首现**中文**（English）双注；交叉引用句式统一「参见生理学/细胞生物学/生物化学相关章节」；禁项自查零违反（无反引号/${/###/HTML/制表符/链接/多余 emoji）；Unicode 上下标（Na⁺/Ca²⁺/Q₁₀/VO₄³⁻/CO₂）与 → 箭头规范使用
+- 校验：bun run scripts/validate-chapters.ts membrane-transport src/data/subjects/mt/ch5.ts src/data/subjects/mt/ch6.ts → 8/8 节的长度/H2/表格/keyPoints/terms/章级 summary/keywords 全部通过，仅 5 节报「含 emoji：→」为任务说明允许的已知箭头误报；bunx tsc --noEmit 精确过滤本批次 4 文件（subjects/mt/ch5、subjects/mt/ch6、quiz/membrane-transport-p3、glossary-membrane-transport-p3）→ 零输出零错误（全库 117 处 error 全部位于组件注册层——主控 46-a 已在 types.ts 写入 'membrane-transport' 而 quiz-view/glossary-view 等的 Record<SubjectId> 尚待 46-d 集成时补齐——及存量遗留，均非本批次引入）；与并行代理已落盘的 p1/p4/p5/p6 题库（q-1~10、q-31~60）与词条（g-395~g-414、g-425~g-454）逐一比对无 id 冲突，本批次恰补 q-21~30 与 g-415~g-424 空档；git status 确认本任务仅新增 4 个目标文件，未改动任何其他文件（modified 的 types.ts/gen.ts/worklog.md 均为主控 46-a 及其他并行代理所留）
+
+Stage Summary:
+- 膜蛋白与物质转运第 5–6 章 8 节教材级正文、P3 批次 10 题题库、10 条词条全部落盘：mtCh5「载体与易化扩散」与 mtCh6「P 型 ATPase：初级主动转运 I」严格按 46-a 大纲四节结构与 46-b 系列格式标杆完成，导出名（mtCh5/mtCh6/membraneTransportQuizP3/membraneTransportGlossaryP3）、章节与小节 id、文件头注释（教材依据 + Task ID 46-b3）均与学科骨架规范一致；校验器 8/8 节实质全过（仅 → 已知误报）、本批次 tsc 零错误、无 id 冲突
+- 全书「动物 vs 植物」对照主线在两章内两次重磅兑现：ch5-s4 糖流大对照（GLUT-SWEET 趋同演化、SGLT-Na⁺ vs SUC-H⁺ 驱动离子之别、血糖稳态 vs 源-库流/压力流）与 ch6-s4 主引擎大对照（Na⁺ 循环 vs H⁺ 循环、「驱动离子的选择是环境化学的镜像」），并成体系地为第 7 章（V/F 型引擎）、第 8 章（次级转运与 PMF/Na⁺ 梯度）、第 10 章（金属转运）、第 11 章（气孔/上皮）、第 12 章（演化总论）预埋交叉引用
+- 数值与临床/农学锚点齐备且与简报逐项对齐（GLUT 各型 Km、人脑 120 g 葡萄糖/日、STP 14/SUC 9/SWEET 17、0.3–1 M 与 0.5–1.5 m/h、3Na:2K/ATP、静息 25%/肾 70%、AHA 11 个、Thr947、pH 7.2 vs 5.5、−120~−250 mV）；唯一科学性修正：糠菌素病害寄主按文献写作意大利桃与扁桃（Fusicoccum amygdali），未沿用简报「无花果」表述
+- 后续动作：46-b2 补齐 ch3–ch4 与 P2 批次（q-11~20、g-405~g-414）；46-c 系列绘图代理可为 ch5/ch6 各节配图（s1 交替通路三模式、s4 两大对照大表均为天然绘图题材）；主控 46-d 统一做学科注册、题库/词条聚合与组件层 Record<SubjectId> 补齐，届时全库 117 处注册层 tsc 错误将一并清零
+---
+Task ID: 46-b2
+Agent: 内容代理 46-b2（重启）
+Task: 膜蛋白与物质转运 ch4 扩写修复 + 题库 P2 + 词条 P2（接续被中断批次；ch3 已由前代理完成且校验通过，本任务未改动）
+
+Work Log:
+- 开工按序通读 worklog 尾部（46-a 十二章大纲与 g-395~g-454/q 编号分配、46-b1 动植物对照口径定型、46-b3/b5/b6 并行交付记录）、src/data/subjects/mt/ch3.ts 与 ch4.ts 全文、格式标杆 src/data/quiz/physiology-p1.ts 与 src/data/glossary-membrane-transport-p1.ts、共享校验器 scripts/validate-chapters.ts 全量规则
+- 超集式扩写 src/data/subjects/mt/ch4.ts（导出 mtCh4、章 id membrane-transport-ch4、节 id membrane-transport-ch4-s1~s4、H2 结构、既有表格与数值、keyPoints/terms/summary/keywords 全部保留，只增不删；唯一改动为 ch4.ts，ch3.ts 逐字未动）：
+  · s1 水通道蛋白总论（2511 → 2917 字，H2×6，表格 1）：新增 1950 年代生物物理间接证据（高透水率+低活化能提示低能垒专用通路）、AqpZ/GlpF 跨三域进化保守性注脚、AQP1 电子晶体学约 2 Å 结构里程碑（2000 年前后）、GlpF 结构佐证、表后补「植物水甘油支对应 NIP/SIP、亚科职业可改写」的谱系说明
+  · s2 动物的 AQP 家族（2361 → 2854 字，H2×6，表格 1）：新增 AQP11 第二 NPA 基序突变为 NPC、哺乳动物编制保守注脚、AQP6/8/10 版图细化（Cl⁻ 通透、结肠、线粒体内膜）、近端回收账（滤液水 99% 以上回收、终尿约 1–1.5 L）、AQP2 多位点磷酸化（Ser261/269 改写定位与驻留）、AVP 失调节（心衰/肝硬变/SIADH 水潴留致稀释性低钠）、AQP4 正交颗粒点阵、AQP5 肺泡 I 型上皮、章末 AQP2-PIP 两界记账法镜像衔接
+  · s3 植物的 MIP 家族（2195 → 2847 字，H2×6，表格 1）：新增第五亚科 XIP 注脚（苔藓与部分植物，拟南芥四亚科为基准）、三路径贡献随物种/发育/胁迫消长、TIP2;1 兼透氨 NH₃（液泡氮库）、NIP5;1 缺硼自救转录应答与硼移动性有限、水稻吸硅约 10% 干重与 Lsi1-Lsi2 双转运体接力、SIP1;1/SIP2;1 点名、干旱胞吞条目补泛素标记-网格蛋白-液泡降解、转录层补 NIP5;1/Lsi1 缺素诱导案例、根-土水力前馈信号（水势语言的根系-冠层快线）、CDPK 磷酸化对接（呼应第 3 章 AKT1 钙开关范式）
+  · s4 动植物 AQP 调控对照（1975 → 3198 字，H2 由 6 增至 8，表格由 1 增至 2）：新增磷酸开关平行性（AQP2 Ser256 管「膜上有多少」vs SoPIP2;1 Ser283 管「孔开不开」，同一修饰拧不同螺母）、托伐普坦类 V2 拮抗剂药理入口（心衰/稀释性低钠水卸载）、ABA 双端收紧（PIP 转录下调+气孔关闭，对照动物失血集中指挥）、新 H2「农学回声」（转基因 PIP 过表达烟草/拟南芥水分充足时促生长、干旱下失水更快，反向下调节水但抑生长，单分子超表达被整株反馈抵消→等位变异打包评估）、新 H2「亚科级大表」（人 13 vs 拟南芥 35：谱系×成员数×代表底物×组织/区室×主要调控，7 行；经典 7+水甘油 4+非典型 2 对 PIP 13/TIP 10/NIP 9/SIP 3）、成药性难题（孔道口袋小而深、汞外特异性抑制剂难产）
+- 落盘 src/data/quiz/membrane-transport-p2.ts（membraneTransportQuizP2，10 题 q-membrane-transport-11~20，ch3/ch4 各 5 题）：题型 single 6/truefalse 2/multiple 2；难度 1:2:3＝2:5:3；判断题 options ['正确','错误']；多选 answer 为索引数组（q-14 [0,1,3] 保卫细胞钾循环开/关级联+KAT1 胞吞、q-20 [0,2,3] 植物 PIP 调控四重奏辨析）；全部考机制（Shaker 内外向岗位表、KAT1 胞外钾依赖门控 vs Kir 多胺阻塞、HAK5 换装备 vs AKT1 拨开关、保卫细胞钾循环、动植物钾稳态 35:1 与老叶先衰、NPA/ar/R 双重质子屏障、人 13 AQP 岗位配对、AVP-AQP2 数量调节、NIP 硼硅岗位错配辨析、干旱 PIP 下调方向），解析 167–269 字均 ≥80 字
+- 落盘 src/data/glossary-membrane-transport-p2.ts（membraneTransportGlossaryP2，10 条 g-405~g-414 顺序递增，与并行批次 g-395~404/g-415~454 无冲突）：水通道蛋白（AQP）/AQP2/水甘油通道（水通道 3）+ PIP/TIP/NIP 硼硅通道（植物水通道 3）+ Shaker 家族/SKOR（钾通道 2）+ HAK-KUP 钾转运体家族（钾转运体 1）+ 保卫细胞 K⁺ 循环（植物生理 1）；definition 201–261 字均 ≥80 字且含具体数字（2.8 Å、3×10⁹、10 L、35 个、90%、约 10% 干重、微摩尔级 Km、约 100 mM→数百 mM、40 vs 9 等）
+- 校验：bun run scripts/validate-chapters.ts membrane-transport src/data/subjects/mt/ch3.ts src/data/subjects/mt/ch4.ts → 8 节字数全部落入 2600–3600（ch3 2662–3131 原样、ch4 2847–3198）、每节 ≥5 H2、均含表格、keyPoints 均 6、terms 6–7、两章 summary/keywords 达标；唯一报错为 4 节「含 emoji：→」（ch3-s1/s2 为前代理既有、ch4-s2/s4 的 → 为原稿既有箭头，本批次未新增任何箭头）——系任务简报声明的 U+2190–21FF 箭头误报，按口径忽略；bunx tsc --noEmit 过滤 ch4|membrane-transport-p2|glossary-membrane-transport-p2 → 零输出零错误（全库存量报错均位于注册层 Record<SubjectId> 待 46-d 补齐位，非本批次引入）
+- 禁用项自检：quiz/glossary 两新文件无反引号/模板插值/H3/HTML/制表符/markdown 链接/emoji；ch4 扩写文本零反引号/零模板插值/零 H3/零 HTML/零制表符/零链接；术语首现 **中文**（English）双注；Unicode 上下标（H₃O⁺/H₂O₂/NH₃/Si(OH)₄/β₂）与 → 箭头规范使用；交叉引用仅「参见生理学相关章节」句式（ch4 原稿既有，本批次未新增）；git status 确认本任务仅改动 ch4.ts 与新增 2 个交付文件，未触碰其他任何文件（modified 的 types.ts/gen.ts/worklog.md/dev.pid 均为主控 46-a 及并行代理与沙箱运行所留）
+
+Stage Summary:
+- 膜蛋白与物质转运第 3–4 章至此齐备：ch4 四节由 2511/2361/2195/1975 扩至 2917/2854/2847/3198（全部落入 2700–3200 目标带），超集式扩写零删改——原知识点、H2、表格与数值全数保留；P2 批次 10 题（q-membrane-transport-11~20）与 10 条词条（g-405~g-414）落盘，导出名 mtCh4/membraneTransportQuizP2/membraneTransportGlossaryP2 与章节 id 规范齐备
+- 动植物对照主线在 ch4 兑现为「水」的一章：共同逻辑「调数量而非调单孔」＋磷酸开关平行（Ser256 vs Ser283）、动物快在插膜 vs 植物快在撤膜、水甘油分支两套征募（脂代谢甘油流 vs 硼硅营养流）、亚科级大表 7 行（人 13 对拟南芥 35），与 46-b1 定型的「Na⁺ 币 vs H⁺ 币」口径及 ch3 的 Shaker 反转用法、CBL-CIPK23 钙开关形成跨章呼应
+- 后续动作：46-c 系列绘图代理可为 ch4-s1（沙漏模型/双重质子屏障）、ch4-s2（AVP-AQP2 囊泡插入）、ch4-s4（亚科级大表/插膜 vs 撤膜）配图；主控 46-d 统一注册（quiz/glossary 聚合、subject-theme、各 view Record<SubjectId> 补齐 membrane-transport 键）后 tsc 全库归零；全学科 6 个内容批次（b1~b6）至此全部交付，q-1~60 与 g-395~454 完整成套
+---
+Task ID: 46-c1
+Agent: 绘图代理 46-c1
+Task: 膜蛋白与物质转运 ch1 共 4 张自绘插图（场景源码 + SVG 渲染 + overlap-check 清零 + 挂载数据）
+
+Work Log:
+- 开工按序通读 worklog 尾部（46-a 十二章大纲与 46-b1 已定型的动植物对照口径）、scripts/draw/lib.ts 全文（构建器 B 完整 API、调色板 C、textW 宽度估算、^{}/_{} 上下标标记语法、scene() 头部 122px 自适应标题）、标杆场景 scripts/draw/scenes/ph/ch2-s1.ts（b.bilayer 双层绘制、b.panel 分区、同行文本垂直间距 ≥18px 排版纪律）与正文数据源 src/data/subjects/mt/ch1.ts 全文，图注与图内数值严格对齐正文（7.5–10 nm、20%–30%、5:4:1、−30~−90 vs −120~−250 mV、10⁻⁸ cm²/s、SLC 52 家族约 400、拟南芥 >1000 转运基因等）
+- 落盘 scripts/draw/scenes/mt/ch1-s1.ts（mt-ch1-s1-membrane-basics「膜脂、膜蛋白与选择性屏障」，2×2 四面板）：①流动镶嵌剖面——b.bilayer 590px 双层 + 胆固醇/糖蛋白糖萼/通道双亚基/载体/外周蛋白五类元件标注与膜厚 7.5–10 nm 双向箭头、疏水核心约 3 nm、O₂/CO₂ 与类固醇自由渗透 vs 离子半衰期小时–天；②膜脂运动性——侧向扩散 mini（D ≈ 10^{-8} cm^{2}/s、1 秒约 2 μm）vs 翻转 mini（半衰期小时到天）+ 对数时间轴（1 s/1 min/1 h/1 天刻度 + 双色标记）+ P4 翻转酶/搅酶拉锯与 FRAP 注释；③膜蛋白三大驻留方式——内在 α 螺旋束（20–25 疏水残基跨 3 nm）/外周静电贴附/GPI 锚整段胞外三列 mini 双层 + β 桶孔蛋白 VDAC 立体示意 + 脂筏与 20%–30% 基因组编码膜蛋白；④动植物膜组成对照——动物细胞糖萼 vs 植物细胞壁-膨压（0.3–1 MPa）双 mini + 固醇/外被/正压/5:4:1 四行 b.table 对照表
+- 落盘 scripts/draw/scenes/mt/ch1-s2.ts（mt-ch1-s2-transport-thermo「转运的热力学」）：①ΔG = RT ln(C₂/C₁) + zFV 公式面板（25 ℃ RT/F ≈ 25.7 mV、十倍浓度差 ≈ 59 mV 当量、F = 96 485 C/mol）+ 静息神经元 K⁺ 示范账（+88−70 = +18 mV → 外逸，−90 mV 即 E_K 时净流为零）；②Nernst 方程 + b.axis 电压标尺（fy 映射 +125/−90 全程 260px）标注 E_Ca > +125、E_Na +60~+67（范围须）、E_Cl −60~−90、E_K ≈ −90 mV 与左侧驱动力/Ca²⁺ 第二信使注释列；③被动 vs 主动 ΔG 符号分支图（ok/warn 双色盒 + 20%–30% ATP 账单 + 水无电压项特例）；④动植物膜电位对照——0~−250 mV 竖标尺 + 动物 −30~−90/植物 −120~−250 范围柱 + PMF（常超 250–300 mV 当量、质外体 pH 5.5）注释块 + K⁺/Na⁺/Ca²⁺/pH 四行离子环境 b.table
+- 落盘 scripts/draw/scenes/mt/ch1-s3.ts（mt-ch1-s3-classification-map「转运蛋白分类总框架与动植物总览」——本学科招牌图）：①三分法总树——根 tag「转运蛋白」三叉箭头到通道（10⁷–10⁸ 离子/s、不饱和、门控三型）/载体（10²–10⁴ 分子/s、Vmax/Km、uniport/symport/antiport）/泵（直接水解 ATP、发钞行）三子框 + TC 分类系统框（1/2/3 类）+ 五个数量级结论句；②基因版图双栏横条图——动物约 900（SLC 52 家族约 400、离子通道约 400 含 K⁺ 约 80、ABC 48、P 型约 40）vs 拟南芥 >1000 占 3%–4%（ABC 约 130、NPF 53、AQP 35、CNGC 20、GLR 20、AHA 11、CAX 11）共 11 条比例横条 + 家族缩写脚注；③主引擎对照——左右 b.zone 双引擎（Na⁺/K⁺-ATPase 3Na⁺ 出/2K⁺ 入生电 −90 mV 级 vs H⁺-ATPase 1 H⁺/ATP 压入 −120~−250 mV 与 pH 5.5）配 ATP tag、离子球与「vs」徽章 + 货币表结论；④共有/独有三区清单——共有（AQP/ABC/P 型/V 型/MFS/CLC/ZIP·MATE 六 tag）/动物特化（Nav/Cav、NCX、LGIC）/植物特化（HKT、NRT/NPF、BOR、SWEET）+ 全书问法收束框
+- 落盘 scripts/draw/scenes/mt/ch1-s4.ts（mt-ch1-s4-methods「研究方法」）：①膜片钳四构型单行四 mini（pipette 多边形 + 细胞吸附/全细胞穿孔/内面向外/外面向外膜片）+ 吉欧封接与 pS 电导说明 + b.curve 单通道电流方波记录；②爪蟾卵母细胞大圆（直径约 1 mm、注射箭头）+ 1987 SGLT1/1992 AQP1 双里程碑卡 + Ussing 灌流室与蛋白脂质体（³⁶Cl⁻/⁸⁶Rb⁺ 同位素示踪）双底框；③结构里程碑 timelineH 时间轴（1998 KcsA 3.2 Å/2000 SERCA1a/2003 诺奖/2013 直接电子探测/2017 cryo-EM 诺奖，上下交错防撞）+ KcsA 氧笼与 GLUT/SWEET/Piezo 注释 + 方法分工总句；④植物手段四象限——MIFE 振动微电极贴根示意、共聚焦钙成像（Ca²⁺ 波同心环）、拟南芥 EMS/SOS 三件套筛选、酵母 trk1 trk2 双平板互补
+- 渲染与自检循环：每张场景写完立即 bun -e 渲染落盘 + bun scripts/draw/overlap-check.ts 逐张检测。ch1-s1/ch1-s3/ch1-s4 一次通过；ch1-s2 首检报 1 处 TEXT×TEXT（电压标尺底部 E_Cl 副注「多为抑制性稳定」与 E_K 主注 100% 重叠，两注基线仅差 2px）→ 删除该副注重新渲染 → 清零。终检四张全部「共 0/1 个文件被标记」
+- 排版纪律执行：正文区域 y 132–985、x 30–1370，2×2 面板（列距 20px、行距 15–16px）；同行文本基线间距 ≥18px（含上下标行 lh 23）；长句一律 b.wtext + maxW 分栏并采用返回值链式排布防换行漂移重叠；上下标全部 ^{}/_{} 标记语法（10^{-8}、Na^{+}、H^{+}、μm^{2}、^{36}Cl^{-}）；函数曲线仅用 b.curve（膜片钳电流方波）
+- 落盘 scripts/draw/scenes/mt/part1.ts（登记 Record：'mt-ch1-s1-membrane-basics'→ch1s1、'mt-ch1-s2-transport-thermo'→ch1s2、'mt-ch1-s3-classification-map'→ch1s3、'mt-ch1-s4-methods'→ch1s4，bun 导入自检 4 键均输出合法 SVG 字符串）与 src/data/draw-mt-p1.ts（drawMtP1 挂载，key 'membrane-transport-ch1-s1'~'-s4'，caption 218/228/222/226 字均落入 130–230 区间且呼应正文数值，credit 统一「依据教材参数自绘矢量示意图（代码绘制，非 AI 生成）」）
+- 质量自检：bunx tsc --noEmit 过滤本批次 6 个新文件（scenes/mt/ch1-s1~s4、part1、draw-mt-p1）→ 零错误（scenes/mt/ch4-s3.ts 等 9 处报错为并行绘图代理所留，非本批次文件，未触碰）；与并行批次落盘的 mt-ch3/ch4/ch6 SVG 及 part3.ts 登记 slug 逐一比对无冲突；git status 确认本任务仅新增 4 场景源码 + part1.ts + 4 张 SVG + draw-mt-p1.ts，未改动任何其他文件
+
+Stage Summary:
+- 膜蛋白与物质转运第 1 章 4 张自绘教学矢量插图全部落盘并通过 overlap-check 清零（0/0）：mt-ch1-s1-membrane-basics.svg 40KB/75 个文本、mt-ch1-s2-transport-thermo.svg 24KB/90 个文本、mt-ch1-s3-classification-map.svg 28KB/109 个文本、mt-ch1-s4-methods.svg 24KB/89 个文本；合计返工 1 次（ch1-s2 电压标尺底注重叠）
+- 四图分别覆盖 46-a 大纲 s1–s4 小节全部核心数值锚点：7.5–10 nm/3 nm 疏水核心、10⁻⁸ cm²/s vs 小时–天、胆固醇 30%–50% vs 三种植物甾醇、5:4:1、20%–30%；25.7 mV/59 mV 当量、E_K −90/E_Na +60~+67/E_Ca > +125、−30~−90 vs −120~−250 mV、PMF 250–300 mV、20%–30% ATP；10⁷–10⁸ vs 10²–10⁴、动物约 900（SLC 52 家族约 400/通道约 400/ABC 48/P 型约 40）vs 拟南芥 >1000 占 3%–4%（ABC 130/NPF 53/AQP 35/CNGC 20/GLR 20/AHA 11/CAX 11）、Na⁺ 币 vs H⁺ 币、共有/独有家族清单；1976/1991、1987 SGLT1、1992 AQP1、1998 KcsA、2000 SERCA1a、2017 cryo-EM、MIFE/SOS/trk1 trk2
+- 后续动作：主控 46-d 统一注册时把 drawMtP1 并入 illustrations 聚合层 Record<SubjectId>（与并行批次 draw-mt-p2/p3 衔接）后全站生效；ch1-s3 招牌图可作为学科封面/概览图复用
+
+---
+Task ID: 46-d
+Agent: 主控（Z.ai Code）+ 内容代理 46-b1~b6 + 绘图代理 46-c1~c12（部分批次超时由主控补齐）
+Task: 《膜蛋白与物质转运》第十四学科主控集成：全站注册、封面、文案、类型修复、QA 与收尾
+
+Work Log:
+- 【内容层收口】6 个内容代理交付 12 章 48 节（b2 与 b4 批次超时但文件已落盘；b2 的 ch4 四节字数不足由重启代理超集式扩写至 2917/2854/2847/3198，quiz-p2/glossary-p2 同批补齐）；48 节字数 2612–3203、均值 2789；非箭头类校验报错为 0；题库 60 题（single 39/truefalse 12/multiple 9，难度 1:2:3=12:30:18）ID 唯一；词条 60 条 g-395~g-454 ID 唯一
+- 【绘图层收口】48 张场景源码（代理完成 44 张：c1 全 4 张、c2/c3/c4/c5/c7/c8/c9/c10/c11/c12 各超时前落盘 2–4 张；主控亲绘 4 张：mt-ch7-s4-rotary-motors-compare、mt-ch10-s4-detox-sequestration、mt-ch12-s4-evolution-summary、并补 part2/part4/part6/part7/part10/part12 与 draw-mt-p2/p4/p6/p7/p10 挂载图注）；bun scripts/draw/gen.ts mt 生成 48/48；全库 547 张 SVG overlap-check 共 0 标记——顺手修复 2 处存量缺陷（bc-ch3-s2 yticks「0」与 ylabel 重叠→删中位刻度；xc-ch4-s2 wtext 行距 13.5 过密+轴标签挤压→lh 14.5、下移 886→900、第二处 wtext 446→458）
+- 【类型修复】scenes/mt 23 处 tuple 类型错误清零（ch12-s4 cards 七元组、ch2-s2 sL/sL2 [number,string]、ch2-s3 branches 三元、ch4-s3 clades 第 4 位 number）；视图组件 Record<SubjectId> 补键 7 处（glossary-view 左边框/tab、quiz-view tab/button/left-border、revision-view names、wrongbook-view names——其间误删 quiz-view physiology 行已即时恢复）
+- 【集成注册】subjects/membrane-transport.ts（id/name/englishName/description/textbook/color green/icon ArrowLeftRight/12 章）；biology.ts subjects 数组+allQuizQuestions；quiz/membrane-transport.ts 聚合；glossary.ts 6 批词条；illustrations.ts subjectCovers+drawMtP1~12 展开；subject-theme.ts 松绿主题（bg-green-600 系）；types.ts/gen.ts 前期已就绪
+- 【封面】public/images/bio/covers/cover-membrane-transport.svg（800×500 松绿主题：脂双层+通道/载体/泵三蛋白、Na⁺币 vs H⁺币双引擎、动植物细胞对望）
+- 【全站文案】layout.tsx/page.tsx/dashboard.tsx/report-view.tsx/assistant-view.tsx 十三大→十四大（+学科清单加「膜蛋白与物质转运」）；dashboard.tsx:181 存量「九学科」bug 一并修复为「十四学科」
+- 【QA】agent-browser 全链路：首页十四学科卡+「166 章 · 681 小节 · 825 道自测题」；学科中心（封面 naturalWidth 800、12 章 summary 全渲染）；阅读器（7 H2+1 表格+mt-ch1-s1 配图 naturalWidth 1400 加载）；测验中心膜转运 tab 共 60 题、12 章×5 题列表、作答→下一题→解析判分流程全通；词典「膜蛋白与物质转运60」tab+词条搜索；图库 718 张总量、筛选膜转运恰 48 张全部可加载；375px 移动端无横向溢出；暗色模式切换正常；控制台与 dev.log 零运行时错误
+- 【环境】dev 服务器中途缓存过期（Module not found './mt/ch4'）→ kill+清 .next/dev/cache+双 setsid 重启（(setsid bash -c 'exec bun run dev' &) 写法跨命令存活）后 200 稳定
+- lint 通过；bunx tsc 全库 162 处均为其他学科场景存量（无 mt/注册层新增）
+
+Stage Summary:
+- 《膜蛋白与物质转运》第十四学科按生理学同一标准全量交付：48 节正文（动物/植物转运蛋白分类异同为经纬——同超家族不同成员数、同机制不同驱动离子 Na⁺ vs H⁺、同家族不同亚细胞定位、同屏障不同化学战场四句诀贯穿）、48 张自绘 SVG（全库 547 张零标记）、60 题、60 词条（g-395~g-454）、松绿封面与主题、全站注册与「十四大」文案
+- 多代理经验更新：单代理运行约 10 分钟时限在本沙箱重现（b2/b4 内容批与 5 个绘图批超时），但超时前落盘率高——重启代理应先盘点已落盘文件只补缺口；主控亲绘 4 张收尾可行且高效
+- 遗留（移交后续任务）：membrane-transport 正文未做 43 系列式 VLM 文案科学性全量审校；全库 tsc 存量 162 处（sb/vi/mb/xc 场景 tuple 声明松散）可在专项 QA 中统一收紧

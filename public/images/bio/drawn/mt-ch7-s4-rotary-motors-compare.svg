@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Noto Serif SC, LXGW WenKai, Songti SC, serif">
+  <defs>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="arr-dna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="arr-rna" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-pro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6d28d9"/></marker>
+    <marker id="arr-enz" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#be185d"/></marker>
+    <marker id="arr-acc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/></marker>
+    <marker id="arr-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="arr-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+    <marker id="arr-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="arr-mute" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1400" height="1000" fill="#ffffff"/>
+  <text x="700" y="38" text-anchor="middle" font-size="33" font-weight="700" fill="#1e293b">旋转马达三部曲：F 合酶回顾与 P·V·F 总对照</text>
+  <text x="700" y="74" text-anchor="middle" font-size="15" fill="#64748b">F型ATP合酶以α₃β₃+γ中央轴+F_oc环执行Boyer结合变化机制（1997诺奖）；c环拷贝数即质子税率——哺乳动物8c约2.7、酵母10c约3.3、叶绿体14c约4.7H⁺/ATP，高税低效却匹配光合质子库；F</text>
+  <text x="700" y="100" text-anchor="middle" font-size="15" fill="#64748b">与V同源而反向使用：一台顺PMF合成ATP、一台水解ATP建梯度；P型单亚基磷酰化针筒对V型酸化水泵对F型发电涡轮——三部马达在动植物基因组中全部在场</text>
+  <rect x="30" y="132" width="660" height="445" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="154.84" font-size="19" fill="#475569" font-weight="700">一、F 型 ATP 合酶：旋转催化的原型（回顾）</text>
+  <text x="60" y="186" font-size="9.5" fill="#64748b">线粒体内膜 / 类囊体膜 / 细菌质膜</text>
+  <g><circle cx="60" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="220" x2="60" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="220" x2="84" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="220" x2="108" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="220" x2="132" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="220" x2="156" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="220" x2="180" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="220" x2="204" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="220" x2="228" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="220" x2="252" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="220" x2="276" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="220" x2="300" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="220" x2="324" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="348" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="348" y1="220" x2="348" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="348" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="372" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="372" y1="220" x2="372" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="372" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="396" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="396" y1="220" x2="396" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="396" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="420" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="420" y1="220" x2="420" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="420" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="444" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="444" y1="220" x2="444" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="444" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="468" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="468" y1="220" x2="468" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="468" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="492" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="492" y1="220" x2="492" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="492" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="516" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="516" y1="220" x2="516" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="516" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="540" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="540" y1="220" x2="540" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="540" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="564" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="564" y1="220" x2="564" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="564" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="588" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="588" y1="220" x2="588" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="588" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="612" cy="216" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="612" y1="220" x2="612" y2="238" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="612" cy="242" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <text x="60" y="200" font-size="8.5" fill="#64748b">膜外（膜间隙 / 腔侧）</text>
+  <text x="60" y="262" font-size="8.5" fill="#64748b">基质侧（线粒体基质 / 叶绿体基质）</text>
+  <circle cx="248.10511776651532" cy="352" r="20" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="248.10511776651532" y="356" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">α</text>
+  <circle cx="210" cy="374" r="20" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="210" y="378" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">β</text>
+  <circle cx="171.8948822334847" cy="352" r="20" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="171.8948822334847" y="356" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">α</text>
+  <circle cx="171.89488223348468" cy="308" r="20" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="171.89488223348468" y="312" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">β</text>
+  <circle cx="210" cy="286" r="20" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="210" y="290" font-size="13" fill="#075985" text-anchor="middle" font-weight="700">α</text>
+  <circle cx="248.10511776651532" cy="308" r="20" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="248.10511776651532" y="312" font-size="13" fill="#831843" text-anchor="middle" font-weight="700">β</text>
+  <rect x="203" y="230" width="14" height="120" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="230" y="262" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="600">γ（中央轴）</text>
+  <rect x="184" y="336" width="52" height="16" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="210" y="348" font-size="10" fill="#4c1d95" text-anchor="middle" font-weight="700">ε</text>
+  <rect x="60.6257" y="307.925" width="70.7486" height="16.15" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="96" y="319.42" font-size="9.5" fill="#78350f" text-anchor="middle" font-weight="700">ADP + Pi</text>
+  <line x1="126" y1="310" x2="158" y2="320" stroke="#b45309" stroke-width="1.6" marker-end="url(#arr-rna)"/>
+  <rect x="283.94205" y="307.075" width="52.1159" height="17.849999999999998" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="310" y="319.78" font-size="10.5" fill="#065f46" text-anchor="middle" font-weight="700">ATP</text>
+  <line x1="268" y1="320" x2="292" y2="312" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <circle cx="430" cy="229" r="34" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+  <circle cx="452" cy="229" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="445.55634918610406" cy="244.55634918610406" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="430" cy="251" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="414.44365081389594" cy="244.55634918610406" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="408" cy="229" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="414.44365081389594" cy="213.44365081389594" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="430" cy="207" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <circle cx="445.55634918610406" cy="213.44365081389594" r="5" fill="#d97706" stroke="#92400e" stroke-width="0.8"/>
+  <text x="430" y="234" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">c 环</text>
+  <rect x="466" y="200" width="18" height="58" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="492" y="232" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="600">a·b₂ 定子</text>
+  <line x1="466" y1="229" x2="424" y2="229" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="560" cy="186" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="560" y="189.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="548" y1="196" x2="512" y2="212" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="560" cy="276" r="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="560" y="279.06" font-size="8.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.9" font-size="6.1">+</tspan></text>
+  <line x1="508" y1="246" x2="540" y2="264" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <rect x="534.421" y="223.5" width="51.158" height="17" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="560" y="235.6" font-size="10" fill="#92400e" text-anchor="middle" font-weight="700">PMF</text>
+  <text x="60" y="404" font-size="9.5" fill="#475569">Boyer 结合变化机制：γ 轴每转 120°，三个 β 位点依次经历「松→紧→开」——构象本身把 ATP 挤出，无需直接供能于成键；</text>
+  <text x="60" y="425" font-size="9.5" fill="#475569">1997 年诺贝尔化学奖同授 Boyer、Walker 与 Skou（钠钾泵）</text>
+  <text x="60" y="462" font-size="9.5" fill="#075985" font-weight="600">F 型与 V 型同为旋转马达、同源演化：LUCA 阶段已分道——一台留在能量膜上顺流合成 ATP，一台走上膜泡专职水解建梯度</text>
+  <rect x="710" y="132" width="660" height="445" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="154.84" font-size="19" fill="#475569" font-weight="700">二、c 环拷贝数决定每 ATP 的质子税</text>
+  <text x="740" y="186" font-size="11" fill="#475569" font-weight="700">H<tspan dy="-3.7" font-size="7.9">+</tspan><tspan dy="3.7">/ATP 比 = c 环拷贝数 ÷ 3（每圈 3 个 ATP）</tspan></text>
+  <text x="740" y="250" font-size="10" fill="#475569" font-weight="600">哺乳动物线粒体</text>
+  <circle cx="986" cy="246" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="978.3847763108503" cy="264.3847763108502" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="960" cy="272" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="941.6152236891497" cy="264.3847763108502" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="934" cy="246" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="941.6152236891497" cy="227.61522368914976" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="960" cy="220" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="978.3847763108503" cy="227.61522368914976" r="6" fill="#0369a1" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="960" cy="246" r="26" fill="none" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="960" y="249" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">8c</text>
+  <rect x="1020" y="232" width="162" height="26" fill="#0369a1" opacity="0.2"/>
+  <rect x="1020" y="232" width="162" height="26" fill="none" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="1101" y="248" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">2.7 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/ATP</tspan></text>
+  <text x="740" y="338" font-size="10" fill="#475569" font-weight="600">酵母线粒体</text>
+  <circle cx="986" cy="334" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="981.0344418537486" cy="349.2824165596043" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="968.0344418537486" cy="358.727469423674" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="951.9655581462514" cy="358.727469423674" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="938.9655581462514" cy="349.2824165596043" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="934" cy="334" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="938.9655581462514" cy="318.7175834403957" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="951.9655581462514" cy="309.272530576326" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="968.0344418537486" cy="309.272530576326" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="981.0344418537486" cy="318.7175834403957" r="6" fill="#6d28d9" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="960" cy="334" r="26" fill="none" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="960" y="337" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">10c</text>
+  <rect x="1020" y="320" width="197.99999999999997" height="26" fill="#6d28d9" opacity="0.2"/>
+  <rect x="1020" y="320" width="197.99999999999997" height="26" fill="none" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="1119" y="336" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">3.3 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/ATP</tspan></text>
+  <text x="740" y="426" font-size="10" fill="#475569" font-weight="600">植物叶绿体 CF₁CF_o</text>
+  <circle cx="986" cy="422" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="983.4251905654629" cy="433.2809772170565" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="976.2107348483271" cy="442.3276185441688" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="965.7855442828642" cy="447.3481257167274" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="954.2144557171358" cy="447.3481257167274" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="943.7892651516729" cy="442.3276185441688" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="936.5748094345371" cy="433.2809772170565" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="934" cy="422" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="936.5748094345371" cy="410.7190227829435" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="943.7892651516729" cy="401.6723814558312" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="954.2144557171358" cy="396.6518742832726" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="965.7855442828642" cy="396.6518742832726" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="976.2107348483271" cy="401.6723814558312" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="983.4251905654629" cy="410.7190227829435" r="6" fill="#059669" stroke="#1e293b" stroke-width="0.6" opacity="0.85"/>
+  <circle cx="960" cy="422" r="26" fill="none" stroke="#059669" stroke-width="1.6"/>
+  <text x="960" y="425" font-size="9.5" fill="#1e293b" text-anchor="middle" font-weight="700">14c</text>
+  <rect x="1020" y="408" width="282" height="26" fill="#059669" opacity="0.2"/>
+  <rect x="1020" y="408" width="282" height="26" fill="none" stroke="#059669" stroke-width="1.6"/>
+  <text x="1161" y="424" font-size="10.5" fill="#1e293b" text-anchor="middle" font-weight="700">4.7 H<tspan dy="-3.6" font-size="7.6">+</tspan><tspan dy="3.6">/ATP</tspan></text>
+  <text x="740" y="486" font-size="9.5" fill="#475569">拷贝数越多、每合成 1 个 ATP 需要的质子越多、能量转化效率越低——但门槛也越低，可在更小的 PMF 上运转：</text>
+  <text x="740" y="507" font-size="9.5" fill="#475569">叶绿体 14c 的「高质子税」恰与光合电子链的质子库匹配，线粒体 8c 则追求高效率</text>
+  <text x="740" y="540" font-size="9.5" fill="#065f46" font-weight="600">演化意义上：拷贝数是旋转马达对「本地质子经济学」的适配——同一台马达，不同的税率</text>
+  <rect x="30" y="592" width="660" height="393" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="46" y="614.84" font-size="19" fill="#475569" font-weight="700">三、方向分化：F 合成、V 水解</text>
+  <text x="60" y="640" font-size="11" fill="#075985" font-weight="700">F 型（ATP 合酶）</text>
+  <g><circle cx="60" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="60" y1="672" x2="60" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="60" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="84" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="84" y1="672" x2="84" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="84" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="108" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="108" y1="672" x2="108" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="108" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="132" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="132" y1="672" x2="132" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="132" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="156" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="156" y1="672" x2="156" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="156" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="180" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="180" y1="672" x2="180" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="180" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="204" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="204" y1="672" x2="204" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="204" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="228" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="228" y1="672" x2="228" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="228" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="252" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="252" y1="672" x2="252" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="252" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="276" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="276" y1="672" x2="276" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="276" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="300" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="300" y1="672" x2="300" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="300" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="324" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="324" y1="672" x2="324" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="324" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="160" y="660" width="40" height="38" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/>
+  <text x="180" y="680" font-size="9" fill="#075985" text-anchor="middle" font-weight="700">F_o</text>
+  <rect x="160" y="706" width="40" height="26" fill="#fce7f3" stroke="#be185d" stroke-width="1.6"/>
+  <text x="180" y="720" font-size="9" fill="#831843" text-anchor="middle" font-weight="700">F₁</text>
+  <line x1="64" y1="660" x2="64" y2="700" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="64" cy="648" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="64" y="650.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <circle cx="64" cy="714" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="64" y="716.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <line x1="228" y1="716" x2="268" y2="716" stroke="#059669" stroke-width="1.8" marker-end="url(#arr-ok)"/>
+  <rect x="262.473" y="707.5" width="75.054" height="17" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="300" y="719.6" font-size="10" fill="#065f46" text-anchor="middle" font-weight="700">ATP 合成</text>
+  <text x="60" y="752" font-size="9" fill="#475569">生理方向：顺 PMF 下行，把质子位能收进 ATP 高能磷酸键——线粒体、</text>
+  <text x="60" y="771" font-size="9" fill="#475569">叶绿体、细菌的能量收官一步</text>
+  <text x="420" y="640" font-size="11" fill="#4c1d95" font-weight="700">V 型（V-ATPase）</text>
+  <g><circle cx="420" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="420" y1="672" x2="420" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="420" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="444" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="444" y1="672" x2="444" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="444" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="468" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="468" y1="672" x2="468" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="468" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="492" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="492" y1="672" x2="492" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="492" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="516" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="516" y1="672" x2="516" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="516" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="540" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="540" y1="672" x2="540" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="540" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="564" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="564" y1="672" x2="564" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="564" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="588" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="588" y1="672" x2="588" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="588" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="612" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="612" y1="672" x2="612" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="612" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="636" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="636" y1="672" x2="636" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="636" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="660" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="660" y1="672" x2="660" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="660" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/><circle cx="684" cy="668" r="5.5" fill="#0f766e" fill-opacity="0.85"/><line x1="684" y1="672" x2="684" y2="686" stroke="#0f766e" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="684" cy="690" r="5.5" fill="#0f766e" fill-opacity="0.85"/></g>
+  <rect x="520" y="660" width="40" height="38" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.8"/>
+  <text x="540" y="680" font-size="9" fill="#4c1d95" text-anchor="middle" font-weight="700">V₀</text>
+  <rect x="520" y="706" width="40" height="26" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="540" y="720" font-size="9" fill="#78350f" text-anchor="middle" font-weight="700">V₁</text>
+  <line x1="540" y1="660" x2="540" y2="700" stroke="#d97706" stroke-width="1.8" marker-end="url(#arr-warn)"/>
+  <circle cx="540" cy="648" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="540" y="650.7" font-size="7.5" fill="#92400e" text-anchor="middle" font-weight="700">H<tspan dy="-2.6" font-size="5.4">+</tspan></text>
+  <rect x="390.473" y="707.5" width="75.054" height="17" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="428" y="719.6" font-size="10" fill="#78350f" text-anchor="middle" font-weight="700">ATP 水解</text>
+  <line x1="508" y1="716" x2="472" y2="716" stroke="#b45309" stroke-width="1.8" marker-end="url(#arr-rna)"/>
+  <text x="420" y="752" font-size="9" fill="#475569">生理方向：水解 ATP 逆 PMF 上行泵质子——溶酶体、</text>
+  <text x="420" y="771" font-size="9" fill="#475569">液泡与分泌颗粒的酸化引擎</text>
+  <line x1="350" y1="636" x2="350" y2="780" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="60" y="800" font-size="9.5" fill="#475569">实验上两者皆可短暂反转（V 型在特殊条件下能合成微量 ATP、F 型在 PMF 崩塌时水解 ATP 保膜电位）</text>
+  <text x="60" y="821" font-size="9.5" fill="#475569">——方向的「钉死」靠末端抑制与动力学不可逆性，而非结构锁死</text>
+  <text x="60" y="852" font-size="10" fill="#075985" font-weight="700">「同源马达反向使用」是本学科反复出现的演化主题：部件保守、用法翻面</text>
+  <text x="60" y="890" font-size="9" fill="#64748b">ClC 通道→转运体、KAT1 反向用极、SWEET 半分子二聚体——与 F/V 分化同属一个母题</text>
+  <rect x="710" y="592" width="660" height="393" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="726" y="614.84" font-size="19" fill="#475569" font-weight="700">四、P · V · F：三类 ATP 驱动马达总对照</text>
+  <rect x="730" y="636" width="110" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="663.5" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700"> </text>
+  <rect x="840" y="636" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="663.5" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">P 型 ATPase</text>
+  <rect x="1010" y="636" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="663.5" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">V 型 ATPase</text>
+  <rect x="1180" y="636" width="170" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="663.5" font-size="9.8" fill="#1e293b" text-anchor="middle" font-weight="700">F 型 ATP 合酶</text>
+  <rect x="730" y="680" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="700.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">结构</text>
+  <rect x="840" y="680" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="700.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">单亚基约 100 kDa＋β/γ 辅亚基</text>
+  <rect x="1010" y="680" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="700.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">多亚基双旋转马达 V₁+V₀</text>
+  <rect x="1180" y="680" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="700.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">多亚基双旋转马达 F₁+F_o</text>
+  <rect x="730" y="710" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="710" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="730.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">能量耦合</text>
+  <rect x="840" y="710" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="730.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">天冬氨酸磷酰化中间体</text>
+  <rect x="1010" y="710" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="730.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">旋转催化（ATP 水解）</text>
+  <rect x="1180" y="710" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="730.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">旋转催化（合成 ATP）</text>
+  <rect x="730" y="740" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="760.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">每循环离子</text>
+  <rect x="840" y="740" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="760.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">1–3 个（如 3Na⁺:2K⁺）</text>
+  <rect x="1010" y="740" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="760.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">多个 H⁺（约 3.3/ATP）</text>
+  <rect x="1180" y="740" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="760.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">多个 H⁺（2.7–4.7/ATP）</text>
+  <rect x="730" y="770" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="770" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="790.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">可逆性</text>
+  <rect x="840" y="770" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="790.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">中等（可反转泵 ATP）</text>
+  <rect x="1010" y="770" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="790.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">弱（末端抑制钉死水解）</text>
+  <rect x="1180" y="770" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="790.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">强（生理即双向位点）</text>
+  <rect x="730" y="800" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="820.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">动物岗位</text>
+  <rect x="840" y="800" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="820.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">Na⁺/K⁺·Ca²⁺·H⁺/K⁺·铜泵</text>
+  <rect x="1010" y="800" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="820.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">溶酶体/内体酸化·破骨·泌 H⁺</text>
+  <rect x="1180" y="800" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="820.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">线粒体 ATP 合成</text>
+  <rect x="730" y="830" width="620" height="30" fill="#f8fafc" fill-opacity="0.85"/>
+  <rect x="730" y="830" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="850.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">植物岗位</text>
+  <rect x="840" y="830" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="850.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">质膜 H⁺ 主引擎（AHA 11 个）</text>
+  <rect x="1010" y="830" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="850.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">液泡双引擎之一（VHA）</text>
+  <rect x="1180" y="830" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="850.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">线粒体＋叶绿体双份</text>
+  <rect x="730" y="860" width="110" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="785" y="880.5" font-size="8.8" fill="#1e293b" text-anchor="middle" font-weight="700">抑制剂</text>
+  <rect x="840" y="860" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="925" y="880.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">乌本苷·毒胡萝卜素·糠菌素</text>
+  <rect x="1010" y="860" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1095" y="880.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">巴弗洛霉素 A₁·DCCD</text>
+  <rect x="1180" y="860" width="170" height="30" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="1265" y="880.5" font-size="8.8" fill="#475569" text-anchor="middle" font-weight="500">寡霉素·DCCD</text>
+  <text x="730" y="920" font-size="9.5" fill="#475569">一句话分工：P 型是「精量的针筒」——小批量高定制；V 型是「酸化的水泵」——专司膜泡梯度；F 型是「发电的涡轮」——把梯度变现为 ATP；</text>
+  <text x="730" y="941" font-size="9.5" fill="#475569">三者在动植物基因组中全部在场，各自扩编不同</text>
+</svg>
