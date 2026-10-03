@@ -46,6 +46,7 @@ import { membraneTransportGlossaryP3 } from './glossary-membrane-transport-p3'
 import { membraneTransportGlossaryP4 } from './glossary-membrane-transport-p4'
 import { membraneTransportGlossaryP5 } from './glossary-membrane-transport-p5'
 import { membraneTransportGlossaryP6 } from './glossary-membrane-transport-p6'
+import { membraneTransportGlossaryP7 } from './glossary-membrane-transport-p7'
 
 export const glossary: GlossaryTerm[] = [
   // ---------- 生物化学（g-001 ~ g-026） ----------
@@ -1242,4 +1243,5 @@ export const glossary: GlossaryTerm[] = [
   ...membraneTransportGlossaryP4,
   ...membraneTransportGlossaryP5,
   ...membraneTransportGlossaryP6,
+  ...membraneTransportGlossaryP7,
 ]

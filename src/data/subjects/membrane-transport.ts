@@ -4,7 +4,8 @@
 // Alberts《Molecular Biology of the Cell》第7版、Taiz & Zeiger
 // 《Plant Physiology》第6版、Guyton & Hall《Textbook of Medical
 // Physiology》第14版
-// 12 章 48 节，由内容代理并行编写（见 src/data/subjects/mt/）
+// 13 章 52 节，由内容代理并行编写（见 src/data/subjects/mt/），
+// 第 13 章细胞器膜转运由主控 47-c1 补写
 // 学科特色：以动物与植物转运蛋白的分类异同为经纬，
 // 对照动物 Na⁺ 循环与植物 H⁺ 循环两大主引擎
 // ============================================================
@@ -21,13 +22,14 @@ import { mtCh9 } from './mt/ch9'
 import { mtCh10 } from './mt/ch10'
 import { mtCh11 } from './mt/ch11'
 import { mtCh12 } from './mt/ch12'
+import { mtCh13 } from './mt/ch13'
 
 export const membraneTransport: Subject = {
   id: 'membrane-transport',
   name: '膜蛋白与物质转运',
   englishName: 'Membrane Proteins & Transport',
   description:
-    '以「通道—载体—泵」三分框架系统讲授跨膜转运：从膜脂双层的选择性屏障与转运热力学出发，依次深潜离子通道与门控、钾通道与水通道、载体与易化扩散、P 型/V 型/F 型三类 ATP 驱动泵、次级协同转运与 ABC 外排泵，直至钙与金属转运、特化上皮与气孔保卫细胞、通道病与植物逆境转运——全书以动物与植物转运蛋白的分类异同为经纬，对照动物 Na⁺ 循环与植物 H⁺ 循环两大主引擎，逐家族梳理两界的共有与独有、保守与扩张。',
+    '以「通道—载体—泵」三分框架系统讲授跨膜转运：从膜脂双层的选择性屏障与转运热力学出发，依次深潜离子通道与门控、钾通道与水通道、载体与易化扩散、P 型/V 型/F 型三类 ATP 驱动泵、次级协同转运与 ABC 外排泵，直至钙与金属转运、特化上皮与气孔保卫细胞、通道病与植物逆境转运，末章深入细胞器膜上的转运（线粒体 SLC25、叶绿体被膜 TPT/MEX1、类囊体离子回路、过氧化物酶体/ER/核孔）——全书以动物与植物转运蛋白的分类异同为经纬，对照动物 Na⁺ 循环与植物 H⁺ 循环两大主引擎，逐家族梳理两界的共有与独有、保守与扩张。',
   textbook:
     'Stein & Litton《Channels, Carriers, and Pumps》第2版 · Alberts《Molecular Biology of the Cell》第7版 · Taiz & Zeiger《Plant Physiology》第6版 · Guyton & Hall《Textbook of Medical Physiology》第14版',
   color: 'green',
@@ -45,5 +47,6 @@ export const membraneTransport: Subject = {
     mtCh10,
     mtCh11,
     mtCh12,
+    mtCh13,
   ],
 }

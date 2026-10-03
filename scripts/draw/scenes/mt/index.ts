@@ -11,6 +11,7 @@ import part9 from './part9'
 import part10 from './part10'
 import part11 from './part11'
 import part12 from './part12'
+import part13 from './part13'
 
 const scenes: Record<string, string> = {
   ...part1,
@@ -25,5 +26,6 @@ const scenes: Record<string, string> = {
   ...part10,
   ...part11,
   ...part12,
+  ...part13,
 }
 export default scenes

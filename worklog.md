@@ -2976,3 +2976,23 @@ Stage Summary:
 - 《膜蛋白与物质转运》第十四学科按生理学同一标准全量交付：48 节正文（动物/植物转运蛋白分类异同为经纬——同超家族不同成员数、同机制不同驱动离子 Na⁺ vs H⁺、同家族不同亚细胞定位、同屏障不同化学战场四句诀贯穿）、48 张自绘 SVG（全库 547 张零标记）、60 题、60 词条（g-395~g-454）、松绿封面与主题、全站注册与「十四大」文案
 - 多代理经验更新：单代理运行约 10 分钟时限在本沙箱重现（b2/b4 内容批与 5 个绘图批超时），但超时前落盘率高——重启代理应先盘点已落盘文件只补缺口；主控亲绘 4 张收尾可行且高效
 - 遗留（移交后续任务）：membrane-transport 正文未做 43 系列式 VLM 文案科学性全量审校；全库 tsc 存量 162 处（sb/vi/mb/xc 场景 tuple 声明松散）可在专项 QA 中统一收紧
+
+---
+Task ID: 47
+Agent: 主控（Z.ai Code）
+Task: 继续打磨和扩充膜蛋白与物质转运教材（新增第 13 章「细胞器膜上的转运」）＋修复阅读器前后切换按钮小屏溢出/与右栏重叠的 UI 缺陷
+
+Work Log:
+- 【UI 缺陷修复】用户报告：屏幕较小时前后切换章节按钮超出内容框、与右侧内容重叠。根因定位：SectionNavCard 按钮作为 flex 子项缺 min-w-0，其最小内容宽度（nowrap 截断文本的完整宽度，约 290px/张）之和超出中栏可用宽，flex 子项无法收缩到内容宽以下，溢出 nav 容器伸入右栏（app 外壳侧栏占宽后 1280px 视口中栏仅 340px，必然触发）。双保险修复（src/components/bio/reader-view.tsx）：① 按钮加 min-w-0 + overflow-hidden 根治收缩；② 中栏 div 加 @container、nav 由 sm:flex-row（视口断点）改 @lg:flex-row（容器查询 512px）——中栏过窄时自动上下堆叠，配套更新占位 div、下一卡右对齐与徽标 shrink-0
+- 【内容缺口确认】全库 rg 摸底：线粒体 SLC25 载体家族、叶绿体被膜 TPT/Toc-Tic、类囊体离子回路（KEA3/VCCN1/TPK3）、过氧化物酶体/ER/核孔在既有 12 章仅零星提及，无专门章节——确立第 13 章扩充方向
+- 【第 13 章正文】主控亲撰 src/data/subjects/mt/ch13.ts（4 节，2603–2691 字/节，与既有 2612–3203 标准对齐）：s1 线粒体膜（VDAC β 桶海关、TOM-TIM 棘轮马达、SLC25 人类 53/拟南芥约 58、ANT 电位发货与苍术苷/黄曲霉酰肽双毒锁证、UCP 两界产热、植物 AOX 旁路、MCU/MICU 节拍器）；s2 叶绿体被膜（Toc75 与 VDAC 同为 β 桶、Toc34 GTP 验货、TPT 1:1 磷账与 MEX1 昼夜换班、Pi 限制光合、被膜兼脂质车间、质体四班次）；s3 类囊体膜（ΔpH 2–3 单位、c₁₄ 约 4.7 H⁺/ATP 对 c₈ 2.7、12 H⁺/O₂ 线性流预算与循环电子流补 3:2、KEA3/VCCN1/TPK3 电中性回路、NPQ 刹车、Tat 折叠蛋白输入、Jagendorf 1963 酸跳实验）；s4 过氧化物酶体/ER/核孔（三种蛋白输入范式、ABCD1/X-ALD、植物 ER 无 IP₃R/RyR、NPC 的 FG 筛+importin 载体+Ran-GTP 泵三分法复现、膜接触位点、八行细胞器总表收口）
+- 【4 张自绘 SVG】scripts/draw/scenes/mt/ch13-s1~s4.ts + part13.ts + index.ts 登记：mt-ch13-s1-mitochondria-membranes（双膜体系+SLC25 配件表+UCP/AOX/MCU 三栏）、mt-ch13-s2-chloroplast-envelope（被膜结构+TPT/MEX1 昼夜账+八行镜像对照表）、mt-ch13-s3-thylakoid-ion-circuits（光泵质子回路+ΔpH 三份工+酸跳实验+两界对照表）、mt-ch13-s4-organelle-compendium（三种输入范式+NPC+总表收口）；bun gen.ts mt 生成 52/52；初检 3 张有标记（VDAC 长注释压 TIM、表格压 wtext、MCU 标题压 Ca²⁺ 球、Toc75 注释换行压载体标签、基质标签压卡尔文循环 tag、CF₁ 压税率标签等）——逐处改坐标/缩 maxW/单行化后全库 551 张 overlap-check 归零；4 张全部通过 verify-one VLM 精查（PASS×4）
+- 【题库+词条】quiz/membrane-transport-p7.ts 新增 10 题（q-membrane-transport-61~70：single 6/truefalse 2/multiple 2，难度 2:6:2，全部挂 ch13）→ 全学科 70 题、ID 唯一；glossary-membrane-transport-p7.ts 新增 10 词条（g-455~g-464：VDAC、线粒体载体家族、ANT、UCP、AOX、TPT、Toc-Tic、类囊体电中性回路、Pex5 受体循环、核孔复合体）→ 词条总数 463、ID 全唯一；两处聚合文件（membrane-transport.ts / glossary.ts）已注册
+- 【注册与挂载】membrane-transport.ts 导入 mtCh13 入 chapters、头部注释 12→13 章 52 节、description 增末章概要；draw-mt-p13.ts 图注挂载 + illustrations.ts 聚合层展开 drawMtP13；全站统计（dashboard「167 章 · 685 小节 · 835 道自测题」）与图库「膜蛋白与物质转运 52」均为动态计算自动生效
+- 【QA 全链路（agent-browser）】首页统计自动更新 167/685/835；学科中心 13 章卡全渲染（第 13 章 0/4 · 约 7.5 千字）；阅读器 ch13-s1 正文+13-1-1 配图 naturalWidth 1400+动植物配件表渲染，点击「下一节」卡片成功跳转 s2 且配图加载；测验中心膜转运 tab 70 题、13 章×5+ch13×10 列表、作答→判分→解析→下一题全通；词典膜转运 tab 70 含全部新词条；图库筛选膜转运 52 张滚动后 52/52 加载 0 损坏；控制台与 dev.log 零运行时错误；lint 通过、bunx tsc 新增文件零错误（162 处均为他学科存量）
+- 【按钮修复验证】1280px 视口（app 外壳占宽后中栏实测 340px）：nav 列方向堆叠、卡片右缘 944 < 右栏 x 968、scrollW==clientW 无横向溢出，VLM 截图复核确认「上下堆叠、无重叠、右栏正常」；1600px 视口恢复左右并排（各 324px）；375px 移动端堆叠满宽无溢出；生理学阅读器回归同样通过（修复对全部 14 学科生效）
+
+Stage Summary:
+- 《膜蛋白与物质转运》扩充为 13 章 52 节：新增「细胞器膜上的转运」一章补齐线粒体/叶绿体/类囊体/过氧化物酶体/ER/核孔的膜转运缺口，以细胞器层面的动植物对照（SLC25 两界相当、AOX 植物独有、叶绿体整层独占、ER 钙释放分岔、NPC 共有）再次演绎全书四句诀并收口；配套 4 张自绘 SVG（全库 551 张零标记）、10 题（总 70）、10 词条（总 463）
+- 阅读器前后切换按钮小屏溢出缺陷根治：min-w-0 收缩修复 + 容器查询（@container + @lg:flex-row）自适应堆叠，1280/1600/375px 三档与跨学科回归全部通过
+- 遗留（移交后续）：membrane-transport 正文（含新 ch13）仍未做 43 系列式 VLM 文案科学性全量审校；全库 tsc 存量 162 处（sb/vi/mb/xc 场景）未收紧；43 系列剩余 13 张 FAIL SVG 精查（含 #150 已确认缺陷）仍未恢复推进

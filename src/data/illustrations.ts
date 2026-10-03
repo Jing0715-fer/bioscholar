@@ -52,6 +52,7 @@ import { drawMtP9 } from './draw-mt-p9'
 import { drawMtP10 } from './draw-mt-p10'
 import { drawMtP11 } from './draw-mt-p11'
 import { drawMtP12 } from './draw-mt-p12'
+import { drawMtP13 } from './draw-mt-p13'
 
 /** 学科封面图（学科中心卡片 / 阅读器用；全部为自绘矢量封面，非 AI 生成） */
 export const subjectCovers: Record<SubjectId, string> = {
@@ -806,5 +807,6 @@ export function getIllustrations(sectionId: string): Illustration[] {
     ...(drawMtP10[sectionId] ?? []),
     ...(drawMtP11[sectionId] ?? []),
     ...(drawMtP12[sectionId] ?? []),
+    ...(drawMtP13[sectionId] ?? []),
   ]
 }

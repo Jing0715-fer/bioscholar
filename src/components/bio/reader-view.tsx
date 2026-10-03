@@ -368,7 +368,7 @@ export function ReaderView({
         </aside>
 
         {/* ---- 中栏：正文阅读区 ---- */}
-        <div className="min-w-0">
+        <div className="min-w-0 @container">
           {/* 桌面端面包屑 */}
           <nav
             aria-label="章节路径"
@@ -556,10 +556,10 @@ export function ReaderView({
             </Card>
           )}
 
-          {/* 上一节 / 下一节 */}
+          {/* 上一节 / 下一节（中栏宽度不足时上下堆叠，避免挤压溢出） */}
           {(prev || next) && (
             <nav
-              className="mx-auto mt-6 flex max-w-3xl flex-col gap-3 sm:flex-row"
+              className="mx-auto mt-6 flex w-full max-w-3xl flex-col gap-3 @lg:flex-row"
               aria-label="小节导航"
             >
               {prev ? (
@@ -571,7 +571,7 @@ export function ReaderView({
                   onClick={() => goTo(prev)}
                 />
               ) : (
-                <div className="hidden sm:block sm:flex-1" aria-hidden="true" />
+                <div className="hidden @lg:block @lg:flex-1" aria-hidden="true" />
               )}
               {next && (
                 <SectionNavCard
@@ -993,7 +993,7 @@ function SectionNavCard({
     <button
       onClick={onClick}
       className={cn(
-        'group flex flex-1 items-center gap-3 rounded-xl border bg-card p-4 text-left outline-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md focus-visible:ring-2 focus-visible:ring-ring',
+        'group flex min-w-0 flex-1 items-center gap-3 overflow-hidden rounded-xl border bg-card p-4 text-left outline-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md focus-visible:ring-2 focus-visible:ring-ring',
         hover
       )}
       aria-label={`${isNext ? '下一节' : '上一节'}：第 ${target.chapter.number} 章 ${target.section.title}`}
@@ -1006,15 +1006,15 @@ function SectionNavCard({
           <ArrowLeft className="h-4 w-4" />
         </span>
       )}
-      <span className={cn('min-w-0 flex-1', isNext && 'sm:text-right')}>
+      <span className={cn('min-w-0 flex-1', isNext && '@lg:text-right')}>
         <span
           className={cn(
             'flex items-center gap-1.5 text-[11px] text-muted-foreground',
-            isNext && 'sm:justify-end'
+            isNext && '@lg:justify-end'
           )}
         >
           {crossChapter && (
-            <Badge variant="outline" className="h-4 px-1.5 text-[10px]">
+            <Badge variant="outline" className="h-4 shrink-0 px-1.5 text-[10px]">
               {isNext ? '下一章' : '上一章'}
             </Badge>
           )}
